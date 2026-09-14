@@ -32,8 +32,7 @@ youpu/
 ├── packages/schema/      # 共享契约（spec_schema 解释器、事件字典、API 响应类型）
 ├── data/                 # seed 数据（类目/品牌/单板 YAML），PG 为主数据源时它是导入格式
 ├── docker/               # compose（PG/Redis/ES-ik/Umami）+ ES 中文分词自定义镜像
-├── docs/                 # 实施记录与方案（M2 内容层接 API 准备等）
-├── docx/                 # 设计文档：技术设计方案 / 数据库表结构设计
+├── docs/                 # 设计文档（技术方案 / 数据库设计）+ 实施记录（M2 接 API 准备等）
 └── 原型/                 # 前端设计原型（页面与交互的设计稿，样式与文案以它为准）
 ```
 
@@ -61,7 +60,7 @@ pnpm dev:web        # http://localhost:3000
 ```bash
 cp .env.example .env                                      # compose 变量（默认值即可直接跑）
 cp apps/api/.env.example apps/api/.env
-pnpm infra:up      # 起 PG / Redis / ES(ik) / Umami（ES 首次构建镜像较慢）
+pnpm infra:up      # 起 PG + Redis（默认只这两个）；需要 ES/Umami 用 pnpm infra:up:full
 pnpm db:migrate    # 建表（22 张表 + 触发器 + event 按月分区）
 pnpm seed          # 导入类目 / 品牌 / 15 款单板
 pnpm dev           # web:3000 + api:3001
@@ -71,7 +70,7 @@ pnpm dev           # web:3000 + api:3001
 |---|---|
 | 站点 | http://localhost:3000 |
 | API 健康检查 | http://localhost:3001/api/health（db / redis / es 状态） |
-| Umami 流量分析 | http://localhost:3005（默认 admin / umami，登录后改密） |
+| Umami 流量分析 | http://localhost:3005（`infra:up:full` 才启动；默认 admin / umami） |
 
 ## 线上（内测站）
 
@@ -90,7 +89,8 @@ pnpm dev           # web:3000 + api:3001
 | 命令 | 说明 |
 |---|---|
 | `pnpm dev` / `dev:web` | 起 web + api / 只起 web |
-| `pnpm infra:up` / `infra:down` | 基础设施容器 |
+| `pnpm infra:up` / `infra:down` | 基础设施容器（默认 PG + Redis） |
+| `pnpm infra:up:full` | 追加 ES + Umami（内存吃紧的机器别开） |
 | `pnpm db:migrate` | 应用迁移（`prisma/migrations` 下的手写 SQL 为准） |
 | `pnpm seed` | 重新导入 `data/` 数据（幂等） |
 | `pnpm --filter @youpu/api validate:data` | 只校验 data/ 数据、不连库（CI 可用） |
@@ -160,15 +160,15 @@ M2 起内容层改为「API 优先 + 内容包回退」，届时列表/详情走
 
 | 阶段 | 内容 | 状态 |
 |---|---|---|
-| M1 脚手架 | monorepo、类目 schema、seed 管线、compose、埋点 SDK + Umami | ✅ 代码完成（全栈联调待 Docker） |
+| M1 脚手架 | monorepo、类目 schema、seed 管线、compose、埋点 SDK + Umami | ✅ 已完成（迁移 / 分区表 / ltree 已在生产 PG 实测） |
 | M2 图鉴流 + 后台基础 | 列表/详情/对比/榜单、ES 搜索联想、SEO 技术包、后台基础版 | 🚧 准备就绪（schema 对齐 + 15 款数据 + 契约），接入未开始 |
 | M3 社区流 + 审核配置 | 登录/评分评论/收藏/通知、客观分析引擎、问卷版推荐、后台审核队列 | ⏳ |
 | M4 运营 | 分享卡图、赛季榜单、AI 对话式推荐 | ⏳ |
 
 ## 文档
 
-- [docx/有谱-技术设计方案.md](docx/有谱-技术设计方案.md) —— 架构、选型、数据模型、推荐引擎、埋点、安全、SEO
-- [docx/有谱-数据库表结构设计.md](docx/有谱-数据库表结构设计.md) —— 全量表结构与索引设计
+- [docs/有谱-技术设计方案.md](docs/有谱-技术设计方案.md) —— 架构、选型、数据模型、推荐引擎、埋点、安全、SEO
+- [docs/有谱-数据库表结构设计.md](docs/有谱-数据库表结构设计.md) —— 全量表结构与索引设计
 - [docs/M2-内容层接API准备.md](docs/M2-内容层接API准备.md) —— 字段映射表、缺口清单、逐页接入步骤、已决策记录
 - `原型/` —— 前端设计原型（视觉与交互的对照基准）
 
@@ -186,4 +186,5 @@ M2 起内容层改为「API 优先 + 内容包回退」，届时列表/详情走
 - ✅ **M2 准备**：spec_schema 对齐原型字段集、15 款板可一键导出为 seed 数据并通过校验、
   API 响应契约进 `packages/schema`、四项产品决策落地（板型族枚举、编辑评分独立列 `product.editorial_scores`、
   综合指数实时计算、价格区间实时算分位）
-- ⏳ **下一步**：装 Docker 跑通后端全链路 → 详情页接 API → ES 分面 → apps/admin 后台；上线前设 `NEXT_PUBLIC_SITE_URL` 并注册各站长平台（Bing/搜狗/百度）
+- ⏳ **下一步**：线上 API 部署（systemd + 埋点接入，见 deploy/README.md 待续）→ 详情页接 API → 后台 apps/admin；
+  本地开发建议装 Docker Desktop；上线后设 `NEXT_PUBLIC_SITE_URL` 并注册各站长平台（Bing/搜狗/百度）
