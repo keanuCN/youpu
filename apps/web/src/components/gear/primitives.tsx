@@ -68,7 +68,7 @@ export function FlexBar({ value, className, animate = false }: { value: number; 
           />
         ))}
       </div>
-      <span className="mono-data text-[11px] text-muted-foreground tnum">{value.toFixed(1)}</span>
+      <span className="mono-data text-[12px] text-muted-foreground tnum">{value.toFixed(1)}</span>
     </div>
   );
 }
@@ -156,7 +156,7 @@ export function DataRow({
           value
         )}
         {unit && value !== null && value !== undefined && value !== "" ? (
-          <span className="ml-[3px] text-[10px] text-muted-foreground">{unit}</span>
+          <span className="ml-[3px] text-[11px] text-muted-foreground">{unit}</span>
         ) : null}
       </span>
     </div>

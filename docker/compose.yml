@@ -1,7 +1,12 @@
-# 有谱 · 本地基础设施（技术方案 §9）
-# 启动：pnpm infra:up（等价 docker compose -f docker/compose.yml up -d）
-# 说明：web/api 在本地以 pnpm dev 跑热更新，不进本地 compose；生产编排见后续 M2 部署篇。
-# 内存提示：ES 堆 1g + PG + Redis + Umami 合计约需 3-4G 空闲内存（4C8G 服务器基线）。
+# 有谱 · 基础设施编排（技术方案 §9）
+#
+# 本地开发：  pnpm infra:up            → 只起 PG + Redis（够跑 API 与 seed）
+# 需要搜索/分析：pnpm infra:up:full      → 追加 ES(ik) + Umami
+# 生产（内测站）：同文件，服务器 2C1G 内存受限，ES/Umami 暂缓（见 deploy/README.md）
+#
+# 安全：数据库端口默认只绑 127.0.0.1（技术方案 §13.2「PG/Redis/ES 只绑内网」）；
+#       容器间通过 compose 网络互访，不需要对外暴露端口。
+#       本地开发若要容器外访问，设 POSTGRES_BIND=0.0.0.0（不建议在生产这么做）。
 
 name: youpu
 
@@ -15,8 +20,19 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-youpu_dev_password}
       POSTGRES_DB: ${POSTGRES_DB:-youpu}
       POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C"
+    command:
+      # 内存受限机器的保守参数（内测站 1G 内存；升配后可放宽）
+      - postgres
+      - -c
+      - shared_buffers=${PG_SHARED_BUFFERS:-128MB}
+      - -c
+      - effective_cache_size=${PG_EFFECTIVE_CACHE:-256MB}
+      - -c
+      - max_connections=${PG_MAX_CONNECTIONS:-40}
+      - -c
+      - work_mem=4MB
     ports:
-      - "5432:5432"
+      - "${POSTGRES_BIND:-127.0.0.1}:5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./postgres/init:/docker-entrypoint-initdb.d:ro
@@ -25,14 +41,15 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
+    mem_limit: ${PG_MEM_LIMIT:-320m}
 
   redis:
     image: redis:7-alpine
     container_name: youpu-redis
     restart: unless-stopped
-    command: ["redis-server", "--appendonly", "yes"]
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory", "${REDIS_MAXMEMORY:-96mb}", "--maxmemory-policy", "allkeys-lru"]
     ports:
-      - "6379:6379"
+      - "${REDIS_BIND:-127.0.0.1}:6379:6379"
     volumes:
       - redisdata:/data
     healthcheck:
@@ -40,9 +57,15 @@ services:
       interval: 5s
       timeout: 3s
       retries: 10
+    mem_limit: ${REDIS_MEM_LIMIT:-128m}
+
+  # ── 以下两组默认不启动（profiles: full）────────────────────────────────
+  # ES 是内存大户（堆 1–2G），内测阶段搜索走 PG 全文检索/trgm；
+  # 需要时：pnpm infra:up:full，再跑 pnpm es:reindex 重建索引（数据可从 PG 完全重建）。
 
   # 自定义镜像：ES 8.x + analysis-ik 中文分词（构建见 es-ik/Dockerfile）
   elasticsearch:
+    profiles: ["full"]
     build:
       context: ./es-ik
       args:
@@ -60,7 +83,7 @@ services:
       memlock: { soft: -1, hard: -1 }
       nofile: { soft: 65536, hard: 65536 }
     ports:
-      - "9200:9200"
+      - "${ES_BIND:-127.0.0.1}:9200:9200"
     volumes:
       - esdata:/usr/share/elasticsearch/data
     healthcheck:
@@ -72,6 +95,7 @@ services:
 
   # 自托管流量分析（技术方案 §12.1），首次启动自动建表；数据落在同一个 PG 的 umami 库
   umami:
+    profiles: ["full"]
     image: ghcr.io/umami-software/umami:postgresql-latest
     container_name: youpu-umami
     restart: unless-stopped
@@ -79,7 +103,7 @@ services:
       DATABASE_URL: postgresql://${POSTGRES_USER:-youpu}:${POSTGRES_PASSWORD:-youpu_dev_password}@postgres:5432/umami
       APP_SECRET: ${UMAMI_APP_SECRET:-change_me_umami_secret}
     ports:
-      - "3005:3000"
+      - "${UMAMI_BIND:-127.0.0.1}:3005:3000"
     depends_on:
       postgres:
         condition: service_healthy

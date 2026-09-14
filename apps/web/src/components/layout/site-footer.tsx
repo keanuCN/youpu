@@ -28,8 +28,8 @@ export function SiteFooter() {
               {BRAND.nameEn} · {BRAND.tagline}
             </p>
             <p className="mt-4 max-w-sm text-[12px] leading-relaxed text-muted-foreground">
-              一个把装备参数、实测评分和真实使用条件放在同一张表上的档案库。
-              我们不写「手感很棒」，我们写「74kg / 8 年 / 万龙冰面」。
+              从单板到跑鞋、镜头、键盘，品类在扩，方法不变：
+              每个品类定义自己的参数体系与评分维度，每条评价都标注真实使用条件——装备好不好，取决于谁来用。
             </p>
           </div>
           <nav>
@@ -70,7 +70,14 @@ export function SiteFooter() {
         </div>
         <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-5">
           <p className="mono-label">{SEASON} SEASON · ISSUE No.42</p>
-          <p className="mono-label">原型演示 · 数据与账号均保存在本机浏览器</p>
+          <a
+            href={BRAND.icpUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mono-label transition-colors hover:text-foreground"
+          >
+            {BRAND.icp}
+          </a>
         </div>
       </div>
     </footer>

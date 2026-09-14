@@ -49,7 +49,7 @@ export function SpecTable({ gear, groups }: { gear: GearItem; groups: SpecGroup[
                         ) : (
                           <>
                             {f.key === "price" && typeof raw === "number" ? `¥${raw.toLocaleString("zh-CN")}` : String(raw)}
-                            {f.unit ? <span className="ml-[3px] text-[10px] text-muted-foreground">{f.unit}</span> : null}
+                            {f.unit ? <span className="ml-[3px] text-[11px] text-muted-foreground">{f.unit}</span> : null}
                           </>
                         )}
                       </dd>

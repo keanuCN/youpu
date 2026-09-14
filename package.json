@@ -18,7 +18,8 @@
     "db:migrate": "pnpm --filter @youpu/api prisma:migrate",
     "db:generate": "pnpm --filter @youpu/api prisma:generate",
     "seed": "pnpm --filter @youpu/api seed",
-    "es:reindex": "pnpm --filter @youpu/api es:reindex"
+    "es:reindex": "pnpm --filter @youpu/api es:reindex",
+    "infra:up:full": "docker compose -f docker/compose.yml --profile full up -d"
   },
   "packageManager": "pnpm@9.15.9"
 }

@@ -55,7 +55,7 @@ export function PageHead({
       {kicker ? <p className="mono-label mb-3 text-primary">{kicker}</p> : null}
       <div className="flex flex-wrap items-end justify-between gap-6">
         <div className="min-w-0">
-          <h1 className="text-[34px] leading-[0.95] font-medium tracking-tight sm:text-[46px]">
+          <h1 className="text-[34px] leading-[1.08] font-medium tracking-tight sm:text-[46px]">
             {title}
             {titleEn ? <span className="serif-display ml-3 text-[0.55em] text-muted-foreground">{titleEn}</span> : null}
           </h1>

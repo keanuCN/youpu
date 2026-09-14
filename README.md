@@ -73,6 +73,18 @@ pnpm dev           # web:3000 + api:3001
 | API 健康检查 | http://localhost:3001/api/health（db / redis / es 状态） |
 | Umami 流量分析 | http://localhost:3005（默认 admin / umami，登录后改密） |
 
+## 线上（内测站）
+
+**http://111.229.87.101/**（腾讯云 CVM · 上海 · 2核1G · 宝塔 nginx）
+
+- **前端**：Next.js **静态导出**产物由 nginx 直接托管（纯 HTML/CSS/JS，零 Node 运行时）——
+  前端是「内容包 + localStorage」架构，正好适配这台小机器
+- **数据层**：Docker 跑 PG16 + Redis（端口只绑 127.0.0.1），23 张表的迁移已执行并实测通过
+  （ltree / 按月分区 / 部分索引 / 触发器）；**ES 与 Umami 暂缓**（内存受限，搜索先用 PG，ES 可从 PG 完全重建）
+- **API**：待部署（用 systemd 直跑 Node，不进 Docker——1G 内存下容器构建有 OOM 风险）
+
+完整服务器现状、待续步骤与回滚方式见 [deploy/README.md](deploy/README.md)。
+
 ## 日常命令
 
 | 命令 | 说明 |
@@ -114,6 +126,23 @@ M2 起内容层改为「API 优先 + 内容包回退」，届时列表/详情走
 
 **已知取舍**：卡片底部的悬浮操作按钮贴近视口底部时会被常驻对比坞遮挡，需滚动后点击（原型同款行为，未擅自改交互）。
 
+## SEO 技术件（技术方案 §14.2）
+
+已落地（`apps/web/src/lib/seo.ts` + 各页 server 壳）：
+
+| 项 | 实现 |
+|---|---|
+| 标题/描述模板 | 全部从结构化数据生成：详情页 `{model} {year} 参数 · 实测评分 · 尺寸怎么选 - {brand} \| 有谱`；列表页 `{类目}怎么选 · 全参数对比与实测评分` |
+| canonical 纪律 | 筛选/排序参数 URL（`?sort=` `?q=`）一律 `noindex, follow`，只让干净路径进索引；分页走 self-canonical |
+| JSON-LD | 详情页 `Product + AggregateRating + Offer`（有评分才输出聚合评分）+ `BreadcrumbList`；榜单页 `ItemList` |
+| sitemap | `/sitemap.xml` 自动生成（首页 / 开档类目 / 详情 / 榜单 / 问卷 / 对比，共 20 条），数据上千后改用 `generateSitemaps` 分组 |
+| robots | `/robots.txt` 放行全站、挡 `/me` `/auth` `/api/`，声明 sitemap |
+| noindex 白名单 | 个人中心、登录页 |
+| 渲染形态 | 详情页 15 个档案 `generateStaticParams` 静态预渲染 |
+
+上线前必做：在 `apps/web/.env.local` 设 `NEXT_PUBLIC_SITE_URL=https://正式域名`（canonical / sitemap / 结构化数据都用它，现在是 localhost）。
+待办：`FAQPage` 结构化数据等 M3 客观分析产出问答形态后再加。
+
 ## 架构要点
 
 - **spec_schema 是唯一契约**（技术方案 §5）：`packages/schema` 一份 zod 定义，被 seed 导入校验、API 列表/详情渲染、
@@ -148,7 +177,13 @@ M2 起内容层改为「API 优先 + 内容包回退」，届时列表/详情走
 - ✅ **M1 脚手架**：pnpm monorepo / 22 张表建表迁移（含 ltree、分区表、部分索引）/ seed 管线（数据质量闸门）/
   埋点全链路 / outbox worker（4 类事件消费者）/ 健康检查
 - ✅ **前端**：原型全部页面与交互落地，typecheck + 生产构建 + Chrome 端到端检查通过（无 hydration 报错）
+- ✅ **SEO 技术包**（§14.2）：标题/描述模板、canonical 纪律、JSON-LD（Product/AggregateRating/BreadcrumbList/ItemList）、
+  sitemap.xml、robots.txt、noindex 白名单，详情页静态预渲染
+- ✅ **内测站已上线**（静态导出托管于 nginx，http://111.229.87.101/ ）；已备案（津ICP备2026009482号，页脚展示），
+  域名 `xiaopang.club` 待加 A 记录后即可用域名访问
+- 🚧 **线上后端进行中**：服务器已装 Docker 并跑起 PG16 + Redis，23 张表迁移实测通过（含分区表写入验证）；
+  下一步是 API 部署（systemd）与静态站埋点接入 —— 见 [deploy/README.md](deploy/README.md) 的「待续」
 - ✅ **M2 准备**：spec_schema 对齐原型字段集、15 款板可一键导出为 seed 数据并通过校验、
   API 响应契约进 `packages/schema`、四项产品决策落地（板型族枚举、编辑评分独立列 `product.editorial_scores`、
   综合指数实时计算、价格区间实时算分位）
-- ⏳ **下一步**：装 Docker 跑通后端全链路 → 详情页接 API → ES 分面 → apps/admin 后台
+- ⏳ **下一步**：装 Docker 跑通后端全链路 → 详情页接 API → ES 分面 → apps/admin 后台；上线前设 `NEXT_PUBLIC_SITE_URL` 并注册各站长平台（Bing/搜狗/百度）

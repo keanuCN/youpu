@@ -39,14 +39,14 @@ export function ReviewPanel({ gear }: { gear: GearItem }) {
             const p = total ? Math.round((n / total) * 100) : 0;
             return (
               <div key={star} className="flex items-center gap-3">
-                <span className="mono-data w-6 shrink-0 text-[11px] text-muted-foreground tnum">{star}★</span>
+                <span className="mono-data w-6 shrink-0 text-[12px] text-muted-foreground tnum">{star}★</span>
                 <span className="h-[6px] flex-1 bg-border">
                   <span
                     className="animate-bar-grow block h-full bg-foreground"
                     style={{ width: `${p}%`, animationDelay: `${(5 - star) * 70}ms` }}
                   />
                 </span>
-                <span className="mono-data w-10 shrink-0 text-right text-[11px] text-muted-foreground tnum">{p}%</span>
+                <span className="mono-data w-10 shrink-0 text-right text-[12px] text-muted-foreground tnum">{p}%</span>
               </div>
             );
           })}
@@ -247,10 +247,10 @@ function ReplyForm({ gear, parentId, onDone }: { gear: GearItem; parentId: strin
         className="min-h-16 resize-y rounded-none border-border text-[13px]"
       />
       <div className="mt-2 flex justify-end gap-2">
-        <Button size="sm" variant="ghost" onClick={onDone} className="h-7 rounded-none text-[11px]">
+        <Button size="sm" variant="ghost" onClick={onDone} className="h-7 rounded-none text-[12px]">
           取消
         </Button>
-        <Button size="sm" onClick={submit} className="h-7 rounded-none bg-foreground text-[11px] hover:bg-primary">
+        <Button size="sm" onClick={submit} className="h-7 rounded-none bg-foreground text-[12px] hover:bg-primary">
           发布回复
         </Button>
       </div>

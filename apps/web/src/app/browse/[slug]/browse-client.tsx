@@ -104,7 +104,7 @@ export function BrowseClient({ slug }: { slug: string }) {
                 onValueChange={(v) => patch({ price: [v[0] ?? PRICE_BOUNDS[0], v[1] ?? PRICE_BOUNDS[1]] as [number, number] })}
                 className="[&_[data-slot=range]]:bg-foreground [&_[data-slot=thumb]]:h-4 [&_[data-slot=thumb]]:w-2 [&_[data-slot=thumb]]:rounded-none [&_[data-slot=thumb]]:border-foreground [&_[data-slot=thumb]]:bg-background [&_[data-slot=track]]:h-[3px]"
               />
-              <p className="mono-data mt-3 flex justify-between text-[11.5px] tnum">
+              <p className="mono-data mt-3 flex justify-between text-[12px] tnum">
                 <span>{fmtPrice(filters.price[0])}</span>
                 <span>{fmtPrice(filters.price[1])}</span>
               </p>
@@ -133,7 +133,7 @@ export function BrowseClient({ slug }: { slug: string }) {
         <p className="mono-label mb-2">匹配结果</p>
         <p className="mono-data text-[26px] leading-none tnum">
           {result.length}
-          <span className="ml-1 text-[11px] text-muted-foreground">/ {pool.length} 件</span>
+          <span className="ml-1 text-[12px] text-muted-foreground">/ {pool.length} 件</span>
         </p>
       </div>
     </div>
@@ -196,7 +196,7 @@ export function BrowseClient({ slug }: { slug: string }) {
               <span className="mono-data text-[12px] text-muted-foreground tnum">{result.length} 件</span>
               <Sheet>
                 <SheetTrigger asChild>
-                  <Button variant="outline" size="sm" className="h-7 gap-1.5 rounded-none text-[11px] lg:hidden">
+                  <Button variant="outline" size="sm" className="h-7 gap-1.5 rounded-none text-[12px] lg:hidden">
                     <SlidersHorizontal size={13} strokeWidth={1.6} />
                     筛选{active ? ` · ${active}` : ""}
                   </Button>
@@ -244,7 +244,7 @@ export function BrowseClient({ slug }: { slug: string }) {
               <Button
                 variant="outline"
                 onClick={() => setFilters({ ...DEFAULT_FILTERS })}
-                className="mono-label mt-5 h-8 rounded-none px-4 text-[11px]"
+                className="mono-label mt-5 h-8 rounded-none px-4 text-[12px]"
               >
                 重置全部筛选
               </Button>

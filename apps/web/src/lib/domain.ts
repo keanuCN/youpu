@@ -1,7 +1,7 @@
 import { GEAR, GEAR_BY_ID, reviewCount, userRating } from "@/data/boards";
 import { SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { BASE_VOTES, SEED_REVIEWS } from "@/data/seeds";
-import { GUEST, type Persisted } from "@/lib/store";
+import { GUEST, type Persisted } from "@/lib/persisted";
 import type { GearItem, QuizQuestion, Review, ScoreDim, SortKey, SpecGroup } from "@/types";
 
 // 说明：涉及本机数据的函数一律显式接收 Persisted（由 usePersisted() 传入），

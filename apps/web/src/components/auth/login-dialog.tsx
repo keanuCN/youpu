@@ -185,12 +185,12 @@ export function LoginDialog({
                 <p className="mono-data truncate text-[12px]">{BRAND.demoEmail}</p>
                 <p className="mono-data truncate text-[12px] text-muted-foreground">{BRAND.demoPassword}</p>
               </div>
-              <Button type="button" size="sm" variant="outline" onClick={fillDemo} className="h-7 shrink-0 rounded-none text-[11px]">
+              <Button type="button" size="sm" variant="outline" onClick={fillDemo} className="h-7 shrink-0 rounded-none text-[12px]">
                 一键填入
               </Button>
             </div>
-            <p className="mt-3 text-[11px] leading-relaxed text-muted-foreground">
-              原型阶段的账号、收藏、评论与投票全部保存在本机浏览器 localStorage，
+            <p className="mt-3 text-[12px] leading-relaxed text-muted-foreground">
+              账号与收藏保存在本机浏览器，
               <Link href="/me" className="story-link ml-1" onClick={() => onOpenChange(false)}>
                 个人中心
               </Link>

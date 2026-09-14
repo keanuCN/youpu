@@ -2,11 +2,18 @@ import type { Metadata } from "next";
 import { RevealEngine } from "@/components/reveal-engine";
 import { AppShell } from "@/store/app-shell";
 import { BRAND } from "@/lib/brand";
+import { SITE_URL } from "@/lib/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: `${BRAND.name} ${BRAND.nameEn.toUpperCase()} · ${BRAND.archive}`,
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${BRAND.name} ${BRAND.nameEn.toUpperCase()} · ${BRAND.archive}`,
+    template: `%s | ${BRAND.name}`,
+  },
   description: `${BRAND.tagline} —— 装备参数图鉴 + 客观分析 + 社区实测评价。`,
+  openGraph: { type: "website", siteName: BRAND.name, locale: "zh_CN" },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -59,7 +59,7 @@ export function SiteHeader() {
           <p className="mono-label">
             {BRAND.archive} · {BRAND.archiveEn.toUpperCase()}
           </p>
-          <p className="mono-label">ISSUE No.42 · 数据更新于本机</p>
+          <p className="mono-label">ISSUE No.42 · {BRAND.tagline}</p>
         </div>
       </div>
 

@@ -58,8 +58,10 @@
 :root {
   --radius: 0px;
 
-  --font-serif-stack: "Crimson Pro", "Songti SC", "Noto Serif SC", Georgia, "Times New Roman", serif;
-  --font-mono-stack: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  /* 字体栈末尾必须带中文字体：mono/serif 族里没有中文字形时，
+     浏览器会退回默认等宽（Windows=宋体），10–11px 下又细又糊 */
+  --font-serif-stack: "Crimson Pro", "Songti SC", "Noto Serif SC", "Source Han Serif SC", Georgia, "Times New Roman", SimSun, serif;
+  --font-mono-stack: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "PingFang SC", "Microsoft YaHei", monospace;
   --font-sans-stack: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", ui-sans-serif, system-ui, sans-serif;
 
   --background: oklch(0.985 0.001 106);
@@ -133,12 +135,12 @@
 }
 
 @layer components {
-  /* 等宽小标签：全大写 + 宽字距 */
+  /* 等宽小标签：全大写 + 宽字距（字号与字距按中文可读性上调：10px/0.14em → 11px/0.12em） */
   .mono-label {
     font-family: var(--font-mono-stack);
-    font-size: 10px;
-    line-height: 1.2;
-    letter-spacing: 0.14em;
+    font-size: 11px;
+    line-height: 1.25;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--color-muted-foreground);
   }
@@ -153,6 +155,8 @@
     font-style: italic;
     font-weight: 300;
     letter-spacing: -0.02em;
+    /* 中文衬线无真斜体，禁止浏览器合成假斜体（拉丁文仍走 Crimson Pro 的真斜体） */
+    font-synthesis: none;
   }
 
   /* 全站交互签名：灰度 → 彩色 */

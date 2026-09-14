@@ -51,7 +51,7 @@ export function CompareDock() {
             <Scale size={13} strokeWidth={1.6} />
             对比坞
           </span>
-          <span className="mono-data mt-1 text-[11px] text-muted-foreground tnum">
+          <span className="mono-data mt-1 text-[12px] text-muted-foreground tnum">
             {items.length} / {DOCK_MAX}
           </span>
         </div>
@@ -63,7 +63,7 @@ export function CompareDock() {
                 <img src={g.hero} alt="" className="h-9 w-9 object-cover" loading="lazy" />
                 <span className="max-w-28 sm:max-w-40">
                   <span className="mono-label block truncate">{g.brand}</span>
-                  <span className="mono-data block truncate text-[11.5px]">{g.model}</span>
+                  <span className="mono-data block truncate text-[12px]">{g.model}</span>
                 </span>
               </Link>
               <button

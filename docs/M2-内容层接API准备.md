@@ -65,7 +65,10 @@ pnpm --filter @youpu/api validate:data # 契约校验，不连库
    可筛字段 = spec_schema 中 `filter !== false` 的字段，含 `scenes` 与 `profileFamily`）。
 4. **首页**：高分榜 / 新品 → `/api/products?sort=rating|new`。
 5. **对比页**：需要补 `GET /api/products?ids=a,b,c`（M2 新端点，一次取多件）。
-6. **SEO 技术包**：列表/详情转 SSR + `generateMetadata`（技术方案 §14），此时 canonical / JSON-LD 一并落地。
+6. **SEO 技术包**：✅ 已完成（2026-09-15，不依赖后端）——标题/描述模板、canonical 纪律、
+   JSON-LD（Product + AggregateRating + BreadcrumbList + ItemList）、sitemap.xml、robots.txt、
+   noindex 白名单（`/me`、`/auth`、筛选参数 URL），详情页 15 个档案静态预渲染。
+   实现见 `apps/web/src/lib/seo.ts`；上线前设 `NEXT_PUBLIC_SITE_URL` 后再做 canonical 复核与站长平台注册。
 
 ## 5. 已决策（2026-09-14）
 

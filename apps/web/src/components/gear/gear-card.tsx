@@ -108,7 +108,7 @@ export function GearCard({
           </div>
           <div className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-foreground/85 px-2.5 py-1.5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <span className="mono-label text-background/70">{gear.year} 款</span>
-            <span className="mono-data text-[11px] text-background tnum">{fmtCompact(gear.heat)} 次浏览</span>
+            <span className="mono-data text-[12px] text-background tnum">{fmtCompact(gear.heat)} 次浏览</span>
           </div>
         </div>
 
@@ -135,7 +135,7 @@ export function GearCard({
             </div>
             <div className="flex flex-col items-end gap-1">
               <Stars value={userRating(gear)} size={11} />
-              <span className="mono-data text-[10px] text-muted-foreground tnum">
+              <span className="mono-data text-[11px] text-muted-foreground tnum">
                 {userRating(gear).toFixed(1)} · {reviewCount(gear)} 条实测
               </span>
             </div>
@@ -149,7 +149,7 @@ export function GearCard({
           onClick={onFav}
           aria-label={fav ? "取消收藏" : "收藏"}
           className={cn(
-            "flex flex-1 items-center justify-center gap-1.5 border-t border-r border-foreground/15 py-2 text-[11px] transition-colors",
+            "flex flex-1 items-center justify-center gap-1.5 border-t border-r border-foreground/15 py-2 text-[12px] transition-colors",
             fav ? "bg-primary text-primary-foreground" : "bg-background/95 hover:bg-accent",
           )}
         >
@@ -161,7 +161,7 @@ export function GearCard({
           onClick={onDock}
           aria-label={inDock ? "移出对比" : "加入对比"}
           className={cn(
-            "flex flex-1 items-center justify-center gap-1.5 border-t border-foreground/15 py-2 text-[11px] transition-colors",
+            "flex flex-1 items-center justify-center gap-1.5 border-t border-foreground/15 py-2 text-[12px] transition-colors",
             inDock ? "bg-foreground text-background" : "bg-background/95 hover:bg-accent",
           )}
         >
