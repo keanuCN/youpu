@@ -1,0 +1,63 @@
+# 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
+# 原型 id：sb-04 · 参数未经官网逐项校对，转入正式发布前需人工核对
+slug: salomon-sight-2026
+category: snowboard
+brand: salomon
+model: Sight
+year: 2026
+title: Salomon Sight 2026
+one_liner: 它存在的意义就是让你少摔几次。板头板尾的反弓把卡刃概率压到很低，价格还留在入门区间。
+price:
+  min: 3299
+  max: 3299
+  currency: CNY
+specs:
+  length: 155
+  effectiveEdge: 1180
+  sidecut: 7.8
+  waistWidth: 254
+  stanceSetback: 10
+  profile: Rocker-Camber-Rocker
+  shape: 定向
+  core: 白杨 + 泡棉
+  fiberglass: Biax
+  base: 挤压 3500
+  weight: 2650
+  damping: 5.5
+  pop: 4.5
+  turnRadiusFeel: 宽松，容错高
+  warranty: 2
+  flex: 4
+  profileFamily: hybrid
+  scenes:
+    - beginner
+    - all-mountain
+editorial_scores:
+  stability: 5.5
+  response: 5
+  float: 6
+  park: 5
+  forgiveness: 9.5
+  value: 9
+images:
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-06.png?auth_key=12936507cc57135902558c86b8e8de33d959f7af4b93ac4078e9012b69c426e0
+    kind: base
+    alt: Salomon Sight 底面 / BASE
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 0
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-top-04.png?auth_key=9422efddcabccc3c280740582ddb53deab5ba32809dec2d2dcc8bc867f8a8497
+    kind: face
+    alt: Salomon Sight 板面 / TOPSHEET
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 1
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555
+    kind: side
+    alt: Salomon Sight 细节 / DETAIL
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 2
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/hero-ridge.png?auth_key=12382ced0bf2c0dc18c0c11c5e75b977d3b2310f18cb69254a0695446681db65
+    kind: field
+    alt: Salomon Sight 实地 / FIELD
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 3
+status: published

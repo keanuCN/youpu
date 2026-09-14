@@ -1,0 +1,251 @@
+# 类目树 seed —— 叶子类目的 spec_schema 是全站契约核心（技术方案 §5 / 数据库设计 §2.1.1）
+# 字段集与前端「参数表分组 / 对比矩阵 / 筛选器」一一对应，结构与 原型/data/categories.ts 的 specTemplate 对齐：
+#   group ≈ PIM Attribute Group，compareDirection ≈ 对比页胜负方向，diffThreshold ≈ 差异判定阈值
+# 新增品类时：在此追加一条 + 录数据，前后端与后台零代码改动。
+
+- slug: sport
+  name: 运动
+  sort_order: 10
+
+- slug: skiing
+  name: 滑雪
+  parent: sport
+  sort_order: 10
+
+- slug: snowboard
+  name: 单板
+  parent: skiing
+  sort_order: 10
+  recommend_config:
+    # 推荐打分权重（技术方案 §6：场景 40% / 水平 30% / 硬度 20% / 价格 10%）
+    weights:
+      terrain: 0.4
+      level: 0.3
+      flex: 0.2
+      price: 0.1
+  spec_schema:
+    fields:
+      # ── 尺寸与形状 ──
+      - key: length
+        label: 长度
+        group: 尺寸与形状
+        type: number
+        unit: cm
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 10
+
+      - key: effectiveEdge
+        label: 有效边刃
+        group: 尺寸与形状
+        type: number
+        unit: mm
+        min: 800
+        max: 1600
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        diffThreshold: 0.03
+        order: 20
+
+      - key: sidecut
+        label: 侧切半径
+        group: 尺寸与形状
+        type: number
+        unit: m
+        min: 4
+        max: 15
+        filter: range
+        compare: true
+        compareDirection: neutral
+        order: 30
+        help: 数值越小转弯越灵活，越大越稳定
+
+      - key: waistWidth
+        label: 板腰宽
+        group: 尺寸与形状
+        type: number
+        unit: mm
+        min: 200
+        max: 300
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 40
+        help: 大脚（EU 43+）用户需关注，板腰过窄会 boot 突出
+
+      - key: stanceSetback
+        label: 站位后移
+        group: 尺寸与形状
+        type: number
+        unit: mm
+        filter: false
+        compare: true
+        compareDirection: neutral
+        order: 50
+
+      - key: profile
+        label: 板型
+        group: 尺寸与形状
+        type: text
+        filter: false
+        compare: true
+        order: 60
+        help: 品牌专有技术名（如「C2X（板下反弓 + 板头尾 Camber）」），不做枚举归一化
+
+      - key: profileFamily
+        label: 板型族
+        group: 尺寸与形状
+        type: enum
+        options:
+          - { value: camber, label: 正拱 Camber }
+          - { value: rocker, label: 反拱 Rocker }
+          - { value: hybrid, label: 混合拱 }
+        filter: multi
+        compare: true
+        order: 65
+        help: 归一化板型，供筛选分面用；具体技术名保留在「板型」文本字段
+
+      - key: shape
+        label: 形状
+        group: 尺寸与形状
+        type: text
+        filter: false
+        compare: true
+        order: 70
+
+      # ── 板芯与结构 ──
+      - key: core
+        label: 板芯
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: true
+        order: 110
+
+      - key: fiberglass
+        label: 玻纤层
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: true
+        order: 120
+
+      - key: base
+        label: 底面材质
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: true
+        order: 130
+
+      - key: weight
+        label: 整板重量
+        group: 板芯与结构
+        type: number
+        unit: g
+        min: 1500
+        max: 5000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 140
+
+      # ── 性能取向 ──
+      - key: flex
+        label: 硬度
+        group: 性能取向
+        type: number
+        unit: /10
+        min: 1
+        max: 10
+        step: 0.5
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 210
+        help: 1-3 软（新手/公园），4-6 中等（全能），7-10 硬（刻滑/大体重/高手）
+
+      - key: damping
+        label: 减震
+        group: 性能取向
+        type: number
+        unit: /10
+        min: 1
+        max: 10
+        step: 0.5
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 220
+
+      - key: pop
+        label: 弹性
+        group: 性能取向
+        type: number
+        unit: /10
+        min: 1
+        max: 10
+        step: 0.5
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 230
+
+      - key: turnRadiusFeel
+        label: 转向手感
+        group: 性能取向
+        type: text
+        filter: false
+        compare: true
+        order: 240
+
+      # ── 适用场景（筛选主力字段） ──
+      - key: scenes
+        label: 适用场景
+        group: 适用场景
+        type: enum[]
+        options:
+          - { value: all-mountain, label: 全山地 }
+          - { value: freestyle, label: 自由式 }
+          - { value: powder, label: 野雪浮雪 }
+          - { value: carving, label: 刻滑 }
+          - { value: beginner, label: 新手入门 }
+        filter: multi
+        compare: true
+        order: 310
+
+      # ── 价格与年份 ──
+      - key: warranty
+        label: 质保
+        group: 价格与年份
+        type: number
+        unit: 年
+        min: 0
+        max: 10
+        filter: false
+        compare: true
+        compareDirection: higher-better
+        order: 410
+
+    # 编辑分项评分不在此声明字段：它存在 product.editorial_scores 列，
+    # 维度定义见下方 rating_dimensions（编辑评分与社区评分共用同一组维度键）
+    rating_dimensions:
+      - { key: stability, label: 稳定性, weight: 0.2 }
+      - { key: response, label: 操控响应, weight: 0.18 }
+      - { key: float, label: 浮雪, weight: 0.15 }
+      - { key: park, label: 公园表现, weight: 0.15 }
+      - { key: forgiveness, label: 容错度, weight: 0.17 }
+      - { key: value, label: 性价比, weight: 0.15 }
+
+    insights:
+      - id: stiff-for-beginner
+        when: "flex >= 7 && level == 'beginner'"
+        template: "硬度 {flex}/10：需要至少一个雪季经验才能压住，新手慎选"
+      - id: narrow-waist-big-boot
+        when: "waistWidth < 250 && boot_size >= 43"
+        template: "板腰 {waistWidth}mm 偏窄：EU {boot_size} 的鞋码需确认 boot 突出量，建议考虑宽版（W）"
+      - id: rocker-friendly
+        when: "profile == 'rocker' && level == 'beginner'"
+        template: "反拱板型：容错高、不易卡刃，适合新手建立信心"

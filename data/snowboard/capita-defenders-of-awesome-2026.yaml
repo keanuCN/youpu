@@ -1,0 +1,63 @@
+# 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
+# 原型 id：sb-03 · 参数未经官网逐项校对，转入正式发布前需人工核对
+slug: capita-defenders-of-awesome-2026
+category: snowboard
+brand: capita
+model: Defenders of Awesome
+year: 2026
+title: Capita Defenders of Awesome 2026
+one_liner: 公园里的通用答案。弹性是它的全部性格，起跳时机对了它会把你送得比预期更高。
+price:
+  min: 5299
+  max: 5299
+  currency: CNY
+specs:
+  length: 155
+  effectiveEdge: 1195
+  sidecut: 7.6
+  waistWidth: 252
+  stanceSetback: 0
+  profile: Resort V1（Camber 主导 + 板头尾反弓）
+  shape: 真双向
+  core: Dual Core 白杨
+  fiberglass: Biax Carbon
+  base: 挤压 4000
+  weight: 2760
+  damping: 6
+  pop: 9
+  turnRadiusFeel: 灵活，短半径很快
+  warranty: 2
+  flex: 5.5
+  profileFamily: hybrid
+  scenes:
+    - freestyle
+    - all-mountain
+editorial_scores:
+  stability: 6.5
+  response: 8
+  float: 5.5
+  park: 9.5
+  forgiveness: 7.5
+  value: 8.5
+images:
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1
+    kind: base
+    alt: Capita Defenders of Awesome 底面 / BASE
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 0
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-top-03.png?auth_key=a00efee7b4a7f0aabc2a4367bff4c09fbdfa60482503d839065526be7159832e
+    kind: face
+    alt: Capita Defenders of Awesome 板面 / TOPSHEET
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 1
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-detail-binding.png?auth_key=b65df2b86b31534b53b605d6ae3c12bd3061d495618139b5d7bb821526f17890
+    kind: side
+    alt: Capita Defenders of Awesome 细节 / DETAIL
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 2
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/hero-ridge.png?auth_key=12382ced0bf2c0dc18c0c11c5e75b977d3b2310f18cb69254a0695446681db65
+    kind: field
+    alt: Capita Defenders of Awesome 实地 / FIELD
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 3
+status: published

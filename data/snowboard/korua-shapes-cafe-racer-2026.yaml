@@ -1,0 +1,63 @@
+# 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
+# 原型 id：sb-07 · 参数未经官网逐项校对，转入正式发布前需人工核对
+slug: korua-shapes-cafe-racer-2026
+category: snowboard
+brand: korua-shapes
+model: Cafe Racer
+year: 2026
+title: Korua Shapes Cafe Racer 2026
+one_liner: 一块只为「走刃」存在的板子。它不会跳、不会转得快，但当你把刃压下去时，它给你的稳定感是别的板给不了的。
+price:
+  min: 6899
+  max: 6899
+  currency: CNY
+specs:
+  length: 161
+  effectiveEdge: 1310
+  sidecut: 9.4
+  waistWidth: 262
+  stanceSetback: 45
+  profile: 纯 Camber + 长板头
+  shape: 强定向
+  core: 白杨 / 竹混合
+  fiberglass: Triax
+  base: 烧结 9000
+  weight: 3120
+  damping: 8.5
+  pop: 5
+  turnRadiusFeel: 大半径长弧，越滑越快
+  warranty: 2
+  flex: 7.5
+  profileFamily: camber
+  scenes:
+    - carving
+    - powder
+editorial_scores:
+  stability: 9.5
+  response: 8
+  float: 8.5
+  park: 2
+  forgiveness: 3.5
+  value: 5.5
+images:
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1
+    kind: base
+    alt: Korua Shapes Cafe Racer 底面 / BASE
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 0
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-top-03.png?auth_key=a00efee7b4a7f0aabc2a4367bff4c09fbdfa60482503d839065526be7159832e
+    kind: face
+    alt: Korua Shapes Cafe Racer 板面 / TOPSHEET
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 1
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-detail-binding.png?auth_key=b65df2b86b31534b53b605d6ae3c12bd3061d495618139b5d7bb821526f17890
+    kind: side
+    alt: Korua Shapes Cafe Racer 细节 / DETAIL
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 2
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/hero-ridge.png?auth_key=12382ced0bf2c0dc18c0c11c5e75b977d3b2310f18cb69254a0695446681db65
+    kind: field
+    alt: Korua Shapes Cafe Racer 实地 / FIELD
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 3
+status: published

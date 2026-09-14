@@ -1,0 +1,63 @@
+# 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
+# 原型 id：sb-01 · 参数未经官网逐项校对，转入正式发布前需人工核对
+slug: burton-custom-camber-2026
+category: snowboard
+brand: burton
+model: Custom Camber
+year: 2026
+title: Burton Custom Camber 2026
+one_liner: 全山地基准板。它不试图讨好任何人，只是把「稳定 + 精准」这两件事做到该价位的上限。
+price:
+  min: 6299
+  max: 6299
+  currency: CNY
+specs:
+  length: 158
+  effectiveEdge: 1250
+  sidecut: 7.9
+  waistWidth: 253
+  stanceSetback: 15
+  profile: 纯 Camber
+  shape: 定向双向
+  core: FSC 认证杨木 / 双轴玻纤
+  fiberglass: Triax + Biax
+  base: 烧结 7200
+  weight: 2980
+  damping: 8
+  pop: 7.5
+  turnRadiusFeel: 长弧稳、短弧需发力
+  warranty: 3
+  flex: 7
+  profileFamily: camber
+  scenes:
+    - all-mountain
+    - carving
+editorial_scores:
+  stability: 9
+  response: 8.5
+  float: 6
+  park: 5.5
+  forgiveness: 5
+  value: 6.5
+images:
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555
+    kind: base
+    alt: Burton Custom Camber 底面 / BASE
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 0
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-top-03.png?auth_key=a00efee7b4a7f0aabc2a4367bff4c09fbdfa60482503d839065526be7159832e
+    kind: face
+    alt: Burton Custom Camber 板面 / TOPSHEET
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 1
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-detail-binding.png?auth_key=b65df2b86b31534b53b605d6ae3c12bd3061d495618139b5d7bb821526f17890
+    kind: side
+    alt: Burton Custom Camber 细节 / DETAIL
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 2
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/hero-ridge.png?auth_key=12382ced0bf2c0dc18c0c11c5e75b977d3b2310f18cb69254a0695446681db65
+    kind: field
+    alt: Burton Custom Camber 实地 / FIELD
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 3
+status: published

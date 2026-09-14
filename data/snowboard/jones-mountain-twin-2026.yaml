@@ -1,0 +1,63 @@
+# 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
+# 原型 id：sb-02 · 参数未经官网逐项校对，转入正式发布前需人工核对
+slug: jones-mountain-twin-2026
+category: snowboard
+brand: jones
+model: Mountain Twin
+year: 2026
+title: Jones Mountain Twin 2026
+one_liner: 最没有短板的一块。它不会在任何一项上给你惊喜，但也不会让你在任何一天后悔带它出门。
+price:
+  min: 5899
+  max: 5899
+  currency: CNY
+specs:
+  length: 157
+  effectiveEdge: 1225
+  sidecut: 8
+  waistWidth: 255
+  stanceSetback: 20
+  profile: Camber + 板头板尾微摇臂
+  shape: 定向双向
+  core: FSC 白杨 / 玄武岩纤维
+  fiberglass: Biax + Basalt
+  base: 烧结 8000
+  weight: 2870
+  damping: 7.5
+  pop: 7
+  turnRadiusFeel: 中性，长短弧都好带
+  warranty: 3
+  flex: 6
+  profileFamily: hybrid
+  scenes:
+    - all-mountain
+    - freestyle
+editorial_scores:
+  stability: 8
+  response: 7.5
+  float: 7.5
+  park: 6.5
+  forgiveness: 6.5
+  value: 8
+images:
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1
+    kind: base
+    alt: Jones Mountain Twin 底面 / BASE
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 0
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-top-04.png?auth_key=9422efddcabccc3c280740582ddb53deab5ba32809dec2d2dcc8bc867f8a8497
+    kind: face
+    alt: Jones Mountain Twin 板面 / TOPSHEET
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 1
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555
+    kind: side
+    alt: Jones Mountain Twin 细节 / DETAIL
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 2
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/hero-ridge.png?auth_key=12382ced0bf2c0dc18c0c11c5e75b977d3b2310f18cb69254a0695446681db65
+    kind: field
+    alt: Jones Mountain Twin 实地 / FIELD
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 3
+status: published

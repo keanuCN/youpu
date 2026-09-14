@@ -1,0 +1,63 @@
+# 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
+# 原型 id：sb-06 · 参数未经官网逐项校对，转入正式发布前需人工核对
+slug: never-summer-proto-slinger-2025
+category: snowboard
+brand: never-summer
+model: Proto Slinger
+year: 2025
+title: Never Summer Proto Slinger 2025
+one_liner: 全山地里性格最鲜明的一块。碳纤层让它的回弹比同价位明显更快，出弯时能感觉到板子在推你。
+price:
+  min: 5499
+  max: 5499
+  currency: CNY
+specs:
+  length: 157
+  effectiveEdge: 1215
+  sidecut: 7.9
+  waistWidth: 254
+  stanceSetback: 12
+  profile: Ripsaw（Camber 主导 + 板头长摇臂）
+  shape: 定向双向
+  core: 白杨 + 竹条
+  fiberglass: Triax Carbon
+  base: 烧结 Durasurf
+  weight: 2840
+  damping: 7.5
+  pop: 8
+  turnRadiusFeel: 入弯快，出弯有推背感
+  warranty: 3
+  flex: 6
+  profileFamily: hybrid
+  scenes:
+    - all-mountain
+    - freestyle
+editorial_scores:
+  stability: 8
+  response: 8.5
+  float: 7
+  park: 7
+  forgiveness: 6
+  value: 7.5
+images:
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1
+    kind: base
+    alt: Never Summer Proto Slinger 底面 / BASE
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 0
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-top-04.png?auth_key=9422efddcabccc3c280740582ddb53deab5ba32809dec2d2dcc8bc867f8a8497
+    kind: face
+    alt: Never Summer Proto Slinger 板面 / TOPSHEET
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 1
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555
+    kind: side
+    alt: Never Summer Proto Slinger 细节 / DETAIL
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 2
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/hero-ridge.png?auth_key=12382ced0bf2c0dc18c0c11c5e75b977d3b2310f18cb69254a0695446681db65
+    kind: field
+    alt: Never Summer Proto Slinger 实地 / FIELD
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 3
+status: published

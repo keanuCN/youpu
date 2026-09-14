@@ -1,0 +1,24 @@
+{
+  "name": "youpu",
+  "private": true,
+  "version": "0.1.0",
+  "description": "有谱 —— 万物参数图鉴 + 客观分析 + 社区评价的装备选择网站",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter @youpu/api --filter @youpu/web dev",
+    "dev:web": "pnpm --filter @youpu/web dev",
+    "dev:api": "pnpm --filter @youpu/api dev",
+    "build": "pnpm --filter @youpu/schema build && pnpm --filter @youpu/api build && pnpm --filter @youpu/web build",
+    "typecheck": "pnpm -r typecheck",
+    "infra:up": "docker compose -f docker/compose.yml up -d",
+    "infra:down": "docker compose -f docker/compose.yml down",
+    "infra:logs": "docker compose -f docker/compose.yml logs -f",
+    "db:migrate": "pnpm --filter @youpu/api prisma:migrate",
+    "db:generate": "pnpm --filter @youpu/api prisma:generate",
+    "seed": "pnpm --filter @youpu/api seed",
+    "es:reindex": "pnpm --filter @youpu/api es:reindex"
+  },
+  "packageManager": "pnpm@9.15.9"
+}

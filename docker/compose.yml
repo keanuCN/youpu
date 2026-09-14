@@ -1,0 +1,90 @@
+# 有谱 · 本地基础设施（技术方案 §9）
+# 启动：pnpm infra:up（等价 docker compose -f docker/compose.yml up -d）
+# 说明：web/api 在本地以 pnpm dev 跑热更新，不进本地 compose；生产编排见后续 M2 部署篇。
+# 内存提示：ES 堆 1g + PG + Redis + Umami 合计约需 3-4G 空闲内存（4C8G 服务器基线）。
+
+name: youpu
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: youpu-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-youpu}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-youpu_dev_password}
+      POSTGRES_DB: ${POSTGRES_DB:-youpu}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C"
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-youpu} -d ${POSTGRES_DB:-youpu}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: youpu-redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # 自定义镜像：ES 8.x + analysis-ik 中文分词（构建见 es-ik/Dockerfile）
+  elasticsearch:
+    build:
+      context: ./es-ik
+      args:
+        ES_VERSION: ${ES_VERSION:-8.13.4}
+    container_name: youpu-es
+    restart: unless-stopped
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - xpack.ml.enabled=false
+      - ingest.geoip.downloader.enabled=false
+      - bootstrap.memory_lock=true
+      - ES_JAVA_OPTS=${ES_JAVA_OPTS:--Xms1g -Xmx1g}
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+      nofile: { soft: 65536, hard: 65536 }
+    ports:
+      - "9200:9200"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs http://localhost:9200/_cluster/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 40s
+
+  # 自托管流量分析（技术方案 §12.1），首次启动自动建表；数据落在同一个 PG 的 umami 库
+  umami:
+    image: ghcr.io/umami-software/umami:postgresql-latest
+    container_name: youpu-umami
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-youpu}:${POSTGRES_PASSWORD:-youpu_dev_password}@postgres:5432/umami
+      APP_SECRET: ${UMAMI_APP_SECRET:-change_me_umami_secret}
+    ports:
+      - "3005:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  redisdata:
+  esdata:

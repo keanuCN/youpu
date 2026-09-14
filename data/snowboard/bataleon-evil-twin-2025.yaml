@@ -1,0 +1,63 @@
+# 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
+# 原型 id：sb-08 · 参数未经官网逐项校对，转入正式发布前需人工核对
+slug: bataleon-evil-twin-2025
+category: snowboard
+brand: bataleon
+model: Evil Twin
+year: 2025
+title: Bataleon Evil Twin 2025
+one_liner: 勺形板头把卡刃这件事基本消除了。它是从新手过渡到公园最平滑的一块板，容错高但不软塌。
+price:
+  min: 4899
+  max: 4899
+  currency: CNY
+specs:
+  length: 154
+  effectiveEdge: 1170
+  sidecut: 7.4
+  waistWidth: 251
+  stanceSetback: 0
+  profile: 3BT（板头尾勺形 + 板下 Camber）
+  shape: 真双向
+  core: 白杨
+  fiberglass: Biax
+  base: 烧结 4400
+  weight: 2720
+  damping: 6
+  pop: 7.5
+  turnRadiusFeel: 极宽松，入弯无阻力
+  warranty: 2
+  flex: 5
+  profileFamily: hybrid
+  scenes:
+    - freestyle
+    - beginner
+editorial_scores:
+  stability: 6
+  response: 6.5
+  float: 7
+  park: 8.5
+  forgiveness: 9
+  value: 8
+images:
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-06.png?auth_key=12936507cc57135902558c86b8e8de33d959f7af4b93ac4078e9012b69c426e0
+    kind: base
+    alt: Bataleon Evil Twin 底面 / BASE
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 0
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-top-04.png?auth_key=9422efddcabccc3c280740582ddb53deab5ba32809dec2d2dcc8bc867f8a8497
+    kind: face
+    alt: Bataleon Evil Twin 板面 / TOPSHEET
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 1
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555
+    kind: side
+    alt: Bataleon Evil Twin 细节 / DETAIL
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 2
+  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/hero-ridge.png?auth_key=12382ced0bf2c0dc18c0c11c5e75b977d3b2310f18cb69254a0695446681db65
+    kind: field
+    alt: Bataleon Evil Twin 实地 / FIELD
+    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
+    sort_order: 3
+status: published

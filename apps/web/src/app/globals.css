@@ -1,0 +1,276 @@
+@import "tailwindcss" source(none);
+@source "../";
+@import "tw-animate-css";
+
+/* 瑞士数据 / Swiss Data —— 纯浅色单套 token，sharp corners，单一强调色 */
+@theme inline {
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-4xl: 0px;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-sans: var(--font-sans-stack);
+  --font-serif: var(--font-serif-stack);
+  --font-mono: var(--font-mono-stack);
+
+  --ease-swiss: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+:root {
+  --radius: 0px;
+
+  --font-serif-stack: "Crimson Pro", "Songti SC", "Noto Serif SC", Georgia, "Times New Roman", serif;
+  --font-mono-stack: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-sans-stack: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", ui-sans-serif, system-ui, sans-serif;
+
+  --background: oklch(0.985 0.001 106);
+  --foreground: oklch(0.216 0.006 56);
+  --card: oklch(0.985 0.001 106);
+  --card-foreground: oklch(0.216 0.006 56);
+  --popover: oklch(0.995 0 0);
+  --popover-foreground: oklch(0.216 0.006 56);
+
+  /* 深宝蓝 —— 全站唯一强调色 */
+  --primary: oklch(0.42 0.19 264);
+  --primary-foreground: oklch(0.985 0.001 106);
+
+  --secondary: oklch(0.955 0.002 106);
+  --secondary-foreground: oklch(0.216 0.006 56);
+  --muted: oklch(0.923 0.003 49);
+  --muted-foreground: oklch(0.553 0.013 58);
+  --accent: oklch(0.945 0.004 106);
+  --accent-foreground: oklch(0.216 0.006 56);
+
+  --destructive: oklch(0.55 0.21 27);
+  --destructive-foreground: oklch(0.985 0.001 106);
+
+  --border: oklch(0.923 0.003 49);
+  --input: oklch(0.88 0.004 49);
+  --ring: oklch(0.42 0.19 264);
+
+  /* 对比雷达图：同色相族内可区分 */
+  --chart-1: oklch(0.42 0.19 264);
+  --chart-2: oklch(0.62 0.15 55);
+  --chart-3: oklch(0.52 0.1 165);
+  --chart-4: oklch(0.45 0.01 56);
+  --chart-5: oklch(0.68 0.11 20);
+
+  --sidebar: oklch(0.975 0.001 106);
+  --sidebar-foreground: oklch(0.216 0.006 56);
+  --sidebar-primary: oklch(0.42 0.19 264);
+  --sidebar-primary-foreground: oklch(0.985 0.001 106);
+  --sidebar-accent: oklch(0.945 0.004 106);
+  --sidebar-accent-foreground: oklch(0.216 0.006 56);
+  --sidebar-border: oklch(0.923 0.003 49);
+  --sidebar-ring: oklch(0.42 0.19 264);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans-stack);
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+
+  /* 数值一律等宽表格数字，避免跳动 */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+}
+
+@layer components {
+  /* 等宽小标签：全大写 + 宽字距 */
+  .mono-label {
+    font-family: var(--font-mono-stack);
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-muted-foreground);
+  }
+
+  .mono-data {
+    font-family: var(--font-mono-stack);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .serif-display {
+    font-family: var(--font-serif-stack);
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+  }
+
+  /* 全站交互签名：灰度 → 彩色 */
+  .plate {
+    filter: grayscale(1) contrast(1.04);
+    transition: filter 0.7s var(--ease-swiss), transform 0.7s var(--ease-swiss);
+  }
+  .group:hover .plate,
+  a:hover .plate,
+  .plate:hover {
+    filter: grayscale(0) contrast(1);
+  }
+
+  /* 极淡点阵网格背景 */
+  .dot-grid {
+    background-image: radial-gradient(var(--color-foreground) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.035;
+  }
+
+  /* 编辑体链接下划线 */
+  .story-link {
+    position: relative;
+    display: inline-block;
+  }
+  .story-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.35s var(--ease-swiss);
+  }
+  .story-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /* 栏目标题下的粗分隔线 */
+  .rule-heavy {
+    border-bottom: 1px solid var(--color-foreground);
+  }
+
+  .hairline {
+    border-color: var(--color-border);
+  }
+
+  /* 细滚动条 */
+  .thin-scroll::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  .thin-scroll::-webkit-scrollbar-thumb {
+    background: var(--color-input);
+  }
+  .thin-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@layer utilities {
+  @keyframes radar-draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dock-rise {
+    from {
+      transform: translateY(110%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dock-shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-6px);
+    }
+    40% {
+      transform: translateX(6px);
+    }
+    60% {
+      transform: translateX(-4px);
+    }
+    80% {
+      transform: translateX(4px);
+    }
+  }
+  @keyframes bar-grow {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  .animate-radar-draw {
+    stroke-dasharray: 320;
+    stroke-dashoffset: 320;
+    animation: radar-draw 1.6s var(--ease-swiss) forwards;
+  }
+  .animate-dock-rise {
+    animation: dock-rise 0.4s var(--ease-swiss) both;
+  }
+  .animate-dock-shake {
+    animation: dock-shake 0.4s ease-in-out both;
+  }
+  .animate-bar-grow {
+    transform-origin: left center;
+    animation: bar-grow 0.9s var(--ease-swiss) both;
+  }
+}
