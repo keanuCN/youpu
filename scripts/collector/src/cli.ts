@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { runCrawl } from './engine/crawler';
+import { approveDrafts } from './engine/approval';
 import { findRepositoryRoot, resolveOutputDir } from './engine/paths';
 import { crawlTargetSchema, type CrawlTarget, type CrawlMode } from './engine/types';
 
@@ -20,6 +21,7 @@ interface CliArgs {
   outDir: string;
   dataDir?: string;
   minIntervalMs: number;
+  autoApprove: boolean;
 }
 
 async function main(): Promise<void> {
@@ -32,19 +34,33 @@ async function main(): Promise<void> {
     userAgent: DEFAULT_USER_AGENT,
     minIntervalMs: args.minIntervalMs,
     maxRequestRetries: 1,
+    autoSelectRepresentativeSize: args.autoApprove,
   });
 
-  console.log(JSON.stringify(summary, null, 2));
-  if (summary.failed > 0 || summary.blocked > 0) process.exitCode = 1;
+  const approval = args.autoApprove
+    ? await approveDrafts(summary.draftPaths, { dataDir: args.dataDir, status: 'published' })
+    : undefined;
+
+  console.log(JSON.stringify(approval ? { crawl: summary, approval } : summary, null, 2));
+  if (
+    summary.failed > 0 ||
+    summary.blocked > 0 ||
+    approval?.failed
+  ) process.exitCode = 1;
 }
 
 function parseArgs(argv: string[]): CliArgs {
   const values = new Map<string, string>();
   const normalizedArgv = argv.filter((token) => token !== '--');
+  const booleanFlags = new Set(['auto-approve']);
   for (let index = 0; index < normalizedArgv.length; index += 1) {
     const token = normalizedArgv[index];
     if (!token?.startsWith('--')) throw new Error(`无法识别参数：${token ?? ''}`);
     const key = token.slice(2);
+    if (booleanFlags.has(key)) {
+      values.set(key, 'true');
+      continue;
+    }
     const value = normalizedArgv[index + 1];
     if (!value || value.startsWith('--')) throw new Error(`参数 --${key} 缺少值`);
     values.set(key, value);
@@ -72,6 +88,7 @@ function parseArgs(argv: string[]): CliArgs {
     outDir: values.get('out-dir') ?? 'data/tmp/collector',
     dataDir: values.get('data-dir'),
     minIntervalMs,
+    autoApprove: values.has('auto-approve'),
   };
 }
 

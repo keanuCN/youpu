@@ -111,6 +111,8 @@ export interface CrawlOptions {
   userAgent: string;
   minIntervalMs: number;
   maxRequestRetries: number;
+  /** 自动通过模式下，为没有指定代表尺寸的目标选择标准宽度中位尺寸。 */
+  autoSelectRepresentativeSize?: boolean;
 }
 
 export interface CrawlRunSummary {
@@ -121,4 +123,5 @@ export interface CrawlRunSummary {
   qualityFailed: number;
   failed: number;
   outputs: string[];
+  draftPaths: string[];
 }

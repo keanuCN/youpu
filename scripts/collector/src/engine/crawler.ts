@@ -3,6 +3,7 @@ import { findCategoryAdapter } from '../categories/snowboard';
 import { buildArtifact, blockedArtifact, failureArtifact, writeDraftArtifact, writeRawArtifact } from './draft';
 import { snapshotFromHtml } from './jsonld';
 import { DomainRateLimiter } from './rate-limit';
+import { chooseAutomaticRepresentativeSize } from './representative';
 import { checkRobots } from './robots';
 import type { CrawlArtifact, CrawlOptions, CrawlRunSummary, CrawlTarget, RobotsResult } from './types';
 
@@ -14,6 +15,7 @@ export async function runCrawl(targets: CrawlTarget[], options: CrawlOptions): P
   let blocked = 0;
   const succeeded = new Set<string>();
   const drafts = new Set<string>();
+  const draftPaths: string[] = [];
   const qualityFailed = new Set<string>();
 
   for (const target of targets) {
@@ -43,6 +45,7 @@ export async function runCrawl(targets: CrawlTarget[], options: CrawlOptions): P
         outputs,
         succeeded,
         drafts,
+        draftPaths,
         qualityFailed,
         failedBeforeCrawl,
       );
@@ -55,6 +58,7 @@ export async function runCrawl(targets: CrawlTarget[], options: CrawlOptions): P
         outputs,
         succeeded,
         drafts,
+        draftPaths,
         qualityFailed,
         failedBeforeCrawl,
       );
@@ -69,6 +73,7 @@ export async function runCrawl(targets: CrawlTarget[], options: CrawlOptions): P
     qualityFailed: qualityFailed.size,
     failed: failedBeforeCrawl.size,
     outputs,
+    draftPaths,
   };
 }
 
@@ -80,6 +85,7 @@ async function runCheerio(
   outputs: string[],
   succeeded: Set<string>,
   drafts: Set<string>,
+  draftPaths: string[],
   qualityFailed: Set<string>,
   failed: Set<string>,
 ): Promise<void> {
@@ -100,6 +106,7 @@ async function runCheerio(
       const draft = await writeDraftArtifact(artifact, options.outDir);
       if (draft) {
         drafts.add(target.slug);
+        draftPaths.push(draft);
         outputs.push(draft);
       }
     },
@@ -128,6 +135,7 @@ async function runPlaywright(
   outputs: string[],
   succeeded: Set<string>,
   drafts: Set<string>,
+  draftPaths: string[],
   qualityFailed: Set<string>,
   failed: Set<string>,
 ): Promise<void> {
@@ -151,6 +159,7 @@ async function runPlaywright(
       const draft = await writeDraftArtifact(artifact, options.outDir);
       if (draft) {
         drafts.add(target.slug);
+        draftPaths.push(draft);
         outputs.push(draft);
       }
     },
@@ -180,11 +189,27 @@ async function makeArtifact(
   options: CrawlOptions,
 ): Promise<CrawlArtifact> {
   const adapter = findCategoryAdapter(target);
+  let effectiveTarget = target;
+  let adapterResult = adapter.normalize(target, snapshot);
+  if (options.autoSelectRepresentativeSize && !target.representativeSize) {
+    const representativeSize = chooseAutomaticRepresentativeSize(adapterResult.perSize);
+    if (representativeSize) {
+      effectiveTarget = { ...target, representativeSize };
+      adapterResult = adapter.normalize(effectiveTarget, snapshot);
+      adapterResult = {
+        ...adapterResult,
+        sourceNotes: [
+          ...adapterResult.sourceNotes,
+          `自动通过模式按标准宽度中位策略选择代表尺寸 ${representativeSize}；未覆盖宽版。`,
+        ],
+      };
+    }
+  }
   return buildArtifact(
-    target,
+    effectiveTarget,
     snapshot,
     adapter.name,
-    adapter.normalize(target, snapshot),
+    adapterResult,
     {
       url: target.url,
       engine,

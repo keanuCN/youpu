@@ -1,0 +1,18 @@
+slug: jones-hovercraft-2-0-2027
+category: snowboard
+brand: jones
+model: Hovercraft 2.0
+year: 2027
+title: Hovercraft 2.0 Snowboard | Jones
+specs:
+  length: 156
+  weight: 3100
+  effectiveEdge: 1230
+  waistWidth: 263
+  sidecut: 9
+  stanceSetback: 0
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://eu.jonessnowboards.com/products/hovercraft-20-snowboard
+status: published

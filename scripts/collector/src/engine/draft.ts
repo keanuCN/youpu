@@ -172,7 +172,7 @@ export async function writeDraftArtifact(artifact: CrawlArtifact, outDir: string
   return filePath;
 }
 
-async function loadCategorySchema(category: string, dataDir?: string): Promise<SpecSchema | undefined> {
+export async function loadCategorySchema(category: string, dataDir?: string): Promise<SpecSchema | undefined> {
   const repositoryRoot = findRepositoryRoot();
   const categoryFile = resolve(resolveDataDir(dataDir, repositoryRoot), 'categories.yaml');
   const source = await readFile(categoryFile, 'utf8');

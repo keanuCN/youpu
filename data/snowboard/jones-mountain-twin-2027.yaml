@@ -1,0 +1,18 @@
+slug: jones-mountain-twin-2027
+category: snowboard
+brand: jones
+model: Mountain Twin
+year: 2027
+title: Men's Mountain Twin Snowboard | Jones
+specs:
+  length: 157
+  weight: 2800
+  effectiveEdge: 1210
+  waistWidth: 254
+  sidecut: 7.8
+  stanceSetback: 0
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.jonessnowboards.com/products/mens-mountain-twin-snowboard
+status: published
