@@ -5,6 +5,7 @@ import {
   parseSpecSchema,
   type CategoryTreeNode,
   type ProductDetail,
+  type ProductListItem,
   type ProductListResponse,
   type SpecSchema,
 } from '@youpu/schema';
@@ -21,6 +22,14 @@ export interface ListProductsParams {
   page?: number;
   pageSize?: number;
 }
+
+export type CatalogProductListRow = Prisma.ProductGetPayload<{
+  include: {
+    brand: { select: { slug: true; name: true; nameCn: true } };
+    category: { select: { id: true; slug: true; specSchema: true } };
+    stat: { select: { view7d: true; viewTotal: true } };
+  };
+}>;
 
 @Injectable()
 export class CatalogService {
@@ -79,46 +88,11 @@ export class CatalogService {
       }),
     ]);
 
-    const schemaByCategory = new Map<string, SpecSchema | null>();
-    for (const row of rows) {
-      if (!schemaByCategory.has(row.categoryId)) {
-        schemaByCategory.set(
-          row.categoryId,
-          row.category.specSchema ? parseSpecSchema(row.category.specSchema) : null,
-        );
-      }
-    }
-
     return {
       total,
       page,
       pageSize,
-      items: rows.map((row) => {
-        const schema = schemaByCategory.get(row.categoryId) ?? null;
-        const editorialScores = (row.editorialScores ?? null) as Record<string, number> | null;
-        return {
-          id: row.id,
-          slug: row.slug,
-          title: row.title,
-          model: row.model,
-          year: row.year,
-          oneLiner: row.oneLiner,
-          priceMin: row.priceMin === null ? null : Number(row.priceMin),
-          priceMax: row.priceMax === null ? null : Number(row.priceMax),
-          priceCurrency: row.priceCurrency,
-          coverUrl: row.coverUrl,
-          ratingOverall: row.ratingOverall === null ? null : Number(row.ratingOverall),
-          ratingCount: row.ratingCount,
-          favoriteCount: row.favoriteCount,
-          composite: schema ? computeComposite(schema, editorialScores) : null,
-          brand: row.brand,
-          categorySlug: row.category.slug,
-          // §13 防盗爬：列表页不返回全量 specs，只带非 nested 的标量字段
-          specs: pickListSpecs(schema, row.specs),
-          // 卡片展示用的已格式化参数摘要（服务端按 schema 生成，前端零 hardcode）
-          highlights: buildHighlights(schema, row.specs),
-        };
-      }),
+      items: rows.map(serializeProductListItem),
     };
   }
 
@@ -202,6 +176,33 @@ export class CatalogService {
         ];
     }
   }
+}
+
+export function serializeProductListItem(row: CatalogProductListRow): ProductListItem {
+  const schema = row.category.specSchema ? parseSpecSchema(row.category.specSchema) : null;
+  const editorialScores = (row.editorialScores ?? null) as Record<string, number> | null;
+  return {
+    id: row.id,
+    slug: row.slug,
+    title: row.title,
+    model: row.model,
+    year: row.year,
+    oneLiner: row.oneLiner,
+    priceMin: row.priceMin === null ? null : Number(row.priceMin),
+    priceMax: row.priceMax === null ? null : Number(row.priceMax),
+    priceCurrency: row.priceCurrency,
+    coverUrl: row.coverUrl,
+    ratingOverall: row.ratingOverall === null ? null : Number(row.ratingOverall),
+    ratingCount: row.ratingCount,
+    favoriteCount: row.favoriteCount,
+    composite: schema ? computeComposite(schema, editorialScores) : null,
+    brand: row.brand,
+    categorySlug: row.category.slug,
+    // §13 防盗爬：列表页不返回全量 specs，只带非 nested 的标量字段
+    specs: pickListSpecs(schema, row.specs),
+    // 卡片展示用的已格式化参数摘要（服务端按 schema 生成，前端零 hardcode）
+    highlights: buildHighlights(schema, row.specs),
+  };
 }
 
 function pickListSpecs(schema: SpecSchema | null, raw: unknown): Record<string, unknown> {
