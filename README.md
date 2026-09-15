@@ -54,8 +54,12 @@ pnpm dev:web        # http://localhost:3000
 pnpm dev:admin      # http://localhost:3002（需先启动 API，并配置 ADMIN_TOKEN）
 ```
 
-页面数据来自 `apps/web/src/data/` 内容包，账号/收藏/对比/评论存本机 localStorage —— **全站可完整浏览**。
+页面默认使用 `apps/web/src/data/` 内容包，账号/收藏/对比/评论存本机 localStorage —— **全站可完整浏览**。
 唯一会失败的是埋点上报（`POST /api/events` 连不上，静默丢弃，不影响使用）。
+
+需要联调目录 API 时，在 `apps/web/.env.local` 设置 `NEXT_PUBLIC_CONTENT_SOURCE=api`。
+档案库列表和详情页会优先请求 API，接口不可用、超时或响应不符合共享契约时自动回退内容包；API 恢复后无需改页面代码即可继续使用 API 数据。
+API 模式使用 Next 服务端渲染；静态导出模式仍使用内容包，构建配置会拒绝两者同时开启。当前 M2 的详情页仅对本地已配置的 live 类目提供完整评分、参数模板与同场景推荐，未知类目会安全回退或显示空态，避免误用单板配置。
 
 ### B. 全栈（需要 Docker）
 
@@ -77,6 +81,12 @@ pnpm dev:admin     # 另开终端启动后台：3002
 | 站点 | http://localhost:3000 |
 | API 健康检查 | http://localhost:3001/api/health（db / redis / es 状态） |
 | Umami 流量分析 | http://localhost:3005（`infra:up:full` 才启动；默认 admin / umami） |
+
+### 全局搜索
+
+`GET /api/search?q=关键词` 提供跨类目搜索、类目 / 品牌 / 年份 / 价格筛选和分页。
+Elasticsearch 配置可用时使用中文分词；未配置或不可用时自动使用 PostgreSQL，API 不依赖 ES 才能启动。
+前端 `/search` 在 API 请求失败时回退到本地内容包，因此静态前端仍可浏览已有内容。
 
 ## 线上（内测站）
 
