@@ -7,12 +7,9 @@ import { Bell, ChevronDown, LayoutGrid, Menu, Search, User, X } from "lucide-rea
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { GEAR } from "@/data/boards";
 import { BRAND } from "@/lib/brand";
-import { DEFAULT_FILTERS, applyFilters } from "@/lib/domain";
 import { fmtCompact, timeAgo } from "@/lib/format";
 import { logout, markAllRead, markNotificationRead, useCurrentUser } from "@/lib/store";
-import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
 import { CategoryPanel } from "./category-panel";
 
@@ -42,12 +39,8 @@ export function SiteHeader() {
 
   const submitSearch = () => {
     const query = q.trim();
-    if (query) {
-      const hits = applyFilters(GEAR, { ...DEFAULT_FILTERS, q: query }).length;
-      track("search", { query, hits });
-    }
-    // TODO(M2)：全局搜索页（GET /api/search）上线前，搜索先落在当前唯一开档品类的档案库
-    router.push(`/browse/snowboard${query ? `?q=${encodeURIComponent(query)}` : ""}`);
+    if (!query) return;
+    router.push(`/search?q=${encodeURIComponent(query)}`);
     setSearchOpen(false);
   };
 
