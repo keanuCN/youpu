@@ -27,6 +27,7 @@ youpu/
 │   ├── web/              # Next.js 用户侧（SSR）
 │   │   ├── src/data/     # 内容包（原型数据，M2 起改由 API 提供）
 │   │   └── scripts/      # export-seed-yaml.ts：内容包 → seed YAML 迁移工具
+│   ├── admin/            # M2 管理端（产品 / 品牌 / 类目 schema 工作台，端口 3002）
 │   └── api/              # NestJS 后端（Prisma / Redis / ES）
 │       └── prisma/       # schema.prisma + 手写 SQL 迁移
 ├── packages/schema/      # 共享契约（spec_schema 解释器、事件字典、API 响应类型）
@@ -50,6 +51,7 @@ cp apps/web/.env.example apps/web/.env.local              # 前端配置（默�
 
 ```bash
 pnpm dev:web        # http://localhost:3000
+pnpm dev:admin      # http://localhost:3002（需先启动 API，并配置 ADMIN_TOKEN）
 ```
 
 页面数据来自 `apps/web/src/data/` 内容包，账号/收藏/对比/评论存本机 localStorage —— **全站可完整浏览**。
@@ -64,7 +66,11 @@ pnpm infra:up      # 起 PG + Redis（默认只这两个）；需要 ES/Umami �
 pnpm db:migrate    # 建表（22 张表 + 触发器 + event 按月分区）
 pnpm seed          # 导入类目 / 品牌 / 当前 18 款单板 seed
 pnpm dev           # web:3000 + api:3001
+pnpm dev:admin     # 另开终端启动后台：3002
 ```
+
+启动后台前，请编辑 `apps/api/.env`，把 `ADMIN_TOKEN` 替换为至少 16 位的随机令牌；后台 M2 使用单一 Bearer 令牌，
+并不等同于完整的多账号登录系统。
 
 | 服务 | 地址 |
 |---|---|
@@ -88,7 +94,7 @@ pnpm dev           # web:3000 + api:3001
 
 | 命令 | 说明 |
 |---|---|
-| `pnpm dev` / `dev:web` | 起 web + api / 只起 web |
+| `pnpm dev` / `dev:web` / `dev:admin` | 起 web + api / 只起 web / 启动 M2 管理端 |
 | `pnpm infra:up` / `infra:down` | 基础设施容器（默认 PG + Redis） |
 | `pnpm infra:up:full` | 追加 ES + Umami（内存吃紧的机器别开） |
 | `pnpm db:migrate` | 应用迁移（`prisma/migrations` 下的手写 SQL 为准） |
@@ -161,7 +167,7 @@ M2 起内容层改为「API 优先 + 内容包回退」，届时列表/详情走
 | 阶段 | 内容 | 状态 |
 |---|---|---|
 | M1 脚手架 | monorepo、类目 schema、seed 管线、compose、埋点 SDK + Umami | ✅ 已完成（迁移 / 分区表 / ltree 已在生产 PG 实测） |
-| M2 图鉴流 + 后台基础 | 列表/详情/对比/榜单、ES 搜索联想、SEO 技术包、后台基础版 | 🚧 准备就绪（schema 对齐 + 18 款 seed + 契约），接入未开始 |
+| M2 图鉴流 + 后台基础 | 列表/详情/对比/榜单、ES 搜索联想、SEO 技术包、后台基础版 | 🚧 后台基础版已落地，图鉴 API 接入与线上部署待续 |
 | M3 社区流 + 审核配置 | 登录/评分评论/收藏/通知、客观分析引擎、问卷版推荐、后台审核队列 | ⏳ |
 | M4 运营 | 分享卡图、赛季榜单、AI 对话式推荐 | ⏳ |
 
@@ -186,5 +192,7 @@ M2 起内容层改为「API 优先 + 内容包回退」，届时列表/详情走
 - ✅ **M2 准备**：spec_schema 对齐原型字段集、15 款原型内容可一键导出为 seed，另有 3 款通过采集器自动通过并通过校验、
   API 响应契约进 `packages/schema`、四项产品决策落地（板型族枚举、编辑评分独立列 `product.editorial_scores`、
   综合指数实时计算、价格区间实时算分位）
-- ⏳ **下一步**：线上 API 部署（systemd + 埋点接入，见 deploy/README.md 待续）→ 详情页接 API → 后台 apps/admin；
-  本地开发建议装 Docker Desktop；上线后设 `NEXT_PUBLIC_SITE_URL` 并注册各站长平台（Bing/搜狗/百度）
+- ✅ **后台 M2 基础版**：`apps/admin` 已提供单一 Bearer 管理令牌登录、产品 / 品牌 / 类目 CRUD、草稿 / 发布、
+  `spec_schema` 驱动参数表单与来源 URL 留痕；图片上传、批量文件导入、细粒度账号权限与审计留到后续版本
+- ⏳ **下一步**：恢复本地 Docker 后执行迁移 / seed，联调 API 与后台 → 线上 API 部署（systemd + 埋点接入）→ 详情页接 API；
+  上线后设 `NEXT_PUBLIC_SITE_URL` 并注册各站长平台（Bing/搜狗/百度）

@@ -8,8 +8,13 @@ const envSchema = z.object({
   REDIS_URL: z.string().url().default('redis://localhost:6379'),
   ES_NODE: z.string().url().optional(),
   ES_INDEX_PREFIX: z.string().default('youpu'),
-  CORS_ORIGINS: z.string().default('http://localhost:3000'),
+  CORS_ORIGINS: z
+    .string()
+    .default('http://localhost:3000,http://localhost:3002,http://127.0.0.1:3000,http://127.0.0.1:3002'),
   DATA_DIR: z.string().default('../../data'),
+  /** 单人内测阶段的管理端 Bearer 令牌；生产环境必须显式配置。 */
+  ADMIN_TOKEN: z.string().min(16).optional(),
+  ADMIN_ROLE: z.enum(['editor', 'admin']).default('admin'),
 });
 
 export type Env = z.infer<typeof envSchema>;

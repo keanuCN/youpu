@@ -9,8 +9,9 @@
   "scripts": {
     "dev": "pnpm --parallel --filter @youpu/api --filter @youpu/web dev",
     "dev:web": "pnpm --filter @youpu/web dev",
+    "dev:admin": "pnpm --filter @youpu/admin dev",
     "dev:api": "pnpm --filter @youpu/api dev",
-    "build": "pnpm --filter @youpu/schema build && pnpm --filter @youpu/api build && pnpm --filter @youpu/web build",
+    "build": "pnpm --filter @youpu/schema build && pnpm --filter @youpu/api build && pnpm --filter @youpu/web build && pnpm --filter @youpu/admin build",
     "typecheck": "pnpm -r typecheck",
     "infra:up": "docker compose -f docker/compose.yml up -d",
     "infra:down": "docker compose -f docker/compose.yml down",

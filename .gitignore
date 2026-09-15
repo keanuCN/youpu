@@ -18,6 +18,10 @@ out/
 npm-debug.log*
 pnpm-debug.log*
 
+# local browser QA artifacts
+.playwright-cli/
+output/playwright/
+
 # editor / os
 .idea/
 .vscode/*
