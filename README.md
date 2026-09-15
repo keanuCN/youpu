@@ -62,7 +62,7 @@ cp .env.example .env                                      # compose 变量（默
 cp apps/api/.env.example apps/api/.env
 pnpm infra:up      # 起 PG + Redis（默认只这两个）；需要 ES/Umami 用 pnpm infra:up:full
 pnpm db:migrate    # 建表（22 张表 + 触发器 + event 按月分区）
-pnpm seed          # 导入类目 / 品牌 / 15 款单板
+pnpm seed          # 导入类目 / 品牌 / 当前 18 款单板 seed
 pnpm dev           # web:3000 + api:3001
 ```
 
@@ -161,7 +161,7 @@ M2 起内容层改为「API 优先 + 内容包回退」，届时列表/详情走
 | 阶段 | 内容 | 状态 |
 |---|---|---|
 | M1 脚手架 | monorepo、类目 schema、seed 管线、compose、埋点 SDK + Umami | ✅ 已完成（迁移 / 分区表 / ltree 已在生产 PG 实测） |
-| M2 图鉴流 + 后台基础 | 列表/详情/对比/榜单、ES 搜索联想、SEO 技术包、后台基础版 | 🚧 准备就绪（schema 对齐 + 15 款数据 + 契约），接入未开始 |
+| M2 图鉴流 + 后台基础 | 列表/详情/对比/榜单、ES 搜索联想、SEO 技术包、后台基础版 | 🚧 准备就绪（schema 对齐 + 18 款 seed + 契约），接入未开始 |
 | M3 社区流 + 审核配置 | 登录/评分评论/收藏/通知、客观分析引擎、问卷版推荐、后台审核队列 | ⏳ |
 | M4 运营 | 分享卡图、赛季榜单、AI 对话式推荐 | ⏳ |
 
@@ -183,7 +183,7 @@ M2 起内容层改为「API 优先 + 内容包回退」，届时列表/详情走
   域名 `xiaopang.club` 待加 A 记录后即可用域名访问
 - 🚧 **线上后端进行中**：服务器已装 Docker 并跑起 PG16 + Redis，23 张表迁移实测通过（含分区表写入验证）；
   下一步是 API 部署（systemd）与静态站埋点接入 —— 见 [deploy/README.md](deploy/README.md) 的「待续」
-- ✅ **M2 准备**：spec_schema 对齐原型字段集、15 款板可一键导出为 seed 数据并通过校验、
+- ✅ **M2 准备**：spec_schema 对齐原型字段集、15 款原型内容可一键导出为 seed，另有 3 款通过采集器自动通过并通过校验、
   API 响应契约进 `packages/schema`、四项产品决策落地（板型族枚举、编辑评分独立列 `product.editorial_scores`、
   综合指数实时计算、价格区间实时算分位）
 - ⏳ **下一步**：线上 API 部署（systemd + 埋点接入，见 deploy/README.md 待续）→ 详情页接 API → 后台 apps/admin；
