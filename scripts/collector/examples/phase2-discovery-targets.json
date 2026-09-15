@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "salomon-sight-2026",
+    "category": "snowboard",
+    "brand": "salomon",
+    "model": "Sight",
+    "year": 2026,
+    "url": "https://www.salomon.com/en-us/product/sight-li1327",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "lib-tech-t-rice-pro-2025",
+    "category": "snowboard",
+    "brand": "lib-tech",
+    "model": "T.Rice Pro",
+    "year": 2025,
+    "url": "https://cad.lib-tech.com/2526-t-rice-pro-161w",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "never-summer-proto-slinger-2025",
+    "category": "snowboard",
+    "brand": "never-summer",
+    "model": "Proto Slinger",
+    "year": 2025,
+    "url": "https://neversummer.com/pages/mens-proto-slinger-size-chart",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "korua-shapes-cafe-racer-2026",
+    "category": "snowboard",
+    "brand": "korua-shapes",
+    "model": "Cafe Racer",
+    "year": 2026,
+    "url": "https://us.koruashapes.com/products/cafe-racer",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "bataleon-evil-twin-2025",
+    "category": "snowboard",
+    "brand": "bataleon",
+    "model": "Evil Twin",
+    "year": 2025,
+    "url": "https://bataleon.com/products/bataleon-2627-evil-twin-mens-snowboard",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "ride-algorythm-2026",
+    "category": "snowboard",
+    "brand": "ride",
+    "model": "Algorhythm",
+    "year": 2026,
+    "url": "https://ridesnowboards.com/en-us/p/algorhythm-snowboard-rd261853",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "arbor-a-frame-2025",
+    "category": "snowboard",
+    "brand": "arbor",
+    "model": "A-Frame",
+    "year": 2025,
+    "url": "https://www.arborcollective.com/products/a-frame-snowboard-25",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "nitro-team-2026",
+    "category": "snowboard",
+    "brand": "nitro",
+    "model": "Team",
+    "year": 2026,
+    "url": "https://www.nitrosnowboards.com/products/team-snowboard-1",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "gnu-rider-s-choice-2025",
+    "category": "snowboard",
+    "brand": "gnu",
+    "model": "Rider's Choice",
+    "year": 2025,
+    "url": "https://eur.gnu.com/2425-riders-choice-157-5",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "capita-horrorscope-2024",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Horrorscope",
+    "year": 2024,
+    "url": "https://capitasnowboarding.com/collections/all",
+    "mode": "cheerio"
+  }
+]

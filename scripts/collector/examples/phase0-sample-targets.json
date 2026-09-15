@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "burton-custom-camber-2026",
+    "category": "snowboard",
+    "brand": "burton",
+    "model": "Custom Camber",
+    "year": 2026,
+    "url": "https://eu.burton.com/en-gb/products/mens-burton-custom-camber-snowboard-106881a-o",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-process-2026",
+    "category": "snowboard",
+    "brand": "burton",
+    "model": "Process",
+    "year": 2026,
+    "url": "https://www.burton.com/en-us/products/mens-burton-process-camber-snowboard-106921e-o",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "jones-mountain-twin-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Mountain Twin",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/mens-mountain-twin-snowboard",
+    "mode": "cheerio"
+  }
+]
