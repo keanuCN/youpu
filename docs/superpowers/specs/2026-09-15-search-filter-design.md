@@ -91,6 +91,7 @@ GET /api/search
   total: number;
   page: number;
   pageSize: number;
+  sort: "relevance" | "new" | "rating";
   items: ProductListItem[];
   facets: {
     categories: Array<{ slug: string; name: string; count: number }>;
