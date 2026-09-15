@@ -10,8 +10,8 @@ import { Chip } from "@/components/gear/primitives";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Slider } from "@/components/ui/slider";
-import { gearOfCategory } from "@/data/boards";
 import { getCategory, isLive } from "@/data/categories";
+import { gearOfCategory } from "@/data/boards";
 import {
   DEFAULT_FILTERS,
   PRICE_BOUNDS,
@@ -23,11 +23,11 @@ import {
 } from "@/lib/domain";
 import { fmtPrice } from "@/lib/format";
 import { cn } from "@/lib/utils";
-import type { SortKey } from "@/types";
+import type { GearItem, SortKey } from "@/types";
 
 const SORTS: SortKey[] = ["heat", "new", "score", "hardcore"];
 
-export function BrowseClient({ slug }: { slug: string }) {
+export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?: GearItem[] }) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const q = searchParams.get("q") ?? "";
@@ -36,7 +36,7 @@ export function BrowseClient({ slug }: { slug: string }) {
   const [filters, setFilters] = useState<Filters>({ ...DEFAULT_FILTERS, q });
   const [sort, setSort] = useState<SortKey>(SORTS.includes(sortParam as SortKey) ? (sortParam as SortKey) : "heat");
 
-  const pool = useMemo(() => gearOfCategory(slug), [slug]);
+  const pool = useMemo(() => initialPool ?? gearOfCategory(slug), [initialPool, slug]);
   const result = useMemo(() => sortGear(applyFilters(pool, filters), sort), [pool, filters, sort]);
   const active = activeFilterCount(filters);
 

@@ -21,9 +21,10 @@ import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } f
 import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
 import { useAuthGate } from "@/store/app-shell";
+import type { GearItem } from "@/types";
 
-export default function GearDetailPage({ id }: { id: string }) {
-  const gear = gearById(id);
+export default function GearDetailPage({ id, initialGear }: { id: string; initialGear?: GearItem }) {
+  const gear = initialGear ?? gearById(id);
 
   useEffect(() => {
     if (gear) track("detail_view", { product_id: gear.id, from: "detail" });
@@ -65,7 +66,7 @@ export default function GearDetailPage({ id }: { id: string }) {
 
       <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
         <Gallery shots={gear.gallery} alt={`${gear.brand} ${gear.model}`} />
-        <InfoCard gearId={gear.id} />
+        <InfoCard gear={gear} />
       </div>
 
       <section className="reveal mt-16">
@@ -132,11 +133,10 @@ export default function GearDetailPage({ id }: { id: string }) {
   );
 }
 
-function InfoCard({ gearId }: { gearId: string }) {
+function InfoCard({ gear }: { gear: GearItem }) {
   const { requireAuth } = useAuthGate();
   const router = useRouter();
   const me = useCurrentUser();
-  const gear = gearById(gearId)!;
   const fav = me.isFavorite(gear.id);
   const inDock = me.dockIds.includes(gear.id);
   const pos = pricePosition(gear);

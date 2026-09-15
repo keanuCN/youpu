@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const isStaticExport = process.env.NEXT_OUTPUT === "export";
+const isApiContent = process.env.NEXT_PUBLIC_CONTENT_SOURCE === "api";
+
+if (isStaticExport && isApiContent) {
+  throw new Error("NEXT_OUTPUT=export cannot be used with NEXT_PUBLIC_CONTENT_SOURCE=api; API mode needs a Next server for dynamic product routes.");
+}
 
 const nextConfig = {
   reactStrictMode: true,
