@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 import {
   type SearchFacet,
   type SearchResponse,
@@ -10,6 +10,7 @@ import {
   serializeProductListItem,
   type CatalogProductListRow,
 } from '../catalog/catalog.service';
+import { ElasticService, type ElasticSearchResult } from './elastic.service';
 import type { SearchParams } from './search-query';
 
 type SearchRow = CatalogProductListRow & {
@@ -36,9 +37,21 @@ interface FacetRow {
 
 @Injectable()
 export class SearchService {
-  constructor(private readonly prisma: PrismaService) {}
+  private readonly logger = new Logger(SearchService.name);
+
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly elastic: ElasticService,
+  ) {}
 
   async search(params: SearchParams): Promise<SearchResponse> {
+    if (this.elastic.enabled) {
+      try {
+        return await this.searchElastic(params, await this.elastic.searchProducts(params));
+      } catch (error) {
+        this.logger.warn(`ES search failed; falling back to PostgreSQL: ${(error as Error).message}`);
+      }
+    }
     return this.searchPostgres(params);
   }
 
@@ -52,16 +65,7 @@ export class SearchService {
         stat: { select: { view7d: true, viewTotal: true } },
       },
     })) as SearchRow[];
-    const facetRows = await this.prisma.product.findMany({
-      where,
-      select: {
-        year: true,
-        priceMin: true,
-        priceMax: true,
-        brand: { select: { slug: true, name: true, nameCn: true } },
-        category: { select: { slug: true, name: true } },
-      },
-    });
+    const facetRows = await this.facetRows(where);
 
     const ordered = [...rows].sort((a, b) => compareRows(a, b, params));
     const start = (params.page - 1) * params.pageSize;
@@ -76,6 +80,44 @@ export class SearchService {
       items,
       facets: buildFacets(facetRows),
     };
+  }
+
+  private async searchElastic(params: SearchParams, result: ElasticSearchResult): Promise<SearchResponse> {
+    const where: Prisma.ProductWhereInput = { status: 'published', id: { in: result.ids } };
+    const rows = (await this.prisma.product.findMany({
+      where,
+      include: {
+        brand: { select: { slug: true, name: true, nameCn: true } },
+        category: { select: { id: true, slug: true, specSchema: true } },
+        stat: { select: { view7d: true, viewTotal: true } },
+      },
+    })) as SearchRow[];
+    const byId = new Map(rows.map((row) => [row.id, row]));
+    const orderedRows = result.ids.map((id) => byId.get(id)).filter((row): row is SearchRow => row !== undefined);
+    if (orderedRows.length !== result.ids.length) throw new Error('ES 命中结果无法在 PostgreSQL 中还原');
+
+    return {
+      query: params.q,
+      total: result.total,
+      page: params.page,
+      pageSize: params.pageSize,
+      sort: params.sort,
+      items: orderedRows.map(serializeProductListItem),
+      facets: buildFacets(await this.facetRows(this.buildWhere(params))),
+    };
+  }
+
+  private async facetRows(where: Prisma.ProductWhereInput): Promise<FacetRow[]> {
+    return this.prisma.product.findMany({
+      where,
+      select: {
+        year: true,
+        priceMin: true,
+        priceMax: true,
+        brand: { select: { slug: true, name: true, nameCn: true } },
+        category: { select: { slug: true, name: true } },
+      },
+    });
   }
 
   private buildWhere(params: SearchParams): Prisma.ProductWhereInput {

@@ -53,11 +53,18 @@ export class ProductEsSyncConsumer implements OutboxConsumer {
 
     await this.elastic.indexProduct({
       id: product.id,
+      slug: product.slug,
+      model: product.model,
       title: product.title,
+      brandSlug: product.brand.slug,
       brandName: product.brand.nameCn ?? product.brand.name,
+      brandNameCn: product.brand.nameCn,
+      categorySlug: product.category.slug,
+      categoryName: product.category.name,
       categoryPath,
       year: product.year,
       priceMin: product.priceMin === null ? null : Number(product.priceMin),
+      priceMax: product.priceMax === null ? null : Number(product.priceMax),
       rating: product.ratingOverall === null ? null : Number(product.ratingOverall),
       composite: specSchema
         ? computeComposite(specSchema, (product.editorialScores ?? null) as Record<string, number> | null)

@@ -1,6 +1,13 @@
 import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { Client } from '@elastic/elasticsearch';
+import type { estypes } from '@elastic/elasticsearch';
 import { env } from '../config/env';
+import type { SearchParams } from './search-query';
+
+export interface ElasticSearchResult {
+  ids: string[];
+  total: number;
+}
 
 /** 索引名：youpu-products（类目 >10 个后按大类拆分，见 DB 设计 §9） */
 export function productsIndexName(): string {
@@ -51,16 +58,23 @@ export class ElasticService implements OnModuleInit {
         mappings: {
           properties: {
             id: { type: 'keyword' },
+            slug: { type: 'keyword' },
+            model: { type: 'text', analyzer: 'ik_max_word', search_analyzer: 'ik_smart', fields: { keyword: { type: 'keyword' } } },
             title: {
               type: 'text',
               analyzer: 'ik_max_word',
               search_analyzer: 'ik_smart',
               fields: { suggest: { type: 'search_as_you_type' } },
             },
+            brandSlug: { type: 'keyword' },
             brandName: { type: 'keyword' },
+            brandNameCn: { type: 'keyword' },
+            categorySlug: { type: 'keyword' },
+            categoryName: { type: 'keyword' },
             categoryPath: { type: 'keyword' },
             year: { type: 'short' },
             priceMin: { type: 'float' },
+            priceMax: { type: 'float' },
             rating: { type: 'float' },
             /** 综合指数（编辑评分加权，计算值） */
             composite: { type: 'float' },
@@ -94,5 +108,52 @@ export class ElasticService implements OnModuleInit {
       this.logger.warn(`批量索引进 ES 有 ${failed} 条失败`);
     }
     return docs.length;
+  }
+
+  async searchProducts(params: SearchParams): Promise<ElasticSearchResult> {
+    const client = this.require();
+    await this.ensureIndex();
+
+    const filter: Array<Record<string, unknown>> = [];
+    if (params.category) filter.push({ term: { categorySlug: params.category } });
+    if (params.brand) filter.push({ term: { brandSlug: params.brand } });
+    if (params.year !== undefined) filter.push({ term: { year: params.year } });
+    if (params.priceMin !== undefined) filter.push({ range: { priceMax: { gte: params.priceMin } } });
+    if (params.priceMax !== undefined) filter.push({ range: { priceMin: { lte: params.priceMax } } });
+
+    const sort: estypes.Sort = params.sort === 'new'
+      ? [{ year: 'desc' }, { rating: 'desc' }]
+      : params.sort === 'rating'
+        ? [{ rating: 'desc' }, { ratingCount: 'desc' }]
+        : [{ _score: { order: 'desc' } }, { ratingCount: 'desc' }];
+
+    const response = await client.search({
+      index: productsIndexName(),
+      from: (params.page - 1) * params.pageSize,
+      size: params.pageSize,
+      track_total_hits: true,
+      query: {
+        bool: {
+          must: [{
+            multi_match: {
+              query: params.q,
+              fields: ['model^6', 'title^5', 'brandName^4', 'oneLiner'],
+              type: 'best_fields',
+              operator: 'and',
+            },
+          }],
+          filter,
+        },
+      },
+      sort,
+    });
+
+    const total = typeof response.hits.total === 'number'
+      ? response.hits.total
+      : response.hits.total?.value ?? 0;
+    const ids = response.hits.hits
+      .map((hit) => hit._id)
+      .filter((id): id is string => typeof id === 'string');
+    return { ids, total };
   }
 }
