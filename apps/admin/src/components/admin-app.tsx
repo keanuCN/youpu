@@ -669,6 +669,13 @@ export function AdminApp() {
     }
   }
 
+  async function refreshOverview() {
+    await Promise.all([
+      refreshWorkspace(),
+      refreshAnalytics(),
+    ]);
+  }
+
   async function refreshModeration() {
     if (!token) return;
     setModerationBusy(true);
@@ -928,10 +935,16 @@ export function AdminApp() {
       <>
         <SectionHeader
           index="00"
-          title="资料库总览"
-          description="先看数据是否可用，再进入产品与 schema 的维护。所有发布动作都会写入 API outbox。"
-          action={<button className="button" onClick={() => refreshWorkspace().catch((error) => setNotice({ kind: 'error', text: getErrorText(error) }))}>刷新数据</button>}
+          title="数据总览"
+          description="先看用户行为和内容质量，再进入资料库维护具体记录。"
+          action={(
+            <div className="analytics-toolbar">
+              <label className="range-select"><span>统计范围</span><select value={analyticsDays} onChange={(event) => setAnalyticsDays(Number(event.target.value) as 7 | 14 | 30)}><option value="7">最近 7 天</option><option value="14">最近 14 天</option><option value="30">最近 30 天</option></select></label>
+              <button className="button" type="button" onClick={() => void refreshOverview().catch((error) => setNotice({ kind: 'error', text: getErrorText(error) }))} disabled={analyticsBusy}>刷新总览</button>
+            </div>
+          )}
         />
+        {renderAnalyticsOverview()}
         <div className="metric-grid">
           <Metric label="产品总数" value={metrics?.products ?? '—'} detail="产品记录" accent />
           <Metric label="已发布" value={metrics?.publishedProducts ?? '—'} detail="公开目录" />
@@ -1143,8 +1156,58 @@ export function AdminApp() {
     );
   }
 
-  function renderAnalytics() {
+  function renderAnalyticsOverview() {
     const summary = analytics?.summary;
+    return (
+      <>
+        <div className="analytics-note">当前统计窗口：{analytics ? `${formatDate(analytics.from)} — ${formatDate(analytics.to)}` : '读取中……'}</div>
+        <div className="metric-grid analytics-summary-grid">
+          <Metric label="独立访客" value={summary?.uniqueVisitors ?? '—'} detail={`最近 ${analyticsDays} 天`} accent />
+          <Metric label="埋点事件" value={summary?.events ?? '—'} detail="全部事件" />
+          <Metric label="产品浏览" value={summary?.productViews ?? '—'} detail="详情页浏览" />
+          <Metric label="活跃账号" value={summary?.activeAccounts ?? '—'} detail="登录用户" />
+        </div>
+        <div className="analytics-grid">
+          <section className="data-panel chart-panel analytics-traffic-panel">
+            <PanelHeader eyebrow="访问趋势" title="访客与事件趋势" meta={analyticsBusy ? '读取中' : `最近 ${analyticsDays} 天`} />
+            <TrafficChart data={analytics?.daily ?? []} />
+          </section>
+          <section className="data-panel chart-panel">
+            <PanelHeader eyebrow="事件分布" title="埋点事件分布" meta="主要事件" />
+            <EventBreakdown items={analytics?.eventBreakdown ?? []} />
+          </section>
+        </div>
+        <div className="analytics-grid analytics-grid-secondary">
+          <section className="data-panel">
+            <PanelHeader eyebrow="访问路径" title="访问路径" meta="事件来源" />
+            {analytics?.topPaths.length ? (
+              <div className="rank-list">{analytics.topPaths.map((item, index) => (
+                <div className="rank-row" key={item.path}>
+                  <span className="rank-index">{String(index + 1).padStart(2, '0')}</span>
+                  <div className="rank-main"><strong title={item.path}>{item.path}</strong><small>上报事件路径</small></div>
+                  <b>{formatCompactNumber(item.count)}</b>
+                </div>
+              ))}</div>
+            ) : <EmptyState title="暂无路径数据" detail="有用户行为上报后，这里会显示访问来源。" />}
+          </section>
+          <section className="data-panel">
+            <PanelHeader eyebrow="热门产品互动" title="热门产品互动" meta="热门产品" />
+            {analytics?.topProducts.length ? (
+              <div className="rank-list">{analytics.topProducts.map((item, index) => (
+                <div className="rank-row" key={item.productId}>
+                  <span className="rank-index">{String(index + 1).padStart(2, '0')}</span>
+                  <div className="rank-main"><strong title={item.productId}>{item.title || item.productId}</strong><small>{item.brand || item.productId}</small></div>
+                  <b>{formatCompactNumber(item.count)}</b>
+                </div>
+              ))}</div>
+            ) : <EmptyState title="暂无产品互动" detail="曝光、点击或详情浏览产生后，这里会显示产品热度。" />}
+          </section>
+        </div>
+      </>
+    );
+  }
+
+  function renderAnalytics() {
     const system = analytics?.system;
     const services = system?.services;
     const queue = system?.queue;
@@ -1161,49 +1224,7 @@ export function AdminApp() {
             </div>
           )}
         />
-        <div className="analytics-note"><span className="status-dot status-dot-good" /><span>当前统计窗口：{analytics ? `${formatDate(analytics.from)} — ${formatDate(analytics.to)}` : '读取中……'}；历史事件未记录路径时会显示“未记录路径”。</span></div>
-        <div className="metric-grid analytics-summary-grid">
-          <Metric label="独立访客" value={summary?.uniqueVisitors ?? '—'} detail={`${analyticsDays}D UNIQUE VISITORS`} accent />
-          <Metric label="埋点事件" value={summary?.events ?? '—'} detail="ALL TRACKED EVENTS" />
-          <Metric label="产品浏览" value={summary?.productViews ?? '—'} detail="DETAIL VIEW EVENTS" />
-          <Metric label="活跃账号" value={summary?.activeAccounts ?? '—'} detail="SIGNED-IN VISITORS" />
-        </div>
-        <div className="analytics-grid">
-          <section className="data-panel chart-panel analytics-traffic-panel">
-            <PanelHeader eyebrow="TRAFFIC TREND" title="访客与事件趋势" meta={analyticsBusy ? 'LOADING' : `LAST ${analyticsDays} DAYS`} />
-            <TrafficChart data={analytics?.daily ?? []} />
-          </section>
-          <section className="data-panel chart-panel">
-            <PanelHeader eyebrow="EVENT MIX" title="埋点事件分布" meta="TOP EVENTS" />
-            <EventBreakdown items={analytics?.eventBreakdown ?? []} />
-          </section>
-        </div>
-        <div className="analytics-grid analytics-grid-secondary">
-          <section className="data-panel">
-            <PanelHeader eyebrow="TOP PATHS" title="访问路径" meta="EVENT SOURCES" />
-            {analytics?.topPaths.length ? (
-              <div className="rank-list">{analytics.topPaths.map((item, index) => (
-                <div className="rank-row" key={item.path}>
-                  <span className="rank-index">{String(index + 1).padStart(2, '0')}</span>
-                  <div className="rank-main"><strong title={item.path}>{item.path}</strong><small>上报事件路径</small></div>
-                  <b>{formatCompactNumber(item.count)}</b>
-                </div>
-              ))}</div>
-            ) : <EmptyState title="暂无路径数据" detail="有用户行为上报后，这里会显示访问来源。" />}
-          </section>
-          <section className="data-panel">
-            <PanelHeader eyebrow="PRODUCT INTERACTIONS" title="热门产品互动" meta="TOP PRODUCTS" />
-            {analytics?.topProducts.length ? (
-              <div className="rank-list">{analytics.topProducts.map((item, index) => (
-                <div className="rank-row" key={item.productId}>
-                  <span className="rank-index">{String(index + 1).padStart(2, '0')}</span>
-                  <div className="rank-main"><strong title={item.productId}>{item.title || item.productId}</strong><small>{item.brand || item.productId}</small></div>
-                  <b>{formatCompactNumber(item.count)}</b>
-                </div>
-              ))}</div>
-            ) : <EmptyState title="暂无产品互动" detail="曝光、点击或详情浏览产生后，这里会显示产品热度。" />}
-          </section>
-        </div>
+        {renderAnalyticsOverview()}
         <section className="data-panel table-panel analytics-events-panel">
           <PanelHeader eyebrow="最近埋点" title="最近埋点" meta={analytics?.recentEvents.length ? `${analytics.recentEvents.length} 已加载` : '暂无事件'} />
           {analytics?.recentEvents.length ? (
@@ -1211,7 +1232,7 @@ export function AdminApp() {
           ) : <EmptyState title="暂无埋点记录" detail="当前时间窗口内还没有可展示的用户行为事件。" />}
         </section>
         <section className="data-panel system-status-panel">
-          <PanelHeader eyebrow="SYSTEM STATUS" title="服务器状态" meta={system ? (system.status === 'ok' ? 'ALL SYSTEMS NOMINAL' : 'CHECK REQUIRED') : '读取中'} />
+          <PanelHeader eyebrow="系统状态" title="服务器状态" meta={system ? (system.status === 'ok' ? '运行正常' : '需要检查') : '读取中'} />
           <div className="system-status-layout">
             <div className="service-grid">
               <ServiceStatus label="API 服务" value={services?.api} />
