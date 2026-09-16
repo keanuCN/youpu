@@ -1003,10 +1003,10 @@ export function AdminApp() {
           <section className="data-panel boundary-panel">
             <PanelHeader eyebrow="M2 BOUNDARY" title="当前工作边界" meta="REV 0.1" />
             <div className="boundary-list">
-              <BoundaryItem state="READY" title="产品 / 品牌 / 类目 CRUD" detail="共享 schema 校验，产品支持草稿与发布状态。" />
-              <BoundaryItem state="READY" title="动态参数表单" detail="字段来自类目的 spec_schema，不重复维护字段定义。" />
+              <BoundaryItem state="现在" title="产品 / 品牌 / 类目 CRUD" detail="共享 schema 校验，产品支持草稿与发布状态。" />
+              <BoundaryItem state="现在" title="动态参数表单" detail="字段来自类目的 spec_schema，不重复维护字段定义。" />
               <BoundaryItem state="MANUAL" title="图片上传" detail="当前录入图片 URL；质量筛选已可用，COS 上传与裁切留到后续版本。" />
-              <BoundaryItem state="READY" title="操作审计基础版" detail="后台变更会留下操作人、动作和前后快照；多账号权限属于后续版本。" />
+              <BoundaryItem state="现在" title="操作审计基础版" detail="后台变更会留下操作人、动作和前后快照；多账号权限属于后续版本。" />
             </div>
           </section>
         </div>
@@ -1031,7 +1031,7 @@ export function AdminApp() {
           <span className="filter-meta">{products ? `共 ${products.total} 条 / 第 ${products.page} 页` : '读取中……'}</span>
         </form>
         <section className="data-panel table-panel">
-          <PanelHeader eyebrow="产品记录" title="产品清单" meta={products ? `${products.items?.length ?? 0} 已加载` : 'LOADING'} />
+          <PanelHeader eyebrow="产品记录" title="产品清单" meta={products ? `${products.items?.length ?? 0} 已加载` : '读取中'} />
           <div className="table-wrap">
             <table className="data-table product-table">
               <thead><tr><th>产品</th><th>品牌</th><th>类目</th><th>价格</th><th>资料状态</th><th>状态</th><th>更新</th><th /></tr></thead>
@@ -1205,13 +1205,13 @@ export function AdminApp() {
           </section>
         </div>
         <section className="data-panel table-panel analytics-events-panel">
-          <PanelHeader eyebrow="RECENT TRACKING" title="最近埋点" meta={analytics?.recentEvents.length ? `${analytics.recentEvents.length} 已加载` : 'NO EVENTS'} />
+          <PanelHeader eyebrow="最近埋点" title="最近埋点" meta={analytics?.recentEvents.length ? `${analytics.recentEvents.length} 已加载` : '暂无事件'} />
           {analytics?.recentEvents.length ? (
             <div className="table-wrap"><table className="data-table analytics-events-table"><thead><tr><th>事件</th><th>访客</th><th>路径</th><th>产品</th><th>时间</th></tr></thead><tbody>{analytics.recentEvents.map((item, index) => <tr key={`${item.createdAt}-${item.name}-${index}`}><td><strong>{eventLabel(item.name)}</strong><small className="table-sub">{item.name}</small></td><td><code className="visitor-code">{item.visitor}</code></td><td className="path-cell">{item.path ?? '未记录路径'}</td><td>{item.productId ?? '—'}</td><td><time className="table-sub">{formatDate(item.createdAt)}</time></td></tr>)}</tbody></table></div>
           ) : <EmptyState title="暂无埋点记录" detail="当前时间窗口内还没有可展示的用户行为事件。" />}
         </section>
         <section className="data-panel system-status-panel">
-          <PanelHeader eyebrow="SYSTEM STATUS" title="服务器状态" meta={system ? (system.status === 'ok' ? 'ALL SYSTEMS NOMINAL' : 'CHECK REQUIRED') : 'LOADING'} />
+          <PanelHeader eyebrow="SYSTEM STATUS" title="服务器状态" meta={system ? (system.status === 'ok' ? 'ALL SYSTEMS NOMINAL' : 'CHECK REQUIRED') : '读取中'} />
           <div className="system-status-layout">
             <div className="service-grid">
               <ServiceStatus label="API 服务" value={services?.api} />
@@ -1337,7 +1337,7 @@ function Metric({ label, value, detail, accent = false }: { label: string; value
 }
 
 function BoundaryItem({ state, title, detail }: { state: string; title: string; detail: string }) {
-  return <div className="boundary-item"><span className={state === 'READY' || state === '现在' ? 'boundary-state boundary-state-ready' : 'boundary-state'}>{state}</span><div><strong>{title}</strong><p>{detail}</p></div></div>;
+  return <div className="boundary-item"><span className={state === '现在' ? 'boundary-state boundary-state-ready' : 'boundary-state'}>{state}</span><div><strong>{title}</strong><p>{detail}</p></div></div>;
 }
 
 function StatusBadge({ status }: { status: string }) {
