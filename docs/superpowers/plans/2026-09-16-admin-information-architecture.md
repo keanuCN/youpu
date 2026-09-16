@@ -81,10 +81,10 @@ const navItems: Array<{ id: Section; index: string; label: string; group: NavGro
 替换这些固定文案：
 
 ```tsx
-<div><strong>后台管理</strong><small>M3 本地环境</small></div>
+<div><strong>后台管理</strong><small>本地环境</small></div>
 <p className="sidebar-label">操作模块</p>
 <div><span className="topbar-code">有谱后台</span><span className="topbar-slash">/</span><span>{navItems.find((item) => item.id === activeSection)?.label}</span></div>
-<div className="system-readout"><span className="status-dot status-dot-good" /><span>API 会话 / {(role || 'admin').toUpperCase()}</span></div>
+<div className="system-readout"><span className="status-dot status-dot-good" /><span>API 会话 / 权限：{role || 'admin'}</span></div>
 <footer className="admin-footer"><span>有谱 / 产品资料工作台</span><span>本地管理控制台 · {new Date().getFullYear()}</span></footer>
 ```
 
@@ -378,7 +378,7 @@ rg -n "[A-Z]{3,}|PRODUCT|BRAND|SCHEMA|SOURCE|IMAGE|ITEMS|RECORDS|STATUS|QUEUE|FO
 | 产品编辑器眉题和状态 | `产品表单`、`编辑`、`新建`、`关联类目`、`未配置类目` |
 | 品牌清单眉题和数量 | `品牌清单`、`条记录` |
 | 类目清单眉题和数量 | `类目清单`、`个字段`、`个产品`、`个子类目` |
-| 采集与导入状态 | `自动采集`、`来源依据`、`当前操作`、`手工操作` |
+| 采集与导入状态 | `自动采集`、`来源依据`、`当前操作`、`手工操作`、`阶段二操作` |
 | 内容审核和操作审计 | `举报队列`、`评论队列`、`审计记录`、`读取中` |
 
 `spec_schema`、`slug`、JSON、URL、COS、API、Redis、Node.js 等技术值保留，但每个值旁边必须有中文字段名。
