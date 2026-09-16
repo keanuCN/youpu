@@ -108,15 +108,17 @@ interface CategoryFormState {
 
 const STORAGE_KEY = 'youpu.admin.token';
 
-const navItems: Array<{ id: Section; index: string; label: string; note: string }> = [
-  { id: 'dashboard', index: '00', label: '总览', note: 'CONTROL DESK' },
-  { id: 'products', index: '01', label: '产品资料', note: 'PRODUCT PIM' },
-  { id: 'brands', index: '02', label: '品牌', note: 'BRAND INDEX' },
-  { id: 'categories', index: '03', label: '类目与参数', note: 'SCHEMA FAMILY' },
-  { id: 'import', index: '04', label: '采集与导入', note: 'INGEST STATUS' },
-  { id: 'analytics', index: '05', label: '数据分析', note: 'ANALYTICS' },
-  { id: 'moderation', index: '06', label: '内容审核', note: 'COMMUNITY MODERATION' },
-  { id: 'audit', index: '07', label: '操作审计', note: 'AUDIT TRAIL' },
+type NavGroup = '工作台' | '资料库' | '内容运营';
+
+const navItems: Array<{ id: Section; index: string; label: string; group: NavGroup }> = [
+  { id: 'dashboard', index: '00', label: '总览', group: '工作台' },
+  { id: 'analytics', index: '01', label: '数据分析', group: '工作台' },
+  { id: 'products', index: '02', label: '产品资料', group: '资料库' },
+  { id: 'brands', index: '03', label: '品牌', group: '资料库' },
+  { id: 'categories', index: '04', label: '类目与参数', group: '资料库' },
+  { id: 'import', index: '05', label: '采集与导入', group: '资料库' },
+  { id: 'moderation', index: '06', label: '内容审核', group: '内容运营' },
+  { id: 'audit', index: '07', label: '操作审计', group: '内容运营' },
 ];
 
 const imageKinds: ImageKind[] = ['base', 'face', 'side', 'shape', 'field', 'card3x4'];
@@ -925,7 +927,7 @@ export function AdminApp() {
     return (
       <>
         <SectionHeader
-          index="00 / CONTROL DESK"
+          index="00"
           title="资料库总览"
           description="先看数据是否可用，再进入产品与 schema 的维护。所有发布动作都会写入 API outbox。"
           action={<button className="button" onClick={() => refreshWorkspace().catch((error) => setNotice({ kind: 'error', text: getErrorText(error) }))}>刷新数据</button>}
@@ -934,7 +936,7 @@ export function AdminApp() {
           <Metric label="产品总数" value={metrics?.products ?? '—'} detail="PRODUCT RECORDS" accent />
           <Metric label="已发布" value={metrics?.publishedProducts ?? '—'} detail="PUBLIC CATALOG" />
           <Metric label="待处理草稿" value={metrics?.drafts ?? '—'} detail="DRAFT QUEUE" />
-          <Metric label="启用品牌" value={metrics?.brands ?? '—'} detail="BRAND INDEX" />
+          <Metric label="启用品牌" value={metrics?.brands ?? '—'} detail="品牌" />
           <Metric label="启用类目" value={metrics?.categories ?? '—'} detail="SCHEMA FAMILIES" />
         </div>
         <section className="data-panel quality-overview-panel">
@@ -1016,7 +1018,7 @@ export function AdminApp() {
     return (
       <>
         <SectionHeader
-          index="01 / PRODUCT PIM"
+          index="02"
           title="产品资料"
           description="产品参数由类目 schema 约束；保存为草稿或发布，后端会同步写入产品更新事件。"
           action={<button className="button button-primary" onClick={openNewProduct}>+ 新增产品</button>}
@@ -1124,9 +1126,9 @@ export function AdminApp() {
   function renderBrands() {
     return (
       <>
-        <SectionHeader index="02 / BRAND INDEX" title="品牌资料" description="品牌是产品的稳定引用；slug 修改会影响后续录入，请先确认外部来源与中文名。" action={<button className="button button-primary" onClick={() => setBrandForm(makeBrandForm())}>+ 新增品牌</button>} />
+        <SectionHeader index="03" title="品牌资料" description="品牌是产品的稳定引用；slug 修改会影响后续录入，请先确认外部来源与中文名。" action={<button className="button button-primary" onClick={() => setBrandForm(makeBrandForm())}>+ 新增品牌</button>} />
         {brandForm && <BrandEditor form={brandForm} setForm={setBrandForm} onSubmit={handleBrandSubmit} onCancel={() => setBrandForm(null)} busy={busyAction === 'brand-save'} />}
-        <section className="data-panel table-panel"><PanelHeader eyebrow="BRAND INDEX" title="品牌清单" meta={`${brands.length} RECORDS`} /><div className="table-wrap"><table className="data-table"><thead><tr><th>品牌</th><th>国家 / 地区</th><th>产品数</th><th>状态</th><th /></tr></thead><tbody>{brands.map((brand) => <tr key={brand.id}><td><div className="record-title"><span className="record-mark">BR</span><span><strong>{brand.nameCn || brand.name}</strong><small>{brand.name} · {brand.slug}</small></span></div></td><td>{brand.country || '—'}</td><td><data>{brand.productCount ?? 0}</data></td><td><StatusBadge status={brand.status} /></td><td><button className="text-button" onClick={() => setBrandForm(brandFormFromRecord(brand))}>编辑 →</button></td></tr>)}</tbody></table></div>{!brands.length && <EmptyState title="暂无品牌" detail="先创建品牌，再录入产品资料。" />}</section>
+        <section className="data-panel table-panel"><PanelHeader eyebrow="品牌" title="品牌清单" meta={`${brands.length} 条记录`} /><div className="table-wrap"><table className="data-table"><thead><tr><th>品牌</th><th>国家 / 地区</th><th>产品数</th><th>状态</th><th /></tr></thead><tbody>{brands.map((brand) => <tr key={brand.id}><td><div className="record-title"><span className="record-mark">BR</span><span><strong>{brand.nameCn || brand.name}</strong><small>{brand.name} · {brand.slug}</small></span></div></td><td>{brand.country || '—'}</td><td><data>{brand.productCount ?? 0}</data></td><td><StatusBadge status={brand.status} /></td><td><button className="text-button" onClick={() => setBrandForm(brandFormFromRecord(brand))}>编辑 →</button></td></tr>)}</tbody></table></div>{!brands.length && <EmptyState title="暂无品牌" detail="先创建品牌，再录入产品资料。" />}</section>
       </>
     );
   }
@@ -1134,7 +1136,7 @@ export function AdminApp() {
   function renderCategories() {
     return (
       <>
-        <SectionHeader index="03 / SCHEMA FAMILY" title="类目与参数" description="这里维护前台筛选、对比与后台产品表单共同使用的 spec_schema。" action={<button className="button button-primary" onClick={() => setCategoryForm(makeCategoryForm())}>+ 新增类目</button>} />
+        <SectionHeader index="04" title="类目与参数" description="这里维护前台筛选、对比与后台产品表单共同使用的 spec_schema。" action={<button className="button button-primary" onClick={() => setCategoryForm(makeCategoryForm())}>+ 新增类目</button>} />
         {categoryForm && <CategoryEditor form={categoryForm} categories={categories} setForm={setCategoryForm} onSubmit={handleCategorySubmit} onCancel={() => setCategoryForm(null)} busy={busyAction === 'category-save'} />}
         <section className="data-panel table-panel"><PanelHeader eyebrow="SCHEMA FAMILIES" title="类目清单" meta={`${categories.length} RECORDS`} /><div className="table-wrap"><table className="data-table"><thead><tr><th>类目</th><th>层级</th><th>schema</th><th>产品 / 子类目</th><th>状态</th><th /></tr></thead><tbody>{categories.map((category) => <tr key={category.id}><td><div className="record-title"><span className="record-mark">L{category.level}</span><span><strong>{category.name}</strong><small>{category.slug}{category.parent ? ` · 父级 ${category.parent.name}` : ' · 顶层类目'}</small></span></div></td><td><data>LV.{category.level}</data></td><td>{schemaFieldCount(category.specSchema)}</td><td><span>{category.productCount} 产品</span><small className="table-sub">{category.childCount} 个子类目</small></td><td><StatusBadge status={category.status} /></td><td><button className="text-button" onClick={() => setCategoryForm(categoryFormFromRecord(category))}>编辑 →</button></td></tr>)}</tbody></table></div>{!categories.length && <EmptyState title="暂无类目" detail="类目 schema 是产品参数录入的前置条件。" />}</section>
       </>
@@ -1149,7 +1151,7 @@ export function AdminApp() {
     return (
       <>
         <SectionHeader
-          index="05 / ANALYTICS"
+          index="01"
           title="数据分析"
           description="查看访客行为、埋点分布与运行状态。访客按匿名 ID 去重，统计只覆盖已经成功上报的事件。"
           action={(
@@ -1234,7 +1236,7 @@ export function AdminApp() {
   function renderImport() {
     return (
       <>
-        <SectionHeader index="04 / INGEST STATUS" title="采集与导入" description="采集器与后台共用同一份 seed 契约；此页先提供状态边界，避免在没有文件上传与对象存储时制造假导入。" />
+        <SectionHeader index="05" title="采集与导入" description="采集器与后台共用同一份 seed 契约；此页先提供状态边界，避免在没有文件上传与对象存储时制造假导入。" />
         <div className="import-grid">
           <section className="data-panel"><PanelHeader eyebrow="AUTOMATED COLLECTION" title="自动采集状态" meta="SOURCE OF TRUTH" /><div className="import-status"><span className="status-dot status-dot-good" /><div><strong>文件层自动通过</strong><p>当前采集结果会先落到 data/，并由共享 schema 校验。自动采集暂不进入人工审核队列。</p></div></div><div className="command-block"><span>VALIDATE / 18 SEED RECORDS</span><code>pnpm --filter @youpu/api validate:data</code></div></section>
           <section className="data-panel"><PanelHeader eyebrow="M2 OPERATIONS" title="导入边界" meta="MANUAL GATE" /><div className="boundary-list"><BoundaryItem state="NOW" title="手工产品 CRUD" detail="可从产品页补录、修正并发布单条产品。" /><BoundaryItem state="NOW" title="seed 校验命令" detail="用于提交前检查 slug、schema 和来源字段。" /><BoundaryItem state="LATER" title="批量文件上传" detail="上传、快照、COS 归档与批量冲突处理留到下一阶段。" /></div></section>
@@ -1246,7 +1248,7 @@ export function AdminApp() {
   function renderModeration() {
     return (
       <>
-        <SectionHeader index="06 / COMMUNITY MODERATION" title="内容审核" description="查看用户举报与实测评论状态；本地 M3 先提供最小审核闭环，后续再补角色权限、审核记录与批量操作。" action={<button className="button" type="button" onClick={() => void refreshModeration()} disabled={moderationBusy}>{moderationBusy ? '读取中……' : '刷新审核队列'}</button>} />
+        <SectionHeader index="06" title="内容审核" description="查看用户举报与实测评论状态；本地 M3 先提供最小审核闭环，后续再补角色权限、审核记录与批量操作。" action={<button className="button" type="button" onClick={() => void refreshModeration()} disabled={moderationBusy}>{moderationBusy ? '读取中……' : '刷新审核队列'}</button>} />
         <div className="analytics-grid analytics-grid-secondary">
           <section className="data-panel table-panel">
             <PanelHeader eyebrow="REPORT QUEUE" title="举报记录" meta={`${reports.length} LOADED`} />
@@ -1266,7 +1268,7 @@ export function AdminApp() {
     return (
       <>
         <SectionHeader
-          index="07 / AUDIT TRAIL"
+          index="07"
           title="操作审计"
           description="记录后台资料变更的操作人、时间、对象和前后快照；用于回溯误改，不记录登录令牌等敏感信息。"
           action={<button className="button" type="button" onClick={() => void refreshAuditLogs()} disabled={auditBusy}>{auditBusy ? '读取中……' : '刷新日志'}</button>}
@@ -1277,7 +1279,7 @@ export function AdminApp() {
           <span className="filter-meta">{auditLogs ? `共 ${auditLogs.total} 条 / 当前 ${logs.length} 条` : '读取中……'}</span>
         </div>
         <section className="data-panel table-panel">
-          <PanelHeader eyebrow="AUDIT TRAIL" title="后台操作记录" meta={auditLogs ? `${logs.length} LOADED` : 'LOADING'} />
+          <PanelHeader eyebrow="操作审计" title="后台操作记录" meta={auditLogs ? `${logs.length} 条记录` : '读取中'} />
           {logs.length ? <div className="table-wrap"><table className="data-table audit-table"><thead><tr><th>时间</th><th>操作人</th><th>对象</th><th>动作</th><th>前后快照</th></tr></thead><tbody>{logs.map((log) => <tr key={log.id}><td><time className="table-sub audit-time">{formatDate(log.createdAt)}</time><small className="table-sub">#{log.id}</small></td><td><strong>{log.actor.nickname}</strong><small className="table-sub">{log.actor.phone || log.actor.email || log.actor.id}</small></td><td><strong>{auditEntityLabel(log.entity)}</strong><small className="table-sub">{log.entityId || '全局操作'}</small></td><td><strong>{auditActionLabel(log.action)}</strong><small className="table-sub">{log.action}</small></td><td><details className="audit-details"><summary>查看快照</summary><div className="audit-snapshots"><div><span>修改前</span><pre>{formatAuditSnapshot(log.before)}</pre></div><div><span>修改后</span><pre>{formatAuditSnapshot(log.after)}</pre></div></div></details></td></tr>)}</tbody></table></div> : <EmptyState title="暂无审计记录" detail="后台发生产品、品牌、类目或审核状态变更后，会在这里留下记录。" />}
         </section>
       </>
@@ -1298,17 +1300,17 @@ export function AdminApp() {
   return (
     <div className="admin-shell">
       <aside className="admin-sidebar">
-        <div className="brand-lockup"><div className="brand-mark-large">有谱</div><div><strong>DATA WORKBENCH</strong><small>M3 / LOCAL</small></div></div>
+        <div className="brand-lockup"><div className="brand-mark-large">有谱</div><div><strong>后台管理</strong><small>本地环境</small></div></div>
         <div className="sidebar-rule" />
-        <p className="sidebar-label">操作模块 / MODULES</p>
-        <nav className="sidebar-nav">{navItems.map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span>{item.index}</span><strong>{item.label}</strong><small>{item.note}</small></button>)}</nav>
+        <p className="sidebar-label">操作模块</p>
+        <nav className="sidebar-nav" aria-label="后台模块">{(['工作台', '资料库', '内容运营'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span>{item.index}</span><strong>{item.label}</strong></button>)}</div>)}</nav>
         <div className="sidebar-bottom"><div className="system-readout"><span className="status-dot status-dot-good" /><span>API SESSION / {(role || 'admin').toUpperCase()}</span></div><button className="logout-button" onClick={logout}>退出工作台 <span>↗</span></button></div>
       </aside>
       <main className="admin-main">
-        <header className="topbar"><div><span className="topbar-code">YOUPU / ADMIN</span><span className="topbar-slash">/</span><span>{navItems.find((item) => item.id === activeSection)?.note}</span></div><div className="topbar-right"><span className="api-origin">API {getApiHost()}</span><span className="revision">REV M3.01</span></div></header>
+        <header className="topbar"><div><span className="topbar-code">有谱后台</span><span className="topbar-slash">/</span><span>{navItems.find((item) => item.id === activeSection)?.label}</span></div><div className="topbar-right"><span className="api-origin">API {getApiHost()}</span><span className="revision">版本 M3.01</span></div></header>
         {notice && <Notice notice={notice} />}
         <div className="content-wrap">{renderContent()}</div>
-        <footer className="admin-footer"><span>有谱 / PRODUCT INTELLIGENCE</span><span>LOCAL ADMIN CONSOLE · {new Date().getFullYear()}</span></footer>
+        <footer className="admin-footer"><span>有谱 / 产品资料工作台</span><span>本地管理控制台 · {new Date().getFullYear()}</span></footer>
       </main>
     </div>
   );
@@ -1415,5 +1417,5 @@ function BrandEditor({ form, setForm, onSubmit, onCancel, busy }: { form: BrandF
 }
 
 function CategoryEditor({ form, categories, setForm, onSubmit, onCancel, busy }: { form: CategoryFormState; categories: AdminCategoryRecord[]; setForm: React.Dispatch<React.SetStateAction<CategoryFormState | null>>; onSubmit: (event: FormEvent<HTMLFormElement>) => void; onCancel: () => void; busy: boolean }) {
-  return <section className="data-panel editor-panel"><PanelHeader eyebrow={form.id ? 'EDIT SCHEMA FAMILY' : 'NEW SCHEMA FAMILY'} title={form.id ? '编辑类目' : '新增类目'} meta="SCHEMA RECORD" /><form className="form-grid" onSubmit={onSubmit}><Field label="类目名" required><input required value={form.name} onChange={(event) => setForm((current) => current && ({ ...current, name: event.target.value }))} /></Field><Field label="slug" required hint="kebab-case"><input required pattern="[a-z0-9]+(-[a-z0-9]+)*" value={form.slug} onChange={(event) => setForm((current) => current && ({ ...current, slug: event.target.value }))} /></Field><Field label="父类目"><select value={form.parentId} onChange={(event) => setForm((current) => current && ({ ...current, parentId: event.target.value }))}><option value="">顶层类目</option>{categories.filter((category) => category.id !== form.id).map((category) => <option key={category.id} value={category.id}>{'　'.repeat(category.level - 1)}{category.name}</option>)}</select></Field><Field label="排序值"><input type="number" step="1" value={form.sortOrder} onChange={(event) => setForm((current) => current && ({ ...current, sortOrder: event.target.value }))} /></Field><Field label="封面 URL"><input type="url" value={form.coverUrl} onChange={(event) => setForm((current) => current && ({ ...current, coverUrl: event.target.value }))} /></Field><Field label="状态"><select value={form.status} onChange={(event) => setForm((current) => current && ({ ...current, status: event.target.value as CategoryFormState['status'] }))}><option value="active">启用</option><option value="inactive">停用</option></select></Field><Field label="spec_schema JSON" hint="fields 至少一个；保存时会由共享契约再次校验" wide><textarea className="json-editor" rows={12} value={form.specSchemaText} onChange={(event) => setForm((current) => current && ({ ...current, specSchemaText: event.target.value }))} placeholder={'{\n  "fields": []\n}'} /></Field><Field label="recommend_config JSON" hint="可留空" wide><textarea className="json-editor" rows={6} value={form.recommendConfigText} onChange={(event) => setForm((current) => current && ({ ...current, recommendConfigText: event.target.value }))} /></Field><div className="inline-actions"><button className="button" type="button" onClick={onCancel}>取消</button><button className="button button-primary" type="submit" disabled={busy}>{busy ? '保存中……' : '保存类目  →'}</button></div></form></section>;
+  return <section className="data-panel editor-panel"><PanelHeader eyebrow={form.id ? '编辑类目' : '新增类目'} title={form.id ? '编辑类目' : '新增类目'} meta="类目记录" /><form className="form-grid" onSubmit={onSubmit}><Field label="类目名" required><input required value={form.name} onChange={(event) => setForm((current) => current && ({ ...current, name: event.target.value }))} /></Field><Field label="slug" required hint="kebab-case"><input required pattern="[a-z0-9]+(-[a-z0-9]+)*" value={form.slug} onChange={(event) => setForm((current) => current && ({ ...current, slug: event.target.value }))} /></Field><Field label="父类目"><select value={form.parentId} onChange={(event) => setForm((current) => current && ({ ...current, parentId: event.target.value }))}><option value="">顶层类目</option>{categories.filter((category) => category.id !== form.id).map((category) => <option key={category.id} value={category.id}>{'　'.repeat(category.level - 1)}{category.name}</option>)}</select></Field><Field label="排序值"><input type="number" step="1" value={form.sortOrder} onChange={(event) => setForm((current) => current && ({ ...current, sortOrder: event.target.value }))} /></Field><Field label="封面 URL"><input type="url" value={form.coverUrl} onChange={(event) => setForm((current) => current && ({ ...current, coverUrl: event.target.value }))} /></Field><Field label="状态"><select value={form.status} onChange={(event) => setForm((current) => current && ({ ...current, status: event.target.value as CategoryFormState['status'] }))}><option value="active">启用</option><option value="inactive">停用</option></select></Field><Field label="spec_schema JSON" hint="fields 至少一个；保存时会由共享契约再次校验" wide><textarea className="json-editor" rows={12} value={form.specSchemaText} onChange={(event) => setForm((current) => current && ({ ...current, specSchemaText: event.target.value }))} placeholder={'{\n  "fields": []\n}'} /></Field><Field label="recommend_config JSON" hint="可留空" wide><textarea className="json-editor" rows={6} value={form.recommendConfigText} onChange={(event) => setForm((current) => current && ({ ...current, recommendConfigText: event.target.value }))} /></Field><div className="inline-actions"><button className="button" type="button" onClick={onCancel}>取消</button><button className="button button-primary" type="submit" disabled={busy}>{busy ? '保存中……' : '保存类目  →'}</button></div></form></section>;
 }
