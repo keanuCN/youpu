@@ -892,7 +892,7 @@ export function AdminApp() {
       <main className="login-screen">
         <div className="login-grid-mark" aria-hidden="true">+</div>
         <section className="login-card">
-          <p className="eyebrow">YOUPU / ADMIN M2</p>
+          <p className="eyebrow">有谱 / 后台管理 / 第二阶段</p>
           <h1>有谱<br /><em>资料工作台</em></h1>
           <p className="login-copy">产品资料、类目参数与采集状态的单一操作入口。</p>
           <form onSubmit={handleLogin} className="login-form">
@@ -904,7 +904,7 @@ export function AdminApp() {
                 onChange={(event) => setLoginToken(event.target.value)}
                 type="password"
                 autoComplete="current-password"
-                placeholder="输入 API ADMIN_TOKEN"
+                placeholder="输入管理令牌"
               />
             </label>
             <button className="button button-primary button-block" type="submit" disabled={busyAction === 'login'}>
@@ -912,8 +912,8 @@ export function AdminApp() {
             </button>
           </form>
           <div className="login-footnote">
-            <span>AUTH / BEARER</span>
-            <span>LOCAL SESSION ONLY</span>
+            <span>鉴权方式 / Bearer 令牌</span>
+            <span>仅限本地会话</span>
           </div>
           {notice && <Notice notice={notice} />}
         </section>
@@ -980,7 +980,7 @@ export function AdminApp() {
         </section>
         <div className="dashboard-grid">
           <section className="data-panel">
-            <PanelHeader eyebrow="RECENT ACTIVITY" title="最近更新" meta="TOP 5" />
+            <PanelHeader eyebrow="最近活动" title="最近更新" meta="最近 5 条" />
             {dashboard?.recentProducts?.length ? (
               <div className="activity-list">
                 {dashboard.recentProducts.map((product) => (
@@ -1003,7 +1003,7 @@ export function AdminApp() {
                       quality: { missing: [] },
                     });
                   }}>
-                    <span className="activity-code">{product.status === 'published' ? 'PUB' : 'DRF'}</span>
+                    <span className="activity-code">{product.status === 'published' ? '已发布' : '草稿'}</span>
                     <span className="activity-main"><strong>{product.title}</strong><small>{product.brand.nameCn || product.brand.name} / {product.category.name}</small></span>
                     <time>{formatDate(product.updatedAt)}</time>
                   </button>
@@ -1014,11 +1014,11 @@ export function AdminApp() {
             )}
           </section>
           <section className="data-panel boundary-panel">
-            <PanelHeader eyebrow="M2 BOUNDARY" title="当前工作边界" meta="REV 0.1" />
+            <PanelHeader eyebrow="当前工作边界" title="当前工作边界" meta="版本 0.1" />
             <div className="boundary-list">
               <BoundaryItem state="现在" title="产品 / 品牌 / 类目 CRUD" detail="共享 schema 校验，产品支持草稿与发布状态。" />
               <BoundaryItem state="现在" title="动态参数表单" detail="字段来自类目的 spec_schema，不重复维护字段定义。" />
-              <BoundaryItem state="MANUAL" title="图片上传" detail="当前录入图片 URL；质量筛选已可用，COS 上传与裁切留到后续版本。" />
+              <BoundaryItem state="手工处理" title="图片上传" detail="当前录入图片 URL；质量筛选已可用，COS 上传与裁切留到后续版本。" />
               <BoundaryItem state="现在" title="操作审计基础版" detail="后台变更会留下操作人、动作和前后快照；多账号权限属于后续版本。" />
             </div>
           </section>
@@ -1044,14 +1044,14 @@ export function AdminApp() {
           <span className="filter-meta">{products ? `共 ${products.total} 条 / 第 ${products.page} 页` : '读取中……'}</span>
         </form>
         <section className="data-panel table-panel">
-          <PanelHeader eyebrow="产品记录" title="产品清单" meta={products ? `${products.items?.length ?? 0} 已加载` : '读取中'} />
+          <PanelHeader eyebrow="产品记录" title="产品清单" meta={products ? `${products.items?.length ?? 0} 条已加载` : '读取中'} />
           <div className="table-wrap">
             <table className="data-table product-table">
               <thead><tr><th>产品</th><th>品牌</th><th>类目</th><th>价格</th><th>资料状态</th><th>状态</th><th>更新</th><th /></tr></thead>
               <tbody>
                 {products?.items?.map((product) => (
                   <tr key={product.id}>
-                    <td><div className="record-title"><span className="record-mark">{product.quality.missing.includes('image') ? '—' : 'IMG'}</span><span><strong>{product.title}</strong><small>{product.model} · {product.slug}</small></span></div></td>
+                    <td><div className="record-title"><span className="record-mark">{product.quality.missing.includes('image') ? '—' : '有图'}</span><span><strong>{product.title}</strong><small>{product.model} · {product.slug}</small></span></div></td>
                     <td>{product.brand.nameCn || product.brand.name}<small className="table-sub">{product.brand.slug}</small></td>
                     <td>{product.category.name}<small className="table-sub">{product.category.slug}</small></td>
                     <td><data>{formatPrice(product)}</data></td>
@@ -1077,12 +1077,12 @@ export function AdminApp() {
       <div className="drawer-layer" role="presentation">
         <button className="drawer-backdrop" aria-label="关闭编辑器" onClick={() => setProductForm(null)} />
         <aside className="drawer" role="dialog" aria-modal="true" aria-label="产品编辑器">
-          <div className="drawer-head"><div><p className="eyebrow">PRODUCT FORM / {productForm.id ? 'EDIT' : 'NEW'}</p><h2>{productForm.id ? '编辑产品' : '新建产品'}</h2></div><button className="close-button" type="button" onClick={() => setProductForm(null)}>×</button></div>
+          <div className="drawer-head"><div><p className="eyebrow">产品表单 / {productForm.id ? '编辑' : '新建'}</p><h2>{productForm.id ? '编辑产品' : '新建产品'}</h2></div><button className="close-button" type="button" onClick={() => setProductForm(null)}>×</button></div>
           <form className="drawer-form" onSubmit={handleProductSubmit}>
             <div className="form-section"><div className="form-section-head"><span>01</span><h3>基础识别</h3></div><div className="form-grid">
               <Field label="标题" required><input required value={productForm.title} onChange={(event) => setProductForm((current) => current && ({ ...current, title: event.target.value }))} placeholder="例如：Burton Custom Camber" /></Field>
               <Field label="型号" required><input required value={productForm.model} onChange={(event) => setProductForm((current) => current && ({ ...current, model: event.target.value }))} placeholder="Custom Camber" /></Field>
-              <Field label="slug" required hint="kebab-case"><input required pattern="[a-z0-9]+(-[a-z0-9]+)*" value={productForm.slug} onChange={(event) => setProductForm((current) => current && ({ ...current, slug: event.target.value }))} placeholder="burton-custom-camber-2025" /></Field>
+              <Field label="slug" required hint="小写短横线格式"><input required pattern="[a-z0-9]+(-[a-z0-9]+)*" value={productForm.slug} onChange={(event) => setProductForm((current) => current && ({ ...current, slug: event.target.value }))} placeholder="burton-custom-camber-2025" /></Field>
               <Field label="年份" required><input required type="number" min="2000" max="2100" step="1" value={productForm.year} onChange={(event) => setProductForm((current) => current && ({ ...current, year: event.target.value }))} /></Field>
               <Field label="品牌" required><select required value={productForm.brandSlug} onChange={(event) => setProductForm((current) => current && ({ ...current, brandSlug: event.target.value }))}><option value="">选择品牌</option>{brands.map((brand) => <option key={brand.id} value={brand.slug}>{brand.nameCn || brand.name} / {brand.slug}</option>)}</select></Field>
               <Field label="类目" required hint={editorSchema ? `${editorSchema.fields.length} 个参数字段` : '类目需配置 schema'}><select required value={productForm.categorySlug} onChange={(event) => setProductForm((current) => current && ({ ...current, categorySlug: event.target.value }))}><option value="">选择类目</option>{categories.map((category) => <option key={category.id} value={category.slug}>{category.name} / {category.slug}</option>)}</select></Field>
@@ -1095,16 +1095,16 @@ export function AdminApp() {
               <Field label="发布状态"><select value={productForm.status} onChange={(event) => setProductForm((current) => current && ({ ...current, status: event.target.value as ProductFormState['status'] }))}><option value="draft">草稿</option><option value="published">已发布</option></select></Field>
               <Field label="封面 URL" wide><input type="url" value={productForm.coverUrl} onChange={(event) => setProductForm((current) => current && ({ ...current, coverUrl: event.target.value }))} placeholder="https://..." /></Field>
             </div></div>
-            <div className="form-section"><div className="form-section-head"><span>03</span><h3>动态参数</h3><span className="section-side">{editorSchema ? 'SCHEMA LINKED' : 'SCHEMA MISSING'}</span></div>
+            <div className="form-section"><div className="form-section-head"><span>03</span><h3>动态参数</h3><span className="section-side">{editorSchema ? '已关联类目' : '未配置类目'}</span></div>
               {editorSchema ? <div className="spec-groups">{fieldsByGroup(editorSchema).map(([group, fields]) => <div className="spec-group" key={group}><div className="spec-group-title">{group}</div><div className="form-grid">{fields.map((field) => renderSpecField(field))}</div></div>)}</div> : <div className="inline-warning">当前类目没有有效 spec_schema，产品无法通过后端参数校验。请先到「类目与参数」配置字段。</div>}
             </div>
-            {editorSchema?.rating_dimensions?.length ? <div className="form-section"><div className="form-section-head"><span>04</span><h3>编辑评分</h3><span className="section-side">0–10 / WEIGHTED</span></div><div className="form-grid">{editorSchema.rating_dimensions.map((dimension) => <Field key={dimension.key} label={dimension.label} hint={dimension.key}><input type="number" min="0" max="10" step="0.1" value={productForm.editorialScores[dimension.key] ?? ''} onChange={(event) => setProductForm((current) => current && ({ ...current, editorialScores: { ...current.editorialScores, [dimension.key]: event.target.value } }))} /></Field>)}</div></div> : null}
-            <div className="form-section"><div className="form-section-head"><span>{editorSchema?.rating_dimensions?.length ? '05' : '04'}</span><h3>来源留痕</h3><span className="section-side">SOURCE TRACE</span></div><div className="form-grid">
+            {editorSchema?.rating_dimensions?.length ? <div className="form-section"><div className="form-section-head"><span>04</span><h3>编辑评分</h3><span className="section-side">0–10 / 加权</span></div><div className="form-grid">{editorSchema.rating_dimensions.map((dimension) => <Field key={dimension.key} label={dimension.label} hint={dimension.key}><input type="number" min="0" max="10" step="0.1" value={productForm.editorialScores[dimension.key] ?? ''} onChange={(event) => setProductForm((current) => current && ({ ...current, editorialScores: { ...current.editorialScores, [dimension.key]: event.target.value } }))} /></Field>)}</div></div> : null}
+            <div className="form-section"><div className="form-section-head"><span>{editorSchema?.rating_dimensions?.length ? '05' : '04'}</span><h3>来源留痕</h3><span className="section-side">来源留痕</span></div><div className="form-grid">
               <Field label="来源类型"><select value={productForm.sourceKind} onChange={(event) => setProductForm((current) => current && ({ ...current, sourceKind: event.target.value as DataSourceKind }))}><option value="manual">人工录入</option><option value="official">官方资料</option><option value="crawl">自动采集</option></select></Field>
               <Field label="来源 URL"><input type="url" value={productForm.sourceUrl} onChange={(event) => setProductForm((current) => current && ({ ...current, sourceUrl: event.target.value }))} placeholder="https://..." /></Field>
               <Field label="快照 URL"><input type="url" value={productForm.snapshotUrl} onChange={(event) => setProductForm((current) => current && ({ ...current, snapshotUrl: event.target.value }))} placeholder="https://..." /></Field>
             </div></div>
-            <div className="form-section"><div className="form-section-head"><span>{editorSchema?.rating_dimensions?.length ? '06' : '05'}</span><h3>图片 URL</h3><span className="section-side">{productForm.images.length} ITEMS</span></div><div className="image-list">{productForm.images.map((image, index) => <div className="image-row" key={image.id ?? index}><input type="url" aria-label="图片 URL" value={image.url} onChange={(event) => updateImage(index, 'url', event.target.value)} placeholder="https://..." /><select aria-label="图片类型" value={image.kind} onChange={(event) => updateImage(index, 'kind', event.target.value)}>{imageKinds.map((kind) => <option key={kind} value={kind}>{kind}</option>)}</select><input aria-label="图片来源" value={image.source} onChange={(event) => updateImage(index, 'source', event.target.value)} placeholder="版权 / 来源" /><button className="icon-button" type="button" onClick={() => setProductForm((current) => current && ({ ...current, images: current.images.filter((_, imageIndex) => imageIndex !== index) }))}>−</button></div>)}<button className="text-button" type="button" onClick={() => setProductForm((current) => current && ({ ...current, images: [...current.images, { url: '', kind: 'base', alt: '', source: '', sortOrder: String(current.images.length) }] }))}>+ 添加一行图片</button></div></div>
+            <div className="form-section"><div className="form-section-head"><span>{editorSchema?.rating_dimensions?.length ? '06' : '05'}</span><h3>图片 URL</h3><span className="section-side">{productForm.images.length} 张图片</span></div><div className="image-list">{productForm.images.map((image, index) => <div className="image-row" key={image.id ?? index}><input type="url" aria-label="图片 URL" value={image.url} onChange={(event) => updateImage(index, 'url', event.target.value)} placeholder="https://..." /><select aria-label="图片类型" value={image.kind} onChange={(event) => updateImage(index, 'kind', event.target.value)}>{imageKinds.map((kind) => <option key={kind} value={kind}>{kind}</option>)}</select><input aria-label="图片来源" value={image.source} onChange={(event) => updateImage(index, 'source', event.target.value)} placeholder="版权 / 来源" /><button className="icon-button" type="button" onClick={() => setProductForm((current) => current && ({ ...current, images: current.images.filter((_, imageIndex) => imageIndex !== index) }))}>−</button></div>)}<button className="text-button" type="button" onClick={() => setProductForm((current) => current && ({ ...current, images: [...current.images, { url: '', kind: 'base', alt: '', source: '', sortOrder: String(current.images.length) }] }))}>+ 添加一行图片</button></div></div>
             <div className="drawer-actions"><button className="button" type="button" onClick={() => setProductForm(null)}>取消</button><button className="button button-primary" type="submit" disabled={busyAction === 'product-save'}>{busyAction === 'product-save' ? '保存中……' : productForm.status === 'published' ? '保存并发布  →' : '保存草稿  →'}</button></div>
           </form>
         </aside>
@@ -1259,8 +1259,8 @@ export function AdminApp() {
       <>
         <SectionHeader index="05" title="采集与导入" description="采集器与后台共用同一份 seed 契约；此页先提供状态边界，避免在没有文件上传与对象存储时制造假导入。" />
         <div className="import-grid">
-          <section className="data-panel"><PanelHeader eyebrow="自动采集" title="自动采集状态" meta="数据依据" /><div className="import-status"><span className="status-dot status-dot-good" /><div><strong>文件层自动通过</strong><p>当前采集结果会先落到 data/，并由共享 schema 校验。自动采集暂不进入人工审核队列。</p></div></div><div className="command-block"><span>VALIDATE / 18 SEED 条记录</span><code>pnpm --filter @youpu/api validate:data</code></div></section>
-          <section className="data-panel"><PanelHeader eyebrow="阶段二操作" title="导入边界" meta="人工关卡" /><div className="boundary-list"><BoundaryItem state="现在" title="手工产品 CRUD" detail="可从产品页补录、修正并发布单条产品。" /><BoundaryItem state="现在" title="seed 校验命令" detail="用于提交前检查 slug、schema 和来源字段。" /><BoundaryItem state="后续" title="批量文件上传" detail="上传、快照、COS 归档与批量冲突处理留到下一阶段。" /></div></section>
+          <section className="data-panel"><PanelHeader eyebrow="自动采集" title="自动采集状态" meta="数据依据" /><div className="import-status"><span className="status-dot status-dot-good" /><div><strong>文件层自动通过</strong><p>当前采集结果会先落到 data/，并由共享 schema 校验。自动采集暂不进入人工审核队列。</p></div></div><div className="command-block"><span>校验 / 18 条种子记录</span><code>pnpm --filter @youpu/api validate:data</code></div></section>
+          <section className="data-panel"><PanelHeader eyebrow="阶段二操作" title="导入边界" meta="人工关卡" /><div className="boundary-list"><BoundaryItem state="当前可用" title="手工产品 CRUD" detail="可从产品页补录、修正并发布单条产品。" /><BoundaryItem state="现在" title="seed 校验命令" detail="用于提交前检查 slug、schema 和来源字段。" /><BoundaryItem state="后续处理" title="批量文件上传" detail="上传、快照、COS 归档与批量冲突处理留到下一阶段。" /></div></section>
         </div>
       </>
     );
@@ -1328,7 +1328,7 @@ export function AdminApp() {
         <div className="sidebar-bottom"><div className="system-readout"><span className="status-dot status-dot-good" /><span>API 会话 / 权限：{role || 'admin'}</span></div><button className="logout-button" onClick={logout}>退出工作台 <span>↗</span></button></div>
       </aside>
       <main className="admin-main">
-        <header className="topbar"><div><span className="topbar-code">有谱后台</span><span className="topbar-slash">/</span><span>{navItems.find((item) => item.id === activeSection)?.label}</span></div><div className="topbar-right"><span className="api-origin">API {getApiHost()}</span><span className="revision">版本 M3.01</span></div></header>
+        <header className="topbar"><div><span className="topbar-code">有谱后台</span><span className="topbar-slash">/</span><span>{navItems.find((item) => item.id === activeSection)?.label}</span></div><div className="topbar-right"><span className="api-origin">API {getApiHost()}</span><span className="revision">版本 3.01</span></div></header>
         {notice && <Notice notice={notice} />}
         <div className="content-wrap">{renderContent()}</div>
         <footer className="admin-footer"><span>有谱 / 产品资料工作台</span><span>本地管理控制台 · {new Date().getFullYear()}</span></footer>
@@ -1426,7 +1426,7 @@ function ServiceStatus({ label, value, disabled = false }: { label: string; valu
 }
 
 function Notice({ notice }: { notice: Notice }) {
-  return <div className={`notice notice-${notice.kind}`} role="status"><span>{notice.kind === 'success' ? 'OK' : notice.kind === 'error' ? 'ERR' : 'INFO'}</span><p>{notice.text}</p></div>;
+  return <div className={`notice notice-${notice.kind}`} role="status"><span>{notice.kind === 'success' ? '成功' : notice.kind === 'error' ? '错误' : '提示'}</span><p>{notice.text}</p></div>;
 }
 
 function Field({ label, hint, required = false, wide = false, children }: { label: string; hint?: string; required?: boolean; wide?: boolean; children: React.ReactNode }) {
@@ -1434,9 +1434,9 @@ function Field({ label, hint, required = false, wide = false, children }: { labe
 }
 
 function BrandEditor({ form, setForm, onSubmit, onCancel, busy }: { form: BrandFormState; setForm: React.Dispatch<React.SetStateAction<BrandFormState | null>>; onSubmit: (event: FormEvent<HTMLFormElement>) => void; onCancel: () => void; busy: boolean }) {
-  return <section className="data-panel editor-panel"><PanelHeader eyebrow={form.id ? '编辑品牌' : '新增品牌'} title={form.id ? '编辑品牌' : '新增品牌'} meta="品牌记录" /><form className="form-grid" onSubmit={onSubmit}><Field label="品牌名" required><input required value={form.name} onChange={(event) => setForm((current) => current && ({ ...current, name: event.target.value }))} /></Field><Field label="中文名"><input value={form.nameCn} onChange={(event) => setForm((current) => current && ({ ...current, nameCn: event.target.value }))} /></Field><Field label="slug" required hint="kebab-case"><input required pattern="[a-z0-9]+(-[a-z0-9]+)*" value={form.slug} onChange={(event) => setForm((current) => current && ({ ...current, slug: event.target.value }))} /></Field><Field label="国家 / 地区"><input maxLength={8} value={form.country} onChange={(event) => setForm((current) => current && ({ ...current, country: event.target.value }))} /></Field><Field label="官网 URL"><input type="url" value={form.officialUrl} onChange={(event) => setForm((current) => current && ({ ...current, officialUrl: event.target.value }))} /></Field><Field label="Logo URL"><input type="url" value={form.logoUrl} onChange={(event) => setForm((current) => current && ({ ...current, logoUrl: event.target.value }))} /></Field><Field label="状态"><select value={form.status} onChange={(event) => setForm((current) => current && ({ ...current, status: event.target.value as BrandFormState['status'] }))}><option value="active">启用</option><option value="inactive">停用</option></select></Field><Field label="描述" wide><textarea rows={3} value={form.description} onChange={(event) => setForm((current) => current && ({ ...current, description: event.target.value }))} /></Field><div className="inline-actions"><button className="button" type="button" onClick={onCancel}>取消</button><button className="button button-primary" type="submit" disabled={busy}>{busy ? '保存中……' : '保存品牌  →'}</button></div></form></section>;
+  return <section className="data-panel editor-panel"><PanelHeader eyebrow={form.id ? '编辑品牌' : '新增品牌'} title={form.id ? '编辑品牌' : '新增品牌'} meta="品牌记录" /><form className="form-grid" onSubmit={onSubmit}><Field label="品牌名" required><input required value={form.name} onChange={(event) => setForm((current) => current && ({ ...current, name: event.target.value }))} /></Field><Field label="中文名"><input value={form.nameCn} onChange={(event) => setForm((current) => current && ({ ...current, nameCn: event.target.value }))} /></Field><Field label="slug" required hint="小写短横线格式"><input required pattern="[a-z0-9]+(-[a-z0-9]+)*" value={form.slug} onChange={(event) => setForm((current) => current && ({ ...current, slug: event.target.value }))} /></Field><Field label="国家 / 地区"><input maxLength={8} value={form.country} onChange={(event) => setForm((current) => current && ({ ...current, country: event.target.value }))} /></Field><Field label="官网 URL"><input type="url" value={form.officialUrl} onChange={(event) => setForm((current) => current && ({ ...current, officialUrl: event.target.value }))} /></Field><Field label="标志 URL"><input type="url" value={form.logoUrl} onChange={(event) => setForm((current) => current && ({ ...current, logoUrl: event.target.value }))} /></Field><Field label="状态"><select value={form.status} onChange={(event) => setForm((current) => current && ({ ...current, status: event.target.value as BrandFormState['status'] }))}><option value="active">启用</option><option value="inactive">停用</option></select></Field><Field label="描述" wide><textarea rows={3} value={form.description} onChange={(event) => setForm((current) => current && ({ ...current, description: event.target.value }))} /></Field><div className="inline-actions"><button className="button" type="button" onClick={onCancel}>取消</button><button className="button button-primary" type="submit" disabled={busy}>{busy ? '保存中……' : '保存品牌  →'}</button></div></form></section>;
 }
 
 function CategoryEditor({ form, categories, setForm, onSubmit, onCancel, busy }: { form: CategoryFormState; categories: AdminCategoryRecord[]; setForm: React.Dispatch<React.SetStateAction<CategoryFormState | null>>; onSubmit: (event: FormEvent<HTMLFormElement>) => void; onCancel: () => void; busy: boolean }) {
-  return <section className="data-panel editor-panel"><PanelHeader eyebrow={form.id ? '编辑类目' : '新增类目'} title={form.id ? '编辑类目' : '新增类目'} meta="类目记录" /><form className="form-grid" onSubmit={onSubmit}><Field label="类目名" required><input required value={form.name} onChange={(event) => setForm((current) => current && ({ ...current, name: event.target.value }))} /></Field><Field label="slug" required hint="kebab-case"><input required pattern="[a-z0-9]+(-[a-z0-9]+)*" value={form.slug} onChange={(event) => setForm((current) => current && ({ ...current, slug: event.target.value }))} /></Field><Field label="父类目"><select value={form.parentId} onChange={(event) => setForm((current) => current && ({ ...current, parentId: event.target.value }))}><option value="">顶层类目</option>{categories.filter((category) => category.id !== form.id).map((category) => <option key={category.id} value={category.id}>{'　'.repeat(category.level - 1)}{category.name}</option>)}</select></Field><Field label="排序值"><input type="number" step="1" value={form.sortOrder} onChange={(event) => setForm((current) => current && ({ ...current, sortOrder: event.target.value }))} /></Field><Field label="封面 URL"><input type="url" value={form.coverUrl} onChange={(event) => setForm((current) => current && ({ ...current, coverUrl: event.target.value }))} /></Field><Field label="状态"><select value={form.status} onChange={(event) => setForm((current) => current && ({ ...current, status: event.target.value as CategoryFormState['status'] }))}><option value="active">启用</option><option value="inactive">停用</option></select></Field><Field label="spec_schema JSON" hint="fields 至少一个；保存时会由共享契约再次校验" wide><textarea className="json-editor" rows={12} value={form.specSchemaText} onChange={(event) => setForm((current) => current && ({ ...current, specSchemaText: event.target.value }))} placeholder={'{\n  "fields": []\n}'} /></Field><Field label="recommend_config JSON" hint="可留空" wide><textarea className="json-editor" rows={6} value={form.recommendConfigText} onChange={(event) => setForm((current) => current && ({ ...current, recommendConfigText: event.target.value }))} /></Field><div className="inline-actions"><button className="button" type="button" onClick={onCancel}>取消</button><button className="button button-primary" type="submit" disabled={busy}>{busy ? '保存中……' : '保存类目  →'}</button></div></form></section>;
+  return <section className="data-panel editor-panel"><PanelHeader eyebrow={form.id ? '编辑类目' : '新增类目'} title={form.id ? '编辑类目' : '新增类目'} meta="类目记录" /><form className="form-grid" onSubmit={onSubmit}><Field label="类目名" required><input required value={form.name} onChange={(event) => setForm((current) => current && ({ ...current, name: event.target.value }))} /></Field><Field label="slug" required hint="小写短横线格式"><input required pattern="[a-z0-9]+(-[a-z0-9]+)*" value={form.slug} onChange={(event) => setForm((current) => current && ({ ...current, slug: event.target.value }))} /></Field><Field label="父类目"><select value={form.parentId} onChange={(event) => setForm((current) => current && ({ ...current, parentId: event.target.value }))}><option value="">顶层类目</option>{categories.filter((category) => category.id !== form.id).map((category) => <option key={category.id} value={category.id}>{'　'.repeat(category.level - 1)}{category.name}</option>)}</select></Field><Field label="排序值"><input type="number" step="1" value={form.sortOrder} onChange={(event) => setForm((current) => current && ({ ...current, sortOrder: event.target.value }))} /></Field><Field label="封面 URL"><input type="url" value={form.coverUrl} onChange={(event) => setForm((current) => current && ({ ...current, coverUrl: event.target.value }))} /></Field><Field label="状态"><select value={form.status} onChange={(event) => setForm((current) => current && ({ ...current, status: event.target.value as CategoryFormState['status'] }))}><option value="active">启用</option><option value="inactive">停用</option></select></Field><Field label="spec_schema JSON" hint="fields 至少一个；保存时会由共享契约再次校验" wide><textarea className="json-editor" rows={12} value={form.specSchemaText} onChange={(event) => setForm((current) => current && ({ ...current, specSchemaText: event.target.value }))} placeholder={'{\n  "fields": []\n}'} /></Field><Field label="recommend_config JSON" hint="可留空" wide><textarea className="json-editor" rows={6} value={form.recommendConfigText} onChange={(event) => setForm((current) => current && ({ ...current, recommendConfigText: event.target.value }))} /></Field><div className="inline-actions"><button className="button" type="button" onClick={onCancel}>取消</button><button className="button button-primary" type="submit" disabled={busy}>{busy ? '保存中……' : '保存类目  →'}</button></div></form></section>;
 }
