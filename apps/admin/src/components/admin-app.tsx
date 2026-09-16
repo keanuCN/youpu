@@ -122,6 +122,14 @@ const navItems: Array<{ id: Section; index: string; label: string; group: NavGro
 ];
 
 const imageKinds: ImageKind[] = ['base', 'face', 'side', 'shape', 'field', 'card3x4'];
+const imageKindLabels: Record<ImageKind, string> = {
+  base: '基础图',
+  face: '正面图',
+  side: '侧面图',
+  shape: '轮廓图',
+  field: '场景图',
+  card3x4: '卡片图',
+};
 
 function makeProductForm(categorySlug = '', brandSlug = ''): ProductFormState {
   return {
@@ -1104,7 +1112,7 @@ export function AdminApp() {
               <Field label="来源 URL"><input type="url" value={productForm.sourceUrl} onChange={(event) => setProductForm((current) => current && ({ ...current, sourceUrl: event.target.value }))} placeholder="https://..." /></Field>
               <Field label="快照 URL"><input type="url" value={productForm.snapshotUrl} onChange={(event) => setProductForm((current) => current && ({ ...current, snapshotUrl: event.target.value }))} placeholder="https://..." /></Field>
             </div></div>
-            <div className="form-section"><div className="form-section-head"><span>{editorSchema?.rating_dimensions?.length ? '06' : '05'}</span><h3>图片 URL</h3><span className="section-side">{productForm.images.length} 张图片</span></div><div className="image-list">{productForm.images.map((image, index) => <div className="image-row" key={image.id ?? index}><input type="url" aria-label="图片 URL" value={image.url} onChange={(event) => updateImage(index, 'url', event.target.value)} placeholder="https://..." /><select aria-label="图片类型" value={image.kind} onChange={(event) => updateImage(index, 'kind', event.target.value)}>{imageKinds.map((kind) => <option key={kind} value={kind}>{kind}</option>)}</select><input aria-label="图片来源" value={image.source} onChange={(event) => updateImage(index, 'source', event.target.value)} placeholder="版权 / 来源" /><button className="icon-button" type="button" onClick={() => setProductForm((current) => current && ({ ...current, images: current.images.filter((_, imageIndex) => imageIndex !== index) }))}>−</button></div>)}<button className="text-button" type="button" onClick={() => setProductForm((current) => current && ({ ...current, images: [...current.images, { url: '', kind: 'base', alt: '', source: '', sortOrder: String(current.images.length) }] }))}>+ 添加一行图片</button></div></div>
+            <div className="form-section"><div className="form-section-head"><span>{editorSchema?.rating_dimensions?.length ? '06' : '05'}</span><h3>图片 URL</h3><span className="section-side">{productForm.images.length} 张图片</span></div><div className="image-list">{productForm.images.map((image, index) => <div className="image-row" key={image.id ?? index}><input type="url" aria-label="图片 URL" value={image.url} onChange={(event) => updateImage(index, 'url', event.target.value)} placeholder="https://..." /><select aria-label="图片类型" value={image.kind} onChange={(event) => updateImage(index, 'kind', event.target.value)}>{imageKinds.map((kind) => <option key={kind} value={kind}>{imageKindLabels[kind]}</option>)}</select><input aria-label="图片来源" value={image.source} onChange={(event) => updateImage(index, 'source', event.target.value)} placeholder="版权 / 来源" /><button className="icon-button" type="button" onClick={() => setProductForm((current) => current && ({ ...current, images: current.images.filter((_, imageIndex) => imageIndex !== index) }))}>−</button></div>)}<button className="text-button" type="button" onClick={() => setProductForm((current) => current && ({ ...current, images: [...current.images, { url: '', kind: 'base', alt: '', source: '', sortOrder: String(current.images.length) }] }))}>+ 添加一行图片</button></div></div>
             <div className="drawer-actions"><button className="button" type="button" onClick={() => setProductForm(null)}>取消</button><button className="button button-primary" type="submit" disabled={busyAction === 'product-save'}>{busyAction === 'product-save' ? '保存中……' : productForm.status === 'published' ? '保存并发布  →' : '保存草稿  →'}</button></div>
           </form>
         </aside>
