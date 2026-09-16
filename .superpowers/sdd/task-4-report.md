@@ -15,3 +15,5 @@
 - `git diff --check`：exit 0。
 
 concerns：none
+
+复审修正：将“本地 M3”改为“本地第三阶段”，品牌列表装饰标记改为“牌”，统一分析/审核加载数量为“条已加载”，并将表头 schema 改为“参数 schema”。
