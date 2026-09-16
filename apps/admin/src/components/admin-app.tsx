@@ -408,6 +408,16 @@ export function AdminApp() {
   const [productForm, setProductForm] = useState<ProductFormState | null>(null);
   const [brandForm, setBrandForm] = useState<BrandFormState | null>(null);
   const [categoryForm, setCategoryForm] = useState<CategoryFormState | null>(null);
+  const hasOpenEditor = productForm !== null || brandForm !== null || categoryForm !== null;
+
+  useEffect(() => {
+    if (!hasOpenEditor) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [hasOpenEditor]);
 
   useEffect(() => {
     const savedToken = window.localStorage.getItem(STORAGE_KEY) ?? '';
@@ -769,7 +779,7 @@ export function AdminApp() {
         <section className="data-panel table-panel">
           <PanelHeader eyebrow="PRODUCT RECORDS" title="产品清单" meta={products ? `${products.items?.length ?? 0} LOADED` : 'LOADING'} />
           <div className="table-wrap">
-            <table className="data-table">
+            <table className="data-table product-table">
               <thead><tr><th>产品</th><th>品牌</th><th>类目</th><th>价格</th><th>状态</th><th>更新</th><th /></tr></thead>
               <tbody>
                 {products?.items?.map((product) => (
