@@ -1,0 +1,25 @@
+# 官方规格样例：日区/海外规格，待补中国区价格、图片与有谱编辑评分
+slug: daiwa-tatula-681mhrb-2026
+category: casting-rod
+brand: daiwa
+model: TATULA 681MHRB
+year: 2026
+title: Daiwa TATULA 681MHRB 2026
+specs:
+  length: 2.03
+  sections: 2
+  weight: 119
+  lureWeight: "7-28 g"
+  lineWeight: "10-20 lb"
+  power: medium-heavy
+  rodType: casting
+  blankMaterial: 碳纤维
+  carbonContent: 91
+  scenes:
+    - freshwater
+    - bass
+    - heavy-lure
+data_source:
+  kind: official
+  origin_url: https://www.daiwa.com/tw/product/ybd2nlg
+status: published

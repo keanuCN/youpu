@@ -30,7 +30,7 @@ import {
 } from '@youpu/schema';
 import { ZodValidationPipe } from '../common/zod-validation.pipe';
 import { AdminGuard } from './admin.guard';
-import { AdminService } from './admin.service';
+import { ADMIN_PRODUCT_MISSING_FIELDS, AdminService, type AdminProductMissingField } from './admin.service';
 import { env } from '../config/env';
 
 @Controller('admin')
@@ -46,6 +46,21 @@ export class AdminController {
   @Get('dashboard')
   dashboard() {
     return this.admin.dashboard();
+  }
+
+  @Get('audit-logs')
+  auditLogs(
+    @Query('entity') entity?: string,
+    @Query('action') action?: string,
+    @Query('page') page?: string,
+    @Query('pageSize') pageSize?: string,
+  ) {
+    return this.admin.listAuditLogs({
+      entity: entity?.trim() || undefined,
+      action: action?.trim() || undefined,
+      page: parsePositiveInteger(page, 'page'),
+      pageSize: parsePositiveInteger(pageSize, 'pageSize'),
+    });
   }
 
   @Get('analytics')
@@ -89,6 +104,7 @@ export class AdminController {
     @Query('status') status?: string,
     @Query('categorySlug') categorySlug?: string,
     @Query('brandSlug') brandSlug?: string,
+    @Query('missing') missing?: string,
     @Query('page') page?: string,
     @Query('pageSize') pageSize?: string,
   ) {
@@ -97,6 +113,7 @@ export class AdminController {
       status: status === 'draft' || status === 'published' ? status : undefined,
       categorySlug: categorySlug?.trim() || undefined,
       brandSlug: brandSlug?.trim() || undefined,
+      missing: parseMissingField(missing),
       page: parsePositiveInteger(page, 'page'),
       pageSize: parsePositiveInteger(pageSize, 'pageSize'),
     });
@@ -164,4 +181,10 @@ function parsePositiveInteger(value: string | undefined, label: string): number 
     throw new BadRequestException(`${label} 必须是大于 0 的整数`);
   }
   return parsed;
+}
+
+function parseMissingField(value: string | undefined): AdminProductMissingField | undefined {
+  if (value === undefined || value === '') return undefined;
+  if ((ADMIN_PRODUCT_MISSING_FIELDS as readonly string[]).includes(value)) return value as AdminProductMissingField;
+  throw new BadRequestException(`missing 仅支持 ${ADMIN_PRODUCT_MISSING_FIELDS.join('|')}`);
 }

@@ -1,0 +1,22 @@
+# 官方规格样例：待补中国区价格、图片与有谱编辑评分
+slug: yonex-arcsaber-11-pro-2026
+category: badminton-racket
+brand: yonex
+model: ARCSABER 11 PRO
+year: 2026
+title: YONEX ARCSABER 11 PRO 2026
+specs:
+  weightClass: "3U/4U"
+  flex: stiff
+  maxTension: 29
+  frameMaterial: HM Graphite + POCKETING BOOSTER
+  shaftMaterial: HM Graphite + SUPER HMG + ULTRA PE FIBER
+  lengthNote: 加长 10mm
+  scenes:
+    - singles
+    - control
+  playerLevel: advanced
+data_source:
+  kind: official
+  origin_url: https://www.yonex.com/news/badminton/reinvented-arcsaber-series-for-decisive-control/
+status: published

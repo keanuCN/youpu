@@ -21,6 +21,7 @@ import {
   type AdminBrandRecord,
   type AdminCategoryRecord,
   type AdminAnalytics,
+  type AdminAuditLogResponse,
   type AdminDashboard,
   type AdminProductDetail,
   type AdminProductListResponse,
@@ -29,7 +30,7 @@ import {
   type AdminModerationRating,
 } from '../lib/api';
 
-type Section = 'dashboard' | 'products' | 'brands' | 'categories' | 'import' | 'analytics' | 'moderation';
+type Section = 'dashboard' | 'products' | 'brands' | 'categories' | 'import' | 'analytics' | 'moderation' | 'audit';
 type NoticeKind = 'success' | 'error' | 'info';
 type ImageKind = AdminProductInput['images'][number]['kind'];
 type DataSourceKind = NonNullable<AdminProductInput['dataSource']>['kind'];
@@ -42,6 +43,12 @@ interface Notice {
 interface ProductFilters {
   search: string;
   status: '' | 'draft' | 'published';
+  missing: '' | 'image' | 'price' | 'source' | 'scores';
+}
+
+interface AuditFilters {
+  entity: '' | 'product' | 'brand' | 'category' | 'report' | 'rating';
+  action: '' | 'create' | 'update' | 'publish' | 'hide' | 'moderate';
 }
 
 interface ImageDraft {
@@ -109,6 +116,7 @@ const navItems: Array<{ id: Section; index: string; label: string; note: string 
   { id: 'import', index: '04', label: '采集与导入', note: 'INGEST STATUS' },
   { id: 'analytics', index: '05', label: '数据分析', note: 'ANALYTICS' },
   { id: 'moderation', index: '06', label: '内容审核', note: 'COMMUNITY MODERATION' },
+  { id: 'audit', index: '07', label: '操作审计', note: 'AUDIT TRAIL' },
 ];
 
 const imageKinds: ImageKind[] = ['base', 'face', 'side', 'shape', 'field', 'card3x4'];
@@ -410,6 +418,50 @@ function eventLabel(name: string): string {
   return eventLabels[name] ?? name;
 }
 
+const auditEntityLabels: Record<string, string> = {
+  product: '产品',
+  brand: '品牌',
+  category: '类目',
+  report: '举报',
+  rating: '评论',
+};
+
+const auditActionLabels: Record<string, string> = {
+  create: '创建',
+  update: '更新',
+  publish: '发布',
+  hide: '下线',
+  moderate: '审核',
+};
+
+function auditEntityLabel(value: string): string {
+  return auditEntityLabels[value] ?? value;
+}
+
+function auditActionLabel(value: string): string {
+  return auditActionLabels[value] ?? value;
+}
+
+const qualityFieldLabels: Record<string, string> = {
+  image: '缺图片',
+  price: '缺价格',
+  source: '缺来源',
+  scores: '缺评分',
+};
+
+function qualityFieldLabel(value: string): string {
+  return qualityFieldLabels[value] ?? value;
+}
+
+function formatAuditSnapshot(value: unknown): string {
+  if (value === null || value === undefined) return '—';
+  try {
+    return JSON.stringify(value, null, 2) ?? '—';
+  } catch {
+    return String(value);
+  }
+}
+
 function schemaForCategory(category: AdminCategoryRecord | undefined): SpecSchema | null {
   if (!category?.specSchema) return null;
   const parsed = safeParseSpecSchema(category.specSchema);
@@ -451,11 +503,14 @@ export function AdminApp() {
   const [reports, setReports] = useState<AdminReport[]>([]);
   const [moderationRatings, setModerationRatings] = useState<AdminModerationRating[]>([]);
   const [moderationBusy, setModerationBusy] = useState(false);
+  const [auditLogs, setAuditLogs] = useState<AdminAuditLogResponse | null>(null);
+  const [auditFilters, setAuditFilters] = useState<AuditFilters>({ entity: '', action: '' });
+  const [auditBusy, setAuditBusy] = useState(false);
   const [products, setProducts] = useState<AdminProductListResponse | null>(null);
   const [brands, setBrands] = useState<AdminBrandRecord[]>([]);
   const [categories, setCategories] = useState<AdminCategoryRecord[]>([]);
-  const [filters, setFilters] = useState<ProductFilters>({ search: '', status: '' });
-  const [appliedFilters, setAppliedFilters] = useState<ProductFilters>({ search: '', status: '' });
+  const [filters, setFilters] = useState<ProductFilters>({ search: '', status: '', missing: '' });
+  const [appliedFilters, setAppliedFilters] = useState<ProductFilters>({ search: '', status: '', missing: '' });
   const [productForm, setProductForm] = useState<ProductFormState | null>(null);
   const [brandForm, setBrandForm] = useState<BrandFormState | null>(null);
   const [categoryForm, setCategoryForm] = useState<CategoryFormState | null>(null);
@@ -529,6 +584,7 @@ export function AdminApp() {
           `/products${buildProductQuery({
             search: appliedFilters.search.trim(),
             status: appliedFilters.status,
+            missing: appliedFilters.missing,
             page: 1,
             pageSize: 50,
           })}`,
@@ -569,6 +625,13 @@ export function AdminApp() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSection, sessionState, token]);
 
+  useEffect(() => {
+    if (sessionState !== 'signed-in' || !token || activeSection !== 'audit') return;
+    void refreshAuditLogs();
+    // 只在进入审计页或筛选条件变化时读取。
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeSection, auditFilters, sessionState, token]);
+
   async function refreshWorkspace(currentToken = token) {
     if (!currentToken) return;
     const [nextDashboard, nextProducts, nextBrands, nextCategories] = await Promise.all([
@@ -578,6 +641,7 @@ export function AdminApp() {
         `/products${buildProductQuery({
           search: appliedFilters.search.trim(),
           status: appliedFilters.status,
+          missing: appliedFilters.missing,
           page: 1,
           pageSize: 50,
         })}`,
@@ -617,6 +681,24 @@ export function AdminApp() {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
       setModerationBusy(false);
+    }
+  }
+
+  async function refreshAuditLogs() {
+    if (!token) return;
+    setAuditBusy(true);
+    try {
+      const query = new URLSearchParams();
+      if (auditFilters.entity) query.set('entity', auditFilters.entity);
+      if (auditFilters.action) query.set('action', auditFilters.action);
+      query.set('page', '1');
+      query.set('pageSize', '50');
+      const suffix = query.toString();
+      setAuditLogs(await adminFetch<AdminAuditLogResponse>(token, `/audit-logs?${suffix}`));
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setAuditBusy(false);
     }
   }
 
@@ -830,6 +912,14 @@ export function AdminApp() {
     );
   }
 
+  function openMissingProducts(missing: Exclude<ProductFilters['missing'], ''>) {
+    const nextFilters: ProductFilters = { search: '', status: '', missing };
+    setFilters(nextFilters);
+    setAppliedFilters(nextFilters);
+    setActiveSection('products');
+    setNotice(null);
+  }
+
   function renderDashboard() {
     const metrics = dashboard?.metrics;
     return (
@@ -847,6 +937,32 @@ export function AdminApp() {
           <Metric label="启用品牌" value={metrics?.brands ?? '—'} detail="BRAND INDEX" />
           <Metric label="启用类目" value={metrics?.categories ?? '—'} detail="SCHEMA FAMILIES" />
         </div>
+        <section className="data-panel quality-overview-panel">
+          <PanelHeader eyebrow="DATA QUALITY" title="内容补齐队列" meta="CATALOG QUALITY" />
+          <div className="quality-overview-grid">
+            <button type="button" className="quality-overview-item" onClick={() => openMissingProducts('image')}>
+              <span>缺图片</span>
+              <strong>{metrics?.dataQuality.noVisualAsset ?? '—'}</strong>
+              <small>没有封面或产品图</small>
+            </button>
+            <button type="button" className="quality-overview-item" onClick={() => openMissingProducts('price')}>
+              <span>缺价格</span>
+              <strong>{metrics?.dataQuality.noPrice ?? '—'}</strong>
+              <small>最低价和最高价都为空</small>
+            </button>
+            <button type="button" className="quality-overview-item" onClick={() => openMissingProducts('source')}>
+              <span>缺来源</span>
+              <strong>{metrics?.dataQuality.noSource ?? '—'}</strong>
+              <small>没有来源留痕</small>
+            </button>
+            <button type="button" className="quality-overview-item" onClick={() => openMissingProducts('scores')}>
+              <span>缺编辑评分</span>
+              <strong>{metrics?.dataQuality.noEditorialScores ?? '—'}</strong>
+              <small>没有编辑分项评分</small>
+            </button>
+          </div>
+          <p className="quality-overview-note">点击任一项进入产品资料并筛选待补记录；“缺图片”只统计没有封面和产品图的产品。</p>
+        </section>
         <div className="dashboard-grid">
           <section className="data-panel">
             <PanelHeader eyebrow="RECENT ACTIVITY" title="最近更新" meta="TOP 5" />
@@ -869,6 +985,7 @@ export function AdminApp() {
                       createdAt: product.updatedAt,
                       imageCount: 0,
                       coverImage: null,
+                      quality: { missing: [] },
                     });
                   }}>
                     <span className="activity-code">{product.status === 'published' ? 'PUB' : 'DRF'}</span>
@@ -886,8 +1003,8 @@ export function AdminApp() {
             <div className="boundary-list">
               <BoundaryItem state="READY" title="产品 / 品牌 / 类目 CRUD" detail="共享 schema 校验，产品支持草稿与发布状态。" />
               <BoundaryItem state="READY" title="动态参数表单" detail="字段来自类目的 spec_schema，不重复维护字段定义。" />
-              <BoundaryItem state="MANUAL" title="图片上传" detail="当前录入图片 URL；COS 上传与裁切留到后续版本。" />
-              <BoundaryItem state="NEXT" title="账号与细粒度审计" detail="M2 使用单一 Bearer 管理令牌，多账号权限属于后续版本。" />
+              <BoundaryItem state="MANUAL" title="图片上传" detail="当前录入图片 URL；质量筛选已可用，COS 上传与裁切留到后续版本。" />
+              <BoundaryItem state="READY" title="操作审计基础版" detail="后台变更会留下操作人、动作和前后快照；多账号权限属于后续版本。" />
             </div>
           </section>
         </div>
@@ -907,6 +1024,7 @@ export function AdminApp() {
         <form className="filter-bar" onSubmit={(event) => { event.preventDefault(); setAppliedFilters({ ...filters }); }}>
           <label className="filter-search"><span>检索</span><input value={filters.search} onChange={(event) => setFilters((current) => ({ ...current, search: event.target.value }))} placeholder="按标题、型号或 slug 搜索" /></label>
           <label className="filter-select"><span>状态</span><select value={filters.status} onChange={(event) => setFilters((current) => ({ ...current, status: event.target.value as ProductFilters['status'] }))}><option value="">全部状态</option><option value="draft">草稿</option><option value="published">已发布</option></select></label>
+          <label className="filter-select"><span>待补数据</span><select value={filters.missing} onChange={(event) => setFilters((current) => ({ ...current, missing: event.target.value as ProductFilters['missing'] }))}><option value="">全部资料</option><option value="image">缺图片</option><option value="price">缺价格</option><option value="source">缺来源</option><option value="scores">缺编辑评分</option></select></label>
           <button className="button" type="submit">应用筛选</button>
           <span className="filter-meta">{products ? `共 ${products.total} 条 / 第 ${products.page} 页` : '读取中……'}</span>
         </form>
@@ -914,14 +1032,15 @@ export function AdminApp() {
           <PanelHeader eyebrow="PRODUCT RECORDS" title="产品清单" meta={products ? `${products.items?.length ?? 0} LOADED` : 'LOADING'} />
           <div className="table-wrap">
             <table className="data-table product-table">
-              <thead><tr><th>产品</th><th>品牌</th><th>类目</th><th>价格</th><th>状态</th><th>更新</th><th /></tr></thead>
+              <thead><tr><th>产品</th><th>品牌</th><th>类目</th><th>价格</th><th>资料状态</th><th>状态</th><th>更新</th><th /></tr></thead>
               <tbody>
                 {products?.items?.map((product) => (
                   <tr key={product.id}>
-                    <td><div className="record-title"><span className="record-mark">{product.coverImage ? 'IMG' : '—'}</span><span><strong>{product.title}</strong><small>{product.model} · {product.slug}</small></span></div></td>
+                    <td><div className="record-title"><span className="record-mark">{product.quality.missing.includes('image') ? '—' : 'IMG'}</span><span><strong>{product.title}</strong><small>{product.model} · {product.slug}</small></span></div></td>
                     <td>{product.brand.nameCn || product.brand.name}<small className="table-sub">{product.brand.slug}</small></td>
                     <td>{product.category.name}<small className="table-sub">{product.category.slug}</small></td>
                     <td><data>{formatPrice(product)}</data></td>
+                    <td>{product.quality.missing.length ? <div className="quality-tags">{product.quality.missing.map((field) => <span className="quality-tag" key={field}>{qualityFieldLabel(field)}</span>)}</div> : <span className="quality-ok">资料完整</span>}</td>
                     <td><StatusBadge status={product.status} /></td>
                     <td><time className="table-sub">{formatDate(product.updatedAt)}</time></td>
                     <td><button className="text-button" onClick={() => void openProduct(product)} disabled={busyAction === `product:${product.id}`}>{busyAction === `product:${product.id}` ? '读取中' : '编辑 →'}</button></td>
@@ -1142,6 +1261,29 @@ export function AdminApp() {
     );
   }
 
+  function renderAuditLogs() {
+    const logs = auditLogs?.items ?? [];
+    return (
+      <>
+        <SectionHeader
+          index="07 / AUDIT TRAIL"
+          title="操作审计"
+          description="记录后台资料变更的操作人、时间、对象和前后快照；用于回溯误改，不记录登录令牌等敏感信息。"
+          action={<button className="button" type="button" onClick={() => void refreshAuditLogs()} disabled={auditBusy}>{auditBusy ? '读取中……' : '刷新日志'}</button>}
+        />
+        <div className="filter-bar audit-filter-bar">
+          <label className="filter-select"><span>对象</span><select value={auditFilters.entity} onChange={(event) => setAuditFilters((current) => ({ ...current, entity: event.target.value as AuditFilters['entity'] }))}><option value="">全部对象</option><option value="product">产品</option><option value="brand">品牌</option><option value="category">类目</option><option value="report">举报</option><option value="rating">评论</option></select></label>
+          <label className="filter-select"><span>动作</span><select value={auditFilters.action} onChange={(event) => setAuditFilters((current) => ({ ...current, action: event.target.value as AuditFilters['action'] }))}><option value="">全部动作</option><option value="create">创建</option><option value="update">更新</option><option value="publish">发布</option><option value="hide">下线</option><option value="moderate">审核</option></select></label>
+          <span className="filter-meta">{auditLogs ? `共 ${auditLogs.total} 条 / 当前 ${logs.length} 条` : '读取中……'}</span>
+        </div>
+        <section className="data-panel table-panel">
+          <PanelHeader eyebrow="AUDIT TRAIL" title="后台操作记录" meta={auditLogs ? `${logs.length} LOADED` : 'LOADING'} />
+          {logs.length ? <div className="table-wrap"><table className="data-table audit-table"><thead><tr><th>时间</th><th>操作人</th><th>对象</th><th>动作</th><th>前后快照</th></tr></thead><tbody>{logs.map((log) => <tr key={log.id}><td><time className="table-sub audit-time">{formatDate(log.createdAt)}</time><small className="table-sub">#{log.id}</small></td><td><strong>{log.actor.nickname}</strong><small className="table-sub">{log.actor.phone || log.actor.email || log.actor.id}</small></td><td><strong>{auditEntityLabel(log.entity)}</strong><small className="table-sub">{log.entityId || '全局操作'}</small></td><td><strong>{auditActionLabel(log.action)}</strong><small className="table-sub">{log.action}</small></td><td><details className="audit-details"><summary>查看快照</summary><div className="audit-snapshots"><div><span>修改前</span><pre>{formatAuditSnapshot(log.before)}</pre></div><div><span>修改后</span><pre>{formatAuditSnapshot(log.after)}</pre></div></div></details></td></tr>)}</tbody></table></div> : <EmptyState title="暂无审计记录" detail="后台发生产品、品牌、类目或审核状态变更后，会在这里留下记录。" />}
+        </section>
+      </>
+    );
+  }
+
   function renderContent() {
     if (activeSection === 'products') return renderProducts();
     if (activeSection === 'brands') return renderBrands();
@@ -1149,6 +1291,7 @@ export function AdminApp() {
     if (activeSection === 'import') return renderImport();
     if (activeSection === 'analytics') return renderAnalytics();
     if (activeSection === 'moderation') return renderModeration();
+    if (activeSection === 'audit') return renderAuditLogs();
     return renderDashboard();
   }
 

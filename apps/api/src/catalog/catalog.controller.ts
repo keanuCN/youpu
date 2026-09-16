@@ -23,7 +23,14 @@ export class CatalogController {
     @Query('sort') sort?: string,
     @Query('page') page?: string,
     @Query('pageSize') pageSize?: string,
+    @Query('ids') ids?: string,
   ) {
+    if (ids?.trim()) {
+      const refs = [...new Set(ids.split(',').map((item) => item.trim()).filter(Boolean))];
+      if (refs.length > 4) throw new BadRequestException('一次最多对比 4 件产品');
+      return this.catalog.getProductsByRefs(refs);
+    }
+
     const parsedSort = (sort ?? 'hot') as ProductSort;
     if (!PRODUCT_SORTS.includes(parsedSort)) {
       throw new BadRequestException(`sort 仅支持 ${PRODUCT_SORTS.join('|')}`);

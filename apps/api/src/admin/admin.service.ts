@@ -2,6 +2,7 @@ import {
   BadRequestException,
   ConflictException,
   Injectable,
+  Logger,
   NotFoundException,
 } from '@nestjs/common';
 import {
@@ -31,6 +32,7 @@ import { toJsonInput } from '../common/json';
 import { uuidv7 } from '../common/uuid';
 import { RedisService } from '../common/redis.module';
 import { ElasticService } from '../search/elastic.service';
+import { env } from '../config/env';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const chinaDateFormatter = new Intl.DateTimeFormat('en-US', {
@@ -79,20 +81,46 @@ interface RecentAnalyticsEventRow {
   created_at: Date;
 }
 
+interface DashboardQualityRow {
+  no_visual_asset: number;
+  no_price: number;
+  no_source: number;
+  no_editorial_scores: number;
+}
+
 export interface AdminProductListQuery {
   search?: string;
   status?: 'draft' | 'published';
   categorySlug?: string;
   brandSlug?: string;
+  missing?: AdminProductMissingField;
   page?: number;
   pageSize?: number;
 }
+
+export const ADMIN_PRODUCT_MISSING_FIELDS = ['image', 'price', 'source', 'scores'] as const;
+export type AdminProductMissingField = (typeof ADMIN_PRODUCT_MISSING_FIELDS)[number];
+
+export interface AdminAuditLogQuery {
+  entity?: string;
+  action?: string;
+  page?: number;
+  pageSize?: number;
+}
+
+const LOCAL_AUDIT_ACTOR_EMAIL = 'admin@youpu.local';
 
 function chinaDateKey(date: Date): string {
   const parts = Object.fromEntries(
     chinaDateFormatter.formatToParts(date).map((part) => [part.type, part.value]),
   );
   return `${parts.year}-${parts.month}-${parts.day}`;
+}
+
+function auditSnapshot(value: unknown): unknown {
+  return JSON.parse(
+    JSON.stringify(value, (_key, nested) => (typeof nested === 'bigint' ? nested.toString() : nested)),
+  );
 }
 
 function buildDailySeries(days: number, rows: Map<string, DailyAnalyticsRow>) {
@@ -117,6 +145,9 @@ function roundMb(bytes: number): number {
 
 @Injectable()
 export class AdminService {
+  private readonly logger = new Logger(AdminService.name);
+  private auditActorPromise?: Promise<string>;
+
   constructor(
     private readonly prisma: PrismaService,
     private readonly redis: RedisService,
@@ -124,7 +155,7 @@ export class AdminService {
   ) {}
 
   async dashboard() {
-    const [products, publishedProducts, drafts, brands, categories, recentProducts] = await this.prisma.$transaction([
+    const [products, publishedProducts, drafts, brands, categories, recentProducts, qualityRows] = await this.prisma.$transaction([
       this.prisma.product.count(),
       this.prisma.product.count({ where: { status: 'published' } }),
       this.prisma.product.count({ where: { status: 'draft' } }),
@@ -145,13 +176,82 @@ export class AdminService {
           category: { select: { slug: true, name: true } },
         },
       }),
+      this.prisma.$queryRaw<DashboardQualityRow[]>`
+        SELECT
+          COUNT(*) FILTER (
+            WHERE NULLIF(BTRIM(cover_url), '') IS NULL
+              AND NOT EXISTS (SELECT 1 FROM product_image pi WHERE pi.product_id = product.id)
+          )::int AS no_visual_asset,
+          COUNT(*) FILTER (WHERE price_min IS NULL AND price_max IS NULL)::int AS no_price,
+          COUNT(*) FILTER (WHERE NULLIF(BTRIM(data_source), '') IS NULL)::int AS no_source,
+          COUNT(*) FILTER (WHERE editorial_scores IS NULL)::int AS no_editorial_scores
+        FROM product
+      `,
     ]);
 
+    const quality = qualityRows[0] ?? {
+      no_visual_asset: 0,
+      no_price: 0,
+      no_source: 0,
+      no_editorial_scores: 0,
+    };
+
     return {
-      metrics: { products, publishedProducts, drafts, brands, categories },
+      metrics: {
+        products,
+        publishedProducts,
+        drafts,
+        brands,
+        categories,
+        dataQuality: {
+          noVisualAsset: Number(quality.no_visual_asset),
+          noPrice: Number(quality.no_price),
+          noSource: Number(quality.no_source),
+          noEditorialScores: Number(quality.no_editorial_scores),
+        },
+      },
       recentProducts: recentProducts.map((product) => ({
         ...product,
         updatedAt: product.updatedAt.toISOString(),
+      })),
+    };
+  }
+
+  async listAuditLogs(params: AdminAuditLogQuery = {}) {
+    const page = Math.max(1, params.page ?? 1);
+    const pageSize = Math.min(100, Math.max(1, params.pageSize ?? 50));
+    const where: Prisma.AuditLogWhereInput = {};
+    if (params.entity) where.entity = params.entity;
+    if (params.action) where.action = params.action;
+
+    const [total, rows] = await this.prisma.$transaction([
+      this.prisma.auditLog.count({ where }),
+      this.prisma.auditLog.findMany({
+        where,
+        orderBy: [{ createdAt: 'desc' }, { id: 'desc' }],
+        skip: (page - 1) * pageSize,
+        take: pageSize,
+        include: {
+          actor: { select: { id: true, nickname: true, email: true, phone: true, role: true } },
+        },
+      }),
+    ]);
+
+    return {
+      total,
+      page,
+      pageSize,
+      items: rows.map((row) => ({
+        id: row.id.toString(),
+        action: row.action,
+        entity: row.entity,
+        entityId: row.entityId,
+        before: row.before ?? null,
+        after: row.after ?? null,
+        // Prisma 对 Unsupported("inet") 不提供读取字段；当前单令牌管理层也未传递请求 IP。
+        ip: null,
+        createdAt: row.createdAt.toISOString(),
+        actor: row.actor,
       })),
     };
   }
@@ -317,11 +417,19 @@ export class AdminService {
     const body = adminModerationPatchSchema.parse(input);
     const existing = await this.prisma.report.findUnique({ where: { id } });
     if (!existing) throw new NotFoundException(`举报不存在：${id}`);
-    return this.prisma.report.update({
+    const updated = await this.prisma.report.update({
       where: { id },
       data: { ...(body.status === undefined ? {} : { status: body.status }) },
       select: { id: true, targetType: true, targetId: true, reason: true, status: true, createdAt: true },
     });
+    await this.recordAudit({
+      action: 'moderate',
+      entity: 'report',
+      entityId: id,
+      before: { status: existing.status },
+      after: { status: updated.status },
+    });
+    return updated;
   }
 
   async listRatings(status?: string) {
@@ -349,15 +457,23 @@ export class AdminService {
 
   async updateRatingStatus(id: string, input: AdminRatingModerationPatch) {
     const body = adminRatingModerationPatchSchema.parse(input);
-    const existing = await this.prisma.rating.findUnique({ where: { id }, select: { productId: true } });
+    const existing = await this.prisma.rating.findUnique({ where: { id }, select: { productId: true, status: true } });
     if (!existing) throw new NotFoundException(`评分不存在：${id}`);
-    return this.prisma.$transaction(async (tx) => {
+    const result = await this.prisma.$transaction(async (tx) => {
       const rating = await tx.rating.update({ where: { id }, data: { ...(body.status === undefined ? {} : { status: body.status }) } });
       await tx.outboxEvent.create({
         data: { aggregate: 'product', aggregateId: existing.productId, type: 'rating.changed', payload: { reason: 'admin.moderation' } },
       });
       return { id: rating.id, status: rating.status, productId: rating.productId };
     });
+    await this.recordAudit({
+      action: 'moderate',
+      entity: 'rating',
+      entityId: id,
+      before: { status: existing.status, productId: existing.productId },
+      after: { status: result.status, productId: result.productId },
+    });
+    return result;
   }
 
   private async checkDatabase(): Promise<boolean> {
@@ -385,6 +501,16 @@ export class AdminService {
     if (params.status) where.status = params.status;
     if (params.categorySlug) where.category = { slug: params.categorySlug };
     if (params.brandSlug) where.brand = { slug: params.brandSlug };
+    if (params.missing === 'image') {
+      where.coverUrl = null;
+      where.images = { none: {} };
+    }
+    if (params.missing === 'price') {
+      where.priceMin = null;
+      where.priceMax = null;
+    }
+    if (params.missing === 'source') where.dataSource = null;
+    if (params.missing === 'scores') where.editorialScores = { equals: Prisma.DbNull };
     if (params.search) {
       where.OR = [
         { slug: { contains: params.search, mode: 'insensitive' } },
@@ -488,7 +614,9 @@ export class AdminService {
         });
         return created;
       });
-      return this.getProduct(product.id);
+      const result = await this.getProduct(product.id);
+      await this.recordAudit({ action: 'create', entity: 'product', entityId: product.id, after: result });
+      return result;
     } catch (error) {
       this.throwPrismaConflict(error, '产品 slug 或品牌/型号/年份已存在');
       throw error;
@@ -586,7 +714,15 @@ export class AdminService {
           },
         });
       });
-      return this.getProduct(id);
+      const result = await this.getProduct(id);
+      const action =
+        body.status === 'published' && existing.status !== 'published'
+          ? 'publish'
+          : body.status === 'draft' && existing.status === 'published'
+            ? 'hide'
+            : 'update';
+      await this.recordAudit({ action, entity: 'product', entityId: id, before: existing, after: result });
+      return result;
     } catch (error) {
       this.throwPrismaConflict(error, '产品 slug 或品牌/型号/年份已存在');
       throw error;
@@ -604,7 +740,7 @@ export class AdminService {
   async createBrand(input: AdminBrandInput) {
     const body = adminBrandInputSchema.parse(input);
     try {
-      return await this.prisma.brand.create({
+      const result = await this.prisma.brand.create({
         data: {
           id: uuidv7(),
           slug: body.slug,
@@ -617,6 +753,8 @@ export class AdminService {
           status: body.status,
         },
       });
+      await this.recordAudit({ action: 'create', entity: 'brand', entityId: result.id, after: result });
+      return result;
     } catch (error) {
       this.throwPrismaConflict(error, '品牌 slug 已存在');
       throw error;
@@ -625,9 +763,9 @@ export class AdminService {
 
   async updateBrand(id: string, input: AdminBrandPatch) {
     const body = adminBrandPatchSchema.parse(input);
-    await this.requireBrand(id);
+    const existing = await this.requireBrand(id);
     try {
-      return await this.prisma.brand.update({
+      const result = await this.prisma.brand.update({
         where: { id },
         data: {
           ...(body.slug === undefined ? {} : { slug: body.slug }),
@@ -640,6 +778,8 @@ export class AdminService {
           ...(body.status === undefined ? {} : { status: body.status }),
         },
       });
+      await this.recordAudit({ action: 'update', entity: 'brand', entityId: id, before: existing, after: result });
+      return result;
     } catch (error) {
       this.throwPrismaConflict(error, '品牌 slug 已存在');
       throw error;
@@ -676,7 +816,7 @@ export class AdminService {
     const level = await this.levelForParent(body.parentId);
     if (body.specSchema !== undefined && body.specSchema !== null) this.parseCategorySchema(body.specSchema);
     try {
-      return await this.prisma.category.create({
+      const result = await this.prisma.category.create({
         data: {
           id: uuidv7(),
           parentId: body.parentId,
@@ -693,6 +833,8 @@ export class AdminService {
           status: body.status,
         },
       });
+      await this.recordAudit({ action: 'create', entity: 'category', entityId: result.id, after: result });
+      return result;
     } catch (error) {
       this.throwPrismaConflict(error, '类目 slug 已存在');
       throw error;
@@ -726,14 +868,87 @@ export class AdminService {
               }),
           ...(body.status === undefined ? {} : { status: body.status }),
       };
-      return await this.prisma.category.update({
+      const result = await this.prisma.category.update({
         where: { id },
         data: categoryUpdateData,
       });
+      await this.recordAudit({ action: 'update', entity: 'category', entityId: id, before: existing, after: result });
+      return result;
     } catch (error) {
       this.throwPrismaConflict(error, '类目 slug 已存在');
       throw error;
     }
+  }
+
+  private async recordAudit(input: {
+    action: string;
+    entity: string;
+    entityId?: string;
+    before?: unknown;
+    after?: unknown;
+  }): Promise<void> {
+    try {
+      const actorId = await this.getAuditActorId();
+      await this.prisma.auditLog.create({
+        data: {
+          actorId,
+          action: input.action,
+          entity: input.entity,
+          entityId: input.entityId,
+          before:
+            input.before === undefined
+              ? undefined
+              : input.before === null
+                ? Prisma.JsonNull
+                : toJsonInput(auditSnapshot(input.before)),
+          after:
+            input.after === undefined
+              ? undefined
+              : input.after === null
+                ? Prisma.JsonNull
+                : toJsonInput(auditSnapshot(input.after)),
+        },
+      });
+    } catch (error) {
+      // 审计不能让本地已经完成的资料写入回滚；生产接入正式 actor 后再提升为强制闸门。
+      this.logger.warn(`审计日志写入失败：${(error as Error).message}`);
+    }
+  }
+
+  private getAuditActorId(): Promise<string> {
+    this.auditActorPromise ??= this.resolveAuditActor();
+    return this.auditActorPromise;
+  }
+
+  private async resolveAuditActor(): Promise<string> {
+    if (env.ADMIN_ACTOR_ID) {
+      const actor = await this.prisma.account.findUnique({
+        where: { id: env.ADMIN_ACTOR_ID },
+        select: { id: true, role: true, status: true },
+      });
+      if (!actor || !['editor', 'admin'].includes(actor.role) || actor.status !== 'active') {
+        throw new Error('ADMIN_ACTOR_ID 未指向启用中的 editor/admin 账号');
+      }
+      return actor.id;
+    }
+
+    if (env.NODE_ENV === 'production') {
+      throw new Error('生产环境必须配置 ADMIN_ACTOR_ID，才能写入审计日志');
+    }
+
+    const actor = await this.prisma.account.upsert({
+      where: { email: LOCAL_AUDIT_ACTOR_EMAIL },
+      update: { nickname: '本地后台管理员', role: 'admin', status: 'active' },
+      create: {
+        id: uuidv7(),
+        email: LOCAL_AUDIT_ACTOR_EMAIL,
+        nickname: '本地后台管理员',
+        role: 'admin',
+        status: 'active',
+      },
+      select: { id: true },
+    });
+    return actor.id;
   }
 
   private validateProductPayload(
@@ -863,6 +1078,14 @@ export class AdminService {
       brand: row.brand,
       category: row.category,
       imageCount: images.length,
+      quality: {
+        missing: [
+          !row.coverUrl && images.length === 0 ? 'image' : null,
+          row.priceMin === null && row.priceMax === null ? 'price' : null,
+          !row.dataSource ? 'source' : null,
+          row.editorialScores == null ? 'scores' : null,
+        ].filter((field): field is AdminProductMissingField => field !== null),
+      },
       ...(detail ? { images, specSchema: row.category?.specSchema ?? null } : { coverImage: images[0] ?? null }),
     };
   }

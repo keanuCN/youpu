@@ -1,0 +1,22 @@
+# 官方规格样例：海外规格，待补中国区价格、图片与有谱编辑评分
+slug: shimano-limitless-lmt862sp26ml-2024
+category: casting-rod
+brand: shimano
+model: LIMITLESS LMT862SP26ML
+year: 2024
+title: Shimano LIMITLESS LMT862SP26ML 2024
+specs:
+  length: 2.59
+  sections: 2
+  lureWeight: "5-21 g"
+  lineWeight: "2-6 kg"
+  power: medium-light
+  rodType: spinning
+  blankMaterial: 30T / 40T Carbon
+  scenes:
+    - freshwater
+    - light-lure
+data_source:
+  kind: official
+  origin_url: https://fish.shimano.com/en-NZ/product/rods/freshwater/limitless_freshwater_rods.html
+status: published

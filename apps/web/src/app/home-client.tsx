@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { ArrowRight, Compass, Trophy } from "lucide-react";
 import { GearCard, GearRow } from "@/components/gear/gear-card";
 import { SectionHead } from "@/components/layout/section-head";
@@ -10,8 +11,13 @@ import { GEAR, getGear } from "@/data/boards";
 import { IMG } from "@/data/assets";
 import { CATEGORY_TREE, SEASON, SNOWBOARD } from "@/data/categories";
 import { hotReviews, rankRows } from "@/lib/domain";
+import { getCategoryProducts } from "@/lib/content";
 import { timeAgo } from "@/lib/format";
 import { usePersisted } from "@/lib/store";
+
+const CATEGORY_LEAVES = CATEGORY_TREE.flatMap((root) =>
+  (root.children ?? []).flatMap((domain) => domain.children ?? []),
+);
 
 export default function HomePage() {
   const snapshot = usePersisted();
@@ -127,7 +133,7 @@ function Cover() {
           <div className="dot-grid pointer-events-none absolute inset-0" />
           <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-3 bg-gradient-to-t from-foreground/80 to-transparent p-5 sm:p-8">
             <p className="mono-label text-background/80">FIELD TEST · 崇礼 / 可可托海 / 将军山</p>
-            <p className="mono-data text-[12px] text-background/80 tnum">{GEAR.length} 件在档</p>
+            <p className="mono-data text-[12px] text-background/80 tnum">单板 {GEAR.length} 件在档</p>
           </div>
         </div>
 
@@ -162,7 +168,7 @@ function Cover() {
 
           <dl className="mt-10 grid grid-cols-3 border-t border-border pt-6">
             {[
-              { k: "在档装备", v: GEAR.length, u: "件" },
+              { k: "单板样本", v: GEAR.length, u: "件" },
               { k: "评分维度", v: SNOWBOARD.scoreDims.length, u: "维" },
               { k: "实测评论", v: 24, u: "条" },
             ].map((s) => (
@@ -182,14 +188,28 @@ function Cover() {
 }
 
 function CategoryEntries() {
-  const leaves = CATEGORY_TREE.flatMap((r) => r.children ?? []);
+  const [categoryCounts, setCategoryCounts] = useState<Record<string, number>>({ snowboard: GEAR.length });
+
+  useEffect(() => {
+    let cancelled = false;
+    const liveSlugs = CATEGORY_LEAVES.filter((category) => category.status === "live").map((category) => category.slug);
+    void Promise.all(
+      liveSlugs.map(async (slug) => [slug, (await getCategoryProducts(slug)).length] as const),
+    ).then((entries) => {
+      if (!cancelled) setCategoryCounts(Object.fromEntries(entries));
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   return (
     <section id="categories" className="reveal mt-16 scroll-mt-32">
-      <SectionHead index="00" title="品类入口" titleEn="Categories" desc="单板已开档；其余品类共用同一套模板引擎，配置就绪即上线。" />
+      <SectionHead index="00" title="品类入口" titleEn="Categories" desc="已开档品类可直接浏览；其余品类共用同一套模板引擎，配置就绪即上线。" />
       <div className="grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
-        {leaves.map((c) => {
+        {CATEGORY_LEAVES.map((c) => {
           const live = c.status === "live";
-          const count = live ? GEAR.length : 0;
+          const count = categoryCounts[c.slug];
           return (
             <Link
               key={c.slug}
@@ -203,7 +223,7 @@ function CategoryEntries() {
               </div>
               <div className="mt-6 flex items-end justify-between">
                 <span className="mono-data text-[12px] tnum opacity-70">
-                  {live ? `${count} 件在档` : "配置中"}
+                  {live ? (count === undefined ? "读取中" : `${count} 件在档`) : "配置中"}
                 </span>
                 <span
                   className={

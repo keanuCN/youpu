@@ -28,6 +28,12 @@ export interface AdminDashboard {
     drafts: number;
     brands: number;
     categories: number;
+    dataQuality: {
+      noVisualAsset: number;
+      noPrice: number;
+      noSource: number;
+      noEditorialScores: number;
+    };
   };
   recentProducts: Array<{
     id: string;
@@ -40,6 +46,31 @@ export interface AdminDashboard {
     brand: { slug: string; name: string; nameCn: string | null };
     category: { slug: string; name: string };
   }>;
+}
+
+export interface AdminAuditLog {
+  id: string;
+  action: string;
+  entity: string;
+  entityId: string | null;
+  before: unknown;
+  after: unknown;
+  ip: string | null;
+  createdAt: string;
+  actor: {
+    id: string;
+    nickname: string;
+    email: string | null;
+    phone: string | null;
+    role: string;
+  };
+}
+
+export interface AdminAuditLogResponse {
+  total: number;
+  page: number;
+  pageSize: number;
+  items: AdminAuditLog[];
 }
 
 export interface AdminAnalytics {
@@ -114,6 +145,9 @@ export interface AdminProductSummary {
     source: string | null;
     sortOrder: number;
   } | null;
+  quality: {
+    missing: Array<'image' | 'price' | 'source' | 'scores'>;
+  };
 }
 
 export interface AdminProductDetail extends Omit<AdminProductSummary, 'coverImage'> {
@@ -249,6 +283,7 @@ export function buildProductQuery(params: {
   status?: string;
   categorySlug?: string;
   brandSlug?: string;
+  missing?: string;
   page?: number;
   pageSize?: number;
 }): string {

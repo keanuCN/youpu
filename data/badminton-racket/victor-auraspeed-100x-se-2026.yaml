@@ -1,0 +1,20 @@
+# 官方规格样例：待补中国区价格、图片与有谱编辑评分
+slug: victor-auraspeed-100x-se-2026
+category: badminton-racket
+brand: victor
+model: AURASPEED 100X SE H
+year: 2026
+title: VICTOR AURASPEED 100X SE H 2026
+specs:
+  weightClass: "3U/4U"
+  maxTension: 29
+  frameMaterial: High Resilience Modulus Graphite + Nano Fortify TR
+  shaftMaterial: High Resilience Modulus Graphite + PYROFIL + 6.8 SHAFT
+  scenes:
+    - doubles
+    - speed
+  playerLevel: advanced
+data_source:
+  kind: official
+  origin_url: https://shop.au.victorsport.com/products/auraspeed-100x-se-h
+status: published

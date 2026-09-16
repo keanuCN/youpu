@@ -1,0 +1,20 @@
+# 官方规格样例：待补中国区价格、图片与有谱编辑评分
+slug: yonex-astrox-100-zz-2026
+category: badminton-racket
+brand: yonex
+model: ASTROX 100 ZZ
+year: 2026
+title: YONEX ASTROX 100 ZZ 2026
+specs:
+  weightClass: "3U/4U"
+  flex: extra-stiff
+  frameMaterial: HM Graphite + Namd + Tungsten + Black Micro Core
+  shaftMaterial: HM Graphite + Namd
+  scenes:
+    - singles
+    - attack
+  playerLevel: advanced
+data_source:
+  kind: official
+  origin_url: https://www.yonex.com/news/astrox-100-the-next-level-of-power-and-versatility/
+status: published

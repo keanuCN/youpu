@@ -159,7 +159,7 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
         kicker={category.issue}
         title={`${category.name}档案库`}
         titleEn={category.nameEn}
-        desc="按场景、硬度、价格与品牌筛选，四种排序对应四种决策方式：看热度、看新款、看评分、看它有多吃技术。"
+        desc={`按${category.filterTemplate.map((filter) => filter.label).join("、") || "结构化参数"}筛选，四种排序对应四种决策方式：看热度、看新款、看评分、看它有多吃技术。`}
         aside={
           <div className="text-right">
             <p className="mono-data text-[38px] leading-none tnum">{pool.length}</p>

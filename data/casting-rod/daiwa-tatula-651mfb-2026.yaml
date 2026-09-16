@@ -1,0 +1,24 @@
+# 官方规格样例：日区/海外规格，待补中国区价格、图片与有谱编辑评分
+slug: daiwa-tatula-651mfb-2026
+category: casting-rod
+brand: daiwa
+model: TATULA 651MFB
+year: 2026
+title: Daiwa TATULA 651MFB 2026
+specs:
+  length: 1.96
+  sections: 2
+  weight: 109
+  lureWeight: "5-21 g"
+  lineWeight: "8-16 lb"
+  power: medium
+  rodType: casting
+  blankMaterial: 碳纤维
+  carbonContent: 92
+  scenes:
+    - freshwater
+    - bass
+data_source:
+  kind: official
+  origin_url: https://www.daiwa.com/tw/product/ybd2nlg
+status: published

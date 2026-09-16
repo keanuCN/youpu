@@ -3,6 +3,7 @@ import type { AccountPatchInput } from '@youpu/schema';
 export interface AccountView {
   id: string;
   email: string | null;
+  phone: string | null;
   nickname: string;
   avatarUrl: string | null;
   riderProfile: Record<string, unknown>;

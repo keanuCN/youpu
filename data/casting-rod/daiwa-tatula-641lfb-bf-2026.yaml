@@ -1,0 +1,24 @@
+# 官方规格样例：日区/海外规格，待补中国区价格、图片与有谱编辑评分
+slug: daiwa-tatula-641lfb-bf-2026
+category: casting-rod
+brand: daiwa
+model: TATULA 641LFB-BF
+year: 2026
+title: Daiwa TATULA 641LFB-BF 2026
+specs:
+  length: 1.93
+  sections: 2
+  weight: 96
+  lureWeight: "1.8-11 g"
+  lineWeight: "5-12 lb"
+  power: light
+  rodType: casting
+  blankMaterial: 碳纤维
+  carbonContent: 91
+  scenes:
+    - freshwater
+    - finesse
+data_source:
+  kind: official
+  origin_url: https://www.daiwa.com/tw/product/ybd2nlg
+status: published

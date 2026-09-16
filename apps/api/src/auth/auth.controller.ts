@@ -2,11 +2,15 @@ import { Body, Controller, Get, HttpCode, Patch, Post, Req, UseGuards } from '@n
 import {
   accountPatchSchema,
   authLoginSchema,
+  authPhoneCodeSchema,
+  authPhoneLoginSchema,
   authRefreshSchema,
   authRegisterSchema,
   authResetPasswordSchema,
   type AccountPatchInput,
   type AuthLoginInput,
+  type AuthPhoneCodeInput,
+  type AuthPhoneLoginInput,
   type AuthRefreshInput,
   type AuthRegisterInput,
   type AuthResetPasswordInput,
@@ -35,6 +39,19 @@ export class AuthController {
     @Req() request: AuthRequest,
   ) {
     return this.auth.login(body, request);
+  }
+
+  @Post('phone/code')
+  requestPhoneCode(@Body(new ZodValidationPipe(authPhoneCodeSchema)) body: AuthPhoneCodeInput) {
+    return this.auth.requestPhoneCode(body);
+  }
+
+  @Post('phone/login')
+  phoneLogin(
+    @Body(new ZodValidationPipe(authPhoneLoginSchema)) body: AuthPhoneLoginInput,
+    @Req() request: AuthRequest,
+  ) {
+    return this.auth.phoneLogin(body, request);
   }
 
   @Post('refresh')

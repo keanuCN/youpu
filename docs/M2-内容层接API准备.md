@@ -64,7 +64,7 @@ pnpm --filter @youpu/api validate:data # 契约校验，不连库
    ES 上线后换成带分面的 `/api/products?filters=`（技术方案 §6 的筛选分面全部来自 ES，
    可筛字段 = spec_schema 中 `filter !== false` 的字段，含 `scenes` 与 `profileFamily`）。
 4. **首页**：高分榜 / 新品 → `/api/products?sort=rating|new`。
-5. **对比页**：需要补 `GET /api/products?ids=a,b,c`（M2 新端点，一次取多件）。
+5. **对比页**：`GET /api/products?ids=a,b,c` 已补齐，一次读取最多 4 件已发布产品详情；API 不可用时由前端回退内容包。
 6. **SEO 技术包**：✅ 已完成（2026-09-15，不依赖后端）——标题/描述模板、canonical 纪律、
    JSON-LD（Product + AggregateRating + BreadcrumbList + ItemList）、sitemap.xml、robots.txt、
    noindex 白名单（`/me`、`/auth`、筛选参数 URL），详情页 15 个档案静态预渲染。

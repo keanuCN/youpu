@@ -1,4 +1,5 @@
 import {
+  productCompareResponseSchema,
   productDetailSchema,
   productListResponseSchema,
   type ProductDetail,
@@ -229,5 +230,31 @@ export async function getProductDetail(id: string, options: ContentOptions = {})
     return mapProductDetail(response, fallback);
   } catch {
     return fallback;
+  }
+}
+
+/** 对比页批量读取 API 详情；API 不可用时保留本地内容包体验。 */
+export async function getCompareProducts(ids: string[], options: ContentOptions = {}): Promise<GearItem[]> {
+  const localItems = ids.map((id) => getGear(id)).filter((gear): gear is GearItem => !!gear);
+  if ((options.source ?? resolveContentSource()) === "pack" || ids.length === 0) return localItems;
+
+  const refs = ids.map((id) => {
+    const local = getGear(id);
+    return local ? slugForProduct(local) : id;
+  });
+
+  try {
+    const response = await requestJson(
+      `/api/products?ids=${refs.map((ref) => encodeURIComponent(ref)).join(",")}`,
+      productCompareResponseSchema,
+      options.fetcher ?? fetch,
+    );
+    const mapped = response.items.map((item) => mapProductDetail(item, findLocalGear(item)));
+    const bySlug = new Map(mapped.map((item) => [slugForProduct(item), item]));
+    return refs
+      .map((ref, index) => bySlug.get(ref) ?? localItems.find((item) => slugForProduct(item) === ref) ?? getGear(ids[index]!))
+      .filter((gear): gear is GearItem => !!gear);
+  } catch {
+    return localItems;
   }
 }

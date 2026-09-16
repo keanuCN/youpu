@@ -249,3 +249,290 @@
       - id: rocker-friendly
         when: "profile == 'rocker' && level == 'beginner'"
         template: "反拱板型：容错高、不易卡刃，适合新手建立信心"
+
+- slug: racket-sports
+  name: 球类
+  parent: sport
+  sort_order: 20
+
+- slug: badminton-racket
+  name: 羽毛球拍
+  parent: racket-sports
+  sort_order: 10
+  recommend_config:
+    weights:
+      playStyle: 0.4
+      level: 0.3
+      handling: 0.2
+      price: 0.1
+  spec_schema:
+    fields:
+      - key: weightClass
+        label: 重量等级
+        group: 重量与手感
+        type: enum
+        options:
+          - { value: "3U/4U", label: 3U / 4U }
+          - { value: 4U, label: 4U（约83g） }
+          - { value: 3U, label: 3U（约88g） }
+          - { value: 5U, label: 5U（约78g） }
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 10
+
+      - key: balance
+        label: 平衡取向
+        group: 重量与手感
+        type: enum
+        options:
+          - { value: head-heavy, label: 头重 }
+          - { value: even, label: 均衡 }
+          - { value: head-light, label: 头轻 }
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 20
+
+      - key: flex
+        label: 杆身硬度
+        group: 重量与手感
+        type: enum
+        options:
+          - { value: extra-stiff, label: 特硬 Extra Stiff }
+          - { value: stiff, label: 硬 Stiff }
+          - { value: medium, label: 中等 Medium }
+          - { value: hi-flex, label: 偏软 Hi-Flex }
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 30
+
+      - key: maxTension
+        label: 最高建议磅数
+        group: 穿线与结构
+        type: number
+        unit: lbs
+        min: 18
+        max: 40
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 110
+
+      - key: frameMaterial
+        label: 拍框材料
+        group: 穿线与结构
+        type: text
+        filter: false
+        compare: true
+        order: 120
+
+      - key: shaftMaterial
+        label: 中杆材料
+        group: 穿线与结构
+        type: text
+        filter: false
+        compare: true
+        order: 130
+
+      - key: lengthNote
+        label: 长度说明
+        group: 穿线与结构
+        type: text
+        filter: false
+        compare: true
+        order: 140
+
+      - key: stringPattern
+        label: 穿线建议
+        group: 穿线与结构
+        type: text
+        filter: false
+        compare: true
+        order: 150
+
+      - key: scenes
+        label: 使用取向
+        group: 使用取向
+        type: enum[]
+        options:
+          - { value: singles, label: 单打 }
+          - { value: doubles, label: 双打 }
+          - { value: attack, label: 进攻 }
+          - { value: control, label: 控制 }
+          - { value: speed, label: 速度 }
+        filter: multi
+        compare: true
+        order: 210
+
+      - key: playerLevel
+        label: 适合水平
+        group: 使用取向
+        type: enum
+        options:
+          - { value: beginner, label: 入门 }
+          - { value: intermediate, label: 中级 }
+          - { value: advanced, label: 进阶 }
+        filter: multi
+        compare: true
+        order: 220
+
+    rating_dimensions:
+      - { key: power, label: 杀球力量, weight: 0.2 }
+      - { key: control, label: 控球精度, weight: 0.2 }
+      - { key: speed, label: 挥拍速度, weight: 0.18 }
+      - { key: defense, label: 防守连贯, weight: 0.15 }
+      - { key: forgiveness, label: 容错度, weight: 0.12 }
+      - { key: value, label: 性价比, weight: 0.15 }
+
+- slug: fishing
+  name: 垂钓
+  parent: sport
+  sort_order: 30
+
+- slug: casting-rod
+  name: 路亚竿
+  parent: fishing
+  sort_order: 10
+  recommend_config:
+    weights:
+      technique: 0.4
+      level: 0.25
+      handling: 0.2
+      price: 0.15
+  spec_schema:
+    fields:
+      - key: length
+        label: 全长
+        group: 尺寸与负载
+        type: number
+        unit: m
+        min: 1
+        max: 5
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 10
+
+      - key: sections
+        label: 节数
+        group: 尺寸与负载
+        type: int
+        min: 1
+        max: 8
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 20
+
+      - key: weight
+        label: 标准自重
+        group: 尺寸与负载
+        type: number
+        unit: g
+        min: 20
+        max: 500
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 30
+
+      - key: lureWeight
+        label: 路亚重量
+        group: 尺寸与负载
+        type: text
+        filter: false
+        compare: true
+        order: 40
+
+      - key: lineWeight
+        label: 适用钓线
+        group: 尺寸与负载
+        type: text
+        filter: false
+        compare: true
+        order: 50
+
+      - key: power
+        label: 调性强度
+        group: 调性与结构
+        type: enum
+        options:
+          - { value: ultralight, label: 超轻 UL }
+          - { value: light, label: 轻 L }
+          - { value: medium-light, label: 中轻 ML }
+          - { value: medium, label: 中 M }
+          - { value: medium-heavy, label: 中重 MH }
+          - { value: heavy, label: 重 H }
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 110
+
+      - key: action
+        label: 先调
+        group: 调性与结构
+        type: enum
+        options:
+          - { value: fast, label: 快调 Fast }
+          - { value: moderate-fast, label: 中快调 Moderate Fast }
+          - { value: moderate, label: 慢调 Moderate }
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 120
+
+      - key: rodType
+        label: 轮座类型
+        group: 调性与结构
+        type: enum
+        options:
+          - { value: spinning, label: 直柄纺车 }
+          - { value: casting, label: 枪柄水滴 }
+          - { value: telescopic, label: 振出 / 伸缩 }
+        filter: multi
+        compare: true
+        order: 130
+
+      - key: blankMaterial
+        label: 竿胚材料
+        group: 调性与结构
+        type: text
+        filter: false
+        compare: true
+        order: 140
+
+      - key: carbonContent
+        label: 碳纤维含量
+        group: 调性与结构
+        type: number
+        unit: "%"
+        min: 0
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 150
+
+      - key: scenes
+        label: 使用水域
+        group: 使用取向
+        type: enum[]
+        options:
+          - { value: freshwater, label: 淡水 }
+          - { value: bass, label: 鲈鱼 }
+          - { value: finesse, label: 精细钓法 }
+          - { value: light-lure, label: 轻饵 }
+          - { value: heavy-lure, label: 重饵 }
+        filter: multi
+        compare: true
+        order: 210
+
+    rating_dimensions:
+      - { key: sensitivity, label: 灵敏度, weight: 0.2 }
+      - { key: casting, label: 抛投表现, weight: 0.18 }
+      - { key: control, label: 操控反馈, weight: 0.18 }
+      - { key: strength, label: 回鱼强度, weight: 0.16 }
+      - { key: versatility, label: 适用范围, weight: 0.13 }
+      - { key: value, label: 性价比, weight: 0.15 }

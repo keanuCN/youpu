@@ -1,0 +1,20 @@
+# 官方规格样例：待补中国区价格、图片与有谱编辑评分
+slug: victor-thruster-ryuga-ii-pro-2026
+category: badminton-racket
+brand: victor
+model: THRUSTER RYUGA II PRO B
+year: 2026
+title: VICTOR THRUSTER RYUGA II PRO B 2026
+specs:
+  weightClass: "3U/4U"
+  maxTension: 32
+  frameMaterial: High Resilience Modulus Graphite + HARD CORED TECHNOLOGY
+  shaftMaterial: High Resilience Modulus Graphite + PYROFIL + 6.6 SHAFT
+  scenes:
+    - singles
+    - attack
+  playerLevel: advanced
+data_source:
+  kind: official
+  origin_url: https://shop.au.victorsport.com/products/tk-ryuga-ii-pro-b
+status: published

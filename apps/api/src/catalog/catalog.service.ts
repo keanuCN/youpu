@@ -28,6 +28,7 @@ export type CatalogProductListRow = Prisma.ProductGetPayload<{
     brand: { select: { slug: true; name: true; nameCn: true } };
     category: { select: { id: true; slug: true; specSchema: true } };
     stat: { select: { view7d: true; viewTotal: true } };
+    images: { orderBy: { sortOrder: 'asc' }; take: 1 };
   };
 }>;
 
@@ -84,6 +85,7 @@ export class CatalogService {
           brand: { select: { slug: true, name: true, nameCn: true } },
           category: { select: { id: true, slug: true, specSchema: true } },
           stat: { select: { view7d: true, viewTotal: true } },
+          images: { orderBy: { sortOrder: 'asc' }, take: 1 },
         },
       }),
     ]);
@@ -121,7 +123,7 @@ export class CatalogService {
       priceMin: product.priceMin === null ? null : Number(product.priceMin),
       priceMax: product.priceMax === null ? null : Number(product.priceMax),
       priceCurrency: product.priceCurrency,
-      coverUrl: product.coverUrl,
+      coverUrl: product.coverUrl ?? product.images[0]?.url ?? null,
       ratingOverall: product.ratingOverall === null ? null : Number(product.ratingOverall),
       ratingCount: product.ratingCount,
       ratingSub: (product.ratingSub ?? null) as Record<string, number> | null,
@@ -161,6 +163,24 @@ export class CatalogService {
     };
   }
 
+  /**
+   * 对比页批量读取已发布产品详情。
+   * refs 使用产品 slug；最多 4 件，按请求顺序返回，缺失产品不阻断其他产品。
+   */
+  async getProductsByRefs(refs: string[]): Promise<{ items: ProductDetail[] }> {
+    const products = await Promise.all(
+      refs.map(async (ref) => {
+        try {
+          return await this.getProductBySlug(ref);
+        } catch (error) {
+          if (error instanceof NotFoundException) return null;
+          throw error;
+        }
+      }),
+    );
+    return { items: products.filter((product): product is ProductDetail => product !== null) };
+  }
+
   private buildOrderBy(sort: ProductSort): Prisma.ProductOrderByWithRelationInput[] {
     switch (sort) {
       case 'new':
@@ -191,7 +211,7 @@ export function serializeProductListItem(row: CatalogProductListRow): ProductLis
     priceMin: row.priceMin === null ? null : Number(row.priceMin),
     priceMax: row.priceMax === null ? null : Number(row.priceMax),
     priceCurrency: row.priceCurrency,
-    coverUrl: row.coverUrl,
+    coverUrl: row.coverUrl ?? row.images[0]?.url ?? null,
     ratingOverall: row.ratingOverall === null ? null : Number(row.ratingOverall),
     ratingCount: row.ratingCount,
     favoriteCount: row.favoriteCount,

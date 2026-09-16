@@ -1,7 +1,10 @@
 import { NextRequest } from "next/server";
 
 // 静态导出时该路径只生成兜底响应；生产页面直接使用 CDN 图片，开发环境仍可走代理。
-export const dynamic = "force-static";
+// 本地开发必须使用动态路由，否则 Next 会把 request URL 的查询参数清空，
+// 代理无法读取目标图片地址。静态导出仍保持 force-static 以兼容无 Node 运行时的部署。
+const isStaticExport = process.env.NEXT_OUTPUT === "export";
+export const dynamic = isStaticExport ? "force-static" : "force-dynamic";
 
 const CDN_HOST = "g.cdn.meoo.host";
 const CDN_IMAGE_PREFIX = "/uvayfd7jql5o/ai-images/";

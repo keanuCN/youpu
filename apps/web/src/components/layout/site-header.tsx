@@ -177,7 +177,7 @@ export function SiteHeader() {
             <PopoverContent align="end" className="w-56 rounded-none border-foreground p-0">
               <div className="border-b border-border p-3">
                 <p className="text-[13px] font-medium">{profile.username}</p>
-                <p className="mono-label mt-1">{profile.email}</p>
+                <p className="mono-label mt-1">{profile.phone || profile.email || "未设置登录方式"}</p>
                 <p className="mono-label mt-2 text-foreground/70">
                   {profile.level} · {profile.years} 年雪龄
                 </p>

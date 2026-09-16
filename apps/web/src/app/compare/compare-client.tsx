@@ -10,16 +10,62 @@ import { PageHead, SectionHead } from "@/components/layout/section-head";
 import { GEAR, getGear } from "@/data/boards";
 import { getCategory } from "@/data/categories";
 import { buildCompareMatrix, compareConclusion } from "@/lib/domain";
+import { getCategoryProducts, getCompareProducts, resolveContentSource } from "@/lib/content";
 import { clearDock, recordCompare, removeFromDock, setDock, useCurrentUser } from "@/lib/store";
 import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
+import type { GearItem } from "@/types";
 
 export default function ComparePage() {
   const me = useCurrentUser();
   const ids = me.dockIds;
-  const items = useMemo(() => ids.map((id) => getGear(id)).filter((g): g is NonNullable<typeof g> => !!g), [ids]);
+  const idsKey = ids.join("|");
+  const localItems = useMemo(() => ids.map((id) => getGear(id)).filter((g): g is NonNullable<typeof g> => !!g), [idsKey]);
+  const [items, setItems] = useState<GearItem[]>(localItems);
+  const [availableGear, setAvailableGear] = useState<GearItem[]>(GEAR);
+  const [compareLoading, setCompareLoading] = useState(false);
   const [onlyDiff, setOnlyDiff] = useState(false);
   const [picker, setPicker] = useState(false);
+  const apiMode = resolveContentSource() === "api";
+
+  useEffect(() => {
+    let active = true;
+    setItems(localItems);
+    if (!apiMode) {
+      setCompareLoading(false);
+      return () => {
+        active = false;
+      };
+    }
+
+    setCompareLoading(ids.length > 0);
+    void getCompareProducts(ids, { source: "api" }).then((next) => {
+      if (!active) return;
+      setItems(next);
+      setCompareLoading(false);
+    });
+    return () => {
+      active = false;
+    };
+  }, [apiMode, idsKey]);
+
+  const categorySlug = items[0]?.categorySlug ?? "snowboard";
+  useEffect(() => {
+    let active = true;
+    if (!apiMode) {
+      setAvailableGear(GEAR);
+      return () => {
+        active = false;
+      };
+    }
+
+    void getCategoryProducts(categorySlug, { source: "api" }).then((next) => {
+      if (active) setAvailableGear(next);
+    });
+    return () => {
+      active = false;
+    };
+  }, [apiMode, categorySlug]);
 
   const category = getCategory(items[0]?.categorySlug ?? "snowboard");
   const dims = category?.scoreDims ?? [];
@@ -45,6 +91,19 @@ export default function ComparePage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ids.join("|"), me.sessionKey]);
 
+  if (compareLoading && items.length < 2) {
+    return (
+      <div className="mx-auto max-w-[1400px] px-5 py-10 sm:px-8">
+        <PageHead kicker="COMPARE" title="参数对比" titleEn="Side by Side" desc="正在读取对比数据……" />
+        <div className="mt-10 border border-dashed border-border py-16 text-center">
+          <Scale size={30} strokeWidth={1.2} className="mx-auto animate-pulse text-muted-foreground" />
+          <p className="mt-4 text-[16px] font-medium">正在读取产品参数</p>
+          <p className="mono-label mt-2">请稍候，后台新增产品也会出现在这里</p>
+        </div>
+      </div>
+    );
+  }
+
   if (items.length < 2) {
     return (
       <div className="mx-auto max-w-[1400px] px-5 py-10 sm:px-8">
@@ -60,7 +119,7 @@ export default function ComparePage() {
         <section className="mt-14">
           <SectionHead title="热门候选" titleEn="Popular" />
           <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-            {GEAR.slice(0, 4).map((g) => (
+            {availableGear.slice(0, 4).map((g) => (
               <GearCard key={g.id} gear={g} from="compare" />
             ))}
           </div>
@@ -112,7 +171,7 @@ export default function ComparePage() {
         <div className="mt-6 border border-foreground p-4">
           <p className="mono-label mb-3">选择要替换 / 追加的装备（点已选中的可移出）</p>
           <div className="thin-scroll flex gap-2 overflow-x-auto pb-2">
-            {GEAR.map((g) => {
+            {availableGear.map((g) => {
               const on = ids.includes(g.id);
               const full = !on && ids.length >= 4;
               return (

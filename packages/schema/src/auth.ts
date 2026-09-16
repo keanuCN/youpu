@@ -2,6 +2,22 @@ import { z } from 'zod';
 import { riderProfileSchema } from './survey';
 
 const passwordSchema = z.string().min(6, '密码至少 6 位').max(128, '密码不能超过 128 位');
+const phoneSchema = z
+  .string()
+  .trim()
+  .regex(/^(?:\+?86)?1[3-9]\d{9}$/, '手机号格式不正确');
+
+export const authPhoneCodeSchema = z.object({ phone: phoneSchema }).strict();
+export type AuthPhoneCodeInput = z.infer<typeof authPhoneCodeSchema>;
+
+export const authPhoneLoginSchema = z
+  .object({
+    phone: phoneSchema,
+    code: z.string().trim().regex(/^\d{6}$/, '验证码应为 6 位数字'),
+    nickname: z.string().trim().max(32, '昵称不能超过 32 个字').optional(),
+  })
+  .strict();
+export type AuthPhoneLoginInput = z.infer<typeof authPhoneLoginSchema>;
 
 export const authRegisterSchema = z
   .object({

@@ -1,11 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import type { ProductListItem } from "@youpu/schema";
+import type { ProductDetail, ProductListItem } from "@youpu/schema";
 
 import { GEAR, gearOfCategory } from "../data/boards";
 import {
   getCategoryProducts,
+  getCompareProducts,
   mapProductListItem,
   resolveContentSource,
 } from "./content";
@@ -30,6 +31,17 @@ const apiItem: ProductListItem = {
   categorySlug: "snowboard",
   specs: { flex: 7, scenes: ["all-mountain", "carving"] },
   highlights: [{ key: "flex", label: "硬度", value: "7" }],
+};
+
+const apiDetail: ProductDetail = {
+  ...apiItem,
+  ratingSub: null,
+  editorialScores: { stability: 8 },
+  brand: { ...apiItem.brand, country: "US", officialUrl: "https://example.com" },
+  category: { slug: "snowboard", name: "单板" },
+  images: [],
+  specSchema: null,
+  specRows: [],
 };
 
 const failingFetcher: typeof fetch = async () => {
@@ -87,4 +99,21 @@ test("content API requests bypass the Next server cache", async () => {
 
   await getCategoryProducts("snowboard", { source: "api", fetcher });
   assert.equal(receivedCache, "no-store");
+});
+
+test("loads API details for the compare dock in request order", async () => {
+  let receivedUrl = "";
+  const fetcher: typeof fetch = async (input, init) => {
+    receivedUrl = String(input);
+    assert.equal(init?.cache, "no-store");
+    return new Response(JSON.stringify({ items: [apiDetail] }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  };
+
+  const result = await getCompareProducts([apiDetail.slug], { source: "api", fetcher });
+  assert.match(receivedUrl, /\/api\/products\?ids=burton-custom-camber-2026/);
+  assert.equal(result.length, 1);
+  assert.equal(result[0]?.model, apiDetail.model);
 });

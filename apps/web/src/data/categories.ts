@@ -1,6 +1,6 @@
 import type { Category, CategoryNode } from "@/types";
 
-/** 品类树：只有单板是 live，其余为占位（后续扩品类只加配置与内容） */
+/** 品类树：已开档叶子节点由 API 数据驱动，新增品类只需补配置与内容。 */
 export const CATEGORY_TREE: CategoryNode[] = [
   {
     slug: "sports",
@@ -45,13 +45,23 @@ export const CATEGORY_TREE: CategoryNode[] = [
         ],
       },
       {
+        slug: "racket-sports",
+        name: "球类",
+        nameEn: "Racket Sports",
+        path: ["运动"],
+        status: "coming_soon",
+        children: [
+          { slug: "badminton-racket", name: "羽毛球拍", nameEn: "Badminton", path: ["运动", "球类"], status: "live" },
+        ],
+      },
+      {
         slug: "fishing",
         name: "垂钓",
         nameEn: "Fishing",
         path: ["运动"],
         status: "coming_soon",
         children: [
-          { slug: "casting-rod", name: "路亚竿", nameEn: "Casting Rod", path: ["运动", "垂钓"], status: "coming_soon" },
+          { slug: "casting-rod", name: "路亚竿", nameEn: "Casting Rod", path: ["运动", "垂钓"], status: "live" },
           { slug: "spinning-reel", name: "纺车轮", nameEn: "Spinning Reel", path: ["运动", "垂钓"], status: "coming_soon" },
         ],
       },
@@ -287,7 +297,170 @@ export const SNOWBOARD: Category = {
   },
 };
 
-const FLAT: Record<string, Category> = { snowboard: SNOWBOARD };
+const BADMINTON_RACKET: Category = {
+  slug: "badminton-racket",
+  name: "羽毛球拍",
+  nameEn: "Badminton Racket",
+  path: ["运动", "球类"],
+  status: "live",
+  issue: "No.01 / 羽毛球拍档案",
+  specTemplate: [
+    {
+      group: "重量与手感",
+      fields: [
+        { key: "weightClass", label: "重量等级", type: "text", direction: null },
+        { key: "balance", label: "平衡点", type: "text", direction: null },
+        { key: "flex", label: "中杆硬度", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "穿线与结构",
+      fields: [
+        { key: "maxTension", label: "最高磅数", unit: " lbs", type: "number", direction: "higher" },
+        { key: "frameMaterial", label: "拍框材料", type: "text", direction: null },
+        { key: "shaftMaterial", label: "中杆材料", type: "text", direction: null },
+        { key: "lengthNote", label: "长度说明", type: "text", direction: null },
+        { key: "stringPattern", label: "穿线范围", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "使用取向",
+      fields: [
+        { key: "scenes", label: "使用场景", type: "text", direction: null },
+        { key: "playerLevel", label: "适合水平", type: "text", direction: null },
+      ],
+    },
+  ],
+  filterTemplate: [
+    {
+      key: "scenes",
+      label: "取向",
+      control: "multi",
+      options: [
+        { value: "singles", label: "单打" },
+        { value: "doubles", label: "双打" },
+        { value: "attack", label: "进攻" },
+        { value: "control", label: "控制" },
+        { value: "speed", label: "速度" },
+      ],
+    },
+    {
+      key: "brands",
+      label: "品牌",
+      control: "multi",
+      options: [
+        { value: "YONEX", label: "YONEX" },
+        { value: "VICTOR", label: "VICTOR" },
+      ],
+    },
+    { key: "years", label: "年份", control: "multi", options: [{ value: "2026", label: "2026" }] },
+  ],
+  scoreDims: [
+    { key: "power", label: "进攻力量", weight: 0.2 },
+    { key: "control", label: "控球精度", weight: 0.2 },
+    { key: "speed", label: "挥拍速度", weight: 0.18 },
+    { key: "defense", label: "防守连贯", weight: 0.15 },
+    { key: "forgiveness", label: "容错度", weight: 0.12 },
+    { key: "value", label: "性价比", weight: 0.15 },
+  ],
+  rankCategories: [
+    { key: "overall", label: "综合榜" },
+    { key: "power", label: "进攻榜" },
+    { key: "control", label: "控制榜" },
+    { key: "speed", label: "速度榜" },
+  ],
+  quizTemplate: [],
+  hardcoreWeights: {},
+};
+
+const CASTING_ROD: Category = {
+  slug: "casting-rod",
+  name: "路亚竿",
+  nameEn: "Casting Rod",
+  path: ["运动", "垂钓"],
+  status: "live",
+  issue: "No.01 / 路亚竿档案",
+  specTemplate: [
+    {
+      group: "尺寸与负载",
+      fields: [
+        { key: "length", label: "全长", unit: " m", type: "number", direction: null },
+        { key: "sections", label: "节数", type: "number", direction: "lower" },
+        { key: "weight", label: "标准自重", unit: " g", type: "number", direction: "lower" },
+        { key: "lureWeight", label: "路亚重量", type: "text", direction: null },
+        { key: "lineWeight", label: "适用钓线", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "调性与结构",
+      fields: [
+        { key: "power", label: "调性强度", type: "text", direction: null },
+        { key: "action", label: "先调", type: "text", direction: null },
+        { key: "rodType", label: "轮座类型", type: "text", direction: null },
+        { key: "blankMaterial", label: "竿胚材料", type: "text", direction: null },
+        { key: "carbonContent", label: "碳纤维含量", unit: "%", type: "number", direction: "higher" },
+      ],
+    },
+    {
+      group: "使用取向",
+      fields: [{ key: "scenes", label: "使用水域", type: "text", direction: null }],
+    },
+  ],
+  filterTemplate: [
+    {
+      key: "scenes",
+      label: "取向",
+      control: "multi",
+      options: [
+        { value: "freshwater", label: "淡水" },
+        { value: "bass", label: "鲈鱼" },
+        { value: "finesse", label: "精细钓法" },
+        { value: "light-lure", label: "轻饵" },
+        { value: "heavy-lure", label: "重饵" },
+      ],
+    },
+    {
+      key: "brands",
+      label: "品牌",
+      control: "multi",
+      options: [
+        { value: "Daiwa", label: "Daiwa" },
+        { value: "Shimano", label: "Shimano" },
+      ],
+    },
+    {
+      key: "years",
+      label: "年份",
+      control: "multi",
+      options: [
+        { value: "2026", label: "2026" },
+        { value: "2024", label: "2024" },
+      ],
+    },
+  ],
+  scoreDims: [
+    { key: "sensitivity", label: "灵敏度", weight: 0.2 },
+    { key: "casting", label: "抛投表现", weight: 0.18 },
+    { key: "control", label: "操控反馈", weight: 0.18 },
+    { key: "strength", label: "回鱼强度", weight: 0.16 },
+    { key: "versatility", label: "适用范围", weight: 0.13 },
+    { key: "value", label: "性价比", weight: 0.15 },
+  ],
+  rankCategories: [
+    { key: "overall", label: "综合榜" },
+    { key: "casting", label: "抛投榜" },
+    { key: "sensitivity", label: "灵敏度榜" },
+    { key: "strength", label: "强度榜" },
+  ],
+  quizTemplate: [],
+  hardcoreWeights: {},
+};
+
+const FLAT: Record<string, Category> = {
+  snowboard: SNOWBOARD,
+  "badminton-racket": BADMINTON_RACKET,
+  "casting-rod": CASTING_ROD,
+};
 
 function walk(nodes: CategoryNode[]): void {
   for (const n of nodes) {

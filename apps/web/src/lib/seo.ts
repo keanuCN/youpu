@@ -42,7 +42,8 @@ export function gearMetadata(gear: GearItem): Metadata {
 /** 列表页：泛品类词 */
 export function categoryMetadata(category: Category, opts: { filtered: boolean }): Metadata {
   const title = `${category.name}怎么选 · 全参数对比与实测评分`;
-  const description = `${category.name}档案库：按场景、板型、硬度、价格与品牌筛选，横向对比全部参数与社区实测评分。`;
+  const filters = category.filterTemplate.map((filter) => filter.label).join("、") || "结构化参数";
+  const description = `${category.name}档案库：按${filters}筛选，横向对比全部参数与社区实测评分。`;
   return {
     title,
     description,

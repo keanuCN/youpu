@@ -93,6 +93,12 @@ export const productDetailSchema = productListItemSchema
   });
 export type ProductDetail = z.infer<typeof productDetailSchema>;
 
+/** 对比页一次读取多件详情；接口仍复用详情契约，避免前端维护第二套参数形状。 */
+export const productCompareResponseSchema = z.object({
+  items: z.array(productDetailSchema),
+});
+export type ProductCompareResponse = z.infer<typeof productCompareResponseSchema>;
+
 export const categoryTreeNodeSchema: z.ZodType<CategoryTreeNode> = z.lazy(() =>
   z.object({
     id: z.string(),

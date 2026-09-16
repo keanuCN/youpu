@@ -13,6 +13,7 @@ const REFRESH_TOKEN_KEY = "youpu:auth:refresh-token";
 export interface CloudAccount {
   id: string;
   email: string | null;
+  phone: string | null;
   nickname: string;
   avatarUrl: string | null;
   riderProfile: Record<string, unknown>;
@@ -26,6 +27,13 @@ export interface CloudSession {
   refreshToken: string;
   expiresIn: number;
   account: CloudAccount;
+}
+
+export interface CloudPhoneCodeResponse {
+  ok: true;
+  expiresIn: number;
+  /** 仅本地开发返回，生产环境由短信服务投递验证码。 */
+  devCode?: string;
 }
 
 export interface CloudRating {
@@ -214,6 +222,17 @@ export function cloudRegister(email: string, password: string, nickname?: string
 
 export function cloudLogin(email: string, password: string): Promise<CloudSession> {
   return request<CloudSession>("/api/auth/login", { method: "POST", body: { email, password } });
+}
+
+export function cloudRequestPhoneCode(phone: string): Promise<CloudPhoneCodeResponse> {
+  return request<CloudPhoneCodeResponse>("/api/auth/phone/code", { method: "POST", body: { phone } });
+}
+
+export function cloudPhoneLogin(phone: string, code: string, nickname?: string): Promise<CloudSession> {
+  return request<CloudSession>("/api/auth/phone/login", {
+    method: "POST",
+    body: { phone, code, nickname: nickname || undefined },
+  });
 }
 
 export function cloudResetPassword(email: string, password: string): Promise<{ ok: true }> {

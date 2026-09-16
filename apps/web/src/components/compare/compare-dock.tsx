@@ -6,16 +6,21 @@ import { useEffect, useRef, useState } from "react";
 import { Scale, Trash2, X } from "lucide-react";
 import { toast } from "sonner";
 import { getGear } from "@/data/boards";
+import { getCompareProducts, resolveContentSource } from "@/lib/content";
 import { DOCK_MAX, clearDock, removeFromDock, useCurrentUser } from "@/lib/store";
 import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
+import type { GearItem } from "@/types";
 
 /** 常驻对比坞：跨页面保留，最多 4 件 */
 export function CompareDock() {
   const router = useRouter();
   const me = useCurrentUser();
   const ids = me.dockIds;
+  const idsKey = ids.join("|");
   const [shake, setShake] = useState(0);
+  const [items, setItems] = useState<GearItem[]>(() => ids.map((id) => getGear(id)).filter((g): g is NonNullable<typeof g> => !!g));
+  const [loading, setLoading] = useState(false);
   const prevLen = useRef(ids.length);
 
   useEffect(() => {
@@ -23,11 +28,43 @@ export function CompareDock() {
     prevLen.current = ids.length;
   }, [ids.length]);
 
+  useEffect(() => {
+    let active = true;
+    const localItems = ids.map((id) => getGear(id)).filter((g): g is NonNullable<typeof g> => !!g);
+    setItems(localItems);
+    if (!ids.length) {
+      setItems([]);
+      setLoading(false);
+      return () => {
+        active = false;
+      };
+    }
+
+    if (resolveContentSource() === "pack") {
+      setLoading(false);
+      return () => {
+        active = false;
+      };
+    }
+
+    setLoading(true);
+    void getCompareProducts(ids, { source: "api" }).then((next) => {
+      if (!active) return;
+      setItems(next);
+      setLoading(false);
+    });
+    return () => {
+      active = false;
+    };
+  }, [idsKey]);
+
   if (!ids.length) return null;
 
-  const items = ids.map((id) => getGear(id)).filter((g): g is NonNullable<typeof g> => !!g);
-
   const start = () => {
+    if (loading) {
+      toast("正在读取对比数据");
+      return;
+    }
     if (items.length < 2) {
       setShake((s) => s + 1);
       toast.error("至少选择 2 件装备才能开始对比");

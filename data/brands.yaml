@@ -64,3 +64,31 @@
   name: Nitro
   country: DE
   description: 1990 年创立，性价比与全山地定位突出，欧洲市场覆盖广。
+
+- slug: yonex
+  name: YONEX
+  name_cn: 尤尼克斯
+  country: JP
+  official_url: https://www.yonex.com
+  description: 日本运动品牌，羽毛球拍产品覆盖进攻、控制与速度等不同取向。
+
+- slug: victor
+  name: VICTOR
+  name_cn: 威克多
+  country: TW
+  official_url: https://www.victorsport.com
+  description: 台湾羽毛球品牌，产品线覆盖进攻型、速度型和全能型球拍。
+
+- slug: daiwa
+  name: Daiwa
+  name_cn: 达亿瓦
+  country: JP
+  official_url: https://www.daiwa.com
+  description: 日本渔具品牌，路亚竿产品覆盖精细钓法到中重型应用。
+
+- slug: shimano
+  name: Shimano
+  name_cn: 禧玛诺
+  country: JP
+  official_url: https://fish.shimano.com
+  description: 日本渔具品牌，路亚竿覆盖淡水与轻盐水等多种使用场景。

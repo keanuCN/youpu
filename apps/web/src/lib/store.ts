@@ -65,7 +65,8 @@ export function isStorageAvailable(): boolean {
 
 /** 将本地 API 返回的账号映射进现有前端状态，保留原型页的同步派生逻辑。 */
 export function applyCloudAccount(account: CloudAccount): void {
-  const email = account.email ?? account.id;
+  const accountKey = account.email ?? account.phone ?? account.id;
+  const email = account.email ?? "";
   const rider = account.riderProfile ?? {};
   const levelMap: Record<string, string> = {
     beginner: "新手",
@@ -73,11 +74,14 @@ export function applyCloudAccount(account: CloudAccount): void {
     advanced: "进阶",
     expert: "高阶",
   };
-  const prefix = email.split("@")[0]?.replace(/[^a-zA-Z0-9_]/g, "").slice(0, 16) || "rider";
+  const prefix =
+    email.split("@")[0]?.replace(/[^a-zA-Z0-9_]/g, "").slice(0, 16) ||
+    `rider_${account.phone?.slice(-4) ?? "user"}`;
   const next: Account = {
-    userKey: email,
+    userKey: accountKey,
     username: account.nickname,
     email,
+    phone: account.phone ?? undefined,
     avatarSeed: prefix,
     years: Number(rider.years ?? 1),
     heightCm: Number(rider.height ?? 175),
@@ -89,22 +93,22 @@ export function applyCloudAccount(account: CloudAccount): void {
     remoteId: account.id,
     cloud: true,
   };
-  const existing = state.accounts.find((item) => item.userKey === email);
+  const existing = state.accounts.find((item) => item.userKey === accountKey);
   emit({
     accounts: existing
-      ? state.accounts.map((item) => (item.userKey === email ? { ...item, ...next } : item))
+      ? state.accounts.map((item) => (item.userKey === accountKey ? { ...item, ...next } : item))
       : [...state.accounts, next],
-    sessionKey: email,
-    favorites: { ...state.favorites, [email]: state.favorites[email] ?? [] },
-    dock: { ...state.dock, [email]: state.dock[email] ?? [] },
-    helpful: { ...state.helpful, [email]: state.helpful[email] ?? [] },
-    votes: { ...state.votes, [email]: state.votes[email] ?? [] },
+    sessionKey: accountKey,
+    favorites: { ...state.favorites, [accountKey]: state.favorites[accountKey] ?? [] },
+    dock: { ...state.dock, [accountKey]: state.dock[accountKey] ?? [] },
+    helpful: { ...state.helpful, [accountKey]: state.helpful[accountKey] ?? [] },
+    votes: { ...state.votes, [accountKey]: state.votes[accountKey] ?? [] },
   });
 }
 
 export function applyCloudMe(data: CloudMeResponse): void {
   applyCloudAccount(data.account);
-  const key = data.account.email ?? data.account.id;
+  const key = data.account.email ?? data.account.phone ?? data.account.id;
   const slugForGear = (gear: (typeof GEAR)[number]) =>
     `${gear.brand}-${gear.model}-${gear.year}`.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const favorites = data.favorites.map((item) => {
@@ -234,6 +238,79 @@ function currentUserKey(): string {
 // ---------- 账号 ----------
 
 export type AuthResult = { ok: true } | { ok: false; message: string };
+
+type LocalPhoneCode = { code: string; expiresAt: number; nextAt: number };
+const localPhoneCodes = new Map<string, LocalPhoneCode>();
+const LOCAL_PHONE_CODE_TTL_MS = 5 * 60 * 1000;
+const LOCAL_PHONE_CODE_COOLDOWN_MS = 60 * 1000;
+
+export type PhoneCodeResult = { ok: true; devCode: string; expiresIn: number } | { ok: false; message: string };
+
+export function requestPhoneCode(phone: string): PhoneCodeResult {
+  const key = normalizeLocalPhone(phone);
+  if (!/^1[3-9]\d{9}$/.test(key)) return { ok: false, message: "手机号格式不正确" };
+  const current = Date.now();
+  const existing = localPhoneCodes.get(key);
+  if (existing && existing.nextAt > current) {
+    return { ok: false, message: `验证码已发送，请 ${Math.ceil((existing.nextAt - current) / 1000)} 秒后再试` };
+  }
+  const code = String(Math.floor(100000 + Math.random() * 900000));
+  localPhoneCodes.set(key, {
+    code,
+    expiresAt: current + LOCAL_PHONE_CODE_TTL_MS,
+    nextAt: current + LOCAL_PHONE_CODE_COOLDOWN_MS,
+  });
+  return { ok: true, devCode: code, expiresIn: LOCAL_PHONE_CODE_TTL_MS / 1000 };
+}
+
+export function phoneLogin(phone: string, code: string, username?: string): AuthResult {
+  const key = normalizeLocalPhone(phone);
+  if (!/^1[3-9]\d{9}$/.test(key)) return { ok: false, message: "手机号格式不正确" };
+  const stored = localPhoneCodes.get(key);
+  if (!stored || stored.expiresAt <= Date.now()) {
+    localPhoneCodes.delete(key);
+    return { ok: false, message: "验证码已过期，请重新获取" };
+  }
+  if (stored.code !== code.trim()) return { ok: false, message: "验证码不正确" };
+  localPhoneCodes.delete(key);
+
+  const existing = state.accounts.find((account) => account.phone === key);
+  if (existing) {
+    emit({ sessionKey: key });
+    return { ok: true };
+  }
+
+  const account: Account = {
+    userKey: key,
+    username: username?.trim() || `滑手${key.slice(-4)}`,
+    email: "",
+    phone: key,
+    avatarSeed: `phone-${key.slice(-4)}`,
+    years: 1,
+    heightCm: 175,
+    weightKg: 70,
+    level: "中级",
+    resort: "",
+    secret: "phone-code",
+    createdAt: new Date().toISOString(),
+  };
+  emit({
+    accounts: [...state.accounts, account],
+    sessionKey: key,
+    favorites: { ...state.favorites, [key]: [] },
+    dock: { ...state.dock, [key]: [] },
+    helpful: { ...state.helpful, [key]: [] },
+    votes: { ...state.votes, [key]: [] },
+  });
+  return { ok: true };
+}
+
+function normalizeLocalPhone(phone: string): string {
+  const compact = phone.trim().replace(/[\s-]/g, "");
+  if (compact.startsWith("+86")) return compact.slice(3);
+  if (compact.startsWith("86") && compact.length === 13) return compact.slice(2);
+  return compact;
+}
 
 export function register(email: string, password: string, username?: string): AuthResult {
   const key = email.trim().toLowerCase();

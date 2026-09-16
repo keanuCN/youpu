@@ -1,0 +1,22 @@
+# 官方规格样例：海外规格，待补中国区价格、图片与有谱编辑评分
+slug: shimano-streamflight-stf702sp25l-2026
+category: casting-rod
+brand: shimano
+model: STREAMFLIGHT STF702SP25L
+year: 2026
+title: Shimano STREAMFLIGHT STF702SP25L 2026
+specs:
+  length: 2.13
+  sections: 2
+  lureWeight: "2-12 g"
+  lineWeight: "2-5 kg"
+  power: light
+  rodType: spinning
+  blankMaterial: 30T Carbon
+  scenes:
+    - freshwater
+    - light-lure
+data_source:
+  kind: official
+  origin_url: https://fish.shimano.com/en-NZ/product/rods/freshwater/streamflight_freshwater_rods.html
+status: published

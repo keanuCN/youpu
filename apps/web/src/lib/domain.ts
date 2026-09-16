@@ -453,10 +453,6 @@ export function recommend(a: QuizAnswers): Recommendation[] {
   }));
 }
 
-export function sceneLabel(v: string): string {
-  return SNOWBOARD_SCENES_LABEL[v] ?? v;
-}
-
 export function dimLabel(key: string): string {
   return SNOWBOARD.scoreDims.find((d) => d.key === key)?.label ?? key;
 }
@@ -464,6 +460,24 @@ export function dimLabel(key: string): string {
 const SNOWBOARD_SCENES_LABEL: Record<string, string> = Object.fromEntries(
   SNOWBOARD.filterTemplate.find((f) => f.key === "scenes")?.options?.map((o) => [o.value, o.label]) ?? [],
 );
+
+const SCENE_LABELS: Record<string, string> = {
+  ...SNOWBOARD_SCENES_LABEL,
+  singles: "单打",
+  doubles: "双打",
+  attack: "进攻",
+  control: "控制",
+  speed: "速度",
+  freshwater: "淡水",
+  bass: "鲈鱼",
+  finesse: "精细钓法",
+  "light-lure": "轻饵",
+  "heavy-lure": "重饵",
+};
+
+export function sceneLabel(v: string): string {
+  return SCENE_LABELS[v] ?? v;
+}
 
 export function quizQuestions(slug: string): QuizQuestion[] {
   return getCategory(slug)?.quizTemplate ?? SNOWBOARD.quizTemplate;

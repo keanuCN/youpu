@@ -1,0 +1,24 @@
+# 官方规格样例：待补中国区价格、图片与有谱编辑评分
+slug: yonex-nanoflare-1000-z-2026
+category: badminton-racket
+brand: yonex
+model: NANOFLARE 1000 Z
+year: 2026
+title: YONEX NANOFLARE 1000 Z 2026
+specs:
+  weightClass: "3U/4U"
+  balance: head-light
+  flex: extra-stiff
+  maxTension: 29
+  frameMaterial: HM Graphite + NANOMETRIC DR + M40X + EX-HYPER MG
+  shaftMaterial: HM Graphite + Ultra PE FIBER
+  lengthNote: 加长 10mm
+  stringPattern: 4U 20-28 lbs；3U 21-29 lbs
+  scenes:
+    - doubles
+    - speed
+  playerLevel: advanced
+data_source:
+  kind: official
+  origin_url: https://www.yonex.com/nf-1000z
+status: published
