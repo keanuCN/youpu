@@ -16,7 +16,7 @@ async function bootstrap(): Promise<void> {
   app.setGlobalPrefix('api');
   app.enableCors({ origin: env.CORS_ORIGINS.split(',').map((s) => s.trim()) });
   app.enableShutdownHooks();
-  await app.listen(env.PORT);
+  await app.listen(env.PORT, '127.0.0.1');
   new Logger('Bootstrap').log(`有谱 API 已启动：http://localhost:${env.PORT}/api`);
 }
 
