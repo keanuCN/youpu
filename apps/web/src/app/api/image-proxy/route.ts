@@ -1,11 +1,14 @@
 import { NextRequest } from "next/server";
 
+// 静态导出时该路径只生成兜底响应；生产页面直接使用 CDN 图片，开发环境仍可走代理。
+export const dynamic = "force-static";
+
 const CDN_HOST = "g.cdn.meoo.host";
 const CDN_IMAGE_PREFIX = "/uvayfd7jql5o/ai-images/";
 const ALLOWED_RASTER_TYPES = new Set(["image/png", "image/jpeg", "image/webp", "image/gif"]);
 
 export async function GET(request: NextRequest) {
-  const source = request.nextUrl.searchParams.get("url");
+  const source = new URL(request.url).searchParams.get("url");
   if (!source) {
     return new Response("Missing image URL", { status: 400 });
   }
