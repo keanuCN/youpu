@@ -21,6 +21,7 @@ pnpm-debug.log*
 # local browser QA artifacts
 .playwright-cli/
 output/playwright/
+output/deploy/
 
 # editor / os
 .idea/
