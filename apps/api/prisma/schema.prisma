@@ -410,6 +410,7 @@ model Event {
   anonId    String   @map("anon_id") @db.Uuid
   accountId String?  @map("account_id") @db.Uuid
   name      String
+  path      String?
   props     Json     @default("{}")
   createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
 

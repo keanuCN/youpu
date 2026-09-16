@@ -76,6 +76,7 @@ export class EventsIngestWorker implements OnModuleInit, OnModuleDestroy {
       anonId: string;
       accountId: string | null;
       name: string;
+      path: string | null;
       props: Prisma.InputJsonValue;
       createdAt: Date;
     }> = [];
@@ -90,6 +91,7 @@ export class EventsIngestWorker implements OnModuleInit, OnModuleDestroy {
           anonId: string;
           accountId?: string;
           name: string;
+          path?: string;
           props: Record<string, unknown>;
           ts: number;
         };
@@ -97,6 +99,7 @@ export class EventsIngestWorker implements OnModuleInit, OnModuleDestroy {
           anonId: parsed.anonId,
           accountId: parsed.accountId ?? null,
           name: parsed.name,
+          path: parsed.path ?? null,
           props: toJsonInput(parsed.props),
           // 客户端时间可能不可信，created_at 由服务端接收时间生成（ts 留 props 备查）
           createdAt: new Date(),

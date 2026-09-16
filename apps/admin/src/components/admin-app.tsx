@@ -20,13 +20,14 @@ import {
   buildProductQuery,
   type AdminBrandRecord,
   type AdminCategoryRecord,
+  type AdminAnalytics,
   type AdminDashboard,
   type AdminProductDetail,
   type AdminProductListResponse,
   type AdminProductSummary,
 } from '../lib/api';
 
-type Section = 'dashboard' | 'products' | 'brands' | 'categories' | 'import';
+type Section = 'dashboard' | 'products' | 'brands' | 'categories' | 'import' | 'analytics';
 type NoticeKind = 'success' | 'error' | 'info';
 type ImageKind = AdminProductInput['images'][number]['kind'];
 type DataSourceKind = NonNullable<AdminProductInput['dataSource']>['kind'];
@@ -104,6 +105,7 @@ const navItems: Array<{ id: Section; index: string; label: string; note: string 
   { id: 'brands', index: '02', label: '品牌', note: 'BRAND INDEX' },
   { id: 'categories', index: '03', label: '类目与参数', note: 'SCHEMA FAMILY' },
   { id: 'import', index: '04', label: '采集与导入', note: 'INGEST STATUS' },
+  { id: 'analytics', index: '05', label: '数据分析', note: 'ANALYTICS' },
 ];
 
 const imageKinds: ImageKind[] = ['base', 'face', 'side', 'shape', 'field', 'card3x4'];
@@ -365,6 +367,46 @@ function formatPrice(product: AdminProductSummary): string {
   return min && max && min !== max ? `${min}–${max} ${product.priceCurrency}` : `${min || max} ${product.priceCurrency}`;
 }
 
+function formatCompactNumber(value: number): string {
+  return new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 1 }).format(value);
+}
+
+function formatShortDate(value: string): string {
+  const parts = value.split('-');
+  return parts.length === 3 ? `${Number(parts[1])}/${Number(parts[2])}` : value;
+}
+
+function formatUptime(seconds: number): string {
+  const days = Math.floor(seconds / 86400);
+  const hours = Math.floor((seconds % 86400) / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  if (days > 0) return `${days} 天 ${hours} 小时`;
+  if (hours > 0) return `${hours} 小时 ${minutes} 分钟`;
+  return `${minutes} 分钟`;
+}
+
+const eventLabels: Record<string, string> = {
+  expose: '内容曝光',
+  card_click: '卡片点击',
+  detail_view: '产品详情',
+  compare_add: '加入对比',
+  compare_open: '打开对比',
+  recommend_start: '开始推荐',
+  recommend_complete: '完成推荐',
+  search: '搜索',
+  favorite_add: '收藏产品',
+  rating_submit: '提交评分',
+  reply_submit: '提交回复',
+  signup: '注册',
+  email_verify: '验证邮箱',
+  share_card_download: '下载分享卡',
+  outbound_click: '跳转官网',
+};
+
+function eventLabel(name: string): string {
+  return eventLabels[name] ?? name;
+}
+
 function schemaForCategory(category: AdminCategoryRecord | undefined): SpecSchema | null {
   if (!category?.specSchema) return null;
   const parsed = safeParseSpecSchema(category.specSchema);
@@ -400,6 +442,9 @@ export function AdminApp() {
   const [notice, setNotice] = useState<Notice | null>(null);
   const [busyAction, setBusyAction] = useState<string | null>(null);
   const [dashboard, setDashboard] = useState<AdminDashboard | null>(null);
+  const [analytics, setAnalytics] = useState<AdminAnalytics | null>(null);
+  const [analyticsDays, setAnalyticsDays] = useState<7 | 14 | 30>(14);
+  const [analyticsBusy, setAnalyticsBusy] = useState(false);
   const [products, setProducts] = useState<AdminProductListResponse | null>(null);
   const [brands, setBrands] = useState<AdminBrandRecord[]>([]);
   const [categories, setCategories] = useState<AdminCategoryRecord[]>([]);
@@ -492,6 +537,25 @@ export function AdminApp() {
     };
   }, [appliedFilters, sessionState, token]);
 
+  useEffect(() => {
+    if (sessionState !== 'signed-in' || !token) return;
+    let alive = true;
+    setAnalyticsBusy(true);
+    adminFetch<AdminAnalytics>(token, `/analytics?days=${analyticsDays}`)
+      .then((response) => {
+        if (alive) setAnalytics(response);
+      })
+      .catch((error) => {
+        if (alive) setNotice({ kind: 'error', text: getErrorText(error) });
+      })
+      .finally(() => {
+        if (alive) setAnalyticsBusy(false);
+      });
+    return () => {
+      alive = false;
+    };
+  }, [analyticsDays, sessionState, token]);
+
   async function refreshWorkspace(currentToken = token) {
     if (!currentToken) return;
     const [nextDashboard, nextProducts, nextBrands, nextCategories] = await Promise.all([
@@ -512,6 +576,18 @@ export function AdminApp() {
     setProducts(nextProducts);
     setBrands(nextBrands);
     setCategories(nextCategories);
+  }
+
+  async function refreshAnalytics() {
+    if (!token) return;
+    setAnalyticsBusy(true);
+    try {
+      setAnalytics(await adminFetch<AdminAnalytics>(token, `/analytics?days=${analyticsDays}`));
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setAnalyticsBusy(false);
+    }
   }
 
   async function handleLogin(event: FormEvent<HTMLFormElement>) {
@@ -888,6 +964,96 @@ export function AdminApp() {
     );
   }
 
+  function renderAnalytics() {
+    const summary = analytics?.summary;
+    const system = analytics?.system;
+    const services = system?.services;
+    const queue = system?.queue;
+    return (
+      <>
+        <SectionHeader
+          index="05 / ANALYTICS"
+          title="数据分析"
+          description="查看访客行为、埋点分布与运行状态。访客按匿名 ID 去重，统计只覆盖已经成功上报的事件。"
+          action={(
+            <div className="analytics-toolbar">
+              <label className="range-select"><span>统计范围</span><select value={analyticsDays} onChange={(event) => setAnalyticsDays(Number(event.target.value) as 7 | 14 | 30)}><option value="7">最近 7 天</option><option value="14">最近 14 天</option><option value="30">最近 30 天</option></select></label>
+              <button className="button" type="button" onClick={() => void refreshAnalytics()} disabled={analyticsBusy}>{analyticsBusy ? '读取中……' : '刷新统计'}</button>
+            </div>
+          )}
+        />
+        <div className="analytics-note"><span className="status-dot status-dot-good" /><span>当前统计窗口：{analytics ? `${formatDate(analytics.from)} — ${formatDate(analytics.to)}` : '读取中……'}；历史事件未记录路径时会显示“未记录路径”。</span></div>
+        <div className="metric-grid analytics-summary-grid">
+          <Metric label="独立访客" value={summary?.uniqueVisitors ?? '—'} detail={`${analyticsDays}D UNIQUE VISITORS`} accent />
+          <Metric label="埋点事件" value={summary?.events ?? '—'} detail="ALL TRACKED EVENTS" />
+          <Metric label="产品浏览" value={summary?.productViews ?? '—'} detail="DETAIL VIEW EVENTS" />
+          <Metric label="活跃账号" value={summary?.activeAccounts ?? '—'} detail="SIGNED-IN VISITORS" />
+        </div>
+        <div className="analytics-grid">
+          <section className="data-panel chart-panel analytics-traffic-panel">
+            <PanelHeader eyebrow="TRAFFIC TREND" title="访客与事件趋势" meta={analyticsBusy ? 'LOADING' : `LAST ${analyticsDays} DAYS`} />
+            <TrafficChart data={analytics?.daily ?? []} />
+          </section>
+          <section className="data-panel chart-panel">
+            <PanelHeader eyebrow="EVENT MIX" title="埋点事件分布" meta="TOP EVENTS" />
+            <EventBreakdown items={analytics?.eventBreakdown ?? []} />
+          </section>
+        </div>
+        <div className="analytics-grid analytics-grid-secondary">
+          <section className="data-panel">
+            <PanelHeader eyebrow="TOP PATHS" title="访问路径" meta="EVENT SOURCES" />
+            {analytics?.topPaths.length ? (
+              <div className="rank-list">{analytics.topPaths.map((item, index) => (
+                <div className="rank-row" key={item.path}>
+                  <span className="rank-index">{String(index + 1).padStart(2, '0')}</span>
+                  <div className="rank-main"><strong title={item.path}>{item.path}</strong><small>上报事件路径</small></div>
+                  <b>{formatCompactNumber(item.count)}</b>
+                </div>
+              ))}</div>
+            ) : <EmptyState title="暂无路径数据" detail="有用户行为上报后，这里会显示访问来源。" />}
+          </section>
+          <section className="data-panel">
+            <PanelHeader eyebrow="PRODUCT INTERACTIONS" title="热门产品互动" meta="TOP PRODUCTS" />
+            {analytics?.topProducts.length ? (
+              <div className="rank-list">{analytics.topProducts.map((item, index) => (
+                <div className="rank-row" key={item.productId}>
+                  <span className="rank-index">{String(index + 1).padStart(2, '0')}</span>
+                  <div className="rank-main"><strong title={item.productId}>{item.title || item.productId}</strong><small>{item.brand || item.productId}</small></div>
+                  <b>{formatCompactNumber(item.count)}</b>
+                </div>
+              ))}</div>
+            ) : <EmptyState title="暂无产品互动" detail="曝光、点击或详情浏览产生后，这里会显示产品热度。" />}
+          </section>
+        </div>
+        <section className="data-panel table-panel analytics-events-panel">
+          <PanelHeader eyebrow="RECENT TRACKING" title="最近埋点" meta={analytics?.recentEvents.length ? `${analytics.recentEvents.length} LOADED` : 'NO EVENTS'} />
+          {analytics?.recentEvents.length ? (
+            <div className="table-wrap"><table className="data-table analytics-events-table"><thead><tr><th>事件</th><th>访客</th><th>路径</th><th>产品</th><th>时间</th></tr></thead><tbody>{analytics.recentEvents.map((item, index) => <tr key={`${item.createdAt}-${item.name}-${index}`}><td><strong>{eventLabel(item.name)}</strong><small className="table-sub">{item.name}</small></td><td><code className="visitor-code">{item.visitor}</code></td><td className="path-cell">{item.path ?? '未记录路径'}</td><td>{item.productId ?? '—'}</td><td><time className="table-sub">{formatDate(item.createdAt)}</time></td></tr>)}</tbody></table></div>
+          ) : <EmptyState title="暂无埋点记录" detail="当前时间窗口内还没有可展示的用户行为事件。" />}
+        </section>
+        <section className="data-panel system-status-panel">
+          <PanelHeader eyebrow="SYSTEM STATUS" title="服务器状态" meta={system ? (system.status === 'ok' ? 'ALL SYSTEMS NOMINAL' : 'CHECK REQUIRED') : 'LOADING'} />
+          <div className="system-status-layout">
+            <div className="service-grid">
+              <ServiceStatus label="API 服务" value={services?.api} />
+              <ServiceStatus label="数据库" value={services?.database} />
+              <ServiceStatus label="Redis 队列" value={services?.redis} />
+              <ServiceStatus label="搜索服务" value={services?.elasticsearch} disabled={services ? !services.elasticsearchEnabled : false} />
+            </div>
+            <div className="system-facts">
+              <div><span>进程运行</span><strong>{system ? formatUptime(system.uptimeSeconds) : '—'}</strong></div>
+              <div><span>内存占用</span><strong>{system ? `${system.memory.rssMb} MB` : '—'}</strong></div>
+              <div><span>待处理 outbox</span><strong>{queue?.outboxPending === null ? '—' : formatCompactNumber(queue?.outboxPending ?? 0)}</strong></div>
+              <div><span>埋点流积压</span><strong>{queue?.eventStreamLength === null ? '—' : formatCompactNumber(queue?.eventStreamLength ?? 0)}</strong></div>
+              <div><span>Node.js</span><strong>{system?.nodeVersion ?? '—'}</strong></div>
+              <div><span>检查时间</span><strong>{system ? formatDate(system.checkedAt) : '—'}</strong></div>
+            </div>
+          </div>
+        </section>
+      </>
+    );
+  }
+
   function renderImport() {
     return (
       <>
@@ -905,6 +1071,7 @@ export function AdminApp() {
     if (activeSection === 'brands') return renderBrands();
     if (activeSection === 'categories') return renderCategories();
     if (activeSection === 'import') return renderImport();
+    if (activeSection === 'analytics') return renderAnalytics();
     return renderDashboard();
   }
 
@@ -957,6 +1124,62 @@ function StatusBadge({ status }: { status: string }) {
 
 function EmptyState({ title, detail }: { title: string; detail: string }) {
   return <div className="empty-state"><span>∅</span><strong>{title}</strong><p>{detail}</p></div>;
+}
+
+function TrafficChart({ data }: { data: AdminAnalytics['daily'] }) {
+  const hasActivity = data.some((item) => item.visitors > 0 || item.events > 0);
+  if (!data.length || !hasActivity) {
+    return <div className="chart-empty"><span>∅</span><strong>暂无趋势数据</strong><p>有用户行为上报后，这里会绘制访客与埋点事件趋势。</p></div>;
+  }
+
+  const width = 720;
+  const height = 240;
+  const left = 42;
+  const right = 14;
+  const top = 16;
+  const bottom = 38;
+  const plotWidth = width - left - right;
+  const plotHeight = height - top - bottom;
+  const maxVisitors = Math.max(1, ...data.map((item) => item.visitors));
+  const maxEvents = Math.max(1, ...data.map((item) => item.events));
+  const xFor = (index: number) => left + (data.length === 1 ? plotWidth / 2 : (plotWidth * index) / (data.length - 1));
+  const yForVisitors = (value: number) => top + plotHeight - (value / maxVisitors) * plotHeight;
+  const barStep = plotWidth / Math.max(data.length, 1);
+  const barWidth = Math.max(6, Math.min(24, barStep * 0.58));
+  const visitorPoints = data.map((item, index) => `${xFor(index)},${yForVisitors(item.visitors)}`).join(' ');
+  const labelIndexes = new Set([0, Math.floor((data.length - 1) / 2), data.length - 1]);
+
+  return (
+    <div className="traffic-chart-wrap">
+      <div className="chart-legend"><span><i className="legend-line" />独立访客</span><span><i className="legend-bar" />埋点事件</span></div>
+      <svg className="traffic-chart" viewBox={`0 0 ${width} ${height}`} role="img" aria-label="访客与埋点事件趋势图">
+        {[0, 0.25, 0.5, 0.75, 1].map((ratio) => {
+          const y = top + plotHeight - ratio * plotHeight;
+          const axisLabel = ratio === 0 ? '0' : ratio === 1 || maxVisitors >= 4 ? formatCompactNumber(Math.round(maxVisitors * ratio)) : '';
+          return <g key={ratio}><line className="chart-grid-line" x1={left} x2={width - right} y1={y} y2={y} /><text className="chart-axis-label" x={left - 10} y={y + 4} textAnchor="end">{axisLabel}</text></g>;
+        })}
+        {data.map((item, index) => {
+          const barHeight = (item.events / maxEvents) * plotHeight;
+          return <rect className="chart-event-bar" key={`bar-${item.date}`} x={xFor(index) - barWidth / 2} y={top + plotHeight - barHeight} width={barWidth} height={barHeight} rx="2" />;
+        })}
+        <polyline className="chart-visitor-line" points={visitorPoints} />
+        {data.map((item, index) => <circle className="chart-visitor-dot" key={`dot-${item.date}`} cx={xFor(index)} cy={yForVisitors(item.visitors)} r="3.5" />)}
+        {data.map((item, index) => labelIndexes.has(index) ? <text className="chart-date-label" key={`label-${item.date}`} x={xFor(index)} y={height - 12} textAnchor={index === 0 ? 'start' : index === data.length - 1 ? 'end' : 'middle'}>{formatShortDate(item.date)}</text> : null)}
+      </svg>
+    </div>
+  );
+}
+
+function EventBreakdown({ items }: { items: AdminAnalytics['eventBreakdown'] }) {
+  if (!items.length) return <div className="breakdown-empty"><EmptyState title="暂无事件数据" detail="埋点事件进入数据库后，会按类型汇总。" /></div>;
+  const max = Math.max(1, ...items.map((item) => item.count));
+  return <div className="event-bars">{items.slice(0, 8).map((item) => <div className="event-bar-row" key={item.name}><div className="event-bar-head"><span>{eventLabel(item.name)}</span><strong>{formatCompactNumber(item.count)}</strong></div><div className="event-bar-track"><i style={{ width: `${Math.max(2, (item.count / max) * 100)}%` }} /></div><small>{item.name}</small></div>)}</div>;
+}
+
+function ServiceStatus({ label, value, disabled = false }: { label: string; value: boolean | undefined; disabled?: boolean }) {
+  const state = disabled ? 'disabled' : value === undefined ? 'unknown' : value ? 'good' : 'bad';
+  const text = disabled ? '未启用' : value === undefined ? '读取中' : value ? '正常' : '异常';
+  return <div className={`service-status service-status-${state}`}><span className="status-dot" /><div><strong>{label}</strong><small>{text}</small></div></div>;
 }
 
 function Notice({ notice }: { notice: Notice }) {

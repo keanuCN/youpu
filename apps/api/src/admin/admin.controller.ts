@@ -44,6 +44,15 @@ export class AdminController {
     return this.admin.dashboard();
   }
 
+  @Get('analytics')
+  analytics(@Query('days') days?: string) {
+    const rangeDays = parsePositiveInteger(days, 'days');
+    if (rangeDays !== undefined && rangeDays > 90) {
+      throw new BadRequestException('days 不能超过 90');
+    }
+    return this.admin.analytics(rangeDays ?? 14);
+  }
+
   @Get('products')
   products(
     @Query('search') search?: string,

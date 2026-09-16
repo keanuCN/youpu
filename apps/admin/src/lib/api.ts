@@ -42,6 +42,49 @@ export interface AdminDashboard {
   }>;
 }
 
+export interface AdminAnalytics {
+  rangeDays: number;
+  from: string;
+  to: string;
+  summary: {
+    events: number;
+    uniqueVisitors: number;
+    productViews: number;
+    activeAccounts: number;
+  };
+  daily: Array<{
+    date: string;
+    visitors: number;
+    events: number;
+    productViews: number;
+  }>;
+  eventBreakdown: Array<{ name: string; count: number }>;
+  topPaths: Array<{ path: string; count: number }>;
+  topProducts: Array<{ productId: string; title: string | null; brand: string; count: number }>;
+  recentEvents: Array<{
+    visitor: string;
+    name: string;
+    path: string | null;
+    productId: string | null;
+    createdAt: string;
+  }>;
+  system: {
+    status: 'ok' | 'degraded';
+    checkedAt: string;
+    uptimeSeconds: number;
+    nodeVersion: string;
+    memory: { rssMb: number; heapUsedMb: number; heapTotalMb: number };
+    services: {
+      api: boolean;
+      database: boolean;
+      redis: boolean;
+      elasticsearch: boolean;
+      elasticsearchEnabled: boolean;
+    };
+    queue: { outboxPending: number | null; eventStreamLength: number | null };
+  };
+}
+
 export interface AdminProductSummary {
   id: string;
   slug: string;

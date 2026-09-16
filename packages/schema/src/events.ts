@@ -25,7 +25,7 @@ export const EVENT_NAMES = [
 export type EventName = (typeof EVENT_NAMES)[number];
 
 const productId = z.string().min(1).max(64);
-const fromSource = z.enum(['list', 'search', 'ranking', 'compare', 'home', 'recommend']);
+const fromSource = z.enum(['list', 'search', 'ranking', 'compare', 'home', 'recommend', 'detail']);
 
 export const eventPropsSchemas: Record<EventName, z.ZodType<Record<string, unknown>>> = {
   expose: z.object({

@@ -25,6 +25,55 @@ import { Prisma } from '../common/db';
 import { PrismaService } from '../common/prisma.service';
 import { toJsonInput } from '../common/json';
 import { uuidv7 } from '../common/uuid';
+import { RedisService } from '../common/redis.module';
+import { ElasticService } from '../search/elastic.service';
+
+const DAY_MS = 24 * 60 * 60 * 1000;
+const chinaDateFormatter = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'Asia/Shanghai',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+});
+
+interface AnalyticsSummaryRow {
+  events: number;
+  unique_visitors: number;
+  product_views: number;
+  active_accounts: number;
+}
+
+interface DailyAnalyticsRow {
+  date: string;
+  visitors: number;
+  events: number;
+  product_views: number;
+}
+
+interface EventBreakdownRow {
+  name: string;
+  count: number;
+}
+
+interface PathBreakdownRow {
+  path: string;
+  count: number;
+}
+
+interface TopProductRow {
+  product_id: string;
+  title: string | null;
+  brand: string | null;
+  event_count: number;
+}
+
+interface RecentAnalyticsEventRow {
+  visitor: string;
+  name: string;
+  path: string | null;
+  product_id: string | null;
+  created_at: Date;
+}
 
 export interface AdminProductListQuery {
   search?: string;
@@ -35,9 +84,40 @@ export interface AdminProductListQuery {
   pageSize?: number;
 }
 
+function chinaDateKey(date: Date): string {
+  const parts = Object.fromEntries(
+    chinaDateFormatter.formatToParts(date).map((part) => [part.type, part.value]),
+  );
+  return `${parts.year}-${parts.month}-${parts.day}`;
+}
+
+function buildDailySeries(days: number, rows: Map<string, DailyAnalyticsRow>) {
+  const todayKey = chinaDateKey(new Date());
+  const todayStart = new Date(`${todayKey}T00:00:00+08:00`);
+  return Array.from({ length: days }, (_, index) => {
+    const date = new Date(todayStart.getTime() - (days - index - 1) * DAY_MS);
+    const key = chinaDateKey(date);
+    const row = rows.get(key);
+    return {
+      date: key,
+      visitors: Number(row?.visitors ?? 0),
+      events: Number(row?.events ?? 0),
+      productViews: Number(row?.product_views ?? 0),
+    };
+  });
+}
+
+function roundMb(bytes: number): number {
+  return Math.round((bytes / 1024 / 1024) * 10) / 10;
+}
+
 @Injectable()
 export class AdminService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly redis: RedisService,
+    private readonly elastic: ElasticService,
+  ) {}
 
   async dashboard() {
     const [products, publishedProducts, drafts, brands, categories, recentProducts] = await this.prisma.$transaction([
@@ -70,6 +150,167 @@ export class AdminService {
         updatedAt: product.updatedAt.toISOString(),
       })),
     };
+  }
+
+  async analytics(days = 14) {
+    const rangeDays = Math.min(90, Math.max(1, Math.floor(days)));
+    const to = new Date();
+    const from = new Date(to.getTime() - rangeDays * DAY_MS);
+
+    const [summaryRows, dailyRows, eventRows, pathRows, productRows, recentRows, system] = await Promise.all([
+      this.prisma.$queryRaw<AnalyticsSummaryRow[]>`
+        SELECT
+          COUNT(*)::int AS events,
+          COUNT(DISTINCT anon_id)::int AS unique_visitors,
+          COUNT(*) FILTER (WHERE name = 'detail_view')::int AS product_views,
+          COUNT(DISTINCT account_id) FILTER (WHERE account_id IS NOT NULL)::int AS active_accounts
+        FROM event
+        WHERE created_at >= ${from}
+      `,
+      this.prisma.$queryRaw<DailyAnalyticsRow[]>`
+        SELECT
+          TO_CHAR((created_at AT TIME ZONE 'Asia/Shanghai')::date, 'YYYY-MM-DD') AS date,
+          COUNT(DISTINCT anon_id)::int AS visitors,
+          COUNT(*)::int AS events,
+          COUNT(*) FILTER (WHERE name = 'detail_view')::int AS product_views
+        FROM event
+        WHERE created_at >= ${from}
+        GROUP BY (created_at AT TIME ZONE 'Asia/Shanghai')::date
+        ORDER BY date ASC
+      `,
+      this.prisma.$queryRaw<EventBreakdownRow[]>`
+        SELECT name, COUNT(*)::int AS count
+        FROM event
+        WHERE created_at >= ${from}
+        GROUP BY name
+        ORDER BY count DESC, name ASC
+        LIMIT 12
+      `,
+      this.prisma.$queryRaw<PathBreakdownRow[]>`
+        SELECT COALESCE(NULLIF(path, ''), '(未记录路径)') AS path, COUNT(*)::int AS count
+        FROM event
+        WHERE created_at >= ${from}
+        GROUP BY 1
+        ORDER BY count DESC, path ASC
+        LIMIT 8
+      `,
+      this.prisma.$queryRaw<TopProductRow[]>`
+        SELECT
+          e.props->>'product_id' AS product_id,
+          COALESCE(MAX(p.title), e.props->>'product_id') AS title,
+          COALESCE(MAX(b.name_cn), MAX(b.name), '') AS brand,
+          COUNT(*)::int AS event_count
+        FROM event e
+        LEFT JOIN product p ON p.id::text = e.props->>'product_id'
+        LEFT JOIN brand b ON b.id = p.brand_id
+        WHERE e.created_at >= ${from}
+          AND e.name IN ('expose', 'card_click', 'detail_view', 'favorite_add', 'outbound_click', 'share_card_download')
+          AND e.props ? 'product_id'
+        GROUP BY e.props->>'product_id'
+        ORDER BY event_count DESC, product_id ASC
+        LIMIT 8
+      `,
+      this.prisma.$queryRaw<RecentAnalyticsEventRow[]>`
+        SELECT
+          LEFT(anon_id::text, 8) AS visitor,
+          name,
+          path,
+          props->>'product_id' AS product_id,
+          created_at
+        FROM event
+        WHERE created_at >= ${from}
+        ORDER BY created_at DESC
+        LIMIT 24
+      `,
+      this.systemStatus(),
+    ]);
+
+    const summary = summaryRows[0] ?? {
+      events: 0,
+      unique_visitors: 0,
+      product_views: 0,
+      active_accounts: 0,
+    };
+    const dailyMap = new Map(dailyRows.map((row) => [row.date, row]));
+
+    return {
+      rangeDays,
+      from: from.toISOString(),
+      to: to.toISOString(),
+      summary: {
+        events: Number(summary.events),
+        uniqueVisitors: Number(summary.unique_visitors),
+        productViews: Number(summary.product_views),
+        activeAccounts: Number(summary.active_accounts),
+      },
+      daily: buildDailySeries(rangeDays, dailyMap),
+      eventBreakdown: eventRows.map((row) => ({ name: row.name, count: Number(row.count) })),
+      topPaths: pathRows.map((row) => ({ path: row.path, count: Number(row.count) })),
+      topProducts: productRows.map((row) => ({
+        productId: row.product_id,
+        title: row.title || row.product_id,
+        brand: row.brand || '',
+        count: Number(row.event_count),
+      })),
+      recentEvents: recentRows.map((row) => ({
+        visitor: row.visitor,
+        name: row.name,
+        path: row.path || null,
+        productId: row.product_id || null,
+        createdAt: row.created_at.toISOString(),
+      })),
+      system,
+    };
+  }
+
+  async systemStatus() {
+    const checkedAt = new Date();
+    const [database, redis, elasticsearch, outboxPending, eventStreamLength] = await Promise.all([
+      this.checkDatabase(),
+      this.checkRedis(),
+      this.elastic.ping(),
+      this.prisma.outboxEvent.count({ where: { processedAt: null } }).catch(() => null),
+      this.redis.client.xlen('events:raw').catch(() => null),
+    ]);
+    const memory = process.memoryUsage();
+
+    return {
+      status: database && redis ? 'ok' : 'degraded',
+      checkedAt: checkedAt.toISOString(),
+      uptimeSeconds: Math.floor(process.uptime()),
+      nodeVersion: process.version,
+      memory: {
+        rssMb: roundMb(memory.rss),
+        heapUsedMb: roundMb(memory.heapUsed),
+        heapTotalMb: roundMb(memory.heapTotal),
+      },
+      services: {
+        api: true,
+        database,
+        redis,
+        elasticsearch,
+        elasticsearchEnabled: this.elastic.enabled,
+      },
+      queue: { outboxPending, eventStreamLength },
+    };
+  }
+
+  private async checkDatabase(): Promise<boolean> {
+    try {
+      await this.prisma.$queryRaw`SELECT 1`;
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  private async checkRedis(): Promise<boolean> {
+    try {
+      await this.redis.client.ping();
+      return true;
+    } catch {
+      return false;
+    }
   }
 
   async listProducts(params: AdminProductListQuery) {
