@@ -933,14 +933,14 @@ export function AdminApp() {
           action={<button className="button" onClick={() => refreshWorkspace().catch((error) => setNotice({ kind: 'error', text: getErrorText(error) }))}>刷新数据</button>}
         />
         <div className="metric-grid">
-          <Metric label="产品总数" value={metrics?.products ?? '—'} detail="PRODUCT RECORDS" accent />
-          <Metric label="已发布" value={metrics?.publishedProducts ?? '—'} detail="PUBLIC CATALOG" />
-          <Metric label="待处理草稿" value={metrics?.drafts ?? '—'} detail="DRAFT QUEUE" />
+          <Metric label="产品总数" value={metrics?.products ?? '—'} detail="产品记录" accent />
+          <Metric label="已发布" value={metrics?.publishedProducts ?? '—'} detail="公开目录" />
+          <Metric label="待处理草稿" value={metrics?.drafts ?? '—'} detail="草稿队列" />
           <Metric label="启用品牌" value={metrics?.brands ?? '—'} detail="品牌" />
-          <Metric label="启用类目" value={metrics?.categories ?? '—'} detail="SCHEMA FAMILIES" />
+          <Metric label="启用类目" value={metrics?.categories ?? '—'} detail="类目" />
         </div>
         <section className="data-panel quality-overview-panel">
-          <PanelHeader eyebrow="DATA QUALITY" title="内容补齐队列" meta="CATALOG QUALITY" />
+          <PanelHeader eyebrow="数据质量" title="内容补齐队列" meta="目录质量" />
           <div className="quality-overview-grid">
             <button type="button" className="quality-overview-item" onClick={() => openMissingProducts('image')}>
               <span>缺图片</span>
@@ -1031,7 +1031,7 @@ export function AdminApp() {
           <span className="filter-meta">{products ? `共 ${products.total} 条 / 第 ${products.page} 页` : '读取中……'}</span>
         </form>
         <section className="data-panel table-panel">
-          <PanelHeader eyebrow="PRODUCT RECORDS" title="产品清单" meta={products ? `${products.items?.length ?? 0} LOADED` : 'LOADING'} />
+          <PanelHeader eyebrow="产品记录" title="产品清单" meta={products ? `${products.items?.length ?? 0} 已加载` : 'LOADING'} />
           <div className="table-wrap">
             <table className="data-table product-table">
               <thead><tr><th>产品</th><th>品牌</th><th>类目</th><th>价格</th><th>资料状态</th><th>状态</th><th>更新</th><th /></tr></thead>
@@ -1138,7 +1138,7 @@ export function AdminApp() {
       <>
         <SectionHeader index="04" title="类目与参数" description="这里维护前台筛选、对比与后台产品表单共同使用的 spec_schema。" action={<button className="button button-primary" onClick={() => setCategoryForm(makeCategoryForm())}>+ 新增类目</button>} />
         {categoryForm && <CategoryEditor form={categoryForm} categories={categories} setForm={setCategoryForm} onSubmit={handleCategorySubmit} onCancel={() => setCategoryForm(null)} busy={busyAction === 'category-save'} />}
-        <section className="data-panel table-panel"><PanelHeader eyebrow="SCHEMA FAMILIES" title="类目清单" meta={`${categories.length} RECORDS`} /><div className="table-wrap"><table className="data-table"><thead><tr><th>类目</th><th>层级</th><th>schema</th><th>产品 / 子类目</th><th>状态</th><th /></tr></thead><tbody>{categories.map((category) => <tr key={category.id}><td><div className="record-title"><span className="record-mark">L{category.level}</span><span><strong>{category.name}</strong><small>{category.slug}{category.parent ? ` · 父级 ${category.parent.name}` : ' · 顶层类目'}</small></span></div></td><td><data>LV.{category.level}</data></td><td>{schemaFieldCount(category.specSchema)}</td><td><span>{category.productCount} 产品</span><small className="table-sub">{category.childCount} 个子类目</small></td><td><StatusBadge status={category.status} /></td><td><button className="text-button" onClick={() => setCategoryForm(categoryFormFromRecord(category))}>编辑 →</button></td></tr>)}</tbody></table></div>{!categories.length && <EmptyState title="暂无类目" detail="类目 schema 是产品参数录入的前置条件。" />}</section>
+        <section className="data-panel table-panel"><PanelHeader eyebrow="类目" title="类目清单" meta={`${categories.length} 条记录`} /><div className="table-wrap"><table className="data-table"><thead><tr><th>类目</th><th>层级</th><th>schema</th><th>产品 / 子类目</th><th>状态</th><th /></tr></thead><tbody>{categories.map((category) => <tr key={category.id}><td><div className="record-title"><span className="record-mark">L{category.level}</span><span><strong>{category.name}</strong><small>{category.slug}{category.parent ? ` · 父级 ${category.parent.name}` : ' · 顶层类目'}</small></span></div></td><td><data>LV.{category.level}</data></td><td>{schemaFieldCount(category.specSchema)}</td><td><span>{category.productCount} 产品</span><small className="table-sub">{category.childCount} 个子类目</small></td><td><StatusBadge status={category.status} /></td><td><button className="text-button" onClick={() => setCategoryForm(categoryFormFromRecord(category))}>编辑 →</button></td></tr>)}</tbody></table></div>{!categories.length && <EmptyState title="暂无类目" detail="类目 schema 是产品参数录入的前置条件。" />}</section>
       </>
     );
   }
@@ -1205,7 +1205,7 @@ export function AdminApp() {
           </section>
         </div>
         <section className="data-panel table-panel analytics-events-panel">
-          <PanelHeader eyebrow="RECENT TRACKING" title="最近埋点" meta={analytics?.recentEvents.length ? `${analytics.recentEvents.length} LOADED` : 'NO EVENTS'} />
+          <PanelHeader eyebrow="RECENT TRACKING" title="最近埋点" meta={analytics?.recentEvents.length ? `${analytics.recentEvents.length} 已加载` : 'NO EVENTS'} />
           {analytics?.recentEvents.length ? (
             <div className="table-wrap"><table className="data-table analytics-events-table"><thead><tr><th>事件</th><th>访客</th><th>路径</th><th>产品</th><th>时间</th></tr></thead><tbody>{analytics.recentEvents.map((item, index) => <tr key={`${item.createdAt}-${item.name}-${index}`}><td><strong>{eventLabel(item.name)}</strong><small className="table-sub">{item.name}</small></td><td><code className="visitor-code">{item.visitor}</code></td><td className="path-cell">{item.path ?? '未记录路径'}</td><td>{item.productId ?? '—'}</td><td><time className="table-sub">{formatDate(item.createdAt)}</time></td></tr>)}</tbody></table></div>
           ) : <EmptyState title="暂无埋点记录" detail="当前时间窗口内还没有可展示的用户行为事件。" />}
@@ -1238,8 +1238,8 @@ export function AdminApp() {
       <>
         <SectionHeader index="05" title="采集与导入" description="采集器与后台共用同一份 seed 契约；此页先提供状态边界，避免在没有文件上传与对象存储时制造假导入。" />
         <div className="import-grid">
-          <section className="data-panel"><PanelHeader eyebrow="AUTOMATED COLLECTION" title="自动采集状态" meta="SOURCE OF TRUTH" /><div className="import-status"><span className="status-dot status-dot-good" /><div><strong>文件层自动通过</strong><p>当前采集结果会先落到 data/，并由共享 schema 校验。自动采集暂不进入人工审核队列。</p></div></div><div className="command-block"><span>VALIDATE / 18 SEED RECORDS</span><code>pnpm --filter @youpu/api validate:data</code></div></section>
-          <section className="data-panel"><PanelHeader eyebrow="M2 OPERATIONS" title="导入边界" meta="MANUAL GATE" /><div className="boundary-list"><BoundaryItem state="NOW" title="手工产品 CRUD" detail="可从产品页补录、修正并发布单条产品。" /><BoundaryItem state="NOW" title="seed 校验命令" detail="用于提交前检查 slug、schema 和来源字段。" /><BoundaryItem state="LATER" title="批量文件上传" detail="上传、快照、COS 归档与批量冲突处理留到下一阶段。" /></div></section>
+          <section className="data-panel"><PanelHeader eyebrow="自动采集" title="自动采集状态" meta="数据依据" /><div className="import-status"><span className="status-dot status-dot-good" /><div><strong>文件层自动通过</strong><p>当前采集结果会先落到 data/，并由共享 schema 校验。自动采集暂不进入人工审核队列。</p></div></div><div className="command-block"><span>VALIDATE / 18 SEED 条记录</span><code>pnpm --filter @youpu/api validate:data</code></div></section>
+          <section className="data-panel"><PanelHeader eyebrow="阶段二操作" title="导入边界" meta="人工关卡" /><div className="boundary-list"><BoundaryItem state="现在" title="手工产品 CRUD" detail="可从产品页补录、修正并发布单条产品。" /><BoundaryItem state="现在" title="seed 校验命令" detail="用于提交前检查 slug、schema 和来源字段。" /><BoundaryItem state="后续" title="批量文件上传" detail="上传、快照、COS 归档与批量冲突处理留到下一阶段。" /></div></section>
         </div>
       </>
     );
@@ -1251,11 +1251,11 @@ export function AdminApp() {
         <SectionHeader index="06" title="内容审核" description="查看用户举报与实测评论状态；本地 M3 先提供最小审核闭环，后续再补角色权限、审核记录与批量操作。" action={<button className="button" type="button" onClick={() => void refreshModeration()} disabled={moderationBusy}>{moderationBusy ? '读取中……' : '刷新审核队列'}</button>} />
         <div className="analytics-grid analytics-grid-secondary">
           <section className="data-panel table-panel">
-            <PanelHeader eyebrow="REPORT QUEUE" title="举报记录" meta={`${reports.length} LOADED`} />
+            <PanelHeader eyebrow="举报队列" title="举报记录" meta={`${reports.length} 已加载`} />
             {reports.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>目标</th><th>原因</th><th>举报人</th><th>状态</th><th>时间</th><th /></tr></thead><tbody>{reports.map((report) => <tr key={report.id}><td><strong>{report.targetType}</strong><small className="table-sub">{report.targetId}</small></td><td><strong>{report.reason}</strong>{report.note ? <small className="table-sub">{report.note}</small> : null}</td><td>{report.reporter.nickname}<small className="table-sub">{report.reporter.email || report.reporter.id}</small></td><td><StatusBadge status={report.status} /></td><td><time className="table-sub">{formatDate(report.createdAt)}</time></td><td>{report.status === 'open' ? <div className="inline-actions"><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'resolved')}>处理</button><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'dismissed')}>驳回</button></div> : <button className="text-button" onClick={() => void updateReportStatus(report.id, 'open')}>重新打开</button>}</td></tr>)}</tbody></table></div> : <EmptyState title="暂无举报" detail="用户举报内容后会出现在这里。" />}
           </section>
           <section className="data-panel table-panel">
-            <PanelHeader eyebrow="RATING QUEUE" title="评论状态" meta={`${moderationRatings.length} LOADED`} />
+            <PanelHeader eyebrow="评论队列" title="评论状态" meta={`${moderationRatings.length} 已加载`} />
             {moderationRatings.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>产品</th><th>作者</th><th>评分 / 内容</th><th>状态</th><th /></tr></thead><tbody>{moderationRatings.map((rating) => <tr key={rating.id}><td><strong>{rating.product.title}</strong><small className="table-sub">{rating.product.slug}</small></td><td>{rating.account.nickname}<small className="table-sub">{rating.account.email || rating.account.id}</small></td><td><strong>{rating.overall.toFixed(1)} 分</strong><small className="table-sub">{rating.content || '无文字内容'} · {rating.helpfulCount} 有帮助</small></td><td><StatusBadge status={rating.status} /></td><td><div className="inline-actions">{rating.status !== 'published' && <button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'published')}>发布</button>}{rating.status === 'published' && <button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'hidden')}>隐藏</button>}<button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'rejected')}>拒绝</button></div></td></tr>)}</tbody></table></div> : <EmptyState title="暂无评论" detail="用户发布实测后会出现在这里。" />}
           </section>
         </div>
@@ -1304,7 +1304,7 @@ export function AdminApp() {
         <div className="sidebar-rule" />
         <p className="sidebar-label">操作模块</p>
         <nav className="sidebar-nav" aria-label="后台模块">{(['工作台', '资料库', '内容运营'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span>{item.index}</span><strong>{item.label}</strong></button>)}</div>)}</nav>
-        <div className="sidebar-bottom"><div className="system-readout"><span className="status-dot status-dot-good" /><span>API SESSION / {(role || 'admin').toUpperCase()}</span></div><button className="logout-button" onClick={logout}>退出工作台 <span>↗</span></button></div>
+        <div className="sidebar-bottom"><div className="system-readout"><span className="status-dot status-dot-good" /><span>API 会话 / 权限：{role || 'admin'}</span></div><button className="logout-button" onClick={logout}>退出工作台 <span>↗</span></button></div>
       </aside>
       <main className="admin-main">
         <header className="topbar"><div><span className="topbar-code">有谱后台</span><span className="topbar-slash">/</span><span>{navItems.find((item) => item.id === activeSection)?.label}</span></div><div className="topbar-right"><span className="api-origin">API {getApiHost()}</span><span className="revision">版本 M3.01</span></div></header>
@@ -1337,7 +1337,7 @@ function Metric({ label, value, detail, accent = false }: { label: string; value
 }
 
 function BoundaryItem({ state, title, detail }: { state: string; title: string; detail: string }) {
-  return <div className="boundary-item"><span className={state === 'READY' || state === 'NOW' ? 'boundary-state boundary-state-ready' : 'boundary-state'}>{state}</span><div><strong>{title}</strong><p>{detail}</p></div></div>;
+  return <div className="boundary-item"><span className={state === 'READY' || state === '现在' ? 'boundary-state boundary-state-ready' : 'boundary-state'}>{state}</span><div><strong>{title}</strong><p>{detail}</p></div></div>;
 }
 
 function StatusBadge({ status }: { status: string }) {
@@ -1413,7 +1413,7 @@ function Field({ label, hint, required = false, wide = false, children }: { labe
 }
 
 function BrandEditor({ form, setForm, onSubmit, onCancel, busy }: { form: BrandFormState; setForm: React.Dispatch<React.SetStateAction<BrandFormState | null>>; onSubmit: (event: FormEvent<HTMLFormElement>) => void; onCancel: () => void; busy: boolean }) {
-  return <section className="data-panel editor-panel"><PanelHeader eyebrow={form.id ? 'EDIT BRAND' : 'NEW BRAND'} title={form.id ? '编辑品牌' : '新增品牌'} meta="BRAND RECORD" /><form className="form-grid" onSubmit={onSubmit}><Field label="品牌名" required><input required value={form.name} onChange={(event) => setForm((current) => current && ({ ...current, name: event.target.value }))} /></Field><Field label="中文名"><input value={form.nameCn} onChange={(event) => setForm((current) => current && ({ ...current, nameCn: event.target.value }))} /></Field><Field label="slug" required hint="kebab-case"><input required pattern="[a-z0-9]+(-[a-z0-9]+)*" value={form.slug} onChange={(event) => setForm((current) => current && ({ ...current, slug: event.target.value }))} /></Field><Field label="国家 / 地区"><input maxLength={8} value={form.country} onChange={(event) => setForm((current) => current && ({ ...current, country: event.target.value }))} /></Field><Field label="官网 URL"><input type="url" value={form.officialUrl} onChange={(event) => setForm((current) => current && ({ ...current, officialUrl: event.target.value }))} /></Field><Field label="Logo URL"><input type="url" value={form.logoUrl} onChange={(event) => setForm((current) => current && ({ ...current, logoUrl: event.target.value }))} /></Field><Field label="状态"><select value={form.status} onChange={(event) => setForm((current) => current && ({ ...current, status: event.target.value as BrandFormState['status'] }))}><option value="active">启用</option><option value="inactive">停用</option></select></Field><Field label="描述" wide><textarea rows={3} value={form.description} onChange={(event) => setForm((current) => current && ({ ...current, description: event.target.value }))} /></Field><div className="inline-actions"><button className="button" type="button" onClick={onCancel}>取消</button><button className="button button-primary" type="submit" disabled={busy}>{busy ? '保存中……' : '保存品牌  →'}</button></div></form></section>;
+  return <section className="data-panel editor-panel"><PanelHeader eyebrow={form.id ? '编辑品牌' : '新增品牌'} title={form.id ? '编辑品牌' : '新增品牌'} meta="品牌记录" /><form className="form-grid" onSubmit={onSubmit}><Field label="品牌名" required><input required value={form.name} onChange={(event) => setForm((current) => current && ({ ...current, name: event.target.value }))} /></Field><Field label="中文名"><input value={form.nameCn} onChange={(event) => setForm((current) => current && ({ ...current, nameCn: event.target.value }))} /></Field><Field label="slug" required hint="kebab-case"><input required pattern="[a-z0-9]+(-[a-z0-9]+)*" value={form.slug} onChange={(event) => setForm((current) => current && ({ ...current, slug: event.target.value }))} /></Field><Field label="国家 / 地区"><input maxLength={8} value={form.country} onChange={(event) => setForm((current) => current && ({ ...current, country: event.target.value }))} /></Field><Field label="官网 URL"><input type="url" value={form.officialUrl} onChange={(event) => setForm((current) => current && ({ ...current, officialUrl: event.target.value }))} /></Field><Field label="Logo URL"><input type="url" value={form.logoUrl} onChange={(event) => setForm((current) => current && ({ ...current, logoUrl: event.target.value }))} /></Field><Field label="状态"><select value={form.status} onChange={(event) => setForm((current) => current && ({ ...current, status: event.target.value as BrandFormState['status'] }))}><option value="active">启用</option><option value="inactive">停用</option></select></Field><Field label="描述" wide><textarea rows={3} value={form.description} onChange={(event) => setForm((current) => current && ({ ...current, description: event.target.value }))} /></Field><div className="inline-actions"><button className="button" type="button" onClick={onCancel}>取消</button><button className="button button-primary" type="submit" disabled={busy}>{busy ? '保存中……' : '保存品牌  →'}</button></div></form></section>;
 }
 
 function CategoryEditor({ form, categories, setForm, onSubmit, onCancel, busy }: { form: CategoryFormState; categories: AdminCategoryRecord[]; setForm: React.Dispatch<React.SetStateAction<CategoryFormState | null>>; onSubmit: (event: FormEvent<HTMLFormElement>) => void; onCancel: () => void; busy: boolean }) {
