@@ -1542,7 +1542,20 @@ textarea:focus {
 }
 
 .sidebar-nav {
+  display: grid;
+  gap: 18px;
+}
+
+.sidebar-group {
+  display: grid;
   gap: 4px;
+}
+
+.sidebar-group-label {
+  margin: 0 8px 5px;
+  color: var(--sidebar-muted);
+  font-size: 11px;
+  font-weight: 700;
 }
 
 .nav-item {
@@ -1559,6 +1572,7 @@ textarea:focus {
 }
 
 .nav-item strong {
+  grid-column: 2;
   color: inherit;
   font-size: 13px;
   font-weight: 600;
@@ -2213,10 +2227,32 @@ textarea:focus {
   .sidebar-nav {
     display: flex;
     overflow-x: auto;
-    gap: 5px;
+    align-items: stretch;
+    gap: 10px;
     margin-top: 10px;
     padding: 1px 0 2px;
     scrollbar-width: none;
+  }
+
+  .sidebar-group {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 5px;
+    padding-right: 10px;
+    border-right: 1px solid var(--sidebar-line);
+  }
+
+  .sidebar-group:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .sidebar-group-label {
+    margin: 0 2px 0 0;
+    color: var(--sidebar-muted);
+    font-size: 10px;
+    white-space: nowrap;
   }
 
   .sidebar-nav::-webkit-scrollbar {
@@ -2225,6 +2261,7 @@ textarea:focus {
 
   .nav-item {
     display: flex;
+    flex: 0 0 auto;
     min-width: max-content;
     align-items: center;
     gap: 7px;
