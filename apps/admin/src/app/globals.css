@@ -2351,3 +2351,139 @@ textarea:focus {
     display: none;
   }
 }
+
+/* Readability pass: keep the workbench compact without making supporting text tiny. */
+:root {
+  --muted: #5c6b76;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.topbar {
+  font-size: 12px;
+}
+
+.brand-lockup strong {
+  font-size: 12px;
+}
+
+.brand-lockup small,
+.sidebar-label,
+.nav-item small,
+.system-readout {
+  font-size: 11px;
+}
+
+.nav-item strong {
+  font-size: 14px;
+}
+
+.section-description,
+.login-copy {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+.button,
+.text-button {
+  font-size: 13px;
+}
+
+.login-form .field > span,
+.filter-bar label > span,
+.field > span {
+  font-size: 13px;
+}
+
+.login-footnote,
+.filter-meta,
+.panel-meta,
+.section-side {
+  font-size: 12px;
+}
+
+.metric-label,
+.metric-card small {
+  font-size: 12px;
+}
+
+.panel-header h2 {
+  font-size: 20px;
+}
+
+.activity-code,
+.record-mark,
+.boundary-state {
+  font-size: 11px;
+}
+
+.activity-main small,
+.record-title small,
+.table-sub {
+  font-size: 12px;
+}
+
+.activity-row time {
+  font-size: 11px;
+}
+
+.boundary-item strong {
+  font-size: 14px;
+}
+
+.boundary-item p,
+.empty-state p,
+.inline-warning {
+  font-size: 13px;
+}
+
+.data-table th,
+.status-badge {
+  font-size: 12px;
+}
+
+.field > small,
+.spec-group-title {
+  font-size: 12px;
+}
+
+.form-section-head h3 {
+  font-size: 18px;
+}
+
+.command-block span,
+.admin-footer {
+  font-size: 11px;
+}
+
+@media (max-width: 900px) {
+  .nav-item > span {
+    font-size: 10px;
+  }
+
+  .nav-item strong {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 620px) {
+  .topbar {
+    font-size: 11px;
+  }
+
+  .section-header h1 {
+    font-size: 32px;
+  }
+
+  .product-table .text-button {
+    font-size: 11px;
+  }
+}
