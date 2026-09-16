@@ -19,3 +19,5 @@ concerns：none
 复审修正：将“本地 M3”改为“本地第三阶段”，品牌列表装饰标记改为“牌”，统一分析/审核加载数量为“条已加载”，并将表头 schema 改为“参数 schema”。
 
 再次复审修正：将类目层级展示从 `LV.${category.level}` 改为 `第 ${category.level} 级`。
+
+最终复审修正：将类目记录左侧装饰标记从 `L{category.level}` 改为 `级{category.level}`。
