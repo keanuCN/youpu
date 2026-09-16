@@ -1,0 +1,27 @@
+slug: capita-the-matriarch-2027
+category: snowboard
+brand: capita
+model: The Matriarch
+year: 2027
+title: The Matriarch CAPiTA Snowboards | NA
+specs:
+  length: 158
+  effectiveEdge: 1180
+  waistWidth: 257
+  sidecut: 8.1
+  stanceSetback: 20.3
+  profile: Alpine V4 Directional
+  profileFamily: camber
+  shape: DIRECTIONAL 0.8" SETBACK
+  core: TRANSCEND CORE
+  fiberglass: HYBRID SUPERCARBON HOLYSHEET TRI/TRI + MAGIC BEAN RESIN
+  base: HYPERDRIVE ADV XT BASE
+  flex: 7
+  scenes:
+    - all-mountain
+    - powder
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-the-matriarch-mens-snowboard-2027
+status: published

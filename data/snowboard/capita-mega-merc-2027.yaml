@@ -1,0 +1,27 @@
+slug: capita-mega-merc-2027
+category: snowboard
+brand: capita
+model: Mega Merc
+year: 2027
+title: CAPiTA Mega Merc Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 157
+  effectiveEdge: 1215
+  waistWidth: 257
+  sidecut: 7.85
+  stanceSetback: 12.7
+  profile: Resort V2 Directional + Flat Kick Tech
+  profileFamily: hybrid
+  shape: DIRECTIONAL 0.5" SETBACK
+  core: 3D THERMOPOLYMER STARSHIP CORE
+  fiberglass: HYBRID CARBON HOLYSHEET TRI/TRI FIBERGLASS + MEGACARBON MAGIC BEAN RESIN
+  base: MEGADRIVE XT BASE
+  flex: 7
+  scenes:
+    - all-mountain
+    - powder
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-mega-merc-mens-snowboard-2027
+status: published

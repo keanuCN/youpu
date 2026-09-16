@@ -1,0 +1,27 @@
+slug: capita-sidewinder-2027
+category: snowboard
+brand: capita
+model: Sidewinder
+year: 2027
+title: CAPiTA Sidewinder Snowboard CAPiTA Snowboards | NA
+specs:
+  length: 159
+  effectiveEdge: 1225
+  waistWidth: 258
+  sidecut: 7
+  stanceSetback: 20.3
+  profile: Alpine V3 Directional
+  profileFamily: hybrid
+  shape: DIRECTIONAL 0.8" SETBACK
+  core: DUAL CORE
+  fiberglass: SPECIAL BLEND FIBERGLASS MAGIC BEAN RESIN
+  base: QUANTUM DRIVE BASE
+  flex: 5.5
+  scenes:
+    - carving
+    - all-mountain
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-sidewinder-mens-snowboard-2027
+status: published

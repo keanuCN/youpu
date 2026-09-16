@@ -5,3 +5,5 @@ export * from './seed';
 export * from './api';
 export * from './search';
 export * from './admin';
+export * from './auth';
+export * from './community';

@@ -2,6 +2,7 @@
 
 import type { EventName } from '@youpu/schema';
 import { API_BASE } from './api';
+import { getCloudAccessToken } from './api';
 
 /**
  * 自研轻埋点 SDK（技术方案 §12.1）：track() → 队列 → 批量 POST /api/events → Redis Stream → PG。
@@ -65,7 +66,10 @@ async function flush(): Promise<void> {
   try {
     await fetch(`${API_BASE}/api/events`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        ...(getCloudAccessToken() ? { Authorization: `Bearer ${getCloudAccessToken()}` } : {}),
+      },
       body: JSON.stringify({ anonId, events }),
       keepalive: true,
     });

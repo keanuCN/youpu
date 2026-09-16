@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: '有谱后台 | M2 数据工作台',
+  title: '有谱后台 | M3 本地工作台',
   description: '有谱产品资料库管理后台',
 };
 

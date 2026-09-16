@@ -4,9 +4,12 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { Heart, Scale } from "lucide-react";
 import { toast } from "sonner";
+import { MediaPlaceholder, PendingValue } from "@/components/gear/data-state";
 import { reviewCount, userRating } from "@/data/boards";
 import { sceneLabel } from "@/lib/domain";
 import { fmtCompact, fmtPrice } from "@/lib/format";
+import { hasEditorialScores, hasMedia, hasPrice, hasUserRating, mediaUrl } from "@/lib/gear-state";
+import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear } from "@/lib/api";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
 import { track, trackExposeOnce } from "@/lib/track";
 import { cn } from "@/lib/utils";
@@ -36,6 +39,11 @@ export function GearCard({
   const me = useCurrentUser();
   const fav = me.isFavorite(gear.id);
   const inDock = me.dockIds.includes(gear.id);
+  const priceReady = hasPrice(gear);
+  const editorialReady = hasEditorialScores(gear);
+  const mediaReady = hasMedia(gear);
+  const mediaSrc = mediaUrl(gear);
+  const ratingReady = hasUserRating(gear);
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -60,6 +68,13 @@ export function GearCard({
     requireAuth(() => {
       const added = toggleFavorite(gear.id);
       if (added) track("favorite_add", { product_id: gear.id });
+      if (hasCloudSession()) {
+        const request = added ? cloudAddFavorite(productRefForGear(gear)) : cloudRemoveFavorite(productRefForGear(gear));
+        void request.catch(() => {
+          toggleFavorite(gear.id);
+          toast.error("云端收藏同步失败，已恢复本地状态");
+        });
+      }
       toast.success(added ? `已收藏 ${gear.model}` : `已取消收藏`);
     }, "收藏装备需要先登录");
   };
@@ -93,7 +108,11 @@ export function GearCard({
         onClick={() => track("card_click", { product_id: gear.id, from })}
       >
         <div className="relative aspect-[4/5] overflow-hidden bg-secondary">
-          <img src={gear.hero} alt={`${gear.brand} ${gear.model}`} loading="lazy" className="plate h-full w-full object-cover" />
+          {mediaReady && mediaSrc ? (
+            <img src={mediaSrc} alt={`${gear.brand} ${gear.model}`} loading="lazy" className="plate h-full w-full object-cover" />
+          ) : (
+            <MediaPlaceholder label={`${gear.brand} ${gear.model}`} />
+          )}
           <div className="absolute top-0 left-0">
             {rank ? (
               <span className="mono-data bg-foreground px-2 py-1 text-[13px] text-background tnum">
@@ -104,7 +123,7 @@ export function GearCard({
             ) : null}
           </div>
           <div className="absolute top-0 right-0">
-            <ScoreMark value={gear.composite} size="sm" />
+            {editorialReady ? <ScoreMark value={gear.composite} size="sm" /> : <PendingValue label="待补分" className="bg-background/90 px-1.5 py-1" />}
           </div>
           <div className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-foreground/85 px-2.5 py-1.5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <span className="mono-label text-background/70">{gear.year} 款</span>
@@ -130,14 +149,22 @@ export function GearCard({
 
           <div className="mt-auto flex items-end justify-between gap-2 border-t border-border pt-2.5">
             <div className="min-w-0">
-              <p className="mono-data text-[15px] leading-none tnum">{fmtPrice(gear.price)}</p>
-              <p className="mono-label mt-1.5">官方参考价</p>
+              <p className="mono-data text-[15px] leading-none tnum">
+                {priceReady ? fmtPrice(gear.price) : <PendingValue label="价格待补" />}
+              </p>
+              <p className="mono-label mt-1.5">{priceReady ? "官方参考价" : "价格尚未采集"}</p>
             </div>
             <div className="flex flex-col items-end gap-1">
-              <Stars value={userRating(gear)} size={11} />
-              <span className="mono-data text-[11px] text-muted-foreground tnum">
-                {userRating(gear).toFixed(1)} · {reviewCount(gear)} 条实测
-              </span>
+              {ratingReady ? (
+                <>
+                  <Stars value={userRating(gear)} size={11} />
+                  <span className="mono-data text-[11px] text-muted-foreground tnum">
+                    {userRating(gear).toFixed(1)} · {reviewCount(gear)} 条实测
+                  </span>
+                </>
+              ) : (
+                <PendingValue label="暂无实测" />
+              )}
             </div>
           </div>
         </div>
@@ -202,17 +229,21 @@ export function GearRow({
         </span>
       ) : null}
       <div className="h-14 w-14 shrink-0 overflow-hidden bg-secondary">
-        <img src={gear.hero} alt="" loading="lazy" className="plate h-full w-full object-cover" />
+        {hasMedia(gear) && mediaUrl(gear) ? (
+          <img src={mediaUrl(gear)} alt={`${gear.brand} ${gear.model}`} loading="lazy" className="plate h-full w-full object-cover" />
+        ) : (
+          <MediaPlaceholder label={`${gear.brand} ${gear.model}`} />
+        )}
       </div>
       <div className="min-w-0 flex-1">
         <p className="mono-label truncate">{gear.brand}</p>
         <p className="truncate text-[14px] font-medium">{gear.model}</p>
         <p className="mono-label mt-1 truncate">
-          {note ?? `${gear.year} · ${fmtPrice(gear.price)} · ${gear.scenes.map(sceneLabel).join(" / ")}`}
+          {note ?? `${gear.year} · ${hasPrice(gear) ? fmtPrice(gear.price) : "价格待补"} · ${gear.scenes.length ? gear.scenes.map(sceneLabel).join(" / ") : "场景待补"}`}
         </p>
       </div>
       <div className="shrink-0 text-right">
-        <ScoreMark value={gear.composite} size="sm" />
+        {hasEditorialScores(gear) ? <ScoreMark value={gear.composite} size="sm" /> : <PendingValue label="待补分" />}
         <p className="mono-label mt-1.5 hidden sm:block">{fmtCompact(gear.heat)} 热度</p>
       </div>
     </Link>

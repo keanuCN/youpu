@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { reviewCount, userRating } from "@/data/boards";
 import { BRAND } from "@/lib/brand";
+import { fmtPrice } from "@/lib/format";
+import { hasPrice } from "@/lib/gear-state";
 import type { Category, GearItem } from "@/types";
 
 /**
@@ -17,9 +19,14 @@ export function absoluteUrl(path: string): string {
 /** 详情页：型号词是天然长尾，标题吃 {model} {year} + 决策词（技术方案 §14.2 模板） */
 export function gearMetadata(gear: GearItem): Metadata {
   const title = `${gear.model} ${gear.year} 参数 · 实测评分 · 尺寸怎么选 - ${gear.brand}`;
+  const facts = [
+    `${reviewCount(gear)} 条实测`,
+    gear.flexValue > 0 ? `硬度 ${gear.flexValue}/10` : "硬度待补充",
+    hasPrice(gear) ? fmtPrice(gear.price) : "价格待补充",
+  ].join(" · ");
   const description = [
-    gear.analysis.verdict,
-    `${reviewCount(gear)} 条实测 · 硬度 ${gear.flexValue}/10 · ¥${gear.price.toLocaleString("zh-CN")}`,
+    gear.analysis.verdict || `${gear.brand} ${gear.model} ${gear.year} 官方规格档案`,
+    facts,
   ]
     .filter(Boolean)
     .join("｜")
@@ -64,21 +71,25 @@ export function simpleMetadata(opts: {
 export function productJsonLd(gear: GearItem) {
   const rating = userRating(gear);
   const count = reviewCount(gear);
-  const profile = gear.gallery.map((s) => s.url);
+  const profile = gear.gallery.map((s) => s.url).filter(Boolean);
   return {
     "@context": "https://schema.org",
     "@type": "Product",
     name: `${gear.brand} ${gear.model} ${gear.year}`,
     brand: { "@type": "Brand", name: gear.brand },
-    description: gear.analysis.verdict,
-    image: profile,
-    offers: {
-      "@type": "Offer",
-      price: gear.price,
-      priceCurrency: "CNY",
-      availability: "https://schema.org/InStock",
-      url: absoluteUrl(`/gear/${gear.id}`),
-    },
+    description: gear.analysis.verdict || `${gear.brand} ${gear.model} ${gear.year} 官方规格档案`,
+    ...(profile.length > 0 ? { image: profile } : {}),
+    ...(hasPrice(gear)
+      ? {
+          offers: {
+            "@type": "Offer",
+            price: gear.price,
+            priceCurrency: "CNY",
+            availability: "https://schema.org/InStock",
+            url: absoluteUrl(`/gear/${gear.id}`),
+          },
+        }
+      : {}),
     // 有实测评分才输出聚合评分，避免空数据进入富摘要
     ...(count > 0
       ? { aggregateRating: { "@type": "AggregateRating", ratingValue: rating, reviewCount: count, bestRating: 5 } }

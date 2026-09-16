@@ -43,6 +43,8 @@ node C:\nvm4w\nodejs\node_modules\pnpm\bin\pnpm.mjs --filter @youpu/collector cr
 
 剩余 seed 的只读发现目标见 `examples/phase2-discovery-targets.json`。该文件用于判断页面身份和结构，不指定代表尺寸，也不会生成正式 seed；其中部分 URL 是当前季节页面，不能据此覆盖历史年份。
 
+M2 本地数据扩展目标见 `examples/phase2-expansion-targets.json`。本批使用 Jones 与 CAPiTA 官方产品页，开启 `--auto-approve` 后由代表尺寸选择、采集质量闸门、完整 `spec_schema` 校验和 raw 审计共同决定是否落入正式 seed；本地已新增 22 条通过校验的产品 seed。`jones-stratos-2027` 因当前页面显式季节与目标年份不一致，仅保留 raw，不写入正式目录。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

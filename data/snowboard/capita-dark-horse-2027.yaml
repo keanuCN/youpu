@@ -1,0 +1,27 @@
+slug: capita-dark-horse-2027
+category: snowboard
+brand: capita
+model: Dark Horse
+year: 2027
+title: CAPiTA Dark Horse Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 154
+  effectiveEdge: 1188
+  waistWidth: 254
+  sidecut: 8
+  stanceSetback: 0
+  profile: PARK V1
+  profileFamily: hybrid
+  shape: TRUE TWIN
+  core: DUAL CORE
+  fiberglass: HOLYSHEET TRI/BI MAGIC BEAN RESIN
+  base: SUPERDRIVE BASE
+  flex: 6
+  scenes:
+    - freestyle
+    - all-mountain
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027
+status: published

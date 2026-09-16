@@ -1,6 +1,7 @@
 import { GEAR, GEAR_BY_ID, reviewCount, userRating } from "@/data/boards";
 import { SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { BASE_VOTES, SEED_REVIEWS } from "@/data/seeds";
+import { hasFlex, hasHardcoreIndex, hasPrice } from "@/lib/gear-state";
 import { GUEST, type Persisted } from "@/lib/persisted";
 import type { GearItem, QuizQuestion, Review, ScoreDim, SortKey, SpecGroup } from "@/types";
 
@@ -51,11 +52,14 @@ export function activeFilterCount(f: Filters): number {
 
 export function applyFilters(items: GearItem[], f: Filters): GearItem[] {
   const q = f.q.trim().toLowerCase();
+  const priceFilterActive = f.price[0] !== PRICE_BOUNDS[0] || f.price[1] !== PRICE_BOUNDS[1];
   return items.filter((g) => {
     if (f.scenes.length && !f.scenes.some((s) => g.scenes.includes(s))) return false;
     if (f.profileFamily.length && !f.profileFamily.includes(String(g.specs.profileFamily ?? ""))) return false;
-    if (f.flex.length && !f.flex.includes(flexBucketOf(g.flexValue))) return false;
-    if (g.price < f.price[0] || g.price > f.price[1]) return false;
+    // 显式筛选时，缺失 flex 不能被数值 0 误判为 soft。
+    if (f.flex.length && (!hasFlex(g) || !f.flex.includes(flexBucketOf(g.flexValue)))) return false;
+    // 默认价格区间不能把价格尚未采集的产品误删；用户主动调价时，未知价格不参与匹配。
+    if (priceFilterActive && (!hasPrice(g) || g.price < f.price[0] || g.price > f.price[1])) return false;
     if (f.brands.length && !f.brands.includes(g.brand)) return false;
     if (f.years.length && !f.years.includes(String(g.year))) return false;
     if (q) {
@@ -371,7 +375,7 @@ export function recommend(a: QuizAnswers): Recommendation[] {
       }
     }
 
-    if (a.budget && BUDGET_RANGE[a.budget]) {
+    if (a.budget && BUDGET_RANGE[a.budget] && hasPrice(g)) {
       const [lo, hi] = BUDGET_RANGE[a.budget]!;
       if (g.price >= lo && g.price <= hi) {
         score += 20;
@@ -394,7 +398,7 @@ export function recommend(a: QuizAnswers): Recommendation[] {
       }
     }
 
-    if (a.flex && a.flex !== "unsure") {
+    if (a.flex && a.flex !== "unsure" && g.flexValue > 0) {
       const bucket = flexBucketOf(g.flexValue);
       const want = a.flex === "soft" ? ["soft"] : a.flex === "mid" ? ["mid", "midstiff"] : ["midstiff", "stiff"];
       if (want.includes(bucket)) {
@@ -405,7 +409,7 @@ export function recommend(a: QuizAnswers): Recommendation[] {
       }
     }
 
-    if (a.level) {
+    if (a.level && hasHardcoreIndex(g)) {
       const hard = g.hardcore;
       if (a.level === "first" && hard <= 45) {
         score += 18;
@@ -426,12 +430,14 @@ export function recommend(a: QuizAnswers): Recommendation[] {
 
     if (a.priority) {
       const dim = a.priority === "value" ? "value" : a.priority;
-      const v = g.scores[dim] ?? 5;
-      score += (v - 5) * 4;
-      if (v >= 8.5) reasons.push(`${dimLabel(dim)} ${v}/10，是它的强项`);
+      const v = g.scores[dim];
+      if (v !== undefined) {
+        score += (v - 5) * 4;
+        if (v >= 8.5) reasons.push(`${dimLabel(dim)} ${v}/10，是它的强项`);
+      }
     }
 
-    score += (g.composite - 70) * 0.4;
+    if (g.composite > 0) score += (g.composite - 70) * 0.4;
     return { gear: g, raw: score, reasons };
   });
 

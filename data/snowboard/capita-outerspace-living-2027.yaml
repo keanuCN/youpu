@@ -1,0 +1,27 @@
+slug: capita-outerspace-living-2027
+category: snowboard
+brand: capita
+model: Outerspace Living
+year: 2027
+title: CAPiTA Outerspace Living Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 154
+  effectiveEdge: 1168
+  waistWidth: 250
+  sidecut: 7.8
+  stanceSetback: 12.7
+  profile: RESORT V3
+  profileFamily: hybrid
+  shape: DIRECTIONAL TWIN 0.5" SETBACK
+  core: MULTIZONE DUAL CORE
+  fiberglass: SPECIAL BLEND FIBERGLASS MAGIC BEAN RESIN
+  base: SUPERDRIVE ADV BASE
+  flex: 5
+  scenes:
+    - all-mountain
+    - freestyle
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-outerspace-living-mens-snowboard-2027
+status: published

@@ -8,7 +8,8 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { BRAND } from "@/lib/brand";
-import { login, mergeGuestDock, register, resetPassword } from "@/lib/store";
+import { cloudLogin, cloudMe, cloudRegister, cloudResetPassword, WebApiError, saveCloudSession } from "@/lib/api";
+import { applyCloudAccount, applyCloudMe, login, mergeGuestDock, register, resetPassword } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 type Mode = "login" | "register" | "forgot";
@@ -47,15 +48,27 @@ export function LoginDialog({
     }
   }, [open]);
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setBusy(true);
     if (mode === "register") {
-      const res = register(email, password, username);
-      if (!res.ok) {
-        toast.error(res.message);
-        setBusy(false);
-        return;
+      try {
+        const session = await cloudRegister(email, password, username);
+        saveCloudSession(session);
+        applyCloudAccount(session.account);
+        void cloudMe().then(applyCloudMe).catch(() => undefined);
+      } catch (error) {
+        if (!isNetworkError(error)) {
+          toast.error(errorMessage(error));
+          setBusy(false);
+          return;
+        }
+        const res = register(email, password, username);
+        if (!res.ok) {
+          toast.error(res.message);
+          setBusy(false);
+          return;
+        }
       }
       mergeGuestDock();
       toast.success("账号已创建，游客期的对比坞已合并");
@@ -63,11 +76,20 @@ export function LoginDialog({
       return;
     }
     if (mode === "forgot") {
-      const res = resetPassword(email, password);
-      if (!res.ok) {
-        toast.error(res.message);
-        setBusy(false);
-        return;
+      try {
+        await cloudResetPassword(email, password);
+      } catch (error) {
+        if (!isNetworkError(error)) {
+          toast.error(errorMessage(error));
+          setBusy(false);
+          return;
+        }
+        const res = resetPassword(email, password);
+        if (!res.ok) {
+          toast.error(res.message);
+          setBusy(false);
+          return;
+        }
       }
       toast.success("密码已重置，请用新密码登录");
       setMode("login");
@@ -75,11 +97,23 @@ export function LoginDialog({
       setBusy(false);
       return;
     }
-    const res = login(email, password);
-    if (!res.ok) {
-      toast.error(res.message);
-      setBusy(false);
-      return;
+    try {
+      const session = await cloudLogin(email, password);
+      saveCloudSession(session);
+      applyCloudAccount(session.account);
+      void cloudMe().then(applyCloudMe).catch(() => undefined);
+    } catch (error) {
+      if (!isNetworkError(error) && !(error instanceof WebApiError && error.status === 401 && email.trim().toLowerCase() === BRAND.demoEmail)) {
+        toast.error(errorMessage(error));
+        setBusy(false);
+        return;
+      }
+      const res = login(email, password);
+      if (!res.ok) {
+        toast.error(res.message);
+        setBusy(false);
+        return;
+      }
     }
     mergeGuestDock();
     toast.success("登录成功");
@@ -190,7 +224,7 @@ export function LoginDialog({
               </Button>
             </div>
             <p className="mt-3 text-[12px] leading-relaxed text-muted-foreground">
-              账号与收藏保存在本机浏览器，
+              本地 API 已接入账号与收藏，
               <Link href="/me" className="story-link ml-1" onClick={() => onOpenChange(false)}>
                 个人中心
               </Link>
@@ -201,4 +235,12 @@ export function LoginDialog({
       </DialogContent>
     </Dialog>
   );
+}
+
+function isNetworkError(error: unknown): boolean {
+  return error instanceof WebApiError && error.status === 0;
+}
+
+function errorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : "请求失败，请稍后重试";
 }

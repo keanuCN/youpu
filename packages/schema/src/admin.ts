@@ -84,3 +84,17 @@ export type AdminCategoryInput = z.infer<typeof adminCategoryInputSchema>;
 
 export const adminCategoryPatchSchema = adminCategoryInputSchema.partial().strict();
 export type AdminCategoryPatch = z.infer<typeof adminCategoryPatchSchema>;
+
+export const adminModerationPatchSchema = z
+  .object({
+    status: z.enum(['open', 'resolved', 'dismissed']).optional(),
+  })
+  .strict();
+export type AdminModerationPatch = z.infer<typeof adminModerationPatchSchema>;
+
+export const adminRatingModerationPatchSchema = z
+  .object({
+    status: z.enum(['published', 'hidden', 'rejected']).optional(),
+  })
+  .strict();
+export type AdminRatingModerationPatch = z.infer<typeof adminRatingModerationPatchSchema>;

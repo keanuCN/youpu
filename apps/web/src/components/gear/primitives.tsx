@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { sceneLabel } from "@/lib/domain";
 import { fmtPrice } from "@/lib/format";
 import { cn } from "@/lib/utils";
+import { PendingValue } from "./data-state";
 
 /** 综合指数方块：全站唯一的「分数」视觉语言 */
 export function ScoreMark({
@@ -56,6 +57,16 @@ export function Stars({ value, size = 12, className }: { value: number; size?: n
 
 /** 硬度条：10 格刻度 */
 export function FlexBar({ value, className, animate = false }: { value: number; className?: string; animate?: boolean }) {
+  if (value <= 0) {
+    return (
+      <div className={cn("flex items-center gap-2", className)}>
+        <div className="flex gap-[2px]" aria-hidden="true">
+          {Array.from({ length: 10 }, (_, i) => <span key={i} className="h-3 w-[5px] bg-border" />)}
+        </div>
+        <PendingValue label="待补充" />
+      </div>
+    );
+  }
   const filled = Math.round(value);
   return (
     <div className={cn("flex items-center gap-2", className)}>
@@ -108,6 +119,7 @@ export function Chip({
 
 export function SceneTags({ scenes, className, max }: { scenes: string[]; className?: string; max?: number }) {
   const list = max ? scenes.slice(0, max) : scenes;
+  if (list.length === 0) return <PendingValue label="场景待补" className={className} />;
   return (
     <div className={cn("flex flex-wrap gap-1", className)}>
       {list.map((s) => (

@@ -10,7 +10,17 @@ specs:
   effectiveEdge: 1230
   waistWidth: 263
   sidecut: 9
-  stanceSetback: 0
+  stanceSetback: 20
+  profile: Float CamRock
+  profileFamily: hybrid
+  shape: Volume-shifted directional
+  core: Re-Up Tech Core
+  fiberglass: Biax Fiberglass + Flax Fiber
+  base: Sintered 8000 Base
+  flex: 7
+  scenes:
+    - all-mountain
+    - powder
 images: []
 data_source:
   kind: crawl

@@ -7,12 +7,16 @@ import { EventsModule } from './events/events.module';
 import { HealthModule } from './health/health.module';
 import { OutboxModule } from './outbox/outbox.module';
 import { SearchModule } from './search/search.module';
+import { AuthModule } from './auth/auth.module';
+import { CommunityModule } from './community/community.module';
 
 @Module({
   imports: [
     PrismaModule,
     RedisModule,
     SearchModule,
+    AuthModule,
+    CommunityModule,
     HealthModule,
     CatalogModule,
     AdminModule,

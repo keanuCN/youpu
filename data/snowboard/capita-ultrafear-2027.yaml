@@ -1,0 +1,26 @@
+slug: capita-ultrafear-2027
+category: snowboard
+brand: capita
+model: Ultrafear
+year: 2027
+title: CAPiTA Ultrafear Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 153
+  effectiveEdge: 1183
+  waistWidth: 254
+  sidecut: 8.26
+  stanceSetback: 0
+  profile: Resort V1 + Flat Kick Tech
+  profileFamily: hybrid
+  shape: TRUE TWIN
+  core: P2 SUPERLIGHT CORE
+  fiberglass: HYBRID CARBON HOLYSHEET BI/BI
+  base: SUPERDRIVE ADV BASE
+  flex: 5.5
+  scenes:
+    - freestyle
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-ultrafear-mens-snowboard-2027
+status: published

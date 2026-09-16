@@ -11,12 +11,16 @@ import {
   adminProductPatchSchema,
   adminBrandPatchSchema,
   adminCategoryPatchSchema,
+  adminModerationPatchSchema,
+  adminRatingModerationPatchSchema,
   parseSpecSchema,
   validateSpecs,
   type AdminBrandInput,
   type AdminBrandPatch,
   type AdminCategoryInput,
   type AdminCategoryPatch,
+  type AdminModerationPatch,
+  type AdminRatingModerationPatch,
   type AdminProductInput,
   type AdminProductPatch,
   type SpecSchema,
@@ -293,6 +297,67 @@ export class AdminService {
       },
       queue: { outboxPending, eventStreamLength },
     };
+  }
+
+  async listReports(status?: string) {
+    const where = status && ['open', 'resolved', 'dismissed'].includes(status) ? { status } : {};
+    const rows = await this.prisma.report.findMany({
+      where,
+      orderBy: { createdAt: 'desc' },
+      take: 100,
+      include: {
+        reporter: { select: { id: true, nickname: true, email: true } },
+        handler: { select: { id: true, nickname: true } },
+      },
+    });
+    return rows.map((row) => ({ ...row, createdAt: row.createdAt.toISOString() }));
+  }
+
+  async updateReport(id: string, input: AdminModerationPatch) {
+    const body = adminModerationPatchSchema.parse(input);
+    const existing = await this.prisma.report.findUnique({ where: { id } });
+    if (!existing) throw new NotFoundException(`举报不存在：${id}`);
+    return this.prisma.report.update({
+      where: { id },
+      data: { ...(body.status === undefined ? {} : { status: body.status }) },
+      select: { id: true, targetType: true, targetId: true, reason: true, status: true, createdAt: true },
+    });
+  }
+
+  async listRatings(status?: string) {
+    const where = status && ['published', 'hidden', 'rejected'].includes(status) ? { status } : {};
+    const rows = await this.prisma.rating.findMany({
+      where,
+      orderBy: { createdAt: 'desc' },
+      take: 100,
+      include: {
+        account: { select: { id: true, nickname: true, email: true } },
+        product: { select: { id: true, slug: true, title: true } },
+      },
+    });
+    return rows.map((row) => ({
+      id: row.id,
+      overall: Number(row.overall),
+      content: row.content,
+      helpfulCount: row.helpfulCount,
+      status: row.status,
+      createdAt: row.createdAt.toISOString(),
+      account: row.account,
+      product: row.product,
+    }));
+  }
+
+  async updateRatingStatus(id: string, input: AdminRatingModerationPatch) {
+    const body = adminRatingModerationPatchSchema.parse(input);
+    const existing = await this.prisma.rating.findUnique({ where: { id }, select: { productId: true } });
+    if (!existing) throw new NotFoundException(`评分不存在：${id}`);
+    return this.prisma.$transaction(async (tx) => {
+      const rating = await tx.rating.update({ where: { id }, data: { ...(body.status === undefined ? {} : { status: body.status }) } });
+      await tx.outboxEvent.create({
+        data: { aggregate: 'product', aggregateId: existing.productId, type: 'rating.changed', payload: { reason: 'admin.moderation' } },
+      });
+      return { id: rating.id, status: rating.status, productId: rating.productId };
+    });
   }
 
   private async checkDatabase(): Promise<boolean> {

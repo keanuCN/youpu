@@ -1,5 +1,7 @@
-import { Body, Controller, HttpCode, Post } from '@nestjs/common';
+import { Body, Controller, HttpCode, Post, Req, UseGuards } from '@nestjs/common';
 import { eventBatchSchema, type EventBatch } from '@youpu/schema';
+import { OptionalAuthGuard } from '../auth/auth.guard';
+import type { AuthRequest } from '../auth/auth.types';
 import { ZodValidationPipe } from '../common/zod-validation.pipe';
 import { EventsService } from './events.service';
 
@@ -9,8 +11,9 @@ export class EventsController {
 
   @Post()
   @HttpCode(202)
-  async ingest(@Body(new ZodValidationPipe(eventBatchSchema)) batch: EventBatch) {
-    const accepted = await this.events.ingest(batch);
+  @UseGuards(OptionalAuthGuard)
+  async ingest(@Body(new ZodValidationPipe(eventBatchSchema)) batch: EventBatch, @Req() request: AuthRequest) {
+    const accepted = await this.events.ingest(batch, request.account?.id);
     return { accepted };
   }
 }

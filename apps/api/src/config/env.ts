@@ -15,6 +15,8 @@ const envSchema = z.object({
   /** 单人内测阶段的管理端 Bearer 令牌；生产环境必须显式配置。 */
   ADMIN_TOKEN: z.string().min(16).optional(),
   ADMIN_ROLE: z.enum(['editor', 'admin']).default('admin'),
+  /** 本地 M3 访问令牌签名密钥；上线前必须替换为独立随机密钥。 */
+  AUTH_SECRET: z.string().min(16).default('youpu-local-auth-secret-change-me'),
 });
 
 export type Env = z.infer<typeof envSchema>;

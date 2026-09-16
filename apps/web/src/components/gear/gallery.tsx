@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { MediaPlaceholder } from "./data-state";
 import type { GalleryShot } from "@/types";
 
 /** 详情页图集：主图 + 缩略图轨道，灰度→彩色签名交互 */
 export function Gallery({ shots, alt }: { shots: GalleryShot[]; alt: string }) {
   const [idx, setIdx] = useState(0);
   const active = shots[idx] ?? shots[0];
-  if (!active) return null;
+  if (!active) return <MediaPlaceholder label={alt} className="aspect-[4/3] border border-border sm:aspect-[5/4]" />;
 
   return (
     <div className="flex flex-col gap-3">

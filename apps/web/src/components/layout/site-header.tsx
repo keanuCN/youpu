@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { BRAND } from "@/lib/brand";
+import { cloudLogout, cloudMarkAllNotificationsRead, cloudMarkNotificationRead, hasCloudSession } from "@/lib/api";
 import { fmtCompact, timeAgo } from "@/lib/format";
 import { logout, markAllRead, markNotificationRead, useCurrentUser } from "@/lib/store";
 import { cn } from "@/lib/utils";
@@ -188,6 +189,7 @@ export function SiteHeader() {
                 type="button"
                 onClick={() => {
                   logout();
+                  if (hasCloudSession()) void cloudLogout();
                   router.push("/");
                 }}
                 className="block w-full px-3 py-2.5 text-left text-[13px] hover:bg-accent"
@@ -247,7 +249,7 @@ function NotificationList() {
     <div>
       <div className="flex items-center justify-between border-b border-border px-3 py-2">
         <span className="mono-label">通知 · {list.filter((n) => !n.read).length} 条未读</span>
-        <button type="button" onClick={markAllRead} className="mono-label hover:text-primary">
+        <button type="button" onClick={() => { markAllRead(); if (hasCloudSession()) void cloudMarkAllNotificationsRead(); }} className="mono-label hover:text-primary">
           全部已读
         </button>
       </div>
@@ -256,7 +258,7 @@ function NotificationList() {
           <li key={n.id}>
             <Link
               href={n.link}
-              onClick={() => markNotificationRead(n.id)}
+              onClick={() => { markNotificationRead(n.id); if (hasCloudSession() && n.id.startsWith("cloud-")) void cloudMarkNotificationRead(n.id.slice(7)); }}
               className={cn("block border-b border-border px-3 py-2.5 hover:bg-accent", !n.read && "bg-primary/[0.04]")}
             >
               <div className="flex items-center gap-2">

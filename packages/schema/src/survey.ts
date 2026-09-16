@@ -23,6 +23,7 @@ export type Survey = z.infer<typeof surveySchema>;
 
 /** rider_profile（user.rider_profile / rating.rider_profile 快照） */
 export const riderProfileSchema = z.object({
+  years: z.number().int().min(0).max(80).optional().describe('雪龄 年'),
   height: z.number().int().min(100).max(230).optional(),
   weight: z.number().int().min(20).max(200).optional(),
   level: ridingLevelSchema.optional(),

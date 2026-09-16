@@ -8,7 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { BRAND } from "@/lib/brand";
-import { login, mergeGuestDock, register, resetPassword, useCurrentUser } from "@/lib/store";
+import { cloudLogin, cloudMe, cloudRegister, cloudResetPassword, WebApiError, saveCloudSession } from "@/lib/api";
+import { applyCloudAccount, applyCloudMe, login, mergeGuestDock, register, resetPassword, useCurrentUser } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 type Mode = "login" | "register" | "forgot";
@@ -26,6 +27,7 @@ export default function AuthPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
+  const [busy, setBusy] = useState(false);
 
   if (me.sessionKey) {
     return (
@@ -45,26 +47,67 @@ export default function AuthPage() {
     );
   }
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setBusy(true);
     if (mode === "register") {
-      const res = register(email, password, username);
-      if (!res.ok) return toast.error(res.message);
+      try {
+        const session = await cloudRegister(email, password, username);
+        saveCloudSession(session);
+        applyCloudAccount(session.account);
+        void cloudMe().then(applyCloudMe).catch(() => undefined);
+      } catch (error) {
+        if (!isNetworkError(error)) {
+          setBusy(false);
+          return toast.error(errorMessage(error));
+        }
+        const res = register(email, password, username);
+        if (!res.ok) {
+          setBusy(false);
+          return toast.error(res.message);
+        }
+      }
       mergeGuestDock();
       toast.success("账号已创建");
       router.push("/me");
       return;
     }
     if (mode === "forgot") {
-      const res = resetPassword(email, password);
-      if (!res.ok) return toast.error(res.message);
+      try {
+        await cloudResetPassword(email, password);
+      } catch (error) {
+        if (!isNetworkError(error)) {
+          setBusy(false);
+          return toast.error(errorMessage(error));
+        }
+        const res = resetPassword(email, password);
+        if (!res.ok) {
+          setBusy(false);
+          return toast.error(res.message);
+        }
+      }
       toast.success("密码已重置，请登录");
       setMode("login");
       setPassword("");
+      setBusy(false);
       return;
     }
-    const res = login(email, password);
-    if (!res.ok) return toast.error(res.message);
+    try {
+      const session = await cloudLogin(email, password);
+      saveCloudSession(session);
+      applyCloudAccount(session.account);
+      void cloudMe().then(applyCloudMe).catch(() => undefined);
+    } catch (error) {
+      if (!isNetworkError(error) && !(error instanceof WebApiError && error.status === 401 && email.trim().toLowerCase() === BRAND.demoEmail)) {
+        setBusy(false);
+        return toast.error(errorMessage(error));
+      }
+      const res = login(email, password);
+      if (!res.ok) {
+        setBusy(false);
+        return toast.error(res.message);
+      }
+    }
     mergeGuestDock();
     toast.success("登录成功");
     router.push("/me");
@@ -104,7 +147,7 @@ export default function AuthPage() {
         </ul>
 
         <p className="mono-label mt-8 border border-dashed border-border p-4 leading-relaxed">
-          账号保存在本机浏览器，换设备或清除浏览器数据后需重新注册。
+          本地 API 已接入账号与内容数据；清除浏览器令牌后需要重新登录。
         </p>
       </div>
 
@@ -183,7 +226,7 @@ export default function AuthPage() {
             />
           </div>
 
-          <Button type="submit" className="h-10 w-full rounded-none bg-foreground text-[13px] tracking-wide hover:bg-primary">
+          <Button type="submit" disabled={busy} className="h-10 w-full rounded-none bg-foreground text-[13px] tracking-wide hover:bg-primary">
             {c.cta}
           </Button>
 
@@ -213,4 +256,12 @@ export default function AuthPage() {
       </div>
     </div>
   );
+}
+
+function isNetworkError(error: unknown): boolean {
+  return error instanceof WebApiError && error.status === 0;
+}
+
+function errorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : "请求失败，请稍后重试";
 }

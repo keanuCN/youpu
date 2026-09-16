@@ -1,0 +1,27 @@
+slug: capita-kazu-kokubo-pro-2027
+category: snowboard
+brand: capita
+model: Kazu Kokubo Pro
+year: 2027
+title: CAPiTA Kazu Kokubo Pro Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 157
+  effectiveEdge: 1221
+  waistWidth: 255
+  sidecut: 8.4
+  stanceSetback: 20.3
+  profile: RESORT V3 DIRECTIONAL
+  profileFamily: hybrid
+  shape: DIRECTIONAL 0.8" SETBACK
+  core: PANDA HOVER CORE
+  fiberglass: HOLYSHEET TRI/BI + MAGIC BEAN RESIN
+  base: HYPERDRIVE ADV XT BASE
+  flex: 6.5
+  scenes:
+    - all-mountain
+    - powder
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-kazu-kokubo-pro-mens-snowboard-2027
+status: published

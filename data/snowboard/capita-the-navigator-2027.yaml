@@ -1,0 +1,27 @@
+slug: capita-the-navigator-2027
+category: snowboard
+brand: capita
+model: The Navigator
+year: 2027
+title: CAPiTA The Navigator Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 161
+  effectiveEdge: 1216
+  waistWidth: 260
+  sidecut: 8.3
+  stanceSetback: 20.3
+  profile: RESORT V2 DIRECTIONAL + FLAT KICK TECH
+  profileFamily: hybrid
+  shape: DIRECTIONAL 0.8" SETBACK
+  core: HOVER CORE
+  fiberglass: HOLYSHEET TRI/BI + MAGIC BEAN RESIN
+  base: HYPERDRIVE BASE
+  flex: 5.5
+  scenes:
+    - powder
+    - all-mountain
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-the-navigator-mens-snowboard-2027
+status: published

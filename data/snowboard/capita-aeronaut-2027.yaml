@@ -1,0 +1,26 @@
+slug: capita-aeronaut-2027
+category: snowboard
+brand: capita
+model: Aeronaut
+year: 2027
+title: CAPiTA Aeronaut Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 157
+  effectiveEdge: 1230
+  waistWidth: 253
+  sidecut: 8.5
+  stanceSetback: 20.3
+  profile: ALPINE V3 DIRECTIONAL
+  profileFamily: camber
+  shape: DIRECTIONAL 0.8" SETBACK
+  core: PANDA HOVER CORE
+  fiberglass: HOLYSHEET TRI/BI MAGIC BEAN RESIN
+  base: HYPERDRIVE ADV XT BASE
+  flex: 6
+  scenes:
+    - all-mountain
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-aeronaut-mens-snowboard-2027
+status: published

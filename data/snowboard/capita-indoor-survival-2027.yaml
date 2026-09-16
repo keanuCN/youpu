@@ -1,0 +1,27 @@
+slug: capita-indoor-survival-2027
+category: snowboard
+brand: capita
+model: Indoor Survival
+year: 2027
+title: CAPiTA Indoor Survival Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 156
+  effectiveEdge: 1211
+  waistWidth: 258
+  sidecut: 7.96
+  stanceSetback: 0
+  profile: PARK V1 + FLAT KICK TECH
+  profileFamily: hybrid
+  shape: TRUE TWIN
+  core: META CORE
+  fiberglass: HOLYSHEET TRI/BI MAGIC BEAN RESIN
+  base: QUANTUM DRIVE BASE
+  flex: 4.5
+  scenes:
+    - freestyle
+    - all-mountain
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-indoor-survival-mens-snowboard-2027
+status: published

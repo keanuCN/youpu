@@ -17,12 +17,16 @@ import {
   adminCategoryPatchSchema,
   adminProductInputSchema,
   adminProductPatchSchema,
+  adminModerationPatchSchema,
+  adminRatingModerationPatchSchema,
   type AdminBrandInput,
   type AdminBrandPatch,
   type AdminCategoryInput,
   type AdminCategoryPatch,
   type AdminProductInput,
   type AdminProductPatch,
+  type AdminModerationPatch,
+  type AdminRatingModerationPatch,
 } from '@youpu/schema';
 import { ZodValidationPipe } from '../common/zod-validation.pipe';
 import { AdminGuard } from './admin.guard';
@@ -51,6 +55,32 @@ export class AdminController {
       throw new BadRequestException('days 不能超过 90');
     }
     return this.admin.analytics(rangeDays ?? 14);
+  }
+
+  @Get('moderation/reports')
+  reports(@Query('status') status?: string) {
+    return this.admin.listReports(status);
+  }
+
+  @Patch('moderation/reports/:id')
+  updateReport(
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body(new ZodValidationPipe(adminModerationPatchSchema)) body: AdminModerationPatch,
+  ) {
+    return this.admin.updateReport(id, body);
+  }
+
+  @Get('moderation/ratings')
+  moderationRatings(@Query('status') status?: string) {
+    return this.admin.listRatings(status);
+  }
+
+  @Patch('moderation/ratings/:id')
+  updateRatingStatus(
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body(new ZodValidationPipe(adminRatingModerationPatchSchema)) body: AdminRatingModerationPatch,
+  ) {
+    return this.admin.updateRatingStatus(id, body);
   }
 
   @Get('products')

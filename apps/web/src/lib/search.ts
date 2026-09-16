@@ -7,6 +7,7 @@ import { GEAR } from '../data/boards';
 import type { GearItem } from '../types';
 import { API_BASE } from './api';
 import { mapProductListItem } from './content';
+import { hasPrice } from './gear-state';
 
 export interface SearchRequest {
   q: string;
@@ -82,14 +83,16 @@ export function buildSearchParams(params: SearchRequest): URLSearchParams {
 
 export function searchLocalGear(pool: GearItem[], params: SearchRequest): SearchCatalogResult {
   const q = params.q.trim().toLocaleLowerCase();
+  const priceFilterActive = params.priceMin !== undefined || params.priceMax !== undefined;
   const filtered = pool.filter((item) => {
     const text = `${item.brand} ${item.model} ${item.year}`.toLocaleLowerCase();
     if (q && !text.includes(q)) return false;
     if (params.category && item.categorySlug !== params.category) return false;
     if (params.brand && slugify(item.brand) !== params.brand && item.brand !== params.brand) return false;
     if (params.year !== undefined && item.year !== params.year) return false;
-    if (params.priceMin !== undefined && item.priceBand.max < params.priceMin) return false;
-    if (params.priceMax !== undefined && item.priceBand.min > params.priceMax) return false;
+    if (priceFilterActive && !hasPrice(item)) return false;
+    if (hasPrice(item) && params.priceMin !== undefined && item.priceBand.max < params.priceMin) return false;
+    if (hasPrice(item) && params.priceMax !== undefined && item.priceBand.min > params.priceMax) return false;
     return true;
   });
 
@@ -145,8 +148,10 @@ function localFacets(items: GearItem[]): SearchFacet {
     else brands.set(brandSlug, { slug: brandSlug, name: item.brand, nameCn: null, count: 1 });
 
     years.set(item.year, (years.get(item.year) ?? 0) + 1);
-    min = min === null ? item.priceBand.min : Math.min(min, item.priceBand.min);
-    max = max === null ? item.priceBand.max : Math.max(max, item.priceBand.max);
+    if (hasPrice(item)) {
+      min = min === null ? item.priceBand.min : Math.min(min, item.priceBand.min);
+      max = max === null ? item.priceBand.max : Math.max(max, item.priceBand.max);
+    }
   }
 
   return {

@@ -133,6 +133,7 @@ model Account {
   email        String?  @unique
   phone        String?  @unique
   nickname     String
+  passwordHash String?  @map("password_hash")
   avatarUrl    String?  @map("avatar_url")
   riderProfile Json?    @map("rider_profile")
   role         String   @default("user")
@@ -146,6 +147,7 @@ model Account {
   repliesTo      RatingReply[]   @relation("ReplyTarget")
   favorites      Favorite[]
   compareHistory CompareHistory[]
+  recommendationRuns RecommendationRun[]
   refreshTokens  RefreshToken[]
   notifications  Notification[]  @relation("NotificationOwner")
   actedIn        Notification[]  @relation("NotificationActor")
@@ -288,6 +290,20 @@ model CompareHistory {
 
   @@index([accountId, createdAt(sort: Desc)])
   @@map("compare_history")
+}
+
+model RecommendationRun {
+  id          String   @id @db.Uuid
+  accountId   String   @map("account_id") @db.Uuid
+  categorySlug String  @map("category_slug")
+  answers     Json
+  picks       Json
+  createdAt   DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@index([accountId, createdAt(sort: Desc)])
+  @@map("recommendation_run")
 }
 
 model Notification {

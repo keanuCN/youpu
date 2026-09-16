@@ -164,6 +164,30 @@ export interface AdminCategoryRecord {
   childCount: number;
 }
 
+export interface AdminReport {
+  id: string;
+  targetType: string;
+  targetId: string;
+  reporterId: string;
+  reason: string;
+  note: string | null;
+  status: 'open' | 'resolved' | 'dismissed';
+  createdAt: string;
+  reporter: { id: string; nickname: string; email: string | null };
+  handler: { id: string; nickname: string } | null;
+}
+
+export interface AdminModerationRating {
+  id: string;
+  overall: number;
+  content: string | null;
+  helpfulCount: number;
+  status: 'published' | 'hidden' | 'rejected';
+  createdAt: string;
+  account: { id: string; nickname: string; email: string | null };
+  product: { id: string; slug: string; title: string };
+}
+
 export type AdminProductFormInput = AdminProductInput;
 export type AdminProductFormPatch = AdminProductPatch;
 export type AdminBrandFormInput = AdminBrandInput;

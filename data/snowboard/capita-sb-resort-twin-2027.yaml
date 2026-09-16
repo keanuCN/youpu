@@ -1,0 +1,27 @@
+slug: capita-sb-resort-twin-2027
+category: snowboard
+brand: capita
+model: SB Resort Twin
+year: 2027
+title: Spring Break Resort Twin Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 156
+  effectiveEdge: 1211
+  waistWidth: 258
+  sidecut: 7.96
+  stanceSetback: 0
+  profile: RESORT V2 Directional + Flat Kick Tech
+  profileFamily: hybrid
+  shape: TRUE TWIN
+  core: META CORE
+  fiberglass: HOLYSHEET TRI/BI MAGIC BEAN RESIN
+  base: POWDER DRIVE BASE
+  flex: 5
+  scenes:
+    - freestyle
+    - all-mountain
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-sb-resort-twin-mens-snowboard-2027
+status: published

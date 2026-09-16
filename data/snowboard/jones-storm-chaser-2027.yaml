@@ -1,0 +1,28 @@
+slug: jones-storm-chaser-2027
+category: snowboard
+brand: jones
+model: Storm Chaser
+year: 2027
+title: Storm Chaser Snowboard | Jones
+specs:
+  length: 152
+  weight: 2900
+  effectiveEdge: 1070
+  waistWidth: 275
+  sidecut: 6.9
+  stanceSetback: 20
+  profile: Christenson Surf Rocker
+  profileFamily: rocker
+  shape: Volume-Shifted Directional
+  core: Master Core
+  fiberglass: Biax Fiberglass
+  base: Sintered 8000 Base
+  flex: 6
+  scenes:
+    - all-mountain
+    - powder
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.jonessnowboards.com/products/storm-chaser-snowboard
+status: published

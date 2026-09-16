@@ -9,6 +9,17 @@ specs:
   effectiveEdge: 1234
   waistWidth: 252
   sidecut: 8
+  stanceSetback: 0
+  profile: Resort V1 + Flat Kick Tech
+  profileFamily: hybrid
+  shape: TRUE TWIN
+  core: P2 SUPERLIGHT CORE
+  fiberglass: HYBRID CARBON HOLYSHEET BI/BI + MAGIC BEAN RESIN
+  base: QUANTUM DRIVE BASE
+  flex: 5.5
+  scenes:
+    - all-mountain
+    - freestyle
 images: []
 data_source:
   kind: crawl

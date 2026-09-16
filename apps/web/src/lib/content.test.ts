@@ -72,3 +72,19 @@ test("falls back to the local pack when the API request fails", async () => {
 
   assert.deepEqual(result, gearOfCategory("snowboard"));
 });
+
+test("content API requests bypass the Next server cache", async () => {
+  let receivedCache: RequestCache | undefined;
+  const fetcher: typeof fetch = async (_input, init) => {
+    receivedCache = init?.cache;
+    return new Response(JSON.stringify({
+      total: 0,
+      page: 1,
+      pageSize: 48,
+      items: [],
+    }), { status: 200, headers: { "Content-Type": "application/json" } });
+  };
+
+  await getCategoryProducts("snowboard", { source: "api", fetcher });
+  assert.equal(receivedCache, "no-store");
+});

@@ -1,15 +1,26 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { CornerDownRight, MessageSquare, ThumbsUp, Trash2 } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { CornerDownRight, Flag, MessageSquare, ThumbsUp, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { Avatar } from "@/components/layout/site-header";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { reviewCount, userRating } from "@/data/boards";
+import {
+  cloudCreateRating,
+  cloudCreateReply,
+  cloudCreateReport,
+  cloudDeleteRating,
+  cloudRatings,
+  cloudToggleHelpful,
+  hasCloudSession,
+  productRefForGear,
+  type CloudRating,
+} from "@/lib/api";
 import { helpfulOf, iHelpful, repliesOf, topLevelReviews } from "@/lib/domain";
 import { timeAgo } from "@/lib/format";
-import { addReview, deleteReview, pushNotification, toggleHelpful, useCurrentUser, usePersisted } from "@/lib/store";
+import { addReview, deleteReview, pushNotification, toggleHelpful, useCurrentUser, usePersisted, type Persisted } from "@/lib/store";
 import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
 import type { GearItem, Review, ReviewerMeta } from "@/types";
@@ -21,7 +32,23 @@ const LEVELS = ["新手", "中级", "进阶", "高阶"];
 export function ReviewPanel({ gear }: { gear: GearItem }) {
   const persisted = usePersisted();
   const [mode, setMode] = useState<"helpful" | "latest">("helpful");
-  const list = useMemo(() => topLevelReviews(persisted, gear.id, mode), [persisted, gear.id, mode]);
+  const [remoteRatings, setRemoteRatings] = useState<CloudRating[]>([]);
+  useEffect(() => {
+    let alive = true;
+    cloudRatings(productRefForGear(gear), mode)
+      .then((response) => {
+        if (alive) setRemoteRatings(response.items);
+      })
+      .catch(() => {
+        if (alive) setRemoteRatings([]);
+      });
+    return () => {
+      alive = false;
+    };
+  }, [gear, mode]);
+  const remoteIds = useMemo(() => new Set(remoteRatings.map((rating) => rating.id)), [remoteRatings]);
+  const viewState = useMemo(() => mergeCloudRatings(persisted, gear.id, remoteRatings), [persisted, gear.id, remoteRatings]);
+  const list = useMemo(() => topLevelReviews(viewState, gear.id, mode), [viewState, gear.id, mode]);
   const total = reviewCount(gear);
   const avg = userRating(gear);
 
@@ -79,7 +106,7 @@ export function ReviewPanel({ gear }: { gear: GearItem }) {
         {list.length ? (
           <ul className="space-y-0">
             {list.map((r) => (
-              <ReviewItem key={r.id} review={r} gear={gear} />
+              <ReviewItem key={r.id} review={r} gear={gear} persisted={viewState} isCloudReview={remoteIds.has(r.id)} />
             ))}
           </ul>
         ) : (
@@ -92,20 +119,30 @@ export function ReviewPanel({ gear }: { gear: GearItem }) {
   );
 }
 
-function ReviewItem({ review, gear }: { review: Review; gear: GearItem }) {
+function ReviewItem({ review, gear, persisted, isCloudReview }: { review: Review; gear: GearItem; persisted: Persisted; isCloudReview: boolean }) {
   const { requireAuth } = useAuthGate();
-  const persisted = usePersisted();
   const me = useCurrentUser();
   const [replying, setReplying] = useState(false);
   const profile = me.profile;
   const replies = repliesOf(persisted, review.id);
   const helpful = helpfulOf(persisted, review);
   const mine = iHelpful(persisted, review);
-  const isMine = !!profile && review.userKey === profile.userKey;
+  const cloudProfile = profile as (typeof profile & { remoteId?: string }) | null;
+  const isMine = !!profile && (review.userKey === profile.userKey || review.userKey === cloudProfile?.remoteId);
 
   const onHelpful = () => {
     requireAuth(() => {
       const added = toggleHelpful(review.id);
+      if (isCloudReview && hasCloudSession()) {
+        void cloudToggleHelpful(review.id)
+          .then((result) => {
+            if (result.helpful !== added) toggleHelpful(review.id);
+          })
+          .catch(() => {
+            toggleHelpful(review.id);
+            toast.error("云端有帮助状态同步失败");
+          });
+      }
       if (added && review.userKey && review.userKey !== profile?.userKey) {
         pushNotification({
           userKey: review.userKey,
@@ -166,8 +203,17 @@ function ReviewItem({ review, gear }: { review: Review; gear: GearItem }) {
               <button
                 type="button"
                 onClick={() => {
-                  deleteReview(review.id);
-                  toast("评论已删除");
+                  if (isCloudReview && hasCloudSession()) {
+                    void cloudDeleteRating(review.id)
+                      .then(() => {
+                        deleteReview(review.id);
+                        toast("评论已删除");
+                      })
+                      .catch((error) => toast.error(error instanceof Error ? error.message : "删除失败"));
+                  } else {
+                    deleteReview(review.id);
+                    toast("评论已删除");
+                  }
                 }}
                 className="mono-label flex items-center gap-1.5 px-2 py-1 text-muted-foreground transition-colors hover:text-destructive"
               >
@@ -175,9 +221,27 @@ function ReviewItem({ review, gear }: { review: Review; gear: GearItem }) {
                 删除
               </button>
             ) : null}
+            {!isMine ? (
+              <button
+                type="button"
+                onClick={() => requireAuth(() => {
+                  if (!hasCloudSession()) {
+                    toast("当前是本机演示账号，举报需要连接本地 API");
+                    return;
+                  }
+                  void cloudCreateReport("rating", review.id, "内容不当或不准确")
+                    .then(() => toast.success("已提交举报，后台会进行处理"))
+                    .catch((error) => toast.error(error instanceof Error ? error.message : "举报失败"));
+                }, "举报内容需要先登录")}
+                className="mono-label flex items-center gap-1.5 px-2 py-1 text-muted-foreground transition-colors hover:text-destructive"
+              >
+                <Flag size={11} strokeWidth={1.8} />
+                举报
+              </button>
+            ) : null}
           </div>
 
-          {replying ? <ReplyForm gear={gear} parentId={review.id} onDone={() => setReplying(false)} /> : null}
+          {replying ? <ReplyForm gear={gear} parentId={review.id} cloudParent={isCloudReview} onDone={() => setReplying(false)} /> : null}
 
           {replies.length ? (
             <ul className="mt-4 space-y-3 border-l border-border pl-4">
@@ -212,14 +276,22 @@ function ReviewerMetaLine({ meta }: { meta: ReviewerMeta }) {
   return <p className="mono-label mt-1.5">{parts.join(" · ")}</p>;
 }
 
-function ReplyForm({ gear, parentId, onDone }: { gear: GearItem; parentId: string; onDone: () => void }) {
+function ReplyForm({ gear, parentId, cloudParent, onDone }: { gear: GearItem; parentId: string; cloudParent: boolean; onDone: () => void }) {
   const [text, setText] = useState("");
   const me = useCurrentUser();
   const profile = me.profile;
-  const submit = () => {
+  const submit = async () => {
     if (text.trim().length < 2) {
       toast.error("回复内容太短");
       return;
+    }
+    if (cloudParent && hasCloudSession()) {
+      try {
+        await cloudCreateReply(parentId, text.trim());
+      } catch (error) {
+        toast.error(error instanceof Error ? error.message : "回复发布失败");
+        return;
+      }
     }
     addReview({
       gearId: gear.id,
@@ -272,7 +344,7 @@ function ReviewForm({ gear }: { gear: GearItem }) {
     resort: profile?.resort ?? "",
   });
 
-  const submit = () => {
+  const submit = async () => {
     if (!rating) {
       toast.error("请先打分");
       return;
@@ -280,6 +352,24 @@ function ReviewForm({ gear }: { gear: GearItem }) {
     if (content.trim().length < 10) {
       toast.error("实测内容至少 10 个字，写清你的使用条件");
       return;
+    }
+    if (hasCloudSession()) {
+      try {
+        await cloudCreateRating(productRefForGear(gear), {
+          overall: rating,
+          content: content.trim(),
+          riderProfile: {
+            years: Number(meta.years) || 1,
+            height: profile?.heightCm ?? 175,
+            weight: Number(meta.weightKg) || 70,
+            level: levelToApi(meta.level),
+            home_resort: meta.resort.trim() || undefined,
+          },
+        });
+      } catch (error) {
+        toast.error(error instanceof Error ? error.message : "评论发布失败");
+        return;
+      }
     }
     addReview({
       gearId: gear.id,
@@ -384,7 +474,7 @@ function ReviewForm({ gear }: { gear: GearItem }) {
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p className="mono-label">{content.trim().length} / 10 字起</p>
           <Button
-            onClick={() => requireAuth(submit, "发布评论需要先登录")}
+            onClick={() => requireAuth(() => void submit(), "发布评论需要先登录")}
             className="h-9 rounded-none bg-foreground px-6 text-[12.5px] tracking-wide hover:bg-primary"
           >
             发布实测
@@ -415,4 +505,63 @@ function StarIcon({ filled }: { filled: boolean }) {
       />
     </svg>
   );
+}
+
+function levelToApi(level: string): "beginner" | "intermediate" | "advanced" | "expert" {
+  if (level === "新手") return "beginner";
+  if (level === "进阶") return "advanced";
+  if (level === "高阶") return "expert";
+  return "intermediate";
+}
+
+function mergeCloudRatings(base: Persisted, gearId: string, ratings: CloudRating[]): Persisted {
+  if (!ratings.length) return base;
+  const cloudReviews: Review[] = [];
+  const duplicate = (review: Review) =>
+    base.userReviews.some((item) => item.gearId === gearId && item.authorName === review.authorName && item.content === review.content);
+  for (const rating of ratings) {
+    const authorMeta = reviewerMeta(rating.riderProfile, rating.author.riderProfile);
+    const review: Review = {
+      id: rating.id,
+      gearId,
+      userKey: rating.author.id,
+      authorName: rating.author.nickname,
+      authorMeta,
+      rating: rating.overall,
+      content: rating.content ?? "",
+      images: [],
+      parentId: null,
+      createdAt: rating.createdAt,
+      seedHelpful: rating.helpfulCount,
+    };
+    if (!duplicate(review)) cloudReviews.push(review);
+    for (const reply of rating.replies) {
+      const replyReview: Review = {
+        id: reply.id,
+        gearId,
+        userKey: reply.author.id,
+        authorName: reply.author.nickname,
+        authorMeta,
+        rating: 5,
+        content: reply.content,
+        images: [],
+        parentId: rating.id,
+        createdAt: reply.createdAt,
+      };
+      if (!duplicate(replyReview)) cloudReviews.push(replyReview);
+    }
+  }
+  return { ...base, userReviews: [...cloudReviews, ...base.userReviews] };
+}
+
+function reviewerMeta(...values: unknown[]): ReviewerMeta {
+  const merged = values.find((value) => value && typeof value === "object" && !Array.isArray(value)) as Record<string, unknown> | undefined;
+  const levelMap: Record<string, string> = { beginner: "新手", intermediate: "中级", advanced: "进阶", expert: "高阶" };
+  return {
+    years: Number(merged?.years ?? 1),
+    heightCm: Number(merged?.height ?? 0),
+    weightKg: Number(merged?.weight ?? 0) || undefined,
+    level: levelMap[String(merged?.level ?? "intermediate")] ?? "中级",
+    resort: String(merged?.home_resort ?? ""),
+  };
 }

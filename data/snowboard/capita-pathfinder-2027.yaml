@@ -1,0 +1,28 @@
+slug: capita-pathfinder-2027
+category: snowboard
+brand: capita
+model: Pathfinder
+year: 2027
+title: CAPiTA Pathfinder Camber Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 151
+  effectiveEdge: 1203
+  waistWidth: 252
+  sidecut: 7.7
+  stanceSetback: 0
+  profile: Park V2 + Flat Kick Tech
+  profileFamily: rocker
+  shape: TRUE TWIN
+  core: DUAL CORE
+  fiberglass: SPECIAL BLEND FIBERGLASS MAGIC BEAN RESIN
+  base: SUPERDRIVE BASE
+  flex: 4
+  scenes:
+    - freestyle
+    - all-mountain
+    - beginner
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-pathfinder-mens-snowboard-2027
+status: published

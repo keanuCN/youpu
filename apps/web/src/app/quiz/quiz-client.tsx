@@ -8,6 +8,7 @@ import { ScoreMark } from "@/components/gear/primitives";
 import { PageHead } from "@/components/layout/section-head";
 import { Button } from "@/components/ui/button";
 import { SNOWBOARD } from "@/data/categories";
+import { cloudRecommendations, hasCloudSession } from "@/lib/api";
 import { recommend, type QuizAnswers, type Recommendation } from "@/lib/domain";
 import { saveQuiz } from "@/lib/store";
 import { track } from "@/lib/track";
@@ -61,6 +62,9 @@ export default function QuizPage() {
       answers: a as Record<string, string | string[]>,
       picks: recs.map((r) => ({ gearId: r.gear.id, match: r.match, reasons: r.reasons, fallback: r.fallback })),
     });
+    if (hasCloudSession()) {
+      void cloudRecommendations("snowboard", a as Record<string, unknown>).catch(() => undefined);
+    }
   };
 
   const reset = () => {

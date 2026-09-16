@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { getGear } from "@/data/boards";
+import { cloudLogout, cloudUpdateMe, hasCloudSession } from "@/lib/api";
 import { SEASON } from "@/data/categories";
 import { helpfulOf, reviewsByUser } from "@/lib/domain";
 import { fmtDate, timeAgo } from "@/lib/format";
@@ -358,6 +359,7 @@ export default function MePage() {
           variant="outline"
           onClick={() => {
             logout();
+            if (hasCloudSession()) void cloudLogout();
             toast("已退出登录");
           }}
           className="mono-label h-8 rounded-none border-border px-4 text-[12px]"
@@ -421,8 +423,25 @@ function ProfileForm() {
       <p className="mono-label mt-4">邮箱（登录账号，不可修改）：{profile.email}</p>
       <div className="mt-5 flex gap-2 border-t border-border pt-4">
         <Button
-          onClick={() => {
+          onClick={async () => {
             updateProfile(form);
+            if (hasCloudSession()) {
+              try {
+                await cloudUpdateMe({
+                  nickname: form.username.trim(),
+                  riderProfile: {
+                    years: Number(form.years) || 1,
+                    height: Number(form.heightCm) || 175,
+                    weight: Number(form.weightKg) || 70,
+                    level: profileLevelToApi(form.level),
+                    home_resort: form.resort.trim() || undefined,
+                  },
+                });
+              } catch (error) {
+                toast.error(error instanceof Error ? error.message : "云端资料保存失败");
+                return;
+              }
+            }
             toast.success("资料已保存，发布评论时会自动带上这些条件");
           }}
           className="mono-label h-9 rounded-none bg-foreground px-5 text-[12px] hover:bg-primary"
@@ -433,6 +452,13 @@ function ProfileForm() {
       </div>
     </div>
   );
+}
+
+function profileLevelToApi(level: string): "beginner" | "intermediate" | "advanced" | "expert" {
+  if (level === "新手") return "beginner";
+  if (level === "进阶") return "advanced";
+  if (level === "高阶") return "expert";
+  return "intermediate";
 }
 
 function Empty({ text, cta }: { text: string; cta?: { label: string; href: string } }) {

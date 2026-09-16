@@ -1,0 +1,28 @@
+slug: jones-mind-expander-2-0-2027
+category: snowboard
+brand: jones
+model: Mind Expander 2.0
+year: 2027
+title: Mind Expander 2.0 Snowboard | Jones
+specs:
+  length: 154
+  weight: 3000
+  effectiveEdge: 1140
+  waistWidth: 257
+  stanceSetback: 20
+  profile: Float CamRock
+  profileFamily: hybrid
+  shape: Directional
+  core: Master Core
+  fiberglass: Biax Fiberglass
+  base: Sintered 8000 Base
+  flex: 7
+  scenes:
+    - all-mountain
+    - powder
+    - freestyle
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.jonessnowboards.com/products/mind-expander-20-snowboard
+status: published

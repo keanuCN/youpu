@@ -1,0 +1,27 @@
+slug: capita-mega-death-2027
+category: snowboard
+brand: capita
+model: Mega Death
+year: 2027
+title: CAPiTA Mega Death Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 159
+  effectiveEdge: 1221
+  waistWidth: 259
+  sidecut: 8.4
+  stanceSetback: 20.3
+  profile: Alpine V1 Directional + Flat Kick Tech
+  profileFamily: hybrid
+  shape: DIRECTIONAL 0.8" SETBACK
+  core: THERMOPOLYMER STARSHIP CORE
+  fiberglass: PURE MEGACARBON MARINE GRADE EPOXY RESIN
+  base: MEGADRIVE XT BASE
+  flex: 6.5
+  scenes:
+    - all-mountain
+    - powder
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-mega-death-mens-snowboard-2027
+status: published

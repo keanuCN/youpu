@@ -11,6 +11,17 @@ specs:
   waistWidth: 254
   sidecut: 7.8
   stanceSetback: 0
+  profile: CamRock
+  profileFamily: hybrid
+  shape: Directional Twin
+  core: Master Core
+  fiberglass: Biax Fiberglass
+  base: Sintered 8000 Base
+  flex: 6
+  scenes:
+    - all-mountain
+    - powder
+    - freestyle
 images: []
 data_source:
   kind: crawl

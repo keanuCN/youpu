@@ -1,0 +1,29 @@
+slug: jones-howler-2027
+category: snowboard
+brand: jones
+model: Howler
+year: 2027
+title: Men's Howler Snowboard | Jones
+specs:
+  length: 158
+  weight: 2800
+  effectiveEdge: 1230
+  waistWidth: 257
+  sidecut: 8.4
+  stanceSetback: 20
+  profile: High Power Camber
+  profileFamily: camber
+  shape: Directional
+  core: Power Core + Koroyd
+  fiberglass: Triax Fiberglass
+  base: Sintered 8000 Base
+  flex: 8
+  scenes:
+    - all-mountain
+    - powder
+    - freestyle
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.jonessnowboards.com/products/mens-howler-snowboard
+status: published

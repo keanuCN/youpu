@@ -1,0 +1,28 @@
+slug: jones-flagship-2027
+category: snowboard
+brand: jones
+model: Flagship
+year: 2027
+title: Men's Flagship Snowboard | Jones
+specs:
+  length: 161
+  weight: 3100
+  effectiveEdge: 1200
+  waistWidth: 252
+  sidecut: 9.1
+  stanceSetback: 20
+  profile: Freeride CamRock
+  profileFamily: hybrid
+  shape: Directional
+  core: Control Core
+  fiberglass: Triax Fiberglass
+  base: Sintered 8000 Base
+  flex: 8
+  scenes:
+    - all-mountain
+    - powder
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.jonessnowboards.com/products/mens-flagship-snowboard
+status: published

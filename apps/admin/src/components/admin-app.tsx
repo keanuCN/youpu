@@ -25,9 +25,11 @@ import {
   type AdminProductDetail,
   type AdminProductListResponse,
   type AdminProductSummary,
+  type AdminReport,
+  type AdminModerationRating,
 } from '../lib/api';
 
-type Section = 'dashboard' | 'products' | 'brands' | 'categories' | 'import' | 'analytics';
+type Section = 'dashboard' | 'products' | 'brands' | 'categories' | 'import' | 'analytics' | 'moderation';
 type NoticeKind = 'success' | 'error' | 'info';
 type ImageKind = AdminProductInput['images'][number]['kind'];
 type DataSourceKind = NonNullable<AdminProductInput['dataSource']>['kind'];
@@ -106,6 +108,7 @@ const navItems: Array<{ id: Section; index: string; label: string; note: string 
   { id: 'categories', index: '03', label: '类目与参数', note: 'SCHEMA FAMILY' },
   { id: 'import', index: '04', label: '采集与导入', note: 'INGEST STATUS' },
   { id: 'analytics', index: '05', label: '数据分析', note: 'ANALYTICS' },
+  { id: 'moderation', index: '06', label: '内容审核', note: 'COMMUNITY MODERATION' },
 ];
 
 const imageKinds: ImageKind[] = ['base', 'face', 'side', 'shape', 'field', 'card3x4'];
@@ -445,6 +448,9 @@ export function AdminApp() {
   const [analytics, setAnalytics] = useState<AdminAnalytics | null>(null);
   const [analyticsDays, setAnalyticsDays] = useState<7 | 14 | 30>(14);
   const [analyticsBusy, setAnalyticsBusy] = useState(false);
+  const [reports, setReports] = useState<AdminReport[]>([]);
+  const [moderationRatings, setModerationRatings] = useState<AdminModerationRating[]>([]);
+  const [moderationBusy, setModerationBusy] = useState(false);
   const [products, setProducts] = useState<AdminProductListResponse | null>(null);
   const [brands, setBrands] = useState<AdminBrandRecord[]>([]);
   const [categories, setCategories] = useState<AdminCategoryRecord[]>([]);
@@ -556,6 +562,13 @@ export function AdminApp() {
     };
   }, [analyticsDays, sessionState, token]);
 
+  useEffect(() => {
+    if (sessionState !== 'signed-in' || !token || activeSection !== 'moderation') return;
+    void refreshModeration();
+    // 只在进入审核页时读取，避免后台页面无意义地轮询社区数据。
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeSection, sessionState, token]);
+
   async function refreshWorkspace(currentToken = token) {
     if (!currentToken) return;
     const [nextDashboard, nextProducts, nextBrands, nextCategories] = await Promise.all([
@@ -587,6 +600,51 @@ export function AdminApp() {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
       setAnalyticsBusy(false);
+    }
+  }
+
+  async function refreshModeration() {
+    if (!token) return;
+    setModerationBusy(true);
+    try {
+      const [nextReports, nextRatings] = await Promise.all([
+        adminFetch<AdminReport[]>(token, '/moderation/reports'),
+        adminFetch<AdminModerationRating[]>(token, '/moderation/ratings'),
+      ]);
+      setReports(nextReports);
+      setModerationRatings(nextRatings);
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setModerationBusy(false);
+    }
+  }
+
+  async function updateReportStatus(id: string, status: 'open' | 'resolved' | 'dismissed') {
+    if (!token) return;
+    setBusyAction(`report-${id}`);
+    try {
+      await adminFetch(token, `/moderation/reports/${id}`, { method: 'PATCH', body: { status } });
+      await refreshModeration();
+      setNotice({ kind: 'success', text: '举报状态已更新' });
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setBusyAction(null);
+    }
+  }
+
+  async function updateRatingStatus(id: string, status: 'published' | 'hidden' | 'rejected') {
+    if (!token) return;
+    setBusyAction(`rating-${id}`);
+    try {
+      await adminFetch(token, `/moderation/ratings/${id}`, { method: 'PATCH', body: { status } });
+      await refreshModeration();
+      setNotice({ kind: 'success', text: '评论状态已更新，产品聚合会异步重算' });
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setBusyAction(null);
     }
   }
 
@@ -1066,26 +1124,45 @@ export function AdminApp() {
     );
   }
 
+  function renderModeration() {
+    return (
+      <>
+        <SectionHeader index="06 / COMMUNITY MODERATION" title="内容审核" description="查看用户举报与实测评论状态；本地 M3 先提供最小审核闭环，后续再补角色权限、审核记录与批量操作。" action={<button className="button" type="button" onClick={() => void refreshModeration()} disabled={moderationBusy}>{moderationBusy ? '读取中……' : '刷新审核队列'}</button>} />
+        <div className="analytics-grid analytics-grid-secondary">
+          <section className="data-panel table-panel">
+            <PanelHeader eyebrow="REPORT QUEUE" title="举报记录" meta={`${reports.length} LOADED`} />
+            {reports.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>目标</th><th>原因</th><th>举报人</th><th>状态</th><th>时间</th><th /></tr></thead><tbody>{reports.map((report) => <tr key={report.id}><td><strong>{report.targetType}</strong><small className="table-sub">{report.targetId}</small></td><td><strong>{report.reason}</strong>{report.note ? <small className="table-sub">{report.note}</small> : null}</td><td>{report.reporter.nickname}<small className="table-sub">{report.reporter.email || report.reporter.id}</small></td><td><StatusBadge status={report.status} /></td><td><time className="table-sub">{formatDate(report.createdAt)}</time></td><td>{report.status === 'open' ? <div className="inline-actions"><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'resolved')}>处理</button><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'dismissed')}>驳回</button></div> : <button className="text-button" onClick={() => void updateReportStatus(report.id, 'open')}>重新打开</button>}</td></tr>)}</tbody></table></div> : <EmptyState title="暂无举报" detail="用户举报内容后会出现在这里。" />}
+          </section>
+          <section className="data-panel table-panel">
+            <PanelHeader eyebrow="RATING QUEUE" title="评论状态" meta={`${moderationRatings.length} LOADED`} />
+            {moderationRatings.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>产品</th><th>作者</th><th>评分 / 内容</th><th>状态</th><th /></tr></thead><tbody>{moderationRatings.map((rating) => <tr key={rating.id}><td><strong>{rating.product.title}</strong><small className="table-sub">{rating.product.slug}</small></td><td>{rating.account.nickname}<small className="table-sub">{rating.account.email || rating.account.id}</small></td><td><strong>{rating.overall.toFixed(1)} 分</strong><small className="table-sub">{rating.content || '无文字内容'} · {rating.helpfulCount} 有帮助</small></td><td><StatusBadge status={rating.status} /></td><td><div className="inline-actions">{rating.status !== 'published' && <button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'published')}>发布</button>}{rating.status === 'published' && <button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'hidden')}>隐藏</button>}<button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'rejected')}>拒绝</button></div></td></tr>)}</tbody></table></div> : <EmptyState title="暂无评论" detail="用户发布实测后会出现在这里。" />}
+          </section>
+        </div>
+      </>
+    );
+  }
+
   function renderContent() {
     if (activeSection === 'products') return renderProducts();
     if (activeSection === 'brands') return renderBrands();
     if (activeSection === 'categories') return renderCategories();
     if (activeSection === 'import') return renderImport();
     if (activeSection === 'analytics') return renderAnalytics();
+    if (activeSection === 'moderation') return renderModeration();
     return renderDashboard();
   }
 
   return (
     <div className="admin-shell">
       <aside className="admin-sidebar">
-        <div className="brand-lockup"><div className="brand-mark-large">有谱</div><div><strong>DATA WORKBENCH</strong><small>M2 / INTERNAL</small></div></div>
+        <div className="brand-lockup"><div className="brand-mark-large">有谱</div><div><strong>DATA WORKBENCH</strong><small>M3 / LOCAL</small></div></div>
         <div className="sidebar-rule" />
         <p className="sidebar-label">操作模块 / MODULES</p>
         <nav className="sidebar-nav">{navItems.map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span>{item.index}</span><strong>{item.label}</strong><small>{item.note}</small></button>)}</nav>
         <div className="sidebar-bottom"><div className="system-readout"><span className="status-dot status-dot-good" /><span>API SESSION / {(role || 'admin').toUpperCase()}</span></div><button className="logout-button" onClick={logout}>退出工作台 <span>↗</span></button></div>
       </aside>
       <main className="admin-main">
-        <header className="topbar"><div><span className="topbar-code">YOUPU / ADMIN</span><span className="topbar-slash">/</span><span>{navItems.find((item) => item.id === activeSection)?.note}</span></div><div className="topbar-right"><span className="api-origin">API {getApiHost()}</span><span className="revision">REV M2.01</span></div></header>
+        <header className="topbar"><div><span className="topbar-code">YOUPU / ADMIN</span><span className="topbar-slash">/</span><span>{navItems.find((item) => item.id === activeSection)?.note}</span></div><div className="topbar-right"><span className="api-origin">API {getApiHost()}</span><span className="revision">REV M3.01</span></div></header>
         {notice && <Notice notice={notice} />}
         <div className="content-wrap">{renderContent()}</div>
         <footer className="admin-footer"><span>有谱 / PRODUCT INTELLIGENCE</span><span>LOCAL ADMIN CONSOLE · {new Date().getFullYear()}</span></footer>

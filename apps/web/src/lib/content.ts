@@ -150,7 +150,7 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
     flexValue,
     flexLabel:
       numberValue(rawSpecs.flex) === undefined
-        ? fallback?.flexLabel ?? "未知"
+        ? fallback?.flexLabel ?? "待补充"
         : ({ soft: "软", mid: "中", midstiff: "中硬", stiff: "硬" }[flexBucket(flexValue)] ?? "未知"),
     hero: cover,
     gallery: galleryOf(item, cover, fallback),
@@ -190,6 +190,7 @@ async function requestJson<T>(
   try {
     const response = await fetcher(apiPath(path), {
       headers: { Accept: "application/json" },
+      cache: "no-store",
       signal: controller.signal,
     });
     if (!response.ok) throw new Error(`Content API returned ${response.status}`);

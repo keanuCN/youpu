@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { ChevronRight, Heart, Scale, Share2 } from "lucide-react";
 import { toast } from "sonner";
 import { AnalysisBlock, WhoForTags } from "@/components/gear/analysis-block";
+import { PendingBlock, PendingValue } from "@/components/gear/data-state";
 import { Gallery } from "@/components/gear/gallery";
 import { GearCard } from "@/components/gear/gear-card";
 import { FlexBar, ScoreMark, SceneTags, Stars } from "@/components/gear/primitives";
@@ -15,8 +16,10 @@ import { SpecTable } from "@/components/gear/spec-table";
 import { SectionHead } from "@/components/layout/section-head";
 import { reviewCount, userRating } from "@/data/boards";
 import { getCategory } from "@/data/categories";
+import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear } from "@/lib/api";
 import { gearById, pricePosition, sameScenePeers } from "@/lib/domain";
 import { fmtCompact, fmtPrice } from "@/lib/format";
+import { hasEditorialScores, hasHardcoreIndex, hasPrice, hasUserRating } from "@/lib/gear-state";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
 import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
@@ -81,31 +84,39 @@ export default function GearDetailPage({ id, initialGear }: { id: string; initia
         </div>
         <div>
           <SectionHead index="03" title="六维评分" titleEn="Score Radar" />
-          <div className="border border-border p-4">
-            <RadarChart
-              dims={dims}
-              series={[{ label: `${gear.brand} ${gear.model}`, values: dims.map((d) => gear.scores[d.key] ?? 0), color: RADAR_COLORS[0]! }]}
-              size={300}
-              showLegend={false}
+          {hasEditorialScores(gear) ? (
+            <div className="border border-border p-4">
+              <RadarChart
+                dims={dims}
+                series={[{ label: `${gear.brand} ${gear.model}`, values: dims.map((d) => gear.scores[d.key] ?? 0), color: RADAR_COLORS[0]! }]}
+                size={300}
+                showLegend={false}
+              />
+              <ul className="mt-4 space-y-1.5 border-t border-border pt-4">
+                {dims.map((d) => (
+                  <li key={d.key} className="flex items-center gap-3">
+                    <span className="mono-label w-16 shrink-0">{d.label}</span>
+                    <span className="h-[5px] flex-1 bg-border">
+                      <span
+                        className="animate-bar-grow block h-full bg-foreground"
+                        style={{ width: `${(gear.scores[d.key] ?? 0) * 10}%` }}
+                      />
+                    </span>
+                    <span className="mono-data w-8 shrink-0 text-right text-[12px] tnum">{(gear.scores[d.key] ?? 0).toFixed(1)}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mono-label mt-4 border-t border-border pt-3">
+                权重合计 {dims.reduce((s, d) => s + d.weight, 0).toFixed(2)} · 综合指数 {gear.composite}
+              </p>
+            </div>
+          ) : (
+            <PendingBlock
+              title="编辑评分待补充"
+              detail="当前产品已经有官方规格，但还没有进入有谱的六维编辑评分体系。"
+              className="min-h-[300px]"
             />
-            <ul className="mt-4 space-y-1.5 border-t border-border pt-4">
-              {dims.map((d) => (
-                <li key={d.key} className="flex items-center gap-3">
-                  <span className="mono-label w-16 shrink-0">{d.label}</span>
-                  <span className="h-[5px] flex-1 bg-border">
-                    <span
-                      className="animate-bar-grow block h-full bg-foreground"
-                      style={{ width: `${(gear.scores[d.key] ?? 0) * 10}%` }}
-                    />
-                  </span>
-                  <span className="mono-data w-8 shrink-0 text-right text-[12px] tnum">{(gear.scores[d.key] ?? 0).toFixed(1)}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="mono-label mt-4 border-t border-border pt-3">
-              权重合计 {dims.reduce((s, d) => s + d.weight, 0).toFixed(2)} · 综合指数 {gear.composite}
-            </p>
-          </div>
+          )}
         </div>
       </section>
 
@@ -140,6 +151,10 @@ function InfoCard({ gear }: { gear: GearItem }) {
   const fav = me.isFavorite(gear.id);
   const inDock = me.dockIds.includes(gear.id);
   const pos = pricePosition(gear);
+  const priceReady = hasPrice(gear);
+  const editorialReady = hasEditorialScores(gear);
+  const ratingReady = hasUserRating(gear);
+  const hardcoreReady = hasHardcoreIndex(gear);
 
   const onDock = () => {
     if (inDock) {
@@ -165,32 +180,48 @@ function InfoCard({ gear }: { gear: GearItem }) {
           </p>
           <h1 className="mt-2 text-[32px] leading-[1.12] font-medium tracking-tight sm:text-[40px]">{gear.model}</h1>
         </div>
-        <ScoreMark value={gear.composite} size="lg" />
+        {editorialReady ? <ScoreMark value={gear.composite} size="lg" /> : <PendingValue label="评分待补" className="border border-dashed border-border bg-secondary px-3 py-2" />}
       </div>
 
       <div className="grid grid-cols-2 gap-x-6 border-b border-border py-5 sm:grid-cols-4">
-        <Stat label="用户评分" value={userRating(gear).toFixed(1)} sub={<Stars value={userRating(gear)} size={11} className="mt-1" />} />
+        <Stat
+          label="用户评分"
+          value={ratingReady ? userRating(gear).toFixed(1) : "—"}
+          sub={ratingReady ? <Stars value={userRating(gear)} size={11} className="mt-1" /> : <PendingValue label="暂无实测" className="mt-1 block" />}
+        />
         <Stat label="实测条数" value={String(reviewCount(gear))} sub={<span className="mono-label mt-1 block">FIELD REPORTS</span>} />
-        <Stat label="进阶指数" value={String(gear.hardcore)} sub={<span className="mono-label mt-1 block">越高越吃技术</span>} />
+        <Stat
+          label="进阶指数"
+          value={hardcoreReady ? String(gear.hardcore) : "—"}
+          sub={<span className="mono-label mt-1 block">{hardcoreReady ? "越高越吃技术" : "参数待补全"}</span>}
+        />
         <Stat label="浏览热度" value={fmtCompact(gear.heat)} sub={<span className="mono-label mt-1 block">近 90 天</span>} />
       </div>
 
       <div className="border-b border-border py-5">
         <div className="flex items-baseline justify-between">
           <p className="mono-label">官方参考价</p>
-          <p className="mono-data text-[24px] leading-none tnum">{fmtPrice(gear.price)}</p>
+          <p className="mono-data text-[24px] leading-none tnum">{priceReady ? fmtPrice(gear.price) : <PendingValue label="价格待补" />}</p>
         </div>
-        <div className="relative mt-4 h-[6px] bg-border">
-          <span className="absolute inset-y-0 left-0 bg-foreground/25" style={{ width: `${pos}%` }} />
-          <span className="absolute top-1/2 h-4 w-[3px] -translate-y-1/2 bg-primary" style={{ left: `calc(${pos}% - 1.5px)` }} />
-        </div>
-        <div className="mono-data mt-2 flex justify-between text-[12px] text-muted-foreground tnum">
-          <span>{fmtPrice(gear.priceBand.min)}</span>
-          <span className="text-foreground">
-            同类区间 {fmtPrice(gear.priceBand.min)}–{fmtPrice(gear.priceBand.max)}
-          </span>
-          <span>{fmtPrice(gear.priceBand.max)}</span>
-        </div>
+        {priceReady ? (
+          <>
+            <div className="relative mt-4 h-[6px] bg-border">
+              <span className="absolute inset-y-0 left-0 bg-foreground/25" style={{ width: `${pos}%` }} />
+              <span className="absolute top-1/2 h-4 w-[3px] -translate-y-1/2 bg-primary" style={{ left: `calc(${pos}% - 1.5px)` }} />
+            </div>
+            <div className="mono-data mt-2 flex justify-between text-[12px] text-muted-foreground tnum">
+              <span>{fmtPrice(gear.priceBand.min)}</span>
+              <span className="text-foreground">
+                同类区间 {fmtPrice(gear.priceBand.min)}–{fmtPrice(gear.priceBand.max)}
+              </span>
+              <span>{fmtPrice(gear.priceBand.max)}</span>
+            </div>
+          </>
+        ) : (
+          <p className="mt-4 border border-dashed border-border bg-secondary/45 px-3 py-3 text-[13px] leading-relaxed text-muted-foreground">
+            暂无可比价格，当前页面只展示已核验的官方规格。
+          </p>
+        )}
       </div>
 
       <div className="grid gap-5 border-b border-border py-5 sm:grid-cols-2">
@@ -228,6 +259,13 @@ function InfoCard({ gear }: { gear: GearItem }) {
             requireAuth(() => {
               const added = toggleFavorite(gear.id);
               if (added) track("favorite_add", { product_id: gear.id });
+              if (hasCloudSession()) {
+                const request = added ? cloudAddFavorite(productRefForGear(gear)) : cloudRemoveFavorite(productRefForGear(gear));
+                void request.catch(() => {
+                  toggleFavorite(gear.id);
+                  toast.error("云端收藏同步失败，已恢复本地状态");
+                });
+              }
               toast.success(added ? "已加入收藏" : "已取消收藏");
             }, "收藏需要先登录")
           }

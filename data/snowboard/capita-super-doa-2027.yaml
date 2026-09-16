@@ -1,0 +1,27 @@
+slug: capita-super-doa-2027
+category: snowboard
+brand: capita
+model: Super D.O.A.
+year: 2027
+title: CAPiTA Super D.O.A. Snowboard 2027 CAPiTA Snowboards | NA
+specs:
+  length: 156
+  effectiveEdge: 1234
+  waistWidth: 252
+  sidecut: 8
+  stanceSetback: 0
+  profile: RESORT V1 + Flat Kick Tech
+  profileFamily: hybrid
+  shape: TRUE TWIN
+  core: 3D THERMOPOLYMER STARSHIP CORE
+  fiberglass: HYBRID SUPERCARBON HOLYSHEET TRI/TRI + MAGIC BEAN RESIN
+  base: HYPERDRIVE / ADV XT BASE
+  flex: 6
+  scenes:
+    - all-mountain
+    - freestyle
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://capitasnowboarding.com/products/capita-super-d-o-a-mens-snowboard-2027
+status: published

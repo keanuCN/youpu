@@ -202,6 +202,9 @@ export interface Account extends Profile {
   /** 原型模拟凭据，非真实安全存储 */
   secret: string;
   createdAt: string;
+  /** 接入本地 API 后的数据库账号标识；本地原型账号没有该字段。 */
+  remoteId?: string;
+  cloud?: boolean;
 }
 
 export type SortKey = "heat" | "new" | "score" | "hardcore";

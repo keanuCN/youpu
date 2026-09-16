@@ -20,6 +20,8 @@ import type {
 } from "@/types";
 import { mockSecret, uid } from "./format";
 import { GUEST, guestState, initial, type Persisted } from "./persisted";
+import type { CloudAccount, CloudMeResponse } from "./api";
+import { GEAR } from "@/data/boards";
 
 export type { Persisted } from "./persisted";
 export { GUEST };
@@ -59,6 +61,113 @@ function emit(next: Partial<Persisted>): void {
 
 export function isStorageAvailable(): boolean {
   return storageOk;
+}
+
+/** 将本地 API 返回的账号映射进现有前端状态，保留原型页的同步派生逻辑。 */
+export function applyCloudAccount(account: CloudAccount): void {
+  const email = account.email ?? account.id;
+  const rider = account.riderProfile ?? {};
+  const levelMap: Record<string, string> = {
+    beginner: "新手",
+    intermediate: "中级",
+    advanced: "进阶",
+    expert: "高阶",
+  };
+  const prefix = email.split("@")[0]?.replace(/[^a-zA-Z0-9_]/g, "").slice(0, 16) || "rider";
+  const next: Account = {
+    userKey: email,
+    username: account.nickname,
+    email,
+    avatarSeed: prefix,
+    years: Number(rider.years ?? 1),
+    heightCm: Number(rider.height ?? 175),
+    weightKg: Number(rider.weight ?? 70),
+    level: levelMap[String(rider.level ?? "intermediate")] ?? String(rider.level ?? "中级"),
+    resort: String(rider.home_resort ?? ""),
+    secret: "cloud",
+    createdAt: account.createdAt,
+    remoteId: account.id,
+    cloud: true,
+  };
+  const existing = state.accounts.find((item) => item.userKey === email);
+  emit({
+    accounts: existing
+      ? state.accounts.map((item) => (item.userKey === email ? { ...item, ...next } : item))
+      : [...state.accounts, next],
+    sessionKey: email,
+    favorites: { ...state.favorites, [email]: state.favorites[email] ?? [] },
+    dock: { ...state.dock, [email]: state.dock[email] ?? [] },
+    helpful: { ...state.helpful, [email]: state.helpful[email] ?? [] },
+    votes: { ...state.votes, [email]: state.votes[email] ?? [] },
+  });
+}
+
+export function applyCloudMe(data: CloudMeResponse): void {
+  applyCloudAccount(data.account);
+  const key = data.account.email ?? data.account.id;
+  const slugForGear = (gear: (typeof GEAR)[number]) =>
+    `${gear.brand}-${gear.model}-${gear.year}`.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const favorites = data.favorites.map((item) => {
+    const local = GEAR.find((gear) => slugForGear(gear) === item.slug);
+    return local?.id ?? item.slug;
+  });
+  const notifications: AppNotification[] = data.notifications.map((item) => {
+    const payload = item.payload ?? {};
+    const productSlug = typeof payload.productSlug === "string" ? payload.productSlug : undefined;
+    const local = productSlug ? GEAR.find((gear) => slugForGear(gear) === productSlug) : undefined;
+    const actorName = item.actor?.nickname ?? (typeof payload.actorName === "string" ? payload.actorName : "有人");
+    const copy = notificationCopy(item.type, actorName, payload);
+    return {
+      id: `cloud-${item.id}`,
+      userKey: key,
+      type: copy.type,
+      title: copy.title,
+      body: copy.body,
+      link: local ? `/gear/${local.id}` : productSlug ? `/gear/${productSlug}` : "/me",
+      read: item.read,
+      createdAt: item.createdAt,
+    };
+  });
+  const ratings: Review[] = data.ratings.map((item) => {
+    const local = GEAR.find((gear) => slugForGear(gear) === item.productSlug);
+    const rider = item.riderProfile;
+    const levelMap: Record<string, string> = { beginner: "新手", intermediate: "中级", advanced: "进阶", expert: "高阶" };
+    return {
+      id: item.id,
+      gearId: local?.id ?? item.productSlug,
+      userKey: key,
+      authorName: data.account.nickname,
+      authorMeta: {
+        years: Number(rider.years ?? 1),
+        heightCm: Number(rider.height ?? 0),
+        weightKg: Number(rider.weight ?? 0) || undefined,
+        level: levelMap[String(rider.level ?? "intermediate")] ?? "中级",
+        resort: String(rider.home_resort ?? ""),
+      },
+      rating: item.overall,
+      content: item.content ?? "",
+      images: [],
+      parentId: null,
+      createdAt: item.createdAt,
+      seedHelpful: item.helpfulCount,
+    };
+  });
+  const cloudRatingIds = new Set(ratings.map((item) => item.id));
+  emit({
+    favorites: { ...state.favorites, [key]: favorites },
+    notifications: [...state.notifications.filter((item) => item.userKey !== key), ...notifications],
+    userReviews: [...ratings, ...state.userReviews.filter((item) => !cloudRatingIds.has(item.id))],
+  });
+}
+
+function notificationCopy(type: string, actorName: string, payload: Record<string, unknown>): { type: AppNotification["type"]; title: string; body: string } {
+  if (type === "reply") return { type: "reply", title: "你的评论被回复", body: `${actorName} 回复了你的实测评论` };
+  if (type === "helpful") return { type: "helpful", title: "你的评论被标记为有帮助", body: `${actorName} 觉得你的评价有帮助` };
+  if (type === "new_review") {
+    const title = typeof payload.productTitle === "string" ? payload.productTitle : "你收藏的装备";
+    return { type: "new_review", title: "你收藏的装备有新评论", body: `${title} 新增了一条实测评论` };
+  }
+  return { type: "ranking", title: "有谱通知", body: "你的账号有一条新的动态" };
 }
 
 export function subscribe(l: () => void): () => void {
