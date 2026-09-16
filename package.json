@@ -12,15 +12,15 @@
     "dev:admin": "pnpm --filter @youpu/admin dev",
     "dev:api": "pnpm --filter @youpu/api dev",
     "build": "pnpm --filter @youpu/schema build && pnpm --filter @youpu/api build && pnpm --filter @youpu/web build && pnpm --filter @youpu/admin build",
-    "typecheck": "pnpm -r typecheck",
-    "infra:up": "docker compose -f docker/compose.yml up -d",
-    "infra:down": "docker compose -f docker/compose.yml down",
-    "infra:logs": "docker compose -f docker/compose.yml logs -f",
+    "typecheck": "pnpm --filter @youpu/schema build && pnpm -r typecheck",
+    "infra:up": "docker compose --env-file .env -f docker/compose.yml up -d",
+    "infra:down": "docker compose --env-file .env -f docker/compose.yml down",
+    "infra:logs": "docker compose --env-file .env -f docker/compose.yml logs -f",
     "db:migrate": "pnpm --filter @youpu/api prisma:migrate",
     "db:generate": "pnpm --filter @youpu/api prisma:generate",
     "seed": "pnpm --filter @youpu/api seed",
     "es:reindex": "pnpm --filter @youpu/api es:reindex",
-    "infra:up:full": "docker compose -f docker/compose.yml --profile full up -d"
+    "infra:up:full": "docker compose --env-file .env -f docker/compose.yml --profile full up -d"
   },
   "packageManager": "pnpm@9.15.9"
 }
