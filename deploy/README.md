@@ -1,6 +1,6 @@
 # 部署记录
 
-线上形态：**Next.js 静态导出（`out/`）由 nginx 直接托管** + **PG/Redis 容器**（后端 API 待接入，见文末）。
+线上形态：**Next.js 静态导出（`out/`）由 nginx 直接托管** + **PG/Redis 容器** + **systemd 常驻 Node API**。
 内测阶段不上 ES/Umami：服务器 2C1G 内存受限，搜索先用 PG（全文检索 / trgm），ES 是架构里唯一可从 PG 完全重建的组件。
 
 ## 服务器现状（2026-09-14 夜，逐条可回滚）
@@ -52,6 +52,19 @@ ssh root@111.229.87.101 '
 nginx 配置：`deploy/nginx/xiaopang.club.conf` → 服务器 `/www/server/panel/vhost/nginx/xiaopang.club.conf`（宝塔的 vhost 目录会被自动 include，改完先 `nginx -t` 再 reload）。
 回滚：静态站无状态，重新上传上一版 `out/` 即可。
 
+## M2 管理台部署
+
+管理台以静态子路径 `/admin/` 发布，构建时必须设置 `basePath`，避免与前台的 `_next/` 资源冲突：
+
+```bash
+cd apps/admin
+NEXT_PUBLIC_BASE_PATH=/admin NEXT_PUBLIC_API_BASE=https://xiaopang.club pnpm build   # 产物在 apps/admin/out
+tar czf /tmp/youpu-admin.tar.gz -C out .
+scp /tmp/youpu-admin.tar.gz root@111.229.87.101:/tmp/
+```
+
+服务器解压到 `/www/wwwroot/xiaopang.club/admin/` 后即可通过 `https://xiaopang.club/admin/` 访问；管理数据请求统一走 `/api/admin`，令牌只保存在浏览器本地会话中。
+
 ## 域名与备案
 
 | 项 | 状态 |
@@ -67,7 +80,9 @@ DNS 生效前，站点可先用 IP 访问：**http://111.229.87.101/**（server_
 | 内容 | 路径 |
 |---|---|
 | 静态站点文件 | `/www/wwwroot/xiaopang.club/` |
+| M2 管理台文件 | `/www/wwwroot/xiaopang.club/admin/` |
 | 后端源码 | `/opt/youpu/`（`docker/` 编排、`apps/api`、`data/`） |
+| API systemd 服务 | `youpu-api.service` |
 | nginx 配置 | `/www/server/panel/vhost/nginx/xiaopang.club.conf` |
 | 访问 / 错误日志 | `/www/wwwlogs/xiaopang.club.log`、`.error.log` |
 | 停用的示例应用 | `/opt/nomnom/`（保留了 jar） |
