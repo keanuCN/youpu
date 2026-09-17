@@ -20,7 +20,7 @@ import type {
 } from "@/types";
 import { mockSecret, uid } from "./format";
 import { GUEST, guestState, initial, type Persisted } from "./persisted";
-import type { CloudAccount, CloudMeResponse } from "./api";
+import type { CloudAccount, CloudMeResponse, EmailCodePurpose } from "./api";
 import { GEAR } from "@/data/boards";
 
 export type { Persisted } from "./persisted";
@@ -65,7 +65,7 @@ export function isStorageAvailable(): boolean {
 
 /** 将本地 API 返回的账号映射进现有前端状态，保留原型页的同步派生逻辑。 */
 export function applyCloudAccount(account: CloudAccount): void {
-  const accountKey = account.email ?? account.phone ?? account.id;
+  const accountKey = account.email ?? account.id;
   const email = account.email ?? "";
   const rider = account.riderProfile ?? {};
   const levelMap: Record<string, string> = {
@@ -76,12 +76,11 @@ export function applyCloudAccount(account: CloudAccount): void {
   };
   const prefix =
     email.split("@")[0]?.replace(/[^a-zA-Z0-9_]/g, "").slice(0, 16) ||
-    `rider_${account.phone?.slice(-4) ?? "user"}`;
+    "rider_user";
   const next: Account = {
     userKey: accountKey,
     username: account.nickname,
     email,
-    phone: account.phone ?? undefined,
     avatarSeed: prefix,
     years: Number(rider.years ?? 1),
     heightCm: Number(rider.height ?? 175),
@@ -108,7 +107,7 @@ export function applyCloudAccount(account: CloudAccount): void {
 
 export function applyCloudMe(data: CloudMeResponse): void {
   applyCloudAccount(data.account);
-  const key = data.account.email ?? data.account.phone ?? data.account.id;
+  const key = data.account.email ?? data.account.id;
   const slugForGear = (gear: (typeof GEAR)[number]) =>
     `${gear.brand}-${gear.model}-${gear.year}`.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const favorites = data.favorites.map((item) => {
@@ -239,83 +238,55 @@ function currentUserKey(): string {
 
 export type AuthResult = { ok: true } | { ok: false; message: string };
 
-type LocalPhoneCode = { code: string; expiresAt: number; nextAt: number };
-const localPhoneCodes = new Map<string, LocalPhoneCode>();
-const LOCAL_PHONE_CODE_TTL_MS = 5 * 60 * 1000;
-const LOCAL_PHONE_CODE_COOLDOWN_MS = 60 * 1000;
+type LocalEmailCode = { code: string; purpose: EmailCodePurpose; expiresAt: number; nextAt: number };
+const localEmailCodes = new Map<string, LocalEmailCode>();
+const LOCAL_EMAIL_CODE_TTL_MS = 10 * 60 * 1000;
+const LOCAL_EMAIL_CODE_COOLDOWN_MS = 60 * 1000;
 
-export type PhoneCodeResult = { ok: true; devCode: string; expiresIn: number } | { ok: false; message: string };
+export type EmailCodeResult = { ok: true; devCode: string; expiresIn: number } | { ok: false; message: string };
 
-export function requestPhoneCode(phone: string): PhoneCodeResult {
-  const key = normalizeLocalPhone(phone);
-  if (!/^1[3-9]\d{9}$/.test(key)) return { ok: false, message: "手机号格式不正确" };
+export function requestEmailCode(email: string, purpose: EmailCodePurpose): EmailCodeResult {
+  const key = normalizeLocalEmail(email);
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(key)) return { ok: false, message: "邮箱格式不正确" };
   const current = Date.now();
-  const existing = localPhoneCodes.get(key);
+  const codeKey = purpose + ":" + key;
+  const existing = localEmailCodes.get(codeKey);
   if (existing && existing.nextAt > current) {
-    return { ok: false, message: `验证码已发送，请 ${Math.ceil((existing.nextAt - current) / 1000)} 秒后再试` };
+    return { ok: false, message: "验证码已发送，请 " + Math.ceil((existing.nextAt - current) / 1000) + " 秒后再试" };
   }
   const code = String(Math.floor(100000 + Math.random() * 900000));
-  localPhoneCodes.set(key, {
+  localEmailCodes.set(codeKey, {
     code,
-    expiresAt: current + LOCAL_PHONE_CODE_TTL_MS,
-    nextAt: current + LOCAL_PHONE_CODE_COOLDOWN_MS,
+    purpose,
+    expiresAt: current + LOCAL_EMAIL_CODE_TTL_MS,
+    nextAt: current + LOCAL_EMAIL_CODE_COOLDOWN_MS,
   });
-  return { ok: true, devCode: code, expiresIn: LOCAL_PHONE_CODE_TTL_MS / 1000 };
+  return { ok: true, devCode: code, expiresIn: LOCAL_EMAIL_CODE_TTL_MS / 1000 };
 }
 
-export function phoneLogin(phone: string, code: string, username?: string): AuthResult {
-  const key = normalizeLocalPhone(phone);
-  if (!/^1[3-9]\d{9}$/.test(key)) return { ok: false, message: "手机号格式不正确" };
-  const stored = localPhoneCodes.get(key);
+function consumeLocalEmailCode(email: string, purpose: EmailCodePurpose, code: string): AuthResult {
+  const key = normalizeLocalEmail(email);
+  const codeKey = purpose + ":" + key;
+  const stored = localEmailCodes.get(codeKey);
   if (!stored || stored.expiresAt <= Date.now()) {
-    localPhoneCodes.delete(key);
+    localEmailCodes.delete(codeKey);
     return { ok: false, message: "验证码已过期，请重新获取" };
   }
-  if (stored.code !== code.trim()) return { ok: false, message: "验证码不正确" };
-  localPhoneCodes.delete(key);
-
-  const existing = state.accounts.find((account) => account.phone === key);
-  if (existing) {
-    emit({ sessionKey: key });
-    return { ok: true };
-  }
-
-  const account: Account = {
-    userKey: key,
-    username: username?.trim() || `滑手${key.slice(-4)}`,
-    email: "",
-    phone: key,
-    avatarSeed: `phone-${key.slice(-4)}`,
-    years: 1,
-    heightCm: 175,
-    weightKg: 70,
-    level: "中级",
-    resort: "",
-    secret: "phone-code",
-    createdAt: new Date().toISOString(),
-  };
-  emit({
-    accounts: [...state.accounts, account],
-    sessionKey: key,
-    favorites: { ...state.favorites, [key]: [] },
-    dock: { ...state.dock, [key]: [] },
-    helpful: { ...state.helpful, [key]: [] },
-    votes: { ...state.votes, [key]: [] },
-  });
+  if (stored.purpose !== purpose || stored.code !== code.trim()) return { ok: false, message: "验证码不正确" };
+  localEmailCodes.delete(codeKey);
   return { ok: true };
 }
 
-function normalizeLocalPhone(phone: string): string {
-  const compact = phone.trim().replace(/[\s-]/g, "");
-  if (compact.startsWith("+86")) return compact.slice(3);
-  if (compact.startsWith("86") && compact.length === 13) return compact.slice(2);
-  return compact;
+function normalizeLocalEmail(email: string): string {
+  return email.trim().toLowerCase();
 }
 
-export function register(email: string, password: string, username?: string): AuthResult {
+export function register(email: string, password: string, code: string, username?: string): AuthResult {
   const key = email.trim().toLowerCase();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(key)) return { ok: false, message: "邮箱格式不正确" };
   if (password.length < 6) return { ok: false, message: "密码至少 6 位" };
+  const codeResult = consumeLocalEmailCode(key, "register", code);
+  if (!codeResult.ok) return codeResult;
   if (state.accounts.some((a) => a.userKey === key)) return { ok: false, message: "该邮箱已注册，请直接登录" };
   const prefix = key.split("@")[0]?.replace(/[^a-zA-Z0-9_]/g, "").slice(0, 16);
   const account: Account = {
@@ -355,8 +326,10 @@ export function logout(): void {
   emit({ sessionKey: null });
 }
 
-export function resetPassword(email: string, password: string): AuthResult {
+export function resetPassword(email: string, password: string, code: string): AuthResult {
   const key = email.trim().toLowerCase();
+  const codeResult = consumeLocalEmailCode(key, "reset-password", code);
+  if (!codeResult.ok) return codeResult;
   const account = state.accounts.find((a) => a.userKey === key);
   if (!account) return { ok: false, message: "该邮箱尚未注册" };
   if (password.length < 6) return { ok: false, message: "密码至少 6 位" };

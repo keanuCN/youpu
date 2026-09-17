@@ -13,7 +13,6 @@ const REFRESH_TOKEN_KEY = "youpu:auth:refresh-token";
 export interface CloudAccount {
   id: string;
   email: string | null;
-  phone: string | null;
   nickname: string;
   avatarUrl: string | null;
   riderProfile: Record<string, unknown>;
@@ -29,10 +28,12 @@ export interface CloudSession {
   account: CloudAccount;
 }
 
-export interface CloudPhoneCodeResponse {
+export type EmailCodePurpose = "register" | "reset-password";
+
+export interface CloudEmailCodeResponse {
   ok: true;
   expiresIn: number;
-  /** 仅本地开发返回，生产环境由短信服务投递验证码。 */
+  /** 仅开发环境且未配置 SMTP 时返回，生产环境不会返回验证码。 */
   devCode?: string;
 }
 
@@ -216,27 +217,26 @@ function errorMessage(payload: unknown): string | undefined {
   return undefined;
 }
 
-export function cloudRegister(email: string, password: string, nickname?: string): Promise<CloudSession> {
-  return request<CloudSession>("/api/auth/register", { method: "POST", body: { email, password, nickname: nickname || undefined } });
+export function cloudRegister(email: string, password: string, code: string, nickname?: string): Promise<CloudSession> {
+  return request<CloudSession>("/api/auth/register", {
+    method: "POST",
+    body: { email, password, code, nickname: nickname || undefined },
+  });
 }
 
 export function cloudLogin(email: string, password: string): Promise<CloudSession> {
   return request<CloudSession>("/api/auth/login", { method: "POST", body: { email, password } });
 }
 
-export function cloudRequestPhoneCode(phone: string): Promise<CloudPhoneCodeResponse> {
-  return request<CloudPhoneCodeResponse>("/api/auth/phone/code", { method: "POST", body: { phone } });
-}
-
-export function cloudPhoneLogin(phone: string, code: string, nickname?: string): Promise<CloudSession> {
-  return request<CloudSession>("/api/auth/phone/login", {
+export function cloudRequestEmailCode(email: string, purpose: EmailCodePurpose): Promise<CloudEmailCodeResponse> {
+  return request<CloudEmailCodeResponse>("/api/auth/email/code", {
     method: "POST",
-    body: { phone, code, nickname: nickname || undefined },
+    body: { email, purpose },
   });
 }
 
-export function cloudResetPassword(email: string, password: string): Promise<{ ok: true }> {
-  return request<{ ok: true }>("/api/auth/reset-password", { method: "POST", body: { email, password } });
+export function cloudResetPassword(email: string, password: string, code: string): Promise<{ ok: true }> {
+  return request<{ ok: true }>("/api/auth/reset-password", { method: "POST", body: { email, password, code } });
 }
 
 export function cloudUpdateMe(input: { nickname?: string; riderProfile?: Record<string, unknown> }): Promise<CloudAccount> {

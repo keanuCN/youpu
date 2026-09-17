@@ -29,7 +29,62 @@ import { Stars } from "./primitives";
 
 const LEVELS = ["新手", "中级", "进阶", "高阶"];
 
+type ReviewCopy = {
+  experienceLabel: string;
+  summary: string;
+  placeLabel: string;
+  placePlaceholder: string;
+  contentPlaceholder: string;
+  showHeight: boolean;
+  showWeight: boolean;
+};
+
+const DEFAULT_REVIEW_COPY: ReviewCopy = {
+  experienceLabel: "使用年限",
+  summary: "使用年限 / 水平 / 场地",
+  placeLabel: "常用场地",
+  placePlaceholder: "如 城市公园 / 湖库",
+  contentPlaceholder: "在哪些场景、使用了多久？它哪里超出预期，哪里让你后悔？",
+  showHeight: false,
+  showWeight: false,
+};
+
+const REVIEW_COPY: Record<string, ReviewCopy> = {
+  snowboard: {
+    experienceLabel: "雪龄",
+    summary: "雪龄 / 体重 / 场地",
+    placeLabel: "常滑场地",
+    placePlaceholder: "如 崇礼 · 万龙",
+    contentPlaceholder: "在什么雪况、什么速度、滑了几天？它哪里超出预期，哪里让你后悔？",
+    showHeight: true,
+    showWeight: true,
+  },
+  "badminton-racket": {
+    experienceLabel: "球龄",
+    summary: "球龄 / 体重 / 场馆",
+    placeLabel: "常打场馆",
+    placePlaceholder: "如 北京 · 室内木地板",
+    contentPlaceholder: "在什么场馆、采用什么打法、打了多久？它哪里超出预期，哪里让你后悔？",
+    showHeight: true,
+    showWeight: true,
+  },
+  "casting-rod": {
+    experienceLabel: "钓龄",
+    summary: "钓龄 / 水域 / 钓法",
+    placeLabel: "常钓水域",
+    placePlaceholder: "如 湖库 · 溪流",
+    contentPlaceholder: "在什么水域、使用什么饵和钓法、钓了多久？它哪里超出预期，哪里让你后悔？",
+    showHeight: false,
+    showWeight: false,
+  },
+};
+
+function reviewCopyForCategory(categorySlug: string): ReviewCopy {
+  return REVIEW_COPY[categorySlug] ?? DEFAULT_REVIEW_COPY;
+}
+
 export function ReviewPanel({ gear }: { gear: GearItem }) {
+  const copy = reviewCopyForCategory(gear.categorySlug);
   const persisted = usePersisted();
   const [mode, setMode] = useState<"helpful" | "latest">("helpful");
   const [remoteRatings, setRemoteRatings] = useState<CloudRating[]>([]);
@@ -77,7 +132,7 @@ export function ReviewPanel({ gear }: { gear: GearItem }) {
               </div>
             );
           })}
-          <p className="mono-label pt-2">评分来自标注了雪龄 / 体重 / 场地的实测用户</p>
+          <p className="mono-label pt-2">评分来自标注了{copy.summary}的实测用户</p>
         </div>
       </div>
 
@@ -106,7 +161,7 @@ export function ReviewPanel({ gear }: { gear: GearItem }) {
         {list.length ? (
           <ul className="space-y-0">
             {list.map((r) => (
-              <ReviewItem key={r.id} review={r} gear={gear} persisted={viewState} isCloudReview={remoteIds.has(r.id)} />
+              <ReviewItem key={r.id} review={r} gear={gear} copy={copy} persisted={viewState} isCloudReview={remoteIds.has(r.id)} />
             ))}
           </ul>
         ) : (
@@ -119,7 +174,7 @@ export function ReviewPanel({ gear }: { gear: GearItem }) {
   );
 }
 
-function ReviewItem({ review, gear, persisted, isCloudReview }: { review: Review; gear: GearItem; persisted: Persisted; isCloudReview: boolean }) {
+function ReviewItem({ review, gear, copy, persisted, isCloudReview }: { review: Review; gear: GearItem; copy: ReviewCopy; persisted: Persisted; isCloudReview: boolean }) {
   const { requireAuth } = useAuthGate();
   const me = useCurrentUser();
   const [replying, setReplying] = useState(false);
@@ -166,7 +221,7 @@ function ReviewItem({ review, gear, persisted, isCloudReview }: { review: Review
             <span className="mono-label">{timeAgo(review.createdAt)}</span>
             {isMine ? <span className="mono-label bg-primary px-1.5 py-[2px] text-primary-foreground">我的</span> : null}
           </div>
-          <ReviewerMetaLine meta={review.authorMeta} />
+          <ReviewerMetaLine meta={review.authorMeta} copy={copy} />
           <p className="mt-2.5 text-[13.5px] leading-[1.75] whitespace-pre-line">{review.content}</p>
 
           {review.images.length ? (
@@ -265,11 +320,11 @@ function ReviewItem({ review, gear, persisted, isCloudReview }: { review: Review
   );
 }
 
-function ReviewerMetaLine({ meta }: { meta: ReviewerMeta }) {
+function ReviewerMetaLine({ meta, copy }: { meta: ReviewerMeta; copy: ReviewCopy }) {
   const parts = [
-    `${meta.years} 年雪龄`,
-    meta.heightCm ? `${meta.heightCm}cm` : null,
-    meta.weightKg ? `${meta.weightKg}kg` : null,
+    `${meta.years} 年${copy.experienceLabel}`,
+    copy.showHeight && meta.heightCm ? `${meta.heightCm}cm` : null,
+    copy.showWeight && meta.weightKg ? `${meta.weightKg}kg` : null,
     meta.level,
     meta.resort,
   ].filter(Boolean) as string[];
@@ -331,6 +386,7 @@ function ReplyForm({ gear, parentId, cloudParent, onDone }: { gear: GearItem; pa
 }
 
 function ReviewForm({ gear }: { gear: GearItem }) {
+  const copy = reviewCopyForCategory(gear.categorySlug);
   const { requireAuth } = useAuthGate();
   const me = useCurrentUser();
   const profile = me.profile;
@@ -355,16 +411,17 @@ function ReviewForm({ gear }: { gear: GearItem }) {
     }
     if (hasCloudSession()) {
       try {
+        const riderProfile: Record<string, unknown> = {
+          years: Number(meta.years) || 1,
+          level: levelToApi(meta.level),
+          home_resort: meta.resort.trim() || undefined,
+        };
+        if (copy.showHeight) riderProfile.height = profile?.heightCm ?? 175;
+        if (copy.showWeight) riderProfile.weight = Number(meta.weightKg) || 70;
         await cloudCreateRating(productRefForGear(gear), {
           overall: rating,
           content: content.trim(),
-          riderProfile: {
-            years: Number(meta.years) || 1,
-            height: profile?.heightCm ?? 175,
-            weight: Number(meta.weightKg) || 70,
-            level: levelToApi(meta.level),
-            home_resort: meta.resort.trim() || undefined,
-          },
+          riderProfile,
         });
       } catch (error) {
         toast.error(error instanceof Error ? error.message : "评论发布失败");
@@ -379,8 +436,8 @@ function ReviewForm({ gear }: { gear: GearItem }) {
       authorName: profile?.username ?? "匿名档案员",
       authorMeta: {
         years: Number(meta.years) || 1,
-        heightCm: profile?.heightCm ?? 175,
-        weightKg: Number(meta.weightKg) || undefined,
+        heightCm: copy.showHeight ? profile?.heightCm ?? 175 : 0,
+        weightKg: copy.showWeight ? Number(meta.weightKg) || undefined : undefined,
         level: meta.level,
         resort: meta.resort.trim(),
       },
@@ -419,8 +476,8 @@ function ReviewForm({ gear }: { gear: GearItem }) {
           </span>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-4">
-          <MetaField label="雪龄">
+        <div className={cn("grid gap-3", copy.showWeight ? "sm:grid-cols-4" : "sm:grid-cols-3")}>
+          <MetaField label={copy.experienceLabel}>
             <input
               type="number"
               min={0}
@@ -430,16 +487,18 @@ function ReviewForm({ gear }: { gear: GearItem }) {
               className="mono-data h-8 w-full border border-border bg-transparent px-2 text-[12px] outline-none focus:border-foreground"
             />
           </MetaField>
-          <MetaField label="体重 kg">
-            <input
-              type="number"
-              min={30}
-              max={150}
-              value={meta.weightKg}
-              onChange={(e) => setMeta((m) => ({ ...m, weightKg: Number(e.target.value) }))}
-              className="mono-data h-8 w-full border border-border bg-transparent px-2 text-[12px] outline-none focus:border-foreground"
-            />
-          </MetaField>
+          {copy.showWeight ? (
+            <MetaField label="体重 kg">
+              <input
+                type="number"
+                min={30}
+                max={150}
+                value={meta.weightKg}
+                onChange={(e) => setMeta((m) => ({ ...m, weightKg: Number(e.target.value) }))}
+                className="mono-data h-8 w-full border border-border bg-transparent px-2 text-[12px] outline-none focus:border-foreground"
+              />
+            </MetaField>
+          ) : null}
           <MetaField label="水平">
             <select
               value={meta.level}
@@ -453,11 +512,11 @@ function ReviewForm({ gear }: { gear: GearItem }) {
               ))}
             </select>
           </MetaField>
-          <MetaField label="常滑场地">
+          <MetaField label={copy.placeLabel}>
             <input
               value={meta.resort}
               onChange={(e) => setMeta((m) => ({ ...m, resort: e.target.value }))}
-              placeholder="如 崇礼 · 万龙"
+              placeholder={copy.placePlaceholder}
               className="mono-data h-8 w-full border border-border bg-transparent px-2 text-[12px] outline-none focus:border-foreground"
             />
           </MetaField>
@@ -467,7 +526,7 @@ function ReviewForm({ gear }: { gear: GearItem }) {
           value={content}
           onChange={(e) => setContent(e.target.value)}
           rows={4}
-          placeholder="在什么雪况、什么速度、滑了几天？它哪里超出预期，哪里让你后悔？"
+          placeholder={copy.contentPlaceholder}
           className="min-h-24 resize-y rounded-none border-border text-[13px] leading-relaxed"
         />
 

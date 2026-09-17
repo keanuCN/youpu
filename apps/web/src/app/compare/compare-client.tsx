@@ -4,13 +4,15 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { Crown, Plus, Scale, X } from "lucide-react";
 import { GearCard } from "@/components/gear/gear-card";
+import { MediaPlaceholder, PendingBlock, PendingValue } from "@/components/gear/data-state";
 import { ScoreMark } from "@/components/gear/primitives";
 import { RADAR_COLORS, RadarChart } from "@/components/gear/radar";
 import { PageHead, SectionHead } from "@/components/layout/section-head";
 import { GEAR, getGear } from "@/data/boards";
 import { getCategory } from "@/data/categories";
-import { buildCompareMatrix, compareConclusion } from "@/lib/domain";
+import { buildCompareMatrix, compareConclusion, formatSpecValue } from "@/lib/domain";
 import { getCategoryProducts, getCompareProducts, resolveContentSource } from "@/lib/content";
+import { hasEditorialScores, hasMedia, mediaUrl } from "@/lib/gear-state";
 import { clearDock, recordCompare, removeFromDock, setDock, useCurrentUser } from "@/lib/store";
 import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
@@ -82,6 +84,7 @@ export default function ComparePage() {
     }
     return [...map.entries()];
   }, [rows]);
+  const hasRadarData = items.some((item) => hasEditorialScores(item));
 
   useEffect(() => {
     if (items.length >= 2) {
@@ -186,7 +189,11 @@ export default function ComparePage() {
                     full && "cursor-not-allowed opacity-40",
                   )}
                 >
-                  <img src={g.hero} alt="" className="h-10 w-10 shrink-0 object-cover" loading="lazy" />
+                  {hasMedia(g) && mediaUrl(g) ? (
+                    <img src={mediaUrl(g)} alt="" className="h-10 w-10 shrink-0 object-cover" loading="lazy" />
+                  ) : (
+                    <MediaPlaceholder label="图片待补" className="h-10 w-10 min-h-0 shrink-0 p-1.5" />
+                  )}
                   <span className="min-w-0">
                     <span className="mono-label block truncate">{g.brand}</span>
                     <span className="mono-data block truncate text-[12px]">{g.model}</span>
@@ -202,15 +209,19 @@ export default function ComparePage() {
       <section className="reveal mt-10 grid gap-8 lg:grid-cols-[420px_1fr]">
         <div className="border border-border p-5">
           <p className="mono-label mb-2">分项叠放 / OVERLAID RADAR</p>
-          <RadarChart
-            dims={dims}
-            series={items.map((g, i) => ({
-              label: g.model,
-              values: dims.map((d) => g.scores[d.key] ?? 0),
-              color: RADAR_COLORS[i % RADAR_COLORS.length]!,
-            }))}
-            size={340}
-          />
+          {hasRadarData ? (
+            <RadarChart
+              dims={dims}
+              series={items.map((g, i) => ({
+                label: g.model,
+                values: dims.map((d) => g.scores[d.key] ?? 0),
+                color: RADAR_COLORS[i % RADAR_COLORS.length]!,
+              }))}
+              size={340}
+            />
+          ) : (
+            <PendingBlock title="评分数据待补充" detail="当前对比产品已有结构化参数，但还没有进入有谱的编辑评分体系。" className="min-h-[340px]" />
+          )}
         </div>
         <div>
           <p className="mono-label mb-3">一句话结论 / TAKEAWAYS</p>
@@ -230,7 +241,7 @@ export default function ComparePage() {
                   <p className="mono-label truncate">{g.brand}</p>
                   <p className="truncate text-[14px] font-medium">{g.model}</p>
                 </div>
-                <ScoreMark value={g.composite} size="sm" />
+                {hasEditorialScores(g) ? <ScoreMark value={g.composite} size="sm" /> : <PendingValue label="待补分" />}
                 <Link href={`/gear/${g.id}`} className="mono-label shrink-0 hover:text-primary">
                   详情
                 </Link>
@@ -269,7 +280,11 @@ export default function ComparePage() {
                         <X size={13} strokeWidth={1.8} />
                       </button>
                     </div>
-                    <img src={g.hero} alt="" className="mt-2.5 h-16 w-full object-cover grayscale" loading="lazy" />
+                    {hasMedia(g) && mediaUrl(g) ? (
+                      <img src={mediaUrl(g)} alt="" className="mt-2.5 h-16 w-full object-cover grayscale" loading="lazy" />
+                    ) : (
+                      <MediaPlaceholder label="图片待补" className="mt-2.5 h-16 w-full min-h-0 p-2" />
+                    )}
                   </th>
                 ))}
               </tr>
@@ -299,7 +314,7 @@ export default function ComparePage() {
                         >
                           <span className="mono-data flex items-center gap-1.5 text-[13px] tnum">
                             {win ? <Crown size={12} strokeWidth={1.8} className="shrink-0" /> : null}
-                            {v === null || v === undefined || v === "" ? <span className="opacity-40">—</span> : String(v)}
+                            {v === null || v === undefined || v === "" ? <span className="opacity-40">—</span> : formatSpecValue(v)}
                             {r.unit && v !== null && v !== undefined && v !== "" ? (
                               <span className={cn("text-[11px]", win ? "opacity-70" : "text-muted-foreground")}>{r.unit}</span>
                             ) : null}

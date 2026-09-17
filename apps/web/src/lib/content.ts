@@ -24,9 +24,11 @@ const API_TIMEOUT_MS = 8_000;
 const EMPTY_RATING_DIST: GearItem["ratingDist"] = { "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 };
 
 export function resolveContentSource(
-  env: { NEXT_PUBLIC_CONTENT_SOURCE?: string } = process.env as { NEXT_PUBLIC_CONTENT_SOURCE?: string },
+  env?: { NEXT_PUBLIC_CONTENT_SOURCE?: string },
 ): ContentSource {
-  return env.NEXT_PUBLIC_CONTENT_SOURCE === "api" ? "api" : "pack";
+  // 使用直接属性访问，Next.js 才会在客户端构建时注入 NEXT_PUBLIC_* 环境变量。
+  const configured = env ? env.NEXT_PUBLIC_CONTENT_SOURCE : process.env.NEXT_PUBLIC_CONTENT_SOURCE;
+  return configured === "api" ? "api" : "pack";
 }
 
 function slugForProduct(product: Pick<GearItem, "brand" | "model" | "year">): string {

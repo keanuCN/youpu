@@ -121,7 +121,7 @@ export default function GearDetailPage({ id, initialGear }: { id: string; initia
       </section>
 
       <section className="reveal mt-16">
-        <SectionHead index="04" title="实测评论" titleEn="Field Reports" desc="发布评论必须标注雪龄、体重与常滑场地。" />
+        <SectionHead index="04" title="实测评论" titleEn="Field Reports" desc="发布评论需要标注与品类相关的使用条件。" />
         <ReviewPanel gear={gear} />
       </section>
 

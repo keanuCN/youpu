@@ -21,25 +21,30 @@ const CATEGORY_LEAVES = CATEGORY_TREE.flatMap((root) =>
 
 export default function HomePage() {
   const snapshot = usePersisted();
+  const categoryCounts = useLiveCategoryCounts();
+  const liveCategories = CATEGORY_LEAVES.filter((category) => category.status === "live");
+  const catalogCount = liveCategories.reduce((sum, category) => sum + (categoryCounts[category.slug] ?? 0), 0);
+  const snowboardCount = categoryCounts.snowboard ?? GEAR.length;
+  const liveCategoryNames = liveCategories.map((category) => category.name).join("、");
   const top = rankRows(snapshot, "overall").slice(0, 5);
   const fresh = GEAR.filter((g) => g.isNew).slice(0, 4);
   const reviews = hotReviews(snapshot, 3);
 
   return (
     <div>
-      <Cover />
+      <Cover catalogCount={catalogCount} liveCategoryCount={liveCategories.length} liveCategoryNames={liveCategoryNames} />
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
-        <CategoryEntries />
+        <CategoryEntries categoryCounts={categoryCounts} />
 
         <section className="reveal reveal-up mt-20">
           <SectionHead
             index="01"
-            title="本期新入库"
+            title="单板新入库"
             titleEn="New Arrivals"
-            desc={`${SEASON} 雪季新增档案，全部按同一套六维评分体系实测录入。`}
+            desc={`${SEASON} 雪季新增单板档案，按同一套六维评分体系实测录入。`}
             action={
               <Link href="/browse/snowboard" className="mono-label story-link flex items-center gap-1.5">
-                查看全部 {GEAR.length} 件 <ArrowRight size={13} strokeWidth={1.6} />
+                查看单板 {snowboardCount} 件 <ArrowRight size={13} strokeWidth={1.6} />
               </Link>
             }
           />
@@ -54,9 +59,9 @@ export default function HomePage() {
           <div>
             <SectionHead
               index="02"
-              title={`${SEASON} 综合榜`}
+              title={`${SEASON} 单板综合榜`}
               titleEn="Top Rated"
-              desc="数据分 70% + 社区投票 30%，每票限一件、可改投一次。"
+              desc="单板数据分 70% + 社区投票 30%，每票限一件、可改投一次。"
               action={
                 <Link href="/rankings" className="mono-label story-link flex items-center gap-1.5">
                   <Trophy size={13} strokeWidth={1.6} /> 完整榜单
@@ -113,13 +118,21 @@ export default function HomePage() {
           </div>
         </section>
 
-        <QuizBand />
+        <QuizBand snowboardCount={snowboardCount} />
       </div>
     </div>
   );
 }
 
-function Cover() {
+function Cover({
+  catalogCount,
+  liveCategoryCount,
+  liveCategoryNames,
+}: {
+  catalogCount: number;
+  liveCategoryCount: number;
+  liveCategoryNames: string;
+}) {
   return (
     <section className="relative border-b border-foreground">
       <div className="grid lg:grid-cols-[1.15fr_1fr]">
@@ -133,7 +146,7 @@ function Cover() {
           <div className="dot-grid pointer-events-none absolute inset-0" />
           <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-3 bg-gradient-to-t from-foreground/80 to-transparent p-5 sm:p-8">
             <p className="mono-label text-background/80">FIELD TEST · 崇礼 / 可可托海 / 将军山</p>
-            <p className="mono-data text-[12px] text-background/80 tnum">单板 {GEAR.length} 件在档</p>
+            <p className="mono-data text-[12px] text-background/80 tnum">当前在档 {catalogCount} 件装备</p>
           </div>
         </div>
 
@@ -147,7 +160,7 @@ function Cover() {
             再决定买不买。
           </h1>
           <p className="mt-6 max-w-md text-[14px] leading-[1.85] text-muted-foreground">
-            单板、跑鞋、镜头、键盘——每个品类都有自己的参数体系与评分维度。
+            {liveCategoryNames || "多个装备品类"}——每个品类都有自己的参数体系与评分维度。
             横向对比、按场景筛选、按自身条件匹配，参数看得懂，选起来才有底。
           </p>
 
@@ -168,9 +181,9 @@ function Cover() {
 
           <dl className="mt-10 grid grid-cols-3 border-t border-border pt-6">
             {[
-              { k: "单板样本", v: GEAR.length, u: "件" },
+              { k: "已开档品类", v: liveCategoryCount, u: "类" },
+              { k: "在档装备", v: catalogCount, u: "件" },
               { k: "评分维度", v: SNOWBOARD.scoreDims.length, u: "维" },
-              { k: "实测评论", v: 24, u: "条" },
             ].map((s) => (
               <div key={s.k}>
                 <dt className="mono-label">{s.k}</dt>
@@ -187,7 +200,7 @@ function Cover() {
   );
 }
 
-function CategoryEntries() {
+function useLiveCategoryCounts(): Record<string, number> {
   const [categoryCounts, setCategoryCounts] = useState<Record<string, number>>({ snowboard: GEAR.length });
 
   useEffect(() => {
@@ -203,6 +216,10 @@ function CategoryEntries() {
     };
   }, []);
 
+  return categoryCounts;
+}
+
+function CategoryEntries({ categoryCounts }: { categoryCounts: Record<string, number> }) {
   return (
     <section id="categories" className="reveal mt-16 scroll-mt-32">
       <SectionHead index="00" title="品类入口" titleEn="Categories" desc="已开档品类可直接浏览；其余品类共用同一套模板引擎，配置就绪即上线。" />
@@ -243,7 +260,7 @@ function CategoryEntries() {
   );
 }
 
-function QuizBand() {
+function QuizBand({ snowboardCount }: { snowboardCount: number }) {
   return (
     <section className="reveal reveal-up mt-20 border border-foreground">
       <div className="grid lg:grid-cols-[1fr_320px]">
@@ -254,7 +271,7 @@ function QuizBand() {
           </h2>
           <p className="mt-4 max-w-xl text-[13.5px] leading-relaxed text-muted-foreground">
             问卷会读取你的水平、使用场景、身体条件与预算，
-            在 {GEAR.length} 件档案里做加权匹配，并逐条说明为什么推荐它、为什么没推荐别的。
+            在 {snowboardCount} 件单板档案里做加权匹配，并逐条说明为什么推荐它、为什么没推荐别的。
           </p>
           <ul className="mono-label mt-6 flex flex-wrap gap-x-6 gap-y-2">
             {SNOWBOARD.quizTemplate.map((q, i) => (

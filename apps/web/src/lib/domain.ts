@@ -1,7 +1,7 @@
 import { GEAR, GEAR_BY_ID, reviewCount, userRating } from "@/data/boards";
 import { SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { BASE_VOTES, SEED_REVIEWS } from "@/data/seeds";
-import { hasFlex, hasHardcoreIndex, hasPrice } from "@/lib/gear-state";
+import { hasEditorialScores, hasFlex, hasHardcoreIndex, hasPrice, hasUserRating } from "@/lib/gear-state";
 import { GUEST, type Persisted } from "@/lib/persisted";
 import type { GearItem, QuizQuestion, Review, ScoreDim, SortKey, SpecGroup } from "@/types";
 
@@ -221,10 +221,10 @@ function pickWinner(
 export function buildCompareMatrix(items: GearItem[], groups: SpecGroup[], dims: ScoreDim[]): CompareRow[] {
   const rows: CompareRow[] = [];
   const meta: [string, string, (g: GearItem) => number | string | null, "higher" | "lower" | null][] = [
-    ["概览", "综合指数", (g) => g.composite, "higher"],
-    ["概览", "用户评分", (g) => userRating(g), "higher"],
-    ["概览", "进阶指数", (g) => g.hardcore, "higher"],
-    ["概览", "官方参考价", (g) => g.price, "lower"],
+    ["概览", "综合指数", (g) => (hasEditorialScores(g) ? g.composite : null), "higher"],
+    ["概览", "用户评分", (g) => (hasUserRating(g) ? userRating(g) : null), "higher"],
+    ["概览", "进阶指数", (g) => (hasHardcoreIndex(g) ? g.hardcore : null), "higher"],
+    ["概览", "官方参考价", (g) => (hasPrice(g) ? g.price : null), "lower"],
     ["概览", "年款", (g) => g.year, "higher"],
     ["概览", "评论数", (g) => reviewCount(g), "higher"],
   ];
@@ -271,15 +271,20 @@ export function buildCompareMatrix(items: GearItem[], groups: SpecGroup[], dims:
 
 export function compareConclusion(items: GearItem[]): string[] {
   if (items.length < 2) return [];
-  const best = (fn: (g: GearItem) => number, label: string) => {
-    const top = [...items].sort((a, b) => fn(b) - fn(a))[0];
-    return top ? `${label}：${top.brand} ${top.model}` : label;
+  const best = (fn: (g: GearItem) => number, label: string, available: (g: GearItem) => boolean, direction: "higher" | "lower" = "higher") => {
+    const candidates = items.filter(available);
+    if (!candidates.length) return `${label}：数据待补充`;
+    const top = candidates.reduce((current, candidate) => {
+      const better = direction === "higher" ? fn(candidate) > fn(current) : fn(candidate) < fn(current);
+      return better ? candidate : current;
+    });
+    return `${label}：${top.brand} ${top.model}`;
   };
   return [
-    best((g) => g.composite, "综合指数最高"),
-    best((g) => g.scores.value ?? 0, "性价比最高"),
-    best((g) => g.hardcore, "最吃技术"),
-    best((g) => -(g.price - g.composite * 60), "价格最友好"),
+    best((g) => g.composite, "综合指数最高", hasEditorialScores),
+    best((g) => g.scores.value ?? 0, "性价比最高", (g) => typeof g.scores.value === "number"),
+    best((g) => g.hardcore, "最吃技术", hasHardcoreIndex),
+    best((g) => g.price, "价格最友好", hasPrice, "lower"),
   ];
 }
 
@@ -477,6 +482,24 @@ const SCENE_LABELS: Record<string, string> = {
 
 export function sceneLabel(v: string): string {
   return SCENE_LABELS[v] ?? v;
+}
+
+/** 参数值统一展示：API 暂存的场景数组不能直接把 JSON 原文露给用户。 */
+export function formatSpecValue(value: unknown): string {
+  if (value === null || value === undefined || value === "") return "—";
+  if (typeof value !== "string") return String(value);
+  const text = value.trim();
+  if (text.startsWith("[") && text.endsWith("]")) {
+    try {
+      const parsed: unknown = JSON.parse(text);
+      if (Array.isArray(parsed)) {
+        return parsed.map((item) => (typeof item === "string" ? sceneLabel(item) : String(item))).join(" · ");
+      }
+    } catch {
+      // 保留原文，避免单条脏数据阻断整个参数表。
+    }
+  }
+  return value;
 }
 
 export function quizQuestions(slug: string): QuizQuestion[] {

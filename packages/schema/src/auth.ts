@@ -2,34 +2,30 @@ import { z } from 'zod';
 import { riderProfileSchema } from './survey';
 
 const passwordSchema = z.string().min(6, '密码至少 6 位').max(128, '密码不能超过 128 位');
-const phoneSchema = z
-  .string()
-  .trim()
-  .regex(/^(?:\+?86)?1[3-9]\d{9}$/, '手机号格式不正确');
+const emailSchema = z.string().trim().email('邮箱格式不正确');
+const emailCodeSchema = z.string().trim().regex(/^\d{6}$/, '验证码应为 6 位数字');
+const emailCodePurposeSchema = z.enum(['register', 'reset-password']);
 
-export const authPhoneCodeSchema = z.object({ phone: phoneSchema }).strict();
-export type AuthPhoneCodeInput = z.infer<typeof authPhoneCodeSchema>;
-
-export const authPhoneLoginSchema = z
+export const authEmailCodeSchema = z
   .object({
-    phone: phoneSchema,
-    code: z.string().trim().regex(/^\d{6}$/, '验证码应为 6 位数字'),
-    nickname: z.string().trim().max(32, '昵称不能超过 32 个字').optional(),
+    email: emailSchema,
+    purpose: emailCodePurposeSchema,
   })
   .strict();
-export type AuthPhoneLoginInput = z.infer<typeof authPhoneLoginSchema>;
+export type AuthEmailCodeInput = z.infer<typeof authEmailCodeSchema>;
 
 export const authRegisterSchema = z
   .object({
-    email: z.string().email('邮箱格式不正确'),
+    email: emailSchema,
     password: passwordSchema,
+    code: emailCodeSchema,
     nickname: z.string().trim().max(32, '昵称不能超过 32 个字').optional(),
   })
   .strict();
 export type AuthRegisterInput = z.infer<typeof authRegisterSchema>;
 
 export const authLoginSchema = z
-  .object({ email: z.string().email('邮箱格式不正确'), password: passwordSchema })
+  .object({ email: emailSchema, password: passwordSchema })
   .strict();
 export type AuthLoginInput = z.infer<typeof authLoginSchema>;
 
@@ -37,7 +33,7 @@ export const authRefreshSchema = z.object({ refreshToken: z.string().min(32) }).
 export type AuthRefreshInput = z.infer<typeof authRefreshSchema>;
 
 export const authResetPasswordSchema = z
-  .object({ email: z.string().email('邮箱格式不正确'), password: passwordSchema })
+  .object({ email: emailSchema, password: passwordSchema, code: emailCodeSchema })
   .strict();
 export type AuthResetPasswordInput = z.infer<typeof authResetPasswordSchema>;
 

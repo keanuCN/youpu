@@ -61,7 +61,6 @@ export interface AdminAuditLog {
     id: string;
     nickname: string;
     email: string | null;
-    phone: string | null;
     role: string;
   };
 }

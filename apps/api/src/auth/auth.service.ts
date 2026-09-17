@@ -2,23 +2,22 @@ import {
   ConflictException,
   Inject,
   Injectable,
-  Logger,
+  HttpException,
+  HttpStatus,
   NotFoundException,
   ServiceUnavailableException,
   UnauthorizedException,
 } from '@nestjs/common';
 import {
   accountPatchSchema,
+  authEmailCodeSchema,
   authLoginSchema,
-  authPhoneCodeSchema,
-  authPhoneLoginSchema,
   authRefreshSchema,
   authRegisterSchema,
   authResetPasswordSchema,
   type AccountPatchInput,
+  type AuthEmailCodeInput,
   type AuthLoginInput,
-  type AuthPhoneCodeInput,
-  type AuthPhoneLoginInput,
   type AuthRefreshInput,
   type AuthRegisterInput,
   type AuthResetPasswordInput,
@@ -39,19 +38,20 @@ import { PrismaService } from '../common/prisma.service';
 import { REDIS } from '../common/redis.module';
 import { uuidv7 } from '../common/uuid';
 import type { AccountView, AuthRequest, SessionResponse } from './auth.types';
+import { EmailService, type EmailCodePurpose } from './email.service';
 
 const ACCESS_TOKEN_TTL_SECONDS = 15 * 60;
 const REFRESH_TOKEN_TTL_MS = 30 * 24 * 60 * 60 * 1000;
-const PHONE_CODE_TTL_SECONDS = 5 * 60;
-const PHONE_CODE_COOLDOWN_SECONDS = 60;
-const PHONE_CODE_MAX_ATTEMPTS = 5;
+const EMAIL_CODE_TTL_SECONDS = 10 * 60;
+const EMAIL_CODE_COOLDOWN_SECONDS = 60;
+const EMAIL_CODE_MAX_ATTEMPTS = 5;
+const EMAIL_CODE_DAILY_IP_LIMIT = 20;
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const SCRYPT_OPTIONS: ScryptOptions = { N: 16_384, r: 8, p: 1, maxmem: 32 * 1024 * 1024 };
 
 type AccountRow = {
   id: string;
   email: string | null;
-  phone: string | null;
   nickname: string;
   avatarUrl: string | null;
   riderProfile: unknown;
@@ -63,16 +63,16 @@ type AccountRow = {
 
 @Injectable()
 export class AuthService {
-  private readonly logger = new Logger(AuthService.name);
-
   constructor(
     private readonly prisma: PrismaService,
     @Inject(REDIS) private readonly redis: Redis,
+    private readonly email: EmailService,
   ) {}
 
   async register(input: AuthRegisterInput, request?: AuthRequest): Promise<SessionResponse> {
     const body = authRegisterSchema.parse(input);
     const email = normalizeEmail(body.email);
+    await this.consumeEmailCode(email, 'register', body.code);
     const nickname = body.nickname?.trim() || defaultNickname(email);
     const passwordHash = await hashPassword(body.password);
     let account: AccountRow;
@@ -83,7 +83,7 @@ export class AuthService {
           email,
           nickname,
           passwordHash,
-          // 本地 M3 不接邮箱验证，注册后直接进入 active；上线前再接验证与风控。
+          emailVerifiedAt: new Date(),
           status: 'active',
           role: 'user',
         },
@@ -107,77 +107,55 @@ export class AuthService {
     return this.issueSession(account, request);
   }
 
-  /**
-   * 手机验证码登录的本地开发实现。
-   *
-   * 当前不接第三方短信服务：验证码只在非生产环境返回并写入日志，方便本地联调；
-   * 生产环境在接入短信供应商前会明确返回不可用，不会伪装成已发送。
-   */
-  async requestPhoneCode(input: AuthPhoneCodeInput): Promise<{ ok: true; expiresIn: number; devCode?: string }> {
-    const body = authPhoneCodeSchema.parse(input);
-    const phone = normalizePhone(body.phone);
-    if (env.NODE_ENV === 'production') {
-      throw new ServiceUnavailableException('短信登录服务尚未配置');
+  async requestEmailCode(
+    input: AuthEmailCodeInput,
+    request?: AuthRequest,
+  ): Promise<{ ok: true; expiresIn: number; devCode?: string }> {
+    const body = authEmailCodeSchema.parse(input);
+    const email = normalizeEmail(body.email);
+    const purpose: EmailCodePurpose = body.purpose;
+
+    if (env.NODE_ENV === 'production' && !this.email.isConfigured()) {
+      throw new ServiceUnavailableException('邮箱服务尚未配置');
     }
 
-    const phoneKey = phoneDigest(phone);
-    const cooldownKey = `auth:phone-code:cooldown:${phoneKey}`;
-    const accepted = await this.redis.set(cooldownKey, '1', 'EX', PHONE_CODE_COOLDOWN_SECONDS, 'NX');
+    const existing = await this.prisma.account.findUnique({ where: { email }, select: { id: true } });
+    if (purpose === 'register' && existing) throw new ConflictException('该邮箱已注册，请直接登录');
+    if (purpose === 'reset-password' && !existing) throw new NotFoundException('该邮箱尚未注册');
+
+    const emailHash = emailDigest(email);
+    const cooldownKey = 'auth:email-code:' + purpose + ':cooldown:' + emailHash;
+    const accepted = await this.redis.set(cooldownKey, '1', 'EX', EMAIL_CODE_COOLDOWN_SECONDS, 'NX');
     if (accepted !== 'OK') {
       const ttl = await this.redis.ttl(cooldownKey);
-      throw new ConflictException(`验证码已发送，请 ${Math.max(ttl, 1)} 秒后再试`);
+      throw new ConflictException('验证码已发送，请 ' + Math.max(ttl, 1) + ' 秒后再试');
+    }
+
+    const requestIp = request?.ip || request?.headers?.['x-forwarded-for']?.split(',')[0]?.trim() || 'unknown';
+    const ipLimitKey =
+      'auth:email-code:ip:' + digestText(requestIp) + ':' + new Date().toISOString().slice(0, 10);
+    const ipCount = await this.redis.incr(ipLimitKey);
+    if (ipCount === 1) await this.redis.expire(ipLimitKey, 24 * 60 * 60);
+    if (ipCount > EMAIL_CODE_DAILY_IP_LIMIT) {
+      await this.redis.del(cooldownKey);
+      throw new HttpException('验证码请求过于频繁，请明天再试', HttpStatus.TOO_MANY_REQUESTS);
     }
 
     const code = String(randomInt(100000, 1000000));
-    await this.redis.set(phoneCodeKey(phone), otpDigest(phone, code), 'EX', PHONE_CODE_TTL_SECONDS);
-    this.logger.log(`本地短信验证码：手机号尾号 ${phone.slice(-4)}，验证码 ${code}，有效期 ${PHONE_CODE_TTL_SECONDS} 秒`);
-
-    return { ok: true, expiresIn: PHONE_CODE_TTL_SECONDS, devCode: code };
-  }
-
-  async phoneLogin(input: AuthPhoneLoginInput, request?: AuthRequest): Promise<SessionResponse> {
-    const body = authPhoneLoginSchema.parse(input);
-    const phone = normalizePhone(body.phone);
-    const codeKey = phoneCodeKey(phone);
-    const expectedDigest = await this.redis.get(codeKey);
-    if (!expectedDigest) throw new UnauthorizedException('验证码已过期，请重新获取');
-
-    const attemptsKey = `${codeKey}:attempts`;
-    const attempts = await this.redis.incr(attemptsKey);
-    if (attempts === 1) await this.redis.expire(attemptsKey, PHONE_CODE_TTL_SECONDS);
-    if (attempts > PHONE_CODE_MAX_ATTEMPTS) {
-      await this.redis.del(codeKey, attemptsKey);
-      throw new UnauthorizedException('验证码错误次数过多，请重新获取');
+    const codeKey = emailCodeKey(email, purpose);
+    await this.redis.del(codeKey, codeKey + ':attempts');
+    await this.redis.set(codeKey, emailCodeDigest(email, purpose, code), 'EX', EMAIL_CODE_TTL_SECONDS);
+    try {
+      const delivery = await this.email.sendVerificationCode(email, code, purpose);
+      return {
+        ok: true,
+        expiresIn: EMAIL_CODE_TTL_SECONDS,
+        ...(delivery.delivered ? {} : { devCode: delivery.devCode }),
+      };
+    } catch {
+      await this.redis.del(cooldownKey, codeKey);
+      throw new ServiceUnavailableException('验证邮件发送失败，请稍后再试');
     }
-    if (!safeEqualText(expectedDigest, otpDigest(phone, body.code))) {
-      throw new UnauthorizedException('验证码不正确');
-    }
-    await this.redis.del(codeKey, attemptsKey);
-
-    let account = (await this.prisma.account.findUnique({ where: { phone } })) as AccountRow | null;
-    if (!account) {
-      try {
-        account = (await this.prisma.account.create({
-          data: {
-            id: uuidv7(),
-            phone,
-            nickname: body.nickname?.trim() || defaultNicknameForPhone(phone),
-            status: 'active',
-            role: 'user',
-          },
-        })) as AccountRow;
-      } catch (error) {
-        // 并发首次登录时允许另一个请求先创建账号，再继续签发当前会话。
-        if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === 'P2002') {
-          account = (await this.prisma.account.findUnique({ where: { phone } })) as AccountRow | null;
-        } else {
-          throw error;
-        }
-      }
-    }
-    if (!account) throw new ConflictException('手机号账号创建失败，请重试');
-    if (account.status !== 'active') throw new UnauthorizedException('账号当前不可用');
-    return this.issueSession(account, request);
   }
 
   async refresh(input: AuthRefreshInput, request?: AuthRequest): Promise<SessionResponse> {
@@ -208,6 +186,7 @@ export class AuthService {
   async resetPassword(input: AuthResetPasswordInput): Promise<{ ok: true }> {
     const body = authResetPasswordSchema.parse(input);
     const email = normalizeEmail(body.email);
+    await this.consumeEmailCode(email, 'reset-password', body.code);
     const account = await this.prisma.account.findUnique({ where: { email }, select: { id: true } });
     if (!account) throw new NotFoundException('该邮箱尚未注册');
     const passwordHash = await hashPassword(body.password);
@@ -249,6 +228,24 @@ export class AuthService {
     }
   }
 
+  private async consumeEmailCode(email: string, purpose: EmailCodePurpose, code: string): Promise<void> {
+    const codeKey = emailCodeKey(email, purpose);
+    const expectedDigest = await this.redis.get(codeKey);
+    if (!expectedDigest) throw new UnauthorizedException('验证码已过期，请重新获取');
+
+    const attemptsKey = codeKey + ':attempts';
+    const attempts = await this.redis.incr(attemptsKey);
+    if (attempts === 1) await this.redis.expire(attemptsKey, EMAIL_CODE_TTL_SECONDS);
+    if (attempts > EMAIL_CODE_MAX_ATTEMPTS) {
+      await this.redis.del(codeKey, attemptsKey);
+      throw new UnauthorizedException('验证码错误次数过多，请重新获取');
+    }
+    if (!safeEqualText(expectedDigest, emailCodeDigest(email, purpose, code))) {
+      throw new UnauthorizedException('验证码不正确');
+    }
+    await this.redis.del(codeKey, attemptsKey);
+  }
+
   private async issueSession(account: AccountRow, request?: AuthRequest): Promise<SessionResponse> {
     const refreshToken = randomBytes(48).toString('base64url');
     await this.prisma.refreshToken.create({
@@ -273,7 +270,6 @@ export class AuthService {
     return {
       id: account.id,
       email: account.email,
-      phone: account.phone,
       nickname: account.nickname,
       avatarUrl: account.avatarUrl,
       riderProfile:
@@ -291,32 +287,25 @@ export function normalizeEmail(email: string): string {
   return email.trim().toLowerCase();
 }
 
-export function normalizePhone(phone: string): string {
-  const compact = phone.trim().replace(/[\s-]/g, '');
-  if (compact.startsWith('+86')) return compact.slice(3);
-  if (compact.startsWith('86') && compact.length === 13) return compact.slice(2);
-  return compact;
-}
-
 function defaultNickname(email: string): string {
   const prefix = email.split('@')[0]?.replace(/[^a-zA-Z0-9_]/g, '').slice(0, 16);
   return prefix || 'rider';
 }
 
-function defaultNicknameForPhone(phone: string): string {
-  return `滑手${phone.slice(-4)}`;
+function digestText(value: string): string {
+  return createHash('sha256').update(value).digest('hex');
 }
 
-function phoneDigest(phone: string): string {
-  return createHash('sha256').update(`phone:${phone}`).digest('hex');
+function emailDigest(email: string): string {
+  return digestText('email:' + email);
 }
 
-function phoneCodeKey(phone: string): string {
-  return `auth:phone-code:${phoneDigest(phone)}`;
+function emailCodeKey(email: string, purpose: EmailCodePurpose): string {
+  return 'auth:email-code:' + purpose + ':' + emailDigest(email);
 }
 
-function otpDigest(phone: string, code: string): string {
-  return createHmac('sha256', env.AUTH_SECRET).update(`phone-code:${phone}:${code}`).digest('hex');
+function emailCodeDigest(email: string, purpose: EmailCodePurpose, code: string): string {
+  return createHmac('sha256', env.AUTH_SECRET).update(purpose + ':' + email + ':' + code).digest('hex');
 }
 
 function hashToken(value: string): string {

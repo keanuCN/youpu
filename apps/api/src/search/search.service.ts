@@ -63,6 +63,7 @@ export class SearchService {
         brand: { select: { slug: true, name: true, nameCn: true } },
         category: { select: { id: true, slug: true, specSchema: true } },
         stat: { select: { view7d: true, viewTotal: true } },
+        images: { orderBy: { sortOrder: 'asc' }, take: 1 },
       },
     })) as SearchRow[];
     const facetRows = await this.facetRows(where);
@@ -90,6 +91,7 @@ export class SearchService {
         brand: { select: { slug: true, name: true, nameCn: true } },
         category: { select: { id: true, slug: true, specSchema: true } },
         stat: { select: { view7d: true, viewTotal: true } },
+        images: { orderBy: { sortOrder: 'asc' }, take: 1 },
       },
     })) as SearchRow[];
     const byId = new Map(rows.map((row) => [row.id, row]));

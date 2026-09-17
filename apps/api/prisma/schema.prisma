@@ -134,6 +134,7 @@ model Account {
   phone        String?  @unique
   nickname     String
   passwordHash String?  @map("password_hash")
+  emailVerifiedAt DateTime? @map("email_verified_at") @db.Timestamptz(6)
   avatarUrl    String?  @map("avatar_url")
   riderProfile Json?    @map("rider_profile")
   role         String   @default("user")

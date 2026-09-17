@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,9 +11,8 @@ import { BRAND } from "@/lib/brand";
 import {
   cloudLogin,
   cloudMe,
-  cloudPhoneLogin,
   cloudRegister,
-  cloudRequestPhoneCode,
+  cloudRequestEmailCode,
   cloudResetPassword,
   WebApiError,
   saveCloudSession,
@@ -23,42 +22,54 @@ import {
   applyCloudMe,
   login,
   mergeGuestDock,
-  phoneLogin,
   register,
-  requestPhoneCode,
+  requestEmailCode,
   resetPassword,
   useCurrentUser,
 } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
-type Method = "phone" | "email";
 type EmailMode = "login" | "register" | "forgot";
 
 const COPY: Record<EmailMode, { title: string; en: string; desc: string; cta: string }> = {
   login: { title: "登录档案库", en: "Sign In", desc: "登录后收藏、对比记录、评论与投票会绑定到你的账号。", cta: "登录" },
-  register: { title: "创建档案账号", en: "Create Account", desc: "只需邮箱与密码。游客期的对比坞会在登录后自动合并。", cta: "创建账号并登录" },
-  forgot: { title: "重置密码", en: "Reset Password", desc: "输入注册邮箱与新密码即可重置。", cta: "重置密码" },
+  register: {
+    title: "创建档案账号",
+    en: "Create Account",
+    desc: "使用邮箱验证码完成验证，再设置密码。游客期的对比坞会在登录后自动合并。",
+    cta: "创建账号并登录",
+  },
+  forgot: {
+    title: "重置密码",
+    en: "Reset Password",
+    desc: "验证码会发送到注册邮箱，验证通过后即可设置新密码。",
+    cta: "重置密码",
+  },
 };
 
 export default function AuthPage() {
   const router = useRouter();
   const me = useCurrentUser();
-  const [method, setMethod] = useState<Method>("phone");
   const [emailMode, setEmailMode] = useState<EmailMode>("login");
-  const [phone, setPhone] = useState("");
-  const [code, setCode] = useState("");
-  const [phoneCodeSent, setPhoneCodeSent] = useState(false);
-  const [phoneCooldown, setPhoneCooldown] = useState(0);
   const [email, setEmail] = useState("");
+  const [code, setCode] = useState("");
+  const [emailCodeSent, setEmailCodeSent] = useState(false);
+  const [emailCooldown, setEmailCooldown] = useState(0);
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
   const [busy, setBusy] = useState(false);
 
   useEffect(() => {
-    if (phoneCooldown <= 0) return;
-    const timer = window.setInterval(() => setPhoneCooldown((value) => Math.max(0, value - 1)), 1000);
+    if (emailCooldown <= 0) return;
+    const timer = window.setInterval(() => setEmailCooldown((value) => Math.max(0, value - 1)), 1000);
     return () => window.clearInterval(timer);
-  }, [phoneCooldown]);
+  }, [emailCooldown]);
+
+  const clearEmailCode = () => {
+    setCode("");
+    setEmailCodeSent(false);
+    setEmailCooldown(0);
+  };
 
   if (me.sessionKey) {
     return (
@@ -78,39 +89,17 @@ export default function AuthPage() {
     );
   }
 
-  const submit = async (e: React.FormEvent) => {
+  const submit = async (e: FormEvent) => {
     e.preventDefault();
-    setBusy(true);
-    if (method === "phone") {
-      if (!phoneCodeSent) {
-        setBusy(false);
-        return toast.error("请先获取短信验证码");
-      }
-      try {
-        const session = await cloudPhoneLogin(phone, code);
-        saveCloudSession(session);
-        applyCloudAccount(session.account);
-        void cloudMe().then(applyCloudMe).catch(() => undefined);
-      } catch (error) {
-        if (!isNetworkError(error)) {
-          setBusy(false);
-          return toast.error(errorMessage(error));
-        }
-        const res = phoneLogin(phone, code);
-        if (!res.ok) {
-          setBusy(false);
-          return toast.error(res.message);
-        }
-      }
-      mergeGuestDock();
-      toast.success("登录成功");
-      router.push("/me");
-      return;
+    const requiresCode = emailMode !== "login";
+    if (requiresCode && !emailCodeSent) {
+      return toast.error("请先获取邮箱验证码");
     }
+    setBusy(true);
 
     if (emailMode === "register") {
       try {
-        const session = await cloudRegister(email, password, username);
+        const session = await cloudRegister(email, password, code, username);
         saveCloudSession(session);
         applyCloudAccount(session.account);
         void cloudMe().then(applyCloudMe).catch(() => undefined);
@@ -119,7 +108,7 @@ export default function AuthPage() {
           setBusy(false);
           return toast.error(errorMessage(error));
         }
-        const res = register(email, password, username);
+        const res = register(email, password, code, username);
         if (!res.ok) {
           setBusy(false);
           return toast.error(res.message);
@@ -130,15 +119,16 @@ export default function AuthPage() {
       router.push("/me");
       return;
     }
+
     if (emailMode === "forgot") {
       try {
-        await cloudResetPassword(email, password);
+        await cloudResetPassword(email, password, code);
       } catch (error) {
         if (!isNetworkError(error)) {
           setBusy(false);
           return toast.error(errorMessage(error));
         }
-        const res = resetPassword(email, password);
+        const res = resetPassword(email, password, code);
         if (!res.ok) {
           setBusy(false);
           return toast.error(res.message);
@@ -147,9 +137,11 @@ export default function AuthPage() {
       toast.success("密码已重置，请登录");
       setEmailMode("login");
       setPassword("");
+      clearEmailCode();
       setBusy(false);
       return;
     }
+
     try {
       const session = await cloudLogin(email, password);
       saveCloudSession(session);
@@ -171,29 +163,30 @@ export default function AuthPage() {
     router.push("/me");
   };
 
-  const sendPhoneCode = async () => {
-    if (busy || phoneCooldown > 0) return;
+  const sendEmailCode = async () => {
+    if (busy || emailCooldown > 0) return;
+    const purpose = emailMode === "register" ? "register" : "reset-password";
     setBusy(true);
     try {
-      const result = await cloudRequestPhoneCode(phone);
+      const result = await cloudRequestEmailCode(email, purpose);
       setCode(result.devCode ?? "");
-      setPhoneCodeSent(true);
-      setPhoneCooldown(60);
-      toast.success(result.devCode ? `本地验证码：${result.devCode}` : "验证码已发送");
+      setEmailCodeSent(true);
+      setEmailCooldown(60);
+      toast.success(result.devCode ? "本地验证码已自动填入" : "验证码已发送，请查收邮箱");
     } catch (error) {
       if (!isNetworkError(error)) {
         setBusy(false);
         return toast.error(errorMessage(error));
       }
-      const result = requestPhoneCode(phone);
+      const result = requestEmailCode(email, purpose);
       if (!result.ok) {
         setBusy(false);
         return toast.error(result.message);
       }
       setCode(result.devCode);
-      setPhoneCodeSent(true);
-      setPhoneCooldown(60);
-      toast.success(`本地验证码：${result.devCode}`);
+      setEmailCodeSent(true);
+      setEmailCooldown(60);
+      toast.success("本地验证码已自动填入");
     }
     setBusy(false);
   };
@@ -238,97 +231,59 @@ export default function AuthPage() {
 
       <div className="border border-foreground">
         <div className="flex border-b border-foreground">
-          {(["phone", "email"] as Method[]).map((m) => (
+          {(["login", "register", "forgot"] as EmailMode[]).map((m) => (
             <button
               key={m}
               type="button"
               onClick={() => {
-                setMethod(m);
+                setEmailMode(m);
                 setPassword("");
-                setPhoneCodeSent(false);
-                setCode("");
-                setPhoneCooldown(0);
+                clearEmailCode();
               }}
               className={cn(
                 "mono-label flex-1 py-3 transition-colors",
-                method === m ? "bg-foreground text-background" : "hover:bg-accent",
+                emailMode === m ? "bg-foreground text-background" : "hover:bg-accent",
               )}
             >
-              {m === "phone" ? "手机号登录" : "邮箱注册 / 登录"}
+              {m === "login" ? "登录" : m === "register" ? "注册" : "找回密码"}
             </button>
           ))}
         </div>
 
-        {method === "email" ? (
-          <div className="flex border-b border-border">
-            {(["login", "register", "forgot"] as EmailMode[]).map((m) => (
-              <button
-                key={m}
-                type="button"
-                onClick={() => {
-                  setEmailMode(m);
-                  setPassword("");
-                }}
-                className={cn(
-                  "mono-label flex-1 py-2.5 transition-colors",
-                  emailMode === m ? "text-primary" : "text-muted-foreground hover:text-foreground",
-                )}
-              >
-                {m === "login" ? "登录" : m === "register" ? "注册" : "找回密码"}
-              </button>
-            ))}
-          </div>
-        ) : null}
-
         <form onSubmit={submit} className="space-y-4 p-6">
           <div>
-            <h2 className="text-[22px] leading-none font-medium tracking-tight">{method === "phone" ? "手机号登录" : c.title}</h2>
-            <p className="mono-label mt-2">{method === "phone" ? "SMS SIGN IN" : c.en}</p>
-            <p className="mt-3 text-[12.5px] leading-relaxed text-muted-foreground">
-              {method === "phone" ? "验证码登录，首次验证后会自动创建账号。" : c.desc}
-            </p>
+            <h2 className="text-[22px] leading-none font-medium tracking-tight">{c.title}</h2>
+            <p className="mono-label mt-2">{c.en}</p>
+            <p className="mt-3 text-[12.5px] leading-relaxed text-muted-foreground">{c.desc}</p>
           </div>
 
-          {method === "phone" ? (
-            <>
-              <div className="space-y-1.5">
-                <Label htmlFor="phone" className="mono-label">
-                  手机号
-                </Label>
-                <div className="flex gap-2">
-                  <Input
-                    id="phone"
-                    type="tel"
-                    inputMode="numeric"
-                    required
-                    autoComplete="tel"
-                    value={phone}
-                    onChange={(e) => {
-                      setPhone(e.target.value);
-                      setPhoneCodeSent(false);
-                      setCode("");
-                    }}
-                    placeholder="请输入 11 位手机号"
-                    className="h-9 min-w-0 flex-1 rounded-none border-border text-[13px]"
-                  />
-                  <Button
-                    type="button"
-                    variant="outline"
-                    disabled={busy || phoneCooldown > 0}
-                    onClick={sendPhoneCode}
-                    className="h-9 shrink-0 rounded-none px-3 text-[12px]"
-                  >
-                    {phoneCooldown > 0 ? `重新获取 ${phoneCooldown}s` : phoneCodeSent ? "重新获取验证码" : "获取验证码"}
-                  </Button>
-                </div>
-              </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="email" className="mono-label">
+              邮箱
+            </Label>
+            <Input
+              id="email"
+              type="email"
+              required
+              autoComplete="email"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                clearEmailCode();
+              }}
+              placeholder="you@example.com"
+              className="h-9 rounded-none border-border text-[13px]"
+            />
+          </div>
 
-              <div className="space-y-1.5">
-                <Label htmlFor="phone-code" className="mono-label">
-                  短信验证码
-                </Label>
+          {emailMode !== "login" ? (
+            <div className="space-y-1.5">
+              <Label htmlFor="email-code" className="mono-label">
+                邮箱验证码
+              </Label>
+              <div className="flex gap-2">
                 <Input
-                  id="phone-code"
+                  id="email-code"
                   type="text"
                   inputMode="numeric"
                   autoComplete="one-time-code"
@@ -338,94 +293,83 @@ export default function AuthPage() {
                   value={code}
                   onChange={(e) => setCode(e.target.value.replace(/\D/g, "").slice(0, 6))}
                   placeholder="请输入 6 位验证码"
-                  className="h-9 rounded-none border-border text-[13px] tracking-[0.2em]"
+                  className="h-9 min-w-0 flex-1 rounded-none border-border text-[13px] tracking-[0.2em]"
                 />
-              </div>
-
-              <p className="mono-label border border-dashed border-border p-3 leading-relaxed">
-                本地开发环境会自动填入验证码；上线后改由短信服务投递。
-              </p>
-            </>
-          ) : (
-            <>
-              <div className="space-y-1.5">
-                <Label htmlFor="email" className="mono-label">
-                  邮箱
-                </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  required
-                  autoComplete="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="you@example.com"
-                  className="h-9 rounded-none border-border text-[13px]"
-                />
-              </div>
-
-              {emailMode === "register" ? (
-                <div className="space-y-1.5">
-                  <Label htmlFor="username" className="mono-label">
-                    昵称（可选）
-                  </Label>
-                  <Input
-                    id="username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    placeholder="例如：刃上有风"
-                    className="h-9 rounded-none border-border text-[13px]"
-                  />
-                </div>
-              ) : null}
-
-              <div className="space-y-1.5">
-                <Label htmlFor="password" className="mono-label">
-                  {emailMode === "forgot" ? "新密码" : "密码"}
-                </Label>
-                <Input
-                  id="password"
-                  type="password"
-                  required
-                  minLength={6}
-                  autoComplete={emailMode === "login" ? "current-password" : "new-password"}
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  placeholder="至少 6 位"
-                  className="h-9 rounded-none border-border text-[13px]"
-                />
-              </div>
-            </>
-          )}
-
-          <Button type="submit" disabled={busy} className="h-10 w-full rounded-none bg-foreground text-[13px] tracking-wide hover:bg-primary">
-            {method === "phone" ? "手机号登录" : c.cta}
-          </Button>
-
-          {method === "email" ? (
-            <div className="border-t border-border pt-4">
-              <p className="mono-label mb-2">演示账号</p>
-              <div className="flex items-center justify-between gap-3 bg-secondary/60 px-3 py-2.5">
-                <div className="min-w-0">
-                  <p className="mono-data truncate text-[12px]">{BRAND.demoEmail}</p>
-                  <p className="mono-data truncate text-[12px] text-muted-foreground">{BRAND.demoPassword}</p>
-                </div>
                 <Button
                   type="button"
-                  size="sm"
                   variant="outline"
-                  onClick={() => {
-                    setEmailMode("login");
-                    setEmail(BRAND.demoEmail);
-                    setPassword(BRAND.demoPassword);
-                  }}
-                  className="h-7 shrink-0 rounded-none text-[12px]"
+                  disabled={busy || emailCooldown > 0}
+                  onClick={sendEmailCode}
+                  className="h-9 shrink-0 rounded-none px-3 text-[12px]"
                 >
-                  一键填入
+                  {emailCooldown > 0 ? "重新获取 " + emailCooldown + "s" : emailCodeSent ? "重新发送" : "获取验证码"}
                 </Button>
               </div>
+              <p className="mono-label border border-dashed border-border p-3 leading-relaxed">
+                验证码 10 分钟有效。生产环境需配置 SMTP；未配置时仅本地开发会自动填入。
+              </p>
             </div>
           ) : null}
+
+          {emailMode === "register" ? (
+            <div className="space-y-1.5">
+              <Label htmlFor="username" className="mono-label">
+                昵称（可选）
+              </Label>
+              <Input
+                id="username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                placeholder="例如：刃上有风"
+                className="h-9 rounded-none border-border text-[13px]"
+              />
+            </div>
+          ) : null}
+
+          <div className="space-y-1.5">
+            <Label htmlFor="password" className="mono-label">
+              {emailMode === "forgot" ? "新密码" : "密码"}
+            </Label>
+            <Input
+              id="password"
+              type="password"
+              required
+              minLength={6}
+              autoComplete={emailMode === "login" ? "current-password" : "new-password"}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="至少 6 位"
+              className="h-9 rounded-none border-border text-[13px]"
+            />
+          </div>
+
+          <Button type="submit" disabled={busy} className="h-10 w-full rounded-none bg-foreground text-[13px] tracking-wide hover:bg-primary">
+            {c.cta}
+          </Button>
+
+          <div className="border-t border-border pt-4">
+            <p className="mono-label mb-2">演示账号</p>
+            <div className="flex items-center justify-between gap-3 bg-secondary/60 px-3 py-2.5">
+              <div className="min-w-0">
+                <p className="mono-data truncate text-[12px]">{BRAND.demoEmail}</p>
+                <p className="mono-data truncate text-[12px] text-muted-foreground">{BRAND.demoPassword}</p>
+              </div>
+              <Button
+                type="button"
+                size="sm"
+                variant="outline"
+                onClick={() => {
+                  setEmailMode("login");
+                  setEmail(BRAND.demoEmail);
+                  setPassword(BRAND.demoPassword);
+                  clearEmailCode();
+                }}
+                className="h-7 shrink-0 rounded-none text-[12px]"
+              >
+                一键填入
+              </Button>
+            </div>
+          </div>
         </form>
       </div>
     </div>

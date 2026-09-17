@@ -420,7 +420,7 @@ function ProfileForm() {
           </select>
         </div>
       </div>
-      <p className="mono-label mt-4">登录账号（不可修改）：{profile.phone || profile.email || "未设置"}</p>
+      <p className="mono-label mt-4">登录账号（不可修改）：{profile.email || "未设置邮箱"}</p>
       <div className="mt-5 flex gap-2 border-t border-border pt-4">
         <Button
           onClick={async () => {

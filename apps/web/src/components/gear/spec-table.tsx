@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { formatSpecValue } from "@/lib/domain";
 import { cn } from "@/lib/utils";
 import type { GearItem, SpecGroup } from "@/types";
 
@@ -48,7 +49,7 @@ export function SpecTable({ gear, groups }: { gear: GearItem; groups: SpecGroup[
                           <span className="text-muted-foreground/45">—</span>
                         ) : (
                           <>
-                            {f.key === "price" && typeof raw === "number" ? `¥${raw.toLocaleString("zh-CN")}` : String(raw)}
+                            {f.key === "price" && typeof raw === "number" ? `¥${raw.toLocaleString("zh-CN")}` : formatSpecValue(raw)}
                             {f.unit ? <span className="ml-[3px] text-[11px] text-muted-foreground">{f.unit}</span> : null}
                           </>
                         )}

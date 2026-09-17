@@ -3,7 +3,6 @@ import type { AccountPatchInput } from '@youpu/schema';
 export interface AccountView {
   id: string;
   email: string | null;
-  phone: string | null;
   nickname: string;
   avatarUrl: string | null;
   riderProfile: Record<string, unknown>;
@@ -13,7 +12,8 @@ export interface AccountView {
 }
 
 export interface AuthRequest {
-  headers?: { authorization?: string; 'user-agent'?: string };
+  headers?: { authorization?: string; 'user-agent'?: string; 'x-forwarded-for'?: string };
+  ip?: string;
   account?: AccountView;
   accountId?: string;
 }

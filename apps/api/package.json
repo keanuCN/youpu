@@ -23,6 +23,7 @@
     "@youpu/schema": "workspace:*",
     "dotenv": "^16.4.7",
     "ioredis": "^5.4.1",
+    "nodemailer": "^10.0.10",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "yaml": "^2.6.1",

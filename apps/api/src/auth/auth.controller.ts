@@ -1,16 +1,14 @@
 import { Body, Controller, Get, HttpCode, Patch, Post, Req, UseGuards } from '@nestjs/common';
 import {
   accountPatchSchema,
+  authEmailCodeSchema,
   authLoginSchema,
-  authPhoneCodeSchema,
-  authPhoneLoginSchema,
   authRefreshSchema,
   authRegisterSchema,
   authResetPasswordSchema,
   type AccountPatchInput,
+  type AuthEmailCodeInput,
   type AuthLoginInput,
-  type AuthPhoneCodeInput,
-  type AuthPhoneLoginInput,
   type AuthRefreshInput,
   type AuthRegisterInput,
   type AuthResetPasswordInput,
@@ -41,17 +39,12 @@ export class AuthController {
     return this.auth.login(body, request);
   }
 
-  @Post('phone/code')
-  requestPhoneCode(@Body(new ZodValidationPipe(authPhoneCodeSchema)) body: AuthPhoneCodeInput) {
-    return this.auth.requestPhoneCode(body);
-  }
-
-  @Post('phone/login')
-  phoneLogin(
-    @Body(new ZodValidationPipe(authPhoneLoginSchema)) body: AuthPhoneLoginInput,
+  @Post('email/code')
+  requestEmailCode(
+    @Body(new ZodValidationPipe(authEmailCodeSchema)) body: AuthEmailCodeInput,
     @Req() request: AuthRequest,
   ) {
-    return this.auth.phoneLogin(body, request);
+    return this.auth.requestEmailCode(body, request);
   }
 
   @Post('refresh')

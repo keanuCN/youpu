@@ -232,7 +232,7 @@ export class AdminService {
         skip: (page - 1) * pageSize,
         take: pageSize,
         include: {
-          actor: { select: { id: true, nickname: true, email: true, phone: true, role: true } },
+          actor: { select: { id: true, nickname: true, email: true, role: true } },
         },
       }),
     ]);

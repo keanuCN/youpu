@@ -190,7 +190,6 @@ export interface Profile {
   userKey: string;
   username: string;
   email: string;
-  phone?: string;
   avatarSeed: string;
   years: number;
   heightCm: number;
