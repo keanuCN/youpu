@@ -209,5 +209,6 @@ pnpm dev:admin     # 另开终端启动后台：3002
 - ✅ **后台 M2 基础版**：`apps/admin` 已提供单一 Bearer 管理令牌登录、产品 / 品牌 / 类目 CRUD、草稿 / 发布、
   `spec_schema` 驱动参数表单与来源 URL 留痕；图片上传、批量文件导入、细粒度账号权限与审计留到后续版本
 - ✅ **全局搜索与筛选**：`/search` 页面、`GET /api/search`、PostgreSQL 搜索兜底、可选 Elasticsearch 中文分词、URL 筛选状态和内容包回退已完成
+- ✅ **2026-09-18 本地验收基线**：在 `codex/admin-information-architecture` 分支的 `fee8f19` 基线上，API 健康测试 3/3、前端聚焦测试 20/20、全工作区类型检查和 schema/API/web/admin 生产构建均通过；本地 3000/3001/3002 服务均返回 200
 - ⏳ **下一步**：恢复本地 Docker 后执行迁移 / seed，完成本地全栈联调 → 线上 API systemd 部署 → 生产域名与埋点接入 → 完成线上内容 API 接入；
   上线后设 `NEXT_PUBLIC_SITE_URL` 并注册各站长平台（Bing/搜狗/百度）。社区扩展和 M4 运营功能仍未完成。
