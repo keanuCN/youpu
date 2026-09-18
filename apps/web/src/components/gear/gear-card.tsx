@@ -17,6 +17,7 @@ import { cn } from "@/lib/utils";
 import type { GearItem } from "@/types";
 import { useAuthGate } from "@/store/app-shell";
 import { FlexBar, ScoreMark, Stars } from "./primitives";
+import { SafeImage } from "./safe-image";
 
 type FromSource = "home" | "list" | "search" | "ranking" | "compare" | "recommend";
 
@@ -139,10 +140,12 @@ export function GearCard({
       >
         <div className="relative aspect-[4/5] overflow-hidden bg-secondary">
           {mediaReady && mediaSrc ? (
-            <img
+            <SafeImage
               src={mediaSrc}
               alt={`${gear.brand} ${gear.model}`}
               loading="lazy"
+              fallbackLabel={`${gear.brand} ${gear.model}`}
+              fallbackClassName="p-3"
               className={cn(
                 "plate h-full w-full",
                 gear.categorySlug === "snowboard" ? "object-cover" : "object-contain p-4",
@@ -273,7 +276,14 @@ export function GearRow({
       ) : null}
       <div className="h-14 w-14 shrink-0 overflow-hidden bg-secondary">
         {hasMedia(gear) && mediaUrl(gear) ? (
-          <img src={mediaUrl(gear)} alt={`${gear.brand} ${gear.model}`} loading="lazy" className="plate h-full w-full object-cover" />
+          <SafeImage
+            src={mediaUrl(gear)}
+            alt={`${gear.brand} ${gear.model}`}
+            loading="lazy"
+            fallbackLabel={`${gear.brand} ${gear.model}`}
+            fallbackMode="muted"
+            className="plate h-full w-full object-cover"
+          />
         ) : (
           <MediaPlaceholder label={`${gear.brand} ${gear.model}`} />
         )}

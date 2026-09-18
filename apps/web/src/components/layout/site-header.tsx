@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Bell, ChevronDown, LayoutGrid, Menu, Search, User, X } from "lucide-react";
+import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
@@ -189,7 +190,7 @@ export function SiteHeader() {
                 type="button"
                 onClick={() => {
                   logout();
-                  if (hasCloudSession()) void cloudLogout();
+                  if (hasCloudSession()) void cloudLogout().catch(() => toast.error("云端退出同步失败，本地已退出"));
                   router.push("/");
                 }}
                 className="block w-full px-3 py-2.5 text-left text-[13px] hover:bg-accent"
@@ -249,7 +250,14 @@ function NotificationList() {
     <div>
       <div className="flex items-center justify-between border-b border-border px-3 py-2">
         <span className="mono-label">通知 · {list.filter((n) => !n.read).length} 条未读</span>
-        <button type="button" onClick={() => { markAllRead(); if (hasCloudSession()) void cloudMarkAllNotificationsRead(); }} className="mono-label hover:text-primary">
+        <button
+          type="button"
+          onClick={() => {
+            markAllRead();
+            if (hasCloudSession()) void cloudMarkAllNotificationsRead().catch(() => toast.error("通知已在本地标记，云端同步失败"));
+          }}
+          className="mono-label hover:text-primary"
+        >
           全部已读
         </button>
       </div>
@@ -258,7 +266,12 @@ function NotificationList() {
           <li key={n.id}>
             <Link
               href={n.link}
-              onClick={() => { markNotificationRead(n.id); if (hasCloudSession() && n.id.startsWith("cloud-")) void cloudMarkNotificationRead(n.id.slice(7)); }}
+              onClick={() => {
+                markNotificationRead(n.id);
+                if (hasCloudSession() && n.id.startsWith("cloud-")) {
+                  void cloudMarkNotificationRead(n.id.slice(7)).catch(() => toast.error("通知状态同步失败"));
+                }
+              }}
               className={cn("block border-b border-border px-3 py-2.5 hover:bg-accent", !n.read && "bg-primary/[0.04]")}
             >
               <div className="flex items-center gap-2">

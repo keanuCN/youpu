@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { Scale, Trash2, X } from "lucide-react";
 import { toast } from "sonner";
 import { getGear } from "@/data/boards";
+import { SafeImage } from "@/components/gear/safe-image";
 import { getCompareProducts, resolveContentSource } from "@/lib/content";
 import { DOCK_MAX, clearDock, removeFromDock, useCurrentUser } from "@/lib/store";
 import { track } from "@/lib/track";
@@ -97,7 +98,14 @@ export function CompareDock() {
           {items.map((g) => (
             <div key={g.id} className="group relative flex shrink-0 items-center gap-2 border border-border bg-card py-1.5 pr-6 pl-1.5">
               <Link href={`/gear/${g.id}`} className="flex items-center gap-2">
-                <img src={g.hero} alt="" className="h-9 w-9 object-cover" loading="lazy" />
+                <SafeImage
+                  src={g.hero}
+                  alt=""
+                  loading="lazy"
+                  fallbackLabel={`${g.brand} ${g.model}`}
+                  fallbackMode="muted"
+                  className="h-9 w-9 object-cover"
+                />
                 <span className="max-w-28 sm:max-w-40">
                   <span className="mono-label block truncate">{g.brand}</span>
                   <span className="mono-data block truncate text-[12px]">{g.model}</span>

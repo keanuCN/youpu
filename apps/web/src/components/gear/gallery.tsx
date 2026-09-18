@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { MediaPlaceholder } from "./data-state";
+import { SafeImage } from "./safe-image";
 import type { GalleryShot } from "@/types";
 
 /** 详情页图集：主图 + 缩略图轨道，灰度→彩色签名交互 */
@@ -20,10 +21,12 @@ export function Gallery({
   return (
     <div className="flex flex-col gap-3">
       <figure className="group relative aspect-[4/3] overflow-hidden border border-border bg-secondary sm:aspect-[5/4]">
-        <img
+        <SafeImage
           key={active.url}
           src={active.url}
           alt={`${alt} · ${active.label}`}
+          fallbackLabel={alt}
+          fallbackClassName={cn("p-8 sm:p-12", fit === "contain" ? "" : "p-0")}
           className={cn("plate h-full w-full", fit === "contain" ? "object-contain p-8 sm:p-12" : "object-cover")}
         />
         <figcaption className="mono-label absolute bottom-0 left-0 bg-background/90 px-2.5 py-1.5">
@@ -44,10 +47,12 @@ export function Gallery({
                 i === idx ? "border-foreground" : "border-border hover:border-muted-foreground",
               )}
             >
-              <img
+              <SafeImage
                 src={s.url}
                 alt=""
                 loading="lazy"
+                fallbackLabel={`${alt} · ${s.label}`}
+                fallbackMode="muted"
                 className={cn(
                   "h-full w-full",
                   fit === "contain" ? "object-contain p-2" : "object-cover",

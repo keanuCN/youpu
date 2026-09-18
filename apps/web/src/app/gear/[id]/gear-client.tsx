@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ChevronRight, Heart, Scale, Share2 } from "lucide-react";
 import { toast } from "sonner";
 import { AnalysisBlock, WhoForTags } from "@/components/gear/analysis-block";
@@ -16,7 +16,7 @@ import { SpecTable } from "@/components/gear/spec-table";
 import { SectionHead } from "@/components/layout/section-head";
 import { reviewCount, userRating } from "@/data/boards";
 import { getCategory } from "@/data/categories";
-import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear } from "@/lib/api";
+import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear, type CloudRatingsResponse } from "@/lib/api";
 import { formatSpecValue, gearById, pricePosition, sameScenePeers } from "@/lib/domain";
 import { fmtCompact, fmtPrice } from "@/lib/format";
 import { hasEditorialScores, hasHardcoreIndex, hasPrice, hasUserRating } from "@/lib/gear-state";
@@ -36,8 +36,10 @@ export default function GearDetailPage({
   relatedGear?: GearItem[];
 }) {
   const gear = initialGear ?? gearById(id);
+  const [ratingSummary, setRatingSummary] = useState<CloudRatingsResponse["summary"] | null>(null);
 
   useEffect(() => {
+    setRatingSummary(null);
     if (gear) track("detail_view", { product_id: gear.id, from: "detail" });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
@@ -86,7 +88,7 @@ export default function GearDetailPage({
           alt={`${gear.brand} ${gear.model}`}
           fit={gear.categorySlug === "snowboard" ? "cover" : "contain"}
         />
-        <InfoCard gear={gear} />
+         <InfoCard gear={gear} ratingSummary={ratingSummary} />
       </div>
 
       <section className="reveal mt-16">
@@ -139,7 +141,7 @@ export default function GearDetailPage({
 
       <section className="reveal mt-16">
         <SectionHead index="04" title="实测评论" titleEn="Field Reports" desc="发布评论需要标注与品类相关的使用条件。" />
-        <ReviewPanel gear={gear} />
+        <ReviewPanel gear={gear} onSummaryChange={setRatingSummary} />
       </section>
 
       {peers.length ? (
@@ -161,7 +163,7 @@ export default function GearDetailPage({
   );
 }
 
-function InfoCard({ gear }: { gear: GearItem }) {
+function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: CloudRatingsResponse["summary"] | null }) {
   const { requireAuth } = useAuthGate();
   const router = useRouter();
   const me = useCurrentUser();
@@ -170,7 +172,12 @@ function InfoCard({ gear }: { gear: GearItem }) {
   const pos = pricePosition(gear);
   const priceReady = hasPrice(gear);
   const editorialReady = hasEditorialScores(gear);
-  const ratingReady = hasUserRating(gear);
+  const localSummary = {
+    overall: hasUserRating(gear) ? userRating(gear) : null,
+    count: reviewCount(gear),
+  };
+  const summary = ratingSummary && ratingSummary.count > 0 ? ratingSummary : localSummary;
+  const ratingReady = summary.overall !== null && summary.count > 0;
   const hardcoreReady = gear.categorySlug === "snowboard" && hasHardcoreIndex(gear);
   const categorySignal = categorySignalFor(gear);
 
@@ -204,10 +211,10 @@ function InfoCard({ gear }: { gear: GearItem }) {
       <div className="grid grid-cols-2 gap-x-6 border-b border-border py-5 sm:grid-cols-4">
         <Stat
           label="用户评分"
-          value={ratingReady ? userRating(gear).toFixed(1) : "—"}
-          sub={ratingReady ? <Stars value={userRating(gear)} size={11} className="mt-1" /> : <PendingValue label="暂无实测" className="mt-1 block" />}
+          value={ratingReady ? summary.overall!.toFixed(1) : "—"}
+          sub={ratingReady ? <Stars value={summary.overall!} size={11} className="mt-1" /> : <PendingValue label="暂无实测" className="mt-1 block" />}
         />
-        <Stat label="实测条数" value={String(reviewCount(gear))} sub={<span className="mono-label mt-1 block">FIELD REPORTS</span>} />
+        <Stat label="实测条数" value={String(summary.count)} sub={<span className="mono-label mt-1 block">FIELD REPORTS</span>} />
         <Stat label={categorySignal.label} value={categorySignal.value} sub={<span className="mono-label mt-1 block">{categorySignal.sub}</span>} />
         <Stat
           label="浏览热度"

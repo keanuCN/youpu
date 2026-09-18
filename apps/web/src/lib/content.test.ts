@@ -77,12 +77,17 @@ test("uses the API slug as the route id for products outside the local pack", ()
 });
 
 test("falls back to the local pack when the API request fails", async () => {
+  let fallbackError: unknown;
   const result = await getCategoryProducts("snowboard", {
     source: "api",
     fetcher: failingFetcher,
+    onFallback: (error) => {
+      fallbackError = error;
+    },
   });
 
   assert.deepEqual(result, gearOfCategory("snowboard"));
+  assert.equal((fallbackError as Error).message, "API offline");
 });
 
 test("content API requests bypass the Next server cache", async () => {

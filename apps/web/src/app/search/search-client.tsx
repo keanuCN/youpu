@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useMemo, useState } from 'react';
 import { ChevronRight, SlidersHorizontal, X } from 'lucide-react';
+import { FallbackNotice, GearGridSkeleton } from '@/components/gear/data-state';
 import { GearCard } from '@/components/gear/gear-card';
 import { Chip } from '@/components/gear/primitives';
 import { PageHead } from '@/components/layout/section-head';
@@ -30,19 +31,25 @@ export function SearchClient() {
   const request = useMemo(() => readSearchRequest(searchParams), [queryString, searchParams]);
   const [result, setResult] = useState<SearchCatalogResult | null>(null);
   const [loading, setLoading] = useState(false);
+  const [fallback, setFallback] = useState(false);
+  const [retryToken, setRetryToken] = useState(0);
 
   useEffect(() => {
     let alive = true;
     if (!request) {
       setResult(null);
       setLoading(false);
+      setFallback(false);
       return () => {
         alive = false;
       };
     }
 
     setLoading(true);
-    void searchCatalog(request).then((next) => {
+    setFallback(false);
+    void searchCatalog(request, fetch, () => {
+      if (alive) setFallback(true);
+    }).then((next) => {
       if (!alive) return;
       setResult(next);
       setLoading(false);
@@ -52,7 +59,7 @@ export function SearchClient() {
     return () => {
       alive = false;
     };
-  }, [request]);
+  }, [request, retryToken]);
 
   const bounds = useMemo<[number, number]>(() => {
     const min = result?.facets.price.min ?? 0;
@@ -212,7 +219,9 @@ export function SearchClient() {
               </button>
             </div>
 
-            {loading ? <p className="mono-label py-16 text-center">SEARCHING / 搜索中……</p> : null}
+            {fallback ? <FallbackNotice onRetry={() => setRetryToken((value) => value + 1)} className="mb-5" /> : null}
+
+            {loading ? <GearGridSkeleton count={8} className="md:grid-cols-3 xl:grid-cols-4" /> : null}
             {!loading && result && result.items.length ? (
               <div className="grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
                 {result.items.map((gear, index) => (

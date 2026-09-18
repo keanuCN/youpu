@@ -1,0 +1,51 @@
+"use client";
+
+import { useEffect, useState, type ImgHTMLAttributes } from "react";
+import { cn } from "@/lib/utils";
+import { MediaPlaceholder } from "./data-state";
+
+type SafeImageProps = Omit<ImgHTMLAttributes<HTMLImageElement>, "src"> & {
+  src?: string | null;
+  fallbackLabel: string;
+  fallbackClassName?: string;
+  fallbackMode?: "placeholder" | "muted";
+};
+
+/** 外部图片失败时保留布局，并显示统一的本地占位。 */
+export function SafeImage({
+  src,
+  alt,
+  className,
+  fallbackLabel,
+  fallbackClassName,
+  fallbackMode = "placeholder",
+  onError,
+  ...props
+}: SafeImageProps) {
+  const [failed, setFailed] = useState(!src);
+
+  useEffect(() => {
+    setFailed(!src);
+  }, [src]);
+
+  if (!src || failed) {
+    const fallbackClasses = fallbackClassName ?? className;
+    if (fallbackMode === "muted") {
+      return <div role="img" aria-label={`${fallbackLabel} 图片暂不可用`} className={cn("h-full w-full bg-secondary", fallbackClasses)} />;
+    }
+    return <MediaPlaceholder label={fallbackLabel} className={cn("h-full w-full", fallbackClasses)} />;
+  }
+
+  return (
+    <img
+      {...props}
+      src={src}
+      alt={alt}
+      className={className}
+      onError={(event) => {
+        setFailed(true);
+        onError?.(event);
+      }}
+    />
+  );
+}

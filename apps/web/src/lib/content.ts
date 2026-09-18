@@ -16,6 +16,7 @@ export type ContentSource = "pack" | "api";
 export interface ContentOptions {
   source?: ContentSource;
   fetcher?: typeof fetch;
+  onFallback?: (error: unknown) => void;
 }
 
 type ApiProduct = ProductListItem | ProductDetail;
@@ -216,7 +217,8 @@ export async function getCategoryProducts(slug: string, options: ContentOptions 
     return response.items
       .filter((item) => isLive(item.categorySlug))
       .map((item) => mapProductListItem(item));
-  } catch {
+  } catch (error) {
+    options.onFallback?.(error);
     return fallback;
   }
 }
@@ -230,7 +232,8 @@ export async function getProductDetail(id: string, options: ContentOptions = {})
     const response = await requestJson(`/api/products/${encodeURIComponent(lookup)}`, productDetailSchema, options.fetcher ?? fetch);
     if (!isLive(response.category.slug)) return fallback;
     return mapProductDetail(response, fallback);
-  } catch {
+  } catch (error) {
+    options.onFallback?.(error);
     return fallback;
   }
 }
@@ -256,7 +259,8 @@ export async function getCompareProducts(ids: string[], options: ContentOptions 
     return refs
       .map((ref, index) => bySlug.get(ref) ?? localItems.find((item) => slugForProduct(item) === ref) ?? getGear(ids[index]!))
       .filter((gear): gear is GearItem => !!gear);
-  } catch {
+  } catch (error) {
+    options.onFallback?.(error);
     return localItems;
   }
 }

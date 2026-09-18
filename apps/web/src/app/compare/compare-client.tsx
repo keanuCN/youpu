@@ -4,9 +4,10 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { Crown, Plus, Scale, X } from "lucide-react";
 import { GearCard } from "@/components/gear/gear-card";
-import { MediaPlaceholder, PendingBlock, PendingValue } from "@/components/gear/data-state";
+import { CompareSkeleton, FallbackNotice, MediaPlaceholder, PendingBlock, PendingValue } from "@/components/gear/data-state";
 import { ScoreMark } from "@/components/gear/primitives";
 import { RADAR_COLORS, RadarChart } from "@/components/gear/radar";
+import { SafeImage } from "@/components/gear/safe-image";
 import { PageHead, SectionHead } from "@/components/layout/section-head";
 import { GEAR, getGear } from "@/data/boards";
 import { getCategory } from "@/data/categories";
@@ -26,6 +27,9 @@ export default function ComparePage() {
   const [items, setItems] = useState<GearItem[]>(localItems);
   const [availableGear, setAvailableGear] = useState<GearItem[]>(GEAR);
   const [compareLoading, setCompareLoading] = useState(false);
+  const [compareFallback, setCompareFallback] = useState(false);
+  const [availableFallback, setAvailableFallback] = useState(false);
+  const [contentRetry, setContentRetry] = useState(0);
   const [onlyDiff, setOnlyDiff] = useState(false);
   const [picker, setPicker] = useState(false);
   const apiMode = resolveContentSource() === "api";
@@ -33,6 +37,7 @@ export default function ComparePage() {
   useEffect(() => {
     let active = true;
     setItems(localItems);
+    setCompareFallback(false);
     if (!apiMode) {
       setCompareLoading(false);
       return () => {
@@ -41,7 +46,12 @@ export default function ComparePage() {
     }
 
     setCompareLoading(ids.length > 0);
-    void getCompareProducts(ids, { source: "api" }).then((next) => {
+    void getCompareProducts(ids, {
+      source: "api",
+      onFallback: () => {
+        if (active) setCompareFallback(true);
+      },
+    }).then((next) => {
       if (!active) return;
       setItems(next);
       setCompareLoading(false);
@@ -49,13 +59,14 @@ export default function ComparePage() {
     return () => {
       active = false;
     };
-  }, [apiMode, idsKey]);
+  }, [apiMode, contentRetry, idsKey]);
 
   const categorySlug = items[0]?.categorySlug ?? "snowboard";
   const categorySlugs = [...new Set(items.map((item) => item.categorySlug))];
   const mixedCategories = categorySlugs.length > 1;
   useEffect(() => {
     let active = true;
+    setAvailableFallback(false);
     if (!apiMode) {
       setAvailableGear(GEAR);
       return () => {
@@ -63,13 +74,18 @@ export default function ComparePage() {
       };
     }
 
-    void getCategoryProducts(categorySlug, { source: "api" }).then((next) => {
+    void getCategoryProducts(categorySlug, {
+      source: "api",
+      onFallback: () => {
+        if (active) setAvailableFallback(true);
+      },
+    }).then((next) => {
       if (active) setAvailableGear(next);
     });
     return () => {
       active = false;
     };
-  }, [apiMode, categorySlug]);
+  }, [apiMode, categorySlug, contentRetry]);
 
   const category = getCategory(items[0]?.categorySlug ?? "snowboard");
   const dims = category?.scoreDims ?? [];
@@ -100,11 +116,7 @@ export default function ComparePage() {
     return (
       <div className="mx-auto max-w-[1400px] px-5 py-10 sm:px-8">
         <PageHead kicker="COMPARE" title="参数对比" titleEn="Side by Side" desc="正在读取对比数据……" />
-        <div className="mt-10 border border-dashed border-border py-16 text-center">
-          <Scale size={30} strokeWidth={1.2} className="mx-auto animate-pulse text-muted-foreground" />
-          <p className="mt-4 text-[16px] font-medium">正在读取产品参数</p>
-          <p className="mono-label mt-2">请稍候，后台新增产品也会出现在这里</p>
-        </div>
+        <CompareSkeleton />
       </div>
     );
   }
@@ -123,6 +135,9 @@ export default function ComparePage() {
           titleEn="Same Category"
           desc="不同品类的参数含义和评分维度不同，先移出其他品类，再开始有效对比。"
         />
+        {compareFallback || availableFallback ? (
+          <FallbackNotice onRetry={() => setContentRetry((value) => value + 1)} className="mt-6" />
+        ) : null}
         <div className="mt-10 border border-dashed border-border py-14 text-center">
           <Scale size={30} strokeWidth={1.2} className="mx-auto text-muted-foreground" />
           <p className="mt-4 text-[16px] font-medium">当前包含 {categoryNames.join("、")}</p>
@@ -135,9 +150,11 @@ export default function ComparePage() {
             return (
               <div key={gear.id} className="flex items-center gap-3 bg-background p-4">
                 {image ? (
-                  <img
+                  <SafeImage
                     src={image}
                     alt=""
+                    fallbackLabel={`${gear.brand} ${gear.model}`}
+                    fallbackMode="muted"
                     className={cn(
                       "h-14 w-14 shrink-0 bg-secondary",
                       gear.categorySlug === "snowboard" ? "object-cover" : "object-contain p-1.5",
@@ -183,6 +200,9 @@ export default function ComparePage() {
     return (
       <div className="mx-auto max-w-[1400px] px-5 py-10 sm:px-8">
         <PageHead kicker="COMPARE" title="参数对比" titleEn="Side by Side" desc="把 2–4 件装备拉进同一张表，差异项自动高亮，数值项自动标出胜出方。" />
+        {compareFallback || availableFallback ? (
+          <FallbackNotice onRetry={() => setContentRetry((value) => value + 1)} className="mt-6" />
+        ) : null}
         <div className="mt-10 border border-dashed border-border py-16 text-center">
           <Scale size={30} strokeWidth={1.2} className="mx-auto text-muted-foreground" />
           <p className="mt-4 text-[16px] font-medium">对比坞里只有 {items.length} 件</p>
@@ -241,6 +261,9 @@ export default function ComparePage() {
           </div>
         }
       />
+      {compareFallback || availableFallback ? (
+        <FallbackNotice onRetry={() => setContentRetry((value) => value + 1)} className="mt-6" />
+      ) : null}
 
       {picker ? (
         <div className="mt-6 border border-foreground p-4">
@@ -262,7 +285,14 @@ export default function ComparePage() {
                   )}
                 >
                   {hasMedia(g) && mediaUrl(g) ? (
-                    <img src={mediaUrl(g)} alt="" className="h-10 w-10 shrink-0 object-cover" loading="lazy" />
+                    <SafeImage
+                      src={mediaUrl(g)}
+                      alt=""
+                      loading="lazy"
+                      fallbackLabel={`${g.brand} ${g.model}`}
+                      fallbackMode="muted"
+                      className="h-10 w-10 shrink-0 object-cover"
+                    />
                   ) : (
                     <MediaPlaceholder label="图片待补" className="h-10 w-10 min-h-0 shrink-0 p-1.5" />
                   )}
@@ -353,7 +383,14 @@ export default function ComparePage() {
                       </button>
                     </div>
                     {hasMedia(g) && mediaUrl(g) ? (
-                      <img src={mediaUrl(g)} alt="" className="mt-2.5 h-16 w-full object-cover grayscale" loading="lazy" />
+                      <SafeImage
+                        src={mediaUrl(g)}
+                        alt=""
+                        loading="lazy"
+                        fallbackLabel={`${g.brand} ${g.model}`}
+                        fallbackMode="muted"
+                        className="mt-2.5 h-16 w-full object-cover grayscale"
+                      />
                     ) : (
                       <MediaPlaceholder label="图片待补" className="mt-2.5 h-16 w-full min-h-0 p-2" />
                     )}

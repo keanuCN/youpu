@@ -262,6 +262,15 @@
     }
   }
 
+  @keyframes skeleton-shimmer {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
   .animate-radar-draw {
     stroke-dasharray: 320;
     stroke-dashoffset: 320;
@@ -276,5 +285,26 @@
   .animate-bar-grow {
     transform-origin: left center;
     animation: bar-grow 0.9s var(--ease-swiss) both;
+  }
+
+  .loading-skeleton {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-secondary);
+  }
+
+  .loading-skeleton::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--color-background) 78%, transparent), transparent);
+    transform: translateX(-100%);
+    animation: skeleton-shimmer 1.45s var(--ease-swiss) infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .loading-skeleton::after {
+      animation: none;
+    }
   }
 }

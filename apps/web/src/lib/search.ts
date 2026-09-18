@@ -38,6 +38,7 @@ const SEARCH_TIMEOUT_MS = 8_000;
 export async function searchCatalog(
   params: SearchRequest,
   fetcher: typeof fetch = fetch,
+  onFallback?: (error: unknown) => void,
 ): Promise<SearchCatalogResult> {
   try {
     const controller = new AbortController();
@@ -63,7 +64,8 @@ export async function searchCatalog(
     } finally {
       clearTimeout(timer);
     }
-  } catch {
+  } catch (error) {
+    onFallback?.(error);
     return searchLocalGear(GEAR, params);
   }
 }

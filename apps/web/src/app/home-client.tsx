@@ -3,17 +3,20 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ArrowRight, Compass, Trophy } from "lucide-react";
+import { FallbackNotice, GearGridSkeleton, LoadingStatus, RankRowsSkeleton } from "@/components/gear/data-state";
 import { GearCard, GearRow } from "@/components/gear/gear-card";
+import { SafeImage } from "@/components/gear/safe-image";
 import { SectionHead } from "@/components/layout/section-head";
 import { Avatar } from "@/components/layout/site-header";
 import { Stars } from "@/components/gear/primitives";
 import { GEAR, getGear } from "@/data/boards";
 import { IMG } from "@/data/assets";
-import { CATEGORY_TREE, SEASON, SNOWBOARD } from "@/data/categories";
+import { CATEGORY_TREE, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { hotReviews, rankRows } from "@/lib/domain";
-import { getCategoryProducts } from "@/lib/content";
+import { getCategoryProducts, resolveContentSource } from "@/lib/content";
 import { timeAgo } from "@/lib/format";
 import { usePersisted } from "@/lib/store";
+import type { GearItem } from "@/types";
 
 const CATEGORY_LEAVES = CATEGORY_TREE.flatMap((root) =>
   (root.children ?? []).flatMap((domain) => domain.children ?? []),
@@ -26,9 +29,43 @@ export default function HomePage() {
   const catalogCount = liveCategories.reduce((sum, category) => sum + (categoryCounts[category.slug] ?? 0), 0);
   const snowboardCount = categoryCounts.snowboard ?? GEAR.length;
   const liveCategoryNames = liveCategories.map((category) => category.name).join("、");
-  const top = rankRows(snapshot, "overall").slice(0, 5);
-  const fresh = GEAR.filter((g) => g.isNew).slice(0, 4);
+  const [featuredSlug, setFeaturedSlug] = useState("snowboard");
+  const [featuredPool, setFeaturedPool] = useState<GearItem[]>(GEAR);
+  const [featuredLoading, setFeaturedLoading] = useState(false);
+  const [featuredFallback, setFeaturedFallback] = useState(false);
+  const [featuredRetry, setFeaturedRetry] = useState(0);
+  const featuredCategory = getCategory(featuredSlug) ?? SNOWBOARD;
+  const top = rankRows(snapshot, "overall", featuredSlug, featuredPool).slice(0, 5);
+  const fresh = (featuredSlug === "snowboard" ? featuredPool.filter((g) => g.isNew) : featuredPool).slice(0, 4);
   const reviews = hotReviews(snapshot, 3);
+
+  useEffect(() => {
+    let cancelled = false;
+    const localPool = GEAR.filter((gear) => gear.categorySlug === featuredSlug);
+    setFeaturedPool(localPool);
+    setFeaturedFallback(false);
+    if (resolveContentSource() === "pack") {
+      setFeaturedLoading(false);
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    setFeaturedLoading(true);
+    void getCategoryProducts(featuredSlug, {
+      source: "api",
+      onFallback: () => {
+        if (!cancelled) setFeaturedFallback(true);
+      },
+    }).then((next) => {
+      if (cancelled) return;
+      setFeaturedPool(next);
+      setFeaturedLoading(false);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [featuredRetry, featuredSlug]);
 
   return (
     <div>
@@ -37,45 +74,67 @@ export default function HomePage() {
         <CategoryEntries categoryCounts={categoryCounts} />
 
         <section className="reveal reveal-up mt-20">
+          <FeaturedCategorySwitch categories={liveCategories} value={featuredSlug} onChange={setFeaturedSlug} />
           <SectionHead
             index="01"
-            title="单板新入库"
-            titleEn="New Arrivals"
-            desc={`${SEASON} 雪季新增单板档案，按同一套六维评分体系实测录入。`}
+            title={`${featuredCategory.name}${featuredSlug === "snowboard" ? "新入库" : "精选档案"}`}
+            titleEn={featuredSlug === "snowboard" ? "New Arrivals" : "Featured Archive"}
+            desc={`${featuredCategory.name}按品类参数模板整理，缺失内容会明确标注“待补充”。`}
             action={
-              <Link href="/browse/snowboard" className="mono-label story-link flex items-center gap-1.5">
-                查看单板 {snowboardCount} 件 <ArrowRight size={13} strokeWidth={1.6} />
+              <Link href={`/browse/${featuredSlug}`} className="mono-label story-link flex items-center gap-1.5">
+                查看{featuredCategory.name} {featuredPool.length} 件 <ArrowRight size={13} strokeWidth={1.6} />
               </Link>
             }
           />
-          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-            {fresh.map((g, i) => (
-              <GearCard key={g.id} gear={g} from="home" position={i} sort="new" />
-            ))}
-          </div>
+          {featuredLoading && !featuredPool.length ? (
+            <GearGridSkeleton count={4} />
+          ) : fresh.length ? (
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+              {fresh.map((g, i) => (
+                <GearCard key={g.id} gear={g} from="home" position={i} sort="new" />
+              ))}
+            </div>
+          ) : (
+            <div className="border border-dashed border-border py-16 text-center">
+              <p className="text-[15px] font-medium">{featuredCategory.name}档案待补充</p>
+              <p className="mono-label mt-2">当前品类还没有可展示的精选装备。</p>
+            </div>
+          )}
+          {featuredLoading && featuredPool.length ? <LoadingStatus label={`正在同步${featuredCategory.name}档案`} className="mt-3" /> : null}
+          {featuredFallback ? <FallbackNotice onRetry={() => setFeaturedRetry((value) => value + 1)} className="mt-3" /> : null}
         </section>
 
-        <section className="reveal reveal-up mt-20 grid gap-10 lg:grid-cols-[1.05fr_1fr]">
-          <div>
+        <section className="reveal reveal-up mt-20 grid min-w-0 gap-10 lg:grid-cols-[1.05fr_1fr]">
+          <div className="min-w-0">
             <SectionHead
               index="02"
-              title={`${SEASON} 单板综合榜`}
+              title={`${SEASON} ${featuredCategory.name}综合榜`}
               titleEn="Top Rated"
-              desc="单板数据分 70% + 社区投票 30%，每票限一件、可改投一次。"
+              desc={`${featuredCategory.name}数据分 70% + 社区投票 30%，每票限一件、可改投一次。`}
               action={
-                <Link href="/rankings" className="mono-label story-link flex items-center gap-1.5">
+                <Link href={featuredSlug === "snowboard" ? "/rankings" : `/rankings?category=${featuredSlug}`} className="mono-label story-link flex items-center gap-1.5">
                   <Trophy size={13} strokeWidth={1.6} /> 完整榜单
                 </Link>
               }
             />
-            <div className="-mt-2">
-              {top.map((r) => (
-                <GearRow key={r.gear.id} gear={r.gear} rank={r.rank} note={`数据 ${r.dataScore} · 社区 ${r.votes} 票`} from="home" />
-              ))}
-            </div>
+            {featuredLoading && !top.length ? (
+              <RankRowsSkeleton count={5} className="-mt-2" />
+            ) : top.length ? (
+              <div className="-mt-2">
+                {top.map((r) => (
+                  <GearRow key={r.gear.id} gear={r.gear} rank={r.rank} note={`数据 ${r.dataScore} · 社区 ${r.votes} 票`} from="home" />
+                ))}
+              </div>
+            ) : (
+              <div className="border border-dashed border-border py-12 text-center">
+                <p className="text-[15px] font-medium">榜单数据待补充</p>
+                <p className="mono-label mt-2">当前品类还没有足够的装备数据。</p>
+              </div>
+            )}
+            {featuredLoading && top.length ? <LoadingStatus label={`正在同步${featuredCategory.name}榜单`} className="mt-3" /> : null}
           </div>
 
-          <div>
+          <div className="min-w-0">
             <SectionHead
               index="03"
               title="社区实测"
@@ -124,6 +183,36 @@ export default function HomePage() {
   );
 }
 
+function FeaturedCategorySwitch({
+  categories,
+  value,
+  onChange,
+}: {
+  categories: typeof CATEGORY_LEAVES;
+  value: string;
+  onChange: (slug: string) => void;
+}) {
+  return (
+    <div className="thin-scroll mb-4 flex gap-1.5 overflow-x-auto" aria-label="首页精选品类">
+      {categories.map((category) => (
+        <button
+          key={category.slug}
+          type="button"
+          aria-pressed={value === category.slug}
+          onClick={() => onChange(category.slug)}
+          className={
+            value === category.slug
+              ? "mono-label shrink-0 border border-foreground bg-foreground px-3 py-1.5 text-background"
+              : "mono-label shrink-0 border border-border px-3 py-1.5 hover:border-foreground"
+          }
+        >
+          {category.name}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 function Cover({
   catalogCount,
   liveCategoryCount,
@@ -137,9 +226,11 @@ function Cover({
     <section className="relative border-b border-foreground">
       <div className="grid lg:grid-cols-[1.15fr_1fr]">
         <div className="relative order-2 min-h-[320px] overflow-hidden lg:order-1 lg:min-h-[560px]">
-          <img
+          <SafeImage
             src={IMG.heroRidge}
             alt="雪脊"
+            fallbackLabel="雪脊"
+            fallbackMode="muted"
             className="plate h-full w-full object-cover"
             style={{ filter: "grayscale(0.85) contrast(1.08)" }}
           />

@@ -152,9 +152,12 @@ export function productRefForGear(gear: { id: string; brand: string; model: stri
     .replace(/^-|-$/g, "");
 }
 
-async function request<T>(path: string, options: { method?: string; body?: unknown; retry?: boolean } = {}): Promise<T> {
+async function request<T>(
+  path: string,
+  options: { method?: string; body?: unknown; retry?: boolean; accessToken?: string | null } = {},
+): Promise<T> {
   const headers: Record<string, string> = { Accept: "application/json" };
-  const accessToken = getCloudAccessToken();
+  const accessToken = options.accessToken === undefined ? getCloudAccessToken() : options.accessToken;
   if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
   if (options.body !== undefined) headers["Content-Type"] = "application/json";
 
@@ -245,8 +248,17 @@ export function cloudUpdateMe(input: { nickname?: string; riderProfile?: Record<
 
 export async function cloudLogout(): Promise<void> {
   const refreshToken = storage()?.getItem(REFRESH_TOKEN_KEY);
+  const accessToken = getCloudAccessToken();
+  clearCloudSession();
   try {
-    if (refreshToken) await request<{ ok: true }>("/api/auth/logout", { method: "POST", body: { refreshToken }, retry: false });
+    if (refreshToken) {
+      await request<{ ok: true }>("/api/auth/logout", {
+        method: "POST",
+        body: { refreshToken },
+        retry: false,
+        accessToken,
+      });
+    }
   } finally {
     clearCloudSession();
   }

@@ -1,11 +1,12 @@
 "use client";
 
-import { createContext, useCallback, useContext, useMemo, useRef, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Toaster } from "sonner";
 import { LoginDialog } from "@/components/auth/login-dialog";
 import { CompareDock } from "@/components/compare/compare-dock";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { syncCloudSession } from "@/lib/cloud-sync";
 import { useCurrentUser } from "@/lib/store";
 
 interface GateValue {
@@ -25,6 +26,13 @@ export function AppShell({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
   const [reason, setReason] = useState<string>("");
   const pending = useRef<(() => void) | null>(null);
+
+  useEffect(() => {
+    void syncCloudSession();
+    const handleFocus = () => void syncCloudSession();
+    window.addEventListener("focus", handleFocus);
+    return () => window.removeEventListener("focus", handleFocus);
+  }, []);
 
   const requireAuth = useCallback(
     (action: () => void, why?: string) => {

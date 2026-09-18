@@ -4,9 +4,10 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
-import { MediaPlaceholder, PendingValue } from "@/components/gear/data-state";
+import { FallbackNotice, MediaPlaceholder, PendingValue, RankingsSkeleton } from "@/components/gear/data-state";
 import { GearRow } from "@/components/gear/gear-card";
 import { ScoreMark } from "@/components/gear/primitives";
+import { SafeImage } from "@/components/gear/safe-image";
 import { PageHead } from "@/components/layout/section-head";
 import { Button } from "@/components/ui/button";
 import { GEAR } from "@/data/boards";
@@ -34,6 +35,8 @@ export default function RankingsPage() {
   const [rankKey, setRankKey] = useState(category.rankCategories[0]?.key ?? "overall");
   const [catalog, setCatalog] = useState<GearItem[]>(() => GEAR.filter((item) => item.categorySlug === categorySlug));
   const [catalogLoading, setCatalogLoading] = useState(resolveContentSource() === "api");
+  const [catalogFallback, setCatalogFallback] = useState(false);
+  const [catalogRetry, setCatalogRetry] = useState(0);
 
   useEffect(() => {
     setRankKey(category.rankCategories[0]?.key ?? "overall");
@@ -43,6 +46,7 @@ export default function RankingsPage() {
     let active = true;
     const localCatalog = GEAR.filter((item) => item.categorySlug === categorySlug);
     setCatalog(localCatalog);
+    setCatalogFallback(false);
     if (resolveContentSource() === "pack") {
       setCatalogLoading(false);
       return () => {
@@ -51,7 +55,12 @@ export default function RankingsPage() {
     }
 
     setCatalogLoading(true);
-    void getCategoryProducts(categorySlug, { source: "api" }).then((next) => {
+    void getCategoryProducts(categorySlug, {
+      source: "api",
+      onFallback: () => {
+        if (active) setCatalogFallback(true);
+      },
+    }).then((next) => {
       if (!active) return;
       setCatalog(next);
       setCatalogLoading(false);
@@ -59,7 +68,7 @@ export default function RankingsPage() {
     return () => {
       active = false;
     };
-  }, [categorySlug]);
+  }, [catalogRetry, categorySlug]);
 
   const rows = useMemo(
     () => rankRows(persisted, rankKey, categorySlug, catalog),
@@ -139,12 +148,10 @@ export default function RankingsPage() {
         ))}
       </div>
 
+      {catalogFallback ? <FallbackNotice onRetry={() => setCatalogRetry((value) => value + 1)} className="mt-6" /> : null}
+
       {catalogLoading ? (
-        <div className="mt-10 border border-dashed border-border py-20 text-center">
-          <div className="mx-auto h-10 w-10 animate-pulse border border-border bg-secondary" />
-          <p className="mt-4 text-[15px] font-medium">正在读取{category.name}榜单</p>
-          <p className="mono-label mt-2">正在同步当前品类的装备与投票数据</p>
-        </div>
+        <RankingsSkeleton />
       ) : !rows.length ? (
         <div className="mt-10 border border-dashed border-border py-20 text-center">
           <p className="text-[15px] font-medium">{category.name}榜单数据待补充</p>
@@ -176,10 +183,12 @@ export default function RankingsPage() {
             <Link href={`/gear/${r.gear.id}`} className="mt-4 block">
               <div className="aspect-[4/3] overflow-hidden bg-secondary">
                 {hasMedia(r.gear) && mediaUrl(r.gear) ? (
-                  <img
+                  <SafeImage
                     src={mediaUrl(r.gear)}
                     alt={`${r.gear.brand} ${r.gear.model}`}
                     loading="lazy"
+                    fallbackLabel={`${r.gear.brand} ${r.gear.model}`}
+                    fallbackClassName="p-8"
                     className={cn(
                       "plate h-full w-full",
                       r.gear.categorySlug === "snowboard" ? "object-cover" : "object-contain p-6",

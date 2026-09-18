@@ -28,19 +28,22 @@ export default function QuizPage() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<QuizAnswers>({});
   const [result, setResult] = useState<Recommendation[] | null>(null);
+  const [validationMessage, setValidationMessage] = useState("");
 
   useEffect(() => {
     setStep(0);
     setAnswers({});
     setResult(null);
+    setValidationMessage("");
     track("recommend_start", { survey: { category: categorySlug } });
   }, [categorySlug]);
 
   const q = questions[step];
-  const progress = questions.length ? Math.round((step / questions.length) * 100) : 0;
+  const progress = questions.length ? Math.round(((step + 1) / questions.length) * 100) : 0;
 
   const pick = (value: string) => {
     if (!q) return;
+    setValidationMessage("");
     let next: QuizAnswers;
     if (q.multi) {
       const cur = (answers[q.key as keyof QuizAnswers] as string[] | undefined) ?? [];
@@ -61,6 +64,13 @@ export default function QuizPage() {
   };
 
   const finish = (a: QuizAnswers) => {
+    const missingIndex = questions.findIndex((question) => !hasQuizAnswer(a[question.key as keyof QuizAnswers]));
+    if (missingIndex >= 0) {
+      setStep(missingIndex);
+      setValidationMessage(`请先完成第 ${missingIndex + 1} 题「${questions[missingIndex]?.question ?? "问卷问题"}」。`);
+      return;
+    }
+
     const recs = recommend(a);
     setResult(recs);
     track("recommend_complete", {
@@ -82,6 +92,7 @@ export default function QuizPage() {
     setStep(0);
     setAnswers({});
     setResult(null);
+    setValidationMessage("");
   };
 
   const selected = (value: string) => {
@@ -255,6 +266,11 @@ export default function QuizPage() {
             style={{ width: `${((step + 1) / questions.length) * 100}%` }}
           />
         </div>
+        {validationMessage ? (
+          <p role="alert" className="mono-label mt-3 border border-destructive/50 px-3 py-2 text-destructive">
+            {validationMessage}
+          </p>
+        ) : null}
       </div>
 
       <div className="mt-10 border border-foreground p-6 sm:p-9">
@@ -273,6 +289,7 @@ export default function QuizPage() {
               key={o.value}
               type="button"
               onClick={() => pick(o.value)}
+              aria-pressed={selected(o.value)}
               className={cn(
                 "group flex items-start gap-3 border p-4 text-left transition-colors",
                 selected(o.value) ? "border-foreground bg-foreground text-background" : "border-border hover:border-foreground",
@@ -326,6 +343,7 @@ export default function QuizPage() {
             type="button"
             onClick={() => setStep(i)}
             aria-label={`跳到第 ${i + 1} 题`}
+            aria-current={i === step ? "step" : undefined}
             className={cn(
               "mono-data h-7 w-7 border text-[12px] transition-colors tnum",
               i === step
@@ -348,6 +366,11 @@ export default function QuizPage() {
       </p>
     </div>
   );
+}
+
+function hasQuizAnswer(value: QuizAnswers[keyof QuizAnswers] | undefined): boolean {
+  if (Array.isArray(value)) return value.length > 0;
+  return typeof value === "string" && value.trim().length > 0;
 }
 
 function CategorySwitch({ categorySlug, onChange }: { categorySlug: string; onChange: (slug: string) => void }) {

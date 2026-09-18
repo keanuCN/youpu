@@ -67,3 +67,21 @@ test('API search response is parsed and mapped to GearItem', async () => {
   assert.equal(result.source, 'api');
   assert.equal(result.items[0]?.model, 'Custom Camber');
 });
+
+test('notifies the page when search falls back to the local pack', async () => {
+  let fallbackError: unknown;
+  const fetcher: typeof fetch = async () => {
+    throw new Error('Search API offline');
+  };
+
+  const result = await searchCatalog(
+    { q: 'burton', sort: 'relevance', page: 1, pageSize: 20 },
+    fetcher,
+    (error) => {
+      fallbackError = error;
+    },
+  );
+
+  assert.equal(result.source, 'pack');
+  assert.equal((fallbackError as Error).message, 'Search API offline');
+});

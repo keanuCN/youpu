@@ -159,7 +159,7 @@ export function applyCloudMe(data: CloudMeResponse): void {
   emit({
     favorites: { ...state.favorites, [key]: favorites },
     notifications: [...state.notifications.filter((item) => item.userKey !== key), ...notifications],
-    userReviews: [...ratings, ...state.userReviews.filter((item) => !cloudRatingIds.has(item.id))],
+    userReviews: [...ratings, ...state.userReviews.filter((item) => item.userKey !== key && !cloudRatingIds.has(item.id))],
   });
 }
 

@@ -10,16 +10,16 @@ import { Label } from "@/components/ui/label";
 import { BRAND } from "@/lib/brand";
 import {
   cloudLogin,
-  cloudMe,
   cloudRegister,
   cloudRequestEmailCode,
   cloudResetPassword,
+  clearCloudSession,
   WebApiError,
   saveCloudSession,
 } from "@/lib/api";
+import { syncCloudSession } from "@/lib/cloud-sync";
 import {
   applyCloudAccount,
-  applyCloudMe,
   login,
   mergeGuestDock,
   register,
@@ -102,7 +102,10 @@ export default function AuthPage() {
         const session = await cloudRegister(email, password, code, username);
         saveCloudSession(session);
         applyCloudAccount(session.account);
-        void cloudMe().then(applyCloudMe).catch(() => undefined);
+        if ((await syncCloudSession()) === "invalid") {
+          setBusy(false);
+          return toast.error("登录状态已失效，请重新尝试");
+        }
       } catch (error) {
         if (!isNetworkError(error)) {
           setBusy(false);
@@ -113,6 +116,7 @@ export default function AuthPage() {
           setBusy(false);
           return toast.error(res.message);
         }
+        clearCloudSession();
       }
       mergeGuestDock();
       toast.success("账号已创建");
@@ -146,7 +150,10 @@ export default function AuthPage() {
       const session = await cloudLogin(email, password);
       saveCloudSession(session);
       applyCloudAccount(session.account);
-      void cloudMe().then(applyCloudMe).catch(() => undefined);
+      if ((await syncCloudSession()) === "invalid") {
+        setBusy(false);
+        return toast.error("登录状态已失效，请重新尝试");
+      }
     } catch (error) {
       if (!isNetworkError(error) && !(error instanceof WebApiError && error.status === 401 && email.trim().toLowerCase() === BRAND.demoEmail)) {
         setBusy(false);
@@ -157,6 +164,7 @@ export default function AuthPage() {
         setBusy(false);
         return toast.error(res.message);
       }
+      clearCloudSession();
     }
     mergeGuestDock();
     toast.success("登录成功");

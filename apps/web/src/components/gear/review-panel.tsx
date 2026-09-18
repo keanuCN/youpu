@@ -17,16 +17,19 @@ import {
   hasCloudSession,
   productRefForGear,
   type CloudRating,
+  type CloudRatingsResponse,
 } from "@/lib/api";
 import { helpfulOf, iHelpful, repliesOf, topLevelReviews } from "@/lib/domain";
 import { timeAgo } from "@/lib/format";
 import { addReview, deleteReview, pushNotification, toggleHelpful, useCurrentUser, usePersisted, type Persisted } from "@/lib/store";
 import { track } from "@/lib/track";
 import { hasUserRating } from "@/lib/gear-state";
+import { LoadingStatus } from "@/components/gear/data-state";
 import { cn } from "@/lib/utils";
 import type { GearItem, Review, ReviewerMeta } from "@/types";
 import { useAuthGate } from "@/store/app-shell";
 import { Stars } from "./primitives";
+import { SafeImage } from "./safe-image";
 
 const LEVELS = ["新手", "中级", "进阶", "高阶"];
 
@@ -89,43 +92,70 @@ function reviewCopyForCategory(categorySlug: string): ReviewCopy {
   return REVIEW_COPY[categorySlug] ?? DEFAULT_REVIEW_COPY;
 }
 
-export function ReviewPanel({ gear }: { gear: GearItem }) {
+export function ReviewPanel({
+  gear,
+  onSummaryChange,
+}: {
+  gear: GearItem;
+  onSummaryChange?: (summary: CloudRatingsResponse["summary"] | null) => void;
+}) {
   const copy = reviewCopyForCategory(gear.categorySlug);
   const persisted = usePersisted();
   const [mode, setMode] = useState<"helpful" | "latest">("helpful");
   const [remoteRatings, setRemoteRatings] = useState<CloudRating[]>([]);
+  const [remoteSummary, setRemoteSummary] = useState<CloudRatingsResponse["summary"] | null>(null);
+  const [ratingLoading, setRatingLoading] = useState(true);
+  const productRef = productRefForGear(gear);
   useEffect(() => {
     let alive = true;
-    cloudRatings(productRefForGear(gear), mode)
+    setRatingLoading(true);
+    setRemoteRatings([]);
+    setRemoteSummary(null);
+    onSummaryChange?.(null);
+    cloudRatings(productRef, mode)
       .then((response) => {
-        if (alive) setRemoteRatings(response.items);
+        if (!alive) return;
+        setRemoteRatings(response.items);
+        setRemoteSummary(response.summary);
+        onSummaryChange?.(response.summary);
+        setRatingLoading(false);
       })
       .catch(() => {
-        if (alive) setRemoteRatings([]);
+        if (!alive) return;
+        setRemoteRatings([]);
+        setRemoteSummary(null);
+        onSummaryChange?.(null);
+        setRatingLoading(false);
       });
     return () => {
       alive = false;
     };
-  }, [gear, mode]);
+  }, [onSummaryChange, productRef, mode]);
   const remoteIds = useMemo(() => new Set(remoteRatings.map((rating) => rating.id)), [remoteRatings]);
   const viewState = useMemo(() => mergeCloudRatings(persisted, gear.id, remoteRatings), [persisted, gear.id, remoteRatings]);
   const list = useMemo(() => topLevelReviews(viewState, gear.id, mode), [viewState, gear.id, mode]);
-  const total = reviewCount(gear);
-  const avg = userRating(gear);
-  const ratingReady = hasUserRating(gear) || remoteRatings.length > 0;
+  const localSummary = {
+    overall: hasUserRating(gear) ? userRating(gear) : null,
+    count: reviewCount(gear),
+    distribution: gear.ratingDist,
+  };
+  const summary = remoteSummary && (remoteSummary.count > 0 || remoteRatings.length > 0) ? remoteSummary : localSummary;
+  const ratingReady = summary.overall !== null && (summary.count > 0 || remoteRatings.length > 0);
+  const avg = summary.overall ?? 0;
 
   return (
     <section className="space-y-8">
       <div className="grid gap-8 border border-border p-5 lg:grid-cols-[240px_1fr]">
         <div>
-          <p className="mono-data text-[52px] leading-none tnum">{ratingReady ? avg.toFixed(1) : "—"}</p>
+          <p className="mono-data text-[52px] leading-none tnum">{ratingReady ? summary.overall!.toFixed(1) : "—"}</p>
           {ratingReady ? <Stars value={avg} size={14} className="mt-2" /> : <p className="mono-label mt-2">暂无评分</p>}
-          <p className="mono-label mt-2">{ratingReady ? `${total} 条实测评分` : "等待首批实测"}</p>
+          <p className="mono-label mt-2">{ratingReady ? `${summary.count} 条实测评分` : "等待首批实测"}</p>
         </div>
         <div className="space-y-1.5">
           {[5, 4, 3, 2, 1].map((star) => {
-            const n = gear.ratingDist[String(star) as "1"] ?? 0;
-            const p = total ? Math.round((n / total) * 100) : 0;
+            const key = String(star) as "1" | "2" | "3" | "4" | "5";
+            const n = summary.distribution[key] ?? 0;
+            const p = summary.count ? Math.round((n / summary.count) * 100) : 0;
             return (
               <div key={star} className="flex items-center gap-3">
                 <span className="mono-data w-6 shrink-0 text-[12px] text-muted-foreground tnum">{star}★</span>
@@ -140,6 +170,7 @@ export function ReviewPanel({ gear }: { gear: GearItem }) {
             );
           })}
           <p className="mono-label pt-2">评分来自标注了{copy.summary}的实测用户</p>
+          {ratingLoading ? <LoadingStatus label="正在读取最新实测数据" className="pt-1" /> : null}
         </div>
       </div>
 
@@ -235,7 +266,14 @@ function ReviewItem({ review, gear, copy, persisted, isCloudReview }: { review: 
             <div className="mt-3 flex flex-wrap gap-2">
               {review.images.map((u, i) => (
                 <a key={i} href={u} target="_blank" rel="noreferrer" className="block h-20 w-20 overflow-hidden border border-border">
-                  <img src={u} alt="" loading="lazy" className="plate h-full w-full object-cover" />
+                  <SafeImage
+                    src={u}
+                    alt=""
+                    loading="lazy"
+                    fallbackLabel="评论图片"
+                    fallbackMode="muted"
+                    className="plate h-full w-full object-cover"
+                  />
                 </a>
               ))}
             </div>

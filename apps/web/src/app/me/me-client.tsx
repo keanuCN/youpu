@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Bell, Heart, Scale, Star, User } from "lucide-react";
 import { toast } from "sonner";
+import { LoadingStatus } from "@/components/gear/data-state";
 import { GearRow } from "@/components/gear/gear-card";
+import { SafeImage } from "@/components/gear/safe-image";
 import { ScoreMark, Stars } from "@/components/gear/primitives";
 import { Avatar } from "@/components/layout/site-header";
 import { PageHead } from "@/components/layout/section-head";
@@ -14,6 +16,7 @@ import { Label } from "@/components/ui/label";
 import { getGear } from "@/data/boards";
 import { cloudLogout, cloudUpdateMe, hasCloudSession } from "@/lib/api";
 import { SEASON, getCategory } from "@/data/categories";
+import { getCompareProducts, resolveContentSource } from "@/lib/content";
 import { hasEditorialScores } from "@/lib/gear-state";
 import { helpfulOf, reviewsByUser } from "@/lib/domain";
 import { fmtDate, timeAgo } from "@/lib/format";
@@ -29,6 +32,7 @@ import {
   useCurrentUser,
   usePersisted,
 } from "@/lib/store";
+import type { GearItem } from "@/types";
 import { cn } from "@/lib/utils";
 
 const TABS = [
@@ -42,11 +46,68 @@ const TABS = [
 
 type TabKey = (typeof TABS)[number]["key"];
 
+function indexGear(items: GearItem[]): Record<string, GearItem> {
+  return Object.fromEntries(items.map((item) => [item.id, item]));
+}
+
+function chunk<T>(items: T[], size: number): T[][] {
+  const result: T[][] = [];
+  for (let index = 0; index < items.length; index += size) {
+    result.push(items.slice(index, index + size));
+  }
+  return result;
+}
+
 export default function MePage() {
   const persisted = usePersisted();
   const me = useCurrentUser();
   const profile = me.profile;
   const [tab, setTab] = useState<TabKey>("fav");
+
+  const favIds = me.favoriteIds;
+  const history = profile ? persisted.history.filter((h) => h.userKey === profile.userKey) : [];
+  const myReviews = profile ? reviewsByUser(persisted, profile.userKey) : [];
+  const myQuiz = profile ? persisted.quiz.filter((q) => q.userKey === profile.userKey) : [];
+  const votes = me.votes;
+  const recordIds = Array.from(
+    new Set([
+      ...favIds,
+      ...history.flatMap((record) => record.gearIds),
+      ...myReviews.map((review) => review.gearId),
+      ...myQuiz.flatMap((result) => result.picks.map((pick) => pick.gearId)),
+      ...votes.map((vote) => vote.gearId),
+    ]),
+  );
+  const recordIdsKey = recordIds.join("|");
+  const [gearById, setGearById] = useState<Record<string, GearItem>>({});
+  const [gearSyncPending, setGearSyncPending] = useState(false);
+
+  useEffect(() => {
+    const missingIds = recordIds.filter((id) => !getGear(id));
+    if (missingIds.length === 0 || resolveContentSource() === "pack") {
+      setGearSyncPending(false);
+      return;
+    }
+
+    let cancelled = false;
+    setGearSyncPending(true);
+    void Promise.all(chunk(missingIds, 4).map((ids) => getCompareProducts(ids, { source: "api" })))
+      .then((groups) => {
+        if (cancelled) return;
+        setGearById((current) => ({ ...current, ...indexGear(groups.flat()) }));
+      })
+      .finally(() => {
+        if (!cancelled) setGearSyncPending(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [recordIdsKey]);
+
+  const gearFor = (id: string) => gearById[id] ?? getGear(id);
+  const favs = favIds.map(gearFor).filter((g): g is NonNullable<typeof g> => !!g);
+  const notes = [...me.notifications].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
 
   if (!profile) {
     return (
@@ -76,16 +137,8 @@ export default function MePage() {
     );
   }
 
-  const favIds = me.favoriteIds;
-  const favs = favIds.map((id) => getGear(id)).filter((g): g is NonNullable<typeof g> => !!g);
-  const history = persisted.history.filter((h) => h.userKey === profile.userKey);
-  const myReviews = reviewsByUser(persisted, profile.userKey);
-  const myQuiz = persisted.quiz.filter((q) => q.userKey === profile.userKey);
-  const notes = [...me.notifications].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
-  const votes = me.votes;
-
   const counts: Record<TabKey, number> = {
-    fav: favs.length,
+    fav: favIds.length,
     cmp: history.length,
     rev: myReviews.length,
     quiz: myQuiz.length,
@@ -116,6 +169,8 @@ export default function MePage() {
           浏览器存储不可用（可能是隐私模式），本次操作不会被保存。
         </p>
       ) : null}
+
+      {gearSyncPending ? <LoadingStatus label="正在同步新增品类的记录" className="mt-4" /> : null}
 
       <div className="thin-scroll mt-8 flex gap-1.5 overflow-x-auto border-b border-foreground pb-3">
         {TABS.map((t) => {
@@ -155,7 +210,7 @@ export default function MePage() {
           history.length ? (
             <ul className="space-y-3">
               {history.map((h) => {
-                const items = h.gearIds.map((id) => getGear(id)).filter((g): g is NonNullable<typeof g> => !!g);
+                const items = h.gearIds.map(gearFor).filter((g): g is NonNullable<typeof g> => !!g);
                 return (
                   <li key={h.id} className="border border-border p-4">
                     <div className="flex flex-wrap items-center justify-between gap-3">
@@ -185,7 +240,14 @@ export default function MePage() {
                           href={`/gear/${g.id}`}
                           className="flex items-center gap-2 border border-border p-1.5 pr-3 hover:border-foreground"
                         >
-                          <img src={g.hero} alt="" className="h-9 w-9 object-cover grayscale" loading="lazy" />
+                          <SafeImage
+                            src={g.hero}
+                            alt=""
+                            loading="lazy"
+                            fallbackLabel={`${g.brand} ${g.model}`}
+                            fallbackMode="muted"
+                            className="h-9 w-9 object-cover grayscale"
+                          />
                           <span className="min-w-0">
                             <span className="mono-label block truncate">{g.brand}</span>
                             <span className="mono-data block max-w-32 truncate text-[12px]">{g.model}</span>
@@ -206,7 +268,7 @@ export default function MePage() {
           myReviews.length ? (
             <ul className="space-y-3">
               {myReviews.map((r) => {
-                const g = getGear(r.gearId);
+                const g = gearFor(r.gearId);
                 return (
                   <li key={r.id} className="border border-border p-4">
                     <div className="flex flex-wrap items-center justify-between gap-2">
@@ -253,14 +315,21 @@ export default function MePage() {
                   </p>
                   <ul className="mt-3 space-y-2">
                     {q.picks.map((p, i) => {
-                      const g = getGear(p.gearId);
+                      const g = gearFor(p.gearId);
                       if (!g) return null;
                       return (
                         <li key={p.gearId} className="flex items-center gap-3 border-b border-border pb-2 last:border-0">
                           <span className={cn("mono-data w-6 text-[18px] tnum", i === 0 ? "text-primary" : "text-muted-foreground/40")}>
                             {String(i + 1).padStart(2, "0")}
                           </span>
-                          <img src={g.hero} alt="" className="h-10 w-10 object-cover grayscale" loading="lazy" />
+                          <SafeImage
+                            src={g.hero}
+                            alt=""
+                            loading="lazy"
+                            fallbackLabel={`${g.brand} ${g.model}`}
+                            fallbackMode="muted"
+                            className="h-10 w-10 object-cover grayscale"
+                          />
                           <span className="min-w-0 flex-1">
                             <span className="mono-label block truncate">{g.brand}</span>
                             <Link href={`/gear/${g.id}`} className="block truncate text-[13.5px] font-medium hover:text-primary">
@@ -331,7 +400,7 @@ export default function MePage() {
         {votes.length ? (
           <ul className="grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
             {votes.map((v) => {
-              const g = getGear(v.gearId);
+              const g = gearFor(v.gearId);
               const voteCategory = getCategory(v.categorySlug);
               const voteRank = voteCategory?.rankCategories.find((category) => category.key === v.rankKey)?.label ?? v.rankKey;
               return (
@@ -362,7 +431,7 @@ export default function MePage() {
           variant="outline"
           onClick={() => {
             logout();
-            if (hasCloudSession()) void cloudLogout();
+            if (hasCloudSession()) void cloudLogout().catch(() => undefined);
             toast("已退出登录");
           }}
           className="mono-label h-8 rounded-none border-border px-4 text-[12px]"
