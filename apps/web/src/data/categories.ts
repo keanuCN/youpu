@@ -353,6 +353,7 @@ const BADMINTON_RACKET: Category = {
         { value: "VICTOR", label: "VICTOR" },
       ],
     },
+    { key: "price", label: "价格", control: "price", min: 500, max: 2500, step: 100 },
     { key: "years", label: "年份", control: "multi", options: [{ value: "2026", label: "2026" }] },
   ],
   scoreDims: [
@@ -428,6 +429,7 @@ const CASTING_ROD: Category = {
         { value: "Shimano", label: "Shimano" },
       ],
     },
+    { key: "price", label: "价格", control: "price", min: 500, max: 2000, step: 100 },
     {
       key: "years",
       label: "年份",

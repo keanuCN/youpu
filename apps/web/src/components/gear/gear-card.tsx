@@ -6,6 +6,7 @@ import { Heart, Scale } from "lucide-react";
 import { toast } from "sonner";
 import { MediaPlaceholder, PendingValue } from "@/components/gear/data-state";
 import { reviewCount, userRating } from "@/data/boards";
+import { getCategory } from "@/data/categories";
 import { sceneLabel } from "@/lib/domain";
 import { fmtCompact, fmtPrice } from "@/lib/format";
 import { hasEditorialScores, hasMedia, hasPrice, hasUserRating, mediaUrl } from "@/lib/gear-state";
@@ -18,6 +19,34 @@ import { useAuthGate } from "@/store/app-shell";
 import { FlexBar, ScoreMark, Stars } from "./primitives";
 
 type FromSource = "home" | "list" | "search" | "ranking" | "compare" | "recommend";
+
+function CardSignal({ gear }: { gear: GearItem }) {
+  if (gear.categorySlug === "snowboard") {
+    return <FlexBar value={gear.flexValue} />;
+  }
+
+  const signals =
+    gear.categorySlug === "badminton-racket"
+      ? [
+          ["重量", gear.specs.weightClass],
+          ["平衡", gear.specs.balance],
+        ]
+      : [
+          ["调性", gear.specs.power],
+          ["饵重", gear.specs.lureWeight],
+        ];
+
+  return (
+    <div className="grid grid-cols-2 gap-2 border-y border-border py-2">
+      {signals.map(([label, value]) => (
+        <div key={label} className="min-w-0">
+          <p className="mono-label">{label}</p>
+          <p className="mt-1 truncate text-[12px] text-foreground/80">{value || "待补充"}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 /** 装备卡：列表页 4 列网格 / 首页新品区共用 */
 export function GearCard({
@@ -92,6 +121,7 @@ export function GearCard({
       return;
     }
     if (res.reason === "full") toast.error(`对比坞最多 ${DOCK_MAX} 件，先移除一件再加入`);
+    if (res.reason === "cross") toast.error("对比坞只能比较同一品类，请先移出其他品类的装备");
   };
 
   return (
@@ -104,12 +134,20 @@ export function GearCard({
     >
       <Link
         href={`/gear/${gear.id}`}
-        className="flex flex-1 flex-col"
+        className="flex flex-1 flex-col max-lg:pb-10"
         onClick={() => track("card_click", { product_id: gear.id, from })}
       >
         <div className="relative aspect-[4/5] overflow-hidden bg-secondary">
           {mediaReady && mediaSrc ? (
-            <img src={mediaSrc} alt={`${gear.brand} ${gear.model}`} loading="lazy" className="plate h-full w-full object-cover" />
+            <img
+              src={mediaSrc}
+              alt={`${gear.brand} ${gear.model}`}
+              loading="lazy"
+              className={cn(
+                "plate h-full w-full",
+                gear.categorySlug === "snowboard" ? "object-cover" : "object-contain p-4",
+              )}
+            />
           ) : (
             <MediaPlaceholder label={`${gear.brand} ${gear.model}`} />
           )}
@@ -138,6 +176,11 @@ export function GearCard({
           </div>
 
           <div className="flex flex-wrap gap-1">
+            {from === "search" ? (
+              <span className="mono-label border border-primary/40 px-1.5 py-[2px] text-primary">
+                {getCategory(gear.categorySlug)?.name ?? gear.categorySlug}
+              </span>
+            ) : null}
             {gear.scenes.slice(0, 2).map((s) => (
               <span key={s} className="mono-label border border-border px-1.5 py-[2px]">
                 {sceneLabel(s)}
@@ -145,14 +188,14 @@ export function GearCard({
             ))}
           </div>
 
-          <FlexBar value={gear.flexValue} />
+          <CardSignal gear={gear} />
 
           <div className="mt-auto flex items-end justify-between gap-2 border-t border-border pt-2.5">
             <div className="min-w-0">
               <p className="mono-data text-[15px] leading-none tnum">
                 {priceReady ? fmtPrice(gear.price) : <PendingValue label="价格待补" />}
               </p>
-              <p className="mono-label mt-1.5">{priceReady ? "官方参考价" : "价格尚未采集"}</p>
+              <p className="mono-label mt-1.5">{priceReady ? "参考价" : "价格尚未采集"}</p>
             </div>
             <div className="flex flex-col items-end gap-1">
               {ratingReady ? (

@@ -1,10 +1,15 @@
-# 官方规格样例：待补中国区价格、图片与有谱编辑评分
+# 价格为同级公开参考价整理的本地演示区间，非中国区最终售价；评分为有谱编辑首版估分，待实测校正。
 slug: victor-thruster-ryuga-ii-pro-2026
 category: badminton-racket
 brand: victor
 model: THRUSTER RYUGA II PRO B
 year: 2026
 title: VICTOR THRUSTER RYUGA II PRO B 2026
+one_liner: 以重杀和后场压制为核心的进攻拍，适合能稳定驾驭硬杆和头重感的单打或后场选手。
+price:
+  min: 1599
+  max: 2199
+  currency: CNY
 specs:
   weightClass: "3U/4U"
   maxTension: 32
@@ -17,4 +22,17 @@ specs:
 data_source:
   kind: official
   origin_url: https://shop.au.victorsport.com/products/tk-ryuga-ii-pro-b
+editorial_scores:
+  power: 9.4
+  control: 8
+  speed: 7.1
+  defense: 7
+  forgiveness: 5.4
+  value: 7
+images:
+  - url: "https://shop.au.victorsport.com/cdn/shop/files/TK-RYUGAIIPROB-Main_530x%402x.jpg?v=1708589137"
+    kind: face
+    alt: VICTOR THRUSTER RYUGA II PRO B 官方产品图
+    source: 官方零售页面图片（本地演示，版权待核）
+    sort_order: 0
 status: published

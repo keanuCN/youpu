@@ -1,10 +1,15 @@
-# 官方规格样例：日区/海外规格，待补中国区价格、图片与有谱编辑评分
+# 价格为公开海外官方建议价折算的本地演示区间，非中国区最终售价；评分为有谱编辑首版估分，待实测校正。
 slug: daiwa-tatula-681mhrb-2026
 category: casting-rod
 brand: daiwa
 model: TATULA 681MHRB
 year: 2026
 title: Daiwa TATULA 681MHRB 2026
+one_liner: 2.03 米中重调的强力全能型号，覆盖高比重软虫、德州、铁板和中重型硬饵，适合需要起鱼底气的鲈钓场景。
+price:
+  min: 1399
+  max: 1699
+  currency: CNY
 specs:
   length: 2.03
   sections: 2
@@ -22,4 +27,17 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.daiwa.com/tw/product/ybd2nlg
+editorial_scores:
+  sensitivity: 7.8
+  casting: 8.1
+  control: 8.5
+  strength: 9
+  versatility: 8
+  value: 7.4
+images:
+  - url: "https://www.anglerscentral.my/cdn/shop/files/images.png?v=1773456295&width=416"
+    kind: face
+    alt: Daiwa TATULA 681MHRB 产品图
+    source: 公开零售页面图片（本地演示，授权待核）
+    sort_order: 0
 status: published

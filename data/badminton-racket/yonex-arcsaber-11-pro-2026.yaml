@@ -1,14 +1,20 @@
-# 官方规格样例：待补中国区价格、图片与有谱编辑评分
+# 价格为公开官方参考价折算的本地演示区间，非中国区最终售价；评分为有谱编辑首版估分，待实测校正。
 slug: yonex-arcsaber-11-pro-2026
 category: badminton-racket
 brand: yonex
 model: ARCSABER 11 PRO
 year: 2026
 title: YONEX ARCSABER 11 PRO 2026
+one_liner: 以持球感和落点控制见长，适合愿意主动组织回合的中高级选手；它更奖励稳定击球，不负责替你发力。
+price:
+  min: 1799
+  max: 2199
+  currency: CNY
 specs:
+  balance: even
   weightClass: "3U/4U"
   flex: stiff
-  maxTension: 29
+  maxTension: 28
   frameMaterial: HM Graphite + POCKETING BOOSTER
   shaftMaterial: HM Graphite + SUPER HMG + ULTRA PE FIBER
   lengthNote: 加长 10mm
@@ -16,7 +22,21 @@ specs:
     - singles
     - control
   playerLevel: advanced
+  stringPattern: 4U 19-27 lbs；3U 20-28 lbs
 data_source:
   kind: official
   origin_url: https://www.yonex.com/news/badminton/reinvented-arcsaber-series-for-decisive-control/
+editorial_scores:
+  power: 7.7
+  control: 9.4
+  speed: 7.5
+  defense: 8.7
+  forgiveness: 7
+  value: 7.4
+images:
+  - url: "https://us.yonex.com/cdn/shop/files/arc11-p.png?v=1738288163&width=1946"
+    kind: face
+    alt: YONEX ARCSABER 11 PRO Grayish Pearl 官方产品图
+    source: 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 status: published

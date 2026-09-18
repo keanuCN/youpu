@@ -10,6 +10,22 @@ test('local search matches brand, model, and year', () => {
   assert.ok(result.items.every((item) => item.brand.toLocaleLowerCase().includes('burton')));
 });
 
+test('local search fallback matches Chinese content and exposes translated category facets', () => {
+  const source = GEAR[0];
+  assert.ok(source);
+  const item = {
+    ...source,
+    id: 'search-fallback-fixture',
+    brand: '测试品牌',
+    model: '测试型号',
+    analysis: { ...source.analysis, verdict: '适合新手入门和全山地滑行' },
+  };
+
+  const result = searchLocalGear([item], { q: '新手入门', sort: 'relevance', page: 1, pageSize: 20 });
+  assert.equal(result.items[0]?.id, item.id);
+  assert.equal(result.facets.categories[0]?.name, '单板');
+});
+
 test('URL builder preserves filters and sort', () => {
   assert.equal(
     buildSearchParams({ q: 'custom camber', category: 'snowboard', priceMin: 3000, sort: 'rating', page: 2, pageSize: 20 }).toString(),

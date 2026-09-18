@@ -1,10 +1,15 @@
-# 官方规格样例：待补中国区价格、图片与有谱编辑评分
+# 价格为公开官方参考价折算的本地演示区间，非中国区最终售价；评分为有谱编辑首版估分，待实测校正。
 slug: victor-auraspeed-100x-se-2026
 category: badminton-racket
 brand: victor
 model: AURASPEED 100X SE H
 year: 2026
 title: VICTOR AURASPEED 100X SE H 2026
+one_liner: 以平抽快挡和连续衔接为主的速度型球拍，适合双打中前场与快速攻防转换；重杀上限不靠堆头重实现。
+price:
+  min: 1699
+  max: 2199
+  currency: CNY
 specs:
   weightClass: "3U/4U"
   maxTension: 29
@@ -17,4 +22,17 @@ specs:
 data_source:
   kind: official
   origin_url: https://shop.au.victorsport.com/products/auraspeed-100x-se-h
+editorial_scores:
+  power: 7.8
+  control: 8
+  speed: 9.2
+  defense: 8.8
+  forgiveness: 6.7
+  value: 7
+images:
+  - url: "https://shop.au.victorsport.com/cdn/shop/products/82004_1_20211117175841_2048x.jpg?v=1644645157"
+    kind: face
+    alt: VICTOR AURASPEED 100X SE H 官方产品图
+    source: 官方零售页面图片（本地演示，版权待核）
+    sort_order: 0
 status: published

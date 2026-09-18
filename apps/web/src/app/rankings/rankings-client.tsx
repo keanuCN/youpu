@@ -1,27 +1,72 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
+import { MediaPlaceholder, PendingValue } from "@/components/gear/data-state";
 import { GearRow } from "@/components/gear/gear-card";
 import { ScoreMark } from "@/components/gear/primitives";
 import { PageHead } from "@/components/layout/section-head";
 import { Button } from "@/components/ui/button";
-import { SEASON, SNOWBOARD } from "@/data/categories";
+import { GEAR } from "@/data/boards";
+import { CATEGORIES, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
+import { getCategoryProducts, resolveContentSource } from "@/lib/content";
+import { hasEditorialScores, hasMedia, mediaUrl } from "@/lib/gear-state";
 import { rankRows } from "@/lib/domain";
 import { fmtCompact } from "@/lib/format";
 import { useCurrentUser, usePersisted, vote } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { useAuthGate } from "@/store/app-shell";
+import type { GearItem } from "@/types";
+
+const LIVE_CATEGORIES = Object.values(CATEGORIES).filter((category) => category.status === "live");
 
 export default function RankingsPage() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const persisted = usePersisted();
   const me = useCurrentUser();
   const { requireAuth } = useAuthGate();
-  const [rankKey, setRankKey] = useState(SNOWBOARD.rankCategories[0]?.key ?? "overall");
-  const rows = rankRows(persisted, rankKey);
+  const requestedCategory = searchParams.get("category");
+  const categorySlug = getCategory(requestedCategory ?? "")?.status === "live" ? requestedCategory! : "snowboard";
+  const category = getCategory(categorySlug) ?? SNOWBOARD;
+  const [rankKey, setRankKey] = useState(category.rankCategories[0]?.key ?? "overall");
+  const [catalog, setCatalog] = useState<GearItem[]>(() => GEAR.filter((item) => item.categorySlug === categorySlug));
+  const [catalogLoading, setCatalogLoading] = useState(resolveContentSource() === "api");
+
+  useEffect(() => {
+    setRankKey(category.rankCategories[0]?.key ?? "overall");
+  }, [categorySlug, category.rankCategories]);
+
+  useEffect(() => {
+    let active = true;
+    const localCatalog = GEAR.filter((item) => item.categorySlug === categorySlug);
+    setCatalog(localCatalog);
+    if (resolveContentSource() === "pack") {
+      setCatalogLoading(false);
+      return () => {
+        active = false;
+      };
+    }
+
+    setCatalogLoading(true);
+    void getCategoryProducts(categorySlug, { source: "api" }).then((next) => {
+      if (!active) return;
+      setCatalog(next);
+      setCatalogLoading(false);
+    });
+    return () => {
+      active = false;
+    };
+  }, [categorySlug]);
+
+  const rows = useMemo(
+    () => rankRows(persisted, rankKey, categorySlug, catalog),
+    [catalog, categorySlug, persisted, rankKey],
+  );
   const mine = me.votes.find(
-    (v) => v.categorySlug === "snowboard" && v.rankKey === rankKey && v.season === SEASON,
+    (v) => v.categorySlug === categorySlug && v.rankKey === rankKey && v.season === SEASON,
   );
   const podium = rows.slice(0, 3);
   const rest = rows.slice(3);
@@ -29,19 +74,30 @@ export default function RankingsPage() {
 
   const onVote = (gearId: string) => {
     requireAuth(() => {
-      const res = vote("snowboard", rankKey, SEASON, gearId);
+      const res = vote(categorySlug, rankKey, SEASON, gearId);
       if (res.ok) toast.success(mine ? "已改投（改投机会仅一次）" : "投票成功，榜单已实时更新");
       else toast.error(res.message);
     }, "投票需要先登录");
   };
 
+  const selectCategory = (slug: string) => {
+    router.replace(slug === "snowboard" ? "/rankings" : `/rankings?category=${encodeURIComponent(slug)}`);
+  };
+
+  const rankLabel = category.rankCategories.find((item) => item.key === rankKey)?.label ?? "综合榜";
+  const isSnowboard = categorySlug === "snowboard";
+
   return (
     <div className="mx-auto max-w-[1400px] px-5 py-10 sm:px-8">
       <PageHead
-        kicker={`${SEASON} SEASON RANKINGS`}
-        title="雪季榜单"
+        kicker={`${SEASON} ${category.nameEn.toUpperCase()} RANKINGS`}
+        title={`${category.name}榜单`}
         titleEn="Rankings"
-        desc="最终分 = 数据分 × 70% + 社区票 × 30%。数据分由综合指数、热度、进阶取向与用户评分加权得出；每个榜单每人一票，可改投一次。"
+        desc={
+          isSnowboard
+            ? "最终分 = 数据分 × 70% + 社区票 × 30%。单板数据分由综合指数、热度、进阶取向与用户评分加权得出。"
+            : `最终分 = 数据分 × 70% + 社区票 × 30%。${category.name}数据分由编辑评分、热度与用户评分加权得出。`
+        }
         aside={
           <div className="text-right">
             <p className="mono-data text-[38px] leading-none tnum">{rows.length}</p>
@@ -50,8 +106,25 @@ export default function RankingsPage() {
         }
       />
 
-      <div className="thin-scroll mt-8 flex gap-1.5 overflow-x-auto border-b border-foreground pb-3">
-        {SNOWBOARD.rankCategories.map((c) => (
+      <div className="thin-scroll mt-8 flex items-center gap-1.5 overflow-x-auto border-b border-border pb-3">
+        <span className="mono-label mr-1 shrink-0 text-muted-foreground">品类</span>
+        {LIVE_CATEGORIES.map((item) => (
+          <button
+            key={item.slug}
+            type="button"
+            onClick={() => selectCategory(item.slug)}
+            className={cn(
+              "mono-label shrink-0 border px-3.5 py-2 transition-colors",
+              categorySlug === item.slug ? "border-foreground bg-foreground text-background" : "border-border hover:border-foreground",
+            )}
+          >
+            {item.name}
+          </button>
+        ))}
+      </div>
+
+      <div className="thin-scroll flex gap-1.5 overflow-x-auto border-b border-foreground pb-3 pt-3">
+        {category.rankCategories.map((c) => (
           <button
             key={c.key}
             type="button"
@@ -66,6 +139,22 @@ export default function RankingsPage() {
         ))}
       </div>
 
+      {catalogLoading ? (
+        <div className="mt-10 border border-dashed border-border py-20 text-center">
+          <div className="mx-auto h-10 w-10 animate-pulse border border-border bg-secondary" />
+          <p className="mt-4 text-[15px] font-medium">正在读取{category.name}榜单</p>
+          <p className="mono-label mt-2">正在同步当前品类的装备与投票数据</p>
+        </div>
+      ) : !rows.length ? (
+        <div className="mt-10 border border-dashed border-border py-20 text-center">
+          <p className="text-[15px] font-medium">{category.name}榜单数据待补充</p>
+          <p className="mono-label mt-2">当前品类还没有足够的装备数据进入榜单。</p>
+          <Link href={`/browse/${categorySlug}`} className="mono-label mt-6 inline-block bg-foreground px-5 py-3 text-background hover:bg-primary">
+            去看{category.name}档案
+          </Link>
+        </div>
+      ) : (
+        <>
       {/* 领奖台 */}
       <section className="mt-10 grid gap-px border border-border bg-border md:grid-cols-3">
         {podium.map((r, i) => (
@@ -82,11 +171,23 @@ export default function RankingsPage() {
               <span className={cn("mono-data text-[46px] leading-none tnum", i === 0 ? "text-primary" : "text-muted-foreground/40")}>
                 {String(r.rank).padStart(2, "0")}
               </span>
-              <ScoreMark value={r.gear.composite} size="sm" />
+              {hasEditorialScores(r.gear) ? <ScoreMark value={r.gear.composite} size="sm" /> : <PendingValue label="待补分" />}
             </div>
             <Link href={`/gear/${r.gear.id}`} className="mt-4 block">
               <div className="aspect-[4/3] overflow-hidden bg-secondary">
-                <img src={r.gear.hero} alt="" loading="lazy" className="plate h-full w-full object-cover" />
+                {hasMedia(r.gear) && mediaUrl(r.gear) ? (
+                  <img
+                    src={mediaUrl(r.gear)}
+                    alt={`${r.gear.brand} ${r.gear.model}`}
+                    loading="lazy"
+                    className={cn(
+                      "plate h-full w-full",
+                      r.gear.categorySlug === "snowboard" ? "object-cover" : "object-contain p-6",
+                    )}
+                  />
+                ) : (
+                  <MediaPlaceholder label="图片待补" className="h-full min-h-0 p-8" />
+                )}
               </div>
               <p className="mono-label mt-3">{r.gear.brand}</p>
               <h3 className="mt-1 text-[17px] leading-snug font-medium">{r.gear.model}</h3>
@@ -95,7 +196,7 @@ export default function RankingsPage() {
             <dl className="mono-data mt-4 space-y-1 border-t border-border pt-3 text-[12px] tnum">
               <div className="flex justify-between">
                 <dt className="mono-label">数据分</dt>
-                <dd>{r.dataScore.toFixed(1)}</dd>
+                <dd>{hasEditorialScores(r.gear) ? r.dataScore.toFixed(1) : "待补"}</dd>
               </div>
               <div className="flex justify-between">
                 <dt className="mono-label">社区票</dt>
@@ -134,7 +235,7 @@ export default function RankingsPage() {
           <p className="mono-label">
             {mine
               ? `你投了 ${rows.find((r) => r.gear.id === mine.gearId)?.gear.model ?? "已下架装备"}${mine.changed ? " · 改投机会已用完" : " · 还可改投一次"}`
-              : `你还没在「${SNOWBOARD.rankCategories.find((c) => c.key === rankKey)?.label}」投票`}
+              : `你还没在「${rankLabel}」投票`}
           </p>
         </div>
         <div>
@@ -144,7 +245,7 @@ export default function RankingsPage() {
                 <GearRow
                   gear={r.gear}
                   rank={r.rank}
-                  note={`数据 ${r.dataScore.toFixed(1)} · 社区 ${fmtCompact(r.votes)} 票 · 最终 ${r.final.toFixed(1)}`}
+                  note={`数据 ${hasEditorialScores(r.gear) ? r.dataScore.toFixed(1) : "待补"} · 社区 ${fmtCompact(r.votes)} 票 · 最终 ${r.final.toFixed(1)}`}
                 />
               </div>
               <button
@@ -167,7 +268,11 @@ export default function RankingsPage() {
       <section className="mt-14 border border-border p-6">
         <p className="mono-label mb-3">计票口径 / METHODOLOGY</p>
         <ul className="grid gap-3 text-[13px] leading-relaxed text-muted-foreground sm:grid-cols-2">
-          <li>· 数据分 = 综合指数 55% + 热度 20% + 进阶取向 15% + 用户评分 10%（新手榜把进阶取向反向计分）</li>
+          {isSnowboard ? (
+            <li>· 数据分 = 综合指数 55% + 热度 20% + 进阶取向 15% + 用户评分 10%（新手榜把进阶取向反向计分）</li>
+          ) : (
+            <li>· 数据分 = 编辑评分 65% + 热度 15% + 用户评分 20%，缺少真实数据的项目保持待补状态</li>
+          )}
           <li>· 社区票按本榜最高票数归一化后占最终分 30%</li>
           <li>· 性价比榜只在价格最低的 10 件里排名，避免高价板靠品牌溢价占位</li>
           <li>· 每人每榜每季一票，允许改投一次，改投后锁定</li>
@@ -176,6 +281,8 @@ export default function RankingsPage() {
           每人每榜每季一票，改投一次后锁定。
         </p>
       </section>
+        </>
+      )}
     </div>
   );
 }

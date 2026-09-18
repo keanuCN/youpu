@@ -21,43 +21,43 @@ export function AnalysisBlock({ gear }: { gear: GearItem }) {
         <p className="serif-display text-[21px] leading-[1.5] text-balance sm:text-[25px]">{a.verdict}</p>
       </blockquote>
 
-      <div className="grid gap-6 sm:grid-cols-2">
-        <List title="强项" titleEn="Strengths" items={a.strengths} tone="plus" />
-        <List title="短板" titleEn="Weaknesses" items={a.weaknesses} tone="minus" />
-      </div>
+      {a.strengths.length || a.weaknesses.length ? (
+        <div className="grid gap-6 sm:grid-cols-2">
+          {a.strengths.length ? <List title="强项" titleEn="Strengths" items={a.strengths} tone="plus" /> : null}
+          {a.weaknesses.length ? <List title="短板" titleEn="Weaknesses" items={a.weaknesses} tone="minus" /> : null}
+        </div>
+      ) : null}
 
-      <div className="grid gap-6 border-t border-border pt-6 sm:grid-cols-2">
-        <div>
-          <p className="mono-label mb-3">适合谁 / FITS</p>
+      {a.fits.length || a.notFits.length ? (
+        <div className="grid gap-6 border-t border-border pt-6 sm:grid-cols-2">
           {a.fits.length ? (
-            <ul className="space-y-2">
-              {a.fits.map((t) => (
-                <li key={t} className="flex gap-2.5 text-[13px] leading-relaxed">
-                  <Check size={14} strokeWidth={2} className="mt-[3px] shrink-0 text-primary" />
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="mono-label text-muted-foreground/65">待补充</p>
-          )}
-        </div>
-        <div>
-          <p className="mono-label mb-3">不适合谁 / NOT FOR</p>
+            <div>
+              <p className="mono-label mb-3">适合谁 / FITS</p>
+              <ul className="space-y-2">
+                {a.fits.map((t) => (
+                  <li key={t} className="flex gap-2.5 text-[13px] leading-relaxed">
+                    <Check size={14} strokeWidth={2} className="mt-[3px] shrink-0 text-primary" />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
           {a.notFits.length ? (
-            <ul className="space-y-2">
-              {a.notFits.map((t) => (
-                <li key={t} className="flex gap-2.5 text-[13px] leading-relaxed text-muted-foreground">
-                  <Minus size={14} strokeWidth={2} className="mt-[3px] shrink-0" />
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="mono-label text-muted-foreground/65">待补充</p>
-          )}
+            <div>
+              <p className="mono-label mb-3">不适合谁 / NOT FOR</p>
+              <ul className="space-y-2">
+                {a.notFits.map((t) => (
+                  <li key={t} className="flex gap-2.5 text-[13px] leading-relaxed text-muted-foreground">
+                    <Minus size={14} strokeWidth={2} className="mt-[3px] shrink-0" />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
         </div>
-      </div>
+      ) : null}
     </div>
   );
 }

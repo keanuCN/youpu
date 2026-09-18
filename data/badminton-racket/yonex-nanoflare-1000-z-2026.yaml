@@ -1,10 +1,15 @@
-# 官方规格样例：待补中国区价格、图片与有谱编辑评分
+# 价格为公开官方参考价折算的本地演示区间，非中国区最终售价；评分为有谱编辑首版估分，待实测校正。
 slug: yonex-nanoflare-1000-z-2026
 category: badminton-racket
 brand: yonex
 model: NANOFLARE 1000 Z
 year: 2026
 title: YONEX NANOFLARE 1000 Z 2026
+one_liner: 头轻、挥速快，适合主动抢节奏的双打选手；特硬中杆会放大动作质量的差异。
+price:
+  min: 1699
+  max: 1999
+  currency: CNY
 specs:
   weightClass: "3U/4U"
   balance: head-light
@@ -21,4 +26,17 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.yonex.com/nf-1000z
+editorial_scores:
+  power: 8.5
+  control: 7.8
+  speed: 9.4
+  defense: 9
+  forgiveness: 5.8
+  value: 7
+images:
+  - url: "https://us.yonex.com/cdn/shop/files/NF1000Z_Lightning_Yellow_1.jpg?v=1740596406&width=1946"
+    kind: face
+    alt: YONEX NANOFLARE 1000 Z Lightning Yellow 官方产品图
+    source: 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 status: published

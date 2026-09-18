@@ -1,10 +1,15 @@
-# 官方规格样例：海外规格，待补中国区价格、图片与有谱编辑评分
+# 价格为公开海外官方建议价折算的本地演示区间，非中国区最终售价；评分为有谱编辑首版估分，待实测校正。
 slug: shimano-streamflight-stf702sp25l-2026
 category: casting-rod
 brand: shimano
 model: STREAMFLIGHT STF702SP25L
 year: 2026
 title: Shimano STREAMFLIGHT STF702SP25L 2026
+one_liner: 2.13 米、2–12 克的轻量直柄竿，适合溪流和小河轻饵；强调落点与细腻鱼讯，面对大鱼和重障碍要留余量。
+price:
+  min: 699
+  max: 899
+  currency: CNY
 specs:
   length: 2.13
   sections: 2
@@ -19,4 +24,17 @@ specs:
 data_source:
   kind: official
   origin_url: https://fish.shimano.com/en-NZ/product/rods/freshwater/streamflight_freshwater_rods.html
+editorial_scores:
+  sensitivity: 8.4
+  casting: 8.3
+  control: 8
+  strength: 5.8
+  versatility: 7.2
+  value: 8
+images:
+  - url: "https://bbsports.co.nz/cdn/shop/files/Untitled_580x.jpg?v=1760064152"
+    kind: face
+    alt: Shimano STREAMFLIGHT STF702SP25L 产品图
+    source: BBSportsNZ 公开商品页图片（本地演示，授权待核）
+    sort_order: 0
 status: published

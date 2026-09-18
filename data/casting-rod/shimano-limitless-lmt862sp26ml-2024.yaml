@@ -1,10 +1,15 @@
-# 官方规格样例：海外规格，待补中国区价格、图片与有谱编辑评分
+# 价格为公开海外官方建议价折算的本地演示区间，非中国区最终售价；评分为有谱编辑首版估分，待实测校正。
 slug: shimano-limitless-lmt862sp26ml-2024
 category: casting-rod
 brand: shimano
 model: LIMITLESS LMT862SP26ML
 year: 2024
 title: Shimano LIMITLESS LMT862SP26ML 2024
+one_liner: 8 英尺 6 英寸的中轻调直柄竿，兼顾远投距离和轻饵操控，适合岸边淡水路亚与需要覆盖水面的场景。
+price:
+  min: 1299
+  max: 1599
+  currency: CNY
 specs:
   length: 2.59
   sections: 2
@@ -19,4 +24,17 @@ specs:
 data_source:
   kind: official
   origin_url: https://fish.shimano.com/en-NZ/product/rods/freshwater/limitless_freshwater_rods.html
+editorial_scores:
+  sensitivity: 8.6
+  casting: 8.8
+  control: 8.4
+  strength: 6.5
+  versatility: 8
+  value: 7.3
+images:
+  - url: "https://www.smartmarine.co.nz/cdn/images/products/xlarge/8089900_a.jpg"
+    kind: face
+    alt: Shimano LIMITLESS LMT862SP26ML 产品图
+    source: Smart Marine 公开商品页图片（本地演示，授权待核）
+    sort_order: 0
 status: published

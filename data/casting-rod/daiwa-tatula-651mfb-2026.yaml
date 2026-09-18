@@ -1,10 +1,15 @@
-# 官方规格样例：日区/海外规格，待补中国区价格、图片与有谱编辑评分
+# 价格为公开海外官方建议价折算的本地演示区间，非中国区最终售价；评分为有谱编辑首版估分，待实测校正。
 slug: daiwa-tatula-651mfb-2026
 category: casting-rod
 brand: daiwa
 model: TATULA 651MFB
 year: 2026
 title: Daiwa TATULA 651MFB 2026
+one_liner: 6 英尺 5 英寸的中调全能枪柄竿，5–21 克覆盖面实用，适合软虫、德州和中小型硬饵之间频繁切换。
+price:
+  min: 1299
+  max: 1599
+  currency: CNY
 specs:
   length: 1.96
   sections: 2
@@ -21,4 +26,17 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.daiwa.com/tw/product/ybd2nlg
+editorial_scores:
+  sensitivity: 8
+  casting: 8.4
+  control: 8.2
+  strength: 7.5
+  versatility: 8.8
+  value: 7.6
+images:
+  - url: "https://www.anglerscentral.my/cdn/shop/files/EDFCC126-8552-45A9-A0BB-9E32D4CC4505.jpg?v=1773455787&width=416"
+    kind: face
+    alt: Daiwa TATULA 651MFB 产品图
+    source: 公开零售页面图片（本地演示，授权待核）
+    sort_order: 0
 status: published

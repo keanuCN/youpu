@@ -13,7 +13,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { getGear } from "@/data/boards";
 import { cloudLogout, cloudUpdateMe, hasCloudSession } from "@/lib/api";
-import { SEASON } from "@/data/categories";
+import { SEASON, getCategory } from "@/data/categories";
+import { hasEditorialScores } from "@/lib/gear-state";
 import { helpfulOf, reviewsByUser } from "@/lib/domain";
 import { fmtDate, timeAgo } from "@/lib/format";
 import {
@@ -59,7 +60,7 @@ export default function MePage() {
           <Link href="/auth" className="mono-label bg-foreground px-6 py-3 text-background hover:bg-primary">
             登录 / 注册
           </Link>
-          <Link href="/browse/snowboard" className="mono-label border border-foreground px-6 py-3 hover:bg-foreground hover:text-background">
+          <Link href="/" className="mono-label border border-foreground px-6 py-3 hover:bg-foreground hover:text-background">
             先随便看看
           </Link>
         </div>
@@ -98,7 +99,7 @@ export default function MePage() {
         kicker={`MEMBER SINCE ${fmtDate(persisted.accounts.find((a) => a.userKey === profile.userKey)?.createdAt ?? new Date().toISOString())}`}
         title={profile.username}
         titleEn="Personal Archive"
-        desc={`${profile.level} · ${profile.years} 年雪龄 · ${profile.heightCm}cm / ${profile.weightKg}kg${profile.resort ? ` · 常滑 ${profile.resort}` : ""}`}
+        desc={`${profile.level} · ${profile.years} 年使用经验 · ${profile.heightCm}cm / ${profile.weightKg}kg${profile.resort ? ` · 常用 ${profile.resort}` : ""}`}
         aside={
           <div className="flex items-center gap-4">
             <Avatar seed={profile.avatarSeed} name={profile.username} size={56} />
@@ -146,7 +147,7 @@ export default function MePage() {
               ))}
             </div>
           ) : (
-            <Empty text="还没有收藏。在任意装备卡上点心形即可加入收藏。" cta={{ label: "去档案库", href: "/browse/snowboard" }} />
+            <Empty text="还没有收藏。在任意装备卡上点心形即可加入收藏。" cta={{ label: "去档案库", href: "/" }} />
           )
         ) : null}
 
@@ -197,7 +198,7 @@ export default function MePage() {
               })}
             </ul>
           ) : (
-            <Empty text="还没有对比记录。把 2 件以上装备加入对比坞并开始对比后会自动存档。" cta={{ label: "去档案库", href: "/browse/snowboard" }} />
+            <Empty text="还没有对比记录。把 2 件以上同品类装备加入对比坞并开始对比后会自动存档。" cta={{ label: "去档案库", href: "/" }} />
           )
         ) : null}
 
@@ -238,7 +239,7 @@ export default function MePage() {
               })}
             </ul>
           ) : (
-            <Empty text="还没有发布过实测评论。" cta={{ label: "去找一件装备评价", href: "/browse/snowboard" }} />
+            <Empty text="还没有发布过实测评论。" cta={{ label: "去找一件装备评价", href: "/" }} />
           )
         ) : null}
 
@@ -248,7 +249,7 @@ export default function MePage() {
               {myQuiz.map((q) => (
                 <li key={q.id} className="border border-border p-4">
                   <p className="mono-label">
-                    {timeAgo(q.createdAt)} · {q.categorySlug}
+                    {timeAgo(q.createdAt)} · {getCategory(q.categorySlug)?.name ?? q.categorySlug}
                   </p>
                   <ul className="mt-3 space-y-2">
                     {q.picks.map((p, i) => {
@@ -331,13 +332,15 @@ export default function MePage() {
           <ul className="grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
             {votes.map((v) => {
               const g = getGear(v.gearId);
+              const voteCategory = getCategory(v.categorySlug);
+              const voteRank = voteCategory?.rankCategories.find((category) => category.key === v.rankKey)?.label ?? v.rankKey;
               return (
                 <li key={`${v.rankKey}-${v.gearId}`} className="flex items-center gap-3 bg-background p-4">
                   <div className="min-w-0 flex-1">
-                    <p className="mono-label">{v.rankKey} 榜</p>
+                    <p className="mono-label">{voteCategory?.name ?? v.categorySlug} · {voteRank}</p>
                     <p className="mt-1 truncate text-[13.5px] font-medium">{g ? `${g.brand} ${g.model}` : v.gearId}</p>
                   </div>
-                  {g ? <ScoreMark value={g.composite} size="sm" /> : null}
+                  {g && hasEditorialScores(g) ? <ScoreMark value={g.composite} size="sm" /> : null}
                   <span className="mono-label shrink-0">{v.changed ? "已改投" : "首投"}</span>
                 </li>
               );
@@ -402,7 +405,7 @@ function ProfileForm() {
       <div className="grid gap-4 sm:grid-cols-2">
         {field("username", "昵称")}
         {field("resort", "常滑场地")}
-        {field("years", "雪龄（年）", "number")}
+        {field("years", "使用年限（年）", "number")}
         {field("heightCm", "身高 cm", "number")}
         {field("weightKg", "体重 kg", "number")}
         <div className="space-y-1.5">

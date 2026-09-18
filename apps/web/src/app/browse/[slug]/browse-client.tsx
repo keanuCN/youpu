@@ -18,6 +18,7 @@ import {
   SORT_LABELS,
   activeFilterCount,
   applyFilters,
+  type PriceBounds,
   sortGear,
   type Filters,
 } from "@/lib/domain";
@@ -33,12 +34,22 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
   const q = searchParams.get("q") ?? "";
   const sortParam = searchParams.get("sort");
   const category = getCategory(slug);
-  const [filters, setFilters] = useState<Filters>({ ...DEFAULT_FILTERS, q });
-  const [sort, setSort] = useState<SortKey>(SORTS.includes(sortParam as SortKey) ? (sortParam as SortKey) : "heat");
+  const filterDefs = category?.filterTemplate ?? [];
+  const priceDef = filterDefs.find((filter) => filter.control === "price");
+  const priceBounds = useMemo<PriceBounds>(
+    () => [priceDef?.min ?? PRICE_BOUNDS[0], priceDef?.max ?? PRICE_BOUNDS[1]],
+    [priceDef?.max, priceDef?.min],
+  );
+  const availableSorts = category?.hardcoreWeights && Object.keys(category.hardcoreWeights).length > 0
+    ? SORTS
+    : SORTS.filter((item) => item !== "hardcore");
+  const defaultSort = availableSorts.includes(sortParam as SortKey) ? (sortParam as SortKey) : "heat";
+  const [filters, setFilters] = useState<Filters>({ ...DEFAULT_FILTERS, q, price: priceBounds });
+  const [sort, setSort] = useState<SortKey>(defaultSort);
 
   const pool = useMemo(() => initialPool ?? gearOfCategory(slug), [initialPool, slug]);
-  const result = useMemo(() => sortGear(applyFilters(pool, filters), sort), [pool, filters, sort]);
-  const active = activeFilterCount(filters);
+  const result = useMemo(() => sortGear(applyFilters(pool, filters, priceBounds), sort), [pool, filters, priceBounds, sort]);
+  const active = activeFilterCount(filters, priceBounds);
 
   if (!category || !isLive(slug)) {
     return (
@@ -73,7 +84,6 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
     router.replace(`/browse/${slug}?${params.toString()}`);
   };
 
-  const filterDefs = category.filterTemplate;
   const cardFrom = filters.q ? "search" : "list";
 
   const FilterBody = (
@@ -83,7 +93,7 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
         {active > 0 ? (
           <button
             type="button"
-            onClick={() => setFilters({ ...DEFAULT_FILTERS, q: filters.q })}
+            onClick={() => setFilters({ ...DEFAULT_FILTERS, q: filters.q, price: priceBounds })}
             className="mono-label flex items-center gap-1 text-primary hover:underline"
           >
             <X size={11} strokeWidth={2} /> 清空 {active}
@@ -159,7 +169,11 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
         kicker={category.issue}
         title={`${category.name}档案库`}
         titleEn={category.nameEn}
-        desc={`按${category.filterTemplate.map((filter) => filter.label).join("、") || "结构化参数"}筛选，四种排序对应四种决策方式：看热度、看新款、看评分、看它有多吃技术。`}
+        desc={
+          `按${filterDefs.map((filter) => filter.label).join("、") || "结构化参数"}筛选，${
+            availableSorts.length === 4 ? "再从热度、新款、评分和进阶指数切换。" : "再从热度、新款和编辑评分切换。"
+          }`
+        }
         aside={
           <div className="text-right">
             <p className="mono-data text-[38px] leading-none tnum">{pool.length}</p>
@@ -177,7 +191,7 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
           <div className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-border pb-3">
             <div className="flex flex-wrap items-center gap-1">
               <span className="mono-label mr-2">排序</span>
-              {SORTS.map((s) => (
+              {availableSorts.map((s) => (
                 <button
                   key={s}
                   type="button"
@@ -243,7 +257,7 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
               <p className="mono-label mt-2">试着放宽价格区间或减少筛选项</p>
               <Button
                 variant="outline"
-                onClick={() => setFilters({ ...DEFAULT_FILTERS })}
+                onClick={() => setFilters({ ...DEFAULT_FILTERS, price: priceBounds })}
                 className="mono-label mt-5 h-8 rounded-none px-4 text-[12px]"
               >
                 重置全部筛选

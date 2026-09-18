@@ -52,6 +52,8 @@ export default function ComparePage() {
   }, [apiMode, idsKey]);
 
   const categorySlug = items[0]?.categorySlug ?? "snowboard";
+  const categorySlugs = [...new Set(items.map((item) => item.categorySlug))];
+  const mixedCategories = categorySlugs.length > 1;
   useEffect(() => {
     let active = true;
     if (!apiMode) {
@@ -107,6 +109,76 @@ export default function ComparePage() {
     );
   }
 
+  if (mixedCategories) {
+    const categoryNames = categorySlugs.map((slug) => getCategory(slug)?.name ?? slug);
+    const sameCategoryCandidates = availableGear.filter(
+      (gear) => gear.categorySlug === categorySlug && !ids.includes(gear.id),
+    );
+
+    return (
+      <div className="mx-auto max-w-[1400px] px-5 py-10 sm:px-8">
+        <PageHead
+          kicker="COMPARE / SAME CATEGORY ONLY"
+          title="先统一品类"
+          titleEn="Same Category"
+          desc="不同品类的参数含义和评分维度不同，先移出其他品类，再开始有效对比。"
+        />
+        <div className="mt-10 border border-dashed border-border py-14 text-center">
+          <Scale size={30} strokeWidth={1.2} className="mx-auto text-muted-foreground" />
+          <p className="mt-4 text-[16px] font-medium">当前包含 {categoryNames.join("、")}</p>
+          <p className="mono-label mt-2">参数横表只支持同一品类，避免把不同装备的字段强行放在一起。</p>
+        </div>
+
+        <div className="mt-6 grid gap-px border border-border bg-border sm:grid-cols-2">
+          {items.map((gear) => {
+            const image = mediaUrl(gear);
+            return (
+              <div key={gear.id} className="flex items-center gap-3 bg-background p-4">
+                {image ? (
+                  <img
+                    src={image}
+                    alt=""
+                    className={cn(
+                      "h-14 w-14 shrink-0 bg-secondary",
+                      gear.categorySlug === "snowboard" ? "object-cover" : "object-contain p-1.5",
+                    )}
+                    loading="lazy"
+                  />
+                ) : (
+                  <MediaPlaceholder label="图片待补" className="h-14 w-14 min-h-0 shrink-0 p-2" />
+                )}
+                <div className="min-w-0 flex-1">
+                  <p className="mono-label truncate">{getCategory(gear.categorySlug)?.name ?? gear.categorySlug}</p>
+                  <Link href={`/gear/${gear.id}`} className="block truncate text-[14px] font-medium hover:text-primary">
+                    {gear.brand} {gear.model}
+                  </Link>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => removeFromDock(gear.id)}
+                  className="mono-label shrink-0 border border-border px-2.5 py-1.5 transition-colors hover:border-destructive hover:text-destructive"
+                >
+                  移出
+                </button>
+              </div>
+            );
+          })}
+        </div>
+
+        {sameCategoryCandidates.length ? (
+          <section className="mt-12">
+            <SectionHead title={`继续比较${category?.name ?? "同品类装备"}`} titleEn="Keep Comparing" desc="下面只展示当前第一件装备所属品类。" />
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+              {sameCategoryCandidates.slice(0, 4).map((gear) => (
+                <GearCard key={gear.id} gear={gear} from="compare" />
+              ))}
+            </div>
+          </section>
+        ) : null}
+      </div>
+    );
+  }
+
   if (items.length < 2) {
     return (
       <div className="mx-auto max-w-[1400px] px-5 py-10 sm:px-8">
@@ -115,8 +187,8 @@ export default function ComparePage() {
           <Scale size={30} strokeWidth={1.2} className="mx-auto text-muted-foreground" />
           <p className="mt-4 text-[16px] font-medium">对比坞里只有 {items.length} 件</p>
           <p className="mono-label mt-2">至少需要 2 件才能开始对比 · 最多 4 件</p>
-          <Link href="/browse/snowboard" className="mono-label mt-6 inline-block bg-foreground px-5 py-3 text-background hover:bg-primary">
-            去档案库挑板
+          <Link href={`/browse/${categorySlug}`} className="mono-label mt-6 inline-block bg-foreground px-5 py-3 text-background hover:bg-primary">
+            去档案库挑{category?.name ?? "装备"}
           </Link>
         </div>
         <section className="mt-14">

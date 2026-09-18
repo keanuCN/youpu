@@ -21,6 +21,7 @@ export interface Filters {
 }
 
 export const PRICE_BOUNDS: [number, number] = [2000, 8000];
+export type PriceBounds = [number, number];
 
 export const DEFAULT_FILTERS: Filters = {
   scenes: [],
@@ -39,20 +40,20 @@ export function flexBucketOf(v: number): string {
   return "stiff";
 }
 
-export function activeFilterCount(f: Filters): number {
+export function activeFilterCount(f: Filters, priceBounds: PriceBounds = PRICE_BOUNDS): number {
   let n = 0;
   n += f.scenes.length ? 1 : 0;
   n += f.profileFamily.length ? 1 : 0;
   n += f.flex.length ? 1 : 0;
   n += f.brands.length ? 1 : 0;
   n += f.years.length ? 1 : 0;
-  if (f.price[0] !== PRICE_BOUNDS[0] || f.price[1] !== PRICE_BOUNDS[1]) n += 1;
+  if (f.price[0] !== priceBounds[0] || f.price[1] !== priceBounds[1]) n += 1;
   return n;
 }
 
-export function applyFilters(items: GearItem[], f: Filters): GearItem[] {
+export function applyFilters(items: GearItem[], f: Filters, priceBounds: PriceBounds = PRICE_BOUNDS): GearItem[] {
   const q = f.q.trim().toLowerCase();
-  const priceFilterActive = f.price[0] !== PRICE_BOUNDS[0] || f.price[1] !== PRICE_BOUNDS[1];
+  const priceFilterActive = f.price[0] !== priceBounds[0] || f.price[1] !== priceBounds[1];
   return items.filter((g) => {
     if (f.scenes.length && !f.scenes.some((s) => g.scenes.includes(s))) return false;
     if (f.profileFamily.length && !f.profileFamily.includes(String(g.specs.profileFamily ?? ""))) return false;
@@ -223,11 +224,13 @@ export function buildCompareMatrix(items: GearItem[], groups: SpecGroup[], dims:
   const meta: [string, string, (g: GearItem) => number | string | null, "higher" | "lower" | null][] = [
     ["概览", "综合指数", (g) => (hasEditorialScores(g) ? g.composite : null), "higher"],
     ["概览", "用户评分", (g) => (hasUserRating(g) ? userRating(g) : null), "higher"],
-    ["概览", "进阶指数", (g) => (hasHardcoreIndex(g) ? g.hardcore : null), "higher"],
-    ["概览", "官方参考价", (g) => (hasPrice(g) ? g.price : null), "lower"],
+    ["概览", "参考价", (g) => (hasPrice(g) ? g.price : null), "lower"],
     ["概览", "年款", (g) => g.year, "higher"],
     ["概览", "评论数", (g) => reviewCount(g), "higher"],
   ];
+  if (items.length > 0 && items.every((item) => item.categorySlug === "snowboard")) {
+    meta.splice(2, 0, ["概览", "进阶指数", (g) => (hasHardcoreIndex(g) ? g.hardcore : null), "higher"]);
+  }
   for (const [group, label, get, dir] of meta) {
     const values = items.map(get);
     const isDiff = numericDiff(values, 0.02);
@@ -280,12 +283,15 @@ export function compareConclusion(items: GearItem[]): string[] {
     });
     return `${label}：${top.brand} ${top.model}`;
   };
-  return [
+  const conclusions = [
     best((g) => g.composite, "综合指数最高", hasEditorialScores),
     best((g) => g.scores.value ?? 0, "性价比最高", (g) => typeof g.scores.value === "number"),
-    best((g) => g.hardcore, "最吃技术", hasHardcoreIndex),
-    best((g) => g.price, "价格最友好", hasPrice, "lower"),
   ];
+  if (items.every((item) => item.categorySlug === "snowboard")) {
+    conclusions.push(best((g) => g.hardcore, "最吃技术", hasHardcoreIndex));
+  }
+  conclusions.push(best((g) => g.price, "价格最友好", hasPrice, "lower"));
+  return conclusions;
 }
 
 // ---------- 榜单 ----------
@@ -307,17 +313,28 @@ export function voteCount(s: Persisted, rankKey: string, gearId: string): number
   return base + extra;
 }
 
-export function rankRows(s: Persisted, rankKey: string): RankRow[] {
-  const cat = SNOWBOARD.rankCategories.find((c) => c.key === rankKey) ?? SNOWBOARD.rankCategories[0];
-  let pool = GEAR;
-  if (cat?.scenes?.length) pool = GEAR.filter((g) => g.scenes.some((scene) => cat.scenes!.includes(scene)));
-  if (rankKey === "value") pool = [...pool].sort((a, b) => a.price - b.price).slice(0, 10);
+export function rankRows(
+  s: Persisted,
+  rankKey: string,
+  categorySlug = "snowboard",
+  sourcePool: GearItem[] = GEAR,
+): RankRow[] {
+  const category = getCategory(categorySlug) ?? SNOWBOARD;
+  const cat = category.rankCategories.find((c) => c.key === rankKey) ?? category.rankCategories[0];
+  let pool = sourcePool.filter((g) => g.categorySlug === categorySlug);
+  if (cat?.scenes?.length) pool = pool.filter((g) => g.scenes.some((scene) => cat.scenes!.includes(scene)));
+  if (rankKey === "value") pool = pool.filter(hasPrice).sort((a, b) => a.price - b.price).slice(0, 10);
 
   const withData = pool.map((g) => {
-    const ratingPart = (g.composite / 100) * 55;
-    const heatPart = (g.heat / 10000) * 20;
-    const hardPart = rankKey === "beginner" ? ((100 - g.hardcore) / 100) * 15 : (g.hardcore / 100) * 15;
-    const userPart = (userRating(g) / 5) * 10;
+    const isSnowboard = categorySlug === "snowboard";
+    const ratingPart = hasEditorialScores(g) ? (g.composite / 100) * (isSnowboard ? 55 : 65) : 0;
+    const heatPart = (g.heat / 10000) * (isSnowboard ? 20 : 15);
+    const hardPart = isSnowboard
+      ? rankKey === "beginner"
+        ? ((100 - g.hardcore) / 100) * 15
+        : (g.hardcore / 100) * 15
+      : 0;
+    const userPart = hasUserRating(g) ? (userRating(g) / 5) * (isSnowboard ? 10 : 20) : 0;
     return {
       gear: g,
       dataScore: Math.round((ratingPart + heatPart + hardPart + userPart) * 10) / 10,

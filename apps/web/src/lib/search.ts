@@ -4,6 +4,7 @@ import {
   type SearchSort,
 } from '@youpu/schema';
 import { GEAR } from '../data/boards';
+import { getCategory } from '../data/categories';
 import type { GearItem } from '../types';
 import { API_BASE } from './api';
 import { mapProductListItem } from './content';
@@ -85,7 +86,20 @@ export function searchLocalGear(pool: GearItem[], params: SearchRequest): Search
   const q = params.q.trim().toLocaleLowerCase();
   const priceFilterActive = params.priceMin !== undefined || params.priceMax !== undefined;
   const filtered = pool.filter((item) => {
-    const text = `${item.brand} ${item.model} ${item.year}`.toLocaleLowerCase();
+    const categoryName = getCategory(item.categorySlug)?.name ?? item.categorySlug;
+    const text = [
+      item.brand,
+      item.model,
+      item.year,
+      categoryName,
+      item.analysis.verdict,
+      ...item.scenes,
+      ...item.whoFor,
+      ...Object.values(item.specs),
+    ]
+      .filter((value) => value !== null && value !== undefined)
+      .join(' ')
+      .toLocaleLowerCase();
     if (q && !text.includes(q)) return false;
     if (params.category && item.categorySlug !== params.category) return false;
     if (params.brand && slugify(item.brand) !== params.brand && item.brand !== params.brand) return false;
@@ -140,7 +154,11 @@ function localFacets(items: GearItem[]): SearchFacet {
   for (const item of items) {
     const category = categories.get(item.categorySlug);
     if (category) category.count += 1;
-    else categories.set(item.categorySlug, { slug: item.categorySlug, name: item.categorySlug, count: 1 });
+    else categories.set(item.categorySlug, {
+      slug: item.categorySlug,
+      name: getCategory(item.categorySlug)?.name ?? item.categorySlug,
+      count: 1,
+    });
 
     const brandSlug = slugify(item.brand);
     const brand = brands.get(brandSlug);

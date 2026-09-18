@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GearDetailPage from "./gear-client";
 import { GEAR } from "@/data/boards";
 import { getCategory } from "@/data/categories";
-import { getProductDetail } from "@/lib/content";
+import { getCategoryProducts, getProductDetail } from "@/lib/content";
 import { breadcrumbJsonLd, gearMetadata, jsonLdProps, productJsonLd } from "@/lib/seo";
 
 /** 详情页是长尾流量的主力，静态预渲染全部在档档案 */
@@ -22,6 +22,10 @@ export default async function Page({ params }: { params: { id: string } }) {
     // 交给客户端组件渲染「档案不存在」空态（数据源切换后这里会换成 notFound()）
     return <GearDetailPage id={params.id} />;
   }
+  const relatedGear =
+    gear.categorySlug === "snowboard"
+      ? undefined
+      : await getCategoryProducts(gear.categorySlug);
   const category = getCategory(gear.categorySlug);
   return (
     <>
@@ -35,7 +39,7 @@ export default async function Page({ params }: { params: { id: string } }) {
           ]),
         )}
       />
-      <GearDetailPage id={gear.id} initialGear={gear} />
+      <GearDetailPage id={gear.id} initialGear={gear} relatedGear={relatedGear} />
     </>
   );
 }

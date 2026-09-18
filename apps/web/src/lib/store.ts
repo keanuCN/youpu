@@ -368,8 +368,12 @@ export function addToDock(gearId: string, categorySlug: string): DockResult {
   const list = state.dock[key] ?? [];
   if (list.includes(gearId)) return { ok: false, reason: "dup" };
   if (list.length >= DOCK_MAX) return { ok: false, reason: "full" };
+  const hasOtherCategory = list.some((id) => {
+    const existing = GEAR.find((gear) => gear.id === id);
+    return existing ? existing.categorySlug !== categorySlug : false;
+  });
+  if (hasOtherCategory) return { ok: false, reason: "cross" };
   emit({ dock: { ...state.dock, [key]: [...list, gearId] } });
-  void categorySlug;
   return { ok: true };
 }
 

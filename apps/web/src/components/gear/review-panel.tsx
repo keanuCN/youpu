@@ -22,6 +22,7 @@ import { helpfulOf, iHelpful, repliesOf, topLevelReviews } from "@/lib/domain";
 import { timeAgo } from "@/lib/format";
 import { addReview, deleteReview, pushNotification, toggleHelpful, useCurrentUser, usePersisted, type Persisted } from "@/lib/store";
 import { track } from "@/lib/track";
+import { hasUserRating } from "@/lib/gear-state";
 import { cn } from "@/lib/utils";
 import type { GearItem, Review, ReviewerMeta } from "@/types";
 import { useAuthGate } from "@/store/app-shell";
@@ -31,6 +32,7 @@ const LEVELS = ["新手", "中级", "进阶", "高阶"];
 
 type ReviewCopy = {
   experienceLabel: string;
+  levelLabel: string;
   summary: string;
   placeLabel: string;
   placePlaceholder: string;
@@ -41,6 +43,7 @@ type ReviewCopy = {
 
 const DEFAULT_REVIEW_COPY: ReviewCopy = {
   experienceLabel: "使用年限",
+  levelLabel: "水平",
   summary: "使用年限 / 水平 / 场地",
   placeLabel: "常用场地",
   placePlaceholder: "如 城市公园 / 湖库",
@@ -52,7 +55,8 @@ const DEFAULT_REVIEW_COPY: ReviewCopy = {
 const REVIEW_COPY: Record<string, ReviewCopy> = {
   snowboard: {
     experienceLabel: "雪龄",
-    summary: "雪龄 / 体重 / 场地",
+    levelLabel: "滑行水平",
+    summary: "雪龄 / 体重 / 水平 / 场地",
     placeLabel: "常滑场地",
     placePlaceholder: "如 崇礼 · 万龙",
     contentPlaceholder: "在什么雪况、什么速度、滑了几天？它哪里超出预期，哪里让你后悔？",
@@ -61,7 +65,8 @@ const REVIEW_COPY: Record<string, ReviewCopy> = {
   },
   "badminton-racket": {
     experienceLabel: "球龄",
-    summary: "球龄 / 体重 / 场馆",
+    levelLabel: "打法水平",
+    summary: "球龄 / 体重 / 打法 / 场馆",
     placeLabel: "常打场馆",
     placePlaceholder: "如 北京 · 室内木地板",
     contentPlaceholder: "在什么场馆、采用什么打法、打了多久？它哪里超出预期，哪里让你后悔？",
@@ -70,6 +75,7 @@ const REVIEW_COPY: Record<string, ReviewCopy> = {
   },
   "casting-rod": {
     experienceLabel: "钓龄",
+    levelLabel: "钓法水平",
     summary: "钓龄 / 水域 / 钓法",
     placeLabel: "常钓水域",
     placePlaceholder: "如 湖库 · 溪流",
@@ -106,14 +112,15 @@ export function ReviewPanel({ gear }: { gear: GearItem }) {
   const list = useMemo(() => topLevelReviews(viewState, gear.id, mode), [viewState, gear.id, mode]);
   const total = reviewCount(gear);
   const avg = userRating(gear);
+  const ratingReady = hasUserRating(gear) || remoteRatings.length > 0;
 
   return (
     <section className="space-y-8">
       <div className="grid gap-8 border border-border p-5 lg:grid-cols-[240px_1fr]">
         <div>
-          <p className="mono-data text-[52px] leading-none tnum">{avg.toFixed(1)}</p>
-          <Stars value={avg} size={14} className="mt-2" />
-          <p className="mono-label mt-2">{total} 条实测评分</p>
+          <p className="mono-data text-[52px] leading-none tnum">{ratingReady ? avg.toFixed(1) : "—"}</p>
+          {ratingReady ? <Stars value={avg} size={14} className="mt-2" /> : <p className="mono-label mt-2">暂无评分</p>}
+          <p className="mono-label mt-2">{ratingReady ? `${total} 条实测评分` : "等待首批实测"}</p>
         </div>
         <div className="space-y-1.5">
           {[5, 4, 3, 2, 1].map((star) => {
@@ -499,7 +506,7 @@ function ReviewForm({ gear }: { gear: GearItem }) {
               />
             </MetaField>
           ) : null}
-          <MetaField label="水平">
+            <MetaField label={copy.levelLabel}>
             <select
               value={meta.level}
               onChange={(e) => setMeta((m) => ({ ...m, level: e.target.value }))}

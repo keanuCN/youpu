@@ -17,7 +17,7 @@ import { SectionHead } from "@/components/layout/section-head";
 import { reviewCount, userRating } from "@/data/boards";
 import { getCategory } from "@/data/categories";
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear } from "@/lib/api";
-import { gearById, pricePosition, sameScenePeers } from "@/lib/domain";
+import { formatSpecValue, gearById, pricePosition, sameScenePeers } from "@/lib/domain";
 import { fmtCompact, fmtPrice } from "@/lib/format";
 import { hasEditorialScores, hasHardcoreIndex, hasPrice, hasUserRating } from "@/lib/gear-state";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
@@ -26,7 +26,15 @@ import { cn } from "@/lib/utils";
 import { useAuthGate } from "@/store/app-shell";
 import type { GearItem } from "@/types";
 
-export default function GearDetailPage({ id, initialGear }: { id: string; initialGear?: GearItem }) {
+export default function GearDetailPage({
+  id,
+  initialGear,
+  relatedGear,
+}: {
+  id: string;
+  initialGear?: GearItem;
+  relatedGear?: GearItem[];
+}) {
   const gear = initialGear ?? gearById(id);
 
   useEffect(() => {
@@ -49,7 +57,12 @@ export default function GearDetailPage({ id, initialGear }: { id: string; initia
   const category = getCategory(gear.categorySlug);
   const dims = category?.scoreDims ?? [];
   const groups = category?.specTemplate ?? [];
-  const peers = sameScenePeers(gear, 4);
+  const peers = relatedGear
+    ? relatedGear
+        .filter((item) => item.id !== gear.id && item.scenes.some((scene) => gear.scenes.includes(scene)))
+        .sort((a, b) => b.composite - a.composite)
+        .slice(0, 4)
+    : sameScenePeers(gear, 4);
 
   return (
     <div className="mx-auto max-w-[1400px] px-5 py-8 sm:px-8 sm:py-10">
@@ -68,7 +81,11 @@ export default function GearDetailPage({ id, initialGear }: { id: string; initia
       </nav>
 
       <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
-        <Gallery shots={gear.gallery} alt={`${gear.brand} ${gear.model}`} />
+        <Gallery
+          shots={gear.gallery}
+          alt={`${gear.brand} ${gear.model}`}
+          fit={gear.categorySlug === "snowboard" ? "cover" : "contain"}
+        />
         <InfoCard gear={gear} />
       </div>
 
@@ -83,7 +100,7 @@ export default function GearDetailPage({ id, initialGear }: { id: string; initia
           <SpecTable gear={gear} groups={groups} />
         </div>
         <div>
-          <SectionHead index="03" title="六维评分" titleEn="Score Radar" />
+          <SectionHead index="03" title={`${dims.length || 0}维评分`} titleEn="Score Radar" />
           {hasEditorialScores(gear) ? (
             <div className="border border-border p-4">
               <RadarChart
@@ -154,7 +171,8 @@ function InfoCard({ gear }: { gear: GearItem }) {
   const priceReady = hasPrice(gear);
   const editorialReady = hasEditorialScores(gear);
   const ratingReady = hasUserRating(gear);
-  const hardcoreReady = hasHardcoreIndex(gear);
+  const hardcoreReady = gear.categorySlug === "snowboard" && hasHardcoreIndex(gear);
+  const categorySignal = categorySignalFor(gear);
 
   const onDock = () => {
     if (inDock) {
@@ -190,17 +208,17 @@ function InfoCard({ gear }: { gear: GearItem }) {
           sub={ratingReady ? <Stars value={userRating(gear)} size={11} className="mt-1" /> : <PendingValue label="暂无实测" className="mt-1 block" />}
         />
         <Stat label="实测条数" value={String(reviewCount(gear))} sub={<span className="mono-label mt-1 block">FIELD REPORTS</span>} />
+        <Stat label={categorySignal.label} value={categorySignal.value} sub={<span className="mono-label mt-1 block">{categorySignal.sub}</span>} />
         <Stat
-          label="进阶指数"
-          value={hardcoreReady ? String(gear.hardcore) : "—"}
-          sub={<span className="mono-label mt-1 block">{hardcoreReady ? "越高越吃技术" : "参数待补全"}</span>}
+          label="浏览热度"
+          value={gear.heat > 0 ? fmtCompact(gear.heat) : "—"}
+          sub={<span className="mono-label mt-1 block">{gear.heat > 0 ? "近 90 天" : "数据待补"}</span>}
         />
-        <Stat label="浏览热度" value={fmtCompact(gear.heat)} sub={<span className="mono-label mt-1 block">近 90 天</span>} />
       </div>
 
       <div className="border-b border-border py-5">
         <div className="flex items-baseline justify-between">
-          <p className="mono-label">官方参考价</p>
+          <p className="mono-label">参考价</p>
           <p className="mono-data text-[24px] leading-none tnum">{priceReady ? fmtPrice(gear.price) : <PendingValue label="价格待补" />}</p>
         </div>
         {priceReady ? (
@@ -224,22 +242,14 @@ function InfoCard({ gear }: { gear: GearItem }) {
         )}
       </div>
 
-      <div className="grid gap-5 border-b border-border py-5 sm:grid-cols-2">
-        <div>
-          <p className="mono-label mb-2.5">硬度 / FLEX</p>
-          <FlexBar value={gear.flexValue} />
-          <p className="mono-label mt-2 text-foreground/70">{gear.flexLabel}</p>
-        </div>
-        <div>
-          <p className="mono-label mb-2.5">适用场景 / SCENES</p>
-          <SceneTags scenes={gear.scenes} />
-        </div>
-      </div>
+      <DetailSignals gear={gear} />
 
-      <div className="border-b border-border py-5">
-        <p className="mono-label mb-3">适合谁 / WHO IT&apos;S FOR</p>
-        <WhoForTags tags={gear.whoFor} />
-      </div>
+      {gear.whoFor.length ? (
+        <div className="border-b border-border py-5">
+          <p className="mono-label mb-3">适合谁 / WHO IT&apos;S FOR</p>
+          <WhoForTags tags={gear.whoFor} />
+        </div>
+      ) : null}
 
       <div className="mt-6 flex flex-wrap gap-2.5">
         <button
@@ -315,6 +325,85 @@ function Stat({ label, value, sub }: { label: string; value: string; sub?: React
       <p className="mono-label">{label}</p>
       <p className="mono-data mt-1.5 text-[22px] leading-none tnum">{value}</p>
       {sub}
+    </div>
+  );
+}
+
+function categorySignalFor(gear: GearItem): { label: string; value: string; sub: string } {
+  if (gear.categorySlug === "snowboard") {
+    return {
+      label: "进阶指数",
+      value: hasHardcoreIndex(gear) ? String(gear.hardcore) : "—",
+      sub: hasHardcoreIndex(gear) ? "越高越吃技术" : "参数待补全",
+    };
+  }
+
+  if (gear.categorySlug === "badminton-racket") {
+    return {
+      label: "平衡点",
+      value: formatSpecValue(gear.specs.balance),
+      sub: "拍头 / 均衡 / 拍柄",
+    };
+  }
+
+  return {
+    label: "调性",
+    value: formatSpecValue(gear.specs.power),
+    sub: "竿胚负载方向",
+  };
+}
+
+function DetailSignals({ gear }: { gear: GearItem }) {
+  if (gear.categorySlug === "snowboard") {
+    return (
+      <div className="grid gap-5 border-b border-border py-5 sm:grid-cols-2">
+        <div>
+          <p className="mono-label mb-2.5">硬度 / FLEX</p>
+          <FlexBar value={gear.flexValue} />
+          <p className="mono-label mt-2 text-foreground/70">{gear.flexLabel}</p>
+        </div>
+        <div>
+          <p className="mono-label mb-2.5">适用场景 / SCENES</p>
+          <SceneTags scenes={gear.scenes} />
+        </div>
+      </div>
+    );
+  }
+
+  const fields =
+    gear.categorySlug === "badminton-racket"
+      ? [
+          ["重量等级", gear.specs.weightClass],
+          ["平衡点", gear.specs.balance],
+          ["中杆硬度", gear.specs.flex],
+          ["最高磅数", gear.specs.maxTension ? `${gear.specs.maxTension} lbs` : null],
+        ]
+      : [
+          ["调性强度", gear.specs.power],
+          ["轮座类型", gear.specs.rodType],
+          ["路亚重量", gear.specs.lureWeight],
+          ["适用钓线", gear.specs.lineWeight],
+        ];
+
+  return (
+    <div className="border-b border-border py-5">
+      <div className="grid gap-5 sm:grid-cols-2">
+        <div>
+          <p className="mono-label mb-2.5">关键参数 / KEY SPECS</p>
+          <dl className="grid grid-cols-2 gap-x-4 border-t border-border">
+            {fields.map(([label, value]) => (
+              <div key={label} className="min-w-0 border-b border-border py-2">
+                <dt className="mono-label">{label}</dt>
+                <dd className="mt-1 truncate text-[13px]">{value ? formatSpecValue(value) : "待补充"}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+        <div>
+          <p className="mono-label mb-2.5">适用场景 / SCENES</p>
+          <SceneTags scenes={gear.scenes} />
+        </div>
+      </div>
     </div>
   );
 }

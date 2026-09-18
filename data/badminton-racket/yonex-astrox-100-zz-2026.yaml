@@ -1,11 +1,18 @@
-# 官方规格样例：待补中国区价格、图片与有谱编辑评分
+# 价格为公开官方参考价折算的本地演示区间，非中国区最终售价；评分为有谱编辑首版估分，待实测校正。
 slug: yonex-astrox-100-zz-2026
 category: badminton-racket
 brand: yonex
 model: ASTROX 100 ZZ
 year: 2026
 title: YONEX ASTROX 100 ZZ 2026
+one_liner: 头重、特硬、连续重杀取向鲜明，适合主动发力的进阶选手；被动防守和轻松借力不是它的强项。
+price:
+  min: 1799
+  max: 2199
+  currency: CNY
 specs:
+  balance: head-heavy
+  maxTension: 29
   weightClass: "3U/4U"
   flex: extra-stiff
   frameMaterial: HM Graphite + Namd + Tungsten + Black Micro Core
@@ -14,7 +21,22 @@ specs:
     - singles
     - attack
   playerLevel: advanced
+  lengthNote: 加长 10mm
+  stringPattern: 3U 21-29 lbs；4U 20-28 lbs
 data_source:
   kind: official
   origin_url: https://www.yonex.com/news/astrox-100-the-next-level-of-power-and-versatility/
+editorial_scores:
+  power: 9.4
+  control: 8
+  speed: 7.2
+  defense: 7.2
+  forgiveness: 5.4
+  value: 7.2
+images:
+  - url: "https://us.yonex.com/cdn/shop/files/astrox100zz_kurenai.png?v=1769128443&width=1946"
+    kind: face
+    alt: YONEX ASTROX 100 ZZ KURENAI 官方产品图
+    source: 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 status: published

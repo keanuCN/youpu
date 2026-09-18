@@ -1,32 +1,43 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight, Compass, RotateCcw } from "lucide-react";
 import { GearRow } from "@/components/gear/gear-card";
 import { ScoreMark } from "@/components/gear/primitives";
 import { PageHead } from "@/components/layout/section-head";
 import { Button } from "@/components/ui/button";
-import { SNOWBOARD } from "@/data/categories";
+import { CATEGORIES, SNOWBOARD, getCategory } from "@/data/categories";
 import { cloudRecommendations, hasCloudSession } from "@/lib/api";
 import { recommend, type QuizAnswers, type Recommendation } from "@/lib/domain";
 import { saveQuiz } from "@/lib/store";
 import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
 
-const QUESTIONS = SNOWBOARD.quizTemplate;
+const LIVE_CATEGORIES = Object.values(CATEGORIES).filter((category) => category.status === "live");
 
 export default function QuizPage() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const requestedCategory = searchParams.get("category");
+  const categorySlug = getCategory(requestedCategory ?? "")?.status === "live" ? requestedCategory! : "snowboard";
+  const category = getCategory(categorySlug) ?? SNOWBOARD;
+  const questions = category.quizTemplate;
+  const supported = questions.length > 0;
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<QuizAnswers>({});
   const [result, setResult] = useState<Recommendation[] | null>(null);
 
   useEffect(() => {
-    track("recommend_start", { survey: {} });
-  }, []);
+    setStep(0);
+    setAnswers({});
+    setResult(null);
+    track("recommend_start", { survey: { category: categorySlug } });
+  }, [categorySlug]);
 
-  const q = QUESTIONS[step];
-  const progress = Math.round((step / QUESTIONS.length) * 100);
+  const q = questions[step];
+  const progress = questions.length ? Math.round((step / questions.length) * 100) : 0;
 
   const pick = (value: string) => {
     if (!q) return;
@@ -42,7 +53,7 @@ export default function QuizPage() {
     next = { ...answers, [q.key]: value } as QuizAnswers;
     setAnswers(next);
 
-    if (step < QUESTIONS.length - 1) {
+    if (step < questions.length - 1) {
       window.setTimeout(() => setStep((s) => s + 1), 180);
       return;
     }
@@ -58,12 +69,12 @@ export default function QuizPage() {
       fallback: recs.some((r) => r.fallback),
     });
     saveQuiz({
-      categorySlug: "snowboard",
+      categorySlug,
       answers: a as Record<string, string | string[]>,
       picks: recs.map((r) => ({ gearId: r.gear.id, match: r.match, reasons: r.reasons, fallback: r.fallback })),
     });
     if (hasCloudSession()) {
-      void cloudRecommendations("snowboard", a as Record<string, unknown>).catch(() => undefined);
+      void cloudRecommendations(categorySlug, a as Record<string, unknown>).catch(() => undefined);
     }
   };
 
@@ -78,6 +89,38 @@ export default function QuizPage() {
     const cur = answers[q.key as keyof QuizAnswers];
     return Array.isArray(cur) ? cur.includes(value) : cur === value;
   };
+
+  const selectCategory = (slug: string) => {
+    router.replace(slug === "snowboard" ? "/quiz" : `/quiz?category=${encodeURIComponent(slug)}`);
+  };
+
+  if (!supported) {
+    return (
+      <div className="mx-auto max-w-[820px] px-5 py-10 sm:px-8">
+        <PageHead
+          kicker="RECOMMENDATION QUIZ"
+          title={`${category.name}选装备问卷`}
+          titleEn="Find Your Gear"
+          desc="问卷需要先建立对应品类的评分维度和推荐规则，当前不使用单板问题套用到其他装备。"
+        />
+        <CategorySwitch categorySlug={categorySlug} onChange={selectCategory} />
+        <div className="mt-10 border border-dashed border-border py-20 text-center">
+          <p className="text-[15px] font-medium">{category.name}问卷待补充</p>
+          <p className="mx-auto mt-2 max-w-md text-[13px] leading-relaxed text-muted-foreground">
+            当前已有单板问卷。{category.name}的使用场景、关键参数和推荐权重整理完成后，再开放独立问卷。
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-2">
+            <Link href={`/browse/${categorySlug}`} className="mono-label bg-foreground px-5 py-3 text-background hover:bg-primary">
+              先看{category.name}档案
+            </Link>
+            <button type="button" onClick={() => selectCategory("snowboard")} className="mono-label border border-foreground px-5 py-3 hover:bg-foreground hover:text-background">
+              做单板问卷
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (result) {
     return (
@@ -158,7 +201,7 @@ export default function QuizPage() {
         <section className="mt-12">
           <p className="mono-label mb-3">你的作答 / ANSWERS</p>
           <div className="grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
-            {QUESTIONS.map((qq) => {
+            {questions.map((qq) => {
               const v = answers[qq.key as keyof QuizAnswers];
               const label = Array.isArray(v)
                 ? v.map((x) => qq.options.find((o) => o.value === x)?.label ?? x).join("、")
@@ -192,22 +235,24 @@ export default function QuizPage() {
     <div className="mx-auto max-w-[820px] px-5 py-10 sm:px-8">
       <PageHead
         kicker="RECOMMENDATION QUIZ"
-        title="60 秒选装备问卷"
+        title={`${category.name}选装备问卷`}
         titleEn="Find Your Gear"
-        desc={`${QUESTIONS.length} 个问题，不收集任何个人信息。`}
+        desc={`${questions.length} 个问题，不收集任何个人信息。`}
       />
+
+      <CategorySwitch categorySlug={categorySlug} onChange={selectCategory} />
 
       <div className="mt-10">
         <div className="flex items-center justify-between">
           <p className="mono-label">
-            问题 {String(step + 1).padStart(2, "0")} / {String(QUESTIONS.length).padStart(2, "0")}
+            问题 {String(step + 1).padStart(2, "0")} / {String(questions.length).padStart(2, "0")}
           </p>
           <p className="mono-data text-[12px] text-muted-foreground tnum">{progress}%</p>
         </div>
         <div className="mt-2 h-[3px] bg-border">
           <span
             className="block h-full bg-foreground transition-all duration-500"
-            style={{ width: `${((step + 1) / QUESTIONS.length) * 100}%` }}
+            style={{ width: `${((step + 1) / questions.length) * 100}%` }}
           />
         </div>
       </div>
@@ -261,11 +306,11 @@ export default function QuizPage() {
           <div className="flex items-center gap-2">
             {q?.multi ? (
               <Button
-                onClick={() => (step < QUESTIONS.length - 1 ? setStep((s) => s + 1) : finish(answers))}
+                onClick={() => (step < questions.length - 1 ? setStep((s) => s + 1) : finish(answers))}
                 disabled={((answers[q.key as keyof QuizAnswers] as string[] | undefined) ?? []).length === 0}
                 className="mono-label h-9 gap-1.5 rounded-none bg-foreground px-5 text-[12px] hover:bg-primary disabled:opacity-30"
               >
-                {step < QUESTIONS.length - 1 ? "下一题" : "看结果"} <ArrowRight size={13} strokeWidth={1.6} />
+                {step < questions.length - 1 ? "下一题" : "看结果"} <ArrowRight size={13} strokeWidth={1.6} />
               </Button>
             ) : (
               <span className="mono-label text-muted-foreground">点选一项自动进入下一题</span>
@@ -275,7 +320,7 @@ export default function QuizPage() {
       </div>
 
       <div className="mt-6 flex flex-wrap gap-1.5">
-        {QUESTIONS.map((qq, i) => (
+        {questions.map((qq, i) => (
           <button
             key={qq.key}
             type="button"
@@ -301,6 +346,27 @@ export default function QuizPage() {
           去登录
         </Link>
       </p>
+    </div>
+  );
+}
+
+function CategorySwitch({ categorySlug, onChange }: { categorySlug: string; onChange: (slug: string) => void }) {
+  return (
+    <div className="thin-scroll mt-8 flex items-center gap-1.5 overflow-x-auto border-b border-foreground pb-3">
+      <span className="mono-label mr-1 shrink-0 text-muted-foreground">品类</span>
+      {LIVE_CATEGORIES.map((category) => (
+        <button
+          key={category.slug}
+          type="button"
+          onClick={() => onChange(category.slug)}
+          className={cn(
+            "mono-label shrink-0 border px-3.5 py-2 transition-colors",
+            categorySlug === category.slug ? "border-foreground bg-foreground text-background" : "border-border hover:border-foreground",
+          )}
+        >
+          {category.name}
+        </button>
+      ))}
     </div>
   );
 }
