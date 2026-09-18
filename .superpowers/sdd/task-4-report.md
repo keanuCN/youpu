@@ -130,7 +130,7 @@ No product mutation was needed.
 - One corrected 10-second-bounded live image proxy request.
 - Focused Node test run: 14/14 passing.
 
-No commit was created.
+No source or data commit was created during the acceptance run; the later report-only provenance commit is `f5e8892`.
 
 ## Important Task 4 evidence-gap check
 
@@ -140,4 +140,4 @@ Exact command run from `apps/web` (child process only; 1.15 seconds):
 cmd.exe /d /c "set NEXT_PUBLIC_CONTENT_SOURCE=api&&set NEXT_PUBLIC_API_BASE=http://127.0.0.1:3999&&pnpm.cmd exec tsx -e `"import React from 'react'; globalThis.React=React; import BrowsePage from './src/app/browse/[slug]/page'; globalThis.fetch=async()=>{throw new Error('simulated API outage')}; (async()=>{ const timer=setTimeout(()=>{throw new Error('check timeout')},14000); try { const page:any=await BrowsePage({params:{slug:'snowboard'}}); const pool=page?.props?.children?.props?.initialPool; if(!Array.isArray(pool)||pool.length===0) throw new Error('initialPool must be a non-empty array'); const marker=pool.find((item:any)=>JSON.stringify(item).includes('Burton')||JSON.stringify(item).includes('Custom Camber')); if(!marker) throw new Error('known local product marker missing'); console.log(JSON.stringify({fallbackItemCount:pool.length,marker:marker.slug||marker.model||marker.brand})); } finally { clearTimeout(timer); } })().catch((error)=>{console.error(error);process.exitCode=1});`""
 ```
 
-Result: `{"fallbackItemCount":15,"marker":"Custom Camber"}`; exit code 0. The real `BrowsePage` rendered its Suspense child with a non-empty local fallback pool after the simulated API outage. Cleanup: no source, service, or database was changed; the ignored report was appended only, and no commit was created.
+Result: `{"fallbackItemCount":15,"marker":"Custom Camber"}`; exit code 0. The real `BrowsePage` rendered its Suspense child with a non-empty local fallback pool after the simulated API outage. Cleanup: no source, service, or database was changed; the report was appended only during acceptance, then committed separately as report-only commit `f5e8892`.
