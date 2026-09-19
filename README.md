@@ -74,7 +74,7 @@ cp .env.example .env                                      # compose 变量（默
 cp apps/api/.env.example apps/api/.env
 pnpm infra:up      # 起 PG + Redis（默认只这两个）；需要 ES/Umami 用 pnpm infra:up:full
 pnpm db:migrate    # 建表（22 张表 + 触发器 + event 按月分区）
-pnpm seed          # 导入类目 / 品牌 / 当前 18 款单板 seed
+pnpm seed          # 导入类目 / 品牌 / 当前 50 条产品 seed（40 单板 + 5 羽毛球拍 + 5 路亚竿）
 pnpm dev           # web:3000 + api:3001
 pnpm dev:admin     # 另开终端启动后台：3002
 ```
