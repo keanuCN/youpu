@@ -16,7 +16,7 @@ const envSchema = z.object({
   ADMIN_TOKEN: z.string().min(16).optional(),
   ADMIN_ROLE: z.enum(['editor', 'admin']).default('admin'),
   /** 当前单令牌后台对应的审计操作人账号；本地未配置时自动使用本地审计账号。 */
-  ADMIN_ACTOR_ID: z.string().uuid().optional(),
+  ADMIN_ACTOR_ID: z.preprocess((value) => (value === '' ? undefined : value), z.string().uuid().optional()),
   /** 本地 M3 访问令牌签名密钥；上线前必须替换为独立随机密钥。 */
   AUTH_SECRET: z.string().min(16).default('youpu-local-auth-secret-change-me'),
   /** 邮箱验证码投递。开发环境未配置时返回 devCode，生产环境会明确报错。 */
