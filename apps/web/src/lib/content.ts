@@ -254,8 +254,9 @@ export async function getCompareProducts(ids: string[], options: ContentOptions 
       productCompareResponseSchema,
       options.fetcher ?? fetch,
     );
-    const mapped = response.items.map((item) => mapProductDetail(item, findLocalGear(item)));
-    const bySlug = new Map(mapped.map((item) => [slugForProduct(item), item]));
+    const bySlug = new Map(
+      response.items.map((item) => [item.slug, mapProductDetail(item, findLocalGear(item))]),
+    );
     return refs
       .map((ref, index) => bySlug.get(ref) ?? localItems.find((item) => slugForProduct(item) === ref) ?? getGear(ids[index]!))
       .filter((gear): gear is GearItem => !!gear);

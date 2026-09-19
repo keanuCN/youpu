@@ -452,6 +452,17 @@ function auditActionLabel(value: string): string {
   return auditActionLabels[value] ?? value;
 }
 
+const moderationTargetLabels: Record<string, string> = {
+  rating: '评论',
+  reply: '回复',
+  product: '产品',
+  account: '账号',
+};
+
+function moderationTargetLabel(value: string): string {
+  return moderationTargetLabels[value] ?? '其他对象';
+}
+
 const qualityFieldLabels: Record<string, string> = {
   image: '缺图片',
   price: '缺价格',
@@ -1281,7 +1292,7 @@ export function AdminApp() {
         <div className="analytics-grid analytics-grid-secondary">
           <section className="data-panel table-panel">
             <PanelHeader eyebrow="举报队列" title="举报记录" meta={`${reports.length} 条已加载`} />
-            {reports.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>目标</th><th>原因</th><th>举报人</th><th>状态</th><th>时间</th><th /></tr></thead><tbody>{reports.map((report) => <tr key={report.id}><td><strong>{report.targetType}</strong><small className="table-sub">{report.targetId}</small></td><td><strong>{report.reason}</strong>{report.note ? <small className="table-sub">{report.note}</small> : null}</td><td>{report.reporter.nickname}<small className="table-sub">{report.reporter.email || report.reporter.id}</small></td><td><StatusBadge status={report.status} /></td><td><time className="table-sub">{formatDate(report.createdAt)}</time></td><td>{report.status === 'open' ? <div className="inline-actions"><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'resolved')}>处理</button><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'dismissed')}>驳回</button></div> : <button className="text-button" onClick={() => void updateReportStatus(report.id, 'open')}>重新打开</button>}</td></tr>)}</tbody></table></div> : <EmptyState title="暂无举报" detail="用户举报内容后会出现在这里。" />}
+            {reports.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>目标</th><th>原因</th><th>举报人</th><th>状态</th><th>时间</th><th /></tr></thead><tbody>{reports.map((report) => <tr key={report.id}><td><strong>{moderationTargetLabel(report.targetType)}</strong><small className="table-sub">{report.targetId}</small></td><td><strong>{report.reason}</strong>{report.note ? <small className="table-sub">{report.note}</small> : null}</td><td>{report.reporter.nickname}<small className="table-sub">{report.reporter.email || report.reporter.id}</small></td><td><StatusBadge status={report.status} /></td><td><time className="table-sub">{formatDate(report.createdAt)}</time></td><td>{report.status === 'open' ? <div className="inline-actions"><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'resolved')}>处理</button><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'dismissed')}>驳回</button></div> : <button className="text-button" onClick={() => void updateReportStatus(report.id, 'open')}>重新打开</button>}</td></tr>)}</tbody></table></div> : <EmptyState title="暂无举报" detail="用户举报内容后会出现在这里。" />}
           </section>
           <section className="data-panel table-panel">
             <PanelHeader eyebrow="评论队列" title="评论状态" meta={`${moderationRatings.length} 条已加载`} />

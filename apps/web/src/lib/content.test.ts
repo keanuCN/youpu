@@ -122,3 +122,30 @@ test("loads API details for the compare dock in request order", async () => {
   assert.equal(result.length, 1);
   assert.equal(result[0]?.model, apiDetail.model);
 });
+
+test("keeps an API product when its canonical slug differs from its display-derived slug", async () => {
+  const canonical = {
+    ...apiDetail,
+    id: "database-uuid-victor",
+    slug: "victor-auraspeed-100x-se-2026",
+    title: "VICTOR AURASPEED 100X SE 2026",
+    model: "AURASPEED 100X SE H",
+    brand: { ...apiDetail.brand, name: "VICTOR", nameCn: "威克多" },
+    category: { slug: "badminton-racket", name: "羽毛球拍" },
+  } satisfies ProductDetail;
+  let receivedUrl = "";
+  const fetcher: typeof fetch = async (input) => {
+    receivedUrl = String(input);
+    return new Response(JSON.stringify({ items: [canonical] }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  };
+
+  const result = await getCompareProducts([canonical.slug], { source: "api", fetcher });
+
+  assert.match(receivedUrl, /victor-auraspeed-100x-se-2026/);
+  assert.equal(result.length, 1);
+  assert.equal(result[0]?.id, canonical.slug);
+  assert.equal(result[0]?.model, canonical.model);
+});
