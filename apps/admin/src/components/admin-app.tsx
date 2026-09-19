@@ -15,6 +15,9 @@ import {
 import { useEffect, useMemo, useState, type FormEvent } from 'react';
 import {
   adminFetch,
+  adminLogin,
+  adminLogout,
+  adminRefresh,
   AdminApiError,
   API_BASE,
   buildProductQuery,
@@ -29,6 +32,13 @@ import {
   type AdminReport,
   type AdminModerationRating,
 } from '../lib/api';
+import {
+  clearAdminSession,
+  loadAdminSession,
+  saveAdminSession,
+  type AdminAccountSession,
+  type AdminSession,
+} from '../lib/admin-session';
 
 type Section = 'dashboard' | 'products' | 'brands' | 'categories' | 'import' | 'analytics' | 'moderation' | 'audit';
 type NoticeKind = 'success' | 'error' | 'info';
@@ -105,8 +115,6 @@ interface CategoryFormState {
   specSchemaText: string;
   recommendConfigText: string;
 }
-
-const STORAGE_KEY = 'youpu.admin.token';
 
 type NavGroup = '工作台' | '资料库' | '内容运营';
 
@@ -514,7 +522,11 @@ function statusText(status: string): string {
 
 export function AdminApp() {
   const [hydrated, setHydrated] = useState(false);
+  const [session, setSession] = useState<AdminSession | null>(null);
   const [token, setToken] = useState('');
+  const [loginMode, setLoginMode] = useState<'account' | 'legacy-token'>('account');
+  const [loginEmail, setLoginEmail] = useState('');
+  const [loginPassword, setLoginPassword] = useState('');
   const [loginToken, setLoginToken] = useState('');
   const [sessionState, setSessionState] = useState<'checking' | 'signed-out' | 'signed-in'>('checking');
   const [role, setRole] = useState('');
@@ -540,6 +552,40 @@ export function AdminApp() {
   const [brandForm, setBrandForm] = useState<BrandFormState | null>(null);
   const [categoryForm, setCategoryForm] = useState<CategoryFormState | null>(null);
   const hasOpenEditor = productForm !== null || brandForm !== null || categoryForm !== null;
+  let refreshPromise: Promise<AdminAccountSession> | null = null;
+
+  async function refreshAccountSession(currentSession: AdminAccountSession): Promise<AdminAccountSession> {
+    if (!refreshPromise) {
+      refreshPromise = adminRefresh(currentSession.refreshToken)
+        .then((response) => {
+          const nextSession: AdminAccountSession = { kind: 'account', ...response };
+          saveAdminSession(window.localStorage, nextSession);
+          setSession(nextSession);
+          setToken(nextSession.accessToken);
+          setRole(nextSession.account.role);
+          return nextSession;
+        })
+        .finally(() => {
+          refreshPromise = null;
+        });
+    }
+    return refreshPromise;
+  }
+
+  async function callAdmin<T>(path: string, options: Parameters<typeof adminFetch>[2] = {}): Promise<T> {
+    const currentSession = session;
+    if (!currentSession) throw new AdminApiError('后台会话不存在', 401);
+    const currentToken = currentSession.kind === 'account' ? currentSession.accessToken : currentSession.token;
+    try {
+      return await adminFetch<T>(currentToken, path, options);
+    } catch (error) {
+      if (!(error instanceof AdminApiError) || error.status !== 401 || currentSession.kind !== 'account') {
+        throw error;
+      }
+      const nextSession = await refreshAccountSession(currentSession);
+      return adminFetch<T>(nextSession.accessToken, path, options);
+    }
+  }
 
   useEffect(() => {
     if (!hasOpenEditor) return;
@@ -551,14 +597,18 @@ export function AdminApp() {
   }, [hasOpenEditor]);
 
   useEffect(() => {
-    const savedToken = window.localStorage.getItem(STORAGE_KEY) ?? '';
-    setToken(savedToken);
+    const savedSession = loadAdminSession(window.localStorage);
+    setSession(savedSession);
+    if (savedSession) {
+      setToken(savedSession.kind === 'account' ? savedSession.accessToken : savedSession.token);
+      setRole(savedSession.kind === 'account' ? savedSession.account.role : '');
+    }
     setHydrated(true);
   }, []);
 
   useEffect(() => {
     if (!hydrated) return;
-    if (!token) {
+    if (!token || !session) {
       setSessionState('signed-out');
       return;
     }
@@ -567,13 +617,13 @@ export function AdminApp() {
     setSessionState('checking');
     (async () => {
       try {
-        const identity = await adminFetch<{ authenticated: boolean; role: string }>(token, '/auth/me');
+        const identity = await callAdmin<{ authenticated: boolean; role: string }>('/auth/me');
         if (!alive) return;
         setRole(identity.role);
         const [nextDashboard, nextBrands, nextCategories] = await Promise.all([
-          adminFetch<AdminDashboard>(token, '/dashboard'),
-          adminFetch<AdminBrandRecord[]>(token, '/brands'),
-          adminFetch<AdminCategoryRecord[]>(token, '/categories'),
+          callAdmin<AdminDashboard>('/dashboard'),
+          callAdmin<AdminBrandRecord[]>('/brands'),
+          callAdmin<AdminCategoryRecord[]>('/categories'),
         ]);
         if (!alive) return;
         setDashboard(nextDashboard);
@@ -583,7 +633,8 @@ export function AdminApp() {
       } catch (error) {
         if (!alive) return;
         if (error instanceof AdminApiError && (error.status === 401 || error.status === 403)) {
-          window.localStorage.removeItem(STORAGE_KEY);
+          clearAdminSession(window.localStorage);
+          setSession(null);
           setToken('');
           setRole('');
           setSessionState('signed-out');
@@ -597,15 +648,14 @@ export function AdminApp() {
     return () => {
       alive = false;
     };
-  }, [hydrated, token]);
+  }, [hydrated, token, session]);
 
   useEffect(() => {
     if (sessionState !== 'signed-in' || !token) return;
     let alive = true;
     (async () => {
       try {
-        const response = await adminFetch<AdminProductListResponse>(
-          token,
+        const response = await callAdmin<AdminProductListResponse>(
           `/products${buildProductQuery({
             search: appliedFilters.search.trim(),
             status: appliedFilters.status,
@@ -628,7 +678,7 @@ export function AdminApp() {
     if (sessionState !== 'signed-in' || !token) return;
     let alive = true;
     setAnalyticsBusy(true);
-    adminFetch<AdminAnalytics>(token, `/analytics?days=${analyticsDays}`)
+    callAdmin<AdminAnalytics>(`/analytics?days=${analyticsDays}`)
       .then((response) => {
         if (alive) setAnalytics(response);
       })
@@ -657,12 +707,11 @@ export function AdminApp() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSection, auditFilters, sessionState, token]);
 
-  async function refreshWorkspace(currentToken = token) {
-    if (!currentToken) return;
+  async function refreshWorkspace() {
+    if (!session) return;
     const [nextDashboard, nextProducts, nextBrands, nextCategories] = await Promise.all([
-      adminFetch<AdminDashboard>(currentToken, '/dashboard'),
-      adminFetch<AdminProductListResponse>(
-        currentToken,
+      callAdmin<AdminDashboard>('/dashboard'),
+      callAdmin<AdminProductListResponse>(
         `/products${buildProductQuery({
           search: appliedFilters.search.trim(),
           status: appliedFilters.status,
@@ -671,8 +720,8 @@ export function AdminApp() {
           pageSize: 50,
         })}`,
       ),
-      adminFetch<AdminBrandRecord[]>(currentToken, '/brands'),
-      adminFetch<AdminCategoryRecord[]>(currentToken, '/categories'),
+      callAdmin<AdminBrandRecord[]>('/brands'),
+      callAdmin<AdminCategoryRecord[]>('/categories'),
     ]);
     setDashboard(nextDashboard);
     setProducts(nextProducts);
@@ -684,7 +733,7 @@ export function AdminApp() {
     if (!token) return;
     setAnalyticsBusy(true);
     try {
-      setAnalytics(await adminFetch<AdminAnalytics>(token, `/analytics?days=${analyticsDays}`));
+      setAnalytics(await callAdmin<AdminAnalytics>(`/analytics?days=${analyticsDays}`));
     } catch (error) {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
@@ -704,8 +753,8 @@ export function AdminApp() {
     setModerationBusy(true);
     try {
       const [nextReports, nextRatings] = await Promise.all([
-        adminFetch<AdminReport[]>(token, '/moderation/reports'),
-        adminFetch<AdminModerationRating[]>(token, '/moderation/ratings'),
+        callAdmin<AdminReport[]>('/moderation/reports'),
+        callAdmin<AdminModerationRating[]>('/moderation/ratings'),
       ]);
       setReports(nextReports);
       setModerationRatings(nextRatings);
@@ -726,7 +775,7 @@ export function AdminApp() {
       query.set('page', '1');
       query.set('pageSize', '50');
       const suffix = query.toString();
-      setAuditLogs(await adminFetch<AdminAuditLogResponse>(token, `/audit-logs?${suffix}`));
+      setAuditLogs(await callAdmin<AdminAuditLogResponse>(`/audit-logs?${suffix}`));
     } catch (error) {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
@@ -738,7 +787,7 @@ export function AdminApp() {
     if (!token) return;
     setBusyAction(`report-${id}`);
     try {
-      await adminFetch(token, `/moderation/reports/${id}`, { method: 'PATCH', body: { status } });
+      await callAdmin(`/moderation/reports/${id}`, { method: 'PATCH', body: { status } });
       await refreshModeration();
       setNotice({ kind: 'success', text: '举报状态已更新' });
     } catch (error) {
@@ -752,7 +801,7 @@ export function AdminApp() {
     if (!token) return;
     setBusyAction(`rating-${id}`);
     try {
-      await adminFetch(token, `/moderation/ratings/${id}`, { method: 'PATCH', body: { status } });
+      await callAdmin(`/moderation/ratings/${id}`, { method: 'PATCH', body: { status } });
       await refreshModeration();
       setNotice({ kind: 'success', text: '评论状态已更新，产品聚合会异步重算' });
     } catch (error) {
@@ -764,19 +813,37 @@ export function AdminApp() {
 
   async function handleLogin(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const value = loginToken.trim();
-    if (value.length < 16) {
-      setNotice({ kind: 'error', text: '管理令牌至少需要 16 个字符' });
-      return;
-    }
     setBusyAction('login');
     setNotice(null);
     try {
-      const identity = await adminFetch<{ authenticated: boolean; role: string }>(value, '/auth/me');
-      window.localStorage.setItem(STORAGE_KEY, value);
-      setRole(identity.role);
-      setToken(value);
-      setNotice({ kind: 'success', text: '管理令牌验证通过' });
+      if (loginMode === 'account') {
+        const email = loginEmail.trim();
+        if (!email || !loginPassword) {
+          setNotice({ kind: 'error', text: '请输入邮箱和密码' });
+          return;
+        }
+        const response = await adminLogin(email, loginPassword);
+        const nextSession: AdminAccountSession = { kind: 'account', ...response };
+        saveAdminSession(window.localStorage, nextSession);
+        setSession(nextSession);
+        setRole(nextSession.account.role);
+        setToken(nextSession.accessToken);
+        setLoginPassword('');
+        setNotice({ kind: 'success', text: '登录成功' });
+      } else {
+        const value = loginToken.trim();
+        if (value.length < 16) {
+          setNotice({ kind: 'error', text: '管理令牌至少需要 16 个字符' });
+          return;
+        }
+        const identity = await adminFetch<{ authenticated: boolean; role: string }>(value, '/auth/me');
+        const nextSession: AdminSession = { kind: 'legacy-token', token: value };
+        saveAdminSession(window.localStorage, nextSession);
+        setSession(nextSession);
+        setRole(identity.role);
+        setToken(value);
+        setNotice({ kind: 'success', text: '管理令牌验证通过' });
+      }
     } catch (error) {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
@@ -784,9 +851,20 @@ export function AdminApp() {
     }
   }
 
-  function logout() {
-    window.localStorage.removeItem(STORAGE_KEY);
+  async function logout() {
+    const currentSession = session;
+    if (currentSession?.kind === 'account') {
+      try {
+        await adminLogout(currentSession.refreshToken);
+      } catch {
+        // 即使退出接口不可用，也要清除本地会话。
+      }
+    }
+    clearAdminSession(window.localStorage);
+    setSession(null);
     setToken('');
+    setLoginEmail('');
+    setLoginPassword('');
     setLoginToken('');
     setRole('');
     setProductForm(null);
@@ -805,7 +883,7 @@ export function AdminApp() {
     setBusyAction(`product:${product.id}`);
     setNotice(null);
     try {
-      const detail = await adminFetch<AdminProductDetail>(token, `/products/${product.id}`);
+      const detail = await callAdmin<AdminProductDetail>(`/products/${product.id}`);
       setProductForm(productFormFromDetail(detail));
     } catch (error) {
       setNotice({ kind: 'error', text: getErrorText(error) });
@@ -823,9 +901,9 @@ export function AdminApp() {
       const selectedCategory = categories.find((category) => category.slug === productForm.categorySlug);
       const payload = buildProductPayload(productForm, schemaForCategory(selectedCategory));
       if (productForm.id) {
-        await adminFetch(token, `/products/${productForm.id}`, { method: 'PATCH', body: payload });
+        await callAdmin(`/products/${productForm.id}`, { method: 'PATCH', body: payload });
       } else {
-        await adminFetch(token, '/products', { method: 'POST', body: payload });
+        await callAdmin('/products', { method: 'POST', body: payload });
       }
       setProductForm(null);
       await refreshWorkspace();
@@ -845,9 +923,9 @@ export function AdminApp() {
     try {
       const payload = buildBrandPayload(brandForm);
       if (brandForm.id) {
-        await adminFetch(token, `/brands/${brandForm.id}`, { method: 'PATCH', body: payload });
+        await callAdmin(`/brands/${brandForm.id}`, { method: 'PATCH', body: payload });
       } else {
-        await adminFetch(token, '/brands', { method: 'POST', body: payload });
+        await callAdmin('/brands', { method: 'POST', body: payload });
       }
       setBrandForm(null);
       await refreshWorkspace();
@@ -867,9 +945,9 @@ export function AdminApp() {
     try {
       const payload = buildCategoryPayload(categoryForm);
       if (categoryForm.id) {
-        await adminFetch(token, `/categories/${categoryForm.id}`, { method: 'PATCH', body: payload });
+        await callAdmin(`/categories/${categoryForm.id}`, { method: 'PATCH', body: payload });
       } else {
-        await adminFetch(token, '/categories', { method: 'POST', body: payload });
+        await callAdmin('/categories', { method: 'POST', body: payload });
       }
       setCategoryForm(null);
       await refreshWorkspace();
@@ -918,25 +996,31 @@ export function AdminApp() {
           <p className="eyebrow">有谱 / 后台管理 / 第二阶段</p>
           <h1>有谱<br /><em>资料工作台</em></h1>
           <p className="login-copy">产品资料、类目参数与采集状态的单一操作入口。</p>
+          <div className="login-mode-switch" role="tablist" aria-label="登录方式">
+            <button className={loginMode === 'account' ? 'login-mode is-active' : 'login-mode'} type="button" onClick={() => setLoginMode('account')}>账号登录</button>
+            <button className={loginMode === 'legacy-token' ? 'login-mode is-active' : 'login-mode'} type="button" onClick={() => setLoginMode('legacy-token')}>旧令牌登录</button>
+          </div>
           <form onSubmit={handleLogin} className="login-form">
-            <input className="visually-hidden" name="username" autoComplete="username" value="admin" readOnly tabIndex={-1} aria-hidden="true" />
-            <label className="field">
+            {loginMode === 'account' ? <>
+              <label className="field">
+                <span>邮箱</span>
+                <input value={loginEmail} onChange={(event) => setLoginEmail(event.target.value)} type="email" autoComplete="username" placeholder="输入后台账号邮箱" />
+              </label>
+              <label className="field">
+                <span>密码</span>
+                <input value={loginPassword} onChange={(event) => setLoginPassword(event.target.value)} type="password" autoComplete="current-password" placeholder="输入密码" />
+              </label>
+            </> : <label className="field">
               <span>管理令牌</span>
-              <input
-                value={loginToken}
-                onChange={(event) => setLoginToken(event.target.value)}
-                type="password"
-                autoComplete="current-password"
-                placeholder="输入管理令牌"
-              />
-            </label>
+              <input value={loginToken} onChange={(event) => setLoginToken(event.target.value)} type="password" autoComplete="current-password" placeholder="输入管理令牌" />
+            </label>}
             <button className="button button-primary button-block" type="submit" disabled={busyAction === 'login'}>
-              {busyAction === 'login' ? '验证中……' : '进入工作台  →'}
+              {busyAction === 'login' ? '登录中……' : '进入工作台  →'}
             </button>
           </form>
           <div className="login-footnote">
-            <span>鉴权方式 / Bearer 令牌</span>
-            <span>仅限本地会话</span>
+            <span>{loginMode === 'account' ? '账号会话自动续期' : '兼容旧版管理令牌'}</span>
+            <span>仅限本地使用</span>
           </div>
           {notice && <Notice notice={notice} />}
         </section>

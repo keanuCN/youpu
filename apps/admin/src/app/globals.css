@@ -204,6 +204,29 @@ small,
   margin: 0 0 30px;
 }
 
+.login-mode-switch {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.login-mode {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  padding: 10px 8px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.login-mode:hover,
+.login-mode:focus-visible,
+.login-mode.is-active {
+  border-bottom-color: var(--red);
+  color: var(--ink);
+}
+
 .login-form {
   display: grid;
   gap: 16px;

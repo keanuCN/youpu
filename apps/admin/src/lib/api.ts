@@ -6,9 +6,17 @@ import type {
   AdminProductInput,
   AdminProductPatch,
 } from '@youpu/schema';
+import type { AdminSessionAccount } from './admin-session';
 
 const configuredBase = process.env.NEXT_PUBLIC_API_BASE ?? 'http://localhost:3001';
 export const API_BASE = configuredBase.replace(/\/$/, '');
+
+export interface AdminSessionResponse {
+  accessToken: string;
+  refreshToken: string;
+  expiresIn: number;
+  account: AdminSessionAccount;
+}
 
 export class AdminApiError extends Error {
   constructor(
@@ -249,18 +257,49 @@ export type AdminCategoryFormPatch = AdminCategoryPatch;
 interface RequestOptions {
   method?: 'GET' | 'POST' | 'PATCH';
   body?: unknown;
+  headers?: Record<string, string>;
 }
 
 export async function adminFetch<T>(token: string, path: string, options: RequestOptions = {}): Promise<T> {
+  return requestJson<T>(`${API_BASE}/api/admin${path}`, {
+    ...options,
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+}
+
+export function adminLogin(email: string, password: string): Promise<AdminSessionResponse> {
+  return requestJson<AdminSessionResponse>(`${API_BASE}/api/auth/login`, {
+    method: 'POST',
+    body: { email, password },
+  });
+}
+
+export function adminRefresh(refreshToken: string): Promise<AdminSessionResponse> {
+  return requestJson<AdminSessionResponse>(`${API_BASE}/api/auth/refresh`, {
+    method: 'POST',
+    body: { refreshToken },
+  });
+}
+
+export function adminLogout(refreshToken: string): Promise<{ ok: true }> {
+  return requestJson<{ ok: true }>(`${API_BASE}/api/auth/logout`, {
+    method: 'POST',
+    body: { refreshToken },
+  });
+}
+
+async function requestJson<T>(url: string, options: RequestOptions = {}): Promise<T> {
   const headers: Record<string, string> = {
     Accept: 'application/json',
-    Authorization: `Bearer ${token}`,
+    ...(options.headers ?? {}),
   };
   if (options.body !== undefined) headers['Content-Type'] = 'application/json';
 
   let response: Response;
   try {
-    response = await fetch(`${API_BASE}/api/admin${path}`, {
+    response = await fetch(url, {
       method: options.method ?? 'GET',
       headers,
       body: options.body === undefined ? undefined : JSON.stringify(options.body),
