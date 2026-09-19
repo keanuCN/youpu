@@ -392,6 +392,10 @@ function formatCompactNumber(value: number): string {
   return new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 1 }).format(value);
 }
 
+function formatRate(value: number | null | undefined): string {
+  return value === null || value === undefined ? '—' : `${value}%`;
+}
+
 function formatShortDate(value: string): string {
   const parts = value.split('-');
   return parts.length === 3 ? `${Number(parts[1])}/${Number(parts[2])}` : value;
@@ -1177,6 +1181,8 @@ export function AdminApp() {
 
   function renderAnalyticsOverview() {
     const summary = analytics?.summary;
+    const funnel = analytics?.funnel;
+    const engagement = analytics?.engagement;
     return (
       <>
         <div className="analytics-note">当前统计窗口：{analytics ? `${formatDate(analytics.from)} — ${formatDate(analytics.to)}` : '读取中……'}</div>
@@ -1194,6 +1200,30 @@ export function AdminApp() {
           <section className="data-panel chart-panel">
             <PanelHeader eyebrow="事件分布" title="埋点事件分布" meta="主要事件" />
             <EventBreakdown items={analytics?.eventBreakdown ?? []} />
+          </section>
+        </div>
+        <div className="analytics-grid analytics-decision-grid">
+          <section className="data-panel">
+            <PanelHeader eyebrow="浏览转化" title="产品浏览漏斗" meta="访客去重" />
+            {funnel ? (
+              <div className="funnel-steps">
+                <FunnelStep label="曝光访客" count={funnel.exposedVisitors} progress={100} detail="看到产品卡片" />
+                <FunnelStep label="点击访客" count={funnel.clickedVisitors} progress={funnel.exposedVisitors ? (funnel.clickedVisitors / funnel.exposedVisitors) * 100 : 0} rate={funnel.clickRate} detail="点击产品卡片" />
+                <FunnelStep label="详情访客" count={funnel.viewedVisitors} progress={funnel.exposedVisitors ? (funnel.viewedVisitors / funnel.exposedVisitors) * 100 : 0} rate={funnel.viewRate} detail="打开产品详情" />
+                <FunnelStep label="意向访客" count={funnel.intentVisitors} progress={funnel.exposedVisitors ? (funnel.intentVisitors / funnel.exposedVisitors) * 100 : 0} rate={funnel.intentRate} detail="收藏或跳转官网" />
+              </div>
+            ) : <EmptyState title="正在读取漏斗" detail="统计数据加载完成后会显示各阶段访客转化。" />}
+          </section>
+          <section className="data-panel">
+            <PanelHeader eyebrow="用户参与" title="关键行为" meta="事件次数" />
+            <div className="engagement-grid">
+              <Metric label="搜索" value={engagement?.searches ?? '—'} detail="搜索行为" />
+              <Metric label="推荐完成率" value={formatRate(engagement?.recommendCompletionRate)} detail={engagement ? `${engagement.recommendCompletions} / ${engagement.recommendStarts} 次` : '推荐流程'} accent />
+              <Metric label="注册" value={engagement?.signups ?? '—'} detail="注册事件" />
+              <Metric label="评分" value={engagement?.ratings ?? '—'} detail="提交评分" />
+              <Metric label="回复" value={engagement?.replies ?? '—'} detail="提交回复" />
+              <Metric label="推荐开始" value={engagement?.recommendStarts ?? '—'} detail="启动推荐流程" />
+            </div>
           </section>
         </div>
         <div className="analytics-grid analytics-grid-secondary">
@@ -1374,6 +1404,10 @@ function PanelHeader({ eyebrow, title, meta }: { eyebrow: string; title: string;
 
 function Metric({ label, value, detail, accent = false }: { label: string; value: number | string; detail: string; accent?: boolean }) {
   return <article className={accent ? 'metric-card metric-card-accent' : 'metric-card'}><span className="metric-label">{label}</span><strong>{value}</strong><small>{detail}</small></article>;
+}
+
+function FunnelStep({ label, count, progress, rate, detail }: { label: string; count: number; progress: number; rate?: number | null; detail: string }) {
+  return <div className="funnel-step"><div className="funnel-step-head"><span>{label}</span><strong>{formatCompactNumber(count)}</strong></div><div className="funnel-step-track"><i style={{ width: `${Math.max(0, Math.min(100, progress))}%` }} /></div><small>{rate === undefined ? detail : `${detail} · 较上一步 ${formatRate(rate)}`}</small></div>;
 }
 
 function BoundaryItem({ state, title, detail }: { state: string; title: string; detail: string }) {

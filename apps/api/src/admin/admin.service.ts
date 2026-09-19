@@ -33,6 +33,7 @@ import { uuidv7 } from '../common/uuid';
 import { RedisService } from '../common/redis.module';
 import { ElasticService } from '../search/elastic.service';
 import { env } from '../config/env';
+import { buildAnalyticsMetrics } from './analytics-metrics';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const chinaDateFormatter = new Intl.DateTimeFormat('en-US', {
@@ -47,6 +48,22 @@ interface AnalyticsSummaryRow {
   unique_visitors: number;
   product_views: number;
   active_accounts: number;
+}
+
+interface AnalyticsFunnelRow {
+  exposed_visitors: number;
+  clicked_visitors: number;
+  viewed_visitors: number;
+  intent_visitors: number;
+}
+
+interface AnalyticsEngagementRow {
+  searches: number;
+  recommend_starts: number;
+  recommend_completions: number;
+  signups: number;
+  ratings: number;
+  replies: number;
 }
 
 interface DailyAnalyticsRow {
@@ -261,13 +278,33 @@ export class AdminService {
     const to = new Date();
     const from = new Date(to.getTime() - rangeDays * DAY_MS);
 
-    const [summaryRows, dailyRows, eventRows, pathRows, productRows, recentRows, system] = await Promise.all([
+    const [summaryRows, funnelRows, engagementRows, dailyRows, eventRows, pathRows, productRows, recentRows, system] = await Promise.all([
       this.prisma.$queryRaw<AnalyticsSummaryRow[]>`
         SELECT
           COUNT(*)::int AS events,
           COUNT(DISTINCT anon_id)::int AS unique_visitors,
           COUNT(*) FILTER (WHERE name = 'detail_view')::int AS product_views,
           COUNT(DISTINCT account_id) FILTER (WHERE account_id IS NOT NULL)::int AS active_accounts
+        FROM event
+        WHERE created_at >= ${from}
+      `,
+      this.prisma.$queryRaw<AnalyticsFunnelRow[]>`
+        SELECT
+          COUNT(DISTINCT anon_id) FILTER (WHERE name = 'expose')::int AS exposed_visitors,
+          COUNT(DISTINCT anon_id) FILTER (WHERE name = 'card_click')::int AS clicked_visitors,
+          COUNT(DISTINCT anon_id) FILTER (WHERE name = 'detail_view')::int AS viewed_visitors,
+          COUNT(DISTINCT anon_id) FILTER (WHERE name IN ('favorite_add', 'outbound_click'))::int AS intent_visitors
+        FROM event
+        WHERE created_at >= ${from}
+      `,
+      this.prisma.$queryRaw<AnalyticsEngagementRow[]>`
+        SELECT
+          COUNT(*) FILTER (WHERE name = 'search')::int AS searches,
+          COUNT(*) FILTER (WHERE name = 'recommend_start')::int AS recommend_starts,
+          COUNT(*) FILTER (WHERE name = 'recommend_complete')::int AS recommend_completions,
+          COUNT(*) FILTER (WHERE name = 'signup')::int AS signups,
+          COUNT(*) FILTER (WHERE name = 'rating_submit')::int AS ratings,
+          COUNT(*) FILTER (WHERE name = 'reply_submit')::int AS replies
         FROM event
         WHERE created_at >= ${from}
       `,
@@ -305,7 +342,7 @@ export class AdminService {
           COALESCE(MAX(b.name_cn), MAX(b.name), '') AS brand,
           COUNT(*)::int AS event_count
         FROM event e
-        LEFT JOIN product p ON p.id::text = e.props->>'product_id'
+        LEFT JOIN product p ON p.id::text = e.props->>'product_id' OR p.slug = e.props->>'product_id'
         LEFT JOIN brand b ON b.id = p.brand_id
         WHERE e.created_at >= ${from}
           AND e.name IN ('expose', 'card_click', 'detail_view', 'favorite_add', 'outbound_click', 'share_card_download')
@@ -336,6 +373,36 @@ export class AdminService {
       active_accounts: 0,
     };
     const dailyMap = new Map(dailyRows.map((row) => [row.date, row]));
+    const funnel = funnelRows[0] ?? {
+      exposed_visitors: 0,
+      clicked_visitors: 0,
+      viewed_visitors: 0,
+      intent_visitors: 0,
+    };
+    const engagement = engagementRows[0] ?? {
+      searches: 0,
+      recommend_starts: 0,
+      recommend_completions: 0,
+      signups: 0,
+      ratings: 0,
+      replies: 0,
+    };
+    const analyticsMetrics = buildAnalyticsMetrics({
+      funnel: {
+        exposedVisitors: Number(funnel.exposed_visitors),
+        clickedVisitors: Number(funnel.clicked_visitors),
+        viewedVisitors: Number(funnel.viewed_visitors),
+        intentVisitors: Number(funnel.intent_visitors),
+      },
+      engagement: {
+        searches: Number(engagement.searches),
+        recommendStarts: Number(engagement.recommend_starts),
+        recommendCompletions: Number(engagement.recommend_completions),
+        signups: Number(engagement.signups),
+        ratings: Number(engagement.ratings),
+        replies: Number(engagement.replies),
+      },
+    });
 
     return {
       rangeDays,
@@ -347,6 +414,8 @@ export class AdminService {
         productViews: Number(summary.product_views),
         activeAccounts: Number(summary.active_accounts),
       },
+      funnel: analyticsMetrics.funnel,
+      engagement: analyticsMetrics.engagement,
       daily: buildDailySeries(rangeDays, dailyMap),
       eventBreakdown: eventRows.map((row) => ({ name: row.name, count: Number(row.count) })),
       topPaths: pathRows.map((row) => ({ path: row.path, count: Number(row.count) })),

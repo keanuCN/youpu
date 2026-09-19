@@ -82,6 +82,24 @@ export interface AdminAnalytics {
     productViews: number;
     activeAccounts: number;
   };
+  funnel: {
+    exposedVisitors: number;
+    clickedVisitors: number;
+    viewedVisitors: number;
+    intentVisitors: number;
+    clickRate: number | null;
+    viewRate: number | null;
+    intentRate: number | null;
+  };
+  engagement: {
+    searches: number;
+    recommendStarts: number;
+    recommendCompletions: number;
+    recommendCompletionRate: number | null;
+    signups: number;
+    ratings: number;
+    replies: number;
+  };
   daily: Array<{
     date: string;
     visitors: number;
