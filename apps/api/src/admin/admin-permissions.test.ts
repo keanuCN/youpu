@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { ForbiddenException, UnauthorizedException } from '@nestjs/common';
+import { Reflector } from '@nestjs/core';
+import type { AccountView } from '../auth/auth.types';
 import { AdminGuard } from './admin.guard';
 import { canAccessAdminRole } from './admin-permissions';
 
@@ -15,12 +17,25 @@ function makeContext(authorization: string, requiredRole?: 'editor' | 'admin') {
   return { context, request };
 }
 
-function makeReflector() {
+function makeReflector(): Reflector {
   return {
     getAllAndOverride: (_key: string, targets: Array<{ requiredRole?: 'editor' | 'admin' }>) =>
       targets.find((target) => target.requiredRole)?.requiredRole
         ? [targets.find((target) => target.requiredRole)?.requiredRole]
         : undefined,
+  } as unknown as Reflector;
+}
+
+function account(id: string, role: string, status: string): AccountView {
+  return {
+    id,
+    email: `${id}@example.com`,
+    nickname: id,
+    avatarUrl: null,
+    riderProfile: {},
+    role,
+    status,
+    createdAt: '2026-01-01T00:00:00.000Z',
   };
 }
 
@@ -35,7 +50,7 @@ test('editor cannot access admin operations', () => {
 });
 
 test('accepts an active editor account and stores its identity on the request', async () => {
-  const auth = { resolveAccessToken: async () => ({ id: 'editor-1', role: 'editor', status: 'active' }) };
+  const auth = { resolveAccessToken: async () => account('editor-1', 'editor', 'active') };
   const { context, request } = makeContext('Bearer account-token', 'editor');
 
   const result = await new AdminGuard(auth, makeReflector()).canActivate(context);
@@ -45,7 +60,7 @@ test('accepts an active editor account and stores its identity on the request', 
 });
 
 test('rejects a regular account from every admin route', async () => {
-  const auth = { resolveAccessToken: async () => ({ id: 'user-1', role: 'user', status: 'active' }) };
+  const auth = { resolveAccessToken: async () => account('user-1', 'user', 'active') };
   const { context } = makeContext('Bearer user-token');
 
   await assert.rejects(

@@ -30,6 +30,7 @@ import {
 } from '@youpu/schema';
 import { ZodValidationPipe } from '../common/zod-validation.pipe';
 import { AdminGuard } from './admin.guard';
+import { AdminRoles } from './admin-roles.decorator';
 import { ADMIN_PRODUCT_MISSING_FIELDS, AdminService, type AdminProductMissingField } from './admin.service';
 import { env } from '../config/env';
 
@@ -49,6 +50,7 @@ export class AdminController {
   }
 
   @Get('audit-logs')
+  @AdminRoles('admin')
   auditLogs(
     @Query('entity') entity?: string,
     @Query('action') action?: string,
@@ -73,11 +75,13 @@ export class AdminController {
   }
 
   @Get('moderation/reports')
+  @AdminRoles('admin')
   reports(@Query('status') status?: string) {
     return this.admin.listReports(status);
   }
 
   @Patch('moderation/reports/:id')
+  @AdminRoles('admin')
   updateReport(
     @Param('id', ParseUUIDPipe) id: string,
     @Body(new ZodValidationPipe(adminModerationPatchSchema)) body: AdminModerationPatch,
@@ -86,11 +90,13 @@ export class AdminController {
   }
 
   @Get('moderation/ratings')
+  @AdminRoles('admin')
   moderationRatings(@Query('status') status?: string) {
     return this.admin.listRatings(status);
   }
 
   @Patch('moderation/ratings/:id')
+  @AdminRoles('admin')
   updateRatingStatus(
     @Param('id', ParseUUIDPipe) id: string,
     @Body(new ZodValidationPipe(adminRatingModerationPatchSchema)) body: AdminRatingModerationPatch,
