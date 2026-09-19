@@ -12,6 +12,8 @@ test('moderation and audit handlers require the admin role', () => {
   assert.deepEqual(Reflect.getMetadata(ADMIN_ROLES_METADATA, prototype.updateReport), ['admin']);
   assert.deepEqual(Reflect.getMetadata(ADMIN_ROLES_METADATA, prototype.moderationRatings), ['admin']);
   assert.deepEqual(Reflect.getMetadata(ADMIN_ROLES_METADATA, prototype.updateRatingStatus), ['admin']);
+  assert.deepEqual(Reflect.getMetadata(ADMIN_ROLES_METADATA, prototype.accounts), ['admin']);
+  assert.deepEqual(Reflect.getMetadata(ADMIN_ROLES_METADATA, prototype.updateAccount), ['admin']);
 });
 
 test('catalog editing handlers remain available to editors', () => {

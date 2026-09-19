@@ -8,9 +8,11 @@ import {
   Patch,
   Post,
   Query,
+  Req,
   UseGuards,
 } from '@nestjs/common';
 import {
+  adminAccountPatchSchema,
   adminBrandInputSchema,
   adminBrandPatchSchema,
   adminCategoryInputSchema,
@@ -21,6 +23,7 @@ import {
   adminRatingModerationPatchSchema,
   type AdminBrandInput,
   type AdminBrandPatch,
+  type AdminAccountPatch,
   type AdminCategoryInput,
   type AdminCategoryPatch,
   type AdminProductInput,
@@ -30,6 +33,7 @@ import {
 } from '@youpu/schema';
 import { ZodValidationPipe } from '../common/zod-validation.pipe';
 import { AdminGuard } from './admin.guard';
+import type { AdminRequest } from './admin.guard';
 import { AdminRoles } from './admin-roles.decorator';
 import { ADMIN_PRODUCT_MISSING_FIELDS, AdminService, type AdminProductMissingField } from './admin.service';
 import { env } from '../config/env';
@@ -47,6 +51,22 @@ export class AdminController {
   @Get('dashboard')
   dashboard() {
     return this.admin.dashboard();
+  }
+
+  @Get('accounts')
+  @AdminRoles('admin')
+  accounts() {
+    return this.admin.listAccounts();
+  }
+
+  @Patch('accounts/:id')
+  @AdminRoles('admin')
+  updateAccount(
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body(new ZodValidationPipe(adminAccountPatchSchema)) body: AdminAccountPatch,
+    @Req() request: AdminRequest,
+  ) {
+    return this.admin.updateAccountAccess(id, body, request.admin?.accountId ?? undefined);
   }
 
   @Get('audit-logs')

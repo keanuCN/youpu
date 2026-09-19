@@ -6,6 +6,20 @@ const slugSchema = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'slug 需为 keb
 export const adminRoleSchema = z.enum(['editor', 'admin']);
 export type AdminRole = z.infer<typeof adminRoleSchema>;
 
+export const adminAccountRoleSchema = z.enum(['user', 'editor', 'admin']);
+export type AdminAccountRole = z.infer<typeof adminAccountRoleSchema>;
+
+export const adminAccountStatusSchema = z.enum(['active', 'pending', 'disabled']);
+export type AdminAccountStatus = z.infer<typeof adminAccountStatusSchema>;
+
+export const adminAccountPatchSchema = z
+  .object({
+    role: adminAccountRoleSchema.optional(),
+    status: adminAccountStatusSchema.optional(),
+  })
+  .strict();
+export type AdminAccountPatch = z.infer<typeof adminAccountPatchSchema>;
+
 export const adminProductImageSchema = z
   .object({
     url: z.string().url(),

@@ -14,8 +14,10 @@ import {
   adminCategoryPatchSchema,
   adminModerationPatchSchema,
   adminRatingModerationPatchSchema,
+  adminAccountPatchSchema,
   parseSpecSchema,
   validateSpecs,
+  type AdminAccountPatch,
   type AdminBrandInput,
   type AdminBrandPatch,
   type AdminCategoryInput,
@@ -34,6 +36,7 @@ import { RedisService } from '../common/redis.module';
 import { ElasticService } from '../search/elastic.service';
 import { env } from '../config/env';
 import { buildAnalyticsMetrics } from './analytics-metrics';
+import { assertAccountAccessChangeAllowed } from './admin-account-policy';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const chinaDateFormatter = new Intl.DateTimeFormat('en-US', {
@@ -231,6 +234,80 @@ export class AdminService {
         ...product,
         updatedAt: product.updatedAt.toISOString(),
       })),
+    };
+  }
+
+  async listAccounts() {
+    const rows = await this.prisma.account.findMany({
+      orderBy: { createdAt: 'desc' },
+      take: 100,
+      select: {
+        id: true,
+        email: true,
+        nickname: true,
+        role: true,
+        status: true,
+        createdAt: true,
+      },
+    });
+
+    return rows.map((row) => ({
+      ...row,
+      createdAt: row.createdAt.toISOString(),
+    }));
+  }
+
+  async updateAccountAccess(id: string, input: AdminAccountPatch, actorId?: string) {
+    const body = adminAccountPatchSchema.parse(input);
+    const result = await this.prisma.$transaction(async (tx) => {
+      const existing = await tx.account.findUnique({
+        where: { id },
+        select: {
+          id: true,
+          email: true,
+          nickname: true,
+          role: true,
+          status: true,
+          createdAt: true,
+        },
+      });
+      if (!existing) throw new NotFoundException(`账号不存在：${id}`);
+
+      const activeAdminCount = await tx.account.count({ where: { role: 'admin', status: 'active' } });
+      assertAccountAccessChangeAllowed(existing, activeAdminCount, body);
+
+      const data: Prisma.AccountUncheckedUpdateInput = {
+        ...(body.role === undefined ? {} : { role: body.role }),
+        ...(body.status === undefined ? {} : { status: body.status }),
+      };
+      const updated = await tx.account.update({
+        where: { id },
+        data,
+        select: {
+          id: true,
+          email: true,
+          nickname: true,
+          role: true,
+          status: true,
+          createdAt: true,
+        },
+      });
+
+      return { before: existing, after: updated };
+    });
+
+    await this.recordAudit({
+      actorId,
+      action: 'update',
+      entity: 'account',
+      entityId: id,
+      before: result.before,
+      after: result.after,
+    });
+
+    return {
+      ...result.after,
+      createdAt: result.after.createdAt.toISOString(),
     };
   }
 
@@ -950,6 +1027,7 @@ export class AdminService {
   }
 
   private async recordAudit(input: {
+    actorId?: string;
     action: string;
     entity: string;
     entityId?: string;
@@ -957,7 +1035,7 @@ export class AdminService {
     after?: unknown;
   }): Promise<void> {
     try {
-      const actorId = await this.getAuditActorId();
+      const actorId = input.actorId ?? (await this.getAuditActorId());
       await this.prisma.auditLog.create({
         data: {
           actorId,
