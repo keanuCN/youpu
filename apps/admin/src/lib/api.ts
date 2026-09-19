@@ -56,6 +56,18 @@ export interface AdminDashboard {
   }>;
 }
 
+export type AdminAccountRole = 'user' | 'editor' | 'admin';
+export type AdminAccountStatus = 'active' | 'pending' | 'disabled';
+
+export interface AdminAccount {
+  id: string;
+  email: string | null;
+  nickname: string;
+  role: AdminAccountRole;
+  status: AdminAccountStatus;
+  createdAt: string;
+}
+
 export interface AdminAuditLog {
   id: string;
   action: string;

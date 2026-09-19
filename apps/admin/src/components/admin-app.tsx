@@ -22,6 +22,9 @@ import {
   API_BASE,
   buildProductQuery,
   type AdminBrandRecord,
+  type AdminAccount,
+  type AdminAccountRole,
+  type AdminAccountStatus,
   type AdminCategoryRecord,
   type AdminAnalytics,
   type AdminAuditLogResponse,
@@ -32,6 +35,7 @@ import {
   type AdminReport,
   type AdminModerationRating,
 } from '../lib/api';
+import { visibleAdminSections, type AdminSection } from '../lib/admin-navigation';
 import {
   clearAdminSession,
   loadAdminSession,
@@ -40,7 +44,7 @@ import {
   type AdminSession,
 } from '../lib/admin-session';
 
-type Section = 'dashboard' | 'products' | 'brands' | 'categories' | 'import' | 'analytics' | 'moderation' | 'audit';
+type Section = AdminSection;
 type NoticeKind = 'success' | 'error' | 'info';
 type ImageKind = AdminProductInput['images'][number]['kind'];
 type DataSourceKind = NonNullable<AdminProductInput['dataSource']>['kind'];
@@ -116,7 +120,7 @@ interface CategoryFormState {
   recommendConfigText: string;
 }
 
-type NavGroup = '工作台' | '资料库' | '内容运营';
+type NavGroup = '工作台' | '资料库' | '内容运营' | '系统管理';
 
 const navItems: Array<{ id: Section; index: string; label: string; group: NavGroup }> = [
   { id: 'dashboard', index: '00', label: '总览', group: '工作台' },
@@ -127,6 +131,7 @@ const navItems: Array<{ id: Section; index: string; label: string; group: NavGro
   { id: 'import', index: '05', label: '采集与导入', group: '资料库' },
   { id: 'moderation', index: '06', label: '内容审核', group: '内容运营' },
   { id: 'audit', index: '07', label: '操作审计', group: '内容运营' },
+  { id: 'accounts', index: '08', label: '账号管理', group: '系统管理' },
 ];
 
 const imageKinds: ImageKind[] = ['base', 'face', 'side', 'shape', 'field', 'card3x4'];
@@ -546,12 +551,15 @@ export function AdminApp() {
   const [products, setProducts] = useState<AdminProductListResponse | null>(null);
   const [brands, setBrands] = useState<AdminBrandRecord[]>([]);
   const [categories, setCategories] = useState<AdminCategoryRecord[]>([]);
+  const [accounts, setAccounts] = useState<AdminAccount[]>([]);
+  const [accountsBusy, setAccountsBusy] = useState(false);
   const [filters, setFilters] = useState<ProductFilters>({ search: '', status: '', missing: '' });
   const [appliedFilters, setAppliedFilters] = useState<ProductFilters>({ search: '', status: '', missing: '' });
   const [productForm, setProductForm] = useState<ProductFormState | null>(null);
   const [brandForm, setBrandForm] = useState<BrandFormState | null>(null);
   const [categoryForm, setCategoryForm] = useState<CategoryFormState | null>(null);
   const hasOpenEditor = productForm !== null || brandForm !== null || categoryForm !== null;
+  const visibleSections = useMemo(() => new Set(visibleAdminSections(role)), [role]);
   let refreshPromise: Promise<AdminAccountSession> | null = null;
 
   async function refreshAccountSession(currentSession: AdminAccountSession): Promise<AdminAccountSession> {
@@ -707,6 +715,13 @@ export function AdminApp() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSection, auditFilters, sessionState, token]);
 
+  useEffect(() => {
+    if (sessionState !== 'signed-in' || !token || activeSection !== 'accounts' || role !== 'admin') return;
+    void refreshAccounts();
+    // 账号页只在进入页面时读取，修改后由操作函数主动刷新。
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeSection, role, sessionState, token]);
+
   async function refreshWorkspace() {
     if (!session) return;
     const [nextDashboard, nextProducts, nextBrands, nextCategories] = await Promise.all([
@@ -780,6 +795,32 @@ export function AdminApp() {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
       setAuditBusy(false);
+    }
+  }
+
+  async function refreshAccounts() {
+    if (!token || role !== 'admin') return;
+    setAccountsBusy(true);
+    try {
+      setAccounts(await callAdmin<AdminAccount[]>('/accounts'));
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setAccountsBusy(false);
+    }
+  }
+
+  async function updateAccountAccess(id: string, patch: { role?: AdminAccountRole; status?: AdminAccountStatus }) {
+    if (!token || role !== 'admin') return;
+    setBusyAction(`account-${id}`);
+    try {
+      await callAdmin<AdminAccount>(`/accounts/${id}`, { method: 'PATCH', body: patch });
+      await refreshAccounts();
+      setNotice({ kind: 'success', text: '账号权限已更新' });
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setBusyAction(null);
     }
   }
 
@@ -1440,6 +1481,31 @@ export function AdminApp() {
     );
   }
 
+  function renderAccounts() {
+    return (
+      <>
+        <SectionHeader
+          index="08"
+          title="账号管理"
+          description="管理后台账号的角色和状态。为避免锁死后台，最后一个启用中的管理员不能被降级或停用。"
+          action={<button className="button" type="button" onClick={() => void refreshAccounts()} disabled={accountsBusy}>{accountsBusy ? '读取中……' : '刷新账号'}</button>}
+        />
+        <section className="data-panel table-panel">
+          <PanelHeader eyebrow="访问权限" title="后台账号" meta={`${accounts.length} 条记录`} />
+          {accounts.length ? <div className="table-wrap"><table className="data-table accounts-table"><thead><tr><th>账号</th><th>角色</th><th>状态</th><th>创建时间</th></tr></thead><tbody>{accounts.map((account) => {
+            const busy = busyAction === `account-${account.id}`;
+            return <tr key={account.id}>
+              <td><div className="record-title"><span className="record-mark">员</span><span><strong>{account.nickname}</strong><small>{account.email || account.id}</small></span></div></td>
+              <td><select aria-label={`${account.nickname}角色`} value={account.role} disabled={busy} onChange={(event) => void updateAccountAccess(account.id, { role: event.target.value as AdminAccountRole })}><option value="user">普通用户</option><option value="editor">编辑</option><option value="admin">管理员</option></select></td>
+              <td><select aria-label={`${account.nickname}状态`} value={account.status} disabled={busy} onChange={(event) => void updateAccountAccess(account.id, { status: event.target.value as AdminAccountStatus })}><option value="active">启用</option><option value="pending">待启用</option><option value="disabled">停用</option></select></td>
+              <td><time className="table-sub">{formatDate(account.createdAt)}</time></td>
+            </tr>;
+          })}</tbody></table></div> : <EmptyState title="暂无账号" detail="数据库接通后，注册账号会显示在这里。" />}
+        </section>
+      </>
+    );
+  }
+
   function renderContent() {
     if (activeSection === 'products') return renderProducts();
     if (activeSection === 'brands') return renderBrands();
@@ -1448,6 +1514,7 @@ export function AdminApp() {
     if (activeSection === 'analytics') return renderAnalytics();
     if (activeSection === 'moderation') return renderModeration();
     if (activeSection === 'audit') return renderAuditLogs();
+    if (activeSection === 'accounts') return renderAccounts();
     return renderDashboard();
   }
 
@@ -1457,7 +1524,7 @@ export function AdminApp() {
         <div className="brand-lockup"><div className="brand-mark-large">有谱</div><div><strong>后台管理</strong><small>本地环境</small></div></div>
         <div className="sidebar-rule" />
         <p className="sidebar-label">操作模块</p>
-        <nav className="sidebar-nav" aria-label="后台模块">{(['工作台', '资料库', '内容运营'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span>{item.index}</span><strong>{item.label}</strong></button>)}</div>)}</nav>
+        <nav className="sidebar-nav" aria-label="后台模块">{(['工作台', '资料库', '内容运营', '系统管理'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group && visibleSections.has(item.id)).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span>{item.index}</span><strong>{item.label}</strong></button>)}</div>)}</nav>
         <div className="sidebar-bottom"><div className="system-readout"><span className="status-dot status-dot-good" /><span>API 会话 / 权限：{role || 'admin'}</span></div><button className="logout-button" onClick={logout}>退出工作台 <span>↗</span></button></div>
       </aside>
       <main className="admin-main">
