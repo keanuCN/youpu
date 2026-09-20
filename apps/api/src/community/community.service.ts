@@ -8,11 +8,13 @@ import {
   accountPatchSchema,
   notificationReadSchema,
   ratingInputSchema,
+  ratingListQuerySchema,
   recommendationInputSchema,
   reportInputSchema,
   replyInputSchema,
   type NotificationReadInput,
   type RatingInput,
+  type RatingListQueryInput,
   type RecommendationInput,
   type ReportInput,
   type ReplyInput,
@@ -22,6 +24,9 @@ import { PrismaService } from '../common/prisma.service';
 import { toJsonInput } from '../common/json';
 import { uuidv7 } from '../common/uuid';
 import type { AccountView } from '../auth/auth.types';
+import { evaluateCommunityRisk } from './community-moderation';
+import { CommunityRateLimit } from './community-rate-limit';
+import { filterAndSortRatings } from './rating-query';
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const PRODUCT_REF_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -64,14 +69,17 @@ export interface RecommendationCandidate {
 
 @Injectable()
 export class CommunityService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly communityRateLimit: CommunityRateLimit,
+  ) {}
 
-  async listRatings(productRef: string, sort: string | undefined, accountId?: string) {
+  async listRatings(productRef: string, query?: RatingListQueryInput, accountId?: string) {
+    const parsedQuery = ratingListQuerySchema.parse(query ?? {});
     const product = await this.findPublishedProduct(productRef);
-    const orderBy = sort === 'latest' ? [{ createdAt: 'desc' as const }] : [{ helpfulCount: 'desc' as const }, { createdAt: 'desc' as const }];
     const ratings = (await this.prisma.rating.findMany({
       where: { productId: product.id, status: 'published' },
-      orderBy,
+      orderBy: [{ helpfulCount: 'desc' as const }, { createdAt: 'desc' as const }],
       include: {
         account: { select: { id: true, nickname: true, avatarUrl: true, riderProfile: true } },
         replies: {
@@ -81,23 +89,37 @@ export class CommunityService {
         },
       },
     })) as RatingWithRelations[];
-    const votes = accountId && ratings.length
-      ? await this.prisma.ratingVote.findMany({ where: { accountId, ratingId: { in: ratings.map((rating) => rating.id) } }, select: { ratingId: true } })
+    const viewer = parsedQuery.sort === 'similar' && accountId
+      ? await this.prisma.account.findUnique({ where: { id: accountId }, select: { riderProfile: true } })
+      : null;
+    const orderedRatings = filterAndSortRatings(
+      ratings.map((rating) => ({
+        id: rating.id,
+        riderProfile: asRecord(rating.riderProfile),
+        helpfulCount: rating.helpfulCount,
+        createdAt: rating.createdAt,
+        rating,
+      })),
+      parsedQuery,
+      viewer ? asRecord(viewer.riderProfile) : undefined,
+    ).map((row) => row.rating);
+    const votes = accountId && orderedRatings.length
+      ? await this.prisma.ratingVote.findMany({ where: { accountId, ratingId: { in: orderedRatings.map((rating) => rating.id) } }, select: { ratingId: true } })
       : [];
     const voted = new Set(votes.map((vote) => vote.ratingId));
     const distribution = { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0 } as Record<string, number>;
-    for (const rating of ratings) {
+    for (const rating of orderedRatings) {
       const star = String(Math.round(Number(rating.overall)));
       if (star in distribution) distribution[star] = (distribution[star] ?? 0) + 1;
     }
-    const overall = ratings.length
-      ? round2(ratings.reduce((sum, rating) => sum + Number(rating.overall), 0) / ratings.length)
+    const overall = orderedRatings.length
+      ? round2(orderedRatings.reduce((sum, rating) => sum + Number(rating.overall), 0) / orderedRatings.length)
       : null;
     return {
       productId: product.id,
       productSlug: product.slug,
-      summary: { overall, count: ratings.length, distribution },
-      items: ratings.map((rating) => this.serializeRating(rating, voted.has(rating.id))),
+      summary: { overall, count: orderedRatings.length, distribution },
+      items: orderedRatings.map((rating) => this.serializeRating(rating, voted.has(rating.id))),
     };
   }
 
@@ -108,7 +130,10 @@ export class CommunityService {
       where: { productId_accountId: { productId: product.id, accountId: account.id } },
       select: { id: true },
     });
+    await this.communityRateLimit.assertAllowed(account.id, 'rating');
     const riderProfile = Object.keys(body.riderProfile).length > 0 ? body.riderProfile : account.riderProfile;
+    const moderation = evaluateCommunityRisk({ content: body.content, overall: body.overall });
+    const moderationCheckedAt = new Date();
     const rating = await this.prisma.$transaction(async (tx) => {
       const saved = await tx.rating.upsert({
         where: { productId_accountId: { productId: product.id, accountId: account.id } },
@@ -120,6 +145,9 @@ export class CommunityService {
           sub: toJsonInput(body.sub),
           content: body.content ?? null,
           riderProfile: toJsonInput(riderProfile),
+          moderationRisk: moderation.risk,
+          moderationReasons: toJsonInput(moderation.reasons),
+          moderationCheckedAt,
           status: 'published',
         },
         update: {
@@ -127,6 +155,9 @@ export class CommunityService {
           sub: toJsonInput(body.sub),
           content: body.content ?? null,
           riderProfile: toJsonInput(riderProfile),
+          moderationRisk: moderation.risk,
+          moderationReasons: toJsonInput(moderation.reasons),
+          moderationCheckedAt,
           status: 'published',
         },
         include: {
@@ -187,6 +218,7 @@ export class CommunityService {
   async toggleHelpful(ratingId: string, account: AccountView) {
     const rating = await this.prisma.rating.findUnique({ where: { id: ratingId }, select: { id: true, accountId: true, helpfulCount: true } });
     if (!rating) throw new NotFoundException('评论不存在');
+    await this.communityRateLimit.assertAllowed(account.id, 'helpful');
     const result = await this.prisma.$transaction(async (tx) => {
       const vote = await tx.ratingVote.findUnique({ where: { ratingId_accountId: { ratingId, accountId: account.id } } });
       if (vote) {
@@ -226,9 +258,26 @@ export class CommunityService {
       const target = await this.prisma.account.findUnique({ where: { id: body.replyTo }, select: { id: true } });
       if (!target) throw new BadRequestException('回复对象不存在');
     }
+    const duplicate = await this.prisma.ratingReply.findFirst({
+      where: { ratingId, content: body.content, status: 'published' },
+      select: { id: true },
+    });
+    await this.communityRateLimit.assertAllowed(account.id, 'reply');
+    const moderation = evaluateCommunityRisk({ content: body.content, duplicate: Boolean(duplicate) });
+    const moderationCheckedAt = new Date();
     const reply = await this.prisma.$transaction(async (tx) => {
       const created = await tx.ratingReply.create({
-        data: { id: uuidv7(), ratingId, accountId: account.id, replyTo: body.replyTo ?? null, content: body.content, status: 'published' },
+        data: {
+          id: uuidv7(),
+          ratingId,
+          accountId: account.id,
+          replyTo: body.replyTo ?? null,
+          content: body.content,
+          moderationRisk: moderation.risk,
+          moderationReasons: toJsonInput(moderation.reasons),
+          moderationCheckedAt,
+          status: 'published',
+        },
         include: { account: { select: { id: true, nickname: true, avatarUrl: true } } },
       });
       if (rating.accountId !== account.id) {
@@ -267,6 +316,8 @@ export class CommunityService {
       ? await this.prisma.rating.findUnique({ where: { id: body.targetId }, select: { id: true } })
       : await this.prisma.ratingReply.findUnique({ where: { id: body.targetId }, select: { id: true } });
     if (!target) throw new NotFoundException('被举报内容不存在');
+    await this.communityRateLimit.assertAllowed(accountId, 'report');
+    evaluateCommunityRisk({ content: [body.reason, body.note ?? ''].filter(Boolean).join(' ') });
     try {
       return await this.prisma.report.create({
         data: {

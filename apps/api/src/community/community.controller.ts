@@ -14,11 +14,13 @@ import {
 import {
   notificationReadSchema,
   ratingInputSchema,
+  ratingListQuerySchema,
   recommendationInputSchema,
   reportInputSchema,
   replyInputSchema,
   type NotificationReadInput,
   type RatingInput,
+  type RatingListQueryInput,
   type RecommendationInput,
   type ReportInput,
   type ReplyInput,
@@ -35,8 +37,12 @@ export class CommunityController {
 
   @Get('products/:productRef/ratings')
   @UseGuards(OptionalAuthGuard)
-  ratings(@Param('productRef') productRef: string, @Query('sort') sort: string | undefined, @Req() request: AuthRequest) {
-    return this.community.listRatings(productRef, sort, request.account?.id);
+  ratings(
+    @Param('productRef') productRef: string,
+    @Query(new ZodValidationPipe(ratingListQuerySchema)) query: RatingListQueryInput,
+    @Req() request: AuthRequest,
+  ) {
+    return this.community.listRatings(productRef, query, request.account?.id);
   }
 
   @Post('products/:productRef/ratings')
