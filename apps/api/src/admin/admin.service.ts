@@ -579,9 +579,12 @@ export class AdminService {
           where: { id: current.targetId },
           select: { productId: true, status: true },
         });
-        if (!target) throw new NotFoundException(`评分不存在：${current.targetId}`);
-        targetStatusBefore = target.status;
-        if (body.targetStatus !== undefined) {
+        if (!target) {
+          if (body.targetStatus !== undefined) throw new NotFoundException(`评分不存在：${current.targetId}`);
+        } else {
+          targetStatusBefore = target.status;
+        }
+        if (target && body.targetStatus !== undefined) {
           await tx.rating.update({ where: { id: current.targetId }, data: { status: body.targetStatus } });
           await tx.outboxEvent.create({
             data: {
@@ -597,14 +600,17 @@ export class AdminService {
           where: { id: current.targetId },
           select: { ratingId: true, status: true },
         });
-        if (!reply) throw new NotFoundException(`回复不存在：${current.targetId}`);
-        const rating = await tx.rating.findUnique({
-          where: { id: reply.ratingId },
-          select: { productId: true },
-        });
-        if (!rating) throw new NotFoundException(`评分不存在：${reply.ratingId}`);
-        targetStatusBefore = reply.status;
-        if (body.targetStatus !== undefined) {
+        if (!reply) {
+          if (body.targetStatus !== undefined) throw new NotFoundException(`回复不存在：${current.targetId}`);
+        } else {
+          targetStatusBefore = reply.status;
+        }
+        if (reply && body.targetStatus !== undefined) {
+          const rating = await tx.rating.findUnique({
+            where: { id: reply.ratingId },
+            select: { productId: true },
+          });
+          if (!rating) throw new NotFoundException(`评分不存在：${reply.ratingId}`);
           await tx.ratingReply.update({ where: { id: current.targetId }, data: { status: body.targetStatus } });
         }
       } else if (body.targetStatus !== undefined) {

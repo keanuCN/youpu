@@ -273,6 +273,17 @@ test('report target disappearance inside the transaction aborts the action', asy
   assert.equal(calls.outbox, undefined);
 });
 
+test('report can be resolved after its target disappeared when no target status change is requested', async () => {
+  const { service, calls } = makeService({ targetStillExists: false });
+
+  await service.updateReport('report-id', { status: 'resolved' }, 'admin-id');
+
+  assert.equal(calls.reportUpdate?.data.status, 'resolved');
+  assert.equal(calls.reportUpdate?.data.handledBy, 'admin-id');
+  assert.equal(calls.auditCreates[0]?.data.before.targetStatus, null);
+  assert.equal(calls.auditCreates[0]?.data.after.targetStatus, null);
+});
+
 test('serializes handled report metadata and moderation rating context for the admin', async () => {
   const { service } = makeService();
 
