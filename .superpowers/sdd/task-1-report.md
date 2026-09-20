@@ -97,3 +97,44 @@ git diff --check
 
 - `@youpu/schema` 的 `package.json` 未声明 `tsx`，因此在未调整 PATH 的干净 shell 中，简报原始测试命令会因找不到 `tsx` 失败；本次使用仓库现有 `apps/api` runner 临时加入 PATH 后，原测试命令本身执行成功。未修改依赖声明，以保持简报规定的文件范围。
 - Prisma client 生成在 API 进程占用 query-engine DLL 时会触发 Windows `EPERM`；已停止明确占用该 DLL 的本地 API 进程并验证生成成功。
+
+## 审查修复追加：Prisma 查询索引声明
+
+### 修复内容
+
+- 在 `Rating` 中补齐 `@@index([productId, status, createdAt(sort: Desc)])`。
+- 在 `RatingReply` 中补齐 `@@index([ratingId, status, createdAt])`；保留原有 `@@index([ratingId, createdAt])`。
+- 在 `Report` 中补齐 `@@index([status, createdAt(sort: Desc)])`。
+- 在 `Notification` 中补齐 `@@index([accountId, readAt, createdAt(sort: Desc)])`。
+- 未修改 `apps/api/prisma/migrations/20260920010000_community_moderation_loop/migration.sql`，未重置数据库。
+
+### 修复命令与输出摘要
+
+```text
+pnpm db:generate
+```
+
+首次执行因本地 API 进程占用 Prisma Windows query-engine DLL 退出码 1（`EPERM` rename）；确认 PID `8312` 监听 `127.0.0.1:3001` 后停止该本地 API 进程，重试退出码 0，生成 Prisma Client v5.22.0 成功。
+
+```text
+pnpm --filter @youpu/schema build
+```
+
+退出码 0，`tsc -p tsconfig.json` 成功。
+
+```text
+$tsx = (Resolve-Path 'apps/api/node_modules/.bin/tsx.cmd').Path; & $tsx --test (Resolve-Path 'packages/schema/src/community.test.ts').Path
+```
+
+退出码 0：4 tests、4 pass、0 fail、0 skipped。
+
+```text
+git diff --check
+```
+
+退出码 0，无空白错误。
+
+### 本次修复修改文件
+
+- `apps/api/prisma/schema.prisma`
+- `.superpowers/sdd/task-1-report.md`（本报告）

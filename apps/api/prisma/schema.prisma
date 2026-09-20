@@ -217,6 +217,7 @@ model Rating {
   replies RatingReply[]
 
   @@unique([productId, accountId])
+  @@index([productId, status, createdAt(sort: Desc)])
   @@map("rating")
 }
 
@@ -249,6 +250,7 @@ model RatingReply {
   target  Account? @relation("ReplyTarget", fields: [replyTo], references: [id])
 
   @@index([ratingId, createdAt])
+  @@index([ratingId, status, createdAt])
   @@map("rating_reply")
 }
 
@@ -268,6 +270,7 @@ model Report {
   handler  Account? @relation("ReportHandler", fields: [handledBy], references: [id])
 
   @@unique([targetType, targetId, reporterId])
+  @@index([status, createdAt(sort: Desc)])
   @@map("report")
 }
 
@@ -329,6 +332,7 @@ model Notification {
   account Account  @relation("NotificationOwner", fields: [accountId], references: [id], onDelete: Cascade)
   actor   Account? @relation("NotificationActor", fields: [actorId], references: [id])
 
+  @@index([accountId, readAt, createdAt(sort: Desc)])
   @@map("notification")
 }
 
