@@ -6,9 +6,9 @@ year: 2026
 title: Specialized S-Works Epic 8
 one_liner: 120mm XC 全避震、FACT 12m 碳纤车架和 Flight Attendant 电子悬挂，服务于竞赛与高速越野。
 price:
-  min: 14999.99
-  max: 14999.99
-  currency: USD
+  min: 108000
+  max: 108000
+  currency: CNY
 specs:
   bikeType: xc
   frameMaterial: S-Works FACT 12m Carbon

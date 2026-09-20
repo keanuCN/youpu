@@ -6,9 +6,9 @@ year: 2024
 title: GoPro HERO13 Black
 one_liner: 以 5.3K60、HyperSmooth 6.0 和 HB 系列镜头生态为核心，适合重视运动 POV 与后期裁切的用户。
 price:
-  min: 379.99
-  max: 379.99
-  currency: USD
+  min: 2736
+  max: 2736
+  currency: CNY
 specs:
   cameraType: action
   sensor: 1/1.9 英寸 CMOS，27.6MP

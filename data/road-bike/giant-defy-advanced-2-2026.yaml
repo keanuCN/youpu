@@ -6,9 +6,9 @@ year: 2026
 title: Giant Defy Advanced 2
 one_liner: 以 Advanced 级碳纤车架、40mm 最大胎容和 Shimano 105 为核心，适合长途、烂路和不想被姿势拖累的骑手。
 price:
-  min: 3300
-  max: 3300
-  currency: USD
+  min: 23760
+  max: 23760
+  currency: CNY
 specs:
   bikeType: endurance
   frameMaterial: Advanced-grade Composite

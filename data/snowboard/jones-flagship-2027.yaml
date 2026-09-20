@@ -6,9 +6,9 @@ year: 2027
 title: Men's Flagship Snowboard | Jones
 one_liner: 以陡坡、深雪和技术型自由滑为核心的定向板，边刃支撑和粉雪浮力都偏强，适合有经验的全山滑手。
 price:
-  min: 749.95
-  max: 749.95
-  currency: USD
+  min: 5400
+  max: 5400
+  currency: CNY
 specs:
   length: 161
   weight: 3100

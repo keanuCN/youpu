@@ -6,9 +6,9 @@ year: 2027
 title: CAPiTA D.O.A. Snowboard 2027 CAPiTA Snowboards | NA
 one_liner: 兼顾度假区全山和自由式的经典双向板，响应、弹性和可玩性平衡，适合想在跳台、侧击和日常巡航之间切换的滑手。
 price:
-  min: 599.95
-  max: 599.95
-  currency: USD
+  min: 4320
+  max: 4320
+  currency: CNY
 specs:
   length: 156
   effectiveEdge: 1234

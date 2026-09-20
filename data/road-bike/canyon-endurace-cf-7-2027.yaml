@@ -6,9 +6,9 @@ year: 2027
 title: Canyon Endurace CF 7
 one_liner: 以碳纤车架、38mm 胎容和 Shimano 105 机械套件为核心，适合把舒适和效率放在一起的长距离公路骑行。
 price:
-  min: 2999
-  max: 2999
-  currency: USD
+  min: 21593
+  max: 21593
+  currency: CNY
 specs:
   bikeType: endurance
   frameMaterial: Carbon (CF)

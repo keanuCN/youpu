@@ -6,9 +6,9 @@ year: 2027
 title: CAPiTA The Navigator Snowboard 2027 CAPiTA Snowboards | NA
 one_liner: 为粉雪和野外地形准备的定向板，强调板头浮力、稳定巡航和路线选择，适合把滑行重点放在非压雪区域的用户。
 price:
-  min: 649.95
-  max: 649.95
-  currency: USD
+  min: 4680
+  max: 4680
+  currency: CNY
 specs:
   length: 161
   effectiveEdge: 1216

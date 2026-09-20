@@ -6,9 +6,9 @@ year: 2026
 title: Giant TCR Advanced Pro 0 AXS
 one_liner: 以 Advanced 级碳纤车架、SRAM Force AXS 和功率计构成均衡竞赛平台，适合爬坡、下坡和全能团骑。
 price:
-  min: 7000
-  max: 7000
-  currency: USD
+  min: 50400
+  max: 50400
+  currency: CNY
 specs:
   bikeType: race
   frameMaterial: Advanced-grade Composite

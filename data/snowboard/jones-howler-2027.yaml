@@ -6,9 +6,9 @@ year: 2027
 title: Men's Howler Snowboard | Jones
 one_liner: 把强力正拱和自由式动作结合起来的高响应定向板，适合在技术地形、跳台和高速巡航之间切换的高手。
 price:
-  min: 699.95
-  max: 699.95
-  currency: USD
+  min: 5040
+  max: 5040
+  currency: CNY
 specs:
   length: 158
   weight: 2800

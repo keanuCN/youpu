@@ -6,9 +6,9 @@ year: 2027
 title: The Matriarch CAPiTA Snowboards | NA
 one_liner: 面向精准压弯和自然地形流动的定向正拱板，兼顾高速度支撑与地形变化，适合进阶全山滑行。
 price:
-  min: 729.95
-  max: 729.95
-  currency: USD
+  min: 5256
+  max: 5256
+  currency: CNY
 specs:
   length: 158
   effectiveEdge: 1180

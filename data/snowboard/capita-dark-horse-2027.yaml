@@ -6,9 +6,9 @@ year: 2027
 title: CAPiTA Dark Horse Snowboard 2027 CAPiTA Snowboards | NA
 one_liner: 以较低门槛切入公园和自由式的双向板，保留跳台、侧击与道具所需的灵活性，也能应付日常度假区巡航。
 price:
-  min: 499.95
-  max: 499.95
-  currency: USD
+  min: 3600
+  max: 3600
+  currency: CNY
 specs:
   length: 154
   effectiveEdge: 1188

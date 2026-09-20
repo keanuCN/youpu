@@ -6,9 +6,9 @@ year: 2023
 title: DJI Osmo Action 4
 one_liner: 大底、4K 高帧率和成熟防抖组合，适合作为预算友好的第一台户外运动相机。
 price:
-  min: 239
-  max: 239
-  currency: USD
+  min: 1721
+  max: 1721
+  currency: CNY
 specs:
   cameraType: action
   sensor: 1/1.3 英寸 CMOS

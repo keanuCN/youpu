@@ -6,9 +6,9 @@ year: 2027
 title: Canyon Aeroad CF SLX 7 Di2
 one_liner: 以空力车架、65mm 碳纤轮组和 105 Di2 为主轴，适合把平路速度和竞赛姿态放在第一位的骑手。
 price:
-  min: 4999
-  max: 4999
-  currency: USD
+  min: 35993
+  max: 35993
+  currency: CNY
 specs:
   bikeType: aero
   frameMaterial: Carbon (CF SLX)

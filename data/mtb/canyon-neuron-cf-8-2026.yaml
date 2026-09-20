@@ -6,9 +6,9 @@ year: 2026
 title: Canyon Neuron CF 8
 one_liner: 140mm 全能林道悬挂、碳纤车架和 1x12 传动，适合把爬坡效率与下坡容错放在同一台车上。
 price:
-  min: 2799
-  max: 2799
-  currency: USD
+  min: 20153
+  max: 20153
+  currency: CNY
 specs:
   bikeType: trail
   frameMaterial: Carbon (CF)

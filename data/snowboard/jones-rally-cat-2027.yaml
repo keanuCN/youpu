@@ -6,9 +6,9 @@ year: 2027
 title: Men's Rally Cat Snowboard | Jones
 one_liner: 轻松、灵活且带有明显玩心的全山双向板，适合在压雪道、侧击和小型地形之间不断换线的用户。
 price:
-  min: 499.95
-  max: 499.95
-  currency: USD
+  min: 3600
+  max: 3600
+  currency: CNY
 specs:
   length: 156
   weight: 2700

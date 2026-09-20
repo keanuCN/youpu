@@ -6,9 +6,9 @@ year: 2027
 title: CAPiTA Mega Merc Snowboard 2027 CAPiTA Snowboards | NA
 one_liner: 以全山适应性为核心的高规格定向板，在硬雪、侧country和深雪之间保持强响应，适合想要一块高性能日常板的进阶滑手。
 price:
-  min: 999.95
-  max: 999.95
-  currency: USD
+  min: 7200
+  max: 7200
+  currency: CNY
 specs:
   length: 157
   effectiveEdge: 1215

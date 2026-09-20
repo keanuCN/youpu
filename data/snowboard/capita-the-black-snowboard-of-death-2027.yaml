@@ -6,9 +6,9 @@ year: 2027
 title: CAPiTA The Black Snowboard Of Death Snowboard 2027 CAPiTA Snowboards | NA
 one_liner: 以全地形性能为核心的经典定向板，兼顾高速压雪、变化雪况和粉雪浮力，适合有经验的全山和自由滑手。
 price:
-  min: 749.95
-  max: 749.95
-  currency: USD
+  min: 5400
+  max: 5400
+  currency: CNY
 specs:
   length: 159
   effectiveEdge: 1221

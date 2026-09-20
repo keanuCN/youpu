@@ -2,6 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import {
   computeComposite,
   formatSpecValue,
+  normalizePriceRange,
   parseSpecSchema,
   type CategoryTreeNode,
   type ProductDetail,
@@ -112,6 +113,7 @@ export class CatalogService {
 
     const specSchema = product.category.specSchema ? parseSpecSchema(product.category.specSchema) : null;
     const specs = (product.specs ?? {}) as Record<string, unknown>;
+    const normalizedPrice = normalizeStoredPrice(product.priceMin, product.priceMax, product.priceCurrency);
 
     return {
       id: product.id,
@@ -120,9 +122,9 @@ export class CatalogService {
       model: product.model,
       year: product.year,
       oneLiner: product.oneLiner,
-      priceMin: product.priceMin === null ? null : Number(product.priceMin),
-      priceMax: product.priceMax === null ? null : Number(product.priceMax),
-      priceCurrency: product.priceCurrency,
+      priceMin: normalizedPrice.min,
+      priceMax: normalizedPrice.max,
+      priceCurrency: normalizedPrice.currency,
       coverUrl: product.coverUrl ?? product.images[0]?.url ?? null,
       ratingOverall: product.ratingOverall === null ? null : Number(product.ratingOverall),
       ratingCount: product.ratingCount,
@@ -201,6 +203,7 @@ export class CatalogService {
 export function serializeProductListItem(row: CatalogProductListRow): ProductListItem {
   const schema = row.category.specSchema ? parseSpecSchema(row.category.specSchema) : null;
   const editorialScores = (row.editorialScores ?? null) as Record<string, number> | null;
+  const normalizedPrice = normalizeStoredPrice(row.priceMin, row.priceMax, row.priceCurrency);
   return {
     id: row.id,
     slug: row.slug,
@@ -208,9 +211,9 @@ export function serializeProductListItem(row: CatalogProductListRow): ProductLis
     model: row.model,
     year: row.year,
     oneLiner: row.oneLiner,
-    priceMin: row.priceMin === null ? null : Number(row.priceMin),
-    priceMax: row.priceMax === null ? null : Number(row.priceMax),
-    priceCurrency: row.priceCurrency,
+    priceMin: normalizedPrice.min,
+    priceMax: normalizedPrice.max,
+    priceCurrency: normalizedPrice.currency,
     coverUrl: row.coverUrl ?? row.images[0]?.url ?? null,
     ratingOverall: row.ratingOverall === null ? null : Number(row.ratingOverall),
     ratingCount: row.ratingCount,
@@ -223,6 +226,18 @@ export function serializeProductListItem(row: CatalogProductListRow): ProductLis
     // 卡片展示用的已格式化参数摘要（服务端按 schema 生成，前端零 hardcode）
     highlights: buildHighlights(schema, row.specs),
   };
+}
+
+function normalizeStoredPrice(
+  priceMin: Prisma.Decimal | null,
+  priceMax: Prisma.Decimal | null,
+  priceCurrency: string,
+) {
+  return normalizePriceRange({
+    min: priceMin === null ? null : Number(priceMin),
+    max: priceMax === null ? null : Number(priceMax),
+    currency: priceCurrency,
+  });
 }
 
 function pickListSpecs(schema: SpecSchema | null, raw: unknown): Record<string, unknown> {
