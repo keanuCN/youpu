@@ -102,6 +102,7 @@ export type AdminCategoryPatch = z.infer<typeof adminCategoryPatchSchema>;
 export const adminModerationPatchSchema = z
   .object({
     status: z.enum(['open', 'resolved', 'dismissed']).optional(),
+    targetStatus: z.enum(['published', 'hidden', 'rejected']).optional(),
   })
   .strict();
 export type AdminModerationPatch = z.infer<typeof adminModerationPatchSchema>;

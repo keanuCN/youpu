@@ -557,27 +557,136 @@ export class AdminService {
         handler: { select: { id: true, nickname: true } },
       },
     });
-    return rows.map((row) => ({ ...row, createdAt: row.createdAt.toISOString() }));
+    return rows.map((row) => ({
+      ...row,
+      createdAt: row.createdAt.toISOString(),
+      handledAt: row.handledAt?.toISOString() ?? null,
+    }));
   }
 
   async updateReport(id: string, input: AdminModerationPatch, actorId?: string) {
     const body = adminModerationPatchSchema.parse(input);
-    const existing = await this.prisma.report.findUnique({ where: { id } });
-    if (!existing) throw new NotFoundException(`举报不存在：${id}`);
-    const updated = await this.prisma.report.update({
+    const existing = await this.prisma.report.findUnique({
       where: { id },
-      data: { ...(body.status === undefined ? {} : { status: body.status }) },
-      select: { id: true, targetType: true, targetId: true, reason: true, status: true, createdAt: true },
+      select: { id: true, targetType: true, targetId: true, status: true, handledBy: true, handledAt: true },
     });
+    if (!existing) throw new NotFoundException(`举报不存在：${id}`);
+
+    let productId: string | undefined;
+    if (body.targetStatus !== undefined) {
+      if (existing.targetType === 'rating') {
+        const target = await this.prisma.rating.findUnique({
+          where: { id: existing.targetId },
+          select: { productId: true },
+        });
+        if (!target) throw new NotFoundException(`评分不存在：${existing.targetId}`);
+        productId = target.productId;
+      } else if (existing.targetType === 'reply') {
+        const reply = await this.prisma.ratingReply.findUnique({
+          where: { id: existing.targetId },
+          select: { ratingId: true },
+        });
+        if (!reply) throw new NotFoundException(`回复不存在：${existing.targetId}`);
+        const rating = await this.prisma.rating.findUnique({
+          where: { id: reply.ratingId },
+          select: { productId: true },
+        });
+        if (!rating) throw new NotFoundException(`评分不存在：${reply.ratingId}`);
+        productId = rating.productId;
+      } else {
+        throw new BadRequestException(`暂不支持处理目标类型：${existing.targetType}`);
+      }
+    }
+
+    const handledAt = new Date();
+    const result = await this.prisma.$transaction(async (tx) => {
+      const current = await tx.report.findUnique({
+        where: { id },
+        select: { id: true, targetType: true, targetId: true, status: true, handledBy: true, handledAt: true },
+      });
+      if (!current) throw new NotFoundException(`举报不存在：${id}`);
+
+      let targetStatusBefore: string | undefined;
+      if (body.targetStatus !== undefined) {
+        if (current.targetType === 'rating') {
+          const target = await tx.rating.findUnique({
+            where: { id: current.targetId },
+            select: { productId: true, status: true },
+          });
+          if (!target) throw new NotFoundException(`评分不存在：${current.targetId}`);
+          targetStatusBefore = target.status;
+          await tx.rating.update({ where: { id: current.targetId }, data: { status: body.targetStatus } });
+          await tx.outboxEvent.create({
+            data: {
+              aggregate: 'product',
+              aggregateId: productId ?? target.productId,
+              type: 'rating.changed',
+              payload: { reason: 'report.moderation' },
+            },
+          });
+        } else if (current.targetType === 'reply') {
+          const reply = await tx.ratingReply.findUnique({
+            where: { id: current.targetId },
+            select: { ratingId: true, status: true },
+          });
+          if (!reply) throw new NotFoundException(`回复不存在：${current.targetId}`);
+          const rating = await tx.rating.findUnique({
+            where: { id: reply.ratingId },
+            select: { productId: true },
+          });
+          if (!rating) throw new NotFoundException(`评分不存在：${reply.ratingId}`);
+          targetStatusBefore = reply.status;
+          await tx.ratingReply.update({ where: { id: current.targetId }, data: { status: body.targetStatus } });
+        } else {
+          throw new BadRequestException(`暂不支持处理目标类型：${current.targetType}`);
+        }
+      }
+
+      const updated = await tx.report.update({
+        where: { id },
+        data: { status: body.status ?? current.status, handledBy: actorId ?? null, handledAt },
+        select: {
+          id: true,
+          targetType: true,
+          targetId: true,
+          reporterId: true,
+          reason: true,
+          note: true,
+          status: true,
+          handledBy: true,
+          handledAt: true,
+          createdAt: true,
+          reporter: { select: { id: true, nickname: true, email: true } },
+          handler: { select: { id: true, nickname: true } },
+        },
+      });
+
+      return { before: current, targetStatusBefore, updated };
+    });
+
     await this.recordAudit({
       actorId,
       action: 'moderate',
       entity: 'report',
       entityId: id,
-      before: { status: existing.status },
-      after: { status: updated.status },
+      before: {
+        status: result.before.status,
+        handledBy: result.before.handledBy,
+        handledAt: result.before.handledAt,
+        targetStatus: result.targetStatusBefore ?? null,
+      },
+      after: {
+        status: result.updated.status,
+        handledBy: result.updated.handledBy,
+        handledAt: result.updated.handledAt,
+        targetStatus: body.targetStatus ?? result.targetStatusBefore ?? null,
+      },
     });
-    return updated;
+    return {
+      ...result.updated,
+      createdAt: result.updated.createdAt.toISOString(),
+      handledAt: result.updated.handledAt?.toISOString() ?? null,
+    };
   }
 
   async listRatings(status?: string) {
@@ -597,6 +706,14 @@ export class AdminService {
       content: row.content,
       helpfulCount: row.helpfulCount,
       status: row.status,
+      moderationRisk: row.moderationRisk,
+      moderationReasons: Array.isArray(row.moderationReasons)
+        ? row.moderationReasons.filter((reason): reason is string => typeof reason === 'string')
+        : [],
+      riderProfile:
+        row.riderProfile && typeof row.riderProfile === 'object' && !Array.isArray(row.riderProfile)
+          ? (row.riderProfile as Record<string, unknown>)
+          : {},
       createdAt: row.createdAt.toISOString(),
       account: row.account,
       product: row.product,

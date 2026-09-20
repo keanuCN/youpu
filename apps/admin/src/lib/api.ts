@@ -244,6 +244,7 @@ export interface AdminReport {
   note: string | null;
   status: 'open' | 'resolved' | 'dismissed';
   createdAt: string;
+  handledAt: string | null;
   reporter: { id: string; nickname: string; email: string | null };
   handler: { id: string; nickname: string } | null;
 }
@@ -254,6 +255,9 @@ export interface AdminModerationRating {
   content: string | null;
   helpfulCount: number;
   status: 'published' | 'hidden' | 'rejected';
+  moderationRisk: 'clear' | 'watch';
+  moderationReasons: string[];
+  riderProfile: Record<string, unknown>;
   createdAt: string;
   account: { id: string; nickname: string; email: string | null };
   product: { id: string; slug: string; title: string };

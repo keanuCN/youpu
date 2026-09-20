@@ -481,6 +481,37 @@ function moderationTargetLabel(value: string): string {
   return moderationTargetLabels[value] ?? '其他对象';
 }
 
+type ModerationTargetStatus = 'published' | 'hidden' | 'rejected';
+
+function buildReportActionPayload(
+  status: 'open' | 'resolved' | 'dismissed',
+  targetStatus?: ModerationTargetStatus,
+): { status: 'open' | 'resolved' | 'dismissed'; targetStatus?: ModerationTargetStatus } {
+  return targetStatus ? { status, targetStatus } : { status };
+}
+
+function formatModerationRisk(risk: string): string {
+  return risk === 'watch' ? '需关注' : risk === 'clear' ? '低风险' : risk;
+}
+
+const riderLevelLabels: Record<string, string> = {
+  beginner: '新手',
+  intermediate: '中级',
+  advanced: '进阶',
+  expert: '高阶',
+};
+
+function formatRiderProfile(profile: Record<string, unknown>): string {
+  const fields: string[] = [];
+  if (typeof profile.years === 'number') fields.push(`雪龄 ${profile.years} 年`);
+  if (typeof profile.height === 'number') fields.push(`身高 ${profile.height} cm`);
+  if (typeof profile.weight === 'number') fields.push(`体重 ${profile.weight} kg`);
+  if (typeof profile.level === 'string') fields.push(`水平 ${riderLevelLabels[profile.level] ?? profile.level}`);
+  if (typeof profile.boot_size === 'number') fields.push(`鞋码 ${profile.boot_size}`);
+  if (typeof profile.home_resort === 'string' && profile.home_resort) fields.push(`常去雪场 ${profile.home_resort}`);
+  return fields.join(' · ') || '未填写画像';
+}
+
 const qualityFieldLabels: Record<string, string> = {
   image: '缺图片',
   price: '缺价格',
@@ -523,7 +554,20 @@ function fieldsByGroup(schema: SpecSchema): Array<[string, SpecField[]]> {
 }
 
 function statusText(status: string): string {
-  return status === 'published' ? '已发布' : status === 'draft' ? '草稿' : status === 'active' ? '启用' : '停用';
+  const labels: Record<string, string> = {
+    published: '已发布',
+    draft: '草稿',
+    active: '启用',
+    inactive: '停用',
+    open: '待处理',
+    resolved: '已处理',
+    dismissed: '已驳回',
+    hidden: '已隐藏',
+    rejected: '已拒绝',
+    clear: '低风险',
+    watch: '需关注',
+  };
+  return labels[status] ?? status;
 }
 
 export function AdminApp() {
@@ -825,11 +869,14 @@ export function AdminApp() {
     }
   }
 
-  async function updateReportStatus(id: string, status: 'open' | 'resolved' | 'dismissed') {
+  async function updateReportStatus(id: string, status: 'open' | 'resolved' | 'dismissed', targetStatus?: ModerationTargetStatus) {
     if (!token) return;
     setBusyAction(`report-${id}`);
     try {
-      await callAdmin(`/moderation/reports/${id}`, { method: 'PATCH', body: { status } });
+      await callAdmin(`/moderation/reports/${id}`, {
+        method: 'PATCH',
+        body: buildReportActionPayload(status, targetStatus),
+      });
       await refreshModeration();
       setNotice({ kind: 'success', text: '举报状态已更新' });
     } catch (error) {
@@ -1448,11 +1495,11 @@ export function AdminApp() {
         <div className="analytics-grid analytics-grid-secondary">
           <section className="data-panel table-panel">
             <PanelHeader eyebrow="举报队列" title="举报记录" meta={`${reports.length} 条已加载`} />
-            {reports.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>目标</th><th>原因</th><th>举报人</th><th>状态</th><th>时间</th><th /></tr></thead><tbody>{reports.map((report) => <tr key={report.id}><td><strong>{moderationTargetLabel(report.targetType)}</strong><small className="table-sub">{report.targetId}</small></td><td><strong>{report.reason}</strong>{report.note ? <small className="table-sub">{report.note}</small> : null}</td><td>{report.reporter.nickname}<small className="table-sub">{report.reporter.email || report.reporter.id}</small></td><td><StatusBadge status={report.status} /></td><td><time className="table-sub">{formatDate(report.createdAt)}</time></td><td>{report.status === 'open' ? <div className="inline-actions"><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'resolved')}>处理</button><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'dismissed')}>驳回</button></div> : <button className="text-button" onClick={() => void updateReportStatus(report.id, 'open')}>重新打开</button>}</td></tr>)}</tbody></table></div> : <EmptyState title="暂无举报" detail="用户举报内容后会出现在这里。" />}
+            {reports.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>目标</th><th>原因</th><th>举报人</th><th>状态</th><th>时间</th><th /></tr></thead><tbody>{reports.map((report) => <tr key={report.id}><td><strong>{moderationTargetLabel(report.targetType)}</strong><small className="table-sub">{report.targetId}</small></td><td><strong>{report.reason}</strong>{report.note ? <small className="table-sub">{report.note}</small> : null}</td><td>{report.reporter.nickname}<small className="table-sub">{report.reporter.email || report.reporter.id}</small></td><td><StatusBadge status={report.status} />{report.handler ? <small className="table-sub">处理人：{report.handler.nickname}<br />处理时间：{formatDate(report.handledAt)}</small> : null}</td><td><time className="table-sub">{formatDate(report.createdAt)}</time></td><td>{report.status === 'open' ? <div className="inline-actions"><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'resolved')}>保留并处理</button><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'resolved', 'hidden')}>隐藏内容</button><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'resolved', 'rejected')}>拒绝内容</button><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'dismissed')}>驳回举报</button></div> : <button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'open')}>重新打开</button>}</td></tr>)}</tbody></table></div> : <EmptyState title="暂无举报" detail="用户举报内容后会出现在这里。" />}
           </section>
           <section className="data-panel table-panel">
             <PanelHeader eyebrow="评论队列" title="评论状态" meta={`${moderationRatings.length} 条已加载`} />
-            {moderationRatings.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>产品</th><th>作者</th><th>评分 / 内容</th><th>状态</th><th /></tr></thead><tbody>{moderationRatings.map((rating) => <tr key={rating.id}><td><strong>{rating.product.title}</strong><small className="table-sub">{rating.product.slug}</small></td><td>{rating.account.nickname}<small className="table-sub">{rating.account.email || rating.account.id}</small></td><td><strong>{rating.overall.toFixed(1)} 分</strong><small className="table-sub">{rating.content || '无文字内容'} · {rating.helpfulCount} 有帮助</small></td><td><StatusBadge status={rating.status} /></td><td><div className="inline-actions">{rating.status !== 'published' && <button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'published')}>发布</button>}{rating.status === 'published' && <button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'hidden')}>隐藏</button>}<button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'rejected')}>拒绝</button></div></td></tr>)}</tbody></table></div> : <EmptyState title="暂无评论" detail="用户发布实测后会出现在这里。" />}
+            {moderationRatings.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>产品</th><th>作者</th><th>评分 / 内容</th><th>风险与状态</th><th /></tr></thead><tbody>{moderationRatings.map((rating) => <tr key={rating.id}><td><strong>{rating.product.title}</strong><small className="table-sub">{rating.product.slug}</small></td><td>{rating.account.nickname}<small className="table-sub">{rating.account.email || rating.account.id}</small><small className="table-sub">画像：{formatRiderProfile(rating.riderProfile)}</small></td><td><strong>{rating.overall.toFixed(1)} 分</strong><small className="table-sub">{rating.content || '无文字内容'} · {rating.helpfulCount} 有帮助</small></td><td><StatusBadge status={rating.status} /><small className="table-sub">风险：{formatModerationRisk(rating.moderationRisk)}</small><small className="table-sub">原因：{rating.moderationReasons.length ? rating.moderationReasons.join('、') : '无'}</small></td><td><div className="inline-actions">{rating.status !== 'published' && <button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'published')}>发布</button>}{rating.status === 'published' && <button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'hidden')}>隐藏</button>}<button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'rejected')}>拒绝</button></div></td></tr>)}</tbody></table></div> : <EmptyState title="暂无评论" detail="用户发布实测后会出现在这里。" />}
           </section>
         </div>
       </>
