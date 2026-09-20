@@ -1,4 +1,5 @@
 import {
+  normalizePriceRange,
   productCompareResponseSchema,
   productDetailSchema,
   productListResponseSchema,
@@ -6,7 +7,7 @@ import {
   type ProductListItem,
 } from "@youpu/schema";
 import { GEAR, gearOfCategory, getGear } from "../data/boards";
-import { flexBucket, getCategory, isLive } from "../data/categories";
+import { flexBucket, isLive } from "../data/categories";
 import { API_BASE } from "./api";
 import { isAllowedImageUrl, resolveImageUrl } from "./image-url";
 import type { FitGuide, FitGuideRow, GearAnalysis, GearItem, GalleryShot } from "../types";
@@ -102,11 +103,20 @@ function fitGuideOf(value: Record<string, unknown>, fallback?: GearItem): FitGui
   return note ? { rows, note } : { rows };
 }
 
+function priceRangeOf(item: ApiProduct, fallback?: GearItem): { min: number; max: number } {
+  if (item.priceMin !== null || item.priceMax !== null) {
+    const normalized = normalizePriceRange({ min: item.priceMin, max: item.priceMax, currency: item.priceCurrency });
+    return { min: normalized.min ?? 0, max: normalized.max ?? normalized.min ?? 0 };
+  }
+  return {
+    min: fallback?.priceBand.min ?? fallback?.price ?? 0,
+    max: fallback?.priceBand.max ?? fallback?.price ?? 0,
+  };
+}
+
 function priceOf(item: ApiProduct, fallback?: GearItem): number {
-  if (item.priceMin !== null && item.priceMax !== null) return Math.round((item.priceMin + item.priceMax) / 2);
-  if (item.priceMin !== null) return item.priceMin;
-  if (item.priceMax !== null) return item.priceMax;
-  return fallback?.price ?? 0;
+  const range = priceRangeOf(item, fallback);
+  return Math.round((range.min + range.max) / 2);
 }
 
 function analysisOf(item: ApiProduct, fallback?: GearItem): GearAnalysis {
@@ -162,10 +172,7 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
   const categorySlug = "categorySlug" in item ? item.categorySlug : item.category.slug;
   const scores = "editorialScores" in item && item.editorialScores ? item.editorialScores : fallback?.scores ?? {};
   const price = priceOf(item, fallback);
-  const priceBand = {
-    min: item.priceMin ?? fallback?.priceBand.min ?? price,
-    max: item.priceMax ?? fallback?.priceBand.max ?? price,
-  };
+  const priceBand = priceRangeOf(item, fallback);
   const scenesRaw = rawSpecs.scenes;
   const scenes = Array.isArray(scenesRaw)
     ? scenesRaw.filter((scene): scene is string => typeof scene === "string")
@@ -180,10 +187,7 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
     model: item.model,
     year: item.year,
     price,
-    priceCurrency:
-      item.priceCurrency && item.priceCurrency !== "CNY"
-        ? item.priceCurrency
-        : fallback?.priceCurrency ?? getCategory(categorySlug)?.priceCurrency ?? item.priceCurrency ?? "CNY",
+    priceCurrency: "CNY",
     scenes,
     flexValue,
     flexLabel:

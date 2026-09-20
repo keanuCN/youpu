@@ -1,16 +1,12 @@
+import { convertPriceToCny } from "@youpu/schema";
+
 const CURRENCY_SYMBOLS: Record<string, string> = {
   CNY: "¥",
-  USD: "US$",
-  EUR: "€",
-  GBP: "£",
-  JPY: "¥",
 };
 
 export function fmtPrice(n: number, currency = "CNY"): string {
-  const code = currency.toUpperCase();
-  const symbol = CURRENCY_SYMBOLS[code] ?? `${code} `;
-  const digits = code === "CNY" || code === "JPY" ? 0 : 2;
-  return `${symbol}${n.toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: digits })}`;
+  const amount = convertPriceToCny(n, currency);
+  return `${CURRENCY_SYMBOLS.CNY}${amount.toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
 }
 
 export function fmtNum(n: number, digits = 1): string {

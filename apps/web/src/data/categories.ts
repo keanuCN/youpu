@@ -1,3 +1,4 @@
+import { convertPriceToCny } from "@youpu/schema";
 import type { Category, CategoryNode } from "@/types";
 
 /** 品类树：已开档叶子节点由 API 数据驱动，新增品类只需补配置与内容。 */
@@ -476,7 +477,7 @@ const ACTION_CAM: Category = {
   path: ["运动", "影像"],
   status: "live",
   issue: "No.01 / Action Cam Index",
-  priceCurrency: "USD",
+  priceCurrency: "CNY",
   specTemplate: [
     {
       group: "成像与视频",
@@ -540,7 +541,7 @@ const ACTION_CAM: Category = {
         { value: "Insta360", label: "Insta360" },
       ],
     },
-    { key: "price", label: "价格", control: "price", min: 200, max: 500, step: 10 },
+    { key: "price", label: "价格", control: "price", min: convertPriceToCny(200, "USD"), max: convertPriceToCny(500, "USD"), step: 100 },
     {
       key: "years",
       label: "年份",
@@ -600,7 +601,7 @@ const ROAD_BIKE: Category = {
   path: ["运动", "骑行"],
   status: "live",
   issue: "No.01 / Road Bike Index",
-  priceCurrency: "USD",
+  priceCurrency: "CNY",
   specTemplate: [
     {
       group: "车架与定位",
@@ -648,7 +649,7 @@ const ROAD_BIKE: Category = {
         { value: "Giant", label: "Giant" },
       ],
     },
-    { key: "price", label: "价格", control: "price", min: 1500, max: 14000, step: 100 },
+    { key: "price", label: "价格", control: "price", min: convertPriceToCny(1500, "USD"), max: convertPriceToCny(14000, "USD"), step: 1000 },
     {
       key: "years",
       label: "年份",
@@ -708,7 +709,7 @@ const MTB: Category = {
   path: ["运动", "骑行"],
   status: "live",
   issue: "No.01 / MTB Index",
-  priceCurrency: "USD",
+  priceCurrency: "CNY",
   specTemplate: [
     {
       group: "车架与定位",
@@ -763,7 +764,7 @@ const MTB: Category = {
         { value: "Giant", label: "Giant" },
       ],
     },
-    { key: "price", label: "价格", control: "price", min: 2000, max: 16000, step: 500 },
+    { key: "price", label: "价格", control: "price", min: convertPriceToCny(2000, "USD"), max: convertPriceToCny(16000, "USD"), step: 1000 },
     {
       key: "years",
       label: "年份",

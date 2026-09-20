@@ -1,4 +1,5 @@
 import { resolveImageUrl } from "@/lib/image-url";
+import { convertPriceToCny } from "@youpu/schema";
 import type { GearItem } from "@/types";
 import { ACTION_CAM_SCORE_DIMS } from "./categories";
 
@@ -37,7 +38,7 @@ function composite(scores: Scores): number {
 
 function build(draft: ActionCamDraft): GearItem {
   const image = resolveImageUrl(draft.image);
-  const price = draft.price ?? 0;
+  const price = convertPriceToCny(draft.price ?? 0, "USD");
   return {
     id: draft.id,
     categorySlug: "action-cam",
@@ -45,7 +46,7 @@ function build(draft: ActionCamDraft): GearItem {
     model: draft.model,
     year: draft.year,
     price,
-    priceCurrency: "USD",
+    priceCurrency: "CNY",
     scenes: draft.scenes,
     flexValue: 0,
     flexLabel: "不适用",
