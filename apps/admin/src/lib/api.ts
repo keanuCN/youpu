@@ -162,7 +162,7 @@ export interface AdminProductSummary {
   oneLiner: string | null;
   priceMin: number | null;
   priceMax: number | null;
-  priceCurrency: string;
+  priceCurrency: 'CNY';
   coverUrl: string | null;
   specs: Record<string, unknown>;
   editorialScores: Record<string, number> | null;

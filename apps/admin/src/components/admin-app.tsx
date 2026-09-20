@@ -179,7 +179,7 @@ function productFormFromDetail(product: AdminProductDetail): ProductFormState {
     oneLiner: product.oneLiner ?? '',
     priceMin: product.priceMin === null ? '' : String(product.priceMin),
     priceMax: product.priceMax === null ? '' : String(product.priceMax),
-    priceCurrency: product.priceCurrency,
+    priceCurrency: 'CNY',
     coverUrl: product.coverUrl ?? '',
     status: product.status,
     sourceKind: 'manual',
@@ -292,7 +292,7 @@ function normalizeSpecs(specs: Record<string, unknown>, schema: SpecSchema | nul
   return result;
 }
 
-function buildProductPayload(form: ProductFormState, schema: SpecSchema | null): AdminProductInput {
+export function buildProductPayload(form: ProductFormState, schema: SpecSchema | null): AdminProductInput {
   const editorialScores = Object.fromEntries(
     Object.entries(form.editorialScores)
       .filter(([, value]) => value.trim() !== '')
@@ -322,7 +322,7 @@ function buildProductPayload(form: ProductFormState, schema: SpecSchema | null):
     oneLiner: form.oneLiner.trim() || null,
     priceMin: parseNullableNumber('最低价', form.priceMin),
     priceMax: parseNullableNumber('最高价', form.priceMax),
-    priceCurrency: form.priceCurrency.trim().toUpperCase(),
+    priceCurrency: 'CNY',
     coverUrl: form.coverUrl.trim() || null,
     specs: normalizeSpecs(form.specs, schema),
     editorialScores: Object.keys(editorialScores).length > 0 ? editorialScores : null,
@@ -396,9 +396,10 @@ function formatDate(value: string | null | undefined): string {
 
 function formatPrice(product: AdminProductSummary): string {
   if (product.priceMin === null && product.priceMax === null) return '未定价';
-  const min = product.priceMin === null ? '' : String(product.priceMin);
-  const max = product.priceMax === null ? '' : String(product.priceMax);
-  return min && max && min !== max ? `${min}–${max} ${product.priceCurrency}` : `${min || max} ${product.priceCurrency}`;
+  const formatCny = (value: number) => `¥${new Intl.NumberFormat('zh-CN', { maximumFractionDigits: 0 }).format(value)}`;
+  const min = product.priceMin === null ? '' : formatCny(product.priceMin);
+  const max = product.priceMax === null ? '' : formatCny(product.priceMax);
+  return min && max && min !== max ? `${min}–${max}` : min || max;
 }
 
 function formatCompactNumber(value: number): string {
@@ -1239,7 +1240,7 @@ export function AdminApp() {
             <div className="form-section"><div className="form-section-head"><span>02</span><h3>价格与状态</h3></div><div className="form-grid">
               <Field label="最低价"><input type="number" min="0" step="0.01" value={productForm.priceMin} onChange={(event) => setProductForm((current) => current && ({ ...current, priceMin: event.target.value }))} placeholder="—" /></Field>
               <Field label="最高价"><input type="number" min="0" step="0.01" value={productForm.priceMax} onChange={(event) => setProductForm((current) => current && ({ ...current, priceMax: event.target.value }))} placeholder="—" /></Field>
-              <Field label="货币"><input maxLength={3} value={productForm.priceCurrency} onChange={(event) => setProductForm((current) => current && ({ ...current, priceCurrency: event.target.value.toUpperCase() }))} /></Field>
+              <Field label="货币"><input readOnly aria-label="货币" value="人民币（CNY）" /></Field>
               <Field label="发布状态"><select value={productForm.status} onChange={(event) => setProductForm((current) => current && ({ ...current, status: event.target.value as ProductFormState['status'] }))}><option value="draft">草稿</option><option value="published">已发布</option></select></Field>
               <Field label="封面 URL" wide><input type="url" value={productForm.coverUrl} onChange={(event) => setProductForm((current) => current && ({ ...current, coverUrl: event.target.value }))} placeholder="https://..." /></Field>
             </div></div>
