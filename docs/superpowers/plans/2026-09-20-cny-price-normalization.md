@@ -82,7 +82,7 @@ test('rejects invalid values, unknown currencies, and reversed ranges', () => {
 
 - [ ] **Step 2: Run the test to verify it fails**
 
-Run: `pnpm --filter @youpu/schema exec node --import tsx --test src/price.test.ts`
+Run: `pnpm --filter @youpu/api exec node --import tsx --test ../../packages/schema/src/price.test.ts`
 
 Expected: FAIL because `src/price.ts` and its exports do not exist.
 
@@ -120,7 +120,7 @@ Export both functions from `packages/schema/src/index.ts`.
 
 - [ ] **Step 4: Run the test to verify it passes**
 
-Run: `pnpm --filter @youpu/schema exec node --import tsx --test src/price.test.ts`
+Run: `pnpm --filter @youpu/api exec node --import tsx --test ../../packages/schema/src/price.test.ts`
 
 Expected: PASS, 3 tests.
 
@@ -173,7 +173,7 @@ test('admin and API product contracts only expose CNY', () => {
 
 - [ ] **Step 2: Run the test to verify it fails**
 
-Run: `pnpm --filter @youpu/schema exec node --import tsx --test src/price.test.ts`
+Run: `pnpm --filter @youpu/api exec node --import tsx --test ../../packages/schema/src/price.test.ts`
 
 Expected: FAIL because both contracts currently accept arbitrary three-letter currencies.
 
@@ -226,7 +226,7 @@ ALTER TABLE product
 
 - [ ] **Step 5: Run contract tests and migration**
 
-Run: `pnpm --filter @youpu/schema exec node --import tsx --test src/price.test.ts`
+Run: `pnpm --filter @youpu/api exec node --import tsx --test ../../packages/schema/src/price.test.ts`
 
 Run: `pnpm db:migrate`
 
@@ -351,7 +351,7 @@ test('buildProductPayload always emits CNY for product prices', () => {
 });
 ```
 
-Run: `pnpm --filter @youpu/admin exec node --import tsx --test src/components/admin-app.test.ts`
+Run: `pnpm --filter @youpu/api exec node --import tsx --test ../../apps/admin/src/components/admin-app.test.ts`
 
 Expected: FAIL because the current builder copies `form.priceCurrency`.
 
@@ -361,7 +361,7 @@ Export `buildProductPayload`, set the form state to `priceCurrency: 'CNY'`, make
 
 - [ ] **Step 3: Run the focused admin checks**
 
-Run: `pnpm --filter @youpu/admin exec node --import tsx --test src/lib/admin-session.test.ts src/lib/admin-navigation.test.ts src/components/admin-app.test.ts`
+Run: `pnpm --filter @youpu/api exec node --import tsx --test ../../apps/admin/src/lib/admin-session.test.ts ../../apps/admin/src/lib/admin-navigation.test.ts ../../apps/admin/src/components/admin-app.test.ts`
 
 Expected: all tests pass and the payload always contains `priceCurrency: 'CNY'`.
 
