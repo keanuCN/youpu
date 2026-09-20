@@ -4,6 +4,7 @@ import { parse as parseYaml } from 'yaml';
 import {
   brandSeedSchema,
   categorySeedSchema,
+  normalizePriceRange,
   parseSpecSchema,
   productSeedSchema,
   validateSpecs,
@@ -228,6 +229,10 @@ async function importProducts(prisma: PrismaService, dataDir: string, errors: st
           })
         : null;
 
+      const normalizedPrice = seed.price
+        ? normalizePriceRange({ min: seed.price.min, max: seed.price.max, currency: seed.price.currency })
+        : { min: null, max: null, currency: 'CNY' as const };
+
       const productData = {
         categoryId: category.id,
         brandId: brand.id,
@@ -235,9 +240,9 @@ async function importProducts(prisma: PrismaService, dataDir: string, errors: st
         year: seed.year,
         title: seed.title,
         oneLiner: seed.one_liner,
-        priceMin: seed.price?.min,
-        priceMax: seed.price?.max,
-        priceCurrency: seed.price?.currency ?? 'CNY',
+        priceMin: normalizedPrice.min,
+        priceMax: normalizedPrice.max,
+        priceCurrency: normalizedPrice.currency,
         specs: toJsonInput(seed.specs),
         editorialScores: seed.editorial_scores ? toJsonInput(seed.editorial_scores) : undefined,
         status: seed.status,

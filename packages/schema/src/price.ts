@@ -5,7 +5,7 @@ export const PRICE_RATES_TO_CNY = {
   USD: 7.2,
 } as const;
 
-export function convertPriceToCny(value: number, currency = CANONICAL_PRICE_CURRENCY): number {
+export function convertPriceToCny(value: number, currency: string = CANONICAL_PRICE_CURRENCY): number {
   if (!Number.isFinite(value)) throw new Error('价格必须是有限数字');
   if (value < 0) throw new Error('价格必须是非负数字');
 

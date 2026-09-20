@@ -51,7 +51,7 @@ export const adminProductInputSchema = z
     oneLiner: z.string().max(200).nullable().optional(),
     priceMin: z.number().min(0).nullable().optional(),
     priceMax: z.number().min(0).nullable().optional(),
-    priceCurrency: z.string().length(3).default('CNY'),
+    priceCurrency: z.literal('CNY').default('CNY'),
     coverUrl: z.string().url().nullable().optional(),
     specs: z.record(z.string(), z.unknown()).default({}),
     editorialScores: z.record(z.string(), z.number().min(0).max(10)).nullable().optional(),

@@ -32,7 +32,7 @@ export const productListItemSchema = z.object({
   oneLiner: z.string().nullable(),
   priceMin: z.number().nullable(),
   priceMax: z.number().nullable(),
-  priceCurrency: z.string(),
+  priceCurrency: z.literal('CNY'),
   coverUrl: z.string().nullable(),
   ratingOverall: z.number().nullable(),
   ratingCount: z.number(),
