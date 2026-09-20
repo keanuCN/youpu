@@ -4,9 +4,19 @@ import { NotFoundException } from '@nestjs/common';
 import { adminModerationPatchSchema } from '@youpu/schema';
 import { AdminService } from './admin.service';
 
+type TestActor = { id: string; role: 'editor' | 'admin'; status: 'active' | 'disabled' };
+
 const handledAt = new Date('2026-09-20T08:00:00.000Z');
 
-function makePrisma(options: { targetType?: 'rating' | 'reply'; targetStillExists?: boolean } = {}) {
+function makePrisma(
+  options: {
+    targetType?: 'rating' | 'reply';
+    targetStillExists?: boolean;
+    editorActor?: TestActor | null;
+    adminActor?: TestActor | null;
+    auditFails?: boolean;
+  } = {},
+) {
   const targetType = options.targetType ?? 'rating';
   const targetStillExists = options.targetStillExists ?? true;
   const report = {
@@ -35,7 +45,10 @@ function makePrisma(options: { targetType?: 'rating' | 'reply'; targetStillExist
     ratingUpdate?: { data: Record<string, unknown> };
     replyUpdate?: { data: Record<string, unknown> };
     outbox?: { data: Record<string, any> };
-  } = {};
+    auditCreates: Array<{ data: Record<string, any>; transaction: object }>;
+    rootAuditCreates: Array<{ data: Record<string, any> }>;
+    transactionCommitted: boolean;
+  } = { auditCreates: [], rootAuditCreates: [], transactionCommitted: false };
 
   const applyReportUpdate = ({ data }: { data: Record<string, unknown> }) => {
     calls.reportUpdate = { data };
@@ -74,6 +87,13 @@ function makePrisma(options: { targetType?: 'rating' | 'reply'; targetStillExist
         return input.data;
       },
     },
+    auditLog: {
+      create: async (input: { data: Record<string, any> }) => {
+        calls.auditCreates.push({ data: input.data, transaction: tx });
+        if (options.auditFails) throw new Error('audit failed');
+        return input.data;
+      },
+    },
   };
 
   const prisma = {
@@ -106,14 +126,42 @@ function makePrisma(options: { targetType?: 'rating' | 'reply'; targetStillExist
     ratingReply: {
       findUnique: async () => reply,
     },
-    $transaction: async <T>(callback: (transaction: typeof tx) => Promise<T>) => callback(tx),
-    auditLog: { create: async () => undefined },
+    account: {
+      findUnique: async () => options.adminActor ?? null,
+      findFirst: async (input: { where?: { role?: string | { in?: string[] } } }) => {
+        const role = input.where?.role;
+        if (role === 'editor' || (typeof role === 'object' && role.in?.includes('editor'))) {
+          return options.editorActor ?? null;
+        }
+        return options.adminActor ?? null;
+      },
+    },
+    $transaction: async <T>(callback: (transaction: typeof tx) => Promise<T>) => {
+      const result = await callback(tx);
+      calls.transactionCommitted = true;
+      return result;
+    },
+    auditLog: {
+      create: async (input: { data: Record<string, any> }) => {
+        calls.rootAuditCreates.push(input);
+        if (options.auditFails) throw new Error('audit failed');
+        return input.data;
+      },
+    },
   };
 
   return { prisma, calls };
 }
 
-function makeService(options: { targetType?: 'rating' | 'reply'; targetStillExists?: boolean } = {}) {
+function makeService(
+  options: {
+    targetType?: 'rating' | 'reply';
+    targetStillExists?: boolean;
+    editorActor?: TestActor | null;
+    adminActor?: TestActor | null;
+    auditFails?: boolean;
+  } = {},
+) {
   const { prisma, calls } = makePrisma(options);
   return { service: new AdminService(prisma as never, {} as never, {} as never), calls };
 }
@@ -135,6 +183,19 @@ test('resolving a report records the admin and preserves content when no target 
   assert.equal(calls.reportUpdate?.data.handledBy, 'admin-id');
   assert.ok(calls.reportUpdate?.data.handledAt instanceof Date);
   assert.equal(calls.ratingUpdate, undefined);
+  assert.deepEqual(calls.auditCreates[0]?.data.before, {
+    status: 'open',
+    handledBy: null,
+    handledAt: null,
+    targetStatus: 'published',
+  });
+  assert.deepEqual(calls.auditCreates[0]?.data.after, {
+    status: 'resolved',
+    handledBy: 'admin-id',
+    handledAt: (calls.reportUpdate?.data.handledAt as Date).toISOString(),
+    targetStatus: 'published',
+  });
+  assert.equal(calls.rootAuditCreates.length, 0);
 });
 
 test('report action can hide a rating in the same transaction', async () => {
@@ -145,6 +206,51 @@ test('report action can hide a rating in the same transaction', async () => {
   assert.deepEqual(calls.ratingUpdate?.data, { status: 'hidden' });
   assert.equal(calls.outbox?.data.type, 'rating.changed');
   assert.equal(calls.outbox?.data.aggregateId, 'product-id');
+  assert.equal(calls.auditCreates[0]?.data.before.targetStatus, 'published');
+  assert.equal(calls.auditCreates[0]?.data.after.targetStatus, 'hidden');
+  assert.equal(calls.rootAuditCreates.length, 0);
+});
+
+test('legacy-token moderation resolves an active editor fallback and never writes a null handler', async () => {
+  const { service, calls } = makeService({
+    editorActor: { id: 'editor-fallback-id', role: 'editor', status: 'active' },
+  });
+
+  await service.updateReport('report-id', { status: 'resolved' });
+
+  assert.equal(calls.reportUpdate?.data.handledBy, 'editor-fallback-id');
+  assert.equal(calls.auditCreates[0]?.data.actorId, 'editor-fallback-id');
+});
+
+test('legacy-token moderation fails before writing when no valid fallback actor exists', async () => {
+  const { service, calls } = makeService({ editorActor: null, adminActor: null });
+
+  await assert.rejects(() => service.updateReport('report-id', { status: 'resolved' }), /editor\/admin/);
+
+  assert.equal(calls.reportUpdate, undefined);
+  assert.equal(calls.transactionCommitted, false);
+});
+
+test('moderation audit failure aborts the transaction instead of being swallowed', async () => {
+  const { service, calls } = makeService({ auditFails: true });
+
+  await assert.rejects(() => service.updateReport('report-id', { status: 'resolved', targetStatus: 'hidden' }, 'admin-id'), /audit failed/);
+
+  assert.equal(calls.transactionCommitted, false);
+  assert.equal(calls.rootAuditCreates.length, 0);
+});
+
+test('direct rating moderation writes its audit in the same transaction as the rating and outbox', async () => {
+  const { service, calls } = makeService();
+
+  const result = await service.updateRatingStatus('rating-id', { status: 'hidden' }, 'admin-id');
+
+  assert.equal(result.status, 'hidden');
+  assert.deepEqual(calls.ratingUpdate?.data, { status: 'hidden' });
+  assert.equal(calls.outbox?.data.type, 'rating.changed');
+  assert.deepEqual(calls.auditCreates[0]?.data.before, { status: 'published', productId: 'product-id' });
+  assert.deepEqual(calls.auditCreates[0]?.data.after, { status: 'hidden', productId: 'product-id' });
+  assert.equal(calls.rootAuditCreates.length, 0);
 });
 
 test('report action can reject a reply through its owning rating product', async () => {
