@@ -50,7 +50,12 @@ function savedRating(id: string, riderProfile: Record<string, unknown>, helpfulC
 }
 
 test('upsertRating applies the rating limit and persists moderation metadata while published', async () => {
-  const calls: { limit: string[]; upsert?: { create: Record<string, unknown>; update: Record<string, unknown> } } = { limit: [] };
+  const calls: {
+    limit: string[];
+    events: Array<{ data: Record<string, unknown> }>;
+    favoriteQuery?: unknown;
+    upsert?: { create: Record<string, unknown>; update: Record<string, unknown> };
+  } = { limit: [], events: [] };
   const tx = {
     rating: {
       upsert: async (input: { create: Record<string, unknown>; update: Record<string, unknown> }) => {
@@ -58,8 +63,13 @@ test('upsertRating applies the rating limit and persists moderation metadata whi
         return savedRating('rating-1', account.riderProfile);
       },
     },
-    outboxEvent: { create: async () => ({}) },
-    favorite: { findMany: async () => [] },
+    outboxEvent: { create: async (input: { data: Record<string, unknown> }) => { calls.events.push(input); return {}; } },
+    favorite: {
+      findMany: async (input: unknown) => {
+        calls.favoriteQuery = input;
+        return [{ accountId: 'follower-1' }];
+      },
+    },
   };
   const prisma = {
     product: { findFirst: async () => product() },
@@ -84,10 +94,35 @@ test('upsertRating applies the rating limit and persists moderation metadata whi
   assert.equal(calls.upsert?.update.moderationRisk, 'watch');
   assert.deepEqual(calls.upsert?.update.moderationReasons, ['promotion']);
   assert.ok(calls.upsert?.update.moderationCheckedAt instanceof Date);
+  assert.deepEqual(calls.favoriteQuery, {
+    where: { productId: 'product-1', accountId: { not: account.id } },
+    select: { accountId: true },
+  });
+  const notifications = calls.events.filter((event) => event.data.type === 'notification.created');
+  assert.equal(notifications.length, 1);
+  assert.deepEqual(notifications[0]?.data.payload, {
+    accountId: 'follower-1',
+    actorId: account.id,
+    type: 'new_review',
+    targetType: 'product',
+    targetId: 'product-1',
+    payload: {
+      productSlug: 'burton-custom',
+      productTitle: 'Burton Custom',
+      path: '/gear/burton-custom#reviews',
+      anchor: 'rating-1',
+      actorName: account.nickname,
+    },
+  });
 });
 
 test('createReply applies the reply limit and marks duplicate content for review', async () => {
-  const calls: { limit: string[]; duplicateQuery?: unknown; create?: { data: Record<string, unknown> } } = { limit: [] };
+  const calls: {
+    limit: string[];
+    events: Array<{ data: Record<string, unknown> }>;
+    duplicateQuery?: unknown;
+    create?: { data: Record<string, unknown> };
+  } = { limit: [], events: [] };
   const tx = {
     ratingReply: {
       create: async (input: { data: Record<string, unknown> }) => {
@@ -102,10 +137,10 @@ test('createReply applies the reply limit and marks duplicate content for review
         };
       },
     },
-    outboxEvent: { create: async () => ({}) },
+    outboxEvent: { create: async (input: { data: Record<string, unknown> }) => { calls.events.push(input); return {}; } },
   };
   const prisma = {
-    rating: { findUnique: async () => ({ id: 'rating-1', accountId: 'owner-1' }) },
+    rating: { findUnique: async () => ({ id: 'rating-1', accountId: 'owner-1', product: { slug: 'burton-custom' } }) },
     account: { findUnique: async () => ({ id: 'owner-1' }) },
     ratingReply: {
       findFirst: async (input: unknown) => {
@@ -129,6 +164,20 @@ test('createReply applies the reply limit and marks duplicate content for review
   assert.deepEqual(calls.create?.data.moderationReasons, ['promotion', 'duplicate-content']);
   assert.ok(calls.create?.data.moderationCheckedAt instanceof Date);
   assert.equal(calls.create?.data.status, 'published');
+  assert.deepEqual(calls.events[0]?.data.payload, {
+    accountId: 'owner-1',
+    actorId: account.id,
+    type: 'reply',
+    targetType: 'rating',
+    targetId: 'rating-1',
+    payload: {
+      productSlug: 'burton-custom',
+      path: '/gear/burton-custom#reviews',
+      anchor: 'rating-1',
+      actorName: account.nickname,
+      replyId: 'reply-1',
+    },
+  });
 });
 
 test('createReport and toggleHelpful apply their operation limits', async () => {
@@ -152,6 +201,36 @@ test('createReport and toggleHelpful apply their operation limits', async () => 
   await service.toggleHelpful(ratingId, account);
 
   assert.deepEqual(limits, ['account-1:report', 'account-1:helpful']);
+});
+
+test('toggleHelpful emits a targetable notification to the rating author', async () => {
+  const events: Array<{ data: Record<string, unknown> }> = [];
+  const prisma = {
+    rating: {
+      findUnique: async () => ({ id: 'rating-1', accountId: 'owner-1', helpfulCount: 0, product: { slug: 'burton-custom' } }),
+      update: async () => ({ helpfulCount: 1 }),
+    },
+    ratingVote: { findUnique: async () => null, create: async () => ({}) },
+    outboxEvent: { create: async (input: { data: Record<string, unknown> }) => { events.push(input); return {}; } },
+    $transaction: async (callback: (value: unknown) => unknown) => callback(prisma),
+  };
+  const service = new CommunityService(prisma as never, { assertAllowed: async () => {} } as never);
+
+  await service.toggleHelpful('rating-1', account);
+
+  assert.deepEqual(events[0]?.data.payload, {
+    accountId: 'owner-1',
+    actorId: account.id,
+    type: 'helpful',
+    targetType: 'rating',
+    targetId: 'rating-1',
+    payload: {
+      productSlug: 'burton-custom',
+      path: '/gear/burton-custom#reviews',
+      anchor: 'rating-1',
+      actorName: account.nickname,
+    },
+  });
 });
 
 test('listRatings filters and sorts published rows and loads the viewer only for similar sorting', async () => {

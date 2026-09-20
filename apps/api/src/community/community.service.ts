@@ -191,7 +191,13 @@ export class CommunityService {
                 type: 'new_review',
                 targetType: 'product',
                 targetId: product.id,
-                payload: { productSlug: product.slug, productTitle: product.title, actorName: account.nickname },
+                payload: {
+                  productSlug: product.slug,
+                  productTitle: product.title,
+                  path: `/gear/${product.slug}#reviews`,
+                  anchor: saved.id,
+                  actorName: account.nickname,
+                },
               }),
             },
           });
@@ -216,7 +222,10 @@ export class CommunityService {
   }
 
   async toggleHelpful(ratingId: string, account: AccountView) {
-    const rating = await this.prisma.rating.findUnique({ where: { id: ratingId }, select: { id: true, accountId: true, helpfulCount: true } });
+    const rating = await this.prisma.rating.findUnique({
+      where: { id: ratingId },
+      select: { id: true, accountId: true, helpfulCount: true, product: { select: { slug: true } } },
+    });
     if (!rating) throw new NotFoundException('评论不存在');
     await this.communityRateLimit.assertAllowed(account.id, 'helpful');
     const result = await this.prisma.$transaction(async (tx) => {
@@ -240,7 +249,12 @@ export class CommunityService {
               type: 'helpful',
               targetType: 'rating',
               targetId: ratingId,
-              payload: { actorName: account.nickname },
+              payload: {
+                productSlug: rating.product.slug,
+                path: `/gear/${rating.product.slug}#reviews`,
+                anchor: ratingId,
+                actorName: account.nickname,
+              },
             }),
           },
         });
@@ -252,7 +266,10 @@ export class CommunityService {
 
   async createReply(ratingId: string, account: AccountView, input: ReplyInput) {
     const body = replyInputSchema.parse(input);
-    const rating = await this.prisma.rating.findUnique({ where: { id: ratingId }, select: { id: true, accountId: true }, });
+    const rating = await this.prisma.rating.findUnique({
+      where: { id: ratingId },
+      select: { id: true, accountId: true, product: { select: { slug: true } } },
+    });
     if (!rating) throw new NotFoundException('评论不存在');
     if (body.replyTo) {
       const target = await this.prisma.account.findUnique({ where: { id: body.replyTo }, select: { id: true } });
@@ -286,14 +303,20 @@ export class CommunityService {
             aggregate: 'rating',
             aggregateId: ratingId,
             type: 'notification.created',
-            payload: toJsonInput({
-              accountId: rating.accountId,
-              actorId: account.id,
-              type: 'reply',
-              targetType: 'rating',
-              targetId: ratingId,
-              payload: { actorName: account.nickname, replyId: created.id },
-            }),
+              payload: toJsonInput({
+                accountId: rating.accountId,
+                actorId: account.id,
+                type: 'reply',
+                targetType: 'rating',
+                targetId: ratingId,
+                payload: {
+                  productSlug: rating.product.slug,
+                  path: `/gear/${rating.product.slug}#reviews`,
+                  anchor: ratingId,
+                  actorName: account.nickname,
+                  replyId: created.id,
+                },
+              }),
           },
         });
       }

@@ -1,4 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
+import { Prisma } from '../../common/db';
 import { PrismaService } from '../../common/prisma.service';
 import { toJsonInput } from '../../common/json';
 import type { OutboxConsumer, OutboxRow } from '../outbox.types';
@@ -27,16 +28,25 @@ export class NotificationConsumer implements OutboxConsumer {
     const payload = event.payload.payload && typeof event.payload.payload === 'object'
       ? event.payload.payload
       : {};
-    await this.prisma.notification.create({
-      data: {
-        accountId,
-        type,
-        actorId: actorId || null,
-        targetType: targetType || null,
-        targetId: targetId || null,
-        payload: toJsonInput(payload),
-      },
-    });
+    try {
+      await this.prisma.notification.create({
+        data: {
+          accountId,
+          type,
+          actorId: actorId || null,
+          targetType: targetType || null,
+          targetId: targetId || null,
+          sourceEventId: event.id,
+          payload: toJsonInput(payload),
+        },
+      });
+    } catch (error) {
+      if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === 'P2002') {
+        this.logger.debug(`通知事件已处理，跳过重复写入：${event.id}`);
+        return;
+      }
+      throw error;
+    }
     this.logger.debug(`通知已写入 account=${accountId} type=${type}`);
   }
 }
