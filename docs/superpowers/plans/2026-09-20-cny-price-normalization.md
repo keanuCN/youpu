@@ -25,6 +25,8 @@
 - Modify: `packages/schema/src/api.ts` — Product API 币种限定为 CNY。
 - Modify: `packages/schema/src/admin.ts` — 后台 Product 输入币种限定为 CNY。
 - Modify: `apps/api/src/seed/importer.ts` — seed 入库前转换价格。
+- Create: `apps/api/src/catalog/catalog.service.test.ts` — API 序列化的旧币种兼容测试。
+- Modify: `apps/api/src/catalog/catalog.service.ts` — API 输出边界统一规范化为 CNY。
 - Create: `apps/api/prisma/migrations/20260920000000_normalize_product_prices_cny/migration.sql` — 转换已有 Product 行并增加 CNY 检查约束。
 - Modify: `apps/web/src/data/action-cams.ts` — 本地运动相机价格转换为 CNY。
 - Modify: `apps/web/src/data/road-bikes.ts` — 本地公路车价格转换为 CNY。
@@ -35,6 +37,7 @@
 - Create: `apps/web/src/lib/format.test.ts` — 人民币格式化测试。
 - Modify: `apps/admin/src/components/admin-app.tsx` — 移除货币编辑输入，表单固定为人民币。
 - Modify: `apps/admin/src/lib/api.ts` — 产品接口类型币种收窄为 CNY。
+- Modify: `data/**/*.yaml` — 将现有正式 seed 商品中的 USD 金额按固定汇率转换为 CNY。
 
 ### Task 1: 建立共享价格规范化模块
 
@@ -375,7 +378,9 @@ git commit -m "feat: lock admin product prices to CNY"
 ### Task 5: 端到端验证和资料库确认
 
 **Files:**
-- No planned source changes; this task records verification results and applies only test-proven corrections from the preceding tasks.
+- Create: `apps/api/src/catalog/catalog.service.test.ts` — 序列化旧 USD 数据时输出 CNY。
+- Modify: `apps/api/src/catalog/catalog.service.ts` — 列表和详情序列化统一使用共享规范化器。
+- Modify: `data/**/*.yaml` — 现有正式商品资料全部改为 CNY。
 
 - [ ] **Step 1: Rebuild shared contracts**
 
