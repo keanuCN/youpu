@@ -7,3 +7,4 @@ export * from './search';
 export * from './admin';
 export * from './auth';
 export * from './community';
+export * from './price';
