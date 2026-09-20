@@ -9,6 +9,7 @@ export const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:30
 
 const ACCESS_TOKEN_KEY = "youpu:auth:access-token";
 const REFRESH_TOKEN_KEY = "youpu:auth:refresh-token";
+let cloudSessionVersion = 0;
 
 export interface CloudAccount {
   id: string;
@@ -132,12 +133,18 @@ export function hasCloudSession(): boolean {
   return Boolean(getCloudAccessToken());
 }
 
+export function getCloudSessionVersion(): number {
+  return cloudSessionVersion;
+}
+
 export function saveCloudSession(session: CloudSession): void {
+  cloudSessionVersion += 1;
   storage()?.setItem(ACCESS_TOKEN_KEY, session.accessToken);
   storage()?.setItem(REFRESH_TOKEN_KEY, session.refreshToken);
 }
 
 export function clearCloudSession(): void {
+  cloudSessionVersion += 1;
   storage()?.removeItem(ACCESS_TOKEN_KEY);
   storage()?.removeItem(REFRESH_TOKEN_KEY);
 }

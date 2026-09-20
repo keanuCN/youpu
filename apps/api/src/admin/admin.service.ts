@@ -14,8 +14,10 @@ import {
   adminCategoryPatchSchema,
   adminModerationPatchSchema,
   adminRatingModerationPatchSchema,
+  adminAccountPatchSchema,
   parseSpecSchema,
   validateSpecs,
+  type AdminAccountPatch,
   type AdminBrandInput,
   type AdminBrandPatch,
   type AdminCategoryInput,
@@ -33,6 +35,9 @@ import { uuidv7 } from '../common/uuid';
 import { RedisService } from '../common/redis.module';
 import { ElasticService } from '../search/elastic.service';
 import { env } from '../config/env';
+import { buildAnalyticsMetrics } from './analytics-metrics';
+import { assertAccountAccessChangeAllowed } from './admin-account-policy';
+import { selectAuditActor } from './admin-audit-actor';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const chinaDateFormatter = new Intl.DateTimeFormat('en-US', {
@@ -47,6 +52,22 @@ interface AnalyticsSummaryRow {
   unique_visitors: number;
   product_views: number;
   active_accounts: number;
+}
+
+interface AnalyticsFunnelRow {
+  exposed_visitors: number;
+  clicked_visitors: number;
+  viewed_visitors: number;
+  intent_visitors: number;
+}
+
+interface AnalyticsEngagementRow {
+  searches: number;
+  recommend_starts: number;
+  recommend_completions: number;
+  signups: number;
+  ratings: number;
+  replies: number;
 }
 
 interface DailyAnalyticsRow {
@@ -217,6 +238,80 @@ export class AdminService {
     };
   }
 
+  async listAccounts() {
+    const rows = await this.prisma.account.findMany({
+      orderBy: { createdAt: 'desc' },
+      take: 100,
+      select: {
+        id: true,
+        email: true,
+        nickname: true,
+        role: true,
+        status: true,
+        createdAt: true,
+      },
+    });
+
+    return rows.map((row) => ({
+      ...row,
+      createdAt: row.createdAt.toISOString(),
+    }));
+  }
+
+  async updateAccountAccess(id: string, input: AdminAccountPatch, actorId?: string) {
+    const body = adminAccountPatchSchema.parse(input);
+    const result = await this.prisma.$transaction(async (tx) => {
+      const existing = await tx.account.findUnique({
+        where: { id },
+        select: {
+          id: true,
+          email: true,
+          nickname: true,
+          role: true,
+          status: true,
+          createdAt: true,
+        },
+      });
+      if (!existing) throw new NotFoundException(`账号不存在：${id}`);
+
+      const activeAdminCount = await tx.account.count({ where: { role: 'admin', status: 'active' } });
+      assertAccountAccessChangeAllowed(existing, activeAdminCount, body);
+
+      const data: Prisma.AccountUncheckedUpdateInput = {
+        ...(body.role === undefined ? {} : { role: body.role }),
+        ...(body.status === undefined ? {} : { status: body.status }),
+      };
+      const updated = await tx.account.update({
+        where: { id },
+        data,
+        select: {
+          id: true,
+          email: true,
+          nickname: true,
+          role: true,
+          status: true,
+          createdAt: true,
+        },
+      });
+
+      return { before: existing, after: updated };
+    });
+
+    await this.recordAudit({
+      actorId,
+      action: 'update',
+      entity: 'account',
+      entityId: id,
+      before: result.before,
+      after: result.after,
+    });
+
+    return {
+      ...result.after,
+      createdAt: result.after.createdAt.toISOString(),
+    };
+  }
+
   async listAuditLogs(params: AdminAuditLogQuery = {}) {
     const page = Math.max(1, params.page ?? 1);
     const pageSize = Math.min(100, Math.max(1, params.pageSize ?? 50));
@@ -261,13 +356,33 @@ export class AdminService {
     const to = new Date();
     const from = new Date(to.getTime() - rangeDays * DAY_MS);
 
-    const [summaryRows, dailyRows, eventRows, pathRows, productRows, recentRows, system] = await Promise.all([
+    const [summaryRows, funnelRows, engagementRows, dailyRows, eventRows, pathRows, productRows, recentRows, system] = await Promise.all([
       this.prisma.$queryRaw<AnalyticsSummaryRow[]>`
         SELECT
           COUNT(*)::int AS events,
           COUNT(DISTINCT anon_id)::int AS unique_visitors,
           COUNT(*) FILTER (WHERE name = 'detail_view')::int AS product_views,
           COUNT(DISTINCT account_id) FILTER (WHERE account_id IS NOT NULL)::int AS active_accounts
+        FROM event
+        WHERE created_at >= ${from}
+      `,
+      this.prisma.$queryRaw<AnalyticsFunnelRow[]>`
+        SELECT
+          COUNT(DISTINCT anon_id) FILTER (WHERE name = 'expose')::int AS exposed_visitors,
+          COUNT(DISTINCT anon_id) FILTER (WHERE name = 'card_click')::int AS clicked_visitors,
+          COUNT(DISTINCT anon_id) FILTER (WHERE name = 'detail_view')::int AS viewed_visitors,
+          COUNT(DISTINCT anon_id) FILTER (WHERE name IN ('favorite_add', 'outbound_click'))::int AS intent_visitors
+        FROM event
+        WHERE created_at >= ${from}
+      `,
+      this.prisma.$queryRaw<AnalyticsEngagementRow[]>`
+        SELECT
+          COUNT(*) FILTER (WHERE name = 'search')::int AS searches,
+          COUNT(*) FILTER (WHERE name = 'recommend_start')::int AS recommend_starts,
+          COUNT(*) FILTER (WHERE name = 'recommend_complete')::int AS recommend_completions,
+          COUNT(*) FILTER (WHERE name = 'signup')::int AS signups,
+          COUNT(*) FILTER (WHERE name = 'rating_submit')::int AS ratings,
+          COUNT(*) FILTER (WHERE name = 'reply_submit')::int AS replies
         FROM event
         WHERE created_at >= ${from}
       `,
@@ -305,7 +420,7 @@ export class AdminService {
           COALESCE(MAX(b.name_cn), MAX(b.name), '') AS brand,
           COUNT(*)::int AS event_count
         FROM event e
-        LEFT JOIN product p ON p.id::text = e.props->>'product_id'
+        LEFT JOIN product p ON p.id::text = e.props->>'product_id' OR p.slug = e.props->>'product_id'
         LEFT JOIN brand b ON b.id = p.brand_id
         WHERE e.created_at >= ${from}
           AND e.name IN ('expose', 'card_click', 'detail_view', 'favorite_add', 'outbound_click', 'share_card_download')
@@ -336,6 +451,36 @@ export class AdminService {
       active_accounts: 0,
     };
     const dailyMap = new Map(dailyRows.map((row) => [row.date, row]));
+    const funnel = funnelRows[0] ?? {
+      exposed_visitors: 0,
+      clicked_visitors: 0,
+      viewed_visitors: 0,
+      intent_visitors: 0,
+    };
+    const engagement = engagementRows[0] ?? {
+      searches: 0,
+      recommend_starts: 0,
+      recommend_completions: 0,
+      signups: 0,
+      ratings: 0,
+      replies: 0,
+    };
+    const analyticsMetrics = buildAnalyticsMetrics({
+      funnel: {
+        exposedVisitors: Number(funnel.exposed_visitors),
+        clickedVisitors: Number(funnel.clicked_visitors),
+        viewedVisitors: Number(funnel.viewed_visitors),
+        intentVisitors: Number(funnel.intent_visitors),
+      },
+      engagement: {
+        searches: Number(engagement.searches),
+        recommendStarts: Number(engagement.recommend_starts),
+        recommendCompletions: Number(engagement.recommend_completions),
+        signups: Number(engagement.signups),
+        ratings: Number(engagement.ratings),
+        replies: Number(engagement.replies),
+      },
+    });
 
     return {
       rangeDays,
@@ -347,6 +492,8 @@ export class AdminService {
         productViews: Number(summary.product_views),
         activeAccounts: Number(summary.active_accounts),
       },
+      funnel: analyticsMetrics.funnel,
+      engagement: analyticsMetrics.engagement,
       daily: buildDailySeries(rangeDays, dailyMap),
       eventBreakdown: eventRows.map((row) => ({ name: row.name, count: Number(row.count) })),
       topPaths: pathRows.map((row) => ({ path: row.path, count: Number(row.count) })),
@@ -413,7 +560,7 @@ export class AdminService {
     return rows.map((row) => ({ ...row, createdAt: row.createdAt.toISOString() }));
   }
 
-  async updateReport(id: string, input: AdminModerationPatch) {
+  async updateReport(id: string, input: AdminModerationPatch, actorId?: string) {
     const body = adminModerationPatchSchema.parse(input);
     const existing = await this.prisma.report.findUnique({ where: { id } });
     if (!existing) throw new NotFoundException(`举报不存在：${id}`);
@@ -423,6 +570,7 @@ export class AdminService {
       select: { id: true, targetType: true, targetId: true, reason: true, status: true, createdAt: true },
     });
     await this.recordAudit({
+      actorId,
       action: 'moderate',
       entity: 'report',
       entityId: id,
@@ -455,7 +603,7 @@ export class AdminService {
     }));
   }
 
-  async updateRatingStatus(id: string, input: AdminRatingModerationPatch) {
+  async updateRatingStatus(id: string, input: AdminRatingModerationPatch, actorId?: string) {
     const body = adminRatingModerationPatchSchema.parse(input);
     const existing = await this.prisma.rating.findUnique({ where: { id }, select: { productId: true, status: true } });
     if (!existing) throw new NotFoundException(`评分不存在：${id}`);
@@ -467,6 +615,7 @@ export class AdminService {
       return { id: rating.id, status: rating.status, productId: rating.productId };
     });
     await this.recordAudit({
+      actorId,
       action: 'moderate',
       entity: 'rating',
       entityId: id,
@@ -555,7 +704,7 @@ export class AdminService {
     return this.serializeProduct(product, true);
   }
 
-  async createProduct(input: AdminProductInput) {
+  async createProduct(input: AdminProductInput, actorId?: string) {
     const body = adminProductInputSchema.parse(input);
     const [category, brand] = await Promise.all([
       this.prisma.category.findUnique({ where: { slug: body.categorySlug } }),
@@ -615,7 +764,7 @@ export class AdminService {
         return created;
       });
       const result = await this.getProduct(product.id);
-      await this.recordAudit({ action: 'create', entity: 'product', entityId: product.id, after: result });
+      await this.recordAudit({ actorId, action: 'create', entity: 'product', entityId: product.id, after: result });
       return result;
     } catch (error) {
       this.throwPrismaConflict(error, '产品 slug 或品牌/型号/年份已存在');
@@ -623,7 +772,7 @@ export class AdminService {
     }
   }
 
-  async updateProduct(id: string, input: AdminProductPatch) {
+  async updateProduct(id: string, input: AdminProductPatch, actorId?: string) {
     const body = adminProductPatchSchema.parse(input);
     const existing = await this.prisma.product.findUnique({
       where: { id },
@@ -721,7 +870,7 @@ export class AdminService {
           : body.status === 'draft' && existing.status === 'published'
             ? 'hide'
             : 'update';
-      await this.recordAudit({ action, entity: 'product', entityId: id, before: existing, after: result });
+      await this.recordAudit({ actorId, action, entity: 'product', entityId: id, before: existing, after: result });
       return result;
     } catch (error) {
       this.throwPrismaConflict(error, '产品 slug 或品牌/型号/年份已存在');
@@ -737,7 +886,7 @@ export class AdminService {
     return rows.map((brand) => ({ ...brand, productCount: brand._count.products }));
   }
 
-  async createBrand(input: AdminBrandInput) {
+  async createBrand(input: AdminBrandInput, actorId?: string) {
     const body = adminBrandInputSchema.parse(input);
     try {
       const result = await this.prisma.brand.create({
@@ -753,7 +902,7 @@ export class AdminService {
           status: body.status,
         },
       });
-      await this.recordAudit({ action: 'create', entity: 'brand', entityId: result.id, after: result });
+      await this.recordAudit({ actorId, action: 'create', entity: 'brand', entityId: result.id, after: result });
       return result;
     } catch (error) {
       this.throwPrismaConflict(error, '品牌 slug 已存在');
@@ -761,7 +910,7 @@ export class AdminService {
     }
   }
 
-  async updateBrand(id: string, input: AdminBrandPatch) {
+  async updateBrand(id: string, input: AdminBrandPatch, actorId?: string) {
     const body = adminBrandPatchSchema.parse(input);
     const existing = await this.requireBrand(id);
     try {
@@ -778,7 +927,7 @@ export class AdminService {
           ...(body.status === undefined ? {} : { status: body.status }),
         },
       });
-      await this.recordAudit({ action: 'update', entity: 'brand', entityId: id, before: existing, after: result });
+      await this.recordAudit({ actorId, action: 'update', entity: 'brand', entityId: id, before: existing, after: result });
       return result;
     } catch (error) {
       this.throwPrismaConflict(error, '品牌 slug 已存在');
@@ -811,7 +960,7 @@ export class AdminService {
     }));
   }
 
-  async createCategory(input: AdminCategoryInput) {
+  async createCategory(input: AdminCategoryInput, actorId?: string) {
     const body = adminCategoryInputSchema.parse(input);
     const level = await this.levelForParent(body.parentId);
     if (body.specSchema !== undefined && body.specSchema !== null) this.parseCategorySchema(body.specSchema);
@@ -833,7 +982,7 @@ export class AdminService {
           status: body.status,
         },
       });
-      await this.recordAudit({ action: 'create', entity: 'category', entityId: result.id, after: result });
+      await this.recordAudit({ actorId, action: 'create', entity: 'category', entityId: result.id, after: result });
       return result;
     } catch (error) {
       this.throwPrismaConflict(error, '类目 slug 已存在');
@@ -841,7 +990,7 @@ export class AdminService {
     }
   }
 
-  async updateCategory(id: string, input: AdminCategoryPatch) {
+  async updateCategory(id: string, input: AdminCategoryPatch, actorId?: string) {
     const body = adminCategoryPatchSchema.parse(input);
     const existing = await this.prisma.category.findUnique({ where: { id } });
     if (!existing) throw new NotFoundException(`类目不存在：${id}`);
@@ -872,7 +1021,7 @@ export class AdminService {
         where: { id },
         data: categoryUpdateData,
       });
-      await this.recordAudit({ action: 'update', entity: 'category', entityId: id, before: existing, after: result });
+      await this.recordAudit({ actorId, action: 'update', entity: 'category', entityId: id, before: existing, after: result });
       return result;
     } catch (error) {
       this.throwPrismaConflict(error, '类目 slug 已存在');
@@ -881,6 +1030,7 @@ export class AdminService {
   }
 
   private async recordAudit(input: {
+    actorId?: string;
     action: string;
     entity: string;
     entityId?: string;
@@ -888,7 +1038,7 @@ export class AdminService {
     after?: unknown;
   }): Promise<void> {
     try {
-      const actorId = await this.getAuditActorId();
+      const actorId = input.actorId ?? selectAuditActor(null, await this.getAuditActorId());
       await this.prisma.auditLog.create({
         data: {
           actorId,

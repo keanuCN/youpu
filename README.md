@@ -27,7 +27,7 @@ youpu/
 │   ├── web/              # Next.js 用户侧（SSR）
 │   │   ├── src/data/     # 内容包回退数据（API 模式不可用时继续保证浏览）
 │   │   └── scripts/      # export-seed-yaml.ts：内容包 → seed YAML 迁移工具
-│   ├── admin/            # M2 管理端（产品 / 品牌 / 类目 schema 工作台，端口 3002）
+│   ├── admin/            # 管理端（数据分析、资料库、审核、审计与账号权限，端口 3002）
 │   └── api/              # NestJS 后端（Prisma / Redis / ES）
 │       └── prisma/       # schema.prisma + 手写 SQL 迁移
 ├── packages/schema/      # 共享契约（spec_schema 解释器、事件字典、API 响应类型）
@@ -51,7 +51,7 @@ cp apps/web/.env.example apps/web/.env.local              # 前端配置（默�
 
 ```bash
 pnpm dev:web        # http://localhost:3000
-pnpm dev:admin      # http://localhost:3002（需先启动 API，并配置 ADMIN_TOKEN）
+pnpm dev:admin      # http://localhost:3002（需先启动 API）
 ```
 
 页面默认使用 `apps/web/src/data/` 内容包，账号/收藏/对比/评论存本机 localStorage —— **全站可完整浏览**。
@@ -74,13 +74,25 @@ cp .env.example .env                                      # compose 变量（默
 cp apps/api/.env.example apps/api/.env
 pnpm infra:up      # 起 PG + Redis（默认只这两个）；需要 ES/Umami 用 pnpm infra:up:full
 pnpm db:migrate    # 建表（22 张表 + 触发器 + event 按月分区）
-pnpm seed          # 导入类目 / 品牌 / 当前 18 款单板 seed
+pnpm seed          # 导入类目 / 品牌 / 当前 50 条产品 seed（40 单板 + 5 羽毛球拍 + 5 路亚竿）
 pnpm dev           # web:3000 + api:3001
 pnpm dev:admin     # 另开终端启动后台：3002
 ```
 
-启动后台前，请编辑 `apps/api/.env`，把 `ADMIN_TOKEN` 替换为至少 16 位的随机令牌；后台 M2 使用单一 Bearer 令牌，
-并不等同于完整的多账号登录系统。
+默认启动 PostgreSQL + Redis 即可完成基础开发；Elasticsearch 只用于增强搜索和分面，不是 API 可用的必需依赖。
+健康检查 `http://localhost:3001/api/health` 会返回 `db`、`redis`、`es` 三项状态，其中 `es=false` 不代表 API 不可用。
+
+后台现在以已有账号体系登录为主：在 `http://localhost:3002` 使用邮箱和密码登录，账号必须是 `active` 状态且角色为
+`editor` 或 `admin`。`ADMIN_TOKEN` 仍是迁移期间的旧令牌入口，配置为至少 16 位随机值即可；不配置时不会影响账号登录。
+旧令牌只作为兼容入口，不应作为生产环境的长期登录方式。
+
+首次把账号纳入后台时，可先用旧令牌进入后台，或在 PostgreSQL 中执行以下最小初始化（把邮箱替换成实际账号）：
+
+```sql
+UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@example.com';
+```
+
+之后使用账号登录；管理员可以在“账号管理”中调整角色和状态。系统不允许停用或降级最后一个启用中的管理员。
 
 | 服务 | 地址 |
 |---|---|
@@ -177,8 +189,8 @@ pnpm dev:admin     # 另开终端启动后台：3002
 | 阶段 | 内容 | 状态 |
 |---|---|---|
 | M1 脚手架 | monorepo、类目 schema、seed 管线、compose、埋点 SDK + Umami | ✅ 已完成（迁移 / 分区表 / ltree 已在生产 PG 实测） |
-| M2 图鉴流 + 后台基础 | 列表/详情/对比/榜单、全局搜索与筛选、SEO 技术包、后台基础版 | 🚧 内容 API、搜索与后台基础版已落地，本地 Docker 联调与线上部署待续 |
-| M3 社区流 + 审核配置 | 登录/评分评论/收藏/通知、客观分析引擎、问卷版推荐、后台审核队列 | ⏳ |
+| M2 图鉴流 + 后台基础 | 列表/详情/对比/榜单、全局搜索与筛选、SEO 技术包、后台基础版 | 🚧 内容 API、搜索筛选与后台基础版已落地；本地全栈联调与线上部署待续 |
+| M3 社区流 + 审核配置 | 登录/评分评论/收藏/通知、客观分析引擎、问卷版推荐、后台审核队列 | 🚧 认证、问卷和后台审核基础已落地；社区扩展与客观分析等后续功能待续 |
 | M4 运营 | 分享卡图、赛季榜单、AI 对话式推荐 | ⏳ |
 
 ## 文档
@@ -202,8 +214,11 @@ pnpm dev:admin     # 另开终端启动后台：3002
 - ✅ **M2 准备**：spec_schema 对齐原型字段集、15 款原型内容可一键导出为 seed，另有 3 款通过采集器自动通过并通过校验、
   API 响应契约进 `packages/schema`、四项产品决策落地（板型族枚举、编辑评分独立列 `product.editorial_scores`、
   综合指数实时计算、价格区间实时算分位）
-- ✅ **后台 M2 基础版**：`apps/admin` 已提供单一 Bearer 管理令牌登录、产品 / 品牌 / 类目 CRUD、草稿 / 发布、
-  `spec_schema` 驱动参数表单与来源 URL 留痕；图片上传、批量文件导入、细粒度账号权限与审计留到后续版本
+- ✅ **当前分支已落地**：认证、前台 API 内容模式、全局搜索筛选、问卷推荐和后台审核基础
+- ✅ **后台管理**：`apps/admin` 已提供数据分析总览、产品 / 品牌 / 类目 CRUD、草稿 / 发布、`spec_schema` 驱动参数表单、
+  内容审核、操作审计和多账号权限；账号登录支持访问令牌自动续期，旧 Bearer 令牌仍可作为迁移入口。图片上传和批量文件导入留到后续版本
+- ✅ **后台数据分析增强**：总览与数据分析页已提供访客趋势、产品浏览漏斗、搜索 / 推荐 / 社区参与度指标、路径和热门产品分析；热门产品同时支持 UUID 与 slug 关联
 - ✅ **全局搜索与筛选**：`/search` 页面、`GET /api/search`、PostgreSQL 搜索兜底、可选 Elasticsearch 中文分词、URL 筛选状态和内容包回退已完成
-- ⏳ **下一步**：恢复本地 Docker 后执行迁移 / seed，联调搜索 API 与后台 → 线上 API 部署（systemd + 埋点接入）→ 完成线上内容 API 接入；
-  上线后设 `NEXT_PUBLIC_SITE_URL` 并注册各站长平台（Bing/搜狗/百度）
+- ✅ **2026-09-18 本地验收基线**：在 `codex/admin-information-architecture` 分支的 `fee8f19` 基线上，API 健康测试 3/3、前端聚焦测试 20/20、全工作区类型检查和 schema/API/web/admin 生产构建均通过；本地 3000/3001/3002 服务均返回 200
+- ✅ **本地全栈验收**：Docker 基础设施、迁移、seed、API / 用户端 / 后台三服务联调已完成；Elasticsearch 仍为可选增强依赖。
+- ⏳ **下一步**：线上 API systemd 部署 → 生产域名与埋点接入 → 完成线上内容 API 接入；上线后设 `NEXT_PUBLIC_SITE_URL` 并注册各站长平台（Bing/搜狗/百度）。后台批量导入、正式密钥管理、社区扩展和 M4 运营功能仍未完成。

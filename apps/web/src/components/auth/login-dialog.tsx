@@ -10,7 +10,6 @@ import { Label } from "@/components/ui/label";
 import { BRAND } from "@/lib/brand";
 import {
   cloudLogin,
-  cloudMe,
   cloudRegister,
   cloudRequestEmailCode,
   cloudResetPassword,
@@ -18,9 +17,9 @@ import {
 } from "@/lib/api";
 import {
   applyCloudAccount,
-  applyCloudMe,
   mergeGuestDock,
 } from "@/lib/store";
+import { syncCloudSession } from "@/lib/cloud-sync";
 import { cn } from "@/lib/utils";
 
 type EmailMode = "login" | "register" | "forgot";
@@ -98,7 +97,7 @@ export function LoginDialog({
         const session = await cloudRegister(email, password, code, username);
         saveCloudSession(session);
         applyCloudAccount(session.account);
-        void cloudMe().then(applyCloudMe).catch(() => undefined);
+        void syncCloudSession();
       } catch (error) {
         toast.error(errorMessage(error));
         setBusy(false);
@@ -128,7 +127,7 @@ export function LoginDialog({
       const session = await cloudLogin(email, password);
       saveCloudSession(session);
       applyCloudAccount(session.account);
-      void cloudMe().then(applyCloudMe).catch(() => undefined);
+      void syncCloudSession();
     } catch (error) {
       toast.error(errorMessage(error));
       setBusy(false);

@@ -15,10 +15,16 @@ import {
 import { useEffect, useMemo, useState, type FormEvent } from 'react';
 import {
   adminFetch,
+  adminLogin,
+  adminLogout,
+  adminRefresh,
   AdminApiError,
   API_BASE,
   buildProductQuery,
   type AdminBrandRecord,
+  type AdminAccount,
+  type AdminAccountRole,
+  type AdminAccountStatus,
   type AdminCategoryRecord,
   type AdminAnalytics,
   type AdminAuditLogResponse,
@@ -29,8 +35,16 @@ import {
   type AdminReport,
   type AdminModerationRating,
 } from '../lib/api';
+import { visibleAdminSections, type AdminSection } from '../lib/admin-navigation';
+import {
+  clearAdminSession,
+  loadAdminSession,
+  saveAdminSession,
+  type AdminAccountSession,
+  type AdminSession,
+} from '../lib/admin-session';
 
-type Section = 'dashboard' | 'products' | 'brands' | 'categories' | 'import' | 'analytics' | 'moderation' | 'audit';
+type Section = AdminSection;
 type NoticeKind = 'success' | 'error' | 'info';
 type ImageKind = AdminProductInput['images'][number]['kind'];
 type DataSourceKind = NonNullable<AdminProductInput['dataSource']>['kind'];
@@ -106,9 +120,7 @@ interface CategoryFormState {
   recommendConfigText: string;
 }
 
-const STORAGE_KEY = 'youpu.admin.token';
-
-type NavGroup = '工作台' | '资料库' | '内容运营';
+type NavGroup = '工作台' | '资料库' | '内容运营' | '系统管理';
 
 const navItems: Array<{ id: Section; index: string; label: string; group: NavGroup }> = [
   { id: 'dashboard', index: '00', label: '总览', group: '工作台' },
@@ -119,6 +131,7 @@ const navItems: Array<{ id: Section; index: string; label: string; group: NavGro
   { id: 'import', index: '05', label: '采集与导入', group: '资料库' },
   { id: 'moderation', index: '06', label: '内容审核', group: '内容运营' },
   { id: 'audit', index: '07', label: '操作审计', group: '内容运营' },
+  { id: 'accounts', index: '08', label: '账号管理', group: '系统管理' },
 ];
 
 const imageKinds: ImageKind[] = ['base', 'face', 'side', 'shape', 'field', 'card3x4'];
@@ -392,6 +405,10 @@ function formatCompactNumber(value: number): string {
   return new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 1 }).format(value);
 }
 
+function formatRate(value: number | null | undefined): string {
+  return value === null || value === undefined ? '—' : `${value}%`;
+}
+
 function formatShortDate(value: string): string {
   const parts = value.split('-');
   return parts.length === 3 ? `${Number(parts[1])}/${Number(parts[2])}` : value;
@@ -452,6 +469,17 @@ function auditActionLabel(value: string): string {
   return auditActionLabels[value] ?? value;
 }
 
+const moderationTargetLabels: Record<string, string> = {
+  rating: '评论',
+  reply: '回复',
+  product: '产品',
+  account: '账号',
+};
+
+function moderationTargetLabel(value: string): string {
+  return moderationTargetLabels[value] ?? '其他对象';
+}
+
 const qualityFieldLabels: Record<string, string> = {
   image: '缺图片',
   price: '缺价格',
@@ -499,7 +527,11 @@ function statusText(status: string): string {
 
 export function AdminApp() {
   const [hydrated, setHydrated] = useState(false);
+  const [session, setSession] = useState<AdminSession | null>(null);
   const [token, setToken] = useState('');
+  const [loginMode, setLoginMode] = useState<'account' | 'legacy-token'>('account');
+  const [loginEmail, setLoginEmail] = useState('');
+  const [loginPassword, setLoginPassword] = useState('');
   const [loginToken, setLoginToken] = useState('');
   const [sessionState, setSessionState] = useState<'checking' | 'signed-out' | 'signed-in'>('checking');
   const [role, setRole] = useState('');
@@ -519,12 +551,49 @@ export function AdminApp() {
   const [products, setProducts] = useState<AdminProductListResponse | null>(null);
   const [brands, setBrands] = useState<AdminBrandRecord[]>([]);
   const [categories, setCategories] = useState<AdminCategoryRecord[]>([]);
+  const [accounts, setAccounts] = useState<AdminAccount[]>([]);
+  const [accountsBusy, setAccountsBusy] = useState(false);
   const [filters, setFilters] = useState<ProductFilters>({ search: '', status: '', missing: '' });
   const [appliedFilters, setAppliedFilters] = useState<ProductFilters>({ search: '', status: '', missing: '' });
   const [productForm, setProductForm] = useState<ProductFormState | null>(null);
   const [brandForm, setBrandForm] = useState<BrandFormState | null>(null);
   const [categoryForm, setCategoryForm] = useState<CategoryFormState | null>(null);
   const hasOpenEditor = productForm !== null || brandForm !== null || categoryForm !== null;
+  const visibleSections = useMemo(() => new Set(visibleAdminSections(role)), [role]);
+  let refreshPromise: Promise<AdminAccountSession> | null = null;
+
+  async function refreshAccountSession(currentSession: AdminAccountSession): Promise<AdminAccountSession> {
+    if (!refreshPromise) {
+      refreshPromise = adminRefresh(currentSession.refreshToken)
+        .then((response) => {
+          const nextSession: AdminAccountSession = { kind: 'account', ...response };
+          saveAdminSession(window.localStorage, nextSession);
+          setSession(nextSession);
+          setToken(nextSession.accessToken);
+          setRole(nextSession.account.role);
+          return nextSession;
+        })
+        .finally(() => {
+          refreshPromise = null;
+        });
+    }
+    return refreshPromise;
+  }
+
+  async function callAdmin<T>(path: string, options: Parameters<typeof adminFetch>[2] = {}): Promise<T> {
+    const currentSession = session;
+    if (!currentSession) throw new AdminApiError('后台会话不存在', 401);
+    const currentToken = currentSession.kind === 'account' ? currentSession.accessToken : currentSession.token;
+    try {
+      return await adminFetch<T>(currentToken, path, options);
+    } catch (error) {
+      if (!(error instanceof AdminApiError) || error.status !== 401 || currentSession.kind !== 'account') {
+        throw error;
+      }
+      const nextSession = await refreshAccountSession(currentSession);
+      return adminFetch<T>(nextSession.accessToken, path, options);
+    }
+  }
 
   useEffect(() => {
     if (!hasOpenEditor) return;
@@ -536,14 +605,18 @@ export function AdminApp() {
   }, [hasOpenEditor]);
 
   useEffect(() => {
-    const savedToken = window.localStorage.getItem(STORAGE_KEY) ?? '';
-    setToken(savedToken);
+    const savedSession = loadAdminSession(window.localStorage);
+    setSession(savedSession);
+    if (savedSession) {
+      setToken(savedSession.kind === 'account' ? savedSession.accessToken : savedSession.token);
+      setRole(savedSession.kind === 'account' ? savedSession.account.role : '');
+    }
     setHydrated(true);
   }, []);
 
   useEffect(() => {
     if (!hydrated) return;
-    if (!token) {
+    if (!token || !session) {
       setSessionState('signed-out');
       return;
     }
@@ -552,13 +625,13 @@ export function AdminApp() {
     setSessionState('checking');
     (async () => {
       try {
-        const identity = await adminFetch<{ authenticated: boolean; role: string }>(token, '/auth/me');
+        const identity = await callAdmin<{ authenticated: boolean; role: string }>('/auth/me');
         if (!alive) return;
         setRole(identity.role);
         const [nextDashboard, nextBrands, nextCategories] = await Promise.all([
-          adminFetch<AdminDashboard>(token, '/dashboard'),
-          adminFetch<AdminBrandRecord[]>(token, '/brands'),
-          adminFetch<AdminCategoryRecord[]>(token, '/categories'),
+          callAdmin<AdminDashboard>('/dashboard'),
+          callAdmin<AdminBrandRecord[]>('/brands'),
+          callAdmin<AdminCategoryRecord[]>('/categories'),
         ]);
         if (!alive) return;
         setDashboard(nextDashboard);
@@ -568,7 +641,8 @@ export function AdminApp() {
       } catch (error) {
         if (!alive) return;
         if (error instanceof AdminApiError && (error.status === 401 || error.status === 403)) {
-          window.localStorage.removeItem(STORAGE_KEY);
+          clearAdminSession(window.localStorage);
+          setSession(null);
           setToken('');
           setRole('');
           setSessionState('signed-out');
@@ -582,15 +656,14 @@ export function AdminApp() {
     return () => {
       alive = false;
     };
-  }, [hydrated, token]);
+  }, [hydrated, token, session]);
 
   useEffect(() => {
     if (sessionState !== 'signed-in' || !token) return;
     let alive = true;
     (async () => {
       try {
-        const response = await adminFetch<AdminProductListResponse>(
-          token,
+        const response = await callAdmin<AdminProductListResponse>(
           `/products${buildProductQuery({
             search: appliedFilters.search.trim(),
             status: appliedFilters.status,
@@ -613,7 +686,7 @@ export function AdminApp() {
     if (sessionState !== 'signed-in' || !token) return;
     let alive = true;
     setAnalyticsBusy(true);
-    adminFetch<AdminAnalytics>(token, `/analytics?days=${analyticsDays}`)
+    callAdmin<AdminAnalytics>(`/analytics?days=${analyticsDays}`)
       .then((response) => {
         if (alive) setAnalytics(response);
       })
@@ -642,12 +715,18 @@ export function AdminApp() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSection, auditFilters, sessionState, token]);
 
-  async function refreshWorkspace(currentToken = token) {
-    if (!currentToken) return;
+  useEffect(() => {
+    if (sessionState !== 'signed-in' || !token || activeSection !== 'accounts' || role !== 'admin') return;
+    void refreshAccounts();
+    // 账号页只在进入页面时读取，修改后由操作函数主动刷新。
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeSection, role, sessionState, token]);
+
+  async function refreshWorkspace() {
+    if (!session) return;
     const [nextDashboard, nextProducts, nextBrands, nextCategories] = await Promise.all([
-      adminFetch<AdminDashboard>(currentToken, '/dashboard'),
-      adminFetch<AdminProductListResponse>(
-        currentToken,
+      callAdmin<AdminDashboard>('/dashboard'),
+      callAdmin<AdminProductListResponse>(
         `/products${buildProductQuery({
           search: appliedFilters.search.trim(),
           status: appliedFilters.status,
@@ -656,8 +735,8 @@ export function AdminApp() {
           pageSize: 50,
         })}`,
       ),
-      adminFetch<AdminBrandRecord[]>(currentToken, '/brands'),
-      adminFetch<AdminCategoryRecord[]>(currentToken, '/categories'),
+      callAdmin<AdminBrandRecord[]>('/brands'),
+      callAdmin<AdminCategoryRecord[]>('/categories'),
     ]);
     setDashboard(nextDashboard);
     setProducts(nextProducts);
@@ -669,7 +748,7 @@ export function AdminApp() {
     if (!token) return;
     setAnalyticsBusy(true);
     try {
-      setAnalytics(await adminFetch<AdminAnalytics>(token, `/analytics?days=${analyticsDays}`));
+      setAnalytics(await callAdmin<AdminAnalytics>(`/analytics?days=${analyticsDays}`));
     } catch (error) {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
@@ -689,8 +768,8 @@ export function AdminApp() {
     setModerationBusy(true);
     try {
       const [nextReports, nextRatings] = await Promise.all([
-        adminFetch<AdminReport[]>(token, '/moderation/reports'),
-        adminFetch<AdminModerationRating[]>(token, '/moderation/ratings'),
+        callAdmin<AdminReport[]>('/moderation/reports'),
+        callAdmin<AdminModerationRating[]>('/moderation/ratings'),
       ]);
       setReports(nextReports);
       setModerationRatings(nextRatings);
@@ -711,7 +790,7 @@ export function AdminApp() {
       query.set('page', '1');
       query.set('pageSize', '50');
       const suffix = query.toString();
-      setAuditLogs(await adminFetch<AdminAuditLogResponse>(token, `/audit-logs?${suffix}`));
+      setAuditLogs(await callAdmin<AdminAuditLogResponse>(`/audit-logs?${suffix}`));
     } catch (error) {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
@@ -719,11 +798,37 @@ export function AdminApp() {
     }
   }
 
+  async function refreshAccounts() {
+    if (!token || role !== 'admin') return;
+    setAccountsBusy(true);
+    try {
+      setAccounts(await callAdmin<AdminAccount[]>('/accounts'));
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setAccountsBusy(false);
+    }
+  }
+
+  async function updateAccountAccess(id: string, patch: { role?: AdminAccountRole; status?: AdminAccountStatus }) {
+    if (!token || role !== 'admin') return;
+    setBusyAction(`account-${id}`);
+    try {
+      await callAdmin<AdminAccount>(`/accounts/${id}`, { method: 'PATCH', body: patch });
+      await refreshAccounts();
+      setNotice({ kind: 'success', text: '账号权限已更新' });
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setBusyAction(null);
+    }
+  }
+
   async function updateReportStatus(id: string, status: 'open' | 'resolved' | 'dismissed') {
     if (!token) return;
     setBusyAction(`report-${id}`);
     try {
-      await adminFetch(token, `/moderation/reports/${id}`, { method: 'PATCH', body: { status } });
+      await callAdmin(`/moderation/reports/${id}`, { method: 'PATCH', body: { status } });
       await refreshModeration();
       setNotice({ kind: 'success', text: '举报状态已更新' });
     } catch (error) {
@@ -737,7 +842,7 @@ export function AdminApp() {
     if (!token) return;
     setBusyAction(`rating-${id}`);
     try {
-      await adminFetch(token, `/moderation/ratings/${id}`, { method: 'PATCH', body: { status } });
+      await callAdmin(`/moderation/ratings/${id}`, { method: 'PATCH', body: { status } });
       await refreshModeration();
       setNotice({ kind: 'success', text: '评论状态已更新，产品聚合会异步重算' });
     } catch (error) {
@@ -749,19 +854,37 @@ export function AdminApp() {
 
   async function handleLogin(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const value = loginToken.trim();
-    if (value.length < 16) {
-      setNotice({ kind: 'error', text: '管理令牌至少需要 16 个字符' });
-      return;
-    }
     setBusyAction('login');
     setNotice(null);
     try {
-      const identity = await adminFetch<{ authenticated: boolean; role: string }>(value, '/auth/me');
-      window.localStorage.setItem(STORAGE_KEY, value);
-      setRole(identity.role);
-      setToken(value);
-      setNotice({ kind: 'success', text: '管理令牌验证通过' });
+      if (loginMode === 'account') {
+        const email = loginEmail.trim();
+        if (!email || !loginPassword) {
+          setNotice({ kind: 'error', text: '请输入邮箱和密码' });
+          return;
+        }
+        const response = await adminLogin(email, loginPassword);
+        const nextSession: AdminAccountSession = { kind: 'account', ...response };
+        saveAdminSession(window.localStorage, nextSession);
+        setSession(nextSession);
+        setRole(nextSession.account.role);
+        setToken(nextSession.accessToken);
+        setLoginPassword('');
+        setNotice({ kind: 'success', text: '登录成功' });
+      } else {
+        const value = loginToken.trim();
+        if (value.length < 16) {
+          setNotice({ kind: 'error', text: '管理令牌至少需要 16 个字符' });
+          return;
+        }
+        const identity = await adminFetch<{ authenticated: boolean; role: string }>(value, '/auth/me');
+        const nextSession: AdminSession = { kind: 'legacy-token', token: value };
+        saveAdminSession(window.localStorage, nextSession);
+        setSession(nextSession);
+        setRole(identity.role);
+        setToken(value);
+        setNotice({ kind: 'success', text: '管理令牌验证通过' });
+      }
     } catch (error) {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
@@ -769,9 +892,20 @@ export function AdminApp() {
     }
   }
 
-  function logout() {
-    window.localStorage.removeItem(STORAGE_KEY);
+  async function logout() {
+    const currentSession = session;
+    if (currentSession?.kind === 'account') {
+      try {
+        await adminLogout(currentSession.refreshToken);
+      } catch {
+        // 即使退出接口不可用，也要清除本地会话。
+      }
+    }
+    clearAdminSession(window.localStorage);
+    setSession(null);
     setToken('');
+    setLoginEmail('');
+    setLoginPassword('');
     setLoginToken('');
     setRole('');
     setProductForm(null);
@@ -790,7 +924,7 @@ export function AdminApp() {
     setBusyAction(`product:${product.id}`);
     setNotice(null);
     try {
-      const detail = await adminFetch<AdminProductDetail>(token, `/products/${product.id}`);
+      const detail = await callAdmin<AdminProductDetail>(`/products/${product.id}`);
       setProductForm(productFormFromDetail(detail));
     } catch (error) {
       setNotice({ kind: 'error', text: getErrorText(error) });
@@ -808,9 +942,9 @@ export function AdminApp() {
       const selectedCategory = categories.find((category) => category.slug === productForm.categorySlug);
       const payload = buildProductPayload(productForm, schemaForCategory(selectedCategory));
       if (productForm.id) {
-        await adminFetch(token, `/products/${productForm.id}`, { method: 'PATCH', body: payload });
+        await callAdmin(`/products/${productForm.id}`, { method: 'PATCH', body: payload });
       } else {
-        await adminFetch(token, '/products', { method: 'POST', body: payload });
+        await callAdmin('/products', { method: 'POST', body: payload });
       }
       setProductForm(null);
       await refreshWorkspace();
@@ -830,9 +964,9 @@ export function AdminApp() {
     try {
       const payload = buildBrandPayload(brandForm);
       if (brandForm.id) {
-        await adminFetch(token, `/brands/${brandForm.id}`, { method: 'PATCH', body: payload });
+        await callAdmin(`/brands/${brandForm.id}`, { method: 'PATCH', body: payload });
       } else {
-        await adminFetch(token, '/brands', { method: 'POST', body: payload });
+        await callAdmin('/brands', { method: 'POST', body: payload });
       }
       setBrandForm(null);
       await refreshWorkspace();
@@ -852,9 +986,9 @@ export function AdminApp() {
     try {
       const payload = buildCategoryPayload(categoryForm);
       if (categoryForm.id) {
-        await adminFetch(token, `/categories/${categoryForm.id}`, { method: 'PATCH', body: payload });
+        await callAdmin(`/categories/${categoryForm.id}`, { method: 'PATCH', body: payload });
       } else {
-        await adminFetch(token, '/categories', { method: 'POST', body: payload });
+        await callAdmin('/categories', { method: 'POST', body: payload });
       }
       setCategoryForm(null);
       await refreshWorkspace();
@@ -903,25 +1037,31 @@ export function AdminApp() {
           <p className="eyebrow">有谱 / 后台管理 / 第二阶段</p>
           <h1>有谱<br /><em>资料工作台</em></h1>
           <p className="login-copy">产品资料、类目参数与采集状态的单一操作入口。</p>
+          <div className="login-mode-switch" role="tablist" aria-label="登录方式">
+            <button className={loginMode === 'account' ? 'login-mode is-active' : 'login-mode'} type="button" onClick={() => setLoginMode('account')}>账号登录</button>
+            <button className={loginMode === 'legacy-token' ? 'login-mode is-active' : 'login-mode'} type="button" onClick={() => setLoginMode('legacy-token')}>旧令牌登录</button>
+          </div>
           <form onSubmit={handleLogin} className="login-form">
-            <input className="visually-hidden" name="username" autoComplete="username" value="admin" readOnly tabIndex={-1} aria-hidden="true" />
-            <label className="field">
+            {loginMode === 'account' ? <>
+              <label className="field">
+                <span>邮箱</span>
+                <input value={loginEmail} onChange={(event) => setLoginEmail(event.target.value)} type="email" autoComplete="username" placeholder="输入后台账号邮箱" />
+              </label>
+              <label className="field">
+                <span>密码</span>
+                <input value={loginPassword} onChange={(event) => setLoginPassword(event.target.value)} type="password" autoComplete="current-password" placeholder="输入密码" />
+              </label>
+            </> : <label className="field">
               <span>管理令牌</span>
-              <input
-                value={loginToken}
-                onChange={(event) => setLoginToken(event.target.value)}
-                type="password"
-                autoComplete="current-password"
-                placeholder="输入管理令牌"
-              />
-            </label>
+              <input value={loginToken} onChange={(event) => setLoginToken(event.target.value)} type="password" autoComplete="current-password" placeholder="输入管理令牌" />
+            </label>}
             <button className="button button-primary button-block" type="submit" disabled={busyAction === 'login'}>
-              {busyAction === 'login' ? '验证中……' : '进入工作台  →'}
+              {busyAction === 'login' ? '登录中……' : '进入工作台  →'}
             </button>
           </form>
           <div className="login-footnote">
-            <span>鉴权方式 / Bearer 令牌</span>
-            <span>仅限本地会话</span>
+            <span>{loginMode === 'account' ? '账号会话自动续期' : '兼容旧版管理令牌'}</span>
+            <span>仅限本地使用</span>
           </div>
           {notice && <Notice notice={notice} />}
         </section>
@@ -1166,6 +1306,8 @@ export function AdminApp() {
 
   function renderAnalyticsOverview() {
     const summary = analytics?.summary;
+    const funnel = analytics?.funnel;
+    const engagement = analytics?.engagement;
     return (
       <>
         <div className="analytics-note">当前统计窗口：{analytics ? `${formatDate(analytics.from)} — ${formatDate(analytics.to)}` : '读取中……'}</div>
@@ -1183,6 +1325,30 @@ export function AdminApp() {
           <section className="data-panel chart-panel">
             <PanelHeader eyebrow="事件分布" title="埋点事件分布" meta="主要事件" />
             <EventBreakdown items={analytics?.eventBreakdown ?? []} />
+          </section>
+        </div>
+        <div className="analytics-grid analytics-decision-grid">
+          <section className="data-panel">
+            <PanelHeader eyebrow="浏览转化" title="产品浏览漏斗" meta="访客去重" />
+            {funnel ? (
+              <div className="funnel-steps">
+                <FunnelStep label="曝光访客" count={funnel.exposedVisitors} progress={100} detail="看到产品卡片" />
+                <FunnelStep label="点击访客" count={funnel.clickedVisitors} progress={funnel.exposedVisitors ? (funnel.clickedVisitors / funnel.exposedVisitors) * 100 : 0} rate={funnel.clickRate} detail="点击产品卡片" />
+                <FunnelStep label="详情访客" count={funnel.viewedVisitors} progress={funnel.exposedVisitors ? (funnel.viewedVisitors / funnel.exposedVisitors) * 100 : 0} rate={funnel.viewRate} detail="打开产品详情" />
+                <FunnelStep label="意向访客" count={funnel.intentVisitors} progress={funnel.exposedVisitors ? (funnel.intentVisitors / funnel.exposedVisitors) * 100 : 0} rate={funnel.intentRate} detail="收藏或跳转官网" />
+              </div>
+            ) : <EmptyState title="正在读取漏斗" detail="统计数据加载完成后会显示各阶段访客转化。" />}
+          </section>
+          <section className="data-panel">
+            <PanelHeader eyebrow="用户参与" title="关键行为" meta="事件次数" />
+            <div className="engagement-grid">
+              <Metric label="搜索" value={engagement?.searches ?? '—'} detail="搜索行为" />
+              <Metric label="推荐完成率" value={formatRate(engagement?.recommendCompletionRate)} detail={engagement ? `${engagement.recommendCompletions} / ${engagement.recommendStarts} 次` : '推荐流程'} accent />
+              <Metric label="注册" value={engagement?.signups ?? '—'} detail="注册事件" />
+              <Metric label="评分" value={engagement?.ratings ?? '—'} detail="提交评分" />
+              <Metric label="回复" value={engagement?.replies ?? '—'} detail="提交回复" />
+              <Metric label="推荐开始" value={engagement?.recommendStarts ?? '—'} detail="启动推荐流程" />
+            </div>
           </section>
         </div>
         <div className="analytics-grid analytics-grid-secondary">
@@ -1281,7 +1447,7 @@ export function AdminApp() {
         <div className="analytics-grid analytics-grid-secondary">
           <section className="data-panel table-panel">
             <PanelHeader eyebrow="举报队列" title="举报记录" meta={`${reports.length} 条已加载`} />
-            {reports.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>目标</th><th>原因</th><th>举报人</th><th>状态</th><th>时间</th><th /></tr></thead><tbody>{reports.map((report) => <tr key={report.id}><td><strong>{report.targetType}</strong><small className="table-sub">{report.targetId}</small></td><td><strong>{report.reason}</strong>{report.note ? <small className="table-sub">{report.note}</small> : null}</td><td>{report.reporter.nickname}<small className="table-sub">{report.reporter.email || report.reporter.id}</small></td><td><StatusBadge status={report.status} /></td><td><time className="table-sub">{formatDate(report.createdAt)}</time></td><td>{report.status === 'open' ? <div className="inline-actions"><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'resolved')}>处理</button><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'dismissed')}>驳回</button></div> : <button className="text-button" onClick={() => void updateReportStatus(report.id, 'open')}>重新打开</button>}</td></tr>)}</tbody></table></div> : <EmptyState title="暂无举报" detail="用户举报内容后会出现在这里。" />}
+            {reports.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>目标</th><th>原因</th><th>举报人</th><th>状态</th><th>时间</th><th /></tr></thead><tbody>{reports.map((report) => <tr key={report.id}><td><strong>{moderationTargetLabel(report.targetType)}</strong><small className="table-sub">{report.targetId}</small></td><td><strong>{report.reason}</strong>{report.note ? <small className="table-sub">{report.note}</small> : null}</td><td>{report.reporter.nickname}<small className="table-sub">{report.reporter.email || report.reporter.id}</small></td><td><StatusBadge status={report.status} /></td><td><time className="table-sub">{formatDate(report.createdAt)}</time></td><td>{report.status === 'open' ? <div className="inline-actions"><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'resolved')}>处理</button><button className="text-button" disabled={busyAction === `report-${report.id}`} onClick={() => void updateReportStatus(report.id, 'dismissed')}>驳回</button></div> : <button className="text-button" onClick={() => void updateReportStatus(report.id, 'open')}>重新打开</button>}</td></tr>)}</tbody></table></div> : <EmptyState title="暂无举报" detail="用户举报内容后会出现在这里。" />}
           </section>
           <section className="data-panel table-panel">
             <PanelHeader eyebrow="评论队列" title="评论状态" meta={`${moderationRatings.length} 条已加载`} />
@@ -1315,6 +1481,31 @@ export function AdminApp() {
     );
   }
 
+  function renderAccounts() {
+    return (
+      <>
+        <SectionHeader
+          index="08"
+          title="账号管理"
+          description="管理后台账号的角色和状态。为避免锁死后台，最后一个启用中的管理员不能被降级或停用。"
+          action={<button className="button" type="button" onClick={() => void refreshAccounts()} disabled={accountsBusy}>{accountsBusy ? '读取中……' : '刷新账号'}</button>}
+        />
+        <section className="data-panel table-panel">
+          <PanelHeader eyebrow="访问权限" title="后台账号" meta={`${accounts.length} 条记录`} />
+          {accounts.length ? <div className="table-wrap"><table className="data-table accounts-table"><thead><tr><th>账号</th><th>角色</th><th>状态</th><th>创建时间</th></tr></thead><tbody>{accounts.map((account) => {
+            const busy = busyAction === `account-${account.id}`;
+            return <tr key={account.id}>
+              <td><div className="record-title"><span className="record-mark">员</span><span><strong>{account.nickname}</strong><small>{account.email || account.id}</small></span></div></td>
+              <td><select aria-label={`${account.nickname}角色`} value={account.role} disabled={busy} onChange={(event) => void updateAccountAccess(account.id, { role: event.target.value as AdminAccountRole })}><option value="user">普通用户</option><option value="editor">编辑</option><option value="admin">管理员</option></select></td>
+              <td><select aria-label={`${account.nickname}状态`} value={account.status} disabled={busy} onChange={(event) => void updateAccountAccess(account.id, { status: event.target.value as AdminAccountStatus })}><option value="active">启用</option><option value="pending">待启用</option><option value="disabled">停用</option></select></td>
+              <td><time className="table-sub">{formatDate(account.createdAt)}</time></td>
+            </tr>;
+          })}</tbody></table></div> : <EmptyState title="暂无账号" detail="数据库接通后，注册账号会显示在这里。" />}
+        </section>
+      </>
+    );
+  }
+
   function renderContent() {
     if (activeSection === 'products') return renderProducts();
     if (activeSection === 'brands') return renderBrands();
@@ -1323,6 +1514,7 @@ export function AdminApp() {
     if (activeSection === 'analytics') return renderAnalytics();
     if (activeSection === 'moderation') return renderModeration();
     if (activeSection === 'audit') return renderAuditLogs();
+    if (activeSection === 'accounts') return renderAccounts();
     return renderDashboard();
   }
 
@@ -1332,7 +1524,7 @@ export function AdminApp() {
         <div className="brand-lockup"><div className="brand-mark-large">有谱</div><div><strong>后台管理</strong><small>本地环境</small></div></div>
         <div className="sidebar-rule" />
         <p className="sidebar-label">操作模块</p>
-        <nav className="sidebar-nav" aria-label="后台模块">{(['工作台', '资料库', '内容运营'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span>{item.index}</span><strong>{item.label}</strong></button>)}</div>)}</nav>
+        <nav className="sidebar-nav" aria-label="后台模块">{(['工作台', '资料库', '内容运营', '系统管理'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group && visibleSections.has(item.id)).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span>{item.index}</span><strong>{item.label}</strong></button>)}</div>)}</nav>
         <div className="sidebar-bottom"><div className="system-readout"><span className="status-dot status-dot-good" /><span>API 会话 / 权限：{role || 'admin'}</span></div><button className="logout-button" onClick={logout}>退出工作台 <span>↗</span></button></div>
       </aside>
       <main className="admin-main">
@@ -1363,6 +1555,10 @@ function PanelHeader({ eyebrow, title, meta }: { eyebrow: string; title: string;
 
 function Metric({ label, value, detail, accent = false }: { label: string; value: number | string; detail: string; accent?: boolean }) {
   return <article className={accent ? 'metric-card metric-card-accent' : 'metric-card'}><span className="metric-label">{label}</span><strong>{value}</strong><small>{detail}</small></article>;
+}
+
+function FunnelStep({ label, count, progress, rate, detail }: { label: string; count: number; progress: number; rate?: number | null; detail: string }) {
+  return <div className="funnel-step"><div className="funnel-step-head"><span>{label}</span><strong>{formatCompactNumber(count)}</strong></div><div className="funnel-step-track"><i style={{ width: `${Math.max(0, Math.min(100, progress))}%` }} /></div><small>{rate === undefined ? detail : `${detail} · 较上一步 ${formatRate(rate)}`}</small></div>;
 }
 
 function BoundaryItem({ state, title, detail }: { state: string; title: string; detail: string }) {

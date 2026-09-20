@@ -8,9 +8,11 @@ import {
   Patch,
   Post,
   Query,
+  Req,
   UseGuards,
 } from '@nestjs/common';
 import {
+  adminAccountPatchSchema,
   adminBrandInputSchema,
   adminBrandPatchSchema,
   adminCategoryInputSchema,
@@ -21,6 +23,7 @@ import {
   adminRatingModerationPatchSchema,
   type AdminBrandInput,
   type AdminBrandPatch,
+  type AdminAccountPatch,
   type AdminCategoryInput,
   type AdminCategoryPatch,
   type AdminProductInput,
@@ -30,6 +33,8 @@ import {
 } from '@youpu/schema';
 import { ZodValidationPipe } from '../common/zod-validation.pipe';
 import { AdminGuard } from './admin.guard';
+import type { AdminRequest } from './admin.guard';
+import { AdminRoles } from './admin-roles.decorator';
 import { ADMIN_PRODUCT_MISSING_FIELDS, AdminService, type AdminProductMissingField } from './admin.service';
 import { env } from '../config/env';
 
@@ -39,8 +44,13 @@ export class AdminController {
   constructor(private readonly admin: AdminService) {}
 
   @Get('auth/me')
-  me() {
-    return { authenticated: true, role: env.ADMIN_ROLE };
+  me(@Req() request: AdminRequest) {
+    return {
+      authenticated: true,
+      role: request.admin?.role ?? env.ADMIN_ROLE,
+      source: request.admin?.source ?? 'legacy-token',
+      accountId: request.admin?.accountId ?? null,
+    };
   }
 
   @Get('dashboard')
@@ -48,7 +58,24 @@ export class AdminController {
     return this.admin.dashboard();
   }
 
+  @Get('accounts')
+  @AdminRoles('admin')
+  accounts() {
+    return this.admin.listAccounts();
+  }
+
+  @Patch('accounts/:id')
+  @AdminRoles('admin')
+  updateAccount(
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body(new ZodValidationPipe(adminAccountPatchSchema)) body: AdminAccountPatch,
+    @Req() request: AdminRequest,
+  ) {
+    return this.admin.updateAccountAccess(id, body, request.admin?.accountId ?? undefined);
+  }
+
   @Get('audit-logs')
+  @AdminRoles('admin')
   auditLogs(
     @Query('entity') entity?: string,
     @Query('action') action?: string,
@@ -73,29 +100,35 @@ export class AdminController {
   }
 
   @Get('moderation/reports')
+  @AdminRoles('admin')
   reports(@Query('status') status?: string) {
     return this.admin.listReports(status);
   }
 
   @Patch('moderation/reports/:id')
+  @AdminRoles('admin')
   updateReport(
     @Param('id', ParseUUIDPipe) id: string,
     @Body(new ZodValidationPipe(adminModerationPatchSchema)) body: AdminModerationPatch,
+    @Req() request: AdminRequest,
   ) {
-    return this.admin.updateReport(id, body);
+    return this.admin.updateReport(id, body, request.admin?.accountId ?? undefined);
   }
 
   @Get('moderation/ratings')
+  @AdminRoles('admin')
   moderationRatings(@Query('status') status?: string) {
     return this.admin.listRatings(status);
   }
 
   @Patch('moderation/ratings/:id')
+  @AdminRoles('admin')
   updateRatingStatus(
     @Param('id', ParseUUIDPipe) id: string,
     @Body(new ZodValidationPipe(adminRatingModerationPatchSchema)) body: AdminRatingModerationPatch,
+    @Req() request: AdminRequest,
   ) {
-    return this.admin.updateRatingStatus(id, body);
+    return this.admin.updateRatingStatus(id, body, request.admin?.accountId ?? undefined);
   }
 
   @Get('products')
@@ -125,16 +158,20 @@ export class AdminController {
   }
 
   @Post('products')
-  createProduct(@Body(new ZodValidationPipe(adminProductInputSchema)) body: AdminProductInput) {
-    return this.admin.createProduct(body);
+  createProduct(
+    @Body(new ZodValidationPipe(adminProductInputSchema)) body: AdminProductInput,
+    @Req() request: AdminRequest,
+  ) {
+    return this.admin.createProduct(body, request.admin?.accountId ?? undefined);
   }
 
   @Patch('products/:id')
   updateProduct(
     @Param('id', ParseUUIDPipe) id: string,
     @Body(new ZodValidationPipe(adminProductPatchSchema)) body: AdminProductPatch,
+    @Req() request: AdminRequest,
   ) {
-    return this.admin.updateProduct(id, body);
+    return this.admin.updateProduct(id, body, request.admin?.accountId ?? undefined);
   }
 
   @Get('brands')
@@ -143,16 +180,20 @@ export class AdminController {
   }
 
   @Post('brands')
-  createBrand(@Body(new ZodValidationPipe(adminBrandInputSchema)) body: AdminBrandInput) {
-    return this.admin.createBrand(body);
+  createBrand(
+    @Body(new ZodValidationPipe(adminBrandInputSchema)) body: AdminBrandInput,
+    @Req() request: AdminRequest,
+  ) {
+    return this.admin.createBrand(body, request.admin?.accountId ?? undefined);
   }
 
   @Patch('brands/:id')
   updateBrand(
     @Param('id', ParseUUIDPipe) id: string,
     @Body(new ZodValidationPipe(adminBrandPatchSchema)) body: AdminBrandPatch,
+    @Req() request: AdminRequest,
   ) {
-    return this.admin.updateBrand(id, body);
+    return this.admin.updateBrand(id, body, request.admin?.accountId ?? undefined);
   }
 
   @Get('categories')
@@ -161,16 +202,20 @@ export class AdminController {
   }
 
   @Post('categories')
-  createCategory(@Body(new ZodValidationPipe(adminCategoryInputSchema)) body: AdminCategoryInput) {
-    return this.admin.createCategory(body);
+  createCategory(
+    @Body(new ZodValidationPipe(adminCategoryInputSchema)) body: AdminCategoryInput,
+    @Req() request: AdminRequest,
+  ) {
+    return this.admin.createCategory(body, request.admin?.accountId ?? undefined);
   }
 
   @Patch('categories/:id')
   updateCategory(
     @Param('id', ParseUUIDPipe) id: string,
     @Body(new ZodValidationPipe(adminCategoryPatchSchema)) body: AdminCategoryPatch,
+    @Req() request: AdminRequest,
   ) {
-    return this.admin.updateCategory(id, body);
+    return this.admin.updateCategory(id, body, request.admin?.accountId ?? undefined);
   }
 }
 

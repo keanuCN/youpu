@@ -204,6 +204,29 @@ small,
   margin: 0 0 30px;
 }
 
+.login-mode-switch {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.login-mode {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  padding: 10px 8px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.login-mode:hover,
+.login-mode:focus-visible,
+.login-mode.is-active {
+  border-bottom-color: var(--red);
+  color: var(--ink);
+}
+
 .login-form {
   display: grid;
   gap: 16px;
@@ -586,6 +609,11 @@ small,
 .activity-main,
 .record-title {
   min-width: 0;
+}
+
+.accounts-table select {
+  min-width: 112px;
+  padding: 8px 9px;
 }
 
 .activity-main strong,
@@ -2662,6 +2690,66 @@ body {
   grid-template-columns: minmax(300px, .85fr) minmax(0, 1.15fr);
 }
 
+.analytics-decision-grid {
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+}
+
+.funnel-steps {
+  display: grid;
+  gap: 16px;
+  padding: 8px 20px 20px;
+}
+
+.funnel-step {
+  display: grid;
+  gap: 7px;
+}
+
+.funnel-step-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.funnel-step-head strong {
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.funnel-step-track {
+  height: 8px;
+  overflow: hidden;
+  background: var(--paper-deep);
+}
+
+.funnel-step-track i {
+  display: block;
+  height: 100%;
+  min-width: 0;
+  background: var(--red);
+}
+
+.funnel-step small {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 8px 20px 20px;
+}
+
+.engagement-grid .metric-card {
+  min-height: 110px;
+  padding: 14px;
+}
+
 .chart-panel,
 .analytics-events-panel,
 .system-status-panel {
@@ -3056,6 +3144,10 @@ body {
   .analytics-summary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .analytics-decision-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 620px) {
@@ -3078,6 +3170,12 @@ body {
   }
 
   .traffic-chart-wrap {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .engagement-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     padding-left: 12px;
     padding-right: 12px;
   }

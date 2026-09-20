@@ -2,6 +2,7 @@ import { Controller, Get } from '@nestjs/common';
 import { PrismaService } from '../common/prisma.service';
 import { RedisService } from '../common/redis.module';
 import { ElasticService } from '../search/elastic.service';
+import { checkWithTimeout } from './health-check';
 
 @Controller('health')
 export class HealthController {
@@ -16,7 +17,7 @@ export class HealthController {
     const [db, redis, es] = await Promise.all([
       this.checkDb(),
       this.checkRedis(),
-      this.elastic.ping(),
+      checkWithTimeout(() => this.elastic.ping()),
     ]);
     return { status: db && redis ? 'ok' : 'degraded', db, redis, es };
   }
