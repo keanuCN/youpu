@@ -286,7 +286,7 @@ test('legacy API prices are normalized when mapped for web display', () => {
     brand: { slug: 'dji', name: 'DJI', nameCn: null }, categorySlug: 'action-cam', specs: {}, highlights: [],
   });
   assert.equal(mapped.priceCurrency, 'CNY');
-  assert.equal(mapped.price, 2297);
+  assert.equal(mapped.price, 2517);
   assert.deepEqual(mapped.priceBand, { min: 2297, max: 2736 });
 });
 ```
