@@ -204,6 +204,9 @@ model Rating {
   riderProfile Json     @default("{}") @map("rider_profile")
   source       String   @default("user")
   status       String   @default("published")
+  moderationRisk        String   @default("clear") @map("moderation_risk")
+  moderationReasons     Json     @default("[]") @map("moderation_reasons")
+  moderationCheckedAt   DateTime? @map("moderation_checked_at") @db.Timestamptz(6)
   helpfulCount Int      @default(0) @map("helpful_count")
   createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
   updatedAt    DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
@@ -236,6 +239,9 @@ model RatingReply {
   replyTo   String?  @map("reply_to") @db.Uuid
   content   String
   status    String   @default("published")
+  moderationRisk        String   @default("clear") @map("moderation_risk")
+  moderationReasons     Json     @default("[]") @map("moderation_reasons")
+  moderationCheckedAt   DateTime? @map("moderation_checked_at") @db.Timestamptz(6)
   createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
 
   rating  Rating  @relation(fields: [ratingId], references: [id], onDelete: Cascade)
@@ -255,6 +261,7 @@ model Report {
   note       String?
   status     String   @default("open")
   handledBy  String?  @map("handled_by") @db.Uuid
+  handledAt  DateTime? @map("handled_at") @db.Timestamptz(6)
   createdAt  DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
 
   reporter Account  @relation("Reporter", fields: [reporterId], references: [id])
@@ -314,6 +321,7 @@ model Notification {
   actorId    String?  @map("actor_id") @db.Uuid
   targetType String?  @map("target_type")
   targetId   String?  @map("target_id") @db.Uuid
+  sourceEventId BigInt? @unique @map("source_event_id")
   payload    Json     @default("{}")
   readAt     DateTime? @map("read_at") @db.Timestamptz(6)
   createdAt  DateTime @default(now()) @map("created_at") @db.Timestamptz(6)

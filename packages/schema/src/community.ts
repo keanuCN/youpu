@@ -48,3 +48,13 @@ export type RecommendationInput = z.infer<typeof recommendationInputSchema>;
 
 export const notificationReadSchema = z.object({ read: z.boolean().default(true) }).strict();
 export type NotificationReadInput = z.infer<typeof notificationReadSchema>;
+
+export const moderationRiskSchema = z.enum(['clear', 'watch']);
+export type ModerationRisk = z.infer<typeof moderationRiskSchema>;
+
+export const ratingListQuerySchema = z.object({
+  sort: z.enum(['helpful', 'latest', 'similar']).default('helpful'),
+  profile: z.enum(['all', 'complete']).default('all'),
+  level: riderProfileSchema.shape.level.optional(),
+}).strict();
+export type RatingListQueryInput = z.infer<typeof ratingListQuerySchema>;
