@@ -426,11 +426,7 @@ payload: {
 
 Use `anchor: ratingId` for replies and helpful notifications. For new product reviews, use the newly saved rating ID. Exclude the acting account before creating follower notifications.
 
-- [ ] **Step 5: Fix report handler attribution**
-
-When `AdminService.updateReport` later changes a report status, it must set `handledBy` and `handledAt` in the same update transaction. Keep the notification work in this task limited to community-generated notifications.
-
-- [ ] **Step 6: Run tests and commit**
+- [ ] **Step 5: Run tests and commit**
 
 Run: `pnpm --filter @youpu/api exec tsx --test src/outbox/consumers/notification.consumer.test.ts src/community/community-moderation.test.ts`
 
