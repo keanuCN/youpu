@@ -86,6 +86,36 @@ const REVIEW_COPY: Record<string, ReviewCopy> = {
     showHeight: false,
     showWeight: false,
   },
+  "action-cam": {
+    experienceLabel: "拍摄年限",
+    levelLabel: "拍摄水平",
+    summary: "拍摄年限 / 场景 / 设备",
+    placeLabel: "常用场景",
+    placePlaceholder: "如 骑行 / 滑雪 / 潜水",
+    contentPlaceholder: "在哪些运动或旅行场景使用了多久？画质、防抖、续航哪里超出预期，哪里让你后悔？",
+    showHeight: false,
+    showWeight: false,
+  },
+  "road-bike": {
+    experienceLabel: "骑行年限",
+    levelLabel: "骑行水平",
+    summary: "骑行年限 / 路线 / 车型",
+    placeLabel: "常骑路线",
+    placePlaceholder: "如 城市绕圈 / 山路爬坡 / 长途",
+    contentPlaceholder: "在什么路线、骑了多久？舒适性、爬坡、操控和维护成本哪里超出预期，哪里让你后悔？",
+    showHeight: true,
+    showWeight: true,
+  },
+  mtb: {
+    experienceLabel: "骑行年限",
+    levelLabel: "骑行水平",
+    summary: "骑行年限 / 路线 / 车型",
+    placeLabel: "常骑路线",
+    placePlaceholder: "如 林道 / XC 赛道 / Bike Park",
+    contentPlaceholder: "在什么路线、骑了多久？爬坡、悬挂、下坡操控和维护成本哪里超出预期，哪里让你后悔？",
+    showHeight: true,
+    showWeight: true,
+  },
 };
 
 function reviewCopyForCategory(categorySlug: string): ReviewCopy {

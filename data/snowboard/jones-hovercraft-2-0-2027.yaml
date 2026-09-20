@@ -4,6 +4,11 @@ brand: jones
 model: Hovercraft 2.0
 year: 2027
 title: Hovercraft 2.0 Snowboard | Jones
+one_liner: 体积偏移的冲浪感定向粉雪板，用更宽的板腰换取浮力和低速灵活性，适合深雪、林间和低角度地形。
+price:
+  min: 649.95
+  max: 649.95
+  currency: USD
 specs:
   length: 156
   weight: 3100
@@ -21,7 +26,19 @@ specs:
   scenes:
     - all-mountain
     - powder
-images: []
+editorial_scores:
+  stability: 8.1
+  response: 7.9
+  float: 9.2
+  park: 4.2
+  forgiveness: 7.2
+  value: 7.0
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0641/4722/6759/files/J.26.SNU.HVC-gallery-1.webp?v=1768407048&width=1200"
+    kind: face
+    alt: Jones Hovercraft 2.0 2027 官方产品图
+    source: Jones 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://eu.jonessnowboards.com/products/hovercraft-20-snowboard

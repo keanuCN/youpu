@@ -4,6 +4,11 @@ brand: jones
 model: Flagship
 year: 2027
 title: Men's Flagship Snowboard | Jones
+one_liner: 以陡坡、深雪和技术型自由滑为核心的定向板，边刃支撑和粉雪浮力都偏强，适合有经验的全山滑手。
+price:
+  min: 749.95
+  max: 749.95
+  currency: USD
 specs:
   length: 161
   weight: 3100
@@ -21,7 +26,19 @@ specs:
   scenes:
     - all-mountain
     - powder
-images: []
+editorial_scores:
+  stability: 9.2
+  response: 9.0
+  float: 8.8
+  park: 4.5
+  forgiveness: 5.8
+  value: 6.5
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.FLA-gallery-1.webp?v=1782443915&width=1200"
+    kind: face
+    alt: Jones Flagship 2027 官方产品图
+    source: Jones 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.jonessnowboards.com/products/mens-flagship-snowboard

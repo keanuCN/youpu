@@ -4,6 +4,11 @@ brand: jones
 model: Mind Expander 2.0
 year: 2027
 title: Mind Expander 2.0 Snowboard | Jones
+one_liner: 用冲浪思路重塑全山线路的定向板，适合在粉雪、自然地形和自由式动作中寻找不同走线的进阶用户。
+price:
+  min: 629.95
+  max: 629.95
+  currency: USD
 specs:
   length: 154
   weight: 3000
@@ -21,7 +26,19 @@ specs:
     - all-mountain
     - powder
     - freestyle
-images: []
+editorial_scores:
+  stability: 8.0
+  response: 8.0
+  float: 8.8
+  park: 6.0
+  forgiveness: 6.9
+  value: 7.1
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNU.MEX-gallery-1.webp?v=1782443855&width=1200"
+    kind: face
+    alt: Jones Mind Expander 2.0 2027 官方产品图
+    source: Jones 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.jonessnowboards.com/products/mind-expander-20-snowboard

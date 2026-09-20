@@ -1,4 +1,4 @@
-import { Injectable, Logger, ServiceUnavailableException } from '@nestjs/common';
+import { Injectable, ServiceUnavailableException } from '@nestjs/common';
 import nodemailer from 'nodemailer';
 import type { Transporter } from 'nodemailer';
 import { env } from '../config/env';
@@ -6,18 +6,16 @@ import { env } from '../config/env';
 export type EmailCodePurpose = 'register' | 'reset-password';
 
 export type EmailDeliveryResult =
-  | { delivered: true }
-  | { delivered: false; devCode: string };
+  | { delivered: true };
 
 /**
  * 邮箱验证码投递适配器。
  *
  * 使用标准 SMTP，腾讯企业邮、QQ 邮箱、163、Resend SMTP 等均可接入。
- * 本地未配置 SMTP 时只返回开发验证码；生产环境明确失败，不伪装成已发送。
+ * 开发和生产环境都必须配置真实 SMTP，不返回或记录本地开发验证码。
  */
 @Injectable()
 export class EmailService {
-  private readonly logger = new Logger(EmailService.name);
   private readonly transporter: Transporter | null;
   private readonly from: string | null;
 
@@ -51,11 +49,7 @@ export class EmailService {
     purpose: EmailCodePurpose,
   ): Promise<EmailDeliveryResult> {
     if (!this.transporter || !this.from) {
-      if (env.NODE_ENV === 'production') {
-        throw new ServiceUnavailableException('邮箱服务尚未配置');
-      }
-      this.logger.warn('本地邮箱验证码：' + email + '，验证码 ' + code + '，有效期 10 分钟');
-      return { delivered: false, devCode: code };
+      throw new ServiceUnavailableException('邮箱服务尚未配置，请先配置真实 SMTP');
     }
 
     const purposeLabel = purpose === 'register' ? '完成注册' : '重置密码';

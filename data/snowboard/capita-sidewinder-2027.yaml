@@ -4,6 +4,11 @@ brand: capita
 model: Sidewinder
 year: 2027
 title: CAPiTA Sidewinder Snowboard CAPiTA Snowboards | NA
+one_liner: 为刻滑和压弯设计的定向板，强调边刃抓地、长弧稳定和高速出弯，适合把主要时间放在整备雪道上的滑手。
+price:
+  min: 549.95
+  max: 549.95
+  currency: USD
 specs:
   length: 159
   effectiveEdge: 1225
@@ -20,7 +25,19 @@ specs:
   scenes:
     - carving
     - all-mountain
-images: []
+editorial_scores:
+  stability: 8.7
+  response: 8.8
+  float: 6.9
+  park: 4.6
+  forgiveness: 5.8
+  value: 7.0
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST06-SIDEWINDER-TOP.png?v=1776884613"
+    kind: face
+    alt: CAPiTA Sidewinder 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-sidewinder-mens-snowboard-2027

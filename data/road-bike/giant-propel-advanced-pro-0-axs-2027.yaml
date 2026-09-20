@@ -1,0 +1,48 @@
+slug: giant-propel-advanced-pro-0-axs-2027
+category: road-bike
+brand: giant
+model: Propel Advanced Pro 0 AXS
+year: 2027
+title: Giant Propel Advanced Pro 0 AXS
+one_liner: 以 50mm 碳纤轮组、空力一体把组和 SRAM Force AXS 为核心，面向平路高速、冲刺和竞赛节奏。
+price:
+  min: 7800
+  max: 7800
+  currency: USD
+specs:
+  bikeType: aero
+  frameMaterial: Advanced-grade Composite
+  groupset: SRAM Force AXS E1，带功率计
+  drivetrain: 2x12，35/48
+  brakes: hydraulic-disc
+  wheelset: Giant SLR 0 50 Carbon WheelSystem
+  gearRange: SRAM Force AXS，空力竞赛取向
+  fit: Vector 复合座杆与一体式空力把组
+  geometry:
+    - { size: XS, stack: 515, reach: 377, wheelSize: 700C }
+    - { size: S, stack: 530, reach: 383, wheelSize: 700C }
+    - { size: M, stack: 546, reach: 388, wheelSize: 700C }
+    - { size: M/L, stack: 565, reach: 392, wheelSize: 700C }
+    - { size: L, stack: 582, reach: 402, wheelSize: 700C }
+    - { size: XL, stack: 596, reach: 412, wheelSize: 700C }
+  geometryNote: "Giant Propel Advanced Pro 2027 官方几何表；一体式把组的宽度、把立和座杆设定需在购买前确认。"
+  scenes:
+    - racing
+    - group-ride
+editorial_scores:
+  speedEfficiency: 9.6
+  handling: 8.7
+  comfort: 7.8
+  climbing: 8.3
+  versatility: 7.8
+  value: 7.6
+images:
+  - url: "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/u9r0a1uqpr0rustxbxbn/MY27PropelAdvancedPro0-AXS_ColorAObsidianPulse.jpg"
+    kind: face
+    alt: Giant Propel Advanced Pro 0 AXS 官方产品图
+    source: Giant 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.giant-bicycles.com/us/bikes-propel-advanced-pro-2027
+status: published

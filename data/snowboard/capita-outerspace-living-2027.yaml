@@ -4,6 +4,11 @@ brand: capita
 model: Outerspace Living
 year: 2027
 title: CAPiTA Outerspace Living Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 定向双向与全山混合拱的平衡路线，既能做自由式动作，也能在度假区和浅粉雪里保持稳定的日常可玩性。
+price:
+  min: 529.95
+  max: 529.95
+  currency: USD
 specs:
   length: 154
   effectiveEdge: 1168
@@ -20,7 +25,19 @@ specs:
   scenes:
     - all-mountain
     - freestyle
-images: []
+editorial_scores:
+  stability: 7.6
+  response: 7.7
+  float: 7.0
+  park: 7.4
+  forgiveness: 7.4
+  value: 7.8
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST05-OUTERSPACE-LIVING-TOP.png?v=1776884612"
+    kind: face
+    alt: CAPiTA Outerspace Living 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-outerspace-living-mens-snowboard-2027

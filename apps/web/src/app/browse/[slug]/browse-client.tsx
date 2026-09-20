@@ -70,7 +70,7 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
   }
 
   const patch = (p: Partial<Filters>) => setFilters((f) => ({ ...f, ...p }));
-  const toggleIn = (key: "scenes" | "profileFamily" | "flex" | "brands" | "years", value: string) =>
+  const toggleIn = (key: "scenes" | "profileFamily" | "flex" | "cameraType" | "bikeType" | "brands" | "years", value: string) =>
     setFilters((f) => {
       const list = f[key];
       return { ...f, [key]: list.includes(value) ? list.filter((x) => x !== value) : [...list, value] };
@@ -107,21 +107,21 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
             <div key={def.key}>
               <p className="mono-label mb-3">{def.label}</p>
               <Slider
-                min={PRICE_BOUNDS[0]}
-                max={PRICE_BOUNDS[1]}
+                min={priceBounds[0]}
+                max={priceBounds[1]}
                 step={def.step ?? 100}
                 value={filters.price}
                 onValueChange={(v) => patch({ price: [v[0] ?? PRICE_BOUNDS[0], v[1] ?? PRICE_BOUNDS[1]] as [number, number] })}
                 className="[&_[data-slot=range]]:bg-foreground [&_[data-slot=thumb]]:h-4 [&_[data-slot=thumb]]:w-2 [&_[data-slot=thumb]]:rounded-none [&_[data-slot=thumb]]:border-foreground [&_[data-slot=thumb]]:bg-background [&_[data-slot=track]]:h-[3px]"
               />
               <p className="mono-data mt-3 flex justify-between text-[12px] tnum">
-                <span>{fmtPrice(filters.price[0])}</span>
-                <span>{fmtPrice(filters.price[1])}</span>
+                <span>{fmtPrice(filters.price[0], category.priceCurrency)}</span>
+                <span>{fmtPrice(filters.price[1], category.priceCurrency)}</span>
               </p>
             </div>
           );
         }
-        const key = def.key as "scenes" | "profileFamily" | "flex" | "brands" | "years";
+        const key = def.key as "scenes" | "profileFamily" | "flex" | "cameraType" | "bikeType" | "brands" | "years";
         return (
           <div key={def.key}>
             <p className="mono-label mb-3">

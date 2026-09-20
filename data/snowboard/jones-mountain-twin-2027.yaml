@@ -4,6 +4,11 @@ brand: jones
 model: Mountain Twin
 year: 2027
 title: Men's Mountain Twin Snowboard | Jones
+one_liner: 面向整山和自由式切换的定向双向板，压雪、侧击和自然地形都能保持平衡，适合想用一块板覆盖大多数日子的滑手。
+price:
+  min: 599.95
+  max: 599.95
+  currency: USD
 specs:
   length: 157
   weight: 2800
@@ -22,7 +27,19 @@ specs:
     - all-mountain
     - powder
     - freestyle
-images: []
+editorial_scores:
+  stability: 8.0
+  response: 8.1
+  float: 6.9
+  park: 7.7
+  forgiveness: 7.2
+  value: 7.5
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.MTN-gallery-1_cdsmc7.webp?v=1782443870&width=1200"
+    kind: face
+    alt: Jones Mountain Twin 2027 官方产品图
+    source: Jones 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.jonessnowboards.com/products/mens-mountain-twin-snowboard

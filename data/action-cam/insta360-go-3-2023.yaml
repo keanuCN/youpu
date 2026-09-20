@@ -1,0 +1,39 @@
+slug: insta360-go-3-2023
+category: action-cam
+brand: insta360
+model: GO 3
+year: 2023
+title: Insta360 GO 3
+one_liner: 以极轻机身、磁吸夹具和 Action Pod 为核心的佩戴式相机，适合生活记录和轻量运动。
+specs:
+  cameraType: wearable
+  sensor: 1/2.3 英寸
+  maxVideo: 2.7K@50fps
+  maxFrameRate: 50
+  stabilization: FlowState
+  waterproofDepth: 5
+  weight: 35.5
+  screen: Action Pod 触控屏
+  storage: 内置存储
+  scenes:
+    - cycling
+    - skiing
+    - vlogging
+    - travel
+editorial_scores:
+  imageQuality: 6.8
+  stabilization: 7.5
+  lowLight: 5.8
+  battery: 7.4
+  usability: 9.1
+  value: 8.4
+images:
+  - url: "https://res.insta360.com/static/d78e79ba23e097dc53578184664348ca/GO3.png"
+    kind: face
+    alt: Insta360 GO 3 官方产品图
+    source: Insta360 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://onlinemanual.insta360.com/go3/en-us/specs/hardware
+status: published

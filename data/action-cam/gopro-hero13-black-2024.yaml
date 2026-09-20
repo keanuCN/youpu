@@ -1,0 +1,47 @@
+slug: gopro-hero13-black-2024
+category: action-cam
+brand: gopro
+model: HERO13 Black
+year: 2024
+title: GoPro HERO13 Black
+one_liner: 以 5.3K60、HyperSmooth 6.0 和 HB 系列镜头生态为核心，适合重视运动 POV 与后期裁切的用户。
+price:
+  min: 379.99
+  max: 379.99
+  currency: USD
+specs:
+  cameraType: action
+  sensor: 1/1.9 英寸 CMOS，27.6MP
+  maxVideo: 5.3K@60fps
+  maxFrameRate: 240
+  maxPhoto: 27.6MP
+  stabilization: HyperSmooth 6.0
+  waterproofDepth: 10
+  weight: 154
+  batteryLife: 150
+  screen: 后置触屏 + 前置彩屏
+  storage: microSD
+  fov: 广角，支持 HB 系列镜头
+  scenes:
+    - cycling
+    - motorcycle
+    - skiing
+    - travel
+    - vlogging
+editorial_scores:
+  imageQuality: 9
+  stabilization: 9.5
+  lowLight: 7.5
+  battery: 8.2
+  usability: 8.4
+  value: 7.8
+images:
+  - url: "https://gopro.com/on/demandware.static/-/Sites-gopro-products/default/dw212f9f28/images/Product%20Images/cameras/CHDHX-131-master/plp-product-card-h13.png"
+    kind: face
+    alt: GoPro HERO13 Black 官方产品图
+    source: GoPro 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://gopro.com/en/us/shop/cameras/buy/hero13black/CHDHX-131-master.html?option-id=CHDHX-131-master
+status: published

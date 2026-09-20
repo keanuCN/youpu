@@ -4,6 +4,11 @@ brand: jones
 model: Howler
 year: 2027
 title: Men's Howler Snowboard | Jones
+one_liner: 把强力正拱和自由式动作结合起来的高响应定向板，适合在技术地形、跳台和高速巡航之间切换的高手。
+price:
+  min: 699.95
+  max: 699.95
+  currency: USD
 specs:
   length: 158
   weight: 2800
@@ -22,7 +27,19 @@ specs:
     - all-mountain
     - powder
     - freestyle
-images: []
+editorial_scores:
+  stability: 9.0
+  response: 9.1
+  float: 7.2
+  park: 7.0
+  forgiveness: 5.6
+  value: 6.4
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.HOV-gallery-1.webp?v=1785146483&width=1200"
+    kind: face
+    alt: Jones Howler 2027 官方产品图
+    source: Jones 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.jonessnowboards.com/products/mens-howler-snowboard

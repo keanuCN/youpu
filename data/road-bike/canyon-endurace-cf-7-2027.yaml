@@ -1,0 +1,52 @@
+slug: canyon-endurace-cf-7-2027
+category: road-bike
+brand: canyon
+model: Endurace CF 7
+year: 2027
+title: Canyon Endurace CF 7
+one_liner: 以碳纤车架、38mm 胎容和 Shimano 105 机械套件为核心，适合把舒适和效率放在一起的长距离公路骑行。
+price:
+  min: 2999
+  max: 2999
+  currency: USD
+specs:
+  bikeType: endurance
+  frameMaterial: Carbon (CF)
+  frameWeight: 1080
+  tireClearance: 38
+  groupset: Shimano 105 RD-R7100 12s
+  drivetrain: 2x12，50/34，11-36
+  brakes: hydraulic-disc
+  wheelset: DT Swiss Endurance LN，铝合金
+  gearRange: 11-36T / 50-34T
+  fit: Sport Geometry，偏舒适的长途设定
+  geometry:
+    - { size: 2XS, height: "≤165 cm", headAngle: "70.3°", seatAngle: "73.5°", wheelbase: 1006, stack: 525, reach: 382 }
+    - { size: XS, height: "165–171 cm", headAngle: "71°", seatAngle: "73.5°", wheelbase: 1010, stack: 545, reach: 386 }
+    - { size: S, height: "171–178 cm", headAngle: "71.8°", seatAngle: "73.5°", wheelbase: 1013, stack: 563, reach: 390 }
+    - { size: M, height: "178–185 cm", headAngle: "72.5°", seatAngle: "73.5°", wheelbase: 1014, stack: 584, reach: 392 }
+    - { size: L, height: "185–192 cm", headAngle: "72.5°", seatAngle: "73.5°", wheelbase: 1030, stack: 605, reach: 401 }
+    - { size: XL, height: "192–198 cm", headAngle: "72.8°", seatAngle: "73.5°", wheelbase: 1043, stack: 629, reach: 409 }
+    - { size: 2XL, height: "≥198 cm", headAngle: "72.8°", seatAngle: "73.5°", wheelbase: 1067, stack: 649, reach: 427 }
+  geometryNote: "Canyon Endurace CF 官方几何表；Endurace CF 7 与 CF 7 Di2 使用同一车架平台，配置与价格仍需分别核对。"
+  scenes:
+    - endurance
+    - all-road
+    - group-ride
+editorial_scores:
+  speedEfficiency: 8.1
+  handling: 8.2
+  comfort: 9.1
+  climbing: 7.9
+  versatility: 9.1
+  value: 8.8
+images:
+  - url: "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1779435706/2027_FULL_endurace_cf-7_4627_R129_P01_okspta"
+    kind: face
+    alt: Canyon Endurace CF 7 官方产品图
+    source: Canyon 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf/endurace-cf-7/4627.html
+status: published

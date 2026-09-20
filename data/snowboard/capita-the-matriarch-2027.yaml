@@ -4,6 +4,11 @@ brand: capita
 model: The Matriarch
 year: 2027
 title: The Matriarch CAPiTA Snowboards | NA
+one_liner: 面向精准压弯和自然地形流动的定向正拱板，兼顾高速度支撑与地形变化，适合进阶全山滑行。
+price:
+  min: 729.95
+  max: 729.95
+  currency: USD
 specs:
   length: 158
   effectiveEdge: 1180
@@ -20,7 +25,19 @@ specs:
   scenes:
     - all-mountain
     - powder
-images: []
+editorial_scores:
+  stability: 8.6
+  response: 8.8
+  float: 7.9
+  park: 5.8
+  forgiveness: 5.9
+  value: 6.6
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD00_MATRIARCH_1.png?v=1762987777"
+    kind: face
+    alt: CAPiTA The Matriarch 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-the-matriarch-mens-snowboard-2027

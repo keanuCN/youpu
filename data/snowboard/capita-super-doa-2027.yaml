@@ -4,6 +4,11 @@ brand: capita
 model: Super D.O.A.
 year: 2027
 title: CAPiTA Super D.O.A. Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 更强调技术感和响应的双向全山自由式板，适合喜欢跳台、侧击和强节奏巡航、并能驾驭偏硬设定的滑手。
+price:
+  min: 799.95
+  max: 799.95
+  currency: USD
 specs:
   length: 156
   effectiveEdge: 1234
@@ -20,7 +25,19 @@ specs:
   scenes:
     - all-mountain
     - freestyle
-images: []
+editorial_scores:
+  stability: 8.5
+  response: 8.8
+  float: 6.5
+  park: 8.4
+  forgiveness: 6.3
+  value: 6.6
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST01-SUPER-D.O.A.-TOP.png?v=1776884610"
+    kind: face
+    alt: CAPiTA Super D.O.A. 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-super-d-o-a-mens-snowboard-2027

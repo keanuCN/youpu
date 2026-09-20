@@ -4,6 +4,11 @@ brand: capita
 model: Ultrafear
 year: 2027
 title: CAPiTA Ultrafear Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 以公园、Jib 和自由式动作为主的双向板，强调灵活、可玩和道具适应性，适合把创意动作放在第一位的滑手。
+price:
+  min: 549.95
+  max: 549.95
+  currency: USD
 specs:
   length: 153
   effectiveEdge: 1183
@@ -19,7 +24,19 @@ specs:
   flex: 5.5
   scenes:
     - freestyle
-images: []
+editorial_scores:
+  stability: 6.8
+  response: 7.1
+  float: 4.9
+  park: 9.2
+  forgiveness: 8.4
+  value: 7.9
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST02-ULTRAFEAR-TOP.png?v=1776884585"
+    kind: face
+    alt: CAPiTA Ultrafear 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-ultrafear-mens-snowboard-2027

@@ -92,3 +92,43 @@
   country: JP
   official_url: https://fish.shimano.com
   description: 日本渔具品牌，路亚竿覆盖淡水与轻盐水等多种使用场景。
+
+- slug: dji
+  name: DJI
+  name_cn: 大疆
+  country: CN
+  official_url: https://www.dji.com
+  description: 中国影像与智能硬件品牌，Osmo Action 系列覆盖运动相机的日常、骑行和水下场景。
+
+- slug: gopro
+  name: GoPro
+  country: US
+  official_url: https://gopro.com
+  description: 以 HERO 系列运动相机和 HyperSmooth 防抖系统著称，生态覆盖运动拍摄与户外创作。
+
+- slug: insta360
+  name: Insta360
+  name_cn: 影石
+  country: CN
+  official_url: https://www.insta360.com
+  description: 影像品牌，运动相机产品覆盖 Ace Pro 旗舰机型和 GO 系列拇指相机。
+
+- slug: canyon
+  name: Canyon
+  country: DE
+  official_url: https://www.canyon.com
+  description: 德国直销自行车品牌，公路车覆盖 Endurace 耐力、Ultimate 综合竞赛和 Aeroad 空力竞赛系列。
+
+- slug: specialized
+  name: Specialized
+  name_cn: 闪电
+  country: US
+  official_url: https://www.specialized.com
+  description: 美国自行车品牌，Tarmac 竞赛公路车以轻量、操控和整合式车架设计为主要取向。
+
+- slug: giant
+  name: Giant
+  name_cn: 捷安特
+  country: TW
+  official_url: https://www.giant-bicycles.com
+  description: 全球自行车品牌，公路车覆盖 TCR 竞赛、Propel 空力、Defy 耐力和 Contend 入门系列。

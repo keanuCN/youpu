@@ -1,0 +1,51 @@
+slug: giant-xtc-advanced-29-1-2026
+category: mtb
+brand: giant
+model: XTC Advanced 29 1
+year: 2026
+title: Giant XTC Advanced 29 1
+one_liner: 100mm 前叉、碳纤硬尾和 XT 1x12 传动，面向高效率 XC 爬坡与越野路线。
+price:
+  min: 4000
+  max: 4000
+  currency: USD
+specs:
+  bikeType: hardtail
+  frameMaterial: Advanced-grade Composite
+  wheelSize: 29"
+  geometry:
+    - { size: S, height: "163–172 cm", headAngle: "69.5°", seatAngle: "73.5°", wheelbase: 1087, stack: 604, reach: 416, wheelSize: '29"' }
+    - { size: M, height: "171–180 cm", headAngle: "69.5°", seatAngle: "73.5°", wheelbase: 1106, stack: 604, reach: 435, wheelSize: '29"' }
+    - { size: L, height: "179–188 cm", headAngle: "70°", seatAngle: "73.5°", wheelbase: 1128, stack: 613, reach: 453, wheelSize: '29"' }
+    - { size: XL, height: "187–198 cm", headAngle: "70°", seatAngle: "73.5°", wheelbase: 1159, stack: 632, reach: 477, wheelSize: '29"' }
+  geometryNote: "Giant XTC Advanced 29 官方几何表；硬尾车的有效骑姿还会明显受前叉下沉量和把位影响。"
+  frontTravel: 100
+  rearTravel: 0
+  suspension: Fox 32 Float Step Cast Performance 100mm，双档锁定
+  groupset: Shimano Deore XT M8100
+  drivetrain: 1x12，10-51T，32T
+  brakes: hydraulic-disc
+  wheelset: Giant XCR 2 Carbon 29 WheelSystem
+  tireSize: 前 29x2.4"；后 29x2.25"
+  dropper: Giant Contact Switch Core，100 / 120mm（按尺码）
+  scenes:
+    - cross-country
+    - climbing
+    - trail
+editorial_scores:
+  climbing: 9.3
+  descending: 7.3
+  control: 8.2
+  comfort: 6.8
+  versatility: 7.8
+  value: 8.4
+images:
+  - url: "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_600%2Cq_80%2Cw_800/qrpefgqfjrzq6x21nwsw/MY26XTCAdvanced291_ColorAAbyssBlack_Bronze.jpg"
+    kind: face
+    alt: Giant XTC Advanced 29 1 官方产品图
+    source: Giant 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.giant-bicycles.com/us/xtc-advanced-29-1
+status: published

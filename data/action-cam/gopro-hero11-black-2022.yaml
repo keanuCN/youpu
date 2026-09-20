@@ -1,0 +1,40 @@
+slug: gopro-hero11-black-2022
+category: action-cam
+brand: gopro
+model: HERO11 Black
+year: 2022
+title: GoPro HERO11 Black
+one_liner: 以 8:7 传感器裁切空间和 HyperSmooth 防抖为卖点，适合预算有限的户外运动入门。
+specs:
+  cameraType: action
+  sensor: 1/1.9 英寸 CMOS，27.13MP
+  maxVideo: 5.3K@60fps
+  maxFrameRate: 240
+  maxPhoto: 27.13MP
+  stabilization: HyperSmooth 5.0
+  waterproofDepth: 10
+  weight: 154
+  screen: 后置触屏 + 前置彩屏
+  storage: microSD
+  scenes:
+    - cycling
+    - motorcycle
+    - skiing
+    - travel
+editorial_scores:
+  imageQuality: 8.4
+  stabilization: 8.8
+  lowLight: 7
+  battery: 7.3
+  usability: 7.8
+  value: 8.4
+images:
+  - url: "https://gopro.com/on/demandware.static/-/Sites-gopro-products/default/dwd909d4f6/images/Product%20Images/cameras/CHDHX-111-master/compare-h11.png"
+    kind: face
+    alt: GoPro HERO11 Black 官方产品图
+    source: GoPro 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://gopro.com/en/us/shop/cameras/hero11-black/CHDHX-111-master.html?option-id=CHDHX-111-master
+status: published

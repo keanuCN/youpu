@@ -18,9 +18,9 @@ import type {
   ReviewerMeta,
   VoteRecord,
 } from "@/types";
-import { mockSecret, uid } from "./format";
+import { uid } from "./format";
 import { GUEST, guestState, initial, type Persisted } from "./persisted";
-import type { CloudAccount, CloudMeResponse, EmailCodePurpose } from "./api";
+import type { CloudAccount, CloudMeResponse } from "./api";
 import { GEAR } from "@/data/boards";
 
 export type { Persisted } from "./persisted";
@@ -238,105 +238,8 @@ function currentUserKey(): string {
 
 export type AuthResult = { ok: true } | { ok: false; message: string };
 
-type LocalEmailCode = { code: string; purpose: EmailCodePurpose; expiresAt: number; nextAt: number };
-const localEmailCodes = new Map<string, LocalEmailCode>();
-const LOCAL_EMAIL_CODE_TTL_MS = 10 * 60 * 1000;
-const LOCAL_EMAIL_CODE_COOLDOWN_MS = 60 * 1000;
-
-export type EmailCodeResult = { ok: true; devCode: string; expiresIn: number } | { ok: false; message: string };
-
-export function requestEmailCode(email: string, purpose: EmailCodePurpose): EmailCodeResult {
-  const key = normalizeLocalEmail(email);
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(key)) return { ok: false, message: "邮箱格式不正确" };
-  const current = Date.now();
-  const codeKey = purpose + ":" + key;
-  const existing = localEmailCodes.get(codeKey);
-  if (existing && existing.nextAt > current) {
-    return { ok: false, message: "验证码已发送，请 " + Math.ceil((existing.nextAt - current) / 1000) + " 秒后再试" };
-  }
-  const code = String(Math.floor(100000 + Math.random() * 900000));
-  localEmailCodes.set(codeKey, {
-    code,
-    purpose,
-    expiresAt: current + LOCAL_EMAIL_CODE_TTL_MS,
-    nextAt: current + LOCAL_EMAIL_CODE_COOLDOWN_MS,
-  });
-  return { ok: true, devCode: code, expiresIn: LOCAL_EMAIL_CODE_TTL_MS / 1000 };
-}
-
-function consumeLocalEmailCode(email: string, purpose: EmailCodePurpose, code: string): AuthResult {
-  const key = normalizeLocalEmail(email);
-  const codeKey = purpose + ":" + key;
-  const stored = localEmailCodes.get(codeKey);
-  if (!stored || stored.expiresAt <= Date.now()) {
-    localEmailCodes.delete(codeKey);
-    return { ok: false, message: "验证码已过期，请重新获取" };
-  }
-  if (stored.purpose !== purpose || stored.code !== code.trim()) return { ok: false, message: "验证码不正确" };
-  localEmailCodes.delete(codeKey);
-  return { ok: true };
-}
-
-function normalizeLocalEmail(email: string): string {
-  return email.trim().toLowerCase();
-}
-
-export function register(email: string, password: string, code: string, username?: string): AuthResult {
-  const key = email.trim().toLowerCase();
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(key)) return { ok: false, message: "邮箱格式不正确" };
-  if (password.length < 6) return { ok: false, message: "密码至少 6 位" };
-  const codeResult = consumeLocalEmailCode(key, "register", code);
-  if (!codeResult.ok) return codeResult;
-  if (state.accounts.some((a) => a.userKey === key)) return { ok: false, message: "该邮箱已注册，请直接登录" };
-  const prefix = key.split("@")[0]?.replace(/[^a-zA-Z0-9_]/g, "").slice(0, 16);
-  const account: Account = {
-    userKey: key,
-    username: username?.trim() || `${prefix || "rider"}_${Math.random().toString(36).slice(2, 6)}`,
-    email: key,
-    avatarSeed: prefix || "rider",
-    years: 1,
-    heightCm: 175,
-    weightKg: 70,
-    level: "中级",
-    resort: "",
-    secret: mockSecret(password),
-    createdAt: new Date().toISOString(),
-  };
-  emit({
-    accounts: [...state.accounts, account],
-    sessionKey: key,
-    favorites: { ...state.favorites, [key]: [] },
-    dock: { ...state.dock, [key]: [] },
-    helpful: { ...state.helpful, [key]: [] },
-    votes: { ...state.votes, [key]: [] },
-  });
-  return { ok: true };
-}
-
-export function login(email: string, password: string): AuthResult {
-  const key = email.trim().toLowerCase();
-  const account = state.accounts.find((a) => a.userKey === key);
-  if (!account) return { ok: false, message: "该邮箱尚未注册" };
-  if (account.secret !== mockSecret(password)) return { ok: false, message: "密码不正确" };
-  emit({ sessionKey: key });
-  return { ok: true };
-}
-
 export function logout(): void {
   emit({ sessionKey: null });
-}
-
-export function resetPassword(email: string, password: string, code: string): AuthResult {
-  const key = email.trim().toLowerCase();
-  const codeResult = consumeLocalEmailCode(key, "reset-password", code);
-  if (!codeResult.ok) return codeResult;
-  const account = state.accounts.find((a) => a.userKey === key);
-  if (!account) return { ok: false, message: "该邮箱尚未注册" };
-  if (password.length < 6) return { ok: false, message: "密码至少 6 位" };
-  emit({
-    accounts: state.accounts.map((a) => (a.userKey === key ? { ...a, secret: mockSecret(password) } : a)),
-  });
-  return { ok: true };
 }
 
 export function updateProfile(patch: Partial<Omit<Profile, "userKey" | "email">>): void {

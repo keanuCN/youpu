@@ -4,6 +4,11 @@ brand: capita
 model: SB Resort Twin
 year: 2027
 title: Spring Break Resort Twin Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 把 Spring Break 的造型和标准度假区双向结构结合起来，适合喜欢跳台、侧击和整山巡航的自由式用户。
+price:
+  min: 599.95
+  max: 599.95
+  currency: USD
 specs:
   length: 156
   effectiveEdge: 1211
@@ -20,7 +25,19 @@ specs:
   scenes:
     - freestyle
     - all-mountain
-images: []
+editorial_scores:
+  stability: 7.1
+  response: 7.4
+  float: 6.5
+  park: 8.4
+  forgiveness: 7.6
+  value: 7.0
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/SB04-RESORT-TWIN-TOP.png?v=1776884550"
+    kind: face
+    alt: Spring Break Resort Twin 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-sb-resort-twin-mens-snowboard-2027

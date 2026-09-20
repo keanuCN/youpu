@@ -1,0 +1,43 @@
+slug: insta360-ace-pro-2023
+category: action-cam
+brand: insta360
+model: Ace Pro
+year: 2023
+title: Insta360 Ace Pro
+one_liner: 以 1/1.3 英寸大底、翻转触控屏和 8K 记录为核心，适合旅行 Vlog 与运动混合创作。
+specs:
+  cameraType: action
+  sensor: 1/1.3 英寸
+  maxVideo: 8K@24fps
+  maxFrameRate: 120
+  maxPhoto: 48MP
+  fov: 151°
+  stabilization: FlowState + 360° Horizon Lock
+  waterproofDepth: 10
+  weight: 179.8
+  batteryLife: 100
+  screen: 2.4 英寸翻转触控屏
+  storage: microSD
+  scenes:
+    - cycling
+    - motorcycle
+    - skiing
+    - vlogging
+    - travel
+editorial_scores:
+  imageQuality: 9.2
+  stabilization: 8.8
+  lowLight: 9
+  battery: 7
+  usability: 8
+  value: 8
+images:
+  - url: "https://res.insta360.com/static/a7e1e6632afa8dc15821776d712a352f/acepro&ace.png"
+    kind: face
+    alt: Insta360 Ace Pro 官方产品图
+    source: Insta360 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.insta360.com/cn/product/insta360-ace-pro
+status: published

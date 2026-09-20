@@ -110,13 +110,13 @@ export class AuthService {
   async requestEmailCode(
     input: AuthEmailCodeInput,
     request?: AuthRequest,
-  ): Promise<{ ok: true; expiresIn: number; devCode?: string }> {
+  ): Promise<{ ok: true; expiresIn: number }> {
     const body = authEmailCodeSchema.parse(input);
     const email = normalizeEmail(body.email);
     const purpose: EmailCodePurpose = body.purpose;
 
-    if (env.NODE_ENV === 'production' && !this.email.isConfigured()) {
-      throw new ServiceUnavailableException('邮箱服务尚未配置');
+    if (!this.email.isConfigured()) {
+      throw new ServiceUnavailableException('邮箱服务尚未配置，请先配置真实 SMTP');
     }
 
     const existing = await this.prisma.account.findUnique({ where: { email }, select: { id: true } });
@@ -146,12 +146,8 @@ export class AuthService {
     await this.redis.del(codeKey, codeKey + ':attempts');
     await this.redis.set(codeKey, emailCodeDigest(email, purpose, code), 'EX', EMAIL_CODE_TTL_SECONDS);
     try {
-      const delivery = await this.email.sendVerificationCode(email, code, purpose);
-      return {
-        ok: true,
-        expiresIn: EMAIL_CODE_TTL_SECONDS,
-        ...(delivery.delivered ? {} : { devCode: delivery.devCode }),
-      };
+      await this.email.sendVerificationCode(email, code, purpose);
+      return { ok: true, expiresIn: EMAIL_CODE_TTL_SECONDS };
     } catch {
       await this.redis.del(cooldownKey, codeKey);
       throw new ServiceUnavailableException('验证邮件发送失败，请稍后再试');

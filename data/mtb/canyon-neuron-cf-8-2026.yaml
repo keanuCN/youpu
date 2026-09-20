@@ -1,0 +1,53 @@
+slug: canyon-neuron-cf-8-2026
+category: mtb
+brand: canyon
+model: Neuron CF 8
+year: 2026
+title: Canyon Neuron CF 8
+one_liner: 140mm 全能林道悬挂、碳纤车架和 1x12 传动，适合把爬坡效率与下坡容错放在同一台车上。
+price:
+  min: 2799
+  max: 2799
+  currency: USD
+specs:
+  bikeType: trail
+  frameMaterial: Carbon (CF)
+  wheelSize: XS/S 27.5"；M/L/XL 29"
+  geometry:
+    - { size: XS, height: "≤166 cm", headAngle: "66°", seatAngle: "76°", wheelbase: 1139, stack: 587, reach: 410, wheelSize: '27.5"' }
+    - { size: S, height: "166–175 cm", headAngle: "66°", seatAngle: "76°", wheelbase: 1164, stack: 596, reach: 430, wheelSize: '27.5"' }
+    - { size: M, height: "175–183 cm", headAngle: "66°", seatAngle: "76°", wheelbase: 1203, stack: 626, reach: 455, wheelSize: '29"' }
+    - { size: L, height: "183–192 cm", headAngle: "66°", seatAngle: "76°", wheelbase: 1234, stack: 639, reach: 480, wheelSize: '29"' }
+    - { size: XL, height: "≥192 cm", headAngle: "66°", seatAngle: "76°", wheelbase: 1271, stack: 656, reach: 510, wheelSize: '29"' }
+  geometryNote: "Canyon Neuron CF 官方几何表；XS/S 使用 27.5 英寸轮径，M/L/XL 使用 29 英寸轮径。"
+  frontTravel: 140
+  rearTravel: 140
+  suspension: FOX 34 Float Performance GRIP 前叉 + FOX Float DPS Performance 后避震
+  groupset: Shimano SLX 12s
+  drivetrain: 1x12，10-51T
+  brakes: hydraulic-disc
+  wheelset: DT Swiss XM 1700
+  tireSize: 2.4"（按尺码适配 27.5 / 29）
+  dropper: Canyon G5，150–200mm（按尺码）
+  scenes:
+    - trail
+    - climbing
+    - descending
+    - all-mountain
+editorial_scores:
+  climbing: 8.7
+  descending: 8.5
+  control: 8.7
+  comfort: 8.8
+  versatility: 9.2
+  value: 8.7
+images:
+  - url: "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw07984cc9/images/full/full_2023_/2023/full_2023_3170_neuron-cf-8_sr-bk_P5.png?sw=1145&sh=645&sm=fit&sfrm=png"
+    kind: face
+    alt: Canyon Neuron CF 8 官方产品图
+    source: Canyon 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.canyon.com/en-us/neuron-cf-8/3170.html
+status: published

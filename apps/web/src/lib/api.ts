@@ -33,8 +33,6 @@ export type EmailCodePurpose = "register" | "reset-password";
 export interface CloudEmailCodeResponse {
   ok: true;
   expiresIn: number;
-  /** 仅开发环境且未配置 SMTP 时返回，生产环境不会返回验证码。 */
-  devCode?: string;
 }
 
 export interface CloudRating {

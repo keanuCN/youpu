@@ -14,17 +14,12 @@ import {
   cloudRegister,
   cloudRequestEmailCode,
   cloudResetPassword,
-  WebApiError,
   saveCloudSession,
 } from "@/lib/api";
 import {
   applyCloudAccount,
   applyCloudMe,
-  login,
   mergeGuestDock,
-  register,
-  requestEmailCode,
-  resetPassword,
 } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
@@ -38,7 +33,7 @@ const MODE_TITLE: Record<EmailMode, string> = {
 
 /**
  * 登录 / 注册弹窗：仅支持邮箱密码；注册和找回密码需要邮箱验证码。
- * 本地 API 不可用时才回退到浏览器原型状态。
+ * 所有账号操作都通过 API，验证码必须由真实邮件服务投递。
  */
 export function LoginDialog({
   open,
@@ -105,17 +100,9 @@ export function LoginDialog({
         applyCloudAccount(session.account);
         void cloudMe().then(applyCloudMe).catch(() => undefined);
       } catch (error) {
-        if (!isNetworkError(error)) {
-          toast.error(errorMessage(error));
-          setBusy(false);
-          return;
-        }
-        const res = register(email, password, code, username);
-        if (!res.ok) {
-          toast.error(res.message);
-          setBusy(false);
-          return;
-        }
+        toast.error(errorMessage(error));
+        setBusy(false);
+        return;
       }
       mergeGuestDock();
       toast.success("账号已创建，游客期的对比坞已合并");
@@ -127,17 +114,9 @@ export function LoginDialog({
       try {
         await cloudResetPassword(email, password, code);
       } catch (error) {
-        if (!isNetworkError(error)) {
-          toast.error(errorMessage(error));
-          setBusy(false);
-          return;
-        }
-        const res = resetPassword(email, password, code);
-        if (!res.ok) {
-          toast.error(res.message);
-          setBusy(false);
-          return;
-        }
+        toast.error(errorMessage(error));
+        setBusy(false);
+        return;
       }
       toast.success("密码已重置，请用新密码登录");
       changeMode("login");
@@ -151,17 +130,9 @@ export function LoginDialog({
       applyCloudAccount(session.account);
       void cloudMe().then(applyCloudMe).catch(() => undefined);
     } catch (error) {
-      if (!isNetworkError(error) && !(error instanceof WebApiError && error.status === 401 && email.trim().toLowerCase() === BRAND.demoEmail)) {
-        toast.error(errorMessage(error));
-        setBusy(false);
-        return;
-      }
-      const res = login(email, password);
-      if (!res.ok) {
-        toast.error(res.message);
-        setBusy(false);
-        return;
-      }
+      toast.error(errorMessage(error));
+      setBusy(false);
+      return;
     }
     mergeGuestDock();
     toast.success("登录成功");
@@ -173,27 +144,14 @@ export function LoginDialog({
     const purpose = emailMode === "register" ? "register" : "reset-password";
     setBusy(true);
     try {
-      const result = await cloudRequestEmailCode(email, purpose);
-      setCode(result.devCode ?? "");
+      await cloudRequestEmailCode(email, purpose);
       setEmailCodeSent(true);
       setEmailCooldown(60);
-      toast.success(result.devCode ? "本地验证码已自动填入" : "验证码已发送，请查收邮箱");
+      toast.success("验证码已发送，请查收邮箱");
     } catch (error) {
-      if (!isNetworkError(error)) {
-        toast.error(errorMessage(error));
-        setBusy(false);
-        return;
-      }
-      const result = requestEmailCode(email, purpose);
-      if (!result.ok) {
-        toast.error(result.message);
-        setBusy(false);
-        return;
-      }
-      setCode(result.devCode);
-      setEmailCodeSent(true);
-      setEmailCooldown(60);
-      toast.success("本地验证码已自动填入");
+      toast.error(errorMessage(error));
+      setBusy(false);
+      return;
     }
     setBusy(false);
   };
@@ -282,7 +240,7 @@ export function LoginDialog({
                 </Button>
               </div>
               <p className="mono-label border border-dashed border-border p-3 leading-relaxed">
-                验证码 10 分钟有效。生产环境需配置 SMTP；未配置时仅本地开发会自动填入。
+                验证码 10 分钟有效。开发和生产环境都必须配置真实邮件服务。
               </p>
             </div>
           ) : null}
@@ -367,10 +325,6 @@ export function LoginDialog({
       </DialogContent>
     </Dialog>
   );
-}
-
-function isNetworkError(error: unknown): boolean {
-  return error instanceof WebApiError && error.status === 0;
 }
 
 function errorMessage(error: unknown): string {

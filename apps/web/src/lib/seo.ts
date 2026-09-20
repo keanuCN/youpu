@@ -22,7 +22,7 @@ export function gearMetadata(gear: GearItem): Metadata {
   const facts = [
     `${reviewCount(gear)} 条实测`,
     gear.flexValue > 0 ? `硬度 ${gear.flexValue}/10` : "硬度待补充",
-    hasPrice(gear) ? fmtPrice(gear.price) : "价格待补充",
+    hasPrice(gear) ? fmtPrice(gear.price, gear.priceCurrency) : "价格待补充",
   ].join(" · ");
   const description = [
     gear.analysis.verdict || `${gear.brand} ${gear.model} ${gear.year} 官方规格档案`,
@@ -85,7 +85,7 @@ export function productJsonLd(gear: GearItem) {
           offers: {
             "@type": "Offer",
             price: gear.price,
-            priceCurrency: "CNY",
+            priceCurrency: gear.priceCurrency ?? "CNY",
             availability: "https://schema.org/InStock",
             url: absoluteUrl(`/gear/${gear.id}`),
           },

@@ -1,0 +1,47 @@
+slug: specialized-s-works-tarmac-sl8-red-axs-2026
+category: road-bike
+brand: specialized
+model: S-Works Tarmac SL8 SRAM RED AXS
+year: 2026
+title: Specialized S-Works Tarmac SL8 SRAM RED AXS
+one_liner: 以 FACT 12r 车架、6.62kg 官方参考重量和 Quarq 功率计组成旗舰竞赛车，优先服务轻量、爬坡和高强度训练。
+specs:
+  bikeType: race
+  frameMaterial: S-Works Tarmac SL8 FACT 12r Carbon
+  completeWeight: 6.62
+  groupset: SRAM RED AXS E1，带 Quarq 功率计
+  drivetrain: 2x12，48/35，10-33
+  brakes: hydraulic-disc
+  wheelset: Roval Rapide CLX III，碳纤轮组
+  gearRange: 10-33T / 48-35T
+  fit: Rider First Engineered，轻量竞赛取向
+  geometry:
+    - { size: "44", headAngle: "70.5°", stack: 501, reach: 366 }
+    - { size: "49", headAngle: "71.75°", stack: 514, reach: 375 }
+    - { size: "52", headAngle: "72.5°", stack: 527, reach: 380 }
+    - { size: "54", headAngle: "73°", stack: 544, reach: 384 }
+    - { size: "56", headAngle: "73.5°", stack: 565, reach: 395 }
+    - { size: "58", headAngle: "73.5°", stack: 591, reach: 402 }
+    - { size: "61", headAngle: "74°", stack: 612, reach: 408 }
+  geometryNote: "Specialized Tarmac SL8 官方几何表；官方页面未在同一表格中给出骑手身高区间，因此这里保留车架尺码、Stack、Reach 和头管角。"
+  scenes:
+    - racing
+    - climbing
+    - group-ride
+editorial_scores:
+  speedEfficiency: 9.6
+  handling: 9.3
+  comfort: 8
+  climbing: 9.6
+  versatility: 8.2
+  value: 6.8
+images:
+  - url: "https://assets.specialized.com/i/specialized/94926-02_TARMAC-SL8-SW-AXS-PRMFJDMET-METWHT_HERO-SQUARE"
+    kind: face
+    alt: Specialized S-Works Tarmac SL8 官方产品图
+    source: Specialized 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.specialized.com/us/en/s-works-tarmac-sl8-sram-red-axs/p/4221554
+status: published

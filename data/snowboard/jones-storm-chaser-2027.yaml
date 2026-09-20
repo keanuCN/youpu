@@ -4,6 +4,11 @@ brand: jones
 model: Storm Chaser
 year: 2027
 title: Storm Chaser Snowboard | Jones
+one_liner: 面向深雪循环的超宽体积偏移定向板，强调低角度浮力和冲浪感，同时保留硬雪上的基本转弯能力。
+price:
+  min: 729.95
+  max: 729.95
+  currency: USD
 specs:
   length: 152
   weight: 2900
@@ -21,7 +26,19 @@ specs:
   scenes:
     - all-mountain
     - powder
-images: []
+editorial_scores:
+  stability: 8.2
+  response: 8.0
+  float: 9.6
+  park: 3.8
+  forgiveness: 7.0
+  value: 6.6
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNU.STC-gallery-1.webp?v=1782443829&width=1200"
+    kind: face
+    alt: Jones Storm Chaser 2027 官方产品图
+    source: Jones 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.jonessnowboards.com/products/storm-chaser-snowboard

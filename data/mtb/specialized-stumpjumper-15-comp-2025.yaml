@@ -1,0 +1,55 @@
+slug: specialized-stumpjumper-15-comp-2025
+category: mtb
+brand: specialized
+model: Stumpjumper 15 Comp
+year: 2025
+title: Specialized Stumpjumper 15 Comp
+one_liner: GENIE 后避震、145mm 后行程和可变几何，把短行程效率与林道下坡的控制感放在一起。
+price:
+  min: 4999.99
+  max: 4999.99
+  currency: USD
+specs:
+  bikeType: trail
+  frameMaterial: FACT 11m Carbon
+  completeWeight: 14.87
+  wheelSize: 前 29"；后轮按尺码 27.5" / 29"
+  geometry:
+    - { size: S1, wheelSize: '前29" / 后27.5"' }
+    - { size: S2, wheelSize: '前29" / 后27.5"' }
+    - { size: S3, wheelSize: '29" / 29"' }
+    - { size: S4, wheelSize: '29" / 29"' }
+    - { size: S5, wheelSize: '29" / 29"' }
+    - { size: S6, wheelSize: '29" / 29"' }
+  geometryNote: "Specialized Stumpjumper 15 官方尺码表；S1 前叉为 140mm，S2–S6 为 150mm，最终几何需按具体调节与轮径确认。"
+  frontTravel: 150
+  rearTravel: 145
+  suspension: FOX Float 36 Rhythm 前叉 + FOX Float Performance GENIE 后避震
+  groupset: SRAM S-1000 Eagle T-Type AXS
+  drivetrain: 1x12，10-52T
+  brakes: hydraulic-disc
+  wheelset: Specialized 铝合金轮组，30mm 内宽，真空胎准备
+  tireSize: 前 29x2.3"；后轮按尺码 27.5 / 29
+  dropper: X-Fusion Manic 升降座管
+  scenes:
+    - trail
+    - climbing
+    - descending
+    - all-mountain
+editorial_scores:
+  climbing: 8.4
+  descending: 9.2
+  control: 9.1
+  comfort: 9.3
+  versatility: 9.4
+  value: 8.1
+images:
+  - url: https://assets.specialized.com/i/specialized/93325-50_SJ-15-COMP-SEA-SILDST_HERO-SQUARE
+    kind: face
+    alt: Specialized Stumpjumper 15 Comp 官方产品图
+    source: Specialized 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.specialized.com/us/en/stumpjumper-15-comp/p/4221395
+status: published

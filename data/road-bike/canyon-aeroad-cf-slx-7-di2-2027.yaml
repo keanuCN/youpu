@@ -1,0 +1,52 @@
+slug: canyon-aeroad-cf-slx-7-di2-2027
+category: road-bike
+brand: canyon
+model: Aeroad CF SLX 7 Di2
+year: 2027
+title: Canyon Aeroad CF SLX 7 Di2
+one_liner: 以空力车架、65mm 碳纤轮组和 105 Di2 为主轴，适合把平路速度和竞赛姿态放在第一位的骑手。
+price:
+  min: 4999
+  max: 4999
+  currency: USD
+specs:
+  bikeType: aero
+  frameMaterial: Carbon (CF SLX)
+  frameWeight: 1050
+  completeWeight: 7.96
+  tireClearance: 32
+  groupset: Shimano 105 Di2，带 4iiii 功率计
+  drivetrain: 2x12
+  brakes: hydraulic-disc
+  wheelset: DT Swiss ARC 1600，65mm 碳纤轮组
+  gearRange: 105 Di2，竞赛取向
+  fit: PACE 可调一体式把组，偏空力竞赛
+  geometry:
+    - { size: 2XS, height: "≤166 cm", headAngle: "70°", seatAngle: "73.5°", wheelbase: 975, stack: 498, reach: 372 }
+    - { size: XS, height: "166–172 cm", headAngle: "71.2°", seatAngle: "73.5°", wheelbase: 979, stack: 520, reach: 378 }
+    - { size: S, height: "172–178 cm", headAngle: "72.8°", seatAngle: "73.5°", wheelbase: 982, stack: 539, reach: 390 }
+    - { size: M, height: "178–184 cm", headAngle: "73.25°", seatAngle: "73.5°", wheelbase: 988, stack: 560, reach: 393 }
+    - { size: L, height: "184–190 cm", headAngle: "73.3°", seatAngle: "73.5°", wheelbase: 1003, stack: 580, reach: 401 }
+    - { size: XL, height: "190–196 cm", headAngle: "73.5°", seatAngle: "73.5°", wheelbase: 1029, stack: 606, reach: 419 }
+    - { size: 2XL, height: "≥196 cm", headAngle: "73.8°", seatAngle: "73.5°", wheelbase: 1042, stack: 624, reach: 429 }
+  geometryNote: "Canyon Aeroad CF SLX 官方几何表；Aeroad 的把组宽度与座垫高度也会影响最终骑行姿势。"
+  scenes:
+    - racing
+    - group-ride
+editorial_scores:
+  speedEfficiency: 9.4
+  handling: 8.5
+  comfort: 7.3
+  climbing: 8.4
+  versatility: 7.6
+  value: 8.1
+images:
+  - url: "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/b_rgb:F2F2F2/f_jpg/q_auto/v1777532962/2027_FULL_aeroad_cf-slx-7-di2_4531_R107_P01_zsqbop"
+    kind: face
+    alt: Canyon Aeroad CF SLX 7 Di2 官方产品图
+    source: Canyon 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-7-di2/4531.html
+status: published

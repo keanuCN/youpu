@@ -134,8 +134,8 @@ export function SceneTags({ scenes, className, max }: { scenes: string[]; classN
   );
 }
 
-export function PriceTag({ value, className }: { value: number; className?: string }) {
-  return <span className={cn("mono-data text-[13px] tnum", className)}>{fmtPrice(value)}</span>;
+export function PriceTag({ value, currency, className }: { value: number; currency?: string; className?: string }) {
+  return <span className={cn("mono-data text-[13px] tnum", className)}>{fmtPrice(value, currency)}</span>;
 }
 
 /** 数据行：左标签右数值，参数表与详情信息卡共用 */

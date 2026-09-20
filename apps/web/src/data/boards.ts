@@ -1,5 +1,9 @@
 import type { GearItem } from "@/types";
 import { BASE_POOL, DETAIL_POOL, IMG, TOP_POOL } from "./assets";
+import { ACTION_CAM_GEAR } from "./action-cams";
+import { CASTING_ROD_GEAR } from "./casting-rods";
+import { MTB_GEAR } from "./mountain-bikes";
+import { ROAD_BIKE_GEAR } from "./road-bikes";
 import { SNOWBOARD_SCORE_DIMS, flexBucket, profileFamilyOf } from "./categories";
 
 type Scores = Record<string, number>;
@@ -483,12 +487,12 @@ function build(d: Draft, i: number): GearItem {
   };
 }
 
-export const GEAR: GearItem[] = DRAFTS.map(build);
+export const GEAR: GearItem[] = [...DRAFTS.map(build), ...ACTION_CAM_GEAR, ...ROAD_BIKE_GEAR, ...MTB_GEAR, ...CASTING_ROD_GEAR];
 
 export const GEAR_BY_ID: Record<string, GearItem> = Object.fromEntries(GEAR.map((g) => [g.id, g]));
 
 export function gearOfCategory(slug: string): GearItem[] {
-  return slug === "snowboard" ? GEAR : [];
+  return GEAR.filter((gear) => gear.categorySlug === slug);
 }
 
 export function getGear(id: string): GearItem | undefined {

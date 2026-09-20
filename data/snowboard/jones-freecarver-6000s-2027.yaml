@@ -4,6 +4,11 @@ brand: jones
 model: Freecarver 6000s
 year: 2027
 title: Freecarver 6000s Snowboard | Jones
+one_liner: 为整备雪道短半径压弯设计的全正拱刻滑板，转弯节奏紧凑、边刃反馈直接，适合专注 carving 的进阶滑手。
+price:
+  min: 699.95
+  max: 699.95
+  currency: USD
 specs:
   length: 154
   weight: 2700
@@ -21,7 +26,19 @@ specs:
   scenes:
     - carving
     - all-mountain
-images: []
+editorial_scores:
+  stability: 8.8
+  response: 9.2
+  float: 4.8
+  park: 3.8
+  forgiveness: 4.8
+  value: 6.8
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNU.FRS-gallery-1.webp?v=1782443909&width=1200"
+    kind: face
+    alt: Jones Freecarver 6000s 2027 官方产品图
+    source: Jones 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.jonessnowboards.com/products/freecarver-6000s-snowboard

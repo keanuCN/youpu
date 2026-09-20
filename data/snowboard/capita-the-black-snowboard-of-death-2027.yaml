@@ -4,6 +4,11 @@ brand: capita
 model: The Black Snowboard of Death
 year: 2027
 title: CAPiTA The Black Snowboard Of Death Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 以全地形性能为核心的经典定向板，兼顾高速压雪、变化雪况和粉雪浮力，适合有经验的全山和自由滑手。
+price:
+  min: 749.95
+  max: 749.95
+  currency: USD
 specs:
   length: 159
   effectiveEdge: 1221
@@ -20,7 +25,19 @@ specs:
   scenes:
     - all-mountain
     - powder
-images: []
+editorial_scores:
+  stability: 8.8
+  response: 8.7
+  float: 8.2
+  park: 5.3
+  forgiveness: 6.4
+  value: 6.8
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD03_BSOD_43ad6df8-c222-4b12-93af-d408da7f7605.jpg?v=1776978812"
+    kind: face
+    alt: CAPiTA The Black Snowboard Of Death 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-the-black-snowboard-of-death-mens-snowboard-2027

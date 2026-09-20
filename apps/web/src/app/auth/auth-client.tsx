@@ -13,20 +13,10 @@ import {
   cloudRegister,
   cloudRequestEmailCode,
   cloudResetPassword,
-  clearCloudSession,
-  WebApiError,
   saveCloudSession,
 } from "@/lib/api";
 import { syncCloudSession } from "@/lib/cloud-sync";
-import {
-  applyCloudAccount,
-  login,
-  mergeGuestDock,
-  register,
-  requestEmailCode,
-  resetPassword,
-  useCurrentUser,
-} from "@/lib/store";
+import { applyCloudAccount, mergeGuestDock, useCurrentUser } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 type EmailMode = "login" | "register" | "forgot";
@@ -107,16 +97,8 @@ export default function AuthPage() {
           return toast.error("登录状态已失效，请重新尝试");
         }
       } catch (error) {
-        if (!isNetworkError(error)) {
-          setBusy(false);
-          return toast.error(errorMessage(error));
-        }
-        const res = register(email, password, code, username);
-        if (!res.ok) {
-          setBusy(false);
-          return toast.error(res.message);
-        }
-        clearCloudSession();
+        setBusy(false);
+        return toast.error(errorMessage(error));
       }
       mergeGuestDock();
       toast.success("账号已创建");
@@ -128,15 +110,8 @@ export default function AuthPage() {
       try {
         await cloudResetPassword(email, password, code);
       } catch (error) {
-        if (!isNetworkError(error)) {
-          setBusy(false);
-          return toast.error(errorMessage(error));
-        }
-        const res = resetPassword(email, password, code);
-        if (!res.ok) {
-          setBusy(false);
-          return toast.error(res.message);
-        }
+        setBusy(false);
+        return toast.error(errorMessage(error));
       }
       toast.success("密码已重置，请登录");
       setEmailMode("login");
@@ -155,16 +130,8 @@ export default function AuthPage() {
         return toast.error("登录状态已失效，请重新尝试");
       }
     } catch (error) {
-      if (!isNetworkError(error) && !(error instanceof WebApiError && error.status === 401 && email.trim().toLowerCase() === BRAND.demoEmail)) {
-        setBusy(false);
-        return toast.error(errorMessage(error));
-      }
-      const res = login(email, password);
-      if (!res.ok) {
-        setBusy(false);
-        return toast.error(res.message);
-      }
-      clearCloudSession();
+      setBusy(false);
+      return toast.error(errorMessage(error));
     }
     mergeGuestDock();
     toast.success("登录成功");
@@ -176,25 +143,13 @@ export default function AuthPage() {
     const purpose = emailMode === "register" ? "register" : "reset-password";
     setBusy(true);
     try {
-      const result = await cloudRequestEmailCode(email, purpose);
-      setCode(result.devCode ?? "");
+      await cloudRequestEmailCode(email, purpose);
       setEmailCodeSent(true);
       setEmailCooldown(60);
-      toast.success(result.devCode ? "本地验证码已自动填入" : "验证码已发送，请查收邮箱");
+      toast.success("验证码已发送，请查收邮箱");
     } catch (error) {
-      if (!isNetworkError(error)) {
-        setBusy(false);
-        return toast.error(errorMessage(error));
-      }
-      const result = requestEmailCode(email, purpose);
-      if (!result.ok) {
-        setBusy(false);
-        return toast.error(result.message);
-      }
-      setCode(result.devCode);
-      setEmailCodeSent(true);
-      setEmailCooldown(60);
-      toast.success("本地验证码已自动填入");
+      setBusy(false);
+      return toast.error(errorMessage(error));
     }
     setBusy(false);
   };
@@ -314,7 +269,7 @@ export default function AuthPage() {
                 </Button>
               </div>
               <p className="mono-label border border-dashed border-border p-3 leading-relaxed">
-                验证码 10 分钟有效。生产环境需配置 SMTP；未配置时仅本地开发会自动填入。
+                验证码 10 分钟有效。开发和生产环境都必须配置真实邮件服务。
               </p>
             </div>
           ) : null}
@@ -382,10 +337,6 @@ export default function AuthPage() {
       </div>
     </div>
   );
-}
-
-function isNetworkError(error: unknown): boolean {
-  return error instanceof WebApiError && error.status === 0;
 }
 
 function errorMessage(error: unknown): string {

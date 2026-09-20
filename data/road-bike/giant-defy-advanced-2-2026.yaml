@@ -1,0 +1,50 @@
+slug: giant-defy-advanced-2-2026
+category: road-bike
+brand: giant
+model: Defy Advanced 2
+year: 2026
+title: Giant Defy Advanced 2
+one_liner: 以 Advanced 级碳纤车架、40mm 最大胎容和 Shimano 105 为核心，适合长途、烂路和不想被姿势拖累的骑手。
+price:
+  min: 3300
+  max: 3300
+  currency: USD
+specs:
+  bikeType: endurance
+  frameMaterial: Advanced-grade Composite
+  tireClearance: 40
+  groupset: Shimano 105
+  drivetrain: 2x12，50/34，11-36
+  brakes: hydraulic-disc
+  wheelset: Giant P-R1 Disc，铝合金
+  gearRange: 11-36T / 50-34T
+  fit: D-Fuse 车把与座杆，耐力长途设定
+  geometry:
+    - { size: XS, stack: 527, reach: 369 }
+    - { size: S, stack: 541, reach: 375 }
+    - { size: M, stack: 558, reach: 380 }
+    - { size: M/L, stack: 577, reach: 384 }
+    - { size: L, stack: 596, reach: 393 }
+    - { size: XL, stack: 615, reach: 402 }
+  geometryNote: "Giant Defy Advanced 2 官方几何表；Giant 建议结合身高、内长与经销商尺寸向导确认。"
+  scenes:
+    - endurance
+    - all-road
+    - group-ride
+editorial_scores:
+  speedEfficiency: 7.9
+  handling: 8.3
+  comfort: 9.2
+  climbing: 7.7
+  versatility: 9.3
+  value: 8.7
+images:
+  - url: "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80/ln09xatfxrvyqelva1lt/MY26DefyAdvanced2_ColorAAbyssBlack.jpg"
+    kind: face
+    alt: Giant Defy Advanced 2 官方产品图
+    source: Giant 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.giant-bicycles.com/us/defy-advanced-2
+status: published

@@ -4,6 +4,11 @@ brand: capita
 model: Mega Death
 year: 2027
 title: CAPiTA Mega Death Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 面向高阶滑手的轻量高性能自由滑板，在高速度、硬雪和深雪中追求更强的支撑与响应，价格和使用门槛都较高。
+price:
+  min: 1199.95
+  max: 1199.95
+  currency: USD
 specs:
   length: 159
   effectiveEdge: 1221
@@ -20,7 +25,19 @@ specs:
   scenes:
     - all-mountain
     - powder
-images: []
+editorial_scores:
+  stability: 9.0
+  response: 9.2
+  float: 8.8
+  park: 4.8
+  forgiveness: 5.8
+  value: 5.9
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD01-MEGA-DEATH-159_1.png?v=1777402409&width=1024"
+    kind: face
+    alt: CAPiTA Mega Death 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-mega-death-mens-snowboard-2027

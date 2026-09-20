@@ -1,0 +1,52 @@
+slug: giant-trance-x-advanced-0-2024
+category: mtb
+brand: giant
+model: Trance X Advanced 0
+year: 2024
+title: Giant Trance X Advanced 0
+one_liner: 150mm 前叉、140mm Maestro 后避震和可切换后轮尺寸，适合技术林道与高速下坡。
+price:
+  min: 8000
+  max: 8000
+  currency: USD
+specs:
+  bikeType: trail
+  frameMaterial: Advanced-Grade Composite
+  wheelSize: 前 29"；后 29" 或 27.5" Mullet
+  geometry:
+    - { size: S, headAngle: "64.4° / 64.8° / 65.1°", seatAngle: "76.8° / 77.2° / 77.5°", wheelSize: '29"；后轮可切换 27.5"' }
+    - { size: M, headAngle: "64.4° / 64.8° / 65.1°", seatAngle: "76.8° / 77.2° / 77.5°", wheelSize: '29"；后轮可切换 27.5"' }
+    - { size: L, headAngle: "64.4° / 64.8° / 65.1°", seatAngle: "76.8° / 77.2° / 77.5°", wheelSize: '29"；后轮可切换 27.5"' }
+    - { size: XL, headAngle: "64.4° / 64.8° / 65.1°", seatAngle: "76.8° / 77.2° / 77.5°", wheelSize: '29"；后轮可切换 27.5"' }
+  geometryNote: "Giant Trance X 官方页面给出三档 Flip Chip 几何；当前保留官方角度范围与轮径选项，Stack、Reach 和不同尺码完整表待补齐。"
+  frontTravel: 150
+  rearTravel: 140
+  suspension: FOX 36 Factory GRIP2 150mm + Giant Maestro 140mm
+  groupset: SRAM XO T-Type AXS
+  drivetrain: 1x12，30T
+  brakes: hydraulic-disc
+  wheelset: Giant TRX 碳纤轮组，30mm 内宽
+  tireSize: 前 29"；后 29" / 27.5"（按设定）
+  dropper: 按尺码与配置
+  scenes:
+    - trail
+    - climbing
+    - descending
+    - all-mountain
+editorial_scores:
+  climbing: 8.1
+  descending: 9.4
+  control: 9.3
+  comfort: 9.1
+  versatility: 9.1
+  value: 7.2
+images:
+  - url: "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/skym90dx4rx42jofovsh/MY24TranceXAdvanced0_ColorABlueDragonfly.jpg"
+    kind: face
+    alt: Giant Trance X Advanced 0 官方产品图
+    source: Giant 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.giant-bicycles.com/us/showcase/trance-x-advanced
+status: published

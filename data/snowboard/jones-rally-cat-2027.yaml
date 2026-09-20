@@ -4,6 +4,11 @@ brand: jones
 model: Rally Cat
 year: 2027
 title: Men's Rally Cat Snowboard | Jones
+one_liner: 轻松、灵活且带有明显玩心的全山双向板，适合在压雪道、侧击和小型地形之间不断换线的用户。
+price:
+  min: 499.95
+  max: 499.95
+  currency: USD
 specs:
   length: 156
   weight: 2700
@@ -21,7 +26,19 @@ specs:
   scenes:
     - all-mountain
     - freestyle
-images: []
+editorial_scores:
+  stability: 6.9
+  response: 7.1
+  float: 5.8
+  park: 8.2
+  forgiveness: 8.3
+  value: 8.1
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.MND-gallery-1.webp?v=1782443822&width=1200"
+    kind: face
+    alt: Jones Rally Cat 2027 官方产品图
+    source: Jones 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.jonessnowboards.com/products/mens-rally-cat-snowboard

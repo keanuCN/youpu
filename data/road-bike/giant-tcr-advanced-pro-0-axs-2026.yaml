@@ -1,0 +1,49 @@
+slug: giant-tcr-advanced-pro-0-axs-2026
+category: road-bike
+brand: giant
+model: TCR Advanced Pro 0 AXS
+year: 2026
+title: Giant TCR Advanced Pro 0 AXS
+one_liner: 以 Advanced 级碳纤车架、SRAM Force AXS 和功率计构成均衡竞赛平台，适合爬坡、下坡和全能团骑。
+price:
+  min: 7000
+  max: 7000
+  currency: USD
+specs:
+  bikeType: race
+  frameMaterial: Advanced-grade Composite
+  groupset: SRAM Force AXS E1，带 Quarq 功率计
+  drivetrain: 2x12，35/48
+  brakes: hydraulic-disc
+  wheelset: Giant SLR 碳纤轮组
+  gearRange: SRAM Force AXS，竞赛取向
+  fit: TCR 综合竞赛几何
+  geometry:
+    - { size: XS, stack: 517, reach: 376 }
+    - { size: S, stack: 528, reach: 383 }
+    - { size: M, stack: 545, reach: 388 }
+    - { size: M/L, stack: 562, reach: 393 }
+    - { size: L, stack: 581, reach: 402 }
+    - { size: XL, stack: 596, reach: 412 }
+  geometryNote: "Giant TCR Advanced Pro 官方几何表；竞赛姿势对把位和坐垫高度更敏感，不能只按身高单项决定。"
+  scenes:
+    - racing
+    - climbing
+    - group-ride
+editorial_scores:
+  speedEfficiency: 9.1
+  handling: 9
+  comfort: 8.2
+  climbing: 9.1
+  versatility: 8.8
+  value: 7.8
+images:
+  - url: "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80/jtismbbz7rrw6bsjelem/MY26TCRAdvancedPro0-AXS_ColorACarbon.jpg"
+    kind: face
+    alt: Giant TCR Advanced Pro 0 AXS 官方产品图
+    source: Giant 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.giant-bicycles.com/us/tcr-advanced-pro-0--axs-
+status: published

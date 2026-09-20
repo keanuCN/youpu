@@ -27,10 +27,10 @@ export const CATEGORY_TREE: CategoryNode[] = [
         name: "骑行",
         nameEn: "Cycling",
         path: ["运动"],
-        status: "coming_soon",
+        status: "live",
         children: [
-          { slug: "road-bike", name: "公路车", nameEn: "Road", path: ["运动", "骑行"], status: "coming_soon" },
-          { slug: "mtb", name: "山地车", nameEn: "MTB", path: ["运动", "骑行"], status: "coming_soon" },
+          { slug: "road-bike", name: "公路车", nameEn: "Road", path: ["运动", "骑行"], status: "live" },
+          { slug: "mtb", name: "山地车", nameEn: "MTB", path: ["运动", "骑行"], status: "live" },
         ],
       },
       {
@@ -40,7 +40,7 @@ export const CATEGORY_TREE: CategoryNode[] = [
         path: ["运动"],
         status: "coming_soon",
         children: [
-          { slug: "action-cam", name: "运动相机", nameEn: "Action Cam", path: ["运动", "影像"], status: "coming_soon" },
+          { slug: "action-cam", name: "运动相机", nameEn: "Action Cam", path: ["运动", "影像"], status: "live" },
           { slug: "mirrorless", name: "微单", nameEn: "Mirrorless", path: ["运动", "影像"], status: "coming_soon" },
         ],
       },
@@ -374,6 +374,15 @@ const BADMINTON_RACKET: Category = {
   hardcoreWeights: {},
 };
 
+export const CASTING_ROD_SCORE_DIMS = [
+  { key: "sensitivity", label: "灵敏度", weight: 0.2 },
+  { key: "casting", label: "抛投表现", weight: 0.18 },
+  { key: "control", label: "操控反馈", weight: 0.18 },
+  { key: "strength", label: "回鱼强度", weight: 0.16 },
+  { key: "versatility", label: "适用范围", weight: 0.13 },
+  { key: "value", label: "性价比", weight: 0.15 },
+];
+
 const CASTING_ROD: Category = {
   slug: "casting-rod",
   name: "路亚竿",
@@ -440,14 +449,7 @@ const CASTING_ROD: Category = {
       ],
     },
   ],
-  scoreDims: [
-    { key: "sensitivity", label: "灵敏度", weight: 0.2 },
-    { key: "casting", label: "抛投表现", weight: 0.18 },
-    { key: "control", label: "操控反馈", weight: 0.18 },
-    { key: "strength", label: "回鱼强度", weight: 0.16 },
-    { key: "versatility", label: "适用范围", weight: 0.13 },
-    { key: "value", label: "性价比", weight: 0.15 },
-  ],
+  scoreDims: CASTING_ROD_SCORE_DIMS,
   rankCategories: [
     { key: "overall", label: "综合榜" },
     { key: "casting", label: "抛投榜" },
@@ -458,10 +460,340 @@ const CASTING_ROD: Category = {
   hardcoreWeights: {},
 };
 
+export const ACTION_CAM_SCORE_DIMS = [
+  { key: "imageQuality", label: "画质表现", weight: 0.22 },
+  { key: "stabilization", label: "防抖能力", weight: 0.2 },
+  { key: "lowLight", label: "低光表现", weight: 0.17 },
+  { key: "battery", label: "续航能力", weight: 0.15 },
+  { key: "usability", label: "易用性", weight: 0.12 },
+  { key: "value", label: "性价比", weight: 0.14 },
+];
+
+const ACTION_CAM: Category = {
+  slug: "action-cam",
+  name: "运动相机",
+  nameEn: "Action Cam",
+  path: ["运动", "影像"],
+  status: "live",
+  issue: "No.01 / Action Cam Index",
+  priceCurrency: "USD",
+  specTemplate: [
+    {
+      group: "成像与视频",
+      fields: [
+        { key: "cameraType", label: "相机类型", type: "text", direction: null },
+        { key: "sensor", label: "传感器", type: "text", direction: null },
+        { key: "maxVideo", label: "最高视频规格", type: "text", direction: null },
+        { key: "maxFrameRate", label: "最高帧率", unit: " fps", type: "number", direction: "higher" },
+        { key: "maxPhoto", label: "最高照片规格", type: "text", direction: null },
+        { key: "fov", label: "视场角", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "稳定与耐候",
+      fields: [
+        { key: "stabilization", label: "防抖系统", type: "text", direction: null },
+        { key: "waterproofDepth", label: "裸机防水深度", unit: " m", type: "number", direction: "higher" },
+        { key: "weight", label: "机身重量", unit: " g", type: "number", direction: "lower" },
+        { key: "batteryLife", label: "官方续航", unit: " min", type: "number", direction: "higher" },
+      ],
+    },
+    {
+      group: "使用与存储",
+      fields: [
+        { key: "screen", label: "屏幕", type: "text", direction: null },
+        { key: "storage", label: "存储", type: "text", direction: null },
+        { key: "scenes", label: "适用场景", type: "text", direction: null },
+      ],
+    },
+  ],
+  filterTemplate: [
+    {
+      key: "scenes",
+      label: "场景",
+      control: "multi",
+      options: [
+        { value: "cycling", label: "骑行" },
+        { value: "motorcycle", label: "摩托" },
+        { value: "skiing", label: "滑雪" },
+        { value: "diving", label: "潜水" },
+        { value: "vlogging", label: "Vlog" },
+        { value: "travel", label: "旅行" },
+      ],
+    },
+    {
+      key: "cameraType",
+      label: "形态",
+      control: "multi",
+      options: [
+        { value: "action", label: "传统运动相机" },
+        { value: "wearable", label: "拇指 / 佩戴式" },
+      ],
+    },
+    {
+      key: "brands",
+      label: "品牌",
+      control: "multi",
+      options: [
+        { value: "DJI", label: "DJI" },
+        { value: "GoPro", label: "GoPro" },
+        { value: "Insta360", label: "Insta360" },
+      ],
+    },
+    { key: "price", label: "价格", control: "price", min: 200, max: 500, step: 10 },
+    {
+      key: "years",
+      label: "年份",
+      control: "multi",
+      options: [
+        { value: "2026", label: "2026" },
+        { value: "2024", label: "2024" },
+        { value: "2023", label: "2023" },
+        { value: "2022", label: "2022" },
+      ],
+    },
+  ],
+  scoreDims: ACTION_CAM_SCORE_DIMS,
+  rankCategories: [
+    { key: "overall", label: "综合榜" },
+    { key: "imageQuality", label: "画质榜" },
+    { key: "stabilization", label: "防抖榜" },
+    { key: "battery", label: "续航榜" },
+    { key: "value", label: "性价比" },
+  ],
+  quizTemplate: [],
+  hardcoreWeights: {},
+};
+
+export const ROAD_BIKE_SCENES = [
+  { value: "racing", label: "竞赛" },
+  { value: "climbing", label: "爬坡" },
+  { value: "endurance", label: "长途耐力" },
+  { value: "group-ride", label: "团骑" },
+  { value: "all-road", label: "泛铺装" },
+];
+
+export const ROAD_BIKE_TYPE_LABELS: Record<string, string> = {
+  race: "综合竞赛",
+  aero: "空力竞赛",
+  endurance: "耐力长途",
+  "all-round": "全能入门",
+};
+
+export function roadBikeTypeLabel(value: unknown): string {
+  return ROAD_BIKE_TYPE_LABELS[String(value ?? "")] ?? String(value ?? "待补充");
+}
+
+export const ROAD_BIKE_SCORE_DIMS = [
+  { key: "speedEfficiency", label: "速度效率", weight: 0.2 },
+  { key: "handling", label: "操控反馈", weight: 0.18 },
+  { key: "comfort", label: "长途舒适", weight: 0.18 },
+  { key: "climbing", label: "爬坡表现", weight: 0.16 },
+  { key: "versatility", label: "适用范围", weight: 0.13 },
+  { key: "value", label: "性价比", weight: 0.15 },
+];
+
+const ROAD_BIKE: Category = {
+  slug: "road-bike",
+  name: "公路车",
+  nameEn: "Road Bike",
+  path: ["运动", "骑行"],
+  status: "live",
+  issue: "No.01 / Road Bike Index",
+  priceCurrency: "USD",
+  specTemplate: [
+    {
+      group: "车架与定位",
+      fields: [
+        { key: "bikeType", label: "车型取向", type: "text", direction: null },
+        { key: "frameMaterial", label: "车架材料", type: "text", direction: null },
+        { key: "frameWeight", label: "车架重量", unit: " g", type: "number", direction: "lower" },
+        { key: "completeWeight", label: "整车重量", unit: " kg", type: "number", direction: "lower" },
+        { key: "tireClearance", label: "最大胎宽", unit: " mm", type: "number", direction: "higher" },
+      ],
+    },
+    {
+      group: "传动与制动",
+      fields: [
+        { key: "groupset", label: "变速套件", type: "text", direction: null },
+        { key: "drivetrain", label: "传动规格", type: "text", direction: null },
+        { key: "brakes", label: "制动形式", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "轮组与设定",
+      fields: [
+        { key: "wheelset", label: "轮组", type: "text", direction: null },
+        { key: "gearRange", label: "齿比范围", type: "text", direction: null },
+        { key: "fit", label: "骑行设定", type: "text", direction: null },
+        { key: "scenes", label: "适用场景", type: "text", direction: null },
+      ],
+    },
+  ],
+  filterTemplate: [
+    { key: "scenes", label: "场景", control: "multi", options: ROAD_BIKE_SCENES },
+    {
+      key: "bikeType",
+      label: "车型",
+      control: "multi",
+      options: Object.entries(ROAD_BIKE_TYPE_LABELS).map(([value, label]) => ({ value, label })),
+    },
+    {
+      key: "brands",
+      label: "品牌",
+      control: "multi",
+      options: [
+        { value: "Canyon", label: "Canyon" },
+        { value: "Specialized", label: "Specialized" },
+        { value: "Giant", label: "Giant" },
+      ],
+    },
+    { key: "price", label: "价格", control: "price", min: 1500, max: 14000, step: 100 },
+    {
+      key: "years",
+      label: "年份",
+      control: "multi",
+      options: [
+        { value: "2027", label: "2027" },
+        { value: "2026", label: "2026" },
+      ],
+    },
+  ],
+  scoreDims: ROAD_BIKE_SCORE_DIMS,
+  rankCategories: [
+    { key: "overall", label: "综合榜" },
+    { key: "racing", label: "竞赛榜", scenes: ["racing"] },
+    { key: "climbing", label: "爬坡榜", scenes: ["climbing"] },
+    { key: "endurance", label: "耐力榜", scenes: ["endurance"] },
+    { key: "value", label: "性价比" },
+  ],
+  quizTemplate: [],
+  hardcoreWeights: {},
+};
+
+export const MTB_SCENES = [
+  { value: "cross-country", label: "越野 XC" },
+  { value: "trail", label: "林道 Trail" },
+  { value: "climbing", label: "爬坡" },
+  { value: "descending", label: "下坡" },
+  { value: "bike-park", label: "Bike Park" },
+  { value: "all-mountain", label: "全山地" },
+];
+
+export const MTB_TYPE_LABELS: Record<string, string> = {
+  xc: "越野竞赛 XC",
+  hardtail: "硬尾越野",
+  downcountry: "下坡越野 Downcountry",
+  trail: "全能林道 Trail",
+  enduro: "Enduro 耐力下坡",
+};
+
+export function mtbTypeLabel(value: unknown): string {
+  return MTB_TYPE_LABELS[String(value ?? "")] ?? String(value ?? "待补充");
+}
+
+export const MTB_SCORE_DIMS = [
+  { key: "climbing", label: "爬坡效率", weight: 0.18 },
+  { key: "descending", label: "下坡能力", weight: 0.2 },
+  { key: "control", label: "操控稳定", weight: 0.2 },
+  { key: "comfort", label: "颠簸舒适", weight: 0.15 },
+  { key: "versatility", label: "场景适应", weight: 0.12 },
+  { key: "value", label: "性价比", weight: 0.15 },
+];
+
+const MTB: Category = {
+  slug: "mtb",
+  name: "山地车",
+  nameEn: "Mountain Bike",
+  path: ["运动", "骑行"],
+  status: "live",
+  issue: "No.01 / MTB Index",
+  priceCurrency: "USD",
+  specTemplate: [
+    {
+      group: "车架与定位",
+      fields: [
+        { key: "bikeType", label: "车型取向", type: "text", direction: null },
+        { key: "frameMaterial", label: "车架材料", type: "text", direction: null },
+        { key: "completeWeight", label: "整车重量", unit: " kg", type: "number", direction: "lower" },
+        { key: "wheelSize", label: "轮径", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "悬挂与操控",
+      fields: [
+        { key: "frontTravel", label: "前叉行程", unit: " mm", type: "number", direction: null },
+        { key: "rearTravel", label: "后避震行程", unit: " mm", type: "number", direction: null },
+        { key: "suspension", label: "悬挂系统", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "传动与制动",
+      fields: [
+        { key: "groupset", label: "变速套件", type: "text", direction: null },
+        { key: "drivetrain", label: "传动规格", type: "text", direction: null },
+        { key: "brakes", label: "制动形式", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "轮组与接触面",
+      fields: [
+        { key: "wheelset", label: "轮组", type: "text", direction: null },
+        { key: "tireSize", label: "外胎规格", type: "text", direction: null },
+        { key: "dropper", label: "升降座管", type: "text", direction: null },
+        { key: "scenes", label: "适用场景", type: "text", direction: null },
+      ],
+    },
+  ],
+  filterTemplate: [
+    { key: "scenes", label: "场景", control: "multi", options: MTB_SCENES },
+    {
+      key: "bikeType",
+      label: "车型",
+      control: "multi",
+      options: Object.entries(MTB_TYPE_LABELS).map(([value, label]) => ({ value, label })),
+    },
+    {
+      key: "brands",
+      label: "品牌",
+      control: "multi",
+      options: [
+        { value: "Canyon", label: "Canyon" },
+        { value: "Specialized", label: "Specialized" },
+        { value: "Giant", label: "Giant" },
+      ],
+    },
+    { key: "price", label: "价格", control: "price", min: 2000, max: 16000, step: 500 },
+    {
+      key: "years",
+      label: "年份",
+      control: "multi",
+      options: [
+        { value: "2026", label: "2026" },
+        { value: "2025", label: "2025" },
+        { value: "2024", label: "2024" },
+      ],
+    },
+  ],
+  scoreDims: MTB_SCORE_DIMS,
+  rankCategories: [
+    { key: "overall", label: "综合榜" },
+    { key: "climbing", label: "爬坡榜", scenes: ["climbing"] },
+    { key: "descending", label: "下坡榜", scenes: ["descending"] },
+    { key: "control", label: "操控榜" },
+    { key: "value", label: "性价比" },
+  ],
+  quizTemplate: [],
+  hardcoreWeights: {},
+};
+
 const FLAT: Record<string, Category> = {
   snowboard: SNOWBOARD,
   "badminton-racket": BADMINTON_RACKET,
   "casting-rod": CASTING_ROD,
+  "action-cam": ACTION_CAM,
+  "road-bike": ROAD_BIKE,
+  mtb: MTB,
 };
 
 function walk(nodes: CategoryNode[]): void {

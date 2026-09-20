@@ -4,6 +4,11 @@ brand: capita
 model: Indoor Survival
 year: 2027
 title: CAPiTA Indoor Survival Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 偏公园和度假区的双向自由式板，用较软的硬度换取道具、跳台和地形转换中的灵活度，同时保留足够的脚下响应。
+price:
+  min: 629.95
+  max: 629.95
+  currency: USD
 specs:
   length: 156
   effectiveEdge: 1211
@@ -20,7 +25,19 @@ specs:
   scenes:
     - freestyle
     - all-mountain
-images: []
+editorial_scores:
+  stability: 7.2
+  response: 7.8
+  float: 5.7
+  park: 9.0
+  forgiveness: 8.0
+  value: 7.0
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST01-INDOOR-SURVIVAL-TOP.png?v=1776884610"
+    kind: face
+    alt: CAPiTA Indoor Survival 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-indoor-survival-mens-snowboard-2027

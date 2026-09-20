@@ -7,6 +7,7 @@ import { ChevronRight, Heart, Scale, Share2 } from "lucide-react";
 import { toast } from "sonner";
 import { AnalysisBlock, WhoForTags } from "@/components/gear/analysis-block";
 import { PendingBlock, PendingValue } from "@/components/gear/data-state";
+import { FitGuideTable } from "@/components/gear/fit-guide";
 import { Gallery } from "@/components/gear/gallery";
 import { GearCard } from "@/components/gear/gear-card";
 import { FlexBar, ScoreMark, SceneTags, Stars } from "@/components/gear/primitives";
@@ -15,7 +16,7 @@ import { ReviewPanel } from "@/components/gear/review-panel";
 import { SpecTable } from "@/components/gear/spec-table";
 import { SectionHead } from "@/components/layout/section-head";
 import { reviewCount, userRating } from "@/data/boards";
-import { getCategory } from "@/data/categories";
+import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear, type CloudRatingsResponse } from "@/lib/api";
 import { formatSpecValue, gearById, pricePosition, sameScenePeers } from "@/lib/domain";
 import { fmtCompact, fmtPrice } from "@/lib/format";
@@ -99,6 +100,7 @@ export default function GearDetailPage({
       <section className="reveal mt-16 grid gap-10 lg:grid-cols-[1fr_360px]">
         <div>
           <SectionHead index="02" title="完整参数" titleEn="Specifications" desc={`按 ${category?.name ?? ""} 品类的统一模板录入，缺测项显示 —。`} />
+          <FitGuideTable guide={gear.fitGuide} />
           <SpecTable gear={gear} groups={groups} />
         </div>
         <div>
@@ -226,7 +228,7 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
       <div className="border-b border-border py-5">
         <div className="flex items-baseline justify-between">
           <p className="mono-label">参考价</p>
-          <p className="mono-data text-[24px] leading-none tnum">{priceReady ? fmtPrice(gear.price) : <PendingValue label="价格待补" />}</p>
+          <p className="mono-data text-[24px] leading-none tnum">{priceReady ? fmtPrice(gear.price, gear.priceCurrency) : <PendingValue label="价格待补" />}</p>
         </div>
         {priceReady ? (
           <>
@@ -235,11 +237,11 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
               <span className="absolute top-1/2 h-4 w-[3px] -translate-y-1/2 bg-primary" style={{ left: `calc(${pos}% - 1.5px)` }} />
             </div>
             <div className="mono-data mt-2 flex justify-between text-[12px] text-muted-foreground tnum">
-              <span>{fmtPrice(gear.priceBand.min)}</span>
+              <span>{fmtPrice(gear.priceBand.min, gear.priceCurrency)}</span>
               <span className="text-foreground">
-                同类区间 {fmtPrice(gear.priceBand.min)}–{fmtPrice(gear.priceBand.max)}
+                同类区间 {fmtPrice(gear.priceBand.min, gear.priceCurrency)}–{fmtPrice(gear.priceBand.max, gear.priceCurrency)}
               </span>
-              <span>{fmtPrice(gear.priceBand.max)}</span>
+              <span>{fmtPrice(gear.priceBand.max, gear.priceCurrency)}</span>
             </div>
           </>
         ) : (
@@ -353,6 +355,30 @@ function categorySignalFor(gear: GearItem): { label: string; value: string; sub:
     };
   }
 
+  if (gear.categorySlug === "action-cam") {
+    return {
+      label: "最高视频规格",
+      value: formatSpecValue(gear.specs.maxVideo),
+      sub: "官方规格",
+    };
+  }
+
+  if (gear.categorySlug === "road-bike") {
+    return {
+      label: "车型取向",
+      value: roadBikeTypeLabel(gear.specs.bikeType),
+      sub: "官方车型定位",
+    };
+  }
+
+  if (gear.categorySlug === "mtb") {
+    return {
+      label: "车型取向",
+      value: mtbTypeLabel(gear.specs.bikeType),
+      sub: "官方车型定位",
+    };
+  }
+
   return {
     label: "调性",
     value: formatSpecValue(gear.specs.power),
@@ -385,6 +411,27 @@ function DetailSignals({ gear }: { gear: GearItem }) {
           ["中杆硬度", gear.specs.flex],
           ["最高磅数", gear.specs.maxTension ? `${gear.specs.maxTension} lbs` : null],
         ]
+      : gear.categorySlug === "action-cam"
+        ? [
+            ["传感器", gear.specs.sensor],
+            ["最高规格", gear.specs.maxVideo],
+            ["裸机防水", gear.specs.waterproofDepth ? `${gear.specs.waterproofDepth} m` : null],
+            ["官方续航", gear.specs.batteryLife ? `${gear.specs.batteryLife} min` : null],
+          ]
+      : gear.categorySlug === "road-bike"
+        ? [
+            ["车型取向", roadBikeTypeLabel(gear.specs.bikeType)],
+            ["变速套件", gear.specs.groupset],
+            ["最大胎宽", gear.specs.tireClearance ? `${gear.specs.tireClearance} mm` : null],
+            ["整车重量", gear.specs.completeWeight ? `${gear.specs.completeWeight} kg` : null],
+          ]
+      : gear.categorySlug === "mtb"
+        ? [
+            ["车型取向", mtbTypeLabel(gear.specs.bikeType)],
+            ["前 / 后行程", `${gear.specs.frontTravel ?? "—"} / ${gear.specs.rearTravel ?? "—"} mm`],
+            ["轮径", gear.specs.wheelSize],
+            ["变速套件", gear.specs.groupset],
+          ]
       : [
           ["调性强度", gear.specs.power],
           ["轮座类型", gear.specs.rodType],

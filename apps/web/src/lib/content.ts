@@ -9,7 +9,7 @@ import { GEAR, gearOfCategory, getGear } from "../data/boards";
 import { flexBucket, getCategory, isLive } from "../data/categories";
 import { API_BASE } from "./api";
 import { isAllowedImageUrl, resolveImageUrl } from "./image-url";
-import type { GearAnalysis, GearItem, GalleryShot } from "../types";
+import type { FitGuide, FitGuideRow, GearAnalysis, GearItem, GalleryShot } from "../types";
 
 export type ContentSource = "pack" | "api";
 
@@ -70,6 +70,36 @@ function toSpecs(value: Record<string, unknown>): GearItem["specs"] {
       return [key, JSON.stringify(raw)];
     }),
   );
+}
+
+function textValue(value: unknown): string | undefined {
+  return typeof value === "string" && value.trim() !== "" ? value : undefined;
+}
+
+function fitGuideOf(value: Record<string, unknown>, fallback?: GearItem): FitGuide | undefined {
+  const rows = Array.isArray(value.geometry)
+    ? value.geometry
+        .map((raw): FitGuideRow | null => {
+          const row = asRecord(raw);
+          const size = textValue(row.size);
+          if (!size) return null;
+          return {
+            size,
+            height: textValue(row.height),
+            stack: numberValue(row.stack),
+            reach: numberValue(row.reach),
+            wheelbase: numberValue(row.wheelbase),
+            headAngle: textValue(row.headAngle),
+            seatAngle: textValue(row.seatAngle),
+            wheelSize: textValue(row.wheelSize),
+          };
+        })
+        .filter((row): row is FitGuideRow => row !== null)
+    : [];
+
+  if (!rows.length) return fallback?.fitGuide;
+  const note = textValue(value.geometryNote) ?? fallback?.fitGuide?.note;
+  return note ? { rows, note } : { rows };
 }
 
 function priceOf(item: ApiProduct, fallback?: GearItem): number {
@@ -150,6 +180,10 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
     model: item.model,
     year: item.year,
     price,
+    priceCurrency:
+      item.priceCurrency && item.priceCurrency !== "CNY"
+        ? item.priceCurrency
+        : fallback?.priceCurrency ?? getCategory(categorySlug)?.priceCurrency ?? item.priceCurrency ?? "CNY",
     scenes,
     flexValue,
     flexLabel:
@@ -159,6 +193,7 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
     hero: cover,
     gallery: galleryOf(item, cover, fallback),
     specs: { ...(fallback?.specs ?? {}), ...specs },
+    fitGuide: fitGuideOf(rawSpecs, fallback),
     scores,
     composite: item.composite ?? fallback?.composite ?? 0,
     hardcore: hardcoreOf(rawSpecs, scores, fallback),

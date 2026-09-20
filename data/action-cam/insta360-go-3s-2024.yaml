@@ -1,0 +1,40 @@
+slug: insta360-go-3s-2024
+category: action-cam
+brand: insta360
+model: GO 3S
+year: 2024
+title: Insta360 GO 3S
+one_liner: 轻量化的 4K 拇指相机，优先解决佩戴、磁吸和第一视角记录问题。
+specs:
+  cameraType: wearable
+  sensor: 1/2.3 英寸
+  maxVideo: 4K@30fps
+  maxFrameRate: 120
+  stabilization: FlowState
+  waterproofDepth: 10
+  weight: 39.1
+  batteryLife: 140
+  screen: Action Pod 触控屏
+  storage: 64GB / 128GB 内置存储
+  scenes:
+    - cycling
+    - skiing
+    - vlogging
+    - travel
+editorial_scores:
+  imageQuality: 7.5
+  stabilization: 8
+  lowLight: 6.2
+  battery: 7.1
+  usability: 9.2
+  value: 7.8
+images:
+  - url: "https://res.insta360.com/static/a3b716298df7f6da544fcdaf70ffe21f/GO3S.png"
+    kind: face
+    alt: Insta360 GO 3S 官方产品图
+    source: Insta360 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.insta360.com/product/insta360-go3s
+status: published

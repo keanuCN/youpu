@@ -536,3 +536,520 @@
       - { key: strength, label: 回鱼强度, weight: 0.16 }
       - { key: versatility, label: 适用范围, weight: 0.13 }
       - { key: value, label: 性价比, weight: 0.15 }
+
+- slug: imaging
+  name: 影像
+  parent: sport
+  sort_order: 40
+
+- slug: action-cam
+  name: 运动相机
+  parent: imaging
+  sort_order: 10
+  recommend_config:
+    weights:
+      scene: 0.3
+      level: 0.2
+      imageQuality: 0.2
+      stabilization: 0.15
+      battery: 0.1
+      price: 0.05
+  spec_schema:
+    fields:
+      - key: cameraType
+        label: 相机类型
+        group: 成像与视频
+        type: enum
+        options:
+          - { value: action, label: 传统运动相机 }
+          - { value: wearable, label: 拇指 / 佩戴式 }
+        filter: multi
+        compare: true
+        order: 10
+
+      - key: sensor
+        label: 传感器
+        group: 成像与视频
+        type: text
+        filter: false
+        compare: true
+        order: 20
+
+      - key: maxVideo
+        label: 最高视频规格
+        group: 成像与视频
+        type: text
+        filter: false
+        compare: true
+        order: 30
+
+      - key: maxFrameRate
+        label: 最高帧率
+        group: 成像与视频
+        type: number
+        unit: fps
+        min: 24
+        max: 400
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 40
+
+      - key: maxPhoto
+        label: 最高照片规格
+        group: 成像与视频
+        type: text
+        filter: false
+        compare: true
+        order: 50
+
+      - key: fov
+        label: 视场角
+        group: 成像与视频
+        type: text
+        filter: false
+        compare: true
+        order: 60
+
+      - key: stabilization
+        label: 防抖系统
+        group: 稳定与耐候
+        type: text
+        filter: false
+        compare: true
+        order: 110
+
+      - key: waterproofDepth
+        label: 裸机防水深度
+        group: 稳定与耐候
+        type: number
+        unit: m
+        min: 0
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 120
+
+      - key: weight
+        label: 机身重量
+        group: 稳定与耐候
+        type: number
+        unit: g
+        min: 20
+        max: 400
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 130
+
+      - key: batteryLife
+        label: 官方续航
+        group: 稳定与耐候
+        type: number
+        unit: min
+        min: 20
+        max: 500
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 140
+
+      - key: screen
+        label: 屏幕
+        group: 使用与存储
+        type: text
+        filter: false
+        compare: true
+        order: 210
+
+      - key: storage
+        label: 存储
+        group: 使用与存储
+        type: text
+        filter: false
+        compare: true
+        order: 220
+
+      - key: scenes
+        label: 适用场景
+        group: 使用与存储
+        type: enum[]
+        options:
+          - { value: cycling, label: 骑行 }
+          - { value: motorcycle, label: 摩托 }
+          - { value: skiing, label: 滑雪 }
+          - { value: diving, label: 潜水 }
+          - { value: vlogging, label: Vlog }
+          - { value: travel, label: 旅行 }
+        filter: multi
+        compare: true
+        order: 230
+
+    rating_dimensions:
+      - { key: imageQuality, label: 画质表现, weight: 0.22 }
+      - { key: stabilization, label: 防抖能力, weight: 0.2 }
+      - { key: lowLight, label: 低光表现, weight: 0.17 }
+      - { key: battery, label: 续航能力, weight: 0.15 }
+      - { key: usability, label: 易用性, weight: 0.12 }
+      - { key: value, label: 性价比, weight: 0.14 }
+
+- slug: cycling
+  name: 骑行
+  parent: sport
+  sort_order: 20
+
+- slug: road-bike
+  name: 公路车
+  parent: cycling
+  sort_order: 10
+  recommend_config:
+    weights:
+      scene: 0.3
+      level: 0.15
+      bikeType: 0.2
+      comfort: 0.15
+      value: 0.2
+  spec_schema:
+    fields:
+      - key: bikeType
+        label: 车型取向
+        group: 车架与定位
+        type: enum
+        options:
+          - { value: race, label: 综合竞赛 }
+          - { value: aero, label: 空力竞赛 }
+          - { value: endurance, label: 耐力长途 }
+          - { value: all-round, label: 全能入门 }
+        filter: multi
+        compare: true
+        order: 10
+
+      - key: frameMaterial
+        label: 车架材料
+        group: 车架与定位
+        type: text
+        filter: false
+        compare: true
+        order: 20
+
+      - key: frameWeight
+        label: 车架重量
+        group: 车架与定位
+        type: number
+        unit: g
+        min: 700
+        max: 2500
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 30
+
+      - key: completeWeight
+        label: 整车重量
+        group: 车架与定位
+        type: number
+        unit: kg
+        min: 5
+        max: 15
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 40
+
+      - key: tireClearance
+        label: 最大胎宽
+        group: 车架与定位
+        type: number
+        unit: mm
+        min: 25
+        max: 50
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 50
+
+      - key: geometry
+        label: 尺码 / 几何
+        group: 尺码与几何
+        type: nested
+        itemSchema:
+          size: { type: text, label: 尺码 }
+          height: { type: text, label: 适合身高 }
+          stack: { type: number, label: Stack }
+          reach: { type: number, label: Reach }
+          wheelbase: { type: number, label: 轴距 }
+          headAngle: { type: text, label: 头管角 }
+          seatAngle: { type: text, label: 坐管角 }
+          wheelSize: { type: text, label: 轮径 }
+        filter: false
+        compare: false
+        order: 90
+
+      - key: geometryNote
+        label: 尺码备注
+        group: 尺码与几何
+        type: text
+        filter: false
+        compare: false
+        order: 95
+
+      - key: groupset
+        label: 变速套件
+        group: 传动与制动
+        type: text
+        filter: false
+        compare: true
+        order: 110
+
+      - key: drivetrain
+        label: 传动规格
+        group: 传动与制动
+        type: text
+        filter: false
+        compare: true
+        order: 120
+
+      - key: brakes
+        label: 制动形式
+        group: 传动与制动
+        type: enum
+        options:
+          - { value: hydraulic-disc, label: 油压碟刹 }
+          - { value: mechanical-disc, label: 机械碟刹 }
+          - { value: rim, label: 圈刹 }
+        filter: false
+        compare: true
+        order: 130
+
+      - key: wheelset
+        label: 轮组
+        group: 轮组与设定
+        type: text
+        filter: false
+        compare: true
+        order: 210
+
+      - key: gearRange
+        label: 齿比范围
+        group: 轮组与设定
+        type: text
+        filter: false
+        compare: true
+        order: 220
+
+      - key: fit
+        label: 骑行设定
+        group: 轮组与设定
+        type: text
+        filter: false
+        compare: true
+        order: 230
+
+      - key: scenes
+        label: 适用场景
+        group: 轮组与设定
+        type: enum[]
+        options:
+          - { value: racing, label: 竞赛 }
+          - { value: climbing, label: 爬坡 }
+          - { value: endurance, label: 长途耐力 }
+          - { value: group-ride, label: 团骑 }
+          - { value: all-road, label: 泛铺装 }
+        filter: multi
+        compare: true
+        order: 240
+
+    rating_dimensions:
+      - { key: speedEfficiency, label: 速度效率, weight: 0.2 }
+      - { key: handling, label: 操控反馈, weight: 0.18 }
+      - { key: comfort, label: 长途舒适, weight: 0.18 }
+      - { key: climbing, label: 爬坡表现, weight: 0.16 }
+      - { key: versatility, label: 适用范围, weight: 0.13 }
+      - { key: value, label: 性价比, weight: 0.15 }
+
+- slug: mtb
+  name: 山地车
+  parent: cycling
+  sort_order: 20
+  recommend_config:
+    weights:
+      scene: 0.3
+      level: 0.15
+      bikeType: 0.2
+      control: 0.2
+      value: 0.15
+  spec_schema:
+    fields:
+      - key: bikeType
+        label: 车型取向
+        group: 车架与定位
+        type: enum
+        options:
+          - { value: xc, label: 越野竞赛 XC }
+          - { value: hardtail, label: 硬尾越野 }
+          - { value: downcountry, label: 下坡越野 Downcountry }
+          - { value: trail, label: 全能林道 Trail }
+          - { value: enduro, label: Enduro 耐力下坡 }
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 10
+
+      - key: frameMaterial
+        label: 车架材料
+        group: 车架与定位
+        type: text
+        filter: false
+        compare: true
+        order: 20
+
+      - key: completeWeight
+        label: 整车重量
+        group: 车架与定位
+        type: number
+        unit: kg
+        min: 8
+        max: 20
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 30
+
+      - key: wheelSize
+        label: 轮径
+        group: 车架与定位
+        type: text
+        filter: false
+        compare: true
+        order: 40
+
+      - key: geometry
+        label: 尺码 / 几何
+        group: 尺码与几何
+        type: nested
+        itemSchema:
+          size: { type: text, label: 尺码 }
+          height: { type: text, label: 适合身高 }
+          stack: { type: number, label: Stack }
+          reach: { type: number, label: Reach }
+          wheelbase: { type: number, label: 轴距 }
+          headAngle: { type: text, label: 头管角 }
+          seatAngle: { type: text, label: 坐管角 }
+          wheelSize: { type: text, label: 轮径 }
+        filter: false
+        compare: false
+        order: 90
+
+      - key: geometryNote
+        label: 尺码备注
+        group: 尺码与几何
+        type: text
+        filter: false
+        compare: false
+        order: 95
+
+      - key: frontTravel
+        label: 前叉行程
+        group: 悬挂与操控
+        type: number
+        unit: mm
+        min: 80
+        max: 200
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 110
+
+      - key: rearTravel
+        label: 后避震行程
+        group: 悬挂与操控
+        type: number
+        unit: mm
+        min: 0
+        max: 180
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 120
+
+      - key: suspension
+        label: 悬挂系统
+        group: 悬挂与操控
+        type: text
+        filter: false
+        compare: true
+        order: 130
+
+      - key: groupset
+        label: 变速套件
+        group: 传动与制动
+        type: text
+        filter: false
+        compare: true
+        order: 210
+
+      - key: drivetrain
+        label: 传动规格
+        group: 传动与制动
+        type: text
+        filter: false
+        compare: true
+        order: 220
+
+      - key: brakes
+        label: 制动形式
+        group: 传动与制动
+        type: enum
+        options:
+          - { value: hydraulic-disc, label: 油压碟刹 }
+        filter: false
+        compare: true
+        order: 230
+
+      - key: wheelset
+        label: 轮组
+        group: 轮组与接触面
+        type: text
+        filter: false
+        compare: true
+        order: 310
+
+      - key: tireSize
+        label: 外胎规格
+        group: 轮组与接触面
+        type: text
+        filter: false
+        compare: true
+        order: 320
+
+      - key: dropper
+        label: 升降座管
+        group: 轮组与接触面
+        type: text
+        filter: false
+        compare: true
+        order: 330
+
+      - key: scenes
+        label: 适用场景
+        group: 适用场景
+        type: enum[]
+        options:
+          - { value: cross-country, label: 越野 XC }
+          - { value: trail, label: 林道 Trail }
+          - { value: climbing, label: 爬坡 }
+          - { value: descending, label: 下坡 }
+          - { value: bike-park, label: Bike Park }
+          - { value: all-mountain, label: 全山地 }
+        filter: multi
+        compare: true
+        order: 410
+
+    rating_dimensions:
+      - { key: climbing, label: 爬坡效率, weight: 0.18 }
+      - { key: descending, label: 下坡能力, weight: 0.2 }
+      - { key: control, label: 操控稳定, weight: 0.2 }
+      - { key: comfort, label: 颠簸舒适, weight: 0.15 }
+      - { key: versatility, label: 场景适应, weight: 0.12 }
+      - { key: value, label: 性价比, weight: 0.15 }

@@ -1,0 +1,46 @@
+slug: specialized-tarmac-sl8-comp-rival-axs-2026
+category: road-bike
+brand: specialized
+model: Tarmac SL8 Comp SRAM Rival AXS
+year: 2026
+title: Specialized Tarmac SL8 Comp SRAM Rival AXS
+one_liner: 用 FACT 10r 碳纤车架和 SRAM Rival AXS 覆盖竞赛、公路爬坡与团骑，是一台强调速度也保留日常可用性的竞赛车。
+specs:
+  bikeType: race
+  frameMaterial: Tarmac SL8 FACT 10r Carbon
+  groupset: SRAM Rival AXS E1
+  drivetrain: 2x12，48/35，10-36
+  brakes: hydraulic-disc
+  wheelset: DT Swiss R470，支持真空胎
+  gearRange: 10-36T / 48-35T
+  fit: Rider First Engineered，竞赛取向
+  geometry:
+    - { size: "44", headAngle: "70.5°", stack: 501, reach: 366 }
+    - { size: "49", headAngle: "71.75°", stack: 514, reach: 375 }
+    - { size: "52", headAngle: "72.5°", stack: 527, reach: 380 }
+    - { size: "54", headAngle: "73°", stack: 544, reach: 384 }
+    - { size: "56", headAngle: "73.5°", stack: 565, reach: 395 }
+    - { size: "58", headAngle: "73.5°", stack: 591, reach: 402 }
+    - { size: "61", headAngle: "74°", stack: 612, reach: 408 }
+  geometryNote: "Specialized Tarmac SL8 官方几何表；官方页面未在同一表格中给出骑手身高区间，因此这里保留车架尺码、Stack、Reach 和头管角。"
+  scenes:
+    - racing
+    - climbing
+    - group-ride
+editorial_scores:
+  speedEfficiency: 9.1
+  handling: 9
+  comfort: 7.9
+  climbing: 9
+  versatility: 8.4
+  value: 7.9
+images:
+  - url: "https://assets.specialized.com/i/specialized/94926-54_TARMAC-SL8-COMP-AXS-CARB-WHT_HERO-SQUARE"
+    kind: face
+    alt: Specialized Tarmac SL8 Comp 官方产品图
+    source: Specialized 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.specialized.com/us/en/tarmac-sl8-comp-sram-rival-axs-/p/4292996
+status: published

@@ -4,6 +4,11 @@ brand: capita
 model: Pathfinder
 year: 2027
 title: CAPiTA Pathfinder Camber Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 面向进阶初期和预算敏感用户的友好型双向板，转向轻松、容错较高，适合从基础动作走向公园和全山练习。
+price:
+  min: 449.95
+  max: 449.95
+  currency: USD
 specs:
   length: 151
   effectiveEdge: 1203
@@ -21,7 +26,19 @@ specs:
     - freestyle
     - all-mountain
     - beginner
-images: []
+editorial_scores:
+  stability: 6.5
+  response: 6.4
+  float: 5.2
+  park: 7.8
+  forgiveness: 8.5
+  value: 8.8
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST04-PATHFINDER-TOP.png?v=1776884552"
+    kind: face
+    alt: CAPiTA Pathfinder 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-pathfinder-mens-snowboard-2027

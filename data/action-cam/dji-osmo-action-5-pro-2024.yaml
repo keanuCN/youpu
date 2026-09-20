@@ -1,0 +1,46 @@
+slug: dji-osmo-action-5-pro-2024
+category: action-cam
+brand: dji
+model: Osmo Action 5 Pro
+year: 2024
+title: DJI Osmo Action 5 Pro
+one_liner: 以 1/1.3 英寸传感器、双 OLED 屏和长续航为核心的成熟旗舰，适合骑行、滑雪和旅行记录。
+price:
+  min: 319
+  max: 319
+  currency: USD
+specs:
+  cameraType: action
+  sensor: 1/1.3 英寸 CMOS
+  maxVideo: 4K@120fps
+  maxFrameRate: 120
+  maxPhoto: 约 40MP
+  stabilization: RockSteady 3.0+ / HorizonSteady
+  waterproofDepth: 20
+  weight: 146
+  batteryLife: 240
+  screen: 双 OLED 高亮触控屏
+  storage: 64GB 内置（47GB 可用）+ microSD
+  scenes:
+    - cycling
+    - motorcycle
+    - skiing
+    - diving
+    - travel
+editorial_scores:
+  imageQuality: 9.1
+  stabilization: 9
+  lowLight: 8.7
+  battery: 9.5
+  usability: 9
+  value: 8.2
+images:
+  - url: "https://se-cdn.djiits.com/tpc/uploads/spu/cover/e4781624a38ba00d1b4a8bc3a204bd97@ultra.png"
+    kind: face
+    alt: DJI Osmo Action 5 Pro 官方产品图
+    source: DJI 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.dji.com/osmo-action-5-pro/specs
+status: published

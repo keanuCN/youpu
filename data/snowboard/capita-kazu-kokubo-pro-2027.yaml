@@ -4,6 +4,11 @@ brand: capita
 model: Kazu Kokubo Pro
 year: 2027
 title: CAPiTA Kazu Kokubo Pro Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 紧凑而有力量的粉雪定向板，板头浮力和轻微收尾让它在侧country与变化地形里更灵活，适合有主动控板能力的滑手。
+price:
+  min: 679.95
+  max: 679.95
+  currency: USD
 specs:
   length: 157
   effectiveEdge: 1221
@@ -20,7 +25,19 @@ specs:
   scenes:
     - all-mountain
     - powder
-images: []
+editorial_scores:
+  stability: 8.4
+  response: 8.4
+  float: 9.0
+  park: 5.5
+  forgiveness: 6.8
+  value: 7.0
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD04_KAZU_cb4bcbc1-e63b-4922-ba86-d03579561fe4.jpg?v=1776978826"
+    kind: face
+    alt: CAPiTA Kazu Kokubo Pro 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-kazu-kokubo-pro-mens-snowboard-2027

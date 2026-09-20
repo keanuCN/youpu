@@ -6,7 +6,7 @@ import { Heart, Scale } from "lucide-react";
 import { toast } from "sonner";
 import { MediaPlaceholder, PendingValue } from "@/components/gear/data-state";
 import { reviewCount, userRating } from "@/data/boards";
-import { getCategory } from "@/data/categories";
+import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
 import { sceneLabel } from "@/lib/domain";
 import { fmtCompact, fmtPrice } from "@/lib/format";
 import { hasEditorialScores, hasMedia, hasPrice, hasUserRating, mediaUrl } from "@/lib/gear-state";
@@ -32,6 +32,21 @@ function CardSignal({ gear }: { gear: GearItem }) {
           ["重量", gear.specs.weightClass],
           ["平衡", gear.specs.balance],
         ]
+      : gear.categorySlug === "action-cam"
+        ? [
+            ["最高规格", gear.specs.maxVideo],
+            ["防抖", gear.specs.stabilization],
+          ]
+        : gear.categorySlug === "road-bike"
+          ? [
+              ["车型", roadBikeTypeLabel(gear.specs.bikeType)],
+              ["套件", gear.specs.groupset],
+            ]
+          : gear.categorySlug === "mtb"
+            ? [
+                ["车型", mtbTypeLabel(gear.specs.bikeType)],
+                ["悬挂", `${gear.specs.frontTravel ?? "—"} / ${gear.specs.rearTravel ?? "—"} mm`],
+              ]
       : [
           ["调性", gear.specs.power],
           ["饵重", gear.specs.lureWeight],
@@ -196,7 +211,7 @@ export function GearCard({
           <div className="mt-auto flex items-end justify-between gap-2 border-t border-border pt-2.5">
             <div className="min-w-0">
               <p className="mono-data text-[15px] leading-none tnum">
-                {priceReady ? fmtPrice(gear.price) : <PendingValue label="价格待补" />}
+                {priceReady ? fmtPrice(gear.price, gear.priceCurrency) : <PendingValue label="价格待补" />}
               </p>
               <p className="mono-label mt-1.5">{priceReady ? "参考价" : "价格尚未采集"}</p>
             </div>
@@ -292,7 +307,7 @@ export function GearRow({
         <p className="mono-label truncate">{gear.brand}</p>
         <p className="truncate text-[14px] font-medium">{gear.model}</p>
         <p className="mono-label mt-1 truncate">
-          {note ?? `${gear.year} · ${hasPrice(gear) ? fmtPrice(gear.price) : "价格待补"} · ${gear.scenes.length ? gear.scenes.map(sceneLabel).join(" / ") : "场景待补"}`}
+          {note ?? `${gear.year} · ${hasPrice(gear) ? fmtPrice(gear.price, gear.priceCurrency) : "价格待补"} · ${gear.scenes.length ? gear.scenes.map(sceneLabel).join(" / ") : "场景待补"}`}
         </p>
       </div>
       <div className="shrink-0 text-right">

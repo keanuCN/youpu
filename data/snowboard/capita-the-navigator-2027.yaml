@@ -4,6 +4,11 @@ brand: capita
 model: The Navigator
 year: 2027
 title: CAPiTA The Navigator Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 为粉雪和野外地形准备的定向板，强调板头浮力、稳定巡航和路线选择，适合把滑行重点放在非压雪区域的用户。
+price:
+  min: 649.95
+  max: 649.95
+  currency: USD
 specs:
   length: 161
   effectiveEdge: 1216
@@ -20,7 +25,19 @@ specs:
   scenes:
     - powder
     - all-mountain
-images: []
+editorial_scores:
+  stability: 8.2
+  response: 8.0
+  float: 9.0
+  park: 4.8
+  forgiveness: 6.9
+  value: 6.8
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD06-NAVIGATOR-TOP.png?v=1776884611"
+    kind: face
+    alt: CAPiTA The Navigator 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-the-navigator-mens-snowboard-2027

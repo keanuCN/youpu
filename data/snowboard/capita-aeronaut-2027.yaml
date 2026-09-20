@@ -4,6 +4,11 @@ brand: capita
 model: Aeronaut
 year: 2027
 title: CAPiTA Aeronaut Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 定向传统正拱的度假全山板，强调速度、侧击和连续腾空，适合已经能主动压板并想提升山地表现的滑手。
+price:
+  min: 679.95
+  max: 679.95
+  currency: USD
 specs:
   length: 157
   effectiveEdge: 1230
@@ -19,7 +24,19 @@ specs:
   flex: 6
   scenes:
     - all-mountain
-images: []
+editorial_scores:
+  stability: 8.6
+  response: 8.5
+  float: 7.4
+  park: 7.2
+  forgiveness: 6.5
+  value: 7.1
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST02-AERONAUT-TOP.png?v=1776884582"
+    kind: face
+    alt: CAPiTA Aeronaut 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-aeronaut-mens-snowboard-2027

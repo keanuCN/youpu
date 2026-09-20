@@ -14,6 +14,8 @@ export interface Filters {
   scenes: string[];
   profileFamily: string[];
   flex: string[];
+  cameraType: string[];
+  bikeType: string[];
   price: [number, number];
   brands: string[];
   years: string[];
@@ -27,6 +29,8 @@ export const DEFAULT_FILTERS: Filters = {
   scenes: [],
   profileFamily: [],
   flex: [],
+  cameraType: [],
+  bikeType: [],
   price: PRICE_BOUNDS,
   brands: [],
   years: [],
@@ -45,6 +49,8 @@ export function activeFilterCount(f: Filters, priceBounds: PriceBounds = PRICE_B
   n += f.scenes.length ? 1 : 0;
   n += f.profileFamily.length ? 1 : 0;
   n += f.flex.length ? 1 : 0;
+  n += f.cameraType.length ? 1 : 0;
+  n += f.bikeType.length ? 1 : 0;
   n += f.brands.length ? 1 : 0;
   n += f.years.length ? 1 : 0;
   if (f.price[0] !== priceBounds[0] || f.price[1] !== priceBounds[1]) n += 1;
@@ -59,6 +65,8 @@ export function applyFilters(items: GearItem[], f: Filters, priceBounds: PriceBo
     if (f.profileFamily.length && !f.profileFamily.includes(String(g.specs.profileFamily ?? ""))) return false;
     // 显式筛选时，缺失 flex 不能被数值 0 误判为 soft。
     if (f.flex.length && (!hasFlex(g) || !f.flex.includes(flexBucketOf(g.flexValue)))) return false;
+    if (f.cameraType.length && !f.cameraType.includes(String(g.specs.cameraType ?? ""))) return false;
+    if (f.bikeType.length && !f.bikeType.includes(String(g.specs.bikeType ?? ""))) return false;
     // 默认价格区间不能把价格尚未采集的产品误删；用户主动调价时，未知价格不参与匹配。
     if (priceFilterActive && (!hasPrice(g) || g.price < f.price[0] || g.price > f.price[1])) return false;
     if (f.brands.length && !f.brands.includes(g.brand)) return false;
@@ -495,6 +503,22 @@ const SCENE_LABELS: Record<string, string> = {
   finesse: "精细钓法",
   "light-lure": "轻饵",
   "heavy-lure": "重饵",
+  cycling: "骑行",
+  racing: "竞赛",
+  climbing: "爬坡",
+  endurance: "长途耐力",
+  "group-ride": "团骑",
+  "all-road": "泛铺装",
+  "cross-country": "越野 XC",
+  trail: "林道 Trail",
+  descending: "下坡",
+  "bike-park": "Bike Park",
+  "all-mountain": "全山地",
+  motorcycle: "摩托",
+  skiing: "滑雪",
+  diving: "潜水",
+  vlogging: "Vlog",
+  travel: "旅行",
 };
 
 export function sceneLabel(v: string): string {
@@ -506,6 +530,23 @@ export function formatSpecValue(value: unknown): string {
   if (value === null || value === undefined || value === "") return "—";
   if (typeof value !== "string") return String(value);
   const text = value.trim();
+  const knownLabels: Record<string, string> = {
+    race: "综合竞赛",
+    aero: "空力竞赛",
+    endurance: "耐力长途",
+    "all-round": "全能入门",
+    xc: "越野竞赛 XC",
+    hardtail: "硬尾越野",
+    downcountry: "下坡越野 Downcountry",
+    trail: "全能林道 Trail",
+    enduro: "Enduro 耐力下坡",
+    "hydraulic-disc": "油压碟刹",
+    "mechanical-disc": "机械碟刹",
+    rim: "圈刹",
+    action: "传统运动相机",
+    wearable: "拇指 / 佩戴式",
+  };
+  if (knownLabels[text]) return knownLabels[text];
   if (text.startsWith("[") && text.endsWith("]")) {
     try {
       const parsed: unknown = JSON.parse(text);

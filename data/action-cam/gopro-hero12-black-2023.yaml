@@ -1,0 +1,42 @@
+slug: gopro-hero12-black-2023
+category: action-cam
+brand: gopro
+model: HERO12 Black
+year: 2023
+title: GoPro HERO12 Black
+one_liner: 以 5.3K 视频、HyperSmooth 6.0 和成熟配件生态保持均衡，适合以较低成本进入 GoPro 体系。
+specs:
+  cameraType: action
+  sensor: 1/1.9 英寸 CMOS，27MP
+  maxVideo: 5.3K@60fps
+  maxFrameRate: 240
+  maxPhoto: 27MP
+  stabilization: HyperSmooth 6.0
+  waterproofDepth: 10
+  weight: 154
+  batteryLife: 150
+  screen: 后置触屏 + 前置彩屏
+  storage: microSD
+  scenes:
+    - cycling
+    - motorcycle
+    - skiing
+    - travel
+    - vlogging
+editorial_scores:
+  imageQuality: 8.9
+  stabilization: 9.3
+  lowLight: 7.2
+  battery: 8
+  usability: 8.2
+  value: 8
+images:
+  - url: "https://gopro.com/on/demandware.static/-/Sites-gopro-products/default/dwd62f3260/images/Product%20Images/cameras/CHDHX-121-master/plp-product-card-h12.png"
+    kind: face
+    alt: GoPro HERO12 Black 官方产品图
+    source: GoPro 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://gopro.com/en/us/shop/cameras/hero12-black/CHDHX-121-master.html?option-id=CHDHX-121-master
+status: published

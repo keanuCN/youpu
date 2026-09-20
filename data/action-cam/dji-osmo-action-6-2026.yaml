@@ -1,0 +1,41 @@
+slug: dji-osmo-action-6-2026
+category: action-cam
+brand: dji
+model: Osmo Action 6
+year: 2026
+title: DJI Osmo Action 6
+one_liner: 以 1/1.1 英寸方形传感器、可变光圈和 8K 视频为核心的旗舰运动相机，适合希望兼顾运动记录与低光创作的人。
+specs:
+  cameraType: action
+  sensor: 1/1.1 英寸方形传感器
+  maxVideo: 8K@30fps
+  maxFrameRate: 120
+  stabilization: RockSteady / HorizonSteady
+  waterproofDepth: 20
+  weight: 149
+  batteryLife: 240
+  screen: 双触控屏
+  storage: 64GB 内置（50GB 可用）+ microSD
+  scenes:
+    - cycling
+    - motorcycle
+    - skiing
+    - diving
+    - travel
+editorial_scores:
+  imageQuality: 9.6
+  stabilization: 9.2
+  lowLight: 9.4
+  battery: 9.3
+  usability: 8.8
+  value: 7.8
+images:
+  - url: "https://se-cdn.djiits.com/tpc/uploads/spu/cover/12bba4939cd4f341e741cdf5d2c8d9b0@ultra.png?format=webp"
+    kind: face
+    alt: DJI Osmo Action 6 官方产品图
+    source: DJI 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.dji.com/osmo-action-6/specs
+status: published

@@ -19,7 +19,7 @@ const envSchema = z.object({
   ADMIN_ACTOR_ID: z.string().uuid().optional(),
   /** 本地 M3 访问令牌签名密钥；上线前必须替换为独立随机密钥。 */
   AUTH_SECRET: z.string().min(16).default('youpu-local-auth-secret-change-me'),
-  /** 邮箱验证码投递。开发环境未配置时返回 devCode，生产环境会明确报错。 */
+  /** 邮箱验证码投递。开发和生产环境都必须配置真实 SMTP。 */
   EMAIL_SMTP_HOST: z.string().optional(),
   EMAIL_SMTP_PORT: z.coerce.number().int().min(1).max(65_535).default(587),
   EMAIL_SMTP_SECURE: z.enum(['true', 'false']).default('false').transform((value) => value === 'true'),

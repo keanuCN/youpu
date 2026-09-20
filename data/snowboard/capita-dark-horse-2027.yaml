@@ -4,6 +4,11 @@ brand: capita
 model: Dark Horse
 year: 2027
 title: CAPiTA Dark Horse Snowboard 2027 CAPiTA Snowboards | NA
+one_liner: 以较低门槛切入公园和自由式的双向板，保留跳台、侧击与道具所需的灵活性，也能应付日常度假区巡航。
+price:
+  min: 499.95
+  max: 499.95
+  currency: USD
 specs:
   length: 154
   effectiveEdge: 1188
@@ -20,7 +25,19 @@ specs:
   scenes:
     - freestyle
     - all-mountain
-images: []
+editorial_scores:
+  stability: 7.0
+  response: 7.2
+  float: 5.8
+  park: 8.6
+  forgiveness: 7.8
+  value: 8.2
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST03-DARK-HORSE-TOP.png?v=1776884600"
+    kind: face
+    alt: CAPiTA Dark Horse 2027 官方产品图
+    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027

@@ -1,0 +1,54 @@
+slug: canyon-spectral-cf-7-2026
+category: mtb
+brand: canyon
+model: Spectral CF 7
+year: 2026
+title: Canyon Spectral CF 7
+one_liner: 150mm 前叉、140mm 后避震和可切换 29 / Mullet 轮径，面向更激进的全能林道骑行。
+price:
+  min: 3999
+  max: 3999
+  currency: USD
+specs:
+  bikeType: trail
+  frameMaterial: CF 页面版本（组件材质待复核）
+  completeWeight: 15.99
+  wheelSize: 29"；可按配置切换 Mullet
+  geometry:
+    - { size: XS, height: "≤168 cm", headAngle: "64°", seatAngle: "76.5°", wheelbase: 1184, stack: 612, reach: 425, wheelSize: 'Mullet（前29 / 后27.5）' }
+    - { size: S, height: "163–177 cm", headAngle: "64°", seatAngle: "76.5°", wheelbase: 1213, stack: 621, reach: 450, wheelSize: 'Mullet（前29 / 后27.5）' }
+    - { size: M, height: "172–185 cm", headAngle: "64°", seatAngle: "76.5°", wheelbase: 1243, stack: 630, reach: 475, wheelSize: 'Mullet / 29"' }
+    - { size: L, height: "180–194 cm", headAngle: "64°", seatAngle: "76.5°", wheelbase: 1272, stack: 639, reach: 500, wheelSize: 'Mullet / 29"' }
+    - { size: XL, height: "≥189 cm", headAngle: "64°", seatAngle: "76.5°", wheelbase: 1301, stack: 648, reach: 525, wheelSize: 'Mullet / 29"' }
+  geometryNote: "Canyon Spectral CF 官方表中的 Mullet 几何；切换为 29 英寸后，轮距与骑姿会按官方配置表变化，购买前需确认轮径版本。"
+  frontTravel: 150
+  rearTravel: 140
+  suspension: FOX 36 Rhythm 前叉 + FOX Float X Performance 后避震
+  groupset: Shimano Deore
+  drivetrain: 1x12，10-51T
+  brakes: hydraulic-disc
+  wheelset: XC 30 AL / END30AL
+  tireSize: 29x2.4"
+  dropper: 150–230mm（按尺码）
+  scenes:
+    - trail
+    - climbing
+    - descending
+    - all-mountain
+editorial_scores:
+  climbing: 8.2
+  descending: 9.3
+  control: 9.1
+  comfort: 8.8
+  versatility: 9.1
+  value: 8.4
+images:
+  - url: "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1787554526/2027_FULL_spectral_cf-7_4380_M179_P08_P5_29_yyqkjb"
+    kind: face
+    alt: Canyon Spectral CF 7 官方产品图
+    source: Canyon 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: "https://www.canyon.com/en-us/mountain-bikes/trail-bikes/spectral/cf/spectral-cf-7/4380.html"
+status: published

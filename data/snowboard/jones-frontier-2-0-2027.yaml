@@ -4,6 +4,11 @@ brand: jones
 model: Frontier 2.0
 year: 2027
 title: Men's Frontier 2.0 Snowboard | Jones
+one_liner: 适合整季日常使用的全山定向板，转弯直观、变化雪况中容易掌控，并能在新雪里提供足够浮力。
+price:
+  min: 549.95
+  max: 549.95
+  currency: USD
 specs:
   length: 159
   weight: 2900
@@ -21,7 +26,19 @@ specs:
   scenes:
     - all-mountain
     - powder
-images: []
+editorial_scores:
+  stability: 7.7
+  response: 7.5
+  float: 7.8
+  park: 5.8
+  forgiveness: 8.0
+  value: 8.0
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.FRT-gallery-1.webp?v=1782443696&width=1200"
+    kind: face
+    alt: Jones Frontier 2.0 2027 官方产品图
+    source: Jones 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.jonessnowboards.com/products/mens-frontier-20-snowboard

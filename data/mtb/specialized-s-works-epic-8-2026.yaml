@@ -1,0 +1,52 @@
+slug: specialized-s-works-epic-8-2026
+category: mtb
+brand: specialized
+model: S-Works Epic 8
+year: 2026
+title: Specialized S-Works Epic 8
+one_liner: 120mm XC 全避震、FACT 12m 碳纤车架和 Flight Attendant 电子悬挂，服务于竞赛与高速越野。
+price:
+  min: 14999.99
+  max: 14999.99
+  currency: USD
+specs:
+  bikeType: xc
+  frameMaterial: S-Works FACT 12m Carbon
+  completeWeight: 10
+  wheelSize: 29"
+  geometry:
+    - { size: S }
+    - { size: M }
+    - { size: L }
+    - { size: XL }
+  geometryNote: "Specialized S-Works Epic 8 官方页面列出 S/M/L/XL 尺码；当前内容只接入尺码选项，Stack、Reach 等完整几何待官方表格补齐。"
+  frontTravel: 120
+  rearTravel: 120
+  suspension: RockShox SID Ultimate + SIDLuxe Ultimate Flight Attendant
+  groupset: SRAM XX SL Eagle AXS
+  drivetrain: 1x12，10-52T，34T
+  brakes: hydraulic-disc
+  wheelset: Roval Control World Cup 碳纤轮组
+  tireSize: 29x2.35"
+  dropper: RockShox Reverb AXS，125 / 150 / 175mm（按尺码）
+  scenes:
+    - cross-country
+    - climbing
+    - trail
+editorial_scores:
+  climbing: 9.7
+  descending: 8.8
+  control: 9.2
+  comfort: 8.1
+  versatility: 8.1
+  value: 6.8
+images:
+  - url: https://assets.specialized.com/i/specialized/90326-00_EPIC-8-SW-CARB-BLUPRL-METWHTSIL_HERO-SQUARE
+    kind: face
+    alt: Specialized S-Works Epic 8 官方产品图
+    source: Specialized 官方产品页图片（本地演示，版权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.specialized.com/us/en/s-works-epic-8-sram-xx-sl-axs-rockshox-ultimate-flight-attendant/p/4221525
+status: published

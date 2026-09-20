@@ -77,6 +77,8 @@ export interface CategoryNode {
 
 export interface Category extends CategoryNode {
   issue: string;
+  /** 价格筛选和展示使用的参考币种，未配置时默认 CNY。 */
+  priceCurrency?: string;
   specTemplate: SpecGroup[];
   filterTemplate: FilterDef[];
   scoreDims: ScoreDim[];
@@ -89,6 +91,23 @@ export interface Category extends CategoryNode {
 export interface GalleryShot {
   url: string;
   label: string;
+}
+
+/** 官方尺码/几何表，用于需要按尺码做选择的装备。 */
+export interface FitGuideRow {
+  size: string;
+  height?: string;
+  stack?: number;
+  reach?: number;
+  wheelbase?: number;
+  headAngle?: string;
+  seatAngle?: string;
+  wheelSize?: string;
+}
+
+export interface FitGuide {
+  rows: FitGuideRow[];
+  note?: string;
 }
 
 export interface GearAnalysis {
@@ -106,12 +125,15 @@ export interface GearItem {
   model: string;
   year: number;
   price: number;
+  /** 官方价格的币种；旧内容包缺省按 CNY 兼容。 */
+  priceCurrency?: string;
   scenes: string[];
   flexValue: number;
   flexLabel: string;
   hero: string;
   gallery: GalleryShot[];
   specs: Record<string, number | string | null>;
+  fitGuide?: FitGuide;
   scores: Record<string, number>;
   composite: number;
   hardcore: number;
