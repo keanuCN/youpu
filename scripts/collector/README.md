@@ -91,6 +91,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门路亚竿第一阶段目标见 `examples/domestic-hot-casting-rod-phase1-targets.json`。当前接入钓之屋（TSURINOYA）睿系列官方产品页，从标题和产品详情表提取两节结构、超快调、鲈鱼和虫竿场景；长度、重量、饵重、线重、力度、轮座、竿胚和碳布含量等图片规格未做 OCR，保持缺省。
 
+国内热门无人机第一阶段目标见 `examples/domestic-hot-drone-phase1-targets.json`。当前接入 DJI Mini 4 Pro 官方技术参数页，从页面摘要提取重量说明、最高视频规格、图传距离、全向避障、智能跟随和竖拍；详细规格表在当前静态快照中由前端动态渲染，未确认的传感器、续航和电池参数保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "dji-mini-4-pro-2023",
+    "category": "drone",
+    "brand": "dji",
+    "model": "Mini 4 Pro",
+    "identityAliases": ["DJI Mini 4 Pro"],
+    "year": 2023,
+    "url": "https://www.dji.com/cn/mini-4-pro/specs",
+    "mode": "cheerio"
+  }
+]

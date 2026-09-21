@@ -1997,6 +1997,102 @@
   name: 无人机
   parent: drones
   sort_order: 10
+  recommend_config:
+    weights:
+      scene: 0.25
+      imageQuality: 0.25
+      safety: 0.2
+      portability: 0.15
+      value: 0.15
+  spec_schema:
+    fields:
+      - key: weightNote
+        label: 重量说明
+        group: 飞行器与便携
+        type: text
+        filter: false
+        compare: true
+        order: 10
+
+      - key: maxVideo
+        label: 最高视频规格
+        group: 影像与创作
+        type: text
+        filter: false
+        compare: true
+        order: 110
+
+      - key: cameraSensor
+        label: 相机传感器
+        group: 影像与创作
+        type: text
+        filter: false
+        compare: true
+        order: 120
+
+      - key: verticalShooting
+        label: 竖拍支持
+        group: 影像与创作
+        type: bool
+        filter: false
+        compare: true
+        order: 130
+
+      - key: flightTime
+        label: 最长飞行时间
+        group: 飞行器与便携
+        type: number
+        unit: min
+        min: 5
+        max: 60
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 20
+
+      - key: batteryCapacity
+        label: 电池容量
+        group: 飞行器与便携
+        type: number
+        unit: mAh
+        min: 100
+        max: 10000
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 30
+
+      - key: transmissionRange
+        label: 图传距离
+        group: 感知与连接
+        type: number
+        unit: km
+        min: 1
+        max: 50
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 210
+
+      - key: obstacleSensing
+        label: 避障能力
+        group: 感知与连接
+        type: enum
+        options:
+          - { value: omnidirectional, label: 全向避障 }
+          - { value: forward-downward, label: 前向 / 下视 }
+          - { value: none, label: 无主动避障 }
+        filter: multi
+        compare: true
+        order: 220
+
+      - key: subjectTracking
+        label: 智能跟随
+        group: 感知与连接
+        type: bool
+        filter: false
+        compare: true
+        order: 230
 
 - slug: av-digital
   name: 影音数码

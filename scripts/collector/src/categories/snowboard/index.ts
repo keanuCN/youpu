@@ -22,6 +22,7 @@ import { ospreyHikingBackpackAdapter } from '../hiking-backpack/brands/osprey';
 import { naturehikeHikingBackpackAdapter } from '../hiking-backpack/brands/naturehike';
 import { kailasHikingBackpackAdapter } from '../hiking-backpack/brands/kailas';
 import { tsurinoyaCastingRodAdapter } from '../casting-rod/brands/tsurinoya';
+import { djiDroneAdapter } from '../drone/brands/dji';
 
 export interface ProductAdapter {
   name: string;
@@ -45,6 +46,7 @@ const adapters: ProductAdapter[] = [
   naturehikeHikingBackpackAdapter,
   kailasHikingBackpackAdapter,
   tsurinoyaCastingRodAdapter,
+  djiDroneAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,
