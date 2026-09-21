@@ -61,6 +61,8 @@ pnpm --filter @youpu/collector run audit:drafts -- `
 
 Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targets.json`。当前包含 2 条官方零售页目标，`Product Specifications` 表已接入 Victor adapter，可提取重量等级、最高建议磅数、拍框材料和中杆材料；未出现的平衡、硬度等字段保持缺省。
 
+帐篷第一阶段目标见 `examples/tent-phase1-targets.json`。当前接入 MSR 官方产品页，先从标题、描述和标题级内容提取容纳人数、帐篷类型、适用季节与自立结构；最低重量、面积、材料等未被当前静态快照确认的字段保持缺省，不根据搜索摘要或图片反推。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

@@ -895,6 +895,200 @@
   name: 帐篷
   parent: camping
   sort_order: 10
+  recommend_config:
+    weights:
+      scene: 0.25
+      capacity: 0.2
+      weather: 0.2
+      weight: 0.2
+      value: 0.15
+  spec_schema:
+    fields:
+      - key: capacity
+        label: 容纳人数
+        group: 空间与结构
+        type: int
+        unit: 人
+        min: 1
+        max: 8
+        filter: range
+        compare: true
+        compareDirection: context
+        required: true
+        order: 10
+
+      - key: tentType
+        label: 帐篷类型
+        group: 空间与结构
+        type: enum
+        options:
+          - { value: backpacking, label: 徒步背包帐 }
+          - { value: camping, label: 露营帐 }
+          - { value: bikepacking, label: 骑行帐 }
+          - { value: four-season, label: 四季帐 }
+        filter: single
+        compare: true
+        compareDirection: context
+        required: true
+        order: 20
+
+      - key: seasons
+        label: 适用季节
+        group: 防护与适用
+        type: int
+        unit: 季
+        min: 1
+        max: 5
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 30
+
+      - key: freestanding
+        label: 是否自立
+        group: 防护与适用
+        type: bool
+        filter: single
+        compare: true
+        compareDirection: neutral
+        order: 40
+
+      - key: doors
+        label: 门数量
+        group: 空间与结构
+        type: int
+        unit: 个
+        min: 1
+        max: 6
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 50
+
+      - key: minWeight
+        label: 最低重量
+        group: 重量与收纳
+        type: number
+        unit: kg
+        min: 0.1
+        max: 15
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 110
+
+      - key: packedWeight
+        label: 包装重量
+        group: 重量与收纳
+        type: number
+        unit: kg
+        min: 0.1
+        max: 20
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 120
+
+      - key: packedSize
+        label: 收纳尺寸
+        group: 重量与收纳
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 130
+
+      - key: floorArea
+        label: 内帐面积
+        group: 空间与结构
+        type: number
+        unit: m²
+        min: 0.2
+        max: 30
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 210
+
+      - key: vestibuleArea
+        label: 前庭面积
+        group: 空间与结构
+        type: number
+        unit: m²
+        min: 0
+        max: 20
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 220
+
+      - key: peakHeight
+        label: 最高高度
+        group: 空间与结构
+        type: number
+        unit: cm
+        min: 40
+        max: 250
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 230
+
+      - key: poleMaterial
+        label: 杆件材质
+        group: 材料与耐久
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 310
+
+      - key: rainflyMaterial
+        label: 外帐材质
+        group: 材料与耐久
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 320
+
+      - key: canopyMaterial
+        label: 内帐材质
+        group: 材料与耐久
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 330
+
+      - key: floorMaterial
+        label: 底布材质
+        group: 材料与耐久
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 340
+
+      - key: waterproofRating
+        label: 防水指数
+        group: 防护与适用
+        type: number
+        unit: mm
+        min: 0
+        max: 30000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 410
+
+    rating_dimensions:
+      - { key: space, label: 空间表现, weight: 0.2 }
+      - { key: weatherproof, label: 防风雨, weight: 0.2 }
+      - { key: weight, label: 轻量化, weight: 0.18 }
+      - { key: setup, label: 搭建便利, weight: 0.15 }
+      - { key: durability, label: 耐久性, weight: 0.15 }
+      - { key: value, label: 性价比, weight: 0.12 }
 
 - slug: tarp
   name: 天幕
