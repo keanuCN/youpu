@@ -1,5 +1,5 @@
 import { load, type CheerioAPI } from 'cheerio';
-import type { PageSnapshot, PageTable } from './types';
+import type { PageSnapshot, PageSpecification, PageTable } from './types';
 
 export function snapshotFromHtml(html: string, baseUrl: string): PageSnapshot {
   const $ = load(html);
@@ -27,9 +27,25 @@ export function snapshotFromHtml(html: string, baseUrl: string): PageSnapshot {
       .filter(Boolean),
     jsonLd,
     tables: [...extractTables($), ...extractVariantTables($)],
+    specifications: extractSpecifications($),
     images: extractImageUrls($, baseUrl),
     imageAltTexts: extractImageAltTexts($),
   };
+}
+
+/**
+ * 公开商品页常用 b/i 或 label/value 列表表达规格，不一定使用 table。
+ * 这里只保存结构化的标签和值；字段含义与单位归一仍交给品类 adapter。
+ */
+function extractSpecifications($: CheerioAPI): PageSpecification[] {
+  const specifications: PageSpecification[] = [];
+  $('li').each((_, element) => {
+    const label = normalizeText($(element).find('b').first().text()).replace(/:$/, '').trim();
+    const value = normalizeText($(element).find('i').first().text());
+    if (!label || !value || label.length > 120 || value.length > 500) return;
+    specifications.push({ label, value });
+  });
+  return specifications;
 }
 
 /**

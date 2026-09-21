@@ -32,6 +32,11 @@ export interface PageTable {
   rows: string[][];
 }
 
+export interface PageSpecification {
+  label: string;
+  value: string;
+}
+
 export interface PageSnapshot {
   title?: string;
   description?: string;
@@ -39,6 +44,7 @@ export interface PageSnapshot {
   headings: string[];
   jsonLd: unknown[];
   tables: PageTable[];
+  specifications: PageSpecification[];
   images: string[];
   imageAltTexts: string[];
 }

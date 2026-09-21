@@ -7,6 +7,7 @@ import { bataleonAdapter } from './brands/bataleon';
 import { nitroAdapter } from './brands/nitro';
 import { rideAdapter } from './brands/ride';
 import { neverSummerAdapter } from './brands/never-summer';
+import { yonexBadmintonAdapter } from '../badminton-racket/brands/yonex';
 
 export interface ProductAdapter {
   name: string;
@@ -15,6 +16,7 @@ export interface ProductAdapter {
 }
 
 const adapters: ProductAdapter[] = [
+  yonexBadmintonAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,
