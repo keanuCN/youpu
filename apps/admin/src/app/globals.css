@@ -6018,3 +6018,271 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+
+/* System operations workspace: infrastructure status first, account controls below. */
+.system-workspace-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--paper-light);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-panel);
+}
+
+.system-console-line,
+.system-runtime-line,
+.system-heading-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.system-console-line {
+  color: #52657d;
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+.system-console-line strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 999px;
+  background: #d9f6ef;
+  padding: 4px 9px;
+  color: #006a63;
+  font-family: var(--sans);
+  font-size: 11px;
+}
+
+.system-console-line i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #008577;
+}
+
+.system-runtime-line {
+  margin-top: 11px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+.system-heading-title-row {
+  margin-top: 7px;
+}
+
+.system-heading-title-row h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1.1;
+}
+
+.system-heading-title-row span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.system-heading-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  max-width: 470px;
+}
+
+.system-heading-actions .button {
+  min-height: 36px;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+.system-service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.system-service-card {
+  display: grid;
+  min-height: 164px;
+  align-content: start;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-top: 3px solid #0c6f7a;
+  border-radius: var(--radius-md);
+  background: var(--paper-light);
+  padding: 16px;
+  box-shadow: var(--shadow-panel);
+}
+
+.system-service-card-good {
+  border-top-color: var(--accent);
+}
+
+.system-service-card-indigo {
+  border-top-color: var(--secondary);
+}
+
+.system-service-card p {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.system-service-card h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  letter-spacing: -0.035em;
+}
+
+.system-service-value {
+  margin-top: 8px;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.system-service-card small {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.system-service-card .service-status {
+  min-height: 0;
+  border: 0;
+  background: #f1f6ff;
+  padding: 5px 7px;
+}
+
+.system-monitor-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.9fr);
+  gap: 14px;
+}
+
+.system-chart-panel {
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.system-chart-panel > .empty-state {
+  min-height: 210px;
+}
+
+.system-error-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 16px;
+}
+
+.system-error-summary .service-status {
+  min-height: 56px;
+}
+
+.system-panel-note {
+  margin: 0 16px 16px;
+  border-radius: 6px;
+  background: #edf3ff;
+  padding: 9px 11px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.system-account-panel {
+  overflow: hidden;
+  padding: 0;
+}
+
+.system-account-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 18px 8px;
+}
+
+.system-account-heading .eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 10px;
+}
+
+.system-account-heading h2 {
+  margin: 4px 0 0;
+  color: var(--ink);
+  font-size: 20px;
+}
+
+.system-account-heading p:last-child {
+  max-width: 44em;
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.system-account-panel > .panel-header {
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 1180px) {
+  .system-workspace-heading {
+    flex-direction: column;
+  }
+
+  .system-heading-actions {
+    justify-content: flex-start;
+    max-width: none;
+  }
+
+  .system-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .system-monitor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .system-workspace-heading {
+    padding: 15px;
+  }
+
+  .system-heading-title-row h1 {
+    font-size: 28px;
+  }
+
+  .system-heading-actions,
+  .system-heading-actions .button {
+    width: 100%;
+  }
+
+  .system-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .system-error-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .system-account-heading {
+    flex-direction: column;
+  }
+}

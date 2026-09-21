@@ -1563,16 +1563,34 @@ export function AdminApp() {
     );
   }
 
+  function renderSystemHealth() {
+    const system = analytics?.system;
+    const services = system?.services;
+    const queue = system?.queue;
+    const healthyServices = services ? [services.api, services.database, services.redis, services.elasticsearchEnabled ? services.elasticsearch : true].filter(Boolean).length : null;
+    return (
+      <>
+        <section className="system-workspace-heading">
+          <div><div className="system-console-line"><span>OPS-CONSOLE / V4.8</span><strong><i />核心服务运行正常 · {healthyServices === null ? '读取中' : `${healthyServices}/4`} 项通过</strong></div><div className="system-runtime-line">☁ 阿里云华东 2（K8s）· cluster-prod-01</div><div className="system-heading-title-row"><h1>系统运行监控与运维审计</h1><span>Decision Engine Pipeline &amp; Governance Console</span></div></div>
+          <div className="system-heading-actions"><button className="button" type="button" onClick={() => void refreshAnalytics()} disabled={analyticsBusy}>⟳ 刷新服务检查</button><button className="button" type="button" onClick={() => setNotice({ kind: 'info', text: 'Redis 决策缓存清理需要接入运维命令后执行。' })}>⟳ 清理 Redis 决策缓存</button><button className="button button-danger" type="button" onClick={() => setNotice({ kind: 'info', text: '当前没有接入独立告警中心，先通过健康快照查看异常。' })}>◇ 查看即时告警</button></div>
+        </section>
+        <div className="system-service-grid">
+          <article className="system-service-card system-service-card-good"><p>API GATEWAY</p><h2>API 服务</h2><div className="system-service-value">{services?.api === undefined ? '—' : services.api ? '正常' : '异常'}</div><ServiceStatus label="健康检查" value={services?.api} /><small>{system ? `进程运行 ${formatUptime(system.uptimeSeconds)}` : '读取中……'}</small></article>
+          <article className="system-service-card"><p>RELATIONAL DB</p><h2>PostgreSQL 数据库</h2><div className="system-service-value">{services?.database === undefined ? '—' : services.database ? '正常' : '异常'}</div><ServiceStatus label="连接状态" value={services?.database} /><small>{system ? `内存占用 ${system.memory.rssMb} MB` : '读取中……'}</small></article>
+          <article className="system-service-card system-service-card-indigo"><p>CACHE CLUSTER</p><h2>Redis 决策缓存</h2><div className="system-service-value">{services?.redis === undefined ? '—' : services.redis ? '正常' : '异常'}</div><ServiceStatus label="队列状态" value={services?.redis} /><small>待处理 outbox：{queue?.outboxPending === null ? '—' : formatCompactNumber(queue?.outboxPending ?? 0)}</small></article>
+          <article className="system-service-card"><p>PIPELINE NODE</p><h2>采集与物流流水线</h2><div className="system-service-value">{queue ? (queue.eventStreamLength === null ? '—' : formatCompactNumber(queue.eventStreamLength)) : '—'}</div><ServiceStatus label="事件流积压" value={queue ? queue.eventStreamLength === null || queue.eventStreamLength < 1000 : undefined} /><small>Node.js：{system?.nodeVersion ?? '读取中……'}</small></article>
+        </div>
+        <div className="system-monitor-grid"><section className="data-panel system-chart-panel"><PanelHeader eyebrow="运行趋势" title="CPU 与内存位实时曲线" meta="过去 6 小时" /><EmptyState title="暂无历史监控曲线" detail="当前接口提供实时健康快照；接入监控指标后会在这里绘制曲线。" /></section><section className="data-panel system-chart-panel"><PanelHeader eyebrow="错误分布" title="接口错误与异常重试分布" meta="过去 24 小时" /><div className="system-error-summary"><ServiceStatus label="API 服务" value={services?.api} /><ServiceStatus label="数据库" value={services?.database} /><ServiceStatus label="Redis 队列" value={services?.redis} /><ServiceStatus label="搜索服务" value={services?.elasticsearch} disabled={services ? !services.elasticsearchEnabled : false} /></div><p className="system-panel-note">异常明细和重试趋势会在错误日志接口接入后展示。</p></section></div>
+      </>
+    );
+  }
+
   function renderAccounts() {
     return (
       <>
-        <SectionHeader
-          index="08"
-          title="账号管理"
-          description="管理后台账号的角色和状态。为避免锁死后台，最后一个启用中的管理员不能被降级或停用。"
-          action={<button className="button" type="button" onClick={() => void refreshAccounts()} disabled={accountsBusy}>{accountsBusy ? '读取中……' : '刷新账号'}</button>}
-        />
-        <section className="data-panel table-panel">
+        {renderSystemHealth()}
+        <section className="data-panel table-panel system-account-panel">
+          <div className="system-account-heading"><div><p className="eyebrow">角色权限与密钥</p><h2>后台账号</h2><p>管理后台账号的角色和状态；最后一个启用中的管理员不能被降级或停用。</p></div><button className="button" type="button" onClick={() => void refreshAccounts()} disabled={accountsBusy}>{accountsBusy ? '读取中……' : '刷新账号'}</button></div>
           <PanelHeader eyebrow="访问权限" title="后台账号" meta={`${accounts.length} 条记录`} />
           {accounts.length ? <div className="table-wrap"><table className="data-table accounts-table"><thead><tr><th>账号</th><th>角色</th><th>状态</th><th>创建时间</th></tr></thead><tbody>{accounts.map((account) => {
             const busy = busyAction === `account-${account.id}`;
