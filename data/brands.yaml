@@ -93,6 +93,13 @@
   official_url: https://fish.shimano.com
   description: 日本渔具品牌，路亚竿覆盖淡水与轻盐水等多种使用场景。
 
+- slug: tsurinoya
+  name: TSURINOYA
+  name_cn: 钓之屋
+  country: CN
+  official_url: https://www.tsurinoya.com
+  description: 中国威海路亚渔具品牌，产品覆盖路亚竿、渔轮和路亚配件。
+
 - slug: dji
   name: DJI
   name_cn: 大疆

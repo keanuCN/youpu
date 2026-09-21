@@ -89,6 +89,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门徒步背包第一阶段目标见 `examples/domestic-hot-hiking-backpack-phase1-targets.json`。当前接入 Naturehike（挪客）Seek Wind Pro 官方产品页，额外识别 AIR FLOAT 背负系统、35 L/65 L 容量档位、主面料、防雨罩和 X 型腰带；重量与变体级背负数据未完整确认时保持缺省。
 
+国内热门路亚竿第一阶段目标见 `examples/domestic-hot-casting-rod-phase1-targets.json`。当前接入钓之屋（TSURINOYA）睿系列官方产品页，从标题和产品详情表提取两节结构、超快调、鲈鱼和虫竿场景；长度、重量、饵重、线重、力度、轮座、竿胚和碳布含量等图片规格未做 OCR，保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
