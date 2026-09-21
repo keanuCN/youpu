@@ -67,6 +67,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 睡袋第一阶段目标见 `examples/sleeping-bag-phase1-targets.json`。当前接入 Rab Ascent Down 官方产品页，从标题与 JSON-LD 提取温标标称、填充类型，并从官方厘米尺寸表提取 Regular / Long / Wide 档位；舒适温度、重量和填充量等未被当前静态快照确认的字段保持缺省。
 
+炉头第一阶段目标见 `examples/camping-stove-phase1-targets.json`。当前接入 MSR PocketRocket Deluxe 官方产品页，从标题、描述、JSON-LD 和图片替代文本提取燃料类型、炉头类型、点火方式与抗风描述；重量、功率和沸腾时间等未被当前静态快照确认的字段保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

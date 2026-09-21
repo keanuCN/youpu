@@ -1394,6 +1394,129 @@
   name: 炉头
   parent: camping
   sort_order: 50
+  recommend_config:
+    weights:
+      scene: 0.25
+      fuel: 0.2
+      wind: 0.2
+      weight: 0.2
+      value: 0.15
+  spec_schema:
+    fields:
+      - key: fuelType
+        label: 燃料类型
+        group: 燃料与结构
+        type: enum
+        options:
+          - { value: canister, label: 气罐 }
+          - { value: liquid-fuel, label: 液体燃料 }
+          - { value: alcohol, label: 酒精 }
+          - { value: other, label: 其他 }
+        filter: single
+        compare: true
+        compareDirection: context
+        required: true
+        order: 10
+
+      - key: stoveType
+        label: 炉头类型
+        group: 燃料与结构
+        type: enum
+        options:
+          - { value: canister, label: 直连气罐炉 }
+          - { value: remote-canister, label: 分体气罐炉 }
+          - { value: liquid-fuel, label: 液体燃料炉 }
+          - { value: integrated, label: 集成炉具系统 }
+          - { value: alcohol, label: 酒精炉 }
+        filter: single
+        compare: true
+        compareDirection: context
+        required: true
+        order: 20
+
+      - key: ignition
+        label: 点火方式
+        group: 操作与性能
+        type: enum
+        options:
+          - { value: piezo, label: 压电点火 }
+          - { value: manual, label: 手动点火 }
+          - { value: other, label: 其他 }
+        filter: single
+        compare: true
+        compareDirection: context
+        order: 30
+
+      - key: windResistance
+        label: 是否强调抗风
+        group: 操作与性能
+        type: bool
+        filter: single
+        compare: true
+        compareDirection: context
+        order: 40
+
+      - key: weight
+        label: 重量
+        group: 重量与收纳
+        type: number
+        unit: g
+        min: 10
+        max: 2000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 110
+
+      - key: packedSize
+        label: 收纳尺寸
+        group: 重量与收纳
+        type: text
+        filter: false
+        compare: true
+        compareDirection: lower-better
+        order: 120
+
+      - key: power
+        label: 功率
+        group: 操作与性能
+        type: number
+        unit: W
+        min: 100
+        max: 10000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 210
+
+      - key: boilTime
+        label: 沸腾时间
+        group: 操作与性能
+        type: number
+        unit: min
+        min: 1
+        max: 30
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 220
+
+      - key: fuelEfficiency
+        label: 燃料效率
+        group: 操作与性能
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 230
+
+    rating_dimensions:
+      - { key: boilSpeed, label: 烧水速度, weight: 0.18 }
+      - { key: windPerformance, label: 抗风表现, weight: 0.18 }
+      - { key: stability, label: 支撑稳定, weight: 0.16 }
+      - { key: control, label: 火力控制, weight: 0.16 }
+      - { key: packability, label: 收纳便携, weight: 0.17 }
+      - { key: value, label: 性价比, weight: 0.15 }
 
 - slug: gas-canister
   name: 气罐
