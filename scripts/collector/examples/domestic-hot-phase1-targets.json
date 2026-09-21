@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "naturehike-star-river-2-2026",
+    "category": "tent",
+    "brand": "naturehike",
+    "model": "Star River 2-Person Ultralight Backpacking Tent",
+    "identityAliases": ["Star River 2", "Star River 2-Person Ultralight Backpacking Tent"],
+    "year": 2026,
+    "url": "https://www.naturehike.com/products/star-river-2-person-ultralight-backpacking-tent",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "naturehike-mongar-pro-2-2026",
+    "category": "tent",
+    "brand": "naturehike",
+    "model": "Mongar Pro 2-Person Ultralight Backpacking Tent",
+    "identityAliases": ["Mongar Pro 2", "Mongar Pro 2-Person Ultralight Backpacking Tent"],
+    "year": 2026,
+    "url": "https://www.naturehike.com/products/mongar-pro-2-person-ultralight-backpacking-tent",
+    "mode": "cheerio"
+  }
+]

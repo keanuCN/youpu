@@ -83,6 +83,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内品牌户外背包补充目标见 `examples/hiking-backpack-domestic-phase1-targets.json`。当前接入 KAILAS（凯乐石）官方国际站产品页，从规格描述提取长线徒步定位、内架、48+5 L 容量、重量、尺寸、负载范围、三档背长调节、330D Cordura 和内置防雨罩；比较值 53 L 由页面的 48+5 L 容量标注计算得到，并在 raw 说明中保留口径。
 
+国内热门产品第一阶段目标见 `examples/domestic-hot-phase1-targets.json`。当前接入 Naturehike（挪客）Star River 2 和 Mongar Pro 2 官方产品页，作为 P0 国内热门帐篷批次；采集器仍只提取当前静态快照能够确认的字段，未确认的技术参数保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
