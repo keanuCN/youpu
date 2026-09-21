@@ -87,6 +87,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门睡袋第一阶段目标见 `examples/domestic-hot-sleeping-bag-phase1-targets.json`。当前接入 Naturehike（挪客）CW400 官方产品页，从标题、规格描述和页面说明提取温标标称、填充类型、舒适/极限/极端温度、重量、填充重量、收纳尺寸和面料；未明确的字段保持缺省。
 
+国内热门徒步背包第一阶段目标见 `examples/domestic-hot-hiking-backpack-phase1-targets.json`。当前接入 Naturehike（挪客）Seek Wind Pro 官方产品页，额外识别 AIR FLOAT 背负系统、35 L/65 L 容量档位、主面料、防雨罩和 X 型腰带；重量与变体级背负数据未完整确认时保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
