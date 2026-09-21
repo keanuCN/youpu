@@ -1094,6 +1094,136 @@
   name: 天幕
   parent: camping
   sort_order: 20
+  recommend_config:
+    weights:
+      scene: 0.3
+      capacity: 0.2
+      weather: 0.2
+      weight: 0.2
+      value: 0.1
+  spec_schema:
+    fields:
+      - key: capacity
+        label: 容纳人数
+        group: 空间与结构
+        type: int
+        unit: 人
+        min: 1
+        max: 12
+        filter: range
+        compare: true
+        compareDirection: context
+        required: true
+        order: 10
+
+      - key: shelterType
+        label: 天幕类型
+        group: 形态与适用
+        type: enum
+        options:
+          - { value: tarp-shelter, label: Tarp Shelter }
+          - { value: sun-shield, label: 遮阳天幕 }
+          - { value: wing, label: Wing 天幕 }
+        filter: single
+        compare: true
+        compareDirection: context
+        required: true
+        order: 20
+
+      - key: seasons
+        label: 适用季节
+        group: 防护与适用
+        type: int
+        unit: 季
+        min: 1
+        max: 5
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 30
+
+      - key: minWeight
+        label: 最低重量
+        group: 重量与收纳
+        type: number
+        unit: kg
+        min: 0.1
+        max: 20
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 110
+
+      - key: packedWeight
+        label: 包装重量
+        group: 重量与收纳
+        type: number
+        unit: kg
+        min: 0.1
+        max: 25
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 120
+
+      - key: packedSize
+        label: 收纳尺寸
+        group: 重量与收纳
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 130
+
+      - key: coverageArea
+        label: 覆盖面积
+        group: 空间与结构
+        type: number
+        unit: m²
+        min: 0.5
+        max: 50
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 210
+
+      - key: peakHeight
+        label: 最高高度
+        group: 空间与结构
+        type: number
+        unit: cm
+        min: 40
+        max: 400
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 220
+
+      - key: material
+        label: 面料材质
+        group: 材料与耐久
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 310
+
+      - key: poleIncluded
+        label: 是否含杆件
+        group: 搭建与配件
+        type: bool
+        filter: single
+        compare: true
+        compareDirection: context
+        order: 410
+
+    rating_dimensions:
+      - { key: shelter, label: 遮蔽空间, weight: 0.2 }
+      - { key: weatherproof, label: 防风雨, weight: 0.2 }
+      - { key: setup, label: 搭建便利, weight: 0.18 }
+      - { key: packability, label: 收纳便携, weight: 0.17 }
+      - { key: durability, label: 耐久性, weight: 0.13 }
+      - { key: value, label: 性价比, weight: 0.12 }
 
 - slug: sleeping-bag
   name: 睡袋

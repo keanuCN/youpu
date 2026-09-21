@@ -63,6 +63,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 帐篷第一阶段目标见 `examples/tent-phase1-targets.json`。当前接入 2 条 MSR 官方产品页，先从标题、描述和标题级内容提取容纳人数、帐篷类型、适用季节与自立结构；最低重量、面积、材料等未被当前静态快照确认的字段保持缺省，不根据搜索摘要或图片反推。
 
+天幕第一阶段目标见 `examples/tarp-phase1-targets.json`。当前接入 MSR Front Range 4 官方产品页，先从标题、描述和 JSON-LD 提取容纳人数、天幕类型与适用季节；重量、覆盖面积、收纳尺寸等未被当前静态快照确认的字段保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
