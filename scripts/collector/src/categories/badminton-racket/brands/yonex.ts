@@ -1,4 +1,5 @@
 import type { AdapterResult, CrawlTarget, PageSnapshot } from '../../../engine/types';
+import { maxNumberFrom, normalizeLabel, weightClassFrom } from '../normalize';
 
 export const yonexBadmintonAdapter = {
   name: 'badminton-racket/yonex',
@@ -57,18 +58,6 @@ function findSpecification(
   return specification?.value;
 }
 
-function normalizeLabel(value: string): string {
-  return value.toLowerCase().replace(/\s+/g, ' ').trim();
-}
-
-function weightClassFrom(value: string | undefined): string | undefined {
-  if (!value) return undefined;
-  const classes = [...value.toUpperCase().matchAll(/\b([2345])U(?:G\d+)?/g)].map((match) => `${match[1]}U`);
-  const unique = [...new Set(classes)];
-  if (unique.includes('3U') && unique.includes('4U')) return '3U/4U';
-  return unique.length === 1 ? unique[0] : undefined;
-}
-
 function balanceFrom(value: string | undefined): string | undefined {
   if (!value) return undefined;
   const normalized = value.toLowerCase().replace(/[‐‑–—-]/g, ' ');
@@ -86,10 +75,4 @@ function flexFrom(value: string | undefined): string | undefined {
   if (normalized.includes('stiff')) return 'stiff';
   if (normalized.includes('medium')) return 'medium';
   return undefined;
-}
-
-function maxNumberFrom(value: string | undefined): number | undefined {
-  if (!value) return undefined;
-  const numbers = [...value.matchAll(/\d+(?:\.\d+)?/g)].map((match) => Number(match[0]));
-  return numbers.length > 0 ? Math.max(...numbers) : undefined;
 }

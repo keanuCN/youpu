@@ -47,6 +47,8 @@ M2 本地数据扩展目标见 `examples/phase2-expansion-targets.json`。本批
 
 羽毛球拍第一阶段目标见 `examples/badminton-phase1-targets.json`。Yonex 官方 Shopify 产品页的规格列表已接入通用 `b/i` 条目提取器和 Yonex adapter，可生成 raw JSON 与 YAML 草稿；材料只有合并字段时保持缺省，不复制到 frame/shaft 两个字段。
 
+Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targets.json`。Victor 官方零售页的 `Product Specifications` 表已接入 Victor adapter，可提取重量等级、最高建议磅数、拍框材料和中杆材料；未出现的平衡、硬度等字段保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
