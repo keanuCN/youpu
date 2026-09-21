@@ -71,6 +71,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 露营灯第一阶段目标见 `examples/camping-light-phase1-targets.json`。当前接入 BioLite AlpenGlow 500 官方产品页，从技术表提取亮度、重量、电池、续航、防水、尺寸和充电时间等字段；未出现的字段保持缺省。
 
+户外背包第一阶段目标见 `examples/hiking-backpack-phase1-targets.json`。当前接入 Osprey Atmos AG 50 官方产品页，从规格表提取 S/M、L/XL 的容量、重量、尺寸和负载范围，并从页面描述确认背包类型与 AntiGravity 悬挂；未确认的面料和腰带细节保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

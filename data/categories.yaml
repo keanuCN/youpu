@@ -1712,6 +1712,105 @@
   name: 户外背包
   parent: hiking
   sort_order: 10
+  recommend_config:
+    weights:
+      scene: 0.25
+      capacity: 0.2
+      carrying: 0.2
+      weight: 0.15
+      organization: 0.1
+      value: 0.1
+  spec_schema:
+    fields:
+      - key: packType
+        label: 背包类型
+        group: 定位与背负
+        type: enum
+        options:
+          - { value: backpacking, label: 徒步背包 }
+          - { value: hiking, label: 日用徒步包 }
+          - { value: trekking, label: 长线徒步包 }
+          - { value: fastpacking, label: 轻量快速徒步包 }
+        filter: single
+        compare: true
+        compareDirection: context
+        required: true
+        order: 10
+
+      - key: suspension
+        label: 背负系统
+        group: 定位与背负
+        type: enum
+        options:
+          - { value: anti-gravity, label: AntiGravity 悬挂 }
+          - { value: internal-frame, label: 内架 }
+          - { value: frameless, label: 无架 }
+          - { value: other, label: 其他 }
+        filter: single
+        compare: true
+        compareDirection: context
+        required: true
+        order: 20
+
+      - key: volumeOptions
+        label: 尺码容量档位
+        group: 容量与尺码
+        type: nested
+        itemSchema:
+          size: { type: text, label: 尺码 }
+          volumeLiters: { type: number, label: 容量 }
+          weightKg: { type: number, label: 重量 }
+          dimensions: { type: text, label: 尺寸 }
+          loadMinKg: { type: number, label: 负载下限 }
+          loadMaxKg: { type: number, label: 负载上限 }
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 110
+
+      - key: raincoverIncluded
+        label: 是否含防雨罩
+        group: 功能与收纳
+        type: bool
+        filter: single
+        compare: true
+        compareDirection: context
+        order: 210
+
+      - key: torsoFit
+        label: 背长适配
+        group: 容量与尺码
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 220
+
+      - key: material
+        label: 主体面料
+        group: 材料与功能
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 310
+
+      - key: hipbelt
+        label: 腰带结构
+        group: 背负与功能
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 320
+
+    rating_dimensions:
+      - { key: carrying, label: 背负舒适, weight: 0.22 }
+      - { key: ventilation, label: 背部通风, weight: 0.16 }
+      - { key: organization, label: 收纳组织, weight: 0.16 }
+      - { key: fit, label: 尺码适配, weight: 0.16 }
+      - { key: durability, label: 耐久性, weight: 0.15 }
+      - { key: value, label: 性价比, weight: 0.15 }
 
 - slug: hardshell-jacket
   name: 冲锋衣
