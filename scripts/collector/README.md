@@ -79,6 +79,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内品牌炉头第一阶段目标见 `examples/camping-stove-domestic-phase1-targets.json`。当前接入 Naturehike（挪客）官方产品页，从标题和 JSON-LD 描述提取气罐燃料、直连气罐炉、功率、抗风场景和页面明确的燃效描述；未确认的重量、收纳尺寸、沸腾时间和点火结构保持缺省。
 
+国内品牌户外背包第一阶段目标见 `examples/hiking-backpack-domestic-phase1-targets.json`。当前接入 Naturehike（挪客）官方产品页，从标题和 JSON-LD 描述提取徒步定位、铝架背负、正文明确的 30 L 容量、多背长选项和主体面料；页面变体控件未完整展开的容量、重量、负载范围和防雨罩保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
