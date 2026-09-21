@@ -1650,6 +1650,7 @@
           - { value: ipx5, label: IPX5 }
           - { value: ipx6, label: IPX6 }
           - { value: ipx7, label: IPX7 }
+          - { value: ip54, label: IP54 }
           - { value: other, label: 其他 }
         filter: single
         compare: true

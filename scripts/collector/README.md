@@ -75,6 +75,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内品牌帐篷第一阶段目标见 `examples/tent-domestic-phase1-targets.json`。当前接入 Naturehike（挪客）官方产品页，从标题、描述和 JSON-LD 提取容纳人数、背包帐定位、适用季节与自立结构；技术规格折叠区未进入当前静态快照的字段保持缺省。
 
+国内品牌露营灯第一阶段目标见 `examples/camping-light-domestic-phase1-targets.json`。当前接入 Xiaomi 官方产品页，从 JSON-LD 规格描述提取亮度范围、可充电、电池容量、电池类型、充电时间、防护等级、重量和尺寸；页面未明确列出的灯光模式数量与续航保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
