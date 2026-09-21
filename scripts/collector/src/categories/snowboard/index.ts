@@ -10,6 +10,7 @@ import { neverSummerAdapter } from './brands/never-summer';
 import { yonexBadmintonAdapter } from '../badminton-racket/brands/yonex';
 import { victorBadmintonAdapter } from '../badminton-racket/brands/victor';
 import { msrTentAdapter } from '../tent/brands/msr';
+import { naturehikeTentAdapter } from '../tent/brands/naturehike';
 import { msrTarpAdapter } from '../tarp/brands/msr';
 import { rabSleepingBagAdapter } from '../sleeping-bag/brands/rab';
 import { msrCampingStoveAdapter } from '../camping-stove/brands/msr';
@@ -26,6 +27,7 @@ const adapters: ProductAdapter[] = [
   yonexBadmintonAdapter,
   victorBadmintonAdapter,
   msrTentAdapter,
+  naturehikeTentAdapter,
   msrTarpAdapter,
   rabSleepingBagAdapter,
   msrCampingStoveAdapter,

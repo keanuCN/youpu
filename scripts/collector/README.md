@@ -73,6 +73,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 户外背包第一阶段目标见 `examples/hiking-backpack-phase1-targets.json`。当前接入 Osprey Atmos AG 50 官方产品页，从规格表提取 S/M、L/XL 的容量、重量、尺寸和负载范围，并从页面描述确认背包类型与 AntiGravity 悬挂；未确认的面料和腰带细节保持缺省。
 
+国内品牌帐篷第一阶段目标见 `examples/tent-domestic-phase1-targets.json`。当前接入 Naturehike（挪客）官方产品页，从标题、描述和 JSON-LD 提取容纳人数、背包帐定位、适用季节与自立结构；技术规格折叠区未进入当前静态快照的字段保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
