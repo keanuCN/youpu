@@ -37,7 +37,9 @@ node C:\nvm4w\nodejs\node_modules\pnpm\bin\pnpm.mjs --filter @youpu/collector cr
 
 ## 批量采集
 
-`--target-file` 接收一个对象或对象数组。每个对象至少包含：`slug`、`category`、`brand`、`model`、`year`、`url`；可选 `mode` 和 `representativeSize`。引擎并发固定为 1，默认每个域名请求间隔至少 2 秒。
+`--target-file` 接收一个对象或对象数组。每个对象至少包含：`slug`、`category`、`brand`、`model`、`year`、`url`；可选 `mode`、`representativeSize` 和经过确认的 `identityAliases`。引擎并发固定为 1，默认每个域名请求间隔至少 2 秒。
+
+身份闸门会要求 `model` 或其中一个别名的全部词元出现在页面标题、标题级内容或 JSON-LD 中；字母数字相连的型号（如 `100ZZ` / `100 ZZ`）会统一拆分后比较。
 
 交接文档 Phase 1 的五款 adapter 冒烟目标见 `examples/phase1-adapter-targets.json`。其中 Jones 和 CAPiTA 使用当前官方页面，目标年份按页面当前 SKU/季节记录，不代表已回溯的历史 seed。
 
@@ -45,9 +47,9 @@ node C:\nvm4w\nodejs\node_modules\pnpm\bin\pnpm.mjs --filter @youpu/collector cr
 
 M2 本地数据扩展目标见 `examples/phase2-expansion-targets.json`。本批使用 Jones 与 CAPiTA 官方产品页，开启 `--auto-approve` 后由代表尺寸选择、采集质量闸门、完整 `spec_schema` 校验和 raw 审计共同决定是否落入正式 seed；本地已新增 22 条通过校验的产品 seed。`jones-stratos-2027` 因当前页面显式季节与目标年份不一致，仅保留 raw，不写入正式目录。
 
-羽毛球拍第一阶段目标见 `examples/badminton-phase1-targets.json`。Yonex 官方 Shopify 产品页的规格列表已接入通用 `b/i` 条目提取器和 Yonex adapter，可生成 raw JSON 与 YAML 草稿；材料只有合并字段时保持缺省，不复制到 frame/shaft 两个字段。
+羽毛球拍第一阶段目标见 `examples/badminton-phase1-targets.json`。当前包含 3 条 Yonex 官方 Shopify 产品页目标，规格列表已接入通用 `b/i` 条目提取器和 Yonex adapter，可生成 raw JSON 与 YAML 草稿；材料只有合并字段时保持缺省，不复制到 frame/shaft 两个字段。
 
-Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targets.json`。Victor 官方零售页的 `Product Specifications` 表已接入 Victor adapter，可提取重量等级、最高建议磅数、拍框材料和中杆材料；未出现的平衡、硬度等字段保持缺省。
+Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targets.json`。当前包含 2 条官方零售页目标，`Product Specifications` 表已接入 Victor adapter，可提取重量等级、最高建议磅数、拍框材料和中杆材料；未出现的平衡、硬度等字段保持缺省。
 
 ## 当前边界
 

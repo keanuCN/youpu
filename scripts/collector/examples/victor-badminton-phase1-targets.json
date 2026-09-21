@@ -7,5 +7,15 @@
     "year": 2026,
     "url": "https://shop.au.victorsport.com/products/auraspeed-100x-se-h",
     "mode": "cheerio"
+  },
+  {
+    "slug": "victor-thruster-ryuga-ii-pro-2026",
+    "category": "badminton-racket",
+    "brand": "victor",
+    "model": "THRUSTER RYUGA II PRO B",
+    "identityAliases": ["TK-RYUGA II PRO B"],
+    "year": 2026,
+    "url": "https://shop.au.victorsport.com/products/tk-ryuga-ii-pro-b",
+    "mode": "cheerio"
   }
 ]

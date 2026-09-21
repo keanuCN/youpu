@@ -8,6 +8,7 @@ export const crawlTargetSchema = z.object({
   category: z.string().min(1),
   brand: z.string().min(1),
   model: z.string().min(1),
+  identityAliases: z.array(z.string().min(1)).optional(),
   year: z.number().int().min(2000).max(2100),
   url: z.string().url(),
   mode: crawlModeSchema.default('cheerio'),

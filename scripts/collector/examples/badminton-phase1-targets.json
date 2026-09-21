@@ -7,5 +7,23 @@
     "year": 2026,
     "url": "https://us.yonex.com/products/arcsaber-11-pro",
     "mode": "cheerio"
+  },
+  {
+    "slug": "yonex-astrox-100-zz-2026",
+    "category": "badminton-racket",
+    "brand": "yonex",
+    "model": "ASTROX 100 ZZ",
+    "year": 2026,
+    "url": "https://us.yonex.com/products/astrox-100zz",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "yonex-nanoflare-1000-z-2026",
+    "category": "badminton-racket",
+    "brand": "yonex",
+    "model": "NANOFLARE 1000 Z",
+    "year": 2026,
+    "url": "https://us.yonex.com/products/nanoflare-1000-z",
+    "mode": "cheerio"
   }
 ]

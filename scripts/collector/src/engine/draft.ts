@@ -106,8 +106,11 @@ function targetIdentityMatches(target: CrawlTarget, snapshot: PageSnapshot): boo
       .join(' '),
   );
   const searchableTokens = new Set(searchable.split(' '));
-  const modelTokens = normalizeSearchText(target.model).split(' ').filter((token) => token.length >= 2);
-  return modelTokens.length > 0 && modelTokens.every((token) => searchableTokens.has(token));
+  const identityCandidates = [target.model, ...(target.identityAliases ?? [])];
+  return identityCandidates.some((candidate) => {
+    const modelTokens = normalizeSearchText(candidate).split(' ').filter((token) => token.length >= 2);
+    return modelTokens.length > 0 && modelTokens.every((token) => searchableTokens.has(token));
+  });
 }
 
 function targetSeasonMatches(target: CrawlTarget, snapshot: PageSnapshot): boolean | null {
@@ -125,6 +128,8 @@ function normalizeSearchText(value: string): string {
     .replace(/\p{Diacritic}/gu, '')
     .toLowerCase()
     .replace(/[’']/g, '')
+    .replace(/([a-z])([0-9])/g, '$1 $2')
+    .replace(/([0-9])([a-z])/g, '$1 $2')
     .replace(/[^a-z0-9\u4e00-\u9fff]+/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
