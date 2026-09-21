@@ -8,5 +8,15 @@
     "year": 2026,
     "url": "https://tsurinoya.com/pd.jsp?id=545",
     "mode": "cheerio"
+  },
+  {
+    "slug": "tsurinoya-balong-2026",
+    "category": "casting-rod",
+    "brand": "tsurinoya",
+    "model": "霸龙",
+    "identityAliases": ["钓之屋25款霸龙岸钓远投路亚竿长尺高感度海鲈竿翘嘴刀鲅鱼鳡鱼竿"],
+    "year": 2026,
+    "url": "https://www.tsurinoya.com/pd.jsp?id=818",
+    "mode": "cheerio"
   }
 ]

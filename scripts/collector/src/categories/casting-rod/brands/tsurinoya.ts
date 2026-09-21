@@ -76,7 +76,7 @@ function rodTypeFrom(evidence: string): string | undefined {
 
 function scenesFrom(evidence: string): string[] {
   const scenes = new Set<string>();
-  if (/鲈鱼|bass/i.test(evidence)) scenes.add('bass');
+  if (/鲈鱼|海鲈|bass/i.test(evidence)) scenes.add('bass');
   if (/虫竿|finesse/i.test(evidence)) scenes.add('finesse');
   if (/淡水|freshwater/i.test(evidence)) scenes.add('freshwater');
   return [...scenes];
