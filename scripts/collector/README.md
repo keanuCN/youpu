@@ -81,6 +81,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内品牌户外背包第一阶段目标见 `examples/hiking-backpack-domestic-phase1-targets.json`。当前接入 Naturehike（挪客）官方产品页，从标题和 JSON-LD 描述提取徒步定位、铝架背负、正文明确的 30 L 容量、多背长选项和主体面料；页面变体控件未完整展开的容量、重量、负载范围和防雨罩保持缺省。
 
+国内品牌户外背包补充目标见 `examples/hiking-backpack-domestic-phase1-targets.json`。当前接入 KAILAS（凯乐石）官方国际站产品页，从规格描述提取长线徒步定位、内架、48+5 L 容量、重量、尺寸、负载范围、三档背长调节、330D Cordura 和内置防雨罩；比较值 53 L 由页面的 48+5 L 容量标注计算得到，并在 raw 说明中保留口径。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

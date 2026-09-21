@@ -8,5 +8,15 @@
     "year": 2026,
     "url": "https://www.naturehike.com/products/rock-2-0-hiking-backpack",
     "mode": "cheerio"
+  },
+  {
+    "slug": "kailas-wind-tunnel-48-5l-2026",
+    "category": "hiking-backpack",
+    "brand": "kailas",
+    "model": "Wind Tunnel Lightweight Trekking Backpack 48+5L",
+    "identityAliases": ["Kailas Wind Tunnel Lightweight Trekking Backpack 48+5L"],
+    "year": 2026,
+    "url": "https://kailasgear.com/products/kailas-wind-tunnel-lightweight-trekking-backpack-48-5l",
+    "mode": "cheerio"
   }
 ]
