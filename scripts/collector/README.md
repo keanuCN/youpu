@@ -65,6 +65,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 天幕第一阶段目标见 `examples/tarp-phase1-targets.json`。当前接入 MSR Front Range 4 官方产品页，先从标题、描述和 JSON-LD 提取容纳人数、天幕类型与适用季节；重量、覆盖面积、收纳尺寸等未被当前静态快照确认的字段保持缺省。
 
+睡袋第一阶段目标见 `examples/sleeping-bag-phase1-targets.json`。当前接入 Rab Ascent Down 官方产品页，从标题与 JSON-LD 提取温标标称、填充类型，并从官方厘米尺寸表提取 Regular / Long / Wide 档位；舒适温度、重量和填充量等未被当前静态快照确认的字段保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

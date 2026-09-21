@@ -1229,6 +1229,161 @@
   name: 睡袋
   parent: camping
   sort_order: 30
+  recommend_config:
+    weights:
+      temperature: 0.35
+      weight: 0.2
+      insulation: 0.15
+      size: 0.15
+      value: 0.15
+  spec_schema:
+    fields:
+      - key: temperatureLabel
+        label: 温标标称
+        group: 温度与保暖
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        required: true
+        order: 10
+
+      - key: insulationType
+        label: 填充类型
+        group: 温度与保暖
+        type: enum
+        options:
+          - { value: down, label: 羽绒 }
+          - { value: synthetic, label: 化纤 }
+          - { value: wool, label: 羊毛 }
+          - { value: other, label: 其他 }
+        filter: single
+        compare: true
+        compareDirection: context
+        required: true
+        order: 20
+
+      - key: comfortTemperature
+        label: 舒适温度
+        group: 温度与保暖
+        type: number
+        unit: °C
+        min: -50
+        max: 30
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 30
+
+      - key: limitTemperature
+        label: 极限舒适温度
+        group: 温度与保暖
+        type: number
+        unit: °C
+        min: -60
+        max: 30
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 40
+
+      - key: extremeTemperature
+        label: 极限温度
+        group: 温度与保暖
+        type: number
+        unit: °C
+        min: -70
+        max: 30
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 50
+
+      - key: weight
+        label: 总重量
+        group: 重量与收纳
+        type: number
+        unit: kg
+        min: 0.1
+        max: 10
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 110
+
+      - key: fillWeight
+        label: 填充重量
+        group: 重量与收纳
+        type: number
+        unit: g
+        min: 1
+        max: 3000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 120
+
+      - key: packedSize
+        label: 收纳尺寸
+        group: 重量与收纳
+        type: text
+        filter: false
+        compare: true
+        compareDirection: lower-better
+        order: 130
+
+      - key: sizeMeasurements
+        label: 尺寸档位
+        group: 尺寸与版型
+        type: nested
+        itemSchema:
+          size: { type: text, label: 档位 }
+          lengthCm: { type: number, label: 睡袋长度 }
+          maxUserHeightCm: { type: number, label: 适用身高 }
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 210
+
+      - key: shellMaterial
+        label: 外层面料
+        group: 材料与版型
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 310
+
+      - key: liningMaterial
+        label: 内衬面料
+        group: 材料与版型
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 320
+
+      - key: shape
+        label: 睡袋版型
+        group: 材料与版型
+        type: enum
+        options:
+          - { value: mummy, label: 木乃伊型 }
+          - { value: rectangular, label: 信封型 }
+          - { value: quilt, label: 被子型 }
+          - { value: other, label: 其他 }
+        filter: single
+        compare: true
+        compareDirection: context
+        order: 330
+
+    rating_dimensions:
+      - { key: warmth, label: 保暖表现, weight: 0.22 }
+      - { key: weight, label: 轻量化, weight: 0.18 }
+      - { key: packability, label: 收纳便携, weight: 0.16 }
+      - { key: comfort, label: 睡眠舒适, weight: 0.16 }
+      - { key: versatility, label: 场景适应, weight: 0.13 }
+      - { key: value, label: 性价比, weight: 0.15 }
 
 - slug: sleeping-pad
   name: 防潮垫
