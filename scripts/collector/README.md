@@ -93,6 +93,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门无人机第一阶段目标见 `examples/domestic-hot-drone-phase1-targets.json`。当前接入 DJI Mini 4 Pro 官方技术参数页，从页面摘要提取重量说明、最高视频规格、图传距离、全向避障、智能跟随和竖拍；详细规格表在当前静态快照中由前端动态渲染，未确认的传感器、续航和电池参数保持缺省。
 
+国内热门码表第一阶段目标见 `examples/domestic-hot-bike-computer-phase1-targets.json`。当前接入 iGPSPORT（迹驰）BSC500 官方产品页，从页面描述和图片替代文本提取屏幕、触控、续航、导航、离线/在线路书、语音播报和传感器兼容；详细参数表未进入当前静态快照的字段保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

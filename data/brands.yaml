@@ -100,6 +100,13 @@
   official_url: https://www.tsurinoya.com
   description: 中国威海路亚渔具品牌，产品覆盖路亚竿、渔轮和路亚配件。
 
+- slug: igpsport
+  name: iGPSPORT
+  name_cn: 迹驰
+  country: CN
+  official_url: https://www.igpsport.cn
+  description: 中国骑行智能设备品牌，产品覆盖 GPS 码表、骑行灯、雷达尾灯和传感器。
+
 - slug: dji
   name: DJI
   name_cn: 大疆

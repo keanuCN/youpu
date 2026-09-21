@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "igpsport-bsc500-2025",
+    "category": "bike-computer",
+    "brand": "igpsport",
+    "model": "BSC500",
+    "identityAliases": ["BSC500 全彩大屏进阶码表"],
+    "year": 2025,
+    "url": "https://www.igpsport.cn/product/bsc500",
+    "mode": "cheerio"
+  }
+]

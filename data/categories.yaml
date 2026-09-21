@@ -1902,6 +1902,86 @@
   name: 码表
   parent: bicycle
   sort_order: 40
+  recommend_config:
+    weights:
+      navigation: 0.25
+      battery: 0.2
+      screen: 0.2
+      connectivity: 0.2
+      value: 0.15
+  spec_schema:
+    fields:
+      - key: screenSize
+        label: 屏幕尺寸
+        group: 显示与操控
+        type: number
+        unit: in
+        min: 1
+        max: 10
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 10
+
+      - key: screen
+        label: 屏幕类型
+        group: 显示与操控
+        type: text
+        filter: false
+        compare: true
+        order: 20
+
+      - key: touchScreen
+        label: 触控操作
+        group: 显示与操控
+        type: bool
+        filter: false
+        compare: true
+        order: 30
+
+      - key: batteryLife
+        label: 官方续航
+        group: 导航与续航
+        type: number
+        unit: h
+        min: 1
+        max: 200
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 110
+
+      - key: navigation
+        label: 导航能力
+        group: 导航与续航
+        type: bool
+        filter: false
+        compare: true
+        order: 120
+
+      - key: mapSupport
+        label: 地图 / 路书
+        group: 导航与续航
+        type: text
+        filter: false
+        compare: true
+        order: 130
+
+      - key: audioPrompt
+        label: 语音播报
+        group: 互联与训练
+        type: bool
+        filter: false
+        compare: true
+        order: 210
+
+      - key: sensorCompatibility
+        label: 传感器兼容
+        group: 互联与训练
+        type: text
+        filter: false
+        compare: true
+        order: 220
 
 - slug: indoor-bike-trainer
   name: 骑行台
