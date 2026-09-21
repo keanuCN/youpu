@@ -6,14 +6,14 @@ import { toast } from "sonner";
 import { PageHead } from "@/components/layout/section-head";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { CATEGORY_TREE, SNOWBOARD, getCategory } from "@/data/categories";
+import { CATEGORY_LEAVES, SNOWBOARD, getCategory } from "@/data/categories";
 import { cn } from "@/lib/utils";
 import type { CategoryNode } from "@/types";
 
 export default function SoonClient({ slug }: { slug: string }) {
   const category = getCategory(slug);
   const [email, setEmail] = useState("");
-  const leaves = CATEGORY_TREE.flatMap((r) => r.children ?? []).flatMap((c) => c.children ?? []);
+  const leaves = CATEGORY_LEAVES;
 
   return (
     <div className="mx-auto max-w-[1000px] px-5 py-12 sm:px-8">

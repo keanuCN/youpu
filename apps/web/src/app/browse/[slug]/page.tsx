@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { BrowseClient } from "./browse-client";
-import { CATEGORY_TREE, getCategory } from "@/data/categories";
+import { CATEGORY_LEAVES, getCategory } from "@/data/categories";
 import { getCategoryProducts } from "@/lib/content";
 import { categoryMetadata } from "@/lib/seo";
 
 /** 静态导出时预渲染全部开档类目 */
 export function generateStaticParams() {
-  return CATEGORY_TREE.flatMap((root) => root.children ?? [])
-    .flatMap((mid) => mid.children ?? [])
-    .filter((leaf) => leaf.status === "live")
+  return CATEGORY_LEAVES.filter((leaf) => leaf.status === "live")
     .map((leaf) => ({ slug: leaf.slug }));
 }
 

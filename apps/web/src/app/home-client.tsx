@@ -11,16 +11,12 @@ import { Avatar } from "@/components/layout/site-header";
 import { Stars } from "@/components/gear/primitives";
 import { GEAR, getGear } from "@/data/boards";
 import { IMG } from "@/data/assets";
-import { CATEGORY_TREE, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
+import { CATEGORY_LEAVES, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { hotReviews, rankRows } from "@/lib/domain";
 import { getCategoryProducts, resolveContentSource } from "@/lib/content";
 import { timeAgo } from "@/lib/format";
 import { usePersisted } from "@/lib/store";
 import type { GearItem } from "@/types";
-
-const CATEGORY_LEAVES = CATEGORY_TREE.flatMap((root) =>
-  (root.children ?? []).flatMap((domain) => domain.children ?? []),
-);
 
 export default function HomePage() {
   const snapshot = usePersisted();

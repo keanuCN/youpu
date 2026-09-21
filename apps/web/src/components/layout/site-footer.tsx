@@ -1,12 +1,10 @@
 import Link from "next/link";
-import { CATEGORY_TREE, SEASON } from "@/data/categories";
+import { CATEGORY_LEAVES, SEASON } from "@/data/categories";
 import { BRAND } from "@/lib/brand";
 import type { CategoryNode } from "@/types";
 
 /** 品类入口由配置驱动：开档的进档案库，筹备中的进占位页 —— 新增品类不改页脚代码 */
-const LEAF_CATEGORIES: CategoryNode[] = CATEGORY_TREE.flatMap((root) => root.children ?? []).flatMap(
-  (mid) => mid.children ?? [],
-);
+const LEAF_CATEGORIES: CategoryNode[] = CATEGORY_LEAVES;
 const LIVE_CATEGORIES = LEAF_CATEGORIES.filter((c) => c.status === "live");
 
 const TOOLS: { label: string; href: string }[] = [

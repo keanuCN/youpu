@@ -387,13 +387,17 @@
       - { key: value, label: 性价比, weight: 0.15 }
 
 - slug: fishing
-  name: 垂钓
-  parent: sport
+  name: 钓鱼
   sort_order: 30
+
+- slug: lure
+  name: 路亚
+  parent: fishing
+  sort_order: 10
 
 - slug: casting-rod
   name: 路亚竿
-  parent: fishing
+  parent: lure
   sort_order: 10
   recommend_config:
     weights:
@@ -539,12 +543,16 @@
 
 - slug: imaging
   name: 影像
-  parent: sport
-  sort_order: 40
+  sort_order: 50
+
+- slug: videography
+  name: 摄像
+  parent: imaging
+  sort_order: 20
 
 - slug: action-cam
   name: 运动相机
-  parent: imaging
+  parent: videography
   sort_order: 10
   recommend_config:
     weights:
@@ -696,12 +704,16 @@
 
 - slug: cycling
   name: 骑行
-  parent: sport
-  sort_order: 20
+  sort_order: 40
+
+- slug: bicycle
+  name: 自行车
+  parent: cycling
+  sort_order: 10
 
 - slug: road-bike
   name: 公路车
-  parent: cycling
+  parent: bicycle
   sort_order: 10
   recommend_config:
     weights:
@@ -868,9 +880,561 @@
       - { key: versatility, label: 适用范围, weight: 0.13 }
       - { key: value, label: 性价比, weight: 0.15 }
 
+# ─────────────────────────── 目录树扩展：先建类目，后续由采集器补齐叶子数据 ───────────────────────────
+
+- slug: outdoor-camping
+  name: 户外露营
+  sort_order: 20
+
+- slug: camping
+  name: 露营
+  parent: outdoor-camping
+  sort_order: 10
+
+- slug: tent
+  name: 帐篷
+  parent: camping
+  sort_order: 10
+
+- slug: tarp
+  name: 天幕
+  parent: camping
+  sort_order: 20
+
+- slug: sleeping-bag
+  name: 睡袋
+  parent: camping
+  sort_order: 30
+
+- slug: sleeping-pad
+  name: 防潮垫
+  parent: camping
+  sort_order: 40
+
+- slug: camping-stove
+  name: 炉头
+  parent: camping
+  sort_order: 50
+
+- slug: gas-canister
+  name: 气罐
+  parent: camping
+  sort_order: 60
+
+- slug: camping-light
+  name: 露营灯
+  parent: camping
+  sort_order: 70
+
+- slug: hiking
+  name: 徒步登山
+  parent: outdoor-camping
+  sort_order: 20
+
+- slug: hiking-backpack
+  name: 户外背包
+  parent: hiking
+  sort_order: 10
+
+- slug: hardshell-jacket
+  name: 冲锋衣
+  parent: hiking
+  sort_order: 20
+
+- slug: trekking-poles
+  name: 登山杖
+  parent: hiking
+  sort_order: 30
+
+- slug: gps-watch
+  name: GPS 手表
+  parent: hiking
+  sort_order: 40
+
+- slug: water-filter
+  name: 净水器
+  parent: hiking
+  sort_order: 50
+
+- slug: fishing-reel
+  name: 渔轮
+  parent: lure
+  sort_order: 20
+
+- slug: fishing-lure
+  name: 拟饵
+  parent: lure
+  sort_order: 30
+
+- slug: fishing-line
+  name: 线组
+  parent: lure
+  sort_order: 40
+
+- slug: polarized-glasses
+  name: 偏光镜
+  parent: lure
+  sort_order: 50
+
+- slug: fish-finder
+  name: 探鱼器
+  parent: lure
+  sort_order: 60
+
+- slug: tai-diao
+  name: 台钓
+  parent: fishing
+  sort_order: 20
+
+- slug: tai-diao-rod
+  name: 台钓竿
+  parent: tai-diao
+  sort_order: 10
+
+- slug: float
+  name: 浮漂
+  parent: tai-diao
+  sort_order: 20
+
+- slug: tackle-box
+  name: 钓箱
+  parent: tai-diao
+  sort_order: 30
+
+- slug: rod-bag
+  name: 竿包
+  parent: tai-diao
+  sort_order: 40
+
+- slug: groundbait-boat
+  name: 打窝船
+  parent: tai-diao
+  sort_order: 50
+
+- slug: motorcycle
+  name: 摩托车
+  parent: cycling
+  sort_order: 20
+
+- slug: bike-helmet
+  name: 自行车头盔
+  parent: bicycle
+  sort_order: 30
+
+- slug: bike-computer
+  name: 码表
+  parent: bicycle
+  sort_order: 40
+
+- slug: indoor-bike-trainer
+  name: 骑行台
+  parent: bicycle
+  sort_order: 50
+
+- slug: cycling-apparel
+  name: 骑行服
+  parent: bicycle
+  sort_order: 60
+
+- slug: bike-tools
+  name: 自行车工具组
+  parent: bicycle
+  sort_order: 70
+
+- slug: motorcycle-helmet
+  name: 摩托头盔
+  parent: motorcycle
+  sort_order: 10
+
+- slug: motorcycle-apparel
+  name: 摩托骑行服
+  parent: motorcycle
+  sort_order: 20
+
+- slug: motorcycle-dashcam
+  name: 摩托车记录仪
+  parent: motorcycle
+  sort_order: 30
+
+- slug: photography
+  name: 摄影
+  parent: imaging
+  sort_order: 10
+
+- slug: camera
+  name: 相机
+  parent: photography
+  sort_order: 10
+
+- slug: lens
+  name: 镜头
+  parent: photography
+  sort_order: 20
+
+- slug: filter
+  name: 滤镜
+  parent: photography
+  sort_order: 30
+
+- slug: tripod
+  name: 三脚架
+  parent: photography
+  sort_order: 40
+
+- slug: photography-bag
+  name: 摄影包
+  parent: photography
+  sort_order: 50
+
+- slug: memory-card
+  name: 存储卡
+  parent: photography
+  sort_order: 60
+
+- slug: video-camera
+  name: 摄像机
+  parent: videography
+  sort_order: 20
+
+- slug: gimbal
+  name: 稳定器
+  parent: videography
+  sort_order: 30
+
+- slug: video-light
+  name: 补光灯
+  parent: videography
+  sort_order: 40
+
+- slug: microphone
+  name: 麦克风
+  parent: videography
+  sort_order: 50
+
+- slug: drones
+  name: 无人机
+  parent: imaging
+  sort_order: 30
+
+- slug: drone
+  name: 无人机
+  parent: drones
+  sort_order: 10
+
+- slug: av-digital
+  name: 影音数码
+  sort_order: 60
+
+- slug: audio
+  name: 音频
+  parent: av-digital
+  sort_order: 10
+
+- slug: headphones
+  name: 耳机
+  parent: audio
+  sort_order: 10
+
+- slug: audio-player
+  name: 播放器
+  parent: audio
+  sort_order: 20
+
+- slug: dac-amp
+  name: 解码耳放
+  parent: audio
+  sort_order: 30
+
+- slug: speaker
+  name: 音箱
+  parent: audio
+  sort_order: 40
+
+- slug: network-storage
+  name: 网络与存储
+  parent: av-digital
+  sort_order: 20
+
+- slug: nas
+  name: NAS
+  parent: network-storage
+  sort_order: 10
+
+- slug: router
+  name: 路由器
+  parent: network-storage
+  sort_order: 20
+
+- slug: computer-peripherals
+  name: 电脑与外设
+  parent: av-digital
+  sort_order: 30
+
+- slug: monitor
+  name: 显示器
+  parent: computer-peripherals
+  sort_order: 10
+
+- slug: mechanical-keyboard
+  name: 机械键盘
+  parent: computer-peripherals
+  sort_order: 20
+
+- slug: mouse
+  name: 鼠标
+  parent: computer-peripherals
+  sort_order: 30
+
+- slug: desktop-pc
+  name: 主机
+  parent: computer-peripherals
+  sort_order: 40
+
+- slug: digital-accessories
+  name: 数码配件
+  parent: av-digital
+  sort_order: 40
+
+- slug: charger
+  name: 充电头
+  parent: digital-accessories
+  sort_order: 10
+
+- slug: cable
+  name: 线材
+  parent: digital-accessories
+  sort_order: 20
+
+- slug: organizer-bag
+  name: 收纳包
+  parent: digital-accessories
+  sort_order: 30
+
+- slug: running
+  name: 跑步
+  parent: sport
+  sort_order: 30
+
+- slug: running-shoes
+  name: 跑鞋
+  parent: running
+  sort_order: 10
+
+- slug: sports-watch
+  name: 运动手表
+  parent: running
+  sort_order: 20
+
+- slug: heart-rate-monitor
+  name: 心率带
+  parent: running
+  sort_order: 30
+
+- slug: fitness
+  name: 健身
+  parent: sport
+  sort_order: 40
+
+- slug: fitness-equipment
+  name: 健身器材
+  parent: fitness
+  sort_order: 10
+
+- slug: protective-gear
+  name: 护具
+  parent: fitness
+  sort_order: 20
+
+- slug: ball-shoes
+  name: 球鞋
+  parent: racket-sports
+  sort_order: 20
+
+- slug: skiing-apparel
+  name: 雪服
+  parent: skiing
+  sort_order: 20
+
+- slug: diving
+  name: 潜水
+  parent: sport
+  sort_order: 50
+
+- slug: dive-computer
+  name: 潜水电脑
+  parent: diving
+  sort_order: 10
+
+- slug: fins
+  name: 脚蹼
+  parent: diving
+  sort_order: 20
+
+- slug: dive-mask
+  name: 面镜
+  parent: diving
+  sort_order: 30
+
+- slug: beverage-kitchen
+  name: 咖啡茶酒与厨房
+  sort_order: 70
+
+- slug: coffee
+  name: 咖啡
+  parent: beverage-kitchen
+  sort_order: 10
+
+- slug: grinder
+  name: 磨豆机
+  parent: coffee
+  sort_order: 10
+
+- slug: coffee-machine
+  name: 咖啡机
+  parent: coffee
+  sort_order: 20
+
+- slug: pour-over-kettle
+  name: 手冲壶
+  parent: coffee
+  sort_order: 30
+
+- slug: dripper
+  name: 滤杯
+  parent: coffee
+  sort_order: 40
+
+- slug: tea
+  name: 茶
+  parent: beverage-kitchen
+  sort_order: 20
+
+- slug: tea-set
+  name: 茶具
+  parent: tea
+  sort_order: 10
+
+- slug: yixing-teapot
+  name: 紫砂壶
+  parent: tea
+  sort_order: 20
+
+- slug: wine
+  name: 酒
+  parent: beverage-kitchen
+  sort_order: 30
+
+- slug: barware
+  name: 酒具
+  parent: wine
+  sort_order: 10
+
+- slug: decanter
+  name: 醒酒器
+  parent: wine
+  sort_order: 20
+
+- slug: kitchen
+  name: 厨具
+  parent: beverage-kitchen
+  sort_order: 40
+
+- slug: kitchen-knives
+  name: 刀具
+  parent: kitchen
+  sort_order: 10
+
+- slug: cookware
+  name: 锅具
+  parent: kitchen
+  sort_order: 20
+
+- slug: oven
+  name: 烤箱
+  parent: kitchen
+  sort_order: 30
+
+- slug: watches
+  name: 手表
+  sort_order: 80
+
+- slug: mechanical-watches
+  name: 机械表
+  parent: watches
+  sort_order: 10
+
+- slug: mechanical-watch
+  name: 机械表
+  parent: mechanical-watches
+  sort_order: 10
+
+- slug: tool-watches
+  name: 工具表
+  parent: watches
+  sort_order: 20
+
+- slug: tool-watch
+  name: 工具表
+  parent: tool-watches
+  sort_order: 10
+
+- slug: gaming-esports
+  name: 游戏电竞
+  sort_order: 90
+
+- slug: console-gaming
+  name: 主机游戏
+  parent: gaming-esports
+  sort_order: 10
+
+- slug: game-console
+  name: 游戏主机
+  parent: console-gaming
+  sort_order: 10
+
+- slug: game-controller
+  name: 手柄
+  parent: console-gaming
+  sort_order: 20
+
+- slug: esports-peripherals
+  name: 电竞外设
+  parent: gaming-esports
+  sort_order: 20
+
+- slug: esports-keyboard
+  name: 电竞键盘
+  parent: esports-peripherals
+  sort_order: 10
+
+- slug: esports-mouse
+  name: 电竞鼠标
+  parent: esports-peripherals
+  sort_order: 20
+
+- slug: esports-headset
+  name: 电竞耳机
+  parent: esports-peripherals
+  sort_order: 30
+
+- slug: esports-display
+  name: 电竞显示
+  parent: gaming-esports
+  sort_order: 30
+
+- slug: esports-monitor
+  name: 电竞显示器
+  parent: esports-display
+  sort_order: 10
+
+- slug: esports-space
+  name: 电竞空间
+  parent: gaming-esports
+  sort_order: 40
+
 - slug: mtb
   name: 山地车
-  parent: cycling
+  parent: bicycle
   sort_order: 20
   recommend_config:
     weights:
@@ -1053,3 +1617,8 @@
       - { key: comfort, label: 颠簸舒适, weight: 0.15 }
       - { key: versatility, label: 场景适应, weight: 0.12 }
       - { key: value, label: 性价比, weight: 0.15 }
+
+- slug: gaming-chair
+  name: 电竞椅
+  parent: esports-space
+  sort_order: 10

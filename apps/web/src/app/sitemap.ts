@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { GEAR } from "@/data/boards";
-import { CATEGORY_TREE } from "@/data/categories";
+import { CATEGORY_LEAVES } from "@/data/categories";
 import { SITE_URL, absoluteUrl } from "@/lib/seo";
 
 /**
@@ -10,9 +10,7 @@ import { SITE_URL, absoluteUrl } from "@/lib/seo";
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const liveCategories = CATEGORY_TREE.flatMap((root) => root.children ?? [])
-    .flatMap((mid) => mid.children ?? [])
-    .filter((leaf) => leaf.status === "live");
+  const liveCategories = CATEGORY_LEAVES.filter((leaf) => leaf.status === "live");
 
   return [
     { url: SITE_URL, lastModified: now, changeFrequency: "daily", priority: 1 },
