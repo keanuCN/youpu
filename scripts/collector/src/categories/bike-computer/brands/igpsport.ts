@@ -35,9 +35,16 @@ export const igpsportBikeComputerAdapter = {
       normalizedSpecs.sensorCompatibility = '全面传感器兼容';
     }
 
-    const missing = ['screenSize', 'batteryLife', 'navigation', 'audioPrompt'].filter(
-      (key) => normalizedSpecs[key] === undefined,
-    );
+    const missing = [
+      'screenSize',
+      'batteryLife',
+      'navigation',
+      'audioPrompt',
+      'weight',
+      'connectivity',
+      'storage',
+      'waterResistance',
+    ].filter((key) => normalizedSpecs[key] === undefined);
     if (missing.length > 0) {
       sourceNotes.push(`以下字段未从当前页面描述或替代文本确认，保持缺省：${missing.join('、')}。`);
     }

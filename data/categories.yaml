@@ -1939,6 +1939,18 @@
         compare: true
         order: 30
 
+      - key: weight
+        label: 机身重量
+        group: 显示与操控
+        type: number
+        unit: g
+        min: 20
+        max: 500
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 40
+
       - key: batteryLife
         label: 官方续航
         group: 导航与续航
@@ -1982,6 +1994,30 @@
         filter: false
         compare: true
         order: 220
+
+      - key: connectivity
+        label: 连接协议
+        group: 互联与训练
+        type: text
+        filter: false
+        compare: true
+        order: 230
+
+      - key: storage
+        label: 存储
+        group: 互联与训练
+        type: text
+        filter: false
+        compare: true
+        order: 240
+
+      - key: waterResistance
+        label: 防水等级
+        group: 互联与训练
+        type: text
+        filter: false
+        compare: true
+        order: 250
 
 - slug: indoor-bike-trainer
   name: 骑行台
