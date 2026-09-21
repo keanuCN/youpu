@@ -47,6 +47,16 @@ node C:\nvm4w\nodejs\node_modules\pnpm\bin\pnpm.mjs --filter @youpu/collector cr
 
 M2 本地数据扩展目标见 `examples/phase2-expansion-targets.json`。本批使用 Jones 与 CAPiTA 官方产品页，开启 `--auto-approve` 后由代表尺寸选择、采集质量闸门、完整 `spec_schema` 校验和 raw 审计共同决定是否落入正式 seed；本地已新增 22 条通过校验的产品 seed。`jones-stratos-2027` 因当前页面显式季节与目标年份不一致，仅保留 raw，不写入正式目录。
 
+## 草稿差异报告
+
+采集完成后，可用 `audit` 对多个草稿目录做 schema 校验，并比较草稿与同 slug 正式 seed 的字段缺口；正式 seed 不存在时只报告为候选新增，不会写入数据：
+
+```powershell
+pnpm --filter @youpu/collector run audit:drafts -- `
+  --draft-dir data/tmp/collector-badminton-batch/drafts `
+  --draft-dir data/tmp/collector-victor-batch/drafts
+```
+
 羽毛球拍第一阶段目标见 `examples/badminton-phase1-targets.json`。当前包含 3 条 Yonex 官方 Shopify 产品页目标，规格列表已接入通用 `b/i` 条目提取器和 Yonex adapter，可生成 raw JSON 与 YAML 草稿；材料只有合并字段时保持缺省，不复制到 frame/shaft 两个字段。
 
 Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targets.json`。当前包含 2 条官方零售页目标，`Product Specifications` 表已接入 Victor adapter，可提取重量等级、最高建议磅数、拍框材料和中杆材料；未出现的平衡、硬度等字段保持缺省。

@@ -5,6 +5,7 @@
   "description": "有谱公开产品页采集器（raw JSON + 校验草稿）",
   "scripts": {
     "crawl": "tsx src/cli.ts",
+    "audit:drafts": "tsx src/audit.ts",
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
