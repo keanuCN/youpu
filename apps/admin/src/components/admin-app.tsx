@@ -1475,18 +1475,11 @@ export function AdminApp() {
     const services = system?.services;
     const queue = system?.queue;
     return (
-      <>
-        <SectionHeader
-          index="01"
-          title="数据分析"
-          description="查看访客行为、埋点分布与运行状态。访客按匿名 ID 去重，统计只覆盖已经成功上报的事件。"
-          action={(
-            <div className="analytics-toolbar">
-              <label className="range-select"><span>统计范围</span><select value={analyticsDays} onChange={(event) => setAnalyticsDays(Number(event.target.value) as 7 | 14 | 30)}><option value="7">最近 7 天</option><option value="14">最近 14 天</option><option value="30">最近 30 天</option></select></label>
-              <button className="button" type="button" onClick={() => void refreshAnalytics()} disabled={analyticsBusy}>{analyticsBusy ? '读取中……' : '刷新统计'}</button>
-            </div>
-          )}
-        />
+      <div className="analytics-page">
+        <section className="analytics-workspace-heading">
+          <div className="analytics-heading-copy"><p className="analytics-kicker">TELEMETRY &amp; DECISIONS <span>• v0.2.0 stream</span></p><h1>用户决策与埋点行为分析</h1><p>全链路横向 PK 决策、参数展开与电商跳转转化的埋点监控。</p></div>
+          <div className="analytics-workspace-tools"><label className="range-select"><span>统计窗口</span><select value={analyticsDays} onChange={(event) => setAnalyticsDays(Number(event.target.value) as 7 | 14 | 30)}><option value="7">最近 7 天</option><option value="14">最近 14 天</option><option value="30">最近 30 天</option></select></label><label className="analytics-event-filter"><span>核心决策事件</span><select defaultValue="all"><option value="all">全部事件（浏览、参数、购买、收藏）</option><option value="view">产品详情浏览</option><option value="compare">横向 PK 对比</option><option value="outbound">官网跳转</option></select></label><div className="analytics-tool-actions"><button className="button" type="button" onClick={() => void refreshAnalytics()} disabled={analyticsBusy}>{analyticsBusy ? '读取中……' : '刷新统计'}</button><button className="button button-primary" type="button" onClick={() => setNotice({ kind: 'info', text: '原始 CSV 导出将在埋点归档接口接入后开放。' })}>⇧ 导出原始 CSV 日志</button></div></div>
+        </section>
         {renderAnalyticsOverview()}
         <section className="data-panel table-panel analytics-events-panel">
           <PanelHeader eyebrow="最近埋点" title="最近埋点" meta={analytics?.recentEvents.length ? `${analytics.recentEvents.length} 条已加载` : '暂无事件'} />
@@ -1513,7 +1506,7 @@ export function AdminApp() {
             </div>
           </div>
         </section>
-      </>
+      </div>
     );
   }
 
