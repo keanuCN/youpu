@@ -123,16 +123,16 @@ interface CategoryFormState {
 
 type NavGroup = '工作台' | '资料库' | '内容运营' | '系统管理';
 
-const navItems: Array<{ id: Section; index: string; label: string; group: NavGroup }> = [
-  { id: 'dashboard', index: '00', label: '总览', group: '工作台' },
-  { id: 'analytics', index: '01', label: '数据分析', group: '工作台' },
-  { id: 'products', index: '02', label: '产品资料', group: '资料库' },
-  { id: 'brands', index: '03', label: '品牌', group: '资料库' },
-  { id: 'categories', index: '04', label: '类目与参数', group: '资料库' },
-  { id: 'import', index: '05', label: '采集与导入', group: '资料库' },
-  { id: 'moderation', index: '06', label: '内容审核', group: '内容运营' },
-  { id: 'audit', index: '07', label: '操作审计', group: '内容运营' },
-  { id: 'accounts', index: '08', label: '账号管理', group: '系统管理' },
+const navItems: Array<{ id: Section; index: string; label: string; group: NavGroup; icon: string }> = [
+  { id: 'dashboard', index: '00', label: '总览', group: '工作台', icon: '▦' },
+  { id: 'analytics', index: '01', label: '数据分析', group: '工作台', icon: '⌁' },
+  { id: 'products', index: '02', label: '产品资料', group: '资料库', icon: '▣' },
+  { id: 'brands', index: '03', label: '品牌', group: '资料库', icon: '◇' },
+  { id: 'categories', index: '04', label: '类目与参数', group: '资料库', icon: '≡' },
+  { id: 'import', index: '05', label: '采集与导入', group: '资料库', icon: '↥' },
+  { id: 'moderation', index: '06', label: '内容审核', group: '内容运营', icon: '✓' },
+  { id: 'audit', index: '07', label: '操作审计', group: '内容运营', icon: '◷' },
+  { id: 'accounts', index: '08', label: '账号管理', group: '系统管理', icon: '◎' },
 ];
 
 const imageKinds: ImageKind[] = ['base', 'face', 'side', 'shape', 'field', 'card3x4'];
@@ -1570,14 +1570,27 @@ export function AdminApp() {
   return (
     <div className="admin-shell">
       <aside className="admin-sidebar">
-        <div className="brand-lockup"><div className="brand-mark-large">有谱</div><div><strong>后台管理</strong><small>本地环境</small></div></div>
+        <div className="brand-lockup"><div className="brand-mark-large">有谱</div><div><strong>有谱</strong><small>DECISION ENGINE ADMIN</small></div></div>
         <div className="sidebar-rule" />
         <p className="sidebar-label">操作模块</p>
-        <nav className="sidebar-nav" aria-label="后台模块">{(['工作台', '资料库', '内容运营', '系统管理'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group && visibleSections.has(item.id)).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span>{item.index}</span><strong>{item.label}</strong></button>)}</div>)}</nav>
+        <nav className="sidebar-nav" aria-label="后台模块">{(['工作台', '资料库', '内容运营', '系统管理'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group && visibleSections.has(item.id)).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span className="nav-icon" aria-hidden="true">{item.icon}</span><strong>{item.label}</strong><small>{item.index}</small></button>)}</div>)}</nav>
         <div className="sidebar-bottom"><div className="system-readout"><span className="status-dot status-dot-good" /><span>API 会话 / 权限：{role || 'admin'}</span></div><button className="logout-button" onClick={logout}>退出工作台 <span>↗</span></button></div>
       </aside>
       <main className="admin-main">
-        <header className="topbar"><div><span className="topbar-code">有谱后台</span><span className="topbar-slash">/</span><span>{navItems.find((item) => item.id === activeSection)?.label}</span></div><div className="topbar-right"><span className="api-origin">API {getApiHost()}</span><span className="revision">版本 3.01</span></div></header>
+        <header className="topbar">
+          <div className="topbar-context"><span className="topbar-code">有谱后台</span><span className="topbar-slash">/</span><span>{navItems.find((item) => item.id === activeSection)?.label}</span></div>
+          <form className="topbar-search" role="search" onSubmit={(event) => { event.preventDefault(); setActiveSection('products'); setAppliedFilters({ ...filters }); setNotice(null); }}>
+            <span className="topbar-search-icon" aria-hidden="true">⌕</span>
+            <input aria-label="搜索产品、品牌或参数" value={filters.search} onChange={(event) => setFilters((current) => ({ ...current, search: event.target.value }))} placeholder="搜索装备、品牌、参数 Schema…" />
+          </form>
+          <div className="topbar-actions">
+            <button className="button button-primary topbar-create" type="button" onClick={openNewProduct}>＋ 新建商品</button>
+            <button className="button topbar-import" type="button" onClick={() => { setActiveSection('import'); setNotice(null); }}>↥ 拉取采集任务</button>
+            <button className="topbar-icon-button" type="button" title="打开数据分析" aria-label="打开数据分析" onClick={() => { setActiveSection('analytics'); setNotice(null); }}>⌁</button>
+            <div className="topbar-user"><span className="topbar-user-avatar">{(role || 'A').slice(0, 1).toUpperCase()}</span><span><strong>{role || 'admin'}</strong><small>已连接</small></span></div>
+          </div>
+          <div className="topbar-right"><span className="api-origin">API {getApiHost()}</span><span className="revision">版本 3.01</span></div>
+        </header>
         {notice && <Notice notice={notice} />}
         <div className="content-wrap">{renderContent()}</div>
         <footer className="admin-footer"><span>有谱 / 产品资料工作台</span><span>本地管理控制台 · {new Date().getFullYear()}</span></footer>
