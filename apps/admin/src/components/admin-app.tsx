@@ -58,6 +58,7 @@ interface Notice {
 interface ProductFilters {
   search: string;
   status: '' | 'draft' | 'published';
+  categorySlug: string;
   missing: '' | 'image' | 'price' | 'source' | 'scores';
 }
 
@@ -121,18 +122,18 @@ interface CategoryFormState {
   recommendConfigText: string;
 }
 
-type NavGroup = '工作台' | '资料库' | '内容运营' | '系统管理';
+type NavGroup = '核心监控' | '内容与装备中台' | '决策数据洞察' | '系统底座';
 
 const navItems: Array<{ id: Section; index: string; label: string; group: NavGroup; icon: string }> = [
-  { id: 'dashboard', index: '00', label: '总览', group: '工作台', icon: '▦' },
-  { id: 'analytics', index: '01', label: '数据分析', group: '工作台', icon: '⌁' },
-  { id: 'products', index: '02', label: '产品资料', group: '资料库', icon: '▣' },
-  { id: 'brands', index: '03', label: '品牌', group: '资料库', icon: '◇' },
-  { id: 'categories', index: '04', label: '类目与参数', group: '资料库', icon: '≡' },
-  { id: 'import', index: '05', label: '采集与导入', group: '资料库', icon: '↥' },
-  { id: 'moderation', index: '06', label: '内容审核', group: '内容运营', icon: '✓' },
-  { id: 'audit', index: '07', label: '操作审计', group: '内容运营', icon: '◷' },
-  { id: 'accounts', index: '08', label: '账号管理', group: '系统管理', icon: '◎' },
+  { id: 'dashboard', index: '00', label: '运行总览', group: '核心监控', icon: '▦' },
+  { id: 'products', index: '01', label: '装备与品类中心', group: '内容与装备中台', icon: '▣' },
+  { id: 'brands', index: '02', label: '品牌资料', group: '内容与装备中台', icon: '◇' },
+  { id: 'categories', index: '03', label: '参数详情与比对', group: '内容与装备中台', icon: '⇄' },
+  { id: 'import', index: '04', label: '采集任务', group: '内容与装备中台', icon: '↥' },
+  { id: 'analytics', index: '05', label: '决策与埋点分析', group: '决策数据洞察', icon: '⌁' },
+  { id: 'moderation', index: '06', label: '内容审核', group: '系统底座', icon: '✓' },
+  { id: 'audit', index: '07', label: '操作审计', group: '系统底座', icon: '◷' },
+  { id: 'accounts', index: '08', label: '系统监控与运维', group: '系统底座', icon: '◎' },
 ];
 
 const imageKinds: ImageKind[] = ['base', 'face', 'side', 'shape', 'field', 'card3x4'];
@@ -599,8 +600,10 @@ export function AdminApp() {
   const [categories, setCategories] = useState<AdminCategoryRecord[]>([]);
   const [accounts, setAccounts] = useState<AdminAccount[]>([]);
   const [accountsBusy, setAccountsBusy] = useState(false);
-  const [filters, setFilters] = useState<ProductFilters>({ search: '', status: '', missing: '' });
-  const [appliedFilters, setAppliedFilters] = useState<ProductFilters>({ search: '', status: '', missing: '' });
+  const [filters, setFilters] = useState<ProductFilters>({ search: '', status: '', categorySlug: '', missing: '' });
+  const [appliedFilters, setAppliedFilters] = useState<ProductFilters>({ search: '', status: '', categorySlug: '', missing: '' });
+  const [categoryQuery, setCategoryQuery] = useState('');
+  const [selectedProductIds, setSelectedProductIds] = useState<string[]>([]);
   const [productForm, setProductForm] = useState<ProductFormState | null>(null);
   const [brandForm, setBrandForm] = useState<BrandFormState | null>(null);
   const [categoryForm, setCategoryForm] = useState<CategoryFormState | null>(null);
@@ -713,6 +716,7 @@ export function AdminApp() {
           `/products${buildProductQuery({
             search: appliedFilters.search.trim(),
             status: appliedFilters.status,
+            categorySlug: appliedFilters.categorySlug,
             missing: appliedFilters.missing,
             page: 1,
             pageSize: 50,
@@ -776,6 +780,7 @@ export function AdminApp() {
         `/products${buildProductQuery({
           search: appliedFilters.search.trim(),
           status: appliedFilters.status,
+          categorySlug: appliedFilters.categorySlug,
           missing: appliedFilters.missing,
           page: 1,
           pageSize: 50,
@@ -1119,36 +1124,41 @@ export function AdminApp() {
   }
 
   function openMissingProducts(missing: Exclude<ProductFilters['missing'], ''>) {
-    const nextFilters: ProductFilters = { search: '', status: '', missing };
+    const nextFilters: ProductFilters = { search: '', status: '', categorySlug: '', missing };
     setFilters(nextFilters);
     setAppliedFilters(nextFilters);
+    setSelectedProductIds([]);
     setActiveSection('products');
     setNotice(null);
   }
 
   function renderDashboard() {
     const metrics = dashboard?.metrics;
+    const summary = analytics?.summary;
+    const missingTotal = metrics
+      ? metrics.dataQuality.noVisualAsset + metrics.dataQuality.noPrice + metrics.dataQuality.noSource + metrics.dataQuality.noEditorialScores
+      : '—';
     return (
-      <>
-        <SectionHeader
-          index="00"
-          title="数据总览"
-          description="先看用户行为和内容质量，再进入资料库维护具体记录。"
-          action={(
-            <div className="analytics-toolbar">
-              <label className="range-select"><span>统计范围</span><select value={analyticsDays} onChange={(event) => setAnalyticsDays(Number(event.target.value) as 7 | 14 | 30)}><option value="7">最近 7 天</option><option value="14">最近 14 天</option><option value="30">最近 30 天</option></select></label>
-              <button className="button" type="button" onClick={() => void refreshOverview().catch((error) => setNotice({ kind: 'error', text: getErrorText(error) }))} disabled={analyticsBusy}>刷新总览</button>
-            </div>
-          )}
-        />
-        {renderAnalyticsOverview()}
-        <div className="metric-grid">
-          <Metric label="产品总数" value={metrics?.products ?? '—'} detail="产品记录" accent />
-          <Metric label="已发布" value={metrics?.publishedProducts ?? '—'} detail="公开目录" />
-          <Metric label="待处理草稿" value={metrics?.drafts ?? '—'} detail="草稿队列" />
-          <Metric label="启用品牌" value={metrics?.brands ?? '—'} detail="品牌" />
-          <Metric label="启用类目" value={metrics?.categories ?? '—'} detail="类目" />
+      <div className="dashboard-page">
+        <section className="dashboard-hero">
+          <div className="dashboard-hero-copy">
+            <div className="dashboard-live"><span className="status-dot status-dot-good" /> <strong>REALTIME AGGREGATION</strong><span>数据同步状态：{analyticsBusy ? '读取中' : '已连接'}</span></div>
+            <h1>欢迎回来，管理员</h1>
+            <p>当前有 <strong>{metrics?.drafts ?? '—'}</strong> 项内容待处理，<strong className="dashboard-alert-text">{missingTotal}</strong> 条资料缺口待补齐。</p>
+          </div>
+          <div className="dashboard-hero-actions">
+            <label className="range-select"><span>统计范围</span><select value={analyticsDays} onChange={(event) => setAnalyticsDays(Number(event.target.value) as 7 | 14 | 30)}><option value="7">最近 7 天</option><option value="14">最近 14 天</option><option value="30">最近 30 天</option></select></label>
+            <button className="button" type="button" onClick={() => void refreshOverview().catch((error) => setNotice({ kind: 'error', text: getErrorText(error) }))} disabled={analyticsBusy}>{analyticsBusy ? '读取中……' : '刷新数据'}</button>
+          </div>
+        </section>
+        <div className="metric-grid dashboard-metric-grid">
+          <Metric label="装备库收录总数" value={metrics?.products ?? '—'} detail="产品记录" accent />
+          <Metric label="覆盖品牌 / 细分类" value={`${metrics?.brands ?? '—'} / ${metrics?.categories ?? '—'}`} detail="品牌 / 类目" />
+          <Metric label="待处理内容流" value={metrics?.drafts ?? '—'} detail="草稿队列" />
+          <Metric label="独立访客（UV）" value={summary?.uniqueVisitors ?? '—'} detail={`最近 ${analyticsDays} 天`} />
+          <Metric label="决策事件总数" value={summary?.events ?? '—'} detail="埋点事件" />
         </div>
+        {renderAnalyticsOverview()}
         <section className="data-panel quality-overview-panel">
           <PanelHeader eyebrow="数据质量" title="内容补齐队列" meta="目录质量" />
           <div className="quality-overview-grid">
@@ -1220,49 +1230,79 @@ export function AdminApp() {
             </div>
           </section>
         </div>
-      </>
+      </div>
     );
   }
 
   function renderProducts() {
+    const categorySearch = categoryQuery.trim().toLowerCase();
+    const categoryRoots = categories
+      .filter((category) => !category.parentId)
+      .filter((category) => !categorySearch || category.name.toLowerCase().includes(categorySearch) || category.slug.toLowerCase().includes(categorySearch))
+      .sort((left, right) => left.sortOrder - right.sortOrder);
+    const selectedOnPage = products?.items.filter((product) => selectedProductIds.includes(product.id)) ?? [];
+    const allVisibleSelected = Boolean(products?.items.length) && selectedOnPage.length === products?.items.length;
+    const setCategoryFilter = (categorySlug: string) => {
+      const nextFilters = { ...filters, categorySlug };
+      setFilters(nextFilters);
+      setAppliedFilters(nextFilters);
+      setSelectedProductIds([]);
+    };
+    const toggleProductSelection = (productId: string) => {
+      setSelectedProductIds((current) => current.includes(productId) ? current.filter((id) => id !== productId) : [...current, productId]);
+    };
+    const togglePageSelection = () => {
+      if (!products?.items.length) return;
+      setSelectedProductIds(allVisibleSelected ? [] : products.items.map((product) => product.id));
+    };
+    const showBulkNotice = (action: string) => {
+      setNotice({ kind: 'info', text: `${action}已记录为待接入动作，当前版本不会直接改写产品数据。` });
+    };
+
     return (
       <>
-        <SectionHeader
-          index="02"
-          title="产品资料"
-          description="产品参数由类目 schema 约束；保存为草稿或发布，后端会同步写入产品更新事件。"
-          action={<button className="button button-primary" onClick={openNewProduct}>+ 新增产品</button>}
-        />
-        <form className="filter-bar" onSubmit={(event) => { event.preventDefault(); setAppliedFilters({ ...filters }); }}>
-          <label className="filter-search"><span>检索</span><input value={filters.search} onChange={(event) => setFilters((current) => ({ ...current, search: event.target.value }))} placeholder="按标题、型号或 slug 搜索" /></label>
-          <label className="filter-select"><span>状态</span><select value={filters.status} onChange={(event) => setFilters((current) => ({ ...current, status: event.target.value as ProductFilters['status'] }))}><option value="">全部状态</option><option value="draft">草稿</option><option value="published">已发布</option></select></label>
-          <label className="filter-select"><span>待补数据</span><select value={filters.missing} onChange={(event) => setFilters((current) => ({ ...current, missing: event.target.value as ProductFilters['missing'] }))}><option value="">全部资料</option><option value="image">缺图片</option><option value="price">缺价格</option><option value="source">缺来源</option><option value="scores">缺编辑评分</option></select></label>
-          <button className="button" type="submit">应用筛选</button>
-          <span className="filter-meta">{products ? `共 ${products.total} 条 / 第 ${products.page} 页` : '读取中……'}</span>
-        </form>
-        <section className="data-panel table-panel">
-          <PanelHeader eyebrow="产品记录" title="产品清单" meta={products ? `${products.items?.length ?? 0} 条已加载` : '读取中'} />
-          <div className="table-wrap">
-            <table className="data-table product-table">
-              <thead><tr><th>产品</th><th>品牌</th><th>类目</th><th>价格</th><th>资料状态</th><th>状态</th><th>更新</th><th /></tr></thead>
-              <tbody>
-                {products?.items?.map((product) => (
-                  <tr key={product.id}>
-                    <td><div className="record-title"><span className="record-mark">{product.quality.missing.includes('image') ? '—' : '有图'}</span><span><strong>{product.title}</strong><small>{product.model} · {product.slug}</small></span></div></td>
-                    <td>{product.brand.nameCn || product.brand.name}<small className="table-sub">{product.brand.slug}</small></td>
-                    <td>{product.category.name}<small className="table-sub">{product.category.slug}</small></td>
-                    <td><data>{formatPrice(product)}</data></td>
-                    <td>{product.quality.missing.length ? <div className="quality-tags">{product.quality.missing.map((field) => <span className="quality-tag" key={field}>{qualityFieldLabel(field)}</span>)}</div> : <span className="quality-ok">资料完整</span>}</td>
-                    <td><StatusBadge status={product.status} /></td>
-                    <td><time className="table-sub">{formatDate(product.updatedAt)}</time></td>
-                    <td><button className="text-button" onClick={() => void openProduct(product)} disabled={busyAction === `product:${product.id}`}>{busyAction === `product:${product.id}` ? '读取中' : '编辑 →'}</button></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <section className="product-workspace-heading">
+          <div className="product-breadcrumb"><span>中台工作区</span><b>›</b><span>装备与品类中心</span>{filters.categorySlug ? <><b>›</b><strong>{categories.find((category) => category.slug === filters.categorySlug)?.name ?? filters.categorySlug}</strong></> : null}</div>
+          <div className="product-heading-row">
+            <div>
+              <div className="product-heading-title-row"><h1>装备与品类中心</h1><span className="product-schema-badge">SCHEMA / 动态参数</span><span className="product-live-state"><i />实时同步活跃</span></div>
+              <p>按品类、品牌和资料完整度管理装备目录；产品参数由类目 schema 约束。</p>
+            </div>
+            <div className="product-stat-strip">
+              <div><span>当前产品</span><strong>{products?.total ?? '—'}</strong><small>条记录</small></div>
+              <div><span>当前页资料完整</span><strong>{products ? `${products.items.filter((product) => product.quality.missing.length === 0).length}` : '—'}</strong><small>/ {products?.items.length ?? '—'}</small></div>
+              <div className="product-stat-alert"><span>待补资料</span><strong>{products ? products.items.filter((product) => product.quality.missing.length > 0).length : '—'}</strong><small>当前页</small></div>
+            </div>
           </div>
-          {!products?.items?.length && <EmptyState title="没有匹配的产品" detail="调整筛选条件，或先创建一条产品草稿。" />}
         </section>
+
+        <div className="product-workspace">
+          <aside className="category-rail">
+            <div className="category-rail-head"><div><p className="eyebrow">目录导航</p><h2>品类层级树</h2></div><button className="icon-button" type="button" aria-label="刷新目录" onClick={() => void refreshWorkspace()}>⟳</button></div>
+            <label className="category-search"><span aria-hidden="true">⌕</span><input value={categoryQuery} onChange={(event) => setCategoryQuery(event.target.value)} placeholder="过滤品类名称、代码…" /></label>
+            <div className="category-tree">
+              <button className={!filters.categorySlug ? 'category-tree-item is-active' : 'category-tree-item'} type="button" onClick={() => setCategoryFilter('')}><span>▦</span><strong>全部装备</strong><small>{products?.total ?? '—'}</small></button>
+              {categoryRoots.map((root) => {
+                const children = categories.filter((category) => category.parentId === root.id).sort((left, right) => left.sortOrder - right.sortOrder);
+                return <div className="category-tree-group" key={root.id}><button className={filters.categorySlug === root.slug ? 'category-tree-item is-active' : 'category-tree-item'} type="button" onClick={() => setCategoryFilter(root.slug)}><span>⌄</span><strong>{root.name}</strong><small>{root.productCount}</small></button>{children.map((child) => <button className={filters.categorySlug === child.slug ? 'category-tree-child is-active' : 'category-tree-child'} type="button" key={child.id} onClick={() => setCategoryFilter(child.slug)}><span>•</span><strong>{child.name}</strong><small>{child.productCount}</small></button>)}</div>;
+              })}
+              {!categoryRoots.length ? <div className="category-tree-empty">目录加载后会显示层级和产品数量。</div> : null}
+            </div>
+            <div className="category-rail-actions"><button className="category-action-button" type="button" onClick={() => { setActiveSection('categories'); setNotice(null); }}>⊕ 新增子品类节点</button><button className="category-action-button is-muted" type="button" onClick={() => { setActiveSection('categories'); setNotice({ kind: 'info', text: '类目映射规则将在类目参数页维护。' }); }}>⌘ 类目映射与同义词规则</button></div>
+          </aside>
+
+          <section className="product-list-pane">
+            <form className="product-query-panel" onSubmit={(event) => { event.preventDefault(); setAppliedFilters({ ...filters }); setSelectedProductIds([]); }}>
+              <div className="product-query-row"><label className="product-query-input"><span aria-hidden="true">⌕</span><input value={filters.search} onChange={(event) => setFilters((current) => ({ ...current, search: event.target.value }))} placeholder="冲锋衣 GORE-TEX / 型号 / SKU" /><kbd>⌘K</kbd></label><button className="button button-primary" type="submit">⌕ 执行查询</button><button className="button icon-button" type="button" aria-label="重置筛选" onClick={() => { const nextFilters: ProductFilters = { search: '', status: '', categorySlug: '', missing: '' }; setFilters(nextFilters); setAppliedFilters(nextFilters); setCategoryQuery(''); setSelectedProductIds([]); }}>⟳</button></div>
+              <div className="product-filter-row"><span className="product-filter-label">发布状态：</span>{([['', '全部'], ['published', '已发布'], ['draft', '草稿']] as const).map(([value, label]) => <button className={filters.status === value ? 'filter-pill is-active' : 'filter-pill'} type="button" key={value} onClick={() => { const nextFilters = { ...filters, status: value }; setFilters(nextFilters); setAppliedFilters(nextFilters); }}>{label}{value === '' && products ? ` ${products.total}` : ''}</button>)}<label className="product-data-filter"><span>资料</span><select value={filters.missing} onChange={(event) => setFilters((current) => ({ ...current, missing: event.target.value as ProductFilters['missing'] }))}><option value="">全部资料</option><option value="image">缺图片</option><option value="price">缺价格</option><option value="source">缺来源</option><option value="scores">缺编辑评分</option></select></label></div>
+            </form>
+
+            <div className="product-bulk-bar"><label className="bulk-selection"><input type="checkbox" checked={allVisibleSelected} onChange={togglePageSelection} />已勾选 <strong>{selectedOnPage.length}</strong> 项装备</label><div className="bulk-actions"><button className="button button-primary" type="button" disabled={!selectedOnPage.length} onClick={() => showBulkNotice('批量发布')}>↥ 批量发布</button><button className="button" type="button" disabled={!selectedOnPage.length} onClick={() => showBulkNotice('批量重新采集')}>⟳ 批量重新采集</button><button className="button" type="button" disabled={!selectedOnPage.length} onClick={() => showBulkNotice('分配审核人')}>♙ 分配审核人</button><button className="button button-danger" type="button" disabled={!selectedOnPage.length} onClick={() => showBulkNotice('批量下架')}>⊟ 批量下架</button></div><button className="text-button bulk-export" type="button" onClick={() => showBulkNotice('导出结构化数据')}>⇩ 导出 JSON / CSV</button></div>
+
+            <section className="data-panel table-panel product-workspace-panel"><div className="product-table-heading"><div><p className="eyebrow">产品记录</p><h2>装备清单</h2></div><span>{products ? `${products.items.length} 条已加载` : '读取中……'}</span></div><div className="table-wrap"><table className="data-table product-workspace-table"><thead><tr><th className="selection-column"><input type="checkbox" aria-label="选择当前页" checked={allVisibleSelected} onChange={togglePageSelection} /></th><th>商品基本信息 / 型号规格</th><th>品牌与细分类</th><th>参考价与采价渠道</th><th>资料状态</th><th /></tr></thead><tbody>{products?.items?.map((product) => { const checked = selectedProductIds.includes(product.id); return <tr key={product.id} className={checked ? 'is-selected' : ''}><td className="selection-column"><input type="checkbox" aria-label={`选择${product.title}`} checked={checked} onChange={() => toggleProductSelection(product.id)} /></td><td><div className="workspace-product-cell"><div className="product-thumb">{product.coverImage?.url ? <img src={product.coverImage.url} alt="" /> : <span>暂无图</span>}</div><div><span className="product-code">{product.model || product.slug}</span><button className="workspace-product-title" type="button" onClick={() => void openProduct(product)}>{product.title}</button><small>SKU：{product.id.slice(0, 8)} · 图片 {product.imageCount} 张</small></div></div></td><td><strong>{product.brand.nameCn || product.brand.name}</strong><small className="table-sub">{product.category.name}</small></td><td><data>{formatPrice(product)}</data><small className="table-sub">{product.dataSource || '来源待补'}</small></td><td>{product.quality.missing.length ? <div className="quality-tags">{product.quality.missing.map((field) => <span className="quality-tag" key={field}>{qualityFieldLabel(field)}</span>)}</div> : <span className="quality-ok">资料完整</span>}<small className="table-sub"><StatusBadge status={product.status} /></small></td><td><button className="text-button" type="button" onClick={() => void openProduct(product)} disabled={busyAction === `product:${product.id}`}>{busyAction === `product:${product.id}` ? '读取中' : '编辑 →'}</button></td></tr>; })}</tbody></table></div>{!products?.items?.length && <EmptyState title="没有匹配的产品" detail="调整筛选条件，或先创建一条产品草稿。" />}<div className="product-pagination"><span>显示当前页 <strong>{products?.items.length ?? 0}</strong> 条，共 <strong>{products?.total ?? '—'}</strong> 条装备</span><div><button className="pagination-button" type="button" disabled>‹</button><button className="pagination-button is-active" type="button">1</button><button className="pagination-button" type="button" disabled>›</button></div></div></section>
+            <div className="ingest-status-bar"><code>INGEST WORKSPACE</code><span>采集任务、来源快照和增量更新在采集任务页统一查看。</span><button className="text-button" type="button" onClick={() => { setActiveSection('import'); setNotice(null); }}>查看采集任务 →</button></div>
+          </section>
+        </div>
         {productForm && renderProductEditor()}
       </>
     );
@@ -1573,8 +1613,8 @@ export function AdminApp() {
         <div className="brand-lockup"><div className="brand-mark-large">有谱</div><div><strong>有谱</strong><small>DECISION ENGINE ADMIN</small></div></div>
         <div className="sidebar-rule" />
         <p className="sidebar-label">操作模块</p>
-        <nav className="sidebar-nav" aria-label="后台模块">{(['工作台', '资料库', '内容运营', '系统管理'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group && visibleSections.has(item.id)).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span className="nav-icon" aria-hidden="true">{item.icon}</span><strong>{item.label}</strong><small>{item.index}</small></button>)}</div>)}</nav>
-        <div className="sidebar-bottom"><div className="system-readout"><span className="status-dot status-dot-good" /><span>API 会话 / 权限：{role || 'admin'}</span></div><button className="logout-button" onClick={logout}>退出工作台 <span>↗</span></button></div>
+        <nav className="sidebar-nav" aria-label="后台模块">{(['核心监控', '内容与装备中台', '决策数据洞察', '系统底座'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group && visibleSections.has(item.id)).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span className="nav-icon" aria-hidden="true">{item.icon}</span><strong>{item.label}</strong><small>{item.index}</small></button>)}</div>)}</nav>
+        <div className="sidebar-bottom"><div className="cluster-status"><div><code>PROD-Cluster-SH01</code><strong><span className="status-dot status-dot-good" />99.98%</strong></div><small>All systems normal · Alpine Core Engine</small></div><div className="system-readout"><span className="status-dot status-dot-good" /><span>API 会话 / 权限：{role || 'admin'}</span></div><button className="logout-button" onClick={logout}>退出工作台 <span>↗</span></button></div>
       </aside>
       <main className="admin-main">
         <header className="topbar">
@@ -1586,8 +1626,12 @@ export function AdminApp() {
           <div className="topbar-actions">
             <button className="button button-primary topbar-create" type="button" onClick={openNewProduct}>＋ 新建商品</button>
             <button className="button topbar-import" type="button" onClick={() => { setActiveSection('import'); setNotice(null); }}>↥ 拉取采集任务</button>
-            <button className="topbar-icon-button" type="button" title="打开数据分析" aria-label="打开数据分析" onClick={() => { setActiveSection('analytics'); setNotice(null); }}>⌁</button>
-            <div className="topbar-user"><span className="topbar-user-avatar">{(role || 'A').slice(0, 1).toUpperCase()}</span><span><strong>{role || 'admin'}</strong><small>已连接</small></span></div>
+            <button className="button topbar-alert" type="button" onClick={() => { setActiveSection('moderation'); setNotice(null); }}>⚠ 异常警报</button>
+            <div className="topbar-utilities">
+              <button className="topbar-utility-button" type="button" onClick={() => setNotice({ kind: 'info', text: '后台说明暂未接入独立文档页，当前功能以左侧导航和页面说明为准。' })}>？<span>文档</span></button>
+              <button className="topbar-utility-button topbar-notification" type="button" aria-label="打开通知" onClick={() => { setActiveSection('moderation'); setNotice(null); }}>♧<i aria-hidden="true" /></button>
+            </div>
+            <div className="topbar-user"><span className="topbar-user-avatar">{(role || 'A').slice(0, 1).toUpperCase()}</span><span><strong>{role || 'admin'}</strong><small>已连接</small></span><span className="topbar-user-chevron" aria-hidden="true">⌄</span></div>
           </div>
           <div className="topbar-right"><span className="api-origin">API {getApiHost()}</span><span className="revision">版本 3.01</span></div>
         </header>
