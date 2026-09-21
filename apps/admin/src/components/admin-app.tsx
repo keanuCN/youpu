@@ -49,6 +49,7 @@ type Section = AdminSection;
 type NoticeKind = 'success' | 'error' | 'info';
 type ImageKind = AdminProductInput['images'][number]['kind'];
 type DataSourceKind = NonNullable<AdminProductInput['dataSource']>['kind'];
+type ProductDetailTab = 'compare' | 'form' | 'sources' | 'changelog';
 
 interface Notice {
   kind: NoticeKind;
@@ -396,7 +397,7 @@ function formatDate(value: string | null | undefined): string {
   }).format(date);
 }
 
-function formatPrice(product: AdminProductSummary): string {
+function formatPrice(product: Pick<AdminProductSummary, 'priceMin' | 'priceMax' | 'priceCurrency'>): string {
   if (product.priceMin === null && product.priceMax === null) return '未定价';
   const formatCny = (value: number) => `¥${new Intl.NumberFormat('zh-CN', { maximumFractionDigits: 0 }).format(value)}`;
   const min = product.priceMin === null ? '' : formatCny(product.priceMin);
@@ -555,6 +556,17 @@ function fieldsByGroup(schema: SpecSchema): Array<[string, SpecField[]]> {
   return [...groups.entries()];
 }
 
+function displaySpecValue(value: unknown): string {
+  if (value === undefined || value === null || value === '') return '待补充';
+  if (Array.isArray(value)) return value.map((item) => displaySpecValue(item)).join(' · ');
+  if (typeof value === 'object') return JSON.stringify(value);
+  return String(value);
+}
+
+function hasSpecValue(value: unknown): boolean {
+  return value !== undefined && value !== null && value !== '' && !(Array.isArray(value) && value.length === 0);
+}
+
 function statusText(status: string): string {
   const labels: Record<string, string> = {
     published: '已发布',
@@ -605,6 +617,8 @@ export function AdminApp() {
   const [categoryQuery, setCategoryQuery] = useState('');
   const [selectedProductIds, setSelectedProductIds] = useState<string[]>([]);
   const [productForm, setProductForm] = useState<ProductFormState | null>(null);
+  const [productDetail, setProductDetail] = useState<AdminProductDetail | null>(null);
+  const [productDetailTab, setProductDetailTab] = useState<ProductDetailTab>('compare');
   const [brandForm, setBrandForm] = useState<BrandFormState | null>(null);
   const [categoryForm, setCategoryForm] = useState<CategoryFormState | null>(null);
   const hasOpenEditor = productForm !== null || brandForm !== null || categoryForm !== null;
@@ -963,12 +977,14 @@ export function AdminApp() {
     setLoginToken('');
     setRole('');
     setProductForm(null);
+    setProductDetail(null);
     setBrandForm(null);
     setCategoryForm(null);
     setNotice({ kind: 'info', text: '已退出后台' });
   }
 
   function openNewProduct() {
+    setProductDetail(null);
     setProductForm(makeProductForm(categories[0]?.slug, brands[0]?.slug));
     setActiveSection('products');
     setNotice(null);
@@ -979,7 +995,9 @@ export function AdminApp() {
     setNotice(null);
     try {
       const detail = await callAdmin<AdminProductDetail>(`/products/${product.id}`);
-      setProductForm(productFormFromDetail(detail));
+      setProductDetail(detail);
+      setProductDetailTab('compare');
+      setActiveSection('categories');
     } catch (error) {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
@@ -1001,6 +1019,8 @@ export function AdminApp() {
         await callAdmin('/products', { method: 'POST', body: payload });
       }
       setProductForm(null);
+      setProductDetail(null);
+      setActiveSection('products');
       await refreshWorkspace();
       setNotice({ kind: 'success', text: productForm.id ? '产品资料已更新' : '产品草稿已创建' });
     } catch (error) {
@@ -1383,6 +1403,67 @@ export function AdminApp() {
     );
   }
 
+  function renderProductDetail() {
+    if (!productDetail) return renderCategories();
+    const category = categories.find((item) => item.slug === productDetail.category.slug);
+    const schema = schemaForCategory(category);
+    const schemaFields = schema?.fields ?? [];
+    const completedFields = schemaFields.filter((field) => hasSpecValue(productDetail.specs[field.key])).length;
+    const totalFields = schemaFields.length || Object.keys(productDetail.specs).length;
+    const alignment = totalFields ? `${Math.round((completedFields / totalFields) * 1000) / 10}%` : '—';
+    const missingFields = schemaFields.filter((field) => !hasSpecValue(productDetail.specs[field.key]));
+    const rawPayload = JSON.stringify({
+      id: productDetail.id,
+      slug: productDetail.slug,
+      title: productDetail.title,
+      model: productDetail.model,
+      year: productDetail.year,
+      brand: productDetail.brand,
+      category: productDetail.category,
+      price: { min: productDetail.priceMin, max: productDetail.priceMax, currency: productDetail.priceCurrency },
+      specs: productDetail.specs,
+      editorialScores: productDetail.editorialScores,
+      images: productDetail.images,
+      dataSource: productDetail.dataSource,
+    }, null, 2);
+    const tabItems: Array<[ProductDetailTab, string]> = [
+      ['compare', '参数与字段映射对比'],
+      ['form', '结构化字段视图'],
+      ['sources', '来源与采集'],
+      ['changelog', '版本记录'],
+    ];
+    const openEditor = () => setProductForm(productFormFromDetail(productDetail));
+    const goBack = () => {
+      setProductDetail(null);
+      setActiveSection('products');
+    };
+    const renderFieldRows = () => schema ? fieldsByGroup(schema).map(([group, fields]) => <div className="detail-field-group" key={group}><div className="detail-field-group-title">{group}</div>{fields.map((field) => { const value = productDetail.specs[field.key]; const filled = hasSpecValue(value); return <div className={filled ? 'detail-field-row' : 'detail-field-row is-missing'} key={field.key}><div><strong>{field.label}</strong><small>{field.key}{field.unit ? ` · ${field.unit}` : ''}</small></div><span>{displaySpecValue(value)}</span><i>{filled ? '已映射' : '待补充'}</i></div>; })}</div>) : <EmptyState title="当前类目没有有效 schema" detail="先在类目与参数页配置字段，详情页才能展示参数映射关系。" />;
+
+    return (
+      <>
+        <section className="product-detail-heading">
+          <div className="product-detail-breadcrumb"><button className="text-button" type="button" onClick={goBack}>装备中心</button><b>›</b><span>{productDetail.category.name}</span><b>›</b><strong>{productDetail.title}</strong></div>
+          <div className="product-detail-title-row"><div className="product-detail-mark">⇄</div><div className="product-detail-title-copy"><div className="product-detail-engine-line"><span>ENGINE / 动态参数 schema</span><StatusBadge status={productDetail.status} /></div><h1>{productDetail.title}</h1><p>SKU：{productDetail.model || productDetail.slug} · 最近更新：{formatDate(productDetail.updatedAt)} · {productDetail.brand.nameCn || productDetail.brand.name}</p></div><div className="product-detail-heading-actions"><span className={productDetail.quality.missing.length ? 'product-detail-quality' : 'product-detail-quality is-good'}>{productDetail.quality.missing.length ? `资料待补 ${productDetail.quality.missing.length} 项` : '资料完整'}</span><button className="button button-primary" type="button" onClick={openEditor}>编辑产品</button></div></div>
+          <div className="product-detail-action-row"><button className="button" type="button" onClick={goBack}>← 返回装备中心</button><button className="button" type="button" onClick={() => setNotice({ kind: 'info', text: '规则校验会在保存产品时执行。' })}>▣ 运行规则校验</button><button className="button" type="button" onClick={() => setNotice({ kind: 'info', text: '当前版本通过编辑表单保存结构化草稿。' })}>▣ 保存为草稿</button><button className="button button-primary" type="button" onClick={openEditor}>✎ 编辑并同步</button></div>
+          <div className="product-detail-tabs">{tabItems.map(([tab, label]) => <button className={productDetailTab === tab ? 'product-detail-tab is-active' : 'product-detail-tab'} type="button" key={tab} onClick={() => setProductDetailTab(tab)}>{label}{tab === 'compare' && missingFields.length ? <i /> : null}</button>)}</div>
+        </section>
+
+        <div className="product-detail-metrics"><article><span>字段对齐率</span><strong>{alignment}</strong><small>{completedFields} / {totalFields || '—'} 个参数已填</small><em className="detail-meter"><i style={{ width: alignment === '—' ? '0%' : alignment }} /></em></article><article className={missingFields.length ? 'is-alert' : ''}><span>未解决资料缺口</span><strong>{missingFields.length || productDetail.quality.missing.length}</strong><small>{missingFields.length ? '项参数待补充' : '产品质量检查项'}</small><em className="detail-meter"><i style={{ width: `${missingFields.length ? Math.min(100, missingFields.length * 18) : 0}%` }} /></em></article><article><span>产品图片</span><strong>{productDetail.images.length}</strong><small>{productDetail.images.length ? '张来源图片' : '暂无图片'}</small><em className="detail-meter"><i style={{ width: `${Math.min(100, productDetail.images.length * 25)}%` }} /></em></article><article><span>参考价格</span><strong>{formatPrice(productDetail)}</strong><small>{productDetail.priceCurrency} · {productDetail.dataSource || '来源待补'}</small><em className="detail-meter"><i style={{ width: productDetail.priceMin !== null || productDetail.priceMax !== null ? '100%' : '0%' }} /></em></article></div>
+
+        {productDetailTab === 'compare' ? <div className="product-detail-compare-grid"><section className="detail-raw-panel"><div className="detail-panel-head"><div><p className="eyebrow">原始采集数据</p><h2>产品 Raw JSON</h2></div><span>只读快照</span></div><pre className="detail-raw-code">{rawPayload}</pre><div className="detail-source-strip"><span>数据抓取与来源</span><strong>{productDetail.dataSource || '未记录来源'}</strong></div></section><section className="detail-schema-panel"><div className="detail-panel-head"><div><p className="eyebrow">结构化数据</p><h2>有谱标准决策模型</h2></div><span>{schema ? `${schemaFields.length} 个字段` : '未配置 schema'}</span></div><div className="detail-schema-legend"><span><i className="is-filled" />已映射</span><span><i className="is-missing" />待补充</span><span>Target：产品 schema</span></div><div className="detail-fields-scroll">{renderFieldRows()}</div></section></div> : null}
+
+        {productDetailTab === 'form' ? <section className="data-panel product-detail-tab-panel"><div className="detail-panel-head"><div><p className="eyebrow">结构化字段视图</p><h2>参数字段与当前值</h2></div><button className="button button-primary" type="button" onClick={openEditor}>进入编辑表单</button></div><div className="detail-fields-grid">{renderFieldRows()}</div></section> : null}
+
+        {productDetailTab === 'sources' ? <section className="data-panel product-detail-tab-panel"><div className="detail-panel-head"><div><p className="eyebrow">来源与采集</p><h2>图片与来源留痕</h2></div><span>{productDetail.images.length} 张图片</span></div><div className="detail-source-grid"><article><h3>来源记录</h3><p>{productDetail.dataSource || '当前产品没有记录来源类型或来源快照。'}</p><small>来源字段会随产品保存写入审计日志。</small></article><article><h3>图片列表</h3>{productDetail.images.length ? <div className="detail-image-list">{productDetail.images.map((image) => <a href={image.url} target="_blank" rel="noreferrer" key={image.id}><span>{image.kind}</span><strong>{image.url}</strong><small>{image.source || '未记录图片来源'}</small></a>)}</div> : <EmptyState title="暂无产品图片" detail="可在编辑产品中补充图片 URL 和版权来源。" />}</article></div></section> : null}
+
+        {productDetailTab === 'changelog' ? <section className="data-panel product-detail-tab-panel"><div className="detail-panel-head"><div><p className="eyebrow">版本记录</p><h2>产品变更时间线</h2></div><span>当前 API 未提供版本快照</span></div><div className="detail-timeline"><div><time>{formatDate(productDetail.updatedAt)}</time><strong>最近一次产品更新</strong><span>当前结构化字段和资料状态由后台接口返回。</span></div><div><time>{formatDate(productDetail.createdAt)}</time><strong>产品首次创建</strong><span>原始产品记录已进入装备库。</span></div><div className="is-muted"><time>后续版本</time><strong>字段级 diff 与 YAML 快照</strong><span>待采集快照和版本接口接入后展示。</span></div></div></section> : null}
+
+        <section className="product-detail-guidance"><div><p className="eyebrow">资料处理建议</p><h2>{missingFields.length ? `当前有 ${missingFields.length} 个参数待补充` : '当前参数字段已完成映射'}</h2><p>{missingFields.length ? `优先补充：${missingFields.slice(0, 4).map((field) => field.label).join('、')}。保存时会继续经过类目 schema 校验。` : '可以继续核对来源、图片版权和价格区间，再决定是否发布。'}</p></div><button className="button" type="button" onClick={openEditor}>{missingFields.length ? '补齐产品资料 →' : '打开编辑表单 →'}</button></section>
+        {productForm && renderProductEditor()}
+      </>
+    );
+  }
+
   function renderCategories() {
     return (
       <>
@@ -1609,7 +1690,7 @@ export function AdminApp() {
   function renderContent() {
     if (activeSection === 'products') return renderProducts();
     if (activeSection === 'brands') return renderBrands();
-    if (activeSection === 'categories') return renderCategories();
+    if (activeSection === 'categories') return productDetail ? renderProductDetail() : renderCategories();
     if (activeSection === 'import') return renderImport();
     if (activeSection === 'analytics') return renderAnalytics();
     if (activeSection === 'moderation') return renderModeration();
@@ -1624,7 +1705,7 @@ export function AdminApp() {
         <div className="brand-lockup"><div className="brand-mark-large">有谱</div><div><strong>有谱</strong><small>DECISION ENGINE ADMIN</small></div></div>
         <div className="sidebar-rule" />
         <p className="sidebar-label">操作模块</p>
-        <nav className="sidebar-nav" aria-label="后台模块">{(['核心监控', '内容与装备中台', '决策数据洞察', '系统底座'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group && visibleSections.has(item.id)).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setNotice(null); }}><span className="nav-icon" aria-hidden="true">{item.icon}</span><strong>{item.label}</strong><small>{item.index}</small></button>)}</div>)}</nav>
+        <nav className="sidebar-nav" aria-label="后台模块">{(['核心监控', '内容与装备中台', '决策数据洞察', '系统底座'] as NavGroup[]).map((group) => <div className="sidebar-group" key={group}><p className="sidebar-group-label">{group}</p>{navItems.filter((item) => item.group === group && visibleSections.has(item.id)).map((item) => <button key={item.id} className={activeSection === item.id ? 'nav-item is-active' : 'nav-item'} onClick={() => { setActiveSection(item.id); setProductDetail(null); setNotice(null); }}><span className="nav-icon" aria-hidden="true">{item.icon}</span><strong>{item.label}</strong><small>{item.index}</small></button>)}</div>)}</nav>
         <div className="sidebar-bottom"><div className="cluster-status"><div><code>PROD-Cluster-SH01</code><strong><span className="status-dot status-dot-good" />99.98%</strong></div><small>All systems normal · Alpine Core Engine</small></div><div className="system-readout"><span className="status-dot status-dot-good" /><span>API 会话 / 权限：{role || 'admin'}</span></div><button className="logout-button" onClick={logout}>退出工作台 <span>↗</span></button></div>
       </aside>
       <main className="admin-main">
