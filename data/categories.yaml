@@ -1527,6 +1527,181 @@
   name: 露营灯
   parent: camping
   sort_order: 70
+  recommend_config:
+    weights:
+      brightness: 0.3
+      runtime: 0.2
+      weather: 0.15
+      weight: 0.15
+      battery: 0.1
+      value: 0.1
+  spec_schema:
+    fields:
+      - key: maxLumens
+        label: 最大亮度
+        group: 光源与续航
+        type: int
+        unit: lm
+        min: 1
+        max: 20000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        required: true
+        order: 10
+
+      - key: minLumens
+        label: 最低亮度
+        group: 光源与续航
+        type: int
+        unit: lm
+        min: 0
+        max: 20000
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 20
+
+      - key: modeCount
+        label: 灯光模式数量
+        group: 光源与续航
+        type: int
+        unit: 种
+        min: 1
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 30
+
+      - key: rechargeable
+        label: 是否可充电
+        group: 电池与接口
+        type: bool
+        filter: single
+        compare: true
+        compareDirection: context
+        required: true
+        order: 110
+
+      - key: batteryCapacity
+        label: 电池容量
+        group: 电池与接口
+        type: int
+        unit: mAh
+        min: 100
+        max: 50000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 120
+
+      - key: batteryType
+        label: 电池类型
+        group: 电池与接口
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 130
+
+      - key: chargeTime
+        label: 充电时间
+        group: 电池与接口
+        type: number
+        unit: h
+        min: 0.1
+        max: 48
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 140
+
+      - key: runtimeHigh
+        label: 高亮续航
+        group: 光源与续航
+        type: number
+        unit: h
+        min: 0.1
+        max: 1000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 210
+
+      - key: runtimeLow
+        label: 低亮续航
+        group: 光源与续航
+        type: number
+        unit: h
+        min: 0.1
+        max: 2000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 220
+
+      - key: waterResistance
+        label: 防水等级
+        group: 防护与便携
+        type: enum
+        options:
+          - { value: ipx4, label: IPX4 }
+          - { value: ipx5, label: IPX5 }
+          - { value: ipx6, label: IPX6 }
+          - { value: ipx7, label: IPX7 }
+          - { value: other, label: 其他 }
+        filter: single
+        compare: true
+        compareDirection: higher-better
+        order: 310
+
+      - key: weight
+        label: 重量
+        group: 防护与便携
+        type: number
+        unit: g
+        min: 1
+        max: 10000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 320
+
+      - key: dimensions
+        label: 尺寸
+        group: 防护与便携
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 330
+
+      - key: input
+        label: 输入接口
+        group: 电池与接口
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 410
+
+      - key: output
+        label: 输出接口
+        group: 电池与接口
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 420
+
+    rating_dimensions:
+      - { key: brightness, label: 亮度表现, weight: 0.2 }
+      - { key: runtime, label: 续航能力, weight: 0.2 }
+      - { key: usability, label: 操作易用, weight: 0.16 }
+      - { key: durability, label: 防护耐久, weight: 0.16 }
+      - { key: portability, label: 携带便携, weight: 0.13 }
+      - { key: value, label: 性价比, weight: 0.15 }
 
 - slug: hiking
   name: 徒步登山

@@ -13,6 +13,7 @@ import { msrTentAdapter } from '../tent/brands/msr';
 import { msrTarpAdapter } from '../tarp/brands/msr';
 import { rabSleepingBagAdapter } from '../sleeping-bag/brands/rab';
 import { msrCampingStoveAdapter } from '../camping-stove/brands/msr';
+import { bioliteCampingLightAdapter } from '../camping-light/brands/biolite';
 
 export interface ProductAdapter {
   name: string;
@@ -27,6 +28,7 @@ const adapters: ProductAdapter[] = [
   msrTarpAdapter,
   rabSleepingBagAdapter,
   msrCampingStoveAdapter,
+  bioliteCampingLightAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,

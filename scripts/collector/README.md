@@ -69,6 +69,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 炉头第一阶段目标见 `examples/camping-stove-phase1-targets.json`。当前接入 MSR PocketRocket Deluxe 官方产品页，从标题、描述、JSON-LD 和图片替代文本提取燃料类型、炉头类型、点火方式与抗风描述；重量、功率和沸腾时间等未被当前静态快照确认的字段保持缺省。
 
+露营灯第一阶段目标见 `examples/camping-light-phase1-targets.json`。当前接入 BioLite AlpenGlow 500 官方产品页，从技术表提取亮度、重量、电池、续航、防水、尺寸和充电时间等字段；未出现的字段保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
