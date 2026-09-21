@@ -14,6 +14,7 @@ import { naturehikeTentAdapter } from '../tent/brands/naturehike';
 import { msrTarpAdapter } from '../tarp/brands/msr';
 import { rabSleepingBagAdapter } from '../sleeping-bag/brands/rab';
 import { msrCampingStoveAdapter } from '../camping-stove/brands/msr';
+import { naturehikeCampingStoveAdapter } from '../camping-stove/brands/naturehike';
 import { bioliteCampingLightAdapter } from '../camping-light/brands/biolite';
 import { xiaomiCampingLightAdapter } from '../camping-light/brands/xiaomi';
 import { ospreyHikingBackpackAdapter } from '../hiking-backpack/brands/osprey';
@@ -32,6 +33,7 @@ const adapters: ProductAdapter[] = [
   msrTarpAdapter,
   rabSleepingBagAdapter,
   msrCampingStoveAdapter,
+  naturehikeCampingStoveAdapter,
   bioliteCampingLightAdapter,
   xiaomiCampingLightAdapter,
   ospreyHikingBackpackAdapter,
