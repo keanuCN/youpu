@@ -94,6 +94,7 @@ function numberFromWord(value: string | undefined): number | undefined {
 
 function freestandingFrom(evidence: string): boolean | undefined {
   const normalized = evidence.toLowerCase();
+  if (/semi[- ]?freestanding/.test(normalized)) return false;
   if (/non[- ]?freestanding/.test(normalized)) return false;
   if (normalized.includes('freestanding')) return true;
   return undefined;
