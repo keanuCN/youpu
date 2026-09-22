@@ -131,6 +131,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门麦克风第一阶段目标见 `examples/domestic-hot-microphone-phase1-targets.json`。当前接入 DJI 大疆 DJI Mic Mini 官方技术参数页，按发射器、接收器、充电盒和通用麦克风区块提取组件重量、电池、充电、续航、指向性、频率响应、最大声压级、等效噪声和传输距离；组件字段保持独立，不合并成整套设备的单一重量或续航。
 
+国内热门补光灯第一阶段目标见 `examples/domestic-hot-video-light-phase1-targets.json`。当前接入神牛 Godox SL60II 官方中文产品页，按参数表头定位 SL60IIBi 列，提取功率、色温、最高照度、调光范围、CRI、TLCI、FX 光效、控制距离、尺寸、重量、保荣卡口和低噪风扇；表格中的跨型号公共行会复用明确公共值，不读取 SL60IID 列。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

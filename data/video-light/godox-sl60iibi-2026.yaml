@@ -1,0 +1,27 @@
+slug: godox-sl60iibi-2026
+category: video-light
+brand: godox
+model: SL60IIBi
+year: 2026
+title: SL60IID/SL60IIBi-神牛产品-Godox神牛 - 官方网站
+specs:
+  lightType: COB 摄影灯
+  power: 75
+  colorTemperature: 2800K~6500K
+  dimmingRange: 0%~100%
+  cri: 96
+  tlci: 97
+  fxEffects: 11
+  controlMethods: 2.4GHz控制/蓝牙控制/灯体控制
+  transmissionDistance: 30
+  workingTemperature: -10℃~40℃
+  dimensions: 140mm*236mm*215mm
+  weight: 1.5
+  mount: 保荣卡口
+  lowNoise: true
+  illuminance: 25100
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://godox.com.cn/product-a/SL60II.html
+status: published

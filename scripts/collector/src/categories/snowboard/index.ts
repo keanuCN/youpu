@@ -31,6 +31,7 @@ import { nisiFilterAdapter } from '../filter/brands/nisi';
 import { siruiTripodAdapter } from '../tripod/brands/sirui';
 import { djiGimbalAdapter } from '../gimbal/brands/dji';
 import { djiMicrophoneAdapter } from '../microphone/brands/dji';
+import { godoxVideoLightAdapter } from '../video-light/brands/godox';
 
 export interface ProductAdapter {
   name: string;
@@ -63,6 +64,7 @@ const adapters: ProductAdapter[] = [
   siruiTripodAdapter,
   djiGimbalAdapter,
   djiMicrophoneAdapter,
+  godoxVideoLightAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,

@@ -2672,6 +2672,137 @@
   name: 补光灯
   parent: videography
   sort_order: 40
+  spec_schema:
+    fields:
+      - key: lightType
+        label: 灯具类型
+        group: 产品定位
+        type: text
+        filter: false
+        compare: true
+        order: 10
+      - key: power
+        label: 最大功率
+        group: 光学与输出
+        type: number
+        unit: W
+        min: 1
+        max: 5000
+        filter: range
+        compare: true
+        order: 20
+      - key: colorTemperature
+        label: 色温范围
+        group: 光学与输出
+        type: text
+        filter: false
+        compare: true
+        order: 30
+      - key: illuminance
+        label: 最高照度
+        group: 光学与输出
+        type: number
+        unit: lux
+        min: 1
+        max: 1000000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 40
+      - key: dimmingRange
+        label: 调光范围
+        group: 光学与输出
+        type: text
+        filter: false
+        compare: true
+        order: 50
+      - key: cri
+        label: 显色指数下限
+        group: 光学与输出
+        type: number
+        min: 1
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 60
+      - key: tlci
+        label: 电视光源一致性指数下限
+        group: 光学与输出
+        type: number
+        min: 1
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 70
+      - key: fxEffects
+        label: FX 光效数量
+        group: 光效与控制
+        type: number
+        unit: 种
+        min: 0
+        max: 100
+        filter: range
+        compare: true
+        order: 80
+      - key: controlMethods
+        label: 控制方式
+        group: 光效与控制
+        type: text
+        filter: false
+        compare: true
+        order: 90
+      - key: transmissionDistance
+        label: 无线控制距离
+        group: 光效与控制
+        type: number
+        unit: m
+        min: 1
+        max: 1000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 100
+      - key: workingTemperature
+        label: 工作环境温度
+        group: 结构与便携
+        type: text
+        filter: false
+        compare: true
+        order: 110
+      - key: dimensions
+        label: 尺寸
+        group: 结构与便携
+        type: text
+        filter: false
+        compare: true
+        order: 120
+      - key: weight
+        label: 重量
+        group: 结构与便携
+        type: number
+        unit: kg
+        min: 0.01
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 130
+      - key: mount
+        label: 卡口
+        group: 兼容与结构
+        type: text
+        filter: false
+        compare: true
+        order: 140
+      - key: lowNoise
+        label: 低噪风扇
+        group: 结构与便携
+        type: bool
+        filter: false
+        compare: true
+        order: 150
 
 - slug: microphone
   name: 麦克风
