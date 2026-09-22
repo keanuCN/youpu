@@ -169,6 +169,13 @@
   official_url: https://vxe.com
   description: 中国电竞外设品牌，V75 X 机械键盘主打 75% 配列、三模连接、Game-Gasket 结构和低延迟电竞体验。
 
+- slug: aula
+  name: AULA
+  name_cn: 狼蛛
+  country: CN
+  official_url: https://www.aulacn.com
+  description: 中国电竞外设品牌，F75 机械键盘以 75% 配列、Gasket 结构、三模连接和入门级客制化体验为主要特点。
+
 - slug: canyon
   name: Canyon
   country: DE

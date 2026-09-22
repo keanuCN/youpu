@@ -41,6 +41,7 @@ import { monsgeekEsportsKeyboardAdapter } from '../esports-keyboard/brands/monsg
 import { monsgeekViaEsportsKeyboardAdapter } from '../esports-keyboard/brands/monsgeek-via';
 import { wobkeyEsportsKeyboardAdapter } from '../esports-keyboard/brands/wobkey';
 import { vxeEsportsKeyboardAdapter } from '../esports-keyboard/brands/vxe';
+import { aulaEsportsKeyboardAdapter } from '../esports-keyboard/brands/aula';
 
 export interface ProductAdapter {
   name: string;
@@ -83,6 +84,7 @@ const adapters: ProductAdapter[] = [
   monsgeekViaEsportsKeyboardAdapter,
   wobkeyEsportsKeyboardAdapter,
   vxeEsportsKeyboardAdapter,
+  aulaEsportsKeyboardAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,

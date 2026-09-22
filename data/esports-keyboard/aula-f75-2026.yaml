@@ -1,0 +1,24 @@
+slug: aula-f75-2026
+category: esports-keyboard
+brand: aula
+model: AULA F75
+year: 2026
+title: AULA 75% Gasket Wireless Mechanical Keyboard – Aula Gear
+specs:
+  keyboardType: mechanical
+  switchType: LEOBOG Reaper Linear Switch
+  mounting: Gasket
+  layout: 75% ANSI
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: RGB 背光
+  hotSwap: true
+  batteryCapacity: 4000
+  driver: AULA Driver
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://aulagear.com/products/aula-f75
+status: published
