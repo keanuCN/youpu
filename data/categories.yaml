@@ -3747,6 +3747,13 @@
         filter: false
         compare: true
         order: 40
+      - key: layout
+        label: 布局
+        group: 定位与结构
+        type: text
+        filter: false
+        compare: true
+        order: 45
       - key: connection
         label: 连接方式
         group: 连接与响应
@@ -3769,6 +3776,17 @@
         compare: true
         compareDirection: higher-better
         order: 60
+      - key: scanRate
+        label: 扫描率
+        group: 连接与响应
+        type: int
+        unit: Hz
+        min: 1000
+        max: 100000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 65
       - key: rapidTriggerPrecision
         label: RT 精度
         group: 连接与响应
@@ -3780,6 +3798,13 @@
         compare: true
         compareDirection: lower-better
         order: 70
+      - key: actuationRange
+        label: 触发范围
+        group: 连接与响应
+        type: text
+        filter: false
+        compare: true
+        order: 75
       - key: backlight
         label: 背光
         group: 自定义与灯效
@@ -3815,6 +3840,17 @@
         filter: false
         compare: true
         order: 110
+      - key: batteryCapacity
+        label: 电池容量
+        group: 续航与配件
+        type: int
+        unit: mAh
+        min: 0
+        max: 30000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 130
       - key: keycapMaterial
         label: 键帽材质
         group: 键帽与兼容

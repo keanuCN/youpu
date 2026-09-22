@@ -148,6 +148,13 @@
   official_url: https://www.akkogear.com
   description: 中国机械键盘与电竞外设品牌，产品覆盖磁轴键盘、机械键盘、键帽、鼠标和电竞耳机。
 
+- slug: monsgeek
+  name: MonsGeek
+  name_cn: 魔极客
+  country: CN
+  official_url: https://www.monsgeek.cn
+  description: 中国铝制机械键盘与磁轴电竞外设品牌，产品覆盖 M 系列、HE/TMR 磁轴键盘和键盘配件。
+
 - slug: canyon
   name: Canyon
   country: DE

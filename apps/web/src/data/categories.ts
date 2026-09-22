@@ -739,6 +739,7 @@ const ESPORTS_KEYBOARD: Category = {
         { key: "switchType", label: "轴体", type: "text", direction: null },
         { key: "mounting", label: "结构", type: "text", direction: null },
         { key: "caseMaterial", label: "外壳材质", type: "text", direction: null },
+        { key: "layout", label: "布局", type: "text", direction: null },
         { key: "keycapMaterial", label: "键帽材质", type: "text", direction: null },
       ],
     },
@@ -747,7 +748,9 @@ const ESPORTS_KEYBOARD: Category = {
       fields: [
         { key: "connection", label: "连接方式", type: "text", direction: null },
         { key: "pollingRate", label: "回报率", unit: " Hz", type: "number", direction: "higher" },
+        { key: "scanRate", label: "扫描率", unit: " Hz", type: "number", direction: "higher" },
         { key: "rapidTriggerPrecision", label: "RT 精度", unit: " mm", type: "number", direction: "lower" },
+        { key: "actuationRange", label: "触发范围", type: "text", direction: null },
       ],
     },
     {
@@ -759,6 +762,10 @@ const ESPORTS_KEYBOARD: Category = {
         { key: "quickRelease", label: "快拆结构", type: "text", direction: null },
         { key: "customScreen", label: "自定义屏幕", type: "text", direction: null },
       ],
+    },
+    {
+      group: "续航与配件",
+      fields: [{ key: "batteryCapacity", label: "电池容量", unit: " mAh", type: "number", direction: "higher" }],
     },
   ],
   filterTemplate: [

@@ -1,0 +1,29 @@
+slug: monsgeek-m2-v5-he-2026
+category: esports-keyboard
+brand: monsgeek
+model: M2 V5 HE
+year: 2026
+title: M2 V5 HE Fully Assembled - MonsGeek
+specs:
+  keyboardType: magnetic
+  switchType: Akko AstroAim / AstroLink
+  mounting: Gasket-mounted
+  caseMaterial: 铝合金
+  layout: 1800 / 98 键
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  pollingRate: 8000
+  scanRate: 32000
+  rapidTriggerPrecision: 0.005
+  actuationRange: 0.100–3.300mm
+  batteryCapacity: 8000
+  backlight: ARGB RGB 背光
+  driver: MonsGeek Driver & Web-Based Driver
+  quickRelease: true
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.monsgeek.com/keyboard/m2-v5-he-magnetic-switch-keyboard/
+status: published

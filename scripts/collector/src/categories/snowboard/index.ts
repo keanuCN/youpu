@@ -37,6 +37,7 @@ import { djiMicrophoneAdapter } from '../microphone/brands/dji';
 import { godoxVideoLightAdapter } from '../video-light/brands/godox';
 import { lexarMemoryCardAdapter } from '../memory-card/brands/lexar';
 import { akkoEsportsKeyboardAdapter } from '../esports-keyboard/brands/akko';
+import { monsgeekEsportsKeyboardAdapter } from '../esports-keyboard/brands/monsgeek';
 
 export interface ProductAdapter {
   name: string;
@@ -75,6 +76,7 @@ const adapters: ProductAdapter[] = [
   godoxVideoLightAdapter,
   lexarMemoryCardAdapter,
   akkoEsportsKeyboardAdapter,
+  monsgeekEsportsKeyboardAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,
