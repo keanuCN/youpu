@@ -3499,6 +3499,95 @@
   name: 磨豆机
   parent: coffee
   sort_order: 10
+  spec_schema:
+    fields:
+      - key: grinderType
+        label: 磨豆机类型
+        group: 产品定位
+        type: text
+        filter: false
+        compare: true
+        order: 10
+      - key: useRange
+        label: 适用冲煮方式
+        group: 产品定位
+        type: text
+        filter: false
+        compare: true
+        order: 20
+      - key: weight
+        label: 重量
+        group: 结构与便携
+        type: number
+        unit: g
+        min: 100
+        max: 30000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 30
+      - key: dimensions
+        label: 尺寸
+        group: 结构与便携
+        type: text
+        filter: false
+        compare: true
+        order: 40
+      - key: materials
+        label: 材质
+        group: 结构与便携
+        type: text
+        filter: false
+        compare: true
+        order: 50
+      - key: hopperCapacity
+        label: 豆仓容量
+        group: 容量与研磨
+        type: text
+        filter: false
+        compare: true
+        order: 60
+      - key: catchCupCapacity
+        label: 接粉罐容量
+        group: 容量与研磨
+        type: number
+        unit: g
+        min: 1
+        max: 1000
+        filter: range
+        compare: true
+        order: 70
+      - key: power
+        label: 功率
+        group: 电气参数
+        type: number
+        unit: W
+        min: 1
+        max: 3000
+        filter: range
+        compare: true
+        order: 80
+      - key: voltage
+        label: 电压
+        group: 电气参数
+        type: text
+        filter: false
+        compare: true
+        order: 90
+      - key: speedAdjustment
+        label: 可调研磨转速
+        group: 使用功能
+        type: bool
+        filter: false
+        compare: true
+        order: 100
+      - key: fineRetentionReduction
+        label: 降低残粉设计
+        group: 使用功能
+        type: bool
+        filter: false
+        compare: true
+        order: 110
 
 - slug: coffee-machine
   name: 咖啡机

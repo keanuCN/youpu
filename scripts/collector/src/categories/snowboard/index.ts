@@ -28,6 +28,7 @@ import { djiVideoCameraAdapter } from '../video-camera/brands/dji';
 import { insta360ActionCamAdapter } from '../action-cam/brands/insta360';
 import { insta360CameraAdapter } from '../camera/brands/insta360';
 import { amazfitSportsWatchAdapter } from '../sports-watch/brands/amazfit';
+import { timemoreGrinderAdapter } from '../grinder/brands/timemore';
 import { viltroxLensAdapter } from '../lens/brands/viltrox';
 import { nisiFilterAdapter } from '../filter/brands/nisi';
 import { siruiTripodAdapter } from '../tripod/brands/sirui';
@@ -64,6 +65,7 @@ const adapters: ProductAdapter[] = [
   insta360ActionCamAdapter,
   insta360CameraAdapter,
   amazfitSportsWatchAdapter,
+  timemoreGrinderAdapter,
   viltroxLensAdapter,
   nisiFilterAdapter,
   siruiTripodAdapter,

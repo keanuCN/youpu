@@ -139,6 +139,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门运动手表第一阶段目标见 `examples/domestic-hot-sports-watch-phase1-targets.json`。当前接入 Amazfit 台湾官方 T-Rex 3 Pro 产品页，按 48mm 规格区块提取屏幕、亮度、盖板、重量、防水、材质、电池、GNSS 续航、定位、离线导航、运动模式和传感器；同页的 44mm 规格不会混入 48mm seed。
 
+国内热门磨豆机第一阶段目标见 `examples/domestic-hot-grinder-phase1-targets.json`。当前接入泰摩 TIMEMORE 台湾官方 TEG078S 产品页，提取电动磨豆机定位、手冲 / 意式双用、重量、尺寸、材质、标准 / 加高豆仓容量、接粉罐容量、078S 功率、电压、转速调节和降残粉设计；同页 078 的 110 W 不会混入 078S。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

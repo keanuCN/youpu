@@ -134,6 +134,13 @@
   official_url: https://www.amazfit.com
   description: 华米旗下智能穿戴品牌，覆盖运动手表、户外手表和健康监测设备。
 
+- slug: timemore
+  name: TIMEMORE
+  name_cn: 泰摩
+  country: CN
+  official_url: https://www.timemore.com
+  description: 中国咖啡器具品牌，产品覆盖磨豆机、咖啡机、手冲壶和咖啡秤。
+
 - slug: canyon
   name: Canyon
   country: DE

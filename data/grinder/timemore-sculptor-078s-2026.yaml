@@ -1,0 +1,23 @@
+slug: timemore-sculptor-078s-2026
+category: grinder
+brand: timemore
+model: TEG078S
+year: 2026
+title: 【泰摩咖啡】電動磨豆機TEG078S-黑色(雕刻家系列-手沖/義式雙用) – 泰摩TIMEMORE臺灣官方網站
+specs:
+  grinderType: 电动磨豆机
+  useRange: 手冲 / 意式双用
+  weight: 6810
+  dimensions: 261mm × 118mm × 294mm
+  materials: 铝合金/不锈钢/Tritan材料
+  hopperCapacity: 标准豆仓约 20–30 g；加高豆仓约 100 g
+  catchCupCapacity: 60
+  power: 230
+  voltage: 110V
+  speedAdjustment: true
+  fineRetentionReduction: true
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.xn--14us3q.tw/products/泰摩咖啡-雕刻家078s-電動磨豆機-黑色
+status: published
