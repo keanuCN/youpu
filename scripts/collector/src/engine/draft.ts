@@ -111,9 +111,14 @@ function targetIdentityMatches(target: CrawlTarget, snapshot: PageSnapshot): boo
       .join(' '),
   );
   const searchableTokens = new Set(searchable.split(' '));
+  const compactSearchable = searchable.replace(/\s+/g, '');
   const identityCandidates = [target.model, ...(target.identityAliases ?? [])];
   return identityCandidates.some((candidate) => {
-    const modelTokens = normalizeSearchText(candidate).split(' ').filter((token) => token.length >= 2);
+    const normalizedCandidate = normalizeSearchText(candidate);
+    const compactCandidate = normalizedCandidate.replace(/\s+/g, '');
+    if (compactCandidate.length >= 2 && compactSearchable.includes(compactCandidate)) return true;
+
+    const modelTokens = normalizedCandidate.split(' ').filter((token) => token.length >= 2);
     return modelTokens.length > 0 && modelTokens.every((token) => searchableTokens.has(token));
   });
 }

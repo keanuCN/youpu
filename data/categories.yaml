@@ -2058,6 +2058,94 @@
   name: 相机
   parent: photography
   sort_order: 10
+  spec_schema:
+    fields:
+      - key: cameraType
+        label: 相机类型
+        group: 产品定位
+        type: text
+        filter: false
+        compare: true
+        order: 10
+      - key: cameraSensor
+        label: 影像传感器
+        group: 影像与画质
+        type: text
+        filter: false
+        compare: true
+        order: 20
+      - key: maxVideo
+        label: 最高视频规格
+        group: 影像与画质
+        type: text
+        filter: false
+        compare: true
+        order: 30
+      - key: maxPhoto
+        label: 最高照片规格
+        group: 影像与画质
+        type: text
+        filter: false
+        compare: true
+        order: 40
+      - key: stabilization
+        label: 防抖方式
+        group: 影像与画质
+        type: text
+        filter: false
+        compare: true
+        order: 50
+      - key: screenSize
+        label: 屏幕尺寸
+        group: 操作与显示
+        type: number
+        unit: 英寸
+        min: 0.5
+        max: 10
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 60
+      - key: batteryLife
+        label: 续航时间
+        group: 续航与便携
+        type: number
+        unit: min
+        min: 1
+        max: 2000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 70
+      - key: batteryCapacity
+        label: 电池容量
+        group: 续航与便携
+        type: number
+        unit: mAh
+        min: 100
+        max: 10000
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 80
+      - key: weight
+        label: 重量
+        group: 续航与便携
+        type: number
+        unit: g
+        min: 1
+        max: 5000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 90
+      - key: waterproof
+        label: 防水能力
+        group: 防护与连接
+        type: text
+        filter: false
+        compare: true
+        order: 100
 
 - slug: lens
   name: 镜头

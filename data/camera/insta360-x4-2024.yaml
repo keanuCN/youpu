@@ -1,0 +1,22 @@
+slug: insta360-x4-2024
+category: camera
+brand: insta360
+model: X4
+year: 2024
+title: 影石Insta360 X4-8K 全景运动相机
+specs:
+  cameraType: 360°全景相机
+  cameraSensor: 1/2 英寸
+  maxVideo: 8K/30fps/5.7K/60fps
+  maxPhoto: 72MP
+  stabilization: FlowState 防抖
+  screenSize: 2.5
+  batteryLife: 135
+  batteryCapacity: 2290
+  weight: 203
+  waterproof: 裸机 10 m 防水
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.insta360.com/product/insta360-x4
+status: published

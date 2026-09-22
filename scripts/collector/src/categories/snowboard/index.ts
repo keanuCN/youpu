@@ -25,6 +25,7 @@ import { tsurinoyaCastingRodAdapter } from '../casting-rod/brands/tsurinoya';
 import { djiDroneAdapter } from '../drone/brands/dji';
 import { igpsportBikeComputerAdapter } from '../bike-computer/brands/igpsport';
 import { djiVideoCameraAdapter } from '../video-camera/brands/dji';
+import { insta360CameraAdapter } from '../camera/brands/insta360';
 
 export interface ProductAdapter {
   name: string;
@@ -51,6 +52,7 @@ const adapters: ProductAdapter[] = [
   djiDroneAdapter,
   igpsportBikeComputerAdapter,
   djiVideoCameraAdapter,
+  insta360CameraAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,

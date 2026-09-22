@@ -119,6 +119,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门摄像第一阶段目标见 `examples/domestic-hot-video-camera-phase1-targets.json`。当前接入 DJI Osmo Pocket 3 官方技术参数页，从页面描述和 JSON-LD 提取 1 英寸 CMOS、4K/120fps、2 英寸屏幕、三轴机械云台增稳和横竖拍；续航、重量和收音未从当前静态页面确认，保持缺省。
 
+国内热门相机第一阶段目标见 `examples/domestic-hot-camera-phase1-targets.json`。当前接入影石 Insta360 X4 官方产品页，从页面正文和规格列表提取 360°全景相机、1/2 英寸传感器、8K/30fps 与 5.7K/60fps、72MP、FlowState 防抖、2.5 英寸屏幕、135 分钟续航、2290 mAh、203 g 和裸机 10 m 防水；身份闸门支持 `X4` 这类短型号的紧凑匹配。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
