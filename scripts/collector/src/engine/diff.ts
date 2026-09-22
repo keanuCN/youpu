@@ -115,7 +115,7 @@ export async function writeDiffReport(report: CrawlDiffReport): Promise<string> 
   return filePath;
 }
 
-async function loadProductArtifacts(outDir: string): Promise<Map<string, CrawlArtifact>> {
+export async function loadProductArtifacts(outDir: string): Promise<Map<string, CrawlArtifact>> {
   const rawDir = resolve(outDir, 'raw');
   let entries;
   try {
@@ -157,6 +157,7 @@ function isProductArtifact(value: unknown): value is CrawlArtifact {
     value.kind === 'product-crawl' &&
     isRecord(target) &&
     typeof target.slug === 'string' &&
+    /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(target.slug) &&
     isRecord(adapter) &&
     isRecord(adapter.normalizedSpecs) &&
     isRecord(page)

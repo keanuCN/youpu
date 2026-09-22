@@ -35,7 +35,7 @@ node C:\nvm4w\nodejs\node_modules\pnpm\bin\pnpm.mjs --filter @youpu/collector cr
 
 自动通过不会绕过 robots、型号身份、显式年份、字段范围或完整 schema 闸门；失败记录只保留在 `raw/`，不会写入正式 seed。
 
-`run-summary.json` 中的 `status` 为 `completed` 时，代表本批没有阻塞、质量失败、网络失败或自动通过失败；出现上述任一情况会标记为 `needs-review`。这个状态只表示批次结果，不替代对草稿、来源和图片授权的复核。
+`run-summary.json` 中的 `status` 为 `completed` 时，代表本批没有阻塞、质量失败、网络失败、自动通过失败或待复核的更新草稿；出现上述任一情况会标记为 `needs-review`。这个状态只表示批次结果，不替代对草稿、来源和图片授权的复核。
 
 成功采集的 raw artifact 还会写入两个稳定摘要：`rawContentHash` 用于判断页面快照是否变化，`normalizedSpecHash` 用于判断归一化规格是否变化。对象字段会排序后再计算摘要，避免同样的数据因字段顺序不同产生误报；传入上一批目录后即可基于这两个摘要生成字段级 diff。
 
@@ -49,6 +49,8 @@ pnpm --filter @youpu/collector crawl -- `
 ```
 
 当前批次会额外生成 `diff.json`：页面内容变化但归一化规格未变时只标记 `rawContentChanged`；规格字段变化时会列出新增、删除和修改的字段。上一批没有同 slug 记录的产品标记为 `new`，不会把本批没有请求的旧产品误判为下架。
+
+对于已有正式 seed 且规格发生变化的产品，还会生成 `updates/<slug>.yaml` 和 `updates/update-summary.json`。更新草稿是带来源、hash 和字段 diff 的复核 envelope，不会覆盖正式 seed；当前页面缺失的旧字段会保留，删除字段只记录到 `ignoredChanges`，避免一次不完整快照误删有效数据。
 
 ## 批量采集
 

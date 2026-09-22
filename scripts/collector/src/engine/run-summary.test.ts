@@ -70,3 +70,34 @@ test('marks blocked or quality-failed batches for review and writes JSON', async
     await rm(outputDir, { recursive: true, force: true });
   }
 });
+
+test('marks generated update drafts for review and includes their output paths', () => {
+  const summary = buildRunSummary({
+    startedAt: '2026-09-22T01:00:00.000Z',
+    finishedAt: '2026-09-22T01:00:01.000Z',
+    outDir: 'C:/tmp/crawl',
+    minIntervalMs: 2000,
+    autoApprove: false,
+    userAgent: 'youpu-collector/test',
+    targets: [target],
+    crawl,
+    comparison: {
+      previousOutDir: 'C:/tmp/crawl-previous',
+      diffPath: 'C:/tmp/crawl/diff.json',
+      updateSummaryPath: 'C:/tmp/crawl/updates/update-summary.json',
+      updateDraftPaths: ['C:/tmp/crawl/updates/naturehike-star-river-2-2026.yaml'],
+      updateDrafts: { generated: 1, skipped: 0, failed: 0 },
+      new: 0,
+      changed: 1,
+      unchanged: 0,
+    },
+  });
+
+  assert.equal(summary.status, 'needs-review');
+  assert.deepEqual(summary.outputPaths, [
+    ...crawl.outputs,
+    'C:/tmp/crawl/diff.json',
+    'C:/tmp/crawl/updates/update-summary.json',
+    'C:/tmp/crawl/updates/naturehike-star-river-2-2026.yaml',
+  ]);
+});

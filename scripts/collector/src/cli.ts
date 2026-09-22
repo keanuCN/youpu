@@ -2,9 +2,10 @@ import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { runCrawl } from './engine/crawler';
 import { approveDrafts } from './engine/approval';
-import { findRepositoryRoot, resolveOutputDir } from './engine/paths';
+import { findRepositoryRoot, resolveDataDir, resolveOutputDir } from './engine/paths';
 import { buildRunSummary, writeRunSummary } from './engine/run-summary';
 import { compareRawRuns, writeDiffReport } from './engine/diff';
+import { generateUpdateDrafts, writeUpdateDraftReport } from './engine/update-draft';
 import { crawlTargetSchema, type CrawlTarget, type CrawlMode } from './engine/types';
 
 const DEFAULT_USER_AGENT = 'youpu-collector/0.1 (+https://xiaopang.club/)';
@@ -43,7 +44,11 @@ async function main(): Promise<void> {
   });
 
   const comparison = args.previousOutDir
-    ? await buildComparison(outDir, resolveOutputDir(args.previousOutDir, repositoryRoot))
+    ? await buildComparison(
+        outDir,
+        resolveOutputDir(args.previousOutDir, repositoryRoot),
+        resolveDataDir(args.dataDir, repositoryRoot),
+      )
     : undefined;
 
   const approval = args.autoApprove
@@ -121,12 +126,22 @@ function parseArgs(argv: string[]): CliArgs {
 async function buildComparison(
   currentOutDir: string,
   previousOutDir: string,
+  dataDir: string,
 ): Promise<NonNullable<Awaited<ReturnType<typeof buildRunSummary>>['comparison']>> {
   const report = await compareRawRuns(currentOutDir, previousOutDir);
   const diffPath = await writeDiffReport(report);
+  const updateReport = await generateUpdateDrafts({ diff: report, dataDir });
+  const updateSummaryPath = await writeUpdateDraftReport(updateReport);
   return {
     previousOutDir,
     diffPath,
+    updateSummaryPath,
+    updateDraftPaths: updateReport.outputs,
+    updateDrafts: {
+      generated: updateReport.generated,
+      skipped: updateReport.skipped,
+      failed: updateReport.failed,
+    },
     new: report.new,
     changed: report.changed,
     unchanged: report.unchanged,

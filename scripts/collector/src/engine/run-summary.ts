@@ -33,6 +33,13 @@ export interface CollectorRunSummary {
   comparison?: {
     previousOutDir: string;
     diffPath: string;
+    updateSummaryPath: string;
+    updateDraftPaths: string[];
+    updateDrafts: {
+      generated: number;
+      skipped: number;
+      failed: number;
+    };
     new: number;
     changed: number;
     unchanged: number;
@@ -61,7 +68,9 @@ export function buildRunSummary(input: BuildRunSummaryInput): CollectorRunSummar
     input.crawl.blocked > 0 ||
     input.crawl.qualityFailed > 0 ||
     input.crawl.failed > 0 ||
-    (input.approval?.failed ?? 0) > 0;
+    (input.approval?.failed ?? 0) > 0 ||
+    (input.comparison?.updateDrafts.generated ?? 0) > 0 ||
+    (input.comparison?.updateDrafts.failed ?? 0) > 0;
 
   return {
     schemaVersion: 1,
@@ -95,7 +104,9 @@ export function buildRunSummary(input: BuildRunSummaryInput): CollectorRunSummar
       ...new Set([
         ...input.crawl.outputs,
         ...(input.approval?.outputs ?? []),
-        ...(input.comparison ? [input.comparison.diffPath] : []),
+        ...(input.comparison
+          ? [input.comparison.diffPath, input.comparison.updateSummaryPath, ...input.comparison.updateDraftPaths]
+          : []),
       ]),
     ],
   };
