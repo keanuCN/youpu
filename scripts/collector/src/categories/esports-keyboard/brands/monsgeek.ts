@@ -4,7 +4,11 @@ export const monsgeekEsportsKeyboardAdapter = {
   name: 'esports-keyboard/monsgeek',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'monsgeek';
+    return (
+      target.category === 'esports-keyboard' &&
+      target.brand === 'monsgeek' &&
+      /M2 V5 HE/i.test(target.model)
+    );
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {

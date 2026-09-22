@@ -1,0 +1,26 @@
+slug: monsgeek-m2-v5-via-2026
+category: esports-keyboard
+brand: monsgeek
+model: M2 V5 VIA
+year: 2026
+title: M2 V5 VIA - MonsGeek
+specs:
+  keyboardType: mechanical
+  switchType: Akko Cilantro / Akko Mirror / Akko Stellar Rose
+  mounting: Gasket-mounted
+  caseMaterial: 铝合金
+  layout: ANSI / 1800 紧凑布局
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: RGB 背光
+  driver: VIA
+  hotSwap: true
+  quickRelease: true
+  batteryCapacity: 8000
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.monsgeek.com/product/monsgeek-m2-v5-via-mechanical-keyboard/
+status: published

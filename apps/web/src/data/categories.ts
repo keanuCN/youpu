@@ -773,7 +773,10 @@ const ESPORTS_KEYBOARD: Category = {
       key: "brands",
       label: "品牌",
       control: "multi",
-      options: [{ value: "Akko", label: "Akko" }],
+      options: [
+        { value: "Akko", label: "Akko" },
+        { value: "MonsGeek", label: "MonsGeek" },
+      ],
     },
     { key: "price", label: "价格", control: "price", min: 0, max: 3000, step: 100 },
     { key: "years", label: "年份", control: "multi", options: [{ value: "2026", label: "2026" }] },
