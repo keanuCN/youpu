@@ -2257,6 +2257,64 @@
   name: 滤镜
   parent: photography
   sort_order: 30
+  spec_schema:
+    fields:
+      - key: filterType
+        label: 滤镜类型
+        group: 产品定位
+        type: text
+        filter: false
+        compare: true
+        order: 10
+      - key: diameterOptions
+        label: 可选口径
+        group: 兼容与规格
+        type: text
+        filter: false
+        compare: true
+        order: 20
+      - key: material
+        label: 偏振材料
+        group: 光学与成像
+        type: text
+        filter: false
+        compare: true
+        order: 30
+      - key: coating
+        label: 镀膜
+        group: 光学与成像
+        type: text
+        filter: false
+        compare: true
+        order: 40
+      - key: colorNeutral
+        label: 色彩中性
+        group: 光学与成像
+        type: bool
+        filter: false
+        compare: true
+        order: 50
+      - key: waterOilResistance
+        label: 防水防油
+        group: 耐用与防护
+        type: bool
+        filter: false
+        compare: true
+        order: 60
+      - key: edgeBlackening
+        label: 边缘涂黑
+        group: 耐用与防护
+        type: bool
+        filter: false
+        compare: true
+        order: 70
+      - key: frameOptions
+        label: 镜框选项
+        group: 结构与操控
+        type: text
+        filter: false
+        compare: true
+        order: 80
 
 - slug: tripod
   name: 三脚架

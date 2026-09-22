@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "nisi-true-color-cpl-2022",
+    "category": "filter",
+    "brand": "nisi",
+    "model": "TRUE COLOR CPL",
+    "identityAliases": ["TRUE COLOR 色彩保真CPL", "NiSi TRUE COLOR CPL"],
+    "year": 2022,
+    "url": "https://www.nisioptics.com/true-color-cpl",
+    "mode": "cheerio"
+  }
+]

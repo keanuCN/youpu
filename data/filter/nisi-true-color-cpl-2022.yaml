@@ -1,0 +1,20 @@
+slug: nisi-true-color-cpl-2022
+category: filter
+brand: nisi
+model: TRUE COLOR CPL
+year: 2022
+title: TRUE COLOR 色彩保真CPL – NiSi 耐司-专业电影及相机光学镜头滤镜品牌 %
+specs:
+  filterType: CPL 偏振镜
+  diameterOptions: 40.5 / 43 / 46 / 49 / 52 / 55 / 58 / 62 / 67 / 72 / 77 / 82 / 95 mm
+  material: True Color 偏振材料
+  coating: 双面低反射纳米镀膜
+  colorNeutral: true
+  waterOilResistance: true
+  edgeBlackening: true
+  frameOptions: 标准框 / 铜框
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.nisioptics.com/true-color-cpl
+status: published

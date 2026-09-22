@@ -123,6 +123,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门镜头第一阶段目标见 `examples/domestic-hot-lens-phase1-targets.json`。当前接入 Viltrox 唯卓仕 AF 56mm F1.2 Pro XF 官方商店产品页，从页面正文、规格列表和 JSON-LD 提取 X-mount 卡口、56 mm 焦距、85 mm 等效焦距、F1.2 最大光圈、13/8 光学结构、0.5 m 最近对焦、0.13x 放大倍率、自动对焦、67 mm 滤镜口径、575 g 重量和全天候防护；未合并其他卡口版本。
 
+国内热门滤镜第一阶段目标见 `examples/domestic-hot-filter-phase1-targets.json`。当前接入 NiSi 耐司 TRUE COLOR 色彩保真 CPL 官方中文产品页，从标题、正文和 JSON-LD 提取 CPL 偏振镜、40.5–95 mm 可选口径、True Color 偏振材料、双面低反射纳米镀膜、色彩中性、防水防油、边缘涂黑和标准框 / 铜框选项；可选口径不合并铜框版本额外的 105 mm。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
