@@ -1,0 +1,28 @@
+slug: insta360-x5-2026
+category: action-cam
+brand: insta360
+model: X5
+year: 2026
+title: 影石Insta360 X5 — 8K 旗舰款全景运动相机
+specs:
+  cameraType: action
+  sensor: 1/1.28 英寸传感器
+  maxVideo: 8K/30fps
+  maxFrameRate: 120
+  maxPhoto: 72MP
+  fov: 360°
+  stabilization: FlowState 防抖 + 360° 水平矫正
+  waterproofDepth: 15
+  weight: 200
+  batteryLife: 208
+  storage: microSD支持 UHS-I V30 或更高
+  scenes:
+    - cycling
+    - motorcycle
+    - skiing
+    - diving
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.insta360.com/product/insta360-x5
+status: published

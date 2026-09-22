@@ -25,6 +25,7 @@ import { tsurinoyaCastingRodAdapter } from '../casting-rod/brands/tsurinoya';
 import { djiDroneAdapter } from '../drone/brands/dji';
 import { igpsportBikeComputerAdapter } from '../bike-computer/brands/igpsport';
 import { djiVideoCameraAdapter } from '../video-camera/brands/dji';
+import { insta360ActionCamAdapter } from '../action-cam/brands/insta360';
 import { insta360CameraAdapter } from '../camera/brands/insta360';
 import { viltroxLensAdapter } from '../lens/brands/viltrox';
 import { nisiFilterAdapter } from '../filter/brands/nisi';
@@ -59,6 +60,7 @@ const adapters: ProductAdapter[] = [
   djiDroneAdapter,
   igpsportBikeComputerAdapter,
   djiVideoCameraAdapter,
+  insta360ActionCamAdapter,
   insta360CameraAdapter,
   viltroxLensAdapter,
   nisiFilterAdapter,

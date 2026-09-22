@@ -135,6 +135,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门存储卡第一阶段目标见 `examples/domestic-hot-memory-card-phase1-targets.json`。当前接入 Lexar 雷克沙 Professional 1066x SDXC UHS-I SILVER 系列官方中文产品页，从正文和 JSON-LD 提取 SDXC / UHS-I、64GB–1TB 容量、160 MB/s 读取速度、按容量区分的写入速度、Class 10/U3/V30、4K 视频支持、尺寸、温度、防护和质保；不把不同容量的写入速度合并。
 
+国内热门运动相机第一阶段目标见 `examples/domestic-hot-action-cam-phase1-targets.json`。当前接入影石 Insta360 X5 官方中文产品页，从正文提取 1/1.28 英寸传感器、8K/30fps、最高帧率、7200 万像素、360° 视场、FlowState 防抖、15 m 裸机防水、200 g、208 分钟续航、microSD 和适用场景；页面内的 X6 对比栏不会混入 X5 seed。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
