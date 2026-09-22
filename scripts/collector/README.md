@@ -37,7 +37,18 @@ node C:\nvm4w\nodejs\node_modules\pnpm\bin\pnpm.mjs --filter @youpu/collector cr
 
 `run-summary.json` 中的 `status` 为 `completed` 时，代表本批没有阻塞、质量失败、网络失败或自动通过失败；出现上述任一情况会标记为 `needs-review`。这个状态只表示批次结果，不替代对草稿、来源和图片授权的复核。
 
-成功采集的 raw artifact 还会写入两个稳定摘要：`rawContentHash` 用于判断页面快照是否变化，`normalizedSpecHash` 用于判断归一化规格是否变化。对象字段会排序后再计算摘要，避免同样的数据因字段顺序不同产生误报；下一步再基于这两个摘要生成字段级 diff。
+成功采集的 raw artifact 还会写入两个稳定摘要：`rawContentHash` 用于判断页面快照是否变化，`normalizedSpecHash` 用于判断归一化规格是否变化。对象字段会排序后再计算摘要，避免同样的数据因字段顺序不同产生误报；传入上一批目录后即可基于这两个摘要生成字段级 diff。
+
+对同一批目标做增量复核时，可以传入上一批输出目录：
+
+```powershell
+pnpm --filter @youpu/collector crawl -- `
+  --target-file scripts/collector/examples/tent-phase1-targets.json `
+  --out-dir data/tmp/collector-tent-next `
+  --previous-out-dir data/tmp/collector-tent-previous
+```
+
+当前批次会额外生成 `diff.json`：页面内容变化但归一化规格未变时只标记 `rawContentChanged`；规格字段变化时会列出新增、删除和修改的字段。上一批没有同 slug 记录的产品标记为 `new`，不会把本批没有请求的旧产品误判为下架。
 
 ## 批量采集
 

@@ -4,6 +4,7 @@ import { runCrawl } from './engine/crawler';
 import { approveDrafts } from './engine/approval';
 import { findRepositoryRoot, resolveOutputDir } from './engine/paths';
 import { buildRunSummary, writeRunSummary } from './engine/run-summary';
+import { compareRawRuns, writeDiffReport } from './engine/diff';
 import { crawlTargetSchema, type CrawlTarget, type CrawlMode } from './engine/types';
 
 const DEFAULT_USER_AGENT = 'youpu-collector/0.1 (+https://xiaopang.club/)';
@@ -23,6 +24,7 @@ interface CliArgs {
   dataDir?: string;
   minIntervalMs: number;
   autoApprove: boolean;
+  previousOutDir?: string;
 }
 
 async function main(): Promise<void> {
@@ -40,6 +42,10 @@ async function main(): Promise<void> {
     autoSelectRepresentativeSize: args.autoApprove,
   });
 
+  const comparison = args.previousOutDir
+    ? await buildComparison(outDir, resolveOutputDir(args.previousOutDir, repositoryRoot))
+    : undefined;
+
   const approval = args.autoApprove
     ? await approveDrafts(summary.draftPaths, { dataDir: args.dataDir, status: 'published' })
     : undefined;
@@ -56,10 +62,11 @@ async function main(): Promise<void> {
     targets,
     crawl: summary,
     approval,
+    comparison,
   });
   const runSummaryPath = await writeRunSummary(runSummary);
 
-  console.log(JSON.stringify(approval ? { crawl: summary, approval, runSummaryPath } : { ...summary, runSummaryPath }, null, 2));
+  console.log(JSON.stringify(approval ? { crawl: summary, approval, comparison, runSummaryPath } : { ...summary, comparison, runSummaryPath }, null, 2));
   if (
     summary.failed > 0 ||
     summary.blocked > 0 ||
@@ -107,6 +114,22 @@ function parseArgs(argv: string[]): CliArgs {
     dataDir: values.get('data-dir'),
     minIntervalMs,
     autoApprove: values.has('auto-approve'),
+    previousOutDir: values.get('previous-out-dir'),
+  };
+}
+
+async function buildComparison(
+  currentOutDir: string,
+  previousOutDir: string,
+): Promise<NonNullable<Awaited<ReturnType<typeof buildRunSummary>>['comparison']>> {
+  const report = await compareRawRuns(currentOutDir, previousOutDir);
+  const diffPath = await writeDiffReport(report);
+  return {
+    previousOutDir,
+    diffPath,
+    new: report.new,
+    changed: report.changed,
+    unchanged: report.unchanged,
   };
 }
 
