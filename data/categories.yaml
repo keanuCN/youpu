@@ -3295,6 +3295,146 @@
   name: 运动手表
   parent: running
   sort_order: 20
+  spec_schema:
+    fields:
+      - key: watchType
+        label: 手表类型
+        group: 产品定位
+        type: text
+        filter: false
+        compare: true
+        order: 10
+      - key: caseSize
+        label: 表壳尺寸
+        group: 结构与屏幕
+        type: text
+        filter: false
+        compare: true
+        order: 20
+      - key: displaySize
+        label: 屏幕尺寸
+        group: 结构与屏幕
+        type: number
+        unit: 英寸
+        min: 0.5
+        max: 3
+        filter: range
+        compare: true
+        order: 30
+      - key: displayType
+        label: 屏幕类型
+        group: 结构与屏幕
+        type: text
+        filter: false
+        compare: true
+        order: 40
+      - key: peakBrightness
+        label: 峰值亮度
+        group: 结构与屏幕
+        type: number
+        unit: nits
+        min: 100
+        max: 10000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 50
+      - key: displayGlass
+        label: 屏幕盖板
+        group: 结构与屏幕
+        type: text
+        filter: false
+        compare: true
+        order: 60
+      - key: weight
+        label: 重量
+        group: 结构与耐候
+        type: number
+        unit: g
+        min: 20
+        max: 300
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 70
+      - key: waterResistance
+        label: 防水等级
+        group: 结构与耐候
+        type: number
+        unit: ATM
+        min: 1
+        max: 20
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 80
+      - key: materials
+        label: 机身材质
+        group: 结构与耐候
+        type: text
+        filter: false
+        compare: true
+        order: 90
+      - key: batteryCapacity
+        label: 电池容量
+        group: 续航与定位
+        type: int
+        unit: mAh
+        min: 50
+        max: 2000
+        filter: range
+        compare: true
+        order: 100
+      - key: batteryLife
+        label: 日常续航
+        group: 续航与定位
+        type: number
+        unit: 天
+        min: 1
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 110
+      - key: gnssBatteryLife
+        label: GNSS 最高续航
+        group: 续航与定位
+        type: number
+        unit: h
+        min: 1
+        max: 300
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 120
+      - key: positioning
+        label: 定位系统
+        group: 续航与定位
+        type: text
+        filter: false
+        compare: true
+        order: 130
+      - key: offlineNavigation
+        label: 离线地图与导航
+        group: 运动功能
+        type: bool
+        filter: false
+        compare: true
+        order: 140
+      - key: sportsModes
+        label: 运动模式
+        group: 运动功能
+        type: text
+        filter: false
+        compare: true
+        order: 150
+      - key: healthSensors
+        label: 健康与运动传感器
+        group: 健康监测
+        type: text
+        filter: false
+        compare: true
+        order: 160
 
 - slug: heart-rate-monitor
   name: 心率带

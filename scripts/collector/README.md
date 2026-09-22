@@ -137,6 +137,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门运动相机第一阶段目标见 `examples/domestic-hot-action-cam-phase1-targets.json`。当前接入影石 Insta360 X5 官方中文产品页，从正文提取 1/1.28 英寸传感器、8K/30fps、最高帧率、7200 万像素、360° 视场、FlowState 防抖、15 m 裸机防水、200 g、208 分钟续航、microSD 和适用场景；页面内的 X6 对比栏不会混入 X5 seed。
 
+国内热门运动手表第一阶段目标见 `examples/domestic-hot-sports-watch-phase1-targets.json`。当前接入 Amazfit 台湾官方 T-Rex 3 Pro 产品页，按 48mm 规格区块提取屏幕、亮度、盖板、重量、防水、材质、电池、GNSS 续航、定位、离线导航、运动模式和传感器；同页的 44mm 规格不会混入 48mm seed。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

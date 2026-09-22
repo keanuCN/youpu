@@ -127,6 +127,13 @@
   official_url: https://www.insta360.com
   description: 影像品牌，运动相机产品覆盖 Ace Pro 旗舰机型和 GO 系列拇指相机。
 
+- slug: amazfit
+  name: Amazfit
+  name_cn: 华米 Amazfit
+  country: CN
+  official_url: https://www.amazfit.com
+  description: 华米旗下智能穿戴品牌，覆盖运动手表、户外手表和健康监测设备。
+
 - slug: canyon
   name: Canyon
   country: DE

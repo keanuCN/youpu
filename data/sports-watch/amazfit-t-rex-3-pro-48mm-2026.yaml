@@ -1,0 +1,28 @@
+slug: amazfit-t-rex-3-pro-48mm-2026
+category: sports-watch
+brand: amazfit
+model: T-Rex 3 Pro 48mm
+year: 2026
+title: T-Rex 3 PRO 五級鈦合金智慧手錶
+specs:
+  watchType: 户外运动智能手表
+  caseSize: 48mm
+  displaySize: 1.5
+  displayType: AMOLED
+  peakBrightness: 3000
+  displayGlass: 蓝宝石镜面玻璃
+  weight: 75
+  waterResistance: 10
+  materials: 表壳-纤维增强聚合物 表圈与按键：5级钛合金
+  batteryCapacity: 700
+  batteryLife: 25
+  gnssBatteryLife: 116
+  positioning: 双频六星定位系统（GPS、GLONASS、GALILEO、BDS、QZSS、NAVIC）圆极化GNSS天线技术
+  offlineNavigation: true
+  sportsModes: 180+
+  healthSensors: BioTracker™ 6.0 PPG 生物识别传感器 (5PD+2LED)
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://tw.amazfit.com/products/trex3pro
+status: published
