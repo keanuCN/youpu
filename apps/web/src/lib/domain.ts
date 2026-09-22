@@ -531,6 +531,11 @@ export function formatSpecValue(value: unknown): string {
   if (typeof value !== "string") return String(value);
   const text = value.trim();
   const knownLabels: Record<string, string> = {
+    wired: "有线",
+    "2.4g": "2.4G 无线",
+    bluetooth: "蓝牙",
+    magnetic: "磁轴",
+    mechanical: "机械轴",
     race: "综合竞赛",
     aero: "空力竞赛",
     endurance: "耐力长途",
@@ -551,7 +556,9 @@ export function formatSpecValue(value: unknown): string {
     try {
       const parsed: unknown = JSON.parse(text);
       if (Array.isArray(parsed)) {
-        return parsed.map((item) => (typeof item === "string" ? sceneLabel(item) : String(item))).join(" · ");
+        return parsed
+          .map((item) => (typeof item === "string" ? knownLabels[item] ?? sceneLabel(item) : String(item)))
+          .join(" · ");
       }
     } catch {
       // 保留原文，避免单条脏数据阻断整个参数表。

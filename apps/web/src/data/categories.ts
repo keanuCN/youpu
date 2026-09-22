@@ -723,6 +723,71 @@ const BADMINTON_RACKET: Category = {
   hardcoreWeights: {},
 };
 
+const ESPORTS_KEYBOARD: Category = {
+  slug: "esports-keyboard",
+  name: "电竞键盘",
+  nameEn: "Gaming Keyboards",
+  path: ["游戏电竞", "电竞外设"],
+  status: "live",
+  issue: "No.01 / 电竞键盘档案",
+  priceCurrency: "CNY",
+  specTemplate: [
+    {
+      group: "定位与结构",
+      fields: [
+        { key: "keyboardType", label: "键盘类型", type: "text", direction: null },
+        { key: "switchType", label: "轴体", type: "text", direction: null },
+        { key: "mounting", label: "结构", type: "text", direction: null },
+        { key: "caseMaterial", label: "外壳材质", type: "text", direction: null },
+        { key: "keycapMaterial", label: "键帽材质", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "连接与响应",
+      fields: [
+        { key: "connection", label: "连接方式", type: "text", direction: null },
+        { key: "pollingRate", label: "回报率", unit: " Hz", type: "number", direction: "higher" },
+        { key: "rapidTriggerPrecision", label: "RT 精度", unit: " mm", type: "number", direction: "lower" },
+      ],
+    },
+    {
+      group: "自定义与灯效",
+      fields: [
+        { key: "backlight", label: "背光", type: "text", direction: null },
+        { key: "driver", label: "驱动方式", type: "text", direction: null },
+        { key: "hotSwap", label: "热插拔", type: "text", direction: null },
+        { key: "quickRelease", label: "快拆结构", type: "text", direction: null },
+        { key: "customScreen", label: "自定义屏幕", type: "text", direction: null },
+      ],
+    },
+  ],
+  filterTemplate: [
+    {
+      key: "brands",
+      label: "品牌",
+      control: "multi",
+      options: [{ value: "Akko", label: "Akko" }],
+    },
+    { key: "price", label: "价格", control: "price", min: 0, max: 3000, step: 100 },
+    { key: "years", label: "年份", control: "multi", options: [{ value: "2026", label: "2026" }] },
+  ],
+  scoreDims: [
+    { key: "response", label: "响应表现", weight: 0.3 },
+    { key: "customization", label: "可玩性", weight: 0.2 },
+    { key: "build", label: "结构做工", weight: 0.2 },
+    { key: "connection", label: "连接体验", weight: 0.15 },
+    { key: "value", label: "性价比", weight: 0.15 },
+  ],
+  rankCategories: [
+    { key: "overall", label: "综合榜" },
+    { key: "response", label: "响应榜" },
+    { key: "customization", label: "可玩性榜" },
+    { key: "value", label: "性价比" },
+  ],
+  quizTemplate: [],
+  hardcoreWeights: {},
+};
+
 export const CASTING_ROD_SCORE_DIMS = [
   { key: "sensitivity", label: "灵敏度", weight: 0.2 },
   { key: "casting", label: "抛投表现", weight: 0.18 },
@@ -1143,6 +1208,7 @@ const FLAT: Record<string, Category> = {
   "action-cam": ACTION_CAM,
   "road-bike": ROAD_BIKE,
   mtb: MTB,
+  "esports-keyboard": ESPORTS_KEYBOARD,
 };
 
 function walk(nodes: CategoryNode[]): void {
