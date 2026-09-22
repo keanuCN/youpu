@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "dji-osmo-mobile-7p-2026",
+    "category": "gimbal",
+    "brand": "dji",
+    "model": "Osmo Mobile 7P",
+    "identityAliases": ["DJI Osmo Mobile 7P", "大疆 Osmo Mobile 7P"],
+    "year": 2026,
+    "url": "https://www.dji.com/cn/osmo-mobile-7-series/specs",
+    "mode": "cheerio"
+  }
+]

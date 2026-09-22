@@ -1,0 +1,29 @@
+slug: dji-osmo-mobile-7p-2026
+category: gimbal
+brand: dji
+model: Osmo Mobile 7P
+year: 2026
+title: Osmo Mobile 7 系列 - 技术参数 - DJI 大疆创新
+specs:
+  gimbalType: 手机稳定器
+  stabilization: 三轴云台增稳
+  tracking: 智能跟随 7.0
+  trackingModule: 多功能追踪模块（标配）
+  weight: 368
+  batteryCapacity: 3350
+  workingTime: 10
+  chargingTime: 2.5
+  chargingPort: USB-C
+  phoneWeightRange: 170 克至 300 克
+  phoneThicknessRange: 6.9 毫米至 10 毫米
+  phoneWidthRange: 67 毫米至 84 毫米
+  extensionRodLength: 215
+  builtInTripod: true
+  controlSpeed: 120
+  fillLightIlluminance: 40
+  fillLightColorTemperature: 2500 K 至 6000 K
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.dji.com/cn/osmo-mobile-7-series/specs
+status: published

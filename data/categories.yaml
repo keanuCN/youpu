@@ -2522,6 +2522,151 @@
   name: 稳定器
   parent: videography
   sort_order: 30
+  spec_schema:
+    fields:
+      - key: gimbalType
+        label: 稳定器类型
+        group: 产品定位
+        type: text
+        filter: false
+        compare: true
+        order: 10
+      - key: stabilization
+        label: 增稳方式
+        group: 稳定与跟拍
+        type: text
+        filter: false
+        compare: true
+        order: 20
+      - key: tracking
+        label: 跟拍能力
+        group: 稳定与跟拍
+        type: text
+        filter: false
+        compare: true
+        order: 30
+      - key: trackingModule
+        label: 追踪模块
+        group: 稳定与跟拍
+        type: text
+        filter: false
+        compare: true
+        order: 40
+      - key: weight
+        label: 重量
+        group: 续航与便携
+        type: number
+        unit: g
+        min: 1
+        max: 5000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 50
+      - key: batteryCapacity
+        label: 电池容量
+        group: 续航与充电
+        type: number
+        unit: mAh
+        min: 1
+        max: 10000
+        filter: range
+        compare: true
+        order: 60
+      - key: workingTime
+        label: 工作时间
+        group: 续航与充电
+        type: number
+        unit: h
+        min: 0.1
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 70
+      - key: chargingTime
+        label: 充电时间
+        group: 续航与充电
+        type: number
+        unit: h
+        min: 0.1
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 80
+      - key: chargingPort
+        label: 充电接口
+        group: 续航与充电
+        type: text
+        filter: false
+        compare: true
+        order: 90
+      - key: phoneWeightRange
+        label: 适用手机重量
+        group: 兼容与规格
+        type: text
+        filter: false
+        compare: true
+        order: 100
+      - key: phoneThicknessRange
+        label: 适用手机厚度
+        group: 兼容与规格
+        type: text
+        filter: false
+        compare: true
+        order: 110
+      - key: phoneWidthRange
+        label: 适用手机宽度
+        group: 兼容与规格
+        type: text
+        filter: false
+        compare: true
+        order: 120
+      - key: extensionRodLength
+        label: 延长杆最大长度
+        group: 结构与便携
+        type: number
+        unit: mm
+        min: 1
+        max: 1000
+        filter: range
+        compare: true
+        order: 130
+      - key: builtInTripod
+        label: 内置三脚架
+        group: 结构与便携
+        type: bool
+        filter: false
+        compare: true
+        order: 140
+      - key: controlSpeed
+        label: 最大控制转速
+        group: 稳定与跟拍
+        type: number
+        unit: °/s
+        min: 1
+        max: 1000
+        filter: range
+        compare: true
+        order: 150
+      - key: fillLightIlluminance
+        label: 补光灯照度
+        group: 稳定与跟拍
+        type: number
+        unit: lux
+        min: 1
+        max: 10000
+        filter: range
+        compare: true
+        order: 160
+      - key: fillLightColorTemperature
+        label: 补光灯色温
+        group: 稳定与跟拍
+        type: text
+        filter: false
+        compare: true
+        order: 170
 
 - slug: video-light
   name: 补光灯

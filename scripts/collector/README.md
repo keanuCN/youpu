@@ -127,6 +127,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门三脚架第一阶段目标见 `examples/domestic-hot-tripod-phase1-targets.json`。当前接入 SIRUI 思锐 T-S 系列官方产品页，按型号规格块提取 T-1204SK 的碳纤维材质、兼容云台、4 节脚管、管径、高度、独脚架转换高度、1.2 kg 重量和 12 kg 承重；同页其他型号不会混入目标数据，中文规格标签和英文规格标签均可解析。
 
+国内热门稳定器第一阶段目标见 `examples/domestic-hot-gimbal-phase1-targets.json`。当前接入 DJI 大疆 Osmo Mobile 7 系列官方技术参数页，按型号文本提取 Osmo Mobile 7P 的手机稳定器类型、三轴云台、智能跟随 7.0、追踪模块、368 g 重量、3350 mAh 电池、10 小时工作时间、兼容手机范围、215 mm 延长杆、内置三脚架和补光灯参数；同页 Osmo Mobile 7 的型号级参数不会混入。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
