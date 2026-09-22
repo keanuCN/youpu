@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "sirui-t-1204sk-2026",
+    "category": "tripod",
+    "brand": "sirui",
+    "model": "T-1204SK",
+    "identityAliases": ["SIRUI T-1204SK", "思锐 T-1204SK"],
+    "year": 2026,
+    "url": "https://www.sirui.com/index/tpl/producttripodts.html",
+    "mode": "cheerio"
+  }
+]

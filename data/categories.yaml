@@ -2320,6 +2320,118 @@
   name: 三脚架
   parent: photography
   sort_order: 40
+  spec_schema:
+    fields:
+      - key: material
+        label: 材质
+        group: 结构与便携
+        type: text
+        filter: false
+        compare: true
+        order: 10
+      - key: compatibleBallHead
+        label: 兼容云台
+        group: 兼容与规格
+        type: text
+        filter: false
+        compare: true
+        order: 20
+      - key: sections
+        label: 脚管节数
+        group: 结构与便携
+        type: number
+        unit: 节
+        filter: range
+        compare: true
+        order: 30
+      - key: tubeMaxDiameter
+        label: 管径上限
+        group: 结构与便携
+        type: number
+        unit: mm
+        filter: range
+        compare: true
+        order: 40
+      - key: tubeMinDiameter
+        label: 管径下限
+        group: 结构与便携
+        type: number
+        unit: mm
+        filter: range
+        compare: true
+        order: 50
+      - key: minHeight
+        label: 最低高度
+        group: 高度与承重
+        type: number
+        unit: mm
+        filter: range
+        compare: true
+        order: 60
+      - key: maxHeight
+        label: 最大高度
+        group: 高度与承重
+        type: number
+        unit: mm
+        filter: range
+        compare: true
+        order: 70
+      - key: maxHeightExtended
+        label: 最大延伸高度
+        group: 高度与承重
+        type: number
+        unit: mm
+        filter: range
+        compare: true
+        order: 80
+      - key: retractedHeight
+        label: 收起高度
+        group: 高度与承重
+        type: number
+        unit: mm
+        filter: range
+        compare: true
+        order: 90
+      - key: foldedHeight
+        label: 折叠高度
+        group: 高度与承重
+        type: number
+        unit: mm
+        filter: range
+        compare: true
+        order: 100
+      - key: monopodMaxHeight
+        label: 独脚架最高高度
+        group: 高度与承重
+        type: number
+        unit: mm
+        filter: range
+        compare: true
+        order: 110
+      - key: monopodMinHeight
+        label: 独脚架最低高度
+        group: 高度与承重
+        type: number
+        unit: mm
+        filter: range
+        compare: true
+        order: 120
+      - key: weight
+        label: 重量
+        group: 高度与承重
+        type: number
+        unit: kg
+        filter: range
+        compare: true
+        order: 130
+      - key: loadCapacity
+        label: 承重
+        group: 高度与承重
+        type: number
+        unit: kg
+        filter: range
+        compare: true
+        order: 140
 
 - slug: photography-bag
   name: 摄影包

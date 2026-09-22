@@ -58,7 +58,7 @@ pnpm --filter @youpu/collector crawl -- `
 
 `--target-file` 接收一个对象或对象数组。每个对象至少包含：`slug`、`category`、`brand`、`model`、`year`、`url`；可选 `mode`、`representativeSize` 和经过确认的 `identityAliases`。引擎并发固定为 1，默认每个域名请求间隔至少 2 秒。
 
-身份闸门会要求 `model` 或其中一个别名的全部词元出现在页面标题、标题级内容或 JSON-LD 中；字母数字相连的型号（如 `100ZZ` / `100 ZZ`）会统一拆分后比较。
+身份闸门会要求 `model` 或其中一个别名的全部词元出现在页面标题、正文、标题级内容或 JSON-LD 中；字母数字相连的型号（如 `100ZZ` / `100 ZZ`）会统一拆分后比较。正文命中主要用于系列页中的型号规格块，adapter 仍需按目标型号截取并解析，不会因为同页出现其他型号就合并参数。
 
 交接文档 Phase 1 的五款 adapter 冒烟目标见 `examples/phase1-adapter-targets.json`。其中 Jones 和 CAPiTA 使用当前官方页面，目标年份按页面当前 SKU/季节记录，不代表已回溯的历史 seed。
 
@@ -124,6 +124,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 国内热门镜头第一阶段目标见 `examples/domestic-hot-lens-phase1-targets.json`。当前接入 Viltrox 唯卓仕 AF 56mm F1.2 Pro XF 官方商店产品页，从页面正文、规格列表和 JSON-LD 提取 X-mount 卡口、56 mm 焦距、85 mm 等效焦距、F1.2 最大光圈、13/8 光学结构、0.5 m 最近对焦、0.13x 放大倍率、自动对焦、67 mm 滤镜口径、575 g 重量和全天候防护；未合并其他卡口版本。
 
 国内热门滤镜第一阶段目标见 `examples/domestic-hot-filter-phase1-targets.json`。当前接入 NiSi 耐司 TRUE COLOR 色彩保真 CPL 官方中文产品页，从标题、正文和 JSON-LD 提取 CPL 偏振镜、40.5–95 mm 可选口径、True Color 偏振材料、双面低反射纳米镀膜、色彩中性、防水防油、边缘涂黑和标准框 / 铜框选项；可选口径不合并铜框版本额外的 105 mm。
+
+国内热门三脚架第一阶段目标见 `examples/domestic-hot-tripod-phase1-targets.json`。当前接入 SIRUI 思锐 T-S 系列官方产品页，按型号规格块提取 T-1204SK 的碳纤维材质、兼容云台、4 节脚管、管径、高度、独脚架转换高度、1.2 kg 重量和 12 kg 承重；同页其他型号不会混入目标数据，中文规格标签和英文规格标签均可解析。
 
 ## 当前边界
 

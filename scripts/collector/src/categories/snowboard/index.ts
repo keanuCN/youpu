@@ -28,6 +28,7 @@ import { djiVideoCameraAdapter } from '../video-camera/brands/dji';
 import { insta360CameraAdapter } from '../camera/brands/insta360';
 import { viltroxLensAdapter } from '../lens/brands/viltrox';
 import { nisiFilterAdapter } from '../filter/brands/nisi';
+import { siruiTripodAdapter } from '../tripod/brands/sirui';
 
 export interface ProductAdapter {
   name: string;
@@ -57,6 +58,7 @@ const adapters: ProductAdapter[] = [
   insta360CameraAdapter,
   viltroxLensAdapter,
   nisiFilterAdapter,
+  siruiTripodAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,

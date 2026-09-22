@@ -1,0 +1,26 @@
+slug: sirui-t-1204sk-2026
+category: tripod
+brand: sirui
+model: T-1204SK
+year: 2026
+title: 思锐T-S系列三脚架 - 广东思锐光学股份有限公司官网
+specs:
+  material: 碳纤维
+  compatibleBallHead: K-10X/G-10X/G11
+  sections: 4
+  tubeMaxDiameter: 25.8
+  tubeMinDiameter: 15
+  minHeight: 140
+  maxHeight: 980
+  maxHeightExtended: 1300
+  retractedHeight: 480
+  foldedHeight: 370
+  monopodMaxHeight: 1340
+  monopodMinHeight: 330
+  weight: 1.2
+  loadCapacity: 12
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.sirui.com/index/tpl/producttripodts.html
+status: published

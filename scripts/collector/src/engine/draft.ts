@@ -106,7 +106,7 @@ export async function buildArtifact(
 
 function targetIdentityMatches(target: CrawlTarget, snapshot: PageSnapshot): boolean {
   const searchable = normalizeSearchText(
-    [snapshot.title, ...snapshot.headings, ...snapshot.jsonLd.map((value) => JSON.stringify(value))]
+    [snapshot.title, snapshot.bodyText, ...snapshot.headings, ...snapshot.jsonLd.map((value) => JSON.stringify(value))]
       .filter(Boolean)
       .join(' '),
   );
