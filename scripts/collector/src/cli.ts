@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import { runCrawl } from './engine/crawler';
 import { approveDrafts } from './engine/approval';
 import { findRepositoryRoot, resolveOutputDir } from './engine/paths';
+import { buildRunSummary, writeRunSummary } from './engine/run-summary';
 import { crawlTargetSchema, type CrawlTarget, type CrawlMode } from './engine/types';
 
 const DEFAULT_USER_AGENT = 'youpu-collector/0.1 (+https://xiaopang.club/)';
@@ -28,8 +29,10 @@ async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
   const repositoryRoot = findRepositoryRoot();
   const targets = await loadTargets(args, repositoryRoot);
+  const startedAt = new Date().toISOString();
+  const outDir = resolveOutputDir(args.outDir, repositoryRoot);
   const summary = await runCrawl(targets, {
-    outDir: resolveOutputDir(args.outDir, repositoryRoot),
+    outDir,
     dataDir: args.dataDir,
     userAgent: DEFAULT_USER_AGENT,
     minIntervalMs: args.minIntervalMs,
@@ -41,7 +44,22 @@ async function main(): Promise<void> {
     ? await approveDrafts(summary.draftPaths, { dataDir: args.dataDir, status: 'published' })
     : undefined;
 
-  console.log(JSON.stringify(approval ? { crawl: summary, approval } : summary, null, 2));
+  const runSummary = buildRunSummary({
+    startedAt,
+    finishedAt: new Date().toISOString(),
+    outDir,
+    targetFile: args.targetFile,
+    dataDir: args.dataDir,
+    minIntervalMs: args.minIntervalMs,
+    autoApprove: args.autoApprove,
+    userAgent: DEFAULT_USER_AGENT,
+    targets,
+    crawl: summary,
+    approval,
+  });
+  const runSummaryPath = await writeRunSummary(runSummary);
+
+  console.log(JSON.stringify(approval ? { crawl: summary, approval, runSummaryPath } : { ...summary, runSummaryPath }, null, 2));
   if (
     summary.failed > 0 ||
     summary.blocked > 0 ||

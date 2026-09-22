@@ -4,7 +4,7 @@
 
 默认模式只生成草稿，不改正式 seed。临时无人审核时可使用 `--auto-approve`：没有指定代表尺寸的目标会按标准宽度中位策略自动选尺寸，草稿再经过完整 `spec_schema` 校验和 raw 审计文件校验后写入 `data/<category>/`，状态设为 `published`。正式 seed 已存在时跳过，不覆盖已有文案、评分和图片。
 
-默认输出到 `data/tmp/collector`，不会写数据库，也不会修改 `data/products` 下的正式 seed。图片只记录在 raw 页面快照，草稿不自动带图，避免把导航图误当商品图或未经授权发布。
+默认输出到 `data/tmp/collector`，不会写数据库，也不会修改 `data/products` 下的正式 seed。图片只记录在 raw 页面快照，草稿不自动带图，避免把导航图误当商品图或未经授权发布。每次采集结束还会在输出目录生成 `run-summary.json`，记录目标、耗时、各类结果计数和所有输出路径，便于后续增量复核。
 
 ## 单条采集
 
@@ -34,6 +34,8 @@ node C:\nvm4w\nodejs\node_modules\pnpm\bin\pnpm.mjs --filter @youpu/collector cr
 ```
 
 自动通过不会绕过 robots、型号身份、显式年份、字段范围或完整 schema 闸门；失败记录只保留在 `raw/`，不会写入正式 seed。
+
+`run-summary.json` 中的 `status` 为 `completed` 时，代表本批没有阻塞、质量失败、网络失败或自动通过失败；出现上述任一情况会标记为 `needs-review`。这个状态只表示批次结果，不替代对草稿、来源和图片授权的复核。
 
 ## 批量采集
 
