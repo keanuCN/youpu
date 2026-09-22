@@ -8,5 +8,15 @@
     "year": 2023,
     "url": "https://www.dji.com/cn/mini-4-pro/specs",
     "mode": "cheerio"
+  },
+  {
+    "slug": "dji-avata-2-2024",
+    "category": "drone",
+    "brand": "dji",
+    "model": "Avata 2",
+    "identityAliases": ["DJI Avata 2"],
+    "year": 2024,
+    "url": "https://www.dji.com/cn/avata-2/specs",
+    "mode": "cheerio"
   }
 ]
