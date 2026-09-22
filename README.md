@@ -26,7 +26,7 @@ youpu/
 ├── apps/
 │   ├── web/              # Next.js 用户侧（SSR）
 │   │   ├── src/data/     # 内容包回退数据（API 模式不可用时继续保证浏览）
-│   │   └── scripts/      # export-seed-yaml.ts：内容包 → seed YAML 迁移工具
+│   │   └── scripts/      # export-seed-yaml.ts / export-catalog-snapshot.ts：内容包与云端目录工具
 │   ├── admin/            # 管理端（数据分析、资料库、审核、审计与账号权限，端口 3002）
 │   └── api/              # NestJS 后端（Prisma / Redis / ES）
 │       └── prisma/       # schema.prisma + 手写 SQL 迁移
@@ -56,6 +56,16 @@ pnpm dev:admin      # http://localhost:3002（需先启动 API）
 
 页面默认使用 `apps/web/src/data/` 内容包，账号/收藏/对比/评论存本机 localStorage —— **全站可完整浏览**。
 唯一会失败的是埋点上报（`POST /api/events` 连不上，静默丢弃，不影响使用）。
+
+静态前台更新目录时，先从公开目录 API 导出快照，再重新构建；快照会覆盖价格、封面、参数、品类和新增产品，已有编辑分析与评分分布继续保留在内容包中：
+
+```powershell
+$env:CONTENT_EXPORT_API_BASE = "http://localhost:3001"
+pnpm --filter @youpu/web export:catalog
+pnpm --filter @youpu/web build
+```
+
+需要从线上数据库生成本地快照时，只替换 `CONTENT_EXPORT_API_BASE` 为正式 API 地址。此流程只读取公开目录接口，不会把数据库密码或邮件密钥写入仓库；静态产物仍需单独部署。
 
 需要联调目录 API 时，在 `apps/web/.env.local` 设置 `NEXT_PUBLIC_CONTENT_SOURCE=api`。
 档案库列表和详情页会优先请求 API，接口不可用、超时或响应不符合共享契约时自动回退内容包；API 恢复后无需改页面代码即可继续使用 API 数据。
@@ -123,6 +133,7 @@ UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@e
 | `pnpm seed` | 重新导入 `data/` 数据（幂等） |
 | `pnpm --filter @youpu/api validate:data` | 只校验 data/ 数据、不连库（CI 可用） |
 | `pnpm --filter @youpu/web export:seed` | 原型内容包 → seed YAML（一次性迁移工具） |
+| `pnpm --filter @youpu/web export:catalog` | API 目录 → 前台云端快照（静态构建前运行） |
 | `pnpm es:reindex` | ES 全量重建 |
 | `pnpm typecheck` / `pnpm build` | 全仓类型检查 / 构建 |
 

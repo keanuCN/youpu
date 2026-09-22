@@ -1,0 +1,4668 @@
+/**
+ * 云端目录快照。
+ *
+ * 由 apps/web/scripts/export-catalog-snapshot.ts 自动生成，请勿手工编辑。
+ * 快照只保存公开目录接口返回的事实字段；编辑分析、评分分布等内容继续由本地内容包维护。
+ */
+export interface CatalogSnapshotItem {
+  id: string;
+  slug: string;
+  title: string;
+  model: string;
+  year: number;
+  oneLiner: string | null;
+  priceMin: number | null;
+  priceMax: number | null;
+  priceCurrency: "CNY";
+  coverUrl: string | null;
+  ratingOverall: number | null;
+  ratingCount: number;
+  favoriteCount: number;
+  composite: number | null;
+  brand: { slug: string; name: string; nameCn?: string | null };
+  categorySlug: string;
+  specs: Record<string, unknown>;
+  highlights: Array<{ key: string; label: string; value: string }>;
+}
+
+export interface CatalogSnapshotMeta {
+  source: string;
+  generatedAt: string;
+  total: number;
+  pageSize: number;
+  categorySlugs: string[];
+}
+
+export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
+  "source": "https://xiaopang.club",
+  "generatedAt": "2026-09-22T01:59:14.030Z",
+  "total": 74,
+  "pageSize": 48,
+  "categorySlugs": [
+    "action-cam",
+    "badminton-racket",
+    "casting-rod",
+    "mtb",
+    "road-bike",
+    "snowboard"
+  ]
+};
+
+export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
+  {
+    "id": "01a0be38-191a-7c50-9bb6-2e544f85de83",
+    "slug": "dji-osmo-action-4-2023",
+    "title": "DJI Osmo Action 4",
+    "model": "Osmo Action 4",
+    "year": 2023,
+    "oneLiner": "大底、4K 高帧率和成熟防抖组合，适合作为预算友好的第一台户外运动相机。",
+    "priceMin": 1721,
+    "priceMax": 1721,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://se-cdn.djiits.com/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 84.3,
+    "brand": {
+      "slug": "dji",
+      "name": "DJI",
+      "nameCn": "大疆"
+    },
+    "categorySlug": "action-cam",
+    "specs": {
+      "cameraType": "action",
+      "sensor": "1/1.3 英寸 CMOS",
+      "maxVideo": "4K@120fps",
+      "maxFrameRate": 120,
+      "stabilization": "RockSteady 3.0 / 360° HorizonSteady",
+      "waterproofDepth": 18,
+      "weight": 145,
+      "batteryLife": 160,
+      "screen": "双触控屏",
+      "storage": "microSD",
+      "scenes": [
+        "cycling",
+        "motorcycle",
+        "skiing",
+        "diving",
+        "travel"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "cameraType",
+        "label": "相机类型",
+        "value": "传统运动相机"
+      },
+      {
+        "key": "maxFrameRate",
+        "label": "最高帧率",
+        "value": "120fps"
+      },
+      {
+        "key": "waterproofDepth",
+        "label": "裸机防水深度",
+        "value": "18m"
+      },
+      {
+        "key": "weight",
+        "label": "机身重量",
+        "value": "145g"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-193f-782c-9988-2dc78445601c",
+    "slug": "dji-osmo-action-5-pro-2024",
+    "title": "DJI Osmo Action 5 Pro",
+    "model": "Osmo Action 5 Pro",
+    "year": 2024,
+    "oneLiner": "以 1/1.3 英寸传感器、双 OLED 屏和长续航为核心的成熟旗舰，适合骑行、滑雪和旅行记录。",
+    "priceMin": 2297,
+    "priceMax": 2297,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://se-cdn.djiits.com/tpc/uploads/spu/cover/e4781624a38ba00d1b4a8bc3a204bd97@ultra.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 89.3,
+    "brand": {
+      "slug": "dji",
+      "name": "DJI",
+      "nameCn": "大疆"
+    },
+    "categorySlug": "action-cam",
+    "specs": {
+      "cameraType": "action",
+      "sensor": "1/1.3 英寸 CMOS",
+      "maxVideo": "4K@120fps",
+      "maxFrameRate": 120,
+      "maxPhoto": "约 40MP",
+      "stabilization": "RockSteady 3.0+ / HorizonSteady",
+      "waterproofDepth": 20,
+      "weight": 146,
+      "batteryLife": 240,
+      "screen": "双 OLED 高亮触控屏",
+      "storage": "64GB 内置（47GB 可用）+ microSD",
+      "scenes": [
+        "cycling",
+        "motorcycle",
+        "skiing",
+        "diving",
+        "travel"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "cameraType",
+        "label": "相机类型",
+        "value": "传统运动相机"
+      },
+      {
+        "key": "maxFrameRate",
+        "label": "最高帧率",
+        "value": "120fps"
+      },
+      {
+        "key": "waterproofDepth",
+        "label": "裸机防水深度",
+        "value": "20m"
+      },
+      {
+        "key": "weight",
+        "label": "机身重量",
+        "value": "146g"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1958-7c2f-814c-9c6dd1f889c3",
+    "slug": "dji-osmo-action-6-2026",
+    "title": "DJI Osmo Action 6",
+    "model": "Osmo Action 6",
+    "year": 2026,
+    "oneLiner": "以 1/1.1 英寸方形传感器、可变光圈和 8K 视频为核心的旗舰运动相机，适合希望兼顾运动记录与低光创作的人。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://se-cdn.djiits.com/tpc/uploads/spu/cover/12bba4939cd4f341e741cdf5d2c8d9b0@ultra.png?format=webp",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 90.9,
+    "brand": {
+      "slug": "dji",
+      "name": "DJI",
+      "nameCn": "大疆"
+    },
+    "categorySlug": "action-cam",
+    "specs": {
+      "cameraType": "action",
+      "sensor": "1/1.1 英寸方形传感器",
+      "maxVideo": "8K@30fps",
+      "maxFrameRate": 120,
+      "stabilization": "RockSteady / HorizonSteady",
+      "waterproofDepth": 20,
+      "weight": 149,
+      "batteryLife": 240,
+      "screen": "双触控屏",
+      "storage": "64GB 内置（50GB 可用）+ microSD",
+      "scenes": [
+        "cycling",
+        "motorcycle",
+        "skiing",
+        "diving",
+        "travel"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "cameraType",
+        "label": "相机类型",
+        "value": "传统运动相机"
+      },
+      {
+        "key": "maxFrameRate",
+        "label": "最高帧率",
+        "value": "120fps"
+      },
+      {
+        "key": "waterproofDepth",
+        "label": "裸机防水深度",
+        "value": "20m"
+      },
+      {
+        "key": "weight",
+        "label": "机身重量",
+        "value": "149g"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1972-7e24-9e3b-40c33660c7c2",
+    "slug": "gopro-hero11-black-2022",
+    "title": "GoPro HERO11 Black",
+    "model": "HERO11 Black",
+    "year": 2022,
+    "oneLiner": "以 8:7 传感器裁切空间和 HyperSmooth 防抖为卖点，适合预算有限的户外运动入门。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://gopro.com/on/demandware.static/-/Sites-gopro-products/default/dwd909d4f6/images/Product%20Images/cameras/CHDHX-111-master/compare-h11.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 80.1,
+    "brand": {
+      "slug": "gopro",
+      "name": "GoPro",
+      "nameCn": null
+    },
+    "categorySlug": "action-cam",
+    "specs": {
+      "cameraType": "action",
+      "sensor": "1/1.9 英寸 CMOS，27.13MP",
+      "maxVideo": "5.3K@60fps",
+      "maxFrameRate": 240,
+      "maxPhoto": "27.13MP",
+      "stabilization": "HyperSmooth 5.0",
+      "waterproofDepth": 10,
+      "weight": 154,
+      "screen": "后置触屏 + 前置彩屏",
+      "storage": "microSD",
+      "scenes": [
+        "cycling",
+        "motorcycle",
+        "skiing",
+        "travel"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "cameraType",
+        "label": "相机类型",
+        "value": "传统运动相机"
+      },
+      {
+        "key": "maxFrameRate",
+        "label": "最高帧率",
+        "value": "240fps"
+      },
+      {
+        "key": "waterproofDepth",
+        "label": "裸机防水深度",
+        "value": "10m"
+      },
+      {
+        "key": "weight",
+        "label": "机身重量",
+        "value": "154g"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1983-7611-badd-ba612880ff6e",
+    "slug": "gopro-hero12-black-2023",
+    "title": "GoPro HERO12 Black",
+    "model": "HERO12 Black",
+    "year": 2023,
+    "oneLiner": "以 5.3K 视频、HyperSmooth 6.0 和成熟配件生态保持均衡，适合以较低成本进入 GoPro 体系。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://gopro.com/on/demandware.static/-/Sites-gopro-products/default/dwd62f3260/images/Product%20Images/cameras/CHDHX-121-master/plp-product-card-h12.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 83.5,
+    "brand": {
+      "slug": "gopro",
+      "name": "GoPro",
+      "nameCn": null
+    },
+    "categorySlug": "action-cam",
+    "specs": {
+      "cameraType": "action",
+      "sensor": "1/1.9 英寸 CMOS，27MP",
+      "maxVideo": "5.3K@60fps",
+      "maxFrameRate": 240,
+      "maxPhoto": "27MP",
+      "stabilization": "HyperSmooth 6.0",
+      "waterproofDepth": 10,
+      "weight": 154,
+      "batteryLife": 150,
+      "screen": "后置触屏 + 前置彩屏",
+      "storage": "microSD",
+      "scenes": [
+        "cycling",
+        "motorcycle",
+        "skiing",
+        "travel",
+        "vlogging"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "cameraType",
+        "label": "相机类型",
+        "value": "传统运动相机"
+      },
+      {
+        "key": "maxFrameRate",
+        "label": "最高帧率",
+        "value": "240fps"
+      },
+      {
+        "key": "waterproofDepth",
+        "label": "裸机防水深度",
+        "value": "10m"
+      },
+      {
+        "key": "weight",
+        "label": "机身重量",
+        "value": "154g"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1998-7ef1-b79f-575cdbccd6c7",
+    "slug": "gopro-hero13-black-2024",
+    "title": "GoPro HERO13 Black",
+    "model": "HERO13 Black",
+    "year": 2024,
+    "oneLiner": "以 5.3K60、HyperSmooth 6.0 和 HB 系列镜头生态为核心，适合重视运动 POV 与后期裁切的用户。",
+    "priceMin": 2736,
+    "priceMax": 2736,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://gopro.com/on/demandware.static/-/Sites-gopro-products/default/dw212f9f28/images/Product%20Images/cameras/CHDHX-131-master/plp-product-card-h13.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 84.9,
+    "brand": {
+      "slug": "gopro",
+      "name": "GoPro",
+      "nameCn": null
+    },
+    "categorySlug": "action-cam",
+    "specs": {
+      "cameraType": "action",
+      "sensor": "1/1.9 英寸 CMOS，27.6MP",
+      "maxVideo": "5.3K@60fps",
+      "maxFrameRate": 240,
+      "maxPhoto": "27.6MP",
+      "fov": "广角，支持 HB 系列镜头",
+      "stabilization": "HyperSmooth 6.0",
+      "waterproofDepth": 10,
+      "weight": 154,
+      "batteryLife": 150,
+      "screen": "后置触屏 + 前置彩屏",
+      "storage": "microSD",
+      "scenes": [
+        "cycling",
+        "motorcycle",
+        "skiing",
+        "travel",
+        "vlogging"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "cameraType",
+        "label": "相机类型",
+        "value": "传统运动相机"
+      },
+      {
+        "key": "maxFrameRate",
+        "label": "最高帧率",
+        "value": "240fps"
+      },
+      {
+        "key": "waterproofDepth",
+        "label": "裸机防水深度",
+        "value": "10m"
+      },
+      {
+        "key": "weight",
+        "label": "机身重量",
+        "value": "154g"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-19be-7a2a-b1bc-beeaf4c8330f",
+    "slug": "insta360-ace-pro-2023",
+    "title": "Insta360 Ace Pro",
+    "model": "Ace Pro",
+    "year": 2023,
+    "oneLiner": "以 1/1.3 英寸大底、翻转触控屏和 8K 记录为核心，适合旅行 Vlog 与运动混合创作。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://res.insta360.com/static/a7e1e6632afa8dc15821776d712a352f/acepro&ace.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 84.4,
+    "brand": {
+      "slug": "insta360",
+      "name": "Insta360",
+      "nameCn": "影石"
+    },
+    "categorySlug": "action-cam",
+    "specs": {
+      "cameraType": "action",
+      "sensor": "1/1.3 英寸",
+      "maxVideo": "8K@24fps",
+      "maxFrameRate": 120,
+      "maxPhoto": "48MP",
+      "fov": "151°",
+      "stabilization": "FlowState + 360° Horizon Lock",
+      "waterproofDepth": 10,
+      "weight": 179.8,
+      "batteryLife": 100,
+      "screen": "2.4 英寸翻转触控屏",
+      "storage": "microSD",
+      "scenes": [
+        "cycling",
+        "motorcycle",
+        "skiing",
+        "vlogging",
+        "travel"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "cameraType",
+        "label": "相机类型",
+        "value": "传统运动相机"
+      },
+      {
+        "key": "maxFrameRate",
+        "label": "最高帧率",
+        "value": "120fps"
+      },
+      {
+        "key": "waterproofDepth",
+        "label": "裸机防水深度",
+        "value": "10m"
+      },
+      {
+        "key": "weight",
+        "label": "机身重量",
+        "value": "179.8g"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-19ae-7d94-9594-d9da1255096c",
+    "slug": "insta360-ace-pro-2-2024",
+    "title": "Insta360 Ace Pro 2",
+    "model": "Ace Pro 2",
+    "year": 2024,
+    "oneLiner": "以 1/1.3 英寸 8K 传感器、翻转触控屏和低光模式为核心，适合运动与 Vlog 混合拍摄。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://wassets.insta360.com/common/4d7317543e0f4fee9b0b037a4d24d961/pc-acepro2-CN.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 88.3,
+    "brand": {
+      "slug": "insta360",
+      "name": "Insta360",
+      "nameCn": "影石"
+    },
+    "categorySlug": "action-cam",
+    "specs": {
+      "cameraType": "action",
+      "sensor": "1/1.3 英寸 8K 传感器",
+      "maxVideo": "8K@30fps",
+      "maxFrameRate": 120,
+      "maxPhoto": "50MP",
+      "fov": "157°",
+      "stabilization": "FlowState + 360° Horizon Lock",
+      "waterproofDepth": 12,
+      "weight": 184,
+      "batteryLife": 180,
+      "screen": "2.5 英寸翻转触控屏",
+      "storage": "microSD，最高 1TB",
+      "scenes": [
+        "cycling",
+        "motorcycle",
+        "skiing",
+        "diving",
+        "vlogging",
+        "travel"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "cameraType",
+        "label": "相机类型",
+        "value": "传统运动相机"
+      },
+      {
+        "key": "maxFrameRate",
+        "label": "最高帧率",
+        "value": "120fps"
+      },
+      {
+        "key": "waterproofDepth",
+        "label": "裸机防水深度",
+        "value": "12m"
+      },
+      {
+        "key": "weight",
+        "label": "机身重量",
+        "value": "184g"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-19cf-7642-be42-98520b48d4ff",
+    "slug": "insta360-go-3-2023",
+    "title": "Insta360 GO 3",
+    "model": "GO 3",
+    "year": 2023,
+    "oneLiner": "以极轻机身、磁吸夹具和 Action Pod 为核心的佩戴式相机，适合生活记录和轻量运动。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://res.insta360.com/static/d78e79ba23e097dc53578184664348ca/GO3.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.6,
+    "brand": {
+      "slug": "insta360",
+      "name": "Insta360",
+      "nameCn": "影石"
+    },
+    "categorySlug": "action-cam",
+    "specs": {
+      "cameraType": "wearable",
+      "sensor": "1/2.3 英寸",
+      "maxVideo": "2.7K@50fps",
+      "maxFrameRate": 50,
+      "stabilization": "FlowState",
+      "waterproofDepth": 5,
+      "weight": 35.5,
+      "screen": "Action Pod 触控屏",
+      "storage": "内置存储",
+      "scenes": [
+        "cycling",
+        "skiing",
+        "vlogging",
+        "travel"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "cameraType",
+        "label": "相机类型",
+        "value": "拇指 / 佩戴式"
+      },
+      {
+        "key": "maxFrameRate",
+        "label": "最高帧率",
+        "value": "50fps"
+      },
+      {
+        "key": "waterproofDepth",
+        "label": "裸机防水深度",
+        "value": "5m"
+      },
+      {
+        "key": "weight",
+        "label": "机身重量",
+        "value": "35.5g"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-19e2-7048-98e1-5a6b1ed17e66",
+    "slug": "insta360-go-3s-2024",
+    "title": "Insta360 GO 3S",
+    "model": "GO 3S",
+    "year": 2024,
+    "oneLiner": "轻量化的 4K 拇指相机，优先解决佩戴、磁吸和第一视角记录问题。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://res.insta360.com/static/a3b716298df7f6da544fcdaf70ffe21f/GO3S.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 75.6,
+    "brand": {
+      "slug": "insta360",
+      "name": "Insta360",
+      "nameCn": "影石"
+    },
+    "categorySlug": "action-cam",
+    "specs": {
+      "cameraType": "wearable",
+      "sensor": "1/2.3 英寸",
+      "maxVideo": "4K@30fps",
+      "maxFrameRate": 120,
+      "stabilization": "FlowState",
+      "waterproofDepth": 10,
+      "weight": 39.1,
+      "batteryLife": 140,
+      "screen": "Action Pod 触控屏",
+      "storage": "64GB / 128GB 内置存储",
+      "scenes": [
+        "cycling",
+        "skiing",
+        "vlogging",
+        "travel"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "cameraType",
+        "label": "相机类型",
+        "value": "拇指 / 佩戴式"
+      },
+      {
+        "key": "maxFrameRate",
+        "label": "最高帧率",
+        "value": "120fps"
+      },
+      {
+        "key": "waterproofDepth",
+        "label": "裸机防水深度",
+        "value": "10m"
+      },
+      {
+        "key": "weight",
+        "label": "机身重量",
+        "value": "39.1g"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3bf3-7bcd-8150-a687810601f2",
+    "slug": "victor-auraspeed-100x-se-2026",
+    "title": "VICTOR AURASPEED 100X SE H 2026",
+    "model": "AURASPEED 100X SE H",
+    "year": 2026,
+    "oneLiner": "以平抽快挡和连续衔接为主的速度型球拍，适合双打中前场与快速攻防转换；重杀上限不靠堆头重实现。",
+    "priceMin": 1699,
+    "priceMax": 2199,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://shop.au.victorsport.com/cdn/shop/products/82004_1_20211117175841_2048x.jpg?v=1644645157",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 79.9,
+    "brand": {
+      "slug": "victor",
+      "name": "VICTOR",
+      "nameCn": "威克多"
+    },
+    "categorySlug": "badminton-racket",
+    "specs": {
+      "weightClass": "3U/4U",
+      "maxTension": 29,
+      "frameMaterial": "High Resilience Modulus Graphite + Nano Fortify TR",
+      "shaftMaterial": "High Resilience Modulus Graphite + PYROFIL + 6.8 SHAFT",
+      "scenes": [
+        "doubles",
+        "speed"
+      ],
+      "playerLevel": "advanced"
+    },
+    "highlights": [
+      {
+        "key": "weightClass",
+        "label": "重量等级",
+        "value": "3U / 4U"
+      },
+      {
+        "key": "maxTension",
+        "label": "最高建议磅数",
+        "value": "29lbs"
+      },
+      {
+        "key": "scenes",
+        "label": "使用取向",
+        "value": "双打 · 速度"
+      },
+      {
+        "key": "playerLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3c19-75ee-beaf-e1affa897f91",
+    "slug": "victor-thruster-ryuga-ii-pro-2026",
+    "title": "VICTOR THRUSTER RYUGA II PRO B 2026",
+    "model": "THRUSTER RYUGA II PRO B",
+    "year": 2026,
+    "oneLiner": "以重杀和后场压制为核心的进攻拍，适合能稳定驾驭硬杆和头重感的单打或后场选手。",
+    "priceMin": 1599,
+    "priceMax": 2199,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://shop.au.victorsport.com/cdn/shop/files/TK-RYUGAIIPROB-Main_530x%402x.jpg?v=1708589137",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 75.1,
+    "brand": {
+      "slug": "victor",
+      "name": "VICTOR",
+      "nameCn": "威克多"
+    },
+    "categorySlug": "badminton-racket",
+    "specs": {
+      "weightClass": "3U/4U",
+      "maxTension": 32,
+      "frameMaterial": "High Resilience Modulus Graphite + HARD CORED TECHNOLOGY",
+      "shaftMaterial": "High Resilience Modulus Graphite + PYROFIL + 6.6 SHAFT",
+      "scenes": [
+        "singles",
+        "attack"
+      ],
+      "playerLevel": "advanced"
+    },
+    "highlights": [
+      {
+        "key": "weightClass",
+        "label": "重量等级",
+        "value": "3U / 4U"
+      },
+      {
+        "key": "maxTension",
+        "label": "最高建议磅数",
+        "value": "32lbs"
+      },
+      {
+        "key": "scenes",
+        "label": "使用取向",
+        "value": "单打 · 进攻"
+      },
+      {
+        "key": "playerLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3c2f-7279-9f15-5a59ec9fdfee",
+    "slug": "yonex-arcsaber-11-pro-2026",
+    "title": "YONEX ARCSABER 11 PRO 2026",
+    "model": "ARCSABER 11 PRO",
+    "year": 2026,
+    "oneLiner": "以持球感和落点控制见长，适合愿意主动组织回合的中高级选手；它更奖励稳定击球，不负责替你发力。",
+    "priceMin": 1799,
+    "priceMax": 2199,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://us.yonex.com/cdn/shop/files/arc11-p.png?v=1738288163&width=1946",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 80.2,
+    "brand": {
+      "slug": "yonex",
+      "name": "YONEX",
+      "nameCn": "尤尼克斯"
+    },
+    "categorySlug": "badminton-racket",
+    "specs": {
+      "weightClass": "3U/4U",
+      "balance": "even",
+      "flex": "stiff",
+      "maxTension": 28,
+      "frameMaterial": "HM Graphite + POCKETING BOOSTER",
+      "shaftMaterial": "HM Graphite + SUPER HMG + ULTRA PE FIBER",
+      "lengthNote": "加长 10mm",
+      "stringPattern": "4U 19-27 lbs；3U 20-28 lbs",
+      "scenes": [
+        "singles",
+        "control"
+      ],
+      "playerLevel": "advanced"
+    },
+    "highlights": [
+      {
+        "key": "weightClass",
+        "label": "重量等级",
+        "value": "3U / 4U"
+      },
+      {
+        "key": "balance",
+        "label": "平衡取向",
+        "value": "均衡"
+      },
+      {
+        "key": "flex",
+        "label": "杆身硬度",
+        "value": "硬 Stiff"
+      },
+      {
+        "key": "maxTension",
+        "label": "最高建议磅数",
+        "value": "28lbs"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3c47-737f-a746-8ea4f035f809",
+    "slug": "yonex-astrox-100-zz-2026",
+    "title": "YONEX ASTROX 100 ZZ 2026",
+    "model": "ASTROX 100 ZZ",
+    "year": 2026,
+    "oneLiner": "头重、特硬、连续重杀取向鲜明，适合主动发力的进阶选手；被动防守和轻松借力不是它的强项。",
+    "priceMin": 1799,
+    "priceMax": 2199,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://us.yonex.com/cdn/shop/files/astrox100zz_kurenai.png?v=1769128443&width=1946",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 75.8,
+    "brand": {
+      "slug": "yonex",
+      "name": "YONEX",
+      "nameCn": "尤尼克斯"
+    },
+    "categorySlug": "badminton-racket",
+    "specs": {
+      "weightClass": "3U/4U",
+      "balance": "head-heavy",
+      "flex": "extra-stiff",
+      "maxTension": 29,
+      "frameMaterial": "HM Graphite + Namd + Tungsten + Black Micro Core",
+      "shaftMaterial": "HM Graphite + Namd",
+      "lengthNote": "加长 10mm",
+      "stringPattern": "3U 21-29 lbs；4U 20-28 lbs",
+      "scenes": [
+        "singles",
+        "attack"
+      ],
+      "playerLevel": "advanced"
+    },
+    "highlights": [
+      {
+        "key": "weightClass",
+        "label": "重量等级",
+        "value": "3U / 4U"
+      },
+      {
+        "key": "balance",
+        "label": "平衡取向",
+        "value": "头重"
+      },
+      {
+        "key": "flex",
+        "label": "杆身硬度",
+        "value": "特硬 Extra Stiff"
+      },
+      {
+        "key": "maxTension",
+        "label": "最高建议磅数",
+        "value": "29lbs"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3c59-7a1a-88fd-f217dac82321",
+    "slug": "yonex-nanoflare-1000-z-2026",
+    "title": "YONEX NANOFLARE 1000 Z 2026",
+    "model": "NANOFLARE 1000 Z",
+    "year": 2026,
+    "oneLiner": "头轻、挥速快，适合主动抢节奏的双打选手；特硬中杆会放大动作质量的差异。",
+    "priceMin": 1699,
+    "priceMax": 1999,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://us.yonex.com/cdn/shop/files/NF1000Z_Lightning_Yellow_1.jpg?v=1740596406&width=1946",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 80.5,
+    "brand": {
+      "slug": "yonex",
+      "name": "YONEX",
+      "nameCn": "尤尼克斯"
+    },
+    "categorySlug": "badminton-racket",
+    "specs": {
+      "weightClass": "3U/4U",
+      "balance": "head-light",
+      "flex": "extra-stiff",
+      "maxTension": 29,
+      "frameMaterial": "HM Graphite + NANOMETRIC DR + M40X + EX-HYPER MG",
+      "shaftMaterial": "HM Graphite + Ultra PE FIBER",
+      "lengthNote": "加长 10mm",
+      "stringPattern": "4U 20-28 lbs；3U 21-29 lbs",
+      "scenes": [
+        "doubles",
+        "speed"
+      ],
+      "playerLevel": "advanced"
+    },
+    "highlights": [
+      {
+        "key": "weightClass",
+        "label": "重量等级",
+        "value": "3U / 4U"
+      },
+      {
+        "key": "balance",
+        "label": "平衡取向",
+        "value": "头轻"
+      },
+      {
+        "key": "flex",
+        "label": "杆身硬度",
+        "value": "特硬 Extra Stiff"
+      },
+      {
+        "key": "maxTension",
+        "label": "最高建议磅数",
+        "value": "29lbs"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3c6e-7e57-b00c-144ddd6701ce",
+    "slug": "daiwa-tatula-641lfb-bf-2026",
+    "title": "Daiwa TATULA 641LFB-BF 2026",
+    "model": "TATULA 641LFB-BF",
+    "year": 2026,
+    "oneLiner": "面向贝特芬尼斯的轻量枪柄竿，1.8–11 克覆盖小型硬饵和轻型软虫，强调抛投精度与手上反馈。",
+    "priceMin": 1299,
+    "priceMax": 1599,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://www.point-official.shop/img/goods/L/4550133341434_1.jpg",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 77.6,
+    "brand": {
+      "slug": "daiwa",
+      "name": "Daiwa",
+      "nameCn": "达亿瓦"
+    },
+    "categorySlug": "casting-rod",
+    "specs": {
+      "length": 1.93,
+      "sections": 2,
+      "weight": 96,
+      "lureWeight": "1.8-11 g",
+      "lineWeight": "5-12 lb",
+      "power": "light",
+      "rodType": "casting",
+      "blankMaterial": "碳纤维",
+      "carbonContent": 91,
+      "scenes": [
+        "freshwater",
+        "finesse"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "全长",
+        "value": "1.93m"
+      },
+      {
+        "key": "sections",
+        "label": "节数",
+        "value": "2"
+      },
+      {
+        "key": "weight",
+        "label": "标准自重",
+        "value": "96g"
+      },
+      {
+        "key": "power",
+        "label": "调性强度",
+        "value": "轻 L"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3c86-784c-a3e8-8ebd94f61a6f",
+    "slug": "daiwa-tatula-651mfb-2026",
+    "title": "Daiwa TATULA 651MFB 2026",
+    "model": "TATULA 651MFB",
+    "year": 2026,
+    "oneLiner": "6 英尺 5 英寸的中调全能枪柄竿，5–21 克覆盖面实用，适合软虫、德州和中小型硬饵之间频繁切换。",
+    "priceMin": 1299,
+    "priceMax": 1599,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://www.anglerscentral.my/cdn/shop/files/EDFCC126-8552-45A9-A0BB-9E32D4CC4505.jpg?v=1773455787&width=416",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 80.7,
+    "brand": {
+      "slug": "daiwa",
+      "name": "Daiwa",
+      "nameCn": "达亿瓦"
+    },
+    "categorySlug": "casting-rod",
+    "specs": {
+      "length": 1.96,
+      "sections": 2,
+      "weight": 109,
+      "lureWeight": "5-21 g",
+      "lineWeight": "8-16 lb",
+      "power": "medium",
+      "rodType": "casting",
+      "blankMaterial": "碳纤维",
+      "carbonContent": 92,
+      "scenes": [
+        "freshwater",
+        "bass"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "全长",
+        "value": "1.96m"
+      },
+      {
+        "key": "sections",
+        "label": "节数",
+        "value": "2"
+      },
+      {
+        "key": "weight",
+        "label": "标准自重",
+        "value": "109g"
+      },
+      {
+        "key": "power",
+        "label": "调性强度",
+        "value": "中 M"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3c97-73db-891c-659535541e47",
+    "slug": "daiwa-tatula-681mhrb-2026",
+    "title": "Daiwa TATULA 681MHRB 2026",
+    "model": "TATULA 681MHRB",
+    "year": 2026,
+    "oneLiner": "2.03 米中重调的强力全能型号，覆盖高比重软虫、德州、铁板和中重型硬饵，适合需要起鱼底气的鲈钓场景。",
+    "priceMin": 1399,
+    "priceMax": 1699,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://www.anglerscentral.my/cdn/shop/files/images.png?v=1773456295&width=416",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 81.4,
+    "brand": {
+      "slug": "daiwa",
+      "name": "Daiwa",
+      "nameCn": "达亿瓦"
+    },
+    "categorySlug": "casting-rod",
+    "specs": {
+      "length": 2.03,
+      "sections": 2,
+      "weight": 119,
+      "lureWeight": "7-28 g",
+      "lineWeight": "10-20 lb",
+      "power": "medium-heavy",
+      "rodType": "casting",
+      "blankMaterial": "碳纤维",
+      "carbonContent": 91,
+      "scenes": [
+        "freshwater",
+        "bass",
+        "heavy-lure"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "全长",
+        "value": "2.03m"
+      },
+      {
+        "key": "sections",
+        "label": "节数",
+        "value": "2"
+      },
+      {
+        "key": "weight",
+        "label": "标准自重",
+        "value": "119g"
+      },
+      {
+        "key": "power",
+        "label": "调性强度",
+        "value": "中重 MH"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3caa-7ac3-92f2-1a491edc84ea",
+    "slug": "shimano-limitless-lmt862sp26ml-2024",
+    "title": "Shimano LIMITLESS LMT862SP26ML 2024",
+    "model": "LIMITLESS LMT862SP26ML",
+    "year": 2024,
+    "oneLiner": "8 英尺 6 英寸的中轻调直柄竿，兼顾远投距离和轻饵操控，适合岸边淡水路亚与需要覆盖水面的场景。",
+    "priceMin": 1299,
+    "priceMax": 1599,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://www.smartmarine.co.nz/cdn/images/products/xlarge/8089900_a.jpg",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 79.9,
+    "brand": {
+      "slug": "shimano",
+      "name": "Shimano",
+      "nameCn": "禧玛诺"
+    },
+    "categorySlug": "casting-rod",
+    "specs": {
+      "length": 2.59,
+      "sections": 2,
+      "lureWeight": "5-21 g",
+      "lineWeight": "2-6 kg",
+      "power": "medium-light",
+      "rodType": "spinning",
+      "blankMaterial": "30T / 40T Carbon",
+      "scenes": [
+        "freshwater",
+        "light-lure"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "全长",
+        "value": "2.59m"
+      },
+      {
+        "key": "sections",
+        "label": "节数",
+        "value": "2"
+      },
+      {
+        "key": "power",
+        "label": "调性强度",
+        "value": "中轻 ML"
+      },
+      {
+        "key": "rodType",
+        "label": "轮座类型",
+        "value": "直柄纺车"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3cbc-7de9-9e54-b01a921794eb",
+    "slug": "shimano-streamflight-stf702sp25l-2026",
+    "title": "Shimano STREAMFLIGHT STF702SP25L 2026",
+    "model": "STREAMFLIGHT STF702SP25L",
+    "year": 2026,
+    "oneLiner": "2.13 米、2–12 克的轻量直柄竿，适合溪流和小河轻饵；强调落点与细腻鱼讯，面对大鱼和重障碍要留余量。",
+    "priceMin": 699,
+    "priceMax": 899,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://bbsports.co.nz/cdn/shop/files/Untitled_580x.jpg?v=1760064152",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 76.8,
+    "brand": {
+      "slug": "shimano",
+      "name": "Shimano",
+      "nameCn": "禧玛诺"
+    },
+    "categorySlug": "casting-rod",
+    "specs": {
+      "length": 2.13,
+      "sections": 2,
+      "lureWeight": "2-12 g",
+      "lineWeight": "2-5 kg",
+      "power": "light",
+      "rodType": "spinning",
+      "blankMaterial": "30T Carbon",
+      "scenes": [
+        "freshwater",
+        "light-lure"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "全长",
+        "value": "2.13m"
+      },
+      {
+        "key": "sections",
+        "label": "节数",
+        "value": "2"
+      },
+      {
+        "key": "power",
+        "label": "调性强度",
+        "value": "轻 L"
+      },
+      {
+        "key": "rodType",
+        "label": "轮座类型",
+        "value": "直柄纺车"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1aad-7ff0-9d1f-a469af86bc2d",
+    "slug": "canyon-neuron-cf-8-2026",
+    "title": "Canyon Neuron CF 8",
+    "model": "Neuron CF 8",
+    "year": 2026,
+    "oneLiner": "140mm 全能林道悬挂、碳纤车架和 1x12 传动，适合把爬坡效率与下坡容错放在同一台车上。",
+    "priceMin": 20153,
+    "priceMax": 20153,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw07984cc9/images/full/full_2023_/2023/full_2023_3170_neuron-cf-8_sr-bk_P5.png?sw=1145&sh=645&sm=fit&sfrm=png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 87.4,
+    "brand": {
+      "slug": "canyon",
+      "name": "Canyon",
+      "nameCn": "佳能道"
+    },
+    "categorySlug": "mtb",
+    "specs": {
+      "bikeType": "trail",
+      "frameMaterial": "Carbon (CF)",
+      "wheelSize": "XS/S 27.5\"；M/L/XL 29\"",
+      "geometryNote": "Canyon Neuron CF 官方几何表；XS/S 使用 27.5 英寸轮径，M/L/XL 使用 29 英寸轮径。",
+      "frontTravel": 140,
+      "rearTravel": 140,
+      "suspension": "FOX 34 Float Performance GRIP 前叉 + FOX Float DPS Performance 后避震",
+      "groupset": "Shimano SLX 12s",
+      "drivetrain": "1x12，10-51T",
+      "brakes": "hydraulic-disc",
+      "wheelset": "DT Swiss XM 1700",
+      "tireSize": "2.4\"（按尺码适配 27.5 / 29）",
+      "dropper": "Canyon G5，150–200mm（按尺码）",
+      "scenes": [
+        "trail",
+        "climbing",
+        "descending",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "全能林道 Trail"
+      },
+      {
+        "key": "frontTravel",
+        "label": "前叉行程",
+        "value": "140mm"
+      },
+      {
+        "key": "rearTravel",
+        "label": "后避震行程",
+        "value": "140mm"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "林道 Trail · 爬坡 · 下坡 · 全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1acc-715e-9eee-184ae658430d",
+    "slug": "canyon-spectral-cf-7-2026",
+    "title": "Canyon Spectral CF 7",
+    "model": "Spectral CF 7",
+    "year": 2026,
+    "oneLiner": "150mm 前叉、140mm 后避震和可切换 29 / Mullet 轮径，面向更激进的全能林道骑行。",
+    "priceMin": 28793,
+    "priceMax": 28793,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1787554526/2027_FULL_spectral_cf-7_4380_M179_P08_P5_29_yyqkjb",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 88.3,
+    "brand": {
+      "slug": "canyon",
+      "name": "Canyon",
+      "nameCn": "佳能道"
+    },
+    "categorySlug": "mtb",
+    "specs": {
+      "bikeType": "trail",
+      "frameMaterial": "CF 页面版本（组件材质待复核）",
+      "completeWeight": 15.99,
+      "wheelSize": "29\"；可按配置切换 Mullet",
+      "geometryNote": "Canyon Spectral CF 官方表中的 Mullet 几何；切换为 29 英寸后，轮距与骑姿会按官方配置表变化，购买前需确认轮径版本。",
+      "frontTravel": 150,
+      "rearTravel": 140,
+      "suspension": "FOX 36 Rhythm 前叉 + FOX Float X Performance 后避震",
+      "groupset": "Shimano Deore",
+      "drivetrain": "1x12，10-51T",
+      "brakes": "hydraulic-disc",
+      "wheelset": "XC 30 AL / END30AL",
+      "tireSize": "29x2.4\"",
+      "dropper": "150–230mm（按尺码）",
+      "scenes": [
+        "trail",
+        "climbing",
+        "descending",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "全能林道 Trail"
+      },
+      {
+        "key": "completeWeight",
+        "label": "整车重量",
+        "value": "15.99kg"
+      },
+      {
+        "key": "frontTravel",
+        "label": "前叉行程",
+        "value": "150mm"
+      },
+      {
+        "key": "rearTravel",
+        "label": "后避震行程",
+        "value": "140mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1ae2-74be-9da9-be482d41fa0a",
+    "slug": "giant-trance-x-advanced-0-2024",
+    "title": "Giant Trance X Advanced 0",
+    "model": "Trance X Advanced 0",
+    "year": 2024,
+    "oneLiner": "150mm 前叉、140mm Maestro 后避震和可切换后轮尺寸，适合技术林道与高速下坡。",
+    "priceMin": 57600,
+    "priceMax": 57600,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/skym90dx4rx42jofovsh/MY24TranceXAdvanced0_ColorABlueDragonfly.jpg",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 87.4,
+    "brand": {
+      "slug": "giant",
+      "name": "Giant",
+      "nameCn": "捷安特"
+    },
+    "categorySlug": "mtb",
+    "specs": {
+      "bikeType": "trail",
+      "frameMaterial": "Advanced-Grade Composite",
+      "wheelSize": "前 29\"；后 29\" 或 27.5\" Mullet",
+      "geometryNote": "Giant Trance X 官方页面给出三档 Flip Chip 几何；当前保留官方角度范围与轮径选项，Stack、Reach 和不同尺码完整表待补齐。",
+      "frontTravel": 150,
+      "rearTravel": 140,
+      "suspension": "FOX 36 Factory GRIP2 150mm + Giant Maestro 140mm",
+      "groupset": "SRAM XO T-Type AXS",
+      "drivetrain": "1x12，30T",
+      "brakes": "hydraulic-disc",
+      "wheelset": "Giant TRX 碳纤轮组，30mm 内宽",
+      "tireSize": "前 29\"；后 29\" / 27.5\"（按设定）",
+      "dropper": "按尺码与配置",
+      "scenes": [
+        "trail",
+        "climbing",
+        "descending",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "全能林道 Trail"
+      },
+      {
+        "key": "frontTravel",
+        "label": "前叉行程",
+        "value": "150mm"
+      },
+      {
+        "key": "rearTravel",
+        "label": "后避震行程",
+        "value": "140mm"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "林道 Trail · 爬坡 · 下坡 · 全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1af6-7a12-9732-c75694865cbb",
+    "slug": "giant-xtc-advanced-29-1-2026",
+    "title": "Giant XTC Advanced 29 1",
+    "model": "XTC Advanced 29 1",
+    "year": 2026,
+    "oneLiner": "100mm 前叉、碳纤硬尾和 XT 1x12 传动，面向高效率 XC 爬坡与越野路线。",
+    "priceMin": 28800,
+    "priceMax": 28800,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_600%2Cq_80%2Cw_800/qrpefgqfjrzq6x21nwsw/MY26XTCAdvanced291_ColorAAbyssBlack_Bronze.jpg",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 79.9,
+    "brand": {
+      "slug": "giant",
+      "name": "Giant",
+      "nameCn": "捷安特"
+    },
+    "categorySlug": "mtb",
+    "specs": {
+      "bikeType": "hardtail",
+      "frameMaterial": "Advanced-grade Composite",
+      "wheelSize": "29\"",
+      "geometryNote": "Giant XTC Advanced 29 官方几何表；硬尾车的有效骑姿还会明显受前叉下沉量和把位影响。",
+      "frontTravel": 100,
+      "rearTravel": 0,
+      "suspension": "Fox 32 Float Step Cast Performance 100mm，双档锁定",
+      "groupset": "Shimano Deore XT M8100",
+      "drivetrain": "1x12，10-51T，32T",
+      "brakes": "hydraulic-disc",
+      "wheelset": "Giant XCR 2 Carbon 29 WheelSystem",
+      "tireSize": "前 29x2.4\"；后 29x2.25\"",
+      "dropper": "Giant Contact Switch Core，100 / 120mm（按尺码）",
+      "scenes": [
+        "cross-country",
+        "climbing",
+        "trail"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "硬尾越野"
+      },
+      {
+        "key": "frontTravel",
+        "label": "前叉行程",
+        "value": "100mm"
+      },
+      {
+        "key": "rearTravel",
+        "label": "后避震行程",
+        "value": "0mm"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "越野 XC · 爬坡 · 林道 Trail"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1b07-749d-9bae-87a3c842b147",
+    "slug": "specialized-s-works-epic-8-2026",
+    "title": "Specialized S-Works Epic 8",
+    "model": "S-Works Epic 8",
+    "year": 2026,
+    "oneLiner": "120mm XC 全避震、FACT 12m 碳纤车架和 Flight Attendant 电子悬挂，服务于竞赛与高速越野。",
+    "priceMin": 108000,
+    "priceMax": 108000,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://assets.specialized.com/i/specialized/90326-00_EPIC-8-SW-CARB-BLUPRL-METWHTSIL_HERO-SQUARE",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 85.5,
+    "brand": {
+      "slug": "specialized",
+      "name": "Specialized",
+      "nameCn": "闪电"
+    },
+    "categorySlug": "mtb",
+    "specs": {
+      "bikeType": "xc",
+      "frameMaterial": "S-Works FACT 12m Carbon",
+      "completeWeight": 10,
+      "wheelSize": "29\"",
+      "geometryNote": "Specialized S-Works Epic 8 官方页面列出 S/M/L/XL 尺码；当前内容只接入尺码选项，Stack、Reach 等完整几何待官方表格补齐。",
+      "frontTravel": 120,
+      "rearTravel": 120,
+      "suspension": "RockShox SID Ultimate + SIDLuxe Ultimate Flight Attendant",
+      "groupset": "SRAM XX SL Eagle AXS",
+      "drivetrain": "1x12，10-52T，34T",
+      "brakes": "hydraulic-disc",
+      "wheelset": "Roval Control World Cup 碳纤轮组",
+      "tireSize": "29x2.35\"",
+      "dropper": "RockShox Reverb AXS，125 / 150 / 175mm（按尺码）",
+      "scenes": [
+        "cross-country",
+        "climbing",
+        "trail"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "越野竞赛 XC"
+      },
+      {
+        "key": "completeWeight",
+        "label": "整车重量",
+        "value": "10kg"
+      },
+      {
+        "key": "frontTravel",
+        "label": "前叉行程",
+        "value": "120mm"
+      },
+      {
+        "key": "rearTravel",
+        "label": "后避震行程",
+        "value": "120mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1b19-7170-b303-3d9fed87ff41",
+    "slug": "specialized-stumpjumper-15-comp-2025",
+    "title": "Specialized Stumpjumper 15 Comp",
+    "model": "Stumpjumper 15 Comp",
+    "year": 2025,
+    "oneLiner": "GENIE 后避震、145mm 后行程和可变几何，把短行程效率与林道下坡的控制感放在一起。",
+    "priceMin": 36000,
+    "priceMax": 36000,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://assets.specialized.com/i/specialized/93325-50_SJ-15-COMP-SEA-SILDST_HERO-SQUARE",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 89.1,
+    "brand": {
+      "slug": "specialized",
+      "name": "Specialized",
+      "nameCn": "闪电"
+    },
+    "categorySlug": "mtb",
+    "specs": {
+      "bikeType": "trail",
+      "frameMaterial": "FACT 11m Carbon",
+      "completeWeight": 14.87,
+      "wheelSize": "前 29\"；后轮按尺码 27.5\" / 29\"",
+      "geometryNote": "Specialized Stumpjumper 15 官方尺码表；S1 前叉为 140mm，S2–S6 为 150mm，最终几何需按具体调节与轮径确认。",
+      "frontTravel": 150,
+      "rearTravel": 145,
+      "suspension": "FOX Float 36 Rhythm 前叉 + FOX Float Performance GENIE 后避震",
+      "groupset": "SRAM S-1000 Eagle T-Type AXS",
+      "drivetrain": "1x12，10-52T",
+      "brakes": "hydraulic-disc",
+      "wheelset": "Specialized 铝合金轮组，30mm 内宽，真空胎准备",
+      "tireSize": "前 29x2.3\"；后轮按尺码 27.5 / 29",
+      "dropper": "X-Fusion Manic 升降座管",
+      "scenes": [
+        "trail",
+        "climbing",
+        "descending",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "全能林道 Trail"
+      },
+      {
+        "key": "completeWeight",
+        "label": "整车重量",
+        "value": "14.87kg"
+      },
+      {
+        "key": "frontTravel",
+        "label": "前叉行程",
+        "value": "150mm"
+      },
+      {
+        "key": "rearTravel",
+        "label": "后避震行程",
+        "value": "145mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1b36-7ede-95f4-fcbcc81d8343",
+    "slug": "canyon-aeroad-cf-slx-7-di2-2027",
+    "title": "Canyon Aeroad CF SLX 7 Di2",
+    "model": "Aeroad CF SLX 7 Di2",
+    "year": 2027,
+    "oneLiner": "以空力车架、65mm 碳纤轮组和 105 Di2 为主轴，适合把平路速度和竞赛姿态放在第一位的骑手。",
+    "priceMin": 35993,
+    "priceMax": 35993,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/b_rgb:F2F2F2/f_jpg/q_auto/v1777532962/2027_FULL_aeroad_cf-slx-7-di2_4531_R107_P01_zsqbop",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 82.7,
+    "brand": {
+      "slug": "canyon",
+      "name": "Canyon",
+      "nameCn": "佳能道"
+    },
+    "categorySlug": "road-bike",
+    "specs": {
+      "bikeType": "aero",
+      "frameMaterial": "Carbon (CF SLX)",
+      "frameWeight": 1050,
+      "completeWeight": 7.96,
+      "tireClearance": 32,
+      "geometryNote": "Canyon Aeroad CF SLX 官方几何表；Aeroad 的把组宽度与座垫高度也会影响最终骑行姿势。",
+      "groupset": "Shimano 105 Di2，带 4iiii 功率计",
+      "drivetrain": "2x12",
+      "brakes": "hydraulic-disc",
+      "wheelset": "DT Swiss ARC 1600，65mm 碳纤轮组",
+      "gearRange": "105 Di2，竞赛取向",
+      "fit": "PACE 可调一体式把组，偏空力竞赛",
+      "scenes": [
+        "racing",
+        "group-ride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "空力竞赛"
+      },
+      {
+        "key": "frameWeight",
+        "label": "车架重量",
+        "value": "1050g"
+      },
+      {
+        "key": "completeWeight",
+        "label": "整车重量",
+        "value": "7.96kg"
+      },
+      {
+        "key": "tireClearance",
+        "label": "最大胎宽",
+        "value": "32mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1b55-78b8-be4d-a116d692a4fc",
+    "slug": "canyon-endurace-cf-7-2027",
+    "title": "Canyon Endurace CF 7",
+    "model": "Endurace CF 7",
+    "year": 2027,
+    "oneLiner": "以碳纤车架、38mm 胎容和 Shimano 105 机械套件为核心，适合把舒适和效率放在一起的长距离公路骑行。",
+    "priceMin": 21593,
+    "priceMax": 21593,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1779435706/2027_FULL_endurace_cf-7_4627_R129_P01_okspta",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 85,
+    "brand": {
+      "slug": "canyon",
+      "name": "Canyon",
+      "nameCn": "佳能道"
+    },
+    "categorySlug": "road-bike",
+    "specs": {
+      "bikeType": "endurance",
+      "frameMaterial": "Carbon (CF)",
+      "frameWeight": 1080,
+      "tireClearance": 38,
+      "geometryNote": "Canyon Endurace CF 官方几何表；Endurace CF 7 与 CF 7 Di2 使用同一车架平台，配置与价格仍需分别核对。",
+      "groupset": "Shimano 105 RD-R7100 12s",
+      "drivetrain": "2x12，50/34，11-36",
+      "brakes": "hydraulic-disc",
+      "wheelset": "DT Swiss Endurance LN，铝合金",
+      "gearRange": "11-36T / 50-34T",
+      "fit": "Sport Geometry，偏舒适的长途设定",
+      "scenes": [
+        "endurance",
+        "all-road",
+        "group-ride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "耐力长途"
+      },
+      {
+        "key": "frameWeight",
+        "label": "车架重量",
+        "value": "1080g"
+      },
+      {
+        "key": "tireClearance",
+        "label": "最大胎宽",
+        "value": "38mm"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "长途耐力 · 泛铺装 · 团骑"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1b6b-726b-86d2-9abc0d0a0297",
+    "slug": "canyon-endurace-cf-7-di2-2027",
+    "title": "Canyon Endurace CF 7 Di2",
+    "model": "Endurace CF 7 Di2",
+    "year": 2027,
+    "oneLiner": "在 Endurace 的耐力几何和 38mm 胎容上换用 Shimano 105 Di2，适合长途团骑与日常训练。",
+    "priceMin": 25913,
+    "priceMax": 25913,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1777355662/2027_FULL_endurace_cf-7-di2_4421_R129_P01_oopfry",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 85.4,
+    "brand": {
+      "slug": "canyon",
+      "name": "Canyon",
+      "nameCn": "佳能道"
+    },
+    "categorySlug": "road-bike",
+    "specs": {
+      "bikeType": "endurance",
+      "frameMaterial": "Carbon (CF)",
+      "frameWeight": 1080,
+      "tireClearance": 38,
+      "geometryNote": "Canyon Endurace CF 官方几何表；Endurace CF 7 与 CF 7 Di2 使用同一车架平台，配置与价格仍需分别核对。",
+      "groupset": "Shimano 105 Di2",
+      "drivetrain": "2x12，50/34，11-36",
+      "brakes": "hydraulic-disc",
+      "wheelset": "DT Swiss Endurance LN，铝合金",
+      "gearRange": "11-36T / 50-34T",
+      "fit": "Sport Geometry，偏舒适的长途设定",
+      "scenes": [
+        "endurance",
+        "all-road",
+        "group-ride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "耐力长途"
+      },
+      {
+        "key": "frameWeight",
+        "label": "车架重量",
+        "value": "1080g"
+      },
+      {
+        "key": "tireClearance",
+        "label": "最大胎宽",
+        "value": "38mm"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "长途耐力 · 泛铺装 · 团骑"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1b7d-7a7f-aa50-83a3ab66e485",
+    "slug": "giant-defy-advanced-2-2026",
+    "title": "Giant Defy Advanced 2",
+    "model": "Defy Advanced 2",
+    "year": 2026,
+    "oneLiner": "以 Advanced 级碳纤车架、40mm 最大胎容和 Shimano 105 为核心，适合长途、烂路和不想被姿势拖累的骑手。",
+    "priceMin": 23760,
+    "priceMax": 23760,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80/ln09xatfxrvyqelva1lt/MY26DefyAdvanced2_ColorAAbyssBlack.jpg",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 84.8,
+    "brand": {
+      "slug": "giant",
+      "name": "Giant",
+      "nameCn": "捷安特"
+    },
+    "categorySlug": "road-bike",
+    "specs": {
+      "bikeType": "endurance",
+      "frameMaterial": "Advanced-grade Composite",
+      "tireClearance": 40,
+      "geometryNote": "Giant Defy Advanced 2 官方几何表；Giant 建议结合身高、内长与经销商尺寸向导确认。",
+      "groupset": "Shimano 105",
+      "drivetrain": "2x12，50/34，11-36",
+      "brakes": "hydraulic-disc",
+      "wheelset": "Giant P-R1 Disc，铝合金",
+      "gearRange": "11-36T / 50-34T",
+      "fit": "D-Fuse 车把与座杆，耐力长途设定",
+      "scenes": [
+        "endurance",
+        "all-road",
+        "group-ride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "耐力长途"
+      },
+      {
+        "key": "tireClearance",
+        "label": "最大胎宽",
+        "value": "40mm"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "长途耐力 · 泛铺装 · 团骑"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1b8d-763b-a1b8-3c6fe7095442",
+    "slug": "giant-propel-advanced-pro-0-axs-2027",
+    "title": "Giant Propel Advanced Pro 0 AXS",
+    "model": "Propel Advanced Pro 0 AXS",
+    "year": 2027,
+    "oneLiner": "以 50mm 碳纤轮组、空力一体把组和 SRAM Force AXS 为核心，面向平路高速、冲刺和竞赛节奏。",
+    "priceMin": 56160,
+    "priceMax": 56160,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/u9r0a1uqpr0rustxbxbn/MY27PropelAdvancedPro0-AXS_ColorAObsidianPulse.jpg",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 83.7,
+    "brand": {
+      "slug": "giant",
+      "name": "Giant",
+      "nameCn": "捷安特"
+    },
+    "categorySlug": "road-bike",
+    "specs": {
+      "bikeType": "aero",
+      "frameMaterial": "Advanced-grade Composite",
+      "geometryNote": "Giant Propel Advanced Pro 2027 官方几何表；一体式把组的宽度、把立和座杆设定需在购买前确认。",
+      "groupset": "SRAM Force AXS E1，带功率计",
+      "drivetrain": "2x12，35/48",
+      "brakes": "hydraulic-disc",
+      "wheelset": "Giant SLR 0 50 Carbon WheelSystem",
+      "gearRange": "SRAM Force AXS，空力竞赛取向",
+      "fit": "Vector 复合座杆与一体式空力把组",
+      "scenes": [
+        "racing",
+        "group-ride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "空力竞赛"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "竞赛 · 团骑"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1ba1-7f54-9d09-74b85dcde7c9",
+    "slug": "giant-tcr-advanced-pro-0-axs-2026",
+    "title": "Giant TCR Advanced Pro 0 AXS",
+    "model": "TCR Advanced Pro 0 AXS",
+    "year": 2026,
+    "oneLiner": "以 Advanced 级碳纤车架、SRAM Force AXS 和功率计构成均衡竞赛平台，适合爬坡、下坡和全能团骑。",
+    "priceMin": 50400,
+    "priceMax": 50400,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80/jtismbbz7rrw6bsjelem/MY26TCRAdvancedPro0-AXS_ColorACarbon.jpg",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 86.9,
+    "brand": {
+      "slug": "giant",
+      "name": "Giant",
+      "nameCn": "捷安特"
+    },
+    "categorySlug": "road-bike",
+    "specs": {
+      "bikeType": "race",
+      "frameMaterial": "Advanced-grade Composite",
+      "geometryNote": "Giant TCR Advanced Pro 官方几何表；竞赛姿势对把位和坐垫高度更敏感，不能只按身高单项决定。",
+      "groupset": "SRAM Force AXS E1，带 Quarq 功率计",
+      "drivetrain": "2x12，35/48",
+      "brakes": "hydraulic-disc",
+      "wheelset": "Giant SLR 碳纤轮组",
+      "gearRange": "SRAM Force AXS，竞赛取向",
+      "fit": "TCR 综合竞赛几何",
+      "scenes": [
+        "racing",
+        "climbing",
+        "group-ride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "综合竞赛"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "竞赛 · 爬坡 · 团骑"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1bb4-78f8-b465-cb364362fe96",
+    "slug": "specialized-s-works-tarmac-sl8-red-axs-2026",
+    "title": "Specialized S-Works Tarmac SL8 SRAM RED AXS",
+    "model": "S-Works Tarmac SL8 SRAM RED AXS",
+    "year": 2026,
+    "oneLiner": "以 FACT 12r 车架、6.62kg 官方参考重量和 Quarq 功率计组成旗舰竞赛车，优先服务轻量、爬坡和高强度训练。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://assets.specialized.com/i/specialized/94926-02_TARMAC-SL8-SW-AXS-PRMFJDMET-METWHT_HERO-SQUARE",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 86.6,
+    "brand": {
+      "slug": "specialized",
+      "name": "Specialized",
+      "nameCn": "闪电"
+    },
+    "categorySlug": "road-bike",
+    "specs": {
+      "bikeType": "race",
+      "frameMaterial": "S-Works Tarmac SL8 FACT 12r Carbon",
+      "completeWeight": 6.62,
+      "geometryNote": "Specialized Tarmac SL8 官方几何表；官方页面未在同一表格中给出骑手身高区间，因此这里保留车架尺码、Stack、Reach 和头管角。",
+      "groupset": "SRAM RED AXS E1，带 Quarq 功率计",
+      "drivetrain": "2x12，48/35，10-33",
+      "brakes": "hydraulic-disc",
+      "wheelset": "Roval Rapide CLX III，碳纤轮组",
+      "gearRange": "10-33T / 48-35T",
+      "fit": "Rider First Engineered，轻量竞赛取向",
+      "scenes": [
+        "racing",
+        "climbing",
+        "group-ride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "综合竞赛"
+      },
+      {
+        "key": "completeWeight",
+        "label": "整车重量",
+        "value": "6.62kg"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "竞赛 · 爬坡 · 团骑"
+      }
+    ]
+  },
+  {
+    "id": "01a0be38-1bc4-7826-92a4-5e5404d990a5",
+    "slug": "specialized-tarmac-sl8-comp-rival-axs-2026",
+    "title": "Specialized Tarmac SL8 Comp SRAM Rival AXS",
+    "model": "Tarmac SL8 Comp SRAM Rival AXS",
+    "year": 2026,
+    "oneLiner": "用 FACT 10r 碳纤车架和 SRAM Rival AXS 覆盖竞赛、公路爬坡与团骑，是一台强调速度也保留日常可用性的竞赛车。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://assets.specialized.com/i/specialized/94926-54_TARMAC-SL8-COMP-AXS-CARB-WHT_HERO-SQUARE",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 85.8,
+    "brand": {
+      "slug": "specialized",
+      "name": "Specialized",
+      "nameCn": "闪电"
+    },
+    "categorySlug": "road-bike",
+    "specs": {
+      "bikeType": "race",
+      "frameMaterial": "Tarmac SL8 FACT 10r Carbon",
+      "geometryNote": "Specialized Tarmac SL8 官方几何表；官方页面未在同一表格中给出骑手身高区间，因此这里保留车架尺码、Stack、Reach 和头管角。",
+      "groupset": "SRAM Rival AXS E1",
+      "drivetrain": "2x12，48/35，10-36",
+      "brakes": "hydraulic-disc",
+      "wheelset": "DT Swiss R470，支持真空胎",
+      "gearRange": "10-36T / 48-35T",
+      "fit": "Rider First Engineered，竞赛取向",
+      "scenes": [
+        "racing",
+        "climbing",
+        "group-ride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "bikeType",
+        "label": "车型取向",
+        "value": "综合竞赛"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "竞赛 · 爬坡 · 团骑"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2b12-7504-9310-a349a1410840",
+    "slug": "arbor-a-frame-2025",
+    "title": "Arbor A-Frame 2025",
+    "model": "A-Frame",
+    "year": 2025,
+    "oneLiner": "一块要求你先把技术练好的板子。它的边刃精度接近硬鞋刻滑板，但依然保留了软鞋的舒适站位。",
+    "priceMin": 6599,
+    "priceMax": 6599,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 60.6,
+    "brand": {
+      "slug": "arbor",
+      "name": "Arbor",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 162,
+      "effectiveEdge": 1330,
+      "sidecut": 9.1,
+      "waistWidth": 260,
+      "stanceSetback": 25,
+      "profile": "纯 Camber",
+      "profileFamily": "camber",
+      "shape": "定向",
+      "core": "FSC 白杨 / 竹",
+      "fiberglass": "Triax + 碳纤维带",
+      "base": "烧结 7200",
+      "weight": 3180,
+      "flex": 8.5,
+      "damping": 8.5,
+      "pop": 5.5,
+      "turnRadiusFeel": "长弧，需要主动压板",
+      "scenes": [
+        "carving",
+        "all-mountain"
+      ],
+      "warranty": 3
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "162cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1330mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "9.1m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "260mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2b3b-715a-bb53-944af2efe6f7",
+    "slug": "bataleon-evil-twin-2025",
+    "title": "Bataleon Evil Twin 2025",
+    "model": "Evil Twin",
+    "year": 2025,
+    "oneLiner": "勺形板头把卡刃这件事基本消除了。它是从新手过渡到公园最平滑的一块板，容错高但不软塌。",
+    "priceMin": 4899,
+    "priceMax": 4899,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-06.png?auth_key=12936507cc57135902558c86b8e8de33d959f7af4b93ac4078e9012b69c426e0",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 74.3,
+    "brand": {
+      "slug": "bataleon",
+      "name": "Bataleon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 154,
+      "effectiveEdge": 1170,
+      "sidecut": 7.4,
+      "waistWidth": 251,
+      "stanceSetback": 0,
+      "profile": "3BT（板头尾勺形 + 板下 Camber）",
+      "profileFamily": "hybrid",
+      "shape": "真双向",
+      "core": "白杨",
+      "fiberglass": "Biax",
+      "base": "烧结 4400",
+      "weight": 2720,
+      "flex": 5,
+      "damping": 6,
+      "pop": 7.5,
+      "turnRadiusFeel": "极宽松，入弯无阻力",
+      "scenes": [
+        "freestyle",
+        "beginner"
+      ],
+      "warranty": 2
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "154cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1170mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.4m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "251mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2b57-7d7a-85c9-baeea48afcc2",
+    "slug": "burton-custom-camber-2026",
+    "title": "Burton Custom Camber 2026",
+    "model": "Custom Camber",
+    "year": 2026,
+    "oneLiner": "全山地基准板。它不试图讨好任何人，只是把「稳定 + 精准」这两件事做到该价位的上限。",
+    "priceMin": 6299,
+    "priceMax": 6299,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 68.8,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 158,
+      "effectiveEdge": 1250,
+      "sidecut": 7.9,
+      "waistWidth": 253,
+      "stanceSetback": 15,
+      "profile": "纯 Camber",
+      "profileFamily": "camber",
+      "shape": "定向双向",
+      "core": "FSC 认证杨木 / 双轴玻纤",
+      "fiberglass": "Triax + Biax",
+      "base": "烧结 7200",
+      "weight": 2980,
+      "flex": 7,
+      "damping": 8,
+      "pop": 7.5,
+      "turnRadiusFeel": "长弧稳、短弧需发力",
+      "scenes": [
+        "all-mountain",
+        "carving"
+      ],
+      "warranty": 3
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "158cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1250mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.9m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "253mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2b6a-7e41-884b-233d2c386488",
+    "slug": "burton-process-2026",
+    "title": "Burton Process 2026",
+    "model": "Process",
+    "year": 2026,
+    "oneLiner": "比 Custom 软两度、比 DOA 稳一档，正好卡在公园与全山之间的那个位置。",
+    "priceMin": 5499,
+    "priceMax": 5499,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.3,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1200,
+      "sidecut": 7.7,
+      "waistWidth": 252,
+      "stanceSetback": 12,
+      "profile": "纯 Camber",
+      "profileFamily": "camber",
+      "shape": "真双向",
+      "core": "FSC 杨木 / 双轴玻纤",
+      "fiberglass": "Triax + Biax",
+      "base": "烧结 7200",
+      "weight": 2790,
+      "flex": 5,
+      "damping": 7,
+      "pop": 8.5,
+      "turnRadiusFeel": "灵活，中短半径",
+      "scenes": [
+        "freestyle",
+        "all-mountain"
+      ],
+      "warranty": 3
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1200mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.7m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "252mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3d1d-7210-9630-5c480f7aceb3",
+    "slug": "capita-aeronaut-2027",
+    "title": "CAPiTA Aeronaut Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "Aeronaut",
+    "year": 2027,
+    "oneLiner": "定向传统正拱的度假全山板，强调速度、侧击和连续腾空，适合已经能主动压板并想提升山地表现的滑手。",
+    "priceMin": 4896,
+    "priceMax": 4896,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST02-AERONAUT-TOP.png?v=1776884582",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 76.1,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1230,
+      "sidecut": 8.5,
+      "waistWidth": 253,
+      "stanceSetback": 20.3,
+      "profile": "ALPINE V3 DIRECTIONAL",
+      "profileFamily": "camber",
+      "shape": "DIRECTIONAL 0.8\" SETBACK",
+      "core": "PANDA HOVER CORE",
+      "fiberglass": "HOLYSHEET TRI/BI MAGIC BEAN RESIN",
+      "base": "HYPERDRIVE ADV XT BASE",
+      "flex": 6,
+      "scenes": [
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1230mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.5m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "253mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3d2d-73a8-bc2f-48dd938460d1",
+    "slug": "capita-dark-horse-2027",
+    "title": "CAPiTA Dark Horse Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "Dark Horse",
+    "year": 2027,
+    "oneLiner": "以较低门槛切入公园和自由式的双向板，保留跳台、侧击与道具所需的灵活性，也能应付日常度假区巡航。",
+    "priceMin": 3600,
+    "priceMax": 3600,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST03-DARK-HORSE-TOP.png?v=1776884600",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 74.1,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 154,
+      "effectiveEdge": 1188,
+      "sidecut": 8,
+      "waistWidth": 254,
+      "stanceSetback": 0,
+      "profile": "PARK V1",
+      "profileFamily": "hybrid",
+      "shape": "TRUE TWIN",
+      "core": "DUAL CORE",
+      "fiberglass": "HOLYSHEET TRI/BI MAGIC BEAN RESIN",
+      "base": "SUPERDRIVE BASE",
+      "flex": 6,
+      "scenes": [
+        "freestyle",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "154cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1188mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "254mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2b7c-7f80-a691-bc91376d35dd",
+    "slug": "capita-defenders-of-awesome-2026",
+    "title": "Capita Defenders of Awesome 2026",
+    "model": "Defenders of Awesome",
+    "year": 2026,
+    "oneLiner": "公园里的通用答案。弹性是它的全部性格，起跳时机对了它会把你送得比预期更高。",
+    "priceMin": 5299,
+    "priceMax": 5299,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 75.4,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 155,
+      "effectiveEdge": 1195,
+      "sidecut": 7.6,
+      "waistWidth": 252,
+      "stanceSetback": 0,
+      "profile": "Resort V1（Camber 主导 + 板头尾反弓）",
+      "profileFamily": "hybrid",
+      "shape": "真双向",
+      "core": "Dual Core 白杨",
+      "fiberglass": "Biax Carbon",
+      "base": "挤压 4000",
+      "weight": 2760,
+      "flex": 5.5,
+      "damping": 6,
+      "pop": 9,
+      "turnRadiusFeel": "灵活，短半径很快",
+      "scenes": [
+        "freestyle",
+        "all-mountain"
+      ],
+      "warranty": 2
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "155cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1195mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.6m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "252mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2b94-7ddd-9f9e-ef2a6f7528ec",
+    "slug": "capita-defenders-of-awesome-2027",
+    "title": "CAPiTA D.O.A. Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "Defenders of Awesome",
+    "year": 2027,
+    "oneLiner": "兼顾度假区全山和自由式的经典双向板，响应、弹性和可玩性平衡，适合想在跳台、侧击和日常巡航之间切换的滑手。",
+    "priceMin": 4320,
+    "priceMax": 4320,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST03-D.O.A.-TOP.png?v=1776884618",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 75.3,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 156,
+      "effectiveEdge": 1234,
+      "sidecut": 8,
+      "waistWidth": 252,
+      "stanceSetback": 0,
+      "profile": "Resort V1 + Flat Kick Tech",
+      "profileFamily": "hybrid",
+      "shape": "TRUE TWIN",
+      "core": "P2 SUPERLIGHT CORE",
+      "fiberglass": "HYBRID CARBON HOLYSHEET BI/BI + MAGIC BEAN RESIN",
+      "base": "QUANTUM DRIVE BASE",
+      "flex": 5.5,
+      "scenes": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "156cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1234mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "252mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2ba2-7ef5-86f7-13c5bfb80560",
+    "slug": "capita-horrorscope-2024",
+    "title": "Capita Horrorscope 2024",
+    "model": "Horrorscope",
+    "year": 2024,
+    "oneLiner": "全反弓板型让卡刃几乎不可能发生。它是新手最友好的入门板之一，也能陪你滑完第一个公园季。",
+    "priceMin": 3699,
+    "priceMax": 3699,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 66.3,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 153,
+      "effectiveEdge": 1160,
+      "sidecut": 7.3,
+      "waistWidth": 250,
+      "stanceSetback": 0,
+      "profile": "Rocker（全反弓）",
+      "profileFamily": "rocker",
+      "shape": "真双向",
+      "core": "Dual Core 白杨",
+      "fiberglass": "Biax",
+      "base": "挤压 4000",
+      "weight": 2580,
+      "flex": 4,
+      "damping": 5,
+      "pop": 5,
+      "turnRadiusFeel": "极宽松，几乎无阻力",
+      "scenes": [
+        "beginner",
+        "freestyle"
+      ],
+      "warranty": 2
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "153cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1160mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.3m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "250mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3d80-7075-8d0d-8cd34c833ef6",
+    "slug": "capita-indoor-survival-2027",
+    "title": "CAPiTA Indoor Survival Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "Indoor Survival",
+    "year": 2027,
+    "oneLiner": "偏公园和度假区的双向自由式板，用较软的硬度换取道具、跳台和地形转换中的灵活度，同时保留足够的脚下响应。",
+    "priceMin": 4536,
+    "priceMax": 4536,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST01-INDOOR-SURVIVAL-TOP.png?v=1776884610",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 74.6,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 156,
+      "effectiveEdge": 1211,
+      "sidecut": 7.96,
+      "waistWidth": 258,
+      "stanceSetback": 0,
+      "profile": "PARK V1 + FLAT KICK TECH",
+      "profileFamily": "hybrid",
+      "shape": "TRUE TWIN",
+      "core": "META CORE",
+      "fiberglass": "HOLYSHEET TRI/BI MAGIC BEAN RESIN",
+      "base": "QUANTUM DRIVE BASE",
+      "flex": 4.5,
+      "scenes": [
+        "freestyle",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "156cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1211mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.96m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "258mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3d92-743d-9053-fbdbb04460ec",
+    "slug": "capita-kazu-kokubo-pro-2027",
+    "title": "CAPiTA Kazu Kokubo Pro Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "Kazu Kokubo Pro",
+    "year": 2027,
+    "oneLiner": "紧凑而有力量的粉雪定向板，板头浮力和轻微收尾让它在侧country与变化地形里更灵活，适合有主动控板能力的滑手。",
+    "priceMin": 4896,
+    "priceMax": 4896,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD04_KAZU_cb4bcbc1-e63b-4922-ba86-d03579561fe4.jpg?v=1776978826",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 75.7,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1221,
+      "sidecut": 8.4,
+      "waistWidth": 255,
+      "stanceSetback": 20.3,
+      "profile": "RESORT V3 DIRECTIONAL",
+      "profileFamily": "hybrid",
+      "shape": "DIRECTIONAL 0.8\" SETBACK",
+      "core": "PANDA HOVER CORE",
+      "fiberglass": "HOLYSHEET TRI/BI + MAGIC BEAN RESIN",
+      "base": "HYPERDRIVE ADV XT BASE",
+      "flex": 6.5,
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1221mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.4m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "255mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3da2-7ba1-a74e-70df2ceee9c0",
+    "slug": "capita-mega-death-2027",
+    "title": "CAPiTA Mega Death Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "Mega Death",
+    "year": 2027,
+    "oneLiner": "面向高阶滑手的轻量高性能自由滑板，在高速度、硬雪和深雪中追求更强的支撑与响应，价格和使用门槛都较高。",
+    "priceMin": 8640,
+    "priceMax": 8640,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD01-MEGA-DEATH-159_1.png?v=1777402409&width=1024",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.7,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 159,
+      "effectiveEdge": 1221,
+      "sidecut": 8.4,
+      "waistWidth": 259,
+      "stanceSetback": 20.3,
+      "profile": "Alpine V1 Directional + Flat Kick Tech",
+      "profileFamily": "hybrid",
+      "shape": "DIRECTIONAL 0.8\" SETBACK",
+      "core": "THERMOPOLYMER STARSHIP CORE",
+      "fiberglass": "PURE MEGACARBON MARINE GRADE EPOXY RESIN",
+      "base": "MEGADRIVE XT BASE",
+      "flex": 6.5,
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "159cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1221mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.4m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "259mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3db2-7cde-ae77-3bc82a006c5b",
+    "slug": "capita-mega-merc-2027",
+    "title": "CAPiTA Mega Merc Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "Mega Merc",
+    "year": 2027,
+    "oneLiner": "以全山适应性为核心的高规格定向板，在硬雪、侧country和深雪之间保持强响应，适合想要一块高性能日常板的进阶滑手。",
+    "priceMin": 7200,
+    "priceMax": 7200,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD02_MEGA_MERC_0ecde98f-d861-4a1b-b13f-d286c1c58235.jpg?v=1776978817",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 74.1,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1215,
+      "sidecut": 7.85,
+      "waistWidth": 257,
+      "stanceSetback": 12.7,
+      "profile": "Resort V2 Directional + Flat Kick Tech",
+      "profileFamily": "hybrid",
+      "shape": "DIRECTIONAL 0.5\" SETBACK",
+      "core": "3D THERMOPOLYMER STARSHIP CORE",
+      "fiberglass": "HYBRID CARBON HOLYSHEET TRI/TRI FIBERGLASS + MEGACARBON MAGIC BEAN RESIN",
+      "base": "MEGADRIVE XT BASE",
+      "flex": 7,
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1215mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.85m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "257mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3dc2-7632-a94e-dbdd5134359f",
+    "slug": "capita-outerspace-living-2027",
+    "title": "CAPiTA Outerspace Living Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "Outerspace Living",
+    "year": 2027,
+    "oneLiner": "定向双向与全山混合拱的平衡路线，既能做自由式动作，也能在度假区和浅粉雪里保持稳定的日常可玩性。",
+    "priceMin": 3816,
+    "priceMax": 3816,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST05-OUTERSPACE-LIVING-TOP.png?v=1776884612",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 74.9,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 154,
+      "effectiveEdge": 1168,
+      "sidecut": 7.8,
+      "waistWidth": 250,
+      "stanceSetback": 12.7,
+      "profile": "RESORT V3",
+      "profileFamily": "hybrid",
+      "shape": "DIRECTIONAL TWIN 0.5\" SETBACK",
+      "core": "MULTIZONE DUAL CORE",
+      "fiberglass": "SPECIAL BLEND FIBERGLASS MAGIC BEAN RESIN",
+      "base": "SUPERDRIVE ADV BASE",
+      "flex": 5,
+      "scenes": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "154cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1168mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.8m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "250mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3dd1-7d6f-802e-c06c5f0ffd0d",
+    "slug": "capita-pathfinder-2027",
+    "title": "CAPiTA Pathfinder Camber Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "Pathfinder",
+    "year": 2027,
+    "oneLiner": "面向进阶初期和预算敏感用户的友好型双向板，转向轻松、容错较高，适合从基础动作走向公园和全山练习。",
+    "priceMin": 3240,
+    "priceMax": 3240,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST04-PATHFINDER-TOP.png?v=1776884552",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 71.7,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 151,
+      "effectiveEdge": 1203,
+      "sidecut": 7.7,
+      "waistWidth": 252,
+      "stanceSetback": 0,
+      "profile": "Park V2 + Flat Kick Tech",
+      "profileFamily": "rocker",
+      "shape": "TRUE TWIN",
+      "core": "DUAL CORE",
+      "fiberglass": "SPECIAL BLEND FIBERGLASS MAGIC BEAN RESIN",
+      "base": "SUPERDRIVE BASE",
+      "flex": 4,
+      "scenes": [
+        "freestyle",
+        "all-mountain",
+        "beginner"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "151cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1203mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.7m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "252mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3de0-7f24-a52d-e593f9412943",
+    "slug": "capita-sb-resort-twin-2027",
+    "title": "Spring Break Resort Twin Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "SB Resort Twin",
+    "year": 2027,
+    "oneLiner": "把 Spring Break 的造型和标准度假区双向结构结合起来，适合喜欢跳台、侧击和整山巡航的自由式用户。",
+    "priceMin": 4320,
+    "priceMax": 4320,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/SB04-RESORT-TWIN-TOP.png?v=1776884550",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.3,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 156,
+      "effectiveEdge": 1211,
+      "sidecut": 7.96,
+      "waistWidth": 258,
+      "stanceSetback": 0,
+      "profile": "RESORT V2 Directional + Flat Kick Tech",
+      "profileFamily": "hybrid",
+      "shape": "TRUE TWIN",
+      "core": "META CORE",
+      "fiberglass": "HOLYSHEET TRI/BI MAGIC BEAN RESIN",
+      "base": "POWDER DRIVE BASE",
+      "flex": 5,
+      "scenes": [
+        "freestyle",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "156cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1211mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.96m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "258mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3df3-7ac3-84eb-87f909672484",
+    "slug": "capita-sidewinder-2027",
+    "title": "CAPiTA Sidewinder Snowboard CAPiTA Snowboards | NA",
+    "model": "Sidewinder",
+    "year": 2027,
+    "oneLiner": "为刻滑和压弯设计的定向板，强调边刃抓地、长弧稳定和高速出弯，适合把主要时间放在整备雪道上的滑手。",
+    "priceMin": 3960,
+    "priceMax": 3960,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST06-SIDEWINDER-TOP.png?v=1776884613",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 70.9,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 159,
+      "effectiveEdge": 1225,
+      "sidecut": 7,
+      "waistWidth": 258,
+      "stanceSetback": 20.3,
+      "profile": "Alpine V3 Directional",
+      "profileFamily": "hybrid",
+      "shape": "DIRECTIONAL 0.8\" SETBACK",
+      "core": "DUAL CORE",
+      "fiberglass": "SPECIAL BLEND FIBERGLASS MAGIC BEAN RESIN",
+      "base": "QUANTUM DRIVE BASE",
+      "flex": 5.5,
+      "scenes": [
+        "carving",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "159cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1225mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "258mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3e02-7077-a96a-8d6930bcff86",
+    "slug": "capita-super-doa-2027",
+    "title": "CAPiTA Super D.O.A. Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "Super D.O.A.",
+    "year": 2027,
+    "oneLiner": "更强调技术感和响应的双向全山自由式板，适合喜欢跳台、侧击和强节奏巡航、并能驾驭偏硬设定的滑手。",
+    "priceMin": 5760,
+    "priceMax": 5760,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST01-SUPER-D.O.A.-TOP.png?v=1776884610",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 75.8,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 156,
+      "effectiveEdge": 1234,
+      "sidecut": 8,
+      "waistWidth": 252,
+      "stanceSetback": 0,
+      "profile": "RESORT V1 + Flat Kick Tech",
+      "profileFamily": "hybrid",
+      "shape": "TRUE TWIN",
+      "core": "3D THERMOPOLYMER STARSHIP CORE",
+      "fiberglass": "HYBRID SUPERCARBON HOLYSHEET TRI/TRI + MAGIC BEAN RESIN",
+      "base": "HYPERDRIVE / ADV XT BASE",
+      "flex": 6,
+      "scenes": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "156cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1234mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "252mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3e13-7f30-8486-49d3fbc75ba6",
+    "slug": "capita-the-black-snowboard-of-death-2027",
+    "title": "CAPiTA The Black Snowboard Of Death Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "The Black Snowboard of Death",
+    "year": 2027,
+    "oneLiner": "以全地形性能为核心的经典定向板，兼顾高速压雪、变化雪况和粉雪浮力，适合有经验的全山和自由滑手。",
+    "priceMin": 5400,
+    "priceMax": 5400,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD03_BSOD_43ad6df8-c222-4b12-93af-d408da7f7605.jpg?v=1776978812",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 74.6,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 159,
+      "effectiveEdge": 1221,
+      "sidecut": 8.4,
+      "waistWidth": 259,
+      "stanceSetback": 20.3,
+      "profile": "Alpine V1 Directional + Flat Kick Tech",
+      "profileFamily": "hybrid",
+      "shape": "DIRECTIONAL 0.8\" SETBACK",
+      "core": "THERMOPOLYMER HOVER CORE",
+      "fiberglass": "HOLYSHEET TRI/TRI + MAGIC BEAN RESIN",
+      "base": "HYPERDRIVE ADV XT BASE",
+      "flex": 6.5,
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "159cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1221mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.4m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "259mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3e23-72ec-bf62-15c88e2a2a4a",
+    "slug": "capita-the-matriarch-2027",
+    "title": "The Matriarch CAPiTA Snowboards | NA",
+    "model": "The Matriarch",
+    "year": 2027,
+    "oneLiner": "面向精准压弯和自然地形流动的定向正拱板，兼顾高速度支撑与地形变化，适合进阶全山滑行。",
+    "priceMin": 5256,
+    "priceMax": 5256,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD00_MATRIARCH_1.png?v=1762987777",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.5,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 158,
+      "effectiveEdge": 1180,
+      "sidecut": 8.1,
+      "waistWidth": 257,
+      "stanceSetback": 20.3,
+      "profile": "Alpine V4 Directional",
+      "profileFamily": "camber",
+      "shape": "DIRECTIONAL 0.8\" SETBACK",
+      "core": "TRANSCEND CORE",
+      "fiberglass": "HYBRID SUPERCARBON HOLYSHEET TRI/TRI + MAGIC BEAN RESIN",
+      "base": "HYPERDRIVE ADV XT BASE",
+      "flex": 7,
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "158cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1180mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.1m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "257mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3e33-7f40-bb5a-603feeae0213",
+    "slug": "capita-the-navigator-2027",
+    "title": "CAPiTA The Navigator Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "The Navigator",
+    "year": 2027,
+    "oneLiner": "为粉雪和野外地形准备的定向板，强调板头浮力、稳定巡航和路线选择，适合把滑行重点放在非压雪区域的用户。",
+    "priceMin": 4680,
+    "priceMax": 4680,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD06-NAVIGATOR-TOP.png?v=1776884611",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.4,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 161,
+      "effectiveEdge": 1216,
+      "sidecut": 8.3,
+      "waistWidth": 260,
+      "stanceSetback": 20.3,
+      "profile": "RESORT V2 DIRECTIONAL + FLAT KICK TECH",
+      "profileFamily": "hybrid",
+      "shape": "DIRECTIONAL 0.8\" SETBACK",
+      "core": "HOVER CORE",
+      "fiberglass": "HOLYSHEET TRI/BI + MAGIC BEAN RESIN",
+      "base": "HYPERDRIVE BASE",
+      "flex": 5.5,
+      "scenes": [
+        "powder",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "161cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1216mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.3m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "260mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3e42-77b7-9ae1-38b58a75db95",
+    "slug": "capita-ultrafear-2027",
+    "title": "CAPiTA Ultrafear Snowboard 2027 CAPiTA Snowboards | NA",
+    "model": "Ultrafear",
+    "year": 2027,
+    "oneLiner": "以公园、Jib 和自由式动作为主的双向板，强调灵活、可玩和道具适应性，适合把创意动作放在第一位的滑手。",
+    "priceMin": 3960,
+    "priceMax": 3960,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST02-ULTRAFEAR-TOP.png?v=1776884585",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.7,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 153,
+      "effectiveEdge": 1183,
+      "sidecut": 8.26,
+      "waistWidth": 254,
+      "stanceSetback": 0,
+      "profile": "Resort V1 + Flat Kick Tech",
+      "profileFamily": "hybrid",
+      "shape": "TRUE TWIN",
+      "core": "P2 SUPERLIGHT CORE",
+      "fiberglass": "HYBRID CARBON HOLYSHEET BI/BI",
+      "base": "SUPERDRIVE ADV BASE",
+      "flex": 5.5,
+      "scenes": [
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "153cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1183mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.26m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "254mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2bb3-7ee7-895e-588073f0c0e8",
+    "slug": "gnu-rider-s-choice-2025",
+    "title": "GNU Rider's Choice 2025",
+    "model": "Rider's Choice",
+    "year": 2025,
+    "oneLiner": "波浪边刃 + C2X 板型的组合让它在冰面上比同级别更抓得住，同时保留了公园需要的弹性。",
+    "priceMin": 5199,
+    "priceMax": 5199,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-06.png?auth_key=12936507cc57135902558c86b8e8de33d959f7af4b93ac4078e9012b69c426e0",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 75.2,
+    "brand": {
+      "slug": "gnu",
+      "name": "GNU",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 156,
+      "effectiveEdge": 1200,
+      "sidecut": 7.6,
+      "waistWidth": 255,
+      "stanceSetback": 10,
+      "profile": "C2X（板下反弓 + 板头尾 Camber）",
+      "profileFamily": "hybrid",
+      "shape": "定向双向",
+      "core": "Aspen / Paulownia",
+      "fiberglass": "Biax Triax 混合",
+      "base": "烧结 UHMW",
+      "weight": 2860,
+      "flex": 6.5,
+      "damping": 7.5,
+      "pop": 8,
+      "turnRadiusFeel": "抓刃强，波浪边刃",
+      "scenes": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "warranty": 3
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "156cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1200mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.6m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "255mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3e63-7f83-8d65-194d4da16980",
+    "slug": "jones-flagship-2027",
+    "title": "Men's Flagship Snowboard | Jones",
+    "model": "Flagship",
+    "year": 2027,
+    "oneLiner": "以陡坡、深雪和技术型自由滑为核心的定向板，边刃支撑和粉雪浮力都偏强，适合有经验的全山滑手。",
+    "priceMin": 5400,
+    "priceMax": 5400,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.FLA-gallery-1.webp?v=1782443915&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 74.2,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 161,
+      "effectiveEdge": 1200,
+      "sidecut": 9.1,
+      "waistWidth": 252,
+      "stanceSetback": 20,
+      "profile": "Freeride CamRock",
+      "profileFamily": "hybrid",
+      "shape": "Directional",
+      "core": "Control Core",
+      "fiberglass": "Triax Fiberglass",
+      "base": "Sintered 8000 Base",
+      "weight": 3100,
+      "flex": 8,
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "161cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1200mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "9.1m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "252mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3e76-730d-8f77-24b45e6eb736",
+    "slug": "jones-freecarver-6000s-2027",
+    "title": "Freecarver 6000s Snowboard | Jones",
+    "model": "Freecarver 6000s",
+    "year": 2027,
+    "oneLiner": "为整备雪道短半径压弯设计的全正拱刻滑板，转弯节奏紧凑、边刃反馈直接，适合专注 carving 的进阶滑手。",
+    "priceMin": 5040,
+    "priceMax": 5040,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNU.FRS-gallery-1.webp?v=1782443909&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 65.4,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 154,
+      "effectiveEdge": 1280,
+      "sidecut": 6.5,
+      "waistWidth": 248,
+      "stanceSetback": 40,
+      "profile": "True Medium Camber",
+      "profileFamily": "camber",
+      "shape": "Carving Directional",
+      "core": "Power Core",
+      "fiberglass": "Biax Fiberglass",
+      "base": "Sintered 8000 Base",
+      "weight": 2700,
+      "flex": 6,
+      "scenes": [
+        "carving",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "154cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1280mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "6.5m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "248mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3e8a-7388-9abf-51587c4f12b4",
+    "slug": "jones-frontier-2-0-2027",
+    "title": "Men's Frontier 2.0 Snowboard | Jones",
+    "model": "Frontier 2.0",
+    "year": 2027,
+    "oneLiner": "适合整季日常使用的全山定向板，转弯直观、变化雪况中容易掌控，并能在新雪里提供足够浮力。",
+    "priceMin": 3960,
+    "priceMax": 3960,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.FRT-gallery-1.webp?v=1782443696&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 74.9,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 159,
+      "effectiveEdge": 1220,
+      "sidecut": 7.8,
+      "waistWidth": 255,
+      "stanceSetback": 20,
+      "profile": "Freeride CamRock",
+      "profileFamily": "hybrid",
+      "shape": "Directional",
+      "core": "Master Core",
+      "fiberglass": "Biax Fiberglass",
+      "base": "Sintered 8000 Base",
+      "weight": 2900,
+      "flex": 5,
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "159cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1220mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.8m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "255mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2bd5-72e0-a121-e4b37424daec",
+    "slug": "jones-hovercraft-2026",
+    "title": "Jones Hovercraft 2026",
+    "model": "Hovercraft",
+    "year": 2026,
+    "oneLiner": "浮雪的标杆。板头宽度和后移量让它在新雪里像船一样浮着，树林里转向比看起来灵活得多。",
+    "priceMin": 6999,
+    "priceMax": 6999,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 64.4,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 160,
+      "effectiveEdge": 1240,
+      "sidecut": 8.9,
+      "waistWidth": 268,
+      "stanceSetback": 50,
+      "profile": "Camber + 大勺形板头",
+      "profileFamily": "hybrid",
+      "shape": "强定向锥形",
+      "core": "FSC 白杨 / 竹",
+      "fiberglass": "Triax Basalt",
+      "base": "烧结 9000",
+      "weight": 2990,
+      "flex": 7,
+      "damping": 8,
+      "pop": 5.5,
+      "turnRadiusFeel": "深雪里灵活，硬雪面偏钝",
+      "scenes": [
+        "powder"
+      ],
+      "warranty": 3
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "160cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1240mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.9m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "268mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2bc6-7aa2-bf0e-65764b3411b3",
+    "slug": "jones-hovercraft-2-0-2027",
+    "title": "Hovercraft 2.0 Snowboard | Jones",
+    "model": "Hovercraft 2.0",
+    "year": 2027,
+    "oneLiner": "体积偏移的冲浪感定向粉雪板，用更宽的板腰换取浮力和低速灵活性，适合深雪、林间和低角度地形。",
+    "priceMin": 4680,
+    "priceMax": 4680,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0641/4722/6759/files/J.26.SNU.HVC-gallery-1.webp?v=1768407048&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.3,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 156,
+      "effectiveEdge": 1230,
+      "sidecut": 9,
+      "waistWidth": 263,
+      "stanceSetback": 20,
+      "profile": "Float CamRock",
+      "profileFamily": "hybrid",
+      "shape": "Volume-shifted directional",
+      "core": "Re-Up Tech Core",
+      "fiberglass": "Biax Fiberglass + Flax Fiber",
+      "base": "Sintered 8000 Base",
+      "weight": 3100,
+      "flex": 7,
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "156cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1230mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "9m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "263mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3ec6-7fca-98ed-46d3867db591",
+    "slug": "jones-howler-2027",
+    "title": "Men's Howler Snowboard | Jones",
+    "model": "Howler",
+    "year": 2027,
+    "oneLiner": "把强力正拱和自由式动作结合起来的高响应定向板，适合在技术地形、跳台和高速巡航之间切换的高手。",
+    "priceMin": 5040,
+    "priceMax": 5040,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.HOV-gallery-1.webp?v=1785146483&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 74.8,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 158,
+      "effectiveEdge": 1230,
+      "sidecut": 8.4,
+      "waistWidth": 257,
+      "stanceSetback": 20,
+      "profile": "High Power Camber",
+      "profileFamily": "camber",
+      "shape": "Directional",
+      "core": "Power Core + Koroyd",
+      "fiberglass": "Triax Fiberglass",
+      "base": "Sintered 8000 Base",
+      "weight": 2800,
+      "flex": 8,
+      "scenes": [
+        "all-mountain",
+        "powder",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "158cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1230mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.4m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "257mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3ed6-7270-8ba6-60f22904fed5",
+    "slug": "jones-mind-expander-2-0-2027",
+    "title": "Mind Expander 2.0 Snowboard | Jones",
+    "model": "Mind Expander 2.0",
+    "year": 2027,
+    "oneLiner": "用冲浪思路重塑全山线路的定向板，适合在粉雪、自然地形和自由式动作中寻找不同走线的进阶用户。",
+    "priceMin": 4536,
+    "priceMax": 4536,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNU.MEX-gallery-1.webp?v=1782443855&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 75,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 154,
+      "effectiveEdge": 1140,
+      "waistWidth": 257,
+      "stanceSetback": 20,
+      "profile": "Float CamRock",
+      "profileFamily": "hybrid",
+      "shape": "Directional",
+      "core": "Master Core",
+      "fiberglass": "Biax Fiberglass",
+      "base": "Sintered 8000 Base",
+      "weight": 3000,
+      "flex": 7,
+      "scenes": [
+        "all-mountain",
+        "powder",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "154cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1140mm"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "257mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2beb-7718-85a6-8adb633ed8a3",
+    "slug": "jones-mountain-twin-2026",
+    "title": "Jones Mountain Twin 2026",
+    "model": "Mountain Twin",
+    "year": 2026,
+    "oneLiner": "最没有短板的一块。它不会在任何一项上给你惊喜，但也不会让你在任何一天后悔带它出门。",
+    "priceMin": 5899,
+    "priceMax": 5899,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.6,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1225,
+      "sidecut": 8,
+      "waistWidth": 255,
+      "stanceSetback": 20,
+      "profile": "Camber + 板头板尾微摇臂",
+      "profileFamily": "hybrid",
+      "shape": "定向双向",
+      "core": "FSC 白杨 / 玄武岩纤维",
+      "fiberglass": "Biax + Basalt",
+      "base": "烧结 8000",
+      "weight": 2870,
+      "flex": 6,
+      "damping": 7.5,
+      "pop": 7,
+      "turnRadiusFeel": "中性，长短弧都好带",
+      "scenes": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "warranty": 3
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1225mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "255mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2bfe-7d8e-b4cc-0bc1b55597ae",
+    "slug": "jones-mountain-twin-2027",
+    "title": "Men's Mountain Twin Snowboard | Jones",
+    "model": "Mountain Twin",
+    "year": 2027,
+    "oneLiner": "面向整山和自由式切换的定向双向板，压雪、侧击和自然地形都能保持平衡，适合想用一块板覆盖大多数日子的滑手。",
+    "priceMin": 4320,
+    "priceMax": 4320,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.MTN-gallery-1_cdsmc7.webp?v=1782443870&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 76,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1210,
+      "sidecut": 7.8,
+      "waistWidth": 254,
+      "stanceSetback": 0,
+      "profile": "CamRock",
+      "profileFamily": "hybrid",
+      "shape": "Directional Twin",
+      "core": "Master Core",
+      "fiberglass": "Biax Fiberglass",
+      "base": "Sintered 8000 Base",
+      "weight": 2800,
+      "flex": 6,
+      "scenes": [
+        "all-mountain",
+        "powder",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1210mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.8m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "254mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3f10-7bae-939c-3cc47a2eb86d",
+    "slug": "jones-rally-cat-2027",
+    "title": "Men's Rally Cat Snowboard | Jones",
+    "model": "Rally Cat",
+    "year": 2027,
+    "oneLiner": "轻松、灵活且带有明显玩心的全山双向板，适合在压雪道、侧击和小型地形之间不断换线的用户。",
+    "priceMin": 3600,
+    "priceMax": 3600,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.MND-gallery-1.webp?v=1782443822&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.8,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 156,
+      "effectiveEdge": 1150,
+      "sidecut": 7.5,
+      "waistWidth": 252,
+      "stanceSetback": 20,
+      "profile": "True Medium Camber",
+      "profileFamily": "camber",
+      "shape": "Directional Twin",
+      "core": "Master Core",
+      "fiberglass": "Biax Fiberglass",
+      "base": "Sintered 8000 Base",
+      "weight": 2700,
+      "flex": 5,
+      "scenes": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "156cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1150mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.5m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "252mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0bdc1-3f21-78f9-8c77-9e1a37918358",
+    "slug": "jones-storm-chaser-2027",
+    "title": "Storm Chaser Snowboard | Jones",
+    "model": "Storm Chaser",
+    "year": 2027,
+    "oneLiner": "面向深雪循环的超宽体积偏移定向板，强调低角度浮力和冲浪感，同时保留硬雪上的基本转弯能力。",
+    "priceMin": 5256,
+    "priceMax": 5256,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNU.STC-gallery-1.webp?v=1782443829&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 72.7,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 152,
+      "effectiveEdge": 1070,
+      "sidecut": 6.9,
+      "waistWidth": 275,
+      "stanceSetback": 20,
+      "profile": "Christenson Surf Rocker",
+      "profileFamily": "rocker",
+      "shape": "Volume-Shifted Directional",
+      "core": "Master Core",
+      "fiberglass": "Biax Fiberglass",
+      "base": "Sintered 8000 Base",
+      "weight": 2900,
+      "flex": 6,
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "152cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1070mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "6.9m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "275mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2c0b-714f-9219-ea5f9d92d6ee",
+    "slug": "korua-shapes-cafe-racer-2026",
+    "title": "Korua Shapes Cafe Racer 2026",
+    "model": "Cafe Racer",
+    "year": 2026,
+    "oneLiner": "一块只为「走刃」存在的板子。它不会跳、不会转得快，但当你把刃压下去时，它给你的稳定感是别的板给不了的。",
+    "priceMin": 6899,
+    "priceMax": 6899,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 63.4,
+    "brand": {
+      "slug": "korua-shapes",
+      "name": "Korua Shapes",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 161,
+      "effectiveEdge": 1310,
+      "sidecut": 9.4,
+      "waistWidth": 262,
+      "stanceSetback": 45,
+      "profile": "纯 Camber + 长板头",
+      "profileFamily": "camber",
+      "shape": "强定向",
+      "core": "白杨 / 竹混合",
+      "fiberglass": "Triax",
+      "base": "烧结 9000",
+      "weight": 3120,
+      "flex": 7.5,
+      "damping": 8.5,
+      "pop": 5,
+      "turnRadiusFeel": "大半径长弧，越滑越快",
+      "scenes": [
+        "carving",
+        "powder"
+      ],
+      "warranty": 2
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "161cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1310mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "9.4m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "262mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2c1f-723d-8b9b-9cd1651c9f93",
+    "slug": "lib-tech-t-rice-pro-2025",
+    "title": "Lib Tech T.Rice Pro 2025",
+    "model": "T.Rice Pro",
+    "year": 2025,
+    "oneLiner": "为硬雪面和大跳台设计。波浪边刃在冰面上咬得住，落地时板面吸收冲击的能力比同硬度对手好一档。",
+    "priceMin": 5699,
+    "priceMax": 5699,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.4,
+    "brand": {
+      "slug": "lib-tech",
+      "name": "Lib Tech",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1210,
+      "sidecut": 7.7,
+      "waistWidth": 256,
+      "stanceSetback": 0,
+      "profile": "C2（板下反弓 + 板头尾 Camber）",
+      "profileFamily": "hybrid",
+      "shape": "真双向",
+      "core": "Aspen / Paulownia 混合",
+      "fiberglass": "Biax + Triax",
+      "base": "烧结 UHMW",
+      "weight": 2890,
+      "flex": 6.5,
+      "damping": 7,
+      "pop": 8.5,
+      "turnRadiusFeel": "抓刃强，波浪边刃",
+      "scenes": [
+        "freestyle",
+        "all-mountain"
+      ],
+      "warranty": 3
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1210mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.7m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "256mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2c32-72af-9a85-0f61a6ec8d78",
+    "slug": "never-summer-proto-slinger-2025",
+    "title": "Never Summer Proto Slinger 2025",
+    "model": "Proto Slinger",
+    "year": 2025,
+    "oneLiner": "全山地里性格最鲜明的一块。碳纤层让它的回弹比同价位明显更快，出弯时能感觉到板子在推你。",
+    "priceMin": 5499,
+    "priceMax": 5499,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 73.8,
+    "brand": {
+      "slug": "never-summer",
+      "name": "Never Summer",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1215,
+      "sidecut": 7.9,
+      "waistWidth": 254,
+      "stanceSetback": 12,
+      "profile": "Ripsaw（Camber 主导 + 板头长摇臂）",
+      "profileFamily": "hybrid",
+      "shape": "定向双向",
+      "core": "白杨 + 竹条",
+      "fiberglass": "Triax Carbon",
+      "base": "烧结 Durasurf",
+      "weight": 2840,
+      "flex": 6,
+      "damping": 7.5,
+      "pop": 8,
+      "turnRadiusFeel": "入弯快，出弯有推背感",
+      "scenes": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "warranty": 3
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1215mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.9m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "254mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2c45-7613-9918-0b143a5890ce",
+    "slug": "nitro-team-2026",
+    "title": "Nitro Team 2026",
+    "model": "Team",
+    "year": 2026,
+    "oneLiner": "同价位里最难被挑出毛病的一块。它把全山地和公园的边界模糊掉了，价格还压在 5000 以内。",
+    "priceMin": 4599,
+    "priceMax": 4599,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 74.9,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1205,
+      "sidecut": 7.8,
+      "waistWidth": 253,
+      "stanceSetback": 15,
+      "profile": "Cam-Out Camber",
+      "profileFamily": "hybrid",
+      "shape": "定向双向",
+      "core": "Powerlite 白杨",
+      "fiberglass": "Biax",
+      "base": "烧结 Speedlite",
+      "weight": 2810,
+      "flex": 6,
+      "damping": 7,
+      "pop": 7.5,
+      "turnRadiusFeel": "中性偏快，好带",
+      "scenes": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "warranty": 2
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1205mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.8m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "253mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2c54-727f-919c-d84cdf5db3a9",
+    "slug": "ride-algorythm-2026",
+    "title": "Ride Algorythm 2026",
+    "model": "Algorythm",
+    "year": 2026,
+    "oneLiner": "为深雪日准备的重武器。板头浮力大到你会忘记自己脚下有 3 公斤的东西，回到压雪道也依然稳。",
+    "priceMin": 7299,
+    "priceMax": 7299,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 65.6,
+    "brand": {
+      "slug": "ride",
+      "name": "Ride",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 160,
+      "effectiveEdge": 1265,
+      "sidecut": 8.6,
+      "waistWidth": 264,
+      "stanceSetback": 40,
+      "profile": "Camber + 大板头摇臂",
+      "profileFamily": "hybrid",
+      "shape": "强定向锥形",
+      "core": "白杨 / 竹 / 碳纤维梁",
+      "fiberglass": "Triax Carbon",
+      "base": "烧结 9000",
+      "weight": 3050,
+      "flex": 8,
+      "damping": 9,
+      "pop": 6,
+      "turnRadiusFeel": "大弧为主，深雪里转向轻盈",
+      "scenes": [
+        "powder",
+        "carving"
+      ],
+      "warranty": 3
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "160cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1265mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.6m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "264mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2c66-7a84-8a68-a17b879beccb",
+    "slug": "salomon-sight-2026",
+    "title": "Salomon Sight 2026",
+    "model": "Sight",
+    "year": 2026,
+    "oneLiner": "它存在的意义就是让你少摔几次。板头板尾的反弓把卡刃概率压到很低，价格还留在入门区间。",
+    "priceMin": 3299,
+    "priceMax": 3299,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-06.png?auth_key=12936507cc57135902558c86b8e8de33d959f7af4b93ac4078e9012b69c426e0",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 66.2,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 155,
+      "effectiveEdge": 1180,
+      "sidecut": 7.8,
+      "waistWidth": 254,
+      "stanceSetback": 10,
+      "profile": "Rocker-Camber-Rocker",
+      "profileFamily": "hybrid",
+      "shape": "定向",
+      "core": "白杨 + 泡棉",
+      "fiberglass": "Biax",
+      "base": "挤压 3500",
+      "weight": 2650,
+      "flex": 4,
+      "damping": 5.5,
+      "pop": 4.5,
+      "turnRadiusFeel": "宽松，容错高",
+      "scenes": [
+        "beginner",
+        "all-mountain"
+      ],
+      "warranty": 2
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "155cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1180mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.8m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "254mm"
+      }
+    ]
+  }
+];

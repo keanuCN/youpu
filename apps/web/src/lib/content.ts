@@ -267,7 +267,8 @@ export async function getProductDetail(id: string, options: ContentOptions = {})
   if ((options.source ?? resolveContentSource()) === "pack") return fallback;
 
   try {
-    const lookup = fallback ? slugForProduct(fallback) : id;
+    // 快照新增产品的 id 就是 API canonical slug；旧内容包仍使用内部短 id，需要按品牌/型号/年份回查。
+    const lookup = fallback && fallback.id !== id ? slugForProduct(fallback) : id;
     const response = await requestJson(`/api/products/${encodeURIComponent(lookup)}`, productDetailSchema, options.fetcher ?? fetch);
     if (!isLive(response.category.slug)) return fallback;
     return mapProductDetail(response, fallback);
@@ -284,7 +285,7 @@ export async function getCompareProducts(ids: string[], options: ContentOptions 
 
   const refs = ids.map((id) => {
     const local = getGear(id);
-    return local ? slugForProduct(local) : id;
+    return local && local.id !== id ? slugForProduct(local) : id;
   });
 
   try {
