@@ -73,8 +73,11 @@ M2 本地数据扩展目标见 `examples/phase2-expansion-targets.json`。本批
 ```powershell
 pnpm --filter @youpu/collector run audit:drafts -- `
   --draft-dir data/tmp/collector-badminton-batch/drafts `
-  --draft-dir data/tmp/collector-victor-batch/drafts
+  --draft-dir data/tmp/collector-victor-batch/drafts `
+  --diff-file data/tmp/collector-tent-next/diff.json
 ```
+
+传入 `--diff-file` 后，审计结果会额外标记 `unchanged`（无需更新）、`raw-only`（只保留页面快照）、`review-update`（规格需要复核）和 `new-candidate`（新增候选），并统计各类数量；不传时保持原有 seed/草稿字段审计行为。
 
 羽毛球拍第一阶段目标见 `examples/badminton-phase1-targets.json`。当前包含 3 条 Yonex 官方 Shopify 产品页目标，规格列表已接入通用 `b/i` 条目提取器和 Yonex adapter，可生成 raw JSON 与 YAML 草稿；材料只有合并字段时保持缺省，不复制到 frame/shaft 两个字段。
 
