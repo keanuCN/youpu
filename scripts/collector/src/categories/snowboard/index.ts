@@ -26,6 +26,7 @@ import { djiDroneAdapter } from '../drone/brands/dji';
 import { igpsportBikeComputerAdapter } from '../bike-computer/brands/igpsport';
 import { djiVideoCameraAdapter } from '../video-camera/brands/dji';
 import { insta360CameraAdapter } from '../camera/brands/insta360';
+import { viltroxLensAdapter } from '../lens/brands/viltrox';
 
 export interface ProductAdapter {
   name: string;
@@ -53,6 +54,7 @@ const adapters: ProductAdapter[] = [
   igpsportBikeComputerAdapter,
   djiVideoCameraAdapter,
   insta360CameraAdapter,
+  viltroxLensAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,

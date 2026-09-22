@@ -2151,6 +2151,107 @@
   name: 镜头
   parent: photography
   sort_order: 20
+  spec_schema:
+    fields:
+      - key: mount
+        label: 卡口
+        group: 兼容与定位
+        type: text
+        filter: false
+        compare: true
+        order: 10
+      - key: focalLength
+        label: 焦距
+        group: 光学规格
+        type: number
+        unit: mm
+        min: 1
+        max: 2000
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 20
+      - key: equivalentFocalLength
+        label: 等效焦距
+        group: 光学规格
+        type: text
+        filter: false
+        compare: true
+        order: 30
+      - key: maxAperture
+        label: 最大光圈
+        group: 光学规格
+        type: number
+        min: 0.5
+        max: 64
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 40
+      - key: opticalStructure
+        label: 光学结构
+        group: 光学规格
+        type: text
+        filter: false
+        compare: true
+        order: 50
+      - key: focusDistance
+        label: 最近对焦距离
+        group: 对焦与操控
+        type: number
+        unit: m
+        min: 0.01
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 60
+      - key: maxMagnification
+        label: 最大放大倍率
+        group: 对焦与操控
+        type: number
+        min: 0
+        max: 10
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 70
+      - key: autofocus
+        label: 自动对焦
+        group: 对焦与操控
+        type: bool
+        filter: false
+        compare: true
+        order: 80
+      - key: filterSize
+        label: 滤镜口径
+        group: 结构与便携
+        type: number
+        unit: mm
+        min: 20
+        max: 300
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 90
+      - key: weight
+        label: 重量
+        group: 结构与便携
+        type: number
+        unit: g
+        min: 1
+        max: 10000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 100
+      - key: weatherSealing
+        label: 防护
+        group: 结构与便携
+        type: text
+        filter: false
+        compare: true
+        order: 110
 
 - slug: filter
   name: 滤镜

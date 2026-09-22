@@ -121,6 +121,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门相机第一阶段目标见 `examples/domestic-hot-camera-phase1-targets.json`。当前接入影石 Insta360 X4 官方产品页，从页面正文和规格列表提取 360°全景相机、1/2 英寸传感器、8K/30fps 与 5.7K/60fps、72MP、FlowState 防抖、2.5 英寸屏幕、135 分钟续航、2290 mAh、203 g 和裸机 10 m 防水；身份闸门支持 `X4` 这类短型号的紧凑匹配。
 
+国内热门镜头第一阶段目标见 `examples/domestic-hot-lens-phase1-targets.json`。当前接入 Viltrox 唯卓仕 AF 56mm F1.2 Pro XF 官方商店产品页，从页面正文、规格列表和 JSON-LD 提取 X-mount 卡口、56 mm 焦距、85 mm 等效焦距、F1.2 最大光圈、13/8 光学结构、0.5 m 最近对焦、0.13x 放大倍率、自动对焦、67 mm 滤镜口径、575 g 重量和全天候防护；未合并其他卡口版本。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

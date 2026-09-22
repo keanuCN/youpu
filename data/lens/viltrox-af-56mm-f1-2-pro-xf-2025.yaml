@@ -1,0 +1,24 @@
+slug: viltrox-af-56mm-f1-2-pro-xf-2025
+category: lens
+brand: viltrox
+model: AF 56mm F1.2 Pro XF
+year: 2025
+title: Viltrox AF 56mm F1.2 Pro XF Lens for Fujifilm| APS-C Portrait Master –
+  Viltrox Store
+specs:
+  mount: X-mount
+  focalLength: 56
+  equivalentFocalLength: 85mm
+  maxAperture: 1.2
+  opticalStructure: 13/8
+  focusDistance: 0.5
+  maxMagnification: 0.13
+  autofocus: true
+  filterSize: 67
+  weight: 575
+  weatherSealing: 防尘防滴 / 全天候防护
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://viltrox.com/products/af-56mm-f1-2-xf
+status: published

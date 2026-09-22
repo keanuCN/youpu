@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "viltrox-af-56mm-f1-2-pro-xf-2025",
+    "category": "lens",
+    "brand": "viltrox",
+    "model": "AF 56mm F1.2 Pro XF",
+    "identityAliases": [
+      "Viltrox AF 56mm F1.2 Pro",
+      "Viltrox AF 56mm F1.2 Pro XF"
+    ],
+    "year": 2025,
+    "url": "https://viltrox.com/products/af-56mm-f1-2-xf",
+    "mode": "cheerio"
+  }
+]
