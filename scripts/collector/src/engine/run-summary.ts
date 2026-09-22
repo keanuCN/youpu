@@ -30,6 +30,7 @@ export interface CollectorRunSummary {
   }>;
   crawl: CrawlRunSummary;
   approval?: ApprovalReport;
+  ledgerPath: string | null;
   comparison?: {
     previousOutDir: string;
     diffPath: string;
@@ -59,6 +60,7 @@ export interface BuildRunSummaryInput {
   targets: CrawlTarget[];
   crawl: CrawlRunSummary;
   approval?: ApprovalReport;
+  ledgerPath?: string;
   comparison?: CollectorRunSummary['comparison'];
 }
 
@@ -99,11 +101,13 @@ export function buildRunSummary(input: BuildRunSummaryInput): CollectorRunSummar
     })),
     crawl: input.crawl,
     ...(input.approval ? { approval: input.approval } : {}),
+    ledgerPath: input.ledgerPath ?? null,
     ...(input.comparison ? { comparison: input.comparison } : {}),
     outputPaths: [
       ...new Set([
         ...input.crawl.outputs,
         ...(input.approval?.outputs ?? []),
+        ...(input.ledgerPath ? [input.ledgerPath] : []),
         ...(input.comparison
           ? [input.comparison.diffPath, input.comparison.updateSummaryPath, ...input.comparison.updateDraftPaths]
           : []),

@@ -6,6 +6,7 @@ import { findRepositoryRoot, resolveDataDir, resolveOutputDir } from './engine/p
 import { buildRunSummary, writeRunSummary } from './engine/run-summary';
 import { compareRawRuns, writeDiffReport } from './engine/diff';
 import { generateUpdateDrafts, writeUpdateDraftReport } from './engine/update-draft';
+import { updateTargetLedger } from './engine/ledger';
 import { crawlTargetSchema, type CrawlTarget, type CrawlMode } from './engine/types';
 
 const DEFAULT_USER_AGENT = 'youpu-collector/0.1 (+https://xiaopang.club/)';
@@ -26,6 +27,7 @@ interface CliArgs {
   minIntervalMs: number;
   autoApprove: boolean;
   previousOutDir?: string;
+  ledgerPath?: string;
 }
 
 async function main(): Promise<void> {
@@ -55,9 +57,19 @@ async function main(): Promise<void> {
     ? await approveDrafts(summary.draftPaths, { dataDir: args.dataDir, status: 'published' })
     : undefined;
 
+  const finishedAt = new Date().toISOString();
+  const ledgerPath = resolveOutputDir(args.ledgerPath ?? 'data/tmp/collector-target-ledger.json', repositoryRoot);
+  await updateTargetLedger({
+    ledgerPath,
+    outDir,
+    dataDir: resolveDataDir(args.dataDir, repositoryRoot),
+    targets,
+    finishedAt,
+  });
+
   const runSummary = buildRunSummary({
     startedAt,
-    finishedAt: new Date().toISOString(),
+    finishedAt,
     outDir,
     targetFile: args.targetFile,
     dataDir: args.dataDir,
@@ -67,6 +79,7 @@ async function main(): Promise<void> {
     targets,
     crawl: summary,
     approval,
+    ledgerPath,
     comparison,
   });
   const runSummaryPath = await writeRunSummary(runSummary);
@@ -120,6 +133,7 @@ function parseArgs(argv: string[]): CliArgs {
     minIntervalMs,
     autoApprove: values.has('auto-approve'),
     previousOutDir: values.get('previous-out-dir'),
+    ledgerPath: values.get('ledger-path'),
   };
 }
 

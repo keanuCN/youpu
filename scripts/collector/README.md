@@ -4,7 +4,7 @@
 
 默认模式只生成草稿，不改正式 seed。临时无人审核时可使用 `--auto-approve`：没有指定代表尺寸的目标会按标准宽度中位策略自动选尺寸，草稿再经过完整 `spec_schema` 校验和 raw 审计文件校验后写入 `data/<category>/`，状态设为 `published`。正式 seed 已存在时跳过，不覆盖已有文案、评分和图片。
 
-默认输出到 `data/tmp/collector`，不会写数据库，也不会修改 `data/products` 下的正式 seed。图片只记录在 raw 页面快照，草稿不自动带图，避免把导航图误当商品图或未经授权发布。每次采集结束还会在输出目录生成 `run-summary.json`，记录目标、耗时、各类结果计数和所有输出路径，便于后续增量复核。
+默认输出到 `data/tmp/collector`，不会写数据库，也不会修改 `data/products` 下的正式 seed。图片只记录在 raw 页面快照，草稿不自动带图，避免把导航图误当商品图或未经授权发布。每次采集结束还会在输出目录生成 `run-summary.json`，并默认更新独立的 `data/tmp/collector-target-ledger.json`，分别记录本批结果和每个目标的最近状态、hash 与差异状态，便于后续增量复核。
 
 ## 单条采集
 
@@ -51,6 +51,8 @@ pnpm --filter @youpu/collector crawl -- `
 当前批次会额外生成 `diff.json`：页面内容变化但归一化规格未变时只标记 `rawContentChanged`；规格字段变化时会列出新增、删除和修改的字段。上一批没有同 slug 记录的产品标记为 `new`，不会把本批没有请求的旧产品误判为下架。
 
 对于已有正式 seed 且规格发生变化的产品，还会生成 `updates/<slug>.yaml` 和 `updates/update-summary.json`。更新草稿是带来源、hash 和字段 diff 的复核 envelope，不会覆盖正式 seed；当前页面缺失的旧字段会保留，删除字段只记录到 `ignoredChanges`，避免一次不完整快照误删有效数据。
+
+需要将台账保存到其他位置时，传入 `--ledger-path`；台账只保留目标运行状态，不作为正式商品数据源。
 
 ## 批量采集
 
