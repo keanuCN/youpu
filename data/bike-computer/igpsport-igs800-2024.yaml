@@ -1,0 +1,17 @@
+slug: igpsport-igs800-2024
+category: bike-computer
+brand: igpsport
+model: iGS800
+year: 2024
+title: iGS800 - 彩屏触控GPS骑行码表 - iGPSPORT迹驰
+specs:
+  screenSize: 3.5
+  screen: 全透触控彩屏
+  touchScreen: true
+  batteryLife: 50
+  navigation: true
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.igpsport.cn/product/igs800
+status: published

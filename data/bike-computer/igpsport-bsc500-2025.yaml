@@ -1,0 +1,20 @@
+slug: igpsport-bsc500-2025
+category: bike-computer
+brand: igpsport
+model: BSC500
+year: 2025
+title: BSC500 - 全彩大屏进阶码表，大有声色 - iGPSPORT迹驰
+specs:
+  screenSize: 3.3
+  screen: 全透触控彩屏
+  touchScreen: true
+  batteryLife: 25
+  navigation: true
+  mapSupport: 离线 / 在线导航
+  audioPrompt: true
+  sensorCompatibility: 全面传感器兼容
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.igpsport.cn/product/bsc500
+status: published

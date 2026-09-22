@@ -10,13 +10,13 @@
     "mode": "cheerio"
   },
   {
-    "slug": "igpsport-bsc300-2023",
+    "slug": "igpsport-igs800-2024",
     "category": "bike-computer",
     "brand": "igpsport",
-    "model": "BSC300",
-    "identityAliases": ["BSC300 彩屏导航骑行码表"],
-    "year": 2023,
-    "url": "https://www.igpsport.cn/product/bsc300",
+    "model": "iGS800",
+    "identityAliases": ["iGS800 彩屏触控GPS骑行码表"],
+    "year": 2024,
+    "url": "https://www.igpsport.cn/product/igs800",
     "mode": "cheerio"
   }
 ]

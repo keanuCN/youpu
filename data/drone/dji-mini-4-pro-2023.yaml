@@ -1,0 +1,18 @@
+slug: dji-mini-4-pro-2023
+category: drone
+brand: dji
+model: Mini 4 Pro
+year: 2023
+title: DJI Mini 4 Pro - 技术参数 - DJI 大疆创新
+specs:
+  weightNote: 轻于 249 g
+  maxVideo: 4K/60fps HDR
+  transmissionRange: 20
+  obstacleSensing: omnidirectional
+  subjectTracking: true
+  verticalShooting: true
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.dji.com/cn/mini-4-pro/specs
+status: published

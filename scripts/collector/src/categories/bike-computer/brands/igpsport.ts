@@ -12,15 +12,15 @@ export const igpsportBikeComputerAdapter = {
     const normalizedSpecs: Record<string, unknown> = {};
     const sourceNotes = ['找到 iGPSPORT 官方产品页描述和图片替代文本证据。'];
 
-    const screenSize = evidence.match(/(\d+(?:\.\d+)?)\s*英寸/i);
+    const screenSize = evidence.match(/(\d+(?:\.\d+)?)\s*(?:英寸|寸)/i);
     if (screenSize?.[1]) normalizedSpecs.screenSize = Number(screenSize[1]);
 
-    if (/全透触控彩屏|全彩触控大屏|touch(?:screen)?/i.test(evidence)) {
+    if (/全透触控彩屏|全彩触控大屏|全彩大触屏|彩屏触控|touch(?:screen)?/i.test(evidence)) {
       normalizedSpecs.screen = '全透触控彩屏';
       normalizedSpecs.touchScreen = true;
     }
 
-    const batteryLife = evidence.match(/(\d+)\s*小时长续航/i);
+    const batteryLife = evidence.match(/(\d+)\s*\+?\s*小时(?:长续航|超长续航|续航)/i);
     if (batteryLife?.[1]) normalizedSpecs.batteryLife = Number(batteryLife[1]);
 
     if (/智能导航系统|路书导航|导航/i.test(evidence)) normalizedSpecs.navigation = true;
