@@ -8,5 +8,15 @@
     "year": 2026,
     "url": "https://akkogear.com/pd.jsp?id=56",
     "mode": "cheerio"
+  },
+  {
+    "slug": "akko-5075b-plus-asa-clear-2026",
+    "category": "esports-keyboard",
+    "brand": "akko",
+    "model": "5075B Plus ASA Clear",
+    "identityAliases": ["5075B Plus", "ASA Clear"],
+    "year": 2026,
+    "url": "https://en.akkogear.com/product/5075b-plus-asa-clear-mechanical-keyboard/",
+    "mode": "cheerio"
   }
 ]

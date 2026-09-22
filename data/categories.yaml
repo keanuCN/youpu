@@ -3794,6 +3794,13 @@
         filter: false
         compare: true
         order: 90
+      - key: hotSwap
+        label: 热插拔
+        group: 自定义与灯效
+        type: bool
+        filter: false
+        compare: true
+        order: 95
       - key: quickRelease
         label: 快拆结构
         group: 自定义与灯效
@@ -3808,6 +3815,13 @@
         filter: false
         compare: true
         order: 110
+      - key: keycapMaterial
+        label: 键帽材质
+        group: 键帽与兼容
+        type: text
+        filter: false
+        compare: true
+        order: 120
 
 - slug: esports-mouse
   name: 电竞鼠标

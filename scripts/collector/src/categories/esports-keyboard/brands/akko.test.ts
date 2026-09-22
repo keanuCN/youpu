@@ -42,3 +42,35 @@ test('extracts Akko MOD007 V5 HE esports keyboard facts', () => {
   assert.equal(result.normalizedSpecs.customScreen, true);
   assert.match(result.sourceNotes.join(' '), /740/);
 });
+
+test('extracts conventional mechanical keyboard facts from Akko 5075B Plus', () => {
+  const snapshot: PageSnapshot = {
+    title: '5075B Plus ASA Clear Mechanical Keyboard | Akko Official Global Site',
+    description: '',
+    bodyText:
+      '5075B Plus ASA Clear Mechanical Keyboard Tri-mode connection (2.4G/Bluetooth/Type-C); Programmable RGB Backlit; Transparent PC Keycaps; Hot-swappable Socket; Support Akko Cloud Driver. Akko V3 Piano Pro.',
+    headings: [],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: ['Hotswap-Socket', 'RGB'],
+  };
+
+  const result = akkoEsportsKeyboardAdapter.normalize(
+    {
+      ...target,
+      slug: 'akko-5075b-plus-asa-clear-2026',
+      model: '5075B Plus ASA Clear',
+      url: 'https://en.akkogear.com/product/5075b-plus-asa-clear-mechanical-keyboard/',
+    },
+    snapshot,
+  );
+  assert.equal(result.normalizedSpecs.keyboardType, 'mechanical');
+  assert.equal(result.normalizedSpecs.switchType, 'Akko V3 Piano Pro');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired', '2.4g', 'bluetooth']);
+  assert.equal(result.normalizedSpecs.backlight, 'RGB 背光');
+  assert.equal(result.normalizedSpecs.driver, 'Akko Cloud Driver');
+  assert.equal(result.normalizedSpecs.hotSwap, true);
+  assert.equal(result.normalizedSpecs.keycapMaterial, '透明 PC 键帽');
+});

@@ -1,0 +1,22 @@
+slug: akko-5075b-plus-asa-clear-2026
+category: esports-keyboard
+brand: akko
+model: 5075B Plus ASA Clear
+year: 2026
+title: 5075B Plus ASA Clear | Akko Official Global Site
+specs:
+  keyboardType: mechanical
+  switchType: Akko V3 Piano Pro
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: RGB 背光
+  driver: Akko Cloud Driver
+  hotSwap: true
+  keycapMaterial: 透明 PC 键帽
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://en.akkogear.com/product/5075b-plus-asa-clear-mechanical-keyboard/
+status: published
