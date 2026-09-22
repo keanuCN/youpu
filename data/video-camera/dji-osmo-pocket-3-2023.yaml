@@ -1,0 +1,17 @@
+slug: dji-osmo-pocket-3-2023
+category: video-camera
+brand: dji
+model: Osmo Pocket 3
+year: 2023
+title: Osmo Pocket 3 - 技术参数 - DJI 大疆创新
+specs:
+  cameraSensor: 1 英寸 CMOS
+  maxVideo: 4K/120fps
+  screenSize: 2
+  stabilization: 三轴机械云台增稳
+  verticalShooting: true
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.dji.com/cn/osmo-pocket-3/specs
+status: published

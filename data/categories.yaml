@@ -2088,6 +2088,76 @@
   name: 摄像机
   parent: videography
   sort_order: 20
+  spec_schema:
+    fields:
+      - key: cameraSensor
+        label: 影像传感器
+        group: 影像与画质
+        type: text
+        filter: false
+        compare: true
+        order: 10
+      - key: maxVideo
+        label: 最高视频规格
+        group: 影像与画质
+        type: text
+        filter: false
+        compare: true
+        order: 20
+      - key: screenSize
+        label: 屏幕尺寸
+        group: 操作与显示
+        type: number
+        unit: 英寸
+        min: 1
+        max: 10
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 30
+      - key: stabilization
+        label: 稳定方式
+        group: 稳定与收音
+        type: text
+        filter: false
+        compare: true
+        order: 40
+      - key: batteryLife
+        label: 续航时间
+        group: 续航与便携
+        type: number
+        unit: min
+        min: 1
+        max: 1000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 50
+      - key: weight
+        label: 重量
+        group: 续航与便携
+        type: number
+        unit: g
+        min: 1
+        max: 5000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 60
+      - key: verticalShooting
+        label: 横竖拍支持
+        group: 操作与显示
+        type: bool
+        filter: false
+        compare: true
+        order: 70
+      - key: audio
+        label: 收音能力
+        group: 稳定与收音
+        type: text
+        filter: false
+        compare: true
+        order: 80
 
 - slug: gimbal
   name: 稳定器

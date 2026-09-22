@@ -117,6 +117,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门码表第一阶段目标见 `examples/domestic-hot-bike-computer-phase1-targets.json`。当前接入 iGPSPORT（迹驰）BSC500、iGS800 官方产品页，从页面描述和图片替代文本提取屏幕、触控、续航、导航、离线/在线路书、语音播报和传感器兼容；详细参数表未进入当前静态快照的字段保持缺省。
 
+国内热门摄像第一阶段目标见 `examples/domestic-hot-video-camera-phase1-targets.json`。当前接入 DJI Osmo Pocket 3 官方技术参数页，从页面描述和 JSON-LD 提取 1 英寸 CMOS、4K/120fps、2 英寸屏幕、三轴机械云台增稳和横竖拍；续航、重量和收音未从当前静态页面确认，保持缺省。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
