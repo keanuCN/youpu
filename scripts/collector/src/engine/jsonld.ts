@@ -21,6 +21,7 @@ export function snapshotFromHtml(html: string, baseUrl: string): PageSnapshot {
     title: optionalText($('title').first().text()),
     description: optionalText($('meta[name="description"]').attr('content')),
     canonicalUrl: absoluteUrl($('link[rel="canonical"]').attr('href'), baseUrl),
+    bodyText: extractBodyText($),
     headings: $('h1, h2, h3')
       .map((_, element) => normalizeText($(element).text()))
       .get()
@@ -31,6 +32,12 @@ export function snapshotFromHtml(html: string, baseUrl: string): PageSnapshot {
     images: extractImageUrls($, baseUrl),
     imageAltTexts: extractImageAltTexts($),
   };
+}
+
+function extractBodyText($: CheerioAPI): string | undefined {
+  const body = $('body').clone();
+  body.find('script, style, noscript').remove();
+  return optionalText(body.text());
 }
 
 /**

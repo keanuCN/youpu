@@ -57,6 +57,7 @@ function pageEvidence(snapshot: PageSnapshot): string {
   return [
     snapshot.title,
     snapshot.description,
+    snapshot.bodyText,
     ...snapshot.headings,
     ...snapshot.specifications.flatMap(({ label, value }) => [label, value]),
     ...snapshot.tables.flatMap((table) => [...table.headers, ...table.rows.flat()]),

@@ -113,7 +113,7 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门路亚竿第一阶段目标见 `examples/domestic-hot-casting-rod-phase1-targets.json`。当前接入钓之屋（TSURINOYA）睿系列、霸龙官方产品页，从标题和产品详情表提取两节结构、超快调、鲈鱼和虫竿场景；长度、重量、饵重、线重、力度、轮座、竿胚和碳布含量等图片规格未做 OCR，保持缺省。
 
-国内热门无人机第一阶段目标见 `examples/domestic-hot-drone-phase1-targets.json`。当前接入 DJI Mini 4 Pro、Avata 2 官方技术参数页，从页面摘要提取重量说明、最高视频规格、图传距离、全向避障、智能跟随和竖拍；详细规格表在当前静态快照中由前端动态渲染，未确认的传感器、续航和电池参数保持缺省。
+国内热门无人机第一阶段目标见 `examples/domestic-hot-drone-phase1-targets.json`。当前接入 DJI Mini 4 Pro、Avata 2 官方技术参数页；Mini 4 Pro 使用 Cheerio，Avata 2 使用 Playwright 渲染兜底。adapter 从页面摘要和去除脚本后的正文提取重量说明、最高视频规格、图传距离、传感器、续航、电池容量、全向避障、智能跟随和竖拍，仍未根据图片或搜索摘要补写字段。
 
 国内热门码表第一阶段目标见 `examples/domestic-hot-bike-computer-phase1-targets.json`。当前接入 iGPSPORT（迹驰）BSC500、iGS800 官方产品页，从页面描述和图片替代文本提取屏幕、触控、续航、导航、离线/在线路书、语音播报和传感器兼容；详细参数表未进入当前静态快照的字段保持缺省。
 

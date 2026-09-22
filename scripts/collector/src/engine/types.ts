@@ -42,6 +42,8 @@ export interface PageSnapshot {
   title?: string;
   description?: string;
   canonicalUrl?: string;
+  /** 去除 script/style 后的正文文本，用于动态规格页的事实提取。 */
+  bodyText?: string;
   headings: string[];
   jsonLd: unknown[];
   tables: PageTable[];

@@ -1,0 +1,17 @@
+slug: dji-avata-2-2024
+category: drone
+brand: dji
+model: Avata 2
+year: 2024
+title: DJI Avata 2 - 第一视角飞行体验无人机 - 技术参数 - DJI 大疆创新
+specs:
+  maxVideo: 4K/120fps
+  transmissionRange: 13
+  cameraSensor: 1/1.3 英寸影像传感器
+  flightTime: 23
+  batteryCapacity: 2150
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.dji.com/cn/avata-2/specs
+status: published
