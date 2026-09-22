@@ -35,16 +35,30 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "https://xiaopang.club",
-  "generatedAt": "2026-09-22T01:59:14.030Z",
-  "total": 74,
+  "generatedAt": "2026-09-22T09:40:13.916Z",
+  "total": 97,
   "pageSize": 48,
   "categorySlugs": [
     "action-cam",
     "badminton-racket",
+    "bike-computer",
+    "camera",
     "casting-rod",
+    "drone",
+    "esports-keyboard",
+    "filter",
+    "gimbal",
+    "grinder",
+    "lens",
+    "memory-card",
+    "microphone",
     "mtb",
     "road-bike",
-    "snowboard"
+    "snowboard",
+    "sports-watch",
+    "tripod",
+    "video-camera",
+    "video-light"
   ]
 };
 
@@ -685,6 +699,69 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0c879-0896-78d7-9cde-5de82a169526",
+    "slug": "insta360-x5-2026",
+    "title": "影石Insta360 X5 — 8K 旗舰款全景运动相机",
+    "model": "X5",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "insta360",
+      "name": "Insta360",
+      "nameCn": "影石"
+    },
+    "categorySlug": "action-cam",
+    "specs": {
+      "cameraType": "action",
+      "sensor": "1/1.28 英寸传感器",
+      "maxVideo": "8K/30fps",
+      "maxFrameRate": 120,
+      "maxPhoto": "72MP",
+      "fov": "360°",
+      "stabilization": "FlowState 防抖 + 360° 水平矫正",
+      "waterproofDepth": 15,
+      "weight": 200,
+      "batteryLife": 208,
+      "storage": "microSD支持 UHS-I V30 或更高",
+      "scenes": [
+        "cycling",
+        "motorcycle",
+        "skiing",
+        "diving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "cameraType",
+        "label": "相机类型",
+        "value": "传统运动相机"
+      },
+      {
+        "key": "maxFrameRate",
+        "label": "最高帧率",
+        "value": "120fps"
+      },
+      {
+        "key": "waterproofDepth",
+        "label": "裸机防水深度",
+        "value": "15m"
+      },
+      {
+        "key": "weight",
+        "label": "机身重量",
+        "value": "200g"
+      }
+    ]
+  },
+  {
     "id": "01a0bdc1-3bf3-7bcd-8150-a687810601f2",
     "slug": "victor-auraspeed-100x-se-2026",
     "title": "VICTOR AURASPEED 100X SE H 2026",
@@ -968,6 +1045,147 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "maxTension",
         "label": "最高建议磅数",
         "value": "29lbs"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-08f9-743b-a883-b59c46d9839d",
+    "slug": "igpsport-bsc500-2025",
+    "title": "BSC500 - 全彩大屏进阶码表，大有声色 - iGPSPORT迹驰",
+    "model": "BSC500",
+    "year": 2025,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "igpsport",
+      "name": "iGPSPORT",
+      "nameCn": "迹驰"
+    },
+    "categorySlug": "bike-computer",
+    "specs": {
+      "screenSize": 3.3,
+      "screen": "全透触控彩屏",
+      "touchScreen": true,
+      "batteryLife": 25,
+      "navigation": true,
+      "mapSupport": "离线 / 在线导航",
+      "audioPrompt": true,
+      "sensorCompatibility": "全面传感器兼容"
+    },
+    "highlights": [
+      {
+        "key": "screenSize",
+        "label": "屏幕尺寸",
+        "value": "3.3in"
+      },
+      {
+        "key": "batteryLife",
+        "label": "官方续航",
+        "value": "25h"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-0905-7275-826a-99cd23748beb",
+    "slug": "igpsport-igs800-2024",
+    "title": "iGS800 - 彩屏触控GPS骑行码表 - iGPSPORT迹驰",
+    "model": "iGS800",
+    "year": 2024,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "igpsport",
+      "name": "iGPSPORT",
+      "nameCn": "迹驰"
+    },
+    "categorySlug": "bike-computer",
+    "specs": {
+      "screenSize": 3.5,
+      "screen": "全透触控彩屏",
+      "touchScreen": true,
+      "batteryLife": 50,
+      "navigation": true
+    },
+    "highlights": [
+      {
+        "key": "screenSize",
+        "label": "屏幕尺寸",
+        "value": "3.5in"
+      },
+      {
+        "key": "batteryLife",
+        "label": "官方续航",
+        "value": "50h"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-0919-798e-94f3-45436cf05132",
+    "slug": "insta360-x4-2024",
+    "title": "影石Insta360 X4-8K 全景运动相机",
+    "model": "X4",
+    "year": 2024,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "insta360",
+      "name": "Insta360",
+      "nameCn": "影石"
+    },
+    "categorySlug": "camera",
+    "specs": {
+      "cameraType": "360°全景相机",
+      "cameraSensor": "1/2 英寸",
+      "maxVideo": "8K/30fps/5.7K/60fps",
+      "maxPhoto": "72MP",
+      "stabilization": "FlowState 防抖",
+      "screenSize": 2.5,
+      "batteryLife": 135,
+      "batteryCapacity": 2290,
+      "weight": 203,
+      "waterproof": "裸机 10 m 防水"
+    },
+    "highlights": [
+      {
+        "key": "screenSize",
+        "label": "屏幕尺寸",
+        "value": "2.5英寸"
+      },
+      {
+        "key": "batteryLife",
+        "label": "续航时间",
+        "value": "135min"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "2290mAh"
+      },
+      {
+        "key": "weight",
+        "label": "重量",
+        "value": "203g"
       }
     ]
   },
@@ -1260,6 +1478,804 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "rodType",
         "label": "轮座类型",
         "value": "直柄纺车"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-0984-72e0-8fde-70f8d137acfd",
+    "slug": "dji-avata-2-2024",
+    "title": "DJI Avata 2 - 第一视角飞行体验无人机 - 技术参数 - DJI 大疆创新",
+    "model": "Avata 2",
+    "year": 2024,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "dji",
+      "name": "DJI",
+      "nameCn": "大疆"
+    },
+    "categorySlug": "drone",
+    "specs": {
+      "flightTime": 23,
+      "batteryCapacity": 2150,
+      "maxVideo": "4K/120fps",
+      "cameraSensor": "1/1.3 英寸影像传感器",
+      "transmissionRange": 13
+    },
+    "highlights": [
+      {
+        "key": "flightTime",
+        "label": "最长飞行时间",
+        "value": "23min"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "2150mAh"
+      },
+      {
+        "key": "transmissionRange",
+        "label": "图传距离",
+        "value": "13km"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-0998-7800-bd08-35877608aef7",
+    "slug": "dji-mini-4-pro-2023",
+    "title": "DJI Mini 4 Pro - 技术参数 - DJI 大疆创新",
+    "model": "Mini 4 Pro",
+    "year": 2023,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "dji",
+      "name": "DJI",
+      "nameCn": "大疆"
+    },
+    "categorySlug": "drone",
+    "specs": {
+      "weightNote": "轻于 249 g",
+      "flightTime": 34,
+      "batteryCapacity": 2590,
+      "maxVideo": "4K/60fps HDR",
+      "cameraSensor": "1/1.3 英寸 CMOS",
+      "verticalShooting": true,
+      "transmissionRange": 20,
+      "obstacleSensing": "omnidirectional",
+      "subjectTracking": true
+    },
+    "highlights": [
+      {
+        "key": "flightTime",
+        "label": "最长飞行时间",
+        "value": "34min"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "2590mAh"
+      },
+      {
+        "key": "transmissionRange",
+        "label": "图传距离",
+        "value": "20km"
+      },
+      {
+        "key": "obstacleSensing",
+        "label": "避障能力",
+        "value": "全向避障"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-09ae-71bf-af33-458d487f5a41",
+    "slug": "akko-5075b-plus-asa-clear-2026",
+    "title": "5075B Plus ASA Clear | Akko Official Global Site",
+    "model": "5075B Plus ASA Clear",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "akko",
+      "name": "Akko",
+      "nameCn": "艾酷"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "switchType": "Akko V3 Piano Pro",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 背光",
+      "driver": "Akko Cloud Driver",
+      "hotSwap": true,
+      "keycapMaterial": "透明 PC 键帽"
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-09bc-7b1b-8c97-de9c8daf458c",
+    "slug": "akko-mod007-v5-he-2026",
+    "title": "MOD007 V5 HE 三模磁轴键盘 - Akko",
+    "model": "MOD007 V5 HE",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": 740,
+    "priceMax": 740,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "akko",
+      "name": "Akko",
+      "nameCn": "艾酷"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "magnetic",
+      "switchType": "星引力磁轴",
+      "mounting": "Gasket 结构",
+      "caseMaterial": "CNC 铝合金",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "pollingRate": 8000,
+      "rapidTriggerPrecision": 0.005,
+      "backlight": "1600 万色 RGB 背光",
+      "driver": "网页或软件双驱动",
+      "quickRelease": true,
+      "customScreen": true
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "磁轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "pollingRate",
+        "label": "回报率",
+        "value": "8000Hz"
+      },
+      {
+        "key": "rapidTriggerPrecision",
+        "label": "RT 精度",
+        "value": "0.01mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-09cb-7c17-96ab-7203e8618d20",
+    "slug": "aula-f75-2026",
+    "title": "AULA 75% Gasket Wireless Mechanical Keyboard – Aula Gear",
+    "model": "AULA F75",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "aula",
+      "name": "AULA",
+      "nameCn": "狼蛛"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "switchType": "LEOBOG Reaper Linear Switch",
+      "mounting": "Gasket",
+      "layout": "75% ANSI",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 背光",
+      "driver": "AULA Driver",
+      "hotSwap": true,
+      "batteryCapacity": 4000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "4000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-09d6-75f5-b002-7c3772a94d41",
+    "slug": "monsgeek-m2-v5-he-2026",
+    "title": "M2 V5 HE Fully Assembled - MonsGeek",
+    "model": "M2 V5 HE",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "monsgeek",
+      "name": "MonsGeek",
+      "nameCn": "魔极客"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "magnetic",
+      "switchType": "Akko AstroAim / AstroLink",
+      "mounting": "Gasket-mounted",
+      "caseMaterial": "铝合金",
+      "layout": "1800 / 98 键",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "pollingRate": 8000,
+      "scanRate": 32000,
+      "rapidTriggerPrecision": 0.005,
+      "actuationRange": "0.100–3.300mm",
+      "backlight": "ARGB RGB 背光",
+      "driver": "MonsGeek Driver & Web-Based Driver",
+      "quickRelease": true,
+      "batteryCapacity": 8000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "磁轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "pollingRate",
+        "label": "回报率",
+        "value": "8000Hz"
+      },
+      {
+        "key": "scanRate",
+        "label": "扫描率",
+        "value": "32000Hz"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-09e2-7c08-8415-7dabcd2e8691",
+    "slug": "monsgeek-m2-v5-via-2026",
+    "title": "M2 V5 VIA - MonsGeek",
+    "model": "M2 V5 VIA",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "monsgeek",
+      "name": "MonsGeek",
+      "nameCn": "魔极客"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "switchType": "Akko Cilantro / Akko Mirror / Akko Stellar Rose",
+      "mounting": "Gasket-mounted",
+      "caseMaterial": "铝合金",
+      "layout": "ANSI / 1800 紧凑布局",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 背光",
+      "driver": "VIA",
+      "hotSwap": true,
+      "quickRelease": true,
+      "batteryCapacity": 8000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "8000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-09f1-7ebc-92e9-cd0bf533886c",
+    "slug": "vxe-v75-x-2026",
+    "title": "Wireless Mechanical Gaming Keyboard | Semi-Aluminum",
+    "model": "VXE V75 X",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "vxe",
+      "name": "VXE",
+      "nameCn": "VXE / ATK"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "switchType": "Obsidian",
+      "caseMaterial": "铝合金上盖 + ABS 底壳",
+      "layout": "75% ANSI",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "南向 ARGB RGB 背光",
+      "driver": "ATK HUB",
+      "hotSwap": true,
+      "keycapMaterial": "PBT Cherry/KOP Profile 键帽"
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-09fc-7f63-ab75-3573977f3f39",
+    "slug": "wobkey-rainy75-pro-2026",
+    "title": "WOBKEY Rainy 75 | Custom Aluminum 75 Keyboard",
+    "model": "Rainy 75 Pro",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "wobkey",
+      "name": "WOBKEY",
+      "nameCn": "WOBKEY"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "switchType": "WOB Switch",
+      "mounting": "Gasket-mounted",
+      "caseMaterial": "铝合金",
+      "layout": "75%",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 背光",
+      "batteryCapacity": 7000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "7000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0c87b-fc5b-7c30-b8f9-4f5f18fc0b30",
+    "slug": "nisi-true-color-cpl-2022",
+    "title": "TRUE COLOR 色彩保真CPL – NiSi 耐司-专业电影及相机光学镜头滤镜品牌 %",
+    "model": "TRUE COLOR CPL",
+    "year": 2022,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nisi",
+      "name": "NiSi",
+      "nameCn": "耐司"
+    },
+    "categorySlug": "filter",
+    "specs": {
+      "filterType": "CPL 偏振镜",
+      "diameterOptions": "40.5 / 43 / 46 / 49 / 52 / 55 / 58 / 62 / 67 / 72 / 77 / 82 / 95 mm",
+      "material": "True Color 偏振材料",
+      "coating": "双面低反射纳米镀膜",
+      "colorNeutral": true,
+      "waterOilResistance": true,
+      "edgeBlackening": true,
+      "frameOptions": "标准框 / 铜框"
+    },
+    "highlights": []
+  },
+  {
+    "id": "01a0c879-0a0a-7619-a077-ded6bafacf94",
+    "slug": "dji-osmo-mobile-7p-2026",
+    "title": "Osmo Mobile 7 系列 - 技术参数 - DJI 大疆创新",
+    "model": "Osmo Mobile 7P",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "dji",
+      "name": "DJI",
+      "nameCn": "大疆"
+    },
+    "categorySlug": "gimbal",
+    "specs": {
+      "gimbalType": "手机稳定器",
+      "stabilization": "三轴云台增稳",
+      "tracking": "智能跟随 7.0",
+      "trackingModule": "多功能追踪模块（标配）",
+      "weight": 368,
+      "batteryCapacity": 3350,
+      "workingTime": 10,
+      "chargingTime": 2.5,
+      "chargingPort": "USB-C",
+      "phoneWeightRange": "170 克至 300 克",
+      "phoneThicknessRange": "6.9 毫米至 10 毫米",
+      "phoneWidthRange": "67 毫米至 84 毫米",
+      "extensionRodLength": 215,
+      "builtInTripod": true,
+      "controlSpeed": 120,
+      "fillLightIlluminance": 40,
+      "fillLightColorTemperature": "2500 K 至 6000 K"
+    },
+    "highlights": [
+      {
+        "key": "weight",
+        "label": "重量",
+        "value": "368g"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "3350mAh"
+      },
+      {
+        "key": "workingTime",
+        "label": "工作时间",
+        "value": "10h"
+      },
+      {
+        "key": "chargingTime",
+        "label": "充电时间",
+        "value": "2.5h"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-0a18-79ad-80e6-b145b037ad6e",
+    "slug": "timemore-sculptor-078s-2026",
+    "title": "【泰摩咖啡】電動磨豆機TEG078S-黑色(雕刻家系列-手沖/義式雙用) – 泰摩TIMEMORE臺灣官方網站",
+    "model": "TEG078S",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "timemore",
+      "name": "TIMEMORE",
+      "nameCn": "泰摩"
+    },
+    "categorySlug": "grinder",
+    "specs": {
+      "grinderType": "电动磨豆机",
+      "useRange": "手冲 / 意式双用",
+      "weight": 6810,
+      "dimensions": "261mm × 118mm × 294mm",
+      "materials": "铝合金/不锈钢/Tritan材料",
+      "hopperCapacity": "标准豆仓约 20–30 g；加高豆仓约 100 g",
+      "catchCupCapacity": 60,
+      "power": 230,
+      "voltage": "110V",
+      "speedAdjustment": true,
+      "fineRetentionReduction": true
+    },
+    "highlights": [
+      {
+        "key": "weight",
+        "label": "重量",
+        "value": "6810g"
+      },
+      {
+        "key": "catchCupCapacity",
+        "label": "接粉罐容量",
+        "value": "60g"
+      },
+      {
+        "key": "power",
+        "label": "功率",
+        "value": "230W"
+      }
+    ]
+  },
+  {
+    "id": "01a0c87b-fc81-7558-adb3-57bc3dbbfbb8",
+    "slug": "viltrox-af-56mm-f1-2-pro-xf-2025",
+    "title": "Viltrox AF 56mm F1.2 Pro XF Lens for Fujifilm| APS-C Portrait Master – Viltrox Store",
+    "model": "AF 56mm F1.2 Pro XF",
+    "year": 2025,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "viltrox",
+      "name": "Viltrox",
+      "nameCn": "唯卓仕"
+    },
+    "categorySlug": "lens",
+    "specs": {
+      "mount": "X-mount",
+      "focalLength": 56,
+      "equivalentFocalLength": "85mm",
+      "maxAperture": 1.2,
+      "opticalStructure": "13/8",
+      "focusDistance": 0.5,
+      "maxMagnification": 0.13,
+      "autofocus": true,
+      "filterSize": 67,
+      "weight": 575,
+      "weatherSealing": "防尘防滴 / 全天候防护"
+    },
+    "highlights": [
+      {
+        "key": "focalLength",
+        "label": "焦距",
+        "value": "56mm"
+      },
+      {
+        "key": "maxAperture",
+        "label": "最大光圈",
+        "value": "1.2"
+      },
+      {
+        "key": "focusDistance",
+        "label": "最近对焦距离",
+        "value": "0.5m"
+      },
+      {
+        "key": "maxMagnification",
+        "label": "最大放大倍率",
+        "value": "0.13"
+      }
+    ]
+  },
+  {
+    "id": "01a0c87b-fc8c-7b4b-a7f8-8c10800f43b7",
+    "slug": "lexar-professional-1066x-sd-silver-2026",
+    "title": "Lexar Professional 1066x SDXC UHS-I 存储卡SILVER系列 | Lexar雷克沙",
+    "model": "Professional 1066x SDXC UHS-I SILVER",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "lexar",
+      "name": "Lexar",
+      "nameCn": "雷克沙"
+    },
+    "categorySlug": "memory-card",
+    "specs": {
+      "cardType": "SDXC",
+      "interface": "UHS-I",
+      "capacityOptions": "64GB / 128GB / 256GB / 512GB / 1TB",
+      "readSpeed": 160,
+      "writeSpeedByCapacity": "128GB–1TB：120 MB/s；64GB：70 MB/s",
+      "performanceClass": "1TB - Class 10, U3, V30",
+      "videoSupport": "全高清 / 4K 超高清视频",
+      "dimensions": "32 mm x 24 mm x 2.1 mm / 1.25” x 0.95” x 0.08”",
+      "operatingTemperature": "-25°C to 85°C (-13°F to 185°F)",
+      "storageTemperature": "-40°C to 85°C (-40°F to 185°F)",
+      "durability": "抗冲击、抗震、防 X 射线",
+      "warranty": "10年有限质保"
+    },
+    "highlights": [
+      {
+        "key": "readSpeed",
+        "label": "最高读取速度",
+        "value": "160MB/s"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-0a4c-7e0e-bd9f-64fd54536cf1",
+    "slug": "dji-mic-mini-2026",
+    "title": "DJI Mic Mini - 技术参数 - DJI 大疆创新",
+    "model": "DJI Mic Mini",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "dji",
+      "name": "DJI",
+      "nameCn": "大疆"
+    },
+    "categorySlug": "microphone",
+    "specs": {
+      "microphoneType": "无线麦克风",
+      "transmitterWeight": 10,
+      "receiverWeight": 17.8,
+      "chargingCaseWeight": 139,
+      "transmitterBatteryCapacity": 114,
+      "receiverBatteryCapacity": 170,
+      "chargingCaseBatteryCapacity": 1950,
+      "transmitterChargingTime": 90,
+      "receiverChargingTime": 100,
+      "chargingCaseChargingTime": 2,
+      "transmitterWorkingTime": 11.5,
+      "receiverWorkingTime": 10.5,
+      "polarPattern": "全指向",
+      "frequencyResponse": "低切关：20 Hz 至 20 kHz；低切开：100 Hz 至 20 kHz",
+      "maxSPL": 120,
+      "equivalentNoise": 24,
+      "maxTransmissionDistance": 400,
+      "wirelessMode": "GFSK 2Mbps",
+      "bluetoothProtocol": "蓝牙 5.3"
+    },
+    "highlights": [
+      {
+        "key": "transmitterWeight",
+        "label": "发射器重量",
+        "value": "10g"
+      },
+      {
+        "key": "receiverWeight",
+        "label": "接收器重量",
+        "value": "17.8g"
+      },
+      {
+        "key": "chargingCaseWeight",
+        "label": "充电盒重量",
+        "value": "139g"
+      },
+      {
+        "key": "transmitterBatteryCapacity",
+        "label": "发射器电池容量",
+        "value": "114mAh"
       }
     ]
   },
@@ -4662,6 +5678,225 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "254mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-0dd2-7d51-bb80-a6285e4252ea",
+    "slug": "amazfit-t-rex-3-pro-48mm-2026",
+    "title": "T-Rex 3 PRO 五級鈦合金智慧手錶",
+    "model": "T-Rex 3 Pro 48mm",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "amazfit",
+      "name": "Amazfit",
+      "nameCn": "华米 Amazfit"
+    },
+    "categorySlug": "sports-watch",
+    "specs": {
+      "watchType": "户外运动智能手表",
+      "caseSize": "48mm",
+      "displaySize": 1.5,
+      "displayType": "AMOLED",
+      "peakBrightness": 3000,
+      "displayGlass": "蓝宝石镜面玻璃",
+      "weight": 75,
+      "waterResistance": 10,
+      "materials": "表壳-纤维增强聚合物 表圈与按键：5级钛合金",
+      "batteryCapacity": 700,
+      "batteryLife": 25,
+      "gnssBatteryLife": 116,
+      "positioning": "双频六星定位系统（GPS、GLONASS、GALILEO、BDS、QZSS、NAVIC）圆极化GNSS天线技术",
+      "offlineNavigation": true,
+      "sportsModes": "180+",
+      "healthSensors": "BioTracker™ 6.0 PPG 生物识别传感器 (5PD+2LED)"
+    },
+    "highlights": [
+      {
+        "key": "displaySize",
+        "label": "屏幕尺寸",
+        "value": "1.5英寸"
+      },
+      {
+        "key": "peakBrightness",
+        "label": "峰值亮度",
+        "value": "3000nits"
+      },
+      {
+        "key": "weight",
+        "label": "重量",
+        "value": "75g"
+      },
+      {
+        "key": "waterResistance",
+        "label": "防水等级",
+        "value": "10ATM"
+      }
+    ]
+  },
+  {
+    "id": "01a0c87c-0073-7d8e-ac08-7f61ea98506a",
+    "slug": "sirui-t-1204sk-2026",
+    "title": "思锐T-S系列三脚架 - 广东思锐光学股份有限公司官网",
+    "model": "T-1204SK",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "sirui",
+      "name": "SIRUI",
+      "nameCn": "思锐"
+    },
+    "categorySlug": "tripod",
+    "specs": {
+      "material": "碳纤维",
+      "compatibleBallHead": "K-10X/G-10X/G11",
+      "sections": 4,
+      "tubeMaxDiameter": 25.8,
+      "tubeMinDiameter": 15,
+      "minHeight": 140,
+      "maxHeight": 980,
+      "maxHeightExtended": 1300,
+      "retractedHeight": 480,
+      "foldedHeight": 370,
+      "monopodMaxHeight": 1340,
+      "monopodMinHeight": 330,
+      "weight": 1.2,
+      "loadCapacity": 12
+    },
+    "highlights": [
+      {
+        "key": "sections",
+        "label": "脚管节数",
+        "value": "4节"
+      },
+      {
+        "key": "tubeMaxDiameter",
+        "label": "管径上限",
+        "value": "25.8mm"
+      },
+      {
+        "key": "tubeMinDiameter",
+        "label": "管径下限",
+        "value": "15mm"
+      },
+      {
+        "key": "minHeight",
+        "label": "最低高度",
+        "value": "140mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0c879-0de1-7c52-b51d-cee0d9821a30",
+    "slug": "dji-osmo-pocket-3-2023",
+    "title": "Osmo Pocket 3 - 技术参数 - DJI 大疆创新",
+    "model": "Osmo Pocket 3",
+    "year": 2023,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "dji",
+      "name": "DJI",
+      "nameCn": "大疆"
+    },
+    "categorySlug": "video-camera",
+    "specs": {
+      "cameraSensor": "1 英寸 CMOS",
+      "maxVideo": "4K/120fps",
+      "screenSize": 2,
+      "stabilization": "三轴机械云台增稳",
+      "verticalShooting": true
+    },
+    "highlights": [
+      {
+        "key": "screenSize",
+        "label": "屏幕尺寸",
+        "value": "2英寸"
+      }
+    ]
+  },
+  {
+    "id": "01a0c87c-008a-721e-91f5-75715e144089",
+    "slug": "godox-sl60iibi-2026",
+    "title": "SL60IID/SL60IIBi-神牛产品-Godox神牛 - 官方网站",
+    "model": "SL60IIBi",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "godox",
+      "name": "Godox",
+      "nameCn": "神牛"
+    },
+    "categorySlug": "video-light",
+    "specs": {
+      "lightType": "COB 摄影灯",
+      "power": 75,
+      "colorTemperature": "2800K~6500K",
+      "illuminance": 25100,
+      "dimmingRange": "0%~100%",
+      "cri": 96,
+      "tlci": 97,
+      "fxEffects": 11,
+      "controlMethods": "2.4GHz控制/蓝牙控制/灯体控制",
+      "transmissionDistance": 30,
+      "workingTemperature": "-10℃~40℃",
+      "dimensions": "140mm*236mm*215mm",
+      "weight": 1.5,
+      "mount": "保荣卡口",
+      "lowNoise": true
+    },
+    "highlights": [
+      {
+        "key": "power",
+        "label": "最大功率",
+        "value": "75W"
+      },
+      {
+        "key": "illuminance",
+        "label": "最高照度",
+        "value": "25100lux"
+      },
+      {
+        "key": "cri",
+        "label": "显色指数下限",
+        "value": "96"
+      },
+      {
+        "key": "tlci",
+        "label": "电视光源一致性指数下限",
+        "value": "97"
       }
     ]
   }
