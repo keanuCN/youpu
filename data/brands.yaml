@@ -162,6 +162,13 @@
   official_url: https://www.wobkey.com
   description: 中国客制化机械键盘品牌，Rainy 75 系列以铝合金机身、三模连接和多种装配变体为主要特点。
 
+- slug: vxe
+  name: VXE
+  name_cn: VXE / ATK
+  country: CN
+  official_url: https://vxe.com
+  description: 中国电竞外设品牌，V75 X 机械键盘主打 75% 配列、三模连接、Game-Gasket 结构和低延迟电竞体验。
+
 - slug: canyon
   name: Canyon
   country: DE

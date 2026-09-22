@@ -1,0 +1,24 @@
+slug: vxe-v75-x-2026
+category: esports-keyboard
+brand: vxe
+model: VXE V75 X
+year: 2026
+title: Wireless Mechanical Gaming Keyboard | Semi-Aluminum
+specs:
+  keyboardType: mechanical
+  switchType: Obsidian
+  caseMaterial: 铝合金上盖 + ABS 底壳
+  layout: 75% ANSI
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: 南向 ARGB RGB 背光
+  hotSwap: true
+  keycapMaterial: PBT Cherry/KOP Profile 键帽
+  driver: ATK HUB
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.atk.store/products/atk-vxe-v75-x-mechanical-gaming-keyboard
+status: published
