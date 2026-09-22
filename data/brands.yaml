@@ -114,6 +114,41 @@
   official_url: https://www.dji.com
   description: 中国影像与智能硬件品牌，Osmo Action 系列覆盖运动相机的日常、骑行和水下场景。
 
+- slug: nisi
+  name: NiSi
+  name_cn: 耐司
+  country: CN
+  official_url: https://nisioptics.com
+  description: 中国光学滤镜品牌，产品覆盖风光摄影、视频创作和无人机影像配件。
+
+- slug: viltrox
+  name: Viltrox
+  name_cn: 唯卓仕
+  country: CN
+  official_url: https://viltrox.com
+  description: 中国摄影器材品牌，产品覆盖自动对焦镜头、手动镜头和影像配件。
+
+- slug: lexar
+  name: Lexar
+  name_cn: 雷克沙
+  country: US
+  official_url: https://www.lexar.com
+  description: 存储与影像配件品牌，产品覆盖存储卡、固态硬盘和读卡器。
+
+- slug: sirui
+  name: SIRUI
+  name_cn: 思锐
+  country: CN
+  official_url: https://www.sirui.com
+  description: 中国摄影器材品牌，产品覆盖三脚架、云台、镜头和视频配件。
+
+- slug: godox
+  name: Godox
+  name_cn: 神牛
+  country: CN
+  official_url: https://www.godox.com
+  description: 中国摄影灯光品牌，产品覆盖闪光灯、持续灯、引闪器和视频灯具。
+
 - slug: gopro
   name: GoPro
   country: US
