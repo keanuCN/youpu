@@ -1,0 +1,31 @@
+slug: dji-mic-mini-2026
+category: microphone
+brand: dji
+model: DJI Mic Mini
+year: 2026
+title: DJI Mic Mini - 技术参数 - DJI 大疆创新
+specs:
+  microphoneType: 无线麦克风
+  transmitterWeight: 10
+  receiverWeight: 17.8
+  chargingCaseWeight: 139
+  transmitterBatteryCapacity: 114
+  receiverBatteryCapacity: 170
+  chargingCaseBatteryCapacity: 1950
+  transmitterChargingTime: 90
+  receiverChargingTime: 100
+  chargingCaseChargingTime: 2
+  transmitterWorkingTime: 11.5
+  receiverWorkingTime: 10.5
+  polarPattern: 全指向
+  frequencyResponse: 低切关：20 Hz 至 20 kHz；低切开：100 Hz 至 20 kHz
+  maxSPL: 120
+  equivalentNoise: 24
+  maxTransmissionDistance: 400
+  wirelessMode: GFSK 2Mbps
+  bluetoothProtocol: 蓝牙 5.3
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.dji.com/cn/mic-mini/specs
+status: published

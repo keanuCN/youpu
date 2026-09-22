@@ -30,6 +30,7 @@ import { viltroxLensAdapter } from '../lens/brands/viltrox';
 import { nisiFilterAdapter } from '../filter/brands/nisi';
 import { siruiTripodAdapter } from '../tripod/brands/sirui';
 import { djiGimbalAdapter } from '../gimbal/brands/dji';
+import { djiMicrophoneAdapter } from '../microphone/brands/dji';
 
 export interface ProductAdapter {
   name: string;
@@ -61,6 +62,7 @@ const adapters: ProductAdapter[] = [
   nisiFilterAdapter,
   siruiTripodAdapter,
   djiGimbalAdapter,
+  djiMicrophoneAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,

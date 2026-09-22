@@ -2677,6 +2677,193 @@
   name: 麦克风
   parent: videography
   sort_order: 50
+  spec_schema:
+    fields:
+      - key: microphoneType
+        label: 麦克风类型
+        group: 产品定位
+        type: text
+        filter: false
+        compare: true
+        order: 10
+      - key: transmitterWeight
+        label: 发射器重量
+        group: 结构与便携
+        type: number
+        unit: g
+        min: 1
+        max: 1000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 20
+      - key: receiverWeight
+        label: 接收器重量
+        group: 结构与便携
+        type: number
+        unit: g
+        min: 1
+        max: 1000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 30
+      - key: chargingCaseWeight
+        label: 充电盒重量
+        group: 结构与便携
+        type: number
+        unit: g
+        min: 1
+        max: 2000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 40
+      - key: transmitterBatteryCapacity
+        label: 发射器电池容量
+        group: 续航与充电
+        type: number
+        unit: mAh
+        min: 1
+        max: 5000
+        filter: range
+        compare: true
+        order: 50
+      - key: receiverBatteryCapacity
+        label: 接收器电池容量
+        group: 续航与充电
+        type: number
+        unit: mAh
+        min: 1
+        max: 5000
+        filter: range
+        compare: true
+        order: 60
+      - key: chargingCaseBatteryCapacity
+        label: 充电盒电池容量
+        group: 续航与充电
+        type: number
+        unit: mAh
+        min: 1
+        max: 10000
+        filter: range
+        compare: true
+        order: 70
+      - key: transmitterChargingTime
+        label: 发射器充电时间
+        group: 续航与充电
+        type: number
+        unit: min
+        min: 1
+        max: 1000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 80
+      - key: receiverChargingTime
+        label: 接收器充电时间
+        group: 续航与充电
+        type: number
+        unit: min
+        min: 1
+        max: 1000
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 90
+      - key: chargingCaseChargingTime
+        label: 充电盒充电时间
+        group: 续航与充电
+        type: number
+        unit: h
+        min: 0.1
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 100
+      - key: transmitterWorkingTime
+        label: 发射器工作时间
+        group: 续航与充电
+        type: number
+        unit: h
+        min: 0.1
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 110
+      - key: receiverWorkingTime
+        label: 接收器工作时间
+        group: 续航与充电
+        type: number
+        unit: h
+        min: 0.1
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 120
+      - key: polarPattern
+        label: 指向性
+        group: 收音与传输
+        type: text
+        filter: false
+        compare: true
+        order: 130
+      - key: frequencyResponse
+        label: 频率响应
+        group: 收音与传输
+        type: text
+        filter: false
+        compare: true
+        order: 140
+      - key: maxSPL
+        label: 最大声压级
+        group: 收音与传输
+        type: number
+        unit: dB SPL
+        min: 1
+        max: 200
+        filter: range
+        compare: true
+        order: 150
+      - key: equivalentNoise
+        label: 等效噪声
+        group: 收音与传输
+        type: number
+        unit: dBA
+        min: 0
+        max: 100
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 160
+      - key: maxTransmissionDistance
+        label: 最大传输距离
+        group: 收音与传输
+        type: number
+        unit: m
+        min: 1
+        max: 5000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 170
+      - key: wirelessMode
+        label: 无线模式
+        group: 连接与协议
+        type: text
+        filter: false
+        compare: true
+        order: 180
+      - key: bluetoothProtocol
+        label: 蓝牙协议
+        group: 连接与协议
+        type: text
+        filter: false
+        compare: true
+        order: 190
 
 - slug: drones
   name: 无人机

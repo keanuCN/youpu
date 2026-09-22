@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "dji-mic-mini-2026",
+    "category": "microphone",
+    "brand": "dji",
+    "model": "DJI Mic Mini",
+    "identityAliases": ["DJI Mic Mini 无线麦克风", "大疆 Mic Mini"],
+    "year": 2026,
+    "url": "https://www.dji.com/cn/mic-mini/specs",
+    "mode": "cheerio"
+  }
+]

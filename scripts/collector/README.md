@@ -129,6 +129,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门稳定器第一阶段目标见 `examples/domestic-hot-gimbal-phase1-targets.json`。当前接入 DJI 大疆 Osmo Mobile 7 系列官方技术参数页，按型号文本提取 Osmo Mobile 7P 的手机稳定器类型、三轴云台、智能跟随 7.0、追踪模块、368 g 重量、3350 mAh 电池、10 小时工作时间、兼容手机范围、215 mm 延长杆、内置三脚架和补光灯参数；同页 Osmo Mobile 7 的型号级参数不会混入。
 
+国内热门麦克风第一阶段目标见 `examples/domestic-hot-microphone-phase1-targets.json`。当前接入 DJI 大疆 DJI Mic Mini 官方技术参数页，按发射器、接收器、充电盒和通用麦克风区块提取组件重量、电池、充电、续航、指向性、频率响应、最大声压级、等效噪声和传输距离；组件字段保持独立，不合并成整套设备的单一重量或续航。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。
