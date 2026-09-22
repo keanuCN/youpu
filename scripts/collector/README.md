@@ -133,6 +133,8 @@ Victor 羽毛球拍第一阶段目标见 `examples/victor-badminton-phase1-targe
 
 国内热门补光灯第一阶段目标见 `examples/domestic-hot-video-light-phase1-targets.json`。当前接入神牛 Godox SL60II 官方中文产品页，按参数表头定位 SL60IIBi 列，提取功率、色温、最高照度、调光范围、CRI、TLCI、FX 光效、控制距离、尺寸、重量、保荣卡口和低噪风扇；表格中的跨型号公共行会复用明确公共值，不读取 SL60IID 列。
 
+国内热门存储卡第一阶段目标见 `examples/domestic-hot-memory-card-phase1-targets.json`。当前接入 Lexar 雷克沙 Professional 1066x SDXC UHS-I SILVER 系列官方中文产品页，从正文和 JSON-LD 提取 SDXC / UHS-I、64GB–1TB 容量、160 MB/s 读取速度、按容量区分的写入速度、Class 10/U3/V30、4K 视频支持、尺寸、温度、防护和质保；不把不同容量的写入速度合并。
+
 ## 当前边界
 
 - 已接入 Cheerio 静态抓取和 Playwright 渲染兜底。

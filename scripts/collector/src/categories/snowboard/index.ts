@@ -32,6 +32,7 @@ import { siruiTripodAdapter } from '../tripod/brands/sirui';
 import { djiGimbalAdapter } from '../gimbal/brands/dji';
 import { djiMicrophoneAdapter } from '../microphone/brands/dji';
 import { godoxVideoLightAdapter } from '../video-light/brands/godox';
+import { lexarMemoryCardAdapter } from '../memory-card/brands/lexar';
 
 export interface ProductAdapter {
   name: string;
@@ -65,6 +66,7 @@ const adapters: ProductAdapter[] = [
   djiGimbalAdapter,
   djiMicrophoneAdapter,
   godoxVideoLightAdapter,
+  lexarMemoryCardAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,

@@ -2442,6 +2442,96 @@
   name: 存储卡
   parent: photography
   sort_order: 60
+  spec_schema:
+    fields:
+      - key: cardType
+        label: 卡片类型
+        group: 产品定位
+        type: text
+        filter: false
+        compare: true
+        order: 10
+      - key: interface
+        label: 总线接口
+        group: 兼容与性能
+        type: text
+        filter: false
+        compare: true
+        order: 20
+      - key: capacityOptions
+        label: 容量选项
+        group: 容量与性能
+        type: text
+        filter: false
+        compare: true
+        order: 30
+      - key: readSpeed
+        label: 最高读取速度
+        group: 容量与性能
+        type: number
+        unit: MB/s
+        min: 1
+        max: 10000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 40
+      - key: writeSpeedByCapacity
+        label: 按容量写入速度
+        group: 容量与性能
+        type: text
+        filter: false
+        compare: true
+        order: 50
+      - key: performanceClass
+        label: 性能等级
+        group: 容量与性能
+        type: text
+        filter: false
+        compare: true
+        order: 60
+      - key: videoSupport
+        label: 视频支持
+        group: 兼容与性能
+        type: text
+        filter: false
+        compare: true
+        order: 70
+      - key: dimensions
+        label: 尺寸
+        group: 结构与耐用
+        type: text
+        filter: false
+        compare: true
+        order: 80
+      - key: operatingTemperature
+        label: 工作温度
+        group: 结构与耐用
+        type: text
+        filter: false
+        compare: true
+        order: 90
+      - key: storageTemperature
+        label: 存放温度
+        group: 结构与耐用
+        type: text
+        filter: false
+        compare: true
+        order: 100
+      - key: durability
+        label: 防护能力
+        group: 结构与耐用
+        type: text
+        filter: false
+        compare: true
+        order: 110
+      - key: warranty
+        label: 质保期
+        group: 服务与保障
+        type: text
+        filter: false
+        compare: true
+        order: 120
 
 - slug: video-camera
   name: 摄像机
