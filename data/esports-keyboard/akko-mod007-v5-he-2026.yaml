@@ -1,0 +1,30 @@
+slug: akko-mod007-v5-he-2026
+category: esports-keyboard
+brand: akko
+model: MOD007 V5 HE
+year: 2026
+title: MOD007 V5 HE 三模磁轴键盘 - Akko
+price:
+  min: 740
+  max: 740
+  currency: CNY
+specs:
+  keyboardType: magnetic
+  switchType: 星引力磁轴
+  mounting: Gasket 结构
+  caseMaterial: CNC 铝合金
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  pollingRate: 8000
+  rapidTriggerPrecision: 0.005
+  backlight: 1600 万色 RGB 背光
+  driver: 网页或软件双驱动
+  quickRelease: true
+  customScreen: true
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://akkogear.com/pd.jsp?id=56
+status: published

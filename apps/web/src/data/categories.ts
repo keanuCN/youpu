@@ -394,7 +394,7 @@ export const CATEGORY_TREE: CategoryNode[] = [
         path: ["游戏电竞"],
         status: "coming_soon",
         children: [
-          { slug: "esports-keyboard", name: "电竞键盘", nameEn: "Gaming Keyboards", path: ["游戏电竞", "电竞外设"], status: "coming_soon" },
+          { slug: "esports-keyboard", name: "电竞键盘", nameEn: "Gaming Keyboards", path: ["游戏电竞", "电竞外设"], status: "live" },
           { slug: "esports-mouse", name: "电竞鼠标", nameEn: "Gaming Mice", path: ["游戏电竞", "电竞外设"], status: "coming_soon" },
           { slug: "esports-headset", name: "电竞耳机", nameEn: "Gaming Headsets", path: ["游戏电竞", "电竞外设"], status: "coming_soon" },
         ],

@@ -141,6 +141,13 @@
   official_url: https://www.timemore.com
   description: 中国咖啡器具品牌，产品覆盖磨豆机、咖啡机、手冲壶和咖啡秤。
 
+- slug: akko
+  name: Akko
+  name_cn: 艾酷
+  country: CN
+  official_url: https://www.akkogear.com
+  description: 中国机械键盘与电竞外设品牌，产品覆盖磁轴键盘、机械键盘、键帽、鼠标和电竞耳机。
+
 - slug: canyon
   name: Canyon
   country: DE

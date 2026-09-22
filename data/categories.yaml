@@ -3706,6 +3706,108 @@
   name: 电竞键盘
   parent: esports-peripherals
   sort_order: 10
+  recommend_config:
+    weights:
+      response: 0.3
+      connection: 0.2
+      customization: 0.2
+      build: 0.15
+      value: 0.15
+  spec_schema:
+    fields:
+      - key: keyboardType
+        label: 键盘类型
+        group: 定位与结构
+        type: enum
+        options:
+          - { value: mechanical, label: 机械轴 }
+          - { value: magnetic, label: 磁轴 }
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 10
+      - key: switchType
+        label: 轴体
+        group: 定位与结构
+        type: text
+        filter: false
+        compare: true
+        order: 20
+      - key: mounting
+        label: 结构
+        group: 定位与结构
+        type: text
+        filter: false
+        compare: true
+        order: 30
+      - key: caseMaterial
+        label: 外壳材质
+        group: 定位与结构
+        type: text
+        filter: false
+        compare: true
+        order: 40
+      - key: connection
+        label: 连接方式
+        group: 连接与响应
+        type: enum[]
+        options:
+          - { value: wired, label: 有线 }
+          - { value: 2.4g, label: 2.4G 无线 }
+          - { value: bluetooth, label: 蓝牙 }
+        filter: multi
+        compare: true
+        order: 50
+      - key: pollingRate
+        label: 回报率
+        group: 连接与响应
+        type: int
+        unit: Hz
+        min: 125
+        max: 32000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 60
+      - key: rapidTriggerPrecision
+        label: RT 精度
+        group: 连接与响应
+        type: number
+        unit: mm
+        min: 0
+        max: 1
+        filter: range
+        compare: true
+        compareDirection: lower-better
+        order: 70
+      - key: backlight
+        label: 背光
+        group: 自定义与灯效
+        type: text
+        filter: false
+        compare: true
+        order: 80
+      - key: driver
+        label: 驱动方式
+        group: 自定义与灯效
+        type: text
+        filter: false
+        compare: true
+        order: 90
+      - key: quickRelease
+        label: 快拆结构
+        group: 自定义与灯效
+        type: bool
+        filter: false
+        compare: true
+        order: 100
+      - key: customScreen
+        label: 自定义屏幕
+        group: 自定义与灯效
+        type: bool
+        filter: false
+        compare: true
+        order: 110
 
 - slug: esports-mouse
   name: 电竞鼠标
