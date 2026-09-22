@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import { productSeedSchema, parseSpecSchema, validateSpecs, type SpecSchema } from '@youpu/schema';
 import { parse, stringify } from 'yaml';
 import { findRepositoryRoot, resolveDataDir } from './paths';
+import { sha256Json } from './hash';
 import type {
   AdapterResult,
   BlockedArtifact,
@@ -53,6 +54,10 @@ export async function buildArtifact(
     kind: 'product-crawl',
     capturedAt: new Date().toISOString(),
     target,
+    hashes: {
+      rawContentHash: sha256Json(snapshot),
+      normalizedSpecHash: sha256Json(adapterResult.normalizedSpecs),
+    },
     source,
     page: snapshot,
     adapter: {

@@ -37,6 +37,8 @@ node C:\nvm4w\nodejs\node_modules\pnpm\bin\pnpm.mjs --filter @youpu/collector cr
 
 `run-summary.json` 中的 `status` 为 `completed` 时，代表本批没有阻塞、质量失败、网络失败或自动通过失败；出现上述任一情况会标记为 `needs-review`。这个状态只表示批次结果，不替代对草稿、来源和图片授权的复核。
 
+成功采集的 raw artifact 还会写入两个稳定摘要：`rawContentHash` 用于判断页面快照是否变化，`normalizedSpecHash` 用于判断归一化规格是否变化。对象字段会排序后再计算摘要，避免同样的数据因字段顺序不同产生误报；下一步再基于这两个摘要生成字段级 diff。
+
 ## 批量采集
 
 `--target-file` 接收一个对象或对象数组。每个对象至少包含：`slug`、`category`、`brand`、`model`、`year`、`url`；可选 `mode`、`representativeSize` 和经过确认的 `identityAliases`。引擎并发固定为 1，默认每个域名请求间隔至少 2 秒。

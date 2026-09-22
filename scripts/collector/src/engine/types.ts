@@ -61,6 +61,12 @@ export interface CrawlArtifact {
   kind: 'product-crawl';
   capturedAt: string;
   target: CrawlTarget;
+  hashes: {
+    /** 当前页面快照的稳定摘要，用于判断页面内容是否变化。 */
+    rawContentHash: string;
+    /** adapter 归一化规格的稳定摘要，用于判断结构化事实是否变化。 */
+    normalizedSpecHash: string;
+  };
   source: {
     url: string;
     engine: CrawlMode;
