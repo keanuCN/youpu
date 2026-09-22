@@ -776,6 +776,7 @@ const ESPORTS_KEYBOARD: Category = {
       options: [
         { value: "Akko", label: "Akko" },
         { value: "MonsGeek", label: "MonsGeek" },
+        { value: "WOBKEY", label: "WOBKEY" },
       ],
     },
     { key: "price", label: "价格", control: "price", min: 0, max: 3000, step: 100 },

@@ -155,6 +155,13 @@
   official_url: https://www.monsgeek.cn
   description: 中国铝制机械键盘与磁轴电竞外设品牌，产品覆盖 M 系列、HE/TMR 磁轴键盘和键盘配件。
 
+- slug: wobkey
+  name: WOBKEY
+  name_cn: WOBKEY
+  country: CN
+  official_url: https://www.wobkey.com
+  description: 中国客制化机械键盘品牌，Rainy 75 系列以铝合金机身、三模连接和多种装配变体为主要特点。
+
 - slug: canyon
   name: Canyon
   country: DE

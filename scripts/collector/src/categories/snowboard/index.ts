@@ -39,6 +39,7 @@ import { lexarMemoryCardAdapter } from '../memory-card/brands/lexar';
 import { akkoEsportsKeyboardAdapter } from '../esports-keyboard/brands/akko';
 import { monsgeekEsportsKeyboardAdapter } from '../esports-keyboard/brands/monsgeek';
 import { monsgeekViaEsportsKeyboardAdapter } from '../esports-keyboard/brands/monsgeek-via';
+import { wobkeyEsportsKeyboardAdapter } from '../esports-keyboard/brands/wobkey';
 
 export interface ProductAdapter {
   name: string;
@@ -79,6 +80,7 @@ const adapters: ProductAdapter[] = [
   akkoEsportsKeyboardAdapter,
   monsgeekEsportsKeyboardAdapter,
   monsgeekViaEsportsKeyboardAdapter,
+  wobkeyEsportsKeyboardAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,

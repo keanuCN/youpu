@@ -1,0 +1,23 @@
+slug: wobkey-rainy75-pro-2026
+category: esports-keyboard
+brand: wobkey
+model: Rainy 75 Pro
+year: 2026
+title: WOBKEY Rainy 75 | Custom Aluminum 75 Keyboard
+specs:
+  keyboardType: mechanical
+  mounting: Gasket-mounted
+  caseMaterial: 铝合金
+  layout: 75%
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  switchType: WOB Switch
+  batteryCapacity: 7000
+  backlight: RGB 背光
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.wobkey.com/products/rainy75?variant=45239425302763
+status: published
