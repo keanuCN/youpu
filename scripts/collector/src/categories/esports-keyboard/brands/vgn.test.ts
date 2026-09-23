@@ -112,3 +112,37 @@ test('extracts VGN N75 V2 tri-mode common specs without mixing switch variants',
   assert.equal(result.normalizedSpecs.driver, 'V HUB');
   assert.equal(result.normalizedSpecs.switchType, undefined);
 });
+
+test('extracts VGN Neon 68 magnetic specs without merging switch and scan-rate variants', () => {
+  const neonTarget: CrawlTarget = {
+    ...target,
+    slug: 'vgn-neon-68-super-competitive-plus-2026',
+    model: 'VGN 霓虹68 超竞版+ 天霸轴 黑武士',
+    identityAliases: ['VGN Neon 68 Extreme Magnetic Switch Keyboard'],
+    url: 'https://vgnlab.com/products/vgn-neon-68he-super-competitive-wireless-magnetic-switch-keyboard',
+  };
+  const snapshot: PageSnapshot = {
+    title: 'VGN Neon 68 Extreme Magnetic Switch Keyboard',
+    description: 'Layout：68% Backlighting：RGB Connectivity：Wired Construction：Gasket Hot-swappable：YES Material：non-metallic Driver：Web-based Configuration Polling Rate：8000 RT Precision：0.001mm Full-Key Scan Rate：256K',
+    bodyText: 'Model: Super Competitive Super Competitive Plus Switch: Tianba Kunlun Divine Spark',
+    headings: [],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  const result = vgnEsportsKeyboardAdapter.normalize(neonTarget, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'magnetic');
+  assert.equal(result.normalizedSpecs.layout, '68%（67键）');
+  assert.equal(result.normalizedSpecs.mounting, 'Gasket');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired']);
+  assert.equal(result.normalizedSpecs.backlight, 'RGB 背光');
+  assert.equal(result.normalizedSpecs.hotSwap, true);
+  assert.equal(result.normalizedSpecs.driver, 'V HUB 网页驱动');
+  assert.equal(result.normalizedSpecs.pollingRate, 8000);
+  assert.equal(result.normalizedSpecs.rapidTriggerPrecision, 0.001);
+  assert.equal(result.normalizedSpecs.scanRate, undefined);
+  assert.equal(result.normalizedSpecs.switchType, undefined);
+});

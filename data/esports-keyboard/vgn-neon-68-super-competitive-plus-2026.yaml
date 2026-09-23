@@ -1,0 +1,26 @@
+slug: vgn-neon-68-super-competitive-plus-2026
+category: esports-keyboard
+brand: vgn
+model: VGN 霓虹68 超竞版+ 天霸轴 黑武士
+year: 2026
+title: VGN Neon 68 Extreme Magnetic Switch Keyboard
+price:
+  min: 329
+  max: 329
+  currency: CNY
+specs:
+  keyboardType: magnetic
+  layout: 68%（67键）
+  mounting: Gasket
+  connection:
+    - wired
+  backlight: RGB 背光
+  hotSwap: true
+  driver: V HUB 网页驱动
+  pollingRate: 8000
+  rapidTriggerPrecision: 0.001
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://vgnlab.com/products/vgn-neon-68he-super-competitive-wireless-magnetic-switch-keyboard
+status: published
