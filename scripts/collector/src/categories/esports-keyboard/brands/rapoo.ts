@@ -4,13 +4,32 @@ export const rapooEsportsKeyboardAdapter = {
   name: 'esports-keyboard/rapoo',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'rapoo' && /V500\s*PRO/i.test(target.model);
+    return target.category === 'esports-keyboard' && target.brand === 'rapoo' && /V500\s*PRO|V700DIY\s*[- ]?98/i.test(target.model);
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
     const evidence = pageEvidence(snapshot);
     const normalizedSpecs: Record<string, unknown> = {};
     const sourceNotes = [`找到雷柏官方 ${target.model} 产品页的型号与规格信息。`];
+
+    if (/V700DIY\s*[- ]?98/i.test(target.model)) {
+      if (/机械键盘|Mechanical/i.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';
+      if (/凯华定制快银轴/i.test(evidence)) normalizedSpecs.switchType = '凯华定制快银轴/弹白轴可选';
+      if (/Gasket/i.test(evidence)) normalizedSpecs.mounting = 'Gasket';
+      if (/三模|蓝牙.{0,12}2\.4G.{0,12}有线|Bluetooth.{0,20}2\.4GHz.{0,20}USB/i.test(evidence)) {
+        normalizedSpecs.connection = ['wired', '2.4g', 'bluetooth'];
+      }
+      if (/全键热插拔|Hot[- ]?swappable/i.test(evidence)) normalizedSpecs.hotSwap = true;
+      if (/PBT双色注塑键帽|PBT Double-shot Keycaps/i.test(evidence)) normalizedSpecs.keycapMaterial = 'PBT双色注塑';
+      if (/RGB背光|Per-key RGB/i.test(evidence)) normalizedSpecs.backlight = 'RGB 背光';
+      const batteryCapacity = evidence.match(/(?:内置)?\s*(\d{4,5})\s*mAh/i);
+      if (batteryCapacity?.[1]) normalizedSpecs.batteryCapacity = Number(batteryCapacity[1]);
+      if (/A\s*Hub/i.test(evidence)) normalizedSpecs.driver = 'Rapoo A Hub';
+      sourceNotes.push('型号限定为 V700DIY-98 长续航版；官网标注 10000mAh，其他V700DIY布局和旧款 V500PRO 不合并。官网列出快银轴/弹白轴选项，保留为可选项。');
+      sourceNotes.push('官网USB/2.4G回报率可切换125–1000Hz，无法用单一数值表示，因此不填单值 pollingRate；布局键数以具体商品SKU为准，不由型号数字推断。');
+      sourceNotes.push('京东 V700DIY-98 具名商品评价量仅作国内热度信号，不作为销量或商品规格。');
+      return { normalizedSpecs, sourceNotes };
+    }
 
     if (/机械键盘|机械轴|Mechanical/i.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';
     if (/(?:雷柏自主|自主)?\s*(?:黑.{0,2}青.{0,2}茶.{0,2}红轴|黑轴.{0,6}青轴.{0,6}茶轴.{0,6}红轴)/i.test(evidence)) {

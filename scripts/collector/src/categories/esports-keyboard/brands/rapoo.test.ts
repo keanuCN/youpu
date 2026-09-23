@@ -36,3 +36,36 @@ test('extracts verified wired full-size V500PRO specs and keeps switch options e
   assert.equal(result.normalizedSpecs.caseMaterial, '磨砂金属上盖');
   assert.equal(result.normalizedSpecs.hotSwap, undefined);
 });
+
+test('extracts V700DIY-98 long-battery specs without guessing layout or polling rate', () => {
+  const v700Target: CrawlTarget = {
+    ...target,
+    slug: 'rapoo-v700diy-98-2026',
+    model: '雷柏 V700DIY-98 长续航版',
+    identityAliases: ['V700DIY-98'],
+    url: 'https://www.rapoo.cn/product/871',
+  };
+  const snapshot: PageSnapshot = {
+    title: 'V700DIY-98长续航版 - 客制化多模式无线背光游戏机械键盘',
+    description: '柔韧Gasket结构，凯华定制快银轴/弹白轴，全键热插拔。',
+    bodyText: '蓝牙5.0 无线2.4G 有线连接。高含量PBT双色注塑键帽，RGB背光灯。内置10000mAh大容量锂电。USB回报率有线/2.4G模式下：125-250-500-1000Hz可切。全自研驱动A Hub。',
+    headings: [],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  const result = rapooEsportsKeyboardAdapter.normalize(v700Target, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'mechanical');
+  assert.equal(result.normalizedSpecs.switchType, '凯华定制快银轴/弹白轴可选');
+  assert.equal(result.normalizedSpecs.mounting, 'Gasket');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired', '2.4g', 'bluetooth']);
+  assert.equal(result.normalizedSpecs.hotSwap, true);
+  assert.equal(result.normalizedSpecs.keycapMaterial, 'PBT双色注塑');
+  assert.equal(result.normalizedSpecs.batteryCapacity, 10000);
+  assert.equal(result.normalizedSpecs.driver, 'Rapoo A Hub');
+  assert.equal(result.normalizedSpecs.layout, undefined);
+  assert.equal(result.normalizedSpecs.pollingRate, undefined);
+});

@@ -1,0 +1,26 @@
+slug: rapoo-v700diy-98-2026
+category: esports-keyboard
+brand: rapoo
+model: 雷柏 V700DIY-98 长续航版
+year: 2026
+title: V700DIY-98长续航版 - 客制化多模式无线背光游戏机械键盘 - 雷柏科技
+specs:
+  keyboardType: mechanical
+  switchType: 凯华定制快银轴/弹白轴可选
+  mounting: Gasket
+  layout: 98配列
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  hotSwap: true
+  keycapMaterial: PBT双色注塑
+  backlight: RGB 背光
+  batteryCapacity: 10000
+  driver: Rapoo A Hub
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.rapoo.cn/product/871
+  snapshot_url: https://www.jd.com/hprm/6706df446f822f16441.html
+status: published
