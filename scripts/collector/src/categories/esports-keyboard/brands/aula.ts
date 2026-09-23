@@ -16,9 +16,10 @@ export const aulaEsportsKeyboardAdapter = {
       normalizedSpecs.keyboardType = 'mechanical';
     }
 
+    const isF75Max = /F75\s*MAX/i.test(`${target.model} ${snapshot.title}`);
     const isF99Pro = /F99\s*PRO/i.test(`${target.model} ${snapshot.title}`);
     const isF87ProV2 = /F87\s*PRO\s*V2/i.test(`${target.model} ${snapshot.title}`);
-    const switchType = isF99Pro || isF87ProV2
+    const switchType = isF75Max || isF99Pro || isF87ProV2
       ? undefined
       : evidence.match(/Switch:\s*(LEOBOG Reaper Linear Switch|TTC\s*&\s*AULA Crescent Linear Switch)/i)?.[1];
     if (switchType) normalizedSpecs.switchType = switchType;
@@ -29,6 +30,8 @@ export const aulaEsportsKeyboardAdapter = {
       if (/96%\s*(?:with\s+Knob)?|1800 Layout/i.test(evidence)) normalizedSpecs.layout = '96% with Knob';
     } else if (isF87ProV2) {
       if (/TKL Layout|\b87 Keys\b|\b87-key\b/i.test(evidence)) normalizedSpecs.layout = 'TKL (87键)';
+    } else if (isF75Max) {
+      if (/\b80\s*keys\b|\b80-key\b/i.test(evidence)) normalizedSpecs.layout = '75%（80键）';
     } else if (/75%\s*(?:Compact\s*)?Layout|Layout:\s*ANSI/i.test(evidence)) {
       normalizedSpecs.layout = '75% ANSI';
     }
@@ -48,9 +51,11 @@ export const aulaEsportsKeyboardAdapter = {
         : 'RGB 背光';
     }
     if (/Hot[- ]?Swap|Hot[- ]?swappable/i.test(evidence)) normalizedSpecs.hotSwap = true;
+    if (isF75Max && /ABS Plastic/i.test(evidence)) normalizedSpecs.caseMaterial = 'ABS Plastic';
+    if (isF75Max && /PBT Plastic/i.test(evidence)) normalizedSpecs.keycapMaterial = 'PBT';
     const batteryCapacity = isF87ProV2 ? undefined : evidence.match(/(\d+)mAh/i);
     if (batteryCapacity?.[1]) normalizedSpecs.batteryCapacity = Number(batteryCapacity[1]);
-    if (/AULA\s*(?:F75|F87\s*PRO\s*V2)?\s*Driver/i.test(evidence)) normalizedSpecs.driver = 'AULA Driver';
+    if (/AULA\s*(?:(?:F75\s*MAX)|F75|F87\s*PRO\s*V2)?\s*Driver/i.test(evidence)) normalizedSpecs.driver = 'AULA Driver';
 
     const missing = [
       'keyboardType',
@@ -74,7 +79,9 @@ export const aulaEsportsKeyboardAdapter = {
       sourceNotes.push(`以下字段未从当前官方页面明确确认，保持缺省：${missing.join('、')}。`);
     }
     sourceNotes.push(
-      isF99Pro
+      isF75Max
+        ? 'F75 Max 为独立型号；页面展示多种配色与轴体选项，轴体按 SKU 区分，本批不将默认选项泛化为全系列规格。'
+        : isF99Pro
         ? '页面列出多个轴体选项，且国内电商同型号存在不同轴体 SKU；轴体按变体区分，本批不把海外页面默认轴体泛化到国内产品。'
         : isF87ProV2
           ? '国内电商 F87 Pro V2 同型号存在不同轴体和电池配置；轴体、电池容量按 SKU 区分，本批不把海外产品页默认配置泛化到国内商品。'

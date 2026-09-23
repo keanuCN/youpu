@@ -40,6 +40,40 @@ test('extracts AULA F75 default mechanical keyboard facts', () => {
   assert.equal(result.normalizedSpecs.driver, 'AULA Driver');
 });
 
+test('extracts F75 Max layout without treating a selectable switch as universal', () => {
+  const f75MaxTarget: CrawlTarget = {
+    ...target,
+    slug: 'aula-f75-max-2026',
+    model: 'AULA F75 Max',
+    identityAliases: ['AULA F75 MAX'],
+    url: 'https://aulagear.com/collections/keyboards/products/aula-f75-max',
+  };
+  const snapshot: PageSnapshot = {
+    title: 'AULA F75 MAX Gasket-mounted Hot-swappable Tri-Mode Mechanical Keyboard',
+    description: 'Bluetooth 5.0 Wireless/Wired Keyboard With 4000mAh Battery',
+    bodyText: '80 keys Compact layout Gasket Mounted 5 Layers of Sound-Dampening Materials South-facing RGB Backlight 2.4GHz Bluetooth 5.0 Wired ABS Plastic PBT Plastic Keycaps Hot-Swappable Yes AULA F75 Max Driver Switch: LEOBOG Reaper Switch',
+    headings: [],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  const result = aulaEsportsKeyboardAdapter.normalize(f75MaxTarget, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'mechanical');
+  assert.equal(result.normalizedSpecs.layout, '75%（80键）');
+  assert.equal(result.normalizedSpecs.mounting, 'Gasket');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired', '2.4g', 'bluetooth']);
+  assert.equal(result.normalizedSpecs.backlight, '南向 RGB 背光');
+  assert.equal(result.normalizedSpecs.hotSwap, true);
+  assert.equal(result.normalizedSpecs.caseMaterial, 'ABS Plastic');
+  assert.equal(result.normalizedSpecs.keycapMaterial, 'PBT');
+  assert.equal(result.normalizedSpecs.batteryCapacity, 4000);
+  assert.equal(result.normalizedSpecs.driver, 'AULA Driver');
+  assert.equal(result.normalizedSpecs.switchType, undefined);
+});
+
 test('extracts AULA F99 Pro default variant without merging selectable switch options', () => {
   const f99Target: CrawlTarget = {
     ...target,

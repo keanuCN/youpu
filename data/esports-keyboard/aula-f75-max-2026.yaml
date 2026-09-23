@@ -1,0 +1,25 @@
+slug: aula-f75-max-2026
+category: esports-keyboard
+brand: aula
+model: AULA F75 Max
+year: 2026
+title: AULA F75 MAX – Aula Gear
+specs:
+  keyboardType: mechanical
+  mounting: Gasket
+  layout: 75%（80键）
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: 南向 RGB 背光
+  hotSwap: true
+  caseMaterial: ABS Plastic
+  keycapMaterial: PBT
+  batteryCapacity: 4000
+  driver: AULA Driver
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://aulagear.com/collections/keyboards/products/aula-f75-max
+status: published
