@@ -16,8 +16,11 @@ import { uuidv7 } from '../common/uuid';
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const updateExisting = args.includes('--update-existing');
-  const file = args.find((value) => value !== '--update-existing');
-  if (!file) throw new Error('用法：seed:product -- <产品 YAML 路径> [--update-existing]');
+  const file = args.find((value) => !value.startsWith('--'));
+  const brandFileIndex = args.indexOf('--brand-file');
+  const brandFile = brandFileIndex >= 0 ? args[brandFileIndex + 1] : undefined;
+  if (!file) throw new Error('用法：seed:product -- <产品 YAML 路径> [--brand-file <品牌 YAML 路径>] [--update-existing]');
+  if (brandFileIndex >= 0 && !brandFile) throw new Error('--brand-file 缺少路径');
 
   const parsed = productSeedSchema.safeParse(parseYaml(readFileSync(resolve(file), 'utf8')));
   if (!parsed.success) {
@@ -25,7 +28,7 @@ async function main(): Promise<void> {
   }
   const seed = parsed.data;
   const dataDir = resolve(dirname(resolve(file)), '..');
-  const brandSeeds = parseYaml(readFileSync(resolve(dataDir, 'brands.yaml'), 'utf8')) as unknown[];
+  const brandSeeds = parseYaml(readFileSync(resolve(brandFile ?? resolve(dataDir, 'brands.yaml')), 'utf8')) as unknown[];
   const brandRecord = brandSeeds.find(
     (value) => typeof value === 'object' && value !== null && 'slug' in value && value.slug === seed.brand,
   );
