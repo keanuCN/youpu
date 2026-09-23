@@ -4,13 +4,28 @@ export const rapooEsportsKeyboardAdapter = {
   name: 'esports-keyboard/rapoo',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'rapoo' && /V500\s*PRO|V700DIY\s*[- ]?98/i.test(target.model);
+    return target.category === 'esports-keyboard' && target.brand === 'rapoo' && /V500\s*PRO|V700DIY\s*[- ]?98|V700RGB/i.test(target.model);
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
     const evidence = pageEvidence(snapshot);
     const normalizedSpecs: Record<string, unknown> = {};
     const sourceNotes = [`找到雷柏官方 ${target.model} 产品页的型号与规格信息。`];
+
+    if (/V700RGB/i.test(target.model)) {
+      if (/机械键盘|Mechanical/i.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';
+      if (/雷柏(?:自主)?青、黑、茶|雷柏(?:自主)?黑、青、茶轴/i.test(evidence)) {
+        normalizedSpecs.switchType = '雷柏自主青轴、黑轴、茶轴可选';
+      }
+      if (/108\s*键|108\s*keys?/i.test(evidence)) normalizedSpecs.layout = '108 键全尺寸';
+      if (/RGB|幻彩/i.test(evidence)) normalizedSpecs.backlight = 'RGB 幻彩背光';
+      if (/铝合金上盖|铝合金面板/i.test(evidence)) normalizedSpecs.caseMaterial = '铝合金上盖';
+      if (/双色注塑键帽/i.test(evidence)) normalizedSpecs.keycapMaterial = '双色注塑';
+      if (/配套软件|驱动软件/i.test(evidence)) normalizedSpecs.driver = 'Rapoo 驱动软件';
+      sourceNotes.push('型号限定为 V700RGB 合金版；官网标注青轴、黑轴、茶轴可选，不将京东单个SKU轴体写成全型号固定配置。');
+      sourceNotes.push('官网页面未在规格区明示连接方式，保持缺省；京东具名 SKU 标题为有线版。榜单同型号评价量因SKU/商品链接展示不同，采用具名SKU所见的10万+作为热度参考，不作为销量或产品规格。');
+      return { normalizedSpecs, sourceNotes };
+    }
 
     if (/V700DIY\s*[- ]?98/i.test(target.model)) {
       if (/机械键盘|Mechanical/i.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';

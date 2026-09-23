@@ -1,0 +1,22 @@
+slug: rapoo-v700rgb-alloy-2026
+category: esports-keyboard
+brand: rapoo
+model: 雷柏 V700RGB 合金版
+year: 2026
+title: V700RGB合金版 - 幻彩RGB背光游戏机械键盘 - 雷柏科技
+specs:
+  keyboardType: mechanical
+  switchType: 雷柏自主青轴、黑轴、茶轴可选
+  layout: 108 键全尺寸
+  connection:
+    - wired
+  backlight: RGB 幻彩背光
+  caseMaterial: 铝合金上盖
+  keycapMaterial: 双色注塑
+  driver: Rapoo 驱动软件
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.rapoo.cn/product/94
+  snapshot_url: https://www.jd.com/hprm/670e91c9094017fe16a.html
+status: published

@@ -69,3 +69,34 @@ test('extracts V700DIY-98 long-battery specs without guessing layout or polling 
   assert.equal(result.normalizedSpecs.layout, undefined);
   assert.equal(result.normalizedSpecs.pollingRate, undefined);
 });
+
+test('extracts verified V700RGB alloy edition specs without assigning one switch option', () => {
+  const v700RgbTarget: CrawlTarget = {
+    ...target,
+    slug: 'rapoo-v700rgb-alloy-2026',
+    model: '雷柏 V700RGB 合金版',
+    identityAliases: ['V700RGB合金版'],
+    url: 'https://www.rapoo.cn/product/94',
+  };
+  const snapshot: PageSnapshot = {
+    title: 'V700RGB合金版 - 幻彩RGB背光游戏机械键盘 - 雷柏科技',
+    description: '金属铝合金上盖，雷柏自主黑、青、茶轴，双色注塑键帽。',
+    bodyText: '全108键无冲突，1680万色幻彩RGB背光，板载内存、配套软件。',
+    headings: [],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  const result = rapooEsportsKeyboardAdapter.normalize(v700RgbTarget, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'mechanical');
+  assert.equal(result.normalizedSpecs.switchType, '雷柏自主青轴、黑轴、茶轴可选');
+  assert.equal(result.normalizedSpecs.layout, '108 键全尺寸');
+  assert.equal(result.normalizedSpecs.connection, undefined);
+  assert.equal(result.normalizedSpecs.backlight, 'RGB 幻彩背光');
+  assert.equal(result.normalizedSpecs.caseMaterial, '铝合金上盖');
+  assert.equal(result.normalizedSpecs.keycapMaterial, '双色注塑');
+  assert.equal(result.normalizedSpecs.driver, 'Rapoo 驱动软件');
+});
