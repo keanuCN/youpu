@@ -140,3 +140,37 @@ test('keeps AULA F87 Pro V2 variant-specific switch and battery fields empty', (
   assert.equal(result.normalizedSpecs.switchType, undefined);
   assert.equal(result.normalizedSpecs.batteryCapacity, undefined);
 });
+
+test('extracts HERO 68 HE shared magnetic facts without guessing its switch variant', () => {
+  const heroTarget: CrawlTarget = {
+    ...target,
+    slug: 'aula-hero-68-he-white-side-printed-2026',
+    model: 'AULA HERO 68 HE 白色侧刻',
+    identityAliases: ['AULA HERO 68 HE'],
+    url: 'https://aulagear.com/products/aula-hero68-he',
+  };
+  const snapshot: PageSnapshot = {
+    title: 'AULA HERO 68 HE',
+    description: '65% Wired Hot-Swappable Gaming Keyboard with Hall Effect Switch. 68 keys. Ultra-Fast 8K Polling Rate and 128k scanning rate. Vibrant RGB Backlight with south-facing per-key LEDs.',
+    bodyText: 'Switch: Black King Switch Meteor Magnetic Switch Dragon King Switch Jade King Switch Case Material ABS Plastic Case Structure Tray-Mounted Keyboard Connectivity Cable Wired South-facing per-key LEDs Hot-swappable Yes AULA HERO 68 HE Online Driver',
+    headings: [],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  const result = aulaEsportsKeyboardAdapter.normalize(heroTarget, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'magnetic');
+  assert.equal(result.normalizedSpecs.layout, '65%（68键）');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired']);
+  assert.equal(result.normalizedSpecs.mounting, 'Tray Mount');
+  assert.equal(result.normalizedSpecs.caseMaterial, 'ABS Plastic');
+  assert.equal(result.normalizedSpecs.pollingRate, 8000);
+  assert.equal(result.normalizedSpecs.backlight, '南向 RGB 背光');
+  assert.equal(result.normalizedSpecs.hotSwap, true);
+  assert.equal(result.normalizedSpecs.driver, 'AULA Driver');
+  assert.equal(result.normalizedSpecs.switchType, undefined);
+  assert.equal(result.normalizedSpecs.scanRate, undefined);
+});

@@ -1,0 +1,22 @@
+slug: aula-hero-68-he-white-side-printed-2026
+category: esports-keyboard
+brand: aula
+model: AULA HERO 68 HE 白色侧刻
+year: 2026
+title: 狼蛛 HERO 68HE 白色侧刻 磁轴键盘
+specs:
+  keyboardType: magnetic
+  mounting: Tray Mount
+  layout: 65%（68键）
+  caseMaterial: ABS Plastic
+  connection:
+    - wired
+  backlight: 南向 RGB 背光
+  hotSwap: true
+  pollingRate: 8000
+  driver: AULA Driver
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://aulagear.com/products/aula-hero68-he
+status: published

@@ -4,15 +4,21 @@ export const aulaEsportsKeyboardAdapter = {
   name: 'esports-keyboard/aula',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|87\s*PRO\s*V2|99\s*PRO)/i.test(target.model);
+    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|87\s*PRO\s*V2|99\s*PRO)|HERO\s*68\s*HE/i.test(target.model);
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
     const evidence = pageEvidence(snapshot);
     const normalizedSpecs: Record<string, unknown> = {};
-    const sourceNotes = [`找到 AULA 狼蛛官方 ${target.model} 产品页的机械轴、结构和连接事实。`];
-
-    if (/AULA\s*(?:F75|F87\s*PRO\s*V2|F99\s*PRO)/i.test(`${target.model} ${snapshot.title}`) && /Mechanical Keyboard/i.test(evidence)) {
+    const isHero68He = /HERO\s*68\s*HE/i.test(`${target.model} ${snapshot.title}`);
+    const sourceNotes = [
+      isHero68He
+        ? `找到 AULA 狼蛛官方 ${target.model} 产品页的磁轴、布局和连接规格。`
+        : `找到 AULA 狼蛛官方 ${target.model} 产品页的机械轴、结构和连接事实。`,
+    ];
+    if (isHero68He && /Hall Effect Switch|Magnetic Switch Technology/i.test(evidence)) {
+      normalizedSpecs.keyboardType = 'magnetic';
+    } else if (/AULA\s*(?:F75|F87\s*PRO\s*V2|F99\s*PRO)/i.test(`${target.model} ${snapshot.title}`) && /Mechanical Keyboard/i.test(evidence)) {
       normalizedSpecs.keyboardType = 'mechanical';
     }
 
@@ -24,8 +30,12 @@ export const aulaEsportsKeyboardAdapter = {
       : evidence.match(/Switch:\s*(LEOBOG Reaper Linear Switch|TTC\s*&\s*AULA Crescent Linear Switch)/i)?.[1];
     if (switchType) normalizedSpecs.switchType = switchType;
 
-    if (/Gasket Structure|Gasket[- ]?Mount(?:ed)?/i.test(evidence)) normalizedSpecs.mounting = 'Gasket';
-    if (isF99Pro) {
+    if (isHero68He && /Tray-Mounted/i.test(evidence)) normalizedSpecs.mounting = 'Tray Mount';
+    else if (/Gasket Structure|Gasket[- ]?Mount(?:ed)?/i.test(evidence)) normalizedSpecs.mounting = 'Gasket';
+    if (isHero68He) {
+      if (/68\s*keys/i.test(evidence)) normalizedSpecs.layout = '65%（68键）';
+      if (/ABS Plastic/i.test(evidence)) normalizedSpecs.caseMaterial = 'ABS Plastic';
+    } else if (isF99Pro) {
       if (/ABS Plastic/i.test(evidence)) normalizedSpecs.caseMaterial = 'ABS Plastic';
       if (/96%\s*(?:with\s+Knob)?|1800 Layout/i.test(evidence)) normalizedSpecs.layout = '96% with Knob';
     } else if (isF87ProV2) {
@@ -46,16 +56,18 @@ export const aulaEsportsKeyboardAdapter = {
     if (connections.length > 0) normalizedSpecs.connection = [...new Set(connections)];
 
     if (/RGB\s*(?:Backlight|Illumination)?/i.test(evidence)) {
-      normalizedSpecs.backlight = /South-facing (?:RGB|LEDs)|RGB South-facing/i.test(evidence)
+      normalizedSpecs.backlight = /South-facing (?:RGB|LEDs)|RGB South-facing|South-facing[^.]{0,30}LEDs/i.test(evidence)
         ? '南向 RGB 背光'
         : 'RGB 背光';
     }
     if (/Hot[- ]?Swap|Hot[- ]?swappable/i.test(evidence)) normalizedSpecs.hotSwap = true;
     if (isF75Max && /ABS Plastic/i.test(evidence)) normalizedSpecs.caseMaterial = 'ABS Plastic';
+    if (isHero68He && /8000\s*hz|8K\s*Polling Rate/i.test(evidence)) normalizedSpecs.pollingRate = 8000;
     if (isF75Max && /PBT Plastic/i.test(evidence)) normalizedSpecs.keycapMaterial = 'PBT';
     const batteryCapacity = isF87ProV2 ? undefined : evidence.match(/(\d+)mAh/i);
     if (batteryCapacity?.[1]) normalizedSpecs.batteryCapacity = Number(batteryCapacity[1]);
-    if (/AULA\s*(?:(?:F75\s*MAX)|F75|F87\s*PRO\s*V2)?\s*Driver/i.test(evidence)) normalizedSpecs.driver = 'AULA Driver';
+    if (isHero68He && /AULA HERO 68 HE Online Driver/i.test(evidence)) normalizedSpecs.driver = 'AULA Driver';
+    else if (/AULA\s*(?:(?:F75\s*MAX)|F75|F87\s*PRO\s*V2)?\s*Driver/i.test(evidence)) normalizedSpecs.driver = 'AULA Driver';
 
     const missing = [
       'keyboardType',
@@ -79,7 +91,9 @@ export const aulaEsportsKeyboardAdapter = {
       sourceNotes.push(`以下字段未从当前官方页面明确确认，保持缺省：${missing.join('、')}。`);
     }
     sourceNotes.push(
-      isF75Max
+      isHero68He
+        ? 'HERO 68 HE 页面列出多款磁轴可选；国内目标是白色侧刻 SKU，不从其他默认轴体按钮推断具体轴体。官方标注 128K 扫描率超过当前类目字段上限 100000 Hz，因此仅保留原始快照。'
+        : isF75Max
         ? 'F75 Max 为独立型号；页面展示多种配色与轴体选项，轴体按 SKU 区分，本批不将默认选项泛化为全系列规格。'
         : isF99Pro
         ? '页面列出多个轴体选项，且国内电商同型号存在不同轴体 SKU；轴体按变体区分，本批不把海外页面默认轴体泛化到国内产品。'
