@@ -25,7 +25,7 @@ import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } f
 import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
 import { useAuthGate } from "@/store/app-shell";
-import type { GearItem } from "@/types";
+import type { GearItem, SpecField } from "@/types";
 
 export default function GearDetailPage({
   id,
@@ -379,10 +379,13 @@ function categorySignalFor(gear: GearItem): { label: string; value: string; sub:
     };
   }
 
+  const firstSpec = categorySpecEntries(gear)[0];
+  if (!firstSpec) return { label: "类别特征", value: "—", sub: "关键参数待补充" };
+
   return {
-    label: "调性",
-    value: formatSpecValue(gear.specs.power),
-    sub: "竿胚负载方向",
+    label: firstSpec.field.label,
+    value: formatCategorySpecValue(gear.categorySlug, firstSpec.field, firstSpec.value),
+    sub: firstSpec.group,
   };
 }
 
@@ -403,41 +406,7 @@ function DetailSignals({ gear }: { gear: GearItem }) {
     );
   }
 
-  const fields =
-    gear.categorySlug === "badminton-racket"
-      ? [
-          ["重量等级", gear.specs.weightClass],
-          ["平衡点", gear.specs.balance],
-          ["中杆硬度", gear.specs.flex],
-          ["最高磅数", gear.specs.maxTension ? `${gear.specs.maxTension} lbs` : null],
-        ]
-      : gear.categorySlug === "action-cam"
-        ? [
-            ["传感器", gear.specs.sensor],
-            ["最高规格", gear.specs.maxVideo],
-            ["裸机防水", gear.specs.waterproofDepth ? `${gear.specs.waterproofDepth} m` : null],
-            ["官方续航", gear.specs.batteryLife ? `${gear.specs.batteryLife} min` : null],
-          ]
-      : gear.categorySlug === "road-bike"
-        ? [
-            ["车型取向", roadBikeTypeLabel(gear.specs.bikeType)],
-            ["变速套件", gear.specs.groupset],
-            ["最大胎宽", gear.specs.tireClearance ? `${gear.specs.tireClearance} mm` : null],
-            ["整车重量", gear.specs.completeWeight ? `${gear.specs.completeWeight} kg` : null],
-          ]
-      : gear.categorySlug === "mtb"
-        ? [
-            ["车型取向", mtbTypeLabel(gear.specs.bikeType)],
-            ["前 / 后行程", `${gear.specs.frontTravel ?? "—"} / ${gear.specs.rearTravel ?? "—"} mm`],
-            ["轮径", gear.specs.wheelSize],
-            ["变速套件", gear.specs.groupset],
-          ]
-      : [
-          ["调性强度", gear.specs.power],
-          ["轮座类型", gear.specs.rodType],
-          ["路亚重量", gear.specs.lureWeight],
-          ["适用钓线", gear.specs.lineWeight],
-        ];
+  const fields = categorySpecEntries(gear).slice(0, 4);
 
   return (
     <div className="border-b border-border py-5">
@@ -445,12 +414,19 @@ function DetailSignals({ gear }: { gear: GearItem }) {
         <div>
           <p className="mono-label mb-2.5">关键参数 / KEY SPECS</p>
           <dl className="grid grid-cols-2 gap-x-4 border-t border-border">
-            {fields.map(([label, value]) => (
-              <div key={label} className="min-w-0 border-b border-border py-2">
-                <dt className="mono-label">{label}</dt>
-                <dd className="mt-1 truncate text-[13px]">{value ? formatSpecValue(value) : "待补充"}</dd>
-              </div>
-            ))}
+            {fields.length ? (
+              fields.map(({ field, value }) => (
+                <div key={field.key} className="min-w-0 border-b border-border py-2">
+                  <dt className="mono-label">{field.label}</dt>
+                  <dd className="mt-1 truncate text-[13px]">
+                    {formatCategorySpecValue(gear.categorySlug, field, value)}
+                    {field.unit ? <span className="ml-1 text-[11px] text-muted-foreground">{field.unit}</span> : null}
+                  </dd>
+                </div>
+              ))
+            ) : (
+              <p className="col-span-2 border-t border-border py-3 text-[13px] text-muted-foreground">暂无已核验的关键参数</p>
+            )}
           </dl>
         </div>
         <div>
@@ -460,4 +436,23 @@ function DetailSignals({ gear }: { gear: GearItem }) {
       </div>
     </div>
   );
+}
+
+function categorySpecEntries(gear: GearItem) {
+  const category = getCategory(gear.categorySlug);
+  return (category?.specTemplate ?? []).flatMap((group) =>
+    group.fields.flatMap((field) => {
+      const value = gear.specs[field.key];
+      if (value === null || value === undefined || (typeof value === "string" && value.trim() === "")) return [];
+      return [{ field, group: group.group, value }];
+    }),
+  );
+}
+
+function formatCategorySpecValue(categorySlug: string, field: SpecField, value: number | string): string {
+  if (categorySlug === "esports-keyboard" && field.key === "keyboardType") {
+    if (value === "mechanical") return "机械键盘";
+    if (value === "magnetic") return "磁轴键盘";
+  }
+  return formatSpecValue(value);
 }
