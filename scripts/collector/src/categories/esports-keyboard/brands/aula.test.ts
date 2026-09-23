@@ -126,6 +126,38 @@ test('extracts only F108Pro connection modes from its official FAQ, not the regu
   assert.equal(result.normalizedSpecs.layout, undefined);
 });
 
+test('extracts only shared AULA S75Pro facts from its official product page', () => {
+  const s75ProTarget: CrawlTarget = {
+    ...target,
+    slug: 'aula-s75-pro-2026',
+    model: 'AULA S75 Pro',
+    identityAliases: ['AULA S75 PRO Mechanical Keyboard'],
+    url: 'https://www.aulastar.com/mechanical-keyboard/468.html',
+  };
+  const snapshot: PageSnapshot = {
+    title: 'AULA S75 PRO Mechanical Keyboard',
+    description: 'Tri-Mode (Wired / 2.4G / BT); Gasket Structure; Hot-Swappable Full Keys; RGB Backlight',
+    bodyText: '75% layout Tri-mode Connectivity: BT / 2.4G / Wired Custom Mechanical Keyboard',
+    headings: ['Mechanical Keyboard'],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  assert.equal(aulaEsportsKeyboardAdapter.canHandle(s75ProTarget), true);
+  const result = aulaEsportsKeyboardAdapter.normalize(s75ProTarget, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'mechanical');
+  assert.equal(result.normalizedSpecs.layout, '75%');
+  assert.equal(result.normalizedSpecs.mounting, 'Gasket');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired', '2.4g', 'bluetooth']);
+  assert.equal(result.normalizedSpecs.hotSwap, true);
+  assert.equal(result.normalizedSpecs.backlight, 'RGB 背光');
+  assert.equal(result.normalizedSpecs.batteryCapacity, undefined);
+  assert.equal(result.normalizedSpecs.switchType, undefined);
+});
+
 test('extracts F75 Max layout without treating a selectable switch as universal', () => {
   const f75MaxTarget: CrawlTarget = {
     ...target,

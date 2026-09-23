@@ -1,0 +1,22 @@
+slug: aula-s75-pro-2026
+category: esports-keyboard
+brand: aula
+model: AULA S75 Pro
+year: 2026
+title: AULA S75 PRO Mechanical Keyboard
+specs:
+  keyboardType: mechanical
+  layout: 75%
+  mounting: Gasket
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  hotSwap: true
+  backlight: RGB 背光
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.aulastar.com/mechanical-keyboard/468.html
+  snapshot_url: https://www.jd.com/hprm/171337a688fb245d03cb.html
+status: published

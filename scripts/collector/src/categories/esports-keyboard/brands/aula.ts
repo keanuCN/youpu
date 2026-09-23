@@ -4,7 +4,7 @@ export const aulaEsportsKeyboardAdapter = {
   name: 'esports-keyboard/aula',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|87\s*PRO\s*V2|99\s*PRO|108\s*PRO|2088)|HERO\s*68\s*(?:HE|XS)|S500/i.test(target.model);
+    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|87\s*PRO\s*V2|99\s*PRO|108\s*PRO|2088)|S75\s*PRO|HERO\s*68\s*(?:HE|XS)|S500/i.test(target.model);
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
@@ -13,6 +13,7 @@ export const aulaEsportsKeyboardAdapter = {
     const isHero68He = /HERO\s*68\s*HE/i.test(`${target.model} ${snapshot.title}`);
     const isHero68Xs = /HERO\s*68\s*XS/i.test(`${target.model} ${snapshot.title}`);
     const isS500 = /S500/i.test(target.model);
+    const isS75Pro = /S75\s*PRO/i.test(target.model);
     const isF108Pro = /F108\s*PRO/i.test(target.model);
     const isF2088 = /F2088\s/i.test(target.model);
     const sourceNotes = [
@@ -22,6 +23,8 @@ export const aulaEsportsKeyboardAdapter = {
           ? `找到 AULA 狼蛛官方 ${target.model} 产品页；详情中的技术说明以图片呈现，文本快照仅确认型号和磁轴类别。`
         : isF108Pro
           ? '找到 AULA 狼蛛官方 F108Pro FAQ；仅将 FAQ 明确说明的设备类型与连接方式归一化。'
+          : isS75Pro
+            ? '找到 AULA 狼蛛官方 S75Pro 产品页；仅将该页明确提供的共通规格归一化。'
           : `找到 AULA 狼蛛官方 ${target.model} 产品页的机械轴、结构和连接事实。`,
     ];
     if (isS500) {
@@ -51,6 +54,21 @@ export const aulaEsportsKeyboardAdapter = {
       if (/Bluetooth/i.test(evidence)) connections.push('bluetooth');
       if (connections.length > 0) normalizedSpecs.connection = [...new Set(connections)];
       sourceNotes.push('官方 FAQ 不确认键数、Gasket、RGB、屏幕、电池容量或热插拔；这些字段不从其他 F108 / 变体推断。');
+      return { normalizedSpecs, sourceNotes };
+    }
+
+    if (isS75Pro) {
+      if (/Mechanical Keyboard/i.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';
+      if (/75%\s*layout/i.test(evidence)) normalizedSpecs.layout = '75%';
+      if (/Gasket Structure|Gasket[- ]?Mount/i.test(evidence)) normalizedSpecs.mounting = 'Gasket';
+      const connections: string[] = [];
+      if (/Tri-Mode[^.]{0,80}Wired|\bWired\b/i.test(evidence)) connections.push('wired');
+      if (/2\.4G/i.test(evidence)) connections.push('2.4g');
+      if (/\bBT\b|Bluetooth/i.test(evidence)) connections.push('bluetooth');
+      if (connections.length > 0) normalizedSpecs.connection = [...new Set(connections)];
+      if (/Hot-Swappable Full Keys|Hot[- ]?Swappable/i.test(evidence)) normalizedSpecs.hotSwap = true;
+      if (/RGB Backlight|RGB Light/i.test(evidence)) normalizedSpecs.backlight = 'RGB 背光';
+      sourceNotes.push('该官方产品页不确认精确键数、电池、屏幕、具体轴体与材质；均保持缺省，不从其他 S75Pro 变体或第三方手册补猜。');
       return { normalizedSpecs, sourceNotes };
     }
 
