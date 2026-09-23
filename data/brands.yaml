@@ -211,6 +211,13 @@
   official_url: https://www.aulacn.com
   description: 中国电竞外设品牌，F75 机械键盘以 75% 配列、Gasket 结构、三模连接和入门级客制化体验为主要特点。
 
+- slug: vgn
+  name: VGN
+  name_cn: VGN
+  country: CN
+  official_url: https://www.vgnlab.com.cn
+  description: 中国电竞外设品牌，V98Pro 系列主打三模客制化机械键盘和游戏低延迟体验。
+
 - slug: canyon
   name: Canyon
   country: DE

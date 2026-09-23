@@ -1,9 +1,10 @@
 import 'dotenv/config';
 import { readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { dirname, resolve } from 'node:path';
 import { parse as parseYaml } from 'yaml';
 import {
   normalizePriceRange,
+  brandSeedSchema,
   parseSpecSchema,
   productSeedSchema,
   validateSpecs,
@@ -23,6 +24,16 @@ async function main(): Promise<void> {
     throw new Error(`产品 seed 校验失败：${parsed.error.issues.map((issue) => issue.message).join('; ')}`);
   }
   const seed = parsed.data;
+  const dataDir = resolve(dirname(resolve(file)), '..');
+  const brandSeeds = parseYaml(readFileSync(resolve(dataDir, 'brands.yaml'), 'utf8')) as unknown[];
+  const brandRecord = brandSeeds.find(
+    (value) => typeof value === 'object' && value !== null && 'slug' in value && value.slug === seed.brand,
+  );
+  const parsedBrand = brandRecord === undefined ? undefined : brandSeedSchema.safeParse(brandRecord);
+  if (parsedBrand && !parsedBrand.success) {
+    throw new Error(`品牌 seed 校验失败：${parsedBrand.error.issues.map((issue) => issue.message).join('; ')}`);
+  }
+  const brandSeed = parsedBrand?.success ? parsedBrand.data : undefined;
   const prisma = new PrismaService();
 
   try {
@@ -32,7 +43,7 @@ async function main(): Promise<void> {
       prisma.product.findUnique({ where: { slug: seed.slug }, select: { id: true } }),
     ]);
     if (!category) throw new Error(`线上类目不存在：${seed.category}`);
-    if (!brand) throw new Error(`线上品牌不存在：${seed.brand}`);
+    if (!brand && !brandSeed) throw new Error(`线上品牌不存在，且 brands.yaml 没有该品牌：${seed.brand}`);
     if (!category.specSchema) throw new Error(`线上类目没有规格定义：${seed.category}`);
     if (existing && !updateExisting) {
       throw new Error(`线上产品已存在：${seed.slug}；确认需要覆盖后再加 --update-existing`);
@@ -43,7 +54,7 @@ async function main(): Promise<void> {
       throw new Error(`线上规格定义校验失败：${validation.issues.map((issue) => issue.message).join('; ')}`);
     }
 
-    const duplicate = await prisma.product.findFirst({
+    const duplicate = brand ? await prisma.product.findFirst({
       where: {
         brandId: brand.id,
         model: seed.model,
@@ -51,7 +62,7 @@ async function main(): Promise<void> {
         ...(existing ? { NOT: { slug: seed.slug } } : {}),
       },
       select: { slug: true },
-    });
+    }) : null;
     if (duplicate) throw new Error(`线上同品牌型号年份已存在：${duplicate.slug}`);
 
     const normalizedPrice = seed.price
@@ -60,11 +71,23 @@ async function main(): Promise<void> {
     const productId = existing?.id ?? uuidv7();
 
     await prisma.$transaction(async (tx) => {
+      const savedBrand = brand ?? await tx.brand.create({
+        data: {
+          id: uuidv7(),
+          slug: brandSeed!.slug,
+          name: brandSeed!.name,
+          nameCn: brandSeed!.name_cn,
+          country: brandSeed!.country,
+          logoUrl: brandSeed!.logo_url,
+          officialUrl: brandSeed!.official_url,
+          description: brandSeed!.description,
+        },
+      });
       const dataSource = seed.data_source
         ? await tx.dataSource.create({
             data: {
               id: uuidv7(),
-              brandId: brand.id,
+              brandId: savedBrand.id,
               originUrl: seed.data_source.origin_url ?? `manual:${seed.slug}`,
               kind: seed.data_source.kind,
               snapshotUrl: seed.data_source.snapshot_url,
@@ -73,7 +96,7 @@ async function main(): Promise<void> {
         : undefined;
       const productData = {
         categoryId: category.id,
-        brandId: brand.id,
+        brandId: savedBrand.id,
         model: seed.model,
         year: seed.year,
         title: seed.title,
