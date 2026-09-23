@@ -1,0 +1,30 @@
+slug: vgn-v87-v2-2026
+category: esports-keyboard
+brand: vgn
+model: VGN V87 V2
+year: 2026
+title: VGN V87 V2 冰山雪莲侧刻 动力金轴
+price:
+  min: 249
+  max: 249
+  currency: CNY
+specs:
+  keyboardType: mechanical
+  switchType: 动力金轴
+  layout: TKL（87键）
+  mounting: Gasket
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: RGB 背光
+  hotSwap: true
+  batteryCapacity: 10000
+  driver: V HUB
+  keycapMaterial: PBT
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://vgnlab.com/products/vgn-v87-v2-wireless-mechanical-gaming-keyboard
+  snapshot_url: https://www.vgnlab.com.cn/web/sku-1261
+status: published
