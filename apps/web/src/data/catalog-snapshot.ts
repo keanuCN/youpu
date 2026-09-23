@@ -35,8 +35,8 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "https://xiaopang.club",
-  "generatedAt": "2026-09-22T09:40:13.916Z",
-  "total": 97,
+  "generatedAt": "2026-09-23T09:36:20.474Z",
+  "total": 121,
   "pageSize": 48,
   "categorySlugs": [
     "action-cam",
@@ -1630,6 +1630,61 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0cd92-0dd1-7ea8-891b-07b29ac7fc47",
+    "slug": "akko-5108-v5-the-legend-of-hei-2026",
+    "title": "Akko The Legend of Hei 5108 V5 108-Key Tri-Mode Mechanical Keyboard",
+    "model": "Akko The Legend of Hei 5108 V5",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "akko",
+      "name": "Akko",
+      "nameCn": "艾酷"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "Gasket Mount",
+      "caseMaterial": "ABS",
+      "layout": "100%（108键）",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "ARGB 背光",
+      "driver": "Akko Cloud Driver",
+      "hotSwap": true,
+      "keycapMaterial": "PBT",
+      "batteryCapacity": 10000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "10000mAh"
+      }
+    ]
+  },
+  {
     "id": "01a0c879-09bc-7b1b-8c97-de9c8daf458c",
     "slug": "akko-mod007-v5-he-2026",
     "title": "MOD007 V5 HE 三模磁轴键盘 - Akko",
@@ -1691,6 +1746,100 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0cd8e-3277-7aa1-96cc-613782c05664",
+    "slug": "aula-f108-pro-2026",
+    "title": "AULA F108 Pro 108-Key Tri-Mode Mechanical Keyboard",
+    "model": "AULA F108 Pro",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "aula",
+      "name": "AULA",
+      "nameCn": "狼蛛"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "Gasket",
+      "layout": "108 键全尺寸",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 背光",
+      "customScreen": true,
+      "batteryCapacity": 8000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "8000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd83-2882-783a-96cf-f005615698f4",
+    "slug": "aula-f2088-104-white-punk-2026",
+    "title": "AULA F2088 104-Key White Punk Mechanical Gaming Keyboard",
+    "model": "AULA F2088 104键朋克版",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "aula",
+      "name": "AULA",
+      "nameCn": "狼蛛"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "layout": "104 键全尺寸",
+      "connection": [
+        "wired"
+      ],
+      "backlight": "混彩背光"
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线"
+      }
+    ]
+  },
+  {
     "id": "01a0c879-09cb-7c17-96ab-7203e8618d20",
     "slug": "aula-f75-2026",
     "title": "AULA 75% Gasket Wireless Mechanical Keyboard – Aula Gear",
@@ -1741,6 +1890,681 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "batteryCapacity",
         "label": "电池容量",
         "value": "4000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0ccef-00f0-74f2-a6b8-8e248f48f788",
+    "slug": "aula-f75-max-2026",
+    "title": "AULA F75 MAX – Aula Gear",
+    "model": "AULA F75 Max",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "aula",
+      "name": "AULA",
+      "nameCn": "狼蛛"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "Gasket",
+      "caseMaterial": "ABS Plastic",
+      "layout": "75%（80键）",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "南向 RGB 背光",
+      "driver": "AULA Driver",
+      "hotSwap": true,
+      "keycapMaterial": "PBT",
+      "batteryCapacity": 4000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "4000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0cc31-9635-7807-a25e-f9d788defbcc",
+    "slug": "aula-f87-pro-v2-2026",
+    "title": "AULA F87 PRO V2 – Aula Gear",
+    "model": "AULA F87 Pro V2",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "aula",
+      "name": "AULA",
+      "nameCn": "狼蛛"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "Gasket",
+      "layout": "TKL (87键)",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "南向 RGB 背光",
+      "driver": "AULA Driver",
+      "hotSwap": true
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      }
+    ]
+  },
+  {
+    "id": "01a0cc2b-76ea-75cb-a926-5e6d332bddd6",
+    "slug": "aula-f99-pro-2026",
+    "title": "96% Gasket-Mounted Triple-Mode Mechanical Keyboard with Knob – Aula Gear",
+    "model": "AULA F99 Pro",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "aula",
+      "name": "AULA",
+      "nameCn": "狼蛛"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "Gasket",
+      "caseMaterial": "ABS Plastic",
+      "layout": "96% with Knob",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "南向 RGB 背光",
+      "driver": "AULA Driver",
+      "hotSwap": true,
+      "batteryCapacity": 8000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "8000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd5e-0b2b-7320-8115-eec9a0879008",
+    "slug": "aula-hero-68-he-white-side-printed-2026",
+    "title": "狼蛛 HERO 68HE 白色侧刻 磁轴键盘",
+    "model": "AULA HERO 68 HE 白色侧刻",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "aula",
+      "name": "AULA",
+      "nameCn": "狼蛛"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "magnetic",
+      "mounting": "Tray Mount",
+      "caseMaterial": "ABS Plastic",
+      "layout": "65%（68键）",
+      "connection": [
+        "wired"
+      ],
+      "pollingRate": 8000,
+      "backlight": "南向 RGB 背光",
+      "driver": "AULA Driver",
+      "hotSwap": true
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "磁轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线"
+      },
+      {
+        "key": "pollingRate",
+        "label": "回报率",
+        "value": "8000Hz"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd6a-fe44-7e4a-9f51-b8b22767be20",
+    "slug": "aula-hero68xs-phantom-black-snow-god-2026",
+    "title": "狼蛛 HERO68XS 幻影黑 雪神磁轴三模电竞键盘",
+    "model": "AULA HERO68XS 幻影黑 雪神磁轴",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "aula",
+      "name": "AULA",
+      "nameCn": "狼蛛"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "magnetic",
+      "switchType": "雪神磁轴",
+      "layout": "68键",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "rapidTriggerPrecision": 0.005,
+      "actuationRange": "0.1–3.4mm",
+      "backlight": "RGB 氛围灯箱",
+      "hotSwap": true,
+      "batteryCapacity": 6000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "磁轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "rapidTriggerPrecision",
+        "label": "RT 精度",
+        "value": "0.01mm"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "6000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd80-45c6-7537-b8d5-28c8492c4006",
+    "slug": "aula-s500-wired-2026",
+    "title": "AULA S500 Mechanical Keyboard",
+    "model": "AULA S500",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "aula",
+      "name": "AULA",
+      "nameCn": "狼蛛"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "caseMaterial": "金属磨砂面板",
+      "layout": "104 键全尺寸",
+      "connection": [
+        "wired"
+      ],
+      "backlight": "分区 RGB 背光"
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd95-2729-70a2-9cb4-79b54a68e9e4",
+    "slug": "aula-s75-pro-2026",
+    "title": "AULA S75 PRO Mechanical Keyboard",
+    "model": "AULA S75 Pro",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "aula",
+      "name": "AULA",
+      "nameCn": "狼蛛"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "Gasket",
+      "layout": "75%",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 背光",
+      "hotSwap": true
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      }
+    ]
+  },
+  {
+    "id": "01a0cc81-a442-7c96-b039-da2a4fa18ca3",
+    "slug": "cherry-mx30s-rgb-2026",
+    "title": "MX3.0S RGB-CHERRY樱桃",
+    "model": "CHERRY MX3.0S RGB",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "cherry",
+      "name": "CHERRY",
+      "nameCn": "樱桃"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "无钢软弹结构",
+      "caseMaterial": "铝合金外壳",
+      "layout": "108 键全尺寸",
+      "connection": [
+        "wired"
+      ],
+      "backlight": "RGB 背光"
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd9a-8521-74d7-8f44-9cbb2b3e7291",
+    "slug": "dareu-a98-pro-rt-2026",
+    "title": "达尔优 A98 专业版 RT 三模机械键盘",
+    "model": "DAREU A98 专业版 RT 版",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "dareu",
+      "name": "DAREU",
+      "nameCn": "达尔优"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "Gasket",
+      "layout": "98键配列",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 背光",
+      "hotSwap": true,
+      "batteryCapacity": 8000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "8000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd58-567d-7f38-8f71-b267c8bf6d12",
+    "slug": "dareu-cool68-ocean-blue-2026",
+    "title": "达尔优 COOL68 云海蓝 磁轴电竞键盘",
+    "model": "DAREU COOL68 云海蓝",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "dareu",
+      "name": "DAREU",
+      "nameCn": "达尔优"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "magnetic",
+      "mounting": "Gasket",
+      "layout": "65%（68键）",
+      "connection": [
+        "wired"
+      ],
+      "pollingRate": 8000,
+      "rapidTriggerPrecision": 0.01,
+      "backlight": "RGB 背光 / 3D Light Wing 灯箱",
+      "driver": "DAREU 网页驱动",
+      "hotSwap": true,
+      "keycapMaterial": "PBT + PC 透明键帽"
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "磁轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线"
+      },
+      {
+        "key": "pollingRate",
+        "label": "回报率",
+        "value": "8000Hz"
+      },
+      {
+        "key": "rapidTriggerPrecision",
+        "label": "RT 精度",
+        "value": "0.01mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd89-9c17-7a85-a79f-b005f58fcd90",
+    "slug": "mchose-g87-v2-2026",
+    "title": "MCHOSE G87 V2 87-Key Tri-Mode Mechanical Keyboard",
+    "model": "MCHOSE G87 V2",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "mchose",
+      "name": "MCHOSE",
+      "nameCn": "迈从"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "Gasket",
+      "layout": "87 键 TKL",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "driver": "MCHOSE M HUB",
+      "hotSwap": true
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      }
+    ]
+  },
+  {
+    "id": "01a0cc67-7f23-7e4b-b28c-7340cdab2dd6",
+    "slug": "mchose-k99-v3-2026",
+    "title": "MCHOSE K99 V3 Keyboard: Wireless, 98% Layout – Tri-Mode",
+    "model": "MCHOSE K99 V3",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "mchose",
+      "name": "MCHOSE",
+      "nameCn": "迈从"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "switchType": "Icy Creamsicle Switch",
+      "mounting": "Gasket",
+      "layout": "98%（99键）",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "pollingRate": 8000,
+      "backlight": "16.8M 色 RGB 背光",
+      "driver": "MCHOSE M HUB",
+      "hotSwap": true,
+      "batteryCapacity": 10000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "pollingRate",
+        "label": "回报率",
+        "value": "8000Hz"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "10000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0ccf6-4d2b-750a-896e-dea5674b3786",
+    "slug": "melgeek-made68-pro-plus-2026",
+    "title": "MelGeek MADE68 Pro+ Hall Effect Gaming Keyboard | Rapid Trigger 65% $139",
+    "model": "MADE68 Pro+",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "melgeek",
+      "name": "MelGeek",
+      "nameCn": "蜜氪"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "magnetic",
+      "mounting": "Gasket Mount",
+      "caseMaterial": "ABS + PC",
+      "layout": "65%（68键）",
+      "connection": [
+        "wired"
+      ],
+      "pollingRate": 8000,
+      "scanRate": 16000,
+      "rapidTriggerPrecision": 0.01,
+      "actuationRange": "0.1–3.4mm",
+      "backlight": "1600 万色 RGB 背光",
+      "driver": "MelGeek HIVE"
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "磁轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线"
+      },
+      {
+        "key": "pollingRate",
+        "label": "回报率",
+        "value": "8000Hz"
+      },
+      {
+        "key": "scanRate",
+        "label": "扫描率",
+        "value": "16000Hz"
       }
     ]
   },
@@ -1861,6 +2685,422 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "batteryCapacity",
         "label": "电池容量",
         "value": "8000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd76-7437-758f-bdfd-c7e56df71966",
+    "slug": "rapoo-v700diy-98-2026",
+    "title": "V700DIY-98长续航版 - 客制化多模式无线背光游戏机械键盘 - 雷柏科技",
+    "model": "雷柏 V700DIY-98 长续航版",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rapoo",
+      "name": "Rapoo",
+      "nameCn": "雷柏"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "switchType": "凯华定制快银轴/弹白轴可选",
+      "mounting": "Gasket",
+      "layout": "98配列",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 背光",
+      "driver": "Rapoo A Hub",
+      "hotSwap": true,
+      "keycapMaterial": "PBT双色注塑",
+      "batteryCapacity": 10000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "10000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd7b-2587-79d5-88f7-b5c7ef17c2ba",
+    "slug": "rapoo-v700rgb-alloy-2026",
+    "title": "V700RGB合金版 - 幻彩RGB背光游戏机械键盘 - 雷柏科技",
+    "model": "雷柏 V700RGB 合金版",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rapoo",
+      "name": "Rapoo",
+      "nameCn": "雷柏"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "switchType": "雷柏自主青轴、黑轴、茶轴可选",
+      "caseMaterial": "铝合金上盖",
+      "layout": "108 键全尺寸",
+      "connection": [
+        "wired"
+      ],
+      "backlight": "RGB 幻彩背光",
+      "driver": "Rapoo 驱动软件",
+      "keycapMaterial": "双色注塑"
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线"
+      }
+    ]
+  },
+  {
+    "id": "01a0cc55-206f-76ed-bd95-48c7fcea9615",
+    "slug": "rapoo-v500pro-2026",
+    "title": "V500PRO - 混彩背光游戏机械键盘 - 雷柏科技",
+    "model": "V500PRO",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": 199,
+    "priceMax": 199,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rapoo",
+      "name": "Rapoo",
+      "nameCn": "雷柏"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "switchType": "雷柏自主黑轴、青轴、茶轴、红轴可选",
+      "caseMaterial": "磨砂金属上盖",
+      "layout": "104 键全尺寸",
+      "connection": [
+        "wired"
+      ],
+      "backlight": "混彩背光"
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd48-f919-7d8b-8c43-d2d23cbfce8a",
+    "slug": "vgn-neon-68-super-competitive-plus-2026",
+    "title": "VGN Neon 68 Extreme Magnetic Switch Keyboard",
+    "model": "VGN 霓虹68 超竞版+ 天霸轴 黑武士",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": 329,
+    "priceMax": 329,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "vgn",
+      "name": "VGN",
+      "nameCn": "VGN"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "magnetic",
+      "mounting": "Gasket",
+      "layout": "68%（67键）",
+      "connection": [
+        "wired"
+      ],
+      "pollingRate": 8000,
+      "rapidTriggerPrecision": 0.001,
+      "backlight": "RGB 背光",
+      "driver": "V HUB 网页驱动",
+      "hotSwap": true
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "磁轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线"
+      },
+      {
+        "key": "pollingRate",
+        "label": "回报率",
+        "value": "8000Hz"
+      },
+      {
+        "key": "rapidTriggerPrecision",
+        "label": "RT 精度",
+        "value": "0mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0ccef-3371-712f-bd92-75be076df01e",
+    "slug": "vgn-n75-v2-2026",
+    "title": "VGN N75 V2 Wireless RGB Mechanical Keyboard",
+    "model": "VGN N75 V2 三模版",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "vgn",
+      "name": "VGN",
+      "nameCn": "VGN"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "Gasket",
+      "layout": "75%",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 背光",
+      "driver": "V HUB",
+      "hotSwap": true,
+      "batteryCapacity": 8000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "8000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0cc5f-2c05-7b77-9464-716e1d85b0cc",
+    "slug": "vgn-v87-v2-2026",
+    "title": "VGN V87 V2 冰山雪莲侧刻 动力金轴",
+    "model": "VGN V87 V2",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": 249,
+    "priceMax": 249,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "vgn",
+      "name": "VGN",
+      "nameCn": "VGN"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "switchType": "动力金轴",
+      "mounting": "Gasket",
+      "layout": "TKL（87键）",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 背光",
+      "driver": "V HUB",
+      "hotSwap": true,
+      "keycapMaterial": "PBT",
+      "batteryCapacity": 10000
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      },
+      {
+        "key": "batteryCapacity",
+        "label": "电池容量",
+        "value": "10000mAh"
+      }
+    ]
+  },
+  {
+    "id": "01a0cc3c-bd7a-7974-9ead-621f3c153d1a",
+    "slug": "vgn-v98pro-v4-2026",
+    "title": "VGN V98 Pro V4 Wireless Mechanical Keyboard",
+    "model": "VGN V98Pro V4",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "vgn",
+      "name": "VGN",
+      "nameCn": "VGN"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "Gasket",
+      "layout": "98%",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 背光",
+      "driver": "V HUB",
+      "customScreen": true
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      }
+    ]
+  },
+  {
+    "id": "01a0cd50-4d63-7347-a6a6-7af925c4632a",
+    "slug": "atk-rs6-ultra-white-shadow-warrior-2026",
+    "title": "ATK RS6 Ultra 白影战士 冰刃轴 电竞磁轴键盘",
+    "model": "ATK RS6 Ultra 白影战士 冰刃轴",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "vxe",
+      "name": "VXE",
+      "nameCn": "VXE / ATK"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "magnetic",
+      "caseMaterial": "铝合金",
+      "layout": "65% ANSI（68键）",
+      "connection": [
+        "wired"
+      ],
+      "pollingRate": 8000,
+      "rapidTriggerPrecision": 0.001,
+      "actuationRange": "0.001–3.3mm",
+      "backlight": "南向 RGB 背光",
+      "driver": "ATK HUB",
+      "hotSwap": true,
+      "keycapMaterial": "PBT Cherry Profile 键帽"
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "磁轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线"
+      },
+      {
+        "key": "pollingRate",
+        "label": "回报率",
+        "value": "8000Hz"
+      },
+      {
+        "key": "rapidTriggerPrecision",
+        "label": "RT 精度",
+        "value": "0mm"
       }
     ]
   },
