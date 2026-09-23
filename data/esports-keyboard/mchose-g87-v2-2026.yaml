@@ -1,0 +1,22 @@
+slug: mchose-g87-v2-2026
+category: esports-keyboard
+brand: mchose
+model: MCHOSE G87 V2
+year: 2026
+title: MCHOSE G87 V2 87-Key Tri-Mode Mechanical Keyboard
+specs:
+  keyboardType: mechanical
+  layout: 87 键 TKL
+  mounting: Gasket
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  hotSwap: true
+  driver: MCHOSE M HUB
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://support.mchose.store/hc/en-us/articles/50413594299284-MCHOSE-Mix-87-M-HUB-Guide
+  snapshot_url: https://www.jd.com/hprm/670b1cbcaa6f508f47d.html
+status: published

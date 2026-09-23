@@ -4,12 +4,25 @@ export const mchoseEsportsKeyboardAdapter = {
   name: 'esports-keyboard/mchose',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'mchose' && /K99\s*V3/i.test(target.model);
+    return target.category === 'esports-keyboard' && target.brand === 'mchose' && /K99\s*V3|G87\s*V2/i.test(target.model);
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
     const evidence = pageEvidence(snapshot);
     const normalizedSpecs: Record<string, unknown> = {};
+    if (/G87\s*V2/i.test(target.model)) {
+      if (/Mechanical Keyboards?:[\s\S]{0,120}G87 V2|G87 V2[\s\S]{0,80}mechanical keyboard/i.test(evidence)) {
+        normalizedSpecs.keyboardType = 'mechanical';
+      }
+      if (/M HUB/i.test(evidence)) normalizedSpecs.driver = 'MCHOSE M HUB';
+      return {
+        normalizedSpecs,
+        sourceNotes: [
+          'MCHOSE 官方支持文档将 G87 V2 列为机械键盘并列出 M HUB 兼容；此支持页不提供布局、连接方式等产品参数，未从此页推断。',
+          '规格字段另按京东 G87 V2 具名商品标题核对；型号级字段仅保留该系列标题共同明确的信息，不指定颜色、轴体等 SKU 选项。',
+        ],
+      };
+    }
     const sourceNotes = [`找到 MCHOSE 官方 ${target.model} 产品页的型号与规格表。`];
 
     if (/Mechanical Keyboard/i.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';

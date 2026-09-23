@@ -14,6 +14,17 @@ const target: CrawlTarget = {
   mode: 'cheerio',
 };
 
+const g87V2Target: CrawlTarget = {
+  slug: 'mchose-g87-v2-2026',
+  category: 'esports-keyboard',
+  brand: 'mchose',
+  model: 'MCHOSE G87 V2',
+  identityAliases: ['G87 V2'],
+  year: 2026,
+  url: 'https://support.mchose.store/hc/en-us/articles/50413594299284-MCHOSE-Mix-87-M-HUB-Guide',
+  mode: 'cheerio',
+};
+
 test('extracts shared MCHOSE K99 V3 specs while excluding color-specific options', () => {
   const snapshot: PageSnapshot = {
     title: 'MCHOSE K99 V3 98% Layout Wireless Mechanical Keyboard',
@@ -40,4 +51,22 @@ test('extracts shared MCHOSE K99 V3 specs while excluding color-specific options
   assert.equal(result.normalizedSpecs.batteryCapacity, 10000);
   assert.equal(result.normalizedSpecs.driver, 'MCHOSE M HUB');
   assert.equal(result.normalizedSpecs.keycapMaterial, undefined);
+});
+
+test('extracts only G87 V2 facts explicitly stated by the official MCHOSE support page', () => {
+  const snapshot: PageSnapshot = {
+    title: 'MCHOSE Mix 87 M HUB Guide',
+    description: 'Supports mechanical keyboards K87S, G87 V2, and G75 V2.',
+    bodyText: 'Mechanical keyboards K87S, G87 V2, and G75 V2 are supported by M HUB.',
+    headings: [],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  assert.equal(mchoseEsportsKeyboardAdapter.canHandle(g87V2Target), true);
+  const result = mchoseEsportsKeyboardAdapter.normalize(g87V2Target, snapshot);
+  assert.deepEqual(result.normalizedSpecs, { keyboardType: 'mechanical', driver: 'MCHOSE M HUB' });
 });
