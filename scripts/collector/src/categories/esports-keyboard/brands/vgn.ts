@@ -4,17 +4,20 @@ export const vgnEsportsKeyboardAdapter = {
   name: 'esports-keyboard/vgn',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'vgn' && /(?:V98\s*Pro\s*V4|V87\s*V2)/i.test(target.model);
+    return target.category === 'esports-keyboard' && target.brand === 'vgn' && /(?:V98\s*Pro\s*V4|V87\s*V2|N75\s*V2)/i.test(target.model);
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
     const evidence = pageEvidence(snapshot);
     const isV87V2 = /V87\s*V2/i.test(`${target.model} ${snapshot.title}`);
+    const isN75V2 = /N75\s*V2/i.test(`${target.model} ${snapshot.title}`);
     const normalizedSpecs: Record<string, unknown> = {};
     const sourceNotes = [`找到 VGN 官方 ${target.model} 产品页的型号和结构规格。`];
 
     if (/Mechanical(?:\s+Gaming)?\s+Keyboard/i.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';
-    if (isV87V2) {
+    if (isN75V2) {
+      if (/Layout[:：]\s*75%/i.test(evidence)) normalizedSpecs.layout = '75%';
+    } else if (isV87V2) {
       if (/Layout[:：]\s*80%\s*\|\s*TKL|TKL\s*Layout/i.test(evidence)) normalizedSpecs.layout = 'TKL（87键）';
     } else if (/98%\s*layout|Layout[:：]\s*98%/i.test(evidence)) {
       normalizedSpecs.layout = '98%';
@@ -60,7 +63,9 @@ export const vgnEsportsKeyboardAdapter = {
       sourceNotes.push(`以下字段未从官方公开页确认，保持缺省：${missing.join('、')}。`);
     }
     sourceNotes.push(
-      isV87V2
+      isN75V2
+        ? '官方页面列出不同配色和轴体选项；采用国内热度对应的 N75 V2 三模型号，不将可选轴体写成全系列唯一配置。'
+        : isV87V2
         ? '官方页面列出多个配色和轴体版本；型号级规格不指定单一轴体，国内热度依据只用于目标筛选，不混入规格。'
         : '同型号页面列出多款轴体和不同回报率版本；未锁定具体国内 SKU，因此不把轴体或回报率写入型号级规格。',
     );

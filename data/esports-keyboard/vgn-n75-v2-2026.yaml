@@ -1,0 +1,23 @@
+slug: vgn-n75-v2-2026
+category: esports-keyboard
+brand: vgn
+model: VGN N75 V2 三模版
+year: 2026
+title: VGN N75 V2 Wireless RGB Mechanical Keyboard
+specs:
+  keyboardType: mechanical
+  layout: 75%
+  mounting: Gasket
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: RGB 背光
+  hotSwap: true
+  batteryCapacity: 8000
+  driver: V HUB
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://vgnlab.com/products/vgn-n75-v2-wireless-rgb-mechanical-keyboard
+status: published
