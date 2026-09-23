@@ -4,7 +4,7 @@ export const aulaEsportsKeyboardAdapter = {
   name: 'esports-keyboard/aula',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|99\s*PRO)/i.test(target.model);
+    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|87\s*PRO\s*V2|99\s*PRO)/i.test(target.model);
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
@@ -12,20 +12,23 @@ export const aulaEsportsKeyboardAdapter = {
     const normalizedSpecs: Record<string, unknown> = {};
     const sourceNotes = [`找到 AULA 狼蛛官方 ${target.model} 产品页的机械轴、结构和连接事实。`];
 
-    if (/AULA\s*(?:F75|F99\s*PRO)/i.test(`${target.model} ${snapshot.title}`) && /Mechanical Keyboard/i.test(evidence)) {
+    if (/AULA\s*(?:F75|F87\s*PRO\s*V2|F99\s*PRO)/i.test(`${target.model} ${snapshot.title}`) && /Mechanical Keyboard/i.test(evidence)) {
       normalizedSpecs.keyboardType = 'mechanical';
     }
 
     const isF99Pro = /F99\s*PRO/i.test(`${target.model} ${snapshot.title}`);
-    const switchType = isF99Pro
+    const isF87ProV2 = /F87\s*PRO\s*V2/i.test(`${target.model} ${snapshot.title}`);
+    const switchType = isF99Pro || isF87ProV2
       ? undefined
       : evidence.match(/Switch:\s*(LEOBOG Reaper Linear Switch|TTC\s*&\s*AULA Crescent Linear Switch)/i)?.[1];
     if (switchType) normalizedSpecs.switchType = switchType;
 
     if (/Gasket Structure|Gasket[- ]?Mount(?:ed)?/i.test(evidence)) normalizedSpecs.mounting = 'Gasket';
-    if (/F99\s*PRO/i.test(`${target.model} ${snapshot.title}`)) {
+    if (isF99Pro) {
       if (/ABS Plastic/i.test(evidence)) normalizedSpecs.caseMaterial = 'ABS Plastic';
       if (/96%\s*(?:with\s+Knob)?|1800 Layout/i.test(evidence)) normalizedSpecs.layout = '96% with Knob';
+    } else if (isF87ProV2) {
+      if (/TKL Layout|\b87 Keys\b|\b87-key\b/i.test(evidence)) normalizedSpecs.layout = 'TKL (87键)';
     } else if (/75%\s*(?:Compact\s*)?Layout|Layout:\s*ANSI/i.test(evidence)) {
       normalizedSpecs.layout = '75% ANSI';
     }
@@ -40,12 +43,14 @@ export const aulaEsportsKeyboardAdapter = {
     if (connections.length > 0) normalizedSpecs.connection = [...new Set(connections)];
 
     if (/RGB\s*(?:Backlight|Illumination)?/i.test(evidence)) {
-      normalizedSpecs.backlight = /South-facing RGB/i.test(evidence) ? '南向 RGB 背光' : 'RGB 背光';
+      normalizedSpecs.backlight = /South-facing (?:RGB|LEDs)|RGB South-facing/i.test(evidence)
+        ? '南向 RGB 背光'
+        : 'RGB 背光';
     }
     if (/Hot[- ]?Swap|Hot[- ]?swappable/i.test(evidence)) normalizedSpecs.hotSwap = true;
-    const batteryCapacity = evidence.match(/(\d+)mAh/i);
+    const batteryCapacity = isF87ProV2 ? undefined : evidence.match(/(\d+)mAh/i);
     if (batteryCapacity?.[1]) normalizedSpecs.batteryCapacity = Number(batteryCapacity[1]);
-    if (/AULA\s*F75\s*Driver|AULA\s*Driver/i.test(evidence)) normalizedSpecs.driver = 'AULA Driver';
+    if (/AULA\s*(?:F75|F87\s*PRO\s*V2)?\s*Driver/i.test(evidence)) normalizedSpecs.driver = 'AULA Driver';
 
     const missing = [
       'keyboardType',
@@ -71,7 +76,9 @@ export const aulaEsportsKeyboardAdapter = {
     sourceNotes.push(
       isF99Pro
         ? '页面列出多个轴体选项，且国内电商同型号存在不同轴体 SKU；轴体按变体区分，本批不把海外页面默认轴体泛化到国内产品。'
-        : '页面列出多个轴体和配色选项；本批按页面当前默认轴体保存，不把其他选项合并进正式规格。',
+        : isF87ProV2
+          ? '国内电商 F87 Pro V2 同型号存在不同轴体和电池配置；轴体、电池容量按 SKU 区分，本批不把海外产品页默认配置泛化到国内商品。'
+          : '页面列出多个轴体和配色选项；本批按页面当前默认轴体保存，不把其他选项合并进正式规格。',
     );
     sourceNotes.push('官方页面以美元展示价格，本批不直接换算人民币，seed 价格保持缺省。');
 

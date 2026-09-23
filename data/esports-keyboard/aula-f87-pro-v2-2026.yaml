@@ -1,0 +1,22 @@
+slug: aula-f87-pro-v2-2026
+category: esports-keyboard
+brand: aula
+model: AULA F87 Pro V2
+year: 2026
+title: AULA F87 PRO V2 – Aula Gear
+specs:
+  keyboardType: mechanical
+  mounting: Gasket
+  layout: TKL (87键)
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: 南向 RGB 背光
+  hotSwap: true
+  driver: AULA Driver
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://aulagear.com/products/aula-f87-pro-v2
+status: published
