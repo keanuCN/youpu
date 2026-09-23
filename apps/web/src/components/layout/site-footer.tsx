@@ -3,9 +3,15 @@ import { CATEGORY_LEAVES, SEASON } from "@/data/categories";
 import { BRAND } from "@/lib/brand";
 import type { CategoryNode } from "@/types";
 
-/** 品类入口由配置驱动：开档的进档案库，筹备中的进占位页 —— 新增品类不改页脚代码 */
+/** 页脚仅列出精选的已开档品类，其余品类统一链接到首页完整目录。 */
 const LEAF_CATEGORIES: CategoryNode[] = CATEGORY_LEAVES;
 const LIVE_CATEGORIES = LEAF_CATEGORIES.filter((c) => c.status === "live");
+const POPULAR_ARCHIVE_SLUGS = ["snowboard", "action-cam", "esports-keyboard", "road-bike", "mtb"];
+const FEATURED_CATEGORIES = POPULAR_ARCHIVE_SLUGS.flatMap((slug) => {
+  const category = LIVE_CATEGORIES.find((item) => item.slug === slug);
+  return category ? [category] : [];
+});
+const REMAINING_CATEGORY_COUNT = Math.max(LEAF_CATEGORIES.length - FEATURED_CATEGORIES.length, 0);
 
 const TOOLS: { label: string; href: string }[] = [
   { label: "参数对比", href: "/compare" },
@@ -33,24 +39,23 @@ export function SiteFooter() {
           <nav>
             <p className="mono-label mb-3">档案库</p>
             <ul className="space-y-2">
-              {LIVE_CATEGORIES.map((c) => (
+              {FEATURED_CATEGORIES.map((c) => (
                 <li key={c.slug}>
                   <Link href={`/browse/${c.slug}`} className="story-link text-[13px] text-foreground/80 hover:text-foreground">
                     {c.name}
                   </Link>
                 </li>
               ))}
-              {LEAF_CATEGORIES.filter((c) => c.status !== "live").map((c) => (
-                <li key={c.slug}>
+              {REMAINING_CATEGORY_COUNT > 0 ? (
+                <li key="more-categories">
                   <Link
-                    href={`/soon/${c.slug}`}
-                    className="story-link text-[13px] text-muted-foreground/70 hover:text-foreground"
+                    href="/#categories"
+                    className="story-link text-[13px] text-muted-foreground hover:text-foreground"
                   >
-                    {c.name}
-                    <span className="mono-label ml-1.5">筹备中</span>
+                    其余 {REMAINING_CATEGORY_COUNT} 个品类…
                   </Link>
                 </li>
-              ))}
+              ) : null}
             </ul>
           </nav>
           <nav>
