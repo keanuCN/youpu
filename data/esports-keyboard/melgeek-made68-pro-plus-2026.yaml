@@ -1,0 +1,24 @@
+slug: melgeek-made68-pro-plus-2026
+category: esports-keyboard
+brand: melgeek
+model: MADE68 Pro+
+year: 2026
+title: MelGeek MADE68 Pro+ Hall Effect Gaming Keyboard | Rapid Trigger 65% $139
+specs:
+  keyboardType: magnetic
+  layout: 65%（68键）
+  mounting: Gasket Mount
+  caseMaterial: ABS + PC
+  connection:
+    - wired
+  pollingRate: 8000
+  scanRate: 16000
+  rapidTriggerPrecision: 0.01
+  actuationRange: 0.1–3.4mm
+  backlight: 1600 万色 RGB 背光
+  driver: MelGeek HIVE
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.melgeek.com/en-eu/products/made68-pro
+status: published

@@ -239,6 +239,13 @@
   official_url: https://www.cherry.cn
   description: 德国键盘与输入设备品牌，以机械键盘和 MX 轴体产品线闻名。
 
+- slug: melgeek
+  name: MelGeek
+  name_cn: 蜜氪
+  country: CN
+  official_url: https://www.melgeek.cn
+  description: 深圳电竞外设品牌，产品覆盖磁轴与机械键盘、键帽及桌面输入设备。
+
 - slug: canyon
   name: Canyon
   country: DE
