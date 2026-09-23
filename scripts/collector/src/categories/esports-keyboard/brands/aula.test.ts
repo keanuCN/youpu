@@ -39,3 +39,37 @@ test('extracts AULA F75 default mechanical keyboard facts', () => {
   assert.equal(result.normalizedSpecs.batteryCapacity, 4000);
   assert.equal(result.normalizedSpecs.driver, 'AULA Driver');
 });
+
+test('extracts AULA F99 Pro default variant without merging selectable switch options', () => {
+  const f99Target: CrawlTarget = {
+    ...target,
+    slug: 'aula-f99-pro-2026',
+    model: 'AULA F99 Pro',
+    identityAliases: ['AULA F99 PRO 96% Gasket-Mounted Keyboard'],
+    url: 'https://aulagear.com/products/aula-f99-copy',
+  };
+  const snapshot: PageSnapshot = {
+    title: '96% Gasket-Mounted Triple-Mode Mechanical Keyboard with Knob – Aula Gear',
+    description: 'AULA F99 PRO 8000mAh Battery',
+    bodyText:
+      'AULA F99 PRO 100 keys 1800 Layout with knob Gasket-Mounted Flex-Cut Hotswappable PCB Wired Type-C Bluetooth 5.0 2.4GHz 8000mAh South-facing RGB Backlight ABS Plastic Hot-Swappable Yes Switch: Star arrow Linear Switch LEOBOG Nimbus Linear Switch V3 AULA DRIVER',
+    headings: [],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  const result = aulaEsportsKeyboardAdapter.normalize(f99Target, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'mechanical');
+  assert.equal(result.normalizedSpecs.switchType, undefined);
+  assert.equal(result.normalizedSpecs.mounting, 'Gasket');
+  assert.equal(result.normalizedSpecs.caseMaterial, 'ABS Plastic');
+  assert.equal(result.normalizedSpecs.layout, '96% with Knob');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired', '2.4g', 'bluetooth']);
+  assert.equal(result.normalizedSpecs.backlight, '南向 RGB 背光');
+  assert.equal(result.normalizedSpecs.hotSwap, true);
+  assert.equal(result.normalizedSpecs.batteryCapacity, 8000);
+  assert.equal(result.normalizedSpecs.driver, 'AULA Driver');
+});

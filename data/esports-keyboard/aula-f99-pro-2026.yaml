@@ -1,0 +1,24 @@
+slug: aula-f99-pro-2026
+category: esports-keyboard
+brand: aula
+model: AULA F99 Pro
+year: 2026
+title: 96% Gasket-Mounted Triple-Mode Mechanical Keyboard with Knob – Aula Gear
+specs:
+  keyboardType: mechanical
+  mounting: Gasket
+  caseMaterial: ABS Plastic
+  layout: 96% with Knob
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: 南向 RGB 背光
+  driver: AULA Driver
+  hotSwap: true
+  batteryCapacity: 8000
+images: []
+data_source:
+  kind: official
+  origin_url: https://aulagear.com/products/aula-f99-copy
+status: published
