@@ -1,0 +1,23 @@
+slug: dareu-cool68-ocean-blue-2026
+category: esports-keyboard
+brand: dareu
+model: DAREU COOL68 云海蓝
+year: 2026
+title: 达尔优 COOL68 云海蓝 磁轴电竞键盘
+specs:
+  keyboardType: magnetic
+  layout: 65%（68键）
+  connection:
+    - wired
+  mounting: Gasket
+  pollingRate: 8000
+  rapidTriggerPrecision: 0.01
+  keycapMaterial: PBT + PC 透明键帽
+  backlight: RGB 背光 / 3D Light Wing 灯箱
+  hotSwap: true
+  driver: DAREU 网页驱动
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.dareu.us/products/cool68
+status: published

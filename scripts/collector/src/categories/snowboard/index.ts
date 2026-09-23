@@ -41,6 +41,7 @@ import { monsgeekEsportsKeyboardAdapter } from '../esports-keyboard/brands/monsg
 import { monsgeekViaEsportsKeyboardAdapter } from '../esports-keyboard/brands/monsgeek-via';
 import { wobkeyEsportsKeyboardAdapter } from '../esports-keyboard/brands/wobkey';
 import { vxeEsportsKeyboardAdapter } from '../esports-keyboard/brands/vxe';
+import { dareuEsportsKeyboardAdapter } from '../esports-keyboard/brands/dareu';
 import { aulaEsportsKeyboardAdapter } from '../esports-keyboard/brands/aula';
 import { vgnEsportsKeyboardAdapter } from '../esports-keyboard/brands/vgn';
 import { rapooEsportsKeyboardAdapter } from '../esports-keyboard/brands/rapoo';
@@ -89,6 +90,7 @@ const adapters: ProductAdapter[] = [
   monsgeekViaEsportsKeyboardAdapter,
   wobkeyEsportsKeyboardAdapter,
   vxeEsportsKeyboardAdapter,
+  dareuEsportsKeyboardAdapter,
   aulaEsportsKeyboardAdapter,
   vgnEsportsKeyboardAdapter,
   rapooEsportsKeyboardAdapter,

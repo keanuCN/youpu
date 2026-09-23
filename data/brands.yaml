@@ -204,6 +204,13 @@
   official_url: https://vxe.com
   description: 中国电竞外设品牌，V75 X 机械键盘主打 75% 配列、三模连接、Game-Gasket 结构和低延迟电竞体验。
 
+- slug: dareu
+  name: DAREU
+  name_cn: 达尔优
+  country: CN
+  official_url: https://cn.dareu.com
+  description: 中国电脑外设品牌，产品覆盖机械键盘、磁轴键盘、鼠标和电竞音频设备。
+
 - slug: aula
   name: AULA
   name_cn: 狼蛛
