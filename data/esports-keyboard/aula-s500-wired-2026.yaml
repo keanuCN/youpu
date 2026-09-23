@@ -1,0 +1,19 @@
+slug: aula-s500-wired-2026
+category: esports-keyboard
+brand: aula
+model: AULA S500
+year: 2026
+title: AULA S500 Mechanical Keyboard
+specs:
+  keyboardType: mechanical
+  layout: 104 键全尺寸
+  connection:
+    - wired
+  backlight: 分区 RGB 背光
+  caseMaterial: 金属磨砂面板
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.aulastar.com/mechanical-keyboard/467.html
+  snapshot_url: https://www.jd.com/hprm/6705e94372293bff35b.html
+status: published

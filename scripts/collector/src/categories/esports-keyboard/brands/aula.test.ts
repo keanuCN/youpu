@@ -40,6 +40,35 @@ test('extracts AULA F75 default mechanical keyboard facts', () => {
   assert.equal(result.normalizedSpecs.driver, 'AULA Driver');
 });
 
+test('extracts only common official AULA S500 wired full-size facts', () => {
+  const s500Target: CrawlTarget = {
+    ...target,
+    slug: 'aula-s500-wired-2026',
+    model: 'AULA S500',
+    identityAliases: ['S500 Mechanical Keyboard'],
+    url: 'https://www.aulastar.com/mechanical-keyboard/467.html',
+  };
+  const snapshot: PageSnapshot = {
+    title: 'AULA S500 Mechanical Keyboard',
+    description: 'S500 Mechanical Keyboard; Zoned RGB Lighting; 104 Full-size keys; Gaming E-sports; Full Key Anti-ghosting; Retro Three-tone Keycaps',
+    bodyText: 'Wired100% Layout Zoned RGB Backlighting Metal Matte Panel',
+    headings: [],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  const result = aulaEsportsKeyboardAdapter.normalize(s500Target, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'mechanical');
+  assert.equal(result.normalizedSpecs.layout, '104 键全尺寸');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired']);
+  assert.equal(result.normalizedSpecs.backlight, '分区 RGB 背光');
+  assert.equal(result.normalizedSpecs.caseMaterial, '金属磨砂面板');
+  assert.equal(result.normalizedSpecs.switchType, undefined);
+});
+
 test('extracts F75 Max layout without treating a selectable switch as universal', () => {
   const f75MaxTarget: CrawlTarget = {
     ...target,

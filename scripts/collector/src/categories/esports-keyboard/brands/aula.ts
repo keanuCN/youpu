@@ -4,7 +4,7 @@ export const aulaEsportsKeyboardAdapter = {
   name: 'esports-keyboard/aula',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|87\s*PRO\s*V2|99\s*PRO)|HERO\s*68\s*(?:HE|XS)/i.test(target.model);
+    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|87\s*PRO\s*V2|99\s*PRO)|HERO\s*68\s*(?:HE|XS)|S500/i.test(target.model);
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
@@ -12,6 +12,7 @@ export const aulaEsportsKeyboardAdapter = {
     const normalizedSpecs: Record<string, unknown> = {};
     const isHero68He = /HERO\s*68\s*HE/i.test(`${target.model} ${snapshot.title}`);
     const isHero68Xs = /HERO\s*68\s*XS/i.test(`${target.model} ${snapshot.title}`);
+    const isS500 = /S500/i.test(target.model);
     const sourceNotes = [
       isHero68He
         ? `找到 AULA 狼蛛官方 ${target.model} 产品页的磁轴、布局和连接规格。`
@@ -19,6 +20,16 @@ export const aulaEsportsKeyboardAdapter = {
           ? `找到 AULA 狼蛛官方 ${target.model} 产品页；详情中的技术说明以图片呈现，文本快照仅确认型号和磁轴类别。`
         : `找到 AULA 狼蛛官方 ${target.model} 产品页的机械轴、结构和连接事实。`,
     ];
+    if (isS500) {
+      if (/Mechanical Keyboard|机械键盘/i.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';
+      if (/104\s*(?:full[- ]?size\s*)?keys|100%\s*Layout/i.test(evidence)) normalizedSpecs.layout = '104 键全尺寸';
+      if (/Wired/i.test(evidence)) normalizedSpecs.connection = ['wired'];
+      if (/Zoned RGB Backlight(?:ing)?/i.test(evidence)) normalizedSpecs.backlight = '分区 RGB 背光';
+      if (/Metal Matte Panel/i.test(evidence)) normalizedSpecs.caseMaterial = '金属磨砂面板';
+      sourceNotes.push('型号限定为 AULA S500 有线全尺寸共通规格；官方页面未确认轴体材质等细项，保持缺省，不将京东具名 SKU 的青轴泛化为全型号。');
+      return { normalizedSpecs, sourceNotes };
+    }
+
     if (isHero68He && /Hall Effect Switch|Magnetic Switch Technology/i.test(evidence)) {
       normalizedSpecs.keyboardType = 'magnetic';
     } else if (isHero68Xs && /磁轴键盘/i.test(evidence)) {
