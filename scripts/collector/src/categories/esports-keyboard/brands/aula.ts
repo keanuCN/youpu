@@ -4,7 +4,7 @@ export const aulaEsportsKeyboardAdapter = {
   name: 'esports-keyboard/aula',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|87\s*PRO\s*V2|99\s*PRO|2088)|HERO\s*68\s*(?:HE|XS)|S500/i.test(target.model);
+    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|87\s*PRO\s*V2|99\s*PRO|108\s*PRO|2088)|HERO\s*68\s*(?:HE|XS)|S500/i.test(target.model);
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
@@ -13,13 +13,16 @@ export const aulaEsportsKeyboardAdapter = {
     const isHero68He = /HERO\s*68\s*HE/i.test(`${target.model} ${snapshot.title}`);
     const isHero68Xs = /HERO\s*68\s*XS/i.test(`${target.model} ${snapshot.title}`);
     const isS500 = /S500/i.test(target.model);
+    const isF108Pro = /F108\s*PRO/i.test(target.model);
     const isF2088 = /F2088\s/i.test(target.model);
     const sourceNotes = [
       isHero68He
         ? `找到 AULA 狼蛛官方 ${target.model} 产品页的磁轴、布局和连接规格。`
         : isHero68Xs
           ? `找到 AULA 狼蛛官方 ${target.model} 产品页；详情中的技术说明以图片呈现，文本快照仅确认型号和磁轴类别。`
-        : `找到 AULA 狼蛛官方 ${target.model} 产品页的机械轴、结构和连接事实。`,
+        : isF108Pro
+          ? '找到 AULA 狼蛛官方 F108Pro FAQ；仅将 FAQ 明确说明的设备类型与连接方式归一化。'
+          : `找到 AULA 狼蛛官方 ${target.model} 产品页的机械轴、结构和连接事实。`,
     ];
     if (isS500) {
       if (/Mechanical Keyboard|机械键盘/i.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';
@@ -37,6 +40,17 @@ export const aulaEsportsKeyboardAdapter = {
       if (/mode:\s*Wired|\bWired\b/i.test(evidence)) normalizedSpecs.connection = ['wired'];
       if (/Mixed Light|Regional light mixing/i.test(evidence)) normalizedSpecs.backlight = '混彩背光';
       sourceNotes.push('型号限定为 AULA F2088 104 键朋克版；F2088 Air、F2088 Pro 及其配列/无线功能不合并。轴体存在多个 SKU，不由单个商品标题推断型号级轴体。');
+      return { normalizedSpecs, sourceNotes };
+    }
+
+    if (isF108Pro) {
+      if (/Mechanical Keyboard/i.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';
+      const connections: string[] = [];
+      if (/Wired Mode/i.test(evidence)) connections.push('wired');
+      if (/2\.4G Mode/i.test(evidence)) connections.push('2.4g');
+      if (/Bluetooth/i.test(evidence)) connections.push('bluetooth');
+      if (connections.length > 0) normalizedSpecs.connection = [...new Set(connections)];
+      sourceNotes.push('官方 FAQ 不确认键数、Gasket、RGB、屏幕、电池容量或热插拔；这些字段不从其他 F108 / 变体推断。');
       return { normalizedSpecs, sourceNotes };
     }
 

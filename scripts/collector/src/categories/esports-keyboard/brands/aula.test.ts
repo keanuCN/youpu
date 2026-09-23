@@ -97,6 +97,35 @@ test('extracts common wired 104-key facts for original AULA F2088, not Air or Pr
   assert.equal(result.normalizedSpecs.switchType, undefined);
 });
 
+test('extracts only F108Pro connection modes from its official FAQ, not the regular F108', () => {
+  const f108ProTarget: CrawlTarget = {
+    ...target,
+    slug: 'aula-f108-pro-2026',
+    model: 'AULA F108 Pro',
+    identityAliases: ['F108Pro'],
+    url: 'https://www.aulastar.com/faq/504.html',
+  };
+  const snapshot: PageSnapshot = {
+    title: 'F108Pro-AULA',
+    description: 'Mechanical Keyboard FAQ',
+    bodyText: 'F108Pro Wired Mode Bluetooth 2.4G Mode AULA F108Pro',
+    headings: ['Mechanical Keyboard', 'How to connect in Wired Mode', 'Why can’t my Bluetooth connect?', '2.4G Mode'],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  assert.equal(aulaEsportsKeyboardAdapter.canHandle(f108ProTarget), true);
+  assert.equal(aulaEsportsKeyboardAdapter.canHandle({ ...f108ProTarget, model: 'AULA F108' }), false);
+  const result = aulaEsportsKeyboardAdapter.normalize(f108ProTarget, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'mechanical');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired', '2.4g', 'bluetooth']);
+  assert.equal(result.normalizedSpecs.batteryCapacity, undefined);
+  assert.equal(result.normalizedSpecs.layout, undefined);
+});
+
 test('extracts F75 Max layout without treating a selectable switch as universal', () => {
   const f75MaxTarget: CrawlTarget = {
     ...target,

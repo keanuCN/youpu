@@ -1,0 +1,23 @@
+slug: aula-f108-pro-2026
+category: esports-keyboard
+brand: aula
+model: AULA F108 Pro
+year: 2026
+title: AULA F108 Pro 108-Key Tri-Mode Mechanical Keyboard
+specs:
+  keyboardType: mechanical
+  layout: 108 键全尺寸
+  mounting: Gasket
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: RGB 背光
+  customScreen: true
+  batteryCapacity: 8000
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.aulastar.com/faq/504.html
+  snapshot_url: https://item.jd.com/10133918445125.html
+status: published
