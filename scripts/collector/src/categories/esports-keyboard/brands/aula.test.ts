@@ -174,3 +174,31 @@ test('extracts HERO 68 HE shared magnetic facts without guessing its switch vari
   assert.equal(result.normalizedSpecs.switchType, undefined);
   assert.equal(result.normalizedSpecs.scanRate, undefined);
 });
+
+test('confirms HERO68XS identity and magnetic category without inventing image-only specifications', () => {
+  const heroXsTarget: CrawlTarget = {
+    ...target,
+    slug: 'aula-hero68xs-phantom-black-snow-god-2026',
+    model: 'AULA HERO68XS 幻影黑 雪神磁轴',
+    identityAliases: ['HERO68XS'],
+    url: 'https://www.aulacn.com/product/99.html',
+  };
+  const snapshot: PageSnapshot = {
+    title: '狼蛛 HERO68XS 客制化磁轴键盘',
+    description: '狼蛛 HERO68XS 客制化磁轴键盘，支持驱动自定义。',
+    bodyText: 'HERO68XS 光影随战觉醒 客制化磁轴键盘',
+    headings: ['狼蛛产品 - HERO68XS 详情'],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: ['狼蛛HERO68XS'],
+  };
+
+  const result = aulaEsportsKeyboardAdapter.normalize(heroXsTarget, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'magnetic');
+  assert.equal(result.normalizedSpecs.layout, undefined);
+  assert.equal(result.normalizedSpecs.switchType, undefined);
+  assert.equal(result.normalizedSpecs.connection, undefined);
+  assert.ok(result.sourceNotes.some((note) => note.includes('官方说明书交叉确认')));
+});

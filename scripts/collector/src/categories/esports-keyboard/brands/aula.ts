@@ -4,19 +4,24 @@ export const aulaEsportsKeyboardAdapter = {
   name: 'esports-keyboard/aula',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|87\s*PRO\s*V2|99\s*PRO)|HERO\s*68\s*HE/i.test(target.model);
+    return target.category === 'esports-keyboard' && target.brand === 'aula' && /F(?:75|87\s*PRO\s*V2|99\s*PRO)|HERO\s*68\s*(?:HE|XS)/i.test(target.model);
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
     const evidence = pageEvidence(snapshot);
     const normalizedSpecs: Record<string, unknown> = {};
     const isHero68He = /HERO\s*68\s*HE/i.test(`${target.model} ${snapshot.title}`);
+    const isHero68Xs = /HERO\s*68\s*XS/i.test(`${target.model} ${snapshot.title}`);
     const sourceNotes = [
       isHero68He
         ? `找到 AULA 狼蛛官方 ${target.model} 产品页的磁轴、布局和连接规格。`
+        : isHero68Xs
+          ? `找到 AULA 狼蛛官方 ${target.model} 产品页；详情中的技术说明以图片呈现，文本快照仅确认型号和磁轴类别。`
         : `找到 AULA 狼蛛官方 ${target.model} 产品页的机械轴、结构和连接事实。`,
     ];
     if (isHero68He && /Hall Effect Switch|Magnetic Switch Technology/i.test(evidence)) {
+      normalizedSpecs.keyboardType = 'magnetic';
+    } else if (isHero68Xs && /磁轴键盘/i.test(evidence)) {
       normalizedSpecs.keyboardType = 'magnetic';
     } else if (/AULA\s*(?:F75|F87\s*PRO\s*V2|F99\s*PRO)/i.test(`${target.model} ${snapshot.title}`) && /Mechanical Keyboard/i.test(evidence)) {
       normalizedSpecs.keyboardType = 'mechanical';
@@ -93,6 +98,8 @@ export const aulaEsportsKeyboardAdapter = {
     sourceNotes.push(
       isHero68He
         ? 'HERO 68 HE 页面列出多款磁轴可选；国内目标是白色侧刻 SKU，不从其他默认轴体按钮推断具体轴体。官方标注 128K 扫描率超过当前类目字段上限 100000 Hz，因此仅保留原始快照。'
+        : isHero68Xs
+          ? 'HERO68XS 详情页未提供可供文本采集的完整参数；具体配色、轴体及性能字段须由对应商品 SKU 与官方说明书交叉确认，不能由系列页默认选项推断。'
         : isF75Max
         ? 'F75 Max 为独立型号；页面展示多种配色与轴体选项，轴体按 SKU 区分，本批不将默认选项泛化为全系列规格。'
         : isF99Pro
