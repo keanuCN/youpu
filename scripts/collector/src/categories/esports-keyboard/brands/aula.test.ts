@@ -69,6 +69,34 @@ test('extracts only common official AULA S500 wired full-size facts', () => {
   assert.equal(result.normalizedSpecs.switchType, undefined);
 });
 
+test('extracts common wired 104-key facts for original AULA F2088, not Air or Pro', () => {
+  const f2088Target: CrawlTarget = {
+    ...target,
+    slug: 'aula-f2088-104-white-punk-2026',
+    model: 'AULA F2088 104键朋克版',
+    identityAliases: ['F2088 104 keys White Punk Mechanical Gaming Keyboard'],
+    url: 'https://www.aulastar.com/mechanical-keyboard/37.html',
+  };
+  const snapshot: PageSnapshot = {
+    title: 'AULA F2088 104 keys White Punk Mechanical Gaming Keyboard',
+    description: 'AULA Mechanical Keyboards, Wired Keyboards, Gaming Keyboards, 104 Keys Mixed Light, Cyberpunk.',
+    bodyText: 'mode: Wired 104keys，100% layout Regional light mixing Suitable for gaming, esports, and office use',
+    headings: [],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  const result = aulaEsportsKeyboardAdapter.normalize(f2088Target, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'mechanical');
+  assert.equal(result.normalizedSpecs.layout, '104 键全尺寸');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired']);
+  assert.equal(result.normalizedSpecs.backlight, '混彩背光');
+  assert.equal(result.normalizedSpecs.switchType, undefined);
+});
+
 test('extracts F75 Max layout without treating a selectable switch as universal', () => {
   const f75MaxTarget: CrawlTarget = {
     ...target,
