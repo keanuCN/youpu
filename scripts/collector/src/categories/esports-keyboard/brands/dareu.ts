@@ -4,11 +4,14 @@ export const dareuEsportsKeyboardAdapter = {
   name: 'esports-keyboard/dareu',
 
   canHandle(target: CrawlTarget): boolean {
-    return target.category === 'esports-keyboard' && target.brand === 'dareu' && /COOL\s*68/i.test(target.model);
+    return target.category === 'esports-keyboard' && target.brand === 'dareu' &&
+      (/COOL\s*68/i.test(target.model) || /A98.*RT/i.test(target.model));
   },
 
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
     const evidence = pageEvidence(snapshot);
+    if (/A98.*RT/i.test(target.model)) return normalizeA98ProRt(target, evidence);
+
     const normalizedSpecs: Record<string, unknown> = {};
     const sourceNotes = [`找到 DAREU 官方 ${target.model} 产品页并提取明确标注的共同规格。`];
 
@@ -38,6 +41,26 @@ export const dareuEsportsKeyboardAdapter = {
     return { normalizedSpecs, sourceNotes };
   },
 };
+
+function normalizeA98ProRt(target: CrawlTarget, evidence: string): AdapterResult {
+  const normalizedSpecs: Record<string, unknown> = {};
+  const sourceNotes = [`从 ${target.model} 对应的公开报道提取 A98 专业版 RT 版信息；不与 A98 Pro II 合并。`];
+
+  if (/机械 RT 轴体|机械键盘/.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';
+  if (/98(?:键|配列)/.test(evidence)) normalizedSpecs.layout = '98键配列';
+  if (/Gasket\s*结构/i.test(evidence)) normalizedSpecs.mounting = 'Gasket';
+  if (/有线 USB-C\s*[/／]\s*无线 2\.4GHz\s*[/／]\s*无线 BT 5\.1/.test(evidence)) {
+    normalizedSpecs.connection = ['wired', '2.4g', 'bluetooth'];
+  }
+  if (/热插拔\s*PCB/.test(evidence)) normalizedSpecs.hotSwap = true;
+  if (/RGB\s*LED\s*背光/i.test(evidence)) normalizedSpecs.backlight = 'RGB 背光';
+  const battery = evidence.match(/内置\s*(\d{4,5})\s*mAh\s*电池/i);
+  if (battery) normalizedSpecs.batteryCapacity = Number(battery[1]);
+
+  sourceNotes.push('报道中的 RT 机械轴、结构、连接、电池与灯光均按明确文字提取；不推断具体 RT 行程参数、轴体型号或键帽材质。');
+  sourceNotes.push('热度依据京东具名商品评价量；评价数不是销量。价格与未核实授权图片不收录。');
+  return { normalizedSpecs, sourceNotes };
+}
 
 function pageEvidence(snapshot: PageSnapshot): string {
   return [

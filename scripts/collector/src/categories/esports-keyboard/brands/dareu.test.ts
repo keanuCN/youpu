@@ -38,3 +38,35 @@ test('extracts COOL68 shared magnetic specs without guessing switch variant', ()
   assert.equal(result.normalizedSpecs.hotSwap, true);
   assert.equal(result.normalizedSpecs.switchType, undefined);
 });
+
+test('extracts only the A98 Pro RT edition facts and does not conflate Pro II', () => {
+  const rtTarget: CrawlTarget = {
+    ...target,
+    slug: 'dareu-a98-pro-rt-2026',
+    model: 'DAREU A98 专业版 RT 三模机械键盘',
+    identityAliases: ['A98 Pro RT', 'A98 专业版 RT'],
+    url: 'https://www.ithome.com/0/926/211.htm',
+  };
+  const snapshot: PageSnapshot = {
+    title: '机械轴支持 Rapid Trigger，达尔优推出 RT 版 A98 Pro 专业版三模键盘',
+    description: '',
+    bodyText: 'A98专业版三模机械键盘的RT版。该特别款键盘搭载机械RT轴体。这款键盘的热插拔PCB也兼容标准的2-Pin机械轴体。达尔优A98专业版RT版键盘内部采用Gasket结构，拥有下灯位球头RGB LED背光。该键盘支持有线 USB-C / 无线 2.4GHz / 无线 BT 5.1 三模连接，内置 8000mAh 电池。',
+    headings: [],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  const result = dareuEsportsKeyboardAdapter.normalize(rtTarget, snapshot);
+  assert.equal(result.normalizedSpecs.keyboardType, 'mechanical');
+  assert.equal(result.normalizedSpecs.layout, undefined);
+  assert.equal(result.normalizedSpecs.mounting, 'Gasket');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired', '2.4g', 'bluetooth']);
+  assert.equal(result.normalizedSpecs.hotSwap, true);
+  assert.equal(result.normalizedSpecs.backlight, 'RGB 背光');
+  assert.equal(result.normalizedSpecs.batteryCapacity, 8000);
+  assert.equal(result.normalizedSpecs.screen, undefined);
+  assert.equal(result.normalizedSpecs.switchType, undefined);
+});

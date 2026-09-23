@@ -1,0 +1,23 @@
+slug: dareu-a98-pro-rt-2026
+category: esports-keyboard
+brand: dareu
+model: DAREU A98 专业版 RT 版
+year: 2026
+title: 达尔优 A98 专业版 RT 三模机械键盘
+specs:
+  keyboardType: mechanical
+  layout: 98键配列
+  mounting: Gasket
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  hotSwap: true
+  backlight: RGB 背光
+  batteryCapacity: 8000
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.ithome.com/0/926/211.htm
+  snapshot_url: https://www.jd.com/hprm/670afcfba69276728f7.html
+status: published
