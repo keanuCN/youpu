@@ -1,0 +1,23 @@
+slug: rapoo-v500pro-2026
+category: esports-keyboard
+brand: rapoo
+model: V500PRO
+year: 2026
+title: V500PRO - 混彩背光游戏机械键盘 - 雷柏科技
+price:
+  min: 199
+  max: 199
+  currency: CNY
+specs:
+  keyboardType: mechanical
+  switchType: 雷柏自主黑轴、青轴、茶轴、红轴可选
+  layout: 104 键全尺寸
+  connection:
+    - wired
+  backlight: 混彩背光
+  caseMaterial: 磨砂金属上盖
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.rapoo.cn/product/87
+status: published

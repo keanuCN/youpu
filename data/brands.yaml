@@ -218,6 +218,13 @@
   official_url: https://www.vgnlab.com.cn
   description: 中国电竞外设品牌，V98Pro 系列主打三模客制化机械键盘和游戏低延迟体验。
 
+- slug: rapoo
+  name: Rapoo
+  name_cn: 雷柏
+  country: CN
+  official_url: https://www.rapoo.cn
+  description: 中国电脑外设品牌，产品覆盖机械键盘、鼠标和无线办公外设。
+
 - slug: canyon
   name: Canyon
   country: DE
