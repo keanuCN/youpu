@@ -1,0 +1,19 @@
+slug: cherry-mx30s-rgb-2026
+category: esports-keyboard
+brand: cherry
+model: CHERRY MX3.0S RGB
+year: 2026
+title: MX3.0S RGB-CHERRY樱桃
+specs:
+  keyboardType: mechanical
+  layout: 108 键全尺寸
+  connection:
+    - wired
+  caseMaterial: 铝合金外壳
+  backlight: RGB 背光
+  mounting: 无钢软弹结构
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.cherry.cn/kbgame-6214.html
+status: published

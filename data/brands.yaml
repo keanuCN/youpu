@@ -232,6 +232,13 @@
   official_url: https://www.maicong.cn
   description: 中国电竞外设品牌，产品覆盖机械键盘、磁轴键盘、鼠标和音频设备。
 
+- slug: cherry
+  name: CHERRY
+  name_cn: 樱桃
+  country: DE
+  official_url: https://www.cherry.cn
+  description: 德国键盘与输入设备品牌，以机械键盘和 MX 轴体产品线闻名。
+
 - slug: canyon
   name: Canyon
   country: DE
