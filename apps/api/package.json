@@ -11,6 +11,7 @@
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy",
     "seed": "tsx src/seed/run.ts",
+    "seed:product": "tsx src/seed/sync-one-product.ts",
     "validate:data": "tsx src/seed/validate.ts",
     "es:reindex": "tsx src/search/reindex.ts",
     "postinstall": "prisma generate"
