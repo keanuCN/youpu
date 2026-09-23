@@ -1,0 +1,26 @@
+slug: akko-5108-v5-the-legend-of-hei-2026
+category: esports-keyboard
+brand: akko
+model: Akko The Legend of Hei 5108 V5
+year: 2026
+title: Akko The Legend of Hei 5108 V5 108-Key Tri-Mode Mechanical Keyboard
+specs:
+  keyboardType: mechanical
+  layout: 100%（108键）
+  mounting: Gasket Mount
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: ARGB 背光
+  hotSwap: true
+  driver: Akko Cloud Driver
+  batteryCapacity: 10000
+  keycapMaterial: PBT
+  caseMaterial: ABS
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://en.akkogear.com/product/the-legend-of-hei-5108-v5-mechanical-keyboard/
+  snapshot_url: https://www.jd.com/phb/key_670846c3eb9222988e6.html
+status: published

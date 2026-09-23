@@ -10,6 +10,31 @@ export const akkoEsportsKeyboardAdapter = {
   normalize(target: CrawlTarget, snapshot: PageSnapshot): AdapterResult {
     const evidence = pageEvidence(snapshot);
     const normalizedSpecs: Record<string, unknown> = {};
+    if (/5108\s*V5/i.test(`${target.model} ${snapshot.title}`)) {
+      if (/mechanical keyboard/i.test(evidence)) normalizedSpecs.keyboardType = 'mechanical';
+      if (/100% Layout/i.test(evidence)) normalizedSpecs.layout = '100%';
+      if (/Gasket[- ]Mounted|Gasket Mount/i.test(evidence)) normalizedSpecs.mounting = 'Gasket Mount';
+      const connections: string[] = [];
+      if (/USB Type-C|wired/i.test(evidence)) connections.push('wired');
+      if (/2\.4G/i.test(evidence)) connections.push('2.4g');
+      if (/Bluetooth/i.test(evidence)) connections.push('bluetooth');
+      if (connections.length > 0) normalizedSpecs.connection = [...new Set(connections)];
+      if (/ARGB (?:Programmable )?Backlit|ARGB Backlight/i.test(evidence)) normalizedSpecs.backlight = 'ARGB 背光';
+      else if (/RGB Backlit|RGB Backlight/i.test(evidence)) normalizedSpecs.backlight = 'RGB 背光';
+      if (/Hot[- ]Swappable|Hot Swappable/i.test(evidence)) normalizedSpecs.hotSwap = true;
+      if (/Akko Cloud Driver/i.test(evidence)) normalizedSpecs.driver = 'Akko Cloud Driver';
+      if (/10,?000\s*mAh/i.test(evidence)) normalizedSpecs.batteryCapacity = 10000;
+      if (/PBT(?: Dye[- ]?Sub)? Keycaps/i.test(evidence)) normalizedSpecs.keycapMaterial = 'PBT';
+      if (/ABS Case/i.test(evidence)) normalizedSpecs.caseMaterial = 'ABS';
+      return {
+        normalizedSpecs,
+        sourceNotes: [
+          '按 Akko 官方 The Legend of Hei 5108 V5 产品页提取该型号共通规格；100% 配列的 108 键数量以对应京东具名 SKU 标题补证。',
+          '官方页提供多个可选轴体，不把页面中出现的选项误识别为默认轴体；回报率在有线/2.4G 与蓝牙模式不同，因类目仅支持单一数值而留空。',
+          '价格以美元展示，不换算为人民币；未确认图片授权，不写入正式图片列表。',
+        ],
+      };
+    }
     const sourceNotes = [`找到 Akko 艾酷官方 ${target.model} 产品页的产品卖点和连接事实。`];
 
     if (/磁轴/.test(evidence)) normalizedSpecs.keyboardType = 'magnetic';

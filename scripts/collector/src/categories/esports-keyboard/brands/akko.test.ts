@@ -74,3 +74,39 @@ test('extracts conventional mechanical keyboard facts from Akko 5075B Plus', () 
   assert.equal(result.normalizedSpecs.hotSwap, true);
   assert.equal(result.normalizedSpecs.keycapMaterial, '透明 PC 键帽');
 });
+
+test('extracts shared Akko 5108 V5 facts but excludes switch options and mode-specific polling rates', () => {
+  const snapshot: PageSnapshot = {
+    title: 'The Legend of Hei 5108 V5 | Akko Official Global Site',
+    description: 'Akko x The Legend of Hei Limited Edition. Tri-mode Connection. Dual 8K Polling Rate.',
+    bodyText: '100% Layout Mechanical Keyboard Full-Size Gasket-Mounted Structure PBT Dye-sub Keycaps ARGB Programmable Backlit Tri-mode Connection 10,000mAh Battery Hot-Swappable Akko Cloud Driver Akko Creamy Yellow U1 Switch Akko V3 Piano Pro Switch Bluetooth 5.0 / 2.4GHz / USB Type-C 8000Hz wired and 2.4G mode, 125Hz Bluetooth mode ABS Case',
+    headings: ['100% Layout', 'Hot-Swappable', 'ARGB Backlit', 'Gasket Mount'],
+    jsonLd: [],
+    tables: [],
+    specifications: [],
+    images: [],
+    imageAltTexts: [],
+  };
+
+  const result = akkoEsportsKeyboardAdapter.normalize(
+    {
+      ...target,
+      slug: 'akko-5108-v5-the-legend-of-hei-2026',
+      model: 'Akko The Legend of Hei 5108 V5',
+      url: 'https://en.akkogear.com/product/the-legend-of-hei-5108-v5-mechanical-keyboard/',
+    },
+    snapshot,
+  );
+  assert.equal(result.normalizedSpecs.keyboardType, 'mechanical');
+  assert.equal(result.normalizedSpecs.layout, '100%');
+  assert.equal(result.normalizedSpecs.mounting, 'Gasket Mount');
+  assert.deepEqual(result.normalizedSpecs.connection, ['wired', '2.4g', 'bluetooth']);
+  assert.equal(result.normalizedSpecs.backlight, 'ARGB 背光');
+  assert.equal(result.normalizedSpecs.hotSwap, true);
+  assert.equal(result.normalizedSpecs.batteryCapacity, 10000);
+  assert.equal(result.normalizedSpecs.keycapMaterial, 'PBT');
+  assert.equal(result.normalizedSpecs.caseMaterial, 'ABS');
+  assert.equal(result.normalizedSpecs.driver, 'Akko Cloud Driver');
+  assert.equal(result.normalizedSpecs.switchType, undefined);
+  assert.equal(result.normalizedSpecs.pollingRate, undefined);
+});
