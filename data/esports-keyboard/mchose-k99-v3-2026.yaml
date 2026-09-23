@@ -1,0 +1,25 @@
+slug: mchose-k99-v3-2026
+category: esports-keyboard
+brand: mchose
+model: MCHOSE K99 V3
+year: 2026
+title: "MCHOSE K99 V3 Keyboard: Wireless, 98% Layout – Tri-Mode"
+specs:
+  keyboardType: mechanical
+  layout: 98%（99键）
+  switchType: Icy Creamsicle Switch
+  mounting: Gasket
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: 16.8M 色 RGB 背光
+  hotSwap: true
+  pollingRate: 8000
+  batteryCapacity: 10000
+  driver: MCHOSE M HUB
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://www.mchose.store/products/mchose-k99-v3-keyboard
+status: published

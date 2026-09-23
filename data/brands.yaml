@@ -225,6 +225,13 @@
   official_url: https://www.rapoo.cn
   description: 中国电脑外设品牌，产品覆盖机械键盘、鼠标和无线办公外设。
 
+- slug: mchose
+  name: MCHOSE
+  name_cn: 迈从
+  country: CN
+  official_url: https://www.maicong.cn
+  description: 中国电竞外设品牌，产品覆盖机械键盘、磁轴键盘、鼠标和音频设备。
+
 - slug: canyon
   name: Canyon
   country: DE
