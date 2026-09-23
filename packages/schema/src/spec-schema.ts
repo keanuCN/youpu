@@ -139,7 +139,9 @@ export function formatSpecValue(field: SpecField, value: unknown): string {
 }
 
 function trimNumber(n: number): string {
-  return Number.isInteger(n) ? String(n) : String(Math.round(n * 100) / 100);
+  if (Number.isInteger(n)) return String(n);
+  const decimalPlaces = Math.max(2, Math.min(12, 2 - Math.floor(Math.log10(Math.abs(n)))));
+  return String(Number(n.toFixed(decimalPlaces)));
 }
 
 export type SpecValidationIssue = { path: string; message: string };
