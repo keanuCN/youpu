@@ -19,6 +19,7 @@ const REMOTE_IMAGE_RULES = [
   { host: "www.anglerscentral.my", pathPrefix: "/cdn/shop/files/" },
   { host: "se-cdn.djiits.com", pathPrefix: "/tpc/uploads/spu/cover/" },
   { host: "www-cdn.djiits.com", pathPrefix: "/cms/uploads/" },
+  { host: "cdn-mdb.head.com", pathPrefix: "/CDN3/D/313365.SET_WO/" },
   { host: "gopro.com", pathPrefix: "/on/demandware.static/-/Sites-gopro-products/" },
   { host: "wassets.insta360.com", pathPrefix: "/common/" },
   { host: "res.insta360.com", pathPrefix: "/static/" },

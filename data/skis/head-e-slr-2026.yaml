@@ -10,6 +10,12 @@ specs:
   skierLevel: 中级至进阶
   bindingSetup: 雪板+固定器，按具体 SKU 核对
 data_source:
-  kind: manual
-  origin_url: https://www.jd.com/phb/key_13187c33a036714a9a44.html
+  kind: official
+  origin_url: https://www.head.com/en_SE/product/worldcup-rebels-e-slr-313365-set
+images:
+  - url: https://cdn-mdb.head.com/CDN3/D/313365.SET_WO/4/1820x2428/worldcup-rebels-e-slr-without-binding.webp
+    kind: face
+    alt: HEAD Worldcup Rebels e.SLR 2025/26 官方产品图
+    source: HEAD 官方产品页图片（本地演示，版权授权待核）
+    sort_order: 0
 status: published

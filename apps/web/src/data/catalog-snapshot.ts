@@ -35,7 +35,7 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "https://xiaopang.club",
-  "generatedAt": "2026-09-24T07:33:32.959Z",
+  "generatedAt": "2026-09-24T08:30:14.406Z",
   "total": 235,
   "pageSize": 48,
   "categorySlugs": [
@@ -4670,7 +4670,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/313365.SET_WO/4/1820x2428/worldcup-rebels-e-slr-without-binding.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
