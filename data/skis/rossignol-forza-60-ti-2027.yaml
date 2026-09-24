@@ -13,4 +13,4 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/sports/alpine-ski/skis
-status: published
+status: draft

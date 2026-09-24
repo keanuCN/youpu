@@ -13,4 +13,4 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nordica.com/usa/en/new-collection-skis
-status: published
+status: draft

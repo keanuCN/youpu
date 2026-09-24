@@ -1,0 +1,19 @@
+slug: head-shape-e-v5-2026
+category: skis
+brand: head
+model: Shape e-V5
+year: 2026
+title: HEAD Shape e-V5 2025/26
+one_liner: HEAD Shape 雪道系列型号，采用 74 mm 板腰与前摇设计，定位于雪道巡航与 carving。
+specs:
+  lengthOptions: 149 / 156 / 163 / 170 / 177 cm
+  waistWidth: 74
+  turnRadius: 13
+  turnRadiusReferenceLength: 170 cm
+  terrain: 雪道 / carving
+  skierLevel: 中级至进阶
+  bindingSetup: PR 11 GW 系统固定器套装
+data_source:
+  kind: official
+  origin_url: https://head.ru/ski/shop/skis/discounts/CF854649-178B-30D5-CA92-E692F4F09C64/104214/
+status: published

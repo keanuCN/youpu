@@ -1,0 +1,19 @@
+slug: atomic-bent-chetler-120-2026
+category: skis
+brand: atomic
+model: Bent Chetler 120
+year: 2026
+title: Atomic Bent Chetler 120 2025/26
+one_liner: Atomic 粉雪自由滑旗舰型号，采用 120 mm 板腰与 HRZN 3D 板头板尾设计。
+specs:
+  lengthOptions: 176 / 184 / 192 cm
+  waistWidth: 120
+  turnRadius: 19
+  turnRadiusReferenceLength: 184 cm
+  terrain: 粉雪 / 全山地自由滑
+  skierLevel: 进阶至专家
+  bindingSetup: 裸板，不含固定器
+data_source:
+  kind: official
+  origin_url: https://www.atomic.com/en-us/products/bent-chetler-120-aa7364-202600
+status: published

@@ -1,0 +1,19 @@
+slug: rossignol-forza-40-ca-xpress-2027
+category: skis
+brand: rossignol
+model: Forza 40° CA Xpress
+year: 2027
+title: Rossignol Forza 40° CA Xpress 2026/27
+one_liner: 面向中级滑手的雪道 carving 型号，强调易上手的操控与刻滑体验。
+specs:
+  lengthOptions: 150 / 157 / 164 / 171 / 179 cm
+  waistWidth: 75
+  turnRadius: 11
+  turnRadiusReferenceLength: 157 cm
+  terrain: 雪道 / carving
+  skierLevel: 中级
+  bindingSetup: 裸板，可选 XPRESS 11 GW 固定器
+data_source:
+  kind: official
+  origin_url: https://www.rossignol.com/it-it/sci-pista-uomo-forza-40%C2%B0-ca-xpress-RAPPX05000157.html
+status: published

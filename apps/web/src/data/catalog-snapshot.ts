@@ -35,7 +35,7 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "https://xiaopang.club",
-  "generatedAt": "2026-09-24T06:52:57.547Z",
+  "generatedAt": "2026-09-24T07:25:18.255Z",
   "total": 235,
   "pageSize": 48,
   "categorySlugs": [
@@ -4410,12 +4410,12 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e2c2-79be-a352-2c64b13f11c7",
-    "slug": "atomic-bent-100-2026",
-    "title": "Atomic Bent 100 2025/26",
-    "model": "Bent 100",
+    "id": "01a0d24d-2549-76c5-9d96-0c3ce4a27b77",
+    "slug": "atomic-bent-chetler-120-2026",
+    "title": "Atomic Bent Chetler 120 2025/26",
+    "model": "Bent Chetler 120",
     "year": 2026,
-    "oneLiner": "官方描述为兼顾全山地与自由滑的多用途雪板；板腰宽 100 mm。",
+    "oneLiner": "Atomic 粉雪自由滑旗舰型号，采用 120 mm 板腰与 HRZN 3D 板头板尾设计。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -4431,34 +4431,34 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "158 / 165 / 172 / 179 / 186 cm",
-      "waistWidth": 100,
-      "turnRadius": 18,
-      "turnRadiusReferenceLength": "172 cm",
-      "terrain": "全山地 / 自由滑 / 粉雪",
-      "skierLevel": "入门至专家",
+      "lengthOptions": "176 / 184 / 192 cm",
+      "waistWidth": 120,
+      "turnRadius": 19,
+      "turnRadiusReferenceLength": "184 cm",
+      "terrain": "粉雪 / 全山地自由滑",
+      "skierLevel": "进阶至专家",
       "bindingSetup": "裸板，不含固定器"
     },
     "highlights": [
       {
         "key": "waistWidth",
         "label": "板腰宽",
-        "value": "100mm"
+        "value": "120mm"
       },
       {
         "key": "turnRadius",
         "label": "转弯半径",
-        "value": "18m"
+        "value": "19m"
       },
       {
         "key": "terrain",
         "label": "适用场景",
-        "value": "全山地 / 自由滑 / 粉雪"
+        "value": "粉雪 / 全山地自由滑"
       },
       {
         "key": "skierLevel",
         "label": "适合水平",
-        "value": "入门至专家"
+        "value": "进阶至专家"
       }
     ]
   },
@@ -4735,6 +4735,59 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "skierLevel",
         "label": "适合水平",
         "value": "入门至进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d24d-3a66-7284-abbf-cf425b16e010",
+    "slug": "head-shape-e-v5-2026",
+    "title": "HEAD Shape e-V5 2025/26",
+    "model": "Shape e-V5",
+    "year": 2026,
+    "oneLiner": "HEAD Shape 雪道系列型号，采用 74 mm 板腰与前摇设计，定位于雪道巡航与 carving。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "head",
+      "name": "HEAD",
+      "nameCn": "海德"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "149 / 156 / 163 / 170 / 177 cm",
+      "waistWidth": 74,
+      "turnRadius": 13,
+      "turnRadiusReferenceLength": "170 cm",
+      "terrain": "雪道 / carving",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "PR 11 GW 系统固定器套装"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "74mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "13m"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / carving"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至进阶"
       }
     ]
   },
@@ -5134,51 +5187,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e439-7f87-81c9-1fcef91c804a",
-    "slug": "nordica-unleashed-98-2027",
-    "title": "Nordica Unleashed 98 2026/27",
-    "model": "Unleashed 98",
-    "year": 2027,
-    "oneLiner": "Unleashed 自由滑全山地系列，Nordica 新季产品目录列有 98 与 98 CA 两种结构款。",
-    "priceMin": null,
-    "priceMax": null,
-    "priceCurrency": "CNY",
-    "coverUrl": null,
-    "ratingOverall": null,
-    "ratingCount": 0,
-    "favoriteCount": 0,
-    "composite": null,
-    "brand": {
-      "slug": "nordica",
-      "name": "Nordica",
-      "nameCn": "诺帝卡"
-    },
-    "categorySlug": "skis",
-    "specs": {
-      "waistWidth": 98,
-      "terrain": "全山地 / 自由滑",
-      "skierLevel": "中级至进阶",
-      "bindingSetup": "裸板，固定器另配"
-    },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "98mm"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 / 自由滑"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至进阶"
-      }
-    ]
-  },
-  {
     "id": "01a0d22f-e446-7c8a-add7-1c87a5b4ece1",
     "slug": "rossignol-experience-76-2026",
     "title": "Rossignol Experience 76 Xpress 2025/26",
@@ -5232,6 +5240,59 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0d24d-2fcd-770a-be1c-687fa656ee5c",
+    "slug": "rossignol-forza-40-ca-xpress-2027",
+    "title": "Rossignol Forza 40° CA Xpress 2026/27",
+    "model": "Forza 40° CA Xpress",
+    "year": 2027,
+    "oneLiner": "面向中级滑手的雪道 carving 型号，强调易上手的操控与刻滑体验。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rossignol",
+      "name": "Rossignol",
+      "nameCn": "金鸡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "150 / 157 / 164 / 171 / 179 cm",
+      "waistWidth": 75,
+      "turnRadius": 11,
+      "turnRadiusReferenceLength": "157 cm",
+      "terrain": "雪道 / carving",
+      "skierLevel": "中级",
+      "bindingSetup": "裸板，可选 XPRESS 11 GW 固定器"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "75mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "11m"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / carving"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级"
+      }
+    ]
+  },
+  {
     "id": "01a0d22f-e452-784e-b3eb-b1ba9c16ff07",
     "slug": "rossignol-forza-50-cam-2026",
     "title": "Rossignol Forza 50° CAM KONECT 2025/26",
@@ -5281,46 +5342,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "skierLevel",
         "label": "适合水平",
         "value": "中级"
-      }
-    ]
-  },
-  {
-    "id": "01a0d22f-e45d-7844-aa39-c671dd1148ce",
-    "slug": "rossignol-forza-60-ti-2027",
-    "title": "Rossignol Forza 60° TI KONECT 2026/27",
-    "model": "Forza 60° TI KONECT",
-    "year": 2027,
-    "oneLiner": "Forza 雪道 carving 系列高阶款，官网 2026/27 商品目录在售。",
-    "priceMin": null,
-    "priceMax": null,
-    "priceCurrency": "CNY",
-    "coverUrl": null,
-    "ratingOverall": null,
-    "ratingCount": 0,
-    "favoriteCount": 0,
-    "composite": null,
-    "brand": {
-      "slug": "rossignol",
-      "name": "Rossignol",
-      "nameCn": "金鸡"
-    },
-    "categorySlug": "skis",
-    "specs": {
-      "lengthOptions": "156 / 164 / 171 / 179 cm",
-      "terrain": "雪道 / carving",
-      "skierLevel": "进阶",
-      "bindingSetup": "KONECT 系统板，可按商品页选择固定器"
-    },
-    "highlights": [
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / carving"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
       }
     ]
   },

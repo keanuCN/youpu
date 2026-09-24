@@ -16,4 +16,4 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/products/bent-100-aa7366-202600
-status: published
+status: draft
