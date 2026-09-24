@@ -35,8 +35,8 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "https://xiaopang.club",
-  "generatedAt": "2026-09-23T09:36:20.474Z",
-  "total": 121,
+  "generatedAt": "2026-09-24T04:19:56.474Z",
+  "total": 175,
   "pageSize": 48,
   "categorySlugs": [
     "action-cam",
@@ -55,6 +55,7 @@ export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
     "mtb",
     "road-bike",
     "snowboard",
+    "snowboard-binding",
     "sports-watch",
     "tripod",
     "video-camera",
@@ -2834,6 +2835,55 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0d117-9ffc-7bd2-abb6-06bffa37cff6",
+    "slug": "rog-azoth-extreme-edition-20-2026",
+    "title": "ROG 夜魔 EXTREME 20周年版 75% 三模客制化机械键盘",
+    "model": "ROG 夜魔 EXTREME 20周年版",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": 3599,
+    "priceMax": 3599,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rog",
+      "name": "ROG",
+      "nameCn": "玩家国度"
+    },
+    "categorySlug": "esports-keyboard",
+    "specs": {
+      "keyboardType": "mechanical",
+      "mounting": "可调式 Gasket",
+      "caseMaterial": "铝合金底壳 + 金属边框",
+      "layout": "75%",
+      "connection": [
+        "wired",
+        "2.4g",
+        "bluetooth"
+      ],
+      "backlight": "RGB 每键背光",
+      "driver": "Armoury Crate / 奥创极速网页版",
+      "hotSwap": true,
+      "customScreen": true
+    },
+    "highlights": [
+      {
+        "key": "keyboardType",
+        "label": "键盘类型",
+        "value": "机械轴"
+      },
+      {
+        "key": "connection",
+        "label": "连接方式",
+        "value": "有线 · 2.4G 无线 · 蓝牙"
+      }
+    ]
+  },
+  {
     "id": "01a0cd48-f919-7d8b-8c43-d2d23cbfce8a",
     "slug": "vgn-neon-68-super-competitive-plus-2026",
     "title": "VGN Neon 68 Extreme Magnetic Switch Keyboard",
@@ -4492,6 +4542,130 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0d148-959a-705b-a45f-fe27eba628b8",
+    "slug": "bc-stream-r2-2026",
+    "title": "BC Stream R-2 2026",
+    "model": "R2",
+    "year": 2026,
+    "oneLiner": "25/26 款锤头刻滑板，采用方向性双向板型与可变拱形；该型号未见于当前 26/27 目录。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "bc-stream",
+      "name": "BC Stream",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Variable Camber",
+      "profileFamily": "hybrid",
+      "shape": "Directional Twin / Hammerhead",
+      "scenes": [
+        "carving",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑 · 全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-2d21-7d3a-9f43-ffe9fad0b875",
+    "slug": "bc-stream-riders-spec-dr-2027",
+    "title": "BC Stream Riders' Spec DR 2027",
+    "model": "Riders' Spec DR",
+    "year": 2027,
+    "oneLiner": "宽板头与方向性轮廓兼顾压雪道和粉雪；商品资料标注 50 mm setback，不同鼻尾形状版本的滑行表现有别。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "bc-stream",
+      "name": "BC Stream",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "stanceSetback": 50,
+      "profile": "Nose Rocker / Variable Camber",
+      "profileFamily": "hybrid",
+      "shape": "Directional",
+      "scenes": [
+        "all-mountain",
+        "powder",
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 野雪浮雪 · 刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-310a-7c01-8891-8a916fc80942",
+    "slug": "bc-stream-rx-2027",
+    "title": "BC Stream RX 2027",
+    "model": "RX",
+    "year": 2027,
+    "oneLiner": "以深弯和刻滑控制为核心，26/27 款增加 Hard Flex 选项；具体几何数据须按尺码读取。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "bc-stream",
+      "name": "BC Stream",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "shape": "Directional",
+      "scenes": [
+        "carving",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑 · 全山地"
+      }
+    ]
+  },
+  {
     "id": "01a0a804-2b57-7d7a-85c9-baeea48afcc2",
     "slug": "burton-custom-camber-2026",
     "title": "Burton Custom Camber 2026",
@@ -4622,6 +4796,67 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "252mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-6a5b-7ead-bee2-c34185dd26ac",
+    "slug": "burton-talent-scout-2027",
+    "title": "Women's Burton Talent Scout Camber Snowboard 2027",
+    "model": "Talent Scout",
+    "year": 2027,
+    "oneLiner": "Burton 女款公园双向板，Camber 结构强调跳台弹性和道具控制，并采用针对女性滑手调校的软硬设定。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 146,
+      "effectiveEdge": 1095,
+      "sidecut": 7.04,
+      "waistWidth": 240,
+      "stanceSetback": 0,
+      "profile": "Camber",
+      "profileFamily": "camber",
+      "shape": "True Twin",
+      "core": "FSC Super Fly II 700G Core",
+      "fiberglass": "Women's Specific Triax",
+      "base": "Sintered",
+      "scenes": [
+        "freestyle",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "146cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1095mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.04m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "240mm"
       }
     ]
   },
@@ -5751,6 +5986,119 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0d149-58a4-763c-9899-6b12afb1001a",
+    "slug": "decathlon-all-road-900-2026",
+    "title": "DREAMSCAPE All Road 900 2026",
+    "model": "All Road 900",
+    "year": 2026,
+    "oneLiner": "迪卡侬成人全山地与自由滑取向型号，官方描述覆盖雪道与雪道外滑行；当地页面所列价格不作为人民币价格录入。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "decathlon",
+      "name": "Decathlon",
+      "nameCn": "迪卡侬"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 野雪浮雪"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-5bf5-7230-a453-67dcaca4d658",
+    "slug": "decathlon-park-ride-500-2026",
+    "title": "DREAMSCAPE Park & Ride 500 2026",
+    "model": "Park & Ride 500",
+    "year": 2026,
+    "oneLiner": "迪卡侬全山地与自由式型号，官方页面列出标准正拱、加宽及粉雪站位等设计信息。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "decathlon",
+      "name": "Decathlon",
+      "nameCn": "迪卡侬"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Standard Camber with Rocker / Powder Stance",
+      "profileFamily": "hybrid",
+      "scenes": [
+        "all-mountain",
+        "freestyle",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 · 野雪浮雪"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-5599-7c14-b2e6-0b88a2c1bfb8",
+    "slug": "decathlon-snb-100-2026",
+    "title": "DREAMSCAPE SNB 100 2026",
+    "model": "SNB 100",
+    "year": 2026,
+    "oneLiner": "DREAMSCAPE 入门全山地雪板系列，按男女款分别展示；本记录不把不同款式和尺码的参数合并。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "decathlon",
+      "name": "Decathlon",
+      "nameCn": "迪卡侬"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "scenes": [
+        "beginner",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "新手入门 · 全山地"
+      }
+    ]
+  },
+  {
     "id": "01a0a804-2bb3-7ee7-895e-588073f0c0e8",
     "slug": "gnu-rider-s-choice-2025",
     "title": "GNU Rider's Choice 2025",
@@ -5814,6 +6162,193 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "255mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-3e08-7c7d-b856-caad70bd6085",
+    "slug": "gray-despe-wood-2027",
+    "title": "GRAY DESPE WOOD 2027",
+    "model": "DESPE WOOD",
+    "year": 2027,
+    "oneLiner": "木芯与玻纤结构的刻滑入门取向型号，26/27 全长度更新为 Active Camber，并提供部分加宽尺寸。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Active Camber",
+      "profileFamily": "camber",
+      "shape": "Directional",
+      "core": "Poplar / Paulownia Composite Wood Core",
+      "fiberglass": "Full Fiberglass",
+      "scenes": [
+        "carving",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑 · 全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-36de-79b6-8e05-7b0c749b859a",
+    "slug": "gray-desperado-2024",
+    "title": "GRAY DESPERADO 2024",
+    "model": "DESPERADO",
+    "year": 2024,
+    "oneLiner": "GRAY 的软鞋刻滑方向基础型号，采用全玻纤结构；与 Ti、Type-R 等版本分开建档。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "shape": "Directional",
+      "fiberglass": "Full Fiberglass",
+      "scenes": [
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-3a83-7850-a91e-798ce7a5a4bc",
+    "slug": "gray-desperado-ti-type-r-2027",
+    "title": "GRAY DESPERADO Ti Type-R 2027",
+    "model": "DESPERADO Ti Type-R",
+    "year": 2027,
+    "oneLiner": "面向高水平刻滑的金属强化型号，以锤头轮廓、复合侧切和较强边刃支撑为主要特点。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Vario Camber",
+      "profileFamily": "hybrid",
+      "shape": "Directional Hammerhead",
+      "core": "Wood Core",
+      "scenes": [
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-7d48-7e81-8bee-78680ac52f0a",
+    "slug": "jones-dream-weaver-2-0-2027",
+    "title": "Women's Dream Weaver 2.0 Snowboard 2027 | Jones",
+    "model": "Dream Weaver 2.0",
+    "year": 2027,
+    "oneLiner": "偏野雪浮力的女款全山地日常板，形状兼顾雪道巡航、粉雪和多变地形。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 148,
+      "effectiveEdge": 1120,
+      "waistWidth": 241,
+      "profile": "CamRock",
+      "profileFamily": "hybrid",
+      "shape": "Directional",
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "148cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1120mm"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "241mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
       }
     ]
   },
@@ -6520,6 +7055,215 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0d149-79f7-7d6d-a2cb-98d589661a7e",
+    "slug": "jones-twin-sister-2027",
+    "title": "Women's Twin Sister Snowboard 2027 | Jones",
+    "model": "Twin Sister",
+    "year": 2027,
+    "oneLiner": "Jones 女款全山地畅销双向板，CamRock 和中等硬度兼顾刻滑、自由式与新雪中的浮力。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 149,
+      "waistWidth": 244,
+      "stanceSetback": 20,
+      "profile": "CamRock",
+      "profileFamily": "hybrid",
+      "shape": "Directional Twin",
+      "core": "Master Core",
+      "fiberglass": "Biax Fiberglass",
+      "scenes": [
+        "all-mountain",
+        "freestyle",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "149cm"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "244mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 · 野雪浮雪"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-7604-7d2f-ab1e-f8cb504d0a78",
+    "slug": "k2-alchemist-2027",
+    "title": "K2 Alchemist 2027",
+    "model": "Alchemist",
+    "year": 2027,
+    "oneLiner": "K2 Landscape 系列旗舰定向野雪板，面向专家滑手，以高速稳定、精准控刃和大山地形为主要方向。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "k2",
+      "name": "K2",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Directional Camber",
+      "profileFamily": "camber",
+      "shape": "Directional",
+      "scenes": [
+        "all-mountain",
+        "powder",
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 野雪浮雪 · 刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-71ff-764d-94c6-aca436e0a72f",
+    "slug": "k2-excavator-2027",
+    "title": "K2 Excavator 2027",
+    "model": "Excavator",
+    "year": 2027,
+    "oneLiner": "宽腰短板思路的全山地型号，主打压雪道深弯与新雪浮力，官方建议按常规雪板尺寸适当缩短选择。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "k2",
+      "name": "K2",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Directional Camber",
+      "profileFamily": "camber",
+      "shape": "Tapered Directional / Volume Shift",
+      "core": "S1 Core",
+      "base": "Wax-Infused Sintered 4001",
+      "scenes": [
+        "carving",
+        "powder",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑 · 野雪浮雪 · 全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-6d77-7fe5-8521-abd56a8025b4",
+    "slug": "k2-passport-2027",
+    "title": "K2 Passport 2027",
+    "model": "Passport",
+    "year": 2027,
+    "oneLiner": "定向全山自由滑板，兼顾压雪道、粉雪和大山地形；中高级滑手可按脚长在标准与宽版之间选择。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "k2",
+      "name": "K2",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1180,
+      "waistWidth": 255,
+      "stanceSetback": 19,
+      "profile": "Directional Combination Camber",
+      "profileFamily": "hybrid",
+      "shape": "Tapered Directional",
+      "core": "A1 Core",
+      "base": "Sintered 4000",
+      "scenes": [
+        "all-mountain",
+        "powder",
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1180mm"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "255mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      }
+    ]
+  },
+  {
     "id": "01a0a804-2c0b-714f-9219-ea5f9d92d6ee",
     "slug": "korua-shapes-cafe-racer-2026",
     "title": "Korua Shapes Cafe Racer 2026",
@@ -6721,6 +7465,119 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0d149-6548-7c35-955e-8a005f1e4ada",
+    "slug": "nitro-alternator-2027",
+    "title": "Nitro Alternator 2027",
+    "model": "Alternator",
+    "year": 2027,
+    "oneLiner": "定向全山自由式板，传统正拱与中宽腰设计面向山地跳跃、刻滑和变化雪况。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "waistWidth": 254,
+      "stanceSetback": 15,
+      "profile": "Trüe Camber",
+      "profileFamily": "camber",
+      "shape": "Directional",
+      "core": "Powerlite Core",
+      "fiberglass": "Bi-Lite Laminates",
+      "base": "Sintered Speed Formula II",
+      "flex": 8,
+      "scenes": [
+        "all-mountain",
+        "freestyle",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "254mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "8/10"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-5fc3-76c9-80bc-23fc03fc6554",
+    "slug": "nitro-beast-2026",
+    "title": "Nitro Beast 2026",
+    "model": "Beast",
+    "year": 2026,
+    "oneLiner": "26 款高响应公园自由式板，True Camber 与 Twin 板型强调弹性、控刃和耐用性。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Trüe Camber",
+      "profileFamily": "camber",
+      "shape": "True Twin",
+      "core": "Powercore II",
+      "fiberglass": "Tri-Lite Laminates",
+      "base": "Sintered Speed Formula II",
+      "flex": 9,
+      "scenes": [
+        "freestyle",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "9/10"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "自由式 · 全山地"
+      }
+    ]
+  },
+  {
     "id": "01a0a804-2c45-7613-9918-0b143a5890ce",
     "slug": "nitro-team-2026",
     "title": "Nitro Team 2026",
@@ -6784,6 +7641,168 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "253mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-4433-792a-8d2d-b7574cb6bdb9",
+    "slug": "ogasaka-ct-2026",
+    "title": "OGASAKA CT 2026",
+    "model": "CT",
+    "year": 2026,
+    "oneLiner": "面向从初级到高水平滑手的全能刻滑板，方向性板型与较均衡的软硬设定兼顾刻滑和日常滑行。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "ogasaka",
+      "name": "OGASAKA",
+      "nameCn": "小贺坂"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 156,
+      "profile": "Camber",
+      "profileFamily": "camber",
+      "shape": "Directional",
+      "core": "NV Core",
+      "fiberglass": "Glass Fiber Carbon Composite",
+      "base": "Sintered Graphite",
+      "scenes": [
+        "carving",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "156cm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑 · 全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-412a-7332-ba5f-19fc0bb56d2f",
+    "slug": "ogasaka-fc-2026",
+    "title": "OGASAKA FC 2026",
+    "model": "FC",
+    "year": 2026,
+    "oneLiner": "半锤头轮廓的自由式刻滑板，长有效边刃强调抓雪和弯中稳定；尺码数据按官方 25/26 规格表记录。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "ogasaka",
+      "name": "OGASAKA",
+      "nameCn": "小贺坂"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1280,
+      "waistWidth": 249,
+      "stanceSetback": 28,
+      "profile": "Camber",
+      "profileFamily": "camber",
+      "shape": "Directional Semi-Hammerhead",
+      "core": "OGK2 Core",
+      "base": "Sintered Graphite",
+      "scenes": [
+        "carving",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1280mm"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "249mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-47b1-7c7c-9796-72a61000c4c2",
+    "slug": "ogasaka-shin-2026",
+    "title": "OGASAKA SHIN 2026",
+    "model": "SHIN",
+    "year": 2026,
+    "oneLiner": "面向粉雪和全山地的系列雪板，官方将其定位为适应多种雪况的中高级型号；不同长度的尺寸与结构不可混用。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "ogasaka",
+      "name": "OGASAKA",
+      "nameCn": "小贺坂"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 160,
+      "waistWidth": 260,
+      "stanceSetback": 20,
+      "shape": "Directional",
+      "core": "OGK2 Core",
+      "base": "Sintered Graphite",
+      "scenes": [
+        "powder",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "160cm"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "260mm"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "野雪浮雪 · 全山地"
       }
     ]
   },
@@ -6855,6 +7874,179 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0d149-51de-7454-ab33-37a80c6f1a61",
+    "slug": "salomon-assassin-2026",
+    "title": "Salomon Assassin 2026",
+    "model": "Assassin",
+    "year": 2026,
+    "oneLiner": "面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；官网当前页未标明板季。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "sidecut": 7.1,
+      "waistWidth": 248,
+      "profile": "Rock Out Camber",
+      "profileFamily": "hybrid",
+      "shape": "Directional Twin",
+      "core": "Popster",
+      "fiberglass": "BIAX HD",
+      "base": "Sintered EG",
+      "scenes": [
+        "all-mountain",
+        "freestyle",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.1m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "248mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 · 野雪浮雪"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-4e97-7482-bed3-233b96946239",
+    "slug": "salomon-assassin-pro-2027",
+    "title": "Salomon Assassin Pro 2027",
+    "model": "Assassin Pro",
+    "year": 2027,
+    "oneLiner": "全山与自由式兼顾的进阶型号，Rock Out Camber、Ghost Carbon Beams 与 Gunslinger Sidewalls 面向高响应滑行。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "sidecut": 7.3,
+      "waistWidth": 248,
+      "profile": "Rock Out Camber",
+      "profileFamily": "hybrid",
+      "shape": "Directional Twin",
+      "core": "Ghost Green Core / Popster Core",
+      "scenes": [
+        "all-mountain",
+        "freestyle",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.3m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "248mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 · 野雪浮雪"
+      }
+    ]
+  },
+  {
+    "id": "01a0d149-4b30-7fde-b329-a10b506c93b3",
+    "slug": "salomon-huck-knife-2027",
+    "title": "Salomon Huck Knife 2027",
+    "model": "Huck Knife",
+    "year": 2027,
+    "oneLiner": "以跳台、道具和公园自由式为主的真双向板，Quad Camber 取向强调弹性、响应和落地稳定。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 156,
+      "sidecut": 7.1,
+      "waistWidth": 248,
+      "profile": "Quad Camber",
+      "profileFamily": "camber",
+      "shape": "True Twin",
+      "core": "Popster",
+      "base": "Sintered",
+      "scenes": [
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "156cm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.1m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "248mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      }
+    ]
+  },
+  {
     "id": "01a0a804-2c66-7a84-8a68-a17b879beccb",
     "slug": "salomon-sight-2026",
     "title": "Salomon Sight 2026",
@@ -6918,6 +8110,1020 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "254mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cd26-7b34-9dc1-569100b9cab6",
+    "slug": "burton-cartel-re-flex-2027",
+    "title": "Burton Cartel Re:Flex 2027",
+    "model": "Cartel Re:Flex",
+    "year": 2027,
+    "oneLiner": "Cartel 系列通用安装版本，官方定位为兼顾响应与多场景的全能固定器。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cd59-7f2a-ade6-80f0ce04387b",
+    "slug": "burton-cartel-x-re-flex-2027",
+    "title": "Burton Cartel X Re:Flex 2027",
+    "model": "Cartel X Re:Flex",
+    "year": 2027,
+    "oneLiner": "Cartel X 通用安装版本，面向需要更强支撑和控制的全山地滑行。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cd6b-7eb7-8389-8d95d4fd3f72",
+    "slug": "burton-freestyle-re-flex-2027",
+    "title": "Burton Freestyle Re:Flex 2027",
+    "model": "Freestyle Re:Flex",
+    "year": 2027,
+    "oneLiner": "偏柔和脚感的传统绑带款，适合自由式与日常全山地使用。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cd78-75f7-a6f8-4abf7eb8b688",
+    "slug": "burton-genesis-re-flex-2027",
+    "title": "Burton Genesis Re:Flex 2027",
+    "model": "Genesis Re:Flex",
+    "year": 2027,
+    "oneLiner": "采用 Genesis 缓震结构的绑带款，主打舒适脚感与全山地性能。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cd86-79f8-944e-e357366379bc",
+    "slug": "burton-lexa-x-est-2027",
+    "title": "Burton Lexa X EST 2027",
+    "model": "Lexa X EST",
+    "year": 2027,
+    "oneLiner": "Burton 女款 Lexa X EST 固定器，EST 结构对应 The Channel 安装系统。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "EST 版本仅用于 Burton The Channel 雪板；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cd91-7d2c-b73c-34cc569d209c",
+    "slug": "burton-mission-re-flex-2027",
+    "title": "Burton Mission Re:Flex 2027",
+    "model": "Mission Re:Flex",
+    "year": 2027,
+    "oneLiner": "Burton 入门进阶全山地绑带款，官方强调缓震与通用安装兼容。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cd9c-7c42-ab81-d88c9e19abcd",
+    "slug": "burton-step-on-genesis-re-flex-2027",
+    "title": "Burton Step On Genesis Re:Flex 2027",
+    "model": "Step On Genesis Re:Flex",
+    "year": 2027,
+    "oneLiner": "结合 Step On 快穿与 Genesis 缓震结构；Re:Flex 安装兼容多种雪板系统。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "step-in",
+      "bootCompatibility": "仅兼容 Burton Step On 雪鞋；Re:Flex 多板型安装"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "踩入式"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cda8-728b-b82d-df8823fc368e",
+    "slug": "burton-step-on-re-flex-2027",
+    "title": "Burton Step On Re:Flex 2027",
+    "model": "Step On Re:Flex",
+    "year": 2027,
+    "oneLiner": "Step On 快穿系统的 Re:Flex 版本，须与 Step On 雪鞋配套使用。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "step-in",
+      "bootCompatibility": "仅兼容 Burton Step On 雪鞋；Re:Flex 多板型安装"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "踩入式"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cdb4-7b9c-a7ea-7957096ae6e9",
+    "slug": "decathlon-snb-500-binding-2026",
+    "title": "Decathlon SNB 500 2026",
+    "model": "SNB 500",
+    "year": 2026,
+    "oneLiner": "国内京东可见 200+ 条评论的入门全山地款；官方列出 EVA 缓震和传统扣带。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "decathlon",
+      "name": "Decathlon",
+      "nameCn": "迪卡侬"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "兼容常规及 3D 插孔；不兼容 Burton Channel；普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cdc0-75bd-8984-e4b6b0c647bd",
+    "slug": "flux-cv-2027",
+    "title": "FLUX CV 2027",
+    "model": "CV",
+    "year": 2027,
+    "oneLiner": "26-27 刻滑与全山地取向型号，官方介绍其加高脚床及可调节结构。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "flux",
+      "name": "FLUX",
+      "nameCn": "Flux"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cdcd-78fa-b5c0-c01c889ea425",
+    "slug": "flux-ds-2027",
+    "title": "FLUX DS 2027",
+    "model": "DS",
+    "year": 2027,
+    "oneLiner": "FLUX 自由式全能款，26-27 官方页面介绍轻量底座与 Cloud Strap。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "flux",
+      "name": "FLUX",
+      "nameCn": "Flux"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cdd7-735a-b5f7-1ee5f9c820ad",
+    "slug": "flux-gs-2026",
+    "title": "FLUX GS 2026",
+    "model": "GS",
+    "year": 2026,
+    "oneLiner": "女款全能固定器，官方介绍其沿用 DS 特性并兼顾活动范围与舒适度。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "flux",
+      "name": "FLUX",
+      "nameCn": "Flux"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cdf6-78f5-88a2-a46fd8a67767",
+    "slug": "flux-xf-2026",
+    "title": "FLUX XF 2026",
+    "model": "XF",
+    "year": 2026,
+    "oneLiner": "25-26 XF 型号，官方覆盖公园、刻滑、粉雪与全山地取向。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "flux",
+      "name": "FLUX",
+      "nameCn": "Flux"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cdff-7b39-9f2f-bf3e24ae584e",
+    "slug": "flux-xv-2026",
+    "title": "FLUX XV 2026",
+    "model": "XV",
+    "year": 2026,
+    "oneLiner": "FLUX 高阶硬质型号，官方介绍其碳纤维高背与轻量化响应结构。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "flux",
+      "name": "FLUX",
+      "nameCn": "Flux"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce0b-70fa-ab1f-bac6788aa429",
+    "slug": "jones-mercury-binding-2026",
+    "title": "Jones Mercury 2026",
+    "model": "Mercury",
+    "year": 2026,
+    "oneLiner": "全地形 freeride 取向固定器，采用 SkateTech 力量传递结构。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flex": 7,
+      "bootCompatibility": "通用圆盘适配 4x4、2x4 与 Channel；普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "7"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce15-79e6-9ac9-bcbc36c8708c",
+    "slug": "jones-mercury-fase-binding-2026",
+    "title": "Jones Mercury FASE 2026",
+    "model": "Mercury FASE",
+    "year": 2026,
+    "oneLiner": "Mercury 加入 FASE 快速绑带系统，支持单手穿入并可回退传统绑带操作。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "fast-entry",
+      "bootCompatibility": "FASE 官方称兼容各品牌普通雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "快速穿脱"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce1e-746f-b8ae-a512e0d7edbc",
+    "slug": "jones-orion-binding-2026",
+    "title": "Jones Orion 2026",
+    "model": "Orion",
+    "year": 2026,
+    "oneLiner": "Jones 2026 全山地固定器，官方页面列出多场景取向与常规双绑带结构。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "Jones 通用圆盘；普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce29-7f0d-a364-d9771ae03879",
+    "slug": "nidecker-kaon-plus-2026",
+    "title": "Nidecker Kaon Plus 2026",
+    "model": "Kaon Plus",
+    "year": 2026,
+    "oneLiner": "中硬度双绑带全能款，配备 Multi-Disk 与无工具绑带调节。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nidecker",
+      "name": "Nidecker",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "Multi-Disk 兼容常见 4 孔与 Channel；普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce33-7328-b8af-3d87718dcf67",
+    "slug": "nidecker-lt-supermatic-2026",
+    "title": "Nidecker LT Supermatic 2026",
+    "model": "LT Supermatic",
+    "year": 2026,
+    "oneLiner": "Supermatic 轻量快速穿脱系列，侧重支撑、响应与快速进出。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nidecker",
+      "name": "Nidecker",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "rear-entry",
+      "bootCompatibility": "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "后入式快穿"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce3f-721c-9f76-efdbb245281f",
+    "slug": "nidecker-og-supermatic-2026",
+    "title": "Nidecker OG Supermatic 2026",
+    "model": "OG Supermatic",
+    "year": 2026,
+    "oneLiner": "后入式快速穿脱固定器，可在需要时按传统绑带方式使用。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nidecker",
+      "name": "Nidecker",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "rear-entry",
+      "bootCompatibility": "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "后入式快穿"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce4b-71bf-9c88-5e4533ed1c07",
+    "slug": "nitro-phantom-plus-binding-2027",
+    "title": "Nitro Phantom+ 2027",
+    "model": "Phantom+",
+    "year": 2027,
+    "oneLiner": "Nitro Phantom+ 高阶 freeride 固定器，列入 26-27 官方目录。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce57-73cf-a90c-59f75e342ecd",
+    "slug": "nitro-team-binding-2027",
+    "title": "Nitro Team 2027",
+    "model": "Team",
+    "year": 2027,
+    "oneLiner": "Nitro 经典全能绑带系列，26-27 官方目录列出多种颜色版本。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce61-7259-b23e-50f2d6dc6df5",
+    "slug": "nitro-team-pro-binding-2027",
+    "title": "Nitro Team Pro 2027",
+    "model": "Team Pro",
+    "year": 2027,
+    "oneLiner": "Team 系列高阶版本，官方以 Pro-caliber performance 定位。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce6b-79a5-90d3-ceba1bf92897",
+    "slug": "union-atlas-2027",
+    "title": "Union Binding Company Atlas 2027",
+    "model": "Atlas",
+    "year": 2027,
+    "oneLiner": "面向中高级滑手的中硬度全山地款，官方列出 8/10 硬度。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "union",
+      "name": "Union Binding Company",
+      "nameCn": "Union"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flex": 8,
+      "bootCompatibility": "适配常见 4x4、4x2 与 Channel 安装；普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "8"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce7a-7505-a741-42c3d15cf78a",
+    "slug": "union-atlas-pro-2027",
+    "title": "Union Binding Company Atlas Pro 2027",
+    "model": "Atlas Pro",
+    "year": 2027,
+    "oneLiner": "采用锻造碳纤维等高响应结构，定位高阶全山地与强支撑滑行。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "union",
+      "name": "Union Binding Company",
+      "nameCn": "Union"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "官方列出 4x4、4x2 与 Channel 安装；普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce83-765f-8c76-9ec51b0524fd",
+    "slug": "union-force-2027",
+    "title": "Union Binding Company Force 2027",
+    "model": "Force",
+    "year": 2027,
+    "oneLiner": "Union 全山地工作马型固定器，官方列出 7/10 硬度与全地形定位。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "union",
+      "name": "Union Binding Company",
+      "nameCn": "Union"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flex": 7,
+      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "7"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce8d-76d5-bcbf-e4e6af517ae8",
+    "slug": "union-force-classic-2027",
+    "title": "Union Binding Company Force Classic 2027",
+    "model": "Force Classic",
+    "year": 2027,
+    "oneLiner": "Force 经典款全地形绑带固定器，官方页面列出 6/10 硬度。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "union",
+      "name": "Union Binding Company",
+      "nameCn": "Union"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flex": 6,
+      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "6"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-ce96-75b3-b41b-f3751624d68b",
+    "slug": "union-legacy-2027",
+    "title": "Union Binding Company Legacy 2027",
+    "model": "Legacy",
+    "year": 2027,
+    "oneLiner": "偏柔软脚感的女款公园与自由式固定器，官方强调减震与板面自然弯曲。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "union",
+      "name": "Union Binding Company",
+      "nameCn": "Union"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "Union Mini Disk；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cea0-7a4b-ac61-0c8030b4bd43",
+    "slug": "union-trilogy-2027",
+    "title": "Union Binding Company Trilogy 2027",
+    "model": "Trilogy",
+    "year": 2027,
+    "oneLiner": "Union 女款全山地固定器，官方定位覆盖雪道、粉雪与公园场景。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "union",
+      "name": "Union Binding Company",
+      "nameCn": "Union"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d171-cea9-7a46-9fa5-d612638ee6b3",
+    "slug": "union-ultra-2027",
+    "title": "Union Binding Company Ultra 2027",
+    "model": "Ultra",
+    "year": 2027,
+    "oneLiner": "以缓震和板感为重点的女款自由式固定器，官方介绍其悬挂式缓震结构。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "union",
+      "name": "Union Binding Company",
+      "nameCn": "Union"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
       }
     ]
   },

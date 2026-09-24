@@ -18,6 +18,7 @@ export const CATEGORY_TREE: CategoryNode[] = [
         status: "coming_soon",
         children: [
           { slug: "snowboard", name: "单板", nameEn: "Snowboard", path: ["运动", "滑雪"], status: "live" },
+          { slug: "snowboard-binding", name: "单板固定器", nameEn: "Snowboard Bindings", path: ["运动", "滑雪"], status: "live" },
           { slug: "skis", name: "双板", nameEn: "Skis", path: ["运动", "滑雪"], status: "coming_soon" },
           { slug: "skiing-apparel", name: "雪服", nameEn: "Ski Apparel", path: ["运动", "滑雪"], status: "coming_soon" },
         ],
@@ -646,6 +647,70 @@ export const SNOWBOARD: Category = {
   },
 };
 
+const SNOWBOARD_BINDING: Category = {
+  slug: "snowboard-binding",
+  name: "单板固定器",
+  nameEn: "Snowboard Bindings",
+  path: ["运动", "滑雪"],
+  status: "live",
+  issue: "官方规格档案 / Snowboard Bindings",
+  specTemplate: [
+    {
+      group: "结构与穿脱",
+      fields: [
+        { key: "entrySystem", label: "穿脱系统", type: "text", direction: null },
+        { key: "flex", label: "硬度", unit: "/10", type: "number", direction: null },
+      ],
+    },
+    {
+      group: "兼容性",
+      fields: [
+        { key: "mountingSystem", label: "安装系统", type: "text", direction: null },
+        { key: "bootCompatibility", label: "雪鞋兼容", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "适用场景",
+      fields: [{ key: "terrain", label: "适用场景", type: "text", direction: null }],
+    },
+  ],
+  filterTemplate: [
+    {
+      key: "brands",
+      label: "品牌",
+      control: "multi",
+      options: [
+        { value: "Decathlon", label: "Decathlon" },
+        { value: "Burton", label: "Burton" },
+        { value: "Union Binding Company", label: "Union" },
+        { value: "FLUX", label: "FLUX" },
+        { value: "Nidecker", label: "Nidecker" },
+        { value: "Jones", label: "Jones" },
+        { value: "Nitro", label: "Nitro" },
+      ],
+    },
+    {
+      key: "years",
+      label: "年份",
+      control: "multi",
+      options: [
+        { value: "2027", label: "2027" },
+        { value: "2026", label: "2026" },
+      ],
+    },
+  ],
+  scoreDims: [
+    { key: "response", label: "支撑与响应", weight: 0.25 },
+    { key: "comfort", label: "舒适与减震", weight: 0.2 },
+    { key: "versatility", label: "场景适应", weight: 0.2 },
+    { key: "convenience", label: "穿脱便利", weight: 0.2 },
+    { key: "value", label: "性价比", weight: 0.15 },
+  ],
+  rankCategories: [{ key: "overall", label: "综合榜" }],
+  quizTemplate: [],
+  hardcoreWeights: {},
+};
+
 const BADMINTON_RACKET: Category = {
   slug: "badminton-racket",
   name: "羽毛球拍",
@@ -1216,6 +1281,7 @@ const MTB: Category = {
 
 const FLAT: Record<string, Category> = {
   snowboard: SNOWBOARD,
+  "snowboard-binding": SNOWBOARD_BINDING,
   "badminton-racket": BADMINTON_RACKET,
   "casting-rod": CASTING_ROD,
   "action-cam": ACTION_CAM,

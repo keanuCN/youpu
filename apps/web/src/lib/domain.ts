@@ -531,6 +531,10 @@ export function formatSpecValue(value: unknown): string {
   if (typeof value !== "string") return String(value);
   const text = value.trim();
   const knownLabels: Record<string, string> = {
+    strap: "传统绑带",
+    "rear-entry": "后入式快穿",
+    "step-in": "踩入式",
+    "fast-entry": "快速穿脱",
     wired: "有线",
     "2.4g": "2.4G 无线",
     bluetooth: "蓝牙",
