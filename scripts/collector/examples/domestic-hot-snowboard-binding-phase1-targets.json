@@ -1,0 +1,362 @@
+[
+  {
+    "slug": "decathlon-snb-500-binding-2026",
+    "category": "snowboard-binding",
+    "brand": "decathlon",
+    "model": "SNB 500",
+    "year": 2026,
+    "url": "https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654",
+    "mode": "cheerio",
+    "identityAliases": [
+      "SNB 500"
+    ]
+  },
+  {
+    "slug": "burton-mission-re-flex-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Mission Re:Flex",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-mission-re-flex-snowboard-bindings-105461",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Mission Re:Flex"
+    ]
+  },
+  {
+    "slug": "burton-freestyle-re-flex-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Freestyle Re:Flex",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/collections/strap-snowboard-bindings",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Freestyle Re:Flex"
+    ]
+  },
+  {
+    "slug": "union-force-2027",
+    "category": "snowboard-binding",
+    "brand": "union",
+    "model": "Force",
+    "year": 2027,
+    "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Force"
+    ]
+  },
+  {
+    "slug": "union-trilogy-2027",
+    "category": "snowboard-binding",
+    "brand": "union",
+    "model": "Trilogy",
+    "year": 2027,
+    "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Trilogy"
+    ]
+  },
+  {
+    "slug": "union-legacy-2027",
+    "category": "snowboard-binding",
+    "brand": "union",
+    "model": "Legacy",
+    "year": 2027,
+    "url": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Legacy"
+    ]
+  },
+  {
+    "slug": "flux-xf-2026",
+    "category": "snowboard-binding",
+    "brand": "flux",
+    "model": "XF",
+    "year": 2026,
+    "url": "https://flux-bindings.com/products/2526xf",
+    "mode": "cheerio",
+    "identityAliases": [
+      "XF"
+    ]
+  },
+  {
+    "slug": "flux-ds-2027",
+    "category": "snowboard-binding",
+    "brand": "flux",
+    "model": "DS",
+    "year": 2027,
+    "url": "https://flux-bindings.com/products/2627-ds",
+    "mode": "cheerio",
+    "identityAliases": [
+      "DS"
+    ]
+  },
+  {
+    "slug": "burton-step-on-re-flex-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Step On Re:Flex",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-step-on-re-flex-snowboard-bindings-172831",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Step On Re:Flex"
+    ]
+  },
+  {
+    "slug": "burton-cartel-re-flex-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Cartel Re:Flex",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-cartel-re-flex-snowboard-bindings-105391",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Cartel Re:Flex"
+    ]
+  },
+  {
+    "slug": "burton-cartel-x-re-flex-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Cartel X Re:Flex",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-cartel-x-re-flex-snowboard-bindings-222301",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Cartel X Re:Flex"
+    ]
+  },
+  {
+    "slug": "burton-genesis-re-flex-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Genesis Re:Flex",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-genesis-re-flex-snowboard-bindings-105471",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Genesis Re:Flex"
+    ]
+  },
+  {
+    "slug": "burton-step-on-genesis-re-flex-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Step On Genesis Re:Flex",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-step-on-genesis-re-flex-snowboard-bindings-229601",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Step On Genesis Re:Flex"
+    ]
+  },
+  {
+    "slug": "burton-lexa-x-est-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Lexa X EST",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Lexa X EST"
+    ]
+  },
+  {
+    "slug": "union-force-classic-2027",
+    "category": "snowboard-binding",
+    "brand": "union",
+    "model": "Force Classic",
+    "year": 2027,
+    "url": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Force Classic"
+    ]
+  },
+  {
+    "slug": "union-atlas-2027",
+    "category": "snowboard-binding",
+    "brand": "union",
+    "model": "Atlas",
+    "year": 2027,
+    "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Atlas"
+    ]
+  },
+  {
+    "slug": "union-atlas-pro-2027",
+    "category": "snowboard-binding",
+    "brand": "union",
+    "model": "Atlas Pro",
+    "year": 2027,
+    "url": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Atlas Pro"
+    ]
+  },
+  {
+    "slug": "union-ultra-2027",
+    "category": "snowboard-binding",
+    "brand": "union",
+    "model": "Ultra",
+    "year": 2027,
+    "url": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Ultra"
+    ]
+  },
+  {
+    "slug": "flux-cv-2027",
+    "category": "snowboard-binding",
+    "brand": "flux",
+    "model": "CV",
+    "year": 2027,
+    "url": "https://flux-bindings.com/products/2627-cv",
+    "mode": "cheerio",
+    "identityAliases": [
+      "CV"
+    ]
+  },
+  {
+    "slug": "flux-xv-2026",
+    "category": "snowboard-binding",
+    "brand": "flux",
+    "model": "XV",
+    "year": 2026,
+    "url": "https://flux-bindings.com/products/2526xv",
+    "mode": "cheerio",
+    "identityAliases": [
+      "XV"
+    ]
+  },
+  {
+    "slug": "flux-gs-2026",
+    "category": "snowboard-binding",
+    "brand": "flux",
+    "model": "GS",
+    "year": 2026,
+    "url": "https://flux-bindings.com/products/2526gs",
+    "mode": "cheerio",
+    "identityAliases": [
+      "GS"
+    ]
+  },
+  {
+    "slug": "nidecker-og-supermatic-2026",
+    "category": "snowboard-binding",
+    "brand": "nidecker",
+    "model": "OG Supermatic",
+    "year": 2026,
+    "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026",
+    "mode": "cheerio",
+    "identityAliases": [
+      "OG Supermatic"
+    ]
+  },
+  {
+    "slug": "nidecker-lt-supermatic-2026",
+    "category": "snowboard-binding",
+    "brand": "nidecker",
+    "model": "LT Supermatic",
+    "year": 2026,
+    "url": "https://eu.nidecker.com/es-int/products/lt-supermatic-2026",
+    "mode": "cheerio",
+    "identityAliases": [
+      "LT Supermatic"
+    ]
+  },
+  {
+    "slug": "nidecker-kaon-plus-2026",
+    "category": "snowboard-binding",
+    "brand": "nidecker",
+    "model": "Kaon Plus",
+    "year": 2026,
+    "url": "https://eu.nidecker.com/de-int/products/kaon-plus",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Kaon Plus"
+    ]
+  },
+  {
+    "slug": "jones-mercury-binding-2026",
+    "category": "snowboard-binding",
+    "brand": "jones",
+    "model": "Mercury",
+    "year": 2026,
+    "url": "https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Mercury"
+    ]
+  },
+  {
+    "slug": "jones-mercury-fase-binding-2026",
+    "category": "snowboard-binding",
+    "brand": "jones",
+    "model": "Mercury FASE",
+    "year": 2026,
+    "url": "https://www.jonessnowboards.com/products/mercury-fase-snowboard-binding-2026",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Mercury FASE"
+    ]
+  },
+  {
+    "slug": "jones-orion-binding-2026",
+    "category": "snowboard-binding",
+    "brand": "jones",
+    "model": "Orion",
+    "year": 2026,
+    "url": "https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Orion"
+    ]
+  },
+  {
+    "slug": "nitro-team-binding-2027",
+    "category": "snowboard-binding",
+    "brand": "nitro",
+    "model": "Team",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/products/team-bindings-1",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Team"
+    ]
+  },
+  {
+    "slug": "nitro-team-pro-binding-2027",
+    "category": "snowboard-binding",
+    "brand": "nitro",
+    "model": "Team Pro",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/products/team-pro-bindings-1",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Team Pro"
+    ]
+  },
+  {
+    "slug": "nitro-phantom-plus-binding-2027",
+    "category": "snowboard-binding",
+    "brand": "nitro",
+    "model": "Phantom+",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/cs/collections/all-mens-bindings-26-27/products/phantom-bindings-3?variant=57278273716555",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Phantom+"
+    ]
+  }
+]

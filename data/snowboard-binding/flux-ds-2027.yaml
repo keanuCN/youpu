@@ -1,0 +1,14 @@
+slug: flux-ds-2027
+category: snowboard-binding
+brand: flux
+model: "DS"
+year: 2027
+title: "FLUX DS 2027"
+one_liner: "FLUX 自由式全能款，26-27 官方页面介绍轻量底座与 Cloud Strap。"
+specs:
+  entrySystem: strap
+  bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://flux-bindings.com/products/2627-ds
+status: published

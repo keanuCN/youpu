@@ -1,0 +1,14 @@
+slug: flux-cv-2027
+category: snowboard-binding
+brand: flux
+model: "CV"
+year: 2027
+title: "FLUX CV 2027"
+one_liner: "26-27 刻滑与全山地取向型号，官方介绍其加高脚床及可调节结构。"
+specs:
+  entrySystem: strap
+  bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://flux-bindings.com/products/2627-cv
+status: published

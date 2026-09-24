@@ -1,0 +1,15 @@
+slug: jones-mercury-binding-2026
+category: snowboard-binding
+brand: jones
+model: "Mercury"
+year: 2026
+title: "Jones Mercury 2026"
+one_liner: "全地形 freeride 取向固定器，采用 SkateTech 力量传递结构。"
+specs:
+  entrySystem: strap
+  flex: 7
+  bootCompatibility: "通用圆盘适配 4x4、2x4 与 Channel；普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026
+status: published

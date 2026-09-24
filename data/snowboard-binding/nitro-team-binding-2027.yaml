@@ -1,0 +1,14 @@
+slug: nitro-team-binding-2027
+category: snowboard-binding
+brand: nitro
+model: "Team"
+year: 2027
+title: "Nitro Team 2027"
+one_liner: "Nitro 经典全能绑带系列，26-27 官方目录列出多种颜色版本。"
+specs:
+  entrySystem: strap
+  bootCompatibility: "普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://www.nitrosnowboards.com/products/team-bindings-1
+status: published

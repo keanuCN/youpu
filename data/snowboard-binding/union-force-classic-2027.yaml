@@ -1,0 +1,15 @@
+slug: union-force-classic-2027
+category: snowboard-binding
+brand: union
+model: "Force Classic"
+year: 2027
+title: "Union Binding Company Force Classic 2027"
+one_liner: "Force 经典款全地形绑带固定器，官方页面列出 6/10 硬度。"
+specs:
+  entrySystem: strap
+  flex: 6
+  bootCompatibility: "Union 标准安装圆盘；适配普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027
+status: published

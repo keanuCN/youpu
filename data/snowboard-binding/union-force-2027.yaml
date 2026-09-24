@@ -1,0 +1,15 @@
+slug: union-force-2027
+category: snowboard-binding
+brand: union
+model: "Force"
+year: 2027
+title: "Union Binding Company Force 2027"
+one_liner: "Union 全山地工作马型固定器，官方列出 7/10 硬度与全地形定位。"
+specs:
+  entrySystem: strap
+  flex: 7
+  bootCompatibility: "Union 标准安装圆盘；适配普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027
+status: published

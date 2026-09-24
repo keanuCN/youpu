@@ -1,0 +1,14 @@
+slug: jones-orion-binding-2026
+category: snowboard-binding
+brand: jones
+model: "Orion"
+year: 2026
+title: "Jones Orion 2026"
+one_liner: "Jones 2026 全山地固定器，官方页面列出多场景取向与常规双绑带结构。"
+specs:
+  entrySystem: strap
+  bootCompatibility: "Jones 通用圆盘；普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026
+status: published

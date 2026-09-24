@@ -1,0 +1,14 @@
+slug: nitro-team-pro-binding-2027
+category: snowboard-binding
+brand: nitro
+model: "Team Pro"
+year: 2027
+title: "Nitro Team Pro 2027"
+one_liner: "Team 系列高阶版本，官方以 Pro-caliber performance 定位。"
+specs:
+  entrySystem: strap
+  bootCompatibility: "普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://www.nitrosnowboards.com/products/team-pro-bindings-1
+status: published

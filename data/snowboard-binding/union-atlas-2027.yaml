@@ -1,0 +1,15 @@
+slug: union-atlas-2027
+category: snowboard-binding
+brand: union
+model: "Atlas"
+year: 2027
+title: "Union Binding Company Atlas 2027"
+one_liner: "面向中高级滑手的中硬度全山地款，官方列出 8/10 硬度。"
+specs:
+  entrySystem: strap
+  flex: 8
+  bootCompatibility: "适配常见 4x4、4x2 与 Channel 安装；普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027
+status: published

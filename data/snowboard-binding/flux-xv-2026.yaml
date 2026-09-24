@@ -1,0 +1,14 @@
+slug: flux-xv-2026
+category: snowboard-binding
+brand: flux
+model: "XV"
+year: 2026
+title: "FLUX XV 2026"
+one_liner: "FLUX 高阶硬质型号，官方介绍其碳纤维高背与轻量化响应结构。"
+specs:
+  entrySystem: strap
+  bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://flux-bindings.com/products/2526xv
+status: published

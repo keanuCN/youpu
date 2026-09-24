@@ -65,6 +65,26 @@
   country: DE
   description: 1990 年创立，性价比与全山地定位突出，欧洲市场覆盖广。
 
+- slug: union
+  name: Union Binding Company
+  name_cn: Union
+  country: US
+  official_url: https://unionbindingcompany.com/
+  description: 专注单板固定器的品牌，产品覆盖全山地、自由式、野雪和快穿系统。
+
+- slug: flux
+  name: FLUX
+  name_cn: Flux
+  country: JP
+  official_url: https://flux-bindings.com/
+  description: 日本单板固定器品牌，提供自由式、全山地与刻滑取向产品。
+
+- slug: nidecker
+  name: Nidecker
+  country: CH
+  official_url: https://www.nidecker.com/
+  description: 瑞士滑雪品牌，雪具产品涵盖传统绑带固定器与快速穿脱系统。
+
 - slug: bc-stream
   name: BC Stream
   country: JP

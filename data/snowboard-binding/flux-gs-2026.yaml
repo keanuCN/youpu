@@ -1,0 +1,14 @@
+slug: flux-gs-2026
+category: snowboard-binding
+brand: flux
+model: "GS"
+year: 2026
+title: "FLUX GS 2026"
+one_liner: "女款全能固定器，官方介绍其沿用 DS 特性并兼顾活动范围与舒适度。"
+specs:
+  entrySystem: strap
+  bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://flux-bindings.com/products/2526gs
+status: published

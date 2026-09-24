@@ -1,0 +1,14 @@
+slug: flux-xf-2026
+category: snowboard-binding
+brand: flux
+model: "XF"
+year: 2026
+title: "FLUX XF 2026"
+one_liner: "25-26 XF 型号，官方覆盖公园、刻滑、粉雪与全山地取向。"
+specs:
+  entrySystem: strap
+  bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://flux-bindings.com/products/2526xf
+status: published
