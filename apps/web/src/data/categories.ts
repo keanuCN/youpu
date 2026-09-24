@@ -20,7 +20,7 @@ export const CATEGORY_TREE: CategoryNode[] = [
           { slug: "snowboard", name: "单板", nameEn: "Snowboard", path: ["运动", "滑雪"], status: "live" },
           { slug: "snowboard-binding", name: "单板固定器", nameEn: "Snowboard Bindings", path: ["运动", "滑雪"], status: "live" },
           { slug: "snowboard-boot", name: "单板雪鞋", nameEn: "Snowboard Boots", path: ["运动", "滑雪"], status: "live" },
-          { slug: "skis", name: "双板", nameEn: "Skis", path: ["运动", "滑雪"], status: "coming_soon" },
+          { slug: "skis", name: "双板", nameEn: "Skis", path: ["运动", "滑雪"], status: "live" },
           { slug: "skiing-apparel", name: "雪服", nameEn: "Ski Apparel", path: ["运动", "滑雪"], status: "coming_soon" },
         ],
       },
@@ -770,6 +770,67 @@ const SNOWBOARD_BOOT: Category = {
   hardcoreWeights: {},
 };
 
+const SKIS: Category = {
+  slug: "skis",
+  name: "双板",
+  nameEn: "Alpine Skis",
+  path: ["运动", "滑雪"],
+  status: "live",
+  issue: "规格档案 / Alpine Skis",
+  specTemplate: [
+    {
+      group: "尺寸与几何",
+      fields: [
+        { key: "lengthOptions", label: "板长选项", type: "text", direction: null },
+        { key: "waistWidth", label: "板腰宽", unit: " mm", type: "number", direction: null },
+        { key: "turnRadius", label: "转弯半径", unit: " m", type: "number", direction: null },
+        { key: "turnRadiusReferenceLength", label: "半径对应板长", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "定位与配置",
+      fields: [
+        { key: "terrain", label: "适用场景", type: "text", direction: null },
+        { key: "skierLevel", label: "适合水平", type: "text", direction: null },
+        { key: "bindingSetup", label: "固定器配置", type: "text", direction: null },
+      ],
+    },
+  ],
+  filterTemplate: [
+    {
+      key: "brands",
+      label: "品牌",
+      control: "multi",
+      options: [
+        { value: "HEAD", label: "HEAD" },
+        { value: "Rossignol", label: "Rossignol" },
+        { value: "Atomic", label: "Atomic" },
+        { value: "Salomon", label: "Salomon" },
+        { value: "Nordica", label: "Nordica" },
+      ],
+    },
+    {
+      key: "years",
+      label: "雪季",
+      control: "multi",
+      options: [
+        { value: "2027", label: "2026–27" },
+        { value: "2026", label: "2025–26" },
+      ],
+    },
+  ],
+  scoreDims: [
+    { key: "edgeGrip", label: "抓边与操控", weight: 0.25 },
+    { key: "stability", label: "高速稳定", weight: 0.2 },
+    { key: "versatility", label: "地形适应", weight: 0.2 },
+    { key: "forgiveness", label: "容错易控", weight: 0.2 },
+    { key: "value", label: "性价比", weight: 0.15 },
+  ],
+  rankCategories: [{ key: "overall", label: "综合榜" }],
+  quizTemplate: [],
+  hardcoreWeights: {},
+};
+
 const BADMINTON_RACKET: Category = {
   slug: "badminton-racket",
   name: "羽毛球拍",
@@ -1342,6 +1403,7 @@ const FLAT: Record<string, Category> = {
   snowboard: SNOWBOARD,
   "snowboard-binding": SNOWBOARD_BINDING,
   "snowboard-boot": SNOWBOARD_BOOT,
+  skis: SKIS,
   "badminton-racket": BADMINTON_RACKET,
   "casting-rod": CASTING_ROD,
   "action-cam": ACTION_CAM,

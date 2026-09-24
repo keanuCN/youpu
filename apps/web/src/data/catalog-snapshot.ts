@@ -35,8 +35,8 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "https://xiaopang.club",
-  "generatedAt": "2026-09-24T04:55:00.473Z",
-  "total": 205,
+  "generatedAt": "2026-09-24T06:52:57.547Z",
+  "total": 235,
   "pageSize": 48,
   "categorySlugs": [
     "action-cam",
@@ -54,6 +54,7 @@ export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
     "microphone",
     "mtb",
     "road-bike",
+    "skis",
     "snowboard",
     "snowboard-binding",
     "snowboard-boot",
@@ -4405,6 +4406,1345 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "scenes",
         "label": "适用场景",
         "value": "竞赛 · 爬坡 · 团骑"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e2c2-79be-a352-2c64b13f11c7",
+    "slug": "atomic-bent-100-2026",
+    "title": "Atomic Bent 100 2025/26",
+    "model": "Bent 100",
+    "year": 2026,
+    "oneLiner": "官方描述为兼顾全山地与自由滑的多用途雪板；板腰宽 100 mm。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "atomic",
+      "name": "Atomic",
+      "nameCn": "阿托米克"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "158 / 165 / 172 / 179 / 186 cm",
+      "waistWidth": 100,
+      "turnRadius": 18,
+      "turnRadiusReferenceLength": "172 cm",
+      "terrain": "全山地 / 自由滑 / 粉雪",
+      "skierLevel": "入门至专家",
+      "bindingSetup": "裸板，不含固定器"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "100mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "18m"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 / 自由滑 / 粉雪"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "入门至专家"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e32a-7eb7-8806-80a40991f07a",
+    "slug": "atomic-redster-q7-2026",
+    "title": "Atomic Redster Q7 Revoshock C 2025/26",
+    "model": "Redster Q7 Revoshock C",
+    "year": 2026,
+    "oneLiner": "Redster Q 系列雪道板，官方目录列出 153–181 cm 尺寸范围。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "atomic",
+      "name": "Atomic",
+      "nameCn": "阿托米克"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "153 / 160 / 167 / 174 / 181 cm",
+      "terrain": "雪道 / 全地域",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "含 MI 12 GW 固定器"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 全地域"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e354-73aa-9b00-21d1d8d7cfc5",
+    "slug": "atomic-redster-q7-8-2026",
+    "title": "Atomic Redster Q7.8 Revoshock C 2025/26",
+    "model": "Redster Q7.8 Revoshock C",
+    "year": 2026,
+    "oneLiner": "Redster Q 系列雪道板，官方目录列出多档板长并配 MI 12 GW 固定器。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "atomic",
+      "name": "Atomic",
+      "nameCn": "阿托米克"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "159 / 166 / 173 / 181 cm",
+      "terrain": "雪道 / 全地域",
+      "skierLevel": "中级至進阶",
+      "bindingSetup": "含 MI 12 GW 固定器"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 全地域"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至進阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e363-7c04-b588-66d62d5e884c",
+    "slug": "atomic-redster-q9-2026",
+    "title": "Atomic Redster Q9 Revoshock S 2025/26",
+    "model": "Redster Q9 Revoshock S",
+    "year": 2026,
+    "oneLiner": "Redster Q 系列雪道板，官方目录列出 153–181 cm 尺寸范围。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "atomic",
+      "name": "Atomic",
+      "nameCn": "阿托米克"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "153 / 160 / 167 / 174 / 181 cm",
+      "terrain": "雪道 / 全地域",
+      "skierLevel": "进阶",
+      "bindingSetup": "含 I 12 GW 固定器套装"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 全地域"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e384-7641-93ea-727a2b636323",
+    "slug": "atomic-redster-q9-8-2026",
+    "title": "Atomic Redster Q9.8 Revoshock S 2025/26",
+    "model": "Redster Q9.8 Revoshock S",
+    "year": 2026,
+    "oneLiner": "Atomic Redster 雪道全能系列，官方商品目录列出多种板长与固定器配置。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "atomic",
+      "name": "Atomic",
+      "nameCn": "阿托米克"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "terrain": "雪道 / 全地域",
+      "skierLevel": "进阶",
+      "bindingSetup": "含 X 12 GW 或 I 12 GW 固定器套装，依 SKU 区分"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 全地域"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e394-75fa-a0db-7dbb481412b5",
+    "slug": "atomic-redster-s9-2026",
+    "title": "Atomic Redster S9 Revoshock S 2025/26",
+    "model": "Redster S9 Revoshock S",
+    "year": 2026,
+    "oneLiner": "Atomic Redster 官方目录中的雪道竞速小回转型号。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "atomic",
+      "name": "Atomic",
+      "nameCn": "阿托米克"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "terrain": "雪道 / 竞速 / 小回转",
+      "skierLevel": "进阶",
+      "bindingSetup": "含 I 12 GW 固定器套装"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 竞速 / 小回转"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e3b1-746d-92bb-de33748b182f",
+    "slug": "head-e-slr-2026",
+    "title": "HEAD Worldcup Rebels e.SLR 2025/26",
+    "model": "e.SLR",
+    "year": 2026,
+    "oneLiner": "京东海德雪板排行出现的民用小回转型号，定位偏雪道 carving。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "head",
+      "name": "HEAD",
+      "nameCn": "海德"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "terrain": "雪道 / 小回转",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "雪板+固定器，按具体 SKU 核对"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 小回转"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e3bd-7b6b-afec-367232f53145",
+    "slug": "head-easy-joy-r-2026",
+    "title": "HEAD EASY JOY R 2025/26",
+    "model": "EASY JOY R",
+    "year": 2026,
+    "oneLiner": "面向女性滑手的轻量雪道系列；板长、固定器和雪季款式需按具体商品确认。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "head",
+      "name": "HEAD",
+      "nameCn": "海德"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "terrain": "雪道",
+      "skierLevel": "入门至进阶",
+      "bindingSetup": "常见雪板+固定器套装，按具体 SKU 核对"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "入门至进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e3c8-7049-b4c6-2ad4e0dcb9c7",
+    "slug": "head-shape-v2-2026",
+    "title": "HEAD Shape V2 2025/26",
+    "model": "Shape V2",
+    "year": 2026,
+    "oneLiner": "京东双板榜单中的热门入门全地域系列；套装评价仅作国内关注度参考。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "head",
+      "name": "HEAD",
+      "nameCn": "海德"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "terrain": "全地域 / 雪道",
+      "skierLevel": "入门至初中级",
+      "bindingSetup": "雪板+固定器或套装，按具体 SKU 核对"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全地域 / 雪道"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "入门至初中级"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e3d4-7ba8-b3a3-1702f0728e63",
+    "slug": "head-shape-v2-r-2026",
+    "title": "HEAD Shape V2 R 2025/26",
+    "model": "Shape V2 R",
+    "year": 2026,
+    "oneLiner": "HEAD V-shape 入门全地域系列；国内平台存在板+固定器销售款。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "head",
+      "name": "HEAD",
+      "nameCn": "海德"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "terrain": "全地域 / 雪道",
+      "skierLevel": "入门至初中级",
+      "bindingSetup": "雪板+固定器，按具体 SKU 核对"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全地域 / 雪道"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "入门至初中级"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e3e0-720b-b6a2-80dadb5ac493",
+    "slug": "head-supershape-e-magnum-2026",
+    "title": "HEAD Supershape e-Magnum 2025/26",
+    "model": "Supershape e-Magnum",
+    "year": 2026,
+    "oneLiner": "HEAD Supershape 雪道系列，官方产品页列出 149–177 cm 多个板长。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "head",
+      "name": "HEAD",
+      "nameCn": "海德"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "149 / 156 / 163 / 170 / 177 cm",
+      "waistWidth": 72,
+      "turnRadius": 13.1,
+      "turnRadiusReferenceLength": "170 cm",
+      "terrain": "雪道",
+      "skierLevel": "进阶",
+      "bindingSetup": "含 Protector EVO PR 11 GW 固定器套装"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "72mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "13.1m"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e3a3-75a4-bfa1-7d60de36adbe",
+    "slug": "head-e-sl-pro-2026",
+    "title": "HEAD Worldcup Rebels e-SL Pro 2025/26",
+    "model": "Worldcup Rebels e-SL Pro",
+    "year": 2026,
+    "oneLiner": "官方归类为雪道竞速小回转板，面向有经验滑手；绑定组合依具体套装。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "head",
+      "name": "HEAD",
+      "nameCn": "海德"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "terrain": "雪道 / 竞速 / 小回转",
+      "skierLevel": "进阶",
+      "bindingSetup": "可选固定器套装"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 竞速 / 小回转"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e3f1-7e7b-842c-e0e3f29c7685",
+    "slug": "nordica-enforcer-104-2027",
+    "title": "Nordica Enforcer 104 2026/27",
+    "model": "Enforcer 104",
+    "year": 2027,
+    "oneLiner": "Nordica 2026/27 Enforcer 全山地系列，官方新季目录在售。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nordica",
+      "name": "Nordica",
+      "nameCn": "诺帝卡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "waistWidth": 104,
+      "terrain": "全山地 / 自由滑",
+      "skierLevel": "进阶",
+      "bindingSetup": "裸板，固定器另配"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "104mm"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 / 自由滑"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e408-79f3-934f-8a8df25f1e22",
+    "slug": "nordica-enforcer-89-2027",
+    "title": "Nordica Enforcer 89 2026/27",
+    "model": "Enforcer 89",
+    "year": 2027,
+    "oneLiner": "Enforcer 系列中偏雪道取向型号，列入 Nordica 2026/27 官方新品目录。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nordica",
+      "name": "Nordica",
+      "nameCn": "诺帝卡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "waistWidth": 89,
+      "terrain": "雪道 / 全山地",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "裸板，固定器另配"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "89mm"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 全山地"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e417-7df7-bea5-f832c1c3d32f",
+    "slug": "nordica-enforcer-94-2027",
+    "title": "Nordica Enforcer 94 2026/27",
+    "model": "Enforcer 94",
+    "year": 2027,
+    "oneLiner": "Enforcer 系列雪道与全山地兼顾型号，当前官方页面标注 2026/27 款。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nordica",
+      "name": "Nordica",
+      "nameCn": "诺帝卡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "waistWidth": 94,
+      "terrain": "雪道 / 全山地",
+      "skierLevel": "进阶",
+      "bindingSetup": "裸板，固定器另配"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "94mm"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 全山地"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e423-7dc5-b375-1db3a3568ce5",
+    "slug": "nordica-enforcer-99-2027",
+    "title": "Nordica Enforcer 99 2026/27",
+    "model": "Enforcer 99",
+    "year": 2027,
+    "oneLiner": "Enforcer 系列全山地型号，2026/27 官方产品页标注木芯与 Pulse Core 结构。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nordica",
+      "name": "Nordica",
+      "nameCn": "诺帝卡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "waistWidth": 99,
+      "terrain": "全山地",
+      "skierLevel": "进阶",
+      "bindingSetup": "裸板，固定器另配"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "99mm"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e42e-75a0-a97c-6c5eb878a084",
+    "slug": "nordica-santa-ana-102-2027",
+    "title": "Nordica Santa Ana 102 2026/27",
+    "model": "Santa Ana 102",
+    "year": 2027,
+    "oneLiner": "Santa Ana 女性全山地系列宽板腰型号，2026/27 官方新品目录在售。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nordica",
+      "name": "Nordica",
+      "nameCn": "诺帝卡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "waistWidth": 102,
+      "terrain": "全山地 / 自由滑",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "裸板，固定器另配"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "102mm"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 / 自由滑"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e439-7f87-81c9-1fcef91c804a",
+    "slug": "nordica-unleashed-98-2027",
+    "title": "Nordica Unleashed 98 2026/27",
+    "model": "Unleashed 98",
+    "year": 2027,
+    "oneLiner": "Unleashed 自由滑全山地系列，Nordica 新季产品目录列有 98 与 98 CA 两种结构款。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nordica",
+      "name": "Nordica",
+      "nameCn": "诺帝卡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "waistWidth": 98,
+      "terrain": "全山地 / 自由滑",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "裸板，固定器另配"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "98mm"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 / 自由滑"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e446-7c8a-add7-1c87a5b4ece1",
+    "slug": "rossignol-experience-76-2026",
+    "title": "Rossignol Experience 76 Xpress 2025/26",
+    "model": "Experience 76 Xpress",
+    "year": 2026,
+    "oneLiner": "Rossignol 雪道与全山地入门型号，官网说明其侧重易操控 carving 和全雪场使用。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rossignol",
+      "name": "Rossignol",
+      "nameCn": "金鸡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "136 / 144 / 152 / 160 / 168 / 176 cm",
+      "waistWidth": 76,
+      "turnRadius": 12,
+      "turnRadiusReferenceLength": "152 cm",
+      "terrain": "雪道 / 全山地",
+      "skierLevel": "入门至中级",
+      "bindingSetup": "裸板或可选 XPRESS 10 GW"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "76mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "12m"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 全山地"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "入门至中级"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e452-784e-b3eb-b1ba9c16ff07",
+    "slug": "rossignol-forza-50-cam-2026",
+    "title": "Rossignol Forza 50° CAM KONECT 2025/26",
+    "model": "Forza 50° CAM KONECT",
+    "year": 2026,
+    "oneLiner": "面向中级滑手的雪道 carving 系列，官网标注多种板长与可选固定器。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rossignol",
+      "name": "Rossignol",
+      "nameCn": "金鸡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "150 / 157 / 164 / 171 / 179 cm",
+      "waistWidth": 75,
+      "turnRadius": 12,
+      "turnRadiusReferenceLength": "164 cm",
+      "terrain": "雪道 / carving",
+      "skierLevel": "中级",
+      "bindingSetup": "裸板或可选 NX 12 KONECT GW"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "75mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "12m"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / carving"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e45d-7844-aa39-c671dd1148ce",
+    "slug": "rossignol-forza-60-ti-2027",
+    "title": "Rossignol Forza 60° TI KONECT 2026/27",
+    "model": "Forza 60° TI KONECT",
+    "year": 2027,
+    "oneLiner": "Forza 雪道 carving 系列高阶款，官网 2026/27 商品目录在售。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rossignol",
+      "name": "Rossignol",
+      "nameCn": "金鸡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "156 / 164 / 171 / 179 cm",
+      "terrain": "雪道 / carving",
+      "skierLevel": "进阶",
+      "bindingSetup": "KONECT 系统板，可按商品页选择固定器"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / carving"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e46c-7c4a-907f-4c2a75deb835",
+    "slug": "rossignol-hero-elite-lt-ti-2027",
+    "title": "Rossignol Hero Elite LT TI 2026/27",
+    "model": "Hero Elite LT TI",
+    "year": 2027,
+    "oneLiner": "官方定位为高速长弧雪道竞速风格板，面向技术型滑手。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rossignol",
+      "name": "Rossignol",
+      "nameCn": "金鸡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "167 / 172 / 177 / 182 cm",
+      "waistWidth": 71,
+      "turnRadius": 16,
+      "turnRadiusReferenceLength": "172 cm",
+      "terrain": "雪道 / 长弧 carving",
+      "skierLevel": "进阶",
+      "bindingSetup": "裸板或可选 SPX 14 KONECT GW"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "71mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "16m"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 长弧 carving"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e479-77ee-847a-9938a1da729b",
+    "slug": "rossignol-hero-master-lt-r22-2027",
+    "title": "Rossignol Hero Master LT R22 2026/27",
+    "model": "Hero Master LT R22",
+    "year": 2027,
+    "oneLiner": "Hero 系列竞技取向长弧雪道板，2026/27 官方产品目录在售。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rossignol",
+      "name": "Rossignol",
+      "nameCn": "金鸡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "173 / 179 / 183 cm",
+      "terrain": "雪道 / 竞速 / 长弧",
+      "skierLevel": "进阶至专家",
+      "bindingSetup": "R22 系统板，固定器依套装配置"
+    },
+    "highlights": [
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 竞速 / 长弧"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶至专家"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e488-7252-ac28-beb307b374d3",
+    "slug": "rossignol-soul-102-2027",
+    "title": "Rossignol Soul 102 2026/27",
+    "model": "Soul 102",
+    "year": 2027,
+    "oneLiner": "新一代多用途 freeride 雪板，官网列出 164、172、180 cm 等板长。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rossignol",
+      "name": "Rossignol",
+      "nameCn": "金鸡"
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "164 / 172 / 180 cm",
+      "waistWidth": 101,
+      "turnRadius": 15,
+      "turnRadiusReferenceLength": "172 cm",
+      "terrain": "全山地 / 自由滑 / 粉雪",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "裸板，不含固定器"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "101mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "15m"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 / 自由滑 / 粉雪"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e493-7769-9f6a-6dea96e16442",
+    "slug": "salomon-mtn-86-carbon-2027",
+    "title": "Salomon MTN 86 Carbon 2026/27",
+    "model": "MTN 86 Carbon",
+    "year": 2027,
+    "oneLiner": "Salomon 官方雪板目录中的轻量化巡游系列，定位与固定器需按具体组合确认。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "waistWidth": 86,
+      "terrain": "巡游 / 全山地",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "裸板，固定器另配"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "86mm"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "巡游 / 全山地"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e49e-75cf-8b65-3bfb53b31650",
+    "slug": "salomon-qst-106-2027",
+    "title": "Salomon QST 106 2026/27",
+    "model": "QST 106",
+    "year": 2027,
+    "oneLiner": "QST 系列宽板腰 freeride 型号，官方 2026/27 冬季目录在售。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "waistWidth": 106,
+      "terrain": "自由滑 / 粉雪",
+      "skierLevel": "进阶",
+      "bindingSetup": "裸板或依销售套装配置"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "106mm"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "自由滑 / 粉雪"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e4a9-75f1-a049-b409544e7724",
+    "slug": "salomon-qst-92-2027",
+    "title": "Salomon QST 92 2026/27",
+    "model": "QST 92",
+    "year": 2027,
+    "oneLiner": "QST freeride 系列中偏窄板腰的全山地型号，适合雪道与混合雪况。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "waistWidth": 92,
+      "terrain": "全山地 / 自由滑",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "裸板或依销售套装配置"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "92mm"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 / 自由滑"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e4b4-7792-85a4-bef71207cf27",
+    "slug": "salomon-qst-98-2027",
+    "title": "Salomon QST 98 2026/27",
+    "model": "QST 98",
+    "year": 2027,
+    "oneLiner": "QST freeride 系列中宽度适中的全山地型号，主打多雪况适应。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "waistWidth": 98,
+      "terrain": "全山地 / 自由滑",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "裸板或依销售套装配置"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "98mm"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 / 自由滑"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e4c2-7277-9562-c72119100cdd",
+    "slug": "salomon-qst-blank-2027",
+    "title": "Salomon QST Blank 2026/27",
+    "model": "QST Blank",
+    "year": 2027,
+    "oneLiner": "QST freeride 系列的宽板腰粉雪型号，官方冬季目录在售。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "waistWidth": 112,
+      "terrain": "自由滑 / 粉雪",
+      "skierLevel": "进阶",
+      "bindingSetup": "裸板或依销售套装配置"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "112mm"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "自由滑 / 粉雪"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "进阶"
+      }
+    ]
+  },
+  {
+    "id": "01a0d22f-e4cc-70df-8ca7-17e0122748f9",
+    "slug": "salomon-stance-84-2027",
+    "title": "Salomon Stance 84 R 2026/27",
+    "model": "Stance 84 R",
+    "year": 2027,
+    "oneLiner": "官方定位为雪道与全山地兼顾的稳定型双板，含板、板芯与固定器系统。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "161 / 169 / 177 / 185 cm",
+      "waistWidth": 84,
+      "turnRadius": 13,
+      "turnRadiusReferenceLength": "169 cm",
+      "terrain": "雪道 / 全山地",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "雪板+板层+固定器"
+    },
+    "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "84mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "13m"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "雪道 / 全山地"
+      },
+      {
+        "key": "skierLevel",
+        "label": "适合水平",
+        "value": "中级至进阶"
       }
     ]
   },

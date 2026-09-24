@@ -25,6 +25,34 @@
   country: FR
   description: 1947 年创立于安纳西，法国户外集团，入门与全山地产品线覆盖面广。
 
+- slug: head
+  name: HEAD
+  name_cn: 海德
+  country: AT
+  official_url: https://www.head.com/
+  description: 奥地利滑雪装备品牌，双板产品覆盖雪道、竞速、全山地与自由式。
+
+- slug: rossignol
+  name: Rossignol
+  name_cn: 金鸡
+  country: FR
+  official_url: https://www.rossignol.com/
+  description: 法国滑雪装备品牌，产品覆盖雪道、竞速、全山地与自由滑。
+
+- slug: atomic
+  name: Atomic
+  name_cn: 阿托米克
+  country: AT
+  official_url: https://www.atomic.com/
+  description: 奥地利滑雪装备品牌，双板产品覆盖竞速、雪道、全山地、野雪与巡游。
+
+- slug: nordica
+  name: Nordica
+  name_cn: 诺帝卡
+  country: IT
+  official_url: https://www.nordica.com/
+  description: 意大利滑雪装备品牌，双板产品覆盖雪道、全山地、自由滑与竞速。
+
 - slug: lib-tech
   name: Lib Tech
   country: US

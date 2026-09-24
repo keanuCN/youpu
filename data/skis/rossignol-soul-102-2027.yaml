@@ -1,0 +1,19 @@
+slug: rossignol-soul-102-2027
+category: skis
+brand: rossignol
+model: Soul 102
+year: 2027
+title: Rossignol Soul 102 2026/27
+one_liner: 新一代多用途 freeride 雪板，官网列出 164、172、180 cm 等板长。
+specs:
+  lengthOptions: 164 / 172 / 180 cm
+  waistWidth: 101
+  turnRadius: 15
+  turnRadiusReferenceLength: 172 cm
+  terrain: 全山地 / 自由滑 / 粉雪
+  skierLevel: 中级至进阶
+  bindingSetup: 裸板，不含固定器
+data_source:
+  kind: official
+  origin_url: https://www.rossignol.com/us-en/soul-102-alpine-skis-RAPMR03000.html
+status: published

@@ -1,0 +1,16 @@
+slug: salomon-qst-98-2027
+category: skis
+brand: salomon
+model: QST 98
+year: 2027
+title: Salomon QST 98 2026/27
+one_liner: QST freeride 系列中宽度适中的全山地型号，主打多雪况适应。
+specs:
+  waistWidth: 98
+  terrain: 全山地 / 自由滑
+  skierLevel: 中级至进阶
+  bindingSetup: 裸板或依销售套装配置
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-us/c/collection/winter-sports
+status: published

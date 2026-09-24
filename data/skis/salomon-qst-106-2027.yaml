@@ -1,0 +1,16 @@
+slug: salomon-qst-106-2027
+category: skis
+brand: salomon
+model: QST 106
+year: 2027
+title: Salomon QST 106 2026/27
+one_liner: QST 系列宽板腰 freeride 型号，官方 2026/27 冬季目录在售。
+specs:
+  waistWidth: 106
+  terrain: 自由滑 / 粉雪
+  skierLevel: 进阶
+  bindingSetup: 裸板或依销售套装配置
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-us/c/collection/winter-sports
+status: published

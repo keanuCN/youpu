@@ -1,0 +1,19 @@
+slug: head-supershape-e-magnum-2026
+category: skis
+brand: head
+model: Supershape e-Magnum
+year: 2026
+title: HEAD Supershape e-Magnum 2025/26
+one_liner: HEAD Supershape 雪道系列，官方产品页列出 149–177 cm 多个板长。
+specs:
+  lengthOptions: 149 / 156 / 163 / 170 / 177 cm
+  waistWidth: 72
+  turnRadius: 13.1
+  turnRadiusReferenceLength: 170 cm
+  terrain: 雪道
+  skierLevel: 进阶
+  bindingSetup: 含 Protector EVO PR 11 GW 固定器套装
+data_source:
+  kind: official
+  origin_url: https://www.head.com/en_US/product/supershape-e-magnum-313306-set
+status: published

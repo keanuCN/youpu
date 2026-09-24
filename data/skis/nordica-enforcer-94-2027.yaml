@@ -1,0 +1,16 @@
+slug: nordica-enforcer-94-2027
+category: skis
+brand: nordica
+model: Enforcer 94
+year: 2027
+title: Nordica Enforcer 94 2026/27
+one_liner: Enforcer 系列雪道与全山地兼顾型号，当前官方页面标注 2026/27 款。
+specs:
+  waistWidth: 94
+  terrain: 雪道 / 全山地
+  skierLevel: 进阶
+  bindingSetup: 裸板，固定器另配
+data_source:
+  kind: official
+  origin_url: https://www.nordica.com/usa/en/collection/men/skis/enforcer
+status: published

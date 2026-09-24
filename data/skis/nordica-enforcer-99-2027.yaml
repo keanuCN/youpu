@@ -1,0 +1,16 @@
+slug: nordica-enforcer-99-2027
+category: skis
+brand: nordica
+model: Enforcer 99
+year: 2027
+title: Nordica Enforcer 99 2026/27
+one_liner: Enforcer 系列全山地型号，2026/27 官方产品页标注木芯与 Pulse Core 结构。
+specs:
+  waistWidth: 99
+  terrain: 全山地
+  skierLevel: 进阶
+  bindingSetup: 裸板，固定器另配
+data_source:
+  kind: official
+  origin_url: https://www.nordica.com/usa/en/collection/men/skis/enforcer
+status: published

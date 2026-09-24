@@ -1,0 +1,16 @@
+slug: salomon-qst-blank-2027
+category: skis
+brand: salomon
+model: QST Blank
+year: 2027
+title: Salomon QST Blank 2026/27
+one_liner: QST freeride 系列的宽板腰粉雪型号，官方冬季目录在售。
+specs:
+  waistWidth: 112
+  terrain: 自由滑 / 粉雪
+  skierLevel: 进阶
+  bindingSetup: 裸板或依销售套装配置
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-us/c/collection/winter-sports
+status: published

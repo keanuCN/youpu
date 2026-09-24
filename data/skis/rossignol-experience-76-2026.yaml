@@ -1,0 +1,19 @@
+slug: rossignol-experience-76-2026
+category: skis
+brand: rossignol
+model: Experience 76 Xpress
+year: 2026
+title: Rossignol Experience 76 Xpress 2025/26
+one_liner: Rossignol 雪道与全山地入门型号，官网说明其侧重易操控 carving 和全雪场使用。
+specs:
+  lengthOptions: 136 / 144 / 152 / 160 / 168 / 176 cm
+  waistWidth: 76
+  turnRadius: 12
+  turnRadiusReferenceLength: 152 cm
+  terrain: 雪道 / 全山地
+  skierLevel: 入门至中级
+  bindingSetup: 裸板或可选 XPRESS 10 GW
+data_source:
+  kind: official
+  origin_url: https://www.rossignol.com/us-en/experience-76-xpress-RAMFT04000.html
+status: published

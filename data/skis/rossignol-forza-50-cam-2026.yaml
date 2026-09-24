@@ -1,0 +1,19 @@
+slug: rossignol-forza-50-cam-2026
+category: skis
+brand: rossignol
+model: Forza 50° CAM KONECT
+year: 2026
+title: Rossignol Forza 50° CAM KONECT 2025/26
+one_liner: 面向中级滑手的雪道 carving 系列，官网标注多种板长与可选固定器。
+specs:
+  lengthOptions: 150 / 157 / 164 / 171 / 179 cm
+  waistWidth: 75
+  turnRadius: 12
+  turnRadiusReferenceLength: 164 cm
+  terrain: 雪道 / carving
+  skierLevel: 中级
+  bindingSetup: 裸板或可选 NX 12 KONECT GW
+data_source:
+  kind: official
+  origin_url: https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html
+status: published

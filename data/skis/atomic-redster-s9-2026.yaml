@@ -1,0 +1,15 @@
+slug: atomic-redster-s9-2026
+category: skis
+brand: atomic
+model: Redster S9 Revoshock S
+year: 2026
+title: Atomic Redster S9 Revoshock S 2025/26
+one_liner: Atomic Redster 官方目录中的雪道竞速小回转型号。
+specs:
+  terrain: 雪道 / 竞速 / 小回转
+  skierLevel: 进阶
+  bindingSetup: 含 I 12 GW 固定器套装
+data_source:
+  kind: official
+  origin_url: https://www.atomic.com/en-us/collections/ato-men-skis-all-skis
+status: published

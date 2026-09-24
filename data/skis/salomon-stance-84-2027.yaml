@@ -1,0 +1,19 @@
+slug: salomon-stance-84-2027
+category: skis
+brand: salomon
+model: Stance 84 R
+year: 2027
+title: Salomon Stance 84 R 2026/27
+one_liner: 官方定位为雪道与全山地兼顾的稳定型双板，含板、板芯与固定器系统。
+specs:
+  lengthOptions: 161 / 169 / 177 / 185 cm
+  waistWidth: 84
+  turnRadius: 13
+  turnRadiusReferenceLength: 169 cm
+  terrain: 雪道 / 全山地
+  skierLevel: 中级至进阶
+  bindingSetup: 雪板+板层+固定器
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-us/product/stance-84-r-and-mi12-li1721
+status: published

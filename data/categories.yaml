@@ -367,6 +367,73 @@
       - { key: convenience, label: 穿脱便利, weight: 0.15 }
       - { key: value, label: 性价比, weight: 0.1 }
 
+- slug: skis
+  name: 双板
+  parent: skiing
+  sort_order: 40
+  spec_schema:
+    fields:
+      - key: lengthOptions
+        label: 板长选项
+        group: 尺寸与几何
+        type: text
+        filter: false
+        compare: false
+        order: 10
+      - key: waistWidth
+        label: 板腰宽
+        group: 尺寸与几何
+        type: number
+        unit: mm
+        min: 55
+        max: 130
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 20
+      - key: turnRadius
+        label: 转弯半径
+        group: 尺寸与几何
+        type: number
+        unit: m
+        min: 5
+        max: 30
+        filter: range
+        compare: true
+        compareDirection: context
+        order: 30
+      - key: turnRadiusReferenceLength
+        label: 半径对应板长
+        group: 尺寸与几何
+        type: text
+        filter: false
+        compare: false
+        order: 35
+      - key: terrain
+        label: 适用场景
+        group: 定位与配置
+        type: text
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 40
+      - key: skierLevel
+        label: 适合水平
+        group: 定位与配置
+        type: text
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 50
+      - key: bindingSetup
+        label: 固定器配置
+        group: 定位与配置
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 60
+
 - slug: racket-sports
   name: 球类
   parent: sport

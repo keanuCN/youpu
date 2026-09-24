@@ -1,0 +1,15 @@
+slug: head-shape-v2-2026
+category: skis
+brand: head
+model: Shape V2
+year: 2026
+title: HEAD Shape V2 2025/26
+one_liner: 京东双板榜单中的热门入门全地域系列；套装评价仅作国内关注度参考。
+specs:
+  terrain: 全地域 / 雪道
+  skierLevel: 入门至初中级
+  bindingSetup: 雪板+固定器或套装，按具体 SKU 核对
+data_source:
+  kind: manual
+  origin_url: https://www.jd.com/phb/key_131835046173548d5c5a.html
+status: published

@@ -1,0 +1,19 @@
+slug: rossignol-hero-elite-lt-ti-2027
+category: skis
+brand: rossignol
+model: Hero Elite LT TI
+year: 2027
+title: Rossignol Hero Elite LT TI 2026/27
+one_liner: 官方定位为高速长弧雪道竞速风格板，面向技术型滑手。
+specs:
+  lengthOptions: 167 / 172 / 177 / 182 cm
+  waistWidth: 71
+  turnRadius: 16
+  turnRadiusReferenceLength: 172 cm
+  terrain: 雪道 / 长弧 carving
+  skierLevel: 进阶
+  bindingSetup: 裸板或可选 SPX 14 KONECT GW
+data_source:
+  kind: official
+  origin_url: https://www.rossignol.com/us-en/hero-elite-lt-ti-alpine-skis-RAPSE01000.html
+status: published
