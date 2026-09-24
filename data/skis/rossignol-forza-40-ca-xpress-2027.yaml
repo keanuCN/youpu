@@ -16,4 +16,10 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/it-it/sci-pista-uomo-forza-40%C2%B0-ca-xpress-RAPPX05000157.html
+images:
+  - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa510bcb6/images/large/RAPPX05000_72DPI_01_v00.jpg?sh=140
+    kind: face
+    alt: Rossignol Forza 40° CA Xpress 2026/27 官方产品图
+    source: Rossignol 官方产品页图片（本地演示，版权授权待核）
+    sort_order: 0
 status: published

@@ -5,6 +5,10 @@ model: Bent Chetler 120
 year: 2026
 title: Atomic Bent Chetler 120 2025/26
 one_liner: Atomic 粉雪自由滑旗舰型号，采用 120 mm 板腰与 HRZN 3D 板头板尾设计。
+price:
+  min: 7998
+  max: 7998
+  currency: CNY
 specs:
   lengthOptions: 176 / 184 / 192 cm
   waistWidth: 120
@@ -16,4 +20,10 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/products/bent-chetler-120-aa7364-202600
+images:
+  - url: https://img01.yzcdn.cn/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg
+    kind: face
+    alt: Atomic Bent Chetler 120 2025/26 雪板商品图
+    source: 自由地带雪具连锁商品页图片（公开引用，版权授权待核）
+    sort_order: 0
 status: published

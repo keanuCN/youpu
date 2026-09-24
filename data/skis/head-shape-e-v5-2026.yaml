@@ -16,4 +16,10 @@ specs:
 data_source:
   kind: official
   origin_url: https://head.ru/ski/shop/skis/discounts/CF854649-178B-30D5-CA92-E692F4F09C64/104214/
+images:
+  - url: https://www.outdoorsports.com/cdn/shop/files/Head-Shape_e.V5-Mens-2026_TIPS_1200x.png?v=1755546338
+    kind: face
+    alt: HEAD Shape e-V5 2025/26 雪板商品图
+    source: OutdoorSports 公开商品页图片（本地演示，版权授权待核）
+    sort_order: 0
 status: published
