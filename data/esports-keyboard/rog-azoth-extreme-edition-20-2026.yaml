@@ -1,0 +1,29 @@
+slug: rog-azoth-extreme-edition-20-2026
+category: esports-keyboard
+brand: rog
+model: ROG 夜魔 EXTREME 20周年版
+year: 2026
+title: ROG 夜魔 EXTREME 20周年版 75% 三模客制化机械键盘
+price:
+  min: 3599
+  max: 3599
+  currency: CNY
+specs:
+  keyboardType: mechanical
+  layout: 75%
+  mounting: 可调式 Gasket
+  caseMaterial: 铝合金底壳 + 金属边框
+  connection:
+    - wired
+    - 2.4g
+    - bluetooth
+  backlight: RGB 每键背光
+  driver: Armoury Crate / 奥创极速网页版
+  hotSwap: true
+  customScreen: true
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://rog.asus.com.cn/keyboards/keyboards/aura-rgb/rog-azoth-extreme-edition-20/spec/
+  snapshot_url: https://www.jd.com/hprm/670b66ccb9e679ba085.html
+status: published

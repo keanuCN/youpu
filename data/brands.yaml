@@ -253,6 +253,13 @@
   official_url: https://www.melgeek.cn
   description: 深圳电竞外设品牌，产品覆盖磁轴与机械键盘、键帽及桌面输入设备。
 
+- slug: rog
+  name: ROG
+  name_cn: 玩家国度
+  country: TW
+  official_url: https://rog.asus.com.cn
+  description: 华硕旗下 Republic of Gamers 电竞品牌，覆盖游戏键盘、鼠标、耳机及电脑硬件。
+
 - slug: canyon
   name: Canyon
   country: DE

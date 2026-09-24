@@ -48,6 +48,7 @@ import { rapooEsportsKeyboardAdapter } from '../esports-keyboard/brands/rapoo';
 import { mchoseEsportsKeyboardAdapter } from '../esports-keyboard/brands/mchose';
 import { cherryEsportsKeyboardAdapter } from '../esports-keyboard/brands/cherry';
 import { melgeekEsportsKeyboardAdapter } from '../esports-keyboard/brands/melgeek';
+import { rogEsportsKeyboardAdapter } from '../esports-keyboard/brands/rog';
 
 export interface ProductAdapter {
   name: string;
@@ -97,6 +98,7 @@ const adapters: ProductAdapter[] = [
   mchoseEsportsKeyboardAdapter,
   cherryEsportsKeyboardAdapter,
   melgeekEsportsKeyboardAdapter,
+  rogEsportsKeyboardAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,
