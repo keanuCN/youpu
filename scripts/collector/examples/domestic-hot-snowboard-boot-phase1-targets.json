@@ -1,0 +1,362 @@
+[
+  {
+    "slug": "nitro-team-tls-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Team TLS",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-boots-1",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Team TLS"
+    ]
+  },
+  {
+    "slug": "burton-moto-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "burton",
+    "model": "Moto BOA",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Moto BOA"
+    ]
+  },
+  {
+    "slug": "salomon-dialogue-dual-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "salomon",
+    "model": "Dialogue Dual BOA",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/dialogue-dual-boa-li9150",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Dialogue Dual BOA"
+    ]
+  },
+  {
+    "slug": "burton-photon-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "burton",
+    "model": "Photon BOA",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Photon BOA"
+    ]
+  },
+  {
+    "slug": "salomon-launch-boa-sj-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "salomon",
+    "model": "Launch BOA SJ BOA",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Launch BOA SJ BOA"
+    ]
+  },
+  {
+    "slug": "burton-ion-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "burton",
+    "model": "Ion BOA",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Ion BOA"
+    ]
+  },
+  {
+    "slug": "burton-ion-step-on-2027",
+    "category": "snowboard-boot",
+    "brand": "burton",
+    "model": "Ion Step On",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Ion Step On"
+    ]
+  },
+  {
+    "slug": "salomon-echo-dual-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "salomon",
+    "model": "Echo Dual BOA",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Echo Dual BOA"
+    ]
+  },
+  {
+    "slug": "salomon-faction-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "salomon",
+    "model": "Faction BOA",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/faction-boa-li9008",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Faction BOA"
+    ]
+  },
+  {
+    "slug": "salomon-malamute-dual-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "salomon",
+    "model": "Malamute Dual BOA",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/malamute-dual-boa-li8071",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Malamute Dual BOA"
+    ]
+  },
+  {
+    "slug": "salomon-dialogue-dual-boa-wide-2027",
+    "category": "snowboard-boot",
+    "brand": "salomon",
+    "model": "Dialogue Dual BOA Wide",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/dialogue-dual-boa-wide-li9184",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Dialogue Dual BOA Wide"
+    ]
+  },
+  {
+    "slug": "salomon-dialogue-dual-boa-team-2027",
+    "category": "snowboard-boot",
+    "brand": "salomon",
+    "model": "Dialogue Dual BOA Team",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/dialogue-dual-boa-team-li9182",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Dialogue Dual BOA Team"
+    ]
+  },
+  {
+    "slug": "salomon-titan-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "salomon",
+    "model": "Titan BOA",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Titan BOA"
+    ]
+  },
+  {
+    "slug": "salomon-x-approach-lace-sj-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "salomon",
+    "model": "X Approach Lace SJ BOA",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/x-approach-lace-sj-boa-li5866",
+    "mode": "cheerio",
+    "identityAliases": [
+      "X Approach Lace SJ BOA"
+    ]
+  },
+  {
+    "slug": "salomon-trek-2027",
+    "category": "snowboard-boot",
+    "brand": "salomon",
+    "model": "Trek",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/trek-lg8695",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Trek"
+    ]
+  },
+  {
+    "slug": "nitro-team-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Team BOA",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/team-boa-boots-1",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Team BOA"
+    ]
+  },
+  {
+    "slug": "nitro-team-tls-wide-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Team TLS Wide",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-wide-boots-1",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Team TLS Wide"
+    ]
+  },
+  {
+    "slug": "nitro-venture-pro-tls-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Venture Pro TLS",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-pro-tls-boots",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Venture Pro TLS"
+    ]
+  },
+  {
+    "slug": "nitro-venture-tls-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Venture TLS",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-tls-boots",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Venture TLS"
+    ]
+  },
+  {
+    "slug": "nitro-venture-step-on-tls-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Venture Step On TLS",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-step-on-tls-boots",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Venture Step On TLS"
+    ]
+  },
+  {
+    "slug": "nitro-sentinel-tls-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Sentinel TLS",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/sentinel-tls-boots-1",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Sentinel TLS"
+    ]
+  },
+  {
+    "slug": "nitro-sentinel-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Sentinel BOA",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/sentinel-boa-boots-1",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Sentinel BOA"
+    ]
+  },
+  {
+    "slug": "nitro-tangent-tls-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Tangent TLS",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/tangent-tls-boots-1",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Tangent TLS"
+    ]
+  },
+  {
+    "slug": "nitro-bianca-tls-plus-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Bianca TLS+",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/bianca-tls-womens-boots-1",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Bianca TLS+"
+    ]
+  },
+  {
+    "slug": "nitro-team-pro-mk-tls-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Team Pro MK TLS",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/team-pro-mk-tls-boots-1",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Team Pro MK TLS"
+    ]
+  },
+  {
+    "slug": "nitro-venture-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "nitro",
+    "model": "Venture BOA",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-boa-boots",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Venture BOA"
+    ]
+  },
+  {
+    "slug": "k2-maysis-2027",
+    "category": "snowboard-boot",
+    "brand": "k2",
+    "model": "Maysis",
+    "year": 2027,
+    "url": "https://k2snow.com/en-us/p/maysis-mens-snowboard-boot-kb261665?color=black",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Maysis"
+    ]
+  },
+  {
+    "slug": "k2-raider-2027",
+    "category": "snowboard-boot",
+    "brand": "k2",
+    "model": "Raider",
+    "year": 2027,
+    "url": "https://k2snow.com/en-us/p/raider-mens-snowboard-boots-kb261667?color=sand",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Raider"
+    ]
+  },
+  {
+    "slug": "k2-boundary-2027",
+    "category": "snowboard-boot",
+    "brand": "k2",
+    "model": "Boundary",
+    "year": 2027,
+    "url": "https://k2snow.com/en-us/p/boundary-mens-snowboard-boot-kb261666?color=brown",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Boundary"
+    ]
+  },
+  {
+    "slug": "k2-taro-tamai-snowsurfer-rs-2027",
+    "category": "snowboard-boot",
+    "brand": "k2",
+    "model": "Taro Tamai Snowsurfer RS",
+    "year": 2027,
+    "url": "https://k2snow.com/en-us/p/taro-tamai-snowsurfer-rs-mens-snowboard-boot-kb261654?color=black-brown",
+    "mode": "cheerio",
+    "identityAliases": [
+      "Taro Tamai Snowsurfer RS"
+    ]
+  }
+]

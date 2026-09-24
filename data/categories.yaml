@@ -314,6 +314,59 @@
       - { key: convenience, label: 穿脱便利, weight: 0.2 }
       - { key: value, label: 性价比, weight: 0.15 }
 
+- slug: snowboard-boot
+  name: 单板雪鞋
+  parent: skiing
+  sort_order: 30
+  spec_schema:
+    fields:
+      - key: lacingSystem
+        label: 闭合系统
+        group: 穿脱与贴合
+        type: text
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 10
+      - key: flex
+        label: 硬度
+        group: 穿脱与贴合
+        type: text
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 20
+      - key: fit
+        label: 鞋楦/脚型
+        group: 穿脱与贴合
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 30
+      - key: bindingCompatibility
+        label: 固定器兼容
+        group: 兼容性
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 40
+      - key: terrain
+        label: 适用场景
+        group: 使用取向
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 50
+    rating_dimensions:
+      - { key: fit, label: 贴合舒适, weight: 0.3 }
+      - { key: support, label: 支撑响应, weight: 0.25 }
+      - { key: warmth, label: 保暖防护, weight: 0.2 }
+      - { key: convenience, label: 穿脱便利, weight: 0.15 }
+      - { key: value, label: 性价比, weight: 0.1 }
+
 - slug: racket-sports
   name: 球类
   parent: sport

@@ -1,0 +1,14 @@
+slug: nitro-venture-step-on-tls-2027
+category: snowboard-boot
+brand: nitro
+model: "Venture Step On TLS"
+year: 2027
+title: "Nitro Venture Step On TLS 2027"
+one_liner: "官方档案型号；TLS 系带，Step On 系统需配专用固定器。尺码与脚感以实际试穿为准。"
+specs:
+  lacingSystem: TLS 系带
++  bindingCompatibility: 仅与 Step On 固定器兼容
+data_source:
+  kind: official
+  origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-step-on-tls-boots
+status: published

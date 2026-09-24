@@ -35,8 +35,8 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "https://xiaopang.club",
-  "generatedAt": "2026-09-24T04:19:56.474Z",
-  "total": 175,
+  "generatedAt": "2026-09-24T04:55:00.473Z",
+  "total": 205,
   "pageSize": 48,
   "categorySlugs": [
     "action-cam",
@@ -56,6 +56,7 @@ export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
     "road-bike",
     "snowboard",
     "snowboard-binding",
+    "snowboard-boot",
     "sports-watch",
     "tripod",
     "video-camera",
@@ -9124,6 +9125,966 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-83d0-740a-a5b3-61d31d44d020",
+    "slug": "burton-ion-boa-2027",
+    "title": "Burton Ion BOA 2027",
+    "model": "Ion BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；双区高功率 BOA。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "双区高功率 BOA"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "双区高功率 BOA"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-840a-7e13-80b4-7f16a5a87b2c",
+    "slug": "burton-ion-step-on-2027",
+    "title": "Burton Ion Step On 2027",
+    "model": "Ion Step On",
+    "year": 2027,
+    "oneLiner": "官方档案型号；Step On 接口；仅兼容 Step On 固定器。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "Step On 接口"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "Step On 接口"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-841a-7249-b23d-b56b5e5dec09",
+    "slug": "burton-moto-boa-2027",
+    "title": "Burton Moto BOA 2027",
+    "model": "Moto BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；单 BOA 旋钮。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "单 BOA 旋钮"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "单 BOA 旋钮"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8427-7e42-a2db-502d0d990f85",
+    "slug": "burton-photon-boa-2027",
+    "title": "Burton Photon BOA 2027",
+    "model": "Photon BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "双区 BOA"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "双区 BOA"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8432-7edc-90d4-ada1b7303a79",
+    "slug": "k2-boundary-2027",
+    "title": "K2 Boundary 2027",
+    "model": "Boundary",
+    "year": 2027,
+    "oneLiner": "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "k2",
+      "name": "K2",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "BOA 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "BOA 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-843b-71b5-b1c9-cdc9c47112d1",
+    "slug": "k2-maysis-2027",
+    "title": "K2 Maysis 2027",
+    "model": "Maysis",
+    "year": 2027,
+    "oneLiner": "官方档案型号；单 BOA 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "k2",
+      "name": "K2",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "单 BOA 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "单 BOA 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8446-7a09-b10d-2d1b4073abf1",
+    "slug": "k2-raider-2027",
+    "title": "K2 Raider 2027",
+    "model": "Raider",
+    "year": 2027,
+    "oneLiner": "官方档案型号；单 BOA 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "k2",
+      "name": "K2",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "单 BOA 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "单 BOA 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-844e-7001-ad1a-44b051c41378",
+    "slug": "k2-taro-tamai-snowsurfer-rs-2027",
+    "title": "K2 Taro Tamai Snowsurfer RS 2027",
+    "model": "Taro Tamai Snowsurfer RS",
+    "year": 2027,
+    "oneLiner": "官方档案型号；系带方式及兼容参数留待补充。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "k2",
+      "name": "K2",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "系带方式及兼容参数留待补充"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "系带方式及兼容参数留待补充"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8459-72f5-9d70-391b68964eba",
+    "slug": "nitro-bianca-tls-plus-2027",
+    "title": "Nitro Bianca TLS+ 2027",
+    "model": "Bianca TLS+",
+    "year": 2027,
+    "oneLiner": "官方档案型号；女款；TLS+ 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "女款"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "女款"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8464-7f98-85cf-2b3c2d10bbd0",
+    "slug": "nitro-sentinel-boa-2027",
+    "title": "Nitro Sentinel BOA 2027",
+    "model": "Sentinel BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "BOA 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "BOA 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8470-78b0-a186-afe1ff95c313",
+    "slug": "nitro-sentinel-tls-2027",
+    "title": "Nitro Sentinel TLS 2027",
+    "model": "Sentinel TLS",
+    "year": 2027,
+    "oneLiner": "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "TLS 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "TLS 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8479-764b-aeb8-eca97bb259a8",
+    "slug": "nitro-tangent-tls-2027",
+    "title": "Nitro Tangent TLS 2027",
+    "model": "Tangent TLS",
+    "year": 2027,
+    "oneLiner": "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "TLS 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "TLS 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8486-7469-97e1-58ef39e8eac8",
+    "slug": "nitro-team-boa-2027",
+    "title": "Nitro Team BOA 2027",
+    "model": "Team BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "BOA 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "BOA 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8494-7b08-86a5-a208f749a552",
+    "slug": "nitro-team-pro-mk-tls-2027",
+    "title": "Nitro Team Pro MK TLS 2027",
+    "model": "Team Pro MK TLS",
+    "year": 2027,
+    "oneLiner": "官方档案型号；TLS 系带；MK 系列。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "TLS 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "TLS 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-849e-7852-841c-8e0df0f15123",
+    "slug": "nitro-team-tls-2027",
+    "title": "Nitro Team TLS 2027",
+    "model": "Team TLS",
+    "year": 2027,
+    "oneLiner": "官方档案型号；TLS 双区快速系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "TLS 双区快速系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "TLS 双区快速系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-84a9-7a2e-97e1-191999fdf096",
+    "slug": "nitro-team-tls-wide-2027",
+    "title": "Nitro Team TLS Wide 2027",
+    "model": "Team TLS Wide",
+    "year": 2027,
+    "oneLiner": "官方档案型号；宽楦；TLS 双区快速系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "宽楦"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "宽楦"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-84b1-7f06-856f-483cf92317eb",
+    "slug": "nitro-venture-boa-2027",
+    "title": "Nitro Venture BOA 2027",
+    "model": "Venture BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "BOA 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "BOA 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-84ba-7d7a-bdcf-0fd2c64926b5",
+    "slug": "nitro-venture-pro-tls-2027",
+    "title": "Nitro Venture Pro TLS 2027",
+    "model": "Venture Pro TLS",
+    "year": 2027,
+    "oneLiner": "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "TLS 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "TLS 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-84c5-7e91-8145-56a5c5f8b26e",
+    "slug": "nitro-venture-step-on-tls-2027",
+    "title": "Nitro Venture Step On TLS 2027",
+    "model": "Venture Step On TLS",
+    "year": 2027,
+    "oneLiner": "官方档案型号；TLS 系带与 Step On 接口；需配 Step On 固定器。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "TLS 系带与 Step On 接口"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "TLS 系带与 Step On 接口"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-84cd-7b85-82ae-54845014f9df",
+    "slug": "nitro-venture-tls-2027",
+    "title": "Nitro Venture TLS 2027",
+    "model": "Venture TLS",
+    "year": 2027,
+    "oneLiner": "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "TLS 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "TLS 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-84da-7e47-80e0-b68be676dfa0",
+    "slug": "salomon-dialogue-dual-boa-2027",
+    "title": "Salomon Dialogue Dual BOA 2027",
+    "model": "Dialogue Dual BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；双区 BOA；官方标注中等硬度。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "双区 BOA"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "双区 BOA"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-84e2-75ae-8821-4b27579ec9b9",
+    "slug": "salomon-dialogue-dual-boa-team-2027",
+    "title": "Salomon Dialogue Dual BOA Team 2027",
+    "model": "Dialogue Dual BOA Team",
+    "year": 2027,
+    "oneLiner": "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "双区 BOA"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "双区 BOA"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-84ec-78d7-997a-49abe216a858",
+    "slug": "salomon-dialogue-dual-boa-wide-2027",
+    "title": "Salomon Dialogue Dual BOA Wide 2027",
+    "model": "Dialogue Dual BOA Wide",
+    "year": 2027,
+    "oneLiner": "官方档案型号；宽楦；双区 BOA。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "宽楦"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "宽楦"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-84f5-755a-9e9b-fb18482cffdb",
+    "slug": "salomon-echo-dual-boa-2027",
+    "title": "Salomon Echo Dual BOA 2027",
+    "model": "Echo Dual BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "双区 BOA"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "双区 BOA"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-84ff-7a5e-8e71-7a744721aa6c",
+    "slug": "salomon-faction-boa-2027",
+    "title": "Salomon Faction BOA 2027",
+    "model": "Faction BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "BOA 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "BOA 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-850a-737b-8ec9-189b0684fe5e",
+    "slug": "salomon-launch-boa-sj-boa-2027",
+    "title": "Salomon Launch BOA SJ BOA 2027",
+    "model": "Launch BOA SJ BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；BOA 配合内部脚跟锁定系统。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "BOA 配合内部脚跟锁定系统"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "BOA 配合内部脚跟锁定系统"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8517-7d76-8654-5cdbc22c6a8e",
+    "slug": "salomon-malamute-dual-boa-2027",
+    "title": "Salomon Malamute Dual BOA 2027",
+    "model": "Malamute Dual BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "双区 BOA"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "双区 BOA"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8520-7e28-8af4-dc28f5616167",
+    "slug": "salomon-titan-boa-2027",
+    "title": "Salomon Titan BOA 2027",
+    "model": "Titan BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "BOA 系带"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "BOA 系带"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-852b-751a-886d-dca65d2bbe24",
+    "slug": "salomon-trek-2027",
+    "title": "Salomon Trek 2027",
+    "model": "Trek",
+    "year": 2027,
+    "oneLiner": "官方档案型号；徒步/登山取向单板雪鞋。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "徒步/登山取向单板雪鞋"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "徒步/登山取向单板雪鞋"
+      }
+    ]
+  },
+  {
+    "id": "01a0d1bf-8534-788d-a572-5dcd0f82600f",
+    "slug": "salomon-x-approach-lace-sj-boa-2027",
+    "title": "Salomon X Approach Lace SJ BOA 2027",
+    "model": "X Approach Lace SJ BOA",
+    "year": 2027,
+    "oneLiner": "官方档案型号；鞋带与 BOA 脚跟锁定组合。尺码与脚感以实际试穿为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-boot",
+    "specs": {
+      "lacingSystem": "鞋带与 BOA 脚跟锁定组合"
+    },
+    "highlights": [
+      {
+        "key": "lacingSystem",
+        "label": "闭合系统",
+        "value": "鞋带与 BOA 脚跟锁定组合"
       }
     ]
   },

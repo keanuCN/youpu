@@ -10,7 +10,9 @@ const outputPath = resolve(
 );
 
 async function fetchPage(page: number): Promise<{ total: number; items: ProductListItem[] }> {
-  const url = `${apiBase}/api/products?page=${page}&pageSize=${PAGE_SIZE}&sort=hot`;
+  // The API currently used by the exporter may predate the unique pagination tie-breaker.
+  // Use the less volatile ordering for offset paging; render() applies its own stable sort.
+  const url = `${apiBase}/api/products?page=${page}&pageSize=${PAGE_SIZE}&sort=new`;
   const response = await fetch(url, { headers: { Accept: "application/json" } });
   if (!response.ok) throw new Error(`目录接口返回 HTTP ${response.status}：${url}`);
   const parsed = productListResponseSchema.parse(normalizeLegacyPriceResponse(await response.json()));

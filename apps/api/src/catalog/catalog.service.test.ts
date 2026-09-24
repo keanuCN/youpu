@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { serializeProductListItem } from './catalog.service';
+import { CatalogService, serializeProductListItem } from './catalog.service';
 
 test('serializes legacy USD product prices as CNY', () => {
   const item = serializeProductListItem({
@@ -28,4 +28,21 @@ test('serializes legacy USD product prices as CNY', () => {
   assert.equal(item.priceMin, 2297);
   assert.equal(item.priceMax, 2736);
   assert.equal(item.priceCurrency, 'CNY');
+});
+
+test('uses a unique slug tie-breaker for offset-paginated product lists', async () => {
+  let observedOrderBy: unknown;
+  const prisma = {
+    product: {
+      count: async () => 0,
+      findMany: async (args: { orderBy: unknown }) => {
+        observedOrderBy = args.orderBy;
+        return [];
+      },
+    },
+    $transaction: async (operations: Promise<unknown>[]) => Promise.all(operations),
+  };
+
+  await new CatalogService(prisma as never).listProducts({ sort: 'hot', page: 1 });
+  assert.deepEqual((observedOrderBy as unknown[]).at(-1), { slug: 'asc' });
 });

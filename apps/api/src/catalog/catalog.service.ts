@@ -184,19 +184,25 @@ export class CatalogService {
   }
 
   private buildOrderBy(sort: ProductSort): Prisma.ProductOrderByWithRelationInput[] {
+    let orderBy: Prisma.ProductOrderByWithRelationInput[];
     switch (sort) {
       case 'new':
-        return [{ year: 'desc' }, { publishedAt: 'desc' }];
+        orderBy = [{ year: 'desc' }, { publishedAt: 'desc' }];
+        break;
       case 'rating':
-        return [{ ratingOverall: { sort: 'desc', nulls: 'last' } }, { ratingCount: 'desc' }];
+        orderBy = [{ ratingOverall: { sort: 'desc', nulls: 'last' } }, { ratingCount: 'desc' }];
+        break;
       case 'hot':
       default:
-        return [
+        orderBy = [
           { stat: { view7d: 'desc' } },
           { favoriteCount: 'desc' },
           { ratingOverall: { sort: 'desc', nulls: 'last' } },
         ];
+        break;
     }
+    // Stable tie-breaker prevents offset-paginated pages from repeating/skipping products.
+    return [...orderBy, { slug: 'asc' }];
   }
 }
 
