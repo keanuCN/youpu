@@ -1,0 +1,219 @@
+[
+  {
+    "slug": "bc-stream-r2-2026",
+    "category": "snowboard",
+    "brand": "bc-stream",
+    "model": "R2",
+    "year": 2026,
+    "url": "https://www.follows.co.jp/SHOP/1213bc-r2.html",
+    "mode": "cheerio",
+    "identityAliases": ["R-2"]
+  },
+  {
+    "slug": "bc-stream-riders-spec-dr-2027",
+    "category": "snowboard",
+    "brand": "bc-stream",
+    "model": "Riders' Spec DR",
+    "year": 2027,
+    "url": "https://www.follows.co.jp/SHOP/sn-sb-bc-004.html",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "bc-stream-rx-2027",
+    "category": "snowboard",
+    "brand": "bc-stream",
+    "model": "RX",
+    "year": 2027,
+    "url": "https://www.follows.co.jp/SHOP/sn-sb-bc-056.html",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "gray-desperado-2024",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "DESPERADO",
+    "year": 2024,
+    "url": "https://graysnowboards.co.jp/product2324/",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "gray-desperado-ti-type-r-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "DESPERADO Ti Type-R",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/product-2627-eng/",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "gray-despe-wood-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "DESPE WOOD",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/tech-2627-eng/",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "ogasaka-fc-2026",
+    "category": "snowboard",
+    "brand": "ogasaka",
+    "model": "FC",
+    "year": 2026,
+    "url": "https://www.ogasaka-snowboard.com/product_25_08_fc.html",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "ogasaka-ct-2026",
+    "category": "snowboard",
+    "brand": "ogasaka",
+    "model": "CT",
+    "year": 2026,
+    "url": "https://www.ogasaka-snowboard.com/product_25_03_ct.html",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "ogasaka-shin-2026",
+    "category": "snowboard",
+    "brand": "ogasaka",
+    "model": "SHIN",
+    "year": 2026,
+    "url": "https://www.ogasaka-snowboard.com/product_25_12_shin-160.html",
+    "mode": "cheerio",
+    "representativeSize": "160"
+  },
+  {
+    "slug": "salomon-huck-knife-2027",
+    "category": "snowboard",
+    "brand": "salomon",
+    "model": "Huck Knife",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/huck-knife-li1304",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "salomon-assassin-pro-2027",
+    "category": "snowboard",
+    "brand": "salomon",
+    "model": "Assassin Pro",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-gb/product/assassin-pro-li1301",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "salomon-assassin-2026",
+    "category": "snowboard",
+    "brand": "salomon",
+    "model": "Assassin",
+    "year": 2026,
+    "url": "https://www.salomon.com/en-us/product/assassin-li1300",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "decathlon-snb-100-2026",
+    "category": "snowboard",
+    "brand": "decathlon",
+    "model": "SNB 100",
+    "year": 2026,
+    "url": "https://www.decathlon.ca/en/p/all-mountain-and-freestyle-snowboard-snb-100/309522/c193m8660203",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "decathlon-all-road-900-2026",
+    "category": "snowboard",
+    "brand": "decathlon",
+    "model": "All Road 900",
+    "year": 2026,
+    "url": "https://www.decathlon.co.uk/p/adults-snowboarding-board-for-slope-and-freeride-all-road-900/332434/c314c29m8643399",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "decathlon-park-ride-500-2026",
+    "category": "snowboard",
+    "brand": "decathlon",
+    "model": "Park & Ride 500",
+    "year": 2026,
+    "url": "https://www.decathlon.co.uk/p/mens-all-mountain-and-freestyle-snowboard-park-and-ride-500-green/306010/c49c1m8938817",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "nitro-beast-2026",
+    "category": "snowboard",
+    "brand": "nitro",
+    "model": "Beast",
+    "year": 2026,
+    "url": "https://www.nitrosnowboards.com/products/beast-snowboard",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "nitro-alternator-2027",
+    "category": "snowboard",
+    "brand": "nitro",
+    "model": "Alternator",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/snowboards-mountain-26-27/products/alternator-snowboard-1",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "burton-talent-scout-2027",
+    "category": "snowboard",
+    "brand": "burton",
+    "model": "Talent Scout",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/womens-burton-talent-scout-camber-snowboard-132181",
+    "mode": "cheerio",
+    "representativeSize": "146"
+  },
+  {
+    "slug": "k2-passport-2027",
+    "category": "snowboard",
+    "brand": "k2",
+    "model": "Passport",
+    "year": 2027,
+    "url": "https://k2snow.com/en-us/p/passport-unisex-snowboard-kb261689",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "k2-excavator-2027",
+    "category": "snowboard",
+    "brand": "k2",
+    "model": "Excavator",
+    "year": 2027,
+    "url": "https://k2snow.com/en-us/p/excavator-unisex-snowboard-kb261687",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "k2-alchemist-2027",
+    "category": "snowboard",
+    "brand": "k2",
+    "model": "Alchemist",
+    "year": 2027,
+    "url": "https://k2snow.com/en-us/landscape-collection",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "jones-twin-sister-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Twin Sister",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/womens-twin-sister-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "149"
+  },
+  {
+    "slug": "jones-dream-weaver-2-0-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Dream Weaver 2.0",
+    "year": 2027,
+    "url": "https://eu.jonessnowboards.com/products/womens-dream-weaver-20-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "148"
+  }
+]

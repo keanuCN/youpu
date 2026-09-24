@@ -1,0 +1,20 @@
+slug: k2-alchemist-2027
+category: snowboard
+brand: k2
+model: Alchemist
+year: 2027
+title: K2 Alchemist 2027
+one_liner: K2 Landscape 系列旗舰定向野雪板，面向专家滑手，以高速稳定、精准控刃和大山地形为主要方向。
+specs:
+  profile: Directional Camber
+  profileFamily: camber
+  shape: Directional
+  scenes:
+    - all-mountain
+    - powder
+    - carving
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/landscape-collection
+  snapshot_url: https://thesnowfever.com/list/snowboards?brand=k2
+status: published

@@ -1,0 +1,25 @@
+slug: salomon-assassin-2026
+category: snowboard
+brand: salomon
+model: Assassin
+year: 2026
+title: Salomon Assassin 2026
+one_liner: 面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；官网当前页未标明板季。
+specs:
+  waistWidth: 248
+  sidecut: 7.1
+  profile: Rock Out Camber
+  profileFamily: hybrid
+  shape: Directional Twin
+  core: Popster
+  fiberglass: BIAX HD
+  base: Sintered EG
+  scenes:
+    - all-mountain
+    - freestyle
+    - powder
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-us/product/assassin-li1300
+  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+status: published

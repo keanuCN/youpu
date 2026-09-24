@@ -1,0 +1,19 @@
+slug: decathlon-park-ride-500-2026
+category: snowboard
+brand: decathlon
+model: Park & Ride 500
+year: 2026
+title: DREAMSCAPE Park & Ride 500 2026
+one_liner: 迪卡侬全山地与自由式型号，官方页面列出标准正拱、加宽及粉雪站位等设计信息。
+specs:
+  profile: Standard Camber with Rocker / Powder Stance
+  profileFamily: hybrid
+  scenes:
+    - all-mountain
+    - freestyle
+    - powder
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/mens-all-mountain-and-freestyle-snowboard-park-and-ride-500-green/306010/c49c1m8938817
+  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+status: published

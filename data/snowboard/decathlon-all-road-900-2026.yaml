@@ -1,0 +1,16 @@
+slug: decathlon-all-road-900-2026
+category: snowboard
+brand: decathlon
+model: All Road 900
+year: 2026
+title: DREAMSCAPE All Road 900 2026
+one_liner: 迪卡侬成人全山地与自由滑取向型号，官方描述覆盖雪道与雪道外滑行；当地页面所列价格不作为人民币价格录入。
+specs:
+  scenes:
+    - all-mountain
+    - powder
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/adults-snowboarding-board-for-slope-and-freeride-all-road-900/332434/c314c29m8643399
+  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+status: published

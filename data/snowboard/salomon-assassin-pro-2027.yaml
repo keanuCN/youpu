@@ -1,0 +1,23 @@
+slug: salomon-assassin-pro-2027
+category: snowboard
+brand: salomon
+model: Assassin Pro
+year: 2027
+title: Salomon Assassin Pro 2027
+one_liner: 全山与自由式兼顾的进阶型号，Rock Out Camber、Ghost Carbon Beams 与 Gunslinger Sidewalls 面向高响应滑行。
+specs:
+  waistWidth: 248
+  sidecut: 7.3
+  profile: Rock Out Camber
+  profileFamily: hybrid
+  shape: Directional Twin
+  core: Ghost Green Core / Popster Core
+  scenes:
+    - all-mountain
+    - freestyle
+    - powder
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-gb/product/assassin-pro-li1301
+  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+status: published

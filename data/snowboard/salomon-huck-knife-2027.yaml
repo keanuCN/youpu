@@ -1,0 +1,23 @@
+slug: salomon-huck-knife-2027
+category: snowboard
+brand: salomon
+model: Huck Knife
+year: 2027
+title: Salomon Huck Knife 2027
+one_liner: 以跳台、道具和公园自由式为主的真双向板，Quad Camber 取向强调弹性、响应和落地稳定。
+specs:
+  length: 156
+  waistWidth: 248
+  sidecut: 7.1
+  profile: Quad Camber
+  profileFamily: camber
+  shape: True Twin
+  core: Popster
+  base: Sintered
+  scenes:
+    - freestyle
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-us/product/huck-knife-li1304
+  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+status: published

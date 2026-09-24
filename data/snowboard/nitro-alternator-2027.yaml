@@ -1,0 +1,27 @@
+slug: nitro-alternator-2027
+category: snowboard
+brand: nitro
+model: Alternator
+year: 2027
+title: Nitro Alternator 2027
+one_liner: 定向全山自由式板，传统正拱与中宽腰设计面向山地跳跃、刻滑和变化雪况。
+specs:
+  length: 157
+  waistWidth: 254
+  stanceSetback: 15
+  profile: Trüe Camber
+  profileFamily: camber
+  shape: Directional
+  core: Powerlite Core
+  fiberglass: Bi-Lite Laminates
+  base: Sintered Speed Formula II
+  flex: 8
+  scenes:
+    - all-mountain
+    - freestyle
+    - powder
+data_source:
+  kind: official
+  origin_url: https://www.nitrosnowboards.com/collections/snowboards-mountain-26-27/products/alternator-snowboard-1
+  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+status: published

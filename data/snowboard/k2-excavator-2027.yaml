@@ -1,0 +1,22 @@
+slug: k2-excavator-2027
+category: snowboard
+brand: k2
+model: Excavator
+year: 2027
+title: K2 Excavator 2027
+one_liner: 宽腰短板思路的全山地型号，主打压雪道深弯与新雪浮力，官方建议按常规雪板尺寸适当缩短选择。
+specs:
+  profile: Directional Camber
+  profileFamily: camber
+  shape: Tapered Directional / Volume Shift
+  core: S1 Core
+  base: Wax-Infused Sintered 4001
+  scenes:
+    - carving
+    - powder
+    - all-mountain
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/excavator-unisex-snowboard-kb261687
+  snapshot_url: https://thesnowfever.com/list/snowboards?brand=k2
+status: published

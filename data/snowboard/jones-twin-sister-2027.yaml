@@ -1,0 +1,25 @@
+slug: jones-twin-sister-2027
+category: snowboard
+brand: jones
+model: Twin Sister
+year: 2027
+title: Women's Twin Sister Snowboard 2027 | Jones
+one_liner: Jones 女款全山地畅销双向板，CamRock 和中等硬度兼顾刻滑、自由式与新雪中的浮力。
+specs:
+  length: 149
+  waistWidth: 244
+  stanceSetback: 20
+  profile: CamRock
+  profileFamily: hybrid
+  shape: Directional Twin
+  core: Master Core
+  fiberglass: Biax Fiberglass
+  scenes:
+    - all-mountain
+    - freestyle
+    - powder
+data_source:
+  kind: official
+  origin_url: https://www.jonessnowboards.com/products/womens-twin-sister-snowboard
+  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+status: published

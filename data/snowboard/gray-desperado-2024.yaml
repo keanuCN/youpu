@@ -1,0 +1,19 @@
+slug: gray-desperado-2024
+category: snowboard
+brand: gray
+model: DESPERADO
+year: 2024
+title: GRAY DESPERADO 2024
+one_liner: GRAY 的软鞋刻滑方向基础型号，采用全玻纤结构；与 Ti、Type-R 等版本分开建档。
+specs:
+  shape: Directional
+  profile: Single Camber
+  profileFamily: camber
+  fiberglass: Full Fiberglass
+  scenes:
+    - carving
+data_source:
+  kind: manual
+  origin_url: https://graysnowboards.co.jp/product2324/
+  snapshot_url: https://thesnowfever.com/list/snowboards?brand=72
+status: published

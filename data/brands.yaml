@@ -65,6 +65,38 @@
   country: DE
   description: 1990 年创立，性价比与全山地定位突出，欧洲市场覆盖广。
 
+- slug: bc-stream
+  name: BC Stream
+  country: JP
+  official_url: https://www.bc-stream.com/
+  description: 日本单板品牌，Riders' Spec 系列与 R2、DR、RX 等型号以刻滑和全山地操控取向受到关注。
+
+- slug: gray
+  name: GRAY
+  country: JP
+  official_url: https://graysnowboards.co.jp/
+  description: 日本单板品牌，产品覆盖 DESPERADO 刻滑系列与自由式雪板。
+
+- slug: ogasaka
+  name: OGASAKA
+  name_cn: 小贺坂
+  country: JP
+  official_url: https://www.ogasaka-snowboard.com/
+  description: 日本单板品牌，雪板在日本国内设计制造，产品覆盖刻滑、全山地与粉雪方向。
+
+- slug: decathlon
+  name: Decathlon
+  name_cn: 迪卡侬
+  country: FR
+  official_url: https://www.decathlon.com/
+  description: 法国综合体育用品品牌，旗下 DREAMSCAPE/WEDZE 滑雪产品覆盖入门及全山地雪板。
+
+- slug: k2
+  name: K2
+  country: US
+  official_url: https://k2snow.com/
+  description: 美国滑雪装备品牌，单板产品覆盖全山地、刻滑、粉雪与自由式等用途。
+
 - slug: yonex
   name: YONEX
   name_cn: 尤尼克斯

@@ -1,0 +1,19 @@
+slug: gray-desperado-ti-type-r-2027
+category: snowboard
+brand: gray
+model: DESPERADO Ti Type-R
+year: 2027
+title: GRAY DESPERADO Ti Type-R 2027
+one_liner: 面向高水平刻滑的金属强化型号，以锤头轮廓、复合侧切和较强边刃支撑为主要特点。
+specs:
+  shape: Directional Hammerhead
+  profile: Vario Camber
+  profileFamily: hybrid
+  core: Wood Core
+  scenes:
+    - carving
+data_source:
+  kind: manual
+  origin_url: https://graysnowboards.co.jp/product-2627-eng/
+  snapshot_url: https://thesnowfever.com/list/snowboards?brand=72
+status: published

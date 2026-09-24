@@ -1,0 +1,26 @@
+slug: k2-passport-2027
+category: snowboard
+brand: k2
+model: Passport
+year: 2027
+title: K2 Passport 2027
+one_liner: 定向全山自由滑板，兼顾压雪道、粉雪和大山地形；中高级滑手可按脚长在标准与宽版之间选择。
+specs:
+  length: 157
+  effectiveEdge: 1180
+  waistWidth: 255
+  stanceSetback: 19
+  profile: Directional Combination Camber
+  profileFamily: hybrid
+  shape: Tapered Directional
+  core: A1 Core
+  base: Sintered 4000
+  scenes:
+    - all-mountain
+    - powder
+    - carving
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/passport-unisex-snowboard-kb261689
+  snapshot_url: https://thesnowfever.com/list/snowboards?brand=k2
+status: published

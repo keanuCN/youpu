@@ -1,0 +1,17 @@
+slug: bc-stream-rx-2027
+category: snowboard
+brand: bc-stream
+model: RX
+year: 2027
+title: BC Stream RX 2027
+one_liner: 以深弯和刻滑控制为核心，26/27 款增加 Hard Flex 选项；具体几何数据须按尺码读取。
+specs:
+  shape: Directional
+  scenes:
+    - carving
+    - all-mountain
+data_source:
+  kind: manual
+  origin_url: https://www.follows.co.jp/SHOP/sn-sb-bc-056.html
+  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+status: published

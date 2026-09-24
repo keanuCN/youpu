@@ -1,0 +1,21 @@
+slug: gray-despe-wood-2027
+category: snowboard
+brand: gray
+model: DESPE WOOD
+year: 2027
+title: GRAY DESPE WOOD 2027
+one_liner: 木芯与玻纤结构的刻滑入门取向型号，26/27 全长度更新为 Active Camber，并提供部分加宽尺寸。
+specs:
+  shape: Directional
+  profile: Active Camber
+  profileFamily: camber
+  core: Poplar / Paulownia Composite Wood Core
+  fiberglass: Full Fiberglass
+  scenes:
+    - carving
+    - all-mountain
+data_source:
+  kind: manual
+  origin_url: https://graysnowboards.co.jp/tech-2627-eng/
+  snapshot_url: https://thesnowfever.com/list/snowboards?brand=72
+status: published
