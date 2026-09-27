@@ -1,6 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import * as adminApp from './admin-app';
+
+test('admin image workflow status reflects TOS upload and source review', () => {
+  const source = readFileSync(fileURLToPath(new URL('./admin-app.tsx', import.meta.url)), 'utf8');
+  assert.doesNotMatch(source, /COS 上传与裁切留到后续版本/);
+  assert.match(source, /TOS 上传已可在产品编辑中使用，图片来源与版权仍需审核/);
+});
 
 test('buildProductPayload always emits CNY for product prices', () => {
   const { buildProductPayload } = adminApp as unknown as {

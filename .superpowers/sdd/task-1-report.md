@@ -138,3 +138,21 @@ git diff --check
 
 - `apps/api/prisma/schema.prisma`
 - `.superpowers/sdd/task-1-report.md`（本报告）
+# Task 1: Correct the admin image workflow status
+
+## Change
+
+Updated the admin image `BoundaryItem` to show the current TOS upload workflow in the product editor and note that image source and rights still need review. Added a source-text regression assertion for the obsolete COS wording and the new workflow wording. No upload controls or behavior were changed.
+
+## Test evidence
+
+The brief's exact command, `pnpm --filter @youpu/admin exec tsx --test src/components/admin-app.test.ts`, was attempted before and after implementation. Both attempts were blocked because `tsx` is not installed or resolvable in this worktree (and the same was true in the parent checkout).
+
+Used `pnpm dlx tsx` as a temporary runner without changing project manifests. To verify RED after the code change, temporarily substituted the old COS wording into the UI source, ran the test, and restored the file immediately afterward.
+
+- RED: `pnpm dlx tsx --test C:\Users\40683\Desktop\Code\project\youpu\.worktrees\admin-information-architecture\apps\admin\src\components\admin-app.test.ts` — 2 passed, 1 failed; the regression test failed because the source contained `COS 上传与裁切留到后续版本`.
+- GREEN: `pnpm dlx tsx --test src/components/admin-app.test.ts` (from `apps/admin`) — 3 passed, 0 failed, including the new regression assertion.
+
+## Scope
+
+Only `apps/admin/src/components/admin-app.tsx` and `apps/admin/src/components/admin-app.test.ts` were changed for the implementation. Existing unrelated untracked migration files were left untouched.

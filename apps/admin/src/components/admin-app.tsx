@@ -1378,7 +1378,7 @@ export function AdminApp() {
             <div className="boundary-list">
               <BoundaryItem state="现在" title="产品 / 品牌 / 类目 CRUD" detail="共享 schema 校验，产品支持草稿与发布状态。" />
               <BoundaryItem state="现在" title="动态参数表单" detail="字段来自类目的 spec_schema，不重复维护字段定义。" />
-              <BoundaryItem state="手工处理" title="图片上传" detail="当前录入图片 URL；质量筛选已可用，COS 上传与裁切留到后续版本。" />
+              <BoundaryItem state="现在" title="图片上传" detail="TOS 上传已可在产品编辑中使用，图片来源与版权仍需审核。" />
               <BoundaryItem state="现在" title="操作审计基础版" detail="后台变更会留下操作人、动作和前后快照；多账号权限属于后续版本。" />
             </div>
           </section>
