@@ -30,20 +30,20 @@
 - Preserve the existing single-image upload control and its behavior.
 - Replace the old "手工处理 / COS 上传与裁切留到后续版本" status with copy that accurately describes the available TOS upload and source/rights review workflow.
 
-- [ ] **Step 1: Add a failing regression assertion**
+- [x] **Step 1: Add a failing regression assertion**
 
 Add a source-text assertion using the existing test style that the obsolete COS copy is absent and the TOS upload workflow is represented.
 
-- [ ] **Step 2: Run the focused test and verify the expected failure**
+- [x] **Step 2: Run the focused test and verify the expected failure**
 
 Run `pnpm --filter @youpu/admin exec tsx --test src/components/admin-app.test.ts`.
 Expected: the new assertion fails because the obsolete COS copy remains.
 
-- [ ] **Step 3: Update the status copy minimally**
+- [x] **Step 3: Update the status copy minimally**
 
 Change only the stale `BoundaryItem` copy to state that TOS upload is available in the product editor and image source/rights still require review.
 
-- [ ] **Step 4: Re-run the focused admin test**
+- [x] **Step 4: Re-run the focused admin test**
 
 Run `pnpm --filter @youpu/admin exec tsx --test src/components/admin-app.test.ts`.
 Expected: all tests pass, including the new regression assertion.
@@ -61,50 +61,50 @@ Expected: all tests pass, including the new regression assertion.
 - `applyImageMigrationManifest(manifest, options): Promise<ImageMigrationManifest>` receives `dataDir`, `upload(buffer, contentType)`, and an injectable `fetchImage(url)` dependency; it mutates only approved `pending` or `failed` entries, persists successes/errors in the returned manifest, and checks the live YAML URL before writing. Failed entries are retried only when the operator reruns apply with that row still approved.
 - CLI commands are `pnpm --filter @youpu/api tos:images:plan -- --out ../../data/tmp/tos-image-migration.json` and `pnpm --filter @youpu/api tos:images:apply -- --manifest ../../data/tmp/tos-image-migration.json --apply`.
 
-- [ ] **Step 1: Write tests for manifest planning and unapproved defaults**
+- [x] **Step 1: Write tests for manifest planning and unapproved defaults**
 
 Use a temporary data directory containing one product YAML file with two image rows. Assert both external HTTPS rows appear, keep slug/file/index/source data, start unapproved and pending, and an existing TOS URL is excluded.
 
-- [ ] **Step 2: Run the migration test and verify it fails for the missing module**
+- [x] **Step 2: Run the migration test and verify it fails for the missing module**
 
 Run `pnpm --filter @youpu/api exec tsx --test src/seed/tos-image-migration.test.ts`.
 Expected: fail because the manifest functions do not exist yet.
 
-- [ ] **Step 3: Implement manifest creation and argument parsing**
+- [x] **Step 3: Implement manifest creation and argument parsing**
 
 Scan `data/<category>/*.yaml` using `parseDocument`; include only HTTPS image URLs whose origin differs from `TOS_PUBLIC_BASE_URL`; derive stable IDs from file path, image index, and URL; initialize every entry with `approved: false` and `status: 'pending'`.
 
-- [ ] **Step 4: Add tests for approval gating and URL mismatch protection**
+- [x] **Step 4: Add tests for approval gating and URL mismatch protection**
 
 Assert an unapproved row causes zero downloads/uploads and no YAML changes even when apply is invoked; assert an approved row whose current YAML URL differs from `originalUrl` becomes failed without a download or upload.
 
-- [ ] **Step 5: Run those tests and verify the expected failures**
+- [x] **Step 5: Run those tests and verify the expected failures**
 
 Run `pnpm --filter @youpu/api exec tsx --test src/seed/tos-image-migration.test.ts`.
 Expected: failures identify the missing apply behavior, not fixture setup errors.
 
-- [ ] **Step 6: Implement safe download, upload, and YAML update behavior**
+- [x] **Step 6: Implement safe download, upload, and YAML update behavior**
 
 Require HTTPS and no redirects; enforce an abort timeout of 20 seconds and a streaming 10 MiB cap; accept only JPEG, PNG, and WebP content types; call the existing image upload service; re-read the YAML after upload and recheck the product slug and exact original image URL before changing only `images[imageIndex].url`; leave the YAML source note unchanged; refuse paths outside `dataDir`; persist each entry's success/error in the manifest after processing it.
 
-- [ ] **Step 7: Test success, rejection, and resumability**
+- [x] **Step 7: Test success, rejection, and resumability**
 
 With injected fetch and upload dependencies, assert success rewrites only the selected image URL, leaves the source note unchanged, and keeps the original URL and note in the manifest; an unsupported MIME type fails without upload; and a completed row is not uploaded a second time.
 
-- [ ] **Step 8: Run focused migration tests**
+- [x] **Step 8: Run focused migration tests**
 
 Run `pnpm --filter @youpu/api exec tsx --test src/seed/tos-image-migration.test.ts`.
 Expected: all migration tests pass.
 
-- [ ] **Step 9: Add explicit plan/apply CLI commands**
+- [x] **Step 9: Add explicit plan/apply CLI commands**
 
 The plan command writes a JSON manifest only under `data/tmp/`, rejects symlinked manifest directories/files, and prints counts by status without contacting image sources or TOS. The apply command requires both `--apply` and `--manifest`; it loads API `.env`, rejects a manifest whose TOS public URL differs from current API configuration, uses `AdminImageUploadService.upload`, writes progress back to the manifest after each row, and exits nonzero only when an approved row fails. Missing or malformed flags must print Chinese usage and exit nonzero.
 
-- [ ] **Step 10: Add a CLI safety test**
+- [x] **Step 10: Add a CLI safety test**
 
 Test argument parsing so apply without `--apply`, or without a manifest path, is rejected and the plan mode does not instantiate the TOS uploader.
 
-- [ ] **Step 11: Run the focused CLI and migration tests**
+- [x] **Step 11: Run the focused CLI and migration tests**
 
 Run `pnpm --filter @youpu/api exec tsx --test src/seed/tos-image-migration.test.ts`.
 Expected: all tests pass and no network calls are made.
@@ -118,14 +118,14 @@ Expected: all tests pass and no network calls are made.
 - Document review-manifest generation, manual approval, applying a small batch, resuming failures, and the prohibition on assuming image copyright permission.
 - Explain that migration updates seed YAML only; syncing each migrated product to the database uses `pnpm --filter @youpu/api seed:product -- ../../data/<category>/<file>.yaml --update-existing`, which refreshes all product fields from that seed and requires the file to be current.
 
-- [ ] **Step 1: Document exact plan and apply commands**
+- [x] **Step 1: Document exact plan and apply commands**
 
 Show the default plan command writing under ignored `data/tmp/`, explain that all entries default to unapproved, and require marking only rights-reviewed rows `approved: true` before applying with `--apply`. Explain that apply updates YAML only and show the exact per-file single-product database sync command, including the warning that it updates all product fields from that YAML file.
 
-- [ ] **Step 2: Verify no-image and TOS-image seed data remains valid**
+- [x] **Step 2: Verify no-image and TOS-image seed data remains valid**
 
 Run `pnpm --filter @youpu/api validate:data` and the focused migration tests. Expected: migration tests pass; record any seed-validation baseline errors separately and confirm none of the reported data files changed in this branch.
 
-- [ ] **Step 3: Check final diff and tracked-secret safety**
+- [x] **Step 3: Check final diff and tracked-secret safety**
 
 Run `git diff --check`; inspect the changed-file list and verify no local `.env`, access key, or secret key appears in tracked changes.
