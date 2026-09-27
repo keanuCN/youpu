@@ -112,6 +112,26 @@ pnpm dev:admin     # 另开终端启动后台：3002
 
 上传仅接受 JPEG、PNG、WebP 静态图片，单张原图最大 10 MB；服务端会自动纠正方向、限制最长边为 1600 像素并转为 WebP（质量 82），再保存到 `product-images/` 路径。上传 API 为需管理员认证的 `POST /api/admin/product-images`。
 
+已有 seed 图片需要迁移时，先生成仅供审核的清单；默认不会下载、上传或改写商品资料：
+
+```bash
+pnpm --filter @youpu/api tos:images:plan -- --out ../../data/tmp/tos-image-migration.json
+```
+
+逐项核实图片使用权后，只将确认可迁移的条目设为 `"approved": true`，再小批执行：
+
+```bash
+pnpm --filter @youpu/api tos:images:apply -- --manifest ../../data/tmp/tos-image-migration.json --apply
+```
+
+迁移会拒绝非 HTTPS、重定向、非 JPEG/PNG/WebP 或大于 10 MiB 的来源；只更新仍与审核清单一致的 YAML 图片地址，原始 URL 和来源备注保存在结果清单中。失败条目可修复后重试，已完成条目不会重复上传。迁移清单位于 Git 忽略的 `data/tmp/`，需要长期留档时请自行归档。迁移只改 seed YAML；要同步数据库时，先运行 `pnpm --filter @youpu/api validate:data`，再对清单里每个已迁移的商品文件执行单品同步：
+
+```bash
+pnpm --filter @youpu/api seed:product -- ../../data/<类目目录>/<商品文件>.yaml --update-existing
+```
+
+单品同步会按 YAML 更新该商品的其他字段，因此执行前请确认这份 seed 是该商品的最新正式资料。
+
 默认启动 PostgreSQL + Redis 即可完成基础开发；Elasticsearch 只用于增强搜索和分面，不是 API 可用的必需依赖。
 健康检查 `http://localhost:3001/api/health` 会返回 `db`、`redis`、`es` 三项状态，其中 `es=false` 不代表 API 不可用。
 
