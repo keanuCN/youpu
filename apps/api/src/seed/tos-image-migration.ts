@@ -1,5 +1,5 @@
 import { createHash, randomUUID } from 'node:crypto';
-import { lstat, mkdir, readdir, readFile, realpath, rename, writeFile } from 'node:fs/promises';
+import { link, lstat, mkdir, open, readdir, readFile, realpath, rename, unlink, writeFile } from 'node:fs/promises';
 import { basename, dirname, relative, resolve, sep } from 'node:path';
 import { parseDocument } from 'yaml';
 import { z } from 'zod';
@@ -8,7 +8,7 @@ const MAX_IMAGE_BYTES = 10 * 1024 * 1024;
 const DOWNLOAD_TIMEOUT_MS = 20_000;
 const IMAGE_CONTENT_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp']);
 
-export type ImageMigrationStatus = 'pending' | 'done' | 'failed';
+export type ImageMigrationStatus = 'pending' | 'uploaded' | 'done' | 'failed';
 
 export interface ImageMigrationEntry {
   id: string;
@@ -54,9 +54,11 @@ const migrationEntrySchema = z.object({
   originalUrl: z.string().url().refine(isHttpsUrl, '只允许 HTTPS 原始地址'),
   sourceNote: z.string(),
   approved: z.boolean(),
-  status: z.enum(['pending', 'done', 'failed']),
+  status: z.enum(['pending', 'uploaded', 'done', 'failed']),
   migratedUrl: z.string().url().optional(),
   error: z.string().optional(),
+}).refine((entry) => entry.status !== 'uploaded' || Boolean(entry.migratedUrl), {
+  message: 'uploaded 状态必须包含 migratedUrl 检查点',
 });
 
 const migrationManifestSchema = z.object({
@@ -68,6 +70,66 @@ const migrationManifestSchema = z.object({
 
 export function parseImageMigrationManifest(value: unknown): ImageMigrationManifest {
   return migrationManifestSchema.parse(value);
+}
+
+export async function writeMigrationManifestAtomically(
+  path: string,
+  value: unknown,
+  createTempId: () => string = randomUUID,
+): Promise<void> {
+  await mkdir(dirname(path), { recursive: true });
+  const temporaryPath = `${path}.${createTempId()}.tmp`;
+  let created = false;
+  try {
+    await writeFile(temporaryPath, `${JSON.stringify(value, null, 2)}\n`, { encoding: 'utf8', flag: 'wx' });
+    created = true;
+    await rename(temporaryPath, path);
+    created = false;
+  } catch (error) {
+    if (created) await unlink(temporaryPath).catch(() => undefined);
+    if ((error as NodeJS.ErrnoException).code === 'EEXIST') {
+      throw new Error('迁移清单文件已存在或临时文件名冲突；请更换输出文件名后重试');
+    }
+    throw error;
+  }
+}
+
+export async function writeNewMigrationManifestAtomically(path: string, value: unknown): Promise<void> {
+  await mkdir(dirname(path), { recursive: true });
+  const temporaryPath = `${path}.${randomUUID()}.tmp`;
+  let created = false;
+  try {
+    await writeFile(temporaryPath, `${JSON.stringify(value, null, 2)}\n`, { encoding: 'utf8', flag: 'wx' });
+    created = true;
+    await link(temporaryPath, path);
+  } catch (error) {
+    if (created) await unlink(temporaryPath).catch(() => undefined);
+    if ((error as NodeJS.ErrnoException).code === 'EEXIST') {
+      throw new Error('迁移清单文件已存在；请使用新的文件名保留旧审核记录');
+    }
+    throw error;
+  }
+  if (created) await unlink(temporaryPath).catch(() => undefined);
+}
+
+export async function withImageMigrationLock<T>(lockPath: string, action: () => Promise<T>): Promise<T> {
+  await mkdir(dirname(lockPath), { recursive: true });
+  let lock;
+  try {
+    lock = await open(lockPath, 'wx', 0o600);
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'EEXIST') {
+      throw new Error(`已有迁移任务正在运行或存在未清理的锁文件：${lockPath}`);
+    }
+    throw error;
+  }
+  try {
+    await lock.writeFile(`${process.pid}\n${new Date().toISOString()}\n`);
+    return await action();
+  } finally {
+    await lock.close();
+    await unlink(lockPath).catch(() => undefined);
+  }
 }
 
 export async function resolveImageMigrationManifestPath(dataDir: string, requestedPath: string): Promise<string> {
@@ -152,40 +214,83 @@ export async function applyImageMigrationManifest(
   const publicBase = normalizeBaseUrl(manifest.publicBaseUrl);
 
   for (const entry of manifest.entries) {
-    if (!entry.approved || entry.status === 'done' || (entry.status !== 'pending' && entry.status !== 'failed')) continue;
+    if (!entry.approved || entry.status === 'done' || !['pending', 'uploaded', 'failed'].includes(entry.status)) continue;
     try {
       const absoluteFile = await resolveManifestFile(root, entry.file);
-      const document = parseDocument(await readFile(absoluteFile, 'utf8'));
-      if (document.errors.length) throw new Error(`无法解析商品资料：${document.errors.map((error) => error.message).join('; ')}`);
-      if (document.get('slug') !== entry.productSlug || document.getIn(['images', entry.imageIndex, 'url']) !== entry.originalUrl) {
-        throw new Error('商品图片地址或商品标识已变化，请重新生成迁移清单');
-      }
+      const fileLockId = createHash('sha256').update(absoluteFile).digest('hex').slice(0, 32);
+      await withImageMigrationLock(resolve(root, 'tmp', `tos-image-${fileLockId}.lock`), async () => {
+        if (entry.migratedUrl) {
+          await reconcileUploadedImage(entry, absoluteFile, publicBase);
+          entry.status = 'done';
+          delete entry.error;
+          await persistProgress(options.onEntryUpdated, manifest);
+          return;
+        }
 
-      const downloaded = await options.fetchImage(entry.originalUrl);
-      const contentType = normalizeImageContentType(downloaded.contentType);
-      if (!IMAGE_CONTENT_TYPES.has(contentType)) throw new Error(`不支持的图片类型：${contentType || '未知'}`);
-      if (!downloaded.buffer.length || downloaded.buffer.length > MAX_IMAGE_BYTES) throw new Error('图片为空或超过 10 MiB');
+        const document = parseDocument(await readFile(absoluteFile, 'utf8'));
+        if (document.errors.length) throw new Error(`无法解析商品资料：${document.errors.map((error) => error.message).join('; ')}`);
+        if (document.get('slug') !== entry.productSlug || document.getIn(['images', entry.imageIndex, 'url']) !== entry.originalUrl) {
+          throw new Error('商品图片地址或商品标识已变化，请重新生成迁移清单');
+        }
 
-      const uploaded = await options.upload(downloaded.buffer, contentType);
-      if (!isTosObjectUrl(uploaded.url, publicBase)) throw new Error('上传返回地址不属于配置的 TOS 公共地址');
-      const latestDocument = parseDocument(await readFile(absoluteFile, 'utf8'));
-      if (latestDocument.errors.length) throw new Error(`上传后商品资料无法解析：${latestDocument.errors.map((item) => item.message).join('; ')}`);
-      if (latestDocument.get('slug') !== entry.productSlug || latestDocument.getIn(['images', entry.imageIndex, 'url']) !== entry.originalUrl) {
-        throw new Error('上传期间商品图片地址或商品标识发生变化，已保留当前资料，请重新生成迁移清单');
-      }
-      latestDocument.setIn(['images', entry.imageIndex, 'url'], uploaded.url);
-      await writeYamlAtomically(absoluteFile, latestDocument.toString());
-      entry.status = 'done';
-      entry.migratedUrl = uploaded.url;
-      delete entry.error;
+        const downloaded = await options.fetchImage(entry.originalUrl);
+        const contentType = normalizeImageContentType(downloaded.contentType);
+        if (!IMAGE_CONTENT_TYPES.has(contentType)) throw new Error(`不支持的图片类型：${contentType || '未知'}`);
+        if (!downloaded.buffer.length || downloaded.buffer.length > MAX_IMAGE_BYTES) throw new Error('图片为空或超过 10 MiB');
+
+        const uploaded = await options.upload(downloaded.buffer, contentType);
+        if (!isTosObjectUrl(uploaded.url, publicBase)) throw new Error('上传返回地址不属于配置的 TOS 公共地址');
+        entry.migratedUrl = uploaded.url;
+        entry.status = 'uploaded';
+        delete entry.error;
+        await persistProgress(options.onEntryUpdated, manifest);
+
+        await reconcileUploadedImage(entry, absoluteFile, publicBase);
+        entry.status = 'done';
+        delete entry.error;
+      });
     } catch (error) {
+      if (error instanceof MigrationProgressPersistenceError) throw error.cause;
       entry.status = 'failed';
       entry.error = (error instanceof Error ? error.message : String(error)).slice(0, 500);
     }
-    await options.onEntryUpdated?.(manifest);
+    await persistProgress(options.onEntryUpdated, manifest);
   }
 
   return manifest;
+}
+
+class MigrationProgressPersistenceError extends Error {
+  constructor(cause: unknown) {
+    super('无法保存图片迁移进度', { cause });
+  }
+}
+
+async function persistProgress(
+  callback: ApplyImageMigrationOptions['onEntryUpdated'],
+  manifest: ImageMigrationManifest,
+): Promise<void> {
+  try {
+    await callback?.(manifest);
+  } catch (error) {
+    throw new MigrationProgressPersistenceError(error);
+  }
+}
+
+async function reconcileUploadedImage(entry: ImageMigrationEntry, file: string, publicBase: string): Promise<void> {
+  const migratedUrl = entry.migratedUrl;
+  if (!migratedUrl || !isTosObjectUrl(migratedUrl, publicBase)) {
+    throw new Error('迁移检查点中的目标地址无效');
+  }
+  const originalContents = await readFile(file, 'utf8');
+  const document = parseDocument(originalContents);
+  if (document.errors.length) throw new Error(`无法解析商品资料：${document.errors.map((error) => error.message).join('; ')}`);
+  if (document.get('slug') !== entry.productSlug) throw new Error('商品标识已变化，已保留已上传图片，请人工核对');
+  const currentUrl = document.getIn(['images', entry.imageIndex, 'url']);
+  if (currentUrl === migratedUrl) return;
+  if (currentUrl !== entry.originalUrl) throw new Error('商品图片地址已变化，已保留已上传图片，请人工核对');
+  document.setIn(['images', entry.imageIndex, 'url'], migratedUrl);
+  await replaceYamlIfUnchanged(file, document.toString(), originalContents);
 }
 
 export async function downloadRemoteImage(
@@ -314,14 +419,18 @@ async function resolveManifestFile(root: string, manifestPath: string): Promise<
   return resolvedFile;
 }
 
-async function writeYamlAtomically(file: string, contents: string): Promise<void> {
+export async function replaceYamlIfUnchanged(file: string, contents: string, expectedCurrentContents: string): Promise<void> {
   const temporaryFile = resolve(dirname(file), `.tos-image-${randomUUID()}.tmp`);
+  let created = false;
   try {
     await writeFile(temporaryFile, contents, { encoding: 'utf8', flag: 'wx' });
+    created = true;
+    const currentContents = await readFile(file, 'utf8');
+    if (currentContents !== expectedCurrentContents) throw new Error('商品资料在写入前又发生变化，已保留当前文件');
     await rename(temporaryFile, file);
+    created = false;
   } catch (error) {
-    const { unlink } = await import('node:fs/promises');
-    await unlink(temporaryFile).catch(() => undefined);
+    if (created) await unlink(temporaryFile).catch(() => undefined);
     throw error;
   }
 }

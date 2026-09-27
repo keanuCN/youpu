@@ -124,11 +124,13 @@ pnpm --filter @youpu/api tos:images:plan -- --out ../../data/tmp/tos-image-migra
 pnpm --filter @youpu/api tos:images:apply -- --manifest ../../data/tmp/tos-image-migration.json --apply
 ```
 
-迁移会拒绝非 HTTPS、重定向、非 JPEG/PNG/WebP 或大于 10 MiB 的来源；只更新仍与审核清单一致的 YAML 图片地址，原始 URL 和来源备注保存在结果清单中。失败条目可修复后重试，已完成条目不会重复上传。迁移清单位于 Git 忽略的 `data/tmp/`，需要长期留档时请自行归档。迁移只改 seed YAML；要同步数据库时，先运行 `pnpm --filter @youpu/api validate:data`，再对清单里每个已迁移的商品文件执行单品同步：
+迁移会拒绝非 HTTPS、重定向、非 JPEG/PNG/WebP 或大于 10 MiB 的来源；只更新仍与审核清单一致的 YAML 图片地址，原始 URL 和来源备注保存在结果清单中。失败条目可修复后重试，已完成条目不会重复上传；上传成功后会先保存可续跑检查点，再更新 YAML。新生成的审核清单不会覆盖同名旧清单，请使用新的输出文件名以保留审核记录。迁移清单位于 Git 忽略的 `data/tmp/`，需要长期留档时请自行归档。迁移只改 seed YAML；要同步数据库时，先运行 `pnpm --filter @youpu/api validate:data`，再对清单里每个已迁移的商品文件执行单品同步：
 
 ```bash
 pnpm --filter @youpu/api seed:product -- ../../data/<类目目录>/<商品文件>.yaml --update-existing
 ```
+
+并行迁移会通过 `data/tmp/` 锁文件串行保护同一审核清单和商品文件。若进程被强制结束，可能遗留 `.lock` 文件；先确认没有图片迁移进程运行，再删除对应锁文件后重试。
 
 单品同步会按 YAML 更新该商品的其他字段，因此执行前请确认这份 seed 是该商品的最新正式资料。
 

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { mkdtemp, mkdir, readFile, rm, symlink, writeFile } from 'node:fs/promises';
+import { mkdtemp, mkdir, readFile, readdir, rm, symlink, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import test from 'node:test';
@@ -15,6 +15,10 @@ import {
   parseImageMigrationManifest,
   resolveImageMigrationManifestPath,
   summarizeImageMigration,
+  replaceYamlIfUnchanged,
+  withImageMigrationLock,
+  writeMigrationManifestAtomically,
+  writeNewMigrationManifestAtomically,
   type ImageMigrationManifest,
 } from './tos-image-migration';
 
@@ -141,6 +145,165 @@ test('updates only an approved image and retains its source note and original UR
   }
 });
 
+test('persists uploaded URL before YAML and resumes without downloading or uploading again', async () => {
+  const fixture = await createFixture();
+  try {
+    const manifest = await createImageMigrationManifest(fixture.dataDir, 'https://youpu.tos-cn-beijing.volces.com');
+    itemAt(manifest.entries, 0).approved = true;
+    let checkpoint: ImageMigrationManifest | undefined;
+    await assert.rejects(applyImageMigrationManifest(manifest, {
+      dataDir: fixture.dataDir,
+      fetchImage: async () => ({ buffer: Buffer.from('png'), contentType: 'image/png' }),
+      upload: async () => ({ url: 'https://youpu.tos-cn-beijing.volces.com/product-images/resume.webp' }),
+      onEntryUpdated: async (progress) => {
+        if (itemAt(progress.entries, 0).status === 'uploaded') {
+          checkpoint = structuredClone(progress);
+          throw new Error('simulated interruption after checkpoint');
+        }
+      },
+    }), /simulated interruption/);
+
+    assert.equal(itemAt(checkpoint!.entries, 0).migratedUrl, 'https://youpu.tos-cn-beijing.volces.com/product-images/resume.webp');
+    const beforeResume = parse(await readFile(fixture.file, 'utf8')) as { images: Array<{ url: string }> };
+    assert.equal(itemAt(beforeResume.images, 0).url, 'https://images.example.com/front.png');
+
+    const resumed = await applyImageMigrationManifest(checkpoint!, {
+      dataDir: fixture.dataDir,
+      fetchImage: async () => assert.fail('checkpoint recovery must not redownload'),
+      upload: async () => assert.fail('checkpoint recovery must not reupload'),
+    });
+    const finalYaml = parse(await readFile(fixture.file, 'utf8')) as { images: Array<{ url: string }> };
+    assert.equal(itemAt(resumed.entries, 0).status, 'done');
+    assert.equal(itemAt(finalYaml.images, 0).url, itemAt(checkpoint!.entries, 0).migratedUrl);
+  } finally {
+    await fixture.dispose();
+  }
+});
+
+test('refuses to overwrite an existing review manifest', async () => {
+  const parent = await mkdtemp(join(tmpdir(), 'youpu-manifest-no-overwrite-'));
+  const target = join(parent, 'review.json');
+  const existing = '{"approved":true}\n';
+  try {
+    await writeFile(target, existing);
+    await assert.rejects(writeNewMigrationManifestAtomically(target, { approved: false }), /已存在/);
+    assert.equal(await readFile(target, 'utf8'), existing);
+  } finally {
+    await rm(parent, { recursive: true, force: true });
+  }
+});
+
+test('atomically updates an existing apply manifest for progress checkpoints', async () => {
+  const parent = await mkdtemp(join(tmpdir(), 'youpu-manifest-progress-'));
+  const target = join(parent, 'review.json');
+  try {
+    await writeFile(target, '{"step":1}\n');
+    await writeMigrationManifestAtomically(target, { step: 2 });
+    assert.deepEqual(JSON.parse(await readFile(target, 'utf8')), { step: 2 });
+    assert.deepEqual((await readdir(parent)).sort(), ['review.json']);
+  } finally {
+    await rm(parent, { recursive: true, force: true });
+  }
+});
+
+test('exclusive migration lock rejects a second concurrent apply and releases after completion', async () => {
+  const parent = await mkdtemp(join(tmpdir(), 'youpu-image-lock-'));
+  const lockPath = join(parent, 'review.json.lock');
+  let finishFirst: (() => void) | undefined;
+  let signalEntered: (() => void) | undefined;
+  const entered = new Promise<void>((resolve) => { signalEntered = resolve; });
+  const first = withImageMigrationLock(lockPath, () => new Promise<void>((resolve) => {
+    finishFirst = resolve;
+    signalEntered?.();
+  }));
+  void first.catch(() => undefined);
+  try {
+    await entered;
+    await assert.rejects(withImageMigrationLock(lockPath, async () => undefined), /已有迁移任务正在运行/);
+    finishFirst?.();
+    await first;
+    await withImageMigrationLock(lockPath, async () => undefined);
+  } finally {
+    finishFirst?.();
+    await first.catch(() => undefined);
+    await rm(parent, { recursive: true, force: true });
+  }
+});
+
+test('concurrent migration runs for the same YAML do not download or upload the same row twice', async () => {
+  const fixture = await createFixture();
+  let signalDownload: (() => void) | undefined;
+  const downloadStarted = new Promise<void>((resolve) => { signalDownload = resolve; });
+  let finishDownload: (() => void) | undefined;
+  const downloadGate = new Promise<void>((resolve) => { finishDownload = resolve; });
+  let first: Promise<ImageMigrationManifest> | undefined;
+  let downloads = 0;
+  let uploads = 0;
+  try {
+    const manifest = await createImageMigrationManifest(fixture.dataDir, 'https://youpu.tos-cn-beijing.volces.com');
+    itemAt(manifest.entries, 0).approved = true;
+    first = applyImageMigrationManifest(structuredClone(manifest), {
+      dataDir: fixture.dataDir,
+      fetchImage: async () => {
+        downloads += 1;
+        signalDownload?.();
+        await downloadGate;
+        return { buffer: Buffer.from('png'), contentType: 'image/png' };
+      },
+      upload: async () => { uploads += 1; return { url: 'https://youpu.tos-cn-beijing.volces.com/product-images/once.webp' }; },
+    });
+    await downloadStarted;
+    const second = await applyImageMigrationManifest(structuredClone(manifest), {
+      dataDir: fixture.dataDir,
+      fetchImage: async () => { downloads += 1; return { buffer: Buffer.from('png'), contentType: 'image/png' }; },
+      upload: async () => { uploads += 1; return { url: 'https://youpu.tos-cn-beijing.volces.com/product-images/twice.webp' }; },
+    });
+    assert.equal(itemAt(second.entries, 0).status, 'failed');
+    assert.match(itemAt(second.entries, 0).error ?? '', /已有迁移任务正在运行/);
+    finishDownload?.();
+    const completed = await first;
+    assert.equal(itemAt(completed.entries, 0).status, 'done');
+    assert.equal(downloads, 1);
+    assert.equal(uploads, 1);
+  } finally {
+    finishDownload?.();
+    await first?.catch(() => undefined);
+    await fixture.dispose();
+  }
+});
+
+test('YAML replacement refuses to overwrite a file changed after its snapshot was read', async () => {
+  const parent = await mkdtemp(join(tmpdir(), 'youpu-yaml-write-race-'));
+  const file = join(parent, 'product.yaml');
+  try {
+    await writeFile(file, 'title: concurrent editor change\n');
+    await assert.rejects(
+      replaceYamlIfUnchanged(file, 'title: migration snapshot\n', 'title: original\n'),
+      /商品资料在写入前又发生变化/,
+    );
+    assert.equal(await readFile(file, 'utf8'), 'title: concurrent editor change\n');
+    assert.deepEqual(await readdir(parent), ['product.yaml']);
+  } finally {
+    await rm(parent, { recursive: true, force: true });
+  }
+});
+
+test('atomic manifest writer uses exclusive temp creation and preserves a pre-existing temp path', async () => {
+  const parent = await mkdtemp(join(tmpdir(), 'youpu-manifest-temp-link-'));
+  const target = join(parent, 'review.json');
+  const outside = join(parent, 'outside.txt');
+  const planted = `${target}.fixed.tmp`;
+  try {
+    await writeFile(outside, 'must remain unchanged');
+    await writeFile(planted, 'planted file must remain unchanged');
+    await assert.rejects(writeMigrationManifestAtomically(target, { harmless: true }, () => 'fixed'), /临时文件名冲突/);
+    assert.equal(await readFile(outside, 'utf8'), 'must remain unchanged');
+    assert.equal(await readFile(planted, 'utf8'), 'planted file must remain unchanged');
+  } finally {
+    await rm(parent, { recursive: true, force: true });
+  }
+});
+
 test('preserves a concurrent YAML edit made while an approved image is uploading', async () => {
   const fixture = await createFixture();
   try {
@@ -203,6 +366,20 @@ test('downloads only HTTPS image responses and rejects redirects or oversized co
     downloadRemoteImage('https://images.example.com/a.png', async () => new Response('large', {
       status: 200,
       headers: { 'content-type': 'image/png', 'content-length': String(10 * 1024 * 1024 + 1) },
+    })),
+    /超过 10 MiB/,
+  );
+  const chunk = new Uint8Array(1024 * 1024);
+  const stream = new ReadableStream<Uint8Array>({
+    start(controller) {
+      for (let index = 0; index < 11; index += 1) controller.enqueue(chunk);
+      controller.close();
+    },
+  });
+  await assert.rejects(
+    downloadRemoteImage('https://images.example.com/chunked.png', async () => new Response(stream, {
+      status: 200,
+      headers: { 'content-type': 'image/png' },
     })),
     /超过 10 MiB/,
   );

@@ -4,7 +4,7 @@
 
 **Goal:** Provide a review-first CLI for moving explicitly approved catalog images to TOS, preserve each original URL and source note, and remove the admin dashboard's obsolete COS upload status.
 
-**Architecture:** A TypeScript migration module scans product seed YAML and writes a JSON review manifest with every external image marked unapproved. Applying a reviewed manifest requires both per-entry approval and an explicit `--apply` flag; each successful entry is downloaded under strict size/type/timeout limits, uploaded through the existing API image service, and then updated in its source YAML only after re-reading and rechecking the current file. The manifest retains the original URL and source note as the migration audit record; the YAML source note itself remains unchanged. Failed entries remain in the manifest with an error and can be retried without re-uploading completed rows.
+**Architecture:** A TypeScript migration module scans product seed YAML and writes a JSON review manifest with every external image marked unapproved. Applying a reviewed manifest requires both per-entry approval and an explicit `--apply` flag; each successful entry is downloaded under strict size/type/timeout limits, uploaded through the existing API image service, and then updated in its source YAML only after re-reading and rechecking the current file. The manifest retains the original URL and source note as the migration audit record; the YAML source note itself remains unchanged. The uploaded URL is persisted as a checkpoint before YAML is changed, so interrupted runs can resume without another upload. New plans never overwrite an existing review manifest. Apply commands lock the review manifest and each product YAML to prevent overlapping migrations; the final YAML write also rechecks the exact source snapshot.
 
 **Tech Stack:** Node.js 20+, TypeScript, `yaml`, existing `AdminImageUploadService`, `tsx` Node test runner.
 
@@ -57,8 +57,8 @@ Expected: all tests pass, including the new regression assertion.
 - Modify: `apps/api/package.json`
 
 **Interfaces:**
-- `createImageMigrationManifest(dataDir: string, publicBaseUrl: string): Promise<ImageMigrationManifest>` returns manifest version 1 with stable entries `{ id, file, productSlug, imageIndex, originalUrl, sourceNote, approved: false, status: 'pending' | 'done' | 'failed', migratedUrl?, error? }`.
-- `applyImageMigrationManifest(manifest, options): Promise<ImageMigrationManifest>` receives `dataDir`, `upload(buffer, contentType)`, and an injectable `fetchImage(url)` dependency; it mutates only approved `pending` or `failed` entries, persists successes/errors in the returned manifest, and checks the live YAML URL before writing. Failed entries are retried only when the operator reruns apply with that row still approved.
+- `createImageMigrationManifest(dataDir: string, publicBaseUrl: string): Promise<ImageMigrationManifest>` returns manifest version 1 with stable entries `{ id, file, productSlug, imageIndex, originalUrl, sourceNote, approved: false, status: 'pending' | 'uploaded' | 'done' | 'failed', migratedUrl?, error? }`.
+- `applyImageMigrationManifest(manifest, options): Promise<ImageMigrationManifest>` receives `dataDir`, `upload(buffer, contentType)`, and an injectable `fetchImage(url)` dependency; it mutates only approved `pending`, `uploaded`, or `failed` entries, persists the TOS URL checkpoint before updating YAML, and reconciles it on restart without another upload. Failed entries without a checkpoint may retry only when the operator reruns apply with that row still approved.
 - CLI commands are `pnpm --filter @youpu/api tos:images:plan -- --out ../../data/tmp/tos-image-migration.json` and `pnpm --filter @youpu/api tos:images:apply -- --manifest ../../data/tmp/tos-image-migration.json --apply`.
 
 - [x] **Step 1: Write tests for manifest planning and unapproved defaults**
