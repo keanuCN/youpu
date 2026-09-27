@@ -16,7 +16,7 @@
 | 前端 | Next.js 14（App Router）+ TypeScript + Tailwind CSS v4 |
 | 后端 | NestJS + Prisma + PostgreSQL 16 |
 | 搜索 / 缓存 | Elasticsearch 8（analysis-ik 中文分词）/ Redis |
-| 图片 / 部署 | 腾讯云 COS + CDN / Docker Compose + Nginx + GitHub Actions |
+| 图片 / 部署 | 火山引擎 TOS / Docker Compose + Nginx + GitHub Actions |
 | 契约 | `packages/schema`：zod 定义 spec_schema、事件字典、API 响应类型，前后端共用 |
 
 ## 仓库结构
@@ -95,6 +95,22 @@ pnpm seed          # 导入类目 / 品牌 / 当前 50 条产品 seed（40 单�
 pnpm dev           # web:3000 + api:3001
 pnpm dev:admin     # 另开终端启动后台：3002
 ```
+
+#### 商品图片存储（火山引擎 TOS）
+
+后台商品图片上传使用火山引擎 TOS。将 `apps/api/.env.example` 复制为 `apps/api/.env` 后，填写以下配置；`.env` 已被 Git 忽略，真实密钥不要写入或提交到 `.env.example`：
+
+| 变量 | 用途 |
+|---|---|
+| `TOS_REGION` | 存储桶地域，例如 `cn-beijing` |
+| `TOS_BUCKET` | 存储桶名称 |
+| `TOS_ENDPOINT` | TOS API 访问地址（含 `https://`） |
+| `TOS_ACCESS_KEY` / `TOS_SECRET_KEY` | 专用 IAM 用户的访问密钥；只配置在 API 服务端 |
+| `TOS_PUBLIC_BASE_URL` | 浏览器可访问的对象公共 URL 前缀，不带末尾 `/` |
+
+六项必须全部填写，否则上传接口会提示图片存储未配置。建议为专用 IAM 用户仅授予目标桶 `product-images/*` 路径的 `PutObject` 权限；图片读取通过公开 URL 提供，请确保桶或自定义域名允许浏览器读取对象。配置完成后重启 API。
+
+上传仅接受 JPEG、PNG、WebP 静态图片，单张原图最大 10 MB；服务端会自动纠正方向、限制最长边为 1600 像素并转为 WebP（质量 82），再保存到 `product-images/` 路径。上传 API 为需管理员认证的 `POST /api/admin/product-images`。
 
 默认启动 PostgreSQL + Redis 即可完成基础开发；Elasticsearch 只用于增强搜索和分面，不是 API 可用的必需依赖。
 健康检查 `http://localhost:3001/api/health` 会返回 `db`、`redis`、`es` 三项状态，其中 `es=false` 不代表 API 不可用。
