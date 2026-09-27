@@ -3649,6 +3649,101 @@
   name: 雪服
   parent: skiing
   sort_order: 20
+  spec_schema:
+    fields:
+      - key: garmentType
+        label: 款式
+        group: 款式与结构
+        type: enum
+        options:
+          - { value: jacket, label: 滑雪夹克 }
+          - { value: pants, label: 滑雪裤 }
+          - { value: bib-pants, label: 背带滑雪裤 }
+        filter: multi
+        compare: true
+        order: 10
+      - key: construction
+        label: 面料层数
+        group: 防护性能
+        type: enum
+        options:
+          - { value: 2L, label: 两层 }
+          - { value: 3L, label: 三层 }
+        filter: multi
+        compare: true
+        order: 20
+      - key: waterproofMm
+        label: 防水指数
+        group: 防护性能
+        type: number
+        unit: mm
+        min: 0
+        max: 100000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 30
+      - key: breathabilityG
+        label: 透湿指数
+        group: 防护性能
+        type: number
+        unit: g/m²/24h
+        min: 0
+        max: 100000
+        filter: range
+        compare: true
+        compareDirection: higher-better
+        order: 40
+      - key: insulation
+        label: 保暖结构
+        group: 保暖与舒适
+        type: text
+        filter: false
+        compare: true
+        order: 50
+      - key: fit
+        label: 版型
+        group: 款式与结构
+        type: enum
+        options:
+          - { value: slim, label: 修身 }
+          - { value: regular, label: 常规 }
+          - { value: relaxed, label: 宽松 }
+          - { value: baggy, label: 街头宽松 }
+        filter: multi
+        compare: true
+        order: 60
+      - key: seamTaping
+        label: 压胶
+        group: 防护性能
+        type: enum
+        options:
+          - { value: fully-taped, label: 全压胶 }
+          - { value: critically-taped, label: 重点部位压胶 }
+        filter: multi
+        compare: true
+        order: 70
+      - key: venting
+        label: 通风拉链
+        group: 功能
+        type: bool
+        filter: single
+        compare: true
+        order: 80
+      - key: powderSkirt
+        label: 防雪裙
+        group: 功能
+        type: bool
+        filter: single
+        compare: true
+        order: 90
+      - key: fabric
+        label: 面料说明
+        group: 面料
+        type: text
+        filter: false
+        compare: true
+        order: 100
 
 - slug: diving
   name: 潜水

@@ -16,6 +16,12 @@ specs:
     - all-mountain
     - freestyle
     - powder
+images:
+  - url: "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p"
+    kind: face
+    alt: Salomon Assassin Pro 2027 单板官方主图
+    source: Salomon 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-gb/product/assassin-pro-li1301

@@ -12,6 +12,12 @@ specs:
     - all-mountain
     - freestyle
     - powder
+images:
+  - url: "https://contents.mediadecathlon.com/p2944924/k$e21f8365347b4de89819c934c9ed67d6/picture.jpg?format=auto&f=3000x0"
+    kind: face
+    alt: Decathlon Park & Ride 500 单板主图
+    source: Decathlon 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.decathlon.co.uk/p/mens-all-mountain-and-freestyle-snowboard-park-and-ride-500-green/306010/c49c1m8938817

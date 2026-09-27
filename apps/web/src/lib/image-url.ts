@@ -10,9 +10,20 @@ const REMOTE_IMAGE_RULES = [
   { host: "shop.au.victorsport.com", pathPrefix: "/cdn/shop/" },
   { host: "bbsports.co.nz", pathPrefix: "/cdn/shop/" },
   { host: "www.smartmarine.co.nz", pathPrefix: "/cdn/images/products/" },
+  { host: "www.follows.co.jp", pathPrefix: "/pic-labo/" },
+  { host: "contents.mediadecathlon.com", pathPrefix: "/p" },
+  { host: "graysnowboards.co.jp", pathPrefix: "/wp2021/wp-content/themes/gray/images/img_" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0231/7366/0752/files/" },
+  { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0580/2773/7217/files/" },
+  { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0804/4062/3361/files/" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0641/4722/6759/files/" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0694/6291/7272/files/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/af8e2e75-eeed-4307-9ef2-b3b8010090b3/L49291700/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/" },
+  { host: "www.ogasaka-snowboard.com", pathPrefix: "/2025-img/" },
+  { host: "blauerboardshop.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "www.milosport.com", pathPrefix: "/cdn/shop/files/" },
   { host: "point-official.shop", pathPrefix: "/img/goods/" },
   { host: "www.point-official.shop", pathPrefix: "/img/goods/" },
   { host: "anglerscentral.my", pathPrefix: "/cdn/shop/files/" },
@@ -42,7 +53,10 @@ export function isAllowedRemoteImageUrl(source: string): boolean {
       url.username === "" &&
       url.password === "" &&
       REMOTE_IMAGE_RULES.some(
-        (rule) => url.hostname === rule.host && url.pathname.startsWith(rule.pathPrefix),
+        (rule) =>
+          url.hostname === rule.host &&
+          url.pathname.startsWith(rule.pathPrefix) &&
+          (rule.host !== "contents.mediadecathlon.com" || /^\/p\d+\//.test(url.pathname)),
       )
     );
   } catch {

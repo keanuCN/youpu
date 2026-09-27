@@ -18,6 +18,12 @@ specs:
     - all-mountain
     - freestyle
     - powder
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNW.TWS-gallery-1.webp?v=1773324878&width=1946"
+    kind: face
+    alt: Jones Twin Sister 2027 单板正面图
+    source: Jones 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.jonessnowboards.com/products/womens-twin-sister-snowboard

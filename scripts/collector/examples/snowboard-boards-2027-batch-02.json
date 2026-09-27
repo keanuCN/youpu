@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "burton-good-company-camber-2027",
+    "category": "snowboard",
+    "brand": "burton",
+    "model": "Good Company Camber",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951",
+    "mode": "cheerio",
+    "representativeSize": "152"
+  },
+  {
+    "slug": "capita-super-doa-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Super D.O.A.",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/en-ca/products/capita-super-d-o-a-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "jones-twin-sister-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Twin Sister",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/womens-twin-sister-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "149"
+  },
+  {
+    "slug": "nitro-banker-2027",
+    "category": "snowboard",
+    "brand": "nitro",
+    "model": "Banker",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/all-mens-snowboards-26-27/products/banker-snowboard-1",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  }
+]

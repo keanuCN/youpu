@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",
+    "prebuild": "tsx scripts/prepare-catalog-build.ts",
     "build": "next build",
     "start": "next start -p 3000",
     "typecheck": "tsc --noEmit",

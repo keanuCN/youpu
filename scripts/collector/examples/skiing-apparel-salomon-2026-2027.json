@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "salomon-absolute-3l-mens-shell-jacket-2026",
+    "category": "skiing-apparel",
+    "brand": "salomon",
+    "model": "ABSOLUTE 3L",
+    "year": 2026,
+    "url": "https://www.salomon.com/en-us/product/absolute-3l-lc13785/LC2706700",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "salomon-absolute-3l-womens-shell-jacket-2026",
+    "category": "skiing-apparel",
+    "brand": "salomon",
+    "model": "ABSOLUTE 3L",
+    "year": 2026,
+    "url": "https://www.salomon.com/en-us/product/absolute-3l-lc13203",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "salomon-moon-patrol-gore-tex-mens-shell-jacket-2027",
+    "category": "skiing-apparel",
+    "brand": "salomon",
+    "model": "MOON PATROL GORE-TEX",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/moon-patrol-gore-tex-lc14919",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "salomon-brilliant-mens-insulated-jacket-2026",
+    "category": "skiing-apparel",
+    "brand": "salomon",
+    "model": "BRILLIANT",
+    "year": 2026,
+    "url": "https://www.salomon.com/en-us/product/brilliant-lc13776/LC2635000",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "salomon-brilliant-mens-ski-pants-2026",
+    "category": "skiing-apparel",
+    "brand": "salomon",
+    "model": "BRILLIANT",
+    "year": 2026,
+    "url": "https://www.salomon.com/en-us/product/brilliant-lc13783/LC2635500",
+    "mode": "cheerio"
+  }
+]

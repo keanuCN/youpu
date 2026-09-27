@@ -2,7 +2,7 @@ import { convertPriceToCny } from "@youpu/schema";
 import type { Category, CategoryNode } from "@/types";
 
 /** 品类树：已开档叶子节点由 API 数据驱动，新增品类只需补配置与内容。 */
-export const CATEGORY_TREE: CategoryNode[] = [
+const CATEGORY_TREE_SOURCE: CategoryNode[] = [
   {
     slug: "sport",
     name: "运动",
@@ -420,6 +420,30 @@ export const CATEGORY_TREE: CategoryNode[] = [
     ],
   },
 ];
+
+/** 暂不面向用户开放的品类组；保留源配置与数据库资料，后续需要时可重新开放。 */
+const HIDDEN_CATEGORY_GROUPS = new Set([
+  "watches",
+  "beverage-kitchen",
+  "outdoor-camping",
+  "running",
+  "fitness",
+  "diving",
+  "digital-accessories",
+]);
+
+function hideCategoryGroups(nodes: CategoryNode[]): CategoryNode[] {
+  return nodes
+    .filter((node) => !HIDDEN_CATEGORY_GROUPS.has(node.slug))
+    .map((node) => ({
+      ...node,
+      ...(node.children ? { children: hideCategoryGroups(node.children) } : {}),
+    }));
+}
+
+/** 前台导航与目录页只展示当前运营范围，未开放的分类主数据仍保留。 */
+export const CATEGORY_TREE = hideCategoryGroups(CATEGORY_TREE_SOURCE);
+
 export const SNOWBOARD_SCENES = [
   { value: "all-mountain", label: "全山地" },
   { value: "freestyle", label: "自由式" },

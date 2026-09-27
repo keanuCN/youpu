@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "burton-mens-ak-swash-synthetic-insulated-gore-tex-2l-jacket-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Swash Synthetic Insulated GORE-TEX 2L Jacket",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/mens-burton-ak-swash-synthetic-insulated-gore-tex-2l-jacket-307571",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-mens-ak-swash-insulated-gore-tex-2l-pants-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Swash Insulated GORE-TEX 2L Pants",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/mens-burton-ak-swash-insulated-gore-tex-2l-pants-307591",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-mens-ak-cyclic-gore-tex-2l-pants-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Cyclic GORE-TEX 2L Pants",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/mens-burton-ak-cyclic-gore-tex-2l-pants-307671",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-mens-ak-cyclic-gore-tex-2l-bib-pants-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Cyclic GORE-TEX 2L Bib Pants",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/mens-burton-ak-cyclic-gore-tex-2l-bib-pants-307651",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-mens-reserve-2l-3-in-1-pants-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Reserve 2L 3-in-1 Pants",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/mens-burton-reserve-2l-3-in-1-pants-302511",
+    "mode": "cheerio"
+  }
+]

@@ -12,6 +12,12 @@ specs:
   fiberglass: Full Fiberglass
   scenes:
     - carving
+images:
+  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2324/product/18_DESPERADO"
+    kind: face
+    alt: Gray DESPERADO 2023–2024 单板正面图
+    source: Gray Snowboards 官方 2023–2024 产品素材（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
+    sort_order: 0
 data_source:
   kind: manual
   origin_url: https://graysnowboards.co.jp/product2324/

@@ -12,7 +12,7 @@ import {
   type SpecField,
   type SpecSchema,
 } from '@youpu/schema';
-import { useEffect, useMemo, useState, type FormEvent } from 'react';
+import { useEffect, useMemo, useState, type ChangeEvent, type FormEvent } from 'react';
 import {
   adminFetch,
   adminLogin,
@@ -32,6 +32,8 @@ import {
   type AdminProductDetail,
   type AdminProductListResponse,
   type AdminProductSummary,
+  type AdminProductImport,
+  type AdminProductImportReview,
   type AdminReport,
   type AdminModerationRating,
 } from '../lib/api';
@@ -64,8 +66,8 @@ interface ProductFilters {
 }
 
 interface AuditFilters {
-  entity: '' | 'product' | 'brand' | 'category' | 'report' | 'rating';
-  action: '' | 'create' | 'update' | 'publish' | 'hide' | 'moderate';
+  entity: '' | 'product' | 'product_import' | 'brand' | 'category' | 'report' | 'rating';
+  action: '' | 'create' | 'update' | 'publish' | 'hide' | 'moderate' | 'reject';
 }
 
 interface ImageDraft {
@@ -146,6 +148,10 @@ const imageKindLabels: Record<ImageKind, string> = {
   field: '场景图',
   card3x4: '卡片图',
 };
+
+export function makeUploadedImageDraft(url: string, title: string, sortOrder: number): ImageDraft {
+  return { url, kind: 'base', alt: title, source: '', sortOrder: String(sortOrder) };
+}
 
 function makeProductForm(categorySlug = '', brandSlug = ''): ProductFormState {
   return {
@@ -451,6 +457,7 @@ function eventLabel(name: string): string {
 
 const auditEntityLabels: Record<string, string> = {
   product: '产品',
+  product_import: '采集资料',
   brand: '品牌',
   category: '类目',
   report: '举报',
@@ -463,6 +470,7 @@ const auditActionLabels: Record<string, string> = {
   publish: '发布',
   hide: '下线',
   moderate: '审核',
+  reject: '驳回',
 };
 
 function auditEntityLabel(value: string): string {
@@ -612,6 +620,11 @@ export function AdminApp() {
   const [categories, setCategories] = useState<AdminCategoryRecord[]>([]);
   const [accounts, setAccounts] = useState<AdminAccount[]>([]);
   const [accountsBusy, setAccountsBusy] = useState(false);
+  const [productImports, setProductImports] = useState<AdminProductImport[]>([]);
+  const [selectedImportId, setSelectedImportId] = useState('');
+  const [importsBusy, setImportsBusy] = useState(false);
+  const [importUploadBusy, setImportUploadBusy] = useState(false);
+  const [imageUploadBusy, setImageUploadBusy] = useState(false);
   const [filters, setFilters] = useState<ProductFilters>({ search: '', status: '', categorySlug: '', missing: '' });
   const [appliedFilters, setAppliedFilters] = useState<ProductFilters>({ search: '', status: '', categorySlug: '', missing: '' });
   const [categoryQuery, setCategoryQuery] = useState('');
@@ -623,6 +636,10 @@ export function AdminApp() {
   const [categoryForm, setCategoryForm] = useState<CategoryFormState | null>(null);
   const hasOpenEditor = productForm !== null || brandForm !== null || categoryForm !== null;
   const visibleSections = useMemo(() => new Set(visibleAdminSections(role)), [role]);
+  const selectedProductImport = useMemo(
+    () => productImports.find((item) => item.id === selectedImportId) ?? productImports[0] ?? null,
+    [productImports, selectedImportId],
+  );
   let refreshPromise: Promise<AdminAccountSession> | null = null;
 
   async function refreshAccountSession(currentSession: AdminAccountSession): Promise<AdminAccountSession> {
@@ -786,6 +803,13 @@ export function AdminApp() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSection, role, sessionState, token]);
 
+  useEffect(() => {
+    if (sessionState !== 'signed-in' || !token || activeSection !== 'import') return;
+    void refreshProductImports();
+    // 采集审核队列仅在进入页面或完成操作时读取。
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeSection, sessionState, token]);
+
   async function refreshWorkspace() {
     if (!session) return;
     const [nextDashboard, nextProducts, nextBrands, nextCategories] = await Promise.all([
@@ -872,6 +896,82 @@ export function AdminApp() {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
       setAccountsBusy(false);
+    }
+  }
+
+  async function refreshProductImports() {
+    if (!token) return;
+    setImportsBusy(true);
+    try {
+      const rows = await callAdmin<AdminProductImport[]>('/imports?status=pending');
+      setProductImports(rows);
+      setSelectedImportId((current) => rows.some((item) => item.id === current) ? current : rows[0]?.id ?? '');
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setImportsBusy(false);
+    }
+  }
+
+  async function uploadCollectorFiles(event: ChangeEvent<HTMLInputElement>) {
+    const files = Array.from(event.currentTarget.files ?? []);
+    event.currentTarget.value = '';
+    if (!files.length) return;
+    setImportUploadBusy(true);
+    const imported: string[] = [];
+    const failures: string[] = [];
+    try {
+      for (const file of files) {
+        if (!/\.ya?ml$/i.test(file.name)) {
+          failures.push(`${file.name}：仅支持 YAML 文件`);
+          continue;
+        }
+        if (file.size > 80 * 1024) {
+          failures.push(`${file.name}：文件超过 80 KB`);
+          continue;
+        }
+        try {
+          const record = await callAdmin<AdminProductImport>('/imports', {
+            method: 'POST',
+            body: { filename: file.name, content: await file.text() },
+          });
+          imported.push(record.product.title);
+        } catch (error) {
+          failures.push(`${file.name}：${getErrorText(error)}`);
+        }
+      }
+      await refreshProductImports();
+      setNotice({
+        kind: failures.length ? (imported.length ? 'info' : 'error') : 'success',
+        text: `已加入审核 ${imported.length} 个${failures.length ? `；失败 ${failures.length} 个：${failures.join(' / ')}` : ''}`,
+      });
+    } finally {
+      setImportUploadBusy(false);
+    }
+  }
+
+  async function reviewProductImport(id: string, decision: 'approve' | 'reject') {
+    const record = productImports.find((item) => item.id === id);
+    if (!record) return;
+    const promptText = decision === 'approve'
+      ? record.kind === 'new'
+        ? `确认将「${record.product.title}」加入商品库草稿？此操作不会发布商品。`
+        : `确认将「${record.product.title}」的采集参数更新到当前商品？商品现有发布状态会保留。`
+      : `确认驳回「${record.product.title}」的采集资料？`;
+    if (!window.confirm(promptText)) return;
+    setBusyAction(`import-${id}`);
+    try {
+      await callAdmin<AdminProductImportReview>(`/imports/${id}/review`, {
+        method: 'PATCH',
+        body: { decision },
+      });
+      await refreshProductImports();
+      if (decision === 'approve') await refreshWorkspace();
+      setNotice({ kind: 'success', text: decision === 'approve' ? '采集资料已确认入库' : '采集资料已驳回' });
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setBusyAction(null);
     }
   }
 
@@ -1092,6 +1192,39 @@ export function AdminApp() {
       );
       return { ...current, images };
     });
+  }
+
+  async function uploadProductImage(event: ChangeEvent<HTMLInputElement>) {
+    const file = event.currentTarget.files?.[0];
+    event.currentTarget.value = '';
+    if (!file || !productForm) return;
+    if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type)) {
+      setNotice({ kind: 'error', text: '仅支持 JPEG、PNG 或 WebP 图片' });
+      return;
+    }
+    if (file.size > 10 * 1024 * 1024) {
+      setNotice({ kind: 'error', text: '图片不能超过 10 MB' });
+      return;
+    }
+
+    setImageUploadBusy(true);
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      const uploaded = await callAdmin<{ url: string }>('/product-images', {
+        method: 'POST',
+        body: formData,
+      });
+      setProductForm((current) => current && ({
+        ...current,
+        images: [...current.images, makeUploadedImageDraft(uploaded.url, current.title, current.images.length)],
+      }));
+      setNotice({ kind: 'success', text: '图片已压缩并上传到对象存储' });
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setImageUploadBusy(false);
+    }
   }
 
   const editorCategory = productForm
@@ -1361,7 +1494,29 @@ export function AdminApp() {
               <Field label="来源 URL"><input type="url" value={productForm.sourceUrl} onChange={(event) => setProductForm((current) => current && ({ ...current, sourceUrl: event.target.value }))} placeholder="https://..." /></Field>
               <Field label="快照 URL"><input type="url" value={productForm.snapshotUrl} onChange={(event) => setProductForm((current) => current && ({ ...current, snapshotUrl: event.target.value }))} placeholder="https://..." /></Field>
             </div></div>
-            <div className="form-section"><div className="form-section-head"><span>{editorSchema?.rating_dimensions?.length ? '06' : '05'}</span><h3>图片 URL</h3><span className="section-side">{productForm.images.length} 张图片</span></div><div className="image-list">{productForm.images.map((image, index) => <div className="image-row" key={image.id ?? index}><input type="url" aria-label="图片 URL" value={image.url} onChange={(event) => updateImage(index, 'url', event.target.value)} placeholder="https://..." /><select aria-label="图片类型" value={image.kind} onChange={(event) => updateImage(index, 'kind', event.target.value)}>{imageKinds.map((kind) => <option key={kind} value={kind}>{imageKindLabels[kind]}</option>)}</select><input aria-label="图片来源" value={image.source} onChange={(event) => updateImage(index, 'source', event.target.value)} placeholder="版权 / 来源" /><button className="icon-button" type="button" onClick={() => setProductForm((current) => current && ({ ...current, images: current.images.filter((_, imageIndex) => imageIndex !== index) }))}>−</button></div>)}<button className="text-button" type="button" onClick={() => setProductForm((current) => current && ({ ...current, images: [...current.images, { url: '', kind: 'base', alt: '', source: '', sortOrder: String(current.images.length) }] }))}>+ 添加一行图片</button></div></div>
+            <div className="form-section">
+              <div className="form-section-head">
+                <span>{editorSchema?.rating_dimensions?.length ? '06' : '05'}</span>
+                <h3>图片管理</h3>
+                <span className="section-side">{productForm.images.length} 张图片</span>
+              </div>
+              <div className="image-list">
+                {productForm.images.map((image, index) => <div className="image-row" key={image.id ?? index}>
+                  <input type="url" aria-label="图片 URL" value={image.url} onChange={(event) => updateImage(index, 'url', event.target.value)} placeholder="图片地址 https://..." />
+                  <select aria-label="图片类型" value={image.kind} onChange={(event) => updateImage(index, 'kind', event.target.value)}>{imageKinds.map((kind) => <option key={kind} value={kind}>{imageKindLabels[kind]}</option>)}</select>
+                  <input aria-label="图片来源" value={image.source} onChange={(event) => updateImage(index, 'source', event.target.value)} placeholder="版权 / 来源" />
+                  <button className="icon-button" type="button" aria-label="移除图片" onClick={() => setProductForm((current) => current && ({ ...current, images: current.images.filter((_, imageIndex) => imageIndex !== index) }))}>−</button>
+                </div>)}
+                <div className="inline-actions">
+                  <label className="text-button">
+                    {imageUploadBusy ? '压缩上传中……' : '选择并上传图片'}
+                    <input className="visually-hidden" type="file" accept="image/jpeg,image/png,image/webp" disabled={imageUploadBusy} onChange={(event) => void uploadProductImage(event)} />
+                  </label>
+                  <button className="text-button" type="button" onClick={() => setProductForm((current) => current && ({ ...current, images: [...current.images, { url: '', kind: 'base', alt: '', source: '', sortOrder: String(current.images.length) }] }))}>+ 手动填写图片地址</button>
+                </div>
+                <small>上传后会自动压缩为 WebP；单张不超过 10 MB。</small>
+              </div>
+            </div>
             <div className="drawer-actions"><button className="button" type="button" onClick={() => setProductForm(null)}>取消</button><button className="button button-primary" type="submit" disabled={busyAction === 'product-save'}>{busyAction === 'product-save' ? '保存中……' : productForm.status === 'published' ? '保存并发布  →' : '保存草稿  →'}</button></div>
           </form>
         </aside>
@@ -1592,12 +1747,69 @@ export function AdminApp() {
   }
 
   function renderImport() {
+    const selected = selectedProductImport;
+    const pendingNew = productImports.filter((item) => item.kind === 'new').length;
+    const pendingUpdate = productImports.length - pendingNew;
     return (
       <>
-        <SectionHeader index="05" title="采集与导入" description="采集器与后台共用同一份 seed 契约；此页先提供状态边界，避免在没有文件上传与对象存储时制造假导入。" />
-        <div className="import-grid">
-          <section className="data-panel"><PanelHeader eyebrow="自动采集" title="自动采集状态" meta="数据依据" /><div className="import-status"><span className="status-dot status-dot-good" /><div><strong>文件层自动通过</strong><p>当前采集结果会先落到 data/，并由共享 schema 校验。自动采集暂不进入人工审核队列。</p></div></div><div className="command-block"><span>校验 / 18 条种子记录</span><code>pnpm --filter @youpu/api validate:data</code></div></section>
-          <section className="data-panel"><PanelHeader eyebrow="阶段二操作" title="导入边界" meta="人工关卡" /><div className="boundary-list"><BoundaryItem state="当前可用" title="手工产品 CRUD" detail="可从产品页补录、修正并发布单条产品。" /><BoundaryItem state="现在" title="seed 校验命令" detail="用于提交前检查 slug、schema 和来源字段。" /><BoundaryItem state="后续处理" title="批量文件上传" detail="上传、快照、COS 归档与批量冲突处理留到下一阶段。" /></div></section>
+        <SectionHeader
+          index="04"
+          title="采集审核与资料入库"
+          description="上传采集器生成的 YAML 草稿；系统校验类目、品牌、规格和重复项，确认前不会修改商品目录。"
+          action={<button className="button" type="button" onClick={() => void refreshProductImports()} disabled={importsBusy}>{importsBusy ? '读取中……' : '刷新待审核'}</button>}
+        />
+        <div className="import-review-metrics">
+          <article><span>待审核资料</span><strong>{productImports.length}</strong></article>
+          <article><span>新增商品</span><strong>{pendingNew}</strong></article>
+          <article><span>商品参数更新</span><strong>{pendingUpdate}</strong></article>
+        </div>
+        <div className="import-workbench">
+          <section className="data-panel import-queue-panel">
+            <PanelHeader eyebrow="资料入口" title="上传采集草稿" meta="仅接受 YAML · 单文件不超过 80 KB" />
+            <label className={`import-upload-control${importUploadBusy ? ' is-busy' : ''}`}>
+              <input type="file" accept=".yaml,.yml,application/yaml,text/yaml" multiple disabled={importUploadBusy} onChange={(event) => void uploadCollectorFiles(event)} />
+              <span className="import-upload-icon" aria-hidden="true">↥</span>
+              <strong>{importUploadBusy ? '正在校验并上传……' : '选择采集器草稿文件'}</strong>
+              <small>支持新增商品 YAML 与 updates 目录中的更新 YAML，可一次选择多个文件</small>
+            </label>
+            <div className="import-queue-heading"><strong>待审核队列</strong><span>{productImports.length} 条</span></div>
+            {productImports.length ? (
+              <div className="import-queue-list">
+                {productImports.map((item) => (
+                  <button key={item.id} type="button" className={`import-queue-item${selected?.id === item.id ? ' is-selected' : ''}`} onClick={() => setSelectedImportId(item.id)} aria-pressed={selected?.id === item.id}>
+                    <span className={`import-kind-mark ${item.kind === 'new' ? 'is-new' : 'is-update'}`}>{item.kind === 'new' ? '新' : '更'}</span>
+                    <span className="import-queue-copy"><strong>{item.product.title}</strong><small>{item.product.brand} · {item.product.category} · {item.product.year}</small></span>
+                    <time>{formatDate(item.createdAt)}</time>
+                  </button>
+                ))}
+              </div>
+            ) : <EmptyState title={importsBusy ? '正在读取审核队列' : '暂无待审核资料'} detail="上传采集器生成的 drafts 或 updates YAML 后，校验通过的内容会显示在这里。" />}
+          </section>
+          <section className="data-panel import-review-panel">
+            {selected ? (
+              <>
+                <PanelHeader eyebrow={selected.kind === 'new' ? '新增候选' : '采集更新'} title={selected.product.title} meta={`${selected.product.brand} / ${selected.product.category} / ${selected.product.year}`} />
+                <div className="import-review-content">
+                  <div className="import-source-row"><div><span>型号</span><strong>{selected.product.model}</strong></div><div><span>标识</span><code>{selected.slug}</code></div></div>
+                  <div className="import-source-row"><div><span>审核类型</span><strong>{selected.kind === 'new' ? '新增商品草稿' : '更新现有商品参数'}</strong></div><div><span>采集时间</span><strong>{formatDate(selected.createdAt)}</strong></div></div>
+                  {selected.originUrl ? <a className="import-source-link" href={selected.originUrl} target="_blank" rel="noreferrer">打开来源页面 ↗</a> : <p className="import-source-missing">未记录来源网址</p>}
+                  {selected.kind === 'update' ? (
+                    <>
+                      <div className="import-diff-heading"><h3>参数变更</h3><span>{selected.changes.length} 项</span></div>
+                      <div className="import-diff-list">{selected.changes.map((change, index) => <div className="import-diff-row" key={`${change.path}-${index}`}><code>{change.path}</code><span>{formatAuditSnapshot(change.previous)}</span><b aria-hidden="true">→</b><strong>{formatAuditSnapshot(change.current)}</strong></div>)}</div>
+                      {selected.ignoredChanges.length ? <p className="import-ignored-note">另有 {selected.ignoredChanges.length} 项来源页面缺失字段不会删除现有数据。</p> : null}
+                    </>
+                  ) : (
+                    <details className="import-spec-details"><summary>查看采集参数（{Object.keys(selected.product.specs).length} 项）</summary><pre>{JSON.stringify(selected.product.specs, null, 2)}</pre></details>
+                  )}
+                </div>
+                <div className="import-review-actions">
+                  <button className="button button-danger" type="button" onClick={() => void reviewProductImport(selected.id, 'reject')} disabled={busyAction === `import-${selected.id}`}>驳回</button>
+                  <button className="button button-primary" type="button" onClick={() => void reviewProductImport(selected.id, 'approve')} disabled={busyAction === `import-${selected.id}`}>{busyAction === `import-${selected.id}` ? '处理中……' : selected.kind === 'new' ? '确认加入商品草稿' : '确认更新商品参数'}</button>
+                </div>
+              </>
+            ) : <EmptyState title="选择一条待审核资料" detail="校验通过的新增商品与参数更新会分别展示商品信息、来源和规格差异。" />}
+          </section>
         </div>
       </>
     );
@@ -1632,8 +1844,8 @@ export function AdminApp() {
           action={<button className="button" type="button" onClick={() => void refreshAuditLogs()} disabled={auditBusy}>{auditBusy ? '读取中……' : '刷新日志'}</button>}
         />
         <div className="filter-bar audit-filter-bar">
-          <label className="filter-select"><span>对象</span><select value={auditFilters.entity} onChange={(event) => setAuditFilters((current) => ({ ...current, entity: event.target.value as AuditFilters['entity'] }))}><option value="">全部对象</option><option value="product">产品</option><option value="brand">品牌</option><option value="category">类目</option><option value="report">举报</option><option value="rating">评论</option></select></label>
-          <label className="filter-select"><span>动作</span><select value={auditFilters.action} onChange={(event) => setAuditFilters((current) => ({ ...current, action: event.target.value as AuditFilters['action'] }))}><option value="">全部动作</option><option value="create">创建</option><option value="update">更新</option><option value="publish">发布</option><option value="hide">下线</option><option value="moderate">审核</option></select></label>
+          <label className="filter-select"><span>对象</span><select value={auditFilters.entity} onChange={(event) => setAuditFilters((current) => ({ ...current, entity: event.target.value as AuditFilters['entity'] }))}><option value="">全部对象</option><option value="product">产品</option><option value="product_import">采集资料</option><option value="brand">品牌</option><option value="category">类目</option><option value="report">举报</option><option value="rating">评论</option></select></label>
+          <label className="filter-select"><span>动作</span><select value={auditFilters.action} onChange={(event) => setAuditFilters((current) => ({ ...current, action: event.target.value as AuditFilters['action'] }))}><option value="">全部动作</option><option value="create">创建</option><option value="update">更新</option><option value="publish">发布</option><option value="hide">下线</option><option value="moderate">审核</option><option value="reject">驳回</option></select></label>
           <span className="filter-meta">{auditLogs ? `共 ${auditLogs.total} 条 / 当前 ${logs.length} 条` : '读取中……'}</span>
         </div>
         <section className="data-panel table-panel">

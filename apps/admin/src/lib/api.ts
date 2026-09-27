@@ -206,6 +206,43 @@ export interface AdminProductListResponse {
   items: AdminProductSummary[];
 }
 
+export interface AdminImportChange {
+  path: string;
+  kind: 'added' | 'removed' | 'changed';
+  previous: unknown;
+  current: unknown;
+}
+
+export interface AdminProductImport {
+  id: string;
+  kind: 'new' | 'update';
+  slug: string;
+  product: {
+    slug: string;
+    category: string;
+    brand: string;
+    model: string;
+    year: number;
+    title: string;
+    specs: Record<string, unknown>;
+    status: 'draft';
+    [key: string]: unknown;
+  };
+  changes: AdminImportChange[];
+  ignoredChanges: AdminImportChange[];
+  originUrl: string | null;
+  status: 'pending' | 'approved' | 'rejected';
+  reviewNote: string | null;
+  createdAt: string;
+  reviewedAt: string | null;
+}
+
+export interface AdminProductImportReview {
+  id: string;
+  status: 'approved' | 'rejected';
+  productId: string | null;
+}
+
 export interface AdminBrandRecord {
   id: string;
   slug: string;
@@ -311,14 +348,18 @@ async function requestJson<T>(url: string, options: RequestOptions = {}): Promis
     Accept: 'application/json',
     ...(options.headers ?? {}),
   };
-  if (options.body !== undefined) headers['Content-Type'] = 'application/json';
+  const multipartBody = isFormDataBody(options.body) ? options.body : undefined;
+  const requestBody: BodyInit | undefined = options.body === undefined
+    ? undefined
+    : multipartBody ?? JSON.stringify(options.body);
+  if (options.body !== undefined && multipartBody === undefined) headers['Content-Type'] = 'application/json';
 
   let response: Response;
   try {
     response = await fetch(url, {
       method: options.method ?? 'GET',
       headers,
-      body: options.body === undefined ? undefined : JSON.stringify(options.body),
+      body: requestBody,
       cache: 'no-store',
     });
   } catch (error) {
@@ -339,6 +380,10 @@ async function requestJson<T>(url: string, options: RequestOptions = {}): Promis
     throw new AdminApiError(message, response.status, payload);
   }
   return payload as T;
+}
+
+function isFormDataBody(body: unknown): body is FormData {
+  return typeof FormData !== 'undefined' && body instanceof FormData;
 }
 
 function getErrorMessage(payload: unknown): string | undefined {

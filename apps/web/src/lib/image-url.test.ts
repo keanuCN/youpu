@@ -35,3 +35,25 @@ test("only allows local paths and approved remote image prefixes", () => {
   assert.equal(isAllowedImageUrl("https://www.smartmarine.co.nz/cdn/images/other/8089900_a.jpg"), false);
   assert.equal(isAllowedImageUrl("https://example.com/image.png"), false);
 });
+
+test("allows verified snowboard product image hosts and rejects unrelated paths", () => {
+  assert.equal(
+    isAllowedImageUrl("https://www.follows.co.jp/pic-labo/2526bc-r2-1a.jpg"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://contents.mediadecathlon.com/p2027365/k%247ef3/image.jpg"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://cdn.dam.salomon.com/af8e2e75-eeed-4307-9ef2-b3b8010090b3/L49291700/PNG-2000px-max-72dpi.png"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://www.milosport.com/cdn/shop/files/KB2616871398Large.png"),
+    true,
+  );
+  assert.equal(isAllowedImageUrl("https://www.follows.co.jp/private/other.jpg"), false);
+  assert.equal(isAllowedImageUrl("https://contents.mediadecathlon.com/private/image.jpg"), false);
+  assert.equal(isAllowedImageUrl("https://contents.mediadecathlon.com/p/private/image.jpg"), false);
+});

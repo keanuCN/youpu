@@ -9,8 +9,11 @@ import {
   Post,
   Query,
   Req,
+  UploadedFile,
   UseGuards,
+  UseInterceptors,
 } from '@nestjs/common';
+import { FileInterceptor } from '@nestjs/platform-express';
 import {
   adminAccountPatchSchema,
   adminBrandInputSchema,
@@ -31,17 +34,30 @@ import {
   type AdminModerationPatch,
   type AdminRatingModerationPatch,
 } from '@youpu/schema';
+import { z } from 'zod';
+import { parse as parseYaml } from 'yaml';
 import { ZodValidationPipe } from '../common/zod-validation.pipe';
 import { AdminGuard } from './admin.guard';
 import type { AdminRequest } from './admin.guard';
 import { AdminRoles } from './admin-roles.decorator';
 import { ADMIN_PRODUCT_MISSING_FIELDS, AdminService, type AdminProductMissingField } from './admin.service';
 import { env } from '../config/env';
+import { AdminImportService } from './admin-import.service';
+import { AdminImageUploadService } from './admin-image-upload.service';
+
+const importReviewSchema = z.object({
+  decision: z.enum(['approve', 'reject']),
+  note: z.string().max(1000).optional(),
+}).strict();
 
 @Controller('admin')
 @UseGuards(AdminGuard)
 export class AdminController {
-  constructor(private readonly admin: AdminService) {}
+  constructor(
+    private readonly admin: AdminService,
+    private readonly imports: AdminImportService,
+    private readonly imageUploads: AdminImageUploadService,
+  ) {}
 
   @Get('auth/me')
   me(@Req() request: AdminRequest) {
@@ -152,6 +168,44 @@ export class AdminController {
     });
   }
 
+  @Get('imports')
+  importsList(@Query('status') status?: string) {
+    const allowedStatus = status === 'approved' || status === 'rejected' ? status : 'pending';
+    return this.imports.list(allowedStatus);
+  }
+
+  @Get('imports/:id')
+  importDetail(@Param('id', ParseUUIDPipe) id: string) {
+    return this.imports.get(id);
+  }
+
+  @Post('imports')
+  stageImport(@Body() body: { filename?: string; content?: string }, @Req() request: AdminRequest) {
+    if (!body || typeof body.filename !== 'string' || typeof body.content !== 'string') {
+      throw new BadRequestException('请选择 YAML 采集草稿文件');
+    }
+    if (!/\.ya?ml$/i.test(body.filename)) throw new BadRequestException('仅支持 .yaml 或 .yml 文件');
+    if (Buffer.byteLength(body.content, 'utf8') > 80 * 1024) throw new BadRequestException('单个采集文件不能超过 80 KB');
+    let payload: unknown;
+    try {
+      payload = parseYaml(body.content);
+    } catch (error) {
+      throw new BadRequestException(`YAML 解析失败：${error instanceof Error ? error.message : String(error)}`);
+    }
+    return this.imports.stage(payload, request.admin?.accountId ?? undefined);
+  }
+
+  @Patch('imports/:id/review')
+  reviewImport(
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body(new ZodValidationPipe(importReviewSchema)) body: z.infer<typeof importReviewSchema>,
+    @Req() request: AdminRequest,
+  ) {
+    const actorId = request.admin?.accountId;
+    if (!actorId) throw new BadRequestException('采集审核需要账号登录');
+    return this.imports.review(id, body, actorId);
+  }
+
   @Get('products/:id')
   product(@Param('id', ParseUUIDPipe) id: string) {
     return this.admin.getProduct(id);
@@ -172,6 +226,13 @@ export class AdminController {
     @Req() request: AdminRequest,
   ) {
     return this.admin.updateProduct(id, body, request.admin?.accountId ?? undefined);
+  }
+
+  @Post('product-images')
+  @UseInterceptors(FileInterceptor('file', { limits: { fileSize: 10 * 1024 * 1024 } }))
+  uploadProductImage(@UploadedFile() file?: { buffer: Buffer; mimetype: string }) {
+    if (!file) throw new BadRequestException('请选择要上传的图片');
+    return this.imageUploads.upload({ buffer: file.buffer, mimetype: file.mimetype });
   }
 
   @Get('brands')

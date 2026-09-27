@@ -14,6 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: SITE_URL, lastModified: now, changeFrequency: "daily", priority: 1 },
+    {
+      url: absoluteUrl("/categories"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
     ...liveCategories.map((category) => ({
       url: absoluteUrl(`/browse/${category.slug}`),
       lastModified: now,

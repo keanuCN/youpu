@@ -1,0 +1,48 @@
+[
+  {
+    "slug": "burton-reserve-gore-tex-2l-jacket-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Reserve GORE-TEX 2L Jacket",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/mens-burton-reserve-gore-tex-2l-jacket-302411",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-ak-tuvak-gore-tex-c-knit-3l-jacket-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Tuvak GORE-TEX C-KNIT 3L Jacket",
+    "identityAliases": ["Tuvak"],
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/mens-burton-ak-tuvak-gore-tex-c-knit-3l-jacket-240831",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-reserve-2l-jacket-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Reserve 2L Jacket",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/mens-burton-reserve-2l-jacket-302551",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-reserve-2l-pants-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Reserve 2L Pants",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/mens-burton-reserve-2l-pants-302631",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-reserve-2l-bib-pants-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Reserve 2L Bib Pants",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/mens-burton-reserve-2l-bib-pants-302651",
+    "mode": "cheerio"
+  }
+]

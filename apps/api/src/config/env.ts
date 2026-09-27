@@ -26,6 +26,30 @@ const envSchema = z.object({
   EMAIL_SMTP_USER: z.string().optional(),
   EMAIL_SMTP_PASSWORD: z.string().optional(),
   EMAIL_FROM: z.preprocess((value) => (value === '' ? undefined : value), z.string().email().optional()),
+  TOS_REGION: z.preprocess((value) => (value === '' ? undefined : value), z.string().min(1).optional()),
+  TOS_BUCKET: z.preprocess((value) => (value === '' ? undefined : value), z.string().min(1).optional()),
+  TOS_ENDPOINT: z.preprocess((value) => (value === '' ? undefined : value), z.string().url().optional()),
+  TOS_ACCESS_KEY: z.preprocess((value) => (value === '' ? undefined : value), z.string().min(1).optional()),
+  TOS_SECRET_KEY: z.preprocess((value) => (value === '' ? undefined : value), z.string().min(1).optional()),
+  TOS_PUBLIC_BASE_URL: z.preprocess((value) => (value === '' ? undefined : value), z.string().url().optional()),
+}).superRefine((value, context) => {
+  const tosKeys = [
+    'TOS_REGION',
+    'TOS_BUCKET',
+    'TOS_ENDPOINT',
+    'TOS_ACCESS_KEY',
+    'TOS_SECRET_KEY',
+    'TOS_PUBLIC_BASE_URL',
+  ] as const;
+  const configured = tosKeys.filter((key) => value[key] !== undefined);
+  if (configured.length > 0 && configured.length < tosKeys.length) {
+    const missing = tosKeys.filter((key) => value[key] === undefined);
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: missing,
+      message: `TOS 配置必须完整提供；缺少：${missing.join(', ')}`,
+    });
+  }
 });
 
 export type Env = z.infer<typeof envSchema>;

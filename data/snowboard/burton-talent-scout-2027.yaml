@@ -20,6 +20,12 @@ specs:
   scenes:
     - freestyle
     - all-mountain
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/132181CBO2_1.webp?v=1783957423&width=2100"
+    kind: face
+    alt: Burton Talent Scout Camber 2027 单板正面图
+    source: Burton 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/womens-burton-talent-scout-camber-snowboard-132181

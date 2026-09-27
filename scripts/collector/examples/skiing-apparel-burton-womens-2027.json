@@ -1,0 +1,48 @@
+[
+  {
+    "slug": "burton-womens-reserve-2l-insulated-stretch-jacket-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Reserve 2L Insulated Stretch Jacket",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/womens-burton-reserve-2l-insulated-stretch-jacket-302581",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-womens-reserve-2l-jacket-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Reserve 2L Jacket",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/womens-burton-reserve-2l-jacket-302561",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-womens-reserve-gore-tex-2l-bib-pants-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Reserve GORE-TEX 2L Bib Pants",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/womens-burton-reserve-gore-tex-2l-bib-pants-302461",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-womens-ak-cyclic-gore-tex-2l-bib-pants-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Cyclic GORE-TEX 2L Bib Pants",
+    "identityAliases": ["Cyclic"],
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/womens-burton-ak-cyclic-gore-tex-2l-bib-pants-307661",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "burton-womens-reserve-2l-3-in-1-pants-2027",
+    "category": "skiing-apparel",
+    "brand": "burton",
+    "model": "Reserve 2L 3-in-1 Pants",
+    "year": 2027,
+    "url": "https://jp.burton.com/en-jp/products/womens-burton-reserve-2l-3-in-1-pants-302521",
+    "mode": "cheerio"
+  }
+]

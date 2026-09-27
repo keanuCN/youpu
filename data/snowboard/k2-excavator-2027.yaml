@@ -15,6 +15,12 @@ specs:
     - carving
     - powder
     - all-mountain
+images:
+  - url: "https://www.milosport.com/cdn/shop/files/KB2616871398Large.png?v=1774904988&width=800"
+    kind: face
+    alt: K2 Excavator 2027 单板商品图
+    source: Milosport 2027 商品页图片（零售商图片，授权待核；正式上线前迁移至自有 COS 或替换为自制图）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/excavator-unisex-snowboard-kb261687

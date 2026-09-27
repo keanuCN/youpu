@@ -49,6 +49,8 @@ import { mchoseEsportsKeyboardAdapter } from '../esports-keyboard/brands/mchose'
 import { cherryEsportsKeyboardAdapter } from '../esports-keyboard/brands/cherry';
 import { melgeekEsportsKeyboardAdapter } from '../esports-keyboard/brands/melgeek';
 import { rogEsportsKeyboardAdapter } from '../esports-keyboard/brands/rog';
+import { burtonSkiingApparelAdapter } from '../skiing-apparel/brands/burton';
+import { salomonSkiingApparelAdapter } from '../skiing-apparel/brands/salomon';
 
 export interface ProductAdapter {
   name: string;
@@ -99,6 +101,8 @@ const adapters: ProductAdapter[] = [
   cherryEsportsKeyboardAdapter,
   melgeekEsportsKeyboardAdapter,
   rogEsportsKeyboardAdapter,
+  burtonSkiingApparelAdapter,
+  salomonSkiingApparelAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,

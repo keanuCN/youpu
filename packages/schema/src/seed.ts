@@ -46,7 +46,7 @@ export const productSeedSchema = z.object({
   images: z.array(seedImageSchema).default([]),
   data_source: seedDataSourceSchema.optional(),
   status: z.enum(['draft', 'published']).default('draft'),
-});
+}).strict();
 export type ProductSeed = z.infer<typeof productSeedSchema>;
 
 export const brandSeedSchema = z.object({

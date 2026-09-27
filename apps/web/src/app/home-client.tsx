@@ -307,11 +307,15 @@ function useLiveCategoryCounts(): Record<string, number> {
 }
 
 function CategoryEntries({ categoryCounts }: { categoryCounts: Record<string, number> }) {
+  const liveCategories = CATEGORY_LEAVES.filter((category) => category.status === "live");
+  const previewCategories = liveCategories.slice(0, 8);
+  const remainingCount = CATEGORY_LEAVES.length - previewCategories.length;
+
   return (
     <section id="categories" className="reveal mt-16 scroll-mt-32">
       <SectionHead index="00" title="品类入口" titleEn="Categories" desc="已开档品类可直接浏览；其余品类共用同一套模板引擎，配置就绪即上线。" />
       <div className="grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
-        {CATEGORY_LEAVES.map((c) => {
+        {previewCategories.map((c) => {
           const live = c.status === "live";
           const count = categoryCounts[c.slug];
           return (
@@ -343,6 +347,17 @@ function CategoryEntries({ categoryCounts }: { categoryCounts: Record<string, nu
           );
         })}
       </div>
+      {remainingCount > 0 ? (
+        <div className="mt-5 flex justify-center">
+          <Link
+            href="/categories"
+            className="mono-label inline-flex items-center gap-2 border border-border px-4 py-2.5 text-muted-foreground transition-colors hover:border-foreground hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            更多品类 · {remainingCount}
+            <ArrowRight size={14} />
+          </Link>
+        </div>
+      ) : null}
     </section>
   );
 }

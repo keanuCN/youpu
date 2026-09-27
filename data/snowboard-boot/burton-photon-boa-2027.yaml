@@ -7,7 +7,7 @@ title: "Burton Photon BOA 2027"
 one_liner: "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。"
 specs:
   lacingSystem: "双区 BOA"
-+data_source:
+data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861
 status: published

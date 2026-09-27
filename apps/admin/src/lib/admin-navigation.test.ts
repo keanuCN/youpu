@@ -9,6 +9,7 @@ test('editors only see the dashboard, analytics, and catalog maintenance section
     'products',
     'brands',
     'categories',
+    'import',
   ]);
 });
 

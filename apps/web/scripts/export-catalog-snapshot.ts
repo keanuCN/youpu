@@ -2,6 +2,8 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
 import { normalizePriceRange, productListResponseSchema, type ProductListItem } from "@youpu/schema";
+import { shouldRejectCatalogCountDecrease } from "./catalog-build-policy";
+import { CATALOG_SNAPSHOT_META } from "../src/data/catalog-snapshot";
 
 const PAGE_SIZE = 48;
 const apiBase = (process.env.CONTENT_EXPORT_API_BASE ?? process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:3001").replace(/\/$/, "");
@@ -125,6 +127,16 @@ async function main(): Promise<void> {
   const sorted = stableSort([...unique.values()]);
   if (sorted.length !== total) {
     throw new Error(`目录快照数量不完整：接口声明 ${total} 条，实际得到 ${sorted.length} 条`);
+  }
+  if (
+    shouldRejectCatalogCountDecrease(CATALOG_SNAPSHOT_META.total, sorted.length, {
+      CONTENT_EXPORT_ALLOW_COUNT_DECREASE: process.env.CONTENT_EXPORT_ALLOW_COUNT_DECREASE,
+    })
+  ) {
+    throw new Error(
+      `目录快照导出已中止：API 返回 ${sorted.length} 条产品，当前仓库快照有 ${CATALOG_SNAPSHOT_META.total} 条。` +
+        "请先核实 API 数据是否完整；确认需要移除产品后，再设置 CONTENT_EXPORT_ALLOW_COUNT_DECREASE=true 重新导出。",
+    );
   }
 
   await mkdir(dirname(outputPath), { recursive: true });
