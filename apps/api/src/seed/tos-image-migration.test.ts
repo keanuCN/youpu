@@ -1,7 +1,9 @@
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
+import { mkdtemp, mkdir, readFile, rm, symlink, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { join, resolve } from 'node:path';
 import test from 'node:test';
 import { parse, stringify } from 'yaml';
 import {
@@ -12,8 +14,11 @@ import {
   parseImageMigrationArgs,
   parseImageMigrationManifest,
   resolveImageMigrationManifestPath,
+  summarizeImageMigration,
   type ImageMigrationManifest,
 } from './tos-image-migration';
+
+const execFileAsync = promisify(execFile);
 
 async function createFixture() {
   const dataDir = await mkdtemp(join(tmpdir(), 'youpu-image-migration-'));
@@ -26,6 +31,7 @@ async function createFixture() {
       { url: 'https://images.example.com/front.png', kind: 'face', source: '官方产品页，版权待核', sort_order: 0 },
       { url: 'https://images.example.com/side.webp', kind: 'side', source: '经授权', sort_order: 1 },
       { url: 'https://youpu.tos-cn-beijing.volces.com/product-images/existing.webp', kind: 'base', sort_order: 2 },
+      { url: 'https://youpu.tos-cn-beijing.volces.com/legacy/old.webp', kind: 'base', sort_order: 3 },
     ],
   }));
   return { dataDir, file, dispose: () => rm(dataDir, { recursive: true, force: true }) };
@@ -40,7 +46,7 @@ function itemAt<T>(items: T[], index: number): T {
 test('creates an unapproved manifest for external HTTPS images and skips existing TOS objects', async () => {
   const fixture = await createFixture();
   try {
-    const manifest = await createImageMigrationManifest(fixture.dataDir, 'https://youpu.tos-cn-beijing.volces.com');
+    const manifest = await createImageMigrationManifest(fixture.dataDir, 'https://youpu.tos-cn-beijing.volces.com/cdn');
 
     assert.equal(manifest.version, 1);
     assert.equal(manifest.entries.length, 2);
@@ -135,6 +141,33 @@ test('updates only an approved image and retains its source note and original UR
   }
 });
 
+test('preserves a concurrent YAML edit made while an approved image is uploading', async () => {
+  const fixture = await createFixture();
+  try {
+    const manifest = await createImageMigrationManifest(fixture.dataDir, 'https://youpu.tos-cn-beijing.volces.com');
+    itemAt(manifest.entries, 0).approved = true;
+
+    const result = await applyImageMigrationManifest(manifest, {
+      dataDir: fixture.dataDir,
+      fetchImage: async () => ({ buffer: Buffer.from('png'), contentType: 'image/png' }),
+      upload: async () => {
+        const current = parse(await readFile(fixture.file, 'utf8')) as { title?: string; images: Array<{ url: string }> };
+        current.title = 'concurrent title edit';
+        itemAt(current.images, 0).url = 'https://images.example.com/concurrent.png';
+        await writeFile(fixture.file, stringify(current));
+        return { url: 'https://youpu.tos-cn-beijing.volces.com/product-images/migrated.webp' };
+      },
+    });
+
+    const finalYaml = parse(await readFile(fixture.file, 'utf8')) as { title?: string; images: Array<{ url: string }> };
+    assert.equal(itemAt(result.entries, 0).status, 'failed');
+    assert.equal(finalYaml.title, 'concurrent title edit');
+    assert.equal(itemAt(finalYaml.images, 0).url, 'https://images.example.com/concurrent.png');
+  } finally {
+    await fixture.dispose();
+  }
+});
+
 test('records upload and decode failures without changing the source URL and allows retry', async () => {
   const fixture = await createFixture();
   try {
@@ -183,17 +216,89 @@ test('requires explicit apply and a manifest path for migration CLI apply mode',
   });
 });
 
-test('restricts migration manifests to ignored data/tmp JSON files and validates loaded JSON', () => {
-  const dataDir = join(tmpdir(), 'youpu-data');
-  assert.equal(
-    resolveImageMigrationManifestPath(dataDir, join(dataDir, 'tmp', 'review.json')),
-    join(dataDir, 'tmp', 'review.json'),
-  );
-  assert.throws(
-    () => resolveImageMigrationManifestPath(dataDir, join(dataDir, 'camera', 'product.yaml')),
-    /只能保存为 data\/tmp\//,
-  );
-  assert.throws(() => parseImageMigrationManifest({ version: 2, entries: [] }), /Too small|Invalid literal/);
+test('counts approved failures separately from unapproved rows', () => {
+  const manifest: ImageMigrationManifest = {
+    version: 1,
+    createdAt: '2026-09-27T00:00:00.000Z',
+    publicBaseUrl: 'https://youpu.tos-cn-beijing.volces.com',
+    entries: [
+      { id: 'a', file: 'camera/a.yaml', productSlug: 'camera-a', imageIndex: 0, originalUrl: 'https://images.example.com/a.png', sourceNote: '', approved: false, status: 'failed' },
+      { id: 'b', file: 'camera/b.yaml', productSlug: 'camera-b', imageIndex: 0, originalUrl: 'https://images.example.com/b.png', sourceNote: '', approved: true, status: 'failed' },
+      { id: 'c', file: 'camera/c.yaml', productSlug: 'camera-c', imageIndex: 0, originalUrl: 'https://images.example.com/c.png', sourceNote: '', approved: true, status: 'pending' },
+    ],
+  };
+  assert.deepEqual(summarizeImageMigration(manifest), {
+    pending: 1,
+    approvedPending: 1,
+    done: 0,
+    approvedFailed: 1,
+  });
+});
+
+test('plan CLI writes a review manifest and status counts without requiring DB or TOS credentials', async () => {
+  const fixture = await createFixture();
+  const manifestPath = join(fixture.dataDir, 'tmp', 'cli-review.json');
+  try {
+    const { stdout } = await execFileAsync(process.execPath, [
+      '--import', 'tsx', 'src/seed/migrate-product-images.ts', 'plan', '--out', manifestPath,
+    ], {
+      cwd: resolve(__dirname, '../..'),
+      timeout: 20_000,
+      env: {
+        ...process.env,
+        DATA_DIR: fixture.dataDir,
+        DATABASE_URL: '',
+        TOS_REGION: '',
+        TOS_BUCKET: '',
+        TOS_ENDPOINT: '',
+        TOS_ACCESS_KEY: '',
+        TOS_SECRET_KEY: '',
+        TOS_PUBLIC_BASE_URL: 'https://youpu.tos-cn-beijing.volces.com',
+      },
+    });
+    const manifest = JSON.parse(await readFile(manifestPath, 'utf8')) as ImageMigrationManifest;
+
+    assert.match(stdout, /未批准待审核 2/);
+    assert.equal(manifest.entries.every((entry) => !entry.approved && entry.status === 'pending'), true);
+  } finally {
+    await fixture.dispose();
+  }
+});
+
+test('restricts migration manifests to ignored data/tmp JSON files and validates loaded JSON', async () => {
+  const parent = await mkdtemp(join(tmpdir(), 'youpu-manifest-path-'));
+  const dataDir = join(parent, 'data');
+  try {
+    await mkdir(dataDir);
+    assert.equal(
+      await resolveImageMigrationManifestPath(dataDir, join(dataDir, 'tmp', 'review.json')),
+      join(dataDir, 'tmp', 'review.json'),
+    );
+    await assert.rejects(
+      resolveImageMigrationManifestPath(dataDir, join(dataDir, 'camera', 'product.yaml')),
+      /只能保存为 data\/tmp\//,
+    );
+    assert.throws(() => parseImageMigrationManifest({ version: 2, entries: [] }), /Too small|Invalid literal/);
+  } finally {
+    await rm(parent, { recursive: true, force: true });
+  }
+});
+
+test('rejects a migration-manifest directory symlink that escapes the data directory', async () => {
+  const parent = await mkdtemp(join(tmpdir(), 'youpu-image-manifest-link-'));
+  const dataDir = join(parent, 'data');
+  const outsideDir = join(parent, 'outside');
+  try {
+    await mkdir(dataDir);
+    await mkdir(outsideDir);
+    await symlink(outsideDir, join(dataDir, 'tmp'), 'junction');
+    await assert.rejects(
+      resolveImageMigrationManifestPath(dataDir, join(dataDir, 'tmp', 'review.json')),
+      /不能指向 data 目录之外/,
+    );
+  } finally {
+    await rm(parent, { recursive: true, force: true });
+  }
 });
 
 test('rejects a reviewed manifest when the current TOS public URL changed', () => {

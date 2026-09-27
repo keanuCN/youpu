@@ -1,5 +1,5 @@
 import { createHash, randomUUID } from 'node:crypto';
-import { readdir, readFile, realpath, rename, writeFile } from 'node:fs/promises';
+import { lstat, mkdir, readdir, readFile, realpath, rename, writeFile } from 'node:fs/promises';
 import { basename, dirname, relative, resolve, sep } from 'node:path';
 import { parseDocument } from 'yaml';
 import { z } from 'zod';
@@ -70,12 +70,23 @@ export function parseImageMigrationManifest(value: unknown): ImageMigrationManif
   return migrationManifestSchema.parse(value);
 }
 
-export function resolveImageMigrationManifestPath(dataDir: string, requestedPath: string): string {
+export async function resolveImageMigrationManifestPath(dataDir: string, requestedPath: string): Promise<string> {
   const root = resolve(dataDir);
   const output = resolve(requestedPath);
   const temporaryDir = resolve(root, 'tmp');
-  if (!output.startsWith(`${temporaryDir}${sep}`) || !output.toLowerCase().endsWith('.json')) {
+  if (dirname(output) !== temporaryDir || !output.toLowerCase().endsWith('.json')) {
     throw new Error('迁移清单只能保存为 data/tmp/ 下的 JSON 文件');
+  }
+
+  await mkdir(temporaryDir, { recursive: true });
+  const realRoot = await realpath(root);
+  const realTemporaryDir = await realpath(temporaryDir);
+  if (realTemporaryDir !== resolve(realRoot, 'tmp')) throw new Error('迁移清单目录不能指向 data 目录之外或其他目录');
+  try {
+    const target = await lstat(output);
+    if (target.isSymbolicLink() || !target.isFile()) throw new Error('迁移清单目标必须是普通 JSON 文件，不能是链接');
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
   }
   return output;
 }
@@ -112,7 +123,7 @@ export async function createImageMigrationManifest(
         if (!image || typeof image !== 'object' || Array.isArray(image)) return;
         const imageRecord = image as Record<string, unknown>;
         const originalUrl = imageRecord.url;
-        if (typeof originalUrl !== 'string' || !isHttpsUrl(originalUrl) || isTosObjectUrl(originalUrl, publicBase)) return;
+        if (typeof originalUrl !== 'string' || !isHttpsUrl(originalUrl) || isSameOrigin(originalUrl, publicBase)) return;
         const sourceNote = imageRecord.source;
         const id = createHash('sha256').update(`${relativeFile}\0${imageIndex}\0${originalUrl}`).digest('hex').slice(0, 24);
         entries.push({
@@ -157,8 +168,13 @@ export async function applyImageMigrationManifest(
 
       const uploaded = await options.upload(downloaded.buffer, contentType);
       if (!isTosObjectUrl(uploaded.url, publicBase)) throw new Error('上传返回地址不属于配置的 TOS 公共地址');
-      document.setIn(['images', entry.imageIndex, 'url'], uploaded.url);
-      await writeYamlAtomically(absoluteFile, document.toString());
+      const latestDocument = parseDocument(await readFile(absoluteFile, 'utf8'));
+      if (latestDocument.errors.length) throw new Error(`上传后商品资料无法解析：${latestDocument.errors.map((item) => item.message).join('; ')}`);
+      if (latestDocument.get('slug') !== entry.productSlug || latestDocument.getIn(['images', entry.imageIndex, 'url']) !== entry.originalUrl) {
+        throw new Error('上传期间商品图片地址或商品标识发生变化，已保留当前资料，请重新生成迁移清单');
+      }
+      latestDocument.setIn(['images', entry.imageIndex, 'url'], uploaded.url);
+      await writeYamlAtomically(absoluteFile, latestDocument.toString());
       entry.status = 'done';
       entry.migratedUrl = uploaded.url;
       delete entry.error;
@@ -248,6 +264,20 @@ export function parseImageMigrationArgs(args: string[]): ImageMigrationCommand {
   throw new Error('请指定 plan 或 apply 模式');
 }
 
+export function summarizeImageMigration(manifest: ImageMigrationManifest): {
+  pending: number;
+  approvedPending: number;
+  done: number;
+  approvedFailed: number;
+} {
+  return {
+    pending: manifest.entries.filter((entry) => entry.status === 'pending').length,
+    approvedPending: manifest.entries.filter((entry) => entry.approved && entry.status === 'pending').length,
+    done: manifest.entries.filter((entry) => entry.status === 'done').length,
+    approvedFailed: manifest.entries.filter((entry) => entry.approved && entry.status === 'failed').length,
+  };
+}
+
 export function normalizeImageContentType(value: string): string {
   return (value.split(';', 1)[0] ?? '').trim().toLowerCase();
 }
@@ -269,6 +299,10 @@ function isHttpsUrl(value: string): boolean {
 
 function isTosObjectUrl(value: string, publicBase: string): boolean {
   return value === publicBase || value.startsWith(`${publicBase}/`);
+}
+
+function isSameOrigin(value: string, other: string): boolean {
+  return new URL(value).origin === new URL(other).origin;
 }
 
 async function resolveManifestFile(root: string, manifestPath: string): Promise<string> {

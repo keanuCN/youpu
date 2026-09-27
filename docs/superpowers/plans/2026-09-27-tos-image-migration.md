@@ -4,7 +4,7 @@
 
 **Goal:** Provide a review-first CLI for moving explicitly approved catalog images to TOS, preserve each original URL and source note, and remove the admin dashboard's obsolete COS upload status.
 
-**Architecture:** A TypeScript migration module scans product seed YAML and writes a JSON review manifest with every external image marked unapproved. Applying a reviewed manifest requires both per-entry approval and an explicit `--apply` flag; each successful entry is downloaded under strict size/type/timeout limits, uploaded through the existing API image service, and then updated in its source YAML. The manifest retains the original URL and source note as the migration audit record; the YAML source note itself remains unchanged. Failed entries remain in the manifest with an error and can be retried without re-uploading completed rows.
+**Architecture:** A TypeScript migration module scans product seed YAML and writes a JSON review manifest with every external image marked unapproved. Applying a reviewed manifest requires both per-entry approval and an explicit `--apply` flag; each successful entry is downloaded under strict size/type/timeout limits, uploaded through the existing API image service, and then updated in its source YAML only after re-reading and rechecking the current file. The manifest retains the original URL and source note as the migration audit record; the YAML source note itself remains unchanged. Failed entries remain in the manifest with an error and can be retried without re-uploading completed rows.
 
 **Tech Stack:** Node.js 20+, TypeScript, `yaml`, existing `AdminImageUploadService`, `tsx` Node test runner.
 
@@ -85,7 +85,7 @@ Expected: failures identify the missing apply behavior, not fixture setup errors
 
 - [ ] **Step 6: Implement safe download, upload, and YAML update behavior**
 
-Require HTTPS and no redirects; enforce an abort timeout of 20 seconds and a streaming 10 MiB cap; accept only JPEG, PNG, and WebP content types; call the existing image upload service; use `parseDocument` to update only `images[imageIndex].url`; leave the YAML source note unchanged; refuse paths outside `dataDir`; persist each entry's success/error in the manifest after processing it.
+Require HTTPS and no redirects; enforce an abort timeout of 20 seconds and a streaming 10 MiB cap; accept only JPEG, PNG, and WebP content types; call the existing image upload service; re-read the YAML after upload and recheck the product slug and exact original image URL before changing only `images[imageIndex].url`; leave the YAML source note unchanged; refuse paths outside `dataDir`; persist each entry's success/error in the manifest after processing it.
 
 - [ ] **Step 7: Test success, rejection, and resumability**
 
@@ -98,7 +98,7 @@ Expected: all migration tests pass.
 
 - [ ] **Step 9: Add explicit plan/apply CLI commands**
 
-The plan command writes a JSON manifest only under `data/tmp/` and prints counts by status without contacting image sources or TOS. The apply command requires both `--apply` and `--manifest`; it loads API `.env`, rejects a manifest whose TOS public URL differs from current API configuration, uses `AdminImageUploadService.upload`, writes progress back to the manifest after each row, and exits nonzero if any approved row fails. Missing or malformed flags must print Chinese usage and exit nonzero.
+The plan command writes a JSON manifest only under `data/tmp/`, rejects symlinked manifest directories/files, and prints counts by status without contacting image sources or TOS. The apply command requires both `--apply` and `--manifest`; it loads API `.env`, rejects a manifest whose TOS public URL differs from current API configuration, uses `AdminImageUploadService.upload`, writes progress back to the manifest after each row, and exits nonzero only when an approved row fails. Missing or malformed flags must print Chinese usage and exit nonzero.
 
 - [ ] **Step 10: Add a CLI safety test**
 
