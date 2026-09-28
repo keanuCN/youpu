@@ -750,6 +750,7 @@ const SKIING_APPAREL: Category = {
       fields: [
         { key: "garmentType", label: "款式", type: "text", direction: null },
         { key: "fit", label: "版型", type: "text", direction: null },
+        { key: "version", label: "衣长版本", type: "text", direction: null },
         { key: "insulation", label: "保暖结构", type: "text", direction: null },
       ],
     },
@@ -768,6 +769,18 @@ const SKIING_APPAREL: Category = {
         { key: "venting", label: "通风拉链", type: "text", direction: null },
         { key: "powderSkirt", label: "防雪裙", type: "text", direction: null },
         { key: "fabric", label: "面料说明", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "安全与细节",
+      fields: [
+        { key: "recco", label: "RECCO 救援反射器", type: "text", direction: null },
+        { key: "helmetCompatibleHood", label: "头盔兼容帽兜", type: "text", direction: null },
+        { key: "skiPassPocket", label: "雪票口袋", type: "text", direction: null },
+        { key: "suspenders", label: "可拆卸吊带", type: "text", direction: null },
+        { key: "corduraReinforced", label: "CORDURA 防磨补强", type: "text", direction: null },
+        { key: "articulatedKnees", label: "立体剪裁膝部", type: "text", direction: null },
+        { key: "ziprotectCompatible", label: "ZIPROTEC 背部护具兼容", type: "text", direction: null },
       ],
     },
   ],

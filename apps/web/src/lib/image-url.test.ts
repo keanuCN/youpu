@@ -69,6 +69,11 @@ test("allows verified snowboard product image hosts and rejects unrelated paths"
     true,
   );
   assert.equal(
+    isAllowedImageUrl("https://kailasgear.com/cdn/shop/files/KG2531144_-2.webp?v=1&width=1090"),
+    true,
+  );
+  assert.equal(isAllowedImageUrl("https://kailasgear.com/private/product-image.webp"), false);
+  assert.equal(
     isAllowedImageUrl("https://cdn.dam.salomon.com/4e88d690-8431-4ab7-b0f7-b36001082530/L45439300/image.png"),
     true,
   );

@@ -9,10 +9,19 @@ specs:
   garmentType: jacket
   waterproofMm: 10000
   insulation: 100 g/m² body / 80 g/m² sleeves synthetic wadding
+  fit: loose
   seamTaping: fully-taped
   powderSkirt: true
+  helmetCompatibleHood: true
+  skiPassPocket: true
+  ziprotectCompatible: true
   fabric: 100.0% Polyamide
-images: []
+images:
+  - url: "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto"
+    kind: face
+    sort_order: 0
+    alt: "迪卡侬 SNB 500 Ziprotect 男款滑雪夹克"
+    source: "迪卡侬英国官网商品图；展示授权状态待核"
 data_source:
   kind: crawl
   origin_url: https://www.decathlon.co.uk/p/men%27s-snb-jacket-500/_/R-p-350525

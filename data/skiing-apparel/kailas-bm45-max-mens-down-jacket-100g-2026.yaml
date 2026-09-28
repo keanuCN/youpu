@@ -9,9 +9,19 @@ specs:
   construction: 3L
   insulation: 100g 800FP down
   fabric: 40D 3L GORE-TEX
+  fit: athletic-h-cut
+  version: long
   venting: true
   powderSkirt: true
-images: []
+  recco: true
+  helmetCompatibleHood: true
+  skiPassPocket: true
+images:
+  - url: "https://kailasgear.com/cdn/shop/files/KG2531143_-2_b8218766-076d-4227-a5bc-7a9d33c6bade.webp?v=1786155711&width=1090"
+    kind: face
+    sort_order: 0
+    alt: "KAILAS BM45 MAX 男款 100g 800FP 羽绒滑雪夹克"
+    source: "KAILAS 官网商品图；展示授权状态待核"
 data_source:
   kind: crawl
   origin_url: https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens-1

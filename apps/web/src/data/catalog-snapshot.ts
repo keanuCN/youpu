@@ -35,7 +35,7 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "https://xiaopang.club + 本地单板档案",
-  "generatedAt": "2026-09-28T05:24:28.627Z",
+  "generatedAt": "2026-09-28T05:40:10.607Z",
   "total": 270,
   "pageSize": 48,
   "categorySlugs": [
@@ -4420,7 +4420,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4435,9 +4435,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "garmentType": "jacket",
       "waterproofMm": 10000,
       "insulation": "100 g/m² body / 80 g/m² sleeves synthetic wadding",
+      "fit": "loose",
       "seamTaping": "fully-taped",
       "powderSkirt": true,
-      "fabric": "100.0% Polyamide"
+      "helmetCompatibleHood": true,
+      "fabric": "100.0% Polyamide",
+      "skiPassPocket": true,
+      "ziprotectCompatible": true
     },
     "highlights": [
       {
@@ -4451,14 +4455,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "value": "10000mm"
       },
       {
+        "key": "fit",
+        "label": "版型",
+        "value": "宽松长款"
+      },
+      {
         "key": "seamTaping",
         "label": "压胶",
         "value": "全压胶"
-      },
-      {
-        "key": "powderSkirt",
-        "label": "防雪裙",
-        "value": "是"
       }
     ]
   },
@@ -4472,7 +4476,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://kailasgear.com/cdn/shop/files/KG2541316_-1.webp?v=1786154508&width=1090",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4486,7 +4490,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "garmentType": "pants",
       "construction": "3L",
-      "fabric": "75D 3L GORE-TEX"
+      "fit": "relaxed",
+      "venting": true,
+      "recco": true,
+      "fabric": "75D 3L GORE-TEX",
+      "suspenders": true,
+      "corduraReinforced": true,
+      "articulatedKnees": true
     },
     "highlights": [
       {
@@ -4498,6 +4508,16 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "construction",
         "label": "面料层数",
         "value": "三层"
+      },
+      {
+        "key": "fit",
+        "label": "版型",
+        "value": "宽松"
+      },
+      {
+        "key": "venting",
+        "label": "通风拉链",
+        "value": "是"
       }
     ]
   },
@@ -4511,7 +4531,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://kailasgear.com/cdn/shop/files/KG2531144_-2.webp?v=1786155291&width=1090",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4526,8 +4546,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "garmentType": "jacket",
       "construction": "3L",
       "insulation": "95g 800FP down",
+      "fit": "athletic-y-cut",
+      "version": "regular",
       "venting": true,
-      "fabric": "40D 3L GORE-TEX"
+      "recco": true,
+      "helmetCompatibleHood": true,
+      "fabric": "40D 3L GORE-TEX",
+      "skiPassPocket": true
     },
     "highlights": [
       {
@@ -4539,6 +4564,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "construction",
         "label": "面料层数",
         "value": "三层"
+      },
+      {
+        "key": "fit",
+        "label": "版型",
+        "value": "Y 型运动剪裁"
       },
       {
         "key": "venting",
@@ -4557,7 +4587,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://kailasgear.com/cdn/shop/files/KG2531143_-2_b8218766-076d-4227-a5bc-7a9d33c6bade.webp?v=1786155711&width=1090",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4572,9 +4602,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "garmentType": "jacket",
       "construction": "3L",
       "insulation": "100g 800FP down",
+      "fit": "athletic-h-cut",
+      "version": "long",
       "venting": true,
       "powderSkirt": true,
-      "fabric": "40D 3L GORE-TEX"
+      "recco": true,
+      "helmetCompatibleHood": true,
+      "fabric": "40D 3L GORE-TEX",
+      "skiPassPocket": true
     },
     "highlights": [
       {
@@ -4588,13 +4623,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "value": "三层"
       },
       {
-        "key": "venting",
-        "label": "通风拉链",
-        "value": "是"
+        "key": "fit",
+        "label": "版型",
+        "value": "H 型运动剪裁"
       },
       {
-        "key": "powderSkirt",
-        "label": "防雪裙",
+        "key": "venting",
+        "label": "通风拉链",
         "value": "是"
       }
     ]
@@ -4609,7 +4644,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://kailasgear.com/cdn/shop/files/KG2531244_-2.webp?v=1786156036&width=1090",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4624,9 +4659,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "garmentType": "jacket",
       "construction": "3L",
       "insulation": "95g 800FP down",
+      "fit": "athletic-y-cut",
       "venting": true,
       "powderSkirt": true,
-      "fabric": "40D 3L GORE-TEX"
+      "recco": true,
+      "helmetCompatibleHood": true,
+      "fabric": "40D 3L GORE-TEX",
+      "skiPassPocket": true
     },
     "highlights": [
       {
@@ -4640,13 +4679,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "value": "三层"
       },
       {
-        "key": "venting",
-        "label": "通风拉链",
-        "value": "是"
+        "key": "fit",
+        "label": "版型",
+        "value": "Y 型运动剪裁"
       },
       {
-        "key": "powderSkirt",
-        "label": "防雪裙",
+        "key": "venting",
+        "label": "通风拉链",
         "value": "是"
       }
     ]

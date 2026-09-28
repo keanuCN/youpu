@@ -3721,13 +3721,23 @@
         group: 款式与结构
         type: enum
         options:
-          - { value: slim, label: 修身 }
-          - { value: regular, label: 常规 }
+          - { value: athletic-y-cut, label: Y 型运动剪裁 }
+          - { value: athletic-h-cut, label: H 型运动剪裁 }
+          - { value: loose, label: 宽松长款 }
           - { value: relaxed, label: 宽松 }
-          - { value: baggy, label: 街头宽松 }
         filter: multi
         compare: true
         order: 60
+      - key: version
+        label: 衣长版本
+        group: 款式与结构
+        type: enum
+        options:
+          - { value: regular, label: 常规款 }
+          - { value: long, label: 加长款 }
+        filter: false
+        compare: true
+        order: 65
       - key: seamTaping
         label: 压胶
         group: 防护性能
@@ -3752,6 +3762,55 @@
         filter: single
         compare: true
         order: 90
+      - key: recco
+        label: RECCO 救援反射器
+        group: 安全与细节
+        type: bool
+        filter: single
+        compare: true
+        order: 95
+      - key: helmetCompatibleHood
+        label: 头盔兼容帽兜
+        group: 安全与细节
+        type: bool
+        filter: single
+        compare: true
+        order: 100
+      - key: skiPassPocket
+        label: 雪票口袋
+        group: 收纳与细节
+        type: bool
+        filter: single
+        compare: true
+        order: 105
+      - key: suspenders
+        label: 可拆卸吊带
+        group: 收纳与细节
+        type: bool
+        filter: single
+        compare: true
+        order: 110
+      - key: corduraReinforced
+        label: CORDURA 防磨补强
+        group: 安全与细节
+        type: bool
+        filter: single
+        compare: true
+        order: 115
+      - key: articulatedKnees
+        label: 立体剪裁膝部
+        group: 款式与结构
+        type: bool
+        filter: single
+        compare: true
+        order: 120
+      - key: ziprotectCompatible
+        label: ZIPROTEC 背部护具兼容
+        group: 安全与细节
+        type: bool
+        filter: single
+        compare: true
+        order: 125
       - key: fabric
         label: 面料说明
         group: 面料

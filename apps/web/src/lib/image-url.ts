@@ -27,6 +27,7 @@ const REMOTE_IMAGE_RULES = [
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0656/0251/9280/files/" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0676/1031/3014/files/" },
   { host: "www.fluxsnowboarding.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "kailasgear.com", pathPrefix: "/cdn/shop/files/" },
   { host: "cdn.dam.salomon.com", pathPrefix: "/fb6d3e52-e631-4fe0-9ca7-b36001082c68/L49290100/" },
   { host: "cdn.dam.salomon.com", pathPrefix: "/2dd43218-0575-4f37-92d2-b360010835d6/L49289600/" },
   { host: "cdn.dam.salomon.com", pathPrefix: "/06801898-0c9a-4476-b079-b31b00b424be/L47939700/" },

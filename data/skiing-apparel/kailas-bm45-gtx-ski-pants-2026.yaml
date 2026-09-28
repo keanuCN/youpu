@@ -8,7 +8,18 @@ specs:
   garmentType: pants
   construction: 3L
   fabric: 75D 3L GORE-TEX
-images: []
+  fit: relaxed
+  recco: true
+  suspenders: true
+  corduraReinforced: true
+  articulatedKnees: true
+  venting: true
+images:
+  - url: "https://kailasgear.com/cdn/shop/files/KG2541316_-1.webp?v=1786154508&width=1090"
+    kind: face
+    sort_order: 0
+    alt: "KAILAS BM45 GTX 滑雪裤"
+    source: "KAILAS 官网商品图；展示授权状态待核"
 data_source:
   kind: crawl
   origin_url: https://kailasgear.com/products/kailas-bm45-gtx-ski-pants
