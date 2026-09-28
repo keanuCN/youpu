@@ -299,20 +299,20 @@ function Cover({
                     <div className="dot-spinner__dot" key={index} />
                   ))}
                 </div>
-                <p className="mono-label mt-4 text-foreground">{heroProgress.loaded ? "正在读取雪场图片" : "雪场图片加载中"}</p>
+                <p className="mono-label mt-4 text-foreground">LOADING IMAGE</p>
                 <p className="mono-data mt-2 text-[11px] text-muted-foreground tnum">
                   {progressPercent !== null
-                    ? `${progressPercent}%`
-                    : heroProgress.loaded > 0
-                      ? `已读取 ${formatImageBytes(heroProgress.loaded)}`
-                      : "准备读取图片"}
+                  ? `${progressPercent}%`
+                  : heroProgress.loaded > 0
+                      ? formatImageBytes(heroProgress.loaded)
+                      : "..."}
                 </p>
               </div>
             </div>
           )}
           {heroFailed && (
             <div className="absolute inset-0 flex items-center justify-center bg-muted" role="status">
-              <p className="mono-label text-muted-foreground">雪场图片暂时无法加载</p>
+              <p className="mono-label text-muted-foreground">IMAGE UNAVAILABLE</p>
             </div>
           )}
           <div className="dot-grid pointer-events-none absolute inset-0" />
