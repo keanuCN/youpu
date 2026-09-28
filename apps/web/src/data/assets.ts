@@ -59,6 +59,7 @@ export const HERO_IMAGE_POOL = [
     ),
     alt: "阿勒泰将军山滑雪场远景",
     sourcePage: "https://commons.wikimedia.org/wiki/File:Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg",
+    licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
     credit: "Pazakui · CC BY 4.0 · 已裁切",
   },
   {
@@ -67,6 +68,7 @@ export const HERO_IMAGE_POOL = [
     ),
     alt: "新疆阿勒泰地区冬季雪景",
     sourcePage: "https://commons.wikimedia.org/wiki/File:Snow_Scenery_in_Altay_Prefecture,_Xinjiang,_China,_picture3.jpg",
+    licenseUrl: "https://creativecommons.org/licenses/by/3.0/",
     credit: "Huangdan2060 · CC BY 3.0 · 已裁切",
   },
   {
@@ -75,6 +77,7 @@ export const HERO_IMAGE_POOL = [
     ),
     alt: "新疆布尔津禾木乡冬季雪景",
     sourcePage: "https://commons.wikimedia.org/wiki/File:Snow_Scenery_in_Altay_Prefecture,_Xinjiang,_China,_picture10.jpg",
+    licenseUrl: "https://creativecommons.org/licenses/by/3.0/",
     credit: "Huangdan2060 · CC BY 3.0 · 已裁切",
   },
   {
@@ -83,6 +86,7 @@ export const HERO_IMAGE_POOL = [
     ),
     alt: "新疆阿勒泰地区冬季山景",
     sourcePage: "https://commons.wikimedia.org/wiki/File:Snow_Scenery_in_Altay_Prefecture,_Xinjiang,_China,_picture1.jpg",
+    licenseUrl: "https://creativecommons.org/licenses/by/3.0/",
     credit: "Huangdan2060 · CC BY 3.0 · 已裁切",
   },
 ] as const;

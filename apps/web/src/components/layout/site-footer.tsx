@@ -19,6 +19,7 @@ const TOOLS: { label: string; href: string }[] = [
   { label: "本季榜单", href: "/rankings" },
   { label: "我的收藏", href: "/me" },
   { label: "登录 / 注册", href: "/auth" },
+  { label: "图片来源与授权", href: "/image-credits" },
 ];
 
 export function SiteFooter() {
