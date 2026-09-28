@@ -281,7 +281,7 @@ function Cover({
   return (
     <section className="relative border-b border-foreground">
       <div className="grid lg:grid-cols-[1.15fr_1fr]">
-        <div className="relative order-2 min-h-[320px] overflow-hidden bg-muted lg:order-1 lg:min-h-[560px]">
+        <div className="relative order-2 aspect-[4/3] min-h-[320px] overflow-hidden bg-muted lg:order-1 lg:aspect-square lg:min-h-[560px]">
           {heroImageSrc && heroImage && (
             <img
               src={heroImageSrc}
@@ -293,19 +293,18 @@ function Cover({
           )}
           {!heroLoaded && !heroFailed && (
             <div className="absolute inset-0 flex items-center justify-center bg-muted" role="status" aria-live="polite">
-              <div className="w-48 text-center">
+              <div className="flex flex-col items-center">
                 <div className="dot-spinner mx-auto" aria-hidden="true">
                   {Array.from({ length: 8 }, (_, index) => (
                     <div className="dot-spinner__dot" key={index} />
                   ))}
                 </div>
-                <p className="mono-label mt-4 text-foreground">LOADING IMAGE</p>
-                <p className="mono-data mt-2 text-[11px] text-muted-foreground tnum">
+                <p className="mono-data mt-4 h-4 text-[11px] text-muted-foreground tnum">
                   {progressPercent !== null
                   ? `${progressPercent}%`
                   : heroProgress.loaded > 0
                       ? formatImageBytes(heroProgress.loaded)
-                      : "..."}
+                      : ""}
                 </p>
               </div>
             </div>
