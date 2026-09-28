@@ -281,7 +281,7 @@ function Cover({
   return (
     <section className="relative border-b border-foreground">
       <div className="grid lg:grid-cols-[1.15fr_1fr]">
-        <div className="relative order-2 aspect-[4/3] min-h-[320px] overflow-hidden bg-muted lg:order-1 lg:aspect-square lg:min-h-[560px]">
+        <div className="relative order-2 min-h-[320px] overflow-hidden bg-muted lg:order-1 lg:min-h-[560px]">
           {heroImageSrc && heroImage && (
             <img
               src={heroImageSrc}
