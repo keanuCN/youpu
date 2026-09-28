@@ -35,8 +35,8 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "https://xiaopang.club + 本地单板档案",
-  "generatedAt": "2026-09-28T05:40:10.607Z",
-  "total": 270,
+  "generatedAt": "2026-09-28T05:48:37.865Z",
+  "total": 271,
   "pageSize": 48,
   "categorySlugs": [
     "action-cam",
@@ -4682,6 +4682,61 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "fit",
         "label": "版型",
         "value": "Y 型运动剪裁"
+      },
+      {
+        "key": "venting",
+        "label": "通风拉链",
+        "value": "是"
+      }
+    ]
+  },
+  {
+    "id": "01a0e68e-2624-7dee-8062-6ca6920c7285",
+    "slug": "kailas-bm45-pro-ski-bibs-unisex-2026",
+    "title": "Kailas BM45 PRO Ski Bibs Unisex – kailasgear.com",
+    "model": "BM45 PRO Ski Bibs Unisex",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0535/8433/0946/files/GJGW-KG2541314_5-4.webp?v=1786154017&width=800",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "kailas",
+      "name": "KAILAS",
+      "nameCn": "凯乐石"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "bib-pants",
+      "construction": "3L",
+      "fit": "relaxed",
+      "venting": true,
+      "recco": true,
+      "fabric": "100D 3L GORE-TEX Pro",
+      "suspenders": true,
+      "corduraReinforced": true,
+      "articulatedKnees": true
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "背带滑雪裤"
+      },
+      {
+        "key": "construction",
+        "label": "面料层数",
+        "value": "三层"
+      },
+      {
+        "key": "fit",
+        "label": "版型",
+        "value": "宽松"
       },
       {
         "key": "venting",
