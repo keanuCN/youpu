@@ -21,7 +21,7 @@ const CATEGORY_TREE_SOURCE: CategoryNode[] = [
           { slug: "snowboard-binding", name: "单板固定器", nameEn: "Snowboard Bindings", path: ["运动", "滑雪"], status: "live" },
           { slug: "snowboard-boot", name: "单板雪鞋", nameEn: "Snowboard Boots", path: ["运动", "滑雪"], status: "live" },
           { slug: "skis", name: "双板", nameEn: "Skis", path: ["运动", "滑雪"], status: "live" },
-          { slug: "skiing-apparel", name: "雪服", nameEn: "Ski Apparel", path: ["运动", "滑雪"], status: "coming_soon" },
+          { slug: "skiing-apparel", name: "雪服", nameEn: "Ski Apparel", path: ["运动", "滑雪"], status: "live" },
         ],
       },
       {
@@ -737,6 +737,69 @@ const SNOWBOARD_BINDING: Category = {
   hardcoreWeights: {},
 };
 
+const SKIING_APPAREL: Category = {
+  slug: "skiing-apparel",
+  name: "雪服",
+  nameEn: "Ski Apparel",
+  path: ["运动", "滑雪"],
+  status: "live",
+  issue: "官方规格档案 / Ski Apparel",
+  specTemplate: [
+    {
+      group: "款式与结构",
+      fields: [
+        { key: "garmentType", label: "款式", type: "text", direction: null },
+        { key: "fit", label: "版型", type: "text", direction: null },
+        { key: "insulation", label: "保暖结构", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "防护性能",
+      fields: [
+        { key: "construction", label: "面料层数", type: "text", direction: null },
+        { key: "waterproofMm", label: "防水指数", unit: " mm", type: "number", direction: "higher" },
+        { key: "breathabilityG", label: "透湿指数", unit: " g/m²/24h", type: "number", direction: "higher" },
+        { key: "seamTaping", label: "压胶", type: "text", direction: null },
+      ],
+    },
+    {
+      group: "功能与面料",
+      fields: [
+        { key: "venting", label: "通风拉链", type: "text", direction: null },
+        { key: "powderSkirt", label: "防雪裙", type: "text", direction: null },
+        { key: "fabric", label: "面料说明", type: "text", direction: null },
+      ],
+    },
+  ],
+  filterTemplate: [
+    {
+      key: "brands",
+      label: "品牌",
+      control: "multi",
+      options: [
+        { value: "KAILAS", label: "凯乐石 / KAILAS" },
+        { value: "Decathlon", label: "迪卡侬 / Decathlon" },
+      ],
+    },
+    {
+      key: "years",
+      label: "采集年份",
+      control: "multi",
+      options: [{ value: "2026", label: "2026" }],
+    },
+  ],
+  scoreDims: [
+    { key: "protection", label: "防护性能", weight: 0.3 },
+    { key: "warmth", label: "保暖舒适", weight: 0.25 },
+    { key: "mobility", label: "活动灵活", weight: 0.2 },
+    { key: "versatility", label: "场景适应", weight: 0.15 },
+    { key: "value", label: "性价比", weight: 0.1 },
+  ],
+  rankCategories: [{ key: "overall", label: "综合榜" }],
+  quizTemplate: [],
+  hardcoreWeights: {},
+};
+
 const SNOWBOARD_BOOT: Category = {
   slug: "snowboard-boot",
   name: "单板雪鞋",
@@ -1428,6 +1491,7 @@ const FLAT: Record<string, Category> = {
   snowboard: SNOWBOARD,
   "snowboard-binding": SNOWBOARD_BINDING,
   "snowboard-boot": SNOWBOARD_BOOT,
+  "skiing-apparel": SKIING_APPAREL,
   skis: SKIS,
   "badminton-racket": BADMINTON_RACKET,
   "casting-rod": CASTING_ROD,

@@ -35,8 +35,8 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "https://xiaopang.club + 本地单板档案",
-  "generatedAt": "2026-09-28T03:10:42.132Z",
-  "total": 265,
+  "generatedAt": "2026-09-28T05:24:28.627Z",
+  "total": 270,
   "pageSize": 48,
   "categorySlugs": [
     "action-cam",
@@ -54,6 +54,7 @@ export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
     "microphone",
     "mtb",
     "road-bike",
+    "skiing-apparel",
     "skis",
     "snowboard",
     "snowboard-binding",
@@ -4406,6 +4407,247 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "scenes",
         "label": "适用场景",
         "value": "竞赛 · 爬坡 · 团骑"
+      }
+    ]
+  },
+  {
+    "id": "01a0e673-7377-7658-b02f-ffac20ad94b0",
+    "slug": "decathlon-snb-500-ziprotect-jacket-2026",
+    "title": "Men’s Warm and Durable Snowboard Jacket SNB 500 Ziprotect - Camel and Black | Decathlon",
+    "model": "SNB 500 Ziprotect Men's Snowboard Jacket",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "decathlon",
+      "name": "Decathlon",
+      "nameCn": "迪卡侬"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "jacket",
+      "waterproofMm": 10000,
+      "insulation": "100 g/m² body / 80 g/m² sleeves synthetic wadding",
+      "seamTaping": "fully-taped",
+      "powderSkirt": true,
+      "fabric": "100.0% Polyamide"
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "滑雪夹克"
+      },
+      {
+        "key": "waterproofMm",
+        "label": "防水指数",
+        "value": "10000mm"
+      },
+      {
+        "key": "seamTaping",
+        "label": "压胶",
+        "value": "全压胶"
+      },
+      {
+        "key": "powderSkirt",
+        "label": "防雪裙",
+        "value": "是"
+      }
+    ]
+  },
+  {
+    "id": "01a0e673-7b30-71da-802d-4473935b6d25",
+    "slug": "kailas-bm45-gtx-ski-pants-2026",
+    "title": "Kailas BM45 GTX Ski Pants – kailasgear.com",
+    "model": "BM45 GTX Ski Pants",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "kailas",
+      "name": "KAILAS",
+      "nameCn": "凯乐石"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "pants",
+      "construction": "3L",
+      "fabric": "75D 3L GORE-TEX"
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "滑雪裤"
+      },
+      {
+        "key": "construction",
+        "label": "面料层数",
+        "value": "三层"
+      }
+    ]
+  },
+  {
+    "id": "01a0e673-87de-7256-90ba-09ece94c4711",
+    "slug": "kailas-bm45-max-mens-down-jacket-95g-2026",
+    "title": "Kailas BM45 MAX Down Ski Jacket Men's – kailasgear.com",
+    "model": "BM45 MAX Down Ski Jacket Men's",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "kailas",
+      "name": "KAILAS",
+      "nameCn": "凯乐石"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "jacket",
+      "construction": "3L",
+      "insulation": "95g 800FP down",
+      "venting": true,
+      "fabric": "40D 3L GORE-TEX"
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "滑雪夹克"
+      },
+      {
+        "key": "construction",
+        "label": "面料层数",
+        "value": "三层"
+      },
+      {
+        "key": "venting",
+        "label": "通风拉链",
+        "value": "是"
+      }
+    ]
+  },
+  {
+    "id": "01a0e673-82cc-71c0-a3bf-d48b05d159f4",
+    "slug": "kailas-bm45-max-mens-down-jacket-100g-2026",
+    "title": "Kailas BM45 MAX Down Ski Jacket Men's – kailasgear.com",
+    "model": "BM45 MAX Down Ski Jacket Men's (100g 800FP Long)",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "kailas",
+      "name": "KAILAS",
+      "nameCn": "凯乐石"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "jacket",
+      "construction": "3L",
+      "insulation": "100g 800FP down",
+      "venting": true,
+      "powderSkirt": true,
+      "fabric": "40D 3L GORE-TEX"
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "滑雪夹克"
+      },
+      {
+        "key": "construction",
+        "label": "面料层数",
+        "value": "三层"
+      },
+      {
+        "key": "venting",
+        "label": "通风拉链",
+        "value": "是"
+      },
+      {
+        "key": "powderSkirt",
+        "label": "防雪裙",
+        "value": "是"
+      }
+    ]
+  },
+  {
+    "id": "01a0e673-8d97-7609-8ae2-1c5d94c3c50c",
+    "slug": "kailas-bm45-max-womens-down-jacket-95g-2026",
+    "title": "Kailas BM45 MAX Down Ski Jacket Women's – kailasgear.com",
+    "model": "BM45 MAX Down Ski Jacket Women's",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "kailas",
+      "name": "KAILAS",
+      "nameCn": "凯乐石"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "jacket",
+      "construction": "3L",
+      "insulation": "95g 800FP down",
+      "venting": true,
+      "powderSkirt": true,
+      "fabric": "40D 3L GORE-TEX"
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "滑雪夹克"
+      },
+      {
+        "key": "construction",
+        "label": "面料层数",
+        "value": "三层"
+      },
+      {
+        "key": "venting",
+        "label": "通风拉链",
+        "value": "是"
+      },
+      {
+        "key": "powderSkirt",
+        "label": "防雪裙",
+        "value": "是"
       }
     ]
   },
