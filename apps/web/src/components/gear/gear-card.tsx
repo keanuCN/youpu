@@ -9,6 +9,7 @@ import { reviewCount, userRating } from "@/data/boards";
 import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
 import { sceneLabel } from "@/lib/domain";
 import { fmtCompact, fmtPrice } from "@/lib/format";
+import { categoryCardSignals } from "@/lib/gear-card-signals";
 import { hasEditorialScores, hasMedia, hasPrice, hasUserRating, mediaUrl } from "@/lib/gear-state";
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear } from "@/lib/api";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
@@ -42,15 +43,17 @@ function CardSignal({ gear }: { gear: GearItem }) {
               ["车型", roadBikeTypeLabel(gear.specs.bikeType)],
               ["套件", gear.specs.groupset],
             ]
-          : gear.categorySlug === "mtb"
-            ? [
-                ["车型", mtbTypeLabel(gear.specs.bikeType)],
-                ["悬挂", `${gear.specs.frontTravel ?? "—"} / ${gear.specs.rearTravel ?? "—"} mm`],
-              ]
-      : [
-          ["调性", gear.specs.power],
-          ["饵重", gear.specs.lureWeight],
-        ];
+      : gear.categorySlug === "mtb"
+        ? [
+            ["车型", mtbTypeLabel(gear.specs.bikeType)],
+            ["悬挂", `${gear.specs.frontTravel ?? "—"} / ${gear.specs.rearTravel ?? "—"} mm`],
+          ]
+        : gear.categorySlug === "casting-rod"
+          ? [
+              ["调性", gear.specs.power],
+              ["饵重", gear.specs.lureWeight],
+            ]
+          : categoryCardSignals(gear.categorySlug, gear.specs);
 
   return (
     <div className="grid grid-cols-2 gap-2 border-y border-border py-2">
