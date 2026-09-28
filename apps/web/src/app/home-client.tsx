@@ -288,7 +288,7 @@ function Cover({
               alt={heroImage.alt}
               onLoad={() => setHeroLoaded(true)}
               onError={() => setHeroFailed(true)}
-              className={`plate absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${heroLoaded ? "opacity-100" : "opacity-0"}`}
+              className={`plate absolute inset-0 h-full w-full object-cover transition-[opacity,filter,transform] duration-700 ${heroLoaded ? "opacity-100" : "opacity-0"}`}
             />
           )}
           {!heroLoaded && !heroFailed && (
