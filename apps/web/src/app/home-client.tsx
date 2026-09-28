@@ -316,7 +316,9 @@ function Cover({
           )}
           <div className="dot-grid pointer-events-none absolute inset-0" />
           <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-3 bg-gradient-to-t from-foreground/80 to-transparent p-5 sm:p-8">
-            <p className="mono-label text-background/80">WINTER FIELD · 新疆阿勒泰 / 将军山</p>
+            <p className="mono-label text-background/80">
+              WINTER FIELD{heroImage ? ` · ${heroImage.locationLabel}` : ""}
+            </p>
             <p className="mono-data text-[12px] text-background/80 tnum">当前在档 {catalogCount} 件装备</p>
           </div>
         </div>
