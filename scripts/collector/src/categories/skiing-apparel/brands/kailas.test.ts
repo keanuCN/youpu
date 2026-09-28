@@ -56,3 +56,22 @@ test('identifies ski pants, extracts fabric, and does not transfer jacket featur
   assert.equal(result.normalizedSpecs.insulation, undefined);
   assert.equal(result.normalizedSpecs.waterproofMm, undefined);
 });
+
+test('normalizes KAILAS FILTER-TEC and synthetic insulation without inventing ratings', () => {
+  const target = { ...baseTarget, model: 'Bogda Plus LT Insulated Hardshell Jacket Unisex' };
+  const result = kailasSkiingApparelAdapter.normalize(
+    target,
+    snapshot(
+      'KAILAS independently developed technology cotton, with high resilience and loftiness, matching the warmth coefficient of 700FP down. FILTER-TEC three-layer protection technology. Breathable underarm zipper. Removable windproof and snow skirt. Shell: 100% Nylon.',
+      target.model,
+    ),
+  );
+
+  assert.equal(result.normalizedSpecs.garmentType, 'jacket');
+  assert.equal(result.normalizedSpecs.construction, '3L');
+  assert.equal(result.normalizedSpecs.insulation, 'KAILAS independently developed synthetic insulation; warmth coefficient equivalent to 700FP down');
+  assert.equal(result.normalizedSpecs.fabric, '100% Nylon');
+  assert.equal(result.normalizedSpecs.venting, true);
+  assert.equal(result.normalizedSpecs.powderSkirt, true);
+  assert.equal(result.normalizedSpecs.waterproofMm, undefined);
+});

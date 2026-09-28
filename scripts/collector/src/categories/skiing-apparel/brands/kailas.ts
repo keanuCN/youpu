@@ -28,15 +28,20 @@ export const kailasSkiingApparelAdapter = {
 
     const construction = evidence.match(/\b([23])\s*L\s+GORE-TEX\b/i);
     if (construction?.[1]) normalizedSpecs.construction = `${construction[1]}L`;
+    else if (/FILTER-TEC\s+three-layer/i.test(evidence)) normalizedSpecs.construction = '3L';
 
     const insulation = evidence.match(/Insulation:\s*(\d+)g\s+(\d+)FP\s+Down/i);
     if (insulation) normalizedSpecs.insulation = `${insulation[1]}g ${insulation[2]}FP down`;
+    else if (/independently developed technology cotton[\s\S]{0,120}?matching the warmth coefficient of 700FP down/i.test(evidence)) {
+      normalizedSpecs.insulation = 'KAILAS independently developed synthetic insulation; warmth coefficient equivalent to 700FP down';
+    }
 
-    const fabric = evidence.match(/(?:Material:\s*)?((?:\d{2,3}D\s+)?[23]L\s+GORE-TEX(?:\s+Pro)?)/i);
+    const fabric = evidence.match(/(?:Material:\s*)?((?:\d{2,3}D\s+)?[23]L\s+GORE-TEX(?:\s+Pro)?)/i)
+      ?? evidence.match(/Shell:\s*(100%\s+Nylon)/i);
     if (fabric?.[1]) normalizedSpecs.fabric = fabric[1].trim();
 
-    if (/Underarm Ventilation Zipper/i.test(evidence)) normalizedSpecs.venting = true;
-    if (normalizedSpecs.garmentType === 'jacket' && /Powder Skirt/i.test(evidence)) {
+    if (/Underarm Ventilation Zipper|Breathable underarm zipper/i.test(evidence)) normalizedSpecs.venting = true;
+    if (normalizedSpecs.garmentType === 'jacket' && /Powder Skirt|snow skirt/i.test(evidence)) {
       normalizedSpecs.powderSkirt = true;
     }
 
