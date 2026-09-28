@@ -1,0 +1,24 @@
+slug: gray-dsprd-ti-type-x-ver-s-2027
+category: snowboard
+brand: gray
+model: DSPRD Ti Type-X ver.S
+year: 2027
+title: GRAY DSPRD Ti Type-X ver.S 2027
+one_liner: 面向高水平竞赛刻滑的 26/27 款 Type-X，针对高速大角度走刃优化；ver.S 使用烧结表层配置。
+specs:
+  profile: Single Camber
+  profileFamily: camber
+  shape: Directional Hammerhead
+  core: Wood Core
+  scenes:
+    - carving
+images:
+  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/19_DSPRD%20Ti%20type-X%20verS/2627_19_DSPRD%20Ti%20type-X%20verS_main.png"
+    kind: face
+    alt: GRAY DSPRD Ti Type-X ver.S 2027 官方商品图
+    source: GRAY 官方 26-27 商品页（本地展示；线上使用前确认图片授权）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://graysnowboards.co.jp/product-2627-eng/
+status: published

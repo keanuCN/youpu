@@ -241,7 +241,7 @@ async function main(): Promise<void> {
   const unique = new Map(items.map((item) => [item.slug, item]));
   if (process.env.CONTENT_EXPORT_SNOWBOARD_IMAGES_ONLY === "true") {
     const snowboardSnapshot = await mergeSnowboardImages(stableSort([...unique.values()]));
-    await writeSnapshot(snowboardSnapshot, `${snapshotSource()}（仅刷新单板图片）`);
+    await writeSnapshot(snowboardSnapshot, `${snapshotSource()}（仅同步单板条目与图片）`);
     return;
   }
   let sorted = await overlaySnowboardSeeds(stableSort([...unique.values()]));

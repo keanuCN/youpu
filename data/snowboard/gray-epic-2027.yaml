@@ -1,0 +1,25 @@
+slug: gray-epic-2027
+category: snowboard
+brand: gray
+model: EPIC
+year: 2027
+title: GRAY EPIC 2027
+one_liner: 中等硬度的高端全双向板，Active Camber 与多半径侧切兼顾灵活性和脚下抓边，适合道具、公园及自由式滑行。
+specs:
+  profile: Active Camber
+  profileFamily: hybrid
+  shape: True Twin
+  core: Wood Core
+  scenes:
+    - freestyle
+    - all-mountain
+images:
+  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/03_EPIC/2627_03_EPIC_main.png"
+    kind: face
+    alt: GRAY EPIC 2027 官方商品图
+    source: GRAY 官方 26-27 商品页（本地展示；线上使用前确认图片授权）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://graysnowboards.co.jp/product-2627-eng/
+status: published

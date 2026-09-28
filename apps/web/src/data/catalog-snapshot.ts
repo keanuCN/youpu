@@ -34,9 +34,9 @@ export interface CatalogSnapshotMeta {
 }
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
-  "source": "本地 API + 本地单板档案（仅刷新单板图片）",
-  "generatedAt": "2026-09-28T09:46:55.172Z",
-  "total": 271,
+  "source": "本地 API + 本地单板档案（仅同步单板条目与图片）",
+  "generatedAt": "2026-09-28T10:17:11.051Z",
+  "total": 279,
   "pageSize": 48,
   "categorySlugs": [
     "action-cam",
@@ -7873,7 +7873,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/24_DESPE",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/25_DESPE%20WOOD48-63w/2627_25_DESPE%20WOOD48-63w_main.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -7918,7 +7918,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2324/product/18_DESPERADO",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2324/product/19_DESPERADO%20micro-mini/23-24_19_DESPERADO%20micro-mini_main.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -7961,7 +7961,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/21_DSPRD",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/21_DSPRD%20Ti%20type-R/2627_21_DSPRD%20Ti%20type-R_main.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13296,6 +13296,358 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "tlci",
         "label": "电视光源一致性指数下限",
         "value": "97"
+      }
+    ]
+  },
+  {
+    "id": "01a0e780-b190-7414-9433-712aa0409618",
+    "slug": "gray-dsprd-ti-iz-2027",
+    "title": "GRAY DSPRD Ti [iz] 2027",
+    "model": "DSPRD Ti [iz]",
+    "year": 2027,
+    "oneLiner": "26/27 新增锤头刻滑型号，将 IZANAS 纤维、金属与玻纤结构组合，搭配聚酰胺表层以兼顾支撑与减震。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/22_DSPRD%20Ti%5Biz%5D/2627_22_DSPRD%20Ti%5Biz%5D_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "shape": "Directional Hammerhead",
+      "core": "Wood Core + IZANAS Fiber",
+      "scenes": [
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0e780-b05b-7852-b802-21d91f859b48",
+    "slug": "gray-dsprd-ti-type-x-ver-s-2027",
+    "title": "GRAY DSPRD Ti Type-X ver.S 2027",
+    "model": "DSPRD Ti Type-X ver.S",
+    "year": 2027,
+    "oneLiner": "面向高水平竞赛刻滑的 26/27 款 Type-X，针对高速大角度走刃优化；ver.S 使用烧结表层配置。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/19_DSPRD%20Ti%20type-X%20verS/2627_19_DSPRD%20Ti%20type-X%20verS_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "shape": "Directional Hammerhead",
+      "core": "Wood Core",
+      "scenes": [
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0e780-c834-7ea8-9119-456e1533ca88",
+    "slug": "gray-epic-2027",
+    "title": "GRAY EPIC 2027",
+    "model": "EPIC",
+    "year": 2027,
+    "oneLiner": "中等硬度的高端全双向板，Active Camber 与多半径侧切兼顾灵活性和脚下抓边，适合道具、公园及自由式滑行。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/03_EPIC/2627_03_EPIC_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Active Camber",
+      "profileFamily": "hybrid",
+      "shape": "True Twin",
+      "core": "Wood Core",
+      "scenes": [
+        "freestyle",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "自由式 · 全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0e780-c983-7d5d-802e-72d851cef58b",
+    "slug": "gray-lovebuzz-58-2027",
+    "title": "GRAY LOVEBUZZ 58 2027",
+    "model": "LOVEBUZZ 58",
+    "year": 2027,
+    "oneLiner": "158cm 全山地自由滑型号，低拱、长板头、大侧切半径与新月形板尾，覆盖雪道巡航到粉雪地形。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/11_LOVEBUZZ%2058/2627_11_LOVEBUZZ%2058_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 158,
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "shape": "Directional",
+      "core": "Wood Core",
+      "scenes": [
+        "all-mountain",
+        "powder",
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "158cm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 野雪浮雪 · 刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0e780-c72b-708a-a32a-5877673efb00",
+    "slug": "gray-prodigy-2027",
+    "title": "GRAY PRODIGY 2027",
+    "model": "PRODIGY",
+    "year": 2027,
+    "oneLiner": "GRAY 旗舰方向双向板，玻纤与 X 形碳纤结构强调快速回弹、控制力与中高速稳定，覆盖自由式跳台和全山地滑行。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/01_PRODIGY/2627_01_PRODIGY_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "shape": "Directional Twin",
+      "core": "Wood Core",
+      "fiberglass": "Fiberglass + X-shaped Carbon Roving",
+      "scenes": [
+        "all-mountain",
+        "freestyle",
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 · 刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0e780-ae8b-7c7c-9719-407e2ea2ae0d",
+    "slug": "gray-sonicalmach-lt-2027",
+    "title": "GRAY SONICALMACH LT 2027",
+    "model": "SONICALMACH LT",
+    "year": 2027,
+    "oneLiner": "26/27 跑滑与地形技巧取向雪板，软硬度设计搭配杨木与竹复合板芯；不同长度对应双向、方向双向或定向板形。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/17_SONICALMACH%20LT/2627_17_SONICALMACH%20LT_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "shape": "True Twin / Directional Twin / Directional（随长度变化）",
+      "core": "Poplar + Bamboo Wood Core",
+      "scenes": [
+        "carving",
+        "freestyle",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑 · 自由式 · 全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0e780-af70-7355-bd13-1ff37ea7247f",
+    "slug": "gray-sonicalmach-lt-ver-c-2027",
+    "title": "GRAY SONICALMACH LT ver.C 2027",
+    "model": "SONICALMACH LT ver.C",
+    "year": 2027,
+    "oneLiner": "26/27 碳条强化版本，在杨木与竹复合板芯下配置碳纤维，提升回弹；官方列出 54、55W、56EW 三种宽度版本。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/18_SONICALMACH%20LT%20verC/2627_18_SONICALMACH%20LT%20verC_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "core": "Poplar + Bamboo Wood Core",
+      "scenes": [
+        "carving",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑 · 自由式"
+      }
+    ]
+  },
+  {
+    "id": "01a0e780-ca6b-7ee9-a2f1-5fc13e3ecb70",
+    "slug": "gray-tycoon-type-s-iz-2027",
+    "title": "GRAY TYCOON Type-S [iz] 2027",
+    "model": "TYCOON Type-S [iz]",
+    "year": 2027,
+    "oneLiner": "26/27 高端竞速刻滑型号，以全金属结构、IZANAS 纤维及复合材料控制弯曲后的回弹，可搭配雪板底板系统。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/28_TYCOON%20Type-S%5Biz%5D/2627_28_TYCOON%20Type-S%5Biz%5D_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Vario Camber",
+      "shape": "Directional Alpine",
+      "core": "Wood Core + IZANAS Fiber",
+      "scenes": [
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑"
       }
     ]
   }
