@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { ArrowRight, Compass, LoaderCircle, Trophy } from "lucide-react";
+import { ArrowRight, Compass, Trophy } from "lucide-react";
 import { FallbackNotice, GearGridSkeleton, LoadingStatus, RankRowsSkeleton } from "@/components/gear/data-state";
 import { GearCard, GearRow } from "@/components/gear/gear-card";
 import { SectionHead } from "@/components/layout/section-head";
@@ -294,14 +294,12 @@ function Cover({
           {!heroLoaded && !heroFailed && (
             <div className="absolute inset-0 flex items-center justify-center bg-muted" role="status" aria-live="polite">
               <div className="w-48 text-center">
-                <LoaderCircle className="mx-auto animate-spin text-primary" size={22} strokeWidth={1.5} />
-                <p className="mono-label mt-4 text-foreground">{heroProgress.loaded ? "正在读取雪场图片" : "雪场图片加载中"}</p>
-                <div className="mt-3 h-1 overflow-hidden bg-foreground/10" aria-hidden="true">
-                  <div
-                    className={`h-full bg-primary transition-[width] duration-150 ${progressPercent === null ? "w-1/3 animate-pulse" : ""}`}
-                    style={progressPercent === null ? undefined : { width: `${progressPercent}%` }}
-                  />
+                <div className="dot-spinner mx-auto" aria-hidden="true">
+                  {Array.from({ length: 8 }, (_, index) => (
+                    <div className="dot-spinner__dot" key={index} />
+                  ))}
                 </div>
+                <p className="mono-label mt-4 text-foreground">{heroProgress.loaded ? "正在读取雪场图片" : "雪场图片加载中"}</p>
                 <p className="mono-data mt-2 text-[11px] text-muted-foreground tnum">
                   {progressPercent !== null
                     ? `${progressPercent}%`
