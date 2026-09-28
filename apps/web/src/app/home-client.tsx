@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { ArrowRight, Compass, Trophy } from "lucide-react";
+import { ArrowRight, Compass, LoaderCircle, Trophy } from "lucide-react";
 import { FallbackNotice, GearGridSkeleton, LoadingStatus, RankRowsSkeleton } from "@/components/gear/data-state";
 import { GearCard, GearRow } from "@/components/gear/gear-card";
-import { SafeImage } from "@/components/gear/safe-image";
 import { SectionHead } from "@/components/layout/section-head";
 import { Avatar } from "@/components/layout/site-header";
 import { Stars } from "@/components/gear/primitives";
@@ -218,24 +217,106 @@ function Cover({
   liveCategoryCount: number;
   liveCategoryNames: string;
 }) {
-  const [heroImage, setHeroImage] = useState<(typeof HERO_IMAGE_POOL)[number]>(HERO_IMAGE_POOL[0]);
+  const [heroImage, setHeroImage] = useState<(typeof HERO_IMAGE_POOL)[number] | null>(null);
+  const [heroImageSrc, setHeroImageSrc] = useState<string | null>(null);
+  const [heroLoaded, setHeroLoaded] = useState(false);
+  const [heroFailed, setHeroFailed] = useState(false);
+  const [heroProgress, setHeroProgress] = useState({ loaded: 0, total: 0 });
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * HERO_IMAGE_POOL.length);
-    setHeroImage(HERO_IMAGE_POOL[randomIndex] ?? HERO_IMAGE_POOL[0]);
+    const selectedImage = HERO_IMAGE_POOL[randomIndex] ?? HERO_IMAGE_POOL[0];
+    const controller = new AbortController();
+    let objectUrl: string | null = null;
+    let cancelled = false;
+    setHeroImage(selectedImage);
+
+    async function loadHeroImage() {
+      try {
+        const response = await fetch(selectedImage.src, { signal: controller.signal });
+        if (!response.ok || !response.body) throw new Error("Unable to read hero image");
+
+        const total = Number(response.headers.get("content-length")) || 0;
+        const reader = response.body.getReader();
+        const chunks: Uint8Array[] = [];
+        let loaded = 0;
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          if (!value) continue;
+          chunks.push(value);
+          loaded += value.byteLength;
+          if (!cancelled) setHeroProgress({ loaded, total });
+        }
+
+        if (cancelled) return;
+        const imageBytes = new Uint8Array(loaded);
+        let offset = 0;
+        for (const chunk of chunks) {
+          imageBytes.set(chunk, offset);
+          offset += chunk.byteLength;
+        }
+        objectUrl = URL.createObjectURL(new Blob([imageBytes.buffer], { type: response.headers.get("content-type") ?? "image/jpeg" }));
+        setHeroImageSrc(objectUrl);
+      } catch {
+        if (!cancelled && !controller.signal.aborted) {
+          // 若浏览器或托管环境不允许 fetch 读取跨域图片，退回原生图片加载；占位层仍保留到图片解码完成。
+          setHeroImageSrc(selectedImage.src);
+        }
+      }
+    }
+
+    void loadHeroImage();
+    return () => {
+      cancelled = true;
+      controller.abort();
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+    };
   }, []);
+
+  const progressPercent = heroProgress.total > 0
+    ? Math.min(100, Math.round((heroProgress.loaded / heroProgress.total) * 100))
+    : null;
 
   return (
     <section className="relative border-b border-foreground">
       <div className="grid lg:grid-cols-[1.15fr_1fr]">
-        <div className="relative order-2 min-h-[320px] overflow-hidden lg:order-1 lg:min-h-[560px]">
-          <SafeImage
-            src={heroImage.src}
-            alt={heroImage.alt}
-            fallbackLabel="雪场首屏"
-            fallbackMode="muted"
-            className="plate h-full w-full object-cover"
-          />
+        <div className="relative order-2 min-h-[320px] overflow-hidden bg-muted lg:order-1 lg:min-h-[560px]">
+          {heroImageSrc && heroImage && (
+            <img
+              src={heroImageSrc}
+              alt={heroImage.alt}
+              onLoad={() => setHeroLoaded(true)}
+              onError={() => setHeroFailed(true)}
+              className={`plate absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${heroLoaded ? "opacity-100" : "opacity-0"}`}
+            />
+          )}
+          {!heroLoaded && !heroFailed && (
+            <div className="absolute inset-0 flex items-center justify-center bg-muted" role="status" aria-live="polite">
+              <div className="w-48 text-center">
+                <LoaderCircle className="mx-auto animate-spin text-primary" size={22} strokeWidth={1.5} />
+                <p className="mono-label mt-4 text-foreground">{heroProgress.loaded ? "正在读取雪场图片" : "雪场图片加载中"}</p>
+                <div className="mt-3 h-1 overflow-hidden bg-foreground/10" aria-hidden="true">
+                  <div
+                    className={`h-full bg-primary transition-[width] duration-150 ${progressPercent === null ? "w-1/3 animate-pulse" : ""}`}
+                    style={progressPercent === null ? undefined : { width: `${progressPercent}%` }}
+                  />
+                </div>
+                <p className="mono-data mt-2 text-[11px] text-muted-foreground tnum">
+                  {progressPercent !== null
+                    ? `${progressPercent}%`
+                    : heroProgress.loaded > 0
+                      ? `已读取 ${formatImageBytes(heroProgress.loaded)}`
+                      : "准备读取图片"}
+                </p>
+              </div>
+            </div>
+          )}
+          {heroFailed && (
+            <div className="absolute inset-0 flex items-center justify-center bg-muted" role="status">
+              <p className="mono-label text-muted-foreground">雪场图片暂时无法加载</p>
+            </div>
+          )}
           <div className="dot-grid pointer-events-none absolute inset-0" />
           <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-3 bg-gradient-to-t from-foreground/80 to-transparent p-5 sm:p-8">
             <p className="mono-label text-background/80">WINTER FIELD · 新疆阿勒泰 / 将军山</p>
@@ -291,6 +372,12 @@ function Cover({
       </div>
     </section>
   );
+}
+
+function formatImageBytes(bytes: number): string {
+  return bytes >= 1024 * 1024
+    ? `${(bytes / (1024 * 1024)).toFixed(1)} MB`
+    : `${Math.max(1, Math.round(bytes / 1024))} KB`;
 }
 
 function useLiveCategoryCounts(): Record<string, number> {

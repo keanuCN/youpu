@@ -69,6 +69,9 @@ export async function GET(request: NextRequest) {
       headers: {
         "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800",
         "Content-Type": contentType,
+        ...(upstream.headers.get("content-length")
+          ? { "Content-Length": upstream.headers.get("content-length")! }
+          : {}),
       },
     });
   } catch {
