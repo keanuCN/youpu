@@ -1,0 +1,13 @@
+slug: flow-fenix-binding-2027
+category: snowboard-binding
+brand: flow
+model: "Fenix"
+year: 2027
+title: "Flow Fenix 2027"
+one_liner: "Flow 后入式固定器，官网描述其定位兼顾公园动作与雪场巡航。"
+specs:
+  entrySystem: rear-entry
+data_source:
+  kind: official
+  origin_url: https://www.nidecker.com/products/flow-fenix
+status: published

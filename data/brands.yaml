@@ -359,3 +359,22 @@
   country: TW
   official_url: https://www.giant-bicycles.com
   description: 全球自行车品牌，公路车覆盖 TCR 竞赛、Propel 空力、Defy 耐力和 Contend 入门系列。
+
+- slug: cosone
+  name: COSONE
+  name_cn: COSONE
+  country: CN
+  official_url: https://www.cos1.net/
+  description: 中国单板滑雪装备品牌，产品涵盖雪板、固定器、雪鞋与滑雪服。
+
+- slug: flow
+  name: Flow
+  country: US
+  official_url: https://www.nidecker.com/collections/flow-design
+  description: 单板滑雪固定器品牌，现由 Nidecker 运营，产品以可后仰高背的 Flow Design 穿脱结构为特色。
+
+- slug: rome
+  name: Rome Snowboards
+  country: US
+  official_url: https://romesnowboards.com/collections/snowboard-bindings
+  description: 单板滑雪品牌，固定器产品覆盖传统绑带结构与 FASE 快速穿脱系统。

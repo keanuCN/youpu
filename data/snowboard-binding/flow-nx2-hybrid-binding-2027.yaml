@@ -1,0 +1,13 @@
+slug: flow-nx2-hybrid-binding-2027
+category: snowboard-binding
+brand: flow
+model: "NX2 Hybrid"
+year: 2027
+title: "Flow NX2 Hybrid 2027"
+one_liner: "Flow NX2 系列后入式固定器，采用 Hybrid 绑带配置。"
+specs:
+  entrySystem: rear-entry
+data_source:
+  kind: official
+  origin_url: https://www.nidecker.com/products/flow-nx2-hybrid
+status: published

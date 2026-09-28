@@ -1,0 +1,13 @@
+slug: flow-nexus-binding-2027
+category: snowboard-binding
+brand: flow
+model: "Nexus"
+year: 2027
+title: "Flow Nexus 2027"
+one_liner: "Flow 后入式固定器，官网介绍采用单片 Fusion 绑带与后仰高背穿脱结构。"
+specs:
+  entrySystem: rear-entry
+data_source:
+  kind: official
+  origin_url: https://www.nidecker.com/products/flow-nexus
+status: published

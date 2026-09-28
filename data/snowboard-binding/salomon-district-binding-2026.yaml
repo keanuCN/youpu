@@ -1,0 +1,14 @@
+slug: salomon-district-binding-2026
+category: snowboard-binding
+brand: salomon
+model: "DISTRICT"
+year: 2026
+title: "Salomon DISTRICT 2026"
+one_liner: "采用 Shadow Fit 结构的全山地/自由式固定器，官网标注中等硬度。"
+specs:
+  entrySystem: strap
+  bootCompatibility: "官网标注 Universal disc，适配市场常见雪板安装系统；普通绑带雪鞋"
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-us/product/district-li1289
+status: published

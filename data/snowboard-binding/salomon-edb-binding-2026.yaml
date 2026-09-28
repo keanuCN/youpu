@@ -1,0 +1,13 @@
+slug: salomon-edb-binding-2026
+category: snowboard-binding
+brand: salomon
+model: "EDB"
+year: 2026
+title: "Salomon EDB 2026"
+one_liner: "Salomon 全山地固定器，官网当前目录同时提供该款与 EDB PRIME。"
+specs:
+  entrySystem: strap
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-us/c/men/winter-equipment/snowboard/bindings
+status: published

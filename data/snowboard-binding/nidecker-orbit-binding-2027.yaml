@@ -1,0 +1,13 @@
+slug: nidecker-orbit-binding-2027
+category: snowboard-binding
+brand: nidecker
+model: "Orbit"
+year: 2027
+title: "Nidecker Orbit 2027"
+one_liner: "Nidecker 双绑带固定器，官方列出可调 heelcup、脚床、前绑带位置与高背旋转。"
+specs:
+  entrySystem: strap
+data_source:
+  kind: official
+  origin_url: https://www.nidecker.com/products/orbit
+status: published
