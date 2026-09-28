@@ -38,5 +38,15 @@
     "year": 2026,
     "url": "https://kailasgear.com/products/kailas-bm45-gtx-ski-pants",
     "mode": "cheerio"
+  },
+  {
+    "slug": "decathlon-snb-500-ziprotect-jacket-2026",
+    "category": "skiing-apparel",
+    "brand": "decathlon",
+    "model": "SNB 500 Ziprotect Men's Snowboard Jacket",
+    "identityAliases": ["SNB 500"],
+    "year": 2026,
+    "url": "https://www.decathlon.co.uk/p/men%27s-snb-jacket-500/_/R-p-350525",
+    "mode": "cheerio"
   }
 ]
