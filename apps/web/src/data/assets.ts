@@ -43,10 +43,16 @@ export const IMG = {
 } as const;
 
 /**
- * 首页雪场图池仅保留至少 4K 原始宽度的照片，并记录授权与摄影者信息。
- * 图片使用 Wikimedia Commons 公开授权素材，首页实际展示来源链接和作者署名。
+ * 首页雪场图池包含清晰的原创首屏插画，以及至少 4K 宽的公开授权摄影素材。
+ * 外部照片记录来源与署名；首页实际展示来源链接和作者信息。
  */
 export const HERO_IMAGE_POOL = [
+  {
+    src: IMG.heroRidge,
+    alt: "雪山山脊与滑雪场原创插画",
+    sourcePage: undefined,
+    credit: "有谱原创视觉",
+  },
   {
     src: resolveImageUrl(
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg/3840px-Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg",
