@@ -235,11 +235,20 @@ function Cover({
             fallbackLabel="雪场首屏"
             fallbackMode="muted"
             className="plate h-full w-full object-cover"
-            style={{ filter: "grayscale(0.85) contrast(1.08)" }}
           />
           <div className="dot-grid pointer-events-none absolute inset-0" />
           <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-3 bg-gradient-to-t from-foreground/80 to-transparent p-5 sm:p-8">
-            <p className="mono-label text-background/80">FIELD TEST · 崇礼 / 可可托海 / 将军山</p>
+            <div className="flex flex-col gap-1.5">
+              <p className="mono-label text-background/80">WINTER FIELD · 新疆阿勒泰 / 将军山</p>
+              <a
+                className="mono-label text-background/75 underline decoration-background/40 underline-offset-2 hover:text-background"
+                href={heroImage.sourcePage}
+                target="_blank"
+                rel="noreferrer"
+              >
+                照片署名：{heroImage.credit} ↗
+              </a>
+            </div>
             <p className="mono-data text-[12px] text-background/80 tnum">当前在档 {catalogCount} 件装备</p>
           </div>
         </div>

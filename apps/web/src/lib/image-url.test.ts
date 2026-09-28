@@ -87,15 +87,43 @@ test("allows verified snowboard product image hosts and rejects unrelated paths"
   assert.equal(isAllowedImageUrl("https://www.fluxsnowboarding.com/private/image.webp"), false);
 });
 
-test("allows only selected ski-resort hero photo URLs", () => {
+test("allows only selected high-resolution Commons hero photos", () => {
   assert.equal(
-    isAllowedImageUrl("https://news.cnjiwang.com/jwyc/202312/W020231223357959480031.JPG"),
+    isAllowedImageUrl(
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg/3840px-Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg",
+    ),
     true,
   );
   assert.equal(
-    isAllowedImageUrl("https://www.xinjiangmei.com/wp-content/uploads/2024/06/Untitled-design-1-1536x1024.jpg"),
+    isAllowedImageUrl(
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg/3840px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg",
+    ),
     true,
   );
-  assert.equal(isAllowedImageUrl("https://news.cnjiwang.com/private/unrelated.jpg"), false);
-  assert.equal(isAllowedImageUrl("https://image.kkday.com/other-product.jpg"), false);
+  assert.equal(
+    isAllowedImageUrl(
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg/3840px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg",
+    ),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl(
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg/3840px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg",
+    ),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://upload.wikimedia.org/wikipedia/commons/other-image.jpg"),
+    false,
+  );
+  assert.equal(
+    isAllowedImageUrl(
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg/960px-Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg",
+    ),
+    false,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://image.kkday.com/other-product.jpg"),
+    false,
+  );
 });
