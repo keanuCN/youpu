@@ -67,6 +67,18 @@ const REMOTE_IMAGE_RULES = [
   { host: "assets.specialized.com", pathPrefix: "/i/specialized/" },
   { host: "images2.giant-bicycles.com", pathPrefix: "/b_white" },
   {
+    host: "image.kkday.com",
+    pathPrefix: "/v2/image/get/c_fill%2Cq_55%2Ct_webp%2Cw_960/s1.kkday.com/product_543360/20251105082804_Pb8z8/jpg",
+  },
+  {
+    host: "res.klook.com",
+    pathPrefix: "/images/fl_lossy.progressive%2Cq_65/c_fill%2Cw_1295%2Ch_863/w_80%2Cx_15%2Cy_15%2Cg_south_west%2Cl_Klook_water_br_trans_yhcmh3/activities/iz92uiuyz23pb78arumb/High-speedtrainstationpick-upanddrop-offbetweenZhangjiakouStationChongliStationandWanlongSkiResort.jpg",
+  },
+  { host: "news.cnjiwang.com", pathPrefix: "/jwyc/202312/W020231223357959480031.JPG" },
+  { host: "imagepphcloud.thepaper.cn", pathPrefix: "/pph/image/324/885/471.jpg" },
+  { host: "www.xinjiangmei.com", pathPrefix: "/wp-content/uploads/2024/06/Untitled-design-1-1536x1024.jpg" },
+  { host: "dimg04.c-ctrip.com", pathPrefix: "/images/1lo6z12000blg7cheD1B6_C_900_504_Q90_Mtg_7.jpg" },
+  {
     host: "390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net",
     pathPrefix: "/-/media/Project/globeride/",
   },

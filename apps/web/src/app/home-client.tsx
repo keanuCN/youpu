@@ -10,7 +10,7 @@ import { SectionHead } from "@/components/layout/section-head";
 import { Avatar } from "@/components/layout/site-header";
 import { Stars } from "@/components/gear/primitives";
 import { GEAR, getGear } from "@/data/boards";
-import { IMG } from "@/data/assets";
+import { HERO_IMAGE_POOL } from "@/data/assets";
 import { CATEGORY_LEAVES, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { hotReviews, rankRows } from "@/lib/domain";
 import { getCategoryProducts, resolveContentSource } from "@/lib/content";
@@ -218,14 +218,21 @@ function Cover({
   liveCategoryCount: number;
   liveCategoryNames: string;
 }) {
+  const [heroImage, setHeroImage] = useState<(typeof HERO_IMAGE_POOL)[number]>(HERO_IMAGE_POOL[0]);
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * HERO_IMAGE_POOL.length);
+    setHeroImage(HERO_IMAGE_POOL[randomIndex] ?? HERO_IMAGE_POOL[0]);
+  }, []);
+
   return (
     <section className="relative border-b border-foreground">
       <div className="grid lg:grid-cols-[1.15fr_1fr]">
         <div className="relative order-2 min-h-[320px] overflow-hidden lg:order-1 lg:min-h-[560px]">
           <SafeImage
-            src={IMG.heroRidge}
-            alt="雪脊"
-            fallbackLabel="雪脊"
+            src={heroImage.src}
+            alt={heroImage.alt}
+            fallbackLabel="雪场首屏"
             fallbackMode="muted"
             className="plate h-full w-full object-cover"
             style={{ filter: "grayscale(0.85) contrast(1.08)" }}

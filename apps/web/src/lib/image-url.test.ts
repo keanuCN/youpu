@@ -86,3 +86,16 @@ test("allows verified snowboard product image hosts and rejects unrelated paths"
   );
   assert.equal(isAllowedImageUrl("https://www.fluxsnowboarding.com/private/image.webp"), false);
 });
+
+test("allows only selected ski-resort hero photo URLs", () => {
+  assert.equal(
+    isAllowedImageUrl("https://news.cnjiwang.com/jwyc/202312/W020231223357959480031.JPG"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://www.xinjiangmei.com/wp-content/uploads/2024/06/Untitled-design-1-1536x1024.jpg"),
+    true,
+  );
+  assert.equal(isAllowedImageUrl("https://news.cnjiwang.com/private/unrelated.jpg"), false);
+  assert.equal(isAllowedImageUrl("https://image.kkday.com/other-product.jpg"), false);
+});
