@@ -72,5 +72,17 @@ test("allows verified snowboard product image hosts and rejects unrelated paths"
     isAllowedImageUrl("https://cdn.dam.salomon.com/4e88d690-8431-4ab7-b0f7-b36001082530/L45439300/image.png"),
     true,
   );
+  assert.equal(
+    isAllowedImageUrl("https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://cdn.media.amplience.net/i/k2/k2_2627_maysis_black_KB261665_1?w=1200"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://cdn.media.amplience.net/i/other/unrelated-image.jpg"),
+    false,
+  );
   assert.equal(isAllowedImageUrl("https://www.fluxsnowboarding.com/private/image.webp"), false);
 });

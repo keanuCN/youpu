@@ -61,29 +61,31 @@ function stableSort(items: ProductListItem[]): ProductListItem[] {
 }
 
 /**
- * 固定器商品图片和扩展参数以仓库 seed 为内容源；线上公开目录接口未必已同步这些编辑。
+ * 单板固定器和雪鞋的商品图片、扩展参数以仓库 seed 为内容源；公开目录接口未必已同步这些编辑。
  * 导出快照时叠加本地正式档案，保证开发预览与构建不会丢失已核验的商品图和参数。
  */
-async function overlaySnowboardBindingSeeds(items: ProductListItem[]): Promise<ProductListItem[]> {
+async function overlaySnowboardSeeds(items: ProductListItem[]): Promise<ProductListItem[]> {
   const apiPackage = resolve(process.cwd(), "../api/package.json");
   const { parse } = createRequire(apiPackage)("yaml") as typeof import("yaml");
-  const seedDir = resolve(process.cwd(), "../../data/snowboard-binding");
   const bySlug = new Map(items.map((item, index) => [item.slug, index]));
   const merged = [...items];
-  for (const file of await readdir(seedDir)) {
-    if (!file.endsWith(".yaml")) continue;
-    const seed = parse(await readFile(join(seedDir, file), "utf8")) as {
-      slug: string;
-      specs: Record<string, unknown>;
-      images?: Array<{ url: string }>;
-    };
-    const index = bySlug.get(seed.slug);
-    if (index === undefined) throw new Error(`公开目录快照缺少固定器商品：${seed.slug}`);
-    merged[index] = {
-      ...merged[index]!,
-      coverUrl: seed.images?.[0]?.url ?? null,
-      specs: seed.specs,
-    };
+  for (const category of ["snowboard-binding", "snowboard-boot"]) {
+    const seedDir = resolve(process.cwd(), `../../data/${category}`);
+    for (const file of await readdir(seedDir)) {
+      if (!file.endsWith(".yaml")) continue;
+      const seed = parse(await readFile(join(seedDir, file), "utf8")) as {
+        slug: string;
+        specs: Record<string, unknown>;
+        images?: Array<{ url: string }>;
+      };
+      const index = bySlug.get(seed.slug);
+      if (index === undefined) throw new Error(`公开目录快照缺少${category}商品：${seed.slug}`);
+      merged[index] = {
+        ...merged[index]!,
+        coverUrl: seed.images?.[0]?.url ?? null,
+        specs: seed.specs,
+      };
+    }
   }
   return merged;
 }
@@ -153,7 +155,7 @@ async function main(): Promise<void> {
   }
 
   const unique = new Map(items.map((item) => [item.slug, item]));
-  const sorted = await overlaySnowboardBindingSeeds(stableSort([...unique.values()]));
+  const sorted = await overlaySnowboardSeeds(stableSort([...unique.values()]));
   if (sorted.length !== total) {
     throw new Error(`目录快照数量不完整：接口声明 ${total} 条，实际得到 ${sorted.length} 条`);
   }
@@ -169,7 +171,7 @@ async function main(): Promise<void> {
   }
 
   await mkdir(dirname(outputPath), { recursive: true });
-  await writeFile(outputPath, render(sorted, `${apiBase} + 本地单板固定器档案`), "utf8");
+  await writeFile(outputPath, render(sorted, `${apiBase} + 本地单板档案`), "utf8");
   console.log(`已从 ${apiBase} 导出 ${sorted.length} 条产品到 ${outputPath}`);
   console.log(`覆盖品类：${[...new Set(sorted.map((item) => item.categorySlug))].sort().join("、")}`);
 }

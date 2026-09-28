@@ -7,6 +7,12 @@ title: "Salomon X Approach Lace SJ BOA 2027"
 one_liner: "官方档案型号；鞋带与 BOA 脚跟锁定组合。尺码与脚感以实际试穿为准。"
 specs:
   lacingSystem: "鞋带与 BOA 脚跟锁定组合"
+images:
+  - url: "https://cdn.dam.salomon.com/2d8d238e-a3de-42e8-8636-b3600108ff81/L45418900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12"
+    kind: face
+    alt: "salomon-x-approach-lace-sj-boa-2027 官方商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/x-approach-lace-sj-boa-li5866
