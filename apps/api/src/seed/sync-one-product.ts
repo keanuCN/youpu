@@ -122,8 +122,8 @@ async function main(): Promise<void> {
         create: { productId: product.id },
         update: {},
       });
+      await tx.productImage.deleteMany({ where: { productId: product.id } });
       if (seed.images.length > 0) {
-        await tx.productImage.deleteMany({ where: { productId: product.id } });
         await tx.productImage.createMany({
           data: seed.images.map((image) => ({
             id: uuidv7(),

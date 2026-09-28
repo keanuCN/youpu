@@ -39,25 +39,9 @@ editorial_scores:
   park: 7
   forgiveness: 9.5
   value: 8.5
-images:
-  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1
-    kind: base
-    alt: Capita Horrorscope 底面 / BASE
-    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
-    sort_order: 0
-  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-top-03.png?auth_key=a00efee7b4a7f0aabc2a4367bff4c09fbdfa60482503d839065526be7159832e
-    kind: face
-    alt: Capita Horrorscope 板面 / TOPSHEET
-    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
-    sort_order: 1
-  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-detail-binding.png?auth_key=b65df2b86b31534b53b605d6ae3c12bd3061d495618139b5d7bb821526f17890
-    kind: side
-    alt: Capita Horrorscope 细节 / DETAIL
-    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
-    sort_order: 2
-  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/hero-ridge.png?auth_key=12382ced0bf2c0dc18c0c11c5e75b977d3b2310f18cb69254a0695446681db65
-    kind: field
-    alt: Capita Horrorscope 实地 / FIELD
-    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
-    sort_order: 3
+# CAPiTA 在 2021-22 产品代际已以 Pathfinder Rev 替代 Horrorscope；原“2024”年份待核实，因此不展示旧款图片。
+images: []
+data_source:
+  kind: crawl
+  origin_url: https://snowboardingprofiles.com/2022-capita-snowboards-overview
 status: published

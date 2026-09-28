@@ -40,24 +40,12 @@ editorial_scores:
   forgiveness: 6
   value: 7.5
 images:
-  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1
-    kind: base
-    alt: Never Summer Proto Slinger 底面 / BASE
-    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
-    sort_order: 0
-  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-top-04.png?auth_key=9422efddcabccc3c280740582ddb53deab5ba32809dec2d2dcc8bc867f8a8497
+  - url: https://www.evo.com/cdn/shop/files/product-image-1104917.jpg?v=1767733189
     kind: face
-    alt: Never Summer Proto Slinger 板面 / TOPSHEET
-    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
-    sort_order: 1
-  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555
-    kind: side
-    alt: Never Summer Proto Slinger 细节 / DETAIL
-    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
-    sort_order: 2
-  - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/hero-ridge.png?auth_key=12382ced0bf2c0dc18c0c11c5e75b977d3b2310f18cb69254a0695446681db65
-    kind: field
-    alt: Never Summer Proto Slinger 实地 / FIELD
-    source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
-    sort_order: 3
+    alt: Never Summer Proto Slinger 2025 商品主图
+    source: evo 2025 款商品图
+    sort_order: 0
+data_source:
+  kind: crawl
+  origin_url: https://www.evo.com/products/254788-never-summer-proto-slinger-snowboard-2025
 status: published
