@@ -125,6 +125,13 @@
   official_url: https://graysnowboards.co.jp/
   description: 日本单板品牌，产品覆盖 DESPERADO 刻滑系列与自由式雪板。
 
+- slug: kailas
+  name: KAILAS
+  name_cn: 凯乐石
+  country: CN
+  official_url: https://www.kailas.com.cn/
+  description: 中国户外品牌，产品覆盖登山、徒步与滑雪服装装备。
+
 - slug: ogasaka
   name: OGASAKA
   name_cn: 小贺坂

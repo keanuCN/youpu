@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "kailas-bm45-max-mens-down-jacket-95g-2026",
+    "category": "skiing-apparel",
+    "brand": "kailas",
+    "model": "BM45 MAX Down Ski Jacket Men's",
+    "identityAliases": ["BM45 MAX"],
+    "year": 2026,
+    "url": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "kailas-bm45-max-mens-down-jacket-100g-2026",
+    "category": "skiing-apparel",
+    "brand": "kailas",
+    "model": "BM45 MAX Down Ski Jacket Men's (100g 800FP Long)",
+    "identityAliases": ["BM45 MAX"],
+    "year": 2026,
+    "url": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens-1",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "kailas-bm45-max-womens-down-jacket-95g-2026",
+    "category": "skiing-apparel",
+    "brand": "kailas",
+    "model": "BM45 MAX Down Ski Jacket Women's",
+    "identityAliases": ["BM45 MAX"],
+    "year": 2026,
+    "url": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-womens",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "kailas-bm45-gtx-ski-pants-2026",
+    "category": "skiing-apparel",
+    "brand": "kailas",
+    "model": "BM45 GTX Ski Pants",
+    "identityAliases": ["BM45 GTX"],
+    "year": 2026,
+    "url": "https://kailasgear.com/products/kailas-bm45-gtx-ski-pants",
+    "mode": "cheerio"
+  }
+]

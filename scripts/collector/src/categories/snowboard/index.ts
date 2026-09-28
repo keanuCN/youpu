@@ -51,6 +51,7 @@ import { melgeekEsportsKeyboardAdapter } from '../esports-keyboard/brands/melgee
 import { rogEsportsKeyboardAdapter } from '../esports-keyboard/brands/rog';
 import { burtonSkiingApparelAdapter } from '../skiing-apparel/brands/burton';
 import { salomonSkiingApparelAdapter } from '../skiing-apparel/brands/salomon';
+import { kailasSkiingApparelAdapter } from '../skiing-apparel/brands/kailas';
 
 export interface ProductAdapter {
   name: string;
@@ -103,6 +104,7 @@ const adapters: ProductAdapter[] = [
   rogEsportsKeyboardAdapter,
   burtonSkiingApparelAdapter,
   salomonSkiingApparelAdapter,
+  kailasSkiingApparelAdapter,
   burtonAdapter,
   jonesAdapter,
   capitaAdapter,
