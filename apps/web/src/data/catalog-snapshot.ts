@@ -35,7 +35,7 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "本地 API + 本地单板档案（仅刷新单板图片）",
-  "generatedAt": "2026-09-28T08:35:59.982Z",
+  "generatedAt": "2026-09-28T08:48:25.340Z",
   "total": 271,
   "pageSize": 48,
   "categorySlugs": [
@@ -6691,7 +6691,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 5299,
     "priceMax": 5299,
     "priceCurrency": "CNY",
-    "coverUrl": "https://static1.squarespace.com/static/5c969a2f7fdcb8b66429acbe/64592d9a6f0d550268442a87/6941d6d29fe36643f87d5a75/1773517367017/2526_DOA_TOP.webp?format=1500w",
+    "coverUrl": "https://snowboards.com/files/store/items/lg/f/w/fw26--doa_150.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9038,7 +9038,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 5699,
     "priceMax": 5699,
     "priceCurrency": "CNY",
-    "coverUrl": "https://glisshop-glisshop-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/0/0/5550af8d2e1d1e8237be3554e43050720ba0d5f3_H25LIBTBOA464685_0.jpeg",
+    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1153304.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,

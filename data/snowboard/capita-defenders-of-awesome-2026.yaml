@@ -40,10 +40,10 @@ editorial_scores:
   forgiveness: 7.5
   value: 8.5
 images:
-  - url: https://static1.squarespace.com/static/5c969a2f7fdcb8b66429acbe/64592d9a6f0d550268442a87/6941d6d29fe36643f87d5a75/1773517367017/2526_DOA_TOP.webp?format=1500w
+  - url: https://snowboards.com/files/store/items/lg/f/w/fw26--doa_150.jpg
     kind: face
     alt: CAPiTA Defenders of Awesome 2025/26 商品主图
-    source: Stevens Pass Snowboard Shop 商品图
+    source: Snowboards.com 2025/26 款商品图
     sort_order: 0
 data_source:
   kind: crawl

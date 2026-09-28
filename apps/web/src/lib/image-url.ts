@@ -6,6 +6,16 @@ const IMAGE_PROXY_PATH = "/api/image-proxy";
  */
 const REMOTE_IMAGE_RULES = [
   { host: "eu.burton.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "www.arbor-collective.ca", pathPrefix: "/cdn/shop/files/" },
+  { host: "www.evo.com", pathPrefix: "/cdn/shop/files/product-image-" },
+  { host: "static1.squarespace.com", pathPrefix: "/static/5c969a2f7fdcb8b66429acbe/" },
+  { host: "snowboards.com", pathPrefix: "/files/store/items/lg/f/w/fw26--doa_150.jpg" },
+  { host: "images.blue-tomato.com", pathPrefix: "/is/image/bluetomato/" },
+  { host: "www.jonessnowboards.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "original.accentuate.io", pathPrefix: "/6939308982453/" },
+  { host: "glisshop-glisshop-fr-storage.omn.proximis.com", pathPrefix: "/Imagestorage/imagesSynchro/" },
+  { host: "www.nitrosnow.ca", pathPrefix: "/cdn/shop/files/" },
+  { host: "salomon.jp", pathPrefix: "/cdn/shop/files/" },
   { host: "cdn.amersports.com", pathPrefix: "/017bc76f-f5cc-42b8-a786-b49f00cdff46/" },
   { host: "cdn.amersports.com", pathPrefix: "/8fd450be-84c9-4bed-b255-b49f00cdfdd0/" },
   { host: "cdn.amersports.com", pathPrefix: "/0acef4a9-61b7-47b0-84f4-b49f00cdfc5f/" },

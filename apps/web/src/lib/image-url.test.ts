@@ -45,6 +45,24 @@ test("only allows local paths and approved remote image prefixes", () => {
 });
 
 test("allows verified snowboard product image hosts and rejects unrelated paths", () => {
+  const verifiedSnowboardImages = [
+    "https://www.arbor-collective.ca/cdn/shop/files/1-ARBOR_AFRAME_2024_STUDIO_01-rec.png",
+    "https://www.evo.com/cdn/shop/files/product-image-1103223.jpg",
+    "https://static1.squarespace.com/static/5c969a2f7fdcb8b66429acbe/64592d9a6f0d550268442a87/6941d6d29fe36643f87d5a75/1773517367017/2526_DOA_TOP.webp",
+    "https://snowboards.com/files/store/items/lg/f/w/fw26--doa_150.jpg",
+    "https://images.blue-tomato.com/is/image/bluetomato/305258540_front.jpg-G2lrQmzSDnKgLSGW6Q13RDLjzzE/Riders+Choice+Snowboard.jpg",
+    "https://www.jonessnowboards.com/cdn/shop/files/J.26.SNU.HVC-gallery-1.webp",
+    "https://original.accentuate.io/6939308982453/1758747603396/KORUA-Shapes-Cafe-Racer-01.jpg",
+    "https://glisshop-glisshop-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/product.jpeg",
+    "https://www.nitrosnow.ca/cdn/shop/files/team-board.png",
+    "https://salomon.jp/cdn/shop/files/L47924900_0_VIR_SIGHT_156.png",
+  ];
+  for (const image of verifiedSnowboardImages) assert.equal(isAllowedImageUrl(image), true, image);
+
+  assert.equal(isAllowedImageUrl("https://www.evo.com/cdn/shop/files/customer-avatar.jpg"), false);
+  assert.equal(isAllowedImageUrl("https://static1.squarespace.com/static/unrelated/image.webp"), false);
+  assert.equal(isAllowedImageUrl("https://snowboards.com/files/store/items/lg/other/doa.jpg"), false);
+  assert.equal(isAllowedImageUrl("https://original.accentuate.io/other-store/image.jpg"), false);
   assert.equal(
     isAllowedImageUrl("https://www.follows.co.jp/pic-labo/2526bc-r2-1a.jpg"),
     true,

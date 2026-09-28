@@ -40,10 +40,10 @@ editorial_scores:
   forgiveness: 6
   value: 7
 images:
-  - url: https://glisshop-glisshop-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/0/0/5550af8d2e1d1e8237be3554e43050720ba0d5f3_H25LIBTBOA464685_0.jpeg
+  - url: https://www.evo.com/cdn/shop/files/product-image-1153304.jpg
     kind: face
     alt: Lib Tech T.Rice Pro 2025 商品主图
-    source: Glisshop 2025 款商品图
+    source: evo 2025 款商品图
     sort_order: 0
 data_source:
   kind: crawl
