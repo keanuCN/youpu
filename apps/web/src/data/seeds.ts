@@ -1,5 +1,4 @@
 import type { Review } from "@/types";
-import { IMG, UGC_POOL } from "./assets";
 
 /** 站内预置评论（内容库的一部分，非用户生成） */
 export const SEED_REVIEWS: Review[] = [
@@ -9,7 +8,7 @@ export const SEED_REVIEWS: Review[] = [
     rating: 5, parentId: null, createdAt: "2026-01-18T09:24:00Z", seedHelpful: 148,
     content:
       "第三个雪季换的 Custom，之前一直滑软板。最直观的感受是高速下板面真的不颤，万龙大奔头压到底板子还是安静的。缺点是低速确实累，前几趟需要主动压板才转得动，滑开之后就好了。冰面表现比预期好，边刃咬得很线性。",
-    images: [UGC_POOL[0]!],
+    images: [],
   },
   {
     id: "r-02", gearId: "sb-01", userKey: null, authorName: "阿拉斯加没有雪",
@@ -32,7 +31,7 @@ export const SEED_REVIEWS: Review[] = [
     rating: 5, parentId: null, createdAt: "2026-02-02T07:55:00Z", seedHelpful: 121,
     content:
       "在将军山滑了整整一周，从冰面到春雪烂泥都经历了，这块板没有一天让我失望。板头摇臂让入弯特别轻松，后移站位在深雪里也够用。它不是那种让你「哇」的板子，是那种让你每天都觉得「嗯，对的」的板子。",
-    images: [UGC_POOL[1]!],
+    images: [],
   },
   {
     id: "r-05", gearId: "sb-02", userKey: null, authorName: "Momo不滑了",
@@ -47,7 +46,7 @@ export const SEED_REVIEWS: Review[] = [
     rating: 5, parentId: null, createdAt: "2026-01-29T08:12:00Z", seedHelpful: 176,
     content:
       "跳台党直接买。Pop 是真的强，中速起跳就能拿到足够高度，落地时板面吸收得也不错。真双向意味着你反脚起跳完全不用重新适应。唯一提醒：底面是挤压的，两三天就要打一次蜡。",
-    images: [IMG.riderCarve],
+    images: [],
   },
   {
     id: "r-07", gearId: "sb-03", userKey: null, authorName: "小铁盒",
@@ -85,7 +84,7 @@ export const SEED_REVIEWS: Review[] = [
     rating: 5, parentId: null, createdAt: "2026-02-08T05:33:00Z", seedHelpful: 79,
     content:
       "出弯的回弹是这块板的灵魂。连续弯的时候能明显感觉到板子在推你，滑起来很有节奏感。碳纤层确实让它偏硬，前两趟不太友好，热开之后就好了。做工没得说。",
-    images: [UGC_POOL[0]!],
+    images: [],
   },
   {
     id: "r-12", gearId: "sb-07", userKey: null, authorName: "只走刃",
@@ -93,7 +92,7 @@ export const SEED_REVIEWS: Review[] = [
     rating: 5, parentId: null, createdAt: "2026-01-25T07:02:00Z", seedHelpful: 134,
     content:
       "刻滑党的答案。长弧高速时的稳定感是别的板给不了的，你会不自觉地越滑越快。侧切半径大，短弯别指望。板头浮力在深雪里也够用，一块板两种玩法。前提是你能压得住它。",
-    images: [IMG.riderPowder],
+    images: [],
   },
   {
     id: "r-13", gearId: "sb-07", userKey: null, authorName: "Momo不滑了",
@@ -116,7 +115,7 @@ export const SEED_REVIEWS: Review[] = [
     rating: 5, parentId: null, createdAt: "2026-02-14T04:18:00Z", seedHelpful: 112,
     content:
       "可可托海下了三天大雪，这块板全程浮在雪面上，板头一次都没扎下去。碳梁让高速下的板面非常安静，回到压雪道也依然能走刃。重是真的重，但深雪日你不会在乎。",
-    images: [IMG.riderPowder, UGC_POOL[1]!],
+    images: [],
   },
   {
     id: "r-16", gearId: "sb-10", userKey: null, authorName: "只走刃",
@@ -153,7 +152,7 @@ export const SEED_REVIEWS: Review[] = [
     rating: 5, parentId: null, createdAt: "2026-02-11T06:29:00Z", seedHelpful: 128,
     content:
       "浮雪标杆，没有之一。树林里转向比看起来灵活得多，宽板头在深雪里就是船。但请务必记住：这是第二块板。回到压雪道它明显变钝，别指望一板通吃。",
-    images: [IMG.riderPowder],
+    images: [],
   },
   {
     id: "r-21", gearId: "sb-14", userKey: null, authorName: "公园保安",

@@ -68,6 +68,15 @@ test("云端快照覆盖事实字段并保留本地编辑内容", () => {
   assert.equal(result?.scores.imageQuality, 8);
 });
 
+test("云端明确清空封面时，不恢复本地 AI 占位封面和图集", () => {
+  const aiCover = "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=test";
+  const aiProduct = { ...base, hero: aiCover, gallery: [{ url: aiCover, label: "AI 占位图" }] };
+  const [result] = applyCatalogSnapshot([aiProduct], [snapshot({ coverUrl: null })]);
+
+  assert.equal(result?.hero, "");
+  assert.deepEqual(result?.gallery, []);
+});
+
 test("云端新增产品进入统一目录并使用明确的空默认值", () => {
   const result = applyCatalogSnapshot([], [snapshot({ slug: "new-brand-new-model-2026", model: "New Model" })]);
 

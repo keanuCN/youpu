@@ -7,6 +7,8 @@ import { GEAR, gearOfCategory } from "../data/boards";
 import {
   getCategoryProducts,
   getCompareProducts,
+  getProductDetail,
+  mapProductDetail,
   mapProductListItem,
   resolveContentSource,
 } from "./content";
@@ -62,6 +64,33 @@ test("maps an API list item while preserving local transitional fields", () => {
   assert.equal(gear.composite, 8.7);
   assert.equal(gear.hero, "/api-cover.png");
   assert.deepEqual(gear.analysis, localGear.analysis);
+});
+
+test("treats an empty API detail image list as authoritative and does not restore local placeholders", () => {
+  const gear = mapProductDetail({ ...apiDetail, coverUrl: null }, localGear);
+
+  assert.equal(gear.hero, "");
+  assert.deepEqual(gear.gallery, []);
+});
+
+test("looks up a legacy snowboard route by product slug instead of its internal id", async () => {
+  const imageUrl = "https://eu.burton.com/cdn/shop/files/1068819AI2_1.webp?v=1&width=2880";
+  const detail = {
+    ...apiDetail,
+    coverUrl: imageUrl,
+    images: [{ url: imageUrl, kind: "face" as const, alt: "Burton Custom Camber", source: "Burton" }],
+  };
+  let receivedUrl = "";
+  const fetcher: typeof fetch = async (input) => {
+    receivedUrl = String(input);
+    return new Response(JSON.stringify(detail), { status: 200, headers: { "Content-Type": "application/json" } });
+  };
+
+  const gear = await getProductDetail("sb-01", { source: "api", fetcher });
+
+  assert.match(receivedUrl, /\/api\/products\/burton-custom-camber-2026$/);
+  assert.equal(gear?.hero, imageUrl);
+  assert.equal(gear?.gallery.length, 1);
 });
 
 test("uses the API slug as the route id for products outside the local pack", () => {

@@ -17,6 +17,12 @@ test("routes approved remote images through the local proxy in development", () 
     resolveImageUrl(officialImage, true),
     `/api/image-proxy?url=${encodeURIComponent(officialImage)}`,
   );
+
+  const burtonImage = "https://eu.burton.com/cdn/shop/files/1068819AI2_1.webp?v=1&width=2880";
+  assert.equal(
+    resolveImageUrl(burtonImage, true),
+    `/api/image-proxy?url=${encodeURIComponent(burtonImage)}`,
+  );
 });
 
 test("keeps image URLs unchanged outside development", () => {
@@ -29,6 +35,8 @@ test("only allows local paths and approved remote image prefixes", () => {
   assert.equal(isAllowedImageUrl("https://g.cdn.meoo.host/other/file.png"), false);
   assert.equal(isAllowedImageUrl("https://g.cdn.meoo.host:444/uvayfd7jql5o/ai-images/file.png"), false);
   assert.equal(isAllowedImageUrl("https://us.yonex.com/cdn/shop/files/arc11-p.png"), true);
+  assert.equal(isAllowedImageUrl("https://eu.burton.com/cdn/shop/files/1068819AI2_1.webp"), true);
+  assert.equal(isAllowedImageUrl("https://eu.burton.com/private/other.webp"), false);
   assert.equal(isAllowedImageUrl("https://shop.au.victorsport.com/cdn/shop/products/racket.jpg"), true);
   assert.equal(isAllowedImageUrl("https://bbsports.co.nz/cdn/shop/files/Untitled_580x.jpg?v=1760064152"), true);
   assert.equal(isAllowedImageUrl("https://www.smartmarine.co.nz/cdn/images/products/xlarge/8089900_a.jpg"), true);

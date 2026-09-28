@@ -5,6 +5,7 @@ const IMAGE_PROXY_PATH = "/api/image-proxy";
  * 新品类的本地演示图来自品牌官网或公开零售页面，正式上线前仍应迁移到自有 COS。
  */
 const REMOTE_IMAGE_RULES = [
+  { host: "eu.burton.com", pathPrefix: "/cdn/shop/files/" },
   { host: "cdn.amersports.com", pathPrefix: "/017bc76f-f5cc-42b8-a786-b49f00cdff46/" },
   { host: "cdn.amersports.com", pathPrefix: "/8fd450be-84c9-4bed-b255-b49f00cdfdd0/" },
   { host: "cdn.amersports.com", pathPrefix: "/0acef4a9-61b7-47b0-84f4-b49f00cdfc5f/" },

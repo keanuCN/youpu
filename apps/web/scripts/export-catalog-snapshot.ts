@@ -1,10 +1,11 @@
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { execFileSync } from "node:child_process";
 import { createRequire } from "node:module";
 import { dirname, join, resolve } from "node:path";
 
 import { normalizePriceRange, productListResponseSchema, type ProductListItem } from "@youpu/schema";
 import { shouldRejectCatalogCountDecrease } from "./catalog-build-policy";
-import { CATALOG_SNAPSHOT_META } from "../src/data/catalog-snapshot";
+import { CATALOG_SNAPSHOT, CATALOG_SNAPSHOT_META, type CatalogSnapshotItem } from "../src/data/catalog-snapshot";
 
 const PAGE_SIZE = 48;
 const apiBase = (process.env.CONTENT_EXPORT_API_BASE ?? process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:3001").replace(/\/$/, "");
@@ -90,6 +91,70 @@ async function overlaySnowboardSeeds(items: ProductListItem[]): Promise<ProductL
   return merged;
 }
 
+function isAiPlaceholder(url: string | null): boolean {
+  if (!url) return false;
+  try {
+    const image = new URL(url);
+    return image.hostname === "g.cdn.meoo.host" && image.pathname.startsWith("/uvayfd7jql5o/ai-images/");
+  } catch {
+    return false;
+  }
+}
+
+function stripAiPlaceholderCovers(items: ProductListItem[]): ProductListItem[] {
+  return items.map((item) => isAiPlaceholder(item.coverUrl) ? { ...item, coverUrl: null } : item);
+}
+
+function committedSnapshot(): readonly CatalogSnapshotItem[] {
+  try {
+    const source = execFileSync("git", ["show", "HEAD:apps/web/src/data/catalog-snapshot.ts"], { encoding: "utf8" });
+    const marker = "export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = ";
+    const start = source.indexOf(marker);
+    const end = source.indexOf(";\n", start + marker.length);
+    if (start >= 0 && end > start) {
+      return JSON.parse(source.slice(start + marker.length, end)) as CatalogSnapshotItem[];
+    }
+  } catch {
+    // 在没有可读取 Git HEAD 的环境里，至少使用当前仓库快照。
+  }
+  return CATALOG_SNAPSHOT;
+}
+
+function preserveSnapshotIds(items: ProductListItem[]): ProductListItem[] {
+  const baseline = committedSnapshot();
+  const idBySlug = new Map(baseline.map((item) => [item.slug, item.id]));
+  return items.map((item) => ({ ...item, id: idBySlug.get(item.slug) ?? item.id }));
+}
+
+function mergeSnowboardImages(items: ProductListItem[]): CatalogSnapshotItem[] {
+  const baseline = committedSnapshot();
+  const snowboardBySlug = new Map(items.filter((item) => item.categorySlug === "snowboard").map((item) => [item.slug, item]));
+  const existingSlugs = new Set(baseline.map((item) => item.slug));
+  const merged = baseline.map((item) => {
+    if (item.categorySlug !== "snowboard") return item;
+    const fresh = snowboardBySlug.get(item.slug);
+    const coverUrl = fresh?.coverUrl ?? item.coverUrl;
+    return { ...item, coverUrl: isAiPlaceholder(coverUrl) ? null : coverUrl };
+  });
+  const added = items
+    .filter((item) => item.categorySlug === "snowboard" && !existingSlugs.has(item.slug))
+    .map((item) => ({ ...item, coverUrl: isAiPlaceholder(item.coverUrl) ? null : item.coverUrl }));
+  return [...merged, ...added];
+}
+
+async function writeSnapshot(items: CatalogSnapshotItem[], source: string): Promise<void> {
+  await mkdir(dirname(outputPath), { recursive: true });
+  await writeFile(outputPath, render(items, source), "utf8");
+  console.log(`已从 ${apiBase} 导出 ${items.length} 条产品到 ${outputPath}`);
+  console.log(`覆盖品类：${[...new Set(items.map((item) => item.categorySlug))].sort().join("、")}`);
+}
+
+function snapshotSource(): string {
+  return apiBase.includes("localhost") || apiBase.includes("127.0.0.1")
+    ? "本地 API + 本地单板档案"
+    : `${apiBase} + 本地单板档案`;
+}
+
 function render(items: ProductListItem[], source: string): string {
   const categorySlugs = [...new Set(items.map((item) => item.categorySlug))].sort();
   const meta = {
@@ -155,10 +220,22 @@ async function main(): Promise<void> {
   }
 
   const unique = new Map(items.map((item) => [item.slug, item]));
-  const sorted = await overlaySnowboardSeeds(stableSort([...unique.values()]));
+  if (process.env.CONTENT_EXPORT_SNOWBOARD_IMAGES_ONLY === "true") {
+    const snowboardSnapshot = mergeSnowboardImages(stableSort([...unique.values()]));
+    await writeSnapshot(snowboardSnapshot, `${snapshotSource()}（仅刷新单板图片）`);
+    return;
+  }
+  let sorted = await overlaySnowboardSeeds(stableSort([...unique.values()]));
   if (sorted.length !== total) {
     throw new Error(`目录快照数量不完整：接口声明 ${total} 条，实际得到 ${sorted.length} 条`);
   }
+  if (sorted.length < CATALOG_SNAPSHOT_META.total && process.env.CONTENT_EXPORT_PRESERVE_MISSING === "true") {
+    const incomingSlugs = new Set(sorted.map((item) => item.slug));
+    const missing = CATALOG_SNAPSHOT.filter((item) => !incomingSlugs.has(item.slug));
+    sorted = stableSort([...sorted, ...missing]);
+    console.warn(`API 少于现有快照，已保留 ${missing.length} 条 API 未返回的旧目录记录。`);
+  }
+  sorted = stripAiPlaceholderCovers(preserveSnapshotIds(sorted));
   if (
     shouldRejectCatalogCountDecrease(CATALOG_SNAPSHOT_META.total, sorted.length, {
       CONTENT_EXPORT_ALLOW_COUNT_DECREASE: process.env.CONTENT_EXPORT_ALLOW_COUNT_DECREASE,
@@ -170,10 +247,7 @@ async function main(): Promise<void> {
     );
   }
 
-  await mkdir(dirname(outputPath), { recursive: true });
-  await writeFile(outputPath, render(sorted, `${apiBase} + 本地单板档案`), "utf8");
-  console.log(`已从 ${apiBase} 导出 ${sorted.length} 条产品到 ${outputPath}`);
-  console.log(`覆盖品类：${[...new Set(sorted.map((item) => item.categorySlug))].sort().join("、")}`);
+  await writeSnapshot(sorted, snapshotSource());
 }
 
 main().catch((error: unknown) => {

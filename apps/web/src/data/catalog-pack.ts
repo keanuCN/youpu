@@ -53,6 +53,15 @@ function safeCover(snapshot: CatalogSnapshotItem, fallback: string): string {
   return resolveImageUrl(snapshot.coverUrl);
 }
 
+function isAiPlaceholder(url: string): boolean {
+  try {
+    const image = new URL(url);
+    return image.hostname === "g.cdn.meoo.host" && image.pathname.startsWith("/uvayfd7jql5o/ai-images/");
+  } catch {
+    return false;
+  }
+}
+
 function priceRange(snapshot: CatalogSnapshotItem, fallback?: GearItem): { min: number; max: number } {
   const min = snapshot.priceMin ?? fallback?.priceBand.min ?? fallback?.price ?? 0;
   const max = snapshot.priceMax ?? fallback?.priceBand.max ?? fallback?.price ?? min;
@@ -85,14 +94,16 @@ function scenesOf(specs: SnapshotSpecs, fallback: string[] = []): string[] {
 }
 
 function galleryWithCover(cover: string, fallback: GearItem["gallery"] = []): GearItem["gallery"] {
-  if (!cover) return fallback;
-  return [{ url: cover, label: "目录封面 / CATALOG" }, ...fallback.filter((shot) => shot.url !== cover)];
+  const realImages = fallback.filter((shot) => shot.url !== cover && !isAiPlaceholder(shot.url));
+  if (!cover) return realImages;
+  return [{ url: cover, label: "目录封面 / CATALOG" }, ...realImages];
 }
 
 function mergeSnapshot(gear: GearItem, snapshot: CatalogSnapshotItem): GearItem {
   const specs = toSpecs(asRecord(snapshot.specs));
   const priceBand = priceRange(snapshot, gear);
-  const cover = safeCover(snapshot, gear.hero);
+  // 快照中的空封面也是权威状态；不要用旧内容包封面补回已清除的占位图。
+  const cover = safeCover(snapshot, "");
   const flex = numberValue(specs.flex) ?? gear.flexValue;
 
   return {

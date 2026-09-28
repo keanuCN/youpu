@@ -130,13 +130,13 @@ function analysisOf(item: ApiProduct, fallback?: GearItem): GearAnalysis {
   };
 }
 
-function galleryOf(item: ApiProduct, hero: string, fallback?: GearItem): GalleryShot[] {
-  if ("images" in item && item.images.length > 0) {
+function galleryOf(item: ApiProduct, hero: string): GalleryShot[] {
+  if ("images" in item) {
     return item.images
       .filter((image) => isAllowedImageUrl(image.url))
       .map((image) => ({ url: resolveImageUrl(image.url), label: image.alt ?? image.kind }));
   }
-  if (fallback?.gallery.length) return fallback.gallery;
+  // API 列表只提供封面；不要回退到本地内容包图集，以免旧 AI 占位图重新出现。
   return hero ? [{ url: hero, label: "封面 / COVER" }] : [];
 }
 
@@ -168,7 +168,8 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
   const specs = toSpecs(rawSpecs);
   const fallbackFlex = fallback?.flexValue ?? 0;
   const flexValue = numberValue(rawSpecs.flex) ?? fallbackFlex;
-  const cover = safeImageUrl(item.coverUrl, fallback?.hero ?? "");
+  // API 的 null 封面表示当前没有可用商品图，不再回退到内容包旧封面。
+  const cover = safeImageUrl(item.coverUrl);
   const categorySlug = "categorySlug" in item ? item.categorySlug : item.category.slug;
   const scores = "editorialScores" in item && item.editorialScores ? item.editorialScores : fallback?.scores ?? {};
   const price = priceOf(item, fallback);
@@ -195,7 +196,7 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
         ? fallback?.flexLabel ?? "待补充"
         : ({ soft: "软", mid: "中", midstiff: "中硬", stiff: "硬" }[flexBucket(flexValue)] ?? "未知"),
     hero: cover,
-    gallery: galleryOf(item, cover, fallback),
+    gallery: galleryOf(item, cover),
     specs: { ...(fallback?.specs ?? {}), ...specs },
     fitGuide: fitGuideOf(rawSpecs, fallback),
     scores,
@@ -267,8 +268,9 @@ export async function getProductDetail(id: string, options: ContentOptions = {})
   if ((options.source ?? resolveContentSource()) === "pack") return fallback;
 
   try {
-    // 快照新增产品的 id 就是 API canonical slug；旧内容包仍使用内部短 id，需要按品牌/型号/年份回查。
-    const lookup = fallback && fallback.id !== id ? slugForProduct(fallback) : id;
+    // 单板旧内容使用 sb-01 一类内部短 id，详情 API 必须按品牌/型号/年份 slug 回查。
+    // 快照新增产品使用 API canonical slug，直接用路由 id；部分品牌 canonical slug 与展示名不同。
+    const lookup = fallback && /^sb-\d+$/.test(fallback.id) ? slugForProduct(fallback) : id;
     const response = await requestJson(`/api/products/${encodeURIComponent(lookup)}`, productDetailSchema, options.fetcher ?? fetch);
     if (!isLive(response.category.slug)) return fallback;
     return mapProductDetail(response, fallback);
