@@ -16,4 +16,10 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/experience-76-xpress-RAMFT04000.html
+images:
+  - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw0f3e9f73/images/large/RAMFT04_FCMDX02_EXPERIENCE_76_XPRESS_XPRESS_10_GW_B83_BLACK_72DPI_01.jpg?sw=800
+    kind: face
+    alt: Rossignol Experience 76 Xpress 官方雪板图
+    source: Rossignol 官方产品页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published

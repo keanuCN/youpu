@@ -6,11 +6,20 @@ year: 2027
 title: Salomon QST 106 2026/27
 one_liner: QST 系列宽板腰 freeride 型号，官方 2026/27 冬季目录在售。
 specs:
+  lengthOptions: 157 / 165 / 173 / 181 / 189 cm
   waistWidth: 106
+  turnRadius: 16.5
+  turnRadiusReferenceLength: 157 cm
   terrain: 自由滑 / 粉雪
   skierLevel: 进阶
   bindingSetup: 裸板或依销售套装配置
 data_source:
   kind: official
-  origin_url: https://www.salomon.com/en-us/c/collection/winter-sports
+  origin_url: https://www.salomon.com/en-us/product/qst-106-black-pink-li9358
+images:
+  - url: https://cdn.dam.salomon.com/a71fd066-4d36-4bfa-951d-b45100de98e2/L49189000%2B/PNG-2000px-max-72dpi.png
+    kind: face
+    alt: Salomon QST 106 Black/Pink 官方雪板图
+    source: Salomon 官方产品页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published

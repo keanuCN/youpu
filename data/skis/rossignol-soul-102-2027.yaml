@@ -16,4 +16,10 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/soul-102-alpine-skis-RAPMR03000.html
+images:
+  - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa120bfdc/images/large/RAPMR03000_72DPI_01_v01.jpg?sw=800
+    kind: face
+    alt: Rossignol Soul 102 官方雪板图
+    source: Rossignol 官方产品页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published

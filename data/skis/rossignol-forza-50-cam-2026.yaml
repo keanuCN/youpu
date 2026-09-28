@@ -16,4 +16,10 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html
+images:
+  - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw562b8531/images/large/RAOPX01000_72DPI_01_v01.jpg?sw=800
+    kind: face
+    alt: Rossignol Forza 50 CAM KONECT 官方雪板图
+    source: Rossignol 官方产品页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published

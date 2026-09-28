@@ -7,10 +7,19 @@ title: Atomic Redster Q9 Revoshock S 2025/26
 one_liner: Redster Q 系列雪道板，官方目录列出 153–181 cm 尺寸范围。
 specs:
   lengthOptions: 153 / 160 / 167 / 174 / 181 cm
+  waistWidth: 75
+  turnRadius: 12.6
+  turnRadiusReferenceLength: 160 cm
   terrain: 雪道 / 全地域
   skierLevel: 进阶
   bindingSetup: 含 I 12 GW 固定器套装
 data_source:
   kind: official
-  origin_url: https://www.atomic.com/en-us/collections/ato-men-skis-all-skis
+  origin_url: https://www.atomic.com/en-us/products/redster-q9-revoshock-s-i-12-gw-aa7469-202600
+images:
+  - url: https://cdn.amersports.com/0acef4a9-61b7-47b0-84f4-b49f00cdfc5f/ATP_AASS03784_0_GHO_Redster_Q9_I12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445
+    kind: face
+    alt: Atomic Redster Q9 Revoshock S 官方雪板图
+    source: Atomic 官方产品页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published

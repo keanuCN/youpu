@@ -6,11 +6,20 @@ year: 2027
 title: Nordica Enforcer 104 2026/27
 one_liner: Nordica 2026/27 Enforcer 全山地系列，官方新季目录在售。
 specs:
+  lengthOptions: 167 / 173 / 179 / 185 / 191 cm
   waistWidth: 104
+  turnRadius: 17.5
+  turnRadiusReferenceLength: 167 cm
   terrain: 全山地 / 自由滑
   skierLevel: 进阶
   bindingSetup: 裸板，固定器另配
 data_source:
   kind: official
-  origin_url: https://www.nordica.com/usa/en/collection/men/skis/enforcer
+  origin_url: https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-104-flat
+images:
+  - url: https://www.nordica.com/storage/Product/0A668100001_ENFORCER_104_FLAT.png
+    kind: face
+    alt: Nordica Enforcer 104 2026/27 官方雪板图
+    source: Nordica 官方产品图（本地展示，图片授权待核）
+    sort_order: 0
 status: published

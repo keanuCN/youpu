@@ -6,10 +6,20 @@ year: 2026
 title: HEAD EASY JOY R 2025/26
 one_liner: 面向女性滑手的轻量雪道系列；板长、固定器和雪季款式需按具体商品确认。
 specs:
+  lengthOptions: 143 / 148 / 153 / 158 / 163 cm
+  waistWidth: 70
+  turnRadius: 13.3
+  turnRadiusReferenceLength: 163 cm
   terrain: 雪道
   skierLevel: 入门至进阶
   bindingSetup: 常见雪板+固定器套装，按具体 SKU 核对
 data_source:
-  kind: manual
-  origin_url: https://www.jd.com/hotitem/1318ec8981773fe88ecd.html
+  kind: official
+  origin_url: https://www.head.com/en_US/product/easy-joy-r-316485
+images:
+  - url: https://cdn-mdb.head.com/CDN3/D/316485/1/1820x2428/easy-joy-r.webp
+    kind: face
+    alt: HEAD Easy Joy R 官方雪板图
+    source: HEAD 官方产品页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published

@@ -16,4 +16,10 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.head.com/en_US/product/supershape-e-magnum-313306-set
+images:
+  - url: https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/1820x2428/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp
+    kind: face
+    alt: HEAD Supershape e-Magnum 官方雪板图
+    source: HEAD 官方产品页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published

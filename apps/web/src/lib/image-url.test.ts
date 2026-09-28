@@ -92,6 +92,41 @@ test("allows verified snowboard product image hosts and rejects unrelated paths"
   assert.equal(isAllowedImageUrl("https://www.fluxsnowboarding.com/private/image.webp"), false);
 });
 
+test("allows verified alpine-ski product image sources", () => {
+  assert.equal(
+    isAllowedImageUrl("https://cdn.amersports.com/017bc76f-f5cc-42b8-a786-b49f00cdff46/atomic-ski.png"),
+    true,
+  );
+  assert.equal(isAllowedImageUrl("https://cdn.amersports.com/unrelated/atomic-ski.png"), false);
+  assert.equal(isAllowedImageUrl("https://www.nordica.com/storage/Product/enforcer-89.png"), true);
+  assert.equal(isAllowedImageUrl("https://www.nordica.com/storage/private/image.png"), false);
+  assert.equal(
+    isAllowedImageUrl("https://cdn-mdb.head.com/CDN3/D/316225/1/1820x2428/shape-v2-r.webp"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://cdn.dam.salomon.com/f142d815-a33c-4a23-ab3a-b31b00bd6bb5/L47824000%2B/ski.png"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://cdn.dam.salomon.com/bc1e0c3d-981e-48e7-bd6a-b2f40157afe3/L47232400%2B/ski.png"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://cdn.dam.salomon.com/f1b63fed-8741-4144-802d-b2f40156d659/L47232300%2B/ski.png"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://img-cdn.heureka.group/v1/d23ae16d-8f92-56f6-a776-2ace62a9bcb1.jpg"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/ski.jpg"),
+    true,
+  );
+  assert.equal(isAllowedImageUrl("https://www.rossignol.com/private/ski.jpg"), false);
+});
+
 test("allows only selected high-resolution Commons hero photos", () => {
   assert.equal(
     isAllowedImageUrl(

@@ -2,15 +2,24 @@ slug: salomon-qst-98-2027
 category: skis
 brand: salomon
 model: QST 98
-year: 2027
-title: Salomon QST 98 2026/27
+year: 2024
+title: Salomon QST 98 2023/24
 one_liner: QST freeride 系列中宽度适中的全山地型号，主打多雪况适应。
 specs:
+  lengthOptions: 169 / 176 / 183 / 189 cm
   waistWidth: 98
+  turnRadius: 16
+  turnRadiusReferenceLength: 176 cm
   terrain: 全山地 / 自由滑
   skierLevel: 中级至进阶
   bindingSetup: 裸板或依销售套装配置
 data_source:
   kind: official
-  origin_url: https://www.salomon.com/en-us/c/collection/winter-sports
+  origin_url: https://www.salomon.com/en-gb/product/qst-98-li4910
+images:
+  - url: https://cdn.dam.salomon.com/f1b63fed-8741-4144-802d-b2f40156d659/L47232300%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=low&width=3840
+    kind: face
+    alt: Salomon QST 98 官方雪板图
+    source: Salomon 官方产品页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published

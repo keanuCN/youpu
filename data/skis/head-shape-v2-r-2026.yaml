@@ -6,10 +6,20 @@ year: 2026
 title: HEAD Shape V2 R 2025/26
 one_liner: HEAD V-shape 入门全地域系列；国内平台存在板+固定器销售款。
 specs:
+  lengthOptions: 142 / 149 / 156 / 163 / 170 / 177 cm
+  waistWidth: 70
+  turnRadius: 12.5
+  turnRadiusReferenceLength: 170 cm
   terrain: 全地域 / 雪道
   skierLevel: 入门至初中级
   bindingSetup: 雪板+固定器，按具体 SKU 核对
 data_source:
-  kind: manual
-  origin_url: https://www.jd.com/hotitem/1318ec8981773fe88ecd.html
+  kind: official
+  origin_url: https://www.head.com/en_FI/product/shape-v2-r-316225
+images:
+  - url: https://cdn-mdb.head.com/CDN3/D/316225/1/1820x2428/shape-v2-r.webp
+    kind: face
+    alt: HEAD Shape V2 R 官方雪板图
+    source: HEAD 官方产品页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published

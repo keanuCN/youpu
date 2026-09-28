@@ -16,4 +16,10 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/hero-elite-lt-ti-alpine-skis-RAPSE01000.html
+images:
+  - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa8eccfa0/images/large/RAPSE01000_72DPI_01_v01.jpg?sw=800
+    kind: face
+    alt: Rossignol Hero Elite LT TI 官方雪板图
+    source: Rossignol 官方产品页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published

@@ -6,10 +6,20 @@ year: 2026
 title: HEAD Shape V2 2025/26
 one_liner: 京东双板榜单中的热门入门全地域系列；套装评价仅作国内关注度参考。
 specs:
+  lengthOptions: 149 / 156 / 163 / 170 / 177 cm
+  waistWidth: 70
+  turnRadius: 12.5
+  turnRadiusReferenceLength: 170 cm
   terrain: 全地域 / 雪道
   skierLevel: 入门至初中级
   bindingSetup: 雪板+固定器或套装，按具体 SKU 核对
 data_source:
   kind: manual
-  origin_url: https://www.jd.com/phb/key_131835046173548d5c5a.html
+  origin_url: https://www.eski.sk/image/document/head_workbook_2526_en.pdf
+images:
+  - url: https://img-cdn.heureka.group/v1/d23ae16d-8f92-56f6-a776-2ace62a9bcb1.jpg
+    kind: face
+    alt: HEAD Shape V2 2025/26 雪板及固定器套装图
+    source: Heureka 商品聚合页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published

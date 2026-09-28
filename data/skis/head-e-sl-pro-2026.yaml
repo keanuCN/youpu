@@ -6,10 +6,20 @@ year: 2026
 title: HEAD Worldcup Rebels e-SL Pro 2025/26
 one_liner: 官方归类为雪道竞速小回转板，面向有经验滑手；绑定组合依具体套装。
 specs:
+  lengthOptions: 150 / 155 / 160 / 165 / 170 cm
+  waistWidth: 68
+  turnRadius: 12
+  turnRadiusReferenceLength: 160 cm
   terrain: 雪道 / 竞速 / 小回转
   skierLevel: 进阶
   bindingSetup: 可选固定器套装
 data_source:
   kind: official
   origin_url: https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set
+images:
+  - url: https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/1820x2428/worldcup-rebels-e-sl-pro-without-binding.webp
+    kind: face
+    alt: HEAD Worldcup Rebels e-SL Pro 官方雪板图
+    source: HEAD 官方产品页图片（本地展示，图片授权待核）
+    sort_order: 0
 status: published
