@@ -8,7 +8,16 @@ one_liner: "后入式快速穿脱固定器，可在需要时按传统绑带方�
 specs:
   entrySystem: rear-entry
   bootCompatibility: "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋"
+  flexFeel: mid-stiff
+  terrain: [all-mountain, freeride]
+  mountingSystem: "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"
 data_source:
   kind: official
   origin_url: https://eu.nidecker.com/en-int/products/og-supermatic-2026
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/N.26.BNU.SPM.BN-OG_Supermatic_Desert-1.webp?v=1786464048&width=1200"
+    kind: face
+    alt: "Nidecker OG Supermatic 2026 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

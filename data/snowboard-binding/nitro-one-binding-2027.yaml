@@ -7,7 +7,15 @@ title: "Nitro One 2027"
 one_liner: "Nitro 2026–27 自由式全山地固定器，官方定位为兼顾山地滑行的自由式型号。"
 specs:
   entrySystem: strap
+  mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
+  terrain: [all-mountain, freestyle]
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/bindings-26-27/products/one-bindings-1
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11006-102_One-Bindings_Nitro-x-Motorhead_Product-1.jpg?v=1779339370&width=1920"
+    kind: face
+    alt: "Nitro One 2027 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

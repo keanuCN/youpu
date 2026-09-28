@@ -7,7 +7,16 @@ title: "Flow Fuse Hybrid 2026"
 one_liner: "Flow 后入式固定器的 Hybrid 绑带版本，保留传统双绑带脚感并支持快速穿脱。"
 specs:
   entrySystem: rear-entry
+  flexFeel: mid-stiff
+  terrain: [all-mountain, freeride]
+  mountingSystem: "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"
 data_source:
   kind: official
   origin_url: https://www.nidecker.com/products/flow-fuse-hybrid-2026
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.26.BNU.FUH.GN-Flow_Fuse_Hybrid_Khaki-1.webp?v=1786448686&width=1200"
+    kind: face
+    alt: "Flow Fuse Hybrid 2026 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

@@ -8,7 +8,17 @@ one_liner: "Mercury 加入 FASE 快速绑带系统，支持单手穿入并可回
 specs:
   entrySystem: fast-entry
   bootCompatibility: "FASE 官方称兼容各品牌普通雪鞋"
+  flexFeel: medium
+  flex: 7
+  terrain: [all-mountain, freeride, freestyle]
+  mountingSystem: "Universal Disk；兼容 4x4、2x4 与 EST/Channel"
 data_source:
   kind: official
   origin_url: https://www.jonessnowboards.com/products/mercury-fase-snowboard-binding-2026
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.26.BNU.MHF.C4-gallery-8.webp?v=1776481535&width=1200"
+    kind: face
+    alt: "Jones Mercury FASE 2026 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

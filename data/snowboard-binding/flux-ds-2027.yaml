@@ -8,7 +8,16 @@ one_liner: "FLUX 自由式全能款，26-27 官方页面介绍轻量底座与 Cl
 specs:
   entrySystem: strap
   bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+  flexFeel: mid-stiff
+  terrain: [freestyle, all-mountain]
+  mountingSystem: "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对"
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2627-ds
+images:
+  - url: "https://www.fluxsnowboarding.com/cdn/shop/files/25_1_bk_bs.png?v=1758571720&width=1200"
+    kind: face
+    alt: "FLUX DS 2027 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

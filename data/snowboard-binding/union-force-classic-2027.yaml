@@ -9,7 +9,15 @@ specs:
   entrySystem: strap
   flex: 6
   bootCompatibility: "Union 标准安装圆盘；适配普通绑带雪鞋"
+  mountingSystem: "Camber Disk；4x4、4x2 与 Channel"
+  terrain: [all-mountain, freeride, freestyle]
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_FORCE_CLASSIC_BLACK_2000x.jpg?v=1785333201"
+    kind: face
+    alt: "Union Binding Company Force Classic 2027 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

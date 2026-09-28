@@ -8,7 +8,16 @@ one_liner: "Salomon 入门进阶向全山地绑带固定器，官网列出柔和
 specs:
   entrySystem: strap
   bootCompatibility: "官网标注 Universal disc，适配市场常见雪板安装系统；普通绑带雪鞋"
+  flexFeel: soft
+  terrain: [all-mountain, freestyle]
+  mountingSystem: "Universal Disc；兼容主要雪板安装系统"
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/rhythm-li3345
+images:
+  - url: "https://cdn.dam.salomon.com/f0c57cc4-3429-4574-a398-b36001082f58/L45450200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12"
+    kind: face
+    alt: "Salomon RHYTHM 2026 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

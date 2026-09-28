@@ -8,7 +8,16 @@ one_liner: "采用 Shadow Fit 结构的全山地/自由式固定器，官网标�
 specs:
   entrySystem: strap
   bootCompatibility: "官网标注 Universal disc，适配市场常见雪板安装系统；普通绑带雪鞋"
+  flexFeel: medium
+  terrain: [all-mountain, freestyle]
+  mountingSystem: "Universal Disc；兼容主要雪板安装系统"
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/district-li1289
+images:
+  - url: "https://cdn.dam.salomon.com/fb6d3e52-e631-4fe0-9ca7-b36001082c68/L49290100/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12"
+    kind: face
+    alt: "Salomon DISTRICT 2026 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

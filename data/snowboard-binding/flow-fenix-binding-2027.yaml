@@ -7,7 +7,16 @@ title: "Flow Fenix 2027"
 one_liner: "Flow 后入式固定器，官网描述其定位兼顾公园动作与雪场巡航。"
 specs:
   entrySystem: rear-entry
+  flexFeel: mid-soft
+  terrain: [all-mountain]
+  mountingSystem: "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"
 data_source:
   kind: official
   origin_url: https://www.nidecker.com/products/flow-fenix
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.27.BNU.FEF.400-Flow_Fenix_Cyber_Blue-1.webp?v=1788232266&width=1200"
+    kind: face
+    alt: "Flow Fenix 2027 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

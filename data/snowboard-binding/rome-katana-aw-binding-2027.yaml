@@ -7,7 +7,16 @@ title: "Rome Katana AW 2027"
 one_liner: "Rome 2026–27 传统绑带全山地固定器，官方主打调节范围与舒适性。"
 specs:
   entrySystem: strap
+  flex: 8
+  terrain: [all-mountain, freeride]
+  mountingSystem: "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准"
 data_source:
   kind: official
   origin_url: https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-katana-aw-c2-sage-binding-1-1782373162882.jpg?v=1787636963&width=1920"
+    kind: face
+    alt: "Rome Katana AW 2027 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

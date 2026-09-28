@@ -56,4 +56,21 @@ test("allows verified snowboard product image hosts and rejects unrelated paths"
   assert.equal(isAllowedImageUrl("https://www.follows.co.jp/private/other.jpg"), false);
   assert.equal(isAllowedImageUrl("https://contents.mediadecathlon.com/private/image.jpg"), false);
   assert.equal(isAllowedImageUrl("https://contents.mediadecathlon.com/p/private/image.jpg"), false);
+  assert.equal(
+    isAllowedImageUrl("https://cdn.shopify.com/s/files/1/0370/4055/4115/files/rome-binding.jpg"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://cdn.shopify.com/s/files/1/0685/4131/7295/files/flow-binding.webp"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://www.fluxsnowboarding.com/cdn/shop/files/flux-binding.webp"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://cdn.dam.salomon.com/4e88d690-8431-4ab7-b0f7-b36001082530/L45439300/image.png"),
+    true,
+  );
+  assert.equal(isAllowedImageUrl("https://www.fluxsnowboarding.com/private/image.webp"), false);
 });

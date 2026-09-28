@@ -8,7 +8,16 @@ one_liner: "FLUX 高阶硬质型号，官方介绍其碳纤维高背与轻量化
 specs:
   entrySystem: strap
   bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+  flex: 9
+  terrain: [freeride, all-mountain]
+  mountingSystem: "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对"
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526xv
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/2_1_xv__bronze_bs-1.png?v=1757410220&width=1160"
+    kind: face
+    alt: "FLUX XV 2026 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

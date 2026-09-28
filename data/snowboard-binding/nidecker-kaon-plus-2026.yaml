@@ -8,7 +8,16 @@ one_liner: "中硬度双绑带全能款，配备 Multi-Disk 与无工具绑带�
 specs:
   entrySystem: strap
   bootCompatibility: "Multi-Disk 兼容常见 4 孔与 Channel；普通绑带雪鞋"
+  flexFeel: mid-stiff
+  terrain: [all-mountain]
+  mountingSystem: "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"
 data_source:
   kind: official
   origin_url: https://eu.nidecker.com/de-int/products/kaon-plus
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/N.26.BNU.KAP.BK-Kaon_Plus_Bio_Black-1.webp?v=1786632652&width=1200"
+    kind: face
+    alt: "Nidecker Kaon Plus 2026 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

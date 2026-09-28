@@ -279,6 +279,21 @@
         compare: true
         compareDirection: context
         order: 20
+      - key: flexFeel
+        label: 硬度手感
+        group: 结构与穿脱
+        type: enum
+        options:
+          - { value: soft, label: 柔软 }
+          - { value: mid-soft, label: 中偏软 }
+          - { value: medium, label: 中等 }
+          - { value: mid-stiff, label: 中偏硬 }
+          - { value: stiff, label: 偏硬 }
+          - { value: pro-stiff, label: 专业硬朗 }
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 25
       - key: mountingSystem
         label: 安装系统
         group: 兼容性

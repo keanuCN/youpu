@@ -8,7 +8,15 @@ one_liner: "Union 女款全山地固定器，官方定位覆盖雪道、粉雪�
 specs:
   entrySystem: strap
   bootCompatibility: "Union 标准安装圆盘；适配普通绑带雪鞋"
+  mountingSystem: "Camber Disk；4x4、4x2 与 Channel"
+  terrain: [all-mountain, freestyle]
 data_source:
   kind: official
   origin_url: https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0656/0251/9280/files/UN26_TRILOGY_BLACK_2000x.jpg?v=1782986724"
+    kind: face
+    alt: "Union Binding Company Trilogy 2027 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

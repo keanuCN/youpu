@@ -7,7 +7,15 @@ title: "Salomon EDB 2026"
 one_liner: "Salomon 全山地固定器，官网当前目录同时提供该款与 EDB PRIME。"
 specs:
   entrySystem: strap
+  terrain: [all-mountain]
+  mountingSystem: "Universal Disc；兼容主要雪板安装系统"
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/c/men/winter-equipment/snowboard/bindings
+images:
+  - url: "https://cdn.dam.salomon.com/4e88d690-8431-4ab7-b0f7-b36001082530/L45439300/PNG-2000px-max-72dpi.png"
+    kind: face
+    alt: "Salomon EDB 2026 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

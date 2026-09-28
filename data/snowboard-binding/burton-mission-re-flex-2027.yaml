@@ -8,7 +8,16 @@ one_liner: "Burton 入门进阶全山地绑带款，官方强调缓震与通用�
 specs:
   entrySystem: strap
   bootCompatibility: "Re:Flex 多板型安装；适配普通绑带雪鞋"
+  flexFeel: medium
+  mountingSystem: "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）"
+  terrain: [all-mountain]
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-mission-re-flex-snowboard-bindings-105461
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1054617E9K_1.webp?v=1783620127&width=1920"
+    kind: face
+    alt: "Burton Mission Re:Flex 2027 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

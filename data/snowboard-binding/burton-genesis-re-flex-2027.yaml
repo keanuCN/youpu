@@ -8,7 +8,16 @@ one_liner: "采用 Genesis 缓震结构的绑带款，主打舒适脚感与全�
 specs:
   entrySystem: strap
   bootCompatibility: "Re:Flex 多板型安装；适配普通绑带雪鞋"
+  flexFeel: medium
+  mountingSystem: "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）"
+  terrain: [all-mountain, freestyle]
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-genesis-re-flex-snowboard-bindings-105471
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1054719E9M_1.webp?v=1784135138&width=1920"
+    kind: face
+    alt: "Burton Genesis Re:Flex 2027 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

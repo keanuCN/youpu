@@ -685,6 +685,7 @@ const SNOWBOARD_BINDING: Category = {
       fields: [
         { key: "entrySystem", label: "穿脱系统", type: "text", direction: null },
         { key: "flex", label: "硬度", unit: "/10", type: "number", direction: null },
+        { key: "flexFeel", label: "硬度手感", type: "text", direction: null },
       ],
     },
     {

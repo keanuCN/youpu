@@ -7,7 +7,16 @@ title: "Salomon DISTRICT PRO 2026"
 one_liner: "Salomon 当前全山地固定器系列中的进阶型号，国内零售目录可见该产品。"
 specs:
   entrySystem: strap
+  flexFeel: stiff
+  terrain: [all-mountain, freeride]
+  mountingSystem: "Universal Disc；兼容主要雪板安装系统"
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/district-pro-li1290
+images:
+  - url: "https://cdn.dam.salomon.com/2dd43218-0575-4f37-92d2-b360010835d6/L49289600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12"
+    kind: face
+    alt: "Salomon DISTRICT PRO 2026 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

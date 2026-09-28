@@ -8,7 +8,15 @@ one_liner: "Burton 女款 Lexa X EST 固定器，EST 结构对应 The Channel �
 specs:
   entrySystem: strap
   bootCompatibility: "EST 版本仅用于 Burton The Channel 雪板；适配普通绑带雪鞋"
+  mountingSystem: "EST，仅适配 Burton The Channel"
+  terrain: [all-mountain, freestyle]
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314E9R_1.webp?v=1783620802&width=1920"
+    kind: face
+    alt: "Burton Lexa X EST 2027 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published

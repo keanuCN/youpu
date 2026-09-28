@@ -9,7 +9,15 @@ specs:
   entrySystem: strap
   flex: 8
   bootCompatibility: "适配常见 4x4、4x2 与 Channel 安装；普通绑带雪鞋"
+  mountingSystem: "Camber Disk + Washer；4x4、4x2 与 Channel"
+  terrain: [all-mountain, freeride]
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_BLACK_2000x.jpg?v=1785333183"
+    kind: face
+    alt: "Union Binding Company Atlas 2027 商品图"
+    source: "品牌官方商品页公开图片；展示授权状态待核"
+    sort_order: 0
 status: published
