@@ -126,19 +126,38 @@ function preserveSnapshotIds(items: ProductListItem[]): ProductListItem[] {
   return items.map((item) => ({ ...item, id: idBySlug.get(item.slug) ?? item.id }));
 }
 
-function mergeSnowboardImages(items: ProductListItem[]): CatalogSnapshotItem[] {
+async function mergeSnowboardImages(items: ProductListItem[]): Promise<CatalogSnapshotItem[]> {
   const baseline = committedSnapshot();
   const snowboardBySlug = new Map(items.filter((item) => item.categorySlug === "snowboard").map((item) => [item.slug, item]));
+  const apiPackage = resolve(process.cwd(), "../api/package.json");
+  const { parse } = createRequire(apiPackage)("yaml") as typeof import("yaml");
+  const seedDir = resolve(process.cwd(), "../../data/snowboard");
+  const seedCoverBySlug = new Map<string, string>();
+  for (const file of await readdir(seedDir)) {
+    if (!file.endsWith(".yaml")) continue;
+    const seed = parse(await readFile(join(seedDir, file), "utf8")) as {
+      slug: string;
+      images?: Array<{ url?: string }>;
+    };
+    const cover = seed.images?.find((image) => typeof image.url === "string" && image.url.trim())?.url;
+    if (cover) seedCoverBySlug.set(seed.slug, cover);
+  }
+
   const existingSlugs = new Set(baseline.map((item) => item.slug));
   const merged = baseline.map((item) => {
     if (item.categorySlug !== "snowboard") return item;
     const fresh = snowboardBySlug.get(item.slug);
-    const coverUrl = fresh?.coverUrl ?? item.coverUrl;
-    return { ...item, coverUrl: isAiPlaceholder(coverUrl) ? null : coverUrl };
+    const apiCover = fresh?.coverUrl ?? item.coverUrl;
+    const coverUrl = isAiPlaceholder(apiCover) ? seedCoverBySlug.get(item.slug) ?? null : apiCover ?? seedCoverBySlug.get(item.slug) ?? null;
+    return { ...item, coverUrl };
   });
   const added = items
     .filter((item) => item.categorySlug === "snowboard" && !existingSlugs.has(item.slug))
-    .map((item) => ({ ...item, coverUrl: isAiPlaceholder(item.coverUrl) ? null : item.coverUrl }));
+    .map((item) => {
+      const apiCover = item.coverUrl;
+      const coverUrl = isAiPlaceholder(apiCover) ? seedCoverBySlug.get(item.slug) ?? null : apiCover ?? seedCoverBySlug.get(item.slug) ?? null;
+      return { ...item, coverUrl };
+    });
   return [...merged, ...added];
 }
 
@@ -221,7 +240,7 @@ async function main(): Promise<void> {
 
   const unique = new Map(items.map((item) => [item.slug, item]));
   if (process.env.CONTENT_EXPORT_SNOWBOARD_IMAGES_ONLY === "true") {
-    const snowboardSnapshot = mergeSnowboardImages(stableSort([...unique.values()]));
+    const snowboardSnapshot = await mergeSnowboardImages(stableSort([...unique.values()]));
     await writeSnapshot(snowboardSnapshot, `${snapshotSource()}（仅刷新单板图片）`);
     return;
   }
