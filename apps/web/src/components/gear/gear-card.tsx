@@ -9,7 +9,7 @@ import { reviewCount, userRating } from "@/data/boards";
 import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
 import { sceneLabel } from "@/lib/domain";
 import { fmtCompact, fmtPrice } from "@/lib/format";
-import { categoryCardSignals } from "@/lib/gear-card-signals";
+import { categoryCardSignals, isHotProduct } from "@/lib/gear-card-signals";
 import { hasEditorialScores, hasMedia, hasPrice, hasUserRating, mediaUrl } from "@/lib/gear-state";
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear } from "@/lib/api";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
@@ -92,6 +92,7 @@ export function GearCard({
   const mediaReady = hasMedia(gear);
   const mediaSrc = mediaUrl(gear);
   const ratingReady = hasUserRating(gear);
+  const hot = isHotProduct(gear.heat);
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -172,14 +173,14 @@ export function GearCard({
           ) : (
             <MediaPlaceholder label={`${gear.brand} ${gear.model}`} />
           )}
-          <div className="absolute top-0 left-0">
+          <div className="absolute top-0 left-0 flex flex-wrap gap-1">
             {rank ? (
               <span className="mono-data bg-foreground px-2 py-1 text-[13px] text-background tnum">
                 {String(rank).padStart(2, "0")}
               </span>
-            ) : gear.isNew ? (
-              <span className="mono-label bg-primary px-2 py-[6px] text-primary-foreground">New</span>
             ) : null}
+            {gear.isNew ? <span className="mono-label bg-primary px-2 py-[6px] text-primary-foreground">NEW</span> : null}
+            {hot ? <span className="mono-label bg-red-600 px-2 py-[6px] text-white">HOT</span> : null}
           </div>
           <div className="absolute top-0 right-0">
             {editorialReady ? <ScoreMark value={gear.composite} size="sm" /> : <PendingValue label="待补分" className="bg-background/90 px-1.5 py-1" />}

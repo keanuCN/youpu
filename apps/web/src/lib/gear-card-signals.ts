@@ -2,6 +2,13 @@ import { getCategory } from "@/data/categories";
 
 type SpecValue = number | string | null;
 
+/** 商品热度达到 7000 时，卡片标记为热门。 */
+export const HOT_PRODUCT_HEAT_THRESHOLD = 7000;
+
+export function isHotProduct(heat: number): boolean {
+  return Number.isFinite(heat) && heat >= HOT_PRODUCT_HEAT_THRESHOLD;
+}
+
 const enumLabels: Record<string, Record<string, string>> = {
   garmentType: {
     jacket: "滑雪夹克",

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { categoryCardSignals } from "./gear-card-signals";
+import { categoryCardSignals, isHotProduct } from "./gear-card-signals";
 
 test("skiing product cards use their own category spec labels", () => {
   assert.deepEqual(categoryCardSignals("snowboard-binding", { entrySystem: "Step On", flex: 6 }), [
@@ -27,4 +27,11 @@ test("missing category specs remain explicitly marked", () => {
     ["款式", "待补充"],
     ["版型", "待补充"],
   ]);
+});
+
+test("only products above the popularity threshold receive the hot signal", () => {
+  assert.equal(isHotProduct(7000), true);
+  assert.equal(isHotProduct(6999), false);
+  assert.equal(isHotProduct(0), false);
+  assert.equal(isHotProduct(Number.NaN), false);
 });
