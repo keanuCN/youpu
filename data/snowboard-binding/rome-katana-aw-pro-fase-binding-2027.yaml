@@ -8,6 +8,7 @@ one_liner: "Rome 2026–27 碳纤维取向全山地固定器，结合 AsymWrap �
 specs:
   entrySystem: fast-entry
   flex: 9
+  brandAdjustabilityScore: 9
   terrain: [all-mountain, freeride]
   mountingSystem: "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准"
 editorial_scores:

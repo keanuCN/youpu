@@ -8,6 +8,7 @@ one_liner: "Rome 2026–27 传统绑带全山地固定器，官方主打调节�
 specs:
   entrySystem: strap
   flex: 8
+  brandAdjustabilityScore: 9
   terrain: [all-mountain, freeride]
   mountingSystem: "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准"
 editorial_scores:

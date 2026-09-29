@@ -8,6 +8,7 @@ one_liner: "Rome 2026–27 FullWrap 碳纤维传统绑带款，面向高响应�
 specs:
   entrySystem: strap
   flex: 9
+  brandAdjustabilityScore: 9
   terrain: [all-mountain, freeride]
   mountingSystem: "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准"
 editorial_scores:

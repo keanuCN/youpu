@@ -8,6 +8,7 @@ one_liner: "Rome 2026–27 女款 AsymWrap 传统绑带固定器，官方描述�
 specs:
   entrySystem: strap
   flex: 6
+  brandAdjustabilityScore: 7
   terrain: [all-mountain, freestyle]
   mountingSystem: "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准"
 editorial_scores:

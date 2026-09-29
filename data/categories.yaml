@@ -455,6 +455,15 @@
         filter: false
         compare: false
         order: 69
+      - key: brandAdjustabilityScore
+        label: 品牌调节性评分
+        group: 品牌官方评分
+        type: number
+        min: 1
+        max: 10
+        filter: false
+        compare: false
+        order: 70
       - key: mountingSystem
         label: 安装系统
         group: 兼容性
