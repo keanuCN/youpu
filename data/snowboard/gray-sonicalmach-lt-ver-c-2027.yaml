@@ -12,6 +12,10 @@ specs:
   scenes:
     - carving
     - freestyle
+  sizeSpecs:
+    - { size: "54 ver.C", overallLength: 1540, effectiveEdge: 1220, contactLength: 1180, waistWidth: 250, sidecutRadii: "8700/8300/8700", sidecutOffset: 0, noseLength: 190, noseWidth: 291, noseHeight: 41, tailLength: 170, tailWidth: 291, tailHeight: 32, camber: 8, stanceWidth: "480–600", insertQty: "12+12", setback: 10, edge: "1.8 mm stainless", sidewallAngle: "25°", sidewallColor: PURPLE, base: "P-TEX 3000 Graphite", stiffness: "6.8/8.0/7.0" }
+    - { size: "55w ver.C", overallLength: 1550, effectiveEdge: 1220, contactLength: 1180, waistWidth: 260, sidecutRadii: "8700/8300/8700", sidecutOffset: 0, noseLength: 195, noseWidth: 301, noseHeight: 42.5, tailLength: 175, tailWidth: 301, tailHeight: 34.4, camber: 8, stanceWidth: "480–600", insertQty: "12+12", setback: 10, edge: "1.8 mm stainless", sidewallAngle: "25°", sidewallColor: PURPLE, base: "P-TEX 3000 Graphite", stiffness: "6.8/8.0/7.0" }
+    - { size: "56ew ver.C", overallLength: 1560, effectiveEdge: 1220, contactLength: 1180, waistWidth: 270, sidecutRadii: "8700/8300/8700", sidecutOffset: 0, noseLength: 200, noseWidth: 311, noseHeight: 44.5, tailLength: 180, tailWidth: 311, tailHeight: 36.5, camber: 8, stanceWidth: "480–600", insertQty: "12+12", setback: 10, edge: "1.8 mm stainless", sidewallAngle: "25°", sidewallColor: PURPLE, base: "P-TEX 3000 Graphite", stiffness: "6.8/8.0/7.0" }
 images:
   - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/18_SONICALMACH%20LT%20verC/2627_18_SONICALMACH%20LT%20verC_main.png"
     kind: face
