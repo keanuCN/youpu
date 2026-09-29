@@ -7,6 +7,11 @@ title: "Nidecker Orbit 2027"
 one_liner: "Nidecker 双绑带固定器，官方列出可调 heelcup、脚床、前绑带位置与高背旋转。"
 specs:
   entrySystem: strap
+  bindingSizeGuide: "Nidecker 美国官方商品页男款/Youth 尺码：M US 5–8；L 8.5–11；XL 11.5–15。"
+  brandFlexScore: 3
+  brandResortScore: 4
+  brandPowScore: 3
+  brandParkScore: 5
   flexFeel: mid-stiff
   terrain: [all-mountain]
   mountingSystem: "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"

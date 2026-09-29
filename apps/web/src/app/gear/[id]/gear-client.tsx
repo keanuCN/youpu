@@ -73,6 +73,19 @@ export default function GearDetailPage({
           },
         ]
       : []),
+    ...(gear.categorySlug === "snowboard-binding" && gear.brand.toLowerCase() === "nidecker" && gear.specs.brandFlexScore != null
+      ? [
+          {
+            group: "Nidecker 官方评分",
+            fields: [
+              { key: "brandFlexScore", label: "品牌硬度", type: "number" as const, unit: "/5" },
+              { key: "brandResortScore", label: "雪场适应", type: "number" as const, unit: "/5" },
+              { key: "brandPowScore", label: "粉雪适应", type: "number" as const, unit: "/5" },
+              { key: "brandParkScore", label: "公园适应", type: "number" as const, unit: "/5" },
+            ],
+          },
+        ]
+      : []),
   ];
   const peers = relatedGear
     ? relatedGear

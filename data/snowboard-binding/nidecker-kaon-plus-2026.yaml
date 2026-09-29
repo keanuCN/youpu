@@ -8,6 +8,11 @@ one_liner: "中硬度双绑带全能款，配备 Multi-Disk 与无工具绑带�
 specs:
   entrySystem: strap
   bootCompatibility: "Multi-Disk 兼容常见 4 孔与 Channel；普通绑带雪鞋"
+  bindingSizeGuide: "Nidecker 官方商品页尺码：S EU 35–36；M 37–41；L 41.5–44.5；XL 45–49.5。"
+  brandFlexScore: 3
+  brandResortScore: 4
+  brandPowScore: 4
+  brandParkScore: 4
   flexFeel: mid-stiff
   terrain: [all-mountain]
   mountingSystem: "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"

@@ -8,6 +8,11 @@ one_liner: "Supermatic 轻量快速穿脱系列，侧重支撑、响应与快速
 specs:
   entrySystem: rear-entry
   bootCompatibility: "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋"
+  bindingSizeGuide: "Nidecker 官方商品页尺码：M EU 37.5–41；L 41.5–44；XL 44.5–47。"
+  brandFlexScore: 4
+  brandResortScore: 5
+  brandPowScore: 4
+  brandParkScore: 3
   flexFeel: stiff
   terrain: [all-mountain, freeride]
   mountingSystem: "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"
