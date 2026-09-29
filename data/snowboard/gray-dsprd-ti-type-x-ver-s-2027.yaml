@@ -12,6 +12,9 @@ specs:
   core: Wood Core
   scenes:
     - carving
+  sizeSpecs:
+    - { size: "152 ver.S", overallLength: 1520, effectiveEdge: 1360, contactLength: 1180, waistWidth: 236, sidecutRadii: "8800/8400/9400", sidecutOffset: -30, noseLength: 205, noseWidth: 296, noseHeight: 26, tailLength: 135, tailWidth: 276, tailHeight: 21, camber: 8, stanceWidth: "440–560", insertQty: "12+12", setback: 30, edge: "1.8 mm / 48 RCWL", sidewallAngle: "15°", sidewallColor: BLACK, base: "IS7500 Graphite", stiffness: "8.4/9.1/8.6" }
+    - { size: "161 ver.S", overallLength: 1610, effectiveEdge: 1430, contactLength: 1260, waistWidth: 260, sidecutRadii: "11800/11200/12600", sidecutOffset: -30, noseLength: 210, noseWidth: 309, noseHeight: 30.4, tailLength: 140, tailWidth: 294, tailHeight: 24.2, camber: 10, stanceWidth: "500–620", insertQty: "12+12", setback: 40, edge: "1.8 mm / 48 RCWL", sidewallAngle: "15°", sidewallColor: BLACK, base: "IS7500 Graphite", stiffness: "9.0/9.7/9.2" }
 images:
   - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/19_DSPRD%20Ti%20type-X%20verS/2627_19_DSPRD%20Ti%20type-X%20verS_main.png"
     kind: face
