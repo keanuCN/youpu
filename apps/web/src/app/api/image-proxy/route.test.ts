@@ -4,6 +4,48 @@ import { NextRequest } from "next/server";
 
 import { GET } from "./route";
 
+test("proxies only the verified GoPro WebP optimizer URL", async () => {
+  const originalFetch = globalThis.fetch;
+  let requestedUrl = "";
+  globalThis.fetch = async (input) => {
+    requestedUrl = String(input);
+    return new Response(new Uint8Array([1, 2, 3]), {
+      status: 200,
+      headers: { "Content-Type": "image/webp" },
+    });
+  };
+
+  try {
+    const source = new URL("https://gopro.com/_next/image");
+    source.searchParams.set(
+      "url",
+      "https://gopro.com/on/demandware.static/-/Sites-gopro-products/default/dw212f9f28/images/Product%20Images/cameras/CHDHX-131-master/plp-product-card-h13.png",
+    );
+    source.searchParams.set("w", "375");
+    source.searchParams.set("q", "80");
+    const request = new NextRequest(
+      `http://localhost:3000/api/image-proxy?url=${encodeURIComponent(source.toString())}`,
+      { headers: { Accept: "image/webp,image/*" } },
+    );
+    const response = await GET(request);
+
+    assert.equal(response.status, 200);
+    assert.equal(response.headers.get("content-type"), "image/webp");
+    assert.equal(new URL(requestedUrl).pathname, "/_next/image");
+
+    const arbitrarySource = new URL(source);
+    arbitrarySource.searchParams.set("url", "https://example.com/image.png");
+    const rejected = await GET(
+      new NextRequest(
+        `http://localhost:3000/api/image-proxy?url=${encodeURIComponent(arbitrarySource.toString())}`,
+      ),
+    );
+    assert.equal(rejected.status, 403);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
 test("streams AVIF responses from an approved image source", async () => {
   const originalFetch = globalThis.fetch;
   const body = new Uint8Array([0, 1, 2, 3, 4]);

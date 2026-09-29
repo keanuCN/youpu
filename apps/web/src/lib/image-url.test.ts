@@ -3,6 +3,7 @@ import test from "node:test";
 
 import {
   isAllowedImageUrl,
+  isAllowedRemoteImageUrl,
   preferHighResolutionProductImage,
   preferProductThumbnail,
   resolveImageUrl,
@@ -180,6 +181,40 @@ test("uses official Nordica WebP thumbnail widths only for verified product imag
   const optimizedSource = new URL(proxiedThumbnail.searchParams.get("url")!);
   assert.equal(optimizedSource.pathname, "/storage/thumbs/Product/640__resize__0A668400001_ENFORCER_89_FLAT.webp");
   assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
+});
+
+test("uses the verified GoPro WebP optimizer for the three catalog images only", () => {
+  const images = [
+    "https://gopro.com/on/demandware.static/-/Sites-gopro-products/default/dwd909d4f6/images/Product%20Images/cameras/CHDHX-111-master/compare-h11.png",
+    "https://gopro.com/on/demandware.static/-/Sites-gopro-products/default/dwd62f3260/images/Product%20Images/cameras/CHDHX-121-master/plp-product-card-h12.png",
+    "https://gopro.com/on/demandware.static/-/Sites-gopro-products/default/dw212f9f28/images/Product%20Images/cameras/CHDHX-131-master/plp-product-card-h13.png",
+  ];
+
+  for (const image of images) {
+    const thumbnail = new URL(preferProductThumbnail(image));
+    assert.equal(thumbnail.pathname, "/_next/image");
+    assert.equal(thumbnail.searchParams.get("url"), image);
+    assert.equal(thumbnail.searchParams.get("w"), "375");
+    assert.equal(thumbnail.searchParams.get("q"), "80");
+    assert.equal(isAllowedRemoteImageUrl(thumbnail.toString()), true);
+
+    const detail = new URL(preferHighResolutionProductImage(image));
+    assert.equal(detail.searchParams.get("w"), "1280");
+  }
+
+  const proxiedImage = `/api/image-proxy?url=${encodeURIComponent(images[2]!)}`;
+  const proxiedThumbnail = new URL(preferProductThumbnail(proxiedImage), "https://youpu.local");
+  const optimizedImage = new URL(proxiedThumbnail.searchParams.get("url")!);
+  assert.equal(optimizedImage.pathname, "/_next/image");
+  assert.equal(optimizedImage.searchParams.get("w"), "375");
+
+  const unverified = "https://gopro.com/on/demandware.static/-/Sites-gopro-products/default/other.png";
+  assert.equal(preferProductThumbnail(unverified), unverified);
+  const arbitraryOptimizer = new URL("https://gopro.com/_next/image");
+  arbitraryOptimizer.searchParams.set("url", "https://example.com/image.png");
+  arbitraryOptimizer.searchParams.set("w", "375");
+  arbitraryOptimizer.searchParams.set("q", "80");
+  assert.equal(isAllowedRemoteImageUrl(arbitraryOptimizer.toString()), false);
 });
 
 test("limits approved Decathlon f=<width>x0 thumbnails and preserves other URL data", () => {

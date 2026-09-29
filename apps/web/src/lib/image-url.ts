@@ -8,6 +8,11 @@ const VERIFIED_NORDICA_PRODUCT_IMAGES = new Set([
   "0A668400001_ENFORCER_89_FLAT",
   "0A548500001_SANTA_ANA_102_FLAT",
 ]);
+const VERIFIED_GOPRO_IMAGE_PATHS = new Set([
+  "/on/demandware.static/-/Sites-gopro-products/default/dwd909d4f6/images/Product%20Images/cameras/CHDHX-111-master/compare-h11.png",
+  "/on/demandware.static/-/Sites-gopro-products/default/dwd62f3260/images/Product%20Images/cameras/CHDHX-121-master/plp-product-card-h12.png",
+  "/on/demandware.static/-/Sites-gopro-products/default/dw212f9f28/images/Product%20Images/cameras/CHDHX-131-master/plp-product-card-h13.png",
+]);
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -40,6 +45,18 @@ export function preferHighResolutionProductImage(source: string): string {
       if (!proxiedSource) return source;
       image.searchParams.set("url", preferHighResolutionProductImage(proxiedSource));
       return `${image.pathname}${image.search}`;
+    }
+    if (
+      image.hostname === "gopro.com" &&
+      VERIFIED_GOPRO_IMAGE_PATHS.has(image.pathname) &&
+      image.search === "" &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const optimizer = new URL("https://gopro.com/_next/image");
+      optimizer.searchParams.set("url", image.toString());
+      optimizer.searchParams.set("w", "1280");
+      optimizer.searchParams.set("q", "80");
+      return optimizer.toString();
     }
     if (
       image.hostname === "www.rossignol.com" &&
@@ -84,6 +101,18 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       if (!proxiedSource) return source;
       image.searchParams.set("url", preferProductThumbnail(proxiedSource, widthLimit));
       return `${image.pathname}${image.search}`;
+    }
+    if (
+      image.hostname === "gopro.com" &&
+      VERIFIED_GOPRO_IMAGE_PATHS.has(image.pathname) &&
+      image.search === "" &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const optimizer = new URL("https://gopro.com/_next/image");
+      optimizer.searchParams.set("url", image.toString());
+      optimizer.searchParams.set("w", "375");
+      optimizer.searchParams.set("q", "80");
+      return optimizer.toString();
     }
     const isShopifyImage =
       image.pathname.includes("/cdn/shop/") ||
@@ -370,6 +399,32 @@ const REMOTE_IMAGE_RULES = [
 export function isAllowedRemoteImageUrl(source: string): boolean {
   try {
     const url = new URL(source);
+    if (url.hostname === "gopro.com" && url.pathname === "/_next/image") {
+      const nestedSource = url.searchParams.get("url");
+      const requestedWidth = url.searchParams.get("w");
+      if (
+        !nestedSource ||
+        url.searchParams.size !== 3 ||
+        (requestedWidth !== "375" && requestedWidth !== "1280") ||
+        url.searchParams.get("q") !== "80"
+      ) {
+        return false;
+      }
+      const original = new URL(nestedSource);
+      return (
+        original.protocol === "https:" &&
+        original.hostname === "gopro.com" &&
+        original.port === "" &&
+        original.username === "" &&
+        original.password === "" &&
+        original.search === "" &&
+        VERIFIED_GOPRO_IMAGE_PATHS.has(original.pathname) &&
+        url.protocol === "https:" &&
+        url.port === "" &&
+        url.username === "" &&
+        url.password === ""
+      );
+    }
     return (
       url.protocol === "https:" &&
       url.port === "" &&
