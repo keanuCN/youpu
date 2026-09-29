@@ -15,19 +15,19 @@ const CDN_IMAGE =
 test("limits Shopify product images to thumbnail width without changing detail images", () => {
   const largeImage = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=2880";
   const thumbnail = preferProductThumbnail(largeImage);
-  assert.equal(new URL(thumbnail).searchParams.get("width"), "800");
+  assert.equal(new URL(thumbnail).searchParams.get("width"), "640");
   assert.equal(new URL(thumbnail).searchParams.get("v"), "1");
   assert.equal(new URL(preferProductThumbnail(largeImage, 480)).searchParams.get("width"), "480");
 
   const unboundedShopifyImage = "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/board.png?v=1";
   const boundedShopifyImage = preferProductThumbnail(unboundedShopifyImage);
-  assert.equal(new URL(boundedShopifyImage).searchParams.get("width"), "800");
+  assert.equal(new URL(boundedShopifyImage).searchParams.get("width"), "640");
   assert.equal(new URL(boundedShopifyImage).searchParams.get("v"), "1");
 
   const proxiedImage = `/api/image-proxy?url=${encodeURIComponent(largeImage)}`;
   const proxiedThumbnail = preferProductThumbnail(proxiedImage);
   const proxiedUrl = new URL(proxiedThumbnail, "https://youpu.local");
-  assert.equal(new URL(proxiedUrl.searchParams.get("url")!).searchParams.get("width"), "800");
+  assert.equal(new URL(proxiedUrl.searchParams.get("url")!).searchParams.get("width"), "640");
 
   const alreadySmall = "https://us.yonex.com/cdn/shop/files/racket.webp?width=600";
   assert.equal(preferProductThumbnail(alreadySmall), alreadySmall);
@@ -279,7 +279,7 @@ test("uses the verified 416px CAPiTA card image while preserving detail resoluti
   }
 
   const unverifiedImage = images[0]!.replace("SB04-RESORT-TWIN-TOP", "unverified-image");
-  assert.equal(new URL(preferProductThumbnail(unverifiedImage)).searchParams.get("width"), "800");
+  assert.equal(new URL(preferProductThumbnail(unverifiedImage)).searchParams.get("width"), "640");
 });
 
 test("uses HEAD official ski thumbnails only for the four verified gallery images", () => {
@@ -380,7 +380,9 @@ test("uses the verified 416px Flow Fuse thumbnail only for its exact Shopify ass
   assert.equal(detail.searchParams.get("v"), "1788232288");
 
   const unverifiedVersion = image.replace("1788232288", "other-version");
-  assert.equal(preferProductThumbnail(unverifiedVersion), unverifiedVersion);
+  const unverifiedThumbnail = new URL(preferProductThumbnail(unverifiedVersion));
+  assert.equal(unverifiedThumbnail.searchParams.get("width"), "640");
+  assert.equal(unverifiedThumbnail.searchParams.get("v"), "other-version");
 });
 
 test("uses the verified SmartMarine 600px image only for the exact fishing rod", () => {

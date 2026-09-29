@@ -1,5 +1,6 @@
 const IMAGE_PROXY_PATH = "/api/image-proxy";
 const PRODUCT_THUMBNAIL_WIDTH = 800;
+const SHOPIFY_PRODUCT_THUMBNAIL_WIDTH = 640;
 const NORDICA_PRODUCT_IMAGE_WIDTHS = [56, 112, 168, 640, 1280];
 const VERIFIED_NORDICA_PRODUCT_IMAGES = new Set([
   "0A668100001_ENFORCER_104_FLAT",
@@ -286,8 +287,9 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
     if (isShopifyImage) {
       const requestedWidth = image.searchParams.get("width");
       const width = Number(requestedWidth);
-      if (requestedWidth === null || (Number.isFinite(width) && width > widthLimit)) {
-        image.searchParams.set("width", String(widthLimit));
+      const targetWidth = Math.min(widthLimit, SHOPIFY_PRODUCT_THUMBNAIL_WIDTH);
+      if (requestedWidth === null || (Number.isFinite(width) && width > targetWidth)) {
+        image.searchParams.set("width", String(targetWidth));
         return image.toString();
       }
     }
