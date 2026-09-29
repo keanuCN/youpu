@@ -31,6 +31,8 @@ export function SiteHeader() {
   const profile = me.profile;
   const [q, setQ] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
+  const [categoryOpen, setCategoryOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
 
   const unread = me.notifications.filter((n) => !n.read).length;
@@ -60,7 +62,7 @@ export function SiteHeader() {
 
       <div className="mx-auto flex h-14 max-w-[1400px] items-center gap-4 px-5 sm:px-8">
         {/* 移动端菜单 */}
-        <Sheet>
+        <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className="lg:hidden" aria-label="打开菜单">
               <Menu size={18} strokeWidth={1.5} />
@@ -87,7 +89,7 @@ export function SiteHeader() {
                 个人中心
               </Link>
             </nav>
-            <CategoryPanel />
+            <CategoryPanel onNavigate={() => setMobileMenuOpen(false)} />
           </SheetContent>
         </Sheet>
 
@@ -99,7 +101,7 @@ export function SiteHeader() {
 
         {/* 桌面导航 */}
         <nav className="ml-2 hidden items-center gap-1 lg:flex">
-          <Popover>
+          <Popover open={categoryOpen} onOpenChange={setCategoryOpen}>
             <PopoverTrigger asChild>
               <button
                 type="button"
@@ -110,8 +112,12 @@ export function SiteHeader() {
                 <ChevronDown size={13} strokeWidth={1.6} />
               </button>
             </PopoverTrigger>
-            <PopoverContent align="start" className="w-[min(92vw,860px)] rounded-none border-foreground p-0">
-              <CategoryPanel />
+            <PopoverContent
+              align="start"
+              onMouseLeave={() => setCategoryOpen(false)}
+              className="w-[min(92vw,860px)] rounded-none border-foreground p-0"
+            >
+              <CategoryPanel onNavigate={() => setCategoryOpen(false)} />
             </PopoverContent>
           </Popover>
           {NAV.map((n) => (
