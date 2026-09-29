@@ -10,18 +10,18 @@ specs:
   profileFamily: hybrid
   shape: Directional Twin / Hammerhead
   stanceSetback: 20
-  # 板长、有效刃长与腰宽来自 25/26 Snowboard Spec Finder 逐尺码记录（https://www.snow-spec.com/）；非厂商原始表，其他未核实尺寸不补录。
+  # 板长、有效刃长、腰宽、站距及两项侧切半径来自 25/26 Snowboard Spec Finder（https://www.snow-spec.com/），非厂商原始表；板头/板尾尺寸等未核实字段不补录。
   sizeSpecs:
-    - { size: "44N", variant: "窄版", overallLength: 1440, effectiveEdge: 1170, waistWidth: 234 }
-    - { size: "48N", variant: "窄版", overallLength: 1480, effectiveEdge: 1210, waistWidth: 238 }
-    - { size: "51N", variant: "窄版", overallLength: 1510, effectiveEdge: 1240, waistWidth: 240 }
-    - { size: "54N", variant: "窄版", overallLength: 1540, effectiveEdge: 1270, waistWidth: 244 }
-    - { size: "151", variant: "标准版", overallLength: 1510, effectiveEdge: 1240, waistWidth: 248 }
-    - { size: "154", variant: "标准版", overallLength: 1540, effectiveEdge: 1270, waistWidth: 250 }
-    - { size: "157", variant: "标准版", overallLength: 1570, effectiveEdge: 1300, waistWidth: 250 }
-    - { size: "162", variant: "标准版", overallLength: 1620, effectiveEdge: 1350, waistWidth: 252 }
-    - { size: "157W", variant: "宽版", overallLength: 1570, effectiveEdge: 1300, waistWidth: 254 }
-    - { size: "162W", variant: "宽版", overallLength: 1620, effectiveEdge: 1350, waistWidth: 256 }
+    - { size: "44N", variant: "窄版", overallLength: 1440, effectiveEdge: 1170, waistWidth: 234, sidecutRadii: "7.5/8.3", stanceWidth: "420 / 460 / 500 / 540 mm" }
+    - { size: "48N", variant: "窄版", overallLength: 1480, effectiveEdge: 1210, waistWidth: 238, sidecutRadii: "7.8/8.6", stanceWidth: "420 / 460 / 500 / 540 mm" }
+    - { size: "51N", variant: "窄版", overallLength: 1510, effectiveEdge: 1240, waistWidth: 240, sidecutRadii: "8.0/8.8", stanceWidth: "420 / 460 / 500 / 540 mm" }
+    - { size: "54N", variant: "窄版", overallLength: 1540, effectiveEdge: 1270, waistWidth: 244, sidecutRadii: "8.2/9.0", stanceWidth: "440 / 480 / 520 / 560 mm" }
+    - { size: "151", variant: "标准版", overallLength: 1510, effectiveEdge: 1240, waistWidth: 248, sidecutRadii: "8.0/8.8", stanceWidth: "480 / 520 / 560 / 600 mm" }
+    - { size: "154", variant: "标准版", overallLength: 1540, effectiveEdge: 1270, waistWidth: 250, sidecutRadii: "8.2/9.0", stanceWidth: "480 / 520 / 560 / 600 mm" }
+    - { size: "157", variant: "标准版", overallLength: 1570, effectiveEdge: 1300, waistWidth: 250, sidecutRadii: "8.4/9.2", stanceWidth: "480 / 520 / 560 / 600 mm" }
+    - { size: "162", variant: "标准版", overallLength: 1620, effectiveEdge: 1350, waistWidth: 252, sidecutRadii: "8.6/9.4", stanceWidth: "480 / 520 / 560 / 600 mm" }
+    - { size: "157W", variant: "宽版", overallLength: 1570, effectiveEdge: 1300, waistWidth: 254, sidecutRadii: "8.4/9.2", stanceWidth: "480 / 520 / 560 / 600 mm" }
+    - { size: "162W", variant: "宽版", overallLength: 1620, effectiveEdge: 1350, waistWidth: 256, sidecutRadii: "8.6/9.4", stanceWidth: "480 / 520 / 560 / 600 mm" }
   scenes:
     - carving
     - all-mountain

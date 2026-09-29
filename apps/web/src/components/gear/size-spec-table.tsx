@@ -81,7 +81,7 @@ export function SizeSpecTable({ gear }: { gear: GearItem }) {
       </div>
       <div
         ref={scrollRef}
-        aria-label="官方尺码参数，可横向滚动查看"
+        aria-label="尺码参数，可横向滚动查看"
         className="size-spec-scroll w-full max-w-full overflow-x-auto overscroll-x-contain"
         tabIndex={0}
       >
@@ -127,7 +127,7 @@ export function SizeSpecTable({ gear }: { gear: GearItem }) {
           <ChevronRight aria-hidden="true" className="size-5" />
         </button>
       </div>
-      <p className="mono-label mt-3">— 表示官方目录未列出；硬度顺序为板头 / 腰部 / 板尾。</p>
+      <p className="mono-label mt-3">— 表示当前记录未收录该项；不同季节或配置可能存在规格差异。硬度顺序为板头 / 腰部 / 板尾。</p>
     </section>
   );
 }
