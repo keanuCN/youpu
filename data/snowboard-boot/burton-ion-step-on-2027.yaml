@@ -8,6 +8,7 @@ one_liner: "官方档案型号；Speed Zone 系带与可调 BOA 压紧带，Step
 specs:
   lacingSystem: Speed Zone + BOA 压紧带
   bindingCompatibility: 仅与 Step On 固定器兼容
+  flex: "偏硬"
 images:
   - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920"
     kind: face

@@ -191,6 +191,28 @@ function enrichBootSpecsFromVerifiedSummary(gear: GearItem): GearItem {
       specs.terrain ??= "全山";
     }
   }
+  if (gear.brand.toLowerCase() === "burton") {
+    const model = gear.model.toLowerCase();
+    if (/ion/.test(model)) specs.flex ??= "偏硬";
+    else if (/moto/.test(model)) specs.flex ??= "偏软";
+    else if (/photon/.test(model)) specs.flex ??= "中等";
+  }
+  if (gear.brand.toLowerCase() === "k2") {
+    const model = gear.model.toLowerCase();
+    if (/maysis/.test(model)) {
+      specs.lacingSystem = "双区 BOA + Conda 后跟锁定";
+      specs.terrain ??= "自由滑/大山/自由式/粉雪";
+    } else if (/boundary/.test(model)) {
+      specs.lacingSystem = "双区 BOA 系带";
+      specs.terrain ??= "自由滑/大山/自由式/粉雪";
+    } else if (/raider/.test(model)) {
+      specs.terrain ??= "大山/粉雪";
+    } else if (/taro tamai snowsurfer rs/.test(model)) {
+      specs.lacingSystem = "双区 BOA Zonal 系带";
+      specs.flex ??= "偏软，可调";
+      specs.terrain ??= "自由滑/粉雪";
+    }
+  }
   if (gear.brand.toLowerCase() === "salomon") {
     const official = salomonSpecs[gear.model.toLowerCase()];
     if (official) {
