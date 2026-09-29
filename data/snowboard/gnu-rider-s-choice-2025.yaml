@@ -32,6 +32,14 @@ specs:
   scenes:
     - all-mountain
     - freestyle
+  sizeSpecs:
+    - { size: "151.5", effectiveEdge: 1130, noseWidth: 292, waistWidth: 251, tailWidth: 292, sidecutRadii: "7.9/8.2", stanceWidth: "514–635 mm", weightRange: "120–200 lb (54–91 kg)", setback: 0 }
+    - { size: "154.5", effectiveEdge: 1160, noseWidth: 293, waistWidth: 252, tailWidth: 293, sidecutRadii: "7.7/8.1", stanceWidth: "514–635 mm", weightRange: "130–210 lb (59–95 kg)", setback: 0 }
+    - { size: "155W", effectiveEdge: 1160, noseWidth: 307, waistWidth: 265, tailWidth: 307, sidecutRadii: "7.7/8.1", stanceWidth: "514–635 mm", weightRange: "130–220 lb (59–100 kg)", setback: 0 }
+    - { size: "157.5", effectiveEdge: 1190, noseWidth: 299, waistWidth: 255, tailWidth: 299, sidecutRadii: "7.8/8.2", stanceWidth: "514–635 mm", weightRange: "140–240 lb (64–109 kg)", setback: 0 }
+    - { size: "158W", effectiveEdge: 1190, noseWidth: 312, waistWidth: 268, tailWidth: 312, sidecutRadii: "7.8/8.2", stanceWidth: "514–635 mm", weightRange: "130–220 lb (59–100 kg)", setback: 0 }
+    - { size: "161.5", effectiveEdge: 1220, noseWidth: 302, waistWidth: 258, tailWidth: 302, sidecutRadii: "8.0/8.4", stanceWidth: "514–635 mm", weightRange: "140–240 lb (64–109 kg)", setback: 0 }
+    - { size: "162W", effectiveEdge: 1220, noseWidth: 313, waistWidth: 268, tailWidth: 313, sidecutRadii: "8.0/8.4", stanceWidth: "514–635 mm", weightRange: "140–250 lb (64–113 kg)", setback: 0 }
 editorial_scores:
   stability: 8
   response: 8
@@ -47,5 +55,5 @@ images:
     sort_order: 0
 data_source:
   kind: crawl
-  origin_url: https://www.blue-tomato.com/en-GB/product/Gnu-Riders+Choice+2025+Snowboard-729961/
+  origin_url: https://www.christysports.com/product/gnu-riders-choice-snowboard/8112126.html
 status: published
