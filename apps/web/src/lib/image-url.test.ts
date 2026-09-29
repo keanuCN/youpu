@@ -270,6 +270,34 @@ test("uses the verified VICTOR 640px racket image variant only for its exact pro
   assert.notEqual(preferProductThumbnail(otherVersion), thumbnail);
 });
 
+test("uses official 640px Union binding variants only for the verified image versions", () => {
+  const images = [
+    ["UN26_ATLAS_BLACK", "1785333183"],
+    ["UN26_ATLAS_PRO_BLACK", "1785333161"],
+    ["UN26_FORCE_BLACK", "1785333204"],
+    ["UN26_FORCE_CLASSIC_BLACK", "1785333201"],
+    ["UN26_LEGACY_BLACK", "1785333238"],
+    ["UN26_TRILOGY_BLACK", "1782986724"],
+    ["UN26_ULTRA_WOMEN_BLUE", "1785333221"],
+  ];
+
+  for (const [file, version] of images) {
+    const prefix = file === "UN26_TRILOGY_BLACK" ? "1/0656/0251/9280" : "1/0095/2254/4745";
+    const image = `https://cdn.shopify.com/s/files/${prefix}/files/${file}_2000x.jpg?v=${version}`;
+    const thumbnail = new URL(preferProductThumbnail(image));
+    assert.equal(thumbnail.pathname.endsWith(`${file}_640x.jpg`), true);
+    assert.equal(thumbnail.searchParams.get("v"), version);
+
+    const detail = new URL(preferHighResolutionProductImage(image));
+    assert.equal(detail.pathname.endsWith(`${file}_2000x.jpg`), true);
+    assert.equal(detail.searchParams.get("width"), "1600");
+  }
+
+  const changedVersion =
+    "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_BLACK_2000x.jpg?v=other-version";
+  assert.equal(preferProductThumbnail(changedVersion).includes("UN26_ATLAS_BLACK_640x.jpg"), false);
+});
+
 test("uses the verified 416px CAPiTA card image while preserving detail resolution", () => {
   const images = [
     "SB04-RESORT-TWIN-TOP.png?v=1776884550",

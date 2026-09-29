@@ -37,6 +37,34 @@ const VERIFIED_VERSIONED_PRODUCT_IMAGE_VARIANTS = new Map([
     "shop.au.victorsport.com/cdn/shop/products/82004_1_20211117175841_2048x.jpg?v=1644645157",
     "https://shop.au.victorsport.com/cdn/shop/products/82004_1_20211117175841_640x.jpg?v=1644645157",
   ],
+  [
+    "cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_BLACK_2000x.jpg?v=1785333183",
+    "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_BLACK_640x.jpg?v=1785333183",
+  ],
+  [
+    "cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_PRO_BLACK_2000x.jpg?v=1785333161",
+    "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_PRO_BLACK_640x.jpg?v=1785333161",
+  ],
+  [
+    "cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_FORCE_BLACK_2000x.jpg?v=1785333204",
+    "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_FORCE_BLACK_640x.jpg?v=1785333204",
+  ],
+  [
+    "cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_FORCE_CLASSIC_BLACK_2000x.jpg?v=1785333201",
+    "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_FORCE_CLASSIC_BLACK_640x.jpg?v=1785333201",
+  ],
+  [
+    "cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_LEGACY_BLACK_2000x.jpg?v=1785333238",
+    "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_LEGACY_BLACK_640x.jpg?v=1785333238",
+  ],
+  [
+    "cdn.shopify.com/s/files/1/0656/0251/9280/files/UN26_TRILOGY_BLACK_2000x.jpg?v=1782986724",
+    "https://cdn.shopify.com/s/files/1/0656/0251/9280/files/UN26_TRILOGY_BLACK_640x.jpg?v=1782986724",
+  ],
+  [
+    "cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ULTRA_WOMEN_BLUE_2000x.jpg?v=1785333221",
+    "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ULTRA_WOMEN_BLUE_640x.jpg?v=1785333221",
+  ],
 ]);
 const VERIFIED_FOLLOWS_THUMBNAIL_PATHS = new Set([
   "/follows.co.jp/pic-labo/limg/2526bc-r2-1a.jpg",
