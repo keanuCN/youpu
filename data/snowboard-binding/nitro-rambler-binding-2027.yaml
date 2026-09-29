@@ -9,6 +9,7 @@ specs:
   entrySystem: strap
   brandComfortScore: 7
   brandResponseScore: 5
+  bindingSizeGuide: "Nitro Rambler 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。"
   bootCompatibility: "Universal Mini Disc 兼容 2x4 与 Channel；适配常规绑带雪鞋"
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain]

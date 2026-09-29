@@ -9,6 +9,7 @@ specs:
   entrySystem: strap
   brandComfortScore: 9
   brandResponseScore: 8
+  bindingSizeGuide: "Nitro Team Pro 官方尺码：S/M US 男 5–10、女 5.5–10.5 / MP 23–28 / EU 36–43；M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14 / MP 29–32 / EU 44–48。官方区间有重叠，试穿确认。"
   bootCompatibility: "普通绑带雪鞋"
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freestyle]
