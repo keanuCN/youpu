@@ -640,6 +640,46 @@ test("limits approved Canyon Cloudinary widths while preserving transformation c
   );
 });
 
+test("uses measured 543px Canyon bike thumbnails only for verified Cloudinary images", () => {
+  const images: Array<{ source: string; thumbnail: string }> = [
+    {
+      source:
+        "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1779435706/2027_FULL_endurace_cf-7_4627_R129_P01_okspta",
+      thumbnail:
+        "https://dma.canyon.com/image/upload/w_543,c_fit/f_jpg/q_auto/v1779435706/2027_FULL_endurace_cf-7_4627_R129_P01_okspta",
+    },
+    {
+      source:
+        "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1777355662/2027_FULL_endurace_cf-7-di2_4421_R129_P01_oopfry",
+      thumbnail:
+        "https://dma.canyon.com/image/upload/w_543,c_fit/f_jpg/q_auto/v1777355662/2027_FULL_endurace_cf-7-di2_4421_R129_P01_oopfry",
+    },
+    {
+      source:
+        "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/b_rgb:F2F2F2/f_jpg/q_auto/v1777532962/2027_FULL_aeroad_cf-slx-7-di2_4531_R107_P01_zsqbop",
+      thumbnail:
+        "https://dma.canyon.com/image/upload/w_543,c_fit/b_rgb:F2F2F2/f_jpg/q_auto/v1777532962/2027_FULL_aeroad_cf-slx-7-di2_4531_R107_P01_zsqbop",
+    },
+    {
+      source:
+        "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1787554526/2027_FULL_spectral_cf-7_4380_M179_P08_P5_29_yyqkjb",
+      thumbnail:
+        "https://dma.canyon.com/image/upload/w_543,c_fit/f_jpg/q_auto/v1787554526/2027_FULL_spectral_cf-7_4380_M179_P08_P5_29_yyqkjb",
+    },
+  ];
+
+  for (const { source, thumbnail } of images) {
+    assert.equal(preferProductThumbnail(source), thumbnail);
+    assert.equal(preferHighResolutionProductImage(source), source);
+  }
+
+  const unverified = images[0]!.source.replace("endurace_cf-7_4627", "unverified-bike");
+  assert.equal(
+    preferProductThumbnail(unverified),
+    unverified.replace("w_1145", "w_800"),
+  );
+});
+
 test("limits approved Canyon Cloudinary URLs nested inside the image proxy", () => {
   const canyonImage =
     "https://dma.canyon.com/image/upload/c_fit,w_1600,h_645,f_jpg,q_auto/products/bike.jpg";
