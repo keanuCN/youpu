@@ -344,7 +344,7 @@ test("uses the verified 416px CAPiTA card image while preserving detail resoluti
   assert.equal(new URL(preferProductThumbnail(unverifiedImage)).searchParams.get("width"), "640");
 });
 
-test("uses HEAD official ski thumbnails only for the four verified gallery images", () => {
+test("uses HEAD official ski thumbnails only for the five verified gallery images", () => {
   const images = [
     {
       source: "https://cdn-mdb.head.com/CDN3/D/316485/1/1820x2428/easy-joy-r.webp",
@@ -372,6 +372,14 @@ test("uses HEAD official ski thumbnails only for the four verified gallery image
       compact:
         "https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/224x298/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
     },
+    {
+      source:
+        "https://cdn-mdb.head.com/CDN3/D/313365.SET_WO/4/1820x2428/worldcup-rebels-e-slr-without-binding.webp",
+      thumbnail:
+        "https://cdn-mdb.head.com/CDN3/D/313365.SET_WO/4/683x911/worldcup-rebels-e-slr-without-binding.webp",
+      compact:
+        "https://cdn-mdb.head.com/CDN3/D/313365.SET_WO/4/224x298/worldcup-rebels-e-slr-without-binding.webp",
+    },
   ];
 
   for (const { source, thumbnail, compact } of images) {
@@ -380,7 +388,7 @@ test("uses HEAD official ski thumbnails only for the four verified gallery image
     assert.equal(preferHighResolutionProductImage(source), source);
   }
 
-  const unverified = "https://cdn-mdb.head.com/CDN3/D/313365.SET_WO/4/1820x2428/worldcup-rebels-e-slr-without-binding.webp";
+  const unverified = "https://cdn-mdb.head.com/CDN3/D/313365.SET_WO/4/1820x2428/unverified-image.webp";
   assert.equal(preferProductThumbnail(unverified), unverified);
 });
 

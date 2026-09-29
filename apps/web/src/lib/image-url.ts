@@ -108,6 +108,13 @@ const VERIFIED_HEAD_IMAGE_VARIANTS = new Map([
       thumbnail: "/CDN3/D/313306.SET_31330602/5/683x911/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
     },
   ],
+  [
+    "/CDN3/D/313365.SET_WO/4/1820x2428/worldcup-rebels-e-slr-without-binding.webp",
+    {
+      compact: "/CDN3/D/313365.SET_WO/4/224x298/worldcup-rebels-e-slr-without-binding.webp",
+      thumbnail: "/CDN3/D/313365.SET_WO/4/683x911/worldcup-rebels-e-slr-without-binding.webp",
+    },
+  ],
 ]);
 const VERIFIED_GIANT_THUMBNAIL_PATHS = new Map([
   [
