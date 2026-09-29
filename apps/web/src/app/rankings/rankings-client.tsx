@@ -191,6 +191,7 @@ export default function RankingsPage() {
                     src={preferProductThumbnail(mediaUrl(r.gear)!, 800)}
                     alt={`${r.gear.brand} ${r.gear.model}`}
                     loading={i === 0 ? "eager" : "lazy"}
+                    fetchPriority={i === 0 ? "high" : undefined}
                     fallbackLabel={`${r.gear.brand} ${r.gear.model}`}
                     fallbackClassName="p-8"
                     className={cn(

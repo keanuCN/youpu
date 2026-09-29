@@ -165,6 +165,7 @@ export function GearCard({
               src={mediaSrc}
               alt={`${gear.brand} ${gear.model}`}
               loading={position === 0 && (from === "list" || from === "search") ? "eager" : "lazy"}
+              fetchPriority={position === 0 && (from === "list" || from === "search") ? "high" : undefined}
               fallbackLabel={`${gear.brand} ${gear.model}`}
               fallbackClassName="p-3"
               className={cn(
