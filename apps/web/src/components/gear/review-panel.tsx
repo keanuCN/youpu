@@ -187,7 +187,7 @@ export function ReviewPanel({
           <p className="mono-data text-[52px] leading-none tnum">{ratingReady ? summary.overall!.toFixed(1) : "—"}</p>
           {ratingReady ? <Stars value={avg} size={14} className="mt-2" /> : <p className="mono-label mt-2">暂无评分</p>}
           <p className="mono-label mt-2">
-            {ratingReady ? `${summary.count} ${showDemoRating ? "份参考样例" : "条实测评分"}` : "等待首批实测"}
+            {ratingReady ? `${summary.count} ${showDemoRating ? "份评分" : "条实测评分"}` : "等待首批实测"}
           </p>
         </div>
         <div className="space-y-1.5">
@@ -220,7 +220,7 @@ export function ReviewPanel({
       {showDemoNotes && gear.demoNotes?.length ? (
         <div className="border-y border-border py-5">
           <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
-            <p className="mono-label">规格推演参考 / REFERENCE NOTES</p>
+            <p className="mono-label">公开规格说明 / PRODUCT NOTES</p>
             <span className="mono-label text-muted-foreground">非用户投稿 · 不计入评论</span>
           </div>
           <div className="grid gap-3 sm:grid-cols-3">
