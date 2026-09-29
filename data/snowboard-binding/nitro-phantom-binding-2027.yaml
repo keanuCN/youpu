@@ -7,6 +7,8 @@ title: "Nitro Phantom 2027"
 one_liner: "Nitro 2026–27 全山地固定器，官方列出 Universal Mini Disc 与 Channel 兼容信息。"
 specs:
   entrySystem: strap
+  brandComfortScore: 10
+  brandResponseScore: 8
   bootCompatibility: "官方标注适配中宽及偏宽雪鞋；Universal Mini Disc 兼容 2x4 与 Channel"
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freeride]

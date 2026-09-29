@@ -7,6 +7,8 @@ title: "Nitro One 2027"
 one_liner: "Nitro 2026–27 自由式全山地固定器，官方定位为兼顾山地滑行的自由式型号。"
 specs:
   entrySystem: strap
+  brandComfortScore: 8
+  brandResponseScore: 6
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freestyle]
 editorial_scores:

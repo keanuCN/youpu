@@ -7,6 +7,8 @@ title: "Nitro Team Pro 2027"
 one_liner: "Team 系列高阶版本，官方以 Pro-caliber performance 定位。"
 specs:
   entrySystem: strap
+  brandComfortScore: 9
+  brandResponseScore: 8
   bootCompatibility: "普通绑带雪鞋"
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freestyle]

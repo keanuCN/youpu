@@ -7,6 +7,8 @@ title: "Nitro Phantom+ 2027"
 one_liner: "Nitro Phantom+ 高阶 freeride 固定器，列入 26-27 官方目录。"
 specs:
   entrySystem: strap
+  brandComfortScore: 10
+  brandResponseScore: 9
   bootCompatibility: "普通绑带雪鞋"
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freeride]

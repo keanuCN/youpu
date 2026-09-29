@@ -7,6 +7,8 @@ title: "Nitro Fate 女款 2027"
 one_liner: "Nitro 2026–27 女款全山地固定器，官方目录将其列为经典全山地型号。"
 specs:
   entrySystem: strap
+  brandComfortScore: 9
+  brandResponseScore: 7
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freestyle]
 editorial_scores:

@@ -62,7 +62,7 @@ export default function GearDetailPage({
   const dims = category?.scoreDims ?? [];
   const groups = [
     ...(category?.specTemplate ?? []),
-    ...(gear.categorySlug === "snowboard-boot" && gear.brand.toLowerCase() === "nitro" && gear.specs.brandComfortScore != null
+    ...((gear.categorySlug === "snowboard-boot" || gear.categorySlug === "snowboard-binding") && gear.brand.toLowerCase() === "nitro" && gear.specs.brandComfortScore != null
       ? [
           {
             group: "Nitro 官方评分",

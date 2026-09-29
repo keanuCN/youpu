@@ -7,6 +7,8 @@ title: "Nitro Talent 2027"
 one_liner: "Nitro 2026–27 男女通用固定器，品牌官方将其定位为普适型产品。"
 specs:
   entrySystem: strap
+  brandComfortScore: 7
+  brandResponseScore: 4
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freestyle]
 editorial_scores:

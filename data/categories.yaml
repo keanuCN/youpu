@@ -365,6 +365,24 @@
         compare: true
         compareDirection: context
         order: 25
+      - key: brandComfortScore
+        label: 品牌舒适度
+        group: 品牌官方评分
+        type: number
+        min: 1
+        max: 10
+        filter: false
+        compare: false
+        order: 60
+      - key: brandResponseScore
+        label: 品牌响应度
+        group: 品牌官方评分
+        type: number
+        min: 1
+        max: 10
+        filter: false
+        compare: false
+        order: 61
       - key: mountingSystem
         label: 安装系统
         group: 兼容性
@@ -446,6 +464,24 @@
         compare: true
         compareDirection: context
         order: 50
+      - key: brandComfortScore
+        label: 品牌舒适度
+        group: 品牌官方评分
+        type: number
+        min: 1
+        max: 10
+        filter: false
+        compare: false
+        order: 60
+      - key: brandResponseScore
+        label: 品牌响应度
+        group: 品牌官方评分
+        type: number
+        min: 1
+        max: 10
+        filter: false
+        compare: false
+        order: 61
     rating_dimensions:
       - { key: fit, label: 贴合舒适, weight: 0.3 }
       - { key: support, label: 支撑响应, weight: 0.25 }
