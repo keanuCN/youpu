@@ -432,6 +432,19 @@ test("uses the verified SmartMarine 600px image only for the exact fishing rod",
   assert.equal(preferProductThumbnail(unverifiedImage), unverifiedImage);
 });
 
+test("uses the measured 800px Decathlon SNB 100 image variant only for that exact product", () => {
+  const image =
+    "https://contents.mediadecathlon.com/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg";
+  const thumbnail = new URL(preferProductThumbnail(image));
+  assert.equal(thumbnail.searchParams.get("f"), "800x0");
+
+  assert.equal(preferHighResolutionProductImage(image), image);
+  assert.equal(preferProductThumbnail(image, 480), image);
+
+  const unrelated = image.replace("p2027365", "p2027366");
+  assert.equal(preferProductThumbnail(unrelated), unrelated);
+});
+
 test("limits approved Decathlon f=<width>x0 thumbnails and preserves other URL data", () => {
   const oversizedImage =
     "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto&quality=80";

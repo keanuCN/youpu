@@ -126,6 +126,8 @@ const VERIFIED_CANYON_CLOUDINARY_THUMBNAILS = new Map([
 const VERIFIED_FLOW_FUSE_THUMBNAIL_PATH =
   "/s/files/1/0674/9582/1405/files/High-_0024_FLOW_FUSE_WHITE_fusion.jpg";
 const VERIFIED_SMARTMARINE_THUMBNAIL_PATH = "/cdn/images/products/xlarge/8089900_a.jpg";
+const VERIFIED_DECATHLON_SNB_100_THUMBNAIL_PATH =
+  "/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg";
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -377,6 +379,15 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       }
     }
     if (image.hostname === "contents.mediadecathlon.com" && isAllowedRemoteImageUrl(image.toString())) {
+      if (
+        image.pathname === VERIFIED_DECATHLON_SNB_100_THUMBNAIL_PATH &&
+        image.search === "" &&
+        widthLimit >= 800 &&
+        widthLimit < 1600
+      ) {
+        image.searchParams.set("f", "800x0");
+        return image.toString();
+      }
       const requestedFormat = image.searchParams.get("f");
       const match = requestedFormat?.match(/^(\d+)x0$/);
       if (match) {
