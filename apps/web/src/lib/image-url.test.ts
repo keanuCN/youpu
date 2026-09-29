@@ -245,19 +245,29 @@ test("uses official small variants only for the verified Follows and Point produ
 });
 
 test("uses the verified 416px CAPiTA card image while preserving detail resolution", () => {
-  const image =
-    "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/SB04-RESORT-TWIN-TOP.png?v=1776884550&width=800";
-  const thumbnail = new URL(preferProductThumbnail(image));
-  assert.equal(thumbnail.searchParams.get("width"), "416");
-  assert.equal(thumbnail.searchParams.get("v"), "1776884550");
+  const images = [
+    "SB04-RESORT-TWIN-TOP.png?v=1776884550",
+    "RST02-AERONAUT-TOP.png?v=1776884582",
+    "RST01-SUPER-D.O.A.-TOP.png?v=1776884610",
+    "RST03-D.O.A.-TOP.png?v=1776884618",
+    "RST05-OUTERSPACE-LIVING-TOP.png?v=1776884612",
+    "RST06-SIDEWINDER-TOP.png?v=1776884613",
+  ].map((asset) => `https://cdn.shopify.com/s/files/1/0231/7366/0752/files/${asset}&width=800`);
 
-  const detail = new URL(preferHighResolutionProductImage(image));
-  assert.equal(detail.searchParams.get("width"), "1600");
-  assert.equal(detail.searchParams.get("v"), "1776884550");
+  for (const image of images) {
+    const thumbnail = new URL(preferProductThumbnail(image));
+    assert.equal(thumbnail.searchParams.get("width"), "416");
+    assert.equal(thumbnail.searchParams.get("v"), new URL(image).searchParams.get("v"));
 
-  const alreadySmall = image.replace("width=800", "width=320");
-  assert.equal(new URL(preferProductThumbnail(alreadySmall)).searchParams.get("width"), "320");
-  const unverifiedImage = image.replace("SB04-RESORT-TWIN-TOP", "unverified-image");
+    const detail = new URL(preferHighResolutionProductImage(image));
+    assert.equal(detail.searchParams.get("width"), "1600");
+    assert.equal(detail.searchParams.get("v"), new URL(image).searchParams.get("v"));
+
+    const alreadySmall = image.replace("width=800", "width=320");
+    assert.equal(preferProductThumbnail(alreadySmall), alreadySmall);
+  }
+
+  const unverifiedImage = images[0]!.replace("SB04-RESORT-TWIN-TOP", "unverified-image");
   assert.equal(new URL(preferProductThumbnail(unverifiedImage)).searchParams.get("width"), "800");
 });
 

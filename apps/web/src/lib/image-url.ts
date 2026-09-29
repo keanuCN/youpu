@@ -26,7 +26,14 @@ const VERIFIED_SMALL_PRODUCT_IMAGES = new Map([
 const VERIFIED_FOLLOWS_THUMBNAIL_PATHS = new Set([
   "/follows.co.jp/pic-labo/limg/2526bc-r2-1a.jpg",
 ]);
-const VERIFIED_CAPITA_THUMBNAIL_PATH = "/s/files/1/0231/7366/0752/files/SB04-RESORT-TWIN-TOP.png";
+const VERIFIED_CAPITA_THUMBNAIL_PATHS = new Set([
+  "/s/files/1/0231/7366/0752/files/SB04-RESORT-TWIN-TOP.png",
+  "/s/files/1/0231/7366/0752/files/RST02-AERONAUT-TOP.png",
+  "/s/files/1/0231/7366/0752/files/RST01-SUPER-D.O.A.-TOP.png",
+  "/s/files/1/0231/7366/0752/files/RST03-D.O.A.-TOP.png",
+  "/s/files/1/0231/7366/0752/files/RST05-OUTERSPACE-LIVING-TOP.png",
+  "/s/files/1/0231/7366/0752/files/RST06-SIDEWINDER-TOP.png",
+]);
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -139,7 +146,7 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
     }
     if (
       image.hostname === "cdn.shopify.com" &&
-      image.pathname === VERIFIED_CAPITA_THUMBNAIL_PATH &&
+      VERIFIED_CAPITA_THUMBNAIL_PATHS.has(image.pathname) &&
       widthLimit >= 416 &&
       widthLimit < 1600 &&
       isAllowedRemoteImageUrl(image.toString())
