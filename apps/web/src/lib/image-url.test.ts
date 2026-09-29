@@ -213,6 +213,17 @@ test("limits only square Specialized hero assets using their verified w/h parame
   assert.equal(boundedImage.searchParams.get("w"), "800");
   assert.equal(boundedImage.searchParams.get("h"), "800");
 
+  const widthTallImage = new URL(preferProductThumbnail(`${specializedImage}&w=640&h=1200`));
+  assert.equal(widthTallImage.searchParams.get("w"), "427");
+  assert.equal(widthTallImage.searchParams.get("h"), "800");
+  const wideImage = new URL(preferProductThumbnail(`${specializedImage}&w=1200&h=640`));
+  assert.equal(wideImage.searchParams.get("w"), "800");
+  assert.equal(wideImage.searchParams.get("h"), "427");
+  const oneDimension = `${specializedImage}&w=1200`;
+  assert.equal(preferProductThumbnail(oneDimension), oneDimension);
+  const malformedDimensions = `${specializedImage}&w=0&h=1200`;
+  assert.equal(preferProductThumbnail(malformedDimensions), malformedDimensions);
+
   const unrelatedPath = specializedImage.replace("_HERO-SQUARE", "_DETAIL");
   const unrelatedHost = specializedImage.replace("assets.specialized.com", "other.example");
   assert.equal(preferProductThumbnail(unrelatedPath), unrelatedPath);

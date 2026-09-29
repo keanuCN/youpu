@@ -137,12 +137,21 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       const requestedHeight = image.searchParams.get("h");
       const width = requestedWidth === null ? undefined : Number(requestedWidth);
       const height = requestedHeight === null ? undefined : Number(requestedHeight);
-      if (
-        (requestedWidth === null && requestedHeight === null) ||
-        (Number.isFinite(width) && Number.isFinite(height) && (width! > widthLimit || height! > widthLimit))
-      ) {
+      if (requestedWidth === null && requestedHeight === null) {
         image.searchParams.set("w", String(widthLimit));
         image.searchParams.set("h", String(widthLimit));
+        return image.toString();
+      }
+      if (
+        Number.isFinite(width) &&
+        Number.isFinite(height) &&
+        width! > 0 &&
+        height! > 0 &&
+        (width! > widthLimit || height! > widthLimit)
+      ) {
+        const scale = Math.min(1, widthLimit / width!, widthLimit / height!);
+        image.searchParams.set("w", String(Math.max(1, Math.round(width! * scale))));
+        image.searchParams.set("h", String(Math.max(1, Math.round(height! * scale))));
         return image.toString();
       }
     }
