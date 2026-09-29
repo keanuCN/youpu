@@ -243,7 +243,7 @@ test("bounds approved Amer Sports fit=bounds images without changing fit or qual
   assert.equal(preferProductThumbnail(otherPath), otherPath);
 });
 
-test("uses the officially referenced DJI Action 5 Pro small image variant only", () => {
+test("uses officially referenced DJI small image variants only for verified product IDs", () => {
   const action5Image =
     "https://se-cdn.djiits.com/tpc/uploads/spu/cover/e4781624a38ba00d1b4a8bc3a204bd97@ultra.png?campaign=product";
   const thumbnail = new URL(preferProductThumbnail(action5Image));
@@ -254,10 +254,11 @@ test("uses the officially referenced DJI Action 5 Pro small image variant only",
   assert.equal(thumbnail.searchParams.get("campaign"), "product");
 
   const action4Image = action5Image.replace(
-    "e4781624a38ba00d1b4a8bc3a204bd97",
-    "e1b8110f65a5a3321fe487f0a1a061ac",
+    "e4781624a38ba00d1b4a8bc3a204bd97@ultra",
+    "e1b8110f65a5a3321fe487f0a1a061ac@ultra",
   );
-  assert.equal(preferProductThumbnail(action4Image), action4Image);
+  const action4Thumbnail = new URL(preferProductThumbnail(action4Image));
+  assert.ok(action4Thumbnail.pathname.endsWith("e1b8110f65a5a3321fe487f0a1a061ac@retina_small.png"));
 
   const otherHost = action5Image.replace("se-cdn.djiits.com", "other.example");
   assert.equal(preferProductThumbnail(otherHost), otherHost);
