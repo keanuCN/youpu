@@ -26,6 +26,14 @@ specs:
   scenes:
     - carving
     - all-mountain
+  sizeSpecs:
+    - { size: "150N", overallLength: 1500, effectiveEdge: 1240, contactLength: 1182, noseLength: 209, noseWidth: 310, waistWidth: 246, tailLength: 109, tailWidth: 301, sidecutRadii: "6.2", stanceWidth: "500 mm", weightRange: "54–77 kg", boardWeight: "2700 g", setback: 40 }
+    - { size: "150", overallLength: 1500, effectiveEdge: 1240, contactLength: 1182, noseLength: 209, noseWidth: 325, waistWidth: 261, tailLength: 109, tailWidth: 316, sidecutRadii: "6.2", stanceWidth: "500 mm", weightRange: "54–77 kg", boardWeight: "2900 g", setback: 40 }
+    - { size: "154N", overallLength: 1540, effectiveEdge: 1280, contactLength: 1220, noseLength: 210, noseWidth: 313, waistWidth: 248, tailLength: 110, tailWidth: 304, sidecutRadii: "6.5", stanceWidth: "520 mm", weightRange: "59–82 kg", boardWeight: "2700 g", setback: 40 }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1280, contactLength: 1220, noseLength: 210, noseWidth: 328, waistWidth: 263, tailLength: 110, tailWidth: 319, sidecutRadii: "6.5", stanceWidth: "520 mm", weightRange: "59–82 kg", boardWeight: "3000 g", setback: 40 }
+    - { size: "158N", overallLength: 1580, effectiveEdge: 1320, contactLength: 1258, noseLength: 211, noseWidth: 317, waistWidth: 250, tailLength: 111, tailWidth: 308, sidecutRadii: "6.7", stanceWidth: "560 mm", weightRange: "67–91+ kg", boardWeight: "2800 g", setback: 40 }
+    - { size: "158", overallLength: 1580, effectiveEdge: 1320, contactLength: 1258, noseLength: 211, noseWidth: 332, waistWidth: 265, tailLength: 111, tailWidth: 323, sidecutRadii: "6.7", stanceWidth: "560 mm", weightRange: "67–91+ kg", boardWeight: "3200 g", setback: 40 }
+    - { size: "162", overallLength: 1620, effectiveEdge: 1360, contactLength: 1296, noseLength: 212, noseWidth: 335, waistWidth: 267, tailLength: 112, tailWidth: 326, sidecutRadii: "6.9", stanceWidth: "560 mm", weightRange: "77–100+ kg", boardWeight: "3300 g", setback: 40 }
 editorial_scores:
   stability: 8.8
   response: 9.2
