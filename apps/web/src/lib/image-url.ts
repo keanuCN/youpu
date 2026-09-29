@@ -19,12 +19,22 @@ const VERIFIED_SMALL_PRODUCT_IMAGES = new Map([
     "https://image1.shopserve.jp/follows.co.jp/pic-labo/limg/2526bc-r2-1a.jpg",
   ],
   [
+    "www.follows.co.jp/pic-labo/2627bc-dr-1.jpg",
+    "https://image1.shopserve.jp/follows.co.jp/pic-labo/limg/2627bc-dr-1.jpg",
+  ],
+  [
+    "www.follows.co.jp/pic-labo/2627bc-rxn-1.jpg",
+    "https://image1.shopserve.jp/follows.co.jp/pic-labo/limg/2627bc-rxn-1.jpg",
+  ],
+  [
     "www.point-official.shop/img/goods/L/4550133341434_1.jpg",
     "https://www.point-official.shop/img/goods/S/4550133341434_1.jpg",
   ],
 ]);
 const VERIFIED_FOLLOWS_THUMBNAIL_PATHS = new Set([
   "/follows.co.jp/pic-labo/limg/2526bc-r2-1a.jpg",
+  "/follows.co.jp/pic-labo/limg/2627bc-dr-1.jpg",
+  "/follows.co.jp/pic-labo/limg/2627bc-rxn-1.jpg",
 ]);
 const VERIFIED_CAPITA_THUMBNAIL_PATHS = new Set([
   "/s/files/1/0231/7366/0752/files/SB04-RESORT-TWIN-TOP.png",

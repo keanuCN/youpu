@@ -226,6 +226,17 @@ test("uses official small variants only for the verified Follows and Point produ
   assert.equal(isAllowedImageUrl(followsSmall), true);
   assert.equal(isAllowedRemoteImageUrl(`${followsSmall}?width=320`), false);
 
+  for (const image of [
+    "https://www.follows.co.jp/pic-labo/2627bc-dr-1.jpg",
+    "https://www.follows.co.jp/pic-labo/2627bc-rxn-1.jpg",
+  ]) {
+    const thumbnail = new URL(preferProductThumbnail(image));
+    assert.equal(thumbnail.hostname, "image1.shopserve.jp");
+    assert.equal(thumbnail.pathname.replace("/follows.co.jp/pic-labo/limg/", "/pic-labo/"), new URL(image).pathname);
+    assert.equal(isAllowedImageUrl(thumbnail.toString()), true);
+    assert.equal(preferHighResolutionProductImage(image), image);
+  }
+
   const point = "https://www.point-official.shop/img/goods/L/4550133341434_1.jpg";
   const pointSmall = "https://www.point-official.shop/img/goods/S/4550133341434_1.jpg";
   assert.equal(preferProductThumbnail(point), pointSmall);
