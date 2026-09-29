@@ -8,10 +8,11 @@ const isStaticExport = process.env.NEXT_OUTPUT === "export";
 export const dynamic = isStaticExport ? "force-static" : "force-dynamic";
 
 const ALLOWED_RASTER_TYPES = new Set(["image/png", "image/jpeg", "image/webp", "image/avif", "image/gif"]);
+const DEFAULT_IMAGE_ACCEPT = "image/avif,image/webp,image/apng,image/*,*/*;q=0.8";
 
-function upstreamHeaders(target: URL): HeadersInit {
+function upstreamHeaders(target: URL, accept: string | null): HeadersInit {
   const headers: Record<string, string> = {
-    Accept: "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+    Accept: accept || DEFAULT_IMAGE_ACCEPT,
     "User-Agent": "YoupuImageProxy/0.1",
   };
 
@@ -53,7 +54,7 @@ export async function GET(request: NextRequest) {
     const upstream = await fetch(target, {
       cache: "no-store",
       redirect: "error",
-      headers: upstreamHeaders(target),
+      headers: upstreamHeaders(target, request.headers.get("accept")),
     });
     if (!upstream.ok || !upstream.body) {
       return new Response("Upstream image unavailable", { status: upstream.status || 502 });
@@ -69,6 +70,7 @@ export async function GET(request: NextRequest) {
       headers: {
         "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800",
         "Content-Type": contentType,
+        Vary: "Accept",
         ...(upstream.headers.get("content-length")
           ? { "Content-Length": upstream.headers.get("content-length")! }
           : {}),
