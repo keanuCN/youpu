@@ -23,6 +23,9 @@ test("routes approved remote images through the local proxy in development", () 
     resolveImageUrl(burtonImage, true),
     `/api/image-proxy?url=${encodeURIComponent(burtonImage)}`,
   );
+
+  const commonsPhoto = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg/3840px-Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg";
+  assert.equal(resolveImageUrl(commonsPhoto, true), commonsPhoto);
 });
 
 test("keeps image URLs unchanged outside development", () => {

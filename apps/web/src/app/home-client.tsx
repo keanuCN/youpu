@@ -233,6 +233,13 @@ function Cover({
 
     async function loadHeroImage() {
       try {
+        if (new URL(selectedImage.src).hostname === "upload.wikimedia.org") {
+          // Commons blocks or throttles the local server-side proxy; let the
+          // browser load the image natively and keep the fixed-size spinner up.
+          setHeroImageSrc(selectedImage.src);
+          return;
+        }
+
         const response = await fetch(selectedImage.src, { signal: controller.signal });
         if (!response.ok || !response.body) throw new Error("Unable to read hero image");
 

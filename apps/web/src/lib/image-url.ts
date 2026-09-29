@@ -158,5 +158,11 @@ export function resolveImageUrl(source: string, useProxy = process.env.NODE_ENV 
     return source;
   }
 
+  // Commons photos load reliably as native browser images, while the local
+  // Node proxy can time out fetching Wikimedia. Keep them out of the proxy.
+  if (new URL(source).hostname === "upload.wikimedia.org") {
+    return source;
+  }
+
   return `${IMAGE_PROXY_PATH}?url=${encodeURIComponent(source)}`;
 }
