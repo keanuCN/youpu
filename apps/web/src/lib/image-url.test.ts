@@ -36,6 +36,7 @@ test("only allows local paths and approved remote image prefixes", () => {
   assert.equal(isAllowedImageUrl("https://g.cdn.meoo.host:444/uvayfd7jql5o/ai-images/file.png"), false);
   assert.equal(isAllowedImageUrl("https://us.yonex.com/cdn/shop/files/arc11-p.png"), true);
   assert.equal(isAllowedImageUrl("https://eu.burton.com/cdn/shop/files/1068819AI2_1.webp"), true);
+  assert.equal(isAllowedImageUrl("https://www.burton.com/cdn/shop/files/107121CA03_1.webp"), true);
   assert.equal(isAllowedImageUrl("https://eu.burton.com/private/other.webp"), false);
   assert.equal(isAllowedImageUrl("https://shop.au.victorsport.com/cdn/shop/products/racket.jpg"), true);
   assert.equal(isAllowedImageUrl("https://youpu.tos-cn-beijing.volces.com/review-images/rating-photo.webp"), true);
@@ -57,6 +58,10 @@ test("allows verified snowboard product image hosts and rejects unrelated paths"
     "https://glisshop-glisshop-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/product.jpeg",
     "https://www.nitrosnow.ca/cdn/shop/files/team-board.png",
     "https://salomon.jp/cdn/shop/files/L47924900_0_VIR_SIGHT_156.png",
+    "https://www.nitrosnowboards.com/cdn/shop/files/11SB11022-101-149_T1_Product-1.jpg",
+    "https://www.nitrosnowboards.com/cdn/shop/files/11SB11023-101-146_Optisym_Product-1.jpg",
+    "https://capitasnowboarding.com/cdn/shop/files/RST04-BOAF-148.png",
+    "https://neversummer.com/cdn/shop/files/ProtoFR_TOP2.webp",
   ];
   for (const image of verifiedSnowboardImages) assert.equal(isAllowedImageUrl(image), true, image);
 
@@ -106,6 +111,10 @@ test("allows verified snowboard product image hosts and rejects unrelated paths"
   );
   assert.equal(
     isAllowedImageUrl("https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://cdn.dam.salomon.com/952a91a1-77dc-4243-9975-b3b801009c2d/L49293700/PNG-2000px-max-72dpi.png"),
     true,
   );
   assert.equal(

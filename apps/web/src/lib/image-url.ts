@@ -6,6 +6,7 @@ const IMAGE_PROXY_PATH = "/api/image-proxy";
  */
 const REMOTE_IMAGE_RULES = [
   { host: "eu.burton.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "www.burton.com", pathPrefix: "/cdn/shop/files/" },
   { host: "www.arbor-collective.ca", pathPrefix: "/cdn/shop/files/" },
   { host: "www.evo.com", pathPrefix: "/cdn/shop/files/product-image-" },
   { host: "static1.squarespace.com", pathPrefix: "/static/5c969a2f7fdcb8b66429acbe/" },
@@ -15,6 +16,7 @@ const REMOTE_IMAGE_RULES = [
   { host: "original.accentuate.io", pathPrefix: "/6939308982453/" },
   { host: "glisshop-glisshop-fr-storage.omn.proximis.com", pathPrefix: "/Imagestorage/imagesSynchro/" },
   { host: "www.nitrosnow.ca", pathPrefix: "/cdn/shop/files/" },
+  { host: "www.nitrosnowboards.com", pathPrefix: "/cdn/shop/files/" },
   { host: "salomon.jp", pathPrefix: "/cdn/shop/files/" },
   { host: "cdn.amersports.com", pathPrefix: "/017bc76f-f5cc-42b8-a786-b49f00cdff46/" },
   { host: "cdn.amersports.com", pathPrefix: "/8fd450be-84c9-4bed-b255-b49f00cdfdd0/" },
@@ -79,7 +81,10 @@ const REMOTE_IMAGE_RULES = [
   { host: "cdn.dam.salomon.com", pathPrefix: "/d46f845f-a04e-4b4c-8419-b45100de593b/L45457300%2B/" },
   { host: "cdn.dam.salomon.com", pathPrefix: "/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/" },
   { host: "cdn.dam.salomon.com", pathPrefix: "/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/952a91a1-77dc-4243-9975-b3b801009c2d/L49293700/" },
   { host: "www.ogasaka-snowboard.com", pathPrefix: "/2025-img/" },
+  { host: "capitasnowboarding.com", pathPrefix: "/cdn/shop/files/RST04-BOAF-" },
+  { host: "neversummer.com", pathPrefix: "/cdn/shop/files/ProtoFR_TOP2.webp" },
   { host: "blauerboardshop.com", pathPrefix: "/cdn/shop/files/" },
   { host: "www.milosport.com", pathPrefix: "/cdn/shop/files/" },
   { host: "point-official.shop", pathPrefix: "/img/goods/" },

@@ -1,0 +1,36 @@
+slug: never-summer-proto-t3-fr-2027
+category: snowboard
+brand: never-summer
+model: Proto T3 FR
+year: 2027
+title: Never Summer Proto T3 FR 2027
+one_liner: Proto FR 的后续进化型号，定向三重正拱混合板型，定位高性能全山与自由滑；官方 flex 7/10、damp 8/10。
+specs:
+  length: 160
+  waistWidth: 258
+  profile: Triple Camber Hybrid
+  profileFamily: hybrid
+  shape: Directional
+  flex: 7
+  damping: 8
+  scenes:
+    - all-mountain
+    - powder
+  sizeSpecs:
+    - { size: "156", waistWidth: 256, effectiveEdge: 1180, noseWidth: 303, tailWidth: 298, sidecutRadii: "Vario 724" }
+    - { size: "160", waistWidth: 258, effectiveEdge: 1220, noseWidth: 305, tailWidth: 300, sidecutRadii: "Vario 759" }
+    - { size: "157X", waistWidth: 264, effectiveEdge: 1190, noseWidth: 311, tailWidth: 306, sidecutRadii: "Vario 724" }
+    - { size: "161X", waistWidth: 266, effectiveEdge: 1230, noseWidth: 314, tailWidth: 309, sidecutRadii: "Vario 758" }
+    - { size: "165X", waistWidth: 268, effectiveEdge: 1270, noseWidth: 316, tailWidth: 310, sidecutRadii: "Vario 795" }
+    - { size: "162DF", waistWidth: 284, effectiveEdge: 1220, noseWidth: 331, tailWidth: 326, sidecutRadii: "Vario 752" }
+    - { size: "166DF", waistWidth: 284, effectiveEdge: 1270, noseWidth: 331, tailWidth: 326, sidecutRadii: "Vario 795" }
+images:
+  - url: https://neversummer.com/cdn/shop/files/ProtoFR_TOP2.webp?v=1785340243&width=1200
+    kind: face
+    alt: Never Summer Proto T3 FR 2027 官方产品图
+    source: Never Summer 官方商品图（图片授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://neversummer.com/products/mens-proto-t3-fr-snowboard
+status: published

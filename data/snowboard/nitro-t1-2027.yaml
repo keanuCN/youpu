@@ -1,0 +1,40 @@
+slug: nitro-t1-2027
+category: snowboard
+brand: nitro
+model: T1
+year: 2027
+title: Nitro T1 2027
+one_liner: Nitro 公园与街式取向的双向板，Cam-Out Camber 配合强化刃边、Powercore II 和 Sintered EcoSpeed HD 底板，官方 flex 标注 7/10。
+specs:
+  length: 155
+  waistWidth: 250
+  stanceSetback: 0
+  profile: Cam-Out Camber
+  profileFamily: camber
+  shape: Twin
+  core: Powercore II
+  fiberglass: Bi-Lite Laminates
+  base: Sintered EcoSpeed HD
+  flex: 7
+  scenes:
+    - freestyle
+    - all-mountain
+  sizeSpecs:
+    - { size: "149", overallLength: 1490, waistWidth: 245, noseWidth: 287, tailWidth: 287, sidecutRadii: "7.4", stanceWidth: "460–580 mm", weightRange: "50–70 kg", setback: 0 }
+    - { size: "152", overallLength: 1520, waistWidth: 246, noseWidth: 288, tailWidth: 288, sidecutRadii: "7.8", stanceWidth: "480–600 mm", weightRange: "55–75 kg", setback: 0 }
+    - { size: "155", overallLength: 1550, waistWidth: 250, noseWidth: 292, tailWidth: 292, sidecutRadii: "8.2", stanceWidth: "480–600 mm", weightRange: "60–80 kg", setback: 0 }
+    - { size: "155MW", overallLength: 1550, waistWidth: 255, noseWidth: 296, tailWidth: 296, sidecutRadii: "8.2", stanceWidth: "480–600 mm", weightRange: "60–80 kg", setback: 0 }
+    - { size: "155W", overallLength: 1550, waistWidth: 264, noseWidth: 305, tailWidth: 305, sidecutRadii: "8.2", stanceWidth: "480–600 mm", weightRange: "60–80 kg", setback: 0 }
+    - { size: "158", overallLength: 1580, waistWidth: 252, noseWidth: 294, tailWidth: 294, sidecutRadii: "8.6", stanceWidth: "500–620 mm", weightRange: "65 kg+", setback: 0 }
+    - { size: "158MW", overallLength: 1580, waistWidth: 258, noseWidth: 299, tailWidth: 299, sidecutRadii: "8.6", stanceWidth: "500–620 mm", weightRange: "65 kg+", setback: 0 }
+    - { size: "158W", overallLength: 1580, waistWidth: 266, noseWidth: 307, tailWidth: 307, sidecutRadii: "8.6", stanceWidth: "500–620 mm", weightRange: "65 kg+", setback: 0 }
+images:
+  - url: https://www.nitrosnowboards.com/cdn/shop/files/11SB11022-101-149_T1_Product-1.jpg?v=1779091968&width=1200
+    kind: face
+    alt: Nitro T1 2027 官方商品图
+    source: Nitro 官方商品图（图片授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.nitrosnowboards.com/products/t1-snowboard-1
+status: published

@@ -1,0 +1,40 @@
+slug: burton-good-company-2027
+category: snowboard
+brand: burton
+model: Good Company Camber
+year: 2027
+title: Burton Good Company Camber 2027
+one_liner: 软弹取向的真双向公园自由式板，传统 Camber 提供边刃和弹性，The Channel 安装系统兼容主流固定器。
+specs:
+  length: 152
+  waistWidth: 250
+  profile: Camber
+  profileFamily: camber
+  shape: Twin
+  core: Super Fly 800G Core with Dualzone EGD
+  fiberglass: Triax
+  base: Sintered
+  scenes:
+    - freestyle
+    - all-mountain
+  sizeSpecs:
+    - { size: "135", effectiveEdge: 985, waistWidth: 235, noseWidth: 269.4, tailWidth: 269.4, sidecutRadii: "6.4", stanceWidth: "455 mm", weightRange: "36–54 kg" }
+    - { size: "140", effectiveEdge: 1035, waistWidth: 240, noseWidth: 276.2, tailWidth: 276.2, sidecutRadii: "6.8", stanceWidth: "480 mm", weightRange: "36–54 kg" }
+    - { size: "145", effectiveEdge: 1085, waistWidth: 245, noseWidth: 283, tailWidth: 283, sidecutRadii: "7.1", stanceWidth: "505 mm", weightRange: "45–68 kg" }
+    - { size: "148", effectiveEdge: 1115, waistWidth: 248, noseWidth: 287.1, tailWidth: 287.1, sidecutRadii: "7.3", stanceWidth: "530 mm", weightRange: "45–68 kg" }
+    - { size: "152", effectiveEdge: 1155, waistWidth: 250, noseWidth: 290.6, tailWidth: 290.6, sidecutRadii: "7.6", stanceWidth: "530 mm", weightRange: "54–82 kg" }
+    - { size: "155", effectiveEdge: 1185, waistWidth: 252, noseWidth: 293.7, tailWidth: 293.7, sidecutRadii: "7.8", stanceWidth: "560 mm", weightRange: "54–82 kg" }
+    - { size: "159", effectiveEdge: 1225, waistWidth: 255, noseWidth: 298.1, tailWidth: 298.1, sidecutRadii: "8.1", stanceWidth: "560 mm", weightRange: "68–91 kg" }
+    - { size: "155W", effectiveEdge: 1185, waistWidth: 260, noseWidth: 301.7, tailWidth: 301.7, sidecutRadii: "7.8", stanceWidth: "560 mm", weightRange: "54–82 kg" }
+    - { size: "159W", effectiveEdge: 1225, waistWidth: 263, noseWidth: 306.1, tailWidth: 306.1, sidecutRadii: "8.1", stanceWidth: "560 mm", weightRange: "68–91 kg" }
+    - { size: "162W", effectiveEdge: 1255, waistWidth: 268, noseWidth: 312.2, tailWidth: 312.2, sidecutRadii: "8.3", stanceWidth: "560 mm", weightRange: "82–118 kg+" }
+images:
+  - url: https://www.burton.com/cdn/shop/files/2359514FAF_1.webp?width=1200
+    kind: face
+    alt: Burton Good Company Camber 2027 官方商品图
+    source: Burton 官方商品图（图片授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951
+status: published

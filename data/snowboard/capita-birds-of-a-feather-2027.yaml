@@ -1,0 +1,47 @@
+slug: capita-birds-of-a-feather-2027
+category: snowboard
+brand: capita
+model: Birds of a Feather
+year: 2027
+title: CAPiTA Birds of a Feather 2027
+one_liner: 女款全山自由式真双向板，是 D.O.A. 系列的女性几何与 flex 调校版本；Resort V1 混合板型，厂商标注硬度 5.5。
+specs:
+  length: 148
+  effectiveEdge: 1171
+  waistWidth: 238
+  sidecut: 7.4
+  stanceSetback: 0
+  profile: Resort V1 + Flat Kick Tech
+  profileFamily: hybrid
+  shape: True Twin
+  core: P2 Superlight Core
+  fiberglass: Hybrid Carbon Holysheet BI/BI + Magic Bean Resin
+  base: Quantum Drive
+  flex: 5.5
+  scenes:
+    - all-mountain
+    - freestyle
+  sizeSpecs:
+    - { size: "138", effectiveEdge: 1084, waistWidth: 223, noseWidth: 267, tailWidth: 267, sidecutRadii: "6.4", stanceWidth: "457 mm", weightRange: "36–59 kg" }
+    - { size: "140", effectiveEdge: 1103, waistWidth: 226, noseWidth: 270, tailWidth: 270, sidecutRadii: "6.6", stanceWidth: "483 mm", weightRange: "38–61 kg" }
+    - { size: "142", effectiveEdge: 1119, waistWidth: 229, noseWidth: 273, tailWidth: 273, sidecutRadii: "6.8", stanceWidth: "483 mm", weightRange: "40–63 kg" }
+    - { size: "144", effectiveEdge: 1137, waistWidth: 232, noseWidth: 276, tailWidth: 276, sidecutRadii: "7.0", stanceWidth: "483 mm", weightRange: "43–65 kg" }
+    - { size: "146", effectiveEdge: 1151, waistWidth: 235, noseWidth: 279, tailWidth: 279, sidecutRadii: "7.2", stanceWidth: "508 mm", weightRange: "45–68 kg" }
+    - { size: "148", effectiveEdge: 1171, waistWidth: 238, noseWidth: 282, tailWidth: 282, sidecutRadii: "7.4", stanceWidth: "508 mm", weightRange: "47–70 kg" }
+    - { size: "150", effectiveEdge: 1187, waistWidth: 241, noseWidth: 285, tailWidth: 285, sidecutRadii: "7.6", stanceWidth: "533 mm", weightRange: "49–72 kg" }
+    - { size: "152", effectiveEdge: 1203, waistWidth: 244, noseWidth: 288, tailWidth: 288, sidecutRadii: "7.8", stanceWidth: "533 mm", weightRange: "52–74 kg" }
+    - { size: "154", effectiveEdge: 1219, waistWidth: 247, noseWidth: 292, tailWidth: 292, sidecutRadii: "8.0", stanceWidth: "533 mm", weightRange: "54–77 kg" }
+    - { size: "148W", effectiveEdge: 1177, waistWidth: 244, noseWidth: 287, tailWidth: 287, sidecutRadii: "7.6", stanceWidth: "508 mm", weightRange: "49–72 kg" }
+    - { size: "150W", effectiveEdge: 1191, waistWidth: 246, noseWidth: 290, tailWidth: 290, sidecutRadii: "7.7", stanceWidth: "533 mm", weightRange: "52–74 kg" }
+    - { size: "152W", effectiveEdge: 1207, waistWidth: 248, noseWidth: 292, tailWidth: 292, sidecutRadii: "7.8", stanceWidth: "533 mm", weightRange: "54–79 kg" }
+    - { size: "154W", effectiveEdge: 1223, waistWidth: 250, noseWidth: 295, tailWidth: 295, sidecutRadii: "7.9", stanceWidth: "533 mm", weightRange: "56–81 kg" }
+images:
+  - url: https://capitasnowboarding.com/cdn/shop/files/RST04-BOAF-148.png?v=1776969087&width=1200
+    kind: face
+    alt: CAPiTA Birds of a Feather 2027 官方商品图
+    source: CAPiTA 官方商品图（图片授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://capitasnowboarding.com/en-ca/products/capita-birds-of-a-feather-womens-snowboard-2027
+status: published

@@ -1,0 +1,40 @@
+slug: ogasaka-fc-s-2026
+category: snowboard
+brand: ogasaka
+model: FC-S
+year: 2026
+title: OGASAKA FC-S 2026
+one_liner: FC 系列中的专家级高速刻滑款，通过较硬 flex、碳片补强和浅侧切强调弯中加速与高速稳定；本档案对应官方 25–26 季。
+specs:
+  length: 159
+  effectiveEdge: 1340
+  waistWidth: 255
+  stanceSetback: 32
+  profile: Camber
+  profileFamily: camber
+  shape: Directional Semi-Hammerhead
+  core: OGK2 Core
+  fiberglass: Glass Fiber + Carbon Sheet Wide
+  base: Sintered Graphite
+  scenes:
+    - carving
+    - all-mountain
+  sizeSpecs:
+    - { size: "150", effectiveEdge: 1250, overallLength: 1500, noseWidth: 292, waistWidth: 241, tailWidth: 288, sidecutRadii: "7.0 / 7.8 / 8.2", stanceWidth: "500 mm", setback: 30 }
+    - { size: "156", effectiveEdge: 1310, overallLength: 1560, noseWidth: 305, waistWidth: 254, tailWidth: 301, sidecutRadii: "8.0 / 8.6 / 9.1", stanceWidth: "540 mm", setback: 31 }
+    - { size: "159", effectiveEdge: 1340, overallLength: 1590, noseWidth: 308, waistWidth: 255, tailWidth: 304, sidecutRadii: "8.0 / 8.6 / 9.2", stanceWidth: "560 mm", setback: 32 }
+    - { size: "162", effectiveEdge: 1370, overallLength: 1620, noseWidth: 310, waistWidth: 257, tailWidth: 306, sidecutRadii: "8.4 / 8.9 / 9.5", stanceWidth: "560 mm", setback: 33 }
+    - { size: "165", effectiveEdge: 1400, overallLength: 1650, noseWidth: 308, waistWidth: 260, tailWidth: 304, sidecutRadii: "9.6 / 10.3 / 11.3", stanceWidth: "580 mm", setback: 34 }
+    - { size: "157W", effectiveEdge: 1320, overallLength: 1570, noseWidth: 312, waistWidth: 260, tailWidth: 308, sidecutRadii: "7.8 / 8.4 / 9.0", stanceWidth: "560 mm", setback: 31 }
+    - { size: "160W", effectiveEdge: 1350, overallLength: 1600, noseWidth: 313, waistWidth: 262, tailWidth: 309, sidecutRadii: "8.4 / 9.0 / 9.5", stanceWidth: "560 mm", setback: 32 }
+    - { size: "163W", effectiveEdge: 1380, overallLength: 1630, noseWidth: 314, waistWidth: 266, tailWidth: 310, sidecutRadii: "9.3 / 10.1 / 10.8", stanceWidth: "560 mm", setback: 33 }
+images:
+  - url: https://www.ogasaka-snowboard.com/2025-img/09_fc-s_spec.png
+    kind: face
+    alt: OGASAKA FC-S 2026 官方产品规格图
+    source: OGASAKA 官方商品页素材（图片授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.ogasaka-snowboard.com/product_25_09_fc-s.html
+status: published
