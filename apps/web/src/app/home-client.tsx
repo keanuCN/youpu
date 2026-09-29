@@ -218,81 +218,25 @@ function Cover({
   liveCategoryNames: string;
 }) {
   const [heroImage, setHeroImage] = useState<(typeof HERO_IMAGE_POOL)[number] | null>(null);
-  const [heroImageSrc, setHeroImageSrc] = useState<string | null>(null);
   const [heroLoaded, setHeroLoaded] = useState(false);
   const [heroFailed, setHeroFailed] = useState(false);
-  const [heroProgress, setHeroProgress] = useState({ loaded: 0, total: 0 });
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * HERO_IMAGE_POOL.length);
     const selectedImage = HERO_IMAGE_POOL[randomIndex] ?? HERO_IMAGE_POOL[0];
-    const controller = new AbortController();
-    let objectUrl: string | null = null;
-    let cancelled = false;
     setHeroImage(selectedImage);
-
-    async function loadHeroImage() {
-      try {
-        if (new URL(selectedImage.src).hostname === "upload.wikimedia.org") {
-          // Commons blocks or throttles the local server-side proxy; let the
-          // browser load the image natively and keep the fixed-size spinner up.
-          setHeroImageSrc(selectedImage.src);
-          return;
-        }
-
-        const response = await fetch(selectedImage.src, { signal: controller.signal });
-        if (!response.ok || !response.body) throw new Error("Unable to read hero image");
-
-        const total = Number(response.headers.get("content-length")) || 0;
-        const reader = response.body.getReader();
-        const chunks: Uint8Array[] = [];
-        let loaded = 0;
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
-          if (!value) continue;
-          chunks.push(value);
-          loaded += value.byteLength;
-          if (!cancelled) setHeroProgress({ loaded, total });
-        }
-
-        if (cancelled) return;
-        const imageBytes = new Uint8Array(loaded);
-        let offset = 0;
-        for (const chunk of chunks) {
-          imageBytes.set(chunk, offset);
-          offset += chunk.byteLength;
-        }
-        objectUrl = URL.createObjectURL(new Blob([imageBytes.buffer], { type: response.headers.get("content-type") ?? "image/jpeg" }));
-        setHeroImageSrc(objectUrl);
-      } catch {
-        if (!cancelled && !controller.signal.aborted) {
-          // 若浏览器或托管环境不允许 fetch 读取跨域图片，退回原生图片加载；占位层仍保留到图片解码完成。
-          setHeroImageSrc(selectedImage.src);
-        }
-      }
-    }
-
-    void loadHeroImage();
-    return () => {
-      cancelled = true;
-      controller.abort();
-      if (objectUrl) URL.revokeObjectURL(objectUrl);
-    };
   }, []);
-
-  const progressPercent = heroProgress.total > 0
-    ? Math.min(100, Math.round((heroProgress.loaded / heroProgress.total) * 100))
-    : null;
 
   return (
     <section className="relative border-b border-foreground">
       <div className="grid lg:grid-cols-[1.15fr_1fr]">
         <div className="relative order-2 min-h-[320px] overflow-hidden bg-muted lg:order-1 lg:min-h-[560px]">
-          {heroImageSrc && heroImage && (
+          {heroImage && (
             <img
-              src={heroImageSrc}
+              src={heroImage.src}
               alt={heroImage.alt}
+              loading="eager"
+              fetchPriority="high"
               onLoad={() => setHeroLoaded(true)}
               onError={() => setHeroFailed(true)}
               className={`plate absolute inset-0 h-full w-full object-cover transition-[opacity,filter,transform] duration-700 ${heroLoaded ? "opacity-100" : "opacity-0"}`}
@@ -306,13 +250,6 @@ function Cover({
                     <div className="dot-spinner__dot" key={index} />
                   ))}
                 </div>
-                <p className="mono-data mt-4 h-4 text-[11px] text-muted-foreground tnum">
-                  {progressPercent !== null
-                  ? `${progressPercent}%`
-                  : heroProgress.loaded > 0
-                      ? formatImageBytes(heroProgress.loaded)
-                      : ""}
-                </p>
               </div>
             </div>
           )}
@@ -378,12 +315,6 @@ function Cover({
       </div>
     </section>
   );
-}
-
-function formatImageBytes(bytes: number): string {
-  return bytes >= 1024 * 1024
-    ? `${(bytes / (1024 * 1024)).toFixed(1)} MB`
-    : `${Math.max(1, Math.round(bytes / 1024))} KB`;
 }
 
 function useLiveCategoryCounts(): Record<string, number> {
