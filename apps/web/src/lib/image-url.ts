@@ -83,6 +83,10 @@ const DJI_SMALL_IMAGE_VARIANTS = new Map([
     "/tpc/uploads/spu/cover/e4781624a38ba00d1b4a8bc3a204bd97@ultra.png",
     "/tpc/uploads/spu/cover/e4781624a38ba00d1b4a8bc3a204bd97@retina_small.png",
   ],
+  [
+    "/tpc/uploads/spu/cover/12bba4939cd4f341e741cdf5d2c8d9b0@ultra.png",
+    "/tpc/uploads/spu/cover/12bba4939cd4f341e741cdf5d2c8d9b0@retina_small.png",
+  ],
 ]);
 
 /** AI 素材只用于装饰性页面，不作为商品详情的商品实拍图。 */

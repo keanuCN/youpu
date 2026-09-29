@@ -461,6 +461,12 @@ test("uses officially referenced DJI small image variants only for verified prod
   const action4Thumbnail = new URL(preferProductThumbnail(action4Image));
   assert.ok(action4Thumbnail.pathname.endsWith("e1b8110f65a5a3321fe487f0a1a061ac@retina_small.png"));
 
+  const action6Image =
+    "https://se-cdn.djiits.com/tpc/uploads/spu/cover/12bba4939cd4f341e741cdf5d2c8d9b0@ultra.png?format=webp";
+  const action6Thumbnail = new URL(preferProductThumbnail(action6Image));
+  assert.ok(action6Thumbnail.pathname.endsWith("12bba4939cd4f341e741cdf5d2c8d9b0@retina_small.png"));
+  assert.equal(action6Thumbnail.searchParams.get("format"), "webp");
+
   const otherHost = action5Image.replace("se-cdn.djiits.com", "other.example");
   assert.equal(preferProductThumbnail(otherHost), otherHost);
 
