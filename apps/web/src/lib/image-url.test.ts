@@ -78,6 +78,47 @@ test("limits approved Salomon DAM URLs nested inside the image proxy", () => {
   assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
 });
 
+test("limits approved Canyon Cloudinary widths while preserving transformation components", () => {
+  const canyonImage =
+    "https://dma.canyon.com/image/upload/c_fit,w_1600,h_645,f_jpg,q_auto/products/bike.jpg";
+  const thumbnail = preferProductThumbnail(canyonImage);
+  assert.equal(
+    thumbnail,
+    "https://dma.canyon.com/image/upload/c_fit,w_800,h_645,f_jpg,q_auto/products/bike.jpg",
+  );
+
+  const smallerImage = "https://dma.canyon.com/image/upload/c_fit,w_600,h_645,f_jpg,q_auto/products/bike.jpg";
+  assert.equal(preferProductThumbnail(smallerImage), smallerImage);
+  assert.equal(
+    preferProductThumbnail(canyonImage, 480),
+    "https://dma.canyon.com/image/upload/c_fit,w_480,h_645,f_jpg,q_auto/products/bike.jpg",
+  );
+
+  const withoutWidth = "https://dma.canyon.com/image/upload/c_fit,h_645,f_jpg,q_auto/products/bike.jpg";
+  assert.equal(preferProductThumbnail(withoutWidth), withoutWidth);
+  assert.equal(
+    preferProductThumbnail("https://other.example/image/upload/c_fit,w_1600,h_645/products/bike.jpg"),
+    "https://other.example/image/upload/c_fit,w_1600,h_645/products/bike.jpg",
+  );
+  assert.equal(
+    preferProductThumbnail("https://dma.canyon.com/products/bike.jpg?width=1600"),
+    "https://dma.canyon.com/products/bike.jpg?width=1600",
+  );
+});
+
+test("limits approved Canyon Cloudinary URLs nested inside the image proxy", () => {
+  const canyonImage =
+    "https://dma.canyon.com/image/upload/c_fit,w_1600,h_645,f_jpg,q_auto/products/bike.jpg";
+  const proxiedImage = `/api/image-proxy?url=${encodeURIComponent(canyonImage)}&source=product`;
+  const proxiedThumbnail = new URL(preferProductThumbnail(proxiedImage), "https://youpu.local");
+
+  assert.equal(
+    proxiedThumbnail.searchParams.get("url"),
+    "https://dma.canyon.com/image/upload/c_fit,w_800,h_645,f_jpg,q_auto/products/bike.jpg",
+  );
+  assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
+});
+
 test("routes approved remote images through the local proxy in development", () => {
   assert.equal(
     resolveImageUrl(CDN_IMAGE, true),

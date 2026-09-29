@@ -66,6 +66,28 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
         return image.toString();
       }
     }
+    if (
+      image.hostname === "dma.canyon.com" &&
+      image.pathname.includes("/image/upload/") &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      let changed = false;
+      const pathname = image.pathname
+        .split("/")
+        .map((component) =>
+          component.replace(/(^|,)w_(\d+)(?=,|$)/g, (match, separator: string, value: string) => {
+            const width = Number(value);
+            if (width <= widthLimit) return match;
+            changed = true;
+            return `${separator}w_${widthLimit}`;
+          }),
+        )
+        .join("/");
+      if (changed) {
+        image.pathname = pathname;
+        return image.toString();
+      }
+    }
     return source;
   } catch {
     return source;
