@@ -37,6 +37,7 @@ import {
   type AdminReport,
   type AdminModerationRating,
 } from '../lib/api';
+import { preferAdminListThumbnail } from '../lib/image-url';
 import { visibleAdminSections, type AdminSection } from '../lib/admin-navigation';
 import {
   clearAdminSession,
@@ -411,6 +412,18 @@ function formatPrice(product: Pick<AdminProductSummary, 'priceMin' | 'priceMax' 
   return min && max && min !== max ? `${min}–${max}` : min || max;
 }
 
+function withOptimizedListCovers(response: AdminProductListResponse): AdminProductListResponse {
+  return {
+    ...response,
+    items: response.items.map((product) => ({
+      ...product,
+      coverImage: product.coverImage
+        ? { ...product.coverImage, url: preferAdminListThumbnail(product.coverImage.url) }
+        : null,
+    })),
+  };
+}
+
 function formatCompactNumber(value: number): string {
   return new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 1 }).format(value);
 }
@@ -753,7 +766,7 @@ export function AdminApp() {
             pageSize: 50,
           })}`,
         );
-        if (alive) setProducts(response);
+        if (alive) setProducts(withOptimizedListCovers(response));
       } catch (error) {
         if (alive) setNotice({ kind: 'error', text: getErrorText(error) });
       }
@@ -828,7 +841,7 @@ export function AdminApp() {
       callAdmin<AdminCategoryRecord[]>('/categories'),
     ]);
     setDashboard(nextDashboard);
-    setProducts(nextProducts);
+    setProducts(withOptimizedListCovers(nextProducts));
     setBrands(nextBrands);
     setCategories(nextCategories);
   }
