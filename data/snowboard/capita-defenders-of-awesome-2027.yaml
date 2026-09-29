@@ -25,6 +25,23 @@ specs:
   scenes:
     - all-mountain
     - freestyle
+  sizeSpecs:
+    - { size: "148", overallLength: 1480, effectiveEdge: 1177, noseWidth: 287, waistWidth: 244, tailWidth: 287, sidecutRadii: "7.6", stanceWidth: "508 mm", weightRange: "40–68 kg" }
+    - { size: "150", overallLength: 1500, effectiveEdge: 1191, noseWidth: 290, waistWidth: 246, tailWidth: 290, sidecutRadii: "7.7", stanceWidth: "533 mm", weightRange: "45–68 kg" }
+    - { size: "152", overallLength: 1520, effectiveEdge: 1207, noseWidth: 292, waistWidth: 248, tailWidth: 292, sidecutRadii: "7.8", stanceWidth: "533 mm", weightRange: "49–68 kg" }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1223, noseWidth: 295, waistWidth: 250, tailWidth: 295, sidecutRadii: "7.9", stanceWidth: "533 mm", weightRange: "54–81 kg" }
+    - { size: "156", overallLength: 1560, effectiveEdge: 1234, noseWidth: 298, waistWidth: 252, tailWidth: 298, sidecutRadii: "8.0", stanceWidth: "559 mm", weightRange: "59–86 kg" }
+    - { size: "158", overallLength: 1580, effectiveEdge: 1256, noseWidth: 300, waistWidth: 254, tailWidth: 300, sidecutRadii: "8.1", stanceWidth: "559 mm", weightRange: "63–90 kg" }
+    - { size: "160", overallLength: 1600, effectiveEdge: 1271, noseWidth: 304, waistWidth: 257, tailWidth: 304, sidecutRadii: "8.2", stanceWidth: "584 mm", weightRange: "72–99 kg" }
+    - { size: "162", overallLength: 1620, effectiveEdge: 1287, noseWidth: 307, waistWidth: 259, tailWidth: 307, sidecutRadii: "8.3", stanceWidth: "584 mm", weightRange: "81–108 kg" }
+    - { size: "164", overallLength: 1640, effectiveEdge: 1301, noseWidth: 309, waistWidth: 261, tailWidth: 309, sidecutRadii: "8.4", stanceWidth: "584 mm", weightRange: "86–111 kg" }
+    - { size: "151W", overallLength: 1510, effectiveEdge: 1170, noseWidth: 297, waistWidth: 255, tailWidth: 297, sidecutRadii: "8.38", stanceWidth: "533 mm", weightRange: "49–68 kg" }
+    - { size: "153W", overallLength: 1530, effectiveEdge: 1186, noseWidth: 299, waistWidth: 257, tailWidth: 299, sidecutRadii: "8.0", stanceWidth: "533 mm", weightRange: "54–81 kg" }
+    - { size: "155W", overallLength: 1550, effectiveEdge: 1206, noseWidth: 302, waistWidth: 258, tailWidth: 302, sidecutRadii: "8.1", stanceWidth: "559 mm", weightRange: "59–86 kg" }
+    - { size: "157W", overallLength: 1570, effectiveEdge: 1239, noseWidth: 305, waistWidth: 260, tailWidth: 305, sidecutRadii: "8.17", stanceWidth: "559 mm", weightRange: "63–90 kg" }
+    - { size: "159W", overallLength: 1590, effectiveEdge: 1259, noseWidth: 307, waistWidth: 261, tailWidth: 307, sidecutRadii: "8.2", stanceWidth: "559 mm", weightRange: "68–95 kg" }
+    - { size: "161W", overallLength: 1610, effectiveEdge: 1281, noseWidth: 309, waistWidth: 262, tailWidth: 309, sidecutRadii: "8.3", stanceWidth: "584 mm", weightRange: "72–99 kg" }
+    - { size: "163W", overallLength: 1630, effectiveEdge: 1297, noseWidth: 311, waistWidth: 263, tailWidth: 311, sidecutRadii: "8.4", stanceWidth: "584 mm", weightRange: "77–106 kg" }
 editorial_scores:
   stability: 7.9
   response: 8.0
@@ -40,5 +57,5 @@ images:
     sort_order: 0
 data_source:
   kind: crawl
-  origin_url: https://capitasnowboarding.com/products/capita-d-o-a-mens-snowboard-2027
+  origin_url: https://jp.capitasnowboarding.com/products/capita-d-o-a-mens-snowboard-2027
 status: published

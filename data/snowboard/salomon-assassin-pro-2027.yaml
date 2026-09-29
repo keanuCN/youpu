@@ -12,10 +12,21 @@ specs:
   profileFamily: hybrid
   shape: Directional Twin
   core: Ghost Green Core / Popster Core
+  fiberglass: BA MD fiberglass, 30% bio-based resin
+  base: Sintered EG
+  bindingInserts: 4×2
   scenes:
     - all-mountain
     - freestyle
     - powder
+  sizeSpecs:
+    - { size: "150", overallLength: 1500, effectiveEdge: 1130, contactLength: 1040, noseLength: 235, noseWidth: 291, waistWidth: 248, tailWidth: 291, sidecutRadii: "7.3", stanceWidth: "540 mm", maxStance: 616, bindingSize: "S/M", weightRange: "50–70 kg" }
+    - { size: "153", overallLength: 1530, effectiveEdge: 1155, contactLength: 1065, noseLength: 237, noseWidth: 295, waistWidth: 251, tailWidth: 295, sidecutRadii: "7.5", stanceWidth: "550 mm", maxStance: 626, bindingSize: "S/M", weightRange: "55–75 kg" }
+    - { size: "156", overallLength: 1560, effectiveEdge: 1180, contactLength: 1090, noseLength: 240, noseWidth: 298, waistWidth: 253, tailWidth: 298, sidecutRadii: "7.7", stanceWidth: "560 mm", maxStance: 636, bindingSize: "S/M", weightRange: "55–85 kg" }
+    - { size: "158W", overallLength: 1580, effectiveEdge: 1195, contactLength: 1105, noseLength: 243, noseWidth: 309, waistWidth: 263, tailWidth: 309, sidecutRadii: "8.0", stanceWidth: "570 mm", maxStance: 646, bindingSize: "M/L", weightRange: "65–95 kg" }
+    - { size: "159", overallLength: 1590, effectiveEdge: 1205, contactLength: 1115, noseLength: 243, noseWidth: 301, waistWidth: 255, tailWidth: 301, sidecutRadii: "7.9", stanceWidth: "570 mm", maxStance: 646, bindingSize: "M/L", weightRange: "65–90 kg" }
+    - { size: "162", overallLength: 1620, effectiveEdge: 1230, contactLength: 1140, noseLength: 245, noseWidth: 305, waistWidth: 258, tailWidth: 305, sidecutRadii: "8.1", stanceWidth: "580 mm", maxStance: 656, bindingSize: "M/L", weightRange: "70–105 kg" }
+    - { size: "163W", overallLength: 1630, effectiveEdge: 1240, contactLength: 1150, noseLength: 246, noseWidth: 313, waistWidth: 266, tailWidth: 313, sidecutRadii: "8.2", stanceWidth: "580 mm", maxStance: 656, bindingSize: "M/L", weightRange: "70–105 kg" }
 images:
   - url: "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p"
     kind: face
@@ -24,6 +35,6 @@ images:
     sort_order: 0
 data_source:
   kind: official
-  origin_url: https://www.salomon.com/en-gb/product/assassin-pro-li1301
+  origin_url: https://salomon.com.au/products/assassin-pro-1
   snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
 status: published

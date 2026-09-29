@@ -22,6 +22,14 @@ specs:
   fiberglass: PURE MEGACARBON MARINE GRADE EPOXY RESIN
   base: MEGADRIVE XT BASE
   flex: 6.5
+  sizeSpecs:
+    - { size: "156", overallLength: 1560, effectiveEdge: 1197, noseWidth: 297, waistWidth: 256, tailWidth: 295, sidecutRadii: "8.2/7.8/7.6", stanceWidth: "559 mm", weightRange: "59–86 kg" }
+    - { size: "159", overallLength: 1590, effectiveEdge: 1221, noseWidth: 300, waistWidth: 259, tailWidth: 299, sidecutRadii: "8.4/8.0/7.8", stanceWidth: "559 mm", weightRange: "63–90 kg" }
+    - { size: "162", overallLength: 1620, effectiveEdge: 1245, noseWidth: 304, waistWidth: 262, tailWidth: 303, sidecutRadii: "8.6/8.2/8.0", stanceWidth: "584 mm", weightRange: "68–95 kg" }
+    - { size: "157W", overallLength: 1570, effectiveEdge: 1205, noseWidth: 305, waistWidth: 264, tailWidth: 303, sidecutRadii: "8.25/7.85/7.7", stanceWidth: "559 mm", weightRange: "63–90 kg" }
+    - { size: "161W", overallLength: 1610, effectiveEdge: 1237, noseWidth: 310, waistWidth: 267, tailWidth: 309, sidecutRadii: "8.5/8.1/8.0", stanceWidth: "584 mm", weightRange: "68–95 kg" }
+    - { size: "165W", overallLength: 1650, effectiveEdge: 1269, noseWidth: 313, waistWidth: 270, tailWidth: 312, sidecutRadii: "8.8/8.4/8.2", stanceWidth: "584 mm", weightRange: "72–99 kg" }
+    - { size: "169W", overallLength: 1690, effectiveEdge: 1301, noseWidth: 318, waistWidth: 274, tailWidth: 317, sidecutRadii: "9.0/8.6/8.5", stanceWidth: "584 mm", weightRange: "77–104 kg" }
   scenes:
     - all-mountain
     - powder
@@ -40,5 +48,5 @@ images:
     sort_order: 0
 data_source:
   kind: crawl
-  origin_url: https://capitasnowboarding.com/products/capita-mega-death-mens-snowboard-2027
+  origin_url: https://jp.capitasnowboarding.com/products/capita-mega-death-mens-snowboard-2027
 status: published
