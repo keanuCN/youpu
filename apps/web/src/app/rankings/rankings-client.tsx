@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { GEAR } from "@/data/boards";
 import { CATEGORIES, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { getCategoryProducts, resolveContentSource } from "@/lib/content";
+import { preferProductThumbnail } from "@/lib/image-url";
 import { hasEditorialScores, hasMedia, mediaUrl } from "@/lib/gear-state";
 import { rankRows } from "@/lib/domain";
 import { fmtCompact } from "@/lib/format";
@@ -187,7 +188,7 @@ export default function RankingsPage() {
               <div className="aspect-[4/3] overflow-hidden bg-secondary">
                 {hasMedia(r.gear) && mediaUrl(r.gear) ? (
                   <SafeImage
-                    src={mediaUrl(r.gear)}
+                    src={preferProductThumbnail(mediaUrl(r.gear)!, 800)}
                     alt={`${r.gear.brand} ${r.gear.model}`}
                     loading="lazy"
                     fallbackLabel={`${r.gear.brand} ${r.gear.model}`}

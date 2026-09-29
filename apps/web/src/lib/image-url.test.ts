@@ -11,6 +11,7 @@ test("limits Shopify product images to thumbnail width without changing detail i
   const thumbnail = preferProductThumbnail(largeImage);
   assert.equal(new URL(thumbnail).searchParams.get("width"), "800");
   assert.equal(new URL(thumbnail).searchParams.get("v"), "1");
+  assert.equal(new URL(preferProductThumbnail(largeImage, 480)).searchParams.get("width"), "480");
 
   const unboundedShopifyImage = "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/board.png?v=1";
   const boundedShopifyImage = preferProductThumbnail(unboundedShopifyImage);

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { isAiGeneratedImageUrl } from "@/lib/image-url";
+import { isAiGeneratedImageUrl, preferProductThumbnail } from "@/lib/image-url";
 import { SafeImage } from "./safe-image";
 import type { GalleryShot } from "@/types";
 
@@ -49,7 +49,7 @@ export function Gallery({
               )}
             >
               <SafeImage
-                src={s.url}
+                src={preferProductThumbnail(s.url)}
                 alt=""
                 loading="lazy"
                 fallbackLabel={`${alt} · ${s.label}`}

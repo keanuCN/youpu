@@ -8,6 +8,7 @@ import { toast } from "sonner";
 import { getGear } from "@/data/boards";
 import { SafeImage } from "@/components/gear/safe-image";
 import { getCompareProducts, resolveContentSource } from "@/lib/content";
+import { preferProductThumbnail } from "@/lib/image-url";
 import { DOCK_MAX, clearDock, removeFromDock, useCurrentUser } from "@/lib/store";
 import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
@@ -99,7 +100,7 @@ export function CompareDock() {
             <div key={g.id} className="group relative flex shrink-0 items-center gap-2 border border-border bg-card py-1.5 pr-6 pl-1.5">
               <Link href={`/gear/${g.id}`} className="flex items-center gap-2">
                 <SafeImage
-                  src={g.hero}
+                  src={preferProductThumbnail(g.hero, 480)}
                   alt=""
                   loading="lazy"
                   fallbackLabel={`${g.brand} ${g.model}`}
