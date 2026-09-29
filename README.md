@@ -182,7 +182,7 @@ UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@e
 | `pnpm es:reindex` | ES 全量重建 |
 | `pnpm typecheck` / `pnpm build` | 全仓类型检查 / 构建 |
 
-> ⚠️ `next dev` 运行期间不要跑 `pnpm build`：两者共用 `.next` 目录会互相破坏（页面会 500）。
+> Web 开发模式使用独立的 `apps/web/.next-dev`，生产构建使用 `apps/web/.next`，二者不会覆盖彼此的 CSS/静态资源。
 
 ## 前端页面（apps/web）
 

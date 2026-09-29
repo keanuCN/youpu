@@ -9,6 +9,9 @@ if (isStaticExport && isApiContent) {
 const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ["@youpu/schema"],
+  // Keep dev artifacts isolated from production builds so `next build` cannot
+  // replace the CSS/chunks currently served by `next dev`.
+  distDir: process.env.NODE_ENV === "development" ? ".next-dev" : ".next",
   // 静态导出（内测站部署用）：纯前端产物交给 nginx，无需 Node 运行时
   ...(isStaticExport
     ? {
