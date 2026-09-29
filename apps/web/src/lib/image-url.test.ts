@@ -336,6 +336,24 @@ test("uses official 300x200 Giant thumbnails only for the verified bike images",
       thumbnail:
         "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/qrpefgqfjrzq6x21nwsw/MY26XTCAdvanced291_ColorAAbyssBlack_Bronze.jpg",
     },
+    {
+      source:
+        "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80/ln09xatfxrvyqelva1lt/MY26DefyAdvanced2_ColorAAbyssBlack.jpg",
+      thumbnail:
+        "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/ln09xatfxrvyqelva1lt/MY26DefyAdvanced2_ColorAAbyssBlack.jpg",
+    },
+    {
+      source:
+        "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80/jtismbbz7rrw6bsjelem/MY26TCRAdvancedPro0-AXS_ColorACarbon.jpg",
+      thumbnail:
+        "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/jtismbbz7rrw6bsjelem/MY26TCRAdvancedPro0-AXS_ColorACarbon.jpg",
+    },
+    {
+      source:
+        "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/skym90dx4rx42jofovsh/MY24TranceXAdvanced0_ColorABlueDragonfly.jpg",
+      thumbnail:
+        "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/skym90dx4rx42jofovsh/MY24TranceXAdvanced0_ColorABlueDragonfly.jpg",
+    },
   ];
 
   for (const { source, thumbnail } of images) {

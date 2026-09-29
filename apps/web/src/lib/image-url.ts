@@ -84,6 +84,18 @@ const VERIFIED_GIANT_THUMBNAIL_PATHS = new Map([
     "/b_white%2Cc_pad%2Ch_600%2Cq_80%2Cw_800/qrpefgqfjrzq6x21nwsw/MY26XTCAdvanced291_ColorAAbyssBlack_Bronze.jpg",
     "/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/qrpefgqfjrzq6x21nwsw/MY26XTCAdvanced291_ColorAAbyssBlack_Bronze.jpg",
   ],
+  [
+    "/b_white%2Cc_pad%2Ch_400%2Cq_80/ln09xatfxrvyqelva1lt/MY26DefyAdvanced2_ColorAAbyssBlack.jpg",
+    "/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/ln09xatfxrvyqelva1lt/MY26DefyAdvanced2_ColorAAbyssBlack.jpg",
+  ],
+  [
+    "/b_white%2Cc_pad%2Ch_400%2Cq_80/jtismbbz7rrw6bsjelem/MY26TCRAdvancedPro0-AXS_ColorACarbon.jpg",
+    "/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/jtismbbz7rrw6bsjelem/MY26TCRAdvancedPro0-AXS_ColorACarbon.jpg",
+  ],
+  [
+    "/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/skym90dx4rx42jofovsh/MY24TranceXAdvanced0_ColorABlueDragonfly.jpg",
+    "/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/skym90dx4rx42jofovsh/MY24TranceXAdvanced0_ColorABlueDragonfly.jpg",
+  ],
 ]);
 const VERIFIED_CANYON_THUMBNAIL_PATH =
   "/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw07984cc9/images/full/full_2023_/2023/full_2023_3170_neuron-cf-8_sr-bk_P5.png";
