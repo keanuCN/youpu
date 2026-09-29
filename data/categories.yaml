@@ -25,6 +25,37 @@
       price: 0.1
   spec_schema:
     fields:
+      - key: sizeSpecs
+        label: 官方尺码参数
+        group: 官方尺码表
+        type: nested
+        itemSchema:
+          size: { type: text, label: 尺码 }
+          overallLength: { type: number, label: 板长 }
+          effectiveEdge: { type: number, label: 有效刃长 }
+          contactLength: { type: number, label: 接雪长度 }
+          waistWidth: { type: number, label: 板腰宽 }
+          sidecutRadii: { type: text, label: 侧切半径组合 }
+          sidecutOffset: { type: number, label: 侧切偏移 }
+          noseLength: { type: number, label: 板头长度 }
+          noseWidth: { type: number, label: 板头宽度 }
+          noseHeight: { type: number, label: 板头高度 }
+          tailLength: { type: number, label: 板尾长度 }
+          tailWidth: { type: number, label: 板尾宽度 }
+          tailHeight: { type: number, label: 板尾高度 }
+          camber: { type: number, label: Camber }
+          stanceWidth: { type: text, label: 站距范围 }
+          insertQty: { type: text, label: 固定器孔位 }
+          setback: { type: number, label: 站位后移 }
+          edge: { type: text, label: 钢刃 }
+          sidewallAngle: { type: text, label: 侧墙角度 }
+          sidewallColor: { type: text, label: 侧墙颜色 }
+          base: { type: text, label: 滑行面 }
+          stiffness: { type: text, label: 硬度 N/W/T }
+        filter: false
+        compare: false
+        order: 5
+
       # ── 尺寸与形状 ──
       - key: length
         label: 长度

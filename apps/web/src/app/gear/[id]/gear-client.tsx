@@ -14,6 +14,7 @@ import { FlexBar, ScoreMark, SceneTags, Stars } from "@/components/gear/primitiv
 import { RADAR_COLORS, RadarChart } from "@/components/gear/radar";
 import { ReviewPanel } from "@/components/gear/review-panel";
 import { SpecTable } from "@/components/gear/spec-table";
+import { SizeSpecTable } from "@/components/gear/size-spec-table";
 import { SectionHead } from "@/components/layout/section-head";
 import { reviewCount, userRating } from "@/data/boards";
 import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
@@ -101,6 +102,7 @@ export default function GearDetailPage({
         <div>
           <SectionHead index="02" title="完整参数" titleEn="Specifications" desc={`按 ${category?.name ?? ""} 品类的统一模板录入，缺测项显示 —。`} />
           <FitGuideTable guide={gear.fitGuide} />
+          <SizeSpecTable gear={gear} />
           <SpecTable gear={gear} groups={groups} />
         </div>
         <div>

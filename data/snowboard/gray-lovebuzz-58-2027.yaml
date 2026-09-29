@@ -15,6 +15,8 @@ specs:
     - all-mountain
     - powder
     - carving
+  sizeSpecs:
+    - { size: "58", overallLength: 1580, effectiveEdge: 1240, contactLength: 1180, waistWidth: 254, sidecutRadii: "9900/8900/9500", sidecutOffset: -80, noseLength: 280, noseWidth: 286, noseHeight: 48.7, tailLength: 120, tailWidth: 282, tailHeight: 20.4, camber: 7, stanceWidth: "500–620", insertQty: "12+12", setback: 40, edge: "1.8 mm stainless", sidewallAngle: "25°", sidewallColor: BLACK, base: "P-TEX 3000 Graphite", stiffness: "7.5/8.5/8.0" }
 images:
   - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/11_LOVEBUZZ%2058/2627_11_LOVEBUZZ%2058_main.png"
     kind: face

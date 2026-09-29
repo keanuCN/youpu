@@ -12,6 +12,7 @@
     "prisma:migrate": "prisma migrate deploy",
     "seed": "tsx src/seed/run.ts",
     "seed:product": "tsx src/seed/sync-one-product.ts",
+    "seed:category-schema": "tsx src/seed/sync-one-category-schema.ts",
     "tos:images:plan": "tsx src/seed/migrate-product-images.ts plan",
     "tos:images:apply": "tsx src/seed/migrate-product-images.ts apply",
     "validate:data": "tsx src/seed/validate.ts",
