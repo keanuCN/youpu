@@ -26,6 +26,7 @@ const VERIFIED_SMALL_PRODUCT_IMAGES = new Map([
 const VERIFIED_FOLLOWS_THUMBNAIL_PATHS = new Set([
   "/follows.co.jp/pic-labo/limg/2526bc-r2-1a.jpg",
 ]);
+const VERIFIED_CAPITA_THUMBNAIL_PATH = "/s/files/1/0231/7366/0752/files/SB04-RESORT-TWIN-TOP.png";
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -135,6 +136,20 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
     ) {
       const verifiedThumbnail = VERIFIED_SMALL_PRODUCT_IMAGES.get(`${image.hostname}${image.pathname}`);
       if (verifiedThumbnail) return verifiedThumbnail;
+    }
+    if (
+      image.hostname === "cdn.shopify.com" &&
+      image.pathname === VERIFIED_CAPITA_THUMBNAIL_PATH &&
+      widthLimit >= 416 &&
+      widthLimit < 1600 &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const requestedWidth = image.searchParams.get("width");
+      const width = requestedWidth === null ? undefined : Number(requestedWidth);
+      if (requestedWidth === null || (Number.isFinite(width) && width! > 416)) {
+        image.searchParams.set("width", "416");
+        return image.toString();
+      }
     }
     const isShopifyImage =
       image.pathname.includes("/cdn/shop/") ||

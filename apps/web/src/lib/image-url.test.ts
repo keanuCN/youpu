@@ -244,6 +244,23 @@ test("uses official small variants only for the verified Follows and Point produ
   assert.equal(thumbnailProxy.searchParams.get("source"), "product");
 });
 
+test("uses the verified 416px CAPiTA card image while preserving detail resolution", () => {
+  const image =
+    "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/SB04-RESORT-TWIN-TOP.png?v=1776884550&width=800";
+  const thumbnail = new URL(preferProductThumbnail(image));
+  assert.equal(thumbnail.searchParams.get("width"), "416");
+  assert.equal(thumbnail.searchParams.get("v"), "1776884550");
+
+  const detail = new URL(preferHighResolutionProductImage(image));
+  assert.equal(detail.searchParams.get("width"), "1600");
+  assert.equal(detail.searchParams.get("v"), "1776884550");
+
+  const alreadySmall = image.replace("width=800", "width=320");
+  assert.equal(new URL(preferProductThumbnail(alreadySmall)).searchParams.get("width"), "320");
+  const unverifiedImage = image.replace("SB04-RESORT-TWIN-TOP", "unverified-image");
+  assert.equal(new URL(preferProductThumbnail(unverifiedImage)).searchParams.get("width"), "800");
+});
+
 test("limits approved Decathlon f=<width>x0 thumbnails and preserves other URL data", () => {
   const oversizedImage =
     "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto&quality=80";
