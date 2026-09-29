@@ -76,6 +76,7 @@ async function overlaySnowboardSeeds(items: ProductListItem[]): Promise<ProductL
       if (!file.endsWith(".yaml")) continue;
       const seed = parse(await readFile(join(seedDir, file), "utf8")) as {
         slug: string;
+        one_liner?: string;
         specs: Record<string, unknown>;
         images?: Array<{ url: string }>;
       };
@@ -83,6 +84,7 @@ async function overlaySnowboardSeeds(items: ProductListItem[]): Promise<ProductL
       if (index === undefined) throw new Error(`公开目录快照缺少${category}商品：${seed.slug}`);
       merged[index] = {
         ...merged[index]!,
+        oneLiner: seed.one_liner ?? merged[index]!.oneLiner,
         coverUrl: seed.images?.[0]?.url ?? null,
         specs: seed.specs,
       };
