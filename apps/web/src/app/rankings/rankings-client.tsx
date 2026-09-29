@@ -190,7 +190,7 @@ export default function RankingsPage() {
                   <SafeImage
                     src={preferProductThumbnail(mediaUrl(r.gear)!, 800)}
                     alt={`${r.gear.brand} ${r.gear.model}`}
-                    loading="lazy"
+                    loading={i === 0 ? "eager" : "lazy"}
                     fallbackLabel={`${r.gear.brand} ${r.gear.model}`}
                     fallbackClassName="p-8"
                     className={cn(
