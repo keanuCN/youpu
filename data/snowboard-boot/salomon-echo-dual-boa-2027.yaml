@@ -7,6 +7,9 @@ title: "Salomon Echo Dual BOA 2027"
 one_liner: "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。"
 specs:
   lacingSystem: "双区 BOA"
+  flex: "中等至偏硬"
+  fit: "常规楦"
+  terrain: "自由滑/全山"
 images:
   - url: "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12"
     kind: face

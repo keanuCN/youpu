@@ -129,6 +129,30 @@ function enrichBootSpecsFromVerifiedSummary(gear: GearItem): GearItem {
   if (gear.categorySlug !== "snowboard-boot") return gear;
   const summary = gear.analysis.verdict;
   const specs = { ...gear.specs };
+  // Salomon product pages publish these fields directly. Keep the overlay limited
+  // to explicit brand values; leave the user's actual fit and unsupported fields open.
+  const salomonSpecs: Record<string, Pick<GearItem["specs"], "flex" | "fit" | "terrain"> & Partial<Pick<GearItem["specs"], "lacingSystem">>> = {
+    "dialogue dual boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式" },
+    "dialogue dual boa team": { flex: "中等", fit: "常规楦", terrain: "全山/自由式" },
+    "dialogue dual boa wide": { flex: "中等", fit: "宽楦", terrain: "全山/自由式", lacingSystem: "双区 BOA" },
+    "dialogue lace sj boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式" },
+    "echo dual boa": { flex: "中等至偏硬", fit: "常规楦", terrain: "自由滑/全山" },
+    "faction boa": { flex: "偏软", fit: "常规楦", terrain: "全山" },
+    "launch boa sj boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式" },
+    "malamute dual boa": { flex: "偏硬", fit: "常规楦", terrain: "自由滑" },
+    "titan boa": { flex: "偏软", fit: "常规楦", terrain: "全山" },
+    trek: { flex: "偏硬", fit: "常规楦", terrain: "分体板徒步/登山" },
+    "x approach lace sj boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式" },
+  };
+  if (gear.brand.toLowerCase() === "salomon") {
+    const official = salomonSpecs[gear.model.toLowerCase()];
+    if (official) {
+      if (specs.flex == null) specs.flex = official.flex;
+      if (specs.fit == null) specs.fit = official.fit;
+      if (specs.terrain == null) specs.terrain = official.terrain;
+      if (official.lacingSystem) specs.lacingSystem = official.lacingSystem;
+    }
+  }
   if (specs.fit == null && /宽楦/.test(summary)) specs.fit = "宽楦";
   if (specs.flex == null && /官方标注中等硬度/.test(summary)) specs.flex = "中等";
   if (specs.bindingCompatibility == null && /Step On/.test(summary) && /(专用|仅兼容)/.test(summary)) {

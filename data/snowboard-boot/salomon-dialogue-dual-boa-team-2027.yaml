@@ -7,6 +7,9 @@ title: "Salomon Dialogue Dual BOA Team 2027"
 one_liner: "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。"
 specs:
   lacingSystem: "双区 BOA"
+  flex: "中等"
+  fit: "常规楦"
+  terrain: "全山/自由式"
 images:
   - url: "https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12"
     kind: face

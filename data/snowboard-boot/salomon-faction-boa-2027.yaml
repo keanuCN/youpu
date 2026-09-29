@@ -7,6 +7,9 @@ title: "Salomon Faction BOA 2027"
 one_liner: "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。"
 specs:
   lacingSystem: "BOA 系带"
+  flex: "偏软"
+  fit: "常规楦"
+  terrain: "全山"
 images:
   - url: "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12"
     kind: face

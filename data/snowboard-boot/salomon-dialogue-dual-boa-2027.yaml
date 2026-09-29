@@ -8,6 +8,8 @@ one_liner: "官方档案型号；双区 BOA；官方标注中等硬度。尺码�
 specs:
   lacingSystem: "双区 BOA"
   flex: 中等
+  fit: "常规楦"
+  terrain: "全山/自由式"
 images:
   - url: "https://cdn.dam.salomon.com/ffcd71ac-1349-455b-8d18-b40c01097548/L49259900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12"
     kind: face
