@@ -25,6 +25,12 @@ specs:
   scenes:
     - all-mountain
     - powder
+  sizeSpecs:
+    - { size: "155", overallLength: 1550, effectiveEdge: 1158, noseWidth: 297, waistWidth: 252, tailWidth: 293, sidecutRadii: "8.0", stanceWidth: "559 mm", weightRange: "59–86 kg" }
+    - { size: "158", overallLength: 1580, effectiveEdge: 1180, noseWidth: 300, waistWidth: 257, tailWidth: 296, sidecutRadii: "8.1", stanceWidth: "559 mm", weightRange: "63–90 kg" }
+    - { size: "161", overallLength: 1610, effectiveEdge: 1203, noseWidth: 303, waistWidth: 259, tailWidth: 299, sidecutRadii: "8.2", stanceWidth: "584 mm", weightRange: "68–95 kg" }
+    - { size: "157W", overallLength: 1570, effectiveEdge: 1173, noseWidth: 306, waistWidth: 263, tailWidth: 302, sidecutRadii: "8.05", stanceWidth: "559 mm", weightRange: "63–90 kg" }
+    - { size: "160W", overallLength: 1600, effectiveEdge: 1195, noseWidth: 309, waistWidth: 265, tailWidth: 305, sidecutRadii: "8.15", stanceWidth: "584 mm", weightRange: "68–95 kg" }
 editorial_scores:
   stability: 8.6
   response: 8.8
