@@ -166,6 +166,16 @@ function enrichBootSpecsFromVerifiedSummary(gear: GearItem): GearItem {
       specs.brandResponseScore ??= official.brandResponseScore;
     }
     const model = gear.model.toLowerCase();
+    const standardWidthWithWideOption = new Set(["team tls", "team boa", "venture pro tls"]);
+    if (standardWidthWithWideOption.has(model)) {
+      specs.fit ??= "常规楦（另有宽楦版）";
+      const officialVerdicts: Record<string, string> = {
+        "team tls": "官方档案型号；TLS 双区快速系带，另有宽楦版；适合中级及以上全山滑行。尺码与脚感以实际试穿为准。",
+        "team boa": "官方档案型号；双高功率 BOA 旋钮（H5），常规楦另有宽楦版；适合中级及以上全山滑行。尺码与脚感以实际试穿为准。",
+        "venture pro tls": "官方档案型号；TLS 双区快速系带，常规楦另有宽楦版；适合中级及以上全山滑行。尺码与脚感以实际试穿为准。",
+      };
+      gear = { ...gear, analysis: { ...gear.analysis, verdict: officialVerdicts[model]! } };
+    }
     if (/bianca/.test(model)) {
       specs.flex ??= "中等";
       specs.terrain ??= "全山";
@@ -179,6 +189,7 @@ function enrichBootSpecsFromVerifiedSummary(gear: GearItem): GearItem {
     } else if (/team/.test(model)) {
       specs.flex ??= "均衡";
       specs.terrain ??= "全山/自由式";
+      if (/team boa/.test(model)) specs.lacingSystem = "双高功率 BOA 旋钮（H5）";
       if (/wide/.test(model)) {
         specs.fit ??= "宽楦";
         specs.lacingSystem = "TLS 双区快速系带";
@@ -186,6 +197,7 @@ function enrichBootSpecsFromVerifiedSummary(gear: GearItem): GearItem {
     } else if (/venture/.test(model)) {
       specs.flex ??= /step on/.test(model) ? "可调" : "中等";
       specs.terrain ??= "全山/自由式";
+      if (/venture pro tls/.test(model)) specs.lacingSystem = "TLS 双区快速系带";
     } else if (/sentinel/.test(model)) {
       specs.flex ??= "均衡";
       specs.terrain ??= "全山";
