@@ -26,6 +26,11 @@ specs:
   scenes:
     - all-mountain
     - powder
+  sizeSpecs:
+    - { size: "142", overallLength: 1420, effectiveEdge: 990, contactLength: 918, noseLength: 376, noseWidth: 311, waistWidth: 266, tailLength: 126, tailWidth: 290, sidecutRadii: "6.3", stanceWidth: "500 mm", weightRange: "54–77 kg", boardWeight: "2600 g", setback: 20 }
+    - { size: "147", overallLength: 1470, effectiveEdge: 1030, contactLength: 958, noseLength: 381, noseWidth: 317, waistWidth: 271, tailLength: 131, tailWidth: 297, sidecutRadii: "6.6", stanceWidth: "560 mm", weightRange: "59–82 kg", boardWeight: "2700 g", setback: 20 }
+    - { size: "152", overallLength: 1520, effectiveEdge: 1070, contactLength: 1000, noseLength: 385, noseWidth: 322, waistWidth: 275, tailLength: 135, tailWidth: 302, sidecutRadii: "6.9", stanceWidth: "560 mm", weightRange: "63–86 kg", boardWeight: "2900 g", setback: 20 }
+    - { size: "157", overallLength: 1570, effectiveEdge: 1120, contactLength: 1046, noseLength: 387, noseWidth: 327, waistWidth: 277, tailLength: 137, tailWidth: 307, sidecutRadii: "7.2", stanceWidth: "560 mm", weightRange: "67–91 kg", boardWeight: "3100 g", setback: 20 }
 editorial_scores:
   stability: 8.2
   response: 8.0

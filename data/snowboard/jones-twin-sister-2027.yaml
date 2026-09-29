@@ -18,6 +18,13 @@ specs:
     - all-mountain
     - freestyle
     - powder
+  sizeSpecs:
+    - { size: "140", overallLength: 1400, effectiveEdge: 1070, contactLength: 972, noseWidth: 276.1, waistWidth: 238, tailWidth: 276.1, sidecutRadii: "6.6", stanceWidth: "490 mm", weightRange: "41–63 kg", boardWeight: "2100 g", setback: 0 }
+    - { size: "143", overallLength: 1430, effectiveEdge: 1100, contactLength: 998, noseWidth: 279, waistWidth: 240, tailWidth: 279, sidecutRadii: "6.8", stanceWidth: "510 mm", weightRange: "45–68 kg", boardWeight: "2200 g", setback: 0 }
+    - { size: "146", overallLength: 1460, effectiveEdge: 1120, contactLength: 1024, noseWidth: 281.8, waistWidth: 242, tailWidth: 281.8, sidecutRadii: "7.0", stanceWidth: "510 mm", weightRange: "45–68 kg", boardWeight: "2300 g", setback: 0 }
+    - { size: "149", overallLength: 1490, effectiveEdge: 1150, contactLength: 1050, noseWidth: 284.7, waistWidth: 244, tailWidth: 284.7, sidecutRadii: "7.2", stanceWidth: "530 mm", weightRange: "49–73 kg", boardWeight: "2400 g", setback: 0 }
+    - { size: "152", overallLength: 1520, effectiveEdge: 1180, contactLength: 1076, noseWidth: 287.5, waistWidth: 246, tailWidth: 287.5, sidecutRadii: "7.4", stanceWidth: "530 mm", weightRange: "49–73 kg", boardWeight: "2500 g", setback: 0 }
+    - { size: "155", overallLength: 1550, effectiveEdge: 1200, contactLength: 1102, noseWidth: 290.4, waistWidth: 248, tailWidth: 290.4, sidecutRadii: "7.6", stanceWidth: "530 mm", weightRange: "54–77 kg", boardWeight: "2700 g", setback: 0 }
 images:
   - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNW.TWS-gallery-1.webp?v=1773324878&width=1946"
     kind: face
