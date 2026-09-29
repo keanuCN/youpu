@@ -184,7 +184,10 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
   // API 的 null 封面表示当前没有可用商品图，不再回退到内容包旧封面。
   const cover = safeImageUrl(item.coverUrl);
   const categorySlug = "categorySlug" in item ? item.categorySlug : item.category.slug;
-  const scores = "editorialScores" in item && item.editorialScores ? item.editorialScores : fallback?.scores ?? {};
+  const scores =
+    "editorialScores" in item && item.editorialScores && Object.keys(item.editorialScores).length > 0
+      ? item.editorialScores
+      : fallback?.scores ?? {};
   const liveRating =
     item.ratingCount > 0 && item.ratingOverall !== null
       ? { overall: Number(item.ratingOverall), count: item.ratingCount }

@@ -7,7 +7,7 @@ import { ROAD_BIKE_GEAR } from "./road-bikes";
 import { SNOWBOARD_SCORE_DIMS, flexBucket, profileFamilyOf } from "./categories";
 import { applyCatalogSnapshot } from "./catalog-pack";
 import { CATALOG_SNAPSHOT } from "./catalog-snapshot";
-import { withSnowboardDemoData } from "./snowboard-demo";
+import { withSnowSportDemoData } from "./snowboard-demo";
 
 type Scores = Record<string, number>;
 type Specs = Record<string, number | string | null>;
@@ -501,7 +501,7 @@ const CONTENT_PACK: GearItem[] = [
 /**
  * 统一目录出口：静态构建时优先使用最近一次导出的云端快照，未匹配的人工内容继续保留。
  */
-export const GEAR: GearItem[] = applyCatalogSnapshot(CONTENT_PACK, CATALOG_SNAPSHOT).map(withSnowboardDemoData);
+export const GEAR: GearItem[] = applyCatalogSnapshot(CONTENT_PACK, CATALOG_SNAPSHOT).map(withSnowSportDemoData);
 
 export const GEAR_BY_ID: Record<string, GearItem> = Object.fromEntries(GEAR.map((g) => [g.id, g]));
 

@@ -95,6 +95,7 @@ export default function RankingsPage() {
 
   const rankLabel = category.rankCategories.find((item) => item.key === rankKey)?.label ?? "综合榜";
   const isSnowboard = categorySlug === "snowboard";
+  const isBoot = categorySlug === "snowboard-boot";
 
   return (
     <div className="mx-auto max-w-[1400px] px-5 py-10 sm:px-8">
@@ -105,6 +106,8 @@ export default function RankingsPage() {
         desc={
           isSnowboard
             ? "演示榜单采用规格推演评分与热度；真实社区票单独统计。最终分 = 数据分 × 70% + 社区票 × 30%。"
+            : isBoot
+              ? "单板雪鞋演示榜单采用规格推演评分与热度；真实社区票单独统计。最终分 = 数据分 × 70% + 社区票 × 30%。"
             : `最终分 = 数据分 × 70% + 社区票 × 30%。${category.name}数据分由编辑评分、热度与用户评分加权得出。`
         }
         aside={
@@ -279,6 +282,8 @@ export default function RankingsPage() {
         <ul className="grid gap-3 text-[13px] leading-relaxed text-muted-foreground sm:grid-cols-2">
           {isSnowboard ? (
             <li>· 数据分 = 综合指数 55% + 热度 20% + 进阶取向 15% + 用户评分 10%（新手榜把进阶取向反向计分）</li>
+          ) : isBoot ? (
+            <li>· 单板雪鞋维度分数与热度为规格推演演示值；贴合、支撑、保暖、便利和性价比需结合实穿复核。</li>
           ) : (
             <li>· 数据分 = 编辑评分 65% + 热度 15% + 用户评分 20%，缺少真实数据的项目保持待补状态</li>
           )}
