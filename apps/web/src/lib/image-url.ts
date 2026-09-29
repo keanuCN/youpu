@@ -569,6 +569,40 @@ export function preferReviewImageThumbnail(source: string): string {
   }
 }
 
+/** 个人中心的小型历史图片只收窄 Shopify 请求，其余来源沿用现有变体规则。 */
+export function preferHistoryImageThumbnail(source: string): string {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      return proxiedSource && isShopifyProductImage(proxiedSource)
+        ? preferProductThumbnail(source, 96)
+        : preferProductThumbnail(source, 480);
+    }
+    return isShopifyProductImage(source)
+      ? preferProductThumbnail(source, 96)
+      : preferProductThumbnail(source, 480);
+  } catch {
+    return preferProductThumbnail(source, 480);
+  }
+}
+
+function isShopifyProductImage(source: string): boolean {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      return proxiedSource ? isShopifyProductImage(proxiedSource) : false;
+    }
+    return (
+      image.pathname.includes("/cdn/shop/") ||
+      (image.hostname === "cdn.shopify.com" && image.pathname.startsWith("/s/files/"))
+    );
+  } catch {
+    return false;
+  }
+}
+
 /**
  * 远程图片只允许来自明确登记的产品图片路径。
  * 新品类的本地样例图来自品牌官网或公开零售页面，正式上线前仍应迁移到自有 COS。

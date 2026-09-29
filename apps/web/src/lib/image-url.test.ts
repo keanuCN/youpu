@@ -5,6 +5,7 @@ import {
   isAllowedImageUrl,
   isAllowedRemoteImageUrl,
   preferHighResolutionProductImage,
+  preferHistoryImageThumbnail,
   preferProductThumbnail,
   preferReviewImageThumbnail,
   responsiveProductImageSrcSet,
@@ -67,6 +68,24 @@ test("uses 240px TOS WebP variants only for review image thumbnails", () => {
     "image/resize,w_240/format,webp",
   );
   assert.equal(preferReviewImageThumbnail("https://other.example/review-images/rating.webp"), "https://other.example/review-images/rating.webp");
+});
+
+test("limits personal-history Shopify thumbnails to 96px but preserves other source rules", () => {
+  const shopifyImage = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=800";
+  const shopifyThumbnail = new URL(preferHistoryImageThumbnail(shopifyImage));
+  assert.equal(shopifyThumbnail.searchParams.get("width"), "96");
+  assert.equal(shopifyThumbnail.searchParams.get("v"), "1");
+
+  const proxied = `/api/image-proxy?url=${encodeURIComponent(shopifyImage)}&source=profile`;
+  const proxiedThumbnail = new URL(preferHistoryImageThumbnail(proxied), "https://youpu.local");
+  const proxiedSource = new URL(proxiedThumbnail.searchParams.get("url")!);
+  assert.equal(proxiedSource.searchParams.get("width"), "96");
+  assert.equal(proxiedThumbnail.searchParams.get("source"), "profile");
+
+  const capita = "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/verified-doa.webp?v=1&width=800";
+  assert.equal(preferHistoryImageThumbnail(capita), preferProductThumbnail(capita, 96));
+  const other = "https://cdn.dam.salomon.com/product.png?width=2000";
+  assert.equal(preferHistoryImageThumbnail(other), preferProductThumbnail(other, 480));
 });
 
 test("provides responsive small and middle variants only for the verified Atomic Bent Chetler image", () => {
