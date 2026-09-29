@@ -255,6 +255,21 @@ test("uses official small variants only for the verified Follows and Point produ
   assert.equal(thumbnailProxy.searchParams.get("source"), "product");
 });
 
+test("uses the verified VICTOR 640px racket image variant only for its exact product asset", () => {
+  const image =
+    "https://shop.au.victorsport.com/cdn/shop/products/82004_1_20211117175841_2048x.jpg?v=1644645157";
+  const thumbnail =
+    "https://shop.au.victorsport.com/cdn/shop/products/82004_1_20211117175841_640x.jpg?v=1644645157";
+  assert.equal(preferProductThumbnail(image), thumbnail);
+
+  const detail = new URL(preferHighResolutionProductImage(image));
+  assert.equal(detail.pathname.endsWith("_2048x.jpg"), true);
+  assert.equal(detail.searchParams.get("width"), "1600");
+
+  const otherVersion = image.replace("1644645157", "other-version");
+  assert.notEqual(preferProductThumbnail(otherVersion), thumbnail);
+});
+
 test("uses the verified 416px CAPiTA card image while preserving detail resolution", () => {
   const images = [
     "SB04-RESORT-TWIN-TOP.png?v=1776884550",

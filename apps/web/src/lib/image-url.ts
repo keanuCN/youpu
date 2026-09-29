@@ -32,6 +32,12 @@ const VERIFIED_SMALL_PRODUCT_IMAGES = new Map([
     "https://www.point-official.shop/img/goods/S/4550133341434_1.jpg",
   ],
 ]);
+const VERIFIED_VERSIONED_PRODUCT_IMAGE_VARIANTS = new Map([
+  [
+    "shop.au.victorsport.com/cdn/shop/products/82004_1_20211117175841_2048x.jpg?v=1644645157",
+    "https://shop.au.victorsport.com/cdn/shop/products/82004_1_20211117175841_640x.jpg?v=1644645157",
+  ],
+]);
 const VERIFIED_FOLLOWS_THUMBNAIL_PATHS = new Set([
   "/follows.co.jp/pic-labo/limg/2526bc-r2-1a.jpg",
   "/follows.co.jp/pic-labo/limg/2627bc-dr-1.jpg",
@@ -232,6 +238,12 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       isAllowedRemoteImageUrl(image.toString())
     ) {
       const verifiedThumbnail = VERIFIED_SMALL_PRODUCT_IMAGES.get(`${image.hostname}${image.pathname}`);
+      if (verifiedThumbnail) return verifiedThumbnail;
+    }
+    if (widthLimit >= 320 && widthLimit < 1600 && isAllowedRemoteImageUrl(image.toString())) {
+      const verifiedThumbnail = VERIFIED_VERSIONED_PRODUCT_IMAGE_VARIANTS.get(
+        `${image.hostname}${image.pathname}${image.search}`,
+      );
       if (verifiedThumbnail) return verifiedThumbnail;
     }
     if (
