@@ -24,6 +24,16 @@ specs:
   flex: 6
   scenes:
     - all-mountain
+  sizeSpecs:
+    - { size: "153", overallLength: 1530, effectiveEdge: 1200, noseWidth: 292, waistWidth: 247, tailWidth: 287, sidecutRadii: "8.3/7.3", stanceWidth: "533 mm", weightRange: "52–79 kg" }
+    - { size: "155", overallLength: 1550, effectiveEdge: 1215, noseWidth: 296, waistWidth: 250, tailWidth: 291, sidecutRadii: "8.4/7.4", stanceWidth: "559 mm", weightRange: "56–83 kg" }
+    - { size: "157", overallLength: 1570, effectiveEdge: 1230, noseWidth: 300, waistWidth: 253, tailWidth: 295, sidecutRadii: "8.5/7.5", stanceWidth: "559 mm", weightRange: "61–88 kg" }
+    - { size: "159", overallLength: 1590, effectiveEdge: 1245, noseWidth: 304, waistWidth: 256, tailWidth: 299, sidecutRadii: "8.6/7.6", stanceWidth: "559 mm", weightRange: "65–93 kg" }
+    - { size: "161", overallLength: 1610, effectiveEdge: 1260, noseWidth: 308, waistWidth: 259, tailWidth: 303, sidecutRadii: "8.7/7.7", stanceWidth: "584 mm", weightRange: "72–99 kg" }
+    - { size: "156W", overallLength: 1560, effectiveEdge: 1223, noseWidth: 306, waistWidth: 260, tailWidth: 301, sidecutRadii: "8.5/7.5", stanceWidth: "559 mm", weightRange: "61–88 kg" }
+    - { size: "158W", overallLength: 1580, effectiveEdge: 1238, noseWidth: 310, waistWidth: 263, tailWidth: 305, sidecutRadii: "8.6/7.6", stanceWidth: "559 mm", weightRange: "65–93 kg" }
+    - { size: "160W", overallLength: 1600, effectiveEdge: 1253, noseWidth: 314, waistWidth: 266, tailWidth: 309, sidecutRadii: "8.7/7.7", stanceWidth: "584 mm", weightRange: "72–99 kg" }
+    - { size: "162W", overallLength: 1620, effectiveEdge: 1268, noseWidth: 318, waistWidth: 269, tailWidth: 313, sidecutRadii: "8.8/7.8", stanceWidth: "584 mm", weightRange: "77–104 kg" }
 editorial_scores:
   stability: 8.6
   response: 8.5
