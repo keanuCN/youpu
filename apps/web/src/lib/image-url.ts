@@ -58,6 +58,14 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
         return image.toString();
       }
     }
+    if (image.hostname === "cdn.dam.salomon.com" && isAllowedRemoteImageUrl(image.toString())) {
+      const requestedWidth = image.searchParams.get("width");
+      const width = Number(requestedWidth);
+      if (requestedWidth === null || (Number.isFinite(width) && width > widthLimit)) {
+        image.searchParams.set("width", String(widthLimit));
+        return image.toString();
+      }
+    }
     return source;
   } catch {
     return source;

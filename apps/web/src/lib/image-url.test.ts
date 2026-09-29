@@ -29,6 +29,55 @@ test("limits Shopify product images to thumbnail width without changing detail i
   assert.equal(preferProductThumbnail(nonShopify), nonShopify);
 });
 
+test("limits approved Salomon DAM thumbnails and preserves their query parameters", () => {
+  const paddedImage =
+    "https://cdn.dam.salomon.com/fb6d3e52-e631-4fe0-9ca7-b36001082c68/L49290100/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12&v=7&fit=cover";
+  const paddedThumbnail = new URL(preferProductThumbnail(paddedImage));
+  assert.equal(paddedThumbnail.searchParams.get("width"), "800");
+  assert.equal(paddedThumbnail.searchParams.get("pad"), "0.12,0.12,0.12,0.12");
+  assert.equal(paddedThumbnail.searchParams.get("v"), "7");
+  assert.equal(paddedThumbnail.searchParams.get("fit"), "cover");
+
+  const oversizedImage =
+    "https://cdn.dam.salomon.com/af8e2e75-eeed-4307-9ef2-b3b8010090b3/L49291700/PNG-2000px-max-72dpi.png?width=3840&pad=0.1&auto=avif";
+  const oversizedThumbnail = new URL(preferProductThumbnail(oversizedImage));
+  assert.equal(oversizedThumbnail.searchParams.get("width"), "800");
+  assert.equal(oversizedThumbnail.searchParams.get("pad"), "0.1");
+  assert.equal(oversizedThumbnail.searchParams.get("auto"), "avif");
+
+  const narrowThumbnail =
+    "https://cdn.dam.salomon.com/4e88d690-8431-4ab7-b0f7-b36001082530/L45439300/image.png?width=600&v=2";
+  assert.equal(preferProductThumbnail(narrowThumbnail), narrowThumbnail);
+  assert.equal(
+    new URL(
+      preferProductThumbnail(
+        "https://cdn.dam.salomon.com/4e88d690-8431-4ab7-b0f7-b36001082530/L45439300/image.png?width=1000",
+        480,
+      ),
+    ).searchParams.get("width"),
+    "480",
+  );
+
+  const unrelatedSalomon = "https://cdn.dam.salomon.com/unlisted/product.png?width=2000";
+  assert.equal(preferProductThumbnail(unrelatedSalomon), unrelatedSalomon);
+  const unrelatedHost = "https://other.example/fb6d3e52-e631-4fe0-9ca7-b36001082c68/L49290100/image.png";
+  assert.equal(preferProductThumbnail(unrelatedHost), unrelatedHost);
+  const otherCdn = "https://cdn.amersports.com/017bc76f-f5cc-42b8-a786-b49f00cdff46/ski.png";
+  assert.equal(preferProductThumbnail(otherCdn), otherCdn);
+});
+
+test("limits approved Salomon DAM URLs nested inside the image proxy", () => {
+  const salomonImage =
+    "https://cdn.dam.salomon.com/fb6d3e52-e631-4fe0-9ca7-b36001082c68/L49290100/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12&width=2000&v=3";
+  const proxiedImage = `/api/image-proxy?url=${encodeURIComponent(salomonImage)}&source=product`;
+  const proxiedThumbnail = new URL(preferProductThumbnail(proxiedImage), "https://youpu.local");
+  const optimizedSource = new URL(proxiedThumbnail.searchParams.get("url")!);
+  assert.equal(optimizedSource.searchParams.get("width"), "800");
+  assert.equal(optimizedSource.searchParams.get("pad"), "0.12,0.12,0.12,0.12");
+  assert.equal(optimizedSource.searchParams.get("v"), "3");
+  assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
+});
+
 test("routes approved remote images through the local proxy in development", () => {
   assert.equal(
     resolveImageUrl(CDN_IMAGE, true),
