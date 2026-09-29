@@ -75,6 +75,19 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       }
     }
     if (
+      image.hostname === "www.rossignol.com" &&
+      image.pathname.startsWith("/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/") &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const requestedWidth = image.searchParams.get("sw");
+      const width = Number(requestedWidth);
+      const targetWidth = Math.min(widthLimit, 480);
+      if (requestedWidth !== null && Number.isFinite(width) && width > targetWidth) {
+        image.searchParams.set("sw", String(targetWidth));
+        return image.toString();
+      }
+    }
+    if (
       image.hostname === "dma.canyon.com" &&
       image.pathname.includes("/image/upload/") &&
       isAllowedRemoteImageUrl(image.toString())

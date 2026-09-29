@@ -78,6 +78,42 @@ test("limits approved Salomon DAM URLs nested inside the image proxy", () => {
   assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
 });
 
+test("limits approved Rossignol card thumbnails to 480px while preserving other URL data", () => {
+  const rossignolImage =
+    "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/ski.jpg?sw=800&sh=1200&sm=fit&fmt=webp";
+  const thumbnail = new URL(preferProductThumbnail(rossignolImage));
+  assert.equal(thumbnail.searchParams.get("sw"), "480");
+  assert.equal(thumbnail.searchParams.get("sh"), "1200");
+  assert.equal(thumbnail.searchParams.get("sm"), "fit");
+  assert.equal(thumbnail.searchParams.get("fmt"), "webp");
+  assert.equal(thumbnail.pathname, new URL(rossignolImage).pathname);
+
+  const smallerImage = rossignolImage.replace("sw=800", "sw=320");
+  assert.equal(preferProductThumbnail(smallerImage), smallerImage);
+
+  const noWidthImage = rossignolImage.replace("sw=800&", "");
+  assert.equal(preferProductThumbnail(noWidthImage), noWidthImage);
+
+  const customLimitImage = rossignolImage.replace("sw=800", "sw=400");
+  assert.equal(
+    new URL(preferProductThumbnail(customLimitImage, 240)).searchParams.get("sw"),
+    "240",
+  );
+
+  const unrelatedHost = rossignolImage.replace("www.rossignol.com", "other.example");
+  const unrelatedPath = rossignolImage.replace("Sites-rossignol-catalog", "Sites-unlisted-catalog");
+  assert.equal(preferProductThumbnail(unrelatedHost), unrelatedHost);
+  assert.equal(preferProductThumbnail(unrelatedPath), unrelatedPath);
+
+  const proxiedImage = `/api/image-proxy?url=${encodeURIComponent(rossignolImage)}&source=product`;
+  const proxiedThumbnail = new URL(preferProductThumbnail(proxiedImage), "https://youpu.local");
+  const optimizedSource = new URL(proxiedThumbnail.searchParams.get("url")!);
+  assert.equal(optimizedSource.searchParams.get("sw"), "480");
+  assert.equal(optimizedSource.searchParams.get("sh"), "1200");
+  assert.equal(optimizedSource.searchParams.get("fmt"), "webp");
+  assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
+});
+
 test("limits approved K2 Amplience thumbnail widths and preserves other query parameters", () => {
   const missingWidth = new URL(
     preferProductThumbnail("https://cdn.media.amplience.net/i/k2/board.jpg?qlt=85&fmt=webp"),
