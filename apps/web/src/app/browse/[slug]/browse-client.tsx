@@ -48,6 +48,13 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
   const [sort, setSort] = useState<SortKey>(defaultSort);
 
   const pool = useMemo(() => initialPool ?? gearOfCategory(slug), [initialPool, slug]);
+  const brandOptions = useMemo(
+    () =>
+      [...new Set(pool.map((gear) => gear.brand.trim()).filter(Boolean))]
+        .sort((a, b) => a.localeCompare(b, "zh-CN", { sensitivity: "base" }))
+        .map((brand) => ({ value: brand, label: brand })),
+    [pool],
+  );
   const result = useMemo(() => sortGear(applyFilters(pool, filters, priceBounds), sort), [pool, filters, priceBounds, sort]);
   const active = activeFilterCount(filters, priceBounds);
 
@@ -129,7 +136,7 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
               {filters[key].length ? <span className="ml-1.5 text-primary">· {filters[key].length}</span> : null}
             </p>
             <div className="flex flex-wrap gap-1.5">
-              {def.options?.map((o) => (
+              {(def.key === "brands" ? brandOptions : def.options)?.map((o) => (
                 <Chip key={o.value} active={filters[key].includes(o.value)} onClick={() => toggleIn(key, o.value)}>
                   {o.label}
                 </Chip>
@@ -138,14 +145,16 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
           </div>
         );
       })}
+    </div>
+  );
 
-      <div className="border-t border-border pt-5">
-        <p className="mono-label mb-2">匹配结果</p>
-        <p className="mono-data text-[26px] leading-none tnum">
-          {result.length}
-          <span className="ml-1 text-[12px] text-muted-foreground">/ {pool.length} 件</span>
-        </p>
-      </div>
+  const FilterResultCount = (
+    <div className="border-t border-border pt-3">
+      <p className="mono-label mb-2">匹配结果</p>
+      <p className="mono-data text-[26px] leading-none tnum">
+        {result.length}
+        <span className="ml-1 text-[12px] text-muted-foreground">/ {pool.length} 件</span>
+      </p>
     </div>
   );
 
@@ -184,7 +193,12 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[228px_1fr]">
         <aside className="hidden lg:block">
-          <div className="sticky top-32">{FilterBody}</div>
+          <div className="sticky top-32 flex max-h-[calc(100dvh-16rem)] flex-col">
+            <div className="thin-scroll min-h-0 flex-1 overflow-y-auto overscroll-contain pr-2">
+              {FilterBody}
+            </div>
+            <div className="shrink-0 bg-background pt-3">{FilterResultCount}</div>
+          </div>
         </aside>
 
         <div>
@@ -218,6 +232,7 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
                 <SheetContent side="left" className="w-[86vw] max-w-xs overflow-y-auto p-5">
                   <SheetTitle className="sr-only">筛选</SheetTitle>
                   {FilterBody}
+                  <div className="mt-7">{FilterResultCount}</div>
                 </SheetContent>
               </Sheet>
             </div>
