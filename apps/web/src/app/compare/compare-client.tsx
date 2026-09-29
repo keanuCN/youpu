@@ -13,7 +13,7 @@ import { GEAR, getGear } from "@/data/boards";
 import { getCategory } from "@/data/categories";
 import { buildCompareMatrix, compareConclusion, formatSpecValue } from "@/lib/domain";
 import { getCategoryProducts, getCompareProducts, resolveContentSource } from "@/lib/content";
-import { preferProductThumbnail } from "@/lib/image-url";
+import { preferCompactProductThumbnail, preferProductThumbnail } from "@/lib/image-url";
 import { hasEditorialScores, hasMedia, mediaUrl } from "@/lib/gear-state";
 import { clearDock, recordCompare, removeFromDock, setDock, useCurrentUser } from "@/lib/store";
 import { track } from "@/lib/track";
@@ -287,7 +287,7 @@ export default function ComparePage() {
                 >
                   {hasMedia(g) && mediaUrl(g) ? (
                     <SafeImage
-                      src={preferProductThumbnail(mediaUrl(g)!, 480)}
+                      src={preferCompactProductThumbnail(mediaUrl(g)!)}
                       alt=""
                       loading="lazy"
                       fallbackLabel={`${g.brand} ${g.model}`}

@@ -569,8 +569,8 @@ export function preferReviewImageThumbnail(source: string): string {
   }
 }
 
-/** 个人中心的小型历史图片只收窄 Shopify 请求，其余来源沿用现有变体规则。 */
-export function preferHistoryImageThumbnail(source: string): string {
+/** 小型列表图片只收窄 Shopify 请求，其余来源沿用现有变体规则。 */
+export function preferCompactProductThumbnail(source: string): string {
   try {
     const image = new URL(source, "https://youpu.local");
     if (image.pathname === IMAGE_PROXY_PATH) {

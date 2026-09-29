@@ -5,7 +5,7 @@ import {
   isAllowedImageUrl,
   isAllowedRemoteImageUrl,
   preferHighResolutionProductImage,
-  preferHistoryImageThumbnail,
+  preferCompactProductThumbnail,
   preferProductThumbnail,
   preferReviewImageThumbnail,
   responsiveProductImageSrcSet,
@@ -70,22 +70,22 @@ test("uses 240px TOS WebP variants only for review image thumbnails", () => {
   assert.equal(preferReviewImageThumbnail("https://other.example/review-images/rating.webp"), "https://other.example/review-images/rating.webp");
 });
 
-test("limits personal-history Shopify thumbnails to 96px but preserves other source rules", () => {
+test("limits compact-list Shopify thumbnails to 96px but preserves other source rules", () => {
   const shopifyImage = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=800";
-  const shopifyThumbnail = new URL(preferHistoryImageThumbnail(shopifyImage));
+  const shopifyThumbnail = new URL(preferCompactProductThumbnail(shopifyImage));
   assert.equal(shopifyThumbnail.searchParams.get("width"), "96");
   assert.equal(shopifyThumbnail.searchParams.get("v"), "1");
 
   const proxied = `/api/image-proxy?url=${encodeURIComponent(shopifyImage)}&source=profile`;
-  const proxiedThumbnail = new URL(preferHistoryImageThumbnail(proxied), "https://youpu.local");
+  const proxiedThumbnail = new URL(preferCompactProductThumbnail(proxied), "https://youpu.local");
   const proxiedSource = new URL(proxiedThumbnail.searchParams.get("url")!);
   assert.equal(proxiedSource.searchParams.get("width"), "96");
   assert.equal(proxiedThumbnail.searchParams.get("source"), "profile");
 
   const capita = "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/verified-doa.webp?v=1&width=800";
-  assert.equal(preferHistoryImageThumbnail(capita), preferProductThumbnail(capita, 96));
+  assert.equal(preferCompactProductThumbnail(capita), preferProductThumbnail(capita, 96));
   const other = "https://cdn.dam.salomon.com/product.png?width=2000";
-  assert.equal(preferHistoryImageThumbnail(other), preferProductThumbnail(other, 480));
+  assert.equal(preferCompactProductThumbnail(other), preferProductThumbnail(other, 480));
 });
 
 test("provides responsive small and middle variants only for the verified Atomic Bent Chetler image", () => {

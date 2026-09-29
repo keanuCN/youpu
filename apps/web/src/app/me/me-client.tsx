@@ -18,7 +18,7 @@ import { cloudLogout, cloudUpdateMe, hasCloudSession } from "@/lib/api";
 import { SEASON, getCategory } from "@/data/categories";
 import { getCompareProducts, resolveContentSource } from "@/lib/content";
 import { hasEditorialScores } from "@/lib/gear-state";
-import { preferHistoryImageThumbnail, preferProductThumbnail } from "@/lib/image-url";
+import { preferCompactProductThumbnail, preferProductThumbnail } from "@/lib/image-url";
 import { helpfulOf, reviewsByUser } from "@/lib/domain";
 import { fmtDate, timeAgo } from "@/lib/format";
 import {
@@ -242,7 +242,7 @@ export default function MePage({ initialTab }: { initialTab?: TabKey }) {
                           className="flex items-center gap-2 border border-border p-1.5 pr-3 hover:border-foreground"
                         >
                           <SafeImage
-                            src={preferHistoryImageThumbnail(g.hero)}
+                            src={preferCompactProductThumbnail(g.hero)}
                             alt=""
                             loading="lazy"
                             fallbackLabel={`${g.brand} ${g.model}`}
@@ -324,7 +324,7 @@ export default function MePage({ initialTab }: { initialTab?: TabKey }) {
                             {String(i + 1).padStart(2, "0")}
                           </span>
                           <SafeImage
-                            src={preferHistoryImageThumbnail(g.hero)}
+                            src={preferCompactProductThumbnail(g.hero)}
                             alt=""
                             loading="lazy"
                             fallbackLabel={`${g.brand} ${g.model}`}
