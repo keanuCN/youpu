@@ -11,6 +11,12 @@ specs:
   flexFeel: medium
   mountingSystem: "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）"
   terrain: [all-mountain, freeride]
+editorial_scores:
+  response: 8
+  comfort: 7.5
+  versatility: 9
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-cartel-re-flex-snowboard-bindings-105391

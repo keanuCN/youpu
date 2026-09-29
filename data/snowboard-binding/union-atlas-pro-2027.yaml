@@ -7,9 +7,16 @@ title: "Union Binding Company Atlas Pro 2027"
 one_liner: "采用锻造碳纤维等高响应结构，定位高阶全山地与强支撑滑行。"
 specs:
   entrySystem: strap
+  flex: 9
   bootCompatibility: "官方列出 4x4、4x2 与 Channel 安装；普通绑带雪鞋"
   mountingSystem: "Camber Disk + Washer；4x4、4x2 与 Channel"
   terrain: [all-mountain, freeride]
+editorial_scores:
+  response: 9.5
+  comfort: 8.5
+  versatility: 8
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027

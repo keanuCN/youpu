@@ -11,6 +11,12 @@ specs:
   bootCompatibility: "适配常见 4x4、4x2 与 Channel 安装；普通绑带雪鞋"
   mountingSystem: "Camber Disk + Washer；4x4、4x2 与 Channel"
   terrain: [all-mountain, freeride]
+editorial_scores:
+  response: 8
+  comfort: 8
+  versatility: 8.5
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027

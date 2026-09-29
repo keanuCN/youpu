@@ -9,6 +9,12 @@ specs:
   entrySystem: strap
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freestyle]
+editorial_scores:
+  response: 6.5
+  comfort: 8
+  versatility: 8.5
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/bindings-26-27/products/fate-womens-bindings-1

@@ -7,9 +7,16 @@ title: "Union Binding Company Legacy 2027"
 one_liner: "偏柔软脚感的女款公园与自由式固定器，官方强调减震与板面自然弯曲。"
 specs:
   entrySystem: strap
+  flex: 5
   bootCompatibility: "Union Mini Disk；适配普通绑带雪鞋"
   mountingSystem: "Union Mini Disk；兼容常见 4 孔系统"
   terrain: [all-mountain, freestyle]
+editorial_scores:
+  response: 6
+  comfort: 9
+  versatility: 8.5
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027

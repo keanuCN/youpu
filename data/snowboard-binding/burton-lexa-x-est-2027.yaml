@@ -10,6 +10,12 @@ specs:
   bootCompatibility: "EST 版本仅用于 Burton The Channel 雪板；适配普通绑带雪鞋"
   mountingSystem: "EST，仅适配 Burton The Channel"
   terrain: [all-mountain, freestyle]
+editorial_scores:
+  response: 8
+  comfort: 8
+  versatility: 8
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331

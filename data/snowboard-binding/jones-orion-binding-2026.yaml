@@ -10,6 +10,12 @@ specs:
   bootCompatibility: "Jones 通用圆盘；普通绑带雪鞋"
   terrain: [all-mountain, freeride]
   mountingSystem: "Universal Disk；兼容 4x4、2x4 与 EST/Channel"
+editorial_scores:
+  response: 7
+  comfort: 8
+  versatility: 8.5
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026

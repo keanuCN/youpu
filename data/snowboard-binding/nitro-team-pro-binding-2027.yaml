@@ -10,6 +10,12 @@ specs:
   bootCompatibility: "普通绑带雪鞋"
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freestyle]
+editorial_scores:
+  response: 8.5
+  comfort: 8
+  versatility: 8.5
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/products/team-pro-bindings-1

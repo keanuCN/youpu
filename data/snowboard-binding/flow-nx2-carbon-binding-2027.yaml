@@ -10,6 +10,12 @@ specs:
   flexFeel: pro-stiff
   terrain: [all-mountain, freeride]
   mountingSystem: "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"
+editorial_scores:
+  response: 9
+  comfort: 7.5
+  versatility: 8
+  convenience: 8.5
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.nidecker.com/products/flow-nx2-carbon

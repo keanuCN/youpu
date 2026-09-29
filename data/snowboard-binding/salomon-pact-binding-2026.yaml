@@ -10,6 +10,12 @@ specs:
   flexFeel: soft
   terrain: [all-mountain, freestyle]
   mountingSystem: "Universal Disc；兼容主要雪板安装系统"
+editorial_scores:
+  response: 5.5
+  comfort: 7.5
+  versatility: 8.5
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/pact-li6862

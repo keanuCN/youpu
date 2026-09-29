@@ -10,6 +10,12 @@ specs:
   bootCompatibility: "官方标注适配中宽及偏宽雪鞋；Universal Mini Disc 兼容 2x4 与 Channel"
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freeride]
+editorial_scores:
+  response: 8
+  comfort: 9
+  versatility: 8
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/bindings-26-27/products/phantom-bindings-2

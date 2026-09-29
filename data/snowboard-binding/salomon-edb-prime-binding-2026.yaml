@@ -10,6 +10,12 @@ specs:
   flexFeel: stiff
   terrain: [all-mountain]
   mountingSystem: "Universal Disc；兼容主要雪板安装系统"
+editorial_scores:
+  response: 8
+  comfort: 8
+  versatility: 8.5
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/edb-prime-li8710

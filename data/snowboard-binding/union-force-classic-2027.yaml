@@ -11,6 +11,12 @@ specs:
   bootCompatibility: "Union 标准安装圆盘；适配普通绑带雪鞋"
   mountingSystem: "Camber Disk；4x4、4x2 与 Channel"
   terrain: [all-mountain, freeride, freestyle]
+editorial_scores:
+  response: 7
+  comfort: 8
+  versatility: 9
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027

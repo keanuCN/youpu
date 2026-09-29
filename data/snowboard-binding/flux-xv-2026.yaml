@@ -11,6 +11,12 @@ specs:
   flex: 9
   terrain: [freeride, all-mountain]
   mountingSystem: "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对"
+editorial_scores:
+  response: 9.5
+  comfort: 7
+  versatility: 7.5
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526xv

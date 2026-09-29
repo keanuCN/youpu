@@ -11,6 +11,12 @@ specs:
   flexFeel: mid-stiff
   terrain: [all-mountain]
   mountingSystem: "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"
+editorial_scores:
+  response: 7.5
+  comfort: 7.5
+  versatility: 8
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://eu.nidecker.com/de-int/products/kaon-plus

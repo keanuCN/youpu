@@ -7,9 +7,16 @@ title: "Union Binding Company Ultra 2027"
 one_liner: "以缓震和板感为重点的女款自由式固定器，官方介绍其悬挂式缓震结构。"
 specs:
   entrySystem: strap
+  flex: 6
   bootCompatibility: "Union 标准安装圆盘；适配普通绑带雪鞋"
   mountingSystem: "Union Mini Disk；兼容常见 4 孔系统"
   terrain: [all-mountain, freestyle]
+editorial_scores:
+  response: 7
+  comfort: 9.5
+  versatility: 8.5
+  convenience: 6
+  value: 5
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027
