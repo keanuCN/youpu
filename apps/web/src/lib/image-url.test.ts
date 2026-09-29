@@ -322,6 +322,36 @@ test("uses HEAD official ski thumbnails only for the four verified gallery image
   assert.equal(preferProductThumbnail(unverified), unverified);
 });
 
+test("uses official 300x200 Giant thumbnails only for the verified bike images", () => {
+  const images = [
+    {
+      source:
+        "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/u9r0a1uqpr0rustxbxbn/MY27PropelAdvancedPro0-AXS_ColorAObsidianPulse.jpg",
+      thumbnail:
+        "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/u9r0a1uqpr0rustxbxbn/MY27PropelAdvancedPro0-AXS_ColorAObsidianPulse.jpg",
+    },
+    {
+      source:
+        "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_600%2Cq_80%2Cw_800/qrpefgqfjrzq6x21nwsw/MY26XTCAdvanced291_ColorAAbyssBlack_Bronze.jpg",
+      thumbnail:
+        "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/qrpefgqfjrzq6x21nwsw/MY26XTCAdvanced291_ColorAAbyssBlack_Bronze.jpg",
+    },
+  ];
+
+  for (const { source, thumbnail } of images) {
+    assert.equal(preferProductThumbnail(source), thumbnail);
+    assert.equal(preferProductThumbnail(source, 480), thumbnail);
+    assert.equal(preferHighResolutionProductImage(source), source);
+  }
+
+  const unverified = images[0]!.source.replace("MY27PropelAdvancedPro0-AXS", "unverified-bike");
+  assert.equal(preferProductThumbnail(unverified), unverified);
+
+  const proxiedSource = `/api/image-proxy?url=${encodeURIComponent(images[0]!.source)}`;
+  const thumbnailProxy = new URL(preferProductThumbnail(proxiedSource), "https://youpu.local");
+  assert.equal(thumbnailProxy.searchParams.get("url"), images[0]!.thumbnail);
+});
+
 test("limits approved Decathlon f=<width>x0 thumbnails and preserves other URL data", () => {
   const oversizedImage =
     "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto&quality=80";

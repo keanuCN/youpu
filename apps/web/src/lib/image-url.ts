@@ -74,6 +74,16 @@ const VERIFIED_HEAD_IMAGE_VARIANTS = new Map([
     },
   ],
 ]);
+const VERIFIED_GIANT_THUMBNAIL_PATHS = new Map([
+  [
+    "/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/u9r0a1uqpr0rustxbxbn/MY27PropelAdvancedPro0-AXS_ColorAObsidianPulse.jpg",
+    "/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/u9r0a1uqpr0rustxbxbn/MY27PropelAdvancedPro0-AXS_ColorAObsidianPulse.jpg",
+  ],
+  [
+    "/b_white%2Cc_pad%2Ch_600%2Cq_80%2Cw_800/qrpefgqfjrzq6x21nwsw/MY26XTCAdvanced291_ColorAAbyssBlack_Bronze.jpg",
+    "/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/qrpefgqfjrzq6x21nwsw/MY26XTCAdvanced291_ColorAAbyssBlack_Bronze.jpg",
+  ],
+]);
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -211,6 +221,18 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       const variants = VERIFIED_HEAD_IMAGE_VARIANTS.get(image.pathname);
       if (variants) {
         image.pathname = widthLimit <= 480 ? variants.compact : variants.thumbnail;
+        return image.toString();
+      }
+    }
+    if (
+      image.hostname === "images2.giant-bicycles.com" &&
+      image.search === "" &&
+      widthLimit <= 800 &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const thumbnailPath = VERIFIED_GIANT_THUMBNAIL_PATHS.get(image.pathname);
+      if (thumbnailPath) {
+        image.pathname = thumbnailPath;
         return image.toString();
       }
     }
