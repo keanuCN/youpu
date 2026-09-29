@@ -13,6 +13,20 @@ specs:
   core: NV Core
   fiberglass: Glass Fiber Carbon Composite
   base: Sintered Graphite
+  sizeSpecs:
+    - { size: "139", overallLength: 1390, effectiveEdge: 1070, contactLength: 1050, noseWidth: 268, waistWidth: 229, tailWidth: 268, sidecutRadii: "7.1 / 6.7 / 7.1", stanceWidth: "460 mm", setback: 12 }
+    - { size: "143", overallLength: 1430, effectiveEdge: 1110, contactLength: 1070, noseWidth: 274, waistWidth: 234, tailWidth: 274, sidecutRadii: "7.4 / 7.1 / 7.4", stanceWidth: "480 mm", setback: 13 }
+    - { size: "146", overallLength: 1460, effectiveEdge: 1140, contactLength: 1090, noseWidth: 277, waistWidth: 236, tailWidth: 277, sidecutRadii: "7.6 / 7.3 / 7.6", stanceWidth: "490 mm", setback: 14 }
+    - { size: "148", overallLength: 1480, effectiveEdge: 1160, contactLength: 1120, noseWidth: 279, waistWidth: 237, tailWidth: 279, sidecutRadii: "7.8 / 7.5 / 7.8", stanceWidth: "500 mm", setback: 15 }
+    - { size: "150", overallLength: 1500, effectiveEdge: 1180, contactLength: 1140, noseWidth: 285, waistWidth: 244, tailWidth: 285, sidecutRadii: "8.3 / 8.0 / 8.3", stanceWidth: "520 mm", setback: 15 }
+    - { size: "152", overallLength: 1520, effectiveEdge: 1200, contactLength: 1160, noseWidth: 286, waistWidth: 245, tailWidth: 286, sidecutRadii: "8.4 / 8.1 / 8.4", stanceWidth: "540 mm", setback: 17 }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1220, contactLength: 1180, noseWidth: 287, waistWidth: 245, tailWidth: 287, sidecutRadii: "8.5 / 8.2 / 8.5", stanceWidth: "540 mm", setback: 17 }
+    - { size: "156", overallLength: 1560, effectiveEdge: 1240, contactLength: 1200, noseWidth: 290, waistWidth: 247, tailWidth: 290, sidecutRadii: "8.7 / 8.4 / 8.7", stanceWidth: "560 mm", setback: 18 }
+    - { size: "158", overallLength: 1580, effectiveEdge: 1260, contactLength: 1230, noseWidth: 292, waistWidth: 249, tailWidth: 292, sidecutRadii: "8.9 / 8.6 / 8.9", stanceWidth: "560 mm", setback: 19 }
+    - { size: "161", overallLength: 1610, effectiveEdge: 1290, contactLength: 1270, noseWidth: 295, waistWidth: 251, tailWidth: 295, sidecutRadii: "9.1 / 8.8 / 9.1", stanceWidth: "580 mm", setback: 20 }
+    - { size: "154W", overallLength: 1540, effectiveEdge: 1220, contactLength: 1180, noseWidth: 297, waistWidth: 255, tailWidth: 297, sidecutRadii: "8.8 / 8.5 / 8.8", stanceWidth: "540 mm", setback: 17 }
+    - { size: "156W", overallLength: 1560, effectiveEdge: 1240, contactLength: 1200, noseWidth: 300, waistWidth: 258, tailWidth: 300, sidecutRadii: "9.1 / 8.8 / 9.1", stanceWidth: "560 mm", setback: 18 }
+    - { size: "158W", overallLength: 1580, effectiveEdge: 1260, contactLength: 1260, noseWidth: 303, waistWidth: 261, tailWidth: 303, sidecutRadii: "9.3 / 9.0 / 9.3", stanceWidth: "560 mm", setback: 19 }
   scenes:
     - carving
     - all-mountain

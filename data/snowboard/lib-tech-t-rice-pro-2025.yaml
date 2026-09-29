@@ -14,8 +14,8 @@ price:
 specs:
   length: 157
   effectiveEdge: 1210
-  sidecut: 7.7
-  waistWidth: 256
+  sidecut: 8.2
+  waistWidth: 258
   stanceSetback: 0
   profile: C2（板下反弓 + 板头尾 Camber）
   shape: 真双向
@@ -27,8 +27,19 @@ specs:
   pop: 8.5
   turnRadiusFeel: 抓刃强，波浪边刃
   warranty: 3
-  flex: 6.5
+  flex: 7
   profileFamily: hybrid
+  sizeSpecs:
+    - { size: "148", overallLength: 1480, contactLength: 1160, waistWidth: 252, noseWidth: 297, tailWidth: 297, sidecutRadii: "7.5", stanceWidth: "495–622.5 mm", weightRange: "≥35 kg", setback: 0, stiffness: "6/10" }
+    - { size: "153", overallLength: 1530, contactLength: 1180, waistWidth: 253, noseWidth: 295, tailWidth: 295, sidecutRadii: "8.0", stanceWidth: "515–635 mm", weightRange: "≥45 kg", setback: 0, stiffness: "6/10" }
+    - { size: "155", overallLength: 1550, contactLength: 1190, waistWidth: 255, noseWidth: 298, tailWidth: 298, sidecutRadii: "8.1", stanceWidth: "515–635 mm", weightRange: "≥50 kg", setback: 0, stiffness: "6.5/10" }
+    - { size: "157", overallLength: 1570, contactLength: 1210, waistWidth: 258, noseWidth: 301, tailWidth: 301, sidecutRadii: "8.2", stanceWidth: "515–635 mm", weightRange: "≥55 kg", setback: 0, stiffness: "7/10" }
+    - { size: "157W", overallLength: 1570, contactLength: 1210, waistWidth: 263, noseWidth: 305, tailWidth: 305, sidecutRadii: "8.2", stanceWidth: "515–635 mm", weightRange: "≥60 kg", setback: 0, stiffness: "7/10" }
+    - { size: "159", overallLength: 1590, contactLength: 1220, waistWidth: 259, noseWidth: 302, tailWidth: 302, sidecutRadii: "8.3", stanceWidth: "515–635 mm", weightRange: "≥60 kg", setback: 0, stiffness: "7/10" }
+    - { size: "161", overallLength: 1610, contactLength: 1245, waistWidth: 260, noseWidth: 304, tailWidth: 304, sidecutRadii: "8.4", stanceWidth: "515–635 mm", weightRange: "≥60 kg", setback: 0, stiffness: "7/10" }
+    - { size: "161W", overallLength: 1610, contactLength: 1245, waistWidth: 265, noseWidth: 311, tailWidth: 311, sidecutRadii: "8.4", stanceWidth: "515–635 mm", weightRange: "≥65 kg", setback: 0, stiffness: "7/10" }
+    - { size: "164", overallLength: 1640, contactLength: 1270, waistWidth: 262, noseWidth: 310, tailWidth: 310, sidecutRadii: "8.5", stanceWidth: "515–635 mm", weightRange: "≥65 kg", setback: 0, stiffness: "7/10" }
+    - { size: "164W", overallLength: 1640, contactLength: 1270, waistWidth: 267, noseWidth: 312, tailWidth: 312, sidecutRadii: "8.5", stanceWidth: "515–635 mm", weightRange: "≥70 kg", setback: 0, stiffness: "7/10" }
   scenes:
     - freestyle
     - all-mountain
@@ -46,6 +57,6 @@ images:
     source: evo 2025 款商品图
     sort_order: 0
 data_source:
-  kind: crawl
-  origin_url: https://www.glisshop.co.uk/snowboards/lib-tech/t-rice-pro58330078
+  kind: official
+  origin_url: https://cad.lib-tech.com/2425-t-rice-pro-148
 status: published

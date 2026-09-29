@@ -12,6 +12,15 @@ specs:
   shape: Directional
   core: OGK2 Core
   base: Sintered Graphite
+  sizeSpecs:
+    - { size: "144", overallLength: 1440, effectiveEdge: 1040, contactLength: 900, noseWidth: 280, waistWidth: 245, tailWidth: 270, sidecutRadii: "8.3", stanceWidth: "460 mm", setback: 10 }
+    - { size: "148", overallLength: 1480, effectiveEdge: 1080, contactLength: 900, noseWidth: 288, waistWidth: 246, tailWidth: 276, sidecutRadii: "7.5", stanceWidth: "480 mm", setback: 10 }
+    - { size: "156", overallLength: 1560, effectiveEdge: 1150, contactLength: 930, noseWidth: 304, waistWidth: 259, tailWidth: 290, sidecutRadii: "8.1", stanceWidth: "540 mm", setback: 10 }
+    - { size: "160", overallLength: 1600, effectiveEdge: 1190, contactLength: 955, noseWidth: 303, waistWidth: 260, tailWidth: 291, sidecutRadii: "9.0", stanceWidth: "540 mm", setback: 20 }
+    - { size: "167", overallLength: 1670, effectiveEdge: 1245, contactLength: 1005, noseWidth: 312, waistWidth: 270, tailWidth: 300, sidecutRadii: "10.0", stanceWidth: "560 mm", setback: 20 }
+    - { size: "SW158", overallLength: 1580, effectiveEdge: 1240, contactLength: 955, noseWidth: 307, waistWidth: 259, tailWidth: 293, sidecutRadii: "8.7", stanceWidth: "540 mm", setback: -12.5 }
+    - { size: "SWCA163", overallLength: 1630, effectiveEdge: 1310, contactLength: 1070, noseWidth: 310, waistWidth: 261, tailWidth: 296, sidecutRadii: "9.5", stanceWidth: "540 mm", setback: 20 }
+    - { size: "SW172", overallLength: 1720, effectiveEdge: 1360, contactLength: 1050, noseWidth: 312, waistWidth: 270, tailWidth: 299, sidecutRadii: "12.5", stanceWidth: "540 mm", setback: -5 }
   scenes:
     - powder
     - all-mountain

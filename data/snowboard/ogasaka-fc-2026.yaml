@@ -15,6 +15,17 @@ specs:
   shape: Directional Semi-Hammerhead
   core: OGK2 Core
   base: Sintered Graphite
+  sizeSpecs:
+    - { size: "145", overallLength: 1450, effectiveEdge: 1170, contactLength: 1090, noseWidth: 278, waistWidth: 233, tailWidth: 275, sidecutRadii: "7.7 / 7.3", stanceWidth: "460 mm", setback: 23 }
+    - { size: "148", overallLength: 1480, effectiveEdge: 1200, contactLength: 1120, noseWidth: 282, waistWidth: 236, tailWidth: 279, sidecutRadii: "7.9 / 7.5", stanceWidth: "480 mm", setback: 24 }
+    - { size: "151", overallLength: 1510, effectiveEdge: 1230, contactLength: 1140, noseWidth: 286, waistWidth: 238, tailWidth: 283, sidecutRadii: "8.0 / 7.6", stanceWidth: "500 mm", setback: 25 }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1250, contactLength: 1160, noseWidth: 294, waistWidth: 246, tailWidth: 291, sidecutRadii: "8.3 / 7.9", stanceWidth: "540 mm", setback: 27 }
+    - { size: "157", overallLength: 1570, effectiveEdge: 1280, contactLength: 1200, noseWidth: 296, waistWidth: 249, tailWidth: 293, sidecutRadii: "8.8 / 8.4", stanceWidth: "560 mm", setback: 28 }
+    - { size: "160", overallLength: 1600, effectiveEdge: 1310, contactLength: 1230, noseWidth: 300, waistWidth: 252, tailWidth: 297, sidecutRadii: "9.0 / 8.6", stanceWidth: "560 mm", setback: 29 }
+    - { size: "163", overallLength: 1630, effectiveEdge: 1340, contactLength: 1270, noseWidth: 302, waistWidth: 254, tailWidth: 299, sidecutRadii: "9.3 / 8.9", stanceWidth: "580 mm", setback: 30 }
+    - { size: "157W", overallLength: 1570, effectiveEdge: 1270, contactLength: 1200, noseWidth: 307, waistWidth: 258, tailWidth: 304, sidecutRadii: "8.4 / 8.0", stanceWidth: "560 mm", setback: 28 }
+    - { size: "160W", overallLength: 1600, effectiveEdge: 1300, contactLength: 1230, noseWidth: 312, waistWidth: 262, tailWidth: 309, sidecutRadii: "8.5 / 8.0", stanceWidth: "560 mm", setback: 29 }
+    - { size: "163W", overallLength: 1630, effectiveEdge: 1330, contactLength: 1270, noseWidth: 311, waistWidth: 265, tailWidth: 307, sidecutRadii: "9.7 / 9.2", stanceWidth: "580 mm", setback: 30 }
   scenes:
     - carving
     - all-mountain

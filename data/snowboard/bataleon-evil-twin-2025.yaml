@@ -13,9 +13,9 @@ price:
   currency: CNY
 specs:
   length: 154
-  effectiveEdge: 1170
-  sidecut: 7.4
-  waistWidth: 251
+  effectiveEdge: 1175
+  sidecut: 7.94
+  waistWidth: 250
   stanceSetback: 0
   profile: 3BT（板头尾勺形 + 板下 Camber）
   shape: 真双向
@@ -29,6 +29,13 @@ specs:
   warranty: 2
   flex: 5
   profileFamily: hybrid
+  sizeSpecs:
+    - { size: "151", overallLength: 1510, effectiveEdge: 1148, waistWidth: 247, noseWidth: 285, tailWidth: 285, sidecutRadii: "7.85", stanceWidth: "475–595 mm", weightRange: "59–79 kg", insertQty: "24" }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1175, waistWidth: 250, noseWidth: 290, tailWidth: 290, sidecutRadii: "7.94", stanceWidth: "490–610 mm", weightRange: "64–84 kg", insertQty: "24" }
+    - { size: "156W", overallLength: 1560, effectiveEdge: 1193, waistWidth: 262, noseWidth: 303, tailWidth: 303, sidecutRadii: "8.0", stanceWidth: "510–630 mm", weightRange: "70–90 kg", insertQty: "24" }
+    - { size: "157", overallLength: 1570, effectiveEdge: 1202, waistWidth: 253, noseWidth: 294, tailWidth: 294, sidecutRadii: "8.03", stanceWidth: "510–630 mm", weightRange: "70–90 kg", insertQty: "24" }
+    - { size: "159", overallLength: 1590, effectiveEdge: 1220, waistWidth: 255, noseWidth: 297, tailWidth: 297, sidecutRadii: "8.09", stanceWidth: "520–640 mm", weightRange: "74–94 kg", insertQty: "24" }
+    - { size: "159W", overallLength: 1590, effectiveEdge: 1220, waistWidth: 265, noseWidth: 307, tailWidth: 307, sidecutRadii: "8.09", stanceWidth: "520–640 mm", weightRange: "76–96 kg", insertQty: "24" }
   scenes:
     - freestyle
     - beginner
@@ -46,6 +53,6 @@ images:
     source: evo 2025 款商品图
     sort_order: 0
 data_source:
-  kind: crawl
-  origin_url: https://www.evo.com/products/252863-bataleon-evil-twin-snowboard-2025
+  kind: official
+  origin_url: https://bataleon.com.ar/shop/evil-twin/
 status: published

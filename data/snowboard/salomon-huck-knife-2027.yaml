@@ -14,6 +14,14 @@ specs:
   shape: True Twin
   core: Popster
   base: Sintered
+  sizeSpecs:
+    - { size: "149", overallLength: 1490 }
+    - { size: "153", overallLength: 1530 }
+    - { size: "156", overallLength: 1560 }
+    - { size: "156W", overallLength: 1560 }
+    - { size: "159", overallLength: 1590 }
+    - { size: "159W", overallLength: 1590 }
+    - { size: "162", overallLength: 1620 }
   scenes:
     - freestyle
 images:

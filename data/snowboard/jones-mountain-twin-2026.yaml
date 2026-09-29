@@ -22,6 +22,19 @@ specs:
   core: FSC 白杨 / 玄武岩纤维
   fiberglass: Biax + Basalt
   base: 烧结 8000
+  sizeSpecs:
+    - { size: "149", overallLength: 1490, effectiveEdge: 1150, contactLength: 1050, waistWidth: 244, noseLength: 225, noseWidth: 285, tailLength: 215, tailWidth: 285, sidecutRadii: "7.2", weightRange: "49–73 kg", boardWeight: "2400 g" }
+    - { size: "151", overallLength: 1510, effectiveEdge: 1160, contactLength: 1062, waistWidth: 248, noseLength: 229, noseWidth: 289, tailLength: 219, tailWidth: 289, sidecutRadii: "7.4", weightRange: "49–73 kg", boardWeight: "2500 g" }
+    - { size: "153W", overallLength: 1530, effectiveEdge: 1180, contactLength: 1078, waistWidth: 257, noseLength: 231, noseWidth: 298, tailLength: 221, tailWidth: 298, sidecutRadii: "7.5", weightRange: "54–77 kg", boardWeight: "2700 g" }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1190, contactLength: 1086, waistWidth: 251, noseLength: 232, noseWidth: 292, tailLength: 222, tailWidth: 292, sidecutRadii: "7.6", weightRange: "54–77 kg", boardWeight: "2600 g" }
+    - { size: "156W", overallLength: 1560, effectiveEdge: 1200, contactLength: 1104, waistWidth: 259, noseLength: 233, noseWidth: 301, tailLength: 223, tailWidth: 301, sidecutRadii: "7.7", weightRange: "59–82 kg", boardWeight: "2700 g" }
+    - { size: "157", overallLength: 1570, effectiveEdge: 1210, contactLength: 1110, waistWidth: 254, noseLength: 235, noseWidth: 296, tailLength: 225, tailWidth: 296, sidecutRadii: "7.8", weightRange: "59–82 kg", boardWeight: "2800 g" }
+    - { size: "159W", overallLength: 1590, effectiveEdge: 1230, contactLength: 1130, waistWidth: 261, noseLength: 235, noseWidth: 304, tailLength: 225, tailWidth: 304, sidecutRadii: "7.9", weightRange: "64–86 kg", boardWeight: "2900 g" }
+    - { size: "160", overallLength: 1600, effectiveEdge: 1230, contactLength: 1134, waistWidth: 257, noseLength: 238, noseWidth: 300, tailLength: 228, tailWidth: 300, sidecutRadii: "8.0", weightRange: "67–91 kg", boardWeight: "2900 g" }
+    - { size: "162W", overallLength: 1620, effectiveEdge: 1260, contactLength: 1156, waistWidth: 263, noseLength: 237, noseWidth: 307, tailLength: 227, tailWidth: 307, sidecutRadii: "8.1", weightRange: "67–91 kg", boardWeight: "3000 g" }
+    - { size: "163", overallLength: 1630, effectiveEdge: 1260, contactLength: 1158, waistWidth: 260, noseLength: 241, noseWidth: 303, tailLength: 231, tailWidth: 303, sidecutRadii: "8.2", weightRange: "73–95 kg", boardWeight: "3000 g" }
+    - { size: "165W", overallLength: 1650, effectiveEdge: 1280, contactLength: 1178, waistWidth: 267, noseLength: 241, noseWidth: 311, tailLength: 231, tailWidth: 311, sidecutRadii: "8.3", weightRange: "77–100 kg+", boardWeight: "3200 g" }
+    - { size: "168W", overallLength: 1680, effectiveEdge: 1300, contactLength: 1204, waistWidth: 269, noseLength: 243, noseWidth: 314, tailLength: 233, tailWidth: 314, sidecutRadii: "8.5", weightRange: "77–100 kg+", boardWeight: "3300 g" }
   weight: 2870
   damping: 7.5
   pop: 7
@@ -48,4 +61,5 @@ images:
 data_source:
   kind: crawl
   origin_url: https://www.evo.com/products/264081-jones-mountain-twin-snowboard-2026
+  specs_url: https://eu.jonessnowboards.com/de/products/mens-mountain-twin-snowboard-2026
 status: published

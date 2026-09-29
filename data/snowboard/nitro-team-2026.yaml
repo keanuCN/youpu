@@ -29,6 +29,16 @@ specs:
   warranty: 2
   flex: 6
   profileFamily: hybrid
+  sizeSpecs:
+    - { size: "152", overallLength: 1520, boardWeight: "2700 g" }
+    - { size: "155", overallLength: 1550, boardWeight: "2800 g" }
+    - { size: "157", overallLength: 1570, boardWeight: "2900 g" }
+    - { size: "159", overallLength: 1590, boardWeight: "3000 g" }
+    - { size: "162", overallLength: 1620, boardWeight: "3100 g" }
+    - { size: "157W", overallLength: 1570 }
+    - { size: "159W", overallLength: 1590 }
+    - { size: "162W", overallLength: 1620 }
+    - { size: "165W", overallLength: 1650 }
   scenes:
     - all-mountain
     - freestyle

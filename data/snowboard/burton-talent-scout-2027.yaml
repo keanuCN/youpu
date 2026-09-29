@@ -17,6 +17,12 @@ specs:
   core: FSC Super Fly II 700G Core
   fiberglass: Women's Specific Triax
   base: Sintered
+  sizeSpecs:
+    - { size: "138", overallLength: 1380, effectiveEdge: 1015, waistWidth: 235, sidecutRadii: "6.5", stanceWidth: "480 mm", noseWidth: 271.2, tailWidth: 271.2, setback: 0, bindingSize: "男S / 女M" }
+    - { size: "141", overallLength: 1410, effectiveEdge: 1045, waistWidth: 237, sidecutRadii: "6.7", stanceWidth: "480 mm", noseWidth: 274.4, tailWidth: 274.4, setback: 0, bindingSize: "男S / 女M" }
+    - { size: "146", overallLength: 1460, effectiveEdge: 1095, waistWidth: 240, sidecutRadii: "7.04", stanceWidth: "505 mm", noseWidth: 279.2, tailWidth: 279.2, setback: 0, bindingSize: "男M / 女L" }
+    - { size: "149", overallLength: 1490, effectiveEdge: 1125, waistWidth: 242, sidecutRadii: "7.24", stanceWidth: "530 mm", noseWidth: 282.4, tailWidth: 282.4, setback: 0, bindingSize: "男M / 女L" }
+    - { size: "152", overallLength: 1520, effectiveEdge: 1155, waistWidth: 245, sidecutRadii: "7.44", stanceWidth: "530 mm", noseWidth: 286.5, tailWidth: 286.5, setback: 0, bindingSize: "男M / 女L" }
   scenes:
     - freestyle
     - all-mountain
