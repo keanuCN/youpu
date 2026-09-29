@@ -7,6 +7,10 @@ title: "Nitro Venture BOA 2027"
 one_liner: "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。"
 specs:
   lacingSystem: "BOA 系带"
+  flex: "中等"
+  terrain: "全山/自由式"
+  brandComfortScore: 7
+  brandResponseScore: 7
 images:
   - url: "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920"
     kind: face

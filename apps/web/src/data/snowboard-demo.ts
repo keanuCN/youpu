@@ -144,6 +144,53 @@ function enrichBootSpecsFromVerifiedSummary(gear: GearItem): GearItem {
     trek: { flex: "偏硬", fit: "常规楦", terrain: "分体板徒步/登山" },
     "x approach lace sj boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式" },
   };
+  const nitroScores: Record<string, { brandComfortScore: number; brandResponseScore: number }> = {
+    "bianca tls+": { brandComfortScore: 10, brandResponseScore: 7 },
+    "sentinel boa": { brandComfortScore: 5, brandResponseScore: 5 },
+    "sentinel tls": { brandComfortScore: 5, brandResponseScore: 5 },
+    "tangent tls": { brandComfortScore: 5, brandResponseScore: 4 },
+    "team boa": { brandComfortScore: 9, brandResponseScore: 8 },
+    "team pro mk tls": { brandComfortScore: 9, brandResponseScore: 9 },
+    "team tls": { brandComfortScore: 9, brandResponseScore: 8 },
+    "team tls wide": { brandComfortScore: 9, brandResponseScore: 8 },
+    "venture boa": { brandComfortScore: 7, brandResponseScore: 7 },
+    "venture pro tls": { brandComfortScore: 8, brandResponseScore: 8 },
+    "venture step on tls": { brandComfortScore: 7, brandResponseScore: 7 },
+    "venture tls": { brandComfortScore: 7, brandResponseScore: 7 },
+    "tangent boa": { brandComfortScore: 5, brandResponseScore: 4 },
+  };
+  if (gear.brand.toLowerCase() === "nitro") {
+    const official = nitroScores[gear.model.toLowerCase()];
+    if (official) {
+      specs.brandComfortScore ??= official.brandComfortScore;
+      specs.brandResponseScore ??= official.brandResponseScore;
+    }
+    const model = gear.model.toLowerCase();
+    if (/bianca/.test(model)) {
+      specs.flex ??= "中等";
+      specs.terrain ??= "全山";
+      specs.lacingSystem = "TLS+ 快速系带";
+    } else if (/tangent/.test(model)) {
+      specs.flex ??= "偏软";
+      specs.terrain ??= "全山/公园";
+    } else if (/team pro mk/.test(model)) {
+      specs.flex ??= "中等，可调";
+      specs.terrain ??= "自由式/全山";
+    } else if (/team/.test(model)) {
+      specs.flex ??= "均衡";
+      specs.terrain ??= "全山/自由式";
+      if (/wide/.test(model)) {
+        specs.fit ??= "宽楦";
+        specs.lacingSystem = "TLS 双区快速系带";
+      }
+    } else if (/venture/.test(model)) {
+      specs.flex ??= /step on/.test(model) ? "可调" : "中等";
+      specs.terrain ??= "全山/自由式";
+    } else if (/sentinel/.test(model)) {
+      specs.flex ??= "均衡";
+      specs.terrain ??= "全山";
+    }
+  }
   if (gear.brand.toLowerCase() === "salomon") {
     const official = salomonSpecs[gear.model.toLowerCase()];
     if (official) {

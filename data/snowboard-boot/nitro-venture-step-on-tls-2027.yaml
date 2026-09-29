@@ -8,6 +8,10 @@ one_liner: "官方档案型号；TLS 系带，Step On 系统需配专用固定�
 specs:
   lacingSystem: TLS 系带
   bindingCompatibility: 仅与 Step On 固定器兼容
+  flex: "可调"
+  terrain: "全山/自由式"
+  brandComfortScore: 7
+  brandResponseScore: 7
 images:
   - url: "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920"
     kind: face

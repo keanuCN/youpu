@@ -60,7 +60,20 @@ export default function GearDetailPage({
 
   const category = getCategory(gear.categorySlug);
   const dims = category?.scoreDims ?? [];
-  const groups = category?.specTemplate ?? [];
+  const groups = [
+    ...(category?.specTemplate ?? []),
+    ...(gear.categorySlug === "snowboard-boot" && gear.brand.toLowerCase() === "nitro" && gear.specs.brandComfortScore != null
+      ? [
+          {
+            group: "Nitro 官方评分",
+            fields: [
+              { key: "brandComfortScore", label: "品牌舒适度", type: "number" as const, unit: "/10" },
+              { key: "brandResponseScore", label: "品牌响应度", type: "number" as const, unit: "/10" },
+            ],
+          },
+        ]
+      : []),
+  ];
   const peers = relatedGear
     ? relatedGear
         .filter((item) => item.id !== gear.id && item.scenes.some((scene) => gear.scenes.includes(scene)))
