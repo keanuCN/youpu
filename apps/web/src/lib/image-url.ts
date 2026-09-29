@@ -285,16 +285,17 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
     if (
       image.hostname === "www.canyon.com" &&
       image.pathname === VERIFIED_CANYON_THUMBNAIL_PATH &&
-      widthLimit >= 800 &&
+      widthLimit >= 543 &&
       widthLimit < 1600 &&
       isAllowedRemoteImageUrl(image.toString())
     ) {
-      const requestedWidth = image.searchParams.get("sw");
-      const width = requestedWidth === null ? undefined : Number(requestedWidth);
-      if (requestedWidth === null || (Number.isFinite(width) && width! > 800)) {
-        image.searchParams.set("sw", "800");
-        return image.toString();
-      }
+      image.pathname = VERIFIED_CANYON_THUMBNAIL_PATH.replace(/\.png$/, ".jpg");
+      image.search = "";
+      image.searchParams.set("sw", "543");
+      image.searchParams.set("sfrm", "png");
+      image.searchParams.set("q", "90");
+      image.searchParams.set("bgcolor", "F2F2F2");
+      return image.toString();
     }
     if (
       image.hostname === "cdn.shopify.com" &&

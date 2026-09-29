@@ -370,14 +370,17 @@ test("uses official 300x200 Giant thumbnails only for the verified bike images",
   assert.equal(thumbnailProxy.searchParams.get("url"), images[0]!.thumbnail);
 });
 
-test("uses the measured 800px Canyon thumbnail without changing its detail image", () => {
+test("uses the measured 543px Canyon JPEG thumbnail without changing its detail image", () => {
   const image =
     "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw07984cc9/images/full/full_2023_/2023/full_2023_3170_neuron-cf-8_sr-bk_P5.png?sw=1145&sh=645&sm=fit&sfrm=png";
   const thumbnail = new URL(preferProductThumbnail(image));
-  assert.equal(thumbnail.searchParams.get("sw"), "800");
-  assert.equal(thumbnail.searchParams.get("sh"), "645");
-  assert.equal(thumbnail.searchParams.get("sm"), "fit");
+  assert.equal(thumbnail.pathname.endsWith("_P5.jpg"), true);
+  assert.equal(thumbnail.searchParams.get("sw"), "543");
+  assert.equal(thumbnail.searchParams.get("sh"), null);
+  assert.equal(thumbnail.searchParams.get("sm"), null);
   assert.equal(thumbnail.searchParams.get("sfrm"), "png");
+  assert.equal(thumbnail.searchParams.get("q"), "90");
+  assert.equal(thumbnail.searchParams.get("bgcolor"), "F2F2F2");
 
   assert.equal(preferHighResolutionProductImage(image), image);
   assert.equal(preferProductThumbnail(image, 480), image);
