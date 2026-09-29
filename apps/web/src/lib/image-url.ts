@@ -163,6 +163,8 @@ const VERIFIED_FLOW_FUSE_THUMBNAIL_PATH =
 const VERIFIED_SMARTMARINE_THUMBNAIL_PATH = "/cdn/images/products/xlarge/8089900_a.jpg";
 const VERIFIED_DECATHLON_SNB_100_THUMBNAIL_PATH =
   "/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg";
+const VERIFIED_ATOMIC_BENT_CHETLER_IMAGE_PATH =
+  "/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg";
 const VERIFIED_KORUA_CAFE_RACER_IMAGE_PATH =
   "/6939308982453/1758747603396/KORUA-Shapes-Cafe-Racer-Nicholas-Wolken-Thumbnail-01.jpg";
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
@@ -754,6 +756,26 @@ export function isAllowedRemoteImageUrl(source: string): boolean {
 export function isAllowedImageUrl(source: string): boolean {
   if (source.startsWith("/") && !source.startsWith("//")) return true;
   return isAllowedRemoteImageUrl(source);
+}
+
+/** Only the verified Atomic Bent Chetler 120 asset has matching 260px and 520px responsive variants. */
+export function responsiveProductImageSrcSet(source: string): string | undefined {
+  try {
+    const image = new URL(source);
+    if (
+      image.hostname !== "img01.yzcdn.cn" ||
+      image.pathname !== VERIFIED_ATOMIC_BENT_CHETLER_IMAGE_PATH ||
+      image.search !== ""
+    ) {
+      return undefined;
+    }
+
+    const compactImage = new URL(image);
+    compactImage.pathname = compactImage.pathname.replace("%21middle.jpg", "%21small.jpg");
+    return `${compactImage.toString()} 260w, ${image.toString()} 520w`;
+  } catch {
+    return undefined;
+  }
 }
 
 export function resolveImageUrl(source: string, useProxy = process.env.NODE_ENV === "development") {

@@ -6,6 +6,7 @@ import {
   isAllowedRemoteImageUrl,
   preferHighResolutionProductImage,
   preferProductThumbnail,
+  responsiveProductImageSrcSet,
   resolveImageUrl,
 } from "./image-url";
 
@@ -33,6 +34,18 @@ test("limits Shopify product images to thumbnail width without changing detail i
   assert.equal(preferProductThumbnail(alreadySmall), alreadySmall);
   const nonShopify = "https://cdn.dam.salomon.com/product.png?width=2000";
   assert.equal(preferProductThumbnail(nonShopify), nonShopify);
+});
+
+test("provides responsive small and middle variants only for the verified Atomic Bent Chetler image", () => {
+  const source =
+    "https://img01.yzcdn.cn/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg";
+  assert.equal(
+    responsiveProductImageSrcSet(source),
+    "https://img01.yzcdn.cn/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21small.jpg 260w, https://img01.yzcdn.cn/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg 520w",
+  );
+  assert.equal(responsiveProductImageSrcSet(source.replace("middle.jpg", "large.jpg")), undefined);
+  assert.equal(responsiveProductImageSrcSet(source.replace("img01.yzcdn.cn", "other.example")), undefined);
+  assert.equal(responsiveProductImageSrcSet(`${source}?v=1`), undefined);
 });
 
 test("keeps product detail images high resolution while bounding verified CDN sources", () => {

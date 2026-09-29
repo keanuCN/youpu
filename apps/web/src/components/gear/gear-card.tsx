@@ -14,7 +14,7 @@ import { hasEditorialScores, hasMedia, hasPrice, hasUserRating, mediaUrl } from 
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear } from "@/lib/api";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
 import { track, trackExposeOnce } from "@/lib/track";
-import { preferProductThumbnail } from "@/lib/image-url";
+import { preferProductThumbnail, responsiveProductImageSrcSet } from "@/lib/image-url";
 import { cn } from "@/lib/utils";
 import type { GearItem } from "@/types";
 import { useAuthGate } from "@/store/app-shell";
@@ -22,6 +22,20 @@ import { FlexBar, ScoreMark, Stars } from "./primitives";
 import { SafeImage } from "./safe-image";
 
 type FromSource = "home" | "list" | "search" | "ranking" | "compare" | "recommend";
+
+const TWO_COLUMN_FOUR_COLUMN_CARD_SIZES =
+  "(min-width: 1400px) 322px, (min-width: 1024px) calc(25vw - 28px), (min-width: 640px) calc(50vw - 40px), calc(50vw - 28px)";
+const CATALOG_GRID_CARD_SIZES =
+  "(min-width: 1400px) 257px, (min-width: 1280px) calc(25vw - 93px), (min-width: 1024px) calc(33.333vw - 119px), (min-width: 768px) calc(33.333vw - 32px), (min-width: 640px) calc(50vw - 40px), calc(50vw - 28px)";
+
+const CARD_IMAGE_SIZES: Record<FromSource, string> = {
+  home: TWO_COLUMN_FOUR_COLUMN_CARD_SIZES,
+  list: CATALOG_GRID_CARD_SIZES,
+  search: CATALOG_GRID_CARD_SIZES,
+  ranking: TWO_COLUMN_FOUR_COLUMN_CARD_SIZES,
+  compare: TWO_COLUMN_FOUR_COLUMN_CARD_SIZES,
+  recommend: TWO_COLUMN_FOUR_COLUMN_CARD_SIZES,
+};
 
 function CardSignal({ gear }: { gear: GearItem }) {
   if (gear.categorySlug === "snowboard") {
@@ -93,6 +107,7 @@ export function GearCard({
   const mediaReady = hasMedia(gear);
   const mediaSource = mediaUrl(gear);
   const mediaSrc = mediaSource ? preferProductThumbnail(mediaSource) : undefined;
+  const mediaSrcSet = mediaSource ? responsiveProductImageSrcSet(mediaSource) : undefined;
   const ratingReady = hasUserRating(gear);
   const hot = isHotProduct(gear.heat, gear.id);
   const ref = useRef<HTMLElement>(null);
@@ -163,6 +178,8 @@ export function GearCard({
           {mediaReady && mediaSrc ? (
             <SafeImage
               src={mediaSrc}
+              srcSet={mediaSrcSet}
+              sizes={mediaSrcSet ? CARD_IMAGE_SIZES[from] : undefined}
               alt={`${gear.brand} ${gear.model}`}
               loading={position === 0 && (from === "list" || from === "search") ? "eager" : "lazy"}
               fetchPriority={position === 0 && (from === "list" || from === "search") ? "high" : undefined}
