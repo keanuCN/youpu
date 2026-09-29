@@ -254,6 +254,17 @@ test("bounds approved Amer Sports fit=bounds images without changing fit or qual
   const smallImage = atomicImage.replace("height=10380", "height=600").replace("width=1445", "width=500");
   assert.equal(preferProductThumbnail(smallImage), smallImage);
 
+  for (const invalidDimensions of [
+    atomicImage.replace("width=1445", "width=0"),
+    atomicImage.replace("height=10380", "height=-10"),
+    atomicImage.replace("width=1445", "width=12.5"),
+    atomicImage.replace("&width=1445", ""),
+    atomicImage.replace("&height=10380", ""),
+    atomicImage.replace("width=1445", "width="),
+  ]) {
+    assert.equal(preferProductThumbnail(invalidDimensions), invalidDimensions);
+  }
+
   const otherHost = atomicImage.replace("cdn.amersports.com", "other.example");
   const otherPath = atomicImage.replace("0acef4a9-61b7-47b0-84f4-b49f00cdfc5f", "unlisted");
   assert.equal(preferProductThumbnail(otherHost), otherHost);

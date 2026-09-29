@@ -174,7 +174,14 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       const requestedHeight = image.searchParams.get("height");
       const width = requestedWidth === null ? undefined : Number(requestedWidth);
       const height = requestedHeight === null ? undefined : Number(requestedHeight);
-      if (Number.isFinite(width) && Number.isFinite(height)) {
+      if (
+        requestedWidth !== null &&
+        requestedHeight !== null &&
+        Number.isInteger(width) &&
+        Number.isInteger(height) &&
+        width! > 0 &&
+        height! > 0
+      ) {
         const targetWidth = Math.min(width!, widthLimit);
         const targetHeight = Math.min(height!, widthLimit);
         if (targetWidth < width! || targetHeight < height!) {
