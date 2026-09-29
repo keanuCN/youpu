@@ -58,11 +58,11 @@ function chunk<T>(items: T[], size: number): T[][] {
   return result;
 }
 
-export default function MePage() {
+export default function MePage({ initialTab }: { initialTab?: TabKey }) {
   const persisted = usePersisted();
   const me = useCurrentUser();
   const profile = me.profile;
-  const [tab, setTab] = useState<TabKey>("fav");
+  const [tab, setTab] = useState<TabKey>(initialTab ?? "fav");
 
   const favIds = me.favoriteIds;
   const history = profile ? persisted.history.filter((h) => h.userKey === profile.userKey) : [];
@@ -496,7 +496,7 @@ function ProfileForm() {
       <div className="mt-5 flex gap-2 border-t border-border pt-4">
         <Button
           onClick={async () => {
-            updateProfile(form);
+            updateProfile({ ...form, riderProfileFilled: true });
             if (hasCloudSession()) {
               try {
                 await cloudUpdateMe({

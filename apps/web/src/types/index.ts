@@ -218,6 +218,8 @@ export interface Profile {
   weightKg: number;
   level: string;
   resort: string;
+  /** 云端用户资料是否曾明确填写保存；false 时不把展示用默认值写入实测。 */
+  riderProfileFilled?: boolean;
 }
 
 export interface Account extends Profile {

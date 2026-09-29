@@ -287,7 +287,7 @@ export function cloudRatings(productRef: string, sort: "helpful" | "latest" = "h
   return request(`/api/products/${encodeURIComponent(productRef)}/ratings?sort=${sort}`);
 }
 
-export function cloudCreateRating(productRef: string, input: { overall: number; content: string; images: string[]; riderProfile: Record<string, unknown> }): Promise<CloudRating> {
+export function cloudCreateRating(productRef: string, input: { overall: number; content: string; images: string[]; riderProfile?: Record<string, unknown> }): Promise<CloudRating> {
   return request(`/api/products/${encodeURIComponent(productRef)}/ratings`, { method: "POST", body: input });
 }
 

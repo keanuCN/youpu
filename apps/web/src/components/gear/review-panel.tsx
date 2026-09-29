@@ -397,13 +397,13 @@ function ReviewItem({ review, gear, copy, persisted, isCloudReview }: { review: 
 
 function ReviewerMetaLine({ meta, copy }: { meta: ReviewerMeta; copy: ReviewCopy }) {
   const parts = [
-    `${meta.years} 年${copy.experienceLabel}`,
+    meta.years > 0 ? `${meta.years} 年${copy.experienceLabel}` : null,
     copy.showHeight && meta.heightCm ? `${meta.heightCm}cm` : null,
     copy.showWeight && meta.weightKg ? `${meta.weightKg}kg` : null,
-    meta.level,
+    meta.level || null,
     meta.resort,
   ].filter(Boolean) as string[];
-  return <p className="mono-label mt-1.5">{parts.join(" · ")}</p>;
+  return parts.length ? <p className="mono-label mt-1.5">{parts.join(" · ")}</p> : null;
 }
 
 function ReplyForm({ gear, parentId, cloudParent, onDone }: { gear: GearItem; parentId: string; cloudParent: boolean; onDone: () => void }) {
@@ -465,6 +465,7 @@ function ReviewForm({ gear }: { gear: GearItem }) {
   const { requireAuth } = useAuthGate();
   const me = useCurrentUser();
   const profile = me.profile;
+  const hasRiderProfile = Boolean(profile && profile.riderProfileFilled !== false);
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
   const [content, setContent] = useState("");
@@ -479,11 +480,11 @@ function ReviewForm({ gear }: { gear: GearItem }) {
   }, [files]);
 
   const profileMeta = [
-    profile ? `${profile.years} 年${copy.experienceLabel}` : null,
-    copy.showHeight && profile?.heightCm ? `${profile.heightCm}cm` : null,
-    copy.showWeight && profile?.weightKg ? `${profile.weightKg}kg` : null,
-    profile?.level,
-    profile?.resort,
+    hasRiderProfile && profile?.years ? `${profile.years} 年${copy.experienceLabel}` : null,
+    hasRiderProfile && copy.showHeight && profile?.heightCm ? `${profile.heightCm}cm` : null,
+    hasRiderProfile && copy.showWeight && profile?.weightKg ? `${profile.weightKg}kg` : null,
+    hasRiderProfile ? profile?.level : null,
+    hasRiderProfile ? profile?.resort : null,
   ].filter(Boolean);
 
   const submit = async () => {
@@ -506,18 +507,21 @@ function ReviewForm({ gear }: { gear: GearItem }) {
     if (hasCloudSession()) {
       try {
         imageUrls = await cloudUploadRatingImages(files);
-        const riderProfile: Record<string, unknown> = {
-          years: Number(profile?.years) || 1,
-          level: levelToApi(profile?.level ?? "中级"),
-          home_resort: profile?.resort.trim() || undefined,
-        };
-        if (copy.showHeight) riderProfile.height = profile?.heightCm ?? 175;
-        if (copy.showWeight) riderProfile.weight = Number(profile?.weightKg) || 70;
         await cloudCreateRating(productRefForGear(gear), {
           overall: rating,
           content: content.trim(),
           images: imageUrls,
-          riderProfile,
+          ...(hasRiderProfile && profile
+            ? {
+                riderProfile: {
+                  years: Number(profile.years),
+                  level: levelToApi(profile.level),
+                  home_resort: profile.resort.trim() || undefined,
+                  ...(copy.showHeight ? { height: profile.heightCm } : {}),
+                  ...(copy.showWeight ? { weight: Number(profile.weightKg) } : {}),
+                },
+              }
+            : {}),
         });
       } catch (error) {
         toast.error(error instanceof Error ? error.message : "评论发布失败");
@@ -532,11 +536,11 @@ function ReviewForm({ gear }: { gear: GearItem }) {
       images: imageUrls,
       authorName: profile?.username ?? "匿名档案员",
       authorMeta: {
-        years: Number(profile?.years) || 1,
-        heightCm: copy.showHeight ? profile?.heightCm ?? 175 : 0,
-        weightKg: copy.showWeight ? Number(profile?.weightKg) || undefined : undefined,
-        level: profile?.level ?? "中级",
-        resort: profile?.resort.trim() ?? "",
+        years: hasRiderProfile ? Number(profile?.years) || 0 : 0,
+        heightCm: hasRiderProfile && copy.showHeight ? profile?.heightCm ?? 0 : 0,
+        weightKg: hasRiderProfile && copy.showWeight ? Number(profile?.weightKg) || undefined : undefined,
+        level: hasRiderProfile ? profile?.level ?? "" : "",
+        resort: hasRiderProfile ? profile?.resort.trim() ?? "" : "",
       },
     });
     track("rating_submit", { product_id: gear.id });
@@ -551,7 +555,6 @@ function ReviewForm({ gear }: { gear: GearItem }) {
     <div className="border border-foreground">
       <div className="flex items-center justify-between border-b border-border bg-secondary/50 px-4 py-2.5">
         <p className="mono-label">写下你的实测 / FIELD REPORT</p>
-        <Link href="/me" className="mono-label text-primary hover:underline">使用条件来自个人档案 · 编辑</Link>
       </div>
       <div className="space-y-4 p-4">
         <div className="flex flex-wrap items-center gap-4">
@@ -577,9 +580,9 @@ function ReviewForm({ gear }: { gear: GearItem }) {
 
         <div className="flex flex-wrap items-center justify-between gap-2 border-y border-border py-3">
           <p className="mono-label text-muted-foreground">
-            本次使用条件：{profileMeta.length ? profileMeta.join(" · ") : "请先完善个人档案"}
+            本次使用条件：{profileMeta.length ? profileMeta.join(" · ") : "未填写（可选）"}
           </p>
-          <Link href="/me" className="mono-label text-primary hover:underline">前往个人信息中心</Link>
+          <Link href="/me?tab=profile" className="mono-label text-primary hover:underline">前往个人信息中心</Link>
         </div>
 
         <Textarea
@@ -719,10 +722,10 @@ function reviewerMeta(...values: unknown[]): ReviewerMeta {
   const merged = values.find((value) => value && typeof value === "object" && !Array.isArray(value)) as Record<string, unknown> | undefined;
   const levelMap: Record<string, string> = { beginner: "新手", intermediate: "中级", advanced: "进阶", expert: "高阶" };
   return {
-    years: Number(merged?.years ?? 1),
+    years: Number(merged?.years ?? 0),
     heightCm: Number(merged?.height ?? 0),
     weightKg: Number(merged?.weight ?? 0) || undefined,
-    level: levelMap[String(merged?.level ?? "intermediate")] ?? "中级",
+    level: merged?.level ? levelMap[String(merged.level)] ?? String(merged.level) : "",
     resort: String(merged?.home_resort ?? ""),
   };
 }

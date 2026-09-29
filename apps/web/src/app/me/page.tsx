@@ -9,6 +9,7 @@ export const metadata = simpleMetadata({
   index: false,
 });
 
-export default function Page() {
-  return <MeClient />;
+export default function Page({ searchParams }: { searchParams?: { tab?: string | string[] } }) {
+  const initialTab = searchParams?.tab === "profile" ? "profile" : undefined;
+  return <MeClient initialTab={initialTab} />;
 }
