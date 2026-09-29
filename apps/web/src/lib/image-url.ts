@@ -13,6 +13,19 @@ const VERIFIED_GOPRO_IMAGE_PATHS = new Set([
   "/on/demandware.static/-/Sites-gopro-products/default/dwd62f3260/images/Product%20Images/cameras/CHDHX-121-master/plp-product-card-h12.png",
   "/on/demandware.static/-/Sites-gopro-products/default/dw212f9f28/images/Product%20Images/cameras/CHDHX-131-master/plp-product-card-h13.png",
 ]);
+const VERIFIED_SMALL_PRODUCT_IMAGES = new Map([
+  [
+    "www.follows.co.jp/pic-labo/2526bc-r2-1a.jpg",
+    "https://image1.shopserve.jp/follows.co.jp/pic-labo/limg/2526bc-r2-1a.jpg",
+  ],
+  [
+    "www.point-official.shop/img/goods/L/4550133341434_1.jpg",
+    "https://www.point-official.shop/img/goods/S/4550133341434_1.jpg",
+  ],
+]);
+const VERIFIED_FOLLOWS_THUMBNAIL_PATHS = new Set([
+  "/follows.co.jp/pic-labo/limg/2526bc-r2-1a.jpg",
+]);
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -113,6 +126,15 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       optimizer.searchParams.set("w", "375");
       optimizer.searchParams.set("q", "80");
       return optimizer.toString();
+    }
+    if (
+      widthLimit >= 320 &&
+      widthLimit < 1600 &&
+      image.search === "" &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const verifiedThumbnail = VERIFIED_SMALL_PRODUCT_IMAGES.get(`${image.hostname}${image.pathname}`);
+      if (verifiedThumbnail) return verifiedThumbnail;
     }
     const isShopifyImage =
       image.pathname.includes("/cdn/shop/") ||
@@ -399,6 +421,18 @@ const REMOTE_IMAGE_RULES = [
 export function isAllowedRemoteImageUrl(source: string): boolean {
   try {
     const url = new URL(source);
+    if (
+      url.hostname === "image1.shopserve.jp" &&
+      VERIFIED_FOLLOWS_THUMBNAIL_PATHS.has(url.pathname)
+    ) {
+      return (
+        url.protocol === "https:" &&
+        url.port === "" &&
+        url.username === "" &&
+        url.password === "" &&
+        url.search === ""
+      );
+    }
     if (url.hostname === "gopro.com" && url.pathname === "/_next/image") {
       const nestedSource = url.searchParams.get("url");
       const requestedWidth = url.searchParams.get("w");

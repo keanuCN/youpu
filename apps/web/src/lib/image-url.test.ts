@@ -217,6 +217,33 @@ test("uses the verified GoPro WebP optimizer for the three catalog images only",
   assert.equal(isAllowedRemoteImageUrl(arbitraryOptimizer.toString()), false);
 });
 
+test("uses official small variants only for the verified Follows and Point product images", () => {
+  const follows = "https://www.follows.co.jp/pic-labo/2526bc-r2-1a.jpg";
+  const followsSmall = "https://image1.shopserve.jp/follows.co.jp/pic-labo/limg/2526bc-r2-1a.jpg";
+  assert.equal(preferProductThumbnail(follows), followsSmall);
+  assert.equal(preferProductThumbnail(follows, 192), follows);
+  assert.equal(preferHighResolutionProductImage(follows), follows);
+  assert.equal(isAllowedImageUrl(followsSmall), true);
+  assert.equal(isAllowedRemoteImageUrl(`${followsSmall}?width=320`), false);
+
+  const point = "https://www.point-official.shop/img/goods/L/4550133341434_1.jpg";
+  const pointSmall = "https://www.point-official.shop/img/goods/S/4550133341434_1.jpg";
+  assert.equal(preferProductThumbnail(point), pointSmall);
+  assert.equal(preferProductThumbnail(point, 192), point);
+  assert.equal(preferHighResolutionProductImage(point), point);
+
+  const unverifiedFollows = follows.replace("2526bc-r2-1a", "unverified");
+  const unverifiedPoint = point.replace("4550133341434", "0000000000000");
+  assert.equal(preferProductThumbnail(unverifiedFollows), unverifiedFollows);
+  assert.equal(preferProductThumbnail(unverifiedPoint), unverifiedPoint);
+  assert.equal(preferProductThumbnail(`${follows}?version=2`), `${follows}?version=2`);
+
+  const proxiedPoint = `/api/image-proxy?url=${encodeURIComponent(point)}&source=product`;
+  const thumbnailProxy = new URL(preferProductThumbnail(proxiedPoint), "https://youpu.local");
+  assert.equal(thumbnailProxy.searchParams.get("url"), pointSmall);
+  assert.equal(thumbnailProxy.searchParams.get("source"), "product");
+});
+
 test("limits approved Decathlon f=<width>x0 thumbnails and preserves other URL data", () => {
   const oversizedImage =
     "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto&quality=80";
