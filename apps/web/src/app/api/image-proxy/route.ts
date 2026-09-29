@@ -7,7 +7,7 @@ import { isAllowedRemoteImageUrl } from "@/lib/image-url";
 const isStaticExport = process.env.NEXT_OUTPUT === "export";
 export const dynamic = isStaticExport ? "force-static" : "force-dynamic";
 
-const ALLOWED_RASTER_TYPES = new Set(["image/png", "image/jpeg", "image/webp", "image/gif"]);
+const ALLOWED_RASTER_TYPES = new Set(["image/png", "image/jpeg", "image/webp", "image/avif", "image/gif"]);
 
 function upstreamHeaders(target: URL): HeadersInit {
   const headers: Record<string, string> = {
