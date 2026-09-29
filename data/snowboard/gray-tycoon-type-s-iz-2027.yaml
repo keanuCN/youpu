@@ -11,6 +11,9 @@ specs:
   core: Wood Core + IZANAS Fiber
   scenes:
     - carving
+  sizeSpecs:
+    - { size: "63", overallLength: 1630, effectiveEdge: 1510, contactLength: 1410, waistWidth: 200, sidecutRadii: "10200/9800/10800", sidecutOffset: -40, noseLength: 135, noseWidth: 260, noseHeight: 20.3, tailLength: 85, tailWidth: 247, tailHeight: 5.2, camber: 7, stanceWidth: "460–540", insertQty: "10+10 & ALLFLEX", setback: 60, edge: "1.8 mm / 48 RCWL", sidewallAngle: "15°", sidewallColor: "NEON RED", base: "IS7500 Graphite" }
+    - { size: "85", overallLength: 1850, effectiveEdge: 1735, contactLength: 1610, waistWidth: 200, sidecutRadii: "18800/17800/20400", sidecutOffset: -60, noseLength: 145, noseWidth: 246, noseHeight: 19.9, tailLength: 95, tailWidth: 232, tailHeight: 6.4, camber: 6, stanceWidth: "460–540", insertQty: "10+10 & ALLFLEX", setback: 80, edge: "1.8 mm / 48 RCWL", sidewallAngle: "15°", sidewallColor: "NEON RED", base: "IS7500 Graphite" }
 images:
   - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/28_TYCOON%20Type-S%5Biz%5D/2627_28_TYCOON%20Type-S%5Biz%5D_main.png"
     kind: face
