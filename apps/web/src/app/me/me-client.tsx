@@ -130,7 +130,7 @@ export default function MePage({ initialTab }: { initialTab?: TabKey }) {
           <ul className="mono-label space-y-1.5 text-foreground/70">
             <li>· 使用对比坞（最多 4 件）</li>
             <li>· 浏览全部档案、参数表、雷达图与社区实测</li>
-            <li>· 做选装备问卷并查看匹配结果</li>
+            <li>· 做单板选购问卷并查看匹配结果</li>
           </ul>
         </div>
       </div>
@@ -345,7 +345,7 @@ export default function MePage({ initialTab }: { initialTab?: TabKey }) {
               ))}
             </ul>
           ) : (
-            <Empty text="还没有做过选装备问卷。" cta={{ label: "开始 60 秒问卷", href: "/quiz" }} />
+            <Empty text="还没有做过单板选购问卷。" cta={{ label: "开始单板问卷", href: "/quiz" }} />
           )
         ) : null}
 

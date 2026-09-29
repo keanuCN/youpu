@@ -22,7 +22,7 @@ import { CategoryPanel } from "./category-panel";
 const NAV = [
   { label: "榜单", href: "/rankings" },
   { label: "参数对比", href: "/compare" },
-  { label: "选装备问卷", href: "/quiz" },
+  { label: "单板选购问卷", href: "/quiz" },
 ] as const;
 
 export function SiteHeader() {

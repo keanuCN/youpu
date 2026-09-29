@@ -15,7 +15,7 @@ const REMAINING_CATEGORY_COUNT = Math.max(LEAF_CATEGORIES.length - FEATURED_CATE
 
 const TOOLS: { label: string; href: string }[] = [
   { label: "参数对比", href: "/compare" },
-  { label: "选装备问卷", href: "/quiz" },
+  { label: "单板选购问卷", href: "/quiz" },
   { label: "本季榜单", href: "/rankings" },
   { label: "我的收藏", href: "/me" },
   { label: "登录 / 注册", href: "/auth" },

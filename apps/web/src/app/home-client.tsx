@@ -348,7 +348,7 @@ function Cover({
               href="/quiz"
               className="mono-label flex items-center gap-2 border border-foreground px-5 py-3 transition-colors hover:bg-foreground hover:text-background"
             >
-              <Compass size={14} strokeWidth={1.6} /> 60 秒选装备问卷
+              <Compass size={14} strokeWidth={1.6} /> 60 秒单板问卷
             </Link>
           </div>
 
@@ -461,7 +461,7 @@ function QuizBand({ snowboardCount }: { snowboardCount: number }) {
         <div className="p-7 sm:p-10">
           <p className="mono-label mb-4 text-primary">RECOMMENDATION ENGINE</p>
           <h2 className="text-[28px] leading-tight font-medium tracking-tight text-balance sm:text-[34px]">
-            不知道选哪件？<span className="serif-display text-primary"> 6 个问题</span>给出带理由的三件装备。
+            不知道选哪块？<span className="serif-display text-primary"> 6 个问题</span>给出带理由的三款单板。
           </h2>
           <p className="mt-4 max-w-xl text-[13.5px] leading-relaxed text-muted-foreground">
             问卷会读取你的水平、使用场景、身体条件与预算，
@@ -480,7 +480,7 @@ function QuizBand({ snowboardCount }: { snowboardCount: number }) {
           className="flex flex-col items-center justify-center gap-3 border-t border-foreground bg-foreground p-8 text-background transition-colors hover:bg-primary lg:border-t-0 lg:border-l"
         >
           <Compass size={28} strokeWidth={1.2} />
-          <span className="mono-label text-background/70">开始问卷</span>
+          <span className="mono-label text-background/70">开始单板问卷</span>
           <span className="serif-display text-2xl">60 秒</span>
           <ArrowRight size={18} strokeWidth={1.4} />
         </Link>

@@ -1,30 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight, Compass, RotateCcw } from "lucide-react";
 import { GearRow } from "@/components/gear/gear-card";
 import { ScoreMark } from "@/components/gear/primitives";
 import { PageHead } from "@/components/layout/section-head";
 import { Button } from "@/components/ui/button";
-import { CATEGORIES, SNOWBOARD, getCategory } from "@/data/categories";
+import { SNOWBOARD } from "@/data/categories";
 import { cloudRecommendations, hasCloudSession } from "@/lib/api";
 import { recommend, type QuizAnswers, type Recommendation } from "@/lib/domain";
 import { saveQuiz } from "@/lib/store";
 import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
 
-const LIVE_CATEGORIES = Object.values(CATEGORIES).filter((category) => category.status === "live");
-
 export default function QuizPage() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const requestedCategory = searchParams.get("category");
-  const categorySlug = getCategory(requestedCategory ?? "")?.status === "live" ? requestedCategory! : "snowboard";
-  const category = getCategory(categorySlug) ?? SNOWBOARD;
-  const questions = category.quizTemplate;
-  const supported = questions.length > 0;
+  const categorySlug = "snowboard";
+  const questions = SNOWBOARD.quizTemplate;
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<QuizAnswers>({});
   const [result, setResult] = useState<Recommendation[] | null>(null);
@@ -101,44 +93,12 @@ export default function QuizPage() {
     return Array.isArray(cur) ? cur.includes(value) : cur === value;
   };
 
-  const selectCategory = (slug: string) => {
-    router.replace(slug === "snowboard" ? "/quiz" : `/quiz?category=${encodeURIComponent(slug)}`);
-  };
-
-  if (!supported) {
-    return (
-      <div className="mx-auto max-w-[820px] px-5 py-10 sm:px-8">
-        <PageHead
-          kicker="RECOMMENDATION QUIZ"
-          title={`${category.name}选装备问卷`}
-          titleEn="Find Your Gear"
-          desc="问卷需要先建立对应品类的评分维度和推荐规则，当前不使用单板问题套用到其他装备。"
-        />
-        <CategorySwitch categorySlug={categorySlug} onChange={selectCategory} />
-        <div className="mt-10 border border-dashed border-border py-20 text-center">
-          <p className="text-[15px] font-medium">{category.name}问卷待补充</p>
-          <p className="mx-auto mt-2 max-w-md text-[13px] leading-relaxed text-muted-foreground">
-            当前已有单板问卷。{category.name}的使用场景、关键参数和推荐权重整理完成后，再开放独立问卷。
-          </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-2">
-            <Link href={`/browse/${categorySlug}`} className="mono-label bg-foreground px-5 py-3 text-background hover:bg-primary">
-              先看{category.name}档案
-            </Link>
-            <button type="button" onClick={() => selectCategory("snowboard")} className="mono-label border border-foreground px-5 py-3 hover:bg-foreground hover:text-background">
-              做单板问卷
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   if (result) {
     return (
       <div className="mx-auto max-w-[1100px] px-5 py-10 sm:px-8">
         <PageHead
           kicker="RECOMMENDATION RESULT"
-          title="为你匹配的三件装备"
+          title="为你匹配的三款单板"
           titleEn="Your Shortlist"
           desc="匹配度由场景命中、预算区间、体重对应板长、硬度偏好、水平适配与优先项加权得出，下方逐条列出计分理由。"
           aside={
@@ -246,12 +206,10 @@ export default function QuizPage() {
     <div className="mx-auto max-w-[820px] px-5 py-10 sm:px-8">
       <PageHead
         kicker="RECOMMENDATION QUIZ"
-        title={`${category.name}选装备问卷`}
+        title="单板选装备问卷"
         titleEn="Find Your Gear"
         desc={`${questions.length} 个问题，不收集任何个人信息。`}
       />
-
-      <CategorySwitch categorySlug={categorySlug} onChange={selectCategory} />
 
       <div className="mt-10">
         <div className="flex items-center justify-between">
@@ -371,25 +329,4 @@ export default function QuizPage() {
 function hasQuizAnswer(value: QuizAnswers[keyof QuizAnswers] | undefined): boolean {
   if (Array.isArray(value)) return value.length > 0;
   return typeof value === "string" && value.trim().length > 0;
-}
-
-function CategorySwitch({ categorySlug, onChange }: { categorySlug: string; onChange: (slug: string) => void }) {
-  return (
-    <div className="thin-scroll mt-8 flex items-center gap-1.5 overflow-x-auto border-b border-foreground pb-3">
-      <span className="mono-label mr-1 shrink-0 text-muted-foreground">品类</span>
-      {LIVE_CATEGORIES.map((category) => (
-        <button
-          key={category.slug}
-          type="button"
-          onClick={() => onChange(category.slug)}
-          className={cn(
-            "mono-label shrink-0 border px-3.5 py-2 transition-colors",
-            categorySlug === category.slug ? "border-foreground bg-foreground text-background" : "border-border hover:border-foreground",
-          )}
-        >
-          {category.name}
-        </button>
-      ))}
-    </div>
-  );
 }
