@@ -164,7 +164,7 @@ export function GearCard({
             <SafeImage
               src={mediaSrc}
               alt={`${gear.brand} ${gear.model}`}
-              loading="lazy"
+              loading={position === 0 && (from === "list" || from === "search") ? "eager" : "lazy"}
               fallbackLabel={`${gear.brand} ${gear.model}`}
               fallbackClassName="p-3"
               className={cn(
