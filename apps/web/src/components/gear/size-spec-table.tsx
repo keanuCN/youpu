@@ -1,3 +1,7 @@
+"use client";
+
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useRef } from "react";
 import type { GearItem } from "@/types";
 
 const COLUMNS = [
@@ -42,6 +46,7 @@ function sizeRows(value: string | number | null | undefined): SizeSpec[] {
 }
 
 export function SizeSpecTable({ gear }: { gear: GearItem }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
   const rows = sizeRows(gear.specs.sizeSpecs);
   if (!rows.length) return null;
   const columns = COLUMNS.filter(([key]) => key === "size" || rows.some((row) => row[key] !== null && row[key] !== undefined && row[key] !== ""));
@@ -53,8 +58,9 @@ export function SizeSpecTable({ gear }: { gear: GearItem }) {
         <span className="mono-label">{rows.length} 个尺码 · 数据源：GRAY 26–27 官方目录</span>
       </div>
       <div
+        ref={scrollRef}
         aria-label="官方尺码参数，可横向滚动查看"
-        className="thin-scroll w-full max-w-full overflow-x-auto overscroll-x-contain"
+        className="size-spec-scroll w-full max-w-full overflow-x-auto overscroll-x-contain"
         tabIndex={0}
       >
         <table className="w-full min-w-max border-collapse text-left text-[12px]">
@@ -79,6 +85,25 @@ export function SizeSpecTable({ gear }: { gear: GearItem }) {
             ))}
           </tbody>
         </table>
+      </div>
+      <div className="mt-2 flex items-center justify-between gap-3">
+        <button
+          type="button"
+          aria-label="向左查看更多尺码参数"
+          className="flex size-10 shrink-0 items-center justify-center rounded-md border border-border text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40"
+          onClick={() => scrollRef.current?.scrollBy({ left: -Math.max(240, scrollRef.current.clientWidth * 0.75), behavior: "smooth" })}
+        >
+          <ChevronLeft aria-hidden="true" className="size-5" />
+        </button>
+        <span className="mono-label text-center">拖动滚动条，或点击箭头查看完整参数</span>
+        <button
+          type="button"
+          aria-label="向右查看更多尺码参数"
+          className="flex size-10 shrink-0 items-center justify-center rounded-md border border-border text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40"
+          onClick={() => scrollRef.current?.scrollBy({ left: Math.max(240, scrollRef.current.clientWidth * 0.75), behavior: "smooth" })}
+        >
+          <ChevronRight aria-hidden="true" className="size-5" />
+        </button>
       </div>
       <p className="mono-label mt-3">— 表示官方目录未列出；硬度顺序为板头 / 腰部 / 板尾。</p>
     </section>

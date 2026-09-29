@@ -219,6 +219,28 @@
   .thin-scroll::-webkit-scrollbar-track {
     background: transparent;
   }
+
+  /* 官方参数表保留原生横向滚动，同时加大滚动条的拖动区域。 */
+  .size-spec-scroll {
+    scrollbar-color: var(--color-foreground) var(--color-muted);
+    scrollbar-width: auto;
+  }
+  .size-spec-scroll::-webkit-scrollbar {
+    height: 14px;
+  }
+  .size-spec-scroll::-webkit-scrollbar-thumb {
+    min-width: 48px;
+    border: 3px solid var(--color-muted);
+    border-radius: 999px;
+    background: var(--color-foreground);
+  }
+  .size-spec-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--color-muted-foreground);
+  }
+  .size-spec-scroll::-webkit-scrollbar-track {
+    border-radius: 999px;
+    background: var(--color-muted);
+  }
 }
 
 @layer utilities {
