@@ -13,7 +13,7 @@ export function isAiGeneratedImageUrl(source: string): boolean {
   }
 }
 
-/** 详情大图至少请求 1600px 的 Shopify 原图变体，避免低分辨率目录缩略图被放大。 */
+/** 详情大图至少请求 1600px 的 Shopify 变体，并限制其他已验证来源的超大原图。 */
 export function preferHighResolutionProductImage(source: string): string {
   try {
     const image = new URL(source, "https://youpu.local");
@@ -23,14 +23,21 @@ export function preferHighResolutionProductImage(source: string): string {
       image.searchParams.set("url", preferHighResolutionProductImage(proxiedSource));
       return `${image.pathname}${image.search}`;
     }
-    if (image.pathname.includes("/cdn/shop/") && image.searchParams.has("width")) {
-      const width = Number(image.searchParams.get("width"));
-      if (Number.isFinite(width) && width > 0 && width < 1600) {
-        image.searchParams.set("width", "1600");
-        return image.toString();
+    const boundedSource = preferProductThumbnail(source, 1600);
+    const boundedImage = new URL(boundedSource, "https://youpu.local");
+    const isShopifyImage =
+      boundedImage.pathname.includes("/cdn/shop/") ||
+      (boundedImage.hostname === "cdn.shopify.com" && boundedImage.pathname.startsWith("/s/files/"));
+    let upgradedShopifyImage = false;
+    if (isShopifyImage) {
+      const requestedWidth = boundedImage.searchParams.get("width");
+      const width = Number(requestedWidth);
+      if (requestedWidth === null || (Number.isFinite(width) && width > 0 && width < 1600)) {
+        boundedImage.searchParams.set("width", "1600");
+        upgradedShopifyImage = true;
       }
     }
-    return source;
+    return upgradedShopifyImage ? boundedImage.toString() : boundedSource;
   } catch {
     return source;
   }

@@ -1,7 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { isAllowedImageUrl, preferProductThumbnail, resolveImageUrl } from "./image-url";
+import {
+  isAllowedImageUrl,
+  preferHighResolutionProductImage,
+  preferProductThumbnail,
+  resolveImageUrl,
+} from "./image-url";
 
 const CDN_IMAGE =
   "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=test";
@@ -27,6 +32,30 @@ test("limits Shopify product images to thumbnail width without changing detail i
   assert.equal(preferProductThumbnail(alreadySmall), alreadySmall);
   const nonShopify = "https://cdn.dam.salomon.com/product.png?width=2000";
   assert.equal(preferProductThumbnail(nonShopify), nonShopify);
+});
+
+test("keeps product detail images high resolution while bounding verified CDN sources", () => {
+  const shopify = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=800";
+  assert.equal(new URL(preferHighResolutionProductImage(shopify)).searchParams.get("width"), "1600");
+
+  const decathlon =
+    "https://contents.mediadecathlon.com/p2704355/picture.jpg?f=3000x0&format=auto";
+  const decathlonDetail = new URL(preferHighResolutionProductImage(decathlon));
+  assert.equal(decathlonDetail.searchParams.get("f"), "1600x0");
+  assert.equal(decathlonDetail.searchParams.get("format"), "auto");
+
+  const specialized =
+    "https://assets.specialized.com/i/specialized/93325-50_SJ-15-COMP-SEA-SILDST_HERO-SQUARE";
+  const specializedDetail = new URL(preferHighResolutionProductImage(specialized));
+  assert.equal(specializedDetail.searchParams.get("w"), "1600");
+  assert.equal(specializedDetail.searchParams.get("h"), "1600");
+
+  const unknown = "https://unknown.example/product.png";
+  assert.equal(preferHighResolutionProductImage(unknown), unknown);
+
+  const proxied = `/api/image-proxy?url=${encodeURIComponent(decathlon)}`;
+  const proxiedDetail = new URL(preferHighResolutionProductImage(proxied), "https://youpu.local");
+  assert.equal(new URL(proxiedDetail.searchParams.get("url")!).searchParams.get("f"), "1600x0");
 });
 
 test("limits approved Salomon DAM thumbnails and preserves their query parameters", () => {
