@@ -1,5 +1,13 @@
 const IMAGE_PROXY_PATH = "/api/image-proxy";
 const PRODUCT_THUMBNAIL_WIDTH = 800;
+const NORDICA_PRODUCT_IMAGE_WIDTHS = [56, 112, 168, 640, 1280];
+const VERIFIED_NORDICA_PRODUCT_IMAGES = new Set([
+  "0A668100001_ENFORCER_104_FLAT",
+  "0A668200001_ENFORCER_99",
+  "0A668300001_ENFORCER_94_FLAT",
+  "0A668400001_ENFORCER_89_FLAT",
+  "0A548500001_SANTA_ANA_102_FLAT",
+]);
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -115,6 +123,17 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       if (requestedWidth !== null && Number.isFinite(width) && width > targetWidth) {
         image.searchParams.set("sw", String(targetWidth));
         return image.toString();
+      }
+    }
+    if (image.hostname === "www.nordica.com" && isAllowedRemoteImageUrl(image.toString())) {
+      const match = image.pathname.match(/^\/storage\/Product\/([A-Za-z0-9_-]+)\.png$/);
+      const imageId = match?.[1];
+      if (imageId && VERIFIED_NORDICA_PRODUCT_IMAGES.has(imageId)) {
+        const targetWidth = NORDICA_PRODUCT_IMAGE_WIDTHS.filter((width) => width <= widthLimit).at(-1);
+        if (targetWidth) {
+          image.pathname = `/storage/thumbs/Product/${targetWidth}__resize__${imageId}.webp`;
+          return image.toString();
+        }
       }
     }
     if (image.hostname === "contents.mediadecathlon.com" && isAllowedRemoteImageUrl(image.toString())) {
@@ -243,6 +262,7 @@ const REMOTE_IMAGE_RULES = [
   { host: "cdn.amersports.com", pathPrefix: "/59174f3d-d998-49a3-ae2a-b49f00cdfb23/" },
   { host: "cdn.amersports.com", pathPrefix: "/47a56e73-6422-4d40-bcf3-b4bf00ada651/" },
   { host: "www.nordica.com", pathPrefix: "/storage/Product/" },
+  { host: "www.nordica.com", pathPrefix: "/storage/thumbs/Product/" },
   { host: "cdn-mdb.head.com", pathPrefix: "/CDN3/D/313236.SET_WO/" },
   { host: "cdn-mdb.head.com", pathPrefix: "/CDN3/D/316485/" },
   { host: "cdn-mdb.head.com", pathPrefix: "/CDN3/D/316225/" },

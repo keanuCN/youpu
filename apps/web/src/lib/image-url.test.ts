@@ -44,6 +44,12 @@ test("keeps product detail images high resolution while bounding verified CDN so
   const oversizedRossignol = rossignol.replace("sw=800", "sw=2400");
   assert.equal(new URL(preferHighResolutionProductImage(oversizedRossignol)).searchParams.get("sw"), "1600");
 
+  const nordica = "https://www.nordica.com/storage/Product/0A668400001_ENFORCER_89_FLAT.png";
+  assert.equal(
+    new URL(preferHighResolutionProductImage(nordica)).pathname,
+    "/storage/thumbs/Product/1280__resize__0A668400001_ENFORCER_89_FLAT.webp",
+  );
+
   const decathlon =
     "https://contents.mediadecathlon.com/p2704355/picture.jpg?f=3000x0&format=auto";
   const decathlonDetail = new URL(preferHighResolutionProductImage(decathlon));
@@ -146,6 +152,33 @@ test("limits approved Rossignol card thumbnails to 480px while preserving other 
   assert.equal(optimizedSource.searchParams.get("sw"), "480");
   assert.equal(optimizedSource.searchParams.get("sh"), "1200");
   assert.equal(optimizedSource.searchParams.get("fmt"), "webp");
+  assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
+});
+
+test("uses official Nordica WebP thumbnail widths only for verified product images", () => {
+  const image =
+    "https://www.nordica.com/storage/Product/0A668400001_ENFORCER_89_FLAT.png?source=official";
+  const thumbnail = new URL(preferProductThumbnail(image));
+  assert.equal(
+    thumbnail.pathname,
+    "/storage/thumbs/Product/640__resize__0A668400001_ENFORCER_89_FLAT.webp",
+  );
+  assert.equal(thumbnail.searchParams.get("source"), "official");
+
+  const compareThumbnail = new URL(preferProductThumbnail(image, 192));
+  assert.equal(compareThumbnail.pathname, "/storage/thumbs/Product/168__resize__0A668400001_ENFORCER_89_FLAT.webp");
+  const highDensityThumbnail = new URL(preferProductThumbnail(image, 1600));
+  assert.equal(highDensityThumbnail.pathname, "/storage/thumbs/Product/1280__resize__0A668400001_ENFORCER_89_FLAT.webp");
+
+  const unverifiedProduct = image.replace("0A668400001_ENFORCER_89_FLAT", "UNVERIFIED_SKU");
+  assert.equal(preferProductThumbnail(unverifiedProduct), unverifiedProduct);
+  const unrelatedPath = image.replace("/storage/Product/", "/storage/Other/");
+  assert.equal(preferProductThumbnail(unrelatedPath), unrelatedPath);
+
+  const proxiedImage = `/api/image-proxy?url=${encodeURIComponent(image)}&source=product`;
+  const proxiedThumbnail = new URL(preferProductThumbnail(proxiedImage), "https://youpu.local");
+  const optimizedSource = new URL(proxiedThumbnail.searchParams.get("url")!);
+  assert.equal(optimizedSource.pathname, "/storage/thumbs/Product/640__resize__0A668400001_ENFORCER_89_FLAT.webp");
   assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
 });
 
