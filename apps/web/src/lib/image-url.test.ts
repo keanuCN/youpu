@@ -37,6 +37,22 @@ test("limits Shopify product images to thumbnail width without changing detail i
   assert.equal(preferProductThumbnail(nonShopify), nonShopify);
 });
 
+test("limits Shopify compare-dock images to 96px while preserving proxy source parameters", () => {
+  const shopifyImage = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=800";
+  const dockThumbnail = new URL(preferProductThumbnail(shopifyImage, 96));
+  assert.equal(dockThumbnail.searchParams.get("width"), "96");
+  assert.equal(dockThumbnail.searchParams.get("v"), "1");
+
+  const proxied = `/api/image-proxy?url=${encodeURIComponent(shopifyImage)}`;
+  const proxiedDockThumbnail = new URL(preferProductThumbnail(proxied, 96), "https://youpu.local");
+  const proxiedSource = new URL(proxiedDockThumbnail.searchParams.get("url")!);
+  assert.equal(proxiedSource.searchParams.get("width"), "96");
+  assert.equal(proxiedSource.searchParams.get("v"), "1");
+
+  const nonShopify = "https://unknown.example/large.png";
+  assert.equal(preferProductThumbnail(nonShopify, 96), nonShopify);
+});
+
 test("provides responsive small and middle variants only for the verified Atomic Bent Chetler image", () => {
   const source =
     "https://img01.yzcdn.cn/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg";

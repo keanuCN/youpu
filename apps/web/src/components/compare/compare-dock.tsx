@@ -100,7 +100,7 @@ export function CompareDock() {
             <div key={g.id} className="group relative flex shrink-0 items-center gap-2 border border-border bg-card py-1.5 pr-6 pl-1.5">
               <Link href={`/gear/${g.id}`} className="flex items-center gap-2">
                 <SafeImage
-                  src={preferProductThumbnail(g.hero, 480)}
+                  src={preferProductThumbnail(g.hero, 96)}
                   alt=""
                   loading="lazy"
                   fallbackLabel={`${g.brand} ${g.model}`}
