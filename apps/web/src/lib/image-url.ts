@@ -648,7 +648,17 @@ const REMOTE_IMAGE_RULES = [
   {
     host: "upload.wikimedia.org",
     pathPrefix:
+      "/wikipedia/commons/thumb/9/9e/Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg/1280px-Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg",
+  },
+  {
+    host: "upload.wikimedia.org",
+    pathPrefix:
       "/wikipedia/commons/thumb/3/3b/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg/1920px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg",
+  },
+  {
+    host: "upload.wikimedia.org",
+    pathPrefix:
+      "/wikipedia/commons/thumb/3/3b/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg/1280px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg",
   },
   {
     host: "upload.wikimedia.org",
@@ -658,7 +668,17 @@ const REMOTE_IMAGE_RULES = [
   {
     host: "upload.wikimedia.org",
     pathPrefix:
+      "/wikipedia/commons/thumb/8/83/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg/1280px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg",
+  },
+  {
+    host: "upload.wikimedia.org",
+    pathPrefix:
       "/wikipedia/commons/thumb/7/7f/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg/1920px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg",
+  },
+  {
+    host: "upload.wikimedia.org",
+    pathPrefix:
+      "/wikipedia/commons/thumb/7/7f/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg/1280px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg",
   },
   {
     host: "390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net",

@@ -1,5 +1,11 @@
 import { resolveImageUrl } from "../lib/image-url";
 
+function commonsHeroSrcSet(source: string) {
+  const highResolutionSource = resolveImageUrl(source);
+  const thumbnailSource = highResolutionSource.replace("/1920px-", "/1280px-");
+  return `${thumbnailSource} 1280w, ${highResolutionSource} 1920w`;
+}
+
 // 视觉素材（CDN；开发环境通过本地代理加载，避免浏览器直连大图不稳定）
 export const IMG = {
   baseA:
@@ -49,6 +55,7 @@ export const IMG = {
 export const HERO_IMAGE_POOL = [
   {
     src: IMG.heroRidge,
+    srcSet: undefined,
     alt: "雪山山脊与滑雪场原创插画",
     locationLabel: "雪山山脊",
     sourcePage: undefined,
@@ -56,6 +63,9 @@ export const HERO_IMAGE_POOL = [
   },
   {
     src: resolveImageUrl(
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg/1920px-Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg",
+    ),
+    srcSet: commonsHeroSrcSet(
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg/1920px-Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg",
     ),
     alt: "阿勒泰将军山滑雪场远景",
@@ -68,6 +78,9 @@ export const HERO_IMAGE_POOL = [
     src: resolveImageUrl(
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg/1920px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg",
     ),
+    srcSet: commonsHeroSrcSet(
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg/1920px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg",
+    ),
     alt: "新疆阿勒泰地区冬季雪景",
     locationLabel: "新疆阿勒泰地区",
     sourcePage: "https://commons.wikimedia.org/wiki/File:Snow_Scenery_in_Altay_Prefecture,_Xinjiang,_China,_picture3.jpg",
@@ -78,6 +91,9 @@ export const HERO_IMAGE_POOL = [
     src: resolveImageUrl(
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg/1920px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg",
     ),
+    srcSet: commonsHeroSrcSet(
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg/1920px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg",
+    ),
     alt: "新疆布尔津禾木乡冬季雪景",
     locationLabel: "新疆阿勒泰 / 禾木",
     sourcePage: "https://commons.wikimedia.org/wiki/File:Snow_Scenery_in_Altay_Prefecture,_Xinjiang,_China,_picture10.jpg",
@@ -86,6 +102,9 @@ export const HERO_IMAGE_POOL = [
   },
   {
     src: resolveImageUrl(
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg/1920px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg",
+    ),
+    srcSet: commonsHeroSrcSet(
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg/1920px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg",
     ),
     alt: "新疆阿勒泰地区冬季山景",

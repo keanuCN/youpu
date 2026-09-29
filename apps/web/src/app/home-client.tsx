@@ -234,6 +234,8 @@ function Cover({
           {heroImage && (
             <img
               src={heroImage.src}
+              srcSet={heroImage.srcSet}
+              sizes="(min-width: 1440px) 714px, (min-width: 1024px) calc((100vw - 64px) * 0.535), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
               alt={heroImage.alt}
               loading="eager"
               fetchPriority="high"
