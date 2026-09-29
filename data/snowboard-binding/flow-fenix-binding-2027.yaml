@@ -7,6 +7,7 @@ title: "Flow Fenix 2027"
 one_liner: "Flow 后入式固定器，官网描述其定位兼顾公园动作与雪场巡航。"
 specs:
   entrySystem: rear-entry
+  bindingSizeGuide: "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。"
   flexFeel: mid-soft
   terrain: [all-mountain]
   mountingSystem: "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"

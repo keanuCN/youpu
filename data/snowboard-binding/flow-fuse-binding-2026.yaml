@@ -7,6 +7,7 @@ title: "Flow Fuse 2026"
 one_liner: "Flow 后入式固定器，Fusion 一体式绑带协助快速进入后仰高背结构。"
 specs:
   entrySystem: rear-entry
+  bindingSizeGuide: "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。"
   flexFeel: mid-stiff
   terrain: [all-mountain]
   mountingSystem: "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"
