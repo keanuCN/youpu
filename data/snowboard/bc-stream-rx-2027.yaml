@@ -4,12 +4,22 @@ brand: bc-stream
 model: RX
 year: 2027
 title: BC Stream RX 2027
-one_liner: 以深弯和刻滑控制为核心，26/27 款增加 Hard Flex 选项；具体几何数据须按尺码读取。
+one_liner: 以深弯和刻滑控制为核心，26/27 款提供 Regular / Hard 两种硬度及六种尺码，包含窄腰版。
 specs:
   shape: Directional
+  profile: Variable Camber（品牌资料/经销商商品说明）
+  profileFamily: hybrid
+  flexOptions: Regular / Hard（按尺码提供的硬度选项）
   scenes:
     - carving
     - all-mountain
+  sizeSpecs:
+    - { size: "154N", overallLength: 1540, effectiveEdge: 1290, waistWidth: 242, sidecutRadii: "8.8/8.5/8.2/8.8/9.4" }
+    - { size: "159N", overallLength: 1590, effectiveEdge: 1340, waistWidth: 244, sidecutRadii: "9.3/9.0/8.7/9.3/9.9" }
+    - { size: "159", overallLength: 1590, effectiveEdge: 1340, waistWidth: 252, sidecutRadii: "9.3/9.0/8.7/9.3/9.9" }
+    - { size: "164", overallLength: 1640, effectiveEdge: 1390, waistWidth: 254, sidecutRadii: "9.8/9.5/9.2/9.8/10.4" }
+    - { size: "169", overallLength: 1690, effectiveEdge: 1440, waistWidth: 256, sidecutRadii: "10.3/10.0/9.7/10.3/10.9" }
+    - { size: "174", overallLength: 1740, effectiveEdge: 1490, waistWidth: 258, sidecutRadii: "10.8/10.5/10.2/10.8/11.4" }
 images:
   - url: "https://www.follows.co.jp/pic-labo/2627bc-rxn-1.jpg"
     kind: face
@@ -18,6 +28,6 @@ images:
     sort_order: 0
 data_source:
   kind: manual
-  origin_url: https://www.follows.co.jp/SHOP/sn-sb-bc-056.html
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  origin_url: https://www.bc-stream.com/catalog/
+  snapshot_url: https://item.rakuten.co.jp/fujiswat/202603043/
 status: published

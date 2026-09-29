@@ -6,9 +6,23 @@ year: 2026
 title: DREAMSCAPE SNB 100 2026
 one_liner: DREAMSCAPE 入门全山地雪板系列，按男女款分别展示；本记录不把不同款式和尺码的参数合并。
 specs:
+  profile: Flat Camber + Long Rocker
+  profileFamily: hybrid
+  shape: Directional Twin
+  core: 20 mm Poplar Wood Core
+  base: Extruded Polyethylene
+  flex: 3
+  torsionalFlex: 2
+  stanceSetback: 20
+  bindingInserts: "10+10 directional inserts"
+  warranty: 2
   scenes:
     - beginner
     - all-mountain
+  sizeSpecs:
+    - { size: "152", overallLength: 1520, noseWidth: 291, waistWidth: 250, tailWidth: 291, sidecutRadii: "8.2", stanceWidth: "540 mm", setback: 20, weightRange: "30–60 kg", boardWeight: "2767 g ±6%" }
+    - { size: "156", overallLength: 1560, noseWidth: 295, waistWidth: 253, tailWidth: 295, sidecutRadii: "8.5", stanceWidth: "550 mm", setback: 20, weightRange: "50–80 kg", boardWeight: "2670 g ±6%" }
+    - { size: "160MW", overallLength: 1600, noseWidth: 309, waistWidth: 265, tailWidth: 309, sidecutRadii: "8.5", stanceWidth: "575 mm", setback: 20, weightRange: "70–90 kg", boardWeight: "2966 g ±6%" }
 images:
   - url: "https://contents.mediadecathlon.com/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg"
     kind: face

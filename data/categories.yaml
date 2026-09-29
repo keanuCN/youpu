@@ -45,6 +45,8 @@
           tailHeight: { type: number, label: 板尾高度 }
           camber: { type: number, label: Camber }
           stanceWidth: { type: text, label: 站距范围 }
+          weightRange: { type: text, label: 建议体重范围 }
+          boardWeight: { type: text, label: 板重 }
           insertQty: { type: text, label: 固定器孔位 }
           setback: { type: number, label: 站位后移 }
           edge: { type: text, label: 钢刃 }
@@ -116,6 +118,14 @@
         compareDirection: neutral
         order: 50
 
+      - key: bindingInserts
+        label: 固定器孔位
+        group: 尺寸与形状
+        type: text
+        filter: false
+        compare: true
+        order: 55
+
       - key: profile
         label: 板型
         group: 尺寸与形状
@@ -163,6 +173,14 @@
         compare: true
         order: 120
 
+      - key: reinforcements
+        label: 强化材料
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: true
+        order: 125
+
       - key: base
         label: 底面材质
         group: 板芯与结构
@@ -197,6 +215,26 @@
         compareDirection: context
         order: 210
         help: 1-3 软（新手/公园），4-6 中等（全能），7-10 硬（刻滑/大体重/高手）
+
+      - key: flexOptions
+        label: 硬度选项
+        group: 性能取向
+        type: text
+        filter: false
+        compare: true
+        order: 215
+
+      - key: torsionalFlex
+        label: 扭转硬度
+        group: 性能取向
+        type: number
+        unit: /10
+        min: 1
+        max: 10
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 215
 
       - key: damping
         label: 减震

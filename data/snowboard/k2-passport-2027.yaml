@@ -14,7 +14,23 @@ specs:
   profileFamily: hybrid
   shape: Tapered Directional
   core: A1 Core
+  fiberglass: ICG 10 Triax Glass with Carbon
   base: Sintered 4000
+  bindingInserts: 2×4
+  sizeSpecs:
+    - { size: "146", overallLength: 1460, effectiveEdge: 1090, noseWidth: 288, waistWidth: 243, tailWidth: 280, sidecutRadii: "5.3/7.3/4.8", stanceWidth: "19 in", setback: 19.05, weightRange: "41–73kg+" }
+    - { size: "149", overallLength: 1490, effectiveEdge: 1120, noseWidth: 292, waistWidth: 246, tailWidth: 284, sidecutRadii: "5.5/7.5/5.0", stanceWidth: "19 in", setback: 19.05, weightRange: "41–73kg+" }
+    - { size: "151", overallLength: 1510, effectiveEdge: 1130, noseWidth: 294, waistWidth: 248, tailWidth: 286, sidecutRadii: "5.6/7.6/5.1", stanceWidth: "20 in", setback: 19.05, weightRange: "54–86kg+" }
+    - { size: "151W", overallLength: 1510, effectiveEdge: 1130, noseWidth: 300, waistWidth: 254, tailWidth: 292, sidecutRadii: "5.6/7.6/5.1", stanceWidth: "20 in", setback: 19.05, weightRange: "54–86kg+" }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1160, noseWidth: 299, waistWidth: 252, tailWidth: 291, sidecutRadii: "5.8/7.8/5.3", stanceWidth: "21 in", setback: 19.05, weightRange: "54–86kg+" }
+    - { size: "154W", overallLength: 1540, effectiveEdge: 1160, noseWidth: 307, waistWidth: 260, tailWidth: 299, sidecutRadii: "5.8/7.8/5.3", stanceWidth: "21 in", setback: 19.05, weightRange: "54–86kg+" }
+    - { size: "157", overallLength: 1570, effectiveEdge: 1180, noseWidth: 303, waistWidth: 255, tailWidth: 295, sidecutRadii: "6.0/8.0/5.5", stanceWidth: "21 in", setback: 19.05, weightRange: "54–86kg+" }
+    - { size: "157W", overallLength: 1570, effectiveEdge: 1180, noseWidth: 311, waistWidth: 263, tailWidth: 311, sidecutRadii: "6.0/8.0/5.5", stanceWidth: "21 in", setback: 19.05, weightRange: "54–86kg+" }
+    - { size: "159W", overallLength: 1590, effectiveEdge: 1210, noseWidth: 314, waistWidth: 266, tailWidth: 306, sidecutRadii: "6.2/8.2/5.7", stanceWidth: "22 in", setback: 19.05, weightRange: "59–95kg+" }
+    - { size: "160", overallLength: 1600, effectiveEdge: 1210, noseWidth: 306, waistWidth: 258, tailWidth: 298, sidecutRadii: "6.2/8.2/5.7", stanceWidth: "22 in", setback: 19.05, weightRange: "59–95kg+" }
+    - { size: "162W", overallLength: 1620, effectiveEdge: 1230, noseWidth: 318, waistWidth: 269, tailWidth: 310, sidecutRadii: "6.4/8.4/5.9", stanceWidth: "23 in", setback: 19.05, weightRange: "64–104kg+" }
+    - { size: "163", overallLength: 1630, effectiveEdge: 1230, noseWidth: 310, waistWidth: 261, tailWidth: 302, sidecutRadii: "6.4/8.4/5.9", stanceWidth: "23 in", setback: 19.05, weightRange: "64–104kg+" }
+    - { size: "166W", overallLength: 1660, effectiveEdge: 1260, noseWidth: 319, waistWidth: 269, tailWidth: 311, sidecutRadii: "6.6/8.6/6.1", stanceWidth: "23 in", setback: 19.05, weightRange: "64–104kg+" }
   scenes:
     - all-mountain
     - powder

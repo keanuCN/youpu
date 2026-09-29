@@ -11,6 +11,7 @@ specs:
   profileFamily: camber
   shape: Directional
   core: Wood Core
+  base: P-TEX 3000 Graphite
   scenes:
     - all-mountain
     - powder

@@ -9,6 +9,8 @@ specs:
   profile: Single Camber
   profileFamily: camber
   core: Poplar + Bamboo Wood Core
+  fiberglass: Carbon Strips beneath the core
+  base: P-TEX 3000 Graphite
   scenes:
     - carving
     - freestyle

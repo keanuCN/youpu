@@ -6,9 +6,23 @@ year: 2027
 title: K2 Alchemist 2027
 one_liner: K2 Landscape 系列旗舰定向野雪板，面向专家滑手，以高速稳定、精准控刃和大山地形为主要方向。
 specs:
+  core: S1 Pro Core
+  fiberglass: SpaceGlass / HyperWeave Carbon Fiber Biax Weave / Spectral Braid
+  base: Wax-Infused Sintered 4001, Stone Finish
   profile: Directional Camber
   profileFamily: camber
   shape: Directional
+  bindingInserts: 2×4
+  sizeSpecs:
+    - { size: "148", overallLength: 1480, effectiveEdge: 1120, noseWidth: 284, waistWidth: 240, tailWidth: 278, sidecutRadii: "6.9", stanceWidth: "19 in", setback: 19.05, weightRange: "45–68kg+" }
+    - { size: "151", overallLength: 1510, effectiveEdge: 1140, noseWidth: 288, waistWidth: 243, tailWidth: 282, sidecutRadii: "7.1", stanceWidth: "20 in", setback: 19.05, weightRange: "50–73kg+" }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1170, noseWidth: 293, waistWidth: 247, tailWidth: 287, sidecutRadii: "7.3", stanceWidth: "21 in", setback: 19.05, weightRange: "54–77kg+" }
+    - { size: "157", overallLength: 1570, effectiveEdge: 1190, noseWidth: 297, waistWidth: 250, tailWidth: 291, sidecutRadii: "7.8", stanceWidth: "21 in", setback: 19.05, weightRange: "68–91kg+" }
+    - { size: "160", overallLength: 1600, effectiveEdge: 1220, noseWidth: 301, waistWidth: 253, tailWidth: 295, sidecutRadii: "8.0", stanceWidth: "22 in", setback: 19.05, weightRange: "64–95kg+" }
+    - { size: "160W", overallLength: 1600, effectiveEdge: 1220, noseWidth: 309, waistWidth: 261, tailWidth: 303, sidecutRadii: "8.0", stanceWidth: "22 in", setback: 19.05, weightRange: "64–95kg+" }
+    - { size: "163", overallLength: 1630, effectiveEdge: 1240, noseWidth: 305, waistWidth: 256, tailWidth: 299, sidecutRadii: "8.1", stanceWidth: "23 in", setback: 19.05, weightRange: "68–104kg+" }
+    - { size: "163W", overallLength: 1630, effectiveEdge: 1240, noseWidth: 315, waistWidth: 264, tailWidth: 307, sidecutRadii: "8.1", stanceWidth: "23 in", setback: 19.05, weightRange: "68–104kg+" }
+    - { size: "166", overallLength: 1660, effectiveEdge: 1270, noseWidth: 312, waistWidth: 262, tailWidth: 306, sidecutRadii: "8.3", stanceWidth: "23 in", setback: 19.05, weightRange: "73–113kg+" }
   scenes:
     - all-mountain
     - powder

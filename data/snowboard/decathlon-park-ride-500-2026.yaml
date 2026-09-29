@@ -8,10 +8,23 @@ one_liner: 迪卡侬全山地与自由式型号，官方页面列出标准正拱
 specs:
   profile: Standard Camber with Rocker / Powder Stance
   profileFamily: hybrid
+  shape: Directional Twin
+  core: Poplar Wood Core
+  fiberglass: Glass Fiber Reinforcement
+  base: Sintered HDPE
+  flex: 6
+  torsionalFlex: 6
+  stanceSetback: 20
+  bindingInserts: "10+10 inserts + 4 powder inserts"
+  warranty: 2
   scenes:
     - all-mountain
     - freestyle
     - powder
+  sizeSpecs:
+    - { size: "153MW", overallLength: 1530, noseWidth: 300, waistWidth: 258, tailWidth: 300, sidecutRadii: "8.3", stanceWidth: "565 mm", setback: 20, boardWeight: "2800 g ±6%" }
+    - { size: "156", overallLength: 1560, noseWidth: 296, waistWidth: 255, tailWidth: 296, sidecutRadii: "8.4", stanceWidth: "575 mm", setback: 20, boardWeight: "2848 g ±6%" }
+    - { size: "158W", overallLength: 1580, noseWidth: 304, waistWidth: 266, tailWidth: 304, sidecutRadii: "8.4", stanceWidth: "585 mm", setback: 20, weightRange: "≥85 kg", boardWeight: "3000 g ±6%" }
 images:
   - url: "https://contents.mediadecathlon.com/p2944924/k$e21f8365347b4de89819c934c9ed67d6/picture.jpg?format=auto&f=3000x0"
     kind: face

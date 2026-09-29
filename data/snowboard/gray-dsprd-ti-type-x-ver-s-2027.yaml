@@ -10,6 +10,8 @@ specs:
   profileFamily: camber
   shape: Directional Hammerhead
   core: Wood Core
+  reinforcements: 0.4 mm X-shaped Titanal
+  base: IS7500 Graphite with sintered topsheet
   scenes:
     - carving
   sizeSpecs:

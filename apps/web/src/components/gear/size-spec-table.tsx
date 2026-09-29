@@ -10,7 +10,7 @@ const COLUMNS = [
   ["effectiveEdge", "有效刃长", "mm"],
   ["contactLength", "接雪长度", "mm"],
   ["waistWidth", "板腰宽", "mm"],
-  ["sidecutRadii", "侧切半径组合", "mm"],
+  ["sidecutRadii", "侧切半径组合", ""],
   ["sidecutOffset", "侧切偏移", "mm"],
   ["noseLength", "板头长度", "mm"],
   ["noseWidth", "板头宽度", "mm"],
@@ -19,7 +19,9 @@ const COLUMNS = [
   ["tailWidth", "板尾宽度", "mm"],
   ["tailHeight", "板尾高度", "mm"],
   ["camber", "Camber", "mm"],
-  ["stanceWidth", "站距范围", "mm"],
+  ["stanceWidth", "站距范围", ""],
+  ["weightRange", "建议体重范围", ""],
+  ["boardWeight", "板重", ""],
   ["insertQty", "固定器孔位", ""],
   ["setback", "站位后移", "mm"],
   ["edge", "钢刃", ""],
@@ -30,6 +32,22 @@ const COLUMNS = [
 ] as const;
 
 type SizeSpec = Record<string, string | number | null>;
+
+function displaySidecut(value: string | number | null | undefined): string {
+  if (value === null || value === undefined || value === "") return "—";
+  const text = String(value);
+  const radii = text.split("/").map(Number);
+  if (radii.length > 1 && radii.every((radius) => Number.isFinite(radius) && radius >= 1000)) {
+    return `${radii.map((radius) => (radius / 1000).toFixed(1)).join(" / ")} m`;
+  }
+  return /m$/i.test(text) ? text : `${text} m`;
+}
+
+function displayStance(value: string | number | null | undefined): string {
+  if (value === null || value === undefined || value === "") return "—";
+  const text = String(value);
+  return /(?:mm|in)$/i.test(text) ? text : `${text} mm`;
+}
 
 function sizeRows(value: string | number | null | undefined): SizeSpec[] {
   if (typeof value !== "string") return [];
@@ -54,8 +72,8 @@ export function SizeSpecTable({ gear }: { gear: GearItem }) {
   return (
     <section className="mb-8 min-w-0 max-w-full border-y border-border py-5">
       <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
-        <h3 className="text-[15px] font-medium">官方尺码参数</h3>
-        <span className="mono-label">{rows.length} 个尺码 · 数据源：GRAY 26–27 官方目录</span>
+        <h3 className="text-[15px] font-medium">尺码参数</h3>
+        <span className="mono-label">{rows.length} 个尺码 · {gear.brand} {gear.year}</span>
       </div>
       <div
         ref={scrollRef}
@@ -78,7 +96,7 @@ export function SizeSpecTable({ gear }: { gear: GearItem }) {
               <tr key={row.size} className="border-b border-border/70 last:border-0">
                 {columns.map(([key]) => (
                   <td key={key} className={`whitespace-nowrap px-3 py-2.5 tnum ${key === "size" ? "font-medium text-foreground" : "text-muted-foreground"}`}>
-                    {row[key] ?? "—"}
+                    {key === "sidecutRadii" ? displaySidecut(row[key]) : key === "stanceWidth" ? displayStance(row[key]) : row[key] ?? "—"}
                   </td>
                 ))}
               </tr>

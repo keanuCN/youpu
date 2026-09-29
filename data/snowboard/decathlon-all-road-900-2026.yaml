@@ -6,9 +6,22 @@ year: 2026
 title: DREAMSCAPE All Road 900 2026
 one_liner: 迪卡侬成人全山地与自由滑取向型号，官方描述覆盖雪道与雪道外滑行；当地页面所列价格不作为人民币价格录入。
 specs:
+  profile: Classic Camber + Long Rocker
+  profileFamily: hybrid
+  shape: Directional
+  core: Birch / Poplar Wood Core
+  base: Sintered PEHD
+  flex: 8
+  stanceSetback: 50
+  bindingInserts: "10+10 directional inserts"
+  warranty: 2
   scenes:
     - all-mountain
     - powder
+  sizeSpecs:
+    - { size: "154", overallLength: 1540, noseWidth: 289, waistWidth: 245, tailWidth: 280, sidecutRadii: "8.3", stanceWidth: "540 mm", setback: 50, weightRange: "55–70 kg", boardWeight: "2500 g ±5%" }
+    - { size: "160", overallLength: 1600, noseWidth: 298, waistWidth: 252, tailWidth: 290, sidecutRadii: "8.4", stanceWidth: "560 mm", setback: 50, weightRange: "65–80 kg", boardWeight: "3170 g ±5%" }
+    - { size: "166", overallLength: 1660, noseWidth: 308, waistWidth: 260, tailWidth: 301, sidecutRadii: "8.5", stanceWidth: "580 mm", setback: 50, weightRange: "80–110 kg", boardWeight: "3210 g ±5%" }
 images:
   - url: "https://contents.mediadecathlon.com/p2572726/k$71ec9103476ba320ff720d13e85c95ba/picture.jpg?format=auto&f=3000x0"
     kind: face

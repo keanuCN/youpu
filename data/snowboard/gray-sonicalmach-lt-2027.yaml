@@ -10,6 +10,7 @@ specs:
   profileFamily: camber
   shape: True Twin / Directional Twin / Directional（随长度变化）
   core: Poplar + Bamboo Wood Core
+  base: P-TEX 3000 Graphite
   scenes:
     - carving
     - freestyle

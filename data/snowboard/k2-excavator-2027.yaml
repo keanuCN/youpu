@@ -9,6 +9,15 @@ specs:
   profile: Directional Camber
   profileFamily: camber
   shape: Tapered Directional / Volume Shift
+  bindingInserts: 2×4
+  fiberglass: ICG 10 Biax Glass / Carbon Power Forks
+  sizeSpecs:
+    - { size: "142", overallLength: 1420, effectiveEdge: 1040, noseWidth: 299, waistWidth: 250, tailWidth: 279, sidecutRadii: "5.5/6.5", stanceWidth: "19 in", setback: 19.05, weightRange: "41–73kg+" }
+    - { size: "146", overallLength: 1460, effectiveEdge: 1080, noseWidth: 305, waistWidth: 254, tailWidth: 285, sidecutRadii: "5.7/6.7", stanceWidth: "19 in", setback: 19.05, weightRange: "41–73kg+" }
+    - { size: "150", overallLength: 1500, effectiveEdge: 1110, noseWidth: 313, waistWidth: 260, tailWidth: 293, sidecutRadii: "5.9/6.9", stanceWidth: "20 in", setback: 19.05, weightRange: "54–86kg+" }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1150, noseWidth: 318, waistWidth: 264, tailWidth: 298, sidecutRadii: "6.1/7.1", stanceWidth: "21 in", setback: 19.05, weightRange: "54–86kg+" }
+    - { size: "158", overallLength: 1580, effectiveEdge: 1180, noseWidth: 324, waistWidth: 268, tailWidth: 304, sidecutRadii: "6.3/7.3", stanceWidth: "22 in", setback: 19.05, weightRange: "59–95kg+" }
+    - { size: "162", overallLength: 1620, effectiveEdge: 1220, noseWidth: 327, waistWidth: 270, tailWidth: 307, sidecutRadii: "6.5/7.5", stanceWidth: "23 in", setback: 19.05, weightRange: "59–95kg+" }
   core: S1 Core
   base: Wax-Infused Sintered 4001
   scenes:

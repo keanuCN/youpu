@@ -9,7 +9,9 @@ specs:
   profile: Active Camber
   profileFamily: hybrid
   shape: True Twin
-  core: Wood Core
+  core: Ultra Light Core
+  fiberglass: Mesh Fiberglass Plate
+  base: IS7500 Sintered Base
   scenes:
     - freestyle
     - all-mountain

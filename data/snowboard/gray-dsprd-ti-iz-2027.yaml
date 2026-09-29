@@ -10,6 +10,8 @@ specs:
   profileFamily: camber
   shape: Directional Hammerhead
   core: Wood Core + IZANAS Fiber
+  reinforcements: Glass, Titanal and IZANAS fiber; Polyamide topsheet
+  base: IS7500 Graphite Sintered Base
   scenes:
     - carving
   sizeSpecs:
