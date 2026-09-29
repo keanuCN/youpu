@@ -132,17 +132,17 @@ function enrichBootSpecsFromVerifiedSummary(gear: GearItem): GearItem {
   // Salomon product pages publish these fields directly. Keep the overlay limited
   // to explicit brand values; leave the user's actual fit and unsupported fields open.
   const salomonSpecs: Record<string, Pick<GearItem["specs"], "flex" | "fit" | "terrain"> & Partial<Pick<GearItem["specs"], "lacingSystem">>> = {
-    "dialogue dual boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式" },
-    "dialogue dual boa team": { flex: "中等", fit: "常规楦", terrain: "全山/自由式" },
-    "dialogue dual boa wide": { flex: "中等", fit: "宽楦", terrain: "全山/自由式", lacingSystem: "双区 BOA" },
+    "dialogue dual boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式", lacingSystem: "H4/M+2 双区 BOA + Precision Harness 3.0" },
+    "dialogue dual boa team": { flex: "中等", fit: "常规楦", terrain: "全山/自由式", lacingSystem: "H4/M+2 双区 BOA + Precision Harness 3.0" },
+    "dialogue dual boa wide": { flex: "中等", fit: "宽楦", terrain: "全山/自由式", lacingSystem: "H4/M+2 双区 BOA + Precision Harness 3.0" },
     "dialogue lace sj boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式" },
-    "echo dual boa": { flex: "中等至偏硬", fit: "常规楦", terrain: "自由滑/全山" },
-    "faction boa": { flex: "偏软", fit: "常规楦", terrain: "全山" },
-    "launch boa sj boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式" },
-    "malamute dual boa": { flex: "偏硬", fit: "常规楦", terrain: "自由滑" },
-    "titan boa": { flex: "偏软", fit: "常规楦", terrain: "全山" },
-    trek: { flex: "偏硬", fit: "常规楦", terrain: "分体板徒步/登山" },
-    "x approach lace sj boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式" },
+    "echo dual boa": { flex: "中等至偏硬", fit: "常规楦", terrain: "自由滑/全山", lacingSystem: "H4/M3 双区 BOA + Precision Harness 2.0" },
+    "faction boa": { flex: "偏软", fit: "常规楦", terrain: "全山", lacingSystem: "单旋钮 H4 Coiler BOA" },
+    "launch boa sj boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式", lacingSystem: "单旋钮 H4 Coiler BOA + BOA STR8JKT Pro 三点后跟锁定" },
+    "malamute dual boa": { flex: "偏硬", fit: "常规楦", terrain: "自由滑", lacingSystem: "H4/M3 双区 BOA + Precision Harness 2.0" },
+    "titan boa": { flex: "偏软", fit: "常规楦", terrain: "全山", lacingSystem: "单旋钮 H4 BOA" },
+    trek: { flex: "偏硬", fit: "常规楦", terrain: "分体板徒步/登山", lacingSystem: "传统鞋带 + BOA Trek 徒步/滑行模式调节" },
+    "x approach lace sj boa": { flex: "中等", fit: "常规楦", terrain: "全山/自由式", lacingSystem: "传统鞋带 + BOA STR8JKT Pro 三点后跟锁定" },
   };
   const nitroScores: Record<string, { brandComfortScore: number; brandResponseScore: number }> = {
     "bianca tls+": { brandComfortScore: 10, brandResponseScore: 7 },
