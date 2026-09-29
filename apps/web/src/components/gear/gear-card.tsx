@@ -14,6 +14,7 @@ import { hasEditorialScores, hasMedia, hasPrice, hasUserRating, mediaUrl } from 
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear } from "@/lib/api";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
 import { track, trackExposeOnce } from "@/lib/track";
+import { preferProductThumbnail } from "@/lib/image-url";
 import { cn } from "@/lib/utils";
 import type { GearItem } from "@/types";
 import { useAuthGate } from "@/store/app-shell";
@@ -90,7 +91,8 @@ export function GearCard({
   const priceReady = hasPrice(gear);
   const editorialReady = hasEditorialScores(gear);
   const mediaReady = hasMedia(gear);
-  const mediaSrc = mediaUrl(gear);
+  const mediaSource = mediaUrl(gear);
+  const mediaSrc = mediaSource ? preferProductThumbnail(mediaSource) : undefined;
   const ratingReady = hasUserRating(gear);
   const hot = isHotProduct(gear.heat, gear.id);
   const ref = useRef<HTMLElement>(null);
@@ -297,8 +299,8 @@ export function GearRow({
       ) : null}
       <div className="h-14 w-14 shrink-0 overflow-hidden bg-secondary">
         {hasMedia(gear) && mediaUrl(gear) ? (
-          <SafeImage
-            src={mediaUrl(gear)}
+            <SafeImage
+            src={preferProductThumbnail(mediaUrl(gear)!)}
             alt={`${gear.brand} ${gear.model}`}
             loading="lazy"
             fallbackLabel={`${gear.brand} ${gear.model}`}

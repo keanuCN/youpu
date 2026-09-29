@@ -1,10 +1,32 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { isAllowedImageUrl, resolveImageUrl } from "./image-url";
+import { isAllowedImageUrl, preferProductThumbnail, resolveImageUrl } from "./image-url";
 
 const CDN_IMAGE =
   "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=test";
+
+test("limits Shopify product images to thumbnail width without changing detail images", () => {
+  const largeImage = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=2880";
+  const thumbnail = preferProductThumbnail(largeImage);
+  assert.equal(new URL(thumbnail).searchParams.get("width"), "800");
+  assert.equal(new URL(thumbnail).searchParams.get("v"), "1");
+
+  const unboundedShopifyImage = "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/board.png?v=1";
+  const boundedShopifyImage = preferProductThumbnail(unboundedShopifyImage);
+  assert.equal(new URL(boundedShopifyImage).searchParams.get("width"), "800");
+  assert.equal(new URL(boundedShopifyImage).searchParams.get("v"), "1");
+
+  const proxiedImage = `/api/image-proxy?url=${encodeURIComponent(largeImage)}`;
+  const proxiedThumbnail = preferProductThumbnail(proxiedImage);
+  const proxiedUrl = new URL(proxiedThumbnail, "https://youpu.local");
+  assert.equal(new URL(proxiedUrl.searchParams.get("url")!).searchParams.get("width"), "800");
+
+  const alreadySmall = "https://us.yonex.com/cdn/shop/files/racket.webp?width=600";
+  assert.equal(preferProductThumbnail(alreadySmall), alreadySmall);
+  const nonShopify = "https://cdn.dam.salomon.com/product.png?width=2000";
+  assert.equal(preferProductThumbnail(nonShopify), nonShopify);
+});
 
 test("routes approved remote images through the local proxy in development", () => {
   assert.equal(

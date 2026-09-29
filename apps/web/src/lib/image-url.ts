@@ -1,4 +1,5 @@
 const IMAGE_PROXY_PATH = "/api/image-proxy";
+const PRODUCT_THUMBNAIL_WIDTH = 800;
 
 /** AI 素材只用于装饰性页面，不作为商品详情的商品实拍图。 */
 export function isAiGeneratedImageUrl(source: string): boolean {
@@ -26,6 +27,33 @@ export function preferHighResolutionProductImage(source: string): string {
       const width = Number(image.searchParams.get("width"));
       if (Number.isFinite(width) && width > 0 && width < 1600) {
         image.searchParams.set("width", "1600");
+        return image.toString();
+      }
+    }
+    return source;
+  } catch {
+    return source;
+  }
+}
+
+/** 商品卡片只显示缩略图；对支持 Shopify width 参数的图片限制请求尺寸。 */
+export function preferProductThumbnail(source: string): string {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      if (!proxiedSource) return source;
+      image.searchParams.set("url", preferProductThumbnail(proxiedSource));
+      return `${image.pathname}${image.search}`;
+    }
+    const isShopifyImage =
+      image.pathname.includes("/cdn/shop/") ||
+      (image.hostname === "cdn.shopify.com" && image.pathname.startsWith("/s/files/"));
+    if (isShopifyImage) {
+      const requestedWidth = image.searchParams.get("width");
+      const width = Number(requestedWidth);
+      if (requestedWidth === null || (Number.isFinite(width) && width > PRODUCT_THUMBNAIL_WIDTH)) {
+        image.searchParams.set("width", String(PRODUCT_THUMBNAIL_WIDTH));
         return image.toString();
       }
     }
