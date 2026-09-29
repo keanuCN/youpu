@@ -32,6 +32,12 @@ specs:
   scenes:
     - carving
     - all-mountain
+  sizeSpecs:
+    - { size: "158", overallLength: 1580, effectiveEdge: 1160, waistWidth: 254, sidecutRadii: "9.1/8.2/9.1", noseLength: 310, noseWidth: 296, tailLength: 190, tailWidth: 288, setback: 10 }
+    - { size: "159W", overallLength: 1590, effectiveEdge: 1170, waistWidth: 267, sidecutRadii: "9/8.1/9", noseLength: 310, noseWidth: 310, tailLength: 190, tailWidth: 301, setback: 10 }
+    - { size: "162", overallLength: 1620, effectiveEdge: 1196, waistWidth: 256, sidecutRadii: "9.3/8.4/9.3", noseLength: 312, noseWidth: 300, tailLength: 192, tailWidth: 291, setback: 10 }
+    - { size: "165MW", overallLength: 1650, effectiveEdge: 1222, waistWidth: 266, sidecutRadii: "9.45/8.55/9.45", noseLength: 314, noseWidth: 311, tailLength: 194, tailWidth: 302, setback: 10 }
+    - { size: "170W", overallLength: 1700, effectiveEdge: 1268, waistWidth: 274, sidecutRadii: "9.45/8.8/9.45", noseLength: 316, noseWidth: 320, tailLength: 196, tailWidth: 311, setback: 10 }
 editorial_scores:
   stability: 9.5
   response: 9
