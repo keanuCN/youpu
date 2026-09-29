@@ -34,6 +34,36 @@ const VERIFIED_CAPITA_THUMBNAIL_PATHS = new Set([
   "/s/files/1/0231/7366/0752/files/RST05-OUTERSPACE-LIVING-TOP.png",
   "/s/files/1/0231/7366/0752/files/RST06-SIDEWINDER-TOP.png",
 ]);
+const VERIFIED_HEAD_IMAGE_VARIANTS = new Map([
+  [
+    "/CDN3/D/316485/1/1820x2428/easy-joy-r.webp",
+    {
+      compact: "/CDN3/D/316485/1/224x298/easy-joy-r.webp",
+      thumbnail: "/CDN3/D/316485/1/683x911/easy-joy-r.webp",
+    },
+  ],
+  [
+    "/CDN3/D/316225/1/1820x2428/shape-v2-r.webp",
+    {
+      compact: "/CDN3/D/316225/1/224x298/shape-v2-r.webp",
+      thumbnail: "/CDN3/D/316225/1/683x911/shape-v2-r.webp",
+    },
+  ],
+  [
+    "/CDN3/D/313236.SET_WO/5/1820x2428/worldcup-rebels-e-sl-pro-without-binding.webp",
+    {
+      compact: "/CDN3/D/313236.SET_WO/5/224x298/worldcup-rebels-e-sl-pro-without-binding.webp",
+      thumbnail: "/CDN3/D/313236.SET_WO/5/683x911/worldcup-rebels-e-sl-pro-without-binding.webp",
+    },
+  ],
+  [
+    "/CDN3/D/313306.SET_31330602/5/1820x2428/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
+    {
+      compact: "/CDN3/D/313306.SET_31330602/5/224x298/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
+      thumbnail: "/CDN3/D/313306.SET_31330602/5/683x911/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
+    },
+  ],
+]);
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -155,6 +185,18 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       const width = requestedWidth === null ? undefined : Number(requestedWidth);
       if (requestedWidth === null || (Number.isFinite(width) && width! > 416)) {
         image.searchParams.set("width", "416");
+        return image.toString();
+      }
+    }
+    if (
+      image.hostname === "cdn-mdb.head.com" &&
+      image.search === "" &&
+      widthLimit <= 800 &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const variants = VERIFIED_HEAD_IMAGE_VARIANTS.get(image.pathname);
+      if (variants) {
+        image.pathname = widthLimit <= 480 ? variants.compact : variants.thumbnail;
         return image.toString();
       }
     }

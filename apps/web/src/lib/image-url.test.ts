@@ -271,6 +271,46 @@ test("uses the verified 416px CAPiTA card image while preserving detail resoluti
   assert.equal(new URL(preferProductThumbnail(unverifiedImage)).searchParams.get("width"), "800");
 });
 
+test("uses HEAD official ski thumbnails only for the four verified gallery images", () => {
+  const images = [
+    {
+      source: "https://cdn-mdb.head.com/CDN3/D/316485/1/1820x2428/easy-joy-r.webp",
+      thumbnail: "https://cdn-mdb.head.com/CDN3/D/316485/1/683x911/easy-joy-r.webp",
+      compact: "https://cdn-mdb.head.com/CDN3/D/316485/1/224x298/easy-joy-r.webp",
+    },
+    {
+      source: "https://cdn-mdb.head.com/CDN3/D/316225/1/1820x2428/shape-v2-r.webp",
+      thumbnail: "https://cdn-mdb.head.com/CDN3/D/316225/1/683x911/shape-v2-r.webp",
+      compact: "https://cdn-mdb.head.com/CDN3/D/316225/1/224x298/shape-v2-r.webp",
+    },
+    {
+      source:
+        "https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/1820x2428/worldcup-rebels-e-sl-pro-without-binding.webp",
+      thumbnail:
+        "https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/683x911/worldcup-rebels-e-sl-pro-without-binding.webp",
+      compact:
+        "https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/224x298/worldcup-rebels-e-sl-pro-without-binding.webp",
+    },
+    {
+      source:
+        "https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/1820x2428/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
+      thumbnail:
+        "https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/683x911/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
+      compact:
+        "https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/224x298/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
+    },
+  ];
+
+  for (const { source, thumbnail, compact } of images) {
+    assert.equal(preferProductThumbnail(source), thumbnail);
+    assert.equal(preferProductThumbnail(source, 480), compact);
+    assert.equal(preferHighResolutionProductImage(source), source);
+  }
+
+  const unverified = "https://cdn-mdb.head.com/CDN3/D/313365.SET_WO/4/1820x2428/worldcup-rebels-e-slr-without-binding.webp";
+  assert.equal(preferProductThumbnail(unverified), unverified);
+});
+
 test("limits approved Decathlon f=<width>x0 thumbnails and preserves other URL data", () => {
   const oversizedImage =
     "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto&quality=80";
