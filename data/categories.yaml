@@ -397,6 +397,13 @@
         filter: false
         compare: true
         order: 40
+      - key: bindingSizeGuide
+        label: 固定器尺码参考
+        group: 兼容性
+        type: text
+        filter: false
+        compare: true
+        order: 45
       - key: terrain
         label: 适用场景
         group: 适用场景

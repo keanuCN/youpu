@@ -8,6 +8,7 @@ one_liner: "Step On 快穿系统的 Re:Flex 版本，须与 Step On 雪鞋配套
 specs:
   entrySystem: step-in
   bootCompatibility: "仅兼容 Burton Step On 雪鞋；Re:Flex 多板型安装"
+  bindingSizeGuide: "Burton 男款 Step On 尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26 / CN 240–260；M 对应 US 8.5–10.5 / Mondo 26.5–28.5 / CN 265–285；L 对应 US 11–13 / Mondo 29–31 / CN 290–310；XL 对应 US 14–15 / Mondo 32–33 / CN 320–330。仅配 Burton Step On 雪鞋。"
   flexFeel: medium
   mountingSystem: "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）"
   terrain: [all-mountain]

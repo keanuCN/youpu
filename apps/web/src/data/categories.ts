@@ -677,6 +677,7 @@ const SNOWBOARD_BINDING: Category = {
       fields: [
         { key: "mountingSystem", label: "安装系统", type: "text", direction: null },
         { key: "bootCompatibility", label: "雪鞋兼容", type: "text", direction: null },
+        { key: "bindingSizeGuide", label: "固定器尺码参考", type: "text", direction: null },
       ],
     },
     {
