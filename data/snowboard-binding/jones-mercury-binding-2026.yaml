@@ -9,6 +9,11 @@ specs:
   entrySystem: strap
   flex: 7
   bootCompatibility: "通用圆盘适配 4x4、2x4 与 Channel；普通绑带雪鞋"
+  bindingSizeGuide: "Jones 男款：S 对应雪鞋 US 5–7 / EU 36.5–39.5 / Mondo 23.5–25；M 对应 US 7.5–10 / EU 40–43 / 25.5–28；L 对应 US 10.5+ / EU 43.5+ / 28.5+。女款：S US 5–8.5 / EU 35–39.5 / Mondo 22–25；M US 9–11.5 / EU 40–42.5 / 25.5–27.5。"
+  brandFlexScore10: 7
+  brandResortScore10: 9
+  brandPowScore10: 9
+  brandParkScore10: 8
   terrain: [all-mountain, freeride, freestyle]
   mountingSystem: "Universal Disk；兼容 4x4、2x4 与 EST/Channel"
 editorial_scores:

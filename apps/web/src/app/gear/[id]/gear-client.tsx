@@ -86,6 +86,19 @@ export default function GearDetailPage({
           },
         ]
       : []),
+    ...(gear.categorySlug === "snowboard-binding" && gear.brand.toLowerCase() === "jones" && gear.specs.brandFlexScore10 != null
+      ? [
+          {
+            group: "Jones 官方评分",
+            fields: [
+              { key: "brandFlexScore10", label: "品牌硬度", type: "number" as const, unit: "/10" },
+              { key: "brandResortScore10", label: "雪场适应", type: "number" as const, unit: "/10" },
+              { key: "brandPowScore10", label: "粉雪适应", type: "number" as const, unit: "/10" },
+              { key: "brandParkScore10", label: "公园适应", type: "number" as const, unit: "/10" },
+            ],
+          },
+        ]
+      : []),
   ];
   const peers = relatedGear
     ? relatedGear

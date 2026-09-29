@@ -419,6 +419,42 @@
         filter: false
         compare: false
         order: 65
+      - key: brandFlexScore10
+        label: 品牌硬度评分
+        group: 品牌官方评分
+        type: number
+        min: 1
+        max: 10
+        filter: false
+        compare: false
+        order: 66
+      - key: brandResortScore10
+        label: 品牌雪场评分
+        group: 品牌官方评分
+        type: number
+        min: 1
+        max: 10
+        filter: false
+        compare: false
+        order: 67
+      - key: brandPowScore10
+        label: 品牌粉雪评分
+        group: 品牌官方评分
+        type: number
+        min: 1
+        max: 10
+        filter: false
+        compare: false
+        order: 68
+      - key: brandParkScore10
+        label: 品牌公园评分
+        group: 品牌官方评分
+        type: number
+        min: 1
+        max: 10
+        filter: false
+        compare: false
+        order: 69
       - key: mountingSystem
         label: 安装系统
         group: 兼容性

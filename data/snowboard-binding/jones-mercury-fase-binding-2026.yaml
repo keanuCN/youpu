@@ -8,6 +8,11 @@ one_liner: "Mercury 加入 FASE 快速绑带系统，支持单手穿入并可回
 specs:
   entrySystem: fast-entry
   bootCompatibility: "FASE 官方称兼容各品牌普通雪鞋"
+  bindingSizeGuide: "Jones Mercury FASE：S 对应雪鞋 US 男/Youth 5–8、女 6.5–9.5 / EU 37.5–41 / Mondo 23–26；M 对应 US 男/Youth 8.5–10.5、女 10–12 / EU 41.5–44 / 26.5–28.5；L 对应 US 男/Youth 11–14、女 12.5–15.5 / EU 44.5–48 / 29–31。"
+  brandFlexScore10: 7
+  brandResortScore10: 10
+  brandPowScore10: 10
+  brandParkScore10: 6
   flexFeel: medium
   flex: 7
   terrain: [all-mountain, freeride, freestyle]
