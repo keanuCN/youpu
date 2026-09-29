@@ -13,9 +13,9 @@ price:
   currency: CNY
 specs:
   length: 158
-  effectiveEdge: 1250
+  effectiveEdge: 1215
   sidecut: 7.9
-  waistWidth: 253
+  waistWidth: 254
   stanceSetback: 15
   profile: 纯 Camber
   shape: 定向双向
@@ -32,6 +32,17 @@ specs:
   scenes:
     - all-mountain
     - carving
+  sizeSpecs:
+    - { size: "150", effectiveEdge: 1135, waistWidth: 248, noseWidth: 288.1, tailWidth: 288.1, sidecutRadii: "7.4", stanceWidth: "505 mm", weightRange: "54–82 kg" }
+    - { size: "154", effectiveEdge: 1175, waistWidth: 250, noseWidth: 291.5, tailWidth: 291.5, sidecutRadii: "7.6", stanceWidth: "530 mm", weightRange: "54–82 kg" }
+    - { size: "156", effectiveEdge: 1195, waistWidth: 252, noseWidth: 294.3, tailWidth: 294.3, sidecutRadii: "7.8", stanceWidth: "530 mm", weightRange: "68–91 kg" }
+    - { size: "158", effectiveEdge: 1215, waistWidth: 254, noseWidth: 297, tailWidth: 297, sidecutRadii: "7.9", stanceWidth: "560 mm", weightRange: "68–91 kg" }
+    - { size: "162", effectiveEdge: 1255, waistWidth: 256, noseWidth: 300.5, tailWidth: 300.5, sidecutRadii: "8.2", stanceWidth: "560 mm", weightRange: "82–118 kg+" }
+    - { size: "154W", effectiveEdge: 1175, waistWidth: 258, noseWidth: 299.5, tailWidth: 299.5, sidecutRadii: "7.6", stanceWidth: "530 mm", weightRange: "54–82 kg" }
+    - { size: "158W", effectiveEdge: 1215, waistWidth: 262, noseWidth: 305, tailWidth: 305, sidecutRadii: "7.9", stanceWidth: "560 mm", weightRange: "68–91 kg" }
+    - { size: "162W", effectiveEdge: 1255, waistWidth: 264, noseWidth: 308.5, tailWidth: 308.5, sidecutRadii: "8.2", stanceWidth: "560 mm", weightRange: "82–118 kg+" }
+    - { size: "166W", effectiveEdge: 1295, waistWidth: 266, noseWidth: 312, tailWidth: 312, sidecutRadii: "8.4", stanceWidth: "560 mm", weightRange: "82–118 kg+" }
+    - { size: "170W", effectiveEdge: 1335, waistWidth: 270, noseWidth: 317.4, tailWidth: 317.4, sidecutRadii: "8.7", stanceWidth: "560 mm", weightRange: "82–118 kg+" }
 editorial_scores:
   stability: 9
   response: 8.5
@@ -47,5 +58,5 @@ images:
     sort_order: 0
 data_source:
   kind: official
-  origin_url: https://eu.burton.com/en-gb/products/mens-burton-custom-camber-snowboard-106881a-o?variant=42867455721549
+  origin_url: https://www.burton.com/se/en/p/mens-burton-custom-camber-snowboard/W26-106881.html
 status: published

@@ -13,8 +13,8 @@ price:
   currency: CNY
 specs:
   length: 157
-  effectiveEdge: 1200
-  sidecut: 7.7
+  effectiveEdge: 1215
+  sidecut: 8.1
   waistWidth: 252
   stanceSetback: 12
   profile: 纯 Camber
@@ -32,6 +32,16 @@ specs:
   scenes:
     - freestyle
     - all-mountain
+  sizeSpecs:
+    - { size: "152", effectiveEdge: 1165, waistWidth: 249, noseWidth: 290.1, tailWidth: 290.1, sidecutRadii: "7.7", stanceWidth: "530 mm", weightRange: "54–82 kg" }
+    - { size: "155", effectiveEdge: 1195, waistWidth: 251, noseWidth: 293.2, tailWidth: 293.2, sidecutRadii: "7.9", stanceWidth: "530 mm", weightRange: "54–82 kg" }
+    - { size: "157", effectiveEdge: 1215, waistWidth: 252, noseWidth: 294.9, tailWidth: 294.9, sidecutRadii: "8.1", stanceWidth: "560 mm", weightRange: "68–91 kg" }
+    - { size: "159", effectiveEdge: 1235, waistWidth: 255, noseWidth: 298.6, tailWidth: 298.6, sidecutRadii: "8.2", stanceWidth: "560 mm", weightRange: "68–91 kg" }
+    - { size: "162", effectiveEdge: 1265, waistWidth: 257, noseWidth: 301.8, tailWidth: 301.8, sidecutRadii: "8.4", stanceWidth: "560 mm", weightRange: "82–118 kg+" }
+    - { size: "155W", effectiveEdge: 1195, waistWidth: 256, noseWidth: 298.2, tailWidth: 298.2, sidecutRadii: "7.9", stanceWidth: "530 mm", weightRange: "54–82 kg" }
+    - { size: "157W", effectiveEdge: 1215, waistWidth: 257, noseWidth: 299.9, tailWidth: 299.9, sidecutRadii: "8.1", stanceWidth: "560 mm", weightRange: "68–91 kg" }
+    - { size: "159W", effectiveEdge: 1235, waistWidth: 260, noseWidth: 303.6, tailWidth: 303.6, sidecutRadii: "8.2", stanceWidth: "560 mm", weightRange: "68–91 kg" }
+    - { size: "162W", effectiveEdge: 1265, waistWidth: 262, noseWidth: 306.8, tailWidth: 306.8, sidecutRadii: "8.4", stanceWidth: "560 mm", weightRange: "82–118 kg+" }
 editorial_scores:
   stability: 7
   response: 7.5
@@ -47,5 +57,5 @@ images:
     sort_order: 0
 data_source:
   kind: official
-  origin_url: https://www.burton.com/en-au/products/mens-burton-process-camber-snowboard-106921e-o
+  origin_url: https://www.burton.com/en-ca/products/mens-burton-process-camber-snowboard-106921e-o
 status: published

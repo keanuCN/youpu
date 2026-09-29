@@ -45,6 +45,8 @@
           tailHeight: { type: number, label: 板尾高度 }
           camber: { type: number, label: Camber }
           stanceWidth: { type: text, label: 站距范围 }
+          maxStance: { type: number, label: 最大站距 }
+          bindingSize: { type: text, label: 推荐固定器尺码 }
           weightRange: { type: text, label: 建议体重范围 }
           boardWeight: { type: text, label: 板重 }
           insertQty: { type: text, label: 固定器孔位 }
