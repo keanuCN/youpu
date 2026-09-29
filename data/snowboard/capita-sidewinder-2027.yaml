@@ -25,6 +25,11 @@ specs:
   scenes:
     - carving
     - all-mountain
+  sizeSpecs:
+    - { size: "153", overallLength: 1530, effectiveEdge: 1179, noseWidth: 314, waistWidth: 254, tailWidth: 299, sidecutRadii: "6.6/6.25", stanceWidth: "533 mm", weightRange: "54–81 kg" }
+    - { size: "156", overallLength: 1560, effectiveEdge: 1202, noseWidth: 317, waistWidth: 256, tailWidth: 302, sidecutRadii: "6.8/6.4", stanceWidth: "559 mm", weightRange: "59–86 kg" }
+    - { size: "159", overallLength: 1590, effectiveEdge: 1225, noseWidth: 320, waistWidth: 258, tailWidth: 305, sidecutRadii: "7.0/6.5", stanceWidth: "559 mm", weightRange: "65–93 kg" }
+    - { size: "162", overallLength: 1620, effectiveEdge: 1248, noseWidth: 323, waistWidth: 260, tailWidth: 308, sidecutRadii: "7.1/6.6", stanceWidth: "584 mm", weightRange: "70–97 kg" }
 editorial_scores:
   stability: 8.7
   response: 8.8
