@@ -383,6 +383,17 @@ test("uses the verified 416px Flow Fuse thumbnail only for its exact Shopify ass
   assert.equal(preferProductThumbnail(unverifiedVersion), unverifiedVersion);
 });
 
+test("uses the verified SmartMarine 600px image only for the exact fishing rod", () => {
+  const image = "https://www.smartmarine.co.nz/cdn/images/products/xlarge/8089900_a.jpg";
+  const thumbnail = new URL(preferProductThumbnail(image));
+  assert.equal(thumbnail.pathname, "/cdn/images/products/large/8089900_a.jpg");
+  assert.equal(preferHighResolutionProductImage(image), image);
+  assert.equal(preferProductThumbnail(image, 480), image);
+
+  const unverifiedImage = image.replace("8089900_a.jpg", "8089900_b.jpg");
+  assert.equal(preferProductThumbnail(unverifiedImage), unverifiedImage);
+});
+
 test("limits approved Decathlon f=<width>x0 thumbnails and preserves other URL data", () => {
   const oversizedImage =
     "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto&quality=80";

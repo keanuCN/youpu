@@ -88,6 +88,7 @@ const VERIFIED_CANYON_THUMBNAIL_PATH =
   "/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw07984cc9/images/full/full_2023_/2023/full_2023_3170_neuron-cf-8_sr-bk_P5.png";
 const VERIFIED_FLOW_FUSE_THUMBNAIL_PATH =
   "/s/files/1/0674/9582/1405/files/High-_0024_FLOW_FUSE_WHITE_fusion.jpg";
+const VERIFIED_SMARTMARINE_THUMBNAIL_PATH = "/cdn/images/products/xlarge/8089900_a.jpg";
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -215,6 +216,16 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
         image.searchParams.set("width", "416");
         return image.toString();
       }
+    }
+    if (
+      image.hostname === "www.smartmarine.co.nz" &&
+      image.pathname === VERIFIED_SMARTMARINE_THUMBNAIL_PATH &&
+      widthLimit >= 600 &&
+      widthLimit < 1600 &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      image.pathname = "/cdn/images/products/large/8089900_a.jpg";
+      return image.toString();
     }
     if (
       image.hostname === "cdn-mdb.head.com" &&
