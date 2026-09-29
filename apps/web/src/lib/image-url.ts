@@ -99,6 +99,24 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       }
     }
     if (
+      image.hostname === "assets.specialized.com" &&
+      image.pathname.endsWith("_HERO-SQUARE") &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const requestedWidth = image.searchParams.get("w");
+      const requestedHeight = image.searchParams.get("h");
+      const width = requestedWidth === null ? undefined : Number(requestedWidth);
+      const height = requestedHeight === null ? undefined : Number(requestedHeight);
+      if (
+        (requestedWidth === null && requestedHeight === null) ||
+        (Number.isFinite(width) && Number.isFinite(height) && (width! > widthLimit || height! > widthLimit))
+      ) {
+        image.searchParams.set("w", String(widthLimit));
+        image.searchParams.set("h", String(widthLimit));
+        return image.toString();
+      }
+    }
+    if (
       image.hostname === "dma.canyon.com" &&
       image.pathname.includes("/image/upload/") &&
       isAllowedRemoteImageUrl(image.toString())

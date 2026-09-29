@@ -159,6 +159,38 @@ test("limits approved Decathlon thumbnails through recursively nested image prox
   assert.equal(optimizedOuter.searchParams.get("source"), "outer");
 });
 
+test("limits only square Specialized hero assets using their verified w/h parameters", () => {
+  const specializedImage =
+    "https://assets.specialized.com/i/specialized/93325-50_SJ-15-COMP-SEA-SILDST_HERO-SQUARE?version=2";
+  const thumbnail = new URL(preferProductThumbnail(specializedImage));
+  assert.equal(thumbnail.searchParams.get("w"), "800");
+  assert.equal(thumbnail.searchParams.get("h"), "800");
+  assert.equal(thumbnail.searchParams.get("version"), "2");
+
+  const customLimit = new URL(preferProductThumbnail(specializedImage, 320));
+  assert.equal(customLimit.searchParams.get("w"), "320");
+  assert.equal(customLimit.searchParams.get("h"), "320");
+
+  const smallerImage = `${specializedImage}&w=640&h=640`;
+  assert.equal(preferProductThumbnail(smallerImage), smallerImage);
+  const oversizedImage = `${specializedImage}&w=1200&h=1200`;
+  const boundedImage = new URL(preferProductThumbnail(oversizedImage));
+  assert.equal(boundedImage.searchParams.get("w"), "800");
+  assert.equal(boundedImage.searchParams.get("h"), "800");
+
+  const unrelatedPath = specializedImage.replace("_HERO-SQUARE", "_DETAIL");
+  const unrelatedHost = specializedImage.replace("assets.specialized.com", "other.example");
+  assert.equal(preferProductThumbnail(unrelatedPath), unrelatedPath);
+  assert.equal(preferProductThumbnail(unrelatedHost), unrelatedHost);
+
+  const proxiedImage = `/api/image-proxy?url=${encodeURIComponent(specializedImage)}&source=product`;
+  const proxiedThumbnail = new URL(preferProductThumbnail(proxiedImage), "https://youpu.local");
+  const optimizedSource = new URL(proxiedThumbnail.searchParams.get("url")!);
+  assert.equal(optimizedSource.searchParams.get("w"), "800");
+  assert.equal(optimizedSource.searchParams.get("h"), "800");
+  assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
+});
+
 test("limits approved K2 Amplience thumbnail widths and preserves other query parameters", () => {
   const missingWidth = new URL(
     preferProductThumbnail("https://cdn.media.amplience.net/i/k2/board.jpg?qlt=85&fmt=webp"),
