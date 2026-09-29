@@ -8,11 +8,58 @@ const isStaticExport = process.env.NEXT_OUTPUT === "export";
 export const dynamic = isStaticExport ? "force-static" : "force-dynamic";
 
 const ALLOWED_RASTER_TYPES = new Set(["image/png", "image/jpeg", "image/webp", "image/avif", "image/gif"]);
-const DEFAULT_IMAGE_ACCEPT = "image/avif,image/webp,image/apng,image/*,*/*;q=0.8";
+const FALLBACK_IMAGE_TYPES = ["image/webp", "image/jpeg", "image/png", "image/gif"];
+const DEFAULT_IMAGE_ACCEPT = FALLBACK_IMAGE_TYPES.join(",");
 
-function upstreamHeaders(target: URL, accept: string | null): HeadersInit {
+function imageFormatsFor(accept: string | null): { header: string; types: Set<string> } {
+  if (!accept) {
+    return { header: DEFAULT_IMAGE_ACCEPT, types: new Set(FALLBACK_IMAGE_TYPES) };
+  }
+
+  const explicitTypes: Array<{ type: string; value: string }> = [];
+  const excludedTypes = new Set<string>();
+  let wildcardQuality = 0;
+  for (const entry of accept.split(",")) {
+    const value = entry.trim();
+    const [rawType = ""] = value.split(";", 1);
+    const type = rawType.trim().toLowerCase();
+    const qualityMatch = value.match(/;\s*q\s*=\s*([0-9.]+)/i);
+    const quality = qualityMatch ? Number(qualityMatch[1]) : 1;
+    if (!Number.isFinite(quality) || quality <= 0 || quality > 1) {
+      if (ALLOWED_RASTER_TYPES.has(type)) excludedTypes.add(type);
+      continue;
+    }
+    if (type === "image/*" || type === "*/*") {
+      wildcardQuality = Math.max(wildcardQuality, quality);
+    } else if (ALLOWED_RASTER_TYPES.has(type)) {
+      if (!explicitTypes.some((item) => item.type === type)) explicitTypes.push({ type, value });
+    }
+  }
+
+  const requestedTypes = [...explicitTypes];
+  if (wildcardQuality > 0) {
+    for (const type of FALLBACK_IMAGE_TYPES) {
+      if (!excludedTypes.has(type) && !requestedTypes.some((item) => item.type === type)) {
+        requestedTypes.push({
+          type,
+          value: `${type}${wildcardQuality < 1 ? `;q=${wildcardQuality}` : ""}`,
+        });
+      }
+    }
+  }
+
+  if (requestedTypes.length === 0) {
+    return { header: DEFAULT_IMAGE_ACCEPT, types: new Set(FALLBACK_IMAGE_TYPES) };
+  }
+  return {
+    header: requestedTypes.map((item) => item.value).join(","),
+    types: new Set(requestedTypes.map((item) => item.type)),
+  };
+}
+
+function upstreamHeaders(target: URL, accept: string): HeadersInit {
   const headers: Record<string, string> = {
-    Accept: accept || DEFAULT_IMAGE_ACCEPT,
+    Accept: accept,
     "User-Agent": "YoupuImageProxy/0.1",
   };
 
@@ -49,12 +96,13 @@ export async function GET(request: NextRequest) {
   }
 
   try {
+    const requestedFormats = imageFormatsFor(request.headers.get("accept"));
     // 远程图片可能超过 Next 数据缓存的 2MB 限制；让浏览器按下方响应头缓存，
     // 服务端请求不写入 Next fetch cache。
     const upstream = await fetch(target, {
       cache: "no-store",
       redirect: "error",
-      headers: upstreamHeaders(target, request.headers.get("accept")),
+      headers: upstreamHeaders(target, requestedFormats.header),
     });
     if (!upstream.ok || !upstream.body) {
       return new Response("Upstream image unavailable", { status: upstream.status || 502 });
@@ -63,7 +111,12 @@ export async function GET(request: NextRequest) {
     const contentType = upstream.headers.get("content-type") ?? "";
     const mediaType = contentType.split(";", 1)[0]?.trim().toLowerCase();
     if (!mediaType || !ALLOWED_RASTER_TYPES.has(mediaType)) {
+      await upstream.body.cancel();
       return new Response("Upstream resource is not an image", { status: 415 });
+    }
+    if (!requestedFormats.types.has(mediaType)) {
+      await upstream.body.cancel();
+      return new Response("Upstream image format is not accepted", { status: 406 });
     }
 
     return new Response(upstream.body, {
