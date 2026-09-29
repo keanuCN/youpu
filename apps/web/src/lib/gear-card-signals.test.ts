@@ -35,3 +35,16 @@ test("only products above the popularity threshold receive the hot signal", () =
   assert.equal(isHotProduct(0), false);
   assert.equal(isHotProduct(Number.NaN), false);
 });
+
+test("manually selected products receive HOT without changing their heat score", () => {
+  for (const id of [
+    "gray-sonicalmach-lt-2027",
+    "gray-tycoon-type-s-iz-2027",
+    "ogasaka-fc-s-2026",
+    "salomon-huck-knife-2027",
+    "jones-flagship-2027",
+  ]) {
+    assert.equal(isHotProduct(0, id), true, `${id} should be marked HOT`);
+  }
+  assert.equal(isHotProduct(0, "unlisted-product"), false);
+});

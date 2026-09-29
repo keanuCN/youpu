@@ -92,7 +92,7 @@ export function GearCard({
   const mediaReady = hasMedia(gear);
   const mediaSrc = mediaUrl(gear);
   const ratingReady = hasUserRating(gear);
-  const hot = isHotProduct(gear.heat);
+  const hot = isHotProduct(gear.heat, gear.id);
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {

@@ -5,8 +5,20 @@ type SpecValue = number | string | null;
 /** 商品热度达到 7000 时，卡片标记为热门。 */
 export const HOT_PRODUCT_HEAT_THRESHOLD = 7000;
 
-export function isHotProduct(heat: number): boolean {
-  return Number.isFinite(heat) && heat >= HOT_PRODUCT_HEAT_THRESHOLD;
+/** 人工精选的热门商品；单独控制标签，不改变热度分值与排序。 */
+export const FEATURED_HOT_PRODUCT_IDS = new Set([
+  "gray-sonicalmach-lt-2027",
+  "gray-tycoon-type-s-iz-2027",
+  "ogasaka-fc-s-2026",
+  "salomon-huck-knife-2027",
+  "jones-flagship-2027",
+]);
+
+export function isHotProduct(heat: number, productId?: string): boolean {
+  return (
+    (productId !== undefined && FEATURED_HOT_PRODUCT_IDS.has(productId)) ||
+    (Number.isFinite(heat) && heat >= HOT_PRODUCT_HEAT_THRESHOLD)
+  );
 }
 
 const enumLabels: Record<string, Record<string, string>> = {
