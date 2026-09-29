@@ -430,6 +430,8 @@ const HIDDEN_CATEGORY_GROUPS = new Set([
   "fitness",
   "diving",
   "digital-accessories",
+  "motorcycle",
+  "av-digital",
 ]);
 
 function hideCategoryGroups(nodes: CategoryNode[]): CategoryNode[] {
