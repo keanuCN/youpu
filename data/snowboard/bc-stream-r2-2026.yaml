@@ -12,10 +12,10 @@ specs:
   stanceSetback: 20
   # 板长、有效刃长与腰宽来自 25/26 Snowboard Spec Finder 逐尺码记录（https://www.snow-spec.com/）；非厂商原始表，其他未核实尺寸不补录。
   sizeSpecs:
-    - { size: "144N", variant: "窄版", overallLength: 1440, effectiveEdge: 1170, waistWidth: 234 }
-    - { size: "148N", variant: "窄版", overallLength: 1480, effectiveEdge: 1210, waistWidth: 238 }
-    - { size: "151N", variant: "窄版", overallLength: 1510, effectiveEdge: 1240, waistWidth: 240 }
-    - { size: "154N", variant: "窄版", overallLength: 1540, effectiveEdge: 1270, waistWidth: 244 }
+    - { size: "44N", variant: "窄版", overallLength: 1440, effectiveEdge: 1170, waistWidth: 234 }
+    - { size: "48N", variant: "窄版", overallLength: 1480, effectiveEdge: 1210, waistWidth: 238 }
+    - { size: "51N", variant: "窄版", overallLength: 1510, effectiveEdge: 1240, waistWidth: 240 }
+    - { size: "54N", variant: "窄版", overallLength: 1540, effectiveEdge: 1270, waistWidth: 244 }
     - { size: "151", variant: "标准版", overallLength: 1510, effectiveEdge: 1240, waistWidth: 248 }
     - { size: "154", variant: "标准版", overallLength: 1540, effectiveEdge: 1270, waistWidth: 250 }
     - { size: "157", variant: "标准版", overallLength: 1570, effectiveEdge: 1300, waistWidth: 250 }
