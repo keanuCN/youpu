@@ -33,6 +33,19 @@ export function preferHighResolutionProductImage(source: string): string {
       image.searchParams.set("url", preferHighResolutionProductImage(proxiedSource));
       return `${image.pathname}${image.search}`;
     }
+    if (
+      image.hostname === "www.rossignol.com" &&
+      image.pathname.startsWith("/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/") &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const requestedWidth = image.searchParams.get("sw");
+      const width = requestedWidth === null ? undefined : Number(requestedWidth);
+      if (Number.isFinite(width) && width! > 1600) {
+        image.searchParams.set("sw", "1600");
+        return image.toString();
+      }
+      return source;
+    }
     const boundedSource = preferProductThumbnail(source, 1600);
     const boundedImage = new URL(boundedSource, "https://youpu.local");
     const isShopifyImage =

@@ -38,6 +38,12 @@ test("keeps product detail images high resolution while bounding verified CDN so
   const shopify = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=800";
   assert.equal(new URL(preferHighResolutionProductImage(shopify)).searchParams.get("width"), "1600");
 
+  const rossignol =
+    "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/ski.jpg?sw=800&sh=1200&sm=fit";
+  assert.equal(new URL(preferHighResolutionProductImage(rossignol)).searchParams.get("sw"), "800");
+  const oversizedRossignol = rossignol.replace("sw=800", "sw=2400");
+  assert.equal(new URL(preferHighResolutionProductImage(oversizedRossignol)).searchParams.get("sw"), "1600");
+
   const decathlon =
     "https://contents.mediadecathlon.com/p2704355/picture.jpg?f=3000x0&format=auto";
   const decathlonDetail = new URL(preferHighResolutionProductImage(decathlon));
