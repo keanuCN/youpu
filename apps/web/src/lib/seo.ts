@@ -20,7 +20,7 @@ export function absoluteUrl(path: string): string {
 export function gearMetadata(gear: GearItem): Metadata {
   const title = `${gear.model} ${gear.year} 参数 · ${gear.demoRating ? "选板参考" : "实测评分"} · 尺寸怎么选 - ${gear.brand}`;
   const facts = [
-    gear.demoRating ? "含规格推演演示样本" : `${reviewCount(gear)} 条实测`,
+    gear.demoRating ? "含规格推算参考样本" : `${reviewCount(gear)} 条实测`,
     gear.flexValue > 0 ? `硬度 ${gear.flexValue}/10` : "硬度待补充",
     hasPrice(gear) ? fmtPrice(gear.price, gear.priceCurrency) : "价格待补充",
   ].join(" · ");

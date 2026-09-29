@@ -37,7 +37,7 @@ export function preferHighResolutionProductImage(source: string): string {
 
 /**
  * 远程图片只允许来自明确登记的产品图片路径。
- * 新品类的本地演示图来自品牌官网或公开零售页面，正式上线前仍应迁移到自有 COS。
+ * 新品类的本地样例图来自品牌官网或公开零售页面，正式上线前仍应迁移到自有 COS。
  */
 const REMOTE_IMAGE_RULES = [
   { host: "eu.burton.com", pathPrefix: "/cdn/shop/files/" },

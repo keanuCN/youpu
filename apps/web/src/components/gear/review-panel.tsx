@@ -187,7 +187,7 @@ export function ReviewPanel({
           <p className="mono-data text-[52px] leading-none tnum">{ratingReady ? summary.overall!.toFixed(1) : "—"}</p>
           {ratingReady ? <Stars value={avg} size={14} className="mt-2" /> : <p className="mono-label mt-2">暂无评分</p>}
           <p className="mono-label mt-2">
-            {ratingReady ? `${summary.count} ${showDemoRating ? "份演示评分" : "条实测评分"}` : "等待首批实测"}
+            {ratingReady ? `${summary.count} ${showDemoRating ? "份参考样例" : "条实测评分"}` : "等待首批实测"}
           </p>
         </div>
         <div className="space-y-1.5">
@@ -209,7 +209,7 @@ export function ReviewPanel({
             );
           }) : <p className="py-2 text-[12px] text-muted-foreground">评分分布待同步</p>}
           <p className="mono-label pt-2">
-            {showDemoRating ? "演示分布由公开规格推演生成" : `评分来自标注了${copy.summary}的实测用户`}
+            {showDemoRating ? "参考分布由公开规格推算，不代表真实用户评分" : `评分来自标注了${copy.summary}的实测用户`}
           </p>
           {ratingLoading ? <LoadingStatus label="正在读取最新实测数据" className="pt-1" /> : null}
         </div>
@@ -220,7 +220,7 @@ export function ReviewPanel({
       {showDemoNotes && gear.demoNotes?.length ? (
         <div className="border-y border-border py-5">
           <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
-            <p className="mono-label">规格推演示例 / DEMO NOTES</p>
+            <p className="mono-label">规格推演参考 / REFERENCE NOTES</p>
             <span className="mono-label text-muted-foreground">非用户投稿 · 不计入评论</span>
           </div>
           <div className="grid gap-3 sm:grid-cols-3">
@@ -384,7 +384,7 @@ function ReviewItem({ review, gear, copy, persisted, isCloudReview }: { review: 
                 type="button"
                 onClick={() => requireAuth(() => {
                   if (!hasCloudSession()) {
-                    toast("当前是本机演示账号，举报需要连接本地 API");
+                    toast("当前是本机测试账号，举报需要连接本地 API");
                     return;
                   }
                   void cloudCreateReport("rating", review.id, "内容不当或不准确")
