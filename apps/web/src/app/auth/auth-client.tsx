@@ -187,9 +187,6 @@ export default function AuthPage() {
           ))}
         </ul>
 
-        <p className="mono-label mt-8 border border-dashed border-border p-4 leading-relaxed">
-          本地 API 已接入账号与内容数据；清除浏览器令牌后需要重新登录。
-        </p>
       </div>
 
       <div className="border border-foreground">
