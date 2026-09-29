@@ -243,6 +243,32 @@ test("bounds approved Amer Sports fit=bounds images without changing fit or qual
   assert.equal(preferProductThumbnail(otherPath), otherPath);
 });
 
+test("uses the officially referenced DJI Action 5 Pro small image variant only", () => {
+  const action5Image =
+    "https://se-cdn.djiits.com/tpc/uploads/spu/cover/e4781624a38ba00d1b4a8bc3a204bd97@ultra.png?campaign=product";
+  const thumbnail = new URL(preferProductThumbnail(action5Image));
+  assert.equal(
+    thumbnail.pathname,
+    "/tpc/uploads/spu/cover/e4781624a38ba00d1b4a8bc3a204bd97@retina_small.png",
+  );
+  assert.equal(thumbnail.searchParams.get("campaign"), "product");
+
+  const action4Image = action5Image.replace(
+    "e4781624a38ba00d1b4a8bc3a204bd97",
+    "e1b8110f65a5a3321fe487f0a1a061ac",
+  );
+  assert.equal(preferProductThumbnail(action4Image), action4Image);
+
+  const otherHost = action5Image.replace("se-cdn.djiits.com", "other.example");
+  assert.equal(preferProductThumbnail(otherHost), otherHost);
+
+  const proxiedImage = `/api/image-proxy?url=${encodeURIComponent(action5Image)}&source=product`;
+  const proxiedThumbnail = new URL(preferProductThumbnail(proxiedImage), "https://youpu.local");
+  const optimizedSource = new URL(proxiedThumbnail.searchParams.get("url")!);
+  assert.ok(optimizedSource.pathname.endsWith("@retina_small.png"));
+  assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
+});
+
 test("limits approved K2 Amplience thumbnail widths and preserves other query parameters", () => {
   const missingWidth = new URL(
     preferProductThumbnail("https://cdn.media.amplience.net/i/k2/board.jpg?qlt=85&fmt=webp"),

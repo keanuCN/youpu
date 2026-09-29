@@ -124,6 +124,15 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       }
     }
     if (
+      image.hostname === "se-cdn.djiits.com" &&
+      image.pathname === "/tpc/uploads/spu/cover/e4781624a38ba00d1b4a8bc3a204bd97@ultra.png" &&
+      widthLimit <= 800 &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      image.pathname = image.pathname.replace("@ultra.png", "@retina_small.png");
+      return image.toString();
+    }
+    if (
       image.hostname === "cdn.amersports.com" &&
       image.searchParams.get("fit") === "bounds" &&
       isAllowedRemoteImageUrl(image.toString())
