@@ -84,6 +84,8 @@ const VERIFIED_GIANT_THUMBNAIL_PATHS = new Map([
     "/b_white%2Cc_pad%2Ch_200%2Cq_80%2Cw_300/qrpefgqfjrzq6x21nwsw/MY26XTCAdvanced291_ColorAAbyssBlack_Bronze.jpg",
   ],
 ]);
+const VERIFIED_CANYON_THUMBNAIL_PATH =
+  "/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw07984cc9/images/full/full_2023_/2023/full_2023_3170_neuron-cf-8_sr-bk_P5.png";
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -233,6 +235,20 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       const thumbnailPath = VERIFIED_GIANT_THUMBNAIL_PATHS.get(image.pathname);
       if (thumbnailPath) {
         image.pathname = thumbnailPath;
+        return image.toString();
+      }
+    }
+    if (
+      image.hostname === "www.canyon.com" &&
+      image.pathname === VERIFIED_CANYON_THUMBNAIL_PATH &&
+      widthLimit >= 800 &&
+      widthLimit < 1600 &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const requestedWidth = image.searchParams.get("sw");
+      const width = requestedWidth === null ? undefined : Number(requestedWidth);
+      if (requestedWidth === null || (Number.isFinite(width) && width! > 800)) {
+        image.searchParams.set("sw", "800");
         return image.toString();
       }
     }

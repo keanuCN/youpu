@@ -352,6 +352,22 @@ test("uses official 300x200 Giant thumbnails only for the verified bike images",
   assert.equal(thumbnailProxy.searchParams.get("url"), images[0]!.thumbnail);
 });
 
+test("uses the measured 800px Canyon thumbnail without changing its detail image", () => {
+  const image =
+    "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw07984cc9/images/full/full_2023_/2023/full_2023_3170_neuron-cf-8_sr-bk_P5.png?sw=1145&sh=645&sm=fit&sfrm=png";
+  const thumbnail = new URL(preferProductThumbnail(image));
+  assert.equal(thumbnail.searchParams.get("sw"), "800");
+  assert.equal(thumbnail.searchParams.get("sh"), "645");
+  assert.equal(thumbnail.searchParams.get("sm"), "fit");
+  assert.equal(thumbnail.searchParams.get("sfrm"), "png");
+
+  assert.equal(preferHighResolutionProductImage(image), image);
+  assert.equal(preferProductThumbnail(image, 480), image);
+
+  const unrelatedImage = image.replace("3170_neuron-cf-8", "unverified-bike");
+  assert.equal(preferProductThumbnail(unrelatedImage), unrelatedImage);
+});
+
 test("limits approved Decathlon f=<width>x0 thumbnails and preserves other URL data", () => {
   const oversizedImage =
     "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto&quality=80";
