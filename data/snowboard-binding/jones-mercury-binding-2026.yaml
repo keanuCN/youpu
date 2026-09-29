@@ -16,12 +16,6 @@ specs:
   brandParkScore10: 8
   terrain: [all-mountain, freeride, freestyle]
   mountingSystem: "Universal Disk；兼容 4x4、2x4 与 EST/Channel"
-editorial_scores:
-  response: 8
-  comfort: 8
-  versatility: 9
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026

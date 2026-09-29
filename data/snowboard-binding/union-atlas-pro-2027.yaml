@@ -12,12 +12,6 @@ specs:
   bindingSizeGuide: "Union 男款/Unisex 尺码参考：S 对应雪鞋 US 男码 6–8 / Mondo 240–260；M 对应 8.5–10.5 / 265–285；L 对应 11–13 / 290–310；XL 对应 14–15 / 320–330。最终按具体雪鞋外长与官方尺码表确认。"
   mountingSystem: "Camber Disk + Washer；4x4、4x2 与 Channel"
   terrain: [all-mountain, freeride]
-editorial_scores:
-  response: 9.5
-  comfort: 8.5
-  versatility: 8
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027

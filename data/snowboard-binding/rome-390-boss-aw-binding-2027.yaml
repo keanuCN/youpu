@@ -8,15 +8,8 @@ one_liner: "Rome 2026–27 AsymWrap 平台传统绑带款，官方定位兼顾�
 specs:
   entrySystem: strap
   flex: 6
-  brandAdjustabilityScore: 7
   terrain: [all-mountain, freestyle]
   mountingSystem: "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准"
-editorial_scores:
-  response: 7
-  comfort: 8
-  versatility: 8.5
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings

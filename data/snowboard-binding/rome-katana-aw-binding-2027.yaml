@@ -8,15 +8,8 @@ one_liner: "Rome 2026–27 传统绑带全山地固定器，官方主打调节�
 specs:
   entrySystem: strap
   flex: 8
-  brandAdjustabilityScore: 9
   terrain: [all-mountain, freeride]
   mountingSystem: "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准"
-editorial_scores:
-  response: 8.5
-  comfort: 9
-  versatility: 8.5
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings

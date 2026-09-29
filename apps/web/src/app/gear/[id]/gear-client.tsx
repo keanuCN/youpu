@@ -99,16 +99,6 @@ export default function GearDetailPage({
           },
         ]
       : []),
-    ...(gear.categorySlug === "snowboard-binding" && gear.brand.toLowerCase() === "rome" && gear.specs.brandAdjustabilityScore != null
-      ? [
-          {
-            group: "Rome 官方评分",
-            fields: [
-              { key: "brandAdjustabilityScore", label: "调节性", type: "number" as const, unit: "/10" },
-            ],
-          },
-        ]
-      : []),
   ];
   const peers = relatedGear
     ? relatedGear

@@ -12,12 +12,6 @@ specs:
   bindingSizeGuide: "Nitro Talent 官方尺码：S US 男 3–6.5、女 3.5–7 / MP 21–24.5 / EU 33.5–38；M 男 7–10.5、女 7.5–11 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14、女 11.5–14.5 / MP 29–32 / EU 44–48。"
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freestyle]
-editorial_scores:
-  response: 6.5
-  comfort: 7.5
-  versatility: 8.5
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/bindings-26-27/products/talent-unisex-bindings-1

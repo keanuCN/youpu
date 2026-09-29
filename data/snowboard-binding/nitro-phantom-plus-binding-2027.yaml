@@ -13,12 +13,6 @@ specs:
   bootCompatibility: "普通绑带雪鞋"
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain, freeride]
-editorial_scores:
-  response: 9
-  comfort: 9
-  versatility: 8
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/cs/collections/all-mens-bindings-26-27/products/phantom-bindings-3?variant=57278273716555

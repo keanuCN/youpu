@@ -11,12 +11,6 @@ specs:
   bindingSizeGuide: "Burton 女款尺码表：S 对应雪鞋 US 4–6 / Mondo 21–23；M 对应 US 6–8 / Mondo 23–25；L 对应 US 8+ / Mondo 25+。"
   mountingSystem: "EST，仅适配 Burton The Channel"
   terrain: [all-mountain, freestyle]
-editorial_scores:
-  response: 8
-  comfort: 8
-  versatility: 8
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331

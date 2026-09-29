@@ -9,6 +9,7 @@ import {
   productSeedSchema,
   validateSpecs,
 } from '@youpu/schema';
+import { Prisma } from '../common/db';
 import { PrismaService } from '../common/prisma.service';
 import { toJsonInput } from '../common/json';
 import { uuidv7 } from '../common/uuid';
@@ -16,10 +17,11 @@ import { uuidv7 } from '../common/uuid';
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const updateExisting = args.includes('--update-existing');
+  const clearEditorialScores = args.includes('--clear-editorial-scores');
   const file = args.find((value) => !value.startsWith('--'));
   const brandFileIndex = args.indexOf('--brand-file');
   const brandFile = brandFileIndex >= 0 ? args[brandFileIndex + 1] : undefined;
-  if (!file) throw new Error('用法：seed:product -- <产品 YAML 路径> [--brand-file <品牌 YAML 路径>] [--update-existing]');
+  if (!file) throw new Error('用法：seed:product -- <产品 YAML 路径> [--brand-file <品牌 YAML 路径>] [--update-existing] [--clear-editorial-scores]');
   if (brandFileIndex >= 0 && !brandFile) throw new Error('--brand-file 缺少路径');
 
   const parsed = productSeedSchema.safeParse(parseYaml(readFileSync(resolve(file), 'utf8')));
@@ -108,7 +110,7 @@ async function main(): Promise<void> {
         priceMax: normalizedPrice.max,
         priceCurrency: normalizedPrice.currency,
         specs: toJsonInput(seed.specs),
-        editorialScores: seed.editorial_scores ? toJsonInput(seed.editorial_scores) : undefined,
+        editorialScores: seed.editorial_scores ? toJsonInput(seed.editorial_scores) : clearEditorialScores ? Prisma.DbNull : undefined,
         status: seed.status,
         dataSource: dataSource?.id ?? null,
         publishedAt: seed.status === 'published' ? new Date() : null,

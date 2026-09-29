@@ -12,12 +12,6 @@ specs:
   flexFeel: soft
   mountingSystem: "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）"
   terrain: [all-mountain, freestyle]
-editorial_scores:
-  response: 5.5
-  comfort: 7
-  versatility: 8
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/collections/strap-snowboard-bindings

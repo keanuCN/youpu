@@ -11,12 +11,6 @@ specs:
   flexFeel: stiff
   terrain: [all-mountain, freeride]
   mountingSystem: "Universal Disc；兼容主要雪板安装系统"
-editorial_scores:
-  response: 8.5
-  comfort: 8
-  versatility: 8
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/highlander-li8702

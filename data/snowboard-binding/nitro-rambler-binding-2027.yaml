@@ -13,12 +13,6 @@ specs:
   bootCompatibility: "Universal Mini Disc 兼容 2x4 与 Channel；适配常规绑带雪鞋"
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Channel"
   terrain: [all-mountain]
-editorial_scores:
-  response: 5.5
-  comfort: 7
-  versatility: 8
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/bindings-26-27/products/rambler-bindings-1

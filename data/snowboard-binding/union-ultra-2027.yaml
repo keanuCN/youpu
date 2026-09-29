@@ -12,12 +12,6 @@ specs:
   bindingSizeGuide: "Union 女款尺码参考：S 对应雪鞋 US 女码 5–6 / Mondo 220–230；M 对应 6.5–8.5 / 235–255；L 对应 9–11 / 260–280。最终按具体雪鞋外长与官方尺码表确认。"
   mountingSystem: "Union Mini Disk；兼容常见 4 孔系统"
   terrain: [all-mountain, freestyle]
-editorial_scores:
-  response: 7
-  comfort: 9.5
-  versatility: 8.5
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027

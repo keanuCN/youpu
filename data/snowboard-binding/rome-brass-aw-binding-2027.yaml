@@ -8,15 +8,8 @@ one_liner: "Rome 2026–27 女款 AsymWrap 传统绑带固定器，官方描述�
 specs:
   entrySystem: strap
   flex: 6
-  brandAdjustabilityScore: 7
   terrain: [all-mountain, freestyle]
   mountingSystem: "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准"
-editorial_scores:
-  response: 6.5
-  comfort: 8
-  versatility: 8.5
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://romesnowboards.com/products/rome-brass-aw-2627-womens-snowboard-binding

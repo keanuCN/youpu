@@ -10,12 +10,6 @@ specs:
   bootCompatibility: "兼容常规及 3D 插孔；不兼容 Burton Channel；普通绑带雪鞋"
   terrain: [all-mountain]
   mountingSystem: "插孔圆盘；兼容常规及 Burton 3D 插孔，不兼容 Channel"
-editorial_scores:
-  response: 5
-  comfort: 7
-  versatility: 7.5
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654

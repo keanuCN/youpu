@@ -11,12 +11,6 @@ specs:
   flexFeel: mid-stiff
   terrain: [freestyle, all-mountain]
   mountingSystem: "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对"
-editorial_scores:
-  response: 7.5
-  comfort: 8
-  versatility: 9
-  convenience: 6
-  value: 5
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2627-ds

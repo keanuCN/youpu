@@ -11,12 +11,6 @@ specs:
   flexFeel: mid-stiff
   terrain: [all-mountain, freeride]
   mountingSystem: "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对"
-editorial_scores:
-  response: 8
-  comfort: 8
-  versatility: 8.5
-  convenience: 8
-  value: 5
 data_source:
   kind: official
   origin_url: https://www.nidecker.com/products/flow-fuse-hybrid-2026
