@@ -22,6 +22,7 @@ import {
   type CloudRatingsResponse,
 } from "@/lib/api";
 import { helpfulOf, iHelpful, repliesOf, topLevelReviews } from "@/lib/domain";
+import { preferReviewImageThumbnail } from "@/lib/image-url";
 import { timeAgo } from "@/lib/format";
 import { addReview, deleteReview, pushNotification, toggleHelpful, useCurrentUser, usePersisted, type Persisted } from "@/lib/store";
 import { track } from "@/lib/track";
@@ -325,7 +326,8 @@ function ReviewItem({ review, gear, copy, persisted, isCloudReview }: { review: 
               {review.images.map((u, i) => (
                 <a key={i} href={u} target="_blank" rel="noreferrer" className="block h-20 w-20 overflow-hidden border border-border">
                   <SafeImage
-                    src={u}
+                    src={preferReviewImageThumbnail(u)}
+                    fallbackSrc={u}
                     alt=""
                     loading="lazy"
                     fallbackLabel="评论图片"

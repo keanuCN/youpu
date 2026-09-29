@@ -6,6 +6,7 @@ import { MediaPlaceholder } from "./data-state";
 
 type SafeImageProps = Omit<ImgHTMLAttributes<HTMLImageElement>, "src"> & {
   src?: string | null;
+  fallbackSrc?: string | null;
   srcSetType?: "image/webp";
   fallbackLabel: string;
   fallbackClassName?: string;
@@ -15,6 +16,7 @@ type SafeImageProps = Omit<ImgHTMLAttributes<HTMLImageElement>, "src"> & {
 /** 外部图片失败时保留布局，并显示统一的本地占位。 */
 export function SafeImage({
   src,
+  fallbackSrc,
   alt,
   className,
   fallbackLabel,
@@ -27,10 +29,12 @@ export function SafeImage({
   ...props
 }: SafeImageProps) {
   const [failed, setFailed] = useState(!src);
+  const [usingFallback, setUsingFallback] = useState(false);
 
   useEffect(() => {
     setFailed(!src);
-  }, [src]);
+    setUsingFallback(false);
+  }, [src, fallbackSrc]);
 
   if (!src || failed) {
     const fallbackClasses = fallbackClassName ?? className;
@@ -46,11 +50,16 @@ export function SafeImage({
   const image = (
     <img
       {...props}
-      src={src}
+      src={usingFallback && fallbackSrc ? fallbackSrc : src}
       alt={alt}
       className={className}
       decoding={props.decoding ?? "async"}
       onError={(event) => {
+        if (fallbackSrc && !usingFallback && src !== fallbackSrc) {
+          setUsingFallback(true);
+          onError?.(event);
+          return;
+        }
         setFailed(true);
         onError?.(event);
       }}

@@ -1,4 +1,6 @@
 const IMAGE_PROXY_PATH = "/api/image-proxy";
+const REVIEW_IMAGE_HOST = "youpu.tos-cn-beijing.volces.com";
+const REVIEW_IMAGE_PATH_PREFIX = "/review-images/";
 const PRODUCT_THUMBNAIL_WIDTH = 800;
 const SHOPIFY_PRODUCT_THUMBNAIL_WIDTH = 640;
 const NORDICA_PRODUCT_IMAGE_WIDTHS = [56, 112, 168, 640, 1280];
@@ -542,6 +544,26 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       }
     }
     return source;
+  } catch {
+    return source;
+  }
+}
+
+/** 评论区小图仅对自有 TOS 图片请求缩放 WebP，原图 URL 仍用于查看大图。 */
+export function preferReviewImageThumbnail(source: string): string {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      if (!proxiedSource) return source;
+      image.searchParams.set("url", preferReviewImageThumbnail(proxiedSource));
+      return `${image.pathname}${image.search}`;
+    }
+    if (image.hostname !== REVIEW_IMAGE_HOST || !image.pathname.startsWith(REVIEW_IMAGE_PATH_PREFIX)) {
+      return source;
+    }
+    image.searchParams.set("x-tos-process", "image/resize,w_240/format,webp");
+    return image.toString();
   } catch {
     return source;
   }

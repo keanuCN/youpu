@@ -6,6 +6,7 @@ import {
   isAllowedRemoteImageUrl,
   preferHighResolutionProductImage,
   preferProductThumbnail,
+  preferReviewImageThumbnail,
   responsiveProductImageSrcSet,
   responsiveProductImageSrcSetType,
   resolveImageUrl,
@@ -51,6 +52,21 @@ test("limits Shopify compare-dock images to 96px while preserving proxy source p
 
   const nonShopify = "https://unknown.example/large.png";
   assert.equal(preferProductThumbnail(nonShopify, 96), nonShopify);
+});
+
+test("uses 240px TOS WebP variants only for review image thumbnails", () => {
+  const original = "https://youpu.tos-cn-beijing.volces.com/review-images/rating-photo.webp";
+  const thumbnail = new URL(preferReviewImageThumbnail(original));
+  assert.equal(thumbnail.searchParams.get("x-tos-process"), "image/resize,w_240/format,webp");
+
+  const proxied = `/api/image-proxy?url=${encodeURIComponent(original)}&source=review`;
+  const proxiedThumbnail = new URL(preferReviewImageThumbnail(proxied), "https://youpu.local");
+  assert.equal(proxiedThumbnail.searchParams.get("source"), "review");
+  assert.equal(
+    new URL(proxiedThumbnail.searchParams.get("url")!).searchParams.get("x-tos-process"),
+    "image/resize,w_240/format,webp",
+  );
+  assert.equal(preferReviewImageThumbnail("https://other.example/review-images/rating.webp"), "https://other.example/review-images/rating.webp");
 });
 
 test("provides responsive small and middle variants only for the verified Atomic Bent Chetler image", () => {
