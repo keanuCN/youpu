@@ -9,6 +9,7 @@ const COLUMNS = [
   ["overallLength", "板长", "mm"],
   ["effectiveEdge", "有效刃长", "mm"],
   ["contactLength", "接雪长度", "mm"],
+  ["runningLength", "滑行长度", "mm"],
   ["waistWidth", "板腰宽", "mm"],
   ["sidecutRadii", "侧切半径组合", ""],
   ["sidecutOffset", "侧切偏移", "mm"],

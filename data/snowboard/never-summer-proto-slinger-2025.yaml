@@ -12,10 +12,10 @@ price:
   max: 5499
   currency: CNY
 specs:
-  length: 157
-  effectiveEdge: 1215
-  sidecut: 7.9
-  waistWidth: 254
+  length: 156
+  effectiveEdge: 1190
+  sidecut: 8.18
+  waistWidth: 253
   stanceSetback: 12
   profile: Ripsaw（Camber 主导 + 板头长摇臂）
   shape: 定向双向
@@ -29,6 +29,12 @@ specs:
   warranty: 3
   flex: 6
   profileFamily: hybrid
+  sizeSpecs:
+    - { size: "149", overallLength: 1490, effectiveEdge: 1130, waistWidth: 247, noseWidth: 292, tailWidth: 292, sidecutRadii: "7.35 / 6.57" }
+    - { size: "153", overallLength: 1530, effectiveEdge: 1170, waistWidth: 250, noseWidth: 295, tailWidth: 295, sidecutRadii: "7.83 / 7.01" }
+    - { size: "156", overallLength: 1560, effectiveEdge: 1190, waistWidth: 253, noseWidth: 298, tailWidth: 298, sidecutRadii: "8.18 / 7.36" }
+    - { size: "154X", overallLength: 1540, effectiveEdge: 1170, waistWidth: 258, noseWidth: 303, tailWidth: 303, sidecutRadii: "7.86 / 7.03" }
+    - { size: "157X", overallLength: 1570, effectiveEdge: 1200, waistWidth: 262, noseWidth: 307, tailWidth: 307, sidecutRadii: "8.23 / 7.37" }
   scenes:
     - all-mountain
     - freestyle
@@ -46,6 +52,6 @@ images:
     source: evo 2025 款商品图
     sort_order: 0
 data_source:
-  kind: crawl
-  origin_url: https://www.evo.com/products/254788-never-summer-proto-slinger-snowboard-2025
+  kind: official
+  origin_url: https://neversummer.com/pages/mens-proto-slinger-size-chart
 status: published

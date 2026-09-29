@@ -6,6 +6,10 @@ year: 2026
 title: Nitro Beast 2026
 one_liner: 26 款高响应公园自由式板，True Camber 与 Twin 板型强调弹性、控刃和耐用性。
 specs:
+  length: 151
+  waistWidth: 248
+  sidecut: 7.3
+  stanceSetback: 0
   profile: Trüe Camber
   profileFamily: camber
   shape: True Twin
@@ -13,6 +17,11 @@ specs:
   fiberglass: Tri-Lite Laminates
   base: Sintered Speed Formula II
   flex: 9
+  sizeSpecs:
+    - { size: "151MW", overallLength: 1510, waistWidth: 248, noseWidth: 290, tailWidth: 290, sidecutRadii: "7.3", stanceWidth: "460–580 mm", weightRange: "50–70 kg", setback: 0 }
+    - { size: "155MW", overallLength: 1550, waistWidth: 253, noseWidth: 295, tailWidth: 295, sidecutRadii: "7.6", stanceWidth: "480–600 mm", weightRange: "55–75 kg", setback: 0 }
+    - { size: "158MW", overallLength: 1580, waistWidth: 258, noseWidth: 300, tailWidth: 300, sidecutRadii: "8.0", stanceWidth: "500–620 mm", weightRange: "60–80 kg", setback: 0 }
+    - { size: "162MW", overallLength: 1620, waistWidth: 262, noseWidth: 304, tailWidth: 304, sidecutRadii: "8.0", stanceWidth: "500–620 mm", weightRange: "60–80 kg", setback: 0 }
   scenes:
     - freestyle
     - all-mountain

@@ -13,9 +13,9 @@ price:
   currency: CNY
 specs:
   length: 155
-  effectiveEdge: 1195
-  sidecut: 7.6
-  waistWidth: 252
+  effectiveEdge: 1205
+  sidecut: 8.1
+  waistWidth: 258
   stanceSetback: 0
   profile: Resort V1（Camber 主导 + 板头尾反弓）
   shape: 真双向
@@ -29,6 +29,23 @@ specs:
   warranty: 2
   flex: 5.5
   profileFamily: hybrid
+  sizeSpecs:
+    - { size: "148", overallLength: 1480, effectiveEdge: 1176, waistWidth: 244, noseWidth: 287, tailWidth: 287, sidecutRadii: "7.6", stanceWidth: "533 mm", weightRange: "40–68 kg" }
+    - { size: "150", overallLength: 1500, effectiveEdge: 1191, waistWidth: 246, noseWidth: 290, tailWidth: 290, sidecutRadii: "7.7", stanceWidth: "533 mm", weightRange: "45–68 kg" }
+    - { size: "152", overallLength: 1520, effectiveEdge: 1207, waistWidth: 248, noseWidth: 292, tailWidth: 292, sidecutRadii: "7.8", stanceWidth: "559 mm", weightRange: "50–68 kg" }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1222, waistWidth: 250, noseWidth: 295, tailWidth: 295, sidecutRadii: "7.9", stanceWidth: "559 mm", weightRange: "54–81 kg" }
+    - { size: "156", overallLength: 1560, effectiveEdge: 1233, waistWidth: 252, noseWidth: 298, tailWidth: 298, sidecutRadii: "8.0", stanceWidth: "559 mm", weightRange: "59–86 kg" }
+    - { size: "158", overallLength: 1580, effectiveEdge: 1256, waistWidth: 254, noseWidth: 300, tailWidth: 300, sidecutRadii: "8.1", stanceWidth: "584 mm", weightRange: "63–90 kg" }
+    - { size: "160", overallLength: 1600, effectiveEdge: 1270, waistWidth: 257, noseWidth: 304, tailWidth: 304, sidecutRadii: "8.2", stanceWidth: "584 mm", weightRange: "72–100 kg" }
+    - { size: "162", overallLength: 1620, effectiveEdge: 1287, waistWidth: 259, noseWidth: 306, tailWidth: 306, sidecutRadii: "8.3", stanceWidth: "584 mm", weightRange: "82–110 kg" }
+    - { size: "164", overallLength: 1640, effectiveEdge: 1301, waistWidth: 261, noseWidth: 309, tailWidth: 309, sidecutRadii: "8.4", stanceWidth: "584 mm", weightRange: "86–111+ kg" }
+    - { size: "151W", overallLength: 1510, effectiveEdge: 1170, waistWidth: 255, noseWidth: 297, tailWidth: 297, sidecutRadii: "7.8", stanceWidth: "559 mm", weightRange: "49–68 kg" }
+    - { size: "153W", overallLength: 1530, effectiveEdge: 1185, waistWidth: 256, noseWidth: 299, tailWidth: 299, sidecutRadii: "8.0", stanceWidth: "559 mm", weightRange: "54–81 kg" }
+    - { size: "155W", overallLength: 1550, effectiveEdge: 1205, waistWidth: 258, noseWidth: 302, tailWidth: 302, sidecutRadii: "8.1", stanceWidth: "559 mm", weightRange: "59–86 kg" }
+    - { size: "157W", overallLength: 1570, effectiveEdge: 1239, waistWidth: 260, noseWidth: 305, tailWidth: 305, sidecutRadii: "8.1", stanceWidth: "584 mm", weightRange: "63–90 kg" }
+    - { size: "159W", overallLength: 1590, effectiveEdge: 1259, waistWidth: 261, noseWidth: 307, tailWidth: 307, sidecutRadii: "8.2", stanceWidth: "584 mm", weightRange: "68–95 kg" }
+    - { size: "161W", overallLength: 1610, effectiveEdge: 1280, waistWidth: 262, noseWidth: 309, tailWidth: 309, sidecutRadii: "8.3", stanceWidth: "584 mm", weightRange: "73–100 kg" }
+    - { size: "163W", overallLength: 1630, effectiveEdge: 1294, waistWidth: 263, noseWidth: 311, tailWidth: 311, sidecutRadii: "8.4", stanceWidth: "584 mm", weightRange: "77–104 kg" }
   scenes:
     - freestyle
     - all-mountain
@@ -46,6 +63,6 @@ images:
     source: Snowboards.com 2025/26 款商品图
     sort_order: 0
 data_source:
-  kind: crawl
-  origin_url: https://www.stevenspasssnowboardshop.com/store/capita-defenders-of-awesome
+  kind: official
+  origin_url: https://eu.capitasnowboarding.com/it-ch/products/doa-2025
 status: published

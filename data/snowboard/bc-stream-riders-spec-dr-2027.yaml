@@ -14,6 +14,15 @@ specs:
     - all-mountain
     - powder
     - carving
+  # 商品页确认尺码与分型，但未公开对应的逐项尺寸表。
+  sizeSpecs:
+    - { size: "148" }
+    - { size: "154" }
+    - { size: "157" }
+    - { size: "161" }
+    - { size: "162" }
+    - { size: "155W" }
+    - { size: "162W" }
 images:
   - url: "https://www.follows.co.jp/pic-labo/2627bc-dr-1.jpg"
     kind: face

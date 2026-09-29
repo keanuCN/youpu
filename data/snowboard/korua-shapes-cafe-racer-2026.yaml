@@ -12,11 +12,11 @@ price:
   max: 6899
   currency: CNY
 specs:
-  length: 161
-  effectiveEdge: 1310
-  sidecut: 9.4
-  waistWidth: 262
-  stanceSetback: 45
+  length: 159
+  effectiveEdge: 1200
+  sidecut: 8.2
+  waistWidth: 269
+  stanceSetback: 35
   profile: 纯 Camber + 长板头
   shape: 强定向
   core: 白杨 / 竹混合
@@ -29,6 +29,12 @@ specs:
   warranty: 2
   flex: 7.5
   profileFamily: camber
+  sizeSpecs:
+    - { size: "144", overallLength: 1440, effectiveEdge: 1050, runningLength: 930, noseWidth: 301, waistWidth: 252, tailWidth: 273, sidecutRadii: "8.0", stanceWidth: "490–570 mm", weightRange: "40–60 kg", setback: 20 }
+    - { size: "150", overallLength: 1500, effectiveEdge: 1100, runningLength: 950, noseWidth: 302, waistWidth: 254, tailWidth: 276, sidecutRadii: "7.9", stanceWidth: "490–570 mm", weightRange: "45–75 kg", setback: 35 }
+    - { size: "156", overallLength: 1560, effectiveEdge: 1160, runningLength: 1010, noseWidth: 311, waistWidth: 260, tailWidth: 284, sidecutRadii: "8.0", stanceWidth: "500–580 mm", weightRange: "50–80 kg", setback: 35 }
+    - { size: "159", overallLength: 1590, effectiveEdge: 1200, runningLength: 1050, noseWidth: 322, waistWidth: 269, tailWidth: 294, sidecutRadii: "8.2", stanceWidth: "510–590 mm", weightRange: "55–85 kg", setback: 35 }
+    - { size: "164", overallLength: 1640, effectiveEdge: 1230, runningLength: 1090, noseWidth: 330, waistWidth: 276, tailWidth: 302, sidecutRadii: "8.5", stanceWidth: "510–590 mm", weightRange: "65–95+ kg", setback: 35 }
   scenes:
     - carving
     - powder

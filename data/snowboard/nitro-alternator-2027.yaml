@@ -15,6 +15,11 @@ specs:
   core: Powerlite Core
   fiberglass: Bi-Lite Laminates
   base: Sintered Speed Formula II
+  sizeSpecs:
+    - { size: "154", overallLength: 1540, waistWidth: 252, noseWidth: 296, tailWidth: 291, sidecutRadii: "10.3 / 6.6 / 10.3", stanceWidth: "480–600 mm", weightRange: "55–75 kg", setback: -15 }
+    - { size: "157", overallLength: 1570, waistWidth: 254, noseWidth: 298, tailWidth: 293, sidecutRadii: "10.8 / 6.8 / 10.8", stanceWidth: "480–600 mm", weightRange: "60–80 kg", setback: -15 }
+    - { size: "160", overallLength: 1600, waistWidth: 256, noseWidth: 300, tailWidth: 295, sidecutRadii: "11.0 / 7.3 / 11.0", stanceWidth: "500–620 mm", weightRange: "65–85 kg", setback: -15 }
+    - { size: "162W", overallLength: 1620, waistWidth: 264, noseWidth: 308, tailWidth: 304, sidecutRadii: "11.0 / 7.3 / 11.0", stanceWidth: "500–620 mm", weightRange: "≥70 kg", setback: -15 }
   flex: 8
   scenes:
     - all-mountain

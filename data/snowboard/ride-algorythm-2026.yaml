@@ -13,16 +13,25 @@ price:
   currency: CNY
 specs:
   length: 160
-  effectiveEdge: 1265
-  sidecut: 8.6
+  effectiveEdge: 1197
+  sidecut: 9.4
   waistWidth: 264
-  stanceSetback: 40
+  stanceSetback: 19
   profile: Camber + 大板头摇臂
-  shape: 强定向锥形
+  shape: Directional Twin
   core: 白杨 / 竹 / 碳纤维梁
   fiberglass: Triax Carbon
   base: 烧结 9000
   weight: 3050
+  sizeSpecs:
+    - { size: "147", effectiveEdge: 1096, waistWidth: 245, sidecutRadii: "9.0 / 6.5 / 9.0", noseWidth: 287, tailWidth: 287, stanceWidth: "508 mm", weightRange: "34–75 kg", setback: -19 }
+    - { size: "151", effectiveEdge: 1121, waistWidth: 248, sidecutRadii: "9.1 / 6.6 / 9.1", noseWidth: 291, tailWidth: 291, stanceWidth: "533 mm", weightRange: "45–82 kg", setback: -19 }
+    - { size: "154", effectiveEdge: 1147, waistWidth: 251, sidecutRadii: "9.2 / 6.7 / 9.2", noseWidth: 296, tailWidth: 296, stanceWidth: "559 mm", weightRange: "52–88 kg", setback: -19 }
+    - { size: "157", effectiveEdge: 1172, waistWidth: 254, sidecutRadii: "9.3 / 6.8 / 9.3", noseWidth: 300, tailWidth: 300, stanceWidth: "559 mm", weightRange: "57–93 kg", setback: -19 }
+    - { size: "161", effectiveEdge: 1197, waistWidth: 257, sidecutRadii: "9.4 / 6.9 / 9.4", noseWidth: 304, tailWidth: 304, stanceWidth: "559 mm", weightRange: "59–95 kg", setback: -19 }
+    - { size: "155W", effectiveEdge: 1159, waistWidth: 258, sidecutRadii: "9.2 / 6.7 / 9.2", noseWidth: 304, tailWidth: 304, stanceWidth: "559 mm", weightRange: "57–93 kg", setback: -19 }
+    - { size: "160W", effectiveEdge: 1197, waistWidth: 264, sidecutRadii: "9.4 / 6.9 / 9.4", noseWidth: 311, tailWidth: 311, stanceWidth: "559 mm", weightRange: "73–100+ kg", setback: -19 }
+    - { size: "164W", effectiveEdge: 1223, waistWidth: 266, sidecutRadii: "9.5 / 7.0 / 9.5", noseWidth: 315, tailWidth: 315, stanceWidth: "584 mm", weightRange: "77–100+ kg", setback: -19 }
   damping: 9
   pop: 6
   turnRadiusFeel: 大弧为主，深雪里转向轻盈
@@ -46,6 +55,7 @@ images:
     source: Milo Sport 2026 款商品图
     sort_order: 0
 data_source:
-  kind: crawl
-  origin_url: https://www.milosport.com/products/ride-algorythm-snowboard-2026
+  kind: official
+  origin_url: https://ridesnowboards.com/en-us/support/snowboard-size-guide
+  specs_url: https://ridesnowboards.com/en-us/all-mountain
 status: published

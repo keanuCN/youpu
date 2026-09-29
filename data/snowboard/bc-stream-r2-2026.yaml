@@ -9,6 +9,14 @@ specs:
   profile: Variable Camber
   profileFamily: hybrid
   shape: Directional Twin / Hammerhead
+  # 官方和零售资料暂未公开各尺码的逐项尺寸表，以下只记录页面明确列出的尺码。
+  sizeSpecs:
+    - { size: "151" }
+    - { size: "154" }
+    - { size: "157" }
+    - { size: "162" }
+    - { size: "157W" }
+    - { size: "162W" }
   scenes:
     - carving
     - all-mountain
