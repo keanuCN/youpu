@@ -156,6 +156,8 @@ const VERIFIED_FLOW_FUSE_THUMBNAIL_PATH =
 const VERIFIED_SMARTMARINE_THUMBNAIL_PATH = "/cdn/images/products/xlarge/8089900_a.jpg";
 const VERIFIED_DECATHLON_SNB_100_THUMBNAIL_PATH =
   "/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg";
+const VERIFIED_KORUA_CAFE_RACER_IMAGE_PATH =
+  "/6939308982453/1758747603396/KORUA-Shapes-Cafe-Racer-Nicholas-Wolken-Thumbnail-01.jpg";
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -260,6 +262,18 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       optimizer.searchParams.set("w", "375");
       optimizer.searchParams.set("q", "80");
       return optimizer.toString();
+    }
+    if (
+      image.hostname === "original.accentuate.io" &&
+      image.pathname === VERIFIED_KORUA_CAFE_RACER_IMAGE_PATH &&
+      image.searchParams.get("v") === "1758747603396" &&
+      widthLimit >= 416 &&
+      widthLimit < 1600 &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      image.hostname = "cdn.accentuate.io";
+      image.searchParams.set("transform", `resize=${widthLimit <= 480 ? 416 : 640}`);
+      return image.toString();
     }
     if (
       widthLimit >= 320 &&
@@ -536,6 +550,7 @@ const REMOTE_IMAGE_RULES = [
   { host: "images.blue-tomato.com", pathPrefix: "/is/image/bluetomato/" },
   { host: "www.jonessnowboards.com", pathPrefix: "/cdn/shop/files/" },
   { host: "original.accentuate.io", pathPrefix: "/6939308982453/" },
+  { host: "cdn.accentuate.io", pathPrefix: "/6939308982453/" },
   { host: "glisshop-glisshop-fr-storage.omn.proximis.com", pathPrefix: "/Imagestorage/imagesSynchro/" },
   { host: "www.nitrosnow.ca", pathPrefix: "/cdn/shop/files/" },
   { host: "www.nitrosnowboards.com", pathPrefix: "/cdn/shop/files/" },

@@ -298,6 +298,23 @@ test("uses official 640px Union binding variants only for the verified image ver
   assert.equal(preferProductThumbnail(changedVersion).includes("UN26_ATLAS_BLACK_640x.jpg"), false);
 });
 
+test("uses official Accentuate resize variants only for the verified KORUA Cafe Racer image", () => {
+  const image =
+    "https://original.accentuate.io/6939308982453/1758747603396/KORUA-Shapes-Cafe-Racer-Nicholas-Wolken-Thumbnail-01.jpg?v=1758747603396";
+  const thumbnail = new URL(preferProductThumbnail(image));
+  assert.equal(thumbnail.hostname, "cdn.accentuate.io");
+  assert.equal(thumbnail.searchParams.get("v"), "1758747603396");
+  assert.equal(thumbnail.searchParams.get("transform"), "resize=640");
+  assert.equal(isAllowedRemoteImageUrl(thumbnail.toString()), true);
+
+  const compact = new URL(preferProductThumbnail(image, 480));
+  assert.equal(compact.searchParams.get("transform"), "resize=416");
+  assert.equal(preferHighResolutionProductImage(image), image);
+
+  const unrelated = image.replace("Thumbnail-01", "Thumbnail-02");
+  assert.equal(preferProductThumbnail(unrelated), unrelated);
+});
+
 test("uses the verified 416px CAPiTA card image while preserving detail resolution", () => {
   const images = [
     "SB04-RESORT-TWIN-TOP.png?v=1776884550",
