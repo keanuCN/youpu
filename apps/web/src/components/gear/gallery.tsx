@@ -1,22 +1,22 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { MediaPlaceholder } from "./data-state";
+import { isAiGeneratedImageUrl } from "@/lib/image-url";
 import { SafeImage } from "./safe-image";
 import type { GalleryShot } from "@/types";
 
-/** 详情页图集：主图 + 缩略图轨道，灰度→彩色签名交互 */
+/** 详情页只显示可信的商品图，完整保留原图比例。 */
 export function Gallery({
   shots,
   alt,
-  fit = "cover",
 }: {
   shots: GalleryShot[];
   alt: string;
-  fit?: "cover" | "contain";
 }) {
   const [idx, setIdx] = useState(0);
-  const active = shots[idx] ?? shots[0];
-  if (!active) return <MediaPlaceholder label={alt} className="aspect-[4/3] border border-border sm:aspect-[5/4]" />;
+  const productShots = shots.filter((shot) => !isAiGeneratedImageUrl(shot.url));
+  const selectedIdx = Math.min(idx, Math.max(productShots.length - 1, 0));
+  const active = productShots[selectedIdx];
+  if (!active) return <div aria-hidden="true" className="aspect-[4/3] sm:aspect-[5/4]" />;
 
   return (
     <div className="flex flex-col gap-3">
@@ -26,17 +26,18 @@ export function Gallery({
           src={active.url}
           alt={`${alt} · ${active.label}`}
           fallbackLabel={alt}
-          fallbackClassName={cn("p-8 sm:p-12", fit === "contain" ? "" : "p-0")}
-          className={cn("plate h-full w-full", fit === "contain" ? "object-contain p-8 sm:p-12" : "object-cover")}
+          fallbackClassName="p-4 sm:p-6"
+          fallbackMode="empty"
+          className="h-full w-full object-contain p-4 sm:p-6"
         />
         <figcaption className="mono-label absolute bottom-0 left-0 bg-background/90 px-2.5 py-1.5">
-          {String(idx + 1).padStart(2, "0")} / {String(shots.length).padStart(2, "0")} · {active.label}
+          {String(selectedIdx + 1).padStart(2, "0")} / {String(productShots.length).padStart(2, "0")} · {active.label}
         </figcaption>
       </figure>
 
-      {shots.length > 1 ? (
+      {productShots.length > 1 ? (
         <div className="thin-scroll flex gap-2 overflow-x-auto pb-1">
-          {shots.map((s, i) => (
+          {productShots.map((s, i) => (
             <button
               key={`${s.url}-${i}`}
               type="button"
@@ -53,11 +54,7 @@ export function Gallery({
                 loading="lazy"
                 fallbackLabel={`${alt} · ${s.label}`}
                 fallbackMode="muted"
-                className={cn(
-                  "h-full w-full",
-                  fit === "contain" ? "object-contain p-2" : "object-cover",
-                  i === idx ? "" : "grayscale",
-                )}
+                className="h-full w-full object-contain p-2"
               />
             </button>
           ))}

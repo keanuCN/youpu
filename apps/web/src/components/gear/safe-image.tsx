@@ -8,7 +8,7 @@ type SafeImageProps = Omit<ImgHTMLAttributes<HTMLImageElement>, "src"> & {
   src?: string | null;
   fallbackLabel: string;
   fallbackClassName?: string;
-  fallbackMode?: "placeholder" | "muted";
+  fallbackMode?: "placeholder" | "muted" | "empty";
 };
 
 /** 外部图片失败时保留布局，并显示统一的本地占位。 */
@@ -30,6 +30,9 @@ export function SafeImage({
 
   if (!src || failed) {
     const fallbackClasses = fallbackClassName ?? className;
+    if (fallbackMode === "empty") {
+      return <div aria-hidden="true" className={cn("h-full w-full", fallbackClasses)} />;
+    }
     if (fallbackMode === "muted") {
       return <div role="img" aria-label={`${fallbackLabel} 图片暂不可用`} className={cn("h-full w-full bg-secondary", fallbackClasses)} />;
     }

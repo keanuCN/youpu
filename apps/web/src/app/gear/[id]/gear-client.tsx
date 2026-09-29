@@ -88,7 +88,6 @@ export default function GearDetailPage({
         <Gallery
           shots={gear.gallery}
           alt={`${gear.brand} ${gear.model}`}
-          fit={gear.categorySlug === "snowboard" ? "cover" : "contain"}
         />
          <InfoCard gear={gear} ratingSummary={ratingSummary} />
       </div>

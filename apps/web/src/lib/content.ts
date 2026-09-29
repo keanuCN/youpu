@@ -9,7 +9,12 @@ import {
 import { GEAR, gearOfCategory, getGear } from "../data/boards";
 import { flexBucket, isLive } from "../data/categories";
 import { API_BASE } from "./api";
-import { isAllowedImageUrl, resolveImageUrl } from "./image-url";
+import {
+  isAllowedImageUrl,
+  isAiGeneratedImageUrl,
+  preferHighResolutionProductImage,
+  resolveImageUrl,
+} from "./image-url";
 import type { FitGuide, FitGuideRow, GearAnalysis, GearItem, GalleryShot } from "../types";
 
 export type ContentSource = "pack" | "api";
@@ -132,16 +137,24 @@ function analysisOf(item: ApiProduct, fallback?: GearItem): GearAnalysis {
 
 function galleryOf(item: ApiProduct, hero: string): GalleryShot[] {
   if ("images" in item) {
-    return item.images
-      .filter((image) => isAllowedImageUrl(image.url))
-      .map((image) => ({ url: resolveImageUrl(image.url), label: image.alt ?? image.kind }));
+    const images = item.images
+      .filter((image) => isAllowedImageUrl(image.url) && !isAiGeneratedImageUrl(image.url))
+      .map((image) => ({
+        url: resolveImageUrl(preferHighResolutionProductImage(image.url)),
+        label: image.alt ?? image.kind,
+      }));
+    const detailHero = preferHighResolutionProductImage(hero);
+    if (detailHero && !images.some((image) => image.url === detailHero)) {
+      return [{ url: detailHero, label: "商品主图 / PRODUCT" }, ...images];
+    }
+    return images;
   }
   // API 列表只提供封面；不要回退到本地内容包图集，以免旧 AI 占位图重新出现。
-  return hero ? [{ url: hero, label: "封面 / COVER" }] : [];
+  return hero ? [{ url: preferHighResolutionProductImage(hero), label: "封面 / COVER" }] : [];
 }
 
 function safeImageUrl(source: string | null, fallback = ""): string {
-  if (!source || !isAllowedImageUrl(source)) return fallback;
+  if (!source || !isAllowedImageUrl(source) || isAiGeneratedImageUrl(source)) return fallback;
   return resolveImageUrl(source);
 }
 

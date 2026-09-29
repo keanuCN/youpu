@@ -1,5 +1,40 @@
 const IMAGE_PROXY_PATH = "/api/image-proxy";
 
+/** AI 素材只用于装饰性页面，不作为商品详情的商品实拍图。 */
+export function isAiGeneratedImageUrl(source: string): boolean {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    const proxiedSource = image.searchParams.get("url");
+    if (proxiedSource) return isAiGeneratedImageUrl(proxiedSource);
+    return image.hostname === "g.cdn.meoo.host" && image.pathname.startsWith("/uvayfd7jql5o/ai-images/");
+  } catch {
+    return false;
+  }
+}
+
+/** 详情大图至少请求 1600px 的 Shopify 原图变体，避免低分辨率目录缩略图被放大。 */
+export function preferHighResolutionProductImage(source: string): string {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      if (!proxiedSource) return source;
+      image.searchParams.set("url", preferHighResolutionProductImage(proxiedSource));
+      return `${image.pathname}${image.search}`;
+    }
+    if (image.pathname.includes("/cdn/shop/") && image.searchParams.has("width")) {
+      const width = Number(image.searchParams.get("width"));
+      if (Number.isFinite(width) && width > 0 && width < 1600) {
+        image.searchParams.set("width", "1600");
+        return image.toString();
+      }
+    }
+    return source;
+  } catch {
+    return source;
+  }
+}
+
 /**
  * 远程图片只允许来自明确登记的产品图片路径。
  * 新品类的本地演示图来自品牌官网或公开零售页面，正式上线前仍应迁移到自有 COS。

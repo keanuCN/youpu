@@ -1,4 +1,9 @@
-import { isAllowedImageUrl, resolveImageUrl } from "../lib/image-url";
+import {
+  isAllowedImageUrl,
+  isAiGeneratedImageUrl,
+  preferHighResolutionProductImage,
+  resolveImageUrl,
+} from "../lib/image-url";
 import type { GearItem } from "../types";
 import type { CatalogSnapshotItem } from "./catalog-snapshot";
 
@@ -53,15 +58,6 @@ function safeCover(snapshot: CatalogSnapshotItem, fallback: string): string {
   return resolveImageUrl(snapshot.coverUrl);
 }
 
-function isAiPlaceholder(url: string): boolean {
-  try {
-    const image = new URL(url);
-    return image.hostname === "g.cdn.meoo.host" && image.pathname.startsWith("/uvayfd7jql5o/ai-images/");
-  } catch {
-    return false;
-  }
-}
-
 function priceRange(snapshot: CatalogSnapshotItem, fallback?: GearItem): { min: number; max: number } {
   const min = snapshot.priceMin ?? fallback?.priceBand.min ?? fallback?.price ?? 0;
   const max = snapshot.priceMax ?? fallback?.priceBand.max ?? fallback?.price ?? min;
@@ -93,10 +89,9 @@ function scenesOf(specs: SnapshotSpecs, fallback: string[] = []): string[] {
   return fallback;
 }
 
-function galleryWithCover(cover: string, fallback: GearItem["gallery"] = []): GearItem["gallery"] {
-  const realImages = fallback.filter((shot) => shot.url !== cover && !isAiPlaceholder(shot.url));
-  if (!cover) return realImages;
-  return [{ url: cover, label: "目录封面 / CATALOG" }, ...realImages];
+function galleryWithCover(cover: string): GearItem["gallery"] {
+  if (!cover || isAiGeneratedImageUrl(cover)) return [];
+  return [{ url: preferHighResolutionProductImage(cover), label: "目录封面 / CATALOG" }];
 }
 
 function mergeSnapshot(gear: GearItem, snapshot: CatalogSnapshotItem): GearItem {
@@ -118,7 +113,7 @@ function mergeSnapshot(gear: GearItem, snapshot: CatalogSnapshotItem): GearItem 
     flexValue: flex,
     flexLabel: numberValue(specs.flex) === undefined ? gear.flexLabel : flexLabel(flex),
     hero: cover,
-    gallery: galleryWithCover(cover, gear.gallery),
+    gallery: galleryWithCover(cover),
     specs: { ...gear.specs, ...specs },
     composite: snapshot.composite ?? gear.composite,
     analysis: snapshot.oneLiner ? { ...gear.analysis, verdict: snapshot.oneLiner } : gear.analysis,
