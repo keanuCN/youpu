@@ -11,12 +11,16 @@ specs:
   shape: Directional Twin / Hammerhead
   # 官方和零售资料暂未公开各尺码的逐项尺寸表，以下只记录页面明确列出的尺码。
   sizeSpecs:
-    - { size: "151" }
-    - { size: "154" }
-    - { size: "157" }
-    - { size: "162" }
-    - { size: "157W" }
-    - { size: "162W" }
+    - { size: "144N", variant: "窄版" }
+    - { size: "148N", variant: "窄版" }
+    - { size: "151N", variant: "窄版" }
+    - { size: "154N", variant: "窄版" }
+    - { size: "151", variant: "标准版" }
+    - { size: "154", variant: "标准版" }
+    - { size: "157", variant: "标准版" }
+    - { size: "162", variant: "标准版" }
+    - { size: "157W", variant: "宽版" }
+    - { size: "162W", variant: "宽版" }
   scenes:
     - carving
     - all-mountain

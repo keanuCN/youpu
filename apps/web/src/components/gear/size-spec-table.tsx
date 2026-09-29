@@ -6,6 +6,7 @@ import type { GearItem } from "@/types";
 
 const COLUMNS = [
   ["size", "尺码", ""],
+  ["variant", "版本/板型", ""],
   ["overallLength", "板长", "mm"],
   ["effectiveEdge", "有效刃长", "mm"],
   ["contactLength", "接雪长度", "mm"],
