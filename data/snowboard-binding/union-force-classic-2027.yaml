@@ -9,6 +9,7 @@ specs:
   entrySystem: strap
   flex: 6
   bootCompatibility: "Union 标准安装圆盘；适配普通绑带雪鞋"
+  bindingSizeGuide: "Union 男款尺码参考：S 对应雪鞋 US 男码 6–8 / Mondo 240–260；M 对应 8.5–10.5 / 265–285；L 对应 11–13 / 290–310；XL 对应 14–15 / 320–330。最终按具体雪鞋外长与官方尺码表确认。"
   mountingSystem: "Camber Disk；4x4、4x2 与 Channel"
   terrain: [all-mountain, freeride, freestyle]
 editorial_scores:
