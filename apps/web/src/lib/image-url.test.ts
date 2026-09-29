@@ -368,6 +368,21 @@ test("uses the measured 800px Canyon thumbnail without changing its detail image
   assert.equal(preferProductThumbnail(unrelatedImage), unrelatedImage);
 });
 
+test("uses the verified 416px Flow Fuse thumbnail only for its exact Shopify asset", () => {
+  const image =
+    "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/High-_0024_FLOW_FUSE_WHITE_fusion.jpg?v=1788232288&width=800";
+  const thumbnail = new URL(preferProductThumbnail(image));
+  assert.equal(thumbnail.searchParams.get("width"), "416");
+  assert.equal(thumbnail.searchParams.get("v"), "1788232288");
+
+  const detail = new URL(preferHighResolutionProductImage(image));
+  assert.equal(detail.searchParams.get("width"), "1600");
+  assert.equal(detail.searchParams.get("v"), "1788232288");
+
+  const unverifiedVersion = image.replace("1788232288", "other-version");
+  assert.equal(preferProductThumbnail(unverifiedVersion), unverifiedVersion);
+});
+
 test("limits approved Decathlon f=<width>x0 thumbnails and preserves other URL data", () => {
   const oversizedImage =
     "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto&quality=80";

@@ -86,6 +86,8 @@ const VERIFIED_GIANT_THUMBNAIL_PATHS = new Map([
 ]);
 const VERIFIED_CANYON_THUMBNAIL_PATH =
   "/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw07984cc9/images/full/full_2023_/2023/full_2023_3170_neuron-cf-8_sr-bk_P5.png";
+const VERIFIED_FLOW_FUSE_THUMBNAIL_PATH =
+  "/s/files/1/0674/9582/1405/files/High-_0024_FLOW_FUSE_WHITE_fusion.jpg";
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
   [
     "/tpc/uploads/spu/cover/e1b8110f65a5a3321fe487f0a1a061ac@ultra.png",
@@ -249,6 +251,21 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       const width = requestedWidth === null ? undefined : Number(requestedWidth);
       if (requestedWidth === null || (Number.isFinite(width) && width! > 800)) {
         image.searchParams.set("sw", "800");
+        return image.toString();
+      }
+    }
+    if (
+      image.hostname === "cdn.shopify.com" &&
+      image.pathname === VERIFIED_FLOW_FUSE_THUMBNAIL_PATH &&
+      image.searchParams.get("v") === "1788232288" &&
+      widthLimit >= 416 &&
+      widthLimit < 1600 &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const requestedWidth = image.searchParams.get("width");
+      const width = requestedWidth === null ? undefined : Number(requestedWidth);
+      if (requestedWidth === null || (Number.isFinite(width) && width! > 416)) {
+        image.searchParams.set("width", "416");
         return image.toString();
       }
     }
