@@ -99,7 +99,7 @@ export default function GearDetailPage({
       </section>
 
       <section className="reveal mt-16 grid gap-10 lg:grid-cols-[1fr_360px]">
-        <div>
+        <div className="min-w-0">
           <SectionHead index="02" title="完整参数" titleEn="Specifications" desc={`按 ${category?.name ?? ""} 品类的统一模板录入，缺测项显示 —。`} />
           <FitGuideTable guide={gear.fitGuide} />
           <SizeSpecTable gear={gear} />

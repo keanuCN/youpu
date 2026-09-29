@@ -47,12 +47,16 @@ export function SizeSpecTable({ gear }: { gear: GearItem }) {
   const columns = COLUMNS.filter(([key]) => key === "size" || rows.some((row) => row[key] !== null && row[key] !== undefined && row[key] !== ""));
 
   return (
-    <section className="mb-8 border-y border-border py-5">
+    <section className="mb-8 min-w-0 max-w-full border-y border-border py-5">
       <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
         <h3 className="text-[15px] font-medium">官方尺码参数</h3>
         <span className="mono-label">{rows.length} 个尺码 · 数据源：GRAY 26–27 官方目录</span>
       </div>
-      <div className="overflow-x-auto">
+      <div
+        aria-label="官方尺码参数，可横向滚动查看"
+        className="thin-scroll w-full max-w-full overflow-x-auto overscroll-x-contain"
+        tabIndex={0}
+      >
         <table className="w-full min-w-max border-collapse text-left text-[12px]">
           <thead>
             <tr className="border-y border-border bg-muted/35">
