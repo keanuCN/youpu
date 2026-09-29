@@ -8,6 +8,7 @@ one_liner: "官方档案型号；TLS 系带。尺码与脚感以实际试穿为�
 specs:
   lacingSystem: "TLS 系带"
   flex: "偏软"
+  fit: "常规楦"
   terrain: "全山/公园"
   brandComfortScore: 5
   brandResponseScore: 4

@@ -175,7 +175,7 @@ function enrichBootSpecsFromVerifiedSummary(gear: GearItem): GearItem {
         "venture pro tls": "官方档案型号；TLS 双区快速系带，常规楦另有宽楦版；适合中级及以上全山滑行。尺码与脚感以实际试穿为准。",
       };
       gear = { ...gear, analysis: { ...gear.analysis, verdict: officialVerdicts[model]! } };
-    }
+    } else if (!/wide/.test(model)) specs.fit ??= "常规楦";
     if (/bianca/.test(model)) {
       specs.flex ??= "中等";
       specs.terrain ??= "全山";

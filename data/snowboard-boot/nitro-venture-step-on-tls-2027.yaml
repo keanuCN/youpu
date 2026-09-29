@@ -9,6 +9,7 @@ specs:
   lacingSystem: TLS 系带
   bindingCompatibility: 仅与 Step On 固定器兼容
   flex: "可调"
+  fit: "常规楦"
   terrain: "全山/自由式"
   brandComfortScore: 7
   brandResponseScore: 7
