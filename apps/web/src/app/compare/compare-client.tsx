@@ -152,7 +152,7 @@ export default function ComparePage() {
               <div key={gear.id} className="flex items-center gap-3 bg-background p-4">
                 {image ? (
                   <SafeImage
-                    src={image}
+                    src={preferProductThumbnail(image, 192)}
                     alt=""
                     fallbackLabel={`${gear.brand} ${gear.model}`}
                     fallbackMode="muted"
@@ -385,7 +385,7 @@ export default function ComparePage() {
                     </div>
                     {hasMedia(g) && mediaUrl(g) ? (
                       <SafeImage
-                        src={preferProductThumbnail(mediaUrl(g)!, 800)}
+                        src={preferProductThumbnail(mediaUrl(g)!, 480)}
                         alt=""
                         loading="lazy"
                         fallbackLabel={`${g.brand} ${g.model}`}
