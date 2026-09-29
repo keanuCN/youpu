@@ -26,6 +26,19 @@ specs:
   scenes:
     - all-mountain
     - powder
+  sizeSpecs:
+    - { size: "151", overallLength: 1510, effectiveEdge: 1120, contactLength: 1008, noseLength: 321, noseWidth: 290, waistWidth: 243, tailLength: 181, tailWidth: 276, sidecutRadii: "7.3", stanceWidth: "500 mm", weightRange: "54–77 kg", boardWeight: "2700 g", insertQty: "Float Pack", setback: 20 }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1140, contactLength: 1032, noseLength: 324, noseWidth: 292, waistWidth: 246, tailLength: 184, tailWidth: 278, sidecutRadii: "7.9", stanceWidth: "520 mm", weightRange: "54–77 kg", boardWeight: "2800 g", insertQty: "Float Pack", setback: 20 }
+    - { size: "156W", overallLength: 1560, effectiveEdge: 1160, contactLength: 1046, noseLength: 327, noseWidth: 306, waistWidth: 261, tailLength: 187, tailWidth: 292, sidecutRadii: "8.3", stanceWidth: "560 mm", weightRange: "59–82 kg", boardWeight: "3000 g", insertQty: "Float Pack", setback: 20 }
+    - { size: "158", overallLength: 1580, effectiveEdge: 1180, contactLength: 1066, noseLength: 327, noseWidth: 294, waistWidth: 249, tailLength: 187, tailWidth: 281, sidecutRadii: "8.5", stanceWidth: "560 mm", weightRange: "59–82 kg", boardWeight: "2900 g", insertQty: "Float Pack", setback: 20 }
+    - { size: "159W", overallLength: 1590, effectiveEdge: 1180, contactLength: 1070, noseLength: 330, noseWidth: 307, waistWidth: 263, tailLength: 190, tailWidth: 295, sidecutRadii: "8.7", stanceWidth: "560 mm", weightRange: "64–86 kg", boardWeight: "3100 g", insertQty: "Float Pack", setback: 20 }
+    - { size: "161", overallLength: 1610, effectiveEdge: 1200, contactLength: 1090, noseLength: 330, noseWidth: 296, waistWidth: 252, tailLength: 190, tailWidth: 283, sidecutRadii: "9.1", stanceWidth: "560 mm", weightRange: "64–86 kg", boardWeight: "3100 g", insertQty: "Float Pack", setback: 20 }
+    - { size: "162W", overallLength: 1620, effectiveEdge: 1210, contactLength: 1100, noseLength: 330, noseWidth: 307, waistWidth: 263, tailLength: 190, tailWidth: 294, sidecutRadii: "9.3", stanceWidth: "560 mm", weightRange: "73–95 kg", boardWeight: "3300 g", insertQty: "Float Pack", setback: 20 }
+    - { size: "164", overallLength: 1640, effectiveEdge: 1230, contactLength: 1116, noseLength: 332, noseWidth: 299, waistWidth: 254, tailLength: 192, tailWidth: 286, sidecutRadii: "9.3", stanceWidth: "560 mm", weightRange: "73–95 kg", boardWeight: "3200 g", insertQty: "Float Pack", setback: 20 }
+    - { size: "165W", overallLength: 1650, effectiveEdge: 1230, contactLength: 1124, noseLength: 333, noseWidth: 311, waistWidth: 266, tailLength: 193, tailWidth: 298, sidecutRadii: "9.4", stanceWidth: "600 mm", weightRange: "73–95 kg", boardWeight: "3300 g", insertQty: "Float Pack", setback: 20 }
+    - { size: "167", overallLength: 1670, effectiveEdge: 1250, contactLength: 1136, noseLength: 337, noseWidth: 305, waistWidth: 259, tailLength: 197, tailWidth: 292, sidecutRadii: "9.4", stanceWidth: "600 mm", weightRange: "73–95 kg", boardWeight: "3400 g", insertQty: "Float Pack", setback: 20 }
+    - { size: "169W", overallLength: 1690, effectiveEdge: 1270, contactLength: 1156, noseLength: 337, noseWidth: 317, waistWidth: 270, tailLength: 197, tailWidth: 304, sidecutRadii: "9.5", stanceWidth: "620 mm", weightRange: "77–100 kg+", boardWeight: "3600 g", insertQty: "Float Pack", setback: 20 }
+    - { size: "172", overallLength: 1720, effectiveEdge: 1290, contactLength: 1178, noseLength: 341, noseWidth: 311, waistWidth: 263, tailLength: 201, tailWidth: 298, sidecutRadii: "9.5", stanceWidth: "620 mm", weightRange: "77–100 kg+", boardWeight: "3600 g", insertQty: "Float Pack", setback: 20 }
 editorial_scores:
   stability: 9.2
   response: 9.0
