@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type ImgHTMLAttributes } from "react";
+import React, { useEffect, useState, type ImgHTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 import { MediaPlaceholder } from "./data-state";
 
@@ -51,6 +51,8 @@ export function SafeImage({
     <img
       {...props}
       src={usingFallback && fallbackSrc ? fallbackSrc : src}
+      srcSet={!usingFallback && !srcSetType ? srcSet : undefined}
+      sizes={!usingFallback && !srcSetType ? sizes : undefined}
       alt={alt}
       className={className}
       decoding={props.decoding ?? "async"}
@@ -66,7 +68,7 @@ export function SafeImage({
     />
   );
 
-  if (srcSetType && srcSet) {
+  if (srcSetType && srcSet && !usingFallback) {
     return (
       <picture className="contents">
         <source type={srcSetType} srcSet={srcSet} sizes={sizes} />
