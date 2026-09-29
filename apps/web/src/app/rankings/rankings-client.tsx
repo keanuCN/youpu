@@ -104,7 +104,7 @@ export default function RankingsPage() {
         titleEn="Rankings"
         desc={
           isSnowboard
-            ? "最终分 = 数据分 × 70% + 社区票 × 30%。单板数据分由综合指数、热度、进阶取向与用户评分加权得出。"
+            ? "演示榜单采用规格推演评分与热度；真实社区票单独统计。最终分 = 数据分 × 70% + 社区票 × 30%。"
             : `最终分 = 数据分 × 70% + 社区票 × 30%。${category.name}数据分由编辑评分、热度与用户评分加权得出。`
         }
         aside={

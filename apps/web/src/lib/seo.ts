@@ -18,9 +18,9 @@ export function absoluteUrl(path: string): string {
 
 /** 详情页：型号词是天然长尾，标题吃 {model} {year} + 决策词（技术方案 §14.2 模板） */
 export function gearMetadata(gear: GearItem): Metadata {
-  const title = `${gear.model} ${gear.year} 参数 · 实测评分 · 尺寸怎么选 - ${gear.brand}`;
+  const title = `${gear.model} ${gear.year} 参数 · ${gear.demoRating ? "选板参考" : "实测评分"} · 尺寸怎么选 - ${gear.brand}`;
   const facts = [
-    `${reviewCount(gear)} 条实测`,
+    gear.demoRating ? "含规格推演演示样本" : `${reviewCount(gear)} 条实测`,
     gear.flexValue > 0 ? `硬度 ${gear.flexValue}/10` : "硬度待补充",
     hasPrice(gear) ? fmtPrice(gear.price, gear.priceCurrency) : "价格待补充",
   ].join(" · ");
@@ -92,7 +92,7 @@ export function productJsonLd(gear: GearItem) {
         }
       : {}),
     // 有实测评分才输出聚合评分，避免空数据进入富摘要
-    ...(count > 0
+    ...(!gear.demoRating && count > 0
       ? { aggregateRating: { "@type": "AggregateRating", ratingValue: rating, reviewCount: count, bestRating: 5 } }
       : {}),
   };

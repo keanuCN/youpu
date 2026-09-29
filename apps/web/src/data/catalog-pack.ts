@@ -115,6 +115,10 @@ function mergeSnapshot(gear: GearItem, snapshot: CatalogSnapshotItem): GearItem 
     hero: cover,
     gallery: galleryWithCover(cover),
     specs: { ...gear.specs, ...specs },
+    liveRating:
+      snapshot.ratingOverall !== null && snapshot.ratingCount > 0
+        ? { overall: snapshot.ratingOverall, count: snapshot.ratingCount }
+        : undefined,
     composite: snapshot.composite ?? gear.composite,
     analysis: snapshot.oneLiner ? { ...gear.analysis, verdict: snapshot.oneLiner } : gear.analysis,
     priceBand,
@@ -150,6 +154,10 @@ function createFromSnapshot(snapshot: CatalogSnapshotItem): GearItem {
     analysis: { verdict, strengths: [], weaknesses: [], fits: [], notFits: [] },
     priceBand,
     ratingDist: EMPTY_RATING_DIST,
+    liveRating:
+      snapshot.ratingOverall !== null && snapshot.ratingCount > 0
+        ? { overall: snapshot.ratingOverall, count: snapshot.ratingCount }
+        : undefined,
     isNew: false,
     addedAt: `${snapshot.year}-01-01`,
   };

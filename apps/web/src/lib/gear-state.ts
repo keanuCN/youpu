@@ -43,6 +43,7 @@ export function hasHardcoreIndex(gear: Pick<GearItem, "hardcore" | "flexValue" |
   );
 }
 
-export function hasUserRating(gear: Pick<GearItem, "ratingDist">): boolean {
+export function hasUserRating(gear: Pick<GearItem, "ratingDist" | "liveRating">): boolean {
+  if (gear.liveRating) return gear.liveRating.count > 0;
   return Object.values(gear.ratingDist).some((count) => count > 0);
 }

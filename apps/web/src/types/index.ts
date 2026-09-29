@@ -142,6 +142,13 @@ export interface GearItem {
   analysis: GearAnalysis;
   priceBand: { min: number; max: number };
   ratingDist: Record<"1" | "2" | "3" | "4" | "5", number>;
+  /** 演示内容只用于本地展示，不作为真实社区实测数据或 SEO 聚合评分。 */
+  demoMetrics?: boolean;
+  /** 用户评分分布是否为规格推演样例，和真实社区聚合评分分开。 */
+  demoRating?: boolean;
+  /** API 中已存在的真实社区聚合评分；与本地演示分布分开保存。 */
+  liveRating?: { overall: number; count: number };
+  demoNotes?: { title: string; content: string }[];
   isNew: boolean;
   addedAt: string;
 }

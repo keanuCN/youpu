@@ -93,7 +93,7 @@ export default function GearDetailPage({
       </div>
 
       <section className="reveal mt-16">
-        <SectionHead index="01" title="客观分析" titleEn="Objective Analysis" desc="结论、强项、短板，以及它明确不适合谁。" />
+        <SectionHead index="01" title="客观分析" titleEn="Objective Analysis" desc={gear.demoMetrics ? "规格推演演示参考 · 结论、强项与适配场景" : "结论、强项、短板，以及它明确不适合谁。"} />
         <AnalysisBlock gear={gear} />
       </section>
 
@@ -105,7 +105,7 @@ export default function GearDetailPage({
           <SpecTable gear={gear} groups={groups} />
         </div>
         <div>
-          <SectionHead index="03" title={`${dims.length || 0}维评分`} titleEn="Score Radar" />
+          <SectionHead index="03" title={`${dims.length || 0}维评分`} titleEn="Score Radar" desc={gear.demoMetrics ? "演示评分由公开规格推演，不代表实测" : undefined} />
           {hasEditorialScores(gear) ? (
             <div className="border border-border p-4">
               <RadarChart
@@ -175,6 +175,7 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
   const pos = pricePosition(gear);
   const priceReady = hasPrice(gear);
   const editorialReady = hasEditorialScores(gear);
+  const showDemoRating = gear.demoRating === true && !gear.liveRating && !(ratingSummary && ratingSummary.count > 0);
   const localSummary = {
     overall: hasUserRating(gear) ? userRating(gear) : null,
     count: reviewCount(gear),
@@ -213,18 +214,25 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
 
       <div className="grid grid-cols-2 gap-x-6 border-b border-border py-5 sm:grid-cols-4">
         <Stat
-          label="用户评分"
+          label={showDemoRating ? "示例评分" : "用户评分"}
           value={ratingReady ? summary.overall!.toFixed(1) : "—"}
           sub={ratingReady ? <Stars value={summary.overall!} size={11} className="mt-1" /> : <PendingValue label="暂无实测" className="mt-1 block" />}
         />
-        <Stat label="实测条数" value={String(summary.count)} sub={<span className="mono-label mt-1 block">FIELD REPORTS</span>} />
+        <Stat label={showDemoRating ? "评分样本" : "实测条数"} value={String(summary.count)} sub={<span className="mono-label mt-1 block">{showDemoRating ? "DEMO DATA" : "FIELD REPORTS"}</span>} />
         <Stat label={categorySignal.label} value={categorySignal.value} sub={<span className="mono-label mt-1 block">{categorySignal.sub}</span>} />
         <Stat
-          label="浏览热度"
+          label={gear.demoMetrics ? "演示热度" : "浏览热度"}
           value={gear.heat > 0 ? fmtCompact(gear.heat) : "—"}
-          sub={<span className="mono-label mt-1 block">{gear.heat > 0 ? "近 90 天" : "数据待补"}</span>}
+          sub={<span className="mono-label mt-1 block">{gear.heat > 0 ? (gear.demoMetrics ? "规格推演样例" : "近 90 天") : "数据待补"}</span>}
         />
       </div>
+      {gear.demoMetrics ? (
+        <p className="border-b border-border py-2 text-[11px] leading-relaxed text-muted-foreground">
+          {showDemoRating
+            ? "演示评分、六维评估与热度由产品规格推演生成，不代表真实用户反馈或访问量。"
+            : "六维评估与浏览热度为规格推演样例；用户评分与真实投稿分开展示。"}
+        </p>
+      ) : null}
 
       <div className="border-b border-border py-5">
         <div className="flex items-baseline justify-between">

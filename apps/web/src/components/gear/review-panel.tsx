@@ -164,6 +164,12 @@ export function ReviewPanel({
   const remoteIds = useMemo(() => new Set(remoteRatings.map((rating) => rating.id)), [remoteRatings]);
   const viewState = useMemo(() => mergeCloudRatings(persisted, gear.id, remoteRatings), [persisted, gear.id, remoteRatings]);
   const list = useMemo(() => topLevelReviews(viewState, gear.id, mode), [viewState, gear.id, mode]);
+  const showDemoRating =
+    gear.demoRating === true &&
+    !gear.liveRating &&
+    !(remoteSummary && remoteSummary.count > 0) &&
+    remoteRatings.length === 0;
+  const showDemoNotes = showDemoRating && list.length === 0;
   const localSummary = {
     overall: hasUserRating(gear) ? userRating(gear) : null,
     count: reviewCount(gear),
@@ -171,6 +177,7 @@ export function ReviewPanel({
   };
   const summary = remoteSummary && (remoteSummary.count > 0 || remoteRatings.length > 0) ? remoteSummary : localSummary;
   const ratingReady = summary.overall !== null && (summary.count > 0 || remoteRatings.length > 0);
+  const distributionReady = Object.values(summary.distribution).some((count) => count > 0);
   const avg = summary.overall ?? 0;
 
   return (
@@ -179,10 +186,12 @@ export function ReviewPanel({
         <div>
           <p className="mono-data text-[52px] leading-none tnum">{ratingReady ? summary.overall!.toFixed(1) : "—"}</p>
           {ratingReady ? <Stars value={avg} size={14} className="mt-2" /> : <p className="mono-label mt-2">暂无评分</p>}
-          <p className="mono-label mt-2">{ratingReady ? `${summary.count} 条实测评分` : "等待首批实测"}</p>
+          <p className="mono-label mt-2">
+            {ratingReady ? `${summary.count} ${showDemoRating ? "份演示评分" : "条实测评分"}` : "等待首批实测"}
+          </p>
         </div>
         <div className="space-y-1.5">
-          {[5, 4, 3, 2, 1].map((star) => {
+          {distributionReady ? [5, 4, 3, 2, 1].map((star) => {
             const key = String(star) as "1" | "2" | "3" | "4" | "5";
             const n = summary.distribution[key] ?? 0;
             const p = summary.count ? Math.round((n / summary.count) * 100) : 0;
@@ -198,13 +207,32 @@ export function ReviewPanel({
                 <span className="mono-data w-10 shrink-0 text-right text-[12px] text-muted-foreground tnum">{p}%</span>
               </div>
             );
-          })}
-          <p className="mono-label pt-2">评分来自标注了{copy.summary}的实测用户</p>
+          }) : <p className="py-2 text-[12px] text-muted-foreground">评分分布待同步</p>}
+          <p className="mono-label pt-2">
+            {showDemoRating ? "演示分布由公开规格推演生成" : `评分来自标注了${copy.summary}的实测用户`}
+          </p>
           {ratingLoading ? <LoadingStatus label="正在读取最新实测数据" className="pt-1" /> : null}
         </div>
       </div>
 
       <ReviewForm gear={gear} />
+
+      {showDemoNotes && gear.demoNotes?.length ? (
+        <div className="border-y border-border py-5">
+          <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
+            <p className="mono-label">规格推演示例 / DEMO NOTES</p>
+            <span className="mono-label text-muted-foreground">非用户投稿 · 不计入评论</span>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {gear.demoNotes.map((note) => (
+              <article key={note.title} className="bg-secondary/50 p-4">
+                <h3 className="text-[13px] font-medium">{note.title}</h3>
+                <p className="mt-2 text-[12px] leading-relaxed text-muted-foreground">{note.content}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      ) : null}
 
       <div>
         <div className="rule-heavy mb-4 flex items-center justify-between gap-3 pb-2.5">

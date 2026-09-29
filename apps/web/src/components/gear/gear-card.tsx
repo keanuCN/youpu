@@ -187,7 +187,9 @@ export function GearCard({
           </div>
           <div className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-foreground/85 px-2.5 py-1.5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <span className="mono-label text-background/70">{gear.year} 款</span>
-            <span className="mono-data text-[12px] text-background tnum">{fmtCompact(gear.heat)} 次浏览</span>
+            <span className="mono-data text-[12px] text-background tnum">
+              {fmtCompact(gear.heat)} {gear.demoMetrics ? "演示热度" : "次浏览"}
+            </span>
           </div>
         </div>
 
@@ -224,7 +226,7 @@ export function GearCard({
                 <>
                   <Stars value={userRating(gear)} size={11} />
                   <span className="mono-data text-[11px] text-muted-foreground tnum">
-                    {userRating(gear).toFixed(1)} · {reviewCount(gear)} 条实测
+                    {userRating(gear).toFixed(1)} · {reviewCount(gear)} {gear.demoRating ? "份演示评分" : "条实测"}
                   </span>
                 </>
               ) : (
@@ -316,7 +318,7 @@ export function GearRow({
       </div>
       <div className="shrink-0 text-right">
         {hasEditorialScores(gear) ? <ScoreMark value={gear.composite} size="sm" /> : <PendingValue label="待补分" />}
-        <p className="mono-label mt-1.5 hidden sm:block">{fmtCompact(gear.heat)} 热度</p>
+        <p className="mono-label mt-1.5 hidden sm:block">{fmtCompact(gear.heat)} {gear.demoMetrics ? "演示热度" : "热度"}</p>
       </div>
     </Link>
   );

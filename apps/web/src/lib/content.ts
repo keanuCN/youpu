@@ -185,6 +185,10 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
   const cover = safeImageUrl(item.coverUrl);
   const categorySlug = "categorySlug" in item ? item.categorySlug : item.category.slug;
   const scores = "editorialScores" in item && item.editorialScores ? item.editorialScores : fallback?.scores ?? {};
+  const liveRating =
+    item.ratingCount > 0 && item.ratingOverall !== null
+      ? { overall: Number(item.ratingOverall), count: item.ratingCount }
+      : undefined;
   const price = priceOf(item, fallback);
   const priceBand = priceRangeOf(item, fallback);
   const scenesRaw = rawSpecs.scenes;
@@ -219,7 +223,11 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
     whoFor: fallback?.whoFor ?? [],
     analysis: analysisOf(item, fallback),
     priceBand,
-    ratingDist: fallback?.ratingDist ?? EMPTY_RATING_DIST,
+    ratingDist: liveRating ? EMPTY_RATING_DIST : fallback?.ratingDist ?? EMPTY_RATING_DIST,
+    demoMetrics: fallback?.demoMetrics ? true : undefined,
+    demoRating: liveRating ? false : fallback?.demoRating ? true : undefined,
+    liveRating,
+    demoNotes: fallback?.demoMetrics ? fallback.demoNotes : undefined,
     isNew: fallback?.isNew ?? false,
     addedAt: fallback?.addedAt ?? `${item.year}-01-01`,
   };

@@ -7,6 +7,7 @@ import { ROAD_BIKE_GEAR } from "./road-bikes";
 import { SNOWBOARD_SCORE_DIMS, flexBucket, profileFamilyOf } from "./categories";
 import { applyCatalogSnapshot } from "./catalog-pack";
 import { CATALOG_SNAPSHOT } from "./catalog-snapshot";
+import { withSnowboardDemoData } from "./snowboard-demo";
 
 type Scores = Record<string, number>;
 type Specs = Record<string, number | string | null>;
@@ -500,7 +501,7 @@ const CONTENT_PACK: GearItem[] = [
 /**
  * 统一目录出口：静态构建时优先使用最近一次导出的云端快照，未匹配的人工内容继续保留。
  */
-export const GEAR: GearItem[] = applyCatalogSnapshot(CONTENT_PACK, CATALOG_SNAPSHOT);
+export const GEAR: GearItem[] = applyCatalogSnapshot(CONTENT_PACK, CATALOG_SNAPSHOT).map(withSnowboardDemoData);
 
 export const GEAR_BY_ID: Record<string, GearItem> = Object.fromEntries(GEAR.map((g) => [g.id, g]));
 
@@ -513,6 +514,7 @@ export function getGear(id: string): GearItem | undefined {
 }
 
 export function userRating(g: GearItem): number {
+  if (g.liveRating) return g.liveRating.overall;
   const d = g.ratingDist;
   const total = d["1"] + d["2"] + d["3"] + d["4"] + d["5"];
   if (!total) return 0;
@@ -521,6 +523,7 @@ export function userRating(g: GearItem): number {
 }
 
 export function reviewCount(g: GearItem): number {
+  if (g.liveRating) return g.liveRating.count;
   const d = g.ratingDist;
   return d["1"] + d["2"] + d["3"] + d["4"] + d["5"];
 }
