@@ -12,6 +12,9 @@ specs:
   fiberglass: Full Fiberglass
   scenes:
     - carving
+  sizeSpecs:
+    - { size: "micro", overallLength: 1320, effectiveEdge: 1130, contactLength: 1010, waistWidth: 214, sidecutRadii: "6500/6200/6800", sidecutOffset: -20, noseLength: 165, noseWidth: 264, noseHeight: 34.4, tailLength: 145, tailWidth: 256, tailHeight: 25.9, camber: 6, stanceWidth: "380–500", insertQty: "12+12", setback: 20, edge: "1.8 mm stainless", sidewallColor: "NEON RED", base: "IS7500 Graphite" }
+    - { size: "mini", overallLength: 1380, effectiveEdge: 1190, contactLength: 1070, waistWidth: 220, sidecutRadii: "7200/6800/7600", sidecutOffset: -20, noseLength: 165, noseWidth: 270, noseHeight: 34.4, tailLength: 145, tailWidth: 262, tailHeight: 25.9, camber: 7, stanceWidth: "400–520", insertQty: "12+12", setback: 20, edge: "1.8 mm stainless", sidewallColor: "NEON RED", base: "IS7500 Graphite" }
 images:
   - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2324/product/19_DESPERADO%20micro-mini/23-24_19_DESPERADO%20micro-mini_main.png"
     kind: face
