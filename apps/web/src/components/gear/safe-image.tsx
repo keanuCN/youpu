@@ -6,6 +6,7 @@ import { MediaPlaceholder } from "./data-state";
 
 type SafeImageProps = Omit<ImgHTMLAttributes<HTMLImageElement>, "src"> & {
   src?: string | null;
+  srcSetType?: "image/webp";
   fallbackLabel: string;
   fallbackClassName?: string;
   fallbackMode?: "placeholder" | "muted" | "empty";
@@ -20,6 +21,9 @@ export function SafeImage({
   fallbackClassName,
   fallbackMode = "placeholder",
   onError,
+  srcSet,
+  srcSetType,
+  sizes,
   ...props
 }: SafeImageProps) {
   const [failed, setFailed] = useState(!src);
@@ -39,7 +43,7 @@ export function SafeImage({
     return <MediaPlaceholder label={fallbackLabel} className={cn("h-full w-full", fallbackClasses)} />;
   }
 
-  return (
+  const image = (
     <img
       {...props}
       src={src}
@@ -52,4 +56,15 @@ export function SafeImage({
       }}
     />
   );
+
+  if (srcSetType && srcSet) {
+    return (
+      <picture className="contents">
+        <source type={srcSetType} srcSet={srcSet} sizes={sizes} />
+        {image}
+      </picture>
+    );
+  }
+
+  return image;
 }

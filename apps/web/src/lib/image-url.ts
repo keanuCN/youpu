@@ -165,6 +165,8 @@ const VERIFIED_DECATHLON_SNB_100_THUMBNAIL_PATH =
   "/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg";
 const VERIFIED_ATOMIC_BENT_CHETLER_IMAGE_PATH =
   "/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg";
+const VERIFIED_INSTA360_ACE_PRO_2_IMAGE_PATH =
+  "/common/4d7317543e0f4fee9b0b037a4d24d961/pc-acepro2-CN.png";
 const VERIFIED_KORUA_CAFE_RACER_IMAGE_PATH =
   "/6939308982453/1758747603396/KORUA-Shapes-Cafe-Racer-Nicholas-Wolken-Thumbnail-01.jpg";
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
@@ -763,6 +765,18 @@ export function responsiveProductImageSrcSet(source: string): string | undefined
   try {
     const image = new URL(source);
     if (
+      image.hostname === "wassets.insta360.com" &&
+      image.pathname === VERIFIED_INSTA360_ACE_PRO_2_IMAGE_PATH &&
+      image.search === ""
+    ) {
+      const fullResolutionWebp = new URL(image);
+      fullResolutionWebp.searchParams.set("x-oss-process", "image/format,webp/quality,q_90");
+      const compactWebp = new URL(image);
+      compactWebp.searchParams.set("x-oss-process", "image/resize,w_188/format,webp/quality,q_90");
+      return `${compactWebp.toString()} 188w, ${fullResolutionWebp.toString()} 376w`;
+    }
+
+    if (
       image.hostname !== "img01.yzcdn.cn" ||
       image.pathname !== VERIFIED_ATOMIC_BENT_CHETLER_IMAGE_PATH ||
       image.search !== ""
@@ -773,6 +787,19 @@ export function responsiveProductImageSrcSet(source: string): string | undefined
     const compactImage = new URL(image);
     compactImage.pathname = compactImage.pathname.replace("%21middle.jpg", "%21small.jpg");
     return `${compactImage.toString()} 260w, ${image.toString()} 520w`;
+  } catch {
+    return undefined;
+  }
+}
+
+export function responsiveProductImageSrcSetType(source: string): "image/webp" | undefined {
+  try {
+    const image = new URL(source);
+    return image.hostname === "wassets.insta360.com" &&
+      image.pathname === VERIFIED_INSTA360_ACE_PRO_2_IMAGE_PATH &&
+      image.search === ""
+      ? "image/webp"
+      : undefined;
   } catch {
     return undefined;
   }

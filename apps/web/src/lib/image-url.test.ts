@@ -7,6 +7,7 @@ import {
   preferHighResolutionProductImage,
   preferProductThumbnail,
   responsiveProductImageSrcSet,
+  responsiveProductImageSrcSetType,
   resolveImageUrl,
 } from "./image-url";
 
@@ -46,6 +47,20 @@ test("provides responsive small and middle variants only for the verified Atomic
   assert.equal(responsiveProductImageSrcSet(source.replace("middle.jpg", "large.jpg")), undefined);
   assert.equal(responsiveProductImageSrcSet(source.replace("img01.yzcdn.cn", "other.example")), undefined);
   assert.equal(responsiveProductImageSrcSet(`${source}?v=1`), undefined);
+});
+
+test("provides q90 OSS WebP candidates only for the verified Insta360 Ace Pro 2 image", () => {
+  const source = "https://wassets.insta360.com/common/4d7317543e0f4fee9b0b037a4d24d961/pc-acepro2-CN.png";
+  assert.equal(
+    responsiveProductImageSrcSet(source),
+    "https://wassets.insta360.com/common/4d7317543e0f4fee9b0b037a4d24d961/pc-acepro2-CN.png?x-oss-process=image%2Fresize%2Cw_188%2Fformat%2Cwebp%2Fquality%2Cq_90 188w, https://wassets.insta360.com/common/4d7317543e0f4fee9b0b037a4d24d961/pc-acepro2-CN.png?x-oss-process=image%2Fformat%2Cwebp%2Fquality%2Cq_90 376w",
+  );
+  assert.equal(preferProductThumbnail(source), source);
+  assert.equal(preferHighResolutionProductImage(source), source);
+  assert.equal(responsiveProductImageSrcSetType(source), "image/webp");
+  assert.equal(responsiveProductImageSrcSet(source.replace("pc-acepro2-CN.png", "other.png")), undefined);
+  assert.equal(responsiveProductImageSrcSet(`${source}?version=1`), undefined);
+  assert.equal(responsiveProductImageSrcSetType(source.replace("wassets.insta360.com", "other.example")), undefined);
 });
 
 test("keeps product detail images high resolution while bounding verified CDN sources", () => {
