@@ -239,6 +239,7 @@ function Cover({
               alt={heroImage.alt}
               loading="eager"
               fetchPriority="high"
+              decoding="async"
               onLoad={() => setHeroLoaded(true)}
               onError={() => setHeroFailed(true)}
               className={`plate absolute inset-0 h-full w-full object-cover transition-[opacity,filter,transform] duration-700 ${heroLoaded ? "opacity-100" : "opacity-0"}`}
