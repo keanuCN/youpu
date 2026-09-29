@@ -12,6 +12,14 @@ specs:
   profile: CamRock
   profileFamily: hybrid
   shape: Directional
+  sizeSpecs:
+    - { size: "139", overallLength: 1390, effectiveEdge: 1050, contactLength: 985, noseWidth: 276, waistWidth: 235, tailWidth: 271, sidecutRadii: "6.5", stanceWidth: "470 mm", weightRange: "41–63 kg", boardWeight: "2000 g", setback: 20 }
+    - { size: "142", overallLength: 1420, effectiveEdge: 1070, contactLength: 1011, noseWidth: 279, waistWidth: 237, tailWidth: 274, sidecutRadii: "6.7", stanceWidth: "470 mm", weightRange: "41–63 kg", boardWeight: "2100 g", setback: 20 }
+    - { size: "145", overallLength: 1450, effectiveEdge: 1100, contactLength: 1037, noseWidth: 282, waistWidth: 239, tailWidth: 277, sidecutRadii: "6.9", stanceWidth: "490 mm", weightRange: "45–68 kg", boardWeight: "2200 g", setback: 20 }
+    - { size: "148", overallLength: 1480, effectiveEdge: 1120, contactLength: 1063, noseWidth: 285, waistWidth: 241, tailWidth: 280, sidecutRadii: "7.1", stanceWidth: "490 mm", weightRange: "45–68 kg", boardWeight: "2300 g", setback: 20 }
+    - { size: "151", overallLength: 1510, effectiveEdge: 1150, contactLength: 1089, noseWidth: 287, waistWidth: 243, tailWidth: 282, sidecutRadii: "7.3", stanceWidth: "510 mm", weightRange: "49–73 kg", boardWeight: "2400 g", setback: 20 }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1180, contactLength: 1115, noseWidth: 290, waistWidth: 245, tailWidth: 285, sidecutRadii: "7.5", stanceWidth: "510 mm", weightRange: "54–77 kg", boardWeight: "2500 g", setback: 20 }
+    - { size: "156", overallLength: 1560, effectiveEdge: 1190, contactLength: 1131, noseWidth: 292, waistWidth: 247, tailWidth: 287, sidecutRadii: "7.7", stanceWidth: "530 mm", weightRange: "54–77 kg", boardWeight: "2600 g", setback: 20 }
   scenes:
     - all-mountain
     - powder

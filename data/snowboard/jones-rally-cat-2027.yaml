@@ -26,6 +26,17 @@ specs:
   scenes:
     - all-mountain
     - freestyle
+  sizeSpecs:
+    - { size: "151", overallLength: 1510, effectiveEdge: 1110, contactLength: 1064, noseWidth: 288, waistWidth: 247, tailWidth: 288, sidecutRadii: "7.0", stanceWidth: "500 mm", weightRange: "49–73 kg", boardWeight: "2400 g", setback: 20 }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1140, contactLength: 1088, noseWidth: 291, waistWidth: 250, tailWidth: 291, sidecutRadii: "7.3", stanceWidth: "520 mm", weightRange: "54–77 kg", boardWeight: "2500 g", setback: 20 }
+    - { size: "155W", overallLength: 1550, effectiveEdge: 1150, contactLength: 1100, noseWidth: 300, waistWidth: 258, tailWidth: 300, sidecutRadii: "7.4", stanceWidth: "540 mm", weightRange: "59–82 kg", boardWeight: "2700 g", setback: 20 }
+    - { size: "156", overallLength: 1560, effectiveEdge: 1150, contactLength: 1104, noseWidth: 294, waistWidth: 252, tailWidth: 294, sidecutRadii: "7.5", stanceWidth: "540 mm", weightRange: "59–82 kg", boardWeight: "2700 g", setback: 20 }
+    - { size: "158", overallLength: 1580, effectiveEdge: 1170, contactLength: 1120, noseWidth: 296, waistWidth: 254, tailWidth: 296, sidecutRadii: "7.7", stanceWidth: "560 mm", weightRange: "64–86 kg", boardWeight: "2800 g", setback: 20 }
+    - { size: "159W", overallLength: 1590, effectiveEdge: 1180, contactLength: 1130, noseWidth: 305, waistWidth: 263, tailWidth: 305, sidecutRadii: "7.8", stanceWidth: "560 mm", weightRange: "67–91 kg", boardWeight: "2800 g", setback: 20 }
+    - { size: "161", overallLength: 1610, effectiveEdge: 1190, contactLength: 1144, noseWidth: 299, waistWidth: 257, tailWidth: 299, sidecutRadii: "8.0", stanceWidth: "560 mm", weightRange: "67–91 kg", boardWeight: "2800 g", setback: 20 }
+    - { size: "162W", overallLength: 1620, effectiveEdge: 1210, contactLength: 1156, noseWidth: 307, waistWidth: 265, tailWidth: 307, sidecutRadii: "8.2", stanceWidth: "560 mm", weightRange: "73–95 kg", boardWeight: "2900 g", setback: 20 }
+    - { size: "166W", overallLength: 1660, effectiveEdge: 1240, contactLength: 1192, noseWidth: 309, waistWidth: 267, tailWidth: 309, sidecutRadii: "8.6", stanceWidth: "600 mm", weightRange: "77–100 kg+", boardWeight: "3100 g", setback: 20 }
+    - { size: "170W", overallLength: 1700, effectiveEdge: 1280, contactLength: 1228, noseWidth: 312, waistWidth: 269, tailWidth: 312, sidecutRadii: "8.9", stanceWidth: "620 mm", weightRange: "77–100 kg+", boardWeight: "3300 g", setback: 20 }
 editorial_scores:
   stability: 6.9
   response: 7.1
