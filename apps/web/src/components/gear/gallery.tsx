@@ -25,6 +25,8 @@ export function Gallery({
           key={active.url}
           src={active.url}
           alt={`${alt} · ${active.label}`}
+          loading="eager"
+          fetchPriority="high"
           fallbackLabel={alt}
           fallbackClassName="p-4 sm:p-6"
           fallbackMode="empty"
