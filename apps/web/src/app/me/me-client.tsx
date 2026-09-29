@@ -474,7 +474,7 @@ function ProfileForm() {
       <div className="grid gap-4 sm:grid-cols-2">
         {field("username", "昵称")}
         {field("resort", "常滑场地")}
-        {field("years", "使用年限（年）", "number")}
+        {field("years", "经验年限 / 雪龄（年）", "number")}
         {field("heightCm", "身高 cm", "number")}
         {field("weightKg", "体重 kg", "number")}
         <div className="space-y-1.5">

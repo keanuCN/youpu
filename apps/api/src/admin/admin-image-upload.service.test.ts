@@ -58,3 +58,27 @@ test('stores only normalized WebP under the public product image prefix', async 
   assert.equal(result.url, 'https://youpu.tos-cn-beijing.volces.com/product-images/123e4567-e89b-42d3-a456-426614174000.webp');
   assert.equal(result.size, uploaded?.body.length);
 });
+
+test('stores rating photos under the separate review image prefix', async () => {
+  const input = await sharp({ create: { width: 4, height: 3, channels: 3, background: '#456' } }).png().toBuffer();
+  const config: TosImageConfig = {
+    region: 'cn-beijing',
+    bucket: 'youpu',
+    endpoint: 'https://tos-cn-beijing.volces.com',
+    accessKey: 'test-access-key',
+    secretKey: 'test-secret-key',
+    publicBaseUrl: 'https://youpu.tos-cn-beijing.volces.com',
+  };
+  let uploadedKey = '';
+
+  const result = await uploadProductImage(
+    config,
+    { buffer: input, mimetype: 'image/png' },
+    async ({ key }) => { uploadedKey = key; },
+    () => '123e4567-e89b-42d3-a456-426614174000',
+    'review-images',
+  );
+
+  assert.equal(uploadedKey, 'review-images/123e4567-e89b-42d3-a456-426614174000.webp');
+  assert.equal(result.url, 'https://youpu.tos-cn-beijing.volces.com/review-images/123e4567-e89b-42d3-a456-426614174000.webp');
+});

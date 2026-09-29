@@ -4,6 +4,7 @@ import { REDIS } from '../common/redis.module';
 
 const LIMITS = {
   rating: { seconds: 300, key: 'rating' },
+  ratingImage: { seconds: 15, key: 'rating-image' },
   reply: { seconds: 30, key: 'reply' },
   report: { seconds: 60, key: 'report' },
   helpful: { seconds: 5, key: 'helpful' },

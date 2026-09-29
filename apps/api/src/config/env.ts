@@ -1,4 +1,11 @@
+import 'dotenv/config';
+import { resolve } from 'node:path';
+import { config as loadRootEnv } from 'dotenv';
 import { z } from 'zod';
+
+// Keep API-local settings first, then inherit shared workspace settings (such
+// as object-storage credentials) only when the package .env omits them.
+loadRootEnv({ path: resolve(__dirname, '../../../..', '.env'), override: false });
 
 /** 环境变量契约 —— 启动即校验，缺失/格式错直接 fail fast */
 const envSchema = z.object({

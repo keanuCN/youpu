@@ -42,6 +42,7 @@ export interface CloudRating {
   overall: number;
   sub: Record<string, number>;
   content: string | null;
+  images?: string[];
   riderProfile: Record<string, unknown>;
   helpfulCount: number;
   helpfulByMe: boolean;
@@ -96,6 +97,7 @@ export interface CloudMeResponse {
     productTitle: string;
     overall: number;
     content: string | null;
+    images?: string[];
     riderProfile: Record<string, unknown>;
     helpfulCount: number;
     createdAt: string;
@@ -285,8 +287,41 @@ export function cloudRatings(productRef: string, sort: "helpful" | "latest" = "h
   return request(`/api/products/${encodeURIComponent(productRef)}/ratings?sort=${sort}`);
 }
 
-export function cloudCreateRating(productRef: string, input: { overall: number; content: string; riderProfile: Record<string, unknown> }): Promise<CloudRating> {
+export function cloudCreateRating(productRef: string, input: { overall: number; content: string; images: string[]; riderProfile: Record<string, unknown> }): Promise<CloudRating> {
   return request(`/api/products/${encodeURIComponent(productRef)}/ratings`, { method: "POST", body: input });
+}
+
+export async function cloudUploadRatingImages(files: File[]): Promise<string[]> {
+  if (!files.length) return [];
+  const form = new FormData();
+  files.forEach((file) => form.append("files", file));
+  const upload = () => fetch(`${API_BASE.replace(/\/$/, "")}/api/ratings/images`, {
+    method: "POST",
+    headers: getCloudAccessToken() ? { Authorization: `Bearer ${getCloudAccessToken()}` } : {},
+    body: form,
+    cache: "no-store",
+  });
+
+  let response: Response;
+  try {
+    response = await upload();
+  } catch (error) {
+    throw new WebApiError(`无法连接本地 API：${API_BASE}`, 0, error);
+  }
+  if (response.status === 401 && await refreshCloudSession()) response = await upload();
+  const text = await response.text();
+  let payload: unknown;
+  try {
+    payload = text ? JSON.parse(text) : undefined;
+  } catch {
+    payload = text;
+  }
+  if (!response.ok) throw new WebApiError(errorMessage(payload) ?? `图片上传失败（${response.status}）`, response.status, payload);
+  const images = payload && typeof payload === "object" ? (payload as { images?: unknown }).images : undefined;
+  if (!Array.isArray(images) || !images.every((image) => typeof image === "string")) {
+    throw new WebApiError("图片上传响应格式不正确", response.status, payload);
+  }
+  return images;
 }
 
 export function cloudDeleteRating(id: string): Promise<{ ok: true }> {

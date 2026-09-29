@@ -1,0 +1,2 @@
+ALTER TABLE "rating"
+ADD COLUMN "images" JSONB NOT NULL DEFAULT '[]';

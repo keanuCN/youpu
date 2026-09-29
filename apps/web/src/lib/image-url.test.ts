@@ -38,6 +38,7 @@ test("only allows local paths and approved remote image prefixes", () => {
   assert.equal(isAllowedImageUrl("https://eu.burton.com/cdn/shop/files/1068819AI2_1.webp"), true);
   assert.equal(isAllowedImageUrl("https://eu.burton.com/private/other.webp"), false);
   assert.equal(isAllowedImageUrl("https://shop.au.victorsport.com/cdn/shop/products/racket.jpg"), true);
+  assert.equal(isAllowedImageUrl("https://youpu.tos-cn-beijing.volces.com/review-images/rating-photo.webp"), true);
   assert.equal(isAllowedImageUrl("https://bbsports.co.nz/cdn/shop/files/Untitled_580x.jpg?v=1760064152"), true);
   assert.equal(isAllowedImageUrl("https://www.smartmarine.co.nz/cdn/images/products/xlarge/8089900_a.jpg"), true);
   assert.equal(isAllowedImageUrl("https://www.smartmarine.co.nz/cdn/images/other/8089900_a.jpg"), false);

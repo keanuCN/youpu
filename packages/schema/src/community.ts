@@ -6,6 +6,7 @@ export const ratingInputSchema = z
     overall: z.number().min(1).max(5),
     sub: z.record(z.string(), z.number().min(0).max(10)).default({}),
     content: z.string().trim().max(2000).nullable().optional(),
+    images: z.array(z.string().url()).max(5).default([]),
     riderProfile: riderProfileSchema.partial().default({}),
   })
   .strict();

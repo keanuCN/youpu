@@ -25,6 +25,7 @@ interface TosImageObject {
 }
 
 type PutTosObject = (object: TosImageObject) => Promise<unknown>;
+type ImageDirectory = 'product-images' | 'review-images';
 
 const MAX_INPUT_BYTES = 10 * 1024 * 1024;
 const MAX_INPUT_PIXELS = 40_000_000;
@@ -71,9 +72,10 @@ export async function uploadProductImage(
   input: ProductImageUpload,
   putObject: PutTosObject,
   createId: () => string = randomUUID,
+  directory: ImageDirectory = 'product-images',
 ): Promise<{ url: string; key: string; size: number }> {
   const body = await normalizeProductImage(input.buffer, input.mimetype);
-  const key = `product-images/${createId()}.webp`;
+  const key = `${directory}/${createId()}.webp`;
   await putObject({ key, body, contentType: 'image/webp' });
   return {
     url: `${config.publicBaseUrl.replace(/\/$/, '')}/${key}`,
@@ -110,6 +112,14 @@ export class AdminImageUploadService {
   }
 
   async upload(input: ProductImageUpload): Promise<{ url: string; key: string; size: number }> {
+    return this.uploadToDirectory(input, 'product-images');
+  }
+
+  async uploadReviewImage(input: ProductImageUpload): Promise<{ url: string; key: string; size: number }> {
+    return this.uploadToDirectory(input, 'review-images');
+  }
+
+  private async uploadToDirectory(input: ProductImageUpload, directory: ImageDirectory): Promise<{ url: string; key: string; size: number }> {
     if (!this.config || !this.client) {
       throw new ServiceUnavailableException('图片存储尚未配置，请在 API 环境变量中配置 TOS');
     }
@@ -122,6 +132,6 @@ export class AdminImageUploadService {
         cacheControl: 'public, max-age=31536000, immutable',
         forbidOverwrite: true,
       });
-    });
+    }, randomUUID, directory);
   }
 }

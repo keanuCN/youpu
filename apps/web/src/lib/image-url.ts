@@ -35,6 +35,7 @@ const REMOTE_IMAGE_RULES = [
   { host: "www.follows.co.jp", pathPrefix: "/pic-labo/" },
   { host: "contents.mediadecathlon.com", pathPrefix: "/p" },
   { host: "graysnowboards.co.jp", pathPrefix: "/wp2021/wp-content/themes/gray/images/img_" },
+  { host: "youpu.tos-cn-beijing.volces.com", pathPrefix: "/review-images/" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0231/7366/0752/files/" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0580/2773/7217/files/" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0804/4062/3361/files/" },

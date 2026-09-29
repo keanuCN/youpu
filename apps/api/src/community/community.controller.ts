@@ -1,5 +1,6 @@
 import {
   Body,
+  BadRequestException,
   Controller,
   Delete,
   Get,
@@ -10,7 +11,10 @@ import {
   Query,
   Req,
   UseGuards,
+  UseInterceptors,
+  UploadedFiles,
 } from '@nestjs/common';
+import { FilesInterceptor } from '@nestjs/platform-express';
 import {
   notificationReadSchema,
   ratingInputSchema,
@@ -30,10 +34,29 @@ import { AuthGuard, OptionalAuthGuard } from '../auth/auth.guard';
 import { CurrentAccount } from '../auth/current-account.decorator';
 import type { AccountView, AuthRequest } from '../auth/auth.types';
 import { CommunityService } from './community.service';
+import { CommunityRateLimit } from './community-rate-limit';
+import { AdminImageUploadService } from '../admin/admin-image-upload.service';
 
 @Controller()
 export class CommunityController {
-  constructor(private readonly community: CommunityService) {}
+  constructor(
+    private readonly community: CommunityService,
+    private readonly communityRateLimit: CommunityRateLimit,
+    private readonly imageUploads: AdminImageUploadService,
+  ) {}
+
+  @Post('ratings/images')
+  @UseGuards(AuthGuard)
+  @UseInterceptors(FilesInterceptor('files', 5, { limits: { fileSize: 10 * 1024 * 1024, files: 5 } }))
+  async uploadRatingImages(
+    @CurrentAccount() account: AccountView,
+    @UploadedFiles() files?: Array<{ buffer: Buffer; mimetype: string }>,
+  ) {
+    if (!files?.length) throw new BadRequestException('请选择要上传的图片');
+    await this.communityRateLimit.assertAllowed(account.id, 'ratingImage');
+    const uploaded = await Promise.all(files.map((file) => this.imageUploads.uploadReviewImage(file)));
+    return { images: uploaded.map((image) => image.url) };
+  }
 
   @Get('products/:productRef/ratings')
   @UseGuards(OptionalAuthGuard)

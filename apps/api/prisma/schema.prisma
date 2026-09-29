@@ -226,6 +226,7 @@ model Rating {
   overall             Decimal   @db.Decimal(2, 1)
   sub                 Json      @default("{}")
   content             String?
+  images              Json      @default("[]")
   riderProfile        Json      @default("{}") @map("rider_profile")
   source              String    @default("user")
   status              String    @default("published")

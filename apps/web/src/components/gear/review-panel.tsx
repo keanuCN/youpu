@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { CornerDownRight, Flag, MessageSquare, ThumbsUp, Trash2 } from "lucide-react";
+import Link from "next/link";
+import { Camera, CornerDownRight, Flag, MessageSquare, ThumbsUp, Trash2, X } from "lucide-react";
 import { toast } from "sonner";
 import { Avatar } from "@/components/layout/site-header";
 import { Button } from "@/components/ui/button";
@@ -11,6 +12,7 @@ import {
   cloudCreateRating,
   cloudCreateReply,
   cloudCreateReport,
+  cloudUploadRatingImages,
   cloudDeleteRating,
   cloudRatings,
   cloudToggleHelpful,
@@ -30,8 +32,6 @@ import type { GearItem, Review, ReviewerMeta } from "@/types";
 import { useAuthGate } from "@/store/app-shell";
 import { Stars } from "./primitives";
 import { SafeImage } from "./safe-image";
-
-const LEVELS = ["新手", "中级", "进阶", "高阶"];
 
 type ReviewCopy = {
   experienceLabel: string;
@@ -468,14 +468,26 @@ function ReviewForm({ gear }: { gear: GearItem }) {
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
   const [content, setContent] = useState("");
-  const [meta, setMeta] = useState({
-    years: profile?.years ?? 3,
-    weightKg: profile?.weightKg ?? 70,
-    level: profile?.level ?? "中级",
-    resort: profile?.resort ?? "",
-  });
+  const [files, setFiles] = useState<File[]>([]);
+  const [previews, setPreviews] = useState<string[]>([]);
+  const [uploading, setUploading] = useState(false);
+
+  useEffect(() => {
+    const urls = files.map((file) => URL.createObjectURL(file));
+    setPreviews(urls);
+    return () => urls.forEach((url) => URL.revokeObjectURL(url));
+  }, [files]);
+
+  const profileMeta = [
+    profile ? `${profile.years} 年${copy.experienceLabel}` : null,
+    copy.showHeight && profile?.heightCm ? `${profile.heightCm}cm` : null,
+    copy.showWeight && profile?.weightKg ? `${profile.weightKg}kg` : null,
+    profile?.level,
+    profile?.resort,
+  ].filter(Boolean);
 
   const submit = async () => {
+    if (uploading) return;
     if (!rating) {
       toast.error("请先打分");
       return;
@@ -484,22 +496,32 @@ function ReviewForm({ gear }: { gear: GearItem }) {
       toast.error("实测内容至少 10 个字，写清你的使用条件");
       return;
     }
+    setUploading(true);
+    let imageUrls: string[] = [];
+    if (files.length && !hasCloudSession()) {
+      toast.error("上传实测照片需要先登录并连接账号服务");
+      setUploading(false);
+      return;
+    }
     if (hasCloudSession()) {
       try {
+        imageUrls = await cloudUploadRatingImages(files);
         const riderProfile: Record<string, unknown> = {
-          years: Number(meta.years) || 1,
-          level: levelToApi(meta.level),
-          home_resort: meta.resort.trim() || undefined,
+          years: Number(profile?.years) || 1,
+          level: levelToApi(profile?.level ?? "中级"),
+          home_resort: profile?.resort.trim() || undefined,
         };
         if (copy.showHeight) riderProfile.height = profile?.heightCm ?? 175;
-        if (copy.showWeight) riderProfile.weight = Number(meta.weightKg) || 70;
+        if (copy.showWeight) riderProfile.weight = Number(profile?.weightKg) || 70;
         await cloudCreateRating(productRefForGear(gear), {
           overall: rating,
           content: content.trim(),
+          images: imageUrls,
           riderProfile,
         });
       } catch (error) {
         toast.error(error instanceof Error ? error.message : "评论发布失败");
+        setUploading(false);
         return;
       }
     }
@@ -507,27 +529,29 @@ function ReviewForm({ gear }: { gear: GearItem }) {
       gearId: gear.id,
       rating,
       content: content.trim(),
-      images: [],
+      images: imageUrls,
       authorName: profile?.username ?? "匿名档案员",
       authorMeta: {
-        years: Number(meta.years) || 1,
+        years: Number(profile?.years) || 1,
         heightCm: copy.showHeight ? profile?.heightCm ?? 175 : 0,
-        weightKg: copy.showWeight ? Number(meta.weightKg) || undefined : undefined,
-        level: meta.level,
-        resort: meta.resort.trim(),
+        weightKg: copy.showWeight ? Number(profile?.weightKg) || undefined : undefined,
+        level: profile?.level ?? "中级",
+        resort: profile?.resort.trim() ?? "",
       },
     });
     track("rating_submit", { product_id: gear.id });
     toast.success("实测评论已发布");
     setRating(0);
     setContent("");
+    setFiles([]);
+    setUploading(false);
   };
 
   return (
     <div className="border border-foreground">
       <div className="flex items-center justify-between border-b border-border bg-secondary/50 px-4 py-2.5">
         <p className="mono-label">写下你的实测 / FIELD REPORT</p>
-        <p className="mono-label text-primary">必须标注使用条件</p>
+        <Link href="/me" className="mono-label text-primary hover:underline">使用条件来自个人档案 · 编辑</Link>
       </div>
       <div className="space-y-4 p-4">
         <div className="flex flex-wrap items-center gap-4">
@@ -551,50 +575,11 @@ function ReviewForm({ gear }: { gear: GearItem }) {
           </span>
         </div>
 
-        <div className={cn("grid gap-3", copy.showWeight ? "sm:grid-cols-4" : "sm:grid-cols-3")}>
-          <MetaField label={copy.experienceLabel}>
-            <input
-              type="number"
-              min={0}
-              max={40}
-              value={meta.years}
-              onChange={(e) => setMeta((m) => ({ ...m, years: Number(e.target.value) }))}
-              className="mono-data h-8 w-full border border-border bg-transparent px-2 text-[12px] outline-none focus:border-foreground"
-            />
-          </MetaField>
-          {copy.showWeight ? (
-            <MetaField label="体重 kg">
-              <input
-                type="number"
-                min={30}
-                max={150}
-                value={meta.weightKg}
-                onChange={(e) => setMeta((m) => ({ ...m, weightKg: Number(e.target.value) }))}
-                className="mono-data h-8 w-full border border-border bg-transparent px-2 text-[12px] outline-none focus:border-foreground"
-              />
-            </MetaField>
-          ) : null}
-            <MetaField label={copy.levelLabel}>
-            <select
-              value={meta.level}
-              onChange={(e) => setMeta((m) => ({ ...m, level: e.target.value }))}
-              className="mono-data h-8 w-full rounded-none border border-border bg-transparent px-1.5 text-[12px] outline-none focus:border-foreground"
-            >
-              {LEVELS.map((l) => (
-                <option key={l} value={l}>
-                  {l}
-                </option>
-              ))}
-            </select>
-          </MetaField>
-          <MetaField label={copy.placeLabel}>
-            <input
-              value={meta.resort}
-              onChange={(e) => setMeta((m) => ({ ...m, resort: e.target.value }))}
-              placeholder={copy.placePlaceholder}
-              className="mono-data h-8 w-full border border-border bg-transparent px-2 text-[12px] outline-none focus:border-foreground"
-            />
-          </MetaField>
+        <div className="flex flex-wrap items-center justify-between gap-2 border-y border-border py-3">
+          <p className="mono-label text-muted-foreground">
+            本次使用条件：{profileMeta.length ? profileMeta.join(" · ") : "请先完善个人档案"}
+          </p>
+          <Link href="/me" className="mono-label text-primary hover:underline">前往个人信息中心</Link>
         </div>
 
         <Textarea
@@ -605,26 +590,68 @@ function ReviewForm({ gear }: { gear: GearItem }) {
           className="min-h-24 resize-y rounded-none border-border text-[13px] leading-relaxed"
         />
 
+        <div className="space-y-2">
+          <label className="inline-flex h-9 cursor-pointer items-center gap-2 border border-border px-3 text-[12px] transition-colors hover:border-foreground">
+            <Camera size={14} />
+            上传实测照片（最多 5 张）
+            <input
+              type="file"
+              accept="image/jpeg,image/png,image/webp"
+              multiple
+              className="sr-only"
+              onChange={(event) => {
+                const selected = Array.from(event.currentTarget.files ?? []);
+                const valid = selected.filter((file) => {
+                  if (!file.type.match(/^image\/(jpeg|png|webp)$/)) {
+                    toast.error(`${file.name} 格式不支持，请选择 JPEG、PNG 或 WebP`);
+                    return false;
+                  }
+                  if (file.size > 10 * 1024 * 1024) {
+                    toast.error(`${file.name} 超过 10 MB`);
+                    return false;
+                  }
+                  return true;
+                });
+                setFiles((current) => [...current, ...valid].slice(0, 5));
+                if (files.length + valid.length > 5) toast.error("每条实测最多上传 5 张照片");
+                event.currentTarget.value = "";
+              }}
+            />
+          </label>
+          {previews.length ? (
+            <div className="flex flex-wrap gap-2">
+              {previews.map((url, index) => (
+                <div key={`${files[index]?.name}-${index}`} className="relative h-20 w-20 border border-border">
+                  <img src={url} alt={`实测照片 ${index + 1}`} className="h-full w-full object-cover" />
+                  <button
+                    type="button"
+                    aria-label={`移除第 ${index + 1} 张照片`}
+                    onClick={() => setFiles((current) => current.filter((_, itemIndex) => itemIndex !== index))}
+                    className="absolute right-0 top-0 bg-foreground p-1 text-background"
+                  >
+                    <X size={12} />
+                  </button>
+                </div>
+              ))}
+            </div>
+          ) : null}
+          <p className="mono-label text-muted-foreground">
+            已选 {files.length}/5 张 · 单张不超过 10 MB；支持 JPEG、PNG、WebP。需登录并连接账号服务，照片会自动压缩后保存。
+          </p>
+        </div>
+
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p className="mono-label">{content.trim().length} / 10 字起</p>
           <Button
+            disabled={uploading}
             onClick={() => requireAuth(() => void submit(), "发布评论需要先登录")}
             className="h-9 rounded-none bg-foreground px-6 text-[12.5px] tracking-wide hover:bg-primary"
           >
-            发布实测
+            {uploading ? "正在上传…" : "发布实测"}
           </Button>
         </div>
       </div>
     </div>
-  );
-}
-
-function MetaField({ label, children }: { label: string; children: React.ReactNode }) {
-  return (
-    <label className="block">
-      <span className="mono-label mb-1 block">{label}</span>
-      {children}
-    </label>
   );
 }
 
@@ -663,7 +690,7 @@ function mergeCloudRatings(base: Persisted, gearId: string, ratings: CloudRating
       authorMeta,
       rating: rating.overall,
       content: rating.content ?? "",
-      images: [],
+      images: rating.images ?? [],
       parentId: null,
       createdAt: rating.createdAt,
       seedHelpful: rating.helpfulCount,

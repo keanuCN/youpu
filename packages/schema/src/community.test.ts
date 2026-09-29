@@ -1,6 +1,19 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { ratingListQuerySchema, moderationRiskSchema } from './community';
+import { ratingInputSchema, ratingListQuerySchema, moderationRiskSchema } from './community';
+
+test('rating input accepts at most five image URLs and defaults to no images', () => {
+  const base = { overall: 4.5, content: '实际使用一段时间后的感受' };
+  assert.deepEqual(ratingInputSchema.parse(base).images, []);
+  assert.equal(ratingInputSchema.safeParse({
+    ...base,
+    images: Array.from({ length: 5 }, (_, index) => `https://images.example.com/${index}.webp`),
+  }).success, true);
+  assert.equal(ratingInputSchema.safeParse({
+    ...base,
+    images: Array.from({ length: 6 }, (_, index) => `https://images.example.com/${index}.webp`),
+  }).success, false);
+});
 
 test('rating list query applies stable defaults', () => {
   assert.deepEqual(ratingListQuerySchema.parse({}), {

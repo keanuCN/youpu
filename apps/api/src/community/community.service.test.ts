@@ -83,6 +83,7 @@ test('upsertRating applies the rating limit and persists moderation metadata whi
     overall: 5,
     sub: {},
     content: '加微信返现购买',
+    images: ['https://youpu.tos-cn-beijing.volces.com/review-images/test.webp'],
     riderProfile: account.riderProfile,
   });
 
@@ -91,6 +92,8 @@ test('upsertRating applies the rating limit and persists moderation metadata whi
   assert.deepEqual(calls.upsert?.create.moderationReasons, ['promotion']);
   assert.ok(calls.upsert?.create.moderationCheckedAt instanceof Date);
   assert.equal(calls.upsert?.create.status, 'published');
+  assert.deepEqual(calls.upsert?.create.images, ['https://youpu.tos-cn-beijing.volces.com/review-images/test.webp']);
+  assert.deepEqual(calls.upsert?.update.images, ['https://youpu.tos-cn-beijing.volces.com/review-images/test.webp']);
   assert.equal(calls.upsert?.update.moderationRisk, 'watch');
   assert.deepEqual(calls.upsert?.update.moderationReasons, ['promotion']);
   assert.ok(calls.upsert?.update.moderationCheckedAt instanceof Date);

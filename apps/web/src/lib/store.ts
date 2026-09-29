@@ -149,7 +149,7 @@ export function applyCloudMe(data: CloudMeResponse): void {
       },
       rating: item.overall,
       content: item.content ?? "",
-      images: [],
+      images: item.images ?? [],
       parentId: null,
       createdAt: item.createdAt,
       seedHelpful: item.helpfulCount,
