@@ -87,6 +87,17 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
         return image.toString();
       }
     }
+    if (image.hostname === "contents.mediadecathlon.com" && isAllowedRemoteImageUrl(image.toString())) {
+      const requestedFormat = image.searchParams.get("f");
+      const match = requestedFormat?.match(/^(\d+)x0$/);
+      if (match) {
+        const width = Number(match[1]);
+        if (Number.isFinite(width) && width > widthLimit) {
+          image.searchParams.set("f", `${widthLimit}x0`);
+          return image.toString();
+        }
+      }
+    }
     if (
       image.hostname === "dma.canyon.com" &&
       image.pathname.includes("/image/upload/") &&

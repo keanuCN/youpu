@@ -114,6 +114,51 @@ test("limits approved Rossignol card thumbnails to 480px while preserving other 
   assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
 });
 
+test("limits approved Decathlon f=<width>x0 thumbnails and preserves other URL data", () => {
+  const oversizedImage =
+    "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto&quality=80";
+  const thumbnail = new URL(preferProductThumbnail(oversizedImage));
+  assert.equal(thumbnail.searchParams.get("f"), "800x0");
+  assert.equal(thumbnail.searchParams.get("format"), "auto");
+  assert.equal(thumbnail.searchParams.get("quality"), "80");
+  assert.equal(thumbnail.pathname, new URL(oversizedImage).pathname);
+
+  const customLimit = new URL(preferProductThumbnail(oversizedImage, 480));
+  assert.equal(customLimit.searchParams.get("f"), "480x0");
+  assert.equal(customLimit.searchParams.get("format"), "auto");
+
+  const smallWidth = oversizedImage.replace("3000x0", "600x0");
+  const atLimit = oversizedImage.replace("3000x0", "800x0");
+  const nonZeroHeight = oversizedImage.replace("3000x0", "3000x1000");
+  const nonNumericWidth = oversizedImage.replace("3000x0", "auto");
+  const missingFormat = oversizedImage.replace("f=3000x0&", "");
+  for (const unchanged of [smallWidth, atLimit, nonZeroHeight, nonNumericWidth, missingFormat]) {
+    assert.equal(preferProductThumbnail(unchanged), unchanged);
+  }
+
+  const unrelatedHost = oversizedImage.replace("contents.mediadecathlon.com", "other.example");
+  const unrelatedPath = oversizedImage.replace("/p2704355/", "/private/");
+  assert.equal(preferProductThumbnail(unrelatedHost), unrelatedHost);
+  assert.equal(preferProductThumbnail(unrelatedPath), unrelatedPath);
+});
+
+test("limits approved Decathlon thumbnails through recursively nested image proxies", () => {
+  const decathlonImage =
+    "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?format=auto&f=3000x0";
+  const nestedProxy =
+    "/api/image-proxy?url=" +
+    encodeURIComponent(`/api/image-proxy?url=${encodeURIComponent(decathlonImage)}&source=inner`) +
+    "&source=outer";
+  const optimizedOuter = new URL(preferProductThumbnail(nestedProxy), "https://youpu.local");
+  const optimizedInner = new URL(optimizedOuter.searchParams.get("url")!, "https://youpu.local");
+  const optimizedImage = new URL(optimizedInner.searchParams.get("url")!);
+
+  assert.equal(optimizedImage.searchParams.get("f"), "800x0");
+  assert.equal(optimizedImage.searchParams.get("format"), "auto");
+  assert.equal(optimizedInner.searchParams.get("source"), "inner");
+  assert.equal(optimizedOuter.searchParams.get("source"), "outer");
+});
+
 test("limits approved K2 Amplience thumbnail widths and preserves other query parameters", () => {
   const missingWidth = new URL(
     preferProductThumbnail("https://cdn.media.amplience.net/i/k2/board.jpg?qlt=85&fmt=webp"),
