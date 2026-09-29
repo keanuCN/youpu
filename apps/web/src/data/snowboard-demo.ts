@@ -179,17 +179,20 @@ function enrichBootSpecsFromVerifiedSummary(gear: GearItem): GearItem {
     if (/bianca/.test(model)) {
       specs.flex ??= "中等";
       specs.terrain ??= "全山";
-      specs.lacingSystem = "TLS+ 快速系带";
+      specs.lacingSystem = "TLS+ 双区快速系带";
     } else if (/tangent/.test(model)) {
       specs.flex ??= "偏软";
       specs.terrain ??= "全山/公园";
+      specs.lacingSystem = "TLS 双区快速系带";
     } else if (/team pro mk/.test(model)) {
       specs.flex ??= "中等，可调";
       specs.terrain ??= "自由式/全山";
+      specs.lacingSystem = "TLS 双区快速系带";
     } else if (/team/.test(model)) {
       specs.flex ??= "均衡";
       specs.terrain ??= "全山/自由式";
       if (/team boa/.test(model)) specs.lacingSystem = "双高功率 BOA 旋钮（H5）";
+      else if (/team tls/.test(model)) specs.lacingSystem = "TLS 双区快速系带";
       if (/wide/.test(model)) {
         specs.fit ??= "宽楦";
         specs.lacingSystem = "TLS 双区快速系带";
@@ -198,9 +201,14 @@ function enrichBootSpecsFromVerifiedSummary(gear: GearItem): GearItem {
       specs.flex ??= /step on/.test(model) ? "可调" : "中等";
       specs.terrain ??= "全山/自由式";
       if (/venture pro tls/.test(model)) specs.lacingSystem = "TLS 双区快速系带";
+      else if (/venture step on/.test(model)) specs.lacingSystem = "TLS 系带 + BOA 微调脚踝绑带";
+      else if (/venture boa/.test(model)) specs.lacingSystem = "双区 BOA 系带（M+2 + H4 Coiler）";
+      else if (/venture tls/.test(model)) specs.lacingSystem = "TLS 双区快速系带";
     } else if (/sentinel/.test(model)) {
       specs.flex ??= "均衡";
       specs.terrain ??= "全山";
+      if (/sentinel boa/.test(model)) specs.lacingSystem = "双区 BOA 系带（M+2 + H4 Coiler）";
+      else specs.lacingSystem = "TLS 双区快速系带";
     }
   }
   if (gear.brand.toLowerCase() === "burton") {
