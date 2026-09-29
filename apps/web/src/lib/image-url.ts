@@ -124,6 +124,25 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       }
     }
     if (
+      image.hostname === "cdn.amersports.com" &&
+      image.searchParams.get("fit") === "bounds" &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      const requestedWidth = image.searchParams.get("width");
+      const requestedHeight = image.searchParams.get("height");
+      const width = requestedWidth === null ? undefined : Number(requestedWidth);
+      const height = requestedHeight === null ? undefined : Number(requestedHeight);
+      if (Number.isFinite(width) && Number.isFinite(height)) {
+        const targetWidth = Math.min(width!, widthLimit);
+        const targetHeight = Math.min(height!, widthLimit);
+        if (targetWidth < width! || targetHeight < height!) {
+          image.searchParams.set("width", String(targetWidth));
+          image.searchParams.set("height", String(targetHeight));
+          return image.toString();
+        }
+      }
+    }
+    if (
       image.hostname === "dma.canyon.com" &&
       image.pathname.includes("/image/upload/") &&
       isAllowedRemoteImageUrl(image.toString())

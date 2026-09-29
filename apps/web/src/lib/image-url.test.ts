@@ -220,6 +220,29 @@ test("limits only square Specialized hero assets using their verified w/h parame
   assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
 });
 
+test("bounds approved Amer Sports fit=bounds images without changing fit or quality", () => {
+  const atomicImage =
+    "https://cdn.amersports.com/0acef4a9-61b7-47b0-84f4-b49f00cdfc5f/ATP_AASS03784_0_GHO_Redster_Q9_I12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445";
+  const thumbnail = new URL(preferProductThumbnail(atomicImage));
+  assert.equal(thumbnail.searchParams.get("width"), "800");
+  assert.equal(thumbnail.searchParams.get("height"), "800");
+  assert.equal(thumbnail.searchParams.get("fit"), "bounds");
+  assert.equal(thumbnail.searchParams.get("format"), "auto");
+  assert.equal(thumbnail.searchParams.get("quality"), "80");
+
+  const detail = new URL(preferHighResolutionProductImage(atomicImage));
+  assert.equal(detail.searchParams.get("width"), "1445");
+  assert.equal(detail.searchParams.get("height"), "1600");
+
+  const smallImage = atomicImage.replace("height=10380", "height=600").replace("width=1445", "width=500");
+  assert.equal(preferProductThumbnail(smallImage), smallImage);
+
+  const otherHost = atomicImage.replace("cdn.amersports.com", "other.example");
+  const otherPath = atomicImage.replace("0acef4a9-61b7-47b0-84f4-b49f00cdfc5f", "unlisted");
+  assert.equal(preferProductThumbnail(otherHost), otherHost);
+  assert.equal(preferProductThumbnail(otherPath), otherPath);
+});
+
 test("limits approved K2 Amplience thumbnail widths and preserves other query parameters", () => {
   const missingWidth = new URL(
     preferProductThumbnail("https://cdn.media.amplience.net/i/k2/board.jpg?qlt=85&fmt=webp"),
