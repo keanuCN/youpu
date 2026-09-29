@@ -39,9 +39,9 @@ editorial_scores:
   park: 7
   forgiveness: 9.5
   value: 8.5
-# CAPiTA 在 2021-22 产品代际已以 Pathfinder Rev 替代 Horrorscope；原“2024”年份待核实，因此不展示旧款图片。
+# Horrorscope 在 2020-21 后退出，2021-22 由 Pathfinder Rev 接替；此“2024”记录并非真实款，核实前保留为草稿，不作为在售商品展示。
 images: []
 data_source:
   kind: crawl
   origin_url: https://snowboardingprofiles.com/2022-capita-snowboards-overview
-status: published
+status: draft
