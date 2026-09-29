@@ -78,6 +78,49 @@ test("limits approved Salomon DAM URLs nested inside the image proxy", () => {
   assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
 });
 
+test("limits approved K2 Amplience thumbnail widths and preserves other query parameters", () => {
+  const missingWidth = new URL(
+    preferProductThumbnail("https://cdn.media.amplience.net/i/k2/board.jpg?qlt=85&fmt=webp"),
+  );
+  assert.equal(missingWidth.searchParams.get("w"), "800");
+  assert.equal(missingWidth.searchParams.get("qlt"), "85");
+  assert.equal(missingWidth.searchParams.get("fmt"), "webp");
+
+  const oversizedWidth = new URL(
+    preferProductThumbnail("https://cdn.media.amplience.net/s/k2/board.jpg?w=1600&qlt=80&fmt=jpg"),
+  );
+  assert.equal(oversizedWidth.searchParams.get("w"), "800");
+  assert.equal(oversizedWidth.searchParams.get("qlt"), "80");
+  assert.equal(oversizedWidth.searchParams.get("fmt"), "jpg");
+
+  const atLimit = "https://cdn.media.amplience.net/i/k2/board.jpg?w=800&qlt=80";
+  const belowLimit = "https://cdn.media.amplience.net/s/k2/board.jpg?w=480&fmt=webp";
+  assert.equal(preferProductThumbnail(atLimit), atLimit);
+  assert.equal(preferProductThumbnail(belowLimit), belowLimit);
+
+  const customLimit = new URL(
+    preferProductThumbnail("https://cdn.media.amplience.net/i/k2/board.jpg?w=1200&qlt=85", 480),
+  );
+  assert.equal(customLimit.searchParams.get("w"), "480");
+  assert.equal(customLimit.searchParams.get("qlt"), "85");
+
+  const proxiedImage =
+    "/api/image-proxy?url=" +
+    encodeURIComponent("https://cdn.media.amplience.net/i/k2/board.jpg?qlt=85&fmt=webp") +
+    "&source=product";
+  const proxiedThumbnail = new URL(preferProductThumbnail(proxiedImage), "https://youpu.local");
+  const optimizedSource = new URL(proxiedThumbnail.searchParams.get("url")!);
+  assert.equal(optimizedSource.searchParams.get("w"), "800");
+  assert.equal(optimizedSource.searchParams.get("qlt"), "85");
+  assert.equal(optimizedSource.searchParams.get("fmt"), "webp");
+  assert.equal(proxiedThumbnail.searchParams.get("source"), "product");
+
+  const unrelatedHost = "https://other.example/i/k2/board.jpg?w=1600";
+  const unrelatedPath = "https://cdn.media.amplience.net/i/other/board.jpg?w=1600";
+  assert.equal(preferProductThumbnail(unrelatedHost), unrelatedHost);
+  assert.equal(preferProductThumbnail(unrelatedPath), unrelatedPath);
+});
+
 test("limits approved Canyon Cloudinary widths while preserving transformation components", () => {
   const canyonImage =
     "https://dma.canyon.com/image/upload/c_fit,w_1600,h_645,f_jpg,q_auto/products/bike.jpg";

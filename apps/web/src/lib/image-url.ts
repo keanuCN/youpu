@@ -66,6 +66,14 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
         return image.toString();
       }
     }
+    if (image.hostname === "cdn.media.amplience.net" && isAllowedRemoteImageUrl(image.toString())) {
+      const requestedWidth = image.searchParams.get("w");
+      const width = Number(requestedWidth);
+      if (requestedWidth === null || (Number.isFinite(width) && width > widthLimit)) {
+        image.searchParams.set("w", String(widthLimit));
+        return image.toString();
+      }
+    }
     if (
       image.hostname === "dma.canyon.com" &&
       image.pathname.includes("/image/upload/") &&
