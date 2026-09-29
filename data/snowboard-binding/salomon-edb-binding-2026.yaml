@@ -7,6 +7,7 @@ title: "Salomon EDB 2026"
 one_liner: "Salomon 全山地固定器，官网当前目录同时提供该款与 EDB PRIME。"
 specs:
   entrySystem: strap
+  bindingSizeGuide: "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。"
   terrain: [all-mountain]
   mountingSystem: "Universal Disc；兼容主要雪板安装系统"
 editorial_scores:
