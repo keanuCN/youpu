@@ -272,7 +272,7 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       isAllowedRemoteImageUrl(image.toString())
     ) {
       image.hostname = "cdn.accentuate.io";
-      image.searchParams.set("transform", `resize=${widthLimit <= 480 ? 416 : 640}`);
+      image.searchParams.set("transform", `resize=${widthLimit < 640 ? 416 : 640}`);
       return image.toString();
     }
     if (

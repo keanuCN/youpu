@@ -309,6 +309,8 @@ test("uses official Accentuate resize variants only for the verified KORUA Cafe 
 
   const compact = new URL(preferProductThumbnail(image, 480));
   assert.equal(compact.searchParams.get("transform"), "resize=416");
+  const intermediate = new URL(preferProductThumbnail(image, 600));
+  assert.equal(intermediate.searchParams.get("transform"), "resize=416");
   assert.equal(preferHighResolutionProductImage(image), image);
 
   const unrelated = image.replace("Thumbnail-01", "Thumbnail-02");
