@@ -310,29 +310,6 @@ export default function AuthPage() {
             {c.cta}
           </Button>
 
-          <div className="border-t border-border pt-4">
-            <p className="mono-label mb-2">演示账号</p>
-            <div className="flex items-center justify-between gap-3 bg-secondary/60 px-3 py-2.5">
-              <div className="min-w-0">
-                <p className="mono-data truncate text-[12px]">{BRAND.demoEmail}</p>
-                <p className="mono-data truncate text-[12px] text-muted-foreground">{BRAND.demoPassword}</p>
-              </div>
-              <Button
-                type="button"
-                size="sm"
-                variant="outline"
-                onClick={() => {
-                  setEmailMode("login");
-                  setEmail(BRAND.demoEmail);
-                  setPassword(BRAND.demoPassword);
-                  clearEmailCode();
-                }}
-                className="h-7 shrink-0 rounded-none text-[12px]"
-              >
-                一键填入
-              </Button>
-            </div>
-          </div>
         </form>
       </div>
     </div>

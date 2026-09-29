@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -155,12 +154,6 @@ export function LoginDialog({
     setBusy(false);
   };
 
-  const fillDemo = () => {
-    changeMode("login");
-    setEmail(BRAND.demoEmail);
-    setPassword(BRAND.demoPassword);
-  };
-
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-[420px] gap-0 overflow-hidden rounded-none border-foreground p-0">
@@ -301,25 +294,6 @@ export function LoginDialog({
             )}
           </div>
 
-          <div className="border-t border-border pt-4">
-            <p className="mono-label mb-2">演示账号</p>
-            <div className="flex items-center justify-between gap-3 bg-secondary/60 px-3 py-2">
-              <div className="min-w-0">
-                <p className="mono-data truncate text-[12px]">{BRAND.demoEmail}</p>
-                <p className="mono-data truncate text-[12px] text-muted-foreground">{BRAND.demoPassword}</p>
-              </div>
-              <Button type="button" size="sm" variant="outline" onClick={fillDemo} className="h-7 shrink-0 rounded-none text-[12px]">
-                一键填入
-              </Button>
-            </div>
-            <p className="mt-3 text-[12px] leading-relaxed text-muted-foreground">
-              本地 API 已接入账号与收藏，
-              <Link href="/me" className="story-link ml-1" onClick={() => onOpenChange(false)}>
-                个人中心
-              </Link>
-              可随时查看。
-            </p>
-          </div>
         </form>
       </DialogContent>
     </Dialog>
