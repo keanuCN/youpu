@@ -43,7 +43,7 @@ export const IMG = {
 } as const;
 
 /**
- * 首页雪场图池包含清晰的原创首屏插画，以及至少 4K 宽的公开授权摄影素材。
+ * 首页雪场图池包含原创首屏插画，以及适配首屏显示尺寸的高清公开授权摄影素材。
  * 外部照片记录来源与署名；首页实际展示来源链接和作者信息。
  */
 export const HERO_IMAGE_POOL = [
@@ -56,7 +56,7 @@ export const HERO_IMAGE_POOL = [
   },
   {
     src: resolveImageUrl(
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg/3840px-Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg/1920px-Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg",
     ),
     alt: "阿勒泰将军山滑雪场远景",
     locationLabel: "新疆阿勒泰 / 将军山",
@@ -66,7 +66,7 @@ export const HERO_IMAGE_POOL = [
   },
   {
     src: resolveImageUrl(
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg/3840px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg/1920px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture3.jpg",
     ),
     alt: "新疆阿勒泰地区冬季雪景",
     locationLabel: "新疆阿勒泰地区",
@@ -76,7 +76,7 @@ export const HERO_IMAGE_POOL = [
   },
   {
     src: resolveImageUrl(
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg/3840px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg/1920px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture10.jpg",
     ),
     alt: "新疆布尔津禾木乡冬季雪景",
     locationLabel: "新疆阿勒泰 / 禾木",
@@ -86,7 +86,7 @@ export const HERO_IMAGE_POOL = [
   },
   {
     src: resolveImageUrl(
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg/3840px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg/1920px-Snow_Scenery_in_Altay_Prefecture%2C_Xinjiang%2C_China%2C_picture1.jpg",
     ),
     alt: "新疆阿勒泰地区冬季山景",
     locationLabel: "新疆阿勒泰地区",
