@@ -26,6 +26,13 @@ specs:
   scenes:
     - all-mountain
     - powder
+  sizeSpecs:
+    - { size: "144", overallLength: 1440, effectiveEdge: 1130, contactLength: 909, noseLength: 388, noseWidth: 297, waistWidth: 251, tailLength: 143, tailWidth: 280, sidecutRadii: "8.1", stanceWidth: "490 mm", weightRange: "41–63 kg", boardWeight: "2600 g", insertQty: "Standard Pack", setback: 0, bindingSize: "S/M" }
+    - { size: "148", overallLength: 1480, effectiveEdge: 1160, contactLength: 941, noseLength: 392, noseWidth: 302, waistWidth: 255, tailLength: 147, tailWidth: 285, sidecutRadii: "8.4", stanceWidth: "500 mm", weightRange: "41–63 kg", boardWeight: "2700 g", insertQty: "Standard Pack", setback: 0, bindingSize: "S/M" }
+    - { size: "152", overallLength: 1520, effectiveEdge: 1190, contactLength: 973, noseLength: 396, noseWidth: 306, waistWidth: 259, tailLength: 151, tailWidth: 289, sidecutRadii: "8.7", stanceWidth: "520 mm", weightRange: "49–73 kg", boardWeight: "2900 g", insertQty: "Standard Pack", setback: 0, bindingSize: "S/M" }
+    - { size: "156", overallLength: 1560, effectiveEdge: 1230, contactLength: 1005, noseLength: 400, noseWidth: 311, waistWidth: 263, tailLength: 155, tailWidth: 294, sidecutRadii: "9.0", stanceWidth: "540 mm", weightRange: "59–82 kg", boardWeight: "3100 g", insertQty: "Standard Pack", setback: 0, bindingSize: "M/L" }
+    - { size: "160", overallLength: 1600, effectiveEdge: 1260, contactLength: 1037, noseLength: 404, noseWidth: 316, waistWidth: 267, tailLength: 159, tailWidth: 299, sidecutRadii: "9.3", stanceWidth: "560 mm", weightRange: "73–95 kg", boardWeight: "3200 g", insertQty: "Standard Pack", setback: 0, bindingSize: "M/L" }
+    - { size: "164", overallLength: 1640, effectiveEdge: 1290, contactLength: 1069, noseLength: 408, noseWidth: 321, waistWidth: 271, tailLength: 163, tailWidth: 304, sidecutRadii: "9.6", stanceWidth: "560 mm", weightRange: "77–100 kg+", boardWeight: "3300 g", insertQty: "Standard Pack", setback: 0, bindingSize: "M/L" }
 editorial_scores:
   stability: 8.1
   response: 7.9

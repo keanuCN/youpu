@@ -26,6 +26,14 @@ specs:
     - all-mountain
     - powder
     - freestyle
+  sizeSpecs:
+    - { size: "142", overallLength: 1420, effectiveEdge: 1030, contactLength: 894, noseLength: 338, noseWidth: 288, waistWidth: 248, tailLength: 188, tailWidth: 278, stanceWidth: "500 mm", weightRange: "41–63 kg", boardWeight: "2400 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "146", overallLength: 1460, effectiveEdge: 1070, contactLength: 928, noseLength: 341, noseWidth: 293, waistWidth: 251, tailLength: 191, tailWidth: 283, stanceWidth: "520 mm", weightRange: "49–73 kg", boardWeight: "2500 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "150", overallLength: 1500, effectiveEdge: 1100, contactLength: 962, noseLength: 344, noseWidth: 297, waistWidth: 254, tailLength: 194, tailWidth: 287, stanceWidth: "540 mm", weightRange: "54–77 kg", boardWeight: "2800 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1140, contactLength: 996, noseLength: 347, noseWidth: 302, waistWidth: 257, tailLength: 197, tailWidth: 292, stanceWidth: "540 mm", weightRange: "59–82 kg", boardWeight: "3000 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "158", overallLength: 1580, effectiveEdge: 1170, contactLength: 1030, noseLength: 350, noseWidth: 306, waistWidth: 260, tailLength: 200, tailWidth: 296, stanceWidth: "560 mm", weightRange: "67–91 kg", boardWeight: "3200 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "162", overallLength: 1620, effectiveEdge: 1200, contactLength: 1062, noseLength: 354, noseWidth: 311, waistWidth: 264, tailLength: 204, tailWidth: 301, stanceWidth: "580 mm", weightRange: "77–100 kg+", boardWeight: "3400 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "166", overallLength: 1660, effectiveEdge: 1230, contactLength: 1094, noseLength: 358, noseWidth: 317, waistWidth: 268, tailLength: 208, tailWidth: 307, stanceWidth: "600 mm", weightRange: "77–100 kg+", boardWeight: "3600 g", insertQty: "Standard Pack", setback: 20 }
 editorial_scores:
   stability: 8.0
   response: 8.0

@@ -27,6 +27,15 @@ specs:
     - all-mountain
     - powder
     - freestyle
+  sizeSpecs:
+    - { size: "152", overallLength: 1520, effectiveEdge: 1180, contactLength: 1077, noseLength: 254, noseWidth: 294, waistWidth: 251, tailLength: 189, tailWidth: 286, sidecutRadii: "8.0", stanceWidth: "520 mm", weightRange: "59–82 kg", boardWeight: "2600 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "155", overallLength: 1550, effectiveEdge: 1200, contactLength: 1101, noseLength: 257, noseWidth: 298, waistWidth: 254, tailLength: 192, tailWidth: 290, sidecutRadii: "8.2", stanceWidth: "540 mm", weightRange: "64–86 kg", boardWeight: "2700 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "157W", overallLength: 1570, effectiveEdge: 1220, contactLength: 1115, noseLength: 260, noseWidth: 308, waistWidth: 264, tailLength: 195, tailWidth: 300, sidecutRadii: "8.4", stanceWidth: "560 mm", weightRange: "73–95 kg+", boardWeight: "2800 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "158", overallLength: 1580, effectiveEdge: 1230, contactLength: 1125, noseLength: 260, noseWidth: 302, waistWidth: 257, tailLength: 195, tailWidth: 294, sidecutRadii: "8.4", stanceWidth: "560 mm", weightRange: "73–95 kg+", boardWeight: "2800 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "160W", overallLength: 1600, effectiveEdge: 1240, contactLength: 1139, noseLength: 263, noseWidth: 312, waistWidth: 267, tailLength: 198, tailWidth: 304, sidecutRadii: "8.6", stanceWidth: "560 mm", weightRange: "73–95 kg+", boardWeight: "3000 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "161", overallLength: 1610, effectiveEdge: 1250, contactLength: 1149, noseLength: 263, noseWidth: 306, waistWidth: 260, tailLength: 198, tailWidth: 298, sidecutRadii: "8.6", stanceWidth: "560 mm", weightRange: "77–100 kg+", boardWeight: "2900 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "163W", overallLength: 1630, effectiveEdge: 1260, contactLength: 1163, noseLength: 266, noseWidth: 316, waistWidth: 270, tailLength: 201, tailWidth: 308, sidecutRadii: "8.8", stanceWidth: "560 mm", weightRange: "77–100 kg+", boardWeight: "3100 g", insertQty: "Standard Pack", setback: 20 }
+    - { size: "164", overallLength: 1640, effectiveEdge: 1260, contactLength: 1163, noseLength: 271, noseWidth: 309, waistWidth: 263, tailLength: 206, tailWidth: 301, sidecutRadii: "8.8", stanceWidth: "560 mm", weightRange: "77–100 kg+", boardWeight: "3200 g", insertQty: "Standard Pack", setback: 20 }
 editorial_scores:
   stability: 9.0
   response: 9.1
