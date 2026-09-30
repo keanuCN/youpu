@@ -10,8 +10,11 @@ specs:
   waterproofMm: 10000
   insulation: 100 g/m² body / 80 g/m² sleeves synthetic wadding
   fit: loose
+  version: long
   seamTaping: fully-taped
+  venting: true
   powderSkirt: true
+  recco: false
   helmetCompatibleHood: true
   skiPassPocket: true
   ziprotectCompatible: true
