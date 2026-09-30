@@ -33,3 +33,16 @@ test('uses the verified HEAD e.SLR 224x298 image only in admin product lists', (
     source.replace('cdn-mdb.head.com', 'images.example'),
   );
 });
+
+test('limits only the verified Salomon admin-list image to 120px and preserves pad', () => {
+  const source =
+    'https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12&width=800';
+  const thumbnail = new URL(preferAdminListThumbnail(source));
+  assert.equal(thumbnail.searchParams.get('width'), '120');
+  assert.equal(thumbnail.searchParams.get('pad'), '0.12,0.12,0.12,0.12');
+
+  const alreadySmall = source.replace('width=800', 'width=96');
+  assert.equal(preferAdminListThumbnail(alreadySmall), alreadySmall);
+  const unverified = source.replace('L49278500', 'L49278501');
+  assert.equal(preferAdminListThumbnail(unverified), unverified);
+});
