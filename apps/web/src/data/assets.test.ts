@@ -10,7 +10,7 @@ test("keeps the original ridge hero as fallback and serves bounded local WebP ca
   assert.match(ridge.src, /^https:\/\/g\.cdn\.meoo\.host\//);
   assert.equal(ridge.webpSrcSet, "/hero/ridge-768.webp 768w, /hero/ridge-1440.webp 1440w");
 
-  for (const [name, maxBytes] of [["ridge-768.webp", 50_000], ["ridge-1440.webp", 200_000]] as const) {
+  for (const [name, maxBytes] of [["ridge-768.webp", 50_000], ["ridge-1440.webp", 125_000]] as const) {
     const imagePath = new URL(`../../public/hero/${name}`, import.meta.url);
     const image = readFileSync(imagePath);
     assert.ok(statSync(imagePath).size < maxBytes, `${name} should stay below ${maxBytes} bytes`);
