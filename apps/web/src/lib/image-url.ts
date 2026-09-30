@@ -879,7 +879,7 @@ function responsiveImageSource(source: string): { image: URL; wrap: (candidate: 
   }
 }
 
-/** Only verified Atomic and Insta360 assets receive responsive variants; proxy URLs retain their wrapper. */
+/** Only verified Atomic and Insta360 assets receive responsive WebP variants; proxy URLs retain their wrapper. */
 export function responsiveProductImageSrcSet(source: string): string | undefined {
   const resolved = responsiveImageSource(source);
   if (!resolved) return undefined;
@@ -905,9 +905,11 @@ export function responsiveProductImageSrcSet(source: string): string | undefined
       return undefined;
     }
 
-    const compactImage = new URL(image);
-    compactImage.pathname = compactImage.pathname.replace("%21middle.jpg", "%21small.jpg");
-    return `${wrap(compactImage)} 260w, ${wrap(image)} 520w`;
+    const compactWebp = new URL(image);
+    compactWebp.pathname = compactWebp.pathname.replace("%21middle.jpg", "%21small.webp");
+    const fullResolutionWebp = new URL(image);
+    fullResolutionWebp.pathname = fullResolutionWebp.pathname.replace("%21middle.jpg", "%21middle.webp");
+    return `${wrap(compactWebp)} 260w, ${wrap(fullResolutionWebp)} 520w`;
   } catch {
     return undefined;
   }
@@ -917,9 +919,14 @@ export function responsiveProductImageSrcSetType(source: string): "image/webp" |
   const resolved = responsiveImageSource(source);
   if (!resolved) return undefined;
   const { image } = resolved;
-  return image.hostname === "wassets.insta360.com" &&
-    image.pathname === VERIFIED_INSTA360_ACE_PRO_2_IMAGE_PATH &&
-    image.search === ""
+  return (
+    (image.hostname === "wassets.insta360.com" &&
+      image.pathname === VERIFIED_INSTA360_ACE_PRO_2_IMAGE_PATH &&
+      image.search === "") ||
+    (image.hostname === "img01.yzcdn.cn" &&
+      image.pathname === VERIFIED_ATOMIC_BENT_CHETLER_IMAGE_PATH &&
+      image.search === "")
+  )
     ? "image/webp"
     : undefined;
 }

@@ -156,16 +156,33 @@ test("uses 128px only for Shopify images in the 56px mixed-compare summary", () 
   assert.equal(new URL(preferMixedCompareSummaryThumbnail(salomonDam)).searchParams.get("width"), "192");
 });
 
-test("provides responsive small and middle variants only for the verified Atomic Bent Chetler image", () => {
+test("provides responsive WebP variants only for the verified Atomic Bent Chetler image", () => {
   const source =
     "https://img01.yzcdn.cn/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg";
   assert.equal(
     responsiveProductImageSrcSet(source),
-    "https://img01.yzcdn.cn/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21small.jpg 260w, https://img01.yzcdn.cn/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg 520w",
+    "https://img01.yzcdn.cn/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21small.webp 260w, https://img01.yzcdn.cn/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.webp 520w",
   );
+  assert.equal(responsiveProductImageSrcSetType(source), "image/webp");
   assert.equal(responsiveProductImageSrcSet(source.replace("middle.jpg", "large.jpg")), undefined);
   assert.equal(responsiveProductImageSrcSet(source.replace("img01.yzcdn.cn", "other.example")), undefined);
   assert.equal(responsiveProductImageSrcSet(`${source}?v=1`), undefined);
+  assert.equal(responsiveProductImageSrcSetType(source.replace("img01.yzcdn.cn", "other.example")), undefined);
+});
+
+test("preserves the original Atomic JPEG as fallback while proxying WebP candidates", () => {
+  const source =
+    "https://img01.yzcdn.cn/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg";
+  const proxy = `/api/image-proxy?url=${encodeURIComponent(source)}&section=gallery`;
+  const candidates = responsiveProductImageSrcSet(proxy)!.split(", ");
+  const compactProxy = new URL(candidates[0]!.replace(/ 260w$/, ""), "https://youpu.local");
+  const fullProxy = new URL(candidates[1]!.replace(/ 520w$/, ""), "https://youpu.local");
+
+  assert.equal(compactProxy.searchParams.get("section"), "gallery");
+  assert.equal(fullProxy.searchParams.get("section"), "gallery");
+  assert.equal(new URL(compactProxy.searchParams.get("url")!).pathname.endsWith("%21small.webp"), true);
+  assert.equal(new URL(fullProxy.searchParams.get("url")!).pathname.endsWith("%21middle.webp"), true);
+  assert.equal(responsiveProductImageSrcSetType(proxy), "image/webp");
 });
 
 test("provides q90 OSS WebP candidates only for the verified Insta360 Ace Pro 2 image", () => {
