@@ -39,7 +39,10 @@ test("keeps Commons hero photo sources and credits while serving local responsiv
       `/hero/${photo.stem}-768.webp 768w, /hero/${photo.stem}-1280.webp 1280w`,
     );
 
-    for (const [width, maxBytes] of [[768, 130_000], [1280, 400_000]] as const) {
+    for (const [width, maxBytes] of [
+      [768, 130_000],
+      [1280, 300_000],
+    ] as const) {
       const imagePath = new URL(`../../public/hero/${photo.stem}-${width}.webp`, import.meta.url);
       const bytes = readFileSync(imagePath);
       assert.ok(statSync(imagePath).size < maxBytes, `${photo.stem}-${width}.webp should stay bounded`);
