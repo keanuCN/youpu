@@ -15,6 +15,7 @@ import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGe
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
 import { track, trackExposeOnce } from "@/lib/track";
 import {
+  preferGearRowThumbnail,
   preferProductThumbnail,
   responsiveProductImageSrcSet,
   responsiveProductImageSrcSetType,
@@ -329,7 +330,7 @@ export function GearRow({
       <div className="h-14 w-14 shrink-0 overflow-hidden bg-secondary">
         {hasMedia(gear) && mediaUrl(gear) ? (
             <SafeImage
-            src={preferProductThumbnail(mediaUrl(gear)!, thumbnailMaxWidth)}
+            src={preferGearRowThumbnail(mediaUrl(gear)!, thumbnailMaxWidth)}
             alt={`${gear.brand} ${gear.model}`}
             loading="lazy"
             fallbackLabel={`${gear.brand} ${gear.model}`}

@@ -6,6 +6,7 @@ import {
   isAllowedRemoteImageUrl,
   preferHighResolutionProductImage,
   preferCompactProductThumbnail,
+  preferGearRowThumbnail,
   preferProductThumbnail,
   preferReviewImageThumbnail,
   responsiveReviewImageSrcSet,
@@ -119,6 +120,25 @@ test("limits compact-list Shopify thumbnails to 96px but preserves other source 
 
   const other = "https://cdn.dam.salomon.com/unverified/product.png?width=2000";
   assert.equal(preferCompactProductThumbnail(other), preferProductThumbnail(other, 480));
+});
+
+test("uses 168px GearRow thumbnails only for verified resizable Shopify and Salomon sources", () => {
+  const shopify = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=800";
+  assert.equal(new URL(preferGearRowThumbnail(shopify)).searchParams.get("width"), "168");
+
+  const salomon =
+    "https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png?width=800";
+  assert.equal(new URL(preferGearRowThumbnail(salomon)).searchParams.get("width"), "168");
+
+  const smartMarine = "https://www.smartmarine.co.nz/cdn/images/products/xlarge/8089900_a.jpg";
+  assert.equal(
+    preferGearRowThumbnail(smartMarine),
+    "https://www.smartmarine.co.nz/cdn/images/products/large/8089900_a.jpg",
+  );
+
+  const korua =
+    "https://original.accentuate.io/6939308982453/1758747603396/KORUA-Shapes-Cafe-Racer-Nicholas-Wolken-Thumbnail-01.jpg?v=1758747603396";
+  assert.equal(new URL(preferGearRowThumbnail(korua)).searchParams.get("transform"), "resize=640");
 });
 
 test("provides responsive small and middle variants only for the verified Atomic Bent Chetler image", () => {

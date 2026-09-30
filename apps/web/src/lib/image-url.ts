@@ -617,6 +617,13 @@ function isSalomonDamProductImage(source: string): boolean {
   }
 }
 
+/** 56px GearRow 仅对已验证的可变宽来源使用小档位，其他源保留默认缩略规则。 */
+export function preferGearRowThumbnail(source: string, maxWidth = 168): string {
+  return isShopifyProductImage(source) || isSalomonDamProductImage(source)
+    ? preferProductThumbnail(source, maxWidth)
+    : preferProductThumbnail(source);
+}
+
 function isShopifyProductImage(source: string): boolean {
   try {
     const image = new URL(source, "https://youpu.local");

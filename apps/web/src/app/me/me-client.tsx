@@ -199,7 +199,7 @@ export default function MePage({ initialTab }: { initialTab?: TabKey }) {
           favs.length ? (
             <div className="border border-border px-4">
               {favs.map((g) => (
-                <GearRow key={g.id} gear={g} from="list" />
+                <GearRow key={g.id} gear={g} from="list" thumbnailMaxWidth={168} />
               ))}
             </div>
           ) : (

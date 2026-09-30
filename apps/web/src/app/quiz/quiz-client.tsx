@@ -191,7 +191,13 @@ export default function QuizPage() {
           <p className="mono-label mb-2">也可以直接横向拉表</p>
           <div className="border border-border">
             {result.map((r) => (
-              <GearRow key={r.gear.id} gear={r.gear} note={`匹配度 ${r.match}% · ${r.reasons[0] ?? "稳妥选择"}`} from="recommend" />
+              <GearRow
+                key={r.gear.id}
+                gear={r.gear}
+                thumbnailMaxWidth={168}
+                note={`匹配度 ${r.match}% · ${r.reasons[0] ?? "稳妥选择"}`}
+                from="recommend"
+              />
             ))}
           </div>
           <Link href="/compare" className="mono-label mt-4 inline-block bg-foreground px-5 py-3 text-background hover:bg-primary">
