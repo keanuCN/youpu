@@ -657,7 +657,12 @@ function ReviewForm({ gear }: { gear: GearItem }) {
             <div className="flex flex-wrap gap-2">
               {previews.map((url, index) => (
                 <div key={`${files[index]?.name}-${index}`} className="relative h-20 w-20 border border-border">
-                  <img src={url} alt={`实测照片 ${index + 1}`} className="h-full w-full object-cover" />
+                  <img
+                    src={url}
+                    alt={`实测照片 ${index + 1}`}
+                    decoding="async"
+                    className="h-full w-full object-cover"
+                  />
                   <button
                     type="button"
                     aria-label={`移除第 ${index + 1} 张照片`}
