@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Compass, Trophy } from "lucide-react";
 import { FallbackNotice, GearGridSkeleton, LoadingStatus, RankRowsSkeleton } from "@/components/gear/data-state";
 import { GearCard, GearRow } from "@/components/gear/gear-card";
@@ -16,6 +16,34 @@ import { getCategoryProducts, resolveContentSource } from "@/lib/content";
 import { timeAgo } from "@/lib/format";
 import { usePersisted } from "@/lib/store";
 import type { GearItem } from "@/types";
+
+const HERO_IMAGE_SIZES = "(min-width: 1440px) 714px, (min-width: 1024px) calc((100vw - 64px) * 0.535), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)";
+const HERO_WEBP_SOURCE_SETS = JSON.stringify(HERO_IMAGE_POOL.map((image) => image.webpSrcSet ?? null)).replace(/</g, "\\u003c");
+const HERO_IMAGE_PRELOAD_BOOTSTRAP = `(() => {
+  try {
+    const sources = ${HERO_WEBP_SOURCE_SETS};
+    const index = Math.floor(Math.random() * sources.length);
+    window.__youpuHeroImageIndex = index;
+    const srcSet = sources[index];
+    if (!srcSet) return;
+    const link = document.createElement("link");
+    link.href = srcSet.split(",")[0].trim().split(" ")[0];
+    link.rel = "preload";
+    link.as = "image";
+    link.type = "image/webp";
+    link.setAttribute("imagesrcset", srcSet);
+    link.setAttribute("imagesizes", ${JSON.stringify(HERO_IMAGE_SIZES)});
+    link.setAttribute("fetchpriority", "high");
+    link.setAttribute("data-youpu-hero-image-preload", "");
+    document.head.appendChild(link);
+  } catch {}
+})();`;
+
+declare global {
+  interface Window {
+    __youpuHeroImageIndex?: number;
+  }
+}
 
 export default function HomePage() {
   const snapshot = usePersisted();
@@ -218,17 +246,47 @@ function Cover({
   liveCategoryNames: string;
 }) {
   const [heroImage, setHeroImage] = useState<(typeof HERO_IMAGE_POOL)[number] | null>(null);
+  const selectedHeroIndex = useRef<number | null>(null);
   const [heroLoaded, setHeroLoaded] = useState(false);
   const [heroFailed, setHeroFailed] = useState(false);
   const [heroFallback, setHeroFallback] = useState(false);
 
   useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * HERO_IMAGE_POOL.length);
-    const selectedImage = HERO_IMAGE_POOL[randomIndex] ?? HERO_IMAGE_POOL[0];
+    if (selectedHeroIndex.current !== null) return;
+    const preselectedIndex = window.__youpuHeroImageIndex;
+    delete window.__youpuHeroImageIndex;
+    const selectedIndex =
+      typeof preselectedIndex === "number" &&
+      Number.isInteger(preselectedIndex) &&
+      preselectedIndex >= 0 &&
+      preselectedIndex < HERO_IMAGE_POOL.length
+        ? preselectedIndex
+        : Math.floor(Math.random() * HERO_IMAGE_POOL.length);
+    selectedHeroIndex.current = selectedIndex;
+    const selectedImage = HERO_IMAGE_POOL[selectedIndex] ?? HERO_IMAGE_POOL[0];
+    if (preselectedIndex !== selectedIndex && selectedImage.webpSrcSet) {
+      let preload = document.head.querySelector<HTMLLinkElement>(
+        "link[data-youpu-hero-image-preload]",
+      );
+      if (!preload) {
+        preload = document.createElement("link");
+        document.head.appendChild(preload);
+      }
+      preload.href = selectedImage.webpSrcSet.split(",")[0]?.trim().split(" ")[0] ?? selectedImage.src;
+      preload.rel = "preload";
+      preload.as = "image";
+      preload.type = "image/webp";
+      preload.setAttribute("imagesrcset", selectedImage.webpSrcSet);
+      preload.setAttribute("imagesizes", HERO_IMAGE_SIZES);
+      preload.setAttribute("fetchpriority", "high");
+      preload.setAttribute("data-youpu-hero-image-preload", "");
+    }
     setHeroImage(selectedImage);
   }, []);
 
   return (
+    <>
+    <script dangerouslySetInnerHTML={{ __html: HERO_IMAGE_PRELOAD_BOOTSTRAP }} />
     <section className="relative border-b border-foreground">
       <div className="grid lg:grid-cols-[1.15fr_1fr]">
         <div className="relative order-2 min-h-[320px] overflow-hidden bg-muted lg:order-1 lg:min-h-[560px]">
@@ -333,6 +391,7 @@ function Cover({
         </div>
       </div>
     </section>
+    </>
   );
 }
 
