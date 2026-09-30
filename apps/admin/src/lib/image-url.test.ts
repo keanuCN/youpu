@@ -14,3 +14,22 @@ test('limits Shopify product-list thumbnails to 96px and preserves other URL dat
   assert.equal(preferAdminListThumbnail(unknown), unknown);
   assert.equal(preferAdminListThumbnail('/relative/image.jpg'), '/relative/image.jpg');
 });
+
+test('uses the verified HEAD e.SLR 224x298 image only in admin product lists', () => {
+  const source =
+    'https://cdn-mdb.head.com/CDN3/D/313365.SET_WO/4/1820x2428/worldcup-rebels-e-slr-without-binding.webp?version=7';
+  const thumbnail = new URL(preferAdminListThumbnail(source));
+  assert.equal(
+    thumbnail.pathname,
+    '/CDN3/D/313365.SET_WO/4/224x298/worldcup-rebels-e-slr-without-binding.webp',
+  );
+  assert.equal(thumbnail.searchParams.get('version'), '7');
+
+  const unverified =
+    'https://cdn-mdb.head.com/CDN3/D/313365.SET_WO/4/1820x2428/another-product.webp';
+  assert.equal(preferAdminListThumbnail(unverified), unverified);
+  assert.equal(
+    preferAdminListThumbnail(source.replace('cdn-mdb.head.com', 'images.example')),
+    source.replace('cdn-mdb.head.com', 'images.example'),
+  );
+});
