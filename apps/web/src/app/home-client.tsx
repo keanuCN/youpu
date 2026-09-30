@@ -296,13 +296,13 @@ function Cover({
                 <source
                   type="image/webp"
                   srcSet={heroImage.webpSrcSet}
-                  sizes="(min-width: 1440px) 714px, (min-width: 1024px) calc((100vw - 64px) * 0.535), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
+                  sizes={HERO_IMAGE_SIZES}
                 />
               ) : null}
               <img
                 src={heroImage.src}
                 srcSet={heroFallback ? undefined : heroImage.srcSet}
-                sizes="(min-width: 1440px) 714px, (min-width: 1024px) calc((100vw - 64px) * 0.535), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
+                sizes={HERO_IMAGE_SIZES}
                 alt={heroImage.alt}
                 loading="eager"
                 fetchPriority="high"
