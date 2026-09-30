@@ -123,13 +123,30 @@ test("limits compact-list Shopify thumbnails to 96px but preserves other source 
   assert.equal(preferCompactProductThumbnail(other), preferProductThumbnail(other, 480));
 });
 
-test("uses 168px GearRow thumbnails only for verified resizable Shopify and Salomon sources", () => {
+test("uses 168px GearRow thumbnails only for verified Shopify, Salomon, and K2 Amplience sources", () => {
   const shopify = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=800";
   assert.equal(new URL(preferGearRowThumbnail(shopify)).searchParams.get("width"), "168");
 
   const salomon =
     "https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png?width=800";
   assert.equal(new URL(preferGearRowThumbnail(salomon)).searchParams.get("width"), "168");
+
+  const k2 =
+    "https://cdn.media.amplience.net/i/k2/k2_2627_maysis_black_KB261665_1?w=1200&qlt=90&fmt=auto";
+  const k2Thumbnail = new URL(preferGearRowThumbnail(k2));
+  assert.equal(k2Thumbnail.searchParams.get("w"), "168");
+  assert.equal(k2Thumbnail.searchParams.get("qlt"), "90");
+  assert.equal(k2Thumbnail.searchParams.get("fmt"), "auto");
+
+  const proxiedK2 = `/api/image-proxy?url=${encodeURIComponent(k2)}&section=gear-row`;
+  const proxiedK2Thumbnail = new URL(preferGearRowThumbnail(proxiedK2), "https://youpu.local");
+  const optimizedK2 = new URL(proxiedK2Thumbnail.searchParams.get("url")!);
+  assert.equal(optimizedK2.searchParams.get("w"), "168");
+  assert.equal(optimizedK2.searchParams.get("qlt"), "90");
+  assert.equal(proxiedK2Thumbnail.searchParams.get("section"), "gear-row");
+
+  const otherAmplience = "https://cdn.media.amplience.net/i/other/board.jpg?w=1200";
+  assert.equal(preferGearRowThumbnail(otherAmplience), preferProductThumbnail(otherAmplience));
 
   const smartMarine = "https://www.smartmarine.co.nz/cdn/images/products/xlarge/8089900_a.jpg";
   assert.equal(

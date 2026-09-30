@@ -617,9 +617,26 @@ function isSalomonDamProductImage(source: string): boolean {
   }
 }
 
-/** 56px GearRow 仅对已验证的可变宽来源使用小档位，其他源保留默认缩略规则。 */
+function isK2AmplienceProductImage(source: string): boolean {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      return proxiedSource ? isK2AmplienceProductImage(proxiedSource) : false;
+    }
+    return (
+      image.hostname === "cdn.media.amplience.net" &&
+      (image.pathname.startsWith("/i/k2/") || image.pathname.startsWith("/s/k2/")) &&
+      isAllowedRemoteImageUrl(image.toString())
+    );
+  } catch {
+    return false;
+  }
+}
+
+/** 56px GearRow 仅对已验证的 Shopify、Salomon 与 K2 Amplience 来源使用小档位。 */
 export function preferGearRowThumbnail(source: string, maxWidth = 168): string {
-  return isShopifyProductImage(source) || isSalomonDamProductImage(source)
+  return isShopifyProductImage(source) || isSalomonDamProductImage(source) || isK2AmplienceProductImage(source)
     ? preferProductThumbnail(source, maxWidth)
     : preferProductThumbnail(source);
 }
