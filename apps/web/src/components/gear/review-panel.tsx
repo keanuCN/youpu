@@ -22,7 +22,7 @@ import {
   type CloudRatingsResponse,
 } from "@/lib/api";
 import { helpfulOf, iHelpful, repliesOf, topLevelReviews } from "@/lib/domain";
-import { preferReviewImageThumbnail } from "@/lib/image-url";
+import { preferReviewImageThumbnail, responsiveReviewImageSrcSet } from "@/lib/image-url";
 import { timeAgo } from "@/lib/format";
 import { addReview, deleteReview, pushNotification, toggleHelpful, useCurrentUser, usePersisted, type Persisted } from "@/lib/store";
 import { track } from "@/lib/track";
@@ -328,6 +328,8 @@ function ReviewItem({ review, gear, copy, persisted, isCloudReview }: { review: 
                   <SafeImage
                     src={preferReviewImageThumbnail(u)}
                     fallbackSrc={u}
+                    srcSet={responsiveReviewImageSrcSet(u)}
+                    sizes="80px"
                     alt=""
                     loading="lazy"
                     fallbackLabel="评论图片"

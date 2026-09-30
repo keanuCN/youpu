@@ -8,6 +8,7 @@ import {
   preferCompactProductThumbnail,
   preferProductThumbnail,
   preferReviewImageThumbnail,
+  responsiveReviewImageSrcSet,
   responsiveProductImageSrcSet,
   responsiveProductImageSrcSetType,
   resolveImageUrl,
@@ -55,10 +56,13 @@ test("limits Shopify compare-dock images to 96px while preserving proxy source p
   assert.equal(preferProductThumbnail(nonShopify, 96), nonShopify);
 });
 
-test("uses 240px TOS WebP variants only for review image thumbnails", () => {
+test("uses responsive 160/240px TOS WebP candidates only for review image thumbnails", () => {
   const original = "https://youpu.tos-cn-beijing.volces.com/review-images/rating-photo.webp";
   const thumbnail = new URL(preferReviewImageThumbnail(original));
   assert.equal(thumbnail.searchParams.get("x-tos-process"), "image/resize,w_240/format,webp");
+  const candidates = responsiveReviewImageSrcSet(original)!.split(", ");
+  assert.equal(new URL(candidates[0]!.replace(/ 160w$/, "")).searchParams.get("x-tos-process"), "image/resize,w_160/format,webp");
+  assert.equal(new URL(candidates[1]!.replace(/ 240w$/, "")).searchParams.get("x-tos-process"), "image/resize,w_240/format,webp");
 
   const proxied = `/api/image-proxy?url=${encodeURIComponent(original)}&source=review`;
   const proxiedThumbnail = new URL(preferReviewImageThumbnail(proxied), "https://youpu.local");
@@ -67,7 +71,12 @@ test("uses 240px TOS WebP variants only for review image thumbnails", () => {
     new URL(proxiedThumbnail.searchParams.get("url")!).searchParams.get("x-tos-process"),
     "image/resize,w_240/format,webp",
   );
+  const proxiedSrcSet = responsiveReviewImageSrcSet(proxied)!.split(", ");
+  const proxiedCompact = new URL(proxiedSrcSet[0]!.replace(/ 160w$/, ""), "https://youpu.local");
+  const proxiedSource = new URL(proxiedCompact.searchParams.get("url")!);
+  assert.equal(proxiedSource.searchParams.get("x-tos-process"), "image/resize,w_160/format,webp");
   assert.equal(preferReviewImageThumbnail("https://other.example/review-images/rating.webp"), "https://other.example/review-images/rating.webp");
+  assert.equal(responsiveReviewImageSrcSet("https://other.example/review-images/rating.webp"), undefined);
 });
 
 test("limits compact-list Shopify thumbnails to 96px but preserves other source rules", () => {

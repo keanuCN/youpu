@@ -549,24 +549,41 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
   }
 }
 
-/** 评论区小图仅对自有 TOS 图片请求缩放 WebP，原图 URL 仍用于查看大图。 */
-export function preferReviewImageThumbnail(source: string): string {
+function reviewImageVariant(source: string, width: number): string | undefined {
   try {
     const image = new URL(source, "https://youpu.local");
     if (image.pathname === IMAGE_PROXY_PATH) {
       const proxiedSource = image.searchParams.get("url");
-      if (!proxiedSource) return source;
-      image.searchParams.set("url", preferReviewImageThumbnail(proxiedSource));
+      if (!proxiedSource) return undefined;
+      const proxiedVariant = reviewImageVariant(proxiedSource, width);
+      if (!proxiedVariant) return undefined;
+      image.searchParams.set("url", proxiedVariant);
       return `${image.pathname}${image.search}`;
     }
-    if (image.hostname !== REVIEW_IMAGE_HOST || !image.pathname.startsWith(REVIEW_IMAGE_PATH_PREFIX)) {
-      return source;
+    if (
+      image.protocol !== "https:" ||
+      image.hostname !== REVIEW_IMAGE_HOST ||
+      !image.pathname.startsWith(REVIEW_IMAGE_PATH_PREFIX)
+    ) {
+      return undefined;
     }
-    image.searchParams.set("x-tos-process", "image/resize,w_240/format,webp");
+    image.searchParams.set("x-tos-process", `image/resize,w_${width}/format,webp`);
     return image.toString();
   } catch {
-    return source;
+    return undefined;
   }
+}
+
+/** 评论区小图仅对自有 TOS 图片请求缩放 WebP，原图 URL 仍用于查看大图。 */
+export function preferReviewImageThumbnail(source: string): string {
+  return reviewImageVariant(source, 240) ?? source;
+}
+
+/** 80px 评论图片按目标像素密度选择 160px 或 240px TOS WebP 变体。 */
+export function responsiveReviewImageSrcSet(source: string): string | undefined {
+  const compact = reviewImageVariant(source, 160);
+  const large = reviewImageVariant(source, 240);
+  return compact && large ? `${compact} 160w, ${large} 240w` : undefined;
 }
 
 /** 小型列表图片只收窄 Shopify 请求，其余来源沿用现有变体规则。 */
