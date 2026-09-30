@@ -182,6 +182,12 @@ const VERIFIED_ATOMIC_BENT_CHETLER_IMAGE_PATH =
   "/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg";
 const VERIFIED_INSTA360_ACE_PRO_2_IMAGE_PATH =
   "/common/4d7317543e0f4fee9b0b037a4d24d961/pc-acepro2-CN.png";
+const VERIFIED_INSTA360_GEAR_ROW_IMAGES = new Set([
+  `wassets.insta360.com${VERIFIED_INSTA360_ACE_PRO_2_IMAGE_PATH}`,
+  "res.insta360.com/static/a7e1e6632afa8dc15821776d712a352f/acepro&ace.png",
+  "res.insta360.com/static/d78e79ba23e097dc53578184664348ca/GO3.png",
+  "res.insta360.com/static/a3b716298df7f6da544fcdaf70ffe21f/GO3S.png",
+]);
 const VERIFIED_KORUA_CAFE_RACER_IMAGE_PATH =
   "/6939308982453/1758747603396/KORUA-Shapes-Cafe-Racer-Nicholas-Wolken-Thumbnail-01.jpg";
 const DJI_SMALL_IMAGE_VARIANTS = new Map([
@@ -299,6 +305,15 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       optimizer.searchParams.set("w", "375");
       optimizer.searchParams.set("q", "80");
       return optimizer.toString();
+    }
+    if (
+      image.search === "" &&
+      VERIFIED_INSTA360_GEAR_ROW_IMAGES.has(`${image.hostname}${image.pathname}`) &&
+      widthLimit <= 188 &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      image.searchParams.set("x-oss-process", "image/resize,w_188/format,webp/quality,q_90");
+      return image.toString();
     }
     if (
       image.hostname === "original.accentuate.io" &&
@@ -710,6 +725,22 @@ function isVerifiedSpecializedGearRowImage(source: string): boolean {
   }
 }
 
+function isVerifiedInsta360GearRowImage(source: string): boolean {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      return proxiedSource ? isVerifiedInsta360GearRowImage(proxiedSource) : false;
+    }
+    return (
+      VERIFIED_INSTA360_GEAR_ROW_IMAGES.has(`${image.hostname}${image.pathname}`) &&
+      isAllowedRemoteImageUrl(image.toString())
+    );
+  } catch {
+    return false;
+  }
+}
+
 function isVerifiedCanyonEnduraceGearRowImage(source: string): boolean {
   try {
     const image = new URL(source, "https://youpu.local");
@@ -753,7 +784,8 @@ export function preferGearRowThumbnail(source: string, maxWidth = 168): string {
     isVerifiedDecathlonGearRowImage(source) ||
     isVerifiedCanyonNeuronImage(source) ||
     isVerifiedBlueTomatoRidersChoiceImage(source) ||
-    isVerifiedSpecializedGearRowImage(source)
+    isVerifiedSpecializedGearRowImage(source) ||
+    isVerifiedInsta360GearRowImage(source)
   ) {
     return preferProductThumbnail(source, maxWidth);
   }

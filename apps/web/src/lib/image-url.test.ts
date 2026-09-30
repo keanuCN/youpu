@@ -254,6 +254,34 @@ test("uses compact GearRow thumbnails only for verified image sources", () => {
   assert.equal(new URL(preferGearRowThumbnail(korua)).searchParams.get("transform"), "resize=640");
 });
 
+test("uses measured 188px Insta360 WebP variants only for four verified GearRow images", () => {
+  const images = [
+    "https://res.insta360.com/static/a7e1e6632afa8dc15821776d712a352f/acepro&ace.png",
+    "https://wassets.insta360.com/common/4d7317543e0f4fee9b0b037a4d24d961/pc-acepro2-CN.png",
+    "https://res.insta360.com/static/d78e79ba23e097dc53578184664348ca/GO3.png",
+    "https://res.insta360.com/static/a3b716298df7f6da544fcdaf70ffe21f/GO3S.png",
+  ];
+
+  for (const source of images) {
+    const thumbnail = new URL(preferGearRowThumbnail(source));
+    assert.equal(
+      thumbnail.searchParams.get("x-oss-process"),
+      "image/resize,w_188/format,webp/quality,q_90",
+    );
+    assert.equal(preferProductThumbnail(source, 480), source);
+  }
+
+  const proxied = `/api/image-proxy?url=${encodeURIComponent(images[0]!)}`;
+  const proxyThumbnail = new URL(preferGearRowThumbnail(proxied), "https://youpu.local");
+  assert.equal(
+    new URL(proxyThumbnail.searchParams.get("url")!).searchParams.get("x-oss-process"),
+    "image/resize,w_188/format,webp/quality,q_90",
+  );
+
+  const unverified = images[0]!.replace("acepro&ace.png", "unverified.png");
+  assert.equal(preferGearRowThumbnail(unverified), unverified);
+});
+
 test("uses 128px only for Shopify images in the 56px mixed-compare summary", () => {
   const shopify = "https://salomon.jp/cdn/shop/files/board.png?v=2&width=640";
   assert.equal(new URL(preferMixedCompareSummaryThumbnail(shopify)).searchParams.get("width"), "128");
