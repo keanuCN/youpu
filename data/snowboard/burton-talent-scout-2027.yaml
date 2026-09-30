@@ -32,6 +32,13 @@ images:
     alt: Burton Talent Scout Camber 2027 单板正面图
     source: Burton 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
+editorial_scores:
+  stability: 7
+  response: 8
+  float: 5
+  park: 9
+  forgiveness: 7.5
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/womens-burton-talent-scout-camber-snowboard-132181

@@ -21,6 +21,13 @@ images:
     alt: Gray DESPERADO 2023–2024 单板正面图
     source: Gray Snowboards 官方 2023–2024 产品素材（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
+editorial_scores:
+  stability: 5
+  response: 5
+  float: 4
+  park: 3
+  forgiveness: 8
+  value: 5
 data_source:
   kind: manual
   origin_url: https://graysnowboards.co.jp/product2324/

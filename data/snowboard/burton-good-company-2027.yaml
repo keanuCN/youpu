@@ -34,6 +34,13 @@ images:
     alt: Burton Good Company Camber 2027 官方商品图
     source: Burton 官方商品图（图片授权待核）
     sort_order: 0
+editorial_scores:
+  stability: 6
+  response: 7
+  float: 5
+  park: 9
+  forgiveness: 8
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951

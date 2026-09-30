@@ -30,6 +30,13 @@ images:
     alt: Never Summer Proto T3 FR 2027 官方产品图
     source: Never Summer 官方商品图（图片授权待核）
     sort_order: 0
+editorial_scores:
+  stability: 9
+  response: 9
+  float: 8
+  park: 5
+  forgiveness: 5
+  value: 5
 data_source:
   kind: official
   origin_url: https://neversummer.com/products/mens-proto-t3-fr-snowboard

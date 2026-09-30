@@ -29,6 +29,13 @@ images:
     alt: Decathlon SNB 100 单板主图
     source: Decathlon Chile 官方 SNB 100 商品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
+editorial_scores:
+  stability: 5
+  response: 4.5
+  float: 6
+  park: 5
+  forgiveness: 9
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.decathlon.ca/en/p/all-mountain-and-freestyle-snowboard-snb-100/309522/c193m8660203

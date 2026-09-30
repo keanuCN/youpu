@@ -31,6 +31,13 @@ images:
     alt: Salomon Abstract 官方商品图
     source: Salomon 官方商品图（图片授权待核）
     sort_order: 0
+editorial_scores:
+  stability: 7.5
+  response: 8
+  float: 5
+  park: 9
+  forgiveness: 7.5
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-ca/product/abstract-li1303

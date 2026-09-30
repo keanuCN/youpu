@@ -26,6 +26,13 @@ images:
     alt: BC Stream RX 2027 单板正面图
     source: Follows 商品页（零售商图片，授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
+editorial_scores:
+  stability: 9.5
+  response: 10
+  float: 5
+  park: 4
+  forgiveness: 4
+  value: 5
 data_source:
   kind: manual
   origin_url: https://www.bc-stream.com/catalog/

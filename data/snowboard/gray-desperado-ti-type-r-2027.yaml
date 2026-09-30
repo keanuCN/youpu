@@ -30,6 +30,13 @@ images:
     alt: Gray DESPERADO Ti Type-R 2027 单板正面图
     source: Gray Snowboards 官方 2026–2027 产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
+editorial_scores:
+  stability: 10
+  response: 10
+  float: 5
+  park: 3
+  forgiveness: 3
+  value: 5
 data_source:
   kind: manual
   origin_url: https://graysnowboards.co.jp/product-2627-eng/

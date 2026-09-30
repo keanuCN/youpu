@@ -30,6 +30,13 @@ images:
     alt: OGASAKA SHIN 160 2026 单板图片
     source: OGASAKA 官方 SHIN 商品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
+editorial_scores:
+  stability: 8.5
+  response: 8
+  float: 8.5
+  park: 4
+  forgiveness: 5.5
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.ogasaka-snowboard.com/product_25_12_shin-160.html

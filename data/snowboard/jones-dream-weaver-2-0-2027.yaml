@@ -29,6 +29,13 @@ images:
     alt: Jones Dream Weaver 2.0 2027 单板正面图
     source: Jones 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
+editorial_scores:
+  stability: 8
+  response: 7.5
+  float: 9
+  park: 6
+  forgiveness: 7
+  value: 5
 data_source:
   kind: official
   origin_url: https://eu.jonessnowboards.com/products/womens-dream-weaver-20-snowboard

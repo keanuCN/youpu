@@ -31,6 +31,13 @@ images:
     alt: BC Stream R-2 2026 单板正面图
     source: Follows 商品页（零售商图片，授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
+editorial_scores:
+  stability: 9
+  response: 9
+  float: 7
+  park: 5
+  forgiveness: 5
+  value: 5
 data_source:
   kind: manual
   origin_url: https://www.follows.co.jp/SHOP/1213bc-r2.html

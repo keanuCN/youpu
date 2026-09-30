@@ -35,6 +35,13 @@ images:
     alt: OGASAKA FC 2026 单板图片
     source: OGASAKA 官方 FC 商品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
+editorial_scores:
+  stability: 9.5
+  response: 9
+  float: 5
+  park: 3
+  forgiveness: 4
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.ogasaka-snowboard.com/product_25_08_fc.html

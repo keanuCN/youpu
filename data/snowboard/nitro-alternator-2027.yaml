@@ -31,6 +31,13 @@ images:
     alt: Nitro Alternator 2027 单板正面图
     source: Nitro 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
+editorial_scores:
+  stability: 8.5
+  response: 8.5
+  float: 7.5
+  park: 7
+  forgiveness: 5.5
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/snowboards-mountain-26-27/products/alternator-snowboard-1

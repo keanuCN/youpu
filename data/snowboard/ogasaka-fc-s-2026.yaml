@@ -34,6 +34,13 @@ images:
     alt: OGASAKA FC-S 2026 官方产品规格图
     source: OGASAKA 官方商品页素材（图片授权待核）
     sort_order: 0
+editorial_scores:
+  stability: 10
+  response: 10
+  float: 4
+  park: 2
+  forgiveness: 2.5
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.ogasaka-snowboard.com/product_25_09_fc-s.html
