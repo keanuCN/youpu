@@ -220,6 +220,7 @@ function Cover({
   const [heroImage, setHeroImage] = useState<(typeof HERO_IMAGE_POOL)[number] | null>(null);
   const [heroLoaded, setHeroLoaded] = useState(false);
   const [heroFailed, setHeroFailed] = useState(false);
+  const [heroFallback, setHeroFallback] = useState(false);
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * HERO_IMAGE_POOL.length);
@@ -232,18 +233,33 @@ function Cover({
       <div className="grid lg:grid-cols-[1.15fr_1fr]">
         <div className="relative order-2 min-h-[320px] overflow-hidden bg-muted lg:order-1 lg:min-h-[560px]">
           {heroImage && (
-            <img
-              src={heroImage.src}
-              srcSet={heroImage.srcSet}
-              sizes="(min-width: 1440px) 714px, (min-width: 1024px) calc((100vw - 64px) * 0.535), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
-              alt={heroImage.alt}
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-              onLoad={() => setHeroLoaded(true)}
-              onError={() => setHeroFailed(true)}
-              className={`plate absolute inset-0 h-full w-full object-cover transition-[opacity,filter,transform] duration-700 ${heroLoaded ? "opacity-100" : "opacity-0"}`}
-            />
+            <picture className="contents">
+              {heroImage.webpSrcSet && !heroFallback ? (
+                <source
+                  type="image/webp"
+                  srcSet={heroImage.webpSrcSet}
+                  sizes="(min-width: 1440px) 714px, (min-width: 1024px) calc((100vw - 64px) * 0.535), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
+                />
+              ) : null}
+              <img
+                src={heroImage.src}
+                srcSet={heroFallback ? undefined : heroImage.srcSet}
+                sizes="(min-width: 1440px) 714px, (min-width: 1024px) calc((100vw - 64px) * 0.535), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
+                alt={heroImage.alt}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                onLoad={() => setHeroLoaded(true)}
+                onError={() => {
+                  if (heroImage.webpSrcSet && !heroFallback) {
+                    setHeroFallback(true);
+                    return;
+                  }
+                  setHeroFailed(true);
+                }}
+                className={`plate absolute inset-0 h-full w-full object-cover transition-[opacity,filter,transform] duration-700 ${heroLoaded ? "opacity-100" : "opacity-0"}`}
+              />
+            </picture>
           )}
           {!heroLoaded && !heroFailed && (
             <div className="absolute inset-0 flex items-center justify-center bg-muted" role="status" aria-live="polite">
