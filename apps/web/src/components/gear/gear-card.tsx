@@ -302,11 +302,13 @@ export function GearRow({
   rank,
   note,
   from = "ranking",
+  thumbnailMaxWidth = 800,
 }: {
   gear: GearItem;
   rank?: number;
   note?: string;
   from?: FromSource;
+  thumbnailMaxWidth?: number;
 }) {
   return (
     <Link
@@ -327,7 +329,7 @@ export function GearRow({
       <div className="h-14 w-14 shrink-0 overflow-hidden bg-secondary">
         {hasMedia(gear) && mediaUrl(gear) ? (
             <SafeImage
-            src={preferProductThumbnail(mediaUrl(gear)!)}
+            src={preferProductThumbnail(mediaUrl(gear)!, thumbnailMaxWidth)}
             alt={`${gear.brand} ${gear.model}`}
             loading="lazy"
             fallbackLabel={`${gear.brand} ${gear.model}`}

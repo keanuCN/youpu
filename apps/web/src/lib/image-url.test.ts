@@ -217,6 +217,10 @@ test("limits approved Salomon DAM thumbnails and preserves their query parameter
     ).searchParams.get("width"),
     "480",
   );
+  assert.equal(
+    new URL(preferProductThumbnail(paddedImage, 168)).searchParams.get("width"),
+    "168",
+  );
 
   const unrelatedSalomon = "https://cdn.dam.salomon.com/unlisted/product.png?width=2000";
   assert.equal(preferProductThumbnail(unrelatedSalomon), unrelatedSalomon);

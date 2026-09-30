@@ -259,6 +259,7 @@ export default function RankingsPage() {
                 <GearRow
                   gear={r.gear}
                   rank={r.rank}
+                  thumbnailMaxWidth={168}
                   note={`数据 ${hasEditorialScores(r.gear) ? r.dataScore.toFixed(1) : "待补"} · 社区 ${fmtCompact(r.votes)} 票 · 最终 ${r.final.toFixed(1)}`}
                 />
               </div>
