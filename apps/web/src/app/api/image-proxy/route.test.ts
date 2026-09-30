@@ -140,6 +140,34 @@ test("does not request AVIF when Accept is missing or explicitly rejects it", as
   }
 });
 
+test("returns 406 without an upstream request when Accept has no supported raster format", async () => {
+  const originalFetch = globalThis.fetch;
+  let fetchCalls = 0;
+  globalThis.fetch = async () => {
+    fetchCalls += 1;
+    return new Response(new Uint8Array([1, 2, 3]), {
+      status: 200,
+      headers: { "Content-Type": "image/jpeg" },
+    });
+  };
+
+  try {
+    const source =
+      "https://cdn.amersports.com/0acef4a9-61b7-47b0-84f4-b49f00cdfc5f/product.png?fit=bounds&width=800&height=800";
+    for (const accept of ["image/svg+xml", "application/json", "image/png;q=0"]) {
+      const response = await GET(
+        new NextRequest(`http://localhost:3000/api/image-proxy?url=${encodeURIComponent(source)}`, {
+          headers: { Accept: accept },
+        }),
+      );
+      assert.equal(response.status, 406, `Accept ${accept} should not be silently replaced`);
+    }
+    assert.equal(fetchCalls, 0, "unacceptable requests should not reach the upstream image host");
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
 test("rejects an upstream image format outside the negotiated set", async () => {
   const originalFetch = globalThis.fetch;
   globalThis.fetch = async () =>

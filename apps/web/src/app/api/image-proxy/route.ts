@@ -49,7 +49,7 @@ function imageFormatsFor(accept: string | null): { header: string; types: Set<st
   }
 
   if (requestedTypes.length === 0) {
-    return { header: DEFAULT_IMAGE_ACCEPT, types: new Set(FALLBACK_IMAGE_TYPES) };
+    return { header: "", types: new Set<string>() };
   }
   return {
     header: requestedTypes.map((item) => item.value).join(","),
@@ -97,6 +97,9 @@ export async function GET(request: NextRequest) {
 
   try {
     const requestedFormats = imageFormatsFor(request.headers.get("accept"));
+    if (requestedFormats.types.size === 0) {
+      return new Response("No acceptable image format", { status: 406 });
+    }
     // 远程图片可能超过 Next 数据缓存的 2MB 限制；让浏览器按下方响应头缓存，
     // 服务端请求不写入 Next fetch cache。
     const upstream = await fetch(target, {
