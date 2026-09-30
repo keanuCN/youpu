@@ -1,5 +1,7 @@
+import { Suspense } from "react";
 import { simpleMetadata } from "@/lib/seo";
 import MeClient from "./me-client";
+import MePageClient from "./me-page-client";
 
 // 个人中心不进索引（技术方案 §14.2 noindex 白名单）
 export const metadata = simpleMetadata({
@@ -9,7 +11,10 @@ export const metadata = simpleMetadata({
   index: false,
 });
 
-export default function Page({ searchParams }: { searchParams?: { tab?: string | string[] } }) {
-  const initialTab = searchParams?.tab === "profile" ? "profile" : undefined;
-  return <MeClient initialTab={initialTab} />;
+export default function Page() {
+  return (
+    <Suspense fallback={<MeClient />}>
+      <MePageClient />
+    </Suspense>
+  );
 }
