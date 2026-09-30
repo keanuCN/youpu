@@ -18,3 +18,33 @@ test("keeps the original ridge hero as fallback and serves bounded local WebP ca
     assert.equal(image.toString("ascii", 8, 12), "WEBP");
   }
 });
+
+test("keeps Commons hero photo sources and credits while serving local responsive WebP variants", () => {
+  const photos = [
+    { location: "新疆阿勒泰 / 将军山", stem: "jiangjunshan", sourcePart: "Jiangjunshan_Ski_Resort.jpg" },
+    { location: "新疆阿勒泰地区", stem: "altay-picture3", sourcePart: "picture3.jpg" },
+    { location: "新疆阿勒泰 / 禾木", stem: "hemu-picture10", sourcePart: "picture10.jpg" },
+    { location: "新疆阿勒泰地区", stem: "altay-picture1", sourcePart: "picture1.jpg" },
+  ] as const;
+
+  for (const photo of photos) {
+    const image = HERO_IMAGE_POOL.find(
+      (item) => item.locationLabel === photo.location && item.sourcePage?.includes(photo.sourcePart),
+    );
+    assert.ok(image);
+    assert.match(image.src, /^https:\/\/upload\.wikimedia\.org\//);
+    assert.ok("licenseUrl" in image && image.licenseUrl);
+    assert.equal(
+      image.webpSrcSet,
+      `/hero/${photo.stem}-768.webp 768w, /hero/${photo.stem}-1280.webp 1280w`,
+    );
+
+    for (const [width, maxBytes] of [[768, 130_000], [1280, 400_000]] as const) {
+      const imagePath = new URL(`../../public/hero/${photo.stem}-${width}.webp`, import.meta.url);
+      const bytes = readFileSync(imagePath);
+      assert.ok(statSync(imagePath).size < maxBytes, `${photo.stem}-${width}.webp should stay bounded`);
+      assert.equal(bytes.toString("ascii", 0, 4), "RIFF");
+      assert.equal(bytes.toString("ascii", 8, 12), "WEBP");
+    }
+  }
+});
