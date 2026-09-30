@@ -437,10 +437,10 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       if (
         image.pathname === VERIFIED_DECATHLON_SNB_100_THUMBNAIL_PATH &&
         image.search === "" &&
-        widthLimit >= 800 &&
+        widthLimit >= 480 &&
         widthLimit < 1600
       ) {
-        image.searchParams.set("f", "800x0");
+        image.searchParams.set("f", `${Math.min(widthLimit, 800)}x0`);
         return image.toString();
       }
       const requestedFormat = image.searchParams.get("f");

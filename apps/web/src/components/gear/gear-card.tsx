@@ -32,6 +32,7 @@ const TWO_COLUMN_FOUR_COLUMN_CARD_SIZES =
   "(min-width: 1400px) 290px, (min-width: 1024px) calc(25vw - 60px), (min-width: 640px) calc(50vw - 72px), calc(50vw - 60px)";
 const CATALOG_GRID_CARD_SIZES =
   "(min-width: 1400px) 225px, (min-width: 1280px) calc(25vw - 125px), (min-width: 1024px) calc(33.333vw - 151px), (min-width: 768px) calc(33.333vw - 64px), (min-width: 640px) calc(50vw - 72px), calc(50vw - 60px)";
+const CARD_THUMBNAIL_MAX_WIDTH = 480;
 
 const CARD_IMAGE_SIZES: Record<FromSource, string> = {
   home: TWO_COLUMN_FOUR_COLUMN_CARD_SIZES,
@@ -111,7 +112,8 @@ export function GearCard({
   const editorialReady = hasEditorialScores(gear);
   const mediaReady = hasMedia(gear);
   const mediaSource = mediaUrl(gear);
-  const mediaSrc = mediaSource ? preferProductThumbnail(mediaSource) : undefined;
+  const cardThumbnailWidth = from === "list" || from === "search" ? CARD_THUMBNAIL_MAX_WIDTH : 800;
+  const mediaSrc = mediaSource ? preferProductThumbnail(mediaSource, cardThumbnailWidth) : undefined;
   const mediaSrcSet = mediaSource ? responsiveProductImageSrcSet(mediaSource) : undefined;
   const mediaSrcSetType = mediaSource ? responsiveProductImageSrcSetType(mediaSource) : undefined;
   const ratingReady = hasUserRating(gear);

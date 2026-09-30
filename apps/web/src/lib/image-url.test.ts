@@ -612,7 +612,7 @@ test("uses the measured 800px Decathlon SNB 100 image variant only for that exac
   assert.equal(thumbnail.searchParams.get("f"), "800x0");
 
   assert.equal(preferHighResolutionProductImage(image), image);
-  assert.equal(preferProductThumbnail(image, 480), image);
+  assert.equal(new URL(preferProductThumbnail(image, 480)).searchParams.get("f"), "480x0");
 
   const unrelated = image.replace("p2027365", "p2027366");
   assert.equal(preferProductThumbnail(unrelated), unrelated);
