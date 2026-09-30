@@ -5,6 +5,10 @@ model: "CV"
 year: 2027
 title: "FLUX CV 2027"
 one_liner: "26-27 刻滑与全山地取向型号，官方介绍其加高脚床及可调节结构。"
+price:
+  min: 55000
+  max: 55000
+  currency: JPY
 specs:
   entrySystem: strap
   bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
@@ -14,6 +18,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2627-cv
+  snapshot_url: https://flux-bindings.com/en/collections/bindings2627/
 images:
   - url: "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/2627-cv-purple.png?v=1787656749&width=1160"
     kind: face

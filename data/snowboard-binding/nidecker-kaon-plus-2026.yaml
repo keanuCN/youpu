@@ -5,6 +5,10 @@ model: "Kaon Plus"
 year: 2026
 title: "Nidecker Kaon Plus 2026"
 one_liner: "中硬度双绑带全能款，配备 Multi-Disk 与无工具绑带调节。"
+price:
+  min: 279.95
+  max: 279.95
+  currency: USD
 specs:
   entrySystem: strap
   bootCompatibility: "Multi-Disk 兼容常见 4 孔与 Channel；普通绑带雪鞋"
@@ -19,6 +23,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://eu.nidecker.com/de-int/products/kaon-plus
+  snapshot_url: https://www.nidecker.com/collections/men-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/N.26.BNU.KAP.BK-Kaon_Plus_Bio_Black-1.webp?v=1786632652&width=1200"
     kind: face

@@ -5,6 +5,10 @@ model: QST 92
 year: 2024
 title: Salomon QST 92 2023/24
 one_liner: QST freeride 系列中偏窄板腰的全山地型号，适合雪道与混合雪况。
+price:
+  min: 699.99
+  max: 699.99
+  currency: USD
 specs:
   lengthOptions: 152 / 160 / 168 / 176 / 184 cm
   waistWidth: 92
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-gb/product/qst-92-li4911
+  snapshot_url: https://www.sportchek.ca/en/pdp/salomon-qst-92-men-s-skis-2024-78581872f.html
 images:
   - url: https://cdn.dam.salomon.com/bc1e0c3d-981e-48e7-bd6a-b2f40157afe3/L47232400%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=medium&width=3840
     kind: face

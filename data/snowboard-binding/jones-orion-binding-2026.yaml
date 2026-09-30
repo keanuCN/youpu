@@ -5,6 +5,10 @@ model: "Orion"
 year: 2026
 title: "Jones Orion 2026"
 one_liner: "Jones 2026 全山地固定器，官方页面列出多场景取向与常规双绑带结构。"
+price:
+  min: 329.95
+  max: 329.95
+  currency: USD
 specs:
   entrySystem: strap
   bootCompatibility: "Jones 通用圆盘；普通绑带雪鞋"
@@ -18,6 +22,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026
+  snapshot_url: https://www.jonessnowboards.com/collections/mens-traditional-two-strap-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.26.BNM.ORI.BU-gallery-1.webp?v=1768452354&width=1200"
     kind: face

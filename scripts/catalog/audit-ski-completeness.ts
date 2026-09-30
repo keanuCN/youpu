@@ -5,6 +5,7 @@ import YAML from 'yaml';
 const root = path.resolve(import.meta.dirname, '../..');
 const categoryFile = YAML.parse(fs.readFileSync(path.join(root, 'data/categories.yaml'), 'utf8')) as Array<Record<string, any>>;
 const categories = ['snowboard', 'snowboard-binding', 'snowboard-boot', 'skis', 'skiing-apparel'];
+const missingPricesOnly = process.argv.includes('--missing-prices');
 
 for (const slug of categories) {
   const category = categoryFile.find((item) => item.slug === slug);
@@ -28,4 +29,9 @@ for (const slug of categories) {
   console.log(`\n[${slug}] ${published.length}/${records.length} published; without price ${missingPrice}; without complete editorial scores ${missingScores}; missing image ${missingImages.length}`);
   console.log(coverage.join('  '));
   if (missingImages.length) console.log(`missingImageFiles=${missingImages.join(',')}`);
+  if (missingPricesOnly) {
+    for (const { file, data } of published.filter(({ data }) => !Number.isFinite(data.price?.min) || !Number.isFinite(data.price?.max))) {
+      console.log(JSON.stringify({ category: slug, file, slug: data.slug, brand: data.brand, model: data.model, year: data.year, origin_url: data.data_source?.origin_url }));
+    }
+  }
 }

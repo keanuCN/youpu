@@ -5,6 +5,10 @@ model: "Rambler"
 year: 2027
 title: "Nitro Rambler 2027"
 one_liner: "Nitro 2026–27 全地形绑带固定器，官方标注 Universal Mini Disc 兼容 2x4 与 Channel。"
+price:
+  min: 239.9
+  max: 239.9
+  currency: EUR
 specs:
   entrySystem: strap
   brandComfortScore: 7
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/bindings-26-27/products/rambler-bindings-1
+  snapshot_url: https://www.nitrosnowboards.com/collections/bindings-26-27
 images:
   - url: "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11007-103_Rambler-Bindings_Lite-Acid_Product-1.jpg?v=1779339376&width=1920"
     kind: face

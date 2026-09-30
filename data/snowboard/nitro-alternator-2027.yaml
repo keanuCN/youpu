@@ -5,6 +5,10 @@ model: Alternator
 year: 2027
 title: Nitro Alternator 2027
 one_liner: 定向全山自由式板，传统正拱与中宽腰设计面向山地跳跃、刻滑和变化雪况。
+price:
+  min: 599.9
+  max: 599.9
+  currency: EUR
 specs:
   length: 157
   waistWidth: 254
@@ -41,5 +45,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/snowboards-mountain-26-27/products/alternator-snowboard-1
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  snapshot_url: https://www.nitrosnowboards.com/collections/snowboards-mountain-26-27/products/alternator-snowboard-1
 status: published

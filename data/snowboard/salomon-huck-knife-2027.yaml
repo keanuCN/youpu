@@ -5,6 +5,10 @@ model: Huck Knife
 year: 2027
 title: Salomon Huck Knife 2027
 one_liner: 以跳台、道具和公园自由式为主的真双向板，Quad Camber 取向强调弹性、响应和落地稳定。
+price:
+  min: 579.95
+  max: 579.95
+  currency: USD
 specs:
   length: 156
   waistWidth: 248
@@ -40,5 +44,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/huck-knife-li1304
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  snapshot_url: https://www.salomon.com/en-us/c/sports/snowboarding/snowboards
 status: published

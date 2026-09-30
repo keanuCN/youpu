@@ -5,6 +5,10 @@ model: Hero Master LT R22
 year: 2027
 title: Rossignol Hero Master LT R22 2026/27
 one_liner: Hero 系列竞技取向长弧雪道板，2026/27 官方产品目录在售。
+price:
+  min: 1429.95
+  max: 1429.95
+  currency: USD
 specs:
   lengthOptions: 169 / 173 / 179 / 183 cm
   waistWidth: 70
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/hero-master-lt-r22-alpine-skis-RAPHE01000173.html
+  snapshot_url: https://www.rossignol.com/us-en/sports/alpine-ski/skis
 images:
   - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw283c3bb5/images/large/RAPHE01000_72DPI_01_v01.jpg?sw=800
     kind: face

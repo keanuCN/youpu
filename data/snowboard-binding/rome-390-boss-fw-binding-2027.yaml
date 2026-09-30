@@ -5,6 +5,10 @@ model: "390 Boss FW"
 year: 2027
 title: "Rome 390 Boss FW 2027"
 one_liner: "Rome 2026–27 FullWrap 平台绑带款，官方强调落地支撑与稳定连接。"
+price:
+  min: 369.95
+  max: 369.95
+  currency: USD
 specs:
   entrySystem: strap
   flex: 7
@@ -13,6 +17,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://us.romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings
+  snapshot_url: https://romesnowboards.com/collections/snowboard-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-fw-c3-artifact-binding-1-1782373333346.jpg?v=1787636962&width=1920"
     kind: face

@@ -5,6 +5,10 @@ model: Enforcer 104
 year: 2027
 title: Nordica Enforcer 104 2026/27
 one_liner: Nordica 2026/27 Enforcer 全山地系列，官方新季目录在售。
+price:
+  min: 899.99
+  max: 899.99
+  currency: USD
 specs:
   lengthOptions: 167 / 173 / 179 / 185 / 191 cm
   waistWidth: 104
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-104-flat
+  snapshot_url: https://www.ski-depot.com/collections/nordica-skis
 images:
   - url: https://www.nordica.com/storage/Product/0A668100001_ENFORCER_104_FLAT.png
     kind: face

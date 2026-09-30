@@ -5,6 +5,10 @@ model: Shape e-V5
 year: 2026
 title: HEAD Shape e-V5 2025/26
 one_liner: HEAD Shape 雪道系列型号，采用 74 mm 板腰与前摇设计，定位于雪道巡航与 carving。
+price:
+  min: 725
+  max: 725
+  currency: USD
 specs:
   lengthOptions: 149 / 156 / 163 / 170 / 177 cm
   waistWidth: 74
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://head.ru/ski/shop/skis/discounts/CF854649-178B-30D5-CA92-E692F4F09C64/104214/
+  snapshot_url: https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/383a3ba9-007e-442e-a92d-fdc0140aa976/HEAD_RETAIL%20PRICING_FOR%20PRINT_12.20_01%202_combi.pdf?ver=1744650386194
 images:
   - url: https://www.outdoorsports.com/cdn/shop/files/Head-Shape_e.V5-Mens-2026_TIPS_1200x.png?v=1755546338
     kind: face

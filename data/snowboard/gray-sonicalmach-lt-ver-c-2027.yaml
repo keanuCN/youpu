@@ -5,6 +5,10 @@ model: SONICALMACH LT ver.C
 year: 2027
 title: GRAY SONICALMACH LT ver.C 2027
 one_liner: 26/27 碳条强化版本，在杨木与竹复合板芯下配置碳纤维，提升回弹；官方列出 54、55W、56EW 三种宽度版本。
+price:
+  min: 99000
+  max: 99000
+  currency: JPY
 specs:
   profile: Single Camber
   profileFamily: camber
@@ -34,4 +38,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://graysnowboards.co.jp/product-2627-eng/
+  snapshot_url: https://graysnowboards.co.jp/product/
 status: published

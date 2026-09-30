@@ -5,6 +5,10 @@ model: "SNB 500"
 year: 2026
 title: "Decathlon SNB 500 2026"
 one_liner: "国内京东可见 200+ 条评论的入门全山地款；官方列出 EVA 缓震和传统扣带。"
+price:
+  min: 170
+  max: 170
+  currency: CAD
 specs:
   entrySystem: strap
   bootCompatibility: "兼容常规及 3D 插孔；不兼容 Burton Channel；普通绑带雪鞋"
@@ -13,6 +17,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654
+  snapshot_url: https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654
 images:
   - url: "https://contents.mediadecathlon.com/p2573496/k%24353e5fd924967da12911035b5eeb0342/picture.jpg?format=webp&f=3000x0"
     kind: face

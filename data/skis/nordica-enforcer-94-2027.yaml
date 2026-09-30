@@ -5,6 +5,10 @@ model: Enforcer 94
 year: 2027
 title: Nordica Enforcer 94 2026/27
 one_liner: Enforcer 系列雪道与全山地兼顾型号，当前官方页面标注 2026/27 款。
+price:
+  min: 799.99
+  max: 799.99
+  currency: USD
 specs:
   lengthOptions: 167 / 173 / 179 / 185 cm
   waistWidth: 94
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-94-flat
+  snapshot_url: https://www.ski-depot.com/collections/nordica-skis
 images:
   - url: https://www.nordica.com/storage/Product/0A668300001_ENFORCER_94_FLAT.png
     kind: face

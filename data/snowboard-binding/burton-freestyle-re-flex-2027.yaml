@@ -5,6 +5,10 @@ model: "Freestyle Re:Flex"
 year: 2027
 title: "Burton Freestyle Re:Flex 2027"
 one_liner: "偏柔和脚感的传统绑带款，适合自由式与日常全山地使用。"
+price:
+  min: 189.95
+  max: 189.95
+  currency: USD
 specs:
   entrySystem: strap
   bootCompatibility: "Re:Flex 多板型安装；适配普通绑带雪鞋"
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/collections/strap-snowboard-bindings
+  snapshot_url: https://www.burton.com/en-us/collections/strap-snowboard-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/105441BE8FRG_1.webp?v=1784128020&width=1920"
     kind: face

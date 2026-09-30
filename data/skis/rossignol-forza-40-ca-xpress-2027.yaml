@@ -5,6 +5,10 @@ model: Forza 40° CA Xpress
 year: 2027
 title: Rossignol Forza 40° CA Xpress 2026/27
 one_liner: 面向中级滑手的雪道 carving 型号，强调易上手的操控与刻滑体验。
+price:
+  min: 544
+  max: 544
+  currency: EUR
 specs:
   lengthOptions: 150 / 157 / 164 / 171 / 179 cm
   waistWidth: 75
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/it-it/sci-pista-uomo-forza-40%C2%B0-ca-xpress-RAPPX05000157.html
+  snapshot_url: https://www.rossignol.com/nl-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000157.html
 images:
   - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa510bcb6/images/large/RAPPX05000_72DPI_01_v00.jpg?sh=140
     kind: face

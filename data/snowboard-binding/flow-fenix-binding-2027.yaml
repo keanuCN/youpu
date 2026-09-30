@@ -5,6 +5,10 @@ model: "Fenix"
 year: 2027
 title: "Flow Fenix 2027"
 one_liner: "Flow 后入式固定器，官网描述其定位兼顾公园动作与雪场巡航。"
+price:
+  min: 269.95
+  max: 269.95
+  currency: USD
 specs:
   entrySystem: rear-entry
   bindingSizeGuide: "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。"
@@ -14,6 +18,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nidecker.com/products/flow-fenix
+  snapshot_url: https://www.nidecker.com/collections/men-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.27.BNU.FEF.400-Flow_Fenix_Cyber_Blue-1.webp?v=1788232266&width=1200"
     kind: face

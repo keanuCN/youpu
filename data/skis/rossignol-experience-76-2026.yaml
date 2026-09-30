@@ -5,6 +5,10 @@ model: Experience 76 Xpress
 year: 2026
 title: Rossignol Experience 76 Xpress 2025/26
 one_liner: Rossignol 雪道与全山地入门型号，官网说明其侧重易操控 carving 和全雪场使用。
+price:
+  min: 549.95
+  max: 549.95
+  currency: CAD
 specs:
   lengthOptions: 136 / 144 / 152 / 160 / 168 / 176 cm
   waistWidth: 76
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/experience-76-xpress-RAMFT04000.html
+  snapshot_url: https://www.rossignol.com/ca-en/experience-76-xpress-RAMFT04000152.html
 images:
   - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw0f3e9f73/images/large/RAMFT04_FCMDX02_EXPERIENCE_76_XPRESS_XPRESS_10_GW_B83_BLACK_72DPI_01.jpg?sw=800
     kind: face

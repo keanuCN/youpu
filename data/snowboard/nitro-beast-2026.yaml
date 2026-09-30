@@ -5,6 +5,10 @@ model: Beast
 year: 2026
 title: Nitro Beast 2026
 one_liner: 26 款高响应公园自由式板，True Camber 与 Twin 板型强调弹性、控刃和耐用性。
+price:
+  min: 729.9
+  max: 729.9
+  currency: EUR
 specs:
   length: 151
   waistWidth: 248
@@ -41,5 +45,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/products/beast-snowboard
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  snapshot_url: https://www.nitrosnowboards.com/products/beast-snowboard
 status: published

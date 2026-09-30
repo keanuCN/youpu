@@ -5,6 +5,10 @@ model: Abstract
 year: 2027
 title: Salomon Abstract 2027
 one_liner: 男女通用的自由式真双向板，Rock Out Camber 将平底、脚下正拱与板头板尾摇滚结合，定位中等硬度与公园全山混合玩法。
+price:
+  min: 549.95
+  max: 549.95
+  currency: USD
 specs:
   profile: Rock Out Camber
   profileFamily: hybrid
@@ -41,4 +45,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-ca/product/abstract-li1303
+  snapshot_url: https://www.salomon.com/en-us/c/sports/snowboarding/snowboards
 status: published

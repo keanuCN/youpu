@@ -5,6 +5,10 @@ model: "Orbit"
 year: 2027
 title: "Nidecker Orbit 2027"
 one_liner: "Nidecker 双绑带固定器，官方列出可调 heelcup、脚床、前绑带位置与高背旋转。"
+price:
+  min: 249.95
+  max: 249.95
+  currency: USD
 specs:
   entrySystem: strap
   bindingSizeGuide: "Nidecker 美国官方商品页男款/Youth 尺码：M US 5–8；L 8.5–11；XL 11.5–15。"
@@ -18,6 +22,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nidecker.com/products/orbit
+  snapshot_url: https://www.nidecker.com/collections/men-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.27.BNU.OBS.744-Orbit_Ned-1.webp?v=1789478433&width=1200"
     kind: face

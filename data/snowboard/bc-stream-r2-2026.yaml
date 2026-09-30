@@ -5,6 +5,10 @@ model: R2
 year: 2026
 title: BC Stream R-2 2026
 one_liner: 25/26 款锤头刻滑板，采用方向性双向板型与可变拱形；该型号未见于当前 26/27 目录。
+price:
+  min: 101200
+  max: 101200
+  currency: JPY
 specs:
   profile: Variable Camber
   profileFamily: hybrid
@@ -41,5 +45,5 @@ editorial_scores:
 data_source:
   kind: manual
   origin_url: https://www.follows.co.jp/SHOP/1213bc-r2.html
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  snapshot_url: https://www.follows.co.jp/SHOP/1213bc-r2.html
 status: published

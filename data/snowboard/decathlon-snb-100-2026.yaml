@@ -5,6 +5,10 @@ model: SNB 100
 year: 2026
 title: DREAMSCAPE SNB 100 2026
 one_liner: DREAMSCAPE 入门全山地雪板系列，按男女款分别展示；本记录不把不同款式和尺码的参数合并。
+price:
+  min: 149.99
+  max: 149.99
+  currency: CAD
 specs:
   profile: Flat Camber + Long Rocker
   profileFamily: hybrid
@@ -39,5 +43,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.decathlon.ca/en/p/all-mountain-and-freestyle-snowboard-snb-100/309522/c193m8660203
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  snapshot_url: https://www.decathlon.ca/en/p/all-mountain-and-freestyle-snowboard-snb-100/309522/c193m8660203
 status: published

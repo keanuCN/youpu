@@ -5,6 +5,10 @@ model: Process Flying V
 year: 2027
 title: Burton Process Flying V 2027
 one_liner: Burton 经典真双向全山自由式板，Flying V 混合板型在脚间采用摇滚区、脚下保留正拱区，兼顾轻松操控、浮力与边刃支撑。
+price:
+  min: 549.95
+  max: 549.95
+  currency: USD
 specs:
   length: 157
   waistWidth: 252
@@ -49,4 +53,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-process-flying-v-snowboard-107121
+  snapshot_url: https://www.burton.com/en-us/products/mens-burton-process-flying-v-snowboard-107121
 status: published

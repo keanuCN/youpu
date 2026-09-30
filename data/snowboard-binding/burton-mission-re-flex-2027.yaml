@@ -5,6 +5,10 @@ model: "Mission Re:Flex"
 year: 2027
 title: "Burton Mission Re:Flex 2027"
 one_liner: "Burton 入门进阶全山地绑带款，官方强调缓震与通用安装兼容。"
+price:
+  min: 249.95
+  max: 249.95
+  currency: USD
 specs:
   entrySystem: strap
   bootCompatibility: "Re:Flex 多板型安装；适配普通绑带雪鞋"
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-mission-re-flex-snowboard-bindings-105461
+  snapshot_url: https://www.burton.com/en-us/collections/mens-snowboard-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1054617E9K_1.webp?v=1783620127&width=1920"
     kind: face

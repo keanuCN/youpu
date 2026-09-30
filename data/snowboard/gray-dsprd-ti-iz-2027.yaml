@@ -5,6 +5,10 @@ model: DSPRD Ti [iz]
 year: 2027
 title: GRAY DSPRD Ti [iz] 2027
 one_liner: 26/27 新增锤头刻滑型号，将 IZANAS 纤维、金属与玻纤结构组合，搭配聚酰胺表层以兼顾支撑与减震。
+price:
+  min: 154000
+  max: 154000
+  currency: JPY
 specs:
   profile: Single Camber
   profileFamily: camber
@@ -40,4 +44,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://graysnowboards.co.jp/product-2627-eng/
+  snapshot_url: https://graysnowboards.co.jp/product/
 status: published

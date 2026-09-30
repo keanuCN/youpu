@@ -5,6 +5,10 @@ model: Supershape e-Magnum
 year: 2026
 title: HEAD Supershape e-Magnum 2025/26
 one_liner: HEAD Supershape 雪道系列，官方产品页列出 149–177 cm 多个板长。
+price:
+  min: 181500
+  max: 181500
+  currency: JPY
 specs:
   lengthOptions: 149 / 156 / 163 / 170 / 177 cm
   waistWidth: 72
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.head.com/en_US/product/supershape-e-magnum-313306-set
+  snapshot_url: https://steep.jp/wp-content/uploads/2025/05/HEAD_UserCatalog2025-26_Web.pdf
 images:
   - url: https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/1820x2428/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp
     kind: face

@@ -5,6 +5,10 @@ model: DESPERADO Ti Type-R
 year: 2027
 title: GRAY DESPERADO Ti Type-R 2027
 one_liner: 面向高水平刻滑的金属强化型号，以锤头轮廓、复合侧切和较强边刃支撑为主要特点。
+price:
+  min: 198000
+  max: 209000
+  currency: JPY
 specs:
   shape: Directional Hammerhead
   profile: Vario Camber
@@ -40,5 +44,5 @@ editorial_scores:
 data_source:
   kind: manual
   origin_url: https://graysnowboards.co.jp/product-2627-eng/
-  snapshot_url: https://thesnowfever.com/list/snowboards?brand=72
+  snapshot_url: https://graysnowboards.co.jp/product/
 status: published

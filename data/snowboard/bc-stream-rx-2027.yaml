@@ -5,6 +5,10 @@ model: RX
 year: 2027
 title: BC Stream RX 2027
 one_liner: 以深弯和刻滑控制为核心，26/27 款提供 Regular / Hard 两种硬度及六种尺码，包含窄腰版。
+price:
+  min: 147400
+  max: 147400
+  currency: JPY
 specs:
   shape: Directional
   profile: Variable Camber（品牌资料/经销商商品说明）
@@ -36,5 +40,5 @@ editorial_scores:
 data_source:
   kind: manual
   origin_url: https://www.bc-stream.com/catalog/
-  snapshot_url: https://item.rakuten.co.jp/fujiswat/202603043/
+  snapshot_url: https://joint.shop-pro.jp/?pid=190349875
 status: published

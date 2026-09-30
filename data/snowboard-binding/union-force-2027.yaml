@@ -5,6 +5,10 @@ model: "Force"
 year: 2027
 title: "Union Binding Company Force 2027"
 one_liner: "Union 全山地工作马型固定器，官方列出 7/10 硬度与全地形定位。"
+price:
+  min: 349.95
+  max: 349.95
+  currency: USD
 specs:
   entrySystem: strap
   flex: 7
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027
+  snapshot_url: https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027
 images:
   - url: "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_FORCE_BLACK_2000x.jpg?v=1785333204"
     kind: face

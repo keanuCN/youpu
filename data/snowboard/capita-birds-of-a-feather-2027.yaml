@@ -5,6 +5,10 @@ model: Birds of a Feather
 year: 2027
 title: CAPiTA Birds of a Feather 2027
 one_liner: 女款全山自由式真双向板，是 D.O.A. 系列的女性几何与 flex 调校版本；Resort V1 混合板型，厂商标注硬度 5.5。
+price:
+  min: 729.95
+  max: 729.95
+  currency: CAD
 specs:
   length: 148
   effectiveEdge: 1171
@@ -51,4 +55,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://capitasnowboarding.com/en-ca/products/capita-birds-of-a-feather-womens-snowboard-2027
+  snapshot_url: https://capitasnowboarding.com/en-ca/products/capita-birds-of-a-feather-womens-snowboard-2027
 status: published

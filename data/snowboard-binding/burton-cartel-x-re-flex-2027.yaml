@@ -5,6 +5,10 @@ model: "Cartel X Re:Flex"
 year: 2027
 title: "Burton Cartel X Re:Flex 2027"
 one_liner: "Cartel X 通用安装版本，面向需要更强支撑和控制的全山地滑行。"
+price:
+  min: 349.95
+  max: 349.95
+  currency: USD
 specs:
   entrySystem: strap
   bootCompatibility: "Re:Flex 多板型安装；适配普通绑带雪鞋"
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-cartel-x-re-flex-snowboard-bindings-222301
+  snapshot_url: https://www.burton.com/en-us/collections/snowboard-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223010FA9_1.webp?v=1783620024&width=1920"
     kind: face

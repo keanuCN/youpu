@@ -5,6 +5,10 @@ model: MTN 86 Carbon
 year: 2027
 title: Salomon MTN 86 Carbon 2026/27
 one_liner: Salomon 官方雪板目录中的轻量化巡游系列，定位与固定器需按具体组合确认。
+price:
+  min: 749.95
+  max: 749.95
+  currency: USD
 specs:
   lengthOptions: 148 / 156 / 164 / 172 / 180 cm
   waistWidth: 86
@@ -14,6 +18,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/mtn-86-carbon-li8310
+  snapshot_url: https://www.salomon.com/en-us/product/mtn-86-carbon-li8310
 images:
   - url: https://cdn.dam.salomon.com/f142d815-a33c-4a23-ab3a-b31b00bd6bb5/L47824000%2B/PNG-2000px-max-72dpi.png
     kind: face

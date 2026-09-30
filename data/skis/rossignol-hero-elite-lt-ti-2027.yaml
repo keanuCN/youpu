@@ -5,6 +5,10 @@ model: Hero Elite LT TI
 year: 2027
 title: Rossignol Hero Elite LT TI 2026/27
 one_liner: 官方定位为高速长弧雪道竞速风格板，面向技术型滑手。
+price:
+  min: 1349.95
+  max: 1349.95
+  currency: USD
 specs:
   lengthOptions: 167 / 172 / 177 / 182 cm
   waistWidth: 71
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/hero-elite-lt-ti-alpine-skis-RAPSE01000.html
+  snapshot_url: https://www.rossignol.com/us-en/sports/alpine-ski/skis
 images:
   - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa8eccfa0/images/large/RAPSE01000_72DPI_01_v01.jpg?sw=800
     kind: face

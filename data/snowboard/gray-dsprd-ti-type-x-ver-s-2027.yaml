@@ -5,6 +5,10 @@ model: DSPRD Ti Type-X ver.S
 year: 2027
 title: GRAY DSPRD Ti Type-X ver.S 2027
 one_liner: 面向高水平竞赛刻滑的 26/27 款 Type-X，针对高速大角度走刃优化；ver.S 使用烧结表层配置。
+price:
+  min: 198000
+  max: 198000
+  currency: JPY
 specs:
   profile: Single Camber
   profileFamily: camber
@@ -33,4 +37,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://graysnowboards.co.jp/product-2627-eng/
+  snapshot_url: https://graysnowboards.co.jp/product/
 status: published

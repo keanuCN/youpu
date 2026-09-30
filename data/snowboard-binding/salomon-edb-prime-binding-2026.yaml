@@ -5,6 +5,10 @@ model: "EDB PRIME"
 year: 2026
 title: "Salomon EDB PRIME 2026"
 one_liner: "Salomon 全山地固定器，国内京东页面可见该型号评价，规格以官方型号页为准。"
+price:
+  min: 279.95
+  max: 279.95
+  currency: USD
 specs:
   entrySystem: strap
   bindingSizeGuide: "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。"
@@ -14,6 +18,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/edb-prime-li8710
+  snapshot_url: https://www.salomon.com/en-us/c/collection/winter-sports/snowboarding/bindings
 images:
   - url: "https://cdn.dam.salomon.com/06801898-0c9a-4476-b079-b31b00b424be/L47939700/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12"
     kind: face

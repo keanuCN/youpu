@@ -5,6 +5,10 @@ model: Proto T3 FR
 year: 2027
 title: Never Summer Proto T3 FR 2027
 one_liner: Proto FR 的后续进化型号，定向三重正拱混合板型，定位高性能全山与自由滑；官方 flex 7/10、damp 8/10。
+price:
+  min: 719.99
+  max: 719.99
+  currency: USD
 specs:
   length: 160
   waistWidth: 258
@@ -40,4 +44,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://neversummer.com/products/mens-proto-t3-fr-snowboard
+  snapshot_url: https://neversummer.com/products/mens-proto-t3-fr-snowboard
 status: published

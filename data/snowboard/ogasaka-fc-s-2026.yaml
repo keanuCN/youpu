@@ -5,6 +5,10 @@ model: FC-S
 year: 2026
 title: OGASAKA FC-S 2026
 one_liner: FC 系列中的专家级高速刻滑款，通过较硬 flex、碳片补强和浅侧切强调弯中加速与高速稳定；本档案对应官方 25–26 季。
+price:
+  min: 129800
+  max: 132000
+  currency: JPY
 specs:
   length: 159
   effectiveEdge: 1340
@@ -44,4 +48,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.ogasaka-snowboard.com/product_25_09_fc-s.html
+  snapshot_url: https://www.ogasaka-snowboard.com/product_25_09_fc-s.html
 status: published

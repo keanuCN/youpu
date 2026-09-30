@@ -5,6 +5,10 @@ model: "Mercury FASE"
 year: 2026
 title: "Jones Mercury FASE 2026"
 one_liner: "Mercury 加入 FASE 快速绑带系统，支持单手穿入并可回退传统绑带操作。"
+price:
+  min: 379.95
+  max: 379.95
+  currency: USD
 specs:
   entrySystem: fast-entry
   bootCompatibility: "FASE 官方称兼容各品牌普通雪鞋"
@@ -20,6 +24,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.jonessnowboards.com/products/mercury-fase-snowboard-binding-2026
+  snapshot_url: https://www.jonessnowboards.com/collections/men-best-sellers
 images:
   - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.26.BNU.MHF.C4-gallery-8.webp?v=1776481535&width=1200"
     kind: face

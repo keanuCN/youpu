@@ -5,6 +5,10 @@ model: SNB 500 Ziprotect Men's Snowboard Jacket
 year: 2026
 title: Men’s Warm and Durable Snowboard Jacket SNB 500 Ziprotect - Camel and
   Black | Decathlon
+price:
+  min: 129.99
+  max: 129.99
+  currency: GBP
 specs:
   garmentType: jacket
   waterproofMm: 10000
@@ -28,4 +32,5 @@ images:
 data_source:
   kind: crawl
   origin_url: https://www.decathlon.co.uk/p/men%27s-snb-jacket-500/_/R-p-350525
+  snapshot_url: https://www.decathlon.co.uk/p/mens-warm-and-durable-snowboard-jacket-snb-500-ziprotect-camel-and-black/350525/c152c382m8881806
 status: published

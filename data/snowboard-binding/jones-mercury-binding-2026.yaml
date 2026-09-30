@@ -5,6 +5,10 @@ model: "Mercury"
 year: 2026
 title: "Jones Mercury 2026"
 one_liner: "全地形 freeride 取向固定器，采用 SkateTech 力量传递结构。"
+price:
+  min: 369.95
+  max: 369.95
+  currency: USD
 specs:
   entrySystem: strap
   flex: 7
@@ -19,6 +23,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026
+  snapshot_url: https://www.jonessnowboards.com/collections/mens-traditional-two-strap-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.26.BNM.MER.GY-gallery-1.webp?v=1768450607&width=1946"
     kind: face

@@ -5,6 +5,10 @@ model: "Ultra"
 year: 2027
 title: "Union Binding Company Ultra 2027"
 one_liner: "以缓震和板感为重点的女款自由式固定器，官方介绍其悬挂式缓震结构。"
+price:
+  min: 329.95
+  max: 329.95
+  currency: USD
 specs:
   entrySystem: strap
   flex: 6
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027
+  snapshot_url: https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027
 images:
   - url: "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ULTRA_WOMEN_BLUE_2000x.jpg?v=1785333221"
     kind: face

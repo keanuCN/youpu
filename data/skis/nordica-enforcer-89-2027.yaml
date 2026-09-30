@@ -5,6 +5,10 @@ model: Enforcer 89
 year: 2027
 title: Nordica Enforcer 89 2026/27
 one_liner: Enforcer 系列中偏雪道取向型号，列入 Nordica 2026/27 官方新品目录。
+price:
+  min: 749.99
+  max: 749.99
+  currency: USD
 specs:
   lengthOptions: 167 / 173 / 179 / 185 cm
   waistWidth: 89
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-89-flat
+  snapshot_url: https://www.ski-depot.com/collections/nordica-skis
 images:
   - url: https://www.nordica.com/storage/Product/0A668400001_ENFORCER_89_FLAT.png
     kind: face

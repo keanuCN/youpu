@@ -5,6 +5,10 @@ model: PRODIGY
 year: 2027
 title: GRAY PRODIGY 2027
 one_liner: GRAY 旗舰方向双向板，玻纤与 X 形碳纤结构强调快速回弹、控制力与中高速稳定，覆盖自由式跳台和全山地滑行。
+price:
+  min: 126500
+  max: 126500
+  currency: JPY
 specs:
   profile: Single Camber
   profileFamily: camber
@@ -40,4 +44,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://graysnowboards.co.jp/product-2627-eng/
+  snapshot_url: https://graysnowboards.co.jp/product/
 status: published

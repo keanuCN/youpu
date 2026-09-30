@@ -5,6 +5,10 @@ model: "LT Supermatic"
 year: 2026
 title: "Nidecker LT Supermatic 2026"
 one_liner: "Supermatic 轻量快速穿脱系列，侧重支撑、响应与快速进出。"
+price:
+  min: 479.95
+  max: 479.95
+  currency: USD
 specs:
   entrySystem: rear-entry
   bootCompatibility: "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋"
@@ -19,6 +23,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://eu.nidecker.com/es-int/products/lt-supermatic-2026
+  snapshot_url: https://www.nidecker.com/collections/men-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/N.26.BNU.SPL.C5-LT_Supermatic_Bio_Black-1.webp?v=1786460721&width=1946"
     kind: face

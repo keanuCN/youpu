@@ -5,6 +5,10 @@ model: Redster Q7 Revoshock C
 year: 2026
 title: Atomic Redster Q7 Revoshock C 2025/26
 one_liner: Redster Q 系列雪道板，官方目录列出 153–181 cm 尺寸范围。
+price:
+  min: 1030
+  max: 1030
+  currency: USD
 specs:
   lengthOptions: 153 / 160 / 167 / 174 / 181 cm
   waistWidth: 75
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/products/redster-q7-revoshock-c-mi-12-gw-aa7471-202600
+  snapshot_url: https://www.atomic.com/en-us/collections/ato-featured-family-redster?page=1
 images:
   - url: https://cdn.amersports.com/017bc76f-f5cc-42b8-a786-b49f00cdff46/ATP_AASS03788_0_GHO_Redster_Q7_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445
     kind: face

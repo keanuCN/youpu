@@ -5,6 +5,10 @@ model: "Atlas"
 year: 2027
 title: "Union Binding Company Atlas 2027"
 one_liner: "面向中高级滑手的中硬度全山地款，官方列出 8/10 硬度。"
+price:
+  min: 399.95
+  max: 399.95
+  currency: USD
 specs:
   entrySystem: strap
   flex: 8
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027
+  snapshot_url: https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027
 images:
   - url: "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_BLACK_2000x.jpg?v=1785333183"
     kind: face

@@ -5,6 +5,10 @@ model: "GS"
 year: 2026
 title: "FLUX GS 2026"
 one_liner: "女款全能固定器，官方介绍其沿用 DS 特性并兼顾活动范围与舒适度。"
+price:
+  min: 41800
+  max: 41800
+  currency: JPY
 specs:
   entrySystem: strap
   bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
@@ -14,6 +18,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526gs
+  snapshot_url: https://flux-bindings.com/en/collections/bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/60_1_f25-bdg-302-gs-blk.png?v=1705538624&width=1160"
     kind: face

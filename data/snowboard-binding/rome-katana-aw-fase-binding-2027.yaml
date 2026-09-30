@@ -5,6 +5,10 @@ model: "Katana AW FASE"
 year: 2027
 title: "Rome Katana AW FASE 2027"
 one_liner: "Rome Katana AW 平台的 FASE 快速穿脱版本，官方主打可调节性与全山地适用。"
+price:
+  min: 429.95
+  max: 429.95
+  currency: USD
 specs:
   entrySystem: fast-entry
   flex: 8
@@ -13,6 +17,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://romesnowboards.com/products/katana-asymwrap-fase-snowboard-bindings
+  snapshot_url: https://romesnowboards.com/collections/snowboard-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-AW-FASE_C1-BLACK_1_49371da6-92c0-48d4-a570-a94f41a3051f.jpg?v=1788382126&width=1920"
     kind: face

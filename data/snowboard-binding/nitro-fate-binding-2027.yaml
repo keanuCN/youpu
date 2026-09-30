@@ -5,6 +5,10 @@ model: "Fate"
 year: 2027
 title: "Nitro Fate 女款 2027"
 one_liner: "Nitro 2026–27 女款全山地固定器，官方目录将其列为经典全山地型号。"
+price:
+  min: 299.9
+  max: 299.9
+  currency: EUR
 specs:
   entrySystem: strap
   brandComfortScore: 9
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/bindings-26-27/products/fate-womens-bindings-1
+  snapshot_url: https://www.nitrosnowboards.com/collections/bindings-26-27
 images:
   - url: "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21011-103_Fate-Womens-Bindings_Nitro-x-Hailey-Langland_Product-1.jpg?v=1779339397&width=1920"
     kind: face

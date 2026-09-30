@@ -5,6 +5,10 @@ model: "Katana AW"
 year: 2027
 title: "Rome Katana AW 2027"
 one_liner: "Rome 2026–27 传统绑带全山地固定器，官方主打调节范围与舒适性。"
+price:
+  min: 399.95
+  max: 399.95
+  currency: USD
 specs:
   entrySystem: strap
   flex: 8
@@ -13,6 +17,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings
+  snapshot_url: https://romesnowboards.com/collections/snowboard-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-katana-aw-c2-sage-binding-1-1782373162882.jpg?v=1787636963&width=1920"
     kind: face

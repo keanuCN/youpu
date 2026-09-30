@@ -5,6 +5,10 @@ model: "Talent"
 year: 2027
 title: "Nitro Talent 2027"
 one_liner: "Nitro 2026–27 男女通用固定器，品牌官方将其定位为普适型产品。"
+price:
+  min: 179.9
+  max: 179.9
+  currency: EUR
 specs:
   entrySystem: strap
   brandComfortScore: 7
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/bindings-26-27/products/talent-unisex-bindings-1
+  snapshot_url: https://www.nitrosnowboards.com/collections/bindings-26-27
 images:
   - url: "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-105_Talent-Unisex-Bindings_Bubble-Gum_Product-1.jpg?v=1779339424&width=1920"
     kind: face

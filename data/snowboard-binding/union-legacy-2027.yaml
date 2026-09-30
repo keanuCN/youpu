@@ -5,6 +5,10 @@ model: "Legacy"
 year: 2027
 title: "Union Binding Company Legacy 2027"
 one_liner: "偏柔软脚感的女款公园与自由式固定器，官方强调减震与板面自然弯曲。"
+price:
+  min: 349.95
+  max: 349.95
+  currency: USD
 specs:
   entrySystem: strap
   flex: 5
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027
+  snapshot_url: https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027
 images:
   - url: "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_LEGACY_BLACK_2000x.jpg?v=1785333238"
     kind: face

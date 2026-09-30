@@ -5,6 +5,10 @@ model: "Force Classic"
 year: 2027
 title: "Union Binding Company Force Classic 2027"
 one_liner: "Force 经典款全地形绑带固定器，官方页面列出 6/10 硬度。"
+price:
+  min: 249.95
+  max: 249.95
+  currency: USD
 specs:
   entrySystem: strap
   flex: 6
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027
+  snapshot_url: https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027
 images:
   - url: "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_FORCE_CLASSIC_BLACK_2000x.jpg?v=1785333201"
     kind: face

@@ -5,6 +5,10 @@ model: Redster Q7.8 Revoshock C
 year: 2026
 title: Atomic Redster Q7.8 Revoshock C 2025/26
 one_liner: Redster Q 系列雪道板，官方目录列出多档板长并配 MI 12 GW 固定器。
+price:
+  min: 1030
+  max: 1030
+  currency: USD
 specs:
   lengthOptions: 159 / 166 / 173 / 181 cm
   waistWidth: 84
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/products/redster-q7-8-revoshock-c-mi-12-gw-aa7470-202600
+  snapshot_url: https://www.atomic.com/en-us/collections/ato-featured-family-redster?page=1
 images:
   - url: https://cdn.amersports.com/8fd450be-84c9-4bed-b255-b49f00cdfdd0/ATP_AASS03786_0_GHO_Redster_Q7.8_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445
     kind: face

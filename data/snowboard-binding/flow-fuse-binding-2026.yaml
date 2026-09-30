@@ -5,6 +5,10 @@ model: "Fuse"
 year: 2026
 title: "Flow Fuse 2026"
 one_liner: "Flow 后入式固定器，Fusion 一体式绑带协助快速进入后仰高背结构。"
+price:
+  min: 319.95
+  max: 319.95
+  currency: USD
 specs:
   entrySystem: rear-entry
   bindingSizeGuide: "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。"
@@ -14,6 +18,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nidecker.com/products/flow-fuse-2026
+  snapshot_url: https://www.nidecker.com/collections/men-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/High-_0024_FLOW_FUSE_WHITE_fusion.jpg?v=1788232288&width=800"
     kind: face

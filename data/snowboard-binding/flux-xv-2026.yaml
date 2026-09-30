@@ -5,6 +5,10 @@ model: "XV"
 year: 2026
 title: "FLUX XV 2026"
 one_liner: "FLUX 高阶硬质型号，官方介绍其碳纤维高背与轻量化响应结构。"
+price:
+  min: 73700
+  max: 73700
+  currency: JPY
 specs:
   entrySystem: strap
   bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
@@ -14,6 +18,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526xv
+  snapshot_url: https://flux-bindings.com/en/collections/bindings2627/
 images:
   - url: "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/2_1_xv__bronze_bs-1.png?v=1757410220&width=1160"
     kind: face

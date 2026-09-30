@@ -5,6 +5,10 @@ model: Soul 102
 year: 2027
 title: Rossignol Soul 102 2026/27
 one_liner: 新一代多用途 freeride 雪板，官网列出 164、172、180 cm 等板长。
+price:
+  min: 799.95
+  max: 799.95
+  currency: USD
 specs:
   lengthOptions: 164 / 172 / 180 cm
   waistWidth: 101
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/soul-102-alpine-skis-RAPMR03000.html
+  snapshot_url: https://www.rossignol.com/us-en/sports/alpine-ski/skis
 images:
   - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa120bfdc/images/large/RAPMR03000_72DPI_01_v01.jpg?sw=800
     kind: face

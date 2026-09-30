@@ -5,6 +5,10 @@ model: "Katana AW Pro FASE"
 year: 2027
 title: "Rome Katana AW Pro FASE 2027"
 one_liner: "Rome 2026–27 碳纤维取向全山地固定器，结合 AsymWrap 平台与 FASE 快速穿脱系统。"
+price:
+  min: 499.95
+  max: 499.95
+  currency: USD
 specs:
   entrySystem: fast-entry
   flex: 9
@@ -13,6 +17,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://romesnowboards.com/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings
+  snapshot_url: https://romesnowboards.com/collections/all/bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-PRO-AW-FASE_C1-STALE_1_78442129-1b64-47c3-82dc-610e0a874fb6.jpg?v=1787609403&width=1920"
     kind: face

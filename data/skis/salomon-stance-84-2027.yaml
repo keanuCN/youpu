@@ -5,6 +5,10 @@ model: Stance 84 R
 year: 2027
 title: Salomon Stance 84 R 2026/27
 one_liner: 官方定位为雪道与全山地兼顾的稳定型双板，含板、板芯与固定器系统。
+price:
+  min: 799.95
+  max: 799.95
+  currency: USD
 specs:
   lengthOptions: 161 / 169 / 177 / 185 cm
   waistWidth: 84
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/stance-84-r-and-mi12-li1721
+  snapshot_url: https://www.salomon.com/en-us/c/men/shopby/4_57065
 images:
   - url: https://cdn.dam.salomon.com/d46f845f-a04e-4b4c-8419-b45100de593b/L45457300%2B/PNG-2000px-max-72dpi.png
     kind: face

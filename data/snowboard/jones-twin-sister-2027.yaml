@@ -5,6 +5,10 @@ model: Twin Sister
 year: 2027
 title: Women's Twin Sister Snowboard 2027 | Jones
 one_liner: Jones 女款全山地畅销双向板，CamRock 和中等硬度兼顾刻滑、自由式与新雪中的浮力。
+price:
+  min: 599.95
+  max: 599.95
+  currency: USD
 specs:
   length: 149
   waistWidth: 244
@@ -41,5 +45,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.jonessnowboards.com/products/womens-twin-sister-snowboard
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  snapshot_url: https://www.jonessnowboards.com/collections/womens-snowboards
 status: published

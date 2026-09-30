@@ -5,6 +5,10 @@ model: SHIN
 year: 2026
 title: OGASAKA SHIN 2026
 one_liner: 面向粉雪和全山地的系列雪板，官方将其定位为适应多种雪况的中高级型号；不同长度的尺寸与结构不可混用。
+price:
+  min: 121000
+  max: 121000
+  currency: JPY
 specs:
   length: 160
   waistWidth: 260
@@ -40,5 +44,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.ogasaka-snowboard.com/product_25_12_shin-160.html
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  snapshot_url: https://www.ogasaka-snowboard.com/product_25_12_shin-160.html
 status: published

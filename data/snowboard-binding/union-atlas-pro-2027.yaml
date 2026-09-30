@@ -5,6 +5,10 @@ model: "Atlas Pro"
 year: 2027
 title: "Union Binding Company Atlas Pro 2027"
 one_liner: "采用锻造碳纤维等高响应结构，定位高阶全山地与强支撑滑行。"
+price:
+  min: 499.95
+  max: 499.95
+  currency: USD
 specs:
   entrySystem: strap
   flex: 9
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027
+  snapshot_url: https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027
 images:
   - url: "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_PRO_BLACK_2000x.jpg?v=1785333161"
     kind: face

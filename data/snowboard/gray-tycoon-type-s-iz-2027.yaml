@@ -5,6 +5,10 @@ model: TYCOON Type-S [iz]
 year: 2027
 title: GRAY TYCOON Type-S [iz] 2027
 one_liner: 26/27 高端竞速刻滑型号，以全金属结构、IZANAS 纤维及复合材料控制弯曲后的回弹，可搭配雪板底板系统。
+price:
+  min: 198000
+  max: 198000
+  currency: JPY
 specs:
   profile: Vario Camber
   shape: Directional Alpine
@@ -30,5 +34,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://graysnowboards.co.jp/product-2627-eng/
-  snapshot_url: https://www.follows.co.jp/SHOP/419368/422669/list.html
+  snapshot_url: https://graysnowboards.co.jp/product/
 status: published

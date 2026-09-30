@@ -5,6 +5,10 @@ model: "Tangent TLS"
 year: 2027
 title: "Nitro Tangent TLS 2027"
 one_liner: "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。"
+price:
+  min: 239.9
+  max: 239.9
+  currency: EUR
 specs:
   lacingSystem: "TLS 双区快速系带"
   flex: "偏软"
@@ -27,4 +31,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/tangent-tls-boots-1
+  snapshot_url: https://www.nitrosnowboards.com/collections/boots-26-27
 status: published

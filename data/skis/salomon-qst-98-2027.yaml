@@ -5,6 +5,10 @@ model: QST 98
 year: 2024
 title: Salomon QST 98 2023/24
 one_liner: QST freeride 系列中宽度适中的全山地型号，主打多雪况适应。
+price:
+  min: 649.95
+  max: 649.95
+  currency: USD
 specs:
   lengthOptions: 169 / 176 / 183 / 189 cm
   waistWidth: 98
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-gb/product/qst-98-li4910
+  snapshot_url: https://www.evo.com/products/238117-salomon-qst-98-skis-2024
 images:
   - url: https://cdn.dam.salomon.com/f1b63fed-8741-4144-802d-b2f40156d659/L47232300%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=low&width=3840
     kind: face

@@ -5,6 +5,10 @@ model: EPIC
 year: 2027
 title: GRAY EPIC 2027
 one_liner: 中等硬度的高端全双向板，Active Camber 与多半径侧切兼顾灵活性和脚下抓边，适合道具、公园及自由式滑行。
+price:
+  min: 126500
+  max: 126500
+  currency: JPY
 specs:
   profile: Active Camber
   profileFamily: hybrid
@@ -39,4 +43,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://graysnowboards.co.jp/product-2627-eng/
+  snapshot_url: https://graysnowboards.co.jp/product/
 status: published

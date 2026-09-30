@@ -5,6 +5,10 @@ model: Forza 50° CAM KONECT
 year: 2026
 title: Rossignol Forza 50° CAM KONECT 2025/26
 one_liner: 面向中级滑手的雪道 carving 系列，官网标注多种板长与可选固定器。
+price:
+  min: 899.95
+  max: 899.95
+  currency: USD
 specs:
   lengthOptions: 150 / 157 / 164 / 171 / 179 cm
   waistWidth: 75
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html
+  snapshot_url: https://www.rossignol.com/us-en/sports/alpine-ski/skis
 images:
   - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw562b8531/images/large/RAOPX01000_72DPI_01_v01.jpg?sw=800
     kind: face

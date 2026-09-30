@@ -5,6 +5,10 @@ model: "OG Supermatic"
 year: 2026
 title: "Nidecker OG Supermatic 2026"
 one_liner: "后入式快速穿脱固定器，可在需要时按传统绑带方式使用。"
+price:
+  min: 429.95
+  max: 429.95
+  currency: USD
 specs:
   entrySystem: rear-entry
   bootCompatibility: "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋"
@@ -19,6 +23,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://eu.nidecker.com/en-int/products/og-supermatic-2026
+  snapshot_url: https://www.nidecker.com/collections/men-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/N.26.BNU.SPM.BN-OG_Supermatic_Desert-1.webp?v=1786464048&width=1200"
     kind: face

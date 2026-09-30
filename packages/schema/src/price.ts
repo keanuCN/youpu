@@ -3,6 +3,11 @@ export const CANONICAL_PRICE_CURRENCY = 'CNY' as const;
 export const PRICE_RATES_TO_CNY = {
   CNY: 1,
   USD: 7.2,
+  // 2026-09-30 中国广发银行页面中间参考价；JPY 以每 1 日元计。
+  EUR: 7.59,
+  GBP: 8.86,
+  CAD: 4.72,
+  JPY: 0.0426,
 } as const;
 
 export function convertPriceToCny(value: number, currency: string = CANONICAL_PRICE_CURRENCY): number {

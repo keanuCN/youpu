@@ -5,6 +5,10 @@ model: "Brass AW"
 year: 2027
 title: "Rome Brass AW 女款 2027"
 one_liner: "Rome 2026–27 女款 AsymWrap 传统绑带固定器，官方描述为偏灵活、易上手的脚感。"
+price:
+  min: 349.95
+  max: 349.95
+  currency: USD
 specs:
   entrySystem: strap
   flex: 6
@@ -13,6 +17,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://romesnowboards.com/products/rome-brass-aw-2627-womens-snowboard-binding
+  snapshot_url: https://romesnowboards.com/collections/snowboard-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_BRASS-AW_C2-TEAM_1.jpg?v=1787636962&width=1920"
     kind: face

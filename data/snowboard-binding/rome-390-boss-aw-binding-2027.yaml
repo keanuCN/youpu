@@ -5,6 +5,10 @@ model: "390 Boss AW"
 year: 2027
 title: "Rome 390 Boss AW 2027"
 one_liner: "Rome 2026–27 AsymWrap 平台传统绑带款，官方定位兼顾自由式脚感与全山地用途。"
+price:
+  min: 349.95
+  max: 349.95
+  currency: USD
 specs:
   entrySystem: strap
   flex: 6
@@ -13,6 +17,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings
+  snapshot_url: https://romesnowboards.com/collections/snowboard-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-aw-c2-acid-binding-1-1782374511046.jpg?v=1787636963&width=1920"
     kind: face

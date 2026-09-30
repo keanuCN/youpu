@@ -5,6 +5,10 @@ model: Shape V2
 year: 2026
 title: HEAD Shape V2 2025/26
 one_liner: 京东双板榜单中的热门入门全地域系列；套装评价仅作国内关注度参考。
+price:
+  min: 82500
+  max: 82500
+  currency: JPY
 specs:
   lengthOptions: 149 / 156 / 163 / 170 / 177 cm
   waistWidth: 70
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: manual
   origin_url: https://www.eski.sk/image/document/head_workbook_2526_en.pdf
+  snapshot_url: https://steep.jp/wp-content/uploads/2025/05/HEAD_UserCatalog2025-26_Web.pdf
 images:
   - url: https://img-cdn.heureka.group/v1/d23ae16d-8f92-56f6-a776-2ace62a9bcb1.jpg
     kind: face

@@ -5,6 +5,10 @@ model: Good Company Camber
 year: 2027
 title: Burton Good Company Camber 2027
 one_liner: 软弹取向的真双向公园自由式板，传统 Camber 提供边刃和弹性，The Channel 安装系统兼容主流固定器。
+price:
+  min: 449.95
+  max: 449.95
+  currency: USD
 specs:
   length: 152
   waistWidth: 250
@@ -44,4 +48,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951
+  snapshot_url: https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951
 status: published

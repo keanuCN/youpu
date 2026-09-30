@@ -5,6 +5,10 @@ model: Talent Scout
 year: 2027
 title: Women's Burton Talent Scout Camber Snowboard 2027
 one_liner: Burton 女款公园双向板，Camber 结构强调跳台弹性和道具控制，并采用针对女性滑手调校的软硬设定。
+price:
+  min: 549.95
+  max: 549.95
+  currency: USD
 specs:
   length: 146
   effectiveEdge: 1095
@@ -42,5 +46,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/womens-burton-talent-scout-camber-snowboard-132181
-  snapshot_url: https://thesnowfever.com/detail/burton-talent-scout-snowboard-4579
+  snapshot_url: https://www.burton.com/en-us/products/womens-burton-talent-scout-camber-snowboard-132181
 status: published

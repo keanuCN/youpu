@@ -5,6 +5,10 @@ model: Redster S9 Revoshock S
 year: 2026
 title: Atomic Redster S9 Revoshock S 2025/26
 one_liner: Atomic Redster 官方目录中的雪道竞速小回转型号。
+price:
+  min: 1385
+  max: 1385
+  currency: USD
 specs:
   lengthOptions: 155 / 160 / 165 / 170 cm
   waistWidth: 68
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/products/redster-s9-revoshock-s-i-12-gw-aa7218-202600
+  snapshot_url: https://www.atomic.com/en-us/collections/ato-featured-family-redster?page=1
 images:
   - url: https://cdn.amersports.com/47a56e73-6422-4d40-bcf3-b4bf00ada651/ATP_AASS03628_0_GHO_REDSTER_S9_RVSK_S_I12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445
     kind: face

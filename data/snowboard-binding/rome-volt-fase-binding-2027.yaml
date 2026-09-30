@@ -5,6 +5,10 @@ model: "Volt FASE"
 year: 2027
 title: "Rome Volt FASE 2027"
 one_liner: "Rome 2026–27 快穿固定器新品，采用 MonoFrame 底盘与 FASE 系统。"
+price:
+  min: 329.95
+  max: 329.95
+  currency: USD
 specs:
   entrySystem: fast-entry
   flex: 5
@@ -13,6 +17,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings
+  snapshot_url: https://romesnowboards.com/collections/snowboard-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C1-BLACK_1_38fd3f25-1d31-4eb0-8c80-709d1b93c9d2.jpg?v=1787607576&width=1920"
     kind: face

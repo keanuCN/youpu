@@ -5,6 +5,10 @@ model: SONICALMACH LT
 year: 2027
 title: GRAY SONICALMACH LT 2027
 one_liner: 26/27 跑滑与地形技巧取向雪板，软硬度设计搭配杨木与竹复合板芯；不同长度对应双向、方向双向或定向板形。
+price:
+  min: 93500
+  max: 93500
+  currency: JPY
 specs:
   profile: Single Camber
   profileFamily: camber
@@ -40,5 +44,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://graysnowboards.co.jp/product-2627-eng/
-  snapshot_url: https://www.jd.com/hotitem/1713c5856cf2f6738072.html
+  snapshot_url: https://graysnowboards.co.jp/product/
 status: published

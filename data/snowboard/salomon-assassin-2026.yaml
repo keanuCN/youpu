@@ -5,6 +5,10 @@ model: Assassin
 year: 2026
 title: Salomon Assassin 2026
 one_liner: 面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；官网当前页未标明板季。
+price:
+  min: 649.95
+  max: 649.95
+  currency: USD
 specs:
   length: 150
   effectiveEdge: 1130
@@ -46,5 +50,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://salomon.com.au/products/assassin
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  snapshot_url: https://www.salomon.com/en-us/c/sports/snowboarding/snowboards
 status: published

@@ -5,6 +5,10 @@ model: Worldcup Rebels e-SL Pro
 year: 2026
 title: HEAD Worldcup Rebels e-SL Pro 2025/26
 one_liner: 官方归类为雪道竞速小回转板，面向有经验滑手；绑定组合依具体套装。
+price:
+  min: 1310
+  max: 1310
+  currency: EUR
 specs:
   lengthOptions: 150 / 155 / 160 / 165 / 170 cm
   waistWidth: 68
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set
+  snapshot_url: https://www.head.com/fr_MC/product/worldcup-rebels-e-sl-pro-313236-set
 images:
   - url: https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/1820x2428/worldcup-rebels-e-sl-pro-without-binding.webp
     kind: face

@@ -5,6 +5,10 @@ model: "One"
 year: 2027
 title: "Nitro One 2027"
 one_liner: "Nitro 2026–27 自由式全山地固定器，官方定位为兼顾山地滑行的自由式型号。"
+price:
+  min: 299.9
+  max: 299.9
+  currency: EUR
 specs:
   entrySystem: strap
   brandComfortScore: 8
@@ -15,6 +19,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/bindings-26-27/products/one-bindings-1
+  snapshot_url: https://www.nitrosnowboards.com/collections/bindings-26-27
 images:
   - url: "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11006-102_One-Bindings_Nitro-x-Motorhead_Product-1.jpg?v=1779339370&width=1920"
     kind: face

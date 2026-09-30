@@ -5,6 +5,10 @@ model: EASY JOY R
 year: 2026
 title: HEAD EASY JOY R 2025/26
 one_liner: 面向女性滑手的轻量雪道系列；板长、固定器和雪季款式需按具体商品确认。
+price:
+  min: 401
+  max: 401
+  currency: EUR
 specs:
   lengthOptions: 143 / 148 / 153 / 158 / 163 cm
   waistWidth: 70
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.head.com/en_US/product/easy-joy-r-316485
+  snapshot_url: https://www.snow-concept.com/en/head-easy-joy-r-ski-set-joy-9-gw-slr-bindings-white-women-x27-s.html
 images:
   - url: https://cdn-mdb.head.com/CDN3/D/316485/1/1820x2428/easy-joy-r.webp
     kind: face

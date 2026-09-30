@@ -5,6 +5,10 @@ model: FC
 year: 2026
 title: OGASAKA FC 2026
 one_liner: 半锤头轮廓的自由式刻滑板，长有效边刃强调抓雪和弯中稳定；尺码数据按官方 25/26 规格表记录。
+price:
+  min: 126500
+  max: 128700
+  currency: JPY
 specs:
   length: 157
   effectiveEdge: 1280
@@ -45,5 +49,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.ogasaka-snowboard.com/product_25_08_fc.html
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  snapshot_url: https://www.ogasaka-snowboard.com/product_25_08_fc.html
 status: published

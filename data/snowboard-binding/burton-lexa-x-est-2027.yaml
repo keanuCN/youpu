@@ -5,6 +5,10 @@ model: "Lexa X EST"
 year: 2027
 title: "Burton Lexa X EST 2027"
 one_liner: "Burton 女款 Lexa X EST 固定器，EST 结构对应 The Channel 安装系统。"
+price:
+  min: 379.95
+  max: 379.95
+  currency: USD
 specs:
   entrySystem: strap
   bootCompatibility: "EST 版本仅用于 Burton The Channel 雪板；适配普通绑带雪鞋"
@@ -14,6 +18,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331
+  snapshot_url: https://www.burton.com/en-us/collections/snowboard-bindings
 images:
   - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314E9R_1.webp?v=1783620802&width=1920"
     kind: face

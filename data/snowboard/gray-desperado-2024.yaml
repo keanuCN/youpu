@@ -5,6 +5,10 @@ model: DESPERADO micro/mini
 year: 2024
 title: GRAY DESPERADO micro/mini 2024
 one_liner: GRAY DESPERADO 系列的儿童款，采用全玻纤结构，定位易操控的入门刻滑。
+price:
+  min: 108900
+  max: 108900
+  currency: JPY
 specs:
   shape: Directional
   profile: Single Camber
@@ -31,5 +35,5 @@ editorial_scores:
 data_source:
   kind: manual
   origin_url: https://graysnowboards.co.jp/product2324/
-  snapshot_url: https://thesnowfever.com/list/snowboards?brand=72
+  snapshot_url: https://graysnowboards.co.jp/product2324/
 status: published

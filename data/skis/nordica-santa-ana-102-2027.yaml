@@ -5,6 +5,10 @@ model: Santa Ana 102
 year: 2027
 title: Nordica Santa Ana 102 2026/27
 one_liner: Santa Ana 女性全山地系列宽板腰型号，2026/27 官方新品目录在售。
+price:
+  min: 899.99
+  max: 899.99
+  currency: USD
 specs:
   lengthOptions: 155 / 161 / 167 / 173 / 179 cm
   waistWidth: 102
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nordica.com/usa/en/collection/women/skis/santa-ana/santa-ana-102
+  snapshot_url: https://www.skiessentials.com/products/2026-nordica-santa-ana-102-women-s-skis-0a548500
 images:
   - url: https://www.nordica.com/storage/Product/0A548500001_SANTA_ANA_102_FLAT.png
     kind: face

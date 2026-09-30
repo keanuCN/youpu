@@ -5,6 +5,10 @@ model: Riders' Spec DR
 year: 2027
 title: BC Stream Riders' Spec DR 2027
 one_liner: 宽板头与方向性轮廓兼顾压雪道和粉雪；商品资料标注 50 mm setback，不同鼻尾形状版本的滑行表现有别。
+price:
+  min: 129800
+  max: 129800
+  currency: JPY
 specs:
   stanceSetback: 50
   shape: Directional
@@ -39,5 +43,5 @@ editorial_scores:
 data_source:
   kind: manual
   origin_url: https://www.follows.co.jp/SHOP/sn-sb-bc-004.html
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  snapshot_url: https://www.follows.co.jp/SHOP/sn-sb-bc-004.html
 status: published

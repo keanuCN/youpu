@@ -5,6 +5,10 @@ model: Shape V2 R
 year: 2026
 title: HEAD Shape V2 R 2025/26
 one_liner: HEAD V-shape 入门全地域系列；国内平台存在板+固定器销售款。
+price:
+  min: 450
+  max: 450
+  currency: EUR
 specs:
   lengthOptions: 142 / 149 / 156 / 163 / 170 / 177 cm
   waistWidth: 70
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.head.com/en_FI/product/shape-v2-r-316225
+  snapshot_url: https://esqui-outlet.com/en/skis/4650-head-shape-v2-r-amt-ski-set-316225-pr-10-gw-bindings-114528.html
 images:
   - url: https://cdn-mdb.head.com/CDN3/D/316225/1/1820x2428/shape-v2-r.webp
     kind: face

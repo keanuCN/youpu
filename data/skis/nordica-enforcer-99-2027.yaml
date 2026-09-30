@@ -5,6 +5,10 @@ model: Enforcer 99
 year: 2027
 title: Nordica Enforcer 99 2026/27
 one_liner: Enforcer 系列全山地型号，2026/27 官方产品页标注木芯与 Pulse Core 结构。
+price:
+  min: 849.99
+  max: 849.99
+  currency: USD
 specs:
   lengthOptions: 167 / 173 / 179 / 185 / 191 cm
   waistWidth: 99
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-99-flat
+  snapshot_url: https://www.ski-depot.com/collections/nordica-skis
 images:
   - url: https://www.nordica.com/storage/Product/0A668200001_ENFORCER_99.png
     kind: face

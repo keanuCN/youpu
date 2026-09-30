@@ -5,6 +5,10 @@ model: S/LAB QST Blank
 year: 2027
 title: Salomon S/LAB QST Blank 2026/27
 one_liner: QST freeride 系列的宽板腰粉雪型号，官方冬季目录在售。
+price:
+  min: 899.95
+  max: 899.95
+  currency: USD
 specs:
   lengthOptions: 170 / 178 / 186 / 192 cm
   waistWidth: 112
@@ -16,6 +20,7 @@ specs:
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/s-lab-qst-blank-li7032
+  snapshot_url: https://www.salomon.com/en-us/product/s-lab-qst-blank-li7032
 images:
   - url: https://cdn.dam.salomon.com/c7f0b14e-8431-4677-ad87-b2f301454446/L47713400%2B/PNG-2000px-max-72dpi.png
     kind: face

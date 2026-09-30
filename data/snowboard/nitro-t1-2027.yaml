@@ -5,6 +5,10 @@ model: T1
 year: 2027
 title: Nitro T1 2027
 one_liner: Nitro 公园与街式取向的双向板，Cam-Out Camber 配合强化刃边、Powercore II 和 Sintered EcoSpeed HD 底板，官方 flex 标注 7/10。
+price:
+  min: 579.9
+  max: 579.9
+  currency: EUR
 specs:
   length: 155
   waistWidth: 250
@@ -44,4 +48,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/products/t1-snowboard-1
+  snapshot_url: https://www.nitrosnowboards.com/products/t1-snowboard-1
 status: published

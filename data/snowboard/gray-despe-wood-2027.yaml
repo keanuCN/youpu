@@ -5,6 +5,10 @@ model: DESPE WOOD
 year: 2027
 title: GRAY DESPE WOOD 2027
 one_liner: 木芯与玻纤结构的刻滑入门取向型号，26/27 全长度更新为 Active Camber，并提供部分加宽尺寸。
+price:
+  min: 93500
+  max: 93500
+  currency: JPY
 specs:
   shape: Directional
   profile: Active Camber
@@ -38,5 +42,5 @@ editorial_scores:
 data_source:
   kind: manual
   origin_url: https://graysnowboards.co.jp/tech-2627-eng/
-  snapshot_url: https://thesnowfever.com/list/snowboards?brand=72
+  snapshot_url: https://graysnowboards.co.jp/product/
 status: published

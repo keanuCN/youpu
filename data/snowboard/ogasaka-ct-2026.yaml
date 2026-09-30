@@ -5,6 +5,10 @@ model: CT
 year: 2026
 title: OGASAKA CT 2026
 one_liner: 面向从初级到高水平滑手的全能刻滑板，方向性板型与较均衡的软硬设定兼顾刻滑和日常滑行。
+price:
+  min: 114400
+  max: 116600
+  currency: JPY
 specs:
   length: 156
   profile: Camber
@@ -46,5 +50,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.ogasaka-snowboard.com/product_25_03_ct.html
-  snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
+  snapshot_url: https://www.ogasaka-snowboard.com/product_25_03_ct.html
 status: published
