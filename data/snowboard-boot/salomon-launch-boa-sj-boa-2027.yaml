@@ -5,8 +5,13 @@ model: "Launch BOA SJ BOA"
 year: 2027
 title: "Salomon Launch BOA SJ BOA 2027"
 one_liner: "官方档案型号；BOA 配合内部脚跟锁定系统。尺码与脚感以实际试穿为准。"
+price:
+  min: 389.95
+  max: 389.95
+  currency: USD
 specs:
   lacingSystem: "单旋钮 H4 Coiler BOA + BOA STR8JKT Pro 三点后跟锁定"
+  bindingCompatibility: "传统绑带式固定器；按雪鞋尺码核对固定器尺码"
   flex: "中等"
   fit: "常规楦"
   terrain: "全山/自由式"
@@ -25,4 +30,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670
+  snapshot_url: https://www.salomon.com/en-us/c/men/winter-equipment/snowboard/boots
 status: published

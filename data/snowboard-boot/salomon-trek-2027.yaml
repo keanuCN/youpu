@@ -5,8 +5,13 @@ model: "Trek"
 year: 2027
 title: "Salomon Trek 2027"
 one_liner: "官方档案型号；徒步/登山取向单板雪鞋。尺码与脚感以实际试穿为准。"
+price:
+  min: 599.95
+  max: 599.95
+  currency: USD
 specs:
   lacingSystem: "传统鞋带 + BOA Trek 徒步/滑行模式调节"
+  bindingCompatibility: "传统绑带式固定器；按雪鞋尺码核对固定器尺码"
   terrain: 分体板徒步/登山
   flex: "偏硬"
   fit: "常规楦"
@@ -25,4 +30,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/trek-lg8695
+  snapshot_url: https://www.salomon.com/en-us/c/men/winter-equipment/snowboard/boots
 status: published
