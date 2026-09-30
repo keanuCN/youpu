@@ -172,6 +172,7 @@ const VERIFIED_SMARTMARINE_THUMBNAIL_PATH = "/cdn/images/products/xlarge/8089900
 const VERIFIED_DECATHLON_SNB_100_THUMBNAIL_PATH =
   "/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg";
 const VERIFIED_DECATHLON_GEAR_ROW_PATHS = new Set([
+  VERIFIED_DECATHLON_SNB_100_THUMBNAIL_PATH,
   "/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg",
   "/p2573496/k%24353e5fd924967da12911035b5eeb0342/picture.jpg",
 ]);
@@ -460,10 +461,10 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       if (
         image.pathname === VERIFIED_DECATHLON_SNB_100_THUMBNAIL_PATH &&
         image.search === "" &&
-        widthLimit >= 480 &&
         widthLimit < 1600
       ) {
-        image.searchParams.set("f", `${Math.min(widthLimit, 800)}x0`);
+        const width = ([168, 480, 800] as const).find((candidate) => candidate >= widthLimit) ?? 800;
+        image.searchParams.set("f", `${width}x0`);
         return image.toString();
       }
       const requestedFormat = image.searchParams.get("f");

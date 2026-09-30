@@ -791,9 +791,17 @@ test("uses the measured 800px Decathlon SNB 100 image variant only for that exac
 
   assert.equal(preferHighResolutionProductImage(image), image);
   assert.equal(new URL(preferProductThumbnail(image, 480)).searchParams.get("f"), "480x0");
+  assert.equal(new URL(preferProductThumbnail(image, 240)).searchParams.get("f"), "480x0");
+  assert.equal(new URL(preferGearRowThumbnail(image)).searchParams.get("f"), "168x0");
+
+  const proxied = `/api/image-proxy?url=${encodeURIComponent(image)}&section=gear-row`;
+  const proxyThumbnail = new URL(preferGearRowThumbnail(proxied), "https://youpu.local");
+  assert.equal(new URL(proxyThumbnail.searchParams.get("url")!).searchParams.get("f"), "168x0");
+  assert.equal(proxyThumbnail.searchParams.get("section"), "gear-row");
 
   const unrelated = image.replace("p2027365", "p2027366");
   assert.equal(preferProductThumbnail(unrelated), unrelated);
+  assert.equal(preferGearRowThumbnail(unrelated), unrelated);
 });
 
 test("limits approved Decathlon f=<width>x0 thumbnails and preserves other URL data", () => {
