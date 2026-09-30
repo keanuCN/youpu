@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { isAiGeneratedImageUrl, preferProductThumbnail } from "@/lib/image-url";
+import {
+  isAiGeneratedImageUrl,
+  preferProductThumbnail,
+  responsiveProductImageSrcSet,
+  responsiveProductImageSrcSetType,
+} from "@/lib/image-url";
 import { SafeImage } from "./safe-image";
 import type { GalleryShot } from "@/types";
 
@@ -17,6 +22,8 @@ export function Gallery({
   const selectedIdx = Math.min(idx, Math.max(productShots.length - 1, 0));
   const active = productShots[selectedIdx];
   if (!active) return <div aria-hidden="true" className="aspect-[4/3] sm:aspect-[5/4]" />;
+  const activeSrcSet = responsiveProductImageSrcSet(active.url);
+  const activeSrcSetType = responsiveProductImageSrcSetType(active.url);
 
   return (
     <div className="flex flex-col gap-3">
@@ -24,6 +31,9 @@ export function Gallery({
         <SafeImage
           key={active.url}
           src={active.url}
+          srcSet={activeSrcSet}
+          srcSetType={activeSrcSetType}
+          sizes={activeSrcSet ? "(min-width: 1024px) 50vw, 100vw" : undefined}
           alt={`${alt} · ${active.label}`}
           loading="eager"
           fetchPriority="high"
@@ -52,6 +62,9 @@ export function Gallery({
             >
               <SafeImage
                 src={preferProductThumbnail(s.url)}
+                srcSet={responsiveProductImageSrcSet(s.url)}
+                srcSetType={responsiveProductImageSrcSetType(s.url)}
+                sizes="(min-width: 640px) 80px, 64px"
                 alt=""
                 loading="lazy"
                 fallbackLabel={`${alt} · ${s.label}`}

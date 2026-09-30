@@ -123,6 +123,22 @@ test("provides q90 OSS WebP candidates only for the verified Insta360 Ace Pro 2 
   assert.equal(responsiveProductImageSrcSetType(source.replace("wassets.insta360.com", "other.example")), undefined);
 });
 
+test("keeps verified responsive WebP variants when detail gallery images use the local proxy", () => {
+  const source = "https://wassets.insta360.com/common/4d7317543e0f4fee9b0b037a4d24d961/pc-acepro2-CN.png";
+  const proxy = `/api/image-proxy?url=${encodeURIComponent(source)}&section=gallery`;
+  const candidates = responsiveProductImageSrcSet(proxy)!.split(", ");
+  const compactProxy = new URL(candidates[0]!.replace(/ 188w$/, ""), "https://youpu.local");
+  const fullProxy = new URL(candidates[1]!.replace(/ 376w$/, ""), "https://youpu.local");
+  const compact = new URL(compactProxy.searchParams.get("url")!);
+  const full = new URL(fullProxy.searchParams.get("url")!);
+
+  assert.equal(compactProxy.searchParams.get("section"), "gallery");
+  assert.equal(fullProxy.searchParams.get("section"), "gallery");
+  assert.equal(compact.searchParams.get("x-oss-process"), "image/resize,w_188/format,webp/quality,q_90");
+  assert.equal(full.searchParams.get("x-oss-process"), "image/format,webp/quality,q_90");
+  assert.equal(responsiveProductImageSrcSetType(proxy), "image/webp");
+});
+
 test("keeps product detail images high resolution while bounding verified CDN sources", () => {
   const shopify = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=800";
   assert.equal(new URL(preferHighResolutionProductImage(shopify)).searchParams.get("width"), "1600");
