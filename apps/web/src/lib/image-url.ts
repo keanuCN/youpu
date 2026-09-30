@@ -586,21 +586,34 @@ export function responsiveReviewImageSrcSet(source: string): string | undefined 
   return compact && large ? `${compact} 160w, ${large} 240w` : undefined;
 }
 
-/** 小型列表图片只收窄 Shopify 请求，其余来源沿用现有变体规则。 */
+/** 小型列表图片收窄已验证的 Shopify 和 Salomon 变体，其余来源沿用现有规则。 */
 export function preferCompactProductThumbnail(source: string): string {
   try {
     const image = new URL(source, "https://youpu.local");
     if (image.pathname === IMAGE_PROXY_PATH) {
       const proxiedSource = image.searchParams.get("url");
-      return proxiedSource && isShopifyProductImage(proxiedSource)
-        ? preferProductThumbnail(source, 96)
-        : preferProductThumbnail(source, 480);
+      if (proxiedSource && isShopifyProductImage(proxiedSource)) return preferProductThumbnail(source, 96);
+      if (proxiedSource && isSalomonDamProductImage(proxiedSource)) return preferProductThumbnail(source, 120);
+      return preferProductThumbnail(source, 480);
     }
-    return isShopifyProductImage(source)
-      ? preferProductThumbnail(source, 96)
-      : preferProductThumbnail(source, 480);
+    if (isShopifyProductImage(source)) return preferProductThumbnail(source, 96);
+    if (isSalomonDamProductImage(source)) return preferProductThumbnail(source, 120);
+    return preferProductThumbnail(source, 480);
   } catch {
     return preferProductThumbnail(source, 480);
+  }
+}
+
+function isSalomonDamProductImage(source: string): boolean {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      return proxiedSource ? isSalomonDamProductImage(proxiedSource) : false;
+    }
+    return image.hostname === "cdn.dam.salomon.com" && isAllowedRemoteImageUrl(image.toString());
+  } catch {
+    return false;
   }
 }
 

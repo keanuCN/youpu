@@ -107,7 +107,17 @@ test("limits compact-list Shopify thumbnails to 96px but preserves other source 
 
   const capita = "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/verified-doa.webp?v=1&width=800";
   assert.equal(preferCompactProductThumbnail(capita), preferProductThumbnail(capita, 96));
-  const other = "https://cdn.dam.salomon.com/product.png?width=2000";
+  const salomon =
+    "https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12";
+  assert.equal(new URL(preferCompactProductThumbnail(salomon)).searchParams.get("width"), "120");
+  const proxiedSalomon = new URL(
+    preferCompactProductThumbnail(`/api/image-proxy?url=${encodeURIComponent(salomon)}&source=profile`),
+    "https://youpu.local",
+  );
+  assert.equal(new URL(proxiedSalomon.searchParams.get("url")!).searchParams.get("width"), "120");
+  assert.equal(proxiedSalomon.searchParams.get("source"), "profile");
+
+  const other = "https://cdn.dam.salomon.com/unverified/product.png?width=2000";
   assert.equal(preferCompactProductThumbnail(other), preferProductThumbnail(other, 480));
 });
 
