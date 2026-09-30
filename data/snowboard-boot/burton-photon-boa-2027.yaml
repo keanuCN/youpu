@@ -5,10 +5,16 @@ model: "Photon BOA"
 year: 2027
 title: "Burton Photon BOA 2027"
 one_liner: "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。"
+price:
+  min: 479.95
+  max: 479.95
+  currency: USD
 specs:
   lacingSystem: "双区 BOA"
+  bindingCompatibility: "传统绑带式固定器；按雪鞋尺码核对固定器尺码"
   flex: "中等"
   fit: "常规楦/宽楦可选"
+  terrain: "全山地/自由滑"
 images:
   - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920"
     kind: face

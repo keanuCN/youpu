@@ -4,6 +4,10 @@ brand: kailas
 model: BM45 PRO Ski Bibs Unisex
 year: 2026
 title: Kailas BM45 PRO Ski Bibs Unisex – kailasgear.com
+price:
+  min: 580
+  max: 580
+  currency: USD
 specs:
   garmentType: bib-pants
   construction: 3L

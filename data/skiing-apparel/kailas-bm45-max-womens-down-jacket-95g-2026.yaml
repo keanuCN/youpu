@@ -4,6 +4,10 @@ brand: kailas
 model: BM45 MAX Down Ski Jacket Women's
 year: 2026
 title: Kailas BM45 MAX Down Ski Jacket Women's – kailasgear.com
+price:
+  min: 920
+  max: 920
+  currency: USD
 specs:
   garmentType: jacket
   construction: 3L

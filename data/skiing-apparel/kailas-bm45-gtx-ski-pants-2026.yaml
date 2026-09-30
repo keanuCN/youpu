@@ -4,6 +4,10 @@ brand: kailas
 model: BM45 GTX Ski Pants
 year: 2026
 title: Kailas BM45 GTX Ski Pants – kailasgear.com
+price:
+  min: 405
+  max: 405
+  currency: USD
 specs:
   garmentType: pants
   construction: 3L

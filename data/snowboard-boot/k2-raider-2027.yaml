@@ -5,8 +5,13 @@ model: "Raider"
 year: 2027
 title: "K2 Raider 2027"
 one_liner: "官方档案型号；H5 BOA 外壳系带与 Fast-In 内胆系带，适合初级至中级滑手。尺码与脚感以实际试穿为准。"
+price:
+  min: 279.95
+  max: 279.95
+  currency: USD
 specs:
   lacingSystem: "H5 单 BOA 外壳系带 + Fast-In 内胆系带"
+  bindingCompatibility: "传统绑带式固定器；按雪鞋尺码核对固定器尺码"
   terrain: "大山/粉雪"
 images:
   - url: "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto"
@@ -23,4 +28,5 @@ editorial_scores:
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/raider-mens-snowboard-boots-kb261667?color=sand
+  snapshot_url: https://k2snow.com/en-us/c/snowboard-boots/
 status: published

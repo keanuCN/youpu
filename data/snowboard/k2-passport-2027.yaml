@@ -5,6 +5,10 @@ model: Passport
 year: 2027
 title: K2 Passport 2027
 one_liner: 定向全山自由滑板，兼顾压雪道、粉雪和大山地形；中高级滑手可按脚长在标准与宽版之间选择。
+price:
+  min: 599.95
+  max: 599.95
+  currency: USD
 specs:
   length: 157
   effectiveEdge: 1180

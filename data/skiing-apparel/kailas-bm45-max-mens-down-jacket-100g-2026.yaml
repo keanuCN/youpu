@@ -4,6 +4,10 @@ brand: kailas
 model: BM45 MAX Down Ski Jacket Men's (100g 800FP Long)
 year: 2026
 title: Kailas BM45 MAX Down Ski Jacket Men's – kailasgear.com
+price:
+  min: 990
+  max: 990
+  currency: USD
 specs:
   garmentType: jacket
   construction: 3L

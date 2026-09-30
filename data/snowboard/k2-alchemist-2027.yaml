@@ -5,6 +5,10 @@ model: Alchemist
 year: 2027
 title: K2 Alchemist 2027
 one_liner: K2 Landscape 系列旗舰定向野雪板，面向专家滑手，以高速稳定、精准控刃和大山地形为主要方向。
+price:
+  min: 849.95
+  max: 849.95
+  currency: USD
 specs:
   core: S1 Pro Core
   fiberglass: SpaceGlass / HyperWeave Carbon Fiber Biax Weave / Spectral Braid

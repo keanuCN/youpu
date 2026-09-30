@@ -5,6 +5,10 @@ model: Excavator
 year: 2027
 title: K2 Excavator 2027
 one_liner: 宽腰短板思路的全山地型号，主打压雪道深弯与新雪浮力，官方建议按常规雪板尺寸适当缩短选择。
+price:
+  min: 629.95
+  max: 629.95
+  currency: USD
 specs:
   profile: Directional Camber
   profileFamily: camber
