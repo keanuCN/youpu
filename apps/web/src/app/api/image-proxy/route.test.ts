@@ -154,7 +154,7 @@ test("returns 406 without an upstream request when Accept has no supported raste
   try {
     const source =
       "https://cdn.amersports.com/0acef4a9-61b7-47b0-84f4-b49f00cdfc5f/product.png?fit=bounds&width=800&height=800";
-    for (const accept of ["image/svg+xml", "application/json", "image/png;q=0"]) {
+    for (const accept of ["", "image/svg+xml", "application/json", "image/png;q=0"]) {
       const response = await GET(
         new NextRequest(`http://localhost:3000/api/image-proxy?url=${encodeURIComponent(source)}`, {
           headers: { Accept: accept },

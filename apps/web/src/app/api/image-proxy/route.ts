@@ -12,7 +12,7 @@ const FALLBACK_IMAGE_TYPES = ["image/webp", "image/jpeg", "image/png", "image/gi
 const DEFAULT_IMAGE_ACCEPT = FALLBACK_IMAGE_TYPES.join(",");
 
 function imageFormatsFor(accept: string | null): { header: string; types: Set<string> } {
-  if (!accept) {
+  if (accept === null) {
     return { header: DEFAULT_IMAGE_ACCEPT, types: new Set(FALLBACK_IMAGE_TYPES) };
   }
 
