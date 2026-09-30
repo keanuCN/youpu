@@ -9,6 +9,8 @@ import {
 import { SafeImage } from "./safe-image";
 import type { GalleryShot } from "@/types";
 
+const GALLERY_THUMBNAIL_WIDTH = 240;
+
 /** 详情页只显示可信的商品图，完整保留原图比例。 */
 export function Gallery({
   shots,
@@ -61,7 +63,7 @@ export function Gallery({
               )}
             >
               <SafeImage
-                src={preferProductThumbnail(s.url)}
+                src={preferProductThumbnail(s.url, GALLERY_THUMBNAIL_WIDTH)}
                 srcSet={responsiveProductImageSrcSet(s.url)}
                 srcSetType={responsiveProductImageSrcSetType(s.url)}
                 sizes="(min-width: 640px) 80px, 64px"

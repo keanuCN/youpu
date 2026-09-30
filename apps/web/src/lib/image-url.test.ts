@@ -56,6 +56,20 @@ test("limits Shopify compare-dock images to 96px while preserving proxy source p
   assert.equal(preferProductThumbnail(nonShopify, 96), nonShopify);
 });
 
+test("sizes Shopify gallery thumbnails for an 80px slot at 3x density", () => {
+  const source = "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223010FA9_1.webp?v=1783620024&width=1920";
+  const thumbnail = new URL(preferProductThumbnail(source, 240));
+  assert.equal(thumbnail.searchParams.get("width"), "240");
+  assert.equal(thumbnail.searchParams.get("v"), "1783620024");
+
+  const proxied = `/api/image-proxy?url=${encodeURIComponent(source)}&section=gallery`;
+  const proxiedThumbnail = new URL(preferProductThumbnail(proxied, 240), "https://youpu.local");
+  const nested = new URL(proxiedThumbnail.searchParams.get("url")!);
+  assert.equal(nested.searchParams.get("width"), "240");
+  assert.equal(nested.searchParams.get("v"), "1783620024");
+  assert.equal(proxiedThumbnail.searchParams.get("section"), "gallery");
+});
+
 test("uses responsive 160/240px TOS WebP candidates only for review image thumbnails", () => {
   const original = "https://youpu.tos-cn-beijing.volces.com/review-images/rating-photo.webp";
   const thumbnail = new URL(preferReviewImageThumbnail(original));
