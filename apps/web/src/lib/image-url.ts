@@ -142,8 +142,10 @@ const VERIFIED_GIANT_THUMBNAIL_PATHS = new Map([
 ]);
 const VERIFIED_CANYON_THUMBNAIL_PATH =
   "/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw07984cc9/images/full/full_2023_/2023/full_2023_3170_neuron-cf-8_sr-bk_P5.png";
-const VERIFIED_SPECIALIZED_TARMAC_GEAR_ROW_PATH =
-  "/i/specialized/94926-54_TARMAC-SL8-COMP-AXS-CARB-WHT_HERO-SQUARE";
+const VERIFIED_SPECIALIZED_GEAR_ROW_PATHS = new Set([
+  "/i/specialized/94926-02_TARMAC-SL8-SW-AXS-PRMFJDMET-METWHT_HERO-SQUARE",
+  "/i/specialized/94926-54_TARMAC-SL8-COMP-AXS-CARB-WHT_HERO-SQUARE",
+]);
 const VERIFIED_CANYON_ENDURACE_GEAR_ROW_PATH =
   "/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1779435706/2027_FULL_endurace_cf-7_4627_R129_P01_okspta";
 const VERIFIED_CANYON_CLOUDINARY_THUMBNAILS = new Map([
@@ -690,16 +692,16 @@ function isVerifiedBlueTomatoRidersChoiceImage(source: string): boolean {
   }
 }
 
-function isVerifiedSpecializedTarmacGearRowImage(source: string): boolean {
+function isVerifiedSpecializedGearRowImage(source: string): boolean {
   try {
     const image = new URL(source, "https://youpu.local");
     if (image.pathname === IMAGE_PROXY_PATH) {
       const proxiedSource = image.searchParams.get("url");
-      return proxiedSource ? isVerifiedSpecializedTarmacGearRowImage(proxiedSource) : false;
+      return proxiedSource ? isVerifiedSpecializedGearRowImage(proxiedSource) : false;
     }
     return (
       image.hostname === "assets.specialized.com" &&
-      image.pathname === VERIFIED_SPECIALIZED_TARMAC_GEAR_ROW_PATH &&
+      VERIFIED_SPECIALIZED_GEAR_ROW_PATHS.has(image.pathname) &&
       isAllowedRemoteImageUrl(image.toString())
     );
   } catch {
@@ -732,7 +734,7 @@ export function preferGearRowThumbnail(source: string, maxWidth = 168): string {
     isK2AmplienceProductImage(source) ||
     isVerifiedDecathlonGearRowImage(source) ||
     isVerifiedBlueTomatoRidersChoiceImage(source) ||
-    isVerifiedSpecializedTarmacGearRowImage(source)
+    isVerifiedSpecializedGearRowImage(source)
   ) {
     return preferProductThumbnail(source, maxWidth);
   }

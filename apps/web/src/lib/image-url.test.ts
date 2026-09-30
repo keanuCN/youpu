@@ -213,6 +213,16 @@ test("uses compact GearRow thumbnails only for verified image sources", () => {
   assert.equal(specializedProxySource.searchParams.get("w"), "168");
   assert.equal(specializedProxySource.searchParams.get("h"), "168");
   assert.equal(specializedProxyThumbnail.searchParams.get("section"), "gear-row");
+
+  const specializedSWorks =
+    "https://assets.specialized.com/i/specialized/94926-02_TARMAC-SL8-SW-AXS-PRMFJDMET-METWHT_HERO-SQUARE?w=800&h=800";
+  const specializedSWorksThumbnail = new URL(preferGearRowThumbnail(specializedSWorks));
+  assert.equal(specializedSWorksThumbnail.searchParams.get("w"), "168");
+  assert.equal(specializedSWorksThumbnail.searchParams.get("h"), "168");
+  assert.equal(
+    preferGearRowThumbnail(specializedSWorks.replace("94926-02", "unverified")),
+    preferProductThumbnail(specializedSWorks.replace("94926-02", "unverified")),
+  );
   assert.equal(
     preferGearRowThumbnail(specialized.replace("94926-54", "another-product")),
     preferProductThumbnail(specialized.replace("94926-54", "another-product")),
