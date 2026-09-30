@@ -7,6 +7,7 @@ import {
   preferHighResolutionProductImage,
   preferCompactProductThumbnail,
   preferGearRowThumbnail,
+  preferMixedCompareSummaryThumbnail,
   preferProductThumbnail,
   preferReviewImageThumbnail,
   responsiveReviewImageSrcSet,
@@ -139,6 +140,20 @@ test("uses 168px GearRow thumbnails only for verified resizable Shopify and Salo
   const korua =
     "https://original.accentuate.io/6939308982453/1758747603396/KORUA-Shapes-Cafe-Racer-Nicholas-Wolken-Thumbnail-01.jpg?v=1758747603396";
   assert.equal(new URL(preferGearRowThumbnail(korua)).searchParams.get("transform"), "resize=640");
+});
+
+test("uses 128px only for Shopify images in the 56px mixed-compare summary", () => {
+  const shopify = "https://salomon.jp/cdn/shop/files/board.png?v=2&width=640";
+  assert.equal(new URL(preferMixedCompareSummaryThumbnail(shopify)).searchParams.get("width"), "128");
+
+  const proxied = `/api/image-proxy?url=${encodeURIComponent(shopify)}&source=compare`;
+  const proxiedThumbnail = new URL(preferMixedCompareSummaryThumbnail(proxied), "https://youpu.local");
+  assert.equal(new URL(proxiedThumbnail.searchParams.get("url")!).searchParams.get("width"), "128");
+  assert.equal(proxiedThumbnail.searchParams.get("source"), "compare");
+
+  const salomonDam =
+    "https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png?width=800";
+  assert.equal(new URL(preferMixedCompareSummaryThumbnail(salomonDam)).searchParams.get("width"), "192");
 });
 
 test("provides responsive small and middle variants only for the verified Atomic Bent Chetler image", () => {

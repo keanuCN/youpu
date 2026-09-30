@@ -13,7 +13,11 @@ import { GEAR, getGear } from "@/data/boards";
 import { getCategory } from "@/data/categories";
 import { buildCompareMatrix, compareConclusion, formatSpecValue } from "@/lib/domain";
 import { getCategoryProducts, getCompareProducts, resolveContentSource } from "@/lib/content";
-import { preferCompactProductThumbnail, preferProductThumbnail } from "@/lib/image-url";
+import {
+  preferCompactProductThumbnail,
+  preferMixedCompareSummaryThumbnail,
+  preferProductThumbnail,
+} from "@/lib/image-url";
 import { hasEditorialScores, hasMedia, mediaUrl } from "@/lib/gear-state";
 import { clearDock, recordCompare, removeFromDock, setDock, useCurrentUser } from "@/lib/store";
 import { track } from "@/lib/track";
@@ -152,7 +156,7 @@ export default function ComparePage() {
               <div key={gear.id} className="flex items-center gap-3 bg-background p-4">
                 {image ? (
                   <SafeImage
-                    src={preferProductThumbnail(image, 192)}
+                    src={preferMixedCompareSummaryThumbnail(image)}
                     alt=""
                     fallbackLabel={`${gear.brand} ${gear.model}`}
                     fallbackMode="muted"

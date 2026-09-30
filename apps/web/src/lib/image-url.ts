@@ -624,6 +624,11 @@ export function preferGearRowThumbnail(source: string, maxWidth = 168): string {
     : preferProductThumbnail(source);
 }
 
+/** 混品类提示的图盒为 56px；Shopify 使用 128px，其他来源保留 192px 规则。 */
+export function preferMixedCompareSummaryThumbnail(source: string): string {
+  return isShopifyProductImage(source) ? preferProductThumbnail(source, 128) : preferProductThumbnail(source, 192);
+}
+
 function isShopifyProductImage(source: string): boolean {
   try {
     const image = new URL(source, "https://youpu.local");
