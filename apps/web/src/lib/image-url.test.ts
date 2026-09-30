@@ -123,7 +123,7 @@ test("limits compact-list Shopify thumbnails to 96px but preserves other source 
   assert.equal(preferCompactProductThumbnail(other), preferProductThumbnail(other, 480));
 });
 
-test("uses 168px GearRow thumbnails only for verified Shopify, Salomon, and K2 Amplience sources", () => {
+test("uses 168px GearRow thumbnails only for verified Shopify, Salomon, K2, and Decathlon sources", () => {
   const shopify = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=800";
   assert.equal(new URL(preferGearRowThumbnail(shopify)).searchParams.get("width"), "168");
 
@@ -147,6 +147,23 @@ test("uses 168px GearRow thumbnails only for verified Shopify, Salomon, and K2 A
 
   const otherAmplience = "https://cdn.media.amplience.net/i/other/board.jpg?w=1200";
   assert.equal(preferGearRowThumbnail(otherAmplience), preferProductThumbnail(otherAmplience));
+
+  const decathlon =
+    "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto&quality=80";
+  const decathlonThumbnail = new URL(preferGearRowThumbnail(decathlon));
+  assert.equal(decathlonThumbnail.searchParams.get("f"), "168x0");
+  assert.equal(decathlonThumbnail.searchParams.get("format"), "auto");
+  assert.equal(decathlonThumbnail.searchParams.get("quality"), "80");
+
+  const proxy = `/api/image-proxy?url=${encodeURIComponent(decathlon)}&section=gear-row`;
+  const proxyThumbnail = new URL(preferGearRowThumbnail(proxy), "https://youpu.local");
+  const proxySource = new URL(proxyThumbnail.searchParams.get("url")!);
+  assert.equal(proxySource.searchParams.get("f"), "168x0");
+  assert.equal(proxySource.searchParams.get("format"), "auto");
+  assert.equal(proxyThumbnail.searchParams.get("section"), "gear-row");
+
+  const otherDecathlon = decathlon.replace("p2704355", "p2704356");
+  assert.equal(preferGearRowThumbnail(otherDecathlon), preferProductThumbnail(otherDecathlon));
 
   const smartMarine = "https://www.smartmarine.co.nz/cdn/images/products/xlarge/8089900_a.jpg";
   assert.equal(

@@ -165,6 +165,8 @@ const VERIFIED_FLOW_FUSE_THUMBNAIL_PATH =
 const VERIFIED_SMARTMARINE_THUMBNAIL_PATH = "/cdn/images/products/xlarge/8089900_a.jpg";
 const VERIFIED_DECATHLON_SNB_100_THUMBNAIL_PATH =
   "/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg";
+const VERIFIED_DECATHLON_SNB_500_JACKET_PATH =
+  "/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg";
 const VERIFIED_ATOMIC_BENT_CHETLER_IMAGE_PATH =
   "/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg";
 const VERIFIED_INSTA360_ACE_PRO_2_IMAGE_PATH =
@@ -634,9 +636,31 @@ function isK2AmplienceProductImage(source: string): boolean {
   }
 }
 
-/** 56px GearRow 仅对已验证的 Shopify、Salomon 与 K2 Amplience 来源使用小档位。 */
+function isVerifiedDecathlonSnb500Image(source: string): boolean {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      return proxiedSource ? isVerifiedDecathlonSnb500Image(proxiedSource) : false;
+    }
+    return (
+      image.hostname === "contents.mediadecathlon.com" &&
+      image.pathname === VERIFIED_DECATHLON_SNB_500_JACKET_PATH &&
+      isAllowedRemoteImageUrl(image.toString())
+    );
+  } catch {
+    return false;
+  }
+}
+
+/** 56px GearRow 仅对已验证的 Shopify、Salomon、K2 与迪卡侬来源使用小档位。 */
 export function preferGearRowThumbnail(source: string, maxWidth = 168): string {
-  return isShopifyProductImage(source) || isSalomonDamProductImage(source) || isK2AmplienceProductImage(source)
+  return (
+    isShopifyProductImage(source) ||
+    isSalomonDamProductImage(source) ||
+    isK2AmplienceProductImage(source) ||
+    isVerifiedDecathlonSnb500Image(source)
+  )
     ? preferProductThumbnail(source, maxWidth)
     : preferProductThumbnail(source);
 }
