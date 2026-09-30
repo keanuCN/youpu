@@ -142,6 +142,10 @@ const VERIFIED_GIANT_THUMBNAIL_PATHS = new Map([
 ]);
 const VERIFIED_CANYON_THUMBNAIL_PATH =
   "/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw07984cc9/images/full/full_2023_/2023/full_2023_3170_neuron-cf-8_sr-bk_P5.png";
+const VERIFIED_SPECIALIZED_TARMAC_GEAR_ROW_PATH =
+  "/i/specialized/94926-54_TARMAC-SL8-COMP-AXS-CARB-WHT_HERO-SQUARE";
+const VERIFIED_CANYON_ENDURACE_GEAR_ROW_PATH =
+  "/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1779435706/2027_FULL_endurace_cf-7_4627_R129_P01_okspta";
 const VERIFIED_CANYON_CLOUDINARY_THUMBNAILS = new Map([
   [
     "/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1779435706/2027_FULL_endurace_cf-7_4627_R129_P01_okspta",
@@ -686,17 +690,56 @@ function isVerifiedBlueTomatoRidersChoiceImage(source: string): boolean {
   }
 }
 
-/** 56px GearRow 仅对已验证的 Shopify、Salomon、K2、迪卡侬与 Blue Tomato 图源使用小档位。 */
+function isVerifiedSpecializedTarmacGearRowImage(source: string): boolean {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      return proxiedSource ? isVerifiedSpecializedTarmacGearRowImage(proxiedSource) : false;
+    }
+    return (
+      image.hostname === "assets.specialized.com" &&
+      image.pathname === VERIFIED_SPECIALIZED_TARMAC_GEAR_ROW_PATH &&
+      isAllowedRemoteImageUrl(image.toString())
+    );
+  } catch {
+    return false;
+  }
+}
+
+function isVerifiedCanyonEnduraceGearRowImage(source: string): boolean {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      return proxiedSource ? isVerifiedCanyonEnduraceGearRowImage(proxiedSource) : false;
+    }
+    return (
+      image.hostname === "dma.canyon.com" &&
+      image.pathname === VERIFIED_CANYON_ENDURACE_GEAR_ROW_PATH &&
+      isAllowedRemoteImageUrl(image.toString())
+    );
+  } catch {
+    return false;
+  }
+}
+
+/** 56px GearRow 仅对已验证的 Shopify、品牌图床与精确图片路径使用小档位。 */
 export function preferGearRowThumbnail(source: string, maxWidth = 168): string {
-  return (
+  if (
     isShopifyProductImage(source) ||
     isSalomonDamProductImage(source) ||
     isK2AmplienceProductImage(source) ||
     isVerifiedDecathlonGearRowImage(source) ||
-    isVerifiedBlueTomatoRidersChoiceImage(source)
-  )
-    ? preferProductThumbnail(source, maxWidth)
-    : preferProductThumbnail(source);
+    isVerifiedBlueTomatoRidersChoiceImage(source) ||
+    isVerifiedSpecializedTarmacGearRowImage(source)
+  ) {
+    return preferProductThumbnail(source, maxWidth);
+  }
+  if (isVerifiedCanyonEnduraceGearRowImage(source) && maxWidth <= 168) {
+    return preferProductThumbnail(source, 240);
+  }
+  return preferProductThumbnail(source);
 }
 
 /** 混品类提示的图盒为 56px；Shopify 使用 128px，其他来源保留 192px 规则。 */

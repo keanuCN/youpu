@@ -123,7 +123,7 @@ test("limits compact-list Shopify thumbnails to 96px but preserves other source 
   assert.equal(preferCompactProductThumbnail(other), preferProductThumbnail(other, 480));
 });
 
-test("uses 168px GearRow thumbnails only for verified Shopify, Salomon, K2, and Decathlon sources", () => {
+test("uses compact GearRow thumbnails only for verified image sources", () => {
   const shopify = "https://eu.burton.com/cdn/shop/files/board.webp?v=1&width=800";
   assert.equal(new URL(preferGearRowThumbnail(shopify)).searchParams.get("width"), "168");
 
@@ -199,6 +199,39 @@ test("uses 168px GearRow thumbnails only for verified Shopify, Salomon, K2, and 
 
   const anotherBlueTomato = blueTomato.replace("305258540_front", "another-image");
   assert.equal(preferGearRowThumbnail(anotherBlueTomato), preferProductThumbnail(anotherBlueTomato));
+
+  const specialized =
+    "https://assets.specialized.com/i/specialized/94926-54_TARMAC-SL8-COMP-AXS-CARB-WHT_HERO-SQUARE?variant=main";
+  const specializedThumbnail = new URL(preferGearRowThumbnail(specialized));
+  assert.equal(specializedThumbnail.searchParams.get("w"), "168");
+  assert.equal(specializedThumbnail.searchParams.get("h"), "168");
+  assert.equal(specializedThumbnail.searchParams.get("variant"), "main");
+  assert.equal(new URL(preferProductThumbnail(specialized)).searchParams.get("w"), "800");
+  const specializedProxy = `/api/image-proxy?url=${encodeURIComponent(specialized)}&section=gear-row`;
+  const specializedProxyThumbnail = new URL(preferGearRowThumbnail(specializedProxy), "https://youpu.local");
+  const specializedProxySource = new URL(specializedProxyThumbnail.searchParams.get("url")!);
+  assert.equal(specializedProxySource.searchParams.get("w"), "168");
+  assert.equal(specializedProxySource.searchParams.get("h"), "168");
+  assert.equal(specializedProxyThumbnail.searchParams.get("section"), "gear-row");
+  assert.equal(
+    preferGearRowThumbnail(specialized.replace("94926-54", "another-product")),
+    preferProductThumbnail(specialized.replace("94926-54", "another-product")),
+  );
+
+  const canyon =
+    "https://dma.canyon.com/image/upload/w_1145,h_645,c_fit/f_jpg/q_auto/v1779435706/2027_FULL_endurace_cf-7_4627_R129_P01_okspta?campaign=test";
+  const canyonThumbnail = new URL(preferGearRowThumbnail(canyon));
+  assert.match(canyonThumbnail.pathname, /\/image\/upload\/w_240,h_645,c_fit\//);
+  assert.equal(canyonThumbnail.searchParams.get("campaign"), "test");
+  assert.match(new URL(preferProductThumbnail(canyon)).pathname, /\/image\/upload\/w_543,c_fit\//);
+  const canyonProxy = `/api/image-proxy?url=${encodeURIComponent(canyon)}&section=gear-row`;
+  const canyonProxyThumbnail = new URL(preferGearRowThumbnail(canyonProxy), "https://youpu.local");
+  const canyonProxySource = new URL(canyonProxyThumbnail.searchParams.get("url")!);
+  assert.match(canyonProxySource.pathname, /\/image\/upload\/w_240,h_645,c_fit\//);
+  assert.equal(canyonProxySource.searchParams.get("campaign"), "test");
+  assert.equal(canyonProxyThumbnail.searchParams.get("section"), "gear-row");
+  const anotherCanyon = canyon.replace("v1779435706", "v1779435707");
+  assert.equal(preferGearRowThumbnail(anotherCanyon), preferProductThumbnail(anotherCanyon));
 
   const smartMarine = "https://www.smartmarine.co.nz/cdn/images/products/xlarge/8089900_a.jpg";
   assert.equal(
