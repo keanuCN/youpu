@@ -181,6 +181,25 @@ test("uses 168px GearRow thumbnails only for verified Shopify, Salomon, K2, and 
   const unverifiedBinding = decathlonBinding.replace("p2573496", "p2573497");
   assert.equal(preferGearRowThumbnail(unverifiedBinding), preferProductThumbnail(unverifiedBinding));
 
+  const blueTomato =
+    "https://images.blue-tomato.com/is/image/bluetomato/305258540_front.jpg-G2lrQmzSDnKgLSGW6Q13RDLjzzE/Riders+Choice+Snowboard.jpg?$b1$";
+  const blueTomatoThumbnail = new URL(preferGearRowThumbnail(blueTomato));
+  assert.equal(blueTomatoThumbnail.searchParams.get("$b1$"), "");
+  assert.equal(blueTomatoThumbnail.searchParams.get("wid"), "168");
+  assert.equal(blueTomatoThumbnail.searchParams.get("hei"), "224");
+  assert.equal(preferProductThumbnail(blueTomato, 480), blueTomato);
+
+  const blueTomatoProxy = `/api/image-proxy?url=${encodeURIComponent(blueTomato)}&section=gear-row`;
+  const blueTomatoProxyThumbnail = new URL(preferGearRowThumbnail(blueTomatoProxy), "https://youpu.local");
+  const blueTomatoProxySource = new URL(blueTomatoProxyThumbnail.searchParams.get("url")!);
+  assert.equal(blueTomatoProxySource.searchParams.get("wid"), "168");
+  assert.equal(blueTomatoProxySource.searchParams.get("hei"), "224");
+  assert.equal(blueTomatoProxySource.searchParams.get("$b1$"), "");
+  assert.equal(blueTomatoProxyThumbnail.searchParams.get("section"), "gear-row");
+
+  const anotherBlueTomato = blueTomato.replace("305258540_front", "another-image");
+  assert.equal(preferGearRowThumbnail(anotherBlueTomato), preferProductThumbnail(anotherBlueTomato));
+
   const smartMarine = "https://www.smartmarine.co.nz/cdn/images/products/xlarge/8089900_a.jpg";
   assert.equal(
     preferGearRowThumbnail(smartMarine),

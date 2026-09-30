@@ -169,6 +169,8 @@ const VERIFIED_DECATHLON_GEAR_ROW_PATHS = new Set([
   "/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg",
   "/p2573496/k%24353e5fd924967da12911035b5eeb0342/picture.jpg",
 ]);
+const VERIFIED_BLUE_TOMATO_RIDERS_CHOICE_PATH =
+  "/is/image/bluetomato/305258540_front.jpg-G2lrQmzSDnKgLSGW6Q13RDLjzzE/Riders+Choice+Snowboard.jpg";
 const VERIFIED_ATOMIC_BENT_CHETLER_IMAGE_PATH =
   "/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg";
 const VERIFIED_INSTA360_ACE_PRO_2_IMAGE_PATH =
@@ -267,6 +269,17 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
       if (!proxiedSource) return source;
       image.searchParams.set("url", preferProductThumbnail(proxiedSource, widthLimit));
       return `${image.pathname}${image.search}`;
+    }
+    if (
+      image.hostname === "images.blue-tomato.com" &&
+      image.pathname === VERIFIED_BLUE_TOMATO_RIDERS_CHOICE_PATH &&
+      image.searchParams.has("$b1$") &&
+      widthLimit <= 168 &&
+      isAllowedRemoteImageUrl(image.toString())
+    ) {
+      image.searchParams.set("wid", String(widthLimit));
+      image.searchParams.set("hei", String(Math.round((widthLimit * 4) / 3)));
+      return image.toString();
     }
     if (
       image.hostname === "gopro.com" &&
@@ -655,13 +668,32 @@ function isVerifiedDecathlonGearRowImage(source: string): boolean {
   }
 }
 
-/** 56px GearRow 仅对已验证的 Shopify、Salomon、K2 与迪卡侬来源使用小档位。 */
+function isVerifiedBlueTomatoRidersChoiceImage(source: string): boolean {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      return proxiedSource ? isVerifiedBlueTomatoRidersChoiceImage(proxiedSource) : false;
+    }
+    return (
+      image.hostname === "images.blue-tomato.com" &&
+      image.pathname === VERIFIED_BLUE_TOMATO_RIDERS_CHOICE_PATH &&
+      image.searchParams.has("$b1$") &&
+      isAllowedRemoteImageUrl(image.toString())
+    );
+  } catch {
+    return false;
+  }
+}
+
+/** 56px GearRow 仅对已验证的 Shopify、Salomon、K2、迪卡侬与 Blue Tomato 图源使用小档位。 */
 export function preferGearRowThumbnail(source: string, maxWidth = 168): string {
   return (
     isShopifyProductImage(source) ||
     isSalomonDamProductImage(source) ||
     isK2AmplienceProductImage(source) ||
-    isVerifiedDecathlonGearRowImage(source)
+    isVerifiedDecathlonGearRowImage(source) ||
+    isVerifiedBlueTomatoRidersChoiceImage(source)
   )
     ? preferProductThumbnail(source, maxWidth)
     : preferProductThumbnail(source);
