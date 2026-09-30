@@ -18,6 +18,12 @@ images:
     alt: "nitro-team-tls-2027 官方商品图"
     source: "品牌官方商品页公开图片；展示授权状态待核"
     sort_order: 0
+editorial_scores:
+  fit: 8
+  support: 8
+  warmth: 8
+  convenience: 7
+  value: 5
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-boots-1
