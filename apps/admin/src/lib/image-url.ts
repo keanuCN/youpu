@@ -1,6 +1,22 @@
 const SMALL_IMAGE_WIDTH = 96;
 const VERIFIED_HEAD_ADMIN_THUMBNAILS = new Map([
   [
+    "/CDN3/D/316485/1/1820x2428/easy-joy-r.webp",
+    "/CDN3/D/316485/1/224x298/easy-joy-r.webp",
+  ],
+  [
+    "/CDN3/D/316225/1/1820x2428/shape-v2-r.webp",
+    "/CDN3/D/316225/1/224x298/shape-v2-r.webp",
+  ],
+  [
+    "/CDN3/D/313236.SET_WO/5/1820x2428/worldcup-rebels-e-sl-pro-without-binding.webp",
+    "/CDN3/D/313236.SET_WO/5/224x298/worldcup-rebels-e-sl-pro-without-binding.webp",
+  ],
+  [
+    "/CDN3/D/313306.SET_31330602/5/1820x2428/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
+    "/CDN3/D/313306.SET_31330602/5/224x298/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
+  ],
+  [
     "/CDN3/D/313365.SET_WO/4/1820x2428/worldcup-rebels-e-slr-without-binding.webp",
     "/CDN3/D/313365.SET_WO/4/224x298/worldcup-rebels-e-slr-without-binding.webp",
   ],
