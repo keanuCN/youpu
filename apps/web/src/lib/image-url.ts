@@ -378,13 +378,13 @@ export function preferProductThumbnail(source: string, maxWidth = PRODUCT_THUMBN
     if (
       image.hostname === "www.canyon.com" &&
       image.pathname === VERIFIED_CANYON_THUMBNAIL_PATH &&
-      widthLimit >= 543 &&
       widthLimit < 1600 &&
       isAllowedRemoteImageUrl(image.toString())
     ) {
+      const thumbnailWidth = ([168, 240, 543] as const).find((candidate) => candidate >= widthLimit) ?? 543;
       image.pathname = VERIFIED_CANYON_THUMBNAIL_PATH.replace(/\.png$/, ".jpg");
       image.search = "";
-      image.searchParams.set("sw", "543");
+      image.searchParams.set("sw", String(thumbnailWidth));
       image.searchParams.set("sfrm", "png");
       image.searchParams.set("q", "90");
       image.searchParams.set("bgcolor", "F2F2F2");
@@ -727,6 +727,23 @@ function isVerifiedCanyonEnduraceGearRowImage(source: string): boolean {
   }
 }
 
+function isVerifiedCanyonNeuronImage(source: string): boolean {
+  try {
+    const image = new URL(source, "https://youpu.local");
+    if (image.pathname === IMAGE_PROXY_PATH) {
+      const proxiedSource = image.searchParams.get("url");
+      return proxiedSource ? isVerifiedCanyonNeuronImage(proxiedSource) : false;
+    }
+    return (
+      image.hostname === "www.canyon.com" &&
+      image.pathname === VERIFIED_CANYON_THUMBNAIL_PATH &&
+      isAllowedRemoteImageUrl(image.toString())
+    );
+  } catch {
+    return false;
+  }
+}
+
 /** 56px GearRow 仅对已验证的 Shopify、品牌图床与精确图片路径使用小档位。 */
 export function preferGearRowThumbnail(source: string, maxWidth = 168): string {
   if (
@@ -734,6 +751,7 @@ export function preferGearRowThumbnail(source: string, maxWidth = 168): string {
     isSalomonDamProductImage(source) ||
     isK2AmplienceProductImage(source) ||
     isVerifiedDecathlonGearRowImage(source) ||
+    isVerifiedCanyonNeuronImage(source) ||
     isVerifiedBlueTomatoRidersChoiceImage(source) ||
     isVerifiedSpecializedGearRowImage(source)
   ) {

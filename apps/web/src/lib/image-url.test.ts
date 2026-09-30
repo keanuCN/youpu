@@ -749,10 +749,18 @@ test("uses the measured 543px Canyon JPEG thumbnail without changing its detail 
   assert.equal(thumbnail.searchParams.get("bgcolor"), "F2F2F2");
 
   assert.equal(preferHighResolutionProductImage(image), image);
-  assert.equal(preferProductThumbnail(image, 480), image);
+  assert.equal(new URL(preferProductThumbnail(image, 480)).searchParams.get("sw"), "543");
+  assert.equal(new URL(preferProductThumbnail(image, 240)).searchParams.get("sw"), "240");
+  assert.equal(new URL(preferGearRowThumbnail(image)).searchParams.get("sw"), "168");
+
+  const proxied = `/api/image-proxy?url=${encodeURIComponent(image)}&section=gear-row`;
+  const proxyThumbnail = new URL(preferGearRowThumbnail(proxied), "https://youpu.local");
+  assert.equal(new URL(proxyThumbnail.searchParams.get("url")!).searchParams.get("sw"), "168");
+  assert.equal(proxyThumbnail.searchParams.get("section"), "gear-row");
 
   const unrelatedImage = image.replace("3170_neuron-cf-8", "unverified-bike");
   assert.equal(preferProductThumbnail(unrelatedImage), unrelatedImage);
+  assert.equal(preferGearRowThumbnail(unrelatedImage), unrelatedImage);
 });
 
 test("uses the verified 416px Flow Fuse thumbnail only for its exact Shopify asset", () => {
