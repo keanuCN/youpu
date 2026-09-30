@@ -17,6 +17,8 @@ import {
   preferCompactProductThumbnail,
   preferMixedCompareSummaryThumbnail,
   preferProductThumbnail,
+  responsiveProductImageSrcSet,
+  responsiveProductImageSrcSetType,
 } from "@/lib/image-url";
 import { hasEditorialScores, hasMedia, mediaUrl } from "@/lib/gear-state";
 import { clearDock, recordCompare, removeFromDock, setDock, useCurrentUser } from "@/lib/store";
@@ -390,6 +392,9 @@ export default function ComparePage() {
                     {hasMedia(g) && mediaUrl(g) ? (
                       <SafeImage
                         src={preferProductThumbnail(mediaUrl(g)!, 480)}
+                        srcSet={responsiveProductImageSrcSet(mediaUrl(g)!)}
+                        srcSetType={responsiveProductImageSrcSetType(mediaUrl(g)!)}
+                        sizes="(min-width: 768px) 30vw, 188px"
                         alt=""
                         loading="lazy"
                         fallbackLabel={`${g.brand} ${g.model}`}
