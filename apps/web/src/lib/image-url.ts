@@ -165,8 +165,10 @@ const VERIFIED_FLOW_FUSE_THUMBNAIL_PATH =
 const VERIFIED_SMARTMARINE_THUMBNAIL_PATH = "/cdn/images/products/xlarge/8089900_a.jpg";
 const VERIFIED_DECATHLON_SNB_100_THUMBNAIL_PATH =
   "/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg";
-const VERIFIED_DECATHLON_SNB_500_JACKET_PATH =
-  "/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg";
+const VERIFIED_DECATHLON_GEAR_ROW_PATHS = new Set([
+  "/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg",
+  "/p2573496/k%24353e5fd924967da12911035b5eeb0342/picture.jpg",
+]);
 const VERIFIED_ATOMIC_BENT_CHETLER_IMAGE_PATH =
   "/upload_files/2025/11/13/Fr2lMa7Do18CLAjnbPkfJR0T4WbI.png%21middle.jpg";
 const VERIFIED_INSTA360_ACE_PRO_2_IMAGE_PATH =
@@ -636,16 +638,16 @@ function isK2AmplienceProductImage(source: string): boolean {
   }
 }
 
-function isVerifiedDecathlonSnb500Image(source: string): boolean {
+function isVerifiedDecathlonGearRowImage(source: string): boolean {
   try {
     const image = new URL(source, "https://youpu.local");
     if (image.pathname === IMAGE_PROXY_PATH) {
       const proxiedSource = image.searchParams.get("url");
-      return proxiedSource ? isVerifiedDecathlonSnb500Image(proxiedSource) : false;
+      return proxiedSource ? isVerifiedDecathlonGearRowImage(proxiedSource) : false;
     }
     return (
       image.hostname === "contents.mediadecathlon.com" &&
-      image.pathname === VERIFIED_DECATHLON_SNB_500_JACKET_PATH &&
+      VERIFIED_DECATHLON_GEAR_ROW_PATHS.has(image.pathname) &&
       isAllowedRemoteImageUrl(image.toString())
     );
   } catch {
@@ -659,7 +661,7 @@ export function preferGearRowThumbnail(source: string, maxWidth = 168): string {
     isShopifyProductImage(source) ||
     isSalomonDamProductImage(source) ||
     isK2AmplienceProductImage(source) ||
-    isVerifiedDecathlonSnb500Image(source)
+    isVerifiedDecathlonGearRowImage(source)
   )
     ? preferProductThumbnail(source, maxWidth)
     : preferProductThumbnail(source);

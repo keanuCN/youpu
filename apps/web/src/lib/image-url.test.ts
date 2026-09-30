@@ -165,6 +165,22 @@ test("uses 168px GearRow thumbnails only for verified Shopify, Salomon, K2, and 
   const otherDecathlon = decathlon.replace("p2704355", "p2704356");
   assert.equal(preferGearRowThumbnail(otherDecathlon), preferProductThumbnail(otherDecathlon));
 
+  const decathlonBinding =
+    "https://contents.mediadecathlon.com/p2573496/k%24353e5fd924967da12911035b5eeb0342/picture.jpg?format=webp&f=3000x0";
+  const decathlonBindingThumbnail = new URL(preferGearRowThumbnail(decathlonBinding));
+  assert.equal(decathlonBindingThumbnail.searchParams.get("f"), "168x0");
+  assert.equal(decathlonBindingThumbnail.searchParams.get("format"), "webp");
+
+  const bindingProxy = `/api/image-proxy?url=${encodeURIComponent(decathlonBinding)}&section=gear-row`;
+  const bindingProxyThumbnail = new URL(preferGearRowThumbnail(bindingProxy), "https://youpu.local");
+  const bindingProxySource = new URL(bindingProxyThumbnail.searchParams.get("url")!);
+  assert.equal(bindingProxySource.searchParams.get("f"), "168x0");
+  assert.equal(bindingProxySource.searchParams.get("format"), "webp");
+  assert.equal(bindingProxyThumbnail.searchParams.get("section"), "gear-row");
+
+  const unverifiedBinding = decathlonBinding.replace("p2573496", "p2573497");
+  assert.equal(preferGearRowThumbnail(unverifiedBinding), preferProductThumbnail(unverifiedBinding));
+
   const smartMarine = "https://www.smartmarine.co.nz/cdn/images/products/xlarge/8089900_a.jpg";
   assert.equal(
     preferGearRowThumbnail(smartMarine),
