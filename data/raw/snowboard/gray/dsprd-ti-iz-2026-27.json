@@ -1,0 +1,82 @@
+{
+  "brand": "GRAY",
+  "model": "DSPRD Ti [iz]",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/gray-dsprd-ti-iz-2027.yaml",
+  "sources": {
+    "officialJapaneseCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE (Japanese)",
+      "evidence": "Official 26/27 catalog confirms nine sizes I, IIn, II, IIw, III, IIIw, IVw, IV and Vw; full geometry and stance table; model position as a premium hammerhead; price JPY 140,000 before tax / JPY 154,000 tax-inclusive. The size table labels most sizes Single Camber and IIw as Vario Camber."
+    },
+    "officialEnglishCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_eng_low.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE (English)",
+      "evidence": "Season-specific product copy identifies IZANAS beneath the core, polyamide topsheet and upper-edge Titanal ribbon. Construction diagram labels Woodcore, IZANAS, fiberglass, Titanal plate/ribbon and running base."
+    },
+    "officialProductPage": {
+      "url": "https://graysnowboards.co.jp/product-2627-eng/",
+      "evidence": "Confirms the 26/27 product listing and model identity."
+    },
+    "officialSeasonTechnology": {
+      "url": "https://graysnowboards.co.jp/tech-2627-eng/",
+      "evidence": "Confirms the current 26/27 technology context; used as construction cross-check, not as a substitute for the season catalog size table."
+    }
+  },
+  "pricing": {
+    "officialJapan": {
+      "currency": "JPY",
+      "preTax": 140000,
+      "taxInclusive": 154000,
+      "priceType": "official Japanese catalog MSRP",
+      "note": "Not a China-market retail price."
+    },
+    "seedNormalization": {
+      "currency": "CNY",
+      "rateCnyPerJpy": 0.042451,
+      "rateSource": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+      "rateDate": "2026-10-02",
+      "formula": "round(154000 * 0.042451) = 6537",
+      "value": 6537,
+      "note": "Currency normalization only; not an observed China-market price."
+    }
+  },
+  "units": {
+    "overallLengthMm": "Catalog millimeters; converted to centimeters for representative product length.",
+    "effectiveEdgeMm": "Catalog effective edge length in millimeters.",
+    "contactLengthMm": "Catalog contact length kept separate from effective edge.",
+    "sidecutRadiusMm": "Three printed values preserved in source order; YAML retains exact sequence and expresses them in meters.",
+    "stanceSetbackMm": "Catalog magnitude in millimeters; direction/sign convention is not explained, so preserved as printed.",
+    "camberMm": "Catalog height value in millimeters; profile names are model-size-specific."
+  },
+  "sizeRows": [
+    {"size":"I","overallLengthMm":1460,"effectiveEdgeMm":1250,"contactLengthMm":1120,"waistWidthMm":230,"sidecutRadiusMm":[8200,7600,8600],"sidecutOffsetMm":-20,"noseLengthMm":180.0,"noseWidthMm":278.0,"noseHeightMm":38.9,"tailLengthMm":160.0,"tailWidthMm":275.0,"tailHeightMm":30.8,"camberMm":8.0,"stanceWidthMm":[420,540],"inserts":"12+12","setbackMm":30,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite"},
+    {"size":"IIn","overallLengthMm":1510,"effectiveEdgeMm":1310,"contactLengthMm":1180,"waistWidthMm":232,"sidecutRadiusMm":[8840,8200,9240],"sidecutOffsetMm":-20,"noseLengthMm":175.0,"noseWidthMm":282.0,"noseHeightMm":38.9,"tailLengthMm":155.0,"tailWidthMm":281.0,"tailHeightMm":30.8,"camberMm":10.0,"stanceWidthMm":[440,560],"inserts":"12+12","setbackMm":30,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite"},
+    {"size":"II","overallLengthMm":1520,"effectiveEdgeMm":1310,"contactLengthMm":1180,"waistWidthMm":244,"sidecutRadiusMm":[8840,8200,9240],"sidecutOffsetMm":-20,"noseLengthMm":180.0,"noseWidthMm":294.0,"noseHeightMm":38.9,"tailLengthMm":160.0,"tailWidthMm":287.0,"tailHeightMm":30.8,"camberMm":10.0,"stanceWidthMm":[460,580],"inserts":"12+12","setbackMm":30,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite"},
+    {"size":"IIw","overallLengthMm":1540,"effectiveEdgeMm":1330,"contactLengthMm":1200,"waistWidthMm":252,"sidecutRadiusMm":[9200,8600,9600],"sidecutOffsetMm":20,"noseLengthMm":180.0,"noseWidthMm":301.0,"noseHeightMm":38.9,"tailLengthMm":160.0,"tailWidthMm":295.0,"tailHeightMm":30.8,"camberMm":10.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":30,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite","profile":"Vario Camber"},
+    {"size":"III","overallLengthMm":1570,"effectiveEdgeMm":1360,"contactLengthMm":1230,"waistWidthMm":246,"sidecutRadiusMm":[9800,9200,10400],"sidecutOffsetMm":20,"noseLengthMm":180.0,"noseWidthMm":293.0,"noseHeightMm":38.9,"tailLengthMm":160.0,"tailWidthMm":287.0,"tailHeightMm":30.8,"camberMm":10.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":30,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite","profile":"Single Camber"},
+    {"size":"IIIw","overallLengthMm":1576,"effectiveEdgeMm":1360,"contactLengthMm":1230,"waistWidthMm":246,"sidecutRadiusMm":[9800,9200,10400],"sidecutOffsetMm":20,"noseLengthMm":183.0,"noseWidthMm":299.0,"noseHeightMm":39.1,"tailLengthMm":163.0,"tailWidthMm":293.0,"tailHeightMm":31.2,"camberMm":10.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":30,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite","profile":"Single Camber"},
+    {"size":"IVw","overallLengthMm":1610,"effectiveEdgeMm":1400,"contactLengthMm":1270,"waistWidthMm":256,"sidecutRadiusMm":[11600,10800,12200],"sidecutOffsetMm":-30,"noseLengthMm":180.0,"noseWidthMm":301.0,"noseHeightMm":38.9,"tailLengthMm":160.0,"tailWidthMm":293.0,"tailHeightMm":30.8,"camberMm":10.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":40,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite","profile":"Single Camber"},
+    {"size":"IV","overallLengthMm":1630,"effectiveEdgeMm":1405,"contactLengthMm":1270,"waistWidthMm":244,"sidecutRadiusMm":[11600,10800,12200],"sidecutOffsetMm":-30,"noseLengthMm":195.0,"noseWidthMm":289.0,"noseHeightMm":45.5,"tailLengthMm":165.0,"tailWidthMm":281.0,"tailHeightMm":32.6,"camberMm":10.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":40,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite","profile":"Single Camber"},
+    {"size":"Vw","overallLengthMm":1660,"effectiveEdgeMm":1450,"contactLengthMm":1310,"waistWidthMm":262,"sidecutRadiusMm":[12200,11600,12800],"sidecutOffsetMm":-30,"noseLengthMm":185.0,"noseWidthMm":307.0,"noseHeightMm":41.0,"tailLengthMm":165.0,"tailWidthMm":299.0,"tailHeightMm":32.8,"camberMm":10.0,"stanceWidthMm":[520,640],"inserts":"12+12","setbackMm":60,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite","profile":"Single Camber"}
+  ],
+  "scoringReview": {
+    "scores": {"stability":8.7,"response":9.0,"float":5.5,"park":2.6,"forgiveness":4.5,"value":6.8},
+    "decision": "Keep existing editorial scores unchanged. The official season catalog supports premium hammerhead/carving intent and describes material construction, but no independent same-season ride test was located. All six scores remain low-confidence estimates; value is especially uncertain because CNY 6537 is a converted Japanese MSRP, not a verified China-market price.",
+    "confidence": "low; no independently disclosed 26/27 sample test found"
+  },
+  "unverified": [
+    "No board weight, China-market retail price, warranty, or explicit reuse permission for product images was found.",
+    "No explicit size-specific flex/test observations; manufacturer N/W/T stiffness numerals were not copied into site flex because OCR did not reliably preserve all three columns.",
+    "The Type-R official 26/27 technology materials must not be reused as this model's full construction; this [iz] model has its distinct under-core IZANAS, polyamide top and upper-edge Titanal ribbon configuration."
+  ],
+  "mappingNotes": [
+    "Nine lengths have a central representative size: III 157. Its dimensions are stored at product level, with all nine official size rows preserved in specs.sizeSpecs and this raw archive.",
+    "Official catalog specifically marks IIw as Vario Camber; other size entries are Single Camber. Product-level profile text records this size exception.",
+    "The IIIw width value in the existing YAML was 256 mm; official 26/27 Japanese and English tables list 246 mm. Corrected to 246 mm. Other existing size-row geometry was checked against the season-specific catalog and retained.",
+    "The catalog's stance setback sign/direction is not explained; YAML and raw data preserve the printed magnitude only.",
+    "Image remains an official reference URL; reuse rights are not confirmed."
+  ],
+  "imageRights": "Official image source is identifiable, but no explicit license for local hosting/republication was verified."
+}

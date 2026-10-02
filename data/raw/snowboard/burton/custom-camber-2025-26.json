@@ -1,0 +1,114 @@
+{
+  "brand": "Burton",
+  "model": "Custom Camber",
+  "season": "2025-26",
+  "representativeSize": "158 cm standard",
+  "sources": {
+    "officialW26Product": {
+      "url": "https://www.burton.com/se/en/p/mens-burton-custom-camber-snowboard/W26-106881.html",
+      "retrievedAt": "2026-10-02",
+      "availability": "The historical W26 URL currently redirects to 27WIN; the search-indexed W26 product page and size table were retained as season-specific evidence.",
+      "productEvidence": "W26 listing identifies the men's Custom Camber and confirms directional all-mountain shape, twin flex, camber profile, intermediate/expert level, 3-year warranty, and the season-specific technology below.",
+      "construction": {
+        "core": "Super Fly II 700G Core + Dualzone EGD（FSC 认证）",
+        "fsc": "FSC certified wood",
+        "reinforcement": "45° Carbon Highlights",
+        "base": "WFO Sintered Base"
+      },
+      "size158": {
+        "effectiveEdgeMm": 1215,
+        "waistWidthMm": 254,
+        "sidecutRadiusM": 7.9,
+        "manufacturerRiderWeight": "150-200 lb / 68-91 kg"
+      },
+      "limits": "Official page does not establish the seed's 2980 g board mass or CNY 6299 price. The printed stance-location field is not silently treated as a setback measurement."
+    },
+    "bpmProshop2026Review": {
+      "url": "https://www.bpmproshop.de/Burton-Custom-Camber-2026-Snowboard-Testbericht",
+      "title": "Burton Custom Camber 2026 Snowboard Testbericht",
+      "publishedAt": "2025-09-23",
+      "modelYearClaim": "2026",
+      "testSetupDisclosure": "The reviewer says the team had ridden the Custom before and tried the new 2026 version, but does not disclose sample size, rider count, board length, exact snow conditions, or number of test days.",
+      "observations": "Describes strong edge hold on hard/icy pistes, high-speed composure, direct/agile edge changes, useful pop for jumps, and switch/all-mountain versatility; identifies deep-snow float and beginner accessibility as limitations.",
+      "scoreUse": "Same-season directional evidence, but insufficiently detailed to quantify individual score changes. Its high-speed stability claim conflicts with the chatter/high-speed ceiling noted by Board of the World and Snowboarding Profiles' 2025 sample; retain the existing stability estimate and document the disagreement rather than averaging review language into a numeric score. No external numeric score is mapped."
+    },
+    "boardOfTheWorld": {
+      "url": "https://www.boardoftheworld.com/burton-custom-camber-review/",
+      "retrievedAt": "2026-10-02",
+      "pageUpdatedAt": "2026-09-04",
+      "sampleScope": "The main review tests the 2027 model; the reviewer separately rode the 2025/26 Custom at Big Snow indoor resort and reports similar ride character. The target-season exposure is limited and does not establish a full-season, multi-rider test.",
+      "observations": "Supports carving and stability at ordinary resort speeds, but reports nose/tail chatter in chop and performance limits at very high speed. The review's light-powder exposure was limited; Custom is not presented as a deep-powder specialist. It also reports useful pop/jump and all-mountain versatility.",
+      "scoreUse": "Directional evidence only. No external score is mapped numerically to the site's six editorial dimensions."
+    },
+    "snowboardingProfilesHistorical": {
+      "url": "https://snowboardingprofiles.com/burton-custom-camber-review-snowboard",
+      "retrievedAt": "2026-10-02",
+      "disclosedTest": "2025 model, 156 cm sample, tested 2024-02-06; hard artificial snow with icy sections and no new snow.",
+      "observations": "Historical directional corroboration: carving and normal resort-speed stability are good, but the reviewer notes a high-speed ceiling, some chatter in crud, limited deep-powder suitability, and a need for sound technique. Its measured weight belongs to the 2025 156 cm sample and is not transferred to this 2026 158 cm seed.",
+      "scoreUse": "Historical model-year proxy only; external sub-scores are not converted to the site's six dimensions."
+    },
+    "priceSearch": {
+      "retrievedAt": "2026-10-02",
+      "result": "No verifiable mainland-China 2025/26 CNY retail price or MSRP located.",
+      "regionalReferences": {
+        "officialBurtonJapan2026Page": {
+          "url": "https://jp.burton.com/ja-jp/products/mens-burton-custom-camber-snowboard-106881a-o",
+          "title": "Men's Burton Custom Camber Snowboard 2026",
+          "displayedPrice": 107800,
+          "currency": "JPY",
+          "captureDate": "2026-10-02",
+          "seasonIdentity": "Official Japanese page names model 2026 and identifies the Glow variant as 26WIN-106881; this is a Japanese regional listing, not mainland-China pricing.",
+          "taxTreatment": "The page displays JPY 107,800; tax treatment is not explicit in the captured product-page text.",
+          "evidence": "Burton's Japanese storefront displays JPY 107,800 and lists the standard 158 cm size. The page includes other older graphics marked sold out, so the price is not treated as a season-specific 2025/26 MSRP without further confirmation."
+        },
+        "historicalJapanRetailOffer": {
+          "url": "https://store.shopping.yahoo.co.jp/sports-ex/26bur00121.html?sc_i=shopping-pc-web-category-catrecom-fshn_sle-item1",
+          "title": "SportsExpress Burton Custom Jungle 25-26, 158 cm",
+          "displayedPrice": 80850,
+          "referencePrice": 107800,
+          "currency": "JPY",
+          "availability": "Search index showed a 25% discount and customer reviews for 158 cm in February 2026; the direct listing could not be reopened in this capture, so treat as historical indexed evidence, not a current offer.",
+          "evidence": "The indexed Japanese retailer page explicitly identifies 25-26 Custom Jungle, shows a 158 cm option, a displayed reference price of JPY 107,800 and 25%-off price of JPY 80,850."
+        }
+      },
+      "excludedComparables": [
+        "Taiwan 25/26 retailer listing in TWD is a different market and currency.",
+        "Burton Japan listing in JPY is a different market and currency.",
+        "Current 2027 USD prices do not verify the 2025/26 CNY seed price.",
+        "JD's indexed 25/26 listing identifies model 106881 and 158 cm but exposes no verifiable price in the captured result.",
+        "A CNY 5,998 listing found in the current search is for 26/27, not the 2025/26 seed; a separate CNY 4,998 aggregator result combines Custom and Process without an exact SKU/size. Neither verifies the seed price."
+      ],
+      "decision": "Keep seed CNY 6299 and value score 6.5 unchanged, but mark them low confidence pending dated mainland-China price evidence."
+    }
+  },
+  "imageProvenance": {
+    "seedStatus": "Four AI placeholder images; not product photographs and not suitable as final product imagery.",
+    "decision": "No source image copied. Official/retailer image reuse permissions are not established."
+  },
+  "editorialDecision": {
+    "scoresBefore": {
+      "stability": 9,
+      "response": 8.5,
+      "float": 6,
+      "park": 5.5,
+      "forgiveness": 5,
+      "value": 6.5
+    },
+    "scoresAfter": {
+      "stability": 8.5,
+      "response": 8.5,
+      "float": 6,
+      "park": 5.5,
+      "forgiveness": 5,
+      "value": 6.5
+    },
+    "rationale": "Stability is reduced modestly from 9 to 8.5 because Board of the World and Snowboarding Profiles' 2025 sample report chatter/high-speed limits, while the 2025-09-23 BPM Proshop report on the stated 2026 version claims strong high-speed composure but omits board length, conditions, test duration, and rider count. This unresolved evidence conflict supports retaining a cautious estimate rather than raising or lowering it further. The adjustment is editorial, not a conversion of another publisher's scale. Other dimensions remain unchanged because evidence is season-limited or insufficiently detailed; all six remain low-to-medium confidence, with value low due to missing local price provenance.",
+    "copyDecision": "Removed unsupported absolutes about near-zero high-speed chatter, effortless/crippling low-speed behavior, and rider mass threshold. Updated product construction terms to W26 manufacturer nomenclature."
+  },
+  "unverifiedSeedFieldsRetained": [
+    "CNY price 6299",
+    "board weight 2980 g",
+    "stance setback 15 mm",
+    "subjective damping and pop values"
+  ]
+}

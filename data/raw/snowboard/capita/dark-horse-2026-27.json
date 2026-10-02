@@ -1,0 +1,79 @@
+{
+  "brand": "CAPiTA",
+  "model": "Dark Horse",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/capita-dark-horse-2027.yaml",
+  "sources": {
+    "officialNorthAmericaProduct": {
+      "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027",
+      "evidence": "Confirms 2027 model, standard and wide sizes, true twin shape, radial sidecut, twin flex 6, Park V1 profile, Dual Core (poplar + beech), HOLYSHEET TRI/BI MAGIC BEAN resin fiberglass, Superdrive base, current page price USD 499.95, two-year warranty, and exact size table. Current page says 2 x 30 mm Carbon Aramid Boosters. Price is a North American regional listed price, not China retail; captured 2026-10-02."
+    },
+    "officialEuropeProduct": {
+      "url": "https://eu.capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027",
+      "evidence": "Regional official product page corroborates sizes and technical table and displays EUR 479.00. Tax treatment is not identified in the extracted listing; this is a regional listed price, not a Chinese price."
+    },
+    "officialJapanProduct": {
+      "url": "https://jp.capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027",
+      "evidence": "Official JP regional page directly rechecked 2026-10-02. Identifies DARK HORSE, lists all ten matching 2027 sizes, and displays JPY 77,000. The extracted page text does not identify tax treatment; this is a Japan-region official listed price, not a China-market price."
+    },
+    "snowboardingProfilesRideTest": {
+      "url": "https://snowboardingprofiles.com/capita-dark-horse-snowboard-review",
+      "evidence": "Page updated 2026-09-28; actual demo disclosed as CAPiTA Dark Horse 2026, 154 cm, tested 2025-03-17. Rider 183 cm / 82 kg / US boot 10, used a 535 mm centered stance. Conditions: groomed snow about 75% firm bordering on icy and 25% softer over mid-firm; off-piste tracked fresh and small untracked pockets, no deep powder. Review describes easy turn initiation/slashing, agility and spins, moderate speed stability (not a point-and-shoot board), decent crud stability, poor deep-powder suitability, forgiving jump landings and low catch feel. Tester measured that sample at 2620 g, which is not entered as 2027 production weight. External numeric score is not mapped to site scores."
+    },
+    "boardOfTheWorldRideTest": {
+      "url": "https://www.boardoftheworld.com/capita-dark-horse-review/",
+      "evidence": "Review says its sample was 2026 Dark Horse 154; reviewer disclosed 144 lb, 5 ft 6 in, men's US boot 9. Reports medium longitudinal flex 6/10 with softer torsional feel 4.5/10, jump/side-hit capability and catch forgiveness, while not suited to deep powder and less stable than the DOA at speed. Its score framework is not mapped to site scores."
+    },
+    "2027CatalogComparison": {
+      "url": "https://snowboardingprofiles.com/2027-capita-snowboard-lineup-overview",
+      "evidence": "2027 lineup comparison says Dark Horse shape, sizes, flex, camber, core, fiberglass and base are unchanged from 2026, but its listed carbon-aramid boosters change from two 30 mm to two 20 mm. This conflicts with CAPiTA's currently published 2027 product page, which still lists 2 x 30 mm; preserve as an unresolved manufacturer/current-catalog discrepancy, not as a confirmed change."
+    }
+  },
+  "pricing": {
+    "northAmericaOfficial": {"currency":"USD","amount":499.95,"priceType":"official regional product-page listed price","retrievedAt":"2026-10-02","note":"Not a Chinese retail price; no local CNY source found."},
+    "europeOfficial": {"currency":"EUR","amount":479.00,"priceType":"official regional product-page listed price","retrievedAt":"2026-10-02","taxTreatment":"not specified in captured page text","note":"Not a Chinese retail price."},
+    "japanOfficial": {"currency":"JPY","amount":77000,"market":"Japan","priceType":"official regional product-page listed price","retrievedAt":"2026-10-02","taxTreatment":"not specified in retrieved official page text","note":"Not a Chinese retail price; do not exchange-rate normalize into the seed CNY value."},
+    "seedPrice": {"currency":"CNY","amount":3600,"priceType":"unknown","market":"unknown","note":"Preserved from seed. No provenance established for a China-market listing or exchange-rate normalization; do not label as a verified local price or infer a conversion basis."}
+  },
+  "unitsAndMapping": {
+    "effectiveEdgeMm": "Official table column; separate from overall length.",
+    "waistWidthMm": "Official table prints cm (e.g. 25.4); converted exactly to mm for sizeRows.",
+    "noseTailWidthMm": "Official table prints cm; converted exactly to mm for sizeRows.",
+    "sidecutRadiusM": "Official table gives a scalar radius in meters.",
+    "recommendedRiderWeightKg": "Converted from official paired lb/kg values; source value retained in the raw rows.",
+    "stanceSetbackMm": "Centered 0 mm corroborated by the 2026 154 ride-test setup, not a separate current catalog setback field."
+  },
+  "sizeRows": [
+    {"size":"148","effectiveEdgeMm":1150,"waistWidthMm":248,"noseTailWidthMm":290,"taperMm":0,"sidecutRadiusM":7.7,"referenceStanceMm":508,"recommendedRiderWeightLb":[100,150],"recommendedRiderWeightKg":[45,68],"suggestedBoot":"M 6–9.5"},
+    {"size":"150","effectiveEdgeMm":1170,"waistWidthMm":250,"noseTailWidthMm":293,"taperMm":0,"sidecutRadiusM":7.8,"referenceStanceMm":533,"recommendedRiderWeightLb":[100,150],"recommendedRiderWeightKg":[45,68],"suggestedBoot":"M 6–9.5"},
+    {"size":"152","effectiveEdgeMm":1185,"waistWidthMm":252,"noseTailWidthMm":295,"taperMm":0,"sidecutRadiusM":7.9,"referenceStanceMm":533,"recommendedRiderWeightLb":[100,160],"recommendedRiderWeightKg":[45,72],"suggestedBoot":"M 6–9.5"},
+    {"size":"154","effectiveEdgeMm":1188,"waistWidthMm":254,"noseTailWidthMm":297,"taperMm":0,"sidecutRadiusM":8.0,"referenceStanceMm":533,"recommendedRiderWeightLb":[120,180],"recommendedRiderWeightKg":[54,81],"suggestedBoot":"M 8–10"},
+    {"size":"156","effectiveEdgeMm":1220,"waistWidthMm":255,"noseTailWidthMm":299,"taperMm":0,"sidecutRadiusM":8.1,"referenceStanceMm":559,"recommendedRiderWeightLb":[130,190],"recommendedRiderWeightKg":[59,86],"suggestedBoot":"M 8–10"},
+    {"size":"158","effectiveEdgeMm":1245,"waistWidthMm":258,"noseTailWidthMm":302,"taperMm":0,"sidecutRadiusM":8.3,"referenceStanceMm":559,"recommendedRiderWeightLb":[140,200],"recommendedRiderWeightKg":[63,90],"suggestedBoot":"M 8–10"},
+    {"size":"154W","effectiveEdgeMm":1200,"waistWidthMm":258,"noseTailWidthMm":301,"taperMm":0,"sidecutRadiusM":8.0,"referenceStanceMm":533,"recommendedRiderWeightLb":[130,190],"recommendedRiderWeightKg":[59,86],"suggestedBoot":"M 10+"},
+    {"size":"156W","effectiveEdgeMm":1220,"waistWidthMm":260,"noseTailWidthMm":304,"taperMm":0,"sidecutRadiusM":8.1,"referenceStanceMm":559,"recommendedRiderWeightLb":[130,190],"recommendedRiderWeightKg":[59,86],"suggestedBoot":"M 10+"},
+    {"size":"158W","effectiveEdgeMm":1230,"waistWidthMm":264,"noseTailWidthMm":308,"taperMm":0,"sidecutRadiusM":8.3,"referenceStanceMm":559,"recommendedRiderWeightLb":[130,190],"recommendedRiderWeightKg":[59,86],"suggestedBoot":"M 10+"},
+    {"size":"160W","effectiveEdgeMm":1250,"waistWidthMm":268,"noseTailWidthMm":312,"taperMm":0,"sidecutRadiusM":8.4,"referenceStanceMm":584,"recommendedRiderWeightLb":[100,150],"recommendedRiderWeightKg":[45,68],"suggestedBoot":"M 10+","sourceAnomaly":"Official page prints 100-150 lb / 45-68 kg for the 160W; preserved verbatim and flagged, not silently corrected."}
+  ],
+  "scoringReview": {
+    "previousScores": {"stability":7.0,"response":7.2,"float":5.8,"park":8.6,"forgiveness":7.8,"value":8.2},
+    "revisedScores": {"stability":7.0,"response":7.2,"float":4.8,"park":8.6,"forgiveness":8.0,"value":8.2},
+    "decision": "Adjust float 5.8→4.8 and forgiveness 7.8→8.0 as directional editorial judgments, not conversions of external scores. The 2026 154 ride tests report only shallow leftovers and explicitly poor deep-powder suitability, supporting a lower float estimate. Low-catch feel and forgiving jump landings support a small forgiveness increase. Keep stability 7.0 and response 7.2: the review describes moderate but not bomb-proof speed stability plus easy turning, without enough grounds for numeric recalibration. Keep park 8.6 as consistent with jumps/spins/side-hits, and retain value 8.2 only as a low-confidence estimate because CNY 3600 has no established market or price-type source. Target-year carryover is plausible because a reviewer says core/shape/flex/profile/base are unchanged, but the 2027 carbon-booster width has a catalog discrepancy, so overall confidence remains low-to-medium and 2026 is not claimed as a 2027 direct test.",
+    "confidence": "low-to-medium for direction only; one-day 2026 154 tests, target-year carbon-booster discrepancy; low for value"
+  },
+  "unverified": [
+    "CNY 3600 seed price market, price type, date and provenance remain unknown; no China-market listing verified.",
+    "Official North American USD and Europe EUR listing prices are regional references only, not China retail.",
+    "Official page's 160W recommended rider weight (100-150 lb / 45-68 kg) is anomalous relative to neighboring sizes; retained verbatim pending CAPiTA confirmation.",
+    "Official current page lists 2 x 30 mm Carbon Aramid Boosters, while a 2027 lineup comparison says 2 x 20 mm versus 2026; unresolved.",
+    "2026 ride tests do not constitute direct tests of the 2027 board; possible construction discrepancy further limits transfer.",
+    "No explicit image reuse permission verified; official product image remains a reference only."
+  ],
+  "imageRights": "Official CAPiTA CDN image URL is recorded in the seed, but no reuse license was verified. Do not copy it to hosted production assets without permission or original photography.",
+  "mappingNotes": [
+    "The seed's 154 representative size matches the official 2027 table: effective edge 1188 mm, waist 254 mm, sidecut 8.0 m, Park V1, centered stance, TRUE TWIN, Dual Core, HOLYSHEET TRI/BI Magic Bean Resin, Superdrive base, and flex 6.",
+    "Full 10-variant official size table is archived here and copied without interpolation into the published YAML sizeSpecs; the YAML keeps 154 as its representative scalar row.",
+    "No CAPiTA Dark Horse prototype record was found in apps/web/src/data/boards.ts; no prototype item was fabricated."
+  ]
+}

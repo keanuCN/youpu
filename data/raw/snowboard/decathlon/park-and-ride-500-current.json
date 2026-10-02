@@ -1,0 +1,76 @@
+{
+  "brand": "DREAMSCAPE / Decathlon",
+  "model": "Park & Ride 500",
+  "catalogSeasonLabel": "2026 snapshot (the official listing does not identify a model year/season)",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.decathlon.co.uk/p/mens-all-mountain-and-freestyle-snowboard-park-and-ride-500-green/306010/c49c1m8938817",
+      "retrievedAt": "2026-10-02",
+      "sku": "8938817",
+      "priceGBP": 199.99,
+      "priceType": "UK listing price; page does not label this as MSRP",
+      "manufacturerClaims": [
+        "Standard camber is described as providing pop and on-piste/park grip; rocker plus Powder Stance are described as improving powder performance.",
+        "Official feature copy states flex 6/10, medium torsion, very good edge grip, very good buoyancy and a sintered HDPE base.",
+        "The Powder Stance is described as providing 60 mm setback; standard stance is identified as 20 mm setback in the product details.",
+        "Product page claims 2-year warranty."
+      ],
+      "sizeRows": [
+        {"size":"152","noseWaistTailMm":[288,250,288],"sidecutM":8.2,"stanceMm":560},
+        {"size":"153W","noseWaistTailMm":[300,258,300],"sidecutM":8.3,"stanceMm":565},
+        {"size":"156","noseWaistTailMm":[296,255,296],"sidecutM":8.4,"stanceMm":575},
+        {"size":"158W","noseWaistTailMm":[304,266,304],"sidecutM":8.4,"stanceMm":585}
+      ],
+      "limitations": "The official listing is live and SKU-specific but does not state a production season or model year. The catalog's 2026 label is a snapshot convention, not confirmed season attribution. Values are for the UK market; current dynamic price must not be presented as a verified China retail price."
+    },
+    "independentReview": {
+      "url": "https://www.packwild.de/ausruestung/decathlon-snowboard-park-ride/",
+      "publisher": "Packwild",
+      "title": "Decathlon Snowboard Test: Park & Ride 500 – günstig und gut?",
+      "retrievedAt": "2026-10-02",
+      "testBoard": "Decathlon Wed'ze Allmountain/Freestyle Park & Ride 500; reviewer lists sizes 152, 153W, 156 and 158W.",
+      "reportedSpecs": {
+        "flex": "3/5 (reviewer scale; not directly convertible to manufacturer's 6/10)",
+        "profile": "Hybrid camber/rocker",
+        "shape": "Twin tip",
+        "priceAtReview": "EUR 169.99 (reviewer's stated MSRP; publication date not established)"
+      },
+      "disclosure": "Reviewer says the board and bindings were supplied free of charge by Decathlon; reviewer asserts the opinion was not purchased.",
+      "reportedRideImpressions": [
+        "Describes forgiving handling, turnability and edge hold, including for beginner/intermediate riders.",
+        "Reports stability at speed and pop/landing support in park use.",
+        "Attributes powder use to the dedicated Powder Stance and rocker; does not publish a controlled powder test description."
+      ],
+      "limitations": "The article gives no publication/test date, tested board size, rider dimensions, snow conditions, number of test days/runs or independent performance measurements. It discusses the board together with Decathlon Illusion 700 bindings. The review version/season cannot be matched to the catalog's 2026 snapshot. Treat as weak, qualitative directional evidence only."
+    },
+    "regionalListingPriceCrossCheck": {
+      "url": "https://www.decathlon.co.uk/p/unisex-all-mountain-and-freestyle-snowboard-park-and-ride-500/306010/c382m8547253",
+      "retrievedAt": "2026-10-02",
+      "sku": "8547253",
+      "observedPriceGBP": 149.99,
+      "listedFormerPriceGBP": 199.99,
+      "note": "A distinct UK product/color/size listing for the same named model showed a dynamic promotional price. It is not the seed's selected SKU 8938817 and is not a China-market price; do not merge this price into the seed."
+    },
+    "chinaMarketSecondaryPriceLead": {
+      "url": "https://thesnowfever.com/brandstory/Decathlon",
+      "retrievedAt": "2026-10-02",
+      "publisher": "SnowFever / 热雪装备站",
+      "displayedProductName": "Decathlon 迪卡侬 PARK & RIDE 500 单板",
+      "displayedPriceCNY": 1699.9,
+      "priceLabel": "购买价格起价",
+      "displayedReviewCount": 1,
+      "limitations": "Secondary brand listing only; no product/retailer transaction URL, SKU, size, price date, original purchase evidence or distinction between MSRP and paid price. The same page displays RMB 1699.90 starting prices for multiple unrelated Decathlon snowboard models, which further weakens its SKU-specificity. Record as a mainland-China price lead only; do not replace the GBP-normalized seed price or treat it as verified current local retail."
+    }
+  },
+  "scoringEvidence": {
+    "currentSiteScores": {"stability":7.2,"response":7.5,"float":7.2,"park":7.0,"forgiveness":6.5,"value":8.4},
+    "decision": "Retain all six scores. The review offers weak qualitative support for turnability/forgiveness, park pop and landing, and the intended powder setup, but its season, size and conditions are unknown and its bindings may influence ride feel. No outside score is mapped numerically into the site's six dimensions. Value 8.4 remains especially uncertain because the seed is a GBP-to-CNY-normalized UK price rather than verified China retail data.",
+    "confidence": "Low for all six dimensions; value is very low confidence. Official marketing descriptions and the single undisclosed-version review do not constitute target-season controlled ride testing."
+  },
+  "unresolved": [
+    "Official product year/season and review sample year are not established.",
+    "No verified SKU-/size-specific China-market price; SnowFever lists a CNY 1699.90 starting-price lead without a dated offer or SKU. Current UK GBP price and German EUR review price are not interchangeable with CNY retail.",
+    "No verified board weight, effective edge, or image reuse license in this evidence set.",
+    "Review does not disclose test size, rider details, exact conditions, or test duration."
+  ]
+}

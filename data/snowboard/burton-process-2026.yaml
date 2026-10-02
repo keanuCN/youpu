@@ -6,36 +6,144 @@ brand: burton
 model: Process
 year: 2026
 title: Burton Process 2026
-one_liner: 比 Custom 软两度、比 DOA 稳一档，正好卡在公园与全山之间的那个位置。
+one_liner: PurePop Camber、Twin Shape 与 Twin Flex 带来双向自由式脚感，官方定位覆盖跳台、侧击与全山巡航；它不是深粉雪或强攻刻滑专板。
 price:
   min: 5499
   max: 5499
   currency: CNY
 specs:
   length: 157
-  effectiveEdge: 1200
-  sidecut: 7.7
+  effectiveEdge: 1215
+  sidecut: 8.1
   waistWidth: 252
-  stanceSetback: 12
-  profile: 纯 Camber
-  shape: 真双向
-  core: FSC 杨木 / 双轴玻纤
-  fiberglass: Triax + Biax
-  base: 烧结 7200
-  weight: 2790
+  stanceSetback: 12.5
+  profile: PurePop Camber
+  shape: Twin（真双向）
+  core: Super Fly II 700G Core + Dualzone EGD
+  fiberglass: Triax
+  base: Sintered Base
   damping: 7
   pop: 8.5
   turnRadiusFeel: 灵活，中短半径
   warranty: 3
   flex: 5
-  profileFamily: camber
+  profileFamily: hybrid
   scenes:
     - freestyle
     - all-mountain
+  sizeSpecs:
+    - size: "152"
+      waistWidth: 249
+      runningLength: 1125
+      effectiveEdge: 1165
+      sidecutRadius: 7.7
+      sidecutDepth: 20.6
+      stanceLocation: -12.5
+      stanceWidth: 530 mm
+      noseWidth: 290.1
+      tailWidth: 290.1
+      riderWeightRange: 54–82 kg
+      bindingSize: Men's L, Women's L
+    - size: "155"
+      waistWidth: 251
+      runningLength: 1155
+      effectiveEdge: 1195
+      sidecutRadius: 7.9
+      sidecutDepth: 21.1
+      stanceLocation: -12.5
+      stanceWidth: 530 mm
+      noseWidth: 293.2
+      tailWidth: 293.2
+      riderWeightRange: 54–82 kg
+      bindingSize: Men's L, Women's L
+    - size: "157"
+      waistWidth: 252
+      runningLength: 1175
+      effectiveEdge: 1215
+      sidecutRadius: 8.1
+      sidecutDepth: 21.4
+      stanceLocation: -12.5
+      stanceWidth: 560 mm
+      noseWidth: 294.9
+      tailWidth: 294.9
+      riderWeightRange: 68–91 kg
+      bindingSize: Men's L, Women's L
+    - size: "159"
+      waistWidth: 255
+      runningLength: 1195
+      effectiveEdge: 1235
+      sidecutRadius: 8.2
+      sidecutDepth: 21.8
+      stanceLocation: -12.5
+      stanceWidth: 560 mm
+      noseWidth: 298.6
+      tailWidth: 298.6
+      riderWeightRange: 68–91 kg
+      bindingSize: Men's L, Women's L
+    - size: "162"
+      waistWidth: 257
+      runningLength: 1225
+      effectiveEdge: 1265
+      sidecutRadius: 8.4
+      sidecutDepth: 22.4
+      stanceLocation: -12.5
+      stanceWidth: 560 mm
+      noseWidth: 301.8
+      tailWidth: 301.8
+      riderWeightRange: 82–118 kg+
+      bindingSize: Men's L, Women's L
+    - size: 155W
+      waistWidth: 256
+      runningLength: 1155
+      effectiveEdge: 1195
+      sidecutRadius: 7.9
+      sidecutDepth: 21.1
+      stanceLocation: -12.5
+      stanceWidth: 530 mm
+      noseWidth: 298.2
+      tailWidth: 298.2
+      riderWeightRange: 54–82 kg
+      bindingSize: Men's L, Women's L
+    - size: 157W
+      waistWidth: 257
+      runningLength: 1175
+      effectiveEdge: 1215
+      sidecutRadius: 8.1
+      sidecutDepth: 21.4
+      stanceLocation: -12.5
+      stanceWidth: 560 mm
+      noseWidth: 299.9
+      tailWidth: 299.9
+      riderWeightRange: 68–91 kg
+      bindingSize: Men's L, Women's L
+    - size: 159W
+      waistWidth: 260
+      runningLength: 1195
+      effectiveEdge: 1235
+      sidecutRadius: 8.2
+      sidecutDepth: 21.8
+      stanceLocation: -12.5
+      stanceWidth: 560 mm
+      noseWidth: 303.6
+      tailWidth: 303.6
+      riderWeightRange: 68–91 kg
+      bindingSize: Men's L, Women's L
+    - size: 162W
+      waistWidth: 262
+      runningLength: 1225
+      effectiveEdge: 1265
+      sidecutRadius: 8.4
+      sidecutDepth: 22.4
+      stanceLocation: -12.5
+      stanceWidth: 560 mm
+      noseWidth: 306.8
+      tailWidth: 306.8
+      riderWeightRange: 82–118 kg+
+      bindingSize: Men's L, Women's L
 editorial_scores:
   stability: 7
   response: 7.5
-  float: 6
+  float: 5.5
   park: 8.5
   forgiveness: 7.5
   value: 7.5
@@ -60,4 +168,7 @@ images:
     alt: Burton Process 实地 / FIELD
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 3
+data_source:
+  kind: official
+  origin_url: https://eu.burton.com/en-pt/products/mens-burton-process-camber-snowboard-106921e-o?country=PT
 status: published

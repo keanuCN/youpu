@@ -1,37 +1,106 @@
 # 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
-# 原型 id：sb-09 · 参数未经官网逐项校对，转入正式发布前需人工核对
+# 原型 id：sb-09 · 官方系列页核对当季身份/定位；25/26 几何和结构另由零售技术表交叉核实，限制见 raw 记录
 slug: ride-algorythm-2026
 category: snowboard
 brand: ride
-model: Algorythm
+model: Algorhythm
 year: 2026
-title: Ride Algorythm 2026
-one_liner: 为深雪日准备的重武器。板头浮力大到你会忘记自己脚下有 3 公斤的东西，回到压雪道也依然稳。
+title: Ride Algorhythm 2026
+one_liner: 全山定向双向板，官方定位覆盖公园跳台、粉雪线路与高速压雪道。
 price:
   min: 7299
   max: 7299
   currency: CNY
 specs:
   length: 160
-  effectiveEdge: 1265
-  sidecut: 8.6
+  widthVariant: wide
+  effectiveEdge: 1197
+  sidecut: 6.9
+  sidecutRadii: 9.4 / 6.9 / 9.4 m
   waistWidth: 264
-  stanceSetback: 40
-  profile: Camber + 大板头摇臂
-  shape: 强定向锥形
-  core: 白杨 / 竹 / 碳纤维梁
-  fiberglass: Triax Carbon
-  base: 烧结 9000
-  weight: 3050
+  stanceSetback: 19
+  profile: Standard Camber
+  shape: Directional Twin
+  core: Performance Core（Aspen / Bamboo / Paulownia）
+  fiberglass: Pre-Cured Glass + Carbon Array 5 + Double Impact Plates
+  base: Sintered 4000
   damping: 9
   pop: 6
-  turnRadiusFeel: 大弧为主，深雪里转向轻盈
   warranty: 3
   flex: 8
-  profileFamily: hybrid
+  profileFamily: camber
   scenes:
+    - all-mountain
+    - freestyle
     - powder
-    - carving
+  sizeSpecs:
+    - size: "147"
+      widthVariant: standard
+      effectiveEdgeMm: 1096
+      waistWidthMm: 245
+      sidecutRadiiMSourceOrder: 9 / 6.5 / 9
+      stanceWidthIn: 20
+      stanceSetbackInches: 0.75
+      riderWeightLbRaw: 75-165
+    - size: "151"
+      widthVariant: standard
+      effectiveEdgeMm: 1121
+      waistWidthMm: 248
+      sidecutRadiiMSourceOrder: 9.1 / 6.6 / 9.1
+      stanceWidthIn: 21
+      stanceSetbackInches: 0.75
+      riderWeightLbRaw: 100-180
+    - size: "154"
+      widthVariant: standard
+      effectiveEdgeMm: 1147
+      waistWidthMm: 251
+      sidecutRadiiMSourceOrder: 9.2 / 6.7 / 9.2
+      stanceWidthIn: 22
+      stanceSetbackInches: 0.75
+      riderWeightLbRaw: 115-195
+    - size: "155W"
+      widthVariant: wide
+      effectiveEdgeMm: 1159
+      waistWidthMm: 258
+      sidecutRadiiMSourceOrder: 9.2 / 6.7 / 9.2
+      stanceWidthIn: 22
+      stanceSetbackInches: 0.75
+      riderWeightLbRaw: 125-205
+    - size: "157"
+      widthVariant: standard
+      effectiveEdgeMm: 1172
+      waistWidthMm: 254
+      sidecutRadiiMSourceOrder: 9.3 / 6.8 / 9.3
+      stanceWidthIn: 22
+      stanceSetbackInches: 0.75
+      riderWeightLbRaw: 125-205
+    - size: "160W"
+      widthVariant: wide
+      effectiveEdgeMm: 1197
+      waistWidthMm: 264
+      sidecutRadiiMSourceOrder: 9.4 / 6.9 / 9.4
+      stanceWidthIn: 22
+      stanceSetbackInches: 0.75
+      riderWeightLbRaw: 160-220+
+      noseWidthMm: 311
+      tailWidthMm: 311
+      referenceStanceMm: 559
+    - size: "161"
+      widthVariant: standard
+      effectiveEdgeMm: 1197
+      waistWidthMm: 257
+      sidecutRadiiMSourceOrder: 9.4 / 6.9 / 9.4
+      stanceWidthIn: 22
+      stanceSetbackInches: 0.75
+      riderWeightLbRaw: 130-210
+    - size: "164W"
+      widthVariant: wide
+      effectiveEdgeMm: 1223
+      waistWidthMm: 266
+      sidecutRadiiMSourceOrder: 9.5 / 7 / 9.5
+      stanceWidthIn: 23
+      stanceSetbackInches: 0.75
+      riderWeightLbRaw: 170-220+
 editorial_scores:
   stability: 9
   response: 8.5
@@ -42,22 +111,26 @@ editorial_scores:
 images:
   - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555
     kind: base
-    alt: Ride Algorythm 底面 / BASE
+    alt: Ride Algorhythm 底面 / BASE
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 0
   - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-top-03.png?auth_key=a00efee7b4a7f0aabc2a4367bff4c09fbdfa60482503d839065526be7159832e
     kind: face
-    alt: Ride Algorythm 板面 / TOPSHEET
+    alt: Ride Algorhythm 板面 / TOPSHEET
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 1
   - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-detail-binding.png?auth_key=b65df2b86b31534b53b605d6ae3c12bd3061d495618139b5d7bb821526f17890
     kind: side
-    alt: Ride Algorythm 细节 / DETAIL
+    alt: Ride Algorhythm 细节 / DETAIL
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 2
   - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/hero-ridge.png?auth_key=12382ced0bf2c0dc18c0c11c5e75b977d3b2310f18cb69254a0695446681db65
     kind: field
-    alt: Ride Algorythm 实地 / FIELD
+    alt: Ride Algorhythm 实地 / FIELD
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 3
+# Seasonal identity/positioning is from the official 2026 collection. 25/26 dimensions and construction are retailer-sourced; no board mass or comparable local CNY price was verified. Flex remains the existing site estimate because vendor qualitative flex is not normalized.
+data_source:
+  kind: official
+  origin_url: https://ridesnowboards.com/en-us/all-mountain
 status: published

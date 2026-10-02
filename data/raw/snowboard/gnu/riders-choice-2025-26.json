@@ -1,0 +1,170 @@
+{
+  "brand": "GNU",
+  "model": "Rider's Choice",
+  "season": "2025-26",
+  "seedFile": "data/snowboard/gnu-rider-s-choice-2025.yaml",
+  "retrievedAt": "2026-10-02",
+  "sources": {
+    "official2526ProductPage": {
+      "url": "https://cad.gnu.com/2526-riders-choice-157-5",
+      "title": "2526 Riders Choice - 157.5",
+      "hostNote": "GNU official Canadian storefront. The URL currently redirects to the 2026/27 GNU catalog; the season-specific table below was available in the 2025/26 product-page listing snapshot. The currency symbol on that historic listing was '$' without an explicit ISO currency code.",
+      "evidence": "2025/26 product page identifies freestyle/all-mountain/asym twin; names C2 Hybrid, 3-D Delightwood Asym Chip, carbon/pop construction; lists eight size-specific tables with contact length, paired sidecuts, nose/tail width, waist, stance, setback, flex and rider-weight minimums. It does not list effective edge or snowboard mass."
+    },
+    "official2526SpecsPageDirect": {
+      "url": "https://eur.gnu.com/2526-riders-choice-157-5-b-grade",
+      "title": "2526 Riders Choice - 157.5 - B-Grade",
+      "retrievedAt": "2026-10-02",
+      "hostNote": "GNU/Mervin official EU storefront. This listing is for a B-grade 157.5 unit, but its published size table is the season-specific 25/26 Riders Choice table; use it only to verify shared model geometry/fit rows, not retail price or cosmetic condition for the regular-grade seed.",
+      "priceEvidence": {
+        "amount": 566.99,
+        "currency": "EUR",
+        "availability": "Page displays Coming Soon; a current buyable offer was not confirmed.",
+        "exclusion": "B-grade 157.5 only; not comparable to regular-grade catalog pricing and not a China-market quote."
+      },
+      "evidence": "Direct page displays the complete eight-row 25/26 table and labels its columns Size, Contact Length, Side Cut, Nose/Tail Width, Waist Width, Stance Min-Max/Set Back, Flex and Weight Range. It distinguishes standard sizes from W variants and matches all captured sizeRows. The page's product title explicitly says 2526 and 157.5."
+    },
+    "officialUkStoreIndexedSnapshot": {
+      "url": "https://gbp.gnu.com/2526-riders-choice-157-5",
+      "title": "2526 Riders Choice - 157.5",
+      "hostNote": "GNU official UK regional storefront. Search-indexed page showed £554.99 including VAT and a 25/26 size table; direct open on 2026-10-02 redirected to the general GNU catalog, so the original live page and price timestamp could not be independently confirmed.",
+      "evidence": "Indexed snapshot corroborates the 25/26 model label and size table. It is a historical regional price lead only, not a stable current quote or China-market price."
+    },
+    "dealerCatalogCopy": {
+      "url": "https://golgoda.com/PDF/25-26%20GNU_compressed.pdf",
+      "title": "GNU Snowboards 25/26",
+      "hostNote": "Retailer-hosted copy of a GNU-branded dealer catalog; the PDF is not hosted on a GNU domain.",
+      "evidence": "Lists Rider's Choice standard lengths 151.5, 154.5, 157.5, 159.5, 161.5 and wides 155W, 158W, 162W, consistent with the official product-page size table."
+    },
+    "skiPro2026": {
+      "url": "https://skipro.com/products/riders-choice-56w",
+      "title": "GNU Rider's Choice Snowboard 2026",
+      "hostNote": "US retailer; used for a dated regional price snapshot and secondary construction cross-check, not as GNU-primary evidence.",
+      "evidence": "Lists C2X, asym twin, G Lite 3, bi-/triaxial fiberglass, sintered Knife-Cut base and model 2026. Product page shows USD $629.99 regular and $449.95 sale at capture."
+    },
+    "snowboardingProfilesTest": {
+      "url": "https://snowboardingprofiles.com/gnu-riders-choice-review",
+      "title": "GNU Riders Choice Review (updated 2026-01-26)",
+      "evidence": "The current-model overview lists 88.3/100 and size specs, but its disclosed on-snow sample is a 2024 157.5 cm board tested 2023-03-23; not a 2025/26 same-season test."
+    },
+    "snowboardingJunkieTest": {
+      "url": "https://www.snowboardingjunkie.com/gnu-riders-choice-review/",
+      "title": "GNU Riders Choice riding review (updated 2025-08-27)",
+      "evidence": "Tester says they rode a 154.5 cm sample for a week at Grand Hirafu, Niseko and Hanazono across varied snow and terrain. The article does not identify the sample model year; use it as version-unconfirmed directional evidence, not proof of a same-season 25/26 test."
+    },
+    "snowboardHowTest": {
+      "url": "https://snowboardhow.com/gnu-riders-choice-review/",
+      "title": "GNU Riders Choice Review",
+      "publishedAt": "2024-01-24",
+      "evidence": "The author says they rode a rented Rider's Choice for a few days and consulted other instructors. Board size, model year and riding conditions are not disclosed. The review describes strong edge control/stability and versatile freestyle use, with limitations in deeper snow and highly technical freeride; use only as low-confidence directional evidence, not a 25/26 test.",
+      "dataQualityNote": "The review's construction text calls the core G2 Asym ECO, which conflicts with the target-season official page's 3-D Delightwood Asym Chip wording; do not use it to populate season-specific materials."
+    },
+    "official2526Video": {
+      "url": "https://www.youtube.com/watch?v=u0HKchtML9s",
+      "title": "RIDERS CHOICE | 2025-2026 GNU SNOWBOARD",
+      "evidence": "GNU-published 2025/26 model overview; marketing/identity reference, not an independent ride test."
+    }
+  },
+  "units": {
+    "contactLengthCm": "cm; official GNU terminology, not relabeled effective edge",
+    "noseTailWidthCm": "cm as displayed by official table",
+    "waistWidthCm": "cm as displayed by official table; 25.5 cm maps to 255 mm seed waist",
+    "sidecutRadiiM": "m; two radii copied in source order, no heel/toe mapping inferred",
+    "stanceMinMaxInches": "inches as printed",
+    "setbackInches": "inches as printed; 0 is centered",
+    "stanceMinMaxCm": "cm as printed",
+    "setbackCm": "cm as printed",
+    "brandFlex": "GNU 10=firm scale; size-dependent"
+  },
+  "product": {
+    "use": "Freestyle / All Mountain",
+    "shape": "Asym Twin",
+    "profile": "C2 Hybrid (GNU C2X)",
+    "construction": "3-D Delightwood Asym Chip platforms; official copy mentions poppy carbon construction",
+    "brandFlexNote": "Official 157.5 size row is 6/10 on the GNU scale; 154.5 is 5.5 and 161.5/162W are 7.",
+    "baseNote": "A third-party 2026 profile listing names GNU Sintered Knife-Cut. The official size table page does not expose base nomenclature in the retrieved table; the seed's exact base string remains provisional.",
+    "laminateNote": "Exact 25/26 fiberglass layup was not confirmed in the accessible official size table; preserve existing seed text as unverified rather than infer from current/other-year marketing.",
+    "warrantyNote": "Seed's 3-year value was not confirmed by the reviewed 25/26 sources.",
+    "officialBoardWeightAvailable": false,
+    "officialEffectiveEdgeAvailable": false
+  },
+  "sizeRows": [
+    {"size":"151.5","widthVariant":"standard","contactLengthCm":113,"sidecutRadiiM":[7.9,8.2],"noseTailWidthCm":[29.2,29.2],"waistWidthCm":25.1,"stanceMinMaxInches":[20,26],"setbackInches":0,"stanceMinMaxCm":[50.8,66],"setbackCm":0,"brandFlex":5.5,"riderWeightRaw":"90+ lb / 60+ kg"},
+    {"size":"154.5","widthVariant":"standard","contactLengthCm":116,"sidecutRadiiM":[7.7,8.1],"noseTailWidthCm":[29.3,29.3],"waistWidthCm":25.2,"stanceMinMaxInches":[20.25,25],"setbackInches":0,"stanceMinMaxCm":[51.5,63.5],"setbackCm":0,"brandFlex":5.5,"riderWeightRaw":"120+ lb / 60+ kg"},
+    {"size":"155W","widthVariant":"wide","contactLengthCm":116,"sidecutRadiiM":[7.7,8.1],"noseTailWidthCm":[30.7,30.7],"waistWidthCm":26.5,"stanceMinMaxInches":[20.25,25],"setbackInches":0,"stanceMinMaxCm":[51.5,63.5],"setbackCm":0,"brandFlex":6,"riderWeightRaw":"130+ lb / 60+ kg"},
+    {"size":"157.5","widthVariant":"standard","contactLengthCm":119,"sidecutRadiiM":[7.8,8.2],"noseTailWidthCm":[29.9,29.9],"waistWidthCm":25.5,"stanceMinMaxInches":[20.25,25],"setbackInches":0,"stanceMinMaxCm":[51.5,63.5],"setbackCm":0,"brandFlex":6,"riderWeightRaw":"130+ lb / 65+ kg"},
+    {"size":"158W","widthVariant":"wide","contactLengthCm":119,"sidecutRadiiM":[7.8,8.2],"noseTailWidthCm":[31.2,31.2],"waistWidthCm":26.8,"stanceMinMaxInches":[20.25,25],"setbackInches":0,"stanceMinMaxCm":[51.5,63.5],"setbackCm":0,"brandFlex":6,"riderWeightRaw":"130+ lb / 65+ kg"},
+    {"size":"159.5","widthVariant":"standard","contactLengthCm":120,"sidecutRadiiM":[7.9,8.0],"noseTailWidthCm":[30.0,30.0],"waistWidthCm":25.6,"stanceMinMaxInches":[20.25,25],"setbackInches":0,"stanceMinMaxCm":[51.5,63.5],"setbackCm":0,"brandFlex":6,"riderWeightRaw":"135+ lb / 65+ kg"},
+    {"size":"161.5","widthVariant":"standard","contactLengthCm":122,"sidecutRadiiM":[8.0,8.4],"noseTailWidthCm":[30.2,30.2],"waistWidthCm":25.8,"stanceMinMaxInches":[20.25,25],"setbackInches":0,"stanceMinMaxCm":[51.5,63.5],"setbackCm":0,"brandFlex":7,"riderWeightRaw":"140+ lb / 65+ kg"},
+    {"size":"162W","widthVariant":"wide","contactLengthCm":122,"sidecutRadiiM":[8.0,8.4],"noseTailWidthCm":[31.3,31.3],"waistWidthCm":26.8,"stanceMinMaxInches":[20.25,25],"setbackInches":0,"stanceMinMaxCm":[51.5,63.5],"setbackCm":0,"brandFlex":7,"riderWeightRaw":"140+ lb / 70+ kg"}
+  ],
+  "pricing": {
+    "official2526Page": {
+      "url": "https://cad.gnu.com/2526-riders-choice-157-5",
+      "displayedPrice": 799.99,
+      "currencySymbol": "$",
+      "marketNote": "Canadian GNU storefront hostname; historic listing did not expose an ISO currency code in the indexed content. Do not silently normalize to USD or CAD.",
+      "captureNote": "Season-specific URL now redirects to the current GNU catalog."
+    },
+    "officialUkStoreIndexedSnapshot": {
+      "url": "https://gbp.gnu.com/2526-riders-choice-157-5",
+      "listedPrice": 554.99,
+      "currency": "GBP",
+      "priceIncludesVat": true,
+      "captureNote": "Price appeared in the search index for the official UK GNU 25/26 product page; the crawl age shown by search was about three months and direct open on 2026-10-02 redirected to the general GNU catalog. Not a verified live offer or a China-market comparator."
+    },
+    "usRetailer": {
+      "url": "https://skipro.com/products/riders-choice-56w",
+      "retrievedAt": "2026-10-02",
+      "currency": "USD",
+      "regularPrice": 629.99,
+      "salePriceAtCapture": 449.95,
+      "note": "Dynamic retailer price; not comparable to or replacement for seed CNY 5199 without Chinese-market provenance."
+    }
+  },
+  "scoringEvidence": {
+    "snowboardingProfiles": {
+      "reviewUrl": "https://snowboardingprofiles.com/gnu-riders-choice-review",
+      "pageUpdatedAt": "2026-01-26",
+      "overallScoreOutOf100": 88.3,
+      "testBoard": "2024 model, 157.5 cm",
+      "testDate": "2023-03-23",
+      "testLimitations": "One disclosed demo day; not a same-season 25/26 sample.",
+      "subscoresOutOf5": {"jumps":4.5,"carving":3.5,"turns":3.5,"switch":5,"speed":3.5,"spins":4.5,"butters":4,"jibbing":3,"crud":4,"trees":3.5,"pow":3},
+      "observations": "Pretty fast and stable for a twin; good crud handling; jump landings solid and forgiving; medium-large jumps a sweet spot; decent but not deep-pow float; jibbing is not its strongest area."
+    },
+    "snowboardingJunkie": {
+      "reviewUrl": "https://www.snowboardingjunkie.com/gnu-riders-choice-review/",
+      "pageUpdatedAt": "2025-08-27",
+      "testBoard": "154.5 cm; model year not stated",
+      "testDuration": "one week",
+      "locations": ["Grand Hirafu", "Niseko", "Hanazono"],
+      "observations": "Responsive/smooth turns on piste but average low-speed maneuverability; jumps, switch, landings and buttering were positives; jib felt comparatively stiff; float was acceptable in ankle-depth snow but not the best choice for deeper Niseko powder.",
+      "seasonMatch": "unconfirmed; do not label as a 2025/26 test"
+    },
+    "snowboardHow": {
+      "reviewUrl": "https://snowboardhow.com/gnu-riders-choice-review/",
+      "publishedAt": "2024-01-24",
+      "disclosure": "Author reports riding a rented sample for a few days and consulting other instructors; size, model year and conditions are not given.",
+      "observations": "Positive descriptions include stability at speed, edge control on hard/icy snow, park versatility and pop; limitations are deeper snow and very technical freeride. Construction details are excluded because the page's G2 Asym ECO claim conflicts with the official 25/26 3-D Delightwood Asym Chip terminology.",
+      "seasonMatch": "unconfirmed; directional-only, not a verified 25/26 test"
+    },
+    "siteScoreDecision": "Keep current site scores (stability 8, response 8, float 7, park 7.5, forgiveness 6.5, value 8) as low-confidence editorial estimates. None of the three review sources is a verified 25/26 test: Snowboarding Profiles discloses a 2024 157.5 sample from 2023-03-23, SnowboardingJunkie discloses 154.5 but no model year, and SnowboardHow discloses a few days on a rental but no size/year/conditions. Qualitative findings are directionally consistent with an all-mountain freestyle board with jump/switch strengths and moderate powder/jib limits; do not map external totals or unlike scales linearly. Value remains especially uncertain without Chinese-market price provenance.",
+    "siteFlexValue": 6.5,
+    "siteFlexNote": "Official GNU scale for 157.5 is 6/10. Current site value is retained pending a catalog-wide brand-to-site flex normalization policy."
+  },
+  "imageEvidence": {
+    "officialProductGalleryUrl": "https://cad.gnu.com/2526-riders-choice-157-5",
+    "officialVideoUrl": "https://www.youtube.com/watch?v=u0HKchtML9s",
+    "officialVideoTitle": "RIDERS CHOICE | 2025-2026 GNU SNOWBOARD",
+    "reuseDecision": "The historic official product page/video provide model artwork, but no explicit third-party image reuse license was found. Keep seed's AI placeholders until authorized assets or original photography are available."
+  },
+  "seedMappingNotes": [
+    "The representative seed size 157.5 is the median of the five standard-width sizes. Its official waist is 25.5 cm (255 mm), centered setback 0, sidecut pair 7.8/8.2 m and contact length 119 cm.",
+    "The official 25/26 eight-row table is now mirrored in prototype and YAML sizeSpecs with exact standard/W size identities and unit-qualified source columns; a direct official EU B-grade listing exposes the full season-specific table. Its B-grade price/condition is not applied to the normal seed.",
+    "GNU calls 119 cm contact length. Do not relabel it as effective edge. The existing seed effectiveEdge 1200 mm is an unverified legacy value and remains pending rather than being overwritten with contact length.",
+    "The official page does not provide board mass. Existing seed weight 2860 g is unverified; the Snowboarding Profiles test measured 3080 g on a 2024 157.5 sample, which is not evidence for the 25/26 board and must not be backdated.",
+    "Official size-specific GNU flex for 157.5 is 6/10; retain the site's 6.5 until a consistent mapping rule is approved.",
+    "Existing base, fiberglass, warranty and CNY price strings/values are not completely supported by the accessible 25/26 official spec table. Preserve them with explicit uncertainty; do not infer/convert regional prices or old-generation construction."
+  ]
+}

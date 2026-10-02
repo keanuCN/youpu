@@ -1,31 +1,31 @@
 # 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
-# 原型 id：sb-04 · 参数未经官网逐项校对，转入正式发布前需人工核对
+# 原型 id：sb-04 · 25/26 官方规格已核；动态价格、评分及图片授权的限制见 raw 记录
 slug: salomon-sight-2026
 category: snowboard
 brand: salomon
 model: Sight
 year: 2026
 title: Salomon Sight 2026
-one_liner: 它存在的意义就是让你少摔几次。板头板尾的反弓把卡刃概率压到很低，价格还留在入门区间。
+one_liner: 偏全山与轻 freeride 的锥形定向板；Cross Profile 面向压雪稳定，Royal Cork Pads 帮助过滤硬雪振动。
 price:
   min: 3299
   max: 3299
   currency: CNY
 specs:
-  length: 155
-  effectiveEdge: 1180
-  sidecut: 7.8
-  waistWidth: 254
-  stanceSetback: 10
-  profile: Rocker-Camber-Rocker
-  shape: 定向
-  core: 白杨 + 泡棉
-  fiberglass: Biax
-  base: 挤压 3500
-  weight: 2650
+  length: 153
+  effectiveEdge: 1160
+  sidecut: 6.8
+  waistWidth: 250
+  stanceSetback: 20
+  profile: Cross Profile Camber
+  shape: 锥形定向（Tapered Directional）
+  core: Aspen Strong Core
+  fiberglass: BA MD Fiberglass
+  base: Extruded EG
+  weight: 2680
   damping: 5.5
   pop: 4.5
-  turnRadiusFeel: 宽松，容错高
+  turnRadiusFeel: Quadratic，易于入弯与换刃
   warranty: 2
   flex: 4
   profileFamily: hybrid
@@ -60,4 +60,7 @@ images:
     alt: Salomon Sight 实地 / FIELD
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 3
+data_source:
+  kind: official
+  origin_url: https://cdn.shopify.com/s/files/1/0673/9981/1381/files/FW25_digitalcatalogue_techbook.pdf?v=1736124811
 status: published

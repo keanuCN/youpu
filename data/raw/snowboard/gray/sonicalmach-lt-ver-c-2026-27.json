@@ -1,0 +1,67 @@
+{
+  "brand": "GRAY",
+  "model": "SONICALMACH LT ver.C",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/gray-sonicalmach-lt-ver-c-2027.yaml",
+  "sources": {
+    "officialJapaneseCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE (Japanese)",
+      "evidence": "Confirms the 26/27 model and 54ver.C / 55w ver.C / 56ew ver.C width lineup, full per-variant dimensions, ¥90,000 pre-tax / ¥99,000 tax-inclusive MSRP, 2-ply 65/35 poplar/bamboo core and 3-ply 50/50 construction notation. The profile feature list names 'Valio Camber' (read as Vario Camber), in conflict with the official online 26/27 chart's Single Camber label."
+    },
+    "officialProductPage": {
+      "url": "https://graysnowboards.co.jp/product-2627-eng/",
+      "evidence": "Identifies the new 26/27 ver.C version, with carbon ribbons beneath the core and poplar-bamboo hybrid core; says all three variants share effective edge and sidecut, differing only in width. Describes soft torsional flex and quick snap/rebound as manufacturer claims, not independent ride-test results."
+    },
+    "officialTechnologyPage": {
+      "url": "https://graysnowboards.co.jp/tech-2627-eng/",
+      "evidence": "26/27 construction diagram and product-specific technology list confirm carbon strips beneath the core, bamboo/lightweight poplar hybrid core, polyamide topsheet, fiberglass laminate, stainless-steel edges."
+    },
+    "officialChart": {
+      "url": "https://graysnowboards.co.jp/chart/",
+      "evidence": "The official current chart labels SONICALMACH LT 54ver.C / 55w ver.C / 56ew ver.C as SINGLE CAMBER. This conflicts with 'Valio Camber' in the same-season Japanese catalog product feature list. Neither source has been silently preferred; YAML records the unresolved conflict."
+    },
+    "retailerReservationListing": {
+      "url": "https://www.murasaki.jp/Form/Product/ProductDetail.aspx?bid=snow&pid=n02290101019998",
+      "evidence": "Japanese retailer lists 26/27 identity and 154 / 155W / 156EW variants and warns of possible February 2027 delivery. This corroborates identity/availability only, not China pricing or on-snow performance."
+    }
+  },
+  "officialPrice": {
+    "currency": "JPY",
+    "preTax": 90000,
+    "taxInclusive": 99000,
+    "priceType": "official Japanese 26/27 MSRP",
+    "seedNormalization": {
+      "currency": "CNY",
+      "rateCnyPerJpy": 0.042451,
+      "rateSource": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+      "rateDate": "2026-10-02",
+      "formula": "round(99000 * 0.042451) = 4203",
+      "note": "Currency normalization only; not a China-market price."
+    }
+  },
+  "sizeRows": [
+    {"size":"54 ver.C","overallLengthMm":1540,"effectiveEdgeMm":1220,"contactLengthMm":1180,"waistWidthMm":250,"sidecutRadiiMm":[8700,8300,8700],"sidecutOffsetMm":0,"noseLengthMm":190,"noseWidthMm":291,"noseHeightMm":41,"tailLengthMm":170,"tailWidthMm":291,"tailHeightMm":32,"camberMm":8,"rockerMm":null,"stanceWidthMm":[480,600],"inserts":"12+12","setbackMm":10,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"PURPLE","base":"P-TEX3000 Graphite","manufacturerStiffnessText":"6.8 N W"},
+    {"size":"55w ver.C","overallLengthMm":1550,"effectiveEdgeMm":1220,"contactLengthMm":1180,"waistWidthMm":260,"sidecutRadiiMm":[8700,8300,8700],"sidecutOffsetMm":0,"noseLengthMm":195,"noseWidthMm":301,"noseHeightMm":42.5,"tailLengthMm":175,"tailWidthMm":301,"tailHeightMm":34.4,"camberMm":8,"rockerMm":null,"stanceWidthMm":[480,600],"inserts":"12+12","setbackMm":10,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"PURPLE","base":"P-TEX3000 Graphite","manufacturerStiffnessText":"8.0 T"},
+    {"size":"56ew ver.C","overallLengthMm":1560,"effectiveEdgeMm":1220,"contactLengthMm":1180,"waistWidthMm":270,"sidecutRadiiMm":[8700,8300,8700],"sidecutOffsetMm":0,"noseLengthMm":200,"noseWidthMm":311,"noseHeightMm":44.5,"tailLengthMm":180,"tailWidthMm":311,"tailHeightMm":36.5,"camberMm":8,"rockerMm":null,"stanceWidthMm":[480,600],"inserts":"12+12","setbackMm":10,"edge":"1.8mm stainless","sidewallAngleDeg":25,"sidewallColor":"PURPLE","base":"P-TEX3000 Graphite","manufacturerStiffnessText":"7.0 N W"}
+  ],
+  "manufacturerStiffnessNote": "The PDF's extracted stiffness row distributes N/W/T markers across three cells (6.8 N W / 8.0 T / 7.0 N W). The original layout has not been visually resolved in this pass, so these strings are retained per printed cell and are not normalized or mapped to the site's flex score. The pre-existing YAML string '6.8/8.0/7.0' in each size remains flagged for manual table-layout review.",
+  "rideEvidenceSearch": {
+    "queryDate": "2026-10-02",
+    "result": "No independent on-snow review found for the newly introduced 26/27 ver.C model. Retailer reservation pages are not ride reports; marketplace review pages show insufficient review counts.",
+    "scoreReview": {
+      "existingScores": {"stability":7.2,"response":7.8,"float":5.4,"park":7.6,"forgiveness":6.5,"value":7.5},
+      "decision": "Keep all scores unchanged and low confidence; the carbon strip is a construction fact, not quantified ride evidence.",
+      "confidence": "low; no verified independent target-season snow test"
+    }
+  },
+  "unverified": [
+    "Official profile designation conflicts: 26/27 catalog says Valio/Vario Camber; current official chart says Single Camber.",
+    "China-market price is not verified; CNY seed is a JPY MSRP conversion.",
+    "Manufacturer stiffness row cell/layout alignment remains uncertain; do not normalize N/W/T text or infer identical per-size flex values without visual confirmation.",
+    "No verified 26/27 ride test, sample conditions, weight, or warranty detail found.",
+    "Official image reuse permission is not established."
+  ],
+  "imageRights": "Official image is source provenance only; no reuse license verified."
+}

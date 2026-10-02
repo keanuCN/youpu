@@ -1,0 +1,77 @@
+{
+  "brand": "DREAMSCAPE / Decathlon",
+  "model": "All Road 900",
+  "catalogSeasonLabel": "2026 snapshot (the current official listing does not explicitly name a season)",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.decathlon.co.uk/p/adults-snowboarding-board-for-slope-and-freeride-all-road-900/332434/c314c29m8643399",
+      "retrievedAt": "2026-10-02",
+      "sku": "8643399",
+      "priceGBP": 279.99,
+      "priceType": "UK current listing price; not a China-market quote",
+      "manufacturerClaims": [
+        "Advanced-rider piste/freeride board; directional shape, standard camber plus rocker, 8/10 flex and about 8/10 torsional stiffness.",
+        "Official page describes strong grip at speed, large-radius turning, 50 mm setback and powder flotation from the long nose rocker.",
+        "Sintered HDPE base, 20 mm poplar core and ash wood topsheet; sold without bindings.",
+        "Official terrain scale says 100% piste, 80% off-piste and 20% park; its separate explanation says park features are not its design focus, though jumps are possible.",
+        "Official listed weights: 154 = 2.50 kg +/-5%; 160 = 3.17 kg +/-5%; 166 = 3.21 kg +/-5%."
+      ],
+      "sizeRows": [
+        {"size":"154","noseWaistTailMm":[289,245,280],"sidecutM":8.3,"setbackMm":50,"recommendedStanceMm":540,"weightKg":2.50,"weightTolerancePercent":5,"recommendedRiderWeightKg":[55,70]},
+        {"size":"160","noseWaistTailMm":[298,252,290],"sidecutM":8.4,"setbackMm":50,"recommendedStanceMm":560,"weightKg":3.17,"weightTolerancePercent":5,"recommendedRiderWeightKg":[65,80]},
+        {"size":"166","noseWaistTailMm":[308,260,301],"sidecutM":8.5,"setbackMm":50,"recommendedStanceMm":580,"weightKg":3.21,"weightTolerancePercent":5,"recommendedRiderWeightKg":[80,110]}
+      ],
+      "limitations": "Live UK listing and SKU do not identify a specific model season. The catalog's 2026 label is a snapshot convention. Price is UK-only and dynamic; never label the FX-normalized CNY value as a China retail price."
+    },
+    "independentReview2023Steph": {
+      "url": "https://thegoodride.com/snowboard-reviews/dreamscape-all-road-900-snowboard-review-by-steph-w/",
+      "publisher": "The Good Ride",
+      "publishedSeasonLabel": "2023",
+      "sampleSizeCm": 154,
+      "testDays": 7,
+      "conditions": "Mid-season, mostly hardpack, some soft snow and little ice.",
+      "reviewerContext": "Reviewer says the 154 felt about 12 cm longer than their normal preference, so this sample was substantially oversized for them.",
+      "bindings": "Union Explorer",
+      "observations": [
+        "Stable and confident at speed and on steeps; less stable in very choppy snow and less responsive when ridden slowly.",
+        "Prefers fast, aggressive, large-radius carving; edge connection and turn-to-turn energy described positively.",
+        "Turn initiation is rated medium/slow; slow skidded turns feel grabby, buttering is difficult.",
+        "The reviewer did not ride it in powder, so powder comments are inference from shape/setback, not observed test performance.",
+        "Little freestyle personality; natural jumps and landings are described positively, jibbing poorly."
+      ],
+      "limitations": "2023 sample, not confirmed as the same production season as current SKU 8643399. One reviewer; oversized 154 sample; mostly hardpack; no powder test. External category ratings are not numerically mapped to the site's six scores."
+    },
+    "independentReview2023ExtendedDemo": {
+      "url": "https://thegoodride.com/snowboard-reviews/decathlon-allroad-900-2023-snowboard-review/",
+      "publisher": "The Good Ride",
+      "publishedSeasonLabel": "2023",
+      "sampleSizeCm": 166,
+      "testDays": "5+",
+      "conditions": "Mixed but variable spring conditions.",
+      "riders": [
+        {"name":"James","height":"5 ft 10 in","weightLb":"185-190","bootUS":9},
+        {"name":"Davey","height":"6 ft 4 in","weightLb":240,"bootUS":12}
+      ],
+      "bindings": ["Union Atlas","Union Force"],
+      "disclosure": "Extended borrowed demo returned to source; reviewer says no manufacturer payment (the review page has affiliate links).",
+      "observations": [
+        "Strong hard-snow grip; reasonably capable in uneven snow; carving has good spring but not exceptional versus higher-priced boards.",
+        "More damp than the predecessor; base glide is described as not especially fast.",
+        "A rider reports it did pretty well in powder, with a long nose and moderate setback; no deep-powder duration or snow depth is specified.",
+        "The 166 was appropriate for the larger rider but too large/hard to control for the smaller rider, illustrating sizing sensitivity."
+      ],
+      "limitations": "2023 sample, not confirmed as the same production season as the current listing; spring test is mixed and powder exposure is not quantified. Reviewers' different sizes/bodies and binding setups are not directly comparable."
+    }
+  },
+  "scoringEvidence": {
+    "currentSiteScores": {"stability":8.6,"response":8.7,"float":8.3,"park":3.0,"forgiveness":3.8,"value":8.4},
+    "decision": "Retain the current six scores. The two 2023 reviews broadly corroborate the freeride/high-speed and stiff directional character, weak park/playfulness, and rider/size-dependent maneuverability. Response 8.7 is a provisional estimate rather than a measured score: the 154 tester reports medium/slow turn initiation but says the sample was roughly 12 cm longer than their normal choice. Float 8.3 remains only partially supported because just one review reports limited powder exposure and the other did not test powder. Value 8.4 is not validated by foreign-market reviews or the UK list price; the seed CNY value is FX-normalized, not China retail evidence.",
+    "confidence": "Low to medium directional evidence for stability/response/park; low for float/forgiveness; very low for value. Both independent ride reviews are labeled 2023, while the current official listing does not identify a season. No external score is converted to the site's scale."
+  },
+  "unresolved": [
+    "No official model season shown on current product page; do not claim the 2023 tested boards are confirmed 2026 production samples.",
+    "No verified China-market retail price; GBP price and USD reviewer list price are not Chinese retail quotes.",
+    "Official weight has +/-5% tolerance; 154 cm seed records the nominal 2500 g, not a precision measurement.",
+    "Image reuse license has not been confirmed."
+  ]
+}

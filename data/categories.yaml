@@ -36,6 +36,17 @@
         compareDirection: context
         order: 10
 
+      - key: widthVariant
+        label: 宽度版本
+        group: 尺寸与形状
+        type: enum
+        options:
+          - { value: standard, label: 标准宽 }
+          - { value: wide, label: 宽版 }
+        filter: false
+        compare: false
+        order: 15
+
       - key: effectiveEdge
         label: 有效边刃
         group: 尺寸与形状
@@ -61,6 +72,15 @@
         compareDirection: neutral
         order: 30
         help: 数值越小转弯越灵活，越大越稳定
+
+      - key: sidecutRadii
+        label: 多段侧切半径原文
+        group: 尺寸与形状
+        type: text
+        filter: false
+        compare: false
+        order: 31
+        help: 保留非对称双半径或多段半径的官方标注，不折算为单一数值
 
       - key: waistWidth
         label: 板腰宽
@@ -215,6 +235,37 @@
         filter: multi
         compare: true
         order: 310
+
+      - key: sizeSpecs
+        label: 各尺寸参数表
+        group: 尺寸与形状
+        type: nested
+        itemSchema:
+          size: { type: text, label: 尺码 }
+          waistWidth: { type: number, label: 板腰宽 }
+          effectiveEdge: { type: number, label: 有效刃长 }
+          sidecutRadii: { type: text, label: 侧切半径 }
+          stanceWidth: { type: text, label: 站距范围 }
+          setback: { type: number, label: 站位后移 }
+          base: { type: text, label: 底面 }
+          camber: { type: number, label: 拱高 }
+          contactLength: { type: number, label: 接触长度 }
+          edge: { type: text, label: 钢刃 }
+          insertQty: { type: text, label: 固定器孔位 }
+          noseHeight: { type: number, label: 板头高度 }
+          noseLength: { type: number, label: 板头长度 }
+          noseWidth: { type: number, label: 板头宽度 }
+          overallLength: { type: number, label: 总长 }
+          sidecutOffset: { type: number, label: 侧切偏移 }
+          sidewallAngle: { type: text, label: 侧墙角度 }
+          sidewallColor: { type: text, label: 侧墙颜色 }
+          stiffness: { type: text, label: 硬度说明 }
+          tailHeight: { type: number, label: 板尾高度 }
+          tailLength: { type: number, label: 板尾长度 }
+          tailWidth: { type: number, label: 板尾宽度 }
+        filter: false
+        compare: false
+        order: 320
 
       # ── 价格与年份 ──
       - key: warranty

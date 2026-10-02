@@ -1,0 +1,49 @@
+{
+  "brand": "DREAMSCAPE / Decathlon",
+  "model": "SNB 100",
+  "catalogSeasonLabel": "2026 snapshot (official listing does not state a production season)",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.decathlon.ca/en/p/all-mountain-and-freestyle-snowboard-snb-100/309522/c193m8660203",
+      "retrievedAt": "2026-10-02",
+      "sku": "8660203",
+      "priceCAD": {"formerPrice":220,"currentSalePrice":165,"saleStart":"2025-12-24","note":"Canada-only dynamic sale price; the seed's CNY 1037 is a conversion of the former CAD 220 price, not a China-market offer."},
+      "officialClaims": [
+        "Beginner-focused all-mountain/freestyle board, flex 3/10, torsional flex about 2/10, flat camber with long rocker, directional twin, 20 mm setback.",
+        "Maker describes easy turning, reduced edge catches, forgiving handling, entry-level freestyle and jib suitability; it explicitly says high-speed carving and pop on frozen snow are limited.",
+        "Official terrain percentages: piste 100%, park 80%, off-piste 20%; these are manufacturer positioning, not ride-test ratings.",
+        "152 geometry: nose/waist/tail 291/250/291 mm, sidecut 8.2 m, recommended stance 540 mm, weight 2767 g +/-6%, rider range 30-60 kg.",
+        "156 geometry: nose/waist/tail 295/253/295 mm, sidecut 8.5 m, recommended stance 550 mm, weight 2670 g +/-6%, rider range 50-80 kg.",
+        "160 midwide geometry: nose/waist/tail 309/265/309 mm, sidecut 8.5 m, recommended stance 575 mm, weight 2966 g +/-6%, rider range 70-90 kg.",
+        "Current page reports a 2-year warranty."
+      ],
+      "internalBaseMaterialConflict": {
+        "technicalInformationHeading": "Sintered base",
+        "laterGlideQualityExplanation": "Extruded base; normal glide and good durability",
+        "decision": "Do not treat both claims as simultaneously verified. Seed currently says Extruded, matching the more specific base-type explanation, but keep the product base flagged until a season/SKU-specific manufacturer clarification is found."
+      },
+      "limitations": "Current Canadian listing is SKU-specific but does not identify the production season. Price is not a China-market price. Official copy contains contradictory base material statements on the same page."
+    },
+    "independentReviewSearch": {
+      "searchQueries": [
+        "Decathlon SNB 100 snowboard test review Dreamscape SNB100",
+        "SNB 100 snowboard review Decathlon",
+        "Dreamscape SNB 100 snowboard review"
+      ],
+      "retrievedAt": "2026-10-02",
+      "result": "No reliable, dimensioned independent on-snow test clearly matching this model and season was found in this search batch. Search results included an informal first-person Reddit comment about an SNB-100, but it did not disclose board year, size, snow conditions, test duration, or rider details; it was not used to calibrate scores.",
+      "reviewUrl": "https://www.reddit.com/r/snowboardingnoobs/comments/1vyp3zd/are_decathlon_boards_actually_that_bad/"
+    }
+  },
+  "scoringEvidence": {
+    "currentSiteScores": {"stability":4.4,"response":4.3,"float":4.2,"park":5.7,"forgiveness":9.0,"value":9.2},
+    "decision": "Retain all six scores as provisional editorial estimates. Official copy supports the beginner-friendly, forgiving, soft-flex and low-speed-playful intent, while explicitly warning about high-speed/frozen-snow carving limits. Those claims are not independent ride measurements and do not justify converting flex or terrain percentages to score values. Park 5.7 is a general beginner-freestyle estimate, not an observed feature-park score. Float 4.2 is weak-confidence because the board is short, nearly centered, and official copy only says flat+rocker aids float; no powder test was found. Value 9.2 is the least defensible dimension because the normalized CAD price is not a China-market price.",
+    "confidence": "Low across all six dimensions; forgiveness has the clearest directional support from official design intent, while float and value have particularly weak empirical/local-market support."
+  },
+  "unresolved": [
+    "No production season shown on the official listing; 2026 is a catalog snapshot label.",
+    "Official product page contradicts itself on sintered versus extruded base.",
+    "No matching independent ride test with disclosed size, rider, duration, and conditions found.",
+    "No verified China-market price, Chinese ride test, or image reuse authorization."
+  ]
+}

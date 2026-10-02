@@ -4,10 +4,29 @@ brand: decathlon
 model: Park & Ride 500
 year: 2026
 title: DREAMSCAPE Park & Ride 500 2026
-one_liner: 迪卡侬全山地与自由式型号，官方页面列出标准正拱、加宽及粉雪站位等设计信息。
+one_liner: 迪卡侬全山地与自由式型号，标准正拱配合摇杆与粉雪站位；英国官网原价 £199.99（现为促销价），按 2026-10-02 参考汇率 1 GBP≈¥8.8475 折算约 ¥1,769 CNY（非中国售价）。规格以 156cm 为例。
+editorial_scores:
+  stability: 7.2
+  response: 7.5
+  float: 7.2
+  park: 7.0
+  forgiveness: 6.5
+  value: 8.4
+price:
+  min: 1769
+  max: 1769
+  currency: CNY
 specs:
+  length: 156
+  sidecut: 8.4
+  waistWidth: 255
+  stanceSetback: 20
   profile: Standard Camber with Rocker / Powder Stance
   profileFamily: hybrid
+  shape: Directional Twin
+  core: Poplar wood
+  base: Sintered HDPE
+  flex: 6
   scenes:
     - all-mountain
     - freestyle

@@ -4,7 +4,18 @@ brand: salomon
 model: Huck Knife
 year: 2027
 title: Salomon Huck Knife 2027
-one_liner: 以跳台、道具和公园自由式为主的真双向板，Quad Camber 取向强调弹性、响应和落地稳定。
+one_liner: 以跳台、道具和公园自由式为主的真双向板，Quad Camber 取向强调弹性、响应和落地稳定。2027 美区零售标价 $579.95，按项目 USD/CNY 目录汇率折算。
+editorial_scores:
+  stability: 7.4
+  response: 8.0
+  float: 4.8
+  park: 9.0
+  forgiveness: 6.3
+  value: 7.1
+price:
+  min: 4176
+  max: 4176
+  currency: CNY
 specs:
   length: 156
   waistWidth: 248

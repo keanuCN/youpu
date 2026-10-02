@@ -1,0 +1,75 @@
+{
+  "brand": "Korua Shapes",
+  "model": "Café Racer",
+  "productIdentity": "Current carry-over shape; manufacturer states models are not season-labeled.",
+  "representativeSize": "159",
+  "retrievedAt": "2026-10-02",
+  "sources": {
+    "officialNorthAmericaProductPage": {
+      "url": "https://ca.koruashapes.com/products/cafe-racer",
+      "evidence": "Official product page identifies the Café Racer as a full-camber carving-oriented all-mountain shape, with a smooth nose transition for soft-snow float. Provides a five-size geometry table, stance details, variant-specific board weights, construction highlights, current size options, price, 2-year warranty, and a product gallery."
+    },
+    "officialJapanProductPage": {
+      "url": "https://jp.koruashapes.com/ja/collections/all/products/cafe-racer",
+      "evidence": "Regional official product page independently exposes the Café Racer 159 geometry and Gloss/Brushed weight variants; its 159 row confirms effective edge 1200 mm, waist 269 mm and 3.2/2.8 kg variant weights. Used to corroborate the North American page's malformed decimal punctuation for Gloss 3.2 kg."
+    },
+    "officialEuropeSizeGuide": {
+      "url": "https://koruashapes.com/pages/size-guide",
+      "evidence": "Official size guide lists boot-size, boot-sole-length, rider-weight and rider-height guidance by Café Racer size. Its 159 rider-weight range is 55–90 kg, while the North American product-page table says 55–85 kg; retain both source values and do not silently choose one."
+    },
+    "officialFaq": {
+      "url": "https://koruashapes.com/pages/faqs",
+      "evidence": "KORUA states that the brand does not organize its models by season; shapes may remain carry-over models. Therefore the current geometry is not represented as a verified 2026-specific historical snapshot."
+    }
+  },
+  "units": {
+    "length": "cm",
+    "dimensions": "mm",
+    "sidecutRadius": "m",
+    "boardWeight": "kg; variant-dependent Gloss/Brushed topsheet",
+    "riderWeight": "kg",
+    "bootSoleLength": "cm"
+  },
+  "sizes": [
+    {"size":"144","selectableOnCapturedProductPage":false,"effectiveEdge":1050,"runningLength":930,"noseWidth":301,"waistWidth":252,"tailWidth":273,"sidecutRadius":8.0,"setback":20,"taper":18,"recommendedStance":53,"adjustableStanceRange":[49,57],"boardWeightKg":{"gloss":2.4,"brushed":null},"maxBootSizeEU":41,"maxBootSoleLengthCm":29.7,"recommendedRiderWeightKg":[40,60],"maxRiderHeightCm":168},
+    {"size":"150","selectableOnCapturedProductPage":true,"effectiveEdge":1100,"runningLength":950,"noseWidth":302,"waistWidth":254,"tailWidth":276,"sidecutRadius":7.9,"setback":35,"taper":26,"recommendedStance":53,"adjustableStanceRange":[49,57],"boardWeightKg":{"gloss":2.6,"brushed":2.5},"maxBootSizeEU":41,"maxBootSoleLengthCm":30.1,"recommendedRiderWeightKg":[45,75],"maxRiderHeightCm":175},
+    {"size":"156","selectableOnCapturedProductPage":true,"effectiveEdge":1160,"runningLength":1010,"noseWidth":311,"waistWidth":260,"tailWidth":284,"sidecutRadius":8.0,"setback":35,"taper":27,"recommendedStance":54,"adjustableStanceRange":[50,58],"boardWeightKg":{"gloss":3.1,"brushed":2.7},"maxBootSizeEU":44,"maxBootSoleLengthCm":30.4,"recommendedRiderWeightKg":[50,80],"maxRiderHeightCm":185},
+    {"size":"159","selectableOnCapturedProductPage":true,"effectiveEdge":1200,"runningLength":1050,"noseWidth":322,"waistWidth":269,"tailWidth":294,"sidecutRadius":8.2,"setback":35,"taper":28,"recommendedStance":55,"adjustableStanceRange":[51,59],"boardWeightKg":{"gloss":3.2,"brushed":2.8},"maxBootSizeEU":46,"maxBootSoleLengthCm":31.4,"productPageRiderWeightKg":[55,85],"sizeGuideRiderWeightKg":[55,90],"maxRiderHeightCm":190},
+    {"size":"164","selectableOnCapturedProductPage":true,"effectiveEdge":1230,"runningLength":1090,"noseWidth":330,"waistWidth":276,"tailWidth":302,"sidecutRadius":8.5,"setback":35,"taper":28,"recommendedStance":55,"adjustableStanceRange":[51,59],"boardWeightKg":{"gloss":3.3,"brushed":3.1},"maxBootSizeEU":{"productPage":49,"sizeGuide":48},"maxBootSoleLengthCm":32.3,"recommendedRiderWeightRaw":"65–95+ kg","maxRiderHeightCm":"195+"}
+  ],
+  "productDetails": {
+    "profile": "Full Camber with smooth transition into nose",
+    "core": "Poplar Light Wood Core",
+    "fiberglass": "Biaxial Fiberglass",
+    "base": "Premium Sintered Base",
+    "topsheets": "Gloss or Brushed polyamide; product page describes Brushed as lighter, more durable and snow-repellent",
+    "warrantyYears": 2,
+    "brandPersonalityScale": {"carving":9,"transitionFreestyle":6,"backcountryTrees":7,"powder":7,"note":"Brand personality indicators; not directly mapped to site editorial scores."}
+  },
+  "pricing": {
+    "officialNorthAmericaStore": {
+      "url": "https://ca.koruashapes.com/products/cafe-racer",
+      "retrievedAt": "2026-10-02",
+      "currency": "CAD",
+      "listedPrice": 829,
+      "note": "Price includes duties per regional product page; dynamic North American price, not a China-market quote and does not replace seed CNY 6899."
+    },
+    "officialUsCollection": {
+      "url": "https://us.koruashapes.com/collections/snowboards",
+      "currency": "USD",
+      "startingPrice": 599,
+      "note": "Collection-level starting price; size/variant offer is not confirmed as equivalent to the captured Canadian product page. Regional price only."
+    }
+  },
+  "imageEvidence": {
+    "officialProductPage": "https://ca.koruashapes.com/products/cafe-racer",
+    "galleryPresent": true,
+    "reuseDecision": "Official gallery exists, but no explicit license allowing third-party republication was confirmed. Keep AI placeholders until permission or original photography is available."
+  },
+  "schemaGaps": [
+    "All five official size rows, including running length, taper, topsheet-variant weights, stance range, availability and fit guidance, have been mapped to prototype/YAML sizeSpecs. The product page and size guide disagree on 159 rider-weight range and 164 maximum EU boot size; both values are retained separately by source.",
+    "Seed price CNY 6899 has no China-market source in this capture.",
+    "The product page's 159 rider-weight recommendation (55–85 kg) conflicts with the official size guide (55–90 kg); both are retained without resolution.",
+    "Size 144 remains in the official spec table but was not selectable on the captured product page; do not claim it was in-stock."
+  ]
+}

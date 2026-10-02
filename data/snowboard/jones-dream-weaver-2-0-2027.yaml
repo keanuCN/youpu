@@ -4,17 +4,196 @@ brand: jones
 model: Dream Weaver 2.0
 year: 2027
 title: Women's Dream Weaver 2.0 Snowboard 2027 | Jones
-one_liner: 偏野雪浮力的女款全山地日常板，形状兼顾雪道巡航、粉雪和多变地形。
+one_liner: 偏野雪浮力的女款全山地日常板，形状兼顾雪道巡航、粉雪和多变地形。官网美区标价 $549.95，按项目 USD/CNY 目录汇率折算。
+editorial_scores:
+  stability: 6.8
+  response: 7.2
+  float: 8.1
+  park: 7.4
+  forgiveness: 7.8
+  value: 7.3
+price:
+  min: 3960
+  max: 3960
+  currency: CNY
 specs:
   length: 148
   effectiveEdge: 1120
+  sidecut: 7.1
   waistWidth: 241
+  stanceSetback: 20
   profile: CamRock
   profileFamily: hybrid
   shape: Directional
+  core: Master Core（Paulownia / Poplar）
+  fiberglass: Biax
+  base: Sintered 8000
+  weight: 2300
   scenes:
     - all-mountain
     - powder
+  sizeSpecs:
+    - size: "139"
+      weightKg: 2.0
+      riderWeightLb: [90, 140]
+      riderWeightKg: [41, 63]
+      bootUs: [5, 7]
+      bootEu: [35.5, 37.5]
+      surfaceAreaDm2: 33.7
+      contactLengthCm: 98.5
+      effectiveEdgeCm: 105
+      tipLengthCm: 23.5
+      tailLengthCm: 17.0
+      waistCm: 23.5
+      underfootWidthFrontCm: 24.6
+      underfootWidthBackCm: 24.6
+      tipWidthCm: 27.6
+      tailWidthCm: 27.1
+      sidecutM: 6.5
+      taperMm: 5
+      referenceStanceCm: 47
+      referenceStanceIn: 18.5
+      centeredStanceCm: 49
+      centeredStanceIn: 19.3
+      setbackCm: 2
+    - size: "142"
+      weightKg: 2.1
+      riderWeightLb: [90, 140]
+      riderWeightKg: [41, 63]
+      bootUs: [5, 7]
+      bootEu: [35.5, 37.5]
+      surfaceAreaDm2: 34.75
+      contactLengthCm: 101.1
+      effectiveEdgeCm: 107
+      tipLengthCm: 23.7
+      tailLengthCm: 17.2
+      waistCm: 23.7
+      underfootWidthFrontCm: 24.8
+      underfootWidthBackCm: 24.8
+      tipWidthCm: 27.9
+      tailWidthCm: 27.4
+      sidecutM: 6.7
+      taperMm: 5
+      referenceStanceCm: 47
+      referenceStanceIn: 18.5
+      centeredStanceCm: 49
+      centeredStanceIn: 19.3
+      setbackCm: 2
+    - size: "145"
+      weightKg: 2.2
+      riderWeightLb: [100, 150]
+      riderWeightKg: [45, 68]
+      bootUs: [6, 8]
+      bootEu: [36.5, 38.5]
+      surfaceAreaDm2: 35.81
+      contactLengthCm: 103.7
+      effectiveEdgeCm: 110
+      tipLengthCm: 23.9
+      tailLengthCm: 17.4
+      waistCm: 23.9
+      underfootWidthFrontCm: 25.0
+      underfootWidthBackCm: 25.0
+      tipWidthCm: 28.2
+      tailWidthCm: 27.7
+      sidecutM: 6.9
+      taperMm: 5
+      referenceStanceCm: 49
+      referenceStanceIn: 19.3
+      centeredStanceCm: 51
+      centeredStanceIn: 20.1
+      setbackCm: 2
+    - size: "148"
+      weightKg: 2.3
+      riderWeightLb: [100, 150]
+      riderWeightKg: [45, 68]
+      bootUs: [6, 8]
+      bootEu: [36.5, 38.5]
+      surfaceAreaDm2: 36.88
+      contactLengthCm: 106.3
+      effectiveEdgeCm: 112
+      tipLengthCm: 24.1
+      tailLengthCm: 17.6
+      waistCm: 24.1
+      underfootWidthFrontCm: 25.2
+      underfootWidthBackCm: 25.2
+      tipWidthCm: 28.5
+      tailWidthCm: 28.0
+      sidecutM: 7.1
+      taperMm: 5
+      referenceStanceCm: 49
+      referenceStanceIn: 19.3
+      centeredStanceCm: 51
+      centeredStanceIn: 20.1
+      setbackCm: 2
+    - size: "151"
+      weightKg: 2.4
+      riderWeightLb: [110, 160]
+      riderWeightKg: [49, 73]
+      bootUs: [7, 9]
+      bootEu: [37.5, 39.5]
+      surfaceAreaDm2: 37.96
+      contactLengthCm: 108.9
+      effectiveEdgeCm: 115
+      tipLengthCm: 24.3
+      tailLengthCm: 17.8
+      waistCm: 24.3
+      underfootWidthFrontCm: 25.4
+      underfootWidthBackCm: 25.4
+      tipWidthCm: 28.7
+      tailWidthCm: 28.2
+      sidecutM: 7.3
+      taperMm: 5
+      referenceStanceCm: 51
+      referenceStanceIn: 20.1
+      centeredStanceCm: 53
+      centeredStanceIn: 20.9
+      setbackCm: 2
+    - size: "154"
+      weightKg: 2.5
+      riderWeightLb: [120, 170]
+      riderWeightKg: [54, 77]
+      bootUs: [8, 10]
+      bootEu: [38.5, 42]
+      surfaceAreaDm2: 39.06
+      contactLengthCm: 111.5
+      effectiveEdgeCm: 118
+      tipLengthCm: 24.5
+      tailLengthCm: 18.0
+      waistCm: 24.5
+      underfootWidthFrontCm: 25.6
+      underfootWidthBackCm: 25.6
+      tipWidthCm: 29.0
+      tailWidthCm: 28.5
+      sidecutM: 7.5
+      taperMm: 5
+      referenceStanceCm: 51
+      referenceStanceIn: 20.1
+      centeredStanceCm: 53
+      centeredStanceIn: 20.9
+      setbackCm: 2
+    - size: "156"
+      weightKg: 2.6
+      riderWeightLb: [120, 170]
+      riderWeightKg: [54, 77]
+      bootUs: [8, 11]
+      bootEu: [38.5, 43]
+      surfaceAreaDm2: 39.85
+      contactLengthCm: 113.1
+      effectiveEdgeCm: 119
+      tipLengthCm: 24.7
+      tailLengthCm: 18.2
+      waistCm: 24.7
+      underfootWidthFrontCm: 25.9
+      underfootWidthBackCm: 25.9
+      tipWidthCm: 29.2
+      tailWidthCm: 28.7
+      sidecutM: 7.7
+      taperMm: 5
+      referenceStanceCm: 53
+      referenceStanceIn: 20.9
+      centeredStanceCm: 55
+      centeredStanceIn: 21.7
+      setbackCm: 2
 images:
   - url: "https://cdn.shopify.com/s/files/1/0641/4722/6759/files/J.27.SNW.DRC-gallery-1.webp?v=1782443953&width=1946"
     kind: face
@@ -23,6 +202,6 @@ images:
     sort_order: 0
 data_source:
   kind: official
-  origin_url: https://eu.jonessnowboards.com/products/womens-dream-weaver-20-snowboard
+  origin_url: https://www.jonessnowboards.com/products/womens-dream-weaver-20-snowboard
   snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
 status: published

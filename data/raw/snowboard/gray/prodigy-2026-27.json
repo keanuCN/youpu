@@ -1,0 +1,82 @@
+{
+  "brand": "GRAY",
+  "model": "PRODIGY",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/gray-prodigy-2027.yaml",
+  "sources": {
+    "officialJapaneseCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE (Japanese)",
+      "evidence": "Official season catalog confirms eight size/width variants, per-size geometry, camber, stance, setback, inserts, edge, base, sidewall color and N/W/T stiffness. It lists Directional Twin, Directional Flex, TripleRadius, Negative and Single Camber. Construction legend identifies STD Core II and size-group-specific fiberglass-ply notation. MSRP is JPY 115,000 before tax / JPY 126,500 tax-inclusive."
+    },
+    "officialEnglishCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_eng_low.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE (English)",
+      "evidence": "Season-specific corroboration for product description and per-size table. Prodigy is described as a high-speed directional twin, with X-shaped carbon rovings beneath the wood core and fiberglass layers on both sides."
+    },
+    "officialSeasonProduct": {
+      "url": "https://graysnowboards.co.jp/product-2627-eng/",
+      "evidence": "Confirms 26/27 Prodigy identity, slightly stiffer tail flex balance, hybrid sidecut positioning and manufacturer-described use from superpipe/big kickers to high-speed all-mountain riding. Positioning copy is not independent ride-test evidence."
+    },
+    "officialSeasonTechnology": {
+      "url": "https://graysnowboards.co.jp/tech-2627-eng/",
+      "evidence": "Confirms 26/27 wood-core sandwich construction and describes STD Core II as a paulownia-based core reinforced with hinoki along both sides."
+    }
+  },
+  "pricing": {
+    "officialJapan": {
+      "currency": "JPY",
+      "preTax": 115000,
+      "taxInclusive": 126500,
+      "priceType": "official Japanese catalog MSRP",
+      "note": "Not a verified China-market offer or Chinese retail price."
+    },
+    "seedNormalization": {
+      "currency": "CNY",
+      "rateCnyPerJpy": 0.042451,
+      "rateSource": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+      "rateDate": "2026-10-02",
+      "formula": "round(126500 * 0.042451) = 5370",
+      "value": 5370,
+      "note": "Currency normalization only; not an observed China-market price. Value score is therefore low confidence."
+    }
+  },
+  "units": {
+    "overallLengthMm": "Catalog millimeters; the size label is also represented as centimeters in product-level fields.",
+    "effectiveEdgeMm": "Catalog effective edge in millimeters; kept separate from contact length.",
+    "contactLengthMm": "Catalog contact length in millimeters.",
+    "sidecutRadiusMm": "Three printed radii preserved in catalog order; YAML stores the sequence in millimeters as printed.",
+    "stanceWidthMm": "Minimum–maximum stance width in millimeters.",
+    "stanceSetbackMm": "Catalog setback magnitude in millimeters; its direction/sign convention is not defined in the catalog.",
+    "stiffnessNWT": "Manufacturer N/W/T scale values copied as printed; not mapped to the site's editorial flex or six score dimensions.",
+    "coreAndFiberglass": "Catalog construction legend associates STD Core II and differing fiberglass ply notation with size groups; YAML stores the named core and general fiberglass/carbon construction, while exact ply grouping remains in source notes."
+  },
+  "sizeRows": [
+    {"size":"46.5","overallLengthMm":1465,"effectiveEdgeMm":1140,"contactLengthMm":1090,"waistWidthMm":234,"sidecutRadiusMm":[7800,6880,7800],"sidecutOffsetMm":0,"noseLengthMm":195,"noseWidthMm":275,"noseHeightMm":47.7,"tailLengthMm":180,"tailWidthMm":275,"tailHeightMm":40.8,"camberMm":8,"stanceWidthMm":[460,560],"inserts":"10+12","setbackMm":10,"edge":"1.8mm high-carbon stainless","sidewallAngleDeg":25,"sidewallColor":"BLACK","base":"IS 7500 Graphite","stiffnessNWT":[4.8,6.3,5.3],"fiberglassPlyNote":"2ply 65/35 + STD Core II + 2ply 50/50"},
+    {"size":"51.5","overallLengthMm":1515,"effectiveEdgeMm":1180,"contactLengthMm":1140,"waistWidthMm":242,"sidecutRadiusMm":[8200,7180,8200],"sidecutOffsetMm":0,"noseLengthMm":195,"noseWidthMm":285,"noseHeightMm":45.5,"tailLengthMm":180,"tailWidthMm":285,"tailHeightMm":38.9,"camberMm":10,"stanceWidthMm":[460,580],"inserts":"12+12","setbackMm":20,"edge":"1.8mm high-carbon stainless","sidewallAngleDeg":25,"sidewallColor":"BLACK","base":"IS 7500 Graphite","stiffnessNWT":[5.5,7.0,6.0],"fiberglassPlyNote":"2ply 65/35 + STD Core II + 3ply 50/50"},
+    {"size":"51.5w","overallLengthMm":1515,"effectiveEdgeMm":1180,"contactLengthMm":1140,"waistWidthMm":250,"sidecutRadiusMm":[8200,7180,8200],"sidecutOffsetMm":0,"noseLengthMm":195,"noseWidthMm":293,"noseHeightMm":45.5,"tailLengthMm":180,"tailWidthMm":293,"tailHeightMm":38.9,"camberMm":10,"stanceWidthMm":[460,580],"inserts":"12+12","setbackMm":20,"edge":"1.8mm high-carbon stainless","sidewallAngleDeg":25,"sidewallColor":"GREY","base":"IS 7500 Graphite","stiffnessNWT":[5.5,7.0,6.0],"fiberglassPlyNote":"2ply 65/35 + STD Core II + 3ply 50/50"},
+    {"size":"53.5","overallLengthMm":1535,"effectiveEdgeMm":1200,"contactLengthMm":1160,"waistWidthMm":244,"sidecutRadiusMm":[8700,7880,8700],"sidecutOffsetMm":0,"noseLengthMm":195,"noseWidthMm":285,"noseHeightMm":45.5,"tailLengthMm":180,"tailWidthMm":285,"tailHeightMm":38.9,"camberMm":10,"stanceWidthMm":[480,600],"inserts":"12+12","setbackMm":20,"edge":"1.8mm high-carbon stainless","sidewallAngleDeg":25,"sidewallColor":"BLACK","base":"IS 7500 Graphite","stiffnessNWT":[6.0,7.5,6.5],"fiberglassPlyNote":"2ply 65/35 + STD Core II + 3ply 50/50"},
+    {"size":"55.5","overallLengthMm":1555,"effectiveEdgeMm":1220,"contactLengthMm":1180,"waistWidthMm":250,"sidecutRadiusMm":[9020,8080,9020],"sidecutOffsetMm":0,"noseLengthMm":195,"noseWidthMm":287,"noseHeightMm":45.5,"tailLengthMm":180,"tailWidthMm":287,"tailHeightMm":38.9,"camberMm":10,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":20,"edge":"1.8mm high-carbon stainless","sidewallAngleDeg":25,"sidewallColor":"BLACK","base":"IS 7500 Graphite","stiffnessNWT":[6.5,8.0,7.0],"fiberglassPlyNote":"2ply 65/35 + STD Core II + 3ply 50/50"},
+    {"size":"55.5w","overallLengthMm":1555,"effectiveEdgeMm":1220,"contactLengthMm":1180,"waistWidthMm":254,"sidecutRadiusMm":[9020,8080,9020],"sidecutOffsetMm":0,"noseLengthMm":195,"noseWidthMm":295,"noseHeightMm":45.5,"tailLengthMm":180,"tailWidthMm":295,"tailHeightMm":38.9,"camberMm":10,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":20,"edge":"1.8mm high-carbon stainless","sidewallAngleDeg":25,"sidewallColor":"GREY","base":"IS 7500 Graphite","stiffnessNWT":[6.5,8.0,7.0],"fiberglassPlyNote":"2ply 65/35 + STD Core II + 3ply 50/50"},
+    {"size":"57.5","overallLengthMm":1575,"effectiveEdgeMm":1240,"contactLengthMm":1200,"waistWidthMm":246,"sidecutRadiusMm":[9100,8280,9100],"sidecutOffsetMm":0,"noseLengthMm":195,"noseWidthMm":288,"noseHeightMm":45.5,"tailLengthMm":180,"tailWidthMm":288,"tailHeightMm":38.9,"camberMm":12,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":20,"edge":"1.8mm high-carbon stainless","sidewallAngleDeg":25,"sidewallColor":"BLACK","base":"IS 7500 Graphite","stiffnessNWT":[7.0,8.5,7.5],"fiberglassPlyNote":"2ply 65/35 + STD Core II + 3ply 50/50"},
+    {"size":"57.5w","overallLengthMm":1575,"effectiveEdgeMm":1240,"contactLengthMm":1200,"waistWidthMm":258,"sidecutRadiusMm":[9100,8280,9100],"sidecutOffsetMm":0,"noseLengthMm":195,"noseWidthMm":300,"noseHeightMm":45.5,"tailLengthMm":180,"tailWidthMm":300,"tailHeightMm":38.9,"camberMm":12,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":20,"edge":"1.8mm high-carbon stainless","sidewallAngleDeg":25,"sidewallColor":"GREY","base":"IS 7500 Graphite","stiffnessNWT":[7.0,8.5,7.5],"fiberglassPlyNote":"2ply 65/35 + STD Core II + 3ply 50/50"}
+  ],
+  "scoringReview": {
+    "existingScores": {"stability":8.0,"response":8.5,"float":5.2,"park":8.4,"forgiveness":5.8,"value":7.2},
+    "decision": "Keep all six scores unchanged. The official catalog establishes intended use and construction, not measured ride performance. Searches found no independent test attributable to a 26/27 production sample. Older Prodigy or Prodigy_Ti ride reports are not treated as same-season evidence. Keep scores explicitly low confidence; value is especially uncertain because CNY 5370 is a converted Japanese MSRP, not a Chinese-market offer.",
+    "confidence": "low; no same-season independent production-sample ride test found"
+  },
+  "unverified": [
+    "No verified Chinese-market retail price, product weight, warranty term, or product-specific independent 26/27 ride test was found.",
+    "No explicit image reuse permission was verified; the official image URL remains reference-only.",
+    "The catalog's setback values are preserved as magnitudes; direction/sign convention is not documented.",
+    "Exact fiberglass ply notation varies by size group and is preserved in sizeRows; the product-level YAML field records the common fiberglass plus X-carbon construction rather than reducing all sizes to one layup."
+  ],
+  "imageRights": "No explicit reuse license verified; retain as a source reference only and do not copy to hosted production assets without permission or original photography.",
+  "mappingNotes": [
+    "All eight catalog variants were compared with YAML sizeSpecs; the listed geometry, stance, setback, camber, edge, base, sidewall and manufacturer stiffness values match.",
+    "Official product text calls the shape a directional twin and describes a slightly stiffer tail. Manufacturer N/W/T numbers are not mapped to site flex or editorial scores.",
+    "No GRAY PRODIGY record was found in apps/web/src/data/boards.ts, so there is no matching prototype entry to update."
+  ]
+}

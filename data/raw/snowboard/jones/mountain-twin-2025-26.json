@@ -1,0 +1,67 @@
+{
+  "brand": "Jones",
+  "model": "Mountain Twin",
+  "season": "2025-26",
+  "sku": "J.26.SNM.MTN",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/jones-mountain-twin-2026.yaml",
+  "prototypeId": "sb-02",
+  "sources": {
+    "official2026ProductPage": {
+      "url": "https://eu.jonessnowboards.com/de/products/mens-mountain-twin-snowboard-2026?variant=43731143983239",
+      "title": "Men's Mountain Twin Snowboard 2026 | Jones",
+      "availabilityNote": "Jones search index retained the official page contents during this audit, including J.26 SKU and technical table, but direct re-open returned HTTP 404. Do not silently replace these historical-season facts with the current J.27 page.",
+      "evidence": "Confirms season 2026, J.26 model identity, Mountain Twin/Directional Twin, CamRock, Medium flex, 3D Contour Base, official construction (Master Core, Paulownia/Poplar 1:1; Biax fiberglass; BComp Carbon/Flax stringers; Sintered 8000 base), and brand terrain/personality scales: All-mountain 10/10, Freeride/Powder 8/10, Freestyle/Park 8/10, flex 6/10. Do not map brand scales numerically to local editorial scores.",
+      "officialRegionalPrice": {"amount":579.95,"currency":"CHF","market":"Jones Switzerland storefront","captureDate":"2026-10-02","note":"Regional official listing only; does not establish the CNY 5899 seed as a China-market price."}
+    },
+    "boardOfTheWorld": {
+      "url": "https://www.boardoftheworld.com/jones-mountain-twin-review/",
+      "title": "Jones Mountain Twin Review — 2025-2026",
+      "evidence": "Review identifies a 2025 157 cm physical board, while the article is explicitly framed as 2025-26 and discusses the 2026 Master Core and BComp Carbon/Flax updates. It reports strong ice edge hold, good carving/jump/switch/park versatility and easy buttering/pressing, with tip chatter at very high speed. The exact production-year marking of the ridden board is not independently established, so treat its ride impressions as season-adjacent corroboration, not proof of a factory J.26 sample. Its weighted score and sub-scores are not converted to the site's editorial scale."
+    },
+    "theGoodRide": {
+      "url": "https://thegoodride.com/snowboard-reviews/jones-mountain-twin-snowboard-review/",
+      "title": "Jones Mountain Twin 2011-2026 Snowboard Review",
+      "evidence": "Updated through 2026; reviewer disclosed four days on a borrowed 159 cm demo in some powder, good groomers and varied conditions, but did not identify the exact manufacturing season of that sample. Reports medium/quick turn initiation, capable jumps and switch, good hard-snow grip, moderate powder float versus freeride alternatives, and some washiness through spoon nose/tail on very hard snow. The reviewer notes the 2025 basalt-stringer change and says 2026 changed little from the preceding ride. This is multi-season context, not an exact 2026 sample claim."
+    },
+    "snowboardingProfiles": {
+      "url": "https://snowboardingprofiles.com/jones-mountain-twin-review",
+      "title": "Jones Mountain Twin Review (page updated 2026-09-14)",
+      "evidence": "Its disclosed 157 cm sample is identified as a 2025 board tested 2024-02-15 on mostly hardpack with icy patches, not a 2026 sample. Its observations are historical directional context only; the page's current overall 89.2/100 score is not a J.26-specific snow-test score and is not mapped to local editorial scores."
+    }
+  },
+  "representativeSize": {
+    "sizeCm": 157,
+    "widthVariant": "standard",
+    "source": "Jones official J.26 page (search-index snapshot; direct page now 404)",
+    "specs": {
+      "effectiveEdgeMm": 1210,
+      "waistWidthMm": 254,
+      "sidecutM": 7.8,
+      "boardWeightG": 2800
+    },
+    "notes": "Seed uses only this explicit standard-width row. No values are interpolated from wide sizes or J.27."
+  },
+  "scoreReview": {
+    "previous": {"stability":8,"response":7.5,"float":7.5,"park":6.5,"forgiveness":6.5,"value":8},
+    "current": {"stability":8,"response":7.5,"float":7.5,"park":7.5,"forgiveness":7,"value":8},
+    "changes": {
+      "park": "6.5 -> 7.5, conservative editorial adjustment: independent ride descriptions repeatedly support jumps, switch and occasional park/jib use; keep below a specialist freestyle board.",
+      "forgiveness": "6.5 -> 7.0, conservative editorial adjustment: softer tips, 3D shaping, accessible butter/press and forgiving jump landings are described; not beginner-easy or catch-free, so only a half-point increase."
+    },
+    "unchangedCaveats": {
+      "stability": "Retained 8 but medium confidence: solid for resort/jump approaches, with tip chatter at very high speeds and less damping than the Pro.",
+      "response": "Retained 7.5: medium-to-quick turn initiation and good grip, but external scales differ and not all reviews are exact J.26 samples.",
+      "float": "Retained 7.5, low-to-medium confidence: reviews call it usable/moderate rather than a dedicated powder board; true powder exposure varies by test.",
+      "value": "Retained 8, low confidence: CNY 5899 lacks a verified China-market price source; US/European regional prices are not substitutes."
+    },
+    "mappingPolicy": "No external overall scores, sub-scores, or Jones brand terrain/flex bars are linearly converted to Youpu's six dimensions."
+  },
+  "unresolved": [
+    "The official J.26 product URL currently returns 404; preserve the captured search-index evidence and recheck if Jones republishes a historical 2026 page/catalog.",
+    "The exact manufacturing year of the Board of the World physical 157 sample is not stated beyond the review's 2025-26 context and its reviewer note identifying the board as 2025.",
+    "No verified China-market price, dated local retail quote, or price-type metadata.",
+    "The four seed images are marked as generated placeholders; replace with licensed or original images before launch.",
+    "Season-specific warranty term was not verified; existing warranty field is retained as unresolved rather than used in scoring."
+  ]
+}

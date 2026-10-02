@@ -12,6 +12,8 @@ const REMOTE_IMAGE_RULES = [
   { host: "bbsports.co.nz", pathPrefix: "/cdn/shop/" },
   { host: "www.smartmarine.co.nz", pathPrefix: "/cdn/images/products/" },
   { host: "www.follows.co.jp", pathPrefix: "/pic-labo/" },
+  { host: "cdn.media.amplience.net", pathPrefix: "/s/ride/" },
+  { host: "www.jonessnowboards.com", pathPrefix: "/cdn/shop/files/" },
   { host: "contents.mediadecathlon.com", pathPrefix: "/p" },
   { host: "graysnowboards.co.jp", pathPrefix: "/wp2021/wp-content/themes/gray/images/img_" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0231/7366/0752/files/" },

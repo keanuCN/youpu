@@ -1,0 +1,50 @@
+{
+  "brand": "BC STREAM",
+  "model": "Riders' Spec DR",
+  "season": "2026-27",
+  "sources": {
+    "officialProductListing": {
+      "url": "https://www.follows.co.jp/SHOP/sn-sb-bc-004.html",
+      "retrievedAt": "2026-10-02",
+      "host": "Follows retailer",
+      "evidence": "Retail listing identifies the 26/27 DR as directional with a broad nose, 50 mm setback, nose rocker, and three nose/tail outline variants. These are product-positioning/spec claims rather than test results.",
+      "limitations": "Retail listing, not manufacturer technical documentation; no directly confirmed 26/27 test sample found."
+    },
+    "officialDemoList2025-26": {
+      "url": "https://www.bc-stream.com/wp/wp-content/uploads/6e270f110d2d98534d9b01d3bfccd288.pdf",
+      "retrievedAt": "2026-10-02",
+      "eventDates": "2025-03-14 to 2025-03-16",
+      "location": "White World Oze Iwakura, Gunma, Japan",
+      "listedDRSizes": ["48","54","56","57","61","55W","62W"],
+      "evidence": "Manufacturer-hosted 25/26 demo inventory included multiple DR sizes.",
+      "limitations": "Inventory list only; does not document a rider test or actual ride conditions. It is one season earlier than the seed's 26/27 model."
+    },
+    "fullSeasonRiderReview2024-25": {
+      "url": "https://note.com/white_bear3013/n/nb3b32e6197fd?hl=en",
+      "publisher": "しろクマの日常 (note)",
+      "publishedAt": "2025-06-14",
+      "testedBoard": "BC Stream DR 161, purchased before and ridden throughout the 2024-25 season",
+      "duration": "Full season; exact ride-day count not disclosed.",
+      "reportedConditions": "Reviewer says the season had abundant powder and reports resort powder use; no snow depths or per-day conditions given.",
+      "observations": [
+        "Reviewer reports strong carving feel, but says the board requires the rider to bend it with technique; around 9 m sidecut makes continuous carving on steeper/narrower runs speed-limited.",
+        "Reports substantial resort powder capability and responsive, enjoyable turns; backcountry was not tested.",
+        "Reports enjoyable terrain riding and straight jumps; spins are harder than on twin/directional-twin boards due to the long nose.",
+        "Does not recommend it as a pure park or buttering board; did not test jibbing.",
+        "Reviewer says response initially felt peaky but that sensation later faded (adaptation or edge rounding was uncertain)."
+      ],
+      "limitations": "This is a single rider's full-season subjective report of the previous 24/25 version, not the seed's 26/27 version. Exact rider profile, test days, snow depth, model variant and binding setup are not disclosed in the opened review. Do not convert its language to numeric site scores."
+    }
+  },
+  "scoringEvidence": {
+    "currentSiteScores": {"stability":8.2,"response":8.0,"float":8.0,"park":5.8,"forgiveness":6.3,"value":7.1},
+    "decision": "Retain all six 26/27 scores as low-confidence estimates. The previous-season full-season review broadly supports a versatile carving/powder board, with limits for steep/narrow carving, spins, jibbing and buttering; the official 25/26 demo inventory does not report ride outcomes. Since the seed is 26/27 and has several outline variants, the 24/25 single-rider account is directional historical evidence only. Value remains particularly uncertain because the seed price is converted from Japan MSRP, not China retail.",
+    "confidence": "Low for all dimensions. Historical DR review is meaningful directional evidence but does not test the 26/27 variant; no external rating is numerically mapped."
+  },
+  "unresolved": [
+    "No independent 26/27 ride test located.",
+    "Seed does not specify which of the three 26/27 DR outline variants its scores represent.",
+    "No China-market price; no verified representative-size geometry/weight or image reuse authorization in this evidence batch.",
+    "Historical full-season review omits exact days, rider anthropometrics, bindings, and snow-depth measurements."
+  ]
+}

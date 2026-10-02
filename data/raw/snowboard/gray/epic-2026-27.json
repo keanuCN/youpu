@@ -1,0 +1,65 @@
+{
+  "brand": "GRAY",
+  "model": "EPIC",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/gray-epic-2027.yaml",
+  "sources": {
+    "officialJapaneseCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE (Japanese)",
+      "evidence": "Confirms 26/27 EPIC identity, seven sizes, complete geometry table, N/W/T manufacturer stiffness readings, ¥115,000 pre-tax / ¥126,500 tax-inclusive Japanese MSRP, True Twin/Twin Flex, TripleRadius, Negative, Active Camber, Super Light Core with mesh fiberglass plate, 1.8 mm high-carbon stainless edges, and IS7500 sintered base."
+    },
+    "officialProductPage": {
+      "url": "https://graysnowboards.co.jp/product-2627-eng/",
+      "evidence": "26/27 product page describes EPIC as a mid-flex premium full twin for all-mountain riding from jibbing to slopestyle; Active Camber reduces contact near the tips and is combined with a tighter radius between the feet. Marketing/positioning language only, not independent ride-test evidence."
+    },
+    "officialTechnologyPage": {
+      "url": "https://graysnowboards.co.jp/tech-2627-eng/",
+      "evidence": "Season-specific technology page describes EPIC's Super Light Core and fiberglass plate construction; no independent performance measurements are provided."
+    },
+    "officialChart": {
+      "url": "https://graysnowboards.co.jp/chart/",
+      "evidence": "Current official chart labels EPIC as ACTIVE CAMBER."
+    }
+  },
+  "officialPrice": {
+    "currency": "JPY",
+    "preTax": 115000,
+    "taxInclusive": 126500,
+    "priceType": "official Japanese 26/27 MSRP",
+    "seedNormalization": {
+      "currency": "CNY",
+      "rateCnyPerJpy": 0.042451,
+      "rateSource": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+      "rateDate": "2026-10-02",
+      "formula": "round(126500 * 0.042451) = 5370",
+      "note": "Currency normalization only; not a China-market price."
+    }
+  },
+  "sizeRows": [
+    {"size":"38","overallLengthMm":1380,"effectiveEdgeMm":1100,"contactLengthMm":1050,"waistWidthMm":230,"sidecutRadiiMm":[7400,6600,7400],"sidecutOffsetMm":0,"noseLengthMm":165,"noseWidthMm":270,"noseHeightMm":34.4,"tailLengthMm":165,"tailWidthMm":270,"tailHeightMm":34.4,"camberMm":7,"stanceWidthMm":[460,540],"inserts":"10+10","setbackMm":0,"edge":"1.8mm stainless","base":"IS 7500 Natural","stiffnessNWT":[3.1,3.3,3.1]},
+    {"size":"41","overallLengthMm":1410,"effectiveEdgeMm":1120,"contactLengthMm":1070,"waistWidthMm":234,"sidecutRadiiMm":[7600,6800,7600],"sidecutOffsetMm":0,"noseLengthMm":170,"noseWidthMm":275,"noseHeightMm":36.5,"tailLengthMm":170,"tailWidthMm":275,"tailHeightMm":36.5,"camberMm":7,"stanceWidthMm":[460,540],"inserts":"10+10","setbackMm":0,"edge":"1.8mm stainless","base":"IS 7500 Natural","stiffnessNWT":[3.1,3.5,3.3]},
+    {"size":"44","overallLengthMm":1440,"effectiveEdgeMm":1140,"contactLengthMm":1090,"waistWidthMm":238,"sidecutRadiiMm":[7800,7000,7800],"sidecutOffsetMm":0,"noseLengthMm":175,"noseWidthMm":279,"noseHeightMm":38.3,"tailLengthMm":175,"tailWidthMm":279,"tailHeightMm":38.3,"camberMm":7,"stanceWidthMm":[480,560],"inserts":"10+10","setbackMm":0,"edge":"1.8mm stainless","base":"IS 7500 Natural","stiffnessNWT":[3.6,3.8,3.6]},
+    {"size":"48","overallLengthMm":1480,"effectiveEdgeMm":1170,"contactLengthMm":1120,"waistWidthMm":244,"sidecutRadiiMm":[8000,7400,8400],"sidecutOffsetMm":0,"noseLengthMm":180,"noseWidthMm":285,"noseHeightMm":38.9,"tailLengthMm":180,"tailWidthMm":285,"tailHeightMm":38.9,"camberMm":8,"stanceWidthMm":[480,600],"inserts":"12+12","setbackMm":0,"edge":"1.8mm stainless","base":"IS 7500 Natural","stiffnessNWT":[4.3,5.4,4.3]},
+    {"size":"51","overallLengthMm":1510,"effectiveEdgeMm":1190,"contactLengthMm":1140,"waistWidthMm":248,"sidecutRadiiMm":[8600,7600,8600],"sidecutOffsetMm":0,"noseLengthMm":185,"noseWidthMm":289,"noseHeightMm":41.2,"tailLengthMm":185,"tailWidthMm":289,"tailHeightMm":41.2,"camberMm":8,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":0,"edge":"1.8mm stainless","base":"IS 7500 Natural","stiffnessNWT":[5.0,5.8,5.0]},
+    {"size":"54","overallLengthMm":1540,"effectiveEdgeMm":1220,"contactLengthMm":1160,"waistWidthMm":250,"sidecutRadiiMm":[8800,7800,8800],"sidecutOffsetMm":0,"noseLengthMm":190,"noseWidthMm":292,"noseHeightMm":43.2,"tailLengthMm":190,"tailWidthMm":292,"tailHeightMm":43.2,"camberMm":8,"stanceWidthMm":[520,640],"inserts":"12+12","setbackMm":0,"edge":"1.8mm stainless","base":"IS 7500 Natural","stiffnessNWT":[5.2,5.4,5.2]},
+    {"size":"57","overallLengthMm":1570,"effectiveEdgeMm":1250,"contactLengthMm":1200,"waistWidthMm":252,"sidecutRadiiMm":[9200,8200,9200],"sidecutOffsetMm":0,"noseLengthMm":185,"noseWidthMm":294,"noseHeightMm":41.2,"tailLengthMm":185,"tailWidthMm":294,"tailHeightMm":41.2,"camberMm":10,"stanceWidthMm":[540,660],"inserts":"12+12","setbackMm":0,"edge":"1.8mm stainless","base":"IS 7500 Natural","stiffnessNWT":[5.7,5.5,5.5]}
+  ],
+  "rideEvidenceSearch": {
+    "queryDate": "2026-10-02",
+    "result": "No independent review located that clearly identifies an EPIC 26/27 sample, sample size, and ride conditions. Search results primarily surfaced official product/catalog material and 25/26 catalog listings.",
+    "scoreReview": {
+      "existingScores": {"stability":7.3,"response":7.6,"float":5.8,"park":8.2,"forgiveness":6.6,"value":7.0},
+      "decision": "Keep scores unchanged and low confidence; official active-camber/full-twin and park positioning are not quantitative ride evidence.",
+      "confidence": "low; no verified target-season independent ride test"
+    }
+  },
+  "unverified": [
+    "No verified China-market retail price; seed CNY is a JPY MSRP conversion.",
+    "No product-specific independent ride test with disclosed season, size, date, conditions, and duration located in this search.",
+    "No explicit license for reusing the official product image was found.",
+    "No weight or warranty claim was established by the cited catalog evidence."
+  ],
+  "imageRights": "Official image URL is retained as provenance only; republication permission is not established."
+}

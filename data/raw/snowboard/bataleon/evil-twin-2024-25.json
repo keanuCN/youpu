@@ -1,0 +1,104 @@
+{
+  "brand": "Bataleon",
+  "model": "Evil Twin",
+  "season": "2024-25",
+  "sources": {
+    "officialArchive": {
+      "url": "https://ca.bataleon.com/pages/board-archive",
+      "evidence": "Bataleon's official archive lists Evil Twin and Evil Twin+ separately under 2024-25, and lists Evil Teen as a distinct model. It confirms adult model/season identity but does not expose the season's technical table.",
+      "retrievedAt": "2026-10-02"
+    },
+    "backcountry2025": {
+      "url": "https://www.backcountry.com/bataleon-evil-twin-snowboard-2025-batf061",
+      "hostNote": "Retailer product page; historical specs are secondary evidence, not a Bataleon-hosted catalog.",
+      "evidence": "2025 product title and size variants; specs include 3BT with Sidekick, medium camber, true twin, flex 5/10, core/laminate/base/construction and per-size dimensions.",
+      "retrievedAt": "2026-10-02"
+    },
+    "snowleader2025": {
+      "url": "https://www.snowleader.nl/en/evil-twin-2025-BATA00096.html",
+      "hostNote": "Retailer product page; used as independent retailer corroboration, not a Bataleon-hosted catalog.",
+      "evidence": "2025 adult/Men model listing, season/model year, 157 reference-size details, geometry table, flex 5/10 and two-year warranty. The listed 2890 g weight is for reference size 157, not the seed's representative 154.",
+      "retrievedAt": "2026-10-02"
+    },
+    "slashBoardShopRideReview": {
+      "url": "https://www.slashboardshop.com/bataleon-board-reviews/evil-twin",
+      "evidence": "Reviewer states they rode the 2024/2025 board at Mt. Rose near the end of the 2024 season. Their report describes playful/forgiving presses and buttering, easy jib engagement, solid pop, smooth edge transitions, but loose nose/tail, washout on tail-heavy landings, and limits when driven hard at speed or in rough snow. They did not test it in powder. Their category ratings are Jibs 8/10, Jumps 8/10, Pow 6/10, Carving 5/10, Stability 5/10, Versatility 7/10; these are not mapped directly to this project's six editorial dimensions.",
+      "retrievedAt": "2026-10-02",
+      "caveat": "Single retailer-affiliated rider review, not a controlled or multi-rider test; reviewer did not state tested size."
+    },
+    "snowboardingProfilesHistorical": {
+      "url": "https://snowboardingprofiles.com/bataleon-evil-twin-review",
+      "retrievedAt": "2026-10-02",
+      "pageUpdatedAt": "2026-01-26",
+      "disclosedSample": "Bataleon Evil Twin 2024, 157 cm, tested 2023-03-29; 180 lb rider, US 9.5 boot, centered 560 mm stance. The page update date is not the test date and this sample predates the 2024/25 seed season.",
+      "conditions": "Icy/hard groomers with softer patches, crunchy/icy off-groomer conditions, and no fresh snowfall during the test window.",
+      "observations": "Easy turn initiation, slashy quick turns, catch-free feel, good press/butter, spins and small-to-medium jumps; unstable/wobbly at faster approaches, chatter and washout under aggressive carving, and limited support on bigger jumps/landings. No powder was tested; the reviewer's shallow/deep-powder comments are estimates from specs/feel, not direct snow testing.",
+      "measuredWeightG": 2840,
+      "scoreUse": "Historical 2024-size-157 proxy only; not treated as a 24/25 retest and not numerically mapped into site scores."
+    }
+  },
+  "units": {
+    "size": "cm",
+    "effectiveEdge": "mm",
+    "waistWidth": "mm",
+    "sidecutRadius": "m",
+    "manufacturerFlex": "Bataleon/retailer scale out of 10"
+  },
+  "product": {
+    "shape": "True Twin",
+    "profile": "3BT with Sidekick; medium camber",
+    "manufacturerFlex": "5/10",
+    "core": "Ultra Light Core: 70% paulownia / 30% poplar, with Central Super Tube carbon",
+    "laminate": "Triax laminate with carbon stringers",
+    "dampingConstruction": "Shock Walls (urethane-infused sidewalls)",
+    "base": "Hyper Glide S sintered base",
+    "warrantyYears": 2
+  },
+  "standardSizes": [
+    {"size":151,"noseWidthMm":285,"waistWidthMm":247,"tailWidthMm":285,"sidecutRadiusM":7.85,"effectiveEdgeMm":1148,"sourceSidecutRadiusM":7.9},
+    {"size":154,"noseWidthMm":290,"waistWidthMm":250,"tailWidthMm":290,"sidecutRadiusM":7.94,"effectiveEdgeMm":1175,"sourceSidecutRadiusM":8.0},
+    {"size":157,"noseWidthMm":294,"waistWidthMm":253,"tailWidthMm":294,"sidecutRadiusM":8.03,"effectiveEdgeMm":1202,"sourceSidecutRadiusM":8.0},
+    {"size":159,"noseWidthMm":297,"waistWidthMm":255,"tailWidthMm":297,"sidecutRadiusM":8.09,"effectiveEdgeMm":1220,"sourceSidecutRadiusM":8.1}
+  ],
+  "wideSizes": [
+    {"size":"156W","noseWidthMm":303,"waistWidthMm":262,"tailWidthMm":303,"sidecutRadiusM":8.0,"effectiveEdgeMm":1193,"sourceSidecutRadiusM":8.0},
+    {"size":"159W","noseWidthMm":307,"waistWidthMm":265,"tailWidthMm":307,"sidecutRadiusM":8.09,"effectiveEdgeMm":1220,"sourceSidecutRadiusM":8.1}
+  ],
+  "seedMappingNotes": [
+    "The seed remains on representative size 154. Snowleader reports 7.94 m; Backcountry rounds the same row to 8.0 m. The more precise retailer value is retained in the seed and both source-reported values are preserved here.",
+    "The retailer pages support centered stance/setback 0 and true twin. The official Bataleon archive confirms model/season only; it does not independently verify these dimensions or construction details.",
+    "Do not map the 157 reference-size 2890 g listing to the 154 seed weight. Existing 2720 g for size 154 has no matching source found and remains unverified.",
+    "Existing CNY 4899 has no same-market/source-date provenance found; it is not validated by the retailer's foreign-market listing and remains unchanged.",
+    "Current seed images are AI placeholders, not product photographs.",
+    "The same-season ride review provides directional evidence for response (smooth edge transitions, quick/easy ollies, and reviewer calls it responsive), reduced high-speed/rough-snow stability and catch-free press/butter forgiveness. It is a single retailer-affiliated rider account with no stated test size; powder was not tested. External category scores are not mechanically mapped.",
+    "Score calibration: stability changed 6→5.5 and response 6.5→7.5 based on that same-season ride account's explicit stability and response observations. These are restrained editorial adjustments, not conversions from its 5/10 stability rating. Float remains 7 without a powder test; park 8.5 and forgiveness 9 remain directionally consistent with Jibs/Jumps 8/10 and repeated press/butter observations; value 8 remains low-confidence because the seed CNY price lacks local provenance.",
+    "The seed's value score is especially uncertain because the CNY price has no verified market/source/date provenance.",
+    "Snowboarding Profiles' page now updated through 2026 still discloses a 2024 size-157 sample tested 2023-03-29. It adds only historical directional context: easier turns and catch-free playfulness, but weak high-speed/rough-snow limits and no powder test. Its 2840 g measured sample is not the 24/25 seed's 154 cm, so it does not verify the seed's 2720 g weight."
+  ],
+  "pricing": {
+    "note": "No suitable same-market CNY listing or clearly identified 2024-25 MSRP was verified; do not infer or replace seed price from current foreign-market retailer price.",
+    "excludedForeignListings": [
+      {
+        "url": "https://www.bataleon.ru/items/2989914/",
+        "market": "Russia",
+        "season": "2024-25",
+        "variant": "Evil Twin Wide 156W / 159W",
+        "listedPrices": {"156W":{"currency":"RUB","recommended":71390,"sale":35695},"159W":{"currency":"RUB","recommended":71390,"sale":35695}},
+        "exclusionReason": "Wrong width variant and market for the standard-width 154 Chinese-market seed; Russian pricing is not mapped or converted into the CNY seed value."
+      }
+    ]
+  },
+  "scoringEvidence": {
+    "slashBoardShop": {
+      "board": "2024/25 Bataleon Evil Twin; sample size not disclosed",
+      "testLocationAndTime": "Mt. Rose, near the end of the 2024 season",
+      "directObservations": "Smooth edge-to-edge transitions; quick/easy ollies; reviewer describes a responsive playful resort ride. Mid-flex, softer nose/tail and 3BT felt playful and forgiving for presses/butters; pop solid and jibs easy to lock in. Nose/tail felt loose: tail-heavy landings can wash out and hard-driving the nose/tail at speed or in rough snow reaches limits. Powder was not tested.",
+      "publishedCategoryScoresOutOf10": {"jibs":8,"jumps":8,"pow":6,"carving":5,"stability":5,"versatility":7},
+      "limitations": "Single retailer-affiliated rider account; no board size, repeated days, or controlled comparison. External dimension scores are not linearly translated to site categories."
+    },
+    "siteScoresBefore": {"stability":6,"response":6.5,"float":7,"park":8.5,"forgiveness":9,"value":8},
+    "siteScoresAfter": {"stability":5.5,"response":7.5,"float":7,"park":8.5,"forgiveness":9,"value":8},
+    "decision": "Small stability/response adjustment only; retain all other scores. Float is unverified by an actual powder test, and value is especially provisional without local CNY price provenance.",
+    "confidence": "Low-to-moderate overall because the sole matching-season report is one rider's account without a disclosed sample size or tested board length."
+  }
+}

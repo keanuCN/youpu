@@ -1,0 +1,61 @@
+{
+  "brand": "GRAY",
+  "model": "LOVEBUZZ 58",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/gray-lovebuzz-58-2027.yaml",
+  "sources": {
+    "officialJapaneseCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE (Japanese)",
+      "evidence": "Confirms LOVEBUZZ 58 as the Taiwan-made 158 cm standard men's model, complete size row, 2-ply 50/50 Paulownia Core, directional shape/flex, TripleRadius, Negative, Single Camber, P-TEX 3000 Graphite base, 1.8 mm stainless edges, and Japanese MSRP ¥85,000 before tax / ¥93,500 tax-inclusive."
+    },
+    "officialProductPage": {
+      "url": "https://graysnowboards.co.jp/product-2627-eng/",
+      "evidence": "Current 26/27 product page identifies the model as the standard men's 158 cm size and describes the low camber, large sidecut radius, long nose, crescent tail, and intended all-mountain free-running use from groomed terrain to powder. This is manufacturer positioning, not a verified ride test."
+    },
+    "officialTechnologyPage": {
+      "url": "https://graysnowboards.co.jp/tech-2627-eng/",
+      "evidence": "Confirms season-specific GRAY construction context; the model-specific core and profile designation are taken from the Japanese catalog row."
+    }
+  },
+  "officialPrice": {
+    "currency": "JPY",
+    "preTax": 85000,
+    "taxInclusive": 93500,
+    "priceType": "official Japanese 26/27 MSRP",
+    "seedNormalization": {
+      "currency": "CNY",
+      "rateCnyPerJpy": 0.042451,
+      "rateSource": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+      "rateDate": "2026-10-02",
+      "formula": "round(93500 * 0.042451) = 3968",
+      "note": "Currency normalization only; not a China-market price."
+    }
+  },
+  "sizeRows": [
+    {"size":"58","overallLengthMm":1580,"effectiveEdgeMm":1240,"contactLengthMm":1180,"waistWidthMm":254,"sidecutRadiiMm":[9900,8900,9500],"sidecutOffsetMm":-80,"noseLengthMm":280,"noseWidthMm":300,"noseHeightMm":48.7,"tailLengthMm":120,"tailWidthMm":282,"tailHeightMm":20.4,"camberMm":7,"rockerMm":null,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":40,"edge":"1.8mm stainless","base":"P-TEX3000 Graphite","stiffnessNWF":[7.5,8.5,8.0]}
+  ],
+  "correction": {
+    "field": "sizeSpecs[58].noseWidth",
+    "previousSeedValueMm": 286,
+    "officialValueMm": 300,
+    "reason": "The 26/27 official catalog row for LOVEBUZZ 58 lists nose width 300 mm. 286 mm is the LOVEBUZZ 48 row's nose width; all other checked 58-row geometry matched the catalog."
+  },
+  "rideEvidenceSearch": {
+    "queryDate": "2026-10-02",
+    "result": "No independent review located that clearly identifies a 26/27 LOVEBUZZ 58 sample. Search results surfaced official materials and retailer listings, not a target-season ride test.",
+    "scoreReview": {
+      "existingScores": {"stability":7.0,"response":7.0,"float":7.7,"park":6.8,"forgiveness":7.2,"value":8.0},
+      "decision": "Keep scores unchanged and low confidence; powder/all-mountain positioning is not a substitute for powder or park test evidence.",
+      "confidence": "low; no verified target-season independent ride test"
+    }
+  },
+  "unverified": [
+    "No verified China-market price; CNY is a JPY MSRP conversion.",
+    "No independent product-specific ride test matching season/size/conditions was found.",
+    "No explicit license for reusing the official product image was found.",
+    "No product weight or warranty evidence was found in the cited material."
+  ],
+  "imageRights": "Official image URL is retained as provenance only; republication permission is not established."
+}

@@ -4,21 +4,48 @@ brand: k2
 model: Passport
 year: 2027
 title: K2 Passport 2027
-one_liner: 定向全山自由滑板，兼顾压雪道、粉雪和大山地形；中高级滑手可按脚长在标准与宽版之间选择。
+one_liner: 8 mm taper 的定向全山板，偏向压雪道刻滑与轻至中等粉雪；板感灵活且较 damp，可用于一板多用，但不是专用深粉或公园板。
+editorial_scores:
+  stability: 7.9
+  response: 8.1
+  float: 7.0
+  park: 6.5
+  forgiveness: 7.6
+  value: 7.1
+price:
+  min: 4320
+  max: 4320
+  currency: CNY
 specs:
   length: 157
   effectiveEdge: 1180
+  sidecutRadii: 6.0/8.0/5.5 m
   waistWidth: 255
   stanceSetback: 19
   profile: Directional Combination Camber
   profileFamily: hybrid
-  shape: Tapered Directional
-  core: A1 Core
+  shape: Tapered Directional / Traditional Shape
+  core: A1 Core (Bamboo / Aspen / Paulownia)
+  fiberglass: ICG 10 Triax Glass With Carbon
   base: Sintered 4000
   scenes:
     - all-mountain
     - powder
     - carving
+  sizeSpecs:
+    - {size: "146", widthVariant: standard, effectiveEdge: 1090, noseWidth: 288, waistWidth: 243, tailWidth: 280, sidecutRadii: "5.3/7.3/4.8 m", stanceWidth: "483 mm (19 in reference)", setback: 19}
+    - {size: "149", widthVariant: standard, effectiveEdge: 1120, noseWidth: 292, waistWidth: 246, tailWidth: 284, sidecutRadii: "5.5/7.5/5.0 m", stanceWidth: "483 mm (19 in reference)", setback: 19}
+    - {size: "151", widthVariant: standard, effectiveEdge: 1130, noseWidth: 294, waistWidth: 248, tailWidth: 286, sidecutRadii: "5.6/7.6/5.1 m", stanceWidth: "508 mm (20 in reference)", setback: 19}
+    - {size: "151W", widthVariant: wide, effectiveEdge: 1130, noseWidth: 300, waistWidth: 254, tailWidth: 292, sidecutRadii: "5.6/7.6/5.1 m", stanceWidth: "508 mm (20 in reference)", setback: 19}
+    - {size: "154", widthVariant: standard, effectiveEdge: 1160, noseWidth: 299, waistWidth: 252, tailWidth: 291, sidecutRadii: "5.8/7.8/5.3 m", stanceWidth: "533 mm (21 in reference)", setback: 19}
+    - {size: "154W", widthVariant: wide, effectiveEdge: 1160, noseWidth: 307, waistWidth: 260, tailWidth: 299, sidecutRadii: "5.8/7.8/5.3 m", stanceWidth: "533 mm (21 in reference)", setback: 19}
+    - {size: "157", widthVariant: standard, effectiveEdge: 1180, noseWidth: 303, waistWidth: 255, tailWidth: 295, sidecutRadii: "6.0/8.0/5.5 m", stanceWidth: "533 mm (21 in reference)", setback: 19}
+    - {size: "157W", widthVariant: wide, effectiveEdge: 1180, noseWidth: 311, waistWidth: 263, tailWidth: 311, sidecutRadii: "6.0/8.0/5.5 m", stanceWidth: "533 mm (21 in reference)", setback: 19}
+    - {size: "159W", widthVariant: wide, effectiveEdge: 1210, noseWidth: 314, waistWidth: 266, tailWidth: 306, sidecutRadii: "6.2/8.2/5.7 m", stanceWidth: "559 mm (22 in reference)", setback: 19}
+    - {size: "160", widthVariant: standard, effectiveEdge: 1210, noseWidth: 306, waistWidth: 258, tailWidth: 298, sidecutRadii: "6.2/8.2/5.7 m", stanceWidth: "559 mm (22 in reference)", setback: 19}
+    - {size: "162W", widthVariant: wide, effectiveEdge: 1230, noseWidth: 318, waistWidth: 269, tailWidth: 310, sidecutRadii: "6.4/8.4/5.9 m", stanceWidth: "584 mm (23 in reference)", setback: 19}
+    - {size: "163", widthVariant: standard, effectiveEdge: 1230, noseWidth: 310, waistWidth: 261, tailWidth: 302, sidecutRadii: "6.4/8.4/5.9 m", stanceWidth: "584 mm (23 in reference)", setback: 19}
+    - {size: "166W", widthVariant: wide, effectiveEdge: 1260, noseWidth: 319, waistWidth: 269, tailWidth: 311, sidecutRadii: "6.6/8.6/6.1 m", stanceWidth: "584 mm (23 in reference)", setback: 19}
 images:
   - url: "https://blauerboardshop.com/cdn/shop/files/K2PassportSnowboard2027.png?v=1776985303"
     kind: face

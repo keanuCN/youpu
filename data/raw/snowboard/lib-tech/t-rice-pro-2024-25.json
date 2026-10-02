@@ -1,0 +1,101 @@
+{
+  "brand": "Lib Tech",
+  "model": "T.Rice Pro",
+  "season": "2024-25",
+  "seedYear": 2025,
+  "prototypeId": "sb-05",
+  "seedFile": "data/snowboard/lib-tech-t-rice-pro-2025.yaml",
+  "retrievedAt": "2026-10-02",
+  "sources": {
+    "officialArchivedProductPage": {
+      "url": "https://cad.lib-tech.com/2425-t-rice-pro-148",
+      "title": "2425 T.Rice Pro - 148",
+      "hostNote": "Lib Tech official storefront domain and exact 2024-25 model path. The page is no longer live (HTTP 404 when opened); search-indexed official page content still exposes the product description and full size table, so re-verification against a retrievable manufacturer archive remains desirable.",
+      "evidence": "Identifies season 2425, SKU 841049175607 on size 148 page, product classification FREESTYLE / ALL MOUNTAIN - TWIN, HP construction, artist Mike Parillo, and product copy describing it as a versatile resort/daily-driver board. The page calls its base SINTERED COMPETITION READY BASE. Indexed full size table is transcribed below."
+    },
+    "sportsBasementCurrentListing": {
+      "url": "https://www.sportsbasement.com/products/t-rice-pro-3",
+      "title": "T.Rice Pro",
+      "hostNote": "Retailer page directly rechecked on 2026-10-02. It lists the same ten size labels and comparable dimensions, but does not identify a product season; do not use it alone to assign values to 2024-25.",
+      "evidence": "Its dimensions, weight recommendations and brand flex broadly corroborate the archived size table. One notable discrepancy: 153 cm contact length is listed as 118.5 cm here, versus 118 cm in the historical raw row and the separate 25/26 dealer-catalog copy. Keep the season-specific raw value 118 cm pending a directly retrievable 24/25 manufacturer archive."
+    },
+    "official2024-25Video": {
+      "url": "https://www.youtube.com/watch?v=zeTTXPXEP5k",
+      "title": "T.RICE PRO | 2024-2025 LIB TECH SNOWBOARD",
+      "publishedAt": "2024-08-01",
+      "hostNote": "Official Lib Tech channel; confirms model-season identity and general product positioning, not technical dimensions.",
+      "evidence": "Introduces the 2024-25 T.Rice Pro as a versatile HP-construction resort snowboard suitable for mountain-wide use and a daily-driver role."
+    },
+    "official2024-25CatalogCopy": {
+      "url": "https://manuals.plus/m/ca185aa7fe212c1050cccd024f539962ec9ef57037fde736dc20a0d47e80bc56_optim.pdf",
+      "title": "LIB TECH 2024-2025 Skate Banana Snowboard Dream Boards User Guide (mirrored copy)",
+      "hostNote": "Third-party hosted copy of brand-branded 2024-25 catalog/user guide, not hosted by Lib Tech. Use only as corroboration for named technology/season; its host limitation is retained.",
+      "evidence": "Catalog text places T.Rice Pro under Hybrid C2, Horsepower Construction [HP], with Mike Parillo artwork. It does not itself provide full geometry in the indexed section."
+    },
+    "currentOfficialProductPage": {
+      "url": "https://www.lib-tech.com/t-rice-pro",
+      "title": "Lib Tech T.Rice Pro Snowboard 2026-2027",
+      "hostNote": "Current 2026-27 page only; not used to backfill historical 2024-25 geometry or construction details.",
+      "evidence": "Confirms current brand product page and current product family only; excluded as a source for historical values."
+    }
+  },
+  "sizeRows": [
+    {"size":"148","widthVariant":"standard","contactLengthCm":116,"sidecutM":7.5,"noseWaistTailCm":[29.7,25.2,29.7],"stanceRangeInches":[19.5,24.5],"stanceRangeCm":[49.5,62.25],"setbackInches":0,"brandFlexOutOf10":6,"riderWeightRaw":"75+ lb / 35+ kg"},
+    {"size":"153","widthVariant":"standard","contactLengthCm":118,"sidecutM":8.0,"noseWaistTailCm":[29.5,25.3,29.5],"stanceRangeInches":[20.25,25],"stanceRangeCm":[51.5,63.5],"setbackInches":0,"brandFlexOutOf10":6,"riderWeightRaw":"100+ lb / 45+ kg"},
+    {"size":"155","widthVariant":"standard","contactLengthCm":119,"sidecutM":8.1,"noseWaistTailCm":[29.8,25.5,29.8],"stanceRangeInches":[20.25,25],"stanceRangeCm":[51.5,63.5],"setbackInches":0,"brandFlexOutOf10":6.5,"riderWeightRaw":"110+ lb / 50+ kg"},
+    {"size":"157","widthVariant":"standard","contactLengthCm":121,"sidecutM":8.2,"noseWaistTailCm":[30.1,25.8,30.1],"stanceRangeInches":[20.25,25],"stanceRangeCm":[51.5,63.5],"setbackInches":0,"brandFlexOutOf10":7,"riderWeightRaw":"120+ lb / 55+ kg"},
+    {"size":"157W","widthVariant":"wide","contactLengthCm":121,"sidecutM":8.2,"noseWaistTailCm":[30.5,26.3,30.5],"stanceRangeInches":[20.25,25],"stanceRangeCm":[51.5,63.5],"setbackInches":0,"brandFlexOutOf10":7,"riderWeightRaw":"125+ lb / 60+ kg"},
+    {"size":"159","widthVariant":"standard","contactLengthCm":122,"sidecutM":8.3,"noseWaistTailCm":[30.2,25.9,30.2],"stanceRangeInches":[20.25,25],"stanceRangeCm":[51.5,63.5],"setbackInches":0,"brandFlexOutOf10":7,"riderWeightRaw":"125+ lb / 60+ kg"},
+    {"size":"161","widthVariant":"standard","contactLengthCm":124.5,"sidecutM":8.4,"noseWaistTailCm":[30.4,26.0,30.4],"stanceRangeInches":[20.25,25],"stanceRangeCm":[51.5,63.5],"setbackInches":0,"brandFlexOutOf10":7,"riderWeightRaw":"130+ lb / 60+ kg"},
+    {"size":"161W","widthVariant":"wide","contactLengthCm":124.5,"sidecutM":8.4,"noseWaistTailCm":[31.1,26.5,31.1],"stanceRangeInches":[20.25,25],"stanceRangeCm":[51.5,63.5],"setbackInches":0,"brandFlexOutOf10":7,"riderWeightRaw":"135+ lb / 65+ kg"},
+    {"size":"164","widthVariant":"standard","contactLengthCm":127,"sidecutM":8.5,"noseWaistTailCm":[31.0,26.2,31.0],"stanceRangeInches":[20.25,25],"stanceRangeCm":[51.5,63.5],"setbackInches":0,"brandFlexOutOf10":7,"riderWeightRaw":"140+ lb / 65+ kg"},
+    {"size":"164W","widthVariant":"wide","contactLengthCm":127,"sidecutM":8.5,"noseWaistTailCm":[31.2,26.7,31.2],"stanceRangeInches":[20.25,25],"stanceRangeCm":[51.5,63.5],"setbackInches":0,"brandFlexOutOf10":7,"riderWeightRaw":"145+ lb / 70+ kg"}
+  ],
+  "representativeSize": {
+    "selection": "157 cm standard",
+    "basis": "The seven standard lengths are 148/153/155/157/159/161/164; 157 is the median. Wide 157W/161W/164W are excluded.",
+    "officialRow": "Contact length 121 cm (not effective edge); sidecut 8.2 m; nose/waist/tail 30.1/25.8/30.1 cm; stance range 20.25-25 in (51.5-63.5 cm); setback 0; brand flex 7/10; recommended rider weight 120+ lb / 55+ kg."
+  },
+  "mappingAndLimitations": {
+    "contactLength": "The historical brand chart labels this column Contact Length. It is not a published Effective Edge value; the old seed's effectiveEdge 1210 mm was a semantic mis-mapping and has been removed from prototype/YAML.",
+    "length": "The 157 cm board length is retained as representative size; no size is inferred.",
+    "stance": "Source gives a min-max range and zero setback, not a single reference stance. This project's current per-size seed shape cannot fully preserve this table in prototype specs; exact per-size ranges remain in this raw archive.",
+    "brandFlex": "The official 157 flex 7/10 is stored here as source evidence only. It is not copied into the site's separately interpreted flex field without an approved normalization rule.",
+    "mass": "The official chart contains rider-weight recommendations, not board mass. Seed board weight 2890 g lacks matching evidence and is retained pending verification.",
+    "construction": "Season-matched copy verifies Horsepower construction and a sintered competition-ready base; the exact core ratio and glass layup were not established from a retrievable 24/25 official source, so existing core/glass strings remain provisional.",
+    "price": "Official archived listing indexed amounts $695.99 and $869.99 but the archived page is inaccessible and does not reliably expose currency/price type/capture date; CNY 5699 is left unchanged and flagged as unverified rather than converted.",
+    "editorialScores": "No directly verified independent ride test on a 2024-25 physical sample with disclosed conditions was found in this pass. Snowboarding Profiles has a 2024-25-labeled archive page with an 84.1/100 composite, but its only disclosed on-snow setup is a 2021 size 155 sample tested 2022-04-07 in warm slushy conditions; treat as historical direction only. The 2025-26 Snowboarding Profiles 157 test also does not match this season. Existing six-dimensional scores remain low-confidence estimates; no external composite is mapped numerically.",
+    "images": "All four current gallery images are labeled AI placeholders. No licensed 24/25 product-photography asset has been confirmed; do not present generated art as product photography."
+  },
+  "scoreSourceCheck": {
+    "snowboardingProfiles2024-25Archive": {
+      "url": "https://snowboardingprofiles.com/past-season-reviews-for-lib-tech-t-rice-pro-archives",
+      "pageEdition": "2024-25 review/archive; overall 84.1/100, a different scale",
+      "disclosedPhysicalSample": "2021 T.Rice Pro, size 155",
+      "testDate": "2022-04-07",
+      "conditions": "Warm April slush/sticky groomers; no recent snowfall; no powder test.",
+      "directionalObservations": "The old sample was described as damp/stable at speed and capable on jumps/switch, while deep-powder evidence was spec-based and jib/pressing required effort.",
+      "use": "Season page label does not make the disclosed board a 2024-25 test sample. Treat only as historical ride-direction evidence; do not map its composite score to site dimensions."
+    },
+    "snowboardingProfiles": {
+      "url": "https://snowboardingprofiles.com/lib-tech-t-rice-pro-review-all-mountain-freestyle-snowboard-reviews",
+      "sampleYear": "2025-26 / model labelled 2026",
+      "sampleSizeCm": 157,
+      "testDate": "2025-03-03",
+      "use": "Adjacent season only; not evidence of the 2024-25 seed's exact performance and no score mapping."
+    },
+    "theGoodRideCamber": {
+      "url": "https://thegoodride.com/snowboard-reviews/lib-tech-t-rice-pro-camber-snowboard-review/",
+      "use": "Separate T.Rice Pro Camber model/variant; excluded as direct scoring evidence for this C2 model."
+    }
+  },
+  "price": {
+    "existingSeed": {"currency":"CNY","value":5699,"verified":false},
+    "reasonUnverified": "No retrievable source with verified Chinese market, list/sale price type, date and season was confirmed."
+  },
+  "imageProvenance": {
+    "currentState": "Four AI placeholder assets, explicitly labeled in YAML source fields.",
+    "licensedProductImageSource": null,
+    "action": "Leave URLs in place for now; replace with owned/original/licensed material before public release."
+  }
+}

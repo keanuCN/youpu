@@ -4,9 +4,25 @@ brand: ogasaka
 model: CT
 year: 2026
 title: OGASAKA CT 2026
-one_liner: 面向从初级到高水平滑手的全能刻滑板，方向性板型与较均衡的软硬设定兼顾刻滑和日常滑行。
+one_liner: 面向从初级到高水平滑手的全能刻滑板，方向性板型与较均衡的软硬设定兼顾刻滑和日常滑行；25/26 官方含税价 ¥114,400，按 2026-10-02 参考汇率折算约 ¥4,856 CNY。
+editorial_scores:
+  stability: 8.0
+  response: 8.4
+  float: 6.0
+  park: 5.6
+  forgiveness: 7.5
+  value: 7.4
+price:
+  min: 4856
+  max: 4856
+  currency: CNY
 specs:
   length: 156
+  effectiveEdge: 1240
+  sidecut: 8.4
+  sidecutRadii: 8.7/8.4/8.7 m
+  waistWidth: 247
+  stanceSetback: 18
   profile: Camber
   profileFamily: camber
   shape: Directional
@@ -16,6 +32,20 @@ specs:
   scenes:
     - carving
     - all-mountain
+  sizeSpecs:
+    - {size: "139", effectiveEdge: 1070, contactLength: 1050, noseWidth: 268, waistWidth: 229, tailWidth: 268, sidecutRadii: "7.1/6.7/7.1 m", setback: 12, stanceWidth: "460 mm"}
+    - {size: "143", effectiveEdge: 1110, contactLength: 1070, noseWidth: 274, waistWidth: 234, tailWidth: 274, sidecutRadii: "7.4/7.1/7.4 m", setback: 13, stanceWidth: "480 mm"}
+    - {size: "146", effectiveEdge: 1140, contactLength: 1090, noseWidth: 277, waistWidth: 236, tailWidth: 277, sidecutRadii: "7.6/7.3/7.6 m", setback: 14, stanceWidth: "490 mm"}
+    - {size: "148", effectiveEdge: 1160, contactLength: 1120, noseWidth: 279, waistWidth: 237, tailWidth: 279, sidecutRadii: "7.8/7.5/7.8 m", setback: 15, stanceWidth: "500 mm"}
+    - {size: "150", effectiveEdge: 1180, contactLength: 1140, noseWidth: 285, waistWidth: 244, tailWidth: 285, sidecutRadii: "8.3/8.0/8.3 m", setback: 15, stanceWidth: "520 mm"}
+    - {size: "152", effectiveEdge: 1200, contactLength: 1160, noseWidth: 286, waistWidth: 245, tailWidth: 286, sidecutRadii: "8.4/8.1/8.4 m", setback: 17, stanceWidth: "540 mm"}
+    - {size: "154", effectiveEdge: 1220, contactLength: 1180, noseWidth: 287, waistWidth: 245, tailWidth: 287, sidecutRadii: "8.5/8.2/8.5 m", setback: 17, stanceWidth: "540 mm"}
+    - {size: "156", effectiveEdge: 1240, contactLength: 1200, noseWidth: 290, waistWidth: 247, tailWidth: 290, sidecutRadii: "8.7/8.4/8.7 m", setback: 18, stanceWidth: "560 mm"}
+    - {size: "158", effectiveEdge: 1260, contactLength: 1230, noseWidth: 292, waistWidth: 249, tailWidth: 292, sidecutRadii: "8.9/8.6/8.9 m", setback: 19, stanceWidth: "560 mm"}
+    - {size: "161", effectiveEdge: 1290, contactLength: 1270, noseWidth: 295, waistWidth: 251, tailWidth: 295, sidecutRadii: "9.1/8.8/9.1 m", setback: 20, stanceWidth: "580 mm"}
+    - {size: "154W", effectiveEdge: 1220, contactLength: 1180, noseWidth: 297, waistWidth: 255, tailWidth: 297, sidecutRadii: "8.8/8.5/8.8 m", setback: 17, stanceWidth: "540 mm"}
+    - {size: "156W", effectiveEdge: 1240, contactLength: 1200, noseWidth: 300, waistWidth: 258, tailWidth: 300, sidecutRadii: "9.1/8.8/9.1 m", setback: 18, stanceWidth: "560 mm"}
+    - {size: "158W", effectiveEdge: 1260, contactLength: 1260, noseWidth: 303, waistWidth: 261, tailWidth: 303, sidecutRadii: "9.3/9.0/9.3 m", setback: 19, stanceWidth: "560 mm"}
 images:
   - url: "https://www.ogasaka-snowboard.com/2025-img/03_ct_02.png"
     kind: face

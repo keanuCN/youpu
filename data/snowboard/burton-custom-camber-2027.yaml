@@ -1,0 +1,54 @@
+slug: burton-custom-camber-2027
+category: snowboard
+brand: burton
+model: Custom Camber
+year: 2027
+title: Burton Custom Camber Snowboard 2027
+one_liner: 以传统 Camber 和定向板型兼顾全山巡航与自由式地形；158 尺寸提供 254 mm 板腰与 1215 mm 有效刃长。
+editorial_scores:
+  stability: 8.7
+  response: 8.2
+  float: 7.3
+  park: 7.4
+  forgiveness: 6.1
+  value: 6.7
+price:
+  min: 679.95
+  max: 679.95
+  currency: USD
+specs:
+  length: 158
+  waistWidth: 254
+  effectiveEdge: 1215
+  sidecut: 7.9
+  profile: Camber
+  profileFamily: camber
+  shape: Directional
+  core: Super Fly II 700G Core with Dualzone EGD
+  fiberglass: 45° Carbon Highlights
+  base: Sintered WFO
+  scenes:
+    - all-mountain
+    - freestyle
+  warranty: 3
+  sizeSpecs:
+    - {size: "150", waistWidth: 248, sidecutRadii: "7.4 m", stanceWidth: "505 mm", setback: -12.5}
+    - {size: "154", waistWidth: 250, sidecutRadii: "7.6 m", stanceWidth: "530 mm", setback: -12.5}
+    - {size: "156", waistWidth: 252, sidecutRadii: "7.8 m", stanceWidth: "530 mm", setback: -12.5}
+    - {size: "158", waistWidth: 254, effectiveEdge: 1215, sidecutRadii: "7.9 m", stanceWidth: "560 mm", setback: -12.5}
+    - {size: "162", waistWidth: 256, sidecutRadii: "8.2 m", stanceWidth: "560 mm", setback: -12.5}
+    - {size: "154W", waistWidth: 258, sidecutRadii: "7.6 m", stanceWidth: "530 mm", setback: -12.5}
+    - {size: "158W", waistWidth: 262, sidecutRadii: "7.9 m", stanceWidth: "560 mm", setback: -12.5}
+    - {size: "162W", waistWidth: 264, sidecutRadii: "8.2 m", stanceWidth: "560 mm", setback: -12.5}
+    - {size: "166W", waistWidth: 266, sidecutRadii: "8.4 m", stanceWidth: "560 mm", setback: -12.5}
+    - {size: "170W", waistWidth: 270, sidecutRadii: "8.7 m", stanceWidth: "560 mm", setback: -12.5}
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456"
+    kind: face
+    alt: Burton Custom Camber 2027 官方产品图
+    source: Burton 官方产品页图片（转载授权未核实）
+    sort_order: 0
+data_source:
+  kind: crawl
+  origin_url: https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881
+status: published

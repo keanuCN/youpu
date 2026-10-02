@@ -3,6 +3,8 @@ export const CANONICAL_PRICE_CURRENCY = 'CNY' as const;
 export const PRICE_RATES_TO_CNY = {
   CNY: 1,
   USD: 7.2,
+  // Dated catalog estimate rate: 1 JPY = 0.04245 CNY (2026-10-02 reference quote).
+  JPY: 0.04245,
 } as const;
 
 export function convertPriceToCny(value: number, currency: string = CANONICAL_PRICE_CURRENCY): number {

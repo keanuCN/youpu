@@ -1,0 +1,79 @@
+{
+  "brand": "GRAY",
+  "model": "DSPRD Ti type-X ver.S",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/gray-dsprd-ti-type-x-ver-s-2027.yaml",
+  "sources": {
+    "officialEnglishCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_eng_low.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE — CARVING CATEGORY",
+      "evidence": "Season-specific official catalog confirms model and both sizes (152 ver.S, 161 ver.S), detailed geometry, Vario Camber, STD Core II and the fiberglass layup icons. It describes ver.S as a sintered-top version for vibration absorption and high-speed carving; Type-X is a pure competition model."
+    },
+    "officialJapaneseCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE (Japanese)",
+      "evidence": "Corroborates exact size table and official Japanese MSRP ¥180,000 before tax / ¥198,000 tax-inclusive. Its printed 152 N/W/T stiffness values differ from the English edition; preserve both source readings and do not reinterpret or silently resolve."
+    },
+    "officialSeasonProduct": {
+      "url": "https://graysnowboards.co.jp/product-2627-eng/",
+      "evidence": "Confirms 26/27 Type-X ver.S identity and manufacturer positioning: advanced competition carving; the 161's longer sidecut radius/wider waist support higher edge angles with less over-turning and drag; the 152 is redesigned for women competitors with a controllable turn-radius range. Marketing claims are not independent snow-test results."
+    },
+    "officialSeasonTechnology": {
+      "url": "https://graysnowboards.co.jp/tech-2627-eng/",
+      "evidence": "Confirms Type-X as a pure competition model derived from Type-R and 26/27 ver.S's sintered topsheet."
+    },
+    "weakPriorSeasonVideo": {
+      "url": "https://www.bilibili.com/video/BV1uukWBXE1q/",
+      "evidence": "Search-indexed video published 2026-01-19 is explicitly a simple review of 25/26 DSPRD Ti Type-X ver.P. Indexed description does not disclose sample size or snow conditions. It is a prior-season different topsheet variant and is not used to calibrate the 26/27 ver.S scores."
+    }
+  },
+  "pricing": {
+    "officialJapan": {
+      "currency": "JPY",
+      "preTax": 180000,
+      "taxInclusive": 198000,
+      "priceType": "official Japanese 26/27 catalog MSRP",
+      "note": "Not a verified China-market offer or Chinese retail price."
+    },
+    "seedNormalization": {
+      "currency": "CNY",
+      "rateCnyPerJpy": 0.042451,
+      "rateSource": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+      "rateDate": "2026-10-02",
+      "formula": "round(198000 * 0.042451) = 8405",
+      "value": 8405,
+      "note": "Currency normalization only; not an observed China-market price."
+    }
+  },
+  "unitsAndMapping": {
+    "overallLengthMm": "Catalog overall length; product nominal labels are 152 and 161 cm.",
+    "effectiveEdgeMm": "Catalog Effective Edge L.; kept separate from Contact Length.",
+    "sidecutRadiusMm": "Three printed radii preserved in catalog order; seed stores values in millimeters as printed.",
+    "setbackMm": "Catalog magnitude; direction/sign convention is not specified.",
+    "stiffnessNWT": "Official 26/27 catalog editions conflict for size 152: English reads 8.4/9.1/8.6 (N/W/T), Japanese reads 8.1/8.8/8.3. Both give 161 as 9.0/9.7/9.2. Seed retains the English-edition values pending manufacturer clarification; these manufacturer figures are not mapped to site flex or editorial scores.",
+    "construction": "Official catalog construction icons list 2-ply 65/35, STD Core II, and 3-ply 50/50; official description identifies sintered material on the topsheet for ver.S."
+  },
+  "sizeRows": [
+    {"size":"152 ver.S","overallLengthMm":1520,"effectiveEdgeMm":1360,"contactLengthMm":1180,"waistWidthMm":236,"sidecutRadiusMm":[8800,8400,9400],"sidecutOffsetMm":-30,"noseLengthMm":205,"noseWidthMm":296,"noseHeightMm":26,"tailLengthMm":135,"tailWidthMm":276,"tailHeightMm":21,"camberMm":8,"rocker":"none","stanceWidthMm":[440,560],"inserts":"12+12","setbackMm":30,"edge":"1.8mm/48RCWL","sidewallAngleDeg":15,"sidewallColor":"BLACK","runningBase":"IS7500 Graphite","stiffnessNWT":{"english":[8.4,9.1,8.6],"japanese":[8.1,8.8,8.3]}},
+    {"size":"161 ver.S","overallLengthMm":1610,"effectiveEdgeMm":1430,"contactLengthMm":1260,"waistWidthMm":260,"sidecutRadiusMm":[11800,11200,12600],"sidecutOffsetMm":-30,"noseLengthMm":210,"noseWidthMm":309,"noseHeightMm":30.4,"tailLengthMm":140,"tailWidthMm":294,"tailHeightMm":24.2,"camberMm":10,"rocker":"none","stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":40,"edge":"1.8mm/48RCWL","sidewallAngleDeg":15,"sidewallColor":"BLACK","runningBase":"IS7500 Graphite","stiffnessNWT":{"english":[9.0,9.7,9.2],"japanese":[9.0,9.7,9.2]}}
+  ],
+  "scoringReview": {
+    "existingScores": {"stability":9.3,"response":9.6,"float":5.1,"park":2.0,"forgiveness":3.8,"value":5.9},
+    "decision": "Keep all six low-confidence scores unchanged. The official catalog establishes competition intent and construction, not measured ride behavior. The only found snow-test-like material is a brief 25/26 ver.P video without disclosed size or snow conditions; it is not the target season or ver.S. No target-season independent test was found. Float, park, and forgiveness remain especially weakly evidenced. Value is low confidence because CNY 8405 is a converted Japanese MSRP, not China retail.",
+    "confidence": "low; no target-season ver.S independent test found"
+  },
+  "unverified": [
+    "No Chinese-market price, product weight, general warranty term, or target-season independent ride test found.",
+    "Official English and Japanese catalogs disagree on the 152 manufacturer's N/W/T stiffness values; confirm with GRAY before correcting the seed value.",
+    "No explicit image reuse permission verified; official image URL is reference-only.",
+    "Catalog setback values are preserved as magnitudes; direction/sign convention is not documented."
+  ],
+  "imageRights": "No explicit reuse license verified; retain as a source reference only and do not copy to hosted production assets without permission or original photography.",
+  "mappingNotes": [
+    "Both exact size rows were compared with seed sizeSpecs; all existing geometry, stance, setback, camber, edge, base and sidewall values match the English catalog.",
+    "Corrected product-level profile from Single Camber to Vario Camber, matching the official season catalog's model icon/feature block.",
+    "Replaced generic Wood Core with the official construction label STD Core II and added the cataloged fiberglass layup.",
+    "No GRAY DSPRD Ti Type-X ver.S prototype record was found in apps/web/src/data/boards.ts; no prototype item was fabricated."
+  ]
+}

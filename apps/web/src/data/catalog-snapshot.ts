@@ -35,8 +35,8 @@ export interface CatalogSnapshotMeta {
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
   "source": "https://xiaopang.club",
-  "generatedAt": "2026-09-24T08:30:14.406Z",
-  "total": 235,
+  "generatedAt": "2026-10-02T05:13:49.524Z",
+  "total": 285,
   "pageSize": 48,
   "categorySlugs": [
     "action-cam",
@@ -54,6 +54,7 @@ export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
     "microphone",
     "mtb",
     "road-bike",
+    "skiing-apparel",
     "skis",
     "snowboard",
     "snowboard-binding",
@@ -4410,6 +4411,341 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0e673-7377-7658-b02f-ffac20ad94b0",
+    "slug": "decathlon-snb-500-ziprotect-jacket-2026",
+    "title": "Men’s Warm and Durable Snowboard Jacket SNB 500 Ziprotect - Camel and Black | Decathlon",
+    "model": "SNB 500 Ziprotect Men's Snowboard Jacket",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "decathlon",
+      "name": "Decathlon",
+      "nameCn": "迪卡侬"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "jacket",
+      "waterproofMm": 10000,
+      "insulation": "100 g/m² body / 80 g/m² sleeves synthetic wadding",
+      "fit": "loose",
+      "seamTaping": "fully-taped",
+      "powderSkirt": true,
+      "helmetCompatibleHood": true,
+      "fabric": "100.0% Polyamide",
+      "skiPassPocket": true,
+      "ziprotectCompatible": true
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "滑雪夹克"
+      },
+      {
+        "key": "waterproofMm",
+        "label": "防水指数",
+        "value": "10000mm"
+      },
+      {
+        "key": "fit",
+        "label": "版型",
+        "value": "宽松长款"
+      },
+      {
+        "key": "seamTaping",
+        "label": "压胶",
+        "value": "全压胶"
+      }
+    ]
+  },
+  {
+    "id": "01a0e673-7b30-71da-802d-4473935b6d25",
+    "slug": "kailas-bm45-gtx-ski-pants-2026",
+    "title": "Kailas BM45 GTX Ski Pants – kailasgear.com",
+    "model": "BM45 GTX Ski Pants",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://kailasgear.com/cdn/shop/files/KG2541316_-1.webp?v=1786154508&width=1090",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "kailas",
+      "name": "KAILAS",
+      "nameCn": "凯乐石"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "pants",
+      "construction": "3L",
+      "fit": "relaxed",
+      "venting": true,
+      "recco": true,
+      "fabric": "75D 3L GORE-TEX",
+      "suspenders": true,
+      "corduraReinforced": true,
+      "articulatedKnees": true
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "滑雪裤"
+      },
+      {
+        "key": "construction",
+        "label": "面料层数",
+        "value": "三层"
+      },
+      {
+        "key": "fit",
+        "label": "版型",
+        "value": "宽松"
+      },
+      {
+        "key": "venting",
+        "label": "通风拉链",
+        "value": "是"
+      }
+    ]
+  },
+  {
+    "id": "01a0e673-87de-7256-90ba-09ece94c4711",
+    "slug": "kailas-bm45-max-mens-down-jacket-95g-2026",
+    "title": "Kailas BM45 MAX Down Ski Jacket Men's – kailasgear.com",
+    "model": "BM45 MAX Down Ski Jacket Men's",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://kailasgear.com/cdn/shop/files/KG2531144_-2.webp?v=1786155291&width=1090",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "kailas",
+      "name": "KAILAS",
+      "nameCn": "凯乐石"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "jacket",
+      "construction": "3L",
+      "insulation": "95g 800FP down",
+      "fit": "athletic-y-cut",
+      "version": "regular",
+      "venting": true,
+      "recco": true,
+      "helmetCompatibleHood": true,
+      "fabric": "40D 3L GORE-TEX",
+      "skiPassPocket": true
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "滑雪夹克"
+      },
+      {
+        "key": "construction",
+        "label": "面料层数",
+        "value": "三层"
+      },
+      {
+        "key": "fit",
+        "label": "版型",
+        "value": "Y 型运动剪裁"
+      },
+      {
+        "key": "venting",
+        "label": "通风拉链",
+        "value": "是"
+      }
+    ]
+  },
+  {
+    "id": "01a0e673-82cc-71c0-a3bf-d48b05d159f4",
+    "slug": "kailas-bm45-max-mens-down-jacket-100g-2026",
+    "title": "Kailas BM45 MAX Down Ski Jacket Men's – kailasgear.com",
+    "model": "BM45 MAX Down Ski Jacket Men's (100g 800FP Long)",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://kailasgear.com/cdn/shop/files/KG2531143_-2_b8218766-076d-4227-a5bc-7a9d33c6bade.webp?v=1786155711&width=1090",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "kailas",
+      "name": "KAILAS",
+      "nameCn": "凯乐石"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "jacket",
+      "construction": "3L",
+      "insulation": "100g 800FP down",
+      "fit": "athletic-h-cut",
+      "version": "long",
+      "venting": true,
+      "powderSkirt": true,
+      "recco": true,
+      "helmetCompatibleHood": true,
+      "fabric": "40D 3L GORE-TEX",
+      "skiPassPocket": true
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "滑雪夹克"
+      },
+      {
+        "key": "construction",
+        "label": "面料层数",
+        "value": "三层"
+      },
+      {
+        "key": "fit",
+        "label": "版型",
+        "value": "H 型运动剪裁"
+      },
+      {
+        "key": "venting",
+        "label": "通风拉链",
+        "value": "是"
+      }
+    ]
+  },
+  {
+    "id": "01a0e673-8d97-7609-8ae2-1c5d94c3c50c",
+    "slug": "kailas-bm45-max-womens-down-jacket-95g-2026",
+    "title": "Kailas BM45 MAX Down Ski Jacket Women's – kailasgear.com",
+    "model": "BM45 MAX Down Ski Jacket Women's",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://kailasgear.com/cdn/shop/files/KG2531244_-2.webp?v=1786156036&width=1090",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "kailas",
+      "name": "KAILAS",
+      "nameCn": "凯乐石"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "jacket",
+      "construction": "3L",
+      "insulation": "95g 800FP down",
+      "fit": "athletic-y-cut",
+      "venting": true,
+      "powderSkirt": true,
+      "recco": true,
+      "helmetCompatibleHood": true,
+      "fabric": "40D 3L GORE-TEX",
+      "skiPassPocket": true
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "滑雪夹克"
+      },
+      {
+        "key": "construction",
+        "label": "面料层数",
+        "value": "三层"
+      },
+      {
+        "key": "fit",
+        "label": "版型",
+        "value": "Y 型运动剪裁"
+      },
+      {
+        "key": "venting",
+        "label": "通风拉链",
+        "value": "是"
+      }
+    ]
+  },
+  {
+    "id": "01a0e68e-2624-7dee-8062-6ca6920c7285",
+    "slug": "kailas-bm45-pro-ski-bibs-unisex-2026",
+    "title": "Kailas BM45 PRO Ski Bibs Unisex – kailasgear.com",
+    "model": "BM45 PRO Ski Bibs Unisex",
+    "year": 2026,
+    "oneLiner": null,
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0535/8433/0946/files/GJGW-KG2541314_5-4.webp?v=1786154017&width=800",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "kailas",
+      "name": "KAILAS",
+      "nameCn": "凯乐石"
+    },
+    "categorySlug": "skiing-apparel",
+    "specs": {
+      "garmentType": "bib-pants",
+      "construction": "3L",
+      "fit": "relaxed",
+      "venting": true,
+      "recco": true,
+      "fabric": "100D 3L GORE-TEX Pro",
+      "suspenders": true,
+      "corduraReinforced": true,
+      "articulatedKnees": true
+    },
+    "highlights": [
+      {
+        "key": "garmentType",
+        "label": "款式",
+        "value": "背带滑雪裤"
+      },
+      {
+        "key": "construction",
+        "label": "面料层数",
+        "value": "三层"
+      },
+      {
+        "key": "fit",
+        "label": "版型",
+        "value": "宽松"
+      },
+      {
+        "key": "venting",
+        "label": "通风拉链",
+        "value": "是"
+      }
+    ]
+  },
+  {
     "id": "01a0d24d-2549-76c5-9d96-0c3ce4a27b77",
     "slug": "atomic-bent-chetler-120-2026",
     "title": "Atomic Bent Chetler 120 2025/26",
@@ -4472,7 +4808,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.amersports.com/017bc76f-f5cc-42b8-a786-b49f00cdff46/ATP_AASS03788_0_GHO_Redster_Q7_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4485,11 +4821,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "skis",
     "specs": {
       "lengthOptions": "153 / 160 / 167 / 174 / 181 cm",
+      "waistWidth": 75,
+      "turnRadius": 11.8,
+      "turnRadiusReferenceLength": "153 cm",
       "terrain": "雪道 / 全地域",
       "skierLevel": "中级至进阶",
       "bindingSetup": "含 MI 12 GW 固定器"
     },
     "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "75mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "11.8m"
+      },
       {
         "key": "terrain",
         "label": "适用场景",
@@ -4512,7 +4861,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.amersports.com/8fd450be-84c9-4bed-b255-b49f00cdfdd0/ATP_AASS03786_0_GHO_Redster_Q7.8_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4525,11 +4874,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "skis",
     "specs": {
       "lengthOptions": "159 / 166 / 173 / 181 cm",
+      "waistWidth": 84,
+      "turnRadius": 13.6,
+      "turnRadiusReferenceLength": "166 cm",
       "terrain": "雪道 / 全地域",
       "skierLevel": "中级至進阶",
       "bindingSetup": "含 MI 12 GW 固定器"
     },
     "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "84mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "13.6m"
+      },
       {
         "key": "terrain",
         "label": "适用场景",
@@ -4552,7 +4914,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.amersports.com/0acef4a9-61b7-47b0-84f4-b49f00cdfc5f/ATP_AASS03784_0_GHO_Redster_Q9_I12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4565,11 +4927,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "skis",
     "specs": {
       "lengthOptions": "153 / 160 / 167 / 174 / 181 cm",
+      "waistWidth": 75,
+      "turnRadius": 12.6,
+      "turnRadiusReferenceLength": "160 cm",
       "terrain": "雪道 / 全地域",
       "skierLevel": "进阶",
       "bindingSetup": "含 I 12 GW 固定器套装"
     },
     "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "75mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "12.6m"
+      },
       {
         "key": "terrain",
         "label": "适用场景",
@@ -4592,7 +4967,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.amersports.com/59174f3d-d998-49a3-ae2a-b49f00cdfb23/ATP_AASS03782_0_GHO_Redster_Q9.8_I12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4604,11 +4979,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "159 / 166 / 173 / 181 cm",
+      "waistWidth": 84,
+      "turnRadius": 13.6,
+      "turnRadiusReferenceLength": "166 cm",
       "terrain": "雪道 / 全地域",
       "skierLevel": "进阶",
       "bindingSetup": "含 X 12 GW 或 I 12 GW 固定器套装，依 SKU 区分"
     },
     "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "84mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "13.6m"
+      },
       {
         "key": "terrain",
         "label": "适用场景",
@@ -4631,7 +5020,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.amersports.com/47a56e73-6422-4d40-bcf3-b4bf00ada651/ATP_AASS03628_0_GHO_REDSTER_S9_RVSK_S_I12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4643,11 +5032,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "155 / 160 / 165 / 170 cm",
+      "waistWidth": 68,
+      "turnRadius": 12.5,
+      "turnRadiusReferenceLength": "165 cm",
       "terrain": "雪道 / 竞速 / 小回转",
       "skierLevel": "进阶",
       "bindingSetup": "含 I 12 GW 固定器套装"
     },
     "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "68mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "12.5m"
+      },
       {
         "key": "terrain",
         "label": "适用场景",
@@ -4682,11 +5085,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "149 / 156 / 163 / 170 cm",
+      "waistWidth": 66,
+      "turnRadius": 11.2,
+      "turnRadiusReferenceLength": "163 cm",
       "terrain": "雪道 / 小回转",
       "skierLevel": "中级至进阶",
       "bindingSetup": "雪板+固定器，按具体 SKU 核对"
     },
     "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "66mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "11.2m"
+      },
       {
         "key": "terrain",
         "label": "适用场景",
@@ -4709,7 +5126,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/316485/1/1820x2428/easy-joy-r.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4721,11 +5138,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "143 / 148 / 153 / 158 / 163 cm",
+      "waistWidth": 70,
+      "turnRadius": 13.3,
+      "turnRadiusReferenceLength": "163 cm",
       "terrain": "雪道",
       "skierLevel": "入门至进阶",
       "bindingSetup": "常见雪板+固定器套装，按具体 SKU 核对"
     },
     "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "70mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "13.3m"
+      },
       {
         "key": "terrain",
         "label": "适用场景",
@@ -4801,7 +5232,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://img-cdn.heureka.group/v1/d23ae16d-8f92-56f6-a776-2ace62a9bcb1.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4813,11 +5244,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "149 / 156 / 163 / 170 / 177 cm",
+      "waistWidth": 70,
+      "turnRadius": 12.5,
+      "turnRadiusReferenceLength": "170 cm",
       "terrain": "全地域 / 雪道",
       "skierLevel": "入门至初中级",
       "bindingSetup": "雪板+固定器或套装，按具体 SKU 核对"
     },
     "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "70mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "12.5m"
+      },
       {
         "key": "terrain",
         "label": "适用场景",
@@ -4840,7 +5285,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/316225/1/1820x2428/shape-v2-r.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4852,11 +5297,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "142 / 149 / 156 / 163 / 170 / 177 cm",
+      "waistWidth": 70,
+      "turnRadius": 12.5,
+      "turnRadiusReferenceLength": "170 cm",
       "terrain": "全地域 / 雪道",
       "skierLevel": "入门至初中级",
       "bindingSetup": "雪板+固定器，按具体 SKU 核对"
     },
     "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "70mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "12.5m"
+      },
       {
         "key": "terrain",
         "label": "适用场景",
@@ -4879,7 +5338,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/1820x2428/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4932,7 +5391,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/1820x2428/worldcup-rebels-e-sl-pro-without-binding.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4944,11 +5403,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "150 / 155 / 160 / 165 / 170 cm",
+      "waistWidth": 68,
+      "turnRadius": 12,
+      "turnRadiusReferenceLength": "160 cm",
       "terrain": "雪道 / 竞速 / 小回转",
       "skierLevel": "进阶",
       "bindingSetup": "可选固定器套装"
     },
     "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "68mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "12m"
+      },
       {
         "key": "terrain",
         "label": "适用场景",
@@ -4971,7 +5444,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.nordica.com/storage/Product/0A668100001_ENFORCER_104_FLAT.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4983,7 +5456,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "167 / 173 / 179 / 185 / 191 cm",
       "waistWidth": 104,
+      "turnRadius": 17.5,
+      "turnRadiusReferenceLength": "167 cm",
       "terrain": "全山地 / 自由滑",
       "skierLevel": "进阶",
       "bindingSetup": "裸板，固定器另配"
@@ -4993,6 +5469,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "104mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "17.5m"
       },
       {
         "key": "terrain",
@@ -5016,7 +5497,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.nordica.com/storage/Product/0A668400001_ENFORCER_89_FLAT.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5028,7 +5509,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "167 / 173 / 179 / 185 cm",
       "waistWidth": 89,
+      "turnRadius": 16.5,
+      "turnRadiusReferenceLength": "167 cm",
       "terrain": "雪道 / 全山地",
       "skierLevel": "中级至进阶",
       "bindingSetup": "裸板，固定器另配"
@@ -5038,6 +5522,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "89mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "16.5m"
       },
       {
         "key": "terrain",
@@ -5061,7 +5550,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.nordica.com/storage/Product/0A668300001_ENFORCER_94_FLAT.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5073,7 +5562,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "167 / 173 / 179 / 185 cm",
       "waistWidth": 94,
+      "turnRadius": 16.5,
+      "turnRadiusReferenceLength": "167 cm",
       "terrain": "雪道 / 全山地",
       "skierLevel": "进阶",
       "bindingSetup": "裸板，固定器另配"
@@ -5083,6 +5575,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "94mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "16.5m"
       },
       {
         "key": "terrain",
@@ -5106,7 +5603,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.nordica.com/storage/Product/0A668200001_ENFORCER_99.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5118,7 +5615,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "167 / 173 / 179 / 185 / 191 cm",
       "waistWidth": 99,
+      "turnRadius": 17,
+      "turnRadiusReferenceLength": "167 cm",
       "terrain": "全山地",
       "skierLevel": "进阶",
       "bindingSetup": "裸板，固定器另配"
@@ -5128,6 +5628,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "99mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "17m"
       },
       {
         "key": "terrain",
@@ -5151,7 +5656,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.nordica.com/storage/Product/0A548500001_SANTA_ANA_102_FLAT.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5163,7 +5668,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "155 / 161 / 167 / 173 / 179 cm",
       "waistWidth": 102,
+      "turnRadius": 16.5,
+      "turnRadiusReferenceLength": "155 cm",
       "terrain": "全山地 / 自由滑",
       "skierLevel": "中级至进阶",
       "bindingSetup": "裸板，固定器另配"
@@ -5173,6 +5681,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "102mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "16.5m"
       },
       {
         "key": "terrain",
@@ -5196,7 +5709,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw0f3e9f73/images/large/RAMFT04_FCMDX02_EXPERIENCE_76_XPRESS_XPRESS_10_GW_B83_BLACK_72DPI_01.jpg?sw=800",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5302,7 +5815,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw562b8531/images/large/RAOPX01000_72DPI_01_v01.jpg?sw=800",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5355,7 +5868,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa8eccfa0/images/large/RAPSE01000_72DPI_01_v01.jpg?sw=800",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5408,7 +5921,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw283c3bb5/images/large/RAPHE01000_72DPI_01_v01.jpg?sw=800",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5420,12 +5933,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "173 / 179 / 183 cm",
+      "lengthOptions": "169 / 173 / 179 / 183 cm",
+      "waistWidth": 70,
+      "turnRadius": 17,
+      "turnRadiusReferenceLength": "173 cm",
       "terrain": "雪道 / 竞速 / 长弧",
       "skierLevel": "进阶至专家",
       "bindingSetup": "R22 系统板，固定器依套装配置"
     },
     "highlights": [
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "70mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "17m"
+      },
       {
         "key": "terrain",
         "label": "适用场景",
@@ -5448,7 +5974,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa120bfdc/images/large/RAPMR03000_72DPI_01_v01.jpg?sw=800",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5501,7 +6027,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/f142d815-a33c-4a23-ab3a-b31b00bd6bb5/L47824000%2B/PNG-2000px-max-72dpi.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5513,6 +6039,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "148 / 156 / 164 / 172 / 180 cm",
       "waistWidth": 86,
       "terrain": "巡游 / 全山地",
       "skierLevel": "中级至进阶",
@@ -5546,7 +6073,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/a71fd066-4d36-4bfa-951d-b45100de98e2/L49189000%2B/PNG-2000px-max-72dpi.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5558,7 +6085,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "157 / 165 / 173 / 181 / 189 cm",
       "waistWidth": 106,
+      "turnRadius": 16.5,
+      "turnRadiusReferenceLength": "157 cm",
       "terrain": "自由滑 / 粉雪",
       "skierLevel": "进阶",
       "bindingSetup": "裸板或依销售套装配置"
@@ -5568,6 +6098,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "106mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "16.5m"
       },
       {
         "key": "terrain",
@@ -5584,14 +6119,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
   {
     "id": "01a0d22f-e4a9-75f1-a049-b409544e7724",
     "slug": "salomon-qst-92-2027",
-    "title": "Salomon QST 92 2026/27",
+    "title": "Salomon QST 92 2023/24",
     "model": "QST 92",
-    "year": 2027,
+    "year": 2024,
     "oneLiner": "QST freeride 系列中偏窄板腰的全山地型号，适合雪道与混合雪况。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/bc1e0c3d-981e-48e7-bd6a-b2f40157afe3/L47232400%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=medium&width=3840",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5603,7 +6138,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "152 / 160 / 168 / 176 / 184 cm",
       "waistWidth": 92,
+      "turnRadius": 15,
+      "turnRadiusReferenceLength": "176 cm",
       "terrain": "全山地 / 自由滑",
       "skierLevel": "中级至进阶",
       "bindingSetup": "裸板或依销售套装配置"
@@ -5613,6 +6151,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "92mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "15m"
       },
       {
         "key": "terrain",
@@ -5629,14 +6172,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
   {
     "id": "01a0d22f-e4b4-7792-85a4-bef71207cf27",
     "slug": "salomon-qst-98-2027",
-    "title": "Salomon QST 98 2026/27",
+    "title": "Salomon QST 98 2023/24",
     "model": "QST 98",
-    "year": 2027,
+    "year": 2024,
     "oneLiner": "QST freeride 系列中宽度适中的全山地型号，主打多雪况适应。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/f1b63fed-8741-4144-802d-b2f40156d659/L47232300%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=low&width=3840",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5648,7 +6191,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "169 / 176 / 183 / 189 cm",
       "waistWidth": 98,
+      "turnRadius": 16,
+      "turnRadiusReferenceLength": "176 cm",
       "terrain": "全山地 / 自由滑",
       "skierLevel": "中级至进阶",
       "bindingSetup": "裸板或依销售套装配置"
@@ -5658,6 +6204,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "98mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "16m"
       },
       {
         "key": "terrain",
@@ -5674,14 +6225,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
   {
     "id": "01a0d22f-e4c2-7277-9562-c72119100cdd",
     "slug": "salomon-qst-blank-2027",
-    "title": "Salomon QST Blank 2026/27",
-    "model": "QST Blank",
+    "title": "Salomon S/LAB QST Blank 2026/27",
+    "model": "S/LAB QST Blank",
     "year": 2027,
     "oneLiner": "QST freeride 系列的宽板腰粉雪型号，官方冬季目录在售。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/c7f0b14e-8431-4677-ad87-b2f301454446/L47713400%2B/PNG-2000px-max-72dpi.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5693,7 +6244,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
+      "lengthOptions": "170 / 178 / 186 / 192 cm",
       "waistWidth": 112,
+      "turnRadius": 17,
+      "turnRadiusReferenceLength": "170 cm",
       "terrain": "自由滑 / 粉雪",
       "skierLevel": "进阶",
       "bindingSetup": "裸板或依销售套装配置"
@@ -5703,6 +6257,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "112mm"
+      },
+      {
+        "key": "turnRadius",
+        "label": "转弯半径",
+        "value": "17m"
       },
       {
         "key": "terrain",
@@ -5726,7 +6285,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/d46f845f-a04e-4b4c-8419-b45100de593b/L45457300%2B/PNG-2000px-max-72dpi.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5779,7 +6338,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 6599,
     "priceMax": 6599,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1",
+    "coverUrl": "https://www.arbor-collective.ca/cdn/shop/files/1-ARBOR_AFRAME_2024_STUDIO_01-rec.png?v=1724274612",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5846,7 +6405,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 4899,
     "priceMax": 4899,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-06.png?auth_key=12936507cc57135902558c86b8e8de33d959f7af4b93ac4078e9012b69c426e0",
+    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1103223.jpg?v=1767733151",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5909,9 +6468,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "BC Stream R-2 2026",
     "model": "R2",
     "year": 2026,
-    "oneLiner": "25/26 款锤头刻滑板，采用方向性双向板型与可变拱形；该型号未见于当前 26/27 目录。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "25/26 款锤头刻滑板，采用方向性双向板型与可变拱形；日本含税定价 ¥126,500，按 2026-10-02 参考汇率折算约 ¥5,370 CNY；该型号未见于当前 26/27 目录。",
+    "priceMin": 5370,
+    "priceMax": 5370,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.follows.co.jp/pic-labo/2526bc-r2-1a.jpg",
     "ratingOverall": null,
@@ -5925,9 +6484,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "length": 157,
+      "effectiveEdge": 1300,
+      "waistWidth": 250,
+      "stanceSetback": 20,
       "profile": "Variable Camber",
       "profileFamily": "hybrid",
       "shape": "Directional Twin / Hammerhead",
+      "core": "桧木 / 桐木",
       "scenes": [
         "carving",
         "all-mountain"
@@ -5935,14 +6499,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "highlights": [
       {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1300mm"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "250mm"
+      },
+      {
         "key": "profileFamily",
         "label": "板型族",
         "value": "混合拱"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑 · 全山地"
       }
     ]
   },
@@ -5952,9 +6526,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "BC Stream Riders' Spec DR 2027",
     "model": "Riders' Spec DR",
     "year": 2027,
-    "oneLiner": "宽板头与方向性轮廓兼顾压雪道和粉雪；商品资料标注 50 mm setback，不同鼻尾形状版本的滑行表现有别。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "宽板头与方向性轮廓兼顾压雪道和粉雪；商品资料标注 50 mm setback，不同鼻尾形状版本的滑行表现有别。日本 26/27 零售标价 ¥129,800 含税，按 2026-10-02 参考汇率折算约 ¥5,505 CNY（非中国零售价）。",
+    "priceMin": 5505,
+    "priceMax": 5505,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.follows.co.jp/pic-labo/2627bc-dr-1.jpg",
     "ratingOverall": null,
@@ -5997,9 +6571,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "BC Stream RX 2027",
     "model": "RX",
     "year": 2027,
-    "oneLiner": "以深弯和刻滑控制为核心，26/27 款增加 Hard Flex 选项；具体几何数据须按尺码读取。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "以深弯和刻滑控制为核心，26/27 款增加 Hard Flex 选项；具体几何数据须按尺码读取。日本 26/27 官方渠道标价 ¥147,400 含税，按 2026-10-02 参考汇率折算约 ¥6,252 CNY（非中国零售价）。",
+    "priceMin": 6252,
+    "priceMax": 6252,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.follows.co.jp/pic-labo/2627bc-rxn-1.jpg",
     "ratingOverall": null,
@@ -6037,7 +6611,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 6299,
     "priceMax": 6299,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555",
+    "coverUrl": "https://eu.burton.com/cdn/shop/files/1068819AI2_1.webp?v=1776120991&width=2880",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -6095,6 +6669,128 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0fab1-0f00-7bf3-a1a4-252c199a1e38",
+    "slug": "burton-custom-camber-2027",
+    "title": "Burton Custom Camber Snowboard 2027",
+    "model": "Custom Camber",
+    "year": 2027,
+    "oneLiner": "以传统 Camber 和定向板型兼顾全山巡航与自由式地形；158 尺寸提供 254 mm 板腰与 1215 mm 有效刃长。",
+    "priceMin": 4896,
+    "priceMax": 4896,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 158,
+      "effectiveEdge": 1215,
+      "sidecut": 7.9,
+      "waistWidth": 254,
+      "profile": "Camber",
+      "profileFamily": "camber",
+      "shape": "Directional",
+      "core": "Super Fly II 700G Core with Dualzone EGD",
+      "fiberglass": "45° Carbon Highlights",
+      "base": "Sintered WFO",
+      "scenes": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "warranty": 3
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "158cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1215mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.9m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "254mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0fab1-18b2-716f-b9e0-b0190a0cfee6",
+    "slug": "burton-good-company-camber-2027",
+    "title": "Burton Good Company Camber Snowboard 2027",
+    "model": "Good Company Camber",
+    "year": 2027,
+    "oneLiner": "采用 Camber、Twin 板型与对称弹性设定，面向全山与自由式滑行；152 尺寸板腰 250 mm、有效刃长 1155 mm。",
+    "priceMin": 3240,
+    "priceMax": 3240,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359513A03_1.webp?v=1778421389",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "burton",
+      "name": "Burton",
+      "nameCn": "伯顿"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 152,
+      "effectiveEdge": 1155,
+      "sidecut": 7.6,
+      "waistWidth": 250,
+      "profile": "Camber",
+      "profileFamily": "camber",
+      "shape": "Twin",
+      "core": "Super Fly 800G Core with Dualzone EGD",
+      "fiberglass": "Triax",
+      "base": "Sintered",
+      "scenes": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "warranty": 3
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "152cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1155mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.6m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "250mm"
+      }
+    ]
+  },
+  {
     "id": "01a0a804-2b6a-7e41-884b-233d2c386488",
     "slug": "burton-process-2026",
     "title": "Burton Process 2026",
@@ -6104,7 +6800,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 5499,
     "priceMax": 5499,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1",
+    "coverUrl": "https://eu.burton.com/cdn/shop/files/106921CA03_1.webp?v=1776121079&width=2880",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -6167,9 +6863,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Women's Burton Talent Scout Camber Snowboard 2027",
     "model": "Talent Scout",
     "year": 2027,
-    "oneLiner": "Burton 女款公园双向板，Camber 结构强调跳台弹性和道具控制，并采用针对女性滑手调校的软硬设定。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "Burton 女款公园双向板，Camber 结构强调跳台弹性和道具控制，并采用针对女性滑手调校的软硬设定。官网美区标价 $549.95，按项目 USD/CNY 目录汇率折算。",
+    "priceMin": 3960,
+    "priceMax": 3960,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/132181CBO2_1.webp?v=1783957423&width=2100",
     "ratingOverall": null,
@@ -6355,7 +7051,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 5299,
     "priceMax": 5299,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1",
+    "coverUrl": "https://snowboards.com/files/store/items/lg/f/w/fw26--doa_150.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -6471,73 +7167,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "252mm"
-      }
-    ]
-  },
-  {
-    "id": "01a0a804-2ba2-7ef5-86f7-13c5bfb80560",
-    "slug": "capita-horrorscope-2024",
-    "title": "Capita Horrorscope 2024",
-    "model": "Horrorscope",
-    "year": 2024,
-    "oneLiner": "全反弓板型让卡刃几乎不可能发生。它是新手最友好的入门板之一，也能陪你滑完第一个公园季。",
-    "priceMin": 3699,
-    "priceMax": 3699,
-    "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1",
-    "ratingOverall": null,
-    "ratingCount": 0,
-    "favoriteCount": 0,
-    "composite": 66.3,
-    "brand": {
-      "slug": "capita",
-      "name": "Capita",
-      "nameCn": null
-    },
-    "categorySlug": "snowboard",
-    "specs": {
-      "length": 153,
-      "effectiveEdge": 1160,
-      "sidecut": 7.3,
-      "waistWidth": 250,
-      "stanceSetback": 0,
-      "profile": "Rocker（全反弓）",
-      "profileFamily": "rocker",
-      "shape": "真双向",
-      "core": "Dual Core 白杨",
-      "fiberglass": "Biax",
-      "base": "挤压 4000",
-      "weight": 2580,
-      "flex": 4,
-      "damping": 5,
-      "pop": 5,
-      "turnRadiusFeel": "极宽松，几乎无阻力",
-      "scenes": [
-        "beginner",
-        "freestyle"
-      ],
-      "warranty": 2
-    },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "153cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1160mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.3m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "250mm"
       }
     ]
   },
@@ -6911,6 +7540,69 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "waistWidth",
         "label": "板腰宽",
         "value": "252mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a804-2ba2-7ef5-86f7-13c5bfb80560",
+    "slug": "capita-horrorscope-2024",
+    "title": "CAPiTA Pathfinder Reverse 2024",
+    "model": "Pathfinder Reverse",
+    "year": 2024,
+    "oneLiner": "2024 款 Pathfinder Reverse 是 CAPiTA 对旧 Horrorscope 系列的承接型号；反弓/平底混合板型、153cm 真双向，软弹且容错高。零售商列示 MSRP $429.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥3,096 CNY；本条保留旧 Horrorscope slug 以兼容已有链接。",
+    "priceMin": 3096,
+    "priceMax": 3096,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0510/1705/6454/files/pathreverse57.jpg?v=1750863390",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 66.3,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 153,
+      "effectiveEdge": 1218,
+      "sidecut": 7.8,
+      "waistWidth": 254,
+      "stanceSetback": 0,
+      "profile": "Park V2（插孔间零拱，插孔外反弓，平踢板头/尾）",
+      "profileFamily": "rocker",
+      "shape": "True Twin",
+      "core": "Dual Core",
+      "fiberglass": "Biax",
+      "base": "Superdrive Ex",
+      "flex": 4,
+      "scenes": [
+        "beginner",
+        "freestyle"
+      ],
+      "warranty": 2
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "153cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1218mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.8m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "254mm"
       }
     ]
   },
@@ -7353,9 +8045,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "DREAMSCAPE All Road 900 2026",
     "model": "All Road 900",
     "year": 2026,
-    "oneLiner": "迪卡侬成人全山地与自由滑取向型号，官方描述覆盖雪道与雪道外滑行；当地页面所列价格不作为人民币价格录入。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "迪卡侬成人全山地与自由滑取向型号，154/160/166cm 可选；英国官网标价 £279.99，按 2026-10-02 参考汇率 1 GBP≈¥8.8475 折算约 ¥2,478 CNY（非中国售价）。154cm 规格为示例尺码。",
+    "priceMin": 2478,
+    "priceMax": 2478,
     "priceCurrency": "CNY",
     "coverUrl": "https://contents.mediadecathlon.com/p2572726/k$71ec9103476ba320ff720d13e85c95ba/picture.jpg?format=auto&f=3000x0",
     "ratingOverall": null,
@@ -7369,6 +8061,16 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "length": 154,
+      "sidecut": 8.3,
+      "waistWidth": 245,
+      "stanceSetback": 50,
+      "profile": "Camber with nose rocker",
+      "profileFamily": "hybrid",
+      "shape": "Directional",
+      "core": "20mm poplar wood",
+      "base": "Sintered",
+      "flex": 8,
       "scenes": [
         "all-mountain",
         "powder"
@@ -7376,9 +8078,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "highlights": [
       {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "全山地 · 野雪浮雪"
+        "key": "length",
+        "label": "长度",
+        "value": "154cm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.3m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "245mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
       }
     ]
   },
@@ -7388,9 +8105,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "DREAMSCAPE Park & Ride 500 2026",
     "model": "Park & Ride 500",
     "year": 2026,
-    "oneLiner": "迪卡侬全山地与自由式型号，官方页面列出标准正拱、加宽及粉雪站位等设计信息。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "迪卡侬全山地与自由式型号，标准正拱配合摇杆与粉雪站位；英国官网原价 £199.99（现为促销价），按 2026-10-02 参考汇率 1 GBP≈¥8.8475 折算约 ¥1,769 CNY（非中国售价）。规格以 156cm 为例。",
+    "priceMin": 1769,
+    "priceMax": 1769,
     "priceCurrency": "CNY",
     "coverUrl": "https://contents.mediadecathlon.com/p2944924/k$e21f8365347b4de89819c934c9ed67d6/picture.jpg?format=auto&f=3000x0",
     "ratingOverall": null,
@@ -7404,8 +8121,16 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "length": 156,
+      "sidecut": 8.4,
+      "waistWidth": 255,
+      "stanceSetback": 20,
       "profile": "Standard Camber with Rocker / Powder Stance",
       "profileFamily": "hybrid",
+      "shape": "Directional Twin",
+      "core": "Poplar wood",
+      "base": "Sintered HDPE",
+      "flex": 6,
       "scenes": [
         "all-mountain",
         "freestyle",
@@ -7414,14 +8139,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "highlights": [
       {
+        "key": "length",
+        "label": "长度",
+        "value": "156cm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.4m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "255mm"
+      },
+      {
         "key": "profileFamily",
         "label": "板型族",
         "value": "混合拱"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 · 野雪浮雪"
       }
     ]
   },
@@ -7431,9 +8166,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "DREAMSCAPE SNB 100 2026",
     "model": "SNB 100",
     "year": 2026,
-    "oneLiner": "DREAMSCAPE 入门全山地雪板系列，按男女款分别展示；本记录不把不同款式和尺码的参数合并。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "DREAMSCAPE 入门全山地男款，平底与长摇杆、软 flex 3/10、方向性双向板型；加拿大官网原价 CAD $220，按 2026-10-02 参考汇率 1 CAD≈¥4.7121 折算约 ¥1,037 CNY（非中国售价）。规格以 152cm 为例。",
+    "priceMin": 1037,
+    "priceMax": 1037,
     "priceCurrency": "CNY",
     "coverUrl": "https://contents.mediadecathlon.com/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg",
     "ratingOverall": null,
@@ -7447,6 +8182,16 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "length": 152,
+      "sidecut": 8.2,
+      "waistWidth": 250,
+      "stanceSetback": 20,
+      "profile": "Flat Camber + Long Rocker",
+      "profileFamily": "hybrid",
+      "shape": "Directional Twin",
+      "core": "20mm poplar wood",
+      "base": "Extruded",
+      "flex": 3,
       "scenes": [
         "beginner",
         "all-mountain"
@@ -7454,9 +8199,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "highlights": [
       {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "新手入门 · 全山地"
+        "key": "length",
+        "label": "长度",
+        "value": "152cm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "8.2m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "250mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
       }
     ]
   },
@@ -7470,7 +8230,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 5199,
     "priceMax": 5199,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-06.png?auth_key=12936507cc57135902558c86b8e8de33d959f7af4b93ac4078e9012b69c426e0",
+    "coverUrl": "https://images.blue-tomato.com/is/image/bluetomato/305258540_front.jpg-G2lrQmzSDnKgLSGW6Q13RDLjzzE/Riders+Choice+Snowboard.jpg?$b1$",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -7533,11 +8293,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "GRAY DESPE WOOD 2027",
     "model": "DESPE WOOD",
     "year": 2027,
-    "oneLiner": "木芯与玻纤结构的刻滑入门取向型号，26/27 全长度更新为 Active Camber，并提供部分加宽尺寸。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "木芯与玻纤结构的刻滑入门取向型号，26/27 全长度更新为 Active Camber，并提供部分加宽尺寸。日本官方含税 MSRP ¥93,500，按 2026-10-02 参考汇率折算约 ¥3,968 CNY（非中国零售价）。",
+    "priceMin": 3968,
+    "priceMax": 3968,
     "priceCurrency": "CNY",
-    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/24_DESPE",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/25_DESPE%20WOOD48-63w/2627_25_DESPE%20WOOD48-63w_main.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -7575,12 +8335,12 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
   {
     "id": "01a0d149-36de-79b6-8e05-7b0c749b859a",
     "slug": "gray-desperado-2024",
-    "title": "GRAY DESPERADO 2024",
-    "model": "DESPERADO",
+    "title": "GRAY DESPERADO micro/mini 2024",
+    "model": "DESPERADO micro/mini",
     "year": 2024,
-    "oneLiner": "GRAY 的软鞋刻滑方向基础型号，采用全玻纤结构；与 Ti、Type-R 等版本分开建档。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "GRAY 儿童软鞋刻滑板，采用全玻纤结构；2023/24 官方含税价 ¥108,900，按 2026-10-02 参考汇率折算约 ¥4,623 CNY。",
+    "priceMin": 4623,
+    "priceMax": 4623,
     "priceCurrency": "CNY",
     "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2324/product/18_DESPERADO",
     "ratingOverall": null,
@@ -7621,11 +8381,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "GRAY DESPERADO Ti Type-R 2027",
     "model": "DESPERADO Ti Type-R",
     "year": 2027,
-    "oneLiner": "面向高水平刻滑的金属强化型号，以锤头轮廓、复合侧切和较强边刃支撑为主要特点。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "面向高水平刻滑的金属强化型号，以锤头轮廓、复合侧切和较强边刃支撑为主要特点。日本官方 MSRP 按尺码 ¥198,000–¥209,000 含税，折算目录价约 ¥8,405–¥8,872 CNY（非中国零售价）。",
+    "priceMin": 8405,
+    "priceMax": 8872,
     "priceCurrency": "CNY",
-    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/21_DSPRD",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/21_DSPRD%20Ti%20type-R/2627_21_DSPRD%20Ti%20type-R_main.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -7639,7 +8399,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "profile": "Vario Camber",
       "profileFamily": "hybrid",
-      "shape": "Directional Hammerhead",
+      "shape": "Directional Hammerhead / TripleRadius",
       "core": "Wood Core",
       "scenes": [
         "carving"
@@ -7659,14 +8419,373 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0eabd-69ea-7459-9652-c4f3a8a978fd",
+    "slug": "gray-dsprd-ti-iz-2027",
+    "title": "GRAY DSPRD Ti [iz] 2027",
+    "model": "DSPRD Ti [iz]",
+    "year": 2027,
+    "oneLiner": "26/27 锤头刻滑型号，将 IZANAS 纤维置于芯材下方，并结合上缘 Titanal 金属带、玻纤结构与聚酰胺顶片。日本官方含税 MSRP ¥154,000，按 2026-10-02 参考汇率折算约 ¥6,537 CNY（非中国零售价）。",
+    "priceMin": 6537,
+    "priceMax": 6537,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/22_DSPRD%20Ti%5Biz%5D/2627_22_DSPRD%20Ti%5Biz%5D_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Single Camber (IIw wide only: Vario Camber)",
+      "profileFamily": "camber",
+      "shape": "Directional Hammerhead / TripleRadius",
+      "core": "Wood Core + IZANAS Fiber",
+      "length": 157,
+      "effectiveEdge": 1360,
+      "sidecutRadii": "9.8/9.2/10.4 m",
+      "waistWidth": 246,
+      "stanceSetback": 30,
+      "fiberglass": "Glass + IZANAS beneath core + upper-edge Titanal ribbon",
+      "base": "IS7500 Graphite",
+      "scenes": [
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0eabd-6db1-701f-82d8-390addef0fd1",
+    "slug": "gray-dsprd-ti-type-x-ver-s-2027",
+    "title": "GRAY DSPRD Ti Type-X ver.S 2027",
+    "model": "DSPRD Ti Type-X ver.S",
+    "year": 2027,
+    "oneLiner": "面向高水平竞赛刻滑的 26/27 款 Type-X，针对高速大角度走刃优化；ver.S 使用烧结表层配置。日本官方含税 MSRP ¥198,000，按 2026-10-02 参考汇率折算约 ¥8,405 CNY（非中国零售价）。",
+    "priceMin": 8405,
+    "priceMax": 8405,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/19_DSPRD%20Ti%20type-X%20verS/2627_19_DSPRD%20Ti%20type-X%20verS_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "shape": "Directional Hammerhead",
+      "core": "Wood Core",
+      "scenes": [
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0eabd-70e5-757e-879b-c98eeab99f0e",
+    "slug": "gray-epic-2027",
+    "title": "GRAY EPIC 2027",
+    "model": "EPIC",
+    "year": 2027,
+    "oneLiner": "中等硬度的高端全双向板，Active Camber 与多半径侧切兼顾灵活性和脚下抓边，适合道具、公园及自由式滑行。日本官方含税 MSRP ¥126,500，按 2026-10-02 参考汇率折算约 ¥5,370 CNY（非中国零售价）。",
+    "priceMin": 5370,
+    "priceMax": 5370,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/03_EPIC/2627_03_EPIC_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Active Camber",
+      "profileFamily": "hybrid",
+      "shape": "True Twin",
+      "core": "Wood Core",
+      "scenes": [
+        "freestyle",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "自由式 · 全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0eabd-73f9-7d21-9653-4b78a20b8ba0",
+    "slug": "gray-lovebuzz-58-2027",
+    "title": "GRAY LOVEBUZZ 58 2027",
+    "model": "LOVEBUZZ 58",
+    "year": 2027,
+    "oneLiner": "158cm 全山地自由滑型号，低拱、长板头、大侧切半径与新月形板尾，覆盖雪道巡航到粉雪地形。日本官方含税 MSRP ¥93,500，按 2026-10-02 参考汇率折算约 ¥3,968 CNY（非中国零售价）。",
+    "priceMin": 3968,
+    "priceMax": 3968,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/11_LOVEBUZZ%2058/2627_11_LOVEBUZZ%2058_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 158,
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "shape": "Directional",
+      "core": "Wood Core",
+      "scenes": [
+        "all-mountain",
+        "powder",
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "158cm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 野雪浮雪 · 刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0eabd-76f7-7b85-a79a-099d7d5af26a",
+    "slug": "gray-prodigy-2027",
+    "title": "GRAY PRODIGY 2027",
+    "model": "PRODIGY",
+    "year": 2027,
+    "oneLiner": "GRAY 旗舰方向双向板，玻纤与 X 形碳纤结构强调快速回弹、控制力与中高速稳定，覆盖自由式跳台和全山地滑行。日本官方含税 MSRP ¥126,500，按 2026-10-02 参考汇率折算约 ¥5,370 CNY（非中国零售价）。",
+    "priceMin": 5370,
+    "priceMax": 5370,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/01_PRODIGY/2627_01_PRODIGY_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "shape": "Directional Twin",
+      "core": "Wood Core",
+      "fiberglass": "Fiberglass + X-shaped Carbon Roving",
+      "scenes": [
+        "all-mountain",
+        "freestyle",
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 · 刻滑"
+      }
+    ]
+  },
+  {
+    "id": "01a0eabd-1bf6-7d68-a902-f8468a104453",
+    "slug": "gray-sonicalmach-lt-2027",
+    "title": "GRAY SONICALMACH LT 2027",
+    "model": "SONICALMACH LT",
+    "year": 2027,
+    "oneLiner": "26/27 跑滑与地形技巧取向雪板，软硬度设计搭配杨木与竹复合板芯；不同长度对应双向、方向双向或定向板形。日本官方含税 MSRP ¥93,500，按 2026-10-02 参考汇率折算约 ¥3,968 CNY（非中国零售价）。",
+    "priceMin": 3968,
+    "priceMax": 3968,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/17_SONICALMACH%20LT/2627_17_SONICALMACH%20LT_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "shape": "True Twin / Directional Twin / Directional（随长度变化）",
+      "core": "Poplar + Bamboo Wood Core",
+      "scenes": [
+        "carving",
+        "freestyle",
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑 · 自由式 · 全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0eabd-79f0-74c1-bbee-29a9bc814f96",
+    "slug": "gray-sonicalmach-lt-ver-c-2027",
+    "title": "GRAY SONICALMACH LT ver.C 2027",
+    "model": "SONICALMACH LT ver.C",
+    "year": 2027,
+    "oneLiner": "26/27 碳条强化版本，在杨木与竹复合板芯下配置碳纤维，提升回弹；官方列出 54、55W、56EW 三种宽度版本。日本官方含税 MSRP ¥99,000，按 2026-10-02 参考汇率折算约 ¥4,203 CNY（非中国零售价）。",
+    "priceMin": 4203,
+    "priceMax": 4203,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/18_SONICALMACH%20LT%20verC/2627_18_SONICALMACH%20LT%20verC_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "core": "Poplar + Bamboo Wood Core",
+      "scenes": [
+        "carving",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑 · 自由式"
+      }
+    ]
+  },
+  {
+    "id": "01a0eabd-7d0c-7623-b1fc-137566925fca",
+    "slug": "gray-tycoon-type-s-iz-2027",
+    "title": "GRAY TYCOON Type-S [iz] 2027",
+    "model": "TYCOON Type-S [iz]",
+    "year": 2027,
+    "oneLiner": "26/27 高端竞速刻滑型号，以全金属结构、IZANAS 纤维及复合材料控制弯曲后的回弹，可搭配雪板底板系统。日本官方含税 MSRP ¥198,000，按 2026-10-02 参考汇率折算约 ¥8,405 CNY（非中国零售价）。",
+    "priceMin": 8405,
+    "priceMax": 8405,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/28_TYCOON%20Type-S%5Biz%5D/2627_28_TYCOON%20Type-S%5Biz%5D_main.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "gray",
+      "name": "GRAY",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "profile": "Vario Camber",
+      "shape": "Directional Alpine",
+      "core": "Wood Core + IZANAS Fiber",
+      "scenes": [
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑"
+      }
+    ]
+  },
+  {
     "id": "01a0d149-7d48-7e81-8bee-78680ac52f0a",
     "slug": "jones-dream-weaver-2-0-2027",
     "title": "Women's Dream Weaver 2.0 Snowboard 2027 | Jones",
     "model": "Dream Weaver 2.0",
     "year": 2027,
-    "oneLiner": "偏野雪浮力的女款全山地日常板，形状兼顾雪道巡航、粉雪和多变地形。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "偏野雪浮力的女款全山地日常板，形状兼顾雪道巡航、粉雪和多变地形。官网美区标价 $549.95，按项目 USD/CNY 目录汇率折算。",
+    "priceMin": 3960,
+    "priceMax": 3960,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0641/4722/6759/files/J.27.SNW.DRC-gallery-1.webp?v=1782443953&width=1946",
     "ratingOverall": null,
@@ -7749,6 +8868,68 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "base": "Sintered 8000 Base",
       "weight": 3100,
       "flex": 8,
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "161cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1200mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "9.1m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "252mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0faeb-3d41-70d8-a202-99f7b4f1da86",
+    "slug": "jones-flagship-pro-2027",
+    "title": "Jones Men's Flagship PRO Snowboard 2027",
+    "model": "Flagship PRO",
+    "year": 2027,
+    "oneLiner": "面向专家级大山自由滑的超硬定向板，2027 款升级玄武岩交叉铺层；美国官网 MSRP $949.95，按项目 USD/CNY 7.2 参考汇率折算，非中国零售价。",
+    "priceMin": 6840,
+    "priceMax": 6840,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://www.jonessnowboards.com/cdn/shop/files/J.27.SNM.UFL-gallery-1.webp?v=1782443801&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "jones",
+      "name": "Jones",
+      "nameCn": "琼斯"
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 161,
+      "effectiveEdge": 1200,
+      "sidecut": 9.1,
+      "waistWidth": 252,
+      "stanceSetback": 20,
+      "profile": "Freeride CamRock",
+      "profileFamily": "hybrid",
+      "shape": "Directional",
+      "core": "Power Core + Koroyd",
+      "base": "Sintered 9900",
+      "weight": 2900,
+      "flex": 10,
       "scenes": [
         "all-mountain",
         "powder"
@@ -7913,7 +9094,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 6999,
     "priceMax": 6999,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555",
+    "coverUrl": "https://www.jonessnowboards.com/cdn/shop/files/J.26.SNU.HVC-gallery-1.webp?v=1768452295",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -8169,7 +9350,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 5899,
     "priceMax": 5899,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1",
+    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1183297.jpg?v=1767736586",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -8422,9 +9603,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Women's Twin Sister Snowboard 2027 | Jones",
     "model": "Twin Sister",
     "year": 2027,
-    "oneLiner": "Jones 女款全山地畅销双向板，CamRock 和中等硬度兼顾刻滑、自由式与新雪中的浮力。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "Jones 女款全山地畅销双向板，CamRock 和中等硬度兼顾刻滑、自由式与新雪中的浮力。官网美区标价 $599.95，按项目 USD/CNY 目录汇率折算。",
+    "priceMin": 4320,
+    "priceMax": 4320,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNW.TWS-gallery-1.webp?v=1773324878&width=1946",
     "ratingOverall": null,
@@ -8481,9 +9662,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "K2 Alchemist 2027",
     "model": "Alchemist",
     "year": 2027,
-    "oneLiner": "K2 Landscape 系列旗舰定向野雪板，面向专家滑手，以高速稳定、精准控刃和大山地形为主要方向。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "K2 Landscape 系列旗舰定向野雪板，面向专家滑手，以高速稳定、精准控刃和大山地形为主要方向。官网美区标价 $849.95，按项目 USD/CNY 目录汇率折算。",
+    "priceMin": 6120,
+    "priceMax": 6120,
     "priceCurrency": "CNY",
     "coverUrl": "https://blauerboardshop.com/cdn/shop/files/K2AlchemistSnowboard2027.png?v=1776976538",
     "ratingOverall": null,
@@ -8525,9 +9706,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "K2 Excavator 2027",
     "model": "Excavator",
     "year": 2027,
-    "oneLiner": "宽腰短板思路的全山地型号，主打压雪道深弯与新雪浮力，官方建议按常规雪板尺寸适当缩短选择。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "宽腰短板思路的全山地型号，主打压雪道深弯与新雪浮力，官方建议按常规雪板尺寸适当缩短选择。官网美区标价 $629.95，按项目 USD/CNY 目录汇率折算。",
+    "priceMin": 4536,
+    "priceMax": 4536,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.milosport.com/cdn/shop/files/KB2616871398Large.png?v=1774904988&width=800",
     "ratingOverall": null,
@@ -8571,9 +9752,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "K2 Passport 2027",
     "model": "Passport",
     "year": 2027,
-    "oneLiner": "定向全山自由滑板，兼顾压雪道、粉雪和大山地形；中高级滑手可按脚长在标准与宽版之间选择。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "定向全山自由滑板，兼顾压雪道、粉雪和大山地形；中高级滑手可按脚长在标准与宽版之间选择。官网美区标价 $599.95，按项目 USD/CNY 目录汇率折算。",
+    "priceMin": 4320,
+    "priceMax": 4320,
     "priceCurrency": "CNY",
     "coverUrl": "https://blauerboardshop.com/cdn/shop/files/K2PassportSnowboard2027.png?v=1776985303",
     "ratingOverall": null,
@@ -8635,7 +9816,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 6899,
     "priceMax": 6899,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1",
+    "coverUrl": "https://original.accentuate.io/6939308982453/1758747603396/KORUA-Shapes-Cafe-Racer-Nicholas-Wolken-Thumbnail-01.jpg?v=1758747603396",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -8702,7 +9883,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 5699,
     "priceMax": 5699,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555",
+    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1153304.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -8769,7 +9950,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 5499,
     "priceMax": 5499,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1",
+    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1104917.jpg?v=1767733189",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -8832,9 +10013,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Alternator 2027",
     "model": "Alternator",
     "year": 2027,
-    "oneLiner": "定向全山自由式板，传统正拱与中宽腰设计面向山地跳跃、刻滑和变化雪况。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "定向全山自由式板，传统正拱与中宽腰设计面向山地跳跃、刻滑和变化雪况。Nitro 官方商品目录价 $599.90，按项目 USD/CNY 目录汇率折算。",
+    "priceMin": 4319,
+    "priceMax": 4319,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/11SB11012-101-157_Alternator_Product-1.jpg?v=1779104369&width=985",
     "ratingOverall": null,
@@ -8888,14 +10069,75 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0fab1-2271-7dff-8603-dbb13c01bfec",
+    "slug": "nitro-banker-2027",
+    "title": "Nitro Banker Snowboard 2027",
+    "model": "Banker",
+    "year": 2027,
+    "oneLiner": "面向全山高速刻滑与粉雪地形的定向板，采用 True Camber、Powercore II 与烧结底板；官方标注硬度 8/10。",
+    "priceMin": 4679,
+    "priceMax": 4679,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/11SB11004-101-1multBankerII.jpg?v=1787539883",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 156,
+      "waistWidth": 255,
+      "stanceSetback": -15,
+      "profile": "True Camber",
+      "profileFamily": "camber",
+      "shape": "Directional",
+      "core": "Powercore II",
+      "fiberglass": "Bi-Lite Laminates",
+      "base": "Sintered EcoSpeed HD",
+      "flex": 8,
+      "scenes": [
+        "all-mountain",
+        "powder",
+        "carving"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "156cm"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "255mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "正拱 Camber"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "8/10"
+      }
+    ]
+  },
+  {
     "id": "01a0d149-5fc3-76c9-80bc-23fc03fc6554",
     "slug": "nitro-beast-2026",
     "title": "Nitro Beast 2026",
     "model": "Beast",
     "year": 2026,
-    "oneLiner": "26 款高响应公园自由式板，True Camber 与 Twin 板型强调弹性、控刃和耐用性。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "25/26 款高响应公园自由式板，True Camber 与 Twin 板型强调弹性、控刃和耐用性；零售 MSRP $689.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥4,968 CNY。",
+    "priceMin": 4968,
+    "priceMax": 4968,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/833227-001_Beast_151_Product-1.jpg?v=1755928801&width=995",
     "ratingOverall": null,
@@ -8949,7 +10191,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 4599,
     "priceMax": 4599,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1",
+    "coverUrl": "https://www.nitrosnow.ca/cdn/shop/files/22_82ac62fb-84b5-43f9-ad67-b43bfc261588.png?v=1784751877",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9012,9 +10254,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "OGASAKA CT 2026",
     "model": "CT",
     "year": 2026,
-    "oneLiner": "面向从初级到高水平滑手的全能刻滑板，方向性板型与较均衡的软硬设定兼顾刻滑和日常滑行。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "面向从初级到高水平滑手的全能刻滑板，方向性板型与较均衡的软硬设定兼顾刻滑和日常滑行；25/26 官方含税价 ¥114,400，按 2026-10-02 参考汇率折算约 ¥4,856 CNY。",
+    "priceMin": 4856,
+    "priceMax": 4856,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.ogasaka-snowboard.com/2025-img/03_ct_02.png",
     "ratingOverall": null,
@@ -9064,9 +10306,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "OGASAKA FC 2026",
     "model": "FC",
     "year": 2026,
-    "oneLiner": "半锤头轮廓的自由式刻滑板，长有效边刃强调抓雪和弯中稳定；尺码数据按官方 25/26 规格表记录。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "半锤头轮廓的自由式刻滑板，长有效边刃强调抓雪和弯中稳定；25/26 官方 157cm 含税价 ¥126,500，按 2026-10-02 参考汇率折算约 ¥5,370 CNY。",
+    "priceMin": 5370,
+    "priceMax": 5370,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.ogasaka-snowboard.com/2025-img/08_fc_03.png",
     "ratingOverall": null,
@@ -9123,9 +10365,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "OGASAKA SHIN 2026",
     "model": "SHIN",
     "year": 2026,
-    "oneLiner": "面向粉雪和全山地的系列雪板，官方将其定位为适应多种雪况的中高级型号；不同长度的尺寸与结构不可混用。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "面向粉雪和全山地的系列雪板，官方将其定位为适应多种雪况的中高级型号；25/26 官方含税价 ¥132,000，按 2026-10-02 参考汇率折算约 ¥5,603 CNY；不同长度的尺寸与结构不可混用。",
+    "priceMin": 5603,
+    "priceMax": 5603,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.ogasaka-snowboard.com/2025-img/12_shin_160.png",
     "ratingOverall": null,
@@ -9178,7 +10420,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 7299,
     "priceMax": 7299,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=198d5c0a736869dbd54569f1ba879402ad9fafe539977daea5bc12b6fe7d8555",
+    "coverUrl": "https://www.milosport.com/cdn/shop/files/RD2510321398Large.png?v=1742933585&width=2048",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9236,14 +10478,132 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
+    "id": "01a0faeb-2199-7ca6-b03f-91abcc16ccf8",
+    "slug": "ride-deep-fake-2027",
+    "title": "RIDE Deep Fake Snowboard 2027",
+    "model": "Deep Fake",
+    "year": 2027,
+    "oneLiner": "高阶定向全山板，主打快速换刃、硬雪抓边与粉雪浮力；美国官网 MSRP $799.95，按项目 USD/CNY 7.2 参考汇率折算，非中国零售价。",
+    "priceMin": 5760,
+    "priceMax": 5760,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.media.amplience.net/s/ride/ride_2627_deep-fake_RD261850?w=1200&qlt=90&fmt=auto",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "ride",
+      "name": "Ride",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 157,
+      "effectiveEdge": 1190,
+      "waistWidth": 251,
+      "profile": "Directional Extra Camber",
+      "profileFamily": "hybrid",
+      "shape": "Directional",
+      "core": "Performance Core（白杨 / 竹 / 泡桐）",
+      "fiberglass": "Pre-Cured Glass",
+      "base": "Sintered Low Friction Race Base",
+      "scenes": [
+        "all-mountain",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "157cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1190mm"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "251mm"
+      },
+      {
+        "key": "profileFamily",
+        "label": "板型族",
+        "value": "混合拱"
+      }
+    ]
+  },
+  {
+    "id": "01a0faeb-3025-7cf9-9504-7d796a021b40",
+    "slug": "ride-warpig-2027",
+    "title": "RIDE WARPIG Snowboard 2027",
+    "model": "WARPIG",
+    "year": 2027,
+    "oneLiner": "宽体积短板型定向全山板，兼顾压雪道刻滑、跳台和粉雪；美国官网 MSRP $599.95，按项目 USD/CNY 7.2 参考汇率折算，非中国零售价。",
+    "priceMin": 4320,
+    "priceMax": 4320,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.media.amplience.net/s/ride/ride_2627_warpig_RD261857?w=1200&qlt=90&fmt=auto",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "ride",
+      "name": "Ride",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 154,
+      "effectiveEdge": 1146,
+      "waistWidth": 270,
+      "profile": "Zero Camber",
+      "shape": "Directional volume-shifted",
+      "core": "Performance Core（白杨 / 竹 / 泡桐）",
+      "fiberglass": "Hybrid Glass",
+      "base": "Sintered 4000",
+      "scenes": [
+        "all-mountain",
+        "freestyle",
+        "powder"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "154cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1146mm"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "270mm"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 · 野雪浮雪"
+      }
+    ]
+  },
+  {
     "id": "01a0d149-51de-7454-ab33-37a80c6f1a61",
     "slug": "salomon-assassin-2026",
     "title": "Salomon Assassin 2026",
     "model": "Assassin",
     "year": 2026,
-    "oneLiner": "面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；官网当前页未标明板季。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；25/26 MSRP $649.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥4,680 CNY。",
+    "priceMin": 4680,
+    "priceMax": 4680,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.dam.salomon.com/af8e2e75-eeed-4307-9ef2-b3b8010090b3/L49291700/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
     "ratingOverall": null,
@@ -9300,9 +10660,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Assassin Pro 2027",
     "model": "Assassin Pro",
     "year": 2027,
-    "oneLiner": "全山与自由式兼顾的进阶型号，Rock Out Camber、Ghost Carbon Beams 与 Gunslinger Sidewalls 面向高响应滑行。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "全山与自由式兼顾的进阶型号，Rock Out Camber、Ghost Carbon Beams 与 Gunslinger Sidewalls 面向高响应滑行。2027 美区零售标价 $699.95，按项目 USD/CNY 目录汇率折算。",
+    "priceMin": 5040,
+    "priceMax": 5040,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
     "ratingOverall": null,
@@ -9357,9 +10717,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Huck Knife 2027",
     "model": "Huck Knife",
     "year": 2027,
-    "oneLiner": "以跳台、道具和公园自由式为主的真双向板，Quad Camber 取向强调弹性、响应和落地稳定。",
-    "priceMin": null,
-    "priceMax": null,
+    "oneLiner": "以跳台、道具和公园自由式为主的真双向板，Quad Camber 取向强调弹性、响应和落地稳定。2027 美区零售标价 $579.95，按项目 USD/CNY 目录汇率折算。",
+    "priceMin": 4176,
+    "priceMax": 4176,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.dam.salomon.com/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
     "ratingOverall": null,
@@ -9418,7 +10778,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 3299,
     "priceMax": 3299,
     "priceCurrency": "CNY",
-    "coverUrl": "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-06.png?auth_key=12936507cc57135902558c86b8e8de33d959f7af4b93ac4078e9012b69c426e0",
+    "coverUrl": "https://salomon.jp/cdn/shop/files/L47924900_0_VIR_SIGHT_156.png?v=1756098039",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9485,7 +10845,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1053917E7W_1.webp?v=1783620002&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9498,13 +10858,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋"
+      "flexFeel": "medium",
+      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
+      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋",
+      "bindingSizeGuide": "Burton 男款尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26；M 对应 US 8–11 / Mondo 26–29；L 对应 US 10+ / Mondo 28+。官方区间有重叠，请按具体雪鞋试配。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中等"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
       }
     ]
   },
@@ -9518,7 +10895,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223010FA9_1.webp?v=1783620024&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9531,13 +10908,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋"
+      "flexFeel": "stiff",
+      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
+      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋",
+      "bindingSizeGuide": "Burton 男款尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26；M 对应 US 8–11 / Mondo 26–29；L 对应 US 10+ / Mondo 28+。官方区间有重叠，请按具体雪鞋试配。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
       }
     ]
   },
@@ -9551,7 +10945,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/105441BE8FRG_1.webp?v=1784128020&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9564,13 +10958,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋"
+      "flexFeel": "soft",
+      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
+      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋",
+      "bindingSizeGuide": "Burton 男款尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26；M 对应 US 8–11 / Mondo 26–29；L 对应 US 10+ / Mondo 28+。官方区间有重叠，请按具体雪鞋试配。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "柔软"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
       }
     ]
   },
@@ -9584,7 +10995,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1054719E9M_1.webp?v=1784135138&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9597,13 +11008,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋"
+      "flexFeel": "medium",
+      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
+      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋",
+      "bindingSizeGuide": "Burton 男款尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26；M 对应 US 8–11 / Mondo 26–29；L 对应 US 10+ / Mondo 28+。官方区间有重叠，请按具体雪鞋试配。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中等"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
       }
     ]
   },
@@ -9617,7 +11045,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314E9R_1.webp?v=1783620802&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9630,13 +11058,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "EST 版本仅用于 Burton The Channel 雪板；适配普通绑带雪鞋"
+      "mountingSystem": "EST，仅适配 Burton The Channel",
+      "bootCompatibility": "EST 版本仅用于 Burton The Channel 雪板；适配普通绑带雪鞋",
+      "bindingSizeGuide": "Burton 女款尺码表：S 对应雪鞋 US 4–6 / Mondo 21–23；M 对应 US 6–8 / Mondo 23–25；L 对应 US 8+ / Mondo 25+。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
       }
     ]
   },
@@ -9650,7 +11089,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1054617E9K_1.webp?v=1783620127&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9663,13 +11102,29 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋"
+      "flexFeel": "medium",
+      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
+      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋",
+      "bindingSizeGuide": "Burton 男款尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26；M 对应 US 8–11 / Mondo 26–29；L 对应 US 10+ / Mondo 28+。官方区间有重叠，请按具体雪鞋试配。",
+      "terrain": [
+        "all-mountain"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中等"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
       }
     ]
   },
@@ -9683,7 +11138,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2296011E9M_1.webp?v=1782872039&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9696,13 +11151,29 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "step-in",
-      "bootCompatibility": "仅兼容 Burton Step On 雪鞋；Re:Flex 多板型安装"
+      "flexFeel": "medium",
+      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
+      "bootCompatibility": "仅兼容 Burton Step On 雪鞋；Re:Flex 多板型安装",
+      "bindingSizeGuide": "Burton 男款 Step On 尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26 / CN 240–260；M 对应 US 8.5–10.5 / Mondo 26.5–28.5 / CN 265–285；L 对应 US 11–13 / Mondo 29–31 / CN 290–310；XL 对应 US 14–15 / Mondo 32–33 / CN 320–330。仅配 Burton Step On 雪鞋。",
+      "terrain": [
+        "all-mountain"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "踩入式"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中等"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
       }
     ]
   },
@@ -9716,7 +11187,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1728316E7W_1.webp?v=1783620482&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9729,7 +11200,55 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "step-in",
-      "bootCompatibility": "仅兼容 Burton Step On 雪鞋；Re:Flex 多板型安装"
+      "flexFeel": "medium",
+      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
+      "bootCompatibility": "仅兼容 Burton Step On 雪鞋；Re:Flex 多板型安装",
+      "bindingSizeGuide": "Burton 男款 Step On 尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26 / CN 240–260；M 对应 US 8.5–10.5 / Mondo 26.5–28.5 / CN 265–285；L 对应 US 11–13 / Mondo 29–31 / CN 290–310；XL 对应 US 14–15 / Mondo 32–33 / CN 320–330。仅配 Burton Step On 雪鞋。",
+      "terrain": [
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "踩入式"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中等"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-5e10-7026-bf38-780f4de363f6",
+    "slug": "cosone-step-on-binding-2026",
+    "title": "COSONE Step On 快穿固定器 2026",
+    "model": "Step On",
+    "year": 2026,
+    "oneLiner": "COSONE 官网本季精选固定器，官方称其为 Step On 快穿款；具体雪鞋兼容范围待品牌进一步说明。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "cosone",
+      "name": "COSONE",
+      "nameCn": "COSONE"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "step-in"
     },
     "highlights": [
       {
@@ -9749,7 +11268,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://contents.mediadecathlon.com/p2573496/k%24353e5fd924967da12911035b5eeb0342/picture.jpg?format=webp&f=3000x0",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9762,13 +11281,313 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "兼容常规及 3D 插孔；不兼容 Burton Channel；普通绑带雪鞋"
+      "mountingSystem": "插孔圆盘；兼容常规及 Burton 3D 插孔，不兼容 Channel",
+      "bootCompatibility": "兼容常规及 3D 插孔；不兼容 Burton Channel；普通绑带雪鞋",
+      "terrain": [
+        "all-mountain"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-9716-7e7d-9884-d5341096a0ce",
+    "slug": "flow-fenix-binding-2027",
+    "title": "Flow Fenix 2027",
+    "model": "Fenix",
+    "year": 2027,
+    "oneLiner": "Flow 后入式固定器，官网描述其定位兼顾公园动作与雪场巡航。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.27.BNU.FEF.400-Flow_Fenix_Cyber_Blue-1.webp?v=1788232266&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "flow",
+      "name": "Flow",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "rear-entry",
+      "flexFeel": "mid-soft",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "terrain": [
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "后入式快穿"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中偏软"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-9a2b-74f4-8da5-95412f30dbe6",
+    "slug": "flow-fuse-binding-2026",
+    "title": "Flow Fuse 2026",
+    "model": "Fuse",
+    "year": 2026,
+    "oneLiner": "Flow 后入式固定器，Fusion 一体式绑带协助快速进入后仰高背结构。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/High-_0024_FLOW_FUSE_WHITE_fusion.jpg?v=1788232288&width=800",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "flow",
+      "name": "Flow",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "rear-entry",
+      "flexFeel": "mid-stiff",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "terrain": [
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "后入式快穿"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-9d36-76fe-a7a0-595fddec7151",
+    "slug": "flow-fuse-hybrid-binding-2026",
+    "title": "Flow Fuse Hybrid 2026",
+    "model": "Fuse Hybrid",
+    "year": 2026,
+    "oneLiner": "Flow 后入式固定器的 Hybrid 绑带版本，保留传统双绑带脚感并支持快速穿脱。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.26.BNU.FUH.GN-Flow_Fuse_Hybrid_Khaki-1.webp?v=1786448686&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "flow",
+      "name": "Flow",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "rear-entry",
+      "flexFeel": "mid-stiff",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "后入式快穿"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-a04b-7973-a2c3-5037a58d426a",
+    "slug": "flow-nexus-binding-2027",
+    "title": "Flow Nexus 2027",
+    "model": "Nexus",
+    "year": 2027,
+    "oneLiner": "Flow 后入式固定器，官网介绍采用单片 Fusion 绑带与后仰高背穿脱结构。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.27.BNU.NEF.001-Flow_Nexus_Black-1_bql3pa.webp?v=1788232250&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "flow",
+      "name": "Flow",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "rear-entry",
+      "flexFeel": "soft",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "terrain": [
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "后入式快穿"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "柔软"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-a370-7287-9ade-2a8dc1dbc3bf",
+    "slug": "flow-nx2-carbon-binding-2027",
+    "title": "Flow NX2 Carbon 2027",
+    "model": "NX2 Carbon",
+    "year": 2027,
+    "oneLiner": "Flow 高背后仰式固定器，官网标注铝合金底板与碳纤维复合高背。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0685/4131/7295/files/Flow-NX2-Carbon-Fusion-Black-1.webp?v=1786507660&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "flow",
+      "name": "Flow",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "rear-entry",
+      "flexFeel": "pro-stiff",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "后入式快穿"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "专业硬朗"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-a67a-7a59-a463-796007366c69",
+    "slug": "flow-nx2-hybrid-binding-2027",
+    "title": "Flow NX2 Hybrid 2027",
+    "model": "NX2 Hybrid",
+    "year": 2027,
+    "oneLiner": "Flow NX2 系列后入式固定器，采用 Hybrid 绑带配置。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.27.BNU.N2H.001-Flow_NX2_Hybrid_Black-1.webp?v=1788231960&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "flow",
+      "name": "Flow",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "rear-entry",
+      "flexFeel": "stiff",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "后入式快穿"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
       }
     ]
   },
@@ -9782,7 +11601,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/2627-cv-purple.png?v=1787656749&width=1160",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9795,13 +11614,29 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+      "flex": 7,
+      "mountingSystem": "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对",
+      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋",
+      "terrain": [
+        "carving",
+        "all-mountain"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "7"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "刻滑 · 全山地"
       }
     ]
   },
@@ -9815,7 +11650,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.fluxsnowboarding.com/cdn/shop/files/25_1_bk_bs.png?v=1758571720&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9828,13 +11663,29 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+      "flexFeel": "mid-stiff",
+      "mountingSystem": "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对",
+      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋",
+      "terrain": [
+        "freestyle",
+        "all-mountain"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "自由式 / 公园 · 全山地"
       }
     ]
   },
@@ -9848,7 +11699,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/60_1_f25-bdg-302-gs-blk.png?v=1705538624&width=1160",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9861,13 +11712,29 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+      "flex": 3,
+      "mountingSystem": "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对",
+      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋",
+      "terrain": [
+        "freestyle",
+        "all-mountain"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "3"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "自由式 / 公园 · 全山地"
       }
     ]
   },
@@ -9881,7 +11748,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/23_1_gmable_bs-1.png?v=1775183864&width=1160",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9894,13 +11761,29 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+      "flex": 7,
+      "mountingSystem": "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对",
+      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "7"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
       }
     ]
   },
@@ -9914,7 +11797,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/2_1_xv__bronze_bs-1.png?v=1757410220&width=1160",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9927,13 +11810,29 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+      "flex": 9,
+      "mountingSystem": "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对",
+      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋",
+      "terrain": [
+        "freeride",
+        "all-mountain"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "9"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "野雪 / freeride · 全山地"
       }
     ]
   },
@@ -9947,7 +11846,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.26.BNM.MER.GY-gallery-1.webp?v=1768450607&width=1946",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9961,7 +11860,18 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 7,
-      "bootCompatibility": "通用圆盘适配 4x4、2x4 与 Channel；普通绑带雪鞋"
+      "mountingSystem": "Universal Disk；兼容 4x4、2x4 与 EST/Channel",
+      "bootCompatibility": "通用圆盘适配 4x4、2x4 与 Channel；普通绑带雪鞋",
+      "bindingSizeGuide": "Jones 男款：S 对应雪鞋 US 5–7 / EU 36.5–39.5 / Mondo 23.5–25；M 对应 US 7.5–10 / EU 40–43 / 25.5–28；L 对应 US 10.5+ / EU 43.5+ / 28.5+。女款：S US 5–8.5 / EU 35–39.5 / Mondo 22–25；M US 9–11.5 / EU 40–42.5 / 25.5–27.5。",
+      "terrain": [
+        "all-mountain",
+        "freeride",
+        "freestyle"
+      ],
+      "brandFlexScore10": 7,
+      "brandResortScore10": 9,
+      "brandPowScore10": 9,
+      "brandParkScore10": 8
     },
     "highlights": [
       {
@@ -9973,6 +11883,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "flex",
         "label": "硬度",
         "value": "7"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride · 自由式 / 公园"
       }
     ]
   },
@@ -9986,7 +11901,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.26.BNU.MHF.C4-gallery-8.webp?v=1776481535&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9999,13 +11914,41 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "fast-entry",
-      "bootCompatibility": "FASE 官方称兼容各品牌普通雪鞋"
+      "flex": 7,
+      "flexFeel": "medium",
+      "mountingSystem": "Universal Disk；兼容 4x4、2x4 与 EST/Channel",
+      "bootCompatibility": "FASE 官方称兼容各品牌普通雪鞋",
+      "bindingSizeGuide": "Jones Mercury FASE：S 对应雪鞋 US 男/Youth 5–8、女 6.5–9.5 / EU 37.5–41 / Mondo 23–26；M 对应 US 男/Youth 8.5–10.5、女 10–12 / EU 41.5–44 / 26.5–28.5；L 对应 US 男/Youth 11–14、女 12.5–15.5 / EU 44.5–48 / 29–31。",
+      "terrain": [
+        "all-mountain",
+        "freeride",
+        "freestyle"
+      ],
+      "brandFlexScore10": 7,
+      "brandResortScore10": 10,
+      "brandPowScore10": 10,
+      "brandParkScore10": 6
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "快速穿脱"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "7"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中等"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride · 自由式 / 公园"
       }
     ]
   },
@@ -10019,7 +11962,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.26.BNM.ORI.BU-gallery-1.webp?v=1768452354&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10032,13 +11975,28 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "Jones 通用圆盘；普通绑带雪鞋"
+      "mountingSystem": "Universal Disk；兼容 4x4、2x4 与 EST/Channel",
+      "bootCompatibility": "Jones 通用圆盘；普通绑带雪鞋",
+      "bindingSizeGuide": "Jones 男款：S 对应雪鞋 US 5–7 / EU 36.5–39.5 / Mondo 23.5–25；M 对应 US 7.5–10 / EU 40–43 / 25.5–28；L 对应 US 10.5+ / EU 43.5+ / 28.5+。女款：S US 5–8.5 / EU 35–39.5 / Mondo 22–25；M US 9–11.5 / EU 40–42.5 / 25.5–27.5。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ],
+      "brandFlexScore10": 6,
+      "brandResortScore10": 9,
+      "brandPowScore10": 8,
+      "brandParkScore10": 9
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
       }
     ]
   },
@@ -10052,7 +12010,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/N.26.BNU.KAP.BK-Kaon_Plus_Bio_Black-1.webp?v=1786632652&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10065,13 +12023,33 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "Multi-Disk 兼容常见 4 孔与 Channel；普通绑带雪鞋"
+      "flexFeel": "mid-stiff",
+      "mountingSystem": "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bootCompatibility": "Multi-Disk 兼容常见 4 孔与 Channel；普通绑带雪鞋",
+      "bindingSizeGuide": "Nidecker 官方商品页尺码：S EU 35–36；M 37–41；L 41.5–44.5；XL 45–49.5。",
+      "terrain": [
+        "all-mountain"
+      ],
+      "brandFlexScore": 3,
+      "brandResortScore": 4,
+      "brandPowScore": 4,
+      "brandParkScore": 4
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
       }
     ]
   },
@@ -10085,7 +12063,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/N.26.BNU.SPL.C5-LT_Supermatic_Bio_Black-1.webp?v=1786460721&width=1946",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10098,13 +12076,34 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "rear-entry",
-      "bootCompatibility": "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋"
+      "flexFeel": "stiff",
+      "mountingSystem": "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bootCompatibility": "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋",
+      "bindingSizeGuide": "Nidecker 官方商品页尺码：M EU 37.5–41；L 41.5–44；XL 44.5–47。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ],
+      "brandFlexScore": 4,
+      "brandResortScore": 5,
+      "brandPowScore": 4,
+      "brandParkScore": 3
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "后入式快穿"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
       }
     ]
   },
@@ -10118,7 +12117,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/N.26.BNU.SPM.BN-OG_Supermatic_Desert-1.webp?v=1786464048&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10131,13 +12130,222 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "rear-entry",
-      "bootCompatibility": "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋"
+      "flexFeel": "mid-stiff",
+      "mountingSystem": "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bootCompatibility": "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋",
+      "bindingSizeGuide": "Nidecker 官方商品页尺码：S EU 35.5–37.5；M 37.5–41；L 41.5–44；XL 44.5–47。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ],
+      "brandFlexScore": 3,
+      "brandResortScore": 5,
+      "brandPowScore": 3,
+      "brandParkScore": 3
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "后入式快穿"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-a99c-7ddb-8c93-daaec3ec49c8",
+    "slug": "nidecker-orbit-binding-2027",
+    "title": "Nidecker Orbit 2027",
+    "model": "Orbit",
+    "year": 2027,
+    "oneLiner": "Nidecker 双绑带固定器，官方列出可调 heelcup、脚床、前绑带位置与高背旋转。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.27.BNU.OBS.744-Orbit_Ned-1.webp?v=1789478433&width=1200",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nidecker",
+      "name": "Nidecker",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flexFeel": "mid-stiff",
+      "mountingSystem": "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker 美国官方商品页男款/Youth 尺码：M US 5–8；L 8.5–11；XL 11.5–15。",
+      "terrain": [
+        "all-mountain"
+      ],
+      "brandFlexScore": 3,
+      "brandResortScore": 4,
+      "brandPowScore": 3,
+      "brandParkScore": 5
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-acae-71a8-87af-3348a30300e0",
+    "slug": "nitro-fate-binding-2027",
+    "title": "Nitro Fate 女款 2027",
+    "model": "Fate",
+    "year": 2027,
+    "oneLiner": "Nitro 2026–27 女款全山地固定器，官方目录将其列为经典全山地型号。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21011-103_Fate-Womens-Bindings_Nitro-x-Hailey-Langland_Product-1.jpg?v=1779339397&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro 女款官方尺码：S US 女 4–7.5 / MP 21–24.5 / EU 33.5–38；S/M US 女 6–11 / MP 23–28 / EU 36–43。区间有重叠，试穿确认。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "brandComfortScore": 9,
+      "brandResponseScore": 7
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-afbe-768c-9cbc-4fdb57eb034a",
+    "slug": "nitro-one-binding-2027",
+    "title": "Nitro One 2027",
+    "model": "One",
+    "year": 2027,
+    "oneLiner": "Nitro 2026–27 自由式全山地固定器，官方定位为兼顾山地滑行的自由式型号。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11006-102_One-Bindings_Nitro-x-Motorhead_Product-1.jpg?v=1779339370&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro One 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "brandComfortScore": 8,
+      "brandResponseScore": 6
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-b2c6-74dd-b2ce-163dc89c350b",
+    "slug": "nitro-phantom-binding-2027",
+    "title": "Nitro Phantom 2027",
+    "model": "Phantom",
+    "year": 2027,
+    "oneLiner": "Nitro 2026–27 全山地固定器，官方列出 Universal Mini Disc 与 Channel 兼容信息。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11002-103_Phantom-Bindings_Nitro-x-Eero-Ettala_Product-1.jpg?v=1779339347&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bootCompatibility": "官方标注适配中宽及偏宽雪鞋；Universal Mini Disc 兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro Phantom 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ],
+      "brandComfortScore": 10,
+      "brandResponseScore": 8
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
       }
     ]
   },
@@ -10151,7 +12359,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11001-101_PhantomPlus-Bindings_Ultra-Black_Product-1.jpg?v=1779339335&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10164,13 +12372,161 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "普通绑带雪鞋"
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bootCompatibility": "普通绑带雪鞋",
+      "bindingSizeGuide": "Nitro Phantom+ 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ],
+      "brandComfortScore": 10,
+      "brandResponseScore": 9
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-b614-7c53-9ac5-1a51800013c5",
+    "slug": "nitro-poison-binding-2027",
+    "title": "Nitro Poison 女款 2027",
+    "model": "Poison",
+    "year": 2027,
+    "oneLiner": "Nitro 2026–27 女款全山地固定器，官方目录标注为 All-Mountain 系列。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21009-101_Poison-Womens-Bindings_Ultra-Black_Product-1.jpg?v=1779339363&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro Poison 女款官方尺码：S/M 单一尺码，适配 US 女码 6–11 / MP 23–28 / EU 36–43。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "brandComfortScore": 10,
+      "brandResponseScore": 8
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-b93d-7a1e-bbeb-ee3e4f06f98d",
+    "slug": "nitro-rambler-binding-2027",
+    "title": "Nitro Rambler 2027",
+    "model": "Rambler",
+    "year": 2027,
+    "oneLiner": "Nitro 2026–27 全地形绑带固定器，官方标注 Universal Mini Disc 兼容 2x4 与 Channel。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11007-103_Rambler-Bindings_Lite-Acid_Product-1.jpg?v=1779339376&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bootCompatibility": "Universal Mini Disc 兼容 2x4 与 Channel；适配常规绑带雪鞋",
+      "bindingSizeGuide": "Nitro Rambler 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "terrain": [
+        "all-mountain"
+      ],
+      "brandComfortScore": 7,
+      "brandResponseScore": 5
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-bc6e-7dfb-aaf7-fd7dbf2b1f8c",
+    "slug": "nitro-talent-binding-2027",
+    "title": "Nitro Talent 2027",
+    "model": "Talent",
+    "year": 2027,
+    "oneLiner": "Nitro 2026–27 男女通用固定器，品牌官方将其定位为普适型产品。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-105_Talent-Unisex-Bindings_Bubble-Gum_Product-1.jpg?v=1779339424&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "nitro",
+      "name": "Nitro",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro Talent 官方尺码：S US 男 3–6.5、女 3.5–7 / MP 21–24.5 / EU 33.5–38；M 男 7–10.5、女 7.5–11 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14、女 11.5–14.5 / MP 29–32 / EU 44–48。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "brandComfortScore": 7,
+      "brandResponseScore": 4
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
       }
     ]
   },
@@ -10184,7 +12540,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11005-104_Team-Bindings_Vivid-Orange_Product-1.jpg?v=1779339368&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10197,13 +12553,26 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "普通绑带雪鞋"
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bootCompatibility": "普通绑带雪鞋",
+      "bindingSizeGuide": "Nitro Team 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "brandComfortScore": 9,
+      "brandResponseScore": 7
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
       }
     ]
   },
@@ -10217,7 +12586,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11003-103_Team-Pro-Bindings_Nitro-x-Markus-Kleveland_Product-1.jpg?v=1779339350&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10230,13 +12599,796 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "普通绑带雪鞋"
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bootCompatibility": "普通绑带雪鞋",
+      "bindingSizeGuide": "Nitro Team Pro 官方尺码：S/M US 男 5–10、女 5.5–10.5 / MP 23–28 / EU 36–43；M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14 / MP 29–32 / EU 44–48。官方区间有重叠，试穿确认。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "brandComfortScore": 9,
+      "brandResponseScore": 8
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-bf83-71e6-936d-dfed4425a949",
+    "slug": "rome-390-boss-aw-binding-2027",
+    "title": "Rome 390 Boss AW 2027",
+    "model": "390 Boss AW",
+    "year": 2027,
+    "oneLiner": "Rome 2026–27 AsymWrap 平台传统绑带款，官方定位兼顾自由式脚感与全山地用途。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-aw-c2-acid-binding-1-1782374511046.jpg?v=1787636963&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rome",
+      "name": "Rome Snowboards",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flex": 6,
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "6"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-c28d-7b08-86e2-3225eabf8876",
+    "slug": "rome-390-boss-fw-binding-2027",
+    "title": "Rome 390 Boss FW 2027",
+    "model": "390 Boss FW",
+    "year": 2027,
+    "oneLiner": "Rome 2026–27 FullWrap 平台绑带款，官方强调落地支撑与稳定连接。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-fw-c3-artifact-binding-1-1782373333346.jpg?v=1787636962&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rome",
+      "name": "Rome Snowboards",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flex": 7,
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "7"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-c598-74ec-899b-7f3b763005f6",
+    "slug": "rome-brass-aw-binding-2027",
+    "title": "Rome Brass AW 女款 2027",
+    "model": "Brass AW",
+    "year": 2027,
+    "oneLiner": "Rome 2026–27 女款 AsymWrap 传统绑带固定器，官方描述为偏灵活、易上手的脚感。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_BRASS-AW_C2-TEAM_1.jpg?v=1787636962&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rome",
+      "name": "Rome Snowboards",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flex": 6,
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "6"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-c954-7180-a68f-19261e8c9565",
+    "slug": "rome-katana-aw-binding-2027",
+    "title": "Rome Katana AW 2027",
+    "model": "Katana AW",
+    "year": 2027,
+    "oneLiner": "Rome 2026–27 传统绑带全山地固定器，官方主打调节范围与舒适性。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-katana-aw-c2-sage-binding-1-1782373162882.jpg?v=1787636963&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rome",
+      "name": "Rome Snowboards",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flex": 8,
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "8"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-cca4-72a8-abbc-1ba75250c380",
+    "slug": "rome-katana-aw-fase-binding-2027",
+    "title": "Rome Katana AW FASE 2027",
+    "model": "Katana AW FASE",
+    "year": 2027,
+    "oneLiner": "Rome Katana AW 平台的 FASE 快速穿脱版本，官方主打可调节性与全山地适用。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-AW-FASE_C1-BLACK_1_49371da6-92c0-48d4-a570-a94f41a3051f.jpg?v=1788382126&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rome",
+      "name": "Rome Snowboards",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "fast-entry",
+      "flex": 8,
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "快速穿脱"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "8"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-cfdc-7ffb-ac52-83ba86693f7c",
+    "slug": "rome-katana-aw-pro-fase-binding-2027",
+    "title": "Rome Katana AW Pro FASE 2027",
+    "model": "Katana AW Pro FASE",
+    "year": 2027,
+    "oneLiner": "Rome 2026–27 碳纤维取向全山地固定器，结合 AsymWrap 平台与 FASE 快速穿脱系统。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-PRO-AW-FASE_C1-STALE_1_78442129-1b64-47c3-82dc-610e0a874fb6.jpg?v=1787609403&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rome",
+      "name": "Rome Snowboards",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "fast-entry",
+      "flex": 9,
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "快速穿脱"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "9"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-d2e8-7f48-830f-325d83098a2c",
+    "slug": "rome-katana-fw-pro-binding-2027",
+    "title": "Rome Katana FW Pro 2027",
+    "model": "Katana FW Pro",
+    "year": 2027,
+    "oneLiner": "Rome 2026–27 FullWrap 碳纤维传统绑带款，面向高响应全山地滑行。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-PRO-FW_C1-BLACK_1_ffa43267-dae6-4049-a34f-5909b145fe75.jpg?v=1787636962&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rome",
+      "name": "Rome Snowboards",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flex": 9,
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "9"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-d619-79c1-a800-9c0d8cb1bf68",
+    "slug": "rome-volt-fase-binding-2027",
+    "title": "Rome Volt FASE 2027",
+    "model": "Volt FASE",
+    "year": 2027,
+    "oneLiner": "Rome 2026–27 快穿固定器新品，采用 MonoFrame 底盘与 FASE 系统。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C1-BLACK_1_38fd3f25-1d31-4eb0-8c80-709d1b93c9d2.jpg?v=1787607576&width=1920",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "rome",
+      "name": "Rome Snowboards",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "fast-entry",
+      "flex": 5,
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "快速穿脱"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "5"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-d922-7681-b821-bb70ae698b42",
+    "slug": "salomon-district-binding-2026",
+    "title": "Salomon DISTRICT 2026",
+    "model": "DISTRICT",
+    "year": 2026,
+    "oneLiner": "采用 Shadow Fit 结构的全山地/自由式固定器，官网标注中等硬度。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.dam.salomon.com/fb6d3e52-e631-4fe0-9ca7-b36001082c68/L49290100/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flexFeel": "medium",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bootCompatibility": "官网标注 Universal disc，适配市场常见雪板安装系统；普通绑带雪鞋",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中等"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-dc31-7ffc-9890-ec8f20c65c7a",
+    "slug": "salomon-district-pro-binding-2026",
+    "title": "Salomon DISTRICT PRO 2026",
+    "model": "DISTRICT PRO",
+    "year": 2026,
+    "oneLiner": "Salomon 当前全山地固定器系列中的进阶型号，国内零售目录可见该产品。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.dam.salomon.com/2dd43218-0575-4f37-92d2-b360010835d6/L49289600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flexFeel": "stiff",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-df66-7111-ac33-2c25b3751cf8",
+    "slug": "salomon-edb-binding-2026",
+    "title": "Salomon EDB 2026",
+    "model": "EDB",
+    "year": 2026,
+    "oneLiner": "Salomon 全山地固定器，官网当前目录同时提供该款与 EDB PRIME。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.dam.salomon.com/4e88d690-8431-4ab7-b0f7-b36001082530/L45439300/PNG-2000px-max-72dpi.png",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "terrain": [
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-e27b-71be-b57a-ffc39b5fbe98",
+    "slug": "salomon-edb-prime-binding-2026",
+    "title": "Salomon EDB PRIME 2026",
+    "model": "EDB PRIME",
+    "year": 2026,
+    "oneLiner": "Salomon 全山地固定器，国内京东页面可见该型号评价，规格以官方型号页为准。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.dam.salomon.com/06801898-0c9a-4476-b079-b31b00b424be/L47939700/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flexFeel": "stiff",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "terrain": [
+        "all-mountain"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-e5a1-7235-bd4a-b4fc1f4ff1dc",
+    "slug": "salomon-highlander-binding-2026",
+    "title": "Salomon HIGHLANDER 2026",
+    "model": "HIGHLANDER",
+    "year": 2026,
+    "oneLiner": "Salomon 男款全山地固定器，官网列为当前产品型号。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.dam.salomon.com/68e6042c-dc3a-4478-a479-b360010827af/L49289500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flexFeel": "stiff",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "偏硬"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-e8ba-7bc1-8703-eadd0bda840e",
+    "slug": "salomon-hologram-binding-2026",
+    "title": "Salomon HOLOGRAM 2026",
+    "model": "HOLOGRAM",
+    "year": 2026,
+    "oneLiner": "Salomon 全山地固定器，纳入品牌当前官方固定器目录。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.dam.salomon.com/9daa7dca-1d3d-4022-b448-b360010834ff/L49289300/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flexFeel": "medium",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "中等"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-ebcb-778d-885c-6ae2da03f95a",
+    "slug": "salomon-pact-binding-2026",
+    "title": "Salomon PACT 2026",
+    "model": "PACT",
+    "year": 2026,
+    "oneLiner": "Salomon 男款全山地绑带固定器，官网将其列入当前单板固定器产品线。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.dam.salomon.com/8e5e6b58-7bb3-4636-9c58-b2f4013ba909/L47671400/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flexFeel": "soft",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "柔软"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
+      }
+    ]
+  },
+  {
+    "id": "01a0e5dc-eee2-75b7-a627-b05a381ff0dd",
+    "slug": "salomon-rhythm-binding-2026",
+    "title": "Salomon RHYTHM 2026",
+    "model": "RHYTHM",
+    "year": 2026,
+    "oneLiner": "Salomon 入门进阶向全山地绑带固定器，官网列出柔和脚感与通用安装圆盘。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.dam.salomon.com/f0c57cc4-3429-4574-a398-b36001082f58/L45450200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "entrySystem": "strap",
+      "flexFeel": "soft",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bootCompatibility": "官网标注 Universal disc，适配市场常见雪板安装系统；普通绑带雪鞋",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
+    },
+    "highlights": [
+      {
+        "key": "entrySystem",
+        "label": "穿脱系统",
+        "value": "传统绑带"
+      },
+      {
+        "key": "flexFeel",
+        "label": "硬度手感",
+        "value": "柔软"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
       }
     ]
   },
@@ -10250,7 +13402,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_BLACK_2000x.jpg?v=1785333183",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10264,7 +13416,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 8,
-      "bootCompatibility": "适配常见 4x4、4x2 与 Channel 安装；普通绑带雪鞋"
+      "mountingSystem": "Camber Disk + Washer；4x4、4x2 与 Channel",
+      "bootCompatibility": "适配常见 4x4、4x2 与 Channel 安装；普通绑带雪鞋",
+      "bindingSizeGuide": "Union 男款/Unisex 尺码参考：S 对应雪鞋 US 男码 6–8 / Mondo 240–260；M 对应 8.5–10.5 / 265–285；L 对应 11–13 / 290–310；XL 对应 14–15 / 320–330。最终按具体雪鞋外长与官方尺码表确认。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
     },
     "highlights": [
       {
@@ -10276,6 +13434,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "flex",
         "label": "硬度",
         "value": "8"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
       }
     ]
   },
@@ -10289,7 +13452,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_PRO_BLACK_2000x.jpg?v=1785333161",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10302,13 +13465,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "官方列出 4x4、4x2 与 Channel 安装；普通绑带雪鞋"
+      "flex": 9,
+      "mountingSystem": "Camber Disk + Washer；4x4、4x2 与 Channel",
+      "bootCompatibility": "官方列出 4x4、4x2 与 Channel 安装；普通绑带雪鞋",
+      "bindingSizeGuide": "Union 男款/Unisex 尺码参考：S 对应雪鞋 US 男码 6–8 / Mondo 240–260；M 对应 8.5–10.5 / 265–285；L 对应 11–13 / 290–310；XL 对应 14–15 / 320–330。最终按具体雪鞋外长与官方尺码表确认。",
+      "terrain": [
+        "all-mountain",
+        "freeride"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "9"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride"
       }
     ]
   },
@@ -10322,7 +13502,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_FORCE_BLACK_2000x.jpg?v=1785333204",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10336,7 +13516,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 7,
-      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋"
+      "mountingSystem": "Camber Disk；4x4、4x2 与 Channel",
+      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋",
+      "bindingSizeGuide": "Union 男款尺码参考：S 对应雪鞋 US 男码 6–8 / Mondo 240–260；M 对应 8.5–10.5 / 265–285；L 对应 11–13 / 290–310；XL 对应 14–15 / 320–330。最终按具体雪鞋外长与官方尺码表确认。",
+      "terrain": [
+        "all-mountain",
+        "freeride",
+        "freestyle"
+      ]
     },
     "highlights": [
       {
@@ -10348,6 +13535,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "flex",
         "label": "硬度",
         "value": "7"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride · 自由式 / 公园"
       }
     ]
   },
@@ -10361,7 +13553,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_FORCE_CLASSIC_BLACK_2000x.jpg?v=1785333201",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10375,7 +13567,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 6,
-      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋"
+      "mountingSystem": "Camber Disk；4x4、4x2 与 Channel",
+      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋",
+      "bindingSizeGuide": "Union 男款尺码参考：S 对应雪鞋 US 男码 6–8 / Mondo 240–260；M 对应 8.5–10.5 / 265–285；L 对应 11–13 / 290–310；XL 对应 14–15 / 320–330。最终按具体雪鞋外长与官方尺码表确认。",
+      "terrain": [
+        "all-mountain",
+        "freeride",
+        "freestyle"
+      ]
     },
     "highlights": [
       {
@@ -10387,6 +13586,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "key": "flex",
         "label": "硬度",
         "value": "6"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 野雪 / freeride · 自由式 / 公园"
       }
     ]
   },
@@ -10400,7 +13604,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_LEGACY_BLACK_2000x.jpg?v=1785333238",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10413,13 +13617,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "Union Mini Disk；适配普通绑带雪鞋"
+      "flex": 5,
+      "mountingSystem": "Union Mini Disk；兼容常见 4 孔系统",
+      "bootCompatibility": "Union Mini Disk；适配普通绑带雪鞋",
+      "bindingSizeGuide": "Union 女款尺码参考：S 对应雪鞋 US 女码 5–6 / Mondo 220–230；M 对应 6.5–8.5 / 235–255；L 对应 9–11 / 260–280。最终按具体雪鞋外长与官方尺码表确认。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "5"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
       }
     ]
   },
@@ -10433,7 +13654,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0656/0251/9280/files/UN26_TRILOGY_BLACK_2000x.jpg?v=1782986724",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10446,13 +13667,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋"
+      "flex": 7,
+      "mountingSystem": "Camber Disk；4x4、4x2 与 Channel",
+      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋",
+      "bindingSizeGuide": "Union 女款尺码参考：S 对应雪鞋 US 女码 5–6 / Mondo 220–230；M 对应 6.5–8.5 / 235–255；L 对应 9–11 / 260–280。最终按具体雪鞋外长与官方尺码表确认。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "7"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
       }
     ]
   },
@@ -10466,7 +13704,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ULTRA_WOMEN_BLUE_2000x.jpg?v=1785333221",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10479,13 +13717,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋"
+      "flex": 6,
+      "mountingSystem": "Union Mini Disk；兼容常见 4 孔系统",
+      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋",
+      "bindingSizeGuide": "Union 女款尺码参考：S 对应雪鞋 US 女码 5–6 / Mondo 220–230；M 对应 6.5–8.5 / 235–255；L 对应 9–11 / 260–280。最终按具体雪鞋外长与官方尺码表确认。",
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ]
     },
     "highlights": [
       {
         "key": "entrySystem",
         "label": "穿脱系统",
         "value": "传统绑带"
+      },
+      {
+        "key": "flex",
+        "label": "硬度",
+        "value": "6"
+      },
+      {
+        "key": "terrain",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 / 公园"
       }
     ]
   },
@@ -10499,7 +13754,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10527,11 +13782,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Burton Ion Step On 2027",
     "model": "Ion Step On",
     "year": 2027,
-    "oneLiner": "官方档案型号；Step On 接口；仅兼容 Step On 固定器。尺码与脚感以实际试穿为准。",
+    "oneLiner": "官方档案型号；Speed Zone 系带与可调 BOA 压紧带，Step On 系统需配专用固定器。尺码与脚感以实际试穿为准。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10543,13 +13798,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "Step On 接口"
+      "lacingSystem": "Speed Zone + BOA 压紧带"
     },
     "highlights": [
       {
         "key": "lacingSystem",
         "label": "闭合系统",
-        "value": "Step On 接口"
+        "value": "Speed Zone + BOA 压紧带"
       }
     ]
   },
@@ -10563,7 +13818,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10595,7 +13850,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10627,7 +13882,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10659,7 +13914,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.media.amplience.net/i/k2/k2_2627_maysis_black_KB261665_1?w=1200&qlt=90&fmt=auto",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10691,7 +13946,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10723,7 +13978,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.media.amplience.net/s/k2/k2_2627_taro-tamai-rs_KB261654?w=1200&qlt=90&fmt=auto",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10755,7 +14010,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10787,7 +14042,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10819,7 +14074,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10851,7 +14106,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10883,7 +14138,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10915,7 +14170,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10947,7 +14202,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10979,7 +14234,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11007-101_Team-TLS-Wide-Boots_Black_Product-1.jpg?v=1779339428&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11011,7 +14266,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11043,7 +14298,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848713-004_Venture-Pro-TLS-Boots_X-Bryan-Fox-26-27_Product-1-1050x1200-b16c651f-af5e-45db-8f48-8ec7b15da6d1.jpg?v=1788162591&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11071,11 +14326,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Venture Step On TLS 2027",
     "model": "Venture Step On TLS",
     "year": 2027,
-    "oneLiner": "官方档案型号；TLS 系带与 Step On 接口；需配 Step On 固定器。尺码与脚感以实际试穿为准。",
+    "oneLiner": "官方档案型号；TLS 系带，Step On 系统需配专用固定器。尺码与脚感以实际试穿为准。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11087,13 +14342,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "TLS 系带与 Step On 接口"
+      "lacingSystem": "TLS 系带"
     },
     "highlights": [
       {
         "key": "lacingSystem",
         "label": "闭合系统",
-        "value": "TLS 系带与 Step On 接口"
+        "value": "TLS 系带"
       }
     ]
   },
@@ -11107,7 +14362,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11139,7 +14394,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/ffcd71ac-1349-455b-8d18-b40c01097548/L49259900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11171,7 +14426,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11203,7 +14458,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/f11bca7a-d437-4723-9233-b3e200a0ffbd/L45448100/PNG-2000px-max-72dpi.png?width=2000&fit=cover&optimize=medium&format=png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11235,7 +14490,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11267,7 +14522,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11299,7 +14554,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11331,7 +14586,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/3d71cf3c-5e2c-4237-b2c2-b2f4008d48ad/L47773300/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11363,7 +14618,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11395,7 +14650,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11427,7 +14682,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.dam.salomon.com/2d8d238e-a3de-42e8-8636-b3600108ff81/L45418900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,

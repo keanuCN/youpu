@@ -1,0 +1,119 @@
+{
+  "brand": "K2",
+  "model": "Excavator",
+  "season": "2026-27",
+  "sku": "KB261687",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/k2-excavator-2027.yaml",
+  "sources": {
+    "official2027ProductPage": {
+      "url": "https://k2snow.com/en-us/p/excavator-unisex-snowboard-kb261687",
+      "title": "K2 Excavator Unisex Snowboard 2027",
+      "hostNote": "K2 official US storefront. Price is a US regional MSRP; it does not establish a China-market price.",
+      "evidence": "Confirms 2027 season identity/SKU, listed USD price, all six lengths, full size chart, Directional Camber, Tapered Directional/Volume Shift, S1 Core, Wax-Infused Sintered 4001 Base, ICG 10 Biax Glass with Carbon, Carbon Power Fork, 20 mm taper, and a recommendation to size down around 5 cm (technology section says 4-10 cm)."
+    },
+    "official2026Page": {
+      "url": "https://k2snow.com/en-us/p/excavator-unisex-snowboard-2526",
+      "title": "K2 Excavator Unisex Snowboard 2026",
+      "hostNote": "Official prior-season US page; cross-check only, not a replacement for the 2027 page.",
+      "evidence": "Same six sizes and matching published geometry as the 2027 table, supporting a carry-over in the listed dimensions; 2027 remains the seed season."
+    },
+    "officialJapanCollectionPrice": {
+      "url": "https://k2snow.com/en-jp/c/all-snowboarding/all-mens-snowboard/",
+      "title": "K2 Japan men's snowboard collection",
+      "hostNote": "Official Japan storefront, tax-inclusive regional listing; not a China-market price.",
+      "currency": "JPY",
+      "listedPriceInclTax": 91300,
+      "captureDate": "2026-10-02",
+      "evidence": "The official Japan collection lists K2 Excavator Unisex Snowboard 2027 at JPY 91,300 including tax."
+    },
+    "theGoodRide": {
+      "url": "https://thegoodride.com/snowboard-reviews/k2-excavator-snowboard-review/",
+      "title": "K2 Excavator 2023-2026 Snowboard Review",
+      "evidence": "Review updated for 2026. Reviewer disclosed a three-day current demo on 150 and 154 plus prior days on the model, but the exact sample production year is not stated. Describes strong directional float for a short-wide, carving and speed as strong, soft uneven snow as good, hard uneven snow as a limitation, average switch/jib, usable jump/pop, and mid-tier glide relative to price. Not a separately verified 2027 test."
+    },
+    "snowboardersJournalRideReview": {
+      "url": "https://thesnowboardersjournal.com/blogs/reviews/k2-excavator-unisex-snowboard",
+      "title": "K2 Excavator Unisex Snowboard",
+      "author": "Colin Wiseman",
+      "sampleScope": "One disclosed 154 cm sample. Tester is 5 ft 7 in, 155 lb, US boot size 8, with 31 years of riding experience. He rode it from Mt. Baker's mid-November opening day and says he added another half-dozen days after day two; article publication date, test season, and exact production year are not stated. The page credits photos to K2 Snowboarding.",
+      "conditions": "Opening day included deep, heavy, approximately 32-degree Cascadian powder, where the tester needed planing speed before steering from the center and reported back-leg fatigue. Later notes cover a bootpack-accessed backcountry day on consolidated snow, steep/fast turns, treed runouts, uneven terrain, pillow features, and resort groomers; exact dates and snow measurements are not given.",
+      "observations": "Reports strong edge hold on steep turns, lively feel and stability across undulating terrain, useful float after the wide nose reaches speed, quick carving, and a comfortable all-mountain/freeride character. The author suggests riding near usual board length for the deepest days. This adds qualitative support for short-wide float, speed/turn response, and moderate versatility, while the heavy-powder back-leg effort is an explicit limit.",
+      "constructionCaveat": "The review mentions bamboo stringers and a 20 mm taper, while the current official 2027 source describes ICG 10 Biax Glass with Carbon and Carbon Power Fork. Do not use the review to override or fill current-season construction fields; its production year is unknown.",
+      "scoreUse": "Directional corroboration only. No external numeric rating is mapped. Combined with The Good Ride's 2026 multi-day update, it supports the existing stability 8.0 and float 8.5 direction, but uncertain season, single rider, and no controlled comparison do not justify another score change. No reliable park-specific testing or price/value evidence is added."
+    },
+    "skiEssentials2023Test": {
+      "url": "https://www.skiessentials.com/2023-snowboard-test/snowboards/2023-k2-excavator",
+      "title": "2023 K2 Excavator Snowboard Test",
+      "hostNote": "Independent retailer test from the 2022-23 product year; useful historical directional evidence only.",
+      "evidence": "Multiple testers rode size 154. Reported strong stability and flotation, with mixed playfulness/forgiveness and differing fit impressions; not evidence of same-year 2027 performance."
+    }
+  },
+  "units": {
+    "effectiveEdgeCm": "Official K2 table unit cm; converted to mm for seed sizeSpecs.",
+    "tipWaistTailCm": "Official K2 table order and unit cm; each value converted to mm in seed sizeSpecs.",
+    "sidecutM": "Two radii printed in source order; source does not label heel/toe mapping.",
+    "referenceStanceInches": "Single stance reference value, not a min-max range; converted to nearest whole mm for display and exact inches retained here.",
+    "setbackInches": "K2 lists a 0.75 inch setback for every size. Exact source value retained; YAML records the normalized positive magnitude as 19 mm (rounded from 19.05 mm), consistent with other K2 seed values.",
+    "riderWeight": "K2 source publishes ranges in lb and kg; raw strings retained per size."
+  },
+  "sizeRows": [
+    {"size":142,"effectiveEdgeCm":104,"tipWaistTailCm":[29.9,25.0,27.9],"sidecutRadiiM":[5.5,6.5],"referenceStanceInches":19,"setbackInches":0.75,"setbackMm":19,"riderWeightRaw":"90-160+ lb / 41-73 kg+"},
+    {"size":146,"effectiveEdgeCm":108,"tipWaistTailCm":[30.5,25.4,28.5],"sidecutRadiiM":[5.7,6.7],"referenceStanceInches":19,"setbackInches":0.75,"setbackMm":19,"riderWeightRaw":"90-160+ lb / 41-73 kg+"},
+    {"size":150,"effectiveEdgeCm":111,"tipWaistTailCm":[31.3,26.0,29.3],"sidecutRadiiM":[5.9,6.9],"referenceStanceInches":20,"setbackInches":0.75,"setbackMm":19,"riderWeightRaw":"120-190+ lb / 54-86 kg+"},
+    {"size":154,"effectiveEdgeCm":115,"tipWaistTailCm":[31.8,26.4,29.8],"sidecutRadiiM":[6.1,7.1],"referenceStanceInches":21,"setbackInches":0.75,"setbackMm":19,"riderWeightRaw":"120-190+ lb / 54-86 kg+"},
+    {"size":158,"effectiveEdgeCm":118,"tipWaistTailCm":[32.4,26.8,30.4],"sidecutRadiiM":[6.3,7.3],"referenceStanceInches":22,"setbackInches":0.75,"setbackMm":19,"riderWeightRaw":"130-210+ lb / 59-95 kg+"},
+    {"size":162,"effectiveEdgeCm":122,"tipWaistTailCm":[32.7,27.0,30.7],"sidecutRadiiM":[6.5,7.5],"referenceStanceInches":23,"setbackInches":0.75,"setbackMm":19,"riderWeightRaw":"130-210+ lb / 59-95 kg+"}
+  ],
+  "pricing": {
+    "officialUS": {
+      "url": "https://k2snow.com/en-us/p/excavator-unisex-snowboard-kb261687",
+      "currency": "USD",
+      "regularPrice": 629.95,
+      "priceType": "official US storefront listed price (not expressly labeled MSRP)",
+      "captureDate": "2026-10-02",
+      "note": "Dynamic regional price; no Chinese-market listing was verified."
+    },
+    "seed": {
+      "currency": "CNY",
+      "value": 4536,
+      "conversionRateToCny": 7.2,
+      "formula": "round(629.95 * 7.2) = 4536",
+      "note": "Project currency normalization estimate, not an observed local retail price. Retained because the canonical product price schema stores CNY; market and local value score remain unverified."
+    }
+  },
+  "scoringEvidence": {
+    "theGoodRide": {
+      "sampleSizesCm": [150,154],
+      "testDaysDisclosedForCurrentUpdate": 3,
+      "sampleModelYear": "not stated; review page covers 2023-2026 and says updated for 2026",
+      "observations": {
+        "stability": "Tracks well at speed and performs well in soft uneven snow; hard uneven snow can feel chattery/cranky.",
+        "response": "Strong committed carve and energetic return; edge-to-edge initiation depends on sizing and boot size.",
+        "float": "Very good directional float for a short-wide; reviewer says it is not their first choice as a dedicated powder board.",
+        "park": "Has pop for jumps and drops; reviewer does not prefer it for switch, and jib is not a specialty.",
+        "forgiveness": "Easy to skid and relatively non-hooky if sized appropriately; medium-to-medium-stiff feel and sizing/width are caveats.",
+        "value": "Reviewer calls base glide mid-tier and slower than competitors at this price."
+      }
+    },
+    "skiEssentials2023Test": {
+      "sampleSizeCm": 154,
+      "sampleYear": 2023,
+      "observations": "Testers often scored stability and float positively; comments varied with rider size/fit, and one tester found it stiff, less playful and not very forgiving. Historical, non-2027 directional corroboration only."
+    },
+    "siteScoreDecision": "Update stability 8.5 -> 8.0 to reflect the specific hard-uneven-snow caveat while retaining strong groomer/soft-chop performance; update float 9.0 -> 8.5 because reviews describe strong short-wide float but stop short of dedicated-powder-board performance. The Snowboarder's Journal adds an 8+-day 154 cm single-rider account across heavy powder, backcountry, uneven snow and groomers, but does not disclose model year; its back-leg effort in heavy powder supports the existing non-specialist caveat without warranting another score change. Keep response 8.3, park 6.0 and forgiveness 6.8 as low-confidence editorial estimates; no external numeric score is linearly mapped. Keep value 7.4 provisionally and particularly uncertain: official US USD 629.95 and official Japan JPY 91,300 tax-inclusive are regional references only, not China-market prices; The Good Ride also criticizes glide for price.",
+    "confidence": "low to moderate for riding direction, low for numerical site scores and value; no independently confirmed 2027 sample"
+  },
+  "images": {
+    "seedImageUrl": "https://www.milosport.com/cdn/shop/files/KB2616871398Large.png?v=1774904988&width=800",
+    "seedImageSource": "Milosport retailer product image",
+    "rights": "No explicit license for third-party reuse verified. Retain existing reference and do not copy K2 or retailer images into hosted production assets until permission or original photography is secured."
+  },
+  "seedMappingNotes": [
+    "The official size list has six lengths (142/146/150/154/158/162), so there is no unique middle size. This pass does not choose a single representative length; all six official rows are stored in YAML sizeSpecs and this raw archive.",
+    "The K2 table's single Stance value is a reference stance, not a stance-width range. Source inches and converted display millimeters are retained together.",
+    "K2 lists setback as +0.75 inch toward the tail; the seed uses -19 mm according to its directional setback convention, with the exact official value preserved above.",
+    "No official board mass was found. Do not infer board weight from retailer shipping weights or review adjectives.",
+    "No China-market price source was found. CNY 4536 remains a project-rate normalization of official US $629.95, not a verified local price; value score remains low confidence."
+  ]
+}

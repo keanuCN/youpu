@@ -1,0 +1,127 @@
+{
+  "brand": "Nitro",
+  "model": "Team",
+  "season": "2025-26",
+  "skuFamily": "N833222",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.nitrosnow.ca/products/2026-team",
+      "evidence": "Nitro Canada page title is TEAM, embeds the 2026 Nitro Team Snowboard Preview, lists standard and wide variants, and names Trüe Camber, Directional Twin, Reflex Core Profile, Dual Degressive sidecut, Flex 7/10, Powerlite Core, Bi-Lite Laminates, and Sintered EcoSpeed HD Base.",
+      "retrievedAt": "2026-10-02"
+    },
+    "catalogCopy": {
+      "title": "Nitro Digital Dealer Manual 2025-2026",
+      "url": "https://golgoda.com/PDF/25-26%20NITRO_compressed.pdf",
+      "physicalPdfPage": 36,
+      "hostNote": "Retailer-hosted copy of Nitro-branded dealer catalog, not hosted on a Nitro domain; page footer identifies season 2025-2026.",
+      "retrievedAt": "2026-10-02"
+    }
+  },
+  "units": {
+    "runningLength": "mm as printed (not silently relabeled effective edge)",
+    "noseTailWidth": "mm",
+    "waistWidth": "mm",
+    "sidecutRadii": "m as printed",
+    "setback": "mm; source prints -15, represented as 15 mm directional setback for this project's positive-distance convention",
+    "riderWeight": "kg, source ranges copied as text"
+  },
+  "crossChecks": {
+    "backcountry2026": {
+      "url": "https://www.backcountry.com/nitro-team-snowboard-2026",
+      "retrievedEvidence": "Retail technical specification explicitly labels the 157 cm row Effective Edge 1170 mm and Waist Width 252 mm; direct page access is region-restricted, so use only as corroboration, not as primary evidence."
+    },
+    "rei2025_26": {
+      "url": "https://www.opt-outside.rei.com/product/253800/nitro-team-snowboard-20252026",
+      "retrievedEvidence": "Search-indexed 2025/26 product specification reports 157 cm effective edge 117 cm and sidecut radii 11.3/7.3/11.3 m; direct page fetch timed out."
+    }
+  },
+  "seedMappingNotes": [
+    "The 25/26 Nitro catalog labels the 157 value 1170 mm as running length. The seed effectiveEdge value 1170 mm is separately corroborated by retailer technical tables that label it effective edge; this cross-source mapping is explicit and is not asserted as a terminology equivalence by Nitro.",
+    "For the scalar sidecut field, the middle radius 7.3 m is retained for compatibility while the full manufacturer sequence is preserved in sidecutRadii."
+  ],
+  "product": {
+    "shape": "Directional Twin",
+    "camber": "Trüe Camber",
+    "profile": "Reflex Core Profile",
+    "widthVariants": ["Standard", "Wide"],
+    "sidecutType": "Dual Degressive",
+    "manufacturerFlex": "7/10 Nitro scale",
+    "core": "Powerlite Core",
+    "laminate": "Bi-Lite Laminates",
+    "base": "Sintered EcoSpeed HD Base",
+    "construction": ["Recycled Steel Edge", "ABS Sidewall"]
+  },
+  "standardSizes": [
+    {"size":152,"runningLength":1140,"noseTailWidth":[289,289],"waistWidth":246,"sidecutRadiiM":[10.7,6.8,10.7],"setbackMm":-15,"riderWeightKg":"50-70"},
+    {"size":155,"runningLength":1160,"noseTailWidth":[293,293],"waistWidth":250,"sidecutRadiiM":[11.0,7.2,11.0],"setbackMm":-15,"riderWeightKg":"55-75"},
+    {"size":157,"runningLength":1170,"noseTailWidth":[295,295],"waistWidth":252,"sidecutRadiiM":[11.3,7.3,11.3],"setbackMm":-15,"riderWeightKg":"60-80"},
+    {"size":159,"runningLength":1180,"noseTailWidth":[297,297],"waistWidth":254,"sidecutRadiiM":[11.7,7.3,11.7],"setbackMm":-15,"riderWeightKg":"65-85"},
+    {"size":162,"runningLength":1210,"noseTailWidth":[297,297],"waistWidth":256,"sidecutRadiiM":[12.8,8.1,12.8],"setbackMm":-15,"riderWeightKg":"70+"}
+  ],
+  "wideSizes": [
+    {"size":"159W","runningLength":1180,"noseTailWidth":[309,309],"waistWidth":266,"sidecutRadiiM":[11.7,7.3,11.7],"setbackMm":-15,"riderWeightKg":"65-85"},
+    {"size":"162W","runningLength":1210,"noseTailWidth":[311,311],"waistWidth":270,"sidecutRadiiM":[12.8,8.1,12.8],"setbackMm":-15,"riderWeightKg":"70+"},
+    {"size":"165W","runningLength":1240,"noseTailWidth":[313,313],"waistWidth":272,"sidecutRadiiM":[12.4,8.8,12.4],"setbackMm":-15,"riderWeightKg":"75+"}
+  ],
+  "variantDiscrepancy": "Nitro Canada's 2026 product page lists a 157W variant, but the 25/26 catalog technical table does not list 157W (it lists 159W, 162W, 165W). No geometry is inferred for the unlisted 157W.",
+  "pricing": {
+    "officialPageCurrency": "CAD",
+    "compareAtPrice": 649.95,
+    "salePriceAtCapture": 455.00,
+    "capturedAt": "2026-10-02",
+    "note": "Current Canadian official storefront listing; not comparable to or a replacement for the seed's CNY 4599 price without target-market provenance."
+  },
+  "weightNote": "Nitro Canada Shopify variant metadata has weights (for 157, 2900 g) but does not label them board mass; they are not treated as snowboard weight or written to the seed.",
+  "scoringEvidence": {
+    "snowboardingProfiles": {
+      "url": "https://snowboardingprofiles.com/nitro-team-camber-review-all-mountain-snowboard",
+      "pageUpdatedAt": "2025-10-10",
+      "pageScope": "Review has not been updated beyond the 2025 model; publisher explicitly says it needs a retest and only offers it as a possible proxy for 2026.",
+      "testBoard": "2021 Nitro Team Camber, 157 cm",
+      "testDate": "2020-03-07",
+      "externalScoreOutOf100": 85.3,
+      "externalFlexNotes": "Review lists medium-stiff 7/10 rating but describes on-snow feel as medium 6/10; neither replaces Nitro's current official 7/10 product flex scale or site editorial scores.",
+      "observations": "The disclosed 2021 sample felt stable at speed, carved well, maneuvered adequately at slow speed, and handled bumps/crud reasonably; shallow powder was manageable but deep/extended powder was not its strength.",
+      "scoreDecision": "Directional historical proxy only. It is not a 25/26 test, the page itself requests retesting, and its weighted score/subscales must not be mapped into the site's six dimensions. Keep current six scores as low-confidence estimates pending a documented target-season test."
+    }
+  },
+  "followUpAudit": {
+    "auditedAt": "2026-10-02",
+    "reviewSearch": {
+      "queries": [
+        "2026 Nitro Team snowboard review 2025 2026 tested 157",
+        "2025/2026 Nitro Team snowboard review ride test",
+        "Nitro Team 2026 snowboard tested review all mountain",
+        "Nitro Team Snowboard Review 2025 rider tested"
+      ],
+      "leadsChecked": [
+        {
+          "url": "https://snowboardingprofiles.com/nitro-team-camber-review-all-mountain-snowboard",
+          "finding": "Still explicitly says its review is not updated beyond model year 2025 and requests a retest. The disclosed physical sample is 2021 Team Camber, 157 cm, tested 2020-03-07; not evidence of the 25/26 product."
+        },
+        {
+          "url": "https://www.snowmagazine.com/ski-gear/10-best-all-mountain-snowboards",
+          "finding": "Lists/describes Nitro Team 2026 and discusses the altered tip/tail shape, but does not disclose a directly tested board, size, ride date, days or conditions; not treated as a test."
+        },
+        {
+          "url": "https://snowboardselector.com/best-allmountain-snowboards/",
+          "finding": "2026 buying guide describes Team 2026, but provides no sample identity or controlled ride-test disclosure; not treated as a target-season test."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mPabPWcIAcs",
+          "finding": "Nitro's own 2026 Team preview describes the board and construction; manufacturer promotional material, not independent ride evidence."
+        },
+        {
+          "url": "https://tousenmontagne.com/test-de-la-nitro-team-wide-25-la-planche-freestyle-tout-terrain-pour-grands-pieds",
+          "finding": "The 2025-11-07 article claims a multi-day 157W test across groomers, powder and park, but identifies the sample as Team Wide BRD'25 (model/article name), gives no verifiable ride dates or resort, and is an Amazon-affiliate product page. It does not establish that the sample is the 2025/26 generation. Treat as an unverified prior/ambiguous-season lead only; do not transfer its observations or scores to the 2025/26 standard 157."
+        }
+      ],
+      "decision": "No newly located source justifies changing the six editorial values or upgrading confidence. The 2025-11-07 Team Wide article claims a 157W multi-day test but does not verify sample model year, resort or ride dates, and is not evidence for the target-season standard 157. Keep existing estimates and label all six low-confidence until a disclosed 25/26 sample test becomes available."
+    },
+    "chinaPriceSearch": {
+      "lead": "https://detail.youzan.com/show/goods/newest?kdt_id=41084632",
+      "listing": "Nitro Team 2627, CNY 4990 (search-indexed ColdMountain store listing, captured 2026-10-02)",
+      "decision": "Different season from this 25/26 record; listing does not establish the appropriate price type or a 25/26 transaction. Do not replace seed CNY 4599."
+    }
+  }
+}

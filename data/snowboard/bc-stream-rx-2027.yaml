@@ -4,7 +4,18 @@ brand: bc-stream
 model: RX
 year: 2027
 title: BC Stream RX 2027
-one_liner: 以深弯和刻滑控制为核心，26/27 款增加 Hard Flex 选项；具体几何数据须按尺码读取。
+one_liner: 以深弯和刻滑控制为核心，26/27 款增加 Hard Flex 选项；具体几何数据须按尺码读取。日本 26/27 官方渠道标价 ¥147,400 含税，按 2026-10-02 参考汇率折算约 ¥6,252 CNY（非中国零售价）。
+editorial_scores:
+  stability: 9.1
+  response: 9.0
+  float: 5.5
+  park: 2.5
+  forgiveness: 3.8
+  value: 6.8
+price:
+  min: 6252
+  max: 6252
+  currency: CNY
 specs:
   shape: Directional
   scenes:

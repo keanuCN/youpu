@@ -1,0 +1,44 @@
+slug: jones-flagship-pro-2027
+category: snowboard
+brand: jones
+model: Flagship PRO
+year: 2027
+title: Jones Men's Flagship PRO Snowboard 2027
+one_liner: 面向专家级大山自由滑的超硬定向板，2027 款升级玄武岩交叉铺层；美国官网 MSRP $949.95，按项目 USD/CNY 7.2 参考汇率折算，非中国零售价。
+editorial_scores:
+  stability: 9.3
+  response: 9.4
+  float: 9.0
+  park: 5.7
+  forgiveness: 5.8
+  value: 5.8
+price:
+  min: 6840
+  max: 6840
+  currency: CNY
+specs:
+  length: 161
+  weight: 2900
+  effectiveEdge: 1200
+  sidecut: 9.1
+  waistWidth: 252
+  stanceSetback: 20
+  profile: Freeride CamRock
+  profileFamily: hybrid
+  shape: Directional
+  core: Power Core + Koroyd
+  base: Sintered 9900
+  flex: 10
+  scenes:
+    - all-mountain
+    - powder
+images:
+  - url: "https://www.jonessnowboards.com/cdn/shop/files/J.27.SNM.UFL-gallery-1.webp?v=1782443801&width=1200"
+    kind: face
+    alt: Jones Flagship PRO 2027 官方产品图
+    source: Jones 官方产品页图片（商用授权状态待核）
+    sort_order: 0
+data_source:
+  kind: crawl
+  origin_url: https://www.jonessnowboards.com/products/mens-flagship-pro-snowboard
+status: published

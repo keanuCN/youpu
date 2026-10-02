@@ -1,0 +1,84 @@
+{
+  "brand": "Jones",
+  "model": "Women's Dream Weaver 2.0",
+  "season": "2026-27",
+  "skuPrefix": "J.27.SNW.DRC",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/jones-dream-weaver-2-0-2027.yaml",
+  "sources": {
+    "official2027ProductPage": {
+      "url": "https://www.jonessnowboards.com/products/womens-dream-weaver-20-snowboard",
+      "title": "Women's Dream Weaver 2.0 Snowboard",
+      "evidence": "2027 SKU shown as J.27.SNW.DRC; official US list price USD 549.95; sizes 139, 142, 145, 148, 151, 154, 156. Product copy describes resort freeride/all-mountain use, Directional outline, Freeride CamRock, Low Traction Tech, 5 mm taper, Medium 3D Contour Base, Master Core (Paulownia/Poplar), Biax fiberglass, Sintered 8000 base. Brand terrain/personality indicators: all-mountain 8/10, freeride/powder 10/10, freestyle/park 5/10, personality/flex 5/10; these are brand scales and are not mapped to the site's editorial_scores.",
+      "officialPrice": {
+        "amount": 549.95,
+        "currency": "USD",
+        "market": "United States storefront",
+        "captureDate": "2026-10-02",
+        "note": "Regional listed price, not a verified China-market selling price or MSRP designation. Existing CNY 3960 seed value is a project FX normalization, not local market evidence."
+      }
+    },
+    "japanRetailerPreorderCrossCheck": {
+      "url": "https://www.murasaki.jp/Form/Product/ProductDetail.aspx?bid=snow&pid=n13010101019973&shop=0&swrd=JONES&vid=n1301010101997390012139",
+      "retrievedAt": "2026-10-02",
+      "seller": "Murasaki Sports Japan",
+      "modelAndSeason": "Women's Dream Weaver 2.0, 26-27 preorder",
+      "displayedPriceJPY": 105600,
+      "priceType": "Japan-region retailer preorder offer, tax included; not identified as MSRP",
+      "availabilityNote": "The listing gives expected arrival around November to late December 2026. The initially selected 139 cm variant showed no online stock at retrieval; the page also offered other size options and store-stock lookup. Do not treat the listing as proof every size is available.",
+      "sizeAndSpecificationCrossCheck": {
+        "sizesCm": [139, 142, 145, 148, 151, 154, 156],
+        "effectiveEdgeMmBySize": {"139":1045,"142":1071,"145":1097,"148":1123,"151":1149,"154":1175,"156":1191},
+        "note": "Retailer millimeter values are consistent with the Jones official size table's whole-centimeter effective-edge values when rounded to the nearest centimeter. Keep official rounded values in seed; retain this higher-precision retailer transcription only as cross-check, not as a reason to imply manufacturer precision."
+      },
+      "limitations": "This is a Japanese retailer preorder, not a mainland-China price or independently confirmed realized transaction. Price and availability can change."
+    },
+    "theGoodRide": {
+      "url": "https://thegoodride.com/snowboard-reviews/jones-dream-weaver-2-0-snowboard-review-by-jordan/",
+      "title": "Jones Dream Weaver 2.0 Snowboard Review by Jordan",
+      "evidence": "Reviewer disclosed multiple days on a borrowed/demo 148 cm sample, in packed groomers, spring conditions, hard setup snow, ice, corn and slush; rider 5 ft 6 in, 135-140 lb, women's boot size 8. This is the 2026 redesign demo, not an identified 2027 production sample. Reviewer says Jones expected the production board to be slightly stiffer; a note says the production version was slightly stiffer but did not change its progression range. Observations: easy/quick turns, accessible flex, manageable occasional park use and jumps; support, edge hold and composure decline when speed/turning forces rise, with weak damping on firm uneven snow. The reviewer explicitly did not test true powder and does not recommend it as a dedicated deep-snow board; float assessment is therefore a geometry-based prediction, not a powder ride test. The review mentions a 6.8 m sidecut for its demo 148, while the J.27 official size table lists 7.1 m for production 148; keep the demo geometry separate and use the official J.27 figure in the seed. External categories are qualitative and not numerically mapped to local six-dimensional scores."
+    }
+  },
+  "sizeTable": {
+    "units": {
+      "boardSize": "cm",
+      "weight": "kg as shown by Jones; pound equivalents are also shown on source page",
+      "linearDimensions": "cm unless key says sidecut or taper",
+      "sidecut": "m",
+      "taper": "mm",
+      "stance": "cm and inches",
+      "surfaceArea": "dm2",
+      "riderWeight": "lb and kg",
+      "bootSize": "US and EU"
+    },
+    "rows": [
+      {"size":139,"weightKg":2.0,"riderWeightLb":[90,140],"riderWeightKg":[41,63],"bootUs":[5,7],"bootEu":[35.5,37.5],"surfaceAreaDm2":33.7,"contactLengthCm":98.5,"effectiveEdgeCm":105,"tipLengthCm":23.5,"tailLengthCm":17.0,"waistCm":23.5,"underfootWidthFrontCm":24.6,"underfootWidthBackCm":24.6,"tipWidthCm":27.6,"tailWidthCm":27.1,"sidecutM":6.5,"taperMm":5,"referenceStanceCm":47,"referenceStanceIn":18.5,"centeredStanceCm":49,"centeredStanceIn":19.3,"setbackCm":2},
+      {"size":142,"weightKg":2.1,"riderWeightLb":[90,140],"riderWeightKg":[41,63],"bootUs":[5,7],"bootEu":[35.5,37.5],"surfaceAreaDm2":34.75,"contactLengthCm":101.1,"effectiveEdgeCm":107,"tipLengthCm":23.7,"tailLengthCm":17.2,"waistCm":23.7,"underfootWidthFrontCm":24.8,"underfootWidthBackCm":24.8,"tipWidthCm":27.9,"tailWidthCm":27.4,"sidecutM":6.7,"taperMm":5,"referenceStanceCm":47,"referenceStanceIn":18.5,"centeredStanceCm":49,"centeredStanceIn":19.3,"setbackCm":2},
+      {"size":145,"weightKg":2.2,"riderWeightLb":[100,150],"riderWeightKg":[45,68],"bootUs":[6,8],"bootEu":[36.5,38.5],"surfaceAreaDm2":35.81,"contactLengthCm":103.7,"effectiveEdgeCm":110,"tipLengthCm":23.9,"tailLengthCm":17.4,"waistCm":23.9,"underfootWidthFrontCm":25.0,"underfootWidthBackCm":25.0,"tipWidthCm":28.2,"tailWidthCm":27.7,"sidecutM":6.9,"taperMm":5,"referenceStanceCm":49,"referenceStanceIn":19.3,"centeredStanceCm":51,"centeredStanceIn":20.1,"setbackCm":2},
+      {"size":148,"weightKg":2.3,"riderWeightLb":[100,150],"riderWeightKg":[45,68],"bootUs":[6,8],"bootEu":[36.5,38.5],"surfaceAreaDm2":36.88,"contactLengthCm":106.3,"effectiveEdgeCm":112,"tipLengthCm":24.1,"tailLengthCm":17.6,"waistCm":24.1,"underfootWidthFrontCm":25.2,"underfootWidthBackCm":25.2,"tipWidthCm":28.5,"tailWidthCm":28.0,"sidecutM":7.1,"taperMm":5,"referenceStanceCm":49,"referenceStanceIn":19.3,"centeredStanceCm":51,"centeredStanceIn":20.1,"setbackCm":2},
+      {"size":151,"weightKg":2.4,"riderWeightLb":[110,160],"riderWeightKg":[49,73],"bootUs":[7,9],"bootEu":[37.5,39.5],"surfaceAreaDm2":37.96,"contactLengthCm":108.9,"effectiveEdgeCm":115,"tipLengthCm":24.3,"tailLengthCm":17.8,"waistCm":24.3,"underfootWidthFrontCm":25.4,"underfootWidthBackCm":25.4,"tipWidthCm":28.7,"tailWidthCm":28.2,"sidecutM":7.3,"taperMm":5,"referenceStanceCm":51,"referenceStanceIn":20.1,"centeredStanceCm":53,"centeredStanceIn":20.9,"setbackCm":2},
+      {"size":154,"weightKg":2.5,"riderWeightLb":[120,170],"riderWeightKg":[54,77],"bootUs":[8,10],"bootEu":[38.5,42],"surfaceAreaDm2":39.06,"contactLengthCm":111.5,"effectiveEdgeCm":118,"tipLengthCm":24.5,"tailLengthCm":18.0,"waistCm":24.5,"underfootWidthFrontCm":25.6,"underfootWidthBackCm":25.6,"tipWidthCm":29.0,"tailWidthCm":28.5,"sidecutM":7.5,"taperMm":5,"referenceStanceCm":51,"referenceStanceIn":20.1,"centeredStanceCm":53,"centeredStanceIn":20.9,"setbackCm":2},
+      {"size":156,"weightKg":2.6,"riderWeightLb":[120,170],"riderWeightKg":[54,77],"bootUs":[8,11],"bootEu":[38.5,43],"surfaceAreaDm2":39.85,"contactLengthCm":113.1,"effectiveEdgeCm":119,"tipLengthCm":24.7,"tailLengthCm":18.2,"waistCm":24.7,"underfootWidthFrontCm":25.9,"underfootWidthBackCm":25.9,"tipWidthCm":29.2,"tailWidthCm":28.7,"sidecutM":7.7,"taperMm":5,"referenceStanceCm":53,"referenceStanceIn":20.9,"centeredStanceCm":55,"centeredStanceIn":21.7,"setbackCm":2}
+    ],
+    "fieldNotes": "This transcription preserves the published per-size table, including surface area, contact length, tip/tail lengths and widths, front/back underfoot widths, centered stance, and weight/boot ranges. These fields are not all represented by the current single-representative-size seed schema."
+  },
+  "scoreReview": {
+    "currentScores": {"stability":6.8,"response":7.2,"float":8.1,"park":7.4,"forgiveness":7.8,"value":7.3},
+    "decision": "No numerical score changed in this batch. The independent ride evidence is a 2026 demo with a production-flex caveat, not a confirmed 2027 production test; there is no matching Dream Weaver 2.0 product entry in apps/web/src/data/boards.ts to keep prototype and YAML scores in parity. Retain as provisional, low-to-medium confidence editorial estimates. Float has especially low direct-test confidence because the reviewer reports no true-powder test; value has low confidence because the seed CNY figure is only an FX normalization of the US regional listed price.",
+    "dimensionEvidence": {
+      "stability": "low-to-medium: slower/low-angle stability reported; higher force/speed and firm uneven snow expose flex/damping limits; demo-to-production flex caveat remains.",
+      "response": "medium: easy, quick turn initiation reported, but high-load carving support is limited.",
+      "float": "low: directional geometry and official powder positioning only; no true powder ride test.",
+      "park": "low: occasional park and several jumps described as manageable; not a dedicated park design.",
+      "forgiveness": "medium: easy turns and soft, approachable feel reported, chiefly for beginner/intermediate riders.",
+      "value": "low: no verified China-market price or local comparable set."
+    }
+  },
+  "unresolved": [
+    "No direct 2027 production-board test confirmed.",
+    "No true powder ride test in the reviewed independent test.",
+    "No verified China-market price; a Japan-region 26-27 retailer preorder is recorded separately and does not validate the CNY 3960 FX-normalized seed as a local quote.",
+    "Official product-image reuse authorization is not established.",
+    "apps/web/src/data/boards.ts has no matching Dream Weaver 2.0 2027 prototype record; this batch therefore does not alter or claim source/YAML score parity."
+  ]
+}

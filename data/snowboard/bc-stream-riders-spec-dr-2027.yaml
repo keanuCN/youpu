@@ -4,7 +4,18 @@ brand: bc-stream
 model: Riders' Spec DR
 year: 2027
 title: BC Stream Riders' Spec DR 2027
-one_liner: 宽板头与方向性轮廓兼顾压雪道和粉雪；商品资料标注 50 mm setback，不同鼻尾形状版本的滑行表现有别。
+one_liner: 宽板头与方向性轮廓兼顾压雪道和粉雪；商品资料标注 50 mm setback，不同鼻尾形状版本的滑行表现有别。日本 26/27 零售标价 ¥129,800 含税，按 2026-10-02 参考汇率折算约 ¥5,505 CNY（非中国零售价）。
+editorial_scores:
+  stability: 8.2
+  response: 8.0
+  float: 8.0
+  park: 5.8
+  forgiveness: 6.3
+  value: 7.1
+price:
+  min: 5505
+  max: 5505
+  currency: CNY
 specs:
   stanceSetback: 50
   shape: Directional

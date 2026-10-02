@@ -106,6 +106,34 @@ test("content API requests bypass the Next server cache", async () => {
   assert.equal(receivedCache, "no-store");
 });
 
+test("loads every page of API category results", async () => {
+  const items = Array.from({ length: 71 }, (_, index) => ({
+    ...apiItem,
+    id: `api-product-${index + 1}`,
+    slug: `burton-product-${index + 1}-2026`,
+    title: `Burton Product ${index + 1} 2026`,
+    model: `Product ${index + 1}`,
+  }));
+  const requestedPages: number[] = [];
+  const fetcher: typeof fetch = async (input) => {
+    const url = new URL(String(input));
+    const page = Number(url.searchParams.get("page"));
+    const pageSize = 48;
+    requestedPages.push(page);
+    return new Response(JSON.stringify({
+      total: items.length,
+      page,
+      pageSize,
+      items: items.slice((page - 1) * pageSize, page * pageSize),
+    }), { status: 200, headers: { "Content-Type": "application/json" } });
+  };
+
+  const result = await getCategoryProducts("snowboard", { source: "api", fetcher });
+
+  assert.deepEqual(requestedPages, [1, 2]);
+  assert.equal(result.length, 71);
+});
+
 test("loads API details for the compare dock in request order", async () => {
   let receivedUrl = "";
   const fetcher: typeof fetch = async (input, init) => {

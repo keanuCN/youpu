@@ -1,0 +1,72 @@
+{
+  "brand": "GRAY",
+  "model": "SONICALMACH LT",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/gray-sonicalmach-lt-2027.yaml",
+  "sources": {
+    "officialJapaneseCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE (Japanese)",
+      "evidence": "Confirms 26/27 model identity, eight sizes (46, 51, 52w, 54, 55w, 56ew, 60w, 61ew), per-size geometry, 1.8 mm stainless edges, P-TEX 3000 Graphite base, poplar/bamboo core, Japanese tax-inclusive MSRP JPY 93,500, and shape varying from true twin to directional twin/directional by size. Its model feature block ends with 'Valio Camber' (apparently Vario Camber), while the official current chart calls the same size lineup Single Camber; preserve as an unresolved manufacturer-source conflict. The size table prints camber 8 mm for 54/55w/56ew and 9 mm for 60w/61ew, no rocker; 46/51/52w show dashes for camber and rocker."
+    },
+    "officialProductPage": {
+      "url": "https://graysnowboards.co.jp/product-2627-eng/",
+      "evidence": "Season-specific product copy identifies the 26/27 SONICALMACH LT and distinguishes true twin 46/51/52W, directional twin 54/55W/56EW, and directional 60W/61EW. Describes a soft-flex run & trick board with poplar+bamboo core."
+    },
+    "officialChart": {
+      "url": "https://graysnowboards.co.jp/chart/",
+      "evidence": "Official current 26/27 chart labels the SONICALMACH LT lineup as SINGLE CAMBER. This conflicts with 'Valio Camber' in the 26/27 Japanese catalog feature block. Seed profile remains annotated with the conflict; profileFamily stays camber because both source labels describe camber-based profiles."
+    },
+    "previousSeasonRideVideo": {
+      "url": "https://www.youtube.com/watch?v=FC4hJZfohaU",
+      "title": "来季モデル試乗レビュー GRAY: SONICAL MACH & SONICAL MACH LIGHT 160wで乗り味比較。安定感のSONICAL MACH。操作性のSONICAL MACH LT。",
+      "publisher": "青木玲のスノーボード大学",
+      "publishedAt": "2025-04-12",
+      "evidence": "Title describes a next-season SONICAL MACH / SONICAL MACH LT comparison using a 160W sample and characterizes LT as more maneuverable than SONICAL MACH. Likely adjacent 25/26 context by publication date, not a test of the target 26/27 production season. The accessible result does not establish sample season, snow conditions, actual ride duration, or a full test protocol. Treat only as weak directional evidence; do not infer numeric scores."
+    },
+    "ownerRideReport": {
+      "url": "https://plaza.rakuten.co.jp/syabayuki555/diary/202605100003/",
+      "title": "愛用している板のご紹介",
+      "publisher": "シャバユキ小僧のスノーボードブログ",
+      "publishedAt": "2026-05-10",
+      "evidence": "Author says they personally use a 160 cm wide SONICALMACH LT and describes carving stability and ease of handling for its length; reports rider height 165 cm and weight 60 kg and mentions riding at Yachiho Kogen and Togakushi. The post also promotes a 26/27 preorder and says EW widths are new for the following season, suggesting the ridden 160W may be an earlier generation, but it does not state the board's model year, ride dates, conditions, or number of days. This is an owner anecdote, not a controlled independent review or confirmed 26/27 sample."
+    }
+  },
+  "pricing": {
+    "officialJapan": {
+      "currency": "JPY",
+      "taxInclusive": 93500,
+      "priceType": "official Japanese 26/27 catalog MSRP",
+      "note": "Not a verified China-market retail price."
+    },
+    "seedNormalization": {
+      "currency": "CNY",
+      "rateCnyPerJpy": 0.042451,
+      "rateSource": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+      "rateDate": "2026-10-02",
+      "formula": "round(93500 * 0.042451) = 3968",
+      "note": "Currency normalization only; not a Chinese-market offer."
+    }
+  },
+  "scoreReview": {
+    "existingScores": {
+      "stability": 6.6,
+      "response": 6.8,
+      "float": 5.4,
+      "park": 7.6,
+      "forgiveness": 7.2,
+      "value": 8.0
+    },
+    "decision": "Keep all scores unchanged. Official positioning and the adjacent-season comparison video do not establish representative 26/27 on-snow performance or a comparable six-dimension scoring basis.",
+    "confidence": "low; one adjacent-season comparison video and one undated owner anecdote on a 160W, no verified target-season test protocol"
+  },
+  "unverified": [
+    "No verified 26/27 production-sample independent ride review with disclosed size, dates, conditions, and duration.",
+    "The owner report's 160W production year is not identified; reported feel cannot be assigned to 26/27.",
+    "No verified China-market price; seed CNY is a conversion of Japanese MSRP.",
+    "Image reuse permission is not established.",
+    "The video sample is called 160W in its title, while the current 26/27 catalog lists 60W and 61EW; exact generation/variant equivalence is not established."
+  ],
+  "imageRights": "Official product imagery retained as source reference only; no reuse license verified."
+}

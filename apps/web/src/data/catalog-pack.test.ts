@@ -68,6 +68,13 @@ test("云端快照覆盖事实字段并保留本地编辑内容", () => {
   assert.equal(result?.scores.imageQuality, 8);
 });
 
+test("未获准的云端封面回退时保留本地图像语义，不伪装成目录封面", () => {
+  const local = { ...base, gallery: [{ url: base.hero, label: "底面 / BASE" }] };
+  const [result] = applyCatalogSnapshot([local], [snapshot({ coverUrl: "https://untrusted.example/image.jpg" })]);
+
+  assert.deepEqual(result?.gallery, local.gallery);
+});
+
 test("云端新增产品进入统一目录并使用明确的空默认值", () => {
   const result = applyCatalogSnapshot([], [snapshot({ slug: "new-brand-new-model-2026", model: "New Model" })]);
 

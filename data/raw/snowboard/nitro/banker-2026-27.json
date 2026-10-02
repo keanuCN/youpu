@@ -1,0 +1,107 @@
+{
+  "brand": "Nitro",
+  "model": "Banker",
+  "season": "2026-27",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.nitrosnowboards.com/cs/collections/quiver-capsule-26-27/products/banker-snowboard-1",
+      "title": "The 2027 Nitro Banker Snowboard - The Official Turning & Burning Champion",
+      "retrievedAt": "2026-10-02",
+      "evidence": "Nitro's official 26/27 page calls Banker a directional all-mountain board for fast groomers and natural terrain, suited to confident intermediate through expert riders. It lists Trüe Camber, Reflex Core Profile, Progressive Sidecut, Powercore II, Bi-Lite Laminates, Sintered EcoSpeed HD, official flex 8/10 and brand terrain values All Mountain 10/10, Park 2/10, Backcountry 10/10. Brand values describe Nitro's own scale and are not mapped to this project's editorial axes.",
+      "priceNote": "The captured Nitro storefront is Czech-localized and displays EUR 649.90. This is a different regional currency and is not used as the seed price."
+    },
+    "officialNorthAmericaDistributor": {
+      "url": "https://nitrosnowboardsusa.com/es/products/banker",
+      "title": "BANKER – Nitro Snowboards USA / Foundry Distribution",
+      "retrievedAt": "2026-10-02",
+      "evidence": "Distributor-hosted product variant data identifies the 2027 Banker SKUs and sizes 148/152/156/160; listed price is USD 639.95 for each. This is a North American distributor listing price, not explicitly labeled MSRP."
+    },
+    "officialCanadaStorefront": {
+      "url": "https://www.nitrosnow.ca/collections/brand-nitro-entire/products/banker",
+      "retrievedAt": "2026-10-02",
+      "evidence": "Nitro Snowboards Canada storefront identifies BANKER, shows sizes 148/152/156/160 and a displayed price of CAD 699.95. It does not label this as MSRP. This is a Canada-region asking price, not a mainland-China price and not interchangeable with the US distributor's USD listing.",
+      "commerceVariantWeightMetadataGrams": [
+        {"size":"148","sku":"N11SB11004-101148","value":2700},
+        {"size":"152","sku":"N11SB11004-101152","value":2900},
+        {"size":"156","sku":"N11SB11004-101156","value":3000},
+        {"size":"160","sku":"N11SB11004-101160","value":3100}
+      ],
+      "weightMetadataLimitation": "These values occur in Shopify variant `weight` fields, while the visible technical specifications do not identify them as board mass or state whether packaging is included. Preserve as commerce metadata only; do not populate the catalog's board-weight field unless the merchant/manufacturer confirms the semantics."
+    },
+    "usRetailer": {
+      "url": "https://www.christysports.com/product/nitro-banker-snowboard-mens/8205529.html?cgid=nitro&dwvar_8205529_color=000",
+      "retrievedAt": "2026-10-02",
+      "evidence": "Retail page explicitly labels the product season 26/27 and displays USD 639.95 with sizes 148/152/156/160; it independently corroborates the distributor listing price. The page calls out low inventory, so this is an observed asking price, not a durable MSRP guarantee."
+    },
+    "japanRetailer": {
+      "url": "https://www.murasaki.jp/Form/Product/ProductDetail.aspx?bid=snow&pid=n05430101019993",
+      "retrievedAt": "2026-10-02",
+      "evidence": "Japanese 26-27 preorder listing shows JPY 123,200 tax-inclusive, sizes 148/152/156/160, and late-2026 expected delivery. This is a Japanese retailer offer, not a China-market price and not the USD value stored in the seed."
+    },
+    "theGoodRide": {
+      "url": "https://thegoodride.com/snowboard-reviews/nitro-banker-snowboard-review/",
+      "videoUrl": "https://www.youtube.com/watch?v=uUF-CDRxJo4",
+      "videoTitle": "Nitro Banker Snowboard 2025-2027 Review",
+      "videoPublishedAt": "2025-07-11",
+      "testSample": "Nitro Banker, 159 cm",
+      "days": 3,
+      "conditions": "Good groomers and a little late-spring powder; reviewer says the sample was ridden in a decent range of conditions.",
+      "testDisclosure": "Reviewer borrowed the board for an extended demo and returned it. The page's sizing table is labeled Banker 2025 and does not identify the tested board's exact production year. The video title spans 2025-2027; do not describe this as a confirmed 2026/27 production-sample test.",
+      "observations": {
+        "stability": "Reviewer calls it good in soft uneven snow and not too chattery/cranky in hard uneven snow; at speed it stays composed but is explicitly not a top straight-line board. Hard-snow turns need moderation.",
+        "response": "Medium/fast turn initiation on a smaller size; distinctive progressive multi-radius turn feel and satisfying camber rebound. Reviewer rates carving great.",
+        "float": "Good directional float for a full-camber all-mountain board with a bigger nose, small taper and setback; reviewer says it is not as floaty as freeride boards.",
+        "park": "Suitable for kickers, side hits and pipe with a directional approach; not recommended for jibbing. Reviewer rates jumps great and jibbing average.",
+        "forgiveness": "Catchy, technical full camber; reviewer says it is not easy to skid turns and is best for advanced/expert riders. Nose butter is easy, tail takes more work.",
+        "value": "No China-market price or like-for-like value comparison; review lists regional prices only."
+      },
+      "externalRatings": "Qualitative labels on The Good Ride's own rubric; not numerical conversions to site editorial scores."
+    },
+    "snowboardenForumFirstHandReport": {
+      "url": "https://www.snowboarden.de/forum/snowboard-testberichte/nitro-banker-16269.html",
+      "publishedAt": "2025-02-15",
+      "testSample": "Nitro Banker, 156 cm",
+      "evidence": "A forum contributor describing a first-hand ride that week reports a slightly stiffer tail, softer zone between bindings and nose, manageable torsional flex, and easy ollies. Model year beyond the post context is not independently verified; conditions and number of riding days are not disclosed. Treat as low-confidence corroboration only, not a controlled review or 26/27 test."
+    }
+  },
+  "scoreReview": {
+    "siteScores": {
+      "stability": 8.6,
+      "response": 8.7,
+      "float": 7.5,
+      "park": 6.7,
+      "forgiveness": 5.8,
+      "value": 7.3
+    },
+    "decision": "Retain the existing scores; evidence supports the broad balance but cannot justify precise numerical remapping because the directly disclosed sample is not confirmed as 2026/27, official 26/27 describes a new shape, and there is only one detailed independent multi-day test plus one weaker forum report. Do not translate Nitro's All Mountain/Park/Backcountry values or The Good Ride's qualitative ratings into project scores.",
+    "axisRationales": {
+      "stability": "8.6 retained provisionally: positive uneven-snow performance and composed speed support above-average stability, tempered by the reviewer saying it is not a straight-line specialist and needs moderated turns on hard snow.",
+      "response": "8.7 retained provisionally: quick turn initiation for the shorter size, strong carving feel and spring from camber support responsiveness; sample-size and season mismatch limit precision.",
+      "float": "7.5 retained provisionally: directional float is reported as good for all-mountain/full camber, but below freeride-oriented boards and tested only in a little late-spring powder.",
+      "park": "6.7 retained provisionally: kickers, pipe and side hits are plausible; jibbing is a stated weakness. Nitro's brand Park 2/10 is not numerically mapped.",
+      "forgiveness": "5.8 retained provisionally: catchy technical camber and difficult skidded turns support a below-average forgiveness estimate; there is no confirmed 26/27 sample.",
+      "value": "7.3 retained only as a low-confidence placeholder: USD 639.95 is now corroborated as a 26/27 North American distributor/retailer listing, but neither it nor the Japanese preorder price establishes a China-market sale price or like-for-like value comparison."
+    },
+    "confidence": "Low-to-moderate for the broad riding profile; low for exact 2026/27 performance and all numerical scores, especially value."
+  },
+  "doNotInfer": [
+    "Do not treat The Good Ride's 159 sample or 2025 sizing table as a verified 2026/27 sample.",
+    "The published 1060/1090/1120/1150 mm dimension is labeled Running Length, not effective edge. Preserve that name and do not alias it to effectiveEdge.",
+    "Do not infer exact board weight from the review's subjective 'normal' description.",
+    "Do not map manufacturer terrain ratings or third-party qualitative ratings linearly to this site's six dimensions.",
+    "Do not convert the captured regional EUR price into or use it to validate the seed USD or CNY price.",
+    "No confirmed Chinese-market price has been found; public indexed searches on 2026-10-02 returned no SKU-/season-matched mainland-China offer, which does not prove that no such offer exists. USD/EUR/JPY/CAD observations are distinct region-specific asking prices and must not be presented as local CNY retail.",
+    "Do not treat Nitro Canada Shopify variant `weight` metadata (2700/2900/3000/3100 g) as board mass; its logistics/packaging semantics are not disclosed."
+  ],
+  "catalogFieldMapping": {
+    "season": "2026-27 / product labeled Banker 2027.",
+    "sizeRows": [
+      {"size":"148","noseWidthMm":286,"waistWidthMm":243,"tailWidthMm":282,"runningLengthMm":1060,"sidecutRadiusM":[7.5,5.9],"stanceRangeCm":[44,56],"setbackMm":-15},
+      {"size":"152","noseWidthMm":289,"waistWidthMm":246,"tailWidthMm":286,"runningLengthMm":1090,"sidecutRadiusM":[7.8,6.1],"stanceRangeCm":[46,58],"setbackMm":-15},
+      {"size":"156","noseWidthMm":300,"waistWidthMm":255,"tailWidthMm":296,"runningLengthMm":1120,"sidecutRadiusM":[8.0,6.3],"stanceRangeCm":[48,60],"setbackMm":-15},
+      {"size":"160","noseWidthMm":306,"waistWidthMm":260,"tailWidthMm":302,"runningLengthMm":1150,"sidecutRadiusM":[8.2,6.5],"stanceRangeCm":[50,62],"setbackMm":-15}
+    ],
+    "effectiveEdge": "Not supplied by the located season-specific manufacturer/distributor or retailer dimension tables. Do not substitute Running Length.",
+    "reviewVsCurrentModel": "Nitro and a retailer describe the 2027 Banker as reshaped/wider than the prior version. The Good Ride's directly tested 159 sample and size table are not confirmed as 26/27, so the review remains directional background only."
+  }
+}

@@ -3,9 +3,9 @@
 slug: jones-hovercraft-2026
 category: snowboard
 brand: jones
-model: Hovercraft
+model: Hovercraft 2.0
 year: 2026
-title: Jones Hovercraft 2026
+title: Jones Hovercraft 2.0 2026
 one_liner: 浮雪的标杆。板头宽度和后移量让它在新雪里像船一样浮着，树林里转向比看起来灵活得多。
 price:
   min: 6999
@@ -13,16 +13,16 @@ price:
   currency: CNY
 specs:
   length: 160
-  effectiveEdge: 1240
-  sidecut: 8.9
-  waistWidth: 268
+  effectiveEdge: 1260
+  sidecut: 9.3
+  waistWidth: 267
   stanceSetback: 50
   profile: Camber + 大勺形板头
   shape: 强定向锥形
   core: FSC 白杨 / 竹
   fiberglass: Triax Basalt
   base: 烧结 9000
-  weight: 2990
+  weight: 3200
   damping: 8
   pop: 5.5
   turnRadiusFeel: 深雪里灵活，硬雪面偏钝
@@ -59,4 +59,7 @@ images:
     alt: Jones Hovercraft 实地 / FIELD
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 3
+data_source:
+  kind: official
+  origin_url: https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard
 status: published

@@ -1,0 +1,47 @@
+slug: gray-epic-2027
+category: snowboard
+brand: gray
+model: EPIC
+year: 2027
+title: GRAY EPIC 2027
+one_liner: 中等硬度的高端全双向板，Active Camber 与多半径侧切兼顾灵活性和脚下抓边，适合道具、公园及自由式滑行。日本官方含税 MSRP ¥126,500，按 2026-10-02 参考汇率折算约 ¥5,370 CNY（非中国零售价）。
+editorial_scores:
+  stability: 7.3
+  response: 7.6
+  float: 5.8
+  park: 8.2
+  forgiveness: 6.6
+  value: 7.0
+price:
+  min: 5370
+  max: 5370
+  currency: CNY
+specs:
+  core: Super Light Core
+  fiberglass: Mesh Fiberglass Plate
+  base: IS 7500 Sintered Base
+  shape: True Twin
+  scenes:
+    - freestyle
+    - all-mountain
+  profile: Active Camber
+  profileFamily: hybrid
+  sizeSpecs:
+    - {"base":"IS 7500 Natural","edge":"1.8 mm stainless","size":"38","camber":7,"setback":0,"insertQty":"10+10","noseWidth":270,"tailWidth":270,"noseHeight":34.4,"noseLength":165,"tailHeight":34.4,"tailLength":165,"waistWidth":230,"stanceWidth":"460–540","sidecutRadii":"7400/6600/7400","contactLength":1050,"effectiveEdge":1100,"overallLength":1380,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - {"base":"IS 7500 Natural","edge":"1.8 mm stainless","size":"41","camber":7,"setback":0,"insertQty":"10+10","noseWidth":275,"tailWidth":275,"noseHeight":36.5,"noseLength":170,"tailHeight":36.5,"tailLength":170,"waistWidth":234,"stanceWidth":"460–540","sidecutRadii":"7600/6800/7600","contactLength":1070,"effectiveEdge":1120,"overallLength":1410,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - {"base":"IS 7500 Natural","edge":"1.8 mm stainless","size":"44","camber":7,"setback":0,"insertQty":"10+10","noseWidth":279,"tailWidth":279,"noseHeight":38.3,"noseLength":175,"tailHeight":38.3,"tailLength":175,"waistWidth":238,"stanceWidth":"480–560","sidecutRadii":"7800/7000/7800","contactLength":1090,"effectiveEdge":1140,"overallLength":1440,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - {"base":"IS 7500 Natural","edge":"1.8 mm stainless","size":"48","camber":8,"setback":0,"insertQty":"12+12","noseWidth":285,"tailWidth":285,"noseHeight":38.9,"noseLength":180,"tailHeight":38.9,"tailLength":180,"waistWidth":244,"stanceWidth":"480–600","sidecutRadii":"8000/7400/8400","contactLength":1120,"effectiveEdge":1170,"overallLength":1480,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - {"base":"IS 7500 Natural","edge":"1.8 mm stainless","size":"51","camber":8,"setback":0,"insertQty":"12+12","noseWidth":289,"tailWidth":289,"noseHeight":41.2,"noseLength":185,"tailHeight":41.2,"tailLength":185,"waistWidth":248,"stanceWidth":"500–620","sidecutRadii":"8600/7600/8600","contactLength":1140,"effectiveEdge":1190,"overallLength":1510,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - {"base":"IS 7500 Natural","edge":"1.8 mm stainless","size":"54","camber":8,"setback":0,"insertQty":"12+12","noseWidth":292,"tailWidth":292,"noseHeight":43.2,"noseLength":190,"tailHeight":43.2,"tailLength":190,"waistWidth":250,"stanceWidth":"520–640","sidecutRadii":"8800/7800/8800","contactLength":1160,"effectiveEdge":1220,"overallLength":1540,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - {"base":"IS 7500 Natural","edge":"1.8 mm stainless","size":"57","camber":10,"setback":0,"insertQty":"12+12","noseWidth":294,"tailWidth":294,"noseHeight":41.2,"noseLength":185,"tailHeight":41.2,"tailLength":185,"waistWidth":252,"stanceWidth":"540–660","sidecutRadii":"9200/8200/9200","contactLength":1200,"effectiveEdge":1250,"overallLength":1570,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+images:
+  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/03_EPIC/2627_03_EPIC_main.png"
+    kind: face
+    alt: GRAY EPIC 2027 官方商品图
+    source: GRAY 官方 26-27 商品页（图片授权待核）
+    sort_order: 0
+data_source:
+  kind: manual
+  origin_url: https://graysnowboards.co.jp/product-2627-eng/
+  snapshot_url: https://xiaopang.club/api/products/gray-epic-2027
+status: published

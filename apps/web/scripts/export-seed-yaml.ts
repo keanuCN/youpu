@@ -1,8 +1,9 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { stringify as toYaml } from 'yaml';
-import { GEAR } from '@/data/boards';
+import { PROTOTYPE_GEAR } from '@/data/boards';
 import type { GearItem } from '@/types';
+import { selectSeedTargets, toSeedSpecs } from './seed-specs';
 
 /**
  * 一次性迁移工具：把原型内容包（src/data）导出为 data/snowboard/*.yaml（seed 导入格式）。
@@ -54,8 +55,6 @@ function toSeed(g: GearItem, index: number) {
   if (!brandSlug) throw new Error(`未知品牌：${g.brand}（请先在 data/brands.yaml 建档）`);
 
   // 原型的 specs 把「官方参考价 / 年款」也当作参数行，本模型中它们是产品列，导出时剔除
-  const { price: _price, year: _year, ...specFields } = g.specs;
-
   const images = g.gallery.map((shot, i) => {
     const kind = SHOT_KIND.find((k) => shot.label.includes(k.match))?.kind ?? 'side';
     return { url: shot.url, kind, alt: `${g.brand} ${g.model} ${shot.label}`, source: '原型素材（AI 生成占位图，上架前替换为实拍/官方图）', sort_order: i };
@@ -71,11 +70,7 @@ function toSeed(g: GearItem, index: number) {
     // 原型没有独立的一句话点评字段，用编辑结论（M2 起由后台维护独立文案）
     one_liner: g.analysis.verdict.slice(0, 200),
     price: { min: g.price, max: g.price, currency: 'CNY' },
-    specs: {
-      ...specFields,
-      // GearItem 级字段归入 specs
-      scenes: g.scenes,
-    },
+    specs: toSeedSpecs(g.specs, g.scenes, g.sizeSpecs),
     // 编辑分项评分独立成列（维度键与 rating_dimensions 对齐）
     editorial_scores: {
       stability: g.scores.stability ?? null,
@@ -96,7 +91,12 @@ function main(): void {
   const outDir = resolve(process.cwd(), '../../data/snowboard');
   mkdirSync(outDir, { recursive: true });
   let count = 0;
-  for (const [i, gear] of GEAR.entries()) {
+  const onlySlugArg = process.argv.indexOf('--slug');
+  const onlySlug = onlySlugArg >= 0 ? process.argv[onlySlugArg + 1] : undefined;
+  const targets = selectSeedTargets(PROTOTYPE_GEAR.map((gear) => ({ slug: productSlug(gear), gear })), onlySlug)
+    .map(({ gear }) => gear);
+  for (const [i, gear] of PROTOTYPE_GEAR.entries()) {
+    if (!targets.includes(gear)) continue;
     const seed = toSeed(gear, i);
     const { _source_index: _drop, ...payload } = seed;
     const header = [
@@ -107,10 +107,10 @@ function main(): void {
     writeFileSync(resolve(outDir, `${payload.slug}.yaml`), header + toYaml(payload, { lineWidth: 120 }), 'utf8');
     count += 1;
   }
-  console.log(`已导出 ${count} 个产品 YAML 到 ${outDir}`);
-  console.log(`其中品牌：${[...new Set(GEAR.map((g) => BRAND_SLUG[g.brand]))].join(', ')}`);
+  console.log(`已导出 ${count} 个产品 YAML 到 ${outDir}${onlySlug ? `（仅 ${onlySlug}）` : ''}`);
+  console.log(`其中品牌：${[...new Set(PROTOTYPE_GEAR.map((g) => BRAND_SLUG[g.brand]))].join(', ')}`);
   console.log('板型族判定（来源：内容包 specs.profileFamily，规则见 data/categories.ts profileFamilyOf；人工过目）：');
-  for (const g of GEAR) {
+  for (const g of PROTOTYPE_GEAR) {
     console.log(`  ${g.id}  ${String(g.specs.profileFamily).padEnd(6)} ← ${String(g.specs.profile ?? '')}`);
   }
 }

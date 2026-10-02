@@ -4,8 +4,30 @@ brand: decathlon
 model: SNB 100
 year: 2026
 title: DREAMSCAPE SNB 100 2026
-one_liner: DREAMSCAPE 入门全山地雪板系列，按男女款分别展示；本记录不把不同款式和尺码的参数合并。
+one_liner: DREAMSCAPE 入门全山地男款，平底与长摇杆、软 flex 3/10、方向性双向板型；加拿大官网原价 CAD $220，按 2026-10-02 参考汇率 1 CAD≈¥4.7121 折算约 ¥1,037 CNY（非中国售价）。规格以 152cm 为例。
+editorial_scores:
+  stability: 4.4
+  response: 4.3
+  float: 4.2
+  park: 5.7
+  forgiveness: 9.0
+  value: 9.2
+price:
+  min: 1037
+  max: 1037
+  currency: CNY
 specs:
+  length: 152
+  sidecut: 8.2
+  waistWidth: 250
+  stanceSetback: 20
+  profile: Flat Camber + Long Rocker
+  profileFamily: hybrid
+  shape: Directional Twin
+  core: 20mm poplar wood
+  base: Extruded
+  flex: 3
+  weight: 2767
   scenes:
     - beginner
     - all-mountain

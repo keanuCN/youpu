@@ -25,18 +25,140 @@ specs:
   scenes:
     - freestyle
     - all-mountain
+  sizeSpecs:
+    - size: "148"
+      widthVariant: standard
+      effectiveEdgeMm: 1150
+      waistWidthMm: 248
+      noseWidthMm: 290
+      tailWidthMm: 290
+      taperMm: 0
+      sidecutRadiusM: 7.7
+      referenceStanceMm: 508
+      recommendedRiderWeightLb: [100, 150]
+      recommendedRiderWeightKg: [45, 68]
+      suggestedBoot: M 6–9.5
+    - size: "150"
+      widthVariant: standard
+      effectiveEdgeMm: 1170
+      waistWidthMm: 250
+      noseWidthMm: 293
+      tailWidthMm: 293
+      taperMm: 0
+      sidecutRadiusM: 7.8
+      referenceStanceMm: 533
+      recommendedRiderWeightLb: [100, 150]
+      recommendedRiderWeightKg: [45, 68]
+      suggestedBoot: M 6–9.5
+    - size: "152"
+      widthVariant: standard
+      effectiveEdgeMm: 1185
+      waistWidthMm: 252
+      noseWidthMm: 295
+      tailWidthMm: 295
+      taperMm: 0
+      sidecutRadiusM: 7.9
+      referenceStanceMm: 533
+      recommendedRiderWeightLb: [100, 160]
+      recommendedRiderWeightKg: [45, 72]
+      suggestedBoot: M 6–9.5
+    - size: "154"
+      widthVariant: standard
+      effectiveEdgeMm: 1188
+      waistWidthMm: 254
+      noseWidthMm: 297
+      tailWidthMm: 297
+      taperMm: 0
+      sidecutRadiusM: 8.0
+      referenceStanceMm: 533
+      recommendedRiderWeightLb: [120, 180]
+      recommendedRiderWeightKg: [54, 81]
+      suggestedBoot: M 8–10
+    - size: "156"
+      widthVariant: standard
+      effectiveEdgeMm: 1220
+      waistWidthMm: 255
+      noseWidthMm: 299
+      tailWidthMm: 299
+      taperMm: 0
+      sidecutRadiusM: 8.1
+      referenceStanceMm: 559
+      recommendedRiderWeightLb: [130, 190]
+      recommendedRiderWeightKg: [59, 86]
+      suggestedBoot: M 8–10
+    - size: "158"
+      widthVariant: standard
+      effectiveEdgeMm: 1245
+      waistWidthMm: 258
+      noseWidthMm: 302
+      tailWidthMm: 302
+      taperMm: 0
+      sidecutRadiusM: 8.3
+      referenceStanceMm: 559
+      recommendedRiderWeightLb: [140, 200]
+      recommendedRiderWeightKg: [63, 90]
+      suggestedBoot: M 8–10
+    - size: "154W"
+      widthVariant: wide
+      effectiveEdgeMm: 1200
+      waistWidthMm: 258
+      noseWidthMm: 301
+      tailWidthMm: 301
+      taperMm: 0
+      sidecutRadiusM: 8.0
+      referenceStanceMm: 533
+      recommendedRiderWeightLb: [130, 190]
+      recommendedRiderWeightKg: [59, 86]
+      suggestedBoot: M 10+
+    - size: "156W"
+      widthVariant: wide
+      effectiveEdgeMm: 1220
+      waistWidthMm: 260
+      noseWidthMm: 304
+      tailWidthMm: 304
+      taperMm: 0
+      sidecutRadiusM: 8.1
+      referenceStanceMm: 559
+      recommendedRiderWeightLb: [130, 190]
+      recommendedRiderWeightKg: [59, 86]
+      suggestedBoot: M 10+
+    - size: "158W"
+      widthVariant: wide
+      effectiveEdgeMm: 1230
+      waistWidthMm: 264
+      noseWidthMm: 308
+      tailWidthMm: 308
+      taperMm: 0
+      sidecutRadiusM: 8.3
+      referenceStanceMm: 559
+      recommendedRiderWeightLb: [130, 190]
+      recommendedRiderWeightKg: [59, 86]
+      suggestedBoot: M 10+
+    - size: "160W"
+      widthVariant: wide
+      effectiveEdgeMm: 1250
+      waistWidthMm: 268
+      noseWidthMm: 312
+      tailWidthMm: 312
+      taperMm: 0
+      sidecutRadiusM: 8.4
+      referenceStanceMm: 584
+      recommendedRiderWeightLb: [100, 150]
+      recommendedRiderWeightKg: [45, 68]
+      suggestedBoot: M 10+
+      sourceAnomaly: Official page prints 100-150 lb / 45-68 kg for the 160W; preserved verbatim and flagged, not silently corrected.
 editorial_scores:
   stability: 7.0
   response: 7.2
-  float: 5.8
+  float: 4.8
   park: 8.6
-  forgiveness: 7.8
+  forgiveness: 8.0
   value: 8.2
 images:
   - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST03-DARK-HORSE-TOP.png?v=1776884600"
     kind: face
     alt: CAPiTA Dark Horse 2027 官方产品图
-    source: CAPiTA 官方产品页图片（本地演示，版权待核）
+    source: CAPiTA 官方北美 2027 产品页图片（复用授权待核）
     sort_order: 0
 data_source:
   kind: crawl

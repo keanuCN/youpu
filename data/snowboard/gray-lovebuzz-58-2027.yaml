@@ -1,0 +1,41 @@
+slug: gray-lovebuzz-58-2027
+category: snowboard
+brand: gray
+model: LOVEBUZZ 58
+year: 2027
+title: GRAY LOVEBUZZ 58 2027
+one_liner: 158cm 全山地自由滑型号，低拱、长板头、大侧切半径与新月形板尾，覆盖雪道巡航到粉雪地形。日本官方含税 MSRP ¥93,500，按 2026-10-02 参考汇率折算约 ¥3,968 CNY（非中国零售价）。
+editorial_scores:
+  stability: 7.0
+  response: 7.0
+  float: 7.7
+  park: 6.8
+  forgiveness: 7.2
+  value: 8.0
+price:
+  min: 3968
+  max: 3968
+  currency: CNY
+specs:
+  length: 158
+  core: 2-ply 50/50 Paulownia Core
+  shape: Directional
+  scenes:
+    - all-mountain
+    - powder
+    - carving
+  profile: Single Camber
+  profileFamily: camber
+  sizeSpecs:
+    - {"base":"P-TEX 3000 Graphite","edge":"1.8 mm stainless","size":"58","camber":7,"setback":40,"insertQty":"12+12","noseWidth":300,"stiffness":"7.5/8.5/8.0","tailWidth":282,"noseHeight":48.7,"noseLength":280,"tailHeight":20.4,"tailLength":120,"waistWidth":254,"stanceWidth":"500–620","sidecutRadii":"9900/8900/9500","contactLength":1180,"effectiveEdge":1240,"overallLength":1580,"sidecutOffset":-80,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+images:
+  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/11_LOVEBUZZ%2058/2627_11_LOVEBUZZ%2058_main.png"
+    kind: face
+    alt: GRAY LOVEBUZZ 58 2027 官方商品图
+    source: GRAY 官方 26-27 商品页（图片授权待核）
+    sort_order: 0
+data_source:
+  kind: manual
+  origin_url: https://graysnowboards.co.jp/product-2627-eng/
+  snapshot_url: https://xiaopang.club/api/products/gray-lovebuzz-58-2027
+status: published

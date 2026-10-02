@@ -4,8 +4,20 @@ brand: salomon
 model: Assassin Pro
 year: 2027
 title: Salomon Assassin Pro 2027
-one_liner: 全山与自由式兼顾的进阶型号，Rock Out Camber、Ghost Carbon Beams 与 Gunslinger Sidewalls 面向高响应滑行。
+one_liner: 全山与自由式兼顾的进阶型号，Rock Out Camber、Ghost Carbon Beams 与 Gunslinger Sidewalls 面向高响应滑行。2027 美区零售标价 $699.95，按项目 USD/CNY 目录汇率折算。
+editorial_scores:
+  stability: 8.6
+  response: 8.8
+  float: 7.4
+  park: 8.0
+  forgiveness: 6.5
+  value: 6.3
+price:
+  min: 5040
+  max: 5040
+  currency: CNY
 specs:
+  length: 150
   waistWidth: 248
   sidecut: 7.3
   profile: Rock Out Camber
@@ -16,6 +28,56 @@ specs:
     - all-mountain
     - freestyle
     - powder
+  sizeSpecs:
+    - size: "150"
+      widthVariant: standard
+      noseWidthMm: 291
+      waistWidthMm: 248
+      tailWidthMm: 291
+      sidecutRadiusM: 7.3
+      boardWeightKg: 2.5
+    - size: "153"
+      widthVariant: standard
+      noseWidthMm: 295
+      waistWidthMm: 251
+      tailWidthMm: 295
+      sidecutRadiusM: 7.5
+      boardWeightKg: 2.58
+    - size: "156"
+      widthVariant: standard
+      noseWidthMm: 298
+      waistWidthMm: 253
+      tailWidthMm: 298
+      sidecutRadiusM: 7.7
+      boardWeightKg: 2.65
+    - size: "158W"
+      widthVariant: wide
+      noseWidthMm: 309
+      waistWidthMm: 263
+      tailWidthMm: 309
+      sidecutRadiusM: 8.0
+      boardWeightKg: 2.82
+    - size: "159"
+      widthVariant: standard
+      noseWidthMm: 301
+      waistWidthMm: 255
+      tailWidthMm: 301
+      sidecutRadiusM: 7.9
+      boardWeightKg: 2.75
+    - size: "162"
+      widthVariant: standard
+      noseWidthMm: 305
+      waistWidthMm: 258
+      tailWidthMm: 305
+      sidecutRadiusM: 8.1
+      boardWeightKg: 2.85
+    - size: "163W"
+      widthVariant: wide
+      noseWidthMm: 313
+      waistWidthMm: 266
+      tailWidthMm: 313
+      sidecutRadiusM: 8.2
+      boardWeightKg: 2.95
 images:
   - url: "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p"
     kind: face
@@ -24,6 +86,6 @@ images:
     sort_order: 0
 data_source:
   kind: official
-  origin_url: https://www.salomon.com/en-gb/product/assassin-pro-li1301
+  origin_url: https://www.salomon.com/en-us/product/assassin-pro-li1301/L49292000
   snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
 status: published

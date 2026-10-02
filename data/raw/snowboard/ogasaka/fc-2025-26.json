@@ -1,0 +1,91 @@
+{
+  "brand": "OGASAKA",
+  "model": "FC",
+  "season": "2025-26",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.ogasaka-snowboard.com/product_25_08_fc.html",
+      "retrievedAt": "2026-10-02",
+      "evidence": "Official season-specific model page identifies FC as a semi-hammerhead freestyle freecarving board for intermediate through expert riders, and provides construction by size range, product positioning, and a complete geometry table for seven standard and three wide sizes.",
+      "priceJPY": {
+        "standardTaxExclusive": 115000,
+        "standardTaxInclusive": 126500,
+        "wideTaxExclusive": 117000,
+        "wideTaxInclusive": 128700,
+        "note": "Japanese domestic list price, not China-market pricing. Existing seed CNY 5370 is a project FX-normalized estimate based on standard-size JPY 126500, not a verified Chinese offer."
+      },
+      "constructionAsPrinted": {
+        "core": "BX Core for 145-151; OGK2 Core for 154-163; OGK Core for 157W-163W",
+        "reinforcement": "Glass Fiber + Carbon Ribbon Narrow for 145-151; Glass Fiber + Carbon Ribbon Wide for 154-163W",
+        "topsheet": "PA",
+        "pcPlate": "Type-S",
+        "edge": "Stainless",
+        "base": "Sintered Graphite",
+        "baseFinish": "Sanding Finish (convex sole)"
+      },
+      "productCopySummary": "The manufacturer positions FC as a semi-hammerhead freestyle carving board with a long effective edge, strong edge grip and turn stability. For 25-26 all sizes receive a PA topsheet and flex-balance adjustment; 145/148/151 are a new shape with new BX Core and full model redesign. This is manufacturer positioning, not independent ride-test evidence."
+    },
+    "historical24_25RideReview": {
+      "url": "https://kokudanblog.com/ogasaka-fc-evaluation/",
+      "title": "〖24-25 OGASAKA FC レビュー〗FCユーザーが評価！中級者がFC-Sより選ぶべき理由",
+      "publishedAt": "2025-11-28",
+      "hostNote": "Review includes affiliate/product-promotion disclosure. The reviewer reports 20 years of snowboarding and long-term personal FC ownership, but the ratings are explicitly their subjective intermediate-carving/beginner-trick scale, not standardized testing.",
+      "sample": "24-25 OGASAKA FC 157 cm at a Meihō ski-area demo in early March; reviewer normally rides an older FC 154. The article says the demo day was below freezing with favorable groomed snow, not ice or spring slush. Exact calendar year, test duration, number of runs, and rider body/boot specifications are not stated.",
+      "observations": "Strong perceived stability and smooth edge hold through carving; quick edge engagement and easy-to-enjoy turns, but heel-side turn completion requires deliberate fore/aft pressure movement. Long effective edge makes low-speed sliding and freestyle tricks less nimble than a round board. Reviewer describes the tested model as lighter than their older FC 154.",
+      "publishedSubjectiveRatings": {"carvingStabilityOutOf100":85,"groundTricksAndPlayfulnessOutOf100":40,"intermediateEaseOutOf100":80,"valueOutOf100":80},
+      "limitations": "This is a 24-25 size-157 sample, not the seed's 25-26 size 157. OGASAKA's 25-26 product page says all sizes receive a PA topsheet and flex-balance adjustment, so prior-season ride feel is historical context only. Do not map the review's dimensions or scores numerically to the site's six editorial dimensions; no direct powder or park testing is reported."
+    },
+    "seasonalModelComparisonNotRideTest": {
+      "url": "https://www.snowsheeps.com/ogasaka-snowboard/",
+      "title": "〖25-26〗オガサカスノーボード・カービングにおすすめの3枚（CT/FC/FC-S）を徹底比較！",
+      "publishedAt": "2025-12-23",
+      "authorContext": "The author identifies as a current snowboard instructor with over 20 years of experience and reports using the three model families for certification testing; the page includes affiliate links.",
+      "seasonAndClaims": "The article explicitly labels its product comparison as 2025-26 and presents relative suitability across CT, FC, and FC-S. It describes FC as a semi-hammer carving-oriented board with strong edge grip/stability and less low-speed maneuverability than round boards.",
+      "testDisclosure": "The article gives no exact tested FC production season, representative sample size, test date, snow conditions, or controlled target-season ride protocol. The comparison table says its aggregate score measures versatility across rider levels, not board performance, and its category marks/rating are not empirical measurements.",
+      "scoreUse": "Use only as a season-labeled secondary description of product positioning; do not treat it as a verified 25-26 FC 157 ride test or map its relative category marks/aggregate rating to the site's six editorial scores. It does not resolve the need for direct 25-26 ride evidence."
+    }
+  },
+  "units": {
+    "size": "cm",
+    "effectiveEdge": "mm; source heading EF.EDGE.L",
+    "contactLength": "mm; source heading CO.L, kept distinct from effective edge",
+    "noseWidth": "mm",
+    "waistWidth": "mm",
+    "tailWidth": "mm",
+    "sidecutRadii": "m; source prints two radii per size, retained in source order without inferring a third",
+    "setback": "mm; distance as printed",
+    "stance": "mm; source heading STANCE"
+  },
+  "standardSizes": [
+    {"size":145,"effectiveEdge":1170,"contactLength":1090,"noseWidth":278,"waistWidth":233,"tailWidth":275,"sidecutRadiiM":[7.7,7.3],"setbackMm":23,"stanceMm":460,"version":"New Shape","core":"BX Core","reinforcement":"Carbon Ribbon Narrow"},
+    {"size":148,"effectiveEdge":1200,"contactLength":1120,"noseWidth":282,"waistWidth":236,"tailWidth":279,"sidecutRadiiM":[7.9,7.5],"setbackMm":24,"stanceMm":480,"version":"New Shape","core":"BX Core","reinforcement":"Carbon Ribbon Narrow"},
+    {"size":151,"effectiveEdge":1230,"contactLength":1140,"noseWidth":286,"waistWidth":238,"tailWidth":283,"sidecutRadiiM":[8.0,7.6],"setbackMm":25,"stanceMm":500,"version":"New Shape","core":"BX Core","reinforcement":"Carbon Ribbon Narrow"},
+    {"size":154,"effectiveEdge":1250,"contactLength":1160,"noseWidth":294,"waistWidth":246,"tailWidth":291,"sidecutRadiiM":[8.3,7.9],"setbackMm":27,"stanceMm":540,"version":"New Topsheet","core":"OGK2 Core","reinforcement":"Carbon Ribbon Wide"},
+    {"size":157,"effectiveEdge":1280,"contactLength":1200,"noseWidth":296,"waistWidth":249,"tailWidth":293,"sidecutRadiiM":[8.8,8.4],"setbackMm":28,"stanceMm":560,"version":"New Topsheet","core":"OGK2 Core","reinforcement":"Carbon Ribbon Wide"},
+    {"size":160,"effectiveEdge":1310,"contactLength":1230,"noseWidth":300,"waistWidth":252,"tailWidth":297,"sidecutRadiiM":[9.0,8.6],"setbackMm":29,"stanceMm":560,"version":"New Topsheet","core":"OGK2 Core","reinforcement":"Carbon Ribbon Wide"},
+    {"size":163,"effectiveEdge":1340,"contactLength":1270,"noseWidth":302,"waistWidth":254,"tailWidth":299,"sidecutRadiiM":[9.3,8.9],"setbackMm":30,"stanceMm":580,"version":"New Topsheet","core":"OGK2 Core","reinforcement":"Carbon Ribbon Wide"}
+  ],
+  "wideSizes": [
+    {"size":"157W","effectiveEdge":1270,"contactLength":1200,"noseWidth":307,"waistWidth":258,"tailWidth":304,"sidecutRadiiM":[8.4,8.0],"setbackMm":28,"stanceMm":560,"version":"New Topsheet","core":"OGK Core","reinforcement":"Carbon Ribbon Wide"},
+    {"size":"160W","effectiveEdge":1300,"contactLength":1230,"noseWidth":312,"waistWidth":262,"tailWidth":309,"sidecutRadiiM":[8.5,8.0],"setbackMm":29,"stanceMm":560,"version":"New Topsheet","core":"OGK Core","reinforcement":"Carbon Ribbon Wide"},
+    {"size":"163W","effectiveEdge":1330,"contactLength":1270,"noseWidth":311,"waistWidth":265,"tailWidth":307,"sidecutRadiiM":[9.7,9.2],"setbackMm":30,"stanceMm":580,"version":"New Topsheet","core":"OGK Core","reinforcement":"Carbon Ribbon Wide"}
+  ],
+  "seedMappingNotes": [
+    "The seed representative size is 157 cm. Its official row confirms effectiveEdge 1280 mm, contactLength 1200 mm, waistWidth 249 mm, nose/tail widths 296/293 mm, two-radius sidecut 8.8/8.4 m, setback 28 mm and stance 560 mm.",
+    "Official FC sidecut rows print two values, unlike the three-value OGASAKA CT table. Preserve exactly two values; do not synthesize a third radius.",
+    "The official source assigns OGK2 Core and Carbon Ribbon Wide to standard 154-163, including 157. The size-specific official statement supersedes unsized generic seed labels for this representative size.",
+    "Official product page does not provide board weight. No weight is inferred.",
+    "Official product image reuse rights are not established; keep the seed image provenance caveat."
+  ],
+  "scoringEvidence": {
+    "currentSiteScores": {"stability":9.0,"response":9.2,"float":5.8,"park":3.4,"forgiveness":4.7,"value":6.8},
+    "decision": "Retain all current site scores. The historical 24-25 size-157 ride account directionally supports carving stability and grip, and describes reduced low-speed sliding/playfulness, but the target 25-26 model received PA topsheet and flex-balance changes. The source's own 85/40/80/80 ratings are an explicitly subjective intermediate-carver scale and are not mapped to the site's six dimensions. No direct target-season test or powder/park test was verified; do not infer numerical deltas.",
+    "confidence": "Low for all six target-season values. Stability/response/park have only cross-season directional context; float lacks direct powder evidence; forgiveness lacks controlled target-season evidence; value uses Japanese MSRP FX-normalized to CNY rather than a verified China-market offer. A season-labeled instructor comparison was reviewed but excluded from score calibration because it discloses no exact target-season sample or ride-test protocol and explicitly frames its aggregate as versatility, not performance."
+  },
+  "unresolved": [
+    "Japan domestic list price is not a China local retail price; seed CNY is an FX-normalized estimate.",
+    "Exact production-weight data is absent from the retrieved official page.",
+    "Official product photography reuse authorization is unverified.",
+    "No verified 25-26 target-season on-snow test was located in this review pass. The available explicit FC ride sample is 24-25/157 cm and predates the official 25-26 PA-topsheet/flex-balance update; retain it only as historical context."
+  ]
+}

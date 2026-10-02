@@ -1,0 +1,101 @@
+{
+  "brand": "Never Summer",
+  "model": "Proto Slinger",
+  "season": "2024-25 (marketed as 2025)",
+  "seedFile": "data/snowboard/never-summer-proto-slinger-2025.yaml",
+  "retrievedAt": "2026-10-02",
+  "sources": {
+    "official2025Collection": {
+      "url": "https://neversummer.com/collections/2025-snowboards",
+      "title": "2025 Snowboards",
+      "evidence": "Identifies Proto Slinger as part of Never Summer's 2025 snowboard lineup."
+    },
+    "officialSizeChart": {
+      "url": "https://neversummer.com/pages/mens-proto-slinger-size-chart",
+      "title": "Men's Proto Slinger Size Chart",
+      "evidence": "Official chart publishes five exact size rows (149, 153, 156, 154x, 157x) and columns WAIST, EDGE, SIDECUT, NOSE/TAIL. Values are preserved below in source order; note says '*multiple radius average' and '*no taper'. It does not define EDGE as effective edge, or map VARIO radii to toe/heel."
+    },
+    "official2025ProductVideo": {
+      "url": "https://www.youtube.com/watch?v=YCj-ctkJC1w",
+      "title": "Men's 2025 Proto Slinger Snowboard | Never Summer Industries",
+      "evidence": "Manufacturer-published 2025 product overview identifies Original Rocker Camber, twin tip, Carbon VXR Laminate Technology, asymmetrical sidecut, and Press Flex core taper."
+    },
+    "evo2025ProductDetails": {
+      "url": "https://www.evo.com/products/254788-never-summer-proto-slinger-snowboard-2025",
+      "title": "Never Summer Proto Slinger Snowboard 2025",
+      "hostNote": "US retailer; season-specific secondary source, not manufacturer-hosted.",
+      "evidence": "Lists flex 4/10, dampness 4/10, Shock Wave Rocker Camber, NS Superlight Wood Core (poplar/paulownia/birch), Carbon VXR, and DuraSurf XT 5501 sintered base. Its size specs map the official chart's EDGE and VARIO numbers to effective edge in mm and the two ordered sidecut radii in meters."
+    },
+    "boardOfTheWorld2025Test": {
+      "url": "https://www.boardoftheworld.com/never-summer-proto-slinger-review/",
+      "title": "2025 Never Summer Proto Slinger Review",
+      "evidence": "Tester reports riding a 153 cm 2025 sample at an on-snow demo on 2024-01-31. Describes easy steering, pressability, jumps/pop, carving/edge grip and smooth ride; limits include deep powder and aggressive carving. Publishes separate ratings, but those are not linearly mapped to this site's six editorial dimensions."
+    },
+    "snowboardingProfilesReview": {
+      "url": "https://snowboardingprofiles.com/never-summer-proto-slinger-review-freestyle-snowboard",
+      "title": "Never Summer Proto Slinger Review (2024-2025 page)",
+      "evidence": "Page identifies 2025 as the final Proto Slinger season and describes its freestyle role. However, disclosed demo sample was a 2021 156 cm board ridden 2020-02-29; its 91.3/100 score and subscores are not treated as a direct 2025 test or converted into local editorial scores."
+    }
+  },
+  "units": {
+    "officialSizeChart.waist": "cm as printed; converted to mm for seed",
+    "officialSizeChart.edge": "cm as printed; kept as source EDGE in rows; seed effectiveEdge mapping is cross-checked against the season-specific evo technical table",
+    "officialSizeChart.sidecut": "Original VARIO numbers retained verbatim. evo table confirms corresponding values in m; source order kept without toe/heel mapping.",
+    "officialSizeChart.noseTail": "cm as printed; identical nose/tail width confirmed by the season-specific evo table and converted to mm for sizeSpecs"
+  },
+  "product": {
+    "use": "Freestyle / park-oriented twin; manufacturer also markets broad resort use",
+    "shape": "Twin tip; asymmetrical sidecut (ride-test secondary source calls it asymmetrical twin)",
+    "profile": "Manufacturer calls it Original Rocker Camber; season retailer uses Shock Wave Rocker Camber",
+    "core": "Season-specific retailer lists NS Superlight Wood Core: poplar, paulownia, birch; manufacturer video separately names Press Flex core taper",
+    "laminate": "Carbon VXR Laminate Technology (manufacturer video)",
+    "base": "DuraSurf XT 5501 sintered (season-specific retailer; not confirmed in retrieved manufacturer copy)",
+    "brandFlex": "4/10 and damping 4/10 from season-specific retailer product detail; video describes flex as soft",
+    "centeredStance": "Independent 2025 sample review describes centered stance; setback 0 in seed is an editorial representation, not a figure printed in official size chart.",
+    "officialBoardWeightAvailable": false,
+    "localCnyPriceVerified": false,
+    "imageReusePermissionVerified": false
+  },
+  "sizeRows": [
+    {"size":"149","widthVariant":"standard","waistCm":24.7,"edgeCm":113,"sidecutOriginal":"VARIO 735/657*","sidecutRadiiM":[7.35,6.57],"noseTailCm":29.2,"effectiveEdgeMm":1130,"waistWidthMm":247,"noseWidthMm":292,"tailWidthMm":292},
+    {"size":"153","widthVariant":"standard","waistCm":25.0,"edgeCm":117,"sidecutOriginal":"VARIO 783/701*","sidecutRadiiM":[7.83,7.01],"noseTailCm":29.5,"effectiveEdgeMm":1170,"waistWidthMm":250,"noseWidthMm":295,"tailWidthMm":295},
+    {"size":"156","widthVariant":"standard","waistCm":25.3,"edgeCm":119,"sidecutOriginal":"VARIO 818/736*","sidecutRadiiM":[8.18,7.36],"noseTailCm":29.8,"effectiveEdgeMm":1190,"waistWidthMm":253,"noseWidthMm":298,"tailWidthMm":298},
+    {"size":"154x","widthVariant":"wide","waistCm":25.8,"edgeCm":117,"sidecutOriginal":"VARIO 786/703*","sidecutRadiiM":[7.86,7.03],"noseTailCm":30.3,"effectiveEdgeMm":1170,"waistWidthMm":258,"noseWidthMm":303,"tailWidthMm":303},
+    {"size":"157x","widthVariant":"wide","waistCm":26.2,"edgeCm":120,"sidecutOriginal":"VARIO 823/737*","sidecutRadiiM":[8.23,7.37],"noseTailCm":30.7,"effectiveEdgeMm":1200,"waistWidthMm":262,"noseWidthMm":307,"tailWidthMm":307}
+  ],
+  "pricing": {
+    "seed": {
+      "amount": 5499,
+      "currency": "CNY",
+      "source": null,
+      "note": "Retained as existing editorial/catalog value. No dated Chinese-market source, price type (MSRP/retail/sale), or collection provenance was established in this pass."
+    },
+    "externalPriceNote": "2025 reviews/retailer pages show differing USD prices and dynamic market offers; none was converted to CNY or used to replace the seed value."
+  },
+  "scoringEvidence": {
+    "boardOfTheWorld2025Test": {
+      "testBoard": "2025 model, 153 cm",
+      "testDate": "2024-01-31",
+      "observations": "Easy to ride/steer, pressable for rails and buttering, adequate pop for medium jumps, capable on groomers; not a deep-powder or aggressive-carving specialist.",
+      "limitations": "One disclosed demo sample and reviewer terrain preference is park; no broad repeated-condition testing. External numerical subratings are not directly mapped to site dimensions."
+    },
+    "siteScoreDecision": "Update six editorial scores directionally from the prior mountain-charger-like profile to stability 7, response 8.5, float 5.5, park 9, forgiveness 8; retain value 7.5 only as a provisional estimate because CNY price provenance is unknown. These remain editorial judgments, not external-score conversion; confidence is low-to-moderate, with float and value especially uncertain."
+  },
+  "imageProvenance": {
+    "seedImages": "AI-generated placeholder assets, not photographs of this product.",
+    "officialReusePermissionVerified": false,
+    "decision": "Leave existing placeholders unchanged; do not imply product-photo authenticity."
+  },
+  "unverifiedSeedFields": [
+    "CNY 5499 price and market/price type/date",
+    "board weight",
+    "three-year warranty as a manufacturer warranty (secondary review says 3 year, but exact terms not checked against manufacturer policy)",
+    "image reuse authorization",
+    "pop score 8 and heat/popularity value"
+  ],
+  "notes": [
+    "The official product image chart prints EDGE, not effective edge. The product detail table at evo for the same model year independently labels matching values as effective edge; this source mapping is recorded, not attributed to Never Summer terminology.",
+    "The official size chart note says multiple radius average and no taper. Exact radii are preserved in source order; toe/heel order is not asserted in the seed string.",
+    "Do not substitute the later Never Summer Llama for the discontinued 2025 Proto Slinger."
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "brand": "OGASAKA",
+  "model": "CT",
+  "season": "2025-26",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.ogasaka-snowboard.com/product_25_03_ct.html",
+      "retrievedAt": "2026-10-02",
+      "evidence": "Official model-specific 25-26 page. Identifies CT as a carving-oriented all-round directional camber board for beginner through expert riders; states a 25-26 sidewall change for standard sizes and gives a complete geometry table for 10 standard sizes and 3 wide sizes.",
+      "priceJPY": {
+        "standardTaxExclusive": 104000,
+        "standardTaxInclusive": 114400,
+        "wideTaxExclusive": 106000,
+        "wideTaxInclusive": 116600,
+        "note": "Japanese domestic list prices, including the displayed tax-inclusive prices. These are not China-market prices. Existing seed CNY 4856 is a project FX-normalized estimate based on the standard tax-inclusive JPY 114400, not a verified Chinese offer."
+      },
+      "constructionAsPrinted": {
+        "core": "NV Core",
+        "reinforcement": "Glass Fiber Carbon Composite",
+        "pcPlate": "Type-S for 143-161; Type-OG1 for 154W-158W",
+        "edge": "Stainless",
+        "base": "Sintered Graphite",
+        "baseFinish": "Sanding Finish (convex sole)"
+      },
+      "productCopySummary": "The maker describes a forgiving, relatively soft-flexing all-round carving board with a broad sweet spot and easy turning, aimed from beginner through expert. The 25-26 standard model changes its sidewall to slightly strengthen grip; wide sizes are unchanged. This is manufacturer positioning, not independent test evidence."
+    },
+    "officialLinkedSeasonCatalog": {
+      "url": "https://snowboardnet.jp/catalognew/ogasaka-2/pageindices/index16.html",
+      "officialAnnouncementUrl": "https://www.ogasaka-snowboard.com/",
+      "announcementDate": "2025-12-25",
+      "catalogTitle": "2025-2026 OGASAKA SNOWBOARDS COLLECTION (user catalog)",
+      "page": "16/40",
+      "hostNote": "The catalog is linked directly from the official OGASAKA Snowboard website's news as its 25-26 user catalog, but the page content is hosted on snowboardnet.jp rather than the brand domain.",
+      "evidence": "The season-specific CT catalog page lists NV Core, Glass Fiber Carbon Composite, Type-S PC plate for 143-161 and Type-OG1 for 154W-158W, consistent with the model-specific 25-26 official product page.",
+      "retrievedAt": "2026-10-02"
+    },
+    "officialTechnologyPage": {
+      "url": "https://www.ogasaka-snowboard.com/tech.html",
+      "retrievedAt": "2026-10-02",
+      "evidence": "The general technology page maps CT to BX Core and CT 158W to BX2 Core, and gives a different PC Plate model mapping from the 25-26 CT product-specific page. It does not expose a season-specific revision date.",
+      "resolution": "This undated general page maps CT differently (BX Core and other PC plate groupings), but both season-specific 25-26 sources—the model product page and OGASAKA-linked 25-26 catalog—agree on NV Core and the season-specific PC plate mapping. Use those values for the 25-26 seed; retain the generic-page discrepancy as a non-season-specific caveat rather than an unresolved target-season fact."
+    },
+    "natoriRideReview2026": {
+      "url": "https://note.com/natori_snowboard/n/n2a85fae5f42c?magazine_key=maa0b01cf91b5",
+      "title": "新型「CT」フレックス調整で何が変わった？OGASAKAボード解説",
+      "publishedAt": "2026-04-16",
+      "hostNote": "Practitioner ride commentary summarized from the author's video, not a standardized multi-rider test. The author profile notes employment with a snowboard manufacturer and subsequent snowboard-brand business; treat the review as informed but not independent laboratory evidence.",
+      "testBoard": "CT 158 cm, with the rider using a 520 mm stance versus the listed 560 mm reference stance. The article discusses the new CT from the current season, so 2025/26 is inferred from publication context; it does not print an explicit factory model-year label.",
+      "conditionsAndDuration": "Exact test date, number of runs/days, snow conditions, and rider body/boot specifications are not disclosed.",
+      "observations": "Compared with the prior CT feel, the tester describes the new board as more compliant/supple and easier to handle while retaining edge grip. They report improved snow-following and less chatter in rough snow, stable turns, and confidence at speed. These are one rider's qualitative impressions, not measured performance values.",
+      "notTestedOrNotEstablished": "No direct powder, park/jump, or controlled forgiveness assessment is provided; do not use the article to calibrate float or park scores or to transfer size-158 specifications/fit to the seed's representative 156.",
+      "authorBackground": "The author profile states snowboard-manufacturer employment beginning in 2004, followed by founding a snowboard-related business in 2010; useful expertise context, but also a reason to retain source/independence caveats."
+    },
+    "natoriDemoDayRoundup2026": {
+      "url": "https://note.com/natori_snowboard/n/n51bfe34ae568",
+      "title": "初めて乗るボード多数！滑って感じたリアルな違いを率直にお伝えします（NOVEMBER／OGASAKA）",
+      "publishedAt": "2026-04-16",
+      "evidence": "The author says this was a current-season demo day at Tangram Ski Circus, and separately reports riding OGASAKA CT 158 cm. Read alongside the 2026-04-16 CT-specific article and 25-26 context, this supports—but does not explicitly print—the 2025/26 season attribution.",
+      "conditionsAndDuration": "For CT, the author says the slope and run length provided a good evaluation setting. The article mentions hard, firm snow for the earlier CT-Twin run, but does not explicitly attribute that surface to the CT run. Exact date, CT run count, duration, weather, and rider body/boot specifications are not disclosed.",
+      "observations": "The author describes the CT 158 as easier to turn than expected, with increased stability and power from the longer size but no heavy handling; they report strong edge hold through the turn. This is a single practitioner's qualitative account, not a standardized rating.",
+      "limits": "This is the same author's same-day companion account, not an independent second rider or independent replication. Test size 158 differs from the seed representative size 156. No direct powder, park/jump, or controlled forgiveness test is documented; do not convert adjectives into numeric score deltas.",
+      "authorBackground": "The author's profile reports snowboard-manufacturer employment from 2004 and snowboard-brand/business work beginning in 2010. This is relevant practitioner experience, alongside commercial/industry ties that limit independence."
+    }
+  },
+  "units": {
+    "size": "cm",
+    "effectiveEdge": "mm; source heading EF.EDGE.L",
+    "contactLength": "mm; source heading CO.L, retained as a distinct field",
+    "noseWidth": "mm",
+    "waistWidth": "mm",
+    "tailWidth": "mm",
+    "sidecutRadii": "m; all three printed radii retained in source order",
+    "setback": "mm; positive distance from center as printed",
+    "stance": "mm; source heading STANCE"
+  },
+  "standardSizes": [
+    {"size":139,"effectiveEdge":1070,"contactLength":1050,"noseWidth":268,"waistWidth":229,"tailWidth":268,"sidecutRadiiM":[7.1,6.7,7.1],"setbackMm":12,"stanceMm":460,"sidewall":"New Sidewall"},
+    {"size":143,"effectiveEdge":1110,"contactLength":1070,"noseWidth":274,"waistWidth":234,"tailWidth":274,"sidecutRadiiM":[7.4,7.1,7.4],"setbackMm":13,"stanceMm":480,"sidewall":"New Sidewall"},
+    {"size":146,"effectiveEdge":1140,"contactLength":1090,"noseWidth":277,"waistWidth":236,"tailWidth":277,"sidecutRadiiM":[7.6,7.3,7.6],"setbackMm":14,"stanceMm":490,"sidewall":"New Sidewall"},
+    {"size":148,"effectiveEdge":1160,"contactLength":1120,"noseWidth":279,"waistWidth":237,"tailWidth":279,"sidecutRadiiM":[7.8,7.5,7.8],"setbackMm":15,"stanceMm":500,"sidewall":"New Sidewall"},
+    {"size":150,"effectiveEdge":1180,"contactLength":1140,"noseWidth":285,"waistWidth":244,"tailWidth":285,"sidecutRadiiM":[8.3,8.0,8.3],"setbackMm":15,"stanceMm":520,"sidewall":"New Sidewall"},
+    {"size":152,"effectiveEdge":1200,"contactLength":1160,"noseWidth":286,"waistWidth":245,"tailWidth":286,"sidecutRadiiM":[8.4,8.1,8.4],"setbackMm":17,"stanceMm":540,"sidewall":"New Sidewall"},
+    {"size":154,"effectiveEdge":1220,"contactLength":1180,"noseWidth":287,"waistWidth":245,"tailWidth":287,"sidecutRadiiM":[8.5,8.2,8.5],"setbackMm":17,"stanceMm":540,"sidewall":"New Sidewall"},
+    {"size":156,"effectiveEdge":1240,"contactLength":1200,"noseWidth":290,"waistWidth":247,"tailWidth":290,"sidecutRadiiM":[8.7,8.4,8.7],"setbackMm":18,"stanceMm":560,"sidewall":"New Sidewall"},
+    {"size":158,"effectiveEdge":1260,"contactLength":1230,"noseWidth":292,"waistWidth":249,"tailWidth":292,"sidecutRadiiM":[8.9,8.6,8.9],"setbackMm":19,"stanceMm":560,"sidewall":"New Sidewall"},
+    {"size":161,"effectiveEdge":1290,"contactLength":1270,"noseWidth":295,"waistWidth":251,"tailWidth":295,"sidecutRadiiM":[9.1,8.8,9.1],"setbackMm":20,"stanceMm":580,"sidewall":"New Sidewall"}
+  ],
+  "wideSizes": [
+    {"size":"154W","effectiveEdge":1220,"contactLength":1180,"noseWidth":297,"waistWidth":255,"tailWidth":297,"sidecutRadiiM":[8.8,8.5,8.8],"setbackMm":17,"stanceMm":540,"sidewall":"No 25-26 sidewall change stated for wide sizes"},
+    {"size":"156W","effectiveEdge":1240,"contactLength":1200,"noseWidth":300,"waistWidth":258,"tailWidth":300,"sidecutRadiiM":[9.1,8.8,9.1],"setbackMm":18,"stanceMm":560,"sidewall":"No 25-26 sidewall change stated for wide sizes"},
+    {"size":"158W","effectiveEdge":1260,"contactLength":1260,"noseWidth":303,"waistWidth":261,"tailWidth":303,"sidecutRadiiM":[9.3,9.0,9.3],"setbackMm":19,"stanceMm":560,"sidewall":"No 25-26 sidewall change stated for wide sizes"}
+  ],
+  "seedMappingNotes": [
+    "The existing seed selects 156 cm; retain that selected representative size rather than silently changing it. The official 156 row supports effectiveEdge 1240 mm, waistWidth 247 mm, sidecut radii 8.7/8.4/8.7 m, setback 18 mm, stance 560 mm, and nose/tail widths 290 mm.",
+    "EF.EDGE.L and CO.L are separate official columns; do not collapse contact length into effective edge.",
+    "The season-specific 25-26 CT product page and the 25-26 catalog linked by OGASAKA both say NV Core and agree on PC Plate mapping. The undated general technology page has a different mapping; it is not used to override the two season-matched sources.",
+    "The official model page does not provide board weight. No weight is inferred.",
+    "Official page images are visible, but reuse/commercial rights are not established; keep the seed image provenance caveat."
+  ],
+  "scoringEvidence": {
+    "currentSiteScores": {"stability":8.0,"response":8.4,"float":6.0,"park":5.6,"forgiveness":7.5,"value":7.4},
+    "decision": "Retain all six existing editorial scores. Two companion writeups by the same practitioner on 2026-04-16 describe riding CT 158 during the current-season Tangram demo period; with the 25-26 context, the evidence is season-consistent but the articles do not print an explicit factory model year. They directionally support strong edge grip, rough-snow composure, stability and easier handling, but are not independent replications, use size 158 rather than the seed's 156, and omit CT-specific test duration and exact conditions. They give no direct powder or park evaluation. Do not map qualitative language to score deltas or any external rating scale.",
+    "confidence": "Low for all numeric dimensions. Stability/response/forgiveness have one practitioner's paired qualitative accounts with incomplete test disclosure; float/park lack direct target-model testing; value is only an FX-normalized Japanese list price, not Chinese-market price evidence."
+  },
+  "unresolved": [
+    "Japan domestic list price is not a China local retail price. The seed CNY value is FX-normalized, not a verified Chinese market price.",
+    "Exact production-weight data is not provided on the retrieved official model page.",
+    "Official product photography reuse authorization is unverified."
+  ]
+}

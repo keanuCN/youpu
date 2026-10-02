@@ -4,15 +4,44 @@ brand: k2
 model: Alchemist
 year: 2027
 title: K2 Alchemist 2027
-one_liner: K2 Landscape 系列旗舰定向野雪板，面向专家滑手，以高速稳定、精准控刃和大山地形为主要方向。
+one_liner: 2027 大改款旗舰定向 freeride 板，S1 Pro Core 与 Recess3D 减轻摆动感、提升腰尾部可操控性；仍偏硬，面向进阶/专家骑手。
+editorial_scores:
+  stability: 9.0
+  response: 9.1
+  float: 8.0
+  park: 4.0
+  forgiveness: 6.0
+  value: 5.7
+price:
+  min: 6120
+  max: 6120
+  currency: CNY
 specs:
+  length: 157
+  effectiveEdge: 1190
+  sidecut: 7.8
+  waistWidth: 250
+  stanceSetback: 19
+  core: S1 Pro Core（Bamboo / Aspen / Paulownia）
+  fiberglass: SpaceGlass 鼻部嵌件 / HyperWeave 全碳双轴编织 / Spectral Braid
+  base: Wax-Infused Sintered 4001
   profile: Directional Camber
   profileFamily: camber
-  shape: Directional
+  shape: Tapered Directional / Traditional Shape
   scenes:
     - all-mountain
     - powder
     - carving
+  sizeSpecs:
+    - {size: "148", effectiveEdge: 1120, noseWidth: 284, waistWidth: 240, tailWidth: 278, sidecutRadii: "6.9 m", stanceWidth: "483 mm (19 in reference)", setback: 19}
+    - {size: "151", effectiveEdge: 1140, noseWidth: 288, waistWidth: 243, tailWidth: 282, sidecutRadii: "7.1 m", stanceWidth: "508 mm (20 in reference)", setback: 19}
+    - {size: "154", effectiveEdge: 1170, noseWidth: 293, waistWidth: 247, tailWidth: 287, sidecutRadii: "7.3 m", stanceWidth: "533 mm (21 in reference)", setback: 19}
+    - {size: "157", effectiveEdge: 1190, noseWidth: 297, waistWidth: 250, tailWidth: 291, sidecutRadii: "7.8 m", stanceWidth: "533 mm (21 in reference)", setback: 19}
+    - {size: "160", effectiveEdge: 1220, noseWidth: 301, waistWidth: 253, tailWidth: 295, sidecutRadii: "8.0 m", stanceWidth: "559 mm (22 in reference)", setback: 19}
+    - {size: "160W", effectiveEdge: 1220, noseWidth: 309, waistWidth: 261, tailWidth: 303, sidecutRadii: "8.0 m", stanceWidth: "559 mm (22 in reference)", setback: 19}
+    - {size: "163", effectiveEdge: 1240, noseWidth: 305, waistWidth: 256, tailWidth: 299, sidecutRadii: "8.1 m", stanceWidth: "584 mm (23 in reference)", setback: 19}
+    - {size: "163W", effectiveEdge: 1240, noseWidth: 315, waistWidth: 264, tailWidth: 307, sidecutRadii: "8.1 m", stanceWidth: "584 mm (23 in reference)", setback: 19}
+    - {size: "166", effectiveEdge: 1270, noseWidth: 312, waistWidth: 262, tailWidth: 306, sidecutRadii: "8.3 m", stanceWidth: "584 mm (23 in reference)", setback: 19}
 images:
   - url: "https://blauerboardshop.com/cdn/shop/files/K2AlchemistSnowboard2027.png?v=1776976538"
     kind: face
@@ -21,6 +50,6 @@ images:
     sort_order: 0
 data_source:
   kind: official
-  origin_url: https://k2snow.com/en-us/landscape-collection
+  origin_url: https://k2snow.com/en-us/p/alchemist-mens-snowboard-kb262025
   snapshot_url: https://thesnowfever.com/list/snowboards?brand=k2
 status: published

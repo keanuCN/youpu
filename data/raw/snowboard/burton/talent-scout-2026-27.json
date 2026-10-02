@@ -1,0 +1,73 @@
+{
+  "brand": "Burton",
+  "model": "Talent Scout Camber",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/burton-talent-scout-2027.yaml",
+  "representativeSize": "146 cm",
+  "officialProduct": {
+    "url": "https://www.burton.com/en-us/products/womens-burton-talent-scout-camber-snowboard-132181",
+    "sku": "27WIN-132181",
+    "price": {
+      "amount": 549.95,
+      "currency": "USD",
+      "market": "United States",
+      "priceType": "official storefront list price",
+      "capturedAt": "2026-10-02",
+      "limit": "Not a mainland-China price and does not independently establish a CNY conversion rate."
+    },
+    "size146": {
+      "waistWidthMm": 240,
+      "runningLengthMm": 1050,
+      "effectiveEdgeMm": 1095,
+      "sidecutRadiusM": 7.04,
+      "stanceLocationMm": 0,
+      "stanceWidthMm": 505,
+      "noseWidthMm": 279.2,
+      "tailWidthMm": 279.2,
+      "sidecutDepthMm": 19.6
+    },
+    "productClaims": {
+      "bend": "Camber",
+      "shape": "Twin",
+      "flex": "Twin Flex",
+      "core": "FSC Certified Super Fly II 700G Core",
+      "fiberglass": "Women's Specific Triax",
+      "base": "Sintered",
+      "mounting": "The Channel",
+      "otherFeatures": ["Pro-Tip", "Infinite Ride"],
+      "warranty": "3 years"
+    },
+    "seasonEvidence": "SKU prefix 27WIN and Burton Winter 2027 page identify the target season."
+  },
+  "scoringEvidence": {
+    "review": {
+      "url": "https://snowboardingprofiles.com/burton-talent-scout-review",
+      "pageUpdatedAt": "2025-09-01",
+      "reviewScope": "The reviewer explicitly says the review has not been updated beyond the 2025 model and that Talent Scout was discontinued for 2025-26 with no direct replacement.",
+      "testedSample": "Burton Talent Scout 2024, 149 cm, waist 242 mm",
+      "testDate": "2023-03-09",
+      "rider": "Meira; 163 cm, 58 kg, women's US 8",
+      "conditions": "One disclosed day on mostly consistent groomed hardpack, becoming slightly cruddy; off-piste was icy/crunchy. No powder test.",
+      "observations": "Good carving and higher-speed stability; slow-speed catchiness and technique-demanding turns; strong pop and jumps; powder conclusions are geometry-based, not tested.",
+      "externalScoreOutOf100": 89.3,
+      "scoreDecision": "Historical 2024 sample only. Do not map the external score or subratings into the site's six dimensions and do not transfer the sample measurement or ride conclusions as verified 2027 behavior."
+    },
+    "2027ModelGap": "Burton's 2027 lineup source says Talent Scout returns after being absent from the 2026 lineup. The 2027 product has official specifications but no verified target-season independent ride test was located in this audit.",
+    "siteScores": {
+      "stability": 7.3,
+      "response": 8.0,
+      "float": 4.6,
+      "park": 9.0,
+      "forgiveness": 6.3,
+      "value": 7.8
+    },
+    "decision": "Retain the current YAML scores as low-confidence editorial estimates. No matching Talent Scout draft exists in apps/web/src/data/boards.ts; do not edit only one side of the prototype/seed score pair. A new target-season ride test and a prototype counterpart are needed before score changes."
+  },
+  "unresolved": [
+    "No independent disclosed 2026-27 test sample found.",
+    "Current CNY 3960 is a converted catalog value, not a verified mainland-China offer.",
+    "Official-image reuse rights remain unverified.",
+    "No matching prototype board entry exists for synchronized score edits."
+  ]
+}

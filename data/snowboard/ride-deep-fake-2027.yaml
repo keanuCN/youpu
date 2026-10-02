@@ -1,0 +1,41 @@
+slug: ride-deep-fake-2027
+category: snowboard
+brand: ride
+model: Deep Fake
+year: 2027
+title: RIDE Deep Fake Snowboard 2027
+one_liner: 高阶定向全山板，主打快速换刃、硬雪抓边与粉雪浮力；美国官网 MSRP $799.95，按项目 USD/CNY 7.2 参考汇率折算，非中国零售价。
+editorial_scores:
+  stability: 9.0
+  response: 9.0
+  float: 7.3
+  park: 4.2
+  forgiveness: 5.4
+  value: 6.1
+price:
+  min: 5760
+  max: 5760
+  currency: CNY
+specs:
+  length: 157
+  effectiveEdge: 1190
+  waistWidth: 251
+  profile: Directional Extra Camber
+  profileFamily: hybrid
+  shape: Directional
+  core: Performance Core（白杨 / 竹 / 泡桐）
+  fiberglass: Pre-Cured Glass
+  base: Sintered Low Friction Race Base
+  scenes:
+    - all-mountain
+    - powder
+images:
+  - url: "https://cdn.media.amplience.net/s/ride/ride_2627_deep-fake_RD261850?w=1200&qlt=90&fmt=auto"
+    kind: face
+    alt: RIDE Deep Fake 2027 官方产品图
+    source: RIDE 官方产品页图片（商用授权状态待核）
+    sort_order: 0
+data_source:
+  kind: crawl
+  origin_url: https://ridesnowboards.com/en-us/p/deep-fake-snowboard-rd261850
+status: published

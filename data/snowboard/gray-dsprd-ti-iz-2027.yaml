@@ -1,0 +1,53 @@
+slug: gray-dsprd-ti-iz-2027
+category: snowboard
+brand: gray
+model: DSPRD Ti [iz]
+year: 2027
+title: GRAY DSPRD Ti [iz] 2027
+one_liner: 26/27 锤头刻滑型号，将 IZANAS 纤维置于芯材下方，并结合上缘 Titanal 金属带、玻纤结构与聚酰胺顶片。日本官方含税 MSRP ¥154,000，按 2026-10-02 参考汇率折算约 ¥6,537 CNY（非中国零售价）。
+editorial_scores:
+  stability: 8.7
+  response: 9.0
+  float: 5.5
+  park: 2.6
+  forgiveness: 4.5
+  value: 6.8
+price:
+  min: 6537
+  max: 6537
+  currency: CNY
+specs:
+  length: 157
+  effectiveEdge: 1360
+  sidecutRadii: 9.8/9.2/10.4 m
+  waistWidth: 246
+  stanceSetback: 30
+  core: Wood Core + IZANAS Fiber
+  fiberglass: Glass + IZANAS beneath core + upper-edge Titanal ribbon
+  base: IS7500 Graphite
+  shape: Directional Hammerhead / TripleRadius
+  scenes:
+    - carving
+  profile: "Single Camber (IIw wide only: Vario Camber)"
+  profileFamily: camber
+  sizeSpecs:
+    - {"base":"IS7500 Graphite","edge":"1.8 mm stainless","size":"I","camber":8,"setback":30,"insertQty":"12+12","noseWidth":278,"tailWidth":275,"noseHeight":38.9,"noseLength":180,"tailHeight":30.8,"tailLength":160,"waistWidth":230,"stanceWidth":"420–540","sidecutRadii":"8200/7600/8600","contactLength":1120,"effectiveEdge":1250,"overallLength":1460,"sidecutOffset":-20,"sidewallAngle":"25°","sidewallColor":"NEON RED"}
+    - {"base":"IS7500 Graphite","edge":"1.8 mm stainless","size":"IIn","camber":10,"setback":30,"insertQty":"12+12","noseWidth":282,"tailWidth":281,"noseHeight":38.9,"noseLength":175,"tailHeight":30.8,"tailLength":155,"waistWidth":232,"stanceWidth":"440–560","sidecutRadii":"8840/8200/9240","contactLength":1180,"effectiveEdge":1310,"overallLength":1510,"sidecutOffset":-20,"sidewallAngle":"25°","sidewallColor":"NEON RED"}
+    - {"base":"IS7500 Graphite","edge":"1.8 mm stainless","size":"II","camber":10,"setback":30,"insertQty":"12+12","noseWidth":294,"tailWidth":287,"noseHeight":38.9,"noseLength":180,"tailHeight":30.8,"tailLength":160,"waistWidth":244,"stanceWidth":"460–580","sidecutRadii":"8840/8200/9240","contactLength":1180,"effectiveEdge":1310,"overallLength":1520,"sidecutOffset":-20,"sidewallAngle":"25°","sidewallColor":"NEON RED"}
+    - {"base":"IS7500 Graphite","edge":"1.8 mm stainless","size":"IIw","camber":10,"setback":30,"insertQty":"12+12","noseWidth":301,"tailWidth":295,"noseHeight":38.9,"noseLength":180,"tailHeight":30.8,"tailLength":160,"waistWidth":252,"stanceWidth":"500–620","sidecutRadii":"9200/8600/9600","contactLength":1200,"effectiveEdge":1330,"overallLength":1540,"sidecutOffset":20,"sidewallAngle":"25°","sidewallColor":"NEON RED"}
+    - {"base":"IS7500 Graphite","edge":"1.8 mm stainless","size":"III","camber":10,"setback":30,"insertQty":"12+12","noseWidth":293,"tailWidth":287,"noseHeight":38.9,"noseLength":180,"tailHeight":30.8,"tailLength":160,"waistWidth":246,"stanceWidth":"500–620","sidecutRadii":"9800/9200/10400","contactLength":1230,"effectiveEdge":1360,"overallLength":1570,"sidecutOffset":20,"sidewallAngle":"25°","sidewallColor":"NEON RED"}
+    - {"base":"IS7500 Graphite","edge":"1.8 mm stainless","size":"IIIw","camber":10,"setback":30,"insertQty":"12+12","noseWidth":299,"tailWidth":293,"noseHeight":39.1,"noseLength":183,"tailHeight":31.2,"tailLength":163,"waistWidth":246,"stanceWidth":"500–620","sidecutRadii":"9800/9200/10400","contactLength":1230,"effectiveEdge":1360,"overallLength":1576,"sidecutOffset":20,"sidewallAngle":"25°","sidewallColor":"NEON RED"}
+    - {"base":"IS7500 Graphite","edge":"1.8 mm stainless","size":"IVw","camber":10,"setback":40,"insertQty":"12+12","noseWidth":301,"tailWidth":293,"noseHeight":38.9,"noseLength":180,"tailHeight":30.8,"tailLength":160,"waistWidth":256,"stanceWidth":"500–620","sidecutRadii":"11600/10800/12200","contactLength":1270,"effectiveEdge":1400,"overallLength":1610,"sidecutOffset":-30,"sidewallAngle":"25°","sidewallColor":"NEON RED"}
+    - {"base":"IS7500 Graphite","edge":"1.8 mm stainless","size":"IV","camber":10,"setback":40,"insertQty":"12+12","noseWidth":289,"tailWidth":281,"noseHeight":45.5,"noseLength":195,"tailHeight":32.6,"tailLength":165,"waistWidth":244,"stanceWidth":"500–620","sidecutRadii":"11600/10800/12200","contactLength":1270,"effectiveEdge":1405,"overallLength":1630,"sidecutOffset":-30,"sidewallAngle":"25°","sidewallColor":"NEON RED"}
+    - {"base":"IS7500 Graphite","edge":"1.8 mm stainless","size":"Vw","camber":10,"setback":60,"insertQty":"12+12","noseWidth":307,"tailWidth":299,"noseHeight":41,"noseLength":185,"tailHeight":32.8,"tailLength":165,"waistWidth":262,"stanceWidth":"520–640","sidecutRadii":"12200/11600/12800","contactLength":1310,"effectiveEdge":1450,"overallLength":1660,"sidecutOffset":-30,"sidewallAngle":"25°","sidewallColor":"NEON RED"}
+images:
+  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/22_DSPRD%20Ti%5Biz%5D/2627_22_DSPRD%20Ti%5Biz%5D_main.png"
+    kind: face
+    alt: GRAY DSPRD Ti [iz] 2027 官方商品图
+    source: GRAY 官方 26-27 商品页（图片授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf
+  snapshot_url: https://xiaopang.club/api/products/gray-dsprd-ti-iz-2027
+status: published

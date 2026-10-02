@@ -4,7 +4,18 @@ brand: salomon
 model: Assassin
 year: 2026
 title: Salomon Assassin 2026
-one_liner: 面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；官网当前页未标明板季。
+one_liner: 面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；25/26 MSRP $649.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥4,680 CNY。
+editorial_scores:
+  stability: 7.7
+  response: 7.8
+  float: 6.8
+  park: 8.1
+  forgiveness: 7.2
+  value: 7.1
+price:
+  min: 4680
+  max: 4680
+  currency: CNY
 specs:
   waistWidth: 248
   sidecut: 7.1

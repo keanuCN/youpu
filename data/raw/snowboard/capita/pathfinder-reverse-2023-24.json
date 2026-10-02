@@ -1,0 +1,119 @@
+{
+  "brand": "CAPiTA",
+  "model": "Pathfinder Reverse",
+  "modelYear": 2024,
+  "season": "2023-24",
+  "legacySeedSlug": "capita-horrorscope-2024",
+  "sources": {
+    "evo2024": {
+      "url": "https://www.evo.com/products/238313-capita-pathfinder-reverse-camber-snowboard-2024",
+      "evidence": "Exact 2024 model listing and SKU EB-238313-1001; Park V2 profile, flex 4/10 on CAPiTA scale, Twin shape, FSC Dual Core (poplar + beech), Special Blend biax fiberglass with Magic Bean resin, ABS1000 sidewalls, Superdrive EX sintruded base, 2x4 inserts and two-year warranty.",
+      "pricingAtCapture": {"listUSD":429.95,"saleUSD":229.99,"availability":"sold out"},
+      "retrievedAt": "2026-10-02",
+      "hostNote": "Retailer listing; not an official CAPiTA historical archive."
+    },
+    "boyne2024": {
+      "url": "https://boynecountrysports.com/products/capita-mens-pathfinder-reverse-snowboard",
+      "evidence": "Exact Pathfinder Reverse 2024 product identity; standard sizes 149/153/157 listing and dimensions for 153: nose/waist/tail 300/254/300 mm, sidecut 7.8 m; Park V2, true twin and Special Blend/Magic Bean/Superdrive EX features.",
+      "pricingAtCapture": {"listUSD":429.95,"saleUSD":257.97,"availability":"sold out"},
+      "retrievedAt": "2026-10-02",
+      "hostNote": "Retailer listing; the current sale/list prices are not Chinese-market quotes."
+    },
+    "backcountry2024": {
+      "url": "https://www.backcountry.com/capita-pathfinder-reverse-snowboard-2024",
+      "evidence": "Search-indexed 2024 tech table for effective edge, waist width, sidecut radius, listed size variants and centered stance/setback. Direct page redirects to a regional access page; treated as corroboration only.",
+      "retrievedAt": "2026-10-02"
+    },
+    "snowleader2024": {
+      "url": "https://www.snowleader.co.uk/en/pathfinder-reverse-2024-CAPI00103.html",
+      "evidence": "Identifies the 2024 model as 2023/24, male/freestyle; full geometry table, 4/10 flex, true twin, Park V2, Dual Core, Magic Bean resin and Superdrive EX. Reports 3000 g for reference size 155, not representative 151.",
+      "retrievedAt": "2026-10-02",
+      "hostNote": "Retailer listing and translated product copy; historical secondary evidence."
+    },
+    "snowboardingDaysParkReview2024": {
+      "url": "https://www.snowboardingdays.com/best-park-snowboards/",
+      "title": "The 13 Best Park Snowboards [2024]",
+      "publishedAt": "2023-08-12",
+      "updatedAt": "2023-12-29",
+      "evidence": "The author says they tested park boards that season and includes CAPiTA Pathfinder Reverse Camber as a first-person pick, describing it as forgiving, pressable, poppy/responsive and fun in the park; notes a loose/squirrely feel at speed. The article does not disclose the exact tested production year, size, date, snow conditions or number of days for this board; use as contemporaneous directional evidence, not a controlled sample record. Its 8.9/10 is the reviewer's overall rating and is not converted to site dimensions.",
+      "hostNote": "Independent editorial review with affiliate links; not manufacturer-hosted."
+    },
+    "snowboardingProfiles2025Sample": {
+      "url": "https://snowboardingprofiles.com/capita-pathfinder-rev-snowboard-review",
+      "title": "Capita Pathfinder Rev Snowboard Review",
+      "testBoard": "2025 CAPiTA Pathfinder Rev, 155 cm",
+      "testDate": "2024-03-07",
+      "seasonRelation": "Next model year versus the seed's 2024 / 2023-24 Pathfinder Reverse; do not call it a same-season test.",
+      "evidence": "Discloses soft-packed groomers with fresh snow and shallow/moderate off-piste powder. Tester describes very easy turn initiation and quick edge-to-edge maneuverability, near-catch-free behavior, easy jib/butter and switch, but weak deep-carve/speed/chunder stability and limited jump confidence at high approach speeds. Review subratings include turns 4.5/5, jibbing 4.5/5, butters 4.5/5, jumps 3.5/5, speed 2.5/5, powder 2.5/5. These are qualitative directional evidence only and are not linearly mapped to site scores.",
+      "limitations": "Adjacent 2025 model-year 155 sample, one disclosed demo date; not the exact 2024 representative 151 sample."
+    }
+  },
+  "units": {
+    "size": "cm",
+    "effectiveEdge": "mm",
+    "waistWidth": "mm",
+    "sidecutRadius": "m",
+    "noseTailWidth": "mm",
+    "referenceStance": "inches",
+    "recommendedRiderWeight": "lb as printed"
+  },
+  "product": {
+    "profile": "Park V2: flat/zero camber through insert zone, reverse camber beyond inserts, Flat Kick nose and tail",
+    "shape": "True Twin",
+    "flex": "4/10 CAPiTA scale",
+    "core": "FSC Certified Dual Core: poplar core with beech stringers",
+    "laminate": "Special Blend biax fiberglass + Magic Bean resin",
+    "sidewalls": "Full ABS1000",
+    "base": "Superdrive EX sintruded",
+    "mounting": "2x4",
+    "warrantyYears": 2
+  },
+  "standardSizes": [
+    {"size":145,"effectiveEdgeMm":1154,"waistWidthMm":246,"sidecutRadiusM":7.4,"noseWidthMm":290,"tailWidthMm":290,"referenceStanceIn":20.0,"riderWeightLb":"80-120"},
+    {"size":147,"effectiveEdgeMm":1171,"waistWidthMm":248,"sidecutRadiusM":7.5,"noseWidthMm":292,"tailWidthMm":292,"referenceStanceIn":20.0,"riderWeightLb":"90-140"},
+    {"size":149,"effectiveEdgeMm":1186,"waistWidthMm":250,"sidecutRadiusM":7.6,"noseWidthMm":295,"tailWidthMm":295,"referenceStanceIn":20.8,"riderWeightLb":"95-150"},
+    {"size":151,"effectiveEdgeMm":1202,"waistWidthMm":252,"sidecutRadiusM":7.7,"noseWidthMm":297,"tailWidthMm":297,"referenceStanceIn":20.8,"riderWeightLb":"100-155"},
+    {"size":153,"effectiveEdgeMm":1218,"waistWidthMm":254,"sidecutRadiusM":7.8,"noseWidthMm":300,"tailWidthMm":300,"referenceStanceIn":20.8,"riderWeightLb":"110-170"},
+    {"size":155,"effectiveEdgeMm":1234,"waistWidthMm":256,"sidecutRadiusM":7.9,"noseWidthMm":303,"tailWidthMm":303,"referenceStanceIn":21.9,"riderWeightLb":"120-180"},
+    {"size":157,"effectiveEdgeMm":1250,"waistWidthMm":258,"sidecutRadiusM":8.0,"noseWidthMm":305,"tailWidthMm":305,"referenceStanceIn":21.9,"riderWeightLb":"140-200+"}
+  ],
+  "wideSizes": [
+    {"size":"151W","effectiveEdgeMm":1202,"waistWidthMm":258,"sidecutRadiusM":7.7,"noseWidthMm":303,"tailWidthMm":303,"referenceStanceIn":20.8,"riderWeightLb":"110-150"},
+    {"size":"153W","effectiveEdgeMm":1218,"waistWidthMm":260,"sidecutRadiusM":7.8,"noseWidthMm":306,"tailWidthMm":306,"referenceStanceIn":20.8,"riderWeightLb":"110-170"},
+    {"size":"155W","effectiveEdgeMm":1234,"waistWidthMm":261,"sidecutRadiusM":7.9,"noseWidthMm":308,"tailWidthMm":308,"referenceStanceIn":21.9,"riderWeightLb":"130-190"},
+    {"size":"157W","effectiveEdgeMm":1250,"waistWidthMm":263,"sidecutRadiusM":8.0,"noseWidthMm":310,"tailWidthMm":310,"referenceStanceIn":21.9,"riderWeightLb":"140-200"},
+    {"size":"159W","effectiveEdgeMm":1265,"waistWidthMm":265,"sidecutRadiusM":8.2,"noseWidthMm":312,"tailWidthMm":312,"referenceStanceIn":21.9,"riderWeightLb":"150-210"},
+    {"size":"162W","effectiveEdgeMm":1298,"waistWidthMm":268,"sidecutRadiusM":8.2,"noseWidthMm":316,"tailWidthMm":316,"referenceStanceIn":23.0,"riderWeightLb":"160-220+"}
+  ],
+  "representativeSize": {
+    "size": 151,
+    "selectionRule": "Median of standard-width sizes 145/147/149/151/153/155/157; wide variants excluded.",
+    "specSource": "Backcountry 2024 size table, cross-checked against Snowleader 2024 full geometry rows and adjacent size/dimension data."
+  },
+  "seedMappingNotes": [
+    "Calendar model year 2024 is listed by Snowleader as 2023/24 season. The official CAPiTA historical archive/catalog matching this exact season was not located; model identity and specifications are supported by retailers.",
+    "Retain the legacy Horrorscope slug for URL/database compatibility, but product display/model should be Pathfinder Reverse 2024. The supposed Horrorscope-to-Pathfinder relationship is described by secondary retailer/industry copy, not asserted as an official name-change statement.",
+    "The 151 standard-size geometry is the median of the seven standard lengths. Do not choose 153 just because some retailers only list/supply it as their reference/default size. Backcountry marks stance/setback as centered, mapped as stanceSetback 0.",
+    "Snowleader reports board weight 3000 g at reference size 155; it is not mapped to the representative size 151. No size-151 board weight verified.",
+    "The CNY 3096 seed figure is a rounded conversion of USD 429.95 using a legacy project reference rate of 7.2; it is not a local Chinese-market listing and is unsuitable as current local price evidence. Preserve only as a labeled estimate pending price schema/provenance improvement.",
+    "Internal damping/pop sliders are editorial 1-10 estimates, not CAPiTA specifications or direct translations of review scales. Pop is set to 7 based on qualitative reports of quick ollies and solid park pop; damping remains a provisional 5 because tests note reduced stability in rough snow but provide no damping-specific measurement.",
+    "Score calibration: response changed 5.9→7.2 and park 8.1→8.5 based on contemporaneous 2024 park-review descriptions and directional 2025 sample observations of easy/quick turning, jib/butter and switch. No external numerical score was converted. Stability 5.8, float 5.5 and forgiveness 9 are retained; value 8.1 is especially provisional because the CNY price is only a legacy USD conversion, not a verified local price.",
+    "Existing seed image is hosted by Boyne Country Sports; ownership/reuse permission is unverified."
+  ],
+  "pricing": {
+    "historicalListUSD": 429.95,
+    "historicalListEvidence": ["evo product listing", "Boyne Country Sports product listing"],
+    "saleUSDObservedAtCapture": {"evo":229.99,"boyne":257.97},
+    "capturedAt": "2026-10-02",
+    "availabilityAtCapture": "Both retailer listings displayed sold-out/unavailable status.",
+    "seedCurrencyCNYApproximation": 3096,
+    "conversion": "USD 429.95 × 7.2 = CNY 3095.64, rounded to 3096; legacy project reference rate, not spot FX or an observed China retail price.",
+    "note": "Do not interpret either the old USD list price or stale retailer markdown as the current local price or MSRP without official/catalog evidence and matching price dates."
+  },
+  "scoringEvidence": {
+    "siteScoresBefore": {"stability":5.8,"response":5.9,"float":5.5,"park":8.1,"forgiveness":9,"value":8.1},
+    "siteScoresAfter": {"stability":5.8,"response":7.2,"float":5.5,"park":8.5,"forgiveness":9,"value":8.1},
+    "decision": "Raise response and park modestly from specific ease-of-turning, quick edge transition, press/jib/butter/switch observations. Keep stability low given speed/chunder/jump-approach limits. Keep float low and uncertain because powder exposure was shallow/moderate and both reviews suggest deep-powder limits. Forgiveness remains high and directionally supported. Do not change value until a local price source exists.",
+    "confidence": "Low-to-moderate overall: the contemporaneous 2024 review lacks per-board test metadata, and the detailed 155 cm test is 2025 model year, one year newer than this seed."
+  }
+}

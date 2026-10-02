@@ -4,22 +4,53 @@ brand: gray
 model: DESPERADO Ti Type-R
 year: 2027
 title: GRAY DESPERADO Ti Type-R 2027
-one_liner: 面向高水平刻滑的金属强化型号，以锤头轮廓、复合侧切和较强边刃支撑为主要特点。
+one_liner: 面向高水平刻滑的锤头板，采用变截面多段侧切、Vario Camber 与 X 形 0.4 mm Titanal；26/27 目录列 11 个标准/宽版尺码，日本官方含税 MSRP ¥198,000–¥209,000（CNY 数值仅作汇率换算，不代表中国零售价）。
+editorial_scores:
+  stability: 9.0
+  response: 9.3
+  float: 6.0
+  park: 2.4
+  forgiveness: 4.4
+  value: 6.0
+price:
+  min: 8405
+  max: 8872
+  currency: CNY
 specs:
-  shape: Directional Hammerhead
+  length: 167
+  shape: Directional Hammerhead / TripleRadius
   profile: Vario Camber
   profileFamily: hybrid
   core: Wood Core
+  fiberglass: 玻纤夹层；X 形 0.4 mm Titanal（官方结构图）
+  base: IS7500 Graphite Sintered
+  widthVariant: wide
+  effectiveEdge: 1490
+  sidecutRadii: 13.2/12.6/14.0 m
+  waistWidth: 270
+  stanceSetback: 60
+  sizeSpecs:
+    - {size: "154 IIIn", overallLength: 1540, effectiveEdge: 1390, contactLength: 1220, waistWidth: 238, sidecutRadii: "9.0/8.6/9.6 m", sidecutOffset: -30, noseLength: 195.0, noseWidth: 306.0, noseHeight: 24.0, tailLength: 125.0, tailWidth: 279.0, tailHeight: 19.3, camber: 9.0, stanceWidth: "440–560 mm", setback: 30, insertQty: "12+12", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "25°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.0 / W 8.7 / T 8.2"}
+    - {size: "155 III", overallLength: 1550, effectiveEdge: 1390, contactLength: 1220, waistWidth: 246, sidecutRadii: "9.0/8.6/9.6 m", sidecutOffset: -30, noseLength: 200.0, noseWidth: 306.0, noseHeight: 25.7, tailLength: 130.0, tailWidth: 287.0, tailHeight: 20.9, camber: 9.0, stanceWidth: "500–620 mm", setback: 30, insertQty: "12+12", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "25°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.4 / W 9.1 / T 8.6"}
+    - {size: "156 IIIw", overallLength: 1560, effectiveEdge: 1390, contactLength: 1220, waistWidth: 254, sidecutRadii: "9.0/8.6/9.6 m", sidecutOffset: -30, noseLength: 205.0, noseWidth: 314.0, noseHeight: 28.0, tailLength: 135.0, tailWidth: 295.0, tailHeight: 22.5, camber: 9.0, stanceWidth: "500–620 mm", setback: 30, insertQty: "12+12", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "25°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.4 / W 9.1 / T 8.6"}
+    - {size: "159 IV", overallLength: 1590, effectiveEdge: 1430, contactLength: 1260, waistWidth: 248, sidecutRadii: "9.6/9.2/10.2 m", sidecutOffset: -30, noseLength: 200.0, noseWidth: 307.0, noseHeight: 25.7, tailLength: 130.0, tailWidth: 289.0, tailHeight: 20.9, camber: 10.0, stanceWidth: "500–620 mm", setback: 40, insertQty: "12+12", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "25°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.6 / W 9.3 / T 8.8"}
+    - {size: "160 IVw", overallLength: 1600, effectiveEdge: 1430, contactLength: 1260, waistWidth: 256, sidecutRadii: "9.6/9.2/10.2 m", sidecutOffset: -30, noseLength: 205.0, noseWidth: 315.0, noseHeight: 28.0, tailLength: 135.0, tailWidth: 297.0, tailHeight: 22.5, camber: 10.0, stanceWidth: "500–620 mm", setback: 40, insertQty: "12+12", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "25°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.6 / W 9.3 / T 8.8"}
+    - {size: "166 Vw", overallLength: 1660, effectiveEdge: 1490, contactLength: 1320, waistWidth: 256, sidecutRadii: "12.8/12.2/13.6 m", sidecutOffset: -30, noseLength: 205.0, noseWidth: 304.0, noseHeight: 28.0, tailLength: 135.0, tailWidth: 290.0, tailHeight: 22.5, camber: 12.0, stanceWidth: "500–620 mm", setback: 60, insertQty: "12+12", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "15°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.7 / W 9.4 / T 8.9"}
+    - {size: "167 Vew", overallLength: 1670, effectiveEdge: 1490, contactLength: 1320, waistWidth: 270, sidecutRadii: "13.2/12.6/14.0 m", sidecutOffset: -30, noseLength: 210.0, noseWidth: 316.0, noseHeight: 30.0, tailLength: 140.0, tailWidth: 303.0, tailHeight: 24.0, camber: 12.0, stanceWidth: "500–660 mm", setback: 60, insertQty: "14+14", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "15°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.7 / W 9.4 / T 8.9"}
+    - {size: "172 VI", overallLength: 1720, effectiveEdge: 1550, contactLength: 1380, waistWidth: 260, sidecutRadii: "15.6/14.8/16.4 m", sidecutOffset: -30, noseLength: 205.0, noseWidth: 303.0, noseHeight: 28.0, tailLength: 135.0, tailWidth: 290.0, tailHeight: 22.5, camber: 12.0, stanceWidth: "500–620 mm", setback: 60, insertQty: "12+12", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "15°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.7 / W 9.4 / T 8.9"}
+    - {size: "173 VIew", overallLength: 1730, effectiveEdge: 1550, contactLength: 1380, waistWidth: 263, sidecutRadii: "15.6/14.8/16.4 m", sidecutOffset: -30, noseLength: 210.0, noseWidth: 316.0, noseHeight: 30.0, tailLength: 140.0, tailWidth: 303.0, tailHeight: 24.0, camber: 12.0, stanceWidth: "500–660 mm", setback: 60, insertQty: "14+14", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "15°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.7 / W 9.4 / T 8.9"}
+    - {size: "178 VII", overallLength: 1780, effectiveEdge: 1610, contactLength: 1440, waistWidth: 260, sidecutRadii: "18.2/17.2/19.2 m", sidecutOffset: -30, noseLength: 205.0, noseWidth: 300.0, noseHeight: 28.0, tailLength: 135.0, tailWidth: 289.0, tailHeight: 22.5, camber: 12.0, stanceWidth: "500–620 mm", setback: 60, insertQty: "12+12", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "15°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.9 / W 9.5 / T 9.1"}
+    - {size: "179 VIIew", overallLength: 1790, effectiveEdge: 1610, contactLength: 1440, waistWidth: 276, sidecutRadii: "18.2/17.2/19.2 m", sidecutOffset: -30, noseLength: 210.0, noseWidth: 316.0, noseHeight: 30.0, tailLength: 140.0, tailWidth: 305.0, tailHeight: 24.0, camber: 12.0, stanceWidth: "500–660 mm", setback: 60, insertQty: "14+14", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "15°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.9 / W 9.5 / T 9.1"}
   scenes:
     - carving
 images:
-  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/21_DSPRD"
+  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/21_DSPRD%20Ti%20type-R/2627_21_DSPRD%20Ti%20type-R_main.png"
     kind: face
     alt: Gray DESPERADO Ti Type-R 2027 单板正面图
     source: Gray Snowboards 官方 2026–2027 产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
 data_source:
-  kind: manual
-  origin_url: https://graysnowboards.co.jp/product-2627-eng/
+  kind: official
+  origin_url: https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf
   snapshot_url: https://thesnowfever.com/list/snowboards?brand=72
 status: published

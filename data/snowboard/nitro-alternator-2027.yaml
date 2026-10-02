@@ -4,7 +4,18 @@ brand: nitro
 model: Alternator
 year: 2027
 title: Nitro Alternator 2027
-one_liner: 定向全山自由式板，传统正拱与中宽腰设计面向山地跳跃、刻滑和变化雪况。
+one_liner: 定向全山自由式板，传统正拱与中宽腰设计面向山地跳跃、刻滑和变化雪况。Nitro 官方商品目录价 $599.90，按项目 USD/CNY 目录汇率折算。
+editorial_scores:
+  stability: 8.2
+  response: 8.4
+  float: 7.2
+  park: 7.6
+  forgiveness: 6.2
+  value: 7.4
+price:
+  min: 4319
+  max: 4319
+  currency: CNY
 specs:
   length: 157
   waistWidth: 254

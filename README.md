@@ -141,9 +141,9 @@ UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@e
   前端是「内容包 + localStorage」架构，正好适配这台小机器
 - **数据层**：Docker 跑 PG16 + Redis（端口只绑 127.0.0.1），23 张表的迁移已执行并实测通过
   （ltree / 按月分区 / 部分索引 / 触发器）；**ES 与 Umami 暂缓**（内存受限，搜索先用 PG，ES 可从 PG 完全重建）
-- **API**：待部署（用 systemd 直跑 Node，不进 Docker——1G 内存下容器构建有 OOM 风险）
+- **API**：已由 systemd 常驻运行；生产迁移已全部应用。内测阶段不上 ES/Umami（内存受限，搜索回退 PostgreSQL）。
 
-完整服务器现状、待续步骤与回滚方式见 [deploy/README.md](deploy/README.md)。
+线上实测状态、上线前待办与回滚方式见 [deploy/README.md](deploy/README.md)。
 
 ## 日常命令
 
@@ -202,7 +202,7 @@ UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@e
 | noindex 白名单 | 个人中心、登录页 |
 | 渲染形态 | 详情页 15 个档案 `generateStaticParams` 静态预渲染 |
 
-上线前必做：在 `apps/web/.env.local` 设 `NEXT_PUBLIC_SITE_URL=https://正式域名`（canonical / sitemap / 结构化数据都用它，现在是 localhost）。
+静态发布构建必须同时设置 `NEXT_PUBLIC_SITE_URL`、`NEXT_PUBLIC_API_BASE`、`CONTENT_EXPORT_API_BASE` 为正式 HTTPS 地址；构建会自动拒绝缺失或 localhost 配置并刷新线上目录快照。2026-09-30 已按 [部署说明](deploy/README.md) 发布生产构建，并复核 canonical、robots、sitemap、前端资源与 API 健康状态。
 待办：`FAQPage` 结构化数据等 M3 客观分析产出问答形态后再加。
 
 ## 架构要点
@@ -223,7 +223,7 @@ UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@e
 | 阶段 | 内容 | 状态 |
 |---|---|---|
 | M1 脚手架 | monorepo、类目 schema、seed 管线、compose、埋点 SDK + Umami | ✅ 已完成（迁移 / 分区表 / ltree 已在生产 PG 实测） |
-| M2 图鉴流 + 后台基础 | 列表/详情/对比/榜单、全局搜索与筛选、SEO 技术包、后台基础版 | 🚧 内容 API、搜索筛选与后台基础版已落地；本地全栈联调与线上部署待续 |
+| M2 图鉴流 + 后台基础 | 列表/详情/对比/榜单、全局搜索与筛选、SEO 技术包、后台基础版 | 🚧 内容 API、搜索筛选、后台基础版及生产部署已落地；上线验收待完成 |
 | M3 社区流 + 审核配置 | 登录/评分评论/收藏/通知、客观分析引擎、问卷版推荐、后台审核队列 | 🚧 认证、问卷、评分评论收藏通知和举报审核闭环已落地；客观分析与运营扩展待续 |
 | M4 运营 | 分享卡图、赛季榜单、AI 对话式推荐 | ⏳ |
 
@@ -241,10 +241,8 @@ UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@e
 - ✅ **前端**：原型全部页面与交互落地，typecheck + 生产构建 + Chrome 端到端检查通过（无 hydration 报错）
 - ✅ **SEO 技术包**（§14.2）：标题/描述模板、canonical 纪律、JSON-LD（Product/AggregateRating/BreadcrumbList/ItemList）、
   sitemap.xml、robots.txt、noindex 白名单，详情页静态预渲染
-- ✅ **内测站已上线**（静态导出托管于 nginx，http://111.229.87.101/ ）；已备案（津ICP备2026009482号，页脚展示），
-  域名 `xiaopang.club` 待加 A 记录后即可用域名访问
-- 🚧 **线上后端进行中**：服务器已装 Docker 并跑起 PG16 + Redis，23 张表迁移实测通过（含分区表写入验证）；
-  下一步是 API 部署（systemd）与静态站埋点接入 —— 见 [deploy/README.md](deploy/README.md) 的「待续」
+- ✅ **生产前台与 API 已部署**：2026-09-30 发布静态前台；域名、`/admin/`、`/api/health` 返回 200，API 健康状态为 DB/Redis 正常、ES 未启用。迁移已全部应用。
+- ✅ **备份恢复演练**：已创建生产 PostgreSQL 自定义格式备份并在隔离数据库完成恢复验证；服务器自动/异地备份尚未配置。
 - ✅ **M2 准备**：spec_schema 对齐原型字段集、15 款原型内容可一键导出为 seed，另有 3 款通过采集器自动通过并通过校验、
   API 响应契约进 `packages/schema`、四项产品决策落地（板型族枚举、编辑评分独立列 `product.editorial_scores`、
   综合指数实时计算、价格区间实时算分位）
@@ -256,4 +254,4 @@ UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@e
 - ✅ **全局搜索与筛选**：`/search` 页面、`GET /api/search`、PostgreSQL 搜索兜底、可选 Elasticsearch 中文分词、URL 筛选状态和内容包回退已完成
 - ✅ **2026-09-18 本地验收基线**：在 `codex/admin-information-architecture` 分支的 `fee8f19` 基线上，API 健康测试 3/3、前端聚焦测试 20/20、全工作区类型检查和 schema/API/web/admin 生产构建均通过；本地 3000/3001/3002 服务均返回 200
 - ✅ **本地全栈验收**：Docker 基础设施、迁移、seed、API / 用户端 / 后台三服务联调已完成；Elasticsearch 仍为可选增强依赖。
-- ⏳ **下一步**：线上 API systemd 部署 → 生产域名与埋点接入 → 完成线上内容 API 接入；上线后设 `NEXT_PUBLIC_SITE_URL` 并注册各站长平台（Bing/搜狗/百度）。采集原始快照归档 / COS 图片管理、正式密钥管理、客观分析和 M4 运营功能仍未完成。
+- ⏳ **正式开放前**：指定并验证首个管理员账号；用真实浏览器走通注册/登录、搜索、评论与后台审核；配置自动且异地保存的数据库备份；向站长平台提交 sitemap。ES 未启用是当前资源约束下的已知取舍；客观分析和 M4 运营功能属于后续迭代。

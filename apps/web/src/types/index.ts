@@ -118,6 +118,16 @@ export interface GearAnalysis {
   notFits: string[];
 }
 
+export type GearSizeSpecValue =
+  | number
+  | string
+  | boolean
+  | null
+  | GearSizeSpecValue[]
+  | { [key: string]: GearSizeSpecValue };
+
+export type GearSizeSpec = Record<string, GearSizeSpecValue>;
+
 export interface GearItem {
   id: string;
   categorySlug: string;
@@ -133,6 +143,8 @@ export interface GearItem {
   hero: string;
   gallery: GalleryShot[];
   specs: Record<string, number | string | null>;
+  /** Verified size-specific rows preserved for catalog detail and seed export. */
+  sizeSpecs?: GearSizeSpec[];
   fitGuide?: FitGuide;
   scores: Record<string, number>;
   composite: number;

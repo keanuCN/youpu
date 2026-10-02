@@ -1,0 +1,91 @@
+{
+  "brand": "GRAY",
+  "model": "DESPERADO Ti Type-R",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/gray-desperado-ti-type-r-2027.yaml",
+  "sources": {
+    "officialJapaneseCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE (Japanese)",
+      "evidence": "Official 26/27 catalog linked from GRAY's January 15, 2026 catalog announcement. Confirms Type-R model, 11 size/width variants, per-size dimensions, stance data, base, edge specification, stiffness references, two Japanese MSRP tiers, directional/triple-radius/negative/Vario Camber design, and X-shaped 0.4 mm Titanal construction."
+    },
+    "officialEnglishCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_eng_low.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE (English)",
+      "evidence": "Season-specific corroboration for the product description and construction diagram (sintered top sheet, Titanal plate, wood core, fiberglass, steel edge, running base). The English machine-extracted size header duplicates IIIw and some feature bullets conflict with the per-size Japanese table; use the Japanese table for variant labels and dimensions."
+    },
+    "officialCatalogAnnouncement": {
+      "url": "https://graysnowboards.co.jp/2026/01/15/26-27%E3%83%A2%E3%83%87%E3%83%AB-%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%EF%BC%8F%E8%8B%B1%E8%AA%9E%E7%89%88%EF%BC%89%E3%82%92%E6%8E%B2%E8%BC%89%E3%81%97/",
+      "evidence": "Official announcement published 2026-01-15 linking the Japanese and English 26/27 catalog PDFs."
+    },
+    "officialSeasonTechnology": {
+      "url": "https://graysnowboards.co.jp/tech-2627-eng/",
+      "evidence": "26/27 season-specific technology page says Type-R has X-shaped 0.4 mm Titanal under the topsheet, sintered top sheet, and 48-hardness steel edges."
+    },
+    "officialSeasonProduct": {
+      "url": "https://graysnowboards.co.jp/product-2627-eng/",
+      "evidence": "Confirms the 26/27 Type-R identity, high-speed carving role, tapered hammerhead shape, Vario Camber, multi-radius sidecut and 0.4 mm X-shaped titanium construction."
+    }
+  },
+  "pricing": {
+    "officialJapan": {
+      "currency": "JPY",
+      "taxInclusivePriceByVariant": {
+        "IIIn/III/IIIw/IV/IVw": 198000,
+        "Vw/Vew/VI/VIew/VII/VIIew": 209000
+      },
+      "priceType": "Japanese official tax-inclusive MSRP",
+      "note": "Not a verified China-market offer or Chinese retail price."
+    },
+    "seedNormalization": {
+      "currency": "CNY",
+      "rateCnyPerJpy": 0.042451,
+      "source": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+      "rateDate": "2026-10-02",
+      "values": [8405, 8872],
+      "formula": "round(198000 * 0.042451) = 8405; round(209000 * 0.042451) = 8872",
+      "note": "Currency normalization only; not a Chinese-market price."
+    }
+  },
+  "units": {
+    "overallLengthMm": "Printed in millimeters; represented in YAML as millimeters and overall size in centimeters.",
+    "sidecutRadiusMm": "Catalog prints three radii in millimeters; YAML preserves sequence and converts to meters without assigning a curve segment beyond catalog order.",
+    "boardWidthsLengthsMm": "Nose/tail widths and nose/tail lengths are in millimeters.",
+    "stanceWidthMm": "Minimum–maximum stance width in millimeters.",
+    "stanceSetbackMm": "Catalog printed value in millimeters; direction/sign convention is not explained, so the numeric magnitude is preserved as printed.",
+    "stiffness": "Catalog N/W/T positions preserved as manufacturer scale text; not normalized into the site's flex field."
+  },
+  "sizeRows": [
+    {"size":"154 IIIn","overallLengthMm":1540,"effectiveEdgeMm":1390,"contactLengthMm":1220,"waistWidthMm":238,"sidecutRadiusMm":[9000,8600,9600],"sidecutOffsetMm":-30,"noseLengthMm":195.0,"noseWidthMm":306.0,"noseHeightMm":24.0,"tailLengthMm":125.0,"tailWidthMm":279.0,"tailHeightMm":19.3,"camberMm":9.0,"stanceWidthMm":[440,560],"inserts":"12+12","setbackMm":30,"edgeTable":"1.8mm/45RCW","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite","stiffnessNWT":[8.0,8.7,8.2]},
+    {"size":"155 III","overallLengthMm":1550,"effectiveEdgeMm":1390,"contactLengthMm":1220,"waistWidthMm":246,"sidecutRadiusMm":[9000,8600,9600],"sidecutOffsetMm":-30,"noseLengthMm":200.0,"noseWidthMm":306.0,"noseHeightMm":25.7,"tailLengthMm":130.0,"tailWidthMm":287.0,"tailHeightMm":20.9,"camberMm":9.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":30,"edgeTable":"1.8mm/45RCW","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite","stiffnessNWT":[8.4,9.1,8.6]},
+    {"size":"156 IIIw","overallLengthMm":1560,"effectiveEdgeMm":1390,"contactLengthMm":1220,"waistWidthMm":254,"sidecutRadiusMm":[9000,8600,9600],"sidecutOffsetMm":-30,"noseLengthMm":205.0,"noseWidthMm":314.0,"noseHeightMm":28.0,"tailLengthMm":135.0,"tailWidthMm":295.0,"tailHeightMm":22.5,"camberMm":9.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":30,"edgeTable":"1.8mm/45RCW","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite","stiffnessNWT":[8.4,9.1,8.6]},
+    {"size":"159 IV","overallLengthMm":1590,"effectiveEdgeMm":1430,"contactLengthMm":1260,"waistWidthMm":248,"sidecutRadiusMm":[9600,9200,10200],"sidecutOffsetMm":-30,"noseLengthMm":200.0,"noseWidthMm":307.0,"noseHeightMm":25.7,"tailLengthMm":130.0,"tailWidthMm":289.0,"tailHeightMm":20.9,"camberMm":10.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":40,"edgeTable":"1.8mm/45RCW","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite","stiffnessNWT":[8.6,9.3,8.8]},
+    {"size":"160 IVw","overallLengthMm":1600,"effectiveEdgeMm":1430,"contactLengthMm":1260,"waistWidthMm":256,"sidecutRadiusMm":[9600,9200,10200],"sidecutOffsetMm":-30,"noseLengthMm":205.0,"noseWidthMm":315.0,"noseHeightMm":28.0,"tailLengthMm":135.0,"tailWidthMm":297.0,"tailHeightMm":22.5,"camberMm":10.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":40,"edgeTable":"1.8mm/45RCW","sidewallAngleDeg":25,"sidewallColor":"NEON RED","base":"IS7500 Graphite","stiffnessNWT":[8.6,9.3,8.8]},
+    {"size":"166 Vw","overallLengthMm":1660,"effectiveEdgeMm":1490,"contactLengthMm":1320,"waistWidthMm":256,"sidecutRadiusMm":[12800,12200,13600],"sidecutOffsetMm":-30,"noseLengthMm":205.0,"noseWidthMm":304.0,"noseHeightMm":28.0,"tailLengthMm":135.0,"tailWidthMm":290.0,"tailHeightMm":22.5,"camberMm":12.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":60,"edgeTable":"1.8mm/45RCW","sidewallAngleDeg":15,"sidewallColor":"NEON RED","base":"IS7500 Graphite","stiffnessNWT":[8.7,9.4,8.9]},
+    {"size":"167 Vew","overallLengthMm":1670,"effectiveEdgeMm":1490,"contactLengthMm":1320,"waistWidthMm":270,"sidecutRadiusMm":[13200,12600,14000],"sidecutOffsetMm":-30,"noseLengthMm":210.0,"noseWidthMm":316.0,"noseHeightMm":30.0,"tailLengthMm":140.0,"tailWidthMm":303.0,"tailHeightMm":24.0,"camberMm":12.0,"stanceWidthMm":[500,660],"inserts":"14+14","setbackMm":60,"edgeTable":"1.8mm/45RCW","sidewallAngleDeg":15,"sidewallColor":"NEON RED","base":"IS7500 Graphite","stiffnessNWT":[8.7,9.4,8.9]},
+    {"size":"172 VI","overallLengthMm":1720,"effectiveEdgeMm":1550,"contactLengthMm":1380,"waistWidthMm":260,"sidecutRadiusMm":[15600,14800,16400],"sidecutOffsetMm":-30,"noseLengthMm":205.0,"noseWidthMm":303.0,"noseHeightMm":28.0,"tailLengthMm":135.0,"tailWidthMm":290.0,"tailHeightMm":22.5,"camberMm":12.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":60,"edgeTable":"1.8mm/45RCW","sidewallAngleDeg":15,"sidewallColor":"NEON RED","base":"IS7500 Graphite","stiffnessNWT":[8.7,9.4,8.9]},
+    {"size":"173 VIew","overallLengthMm":1730,"effectiveEdgeMm":1550,"contactLengthMm":1380,"waistWidthMm":263,"sidecutRadiusMm":[15600,14800,16400],"sidecutOffsetMm":-30,"noseLengthMm":210.0,"noseWidthMm":316.0,"noseHeightMm":30.0,"tailLengthMm":140.0,"tailWidthMm":303.0,"tailHeightMm":24.0,"camberMm":12.0,"stanceWidthMm":[500,660],"inserts":"14+14","setbackMm":60,"edgeTable":"1.8mm/45RCW","sidewallAngleDeg":15,"sidewallColor":"NEON RED","base":"IS7500 Graphite","stiffnessNWT":[8.7,9.4,8.9]},
+    {"size":"178 VII","overallLengthMm":1780,"effectiveEdgeMm":1610,"contactLengthMm":1440,"waistWidthMm":260,"sidecutRadiusMm":[18200,17200,19200],"sidecutOffsetMm":-30,"noseLengthMm":205.0,"noseWidthMm":300.0,"noseHeightMm":28.0,"tailLengthMm":135.0,"tailWidthMm":289.0,"tailHeightMm":22.5,"camberMm":12.0,"stanceWidthMm":[500,620],"inserts":"12+12","setbackMm":60,"edgeTable":"1.8mm/45RCW","sidewallAngleDeg":15,"sidewallColor":"NEON RED","base":"IS7500 Graphite","stiffnessNWT":[8.9,9.5,9.1]},
+    {"size":"179 VIIew","overallLengthMm":1790,"effectiveEdgeMm":1610,"contactLengthMm":1440,"waistWidthMm":276,"sidecutRadiusMm":[18200,17200,19200],"sidecutOffsetMm":-30,"noseLengthMm":210.0,"noseWidthMm":316.0,"noseHeightMm":30.0,"tailLengthMm":140.0,"tailWidthMm":305.0,"tailHeightMm":24.0,"camberMm":12.0,"stanceWidthMm":[500,660],"inserts":"14+14","setbackMm":60,"edgeTable":"1.8mm/45RCW","sidewallAngleDeg":15,"sidewallColor":"NEON RED","base":"IS7500 Graphite","stiffnessNWT":[8.9,9.5,9.1]}
+  ],
+  "conflictsAndLimits": [
+    "The Japanese catalog size-table edge row prints 1.8mm/45RCW, while its season model-feature text says 48 Rockwell; the season-specific official technology page also says hardness 48. Preserve the conflict; do not silently choose one value.",
+    "The PDF does not explain the sign/direction convention for stance setback; raw magnitudes are retained, without asserting direction.",
+    "No independent 26/27 production-sample ride test was located in this pass. The existing six editorial scores are retained as low-confidence structure/positioning estimates; external scores are not mapped.",
+    "No verified Chinese-market sale price, product weight, warranty term, image reuse permission, or size-specific explicit core/fiberglass layup was found. Do not infer these from Japanese MSRP or general construction graphics."
+  ],
+  "scoringReview": {
+    "existingScores": {"stability":9.0,"response":9.3,"float":6.0,"park":2.4,"forgiveness":4.4,"value":6.0},
+    "decision": "Keep numerical scores unchanged. Official materials substantiate a premium high-speed carving role but are insufficient to verify snow performance by dimension. Mark all scores low confidence, especially float/park/forgiveness, and mark value low confidence because the displayed CNY is a currency conversion, not a China retail offer.",
+    "confidence": "low; no same-season independent ride test found"
+  },
+  "mappingNotes": [
+    "Japanese catalog provides unambiguous variants: IIIn, III, IIIw, IV, IVw, Vw, Vew, VI, VIew, VII, VIIew. The English PDF's extracted header duplicates IIIw; Japanese version controls labels.",
+    "Representative seed fields use Vew 167, but the full 11-row catalog table is retained so no size variant is hidden.",
+    "Manufacturer stiffness N/W/T values are preserved as text and not mapped to the site's 0-10 flex score.",
+    "The size table's 1.8mm/45RCW row conflicts with same-season official 48 RC narrative/technology claims; per-size YAML records both claims explicitly.",
+    "The official 26/27 English product page image URL remains reference-only; no license for local hosting/republication was confirmed."
+  ],
+  "imageRights": "No explicit reuse license verified; retain as verification reference only and do not copy to hosted production assets without permission or original photography."
+}

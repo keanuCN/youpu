@@ -86,6 +86,7 @@ function scenesOf(specs: SnapshotSpecs, fallback: string[] = []): string[] {
 
 function galleryWithCover(cover: string, fallback: GearItem["gallery"] = []): GearItem["gallery"] {
   if (!cover) return fallback;
+  if (fallback.some((shot) => shot.url === cover)) return fallback;
   return [{ url: cover, label: "目录封面 / CATALOG" }, ...fallback.filter((shot) => shot.url !== cover)];
 }
 

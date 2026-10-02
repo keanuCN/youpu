@@ -1,43 +1,48 @@
 # 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
-# 原型 id：sb-06 · 参数未经官网逐项校对，转入正式发布前需人工核对
+# 原型 id：sb-06 · 官方逐尺码原表及季节限定证据见 data/raw/snowboard/never-summer/proto-slinger-2024-25.json
 slug: never-summer-proto-slinger-2025
 category: snowboard
 brand: never-summer
 model: Proto Slinger
 year: 2025
 title: Never Summer Proto Slinger 2025
-one_liner: 全山地里性格最鲜明的一块。碳纤层让它的回弹比同价位明显更快，出弯时能感觉到板子在推你。
+one_liner: 偏软、易压且有弹性的公园向双向板；非对称侧切帮助换刃和 carving，日常雪道可用，但不应把它当作深粉雪或高速刻滑专板。
 price:
   min: 5499
   max: 5499
   currency: CNY
 specs:
-  length: 157
-  effectiveEdge: 1215
-  sidecut: 7.9
-  waistWidth: 254
-  stanceSetback: 12
-  profile: Ripsaw（Camber 主导 + 板头长摇臂）
-  shape: 定向双向
-  core: 白杨 + 竹条
-  fiberglass: Triax Carbon
-  base: 烧结 Durasurf
-  weight: 2840
-  damping: 7.5
+  length: 156
+  effectiveEdge: 1190
+  sidecutRadii: 8.18 / 7.36 m (VARIO; source order)
+  waistWidth: 253
+  stanceSetback: 0
+  profile: Original Rocker Camber（Shock Wave Rocker Camber）
+  shape: 不对称双向
+  core: NS Superlight Wood Core（白杨/泡桐/桦木）
+  fiberglass: Carbon VXR Laminate Technology
+  base: 烧结 DuraSurf XT 5501
+  damping: 4
   pop: 8
-  turnRadiusFeel: 入弯快，出弯有推背感
+  turnRadiusFeel: 非对称侧切帮助快速换刃，板感偏软、易压板
   warranty: 3
-  flex: 6
+  flex: 4
   profileFamily: hybrid
   scenes:
     - all-mountain
     - freestyle
+  sizeSpecs:
+    - {size: "149", effectiveEdge: 1130, waistWidth: 247, noseWidth: 292, tailWidth: 292, sidecutRadii: "7.35 / 6.57 m (VARIO; source order)"}
+    - {size: "153", effectiveEdge: 1170, waistWidth: 250, noseWidth: 295, tailWidth: 295, sidecutRadii: "7.83 / 7.01 m (VARIO; source order)"}
+    - {size: "156", effectiveEdge: 1190, waistWidth: 253, noseWidth: 298, tailWidth: 298, sidecutRadii: "8.18 / 7.36 m (VARIO; source order)"}
+    - {size: "154x", effectiveEdge: 1170, waistWidth: 258, noseWidth: 303, tailWidth: 303, sidecutRadii: "7.86 / 7.03 m (VARIO; source order)"}
+    - {size: "157x", effectiveEdge: 1200, waistWidth: 262, noseWidth: 307, tailWidth: 307, sidecutRadii: "8.23 / 7.37 m (VARIO; source order)"}
 editorial_scores:
-  stability: 8
+  stability: 7
   response: 8.5
-  float: 7
-  park: 7
-  forgiveness: 6
+  float: 5.5
+  park: 9
+  forgiveness: 8
   value: 7.5
 images:
   - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-04.png?auth_key=436f2cbe34d74f4d6251d5d048fd58f79d7dede41ad4a67ce40f832f82c271c1
@@ -60,4 +65,8 @@ images:
     alt: Never Summer Proto Slinger 实地 / FIELD
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 3
+data_source:
+  kind: official
+  origin_url: https://neversummer.com/pages/mens-proto-slinger-size-chart
+  snapshot_url: https://neversummer.com/collections/2025-snowboards
 status: published

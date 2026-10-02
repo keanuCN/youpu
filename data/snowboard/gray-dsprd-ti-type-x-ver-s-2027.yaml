@@ -1,0 +1,40 @@
+slug: gray-dsprd-ti-type-x-ver-s-2027
+category: snowboard
+brand: gray
+model: DSPRD Ti Type-X ver.S
+year: 2027
+title: GRAY DSPRD Ti Type-X ver.S 2027
+one_liner: 面向高水平竞赛刻滑的 26/27 款 Type-X，针对高速大角度走刃优化；ver.S 使用烧结表层配置。日本官方含税 MSRP ¥198,000，按 2026-10-02 参考汇率折算约 ¥8,405 CNY（非中国零售价）。
+editorial_scores:
+  stability: 9.3
+  response: 9.6
+  float: 5.1
+  park: 2.0
+  forgiveness: 3.8
+  value: 5.9
+price:
+  min: 8405
+  max: 8405
+  currency: CNY
+specs:
+  core: STD Core II
+  fiberglass: 2-ply 65/35 + 3-ply 50/50 Fiberglass
+  shape: Directional Hammerhead
+  scenes:
+    - carving
+  profile: Vario Camber
+  profileFamily: camber
+  sizeSpecs:
+    - {"base":"IS7500 Graphite","edge":"1.8 mm / 48 RCWL","size":"152 ver.S","camber":8,"setback":30,"insertQty":"12+12","noseWidth":296,"stiffness":"8.4/9.1/8.6","tailWidth":276,"noseHeight":26,"noseLength":205,"tailHeight":21,"tailLength":135,"waistWidth":236,"stanceWidth":"440–560","sidecutRadii":"8800/8400/9400","contactLength":1180,"effectiveEdge":1360,"overallLength":1520,"sidecutOffset":-30,"sidewallAngle":"15°","sidewallColor":"BLACK"}
+    - {"base":"IS7500 Graphite","edge":"1.8 mm / 48 RCWL","size":"161 ver.S","camber":10,"setback":40,"insertQty":"12+12","noseWidth":309,"stiffness":"9.0/9.7/9.2","tailWidth":294,"noseHeight":30.4,"noseLength":210,"tailHeight":24.2,"tailLength":140,"waistWidth":260,"stanceWidth":"500–620","sidecutRadii":"11800/11200/12600","contactLength":1260,"effectiveEdge":1430,"overallLength":1610,"sidecutOffset":-30,"sidewallAngle":"15°","sidewallColor":"BLACK"}
+images:
+  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/19_DSPRD%20Ti%20type-X%20verS/2627_19_DSPRD%20Ti%20type-X%20verS_main.png"
+    kind: face
+    alt: GRAY DSPRD Ti Type-X ver.S 2027 官方商品图
+    source: GRAY 官方 26-27 商品页（图片授权待核）
+    sort_order: 0
+data_source:
+  kind: manual
+  origin_url: https://graysnowboards.co.jp/product-2627-eng/
+  snapshot_url: https://xiaopang.club/api/products/gray-dsprd-ti-type-x-ver-s-2027
+status: published

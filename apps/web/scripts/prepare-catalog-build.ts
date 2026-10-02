@@ -1,6 +1,20 @@
 import { spawnSync } from "node:child_process";
 
-import { shouldExportCatalogBeforeBuild } from "./catalog-build-policy";
+import {
+  getStaticExportConfigurationProblems,
+  shouldExportCatalogBeforeBuild,
+} from "./catalog-build-policy";
+
+const staticExportProblems = getStaticExportConfigurationProblems({
+  NEXT_OUTPUT: process.env.NEXT_OUTPUT,
+  NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
+  NEXT_PUBLIC_API_BASE: process.env.NEXT_PUBLIC_API_BASE,
+  CONTENT_EXPORT_API_BASE: process.env.CONTENT_EXPORT_API_BASE,
+});
+if (staticExportProblems.length > 0) {
+  console.error("静态发布构建配置无效：\n- " + staticExportProblems.join("\n- "));
+  process.exit(1);
+}
 
 if (!shouldExportCatalogBeforeBuild({ CONTENT_EXPORT_API_BASE: process.env.CONTENT_EXPORT_API_BASE })) {
   console.log("未配置 CONTENT_EXPORT_API_BASE，构建使用仓库内目录快照。");

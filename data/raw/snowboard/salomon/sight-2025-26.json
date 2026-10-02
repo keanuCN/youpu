@@ -1,0 +1,116 @@
+{
+  "brand": "Salomon",
+  "model": "Sight",
+  "season": "FW2025-26",
+  "productCode": "L47924900",
+  "source": {
+    "type": "official_manufacturer_catalog",
+    "catalogIndex": "https://salomon.jp/pages/snowboard-catalog",
+    "boardsCatalogPdf": "https://cdn.shopify.com/s/files/1/0673/9981/1381/files/FW25_digitalcatalogue_boards_202506.pdf?v=1750054749",
+    "technicalBookPdf": "https://cdn.shopify.com/s/files/1/0673/9981/1381/files/FW25_digitalcatalogue_techbook.pdf?v=1736124811",
+    "technicalBookPdfPage": 11,
+    "technicalBookPrintedPage": 118,
+    "boardsCatalogPdfPage": 22,
+    "boardsCatalogPrintedPage": 40,
+    "retrievedAt": "2026-10-02"
+  },
+  "units": {
+    "weight": "g",
+    "lengthsAndWidths": "mm",
+    "sidecutRadius": "m",
+    "riderWeightKg": "kg",
+    "riderWeightLb": "lb",
+    "stanceInches": "in"
+  },
+  "rows": [
+    {"size":"147","widthVariant":"standard","weight":2550,"contactLength":1025,"delta":85,"effectiveEdge":1110,"maxFootSize":265,"recommendedBootSizeRaw":"235/265","recommendedBindingSize":"S/M","maxStanceMm":576,"maxStanceIn":22.6,"minStanceMm":464,"minStanceIn":18.3,"recommendedStanceMm":520,"recommendedStanceIn":20.5,"setback":20,"sidecutRadius":6.4,"tailLength":207,"tailWidth":284,"waistWidth":244,"noseLength":236,"noseWidth":287,"riderWeightKg":[50,70],"riderWeightLb":[110,160],"shape":"TAPERED DIRECTIONAL"},
+    {"size":"150","widthVariant":"standard","weight":2600,"contactLength":1050,"delta":85,"effectiveEdge":1135,"maxFootSize":275,"recommendedBootSizeRaw":"245/275","recommendedBindingSize":"S/M","maxStanceMm":586,"maxStanceIn":23.1,"minStanceMm":474,"minStanceIn":18.7,"recommendedStanceMm":530,"recommendedStanceIn":20.9,"setback":20,"sidecutRadius":6.6,"tailLength":212,"tailWidth":290,"waistWidth":247,"noseLength":240,"noseWidth":293,"riderWeightKg":[55,75],"riderWeightLb":[125,165],"shape":"TAPERED DIRECTIONAL"},
+    {"size":"153","widthVariant":"standard","weight":2680,"contactLength":1070,"delta":90,"effectiveEdge":1160,"maxFootSize":285,"recommendedBootSizeRaw":"255/285","recommendedBindingSize":"S/M","maxStanceMm":606,"maxStanceIn":23.9,"minStanceMm":494,"minStanceIn":19.4,"recommendedStanceMm":550,"recommendedStanceIn":21.7,"setback":20,"sidecutRadius":6.8,"tailLength":215,"tailWidth":293,"waistWidth":250,"noseLength":245,"noseWidth":296,"riderWeightKg":[55,85],"riderWeightLb":[125,190],"shape":"TAPERED DIRECTIONAL"},
+    {"size":"156","widthVariant":"standard","weight":2750,"contactLength":1090,"delta":90,"effectiveEdge":1180,"maxFootSize":295,"recommendedBootSizeRaw":"255/295","recommendedBindingSize":"M/L","maxStanceMm":616,"maxStanceIn":24.3,"minStanceMm":504,"minStanceIn":19.8,"recommendedStanceMm":560,"recommendedStanceIn":22.0,"setback":20,"sidecutRadius":7.1,"tailLength":220,"tailWidth":296,"waistWidth":252,"noseLength":250,"noseWidth":299,"riderWeightKg":[65,90],"riderWeightLb":[145,200],"shape":"TAPERED DIRECTIONAL"},
+    {"size":"159","widthVariant":"standard","weight":2900,"contactLength":1110,"delta":90,"effectiveEdge":1200,"maxFootSize":295,"recommendedBootSizeRaw":"255/295","recommendedBindingSize":"M/L","maxStanceMm":626,"maxStanceIn":24.6,"minStanceMm":514,"minStanceIn":20.2,"recommendedStanceMm":570,"recommendedStanceIn":22.4,"setback":20,"sidecutRadius":7.4,"tailLength":225,"tailWidth":301,"waistWidth":256,"noseLength":255,"noseWidth":304,"riderWeightKg":[65,90],"riderWeightLb":[145,200],"shape":"TAPERED DIRECTIONAL"},
+    {"size":"155W","widthVariant":"wide","weight":2890,"contactLength":1082,"delta":90,"effectiveEdge":1172,"maxFootSize":295,"recommendedBootSizeRaw":"255/295","recommendedBindingSize":"M/L","maxStanceMm":616,"maxStanceIn":24.3,"minStanceMm":504,"minStanceIn":19.8,"recommendedStanceMm":560,"recommendedStanceIn":22.0,"setback":20,"sidecutRadius":7.0,"tailLength":220,"tailWidth":303,"waistWidth":262,"noseLength":248,"noseWidth":306,"riderWeightKg":[65,90],"riderWeightLb":[145,200],"shape":"TAPERED DIRECTIONAL"},
+    {"size":"158W","widthVariant":"wide","weight":3000,"contactLength":1105,"delta":80,"effectiveEdge":1185,"maxFootSize":305,"recommendedBootSizeRaw":"265/305","recommendedBindingSize":"M/L","maxStanceMm":626,"maxStanceIn":24.6,"minStanceMm":514,"minStanceIn":20.2,"recommendedStanceMm":570,"recommendedStanceIn":22.4,"setback":20,"sidecutRadius":7.7,"tailLength":220,"tailWidth":305,"waistWidth":264,"noseLength":255,"noseWidth":308,"riderWeightKg":[70,90],"riderWeightLb":[155,195],"shape":"TAPERED DIRECTIONAL"},
+    {"size":"162W","widthVariant":"wide","weight":3100,"contactLength":1135,"delta":80,"effectiveEdge":1215,"maxFootSize":315,"recommendedBootSizeRaw":"275/315","recommendedBindingSize":"M/L","maxStanceMm":641,"maxStanceIn":25.2,"minStanceMm":529,"minStanceIn":20.8,"recommendedStanceMm":585,"recommendedStanceIn":23.0,"setback":20,"sidecutRadius":7.9,"tailLength":225,"tailWidth":314,"waistWidth":271,"noseLength":260,"noseWidth":317,"riderWeightKg":[70,105],"riderWeightLb":[155,230],"shape":"TAPERED DIRECTIONAL"},
+    {"size":"166W","widthVariant":"wide","weight":3200,"contactLength":1165,"delta":80,"effectiveEdge":1245,"maxFootSize":315,"recommendedBootSizeRaw":"275/315","recommendedBindingSize":"M/L","maxStanceMm":656,"maxStanceIn":25.8,"minStanceMm":544,"minStanceIn":21.4,"recommendedStanceMm":600,"recommendedStanceIn":23.6,"setback":20,"sidecutRadius":8.1,"tailLength":230,"tailWidth":318,"waistWidth":275,"noseLength":265,"noseWidth":321,"riderWeightKg":[70,105],"riderWeightLb":[155,230],"shape":"TAPERED DIRECTIONAL"}
+  ],
+  "priceEvidence": {
+    "officialJapanStore": {
+      "url": "https://salomon.jp/products/sight-l479249",
+      "articleReference": "L47924900032",
+      "retrievedAt": "2026-10-02",
+      "currency": "JPY",
+      "currentOutletPrice": 51920,
+      "displayedRegularPrice": 64900,
+      "priceStatus": "official Japan outlet page displays 20% off; dynamic and not a stable MSRP quote",
+      "note": "Same seasonal article family as L47924900. Japanese-market price is not a comparable China CNY price and does not replace the seed's CNY 3299."
+    },
+    "evo2026": {
+      "url": "https://www.evo.com/products/268882-salomon-sight-snowboard-2026",
+      "retrievedAt": "2026-10-02",
+      "currency": "USD",
+      "displayedRegularPrice": 449.95,
+      "salePriceAtCapture": 314.96,
+      "note": "Retailer price for its 2026 product listing; sale price can change and neither amount is a China-market quote."
+    },
+    "japanRetailerCrossCheck": {
+      "url": "https://www.morispo.shop/shopdetail/000000058206/",
+      "retrievedAt": "2026-10-02",
+      "productLabel": "2025/2026 SALOMON SIGHT; sizes include standard 153 and the listed wide variants",
+      "currency": "JPY",
+      "displayedManufacturerSuggestedRetailPrice": 64900,
+      "salePriceAtCapture": 44990,
+      "priceType": "Japanese retailer-displayed MSRP and current sale price, tax included",
+      "note": "Corroborates the Japanese-market seasonal price point, not a China-market CNY price; promotion is dynamic."
+    },
+    "japanRetailerYahooListing": {
+      "url": "https://store.shopping.yahoo.co.jp/taiyosp-trip/sight25.html",
+      "retrievedAt": "2026-10-02",
+      "productLabel": "25-26 SALOMON SIGHT; manufacturer code L47924900",
+      "currency": "JPY",
+      "displayedPrice": 32450,
+      "priceType": "retailer offer price; page displayed sold out and did not establish MSRP",
+      "note": "Useful as a dated Japan-market seasonal price observation only. It is not a China-market price and is not treated as an available offer or MSRP."
+    }
+  },
+  "chinaMarketPriceSearch": {
+    "auditedAt": "2026-10-02",
+    "queries": [
+      "Salomon Sight 2026 snowboard 中国 价格 2026 25/26",
+      "L47924900 价格 25/26 中国",
+      "SIGHT L47924900 Salomon 中国价格"
+    ],
+    "finding": "No target-season China-market price source matching exact SKU L47924900 surfaced. Search results included generic/older Sight listings without verifiable 25/26 SKU or source-market price details; excluded from price evidence.",
+    "decision": "Keep seed CNY 3299 unchanged but mark market, price type, and source unverified. Do not substitute Japanese JPY or US USD dynamic prices."
+  },
+  "scoringEvidence": {
+    "sourceUrl": "https://snowboardingprofiles.com/the-top-5-snowboards-for-beginners-mens",
+    "reviewLabel": "Best Snowboards for Beginners 2026",
+    "entry": "Salomon Sight 2026, Beginner Board Rating 90.5/100",
+    "publishedOrUpdated": "2026-01-23 (page update date)",
+    "externalBreakdownOutOf5": {
+      "flex": 4.5,
+      "stability": 5,
+      "turningEase": 5,
+      "price": 4,
+      "versatility": 3.5,
+      "shapeAndStance": 4,
+      "base": 5
+    },
+    "currentSiteFlexValue": 4,
+    "currentSiteFlexNote": "The same publisher describes the 2026 Sight as medium-soft (4/10); this is a secondary editorial estimate, not an official Salomon numeric flex rating.",
+    "testDisclosure": "The page update date is 2026-01-23, but the Sight entry does not state a demo sample size, target-season test sample, or test date; treat this as the publisher's beginner-board editorial assessment, not a verified 25/26 on-snow test.",
+    "scoreDecision": "Directional evidence is consistent with beginner-to-intermediate, easy-turning, medium-soft positioning. Do not map its weighted total or unlike subscales into the site's six editorial dimensions; keep current values low-confidence pending a documented on-snow test."
+  },
+  "seasonCopyNote": "FW25/26 SKU L47924900 product copy uses Royal Cork Pads. Do not carry over Cork Rails wording from the newer FW26/27 Sight SKU L49293000; product copy differs by season.",
+  "imageEvidence": {
+    "officialGalleryUrl": "https://salomon.jp/products/sight-l479249",
+    "evidence": "Official product page exposes an image gallery for the L479249 Sight article family.",
+    "officialAssetReferences": [
+      {"url":"https://salomon.jp/cdn/shop/files/L47924900_0_VIR_SIGHT_156.png?v=1756098039&width=1445","fetchStatus":"timeout in browser inspection; page-linked official asset"},
+      {"url":"https://salomon.jp/cdn/shop/files/L47924900_8_VIR_SIGHT_156.png?v=1756098039&width=1445","fetchStatus":"timeout in browser inspection; page-linked official asset"},
+      {"url":"https://salomon.jp/cdn/shop/files/L47924900_7_VIR_SIGHT_156.png?v=1756098039&width=1445","fetchStatus":"timeout in browser inspection; page-linked official asset"},
+      {"url":"https://salomon.jp/cdn/shop/files/L47924900_6_VIR_SIGHT_156.png?v=1756098039&width=1445","fetchStatus":"linked from official page; image role not verified"}
+    ],
+    "reuseDecision": "Do not hotlink or copy images into the seed without an explicit reuse license or permission. Current YAML images remain labeled AI placeholders pending authorized or self-produced assets; filenames identify a 156 cm gallery view but do not justify substituting it for the seed's 153 cm artwork."
+  }
+}

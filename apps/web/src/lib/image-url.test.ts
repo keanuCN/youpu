@@ -42,3 +42,20 @@ test("allows product images from the project TOS bucket only under product-image
   assert.equal(resolveImageUrl(mirroredImage, true), `/api/image-proxy?url=${encodeURIComponent(mirroredImage)}`);
   assert.equal(isAllowedImageUrl("https://youpu.tos-cn-beijing.volces.com/private/mirror.webp"), false);
 });
+
+test("allows only the official RIDE and Jones snowboard image paths", () => {
+  assert.equal(
+    isAllowedImageUrl("https://cdn.media.amplience.net/s/ride/ride_2627_deep-fake_RD261850?w=1200&qlt=90&fmt=auto"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://cdn.media.amplience.net/s/ride/ride_2627_warpig_RD261857?w=1200&qlt=90&fmt=auto"),
+    true,
+  );
+  assert.equal(
+    isAllowedImageUrl("https://www.jonessnowboards.com/cdn/shop/files/J.27.SNM.UFL-gallery-1.webp?v=1782443801&width=1200"),
+    true,
+  );
+  assert.equal(isAllowedImageUrl("https://cdn.media.amplience.net/s/unrelated/file.jpg"), false);
+  assert.equal(isAllowedImageUrl("https://www.jonessnowboards.com/private/file.webp"), false);
+});

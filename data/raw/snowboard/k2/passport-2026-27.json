@@ -1,0 +1,120 @@
+{
+  "brand": "K2",
+  "model": "Passport",
+  "season": "2026-27",
+  "sku": "KB261689",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/k2-passport-2027.yaml",
+  "sources": {
+    "official2027ProductPage": {
+      "url": "https://k2snow.com/en-us/p/passport-unisex-snowboard-kb261689",
+      "title": "K2 Passport Unisex Snowboard 2027",
+      "hostNote": "K2 official US storefront. Listed price is regional US USD and does not establish China-market pricing.",
+      "evidence": "Confirms SKU KB261689, 2027 model, current US listed price USD 599.95, 13 lengths, Directional Combination Camber, Tapered Directional / Traditional Shape, A1 Core, ICG 10 Triax Glass with Carbon, and Sintered 4000 Stone Finish Base. Product copy describes 8 mm taper, a slightly wider-than-average waist, early rise toward the nose, and turn-friendly variable sidecut."
+    },
+    "officialJapanCollectionPrice": {
+      "url": "https://k2snow.com/en-jp/c/all-snowboarding/all-mens-snowboard/",
+      "title": "K2 Japan men's snowboard collection",
+      "hostNote": "Official Japan storefront, tax-inclusive regional listing; not a China-market price.",
+      "currency": "JPY",
+      "listedPriceInclTax": 84700,
+      "captureDate": "2026-10-02",
+      "evidence": "The official Japan collection lists K2 Passport Unisex Snowboard 2027 at JPY 84,700 including tax."
+    },
+    "theGoodRide": {
+      "url": "https://thegoodride.com/snowboard-reviews/k2-passport-snowboard-review/",
+      "title": "K2 Passport 2023-2024 Snowboard Review",
+      "hostNote": "Historical model-year review, not a 2027 sample. Its test block discloses an extended demo but does not date the physical sample separately; summary notes the product had not changed for the 2024 update.",
+      "testSetup": "Size 157; four days; firm to good mid-winter snow at Mission Ridge, mixed spring conditions and 6 inches of spring powder; reviewer boot US 9, height 5 ft 10 in, weight 185-190 lb.",
+      "evidence": "Reports a damp/rubbery medium-to-medium-stiff ride, quick edge transitions and tighter turns, competent but not specialist hard-snow hold, easy skidded turns, strong all-condition consistency, moderate directional float (reviewer did not stress-test it in powder), usable switch, pipe and jumps, but a less stable jump platform than some boards and only average jibbing. Exact board mass intentionally not published; it only felt normal."
+    },
+    "snowboardingProfiles": {
+      "url": "https://snowboardingprofiles.com/k2-passport-snowboard-review",
+      "title": "K2 Passport Snowboard Review",
+      "pageUpdatedAt": "2026-01-26",
+      "hostNote": "Historical review sample is explicitly a 2024 size 160 board tested 2024-01-23, not a 2027 test. Its 85.6/100 overall score and category scores use the site's own composite rubric and are not mapped to this project's six editorial dimensions.",
+      "evidence": "Directional observations describe damp stability in messy conditions, competent firm-snow grip and carving, but physical effort for some turns; powder assessment is inferred from shape/specs rather than a powder-day test, and jump pop is average. This is historical directional context only."
+    }
+  },
+  "units": {
+    "effectiveEdgeCm": "Official table unit cm; converted to mm for seed sizeSpecs.",
+    "noseWaistTailCm": "Official table order nose/waist/tail and unit cm; each converted to mm for seed sizeSpecs.",
+    "sidecutRadiiM": "Official table gives three radii in source order; no heel/toe labels are supplied, so none are inferred.",
+    "referenceStanceInches": "One reference stance, not a selectable stance range; source value is retained exactly and converted to nearest mm for display.",
+    "setbackInches": "Official table lists 0.75 in for every size. Seed uses positive magnitude 19 mm (rounded from 19.05 mm), matching existing K2 seed convention; direction is tailward for this directional board.",
+    "riderWeight": "K2 publishes recommended lb and kg ranges per size; source strings retained verbatim below."
+  },
+  "sizeRows": [
+    {"size":"146","widthVariant":"standard","effectiveEdgeCm":109,"noseWaistTailCm":[28.8,24.3,28.0],"sidecutRadiiM":[5.3,7.3,4.8],"referenceStanceInches":19,"setbackInches":0.75,"riderWeightRaw":"90-160+ lb / 41-73+ kg"},
+    {"size":"149","widthVariant":"standard","effectiveEdgeCm":112,"noseWaistTailCm":[29.2,24.6,28.4],"sidecutRadiiM":[5.5,7.5,5.0],"referenceStanceInches":19,"setbackInches":0.75,"riderWeightRaw":"90-160+ lb / 41-73+ kg"},
+    {"size":"151","widthVariant":"standard","effectiveEdgeCm":113,"noseWaistTailCm":[29.4,24.8,28.6],"sidecutRadiiM":[5.6,7.6,5.1],"referenceStanceInches":20,"setbackInches":0.75,"riderWeightRaw":"120-190+ lb / 54-86+ kg"},
+    {"size":"151W","widthVariant":"wide","effectiveEdgeCm":113,"noseWaistTailCm":[30.0,25.4,29.2],"sidecutRadiiM":[5.6,7.6,5.1],"referenceStanceInches":20,"setbackInches":0.75,"riderWeightRaw":"120-190+ lb / 54-86+ kg"},
+    {"size":"154","widthVariant":"standard","effectiveEdgeCm":116,"noseWaistTailCm":[29.9,25.2,29.1],"sidecutRadiiM":[5.8,7.8,5.3],"referenceStanceInches":21,"setbackInches":0.75,"riderWeightRaw":"120-190+ lb / 54-86+ kg"},
+    {"size":"154W","widthVariant":"wide","effectiveEdgeCm":116,"noseWaistTailCm":[30.7,26.0,29.9],"sidecutRadiiM":[5.8,7.8,5.3],"referenceStanceInches":21,"setbackInches":0.75,"riderWeightRaw":"120-190+ lb / 54-86+ kg"},
+    {"size":"157","widthVariant":"standard","effectiveEdgeCm":118,"noseWaistTailCm":[30.3,25.5,29.5],"sidecutRadiiM":[6.0,8.0,5.5],"referenceStanceInches":21,"setbackInches":0.75,"riderWeightRaw":"120-190+ lb / 54-86+ kg"},
+    {"size":"157W","widthVariant":"wide","effectiveEdgeCm":118,"noseWaistTailCm":[31.1,26.3,31.1],"sidecutRadiiM":[6.0,8.0,5.5],"referenceStanceInches":21,"setbackInches":0.75,"riderWeightRaw":"120-190+ lb / 54-86+ kg"},
+    {"size":"159W","widthVariant":"wide","effectiveEdgeCm":121,"noseWaistTailCm":[31.4,26.6,30.6],"sidecutRadiiM":[6.2,8.2,5.7],"referenceStanceInches":22,"setbackInches":0.75,"riderWeightRaw":"130-210+ lb / 59-95+ kg"},
+    {"size":"160","widthVariant":"standard","effectiveEdgeCm":121,"noseWaistTailCm":[30.6,25.8,29.8],"sidecutRadiiM":[6.2,8.2,5.7],"referenceStanceInches":22,"setbackInches":0.75,"riderWeightRaw":"130-210+ lb / 59-95+ kg"},
+    {"size":"162W","widthVariant":"wide","effectiveEdgeCm":123,"noseWaistTailCm":[31.8,26.9,31.0],"sidecutRadiiM":[6.4,8.4,5.9],"referenceStanceInches":23,"setbackInches":0.75,"riderWeightRaw":"140-230+ lb / 64-104+ kg"},
+    {"size":"163","widthVariant":"standard","effectiveEdgeCm":123,"noseWaistTailCm":[31.0,26.1,30.2],"sidecutRadiiM":[6.4,8.4,5.9],"referenceStanceInches":23,"setbackInches":0.75,"riderWeightRaw":"140-230+ lb / 64-104+ kg"},
+    {"size":"166W","widthVariant":"wide","effectiveEdgeCm":126,"noseWaistTailCm":[31.9,26.9,31.1],"sidecutRadiiM":[6.6,8.6,6.1],"referenceStanceInches":23,"setbackInches":0.75,"riderWeightRaw":"140-230+ lb / 64-104+ kg"}
+  ],
+  "representativeSize": {
+    "selection": "157 cm standard",
+    "basis": "Median of seven standard sizes [146,149,151,154,157,160,163]; wide variants are excluded. The 157 official geometry row is directly listed, not interpolated."
+  },
+  "pricing": {
+    "officialUS": {
+      "url": "https://k2snow.com/en-us/p/passport-unisex-snowboard-kb261689",
+      "currency": "USD",
+      "listedPrice": 599.95,
+      "priceType": "official US storefront listed price; not expressly labeled MSRP",
+      "captureDate": "2026-10-02",
+      "note": "Dynamic regional listing, not a verified China-market price."
+    },
+    "seed": {
+      "currency": "CNY",
+      "value": 4320,
+      "conversionRateToCny": 7.2,
+      "formula": "round(599.95 * 7.2) = 4320",
+      "note": "Project currency normalization only, not a Chinese retail offer; value score remains low confidence until local price evidence is available."
+    }
+  },
+  "scoringEvidence": {
+    "theGoodRide": {
+      "modelYear": "2023-24 review page/update, not 2027",
+      "sampleSizeCm": 157,
+      "testDays": 4,
+      "conditions": "Firm to good Mission Ridge mid-winter snow, mixed spring conditions and 6 inches of spring powder.",
+      "observations": {
+        "stability": "Damp and consistent across tried conditions; hard-snow hold was competent, not specialist.",
+        "response": "Fast edge-to-edge and prefers tighter turns; easy to skid and reasonably forgiving.",
+        "float": "Some powder exposure but explicitly not stress-tested; reviewer describes a useful one-board directional float, not a dedicated-powder choice.",
+        "park": "Usable for pipe/jumps; reviewer notes a less stable jump platform than some and average jibbing.",
+        "forgiveness": "Less catchy than profile suggests and easy to skid; medium-to-medium-stiff feel.",
+        "value": "Reviewer says glide is middle ground, neither especially fast nor slow; this does not establish China-market value."
+      }
+    },
+    "snowboardingProfiles": {
+      "modelYear": 2024,
+      "sampleSizeCm": 160,
+      "testDate": "2024-01-23",
+      "publishedOverall": "85.6/100; different scale, no linear mapping",
+      "observations": "Damp/stable in messy conditions, capable carving and firm-snow edge hold; some turns take physical effort. Powder is inferred from shape/specs, not directly tested; jump pop is average. Historical supporting context only."
+    },
+    "siteScoreDecision": "Keep existing stability 7.9 / response 8.1 / float 7.0 / park 6.5 / forgiveness 7.6 / value 7.1 as low-to-moderate-confidence editorial estimates. The 2023-24 disclosed test generally supports a damp, quick-turning, relatively forgiving all-mountain freeride character, but its limited powder exposure and non-2027 sample do not justify precise numeric remapping. Park remains a modest all-around estimate, not a park specialization. Value is least reliable: the US USD 599.95 and official Japan JPY 84,700 tax-inclusive prices are regional references only; seed CNY 4320 normalizes the US listing using the project's 7.2 rate, not a verified local price. Do not map external composites/category ratings to the project's six axes.",
+    "confidence": "moderate for broad ride direction based on historical disclosed four-day test; low for exact 2027 performance, powder/park scores and local value"
+  },
+  "images": {
+    "seedImageUrl": "https://blauerboardshop.com/cdn/shop/files/K2PassportSnowboard2027.png?v=1776985303",
+    "seedImageSource": "Blauer Board Shop retailer product image",
+    "rights": "No explicit reuse license confirmed. Keep the existing reference with rights caveat; do not copy to production hosting without permission or replace it with original photography."
+  },
+  "seedMappingNotes": [
+    "Official source publishes 13 sizes; YAML sizeSpecs contains every row. Standard sizes are 146/149/151/154/157/160/163; 157 is their median. Wide rows remain explicitly tagged.",
+    "Official triple sidecut radii are preserved in source order; no heel/toe interpretation is invented.",
+    "K2's Stance column is a single reference width, not a stance range. The table setback is 0.75 in; the seed uses a positive rounded 19 mm magnitude per existing K2 convention.",
+    "No official board mass was located. The Good Ride only gives a subjective 'normal' impression and intentionally does not publish exact mass; no numerical weight is inferred.",
+    "No China-market price or verified third-party image reuse license was found."
+  ]
+}

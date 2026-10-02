@@ -1,0 +1,48 @@
+slug: gray-prodigy-2027
+category: snowboard
+brand: gray
+model: PRODIGY
+year: 2027
+title: GRAY PRODIGY 2027
+one_liner: GRAY 旗舰方向双向板，玻纤与 X 形碳纤结构强调快速回弹、控制力与中高速稳定，覆盖自由式跳台和全山地滑行。日本官方含税 MSRP ¥126,500，按 2026-10-02 参考汇率折算约 ¥5,370 CNY（非中国零售价）。
+editorial_scores:
+  stability: 8.0
+  response: 8.5
+  float: 5.2
+  park: 8.4
+  forgiveness: 5.8
+  value: 7.2
+price:
+  min: 5370
+  max: 5370
+  currency: CNY
+specs:
+  core: STD Core II
+  shape: Directional Twin
+  scenes:
+    - all-mountain
+    - freestyle
+    - carving
+  profile: Single Camber
+  fiberglass: Fiberglass + X-shaped Carbon Roving
+  profileFamily: camber
+  sizeSpecs:
+    - {"base":"IS 7500 Graphite","edge":"1.8 mm 高碳不锈钢","size":"46.5","camber":8,"setback":10,"insertQty":"10+12","noseWidth":275,"stiffness":"4.8/6.3/5.3","tailWidth":275,"noseHeight":47.7,"noseLength":195,"tailHeight":40.8,"tailLength":180,"waistWidth":234,"stanceWidth":"460–560","sidecutRadii":"7800/6880/7800","contactLength":1090,"effectiveEdge":1140,"overallLength":1465,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - {"base":"IS 7500 Graphite","edge":"1.8 mm 高碳不锈钢","size":"51.5","camber":10,"setback":20,"insertQty":"12+12","noseWidth":285,"stiffness":"5.5/7.0/6.0","tailWidth":285,"noseHeight":45.5,"noseLength":195,"tailHeight":38.9,"tailLength":180,"waistWidth":242,"stanceWidth":"460–580","sidecutRadii":"8200/7180/8200","contactLength":1140,"effectiveEdge":1180,"overallLength":1515,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - {"base":"IS 7500 Graphite","edge":"1.8 mm 高碳不锈钢","size":"51.5w","camber":10,"setback":20,"insertQty":"12+12","noseWidth":293,"stiffness":"5.5/7.0/6.0","tailWidth":293,"noseHeight":45.5,"noseLength":195,"tailHeight":38.9,"tailLength":180,"waistWidth":250,"stanceWidth":"460–580","sidecutRadii":"8200/7180/8200","contactLength":1140,"effectiveEdge":1180,"overallLength":1515,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"GREY"}
+    - {"base":"IS 7500 Graphite","edge":"1.8 mm 高碳不锈钢","size":"53.5","camber":10,"setback":20,"insertQty":"12+12","noseWidth":285,"stiffness":"6.0/7.5/6.5","tailWidth":285,"noseHeight":45.5,"noseLength":195,"tailHeight":38.9,"tailLength":180,"waistWidth":244,"stanceWidth":"480–600","sidecutRadii":"8700/7880/8700","contactLength":1160,"effectiveEdge":1200,"overallLength":1535,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - {"base":"IS 7500 Graphite","edge":"1.8 mm 高碳不锈钢","size":"55.5","camber":10,"setback":20,"insertQty":"12+12","noseWidth":287,"stiffness":"6.5/8.0/7.0","tailWidth":287,"noseHeight":45.5,"noseLength":195,"tailHeight":38.9,"tailLength":180,"waistWidth":250,"stanceWidth":"500–620","sidecutRadii":"9020/8080/9020","contactLength":1180,"effectiveEdge":1220,"overallLength":1555,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - {"base":"IS 7500 Graphite","edge":"1.8 mm 高碳不锈钢","size":"55.5w","camber":10,"setback":20,"insertQty":"12+12","noseWidth":295,"stiffness":"6.5/8.0/7.0","tailWidth":295,"noseHeight":45.5,"noseLength":195,"tailHeight":38.9,"tailLength":180,"waistWidth":254,"stanceWidth":"500–620","sidecutRadii":"9020/8080/9020","contactLength":1180,"effectiveEdge":1220,"overallLength":1555,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"GREY"}
+    - {"base":"IS 7500 Graphite","edge":"1.8 mm 高碳不锈钢","size":"57.5","camber":12,"setback":20,"insertQty":"12+12","noseWidth":288,"stiffness":"7.0/8.5/7.5","tailWidth":288,"noseHeight":45.5,"noseLength":195,"tailHeight":38.9,"tailLength":180,"waistWidth":246,"stanceWidth":"500–620","sidecutRadii":"9100/8280/9100","contactLength":1200,"effectiveEdge":1240,"overallLength":1575,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - {"base":"IS 7500 Graphite","edge":"1.8 mm 高碳不锈钢","size":"57.5w","camber":12,"setback":20,"insertQty":"12+12","noseWidth":300,"stiffness":"7.0/8.5/7.5","tailWidth":300,"noseHeight":45.5,"noseLength":195,"tailHeight":38.9,"tailLength":180,"waistWidth":258,"stanceWidth":"500–620","sidecutRadii":"9100/8280/9100","contactLength":1200,"effectiveEdge":1240,"overallLength":1575,"sidecutOffset":0,"sidewallAngle":"25°","sidewallColor":"GREY"}
+images:
+  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/01_PRODIGY/2627_01_PRODIGY_main.png"
+    kind: face
+    alt: GRAY PRODIGY 2027 官方商品图
+    source: GRAY 官方 26-27 商品页（图片授权待核）
+    sort_order: 0
+data_source:
+  kind: manual
+  origin_url: https://graysnowboards.co.jp/product-2627-eng/
+  snapshot_url: https://xiaopang.club/api/products/gray-prodigy-2027
+status: published

@@ -1,0 +1,46 @@
+{
+  "brand": "BC STREAM",
+  "model": "RX",
+  "season": "2026-27",
+  "sources": {
+    "officialProductListing": {
+      "url": "https://www.follows.co.jp/SHOP/sn-sb-bc-056.html",
+      "retrievedAt": "2026-10-02",
+      "host": "Follows retailer",
+      "evidence": "The listing identifies RX as a directional carving-oriented board and describes a 26/27 Hard Flex option.",
+      "limitations": "Retail listing is not an independent ride test; its current variant is not represented by a disclosed on-snow sample."
+    },
+    "officialDemoList2025-26": {
+      "url": "https://www.bc-stream.com/wp/wp-content/uploads/6e270f110d2d98534d9b01d3bfccd288.pdf",
+      "retrievedAt": "2026-10-02",
+      "eventDates": "2025-03-14 to 2025-03-16",
+      "location": "White World Oze Iwakura, Gunma, Japan",
+      "listedRXSizes": ["54N/46-54","59N/46-54","59/52-60","64/54-62","69/50-58","74/50-58"],
+      "listedRXTiSizes": ["59/52-60","64/48-56","69/50-58","74/50-58"],
+      "evidence": "Manufacturer-hosted 25/26 demo-board list confirms regular RX and RX Ti were available in multiple sizes for the event.",
+      "limitations": "Inventory list only; no rider report or outcomes. Adjacent season, not the seed's 26/27 product."
+    },
+    "historicalRetailOverview2021-22": {
+      "url": "https://kssnow.blog.fc2.com/blog-entry-1498.html",
+      "publishedAt": "2021-03-02",
+      "host": "KS Snow retailer/snowboard school blog",
+      "evidence": "2021-22 model overview describes RX as a longer carving-oriented progression from R-2, with taper, sidecut and camber intended for strong grip and deep turns; lists sizes 154N/159N/159/164/169/174.",
+      "limitations": "Promotional/model overview, not a disclosed test; five model years older than the seed. Do not use for current-season specifications or scores."
+    },
+    "reviewSearch": {
+      "retrievedAt": "2026-10-02",
+      "result": "Search located a historical carving demonstration video and older owner/forum pages, but no sufficiently disclosed independent 26/27 (or adjacent-season) RX test covering sample size, conditions, and ride observations."
+    }
+  },
+  "scoringEvidence": {
+    "currentSiteScores": {"stability":9.1,"response":9.0,"float":5.5,"park":2.5,"forgiveness":3.8,"value":6.8},
+    "decision": "Retain all six 26/27 scores only as low-confidence product-positioning estimates. Carving-oriented retail copy and a 25/26 demo inventory list do not establish measured stability/response, and the older 21/22 shop overview is several seasons out of date and not a test. Float, park and forgiveness have no sufficiently direct current evidence. Value is converted Japan pricing, not a Chinese-market quote. No outside score is mapped to site dimensions.",
+    "confidence": "Low across all dimensions, especially float/park/forgiveness/value; 26/27 hard-flex variant further limits inference from older regular models."
+  },
+  "unresolved": [
+    "No disclosed 26/27 or adjacent-season RX on-snow review located.",
+    "No 26/27 geometry/weight table recovered in this evidence batch.",
+    "No China-market price or image reuse authorization verified.",
+    "Hard Flex option may produce substantially different ride behavior from historical regular-flex models."
+  ]
+}

@@ -1,0 +1,48 @@
+slug: nitro-banker-2027
+category: snowboard
+brand: nitro
+model: Banker
+year: 2027
+title: Nitro Banker Snowboard 2027
+one_liner: 面向全山高速刻滑与粉雪地形的定向板，采用 True Camber、Powercore II 与烧结底板；官方标注硬度 8/10。
+editorial_scores:
+  stability: 8.6
+  response: 8.7
+  float: 7.5
+  park: 6.7
+  forgiveness: 5.8
+  value: 7.3
+price:
+  min: 639.95
+  max: 639.95
+  currency: USD
+specs:
+  length: 156
+  waistWidth: 255
+  stanceSetback: -15
+  profile: True Camber
+  profileFamily: camber
+  shape: Directional
+  core: Powercore II
+  fiberglass: Bi-Lite Laminates
+  base: Sintered EcoSpeed HD
+  flex: 8
+  scenes:
+    - all-mountain
+    - powder
+    - carving
+  sizeSpecs:
+    - {size: "148", waistWidth: 243, runningLength: 1060, noseWidth: 286, tailWidth: 282, sidecutRadii: "7.5/5.9 m", stanceWidth: "44–56 cm", setback: -15}
+    - {size: "152", waistWidth: 246, runningLength: 1090, noseWidth: 289, tailWidth: 286, sidecutRadii: "7.8/6.1 m", stanceWidth: "46–58 cm", setback: -15}
+    - {size: "156", waistWidth: 255, runningLength: 1120, noseWidth: 300, tailWidth: 296, sidecutRadii: "8.0/6.3 m", stanceWidth: "48–60 cm", setback: -15}
+    - {size: "160", waistWidth: 260, runningLength: 1150, noseWidth: 306, tailWidth: 302, sidecutRadii: "8.2/6.5 m", stanceWidth: "50–62 cm", setback: -15}
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/11SB11004-101-1multBankerII.jpg?v=1787539883"
+    kind: face
+    alt: Nitro Banker 2027 官方产品图
+    source: Nitro 官方产品页图片（转载授权未核实）
+    sort_order: 0
+data_source:
+  kind: crawl
+  origin_url: https://www.nitrosnowboards.com/collections/all-mens-snowboards-26-27/products/banker-snowboard-1
+status: published

@@ -1,0 +1,78 @@
+{
+  "brand": "RIDE",
+  "model": "Algorhythm",
+  "season": "2025-26",
+  "seedFile": "data/snowboard/ride-algorythm-2026.yaml",
+  "retrievedAt": "2026-10-02",
+  "sources": {
+    "backcountry2026": {
+      "url": "https://www.backcountry.com/ride-algorhythm-snowboard-2026-mens",
+      "title": "Ride Algorhythm Snowboard - 2026 - Men's",
+      "hostNote": "Retailer product page; not an official RIDE-hosted historical catalog. The page explicitly names the 2026 men's model and presents technical specs for all eight size variants.",
+      "evidence": "Directly rechecked 2026 men's product page on 2026-10-02. Lists 147, 151, 154, 155W, 157, 160W, 161, 164W; per-size effective edge, waist, triple sidecut radii, stance width and rider-weight ranges; product-wide 0.75 in stance setback; standard camber, directional twin, medium flex, 2x4 mount, Performance Core, Pre-Cured Glass/Carbon Array 5, Carbon Slimewalls, sintered base and three-year warranty. These are retailer-published specifications, not a RIDE-hosted historical tech sheet."
+    },
+    "fuso2526": {
+      "url": "https://item.rakuten.co.jp/fusosports/126rid1013/",
+      "title": "RIDE ALGORHYTHM 25-26",
+      "hostNote": "Japanese retailer listing, not a brand source.",
+      "evidence": "For 160W, the retailer listing supplies an independent cross-check of 264 mm waist, 9.4/6.9/9.4 m radii, 19 mm directional setback, reference stance 559 mm, 311 mm nose/tail width and 160-220+ lb rider-weight range. Identifies directional twin, standard camber, quadratic sidecut, Performance Core and Carbon Array 5. The listing could not be fetched directly in the current verification pass; preserve as previously captured evidence, not a new direct confirmation."
+    },
+    "skiPro2526": {
+      "url": "https://skipro.com/collections/2025-skis-snowboards/products/algorythm-56w",
+      "title": "Ride Algorythm 2026",
+      "hostNote": "Retailer product page; used only for corroboration of construction terminology.",
+      "evidence": "Lists 2026 standard camber, directional twin, Performance Core (Aspen/Bamboo/Paulownia), Carbon Array 5, Double Impact Plates, Pre-Cured Glass and Sintered 4000 Base; dimensions are consistent with other retailer listings."
+    },
+    "officialSeasonPage": {
+      "url": "https://ridesnowboards.com/en-us/all-mountain",
+      "evidence": "Used for season identity, available sizes and official all-mountain positioning only; not used as the source of historical 25/26 geometry."
+    }
+  },
+  "units": {
+    "length": "cm",
+    "effectiveEdge": "mm",
+    "noseTailWidth": "mm",
+    "waistWidth": "mm",
+    "sidecutRadiiM": "m; three radii preserved in the order shown by the retailer",
+    "stanceSetback": "Backcountry lists 0.75 in; FUSO lists 19 mm. Seed uses the independently corroborated 19 mm value as a positive setback distance.",
+    "riderWeightLb": "lb; copied as displayed, including open-ended + ranges"
+  },
+  "product": {
+    "profile": "Standard Camber",
+    "shape": "Directional Twin",
+    "retailerFlex": "Medium (qualitative; no verified RIDE numeric flex scale for this season)",
+    "core": "Performance Core (aspen, bamboo, paulownia)",
+    "laminate": "Pre-Cured Glass, Carbon Array 5",
+    "impactPlates": "Double Impact Plates (SkiPro listing)",
+    "sidewalls": "Carbon Slimewalls",
+    "base": "Sintered; SkiPro identifies Sintered 4000",
+    "mount": "2 x 4",
+    "warrantyYears": 3,
+    "noVerifiedBoardWeight": true
+  },
+  "sizeRows": [
+    {"size":"147","effectiveEdgeMm":1096,"waistWidthMm":245,"sidecutRadiiM":[9.0,6.5,9.0],"stanceWidthIn":20,"riderWeightLb":"75-165"},
+    {"size":"151","effectiveEdgeMm":1121,"waistWidthMm":248,"sidecutRadiiM":[9.1,6.6,9.1],"stanceWidthIn":21,"riderWeightLb":"100-180"},
+    {"size":"154","effectiveEdgeMm":1147,"waistWidthMm":251,"sidecutRadiiM":[9.2,6.7,9.2],"stanceWidthIn":22,"riderWeightLb":"115-195"},
+    {"size":"155W","effectiveEdgeMm":1159,"waistWidthMm":258,"sidecutRadiiM":[9.2,6.7,9.2],"stanceWidthIn":22,"riderWeightLb":"125-205"},
+    {"size":"157","effectiveEdgeMm":1172,"waistWidthMm":254,"sidecutRadiiM":[9.3,6.8,9.3],"stanceWidthIn":22,"riderWeightLb":"125-205"},
+    {"size":"160W","effectiveEdgeMm":1197,"waistWidthMm":264,"sidecutRadiiM":[9.4,6.9,9.4],"stanceWidthIn":22,"riderWeightLb":"160-220+","noseTailWidthMm":[311,311],"fusoSetbackMm":19,"fusoReferenceStanceMm":559},
+    {"size":"161","effectiveEdgeMm":1197,"waistWidthMm":257,"sidecutRadiiM":[9.4,6.9,9.4],"stanceWidthIn":22,"riderWeightLb":"130-210"},
+    {"size":"164W","effectiveEdgeMm":1223,"waistWidthMm":266,"sidecutRadiiM":[9.5,7.0,9.5],"stanceWidthIn":23,"riderWeightLb":"170-220+"}
+  ],
+  "seedMappingNotes": [
+    "Seed represents the existing 160W variant; the official-season size list has no standard 160. Keep length 160 plus widthVariant wide.",
+    "The scalar sidecut field retains the middle radius 6.9 m for compatibility; the full triple is preserved in sidecutRadii.",
+    "Retailer says stance setback 0.75 in and Japanese listing says 19 mm; record 19 mm without presenting it as a brand-primary figure.",
+    "The old 160W effectiveEdge 1265 mm, sidecut 8.6 m, setback 40 mm, hybrid profile and listed construction values lacked season-matched support and were replaced by 25/26 retailer evidence. The old 3050 g weight had no reliable source and was removed.",
+    "Do not treat the retailer word medium or a reviewer-estimated 6.5/10 on snow as an official numeric RIDE flex scale. Existing site flex 8 remains explicitly unverified pending a normalization policy.",
+    "No comparable local CNY price or trustworthy model/size-specific board mass was verified. Existing seed price is not re-sourced by this record."
+  ],
+  "scoringEvidence": {
+    "reviewUrl": "https://snowboardingprofiles.com/ride-algorhythm-snowboard-review",
+    "reviewedBoard": "2025 model, 157 cm",
+    "testDate": "2024-03-23",
+    "limitations": "Reviewer states the demo test was mainly rainy/slushy and less comprehensive than usual. Use only as adjacent-season directional context, not as a 2026 score source.",
+    "scoreDecision": "Keep current six editorial dimensions unchanged and low-confidence; do not map the review's 77.7/100 or subscale observations directly to site scores."
+  }
+}

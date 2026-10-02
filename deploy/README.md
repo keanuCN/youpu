@@ -3,10 +3,13 @@
 线上形态：**Next.js 静态导出（`out/`）由 nginx 直接托管** + **PG/Redis 容器** + **systemd 常驻 Node API**。
 内测阶段不上 ES/Umami：服务器 2C1G 内存受限，搜索先用 PG（全文检索 / trgm），ES 是架构里唯一可从 PG 完全重建的组件。
 
-## 服务器现状（2026-09-14 夜，逐条可回滚）
+## 服务器现状
 
-主机：腾讯云 CVM · 上海四区 · 2 核 1G · OpenCloudOS 9.6 · 宝塔面板（MySQL / nginx 在跑，勿动）
-域名：xiaopang.club（✅ 已备案 津ICP备2026009482号；⚠️ DNS 的 A 记录还没加）
+主机资料来自 2026-09-14 部署记录：腾讯云 CVM · 上海四区 · 2 核 1G · OpenCloudOS 9.6 · 宝塔面板（MySQL / nginx 在跑，勿动）。硬件与系统状态尚未重新登录服务器核实。
+
+2026-09-30 部署后复核：`https://xiaopang.club/`、`/admin/`、`/api/health` 均返回 200；健康接口为 `db=true`、`redis=true`、`es=false`。正式 HTTPS 静态前台已发布，canonical、robots/sitemap、前端资源未发现 localhost；API systemd 服务 active，7/7 Prisma migrations 已应用。静态发布版本 `20260930T105502Z`，回滚备份为 `/www/wwwroot/xiaopang.club.backup-20260930T105502Z`。
+
+2026-10-02 静态目录更新：从生产公开 API 导出 285 条商品后完成构建与发布；首页、单板档案库、三款新增商品详情及其官方图片地址、管理台、robots/sitemap、API 健康检查均返回 200。发布版本 `20261002T051210Z`，回滚备份为 `/www/wwwroot/xiaopang.club.backup-20261002T051210Z`；`/admin/` 与 `/.well-known/` 在发布前后内容校验一致。
 
 | 已做的改动 | 说明 / 回滚方式 |
 |---|---|
@@ -18,16 +21,20 @@
 | 装 Node 20.19 + pnpm 9.15 | `/usr/local/node-v20.19.0-linux-x64`（软链到 /usr/bin） |
 | 上传源码 | `/opt/youpu`（scp 上传，非 git —— Gitee 仓库是私有的，服务器无法匿名 clone） |
 
-## 待续（明天从这里开始）
+## 上线验收状态
 
-1. `cd /opt/youpu && PRISMA_ENGINES_MIRROR=https://registry.npmmirror.com/-/binary/prisma NODE_OPTIONS=--max-old-space-size=384 pnpm install --filter @youpu/api...`
-   → 再构建：`pnpm --filter @youpu/schema build && pnpm --filter @youpu/api build`
-   （内存上限必须加，防止拖垮共存的 MySQL）
-2. 重置 schema 让迁移历史一致（当前是手工 psql 应用的 SQL，没有 `_prisma_migrations` 表）：
-   `docker exec youpu-postgres psql -U youpu -d youpu -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"` 然后 `pnpm --filter @youpu/api prisma:migrate`
-3. `pnpm --filter @youpu/api seed` → 15 款板入库
-4. API 以 **systemd 常驻**（不进 Docker，决策见下）；env 指向 `127.0.0.1:5432/6379`
-5. 静态站埋点接 API：nginx 加 `/api` 反代 → 用 `NEXT_PUBLIC_API_BASE=https://xiaopang.club` 重新构建静态产物并上传
+已完成：静态前台生产构建与发布；首页 / 管理台 / API 健康检查；目录数据、SEO canonical、robots、sitemap 和前端包抽检；生产 CORS、SMTP 配置存在性核验；补设随机 `AUTH_SECRET` 并重启 API；PostgreSQL 备份及隔离恢复演练；两条待执行 Prisma migration 已在验证数据币种后应用，迁移状态现为 up to date。
+
+正式开放前仍需：
+
+1. 指定并启用首个管理员账号（当前数据库有普通账号，但尚无 admin）。
+2. 用真实浏览器走通注册/登录、搜索、评论、后台审核及埋点关键链路。
+3. 配置自动化、异地保存且有保留策略的数据库备份；当前确认只有一次手工备份与恢复演练，未发现站点自动备份定时任务。
+4. 向站长平台提交 sitemap，并观察首批真实访问 / 错误日志。
+
+内测资源取舍：Elasticsearch 未启用（`es=false`），搜索由 PostgreSQL 兜底；这不是 API 健康故障。
+
+**禁止重置生产 schema。** 旧步骤中的 `DROP SCHEMA public CASCADE` 会删除现有表与数据，已从操作流程移除。若 `_prisma_migrations` 历史缺失，应先比对实际 schema 与迁移文件，再制定可审阅、保留数据的基线方案；不得直接清库或全量 seed。
 
 ### 决策记录：API 为什么先不进 Docker
 
@@ -38,19 +45,29 @@
 
 ```bash
 cd apps/web
-NEXT_OUTPUT=export NEXT_PUBLIC_SITE_URL=https://xiaopang.club pnpm build   # 产物在 apps/web/out
+NEXT_OUTPUT=export NEXT_PUBLIC_SITE_URL=https://xiaopang.club NEXT_PUBLIC_API_BASE=https://xiaopang.club CONTENT_EXPORT_API_BASE=https://xiaopang.club pnpm build   # 刷新 API 目录并生成 out/
 
 tar czf /tmp/youpu-static.tar.gz -C out .
 scp /tmp/youpu-static.tar.gz root@111.229.87.101:/tmp/
 ssh root@111.229.87.101 '
-  rm -rf /www/wwwroot/xiaopang.club/* &&
-  tar xzf /tmp/youpu-static.tar.gz -C /www/wwwroot/xiaopang.club &&
+  set -eu
+  root=/www/wwwroot/xiaopang.club
+  stage=$(mktemp -d /tmp/youpu-static-stage.XXXXXX)
+  release=$(date -u +%Y%m%dT%H%M%SZ)
+  test "$root" = /www/wwwroot/xiaopang.club
+  tar xzf /tmp/youpu-static.tar.gz -C "$stage"
+  test -s "$stage/index.html"
+  test -s "$stage/robots.txt"
+  cp -a "$root" "${root}.backup-${release}"
+  rsync -a --delete --exclude=/admin/ --exclude=/.well-known/ "$stage/" "$root/"
   chown -R www:www /www/wwwroot/xiaopang.club &&
-  nginx -s reload'
+  nginx -t && nginx -s reload'
 ```
 
+该流程会在替换前保留带时间戳的整站备份，并排除管理台与证书校验目录。回滚时先将当前站点另行备份，再从对应备份恢复；操作前核对归档和站点根目录。
+
 nginx 配置：`deploy/nginx/xiaopang.club.conf` → 服务器 `/www/server/panel/vhost/nginx/xiaopang.club.conf`（宝塔的 vhost 目录会被自动 include，改完先 `nginx -t` 再 reload）。
-回滚：静态站无状态，重新上传上一版 `out/` 即可。
+回滚：使用站点根目录旁带时间戳的 `.backup-<release>` 目录恢复；先另存当前站点，再恢复目标备份并执行 `nginx -t`、reload。也可重新发布上一版 `out/`。
 
 ## M2 管理台部署
 
@@ -69,9 +86,9 @@ scp /tmp/youpu-admin.tar.gz root@111.229.87.101:/tmp/
 
 | 项 | 状态 |
 |---|---|
-| DNS | ⏳ `xiaopang.club` 尚无 A 记录，需在域名服务商添加：`@ → 111.229.87.101`、`www → 111.229.87.101` |
+| DNS | ✅ `xiaopang.club` 已解析并可通过 HTTPS 访问（2026-09-30 只读检查） |
 | ICP 备案 | ✅ 已备案：**津ICP备2026009482号**（页脚展示并链至 beian.miit.gov.cn） |
-| HTTPS | 等 DNS 生效后配：腾讯云免费证书（宝塔面板可一键申请）加 443 server 块，HTTP 301 跳 HTTPS |
+| HTTPS | ✅ `https://xiaopang.club/` 返回 200；证书续期与 HTTP 跳转策略待登录服务器核实 |
 
 DNS 生效前，站点可先用 IP 访问：**http://111.229.87.101/**（server_name 里带了 IP）。
 

@@ -248,12 +248,23 @@ export async function getCategoryProducts(slug: string, options: ContentOptions 
   if ((options.source ?? resolveContentSource()) === "pack" || !isLive(slug)) return fallback;
 
   try {
-    const response = await requestJson(
+    const firstPage = await requestJson(
       `/api/products?category=${encodeURIComponent(slug)}&page=1&pageSize=48`,
       productListResponseSchema,
       options.fetcher ?? fetch,
     );
-    return response.items
+    const pageCount = Math.ceil(firstPage.total / firstPage.pageSize);
+    const remainingPages = await Promise.all(
+      Array.from({ length: Math.max(0, pageCount - 1) }, (_, index) =>
+        requestJson(
+          `/api/products?category=${encodeURIComponent(slug)}&page=${index + 2}&pageSize=${firstPage.pageSize}`,
+          productListResponseSchema,
+          options.fetcher ?? fetch,
+        ),
+      ),
+    );
+    return [firstPage, ...remainingPages]
+      .flatMap((page) => page.items)
       .filter((item) => isLive(item.categorySlug))
       .map((item) => mapProductListItem(item));
   } catch (error) {

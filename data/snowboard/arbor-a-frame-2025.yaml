@@ -6,22 +6,22 @@ brand: arbor
 model: A-Frame
 year: 2025
 title: Arbor A-Frame 2025
-one_liner: 一块要求你先把技术练好的板子。它的边刃精度接近硬鞋刻滑板，但依然保留了软鞋的舒适站位。
+one_liner: 长半径侧切与 RWD 碳纤维结构，主打粉雪中的控制力，同时也可作为日常全山板滑行。
 price:
   min: 6599
   max: 6599
   currency: CNY
 specs:
   length: 162
-  effectiveEdge: 1330
-  sidecut: 9.1
-  waistWidth: 260
-  stanceSetback: 25
-  profile: 纯 Camber
+  effectiveEdge: 1196
+  sidecutRadii: 9.3 / 8.4 / 9.3 m
+  waistWidth: 256
+  stanceSetback: 10
+  profile: Parabolic Camber / System Camber
   shape: 定向
-  core: FSC 白杨 / 竹
-  fiberglass: Triax + 碳纤维带
-  base: 烧结 7200
+  core: Highland III Core
+  fiberglass: Mixed Glassing
+  base: Sintered Base
   weight: 3180
   damping: 8.5
   pop: 5.5
@@ -29,13 +29,19 @@ specs:
   warranty: 3
   flex: 8.5
   profileFamily: camber
+  sizeSpecs:
+    - {size: "158", overallLength: 1580, waistWidth: 254, effectiveEdge: 1160, sidecutRadii: "9.1 / 8.2 / 9.1 m", noseLength: 310, tailLength: 190, noseWidth: 296, tailWidth: 288, setback: 10}
+    - {size: "159W", overallLength: 1590, waistWidth: 267, effectiveEdge: 1170, sidecutRadii: "9.0 / 8.1 / 9.0 m", noseLength: 310, tailLength: 190, noseWidth: 310, tailWidth: 301, setback: 10}
+    - {size: "162", overallLength: 1620, waistWidth: 256, effectiveEdge: 1196, sidecutRadii: "9.3 / 8.4 / 9.3 m", noseLength: 312, tailLength: 192, noseWidth: 300, tailWidth: 291, setback: 10}
+    - {size: "165MW", overallLength: 1650, waistWidth: 266, effectiveEdge: 1222, sidecutRadii: "9.45 / 8.55 / 9.45 m", noseLength: 314, tailLength: 194, noseWidth: 311, tailWidth: 302, setback: 10}
+    - {size: "170W", overallLength: 1700, waistWidth: 274, effectiveEdge: 1268, sidecutRadii: "9.45 / 8.8 / 9.45 m", noseLength: 316, tailLength: 196, noseWidth: 320, tailWidth: 311, setback: 10}
   scenes:
     - carving
     - all-mountain
 editorial_scores:
-  stability: 9.5
-  response: 9
-  float: 6
+  stability: 7.5
+  response: 7.5
+  float: 8.5
   park: 2
   forgiveness: 3
   value: 5.5
@@ -60,4 +66,7 @@ images:
     alt: Arbor A-Frame 实地 / FIELD
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 3
+data_source:
+  kind: official
+  origin_url: https://www.arborcollective.com/products/a-frame-snowboard-25
 status: published

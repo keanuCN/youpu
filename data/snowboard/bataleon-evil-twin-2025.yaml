@@ -1,31 +1,31 @@
 # 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
-# 原型 id：sb-08 · 参数未经官网逐项校对，转入正式发布前需人工核对
+# 原型 id：sb-08 · 2024/25 身份由官方档案核实；细项来自零售商历史规格，见 raw JSON 与来源清单
 slug: bataleon-evil-twin-2025
 category: snowboard
 brand: bataleon
 model: Evil Twin
 year: 2025
 title: Bataleon Evil Twin 2025
-one_liner: 勺形板头把卡刃这件事基本消除了。它是从新手过渡到公园最平滑的一块板，容错高但不软塌。
+one_liner: 3BT 与 Sidekick 配合中等 Camber 和真双向板型，定位公园与全山自由式；试滑反馈偏灵活、宽容，但板头尾在高速和烂雪中不适合强压。
 price:
   min: 4899
   max: 4899
   currency: CNY
 specs:
   length: 154
-  effectiveEdge: 1170
-  sidecut: 7.4
-  waistWidth: 251
+  effectiveEdge: 1175
+  sidecut: 7.94
+  waistWidth: 250
   stanceSetback: 0
-  profile: 3BT（板头尾勺形 + 板下 Camber）
+  profile: 3BT + Sidekick（中等 Camber）
   shape: 真双向
-  core: 白杨
-  fiberglass: Biax
-  base: 烧结 4400
+  core: Ultra Light Core（70%泡桐木/30%白杨木）+ Central Super Tube 碳管
+  fiberglass: Triax + 碳纤维加强条
+  base: Hyper Glide S 烧结底板
   weight: 2720
   damping: 6
   pop: 7.5
-  turnRadiusFeel: 极宽松，入弯无阻力
+  turnRadiusFeel: 中等半径，勺形边缘降低入弯咬刃感
   warranty: 2
   flex: 5
   profileFamily: hybrid
@@ -33,8 +33,8 @@ specs:
     - freestyle
     - beginner
 editorial_scores:
-  stability: 6
-  response: 6.5
+  stability: 5.5
+  response: 7.5
   float: 7
   park: 8.5
   forgiveness: 9
@@ -60,4 +60,8 @@ images:
     alt: Bataleon Evil Twin 实地 / FIELD
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 3
+# Official archive confirms adult Evil Twin is listed in 2024-25; retailer technical pages supply the historical dimensions/construction. See raw JSON for source limits and per-size values.
+data_source:
+  kind: official
+  origin_url: https://ca.bataleon.com/pages/board-archive
 status: published

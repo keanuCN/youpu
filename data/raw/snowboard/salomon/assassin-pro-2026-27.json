@@ -1,0 +1,66 @@
+{
+  "brand": "Salomon",
+  "model": "Assassin Pro",
+  "season": "2026-27",
+  "productCode": "L49292000",
+  "retrievedAt": "2026-10-02",
+  "sources": {
+    "officialProductUs": {
+      "url": "https://www.salomon.com/en-us/product/assassin-pro-li1301/L49292000",
+      "evidence": "Identifies Assassin Pro and product code L49292000; lists the 2027 size range as 150, 153, 156, 158W, 159, 162 and 163W, current US-region listed price USD 699.95, Directional Twin shape, expert/advanced level, stiff flex, Rock Out Camber, Quadralizer sidecut, Ghost Green Core, Popster Core, Ghost Carbon Beams, Gunslinger Sidewalls, BIAX HD fiberglass and Sintered EG base. The product page describes the design intent; it is not a ride test. US price is not a China-market price. The page's displayed net weights are treated as kg based on its explicit 150 size description and regional product text."
+    },
+    "absoluteSnow2027RideNotes": {
+      "url": "https://www.absolute-snow.co.uk/articles/salomon-freestyle-picks",
+      "evidence": "Article covers Salomon's 2026/27 range and states its team rode the range. Ross is identified with the Assassin Pro and reports having fun when riding fast/pushing it, strong pop, a solid underfoot feel, and enough creativity for a go-to board. This is a short single-rider qualitative note. It does not disclose board length, number of sessions, exact dates, snow/surface conditions, rider profile, or a repeatable test protocol; do not infer numerical scores or universal performance."
+    },
+    "backcountry2027RetailListing": {
+      "url": "https://www.backcountry.com/salomon-assassin-pro-snowboard-2027",
+      "evidence": "Identifies the item as 2027, lists USD 699.95 and the same seven sizes, and contains an anonymous Gearhead description of smooth dampening in variable/chattery snow, control at speed, and confidence on larger landings. The page says 'Be the first to review'; it does not identify the tester, size, date, conditions in detail, or method. Treated as weak retailer qualitative corroboration only, not an independent review or scoring input. Its detailed size table is secondary and is not merged into the official size table below."
+    }
+  },
+  "pricing": {
+    "officialUs": {
+      "currency": "USD",
+      "amount": 699.95,
+      "priceType": "official US product-page listed price",
+      "retrievedAt": "2026-10-02",
+      "note": "Regional listed price; not a verified China retail price. Seed CNY 5040 is preserved as a project FX-normalized estimate, not a local quote."
+    },
+    "seedPrice": {
+      "currency": "CNY",
+      "amount": 5040,
+      "priceType": "project FX-normalized estimate",
+      "market": "not China-market verified",
+      "note": "Preserved; current China price, seller, date, stock and checkout price are not verified."
+    }
+  },
+  "sizeTable": {
+    "source": "Official Salomon US product page",
+    "weightUnit": "kg",
+    "widthUnit": "mm",
+    "sidecutRadiusUnit": "m",
+    "rows": [
+      {"size":"150","widthVariant":"standard","noseWidthMm":291,"waistWidthMm":248,"tailWidthMm":291,"sidecutRadiusM":7.3,"boardWeightKg":2.5},
+      {"size":"153","widthVariant":"standard","noseWidthMm":295,"waistWidthMm":251,"tailWidthMm":295,"sidecutRadiusM":7.5,"boardWeightKg":2.58},
+      {"size":"156","widthVariant":"standard","noseWidthMm":298,"waistWidthMm":253,"tailWidthMm":298,"sidecutRadiusM":7.7,"boardWeightKg":2.65},
+      {"size":"158W","widthVariant":"wide","noseWidthMm":309,"waistWidthMm":263,"tailWidthMm":309,"sidecutRadiusM":8.0,"boardWeightKg":2.82},
+      {"size":"159","widthVariant":"standard","noseWidthMm":301,"waistWidthMm":255,"tailWidthMm":301,"sidecutRadiusM":7.9,"boardWeightKg":2.75},
+      {"size":"162","widthVariant":"standard","noseWidthMm":305,"waistWidthMm":258,"tailWidthMm":305,"sidecutRadiusM":8.1,"boardWeightKg":2.85},
+      {"size":"163W","widthVariant":"wide","noseWidthMm":313,"waistWidthMm":266,"tailWidthMm":313,"sidecutRadiusM":8.2,"boardWeightKg":2.95}
+    ],
+    "notProvidedByOfficialTable": ["effective edge", "stance range", "stance setback", "recommended rider weight", "weight tolerance", "weight measurement method"]
+  },
+  "scoringReview": {
+    "existingScores": {"stability":8.6,"response":8.8,"float":7.4,"park":8.0,"forgiveness":6.5,"value":6.3},
+    "decision": "Keep all six existing scores unchanged. Ross's brief 2026/27 ride note broadly corroborates solid support at speed, pop and freestyle creativity, but its absent sample size, conditions, rider details and method do not justify precise numeric recalibration. The Backcountry Gearhead note is anonymous retailer commentary and is not treated as an independent test. Stability/response/park are directionally plausible but low-confidence; float lacks direct snow-condition observations; forgiveness lacks controlled edge-catch/landing observations; value is especially low-confidence because no China-market price was verified. Do not map manufacturer design claims or retailer claims to numeric scores.",
+    "confidence": "low across all dimensions; very low for value"
+  },
+  "unverified": [
+    "No independent, reproducible multi-day 2026/27 ride test with disclosed size, snow conditions, rider profile and protocol was found.",
+    "No verified China-market current price, seller, stock status or checkout price.",
+    "Official page does not provide effective edge, stance range/setback, recommended rider weight, or a weight tolerance/measurement protocol.",
+    "The official product image URL is recorded in the seed, but image reuse permission has not been verified.",
+    "Warranty details were not verified from the cited official product page."
+  ],
+  "imageRights": "Official Salomon CDN image is retained only as a provenance reference. No reuse license was verified; use owned/licensed photography or obtain permission before hosting it in production."
+}

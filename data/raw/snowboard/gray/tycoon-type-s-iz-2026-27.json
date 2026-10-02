@@ -1,0 +1,84 @@
+{
+  "brand": "GRAY",
+  "model": "TYCOON Type-S [iz]",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/gray-tycoon-type-s-iz-2027.yaml",
+  "sources": {
+    "officialEnglishCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_eng_low.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE — CARVING CATEGORY",
+      "evidence": "Season-specific catalog provides the exact 63/85 size rows, dimensions, profile diagram, running base and construction. It identifies a full-metal sandwich, Aspen wood core, IZANAS fiber beneath the core, sintered topsheet, 48-hardness steel edge and progressive triple sidecut. Manufacturer construction specifications are not independent ride-test results."
+    },
+    "officialSeasonProduct": {
+      "url": "https://graysnowboards.co.jp/product-2627-eng/",
+      "evidence": "Confirms 26/27 model, full-metal + IZANAS construction, flex return description and compatibility testing with ALLFLEX and VIST/separate plates. Specifically says the 185 received an IZANAS volume and uneven-thickness revision for smoother flex return this season; warns bending/breaking of full-metal boards under excessive flex is not covered by warranty."
+    },
+    "officialJapaneseProduct": {
+      "url": "https://graysnowboards.co.jp/product/",
+      "evidence": "Current official 26/27 listing labels Japanese prices as ¥180,000 before tax and ¥198,000 tax-inclusive. The 185-season revision and no-warranty warning are stated on this page as well."
+    },
+    "officialTechnology": {
+      "url": "https://graysnowboards.co.jp/tech-2627-eng/",
+      "evidence": "Season technology page corroborates full-metal sandwich with 0.4 mm Titanal on top and bottom, IZANAS beneath the core, sintered topsheet, and 48-hardness steel edges."
+    },
+    "previousSeason163RideReport": {
+      "url": "https://housandango1911.hatenablog.com/entry/2025/06/03/25/26_GRAY_TYCOON_TYPE-S_IZ_163",
+      "evidence": "Single-rider 25/26 163 report; tested 2025-03-01 at Edelweiss on an ordinary groomed run near 0°C. The writer describes quick turn initiation, agility, strong inward drive, late-turn acceleration, and a tendency toward deeper turns; felt less stable/strong than Quadra. It is historical, subjective evidence and does not verify 26/27 production."
+    },
+    "previousSeason185RideReport": {
+      "url": "https://housandango1911.hatenablog.com/entry/2025/06/16/25/26_GRAY_TYCOON_TYPE-S_IZ_185",
+      "evidence": "Single-rider 25/26 185 report; tested 2025-03-15 at Sugadaira in granular snow over ice at about 2°C. The writer describes quick turning, inward drive, light-for-length feel, a sharp late-turn cut, and manageability for rhythm/technical riding; it is not presented as a race-timing specialist. Historical subjective evidence only; the 26/27 185 construction was revised."
+    }
+  },
+  "pricing": {
+    "officialJapan": {
+      "currency": "JPY",
+      "preTax": 180000,
+      "taxInclusive": 198000,
+      "priceType": "official Japanese 26/27 MSRP",
+      "note": "Not a verified China-market offer or Chinese retail price."
+    },
+    "seedNormalization": {
+      "currency": "CNY",
+      "rateCnyPerJpy": 0.042451,
+      "rateSource": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+      "rateDate": "2026-10-02",
+      "formula": "round(198000 * 0.042451) = 8405",
+      "value": 8405,
+      "note": "Currency normalization only; not an observed China-market price."
+    }
+  },
+  "unitsAndMapping": {
+    "catalogModelLabels": "The catalog labels the variants TYCOON 63 and TYCOON 85; their Overall Length values are 1630 mm and 1850 mm respectively. Seed size labels retain the catalog model labels.",
+    "lengthsMm": "Overall Length, Effective Edge L., and Contact Length are separate catalog columns and are preserved separately.",
+    "sidecutRadiusMm": "Three printed radii preserved in catalog order; seed stores the sequence in millimeters as printed.",
+    "setbackMm": "Catalog magnitude; direction/sign convention is not specified.",
+    "camberMm": "Catalog camber arch value; rocker is shown as none.",
+    "edge": "Catalog row states 1.8 mm / 48 RCWL; technology page separately describes steel-edge hardness 48.",
+    "fiberglass": "Catalog construction diagram shows 1-ply 65/35 above and below the Aspen core; 0.4 mm Titanal top and bottom and IZANAS beneath core are separately retained in product-level construction evidence."
+  },
+  "sizeRows": [
+    {"catalogSize":"63","overallLengthMm":1630,"effectiveEdgeMm":1510,"contactLengthMm":1410,"waistWidthMm":200,"sidecutRadiusMm":[10200,9800,10800],"sidecutOffsetMm":-40,"noseLengthMm":135,"noseWidthMm":260,"noseHeightMm":20.3,"tailLengthMm":85,"tailWidthMm":247,"tailHeightMm":5.2,"camberMm":7,"stanceWidthMm":[460,540],"inserts":"10+10&AFX","setbackMm":60,"edge":"1.8mm/48RCWL","sidewallAngleDeg":15,"sidewallColor":"NEON RED","runningBase":"IS7500 Graphite","rocker":"none"},
+    {"catalogSize":"85","overallLengthMm":1850,"effectiveEdgeMm":1735,"contactLengthMm":1610,"waistWidthMm":200,"sidecutRadiusMm":[18800,17800,20400],"sidecutOffsetMm":-60,"noseLengthMm":145,"noseWidthMm":246,"noseHeightMm":19.9,"tailLengthMm":95,"tailWidthMm":232,"tailHeightMm":6.4,"camberMm":6,"stanceWidthMm":[460,540],"inserts":"10+10&AFX","setbackMm":80,"edge":"1.8mm/48RCWL","sidewallAngleDeg":15,"sidewallColor":"NEON RED","runningBase":"IS7500 Graphite","rocker":"none"}
+  ],
+  "scoringReview": {
+    "existingScores": {"stability":9.4,"response":9.8,"float":5.5,"park":2.0,"forgiveness":3.4,"value":5.8},
+    "decision": "Keep all six scores unchanged and mark them low-confidence estimates. Two reports cover previous-season 163 and 185 samples, but each is one rider/session and the 26/27 185 was revised; they do not provide target-season calibration or a shared numerical scale. The reports qualitatively support quick turn initiation and strong carving drive while noting a difference from the more stable/strong-feeling Quadra. No report directly supports float or park scores. Value remains especially uncertain because the displayed CNY figure is converted Japanese MSRP, not China retail.",
+    "confidence": "low; historical single-rider sessions only, no 26/27 production-sample comparison"
+  },
+  "unverified": [
+    "No Chinese-market retail price, product weight, or target-season independent ride test found.",
+    "No explicit image reuse permission verified; official image URL is reference-only.",
+    "Official product page warns bending/breaking under excessive flex is not covered; no separate general warranty term verified.",
+    "Catalog setback values are preserved as magnitudes; direction/sign convention is not documented.",
+    "The official 185 26/27 construction revision means its 25/26 report is not direct validation of the current product."
+  ],
+  "imageRights": "No explicit reuse license verified; retain as a source reference only and do not copy to hosted production assets without permission or original photography.",
+  "mappingNotes": [
+    "Both catalog rows were compared with seed sizeSpecs; all currently stored geometry, widths, stance, setback, camber, edge, base and sidewall values match.",
+    "The seed has no top-level fiberglass field; added the explicitly cataloged 1-ply 65/35 layup while retaining full metal/Titanal and IZANAS construction in the raw source details and product description.",
+    "The current product claims broad performance from superpipe/big kicker to high-speed all-mountain freeride; the one-liner was adjusted to avoid narrowing the product to race-only use.",
+    "No GRAY TYCOON Type-S [iz] prototype record was found in apps/web/src/data/boards.ts; no prototype item was fabricated."
+  ]
+}

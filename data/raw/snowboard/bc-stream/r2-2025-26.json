@@ -1,0 +1,93 @@
+{
+  "brand": "BC STREAM",
+  "model": "R-2",
+  "season": "2025-26",
+  "seedRepresentativeSize": "157 standard",
+  "sources": {
+    "seasonCatalog": {
+      "url": "https://www.breakout-jp.com/wp/wp-content/themes/breakout/library/img/snow/alpain/2425BC%20Stream%20Catalog.pdf",
+      "retrievedAt": "2026-10-02",
+      "host": "Breakout retailer (manufacturer-styled catalog copy; third-party hosted)",
+      "evidence": "24/25 catalog identifies R-2 as a user-friendly entry hammerhead with Variable Camber (VC), grip/hold and stability goals; size table distinguishes narrow, regular and wide variants. This is previous season and is not used to overwrite the 25/26 seed.",
+      "limitations": "Third-party hosted catalog copy; previous season. This batch did not locate a directly fetchable 25/26 per-size manufacturer catalog table to revalidate the selected 157 standard row."
+    },
+    "officialDemoAvailability": {
+      "url": "https://www.bc-stream.com/wp/wp-content/uploads/6e270f110d2d98534d9b01d3bfccd288.pdf",
+      "retrievedAt": "2026-10-02",
+      "eventDates": "2025-03-14 to 2025-03-16",
+      "location": "White World Oze Iwakura, Gunma, Japan",
+      "sourceLabel": "2025-26 BC Stream / UNIT / SECCA demo-board list",
+      "listedR2Sizes": ["R-2 51N", "R-2 54N"],
+      "evidence": "Manufacturer-hosted list shows those R-2 sizes among 25/26 event demo inventory.",
+      "limitations": "An availability list is not evidence that a specific reviewer rode the board; it contains no ride observations, snow conditions, or score. Listed sizes are narrow variants and differ from the seed's 157 standard sample."
+    },
+    "japanDealerSeasonListing": {
+      "url": "https://store.shopping.yahoo.co.jp/follows/1213bc-r2.html",
+      "retrievedAt": "2026-10-02",
+      "title": "25-26 BC Stream R-2",
+      "region": "Japan",
+      "seasonIdentity": "Retail listing labels the item 2025-2026 / 25-26 BC Stream R-2 and lists 151, 154, 157, 162, 157W, and 162W. It also describes Directional Twin and Variable Camber; retailer-supplied product content, not a primary maker size chart.",
+      "manufacturerRecommendedRetailPriceJPY": 126500,
+      "priceType": "The listing search record labels JPY 126,500 as manufacturer-recommended retail price. It is not the current transaction price; the captured page did not establish a current payable amount or stock.",
+      "limits": "Japan-market reference only, not a mainland-China quote. No 25/26 per-size geometry table was recovered from this listing."
+    },
+    "koreaOfficialImporterListing": {
+      "url": "https://bcstream.co.kr/product/2526-bc-stream-r-2/31/",
+      "retrievedAt": "2026-10-02",
+      "title": "25/26 BC Stream R-2",
+      "region": "South Korea",
+      "sellerStatus": "The page footer identifies PAKU Company as BC Stream's official importer and official seller in Korea.",
+      "listedOriginalPriceKRW": 1650000,
+      "listedSalePriceKRW": 1485000,
+      "priceType": "Korean market importer listing with displayed original and discounted retail prices; page status is sold out, so this is a recorded listing, not a currently purchasable offer.",
+      "seasonIdentity": "Product title explicitly labels the board 25/26 BC Stream R-2; page notes preorder arrivals beginning September 2025.",
+      "limits": "South Korea market and KRW prices are not Japanese MSRP or mainland-China pricing. Page provides no board geometry or technical specification table."
+    },
+    "secondarySeasonSpecIndex": {
+      "url": "https://www.snow-spec.com/",
+      "retrievedAt": "2026-10-02",
+      "evidence": "The third-party snowboard spec index lists BC STREAM R-2 as a 2025-26 model and shows 157 standard with 250 mm waist and 162 with 252 mm waist, consistent with the existing standard-size mapping. It distinguishes standard and wide lengths by waist width.",
+      "limits": "Secondary index; the reviewed page does not cite its underlying R-2 source or provide the complete official dimension table. This corroborates model/size identity only and is not sufficient to claim primary-source verification or update the YAML geometry."
+    },
+    "riderAnecdote": {
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12324256907",
+      "publishedAt": "2026-01-13",
+      "boardReported": "BC STREAM R-2 157W",
+      "riderReportedContext": "Rider says 10+ years experience and 20+ days per season, 160 cm / 54 kg, 25.5 cm boots, Flux XF bindings; primarily freerides and does not ride switch, ground tricks or park.",
+      "observations": "Reports strong stability, enjoyable deep turns, and that rough snow is not too bothersome; says handling and short turns are manageable, but when fatigued and late to movements the board can become unstable/erratic.",
+      "limitations": "Single self-reported Q&A answer, not a structured test; no exact test date, season/version, conditions, duration or snow-state details. It is the 157W wide variant, not the seed's 157 standard. Use only as low-confidence directional evidence; do not map it to numeric scores."
+    },
+    "sameSeasonRideNote2026": {
+      "url": "https://teikiken.exblog.jp/33905728/",
+      "title": "260223 奥志賀高原スキー場(3回目)",
+      "publishedAt": "2026-03-05",
+      "rideDate": "2026-02-23, inferred from the post title and trip chronology",
+      "seasonEvidence": "The writer categorizes the post in the 25-26 snowboard season and rode the R-2 during that season; the board's factory season label is not stated explicitly.",
+      "testBoard": "BC STREAM R-2 162 cm borrowed from another rider and swapped against an AMICSS DNA-Ti. The post does not specify standard/narrow/wide suffix; do not equate it to the seed's R-2 157 standard.",
+      "conditionsAndDuration": "The resort was foggy early, gradually cleared, and the writer described the forecast/snow quality as poor due to high temperatures. The exact surface under the R-2 run, number of runs, duration, and rider body/boot specifications are not stated.",
+      "observations": "The writer found the R-2 easier and lighter to maneuver than the comparison AMICSS DNA-Ti, but felt edge grip was insufficient on ice. The owner said the board had received a full tune at season end with edge angles left to the shop; the writer considered tuning a possible explanation. This is one informal equipment-swap account, not a controlled test.",
+      "scoreUse": "This is useful target-season directional evidence for handling and an edge-grip caveat, but exact size variant, setup/tune, conditions and exposure are uncertain. It neither establishes a numeric score change nor calibrates powder or park performance."
+    },
+    "excludedSearchResults": [
+      {
+        "url": "https://kssnow.blog.fc2.com/blog-entry-1893.html",
+        "reason": "25/26 shop article is a model overview/retail page and contains no disclosed R-2 test ride."
+      },
+      {
+        "url": "https://xn--qck5b4ef.net/bcstream-r2-custom-review/",
+        "reason": "2025 article is generic R-2/R-2 Custom buying/feature content with affiliate links; no disclosed sample size, test date, or on-snow test method."
+      }
+    ]
+  },
+  "scoringEvidence": {
+    "currentSiteScores": {"stability":7.9,"response":8.4,"float":5.8,"park":3.0,"forgiveness":4.6,"value":6.8},
+    "decision": "Retain all six scores as low-confidence editorial estimates. A 157W user anecdote directionally supports stability and turn performance for an experienced freeride-focused rider, but its size, season and conditions do not match the seed's 157 standard. A second, season-context 162 cm equipment-swap note describes easier handling versus an AMICSS DNA-Ti but insufficient ice grip; its width variant, board season label, tune and exposure are uncertain, and the owner cited possible edge-tune influence. The official event list only proves 25/26 narrow demo availability. Float and park have no direct ride evidence. Value is a Japan-MSRP FX conversion and not a China-market price. No external rating or description is converted numerically into the site's six dimensions.",
+    "confidence": "Low across all six dimensions; target-period evidence now includes one informal 162 cm swap ride with unspecified width/setup plus demo availability, but there remains no disclosed test of the seed's 157 standard size. The 157W anecdote is a separate variant of unknown production season."
+  },
+  "unresolved": [
+    "A direct 25/26 official R-2 size/geometry table was not recovered in this batch; retain the current seed values pending a season-specific primary source.",
+    "No disclosed target-season test of the 157 standard size found.",
+    "No direct powder or park performance observation found.",
+    "Seed CNY 5370 remains an FX-normalized estimate: the 25/26 Japanese dealer page reports JPY 126500 as manufacturer-recommended retail price, and a Korean official-importer page shows KRW 1650000 list / KRW 1485000 discounted retail but is sold out. Neither establishes a mainland-China price. Exact weight and image reuse permission remain unverified."
+  ]
+}

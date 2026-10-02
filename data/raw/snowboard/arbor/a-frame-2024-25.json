@@ -1,0 +1,68 @@
+{
+  "brand": "Arbor",
+  "model": "A-Frame",
+  "season": "2024-25",
+  "retrievedAt": "2026-10-02",
+  "sourceRecord": "apps/web/src/data/boards.ts (id sb-10)",
+  "seedFile": "data/snowboard/arbor-a-frame-2025.yaml",
+  "sources": {
+    "officialSeasonProductPage": {
+      "url": "https://www.arborcollective.com/products/a-frame-snowboard-25",
+      "title": "Arbor Snowboarding - A-Frame Snowboard 24/25",
+      "evidence": "Official page explicitly identifies 24/25. Confirms Directional, Men's, System Camber/Parabolic Camber, Grip Tech and 3D Fender. Product copy says large-radius sidecut and carbon inlay stringers target powder/control while remaining a capable daily driver. Lists official construction: Real Wood Powerply, Grip Tech 2.25 mm, Fender 3 degrees, RWD Carbon A-Frames, 0.9 cm taper, Highland III Core, Sintered Base, Mixed Glassing, 2x4 14-Pack inserts, wrapped sidewalls and recycled steel edges. Table lists five sizes and the full geometry captured below."
+    },
+    "sameSeasonRideTest": {
+      "url": "https://outsidebozeman.com/gear/product-reviews/equipment/review-arbor-frame-snowboard",
+      "title": "Review: Arbor A-Frame Snowboard",
+      "dateLabel": "Winter 2024-25",
+      "sampleSizeCm": 162,
+      "sampleYearDisclosure": "Article is season-labelled 2024-25 and tests the 162; exact factory production-year marking is not disclosed.",
+      "observations": {
+        "powder": "5/5; reviewer says broad nose floats easily and board is excellent in deep powder.",
+        "groomers": "2/5; reviewer reports squirrely feel at moderate speed and low confidence at high speed, attributing this to the short effective edge/contact-point placement and sidecut.",
+        "crud": "4/5; stiff tail and broad nose help in tracked snow.",
+        "jumping": "3/5; not a freestyle board, feels light and can be loaded for pop after adapting to the stiff tail.",
+        "overall": "4/5; reviewer recommends to intermediate/advanced all-mountain riders or experts wanting a powder-focused board, but not riders prioritizing high-speed groomer carving."
+      },
+      "limitations": "One rider/sample, no number of test days or exact daily conditions disclosed; use as directional evidence, not a universally representative measurement."
+    },
+    "historicalReviewNotSameSeason": {
+      "url": "https://snowboardingprofiles.com/arbor-a-frame-snowboard-review",
+      "evidence": "Page updated 2025-09-01 but its disclosed physical sample is Arbor A-Frame 2023, 158 cm, ridden 2022-03-24. It had no fresh snow during that test. Historical model context only; not treated as 2024-25 sample evidence. Its measured 2880 g weight is also not transferred to the 2025 size 162."
+    }
+  },
+  "officialUsPricing": {
+    "currency": "USD",
+    "compareAtOrRegularPrice": 649.95,
+    "capturedSalePrice": 389.95,
+    "priceType": "official US storefront listed regular/compare-at price and dynamic sale price",
+    "captureDate": "2026-10-02",
+    "note": "Dynamic US regional offer; neither price confirms Chinese-market pricing and neither replaces the seed's CNY value."
+  },
+  "sizeRows": [
+    {"size":"158","overallLengthCm":158,"waistWidthCm":25.4,"sidecutRadiiM":[9.1,8.2,9.1],"effectiveEdgeCm":116,"tipLengthCm":31,"tailLengthCm":19,"tipWidthCm":29.6,"tailWidthCm":28.8,"taperCm":0.9,"referenceStanceSetbackCm":1.0},
+    {"size":"159W","overallLengthCm":159,"waistWidthCm":26.7,"sidecutRadiiM":[9.0,8.1,9.0],"effectiveEdgeCm":117,"tipLengthCm":31,"tailLengthCm":19,"tipWidthCm":31,"tailWidthCm":30.1,"taperCm":0.9,"referenceStanceSetbackCm":1.0},
+    {"size":"162","overallLengthCm":162,"waistWidthCm":25.6,"sidecutRadiiM":[9.3,8.4,9.3],"effectiveEdgeCm":119.6,"tipLengthCm":31.2,"tailLengthCm":19.2,"tipWidthCm":30,"tailWidthCm":29.1,"taperCm":0.9,"referenceStanceSetbackCm":1.0},
+    {"size":"165MW","overallLengthCm":165,"waistWidthCm":26.6,"sidecutRadiiM":[9.45,8.55,9.45],"effectiveEdgeCm":122.2,"tipLengthCm":31.4,"tailLengthCm":19.4,"tipWidthCm":31.1,"tailWidthCm":30.2,"taperCm":0.9,"referenceStanceSetbackCm":1.0},
+    {"size":"170W","overallLengthCm":170,"waistWidthCm":27.4,"sidecutRadiiM":[9.45,8.8,9.45],"effectiveEdgeCm":126.8,"tipLengthCm":31.6,"tailLengthCm":19.6,"tipWidthCm":32,"tailWidthCm":31.1,"taperCm":0.9,"referenceStanceSetbackCm":1.0}
+  ],
+  "scoreReview": {
+    "previous": {"stability":9.5,"response":9,"float":6,"park":2,"forgiveness":3,"value":5.5},
+    "updated": {"stability":7.5,"response":7.5,"float":8.5,"park":2,"forgiveness":3,"value":5.5},
+    "decision": "Lower stability and response because the same-season 162 review gives groomers 2/5 and reports instability already at moderate speed and low high-speed confidence; retain credit for 4/5 tracked-snow performance. Raise float because the same test gives powder 5/5 and describes strong flotation in deep snow. These are qualitative editorial judgments informed by the test; no external numeric rating is converted linearly. Park and forgiveness are retained: the board is not a freestyle design, the reviewer gives jumping 3/5, and the stiff full-camber tail is not especially forgiving. Value remains low-confidence because the CNY 6599 seed price has no verified China-market source.",
+    "confidence": "low; one same-season-labelled 162 test with production year and daily test conditions not fully disclosed"
+  },
+  "unverified": [
+    "Seed CNY 6599 local market, price type and capture date are not established; official US page's USD 649.95 regular/compare-at and USD 389.95 sale are regional dynamic values only.",
+    "Seed weight 3180 g has no verified exact-size 2025 source. Snowboarding Profiles' 2880 g belongs to a 2023 158 sample and must not be transferred.",
+    "Official product gallery is visible but reuse rights are not verified; retain explicitly labelled AI placeholders until original photos or permission are available.",
+    "No same-season quantified park/jib or forgiveness test, no 2025 exact-size weight, and no Chinese retail quote were found."
+  ],
+  "mappingNotes": [
+    "The official 162 reference stance setback is 1.0 cm = 10 mm; source/YAML previously said 25 mm and has been corrected.",
+    "The official sidecut is explicitly three radii, not a single 9.1 m radius. Removed the legacy product-level scalar and preserve all three values per size in sidecutRadii.",
+    "Tip/tail lengths and widths are official centimeters converted to millimeters for nested sizeSpecs; 162 remains the representative middle size of the five listed sizes.",
+    "All five season-specific rows are now represented in source/YAML. Taper (9 mm) remains in this raw evidence because the current snowboard nested schema has no taper field."
+  ],
+  "imageRights": "Current YAML uses explicitly labelled generated placeholders. Official Arbor product photos exist, but no reuse/hosting license was verified; do not replace the placeholders with remote brand photos without permission."
+}

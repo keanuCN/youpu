@@ -6,22 +6,22 @@ brand: capita
 model: Defenders of Awesome
 year: 2026
 title: Capita Defenders of Awesome 2026
-one_liner: 公园里的通用答案。弹性是它的全部性格，起跳时机对了它会把你送得比预期更高。
+one_liner: Resort True Twin 配 Resort V1 + Flat Kick Tech；P2 Superlight 芯材与 Hybrid Carbon HolySheet 主打轻量、响应和弹性。
 price:
   min: 5299
   max: 5299
   currency: CNY
 specs:
-  length: 155
-  effectiveEdge: 1195
-  sidecut: 7.6
+  length: 156
+  effectiveEdge: 1233
+  sidecut: 8
   waistWidth: 252
   stanceSetback: 0
-  profile: Resort V1（Camber 主导 + 板头尾反弓）
-  shape: 真双向
-  core: Dual Core 白杨
-  fiberglass: Biax Carbon
-  base: 挤压 4000
+  profile: Resort V1 + Flat Kick Tech
+  shape: True Twin
+  core: P2 Superlight Core
+  fiberglass: Hybrid Carbon HolySheet Bi/Bi + Magic Bean Resin
+  base: Quantum Drive（Sublimation）
   weight: 2760
   damping: 6
   pop: 9
@@ -33,11 +33,11 @@ specs:
     - freestyle
     - all-mountain
 editorial_scores:
-  stability: 6.5
+  stability: 7
   response: 8
   float: 5.5
   park: 9.5
-  forgiveness: 7.5
+  forgiveness: 7
   value: 8.5
 images:
   - url: https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-05.png?auth_key=d19349b34e1ca6e8a758c412fbd39c8aa78fb6d7c949d8ad1c6cd1379f6324f1
@@ -60,4 +60,8 @@ images:
     alt: Capita Defenders of Awesome 实地 / FIELD
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 3
+# Current official product page is 2027; keep it as identity evidence only, not 2026 spec evidence.
+data_source:
+  kind: official
+  origin_url: https://golgoda.com/PDF/25-26%20CAPiTA.pdf
 status: published

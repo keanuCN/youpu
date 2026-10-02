@@ -4,7 +4,18 @@ brand: nitro
 model: Beast
 year: 2026
 title: Nitro Beast 2026
-one_liner: 26 款高响应公园自由式板，True Camber 与 Twin 板型强调弹性、控刃和耐用性。
+one_liner: 25/26 款高响应公园自由式板，True Camber 与 Twin 板型强调弹性、控刃和耐用性；零售 MSRP $689.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥4,968 CNY。
+editorial_scores:
+  stability: 8.1
+  response: 9.0
+  float: 5.4
+  park: 9.2
+  forgiveness: 4.9
+  value: 6.4
+price:
+  min: 4968
+  max: 4968
+  currency: CNY
 specs:
   profile: Trüe Camber
   profileFamily: camber

@@ -4,12 +4,31 @@ brand: k2
 model: Excavator
 year: 2027
 title: K2 Excavator 2027
-one_liner: 宽腰短板思路的全山地型号，主打压雪道深弯与新雪浮力，官方建议按常规雪板尺寸适当缩短选择。
+one_liner: Volume Shift 短宽体定向板，双半径侧切兼顾压雪道深弯与粉雪浮力；官方建议较日常板长缩短约 5 cm 选码。
+editorial_scores:
+  stability: 8.0
+  response: 8.3
+  float: 8.5
+  park: 6.0
+  forgiveness: 6.8
+  value: 7.4
+price:
+  min: 4536
+  max: 4536
+  currency: CNY
 specs:
+  sizeSpecs:
+    - {size: "142", effectiveEdge: 1040, noseWidth: 299, waistWidth: 250, tailWidth: 279, sidecutRadii: "5.5/6.5 m", stanceWidth: "483 mm (19 in reference)", setback: 19}
+    - {size: "146", effectiveEdge: 1080, noseWidth: 305, waistWidth: 254, tailWidth: 285, sidecutRadii: "5.7/6.7 m", stanceWidth: "483 mm (19 in reference)", setback: 19}
+    - {size: "150", effectiveEdge: 1110, noseWidth: 313, waistWidth: 260, tailWidth: 293, sidecutRadii: "5.9/6.9 m", stanceWidth: "508 mm (20 in reference)", setback: 19}
+    - {size: "154", effectiveEdge: 1150, noseWidth: 318, waistWidth: 264, tailWidth: 298, sidecutRadii: "6.1/7.1 m", stanceWidth: "533 mm (21 in reference)", setback: 19}
+    - {size: "158", effectiveEdge: 1180, noseWidth: 324, waistWidth: 268, tailWidth: 304, sidecutRadii: "6.3/7.3 m", stanceWidth: "559 mm (22 in reference)", setback: 19}
+    - {size: "162", effectiveEdge: 1220, noseWidth: 327, waistWidth: 270, tailWidth: 307, sidecutRadii: "6.5/7.5 m", stanceWidth: "584 mm (23 in reference)", setback: 19}
   profile: Directional Camber
   profileFamily: camber
   shape: Tapered Directional / Volume Shift
-  core: S1 Core
+  core: S1 Core (Bamboo / Aspen / Paulownia)
+  fiberglass: ICG 10 Biax Glass With Carbon
   base: Wax-Infused Sintered 4001
   scenes:
     - carving

@@ -1,0 +1,130 @@
+{
+  "brand": "K2",
+  "model": "Alchemist",
+  "season": "2026-27",
+  "sku": "KB262025",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/k2-alchemist-2027.yaml",
+  "sources": {
+    "official2027ProductPage": {
+      "url": "https://k2snow.com/en-us/p/alchemist-mens-snowboard-kb262025",
+      "title": "K2 Alchemist Men's Snowboard 2027",
+      "hostNote": "K2 official US storefront. Displayed price is regional US currency, not a China-market offer.",
+      "evidence": "Confirms model year, SKU, current 2027 redesign, full nine-size chart, Directional Camber, directional tapered shape, S1 Pro Core, Recess3D, Spectral Braid, SpaceGlass nose insert, HyperWeave carbon biaxial weave and Wax-Infused Sintered 4001 base. The official copy says the S1 Pro core uses 78 wood pieces and aims to reduce swingweight; Recess3D removes material in low-stress tip/tail zones."
+    },
+    "official2026Catalog": {
+      "url": "https://k2sports.a.bigcontent.io/v1/static/K2-Snow_F22_CATALOG",
+      "title": "K2 Snowboarding 2021-22 catalog (historical comparison)",
+      "hostNote": "K2-hosted static catalog, but several seasons older; retained only to establish that construction and geometry have changed over time, not as evidence for 2027 specs.",
+      "evidence": "Lists an older Alchemist construction (Bambooyah Pro Core, ICG 20 Triax Carbon Glass, Carbon Infused Sintered 5500) and different size lineup. Do not transfer these legacy details into the 2027 seed."
+    },
+    "snowboardAtlas2027Review": {
+      "url": "https://snowboardatlas.com/reviews/2027-k2-alchemist-review",
+      "title": "2027 K2 Alchemist Review",
+      "publishedAt": "2026-08-07",
+      "testSetup": "One disclosed rider; size 160; hardpack with patches of hidden ice; K2 Thraxis boots and Union Force bindings.",
+      "evidence": "Review explicitly covers the redesigned 2027 board and discusses the new version against the outgoing model. Reports a noticeably softer waist/tail, easier torsional input and more usable response, while retaining strong stability/rebound; still about 8/10 flex, demanding, tiring when skidded, cumbersome at low speeds, and not especially comfortable for casual cruising. One rider and one hard-snow condition set; no powder test."
+    },
+    "skiEssentials2023Test": {
+      "url": "https://www.skiessentials.com/2023-snowboard-test/snowboards/2023-k2-alchemist/",
+      "title": "2023 K2 Alchemist Snowboard Test",
+      "hostNote": "Historical retailer test of a prior-generation board; do not treat as a 2027 test.",
+      "evidence": "Several testers rode size 154 and 163 samples. Directionally reports strong stability/edge grip and demanding, business-like handling, with varied flotation impressions (testers rated float from low to high) and modest forgiveness/playfulness."
+    },
+    "officialCollectionPrice": {
+      "url": "https://k2snow.com/en-us/c/all-snowboarding/all-mens-snowboard/",
+      "title": "K2 men's snowboard collection",
+      "hostNote": "Official US collection listing cross-checking the product page price.",
+      "evidence": "Lists K2 Alchemist Men's Snowboard 2027 at USD 849.95."
+    },
+    "officialJapanCollectionPrice": {
+      "url": "https://k2snow.com/en-jp/c/all-snowboarding/all-mens-snowboard/",
+      "title": "K2 Japan men's snowboard collection",
+      "hostNote": "Official Japan storefront price, shown tax-inclusive; it is a regional listing, not a China-market price.",
+      "currency": "JPY",
+      "listedPriceInclTax": 107800,
+      "captureDate": "2026-10-02",
+      "evidence": "The official Japan collection lists K2 Alchemist Men's Snowboard 2027 at JPY 107,800 including tax."
+    },
+    "morispoJapanRetailListing": {
+      "url": "https://www.morispo.shop/shopdetail/000000062423/",
+      "title": "2027 K2 Alchemist 26-27",
+      "hostNote": "Japanese retailer's same-season preorder listing; not an official China-market offer.",
+      "currency": "JPY",
+      "listedPriceInclTax": 97020,
+      "referencePriceInclTax": 107800,
+      "priceType": "retailer preorder price with displayed reference/list price",
+      "captureDate": "2026-10-02",
+      "evidence": "The listing identifies 2026/2027 K2 Alchemist, displays JPY 107,800 reference price and JPY 97,020 tax-inclusive preorder price, and lists the matching nine size variants. At capture, some sizes were marked sold out."
+    }
+  },
+  "units": {
+    "effectiveEdgeCm": "Official K2 table unit cm; converted to mm for seed.",
+    "tipWaistTailCm": "Official table order nose/waist/tail in cm; converted individually to mm for seed.",
+    "sidecutM": "Official single radius value in meters for each size.",
+    "referenceStanceInches": "One reference stance, not a range; exact inches retained and rounded mm used for display.",
+    "setbackInches": "K2 lists a 0.75 inch setback for all sizes. The seed records the normalized positive magnitude as 19 mm (rounded from 19.05 mm); direction is tailward for this directional shape.",
+    "riderWeight": "Official page separately publishes lb and kg ranges; preserve both as printed because the 157 row's lower bounds conflict (130 lb is not 68 kg)."
+  },
+  "sizeRows": [
+    {"size":"148","widthVariant":"standard","effectiveEdgeCm":112,"tipWaistTailCm":[28.4,24.0,27.8],"sidecutM":6.9,"referenceStanceInches":19,"setbackInches":0.75,"setbackMm":19,"riderWeightLbRaw":"100-150+","riderWeightKgRaw":"45-68+"},
+    {"size":"151","widthVariant":"standard","effectiveEdgeCm":114,"tipWaistTailCm":[28.8,24.3,28.2],"sidecutM":7.1,"referenceStanceInches":20,"setbackInches":0.75,"setbackMm":19,"riderWeightLbRaw":"110-160+","riderWeightKgRaw":"50-73+"},
+    {"size":"154","widthVariant":"standard","effectiveEdgeCm":117,"tipWaistTailCm":[29.3,24.7,28.7],"sidecutM":7.3,"referenceStanceInches":21,"setbackInches":0.75,"setbackMm":19,"riderWeightLbRaw":"120-170+","riderWeightKgRaw":"54-77+"},
+    {"size":"157","widthVariant":"standard","effectiveEdgeCm":119,"tipWaistTailCm":[29.7,25.0,29.1],"sidecutM":7.8,"referenceStanceInches":21,"setbackInches":0.75,"setbackMm":19,"riderWeightLbRaw":"130-200+","riderWeightKgRaw":"68-91+","riderWeightConflict":"Official lower bounds conflict: 130 lb is approximately 59 kg, not the printed 68 kg. Neither representation is silently corrected."},
+    {"size":"160","widthVariant":"standard","effectiveEdgeCm":122,"tipWaistTailCm":[30.1,25.3,29.5],"sidecutM":8.0,"referenceStanceInches":22,"setbackInches":0.75,"setbackMm":19,"riderWeightLbRaw":"140-210+","riderWeightKgRaw":"64-95+"},
+    {"size":"160W","widthVariant":"wide","effectiveEdgeCm":122,"tipWaistTailCm":[30.9,26.1,30.3],"sidecutM":8.0,"referenceStanceInches":22,"setbackInches":0.75,"setbackMm":19,"riderWeightLbRaw":"140-210+","riderWeightKgRaw":"64-95+"},
+    {"size":"163","widthVariant":"standard","effectiveEdgeCm":124,"tipWaistTailCm":[30.5,25.6,29.9],"sidecutM":8.1,"referenceStanceInches":23,"setbackInches":0.75,"setbackMm":19,"riderWeightLbRaw":"150-230+","riderWeightKgRaw":"68-104+"},
+    {"size":"163W","widthVariant":"wide","effectiveEdgeCm":124,"tipWaistTailCm":[31.5,26.4,30.7],"sidecutM":8.1,"referenceStanceInches":23,"setbackInches":0.75,"setbackMm":19,"riderWeightLbRaw":"150-230+","riderWeightKgRaw":"68-104+"},
+    {"size":"166","widthVariant":"standard","effectiveEdgeCm":127,"tipWaistTailCm":[31.2,26.2,30.6],"sidecutM":8.3,"referenceStanceInches":23,"setbackInches":0.75,"setbackMm":19,"riderWeightLbRaw":"160-250+","riderWeightKgRaw":"73-113+"}
+  ],
+  "representativeSize": {
+    "selection": "157 cm",
+    "basis": "Median of the seven standard-width sizes [148,151,154,157,160,163,166]; wide variants are excluded from standard-size median.",
+    "sourceRow": "The official page directly lists the 157 cm row; no interpolation."
+  },
+  "pricing": {
+    "officialUS": {
+      "url": "https://k2snow.com/en-us/p/alchemist-mens-snowboard-kb262025",
+      "currency": "USD",
+      "listedPrice": 849.95,
+      "priceType": "official US storefront listed price; not expressly labeled MSRP",
+      "captureDate": "2026-10-02",
+      "note": "Dynamic regional listing; not a China-market price."
+    },
+    "seed": {
+      "currency": "CNY",
+      "value": 6120,
+      "conversionRateToCny": 7.2,
+      "formula": "round(849.95 * 7.2) = 6120",
+      "note": "Project normalization estimate, not a verified Chinese retail price. Keep value rating low confidence pending local price evidence."
+    }
+  },
+  "scoringEvidence": {
+    "snowboardAtlas2027": {
+      "sampleSizeCm": 160,
+      "riders": 1,
+      "conditions": "Hardpack with patches of hidden ice after a long dry spell.",
+      "observations": "The redesign softens waist/tail and makes torsional response more accessible while retaining stability/rebound. Still approximately 8/10 flex, tiring to skid turns, cumbersome at low speed and not a casual cruiser. No powder or park-specific test was reported.",
+      "publishedRating": "4.5/5 overall; a different scale, not directly mappable."
+    },
+    "skiEssentials2023": {
+      "sampleYears": "2023 generation",
+      "sampleSizesCm": [154,163],
+      "observations": "Historical testers generally praised stability/edge grip and described the board as demanding; flotation scores varied widely across reviewers. Keep only as context for the previous generation, not as 2027 numeric scoring evidence."
+    },
+    "siteScoreDecision": "Update forgiveness from 5.5 to 6.0: the 2027 tester reports materially easier torsional access than the outgoing board, but the board remains stiff/demanding and tiring to skid. Retain stability 9.0 and response 9.1 as low-confidence estimates consistent with retained stability/rebound and easier response; float 8.0 is not re-scored because the 2027 test had no powder, while historical-generation testers disagreed on float. Park 4.0 remains an untested directional-board estimate. Keep value 5.7 provisional and low confidence: official US USD 849.95, official Japan JPY 107,800 tax-inclusive, and Morispo preorder JPY 97,020 tax-inclusive establish regional price references only; none verifies Chinese-market pricing, and CNY 6120 remains a USD-to-CNY normalization. Do not map the 4.5/5 overall reviewer rating to site dimensions.",
+    "confidence": "moderate directional evidence for 2027 stability/handling; low for numerical six-axis values, powder/park and local value"
+  },
+  "images": {
+    "seedImageUrl": "https://blauerboardshop.com/cdn/shop/files/K2AlchemistSnowboard2027.png?v=1776976538",
+    "seedImageSource": "Blauer Board Shop retailer product image",
+    "rights": "No explicit reuse license confirmed. Keep the existing reference with rights caveat; do not copy official/retailer art to production storage without permission or replace it with original photography."
+  },
+  "seedMappingNotes": [
+    "The seven standard sizes are 148/151/154/157/160/163/166; 157 is the actual median. Wide 160W and 163W are stored separately and not used to calculate that median.",
+    "The 2027 model is a documented redesign; legacy S1/Bambooyah-era core, base and flex descriptions from old catalogs must not be backfilled into this seed.",
+    "The official 157 size row's lb/kg weight lower bounds conflict. Both raw values remain recorded; the current schema has no rider-weight field, so neither is seeded.",
+    "K2 publishes reference stance as a single width value, not a min/max range. Official source inches remain here; YAML displays rounded millimeters.",
+    "No official board mass was found. Do not infer mass from seller shipping weights or reviewer impressions."
+  ]
+}

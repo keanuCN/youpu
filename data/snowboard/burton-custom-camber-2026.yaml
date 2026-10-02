@@ -6,22 +6,22 @@ brand: burton
 model: Custom Camber
 year: 2026
 title: Burton Custom Camber 2026
-one_liner: 全山地基准板。它不试图讨好任何人，只是把「稳定 + 精准」这两件事做到该价位的上限。
+one_liner: 经典全山地 Camber：压雪道刻滑和常规雪场速度下稳定、响应直接；遇到烂雪或极高速仍会有震动与性能边界。
 price:
   min: 6299
   max: 6299
   currency: CNY
 specs:
   length: 158
-  effectiveEdge: 1250
+  effectiveEdge: 1215
   sidecut: 7.9
-  waistWidth: 253
+  waistWidth: 254
   stanceSetback: 15
   profile: 纯 Camber
   shape: 定向双向
-  core: FSC 认证杨木 / 双轴玻纤
-  fiberglass: Triax + Biax
-  base: 烧结 7200
+  core: Super Fly II 700G Core + Dualzone EGD（FSC 认证）
+  fiberglass: 45° Carbon Highlights
+  base: WFO 烧结底板
   weight: 2980
   damping: 8
   pop: 7.5
@@ -33,7 +33,7 @@ specs:
     - all-mountain
     - carving
 editorial_scores:
-  stability: 9
+  stability: 8.5
   response: 8.5
   float: 6
   park: 5.5
@@ -60,4 +60,8 @@ images:
     alt: Burton Custom Camber 实地 / FIELD
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 3
+# The official W26 page now redirects to 27WIN; the indexed official W26 size chart is retained as the evidence for these season-specific dimensions.
+data_source:
+  kind: official
+  origin_url: https://www.burton.com/se/en/p/mens-burton-custom-camber-snowboard/W26-106881.html
 status: published

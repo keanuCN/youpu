@@ -4,7 +4,18 @@ brand: gray
 model: DESPE WOOD
 year: 2027
 title: GRAY DESPE WOOD 2027
-one_liner: 木芯与玻纤结构的刻滑入门取向型号，26/27 全长度更新为 Active Camber，并提供部分加宽尺寸。
+one_liner: 木芯与玻纤结构的刻滑入门取向型号，26/27 全长度更新为 Active Camber，并提供部分加宽尺寸。日本官方含税 MSRP ¥93,500，按 2026-10-02 参考汇率折算约 ¥3,968 CNY（非中国零售价）。
+editorial_scores:
+  stability: 6.4
+  response: 6.2
+  float: 4.8
+  park: 3.2
+  forgiveness: 7.4
+  value: 8.0
+price:
+  min: 3968
+  max: 3968
+  currency: CNY
 specs:
   shape: Directional
   profile: Active Camber
@@ -15,13 +26,13 @@ specs:
     - carving
     - all-mountain
 images:
-  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/24_DESPE"
+  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/25_DESPE%20WOOD48-63w/2627_25_DESPE%20WOOD48-63w_main.png"
     kind: face
     alt: Gray DESPE WOOD 2027 单板正面图
     source: Gray Snowboards 官方 2026–2027 产品素材（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
 data_source:
   kind: manual
-  origin_url: https://graysnowboards.co.jp/tech-2627-eng/
+  origin_url: https://graysnowboards.co.jp/product/
   snapshot_url: https://thesnowfever.com/list/snowboards?brand=72
 status: published

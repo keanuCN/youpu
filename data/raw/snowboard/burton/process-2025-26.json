@@ -1,0 +1,154 @@
+{
+  "brand": "Burton",
+  "model": "Process Camber",
+  "season": "2025-26",
+  "retrievedAt": "2026-10-02",
+  "seedFile": "data/snowboard/burton-process-2026.yaml",
+  "representativeSize": "157 cm standard",
+  "sources": {
+    "officialWinter2026Product": {
+      "url": "https://eu.burton.com/en-pt/products/mens-burton-process-camber-snowboard-106921e-o?country=PT",
+      "sku": "26WIN-106921",
+      "evidence": "Burton Winter 2026 product page confirms the 2026 graphic/SKU, nine available sizes, PurePop Camber, Twin Shape, Twin Flex, Super Fly II 700G Core with Dualzone EGD, Triax Fiberglass, Sintered Base, The Channel, intermediate riding level and three-year warranty.",
+      "sizeTableUnits": {
+        "length": "cm (listed board size)",
+        "waistWidth": "mm",
+        "runningLength": "mm (keep distinct from effective edge)",
+        "effectiveEdge": "mm",
+        "sidecutRadius": "m",
+        "sidecutDepth": "mm",
+        "stanceLocation": "Burton source notation; mm, -12.5 on each listed size",
+        "stanceWidth": "mm (reference stance)",
+        "noseWidth": "mm",
+        "tailWidth": "mm",
+        "riderWeightRange": "source provides lb and kg ranges"
+      },
+      "sizeSpecs": [
+        { "size": "152", "riderWeightRange": "120-180 lb / 54-82 kg", "waistWidthMm": 249, "stanceLocationMm": -12.5, "runningLengthMm": 1125, "sidecutRadiusM": 7.7, "sidecutDepthMm": 20.6, "stanceWidthMm": 530, "noseWidthMm": 290.1, "tailWidthMm": 290.1, "effectiveEdgeMm": 1165, "bindingSize": "Men's L, Women's L" },
+        { "size": "155", "riderWeightRange": "120-180 lb / 54-82 kg", "waistWidthMm": 251, "stanceLocationMm": -12.5, "runningLengthMm": 1155, "sidecutRadiusM": 7.9, "sidecutDepthMm": 21.1, "stanceWidthMm": 530, "noseWidthMm": 293.2, "tailWidthMm": 293.2, "effectiveEdgeMm": 1195, "bindingSize": "Men's L, Women's L" },
+        { "size": "157", "riderWeightRange": "150-200 lb / 68-91 kg", "waistWidthMm": 252, "stanceLocationMm": -12.5, "runningLengthMm": 1175, "sidecutRadiusM": 8.1, "sidecutDepthMm": 21.4, "stanceWidthMm": 560, "noseWidthMm": 294.9, "tailWidthMm": 294.9, "effectiveEdgeMm": 1215, "bindingSize": "Men's L, Women's L" },
+        { "size": "159", "riderWeightRange": "150-200 lb / 68-91 kg", "waistWidthMm": 255, "stanceLocationMm": -12.5, "runningLengthMm": 1195, "sidecutRadiusM": 8.2, "sidecutDepthMm": 21.8, "stanceWidthMm": 560, "noseWidthMm": 298.6, "tailWidthMm": 298.6, "effectiveEdgeMm": 1235, "bindingSize": "Men's L, Women's L" },
+        { "size": "162", "riderWeightRange": "180-260 lb+ / 82-118 kg+", "waistWidthMm": 257, "stanceLocationMm": -12.5, "runningLengthMm": 1225, "sidecutRadiusM": 8.4, "sidecutDepthMm": 22.4, "stanceWidthMm": 560, "noseWidthMm": 301.8, "tailWidthMm": 301.8, "effectiveEdgeMm": 1265, "bindingSize": "Men's L, Women's L" },
+        { "size": "155W", "riderWeightRange": "120-180 lb / 54-82 kg", "waistWidthMm": 256, "stanceLocationMm": -12.5, "runningLengthMm": 1155, "sidecutRadiusM": 7.9, "sidecutDepthMm": 21.1, "stanceWidthMm": 530, "noseWidthMm": 298.2, "tailWidthMm": 298.2, "effectiveEdgeMm": 1195, "bindingSize": "Men's L, Women's L" },
+        { "size": "157W", "riderWeightRange": "150-200 lb / 68-91 kg", "waistWidthMm": 257, "stanceLocationMm": -12.5, "runningLengthMm": 1175, "sidecutRadiusM": 8.1, "sidecutDepthMm": 21.4, "stanceWidthMm": 560, "noseWidthMm": 299.9, "tailWidthMm": 299.9, "effectiveEdgeMm": 1215, "bindingSize": "Men's L, Women's L" },
+        { "size": "159W", "riderWeightRange": "150-200 lb / 68-91 kg", "waistWidthMm": 260, "stanceLocationMm": -12.5, "runningLengthMm": 1195, "sidecutRadiusM": 8.2, "sidecutDepthMm": 21.8, "stanceWidthMm": 560, "noseWidthMm": 303.6, "tailWidthMm": 303.6, "effectiveEdgeMm": 1235, "bindingSize": "Men's L, Women's L" },
+        { "size": "162W", "riderWeightRange": "180-260 lb+ / 82-118 kg+", "waistWidthMm": 262, "stanceLocationMm": -12.5, "runningLengthMm": 1225, "sidecutRadiusM": 8.4, "sidecutDepthMm": 22.4, "stanceWidthMm": 560, "noseWidthMm": 306.8, "tailWidthMm": 306.8, "effectiveEdgeMm": 1265, "bindingSize": "Men's L, Women's L" }
+      ],
+      "representative157": {
+        "waistWidthMm": 252,
+        "runningLengthMm": 1175,
+        "effectiveEdgeMm": 1215,
+        "sidecutRadiusM": 8.1,
+        "sidecutDepthMm": 21.4,
+        "stanceLocationMm": -12.5,
+        "stanceWidthMm": 560,
+        "noseWidthMm": 294.9,
+        "tailWidthMm": 294.9,
+        "riderWeightRange": "150-200 lb / 68-91 kg"
+      },
+      "limits": "The Burton table labels the -12.5 mm field Stance Location, not setback. The prototype's positive stanceSetback convention is normalized to 12.5 mm; exact source notation is retained here. Official page does not list board mass, damping score, pop score or a mainland-China CNY retail price. A 2026-10-02 direct page check showed EUR 590 and all sizes sold out; a search-index capture had shown EUR 472 sale, so that dynamic sale snippet is not treated as current or available. Neither EU price is substituted for seed CNY 5499. Official page identifies the base as Sintered and does not substantiate the former '7200' grade."
+    },
+    "snowboardingProfilesNextModelRideTest": {
+      "url": "https://snowboardingprofiles.com/burton-process-review-all-mountain-snowboard",
+      "pageUpdatedAt": "2026-09-24",
+      "sampleScope": "Explicitly a Burton Process 2027, 157 cm / 252 mm waist, ridden 2026-02-13 by one reviewer. This is a following-season sample, not direct verification of 2025-26 production. Review setup: 560 mm centered stance, rider 183 cm / 82 kg / US 10. Conditions included firm/crusted and partly icy groomers, tracked and some untouched shallow snow, mixed rough snow and later slush; test lasted one disclosed day.",
+      "observations": "Medium flex supports moderate-speed riding and landings; turns are smooth/predictable with a little input and low overall catch threat; reasonably stable at moderate speeds but chatters when pushed hard; handles crud better than a softer freestyle deck but is not a crud bulldozer; deep powder requires noticeable rear-leg effort and is not its strength; jumps, side hits, switch and spins are strong, while all-day technical jibbing is not its main focus.",
+      "measuredSampleWeightGrams": 2880,
+      "weightDecision": "Measurement belongs only to the disclosed 2027 157 sample; not transferred to the 2026 seed.",
+      "scoreUse": "Directional corroboration only because the tested year is 2027. No external score or flex number is mapped to the site's six editorial dimensions."
+    },
+    "bpmShop2026RideReview": {
+      "url": "https://www.bpmproshop.de/Burton-Process-Camber-2026-Snowboard-der-Testbericht",
+      "publishedAt": "2025-09-18",
+      "sampleScope": "Review title identifies Burton Process Camber 2026, but it does not disclose the test sample size, exact length, test date, rider, or snow conditions. Treat as weak season-matched qualitative testimony, not reproducible controlled testing.",
+      "observations": "Reviewer describes accessible medium flex, grip on hard snow, pop and responsive weight shifts, but also perceived weight and less stability at very high speeds than the Custom.",
+      "scoreUse": "Directional only; no numeric score conversion."
+    },
+    "boarderspeakReview": {
+      "url": "https://www.boarderspeak.com/reviews/snow/Snowboards/burton-process-camber-snowboard-review",
+      "publishedAt": "2026-01-09",
+      "sampleScope": "Page does not establish the board's model year, size, test date, rider, or conditions; lower-confidence supporting context only.",
+      "observations": "Describes controlled ride and edge hold but reports limitations in deep powder and rough/icy chopped snow.",
+      "scoreUse": "Not used to change scores because target year and test setup are unknown."
+    },
+    "priceSearch": {
+      "checkedAt": "2026-10-02",
+      "mainlandChinaCandidate": {
+        "url": "https://detail.youzan.com/show/goods?alias=3694gxpatxifyt5&from_source=gbox_seo",
+        "seller": "SPADERS 黑桃滑雪俱乐部（页面标注微信认证）",
+        "listingTitle": "25/26BURTON雪板M PROCESS NO COLOR",
+        "listedPriceCny": 4998,
+        "availability": "Page shows a buy action; stock and checkout price were not independently confirmed.",
+        "identityLimit": "Season/model family matches Process 25/26, but listing title does not specify Camber versus Flying V and page text provides no SKU; do not treat as an exact Camber offer or change the canonical CNY seed price from this listing alone. Product photos are not reused; publication rights are unknown."
+      },
+      "jdIndexedOfferLead": {
+        "productIndexUrl": "https://www.jd.com/jiage/1318eda938c7ac60e471.html",
+        "jdProductUrl": "https://item.jd.com/10175042603278.html",
+        "indexEvidence": "JD's Burton snowboard price index labels the offer BURTON official 25-26 men's PROCESS, item family 106921 / 106921CA03RG, displayed as 157 cm; the same listing's images show both standard and Wide variants. The linked detail page did not expose a price in the available capture.",
+        "priceAggregatorUrl": "https://web.phb123.com/pinpai/top23912.html",
+        "priceAggregatorUpdatedAt": "2026-02-01",
+        "listedPriceCny": 4998,
+        "aggregatorSelectedVariant": "155W (wide)",
+        "priceType": "aggregator-reported to-hand price; direct JD checkout and inventory not verified",
+        "decision": "This is a season/model-matched local-market price lead for the 155W variant, not the seed's representative standard 157. Do not substitute it for the CNY 5499 seed or use it as an exact standard-157 offer; retain it as historical price context only."
+      },
+      "regionalComparables": [
+        {
+          "url": "https://eu.burton.com/en-pt/products/mens-burton-process-camber-snowboard-106921e-o?country=PT",
+          "market": "EU, official Burton store (Portugal storefront)",
+          "sku": "26WIN-106921",
+          "listedPriceEur": 590,
+          "priceType": "Official regional list price shown on direct page; not mainland-China retail",
+          "availability": "Direct page checked 2026-10-02 shows all sizes, including 157 and 157W, sold out. A search-index snippet showed EUR 472 sale, but the live page did not; treat that as stale/dynamic search evidence, not an available offer.",
+          "identityEvidence": "Winter 2026 Process Camber product page; size selector explicitly lists standard 157 and 157W separately."
+        },
+        {
+          "url": "https://geizhals.at/burton-process-camber-herren-modell-2025-2026-106921-ca0-a3645693.html",
+          "market": "Austria, price-comparison index",
+          "listedPriceEur": 469,
+          "priceType": "Historical offer snapshot; not mainland-China retail",
+          "availability": "Geizhals page identifies 157 standard as the Blue Tomato offer, but its displayed price was last updated 2026-08-31 and warns the actual shop price may now be higher. Direct merchant redirect was inaccessible during verification.",
+          "identityEvidence": "2025/26 Process Camber listing; offer title says Burton Process 2026, no color, 157 Herren."
+        },
+        {
+          "url": "https://burton.co.kr/product/w26-%EB%B2%84%ED%8A%BC-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%BA%A0%EB%B2%84-%EC%8A%A4%EB%85%B8%EC%9A%B0-%EB%B3%B4%EB%93%9C-burton-mens-process-camber-snowboard/6633",
+          "market": "South Korea",
+          "modelEvidence": "Page title explicitly says W26 Process Camber.",
+          "listedPriceKrw": 744000,
+          "regularPriceKrw": 930000,
+          "availability": "Sold out at retrieval; domestic delivery listing, but not a China price."
+        },
+        {
+          "url": "https://jp.burton.com/ja-jp/products/mens-burton-process-camber-snowboard-106921e-o",
+          "market": "Japan, official Burton store",
+          "sku": "26WIN-106921",
+          "listedPriceJpy": 83600,
+          "priceType": "Official regional listed price; not mainland-China CNY retail."
+        }
+      ],
+      "seedPriceDecision": "Keep CNY 5499 unchanged for now; value score remains low-confidence. One SPADERS China listing still does not distinguish Camber from Flying V. A separate JD/aggregator lead identifies 25/26 Process Camber and CNY 4998, but the reported selected size is 155W and the current JD detail price/inventory could not be verified; it does not establish the seed's representative standard 157 offer. Burton EU's official page lists EUR 590 but currently shows all sizes sold out; an indexed EUR 472 sale snippet conflicts with the direct page. Geizhals' EUR 469 listing is an older 2026-08-31 snapshot. These and Korea/Japan prices remain regional comparisons, not current China offers."
+    }
+  },
+  "editorialDecision": {
+    "scoresBefore": { "stability": 7, "response": 7.5, "float": 6, "park": 8.5, "forgiveness": 7.5, "value": 7.5 },
+    "scoresAfter": { "stability": 7, "response": 7.5, "float": 5.5, "park": 8.5, "forgiveness": 7.5, "value": 7.5 },
+    "rationale": "Only float is adjusted slightly down (6 to 5.5): the following-season 157 ride sample reports notable rear-leg effort and weak deep-powder suitability, while the season-labelled BPM review does not document enough test details to establish a target-season powder result. Other ratings remain low-confidence editorial estimates: the disclosed 2027 sample supports reasonable moderate-speed stability and jumps/switch, but cannot fully validate 2026; local value cannot be validated without a dated China-market price. No external ratings are numerically mapped.",
+    "copyDecision": "Removed unsupported comparisons against Burton Custom and CAPiTA D.O.A. Replaced unverified construction claims with Winter 2026 manufacturer terms. Product copy now describes the official twin freestyle/all-mountain positioning and avoids presenting the board as a powder or hard-charging carving specialist."
+  },
+  "unverifiedSeedFieldsRetained": [
+    "CNY price 5499 (China leads include one variant-ambiguous Camber/Flying V listing and a historical CNY 4998 155W aggregator quote; official EU 157 listing is sold out and the Austria EUR 469 quote is stale; an exact current 157 standard Camber China checkout price remains unresolved and value score stays low-confidence)",
+    "subjective damping 7 and pop 8.5 editorial values (not official measurement scales)",
+    "all six editorial dimensions remain subjective estimates, with only a small directional float adjustment"
+  ],
+  "removedUnsupportedFields": [
+    "weight 2790 g (no 2025-26 manufacturer measurement; adjacent 2027 tester's 2880 g sample is not transferred)",
+    "base grade '7200' (official target-season source only confirms Sintered Base)",
+    "Biax fiberglass claim (official target-season source specifies Triax Fiberglass)",
+    "FSC poplar construction wording (official source names Super Fly II 700G Core with Dualzone EGD; no unambiguous target-page FSC statement captured)",
+    "unsupported direct ride comparison with Burton Custom and CAPiTA D.O.A."
+  ],
+  "imageProvenance": {
+    "seedStatus": "Four AI placeholder images; not product photographs and not final product imagery.",
+    "decision": "No product image copied. Official or retailer image reuse rights are not established; existing placeholders are unchanged."
+  }
+}

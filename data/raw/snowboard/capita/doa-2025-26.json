@@ -1,0 +1,125 @@
+{
+  "brand": "CAPiTA",
+  "model": "D.O.A.",
+  "season": "2025-26",
+  "source": {
+    "documentTitle": "CAPiTA Snowboards 25/26 Catalog",
+    "url": "https://golgoda.com/PDF/25-26%20CAPiTA.pdf",
+    "hostNote": "Retailer-hosted copy; document cover identifies 25/26 and product/technology pages are CAPiTA-branded.",
+    "standardOverviewPdfPage": 34,
+    "standardSpecsPdfPage": 35,
+    "wideSpecsPdfPage": 38,
+    "retrievedAt": "2026-10-02"
+  },
+  "product": {
+    "riderType": "Resort",
+    "shape": "True Twin",
+    "flex": "Twin 5.5",
+    "profile": "Resort V1 + Flat Kick Tech",
+    "sidecutType": "Blended Radial",
+    "core": "P2 Superlight Core",
+    "glassAndResin": "Hybrid Carbon HolySheet Bi/Bi; Magic Bean Resin",
+    "base": "Quantum Drive; Sublimation",
+    "manufacturerClaims": [
+      "Lightweight, durable, poppy core",
+      "Hybrid HolySheet interwoven with Carbon Boosters for precise, lightweight construction",
+      "Resort V1 combines traditional camber, zero camber and reverse camber zones for pop, response and predictable turn initiation"
+    ]
+  },
+  "units": {
+    "effectiveEdge": "mm",
+    "waistWidth": "cm as printed",
+    "noseTailWidth": "cm as printed",
+    "sidecutRadius": "m",
+    "referenceStance": "cm and inches",
+    "suggestedRiderWeight": "lb and kg"
+  },
+  "standardSizes": [
+    {"size":148,"effectiveEdge":1176,"waistWidthCm":24.4,"noseTailWidthCm":28.7,"sidecutRadius":7.6,"referenceStanceCm":50.8,"referenceStanceIn":20.0,"suggestedWeightLb":[90,150],"suggestedWeightKg":[40,68]},
+    {"size":150,"effectiveEdge":1191,"waistWidthCm":24.6,"noseTailWidthCm":29.0,"sidecutRadius":7.7,"referenceStanceCm":53.3,"referenceStanceIn":21.0,"suggestedWeightLb":[100,150],"suggestedWeightKg":[45,68]},
+    {"size":152,"effectiveEdge":1207,"waistWidthCm":24.8,"noseTailWidthCm":29.2,"sidecutRadius":7.8,"referenceStanceCm":53.3,"referenceStanceIn":21.0,"suggestedWeightLb":[110,150],"suggestedWeightKg":[50,68]},
+    {"size":154,"effectiveEdge":1222,"waistWidthCm":25.0,"noseTailWidthCm":29.5,"sidecutRadius":7.9,"referenceStanceCm":53.3,"referenceStanceIn":21.0,"suggestedWeightLb":[120,180],"suggestedWeightKg":[54,81]},
+    {"size":156,"effectiveEdge":1233,"waistWidthCm":25.2,"noseTailWidthCm":29.8,"sidecutRadius":8.0,"referenceStanceCm":55.9,"referenceStanceIn":22.0,"suggestedWeightLb":[130,190],"suggestedWeightKg":[59,86]},
+    {"size":158,"effectiveEdge":1256,"waistWidthCm":25.4,"noseTailWidthCm":30.0,"sidecutRadius":8.1,"referenceStanceCm":55.9,"referenceStanceIn":22.0,"suggestedWeightLb":[140,200],"suggestedWeightKg":[63,90]},
+    {"size":160,"effectiveEdge":1270,"waistWidthCm":25.7,"noseTailWidthCm":30.4,"sidecutRadius":8.2,"referenceStanceCm":58.4,"referenceStanceIn":23.0,"suggestedWeightLb":[160,220],"suggestedWeightKg":[72,100]},
+    {"size":162,"effectiveEdge":1287,"waistWidthCm":25.9,"noseTailWidthCm":30.6,"sidecutRadius":8.3,"referenceStanceCm":58.4,"referenceStanceIn":23.0,"suggestedWeightLb":[180,240],"suggestedWeightKg":[82,110]},
+    {"size":164,"effectiveEdge":1301,"waistWidthCm":26.1,"noseTailWidthCm":30.9,"sidecutRadius":8.4,"referenceStanceCm":58.4,"referenceStanceIn":23.0,"suggestedWeightLb":[190,245],"suggestedWeightKg":[86,111]}
+  ],
+  "wideSizes": [
+    {"size":"151W","effectiveEdge":1170,"waistWidthCm":25.5,"noseTailWidthCm":29.7,"sidecutRadius":7.9,"referenceStanceCm":53.3,"referenceStanceIn":21.0,"suggestedWeightLb":[110,150],"suggestedWeightKg":[49,68]},
+    {"size":"153W","effectiveEdge":1185,"waistWidthCm":25.6,"noseTailWidthCm":29.9,"sidecutRadius":8.0,"referenceStanceCm":53.3,"referenceStanceIn":21.0,"suggestedWeightLb":[120,180],"suggestedWeightKg":[54,81]},
+    {"size":"155W","effectiveEdge":1205,"waistWidthCm":25.8,"noseTailWidthCm":30.2,"sidecutRadius":8.1,"referenceStanceCm":55.9,"referenceStanceIn":22.0,"suggestedWeightLb":[130,190],"suggestedWeightKg":[59,86]},
+    {"size":"157W","effectiveEdge":1239,"waistWidthCm":26.0,"noseTailWidthCm":30.5,"sidecutRadius":8.1,"referenceStanceCm":55.9,"referenceStanceIn":22.0,"suggestedWeightLb":[140,200],"suggestedWeightKg":[63,90]},
+    {"size":"159W","effectiveEdge":1259,"waistWidthCm":26.1,"noseTailWidthCm":30.7,"sidecutRadius":8.2,"referenceStanceCm":55.9,"referenceStanceIn":22.0,"suggestedWeightLb":[150,210],"suggestedWeightKg":[68,95]},
+    {"size":"161W","effectiveEdge":1280,"waistWidthCm":26.2,"noseTailWidthCm":30.9,"sidecutRadius":8.3,"referenceStanceCm":58.4,"referenceStanceIn":23.0,"suggestedWeightLb":[160,220],"suggestedWeightKg":[73,100]},
+    {"size":"163W","effectiveEdge":1297,"waistWidthCm":26.3,"noseTailWidthCm":31.1,"sidecutRadius":8.4,"referenceStanceCm":58.4,"referenceStanceIn":23.0,"suggestedWeightLb":[170,230],"suggestedWeightKg":[77,104]}
+  ],
+  "scoringEvidence": {
+    "review": {
+      "url": "https://www.boardoftheworld.com/capita-doa-review/",
+      "reviewLabel": "The 2026 Capita DOA Review",
+      "retrievedAt": "2026-10-02",
+      "targetSeasonTest": "2026 model, size 154 cm, one demo day at Stratton VT on 2025-02-04; reviewer reports 142 lb rider weight. Reviewer separately has 250+ accumulated days across multiple seasons and says versions after 2024 feel similar, with slightly more pressable tips. Do not attribute all accumulated experience to the one-day 2026 sample.",
+      "sampleVsSeed": "Season/model matches the 25/26 seed, but test size 154 differs from the official-table median seed size 156; this is directional evidence, not a representative-size retest.",
+      "observations": {
+        "stability": "Review describes the board as stable at high speed, but nose/tail chatter is felt on uneven terrain; reviewer considers the chatter manageable and says damp bindings can mask it.",
+        "response": "Strong carving response and edge hold are described; external responsiveness subscore is 10/10, not directly mapped to our rubric.",
+        "float": "Reviewer says it does not float well in deep powder; centered true-twin configuration is not a powder specialty.",
+        "park": "Strong spring-like pop and jump performance; reviewer emphasizes jumps and small/medium park features, with useful switch/jib capability.",
+        "forgiveness": "Board is pressable but contact points may feel catchy; the reviewer warns inexperienced riders can catch an edge and places the board at intermediate level.",
+        "externalSubscores": {"speed":9,"edgeHold":9,"jumps":10,"switch":10,"jibs":9,"dampness":7,"buttering":7,"powder":7},
+        "externalScoreScope": "These are the review page's aggregate/current review scores, not a scoring record isolated to the one-day 2026 demo sample."
+      }
+    },
+    "editorialDecision": {
+      "before": {"stability":6.5,"response":8,"float":5.5,"park":9.5,"forgiveness":7.5,"value":8.5},
+      "after": {"stability":7,"response":8,"float":5.5,"park":9.5,"forgiveness":7,"value":8.5},
+      "rationale": "Stability rises modestly from 6.5 to 7 because the target-year review describes high-speed composure, bounded by noticeable but manageable chatter on uneven snow. Forgiveness falls modestly from 7.5 to 7 because the reviewer identifies catchy contact points and explicitly cautions beginner riders. These are directional editorial adjustments based on one target-year demo sample (154 cm, not the 156 cm seed size); external scores are not numerically converted. Response/float/park remain consistent with the review but have limited sample coverage. Value remains unchanged and low-confidence because the CNY seed price has no verified China-market source.",
+      "confidence": "Low-to-medium overall; one target-year demo day by an experienced reviewer plus multiyear related-model background, with a different sample size. Value confidence is low."
+    }
+  },
+  "priceEvidence": {
+    "japanCatalog": {
+      "url": "https://golgoda.com/PDF/25-26%20CAPITA%20PRICE.pdf",
+      "retrievedAt": "2026-10-02",
+      "documentUpdatedAt": "2025-01-15",
+      "hostNote": "Retailer-hosted copy of a CAPiTA-branded 25/26 line/price list; not hosted on CAPiTA's domain. Document labels prices provisional.",
+      "product": "D.O.A. 156 / 21030300-MSC-156",
+      "currency": "JPY",
+      "displayedTaxExclusiveListPrice": 81000,
+      "decision": "Japan regional list-price evidence only; not a China CNY price."
+    },
+    "japanRetailerMorispo": {
+      "url": "https://www.morispo.shop/smartphone/switch_pc.html?loc=detail&param=000000055463",
+      "retrievedAt": "2026-10-02",
+      "seasonLabel": "2025/2026 CAPITA D.O.A.",
+      "currency": "JPY",
+      "displayedReferencePriceTaxIncluded": 89100,
+      "displayedOfferPriceTaxIncluded": 80190,
+      "availability": "All displayed size variants sold out at capture.",
+      "decision": "Japan retailer price cross-check; does not establish the China-market seed price."
+    },
+    "japanRetailerYahoo": {
+      "url": "https://store.shopping.yahoo.co.jp/breakout/13-stair.html",
+      "retrievedAt": "2026-10-02",
+      "seasonLabel": "25-26 CAPITA DOA 2026",
+      "currency": "JPY",
+      "displayedReferencePriceTaxIncluded": 89100,
+      "displayedOfferPriceTaxIncluded": 66825,
+      "availability": "Sold out at capture.",
+      "decision": "Dynamic Japan offer only; not an available quote, MSRP confirmation, or China-market price."
+    },
+    "chinaMarketSearch": {
+      "auditedAt": "2026-10-02",
+      "queries": ["CAPiTA D.O.A 2025 2026 雪板 中国 售价 5299","CAPITA DOA 25/26 中国价格 156 价格 单板","CAPiTA D.O.A. ¥ 2025/26 snowboards China","D.O.A. 2026 CNY snowboard price China"],
+      "finding": "Search results did not provide a verifiable mainland-China 25/26 listing with a seller, price, and exact SKU/season combination. Aggregator and generic product results without auditable seller/season/price details were excluded.",
+      "decision": "Keep seed CNY 5299 unchanged; market, price type and date remain unverified. Do not convert JPY list or outlet prices into CNY without a documented valuation policy."
+    }
+  },
+  "imageEvidence": {
+    "reviewGallery": "https://www.boardoftheworld.com/capita-doa-review/",
+    "evidence": "The review page includes 2026-model on-snow demonstration photos (including a jump image) alongside its disclosed 154 cm test sample.",
+    "reuseDecision": "Reviewer/page images are not licensed for reuse by this catalog. Current YAML images remain labeled AI placeholders; replace only with owned assets or explicit permission."
+  },
+  "unverifiedSeedFields": ["CNY price 5299 and price provenance","representative 156 cm board mass 2760 g","2-year warranty term","image reuse permission"]
+}

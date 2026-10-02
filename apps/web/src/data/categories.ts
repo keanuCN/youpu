@@ -473,7 +473,7 @@ export function flexBucket(v: number): string {
  */
 export function profileFamilyOf(profile: unknown): "camber" | "rocker" | "hybrid" {
   const text = String(profile ?? "");
-  if (/^\s*纯\s*Camber/i.test(text)) return "camber";
+  if (/^\s*(?:纯|全长|Full)\s*Camber/i.test(text)) return "camber";
   if (/全反弓/.test(text) || /^\s*Rocker\s*$/.test(text)) return "rocker";
   return "hybrid";
 }
@@ -501,6 +501,7 @@ export const SNOWBOARD: Category = {
         { key: "length", label: "长度", unit: "cm", type: "number", direction: null },
         { key: "effectiveEdge", label: "有效边刃", unit: "mm", type: "number", direction: "higher" },
         { key: "sidecut", label: "侧切半径", unit: "m", type: "number", direction: null },
+        { key: "sidecutRadii", label: "多段侧切半径原文", type: "text", direction: null },
         { key: "waistWidth", label: "板腰宽", unit: "mm", type: "number", direction: null },
         { key: "stanceSetback", label: "站位后移", unit: "mm", type: "number", direction: null },
         { key: "profile", label: "板型", type: "text", direction: null },

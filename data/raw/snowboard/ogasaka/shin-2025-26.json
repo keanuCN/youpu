@@ -1,0 +1,94 @@
+{
+  "brand": "OGASAKA",
+  "model": "SHIN",
+  "variant": "SHIN 160",
+  "season": "2025-26",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.ogasaka-snowboard.com/product_25_12_shin-160.html",
+      "englishUrl": "https://www.ogasaka-snowboard.com/product_25_12_shin-160_e.html",
+      "retrievedAt": "2026-10-02",
+      "evidence": "Season-specific official SHIN 160 page. Identifies product group as powder style; targets intermediate through expert riders; names SHIN 160 a medium-long all-round size with more float than SHIN 156 and easier maneuverability than SHIN 167. The page provides the lineup geometry table and size-dependent construction.",
+      "priceJPY": {
+        "variant": "SHIN 160",
+        "taxExclusive": 110000,
+        "taxInclusive": 121000,
+        "note": "Japan domestic list price shown on the SHIN 160 official page; not a China-market offer. Do not assume wide-size or other variant prices unless their pages confirm them."
+      },
+      "constructionAsPrinted": {
+        "core": "OGK2 Core",
+        "reinforcementForSelected160": "Glass Fiber Carbon Composite + Carbon Sheet Wide [156-167]",
+        "pcPlate": "Type-S",
+        "edge": "Stainless",
+        "base": "Sintered Graphite",
+        "baseFinish": "Sanding Finish (convex sole)"
+      },
+      "manufacturerCopySummary": "SHIN is OGASAKA's powder-board series. The maker positions SHIN 160 between 156 and 167 as a medium-long all-round size for riders who want more float than 156 but easier handling than 167, including carving and powder use. The 156 page separately names S-Rocker; the SHIN 160 page does not name its profile, so this is not copied into the 160 seed."
+    },
+    "sameSeasonRideTest2025": {
+      "url": "https://teikiken.exblog.jp/33526636/",
+      "title": "250216 斑尾高原-タングラムスキーサーカス(オガサカ試乗会編)",
+      "publishedAt": "2025-02-20",
+      "testDate": "2025-02-16",
+      "location": "Tangram Ski Circus, Nagano, Japan",
+      "testBoard": "The rider explicitly identifies the board as 25-26 OGASAKA SHIN 160.",
+      "conditionsAndFormat": "Sunny; overall surface described as good early and becoming wet as the day warmed. Demo session ran about 09:30-14:00, with each board loan limited to 30 minutes. The article does not specify the exact SHIN run time, rider body/boot specs, or powder depth.",
+      "directObservations": "The rider's brief SHIN 160 note says it was easy to ride and could carve. They state that 160 felt like a suitable length for their powder-board replacement search, but preferred a swallowtail design and already owned square-tail powder boards. No explicit float-performance finding is recorded.",
+      "limitations": "Personal trial-day diary; single rider, short demo exposure, and no detailed SHIN-specific snow/run disclosure. It is direct target-season/size evidence for general handling and carving only, not a powder stress test, park test, or controlled stability/response comparison."
+    },
+    "exchangeRate": {
+      "url": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+      "date": "2026-10-02",
+      "closeCnyPer100Jpy": 4.24510,
+      "normalizedJpyPerCny": 0.042451,
+      "calculation": "121000 JPY × 0.042451 CNY/JPY = 5136.571 CNY, rounded to 5137 CNY",
+      "note": "Historical market close used only to reproduce the project's CNY-normalized display estimate; exchange prices vary by source and are not a retail price."
+    }
+  },
+  "units": {
+    "size": "cm (SW prefixes denote the source's wide variants; SWCA retained verbatim)",
+    "effectiveEdge": "mm; source heading EF.EDGE.L",
+    "contactLength": "mm; source heading CO.L, kept separate from effective edge",
+    "noseWidth": "mm",
+    "waistWidth": "mm",
+    "tailWidth": "mm",
+    "sidecutRadius": "m; one source value per size",
+    "setback": "mm; signed value copied exactly as printed",
+    "stance": "mm; source heading STANCE"
+  },
+  "sizes": [
+    {"size":"144","effectiveEdge":1040,"contactLength":900,"noseWidth":280,"waistWidth":245,"tailWidth":270,"sidecutRadiusM":8.3,"setbackMm":10,"stanceMm":460,"core":"OGK2 Core","reinforcement":"Carbon Ribbon Narrow"},
+    {"size":"148","effectiveEdge":1080,"contactLength":900,"noseWidth":288,"waistWidth":246,"tailWidth":276,"sidecutRadiusM":7.5,"setbackMm":10,"stanceMm":480,"core":"OGK2 Core","reinforcement":"Carbon Ribbon Narrow"},
+    {"size":"156","effectiveEdge":1150,"contactLength":930,"noseWidth":304,"waistWidth":259,"tailWidth":290,"sidecutRadiusM":8.1,"setbackMm":10,"stanceMm":540,"core":"OGK2 Core","reinforcement":"Carbon Sheet Wide"},
+    {"size":"160","effectiveEdge":1190,"contactLength":955,"noseWidth":303,"waistWidth":260,"tailWidth":291,"sidecutRadiusM":9.0,"setbackMm":20,"stanceMm":540,"core":"OGK2 Core","reinforcement":"Carbon Sheet Wide"},
+    {"size":"167","effectiveEdge":1245,"contactLength":1005,"noseWidth":312,"waistWidth":270,"tailWidth":300,"sidecutRadiusM":10.0,"setbackMm":20,"stanceMm":560,"core":"OGK2 Core","reinforcement":"Carbon Sheet Wide"},
+    {"size":"SW158","effectiveEdge":1240,"contactLength":955,"noseWidth":307,"waistWidth":259,"tailWidth":293,"sidecutRadiusM":8.7,"setbackMm":-12.5,"stanceMm":540,"core":"OGK2 Core","reinforcement":"Glass Fiber"},
+    {"size":"SWCA163","effectiveEdge":1310,"contactLength":1070,"noseWidth":310,"waistWidth":261,"tailWidth":296,"sidecutRadiusM":9.5,"setbackMm":20,"stanceMm":540,"core":"OGK2 Core","reinforcement":"Glass Fiber"},
+    {"size":"SW172","effectiveEdge":1360,"contactLength":1050,"noseWidth":312,"waistWidth":270,"tailWidth":299,"sidecutRadiusM":12.5,"setbackMm":-5,"stanceMm":540,"core":"OGK2 Core","reinforcement":"Glass Fiber","edition":"New Revival"}
+  ],
+  "seedMappingNotes": [
+    "The existing seed explicitly represents SHIN 160. Its official row confirms edge 1190 mm, contact length 955 mm, nose/waist/tail widths 303/260/291 mm, radius 9.0 m, setback 20 mm and stance 540 mm.",
+    "The eight size labels and all signed setback values are copied verbatim; negative setbacks for SW158 and SW172 are not normalized or interpreted.",
+    "The 156 page mentions S-Rocker, but the 160 page does not name a profile. Do not copy the 156 profile to the selected 160 variant.",
+    "The official product page does not provide board weight. No weight is inferred.",
+    "Official product image reuse authorization is unverified."
+  ],
+  "pricing": {
+    "seedCnyEstimate": 5137,
+    "basis": "JPY 121000 tax-inclusive official list price for SHIN 160 × 0.042451 CNY/JPY historical market close dated 2026-10-02, rounded to whole CNY",
+    "notChinaRetailPrice": true,
+    "unresolved": "No verified China-market price found."
+  },
+  "scoringEvidence": {
+    "currentSiteScores": {"stability":7.9,"response":8.1,"float":9.0,"park":5.5,"forgiveness":6.8,"value":6.8},
+    "decision": "Retain all current scores. The same-season 160 cm demo supports basic ease of riding and carving, but its brief qualitative note does not justify numeric changes to stability, response, or forgiveness. It does not report powder float or park performance, so float 9.0 and park 5.5 remain low-confidence estimates rather than empirically validated scores. Value remains based on Japanese list-price currency conversion, not a Chinese-market transaction.",
+    "confidence": "Low across all six numeric dimensions: only one short same-season demo account is available; snow conditions were groomed/softening rather than documented powder, and no complete condition-specific performance breakdown was given."
+  },
+  "unresolved": [
+    "No verified China-market retail price; converted estimate is not an offer.",
+    "Exact board weight is not provided by the official page.",
+    "The selected SHIN 160 page does not name a camber/profile label; do not infer the 156 model's S-Rocker label.",
+    "Official product image reuse authorization is unverified.",
+    "A same-season SHIN 160 demo note was located, but it only reports easy handling and ability to carve; it does not test or substantiate the seed's high float score, park score, or numerical stability/response ratings."
+  ]
+}

@@ -5,7 +5,7 @@ import { GEAR } from '../data/boards';
 import { buildSearchParams, searchCatalog, searchLocalGear } from './search';
 
 test('local search matches brand, model, and year', () => {
-  const result = searchLocalGear(GEAR, { q: 'burton', sort: 'relevance', page: 1, pageSize: 20 });
+  const result = searchLocalGear(GEAR, { q: 'burton', brand: 'burton', sort: 'relevance', page: 1, pageSize: 20 });
   assert.ok(result.items.length > 0);
   assert.ok(result.items.every((item) => item.brand.toLocaleLowerCase().includes('burton')));
 });

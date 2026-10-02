@@ -8,6 +8,10 @@ test('keeps CNY unchanged and converts USD using the fixed rate', () => {
   assert.equal(convertPriceToCny(2297, 'CNY'), 2297);
 });
 
+test('converts JPY using the dated reference rate for catalog estimates', () => {
+  assert.equal(convertPriceToCny(154000, 'JPY'), 6537);
+});
+
 test('normalizes nullable ranges and rounds each endpoint', () => {
   assert.deepEqual(normalizePriceRange({ min: 319, max: 379.99, currency: 'USD' }), {
     min: 2297,

@@ -1,34 +1,35 @@
-# 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
-# 原型 id：sb-11 · 参数未经官网逐项校对，转入正式发布前需人工核对
+# 产品字段已逐项核对并同步原型与 YAML；全尺码证据保存在 data/raw/snowboard/nitro/team-2025-26.json。
+# 原型 id：sb-11 · 价格、板重及评分仍待进一步核实
 slug: nitro-team-2026
 category: snowboard
 brand: nitro
 model: Team
 year: 2026
 title: Nitro Team 2026
-one_liner: 同价位里最难被挑出毛病的一块。它把全山地和公园的边界模糊掉了，价格还压在 5000 以内。
+one_liner: 25/26 Team 采用 Trüe Camber 与 Directional Twin 结构，强调全山控制和弹性，同时覆盖公园与多种雪况。
 price:
   min: 4599
   max: 4599
   currency: CNY
 specs:
   length: 157
-  effectiveEdge: 1205
-  sidecut: 7.8
-  waistWidth: 253
+  effectiveEdge: 1170
+  sidecut: 7.3
+  sidecutRadii: 11.3 / 7.3 / 11.3 m
+  waistWidth: 252
   stanceSetback: 15
-  profile: Cam-Out Camber
-  shape: 定向双向
-  core: Powerlite 白杨
-  fiberglass: Biax
-  base: 烧结 Speedlite
+  profile: Trüe Camber
+  shape: Directional Twin
+  core: Powerlite Core
+  fiberglass: Bi-Lite Laminates
+  base: Sintered EcoSpeed HD Base
   weight: 2810
   damping: 7
   pop: 7.5
   turnRadiusFeel: 中性偏快，好带
   warranty: 2
   flex: 6
-  profileFamily: hybrid
+  profileFamily: camber
   scenes:
     - all-mountain
     - freestyle
@@ -60,4 +61,7 @@ images:
     alt: Nitro Team 实地 / FIELD
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 3
+data_source:
+  kind: official
+  origin_url: https://www.nitrosnow.ca/products/2026-team
 status: published

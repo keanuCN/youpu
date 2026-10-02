@@ -4,11 +4,27 @@ brand: bc-stream
 model: R2
 year: 2026
 title: BC Stream R-2 2026
-one_liner: 25/26 款锤头刻滑板，采用方向性双向板型与可变拱形；该型号未见于当前 26/27 目录。
+one_liner: 25/26 款锤头刻滑板，采用方向性双向板型与可变拱形；日本含税定价 ¥126,500，按 2026-10-02 参考汇率折算约 ¥5,370 CNY；该型号未见于当前 26/27 目录。
+editorial_scores:
+  stability: 7.9
+  response: 8.4
+  float: 5.8
+  park: 3.0
+  forgiveness: 4.6
+  value: 6.8
+price:
+  min: 5370
+  max: 5370
+  currency: CNY
 specs:
+  length: 157
+  effectiveEdge: 1300
+  waistWidth: 250
+  stanceSetback: 20
   profile: Variable Camber
   profileFamily: hybrid
   shape: Directional Twin / Hammerhead
+  core: 桧木 / 桐木
   scenes:
     - carving
     - all-mountain

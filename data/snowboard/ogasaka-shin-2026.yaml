@@ -4,17 +4,40 @@ brand: ogasaka
 model: SHIN
 year: 2026
 title: OGASAKA SHIN 2026
-one_liner: 面向粉雪和全山地的系列雪板，官方将其定位为适应多种雪况的中高级型号；不同长度的尺寸与结构不可混用。
+one_liner: SHIN 160 是介于 156 与 167 之间的中长全能粉雪板，较 156 浮力更强、比 167 更易操控，也面向希望兼顾刻滑的滑手；日本官网 25/26 含税价 ¥121,000，按 2026-10-02 汇率折算约 ¥5,137 CNY，仅为汇率估值，不是中国售价。
+editorial_scores:
+  stability: 7.9
+  response: 8.1
+  float: 9.0
+  park: 5.5
+  forgiveness: 6.8
+  value: 6.8
+price:
+  min: 5137
+  max: 5137
+  currency: CNY
 specs:
   length: 160
+  effectiveEdge: 1190
   waistWidth: 260
+  sidecut: 9.0
   stanceSetback: 20
   shape: Directional
   core: OGK2 Core
+  fiberglass: Glass Fiber Carbon Composite + Carbon Sheet Wide
   base: Sintered Graphite
   scenes:
     - powder
     - all-mountain
+  sizeSpecs:
+    - {size: "144", effectiveEdge: 1040, contactLength: 900, noseWidth: 280, waistWidth: 245, tailWidth: 270, sidecutRadius: 8.3, setback: 10, stanceWidth: "460 mm"}
+    - {size: "148", effectiveEdge: 1080, contactLength: 900, noseWidth: 288, waistWidth: 246, tailWidth: 276, sidecutRadius: 7.5, setback: 10, stanceWidth: "480 mm"}
+    - {size: "156", effectiveEdge: 1150, contactLength: 930, noseWidth: 304, waistWidth: 259, tailWidth: 290, sidecutRadius: 8.1, setback: 10, stanceWidth: "540 mm"}
+    - {size: "160", effectiveEdge: 1190, contactLength: 955, noseWidth: 303, waistWidth: 260, tailWidth: 291, sidecutRadius: 9.0, setback: 20, stanceWidth: "540 mm"}
+    - {size: "167", effectiveEdge: 1245, contactLength: 1005, noseWidth: 312, waistWidth: 270, tailWidth: 300, sidecutRadius: 10.0, setback: 20, stanceWidth: "560 mm"}
+    - {size: "SW158", effectiveEdge: 1240, contactLength: 955, noseWidth: 307, waistWidth: 259, tailWidth: 293, sidecutRadius: 8.7, setback: -12.5, stanceWidth: "540 mm"}
+    - {size: "SWCA163", effectiveEdge: 1310, contactLength: 1070, noseWidth: 310, waistWidth: 261, tailWidth: 296, sidecutRadius: 9.5, setback: 20, stanceWidth: "540 mm"}
+    - {size: "SW172", effectiveEdge: 1360, contactLength: 1050, noseWidth: 312, waistWidth: 270, tailWidth: 299, sidecutRadius: 12.5, setback: -5, stanceWidth: "540 mm"}
 images:
   - url: "https://www.ogasaka-snowboard.com/2025-img/12_shin_160.png"
     kind: face

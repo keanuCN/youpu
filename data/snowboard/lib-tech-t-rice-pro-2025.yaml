@@ -1,37 +1,177 @@
 # 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
-# 原型 id：sb-05 · 参数未经官网逐项校对，转入正式发布前需人工核对
+# 原型 id：sb-05 · 官方 24/25 季节表已核对；Contact Length 不等同于 effectiveEdge，其他遗留字段限制见来源清单/raw
 slug: lib-tech-t-rice-pro-2025
 category: snowboard
 brand: lib-tech
 model: T.Rice Pro
 year: 2025
 title: Lib Tech T.Rice Pro 2025
-one_liner: 为硬雪面和大跳台设计。波浪边刃在冰面上咬得住，落地时板面吸收冲击的能力比同硬度对手好一档。
+one_liner: 品牌将 T.Rice Pro 定位为全山自由式 Twin，采用 C2 混合板型与 Horsepower 构造，主打公园及全山多用途；独立实测与若干遗留字段仍待核。
 price:
   min: 5699
   max: 5699
   currency: CNY
 specs:
   length: 157
-  effectiveEdge: 1210
-  sidecut: 7.7
-  waistWidth: 256
+  sidecut: 8.2
+  waistWidth: 258
   stanceSetback: 0
-  profile: C2（板下反弓 + 板头尾 Camber）
-  shape: 真双向
+  profile: C2 Hybrid（官方定位）
+  shape: Twin（品牌分类；未核为 True Twin）
   core: Aspen / Paulownia 混合
   fiberglass: Biax + Triax
-  base: 烧结 UHMW
+  base: Sintered（官方描述：competition-ready）
   weight: 2890
   damping: 7
   pop: 8.5
-  turnRadiusFeel: 抓刃强，波浪边刃
+  turnRadiusFeel: Magne-Traction® 波浪边刃
   warranty: 3
   flex: 6.5
   profileFamily: hybrid
   scenes:
     - freestyle
     - all-mountain
+  sizeSpecs:
+    - size: "148"
+      widthVariant: standard
+      contactLengthCm: 116
+      sidecutRadiusM: 7.5
+      noseWidthCm: 29.7
+      waistWidthCm: 25.2
+      tailWidthCm: 29.7
+      stanceMinInches: 19.5
+      stanceMaxInches: 24.5
+      stanceMinCm: 49.5
+      stanceMaxCm: 62.25
+      setbackInches: 0
+      brandFlexOutOf10: 6
+      riderWeightRaw: 75+ lb / 35+ kg
+    - size: "153"
+      widthVariant: standard
+      contactLengthCm: 118
+      sidecutRadiusM: 8
+      noseWidthCm: 29.5
+      waistWidthCm: 25.3
+      tailWidthCm: 29.5
+      stanceMinInches: 20.25
+      stanceMaxInches: 25
+      stanceMinCm: 51.5
+      stanceMaxCm: 63.5
+      setbackInches: 0
+      brandFlexOutOf10: 6
+      riderWeightRaw: 100+ lb / 45+ kg
+    - size: "155"
+      widthVariant: standard
+      contactLengthCm: 119
+      sidecutRadiusM: 8.1
+      noseWidthCm: 29.8
+      waistWidthCm: 25.5
+      tailWidthCm: 29.8
+      stanceMinInches: 20.25
+      stanceMaxInches: 25
+      stanceMinCm: 51.5
+      stanceMaxCm: 63.5
+      setbackInches: 0
+      brandFlexOutOf10: 6.5
+      riderWeightRaw: 110+ lb / 50+ kg
+    - size: "157"
+      widthVariant: standard
+      contactLengthCm: 121
+      sidecutRadiusM: 8.2
+      noseWidthCm: 30.1
+      waistWidthCm: 25.8
+      tailWidthCm: 30.1
+      stanceMinInches: 20.25
+      stanceMaxInches: 25
+      stanceMinCm: 51.5
+      stanceMaxCm: 63.5
+      setbackInches: 0
+      brandFlexOutOf10: 7
+      riderWeightRaw: 120+ lb / 55+ kg
+    - size: "157W"
+      widthVariant: wide
+      contactLengthCm: 121
+      sidecutRadiusM: 8.2
+      noseWidthCm: 30.5
+      waistWidthCm: 26.3
+      tailWidthCm: 30.5
+      stanceMinInches: 20.25
+      stanceMaxInches: 25
+      stanceMinCm: 51.5
+      stanceMaxCm: 63.5
+      setbackInches: 0
+      brandFlexOutOf10: 7
+      riderWeightRaw: 125+ lb / 60+ kg
+    - size: "159"
+      widthVariant: standard
+      contactLengthCm: 122
+      sidecutRadiusM: 8.3
+      noseWidthCm: 30.2
+      waistWidthCm: 25.9
+      tailWidthCm: 30.2
+      stanceMinInches: 20.25
+      stanceMaxInches: 25
+      stanceMinCm: 51.5
+      stanceMaxCm: 63.5
+      setbackInches: 0
+      brandFlexOutOf10: 7
+      riderWeightRaw: 125+ lb / 60+ kg
+    - size: "161"
+      widthVariant: standard
+      contactLengthCm: 124.5
+      sidecutRadiusM: 8.4
+      noseWidthCm: 30.4
+      waistWidthCm: 26
+      tailWidthCm: 30.4
+      stanceMinInches: 20.25
+      stanceMaxInches: 25
+      stanceMinCm: 51.5
+      stanceMaxCm: 63.5
+      setbackInches: 0
+      brandFlexOutOf10: 7
+      riderWeightRaw: 130+ lb / 60+ kg
+    - size: "161W"
+      widthVariant: wide
+      contactLengthCm: 124.5
+      sidecutRadiusM: 8.4
+      noseWidthCm: 31.1
+      waistWidthCm: 26.5
+      tailWidthCm: 31.1
+      stanceMinInches: 20.25
+      stanceMaxInches: 25
+      stanceMinCm: 51.5
+      stanceMaxCm: 63.5
+      setbackInches: 0
+      brandFlexOutOf10: 7
+      riderWeightRaw: 135+ lb / 65+ kg
+    - size: "164"
+      widthVariant: standard
+      contactLengthCm: 127
+      sidecutRadiusM: 8.5
+      noseWidthCm: 31
+      waistWidthCm: 26.2
+      tailWidthCm: 31
+      stanceMinInches: 20.25
+      stanceMaxInches: 25
+      stanceMinCm: 51.5
+      stanceMaxCm: 63.5
+      setbackInches: 0
+      brandFlexOutOf10: 7
+      riderWeightRaw: 140+ lb / 65+ kg
+    - size: "164W"
+      widthVariant: wide
+      contactLengthCm: 127
+      sidecutRadiusM: 8.5
+      noseWidthCm: 31.2
+      waistWidthCm: 26.7
+      tailWidthCm: 31.2
+      stanceMinInches: 20.25
+      stanceMaxInches: 25
+      stanceMinCm: 51.5
+      stanceMaxCm: 63.5
+      setbackInches: 0
+      brandFlexOutOf10: 7
+      riderWeightRaw: 145+ lb / 70+ kg
 editorial_scores:
   stability: 7.5
   response: 8
@@ -60,4 +200,9 @@ images:
     alt: Lib Tech T.Rice Pro 实地 / FIELD
     source: 原型素材（AI 生成占位图，上架前替换为实拍/官方图）
     sort_order: 3
+# Historical dimensions are transcribed from the indexed official 24/25 page, which is now unavailable directly. Contact Length is not Effective Edge; 153 cm is retained at 118 cm from the historical season record despite an unseasoned retailer page currently listing 118.5 cm. Board mass, comparable local price and other legacy fields remain unverified.
+data_source:
+  kind: official
+  origin_url: https://cad.lib-tech.com/2425-t-rice-pro-148
+  snapshot_url: https://www.youtube.com/watch?v=zeTTXPXEP5k
 status: published
