@@ -5,6 +5,7 @@ const IMAGE_PROXY_PATH = "/api/image-proxy";
  * 新品类的本地演示图来自品牌官网或公开零售页面，正式上线前仍应迁移到自有 COS。
  */
 const REMOTE_IMAGE_RULES = [
+  { host: "youpu.tos-cn-beijing.volces.com", pathPrefix: "/product-images/" },
   { host: "g.cdn.meoo.host", pathPrefix: "/uvayfd7jql5o/ai-images/" },
   { host: "us.yonex.com", pathPrefix: "/cdn/shop/files/" },
   { host: "shop.au.victorsport.com", pathPrefix: "/cdn/shop/" },
