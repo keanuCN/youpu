@@ -82,6 +82,7 @@ test('upsertRating applies the rating limit and persists moderation metadata whi
   await service.upsertRating('burton-custom', account, {
     overall: 5,
     sub: {},
+    images: [],
     content: '加微信返现购买',
     riderProfile: account.riderProfile,
   });
