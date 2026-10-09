@@ -64,6 +64,15 @@ test("maps an API list item while preserving local transitional fields", () => {
   assert.deepEqual(gear.analysis, localGear.analysis);
 });
 
+test("does not restore an AI placeholder from API or local fallback images", () => {
+  const aiUrl =
+    "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=test";
+  const gear = mapProductListItem({ ...apiItem, coverUrl: aiUrl }, localGear);
+
+  assert.equal(gear.hero, "");
+  assert.deepEqual(gear.gallery, []);
+});
+
 test("uses the API slug as the route id for products outside the local pack", () => {
   const gear = mapProductListItem({
     ...apiItem,

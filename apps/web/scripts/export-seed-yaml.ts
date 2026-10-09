@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { stringify as toYaml } from 'yaml';
 import { PROTOTYPE_GEAR } from '@/data/boards';
+import { isAllowedImageUrl } from '@/lib/image-url';
 import type { GearItem } from '@/types';
 import { selectSeedTargets, toSeedSpecs } from './seed-specs';
 
@@ -55,9 +56,9 @@ function toSeed(g: GearItem, index: number) {
   if (!brandSlug) throw new Error(`未知品牌：${g.brand}（请先在 data/brands.yaml 建档）`);
 
   // 原型的 specs 把「官方参考价 / 年款」也当作参数行，本模型中它们是产品列，导出时剔除
-  const images = g.gallery.map((shot, i) => {
+  const images = g.gallery.filter((shot) => isAllowedImageUrl(shot.url)).map((shot, i) => {
     const kind = SHOT_KIND.find((k) => shot.label.includes(k.match))?.kind ?? 'side';
-    return { url: shot.url, kind, alt: `${g.brand} ${g.model} ${shot.label}`, source: '原型素材（AI 生成占位图，上架前替换为实拍/官方图）', sort_order: i };
+    return { url: shot.url, kind, alt: `${g.brand} ${g.model} ${shot.label}`, source: '原型内容包素材（来源待核验）', sort_order: i };
   });
 
   return {

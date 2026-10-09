@@ -75,6 +75,19 @@ test("未获准的云端封面回退时保留本地图像语义，不伪装成�
   assert.deepEqual(result?.gallery, local.gallery);
 });
 
+test("云端 AI 封面和本地回退图均不进入目录展示", () => {
+  const aiUrl =
+    "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=test";
+  const local = { ...base, hero: aiUrl, gallery: [{ url: aiUrl, label: "旧占位图" }] };
+  const [result] = applyCatalogSnapshot(
+    [local],
+    [snapshot({ coverUrl: aiUrl })],
+  );
+
+  assert.equal(result?.hero, "");
+  assert.deepEqual(result?.gallery, []);
+});
+
 test("云端新增产品进入统一目录并使用明确的空默认值", () => {
   const result = applyCatalogSnapshot([], [snapshot({ slug: "new-brand-new-model-2026", model: "New Model" })]);
 

@@ -49,7 +49,9 @@ function matchesSnapshot(gear: GearItem, snapshot: CatalogSnapshotItem): boolean
 }
 
 function safeCover(snapshot: CatalogSnapshotItem, fallback: string): string {
-  if (!snapshot.coverUrl || !isAllowedImageUrl(snapshot.coverUrl)) return fallback;
+  if (!snapshot.coverUrl || !isAllowedImageUrl(snapshot.coverUrl)) {
+    return isAllowedImageUrl(fallback) ? fallback : "";
+  }
   return resolveImageUrl(snapshot.coverUrl);
 }
 
@@ -85,9 +87,10 @@ function scenesOf(specs: SnapshotSpecs, fallback: string[] = []): string[] {
 }
 
 function galleryWithCover(cover: string, fallback: GearItem["gallery"] = []): GearItem["gallery"] {
-  if (!cover) return fallback;
-  if (fallback.some((shot) => shot.url === cover)) return fallback;
-  return [{ url: cover, label: "目录封面 / CATALOG" }, ...fallback.filter((shot) => shot.url !== cover)];
+  const safeFallback = fallback.filter((shot) => isAllowedImageUrl(shot.url));
+  if (!cover) return safeFallback;
+  if (safeFallback.some((shot) => shot.url === cover)) return safeFallback;
+  return [{ url: cover, label: "目录封面 / CATALOG" }, ...safeFallback.filter((shot) => shot.url !== cover)];
 }
 
 function mergeSnapshot(gear: GearItem, snapshot: CatalogSnapshotItem): GearItem {

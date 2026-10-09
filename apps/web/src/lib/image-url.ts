@@ -1,4 +1,6 @@
 const IMAGE_PROXY_PATH = "/api/image-proxy";
+const AI_IMAGE_HOST = "g.cdn.meoo.host";
+const AI_IMAGE_PATH = "/uvayfd7jql5o/ai-images/";
 
 /**
  * 远程图片只允许来自明确登记的产品图片路径。
@@ -6,7 +8,6 @@ const IMAGE_PROXY_PATH = "/api/image-proxy";
  */
 const REMOTE_IMAGE_RULES = [
   { host: "youpu.tos-cn-beijing.volces.com", pathPrefix: "/product-images/" },
-  { host: "g.cdn.meoo.host", pathPrefix: "/uvayfd7jql5o/ai-images/" },
   { host: "us.yonex.com", pathPrefix: "/cdn/shop/files/" },
   { host: "shop.au.victorsport.com", pathPrefix: "/cdn/shop/" },
   { host: "bbsports.co.nz", pathPrefix: "/cdn/shop/" },
@@ -47,7 +48,21 @@ const REMOTE_IMAGE_RULES = [
   },
 ] as const;
 
+function isAiPlaceholderUrl(source: string): boolean {
+  try {
+    const url = new URL(source, "https://youpu.local");
+    if (url.pathname === IMAGE_PROXY_PATH) {
+      const proxiedUrl = url.searchParams.get("url");
+      return proxiedUrl ? isAiPlaceholderUrl(proxiedUrl) : false;
+    }
+    return url.hostname === AI_IMAGE_HOST && url.pathname.startsWith(AI_IMAGE_PATH);
+  } catch {
+    return false;
+  }
+}
+
 export function isAllowedRemoteImageUrl(source: string): boolean {
+  if (isAiPlaceholderUrl(source)) return false;
   try {
     const url = new URL(source);
     return (
@@ -68,11 +83,13 @@ export function isAllowedRemoteImageUrl(source: string): boolean {
 }
 
 export function isAllowedImageUrl(source: string): boolean {
+  if (isAiPlaceholderUrl(source)) return false;
   if (source.startsWith("/") && !source.startsWith("//")) return true;
   return isAllowedRemoteImageUrl(source);
 }
 
 export function resolveImageUrl(source: string, useProxy = process.env.NODE_ENV === "development") {
+  if (isAiPlaceholderUrl(source)) return "";
   if (!useProxy || !isAllowedRemoteImageUrl(source)) {
     return source;
   }

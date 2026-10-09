@@ -136,12 +136,13 @@ function galleryOf(item: ApiProduct, hero: string, fallback?: GearItem): Gallery
       .filter((image) => isAllowedImageUrl(image.url))
       .map((image) => ({ url: resolveImageUrl(image.url), label: image.alt ?? image.kind }));
   }
-  if (fallback?.gallery.length) return fallback.gallery;
+  const fallbackGallery = fallback?.gallery.filter((image) => isAllowedImageUrl(image.url)) ?? [];
+  if (fallbackGallery.length) return fallbackGallery;
   return hero ? [{ url: hero, label: "封面 / COVER" }] : [];
 }
 
 function safeImageUrl(source: string | null, fallback = ""): string {
-  if (!source || !isAllowedImageUrl(source)) return fallback;
+  if (!source || !isAllowedImageUrl(source)) return isAllowedImageUrl(fallback) ? fallback : "";
   return resolveImageUrl(source);
 }
 
