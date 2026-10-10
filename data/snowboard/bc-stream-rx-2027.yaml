@@ -4,7 +4,7 @@ brand: bc-stream
 model: RX
 year: 2027
 title: BC Stream RX 2027
-one_liner: 以深弯和刻滑控制为核心，26/27 款增加 Hard Flex 选项；具体几何数据须按尺码读取。日本 26/27 官方渠道标价 ¥147,400 含税，按 2026-10-02 参考汇率折算约 ¥6,252 CNY（非中国零售价）。
+one_liner: 26/27 定向刻滑板，提供 Regular 与 Hard 两种硬度选项；各尺码几何参数按 26/27 商品规格逐项记录。日本含税标价 ¥147,400，按 2026-10-02 参考汇率折算约 ¥6,252 CNY（非中国零售价）。
 editorial_scores:
   stability: 9.1
   response: 9.0
@@ -17,10 +17,21 @@ price:
   max: 6252
   currency: CNY
 specs:
+  length: 159
+  effectiveEdge: 1340
+  waistWidth: 252
+  sidecutRadii: 9.3 / 9.0 / 8.7 / 9.3 / 9.9 m
   shape: Directional
   scenes:
     - carving
     - all-mountain
+  sizeSpecs:
+    - {size: "154N", overallLength: 1540, effectiveEdge: 1290, waistWidth: 242, sidecutRadii: "8.8 / 8.5 / 8.2 / 8.8 / 9.4 m"}
+    - {size: "159N", overallLength: 1590, effectiveEdge: 1340, waistWidth: 244, sidecutRadii: "9.3 / 9.0 / 8.7 / 9.3 / 9.9 m"}
+    - {size: "159", overallLength: 1590, effectiveEdge: 1340, waistWidth: 252, sidecutRadii: "9.3 / 9.0 / 8.7 / 9.3 / 9.9 m"}
+    - {size: "164", overallLength: 1640, effectiveEdge: 1390, waistWidth: 254, sidecutRadii: "9.8 / 9.5 / 9.2 / 9.8 / 10.4 m"}
+    - {size: "169", overallLength: 1690, effectiveEdge: 1440, waistWidth: 256, sidecutRadii: "10.3 / 10.0 / 9.7 / 10.3 / 10.9 m"}
+    - {size: "174", overallLength: 1740, effectiveEdge: 1490, waistWidth: 258, sidecutRadii: "10.8 / 10.5 / 10.2 / 10.8 / 11.4 m"}
 images:
   - url: "https://www.follows.co.jp/pic-labo/2627bc-rxn-1.jpg"
     kind: face
@@ -29,6 +40,6 @@ images:
     sort_order: 0
 data_source:
   kind: manual
-  origin_url: https://www.follows.co.jp/SHOP/sn-sb-bc-056.html
+  origin_url: https://item.rakuten.co.jp/fujiswat/202603043/
   snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
 status: published

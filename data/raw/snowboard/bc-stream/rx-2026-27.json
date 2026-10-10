@@ -10,6 +10,13 @@
       "evidence": "The listing identifies RX as a directional carving-oriented board and describes a 26/27 Hard Flex option.",
       "limitations": "Retail listing is not an independent ride test; its current variant is not represented by a disclosed on-snow sample."
     },
+    "exactSeasonSizeTable": {
+      "url": "https://item.rakuten.co.jp/fujiswat/202603043/",
+      "retrievedAt": "2026-10-10",
+      "host": "Fujisports / SWAT official Rakuten store",
+      "evidence": "Exact 26/27 BC STREAM RX page lists six sizes (154N, 159N, 159, 164, 169, 174), effective edge, waist width, five sidecut radii, Regular/Hard options, and confirms the Hard option was added for 26/27.",
+      "limitations": "Retailer listing, not a manufacturer-published technical table; no weight, numeric flex scale, or full size-specific Hard variant table disclosed."
+    },
     "officialDemoList2025-26": {
       "url": "https://www.bc-stream.com/wp/wp-content/uploads/6e270f110d2d98534d9b01d3bfccd288.pdf",
       "retrievedAt": "2026-10-02",
@@ -39,7 +46,7 @@
   },
   "unresolved": [
     "No disclosed 26/27 or adjacent-season RX on-snow review located.",
-    "No 26/27 geometry/weight table recovered in this evidence batch.",
+    "26/27 geometry now transcribed from the exact-season retailer size table; board weight and numeric flex scale remain undisclosed.",
     "No China-market price or image reuse authorization verified.",
     "Hard Flex option may produce substantially different ride behavior from historical regular-flex models."
   ]
