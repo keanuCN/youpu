@@ -9,6 +9,12 @@ specs:
   terrain: 雪道 / 竞速 / 小回转
   skierLevel: 进阶
   bindingSetup: 含 I 12 GW 固定器套装
+images:
+  - url: "https://cdn.amersports.com/47a56e73-6422-4d40-bcf3-b4bf00ada651/ATP_AASS03628_0_GHO_REDSTER_S9_RVSK_S_I12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445"
+    kind: face
+    alt: Atomic Redster S9 Revoshock S 2025/26 官方雪板商品图
+    source: Atomic 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/collections/ato-men-skis-all-skis
