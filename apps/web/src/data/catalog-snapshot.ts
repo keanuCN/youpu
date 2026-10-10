@@ -34,8 +34,8 @@ export interface CatalogSnapshotMeta {
 }
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
-  "source": "https://xiaopang.club",
-  "generatedAt": "2026-10-02T05:13:49.524Z",
+  "source": "http://localhost:3001",
+  "generatedAt": "2026-10-10T08:20:50.554Z",
   "total": 285,
   "pageSize": 48,
   "categorySlugs": [
@@ -68,7 +68,7 @@ export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
 
 export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
   {
-    "id": "01a0be38-191a-7c50-9bb6-2e544f85de83",
+    "id": "01a0bde6-254a-71a4-927a-d742367e9469",
     "slug": "dji-osmo-action-4-2023",
     "title": "DJI Osmo Action 4",
     "model": "Osmo Action 4",
@@ -131,7 +131,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-193f-782c-9988-2dc78445601c",
+    "id": "01a0bde6-2562-7e12-8e87-735ab5c9bb55",
     "slug": "dji-osmo-action-5-pro-2024",
     "title": "DJI Osmo Action 5 Pro",
     "model": "Osmo Action 5 Pro",
@@ -195,7 +195,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1958-7c2f-814c-9c6dd1f889c3",
+    "id": "01a0bde6-2578-7de0-ac70-03e5c971c73c",
     "slug": "dji-osmo-action-6-2026",
     "title": "DJI Osmo Action 6",
     "model": "Osmo Action 6",
@@ -258,7 +258,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1972-7e24-9e3b-40c33660c7c2",
+    "id": "01a0bde6-258e-75bd-a75a-62c2caad81c7",
     "slug": "gopro-hero11-black-2022",
     "title": "GoPro HERO11 Black",
     "model": "HERO11 Black",
@@ -320,7 +320,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1983-7611-badd-ba612880ff6e",
+    "id": "01a0bde6-259e-7576-9407-8ea389c6b8e9",
     "slug": "gopro-hero12-black-2023",
     "title": "GoPro HERO12 Black",
     "model": "HERO12 Black",
@@ -384,7 +384,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1998-7ef1-b79f-575cdbccd6c7",
+    "id": "01a0bde6-25ae-767a-8ea7-62705ca85dfd",
     "slug": "gopro-hero13-black-2024",
     "title": "GoPro HERO13 Black",
     "model": "HERO13 Black",
@@ -449,7 +449,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-19be-7a2a-b1bc-beeaf4c8330f",
+    "id": "01a0bde6-25cf-7a83-9258-a93d9e245133",
     "slug": "insta360-ace-pro-2023",
     "title": "Insta360 Ace Pro",
     "model": "Ace Pro",
@@ -514,7 +514,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-19ae-7d94-9594-d9da1255096c",
+    "id": "01a0bde6-25be-7741-b862-8a48b4c242af",
     "slug": "insta360-ace-pro-2-2024",
     "title": "Insta360 Ace Pro 2",
     "model": "Ace Pro 2",
@@ -580,7 +580,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-19cf-7642-be42-98520b48d4ff",
+    "id": "01a0bde6-25e4-73a1-ad2b-a9a7f1b4d27d",
     "slug": "insta360-go-3-2023",
     "title": "Insta360 GO 3",
     "model": "GO 3",
@@ -641,7 +641,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-19e2-7048-98e1-5a6b1ed17e66",
+    "id": "01a0bde6-25f9-7243-acff-78881a89bebb",
     "slug": "insta360-go-3s-2024",
     "title": "Insta360 GO 3S",
     "model": "GO 3S",
@@ -703,7 +703,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-0896-78d7-9cde-5de82a169526",
+    "id": "01a124d7-0dea-72dc-ba93-e236f263235e",
     "slug": "insta360-x5-2026",
     "title": "影石Insta360 X5 — 8K 旗舰款全景运动相机",
     "model": "X5",
@@ -766,7 +766,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3bf3-7bcd-8150-a687810601f2",
+    "id": "01a0a984-5087-7785-8b11-17c0cf48de75",
     "slug": "victor-auraspeed-100x-se-2026",
     "title": "VICTOR AURASPEED 100X SE H 2026",
     "model": "AURASPEED 100X SE H",
@@ -821,7 +821,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3c19-75ee-beaf-e1affa897f91",
+    "id": "01a0a984-50a7-7106-bd5a-9291557a3668",
     "slug": "victor-thruster-ryuga-ii-pro-2026",
     "title": "VICTOR THRUSTER RYUGA II PRO B 2026",
     "model": "THRUSTER RYUGA II PRO B",
@@ -876,7 +876,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3c2f-7279-9f15-5a59ec9fdfee",
+    "id": "01a0a984-50d3-7efa-bb71-57877a5e7df8",
     "slug": "yonex-arcsaber-11-pro-2026",
     "title": "YONEX ARCSABER 11 PRO 2026",
     "model": "ARCSABER 11 PRO",
@@ -935,7 +935,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3c47-737f-a746-8ea4f035f809",
+    "id": "01a0a984-50e0-744b-8f03-1dcd6716b171",
     "slug": "yonex-astrox-100-zz-2026",
     "title": "YONEX ASTROX 100 ZZ 2026",
     "model": "ASTROX 100 ZZ",
@@ -994,7 +994,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3c59-7a1a-88fd-f217dac82321",
+    "id": "01a0a984-50f3-7dac-8809-d55fe296decc",
     "slug": "yonex-nanoflare-1000-z-2026",
     "title": "YONEX NANOFLARE 1000 Z 2026",
     "model": "NANOFLARE 1000 Z",
@@ -1053,7 +1053,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-08f9-743b-a883-b59c46d9839d",
+    "id": "01a124d7-0df8-78b3-9f83-8cd306569bed",
     "slug": "igpsport-bsc500-2025",
     "title": "BSC500 - 全彩大屏进阶码表，大有声色 - iGPSPORT迹驰",
     "model": "BSC500",
@@ -1097,7 +1097,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-0905-7275-826a-99cd23748beb",
+    "id": "01a124d7-0dfd-7868-88ea-cbc2c2d84fff",
     "slug": "igpsport-igs800-2024",
     "title": "iGS800 - 彩屏触控GPS骑行码表 - iGPSPORT迹驰",
     "model": "iGS800",
@@ -1138,7 +1138,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-0919-798e-94f3-45436cf05132",
+    "id": "01a124d7-0e03-7cad-921a-bd56bc268c5a",
     "slug": "insta360-x4-2024",
     "title": "影石Insta360 X4-8K 全景运动相机",
     "model": "X4",
@@ -1194,7 +1194,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3c6e-7e57-b00c-144ddd6701ce",
+    "id": "01a0a984-5101-7276-9daf-82e56965efb8",
     "slug": "daiwa-tatula-641lfb-bf-2026",
     "title": "Daiwa TATULA 641LFB-BF 2026",
     "model": "TATULA 641LFB-BF",
@@ -1253,7 +1253,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3c86-784c-a3e8-8ebd94f61a6f",
+    "id": "01a0a984-510e-7fe6-bedb-ed691f165847",
     "slug": "daiwa-tatula-651mfb-2026",
     "title": "Daiwa TATULA 651MFB 2026",
     "model": "TATULA 651MFB",
@@ -1312,7 +1312,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3c97-73db-891c-659535541e47",
+    "id": "01a0a984-5118-7573-be33-a3c8bdbecc39",
     "slug": "daiwa-tatula-681mhrb-2026",
     "title": "Daiwa TATULA 681MHRB 2026",
     "model": "TATULA 681MHRB",
@@ -1372,7 +1372,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3caa-7ac3-92f2-1a491edc84ea",
+    "id": "01a0a984-5124-7cbf-b62c-fa51a62ddb76",
     "slug": "shimano-limitless-lmt862sp26ml-2024",
     "title": "Shimano LIMITLESS LMT862SP26ML 2024",
     "model": "LIMITLESS LMT862SP26ML",
@@ -1429,7 +1429,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3cbc-7de9-9e54-b01a921794eb",
+    "id": "01a0a984-5130-7eb5-b578-21b1ced593fd",
     "slug": "shimano-streamflight-stf702sp25l-2026",
     "title": "Shimano STREAMFLIGHT STF702SP25L 2026",
     "model": "STREAMFLIGHT STF702SP25L",
@@ -1486,7 +1486,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-0984-72e0-8fde-70f8d137acfd",
+    "id": "01a124d7-0e0b-7eb3-9ef5-e4548d1d136c",
     "slug": "dji-avata-2-2024",
     "title": "DJI Avata 2 - 第一视角飞行体验无人机 - 技术参数 - DJI 大疆创新",
     "model": "Avata 2",
@@ -1532,7 +1532,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-0998-7800-bd08-35877608aef7",
+    "id": "01a124d7-0e0f-7e38-b325-6e9376fe2f4e",
     "slug": "dji-mini-4-pro-2023",
     "title": "DJI Mini 4 Pro - 技术参数 - DJI 大疆创新",
     "model": "Mini 4 Pro",
@@ -1587,7 +1587,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-09ae-71bf-af33-458d487f5a41",
+    "id": "01a124d7-0e15-7610-b70f-97ab309080ba",
     "slug": "akko-5075b-plus-asa-clear-2026",
     "title": "5075B Plus ASA Clear | Akko Official Global Site",
     "model": "5075B Plus ASA Clear",
@@ -1634,7 +1634,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd92-0dd1-7ea8-891b-07b29ac7fc47",
+    "id": "01a124d7-0e19-726b-9443-b511831f858e",
     "slug": "akko-5108-v5-the-legend-of-hei-2026",
     "title": "Akko The Legend of Hei 5108 V5 108-Key Tri-Mode Mechanical Keyboard",
     "model": "Akko The Legend of Hei 5108 V5",
@@ -1689,7 +1689,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-09bc-7b1b-8c97-de9c8daf458c",
+    "id": "01a124d7-0e1d-7b26-b10a-c2bf3f07eb83",
     "slug": "akko-mod007-v5-he-2026",
     "title": "MOD007 V5 HE 三模磁轴键盘 - Akko",
     "model": "MOD007 V5 HE",
@@ -1745,12 +1745,12 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       {
         "key": "rapidTriggerPrecision",
         "label": "RT 精度",
-        "value": "0.01mm"
+        "value": "0.005mm"
       }
     ]
   },
   {
-    "id": "01a0cd8e-3277-7aa1-96cc-613782c05664",
+    "id": "01a124d7-0e2f-7422-80a5-49490a733aa9",
     "slug": "aula-f108-pro-2026",
     "title": "AULA F108 Pro 108-Key Tri-Mode Mechanical Keyboard",
     "model": "AULA F108 Pro",
@@ -1802,7 +1802,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd83-2882-783a-96cf-f005615698f4",
+    "id": "01a124d7-0e35-770d-bd31-464294a79ee7",
     "slug": "aula-f2088-104-white-punk-2026",
     "title": "AULA F2088 104-Key White Punk Mechanical Gaming Keyboard",
     "model": "AULA F2088 104键朋克版",
@@ -1844,7 +1844,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-09cb-7c17-96ab-7203e8618d20",
+    "id": "01a124d7-0e3c-7dec-ac61-0babd1462ca7",
     "slug": "aula-f75-2026",
     "title": "AULA 75% Gasket Wireless Mechanical Keyboard – Aula Gear",
     "model": "AULA F75",
@@ -1853,7 +1853,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0552/2803/9264/files/203A5822.jpg?v=1734921227&width=1600",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -1898,7 +1898,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0ccef-00f0-74f2-a6b8-8e248f48f788",
+    "id": "01a124d7-0e41-78ed-a215-fa12c44f73f6",
     "slug": "aula-f75-max-2026",
     "title": "AULA F75 MAX – Aula Gear",
     "model": "AULA F75 Max",
@@ -1953,7 +1953,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cc31-9635-7807-a25e-f9d788defbcc",
+    "id": "01a124d7-0e47-7696-8632-3e8f4b0fa115",
     "slug": "aula-f87-pro-v2-2026",
     "title": "AULA F87 PRO V2 – Aula Gear",
     "model": "AULA F87 Pro V2",
@@ -2000,7 +2000,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cc2b-76ea-75cb-a926-5e6d332bddd6",
+    "id": "01a124d7-0e4d-7681-abdf-43b1a12c287e",
     "slug": "aula-f99-pro-2026",
     "title": "96% Gasket-Mounted Triple-Mode Mechanical Keyboard with Knob – Aula Gear",
     "model": "AULA F99 Pro",
@@ -2054,7 +2054,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd5e-0b2b-7320-8115-eec9a0879008",
+    "id": "01a124d7-0e52-7be4-bd8b-a9a2c568007b",
     "slug": "aula-hero-68-he-white-side-printed-2026",
     "title": "狼蛛 HERO 68HE 白色侧刻 磁轴键盘",
     "model": "AULA HERO 68 HE 白色侧刻",
@@ -2106,7 +2106,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd6a-fe44-7e4a-9f51-b8b22767be20",
+    "id": "01a124d7-0e58-753d-ad14-bf3024013e78",
     "slug": "aula-hero68xs-phantom-black-snow-god-2026",
     "title": "狼蛛 HERO68XS 幻影黑 雪神磁轴三模电竞键盘",
     "model": "AULA HERO68XS 幻影黑 雪神磁轴",
@@ -2155,7 +2155,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       {
         "key": "rapidTriggerPrecision",
         "label": "RT 精度",
-        "value": "0.01mm"
+        "value": "0.005mm"
       },
       {
         "key": "batteryCapacity",
@@ -2165,7 +2165,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd80-45c6-7537-b8d5-28c8492c4006",
+    "id": "01a124d7-0e5d-7c46-9683-e1d8572cf763",
     "slug": "aula-s500-wired-2026",
     "title": "AULA S500 Mechanical Keyboard",
     "model": "AULA S500",
@@ -2208,7 +2208,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd95-2729-70a2-9cb4-79b54a68e9e4",
+    "id": "01a124d7-0e63-7935-8e20-4ec740734e09",
     "slug": "aula-s75-pro-2026",
     "title": "AULA S75 PRO Mechanical Keyboard",
     "model": "AULA S75 Pro",
@@ -2254,7 +2254,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cc81-a442-7c96-b039-da2a4fa18ca3",
+    "id": "01a124d7-0e68-7cf0-8013-3cc1487f1314",
     "slug": "cherry-mx30s-rgb-2026",
     "title": "MX3.0S RGB-CHERRY樱桃",
     "model": "CHERRY MX3.0S RGB",
@@ -2298,7 +2298,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd9a-8521-74d7-8f44-9cbb2b3e7291",
+    "id": "01a124d7-0e6d-7de6-ba59-10c27b5b536d",
     "slug": "dareu-a98-pro-rt-2026",
     "title": "达尔优 A98 专业版 RT 三模机械键盘",
     "model": "DAREU A98 专业版 RT 版",
@@ -2350,7 +2350,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd58-567d-7f38-8f71-b267c8bf6d12",
+    "id": "01a124d7-0e72-7918-bd08-0bdeb925f099",
     "slug": "dareu-cool68-ocean-blue-2026",
     "title": "达尔优 COOL68 云海蓝 磁轴电竞键盘",
     "model": "DAREU COOL68 云海蓝",
@@ -2408,7 +2408,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd89-9c17-7a85-a79f-b005f58fcd90",
+    "id": "01a124d7-0e78-7f60-8d42-d4e9f94b703b",
     "slug": "mchose-g87-v2-2026",
     "title": "MCHOSE G87 V2 87-Key Tri-Mode Mechanical Keyboard",
     "model": "MCHOSE G87 V2",
@@ -2454,7 +2454,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cc67-7f23-7e4b-b28c-7340cdab2dd6",
+    "id": "01a124d7-0e7d-7d8f-a0ef-06155060d4b3",
     "slug": "mchose-k99-v3-2026",
     "title": "MCHOSE K99 V3 Keyboard: Wireless, 98% Layout – Tri-Mode",
     "model": "MCHOSE K99 V3",
@@ -2514,7 +2514,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0ccf6-4d2b-750a-896e-dea5674b3786",
+    "id": "01a124d7-0e82-7cf3-bb46-676757cf47ea",
     "slug": "melgeek-made68-pro-plus-2026",
     "title": "MelGeek MADE68 Pro+ Hall Effect Gaming Keyboard | Rapid Trigger 65% $139",
     "model": "MADE68 Pro+",
@@ -2573,7 +2573,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-09d6-75f5-b002-7c3772a94d41",
+    "id": "01a124d7-0e88-7800-9b8b-f2b0a96e725d",
     "slug": "monsgeek-m2-v5-he-2026",
     "title": "M2 V5 HE Fully Assembled - MonsGeek",
     "model": "M2 V5 HE",
@@ -2637,7 +2637,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-09e2-7c08-8415-7dabcd2e8691",
+    "id": "01a124d7-0e8c-7640-a342-51770fe1f886",
     "slug": "monsgeek-m2-v5-via-2026",
     "title": "M2 V5 VIA - MonsGeek",
     "model": "M2 V5 VIA",
@@ -2693,7 +2693,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd76-7437-758f-bdfd-c7e56df71966",
+    "id": "01a124d7-0e95-701e-9b13-d5ef2014d887",
     "slug": "rapoo-v700diy-98-2026",
     "title": "V700DIY-98长续航版 - 客制化多模式无线背光游戏机械键盘 - 雷柏科技",
     "model": "雷柏 V700DIY-98 长续航版",
@@ -2748,7 +2748,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd7b-2587-79d5-88f7-b5c7ef17c2ba",
+    "id": "01a124d7-0e99-7f4c-8c34-cd1d8fd9e01d",
     "slug": "rapoo-v700rgb-alloy-2026",
     "title": "V700RGB合金版 - 幻彩RGB背光游戏机械键盘 - 雷柏科技",
     "model": "雷柏 V700RGB 合金版",
@@ -2794,7 +2794,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cc55-206f-76ed-bd95-48c7fcea9615",
+    "id": "01a124d7-0e91-76af-98b8-6caa1914f5ae",
     "slug": "rapoo-v500pro-2026",
     "title": "V500PRO - 混彩背光游戏机械键盘 - 雷柏科技",
     "model": "V500PRO",
@@ -2838,7 +2838,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d117-9ffc-7bd2-abb6-06bffa37cff6",
+    "id": "01a124d7-0e9d-7ea4-aea0-688c42e41ef6",
     "slug": "rog-azoth-extreme-edition-20-2026",
     "title": "ROG 夜魔 EXTREME 20周年版 75% 三模客制化机械键盘",
     "model": "ROG 夜魔 EXTREME 20周年版",
@@ -2887,7 +2887,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd48-f919-7d8b-8c43-d2d23cbfce8a",
+    "id": "01a124d7-0ea6-7ba1-b446-e0dfd7203919",
     "slug": "vgn-neon-68-super-competitive-plus-2026",
     "title": "VGN Neon 68 Extreme Magnetic Switch Keyboard",
     "model": "VGN 霓虹68 超竞版+ 天霸轴 黑武士",
@@ -2939,12 +2939,12 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       {
         "key": "rapidTriggerPrecision",
         "label": "RT 精度",
-        "value": "0mm"
+        "value": "0.001mm"
       }
     ]
   },
   {
-    "id": "01a0ccef-3371-712f-bd92-75be076df01e",
+    "id": "01a124d7-0ea1-7c13-996c-5ef9c08fabf8",
     "slug": "vgn-n75-v2-2026",
     "title": "VGN N75 V2 Wireless RGB Mechanical Keyboard",
     "model": "VGN N75 V2 三模版",
@@ -2997,7 +2997,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cc5f-2c05-7b77-9464-716e1d85b0cc",
+    "id": "01a124d7-0eac-7750-8306-88b468040c20",
     "slug": "vgn-v87-v2-2026",
     "title": "VGN V87 V2 冰山雪莲侧刻 动力金轴",
     "model": "VGN V87 V2",
@@ -3052,7 +3052,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cc3c-bd7a-7974-9ead-621f3c153d1a",
+    "id": "01a124d7-0eb1-7fc2-a0ff-e7c86bad3f21",
     "slug": "vgn-v98pro-v4-2026",
     "title": "VGN V98 Pro V4 Wireless Mechanical Keyboard",
     "model": "VGN V98Pro V4",
@@ -3099,7 +3099,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0cd50-4d63-7347-a6a6-7af925c4632a",
+    "id": "01a124d7-0e23-75e0-a82d-9184448996b1",
     "slug": "atk-rs6-ultra-white-shadow-warrior-2026",
     "title": "ATK RS6 Ultra 白影战士 冰刃轴 电竞磁轴键盘",
     "model": "ATK RS6 Ultra 白影战士 冰刃轴",
@@ -3153,12 +3153,12 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       {
         "key": "rapidTriggerPrecision",
         "label": "RT 精度",
-        "value": "0mm"
+        "value": "0.001mm"
       }
     ]
   },
   {
-    "id": "01a0c879-09f1-7ebc-92e9-cd0bf533886c",
+    "id": "01a124d7-0eb5-7696-8a29-2e73bd051bc1",
     "slug": "vxe-v75-x-2026",
     "title": "Wireless Mechanical Gaming Keyboard | Semi-Aluminum",
     "model": "VXE V75 X",
@@ -3167,7 +3167,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0691/4942/5882/files/ATK_V75X_Black.jpg?v=1741856682&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -3207,7 +3207,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-09fc-7f63-ab75-3573977f3f39",
+    "id": "01a124d7-0eb9-724b-b0db-5e57d6162c3a",
     "slug": "wobkey-rainy75-pro-2026",
     "title": "WOBKEY Rainy 75 | Custom Aluminum 75 Keyboard",
     "model": "Rainy 75 Pro",
@@ -3260,7 +3260,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c87b-fc5b-7c30-b8f9-4f5f18fc0b30",
+    "id": "01a124d7-0ec2-7175-a33b-edbf6ec8686b",
     "slug": "nisi-true-color-cpl-2022",
     "title": "TRUE COLOR 色彩保真CPL – NiSi 耐司-专业电影及相机光学镜头滤镜品牌 %",
     "model": "TRUE COLOR CPL",
@@ -3293,7 +3293,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "highlights": []
   },
   {
-    "id": "01a0c879-0a0a-7619-a077-ded6bafacf94",
+    "id": "01a124d7-0ec8-7cc9-98db-d6d9120e9604",
     "slug": "dji-osmo-mobile-7p-2026",
     "title": "Osmo Mobile 7 系列 - 技术参数 - DJI 大疆创新",
     "model": "Osmo Mobile 7P",
@@ -3356,7 +3356,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-0a18-79ad-80e6-b145b037ad6e",
+    "id": "01a124d7-0ecf-7dde-8a46-4cc7de3ed8cc",
     "slug": "timemore-sculptor-078s-2026",
     "title": "【泰摩咖啡】電動磨豆機TEG078S-黑色(雕刻家系列-手沖/義式雙用) – 泰摩TIMEMORE臺灣官方網站",
     "model": "TEG078S",
@@ -3408,7 +3408,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c87b-fc81-7558-adb3-57bc3dbbfbb8",
+    "id": "01a124d7-0ed4-7714-8ed1-d74131bd5e31",
     "slug": "viltrox-af-56mm-f1-2-pro-xf-2025",
     "title": "Viltrox AF 56mm F1.2 Pro XF Lens for Fujifilm| APS-C Portrait Master – Viltrox Store",
     "model": "AF 56mm F1.2 Pro XF",
@@ -3465,7 +3465,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c87b-fc8c-7b4b-a7f8-8c10800f43b7",
+    "id": "01a124d7-0ed9-7af6-914b-12b304bc1815",
     "slug": "lexar-professional-1066x-sd-silver-2026",
     "title": "Lexar Professional 1066x SDXC UHS-I 存储卡SILVER系列 | Lexar雷克沙",
     "model": "Professional 1066x SDXC UHS-I SILVER",
@@ -3508,7 +3508,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-0a4c-7e0e-bd9f-64fd54536cf1",
+    "id": "01a124d7-0ee0-77c3-9062-081b46d9edfc",
     "slug": "dji-mic-mini-2026",
     "title": "DJI Mic Mini - 技术参数 - DJI 大疆创新",
     "model": "DJI Mic Mini",
@@ -3573,7 +3573,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1aad-7ff0-9d1f-a469af86bc2d",
+    "id": "01a0be0f-b036-7cae-acc5-328743d95a89",
     "slug": "canyon-neuron-cf-8-2026",
     "title": "Canyon Neuron CF 8",
     "model": "Neuron CF 8",
@@ -3638,7 +3638,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1acc-715e-9eee-184ae658430d",
+    "id": "01a0be0f-b04b-7230-9270-c70834c5164a",
     "slug": "canyon-spectral-cf-7-2026",
     "title": "Canyon Spectral CF 7",
     "model": "Spectral CF 7",
@@ -3704,7 +3704,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1ae2-74be-9da9-be482d41fa0a",
+    "id": "01a0be0f-b05d-7f56-b071-09c75a341129",
     "slug": "giant-trance-x-advanced-0-2024",
     "title": "Giant Trance X Advanced 0",
     "model": "Trance X Advanced 0",
@@ -3769,7 +3769,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1af6-7a12-9732-c75694865cbb",
+    "id": "01a0be0f-b071-78a0-9d12-fdeff787c507",
     "slug": "giant-xtc-advanced-29-1-2026",
     "title": "Giant XTC Advanced 29 1",
     "model": "XTC Advanced 29 1",
@@ -3833,7 +3833,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1b07-749d-9bae-87a3c842b147",
+    "id": "01a0be0f-b083-7305-a708-117ec5aef12d",
     "slug": "specialized-s-works-epic-8-2026",
     "title": "Specialized S-Works Epic 8",
     "model": "S-Works Epic 8",
@@ -3898,7 +3898,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1b19-7170-b303-3d9fed87ff41",
+    "id": "01a0be0f-b091-7fe5-88f2-bdce192a70b4",
     "slug": "specialized-stumpjumper-15-comp-2025",
     "title": "Specialized Stumpjumper 15 Comp",
     "model": "Stumpjumper 15 Comp",
@@ -3964,7 +3964,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1b36-7ede-95f4-fcbcc81d8343",
+    "id": "01a0bdfd-b20f-73de-b12b-0f3a8e600839",
     "slug": "canyon-aeroad-cf-slx-7-di2-2027",
     "title": "Canyon Aeroad CF SLX 7 Di2",
     "model": "Aeroad CF SLX 7 Di2",
@@ -4026,7 +4026,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1b55-78b8-be4d-a116d692a4fc",
+    "id": "01a0bdfd-b21f-7ac1-86a1-13276042e5e7",
     "slug": "canyon-endurace-cf-7-2027",
     "title": "Canyon Endurace CF 7",
     "model": "Endurace CF 7",
@@ -4088,7 +4088,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1b6b-726b-86d2-9abc0d0a0297",
+    "id": "01a0bdfd-b22e-743f-8ccd-4cb679b0a700",
     "slug": "canyon-endurace-cf-7-di2-2027",
     "title": "Canyon Endurace CF 7 Di2",
     "model": "Endurace CF 7 Di2",
@@ -4150,7 +4150,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1b7d-7a7f-aa50-83a3ab66e485",
+    "id": "01a0bdfd-b24d-77e5-a87a-9c2f9e5e9d47",
     "slug": "giant-defy-advanced-2-2026",
     "title": "Giant Defy Advanced 2",
     "model": "Defy Advanced 2",
@@ -4206,7 +4206,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1b8d-763b-a1b8-3c6fe7095442",
+    "id": "01a0bdfd-b25d-7662-83d3-071a69935cf2",
     "slug": "giant-propel-advanced-pro-0-axs-2027",
     "title": "Giant Propel Advanced Pro 0 AXS",
     "model": "Propel Advanced Pro 0 AXS",
@@ -4255,7 +4255,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1ba1-7f54-9d09-74b85dcde7c9",
+    "id": "01a0bdfd-b26d-76a9-b4c9-bfe4213cb84d",
     "slug": "giant-tcr-advanced-pro-0-axs-2026",
     "title": "Giant TCR Advanced Pro 0 AXS",
     "model": "TCR Advanced Pro 0 AXS",
@@ -4305,7 +4305,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1bb4-78f8-b465-cb364362fe96",
+    "id": "01a0bdfd-b27a-7def-a682-67bb31f8bcca",
     "slug": "specialized-s-works-tarmac-sl8-red-axs-2026",
     "title": "Specialized S-Works Tarmac SL8 SRAM RED AXS",
     "model": "S-Works Tarmac SL8 SRAM RED AXS",
@@ -4361,7 +4361,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0be38-1bc4-7826-92a4-5e5404d990a5",
+    "id": "01a0bdfd-b293-7b86-b0c1-c96fa65eeaca",
     "slug": "specialized-tarmac-sl8-comp-rival-axs-2026",
     "title": "Specialized Tarmac SL8 Comp SRAM Rival AXS",
     "model": "Tarmac SL8 Comp SRAM Rival AXS",
@@ -4411,7 +4411,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e673-7377-7658-b02f-ffac20ad94b0",
+    "id": "01a0e6f5-7a15-724c-a86f-92be5e2a5642",
     "slug": "decathlon-snb-500-ziprotect-jacket-2026",
     "title": "Men’s Warm and Durable Snowboard Jacket SNB 500 Ziprotect - Camel and Black | Decathlon",
     "model": "SNB 500 Ziprotect Men's Snowboard Jacket",
@@ -4467,7 +4467,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e673-7b30-71da-802d-4473935b6d25",
+    "id": "01a0e6f5-909c-7e7a-84b4-b6d300a9f5a8",
     "slug": "kailas-bm45-gtx-ski-pants-2026",
     "title": "Kailas BM45 GTX Ski Pants – kailasgear.com",
     "model": "BM45 GTX Ski Pants",
@@ -4522,7 +4522,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e673-87de-7256-90ba-09ece94c4711",
+    "id": "01a0e6f5-bc5b-743e-a260-6cc181a64555",
     "slug": "kailas-bm45-max-mens-down-jacket-95g-2026",
     "title": "Kailas BM45 MAX Down Ski Jacket Men's – kailasgear.com",
     "model": "BM45 MAX Down Ski Jacket Men's",
@@ -4578,7 +4578,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e673-82cc-71c0-a3bf-d48b05d159f4",
+    "id": "01a0e6f5-a668-7de8-a79b-55bc43ad2d5b",
     "slug": "kailas-bm45-max-mens-down-jacket-100g-2026",
     "title": "Kailas BM45 MAX Down Ski Jacket Men's – kailasgear.com",
     "model": "BM45 MAX Down Ski Jacket Men's (100g 800FP Long)",
@@ -4635,7 +4635,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e673-8d97-7609-8ae2-1c5d94c3c50c",
+    "id": "01a0e6f5-d22d-7526-9640-732e126e1b1c",
     "slug": "kailas-bm45-max-womens-down-jacket-95g-2026",
     "title": "Kailas BM45 MAX Down Ski Jacket Women's – kailasgear.com",
     "model": "BM45 MAX Down Ski Jacket Women's",
@@ -4691,7 +4691,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e68e-2624-7dee-8062-6ca6920c7285",
+    "id": "01a0e6f5-e7f1-7622-8755-706b3af7ea5e",
     "slug": "kailas-bm45-pro-ski-bibs-unisex-2026",
     "title": "Kailas BM45 PRO Ski Bibs Unisex – kailasgear.com",
     "model": "BM45 PRO Ski Bibs Unisex",
@@ -4746,7 +4746,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d24d-2549-76c5-9d96-0c3ce4a27b77",
+    "id": "01a0e6ea-f7b8-7dab-a3fc-5b67b62b31db",
     "slug": "atomic-bent-chetler-120-2026",
     "title": "Atomic Bent Chetler 120 2025/26",
     "model": "Bent Chetler 120",
@@ -4799,7 +4799,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e32a-7eb7-8806-80a40991f07a",
+    "id": "01a0e6eb-0d7a-7892-a77f-108730eb560c",
     "slug": "atomic-redster-q7-2026",
     "title": "Atomic Redster Q7 Revoshock C 2025/26",
     "model": "Redster Q7 Revoshock C",
@@ -4852,7 +4852,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e354-73aa-9b00-21d1d8d7cfc5",
+    "id": "01a0e6eb-2349-7fe6-b17e-46dae827ab0a",
     "slug": "atomic-redster-q7-8-2026",
     "title": "Atomic Redster Q7.8 Revoshock C 2025/26",
     "model": "Redster Q7.8 Revoshock C",
@@ -4905,7 +4905,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e363-7c04-b588-66d62d5e884c",
+    "id": "01a0e6eb-393b-7ddc-9c26-1c6634601af1",
     "slug": "atomic-redster-q9-2026",
     "title": "Atomic Redster Q9 Revoshock S 2025/26",
     "model": "Redster Q9 Revoshock S",
@@ -4958,7 +4958,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e384-7641-93ea-727a2b636323",
+    "id": "01a0e6eb-4f34-7b6d-b595-818971c62c32",
     "slug": "atomic-redster-q9-8-2026",
     "title": "Atomic Redster Q9.8 Revoshock S 2025/26",
     "model": "Redster Q9.8 Revoshock S",
@@ -5011,7 +5011,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e394-75fa-a0db-7dbb481412b5",
+    "id": "01a0e6eb-650c-7633-8245-1088c3bddc0a",
     "slug": "atomic-redster-s9-2026",
     "title": "Atomic Redster S9 Revoshock S 2025/26",
     "model": "Redster S9 Revoshock S",
@@ -5064,7 +5064,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e3b1-746d-92bb-de33748b182f",
+    "id": "01a0e6eb-90fa-7828-853b-dc3b6929a14d",
     "slug": "head-e-slr-2026",
     "title": "HEAD Worldcup Rebels e.SLR 2025/26",
     "model": "e.SLR",
@@ -5117,7 +5117,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e3bd-7b6b-afec-367232f53145",
+    "id": "01a0e6eb-a6f4-70e4-9eb2-8d8008122467",
     "slug": "head-easy-joy-r-2026",
     "title": "HEAD EASY JOY R 2025/26",
     "model": "EASY JOY R",
@@ -5170,7 +5170,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d24d-3a66-7284-abbf-cf425b16e010",
+    "id": "01a0e6eb-bd48-74bc-938c-2cc78f0dafbc",
     "slug": "head-shape-e-v5-2026",
     "title": "HEAD Shape e-V5 2025/26",
     "model": "Shape e-V5",
@@ -5223,7 +5223,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e3c8-7049-b4c6-2ad4e0dcb9c7",
+    "id": "01a0e6eb-d399-7c44-9d99-2eac3c992162",
     "slug": "head-shape-v2-2026",
     "title": "HEAD Shape V2 2025/26",
     "model": "Shape V2",
@@ -5276,7 +5276,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e3d4-7ba8-b3a3-1702f0728e63",
+    "id": "01a0e6eb-ea5d-73b9-b87a-b59f8964c0ea",
     "slug": "head-shape-v2-r-2026",
     "title": "HEAD Shape V2 R 2025/26",
     "model": "Shape V2 R",
@@ -5329,7 +5329,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e3e0-720b-b6a2-80dadb5ac493",
+    "id": "01a0e6ec-0661-7294-8ec1-26ba4f0cdc75",
     "slug": "head-supershape-e-magnum-2026",
     "title": "HEAD Supershape e-Magnum 2025/26",
     "model": "Supershape e-Magnum",
@@ -5382,7 +5382,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e3a3-75a4-bfa1-7d60de36adbe",
+    "id": "01a0e6eb-7af5-74c6-94fd-68821d15f5f2",
     "slug": "head-e-sl-pro-2026",
     "title": "HEAD Worldcup Rebels e-SL Pro 2025/26",
     "model": "Worldcup Rebels e-SL Pro",
@@ -5435,7 +5435,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e3f1-7e7b-842c-e0e3f29c7685",
+    "id": "01a0e6ec-1c3b-7ec7-8b63-5acee68c8b57",
     "slug": "nordica-enforcer-104-2027",
     "title": "Nordica Enforcer 104 2026/27",
     "model": "Enforcer 104",
@@ -5488,7 +5488,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e408-79f3-934f-8a8df25f1e22",
+    "id": "01a0e6ec-322c-7ff1-aa29-ce00a805914c",
     "slug": "nordica-enforcer-89-2027",
     "title": "Nordica Enforcer 89 2026/27",
     "model": "Enforcer 89",
@@ -5541,7 +5541,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e417-7df7-bea5-f832c1c3d32f",
+    "id": "01a0e6ec-47ca-7da7-a330-1a78610c276c",
     "slug": "nordica-enforcer-94-2027",
     "title": "Nordica Enforcer 94 2026/27",
     "model": "Enforcer 94",
@@ -5594,7 +5594,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e423-7dc5-b375-1db3a3568ce5",
+    "id": "01a0e6ec-5db6-7571-bfb8-edab9e95ec2a",
     "slug": "nordica-enforcer-99-2027",
     "title": "Nordica Enforcer 99 2026/27",
     "model": "Enforcer 99",
@@ -5647,7 +5647,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e42e-75a0-a97c-6c5eb878a084",
+    "id": "01a0e6ec-7393-798c-a172-232eaa41253d",
     "slug": "nordica-santa-ana-102-2027",
     "title": "Nordica Santa Ana 102 2026/27",
     "model": "Santa Ana 102",
@@ -5700,7 +5700,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e446-7c8a-add7-1c87a5b4ece1",
+    "id": "01a0e6ec-897b-7974-9739-b974be489f8c",
     "slug": "rossignol-experience-76-2026",
     "title": "Rossignol Experience 76 Xpress 2025/26",
     "model": "Experience 76 Xpress",
@@ -5753,7 +5753,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d24d-2fcd-770a-be1c-687fa656ee5c",
+    "id": "01a0e6ec-9f1b-7fb0-bc33-fd36b1c9d548",
     "slug": "rossignol-forza-40-ca-xpress-2027",
     "title": "Rossignol Forza 40° CA Xpress 2026/27",
     "model": "Forza 40° CA Xpress",
@@ -5806,7 +5806,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e452-784e-b3eb-b1ba9c16ff07",
+    "id": "01a0e6ec-b520-778d-9a51-26fc8148f4d2",
     "slug": "rossignol-forza-50-cam-2026",
     "title": "Rossignol Forza 50° CAM KONECT 2025/26",
     "model": "Forza 50° CAM KONECT",
@@ -5859,7 +5859,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e46c-7c4a-907f-4c2a75deb835",
+    "id": "01a0e6ec-cb04-7460-be58-b4b6aef8d97f",
     "slug": "rossignol-hero-elite-lt-ti-2027",
     "title": "Rossignol Hero Elite LT TI 2026/27",
     "model": "Hero Elite LT TI",
@@ -5912,7 +5912,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e479-77ee-847a-9938a1da729b",
+    "id": "01a0e6ec-e11e-793c-b13a-1a37265ab7d8",
     "slug": "rossignol-hero-master-lt-r22-2027",
     "title": "Rossignol Hero Master LT R22 2026/27",
     "model": "Hero Master LT R22",
@@ -5965,7 +5965,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e488-7252-ac28-beb307b374d3",
+    "id": "01a0e6ec-f748-7310-b877-4d4e3df87fe7",
     "slug": "rossignol-soul-102-2027",
     "title": "Rossignol Soul 102 2026/27",
     "model": "Soul 102",
@@ -6018,7 +6018,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e493-7769-9f6a-6dea96e16442",
+    "id": "01a0e6ed-0d3c-7ea4-aa81-7ccf614f99f5",
     "slug": "salomon-mtn-86-carbon-2027",
     "title": "Salomon MTN 86 Carbon 2026/27",
     "model": "MTN 86 Carbon",
@@ -6064,7 +6064,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e49e-75cf-8b65-3bfb53b31650",
+    "id": "01a0e6ed-2315-765b-8545-237618d6cf1d",
     "slug": "salomon-qst-106-2027",
     "title": "Salomon QST 106 2026/27",
     "model": "QST 106",
@@ -6117,7 +6117,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e4a9-75f1-a049-b409544e7724",
+    "id": "01a0e6ed-38de-75bc-9579-7d55c7976f2c",
     "slug": "salomon-qst-92-2027",
     "title": "Salomon QST 92 2023/24",
     "model": "QST 92",
@@ -6170,7 +6170,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e4b4-7792-85a4-bef71207cf27",
+    "id": "01a0e6ed-4ec6-70dc-8120-c077bba85f37",
     "slug": "salomon-qst-98-2027",
     "title": "Salomon QST 98 2023/24",
     "model": "QST 98",
@@ -6223,7 +6223,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e4c2-7277-9562-c72119100cdd",
+    "id": "01a0e6ed-649c-75b5-8332-f9896727b435",
     "slug": "salomon-qst-blank-2027",
     "title": "Salomon S/LAB QST Blank 2026/27",
     "model": "S/LAB QST Blank",
@@ -6276,7 +6276,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d22f-e4cc-70df-8ca7-17e0122748f9",
+    "id": "01a0e6ed-7a79-730b-8c66-4a31f173c46e",
     "slug": "salomon-stance-84-2027",
     "title": "Salomon Stance 84 R 2026/27",
     "model": "Stance 84 R",
@@ -6329,7 +6329,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2b12-7504-9310-a349a1410840",
+    "id": "01a0a7e4-541a-7935-8100-c6c4fbf91e73",
     "slug": "arbor-a-frame-2025",
     "title": "Arbor A-Frame 2025",
     "model": "A-Frame",
@@ -6396,7 +6396,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2b3b-715a-bb53-944af2efe6f7",
+    "id": "01a0a7e4-543e-7e5f-bc27-73d44de1c062",
     "slug": "bataleon-evil-twin-2025",
     "title": "Bataleon Evil Twin 2025",
     "model": "Evil Twin",
@@ -6463,14 +6463,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d148-959a-705b-a45f-fe27eba628b8",
+    "id": "01a0e77d-5b44-74ef-bb56-22f4a7d9e4ef",
     "slug": "bc-stream-r2-2026",
     "title": "BC Stream R-2 2026",
     "model": "R2",
     "year": 2026,
-    "oneLiner": "25/26 款锤头刻滑板，采用方向性双向板型与可变拱形；日本含税定价 ¥126,500，按 2026-10-02 参考汇率折算约 ¥5,370 CNY；该型号未见于当前 26/27 目录。",
-    "priceMin": 5370,
-    "priceMax": 5370,
+    "oneLiner": "25/26 款锤头刻滑板，采用方向性双向板型与可变拱形；该型号未见于当前 26/27 目录。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.follows.co.jp/pic-labo/2526bc-r2-1a.jpg",
     "ratingOverall": null,
@@ -6484,14 +6484,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "length": 157,
-      "effectiveEdge": 1300,
-      "waistWidth": 250,
-      "stanceSetback": 20,
       "profile": "Variable Camber",
       "profileFamily": "hybrid",
       "shape": "Directional Twin / Hammerhead",
-      "core": "桧木 / 桐木",
       "scenes": [
         "carving",
         "all-mountain"
@@ -6499,36 +6494,26 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "highlights": [
       {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1300mm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "250mm"
-      },
-      {
         "key": "profileFamily",
         "label": "板型族",
         "value": "混合拱"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "刻滑 · 全山地"
       }
     ]
   },
   {
-    "id": "01a0d149-2d21-7d3a-9f43-ffe9fad0b875",
+    "id": "01a0e77d-70aa-79f3-9130-61a0343fba00",
     "slug": "bc-stream-riders-spec-dr-2027",
     "title": "BC Stream Riders' Spec DR 2027",
     "model": "Riders' Spec DR",
     "year": 2027,
-    "oneLiner": "宽板头与方向性轮廓兼顾压雪道和粉雪；商品资料标注 50 mm setback，不同鼻尾形状版本的滑行表现有别。日本 26/27 零售标价 ¥129,800 含税，按 2026-10-02 参考汇率折算约 ¥5,505 CNY（非中国零售价）。",
-    "priceMin": 5505,
-    "priceMax": 5505,
+    "oneLiner": "宽板头与方向性轮廓兼顾压雪道和粉雪；商品资料标注 50 mm setback，不同鼻尾形状版本的滑行表现有别。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.follows.co.jp/pic-labo/2627bc-dr-1.jpg",
     "ratingOverall": null,
@@ -6566,14 +6551,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-310a-7c01-8891-8a916fc80942",
+    "id": "01a0e77d-85d7-7331-bc15-db81f8ae3fe5",
     "slug": "bc-stream-rx-2027",
     "title": "BC Stream RX 2027",
     "model": "RX",
     "year": 2027,
-    "oneLiner": "以深弯和刻滑控制为核心，26/27 款增加 Hard Flex 选项；具体几何数据须按尺码读取。日本 26/27 官方渠道标价 ¥147,400 含税，按 2026-10-02 参考汇率折算约 ¥6,252 CNY（非中国零售价）。",
-    "priceMin": 6252,
-    "priceMax": 6252,
+    "oneLiner": "以深弯和刻滑控制为核心，26/27 款增加 Hard Flex 选项；具体几何数据须按尺码读取。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.follows.co.jp/pic-labo/2627bc-rxn-1.jpg",
     "ratingOverall": null,
@@ -6602,7 +6587,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2b57-7d7a-85c9-baeea48afcc2",
+    "id": "01a0a7e4-5458-79bc-b200-1168c33bf979",
     "slug": "burton-custom-camber-2026",
     "title": "Burton Custom Camber 2026",
     "model": "Custom Camber",
@@ -6669,7 +6654,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0fab1-0f00-7bf3-a1a4-252c199a1e38",
+    "id": "01a11ff6-c7aa-7bac-8e43-07b05f32b775",
     "slug": "burton-custom-camber-2027",
     "title": "Burton Custom Camber Snowboard 2027",
     "model": "Custom Camber",
@@ -6682,7 +6667,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
-    "composite": null,
+    "composite": 74.6,
     "brand": {
       "slug": "burton",
       "name": "Burton",
@@ -6730,7 +6715,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0fab1-18b2-716f-b9e0-b0190a0cfee6",
+    "id": "01a11ff6-ddcc-79fe-afef-acf567146875",
     "slug": "burton-good-company-camber-2027",
     "title": "Burton Good Company Camber Snowboard 2027",
     "model": "Good Company Camber",
@@ -6743,7 +6728,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
-    "composite": null,
+    "composite": 72.3,
     "brand": {
       "slug": "burton",
       "name": "Burton",
@@ -6791,7 +6776,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2b6a-7e41-884b-233d2c386488",
+    "id": "01a0a7e4-546a-79d4-ad7f-7bed1ae20a8c",
     "slug": "burton-process-2026",
     "title": "Burton Process 2026",
     "model": "Process",
@@ -6858,14 +6843,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-6a5b-7ead-bee2-c34185dd26ac",
+    "id": "01a0e77d-9b22-7abc-8b8d-c4d33235a7f1",
     "slug": "burton-talent-scout-2027",
     "title": "Women's Burton Talent Scout Camber Snowboard 2027",
     "model": "Talent Scout",
     "year": 2027,
-    "oneLiner": "Burton 女款公园双向板，Camber 结构强调跳台弹性和道具控制，并采用针对女性滑手调校的软硬设定。官网美区标价 $549.95，按项目 USD/CNY 目录汇率折算。",
-    "priceMin": 3960,
-    "priceMax": 3960,
+    "oneLiner": "Burton 女款公园双向板，Camber 结构强调跳台弹性和道具控制，并采用针对女性滑手调校的软硬设定。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/132181CBO2_1.webp?v=1783957423&width=2100",
     "ratingOverall": null,
@@ -6919,7 +6904,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3d1d-7210-9630-5c480f7aceb3",
+    "id": "01a0a88b-58d0-7de7-b829-779b4903b441",
     "slug": "capita-aeronaut-2027",
     "title": "CAPiTA Aeronaut Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "Aeronaut",
@@ -6980,7 +6965,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3d2d-73a8-bc2f-48dd938460d1",
+    "id": "01a0a88b-58e0-7918-8e63-b7a1f9c13035",
     "slug": "capita-dark-horse-2027",
     "title": "CAPiTA Dark Horse Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "Dark Horse",
@@ -7042,7 +7027,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2b7c-7f80-a691-bc91376d35dd",
+    "id": "01a0a7e4-5484-771a-ad13-aef6542e5629",
     "slug": "capita-defenders-of-awesome-2026",
     "title": "Capita Defenders of Awesome 2026",
     "model": "Defenders of Awesome",
@@ -7109,7 +7094,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2b94-7ddd-9f9e-ef2a6f7528ec",
+    "id": "01a0a7e4-549c-7395-8bec-e3b7715b3b06",
     "slug": "capita-defenders-of-awesome-2027",
     "title": "CAPiTA D.O.A. Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "Defenders of Awesome",
@@ -7171,7 +7156,74 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3d80-7075-8d0d-8cd34c833ef6",
+    "id": "01a0a7e4-54a9-7b2e-827d-7e03ca2b35be",
+    "slug": "capita-horrorscope-2024",
+    "title": "Capita Horrorscope 2024",
+    "model": "Horrorscope",
+    "year": 2024,
+    "oneLiner": "全反弓板型让卡刃几乎不可能发生。它是新手最友好的入门板之一，也能陪你滑完第一个公园季。",
+    "priceMin": 3699,
+    "priceMax": 3699,
+    "priceCurrency": "CNY",
+    "coverUrl": null,
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": 66.3,
+    "brand": {
+      "slug": "capita",
+      "name": "Capita",
+      "nameCn": null
+    },
+    "categorySlug": "snowboard",
+    "specs": {
+      "length": 153,
+      "effectiveEdge": 1160,
+      "sidecut": 7.3,
+      "waistWidth": 250,
+      "stanceSetback": 0,
+      "profile": "Rocker（全反弓）",
+      "profileFamily": "rocker",
+      "shape": "真双向",
+      "core": "Dual Core 白杨",
+      "fiberglass": "Biax",
+      "base": "挤压 4000",
+      "weight": 2580,
+      "flex": 4,
+      "damping": 5,
+      "pop": 5,
+      "turnRadiusFeel": "极宽松，几乎无阻力",
+      "scenes": [
+        "beginner",
+        "freestyle"
+      ],
+      "warranty": 2
+    },
+    "highlights": [
+      {
+        "key": "length",
+        "label": "长度",
+        "value": "153cm"
+      },
+      {
+        "key": "effectiveEdge",
+        "label": "有效边刃",
+        "value": "1160mm"
+      },
+      {
+        "key": "sidecut",
+        "label": "侧切半径",
+        "value": "7.3m"
+      },
+      {
+        "key": "waistWidth",
+        "label": "板腰宽",
+        "value": "250mm"
+      }
+    ]
+  },
+  {
+    "id": "01a0a88b-5927-7c2f-96cf-4c5243031bf9",
     "slug": "capita-indoor-survival-2027",
     "title": "CAPiTA Indoor Survival Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "Indoor Survival",
@@ -7233,7 +7285,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3d92-743d-9053-fbdbb04460ec",
+    "id": "01a0a88b-5937-786c-9c52-bd546c963cb0",
     "slug": "capita-kazu-kokubo-pro-2027",
     "title": "CAPiTA Kazu Kokubo Pro Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "Kazu Kokubo Pro",
@@ -7295,7 +7347,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3da2-7ba1-a74e-70df2ceee9c0",
+    "id": "01a0a88b-5947-7eb3-8a04-0fae248fccbd",
     "slug": "capita-mega-death-2027",
     "title": "CAPiTA Mega Death Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "Mega Death",
@@ -7357,7 +7409,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3db2-7cde-ae77-3bc82a006c5b",
+    "id": "01a0a88b-5965-7c52-9366-7d5c7f139fc2",
     "slug": "capita-mega-merc-2027",
     "title": "CAPiTA Mega Merc Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "Mega Merc",
@@ -7419,7 +7471,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3dc2-7632-a94e-dbdd5134359f",
+    "id": "01a0a88b-5976-7def-b597-f2e187c2df9e",
     "slug": "capita-outerspace-living-2027",
     "title": "CAPiTA Outerspace Living Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "Outerspace Living",
@@ -7481,7 +7533,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3dd1-7d6f-802e-c06c5f0ffd0d",
+    "id": "01a0a88b-5984-7eeb-8ff0-06afafd4bcf6",
     "slug": "capita-pathfinder-2027",
     "title": "CAPiTA Pathfinder Camber Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "Pathfinder",
@@ -7544,70 +7596,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2ba2-7ef5-86f7-13c5bfb80560",
-    "slug": "capita-horrorscope-2024",
-    "title": "CAPiTA Pathfinder Reverse 2024",
-    "model": "Pathfinder Reverse",
-    "year": 2024,
-    "oneLiner": "2024 款 Pathfinder Reverse 是 CAPiTA 对旧 Horrorscope 系列的承接型号；反弓/平底混合板型、153cm 真双向，软弹且容错高。零售商列示 MSRP $429.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥3,096 CNY；本条保留旧 Horrorscope slug 以兼容已有链接。",
-    "priceMin": 3096,
-    "priceMax": 3096,
-    "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0510/1705/6454/files/pathreverse57.jpg?v=1750863390",
-    "ratingOverall": null,
-    "ratingCount": 0,
-    "favoriteCount": 0,
-    "composite": 66.3,
-    "brand": {
-      "slug": "capita",
-      "name": "Capita",
-      "nameCn": null
-    },
-    "categorySlug": "snowboard",
-    "specs": {
-      "length": 153,
-      "effectiveEdge": 1218,
-      "sidecut": 7.8,
-      "waistWidth": 254,
-      "stanceSetback": 0,
-      "profile": "Park V2（插孔间零拱，插孔外反弓，平踢板头/尾）",
-      "profileFamily": "rocker",
-      "shape": "True Twin",
-      "core": "Dual Core",
-      "fiberglass": "Biax",
-      "base": "Superdrive Ex",
-      "flex": 4,
-      "scenes": [
-        "beginner",
-        "freestyle"
-      ],
-      "warranty": 2
-    },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "153cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1218mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.8m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "254mm"
-      }
-    ]
-  },
-  {
-    "id": "01a0bdc1-3de0-7f24-a52d-e593f9412943",
+    "id": "01a0a88b-5998-71bf-8829-1f41768f59d4",
     "slug": "capita-sb-resort-twin-2027",
     "title": "Spring Break Resort Twin Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "SB Resort Twin",
@@ -7669,7 +7658,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3df3-7ac3-84eb-87f909672484",
+    "id": "01a0a88b-59ab-79fe-a57e-23156444d666",
     "slug": "capita-sidewinder-2027",
     "title": "CAPiTA Sidewinder Snowboard CAPiTA Snowboards | NA",
     "model": "Sidewinder",
@@ -7731,7 +7720,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3e02-7077-a96a-8d6930bcff86",
+    "id": "01a0a88b-59b9-7fc2-90b7-c3fe9e34fd15",
     "slug": "capita-super-doa-2027",
     "title": "CAPiTA Super D.O.A. Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "Super D.O.A.",
@@ -7793,7 +7782,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3e13-7f30-8486-49d3fbc75ba6",
+    "id": "01a0a88b-59c7-7d2d-b2c7-b3b68435843a",
     "slug": "capita-the-black-snowboard-of-death-2027",
     "title": "CAPiTA The Black Snowboard Of Death Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "The Black Snowboard of Death",
@@ -7855,7 +7844,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3e23-72ec-bf62-15c88e2a2a4a",
+    "id": "01a0a88b-59d7-7d79-8c08-685a87c19bca",
     "slug": "capita-the-matriarch-2027",
     "title": "The Matriarch CAPiTA Snowboards | NA",
     "model": "The Matriarch",
@@ -7917,7 +7906,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3e33-7f40-bb5a-603feeae0213",
+    "id": "01a0a88b-59e6-7fe8-8197-1843ab45dfd7",
     "slug": "capita-the-navigator-2027",
     "title": "CAPiTA The Navigator Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "The Navigator",
@@ -7979,7 +7968,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3e42-77b7-9ae1-38b58a75db95",
+    "id": "01a0a88b-59f7-7319-be4b-220b12b2deba",
     "slug": "capita-ultrafear-2027",
     "title": "CAPiTA Ultrafear Snowboard 2027 CAPiTA Snowboards | NA",
     "model": "Ultrafear",
@@ -8040,14 +8029,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-58a4-763c-9899-6b12afb1001a",
+    "id": "01a0e77d-b0a4-7f26-8952-f064eca2c47f",
     "slug": "decathlon-all-road-900-2026",
     "title": "DREAMSCAPE All Road 900 2026",
     "model": "All Road 900",
     "year": 2026,
-    "oneLiner": "迪卡侬成人全山地与自由滑取向型号，154/160/166cm 可选；英国官网标价 £279.99，按 2026-10-02 参考汇率 1 GBP≈¥8.8475 折算约 ¥2,478 CNY（非中国售价）。154cm 规格为示例尺码。",
-    "priceMin": 2478,
-    "priceMax": 2478,
+    "oneLiner": "迪卡侬成人全山地与自由滑取向型号，官方描述覆盖雪道与雪道外滑行；当地页面所列价格不作为人民币价格录入。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://contents.mediadecathlon.com/p2572726/k$71ec9103476ba320ff720d13e85c95ba/picture.jpg?format=auto&f=3000x0",
     "ratingOverall": null,
@@ -8061,16 +8050,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "length": 154,
-      "sidecut": 8.3,
-      "waistWidth": 245,
-      "stanceSetback": 50,
-      "profile": "Camber with nose rocker",
-      "profileFamily": "hybrid",
-      "shape": "Directional",
-      "core": "20mm poplar wood",
-      "base": "Sintered",
-      "flex": 8,
       "scenes": [
         "all-mountain",
         "powder"
@@ -8078,36 +8057,21 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "highlights": [
       {
-        "key": "length",
-        "label": "长度",
-        "value": "154cm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.3m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "245mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 野雪浮雪"
       }
     ]
   },
   {
-    "id": "01a0d149-5bf5-7230-a453-67dcaca4d658",
+    "id": "01a0e77d-de93-7034-9262-3c6d559c5e46",
     "slug": "decathlon-park-ride-500-2026",
     "title": "DREAMSCAPE Park & Ride 500 2026",
     "model": "Park & Ride 500",
     "year": 2026,
-    "oneLiner": "迪卡侬全山地与自由式型号，标准正拱配合摇杆与粉雪站位；英国官网原价 £199.99（现为促销价），按 2026-10-02 参考汇率 1 GBP≈¥8.8475 折算约 ¥1,769 CNY（非中国售价）。规格以 156cm 为例。",
-    "priceMin": 1769,
-    "priceMax": 1769,
+    "oneLiner": "迪卡侬全山地与自由式型号，官方页面列出标准正拱、加宽及粉雪站位等设计信息。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://contents.mediadecathlon.com/p2944924/k$e21f8365347b4de89819c934c9ed67d6/picture.jpg?format=auto&f=3000x0",
     "ratingOverall": null,
@@ -8121,16 +8085,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "length": 156,
-      "sidecut": 8.4,
-      "waistWidth": 255,
-      "stanceSetback": 20,
       "profile": "Standard Camber with Rocker / Powder Stance",
       "profileFamily": "hybrid",
-      "shape": "Directional Twin",
-      "core": "Poplar wood",
-      "base": "Sintered HDPE",
-      "flex": 6,
       "scenes": [
         "all-mountain",
         "freestyle",
@@ -8139,36 +8095,26 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "highlights": [
       {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.4m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "255mm"
-      },
-      {
         "key": "profileFamily",
         "label": "板型族",
         "value": "混合拱"
+      },
+      {
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "全山地 · 自由式 · 野雪浮雪"
       }
     ]
   },
   {
-    "id": "01a0d149-5599-7c14-b2e6-0b88a2c1bfb8",
+    "id": "01a0e77d-dfc7-7dac-94ff-6600a6e9e0d4",
     "slug": "decathlon-snb-100-2026",
     "title": "DREAMSCAPE SNB 100 2026",
     "model": "SNB 100",
     "year": 2026,
-    "oneLiner": "DREAMSCAPE 入门全山地男款，平底与长摇杆、软 flex 3/10、方向性双向板型；加拿大官网原价 CAD $220，按 2026-10-02 参考汇率 1 CAD≈¥4.7121 折算约 ¥1,037 CNY（非中国售价）。规格以 152cm 为例。",
-    "priceMin": 1037,
-    "priceMax": 1037,
+    "oneLiner": "DREAMSCAPE 入门全山地雪板系列，按男女款分别展示；本记录不把不同款式和尺码的参数合并。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://contents.mediadecathlon.com/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg",
     "ratingOverall": null,
@@ -8182,16 +8128,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "length": 152,
-      "sidecut": 8.2,
-      "waistWidth": 250,
-      "stanceSetback": 20,
-      "profile": "Flat Camber + Long Rocker",
-      "profileFamily": "hybrid",
-      "shape": "Directional Twin",
-      "core": "20mm poplar wood",
-      "base": "Extruded",
-      "flex": 3,
       "scenes": [
         "beginner",
         "all-mountain"
@@ -8199,29 +8135,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "highlights": [
       {
-        "key": "length",
-        "label": "长度",
-        "value": "152cm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.2m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "250mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
+        "key": "scenes",
+        "label": "适用场景",
+        "value": "新手入门 · 全山地"
       }
     ]
   },
   {
-    "id": "01a0a804-2bb3-7ee7-895e-588073f0c0e8",
+    "id": "01a0a7e4-54ba-7a6d-9ff0-ac5f3b88ee8f",
     "slug": "gnu-rider-s-choice-2025",
     "title": "GNU Rider's Choice 2025",
     "model": "Rider's Choice",
@@ -8288,14 +8209,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-3e08-7c7d-b856-caad70bd6085",
+    "id": "01a0e77a-f632-7467-a31a-d4773c6ebee6",
     "slug": "gray-despe-wood-2027",
     "title": "GRAY DESPE WOOD 2027",
     "model": "DESPE WOOD",
     "year": 2027,
-    "oneLiner": "木芯与玻纤结构的刻滑入门取向型号，26/27 全长度更新为 Active Camber，并提供部分加宽尺寸。日本官方含税 MSRP ¥93,500，按 2026-10-02 参考汇率折算约 ¥3,968 CNY（非中国零售价）。",
-    "priceMin": 3968,
-    "priceMax": 3968,
+    "oneLiner": "木芯与玻纤结构的刻滑入门取向型号，26/27 全长度更新为 Active Camber，并提供部分加宽尺寸。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/25_DESPE%20WOOD48-63w/2627_25_DESPE%20WOOD48-63w_main.png",
     "ratingOverall": null,
@@ -8333,16 +8254,16 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-36de-79b6-8e05-7b0c749b859a",
+    "id": "01a0e77b-17a1-7a38-b6cd-d1ad2bcc8170",
     "slug": "gray-desperado-2024",
     "title": "GRAY DESPERADO micro/mini 2024",
     "model": "DESPERADO micro/mini",
     "year": 2024,
-    "oneLiner": "GRAY 儿童软鞋刻滑板，采用全玻纤结构；2023/24 官方含税价 ¥108,900，按 2026-10-02 参考汇率折算约 ¥4,623 CNY。",
-    "priceMin": 4623,
-    "priceMax": 4623,
+    "oneLiner": "GRAY DESPERADO 系列的儿童款，采用全玻纤结构，定位易操控的入门刻滑。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2324/product/18_DESPERADO",
+    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2324/product/19_DESPERADO%20micro-mini/23-24_19_DESPERADO%20micro-mini_main.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -8376,14 +8297,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-3a83-7850-a91e-798ce7a5a4bc",
+    "id": "01a0e77b-2cfe-7fdf-923d-3b077d9df704",
     "slug": "gray-desperado-ti-type-r-2027",
     "title": "GRAY DESPERADO Ti Type-R 2027",
     "model": "DESPERADO Ti Type-R",
     "year": 2027,
-    "oneLiner": "面向高水平刻滑的金属强化型号，以锤头轮廓、复合侧切和较强边刃支撑为主要特点。日本官方 MSRP 按尺码 ¥198,000–¥209,000 含税，折算目录价约 ¥8,405–¥8,872 CNY（非中国零售价）。",
-    "priceMin": 8405,
-    "priceMax": 8872,
+    "oneLiner": "面向高水平刻滑的金属强化型号，以锤头轮廓、复合侧切和较强边刃支撑为主要特点。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/21_DSPRD%20Ti%20type-R/2627_21_DSPRD%20Ti%20type-R_main.png",
     "ratingOverall": null,
@@ -8399,7 +8320,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "profile": "Vario Camber",
       "profileFamily": "hybrid",
-      "shape": "Directional Hammerhead / TripleRadius",
+      "shape": "Directional Hammerhead",
       "core": "Wood Core",
       "scenes": [
         "carving"
@@ -8419,14 +8340,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0eabd-69ea-7459-9652-c4f3a8a978fd",
+    "id": "01a0e780-b190-7414-9433-712aa0409618",
     "slug": "gray-dsprd-ti-iz-2027",
     "title": "GRAY DSPRD Ti [iz] 2027",
     "model": "DSPRD Ti [iz]",
     "year": 2027,
-    "oneLiner": "26/27 锤头刻滑型号，将 IZANAS 纤维置于芯材下方，并结合上缘 Titanal 金属带、玻纤结构与聚酰胺顶片。日本官方含税 MSRP ¥154,000，按 2026-10-02 参考汇率折算约 ¥6,537 CNY（非中国零售价）。",
-    "priceMin": 6537,
-    "priceMax": 6537,
+    "oneLiner": "26/27 新增锤头刻滑型号，将 IZANAS 纤维、金属与玻纤结构组合，搭配聚酰胺表层以兼顾支撑与减震。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/22_DSPRD%20Ti%5Biz%5D/2627_22_DSPRD%20Ti%5Biz%5D_main.png",
     "ratingOverall": null,
@@ -8440,17 +8361,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "profile": "Single Camber (IIw wide only: Vario Camber)",
+      "profile": "Single Camber",
       "profileFamily": "camber",
-      "shape": "Directional Hammerhead / TripleRadius",
+      "shape": "Directional Hammerhead",
       "core": "Wood Core + IZANAS Fiber",
-      "length": 157,
-      "effectiveEdge": 1360,
-      "sidecutRadii": "9.8/9.2/10.4 m",
-      "waistWidth": 246,
-      "stanceSetback": 30,
-      "fiberglass": "Glass + IZANAS beneath core + upper-edge Titanal ribbon",
-      "base": "IS7500 Graphite",
       "scenes": [
         "carving"
       ]
@@ -8469,14 +8383,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0eabd-6db1-701f-82d8-390addef0fd1",
+    "id": "01a0e780-b05b-7852-b802-21d91f859b48",
     "slug": "gray-dsprd-ti-type-x-ver-s-2027",
     "title": "GRAY DSPRD Ti Type-X ver.S 2027",
     "model": "DSPRD Ti Type-X ver.S",
     "year": 2027,
-    "oneLiner": "面向高水平竞赛刻滑的 26/27 款 Type-X，针对高速大角度走刃优化；ver.S 使用烧结表层配置。日本官方含税 MSRP ¥198,000，按 2026-10-02 参考汇率折算约 ¥8,405 CNY（非中国零售价）。",
-    "priceMin": 8405,
-    "priceMax": 8405,
+    "oneLiner": "面向高水平竞赛刻滑的 26/27 款 Type-X，针对高速大角度走刃优化；ver.S 使用烧结表层配置。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/19_DSPRD%20Ti%20type-X%20verS/2627_19_DSPRD%20Ti%20type-X%20verS_main.png",
     "ratingOverall": null,
@@ -8512,14 +8426,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0eabd-70e5-757e-879b-c98eeab99f0e",
+    "id": "01a0e780-c834-7ea8-9119-456e1533ca88",
     "slug": "gray-epic-2027",
     "title": "GRAY EPIC 2027",
     "model": "EPIC",
     "year": 2027,
-    "oneLiner": "中等硬度的高端全双向板，Active Camber 与多半径侧切兼顾灵活性和脚下抓边，适合道具、公园及自由式滑行。日本官方含税 MSRP ¥126,500，按 2026-10-02 参考汇率折算约 ¥5,370 CNY（非中国零售价）。",
-    "priceMin": 5370,
-    "priceMax": 5370,
+    "oneLiner": "中等硬度的高端全双向板，Active Camber 与多半径侧切兼顾灵活性和脚下抓边，适合道具、公园及自由式滑行。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/03_EPIC/2627_03_EPIC_main.png",
     "ratingOverall": null,
@@ -8556,14 +8470,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0eabd-73f9-7d21-9653-4b78a20b8ba0",
+    "id": "01a0e780-c983-7d5d-802e-72d851cef58b",
     "slug": "gray-lovebuzz-58-2027",
     "title": "GRAY LOVEBUZZ 58 2027",
     "model": "LOVEBUZZ 58",
     "year": 2027,
-    "oneLiner": "158cm 全山地自由滑型号，低拱、长板头、大侧切半径与新月形板尾，覆盖雪道巡航到粉雪地形。日本官方含税 MSRP ¥93,500，按 2026-10-02 参考汇率折算约 ¥3,968 CNY（非中国零售价）。",
-    "priceMin": 3968,
-    "priceMax": 3968,
+    "oneLiner": "158cm 全山地自由滑型号，低拱、长板头、大侧切半径与新月形板尾，覆盖雪道巡航到粉雪地形。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/11_LOVEBUZZ%2058/2627_11_LOVEBUZZ%2058_main.png",
     "ratingOverall": null,
@@ -8607,14 +8521,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0eabd-76f7-7b85-a79a-099d7d5af26a",
+    "id": "01a0e780-c72b-708a-a32a-5877673efb00",
     "slug": "gray-prodigy-2027",
     "title": "GRAY PRODIGY 2027",
     "model": "PRODIGY",
     "year": 2027,
-    "oneLiner": "GRAY 旗舰方向双向板，玻纤与 X 形碳纤结构强调快速回弹、控制力与中高速稳定，覆盖自由式跳台和全山地滑行。日本官方含税 MSRP ¥126,500，按 2026-10-02 参考汇率折算约 ¥5,370 CNY（非中国零售价）。",
-    "priceMin": 5370,
-    "priceMax": 5370,
+    "oneLiner": "GRAY 旗舰方向双向板，玻纤与 X 形碳纤结构强调快速回弹、控制力与中高速稳定，覆盖自由式跳台和全山地滑行。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/01_PRODIGY/2627_01_PRODIGY_main.png",
     "ratingOverall": null,
@@ -8653,14 +8567,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0eabd-1bf6-7d68-a902-f8468a104453",
+    "id": "01a0e780-ae8b-7c7c-9719-407e2ea2ae0d",
     "slug": "gray-sonicalmach-lt-2027",
     "title": "GRAY SONICALMACH LT 2027",
     "model": "SONICALMACH LT",
     "year": 2027,
-    "oneLiner": "26/27 跑滑与地形技巧取向雪板，软硬度设计搭配杨木与竹复合板芯；不同长度对应双向、方向双向或定向板形。日本官方含税 MSRP ¥93,500，按 2026-10-02 参考汇率折算约 ¥3,968 CNY（非中国零售价）。",
-    "priceMin": 3968,
-    "priceMax": 3968,
+    "oneLiner": "26/27 跑滑与地形技巧取向雪板，软硬度设计搭配杨木与竹复合板芯；不同长度对应双向、方向双向或定向板形。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/17_SONICALMACH%20LT/2627_17_SONICALMACH%20LT_main.png",
     "ratingOverall": null,
@@ -8698,14 +8612,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0eabd-79f0-74c1-bbee-29a9bc814f96",
+    "id": "01a0e780-af70-7355-bd13-1ff37ea7247f",
     "slug": "gray-sonicalmach-lt-ver-c-2027",
     "title": "GRAY SONICALMACH LT ver.C 2027",
     "model": "SONICALMACH LT ver.C",
     "year": 2027,
-    "oneLiner": "26/27 碳条强化版本，在杨木与竹复合板芯下配置碳纤维，提升回弹；官方列出 54、55W、56EW 三种宽度版本。日本官方含税 MSRP ¥99,000，按 2026-10-02 参考汇率折算约 ¥4,203 CNY（非中国零售价）。",
-    "priceMin": 4203,
-    "priceMax": 4203,
+    "oneLiner": "26/27 碳条强化版本，在杨木与竹复合板芯下配置碳纤维，提升回弹；官方列出 54、55W、56EW 三种宽度版本。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/18_SONICALMACH%20LT%20verC/2627_18_SONICALMACH%20LT%20verC_main.png",
     "ratingOverall": null,
@@ -8741,14 +8655,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0eabd-7d0c-7623-b1fc-137566925fca",
+    "id": "01a0e780-ca6b-7ee9-a2f1-5fc13e3ecb70",
     "slug": "gray-tycoon-type-s-iz-2027",
     "title": "GRAY TYCOON Type-S [iz] 2027",
     "model": "TYCOON Type-S [iz]",
     "year": 2027,
-    "oneLiner": "26/27 高端竞速刻滑型号，以全金属结构、IZANAS 纤维及复合材料控制弯曲后的回弹，可搭配雪板底板系统。日本官方含税 MSRP ¥198,000，按 2026-10-02 参考汇率折算约 ¥8,405 CNY（非中国零售价）。",
-    "priceMin": 8405,
-    "priceMax": 8405,
+    "oneLiner": "26/27 高端竞速刻滑型号，以全金属结构、IZANAS 纤维及复合材料控制弯曲后的回弹，可搭配雪板底板系统。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/28_TYCOON%20Type-S%5Biz%5D/2627_28_TYCOON%20Type-S%5Biz%5D_main.png",
     "ratingOverall": null,
@@ -8778,14 +8692,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-7d48-7e81-8bee-78680ac52f0a",
+    "id": "01a0e77d-e104-771d-9a08-35b1a9b9ec1b",
     "slug": "jones-dream-weaver-2-0-2027",
     "title": "Women's Dream Weaver 2.0 Snowboard 2027 | Jones",
     "model": "Dream Weaver 2.0",
     "year": 2027,
-    "oneLiner": "偏野雪浮力的女款全山地日常板，形状兼顾雪道巡航、粉雪和多变地形。官网美区标价 $549.95，按项目 USD/CNY 目录汇率折算。",
-    "priceMin": 3960,
-    "priceMax": 3960,
+    "oneLiner": "偏野雪浮力的女款全山地日常板，形状兼顾雪道巡航、粉雪和多变地形。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0641/4722/6759/files/J.27.SNW.DRC-gallery-1.webp?v=1782443953&width=1946",
     "ratingOverall": null,
@@ -8834,7 +8748,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3e63-7f83-8d65-194d4da16980",
+    "id": "01a0a88b-5a1a-7f0b-bb1c-36f0fb8c542f",
     "slug": "jones-flagship-2027",
     "title": "Men's Flagship Snowboard | Jones",
     "model": "Flagship",
@@ -8897,7 +8811,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0faeb-3d41-70d8-a202-99f7b4f1da86",
+    "id": "01a11ff6-f402-78cc-bcde-6d4756566d5c",
     "slug": "jones-flagship-pro-2027",
     "title": "Jones Men's Flagship PRO Snowboard 2027",
     "model": "Flagship PRO",
@@ -8910,7 +8824,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
-    "composite": null,
+    "composite": 76.1,
     "brand": {
       "slug": "jones",
       "name": "Jones",
@@ -8959,7 +8873,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3e76-730d-8f77-24b45e6eb736",
+    "id": "01a0a88b-5a29-767e-a196-963d0b9da360",
     "slug": "jones-freecarver-6000s-2027",
     "title": "Freecarver 6000s Snowboard | Jones",
     "model": "Freecarver 6000s",
@@ -9022,7 +8936,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3e8a-7388-9abf-51587c4f12b4",
+    "id": "01a0a88b-5a39-7e59-88d0-a6c4d2be5f86",
     "slug": "jones-frontier-2-0-2027",
     "title": "Men's Frontier 2.0 Snowboard | Jones",
     "model": "Frontier 2.0",
@@ -9085,7 +8999,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2bd5-72e0-a121-e4b37424daec",
+    "id": "01a0a7e4-54db-7c76-995b-907b88b6e0d4",
     "slug": "jones-hovercraft-2026",
     "title": "Jones Hovercraft 2026",
     "model": "Hovercraft",
@@ -9151,7 +9065,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2bc6-7aa2-bf0e-65764b3411b3",
+    "id": "01a0a7e4-54ce-7990-81c8-29b83a7717cb",
     "slug": "jones-hovercraft-2-0-2027",
     "title": "Hovercraft 2.0 Snowboard | Jones",
     "model": "Hovercraft 2.0",
@@ -9214,7 +9128,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3ec6-7fca-98ed-46d3867db591",
+    "id": "01a0a88b-5a7b-7e49-a95f-3995600791ec",
     "slug": "jones-howler-2027",
     "title": "Men's Howler Snowboard | Jones",
     "model": "Howler",
@@ -9278,7 +9192,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3ed6-7270-8ba6-60f22904fed5",
+    "id": "01a0a88b-5a89-70eb-b809-3038cbb4e429",
     "slug": "jones-mind-expander-2-0-2027",
     "title": "Mind Expander 2.0 Snowboard | Jones",
     "model": "Mind Expander 2.0",
@@ -9341,7 +9255,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2beb-7718-85a6-8adb633ed8a3",
+    "id": "01a0a7e4-54f2-76b5-bc28-64119e75a588",
     "slug": "jones-mountain-twin-2026",
     "title": "Jones Mountain Twin 2026",
     "model": "Mountain Twin",
@@ -9408,7 +9322,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2bfe-7d8e-b4cc-0bc1b55597ae",
+    "id": "01a0a7e4-5505-7f8b-9a0c-8246e7dd3df0",
     "slug": "jones-mountain-twin-2027",
     "title": "Men's Mountain Twin Snowboard | Jones",
     "model": "Mountain Twin",
@@ -9472,7 +9386,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3f10-7bae-939c-3cc47a2eb86d",
+    "id": "01a0a88b-5ab4-747c-ba17-4dd9667e0f0b",
     "slug": "jones-rally-cat-2027",
     "title": "Men's Rally Cat Snowboard | Jones",
     "model": "Rally Cat",
@@ -9535,7 +9449,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0bdc1-3f21-78f9-8c77-9e1a37918358",
+    "id": "01a0a88b-5ac3-7a44-9d9b-2944c8de205f",
     "slug": "jones-storm-chaser-2027",
     "title": "Storm Chaser Snowboard | Jones",
     "model": "Storm Chaser",
@@ -9598,14 +9512,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-79f7-7d6d-a2cb-98d589661a7e",
+    "id": "01a0e77d-e217-7476-a60f-593b035b60c3",
     "slug": "jones-twin-sister-2027",
     "title": "Women's Twin Sister Snowboard 2027 | Jones",
     "model": "Twin Sister",
     "year": 2027,
-    "oneLiner": "Jones 女款全山地畅销双向板，CamRock 和中等硬度兼顾刻滑、自由式与新雪中的浮力。官网美区标价 $599.95，按项目 USD/CNY 目录汇率折算。",
-    "priceMin": 4320,
-    "priceMax": 4320,
+    "oneLiner": "Jones 女款全山地畅销双向板，CamRock 和中等硬度兼顾刻滑、自由式与新雪中的浮力。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNW.TWS-gallery-1.webp?v=1773324878&width=1946",
     "ratingOverall": null,
@@ -9657,14 +9571,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-7604-7d2f-ab1e-f8cb504d0a78",
+    "id": "01a0e77d-e350-72b6-9b09-b0c73cc7fe99",
     "slug": "k2-alchemist-2027",
     "title": "K2 Alchemist 2027",
     "model": "Alchemist",
     "year": 2027,
-    "oneLiner": "K2 Landscape 系列旗舰定向野雪板，面向专家滑手，以高速稳定、精准控刃和大山地形为主要方向。官网美区标价 $849.95，按项目 USD/CNY 目录汇率折算。",
-    "priceMin": 6120,
-    "priceMax": 6120,
+    "oneLiner": "K2 Landscape 系列旗舰定向野雪板，面向专家滑手，以高速稳定、精准控刃和大山地形为主要方向。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://blauerboardshop.com/cdn/shop/files/K2AlchemistSnowboard2027.png?v=1776976538",
     "ratingOverall": null,
@@ -9701,14 +9615,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-71ff-764d-94c6-aca436e0a72f",
+    "id": "01a0e77d-f914-7bf6-95a0-3849eed1882e",
     "slug": "k2-excavator-2027",
     "title": "K2 Excavator 2027",
     "model": "Excavator",
     "year": 2027,
-    "oneLiner": "宽腰短板思路的全山地型号，主打压雪道深弯与新雪浮力，官方建议按常规雪板尺寸适当缩短选择。官网美区标价 $629.95，按项目 USD/CNY 目录汇率折算。",
-    "priceMin": 4536,
-    "priceMax": 4536,
+    "oneLiner": "宽腰短板思路的全山地型号，主打压雪道深弯与新雪浮力，官方建议按常规雪板尺寸适当缩短选择。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.milosport.com/cdn/shop/files/KB2616871398Large.png?v=1774904988&width=800",
     "ratingOverall": null,
@@ -9747,14 +9661,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-6d77-7fe5-8521-abd56a8025b4",
+    "id": "01a0e77d-fa30-7fed-96d5-df8172cea291",
     "slug": "k2-passport-2027",
     "title": "K2 Passport 2027",
     "model": "Passport",
     "year": 2027,
-    "oneLiner": "定向全山自由滑板，兼顾压雪道、粉雪和大山地形；中高级滑手可按脚长在标准与宽版之间选择。官网美区标价 $599.95，按项目 USD/CNY 目录汇率折算。",
-    "priceMin": 4320,
-    "priceMax": 4320,
+    "oneLiner": "定向全山自由滑板，兼顾压雪道、粉雪和大山地形；中高级滑手可按脚长在标准与宽版之间选择。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://blauerboardshop.com/cdn/shop/files/K2PassportSnowboard2027.png?v=1776985303",
     "ratingOverall": null,
@@ -9807,7 +9721,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2c0b-714f-9219-ea5f9d92d6ee",
+    "id": "01a0a7e4-5516-788c-afdf-37690a5d0479",
     "slug": "korua-shapes-cafe-racer-2026",
     "title": "Korua Shapes Cafe Racer 2026",
     "model": "Cafe Racer",
@@ -9874,7 +9788,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2c1f-723d-8b9b-9cd1651c9f93",
+    "id": "01a0a7e4-552e-70f6-911c-7c19a47bea26",
     "slug": "lib-tech-t-rice-pro-2025",
     "title": "Lib Tech T.Rice Pro 2025",
     "model": "T.Rice Pro",
@@ -9941,7 +9855,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2c32-72af-9a85-0f61a6ec8d78",
+    "id": "01a0a7e4-553f-7730-9397-0337a99a2c00",
     "slug": "never-summer-proto-slinger-2025",
     "title": "Never Summer Proto Slinger 2025",
     "model": "Proto Slinger",
@@ -10008,14 +9922,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-6548-7c35-955e-8a005f1e4ada",
+    "id": "01a0e77d-fb74-7720-8b91-25235ae6c7c7",
     "slug": "nitro-alternator-2027",
     "title": "Nitro Alternator 2027",
     "model": "Alternator",
     "year": 2027,
-    "oneLiner": "定向全山自由式板，传统正拱与中宽腰设计面向山地跳跃、刻滑和变化雪况。Nitro 官方商品目录价 $599.90，按项目 USD/CNY 目录汇率折算。",
-    "priceMin": 4319,
-    "priceMax": 4319,
+    "oneLiner": "定向全山自由式板，传统正拱与中宽腰设计面向山地跳跃、刻滑和变化雪况。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/11SB11012-101-157_Alternator_Product-1.jpg?v=1779104369&width=985",
     "ratingOverall": null,
@@ -10069,20 +9983,20 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0fab1-2271-7dff-8603-dbb13c01bfec",
+    "id": "01a11ff7-09c2-795e-a02e-ec65bd780166",
     "slug": "nitro-banker-2027",
     "title": "Nitro Banker Snowboard 2027",
     "model": "Banker",
     "year": 2027,
     "oneLiner": "面向全山高速刻滑与粉雪地形的定向板，采用 True Camber、Powercore II 与烧结底板；官方标注硬度 8/10。",
-    "priceMin": 4679,
-    "priceMax": 4679,
+    "priceMin": 4608,
+    "priceMax": 4608,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/11SB11004-101-1multBankerII.jpg?v=1787539883",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
-    "composite": null,
+    "composite": 75,
     "brand": {
       "slug": "nitro",
       "name": "Nitro",
@@ -10130,14 +10044,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-5fc3-76c9-80bc-23fc03fc6554",
+    "id": "01a0e77d-fc68-7176-874f-7c91167b4fa8",
     "slug": "nitro-beast-2026",
     "title": "Nitro Beast 2026",
     "model": "Beast",
     "year": 2026,
-    "oneLiner": "25/26 款高响应公园自由式板，True Camber 与 Twin 板型强调弹性、控刃和耐用性；零售 MSRP $689.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥4,968 CNY。",
-    "priceMin": 4968,
-    "priceMax": 4968,
+    "oneLiner": "26 款高响应公园自由式板，True Camber 与 Twin 板型强调弹性、控刃和耐用性。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/833227-001_Beast_151_Product-1.jpg?v=1755928801&width=995",
     "ratingOverall": null,
@@ -10182,7 +10096,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2c45-7613-9918-0b143a5890ce",
+    "id": "01a0a7e4-5550-7bd4-bcb1-14f6da892565",
     "slug": "nitro-team-2026",
     "title": "Nitro Team 2026",
     "model": "Team",
@@ -10249,14 +10163,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-4433-792a-8d2d-b7574cb6bdb9",
+    "id": "01a0e77d-fd9c-7a3c-b1e9-a8f424b8517e",
     "slug": "ogasaka-ct-2026",
     "title": "OGASAKA CT 2026",
     "model": "CT",
     "year": 2026,
-    "oneLiner": "面向从初级到高水平滑手的全能刻滑板，方向性板型与较均衡的软硬设定兼顾刻滑和日常滑行；25/26 官方含税价 ¥114,400，按 2026-10-02 参考汇率折算约 ¥4,856 CNY。",
-    "priceMin": 4856,
-    "priceMax": 4856,
+    "oneLiner": "面向从初级到高水平滑手的全能刻滑板，方向性板型与较均衡的软硬设定兼顾刻滑和日常滑行。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.ogasaka-snowboard.com/2025-img/03_ct_02.png",
     "ratingOverall": null,
@@ -10301,14 +10215,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-412a-7332-ba5f-19fc0bb56d2f",
+    "id": "01a0e77e-1313-7102-83f7-15017d972329",
     "slug": "ogasaka-fc-2026",
     "title": "OGASAKA FC 2026",
     "model": "FC",
     "year": 2026,
-    "oneLiner": "半锤头轮廓的自由式刻滑板，长有效边刃强调抓雪和弯中稳定；25/26 官方 157cm 含税价 ¥126,500，按 2026-10-02 参考汇率折算约 ¥5,370 CNY。",
-    "priceMin": 5370,
-    "priceMax": 5370,
+    "oneLiner": "半锤头轮廓的自由式刻滑板，长有效边刃强调抓雪和弯中稳定；尺码数据按官方 25/26 规格表记录。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.ogasaka-snowboard.com/2025-img/08_fc_03.png",
     "ratingOverall": null,
@@ -10360,14 +10274,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-47b1-7c7c-9796-72a61000c4c2",
+    "id": "01a0e77e-1470-7d58-85c7-150baea64b67",
     "slug": "ogasaka-shin-2026",
     "title": "OGASAKA SHIN 2026",
     "model": "SHIN",
     "year": 2026,
-    "oneLiner": "面向粉雪和全山地的系列雪板，官方将其定位为适应多种雪况的中高级型号；25/26 官方含税价 ¥132,000，按 2026-10-02 参考汇率折算约 ¥5,603 CNY；不同长度的尺寸与结构不可混用。",
-    "priceMin": 5603,
-    "priceMax": 5603,
+    "oneLiner": "面向粉雪和全山地的系列雪板，官方将其定位为适应多种雪况的中高级型号；不同长度的尺寸与结构不可混用。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.ogasaka-snowboard.com/2025-img/12_shin_160.png",
     "ratingOverall": null,
@@ -10411,7 +10325,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2c54-727f-919c-d84cdf5db3a9",
+    "id": "01a0a7e4-5568-74af-ad24-cf57142d755f",
     "slug": "ride-algorythm-2026",
     "title": "Ride Algorythm 2026",
     "model": "Algorythm",
@@ -10478,7 +10392,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0faeb-2199-7ca6-b03f-91abcc16ccf8",
+    "id": "01a11ff7-1f50-717a-8efc-1549a120223d",
     "slug": "ride-deep-fake-2027",
     "title": "RIDE Deep Fake Snowboard 2027",
     "model": "Deep Fake",
@@ -10491,7 +10405,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
-    "composite": null,
+    "composite": 69.8,
     "brand": {
       "slug": "ride",
       "name": "Ride",
@@ -10537,7 +10451,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0faeb-3025-7cf9-9504-7d796a021b40",
+    "id": "01a11ff7-351c-7ae4-88a9-8b02a198fcb6",
     "slug": "ride-warpig-2027",
     "title": "RIDE WARPIG Snowboard 2027",
     "model": "WARPIG",
@@ -10550,7 +10464,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
-    "composite": null,
+    "composite": 77.1,
     "brand": {
       "slug": "ride",
       "name": "Ride",
@@ -10596,14 +10510,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-51de-7454-ab33-37a80c6f1a61",
+    "id": "01a0e77e-1580-7a57-adf0-91767bf0e0d4",
     "slug": "salomon-assassin-2026",
     "title": "Salomon Assassin 2026",
     "model": "Assassin",
     "year": 2026,
-    "oneLiner": "面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；25/26 MSRP $649.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥4,680 CNY。",
-    "priceMin": 4680,
-    "priceMax": 4680,
+    "oneLiner": "面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；官网当前页未标明板季。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.dam.salomon.com/af8e2e75-eeed-4307-9ef2-b3b8010090b3/L49291700/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
     "ratingOverall": null,
@@ -10655,14 +10569,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-4e97-7482-bed3-233b96946239",
+    "id": "01a0e77e-16c0-716b-8dd9-df8cc15cd893",
     "slug": "salomon-assassin-pro-2027",
     "title": "Salomon Assassin Pro 2027",
     "model": "Assassin Pro",
     "year": 2027,
-    "oneLiner": "全山与自由式兼顾的进阶型号，Rock Out Camber、Ghost Carbon Beams 与 Gunslinger Sidewalls 面向高响应滑行。2027 美区零售标价 $699.95，按项目 USD/CNY 目录汇率折算。",
-    "priceMin": 5040,
-    "priceMax": 5040,
+    "oneLiner": "全山与自由式兼顾的进阶型号，Rock Out Camber、Ghost Carbon Beams 与 Gunslinger Sidewalls 面向高响应滑行。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
     "ratingOverall": null,
@@ -10712,14 +10626,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d149-4b30-7fde-b329-a10b506c93b3",
+    "id": "01a0e77e-176a-71f6-bd48-d688f01a0bd7",
     "slug": "salomon-huck-knife-2027",
     "title": "Salomon Huck Knife 2027",
     "model": "Huck Knife",
     "year": 2027,
-    "oneLiner": "以跳台、道具和公园自由式为主的真双向板，Quad Camber 取向强调弹性、响应和落地稳定。2027 美区零售标价 $579.95，按项目 USD/CNY 目录汇率折算。",
-    "priceMin": 4176,
-    "priceMax": 4176,
+    "oneLiner": "以跳台、道具和公园自由式为主的真双向板，Quad Camber 取向强调弹性、响应和落地稳定。",
+    "priceMin": null,
+    "priceMax": null,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.dam.salomon.com/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
     "ratingOverall": null,
@@ -10769,7 +10683,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0a804-2c66-7a84-8a68-a17b879beccb",
+    "id": "01a0a7e4-557a-7537-a060-9b91d14f9f21",
     "slug": "salomon-sight-2026",
     "title": "Salomon Sight 2026",
     "model": "Sight",
@@ -10779,9 +10693,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMax": 3299,
     "priceCurrency": "CNY",
     "coverUrl": "https://salomon.jp/cdn/shop/files/L47924900_0_VIR_SIGHT_156.png?v=1756098039",
-    "ratingOverall": null,
-    "ratingCount": 0,
-    "favoriteCount": 0,
+    "ratingOverall": 4.5,
+    "ratingCount": 1,
+    "favoriteCount": 1,
     "composite": 66.2,
     "brand": {
       "slug": "salomon",
@@ -10836,7 +10750,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cd26-7b34-9dc1-569100b9cab6",
+    "id": "01a0e6f0-581b-7abb-8cf3-cb13fa69fc00",
     "slug": "burton-cartel-re-flex-2027",
     "title": "Burton Cartel Re:Flex 2027",
     "model": "Cartel Re:Flex",
@@ -10886,7 +10800,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cd59-7f2a-ade6-80f0ce04387b",
+    "id": "01a0e6f0-6dc6-7558-9bb2-dede241a3fd6",
     "slug": "burton-cartel-x-re-flex-2027",
     "title": "Burton Cartel X Re:Flex 2027",
     "model": "Cartel X Re:Flex",
@@ -10936,7 +10850,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cd6b-7eb7-8389-8d95d4fd3f72",
+    "id": "01a0e6f0-8379-748e-bca3-9fd22f256725",
     "slug": "burton-freestyle-re-flex-2027",
     "title": "Burton Freestyle Re:Flex 2027",
     "model": "Freestyle Re:Flex",
@@ -10986,7 +10900,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cd78-75f7-a6f8-4abf7eb8b688",
+    "id": "01a0e6f0-994b-70bc-b892-d81cf1c106b6",
     "slug": "burton-genesis-re-flex-2027",
     "title": "Burton Genesis Re:Flex 2027",
     "model": "Genesis Re:Flex",
@@ -11036,7 +10950,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cd86-79f8-944e-e357366379bc",
+    "id": "01a0e6f0-af4f-79f7-8a56-a446f6985063",
     "slug": "burton-lexa-x-est-2027",
     "title": "Burton Lexa X EST 2027",
     "model": "Lexa X EST",
@@ -11080,7 +10994,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cd91-7d2c-b73c-34cc569d209c",
+    "id": "01a0e6f0-c56e-7b20-8770-63ad99c9d4f5",
     "slug": "burton-mission-re-flex-2027",
     "title": "Burton Mission Re:Flex 2027",
     "model": "Mission Re:Flex",
@@ -11129,7 +11043,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cd9c-7c42-ab81-d88c9e19abcd",
+    "id": "01a0e6f0-db3e-703c-9c29-740d17377367",
     "slug": "burton-step-on-genesis-re-flex-2027",
     "title": "Burton Step On Genesis Re:Flex 2027",
     "model": "Step On Genesis Re:Flex",
@@ -11178,7 +11092,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cda8-728b-b82d-df8823fc368e",
+    "id": "01a0e6f0-f121-72c3-b71c-d7c102b392e4",
     "slug": "burton-step-on-re-flex-2027",
     "title": "Burton Step On Re:Flex 2027",
     "model": "Step On Re:Flex",
@@ -11227,7 +11141,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-5e10-7026-bf38-780f4de363f6",
+    "id": "01a0e6f1-075d-7966-99a5-b74172c81cae",
     "slug": "cosone-step-on-binding-2026",
     "title": "COSONE Step On 快穿固定器 2026",
     "model": "Step On",
@@ -11259,7 +11173,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cdb4-7b9c-a7ea-7957096ae6e9",
+    "id": "01a0e6f1-1d20-72c4-8366-b556b7ac7f86",
     "slug": "decathlon-snb-500-binding-2026",
     "title": "Decathlon SNB 500 2026",
     "model": "SNB 500",
@@ -11301,7 +11215,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-9716-7e7d-9884-d5341096a0ce",
+    "id": "01a0e6f1-3313-723c-ab18-4dd304d499ca",
     "slug": "flow-fenix-binding-2027",
     "title": "Flow Fenix 2027",
     "model": "Fenix",
@@ -11349,7 +11263,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-9a2b-74f4-8da5-95412f30dbe6",
+    "id": "01a0e6f1-48da-7087-af7f-e0f2e37f2ee2",
     "slug": "flow-fuse-binding-2026",
     "title": "Flow Fuse 2026",
     "model": "Fuse",
@@ -11397,7 +11311,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-9d36-76fe-a7a0-595fddec7151",
+    "id": "01a0e6f1-5e69-7f7f-adbb-5ba6ec8683e2",
     "slug": "flow-fuse-hybrid-binding-2026",
     "title": "Flow Fuse Hybrid 2026",
     "model": "Fuse Hybrid",
@@ -11446,7 +11360,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-a04b-7973-a2c3-5037a58d426a",
+    "id": "01a0e6f1-7417-7c16-87fd-441df7200c32",
     "slug": "flow-nexus-binding-2027",
     "title": "Flow Nexus 2027",
     "model": "Nexus",
@@ -11494,7 +11408,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-a370-7287-9ade-2a8dc1dbc3bf",
+    "id": "01a0e6f1-89b8-764a-98cf-2f3ba6c6c8e2",
     "slug": "flow-nx2-carbon-binding-2027",
     "title": "Flow NX2 Carbon 2027",
     "model": "NX2 Carbon",
@@ -11543,7 +11457,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-a67a-7a59-a463-796007366c69",
+    "id": "01a0e6f1-9f56-7acc-859b-ef8fe1c1fc4f",
     "slug": "flow-nx2-hybrid-binding-2027",
     "title": "Flow NX2 Hybrid 2027",
     "model": "NX2 Hybrid",
@@ -11592,7 +11506,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cdc0-75bd-8984-e4b6b0c647bd",
+    "id": "01a0e6f1-b526-701c-9db2-2c679819383d",
     "slug": "flux-cv-2027",
     "title": "FLUX CV 2027",
     "model": "CV",
@@ -11641,7 +11555,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cdcd-78fa-b5c0-c01c889ea425",
+    "id": "01a0e6f1-cb15-7448-8f16-63d6bf78be3b",
     "slug": "flux-ds-2027",
     "title": "FLUX DS 2027",
     "model": "DS",
@@ -11690,7 +11604,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cdd7-735a-b5f7-1ee5f9c820ad",
+    "id": "01a0e6f1-e0d7-7dc6-baa3-db7677a3fd11",
     "slug": "flux-gs-2026",
     "title": "FLUX GS 2026",
     "model": "GS",
@@ -11739,7 +11653,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cdf6-78f5-88a2-a46fd8a67767",
+    "id": "01a0e6f1-f644-7ab6-8198-68028cd5187a",
     "slug": "flux-xf-2026",
     "title": "FLUX XF 2026",
     "model": "XF",
@@ -11788,7 +11702,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cdff-7b39-9f2f-bf3e24ae584e",
+    "id": "01a0e6f2-0c73-7132-a9e8-4b6719e26610",
     "slug": "flux-xv-2026",
     "title": "FLUX XV 2026",
     "model": "XV",
@@ -11837,7 +11751,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce0b-70fa-ab1f-bac6788aa429",
+    "id": "01a0e6f2-2267-72d5-a985-78e5279ae13a",
     "slug": "jones-mercury-binding-2026",
     "title": "Jones Mercury 2026",
     "model": "Mercury",
@@ -11892,7 +11806,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce15-79e6-9ac9-bcbc36c8708c",
+    "id": "01a0e6f2-3841-7f95-a52f-df98294fa080",
     "slug": "jones-mercury-fase-binding-2026",
     "title": "Jones Mercury FASE 2026",
     "model": "Mercury FASE",
@@ -11953,7 +11867,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce1e-746f-b8ae-a512e0d7edbc",
+    "id": "01a0e6f2-4e2a-776b-92d4-2d81b13c9f31",
     "slug": "jones-orion-binding-2026",
     "title": "Jones Orion 2026",
     "model": "Orion",
@@ -12001,7 +11915,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce29-7f0d-a364-d9771ae03879",
+    "id": "01a0e6f2-641d-77b5-9ca2-0ef3620994bb",
     "slug": "nidecker-kaon-plus-2026",
     "title": "Nidecker Kaon Plus 2026",
     "model": "Kaon Plus",
@@ -12054,7 +11968,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce33-7328-b8af-3d87718dcf67",
+    "id": "01a0e6f2-7a26-71d6-9cb7-dc5e2ba5de61",
     "slug": "nidecker-lt-supermatic-2026",
     "title": "Nidecker LT Supermatic 2026",
     "model": "LT Supermatic",
@@ -12108,7 +12022,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce3f-721c-9f76-efdbb245281f",
+    "id": "01a0e6f2-900e-7940-bb08-fa4232d03640",
     "slug": "nidecker-og-supermatic-2026",
     "title": "Nidecker OG Supermatic 2026",
     "model": "OG Supermatic",
@@ -12162,7 +12076,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-a99c-7ddb-8c93-daaec3ec49c8",
+    "id": "01a0e6f2-a5cb-7ee5-9792-7783101da316",
     "slug": "nidecker-orbit-binding-2027",
     "title": "Nidecker Orbit 2027",
     "model": "Orbit",
@@ -12214,7 +12128,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-acae-71a8-87af-3348a30300e0",
+    "id": "01a0e6f2-bbb0-7a27-8b64-ca7853f642cb",
     "slug": "nitro-fate-binding-2027",
     "title": "Nitro Fate 女款 2027",
     "model": "Fate",
@@ -12259,7 +12173,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-afbe-768c-9cbc-4fdb57eb034a",
+    "id": "01a0e6f2-d187-72c4-a7e2-e6d6e0e68455",
     "slug": "nitro-one-binding-2027",
     "title": "Nitro One 2027",
     "model": "One",
@@ -12304,7 +12218,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-b2c6-74dd-b2ce-163dc89c350b",
+    "id": "01a0e6f2-e79c-756e-8ae0-fc348be63a22",
     "slug": "nitro-phantom-binding-2027",
     "title": "Nitro Phantom 2027",
     "model": "Phantom",
@@ -12350,7 +12264,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce4b-71bf-9c88-5e4533ed1c07",
+    "id": "01a0e6f2-fd6f-79ca-a3bb-64f2a8d9f9a2",
     "slug": "nitro-phantom-plus-binding-2027",
     "title": "Nitro Phantom+ 2027",
     "model": "Phantom+",
@@ -12396,7 +12310,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-b614-7c53-9ac5-1a51800013c5",
+    "id": "01a0e6f3-137f-7c5a-8f4e-bb23ad4a8aff",
     "slug": "nitro-poison-binding-2027",
     "title": "Nitro Poison 女款 2027",
     "model": "Poison",
@@ -12441,7 +12355,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-b93d-7a1e-bbeb-ee3e4f06f98d",
+    "id": "01a0e6f3-2988-7664-8df5-a5ccacff40ef",
     "slug": "nitro-rambler-binding-2027",
     "title": "Nitro Rambler 2027",
     "model": "Rambler",
@@ -12486,7 +12400,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-bc6e-7dfb-aaf7-fd7dbf2b1f8c",
+    "id": "01a0e6f3-3f77-7257-9a53-2002c5543627",
     "slug": "nitro-talent-binding-2027",
     "title": "Nitro Talent 2027",
     "model": "Talent",
@@ -12531,7 +12445,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce57-73cf-a90c-59f75e342ecd",
+    "id": "01a0e6f3-5565-7362-afe8-19cbb961899c",
     "slug": "nitro-team-binding-2027",
     "title": "Nitro Team 2027",
     "model": "Team",
@@ -12577,7 +12491,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce61-7259-b23e-50f2d6dc6df5",
+    "id": "01a0e6f3-6b37-78b5-a842-e72547158ff3",
     "slug": "nitro-team-pro-binding-2027",
     "title": "Nitro Team Pro 2027",
     "model": "Team Pro",
@@ -12623,7 +12537,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-bf83-71e6-936d-dfed4425a949",
+    "id": "01a0e6f3-80e2-77be-afd4-cd29cf772d6b",
     "slug": "rome-390-boss-aw-binding-2027",
     "title": "Rome 390 Boss AW 2027",
     "model": "390 Boss AW",
@@ -12671,7 +12585,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-c28d-7b08-86e2-3225eabf8876",
+    "id": "01a0e6f3-96a7-73ac-99bf-014a2059506e",
     "slug": "rome-390-boss-fw-binding-2027",
     "title": "Rome 390 Boss FW 2027",
     "model": "390 Boss FW",
@@ -12719,7 +12633,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-c598-74ec-899b-7f3b763005f6",
+    "id": "01a0e6f3-acaa-777f-ac99-94e0d7a6d306",
     "slug": "rome-brass-aw-binding-2027",
     "title": "Rome Brass AW 女款 2027",
     "model": "Brass AW",
@@ -12767,7 +12681,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-c954-7180-a68f-19261e8c9565",
+    "id": "01a0e6f3-c2d5-7864-92e5-3682e1597aee",
     "slug": "rome-katana-aw-binding-2027",
     "title": "Rome Katana AW 2027",
     "model": "Katana AW",
@@ -12815,7 +12729,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-cca4-72a8-abbc-1ba75250c380",
+    "id": "01a0e6f3-d8ba-74ad-816e-fb2014de710e",
     "slug": "rome-katana-aw-fase-binding-2027",
     "title": "Rome Katana AW FASE 2027",
     "model": "Katana AW FASE",
@@ -12863,7 +12777,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-cfdc-7ffb-ac52-83ba86693f7c",
+    "id": "01a0e6f3-ee84-7c3c-84dc-b7ade1f9d595",
     "slug": "rome-katana-aw-pro-fase-binding-2027",
     "title": "Rome Katana AW Pro FASE 2027",
     "model": "Katana AW Pro FASE",
@@ -12911,7 +12825,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-d2e8-7f48-830f-325d83098a2c",
+    "id": "01a0e6f4-0490-7952-8f88-6d27515fa9d9",
     "slug": "rome-katana-fw-pro-binding-2027",
     "title": "Rome Katana FW Pro 2027",
     "model": "Katana FW Pro",
@@ -12959,7 +12873,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-d619-79c1-a800-9c0d8cb1bf68",
+    "id": "01a0e6f4-1a5d-70f8-b60e-c40b1faa6271",
     "slug": "rome-volt-fase-binding-2027",
     "title": "Rome Volt FASE 2027",
     "model": "Volt FASE",
@@ -13007,7 +12921,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-d922-7681-b821-bb70ae698b42",
+    "id": "01a0e6f4-302d-7a6f-aa18-7dbc9919f106",
     "slug": "salomon-district-binding-2026",
     "title": "Salomon DISTRICT 2026",
     "model": "DISTRICT",
@@ -13057,7 +12971,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-dc31-7ffc-9890-ec8f20c65c7a",
+    "id": "01a0e6f4-4600-76fd-af4a-85710d0f24c3",
     "slug": "salomon-district-pro-binding-2026",
     "title": "Salomon DISTRICT PRO 2026",
     "model": "DISTRICT PRO",
@@ -13106,7 +13020,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-df66-7111-ac33-2c25b3751cf8",
+    "id": "01a0e6f4-5bd6-74f5-a2d7-130ceb3cf0ae",
     "slug": "salomon-edb-binding-2026",
     "title": "Salomon EDB 2026",
     "model": "EDB",
@@ -13148,7 +13062,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-e27b-71be-b57a-ffc39b5fbe98",
+    "id": "01a0e6f4-71e6-75ca-b509-4d7146f60047",
     "slug": "salomon-edb-prime-binding-2026",
     "title": "Salomon EDB PRIME 2026",
     "model": "EDB PRIME",
@@ -13196,7 +13110,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-e5a1-7235-bd4a-b4fc1f4ff1dc",
+    "id": "01a0e6f4-87d0-7c02-ba8b-ee6bc25fe247",
     "slug": "salomon-highlander-binding-2026",
     "title": "Salomon HIGHLANDER 2026",
     "model": "HIGHLANDER",
@@ -13245,7 +13159,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-e8ba-7bc1-8703-eadd0bda840e",
+    "id": "01a0e6f4-9dcd-743b-9afd-07ca6ee03ec1",
     "slug": "salomon-hologram-binding-2026",
     "title": "Salomon HOLOGRAM 2026",
     "model": "HOLOGRAM",
@@ -13294,7 +13208,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-ebcb-778d-885c-6ae2da03f95a",
+    "id": "01a0e6f4-b3ca-78e1-9bb7-2fd0ddd9e0d0",
     "slug": "salomon-pact-binding-2026",
     "title": "Salomon PACT 2026",
     "model": "PACT",
@@ -13343,7 +13257,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0e5dc-eee2-75b7-a627-b05a381ff0dd",
+    "id": "01a0e6f4-c9f0-7ed5-9a41-8e1772c3e185",
     "slug": "salomon-rhythm-binding-2026",
     "title": "Salomon RHYTHM 2026",
     "model": "RHYTHM",
@@ -13393,7 +13307,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce6b-79a5-90d3-ceba1bf92897",
+    "id": "01a0e6f4-dfd4-7de9-9da0-578778f26c86",
     "slug": "union-atlas-2027",
     "title": "Union Binding Company Atlas 2027",
     "model": "Atlas",
@@ -13443,7 +13357,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce7a-7505-a741-42c3d15cf78a",
+    "id": "01a0e6f4-f5bc-7c6f-a0b7-593ee5200417",
     "slug": "union-atlas-pro-2027",
     "title": "Union Binding Company Atlas Pro 2027",
     "model": "Atlas Pro",
@@ -13493,7 +13407,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce83-765f-8c76-9ec51b0524fd",
+    "id": "01a0e6f5-0b79-7554-a7b0-c0e634fabd5e",
     "slug": "union-force-2027",
     "title": "Union Binding Company Force 2027",
     "model": "Force",
@@ -13544,7 +13458,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce8d-76d5-bcbf-e4e6af517ae8",
+    "id": "01a0e6f5-2194-7cbe-b513-e729b469af24",
     "slug": "union-force-classic-2027",
     "title": "Union Binding Company Force Classic 2027",
     "model": "Force Classic",
@@ -13595,7 +13509,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-ce96-75b3-b41b-f3751624d68b",
+    "id": "01a0e6f5-37a4-74e8-90c2-8db9c32c5310",
     "slug": "union-legacy-2027",
     "title": "Union Binding Company Legacy 2027",
     "model": "Legacy",
@@ -13645,7 +13559,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cea0-7a4b-ac61-0c8030b4bd43",
+    "id": "01a0e6f5-4da0-72e7-b755-310058f33dbb",
     "slug": "union-trilogy-2027",
     "title": "Union Binding Company Trilogy 2027",
     "model": "Trilogy",
@@ -13695,7 +13609,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d171-cea9-7a46-9fa5-d612638ee6b3",
+    "id": "01a0e6f5-6422-74e2-9d34-ab0ac7cad792",
     "slug": "union-ultra-2027",
     "title": "Union Binding Company Ultra 2027",
     "model": "Ultra",
@@ -13745,7 +13659,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-83d0-740a-a5b3-61d31d44d020",
+    "id": "01a0e6f5-fed2-76ee-9fdc-2b030abb6568",
     "slug": "burton-ion-boa-2027",
     "title": "Burton Ion BOA 2027",
     "model": "Ion BOA",
@@ -13777,7 +13691,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-840a-7e13-80b4-7f16a5a87b2c",
+    "id": "01a0e6f6-1465-7a3e-915b-51e34b1632cf",
     "slug": "burton-ion-step-on-2027",
     "title": "Burton Ion Step On 2027",
     "model": "Ion Step On",
@@ -13809,7 +13723,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-841a-7249-b23d-b56b5e5dec09",
+    "id": "01a0e6f6-2a2e-780d-828b-f62cc22c6274",
     "slug": "burton-moto-boa-2027",
     "title": "Burton Moto BOA 2027",
     "model": "Moto BOA",
@@ -13841,7 +13755,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8427-7e42-a2db-502d0d990f85",
+    "id": "01a0e6f6-402b-7d08-bf49-122fc9f05f67",
     "slug": "burton-photon-boa-2027",
     "title": "Burton Photon BOA 2027",
     "model": "Photon BOA",
@@ -13873,7 +13787,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8432-7edc-90d4-ada1b7303a79",
+    "id": "01a0e6f6-563c-7e4c-b324-aa3629397f74",
     "slug": "k2-boundary-2027",
     "title": "K2 Boundary 2027",
     "model": "Boundary",
@@ -13905,7 +13819,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-843b-71b5-b1c9-cdc9c47112d1",
+    "id": "01a0e6f6-6c50-7194-8f14-728a116d88ad",
     "slug": "k2-maysis-2027",
     "title": "K2 Maysis 2027",
     "model": "Maysis",
@@ -13937,7 +13851,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8446-7a09-b10d-2d1b4073abf1",
+    "id": "01a0e6f6-820a-7386-a093-a980a655cdda",
     "slug": "k2-raider-2027",
     "title": "K2 Raider 2027",
     "model": "Raider",
@@ -13969,7 +13883,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-844e-7001-ad1a-44b051c41378",
+    "id": "01a0e6f6-97f5-7b7a-a6b1-a0d85ec19840",
     "slug": "k2-taro-tamai-snowsurfer-rs-2027",
     "title": "K2 Taro Tamai Snowsurfer RS 2027",
     "model": "Taro Tamai Snowsurfer RS",
@@ -14001,7 +13915,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8459-72f5-9d70-391b68964eba",
+    "id": "01a0e6f6-ade8-7d7b-aa1d-807c52e6435b",
     "slug": "nitro-bianca-tls-plus-2027",
     "title": "Nitro Bianca TLS+ 2027",
     "model": "Bianca TLS+",
@@ -14033,7 +13947,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8464-7f98-85cf-2b3c2d10bbd0",
+    "id": "01a0e6f6-c3c9-7068-aaa2-2bbe0396eb76",
     "slug": "nitro-sentinel-boa-2027",
     "title": "Nitro Sentinel BOA 2027",
     "model": "Sentinel BOA",
@@ -14065,7 +13979,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8470-78b0-a186-afe1ff95c313",
+    "id": "01a0e6f6-d9b9-7cde-af32-e704bd4659da",
     "slug": "nitro-sentinel-tls-2027",
     "title": "Nitro Sentinel TLS 2027",
     "model": "Sentinel TLS",
@@ -14097,7 +14011,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8479-764b-aeb8-eca97bb259a8",
+    "id": "01a0e6f6-ef9e-76fb-b51d-3876ee5d5ffc",
     "slug": "nitro-tangent-tls-2027",
     "title": "Nitro Tangent TLS 2027",
     "model": "Tangent TLS",
@@ -14129,7 +14043,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8486-7469-97e1-58ef39e8eac8",
+    "id": "01a0e6f7-058f-7854-b439-fa1606f42e9f",
     "slug": "nitro-team-boa-2027",
     "title": "Nitro Team BOA 2027",
     "model": "Team BOA",
@@ -14161,7 +14075,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8494-7b08-86a5-a208f749a552",
+    "id": "01a0e6f7-1b88-76d7-8a1a-c88ffbb08186",
     "slug": "nitro-team-pro-mk-tls-2027",
     "title": "Nitro Team Pro MK TLS 2027",
     "model": "Team Pro MK TLS",
@@ -14193,7 +14107,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-849e-7852-841c-8e0df0f15123",
+    "id": "01a0e6f7-31d8-7a2c-83ef-746ae1bf0a15",
     "slug": "nitro-team-tls-2027",
     "title": "Nitro Team TLS 2027",
     "model": "Team TLS",
@@ -14225,7 +14139,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-84a9-7a2e-97e1-191999fdf096",
+    "id": "01a0e6f7-47dc-7b63-820a-434b22584e41",
     "slug": "nitro-team-tls-wide-2027",
     "title": "Nitro Team TLS Wide 2027",
     "model": "Team TLS Wide",
@@ -14257,7 +14171,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-84b1-7f06-856f-483cf92317eb",
+    "id": "01a0e6f7-5dfe-7f4f-91cb-e87e34f3c4e6",
     "slug": "nitro-venture-boa-2027",
     "title": "Nitro Venture BOA 2027",
     "model": "Venture BOA",
@@ -14289,7 +14203,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-84ba-7d7a-bdcf-0fd2c64926b5",
+    "id": "01a0e6f7-73e1-75d3-af46-9f845e54d451",
     "slug": "nitro-venture-pro-tls-2027",
     "title": "Nitro Venture Pro TLS 2027",
     "model": "Venture Pro TLS",
@@ -14321,7 +14235,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-84c5-7e91-8145-56a5c5f8b26e",
+    "id": "01a0e6f7-8990-7851-88c5-870daf5724a2",
     "slug": "nitro-venture-step-on-tls-2027",
     "title": "Nitro Venture Step On TLS 2027",
     "model": "Venture Step On TLS",
@@ -14353,7 +14267,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-84cd-7b85-82ae-54845014f9df",
+    "id": "01a0e6f7-9f73-75e3-aa34-d7df9f992794",
     "slug": "nitro-venture-tls-2027",
     "title": "Nitro Venture TLS 2027",
     "model": "Venture TLS",
@@ -14385,7 +14299,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-84da-7e47-80e0-b68be676dfa0",
+    "id": "01a0e6f7-b517-723c-b999-8011f4fca92e",
     "slug": "salomon-dialogue-dual-boa-2027",
     "title": "Salomon Dialogue Dual BOA 2027",
     "model": "Dialogue Dual BOA",
@@ -14417,7 +14331,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-84e2-75ae-8821-4b27579ec9b9",
+    "id": "01a0e6f7-caf8-79f2-91af-0723d2f187af",
     "slug": "salomon-dialogue-dual-boa-team-2027",
     "title": "Salomon Dialogue Dual BOA Team 2027",
     "model": "Dialogue Dual BOA Team",
@@ -14449,7 +14363,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-84ec-78d7-997a-49abe216a858",
+    "id": "01a0e6f7-e0ef-7d3d-b4a0-b6c317ea1733",
     "slug": "salomon-dialogue-dual-boa-wide-2027",
     "title": "Salomon Dialogue Dual BOA Wide 2027",
     "model": "Dialogue Dual BOA Wide",
@@ -14481,7 +14395,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-84f5-755a-9e9b-fb18482cffdb",
+    "id": "01a0e6f7-f6d9-79f8-91da-7d1d2e5b4604",
     "slug": "salomon-echo-dual-boa-2027",
     "title": "Salomon Echo Dual BOA 2027",
     "model": "Echo Dual BOA",
@@ -14513,7 +14427,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-84ff-7a5e-8e71-7a744721aa6c",
+    "id": "01a0e6f8-0cfa-780b-9efc-9f9e853947da",
     "slug": "salomon-faction-boa-2027",
     "title": "Salomon Faction BOA 2027",
     "model": "Faction BOA",
@@ -14545,7 +14459,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-850a-737b-8ec9-189b0684fe5e",
+    "id": "01a0e6f8-232a-726f-b6dc-fde32c7f004a",
     "slug": "salomon-launch-boa-sj-boa-2027",
     "title": "Salomon Launch BOA SJ BOA 2027",
     "model": "Launch BOA SJ BOA",
@@ -14577,7 +14491,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8517-7d76-8654-5cdbc22c6a8e",
+    "id": "01a0e6f8-38fa-76e2-ae38-69b3f6a25127",
     "slug": "salomon-malamute-dual-boa-2027",
     "title": "Salomon Malamute Dual BOA 2027",
     "model": "Malamute Dual BOA",
@@ -14609,7 +14523,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8520-7e28-8af4-dc28f5616167",
+    "id": "01a0e6f8-4ee1-7ac3-b0fa-e4a6976e7860",
     "slug": "salomon-titan-boa-2027",
     "title": "Salomon Titan BOA 2027",
     "model": "Titan BOA",
@@ -14641,7 +14555,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-852b-751a-886d-dca65d2bbe24",
+    "id": "01a0e6f8-6504-7c9b-b814-2148e905250f",
     "slug": "salomon-trek-2027",
     "title": "Salomon Trek 2027",
     "model": "Trek",
@@ -14673,7 +14587,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0d1bf-8534-788d-a572-5dcd0f82600f",
+    "id": "01a0e6f8-7b40-7933-8e89-eb217d588aed",
     "slug": "salomon-x-approach-lace-sj-boa-2027",
     "title": "Salomon X Approach Lace SJ BOA 2027",
     "model": "X Approach Lace SJ BOA",
@@ -14705,7 +14619,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-0dd2-7d51-bb80-a6285e4252ea",
+    "id": "01a124d7-0ee5-78bf-8bb5-91b071441451",
     "slug": "amazfit-t-rex-3-pro-48mm-2026",
     "title": "T-Rex 3 PRO 五級鈦合金智慧手錶",
     "model": "T-Rex 3 Pro 48mm",
@@ -14767,7 +14681,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c87c-0073-7d8e-ac08-7f61ea98506a",
+    "id": "01a124d7-0eeb-7cf6-be78-82c36e9720c8",
     "slug": "sirui-t-1204sk-2026",
     "title": "思锐T-S系列三脚架 - 广东思锐光学股份有限公司官网",
     "model": "T-1204SK",
@@ -14827,7 +14741,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c879-0de1-7c52-b51d-cee0d9821a30",
+    "id": "01a124d7-0ef0-75e4-a883-08b054f65dc2",
     "slug": "dji-osmo-pocket-3-2023",
     "title": "Osmo Pocket 3 - 技术参数 - DJI 大疆创新",
     "model": "Osmo Pocket 3",
@@ -14863,7 +14777,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     ]
   },
   {
-    "id": "01a0c87c-008a-721e-91f5-75715e144089",
+    "id": "01a124d7-0ef6-7a8d-8b7f-2a8c2cd35bba",
     "slug": "godox-sl60iibi-2026",
     "title": "SL60IID/SL60IIBi-神牛产品-Godox神牛 - 官方网站",
     "model": "SL60IIBi",

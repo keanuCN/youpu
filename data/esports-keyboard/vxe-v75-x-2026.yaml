@@ -17,7 +17,12 @@ specs:
   hotSwap: true
   keycapMaterial: PBT Cherry/KOP Profile 键帽
   driver: ATK HUB
-images: []
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0691/4942/5882/files/ATK_V75X_Black.jpg?v=1741856682&width=1920"
+    kind: face
+    alt: ATK VXE V75 X 黑色无线机械键盘
+    source: ATK 官网产品页 JSON-LD 黑色款主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.atk.store/products/atk-vxe-v75-x-mechanical-gaming-keyboard

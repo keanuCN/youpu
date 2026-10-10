@@ -17,7 +17,12 @@ specs:
   hotSwap: true
   batteryCapacity: 4000
   driver: AULA Driver
-images: []
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0552/2803/9264/files/203A5822.jpg?v=1734921227&width=1600"
+    kind: face
+    alt: AULA F75 无线机械键盘
+    source: AULA 官网产品页 JSON-LD 主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://aulagear.com/products/aula-f75
