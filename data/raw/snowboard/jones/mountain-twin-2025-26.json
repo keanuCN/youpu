@@ -61,7 +61,7 @@
     "The official J.26 product URL currently returns 404; preserve the captured search-index evidence and recheck if Jones republishes a historical 2026 page/catalog.",
     "The exact manufacturing year of the Board of the World physical 157 sample is not stated beyond the review's 2025-26 context and its reviewer note identifying the board as 2025.",
     "No verified China-market price, dated local retail quote, or price-type metadata.",
-    "The four seed images are marked as generated placeholders; replace with licensed or original images before launch.",
+    "AI placeholder image entries have been removed from the seed; replace with licensed or original images before launch.",
     "Season-specific warranty term was not verified; existing warranty field is retained as unresolved rather than used in scoring."
   ]
 }

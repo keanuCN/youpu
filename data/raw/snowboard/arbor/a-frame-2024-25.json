@@ -55,7 +55,7 @@
   "unverified": [
     "Seed CNY 6599 local market, price type and capture date are not established; official US page's USD 649.95 regular/compare-at and USD 389.95 sale are regional dynamic values only.",
     "Seed weight 3180 g has no verified exact-size 2025 source. Snowboarding Profiles' 2880 g belongs to a 2023 158 sample and must not be transferred.",
-    "Official product gallery is visible but reuse rights are not verified; retain explicitly labelled AI placeholders until original photos or permission are available.",
+    "Official product gallery is visible but reuse rights are not verified; AI placeholder links have been removed from the seed. Keep the gallery empty until original photos or permission are available.",
     "No same-season quantified park/jib or forgiveness test, no 2025 exact-size weight, and no Chinese retail quote were found."
   ],
   "mappingNotes": [
@@ -64,5 +64,5 @@
     "Tip/tail lengths and widths are official centimeters converted to millimeters for nested sizeSpecs; 162 remains the representative middle size of the five listed sizes.",
     "All five season-specific rows are now represented in source/YAML. Taper (9 mm) remains in this raw evidence because the current snowboard nested schema has no taper field."
   ],
-  "imageRights": "Current YAML uses explicitly labelled generated placeholders. Official Arbor product photos exist, but no reuse/hosting license was verified; do not replace the placeholders with remote brand photos without permission."
+  "imageRights": "AI placeholder images have been removed from the seed. Official Arbor product photos exist, but reuse/hosting permission is not verified; do not add remote brand photos without permission."
 }

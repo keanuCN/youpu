@@ -65,7 +65,7 @@
     "construction": "Season-matched copy verifies Horsepower construction and a sintered competition-ready base; the exact core ratio and glass layup were not established from a retrievable 24/25 official source, so existing core/glass strings remain provisional.",
     "price": "Official archived listing indexed amounts $695.99 and $869.99 but the archived page is inaccessible and does not reliably expose currency/price type/capture date; CNY 5699 is left unchanged and flagged as unverified rather than converted.",
     "editorialScores": "No directly verified independent ride test on a 2024-25 physical sample with disclosed conditions was found in this pass. Snowboarding Profiles has a 2024-25-labeled archive page with an 84.1/100 composite, but its only disclosed on-snow setup is a 2021 size 155 sample tested 2022-04-07 in warm slushy conditions; treat as historical direction only. The 2025-26 Snowboarding Profiles 157 test also does not match this season. Existing six-dimensional scores remain low-confidence estimates; no external composite is mapped numerically.",
-    "images": "All four current gallery images are labeled AI placeholders. No licensed 24/25 product-photography asset has been confirmed; do not present generated art as product photography."
+    "images": "AI placeholder links have been removed from the seed. No licensed 24/25 product-photography asset has been confirmed; do not present generated art as product photography."
   },
   "scoreSourceCheck": {
     "snowboardingProfiles2024-25Archive": {
@@ -94,8 +94,8 @@
     "reasonUnverified": "No retrievable source with verified Chinese market, list/sale price type, date and season was confirmed."
   },
   "imageProvenance": {
-    "currentState": "Four AI placeholder assets, explicitly labeled in YAML source fields.",
+    "currentState": "AI placeholder assets have been removed from YAML; the product gallery is empty.",
     "licensedProductImageSource": null,
-    "action": "Leave URLs in place for now; replace with owned/original/licensed material before public release."
+    "action": "Keep the gallery empty until owned/original/licensed material is available."
   }
 }

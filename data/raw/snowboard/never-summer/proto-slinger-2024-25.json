@@ -82,9 +82,9 @@
     "siteScoreDecision": "Update six editorial scores directionally from the prior mountain-charger-like profile to stability 7, response 8.5, float 5.5, park 9, forgiveness 8; retain value 7.5 only as a provisional estimate because CNY price provenance is unknown. These remain editorial judgments, not external-score conversion; confidence is low-to-moderate, with float and value especially uncertain."
   },
   "imageProvenance": {
-    "seedImages": "AI-generated placeholder assets, not photographs of this product.",
+    "seedImages": "AI-generated placeholder entries have been removed from the canonical YAML; the product gallery is empty.",
     "officialReusePermissionVerified": false,
-    "decision": "Leave existing placeholders unchanged; do not imply product-photo authenticity."
+    "decision": "Keep the gallery empty; do not imply product-photo authenticity until licensed or original images are available."
   },
   "unverifiedSeedFields": [
     "CNY 5499 price and market/price type/date",
