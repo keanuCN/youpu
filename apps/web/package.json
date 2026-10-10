@@ -9,7 +9,8 @@
     "start": "next start -p 3000",
     "typecheck": "tsc --noEmit",
     "export:seed": "tsx scripts/export-seed-yaml.ts",
-    "export:catalog": "tsx scripts/export-catalog-snapshot.ts"
+    "export:catalog": "tsx scripts/export-catalog-snapshot.ts",
+    "audit:catalog": "tsx scripts/audit-catalog-sources.ts"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.23",
