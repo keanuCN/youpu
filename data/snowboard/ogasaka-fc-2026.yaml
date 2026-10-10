@@ -17,6 +17,7 @@ price:
   max: 5370
   currency: CNY
 specs:
+  lengthOptions: 145 / 148 / 151 / 154 / 157 / 160 / 163 / 157W / 160W / 163W
   length: 157
   effectiveEdge: 1280
   waistWidth: 249

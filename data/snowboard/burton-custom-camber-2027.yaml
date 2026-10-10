@@ -17,6 +17,7 @@ price:
   max: 679.95
   currency: USD
 specs:
+  lengthOptions: 150 / 154 / 156 / 158 / 162 / 154W / 158W / 162W / 166W / 170W
   length: 158
   waistWidth: 254
   effectiveEdge: 1215
