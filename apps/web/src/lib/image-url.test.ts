@@ -61,3 +61,36 @@ test("allows only the official RIDE and Jones snowboard image paths", () => {
   assert.equal(isAllowedImageUrl("https://cdn.media.amplience.net/s/unrelated/file.jpg"), false);
   assert.equal(isAllowedImageUrl("https://www.jonessnowboards.com/private/file.webp"), false);
 });
+
+test("allows the audited snowboard image sources only on their product asset paths", () => {
+  const auditedImages = [
+    "https://www.arbor-collective.ca/cdn/shop/files/1-ARBOR_AFRAME_2024_STUDIO_01-rec.png?v=1724274612",
+    "https://www.evo.com/cdn/shop/files/product-image-1103223.jpg?v=1767733151",
+    "https://eu.burton.com/cdn/shop/files/1068819AI2_1.webp?v=1776120991&width=2880",
+    "https://eu.burton.com/cdn/shop/files/106921CA03_1.webp?v=1776121079&width=2880",
+    "https://snowboards.com/files/store/items/lg/f/w/fw26--doa_150.jpg",
+    "https://images.blue-tomato.com/is/image/bluetomato/305258540_front.jpg-G2lrQmzSDnKgLSGW6Q13RDLjzzE/Riders+Choice+Snowboard.jpg?$b1$",
+    "https://www.jonessnowboards.com/cdn/shop/files/J.26.SNU.HVC-gallery-1.webp?v=1768452295",
+    "https://www.evo.com/cdn/shop/files/product-image-1183297.jpg?v=1767736586",
+    "https://original.accentuate.io/6939308982453/1758747603396/KORUA-Shapes-Cafe-Racer-Nicholas-Wolken-Thumbnail-01.jpg?v=1758747603396",
+    "https://www.evo.com/cdn/shop/files/product-image-1153304.jpg",
+    "https://www.evo.com/cdn/shop/files/product-image-1104917.jpg?v=1767733189",
+    "https://www.nitrosnow.ca/cdn/shop/files/22_82ac62fb-84b5-43f9-ad67-b43bfc261588.png?v=1784751877",
+    "https://www.milosport.com/cdn/shop/files/RD2510321398Large.png?v=1742933585&width=2048",
+    "https://salomon.jp/cdn/shop/files/L47924900_0_VIR_SIGHT_156.png?v=1756098039",
+  ];
+
+  for (const image of auditedImages) {
+    assert.equal(isAllowedImageUrl(image), true, image);
+    assert.equal(
+      resolveImageUrl(image, true),
+      `/api/image-proxy?url=${encodeURIComponent(image)}`,
+      image,
+    );
+  }
+
+  assert.equal(isAllowedImageUrl("https://www.evo.com/private/image.png"), false);
+  assert.equal(isAllowedImageUrl("https://snowboards.com/private/image.png"), false);
+  assert.equal(isAllowedImageUrl("https://original.accentuate.io/other-shop/file.jpg"), false);
+  assert.equal(isAllowedImageUrl("http://www.arbor-collective.ca/cdn/shop/files/image.png"), false);
+});
