@@ -4,7 +4,7 @@ brand: atomic
 model: Bent Chetler 120
 year: 2026
 title: Atomic Bent Chetler 120 2025/26
-one_liner: Atomic 粉雪自由滑旗舰型号，采用 120 mm 板腰与 HRZN 3D 板头板尾设计。
+one_liner: Atomic 粉雪自由滑旗舰型号，120 mm 板腰搭配 Powder Rocker 30/40/30 与 HRZN 3D；184 cm 单只重量 1800 g。
 price:
   min: 7998
   max: 7998
@@ -14,6 +14,14 @@ specs:
   waistWidth: 120
   turnRadius: 19
   turnRadiusReferenceLength: 184 cm
+  sidecutDimensions: "176: 142-120-133 mm / 18 m；184: 143-120-134 mm / 19 m；192: 144-120-135 mm / 20 m"
+  profile: Powder Rocker 30/40/30（板头、板尾摇臂，脚下反拱）
+  core: Light Woodcore（杨木）
+  construction: Dura Cap Sidewall
+  technologies: HRZN 3D Bent；Directional Shape；Glossy Topsheet
+  weightPerSki: 1800
+  baseEdgeAngle: 1.0
+  sideEdgeAngle: 87
   terrain: 粉雪 / 全山地自由滑
   skierLevel: 进阶至专家
   bindingSetup: 裸板，不含固定器

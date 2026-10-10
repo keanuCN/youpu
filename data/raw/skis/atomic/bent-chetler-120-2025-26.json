@@ -1,0 +1,43 @@
+{
+  "brand": "Atomic",
+  "model": "Bent Chetler 120",
+  "season": "2025-26",
+  "retrievedAt": "2026-10-10",
+  "seedFile": "data/skis/atomic-bent-chetler-120-2026.yaml",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.atomic.com/en-us/products/bent-chetler-120-aa7364-202600",
+      "evidence": "Official page confirms lengths 176, 184 and 192 cm; Powder Rocker 30/40/30; HRZN 3D Bent, directional shape, Light Woodcore (poplar), Dura Cap Sidewall, 87 degree side edge and 1.0 degree base edge."
+    },
+    "officialJapanSeasonGuide": {
+      "url": "https://atomicsnow.jp/pages/2526-freeride-skiandboots",
+      "evidence": "Atomic Japan's 25/26 season page publishes the per-length sidecut radii (18/19/20 m) and the 184 cm dimensions (143-120-134 mm)."
+    },
+    "officialSeasonCatalogCopy": {
+      "url": "https://www.tanabesports.jp/ts/wp-content/uploads/2025/03/25-26_ATOMIC_USER.pdf",
+      "host": "Tanabe Sports (official Atomic catalog copy hosted by retailer)",
+      "evidence": "The 25/26 catalog table lists per-length dimensions: 176 (142/120/133 mm), 184 (143/120/134 mm), and 192 (144/120/135 mm); radii 18/19/20 m; Powder Rocker 30/40/30; weight 1800 g at 184 cm.",
+      "limitations": "Third-party-hosted catalog PDF; used only to preserve the manufacturer catalog data. Product page independently confirms the model technologies and edge angles."
+    }
+  },
+  "lengthSpecs": [
+    {"lengthCm":176,"tipMm":142,"waistMm":120,"tailMm":133,"turnRadiusM":18},
+    {"lengthCm":184,"tipMm":143,"waistMm":120,"tailMm":134,"turnRadiusM":19},
+    {"lengthCm":192,"tipMm":144,"waistMm":120,"tailMm":135,"turnRadiusM":20}
+  ],
+  "sharedSpecifications": {
+    "rockerCamber": "Powder Rocker 30/40/30",
+    "core": "Light Woodcore (poplar)",
+    "construction": "Dura Cap Sidewall",
+    "weightPerSki": {"grams":1800,"referenceLengthCm":184},
+    "baseEdgeAngleDeg":1.0,
+    "sideEdgeAngleDeg":87,
+    "technologies":["HRZN 3D Bent","Directional Shape","Glossy Topsheet"]
+  },
+  "mappingNotes": [
+    "turnRadius uses the manufacturer's 184 cm reference size; per-length values are additionally retained in sidecutDimensions.",
+    "Weight is only stated for 184 cm and is not imputed for the 176 or 192 cm sizes.",
+    "The current image source is a retailer listing; no explicit reuse license has been verified."
+  ],
+  "imageRights": "Retailer image is a reference only; no explicit reuse license verified."
+}
