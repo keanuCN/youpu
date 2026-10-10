@@ -2803,7 +2803,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 199,
     "priceMax": 199,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.rapoo-eu.com/wp-content/uploads/2020/08/1514278395-9465-600x388.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,

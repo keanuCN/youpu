@@ -16,7 +16,12 @@ specs:
     - wired
   backlight: 混彩背光
   caseMaterial: 磨砂金属上盖
-images: []
+images:
+  - url: https://www.rapoo-eu.com/wp-content/uploads/2020/08/1514278395-9465-600x388.webp
+    kind: face
+    alt: Rapoo V500 Pro 背光机械键盘
+    source: Rapoo 欧洲官方商品页主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.rapoo.cn/product/87
