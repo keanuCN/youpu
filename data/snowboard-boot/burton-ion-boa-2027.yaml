@@ -6,7 +6,15 @@ year: 2027
 title: "Burton Ion BOA 2027"
 one_liner: "官方档案型号；双区高功率 BOA。尺码与脚感以实际试穿为准。"
 specs:
-  lacingSystem: "双区高功率 BOA"
+  lacingSystem: "Dual Zone High Power Focus BOA：上下双区独立调节"
+  flex: "硬朗支撑（Burton 官方标注 Stiff & Aggressive）"
+  fit: "Regular 常规宽度"
+  liner: "Life Liner"
+  innerCuff: "Tuff Cuff Lite"
+  outsole: "Autocant 外底；Burton 再生含量橡胶"
+  warmthFeatures: "DRYRIDE Heat Cycle 内衬"
+  sizeGuide: "官方男款尺码表覆盖 US 6–15、EU 38–48、UK 5–14、Mondo 24–33；半码对应以商品页逐码表为准"
+  bindingCompatibility: "普通固定器兼容；非 Step On 专用款"
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791

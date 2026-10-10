@@ -6,8 +6,15 @@ year: 2027
 title: "Burton Ion Step On 2027"
 one_liner: "官方档案型号；Speed Zone 系带与可调 BOA 压紧带，Step On 系统需配专用固定器。尺码与脚感以实际试穿为准。"
 specs:
-  lacingSystem: Speed Zone + BOA 压紧带
-  bindingCompatibility: 仅与 Step On 固定器兼容
+  lacingSystem: "Speed Zone 快速系带 + BOA 可调压紧带"
+  flex: "硬朗（Burton 官方标注 Stiff & Aggressive）"
+  fit: "Regular/Wide 宽度可选"
+  liner: "Life Liner"
+  innerCuff: "Tuff Cuff Lite"
+  outsole: "Vibram Traction Lug 外底，Vibram EcoStep 橡胶；Step On 前掌连接卡齿"
+  warmthFeatures: "Sleeping Bag 反射隔热膜"
+  sizeGuide: "官方男款尺码表覆盖 US 6–15、EU 38–48、UK 5–14、Mondo 24–33；当前页面尺码范围 US 7–13，半码对应以商品页逐码表为准"
+  bindingCompatibility: "仅兼容 Burton Step On 固定器；不可与普通绑带固定器搭配"
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191

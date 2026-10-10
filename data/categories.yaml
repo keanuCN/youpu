@@ -535,6 +535,45 @@
         compare: true
         compareDirection: context
         order: 40
+      - key: liner
+        label: 鞋胆
+        group: 穿脱与贴合
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 35
+      - key: innerCuff
+        label: 内靴/脚踝支撑
+        group: 穿脱与贴合
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 36
+      - key: outsole
+        label: 外底
+        group: 结构与保暖
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 55
+      - key: warmthFeatures
+        label: 保暖技术
+        group: 结构与保暖
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 56
+      - key: sizeGuide
+        label: 官方尺码信息
+        group: 兼容性
+        type: text
+        filter: false
+        compare: false
+        order: 60
       - key: terrain
         label: 适用场景
         group: 使用取向
