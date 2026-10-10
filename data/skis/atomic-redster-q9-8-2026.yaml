@@ -18,4 +18,4 @@ images:
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/collections/ato-men-skis-all-skis
-status: published
+status: draft
