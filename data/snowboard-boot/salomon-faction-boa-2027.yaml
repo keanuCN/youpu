@@ -4,9 +4,15 @@ brand: salomon
 model: "Faction BOA"
 year: 2027
 title: "Salomon Faction BOA 2027"
-one_liner: "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。"
+one_liner: "新手进阶全山地雪鞋，柔软脚感、单 BOA 系带与轻量 Feather 1.0 外底。"
 specs:
-  lacingSystem: "BOA 系带"
+  lacingSystem: "单 BOA Coiler 系带，H4 Coiler 快速收线，TX3 纺织鞋带"
+  flex: "柔软（Salomon 官方分类）"
+  fit: "标准宽度；全山地定位，官方适用等级为新手/中级"
+  liner: "Universal 热塑鞋胆，Full Custom Fit 多密度泡棉"
+  outsole: "Feather 1.0 轻量外底：EVA 与 Contagrip 橡胶组合，吸震并提供抓地"
+  footbed: "Imprint 舒适鞋垫"
+  sizeGuide: "官方男款页面尺码 US 7–13.5"
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/faction-boa-li9008

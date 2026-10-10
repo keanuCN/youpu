@@ -4,9 +4,17 @@ brand: salomon
 model: "Malamute Dual BOA"
 year: 2027
 title: "Salomon Malamute Dual BOA 2027"
-one_liner: "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。"
+one_liner: "偏硬自由滑雪鞋，Power Frame 强化鞋身、可选 Dyna Flex 舌片与 MTN GOAT 外底。"
 specs:
-  lacingSystem: "双区 BOA"
+  lacingSystem: "Dual Zone BOA 双区调节：上区控制支撑与弯曲感，下区锁定前掌"
+  flex: "偏硬（Salomon 官方分类）；可选 Dyna Flex 舌片加强支撑"
+  fit: "标准宽度；自由滑定位，适合进阶/高阶"
+  liner: "Precision 全热塑鞋胆，泡棉踝部包裹与 Precision Harness 2.0"
+  innerCuff: "Precision Harness 2.0 锁定脚跟与踝部；Power Frame RPU 鞋身强化"
+  outsole: "MTN GOAT 橡胶外底，含 30% 天然橡胶；Fuze Surge 中底"
+  warmthFeatures: "78% 再生 3M Thinsulate 保暖材料；Fuze Surge 中底"
+  footbed: "Relief 羊毛鞋垫（100% 天然羊毛、86% 再生泡棉）；Quickdry 快干结构"
+  sizeGuide: "官方男款页面尺码 US 6–13.5"
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/malamute-dual-boa-li8071
