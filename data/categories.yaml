@@ -26,6 +26,14 @@
   spec_schema:
     fields:
       # ── 尺寸与形状 ──
+      - key: lengthOptions
+        label: 板长选项
+        group: 尺寸与形状
+        type: text
+        filter: false
+        compare: false
+        order: 5
+
       - key: length
         label: 长度
         group: 尺寸与形状

@@ -498,6 +498,7 @@ export const SNOWBOARD: Category = {
     {
       group: "尺寸与形状",
       fields: [
+        { key: "lengthOptions", label: "板长选项", type: "text", direction: null },
         { key: "length", label: "长度", unit: "cm", type: "number", direction: null },
         { key: "effectiveEdge", label: "有效边刃", unit: "mm", type: "number", direction: "higher" },
         { key: "sidecut", label: "侧切半径", unit: "m", type: "number", direction: null },
