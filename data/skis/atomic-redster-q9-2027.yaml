@@ -1,0 +1,34 @@
+slug: atomic-redster-q9-2027
+category: skis
+brand: atomic
+model: Redster Q9 Revoshock S
+year: 2027
+title: Atomic Redster Q9 Revoshock S 2026/27
+one_liner: 全地域雪道竞速取向系统板；174 cm 半径 14.2 m，单支含固定器重量 3189 g。
+specs:
+  lengthOptions: 153 / 160 / 167 / 174 / 181 cm
+  waistWidth: 75
+  turnRadius: 14.2
+  turnRadiusReferenceLength: 174 cm
+  sidecutDimensions: "153 cm: 121-75-106 mm / 11.8 m；160 cm: 123-75-107.5 mm / 12.6 m；167 cm: 125-75-109 mm / 13.4 m；174 cm: 127-75-110.5 mm / 14.2 m；181 cm: 129-75-112 mm / 15 m"
+  profile: Active Camber 0/100/0
+  core: Power Woodcore（白蜡木与杨木）
+  construction: Ultrawall 全侧墙结构
+  technologies: Revoshock S；Carbon Boost；All-Condition Piste Shape；Structured Topsheet；World Cup Base Finish；Tip Protector；Icon Flex Interface
+  weightPerSki: 3189
+  weightReferenceLength: 174 cm
+  baseEdgeAngle: 0.8
+  sideEdgeAngle: 87
+  terrain: 雪道 / 全地域
+  skierLevel: 进阶至专家
+  bindingSetup: 含 I 12 GW 固定器
+images:
+  - url: "https://cdn.amersports.com/0acef4a9-61b7-47b0-84f4-b49f00cdfc5f/ATP_AASS03784_0_GHO_Redster_Q9_I12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445"
+    kind: face
+    alt: Atomic Redster Q9 Revoshock S 2026/27 官方雪板套装图
+    source: Atomic 官方产品页（图片使用授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.atomic.com/en-us/products/redster-q9-revoshock-s-i-12-gw-aa7469-202600
+status: published

@@ -1,0 +1,34 @@
+{
+  "brand": "Atomic",
+  "model": "Redster Q9 Revoshock S + I 12 GW",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-10",
+  "seedFile": "data/skis/atomic-redster-q9-2027.yaml",
+  "officialProductPage": {
+    "url": "https://www.atomic.com/en-us/products/redster-q9-revoshock-s-i-12-gw-aa7469-202600",
+    "evidence": "Atomic's official page lists SKU AASS03784+, sizes 153/160/167/174/181 cm, per-size turn radius and tip/waist/tail geometry, Active Camber 0/100/0, 0.8° base edge, 87° side edge, advanced/expert positioning, Power Woodcore (ash and poplar), Ultrawall full sidewall construction, Revoshock S, Carbon Boost, All-Condition Piste Shape, structured topsheet, World Cup Base Finish, Tip Protector, and I 12 GW binding bundle. The datasheet explicitly labels weight per ski and reports 3189 g at 174 cm.",
+    "seasonEvidence": "The product URL ends in the 202600 model identifier and Atomic currently lists lengths 153/160/167/174/181 for this SKU; retailer season listings identify this specification set as 2026/27. The previous seed called the same image/SKU 2025/26 and is retired to draft pending separate verification of an actual prior-season item."
+  },
+  "specifications": {
+    "lengthSpecs": [
+      {"lengthCm":153,"tipMm":121,"waistMm":75,"tailMm":106,"turnRadiusM":11.8},
+      {"lengthCm":160,"tipMm":123,"waistMm":75,"tailMm":107.5,"turnRadiusM":12.6},
+      {"lengthCm":167,"tipMm":125,"waistMm":75,"tailMm":109,"turnRadiusM":13.4},
+      {"lengthCm":174,"tipMm":127,"waistMm":75,"tailMm":110.5,"turnRadiusM":14.2},
+      {"lengthCm":181,"tipMm":129,"waistMm":75,"tailMm":112,"turnRadiusM":15}
+    ],
+    "weightPerSkiG": {"value":3189,"referenceLengthCm":174},
+    "baseEdgeAngleDeg":0.8,
+    "sideEdgeAngleDeg":87,
+    "profile":"Active Camber 0/100/0",
+    "core":"Power Woodcore (ash and poplar)",
+    "construction":"Ultrawall full sidewall",
+    "technology":["Revoshock S","Carbon Boost","All-Condition Piste Shape","Structured Topsheet","World Cup Base Finish","Tip Protector","Icon Flex Interface"],
+    "binding":"I 12 GW"
+  },
+  "mappingNotes": [
+    "3189 g is Atomic's stated per-ski weight for the 174 cm configuration; it is not a pair weight. The record is a ski-and-binding set.",
+    "Length-specific geometry and radius values are all retained in the seed sidecutDimensions string."
+  ],
+  "imageRights": "The official product image URL is a source reference only; no explicit reuse license verified."
+}
