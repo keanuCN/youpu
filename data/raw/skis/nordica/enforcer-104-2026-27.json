@@ -1,0 +1,29 @@
+{
+  "brand": "Nordica",
+  "model": "Enforcer 104",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-10",
+  "seedFile": "data/skis/nordica-enforcer-104-2027.yaml",
+  "officialProductPage": {
+    "url": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-104-flat",
+    "evidence": "Nordica's 2026/27 page confirms 167/173/179/185/191 cm lengths and 17.5/18/18.5/19/19.5 m radii; 104 mm waist; 167 cm sidecut 132.5-104-122.5 mm; 191 cm sidecut 137.5-104-127.5 mm; pair weight 4660 g at 191 cm; Performance Wood + Metal + Sidewall + Pulse Core; 2 Ti Pulse Core; All Mountain rocker; True Tip and Unlocked Tail Shape; factory base/side angles 0.9/87.5 degrees.",
+    "limitations": "Full sidecut dimensions are exposed on the page for 167 and 191 cm; other lengths are not interpolated. Pair weight is shown for 191 cm only."
+  },
+  "specifications": {
+    "lengthsCm":[167,173,179,185,191],
+    "radiiM":[17.5,18,18.5,19,19.5],
+    "sidecutMm":{"167":[132.5,104,122.5],"191":[137.5,104,127.5]},
+    "pairWeightG":{"value":4660,"referenceLengthCm":191},
+    "factoryBaseAngleDeg":0.9,
+    "factorySideAngleDeg":87.5,
+    "construction":"2 Ti Pulse Core",
+    "coreAndMaterials":"Performance Wood + Metal + Sidewall + Pulse Core",
+    "rocker":"All Mountain",
+    "technologies":["True Tip","Unlocked Tail Shape"]
+  },
+  "mappingNotes":[
+    "The seed's turnRadius uses the official page's selected 167 cm reference; all five length/radius pairs are included in sidecutDimensions.",
+    "4660 g is a pair specification and remains explicitly paired with the 191 cm reference length."
+  ],
+  "imageRights":"Official product image is a reference only; no explicit reuse license verified."
+}

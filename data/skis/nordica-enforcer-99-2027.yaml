@@ -4,9 +4,21 @@ brand: nordica
 model: Enforcer 99
 year: 2027
 title: Nordica Enforcer 99 2026/27
-one_liner: Enforcer 系列全山地型号，2026/27 官方产品页标注木芯与 Pulse Core 结构。
+one_liner: 26/27 全山地宽腰型号，双层钛金属与 Pulse Core 结构；官方列出 167–191 cm 五种长度。
 specs:
+  lengthOptions: 167 / 173 / 179 / 185 / 191 cm
   waistWidth: 99
+  turnRadius: 17
+  turnRadiusReferenceLength: 167 cm
+  sidecutDimensions: "167 cm: 129-99-117 mm；191 cm: 134-99-122 mm（官方展示尺寸）；半径：167/17、173/17.5、179/18、185/18.5、191/19 m"
+  profile: All Mountain Rocker（板头、板尾摇臂）
+  core: Performance Wood + Pulse Core
+  construction: 2 Ti Pulse Core；金属夹层与侧墙结构
+  technologies: True Tip；Unlocked Tail Shape
+  weightPerPair: 4540
+  weightReferenceLength: 191 cm
+  baseEdgeAngle: 0.9
+  sideEdgeAngle: 87.5
   terrain: 全山地
   skierLevel: 进阶
   bindingSetup: 裸板，固定器另配

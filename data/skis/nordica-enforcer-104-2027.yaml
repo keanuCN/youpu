@@ -4,9 +4,21 @@ brand: nordica
 model: Enforcer 104
 year: 2027
 title: Nordica Enforcer 104 2026/27
-one_liner: Nordica 2026/27 Enforcer 全山地系列，官方新季目录在售。
+one_liner: 26/27 Enforcer 系列最宽的全山地型号，面向粉雪与多变雪况；双层钛金属与 Pulse Core 提供稳定支撑。
 specs:
+  lengthOptions: 167 / 173 / 179 / 185 / 191 cm
   waistWidth: 104
+  turnRadius: 17.5
+  turnRadiusReferenceLength: 167 cm
+  sidecutDimensions: "167 cm: 132.5-104-122.5 mm；191 cm: 137.5-104-127.5 mm（官方展示尺寸）；半径：167/17.5、173/18、179/18.5、185/19、191/19.5 m"
+  profile: All Mountain Rocker（板头、板尾摇臂）
+  core: Performance Wood + Pulse Core
+  construction: 2 Ti Pulse Core；金属夹层与侧墙结构
+  technologies: True Tip；Unlocked Tail Shape
+  weightPerPair: 4660
+  weightReferenceLength: 191 cm
+  baseEdgeAngle: 0.9
+  sideEdgeAngle: 87.5
   terrain: 全山地 / 自由滑
   skierLevel: 进阶
   bindingSetup: 裸板，固定器另配
