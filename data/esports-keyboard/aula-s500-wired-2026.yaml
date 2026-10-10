@@ -11,7 +11,12 @@ specs:
     - wired
   backlight: 分区 RGB 背光
   caseMaterial: 金属磨砂面板
-images: []
+images:
+  - url: https://www.aulastar.com/uploads/allimg/20250725/1-250H51FF6414.jpg
+    kind: face
+    alt: AULA S500 有线机械键盘
+    source: AULA 官方商品页 S500 图 1；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.aulastar.com/mechanical-keyboard/467.html

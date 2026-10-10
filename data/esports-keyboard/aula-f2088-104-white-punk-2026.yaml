@@ -10,7 +10,12 @@ specs:
   connection:
     - wired
   backlight: 混彩背光
-images: []
+images:
+  - url: https://www.aulastar.com/uploads/allimg/20231018/1-23101Q01251155.jpg
+    kind: face
+    alt: AULA F2088 104 键白色朋克版机械键盘
+    source: AULA 官方商品页标注的 F2088 白色朋克版主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.aulastar.com/mechanical-keyboard/37.html
