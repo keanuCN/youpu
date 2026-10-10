@@ -12,6 +12,12 @@ specs:
   innerCuff: "Fast-In 内靴系带与内外 J-Bar 脚踝支撑"
   outsole: "RollSole 外底，支持脚部内侧活动"
   sizeGuide: "官方男款可选 US 6–15；K2 官方换算表列有 US、EU、UK 与 CM 对照，具体半码映射见商品页尺码表"
+images:
+  - url: "https://cdn.media.amplience.net/s/k2/k2_2627_raider_KB261667?w=1200&qlt=90&fmt=auto"
+    kind: face
+    alt: K2 Raider 2027 官方雪鞋商品图
+    source: K2 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/raider-mens-snowboard-boots-kb261667?color=sand
