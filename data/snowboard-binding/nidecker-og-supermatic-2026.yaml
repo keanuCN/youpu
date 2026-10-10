@@ -7,7 +7,18 @@ title: "Nidecker OG Supermatic 2026"
 one_liner: "后入式快速穿脱固定器，可在需要时按传统绑带方式使用。"
 specs:
   entrySystem: rear-entry
-  bootCompatibility: "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋"
+  flexFeel: mid-stiff
+  mountingSystem: "Nidecker Offset Multi-Disk；兼容四孔安装与 Burton Channel"
+  bootCompatibility: "Drop IN 后入式快穿，官方称适配几乎所有品牌/型号雪鞋，不需专用靴"
+  bindingSizeGuide: "官方 EU 码：S 35.5–37.5 / M 37.5–41 / L 41.5–44 / XL 44.5–47"
+  baseplateMaterial: "Nylon+ Auto 玻纤增强尼龙底盘（30% 玻纤/70% 尼龙），带摇臂边角"
+  ankleStrap: "Exo-Frame Hybrid AuxTech 框架与 ExoSpines 结构，均匀分散压力"
+  toeStrap: "Hexo Toecap AuxTech 3D 伸展式脚趾带"
+  buckles: "LSR 2.0 Auto-Lock 双向自动锁止棘轮"
+  highback: "Nylon+ Ultraback，玻纤增强尼龙（30% 玻纤/70% 尼龙）"
+  highbackAdjustment: "一体式前倾角调节；后仰高背可触发 Drop IN 踩入机构与 Active Strap"
+  cushioning: "BankBeds 2.5° 倾斜接触面；Slip-N-Grip 降低鞋底滑入摩擦"
+  warranty: "Nidecker 官方 2+1 年保修"
 data_source:
   kind: official
   origin_url: https://eu.nidecker.com/en-int/products/og-supermatic-2026

@@ -7,8 +7,19 @@ title: "Nidecker LT Supermatic 2026"
 one_liner: "Supermatic 轻量快速穿脱系列，侧重支撑、响应与快速进出。"
 specs:
   entrySystem: rear-entry
-  bootCompatibility: "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋"
+  flexFeel: stiff
+  mountingSystem: "Nidecker Offset Multi-Disk；兼容四孔安装与 Burton Channel"
+  bootCompatibility: "Drop IN 后入式快穿，官方称适配任意品牌雪鞋，不需专用靴"
+  bindingSizeGuide: "官方男款 US 码：M 5.5–8 / L 8.5–10.5 / XL 11–13"
+  baseplateMaterial: "Nylon+ Auto 玻纤增强尼龙底盘（30% 玻纤/70% 尼龙）"
+  ankleStrap: "Exo-Frame S Hybrid 单件 TPU 低轮廓脚踝带，轻量并便于鞋靴滑入"
+  toeStrap: "Hexo Toecap 2.0 3D 包角脚趾带，可左右脚互换微调贴合"
+  buckles: "LSR 2.0 Auto-Lock 双向自动锁止棘轮"
+  highback: "Nylon+ S Ultraback 玻纤增强尼龙高背（30% 玻纤/70% 尼龙），增加侧向支撑并内置快穿导向筋"
+  highbackAdjustment: "后仰高背触发 Drop IN 踩入机构与 Active Strap，前倾角调节"
+  cushioning: "BankBeds 2.5° 倾斜接触面；Slip-N-Grip 降低鞋底滑入摩擦"
+  warranty: "Nidecker 官方 2+1 年保修"
 data_source:
   kind: official
-  origin_url: https://eu.nidecker.com/es-int/products/lt-supermatic-2026
+  origin_url: https://www.nidecker.com/products/lt-supermatic-2026
 status: published

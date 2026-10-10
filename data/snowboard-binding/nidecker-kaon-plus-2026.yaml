@@ -7,8 +7,18 @@ title: "Nidecker Kaon Plus 2026"
 one_liner: "中硬度双绑带全能款，配备 Multi-Disk 与无工具绑带调节。"
 specs:
   entrySystem: strap
-  bootCompatibility: "Multi-Disk 兼容常见 4 孔与 Channel；普通绑带雪鞋"
+  flexFeel: mid-stiff
+  mountingSystem: "Offset Multi-Disk；兼容四孔安装与 Burton Channel"
+  bootCompatibility: "常规双绑带，可适配普通雪鞋；官方尺码 S/M/L/XL"
+  bindingSizeGuide: "官方 EU 靴码：S 35–36 / M 37–41 / L 41.5–44.5 / XL 45–49.5"
+  baseplateMaterial: "Nylon+ Axis Kush Unibase（30% 玻纤/70% 尼龙），带固定后跟杯与摇臂边角"
+  ankleStrap: "Exo-Kush 双层脚踝带：EVA 缓冲层与支撑骨架组合"
+  toeStrap: "Hexo Toecap 2.0 AuxTech 3D 包角脚趾带，可左右脚互换"
+  buckles: "Aluminium Axion 铣削铝合金棘轮"
+  highback: "Nylon Meson Pro 非对称尼龙高背，强化脚跟侧支撑与能量传递"
+  cushioning: "BankBeds 2.5° 倾斜接触面；底盘摇臂边角帮助保留板面自然弯曲"
+  warranty: "Nidecker 官方 2+1 年保修"
 data_source:
   kind: official
-  origin_url: https://eu.nidecker.com/de-int/products/kaon-plus
+  origin_url: https://eu.nidecker.com/products/kaon-plus
 status: published
