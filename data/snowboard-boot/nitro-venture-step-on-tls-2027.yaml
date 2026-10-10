@@ -4,10 +4,18 @@ brand: nitro
 model: "Venture Step On TLS"
 year: 2027
 title: "Nitro Venture Step On TLS 2027"
-one_liner: "官方档案型号；TLS 系带，Step On 系统需配专用固定器。尺码与脚感以实际试穿为准。"
+one_liner: "Step On 专用全山地雪鞋，TLS 双区系带、可调踝带与 Cloud 6 鞋胆。"
 specs:
-  lacingSystem: TLS 系带
-  bindingCompatibility: 仅与 Step On 固定器兼容
+  lacingSystem: "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱；另有 BOA 可调踝带"
+  flex: "支撑感可调；官方未给数值硬度等级"
+  fit: "全山地多用途定位；ILS 内靴固定系统与 Armored Spine 后跟加固"
+  bindingCompatibility: "仅与 Burton/Nitro Step On 固定器兼容；不可用于传统绑带式固定器"
+  liner: "Cloud 6 热塑鞋胆，支持热塑定型、Re/Lace 锁定、3D 鞋舌与后跟结构、Response ExoFrame、记忆垫和 Flex Toe"
+  innerCuff: "ILS 内靴固定系统、Armored Spine 3D 后跟加固及 BOA 可调踝带"
+  outsole: "Nitro Step On 专用高抓地耐磨橡胶外底，配 EVA 中底；部分配色再生橡胶最高占 3%"
+  warmthFeatures: "EVA 中底提供缓震与隔热"
+  footbed: "Ortholite High Cup 鞋垫"
+  sizeGuide: "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13"
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-step-on-tls-boots

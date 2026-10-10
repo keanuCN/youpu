@@ -4,9 +4,17 @@ brand: nitro
 model: "Venture Pro TLS"
 year: 2027
 title: "Nitro Venture Pro TLS 2027"
-one_liner: "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。"
+one_liner: "中等硬度全山地雪鞋，TLS 双区系带、Vibram ECOSTEP 外底与 Cloud 6 鞋胆。"
 specs:
-  lacingSystem: "TLS 系带"
+  lacingSystem: "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱"
+  flex: "中等硬度（Nitro 官方描述，未公布数值等级）"
+  fit: "标准版型；官方另有 Wide 宽版型号"
+  liner: "Cloud 6 热塑鞋胆，支持热塑定型、Re/Lace 锁定、3D 鞋舌与后跟结构、Response ExoFrame、记忆垫和 Flex Toe"
+  innerCuff: "ILS 内靴固定系统与 3D 后跟结构"
+  outsole: "Vibram ECOSTEP 橡胶外底，含最高 3% 再生橡胶"
+  warmthFeatures: "EVA 中底提供隔热与缓震；Speed Gaiter 防雪防潮"
+  footbed: "Ortholite High Cup Dual Density 双密度鞋垫"
+  sizeGuide: "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13"
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-pro-tls-boots

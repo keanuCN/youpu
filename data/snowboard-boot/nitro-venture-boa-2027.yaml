@@ -4,9 +4,15 @@ brand: nitro
 model: "Venture BOA"
 year: 2027
 title: "Nitro Venture BOA 2027"
-one_liner: "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。"
+one_liner: "全山地雪鞋，双 BOA 调节、Cloud 6 热塑鞋胆与 EVA 外底。"
 specs:
-  lacingSystem: "BOA 系带"
+  lacingSystem: "Dual BOA Fit System：M+2 平台与 H4 Coiler 双区调节"
+  fit: "全山地多用途定位；ILS 内靴固定系统帮助减少脚跟滑动"
+  liner: "Cloud 6 热塑鞋胆，支持热塑定型、Re/Lace 锁定、3D 鞋舌与后跟结构、Response ExoFrame、记忆垫和 Flex Toe"
+  innerCuff: "ILS 内靴固定系统；3D 后跟结构与 Response ExoFrame 提供脚跟锁定和支撑"
+  outsole: "EVA 外底，配局部橡胶耐磨/抓地补强；部分配色再生橡胶最高占 3%"
+  footbed: "Ortholite High Cup 鞋垫；高回弹缓震"
+  sizeGuide: "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13"
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-boa-boots
