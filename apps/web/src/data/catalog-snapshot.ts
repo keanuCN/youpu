@@ -2307,7 +2307,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://media.dareu.com/dareu/images/sha256/bf/bf19fe6434c0eb1921a5fb6a02eba5d8bf85537c1e7b834e668466c83850175b.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,

@@ -15,7 +15,12 @@ specs:
   hotSwap: true
   backlight: RGB 背光
   batteryCapacity: 8000
-images: []
+images:
+  - url: https://media.dareu.com/dareu/images/sha256/bf/bf19fe6434c0eb1921a5fb6a02eba5d8bf85537c1e7b834e668466c83850175b.webp
+    kind: face
+    alt: 达尔优 A98 专业版三模机械键盘
+    source: 达尔优官方 A98 专业版商品页主图（页面列出 RT 机械轴选项）；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.ithome.com/0/926/211.htm
