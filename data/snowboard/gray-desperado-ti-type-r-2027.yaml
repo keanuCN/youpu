@@ -17,6 +17,7 @@ price:
   max: 8872
   currency: CNY
 specs:
+  lengthOptions: 154 IIIn / 155 III / 156 IIIw / 159 IV / 160 IVw / 166 Vw / 167 Vew / 172 VI / 173 VIew / 178 VII / 179 VIIew
   length: 167
   shape: Directional Hammerhead / TripleRadius
   profile: Vario Camber
