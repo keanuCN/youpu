@@ -10,6 +10,13 @@
       "evidence": "Retail listing identifies the 26/27 DR as directional with a broad nose, 50 mm setback, nose rocker, and three nose/tail outline variants. These are product-positioning/spec claims rather than test results.",
       "limitations": "Retail listing, not manufacturer technical documentation; no directly confirmed 26/27 test sample found."
     },
+    "exactSeasonSizeTable": {
+      "url": "https://item.rakuten.co.jp/fujiswat/202603041/",
+      "retrievedAt": "2026-10-10",
+      "host": "Fujisports / SWAT official Rakuten store",
+      "evidence": "Exact 26/27 DR page lists seven sizes (148, 154, 157, 161, 162, 155W, 162W), effective edge, waist width, and five sidecut radii; separately corroborated by Moriyama Sports' 2026/27 lineup.",
+      "limitations": "Retailer specification listing; does not disclose board weight or complete stance-range table."
+    },
     "officialDemoList2025-26": {
       "url": "https://www.bc-stream.com/wp/wp-content/uploads/6e270f110d2d98534d9b01d3bfccd288.pdf",
       "retrievedAt": "2026-10-02",
@@ -42,9 +49,9 @@
     "confidence": "Low for all dimensions. Historical DR review is meaningful directional evidence but does not test the 26/27 variant; no external rating is numerically mapped."
   },
   "unresolved": [
-    "No independent 26/27 ride test located.",
+    "No independent 26/27 ride test located; size geometry now transcribed from the exact-season retailer table.",
     "Seed does not specify which of the three 26/27 DR outline variants its scores represent.",
-    "No China-market price; no verified representative-size geometry/weight or image reuse authorization in this evidence batch.",
+    "No China-market price; board weight and image reuse authorization remain unverified.",
     "Historical full-season review omits exact days, rider anthropometrics, bindings, and snow-depth measurements."
   ]
 }

@@ -17,6 +17,10 @@ price:
   max: 5505
   currency: CNY
 specs:
+  length: 157
+  effectiveEdge: 1190
+  waistWidth: 260
+  sidecutRadii: 8.8 / 8.5 / 8.2 / 8.8 / 9.4 m
   stanceSetback: 50
   shape: Directional
   profile: Nose Rocker / Variable Camber
@@ -25,6 +29,14 @@ specs:
     - all-mountain
     - powder
     - carving
+  sizeSpecs:
+    - {size: "148", overallLength: 1480, effectiveEdge: 1090, waistWidth: 246, sidecutRadii: "8.2 / 7.9 / 7.6 / 8.2 / 8.8 m"}
+    - {size: "154", overallLength: 1540, effectiveEdge: 1150, waistWidth: 258, sidecutRadii: "8.6 / 8.3 / 8.0 / 8.6 / 9.2 m"}
+    - {size: "157", overallLength: 1570, effectiveEdge: 1190, waistWidth: 260, sidecutRadii: "8.8 / 8.5 / 8.2 / 8.8 / 9.4 m"}
+    - {size: "161", overallLength: 1610, effectiveEdge: 1220, waistWidth: 260, sidecutRadii: "9.0 / 8.7 / 8.4 / 9.0 / 9.6 m"}
+    - {size: "162", overallLength: 1620, effectiveEdge: 1220, waistWidth: 260, sidecutRadii: "9.0 / 8.7 / 8.4 / 9.0 / 9.6 m"}
+    - {size: "155W", overallLength: 1550, effectiveEdge: 1150, waistWidth: 272, sidecutRadii: "8.6 / 8.3 / 8.0 / 8.6 / 9.2 m"}
+    - {size: "162W", overallLength: 1620, effectiveEdge: 1220, waistWidth: 270, sidecutRadii: "9.0 / 8.7 / 8.4 / 9.0 / 9.6 m"}
 images:
   - url: "https://www.follows.co.jp/pic-labo/2627bc-dr-1.jpg"
     kind: face
@@ -33,6 +45,6 @@ images:
     sort_order: 0
 data_source:
   kind: manual
-  origin_url: https://www.follows.co.jp/SHOP/sn-sb-bc-004.html
+  origin_url: https://item.rakuten.co.jp/fujiswat/202603041/
   snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
 status: published
