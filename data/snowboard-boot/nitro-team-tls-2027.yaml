@@ -4,9 +4,17 @@ brand: nitro
 model: "Team TLS"
 year: 2027
 title: "Nitro Team TLS 2027"
-one_liner: "官方档案型号；TLS 双区快速系带。尺码与脚感以实际试穿为准。"
+one_liner: "Nitro 全山地 Team 平台，TLS 双区快速系带，配 Vibram 外底与 Air Dampening。"
 specs:
-  lacingSystem: "TLS 双区快速系带"
+  lacingSystem: "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱"
+  flex: "平衡、多用途脚感（官方未标数值硬度）"
+  fit: "标准宽度；ILS 内靴固定系统与 Armored Spine 脚跟加固"
+  liner: "Cloud 9 热塑鞋胆，Re/Lace 锁定结构与 3D 后跟构造"
+  innerCuff: "ILS 内靴固定系统；Armored Spine 与加固后跟"
+  outsole: "Vibram ECOSTEP 橡胶外底，含最高 3% 再生橡胶"
+  warmthFeatures: "Therminator Shield 鞋底反射隔热层"
+  footbed: "Ortholite High Cup Dual Density 鞋垫；EVA 中底与 Air Dampening 缓震"
+  sizeGuide: "官方男款 US 7–15 / Mondopoint 25.0–33.0 / EU 38⅔–49⅓ / UK 6–14"
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-boots-1

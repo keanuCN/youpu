@@ -574,6 +574,14 @@
         filter: false
         compare: false
         order: 60
+      - key: footbed
+        label: 鞋垫/中底
+        group: 结构与保暖
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 57
       - key: terrain
         label: 适用场景
         group: 使用取向

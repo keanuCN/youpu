@@ -4,9 +4,17 @@ brand: nitro
 model: "Bianca TLS+"
 year: 2027
 title: "Nitro Bianca TLS+ 2027"
-one_liner: "官方档案型号；女款；TLS+ 系带。尺码与脚感以实际试穿为准。"
+one_liner: "女款中等硬度全山地雪鞋，采用 TLS+、Cloud 10 鞋胆与 Vibram 冰雪外底。"
 specs:
-  lacingSystem: "女款"
+  lacingSystem: "TLS+ 双区快速系带"
+  flex: "中等硬度（Nitro 官方描述）"
+  fit: "女款 Cloud 10 鞋胆，3D 后跟结构与定向防滑内衬；可选 Internal Ankle Support"
+  liner: "Women's Cloud 10，预成型 Thermacell 热塑鞋胆"
+  innerCuff: "ILS 内靴固定系统、Power Strap、可选 Internal Ankle Support"
+  outsole: "Vibram Icetrek 橡胶与 Arctic Grip All Terrain 湿冰抓地技术"
+  warmthFeatures: "Therminator Shield 反射隔热层"
+  footbed: "Ortholite High Cup Triple Density 鞋垫；EVA 中底、Air Dampening 与 D3O 缓震"
+  sizeGuide: "官方女款 US 6–11.5 / Mondopoint 23.0–28.5 / EU 36–43⅓ / UK 4–9.5"
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/bianca-tls-womens-boots-1
