@@ -16,7 +16,12 @@ specs:
   hotSwap: true
   batteryCapacity: 8000
   driver: V HUB
-images: []
+images:
+  - url: https://vgnlab.com/cdn/shop/files/20260226104240_186_71_medium.png?v=1772084931
+    kind: face
+    alt: VGN N75 V2 三模无线机械键盘
+    source: VGN 官方商品页主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://vgnlab.com/products/vgn-n75-v2-wireless-rgb-mechanical-keyboard

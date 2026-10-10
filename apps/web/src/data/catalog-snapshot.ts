@@ -2953,7 +2953,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://vgnlab.com/cdn/shop/files/20260226104240_186_71_medium.png?v=1772084931",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
