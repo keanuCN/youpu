@@ -4,9 +4,16 @@ brand: nitro
 model: "Tangent TLS"
 year: 2027
 title: "Nitro Tangent TLS 2027"
-one_liner: "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。"
+one_liner: "偏柔和、适合进阶过程的全山地雪鞋，TLS 双区系带，配 Cloud 1 鞋胆。"
 specs:
-  lacingSystem: "TLS 系带"
+  lacingSystem: "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱"
+  flex: "偏柔和、易于进阶（Nitro 官方描述）"
+  fit: "Interlock 系统将鞋胆脚跟与鞋壳连接"
+  liner: "Cloud 1 热塑鞋胆，带 Re/Lace Liner Locker 与 DLS 直连系带"
+  innerCuff: "Interlock 脚跟锁定与加固后跟"
+  outsole: "全橡胶外底，强调耐磨与抓地"
+  footbed: "EVA 鞋垫，提供缓震与隔热"
+  sizeGuide: "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13"
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/tangent-tls-boots-1

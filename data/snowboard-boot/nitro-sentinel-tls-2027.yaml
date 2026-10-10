@@ -4,9 +4,15 @@ brand: nitro
 model: "Sentinel TLS"
 year: 2027
 title: "Nitro Sentinel TLS 2027"
-one_liner: "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。"
+one_liner: "TLS 双区快速系带，Cloud 3 热塑鞋胆与 Interlock 脚跟固定结构。"
 specs:
-  lacingSystem: "TLS 系带"
+  lacingSystem: "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱"
+  fit: "Interlock 系统将鞋胆脚跟与鞋壳连接；3D 后跟结构与记忆泡棉"
+  liner: "Cloud 3 热塑鞋胆，带 Re/Lace、DLS 直连系带与支撑框架"
+  innerCuff: "Interlock 脚跟锁定与加固后跟"
+  outsole: "EVA 外底，局部橡胶耐磨/抓地补强"
+  footbed: "Anatomical 人体工学鞋垫"
+  sizeGuide: "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13"
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/sentinel-tls-boots-1

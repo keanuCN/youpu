@@ -4,9 +4,17 @@ brand: nitro
 model: "Team Pro MK TLS"
 year: 2027
 title: "Nitro Team Pro MK TLS 2027"
-one_liner: "官方档案型号；TLS 系带；MK 系列。尺码与脚感以实际试穿为准。"
+one_liner: "Marcus Kleveland 签名款自由式雪鞋，TLS 系带并可调节硬度与支撑。"
 specs:
-  lacingSystem: "TLS 系带"
+  lacingSystem: "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱"
+  flex: "可通过 Power Tongue Stiffener 调节支撑与弯曲感；官方未给数值等级"
+  fit: "Armored Shell 支撑结构、ILS 内靴固定与可选 Internal Ankle Support"
+  liner: "Cloud 9 热塑鞋胆，3D 后跟结构与 Response ExoFrame"
+  innerCuff: "Shell Power Strap、ILS 内靴固定与加固后跟"
+  outsole: "Vibram ECOSTEP 橡胶外底，含最高 3% 再生橡胶"
+  warmthFeatures: "Therminator Shield 反射隔热层；Speed Gaiter 防雪防潮"
+  footbed: "Ortholite High Cup Dual Density 鞋垫；EVA 中底与 Air Dampening 缓震"
+  sizeGuide: "官方男款 US 7–15 / Mondopoint 25.0–33.0 / EU 38⅔–49⅓ / UK 6–14"
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/team-pro-mk-tls-boots-1
