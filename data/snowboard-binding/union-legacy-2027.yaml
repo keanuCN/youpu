@@ -7,7 +7,18 @@ title: "Union Binding Company Legacy 2027"
 one_liner: "偏柔软脚感的女款公园与自由式固定器，官方强调减震与板面自然弯曲。"
 specs:
   entrySystem: strap
-  bootCompatibility: "Union Mini Disk；适配普通绑带雪鞋"
+  flexFeel: soft
+  mountingSystem: "Union Mini Disk；兼容 4x2 与 Burton Channel；不兼容 4x4 圆盘安装"
+  bootCompatibility: "常规绑带系统，官方标注可适配各品牌雪鞋；女款尺码 S/M/L"
+  bindingSizeGuide: "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表"
+  baseplateMaterial: "S6 Duraflex ST；中等偏软自由式底盘，提供较自然的板面弯曲"
+  ankleStrap: "Forma Hybrid Memory Core，外侧响应、内侧带缓冲舒适衬垫"
+  toeStrap: "TS 2.1 UltraGrip，多位置安装，可适配不同品牌雪鞋"
+  buckles: "Aluminum S2 铝合金卡扣，钢制底座"
+  highback: "S10 Duraflex ST"
+  highbackAdjustment: "Classic 前倾调节，需使用 3 号螺丝刀"
+  cushioning: "OTE Fused Vaporlite 2.0 缓震衬套；Mini Disk 结构保留板面自然弯曲"
+  warranty: "底盘与后跟杯终身保修；其余部件 1 年保修"
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027

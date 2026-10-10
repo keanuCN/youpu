@@ -7,7 +7,18 @@ title: "Union Binding Company Ultra 2027"
 one_liner: "以缓震和板感为重点的女款自由式固定器，官方介绍其悬挂式缓震结构。"
 specs:
   entrySystem: strap
-  bootCompatibility: "Union 标准安装圆盘；适配普通绑带雪鞋"
+  flexFeel: medium
+  mountingSystem: "非对称 Mini Disk；兼容 4x2 与 Burton Channel"
+  bootCompatibility: "常规绑带系统，可适配普通雪鞋；女款 S/M/L"
+  bindingSizeGuide: "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表"
+  baseplateMaterial: "S11 Duraflex ST 非对称 Mini Disk 底盘；Moleculer 衬套与 TPE 外底"
+  ankleStrap: "Hybrid 1.0 PU Core，Exoframe 外层搭配柔软舒适内衬"
+  toeStrap: "TS 5.0 UltraGrip，多位置调节、防滑热塑材料"
+  buckles: "Magnesium S1 镁合金卡扣，钢制底座"
+  highback: "S25 Ultra Duraflex ST，预压 6° 前倾"
+  highbackAdjustment: "Integrated 2-Stage 前倾角微调，使用 3 号螺丝刀"
+  cushioning: "Moleculer 衬套与 TPE 外底提供缓震和回弹；Union 标注固定器硬度 6/10"
+  warranty: "底盘与后跟杯终身保修；其余部件 2 年保修"
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027

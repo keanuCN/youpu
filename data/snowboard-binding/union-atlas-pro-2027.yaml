@@ -7,7 +7,18 @@ title: "Union Binding Company Atlas Pro 2027"
 one_liner: "采用锻造碳纤维等高响应结构，定位高阶全山地与强支撑滑行。"
 specs:
   entrySystem: strap
-  bootCompatibility: "官方列出 4x4、4x2 与 Channel 安装；普通绑带雪鞋"
+  flexFeel: pro-stiff
+  mountingSystem: "Camber Disk + Washer；兼容 4x4、4x2 与 Burton Channel"
+  bootCompatibility: "常规绑带系统，适配普通雪鞋；S/M/L 尺码按 Union 官方雪鞋尺码表选择"
+  bindingSizeGuide: "Union 官方尺码表：男靴 S US 6–8 / M 8.5–10.5 / L 11–13；女靴 S 5–6 / M 6.5–8.5 / L 9–11"
+  baseplateMaterial: "S7 Duraflex CB 碳纤维注入尼龙底盘；Vaporlite HD 2.0 防水减震衬套"
+  ankleStrap: "Hybrid 2.0 TPE Core，V 型结构随鞋靴弯曲并兼顾支撑舒适"
+  toeStrap: "TS 6.0 Dual-Layer UltraGrip 双层防滑脚趾绑带"
+  buckles: "Magnesium S1 镁合金卡扣，铝合金底座"
+  highback: "S14 Duraflex CB 碳纤维注入尼龙高背"
+  highbackAdjustment: "Integrated Dial 一体式前倾角调节"
+  cushioning: "Vaporlite HD 2.0 衬套、Forged Carbon 锻造碳踏板与 Non-Stick EVA；3° Canting"
+  warranty: "底盘与后跟杯终身保修；其余部件 2 年保修"
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027
