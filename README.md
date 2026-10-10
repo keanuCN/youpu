@@ -54,8 +54,8 @@ pnpm dev:web        # http://localhost:3000
 pnpm dev:admin      # http://localhost:3002（需先启动 API）
 ```
 
-页面默认使用 `apps/web/src/data/` 内容包，账号/收藏/对比/评论存本机 localStorage —— **全站可完整浏览**。
-唯一会失败的是埋点上报（`POST /api/events` 连不上，静默丢弃，不影响使用）。
+页面默认使用 `apps/web/src/data/` 内容包；账号注册、登录和社区写入通过 API 完成，个人偏好在本机缓存并随账号同步。
+仅看内容包时不需要 API，埋点上报在 API 不可用时会静默跳过。
 
 静态前台构建时，如果设置了 `CONTENT_EXPORT_API_BASE`，会自动从公开目录 API 拉取最新快照再构建；快照会覆盖价格、封面、参数、品类和新增产品，已有编辑分析与评分分布继续保留在内容包中。未设置时沿用仓库内快照，纯前端启动不需要 API：
 
@@ -162,7 +162,7 @@ UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@e
 | `pnpm es:reindex` | ES 全量重建 |
 | `pnpm typecheck` / `pnpm build` | 全仓类型检查 / 构建 |
 
-> ⚠️ `next dev` 运行期间不要跑 `pnpm build`：两者共用 `.next` 目录会互相破坏（页面会 500）。
+Web 开发服务使用 `.next-dev`，生产构建使用 `.next`，两者构建缓存相互隔离。
 
 ## 前端页面（apps/web）
 

@@ -8,6 +8,8 @@ if (isStaticExport && isApiContent) {
 
 const nextConfig = {
   reactStrictMode: true,
+  // Keep the development server's manifests and assets separate from production builds.
+  distDir: process.env.NODE_ENV === "development" ? ".next-dev" : ".next",
   transpilePackages: ["@youpu/schema"],
   // 静态导出（内测站部署用）：纯前端产物交给 nginx，无需 Node 运行时
   ...(isStaticExport

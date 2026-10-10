@@ -356,7 +356,7 @@ function ReviewItem({ review, gear, copy, persisted, isCloudReview }: { review: 
                 type="button"
                 onClick={() => requireAuth(() => {
                   if (!hasCloudSession()) {
-                    toast("当前是本机演示账号，举报需要连接本地 API");
+                    toast("举报内容需要登录账号并连接服务端");
                     return;
                   }
                   void cloudCreateReport("rating", review.id, "内容不当或不准确")
