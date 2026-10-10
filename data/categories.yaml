@@ -359,6 +359,62 @@
         filter: false
         compare: true
         order: 40
+      - key: baseplateMaterial
+        label: 底盘材质
+        group: 结构与穿脱
+        type: text
+        filter: false
+        compare: true
+        order: 42
+      - key: ankleStrap
+        label: 脚踝绑带
+        group: 结构与穿脱
+        type: text
+        filter: false
+        compare: true
+        order: 43
+      - key: toeStrap
+        label: 脚趾绑带
+        group: 结构与穿脱
+        type: text
+        filter: false
+        compare: true
+        order: 44
+      - key: buckles
+        label: 扣具
+        group: 结构与穿脱
+        type: text
+        filter: false
+        compare: true
+        order: 45
+      - key: highback
+        label: 高背
+        group: 结构与穿脱
+        type: text
+        filter: false
+        compare: true
+        order: 46
+      - key: highbackAdjustment
+        label: 高背调节
+        group: 结构与穿脱
+        type: text
+        filter: false
+        compare: true
+        order: 47
+      - key: cushioning
+        label: 缓震
+        group: 结构与穿脱
+        type: text
+        filter: false
+        compare: true
+        order: 48
+      - key: warranty
+        label: 保修
+        group: 服务与保障
+        type: text
+        filter: false
+        compare: false
+        order: 70
       - key: bindingSizeGuide
         label: 固定器尺码参考
         group: 兼容性

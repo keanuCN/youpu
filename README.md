@@ -157,6 +157,7 @@ UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@e
 | `pnpm db:migrate` | 应用迁移（`prisma/migrations` 下的手写 SQL 为准） |
 | `pnpm seed` | 重新导入 `data/` 数据（幂等） |
 | `pnpm --filter @youpu/api validate:data` | 只校验 data/ 数据、不连库（CI 可用） |
+| `pnpm --filter @youpu/api seed:category-schema -- --category snowboard-binding` | 仅将指定类目的 data/categories.yaml 规格模板同步到本地 API，不重导全部商品 |
 | `pnpm --filter @youpu/web export:seed` | 原型内容包 → seed YAML（一次性迁移工具） |
 | `pnpm --filter @youpu/web export:catalog` | API 目录 → 前台云端快照（静态构建前运行） |
 | `pnpm --filter @youpu/web audit:catalog` | 比较种子、本地 API 与前台快照，列出数量和商品差异 |
