@@ -1,0 +1,27 @@
+slug: kailas-bm45-pro-ski-bibs-unisex-2026
+category: skiing-apparel
+brand: kailas
+model: BM45 PRO Ski Bibs Unisex
+year: 2026
+title: Kailas BM45 PRO Ski Bibs Unisex
+one_liner: 100D 三层 GORE-TEX Pro 背带裤，带通风拉链、膝部立体剪裁与 Cordura 加固。
+specs:
+  fit: relaxed
+  recco: true
+  fabric: 100D 3L GORE-TEX Pro
+  venting: true
+  suspenders: true
+  garmentType: bib-pants
+  construction: 3L
+  articulatedKnees: true
+  corduraReinforced: true
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0535/8433/0946/files/GJGW-KG2541314_5-4.webp?v=1786154017&width=800"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤
+    source: KAILAS 官网 JSON-LD 商品图；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://kailasgear.com/products/kailas-bm45-pro-ski-bibs-unisex
+status: published

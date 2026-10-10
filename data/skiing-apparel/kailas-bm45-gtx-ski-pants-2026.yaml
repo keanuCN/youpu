@@ -1,0 +1,27 @@
+slug: kailas-bm45-gtx-ski-pants-2026
+category: skiing-apparel
+brand: kailas
+model: BM45 GTX Ski Pants
+year: 2026
+title: Kailas BM45 GTX Ski Pants
+one_liner: 75D 三层 GORE-TEX 面料，配通风拉链、可调背带和膝部活动剪裁。
+specs:
+  fit: relaxed
+  recco: true
+  fabric: 75D 3L GORE-TEX
+  venting: true
+  suspenders: true
+  garmentType: pants
+  construction: 3L
+  articulatedKnees: true
+  corduraReinforced: true
+images:
+  - url: "https://kailasgear.com/cdn/shop/files/KG2541316_-1.webp?v=1786154508&width=1090"
+    kind: face
+    alt: KAILAS BM45 GTX 滑雪裤
+    source: KAILAS 官网商品图；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://kailasgear.com/products/kailas-bm45-gtx-ski-pants
+status: published

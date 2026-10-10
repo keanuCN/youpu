@@ -3761,6 +3761,9 @@
           - { value: regular, label: 常规 }
           - { value: relaxed, label: 宽松 }
           - { value: baggy, label: 街头宽松 }
+          - { value: loose, label: 宽松剪裁 }
+          - { value: athletic-h-cut, label: 男款 H 型运动剪裁 }
+          - { value: athletic-y-cut, label: Y 型运动剪裁 }
         filter: multi
         compare: true
         order: 60
@@ -3795,6 +3798,65 @@
         filter: false
         compare: true
         order: 100
+      - key: recco
+        label: RECCO 救援反射器
+        group: 安全与功能
+        type: bool
+        filter: single
+        compare: true
+        order: 110
+      - key: suspenders
+        label: 可调背带
+        group: 结构与功能
+        type: bool
+        filter: single
+        compare: true
+        order: 120
+      - key: articulatedKnees
+        label: 立体剪裁膝部
+        group: 结构与功能
+        type: bool
+        filter: single
+        compare: true
+        order: 130
+      - key: corduraReinforced
+        label: Cordura 耐磨加固
+        group: 结构与功能
+        type: bool
+        filter: single
+        compare: true
+        order: 140
+      - key: version
+        label: 衣长版本
+        group: 款式与结构
+        type: enum
+        options:
+          - { value: regular, label: 常规版 }
+          - { value: long, label: 加长版 }
+        filter: multi
+        compare: true
+        order: 150
+      - key: skiPassPocket
+        label: 雪票口袋
+        group: 功能
+        type: bool
+        filter: single
+        compare: true
+        order: 160
+      - key: helmetCompatibleHood
+        label: 兼容头盔风帽
+        group: 功能
+        type: bool
+        filter: single
+        compare: true
+        order: 170
+      - key: ziprotectCompatible
+        label: Ziprotect 兼容
+        group: 功能
+        type: bool
+        filter: single
+        compare: true
+        order: 180
 
 - slug: diving
   name: 潜水

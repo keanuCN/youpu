@@ -1,0 +1,28 @@
+slug: decathlon-snb-500-ziprotect-jacket-2026
+category: skiing-apparel
+brand: decathlon
+model: SNB 500 Ziprotect Men's Snowboard Jacket
+year: 2026
+title: Men's Warm and Durable Snowboard Jacket SNB 500 Ziprotect
+one_liner: 10000 mm 防水、全压胶并带身体与袖部不同克重的合成棉填充；具体保暖表现仍取决于内搭和环境。
+specs:
+  fit: loose
+  fabric: 100% Polyamide
+  insulation: 100 g/m² body / 80 g/m² sleeves synthetic wadding
+  seamTaping: fully-taped
+  garmentType: jacket
+  powderSkirt: true
+  waterproofMm: 10000
+  skiPassPocket: true
+  ziprotectCompatible: true
+  helmetCompatibleHood: true
+images:
+  - url: "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克
+    source: 迪卡侬英国官网商品图；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: "https://www.decathlon.co.uk/p/men%27s-snb-jacket-500/_/R-p-350525"
+status: published

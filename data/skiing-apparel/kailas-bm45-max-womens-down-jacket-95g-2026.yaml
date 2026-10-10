@@ -1,0 +1,28 @@
+slug: kailas-bm45-max-womens-down-jacket-95g-2026
+category: skiing-apparel
+brand: kailas
+model: BM45 MAX Down Ski Jacket Women's
+year: 2026
+title: Kailas BM45 MAX Down Ski Jacket Women's 95g
+one_liner: 女款 BM45 MAX，40D 三层 GORE-TEX 面料，填充 95g 800FP 羽绒。
+specs:
+  fit: athletic-y-cut
+  recco: true
+  fabric: 40D 3L GORE-TEX
+  venting: true
+  insulation: 95g 800FP down
+  garmentType: jacket
+  powderSkirt: true
+  construction: 3L
+  skiPassPocket: true
+  helmetCompatibleHood: true
+images:
+  - url: "https://kailasgear.com/cdn/shop/files/KG2531244_-2.webp?v=1786156036&width=1090"
+    kind: face
+    alt: KAILAS BM45 MAX 女款 95g 800FP 羽绒滑雪夹克
+    source: KAILAS 官网商品图；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-womens
+status: published
