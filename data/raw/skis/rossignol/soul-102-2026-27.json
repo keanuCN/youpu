@@ -1,0 +1,31 @@
+{
+  "brand": "Rossignol",
+  "model": "Soul 102",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-10",
+  "seedFile": "data/skis/rossignol-soul-102-2027.yaml",
+  "officialProductPage": {
+    "url": "https://www.rossignol.com/us-en/soul-102-alpine-skis-RAPMR03000.html",
+    "evidence": "Rossignol labels this the new FW26/27 collection and confirms code RAPMR03000; sizes 156/164/172/180/188 cm; per-size sidecuts 135-100-125, 135-101-125, 135-102-125, 135-102-125, 135-104-125 mm; radii 14/15/16/17/18 m; PEFC Poplar Wood Core; Rectangular Full Sidewall; Titanal Beam; Air Tip; V-A-S; LCT; Tip & Tail Rocker; Progressive Sidecut; Sintered HD Base; ski-only listing without bindings.",
+    "limitations": "The official page labels a weight column in kg/pair but lists values 1.75–2.15, which conflict with the apparent unit convention. No weight is mapped. Performance is Advanced-Expert."
+  },
+  "specifications": {
+    "lengthsCm": [156, 164, 172, 180, 188],
+    "sidecutMmAndRadius": [
+      {"lengthCm":156,"tipMm":135,"waistMm":100,"tailMm":125,"radiusM":14},
+      {"lengthCm":164,"tipMm":135,"waistMm":101,"tailMm":125,"radiusM":15},
+      {"lengthCm":172,"tipMm":135,"waistMm":102,"tailMm":125,"radiusM":16},
+      {"lengthCm":180,"tipMm":135,"waistMm":102,"tailMm":125,"radiusM":17},
+      {"lengthCm":188,"tipMm":135,"waistMm":104,"tailMm":125,"radiusM":18}
+    ],
+    "core":"PEFC Poplar Wood Core / LCT wood core structure",
+    "construction":"Rectangular Full Sidewall",
+    "profile":"Tip & Tail Rocker",
+    "technology":["Air Tip","Titanal Beam","V-A-S","LCT","Progressive Sidecut","Sintered HD Base"]
+  },
+  "mappingNotes": [
+    "The displayed 15 m radius in the page's selected-size summary corresponds to 164 cm; the seed's reference radius is corrected to 172 cm / 16 m based on the full product-dimensions table.",
+    "Weight is omitted because the unit label and numeric values on the official page are internally inconsistent."
+  ],
+  "imageRights": "The official product image URL is a source reference only; no explicit reuse license verified."
+}

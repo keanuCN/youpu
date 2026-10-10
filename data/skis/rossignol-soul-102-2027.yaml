@@ -4,14 +4,19 @@ brand: rossignol
 model: Soul 102
 year: 2027
 title: Rossignol Soul 102 2026/27
-one_liner: 新一代多用途 freeride 雪板，官网列出 164、172、180 cm 等板长。
+one_liner: 2026/27 全山地自由滑雪板，172 cm 板腰 102 mm，采用渐进式板型与 Tip & Tail Rocker。
 specs:
-  lengthOptions: 164 / 172 / 180 cm
-  waistWidth: 101
-  turnRadius: 15
+  lengthOptions: 156 / 164 / 172 / 180 / 188 cm
+  waistWidth: 102
+  turnRadius: 16
   turnRadiusReferenceLength: 172 cm
+  sidecutDimensions: "156 cm: 135-100-125 mm / 14 m；164 cm: 135-101-125 mm / 15 m；172 cm: 135-102-125 mm / 16 m；180 cm: 135-102-125 mm / 17 m；188 cm: 135-104-125 mm / 18 m"
+  profile: Tip & Tail Rocker
+  core: PEFC 杨木木芯；LCT 木芯结构
+  construction: Rectangular Full Sidewall
+  technologies: Air Tip；Titanal Beam；V-A-S；LCT；Progressive Sidecut；Sintered HD Base
   terrain: 全山地 / 自由滑 / 粉雪
-  skierLevel: 中级至进阶
+  skierLevel: 进阶至专家
   bindingSetup: 裸板，不含固定器
 images:
   - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dwa120bfdc/images/large/RAPMR03000_72DPI_01_v01.jpg"
