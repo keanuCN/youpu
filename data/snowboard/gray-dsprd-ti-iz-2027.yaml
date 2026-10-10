@@ -17,6 +17,7 @@ price:
   max: 6537
   currency: CNY
 specs:
+  lengthOptions: I / IIn / II / IIw / III / IIIw / IVw / IV / Vw
   length: 157
   effectiveEdge: 1360
   sidecutRadii: 9.8/9.2/10.4 m

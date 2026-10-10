@@ -17,6 +17,7 @@ price:
   max: 5370
   currency: CNY
 specs:
+  lengthOptions: 46.5 / 51.5 / 51.5w / 53.5 / 55.5 / 55.5w / 57.5 / 57.5w
   core: STD Core II
   shape: Directional Twin
   scenes:

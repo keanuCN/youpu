@@ -17,6 +17,7 @@ price:
   max: 3968
   currency: CNY
 specs:
+  lengthOptions: 148 / 153N / 154 / 158 / 159W / 162 / 163W
   shape: Directional
   profile: Active Camber
   profileFamily: camber

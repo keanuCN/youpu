@@ -17,6 +17,7 @@ price:
   max: 3968
   currency: CNY
 specs:
+  lengthOptions: 158 cm
   length: 158
   core: 2-ply 50/50 Paulownia Core
   shape: Directional

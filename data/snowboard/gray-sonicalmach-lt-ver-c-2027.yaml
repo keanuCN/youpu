@@ -17,6 +17,7 @@ price:
   max: 4203
   currency: CNY
 specs:
+  lengthOptions: 154 ver.C / 155w ver.C / 156ew ver.C
   core: Poplar + Bamboo Wood Core
   fiberglass: Carbon strips beneath core + fiberglass laminate
   scenes:

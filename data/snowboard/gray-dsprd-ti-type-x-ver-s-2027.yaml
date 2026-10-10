@@ -17,6 +17,7 @@ price:
   max: 8405
   currency: CNY
 specs:
+  lengthOptions: 152 ver.S / 161 ver.S
   core: STD Core II
   fiberglass: 2-ply 65/35 + 3-ply 50/50 Fiberglass
   shape: Directional Hammerhead

@@ -17,6 +17,7 @@ price:
   max: 8405
   currency: CNY
 specs:
+  lengthOptions: 163 / 185
   core: Aspen Wood Core + IZANAS Fiber
   fiberglass: 1-ply 65/35 Fiberglass (top and bottom)
   shape: Directional Alpine

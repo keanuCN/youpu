@@ -17,6 +17,7 @@ price:
   max: 3968
   currency: CNY
 specs:
+  lengthOptions: 146 / 151 / 152w / 154 / 155w / 156ew / 160w / 161ew
   core: Poplar + Bamboo Wood Core
   shape: True Twin / Directional Twin / Directional（随长度变化）
   scenes:
