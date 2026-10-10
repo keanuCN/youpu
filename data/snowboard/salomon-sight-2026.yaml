@@ -39,7 +39,12 @@ editorial_scores:
   park: 5
   forgiveness: 9.5
   value: 9
-images: []
+images:
+  - url: "https://salomon.jp/cdn/shop/files/L47924900_0_VIR_SIGHT_156.png?v=1756098039&width=1445"
+    kind: face
+    alt: Salomon Sight 2025/26 156cm 官方商品图
+    source: Salomon 日本官方商品页（L47924900；图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://cdn.shopify.com/s/files/1/0673/9981/1381/files/FW25_digitalcatalogue_techbook.pdf?v=1736124811
