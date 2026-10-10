@@ -10,7 +10,13 @@ specs:
   terrain: 雪道 / 竞速 / 长弧
   skierLevel: 进阶至专家
   bindingSetup: R22 系统板，固定器依套装配置
+images:
+  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dw283c3bb5/images/large/RAPHE01000_72DPI_01_v01.jpg"
+    kind: face
+    alt: Rossignol Hero Master LT R22 2026/27 官方雪板商品图
+    source: Rossignol 官方产品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
-  origin_url: https://www.rossignol.com/us-en/sports/alpine-ski/skis
+  origin_url: https://www.rossignol.com/se-en/hero-master-lt-r22-alpine-skis-RAPHE01000.html
 status: published

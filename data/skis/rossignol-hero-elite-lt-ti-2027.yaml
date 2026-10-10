@@ -13,6 +13,12 @@ specs:
   terrain: 雪道 / 长弧 carving
   skierLevel: 进阶
   bindingSetup: 裸板或可选 SPX 14 KONECT GW
+images:
+  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dwa8eccfa0/images/large/RAPSE01000_72DPI_01_v01.jpg"
+    kind: face
+    alt: Rossignol Hero Elite LT TI 2026/27 官方雪板商品图
+    source: Rossignol 官方产品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/hero-elite-lt-ti-alpine-skis-RAPSE01000.html
