@@ -13,6 +13,12 @@ specs:
   terrain: 雪道 / 全山地
   skierLevel: 中级至进阶
   bindingSetup: 雪板+板层+固定器
+images:
+  - url: "https://cdn.dam.salomon.com/d46f845f-a04e-4b4c-8419-b45100de593b/L45457300%2B/PNG-2000px-max-72dpi.png"
+    kind: face
+    alt: Salomon Stance 84 R 2026/27 官方雪板商品图
+    source: Salomon 官方产品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/stance-84-r-and-mi12-li1721

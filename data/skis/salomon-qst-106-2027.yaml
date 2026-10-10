@@ -10,7 +10,13 @@ specs:
   terrain: 自由滑 / 粉雪
   skierLevel: 进阶
   bindingSetup: 裸板或依销售套装配置
+images:
+  - url: "https://cdn.dam.salomon.com/abd97aa8-d2d7-4b98-87ab-b31b00bc75e5/L47774500%2B/PNG-2000px-max-72dpi.png"
+    kind: face
+    alt: Salomon QST 106 2026/27 官方雪板商品图
+    source: Salomon 官方产品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
-  origin_url: https://www.salomon.com/en-us/c/collection/winter-sports
+  origin_url: https://www.salomon.com/en-us/product/qst-106-almond-milk-li8133
 status: published
