@@ -13,7 +13,11 @@ specs:
   mapSupport: 离线 / 在线导航
   audioPrompt: true
   sensorCompatibility: 全面传感器兼容
-images: []
+images:
+  - url: https://hwcdn.igpsport.cn/picture/2026/3/e17df6969312a74891b19c2fe010a2df.jpg
+    kind: face
+    alt: iGPSPORT BSC500 全彩大屏码表官方产品图
+    source: iGPSPORT BSC500 官方产品页主视觉图，alt 为 BSC500；图片返回 image/jpeg；展示授权状态待核
 data_source:
   kind: crawl
   origin_url: https://www.igpsport.cn/product/bsc500

@@ -1062,7 +1062,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0691/4942/5882/files/ATK_V75X_Black.jpg?v=1741856682&width=1920",
+    "coverUrl": "https://hwcdn.igpsport.cn/picture/2026/3/e17df6969312a74891b19c2fe010a2df.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
