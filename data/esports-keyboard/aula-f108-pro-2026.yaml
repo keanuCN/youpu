@@ -15,7 +15,12 @@ specs:
   backlight: RGB 背光
   customScreen: true
   batteryCapacity: 8000
-images: []
+images:
+  - url: https://cdn.shopify.com/s/files/1/0552/2803/9264/files/4_470afb17-1075-4b9a-b085-0f4ce8568ac4.jpg?v=1756891443&width=900
+    kind: face
+    alt: AULA F108 Pro 全尺寸机械键盘
+    source: AULA 官方商品页标注的 F108 Pro 图片；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.aulastar.com/faq/504.html

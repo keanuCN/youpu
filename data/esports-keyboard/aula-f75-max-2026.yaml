@@ -18,7 +18,12 @@ specs:
   keycapMaterial: PBT
   batteryCapacity: 4000
   driver: AULA Driver
-images: []
+images:
+  - url: https://aulagear.com/cdn/shop/files/IMG_5706.png?v=1734344767&width=900
+    kind: face
+    alt: AULA F75 Max 机械键盘
+    source: AULA 官方商品页图片；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://aulagear.com/collections/keyboards/products/aula-f75-max
