@@ -8,6 +8,8 @@ one_liner: "官方档案型号；单 BOA 旋钮。尺码与脚感以实际试穿
 specs:
   lacingSystem: "Single Zone BOA：单旋钮系带"
   flex: "柔软、容错取向（Burton 官方描述）"
+  fit: "Regular 常规楦与 Wide 宽楦可选"
+  terrain: "官方定位全地形与公园滑行"
   liner: "Imprint 1+ Liner"
   innerCuff: "Integrated Lacing 一体式内靴系带"
   outsole: "DynoLITE 外底，轻量缓震结构"
