@@ -7,7 +7,17 @@ title: "FLUX XV 2026"
 one_liner: "FLUX 高阶硬质型号，官方介绍其碳纤维高背与轻量化响应结构。"
 specs:
   entrySystem: strap
-  bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+  flex: 9
+  flexFeel: pro-stiff
+  mountingSystem: "Carbon Multi Disc；兼容 4x4 与 2H 安装，可作 5/10 mm 偏移安装"
+  bootCompatibility: "常规双绑带系统；兼容普通绑带雪鞋"
+  baseplateMaterial: "Super Ultima 碳纤维增强尼龙底盘；XV 专用大型 TPU Responsive Stabilizer"
+  ankleStrap: "Waffle Strap 双层缓冲绑带与 UU Fit 环绕式固定"
+  toeStrap: "F.T.M. Ver 5.0 Transfer 专用绑带；L-Guide 收纳带尾"
+  buckles: "Beer Buckle 棘轮扣，带快速收紧结构"
+  highback: "W-Props Carbon Reinforced 高背，含碳纤维增强与滑动衬片"
+  highbackAdjustment: "Redux Lean Adjuster 单动作调节；Micro Adjuster 每格约 2.5° 前倾"
+  cushioning: "Boost FootOn+ 脚床；可调 toe/heel cushion 与响应稳定器"
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526xv

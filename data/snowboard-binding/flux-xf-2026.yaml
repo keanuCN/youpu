@@ -7,7 +7,17 @@ title: "FLUX XF 2026"
 one_liner: "25-26 XF 型号，官方覆盖公园、刻滑、粉雪与全山地取向。"
 specs:
   entrySystem: strap
-  bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+  flex: 7
+  flexFeel: stiff
+  mountingSystem: "FLUX Multi Disc；兼容 4x4 与 2H 安装，可偏移安装"
+  bootCompatibility: "常规双绑带系统；兼容普通绑带雪鞋"
+  baseplateMaterial: "Super Ultima 底盘，Glass Reinforced Tough Grade 复合材质；Boost FootOn+ 脚床"
+  ankleStrap: "Waffle Strap 双层缓冲结构，搭配 UU Fit 环绕固定"
+  toeStrap: "F.T.M. Ver 5.0 可翻转脚背/脚趾绑带，L-Guide 收纳带尾"
+  buckles: "Beer Buckle 棘轮扣"
+  highback: "RETRO-Mod 非对称内侧结构高背，Super Tough Nylon 中等弯曲材料"
+  highbackAdjustment: "Redux Lean Adjuster 与 Micro Adjuster；每格约 2.5° 前倾"
+  cushioning: "Boost FootOn+ 加高脚床、XF 专用响应稳定器与可调 toe/heel cushion"
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526xf

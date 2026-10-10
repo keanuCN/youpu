@@ -7,7 +7,17 @@ title: "FLUX GS 2026"
 one_liner: "女款全能固定器，官方介绍其沿用 DS 特性并兼顾活动范围与舒适度。"
 specs:
   entrySystem: strap
-  bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+  flex: 3
+  flexFeel: soft
+  mountingSystem: "FLUX Multi Disc；兼容 4x4 与 2H 安装"
+  bootCompatibility: "女款常规双绑带系统；XS/SM 尺码"
+  baseplateMaterial: "女性专用 Vogue Baseplate，Performance Blend 中等弯曲复合材料"
+  ankleStrap: "Honeycomb Strap Ver 2.0 蜂窝轻量缓冲脚踝带"
+  toeStrap: "FTM Versa 双向脚背/脚趾绑带，适配不同靴型"
+  buckles: "Trigger Ratchet Buckle 加大扳机式棘轮扣"
+  highback: "Women's Resister Highback，Super Tough Nylon"
+  highbackAdjustment: "Micro Adjuster 每格约 2.5° 前倾"
+  cushioning: "FootOn 脚床、可调 toe/heel cushion 与可拆换 Custom Stabilizers"
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526gs
