@@ -49,6 +49,13 @@
       "evidence": "The third-party snowboard spec index lists BC STREAM R-2 as a 2025-26 model and shows 157 standard with 250 mm waist and 162 with 252 mm waist, consistent with the existing standard-size mapping. It distinguishes standard and wide lengths by waist width.",
       "limits": "Secondary index; the reviewed page does not cite its underlying R-2 source or provide the complete official dimension table. This corroborates model/size identity only and is not sufficient to claim primary-source verification or update the YAML geometry."
     },
+    "exactSeasonRetailerSizeTable": {
+      "url": "https://item.rakuten.co.jp/seeslife/26bcr2/",
+      "retrievedAt": "2026-10-10",
+      "host": "See's snowboard specialty shop",
+      "evidence": "The exact 2025-26 R-2 listing provides per-size effective edge, waist width, five radii, stance choices (52/56/60 cm), and 20 mm setback for 154, 157, 157W, 162, and 162W. Its listed 157 row matches the existing representative values (1300 mm effective edge, 250 mm waist).",
+      "limitations": "Specialty retailer source, not a directly hosted manufacturer spec sheet; the page does not provide a size row for 151 or explicitly name the core material."
+    },
     "riderAnecdote": {
       "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12324256907",
       "publishedAt": "2026-01-13",
@@ -85,7 +92,7 @@
     "confidence": "Low across all six dimensions; target-period evidence now includes one informal 162 cm swap ride with unspecified width/setup plus demo availability, but there remains no disclosed test of the seed's 157 standard size. The 157W anecdote is a separate variant of unknown production season."
   },
   "unresolved": [
-    "A direct 25/26 official R-2 size/geometry table was not recovered in this batch; retain the current seed values pending a season-specific primary source.",
+    "Exact-season size geometry is now recorded from a specialist retailer; a directly hosted 25/26 manufacturer technical table, the 151 row, and core details remain unverified.",
     "No disclosed target-season test of the 157 standard size found.",
     "No direct powder or park performance observation found.",
     "Seed CNY 5370 remains an FX-normalized estimate: the 25/26 Japanese dealer page reports JPY 126500 as manufacturer-recommended retail price, and a Korean official-importer page shows KRW 1650000 list / KRW 1485000 discounted retail but is sold out. Neither establishes a mainland-China price. Exact weight and image reuse permission remain unverified."

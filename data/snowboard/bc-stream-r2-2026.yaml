@@ -20,6 +20,7 @@ specs:
   length: 157
   effectiveEdge: 1300
   waistWidth: 250
+  sidecutRadii: 9.2 / 8.8 / 8.4 / 8.8 / 9.2 m
   stanceSetback: 20
   profile: Variable Camber
   profileFamily: hybrid
@@ -28,6 +29,12 @@ specs:
   scenes:
     - carving
     - all-mountain
+  sizeSpecs:
+    - {size: "154", overallLength: 1540, effectiveEdge: 1270, waistWidth: 250, sidecutRadii: "9.0 / 8.6 / 8.2 / 8.6 / 9.0 m", stanceWidth: "520 / 560 / 600 mm", setback: 20}
+    - {size: "157", overallLength: 1570, effectiveEdge: 1300, waistWidth: 250, sidecutRadii: "9.2 / 8.8 / 8.4 / 8.8 / 9.2 m", stanceWidth: "520 / 560 / 600 mm", setback: 20}
+    - {size: "157W", overallLength: 1570, effectiveEdge: 1300, waistWidth: 254, sidecutRadii: "9.2 / 8.8 / 8.4 / 8.8 / 9.2 m", stanceWidth: "520 / 560 / 600 mm", setback: 20}
+    - {size: "162", overallLength: 1620, effectiveEdge: 1350, waistWidth: 252, sidecutRadii: "9.4 / 9.0 / 8.6 / 9.0 / 9.4 m", stanceWidth: "520 / 560 / 600 mm", setback: 20}
+    - {size: "162W", overallLength: 1620, effectiveEdge: 1350, waistWidth: 256, sidecutRadii: "9.4 / 9.0 / 8.6 / 9.0 / 9.4 m", stanceWidth: "520 / 560 / 600 mm", setback: 20}
 images:
   - url: "https://www.follows.co.jp/pic-labo/2526bc-r2-1a.jpg"
     kind: face
@@ -36,6 +43,6 @@ images:
     sort_order: 0
 data_source:
   kind: manual
-  origin_url: https://www.follows.co.jp/SHOP/1213bc-r2.html
+  origin_url: https://item.rakuten.co.jp/seeslife/26bcr2/
   snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
 status: published
