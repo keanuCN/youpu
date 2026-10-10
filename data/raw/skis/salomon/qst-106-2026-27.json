@@ -1,0 +1,34 @@
+{
+  "brand": "Salomon",
+  "model": "QST 106 Almond Milk",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-10",
+  "seedFile": "data/skis/salomon-qst-106-2027.yaml",
+  "sources": {
+    "officialProductPage": "https://www.salomon.com/en-us/product/qst-106-almond-milk-li8133",
+    "officialProductEvidence": "The official Salomon page confirms sizes 157/165/173/181/189 cm, 106 mm waist, Freeride Profile, Rocker-Camber-Rocker, 16.5 m radius (page's displayed reference), Full Poplar Woodcore, Ti Binding Reinforcement, Basalt Superlight Fibers, Fiberglass, Full Sandwich Sidewalls and Cork Damplifier.",
+    "sizeTable": "https://www.tanabesports.jp/ts/wp-content/uploads/2026/03/26-27_SALOMON_SKI_user.pdf",
+    "sizeTableEvidence": "The 2026/27 Salomon catalogue table lists per-length tip/waist/tail, radius, and weight for all five sizes. The weight values are not mapped because the current seed schema does not preserve the catalog's per-ski/unit context without ambiguity."
+  },
+  "specifications": {
+    "lengthsCm": [157, 165, 173, 181, 189],
+    "waistMm": 106,
+    "sidecutMmAndRadius": [
+      {"lengthCm":157,"tipMm":136,"waistMm":106,"tailMm":123,"radiusM":16.5},
+      {"lengthCm":165,"tipMm":137,"waistMm":106,"tailMm":124,"radiusM":17.5},
+      {"lengthCm":173,"tipMm":138,"waistMm":106,"tailMm":125,"radiusM":18.5},
+      {"lengthCm":181,"tipMm":139,"waistMm":106,"tailMm":126,"radiusM":19.5},
+      {"lengthCm":189,"tipMm":140,"waistMm":106,"tailMm":127,"radiusM":20.5}
+    ],
+    "profile":"Rocker-Camber-Rocker / Freeride Profile",
+    "core":"Full Poplar Woodcore",
+    "construction":"Full Sandwich Sidewalls",
+    "reinforcements":["Ti Binding Reinforcement","Basalt Superlight Fibers","Fiberglass"],
+    "technology":["Cork Damplifier"]
+  },
+  "mappingNotes": [
+    "The seed's turnRadius uses the 173 cm reference (18.5 m); all size-specific sidecut and radius values are retained.",
+    "No numeric weight was added because the official product page's 3000 g net-weight field does not identify its reference length or per-ski/per-pair basis, while the catalogue uses a distinct per-ski table."
+  ],
+  "imageRights": "The official product image URL is a source reference only; no explicit reuse license verified."
+}

@@ -7,9 +7,17 @@ title: Rossignol Forza 60° TI KONECT 2026/27
 one_liner: Forza 雪道 carving 系列高阶款，官网 2026/27 商品目录在售。
 specs:
   lengthOptions: 156 / 164 / 171 / 179 cm
+  waistWidth: 75
+  turnRadius: 11
+  turnRadiusReferenceLength: 156 cm
+  sidecutDimensions: "156 cm: 130-75-112 mm / 11 m；164 cm: 130-75-112 mm / 12 m；171 cm: 130-75-112 mm / 13 m；179 cm: 130-75-112 mm / 14 m"
+  profile: Tip Rocker；传统 Camber
+  core: PEFC 杨木木芯
+  construction: Rectangular Full Sidewall
+  technologies: V-Profile；Titanal Beam；Carbon Alloy Matrix；Reinforced Torsion Tip Technology；V-A-S；Sintered HD Base；Premium Hardtop；Oversized Sidecut
   terrain: 雪道 / carving
-  skierLevel: 进阶
-  bindingSetup: KONECT 系统板，可按商品页选择固定器
+  skierLevel: 进阶至专家
+  bindingSetup: KONECT 系统板；商品页可选无固定器或 SPX 12 KONECT 固定器
 images:
   - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dw7efb611e/images/large/RAOPS01000_72DPI_01_v01.jpg"
     kind: face

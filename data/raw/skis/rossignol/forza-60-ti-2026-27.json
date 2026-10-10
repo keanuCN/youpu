@@ -1,0 +1,31 @@
+{
+  "brand": "Rossignol",
+  "model": "Forza 60° TI KONECT",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-10",
+  "seedFile": "data/skis/rossignol-forza-60-ti-2027.yaml",
+  "officialProductPage": {
+    "url": "https://www.rossignol.com/us-en/rossignol-forza-60-ti-skis-konect-RAOPS01000.html",
+    "evidence": "Rossignol's product page confirms product code RAOPS01000; lengths 156/164/171/179 cm; tip/waist/tail dimensions 130/75/112 mm for each size; radii 11/12/13/14 m respectively; Advanced-Expert performance label; KONECT system; PEFC Poplar Wood Core; Rectangular Full Sidewall; Titanal Beam; Carbon Alloy Matrix; Reinforced Torsion Tip Technology; V-A-S; Sintered HD Base; Tip Rocker; Oversized Sidecut and Premium Hardtop. The page offers skis without bindings and an SPX 12 KONECT binding option.",
+    "limitations": "The official product page does not state the model season explicitly, weight, or factory edge angles. No values were inferred for these fields. The existing seed remains draft."
+  },
+  "specifications": {
+    "lengthsCm": [156, 164, 171, 179],
+    "sidecutMmAndRadius": [
+      {"lengthCm":156,"tipMm":130,"waistMm":75,"tailMm":112,"radiusM":11},
+      {"lengthCm":164,"tipMm":130,"waistMm":75,"tailMm":112,"radiusM":12},
+      {"lengthCm":171,"tipMm":130,"waistMm":75,"tailMm":112,"radiusM":13},
+      {"lengthCm":179,"tipMm":130,"waistMm":75,"tailMm":112,"radiusM":14}
+    ],
+    "profile":"Tip Rocker with traditional camber",
+    "core":"PEFC Poplar Wood Core",
+    "construction":"Rectangular Full Sidewall",
+    "technology":["V-Profile","Titanal Beam","Carbon Alloy Matrix","Reinforced Torsion Tip Technology","V-A-S","Sintered HD Base","Premium Hardtop","Oversized Sidecut"],
+    "bindingSystem":"KONECT"
+  },
+  "mappingNotes": [
+    "The seed's turnRadius uses the 156 cm reference (11 m); length-specific radii are preserved in sidecutDimensions.",
+    "The official performance tab labels the skill range Advanced-Expert, while the product description says intermediate and advanced; the seed uses 进阶至专家 to preserve the explicit performance label."
+  ],
+  "imageRights": "The official product image URL is a source reference only; no explicit reuse license verified."
+}

@@ -6,10 +6,18 @@ year: 2027
 title: Salomon QST 106 2026/27
 one_liner: QST 系列宽板腰 freeride 型号，官方 2026/27 冬季目录在售。
 specs:
+  lengthOptions: 157 / 165 / 173 / 181 / 189 cm
   waistWidth: 106
+  turnRadius: 18.5
+  turnRadiusReferenceLength: 173 cm
+  sidecutDimensions: "157 cm: 136-106-123 mm / 16.5 m；165 cm: 137-106-124 mm / 17.5 m；173 cm: 138-106-125 mm / 18.5 m；181 cm: 139-106-126 mm / 19.5 m；189 cm: 140-106-127 mm / 20.5 m"
+  profile: Rocker-Camber-Rocker（Freeride Profile）
+  core: 全杨木木芯
+  construction: Full Sandwich Sidewalls；Ti Binding Reinforcement
+  technologies: Cork Damplifier；Basalt Superlight Fibers；Fiberglass
   terrain: 自由滑 / 粉雪
   skierLevel: 进阶
-  bindingSetup: 裸板或依销售套装配置
+  bindingSetup: 裸板，不含固定器
 images:
   - url: "https://cdn.dam.salomon.com/abd97aa8-d2d7-4b98-87ab-b31b00bc75e5/L47774500%2B/PNG-2000px-max-72dpi.png"
     kind: face
