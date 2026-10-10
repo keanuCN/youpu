@@ -10,6 +10,12 @@ specs:
   terrain: 雪道 / 全地域
   skierLevel: 中级至进阶
   bindingSetup: 含 MI 12 GW 固定器
+images:
+  - url: "https://cdn.amersports.com/017bc76f-f5cc-42b8-a786-b49f00cdff46/ATP_AASS03788_0_GHO_Redster_Q7_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=1350&quality=80&width=1800"
+    kind: face
+    alt: Atomic Redster Q7 Revoshock C 2025/26 官方雪板商品图
+    source: Atomic 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/collections/ato-men-skis-all-skis

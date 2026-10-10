@@ -13,6 +13,12 @@ specs:
   terrain: 全山地 / 自由滑 / 粉雪
   skierLevel: 入门至专家
   bindingSetup: 裸板，不含固定器
+images:
+  - url: "https://cdn.amersports.com/b0c38342-6a61-4778-a751-b49f00cdc1aa/ATP_AA0030952_0_GHO_Bent_100_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445"
+    kind: face
+    alt: Atomic Bent 100 2025/26 官方雪板商品图
+    source: Atomic 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/products/bent-100-aa7366-202600
