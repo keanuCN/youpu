@@ -9,10 +9,12 @@ specs:
   lacingSystem: "双区 H5 Coiler BOA，独立调节鞋面上下区域"
   flex: "偏柔软、冲浪式脚感；两片可拆舌片支撑可调整内外侧弯曲"
   fit: "F.O.R.M. 三片式包裹结构，Intuition Pro Foam 3D Wrap 热塑鞋胆，3 点可调/可拆束带"
+  terrain: "Freeride、Powder（K2 官方列出的用途）"
   liner: "Intuition Pro Foam 3D Wrap 热塑鞋胆，带 SpaceHeater 保温层"
   innerCuff: "可调/可拆 3 点束带与 J-Bar 脚踝支撑"
   outsole: "Vibram Rollsole 外底与 Eco-Harshmellow 减震"
   warmthFeatures: "SpaceHeater 反射保温层；95% 消费后再生咖啡渣网布有助于吸湿除味"
+  footbed: "Eco-Harshmellow Pro Insole；官方描述具备减震与全天舒适性"
   sizeGuide: "官方男款可选 US 6–12；K2 官方换算表列有 US、EU、UK 与 CM 对照，具体半码映射见商品页尺码表"
 images:
   - url: "https://cdn11.bigcommerce.com/s-ncrhbujr7m/product_images/attribute_rule_images/4575552_source_1780349255.jpg"
