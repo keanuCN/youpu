@@ -39,7 +39,12 @@ editorial_scores:
   park: 7.5
   forgiveness: 7
   value: 8
-images: []
+images:
+  - url: "https://www.melbournesnowboard.com.au/cdn/shop/files/0015_Jones26-Men-Mountain-Twin.jpg?v=1740011983&width=1800"
+    kind: face
+    alt: Jones Mountain Twin 2025/26 单板商品图
+    source: Melbourne Snowboard 2026 商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://eu.jonessnowboards.com/de/products/mens-mountain-twin-snowboard-2026?variant=43731143983239

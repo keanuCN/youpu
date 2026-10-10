@@ -39,7 +39,12 @@ editorial_scores:
   park: 9.5
   forgiveness: 7
   value: 8.5
-images: []
+images:
+  - url: "https://scene7.zumiez.com/is/image/zumiez/product_main_medium/Capita-D.O.A.-Snowboard-2026-_399518-front-US.jpg"
+    kind: face
+    alt: CAPiTA Defenders of Awesome 2026 单板商品图
+    source: Zumiez 2026 商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://golgoda.com/PDF/25-26%20CAPiTA.pdf

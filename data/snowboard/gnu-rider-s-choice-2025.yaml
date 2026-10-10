@@ -152,7 +152,12 @@ editorial_scores:
   park: 7.5
   forgiveness: 6.5
   value: 8
-images: []
+images:
+  - url: "https://www.bestboards.gr/wp-content/uploads/2025/03/2526-GNU-B2B-RIDERS-CHOICE_02.jpg"
+    kind: face
+    alt: GNU Rider's Choice 2025/26 157.5cm 单板商品图
+    source: BestBoards 2025/26 商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://cad.gnu.com/2526-riders-choice-157-5
