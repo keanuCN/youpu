@@ -639,6 +639,66 @@
         filter: false
         compare: false
         order: 35
+      - key: sidecutDimensions
+        label: 各长度板型尺寸与半径
+        group: 尺寸与几何
+        type: text
+        filter: false
+        compare: false
+        order: 36
+      - key: profile
+        label: 板型与摇臂
+        group: 结构与技术
+        type: text
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 10
+      - key: core
+        label: 板芯
+        group: 结构与技术
+        type: text
+        filter: false
+        compare: false
+        order: 20
+      - key: construction
+        label: 结构
+        group: 结构与技术
+        type: text
+        filter: false
+        compare: false
+        order: 30
+      - key: technologies
+        label: 关键技术
+        group: 结构与技术
+        type: text
+        filter: false
+        compare: false
+        order: 40
+      - key: weightPerSki
+        label: 单只重量（179 cm）
+        group: 结构与技术
+        type: number
+        unit: g
+        filter: false
+        compare: false
+        order: 50
+      - key: baseEdgeAngle
+        label: 底刃角
+        group: 结构与技术
+        type: number
+        unit: °
+        filter: false
+        compare: false
+        order: 60
+      - key: sideEdgeAngle
+        label: 侧刃角
+        group: 结构与技术
+        type: number
+        unit: °
+        filter: false
+        compare: false
+        order: 70
       - key: terrain
         label: 适用场景
         group: 定位与配置
