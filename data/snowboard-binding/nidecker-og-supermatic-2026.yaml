@@ -19,6 +19,12 @@ specs:
   highbackAdjustment: "一体式前倾角调节；后仰高背可触发 Drop IN 踩入机构与 Active Strap"
   cushioning: "BankBeds 2.5° 倾斜接触面；Slip-N-Grip 降低鞋底滑入摩擦"
   warranty: "Nidecker 官方 2+1 年保修"
+images:
+  - url: "https://eu.nidecker.com/cdn/shop/files/N.26.BNU.SPM.BN-OG_Supermatic_Desert-1.webp?v=1786464048&width=1946"
+    kind: face
+    alt: Nidecker OG Supermatic 2026 固定器官方商品图
+    source: Nidecker 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://eu.nidecker.com/en-int/products/og-supermatic-2026

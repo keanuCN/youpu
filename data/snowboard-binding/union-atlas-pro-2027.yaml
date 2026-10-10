@@ -19,6 +19,12 @@ specs:
   highbackAdjustment: "Integrated Dial 一体式前倾角调节"
   cushioning: "Vaporlite HD 2.0 衬套、Forged Carbon 锻造碳踏板与 Non-Stick EVA；3° Canting"
   warranty: "底盘与后跟杯终身保修；其余部件 2 年保修"
+images:
+  - url: "https://unionbindingcompany.com/cdn/shop/files/UN26_ATLAS_PRO_STONE_1024x.jpg?v=1785333161"
+    kind: face
+    alt: Union Atlas Pro 2027 固定器官方商品图
+    source: Union Binding Company 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027
