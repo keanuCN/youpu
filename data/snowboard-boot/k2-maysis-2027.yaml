@@ -12,6 +12,12 @@ specs:
   innerCuff: "Conda 内靴系带提供脚跟固定与脚踝支撑"
   outsole: "This Grips! 双橡胶外底；EVA 双密度中底与 Harshmellow 减震"
   sizeGuide: "官方男款可选 US 5–15；K2 官方换算表列有 US、EU、UK 与 CM 对照，具体半码映射见商品页尺码表"
+images:
+  - url: "https://cdn11.bigcommerce.com/s-cppgporhzh/product_images/attribute_rule_images/11009064_source_1780342998.jpg"
+    kind: face
+    alt: K2 Maysis 2027 黑色款官方雪鞋商品图
+    source: K2 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/maysis-mens-snowboard-boot-kb261665?color=black

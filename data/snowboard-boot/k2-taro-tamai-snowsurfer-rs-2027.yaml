@@ -14,6 +14,12 @@ specs:
   outsole: "Vibram Rollsole 外底与 Eco-Harshmellow 减震"
   warmthFeatures: "SpaceHeater 反射保温层；95% 消费后再生咖啡渣网布有助于吸湿除味"
   sizeGuide: "官方男款可选 US 6–12；K2 官方换算表列有 US、EU、UK 与 CM 对照，具体半码映射见商品页尺码表"
+images:
+  - url: "https://cdn11.bigcommerce.com/s-ncrhbujr7m/product_images/attribute_rule_images/4575552_source_1780349255.jpg"
+    kind: face
+    alt: K2 Taro Tamai Snowsurfer RS 2027 黑棕款官方雪鞋商品图
+    source: K2 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/taro-tamai-snowsurfer-rs-mens-snowboard-boot-kb261654?color=black-brown

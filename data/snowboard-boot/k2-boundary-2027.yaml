@@ -12,6 +12,12 @@ specs:
   innerCuff: "3 点束带与内外 J-Bar；独立活动式鞋口"
   outsole: "This Grips! 橡胶外底，EVA 双密度中底与 Harshmellow 减震"
   sizeGuide: "官方男款当前可选 US 7–13；K2 官方换算表覆盖 US 5–15、EU 36.5–50、CM 23–33，具体换算按商品页尺码表"
+images:
+  - url: "https://cdn11.bigcommerce.com/s-cppgporhzh/product_images/attribute_rule_images/11009118_source_1780343025.jpg"
+    kind: face
+    alt: K2 Boundary 2027 棕色款官方雪鞋商品图
+    source: K2 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/boundary-mens-snowboard-boot-kb261666?color=brown
