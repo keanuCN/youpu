@@ -1,0 +1,33 @@
+{
+  "brand": "Atomic",
+  "model": "Redster Q7.8 Revoshock C + MI 12 GW",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-10",
+  "seedFile": "data/skis/atomic-redster-q7-8-2027.yaml",
+  "officialProductPage": {
+    "url": "https://www.atomic.com/en-us/products/redster-q7-8-revoshock-c-mi-12-gw-aa7470-202600",
+    "evidence": "Atomic's official page lists SKU AASS03786+, sizes 159/166/173/181 cm, per-size turn radii and tip/waist/tail geometry, Active Camber 0/100/0, 87° side edge, intermediate-to-advanced positioning, Power Woodcore (ash and poplar), Dura Cap Sidewall, Revoshock C, All-Condition Piste Shape, TI Powered, structured topsheet, World Cup Base Finish, Tip Protector, Pro Trak, and MI 12 GW binding bundle. The datasheet labels weight per ski and reports 2880 g at 173 cm.",
+    "seasonEvidence": "The current official product page uses Atomic article AASS03786+ and sizes 159/166/173/181; current reseller listings identify this specification set as 2026/27. The previous seed called the same image/SKU 2025/26 and is retired to draft pending verification of an actual prior-season item.",
+    "edgeAngleNote": "Atomic's datasheet rows state a 1.0° base edge while the feature text states 0.8°. The base edge angle is intentionally omitted due to this internal discrepancy."
+  },
+  "specifications": {
+    "lengthSpecs": [
+      {"lengthCm":159,"tipMm":130,"waistMm":83.5,"tailMm":115,"turnRadiusM":12.8},
+      {"lengthCm":166,"tipMm":132,"waistMm":84,"tailMm":117.5,"turnRadiusM":13.6},
+      {"lengthCm":173,"tipMm":134,"waistMm":84.5,"tailMm":118.8,"turnRadiusM":14.4},
+      {"lengthCm":181,"tipMm":136,"waistMm":85,"tailMm":120.5,"turnRadiusM":15.2}
+    ],
+    "weightPerSkiG": {"value":2880,"referenceLengthCm":173},
+    "sideEdgeAngleDeg":87,
+    "profile":"Active Camber 0/100/0",
+    "core":"Power Woodcore (ash and poplar)",
+    "construction":"Dura Cap Sidewall",
+    "technology":["Revoshock C","All-Condition Piste Shape","TI Powered","Structured Topsheet","World Cup Base Finish","Tip Protector","Pro Trak"],
+    "binding":"MI 12 GW"
+  },
+  "mappingNotes": [
+    "2880 g is Atomic's stated per-ski weight at the 173 cm reference size, for the system ski with binding.",
+    "Base edge angle is omitted because the official page's datasheet and feature copy disagree (1.0° vs 0.8°)."
+  ],
+  "imageRights": "The official product image URL is a source reference only; no explicit reuse license verified."
+}

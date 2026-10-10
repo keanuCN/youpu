@@ -1,0 +1,33 @@
+slug: atomic-redster-q7-8-2027
+category: skis
+brand: atomic
+model: Redster Q7.8 Revoshock C
+year: 2027
+title: Atomic Redster Q7.8 Revoshock C 2026/27
+one_liner: 全地域雪道系统板，173 cm 板腰 84.5 mm、半径 14.4 m，单支含固定器重量 2880 g。
+specs:
+  lengthOptions: 159 / 166 / 173 / 181 cm
+  waistWidth: 84.5
+  turnRadius: 14.4
+  turnRadiusReferenceLength: 173 cm
+  sidecutDimensions: "159 cm: 130-83.5-115 mm / 12.8 m；166 cm: 132-84-117.5 mm / 13.6 m；173 cm: 134-84.5-118.8 mm / 14.4 m；181 cm: 136-85-120.5 mm / 15.2 m"
+  profile: Active Camber 0/100/0
+  core: Power Woodcore（白蜡木与杨木）
+  construction: Dura Cap Sidewall
+  technologies: Revoshock C；All-Condition Piste Shape；TI Powered；Structured Topsheet；World Cup Base Finish；Tip Protector；Pro Trak
+  weightPerSki: 2880
+  weightReferenceLength: 173 cm
+  sideEdgeAngle: 87
+  terrain: 雪道 / 全地域
+  skierLevel: 中级至进阶
+  bindingSetup: 含 MI 12 GW 固定器
+images:
+  - url: "https://cdn.amersports.com/8fd450be-84c9-4bed-b255-b49f00cdfdd0/ATP_AASS03786_0_GHO_Redster_Q7.8_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=1350&quality=80&width=1800"
+    kind: face
+    alt: Atomic Redster Q7.8 Revoshock C 2026/27 官方雪板套装图
+    source: Atomic 官方产品页（图片使用授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.atomic.com/en-us/products/redster-q7-8-revoshock-c-mi-12-gw-aa7470-202600
+status: published
