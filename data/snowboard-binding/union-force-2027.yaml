@@ -8,7 +8,18 @@ one_liner: "Union 全山地工作马型固定器，官方列出 7/10 硬度与�
 specs:
   entrySystem: strap
   flex: 7
-  bootCompatibility: "Union 标准安装圆盘；适配普通绑带雪鞋"
+  flexFeel: stiff
+  mountingSystem: "Camber Disk；兼容 4x4、4x2 与 Burton Channel"
+  bootCompatibility: "适配普通绑带雪鞋；官方男款尺码 S–XL"
+  bindingSizeGuide: "Union 官方男靴尺码：S US 5.5–7.5 / M 8–10 / L 10.5–13 / XL 13–15"
+  baseplateMaterial: "S9 Duraflex ST 底盘；Molecular Bushing Suspension System 缓震衬套；3D 挤压铝后跟杯"
+  ankleStrap: "Exoframe 6.0 PU 芯脚踝绑带，兼顾贴合与缓冲"
+  toeStrap: "TS 5.0 UltraGrip 多位置防滑脚趾绑带"
+  buckles: "Magnesium S2 镁合金棘轮扣，钢制底座"
+  highback: "S19 Duraflex ST 分层结构高背"
+  highbackAdjustment: "Cam-Lock FLAD 前倾调节；EXO Quick-Lock 免工具绑带调节"
+  cushioning: "Non-Stick HP EVA 防积雪脚床；Molecular Bushing Suspension System；3° Canting"
+  warranty: "底盘与后跟杯终身保修；其他部件 1 年保修"
 images:
   - url: "https://unionbindingcompany.com/cdn/shop/files/UN26_FORCE_BLACK_1024x.jpg?v=1785333204"
     kind: face

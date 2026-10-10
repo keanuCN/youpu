@@ -8,7 +8,18 @@ one_liner: "Force 经典款全地形绑带固定器，官方页面列出 6/10 �
 specs:
   entrySystem: strap
   flex: 6
-  bootCompatibility: "Union 标准安装圆盘；适配普通绑带雪鞋"
+  flexFeel: medium
+  mountingSystem: "Camber Disk；兼容 4x4、4x2 与 Burton Channel"
+  bootCompatibility: "适配普通绑带雪鞋；官方男款尺码 S–L"
+  bindingSizeGuide: "Union 官方男靴尺码：S US 5.5–7.5 / M 8–10 / L 10.5–13；官方页面当前列出 S、M、L"
+  baseplateMaterial: "S4 Duraflex ST 底盘；Multi-Density Thermoformed EVA 缓震衬套；3D 挤压铝后跟杯"
+  ankleStrap: "Exoframe 4.0 轻量脚踝绑带"
+  toeStrap: "TS 2.1 UltraGrip 多位置防滑脚趾绑带，适配不同品牌雪鞋"
+  buckles: "Aluminum S2 铝合金棘轮扣，钢制底座"
+  highback: "S1 Duraflex ST 高背"
+  highbackAdjustment: "Cam-Lock FLAD 前倾调节；EXO Quick-Lock 免工具绑带调节"
+  cushioning: "Multi-Density Thermoformed EVA 缓震；3° Canting"
+  warranty: "底盘与后跟杯终身保修；其他部件 1 年保修"
 images:
   - url: "https://unionbindingcompany.com/cdn/shop/files/UN26_FORCE_CLASSIC_BLACK_1024x.jpg?v=1785333201"
     kind: face
