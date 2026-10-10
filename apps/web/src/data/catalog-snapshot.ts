@@ -3216,7 +3216,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.wobkey.com/cdn/shop/files/3500_dd7a8372-ed99-4a0a-a932-e4ed6e94d9bb.jpg?v=1703696458&width=900",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,

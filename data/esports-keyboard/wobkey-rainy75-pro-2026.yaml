@@ -16,7 +16,12 @@ specs:
   switchType: WOB Switch
   batteryCapacity: 7000
   backlight: RGB 背光
-images: []
+images:
+  - url: https://www.wobkey.com/cdn/shop/files/3500_dd7a8372-ed99-4a0a-a932-e4ed6e94d9bb.jpg?v=1703696458&width=900
+    kind: face
+    alt: WOBKEY Rainy 75 Pro 铝合金机械键盘
+    source: WOBKEY 官方 Rainy 75 商品页主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.wobkey.com/products/rainy75?variant=45239425302763
