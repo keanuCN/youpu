@@ -19,7 +19,12 @@ specs:
   hotSwap: true
   quickRelease: true
   batteryCapacity: 8000
-images: []
+images:
+  - url: https://www.monsgeek.com/wp-content/uploads/2025/06/MonsGeek-M2-V5-VIA-Keyboard-X5.png
+    kind: face
+    alt: MonsGeek M2 V5 VIA 机械键盘
+    source: MonsGeek 官方商品页标注的 M2 V5 VIA 商品图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.monsgeek.com/product/monsgeek-m2-v5-via-mechanical-keyboard/

@@ -12,7 +12,12 @@ specs:
   caseMaterial: 铝合金外壳
   backlight: RGB 背光
   mounting: 无钢软弹结构
-images: []
+images:
+  - url: https://cdn6.zhuocms.com/storage/wwwcherrycn/Game%20keyboard/202404/116617b7c5dccfb.jpg
+    kind: face
+    alt: CHERRY MX3.0S RGB 全尺寸电竞键盘
+    source: CHERRY 官方商品页图集；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.cherry.cn/kbgame-6214.html
