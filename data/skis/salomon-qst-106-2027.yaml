@@ -4,7 +4,7 @@ brand: salomon
 model: QST 106
 year: 2027
 title: Salomon QST 106 2026/27
-one_liner: QST 系列宽板腰 freeride 型号，官方 2026/27 冬季目录在售。
+one_liner: QST 系列宽板腰 freeride 型号，106 mm 板腰；173 cm 单支重量 1800 g。
 specs:
   lengthOptions: 157 / 165 / 173 / 181 / 189 cm
   waistWidth: 106
@@ -15,6 +15,8 @@ specs:
   core: 全杨木木芯
   construction: Full Sandwich Sidewalls；Ti Binding Reinforcement
   technologies: Cork Damplifier；Basalt Superlight Fibers；Fiberglass
+  weightPerSki: 1800
+  weightReferenceLength: 173 cm
   terrain: 自由滑 / 粉雪
   skierLevel: 进阶
   bindingSetup: 裸板，不含固定器
