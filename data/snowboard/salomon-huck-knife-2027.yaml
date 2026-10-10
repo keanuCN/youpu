@@ -17,14 +17,24 @@ price:
   max: 4176
   currency: CNY
 specs:
+  lengthOptions: 149 / 153 / 156 / 156W / 159 / 159W / 162
   length: 156
   waistWidth: 248
   sidecut: 7.1
   profile: Quad Camber
   profileFamily: camber
   shape: True Twin
-  core: Popster
+  core: Popster；Basalt Booster
+  fiberglass: TRIAX HD 玻纤；30% 生物基树脂
   base: Sintered
+  sizeSpecs:
+    - {size: "149", noseWidth: 286, waistWidth: 248, tailWidth: 286, sidecutRadius: 7.1}
+    - {size: "153", noseWidth: 292, waistWidth: 253, tailWidth: 292, sidecutRadius: 7.3}
+    - {size: "156", noseWidth: 295, waistWidth: 255, tailWidth: 295, sidecutRadius: 7.5}
+    - {size: "156W", noseWidth: 302, waistWidth: 262, tailWidth: 302, sidecutRadius: 7.6}
+    - {size: "159", noseWidth: 298, waistWidth: 257, tailWidth: 298, sidecutRadius: 7.7}
+    - {size: "159W", noseWidth: 305, waistWidth: 264, tailWidth: 305, sidecutRadius: 7.8}
+    - {size: "162", noseWidth: 302, waistWidth: 260, tailWidth: 302, sidecutRadius: 7.9}
   scenes:
     - freestyle
 images:

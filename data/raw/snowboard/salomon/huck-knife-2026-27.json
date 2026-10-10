@@ -1,0 +1,36 @@
+{
+  "brand": "Salomon",
+  "model": "Huck Knife",
+  "season": "2026-27",
+  "productCode": "L49292200",
+  "retrievedAt": "2026-10-11",
+  "sources": {
+    "officialProductUs": {
+      "url": "https://www.salomon.com/en-us/product/huck-knife-li1304",
+      "evidence": "Official Salomon product page identifies the 2027 Huck Knife as a true-twin freestyle board for jumps, transition and rails; lists intermediate/advanced level, qualitative Medium flex, Quad Camber profile, Popster core construction, Basalt Booster, sintered base, TRIAX HD fiberglass, 30% bio-based resin, Freestyle EB edge finishing, Royal Rubber Pads, ABS sidewalls and 4x2 inserts. The manufacturer flex label is kept qualitative and is not converted to the site's numeric flex scale."
+    }
+  },
+  "sizeTable": {
+    "source": "Official Salomon US product page, Profile & Dimensions",
+    "units": {
+      "noseWidth": "mm",
+      "waistWidth": "mm",
+      "tailWidth": "mm",
+      "sideCutRadius": "m"
+    },
+    "rows": [
+      {"size":"149","noseWidth":286,"waistWidth":248,"tailWidth":286,"sideCutRadius":7.1},
+      {"size":"153","noseWidth":292,"waistWidth":253,"tailWidth":292,"sideCutRadius":7.3},
+      {"size":"156","noseWidth":295,"waistWidth":255,"tailWidth":295,"sideCutRadius":7.5},
+      {"size":"156W","noseWidth":302,"waistWidth":262,"tailWidth":302,"sideCutRadius":7.6},
+      {"size":"159","noseWidth":298,"waistWidth":257,"tailWidth":298,"sideCutRadius":7.7},
+      {"size":"159W","noseWidth":305,"waistWidth":264,"tailWidth":305,"sideCutRadius":7.8},
+      {"size":"162","noseWidth":302,"waistWidth":260,"tailWidth":302,"sideCutRadius":7.9}
+    ]
+  },
+  "limits": [
+    "The official page does not provide effective edge length or stance range in the retrieved product table; these are not inferred.",
+    "Net weight is shown without a clear unit in the extracted table and is not copied into the seed.",
+    "The official qualitative Medium flex is not mapped to a numeric flex score."
+  ]
+}
