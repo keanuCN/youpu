@@ -10,7 +10,11 @@ specs:
   screenSize: 2
   stabilization: 三轴机械云台增稳
   verticalShooting: true
-images: []
+images:
+  - url: https://www-cdn.djiits.com/dps/57a9ccada7944fb81cdc9a8e4d3bcc70.jpg
+    kind: face
+    alt: DJI Osmo Pocket 3 口袋云台相机官方产品图
+    source: DJI 官方 Osmo Pocket 3 产品页主图；图片返回 image/jpeg；展示授权状态待核
 data_source:
   kind: crawl
   origin_url: https://www.dji.com/cn/osmo-pocket-3/specs

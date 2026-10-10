@@ -22,7 +22,11 @@ specs:
   controlSpeed: 120
   fillLightIlluminance: 40
   fillLightColorTemperature: 2500 K 至 6000 K
-images: []
+images:
+  - url: https://www-cdn.djiits.com/dps/a7708af25a1dc35111970080310f53f8.jpg
+    kind: face
+    alt: DJI Osmo Mobile 7 系列手机稳定器官方产品图
+    source: DJI 官方 Osmo Mobile 7 系列产品页主图（该页面覆盖 7P）；图片返回 image/jpeg；展示授权状态待核
 data_source:
   kind: crawl
   origin_url: https://www.dji.com/cn/osmo-mobile-7-series/specs

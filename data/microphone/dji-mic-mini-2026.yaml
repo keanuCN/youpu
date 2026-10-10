@@ -24,7 +24,11 @@ specs:
   maxTransmissionDistance: 400
   wirelessMode: GFSK 2Mbps
   bluetoothProtocol: 蓝牙 5.3
-images: []
+images:
+  - url: https://www-cdn.djiits.com/dps/0c9daf2d32521c9310b9d53b1bbb4121.jpg
+    kind: face
+    alt: DJI Mic Mini 无线麦克风官方产品图
+    source: DJI 官方 Mic Mini 产品页主图；图片返回 image/jpeg；展示授权状态待核
 data_source:
   kind: crawl
   origin_url: https://www.dji.com/cn/mic-mini/specs

@@ -14,7 +14,11 @@ specs:
   obstacleSensing: omnidirectional
   subjectTracking: true
   verticalShooting: true
-images: []
+images:
+  - url: https://www-cdn.djiits.com/dps/2c41dfd2287630138f23b84aaa543727.jpg
+    kind: face
+    alt: DJI Mini 4 Pro 无人机官方产品图
+    source: DJI 官方 Mini 4 Pro 产品页主图；图片返回 image/jpeg；展示授权状态待核
 data_source:
   kind: crawl
   origin_url: https://www.dji.com/cn/mini-4-pro/specs

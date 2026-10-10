@@ -10,7 +10,11 @@ specs:
   cameraSensor: 1/1.3 英寸影像传感器
   flightTime: 23
   batteryCapacity: 2150
-images: []
+images:
+  - url: https://www-cdn.djiits.com/dps/1f935fa76926168b331d6b19ccf706ae.jpg
+    kind: face
+    alt: DJI Avata 2 无人机官方产品图
+    source: DJI 官方 Avata 2 产品页主图；图片返回 image/jpeg；展示授权状态待核
 data_source:
   kind: crawl
   origin_url: https://www.dji.com/cn/avata-2/specs
