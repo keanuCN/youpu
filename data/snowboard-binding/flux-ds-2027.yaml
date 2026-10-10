@@ -18,6 +18,12 @@ specs:
   highback: "Resistor Highback；Super Tough Nylon 中等硬度材料"
   highbackAdjustment: "Toolless Lever、五孔旋转调节、Micro Adjuster；每格约 2.5° 前倾"
   cushioning: "FootOn 脚床、Cushion Stabilizer、可分别调整的 toe/heel cushion"
+images:
+  - url: "https://flux-bindings.com/cdn/shop/files/2627-ds-mhak-camo.png?v=1787708466&width=1160"
+    kind: face
+    alt: FLUX DS 2026/27 官方固定器商品图
+    source: FLUX 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2627-ds

@@ -18,6 +18,12 @@ specs:
   highback: "Buffalo Highback；Super Tough Nylon 中等硬度材料"
   highbackAdjustment: "Slide Highback Rotation、Toolless Lever、Micro Adjuster；每格约 2.5° 前倾"
   cushioning: "Boost FootOn 比标准脚床高 4 mm；Heel Up；可调 toe/heel cushion"
+images:
+  - url: "https://flux-bindings.com/cdn/shop/files/2627-cv-purple.png?v=1787656749&width=1160"
+    kind: face
+    alt: FLUX CV 2026/27 官方固定器商品图
+    source: FLUX 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2627-cv

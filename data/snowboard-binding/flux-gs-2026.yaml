@@ -18,6 +18,12 @@ specs:
   highback: "Women's Resister Highback，Super Tough Nylon"
   highbackAdjustment: "Micro Adjuster 每格约 2.5° 前倾"
   cushioning: "FootOn 脚床、可调 toe/heel cushion 与可拆换 Custom Stabilizers"
+images:
+  - url: "https://flux-bindings.com/cdn/shop/files/60_1_f25-bdg-302-gs-blk.png?v=1705538624&width=1160"
+    kind: face
+    alt: FLUX GS 2025/26 官方固定器商品图
+    source: FLUX 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526gs

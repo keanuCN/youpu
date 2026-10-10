@@ -18,6 +18,12 @@ specs:
   highback: "W-Props Carbon Reinforced 高背，含碳纤维增强与滑动衬片"
   highbackAdjustment: "Redux Lean Adjuster 单动作调节；Micro Adjuster 每格约 2.5° 前倾"
   cushioning: "Boost FootOn+ 脚床；可调 toe/heel cushion 与响应稳定器"
+images:
+  - url: "https://flux-bindings.com/cdn/shop/files/2_1_xv__bronze_bs-1.png?v=1757410220&width=1160"
+    kind: face
+    alt: FLUX XV 2025/26 官方固定器商品图
+    source: FLUX 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526xv
