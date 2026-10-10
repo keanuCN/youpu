@@ -17,3 +17,9 @@ data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-tls-boots
 status: published
+images:
+  - url: "https://www.nitrosnowboards.com/cdn/shop/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1-1060x1200-4b52f99c-63b7-43d7-8b10-0694b2c7c44a.jpg?v=1788163886&width=1060"
+    kind: face
+    alt: Nitro Venture TLS 2027 官方雪鞋商品图
+    source: Nitro 官方商品页（图片使用授权待核）
+    sort_order: 0

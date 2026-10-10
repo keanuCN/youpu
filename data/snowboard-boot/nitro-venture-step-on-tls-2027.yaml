@@ -20,3 +20,9 @@ data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-step-on-tls-boots
 status: published
+images:
+  - url: "https://www.nitrosnowboards.com/cdn/shop/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1060"
+    kind: face
+    alt: Nitro Venture Step On TLS 2027 灰色款官方雪鞋商品图
+    source: Nitro 官方商品页（图片使用授权待核）
+    sort_order: 0

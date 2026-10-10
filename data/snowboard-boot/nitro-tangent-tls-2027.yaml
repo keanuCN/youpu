@@ -18,3 +18,9 @@ data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/tangent-tls-boots-1
 status: published
+images:
+  - url: "https://www.nitrosnowboards.com/cdn/shop/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=2322"
+    kind: face
+    alt: Nitro Tangent TLS 2027 黑色款官方雪鞋商品图
+    source: Nitro 官方商品页（图片使用授权待核）
+    sort_order: 0

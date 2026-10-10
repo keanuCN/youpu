@@ -19,3 +19,9 @@ data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-pro-tls-boots
 status: published
+images:
+  - url: "https://www.nitrosnowboards.com/cdn/shop/files/848713-004_Venture-Pro-TLS-Boots_X-Bryan-Fox-26-27_Product-1-1050x1200-b16c651f-af5e-45db-8f48-8ec7b15da6d1.jpg?v=1788162591&width=1050"
+    kind: face
+    alt: Nitro Venture Pro TLS 2027 官方雪鞋商品图
+    source: Nitro 官方商品页（图片使用授权待核）
+    sort_order: 0
