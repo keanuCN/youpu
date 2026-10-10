@@ -32,6 +32,21 @@
 3. 配置自动化、异地保存且有保留策略的数据库备份；当前确认只有一次手工备份与恢复演练，未发现站点自动备份定时任务。
 4. 向站长平台提交 sitemap，并观察首批真实访问 / 错误日志。
 
+### PostgreSQL 自动备份模板（尚未在线启用）
+
+仓库提供 `deploy/backup-postgres.sh` 和 systemd service/timer 模板。脚本通过 Docker Compose 在 PostgreSQL 容器内执行自定义格式 `pg_dump`，随后用容器内 `pg_restore --list` 校验归档，写入 SHA-256 校验文件，并默认保留 30 天。锁文件防止重叠运行；备份目录使用仅 root 可读写权限。
+
+当前部署尚未安装或启用该定时器，也没有配置异地 COS 上传。执行部署时需先核实 compose 与 `.env` 的服务器路径、磁盘空间和备份策略，再安装到 `/etc/systemd/system/`；配置 `/etc/youpu/backup.env`（仅路径和保留天数，不要把数据库密码写入此文件，Compose `.env` 仍由 Docker Compose 安全读取），例如：
+
+```ini
+YOUPU_COMPOSE_FILE=/opt/youpu/docker/compose.yml
+YOUPU_ENV_FILE=/opt/youpu/.env
+YOUPU_PG_BACKUP_DIR=/var/backups/youpu/postgres
+YOUPU_PG_BACKUP_RETENTION_DAYS=30
+```
+
+手动运行一次 service 并完成隔离恢复演练后，再 enable timer。每日计划时间为 UTC 03:17（加最多 5 分钟随机延迟）；异地备份仍是正式开放前的独立事项。
+
 内测资源取舍：Elasticsearch 未启用（`es=false`），搜索由 PostgreSQL 兜底；这不是 API 健康故障。
 
 **禁止重置生产 schema。** 旧步骤中的 `DROP SCHEMA public CASCADE` 会删除现有表与数据，已从操作流程移除。若 `_prisma_migrations` 历史缺失，应先比对实际 schema 与迁移文件，再制定可审阅、保留数据的基线方案；不得直接清库或全量 seed。

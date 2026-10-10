@@ -1,0 +1,12 @@
+[Unit]
+Description=Create and verify a Youpu PostgreSQL backup
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/youpu/backup.env
+ExecStart=/opt/youpu/deploy/backup-postgres.sh
+User=root
+Group=root
+UMask=0077

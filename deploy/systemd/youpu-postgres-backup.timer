@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Youpu PostgreSQL backup
+
+[Timer]
+OnCalendar=*-*-* 03:17:00 UTC
+Persistent=true
+RandomizedDelaySec=300
+Unit=youpu-postgres-backup.service
+
+[Install]
+WantedBy=timers.target
