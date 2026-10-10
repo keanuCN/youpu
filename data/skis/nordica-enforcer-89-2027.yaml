@@ -4,9 +4,21 @@ brand: nordica
 model: Enforcer 89
 year: 2027
 title: Nordica Enforcer 89 2026/27
-one_liner: Enforcer 系列中偏雪道取向型号，列入 Nordica 2026/27 官方新品目录。
+one_liner: 26/27 Enforcer 系列偏雪道取向型号，双层钛金属与 Pulse Core 增强操控和稳定；官方提供 167–185 cm 四种长度。
 specs:
+  lengthOptions: 167 / 173 / 179 / 185 cm
   waistWidth: 89
+  turnRadius: 16.5
+  turnRadiusReferenceLength: 167 cm
+  sidecutDimensions: "167 cm: 120-89-108 mm；185 cm: 124-89-112 mm（官方展示尺寸）；半径：167/16.5、173/17、179/17.5、185/18 m"
+  profile: All Mountain Rocker（板头、板尾摇臂）
+  core: Performance Wood + Pulse Core
+  construction: 2 Ti Pulse Core；金属夹层与侧墙结构
+  technologies: True Tip；Unlocked Tail Shape
+  weightPerPair: 4120
+  weightReferenceLength: 185 cm
+  baseEdgeAngle: 0.9
+  sideEdgeAngle: 87.5
   terrain: 雪道 / 全山地
   skierLevel: 中级至进阶
   bindingSetup: 裸板，固定器另配
