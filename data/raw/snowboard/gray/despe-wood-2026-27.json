@@ -1,0 +1,45 @@
+{
+  "brand": "GRAY",
+  "model": "DESPE WOOD",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-10",
+  "seedFile": "data/snowboard/gray-despe-wood-2027.yaml",
+  "sources": {
+    "officialSeasonCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+      "title": "2026-2027 GRAY SNOWBOARDS PERFECT GUIDE — CARVING CATEGORY",
+      "evidence": "Official catalog lists all seven 26/27 sizes (48, 53n, 54, 58, 59w, 62, 63w), full per-size geometry, stance range, setback, insert count, camber, running base, and 1.8 mm stainless edges. It describes a directional hammerhead with progressive triple sidecut and a medium-soft flex for accessible low-to-mid-speed carving.",
+      "limits": "The catalog is primary manufacturer data, not an independent ride test. English text extraction of the stiffness row is inconsistent, so no numeric stiffness ratings are added. Weight is not listed in the referenced table."
+    },
+    "officialSeasonProduct": {
+      "url": "https://graysnowboards.co.jp/product-2627-eng/",
+      "evidence": "Confirms the 26/27 product lineup and entry-level carving positioning; the 59w and 63w wide versions are newly added for this season."
+    },
+    "officialSeasonTechnology": {
+      "url": "https://graysnowboards.co.jp/tech-2627-eng/",
+      "evidence": "Confirms Active Camber is newly designed across all DESPE WOOD lengths for 26/27, and wide versions were added for the 58 and 62 families (catalog model suffixes 59w and 63w)."
+    }
+  },
+  "unitsAndMapping": {
+    "sizeLabels": "Catalog labels 48, 53n, 54, 58, 59w, 62, 63w are represented in the seed as 148, 153N, 154, 158, 159W, 162, 163W centimetres.",
+    "dimensions": "Catalog board lengths, widths, stance, camber, and setbacks are millimeters unless the field is explicitly a model size in centimeters. Sidecut radius source values are millimeters and are converted to meters in the product sizeSpecs string.",
+    "sidecutRadii": "Three progressive sidecut radii are retained in the manufacturer's printed order.",
+    "profileAndCore": "Active Camber is from the official season technology page. The catalog construction diagram identifies Paulownia/Light Poplar Core with fiberglass layers; the model is a wood-and-fiberglass sandwich construction.",
+    "stiffness": "Not mapped from the catalog's parsed stiffness row because extracted values appear malformed and inconsistent with row labels; no numbers are inferred."
+  },
+  "sizeRows": [
+    {"catalogSize":"48","seedSize":"148","overallLengthMm":1480,"effectiveEdgeMm":1280,"contactLengthMm":1176,"waistWidthMm":242,"sidecutRadiusMm":[8200,7600,8600],"sidecutOffsetMm":-35,"noseLengthMm":167,"noseWidthMm":296,"noseHeightMm":25,"tailLengthMm":137,"tailWidthMm":284,"tailHeightMm":23,"camberMm":8,"stanceWidthMm":[440,520],"insertQuantity":"10+10","setbackMm":35,"edge":"1.8mm stainless steel","runningBase":"P-Tex 3000 Graphite Sintered"},
+    {"catalogSize":"53n","seedSize":"153N","overallLengthMm":1530,"effectiveEdgeMm":1320,"contactLengthMm":1220,"waistWidthMm":242,"sidecutRadiusMm":[8800,8200,9200],"sidecutOffsetMm":-35,"noseLengthMm":170,"noseWidthMm":296,"noseHeightMm":25,"tailLengthMm":140,"tailWidthMm":284,"tailHeightMm":24,"camberMm":8,"stanceWidthMm":[460,540],"insertQuantity":"10+10","setbackMm":35,"edge":"1.8mm stainless steel","runningBase":"P-Tex 3000 Graphite Sintered"},
+    {"catalogSize":"54","seedSize":"154","overallLengthMm":1540,"effectiveEdgeMm":1320,"contactLengthMm":1220,"waistWidthMm":252,"sidecutRadiusMm":[8800,8200,9200],"sidecutOffsetMm":-35,"noseLengthMm":175,"noseWidthMm":306,"noseHeightMm":26,"tailLengthMm":145,"tailWidthMm":294,"tailHeightMm":25,"camberMm":8,"stanceWidthMm":[500,580],"insertQuantity":"10+10","setbackMm":35,"edge":"1.8mm stainless steel","runningBase":"P-Tex 3000 Graphite Sintered"},
+    {"catalogSize":"58","seedSize":"158","overallLengthMm":1580,"effectiveEdgeMm":1360,"contactLengthMm":1254,"waistWidthMm":256,"sidecutRadiusMm":[9300,8600,9800],"sidecutOffsetMm":-35,"noseLengthMm":178,"noseWidthMm":310,"noseHeightMm":26.5,"tailLengthMm":148,"tailWidthMm":298,"tailHeightMm":26,"camberMm":9,"stanceWidthMm":[520,600],"insertQuantity":"10+10","setbackMm":35,"edge":"1.8mm stainless steel","runningBase":"P-Tex 3000 Graphite Sintered"},
+    {"catalogSize":"59w","seedSize":"159W","overallLengthMm":1590,"effectiveEdgeMm":1360,"contactLengthMm":1254,"waistWidthMm":266,"sidecutRadiusMm":[9300,8600,9800],"sidecutOffsetMm":-35,"noseLengthMm":183,"noseWidthMm":320,"noseHeightMm":29.5,"tailLengthMm":153,"tailWidthMm":308,"tailHeightMm":28,"camberMm":9,"stanceWidthMm":[520,600],"insertQuantity":"10+10","setbackMm":35,"edge":"1.8mm stainless steel","runningBase":"P-Tex 3000 Graphite Sintered"},
+    {"catalogSize":"62","seedSize":"162","overallLengthMm":1620,"effectiveEdgeMm":1400,"contactLengthMm":1300,"waistWidthMm":258,"sidecutRadiusMm":[10200,9400,10800],"sidecutOffsetMm":-35,"noseLengthMm":175,"noseWidthMm":310,"noseHeightMm":26,"tailLengthMm":145,"tailWidthMm":299,"tailHeightMm":25,"camberMm":10,"stanceWidthMm":[540,620],"insertQuantity":"10+10","setbackMm":35,"edge":"1.8mm stainless steel","runningBase":"P-Tex 3000 Graphite Sintered"},
+    {"catalogSize":"63w","seedSize":"163W","overallLengthMm":1630,"effectiveEdgeMm":1400,"contactLengthMm":1300,"waistWidthMm":268,"sidecutRadiusMm":[10200,9400,10800],"sidecutOffsetMm":-35,"noseLengthMm":180,"noseWidthMm":320,"noseHeightMm":26.5,"tailLengthMm":150,"tailWidthMm":309,"tailHeightMm":25.5,"camberMm":10,"stanceWidthMm":[540,620],"insertQuantity":"10+10","setbackMm":35,"edge":"1.8mm stainless steel","runningBase":"P-Tex 3000 Graphite Sintered"}
+  ],
+  "unverified": [
+    "No model weight or numeric per-size stiffness values are added.",
+    "The Japanese MSRP conversion in the seed is a currency normalization, not a verified China-market retail price.",
+    "Image reuse permission is not established; the official image URL is a reference only."
+  ],
+  "imageRights": "No explicit reuse license verified; do not copy official image to hosted production assets without permission or original photography."
+}
