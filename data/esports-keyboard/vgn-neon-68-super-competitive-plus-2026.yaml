@@ -19,7 +19,12 @@ specs:
   driver: V HUB 网页驱动
   pollingRate: 8000
   rapidTriggerPrecision: 0.001
-images: []
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0775/4927/3398/files/33ffae0206d3c7cd1aadac09875e5e96_ae4f51ed-1234-4360-a45b-12905c7f6735_1024x1024.jpg?v=1769500977"
+    kind: face
+    alt: VGN Neon 68 HE 磁轴键盘
+    source: VGN 官方商品页 JSON-LD 主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://vgnlab.com/products/vgn-neon-68he-super-competitive-wireless-magnetic-switch-keyboard

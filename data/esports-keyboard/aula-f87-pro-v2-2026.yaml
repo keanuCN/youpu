@@ -15,7 +15,12 @@ specs:
   backlight: 南向 RGB 背光
   hotSwap: true
   driver: AULA Driver
-images: []
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0552/2803/9264/files/AULA_F87_PRO_V2_16.1.png?v=1769502456&width=900"
+    kind: face
+    alt: AULA F87 Pro V2 无线机械键盘
+    source: AULA 官方商品页 JSON-LD 主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://aulagear.com/products/aula-f87-pro-v2

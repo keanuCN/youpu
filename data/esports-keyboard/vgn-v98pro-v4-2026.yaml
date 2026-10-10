@@ -15,7 +15,12 @@ specs:
   backlight: RGB 背光
   customScreen: true
   driver: V HUB
-images: []
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0775/4927/3398/files/bfaae0976f84910970d105ca2aac2c08_1024x1024.jpg?v=1780296191"
+    kind: face
+    alt: VGN V98 Pro V4 无线机械键盘
+    source: VGN 官方商品页 JSON-LD 主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://vgnlab.com/products/vgn-v98-pro-v4-wireless-mechanical-keyboard

@@ -16,7 +16,12 @@ specs:
   backlight: RGB 背光 / 3D Light Wing 灯箱
   hotSwap: true
   driver: DAREU 网页驱动
-images: []
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0705/7172/0858/files/cool68-3.png?v=1764657562&width=1920"
+    kind: face
+    alt: 达尔优 COOL68 机械键盘
+    source: Dareu 官方商品页 JSON-LD 产品图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.dareu.us/products/cool68

@@ -22,7 +22,12 @@ specs:
   batteryCapacity: 10000
   driver: V HUB
   keycapMaterial: PBT
-images: []
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0775/4927/3398/files/ce315e972c541e4953f1a898508b59ec_1024x1024.jpg?v=1762153398"
+    kind: face
+    alt: VGN V87 V2 无线机械键盘
+    source: VGN 官方商品页 JSON-LD 主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://vgnlab.com/products/vgn-v87-v2-wireless-mechanical-gaming-keyboard

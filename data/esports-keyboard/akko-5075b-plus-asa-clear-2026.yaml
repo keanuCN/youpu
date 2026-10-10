@@ -15,7 +15,12 @@ specs:
   driver: Akko Cloud Driver
   hotSwap: true
   keycapMaterial: 透明 PC 键帽
-images: []
+images:
+  - url: https://en.akkogear.com/wp-content/uploads/2024/11/5075B-Plus-ASA-Clear-1.png
+    kind: face
+    alt: Akko 5075B Plus ASA Clear 机械键盘
+    source: Akko 官方商品页 JSON-LD 主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://en.akkogear.com/product/5075b-plus-asa-clear-mechanical-keyboard/

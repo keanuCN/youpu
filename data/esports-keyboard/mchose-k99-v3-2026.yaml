@@ -18,7 +18,12 @@ specs:
   pollingRate: 8000
   batteryCapacity: 10000
   driver: MCHOSE M HUB
-images: []
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0846/5727/5175/files/mchose-official-black-gold-icy-creamsicle-switch-mchose-k99-v3-98-layout-wireless-mechanical-keyboard-1234606053.jpg?v=1778497876&width=1920"
+    kind: face
+    alt: MCHOSE K99 V3 三模机械键盘
+    source: MCHOSE 官方商品页 JSON-LD 主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.mchose.store/products/mchose-k99-v3-keyboard

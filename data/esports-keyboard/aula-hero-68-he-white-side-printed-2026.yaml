@@ -15,7 +15,12 @@ specs:
   hotSwap: true
   pollingRate: 8000
   driver: AULA Driver
-images: []
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0552/2803/9264/files/AULA_HERO_68_HE_main_001.png?v=1744355575&width=900"
+    kind: face
+    alt: AULA HERO 68 HE 磁轴机械键盘
+    source: AULA 官方商品页 JSON-LD 主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://aulagear.com/products/aula-hero68-he

@@ -21,7 +21,12 @@ specs:
   driver: Armoury Crate / 奥创极速网页版
   hotSwap: true
   customScreen: true
-images: []
+images:
+  - url: https://dlcdnwebimgs.asus.com.cn/gain/60038A14-350D-4865-B273-603AD4B3196E
+    kind: face
+    alt: ROG Azoth Extreme 20 周年纪念版键盘
+    source: 华硕 ROG 官方商品页图片；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://rog.asus.com.cn/keyboards/keyboards/aura-rgb/rog-azoth-extreme-edition-20/spec/

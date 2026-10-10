@@ -17,7 +17,12 @@ specs:
   pollingRate: 8000
   rapidTriggerPrecision: 0.001
   actuationRange: 0.001–3.3mm
-images: []
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0691/4942/5882/files/ATK_RS6_White.jpg?v=1763534451&width=1920"
+    kind: face
+    alt: ATK RS6 Ultra 白色机械键盘
+    source: ATK 官方商品页 JSON-LD 白色款图片；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.atk.store/products/atk-rs6-aluminum-hall-effect-keyboard

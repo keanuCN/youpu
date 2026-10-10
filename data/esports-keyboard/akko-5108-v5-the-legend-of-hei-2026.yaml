@@ -18,7 +18,12 @@ specs:
   batteryCapacity: 10000
   keycapMaterial: PBT
   caseMaterial: ABS
-images: []
+images:
+  - url: https://en.akkogear.com/wp-content/uploads/2026/05/The-Legend-of-Hei-5108-V5-1.png
+    kind: face
+    alt: Akko 5108 V5 黑神话联名机械键盘
+    source: Akko 官方商品页 JSON-LD 主图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://en.akkogear.com/product/the-legend-of-hei-5108-v5-mechanical-keyboard/
