@@ -4,9 +4,16 @@ brand: salomon
 model: "Launch BOA SJ BOA"
 year: 2027
 title: "Salomon Launch BOA SJ BOA 2027"
-one_liner: "官方档案型号；BOA 配合内部脚跟锁定系统。尺码与脚感以实际试穿为准。"
+one_liner: "中等硬度全山地/自由式雪鞋，单 BOA 系带与 Str8jkt Pro 三点锁跟系统。"
 specs:
-  lacingSystem: "BOA 配合内部脚跟锁定系统"
+  lacingSystem: "单 BOA Coiler 系带；BOA 驱动 Str8jkt Pro 三点式脚跟锁定"
+  flex: "中等（Salomon 官方分类）"
+  fit: "标准宽度；全山地/自由式取向，适合中级至高阶"
+  liner: "Comfort 热塑鞋胆，柔软包裹并采用 Full Custom Fit 多密度泡棉"
+  innerCuff: "Str8jkt BOA Pro 三点式鞋跟带，滑动扣具可微调贴合"
+  outsole: "Feather 2.0 轻量外底：EVA 与 Contagrip 橡胶组合，提供抓地和吸震"
+  footbed: "OrthoLite C2 双密度鞋垫"
+  sizeGuide: "官方男款页面尺码 US 7–13.5"
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670

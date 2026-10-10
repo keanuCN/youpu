@@ -4,9 +4,15 @@ brand: salomon
 model: "Titan BOA"
 year: 2027
 title: "Salomon Titan BOA 2027"
-one_liner: "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。"
+one_liner: "柔软全山地入门雪鞋，单 BOA 系带、Universal 热塑鞋胆与轻量 D-Light 外底。"
 specs:
-  lacingSystem: "BOA 系带"
+  lacingSystem: "单 BOA 系带，H4 BOA 旋钮与 TX3 纺织鞋带"
+  flex: "柔软（Salomon 官方分类）"
+  fit: "标准宽度；全山地用途，官方适用等级为新手/中级"
+  liner: "Universal 热塑鞋胆，Full Custom Fit 多密度泡棉"
+  outsole: "D-Light 低轮廓全 EVA 外底，轻量并提供缓震与板感"
+  footbed: "Imprint 舒适耐用鞋垫"
+  sizeGuide: "官方男款页面尺码 US 7–13.5"
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/titan-boa-lg5971

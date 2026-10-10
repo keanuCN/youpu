@@ -4,10 +4,17 @@ brand: salomon
 model: "Trek"
 year: 2027
 title: "Salomon Trek 2027"
-one_liner: "官方档案型号；徒步/登山取向单板雪鞋。尺码与脚感以实际试穿为准。"
+one_liner: "登山巡航取向单板雪鞋，铰接式鞋口配 Hike & Ride BOA，适合上坡行走与下坡滑行。"
 specs:
-  lacingSystem: "徒步/登山取向单板雪鞋"
-  terrain: 分体板徒步/登山
+  lacingSystem: "Hike & Ride BOA 可调行走活动范围，另配传统鞋带与 Powerstrap"
+  flex: "偏硬（Salomon 官方分类）"
+  fit: "标准宽度；Touring 登山巡航用途，官方适用等级为高阶"
+  terrain: "雪场外巡航/登山用途；铰接式鞋口支持上坡活动与下坡锁定"
+  liner: "Drive 支撑型透气鞋胆，带 Split-Mode 活动区；Full Custom Fit Pro 热塑多密度泡棉"
+  innerCuff: "可调内部鞋跟带固定鞋胆；Powerstrap 可调支撑"
+  outsole: "MTN GOAT 橡胶外底，含 30% 天然橡胶；Contagrip W 抓地配方与 Fuze Surge 中底"
+  footbed: "OrthoLite C3 双密度鞋垫，带成型后跟杯"
+  sizeGuide: "官方男款页面尺码 US 7–12.5"
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/trek-lg8695

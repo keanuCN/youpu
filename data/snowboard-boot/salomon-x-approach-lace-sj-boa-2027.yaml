@@ -4,9 +4,16 @@ brand: salomon
 model: "X Approach Lace SJ BOA"
 year: 2027
 title: "Salomon X Approach Lace SJ BOA 2027"
-one_liner: "官方档案型号；鞋带与 BOA 脚跟锁定组合。尺码与脚感以实际试穿为准。"
+one_liner: "中等硬度公园/自由式取向雪鞋，传统鞋带搭配 BOA 驱动 Str8jkt 脚跟锁定。"
 specs:
-  lacingSystem: "鞋带与 BOA 脚跟锁定组合"
+  lacingSystem: "传统鞋带；BOA 驱动 Str8jkt 脚跟锁定系统"
+  flex: "中等（Salomon 官方分类）"
+  fit: "标准宽度；官方标注男女通用，全山地/自由式定位"
+  liner: "Comfort 全热塑鞋胆，柔软包裹与 Full Custom Fit 多密度泡棉"
+  innerCuff: "BOA 激活 Str8jkt 鞋跟带，减少脚跟抬起"
+  outsole: "Feather 2.0 轻量外底：EVA 与 Contagrip 橡胶组合，提供抓地和吸震"
+  footbed: "OrthoLite C2 双密度鞋垫"
+  sizeGuide: "官方男女通用页面尺码 US 5–13.5"
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/x-approach-lace-sj-boa-li5866
