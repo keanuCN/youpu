@@ -18,7 +18,12 @@ specs:
   backlight: RGB 背光
   batteryCapacity: 10000
   driver: Rapoo A Hub
-images: []
+images:
+  - url: https://rpw.rapoo.cn/goods/gallery/1758851973229.jpg
+    kind: face
+    alt: 雷柏 V700DIY-98 长续航版机械键盘
+    source: 雷柏中国官网 V700DIY-98 长续航版商品页图集；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.rapoo.cn/product/871

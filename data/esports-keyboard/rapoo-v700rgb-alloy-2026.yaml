@@ -14,7 +14,12 @@ specs:
   caseMaterial: 铝合金上盖
   keycapMaterial: 双色注塑
   driver: Rapoo 驱动软件
-images: []
+images:
+  - url: https://rpw.rapoo.cn/goods/gallery/1603712684711.jpg
+    kind: face
+    alt: 雷柏 V700RGB 合金版机械键盘
+    source: 雷柏中国官网 V700RGB 合金版商品页图集；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.rapoo.cn/product/94
