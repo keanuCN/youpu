@@ -15,6 +15,12 @@ specs:
   warmthFeatures: "Sleeping Bag 反射隔热膜"
   sizeGuide: "官方男款尺码表覆盖 US 6–15、EU 38–48、UK 5–14、Mondo 24–33；当前页面尺码范围 US 7–13，半码对应以商品页逐码表为准"
   bindingCompatibility: "仅兼容 Burton Step On 固定器；不可与普通绑带固定器搭配"
+images:
+  - url: "https://www.burton.com/cdn/shop/files/2031910A02_1.webp?v=1779495951&width=1200"
+    kind: face
+    alt: Burton Ion Step On 2027 官方雪鞋商品图
+    source: Burton 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191

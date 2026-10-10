@@ -15,6 +15,12 @@ specs:
   warmthFeatures: "DRYRIDE Heat Cycle 内衬；反射隔热膜"
   sizeGuide: "官方男款尺码表覆盖 US 6–15、EU 38–48、UK 5–14、Mondo 24–33；半码对应以商品页逐码表为准"
   bindingCompatibility: "普通固定器兼容；非 Step On 专用款"
+images:
+  - url: "https://www.burton.com/cdn/shop/files/1508619AUA_1.webp?v=1790184461&width=1200"
+    kind: face
+    alt: Burton Photon BOA 2027 官方雪鞋商品图
+    source: Burton 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861
