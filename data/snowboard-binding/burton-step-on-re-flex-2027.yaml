@@ -7,7 +7,14 @@ title: "Burton Step On Re:Flex 2027"
 one_liner: "Step On 快穿系统的 Re:Flex 版本，须与 Step On 雪鞋配套使用。"
 specs:
   entrySystem: step-in
+  flexFeel: medium
+  mountingSystem: "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc"
   bootCompatibility: "仅兼容 Burton Step On 雪鞋；Re:Flex 多板型安装"
+  bindingSizeGuide: "Burton 男款 Step On 官方靴码：S US 6–8 / EU 38–41；M 8.5–10.5 / EU 41.5–43.5；L 11–13 / EU 44–46；XL 14–15 / EU 47–48。仅配对应男款 Step On 雪鞋"
+  baseplateMaterial: "30% 短切玻纤/尼龙复合材料"
+  highbackAdjustment: "Step On FLAD 前倾角调节"
+  cushioning: "Re:Flex FullBED 全掌缓震"
+  warranty: "底盘终身保修；绑带和高背自购买日起 1 年保修"
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-step-on-re-flex-snowboard-bindings-172831

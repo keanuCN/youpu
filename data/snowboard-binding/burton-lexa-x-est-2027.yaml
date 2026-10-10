@@ -7,7 +7,18 @@ title: "Burton Lexa X EST 2027"
 one_liner: "Burton 女款 Lexa X EST 固定器，EST 结构对应 The Channel 安装系统。"
 specs:
   entrySystem: strap
+  flexFeel: stiff
+  mountingSystem: "EST：仅适用于 Burton The Channel 雪板；底部无硬件，支持更灵活的站姿调节"
   bootCompatibility: "EST 版本仅用于 Burton The Channel 雪板；适配普通绑带雪鞋"
+  bindingSizeGuide: "Burton 女款官方尺码：S US 女靴 4–6 / EU 34–36.5；M 6–8 / EU 36.5–40；L 8+ / EU 40+"
+  baseplateMaterial: "30% 短切玻纤/尼龙复合材料"
+  ankleStrap: "非对称 Hammockstrap"
+  toeStrap: "Supergrip Capstrap 2.0"
+  buckles: "Double Take 卡扣"
+  highback: "Heel Hammock"
+  highbackAdjustment: "DialFLAD 前倾角调节，可调至零前倾"
+  cushioning: "FullBED 全掌缓震"
+  warranty: "底盘终身保修；绑带和高背自购买日起 1 年保修"
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331
