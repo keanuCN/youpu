@@ -24,6 +24,7 @@ import { timeAgo } from "@/lib/format";
 import { addReview, deleteReview, pushNotification, toggleHelpful, useCurrentUser, usePersisted, type Persisted } from "@/lib/store";
 import { track } from "@/lib/track";
 import { hasUserRating } from "@/lib/gear-state";
+import { isCuratedBaselineEnabled } from "@/lib/curated-content";
 import { LoadingStatus } from "@/components/gear/data-state";
 import { cn } from "@/lib/utils";
 import type { GearItem, Review, ReviewerMeta } from "@/types";
@@ -32,6 +33,7 @@ import { Stars } from "./primitives";
 import { SafeImage } from "./safe-image";
 
 const LEVELS = ["新手", "中级", "进阶", "高阶"];
+const EMPTY_RATING_DIST = { "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 };
 
 type ReviewCopy = {
   experienceLabel: string;
@@ -167,7 +169,7 @@ export function ReviewPanel({
   const localSummary = {
     overall: hasUserRating(gear) ? userRating(gear) : null,
     count: reviewCount(gear),
-    distribution: gear.ratingDist,
+    distribution: isCuratedBaselineEnabled() && (gear.communityRating?.count ?? 0) === 0 ? gear.ratingDist : EMPTY_RATING_DIST,
   };
   const summary = remoteSummary && (remoteSummary.count > 0 || remoteRatings.length > 0) ? remoteSummary : localSummary;
   const ratingReady = summary.overall !== null && (summary.count > 0 || remoteRatings.length > 0);

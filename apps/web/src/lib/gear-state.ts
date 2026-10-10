@@ -1,4 +1,5 @@
 import type { GearItem } from "@/types";
+import { isCuratedBaselineEnabled } from "@/lib/curated-content";
 
 /**
  * API 内容层会把缺失字段映射成页面模型可接受的默认值。
@@ -43,6 +44,7 @@ export function hasHardcoreIndex(gear: Pick<GearItem, "hardcore" | "flexValue" |
   );
 }
 
-export function hasUserRating(gear: Pick<GearItem, "ratingDist">): boolean {
-  return Object.values(gear.ratingDist).some((count) => count > 0);
+export function hasUserRating(gear: Pick<GearItem, "ratingDist"> & Partial<Pick<GearItem, "communityRating">>): boolean {
+  if ((gear.communityRating?.count ?? 0) > 0 && gear.communityRating?.overall !== null) return true;
+  return isCuratedBaselineEnabled() && Object.values(gear.ratingDist).some((count) => count > 0);
 }

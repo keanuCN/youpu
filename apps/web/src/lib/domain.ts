@@ -1,6 +1,7 @@
 import { GEAR, GEAR_BY_ID, reviewCount, userRating } from "@/data/boards";
 import { SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { BASE_VOTES, SEED_REVIEWS } from "@/data/seeds";
+import { isCuratedBaselineEnabled } from "@/lib/curated-content";
 import { hasEditorialScores, hasFlex, hasHardcoreIndex, hasPrice, hasUserRating } from "@/lib/gear-state";
 import { GUEST, type Persisted } from "@/lib/persisted";
 import type { GearItem, QuizQuestion, Review, ScoreDim, SortKey, SpecGroup } from "@/types";
@@ -105,7 +106,7 @@ export function sortGear(items: GearItem[], sort: SortKey): GearItem[] {
 // ---------- 评论 ----------
 
 export function allReviews(s: Persisted, gearId?: string): Review[] {
-  const merged = [...SEED_REVIEWS, ...s.userReviews];
+  const merged = [...(isCuratedBaselineEnabled() ? SEED_REVIEWS : []), ...s.userReviews];
   return gearId ? merged.filter((r) => r.gearId === gearId) : merged;
 }
 
@@ -313,7 +314,7 @@ export interface RankRow {
 }
 
 export function voteCount(s: Persisted, rankKey: string, gearId: string): number {
-  const base = BASE_VOTES[rankKey]?.[gearId] ?? 0;
+  const base = isCuratedBaselineEnabled() ? BASE_VOTES[rankKey]?.[gearId] ?? 0 : 0;
   let extra = 0;
   for (const list of Object.values(s.votes)) {
     for (const v of list) if (v.rankKey === rankKey && v.gearId === gearId && v.season === SEASON) extra += 1;

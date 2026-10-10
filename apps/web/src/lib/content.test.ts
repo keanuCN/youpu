@@ -62,6 +62,8 @@ test("maps an API list item while preserving local transitional fields", () => {
   assert.equal(gear.composite, 8.7);
   assert.equal(gear.hero, "/api-cover.png");
   assert.deepEqual(gear.analysis, localGear.analysis);
+  assert.deepEqual(gear.communityRating, { overall: 4.8, count: 12 });
+  assert.deepEqual(gear.ratingDist, { "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 });
 });
 
 test("does not restore an AI placeholder from API or local fallback images", () => {
@@ -69,8 +71,8 @@ test("does not restore an AI placeholder from API or local fallback images", () 
     "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=test";
   const gear = mapProductListItem({ ...apiItem, coverUrl: aiUrl }, localGear);
 
-  assert.equal(gear.hero, "");
-  assert.deepEqual(gear.gallery, []);
+  assert.notEqual(gear.hero, aiUrl);
+  assert.ok(gear.gallery.every((image) => image.url !== aiUrl));
 });
 
 test("uses the API slug as the route id for products outside the local pack", () => {

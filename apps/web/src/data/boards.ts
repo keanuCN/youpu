@@ -1,4 +1,5 @@
 import type { GearItem, GearSizeSpec } from "@/types";
+import { isCuratedBaselineEnabled } from "@/lib/curated-content";
 import { BASE_POOL, DETAIL_POOL, IMG, TOP_POOL } from "./assets";
 import { ACTION_CAM_GEAR } from "./action-cams";
 import { CASTING_ROD_GEAR } from "./casting-rods";
@@ -603,6 +604,9 @@ export function getGear(id: string): GearItem | undefined {
 }
 
 export function userRating(g: GearItem): number {
+  const communityRating = g.communityRating;
+  if (communityRating && communityRating.count > 0 && communityRating.overall !== null) return communityRating.overall;
+  if (!isCuratedBaselineEnabled()) return 0;
   const d = g.ratingDist;
   const total = d["1"] + d["2"] + d["3"] + d["4"] + d["5"];
   if (!total) return 0;
@@ -611,6 +615,9 @@ export function userRating(g: GearItem): number {
 }
 
 export function reviewCount(g: GearItem): number {
+  const communityRating = g.communityRating;
+  if (communityRating && communityRating.count > 0) return communityRating.count;
+  if (!isCuratedBaselineEnabled()) return 0;
   const d = g.ratingDist;
   return d["1"] + d["2"] + d["3"] + d["4"] + d["5"];
 }

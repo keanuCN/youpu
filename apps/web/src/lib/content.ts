@@ -206,7 +206,8 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
     whoFor: fallback?.whoFor ?? [],
     analysis: analysisOf(item, fallback),
     priceBand,
-    ratingDist: fallback?.ratingDist ?? EMPTY_RATING_DIST,
+    communityRating: { overall: item.ratingOverall, count: item.ratingCount },
+    ratingDist: item.ratingCount > 0 ? EMPTY_RATING_DIST : fallback?.ratingDist ?? EMPTY_RATING_DIST,
     isNew: fallback?.isNew ?? false,
     addedAt: fallback?.addedAt ?? `${item.year}-01-01`,
   };

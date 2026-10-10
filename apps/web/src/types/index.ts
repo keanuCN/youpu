@@ -153,6 +153,8 @@ export interface GearItem {
   whoFor: string[];
   analysis: GearAnalysis;
   priceBand: { min: number; max: number };
+  /** Aggregate community rating returned by the API; distinct from the local curated baseline. */
+  communityRating?: { overall: number | null; count: number };
   ratingDist: Record<"1" | "2" | "3" | "4" | "5", number>;
   isNew: boolean;
   addedAt: string;
