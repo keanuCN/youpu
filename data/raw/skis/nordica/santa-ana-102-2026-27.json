@@ -1,0 +1,29 @@
+{
+  "brand": "Nordica",
+  "model": "Santa Ana 102",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-10",
+  "seedFile": "data/skis/nordica-santa-ana-102-2027.yaml",
+  "officialProductPage": {
+    "url": "https://www.nordica.com/canada/en/collection/women/skis/santa-ana/santa-ana-102",
+    "evidence": "Nordica's 26/27 product page confirms sizes 155/161/167/173/179 cm; radius 16.5/17/17.5/18/18.5 m; 102 mm waist; 155 cm sidecut 128-102-118 mm; 179 cm sidecut 133-102-123 mm; pair weight 4320 g at 179 cm; TSM Pulse Core; Performance Wood + Terrain Specific Metal + Sidewall + Pulse Core; All Mountain rocker; True Tip; factory base/side angles 0.9/87.5 degrees.",
+    "limitations": "Official page exposes complete sidecut dimensions at 155 cm and 179 cm; intermediate-size dimensions are not interpolated. Pair weight is only published for 179 cm."
+  },
+  "specifications": {
+    "lengthsCm":[155,161,167,173,179],
+    "radiiM":[16.5,17,17.5,18,18.5],
+    "sidecutMm":{"155":[128,102,118],"179":[133,102,123]},
+    "pairWeightG":{"value":4320,"referenceLengthCm":179},
+    "factoryBaseAngleDeg":0.9,
+    "factorySideAngleDeg":87.5,
+    "construction":"TSM Pulse Core",
+    "coreAndMaterials":"Performance Wood + Terrain Specific Metal + Sidewall + Pulse Core",
+    "rocker":"All Mountain",
+    "technologies":["True Tip"]
+  },
+  "mappingNotes":[
+    "The seed's turnRadius uses the official page's selected 155 cm reference; all five length/radius pairs are included in sidecutDimensions.",
+    "4320 g is a per-pair weight for 179 cm and is not converted to per-ski weight."
+  ],
+  "imageRights":"Official product image is a reference only; no explicit reuse license verified."
+}

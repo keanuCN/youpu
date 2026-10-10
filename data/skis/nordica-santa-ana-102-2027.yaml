@@ -4,9 +4,21 @@ brand: nordica
 model: Santa Ana 102
 year: 2027
 title: Nordica Santa Ana 102 2026/27
-one_liner: Santa Ana 女性全山地系列宽板腰型号，2026/27 官方新品目录在售。
+one_liner: 26/27 Santa Ana 女性全山地宽板腰型号，采用 Terrain Specific Metal 与 Pulse Core；官方提供 155–179 cm 五种长度。
 specs:
+  lengthOptions: 155 / 161 / 167 / 173 / 179 cm
   waistWidth: 102
+  turnRadius: 16.5
+  turnRadiusReferenceLength: 155 cm
+  sidecutDimensions: "155 cm: 128-102-118 mm；179 cm: 133-102-123 mm（官方展示尺寸）；半径：155/16.5、161/17、167/17.5、173/18、179/18.5 m"
+  profile: All Mountain Rocker（板头、板尾摇臂）
+  core: Performance Wood + Pulse Core
+  construction: TSM Pulse Core；Terrain Specific Metal 金属层
+  technologies: True Tip
+  weightPerPair: 4320
+  weightReferenceLength: 179 cm
+  baseEdgeAngle: 0.9
+  sideEdgeAngle: 87.5
   terrain: 全山地 / 自由滑
   skierLevel: 中级至进阶
   bindingSetup: 裸板，固定器另配
