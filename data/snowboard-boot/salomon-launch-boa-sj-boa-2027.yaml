@@ -14,6 +14,12 @@ specs:
   outsole: "Feather 2.0 轻量外底：EVA 与 Contagrip 橡胶组合，提供抓地和吸震"
   footbed: "OrthoLite C2 双密度鞋垫"
   sizeGuide: "官方男款页面尺码 US 7–13.5"
+images:
+  - url: "https://cdn.dam.salomon.com/f67819a3-e8b6-485a-a379-b36001090599/L49261400/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200"
+    kind: face
+    alt: Salomon Launch BOA SJ BOA 2026/27 官方雪鞋商品图
+    source: Salomon 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670
