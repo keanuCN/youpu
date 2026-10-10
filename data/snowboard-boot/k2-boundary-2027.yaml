@@ -6,7 +6,12 @@ year: 2027
 title: "K2 Boundary 2027"
 one_liner: "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。"
 specs:
-  lacingSystem: "BOA 系带"
+  lacingSystem: "双区 Zonal BOA Fit System（H5 与 M+2 旋钮，分别调节鞋面上下区域）"
+  fit: "Intuition Control Foam 3D 热塑鞋胆，3 点内靴束带及内外 J-Bar 辅助跟部贴合"
+  liner: "Intuition Control Foam 3D 热塑鞋胆"
+  innerCuff: "3 点束带与内外 J-Bar；独立活动式鞋口"
+  outsole: "This Grips! 橡胶外底，EVA 双密度中底与 Harshmellow 减震"
+  sizeGuide: "官方男款当前可选 US 7–13；K2 官方换算表覆盖 US 5–15、EU 36.5–50、CM 23–33，具体换算按商品页尺码表"
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/boundary-mens-snowboard-boot-kb261666?color=brown

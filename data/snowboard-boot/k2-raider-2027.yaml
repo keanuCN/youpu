@@ -4,9 +4,14 @@ brand: k2
 model: "Raider"
 year: 2027
 title: "K2 Raider 2027"
-one_liner: "官方档案型号；单 BOA 系带。尺码与脚感以实际试穿为准。"
+one_liner: "单 BOA 外壳闭合搭配 Fast-In 内靴系带，面向入门与进阶滑手。"
 specs:
-  lacingSystem: "单 BOA 系带"
+  lacingSystem: "单区 H5 Coiler BOA + Fast-In 内靴系带"
+  fit: "Intuition Comfort Foam 3D 热塑鞋胆；内外 J-Bar 支撑脚踝并减少脚跟抬起"
+  liner: "Intuition Comfort Foam 3D 热塑鞋胆"
+  innerCuff: "Fast-In 内靴系带与内外 J-Bar 脚踝支撑"
+  outsole: "RollSole 外底，支持脚部内侧活动"
+  sizeGuide: "官方男款可选 US 6–15；K2 官方换算表列有 US、EU、UK 与 CM 对照，具体半码映射见商品页尺码表"
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/raider-mens-snowboard-boots-kb261667?color=sand

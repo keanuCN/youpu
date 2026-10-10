@@ -4,9 +4,16 @@ brand: k2
 model: "Taro Tamai Snowsurfer RS"
 year: 2027
 title: "K2 Taro Tamai Snowsurfer RS 2027"
-one_liner: "官方档案型号；系带方式及兼容参数留待补充。尺码与脚感以实际试穿为准。"
+one_liner: "双区 BOA、F.O.R.M. Wrap 与可拆舌片支撑，采用偏柔软的冲浪式脚感。"
 specs:
-  lacingSystem: "系带方式及兼容参数留待补充"
+  lacingSystem: "双区 H5 Coiler BOA，独立调节鞋面上下区域"
+  flex: "偏柔软、冲浪式脚感；两片可拆舌片支撑可调整内外侧弯曲"
+  fit: "F.O.R.M. 三片式包裹结构，Intuition Pro Foam 3D Wrap 热塑鞋胆，3 点可调/可拆束带"
+  liner: "Intuition Pro Foam 3D Wrap 热塑鞋胆，带 SpaceHeater 保温层"
+  innerCuff: "可调/可拆 3 点束带与 J-Bar 脚踝支撑"
+  outsole: "Vibram Rollsole 外底与 Eco-Harshmellow 减震"
+  warmthFeatures: "SpaceHeater 反射保温层；95% 消费后再生咖啡渣网布有助于吸湿除味"
+  sizeGuide: "官方男款可选 US 6–12；K2 官方换算表列有 US、EU、UK 与 CM 对照，具体半码映射见商品页尺码表"
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/taro-tamai-snowsurfer-rs-mens-snowboard-boot-kb261654?color=black-brown
