@@ -9,12 +9,22 @@
     "officialProductEvidence": "The official page confirms the QST 94 Lilac product, article reference L49189300+, sizes 156/164/172/180/188 cm, 94 mm waist, intermediate skill level, Freeride Profile, 13.5 m displayed radius, 131-94-117 mm displayed sidecut, Full Poplar Woodcore, Ti Binding Reinforcement, Basalt Superlight Fibers, Fiberglass, Full Sandwich Sidewalls and Cork Damplifier.",
     "seasonEvidence": "The Salomon 2026/27 product lineup includes QST 94; the official product page itself does not print a season label."
   },
+  "catalogueAndTestReport": {
+    "url": "https://www.tanabesports.jp/gear/skis/26_27_newmodel_staff_testdrive_salomon/",
+    "evidence": "The retailer's 2026/27 staff test report lists per-length sidecut, radius, and ski-only mass (1/2 pair) for sizes 156/164/172/180/188. It identifies the 172 cm ski as 1700 g. The published 188 cm weight appears anomalous (2940 g) and is intentionally not mapped."
+  },
   "specifications": {
     "articleReference": "L49189300+",
     "lengthsCm": [156, 164, 172, 180, 188],
     "waistMm": 94,
-    "displayedSidecutMm": [131, 94, 117],
-    "displayedRadiusM": 13.5,
+    "sidecutMmAndRadius": [
+      {"lengthCm":156,"tipMm":131,"waistMm":94,"tailMm":117,"radiusM":13.5},
+      {"lengthCm":164,"tipMm":132,"waistMm":94,"tailMm":118,"radiusM":14.5},
+      {"lengthCm":172,"tipMm":133,"waistMm":94,"tailMm":119,"radiusM":15.5},
+      {"lengthCm":180,"tipMm":134,"waistMm":94,"tailMm":120,"radiusM":16.5},
+      {"lengthCm":188,"tipMm":135,"waistMm":94,"tailMm":121,"radiusM":17.5}
+    ],
+    "weightPerSkiG": {"value":1700,"referenceLengthCm":172},
     "profile": "Freeride Profile",
     "core": "Full Poplar Woodcore",
     "construction": "Full Sandwich Sidewalls",
@@ -22,8 +32,7 @@
     "technology": ["Cork Damplifier"]
   },
   "mappingNotes": [
-    "The official product page displays a single sidecut and radius without associating them with a length; those figures are explicitly marked as unreferenced instead of assigning a guessed size.",
-    "No official weight basis or per-length sidecut table was available on the product page, so none was added."
+    "The official Salomon product page and 2026/27 retailer test-report table agree on the dimensions and radii. The report's 188 cm weight is anomalous, so only the unambiguous 172 cm per-ski weight is mapped."
   ],
   "imageRights": "The official product image URL is a source reference only; no explicit reuse license verified."
 }

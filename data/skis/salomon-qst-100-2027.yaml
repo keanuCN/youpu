@@ -8,12 +8,15 @@ one_liner: QST 系列全山地自由滑型号，100 mm 板腰兼顾雪道巡航�
 specs:
   lengthOptions: 148 / 156 / 164 / 172 / 180 / 188 cm
   waistWidth: 100
-  turnRadius: 13.5
-  sidecutDimensions: "Salomon 官方页展示尺寸：130-100-118 mm、半径 13.5 m（页面未标明对应长度）"
+  turnRadius: 16.5
+  turnRadiusReferenceLength: 172 cm
+  sidecutDimensions: "156 cm: 131-100-119 mm / 14.5 m；164 cm: 132-100-120 mm / 15.5 m；172 cm: 133-100-121 mm / 16.5 m；180 cm: 134-100-122 mm / 17.5 m；188 cm: 135-100-123 mm / 18.5 m；148 cm 官方未提供对应尺寸表"
   profile: Freeride Profile；Rocker-Camber-Rocker
   core: 全杨木木芯
   construction: Full Sandwich Sidewalls；Ti Binding Reinforcement
   technologies: Cork Damplifier；Basalt Superlight Fibers；Fiberglass
+  weightPerSki: 1780
+  weightReferenceLength: 172 cm
   terrain: 全山地 / 自由滑 / 粉雪
   skierLevel: 中级至进阶
   bindingSetup: 裸板，不含固定器
