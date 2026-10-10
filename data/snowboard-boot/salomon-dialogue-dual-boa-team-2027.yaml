@@ -14,6 +14,12 @@ specs:
   outsole: "DAMPLite+ 外底，结合冬季橡胶、EVA 缓震与 Contagrip 抓地橡胶"
   footbed: "OrthoLite C2 双密度鞋垫与 Quickdry 快干鞋垫"
   sizeGuide: "官方男款页面尺码 US 7–13.5"
+images:
+  - url: "https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200"
+    kind: face
+    alt: Salomon Dialogue Dual BOA Team 2026/27 官方雪鞋商品图
+    source: Salomon 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/dialogue-dual-boa-team-li9182

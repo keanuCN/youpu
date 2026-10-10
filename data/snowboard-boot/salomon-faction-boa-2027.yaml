@@ -13,6 +13,12 @@ specs:
   outsole: "Feather 1.0 轻量外底：EVA 与 Contagrip 橡胶组合，吸震并提供抓地"
   footbed: "Imprint 舒适鞋垫"
   sizeGuide: "官方男款页面尺码 US 7–13.5"
+images:
+  - url: "https://cdn.dam.salomon.com/9c1d11ae-9c2b-48d9-bbb2-b3600109091b/L49270000/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200"
+    kind: face
+    alt: Salomon Faction BOA 2026/27 官方雪鞋商品图
+    source: Salomon 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/faction-boa-li9008
