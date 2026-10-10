@@ -39,7 +39,12 @@ editorial_scores:
   park: 5.5
   forgiveness: 5
   value: 6.5
-images: []
+images:
+  - url: "https://eu.burton.com/cdn/shop/files/1068819AI2_1.webp?v=1776120991&width=1160"
+    kind: face
+    alt: Burton Custom Camber 2025/26 官方雪板商品图
+    source: Burton 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.burton.com/se/en/p/mens-burton-custom-camber-snowboard/W26-106881.html
