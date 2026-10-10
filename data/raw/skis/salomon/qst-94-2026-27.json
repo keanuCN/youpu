@@ -1,0 +1,29 @@
+{
+  "brand": "Salomon",
+  "model": "QST 94 Lilac",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-10",
+  "seedFile": "data/skis/salomon-qst-94-2027.yaml",
+  "sources": {
+    "officialProductPage": "https://www.salomon.com/en-us/product/qst-94-lilac-li9360",
+    "officialProductEvidence": "The official page confirms the QST 94 Lilac product, article reference L49189300+, sizes 156/164/172/180/188 cm, 94 mm waist, intermediate skill level, Freeride Profile, 13.5 m displayed radius, 131-94-117 mm displayed sidecut, Full Poplar Woodcore, Ti Binding Reinforcement, Basalt Superlight Fibers, Fiberglass, Full Sandwich Sidewalls and Cork Damplifier.",
+    "seasonEvidence": "The Salomon 2026/27 product lineup includes QST 94; the official product page itself does not print a season label."
+  },
+  "specifications": {
+    "articleReference": "L49189300+",
+    "lengthsCm": [156, 164, 172, 180, 188],
+    "waistMm": 94,
+    "displayedSidecutMm": [131, 94, 117],
+    "displayedRadiusM": 13.5,
+    "profile": "Freeride Profile",
+    "core": "Full Poplar Woodcore",
+    "construction": "Full Sandwich Sidewalls",
+    "reinforcements": ["Ti Binding Reinforcement", "Basalt Superlight Fibers", "Fiberglass"],
+    "technology": ["Cork Damplifier"]
+  },
+  "mappingNotes": [
+    "The official product page displays a single sidecut and radius without associating them with a length; those figures are explicitly marked as unreferenced instead of assigning a guessed size.",
+    "No official weight basis or per-length sidecut table was available on the product page, so none was added."
+  ],
+  "imageRights": "The official product image URL is a source reference only; no explicit reuse license verified."
+}

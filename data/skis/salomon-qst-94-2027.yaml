@@ -1,0 +1,29 @@
+slug: salomon-qst-94-2027
+category: skis
+brand: salomon
+model: QST 94
+year: 2027
+title: Salomon QST 94 2026/27
+one_liner: 新一代 QST 全山地自由滑雪板，94 mm 板腰兼顾雪道抓边与软雪浮力。
+specs:
+  lengthOptions: 156 / 164 / 172 / 180 / 188 cm
+  waistWidth: 94
+  turnRadius: 13.5
+  sidecutDimensions: "Salomon 官方页展示尺寸：131-94-117 mm、半径 13.5 m（页面未标明对应长度）"
+  profile: Freeride Profile
+  core: 全杨木木芯
+  construction: Full Sandwich Sidewalls；Ti Binding Reinforcement
+  technologies: Cork Damplifier；Basalt Superlight Fibers；Fiberglass
+  terrain: 全山地 / 自由滑
+  skierLevel: 中级
+  bindingSetup: 裸板，不含固定器
+images:
+  - url: "https://cdn.dam.salomon.com/f7204858-5aae-4ff2-a449-b45100dea002/L49189300%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=medium&width=3840"
+    kind: face
+    alt: Salomon QST 94 Lilac 2026/27 官方雪板商品图
+    source: Salomon 官方产品页（图片使用授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-us/product/qst-94-lilac-li9360
+status: published

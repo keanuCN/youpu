@@ -1,0 +1,29 @@
+slug: salomon-qst-100-2027
+category: skis
+brand: salomon
+model: QST 100
+year: 2027
+title: Salomon QST 100 2026/27
+one_liner: QST 系列全山地自由滑型号，100 mm 板腰兼顾雪道巡航与软雪探索。
+specs:
+  lengthOptions: 148 / 156 / 164 / 172 / 180 / 188 cm
+  waistWidth: 100
+  turnRadius: 13.5
+  sidecutDimensions: "Salomon 官方页展示尺寸：130-100-118 mm、半径 13.5 m（页面未标明对应长度）"
+  profile: Freeride Profile；Rocker-Camber-Rocker
+  core: 全杨木木芯
+  construction: Full Sandwich Sidewalls；Ti Binding Reinforcement
+  technologies: Cork Damplifier；Basalt Superlight Fibers；Fiberglass
+  terrain: 全山地 / 自由滑 / 粉雪
+  skierLevel: 中级至进阶
+  bindingSetup: 裸板，不含固定器
+images:
+  - url: "https://cdn.dam.salomon.com/1aa634e6-dd58-4557-bc47-b45100de9b96/L49189200%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=medium&width=3840"
+    kind: face
+    alt: Salomon QST 100 Black 2026/27 官方雪板商品图
+    source: Salomon 官方产品页（图片使用授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-us/product/qst-100-black-li9359
+status: published
