@@ -13,6 +13,12 @@ specs:
   outsole: "EVA 外底，局部橡胶耐磨/抓地补强"
   footbed: "Anatomical 人体工学鞋垫"
   sizeGuide: "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13"
+images:
+  - url: "https://www.nitrosnowboards.com/cdn/shop/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=2251"
+    kind: face
+    alt: Nitro Sentinel BOA 2027 棕色款官方雪鞋商品图
+    source: Nitro 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/sentinel-boa-boots-1

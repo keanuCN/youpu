@@ -15,6 +15,12 @@ specs:
   warmthFeatures: "Therminator Shield 反射隔热层"
   footbed: "Ortholite High Cup Triple Density 鞋垫；EVA 中底、Air Dampening 与 D3O 缓震"
   sizeGuide: "官方女款 US 6–11.5 / Mondopoint 23.0–28.5 / EU 36–43⅓ / UK 4–9.5"
+images:
+  - url: "https://www.nitrosnowboards.com/cdn/shop/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=2200"
+    kind: face
+    alt: Nitro Bianca TLS+ 2027 黑色款官方雪鞋商品图
+    source: Nitro 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/bianca-tls-womens-boots-1

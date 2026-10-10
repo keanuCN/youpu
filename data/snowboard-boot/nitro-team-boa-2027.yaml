@@ -15,6 +15,12 @@ specs:
   warmthFeatures: "Therminator Shield 鞋底反射隔热层"
   footbed: "Ortholite High Cup Dual Density 鞋垫；EVA 中底与 Air Dampening 缓震"
   sizeGuide: "官方男款 US 7–15 / Mondopoint 25.0–33.0 / EU 38⅔–49⅓ / UK 6–14"
+images:
+  - url: "https://www.nitrosnowboards.com/cdn/shop/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=2204"
+    kind: face
+    alt: Nitro Team BOA 2027 白黑款官方雪鞋商品图
+    source: Nitro 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/team-boa-boots-1
