@@ -15,7 +15,11 @@ specs:
   batteryCapacity: 2290
   weight: 203
   waterproof: 裸机 10 m 防水
-images: []
+images:
+  - url: https://res.insta360.com/static/9b3f6248055c4b255cdd5bdc5e9b8b64/x4-new.png
+    kind: face
+    alt: Insta360 X4 8K 全景运动相机官方产品图
+    source: Insta360 官方 X4 产品页产品图；图片返回 image/png；展示授权状态待核
 data_source:
   kind: crawl
   origin_url: https://www.insta360.com/product/insta360-x4

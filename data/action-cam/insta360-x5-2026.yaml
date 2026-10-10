@@ -21,7 +21,11 @@ specs:
     - motorcycle
     - skiing
     - diving
-images: []
+images:
+  - url: https://res.insta360.com/static/948825431b2183b22a6c4bafd914f253/x5-single.png
+    kind: face
+    alt: Insta360 X5 8K 全景运动相机官方产品图
+    source: Insta360 官方 X5 产品页产品图；图片返回 image/png；展示授权状态待核
 data_source:
   kind: crawl
   origin_url: https://www.insta360.com/product/insta360-x5
