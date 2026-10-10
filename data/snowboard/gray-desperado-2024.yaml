@@ -33,4 +33,4 @@ data_source:
   kind: manual
   origin_url: https://graysnowboards.co.jp/product2324/
   snapshot_url: https://thesnowfever.com/list/snowboards?brand=72
-status: published
+status: draft

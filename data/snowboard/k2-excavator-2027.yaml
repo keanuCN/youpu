@@ -35,10 +35,10 @@ specs:
     - powder
     - all-mountain
 images:
-  - url: "https://www.milosport.com/cdn/shop/files/KB2616871398Large.png?v=1774904988&width=800"
+  - url: "https://cdn.media.amplience.net/s/k2/k2_2627_excavator_KB261687?w=1200&qlt=90&fmt=auto"
     kind: face
     alt: K2 Excavator 2027 单板商品图
-    source: Milosport 2027 商品页图片（零售商图片，授权待核；正式上线前迁移至自有 COS 或替换为自制图）
+    source: K2 官方 2027 商品页结构化商品数据中的图片地址（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
 data_source:
   kind: official
