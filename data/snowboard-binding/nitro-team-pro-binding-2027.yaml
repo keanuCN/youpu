@@ -4,10 +4,17 @@ brand: nitro
 model: "Team Pro"
 year: 2027
 title: "Nitro Team Pro 2027"
-one_liner: "Team 系列高阶版本，官方以 Pro-caliber performance 定位。"
+one_liner: "高响应自由式固定器，配 3D OptiPro 脚踝绑带、HYPER Foam 与 Air Dampening。"
 specs:
   entrySystem: strap
-  bootCompatibility: "普通绑带雪鞋"
+  flexFeel: stiff
+  mountingSystem: "Universal Mini Disc；兼容 2x4 与 Burton Channel"
+  bootCompatibility: "普通绑带雪鞋；官方尺码 S/M、M、L"
+  bindingSizeGuide: "Nitro：S/M 男靴 US 5–10 / 女靴 5.5–10.5 / MP 23–28 / EU 36–43；M 男 US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L 男 US 11–14 / MP 29–32 / EU 44–48"
+  ankleStrap: "3D OptiPro 双组分聚氨酯脚踝绑带，兼顾响应、舒适与支撑"
+  toeStrap: "Übergrip PRO 3D 注塑脚趾绑带，防滑贴合不同鞋头"
+  buckles: "Speed Wheel 3.0 卡扣/棘轮；梯带与棘轮带内置不锈钢线缆加固"
+  cushioning: "Air Dampening 后跟缓震、HYPER Foam 脚床与 3° 倾斜脚床"
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/products/team-pro-bindings-1

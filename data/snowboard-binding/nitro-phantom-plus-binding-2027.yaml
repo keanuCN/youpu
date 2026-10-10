@@ -4,10 +4,17 @@ brand: nitro
 model: "Phantom+"
 year: 2027
 title: "Nitro Phantom+ 2027"
-one_liner: "Nitro Phantom+ 高阶 freeride 固定器，列入 26-27 官方目录。"
+one_liner: "高阶自由滑固定器，Air Plus Dampening、HYPER Foam 与 4 mm 后跟抬高强化响应。"
 specs:
   entrySystem: strap
-  bootCompatibility: "普通绑带雪鞋"
+  flexFeel: pro-stiff
+  mountingSystem: "Universal Mini Disc；兼容 2x4 与 Burton Channel"
+  bootCompatibility: "普通绑带雪鞋；官方尺码 M/L"
+  bindingSizeGuide: "Nitro 男款：M US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 11–14 / MP 29–32 / EU 44–48"
+  ankleStrap: "Premium Locked Down 脚踝绑带：45° 密度泡棉、纤维增强 3D 支撑骨架"
+  toeStrap: "Übergrip PRO Integral 3D 脚趾绑带，防滑贴合不同鞋头"
+  buckles: "Speed Wheel 3.0 卡扣/棘轮；Cable Reinforced Connectors 内置不锈钢线缆加固"
+  cushioning: "Air Plus Dampening、HYPER Foam、3° 倾斜脚床及 4 mm 后跟抬高"
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/cs/collections/all-mens-bindings-26-27/products/phantom-bindings-3?variant=57278273716555

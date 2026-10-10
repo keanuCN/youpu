@@ -4,10 +4,17 @@ brand: nitro
 model: "Team"
 year: 2027
 title: "Nitro Team 2027"
-one_liner: "Nitro 经典全能绑带系列，26-27 官方目录列出多种颜色版本。"
+one_liner: "支撑型全山地绑带固定器，配 Mini Disc、Air Dampening 与 3° 倾斜脚床。"
 specs:
   entrySystem: strap
-  bootCompatibility: "普通绑带雪鞋"
+  flexFeel: medium
+  mountingSystem: "Universal Mini Disc；兼容 2x4 与 Burton Channel，较小盘面有助于保留板面自然弯曲"
+  bootCompatibility: "普通绑带雪鞋；官方尺码 M/L"
+  bindingSizeGuide: "Nitro 男款：M US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 11–14 / MP 29–32 / EU 44–48"
+  ankleStrap: "3D OptiFrame Locked Down 聚氨酯脚踝绑带，强调支撑与响应"
+  toeStrap: "Übergrip PRO 3D 注塑脚趾绑带，内侧防滑垫，适配不同鞋头"
+  buckles: "Speed Wheel 3.0 卡扣/棘轮；Cable Reinforced Connectors 内置不锈钢线缆加固梯带"
+  cushioning: "Air Dampening 后跟缓震；3° 倾斜脚床"
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/products/team-bindings-1
