@@ -10,7 +10,13 @@ specs:
   terrain: 全山地 / 自由滑
   skierLevel: 进阶
   bindingSetup: 裸板，固定器另配
+images:
+  - url: "https://www.nordica.com/storage/Product/0A668100001_ENFORCER_104_FLAT.png"
+    kind: face
+    alt: Nordica Enforcer 104 2026/27 官方雪板商品图
+    source: Nordica 官方产品页（图片使用授权待核）
+    sort_order: 0
 data_source:
   kind: official
-  origin_url: https://www.nordica.com/usa/en/collection/men/skis/enforcer
+  origin_url: https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-104-flat
 status: published
