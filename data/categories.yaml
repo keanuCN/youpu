@@ -330,6 +330,21 @@
         compare: true
         compareDirection: context
         order: 20
+      - key: flexFeel
+        label: 硬度手感
+        group: 结构与穿脱
+        type: enum
+        options:
+          - { value: soft, label: 柔软 }
+          - { value: mid-soft, label: 中偏软 }
+          - { value: medium, label: 中等 }
+          - { value: mid-stiff, label: 中偏硬 }
+          - { value: stiff, label: 偏硬 }
+          - { value: pro-stiff, label: 专业硬朗 }
+        filter: multi
+        compare: true
+        compareDirection: context
+        order: 25
       - key: mountingSystem
         label: 安装系统
         group: 兼容性
@@ -344,6 +359,13 @@
         filter: false
         compare: true
         order: 40
+      - key: bindingSizeGuide
+        label: 固定器尺码参考
+        group: 兼容性
+        type: text
+        filter: false
+        compare: true
+        order: 45
       - key: terrain
         label: 适用场景
         group: 适用场景
@@ -358,6 +380,60 @@
         compare: true
         compareDirection: context
         order: 50
+      - key: brandFlexScore
+        label: 品牌官方硬度评分
+        group: 品牌官方评分
+        type: number
+        min: 0
+        max: 10
+        filter: false
+        compare: false
+        order: 60
+      - key: brandResortScore
+        label: 品牌官方雪场评分
+        group: 品牌官方评分
+        type: number
+        min: 0
+        max: 10
+        filter: false
+        compare: false
+        order: 61
+      - key: brandPowScore
+        label: 品牌官方粉雪评分
+        group: 品牌官方评分
+        type: number
+        min: 0
+        max: 10
+        filter: false
+        compare: false
+        order: 62
+      - key: brandParkScore
+        label: 品牌官方公园评分
+        group: 品牌官方评分
+        type: number
+        min: 0
+        max: 10
+        filter: false
+        compare: false
+        order: 63
+      - key: brandComfortScore
+        label: 品牌官方舒适度评分
+        group: 品牌官方评分
+        type: number
+        min: 0
+        max: 10
+        filter: false
+        compare: false
+        order: 64
+      - key: brandResponseScore
+        label: 品牌官方响应评分
+        group: 品牌官方评分
+        type: number
+        min: 0
+        max: 10
+        filter: false
+        compare: false
+        order: 65
     rating_dimensions:
       - { key: response, label: 支撑与响应, weight: 0.25 }
       - { key: comfort, label: 舒适与减震, weight: 0.2 }

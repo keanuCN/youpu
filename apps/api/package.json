@@ -12,6 +12,8 @@
     "prisma:migrate": "prisma migrate deploy",
     "seed": "tsx src/seed/run.ts",
     "seed:product": "tsx src/seed/sync-one-product.ts",
+    "seed:export-missing": "tsx src/seed/export-missing-products.ts",
+    "seed:sync-missing": "tsx src/seed/sync-missing-products.ts",
     "mirror:local-product-images": "tsx src/admin/mirror-local-product-images.ts",
     "validate:data": "tsx src/seed/validate.ts",
     "es:reindex": "tsx src/search/reindex.ts",

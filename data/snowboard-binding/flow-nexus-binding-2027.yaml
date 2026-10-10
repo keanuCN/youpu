@@ -1,0 +1,25 @@
+slug: flow-nexus-binding-2027
+category: snowboard-binding
+brand: flow
+model: Nexus
+year: 2027
+title: Flow Nexus 2027
+specs:
+  terrain:
+    - all-mountain
+  flexFeel: soft
+  entrySystem: rear-entry
+  mountingSystem: Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对
+  bindingSizeGuide: Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU
+    37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。
+images:
+  - url: https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.27.BNU.NEF.001-Flow_Nexus_Black-1_bql3pa.webp?v=1788232250&width=1200
+    kind: face
+    alt: Flow Nexus 2027 商品图
+    source: 品牌官方商品页公开图片；展示授权状态待核
+    sort_order: 0
+status: published
+one_liner: Flow 后入式固定器，官网介绍采用单片 Fusion 绑带与后仰高背穿脱结构。
+data_source:
+  kind: official
+  origin_url: https://www.nidecker.com/products/flow-nexus

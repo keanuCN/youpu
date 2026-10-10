@@ -1,0 +1,25 @@
+slug: flow-fuse-binding-2026
+category: snowboard-binding
+brand: flow
+model: Fuse
+year: 2026
+title: Flow Fuse 2026
+specs:
+  terrain:
+    - all-mountain
+  flexFeel: mid-stiff
+  entrySystem: rear-entry
+  mountingSystem: Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对
+  bindingSizeGuide: Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU
+    41.5–44.5；XL 11.5–15 / EU 45–49.5。
+images:
+  - url: https://cdn.shopify.com/s/files/1/0674/9582/1405/files/High-_0024_FLOW_FUSE_WHITE_fusion.jpg?v=1788232288&width=800
+    kind: face
+    alt: Flow Fuse 2026 商品图
+    source: 品牌官方商品页公开图片；展示授权状态待核
+    sort_order: 0
+status: published
+one_liner: Flow 后入式固定器，Fusion 一体式绑带协助快速进入后仰高背结构。
+data_source:
+  kind: official
+  origin_url: https://www.nidecker.com/products/flow-fuse-2026

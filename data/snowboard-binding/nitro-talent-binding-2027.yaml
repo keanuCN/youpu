@@ -1,0 +1,28 @@
+slug: nitro-talent-binding-2027
+category: snowboard-binding
+brand: nitro
+model: Talent
+year: 2027
+title: Nitro Talent 2027
+specs:
+  terrain:
+    - all-mountain
+    - freestyle
+  entrySystem: strap
+  mountingSystem: Universal Mini Disc；兼容 2x4 与 Channel
+  bindingSizeGuide: Nitro Talent 官方尺码：S US 男 3–6.5、女 3.5–7 / MP 21–24.5 / EU
+    33.5–38；M 男 7–10.5、女 7.5–11 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14、女
+    11.5–14.5 / MP 29–32 / EU 44–48。
+  brandComfortScore: 7
+  brandResponseScore: 4
+images:
+  - url: https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-105_Talent-Unisex-Bindings_Bubble-Gum_Product-1.jpg?v=1779339424&width=1920
+    kind: face
+    alt: Nitro Talent 2027 商品图
+    source: 品牌官方商品页公开图片；展示授权状态待核
+    sort_order: 0
+status: published
+one_liner: Nitro 2026–27 男女通用固定器，品牌官方将其定位为普适型产品。
+data_source:
+  kind: official
+  origin_url: https://www.nitrosnowboards.com/collections/bindings-26-27/products/talent-unisex-bindings-1

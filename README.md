@@ -159,6 +159,8 @@ UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@e
 | `pnpm --filter @youpu/api validate:data` | 只校验 data/ 数据、不连库（CI 可用） |
 | `pnpm --filter @youpu/web export:seed` | 原型内容包 → seed YAML（一次性迁移工具） |
 | `pnpm --filter @youpu/web export:catalog` | API 目录 → 前台云端快照（静态构建前运行） |
+| `pnpm --filter @youpu/web audit:catalog` | 比较种子、本地 API 与前台快照，列出数量和商品差异 |
+| `pnpm --filter @youpu/api seed:export-missing -- --category snowboard-binding` | 预览本地数据库中缺少的固定器种子；追加 `--apply` 只新建缺失文件 |
 | `pnpm es:reindex` | ES 全量重建 |
 | `pnpm typecheck` / `pnpm build` | 全仓类型检查 / 构建 |
 
