@@ -7,8 +7,19 @@ title: "Jones Mercury FASE 2026"
 one_liner: "Mercury 加入 FASE 快速绑带系统，支持单手穿入并可回退传统绑带操作。"
 specs:
   entrySystem: fast-entry
-  bootCompatibility: "FASE 官方称兼容各品牌普通雪鞋"
+  flexFeel: medium
+  mountingSystem: "Jones Universal Mounting Disk；兼容 4x4、2x4 与 Burton Channel/EST"
+  bootCompatibility: "FASE 双绑带快速穿脱系统，兼容各品牌常规雪鞋"
+  bindingSizeGuide: "官方尺码：S 男 US 5–8 / 女 6.5–9.5；M 男 8.5–10.5 / 女 10–12；L 男 11–14 / 女 12.5–15.5"
+  baseplateMaterial: "Fusion XR 玻纤尼龙复合底盘；三层 TPU/EVA Fusion Pad 缓震层"
+  ankleStrap: "DualFlex 脚踝带，硬质 TPU 中芯搭配柔软 TPU 边缘"
+  toeStrap: "Adaptive Fit 脚趾带，柔性外缘贴合鞋头，中心支撑脊与纹理内面锁定雪鞋"
+  buckles: "高等级铝合金卡扣；脚趾卡扣为 LSR 2.1 Auto-Lock"
+  highback: "AsymFlex 非对称高背，中偏硬脚感；内侧柔韧、外侧脊柱强化响应"
+  highbackAdjustment: "免工具双档前倾角调节；高背可折叠前翻"
+  cushioning: "Fusion Pad 三层 TPU/EVA 吸震；低接触面积底盘保留侧向板面弯曲"
+  warranty: "FASE 系统终身保修；Jones 其他部件保修按官网保修政策"
 data_source:
   kind: official
-  origin_url: https://www.jonessnowboards.com/products/mercury-fase-snowboard-binding-2026
+  origin_url: https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding
 status: published
