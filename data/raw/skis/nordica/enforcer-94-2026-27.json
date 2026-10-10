@@ -1,0 +1,33 @@
+{
+  "brand": "Nordica",
+  "model": "Enforcer 94",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-10",
+  "seedFile": "data/skis/nordica-enforcer-94-2027.yaml",
+  "officialProductPage": {
+    "url": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-94-flat",
+    "evidence": "Nordica's 2026/27 product page confirms lengths 167, 173, 179 and 185 cm; turn radii 16.5, 17, 17.5 and 18 m; 94 mm waist; 185 cm sidecut 128.5-94-116.5 mm; 167 cm sidecut 125-94-113 mm; 185 cm pair weight 4260 g; Energy 2 Ti Pulse Core construction; Performance Wood + Metal + Sidewall + Pulse Core materials; All Mountain rocker; True Tip and Unlocked Tail Shape; factory base angle 0.9 degrees and side angle 87.5 degrees.",
+    "limitations": "Official size selector lists only 167/173/179/185. The official page currently exposes full tip-waist-tail dimensions only for 167 and 185 cm; dimensions for 173 and 179 cm are intentionally not interpolated. Pair weight is only published for 185 cm."
+  },
+  "specifications": {
+    "lengthsCm": [167,173,179,185],
+    "radiiM": [16.5,17,17.5,18],
+    "sidecutMm": {
+      "167": [125,94,113],
+      "185": [128.5,94,116.5]
+    },
+    "pairWeightG": {"value":4260,"referenceLengthCm":185},
+    "factoryBaseAngleDeg":0.9,
+    "factorySideAngleDeg":87.5,
+    "construction":"2 Ti Pulse Core",
+    "coreAndMaterials":"Performance Wood + Metal + Sidewall + Pulse Core",
+    "rocker":"All Mountain",
+    "technologies":["True Tip","Unlocked Tail Shape"]
+  },
+  "mappingNotes": [
+    "The seed's turnRadius uses Nordica's 185 cm reference. All four size/radius pairs are retained in sidecutDimensions.",
+    "Sidecut dimensions are shown only where exposed on the official page; no dimensions are derived for the two intermediate lengths.",
+    "4260 g is a per-pair specification, not converted or labeled as a per-ski measurement."
+  ],
+  "imageRights": "The official product image URL is a reference only; no explicit reuse license verified."
+}

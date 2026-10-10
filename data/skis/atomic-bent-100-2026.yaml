@@ -16,6 +16,7 @@ specs:
   construction: Dura Cap Sidewall
   technologies: HRZN 3D Bent；Resist Edge Park；Directional Shape；Glossy Topsheet
   weightPerSki: 1700
+  weightReferenceLength: 179 cm
   baseEdgeAngle: 1.0
   sideEdgeAngle: 87
   terrain: 全山地 / 自由滑 / 粉雪

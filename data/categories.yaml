@@ -676,13 +676,28 @@
         compare: false
         order: 40
       - key: weightPerSki
-        label: 单只重量（179 cm）
+        label: 单只重量（参考长度）
         group: 结构与技术
         type: number
         unit: g
         filter: false
         compare: false
         order: 50
+      - key: weightReferenceLength
+        label: 重量对应板长
+        group: 结构与技术
+        type: text
+        filter: false
+        compare: false
+        order: 55
+      - key: weightPerPair
+        label: 一对重量（参考长度）
+        group: 结构与技术
+        type: number
+        unit: g
+        filter: false
+        compare: false
+        order: 56
       - key: baseEdgeAngle
         label: 底刃角
         group: 结构与技术
