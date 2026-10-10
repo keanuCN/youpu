@@ -2217,7 +2217,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0724/6381/0737/files/1-250H51H524304.jpg?v=1766777542&width=900",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,

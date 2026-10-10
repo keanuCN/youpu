@@ -14,7 +14,12 @@ specs:
     - bluetooth
   hotSwap: true
   backlight: RGB 背光
-images: []
+images:
+  - url: https://cdn.shopify.com/s/files/1/0724/6381/0737/files/1-250H51H524304.jpg?v=1766777542&width=900
+    kind: face
+    alt: AULA S75 Pro 三模机械键盘
+    source: AULA 阿根廷官方地区站 S75 Pro 商品图；展示授权状态待核
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.aulastar.com/mechanical-keyboard/468.html
