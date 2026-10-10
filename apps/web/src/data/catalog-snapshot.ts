@@ -14872,7 +14872,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://www.godox.com.cn/static/upload/image/20230222/1677053116948945.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,

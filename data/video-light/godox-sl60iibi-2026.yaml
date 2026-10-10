@@ -20,7 +20,11 @@ specs:
   mount: 保荣卡口
   lowNoise: true
   illuminance: 25100
-images: []
+images:
+  - url: https://www.godox.com.cn/static/upload/image/20230222/1677053116948945.jpg
+    kind: face
+    alt: Godox SL60IID/SL60IIBi 系列影视灯官方产品图
+    source: 神牛 SL60IID/SL60IIBi 官方产品页首张图库图；页面列明 SL60IIBi 型号；图片返回 image/jpeg；展示授权状态待核
 data_source:
   kind: crawl
   origin_url: https://godox.com.cn/product-a/SL60II.html
