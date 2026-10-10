@@ -4,10 +4,20 @@ brand: flux
 model: "DS"
 year: 2027
 title: "FLUX DS 2027"
-one_liner: "FLUX 自由式全能款，26-27 官方页面介绍轻量底座与 Cloud Strap。"
+one_liner: "FLUX 自由式全能款，26-27 官方规格为 4 级硬度，采用 Cloud Strap 与可弯曲安装盘。"
 specs:
   entrySystem: strap
+  flex: 4
+  flexFeel: mid-soft
+  mountingSystem: "Flexible Disc 柔性旋转安装盘；官方页面未在本型号页进一步列明孔位兼容"
   bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+  baseplateMaterial: "Super Ultima 底盘；Glass Reinforced Flexlite Grade 轻量弹性材料；Flat Bottom"
+  ankleStrap: "Cloud Strap 泡棉缓冲脚踝绑带"
+  toeStrap: "F.T.M. Duo 一体成型脚趾绑带，贴合靴头"
+  buckles: "Beer Buckle 棘轮扣，带开瓶器"
+  highback: "Resistor Highback；Super Tough Nylon 中等硬度材料"
+  highbackAdjustment: "Toolless Lever、五孔旋转调节、Micro Adjuster；每格约 2.5° 前倾"
+  cushioning: "FootOn 脚床、Cushion Stabilizer、可分别调整的 toe/heel cushion"
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2627-ds

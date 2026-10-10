@@ -7,7 +7,17 @@ title: "FLUX CV 2027"
 one_liner: "26-27 刻滑与全山地取向型号，官方介绍其加高脚床及可调节结构。"
 specs:
   entrySystem: strap
+  flex: 7
+  flexFeel: stiff
+  mountingSystem: "FLUX Multi Disc；兼容 4x4 与 2H 安装，可前后或左右偏移 5/10 mm"
   bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+  baseplateMaterial: "Super Transfer 底盘；Performance Blend 中等硬度材料；4Corner Stabilizer"
+  ankleStrap: "Waffle Strap 双层缓冲结构；UU Fit 环绕固定"
+  toeStrap: "F.T.M. Ver. 5.0；L-Guide 收纳带尾"
+  buckles: "Beer Buckle 棘轮扣，带开瓶器"
+  highback: "Buffalo Highback；Super Tough Nylon 中等硬度材料"
+  highbackAdjustment: "Slide Highback Rotation、Toolless Lever、Micro Adjuster；每格约 2.5° 前倾"
+  cushioning: "Boost FootOn 比标准脚床高 4 mm；Heel Up；可调 toe/heel cushion"
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2627-cv
