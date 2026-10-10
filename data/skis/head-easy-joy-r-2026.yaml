@@ -9,7 +9,13 @@ specs:
   terrain: 雪道
   skierLevel: 入门至进阶
   bindingSetup: 常见雪板+固定器套装，按具体 SKU 核对
+images:
+  - url: "https://cdn-mdb.head.com/CDN3/D/316485/1/683x911/easy-joy-r.webp"
+    kind: face
+    alt: HEAD Easy Joy R 官方雪板商品图
+    source: HEAD 官方商品页（图片使用授权待核）
+    sort_order: 0
 data_source:
-  kind: manual
-  origin_url: https://www.jd.com/hotitem/1318ec8981773fe88ecd.html
+  kind: official
+  origin_url: https://www.head.com/en_US/product/easy-joy-r-316485
 status: published
