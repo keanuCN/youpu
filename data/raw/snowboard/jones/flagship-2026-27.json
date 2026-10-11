@@ -1,0 +1,41 @@
+{
+  "brand": "Jones",
+  "model": "Men's Flagship",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-11",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.jonessnowboards.com/products/mens-flagship-snowboard",
+      "evidence": "Official product page identifies the 2027 Men's Flagship and lists 12 sizes (151, 154, 156W, 158, 159W, 161, 162W, 164, 165W, 167, 169W, 172), per-size weight, contact length, effective edge, waist/tip/tail widths, sidecut radius, reference stance and centered stance. The page's weight unit is kg; linear geometry is cm and converted to mm in the seed."
+    }
+  },
+  "sizeTable": {
+    "units": {
+      "boardSize": "cm",
+      "weight": "kg as listed by Jones",
+      "contactLength": "cm on source, converted to mm in seed",
+      "effectiveEdge": "cm on source, converted to mm in seed",
+      "waistWidth": "cm on source, converted to mm in seed",
+      "tipWidth": "cm on source, converted to mm in seed",
+      "tailWidth": "cm on source, converted to mm in seed",
+      "sidecutRadius": "m",
+      "stance": "cm; reference and centered positions are distinct"
+    },
+    "rows": [
+      {"size":"151","weightKg":2.7,"contactLengthCm":100.8,"effectiveEdgeCm":112,"waistWidthCm":24.3,"tipWidthCm":29.0,"tailWidthCm":27.6,"sidecutRadiusM":7.3,"referenceStanceCm":50,"centeredStanceCm":52},
+      {"size":"154","weightKg":2.8,"contactLengthCm":103.2,"effectiveEdgeCm":114,"waistWidthCm":24.6,"tipWidthCm":29.2,"tailWidthCm":27.8,"sidecutRadiusM":7.9,"referenceStanceCm":52,"centeredStanceCm":54},
+      {"size":"156W","weightKg":3.0,"contactLengthCm":104.6,"effectiveEdgeCm":116,"waistWidthCm":26.1,"tipWidthCm":30.6,"tailWidthCm":29.2,"sidecutRadiusM":8.3,"referenceStanceCm":56,"centeredStanceCm":58},
+      {"size":"158","weightKg":2.9,"contactLengthCm":106.6,"effectiveEdgeCm":118,"waistWidthCm":24.9,"tipWidthCm":29.4,"tailWidthCm":28.1,"sidecutRadiusM":8.5,"referenceStanceCm":56,"centeredStanceCm":58},
+      {"size":"159W","weightKg":3.1,"contactLengthCm":107.0,"effectiveEdgeCm":118,"waistWidthCm":26.3,"tipWidthCm":30.7,"tailWidthCm":29.5,"sidecutRadiusM":8.7,"referenceStanceCm":56,"centeredStanceCm":58},
+      {"size":"161","weightKg":3.1,"contactLengthCm":109.0,"effectiveEdgeCm":120,"waistWidthCm":25.2,"tipWidthCm":29.6,"tailWidthCm":28.3,"sidecutRadiusM":9.1,"referenceStanceCm":56,"centeredStanceCm":58},
+      {"size":"162W","weightKg":3.3,"contactLengthCm":110.0,"effectiveEdgeCm":121,"waistWidthCm":26.3,"tipWidthCm":30.7,"tailWidthCm":29.4,"sidecutRadiusM":9.3,"referenceStanceCm":56,"centeredStanceCm":58},
+      {"size":"164","weightKg":3.2,"contactLengthCm":111.6,"effectiveEdgeCm":123,"waistWidthCm":25.4,"tipWidthCm":29.9,"tailWidthCm":28.6,"sidecutRadiusM":9.3,"referenceStanceCm":56,"centeredStanceCm":58},
+      {"size":"165W","weightKg":3.3,"contactLengthCm":112.4,"effectiveEdgeCm":123,"waistWidthCm":26.6,"tipWidthCm":31.1,"tailWidthCm":29.8,"sidecutRadiusM":9.4,"referenceStanceCm":60,"centeredStanceCm":58},
+      {"size":"167","weightKg":3.4,"contactLengthCm":113.6,"effectiveEdgeCm":125,"waistWidthCm":25.9,"tipWidthCm":30.5,"tailWidthCm":29.2,"sidecutRadiusM":9.4,"referenceStanceCm":60,"centeredStanceCm":58},
+      {"size":"169W","weightKg":3.6,"contactLengthCm":115.6,"effectiveEdgeCm":127,"waistWidthCm":27.0,"tipWidthCm":31.7,"tailWidthCm":30.4,"sidecutRadiusM":9.5,"referenceStanceCm":62,"centeredStanceCm":60},
+      {"size":"172","weightKg":3.6,"contactLengthCm":117.8,"effectiveEdgeCm":129,"waistWidthCm":26.3,"tipWidthCm":31.1,"tailWidthCm":29.8,"sidecutRadiusM":9.5,"referenceStanceCm":62,"centeredStanceCm":60}
+    ],
+    "notCopiedToSeed": ["taper", "surface area", "underfoot widths", "rider weight ranges", "boot size"],
+    "note": "The current nested sizeSpecs contract does not include separate fields for all listed dimensions; the complete official table is preserved here. Taper is omitted from seed because the current item schema has no taper field."
+  }
+}
