@@ -1,0 +1,37 @@
+{
+  "brand": "Burton",
+  "model": "Men's Custom Camber",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-11",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881",
+      "evidence": "Burton official 2027 product page identifies Camber bend, Directional shape, Twin flex, Super Fly II 700G core with Dualzone EGD, 45-degree Carbon Highlights, Sintered WFO base, The Channel mounting system, intermediate/expert rider level and a 3-year warranty. The qualitative Twin flex is preserved as manufacturer terminology and not converted into a numeric flex score."
+    }
+  },
+  "sizeTable": {
+    "units": {
+      "boardSize": "cm; W denotes wide variant",
+      "waistWidth": "mm",
+      "effectiveEdge": "mm",
+      "sidecutRadius": "m",
+      "stanceWidth": "mm",
+      "noseWidth": "mm",
+      "tailWidth": "mm"
+    },
+    "rows": [
+      {"size":"150","waistWidth":248,"effectiveEdge":1135,"sidecutRadiusM":7.4,"stanceWidth":505,"noseWidth":288.1,"tailWidth":288.1},
+      {"size":"154","waistWidth":250,"effectiveEdge":1175,"sidecutRadiusM":7.6,"stanceWidth":530,"noseWidth":291.5,"tailWidth":291.5},
+      {"size":"156","waistWidth":252,"effectiveEdge":1195,"sidecutRadiusM":7.8,"stanceWidth":530,"noseWidth":294.3,"tailWidth":294.3},
+      {"size":"158","waistWidth":254,"effectiveEdge":1215,"sidecutRadiusM":7.9,"stanceWidth":560,"noseWidth":297.0,"tailWidth":297.0},
+      {"size":"162","waistWidth":256,"effectiveEdge":1255,"sidecutRadiusM":8.2,"stanceWidth":560,"noseWidth":300.5,"tailWidth":300.5},
+      {"size":"154W","waistWidth":258,"effectiveEdge":1175,"sidecutRadiusM":7.6,"stanceWidth":530,"noseWidth":299.5,"tailWidth":299.5},
+      {"size":"158W","waistWidth":262,"effectiveEdge":1215,"sidecutRadiusM":7.9,"stanceWidth":560,"noseWidth":305.0,"tailWidth":305.0},
+      {"size":"162W","waistWidth":264,"effectiveEdge":1255,"sidecutRadiusM":8.2,"stanceWidth":560,"noseWidth":308.5,"tailWidth":308.5},
+      {"size":"166W","waistWidth":266,"effectiveEdge":1295,"sidecutRadiusM":8.4,"stanceWidth":560,"noseWidth":312.0,"tailWidth":312.0},
+      {"size":"170W","waistWidth":270,"effectiveEdge":1335,"sidecutRadiusM":8.7,"stanceWidth":560,"noseWidth":317.4,"tailWidth":317.4}
+    ],
+    "notCopiedToSeed": ["weight range", "binding size", "stance location"],
+    "note": "Burton's table's Stance Location value (-12.5) is not treated as setback because the current source extraction does not establish its units and convention. Running Length is also kept out of the schema's contactLength field because the manufacturer uses a distinct label."
+  }
+}
