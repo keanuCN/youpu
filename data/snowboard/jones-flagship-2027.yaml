@@ -25,18 +25,18 @@ specs:
   base: Sintered 8000 Base
   flex: 8
   sizeSpecs:
-    - {size: "151", effectiveEdge: 1120, contactLength: 1008, waistWidth: 243, noseWidth: 290, tailWidth: 276, sidecutRadii: "7.3 m", stanceWidth: "50 cm reference / 52 cm centered"}
-    - {size: "154", effectiveEdge: 1140, contactLength: 1032, waistWidth: 246, noseWidth: 292, tailWidth: 278, sidecutRadii: "7.9 m", stanceWidth: "52 cm reference / 54 cm centered"}
-    - {size: "156W", effectiveEdge: 1160, contactLength: 1046, waistWidth: 261, noseWidth: 306, tailWidth: 292, sidecutRadii: "8.3 m", stanceWidth: "56 cm reference / 58 cm centered"}
-    - {size: "158", effectiveEdge: 1180, contactLength: 1066, waistWidth: 249, noseWidth: 294, tailWidth: 281, sidecutRadii: "8.5 m", stanceWidth: "56 cm reference / 58 cm centered"}
-    - {size: "159W", effectiveEdge: 1180, contactLength: 1070, waistWidth: 263, noseWidth: 307, tailWidth: 295, sidecutRadii: "8.7 m", stanceWidth: "56 cm reference / 58 cm centered"}
-    - {size: "161", effectiveEdge: 1200, contactLength: 1090, waistWidth: 252, noseWidth: 296, tailWidth: 283, sidecutRadii: "9.1 m", stanceWidth: "56 cm reference / 58 cm centered"}
-    - {size: "162W", effectiveEdge: 1210, contactLength: 1100, waistWidth: 263, noseWidth: 307, tailWidth: 294, sidecutRadii: "9.3 m", stanceWidth: "56 cm reference / 58 cm centered"}
-    - {size: "164", effectiveEdge: 1230, contactLength: 1116, waistWidth: 254, noseWidth: 299, tailWidth: 286, sidecutRadii: "9.3 m", stanceWidth: "56 cm reference / 58 cm centered"}
-    - {size: "165W", effectiveEdge: 1230, contactLength: 1124, waistWidth: 266, noseWidth: 311, tailWidth: 298, sidecutRadii: "9.4 m", stanceWidth: "60 cm reference / 58 cm centered"}
-    - {size: "167", effectiveEdge: 1250, contactLength: 1136, waistWidth: 259, noseWidth: 305, tailWidth: 292, sidecutRadii: "9.4 m", stanceWidth: "60 cm reference / 58 cm centered"}
-    - {size: "169W", effectiveEdge: 1270, contactLength: 1156, waistWidth: 270, noseWidth: 317, tailWidth: 304, sidecutRadii: "9.5 m", stanceWidth: "62 cm reference / 60 cm centered"}
-    - {size: "172", effectiveEdge: 1290, contactLength: 1178, waistWidth: 263, noseWidth: 311, tailWidth: 298, sidecutRadii: "9.5 m", stanceWidth: "62 cm reference / 60 cm centered"}
+    - {size: "151", weight: 2700, effectiveEdge: 1120, contactLength: 1008, waistWidth: 243, noseWidth: 290, tailWidth: 276, sidecutRadii: "7.3 m", stanceWidth: "50 cm reference / 52 cm centered"}
+    - {size: "154", weight: 2800, effectiveEdge: 1140, contactLength: 1032, waistWidth: 246, noseWidth: 292, tailWidth: 278, sidecutRadii: "7.9 m", stanceWidth: "52 cm reference / 54 cm centered"}
+    - {size: "156W", weight: 3000, effectiveEdge: 1160, contactLength: 1046, waistWidth: 261, noseWidth: 306, tailWidth: 292, sidecutRadii: "8.3 m", stanceWidth: "56 cm reference / 58 cm centered"}
+    - {size: "158", weight: 2900, effectiveEdge: 1180, contactLength: 1066, waistWidth: 249, noseWidth: 294, tailWidth: 281, sidecutRadii: "8.5 m", stanceWidth: "56 cm reference / 58 cm centered"}
+    - {size: "159W", weight: 3100, effectiveEdge: 1180, contactLength: 1070, waistWidth: 263, noseWidth: 307, tailWidth: 295, sidecutRadii: "8.7 m", stanceWidth: "56 cm reference / 58 cm centered"}
+    - {size: "161", weight: 3100, effectiveEdge: 1200, contactLength: 1090, waistWidth: 252, noseWidth: 296, tailWidth: 283, sidecutRadii: "9.1 m", stanceWidth: "56 cm reference / 58 cm centered"}
+    - {size: "162W", weight: 3300, effectiveEdge: 1210, contactLength: 1100, waistWidth: 263, noseWidth: 307, tailWidth: 294, sidecutRadii: "9.3 m", stanceWidth: "56 cm reference / 58 cm centered"}
+    - {size: "164", weight: 3200, effectiveEdge: 1230, contactLength: 1116, waistWidth: 254, noseWidth: 299, tailWidth: 286, sidecutRadii: "9.3 m", stanceWidth: "56 cm reference / 58 cm centered"}
+    - {size: "165W", weight: 3300, effectiveEdge: 1230, contactLength: 1124, waistWidth: 266, noseWidth: 311, tailWidth: 298, sidecutRadii: "9.4 m", stanceWidth: "60 cm reference / 58 cm centered"}
+    - {size: "167", weight: 3400, effectiveEdge: 1250, contactLength: 1136, waistWidth: 259, noseWidth: 305, tailWidth: 292, sidecutRadii: "9.4 m", stanceWidth: "60 cm reference / 58 cm centered"}
+    - {size: "169W", weight: 3600, effectiveEdge: 1270, contactLength: 1156, waistWidth: 270, noseWidth: 317, tailWidth: 304, sidecutRadii: "9.5 m", stanceWidth: "62 cm reference / 60 cm centered"}
+    - {size: "172", weight: 3600, effectiveEdge: 1290, contactLength: 1178, waistWidth: 263, noseWidth: 311, tailWidth: 298, sidecutRadii: "9.5 m", stanceWidth: "62 cm reference / 60 cm centered"}
   scenes:
     - all-mountain
     - powder
