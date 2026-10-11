@@ -10,6 +10,7 @@ price:
   max: 4320
   currency: CNY
 specs:
+  lengthOptions: 148 / 150 / 152 / 154 / 156 / 158 / 160 / 162 / 164 / 151W / 153W / 155W / 157W / 159W / 161W / 163W
   length: 156
   effectiveEdge: 1234
   waistWidth: 252
@@ -25,6 +26,23 @@ specs:
   scenes:
     - all-mountain
     - freestyle
+  sizeSpecs:
+    - {size: "148", effectiveEdge: 1177, waistWidth: 244, noseWidth: 287, tailWidth: 287, sidecutRadii: "7.6 m", stanceWidth: "50.8 cm reference"}
+    - {size: "150", effectiveEdge: 1191, waistWidth: 246, noseWidth: 290, tailWidth: 290, sidecutRadii: "7.7 m", stanceWidth: "53.3 cm reference"}
+    - {size: "152", effectiveEdge: 1207, waistWidth: 248, noseWidth: 292, tailWidth: 292, sidecutRadii: "7.8 m", stanceWidth: "53.3 cm reference"}
+    - {size: "154", effectiveEdge: 1223, waistWidth: 250, noseWidth: 295, tailWidth: 295, sidecutRadii: "7.9 m", stanceWidth: "53.3 cm reference"}
+    - {size: "156", effectiveEdge: 1234, waistWidth: 252, noseWidth: 298, tailWidth: 298, sidecutRadii: "8.0 m", stanceWidth: "55.9 cm reference"}
+    - {size: "158", effectiveEdge: 1256, waistWidth: 254, noseWidth: 300, tailWidth: 300, sidecutRadii: "8.1 m", stanceWidth: "55.9 cm reference"}
+    - {size: "160", effectiveEdge: 1271, waistWidth: 257, noseWidth: 304, tailWidth: 304, sidecutRadii: "8.2 m", stanceWidth: "58.4 cm reference"}
+    - {size: "162", effectiveEdge: 1287, waistWidth: 259, noseWidth: 307, tailWidth: 307, sidecutRadii: "8.3 m", stanceWidth: "58.4 cm reference"}
+    - {size: "164", effectiveEdge: 1301, waistWidth: 261, noseWidth: 309, tailWidth: 309, sidecutRadii: "8.4 m", stanceWidth: "58.4 cm reference"}
+    - {size: "151W", effectiveEdge: 1170, waistWidth: 255, noseWidth: 297, tailWidth: 297, sidecutRadii: "8.0 m", stanceWidth: "53.3 cm reference"}
+    - {size: "153W", effectiveEdge: 1186, waistWidth: 257, noseWidth: 299, tailWidth: 299, sidecutRadii: "8.0 m", stanceWidth: "53.3 cm reference"}
+    - {size: "155W", effectiveEdge: 1206, waistWidth: 258, noseWidth: 302, tailWidth: 302, sidecutRadii: "8.1 m", stanceWidth: "55.9 cm reference"}
+    - {size: "157W", effectiveEdge: 1239, waistWidth: 260, noseWidth: 305, tailWidth: 305, sidecutRadii: "8.2 m", stanceWidth: "55.9 cm reference"}
+    - {size: "159W", effectiveEdge: 1259, waistWidth: 261, noseWidth: 307, tailWidth: 307, sidecutRadii: "8.2 m", stanceWidth: "55.9 cm reference"}
+    - {size: "161W", effectiveEdge: 1281, waistWidth: 262, noseWidth: 309, tailWidth: 309, sidecutRadii: "8.3 m", stanceWidth: "58.4 cm reference"}
+    - {size: "163W", effectiveEdge: 1297, waistWidth: 263, noseWidth: 311, tailWidth: 311, sidecutRadii: "8.4 m", stanceWidth: "58.4 cm reference"}
 editorial_scores:
   stability: 7.9
   response: 8.0

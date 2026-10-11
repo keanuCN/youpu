@@ -1,0 +1,42 @@
+{
+  "brand": "CAPiTA",
+  "model": "D.O.A.",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-11",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://capitasnowboarding.com/en-ca/products/capita-d-o-a-mens-snowboard-2027",
+      "evidence": "Official CAPiTA 2027 product page lists nine standard and seven wide size variants and provides per-size effective edge, waist width, nose/tail width, sidecut radius, reference stance, recommended rider weight and boot size. It identifies the Quantum Drive base. All size variants and core geometry copied to the seed are transcribed from this page."
+    }
+  },
+  "sizeTable": {
+    "units": {
+      "boardSize": "cm; W denotes wide variant",
+      "effectiveEdge": "mm",
+      "waistWidth": "cm on source, converted to mm in seed",
+      "noseTailWidth": "cm on source, converted to mm in seed",
+      "sidecutRadius": "m",
+      "referenceStance": "cm/in; cm preserved in seed"
+    },
+    "rows": [
+      {"size":"148","effectiveEdge":1177,"waistWidthCm":24.4,"noseTailWidthCm":28.7,"sidecutRadiusM":7.6,"referenceStanceCm":50.8},
+      {"size":"150","effectiveEdge":1191,"waistWidthCm":24.6,"noseTailWidthCm":29.0,"sidecutRadiusM":7.7,"referenceStanceCm":53.3},
+      {"size":"152","effectiveEdge":1207,"waistWidthCm":24.8,"noseTailWidthCm":29.2,"sidecutRadiusM":7.8,"referenceStanceCm":53.3},
+      {"size":"154","effectiveEdge":1223,"waistWidthCm":25.0,"noseTailWidthCm":29.5,"sidecutRadiusM":7.9,"referenceStanceCm":53.3},
+      {"size":"156","effectiveEdge":1234,"waistWidthCm":25.2,"noseTailWidthCm":29.8,"sidecutRadiusM":8.0,"referenceStanceCm":55.9},
+      {"size":"158","effectiveEdge":1256,"waistWidthCm":25.4,"noseTailWidthCm":30.0,"sidecutRadiusM":8.1,"referenceStanceCm":55.9},
+      {"size":"160","effectiveEdge":1271,"waistWidthCm":25.7,"noseTailWidthCm":30.4,"sidecutRadiusM":8.2,"referenceStanceCm":58.4},
+      {"size":"162","effectiveEdge":1287,"waistWidthCm":25.9,"noseTailWidthCm":30.7,"sidecutRadiusM":8.3,"referenceStanceCm":58.4},
+      {"size":"164","effectiveEdge":1301,"waistWidthCm":26.1,"noseTailWidthCm":30.9,"sidecutRadiusM":8.4,"referenceStanceCm":58.4},
+      {"size":"151W","effectiveEdge":1170,"waistWidthCm":25.5,"noseTailWidthCm":29.7,"sidecutRadiusM":8.0,"referenceStanceCm":53.3},
+      {"size":"153W","effectiveEdge":1186,"waistWidthCm":25.7,"noseTailWidthCm":29.9,"sidecutRadiusM":8.0,"referenceStanceCm":53.3},
+      {"size":"155W","effectiveEdge":1206,"waistWidthCm":25.8,"noseTailWidthCm":30.2,"sidecutRadiusM":8.1,"referenceStanceCm":55.9},
+      {"size":"157W","effectiveEdge":1239,"waistWidthCm":26.0,"noseTailWidthCm":30.5,"sidecutRadiusM":8.2,"referenceStanceCm":55.9},
+      {"size":"159W","effectiveEdge":1259,"waistWidthCm":26.1,"noseTailWidthCm":30.7,"sidecutRadiusM":8.2,"referenceStanceCm":55.9},
+      {"size":"161W","effectiveEdge":1281,"waistWidthCm":26.2,"noseTailWidthCm":30.9,"sidecutRadiusM":8.3,"referenceStanceCm":58.4},
+      {"size":"163W","effectiveEdge":1297,"waistWidthCm":26.3,"noseTailWidthCm":31.1,"sidecutRadiusM":8.4,"referenceStanceCm":58.4}
+    ],
+    "notCopiedToSeed": ["taper", "suggested rider weight", "suggested boot size"],
+    "note": "The official table gives overall board length as each size label. No unlisted effective-edge or geometry values have been inferred."
+  }
+}
