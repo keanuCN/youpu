@@ -13,6 +13,7 @@ import { GearCard } from "@/components/gear/gear-card";
 import { FlexBar, ScoreMark, SceneTags, Stars } from "@/components/gear/primitives";
 import { RADAR_COLORS, RadarChart } from "@/components/gear/radar";
 import { ReviewPanel } from "@/components/gear/review-panel";
+import { SizeSpecTable } from "@/components/gear/size-spec-table";
 import { SpecTable } from "@/components/gear/spec-table";
 import { SectionHead } from "@/components/layout/section-head";
 import { reviewCount, userRating } from "@/data/boards";
@@ -101,6 +102,7 @@ export default function GearDetailPage({
         <div>
           <SectionHead index="02" title="完整参数" titleEn="Specifications" desc={`按 ${category?.name ?? ""} 品类的统一模板录入，缺测项显示 —。`} />
           <FitGuideTable guide={gear.fitGuide} />
+          {gear.categorySlug === "snowboard" ? <SizeSpecTable specs={gear.sizeSpecs} /> : null}
           <SpecTable gear={gear} groups={groups} />
         </div>
         <div>

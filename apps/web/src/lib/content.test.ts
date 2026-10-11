@@ -66,6 +66,19 @@ test("maps an API list item while preserving local transitional fields", () => {
   assert.deepEqual(gear.ratingDist, { "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 });
 });
 
+test("maps API per-size equipment specs for the detail page", () => {
+  const sizeSpecs = [
+    { size: "156", waistWidth: 255, effectiveEdge: 1195, sidecutRadii: "7.5 m" },
+    { size: "159W", waistWidth: 264, effectiveEdge: 1215, sidecutRadii: "7.8 m" },
+  ];
+  const gear = mapProductListItem({
+    ...apiItem,
+    specs: { ...apiItem.specs, sizeSpecs },
+  });
+
+  assert.deepEqual(gear.sizeSpecs, sizeSpecs);
+});
+
 test("does not restore an AI placeholder from API or local fallback images", () => {
   const aiUrl =
     "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-base-01.png?auth_key=test";

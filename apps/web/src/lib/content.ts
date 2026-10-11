@@ -10,7 +10,7 @@ import { GEAR, gearOfCategory, getGear } from "../data/boards";
 import { flexBucket, isLive } from "../data/categories";
 import { API_BASE } from "./api";
 import { isAllowedImageUrl, resolveImageUrl } from "./image-url";
-import type { FitGuide, FitGuideRow, GearAnalysis, GearItem, GalleryShot } from "../types";
+import type { FitGuide, FitGuideRow, GearAnalysis, GearItem, GearSizeSpec, GearSizeSpecValue, GalleryShot } from "../types";
 
 export type ContentSource = "pack" | "api";
 
@@ -75,6 +75,22 @@ function toSpecs(value: Record<string, unknown>): GearItem["specs"] {
 
 function textValue(value: unknown): string | undefined {
   return typeof value === "string" && value.trim() !== "" ? value : undefined;
+}
+
+function isGearSizeSpecValue(value: unknown): value is GearSizeSpecValue {
+  if (value === null || typeof value === "string" || typeof value === "number" || typeof value === "boolean") return true;
+  if (Array.isArray(value)) return value.every(isGearSizeSpecValue);
+  if (typeof value === "object") return Object.values(value).every(isGearSizeSpecValue);
+  return false;
+}
+
+function sizeSpecsOf(value: unknown, fallback?: GearItem): GearSizeSpec[] | undefined {
+  if (!Array.isArray(value)) return fallback?.sizeSpecs;
+  const rows = value.filter(
+    (row): row is Record<string, unknown> => Boolean(row && typeof row === "object" && !Array.isArray(row)),
+  );
+  if (rows.some((row) => !Object.values(row).every(isGearSizeSpecValue))) return fallback?.sizeSpecs;
+  return rows as GearSizeSpec[];
 }
 
 function fitGuideOf(value: Record<string, unknown>, fallback?: GearItem): FitGuide | undefined {
@@ -198,6 +214,7 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
     hero: cover,
     gallery: galleryOf(item, cover, fallback),
     specs: { ...(fallback?.specs ?? {}), ...specs },
+    sizeSpecs: sizeSpecsOf(rawSpecs.sizeSpecs, fallback),
     fitGuide: fitGuideOf(rawSpecs, fallback),
     scores,
     composite: item.composite ?? fallback?.composite ?? 0,
