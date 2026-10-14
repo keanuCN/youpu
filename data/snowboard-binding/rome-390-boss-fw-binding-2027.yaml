@@ -11,6 +11,19 @@ specs:
     - freestyle
   entrySystem: strap
   mountingSystem: Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准
+  bootCompatibility: 常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://us.romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings
+  sizeChart:
+    - { size: S, usMen: 5 - 7, usWomen: 6.5 - 8.5, eu: 36.5 - 39, mondo: 23 - 25, notes: 官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。 }
+    - { size: M/L, usMen: 7.5 - 10, usWomen: 9 - 11.5, eu: 40 - 43, mondo: 25.5 - 28, notes: 官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。 }
+    - { size: L/XL, usMen: 10.5 - 12.5, usWomen: 12 - 14, eu: 44 - 46, mondo: 28.5 - 30.5, notes: 官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。 }
+  bindingSizeGuide: "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。"
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 369.95
+  priceMarket: 原币 USD；来源商店 romesnowboards.com
+  priceSource: https://romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-fw-c3-artifact-binding-1-1782373333346.jpg?v=1787636962&width=1920
     kind: face

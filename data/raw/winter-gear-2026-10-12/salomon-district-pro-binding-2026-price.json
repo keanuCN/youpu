@@ -1,0 +1,66 @@
+{
+  "slug": "salomon-district-pro-binding-2026",
+  "price": "USD 319.95",
+  "source": "https://www.salomon.com/en-us/product/district-pro-li1290",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:43:37.886Z",
+  "productName": "DISTRICT PRO",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "DISTRICT PRO Black",
+      "image": "https://cdn.dam.salomon.com/2dd43218-0575-4f37-92d2-b360010835d6/L49289600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black",
+      "size": "S",
+      "sku": "L49289600054",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/district-pro-li1290/L49289600?sizeId=L49289600054",
+        "priceCurrency": "USD",
+        "price": "319.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "DISTRICT PRO Black",
+      "image": "https://cdn.dam.salomon.com/2dd43218-0575-4f37-92d2-b360010835d6/L49289600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black",
+      "size": "M",
+      "sku": "L49289600056",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/district-pro-li1290/L49289600?sizeId=L49289600056",
+        "priceCurrency": "USD",
+        "price": "319.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "DISTRICT PRO Black",
+      "image": "https://cdn.dam.salomon.com/2dd43218-0575-4f37-92d2-b360010835d6/L49289600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black",
+      "size": "L",
+      "sku": "L49289600058",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/district-pro-li1290/L49289600?sizeId=L49289600058",
+        "priceCurrency": "USD",
+        "price": "319.95"
+      }
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-pro-li1290/L49289700?sizeId=L49289700054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-pro-li1290/L49289700?sizeId=L49289700056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-pro-li1290/L49289700?sizeId=L49289700058"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "7e05df682dcf346bca26748da2e71191bf8c456a9cbfc10e7492dd06dcdf9df9",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

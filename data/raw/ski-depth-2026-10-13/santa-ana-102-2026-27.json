@@ -1,0 +1,62 @@
+{
+  "seedFile": "data/skis/nordica-santa-ana-102-2027.yaml",
+  "url": "https://www.nordica.com/canada/en/collection/women/skis/santa-ana/santa-ana-102",
+  "retrievedAt": "2026-10-13",
+  "heading": "Santa Ana 102 - 2026/27 - Nordica - Skis and Boots – Official website",
+  "season": "2026-27",
+  "rows": [
+    {
+      "size": "155 cm",
+      "noseWidth": 128,
+      "waistWidth": 102,
+      "tailWidth": 118,
+      "turnRadius": 16.5,
+      "weightPerPair": 3500
+    },
+    {
+      "size": "161 cm",
+      "noseWidth": 129,
+      "waistWidth": 102,
+      "tailWidth": 119,
+      "turnRadius": 17,
+      "weightPerPair": 3700
+    },
+    {
+      "size": "167 cm",
+      "noseWidth": 130.5,
+      "waistWidth": 102,
+      "tailWidth": 120.5,
+      "turnRadius": 17.5,
+      "weightPerPair": 3920
+    },
+    {
+      "size": "173 cm",
+      "noseWidth": 131.5,
+      "waistWidth": 101,
+      "tailWidth": 121.5,
+      "turnRadius": 18,
+      "weightPerPair": 4060,
+      "notes": "官方此长度板腰为 101 mm，与型号名称及其他长度不同，按原表保留；购买前向品牌核对。"
+    },
+    {
+      "size": "179 cm",
+      "noseWidth": 133,
+      "waistWidth": 102,
+      "tailWidth": 123,
+      "turnRadius": 18.5,
+      "weightPerPair": 4320
+    }
+  ],
+  "extraction": {
+    "selector": "[data-accordion]",
+    "fields": [
+      "noseWidthMm",
+      "waistWidthMm",
+      "tailWidthMm",
+      "turnRadiusM",
+      "weightPerPairG"
+    ],
+    "method": "JSON.parse attribute; no interpolation",
+    "htmlSha256": "5212e0b9e7e3ade6b00cbc6a4ee3990fc99238162ef7b052daa6207b03e228f0"
+  }
+}

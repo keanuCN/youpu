@@ -1,0 +1,112 @@
+{
+  "slug": "nitro-fate-binding-2027",
+  "price": "EUR 299.9",
+  "source": "https://www.nitrosnowboards.com/products/fate-womens-bindings-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:07.625Z",
+  "productName": "Nitro Fate Women's Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/fate-womens-bindings-1",
+  "hasVariant": [
+    {
+      "@id": "/products/fate-womens-bindings-1?variant=57277692576075#variant",
+      "@type": "Product",
+      "gtin": "7630349335353",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21011-103_Fate-Womens-Bindings_Nitro-x-Hailey-Langland_Product-1.jpg?v=1779339397&width=1920",
+      "name": "Nitro Fate Women's Bindings - Nitro x Hailey Langland / S",
+      "offers": {
+        "@id": "/products/fate-womens-bindings-1?variant=57277692576075#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "299.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/fate-womens-bindings-1?variant=57277692576075"
+      },
+      "sku": "12BG21011-103-S"
+    },
+    {
+      "@id": "/products/fate-womens-bindings-1?variant=57277692608843#variant",
+      "@type": "Product",
+      "gtin": "7630349335360",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21011-103_Fate-Womens-Bindings_Nitro-x-Hailey-Langland_Product-1.jpg?v=1779339397&width=1920",
+      "name": "Nitro Fate Women's Bindings - Nitro x Hailey Langland / S/M",
+      "offers": {
+        "@id": "/products/fate-womens-bindings-1?variant=57277692608843#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "299.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/fate-womens-bindings-1?variant=57277692608843"
+      },
+      "sku": "12BG21011-103-S/M"
+    },
+    {
+      "@id": "/products/fate-womens-bindings-1?variant=57277692445003#variant",
+      "@type": "Product",
+      "gtin": "7630349335315",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21011-101_Fate-Womens-Bindings_Ultra-Black_Product-1.jpg?v=1779339397&width=1920",
+      "name": "Nitro Fate Women's Bindings - Ultra Black / S",
+      "offers": {
+        "@id": "/products/fate-womens-bindings-1?variant=57277692445003#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "299.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/fate-womens-bindings-1?variant=57277692445003"
+      },
+      "sku": "12BG21011-101-S"
+    },
+    {
+      "@id": "/products/fate-womens-bindings-1?variant=57277692477771#variant",
+      "@type": "Product",
+      "gtin": "7630349335322",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21011-101_Fate-Womens-Bindings_Ultra-Black_Product-1.jpg?v=1779339397&width=1920",
+      "name": "Nitro Fate Women's Bindings - Ultra Black / S/M",
+      "offers": {
+        "@id": "/products/fate-womens-bindings-1?variant=57277692477771#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "299.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/fate-womens-bindings-1?variant=57277692477771"
+      },
+      "sku": "12BG21011-101-S/M"
+    },
+    {
+      "@id": "/products/fate-womens-bindings-1?variant=57277692510539#variant",
+      "@type": "Product",
+      "gtin": "7630349335339",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21011-102_Fate-Womens-Bindings_Off-White_Product-1.jpg?v=1779339396&width=1920",
+      "name": "Nitro Fate Women's Bindings - Off White / S",
+      "offers": {
+        "@id": "/products/fate-womens-bindings-1?variant=57277692510539#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "299.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/fate-womens-bindings-1?variant=57277692510539"
+      },
+      "sku": "12BG21011-102-S"
+    },
+    {
+      "@id": "/products/fate-womens-bindings-1?variant=57277692543307#variant",
+      "@type": "Product",
+      "gtin": "7630349335346",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21011-102_Fate-Womens-Bindings_Off-White_Product-1.jpg?v=1779339396&width=1920",
+      "name": "Nitro Fate Women's Bindings - Off White / S/M",
+      "offers": {
+        "@id": "/products/fate-womens-bindings-1?variant=57277692543307#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "299.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/fate-womens-bindings-1?variant=57277692543307"
+      },
+      "sku": "12BG21011-102-S/M"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "84d0a2054e325c1215c17775639ebb07bc17333038018e056caf4e38fec70dd2",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

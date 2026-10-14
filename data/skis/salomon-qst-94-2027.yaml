@@ -10,7 +10,9 @@ specs:
   waistWidth: 94
   turnRadius: 15.5
   turnRadiusReferenceLength: 172 cm
-  sidecutDimensions: "156 cm: 131-94-117 mm / 13.5 m；164 cm: 132-94-118 mm / 14.5 m；172 cm: 133-94-119 mm / 15.5 m；180 cm: 134-94-120 mm / 16.5 m；188 cm: 135-94-121 mm / 17.5 m"
+  sidecutDimensions: "156 cm: 131-94-117 mm / 13.5 m；164 cm: 132-94-118 mm / 14.5
+    m；172 cm: 133-94-119 mm / 15.5 m；180 cm: 134-94-120 mm / 16.5 m；188 cm:
+    135-94-121 mm / 17.5 m"
   profile: Freeride Profile
   core: 全杨木木芯
   construction: Full Sandwich Sidewalls；Ti Binding Reinforcement
@@ -20,8 +22,18 @@ specs:
   terrain: 全山地 / 自由滑
   skierLevel: 中级
   bindingSetup: 裸板，不含固定器
+  weightBasis: 现有重量仅对应档案所列参考长度；逐长度重量及是否含固定器需进一步核对，不能当作所有尺码的通用重量。
+  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
+    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。
+  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.salomon.com/en-us/product/qst-94-lilac-li9360；https://www.grip-walk.com/faq/
 images:
-  - url: "https://cdn.dam.salomon.com/f7204858-5aae-4ff2-a449-b45100dea002/L49189300%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=medium&width=3840"
+  - url: "https://cdn.dam.salomon.com/f7204858-5aae-4ff2-a449-b45100dea002/L4918930\
+      0%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=\
+      pjpg&optimize=medium&width=3840"
     kind: face
     alt: Salomon QST 94 Lilac 2026/27 官方雪板商品图
     source: Salomon 官方产品页（图片使用授权待核）

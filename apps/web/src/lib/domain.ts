@@ -1,4 +1,5 @@
 import { GEAR, GEAR_BY_ID, reviewCount, userRating } from "@/data/boards";
+import { decisionComposite, hasDecisionPrice, snowboardFit } from "@youpu/schema";
 import { SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { BASE_VOTES, SEED_REVIEWS } from "@/data/seeds";
 import { isCuratedBaselineEnabled } from "@/lib/curated-content";
@@ -294,12 +295,12 @@ export function compareConclusion(items: GearItem[]): string[] {
   };
   const conclusions = [
     best((g) => g.composite, "综合指数最高", hasEditorialScores),
-    best((g) => g.scores.value ?? 0, "性价比最高", (g) => typeof g.scores.value === "number"),
+    best((g) => g.scores.value ?? 0, "性价比最高", (g) => hasPrice(g) && hasDecisionPrice(g.specs, g.priceCurrency) && typeof g.scores.value === "number"),
   ];
   if (items.every((item) => item.categorySlug === "snowboard")) {
     conclusions.push(best((g) => g.hardcore, "最吃技术", hasHardcoreIndex));
   }
-  conclusions.push(best((g) => g.price, "价格最友好", hasPrice, "lower"));
+  conclusions.push(best((g) => g.price, "可比较参考价最低", (g) => hasPrice(g) && hasDecisionPrice(g.specs, g.priceCurrency), "lower"));
   return conclusions;
 }
 
@@ -332,7 +333,7 @@ export function rankRows(
   const cat = category.rankCategories.find((c) => c.key === rankKey) ?? category.rankCategories[0];
   let pool = sourcePool.filter((g) => g.categorySlug === categorySlug);
   if (cat?.scenes?.length) pool = pool.filter((g) => g.scenes.some((scene) => cat.scenes!.includes(scene)));
-  if (rankKey === "value") pool = pool.filter(hasPrice).sort((a, b) => a.price - b.price).slice(0, 10);
+  if (rankKey === "value") pool = pool.filter((g) => hasPrice(g) && hasDecisionPrice(g.specs, g.priceCurrency)).sort((a, b) => a.price - b.price).slice(0, 10);
 
   const withData = pool.map((g) => {
     const isSnowboard = categorySlug === "snowboard";
@@ -365,6 +366,8 @@ export interface QuizAnswers {
   level?: string;
   scene?: string[];
   weight?: string;
+  weightKg?: string;
+  bootEu?: string;
   budget?: string;
   flex?: string;
   priority?: string;
@@ -375,6 +378,7 @@ export interface Recommendation {
   match: number;
   reasons: string[];
   fallback?: boolean;
+  fitNote?: string;
 }
 
 const BUDGET_RANGE: Record<string, [number, number]> = {
@@ -384,15 +388,12 @@ const BUDGET_RANGE: Record<string, [number, number]> = {
   any: [0, 99999],
 };
 
-const WEIGHT_LENGTH: Record<string, [number, number]> = {
-  lt60: [148, 155],
-  "60to75": [153, 159],
-  "75to90": [156, 162],
-  gt90: [159, 168],
-};
-
-export function recommend(a: QuizAnswers): Recommendation[] {
-  const scored = GEAR.map((g) => {
+export function recommend(a: QuizAnswers, categorySlug = "snowboard"): Recommendation[] {
+  if (categorySlug !== "snowboard") return [];
+  const scored = GEAR.filter((g) => g.categorySlug === categorySlug)
+    .map((gear) => ({ gear, fit: snowboardFit(gear.sizeSpecs, a) }))
+    .filter(({ fit }) => !fit.excluded)
+    .map(({ gear: g, fit }) => {
     let score = 0;
     const reasons: string[] = [];
 
@@ -406,7 +407,7 @@ export function recommend(a: QuizAnswers): Recommendation[] {
       }
     }
 
-    if (a.budget && BUDGET_RANGE[a.budget] && hasPrice(g)) {
+    if (a.budget && a.budget !== "any" && BUDGET_RANGE[a.budget] && hasPrice(g) && hasDecisionPrice(g.specs, g.priceCurrency)) {
       const [lo, hi] = BUDGET_RANGE[a.budget]!;
       if (g.price >= lo && g.price <= hi) {
         score += 20;
@@ -418,16 +419,7 @@ export function recommend(a: QuizAnswers): Recommendation[] {
       }
     }
 
-    if (a.weight && WEIGHT_LENGTH[a.weight]) {
-      const [lo, hi] = WEIGHT_LENGTH[a.weight]!;
-      const len = Number(g.specs.length ?? 157);
-      if (len >= lo && len <= hi) {
-        score += 12;
-        reasons.push(`${len}cm 板长适配你的体重区间`);
-      } else {
-        score -= 8;
-      }
-    }
+    score += fit.points;
 
     if (a.flex && a.flex !== "unsure" && g.flexValue > 0) {
       const bucket = flexBucketOf(g.flexValue);
@@ -459,7 +451,7 @@ export function recommend(a: QuizAnswers): Recommendation[] {
       }
     }
 
-    if (a.priority) {
+    if (a.priority && (a.priority !== "value" || (hasPrice(g) && hasDecisionPrice(g.specs, g.priceCurrency)))) {
       const dim = a.priority === "value" ? "value" : a.priority;
       const v = g.scores[dim];
       if (v !== undefined) {
@@ -468,11 +460,12 @@ export function recommend(a: QuizAnswers): Recommendation[] {
       }
     }
 
-    if (g.composite > 0) score += (g.composite - 70) * 0.4;
-    return { gear: g, raw: score, reasons };
+    const composite = decisionComposite(g.scores, g.specs, g.priceCurrency);
+    if (composite !== undefined) score += (composite - 70) * 0.4;
+    return { gear: g, raw: score, reasons, fitNote: fit.note, fitVerified: fit.sizes.length > 0 };
   });
 
-  scored.sort((a2, b2) => b2.raw - a2.raw);
+  scored.sort((a2, b2) => ((a.weightKg || a.bootEu) ? Number(b2.fitVerified) - Number(a2.fitVerified) : 0) || b2.raw - a2.raw);
   const top = scored.slice(0, 3);
   const maxRaw = top[0]?.raw || 1;
   const minRaw = Math.min(0, top[top.length - 1]?.raw ?? 0);
@@ -481,6 +474,7 @@ export function recommend(a: QuizAnswers): Recommendation[] {
     match: Math.max(52, Math.min(98, Math.round(((t.raw - minRaw) / (maxRaw - minRaw || 1)) * 30 + 68 - i * 4))),
     reasons: t.reasons.slice(0, 3),
     fallback: t.raw < 0,
+    fitNote: t.fitNote,
   }));
 }
 

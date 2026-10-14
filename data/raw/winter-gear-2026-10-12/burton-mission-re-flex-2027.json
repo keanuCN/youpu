@@ -1,0 +1,135 @@
+{
+  "capturedAt": "2026-10-12T06:44:03.524Z",
+  "target": {
+    "slug": "burton-mission-re-flex-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Mission Re:Flex",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-mission-re-flex-snowboard-bindings-105461",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.burton.com/en-us/products/mens-burton-mission-re-flex-snowboard-bindings-105461",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.burton.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:09.065Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Men's Burton Mission Snowboard Bindings 2027",
+    "canonicalUrl": "https://www.burton.com/en-us/products/mens-burton-mission-re-flex-snowboard-bindings-105461",
+    "tables": [
+      {
+        "headers": [
+          "Binding Size",
+          "S",
+          "M",
+          "L"
+        ],
+        "rows": [
+          [
+            "Men's Boot Size",
+            "6-8",
+            "8-11",
+            "10+"
+          ],
+          [
+            "Women's Boot Size",
+            "5-9",
+            "9-11",
+            "11+"
+          ],
+          [
+            "EURO Boot Size",
+            "38-41",
+            "41-44",
+            "43+"
+          ],
+          [
+            "UK Boot Size",
+            "5-7",
+            "7-10",
+            "9+"
+          ],
+          [
+            "Mondo Boot Size",
+            "24-26",
+            "26-29",
+            "28+"
+          ]
+        ]
+      }
+    ]
+  },
+  "review": {
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "6-8",
+        "usWomen": "5-9",
+        "eu": "38-41",
+        "uk": "5-7",
+        "mondo": "24-26"
+      },
+      {
+        "size": "M",
+        "usMen": "8-11",
+        "usWomen": "9-11",
+        "eu": "41-44",
+        "uk": "7-10",
+        "mondo": "26-29"
+      },
+      {
+        "size": "L",
+        "usMen": "10+",
+        "usWomen": "11+",
+        "eu": "43+",
+        "uk": "9+",
+        "mondo": "28+"
+      }
+    ],
+    "sources": "https://www.burton.com/en-us/products/mens-burton-mission-re-flex-snowboard-bindings-105461",
+    "good": true
+  },
+  "sizeChart": [
+    {
+      "size": "S",
+      "usMen": "6-8",
+      "usWomen": "5-9",
+      "eu": "38-41",
+      "uk": "5-7",
+      "mondo": "24-26"
+    },
+    {
+      "size": "M",
+      "usMen": "8-11",
+      "usWomen": "9-11",
+      "eu": "41-44",
+      "uk": "7-10",
+      "mondo": "26-29"
+    },
+    {
+      "size": "L",
+      "usMen": "10+",
+      "usWomen": "11+",
+      "eu": "43+",
+      "uk": "9+",
+      "mondo": "28+"
+    }
+  ]
+}

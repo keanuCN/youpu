@@ -1,0 +1,112 @@
+{
+  "slug": "nitro-phantom-binding-2027",
+  "price": "EUR 399.9",
+  "source": "https://www.nitrosnowboards.com/products/phantom-bindings-2",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:12.032Z",
+  "productName": "Nitro Phantom Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/phantom-bindings-2",
+  "hasVariant": [
+    {
+      "@id": "/products/phantom-bindings-2?variant=57277686317387#variant",
+      "@type": "Product",
+      "gtin": "7630349334707",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11002-103_Phantom-Bindings_Nitro-x-Eero-Ettala_Product-1.jpg?v=1779339347&width=1920",
+      "name": "Nitro Phantom Bindings - Nitro x Eero Ettala / M",
+      "offers": {
+        "@id": "/products/phantom-bindings-2?variant=57277686317387#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/phantom-bindings-2?variant=57277686317387"
+      },
+      "sku": "12BG11002-103-M"
+    },
+    {
+      "@id": "/products/phantom-bindings-2?variant=57277686284619#variant",
+      "@type": "Product",
+      "gtin": "7630349334714",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11002-103_Phantom-Bindings_Nitro-x-Eero-Ettala_Product-1.jpg?v=1779339347&width=1920",
+      "name": "Nitro Phantom Bindings - Nitro x Eero Ettala / L",
+      "offers": {
+        "@id": "/products/phantom-bindings-2?variant=57277686284619#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/phantom-bindings-2?variant=57277686284619"
+      },
+      "sku": "12BG11002-103-L"
+    },
+    {
+      "@id": "/products/phantom-bindings-2?variant=57277686186315#variant",
+      "@type": "Product",
+      "gtin": "7630349334660",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11002-101_Phantom-Bindings_Black-Fade_Product-1.jpg?v=1779339347&width=1920",
+      "name": "Nitro Phantom Bindings - Black Fade / M",
+      "offers": {
+        "@id": "/products/phantom-bindings-2?variant=57277686186315#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/phantom-bindings-2?variant=57277686186315"
+      },
+      "sku": "12BG11002-101-M"
+    },
+    {
+      "@id": "/products/phantom-bindings-2?variant=57277686153547#variant",
+      "@type": "Product",
+      "gtin": "7630349334677",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11002-101_Phantom-Bindings_Black-Fade_Product-1.jpg?v=1779339347&width=1920",
+      "name": "Nitro Phantom Bindings - Black Fade / L",
+      "offers": {
+        "@id": "/products/phantom-bindings-2?variant=57277686153547#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/phantom-bindings-2?variant=57277686153547"
+      },
+      "sku": "12BG11002-101-L"
+    },
+    {
+      "@id": "/products/phantom-bindings-2?variant=57277686251851#variant",
+      "@type": "Product",
+      "gtin": "7630349334684",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11002-102_Phantom-Bindings_Grey-Fade_Product-1.jpg?v=1779339347&width=1920",
+      "name": "Nitro Phantom Bindings - Grey Fade / M",
+      "offers": {
+        "@id": "/products/phantom-bindings-2?variant=57277686251851#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/phantom-bindings-2?variant=57277686251851"
+      },
+      "sku": "12BG11002-102-M"
+    },
+    {
+      "@id": "/products/phantom-bindings-2?variant=57277686219083#variant",
+      "@type": "Product",
+      "gtin": "7630349334691",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11002-102_Phantom-Bindings_Grey-Fade_Product-1.jpg?v=1779339347&width=1920",
+      "name": "Nitro Phantom Bindings - Grey Fade / L",
+      "offers": {
+        "@id": "/products/phantom-bindings-2?variant=57277686219083#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/phantom-bindings-2?variant=57277686219083"
+      },
+      "sku": "12BG11002-102-L"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "b9d7a6ed373aaaaa0396d90a15a6858ec1420acfb89f7cf111e1fa9b36d75a48",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

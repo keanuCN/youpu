@@ -31,6 +31,16 @@ specs:
   scenes:
     - freestyle
     - all-mountain
+  lengthOptions: 138 / 141 / 146 / 149 / 152
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "138", effectiveEdge: 1015, waistWidth: 235, runningLength: 970, noseWidth: 271.2, tailWidth: 271.2, sidecutRadii: 6.5m, stanceWidth: 480mm, riderWeight: 80-120 lb. / 36-54kg, setback: 0 }
+    - { size: "141", effectiveEdge: 1045, waistWidth: 237, runningLength: 1000, noseWidth: 274.4, tailWidth: 274.4, sidecutRadii: 6.7m, stanceWidth: 480mm, riderWeight: 100-150 lb. / 45-68kg, setback: 0 }
+    - { size: "146", effectiveEdge: 1095, waistWidth: 240, runningLength: 1050, noseWidth: 279.2, tailWidth: 279.2, sidecutRadii: 7.04m, stanceWidth: 505mm, riderWeight: 120-180 lb. / 54-82kg, setback: 0 }
+    - { size: "149", effectiveEdge: 1125, waistWidth: 242, runningLength: 1080, noseWidth: 282.4, tailWidth: 282.4, sidecutRadii: 7.24m, stanceWidth: 530mm, riderWeight: 120-180 lb. / 54-82kg, setback: 0 }
+    - { size: "152", effectiveEdge: 1155, waistWidth: 245, runningLength: 1110, noseWidth: 286.5, tailWidth: 286.5, sidecutRadii: 7.44m, stanceWidth: 530mm, riderWeight: 150-200 lb.+ / 68-91kg+, setback: 0 }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
   - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/132181CBO2_1.webp?v=1783957423&width=2100"
     kind: face

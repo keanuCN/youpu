@@ -1,0 +1,1544 @@
+{
+  "capturedAt": "2026-10-12T06:20:57.671Z",
+  "target": {
+    "slug": "jones-rally-cat-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Rally Cat",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/mens-rally-cat-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  "source": {
+    "url": "https://www.jonessnowboards.com/products/mens-rally-cat-snowboard",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.jonessnowboards.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:19:37.939Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "page": {
+    "title": "Men's Rally Cat Snowboard | Jones",
+    "canonicalUrl": "https://www.jonessnowboards.com/en-int/products/mens-rally-cat-snowboard",
+    "productIdentity": [
+      {
+        "name": "Men's Rally Cat Snowboard",
+        "sku": "J.27.SNM.MND.000.151.1",
+        "url": "https://www.jonessnowboards.com/en-int/products/mens-rally-cat-snowboard"
+      }
+    ],
+    "tables": [
+      {
+        "headers": [
+          "Board size (cm)",
+          "151",
+          "154",
+          "155W",
+          "156",
+          "158",
+          "159W",
+          "161",
+          "162W",
+          "166W",
+          "170W"
+        ],
+        "rows": [
+          [
+            "Weight range (lbs/kg)",
+            "110-160 lbs. / 49-73 kg.",
+            "120-170 lbs. / 54-77 kg.",
+            "130-180 lbs. / 59-82 kg.",
+            "130-180 lbs. / 59-82 kg.",
+            "140-190 lbs. / 64-86 kg.",
+            "150-200 lbs. / 67-91 kg.",
+            "150-200 lbs. / 67-91 kg.",
+            "160-210 lbs. / 73-95 kg.",
+            "170-220 lbs.+ / 77-100 kg.+",
+            "170-220 lbs.+ / 77-100 kg.+"
+          ],
+          [
+            "Ideal boot size (US / EU)",
+            "US 7-9 / EU 39.5-41.5",
+            "US 7-9 / EU 39.5-41.5",
+            "US 9.5-11 / EU 42.5-44.5",
+            "US 9-11 / EU 41.5-44.5",
+            "US 9-11 / EU 41.5-44.5",
+            "US 11 / EU 44.5",
+            "US 9-11 / EU 41.5-44.5",
+            "US 11 / EU 44.5",
+            "US 11 / EU 44.5",
+            "US 11 / EU 44.5"
+          ],
+          [
+            "Big Horn Series*",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board waist width (cm)",
+            "24.7",
+            "25.0",
+            "25.8",
+            "25.2",
+            "25.4",
+            "26.3",
+            "25.7",
+            "26.5",
+            "26.7",
+            "26.9"
+          ],
+          [
+            "Bindings recommended size",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Board size (cm)",
+          "151",
+          "154",
+          "155W",
+          "156",
+          "158",
+          "159W",
+          "161",
+          "162W",
+          "166W",
+          "170W"
+        ],
+        "rows": [
+          [
+            "Board weight",
+            "2,4kg / 5,4lbs",
+            "2,5kg / 5,6lbs",
+            "2,7kg / 6lbs",
+            "2,7kg / 5,8lbs",
+            "2,8kg / 6,1lbs",
+            "2,8kg / 6,2lbs",
+            "2,8kg / 6,3lbs",
+            "2,9kg / 6,5lbs",
+            "3,1kg / 6,7lbs",
+            "3,3kg / 7,2lbs"
+          ],
+          [
+            "Surface area (dm2)",
+            "39.0",
+            "40.0",
+            "42.0",
+            "41.0",
+            "42.0",
+            "44.0",
+            "43.0",
+            "45.0",
+            "46.0",
+            "48.0"
+          ],
+          [
+            "Contact length (cm)",
+            "106.4",
+            "108.8",
+            "110.0",
+            "110.4",
+            "112.0",
+            "113.0",
+            "114.4",
+            "115.6",
+            "119.2",
+            "122.8"
+          ],
+          [
+            "Effective edge length (cm)",
+            "111",
+            "114",
+            "115",
+            "115",
+            "117",
+            "118",
+            "119",
+            "121",
+            "124",
+            "128"
+          ],
+          [
+            "Tip length (cm)",
+            "22.8",
+            "23.1",
+            "23.0",
+            "23.3",
+            "23.5",
+            "23.5",
+            "23.8",
+            "23.7",
+            "23.9",
+            "24.1"
+          ],
+          [
+            "Tail length (cm)",
+            "21.8",
+            "22.1",
+            "22.0",
+            "22.3",
+            "22.5",
+            "22.5",
+            "22.8",
+            "22.7",
+            "22.9",
+            "23.1"
+          ],
+          [
+            "Waist width (cm)",
+            "24.7",
+            "25.0",
+            "25.8",
+            "25.2",
+            "25.4",
+            "26.3",
+            "25.7",
+            "26.5",
+            "26.7",
+            "26.9"
+          ],
+          [
+            "Underfoot width - front foot (cm)",
+            "25.6",
+            "26.0",
+            "26.8",
+            "26.2",
+            "26.4",
+            "27.3",
+            "26.7",
+            "27.5",
+            "27.6",
+            "27.9"
+          ],
+          [
+            "Underfoot width - back foot (cm)",
+            "25.9",
+            "26.3",
+            "27.1",
+            "26.5",
+            "26.8",
+            "27.7",
+            "27.0",
+            "27.8",
+            "27.9",
+            "28.2"
+          ],
+          [
+            "Tip width (cm)",
+            "28.8",
+            "29.1",
+            "30.0",
+            "29.4",
+            "29.6",
+            "30.5",
+            "29.9",
+            "30.7",
+            "30.9",
+            "31.2"
+          ],
+          [
+            "Tail width (cm)",
+            "28.8",
+            "29.1",
+            "30.0",
+            "29.4",
+            "29.6",
+            "30.5",
+            "29.9",
+            "30.7",
+            "30.9",
+            "31.2"
+          ],
+          [
+            "Sidecut radius (m)",
+            "7.0",
+            "7.3",
+            "7.4",
+            "7.5",
+            "7.7",
+            "7.8",
+            "8.0",
+            "8.2",
+            "8.6",
+            "8.9"
+          ],
+          [
+            "Taper (mm)",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0"
+          ],
+          [
+            "Reference stance (cm/in)",
+            "50.0 / 19.7",
+            "52.0 / 20.5",
+            "54.0 / 21.3",
+            "54.0 / 21.3",
+            "56.0 / 22.0",
+            "56.0 / 22.0",
+            "56.0 / 22.0",
+            "56.0 / 22.0",
+            "60.0 / 23.6",
+            "62.0 / 24.4"
+          ],
+          [
+            "Centered stance (cm/in)",
+            "52 / 20.5",
+            "54 / 21.3",
+            "56 / 22.0",
+            "56 / 22.0",
+            "58 / 22.8",
+            "58 / 22.8",
+            "58 / 22.8",
+            "58 / 22.8",
+            "58 / 22.8",
+            "60 / 23.6"
+          ],
+          [
+            "Insert pack",
+            "Standard Pack",
+            "Standard Pack",
+            "Standard Pack",
+            "Standard Pack",
+            "Standard Pack",
+            "Standard Pack",
+            "Standard Pack",
+            "Standard Pack",
+            "Standard Pack",
+            "Standard Pack"
+          ],
+          [
+            "Stance setback (cm)",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Board size (cm)",
+          "151",
+          "154",
+          "155W",
+          "156",
+          "158",
+          "159W",
+          "161",
+          "162W",
+          "166W",
+          "170W"
+        ],
+        "rows": [
+          [
+            "Weight range (lbs/kg)",
+            "110-160 lbs. / 49-73 kg.",
+            "120-170 lbs. / 54-77 kg.",
+            "130-180 lbs. / 59-82 kg.",
+            "130-180 lbs. / 59-82 kg.",
+            "140-190 lbs. / 64-86 kg.",
+            "150-200 lbs. / 67-91 kg.",
+            "150-200 lbs. / 67-91 kg.",
+            "160-210 lbs. / 73-95 kg.",
+            "170-220 lbs.+ / 77-100 kg.+",
+            "170-220 lbs.+ / 77-100 kg.+"
+          ],
+          [
+            "Ideal boot size (US / EU)",
+            "US 7-9 / EU 39.5-41.5",
+            "US 7-9 / EU 39.5-41.5",
+            "US 9.5-11 / EU 42.5-44.5",
+            "US 9-11 / EU 41.5-44.5",
+            "US 9-11 / EU 41.5-44.5",
+            "US 11 / EU 44.5",
+            "US 9-11 / EU 41.5-44.5",
+            "US 11 / EU 44.5",
+            "US 11 / EU 44.5",
+            "US 11 / EU 44.5"
+          ],
+          [
+            "Big Horn Series*",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board waist width (cm)",
+            "24.7",
+            "25.0",
+            "25.8",
+            "25.2",
+            "25.4",
+            "26.3",
+            "25.7",
+            "26.5",
+            "26.7",
+            "26.9"
+          ],
+          [
+            "Bindings recommended size",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Board size (cm)",
+          "151",
+          "154",
+          "155W",
+          "156",
+          "158",
+          "159W",
+          "161",
+          "162W",
+          "166W",
+          "170W"
+        ],
+        "rows": [
+          [
+            "boots_min_size",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "boots_max_size",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "min_weight",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "max_weight",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "comment",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  "adapter": {
+    "name": "snowboard/jones",
+    "normalizedSpecs": {
+      "length": 156,
+      "weight": 2700,
+      "effectiveEdge": 1150,
+      "waistWidth": 252,
+      "sidecut": 7.5,
+      "stanceSetback": 20
+    },
+    "perSize": [
+      {
+        "size": "151",
+        "length": 151,
+        "weight": 2400,
+        "effectiveEdge": 1110,
+        "waistWidth": 247,
+        "sidecut": 7,
+        "stanceSetback": 20,
+        "sourceValues": [
+          {
+            "label": "Board weight",
+            "value": "2,4kg / 5,4lbs"
+          },
+          {
+            "label": "Surface area (dm2)",
+            "value": "39.0"
+          },
+          {
+            "label": "Contact length (cm)",
+            "value": "106.4"
+          },
+          {
+            "label": "Effective edge length (cm)",
+            "value": "111"
+          },
+          {
+            "label": "Tip length (cm)",
+            "value": "22.8"
+          },
+          {
+            "label": "Tail length (cm)",
+            "value": "21.8"
+          },
+          {
+            "label": "Waist width (cm)",
+            "value": "24.7"
+          },
+          {
+            "label": "Underfoot width - front foot (cm)",
+            "value": "25.6"
+          },
+          {
+            "label": "Underfoot width - back foot (cm)",
+            "value": "25.9"
+          },
+          {
+            "label": "Tip width (cm)",
+            "value": "28.8"
+          },
+          {
+            "label": "Tail width (cm)",
+            "value": "28.8"
+          },
+          {
+            "label": "Sidecut radius (m)",
+            "value": "7.0"
+          },
+          {
+            "label": "Taper (mm)",
+            "value": "0.0"
+          },
+          {
+            "label": "Reference stance (cm/in)",
+            "value": "50.0 / 19.7"
+          },
+          {
+            "label": "Centered stance (cm/in)",
+            "value": "52 / 20.5"
+          },
+          {
+            "label": "Insert pack",
+            "value": "Standard Pack"
+          },
+          {
+            "label": "Stance setback (cm)",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "size": "154",
+        "length": 154,
+        "weight": 2500,
+        "effectiveEdge": 1140,
+        "waistWidth": 250,
+        "sidecut": 7.3,
+        "stanceSetback": 20,
+        "sourceValues": [
+          {
+            "label": "Board weight",
+            "value": "2,5kg / 5,6lbs"
+          },
+          {
+            "label": "Surface area (dm2)",
+            "value": "40.0"
+          },
+          {
+            "label": "Contact length (cm)",
+            "value": "108.8"
+          },
+          {
+            "label": "Effective edge length (cm)",
+            "value": "114"
+          },
+          {
+            "label": "Tip length (cm)",
+            "value": "23.1"
+          },
+          {
+            "label": "Tail length (cm)",
+            "value": "22.1"
+          },
+          {
+            "label": "Waist width (cm)",
+            "value": "25.0"
+          },
+          {
+            "label": "Underfoot width - front foot (cm)",
+            "value": "26.0"
+          },
+          {
+            "label": "Underfoot width - back foot (cm)",
+            "value": "26.3"
+          },
+          {
+            "label": "Tip width (cm)",
+            "value": "29.1"
+          },
+          {
+            "label": "Tail width (cm)",
+            "value": "29.1"
+          },
+          {
+            "label": "Sidecut radius (m)",
+            "value": "7.3"
+          },
+          {
+            "label": "Taper (mm)",
+            "value": "0.0"
+          },
+          {
+            "label": "Reference stance (cm/in)",
+            "value": "52.0 / 20.5"
+          },
+          {
+            "label": "Centered stance (cm/in)",
+            "value": "54 / 21.3"
+          },
+          {
+            "label": "Insert pack",
+            "value": "Standard Pack"
+          },
+          {
+            "label": "Stance setback (cm)",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "size": "155W",
+        "length": 155,
+        "weight": 2700,
+        "effectiveEdge": 1150,
+        "waistWidth": 258,
+        "sidecut": 7.4,
+        "stanceSetback": 20,
+        "sourceValues": [
+          {
+            "label": "Board weight",
+            "value": "2,7kg / 6lbs"
+          },
+          {
+            "label": "Surface area (dm2)",
+            "value": "42.0"
+          },
+          {
+            "label": "Contact length (cm)",
+            "value": "110.0"
+          },
+          {
+            "label": "Effective edge length (cm)",
+            "value": "115"
+          },
+          {
+            "label": "Tip length (cm)",
+            "value": "23.0"
+          },
+          {
+            "label": "Tail length (cm)",
+            "value": "22.0"
+          },
+          {
+            "label": "Waist width (cm)",
+            "value": "25.8"
+          },
+          {
+            "label": "Underfoot width - front foot (cm)",
+            "value": "26.8"
+          },
+          {
+            "label": "Underfoot width - back foot (cm)",
+            "value": "27.1"
+          },
+          {
+            "label": "Tip width (cm)",
+            "value": "30.0"
+          },
+          {
+            "label": "Tail width (cm)",
+            "value": "30.0"
+          },
+          {
+            "label": "Sidecut radius (m)",
+            "value": "7.4"
+          },
+          {
+            "label": "Taper (mm)",
+            "value": "0.0"
+          },
+          {
+            "label": "Reference stance (cm/in)",
+            "value": "54.0 / 21.3"
+          },
+          {
+            "label": "Centered stance (cm/in)",
+            "value": "56 / 22.0"
+          },
+          {
+            "label": "Insert pack",
+            "value": "Standard Pack"
+          },
+          {
+            "label": "Stance setback (cm)",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "size": "156",
+        "length": 156,
+        "weight": 2700,
+        "effectiveEdge": 1150,
+        "waistWidth": 252,
+        "sidecut": 7.5,
+        "stanceSetback": 20,
+        "sourceValues": [
+          {
+            "label": "Board weight",
+            "value": "2,7kg / 5,8lbs"
+          },
+          {
+            "label": "Surface area (dm2)",
+            "value": "41.0"
+          },
+          {
+            "label": "Contact length (cm)",
+            "value": "110.4"
+          },
+          {
+            "label": "Effective edge length (cm)",
+            "value": "115"
+          },
+          {
+            "label": "Tip length (cm)",
+            "value": "23.3"
+          },
+          {
+            "label": "Tail length (cm)",
+            "value": "22.3"
+          },
+          {
+            "label": "Waist width (cm)",
+            "value": "25.2"
+          },
+          {
+            "label": "Underfoot width - front foot (cm)",
+            "value": "26.2"
+          },
+          {
+            "label": "Underfoot width - back foot (cm)",
+            "value": "26.5"
+          },
+          {
+            "label": "Tip width (cm)",
+            "value": "29.4"
+          },
+          {
+            "label": "Tail width (cm)",
+            "value": "29.4"
+          },
+          {
+            "label": "Sidecut radius (m)",
+            "value": "7.5"
+          },
+          {
+            "label": "Taper (mm)",
+            "value": "0.0"
+          },
+          {
+            "label": "Reference stance (cm/in)",
+            "value": "54.0 / 21.3"
+          },
+          {
+            "label": "Centered stance (cm/in)",
+            "value": "56 / 22.0"
+          },
+          {
+            "label": "Insert pack",
+            "value": "Standard Pack"
+          },
+          {
+            "label": "Stance setback (cm)",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "size": "158",
+        "length": 158,
+        "weight": 2800,
+        "effectiveEdge": 1170,
+        "waistWidth": 254,
+        "sidecut": 7.7,
+        "stanceSetback": 20,
+        "sourceValues": [
+          {
+            "label": "Board weight",
+            "value": "2,8kg / 6,1lbs"
+          },
+          {
+            "label": "Surface area (dm2)",
+            "value": "42.0"
+          },
+          {
+            "label": "Contact length (cm)",
+            "value": "112.0"
+          },
+          {
+            "label": "Effective edge length (cm)",
+            "value": "117"
+          },
+          {
+            "label": "Tip length (cm)",
+            "value": "23.5"
+          },
+          {
+            "label": "Tail length (cm)",
+            "value": "22.5"
+          },
+          {
+            "label": "Waist width (cm)",
+            "value": "25.4"
+          },
+          {
+            "label": "Underfoot width - front foot (cm)",
+            "value": "26.4"
+          },
+          {
+            "label": "Underfoot width - back foot (cm)",
+            "value": "26.8"
+          },
+          {
+            "label": "Tip width (cm)",
+            "value": "29.6"
+          },
+          {
+            "label": "Tail width (cm)",
+            "value": "29.6"
+          },
+          {
+            "label": "Sidecut radius (m)",
+            "value": "7.7"
+          },
+          {
+            "label": "Taper (mm)",
+            "value": "0.0"
+          },
+          {
+            "label": "Reference stance (cm/in)",
+            "value": "56.0 / 22.0"
+          },
+          {
+            "label": "Centered stance (cm/in)",
+            "value": "58 / 22.8"
+          },
+          {
+            "label": "Insert pack",
+            "value": "Standard Pack"
+          },
+          {
+            "label": "Stance setback (cm)",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "size": "159W",
+        "length": 159,
+        "weight": 2800,
+        "effectiveEdge": 1180,
+        "waistWidth": 263,
+        "sidecut": 7.8,
+        "stanceSetback": 20,
+        "sourceValues": [
+          {
+            "label": "Board weight",
+            "value": "2,8kg / 6,2lbs"
+          },
+          {
+            "label": "Surface area (dm2)",
+            "value": "44.0"
+          },
+          {
+            "label": "Contact length (cm)",
+            "value": "113.0"
+          },
+          {
+            "label": "Effective edge length (cm)",
+            "value": "118"
+          },
+          {
+            "label": "Tip length (cm)",
+            "value": "23.5"
+          },
+          {
+            "label": "Tail length (cm)",
+            "value": "22.5"
+          },
+          {
+            "label": "Waist width (cm)",
+            "value": "26.3"
+          },
+          {
+            "label": "Underfoot width - front foot (cm)",
+            "value": "27.3"
+          },
+          {
+            "label": "Underfoot width - back foot (cm)",
+            "value": "27.7"
+          },
+          {
+            "label": "Tip width (cm)",
+            "value": "30.5"
+          },
+          {
+            "label": "Tail width (cm)",
+            "value": "30.5"
+          },
+          {
+            "label": "Sidecut radius (m)",
+            "value": "7.8"
+          },
+          {
+            "label": "Taper (mm)",
+            "value": "0.0"
+          },
+          {
+            "label": "Reference stance (cm/in)",
+            "value": "56.0 / 22.0"
+          },
+          {
+            "label": "Centered stance (cm/in)",
+            "value": "58 / 22.8"
+          },
+          {
+            "label": "Insert pack",
+            "value": "Standard Pack"
+          },
+          {
+            "label": "Stance setback (cm)",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "size": "161",
+        "length": 161,
+        "weight": 2800,
+        "effectiveEdge": 1190,
+        "waistWidth": 257,
+        "sidecut": 8,
+        "stanceSetback": 20,
+        "sourceValues": [
+          {
+            "label": "Board weight",
+            "value": "2,8kg / 6,3lbs"
+          },
+          {
+            "label": "Surface area (dm2)",
+            "value": "43.0"
+          },
+          {
+            "label": "Contact length (cm)",
+            "value": "114.4"
+          },
+          {
+            "label": "Effective edge length (cm)",
+            "value": "119"
+          },
+          {
+            "label": "Tip length (cm)",
+            "value": "23.8"
+          },
+          {
+            "label": "Tail length (cm)",
+            "value": "22.8"
+          },
+          {
+            "label": "Waist width (cm)",
+            "value": "25.7"
+          },
+          {
+            "label": "Underfoot width - front foot (cm)",
+            "value": "26.7"
+          },
+          {
+            "label": "Underfoot width - back foot (cm)",
+            "value": "27.0"
+          },
+          {
+            "label": "Tip width (cm)",
+            "value": "29.9"
+          },
+          {
+            "label": "Tail width (cm)",
+            "value": "29.9"
+          },
+          {
+            "label": "Sidecut radius (m)",
+            "value": "8.0"
+          },
+          {
+            "label": "Taper (mm)",
+            "value": "0.0"
+          },
+          {
+            "label": "Reference stance (cm/in)",
+            "value": "56.0 / 22.0"
+          },
+          {
+            "label": "Centered stance (cm/in)",
+            "value": "58 / 22.8"
+          },
+          {
+            "label": "Insert pack",
+            "value": "Standard Pack"
+          },
+          {
+            "label": "Stance setback (cm)",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "size": "162W",
+        "length": 162,
+        "weight": 2900,
+        "effectiveEdge": 1210,
+        "waistWidth": 265,
+        "sidecut": 8.2,
+        "stanceSetback": 20,
+        "sourceValues": [
+          {
+            "label": "Board weight",
+            "value": "2,9kg / 6,5lbs"
+          },
+          {
+            "label": "Surface area (dm2)",
+            "value": "45.0"
+          },
+          {
+            "label": "Contact length (cm)",
+            "value": "115.6"
+          },
+          {
+            "label": "Effective edge length (cm)",
+            "value": "121"
+          },
+          {
+            "label": "Tip length (cm)",
+            "value": "23.7"
+          },
+          {
+            "label": "Tail length (cm)",
+            "value": "22.7"
+          },
+          {
+            "label": "Waist width (cm)",
+            "value": "26.5"
+          },
+          {
+            "label": "Underfoot width - front foot (cm)",
+            "value": "27.5"
+          },
+          {
+            "label": "Underfoot width - back foot (cm)",
+            "value": "27.8"
+          },
+          {
+            "label": "Tip width (cm)",
+            "value": "30.7"
+          },
+          {
+            "label": "Tail width (cm)",
+            "value": "30.7"
+          },
+          {
+            "label": "Sidecut radius (m)",
+            "value": "8.2"
+          },
+          {
+            "label": "Taper (mm)",
+            "value": "0.0"
+          },
+          {
+            "label": "Reference stance (cm/in)",
+            "value": "56.0 / 22.0"
+          },
+          {
+            "label": "Centered stance (cm/in)",
+            "value": "58 / 22.8"
+          },
+          {
+            "label": "Insert pack",
+            "value": "Standard Pack"
+          },
+          {
+            "label": "Stance setback (cm)",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "size": "166W",
+        "length": 166,
+        "weight": 3100,
+        "effectiveEdge": 1240,
+        "waistWidth": 267,
+        "sidecut": 8.6,
+        "stanceSetback": 20,
+        "sourceValues": [
+          {
+            "label": "Board weight",
+            "value": "3,1kg / 6,7lbs"
+          },
+          {
+            "label": "Surface area (dm2)",
+            "value": "46.0"
+          },
+          {
+            "label": "Contact length (cm)",
+            "value": "119.2"
+          },
+          {
+            "label": "Effective edge length (cm)",
+            "value": "124"
+          },
+          {
+            "label": "Tip length (cm)",
+            "value": "23.9"
+          },
+          {
+            "label": "Tail length (cm)",
+            "value": "22.9"
+          },
+          {
+            "label": "Waist width (cm)",
+            "value": "26.7"
+          },
+          {
+            "label": "Underfoot width - front foot (cm)",
+            "value": "27.6"
+          },
+          {
+            "label": "Underfoot width - back foot (cm)",
+            "value": "27.9"
+          },
+          {
+            "label": "Tip width (cm)",
+            "value": "30.9"
+          },
+          {
+            "label": "Tail width (cm)",
+            "value": "30.9"
+          },
+          {
+            "label": "Sidecut radius (m)",
+            "value": "8.6"
+          },
+          {
+            "label": "Taper (mm)",
+            "value": "0.0"
+          },
+          {
+            "label": "Reference stance (cm/in)",
+            "value": "60.0 / 23.6"
+          },
+          {
+            "label": "Centered stance (cm/in)",
+            "value": "58 / 22.8"
+          },
+          {
+            "label": "Insert pack",
+            "value": "Standard Pack"
+          },
+          {
+            "label": "Stance setback (cm)",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "size": "170W",
+        "length": 170,
+        "weight": 3300,
+        "effectiveEdge": 1280,
+        "waistWidth": 269,
+        "sidecut": 8.9,
+        "stanceSetback": 20,
+        "sourceValues": [
+          {
+            "label": "Board weight",
+            "value": "3,3kg / 7,2lbs"
+          },
+          {
+            "label": "Surface area (dm2)",
+            "value": "48.0"
+          },
+          {
+            "label": "Contact length (cm)",
+            "value": "122.8"
+          },
+          {
+            "label": "Effective edge length (cm)",
+            "value": "128"
+          },
+          {
+            "label": "Tip length (cm)",
+            "value": "24.1"
+          },
+          {
+            "label": "Tail length (cm)",
+            "value": "23.1"
+          },
+          {
+            "label": "Waist width (cm)",
+            "value": "26.9"
+          },
+          {
+            "label": "Underfoot width - front foot (cm)",
+            "value": "27.9"
+          },
+          {
+            "label": "Underfoot width - back foot (cm)",
+            "value": "28.2"
+          },
+          {
+            "label": "Tip width (cm)",
+            "value": "31.2"
+          },
+          {
+            "label": "Tail width (cm)",
+            "value": "31.2"
+          },
+          {
+            "label": "Sidecut radius (m)",
+            "value": "8.9"
+          },
+          {
+            "label": "Taper (mm)",
+            "value": "0.0"
+          },
+          {
+            "label": "Reference stance (cm/in)",
+            "value": "62.0 / 24.4"
+          },
+          {
+            "label": "Centered stance (cm/in)",
+            "value": "60 / 23.6"
+          },
+          {
+            "label": "Insert pack",
+            "value": "Standard Pack"
+          },
+          {
+            "label": "Stance setback (cm)",
+            "value": "2"
+          }
+        ]
+      }
+    ],
+    "sourceNotes": [
+      "找到 Jones 尺寸表 10 行。",
+      "板腰、有效边刃和站位后移由官方 cm 值转换为 schema 所需 mm；整板重量由 kg 转换为 g。",
+      "已按代表尺寸 156 生成部分 specs；仍需人工复核季节和宽版标记。"
+    ]
+  },
+  "originalValidation": {
+    "identityMatch": true,
+    "seasonMatch": null,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "review": {
+    "seasonEvidence": "J.27.SNM.MND.000.151.1",
+    "representativeSize": "156",
+    "unitPolicy": [
+      "Waist、有效刃长、板头尾宽、站距单位为 mm；板重单位为 g。",
+      "Running Length 独立记录，不冒充 Effective Edge。",
+      "多段侧切保留官方整串原文，不折成首个半径。",
+      "RIDE 的 entry/focus/exit 顺序保留；- 表示厂商未提供。",
+      "Nitro、RIDE setback 保留官方正负号。",
+      "CAPiTA Suggested Boot Size 缩写按原文保存，不推断其尺码体系。",
+      "CAPiTA 无单位的 Taper 原值留在证据表中，不猜测 mm/cm。"
+    ],
+    "normalizedSizeSpecs": [
+      {
+        "size": "151",
+        "weight": 2400,
+        "effectiveEdge": 1110,
+        "waistWidth": 247,
+        "setback": 20,
+        "contactLength": 1064,
+        "noseLength": 228,
+        "tailLength": 218,
+        "noseWidth": 288,
+        "tailWidth": 288,
+        "frontFootWidth": 256,
+        "backFootWidth": 259,
+        "taper": 0,
+        "sidecutRadii": "7.0 m",
+        "stanceWidth": "500 mm（参考） / 520 mm（居中）",
+        "riderWeight": "110-160 lbs. / 49-73 kg.",
+        "bootSize": "US 7-9 / EU 39.5-41.5"
+      },
+      {
+        "size": "154",
+        "weight": 2500,
+        "effectiveEdge": 1140,
+        "waistWidth": 250,
+        "setback": 20,
+        "contactLength": 1088,
+        "noseLength": 231,
+        "tailLength": 221,
+        "noseWidth": 291,
+        "tailWidth": 291,
+        "frontFootWidth": 260,
+        "backFootWidth": 263,
+        "taper": 0,
+        "sidecutRadii": "7.3 m",
+        "stanceWidth": "520 mm（参考） / 540 mm（居中）",
+        "riderWeight": "120-170 lbs. / 54-77 kg.",
+        "bootSize": "US 7-9 / EU 39.5-41.5"
+      },
+      {
+        "size": "155W",
+        "weight": 2700,
+        "effectiveEdge": 1150,
+        "waistWidth": 258,
+        "setback": 20,
+        "contactLength": 1100,
+        "noseLength": 230,
+        "tailLength": 220,
+        "noseWidth": 300,
+        "tailWidth": 300,
+        "frontFootWidth": 268,
+        "backFootWidth": 271,
+        "taper": 0,
+        "sidecutRadii": "7.4 m",
+        "stanceWidth": "540 mm（参考） / 560 mm（居中）",
+        "riderWeight": "130-180 lbs. / 59-82 kg.",
+        "bootSize": "US 9.5-11 / EU 42.5-44.5"
+      },
+      {
+        "size": "156",
+        "weight": 2700,
+        "effectiveEdge": 1150,
+        "waistWidth": 252,
+        "setback": 20,
+        "contactLength": 1104,
+        "noseLength": 233,
+        "tailLength": 223,
+        "noseWidth": 294,
+        "tailWidth": 294,
+        "frontFootWidth": 262,
+        "backFootWidth": 265,
+        "taper": 0,
+        "sidecutRadii": "7.5 m",
+        "stanceWidth": "540 mm（参考） / 560 mm（居中）",
+        "riderWeight": "130-180 lbs. / 59-82 kg.",
+        "bootSize": "US 9-11 / EU 41.5-44.5"
+      },
+      {
+        "size": "158",
+        "weight": 2800,
+        "effectiveEdge": 1170,
+        "waistWidth": 254,
+        "setback": 20,
+        "contactLength": 1120,
+        "noseLength": 235,
+        "tailLength": 225,
+        "noseWidth": 296,
+        "tailWidth": 296,
+        "frontFootWidth": 264,
+        "backFootWidth": 268,
+        "taper": 0,
+        "sidecutRadii": "7.7 m",
+        "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+        "riderWeight": "140-190 lbs. / 64-86 kg.",
+        "bootSize": "US 9-11 / EU 41.5-44.5"
+      },
+      {
+        "size": "159W",
+        "weight": 2800,
+        "effectiveEdge": 1180,
+        "waistWidth": 263,
+        "setback": 20,
+        "contactLength": 1130,
+        "noseLength": 235,
+        "tailLength": 225,
+        "noseWidth": 305,
+        "tailWidth": 305,
+        "frontFootWidth": 273,
+        "backFootWidth": 277,
+        "taper": 0,
+        "sidecutRadii": "7.8 m",
+        "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+        "riderWeight": "150-200 lbs. / 67-91 kg.",
+        "bootSize": "US 11 / EU 44.5"
+      },
+      {
+        "size": "161",
+        "weight": 2800,
+        "effectiveEdge": 1190,
+        "waistWidth": 257,
+        "setback": 20,
+        "contactLength": 1144,
+        "noseLength": 238,
+        "tailLength": 228,
+        "noseWidth": 299,
+        "tailWidth": 299,
+        "frontFootWidth": 267,
+        "backFootWidth": 270,
+        "taper": 0,
+        "sidecutRadii": "8.0 m",
+        "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+        "riderWeight": "150-200 lbs. / 67-91 kg.",
+        "bootSize": "US 9-11 / EU 41.5-44.5"
+      },
+      {
+        "size": "162W",
+        "weight": 2900,
+        "effectiveEdge": 1210,
+        "waistWidth": 265,
+        "setback": 20,
+        "contactLength": 1156,
+        "noseLength": 237,
+        "tailLength": 227,
+        "noseWidth": 307,
+        "tailWidth": 307,
+        "frontFootWidth": 275,
+        "backFootWidth": 278,
+        "taper": 0,
+        "sidecutRadii": "8.2 m",
+        "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+        "riderWeight": "160-210 lbs. / 73-95 kg.",
+        "bootSize": "US 11 / EU 44.5"
+      },
+      {
+        "size": "166W",
+        "weight": 3100,
+        "effectiveEdge": 1240,
+        "waistWidth": 267,
+        "setback": 20,
+        "contactLength": 1192,
+        "noseLength": 239,
+        "tailLength": 229,
+        "noseWidth": 309,
+        "tailWidth": 309,
+        "frontFootWidth": 276,
+        "backFootWidth": 279,
+        "taper": 0,
+        "sidecutRadii": "8.6 m",
+        "stanceWidth": "600 mm（参考） / 580 mm（居中）",
+        "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+        "bootSize": "US 11 / EU 44.5"
+      },
+      {
+        "size": "170W",
+        "weight": 3300,
+        "effectiveEdge": 1280,
+        "waistWidth": 269,
+        "setback": 20,
+        "contactLength": 1228,
+        "noseLength": 241,
+        "tailLength": 231,
+        "noseWidth": 312,
+        "tailWidth": 312,
+        "frontFootWidth": 279,
+        "backFootWidth": 282,
+        "taper": 0,
+        "sidecutRadii": "8.9 m",
+        "stanceWidth": "620 mm（参考） / 600 mm（居中）",
+        "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+        "bootSize": "US 11 / EU 44.5"
+      }
+    ]
+  }
+}

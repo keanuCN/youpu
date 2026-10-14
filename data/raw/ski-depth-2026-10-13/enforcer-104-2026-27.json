@@ -1,0 +1,61 @@
+{
+  "seedFile": "data/skis/nordica-enforcer-104-2027.yaml",
+  "url": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-104-flat",
+  "retrievedAt": "2026-10-13",
+  "heading": "Enforcer 104 - 2026/27 - Nordica - Skis and Boots – Official website",
+  "season": "2026-27",
+  "rows": [
+    {
+      "size": "167 cm",
+      "noseWidth": 132.5,
+      "waistWidth": 104,
+      "tailWidth": 122.5,
+      "turnRadius": 17.5,
+      "weightPerPair": 3980
+    },
+    {
+      "size": "173 cm",
+      "noseWidth": 133.5,
+      "waistWidth": 104,
+      "tailWidth": 122.5,
+      "turnRadius": 18,
+      "weightPerPair": 4060
+    },
+    {
+      "size": "179 cm",
+      "noseWidth": 135,
+      "waistWidth": 104,
+      "tailWidth": 125,
+      "turnRadius": 18.5,
+      "weightPerPair": 4260
+    },
+    {
+      "size": "185 cm",
+      "noseWidth": 136,
+      "waistWidth": 104,
+      "tailWidth": 126,
+      "turnRadius": 19,
+      "weightPerPair": 4460
+    },
+    {
+      "size": "191 cm",
+      "noseWidth": 137.5,
+      "waistWidth": 104,
+      "tailWidth": 127.5,
+      "turnRadius": 19.5,
+      "weightPerPair": 4660
+    }
+  ],
+  "extraction": {
+    "selector": "[data-accordion]",
+    "fields": [
+      "noseWidthMm",
+      "waistWidthMm",
+      "tailWidthMm",
+      "turnRadiusM",
+      "weightPerPairG"
+    ],
+    "method": "JSON.parse attribute; no interpolation",
+    "htmlSha256": "9dd4de9a20ddcddfdc68b233cffc5bf48d60050978e21f4d6ea5b68d057648ab"
+  }
+}

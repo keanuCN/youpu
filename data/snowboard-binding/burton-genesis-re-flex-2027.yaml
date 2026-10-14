@@ -9,7 +9,7 @@ specs:
   entrySystem: strap
   flexFeel: medium
   mountingSystem: "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc"
-  bootCompatibility: "Re:Flex 多板型安装；适配普通绑带雪鞋"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+"
   baseplateMaterial: "30% 短切玻纤/尼龙复合材料"
   ankleStrap: "Hammockstrap"
@@ -19,6 +19,14 @@ specs:
   highbackAdjustment: "MicroFLAD 前倾角调节"
   cushioning: "Re:Flex FullBED 全掌缓震；B3 凝胶缓震"
   warranty: "底盘终身保修；绑带和高背自购买日起 1 年保修"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://www.burton.com/en-us/products/mens-burton-genesis-re-flex-snowboard-bindings-105471
+  sizeChart:
+    - { size: S, usMen: 6-8, usWomen: 5-9, eu: 38-41, uk: 5-7, mondo: 24-26 }
+    - { size: M, usMen: 8-11, usWomen: 9-11, eu: 41-44, uk: 7-10, mondo: 26-29 }
+    - { size: L, usMen: 10+, usWomen: 11+, eu: 43+, uk: 9+, mondo: 28+ }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
 images:
   - url: "https://www.burton.com/cdn/shop/files/1054719E9M_1.webp?v=1784135138&width=1200"
     kind: face

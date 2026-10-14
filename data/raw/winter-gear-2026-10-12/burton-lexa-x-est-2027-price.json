@@ -1,0 +1,160 @@
+{
+  "slug": "burton-lexa-x-est-2027",
+  "price": "USD 349.95",
+  "source": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:22.184Z",
+  "productName": "Women's Burton Lexa X EST® Snowboard Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
+  "hasVariant": [
+    {
+      "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915341057#variant",
+      "@type": "Product",
+      "gtin": "197183358094",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314E9R_1.webp?v=1783620802&width=1920",
+      "name": "Women's Burton Lexa X EST® Snowboard Bindings - Shockwave Pink / S",
+      "offers": {
+        "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915341057#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915341057"
+      },
+      "sku": "2223314E9RRG00S"
+    },
+    {
+      "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915373825#variant",
+      "@type": "Product",
+      "gtin": "197183358100",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314E9R_1.webp?v=1783620802&width=1920",
+      "name": "Women's Burton Lexa X EST® Snowboard Bindings - Shockwave Pink / M",
+      "offers": {
+        "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915373825#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915373825"
+      },
+      "sku": "2223314E9RRG00M"
+    },
+    {
+      "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915406593#variant",
+      "@type": "Product",
+      "gtin": "197183358124",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314E9R_1.webp?v=1783620802&width=1920",
+      "name": "Women's Burton Lexa X EST® Snowboard Bindings - Shockwave Pink / L",
+      "offers": {
+        "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915406593#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915406593"
+      },
+      "sku": "2223314E9RRG00L"
+    },
+    {
+      "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915242753#variant",
+      "@type": "Product",
+      "gtin": "197183357981",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314A50_1.webp?v=1783620805&width=1920",
+      "name": "Women's Burton Lexa X EST® Snowboard Bindings - White / S",
+      "offers": {
+        "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915242753#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915242753"
+      },
+      "sku": "2223314A50RG00S"
+    },
+    {
+      "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915275521#variant",
+      "@type": "Product",
+      "gtin": "197183357998",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314A50_1.webp?v=1783620805&width=1920",
+      "name": "Women's Burton Lexa X EST® Snowboard Bindings - White / M",
+      "offers": {
+        "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915275521#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915275521"
+      },
+      "sku": "2223314A50RG00M"
+    },
+    {
+      "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915308289#variant",
+      "@type": "Product",
+      "gtin": "197183358001",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314A50_1.webp?v=1783620805&width=1920",
+      "name": "Women's Burton Lexa X EST® Snowboard Bindings - White / L",
+      "offers": {
+        "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915308289#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=49581915308289"
+      },
+      "sku": "2223314A50RG00L"
+    },
+    {
+      "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=48755230376193#variant",
+      "@type": "Product",
+      "gtin": "193177920247",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314A02_1.webp?v=1778424014&width=1920",
+      "name": "Women's Burton Lexa X EST® Snowboard Bindings - Black / S",
+      "offers": {
+        "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=48755230376193#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=48755230376193"
+      },
+      "sku": "22233104001-S"
+    },
+    {
+      "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=48755230408961#variant",
+      "@type": "Product",
+      "gtin": "193177920230",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314A02_1.webp?v=1778424014&width=1920",
+      "name": "Women's Burton Lexa X EST® Snowboard Bindings - Black / M",
+      "offers": {
+        "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=48755230408961#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=48755230408961"
+      },
+      "sku": "22233104001-M"
+    },
+    {
+      "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=48755230441729#variant",
+      "@type": "Product",
+      "gtin": "193177920223",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314A02_1.webp?v=1778424014&width=1920",
+      "name": "Women's Burton Lexa X EST® Snowboard Bindings - Black / L",
+      "offers": {
+        "@id": "/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=48755230441729#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331?variant=48755230441729"
+      },
+      "sku": "22233104001-L"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "523b9fc75a2d245aa4a195e8569cf8a1ec423dff189e600e4a495c12734ff5e1",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

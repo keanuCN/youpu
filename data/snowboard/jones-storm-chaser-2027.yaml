@@ -26,6 +26,15 @@ specs:
   scenes:
     - all-mountain
     - powder
+  lengthOptions: 142 / 147 / 152 / 157
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "142", weight: 2600, effectiveEdge: 990, waistWidth: 266, setback: 20, contactLength: 918, noseLength: 376, tailLength: 126, noseWidth: 311, tailWidth: 290, frontFootWidth: 283, backFootWidth: 275, taper: 20, sidecutRadii: 6.3 m, stanceWidth: 500 mm（参考） / 520 mm（居中）, riderWeight: 120-170 lbs. / 54-77 kg., bootSize: US 7-9 / EU 39.5-41.5 }
+    - { size: "147", weight: 2700, effectiveEdge: 1030, waistWidth: 271, setback: 20, contactLength: 958, noseLength: 381, tailLength: 131, noseWidth: 317, tailWidth: 297, frontFootWidth: 290, backFootWidth: 282, taper: 20, sidecutRadii: 6.6 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 130-180 lbs. / 59-82 kg., bootSize: US 9 / EU 41.5 }
+    - { size: "152", weight: 2900, effectiveEdge: 1070, waistWidth: 275, setback: 20, contactLength: 1000, noseLength: 385, tailLength: 135, noseWidth: 322, tailWidth: 302, frontFootWidth: 294, backFootWidth: 285, taper: 20, sidecutRadii: 6.9 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 140-190 lbs. / 63-86 kg., bootSize: US 10 / EU 43.5 }
+    - { size: "157", weight: 3100, effectiveEdge: 1120, waistWidth: 277, setback: 20, contactLength: 1046, noseLength: 387, tailLength: 137, noseWidth: 327, tailWidth: 307, frontFootWidth: 295, backFootWidth: 287, taper: 20, sidecutRadii: 7.2 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 150-200 lbs. / 67-91 kg., bootSize: US 11 / EU 44.5 }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 8.2
   response: 8.0
@@ -40,6 +49,6 @@ images:
     source: Jones 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://www.jonessnowboards.com/products/storm-chaser-snowboard
 status: published

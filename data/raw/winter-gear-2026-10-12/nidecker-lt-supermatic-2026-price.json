@@ -1,0 +1,1042 @@
+{
+  "slug": "nidecker-lt-supermatic-2026",
+  "price": "USD 479.95",
+  "source": "https://www.nidecker.com/en-int/products/lt-supermatic-2026",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:42:46.376Z",
+  "productName": "LT Supermatic® 2026",
+  "productType": "Product",
+  "productUrl": "https://www.nidecker.com/en-int/products/lt-supermatic-2026",
+  "offers": [
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885416111",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.C5.3M.1",
+      "gtin13": "7630949115096",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885448879",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.C6.3M.1",
+      "gtin13": "7630949115133",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885481647",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.GN.3M.1",
+      "gtin13": "7630949115010",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885514415",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.VT.3M.1",
+      "gtin13": "7630949115058",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45446941343919",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.WH.3M.1",
+      "gtin13": "7630949114976",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45446941376687",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.BK.3M.1",
+      "gtin13": "7630949114938",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885547183",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.C5.4L.1",
+      "gtin13": "7630949115102",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885579951",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.C6.4L.1",
+      "gtin13": "7630949115140",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885612719",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.GN.4L.1",
+      "gtin13": "7630949115027",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885645487",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.VT.4L.1",
+      "gtin13": "7630949115065",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45446941540527",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.WH.4L.1",
+      "gtin13": "7630949114983",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45446941573295",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.BK.4L.1",
+      "gtin13": "7630949114945",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45446941606063",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.BK.5XL.1",
+      "gtin13": "7630949114952",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885678255",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.C5.5XL.1",
+      "gtin13": "7630949115119",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885711023",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.C6.5XL.1",
+      "gtin13": "7630949115157",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885743791",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.GN.5XL.1",
+      "gtin13": "7630949115034",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45456885776559",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.VT.5XL.1",
+      "gtin13": "7630949115072",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/lt-supermatic-2026?variant=45446941769903",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPL.WH.5XL.1",
+      "gtin13": "7630949114990",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 479.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "65fdc72a7300009044df26c5b36bf3225a1672f653acfe2111b281ff932b26c0",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

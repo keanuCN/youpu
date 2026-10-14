@@ -1,0 +1,113 @@
+{
+  "slug": "salomon-huck-knife-2027",
+  "price": "USD 579.95",
+  "source": "https://www.salomon.com/en-us/product/huck-knife-li1304",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T07:05:49.571Z",
+  "productName": "HUCK KNIFE",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "HUCK KNIFE",
+      "image": "https://cdn.dam.salomon.com/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "149",
+      "sku": "L49292200036",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/huck-knife-li1304/L49292200?sizeId=L49292200036",
+        "priceCurrency": "USD",
+        "price": "579.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "HUCK KNIFE",
+      "image": "https://cdn.dam.salomon.com/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "153",
+      "sku": "L49292200044",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/huck-knife-li1304/L49292200?sizeId=L49292200044",
+        "priceCurrency": "USD",
+        "price": "579.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "HUCK KNIFE",
+      "image": "https://cdn.dam.salomon.com/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "156",
+      "sku": "L49292200050",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/huck-knife-li1304/L49292200?sizeId=L49292200050",
+        "priceCurrency": "USD",
+        "price": "579.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "HUCK KNIFE",
+      "image": "https://cdn.dam.salomon.com/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "156W",
+      "sku": "L49292200051",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/huck-knife-li1304/L49292200?sizeId=L49292200051",
+        "priceCurrency": "USD",
+        "price": "579.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "HUCK KNIFE",
+      "image": "https://cdn.dam.salomon.com/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "159",
+      "sku": "L49292200056",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/huck-knife-li1304/L49292200?sizeId=L49292200056",
+        "priceCurrency": "USD",
+        "price": "579.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "HUCK KNIFE",
+      "image": "https://cdn.dam.salomon.com/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "159W",
+      "sku": "L49292200057",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/huck-knife-li1304/L49292200?sizeId=L49292200057",
+        "priceCurrency": "USD",
+        "price": "579.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "HUCK KNIFE",
+      "image": "https://cdn.dam.salomon.com/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "162",
+      "sku": "L49292200062",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/huck-knife-li1304/L49292200?sizeId=L49292200062",
+        "priceCurrency": "USD",
+        "price": "579.95"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "d52a987bd1807b3c380fc1ea4365d72313019288fced9e6017c51cba9cd57925",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

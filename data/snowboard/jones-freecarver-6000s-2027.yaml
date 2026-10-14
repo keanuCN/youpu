@@ -11,9 +11,9 @@ price:
   currency: CNY
 specs:
   length: 154
-  weight: 2700
+  weight: 3000
   effectiveEdge: 1280
-  waistWidth: 248
+  waistWidth: 263
   sidecut: 6.5
   stanceSetback: 40
   profile: True Medium Camber
@@ -26,6 +26,18 @@ specs:
   scenes:
     - carving
     - all-mountain
+  lengthOptions: 150N / 150 / 154N / 154 / 158N / 158 / 162
+  widthVariant: standard
+  sizeSpecs:
+    - { size: 150N, weight: 2700, effectiveEdge: 1240, waistWidth: 246, setback: 40, contactLength: 1182, noseLength: 209, tailLength: 109, noseWidth: 310, tailWidth: 301, frontFootWidth: 257, backFootWidth: 261, taper: 9, sidecutRadii: 6.2 m, stanceWidth: 500 mm（参考） / 520 mm（居中）, riderWeight: 120-170 lbs. / 54-77 kg., bootSize: US 4-8 / EU 36-41.5 }
+    - { size: "150", weight: 2900, effectiveEdge: 1240, waistWidth: 261, setback: 40, contactLength: 1182, noseLength: 209, tailLength: 109, noseWidth: 325, tailWidth: 316, frontFootWidth: 272, backFootWidth: 276, taper: 9, sidecutRadii: 6.2 m, stanceWidth: 500 mm（参考） / 520 mm（居中）, riderWeight: 120-170 lbs. / 54-77 kg., bootSize: US 8.5-11 / EU 42-44.5 }
+    - { size: 154N, weight: 2700, effectiveEdge: 1280, waistWidth: 248, setback: 40, contactLength: 1220, noseLength: 210, tailLength: 110, noseWidth: 313, tailWidth: 304, frontFootWidth: 259, backFootWidth: 263, taper: 9, sidecutRadii: 6.5 m, stanceWidth: 520 mm（参考） / 540 mm（居中）, riderWeight: 130-180 lbs. / 59-82 kg., bootSize: US 4-9 / EU 36-43 }
+    - { size: "154", weight: 3000, effectiveEdge: 1280, waistWidth: 263, setback: 40, contactLength: 1220, noseLength: 210, tailLength: 110, noseWidth: 328, tailWidth: 319, frontFootWidth: 274, backFootWidth: 278, taper: 9, sidecutRadii: 6.5 m, stanceWidth: 520 mm（参考） / 540 mm（居中）, riderWeight: 130-180 lbs. / 59-82 kg., bootSize: US 9.5 / EU 43.5 }
+    - { size: 158N, weight: 2800, effectiveEdge: 1320, waistWidth: 250, setback: 40, contactLength: 1258, noseLength: 211, tailLength: 111, noseWidth: 317, tailWidth: 308, frontFootWidth: 263, backFootWidth: 267, taper: 9, sidecutRadii: 6.7 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 150-200+ lbs. / 67-91+ kg., bootSize: US 4-9 / EU 36-43 }
+    - { size: "158", weight: 3200, effectiveEdge: 1320, waistWidth: 265, setback: 40, contactLength: 1258, noseLength: 211, tailLength: 111, noseWidth: 332, tailWidth: 323, frontFootWidth: 278, backFootWidth: 282, taper: 9, sidecutRadii: 6.7 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 150-200+ lbs. / 67-91+ kg., bootSize: US 9.5 / EU 43.5 }
+    - { size: "162", weight: 3300, effectiveEdge: 1360, waistWidth: 267, setback: 40, contactLength: 1296, noseLength: 212, tailLength: 112, noseWidth: 335, tailWidth: 326, frontFootWidth: 279, backFootWidth: 283, taper: 9, sidecutRadii: 6.9 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 170-220+ lbs. / 77-100+ kg., bootSize: US 10 / EU 44.5 }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 8.8
   response: 9.2
@@ -40,6 +52,6 @@ images:
     source: Jones 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://www.jonessnowboards.com/products/freecarver-6000s-snowboard
 status: published

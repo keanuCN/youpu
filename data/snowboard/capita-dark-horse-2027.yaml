@@ -35,8 +35,8 @@ specs:
       taperMm: 0
       sidecutRadiusM: 7.7
       referenceStanceMm: 508
-      recommendedRiderWeightLb: [100, 150]
-      recommendedRiderWeightKg: [45, 68]
+      recommendedRiderWeightLb: [ 100, 150 ]
+      recommendedRiderWeightKg: [ 45, 68 ]
       suggestedBoot: M 6–9.5
     - size: "150"
       widthVariant: standard
@@ -47,8 +47,8 @@ specs:
       taperMm: 0
       sidecutRadiusM: 7.8
       referenceStanceMm: 533
-      recommendedRiderWeightLb: [100, 150]
-      recommendedRiderWeightKg: [45, 68]
+      recommendedRiderWeightLb: [ 100, 150 ]
+      recommendedRiderWeightKg: [ 45, 68 ]
       suggestedBoot: M 6–9.5
     - size: "152"
       widthVariant: standard
@@ -59,8 +59,8 @@ specs:
       taperMm: 0
       sidecutRadiusM: 7.9
       referenceStanceMm: 533
-      recommendedRiderWeightLb: [100, 160]
-      recommendedRiderWeightKg: [45, 72]
+      recommendedRiderWeightLb: [ 100, 160 ]
+      recommendedRiderWeightKg: [ 45, 72 ]
       suggestedBoot: M 6–9.5
     - size: "154"
       widthVariant: standard
@@ -71,8 +71,8 @@ specs:
       taperMm: 0
       sidecutRadiusM: 8.0
       referenceStanceMm: 533
-      recommendedRiderWeightLb: [120, 180]
-      recommendedRiderWeightKg: [54, 81]
+      recommendedRiderWeightLb: [ 120, 180 ]
+      recommendedRiderWeightKg: [ 54, 81 ]
       suggestedBoot: M 8–10
     - size: "156"
       widthVariant: standard
@@ -83,8 +83,8 @@ specs:
       taperMm: 0
       sidecutRadiusM: 8.1
       referenceStanceMm: 559
-      recommendedRiderWeightLb: [130, 190]
-      recommendedRiderWeightKg: [59, 86]
+      recommendedRiderWeightLb: [ 130, 190 ]
+      recommendedRiderWeightKg: [ 59, 86 ]
       suggestedBoot: M 8–10
     - size: "158"
       widthVariant: standard
@@ -95,8 +95,8 @@ specs:
       taperMm: 0
       sidecutRadiusM: 8.3
       referenceStanceMm: 559
-      recommendedRiderWeightLb: [140, 200]
-      recommendedRiderWeightKg: [63, 90]
+      recommendedRiderWeightLb: [ 140, 200 ]
+      recommendedRiderWeightKg: [ 63, 90 ]
       suggestedBoot: M 8–10
     - size: "154W"
       widthVariant: wide
@@ -107,8 +107,8 @@ specs:
       taperMm: 0
       sidecutRadiusM: 8.0
       referenceStanceMm: 533
-      recommendedRiderWeightLb: [130, 190]
-      recommendedRiderWeightKg: [59, 86]
+      recommendedRiderWeightLb: [ 130, 190 ]
+      recommendedRiderWeightKg: [ 59, 86 ]
       suggestedBoot: M 10+
     - size: "156W"
       widthVariant: wide
@@ -119,8 +119,8 @@ specs:
       taperMm: 0
       sidecutRadiusM: 8.1
       referenceStanceMm: 559
-      recommendedRiderWeightLb: [130, 190]
-      recommendedRiderWeightKg: [59, 86]
+      recommendedRiderWeightLb: [ 130, 190 ]
+      recommendedRiderWeightKg: [ 59, 86 ]
       suggestedBoot: M 10+
     - size: "158W"
       widthVariant: wide
@@ -131,8 +131,8 @@ specs:
       taperMm: 0
       sidecutRadiusM: 8.3
       referenceStanceMm: 559
-      recommendedRiderWeightLb: [130, 190]
-      recommendedRiderWeightKg: [59, 86]
+      recommendedRiderWeightLb: [ 130, 190 ]
+      recommendedRiderWeightKg: [ 59, 86 ]
       suggestedBoot: M 10+
     - size: "160W"
       widthVariant: wide
@@ -143,10 +143,15 @@ specs:
       taperMm: 0
       sidecutRadiusM: 8.4
       referenceStanceMm: 584
-      recommendedRiderWeightLb: [100, 150]
-      recommendedRiderWeightKg: [45, 68]
+      recommendedRiderWeightLb: [ 100, 150 ]
+      recommendedRiderWeightKg: [ 45, 68 ]
       suggestedBoot: M 10+
       sourceAnomaly: Official page prints 100-150 lb / 45-68 kg for the 160W; preserved verbatim and flagged, not silently corrected.
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 499.95
+  priceMarket: 原币 USD；来源商店 capitasnowboarding.com
+  priceSource: https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 editorial_scores:
   stability: 7.0
   response: 7.2

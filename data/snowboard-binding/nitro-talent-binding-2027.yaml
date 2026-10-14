@@ -10,11 +10,17 @@ specs:
     - freestyle
   entrySystem: strap
   mountingSystem: Universal Mini Disc；兼容 2x4 与 Channel
-  bindingSizeGuide: Nitro Talent 官方尺码：S US 男 3–6.5、女 3.5–7 / MP 21–24.5 / EU
-    33.5–38；M 男 7–10.5、女 7.5–11 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14、女
-    11.5–14.5 / MP 29–32 / EU 44–48。
+  bindingSizeGuide: Nitro Talent 官方尺码：S US 男 3–6.5、女 3.5–7 / MP 21–24.5 / EU 33.5–38；M 男 7–10.5、女 7.5–11 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14、女 11.5–14.5 / MP 29–32 / EU 44–48。
   brandComfortScore: 7
   brandResponseScore: 4
+  bootCompatibility: 常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://www.nitrosnowboards.com/collections/bindings-26-27/products/talent-unisex-bindings-1
+  priceCheckedAt: 2026-10-12
+  officialPrice: EUR 179.9
+  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
+  priceSource: https://www.nitrosnowboards.com/products/talent-unisex-bindings-1
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-105_Talent-Unisex-Bindings_Bubble-Gum_Product-1.jpg?v=1779339424&width=1920
     kind: face

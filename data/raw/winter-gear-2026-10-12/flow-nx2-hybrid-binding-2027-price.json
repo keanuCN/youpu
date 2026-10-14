@@ -1,0 +1,358 @@
+{
+  "slug": "flow-nx2-hybrid-binding-2027",
+  "price": "USD 379.95",
+  "source": "https://www.nidecker.com/en-int/products/flow-nx2-hybrid",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:42:54.061Z",
+  "productName": "Flow NX2 Hybrid",
+  "productType": "Product",
+  "productUrl": "https://www.nidecker.com/en-int/products/flow-nx2-hybrid",
+  "offers": [
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/flow-nx2-hybrid?variant=47005505454255",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.27.BNU.N2H.001.3M.1",
+      "gtin13": "7630961810764",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 379.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/flow-nx2-hybrid?variant=47005505487023",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.27.BNU.N2H.100.3M.1",
+      "gtin13": "7630961810795",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 379.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/flow-nx2-hybrid?variant=47005505519791",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.27.BNU.N2H.001.4L.1",
+      "gtin13": "7630961810771",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 379.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/flow-nx2-hybrid?variant=47005505552559",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.27.BNU.N2H.100.4L.1",
+      "gtin13": "7630961810801",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 379.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/flow-nx2-hybrid?variant=47005505585327",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.27.BNU.N2H.001.5XL.1",
+      "gtin13": "7630961810788",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 379.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.nidecker.com/en-int/products/flow-nx2-hybrid?variant=47005505618095",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.27.BNU.N2H.100.5XL.1",
+      "gtin13": "7630961810818",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 379.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker US",
+        "url": "https://www.nidecker.com"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "8573eff7b3a6a0a7e002ef22b8de609563deb57abf20df382b34475b8a4c6dbf",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

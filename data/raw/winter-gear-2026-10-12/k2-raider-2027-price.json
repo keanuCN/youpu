@@ -1,0 +1,735 @@
+{
+  "slug": "k2-raider-2027",
+  "price": "USD 279.95",
+  "source": "https://k2snow.com/en-us/p/raider-mens-snowboard-boots-kb261667",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:47:01.006Z",
+  "productName": "K2 Raider Men's Snowboard Boots 2027 ",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 6",
+      "color": "SAND",
+      "size": "6",
+      "sku": "KB261667-SA-6",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=6",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 7",
+      "color": "SAND",
+      "size": "7",
+      "sku": "KB261667028",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=7",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 7.5",
+      "color": "SAND",
+      "size": "7.5",
+      "sku": "KB261667029",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=7.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 8",
+      "color": "SAND",
+      "size": "8",
+      "sku": "KB261667030",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=8",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 8.5",
+      "color": "SAND",
+      "size": "8.5",
+      "sku": "KB261667031",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=8.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 9",
+      "color": "SAND",
+      "size": "9",
+      "sku": "KB261667032",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=9",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 9.5",
+      "color": "SAND",
+      "size": "9.5",
+      "sku": "KB261667033",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=9.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 10",
+      "color": "SAND",
+      "size": "10",
+      "sku": "KB261667034",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=10",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 10.5",
+      "color": "SAND",
+      "size": "10.5",
+      "sku": "KB261667035",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=10.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 11",
+      "color": "SAND",
+      "size": "11",
+      "sku": "KB261667036",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=11",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 11.5",
+      "color": "SAND",
+      "size": "11.5",
+      "sku": "KB261667037",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=11.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 12",
+      "color": "SAND",
+      "size": "12",
+      "sku": "KB261667038",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=12",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 13",
+      "color": "SAND",
+      "size": "13",
+      "sku": "KB261667039",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=13",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 14",
+      "color": "SAND",
+      "size": "14",
+      "sku": "KB261667-SA-14",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=14",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: SAND, Size: 15",
+      "color": "SAND",
+      "size": "15",
+      "sku": "KB261667-SA-15",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=SAND&Size=15",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 6",
+      "color": "BLACK",
+      "size": "6",
+      "sku": "KB261667001",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=6",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 7",
+      "color": "BLACK",
+      "size": "7",
+      "sku": "KB261667002",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=7",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 7.5",
+      "color": "BLACK",
+      "size": "7.5",
+      "sku": "KB261667003",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=7.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 8",
+      "color": "BLACK",
+      "size": "8",
+      "sku": "KB261667004",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=8",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 8.5",
+      "color": "BLACK",
+      "size": "8.5",
+      "sku": "KB261667005",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=8.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 9",
+      "color": "BLACK",
+      "size": "9",
+      "sku": "KB261667006",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=9",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 9.5",
+      "color": "BLACK",
+      "size": "9.5",
+      "sku": "KB261667007",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=9.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 10",
+      "color": "BLACK",
+      "size": "10",
+      "sku": "KB261667008",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=10",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 10.5",
+      "color": "BLACK",
+      "size": "10.5",
+      "sku": "KB261667009",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=10.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 11",
+      "color": "BLACK",
+      "size": "11",
+      "sku": "KB261667010",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=11",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 11.5",
+      "color": "BLACK",
+      "size": "11.5",
+      "sku": "KB261667011",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=11.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 12",
+      "color": "BLACK",
+      "size": "12",
+      "sku": "KB261667012",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=12",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 13",
+      "color": "BLACK",
+      "size": "13",
+      "sku": "KB261667013",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=13",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 14",
+      "color": "BLACK",
+      "size": "14",
+      "sku": "KB261667014",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=14",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_black_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: BLACK, Size: 15",
+      "color": "BLACK",
+      "size": "15",
+      "sku": "KB261667015",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=BLACK&Size=15",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 6",
+      "color": "GREY",
+      "size": "6",
+      "sku": "KB261667-GR-6",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=6",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 7",
+      "color": "GREY",
+      "size": "7",
+      "sku": "KB261667016",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=7",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 7.5",
+      "color": "GREY",
+      "size": "7.5",
+      "sku": "KB261667017",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=7.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 8",
+      "color": "GREY",
+      "size": "8",
+      "sku": "KB261667018",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=8",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 8.5",
+      "color": "GREY",
+      "size": "8.5",
+      "sku": "KB261667019",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=8.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 9",
+      "color": "GREY",
+      "size": "9",
+      "sku": "KB261667020",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=9",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 9.5",
+      "color": "GREY",
+      "size": "9.5",
+      "sku": "KB261667021",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=9.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 10",
+      "color": "GREY",
+      "size": "10",
+      "sku": "KB261667022",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=10",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 10.5",
+      "color": "GREY",
+      "size": "10.5",
+      "sku": "KB261667023",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=10.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 11",
+      "color": "GREY",
+      "size": "11",
+      "sku": "KB261667024",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=11",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 11.5",
+      "color": "GREY",
+      "size": "11.5",
+      "sku": "KB261667025",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=11.5",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 12",
+      "color": "GREY",
+      "size": "12",
+      "sku": "KB261667026",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=12",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 13",
+      "color": "GREY",
+      "size": "13",
+      "sku": "KB261667027",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=13",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 14",
+      "color": "GREY",
+      "size": "14",
+      "sku": "KB261667-GR-14",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=14",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_grey_KB261667_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Raider Men's Snowboard Boots 2027  - Color: GREY, Size: 15",
+      "color": "GREY",
+      "size": "15",
+      "sku": "KB261667-GR-15",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/raider-mens-snowboard-boots-kb261667?Color=GREY&Size=15",
+        "priceCurrency": "USD",
+        "price": 279.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/OutOfStock"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "2305e954f42cb0e3436b0f14b05375703fab042a5a2b8007f333446b369f5bae",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

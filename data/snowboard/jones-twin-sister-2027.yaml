@@ -19,7 +19,7 @@ price:
 specs:
   length: 149
   waistWidth: 244
-  stanceSetback: 20
+  stanceSetback: 0
   profile: CamRock
   profileFamily: hybrid
   shape: Directional Twin
@@ -29,6 +29,20 @@ specs:
     - all-mountain
     - freestyle
     - powder
+  lengthOptions: 140 / 143 / 146 / 149 / 152 / 155
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "140", weight: 2100, effectiveEdge: 1070, waistWidth: 238, setback: 0, contactLength: 972, noseLength: 219, tailLength: 209, noseWidth: 276.1, tailWidth: 276.1, frontFootWidth: 249, backFootWidth: 251, taper: 0, sidecutRadii: 6.6 m, stanceWidth: 490 mm（参考） / 490 mm（居中）, riderWeight: 90-140 lbs. / 41-63 kg., bootSize: US 5-7 / EU 35.5-37.5 }
+    - { size: "143", weight: 2200, effectiveEdge: 1100, waistWidth: 240, setback: 0, contactLength: 998, noseLength: 221, tailLength: 211, noseWidth: 279, tailWidth: 279, frontFootWidth: 251, backFootWidth: 253, taper: 0, sidecutRadii: 6.8 m, stanceWidth: 510 mm（参考） / 510 mm（居中）, riderWeight: 100-150 lbs. / 45-68 kg., bootSize: US 6-8 / EU 36.5-38.5 }
+    - { size: "146", weight: 2300, effectiveEdge: 1120, waistWidth: 242, setback: 0, contactLength: 1024, noseLength: 223, tailLength: 213, noseWidth: 281.8, tailWidth: 281.8, frontFootWidth: 253, backFootWidth: 255, taper: 0, sidecutRadii: 7.0 m, stanceWidth: 510 mm（参考） / 510 mm（居中）, riderWeight: 100-150 lbs. / 45-68 kg., bootSize: US 7-9 / EU 37.5-39.5 }
+    - { size: "149", weight: 2400, effectiveEdge: 1150, waistWidth: 244, setback: 0, contactLength: 1050, noseLength: 225, tailLength: 215, noseWidth: 284.7, tailWidth: 284.7, frontFootWidth: 255, backFootWidth: 257, taper: 0, sidecutRadii: 7.2 m, stanceWidth: 530 mm（参考） / 530 mm（居中）, riderWeight: 110-160 lbs. / 49-73 kg., bootSize: US 8-9.5 / EU 38.5-40.5 }
+    - { size: "152", weight: 2500, effectiveEdge: 1180, waistWidth: 246, setback: 0, contactLength: 1076, noseLength: 227, tailLength: 217, noseWidth: 287.5, tailWidth: 287.5, frontFootWidth: 257, backFootWidth: 259, taper: 0, sidecutRadii: 7.4 m, stanceWidth: 530 mm（参考） / 530 mm（居中）, riderWeight: 110-160 lbs. / 49-73 kg., bootSize: US 8-10 / EU 38.5-42 }
+    - { size: "155", weight: 2700, effectiveEdge: 1200, waistWidth: 248, setback: 0, contactLength: 1102, noseLength: 229, tailLength: 219, noseWidth: 290.4, tailWidth: 290.4, frontFootWidth: 259, backFootWidth: 261, taper: 0, sidecutRadii: 7.6 m, stanceWidth: 530 mm（参考） / 530 mm（居中）, riderWeight: 120-170 lbs. / 54-77 kg., bootSize: US 8-11 / EU 38.5-43 }
+  weight: 2400
+  effectiveEdge: 1150
+  sidecut: 7.2
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
   - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNW.TWS-gallery-1.webp?v=1773324878&width=1946"
     kind: face

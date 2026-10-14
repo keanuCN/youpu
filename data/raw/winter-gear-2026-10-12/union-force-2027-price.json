@@ -1,0 +1,152 @@
+{
+  "slug": "union-force-2027",
+  "price": "USD 349.95",
+  "source": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:59.976Z",
+  "productName": "Union Force",
+  "productType": "Product",
+  "productUrl": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "11010100-BLK-S",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907739660543"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-BLK-M",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907739693311"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-BLK-L",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907739726079"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-BLK-XL",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907739758847"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-WHT-S",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907739791615"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-WHT-M",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907739824383"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-WHT-L",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907739857151"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-WHT-XL",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907739889919"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-BN1-S",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907739922687"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-BN1-M",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907739955455"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-BN1-L",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907739988223"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-YLW-S",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907740020991"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-YLW-M",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907740053759"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-YLW-L",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907740086527"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-PIN-S",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907740119295"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-PIN-M",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907740152063"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010100-PIN-L",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027?variant=48907740184831"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "4bae4772f2c3232c4d2d83c8368d4145504c2b4ac19605ac84f95f3fdc00d135",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

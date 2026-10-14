@@ -1,0 +1,58 @@
+{
+  "seedFile": "data/skis/rossignol-forza-40-ca-xpress-2027.yaml",
+  "retrievedAt": "2026-10-13",
+  "source": "https://www.rossignol.com/ca-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000.html",
+  "variantSources": [
+    "https://www.rossignol.com/cz-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000150.html",
+    "https://www.rossignol.com/kr-ko/mens-forza-40-ca-xpress-piste-skis-RAPPX05000157.html",
+    "https://www.rossignol.com/de-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000164.html",
+    "https://www.rossignol.com/ch-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000171.html",
+    "https://www.rossignol.com/hr-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000179.html"
+  ],
+  "partial": false,
+  "rows": [
+    {
+      "size": "150 cm",
+      "noseWidth": 127,
+      "waistWidth": 75,
+      "tailWidth": 111,
+      "turnRadius": 10
+    },
+    {
+      "size": "157 cm",
+      "noseWidth": 127,
+      "waistWidth": 75,
+      "tailWidth": 111,
+      "turnRadius": 11
+    },
+    {
+      "size": "164 cm",
+      "noseWidth": 127,
+      "waistWidth": 75,
+      "tailWidth": 111,
+      "turnRadius": 12
+    },
+    {
+      "size": "171 cm",
+      "noseWidth": 127,
+      "waistWidth": 75,
+      "tailWidth": 111,
+      "turnRadius": 14
+    },
+    {
+      "size": "179 cm",
+      "noseWidth": 127,
+      "waistWidth": 75,
+      "tailWidth": 111,
+      "turnRadius": 15
+    }
+  ],
+  "verifiedFields": {
+    "core": "PEFC 认证杨木板芯",
+    "construction": "Rectangular Full Sidewall",
+    "technologies": "V-Profile；Carbon Beam",
+    "bindingCompatibility": "可选 XPRESS 11 GW：成人 Alpine ISO 5355 A / GripWalk ISO 23223 A，BSL 260–385 mm。要求 XPRESS 系统；不能套用 KONECT 的调节范围。",
+    "seasonEvidence": "RAPPX05000 与对应尺码 SKU 已核对；当前官方页面未直接标注销售雪季，档案 2026/27 仍需年度目录确认。"
+  },
+  "limitations": "几何已逐长度核对，重量配置口径未确认"
+}

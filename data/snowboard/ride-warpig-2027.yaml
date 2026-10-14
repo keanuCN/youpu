@@ -29,6 +29,18 @@ specs:
     - all-mountain
     - freestyle
     - powder
+  lengthOptions: X-SMALL (142) / SMALL (148) / MEDIUM (151) / LARGE (154) / X-LARGE (158)
+  widthVariant: standard
+  sizeSpecs:
+    - { size: X-SMALL (142), effectiveEdge: 1044, waistWidth: 250, setback: 0, noseWidth: 301, tailWidth: 291, stanceWidth: 483 mm, riderWeight: 27 - 73 kg, sidecutRadii: 4.6 / - / 5.6 m（entry / focus / exit；- 表示未提供） }
+    - { size: SMALL (148), effectiveEdge: 1095, waistWidth: 260, setback: 0, noseWidth: 311, tailWidth: 301, stanceWidth: 533 mm, riderWeight: 45 - 93 kg, sidecutRadii: 5.1 / - / 6.2 m（entry / focus / exit；- 表示未提供） }
+    - { size: MEDIUM (151), effectiveEdge: 1121, waistWidth: 265, setback: 0, noseWidth: 316, tailWidth: 306, stanceWidth: 559 mm, riderWeight: 59 - 95 kg, sidecutRadii: 5.4 / - / 6.5 m（entry / focus / exit；- 表示未提供） }
+    - { size: LARGE (154), effectiveEdge: 1146, waistWidth: 270, setback: 0, noseWidth: 321, tailWidth: 311, stanceWidth: 559 mm, riderWeight: 64 - 100+ kg, sidecutRadii: 5.6 / - / 6.9 m（entry / focus / exit；- 表示未提供） }
+    - { size: X-LARGE (158), effectiveEdge: 1171, waistWidth: 277, setback: 0, noseWidth: 328, tailWidth: 318, stanceWidth: 584 mm, riderWeight: 77 - 100+ kg, sidecutRadii: 5.9 / - / 7.2 m（entry / focus / exit；- 表示未提供） }
+  stanceSetback: 0
+  sidecutRadii: 5.6 / - / 6.9 m（entry / focus / exit；- 表示未提供）
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
   - url: "https://cdn.media.amplience.net/s/ride/ride_2627_warpig_RD261857?w=1200&qlt=90&fmt=auto"
     kind: face
@@ -36,6 +48,6 @@ images:
     source: RIDE 官方产品页图片（商用授权状态待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://ridesnowboards.com/en-us/p/warpig-snowboard-rd261857
 status: published

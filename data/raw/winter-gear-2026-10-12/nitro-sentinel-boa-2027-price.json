@@ -1,0 +1,736 @@
+{
+  "slug": "nitro-sentinel-boa-2027",
+  "price": "EUR 329.9",
+  "source": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:47:16.693Z",
+  "productName": "Nitro Sentinel BOA® Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1",
+  "hasVariant": [
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710270795#variant",
+      "@type": "Product",
+      "gtin": "7630349347295",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 250",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710270795#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710270795"
+      },
+      "sku": "13BT11014-103-250"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710303563#variant",
+      "@type": "Product",
+      "gtin": "7630349347301",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 255",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710303563#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710303563"
+      },
+      "sku": "13BT11014-103-255"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710336331#variant",
+      "@type": "Product",
+      "gtin": "7630349347318",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 260",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710336331#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710336331"
+      },
+      "sku": "13BT11014-103-260"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710369099#variant",
+      "@type": "Product",
+      "gtin": "7630349347325",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 265",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710369099#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710369099"
+      },
+      "sku": "13BT11014-103-265"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710401867#variant",
+      "@type": "Product",
+      "gtin": "7630349347332",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 270",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710401867#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710401867"
+      },
+      "sku": "13BT11014-103-270"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710434635#variant",
+      "@type": "Product",
+      "gtin": "7630349347349",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 275",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710434635#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710434635"
+      },
+      "sku": "13BT11014-103-275"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710467403#variant",
+      "@type": "Product",
+      "gtin": "7630349347356",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 280",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710467403#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710467403"
+      },
+      "sku": "13BT11014-103-280"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710500171#variant",
+      "@type": "Product",
+      "gtin": "7630349347363",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 285",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710500171#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710500171"
+      },
+      "sku": "13BT11014-103-285"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710532939#variant",
+      "@type": "Product",
+      "gtin": "7630349347370",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 290",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710532939#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710532939"
+      },
+      "sku": "13BT11014-103-290"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710565707#variant",
+      "@type": "Product",
+      "gtin": "7630349347387",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 295",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710565707#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710565707"
+      },
+      "sku": "13BT11014-103-295"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710598475#variant",
+      "@type": "Product",
+      "gtin": "7630349347394",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 300",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710598475#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710598475"
+      },
+      "sku": "13BT11014-103-300"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710631243#variant",
+      "@type": "Product",
+      "gtin": "7630349347400",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 305",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710631243#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710631243"
+      },
+      "sku": "13BT11014-103-305"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710664011#variant",
+      "@type": "Product",
+      "gtin": "7630349347417",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 310",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710664011#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710664011"
+      },
+      "sku": "13BT11014-103-310"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710696779#variant",
+      "@type": "Product",
+      "gtin": "7630349347424",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 315",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710696779#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710696779"
+      },
+      "sku": "13BT11014-103-315"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710729547#variant",
+      "@type": "Product",
+      "gtin": "7630349347431",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Brown / 320",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710729547#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710729547"
+      },
+      "sku": "13BT11014-103-320"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709287755#variant",
+      "@type": "Product",
+      "gtin": "7630349346991",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 250",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709287755#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709287755"
+      },
+      "sku": "13BT11014-101-250"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709320523#variant",
+      "@type": "Product",
+      "gtin": "7630349347004",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 255",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709320523#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709320523"
+      },
+      "sku": "13BT11014-101-255"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709353291#variant",
+      "@type": "Product",
+      "gtin": "7630349347011",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 260",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709353291#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709353291"
+      },
+      "sku": "13BT11014-101-260"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709386059#variant",
+      "@type": "Product",
+      "gtin": "7630349347028",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 265",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709386059#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709386059"
+      },
+      "sku": "13BT11014-101-265"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709418827#variant",
+      "@type": "Product",
+      "gtin": "7630349347035",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 270",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709418827#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709418827"
+      },
+      "sku": "13BT11014-101-270"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709451595#variant",
+      "@type": "Product",
+      "gtin": "7630349347042",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 275",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709451595#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709451595"
+      },
+      "sku": "13BT11014-101-275"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709484363#variant",
+      "@type": "Product",
+      "gtin": "7630349347059",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 280",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709484363#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709484363"
+      },
+      "sku": "13BT11014-101-280"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709517131#variant",
+      "@type": "Product",
+      "gtin": "7630349347066",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 285",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709517131#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709517131"
+      },
+      "sku": "13BT11014-101-285"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709549899#variant",
+      "@type": "Product",
+      "gtin": "7630349347073",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 290",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709549899#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709549899"
+      },
+      "sku": "13BT11014-101-290"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709582667#variant",
+      "@type": "Product",
+      "gtin": "7630349347080",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 295",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709582667#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709582667"
+      },
+      "sku": "13BT11014-101-295"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709615435#variant",
+      "@type": "Product",
+      "gtin": "7630349347097",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 300",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709615435#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709615435"
+      },
+      "sku": "13BT11014-101-300"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709648203#variant",
+      "@type": "Product",
+      "gtin": "7630349347103",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 305",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709648203#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709648203"
+      },
+      "sku": "13BT11014-101-305"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709680971#variant",
+      "@type": "Product",
+      "gtin": "7630349347110",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 310",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709680971#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709680971"
+      },
+      "sku": "13BT11014-101-310"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709713739#variant",
+      "@type": "Product",
+      "gtin": "7630349347127",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 315",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709713739#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709713739"
+      },
+      "sku": "13BT11014-101-315"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709746507#variant",
+      "@type": "Product",
+      "gtin": "7630349347134",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-101_Sentinel-BOA-Boots_Black_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Black / 320",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709746507#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709746507"
+      },
+      "sku": "13BT11014-101-320"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709779275#variant",
+      "@type": "Product",
+      "gtin": "7630349347141",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 250",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709779275#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709779275"
+      },
+      "sku": "13BT11014-102-250"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709812043#variant",
+      "@type": "Product",
+      "gtin": "7630349347158",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 255",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709812043#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709812043"
+      },
+      "sku": "13BT11014-102-255"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709844811#variant",
+      "@type": "Product",
+      "gtin": "7630349347165",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 260",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709844811#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709844811"
+      },
+      "sku": "13BT11014-102-260"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709877579#variant",
+      "@type": "Product",
+      "gtin": "7630349347172",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 265",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709877579#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709877579"
+      },
+      "sku": "13BT11014-102-265"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709910347#variant",
+      "@type": "Product",
+      "gtin": "7630349347189",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 270",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709910347#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709910347"
+      },
+      "sku": "13BT11014-102-270"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709943115#variant",
+      "@type": "Product",
+      "gtin": "7630349347196",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 275",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709943115#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709943115"
+      },
+      "sku": "13BT11014-102-275"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277709975883#variant",
+      "@type": "Product",
+      "gtin": "7630349347202",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 280",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277709975883#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277709975883"
+      },
+      "sku": "13BT11014-102-280"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710008651#variant",
+      "@type": "Product",
+      "gtin": "7630349347219",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 285",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710008651#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710008651"
+      },
+      "sku": "13BT11014-102-285"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710041419#variant",
+      "@type": "Product",
+      "gtin": "7630349347226",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 290",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710041419#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710041419"
+      },
+      "sku": "13BT11014-102-290"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710074187#variant",
+      "@type": "Product",
+      "gtin": "7630349347233",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 295",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710074187#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710074187"
+      },
+      "sku": "13BT11014-102-295"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710106955#variant",
+      "@type": "Product",
+      "gtin": "7630349347240",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 300",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710106955#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710106955"
+      },
+      "sku": "13BT11014-102-300"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710139723#variant",
+      "@type": "Product",
+      "gtin": "7630349347257",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 305",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710139723#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710139723"
+      },
+      "sku": "13BT11014-102-305"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710172491#variant",
+      "@type": "Product",
+      "gtin": "7630349347264",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 310",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710172491#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710172491"
+      },
+      "sku": "13BT11014-102-310"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710205259#variant",
+      "@type": "Product",
+      "gtin": "7630349347271",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 315",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710205259#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710205259"
+      },
+      "sku": "13BT11014-102-315"
+    },
+    {
+      "@id": "/products/sentinel-boa-boots-1?variant=57277710238027#variant",
+      "@type": "Product",
+      "gtin": "7630349347288",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-102_Sentinel-BOA-Boots_Sand_Product-1.jpg?v=1779339447&width=1920",
+      "name": "Nitro Sentinel BOA® Boots - Sand / 320",
+      "offers": {
+        "@id": "/products/sentinel-boa-boots-1?variant=57277710238027#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "329.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1?variant=57277710238027"
+      },
+      "sku": "13BT11014-102-320"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "84137553e18af459da92d8867d9a0d229e83b2bc729e31dd3bc4a5e034213057",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

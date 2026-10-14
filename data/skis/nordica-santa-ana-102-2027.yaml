@@ -4,13 +4,15 @@ brand: nordica
 model: Santa Ana 102
 year: 2027
 title: Nordica Santa Ana 102 2026/27
-one_liner: 26/27 Santa Ana 女性全山地宽板腰型号，采用 Terrain Specific Metal 与 Pulse Core；官方提供 155–179 cm 五种长度。
+one_liner: 26/27 Santa Ana 女性全山地宽板腰型号，采用 Terrain Specific Metal 与 Pulse
+  Core；官方提供 155–179 cm 五种长度。
 specs:
   lengthOptions: 155 / 161 / 167 / 173 / 179 cm
   waistWidth: 102
   turnRadius: 16.5
   turnRadiusReferenceLength: 155 cm
-  sidecutDimensions: "155 cm: 128-102-118 mm；179 cm: 133-102-123 mm（官方展示尺寸）；半径：155/16.5、161/17、167/17.5、173/18、179/18.5 m"
+  sidecutDimensions: "155 cm: 128-102-118 mm；179 cm: 133-102-123
+    mm（官方展示尺寸）；半径：155/16.5、161/17、167/17.5、173/18、179/18.5 m"
   profile: All Mountain Rocker（板头、板尾摇臂）
   core: Performance Wood + Pulse Core
   construction: TSM Pulse Core；Terrain Specific Metal 金属层
@@ -22,8 +24,49 @@ specs:
   terrain: 全山地 / 自由滑
   skierLevel: 中级至进阶
   bindingSetup: 裸板，固定器另配
+  weightBasis: 官方 Weight per pair：一对裸板重量；每个板长分别记录，不推算单只重量。
+  sizeSpecs:
+    - size: 155 cm
+      noseWidth: 128
+      waistWidth: 102
+      tailWidth: 118
+      turnRadius: 16.5
+      weightPerPair: 3500
+    - size: 161 cm
+      noseWidth: 129
+      waistWidth: 102
+      tailWidth: 119
+      turnRadius: 17
+      weightPerPair: 3700
+    - size: 167 cm
+      noseWidth: 130.5
+      waistWidth: 102
+      tailWidth: 120.5
+      turnRadius: 17.5
+      weightPerPair: 3920
+    - size: 173 cm
+      noseWidth: 131.5
+      waistWidth: 101
+      tailWidth: 121.5
+      turnRadius: 18
+      weightPerPair: 4060
+      notes: 官方此长度板腰为 101 mm，与型号名称及其他长度不同，按原表保留；购买前向品牌核对。
+    - size: 179 cm
+      noseWidth: 133
+      waistWidth: 102
+      tailWidth: 123
+      turnRadius: 18.5
+      weightPerPair: 4320
+  geometryNotes: 已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替
+    BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。
+  seasonEvidence: 官方页面标题明确标注 2026/27，逐长度数据于 2026-10-13 提取。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.nordica.com/canada/en/collection/women/skis/santa-ana/santa-ana-102；https://www.grip-walk.com/faq/
 images:
-  - url: "https://www.nordica.com/storage/Product/0A548500001_SANTA_ANA_102_FLAT.png"
+  - url: "https://www.nordica.com/storage/Product/0A548500001_SANTA_ANA_102_FLAT.pn\
+      g"
     kind: face
     alt: Nordica Santa Ana 102 2026/27 官方雪板商品图
     source: Nordica 官方产品页（图片使用授权待核）

@@ -1,0 +1,113 @@
+{
+  "slug": "salomon-assassin-pro-2027",
+  "price": "USD 699.95",
+  "source": "https://www.salomon.com/en-us/product/assassin-pro-li1301",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T07:05:42.292Z",
+  "productName": "ASSASSIN PRO",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "ASSASSIN PRO",
+      "image": "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "150",
+      "sku": "L49292000038",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/assassin-pro-li1301/L49292000?sizeId=L49292000038",
+        "priceCurrency": "USD",
+        "price": "699.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ASSASSIN PRO",
+      "image": "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "153",
+      "sku": "L49292000044",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/assassin-pro-li1301/L49292000?sizeId=L49292000044",
+        "priceCurrency": "USD",
+        "price": "699.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ASSASSIN PRO",
+      "image": "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "156",
+      "sku": "L49292000050",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/assassin-pro-li1301/L49292000?sizeId=L49292000050",
+        "priceCurrency": "USD",
+        "price": "699.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ASSASSIN PRO",
+      "image": "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "158W",
+      "sku": "L49292000055",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/assassin-pro-li1301/L49292000?sizeId=L49292000055",
+        "priceCurrency": "USD",
+        "price": "699.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ASSASSIN PRO",
+      "image": "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "159",
+      "sku": "L49292000056",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/assassin-pro-li1301/L49292000?sizeId=L49292000056",
+        "priceCurrency": "USD",
+        "price": "699.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ASSASSIN PRO",
+      "image": "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "162",
+      "sku": "L49292000062",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/assassin-pro-li1301/L49292000?sizeId=L49292000062",
+        "priceCurrency": "USD",
+        "price": "699.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ASSASSIN PRO",
+      "image": "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "",
+      "size": "163W",
+      "sku": "L49292000065",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/assassin-pro-li1301/L49292000?sizeId=L49292000065",
+        "priceCurrency": "USD",
+        "price": "699.95"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "007fda33821b497757c2cb76e875e5736921e7571c783918099bdcef9fc76606",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

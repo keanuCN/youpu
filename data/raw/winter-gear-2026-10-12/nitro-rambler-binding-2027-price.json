@@ -1,0 +1,112 @@
+{
+  "slug": "nitro-rambler-binding-2027",
+  "price": "EUR 239.9",
+  "source": "https://www.nitrosnowboards.com/products/rambler-bindings-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:05.219Z",
+  "productName": "Nitro Rambler Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/rambler-bindings-1",
+  "hasVariant": [
+    {
+      "@id": "/products/rambler-bindings-1?variant=57277690642763#variant",
+      "@type": "Product",
+      "gtin": "7630349335070",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11007-103_Rambler-Bindings_Lite-Acid_Product-1.jpg?v=1779339376&width=1920",
+      "name": "Nitro Rambler Bindings - Lite Acid / M",
+      "offers": {
+        "@id": "/products/rambler-bindings-1?variant=57277690642763#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/rambler-bindings-1?variant=57277690642763"
+      },
+      "sku": "12BG11007-103-M"
+    },
+    {
+      "@id": "/products/rambler-bindings-1?variant=57277690609995#variant",
+      "@type": "Product",
+      "gtin": "7630349335087",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11007-103_Rambler-Bindings_Lite-Acid_Product-1.jpg?v=1779339376&width=1920",
+      "name": "Nitro Rambler Bindings - Lite Acid / L",
+      "offers": {
+        "@id": "/products/rambler-bindings-1?variant=57277690609995#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/rambler-bindings-1?variant=57277690609995"
+      },
+      "sku": "12BG11007-103-L"
+    },
+    {
+      "@id": "/products/rambler-bindings-1?variant=57277690577227#variant",
+      "@type": "Product",
+      "gtin": "7630349335056",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11007-102_Rambler-Bindings_Raw_Product-1.jpg?v=1779339376&width=1920",
+      "name": "Nitro Rambler Bindings - Raw / M",
+      "offers": {
+        "@id": "/products/rambler-bindings-1?variant=57277690577227#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/rambler-bindings-1?variant=57277690577227"
+      },
+      "sku": "12BG11007-102-M"
+    },
+    {
+      "@id": "/products/rambler-bindings-1?variant=57277690544459#variant",
+      "@type": "Product",
+      "gtin": "7630349335063",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11007-102_Rambler-Bindings_Raw_Product-1.jpg?v=1779339376&width=1920",
+      "name": "Nitro Rambler Bindings - Raw / L",
+      "offers": {
+        "@id": "/products/rambler-bindings-1?variant=57277690544459#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/rambler-bindings-1?variant=57277690544459"
+      },
+      "sku": "12BG11007-102-L"
+    },
+    {
+      "@id": "/products/rambler-bindings-1?variant=57277690511691#variant",
+      "@type": "Product",
+      "gtin": "7630349335032",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11007-101_Rambler-Bindings_Ultra-Black_Studio-1.jpg?v=1779339377&width=1920",
+      "name": "Nitro Rambler Bindings - Ultra Black / M",
+      "offers": {
+        "@id": "/products/rambler-bindings-1?variant=57277690511691#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/rambler-bindings-1?variant=57277690511691"
+      },
+      "sku": "12BG11007-101-M"
+    },
+    {
+      "@id": "/products/rambler-bindings-1?variant=57277690478923#variant",
+      "@type": "Product",
+      "gtin": "7630349335049",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11007-101_Rambler-Bindings_Ultra-Black_Studio-1.jpg?v=1779339377&width=1920",
+      "name": "Nitro Rambler Bindings - Ultra Black / L",
+      "offers": {
+        "@id": "/products/rambler-bindings-1?variant=57277690478923#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/rambler-bindings-1?variant=57277690478923"
+      },
+      "sku": "12BG11007-101-L"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "0c8f8a227b038e9a0adc54ee35b1e15eeaf4d1009efc5e1d1e451e2d86fd23f5",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-10-12T06:43:42.270Z",
+  "target": {
+    "slug": "salomon-edb-prime-binding-2026",
+    "category": "snowboard-binding",
+    "brand": "salomon",
+    "model": "EDB PRIME",
+    "year": 2026,
+    "url": "https://www.salomon.com/en-us/product/edb-prime-li8710",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.salomon.com/en-us/product/edb-prime-li8710",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.salomon.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:41:22.435Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": null,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "EDB PRIME Snowboard bindings · All-Mountain · Unisex | Salomon",
+    "canonicalUrl": "https://www.salomon.com/en-us/product/edb-prime-li8710",
+    "tables": []
+  },
+  "review": {
+    "rows": [],
+    "sources": "https://www.salomon.com/en-us/product/edb-prime-li8710",
+    "good": true
+  }
+}

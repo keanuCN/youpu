@@ -1,0 +1,769 @@
+{
+  "capturedAt": "2026-10-12T06:43:33.309Z",
+  "target": {
+    "slug": "rome-brass-aw-binding-2027",
+    "category": "snowboard-binding",
+    "brand": "rome",
+    "model": "Brass AW",
+    "year": 2027,
+    "url": "https://romesnowboards.com/products/rome-brass-aw-2627-womens-snowboard-binding",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://romesnowboards.com/products/rome-brass-aw-2627-womens-snowboard-binding",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://romesnowboards.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:41:05.067Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "匹配到 Allow 规则",
+      "matchedRule": "ALLOW /（第 19 行）"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Rome Brass AW Women's Snowboard Bindings 2026/2027 – Rome Snowboards",
+    "canonicalUrl": "https://romesnowboards.com/products/rome-brass-aw-2627-womens-snowboard-binding",
+    "tables": [
+      {
+        "headers": [
+          "",
+          "",
+          "",
+          "S",
+          "",
+          "",
+          "＊",
+          "＊",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "M/L",
+            "",
+            "",
+            "",
+            "＊",
+            "＊",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "L/XL",
+            "",
+            "",
+            "＊",
+            "＊"
+          ],
+          [
+            "US Men",
+            "5",
+            "5.5",
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13",
+            "14"
+          ],
+          [
+            "US Women",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13",
+            "13.5",
+            "14",
+            "14.5",
+            "15.5"
+          ],
+          [
+            "EU",
+            "36.5",
+            "37",
+            "38",
+            "38.5",
+            "39",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "45.5",
+            "46",
+            "47",
+            "48.5"
+          ],
+          [
+            "CM",
+            "23",
+            "23.5",
+            "24",
+            "24.5",
+            "25",
+            "25.5",
+            "26",
+            "26.5",
+            "27",
+            "27.5",
+            "28",
+            "28.5",
+            "29",
+            "29.5",
+            "30",
+            "30.5",
+            "31",
+            "32"
+          ]
+        ]
+      }
+    ]
+  },
+  "review": {
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "5 - 7",
+        "usWomen": "6.5 - 8.5",
+        "eu": "36.5 - 39",
+        "mondo": "23 - 25",
+        "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+      },
+      {
+        "size": "M/L",
+        "usMen": "7.5 - 10",
+        "usWomen": "9 - 11.5",
+        "eu": "40 - 43",
+        "mondo": "25.5 - 28",
+        "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+      },
+      {
+        "size": "L/XL",
+        "usMen": "10.5 - 12.5",
+        "usWomen": "12 - 14",
+        "eu": "44 - 46",
+        "mondo": "28.5 - 30.5",
+        "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+      }
+    ],
+    "sources": "https://romesnowboards.com/products/rome-brass-aw-2627-womens-snowboard-binding",
+    "good": true,
+    "colouredChart": [
+      [
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "S",
+          "className": "size-span"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "＊",
+          "className": "size-span-fadeout-1"
+        },
+        {
+          "text": "＊",
+          "className": "size-span-fadeout-2"
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        }
+      ],
+      [
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": "size-span-fadein"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "M/L",
+          "className": "size-span"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "＊",
+          "className": "size-span-fadeout-1"
+        },
+        {
+          "text": "＊",
+          "className": "size-span-fadeout-2"
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        }
+      ],
+      [
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": ""
+        },
+        {
+          "text": "",
+          "className": "size-span-fadein"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "L/XL",
+          "className": "size-span"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "",
+          "className": "size-span"
+        },
+        {
+          "text": "＊",
+          "className": "size-span-fadeout-1"
+        },
+        {
+          "text": "＊",
+          "className": "size-span-fadeout-2"
+        }
+      ],
+      [
+        {
+          "text": "US Men",
+          "className": ""
+        },
+        {
+          "text": "5",
+          "className": ""
+        },
+        {
+          "text": "5.5",
+          "className": ""
+        },
+        {
+          "text": "6",
+          "className": ""
+        },
+        {
+          "text": "6.5",
+          "className": ""
+        },
+        {
+          "text": "7",
+          "className": ""
+        },
+        {
+          "text": "7.5",
+          "className": ""
+        },
+        {
+          "text": "8",
+          "className": ""
+        },
+        {
+          "text": "8.5",
+          "className": ""
+        },
+        {
+          "text": "9",
+          "className": ""
+        },
+        {
+          "text": "9.5",
+          "className": ""
+        },
+        {
+          "text": "10",
+          "className": ""
+        },
+        {
+          "text": "10.5",
+          "className": ""
+        },
+        {
+          "text": "11",
+          "className": ""
+        },
+        {
+          "text": "11.5",
+          "className": ""
+        },
+        {
+          "text": "12",
+          "className": ""
+        },
+        {
+          "text": "12.5",
+          "className": ""
+        },
+        {
+          "text": "13",
+          "className": ""
+        },
+        {
+          "text": "14",
+          "className": ""
+        }
+      ],
+      [
+        {
+          "text": "US Women",
+          "className": ""
+        },
+        {
+          "text": "6.5",
+          "className": ""
+        },
+        {
+          "text": "7",
+          "className": ""
+        },
+        {
+          "text": "7.5",
+          "className": ""
+        },
+        {
+          "text": "8",
+          "className": ""
+        },
+        {
+          "text": "8.5",
+          "className": ""
+        },
+        {
+          "text": "9",
+          "className": ""
+        },
+        {
+          "text": "9.5",
+          "className": ""
+        },
+        {
+          "text": "10",
+          "className": ""
+        },
+        {
+          "text": "10.5",
+          "className": ""
+        },
+        {
+          "text": "11",
+          "className": ""
+        },
+        {
+          "text": "11.5",
+          "className": ""
+        },
+        {
+          "text": "12",
+          "className": ""
+        },
+        {
+          "text": "12.5",
+          "className": ""
+        },
+        {
+          "text": "13",
+          "className": ""
+        },
+        {
+          "text": "13.5",
+          "className": ""
+        },
+        {
+          "text": "14",
+          "className": ""
+        },
+        {
+          "text": "14.5",
+          "className": ""
+        },
+        {
+          "text": "15.5",
+          "className": ""
+        }
+      ],
+      [
+        {
+          "text": "EU",
+          "className": ""
+        },
+        {
+          "text": "36.5",
+          "className": ""
+        },
+        {
+          "text": "37",
+          "className": ""
+        },
+        {
+          "text": "38",
+          "className": ""
+        },
+        {
+          "text": "38.5",
+          "className": ""
+        },
+        {
+          "text": "39",
+          "className": ""
+        },
+        {
+          "text": "40",
+          "className": ""
+        },
+        {
+          "text": "40.5",
+          "className": ""
+        },
+        {
+          "text": "41",
+          "className": ""
+        },
+        {
+          "text": "42",
+          "className": ""
+        },
+        {
+          "text": "42.5",
+          "className": ""
+        },
+        {
+          "text": "43",
+          "className": ""
+        },
+        {
+          "text": "44",
+          "className": ""
+        },
+        {
+          "text": "44.5",
+          "className": ""
+        },
+        {
+          "text": "45",
+          "className": ""
+        },
+        {
+          "text": "45.5",
+          "className": ""
+        },
+        {
+          "text": "46",
+          "className": ""
+        },
+        {
+          "text": "47",
+          "className": ""
+        },
+        {
+          "text": "48.5",
+          "className": ""
+        }
+      ],
+      [
+        {
+          "text": "CM",
+          "className": ""
+        },
+        {
+          "text": "23",
+          "className": ""
+        },
+        {
+          "text": "23.5",
+          "className": ""
+        },
+        {
+          "text": "24",
+          "className": ""
+        },
+        {
+          "text": "24.5",
+          "className": ""
+        },
+        {
+          "text": "25",
+          "className": ""
+        },
+        {
+          "text": "25.5",
+          "className": ""
+        },
+        {
+          "text": "26",
+          "className": ""
+        },
+        {
+          "text": "26.5",
+          "className": ""
+        },
+        {
+          "text": "27",
+          "className": ""
+        },
+        {
+          "text": "27.5",
+          "className": ""
+        },
+        {
+          "text": "28",
+          "className": ""
+        },
+        {
+          "text": "28.5",
+          "className": ""
+        },
+        {
+          "text": "29",
+          "className": ""
+        },
+        {
+          "text": "29.5",
+          "className": ""
+        },
+        {
+          "text": "30",
+          "className": ""
+        },
+        {
+          "text": "30.5",
+          "className": ""
+        },
+        {
+          "text": "31",
+          "className": ""
+        },
+        {
+          "text": "32",
+          "className": ""
+        }
+      ]
+    ]
+  }
+}

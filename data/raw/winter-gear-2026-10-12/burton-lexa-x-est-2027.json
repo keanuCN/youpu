@@ -1,0 +1,133 @@
+{
+  "capturedAt": "2026-10-12T06:43:22.184Z",
+  "target": {
+    "slug": "burton-lexa-x-est-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Lexa X EST",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.burton.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:07.059Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Women's Burton Lexa X EST® Snowboard Bindings 2027",
+    "canonicalUrl": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
+    "tables": [
+      {
+        "headers": [
+          "Binding Size",
+          "S",
+          "M",
+          "L"
+        ],
+        "rows": [
+          [
+            "Women's Boot Size",
+            "4-6",
+            "6-8",
+            "8+"
+          ],
+          [
+            "Men's Boot Size",
+            "*",
+            "6-7",
+            "7-10"
+          ],
+          [
+            "EURO Boot Size",
+            "34-36.5",
+            "36.5-40",
+            "40+"
+          ],
+          [
+            "UK Boot Size",
+            "2.5-4",
+            "4-6",
+            "6+"
+          ],
+          [
+            "Mondo Boot Size",
+            "21-23",
+            "23-25",
+            "25+"
+          ]
+        ]
+      }
+    ]
+  },
+  "review": {
+    "rows": [
+      {
+        "size": "S",
+        "usWomen": "4-6",
+        "eu": "34-36.5",
+        "uk": "2.5-4",
+        "mondo": "21-23"
+      },
+      {
+        "size": "M",
+        "usWomen": "6-8",
+        "usMen": "6-7",
+        "eu": "36.5-40",
+        "uk": "4-6",
+        "mondo": "23-25"
+      },
+      {
+        "size": "L",
+        "usWomen": "8+",
+        "usMen": "7-10",
+        "eu": "40+",
+        "uk": "6+",
+        "mondo": "25+"
+      }
+    ],
+    "sources": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
+    "good": true
+  },
+  "sizeChart": [
+    {
+      "size": "S",
+      "usWomen": "4-6",
+      "eu": "34-36.5",
+      "uk": "2.5-4",
+      "mondo": "21-23"
+    },
+    {
+      "size": "M",
+      "usWomen": "6-8",
+      "usMen": "6-7",
+      "eu": "36.5-40",
+      "uk": "4-6",
+      "mondo": "23-25"
+    },
+    {
+      "size": "L",
+      "usWomen": "8+",
+      "usMen": "7-10",
+      "eu": "40+",
+      "uk": "6+",
+      "mondo": "25+"
+    }
+  ]
+}

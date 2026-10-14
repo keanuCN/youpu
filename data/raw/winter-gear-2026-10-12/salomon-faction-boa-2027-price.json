@@ -1,0 +1,253 @@
+{
+  "slug": "salomon-faction-boa-2027",
+  "price": "USD 279.95",
+  "source": "https://www.salomon.com/en-us/product/faction-boa-li9008",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:47:49.611Z",
+  "productName": "FACTION BOA®",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "7",
+      "sku": "L49140500022",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500022",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "7.5",
+      "sku": "L49140500023",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500023",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "8",
+      "sku": "L49140500024",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500024",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "8.5",
+      "sku": "L49140500025",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500025",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "9",
+      "sku": "L49140500026",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500026",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "9.5",
+      "sku": "L49140500027",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500027",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "10",
+      "sku": "L49140500028",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500028",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "10.5",
+      "sku": "L49140500029",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500029",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "11",
+      "sku": "L49140500030",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500030",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "11.5",
+      "sku": "L49140500031",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500031",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "12",
+      "sku": "L49140500032",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500032",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "12.5",
+      "sku": "L49140500033",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500033",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "13",
+      "sku": "L49140500034",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500034",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "FACTION BOA® Black / Black / Black",
+      "image": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Black",
+      "size": "13.5",
+      "sku": "L49140500035",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49140500?sizeId=L49140500035",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000022"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000023"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000024"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000025"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000026"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000027"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000028"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000029"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000030"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000031"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000032"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000033"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000034"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000035"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "820af6e0228bd7037fce15bf31352fc1ee05a228ea923b0467249d0a1427c30c",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -32,6 +32,18 @@ specs:
   scenes:
     - all-mountain
     - powder
+  lengthOptions: 154 / 158 / 159W / 161 / 162W / 164 / 165W
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "154", weight: 2400, effectiveEdge: 1140, waistWidth: 246, setback: 20, contactLength: 1032, noseLength: 324, tailLength: 184, noseWidth: 292, tailWidth: 278, frontFootWidth: 261, backFootWidth: 255, taper: 14, sidecutRadii: 7.9 m, stanceWidth: 520 mm（参考） / 540 mm（居中）, riderWeight: 120-170 lbs. / 54-77 kg., bootSize: US 7-9 / EU 39.5-41.5 }
+    - { size: "158", weight: 2700, effectiveEdge: 1180, waistWidth: 249, setback: 20, contactLength: 1066, noseLength: 327, tailLength: 187, noseWidth: 294, tailWidth: 281, frontFootWidth: 265, backFootWidth: 259, taper: 12, sidecutRadii: 8.5 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 130-180 lbs. / 59-82 kg., bootSize: US 7-9 / EU 39.5-41.5 }
+    - { size: 159W, weight: 2600, effectiveEdge: 1180, waistWidth: 263, setback: 20, contactLength: 1070, noseLength: 330, tailLength: 190, noseWidth: 307, tailWidth: 295, frontFootWidth: 278, backFootWidth: 273, taper: 13, sidecutRadii: 8.7 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 140-190 lbs. / 64-86 kg., bootSize: US 11 / EU 44.5 }
+    - { size: "161", weight: 2900, effectiveEdge: 1200, waistWidth: 252, setback: 20, contactLength: 1090, noseLength: 330, tailLength: 190, noseWidth: 296, tailWidth: 283, frontFootWidth: 267, backFootWidth: 262, taper: 12, sidecutRadii: 9.1 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 150-200 lbs. / 67-91 kg., bootSize: US 8.5-10.5 / EU 41.5-44 }
+    - { size: 162W, weight: 3000, effectiveEdge: 1210, waistWidth: 263, setback: 20, contactLength: 1100, noseLength: 330, tailLength: 190, noseWidth: 307, tailWidth: 294, frontFootWidth: 277, backFootWidth: 273, taper: 12, sidecutRadii: 9.3 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 160-210 lbs. / 73-95 kg., bootSize: US 11 / EU 44.5 }
+    - { size: "164", weight: 3000, effectiveEdge: 1230, waistWidth: 254, setback: 20, contactLength: 1116, noseLength: 332, tailLength: 192, noseWidth: 299, tailWidth: 286, frontFootWidth: 268, backFootWidth: 264, taper: 12, sidecutRadii: 9.3 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 160-210 lbs. / 73-95 kg., bootSize: US 9-11 / EU 41.5-44.5 }
+    - { size: 165W, weight: 3100, effectiveEdge: 1230, waistWidth: 266, setback: 20, contactLength: 1124, noseLength: 333, tailLength: 193, noseWidth: 311, tailWidth: 298, frontFootWidth: 280, backFootWidth: 275, taper: 12, sidecutRadii: 9.4 m, stanceWidth: 600 mm（参考） / 580 mm（居中）, riderWeight: 170-220 lbs.+ / 77-100 kg.+, bootSize: US 11 / EU 44.5 }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
   - url: "https://www.jonessnowboards.com/cdn/shop/files/J.27.SNM.UFL-gallery-1.webp?v=1782443801&width=1200"
     kind: face
@@ -39,6 +51,6 @@ images:
     source: Jones 官方产品页图片（商用授权状态待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://www.jonessnowboards.com/products/mens-flagship-pro-snowboard
 status: published

@@ -32,11 +32,13 @@ specs:
     - all-mountain
     - freestyle
   sizeSpecs:
-    - {size: "149", effectiveEdge: 1130, waistWidth: 247, noseWidth: 292, tailWidth: 292, sidecutRadii: "7.35 / 6.57 m (VARIO; source order)"}
-    - {size: "153", effectiveEdge: 1170, waistWidth: 250, noseWidth: 295, tailWidth: 295, sidecutRadii: "7.83 / 7.01 m (VARIO; source order)"}
-    - {size: "156", effectiveEdge: 1190, waistWidth: 253, noseWidth: 298, tailWidth: 298, sidecutRadii: "8.18 / 7.36 m (VARIO; source order)"}
-    - {size: "154x", effectiveEdge: 1170, waistWidth: 258, noseWidth: 303, tailWidth: 303, sidecutRadii: "7.86 / 7.03 m (VARIO; source order)"}
-    - {size: "157x", effectiveEdge: 1200, waistWidth: 262, noseWidth: 307, tailWidth: 307, sidecutRadii: "8.23 / 7.37 m (VARIO; source order)"}
+    - { size: "149", effectiveEdge: 1130, waistWidth: 247, noseWidth: 292, tailWidth: 292, sidecutRadii: "7.35 / 6.57 m (VARIO; source order)" }
+    - { size: "153", effectiveEdge: 1170, waistWidth: 250, noseWidth: 295, tailWidth: 295, sidecutRadii: "7.83 / 7.01 m (VARIO; source order)" }
+    - { size: "156", effectiveEdge: 1190, waistWidth: 253, noseWidth: 298, tailWidth: 298, sidecutRadii: "8.18 / 7.36 m (VARIO; source order)" }
+    - { size: "154x", effectiveEdge: 1170, waistWidth: 258, noseWidth: 303, tailWidth: 303, sidecutRadii: "7.86 / 7.03 m (VARIO; source order)" }
+    - { size: "157x", effectiveEdge: 1200, waistWidth: 262, noseWidth: 307, tailWidth: 307, sidecutRadii: "8.23 / 7.37 m (VARIO; source order)" }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 7
   response: 8.5

@@ -10,11 +10,14 @@ specs:
   waistWidth: 84.5
   turnRadius: 14.4
   turnRadiusReferenceLength: 173 cm
-  sidecutDimensions: "159 cm: 130-83.5-115 mm / 12.8 m；166 cm: 132-84-117.5 mm / 13.6 m；173 cm: 134-84.5-118.8 mm / 14.4 m；181 cm: 136-85-120.5 mm / 15.2 m"
+  sidecutDimensions: "159 cm: 130-83.5-115 mm / 12.8 m；166 cm: 132-84-117.5 mm /
+    13.6 m；173 cm: 134-84.5-118.8 mm / 14.4 m；181 cm: 136-85-120.5 mm / 15.2 m"
   profile: Active Camber 0/100/0
   core: Power Woodcore（白蜡木与杨木）
   construction: Ultrawall 全侧墙结构
-  technologies: Revoshock S；Carbon Boost；All-Condition Piste Shape；TI Powered；Structured Topsheet；World Cup Base Finish；Tip Protector；Icon Flex Interface
+  technologies: Revoshock S；Carbon Boost；All-Condition Piste Shape；TI
+    Powered；Structured Topsheet；World Cup Base Finish；Tip Protector；Icon Flex
+    Interface
   weightPerSki: 3344
   weightReferenceLength: 173 cm
   baseEdgeAngle: 0.8
@@ -22,8 +25,41 @@ specs:
   terrain: 雪道 / 全地域
   skierLevel: 进阶至专家
   bindingSetup: 含 I 12 GW 固定器
+  weightBasis: 官方按单只标注重量，对应 I 12 GW 套装与参考板长；其他长度未公布，不折算为一对裸板重量。
+  sizeSpecs:
+    - size: 159 cm
+      noseWidth: 130
+      waistWidth: 83.5
+      tailWidth: 115
+      turnRadius: 12.8
+    - size: 166 cm
+      noseWidth: 132
+      waistWidth: 84
+      tailWidth: 117.5
+      turnRadius: 13.6
+    - size: 173 cm
+      noseWidth: 134
+      waistWidth: 84.5
+      tailWidth: 118.8
+      turnRadius: 14.4
+      weightPerSki: 3344
+      notes: 官方单只重量，按此固定器套装配置记录；不要与裸板重量直接比较。
+    - size: 181 cm
+      noseWidth: 136
+      waistWidth: 85
+      tailWidth: 120.5
+      turnRadius: 15.2
+  geometryNotes: 已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替
+    BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
+  seasonEvidence: 官方商品页对应具体 SKU，但页面未直接标注销售雪季；档案年款沿用原整理结果，尚需同 SKU 季度目录确认。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.atomic.com/en-us/products/redster-q9-8-revoshock-s-i-12-gw-aa7468-202600；https://www.grip-walk.com/faq/
 images:
-  - url: "https://cdn.amersports.com/59174f3d-d998-49a3-ae2a-b49f00cdfb23/ATP_AASS03782_0_GHO_Redster_Q9.8_I12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=1350&quality=80&width=1800"
+  - url: "https://cdn.amersports.com/59174f3d-d998-49a3-ae2a-b49f00cdfb23/ATP_AASS0\
+      3782_0_GHO_Redster_Q9.8_I12_GW_FullImageWebOptimized.png?fit=bounds&forma\
+      t=auto&height=1350&quality=80&width=1800"
     kind: face
     alt: Atomic Redster Q9.8 Revoshock S 2026/27 官方雪板套装图
     source: Atomic 官方产品页（图片使用授权待核）

@@ -1,0 +1,88 @@
+{
+  "slug": "union-legacy-2027",
+  "price": "CAD 349.95",
+  "source": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:10.853Z",
+  "productName": "Union Legacy",
+  "productType": "Product",
+  "productUrl": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "11020400-BLK-S",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "CAD",
+      "url": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027?variant=48907803820287"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020400-BLK-M",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "CAD",
+      "url": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027?variant=48907803853055"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020400-BLK-L",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "CAD",
+      "url": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027?variant=48907803885823"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020400-WHT-S",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "CAD",
+      "url": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027?variant=48907803918591"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020400-WHT-M",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "CAD",
+      "url": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027?variant=48907803951359"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020400-WHT-L",
+      "availability": "http://schema.org/InStock",
+      "price": 349.95,
+      "priceCurrency": "CAD",
+      "url": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027?variant=48907803984127"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020400-B4C-S",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 349.95,
+      "priceCurrency": "CAD",
+      "url": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027?variant=48907804016895"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020400-B4C-M",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 349.95,
+      "priceCurrency": "CAD",
+      "url": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027?variant=48907804049663"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020400-B4C-L",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 349.95,
+      "priceCurrency": "CAD",
+      "url": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027?variant=48907804082431"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "40153101ddb2592aeaa5e4ffb827a58c398fd8d97eb3c8a8a24bb26f3f3dda3d",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "slug": "flux-xf-2026",
+  "price": "CNY 2177–2562",
+  "source": "https://flux-bindings.com/en/products/2526xf",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:43:00.693Z",
+  "productName": "XF",
+  "productType": "Product",
+  "productUrl": "https://flux-bindings.com/en/products/2526xf",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "F26XFXD",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944778363190"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFSD",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944755523894"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFMD",
+      "availability": "http://schema.org/InStock",
+      "price": 2177,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944755556662"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFST",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944755327286"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFMT",
+      "availability": "http://schema.org/InStock",
+      "price": 2177,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944755360054"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFLT",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944755392822"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFXN",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944778264886"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFSN",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715841846"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFMN",
+      "availability": "http://schema.org/InStock",
+      "price": 2177,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715874614"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFLN",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715907382"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFXM",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2305,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944778395958"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFSM",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944755622198"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFMM",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944755654966"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFXB",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944778166582"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F25XFSB",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715546934"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F25XFMB",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715579702"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F25XFLB",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715612470"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFXW",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944778199350"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F25XFSW",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715645238"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F25XFMW",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2305,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715678006"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F25XFLW",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715710774"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFSR",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715743542"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFMR",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715776310"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFLR",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944715809078"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFXY",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944778330422"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFSY",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944755425590"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFMY",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944755458358"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XFLY",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xf?variant=52944755491126"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "6f8bf1636cd5b971f7f69d8daaf36b1b3690361ca30d30686bd78f5aad9a1218",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

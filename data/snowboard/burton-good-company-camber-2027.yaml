@@ -32,16 +32,21 @@ specs:
     - freestyle
   warranty: 3
   sizeSpecs:
-    - {size: "135", waistWidth: 235, sidecutRadii: "6.4 m", stanceWidth: "455 mm"}
-    - {size: "140", waistWidth: 240, sidecutRadii: "6.8 m", stanceWidth: "480 mm"}
-    - {size: "145", waistWidth: 245, sidecutRadii: "7.1 m", stanceWidth: "505 mm"}
-    - {size: "148", waistWidth: 248, sidecutRadii: "7.3 m", stanceWidth: "530 mm"}
-    - {size: "152", waistWidth: 250, effectiveEdge: 1155, sidecutRadii: "7.6 m", stanceWidth: "530 mm"}
-    - {size: "155", waistWidth: 252, sidecutRadii: "7.8 m", stanceWidth: "560 mm"}
-    - {size: "159", waistWidth: 255, sidecutRadii: "8.1 m", stanceWidth: "560 mm"}
-    - {size: "155W", waistWidth: 260, sidecutRadii: "7.8 m", stanceWidth: "560 mm"}
-    - {size: "159W", waistWidth: 263, sidecutRadii: "8.1 m", stanceWidth: "560 mm"}
-    - {size: "162W", waistWidth: 268, sidecutRadii: "8.3 m", stanceWidth: "560 mm"}
+    - { size: "135", waistWidth: 235, sidecutRadii: "6.4 m", stanceWidth: "455 mm" }
+    - { size: "140", waistWidth: 240, sidecutRadii: "6.8 m", stanceWidth: "480 mm" }
+    - { size: "145", waistWidth: 245, sidecutRadii: "7.1 m", stanceWidth: "505 mm" }
+    - { size: "148", waistWidth: 248, sidecutRadii: "7.3 m", stanceWidth: "530 mm" }
+    - { size: "152", waistWidth: 250, effectiveEdge: 1155, sidecutRadii: "7.6 m", stanceWidth: "530 mm" }
+    - { size: "155", waistWidth: 252, sidecutRadii: "7.8 m", stanceWidth: "560 mm" }
+    - { size: "159", waistWidth: 255, sidecutRadii: "8.1 m", stanceWidth: "560 mm" }
+    - { size: "155W", waistWidth: 260, sidecutRadii: "7.8 m", stanceWidth: "560 mm" }
+    - { size: "159W", waistWidth: 263, sidecutRadii: "8.1 m", stanceWidth: "560 mm" }
+    - { size: "162W", waistWidth: 268, sidecutRadii: "8.3 m", stanceWidth: "560 mm" }
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 449.95
+  priceMarket: 原币 USD；来源商店 www.burton.com
+  priceSource: https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 images:
   - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359513A03_1.webp?v=1778421389"
     kind: face

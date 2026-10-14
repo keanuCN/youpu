@@ -1,0 +1,49 @@
+{
+  "capturedAt": "2026-10-12T06:20:42.228Z",
+  "target": {
+    "slug": "jones-hovercraft-2-0-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Hovercraft 2.0",
+    "year": 2027,
+    "url": "https://eu.jonessnowboards.com/products/hovercraft-20-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  "source": {
+    "url": "https://eu.jonessnowboards.com/products/hovercraft-20-snowboard",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://eu.jonessnowboards.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:19:30.507Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "observedSku": "J.26.SNU.HVC.XX.144.1",
+  "decision": "不回写 2027 seed：SKU 属于 2026，美国官网复查也显示季节冲突。",
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": null,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "usRecheckValidation": {
+    "identityMatch": true,
+    "seasonMatch": false,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": false,
+    "issues": [
+      {
+        "path": "source.season",
+        "message": "页面显式年份与目标 2027 不一致，不能把当前页面当作历史季节数据"
+      }
+    ]
+  }
+}

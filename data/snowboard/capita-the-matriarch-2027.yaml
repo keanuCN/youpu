@@ -25,6 +25,16 @@ specs:
   scenes:
     - all-mountain
     - powder
+  lengthOptions: 155 / 158 / 161 / 157W / 160W
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "155", effectiveEdge: 1158, waistWidth: 252, noseWidth: 297, tailWidth: 293, sidecutRadii: 8 m, stanceWidth: 559 mm（参考）, riderWeight: 130-190 lb / 59-86 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "158", effectiveEdge: 1180, waistWidth: 257, noseWidth: 300, tailWidth: 296, sidecutRadii: 8.1 m, stanceWidth: 559 mm（参考）, riderWeight: 140-200 lb / 63-90 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "161", effectiveEdge: 1203, waistWidth: 259, noseWidth: 303, tailWidth: 299, sidecutRadii: 8.2 m, stanceWidth: 584 mm（参考）, riderWeight: 150-210 lb / 68-95 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: 157W, effectiveEdge: 1173, waistWidth: 263, noseWidth: 306, tailWidth: 302, sidecutRadii: 8.0 m, stanceWidth: 559 mm（参考）, riderWeight: 140-200 lb / 63-90 kg, bootSize: US Men 10+ / EU 43+ }
+    - { size: 160W, effectiveEdge: 1195, waistWidth: 265, noseWidth: 309, tailWidth: 305, sidecutRadii: 8.1 m, stanceWidth: 584 mm（参考）, riderWeight: 150-210 lb / 68-95 kg, bootSize: US Men 10+ / EU 43+ }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 8.6
   response: 8.8
@@ -39,6 +49,6 @@ images:
     source: CAPiTA 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://capitasnowboarding.com/products/capita-the-matriarch-mens-snowboard-2027
 status: published

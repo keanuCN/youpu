@@ -26,6 +26,18 @@ specs:
     - all-mountain
     - powder
     - freestyle
+  lengthOptions: 142 / 146 / 150 / 154 / 158 / 162 / 166
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "142", weight: 2400, effectiveEdge: 1030, waistWidth: 248, setback: 20, contactLength: 894, noseLength: 338, tailLength: 188, noseWidth: 288, tailWidth: 278, frontFootWidth: 261, backFootWidth: 254, taper: 10, stanceWidth: 500 mm（参考） / 480 mm（居中）, riderWeight: 90-140 lbs. / 41-63 kg., bootSize: US 7-9 / EU 39.5-41.5 }
+    - { size: "146", weight: 2500, effectiveEdge: 1070, waistWidth: 251, setback: 20, contactLength: 928, noseLength: 341, tailLength: 191, noseWidth: 293, tailWidth: 283, frontFootWidth: 265, backFootWidth: 258, taper: 10, stanceWidth: 520 mm（参考） / 500 mm（居中）, riderWeight: 110-160 lbs. / 49-73 kg., bootSize: US 7-9 / EU 39.5-41.5 }
+    - { size: "150", weight: 2800, effectiveEdge: 1100, waistWidth: 254, setback: 20, contactLength: 962, noseLength: 344, tailLength: 194, noseWidth: 297, tailWidth: 287, frontFootWidth: 268, backFootWidth: 261, taper: 10, stanceWidth: 540 mm（参考） / 520 mm（居中）, riderWeight: 120-170 lbs. / 54-77 kg., bootSize: US 7-9 / EU 39.5-41.5 }
+    - { size: "154", weight: 3000, effectiveEdge: 1140, waistWidth: 257, setback: 20, contactLength: 996, noseLength: 347, tailLength: 197, noseWidth: 302, tailWidth: 292, frontFootWidth: 271, backFootWidth: 264, taper: 10, stanceWidth: 540 mm（参考） / 520 mm（居中）, riderWeight: 130-180 lbs. / 59-82 kg., bootSize: US 9-11 / EU 41.5-44.5 }
+    - { size: "158", weight: 3200, effectiveEdge: 1170, waistWidth: 260, setback: 20, contactLength: 1030, noseLength: 350, tailLength: 200, noseWidth: 306, tailWidth: 296, frontFootWidth: 274, backFootWidth: 267, taper: 10, stanceWidth: 560 mm（参考） / 540 mm（居中）, riderWeight: 150-200 lbs. / 67-91 kg., bootSize: US 9.5-11.5 / EU 42.5-45.5 }
+    - { size: "162", weight: 3400, effectiveEdge: 1200, waistWidth: 264, setback: 20, contactLength: 1062, noseLength: 354, tailLength: 204, noseWidth: 311, tailWidth: 301, frontFootWidth: 279, backFootWidth: 272, taper: 10, stanceWidth: 580 mm（参考） / 560 mm（居中）, riderWeight: 170-220+ lbs. / 77-100+ kg., bootSize: US 11 / EU 44.5 }
+    - { size: "166", weight: 3600, effectiveEdge: 1230, waistWidth: 268, setback: 20, contactLength: 1094, noseLength: 358, tailLength: 208, noseWidth: 317, tailWidth: 307, frontFootWidth: 283, backFootWidth: 276, taper: 10, stanceWidth: 600 mm（参考） / 580 mm（居中）, riderWeight: 170-220+ lbs. / 77-100+ kg., bootSize: US 11 / EU 44.5 }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 8.0
   response: 8.0
@@ -40,6 +52,6 @@ images:
     source: Jones 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://www.jonessnowboards.com/products/mind-expander-20-snowboard
 status: published

@@ -1,0 +1,592 @@
+{
+  "slug": "burton-ion-boa-2027",
+  "price": "USD 689.95",
+  "source": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:46:45.360Z",
+  "productName": "Men's Burton Ion BOA® Snowboard Boot",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791",
+  "hasVariant": [
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176997121#variant",
+      "@type": "Product",
+      "gtin": "197183153767",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176997121#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176997121"
+      },
+      "sku": "1857913AH2RG007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177029889#variant",
+      "@type": "Product",
+      "gtin": "197183153620",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177029889#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177029889"
+      },
+      "sku": "1857913AH2RG075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177062657#variant",
+      "@type": "Product",
+      "gtin": "197183153750",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177062657#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177062657"
+      },
+      "sku": "1857913AH2RG008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177095425#variant",
+      "@type": "Product",
+      "gtin": "197183153743",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177095425#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177095425"
+      },
+      "sku": "1857913AH2RG085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177128193#variant",
+      "@type": "Product",
+      "gtin": "197183153736",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177128193#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177128193"
+      },
+      "sku": "1857913AH2RG009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177160961#variant",
+      "@type": "Product",
+      "gtin": "197183153729",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177160961#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177160961"
+      },
+      "sku": "1857913AH2RG095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177193729#variant",
+      "@type": "Product",
+      "gtin": "197183153712",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177193729#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177193729"
+      },
+      "sku": "1857913AH2RG010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177226497#variant",
+      "@type": "Product",
+      "gtin": "197183153705",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177226497#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177226497"
+      },
+      "sku": "1857913AH2RG105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177259265#variant",
+      "@type": "Product",
+      "gtin": "197183153231",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177259265#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177259265"
+      },
+      "sku": "1857913AH2RG011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177292033#variant",
+      "@type": "Product",
+      "gtin": "197183153798",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177292033#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177292033"
+      },
+      "sku": "1857913AH2RG11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177324801#variant",
+      "@type": "Product",
+      "gtin": "197183153781",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177324801#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177324801"
+      },
+      "sku": "1857913AH2RG012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177357569#variant",
+      "@type": "Product",
+      "gtin": "197183153774",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Summit Taupe / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177357569#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755177357569"
+      },
+      "sku": "1857913AH2RG013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879165185#variant",
+      "@type": "Product",
+      "gtin": "197183386691",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879165185#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879165185"
+      },
+      "sku": "1857914E5CRG007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879197953#variant",
+      "@type": "Product",
+      "gtin": "197183387032",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879197953#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879197953"
+      },
+      "sku": "1857914E5CRG075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879230721#variant",
+      "@type": "Product",
+      "gtin": "197183386714",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879230721#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879230721"
+      },
+      "sku": "1857914E5CRG008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879263489#variant",
+      "@type": "Product",
+      "gtin": "197183387056",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879263489#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879263489"
+      },
+      "sku": "1857914E5CRG085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879296257#variant",
+      "@type": "Product",
+      "gtin": "197183386738",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879296257#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879296257"
+      },
+      "sku": "1857914E5CRG009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879329025#variant",
+      "@type": "Product",
+      "gtin": "197183386868",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879329025#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879329025"
+      },
+      "sku": "1857914E5CRG095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879361793#variant",
+      "@type": "Product",
+      "gtin": "197183387070",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879361793#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879361793"
+      },
+      "sku": "1857914E5CRG010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879394561#variant",
+      "@type": "Product",
+      "gtin": "197183386677",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879394561#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879394561"
+      },
+      "sku": "1857914E5CRG105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879427329#variant",
+      "@type": "Product",
+      "gtin": "197183387063",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879427329#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879427329"
+      },
+      "sku": "1857914E5CRG011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879460097#variant",
+      "@type": "Product",
+      "gtin": "197183385083",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879460097#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879460097"
+      },
+      "sku": "1857914E5CRG11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879492865#variant",
+      "@type": "Product",
+      "gtin": "197183384956",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879492865#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879492865"
+      },
+      "sku": "1857914E5CRG012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879525633#variant",
+      "@type": "Product",
+      "gtin": "197183384963",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914E5C_1.webp?v=1783620107&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Bear Hug Brown / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879525633#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879525633"
+      },
+      "sku": "1857914E5CRG013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176603905#variant",
+      "@type": "Product",
+      "gtin": "193177036269",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913A02_1.webp?v=1778423453&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176603905#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176603905"
+      },
+      "sku": "18579103001-7.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878804737#variant",
+      "@type": "Product",
+      "gtin": "197183384987",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914A02_1.webp?v=1790184459&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878804737#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878804737"
+      },
+      "sku": "1857914A02RG075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878837505#variant",
+      "@type": "Product",
+      "gtin": "197183384994",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914A02_1.webp?v=1790184459&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878837505#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878837505"
+      },
+      "sku": "1857914A02RG008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878870273#variant",
+      "@type": "Product",
+      "gtin": "197183385007",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914A02_1.webp?v=1790184459&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878870273#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878870273"
+      },
+      "sku": "1857914A02RG085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176734977#variant",
+      "@type": "Product",
+      "gtin": "193177036306",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913A02_1.webp?v=1778423453&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176734977#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176734977"
+      },
+      "sku": "18579103001-9.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878935809#variant",
+      "@type": "Product",
+      "gtin": "197183385069",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914A02_1.webp?v=1790184459&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878935809#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581878935809"
+      },
+      "sku": "1857914A02RG095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176800513#variant",
+      "@type": "Product",
+      "gtin": "193177036207",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913A02_1.webp?v=1778423453&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176800513#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176800513"
+      },
+      "sku": "18579103001-10"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879001345#variant",
+      "@type": "Product",
+      "gtin": "197183385052",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914A02_1.webp?v=1790184459&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879001345#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879001345"
+      },
+      "sku": "1857914A02RG105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176866049#variant",
+      "@type": "Product",
+      "gtin": "193177036221",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913A02_1.webp?v=1778423453&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176866049#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176866049"
+      },
+      "sku": "18579103001-11"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879066881#variant",
+      "@type": "Product",
+      "gtin": "197183385137",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857914A02_1.webp?v=1790184459&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879066881#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=49581879066881"
+      },
+      "sku": "1857914A02RG11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176931585#variant",
+      "@type": "Product",
+      "gtin": "193177036245",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913A02_1.webp?v=1778423453&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176931585#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176931585"
+      },
+      "sku": "18579103001-12"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176964353#variant",
+      "@type": "Product",
+      "gtin": "193177036252",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913A02_1.webp?v=1778423453&width=1920",
+      "name": "Men's Burton Ion BOA® Snowboard Boot - Black / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176964353#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "689.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791?variant=48755176964353"
+      },
+      "sku": "18579103001-13"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "59c181ae9223067a734344c9843a66cca76d100a273a3e3670bea4bd5edf72d6",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

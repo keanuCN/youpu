@@ -1,0 +1,88 @@
+{
+  "slug": "union-force-classic-2027",
+  "price": "USD 249.95",
+  "source": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:02.518Z",
+  "productName": "Union Force Classic",
+  "productType": "Product",
+  "productUrl": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "11010300-BLK-S",
+      "availability": "http://schema.org/InStock",
+      "price": 249.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027?variant=48907740250367"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010300-BLK-M",
+      "availability": "http://schema.org/InStock",
+      "price": 249.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027?variant=48907740283135"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010300-BLK-L",
+      "availability": "http://schema.org/InStock",
+      "price": 249.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027?variant=48907740315903"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010300-COS-S",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 249.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027?variant=48907740348671"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010300-COS-M",
+      "availability": "http://schema.org/InStock",
+      "price": 249.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027?variant=48907740381439"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010300-COS-L",
+      "availability": "http://schema.org/InStock",
+      "price": 249.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027?variant=48907740414207"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010300-WHT-S",
+      "availability": "http://schema.org/InStock",
+      "price": 249.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027?variant=48907740446975"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010300-WHT-M",
+      "availability": "http://schema.org/InStock",
+      "price": 249.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027?variant=48907740479743"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010300-WHT-L",
+      "availability": "http://schema.org/InStock",
+      "price": 249.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027?variant=48907740512511"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "6b588cd8bb5caeda371eb3db15c883954613cccc8556f7d7dce5c576f8ac9b29",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

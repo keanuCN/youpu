@@ -1,0 +1,472 @@
+{
+  "slug": "nidecker-kaon-plus-2026",
+  "price": "CHF 279.95",
+  "source": "https://eu.nidecker.com/products/kaon-plus",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:42:44.277Z",
+  "productName": "Kaon Plus",
+  "productType": "Product",
+  "productUrl": "https://eu.nidecker.com/products/kaon-plus",
+  "offers": [
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/products/kaon-plus?variant=43475632390237",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.KAP.BK.2S.1",
+      "gtin13": "7630949115744",
+      "availability": "https://schema.org/InStock",
+      "price": 279.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/products/kaon-plus?variant=43475632423005",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.KAP.WH.2S.1",
+      "gtin13": "7630949115782",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 279.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/products/kaon-plus?variant=43475632455773",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.KAP.BK.3M.1",
+      "gtin13": "7630949115751",
+      "availability": "https://schema.org/InStock",
+      "price": 279.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/products/kaon-plus?variant=43475632488541",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.KAP.WH.3M.1",
+      "gtin13": "7630949115799",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 279.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/products/kaon-plus?variant=43475632521309",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.KAP.BK.4L.1",
+      "gtin13": "7630949115768",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 279.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/products/kaon-plus?variant=43475632554077",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.KAP.WH.4L.1",
+      "gtin13": "7630949115805",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 279.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/products/kaon-plus?variant=43475632586845",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.KAP.BK.5XL.1",
+      "gtin13": "7630949115775",
+      "availability": "https://schema.org/InStock",
+      "price": 279.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/products/kaon-plus?variant=43475632619613",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.KAP.WH.5XL.1",
+      "gtin13": "7630949115812",
+      "availability": "https://schema.org/InStock",
+      "price": 279.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "4b92bd090db37e38c81d575179f4bc1f8459e71190474111bfd6fad313e594f0",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

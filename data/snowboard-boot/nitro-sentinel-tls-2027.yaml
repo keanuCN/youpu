@@ -16,6 +16,38 @@ specs:
   warmthFeatures: "Nitro 官方称 EVA 外底提供热隔离；未列反射式隔热膜"
   footbed: "Anatomical 人体工学鞋垫"
   sizeGuide: "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13"
+  sizeChart:
+    - { size: US 男 5, mondo: "23", usMen: "5", usWomen: "5.5", uk: "4", eu: "36", notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 5.5, mondo: "23.5", usMen: "5.5", usWomen: "6", uk: "4.5", eu: 36 ⅔, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 6, mondo: "24", usMen: "6", usWomen: "6.5", uk: "5", eu: 37 ⅓, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 6.5, mondo: "24.5", usMen: "6.5", usWomen: "7", uk: "5.5", eu: "38", notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 7, mondo: "25", usMen: "7", usWomen: "7.5", uk: "6", eu: 38 ⅔, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 7.5, mondo: "25.5", usMen: "7.5", usWomen: "8", uk: "6.5", eu: 39 ⅓, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 8, mondo: "26", usMen: "8", usWomen: "8.5", uk: "7", eu: "40", notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 8.5, mondo: "26.5", usMen: "8.5", usWomen: "9", uk: "7.5", eu: 40 ⅔, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 9, mondo: "27", usMen: "9", usWomen: "9.5", uk: "8", eu: 41 ⅓, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 9.5, mondo: "27.5", usMen: "9.5", usWomen: "10", uk: "8.5", eu: "42", notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 10, mondo: "28", usMen: "10", usWomen: "10.5", uk: "9", eu: 42 ⅔, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 10.5, mondo: "28.5", usMen: "10.5", usWomen: "11", uk: "9.5", eu: 43 ⅓, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 11, mondo: "29", usMen: "11", uk: "10", eu: "44", notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 11.5, mondo: "29.5", usMen: "11.5", uk: "10.5", eu: 44 ⅔, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 12, mondo: "30", usMen: "12", uk: "11", eu: 45 ⅓, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 12.5, mondo: "30.5", usMen: "12.5", uk: "11.5", eu: "46", notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 13, mondo: "31", usMen: "13", uk: "12", eu: 46 ⅔, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 13.5, mondo: "31.5", usMen: "13.5", uk: "12.5", eu: 47 ⅓, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 14, mondo: "32", usMen: "14", uk: "13", eu: "48", notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 14.5, mondo: "32.5", usMen: "14.5", uk: "13.5", eu: 48 ⅔, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+    - { size: US 男 15, mondo: "33", usMen: "15", uk: "14", eu: 49 ⅓, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
+  bindingCompatibility: 常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。
+  selectionNotes: 穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。
+  fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。
+  heatMolding: 官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。
+  compatibilitySources: https://www.nitrosnowboards.com/collections/boots-26-27/products/sentinel-tls-boots-1；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide
+  priceCheckedAt: 2026-10-12
+  officialPrice: EUR 279.9
+  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
+  priceSource: https://www.nitrosnowboards.com/products/sentinel-tls-boots-1
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/sentinel-tls-boots-1

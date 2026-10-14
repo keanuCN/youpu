@@ -9,6 +9,15 @@ specs:
   terrain: 雪道
   skierLevel: 入门至进阶
   bindingSetup: 常见雪板+固定器套装，按具体 SKU 核对
+  weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
+  geometryNotes: 官方 316485 页面只公开五个板长，没有逐长度几何；本轮仅补板长选项，不以 Easy Joy 非 R 版本规格替代。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
+    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
+  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.head.com/en_US/product/easy-joy-r-316485；https://www.grip-walk.com/faq/
+  lengthOptions: 143 / 148 / 153 / 158 / 163 cm
 images:
   - url: "https://cdn-mdb.head.com/CDN3/D/316485/1/683x911/easy-joy-r.webp"
     kind: face

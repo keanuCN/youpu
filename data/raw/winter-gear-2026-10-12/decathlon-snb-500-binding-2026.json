@@ -1,0 +1,76 @@
+{
+  "capturedAt": "2026-10-12T06:42:29.620Z",
+  "target": {
+    "slug": "decathlon-snb-500-binding-2026",
+    "category": "snowboard-binding",
+    "brand": "decathlon",
+    "model": "SNB 500",
+    "year": 2026,
+    "url": "https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.decathlon.ca/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:15.829Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": null,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Snowboard Bindings, SNB 500 | Decathlon",
+    "canonicalUrl": "https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654",
+    "tables": [
+      {
+        "headers": [
+          "Chassis: 70.0% Polyamide, 30.0% Glass fiber"
+        ],
+        "rows": [
+          [
+            "Strap: 3.0% Ethylene vinyl acetate, 97.0% Thermoplastic polyurethane"
+          ],
+          [
+            "Buckles: 100.0% Aluminium"
+          ],
+          [
+            "Screws: 100.0% Stainless steel"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Chassis: 70.0% Polyamide, 30.0% Glass fiber"
+        ],
+        "rows": [
+          [
+            "Strap: 3.0% Ethylene vinyl acetate, 97.0% Thermoplastic polyurethane"
+          ],
+          [
+            "Buckles: 100.0% Aluminium"
+          ],
+          [
+            "Screws: 100.0% Stainless steel"
+          ]
+        ]
+      }
+    ]
+  },
+  "review": {
+    "rows": [],
+    "sources": "https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654",
+    "good": true
+  }
+}

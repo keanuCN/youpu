@@ -11,9 +11,15 @@ specs:
   flexFeel: medium
   entrySystem: strap
   mountingSystem: Universal Disc；兼容主要雪板安装系统
-  bindingSizeGuide: Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 /
-    女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 /
-    女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。
+  bindingSizeGuide: Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。
+  bootCompatibility: 常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://www.salomon.com/en-us/product/hologram-li5326
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 359.95
+  priceMarket: 原币 USD；来源商店 www.salomon.com
+  priceSource: https://www.salomon.com/en-us/product/hologram-li5326
+  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: https://cdn.dam.salomon.com/9daa7dca-1d3d-4022-b448-b360010834ff/L49289300/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12
     kind: face

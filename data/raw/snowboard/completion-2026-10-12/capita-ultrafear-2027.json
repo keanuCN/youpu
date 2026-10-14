@@ -1,0 +1,599 @@
+{
+  "capturedAt": "2026-10-12T06:21:39.645Z",
+  "target": {
+    "slug": "capita-ultrafear-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Ultrafear",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-ultrafear-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "153"
+  },
+  "source": {
+    "url": "https://capitasnowboarding.com/products/capita-ultrafear-mens-snowboard-2027",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://capitasnowboarding.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:19:23.543Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "匹配到 Allow 规则",
+      "matchedRule": "ALLOW /（第 19 行）"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "page": {
+    "title": "CAPiTA Ultrafear Snowboard 2027 CAPiTA Snowboards | NA",
+    "canonicalUrl": "https://capitasnowboarding.com/products/capita-ultrafear-mens-snowboard-2027",
+    "productIdentity": [
+      {
+        "name": "ULTRAFEAR",
+        "sku": "21040301-MSC-149",
+        "url": "https://capitasnowboarding.com/products/capita-ultrafear-mens-snowboard-2027"
+      }
+    ],
+    "tables": [
+      {
+        "caption": "variant specs",
+        "headers": [
+          "Board size (cm)",
+          "149",
+          "151",
+          "153",
+          "155",
+          "157",
+          "153W",
+          "155W",
+          "157W"
+        ],
+        "rows": [
+          [
+            "Effective Edge (mm)",
+            "1151",
+            "1166",
+            "1183",
+            "1199",
+            "1214",
+            "1183",
+            "1199",
+            "1214"
+          ],
+          [
+            "Waist",
+            "25.1",
+            "25.2",
+            "25.4",
+            "25.5",
+            "25.6",
+            "26.4",
+            "26.5",
+            "26.6"
+          ],
+          [
+            "Nose / Tail",
+            "29.3 / 29.3",
+            "29.5 / 29.5",
+            "29.7 / 29.7",
+            "29.9 / 29.9",
+            "30.1 / 30.1",
+            "30.7 / 30.7",
+            "30.9 / 30.9",
+            "31.1 / 31.1"
+          ],
+          [
+            "Taper",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Sidecut",
+            "7.6",
+            "7.7",
+            "7.8",
+            "7.9",
+            "8.0",
+            "7.8",
+            "7.9",
+            "8.0"
+          ],
+          [
+            "Ref. Stance (cm/in)",
+            "50.8 / 20.0",
+            "53.3 / 21.0",
+            "53.3 / 21.0",
+            "55.9 / 22.0",
+            "55.9 / 22.0",
+            "53.3 / 21.0",
+            "55.9 / 22.0",
+            "55.9 / 22.0"
+          ],
+          [
+            "Suggested Weight (lb/kg)",
+            "90-160 / 40-72",
+            "100-170 / 45-77",
+            "130-180 / 59-81",
+            "140-190 / 63-86",
+            "150-200 / 68-90",
+            "140-190 / 63-86",
+            "150-200 / 68-90",
+            "160-210 / 72-95"
+          ],
+          [
+            "Suggested Boot Size",
+            "US Men 6–9.5 / EU 39–43",
+            "US Men 6–9.5 / EU 39–43",
+            "US Men 8–10 / EU 41–43",
+            "US Men 8–10 / EU 41–43",
+            "US Men 8–10 / EU 41–43",
+            "US 10+ / EU 43+",
+            "US 10+ / EU 43+",
+            "US 10+ / EU 43+"
+          ]
+        ]
+      }
+    ]
+  },
+  "adapter": {
+    "name": "snowboard/capita",
+    "normalizedSpecs": {
+      "length": 153,
+      "effectiveEdge": 1183,
+      "waistWidth": 254,
+      "sidecut": 7.8
+    },
+    "perSize": [
+      {
+        "size": "149",
+        "length": 149,
+        "effectiveEdge": 1151,
+        "waistWidth": 251,
+        "sidecut": 7.6,
+        "sourceValues": [
+          {
+            "label": "Effective Edge (mm)",
+            "value": "1151"
+          },
+          {
+            "label": "Waist",
+            "value": "25.1"
+          },
+          {
+            "label": "Nose / Tail",
+            "value": "29.3 / 29.3"
+          },
+          {
+            "label": "Taper",
+            "value": "0"
+          },
+          {
+            "label": "Sidecut",
+            "value": "7.6"
+          },
+          {
+            "label": "Ref. Stance (cm/in)",
+            "value": "50.8 / 20.0"
+          },
+          {
+            "label": "Suggested Weight (lb/kg)",
+            "value": "90-160 / 40-72"
+          },
+          {
+            "label": "Suggested Boot Size",
+            "value": "US Men 6–9.5 / EU 39–43"
+          }
+        ]
+      },
+      {
+        "size": "151",
+        "length": 151,
+        "effectiveEdge": 1166,
+        "waistWidth": 252,
+        "sidecut": 7.7,
+        "sourceValues": [
+          {
+            "label": "Effective Edge (mm)",
+            "value": "1166"
+          },
+          {
+            "label": "Waist",
+            "value": "25.2"
+          },
+          {
+            "label": "Nose / Tail",
+            "value": "29.5 / 29.5"
+          },
+          {
+            "label": "Taper",
+            "value": "0"
+          },
+          {
+            "label": "Sidecut",
+            "value": "7.7"
+          },
+          {
+            "label": "Ref. Stance (cm/in)",
+            "value": "53.3 / 21.0"
+          },
+          {
+            "label": "Suggested Weight (lb/kg)",
+            "value": "100-170 / 45-77"
+          },
+          {
+            "label": "Suggested Boot Size",
+            "value": "US Men 6–9.5 / EU 39–43"
+          }
+        ]
+      },
+      {
+        "size": "153",
+        "length": 153,
+        "effectiveEdge": 1183,
+        "waistWidth": 254,
+        "sidecut": 7.8,
+        "sourceValues": [
+          {
+            "label": "Effective Edge (mm)",
+            "value": "1183"
+          },
+          {
+            "label": "Waist",
+            "value": "25.4"
+          },
+          {
+            "label": "Nose / Tail",
+            "value": "29.7 / 29.7"
+          },
+          {
+            "label": "Taper",
+            "value": "0"
+          },
+          {
+            "label": "Sidecut",
+            "value": "7.8"
+          },
+          {
+            "label": "Ref. Stance (cm/in)",
+            "value": "53.3 / 21.0"
+          },
+          {
+            "label": "Suggested Weight (lb/kg)",
+            "value": "130-180 / 59-81"
+          },
+          {
+            "label": "Suggested Boot Size",
+            "value": "US Men 8–10 / EU 41–43"
+          }
+        ]
+      },
+      {
+        "size": "155",
+        "length": 155,
+        "effectiveEdge": 1199,
+        "waistWidth": 255,
+        "sidecut": 7.9,
+        "sourceValues": [
+          {
+            "label": "Effective Edge (mm)",
+            "value": "1199"
+          },
+          {
+            "label": "Waist",
+            "value": "25.5"
+          },
+          {
+            "label": "Nose / Tail",
+            "value": "29.9 / 29.9"
+          },
+          {
+            "label": "Taper",
+            "value": "0"
+          },
+          {
+            "label": "Sidecut",
+            "value": "7.9"
+          },
+          {
+            "label": "Ref. Stance (cm/in)",
+            "value": "55.9 / 22.0"
+          },
+          {
+            "label": "Suggested Weight (lb/kg)",
+            "value": "140-190 / 63-86"
+          },
+          {
+            "label": "Suggested Boot Size",
+            "value": "US Men 8–10 / EU 41–43"
+          }
+        ]
+      },
+      {
+        "size": "157",
+        "length": 157,
+        "effectiveEdge": 1214,
+        "waistWidth": 256,
+        "sidecut": 8,
+        "sourceValues": [
+          {
+            "label": "Effective Edge (mm)",
+            "value": "1214"
+          },
+          {
+            "label": "Waist",
+            "value": "25.6"
+          },
+          {
+            "label": "Nose / Tail",
+            "value": "30.1 / 30.1"
+          },
+          {
+            "label": "Taper",
+            "value": "0"
+          },
+          {
+            "label": "Sidecut",
+            "value": "8.0"
+          },
+          {
+            "label": "Ref. Stance (cm/in)",
+            "value": "55.9 / 22.0"
+          },
+          {
+            "label": "Suggested Weight (lb/kg)",
+            "value": "150-200 / 68-90"
+          },
+          {
+            "label": "Suggested Boot Size",
+            "value": "US Men 8–10 / EU 41–43"
+          }
+        ]
+      },
+      {
+        "size": "153W",
+        "length": 153,
+        "effectiveEdge": 1183,
+        "waistWidth": 264,
+        "sidecut": 7.8,
+        "sourceValues": [
+          {
+            "label": "Effective Edge (mm)",
+            "value": "1183"
+          },
+          {
+            "label": "Waist",
+            "value": "26.4"
+          },
+          {
+            "label": "Nose / Tail",
+            "value": "30.7 / 30.7"
+          },
+          {
+            "label": "Taper",
+            "value": "0"
+          },
+          {
+            "label": "Sidecut",
+            "value": "7.8"
+          },
+          {
+            "label": "Ref. Stance (cm/in)",
+            "value": "53.3 / 21.0"
+          },
+          {
+            "label": "Suggested Weight (lb/kg)",
+            "value": "140-190 / 63-86"
+          },
+          {
+            "label": "Suggested Boot Size",
+            "value": "US 10+ / EU 43+"
+          }
+        ]
+      },
+      {
+        "size": "155W",
+        "length": 155,
+        "effectiveEdge": 1199,
+        "waistWidth": 265,
+        "sidecut": 7.9,
+        "sourceValues": [
+          {
+            "label": "Effective Edge (mm)",
+            "value": "1199"
+          },
+          {
+            "label": "Waist",
+            "value": "26.5"
+          },
+          {
+            "label": "Nose / Tail",
+            "value": "30.9 / 30.9"
+          },
+          {
+            "label": "Taper",
+            "value": "0"
+          },
+          {
+            "label": "Sidecut",
+            "value": "7.9"
+          },
+          {
+            "label": "Ref. Stance (cm/in)",
+            "value": "55.9 / 22.0"
+          },
+          {
+            "label": "Suggested Weight (lb/kg)",
+            "value": "150-200 / 68-90"
+          },
+          {
+            "label": "Suggested Boot Size",
+            "value": "US 10+ / EU 43+"
+          }
+        ]
+      },
+      {
+        "size": "157W",
+        "length": 157,
+        "effectiveEdge": 1214,
+        "waistWidth": 266,
+        "sidecut": 8,
+        "sourceValues": [
+          {
+            "label": "Effective Edge (mm)",
+            "value": "1214"
+          },
+          {
+            "label": "Waist",
+            "value": "26.6"
+          },
+          {
+            "label": "Nose / Tail",
+            "value": "31.1 / 31.1"
+          },
+          {
+            "label": "Taper",
+            "value": "0"
+          },
+          {
+            "label": "Sidecut",
+            "value": "8.0"
+          },
+          {
+            "label": "Ref. Stance (cm/in)",
+            "value": "55.9 / 22.0"
+          },
+          {
+            "label": "Suggested Weight (lb/kg)",
+            "value": "160-210 / 72-95"
+          },
+          {
+            "label": "Suggested Boot Size",
+            "value": "US 10+ / EU 43+"
+          }
+        ]
+      }
+    ],
+    "sourceNotes": [
+      "找到 CAPiTA 尺寸表 8 行。",
+      "Effective Edge 直接使用官方 mm；Waist 由官方 cm 转换为 schema 所需 mm；官方 Suggested Weight 是体重区间，不冒充整板重量。",
+      "已按代表尺寸 153 生成部分 specs；仍需人工复核季节和宽版标记。"
+    ]
+  },
+  "originalValidation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "review": {
+    "seasonEvidence": "https://capitasnowboarding.com/products/capita-ultrafear-mens-snowboard-2027",
+    "representativeSize": "153",
+    "unitPolicy": [
+      "Waist、有效刃长、板头尾宽、站距单位为 mm；板重单位为 g。",
+      "Running Length 独立记录，不冒充 Effective Edge。",
+      "多段侧切保留官方整串原文，不折成首个半径。",
+      "RIDE 的 entry/focus/exit 顺序保留；- 表示厂商未提供。",
+      "Nitro、RIDE setback 保留官方正负号。",
+      "CAPiTA Suggested Boot Size 缩写按原文保存，不推断其尺码体系。",
+      "CAPiTA 无单位的 Taper 原值留在证据表中，不猜测 mm/cm。"
+    ],
+    "normalizedSizeSpecs": [
+      {
+        "size": "149",
+        "effectiveEdge": 1151,
+        "waistWidth": 251,
+        "noseWidth": 293,
+        "tailWidth": 293,
+        "sidecutRadii": "7.6 m",
+        "stanceWidth": "508 mm（参考）",
+        "riderWeight": "90-160 lb / 40-72 kg",
+        "bootSize": "US Men 6–9.5 / EU 39–43"
+      },
+      {
+        "size": "151",
+        "effectiveEdge": 1166,
+        "waistWidth": 252,
+        "noseWidth": 295,
+        "tailWidth": 295,
+        "sidecutRadii": "7.7 m",
+        "stanceWidth": "533 mm（参考）",
+        "riderWeight": "100-170 lb / 45-77 kg",
+        "bootSize": "US Men 6–9.5 / EU 39–43"
+      },
+      {
+        "size": "153",
+        "effectiveEdge": 1183,
+        "waistWidth": 254,
+        "noseWidth": 297,
+        "tailWidth": 297,
+        "sidecutRadii": "7.8 m",
+        "stanceWidth": "533 mm（参考）",
+        "riderWeight": "130-180 lb / 59-81 kg",
+        "bootSize": "US Men 8–10 / EU 41–43"
+      },
+      {
+        "size": "155",
+        "effectiveEdge": 1199,
+        "waistWidth": 255,
+        "noseWidth": 299,
+        "tailWidth": 299,
+        "sidecutRadii": "7.9 m",
+        "stanceWidth": "559 mm（参考）",
+        "riderWeight": "140-190 lb / 63-86 kg",
+        "bootSize": "US Men 8–10 / EU 41–43"
+      },
+      {
+        "size": "157",
+        "effectiveEdge": 1214,
+        "waistWidth": 256,
+        "noseWidth": 301,
+        "tailWidth": 301,
+        "sidecutRadii": "8.0 m",
+        "stanceWidth": "559 mm（参考）",
+        "riderWeight": "150-200 lb / 68-90 kg",
+        "bootSize": "US Men 8–10 / EU 41–43"
+      },
+      {
+        "size": "153W",
+        "effectiveEdge": 1183,
+        "waistWidth": 264,
+        "noseWidth": 307,
+        "tailWidth": 307,
+        "sidecutRadii": "7.8 m",
+        "stanceWidth": "533 mm（参考）",
+        "riderWeight": "140-190 lb / 63-86 kg",
+        "bootSize": "US 10+ / EU 43+"
+      },
+      {
+        "size": "155W",
+        "effectiveEdge": 1199,
+        "waistWidth": 265,
+        "noseWidth": 309,
+        "tailWidth": 309,
+        "sidecutRadii": "7.9 m",
+        "stanceWidth": "559 mm（参考）",
+        "riderWeight": "150-200 lb / 68-90 kg",
+        "bootSize": "US 10+ / EU 43+"
+      },
+      {
+        "size": "157W",
+        "effectiveEdge": 1214,
+        "waistWidth": 266,
+        "noseWidth": 311,
+        "tailWidth": 311,
+        "sidecutRadii": "8.0 m",
+        "stanceWidth": "559 mm（参考）",
+        "riderWeight": "160-210 lb / 72-95 kg",
+        "bootSize": "US 10+ / EU 43+"
+      }
+    ]
+  }
+}

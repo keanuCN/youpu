@@ -1,0 +1,57 @@
+{
+  "seedFile": "data/skis/rossignol-hero-elite-lt-ti-2027.yaml",
+  "retrievedAt": "2026-10-13",
+  "source": "https://www.rossignol.com/us-en/hero-elite-lt-ti-alpine-skis-RAPSE01000.html",
+  "partial": false,
+  "rows": [
+    {
+      "size": "167 cm",
+      "noseWidth": 120,
+      "waistWidth": 71,
+      "tailWidth": 102,
+      "turnRadius": 15
+    },
+    {
+      "size": "172 cm",
+      "noseWidth": 120,
+      "waistWidth": 71,
+      "tailWidth": 102,
+      "turnRadius": 16
+    },
+    {
+      "size": "177 cm",
+      "noseWidth": 120,
+      "waistWidth": 71,
+      "tailWidth": 102,
+      "turnRadius": 17
+    },
+    {
+      "size": "182 cm",
+      "noseWidth": 120,
+      "waistWidth": 71,
+      "tailWidth": 102,
+      "turnRadius": 18
+    }
+  ],
+  "verifiedFields": {
+    "core": "PEFC 认证山毛榉木板芯",
+    "construction": "Rectangular Full Sidewall；Full Titanal Layer",
+    "profile": "Tip Rocker + 传统 Camber",
+    "technologies": "Power Tip；Predictive Sidecut；LCT；V-Profile；Sintered HD Base；Premium Hardtop",
+    "skierLevel": "进阶至专家",
+    "bindingCompatibility": "可选 SPX 14 KONECT GW B80：成人 Alpine ISO 5355 A / GripWalk ISO 23223 A，BSL 260–375 mm。仅适用于此固定器选项；系统板不能任意替换为其他轨道固定器。",
+    "seasonEvidence": "官方 RAPSE01000 页面明确标注 NEW COLLECTION FW2627。"
+  },
+  "limitations": "几何已逐长度核对，重量配置口径未确认",
+  "weightRaw": {
+    "label": "Ski weight (kg/pair)",
+    "values": [
+      2.2,
+      2.3,
+      2.3,
+      2.4
+    ],
+    "mapped": false,
+    "reason": "单只/一对或含固定器口径尚未确认"
+  }
+}

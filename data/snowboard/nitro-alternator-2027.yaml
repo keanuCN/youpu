@@ -19,7 +19,7 @@ price:
 specs:
   length: 157
   waistWidth: 254
-  stanceSetback: 15
+  stanceSetback: -15
   profile: Trüe Camber
   profileFamily: camber
   shape: Directional
@@ -31,6 +31,16 @@ specs:
     - all-mountain
     - freestyle
     - powder
+  lengthOptions: 154 / 157 / 160 / 162
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "154", waistWidth: 252, runningLength: 1090, setback: -15, noseWidth: 296, tailWidth: 291, sidecutRadii: 10.3 / 6.6 / 10.3 m, stanceWidth: 48-60 cm, riderWeight: 55-75 kg }
+    - { size: "157", waistWidth: 254, runningLength: 1110, setback: -15, noseWidth: 298, tailWidth: 293, sidecutRadii: 10.8 / 6.8 / 10.8 m, stanceWidth: 48-60 cm, riderWeight: 60-80 kg }
+    - { size: "160", waistWidth: 256, runningLength: 1140, setback: -15, noseWidth: 300, tailWidth: 295, sidecutRadii: 11.0 / 7.3 / 11.0 m, stanceWidth: 50-62 cm, riderWeight: 65-85 kg }
+    - { size: "162", waistWidth: 264, runningLength: 1140, setback: -15, noseWidth: 308, tailWidth: 304, sidecutRadii: 11.0 / 7.3 / 11.0 m, stanceWidth: 50-62 cm, riderWeight: 70+ kg }
+  sidecutRadii: 10.8 / 6.8 / 10.8 m
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
   - url: "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/11SB11012-101-157_Alternator_Product-1.jpg?v=1779104369&width=985"
     kind: face

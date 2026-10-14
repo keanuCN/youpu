@@ -9,7 +9,7 @@ specs:
   entrySystem: rear-entry
   flexFeel: stiff
   mountingSystem: "Nidecker Offset Multi-Disk；兼容四孔安装与 Burton Channel"
-  bootCompatibility: "Drop IN 后入式快穿，官方称适配任意品牌雪鞋，不需专用靴"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "官方男款 US 码：M 5.5–8 / L 8.5–10.5 / XL 11–13"
   baseplateMaterial: "Nylon+ Auto 玻纤增强尼龙底盘（30% 玻纤/70% 尼龙）"
   ankleStrap: "Exo-Frame S Hybrid 单件 TPU 低轮廓脚踝带，轻量并便于鞋靴滑入"
@@ -19,6 +19,18 @@ specs:
   highbackAdjustment: "后仰高背触发 Drop IN 踩入机构与 Active Strap，前倾角调节"
   cushioning: "BankBeds 2.5° 倾斜接触面；Slip-N-Grip 降低鞋底滑入摩擦"
   warranty: "Nidecker 官方 2+1 年保修"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://www.nidecker.com/products/lt-supermatic-2026
+  sizeChart:
+    - { size: S, usMen: 4 - 5.5, usWomen: 5.5 - 7, eu: 35.5 - 37.5, uk: 3 - 4.5, mondo: 22 - 23.5 }
+    - { size: M, usMen: 5.5 - 8, usWomen: 7 - 9.5, eu: 37.5 - 41, uk: 4.5 - 7, mondo: 23.5 - 26 }
+    - { size: L, usMen: 8.5 - 10.5, usWomen: 10 - 11, eu: 41.5 - 44, uk: 7.5 - 9.5, mondo: 26.5 - 28.5 }
+    - { size: XL, usMen: 11 - 13, eu: 44.5 - 47, uk: 10 - 12, mondo: 29 - 31 }
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 479.95
+  priceMarket: 原币 USD；来源商店 www.nidecker.com
+  priceSource: https://www.nidecker.com/en-int/products/lt-supermatic-2026
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: "https://www.nidecker.com/cdn/shop/files/N.26.BNU.SPL.GN-LT_Supermatic_Olive-1.webp?v=1786458347&width=1946"
     kind: face

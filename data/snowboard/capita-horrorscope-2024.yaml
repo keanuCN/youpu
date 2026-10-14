@@ -37,6 +37,8 @@ specs:
   scenes:
     - beginner
     - freestyle
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
   - url: https://cdn.shopify.com/s/files/1/0510/1705/6454/files/pathreverse57.jpg?v=1750863390
     kind: face

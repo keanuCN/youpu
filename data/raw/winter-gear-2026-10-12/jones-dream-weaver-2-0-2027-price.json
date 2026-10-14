@@ -1,0 +1,415 @@
+{
+  "slug": "jones-dream-weaver-2-0-2027",
+  "price": "USD 549.95",
+  "source": "https://www.jonessnowboards.com/en-int/products/womens-dream-weaver-20-snowboard",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T07:05:15.656Z",
+  "productName": "Women's Dream Weaver 2.0 Snowboard",
+  "productType": "Product",
+  "productUrl": "https://www.jonessnowboards.com/en-int/products/womens-dream-weaver-20-snowboard",
+  "offers": [
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/womens-dream-weaver-20-snowboard?variant=49196800245912",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNW.DRC.000.139.1",
+      "gtin13": "7630680889102",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 549.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/womens-dream-weaver-20-snowboard?variant=49196800278680",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNW.DRC.000.142.1",
+      "gtin13": "7630680889119",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 549.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/womens-dream-weaver-20-snowboard?variant=49196800311448",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNW.DRC.000.145.1",
+      "gtin13": "7630680889126",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 549.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/womens-dream-weaver-20-snowboard?variant=49196800344216",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNW.DRC.000.148.1",
+      "gtin13": "7630680889133",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 549.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/womens-dream-weaver-20-snowboard?variant=49196800376984",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNW.DRC.000.151.1",
+      "gtin13": "7630680889140",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 549.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/womens-dream-weaver-20-snowboard?variant=49196800409752",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNW.DRC.000.154.1",
+      "gtin13": "7630680889157",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 549.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/womens-dream-weaver-20-snowboard?variant=49196800442520",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNW.DRC.000.156.1",
+      "gtin13": "7630680889164",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 549.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "4ca3ea1d2b79d248068c04df5c11f376b9807c973cca75ca0d1d785df2f53b48",
+    "normalizedSpecHash": "1a7b3ba2faf947526eebcc158ed1a6f38dd5336a99663861b13137964e2a2ece"
+  }
+}

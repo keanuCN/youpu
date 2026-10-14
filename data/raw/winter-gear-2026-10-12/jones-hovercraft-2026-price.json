@@ -1,0 +1,358 @@
+{
+  "slug": "jones-hovercraft-2026",
+  "price": "USD 649.95",
+  "source": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T07:01:32.023Z",
+  "productName": "Hovercraft 2.0 Snowboard",
+  "productType": "Product",
+  "productUrl": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard",
+  "offers": [
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard?variant=46716348334232",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.26.SNU.HVC.XX.144.1",
+      "gtin13": "7630949113207",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 649.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard?variant=46716348367000",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.26.SNU.HVC.XX.148.1",
+      "gtin13": "7630949113214",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 649.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard?variant=46716348465304",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.26.SNU.HVC.XX.152.1",
+      "gtin13": "7630949113221",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 649.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard?variant=46716348498072",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.26.SNU.HVC.XX.156.1",
+      "gtin13": "7630949113238",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 649.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard?variant=46716348399768",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.26.SNU.HVC.XX.160.1",
+      "gtin13": "7630949113245",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 649.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard?variant=46716348432536",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.26.SNU.HVC.XX.164.1",
+      "gtin13": "7630949113252",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 649.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "43b2561b12b666d5dfe2c07619b556de1f9692cd4713d1f9832f048b1e8390a6",
+    "normalizedSpecHash": "cd8af6d1235253227d3b585ab1317bd8dd27a2b33de087af69c64ce303597fa7"
+  }
+}

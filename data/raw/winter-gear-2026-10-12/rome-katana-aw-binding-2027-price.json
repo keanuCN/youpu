@@ -1,0 +1,48 @@
+{
+  "slug": "rome-katana-aw-binding-2027",
+  "price": "USD 399.95",
+  "source": "https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:07.209Z",
+  "productName": "Katana AW Men's Snowboard Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings",
+  "hasVariant": [
+    {
+      "@id": "/products/rome-katana-aw-2627-mens-snowboard-bindings?variant=47796358578307#variant",
+      "@type": "Product",
+      "gtin": "8721164508189",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-katana-aw-c2-sage-binding-1-1782373162882.jpg?v=1787636963&width=1920",
+      "name": "Katana AW Men's Snowboard Bindings - Sage / M/L",
+      "offers": {
+        "@id": "/products/rome-katana-aw-2627-mens-snowboard-bindings?variant=47796358578307#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "399.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings?variant=47796358578307"
+      },
+      "sku": "RO.27.20.KATA.ML.GN"
+    },
+    {
+      "@id": "/products/rome-katana-aw-2627-mens-snowboard-bindings?variant=47796358611075#variant",
+      "@type": "Product",
+      "gtin": "8721164508172",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-katana-aw-c2-sage-binding-1-1782373162882.jpg?v=1787636963&width=1920",
+      "name": "Katana AW Men's Snowboard Bindings - Sage / L/XL",
+      "offers": {
+        "@id": "/products/rome-katana-aw-2627-mens-snowboard-bindings?variant=47796358611075#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "399.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings?variant=47796358611075"
+      },
+      "sku": "RO.27.20.KATA.LXL.GN"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "8ce875459e3ffd0e447f2e76c29c68c4cd0f983b0eb3e83257dc225f55e0d570",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

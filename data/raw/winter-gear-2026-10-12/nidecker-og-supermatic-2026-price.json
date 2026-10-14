@@ -1,0 +1,700 @@
+{
+  "slug": "nidecker-og-supermatic-2026",
+  "price": "EUR 399.95",
+  "source": "https://eu.nidecker.com/en-int/products/og-supermatic-2026",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:05.575Z",
+  "productName": "OG Supermatic® 2026",
+  "productType": "Product",
+  "productUrl": "https://eu.nidecker.com/en-int/products/og-supermatic-2026",
+  "offers": [
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521474822237",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.BN.2S.1",
+      "gtin13": "7630949115249",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521474986077",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.BN.3M.1",
+      "gtin13": "7630949115256",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521475149917",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.BN.4L.1",
+      "gtin13": "7630949115263",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521475313757",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.BN.5XL.1",
+      "gtin13": "7630949115270",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521474855005",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.BU.2S.1",
+      "gtin13": "7630949115201",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521475018845",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.BU.3M.1",
+      "gtin13": "7630949115218",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521475182685",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.BU.4L.1",
+      "gtin13": "7630949115225",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521475346525",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.BU.5XL.1",
+      "gtin13": "7630949115232",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521474887773",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.VT.2S.1",
+      "gtin13": "7630949115287",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521475051613",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.VT.3M.1",
+      "gtin13": "7630949115294",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521475248221",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.VT.4L.1",
+      "gtin13": "7630949115300",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.nidecker.com/en-int/products/og-supermatic-2026?variant=43521475379293",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "N.26.BNU.SPM.VT.5XL.1",
+      "gtin13": "7630949115317",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "EUR"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.nidecker.com/en-int/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Nidecker EU",
+        "url": "https://eu.nidecker.com"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "7b18d237d4a2680ce3175f3a209d5de3ed0fc63d05deba271009e3ebb9f73ce7",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -13,7 +13,6 @@ specs:
   length: 156
   effectiveEdge: 1211
   waistWidth: 258
-  sidecut: 7.96
   stanceSetback: 0
   profile: RESORT V2 Directional + Flat Kick Tech
   profileFamily: hybrid
@@ -25,6 +24,19 @@ specs:
   scenes:
     - freestyle
     - all-mountain
+  lengthOptions: 152 / 154 / 156 / 158 / 160 / 155W / 158W
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "152", effectiveEdge: 1180, waistWidth: 250, noseWidth: 296, tailWidth: 296, sidecutRadii: 7.73/3/-1.5/3/7.73 m, stanceWidth: 533 mm（参考）, riderWeight: 110-170 lb / 49-77 kg, bootSize: US Men 6–9.5 / EU 39–43 }
+    - { size: "154", effectiveEdge: 1196, waistWidth: 255, noseWidth: 300, tailWidth: 300, sidecutRadii: 7.90/3/-1.5/3/7.90 m, stanceWidth: 533 mm（参考）, riderWeight: 120-180 lb / 54-81 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "156", effectiveEdge: 1211, waistWidth: 258, noseWidth: 304, tailWidth: 304, sidecutRadii: 7.96/3/-1.5/3/7.96 m, stanceWidth: 559 mm（参考）, riderWeight: 130-190 lb / 59-86 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "158", effectiveEdge: 1227, waistWidth: 260, noseWidth: 308, tailWidth: 308, sidecutRadii: 8.06/3/-1.5/3/8.06 m, stanceWidth: 559 mm（参考）, riderWeight: 140-200 lb / 63-90 kg, bootSize: US 10+ / EU 43+ }
+    - { size: "160", effectiveEdge: 1242, waistWidth: 262, noseWidth: 312, tailWidth: 312, sidecutRadii: 8.16/3/-1.5/3/8.16 m, stanceWidth: 584 mm（参考）, riderWeight: 150-210 lb / 68-95 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 155W, effectiveEdge: 1204, waistWidth: 261, noseWidth: 309, tailWidth: 309, sidecutRadii: 7.93/3/-1.5/3/7.93 m, stanceWidth: 559 mm（参考）, riderWeight: 130-190 lb / 59-86 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 158W, effectiveEdge: 1227, waistWidth: 265, noseWidth: 313, tailWidth: 313, sidecutRadii: 8.06/3/-1.5/3/8.06 m, stanceWidth: 559 mm（参考）, riderWeight: 140-200 lb / 63-90 kg, bootSize: US 10+ / EU 43+ }
+  sidecutRadii: 7.96/3/-1.5/3/7.96 m
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 7.1
   response: 7.4
@@ -39,6 +51,6 @@ images:
     source: CAPiTA 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://capitasnowboarding.com/products/capita-sb-resort-twin-mens-snowboard-2027
 status: published

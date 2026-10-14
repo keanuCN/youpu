@@ -9,6 +9,14 @@ specs:
   terrain: 全地域 / 雪道
   skierLevel: 入门至初中级
   bindingSetup: 雪板+固定器或套装，按具体 SKU 核对
+  weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
+  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
+    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
+  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://boutique.sommets.com/en/products/head-skis-shape-v2；https://www.grip-walk.com/faq/
 images:
   - url: "https://d2j6dbq0eux0bg.cloudfront.net/images/118454263/4956321347.png"
     kind: face

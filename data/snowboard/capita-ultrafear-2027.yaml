@@ -13,7 +13,7 @@ specs:
   length: 153
   effectiveEdge: 1183
   waistWidth: 254
-  sidecut: 8.26
+  sidecut: 7.8
   stanceSetback: 0
   profile: Resort V1 + Flat Kick Tech
   profileFamily: hybrid
@@ -24,6 +24,19 @@ specs:
   flex: 5.5
   scenes:
     - freestyle
+  lengthOptions: 149 / 151 / 153 / 155 / 157 / 153W / 155W / 157W
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "149", effectiveEdge: 1151, waistWidth: 251, noseWidth: 293, tailWidth: 293, sidecutRadii: 7.6 m, stanceWidth: 508 mm（参考）, riderWeight: 90-160 lb / 40-72 kg, bootSize: US Men 6–9.5 / EU 39–43 }
+    - { size: "151", effectiveEdge: 1166, waistWidth: 252, noseWidth: 295, tailWidth: 295, sidecutRadii: 7.7 m, stanceWidth: 533 mm（参考）, riderWeight: 100-170 lb / 45-77 kg, bootSize: US Men 6–9.5 / EU 39–43 }
+    - { size: "153", effectiveEdge: 1183, waistWidth: 254, noseWidth: 297, tailWidth: 297, sidecutRadii: 7.8 m, stanceWidth: 533 mm（参考）, riderWeight: 130-180 lb / 59-81 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "155", effectiveEdge: 1199, waistWidth: 255, noseWidth: 299, tailWidth: 299, sidecutRadii: 7.9 m, stanceWidth: 559 mm（参考）, riderWeight: 140-190 lb / 63-86 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "157", effectiveEdge: 1214, waistWidth: 256, noseWidth: 301, tailWidth: 301, sidecutRadii: 8.0 m, stanceWidth: 559 mm（参考）, riderWeight: 150-200 lb / 68-90 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: 153W, effectiveEdge: 1183, waistWidth: 264, noseWidth: 307, tailWidth: 307, sidecutRadii: 7.8 m, stanceWidth: 533 mm（参考）, riderWeight: 140-190 lb / 63-86 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 155W, effectiveEdge: 1199, waistWidth: 265, noseWidth: 309, tailWidth: 309, sidecutRadii: 7.9 m, stanceWidth: 559 mm（参考）, riderWeight: 150-200 lb / 68-90 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 157W, effectiveEdge: 1214, waistWidth: 266, noseWidth: 311, tailWidth: 311, sidecutRadii: 8.0 m, stanceWidth: 559 mm（参考）, riderWeight: 160-210 lb / 72-95 kg, bootSize: US 10+ / EU 43+ }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 6.8
   response: 7.1
@@ -38,6 +51,6 @@ images:
     source: CAPiTA 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://capitasnowboarding.com/products/capita-ultrafear-mens-snowboard-2027
 status: published

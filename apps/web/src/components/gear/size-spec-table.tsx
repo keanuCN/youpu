@@ -10,11 +10,23 @@ type Column = {
 const COLUMNS: Column[] = [
   { key: "effectiveEdge", label: "有效边刃", unit: "mm" },
   { key: "contactLength", label: "接触长度", unit: "mm" },
+  { key: "runningLength", label: "滑行长度（Running Length）", unit: "mm" },
   { key: "waistWidth", label: "板腰宽", aliases: ["waistWidthMm"], unit: "mm" },
   { key: "noseWidth", label: "板头宽", aliases: ["noseWidthMm"], unit: "mm" },
   { key: "tailWidth", label: "板尾宽", aliases: ["tailWidthMm"], unit: "mm" },
+  { key: "noseLength", label: "板头长度", unit: "mm" },
+  { key: "tailLength", label: "板尾长度", unit: "mm" },
+  { key: "frontFootWidth", label: "前脚处板宽", unit: "mm" },
+  { key: "backFootWidth", label: "后脚处板宽", unit: "mm" },
+  { key: "taper", label: "板头尾宽差", unit: "mm" },
   { key: "sidecutRadii", label: "侧切半径", aliases: ["sidecutRadiusM"], unit: "m" },
+  { key: "turnRadius", label: "转弯半径", unit: "m" },
+  { key: "weightPerSki", label: "单只重量", unit: "g" },
+  { key: "weightPerPair", label: "一对重量", unit: "g" },
+  { key: "notes", label: "参数说明" },
   { key: "stanceWidth", label: "参考站距", unit: "mm" },
+  { key: "stanceMin", label: "最小站距", unit: "mm" },
+  { key: "stanceMax", label: "最大站距", unit: "mm" },
   { key: "setback", label: "站位后移", unit: "mm" },
   { key: "camber", label: "拱高", unit: "mm" },
   { key: "weight", label: "板重", aliases: ["boardWeightKg", "weightKg"], unit: "g" },
@@ -22,6 +34,8 @@ const COLUMNS: Column[] = [
   { key: "edge", label: "钢刃" },
   { key: "insertQty", label: "固定器孔位" },
   { key: "stiffness", label: "硬度说明" },
+  { key: "riderWeight", label: "建议骑手体重" },
+  { key: "bootSize", label: "建议雪鞋尺码" },
 ];
 
 function findCell(row: GearSizeSpec, column: Column): { value: GearSizeSpecValue; unit?: string } | undefined {
@@ -39,7 +53,11 @@ function findCell(row: GearSizeSpec, column: Column): { value: GearSizeSpecValue
 }
 
 function displayValue(value: GearSizeSpecValue, unit?: string): string {
-  if (typeof value === "string") return unit && !value.includes(unit) ? `${value} ${unit}` : value;
+  if (typeof value === "string") {
+    // Some official charts retain cm/kg in their text; keep that unit intact.
+    const hasUnit = /(?:\d\s*|\b)(?:mm|cm|m|kg|g)\b/i.test(value);
+    return unit && !hasUnit && !value.includes(unit) ? `${value} ${unit}` : value;
+  }
   if (typeof value === "number") return unit ? `${value} ${unit}` : String(value);
   if (typeof value === "boolean") return value ? "是" : "否";
   if (value === null) return "—";

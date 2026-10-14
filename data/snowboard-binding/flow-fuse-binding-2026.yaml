@@ -10,8 +10,12 @@ specs:
   flexFeel: mid-stiff
   entrySystem: rear-entry
   mountingSystem: Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对
-  bindingSizeGuide: Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU
-    41.5–44.5；XL 11.5–15 / EU 45–49.5。
+  bindingSizeGuide: Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。
+  bootCompatibility: 常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 本轮官方型号证据未通过复核，现有尺寸不视为重新核实；详见待核记录。
+  compatibilitySources: https://www.nidecker.com/products/flow-fuse-2026
+  priceCheckedAt: 2026-10-12
+  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
 images:
   - url: https://cdn.shopify.com/s/files/1/0674/9582/1405/files/High-_0024_FLOW_FUSE_WHITE_fusion.jpg?v=1788232288&width=800
     kind: face

@@ -3,9 +3,9 @@ node_modules/
 .pnpm-store/
 .worktrees/
 
-# build outputs
+# build outputs（distDir 可用 NEXT_DIST_DIR 改名，如 .next-dev / .next-youpu-domain）
 dist/
-.next/
+.next*/
 out/
 *.tsbuildinfo
 

@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-13",
+  "pages": [
+    {
+      "slug": "rossignol-forza-50-cam-2026",
+      "status": 200,
+      "hasSizeTable": true,
+      "hasCoverageNote": true
+    },
+    {
+      "slug": "rossignol-hero-elite-lt-ti-2027",
+      "status": 200,
+      "hasSizeTable": true,
+      "hasCoverageNote": true
+    },
+    {
+      "slug": "rossignol-hero-master-lt-r22-2027",
+      "status": 200,
+      "hasSizeTable": true,
+      "hasCoverageNote": true
+    },
+    {
+      "slug": "rossignol-forza-40-ca-xpress-2027",
+      "status": 200,
+      "hasSizeTable": true,
+      "hasCoverageNote": true
+    },
+    {
+      "slug": "head-supershape-e-magnum-2026",
+      "status": 200,
+      "hasSizeTable": true,
+      "hasCoverageNote": true
+    },
+    {
+      "slug": "head-e-sl-pro-2026",
+      "status": 200,
+      "hasSizeTable": true,
+      "hasCoverageNote": true
+    }
+  ]
+}

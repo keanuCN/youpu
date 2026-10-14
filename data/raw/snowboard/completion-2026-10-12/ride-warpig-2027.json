@@ -1,0 +1,564 @@
+{
+  "capturedAt": "2026-10-12T06:21:17.481Z",
+  "target": {
+    "slug": "ride-warpig-2027",
+    "category": "snowboard",
+    "brand": "ride",
+    "model": "WARPIG",
+    "year": 2027,
+    "url": "https://ridesnowboards.com/en-us/p/warpig-snowboard-rd261857",
+    "mode": "cheerio",
+    "representativeSize": "154"
+  },
+  "source": {
+    "url": "https://ridesnowboards.com/en-us/p/warpig-snowboard-rd261857",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://ridesnowboards.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:19:46.873Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "page": {
+    "title": "RIDE WARPIG Snowboard 2027 | RIDE Snowboards",
+    "canonicalUrl": "https://ridesnowboards.com/en-cn/p/warpig-snowboard-rd261857",
+    "productIdentity": [],
+    "tables": [
+      {
+        "headers": [
+          "Size",
+          "Eff-Edge",
+          "Waist width",
+          "Sidecut entry radius",
+          "Sidecut focus radius",
+          "Sidecut exit radius",
+          "Tip width",
+          "Tail width",
+          "Insert Set Back",
+          "Insert Set Back",
+          "Ref. Stance",
+          "Ref. Stance",
+          "Rider weight",
+          "Rider weight"
+        ],
+        "rows": [
+          [
+            "(cm)",
+            "(mm)",
+            "(mm)",
+            "(m)",
+            "(m)",
+            "(m)",
+            "(mm)",
+            "(mm)",
+            "(inches)",
+            "(mm)",
+            "(inches)",
+            "(mm)",
+            "(lbs)",
+            "(kg)"
+          ],
+          [
+            "X-SMALL (142)",
+            "1044",
+            "250",
+            "4.6",
+            "-",
+            "5.6",
+            "301",
+            "291",
+            "0",
+            "0",
+            "19",
+            "483",
+            "60 - 160",
+            "27 - 73"
+          ],
+          [
+            "SMALL (148)",
+            "1095",
+            "260",
+            "5.1",
+            "-",
+            "6.2",
+            "311",
+            "301",
+            "0",
+            "0",
+            "21",
+            "533",
+            "100 - 205",
+            "45 - 93"
+          ],
+          [
+            "MEDIUM (151)",
+            "1121",
+            "265",
+            "5.4",
+            "-",
+            "6.5",
+            "316",
+            "306",
+            "0",
+            "0",
+            "22",
+            "559",
+            "130 - 210",
+            "59 - 95"
+          ],
+          [
+            "LARGE (154)",
+            "1146",
+            "270",
+            "5.6",
+            "-",
+            "6.9",
+            "321",
+            "311",
+            "0",
+            "0",
+            "22",
+            "559",
+            "140 - 220+",
+            "64 - 100+"
+          ],
+          [
+            "X-LARGE (158)",
+            "1171",
+            "277",
+            "5.9",
+            "-",
+            "7.2",
+            "328",
+            "318",
+            "0",
+            "0",
+            "23",
+            "584",
+            "170 - 220+",
+            "77 - 100+"
+          ]
+        ]
+      }
+    ]
+  },
+  "adapter": {
+    "name": "snowboard/ride",
+    "normalizedSpecs": {},
+    "perSize": [
+      {
+        "size": "X-SMALL (142)",
+        "length": 142,
+        "effectiveEdge": 1044,
+        "waistWidth": 250,
+        "stanceSetback": 0,
+        "sourceValues": [
+          {
+            "label": "Size",
+            "value": "X-SMALL (142)"
+          },
+          {
+            "label": "Eff-Edge",
+            "value": "1044"
+          },
+          {
+            "label": "Waist width",
+            "value": "250"
+          },
+          {
+            "label": "Sidecut entry radius",
+            "value": "4.6"
+          },
+          {
+            "label": "Sidecut focus radius",
+            "value": "-"
+          },
+          {
+            "label": "Sidecut exit radius",
+            "value": "5.6"
+          },
+          {
+            "label": "Tip width",
+            "value": "301"
+          },
+          {
+            "label": "Tail width",
+            "value": "291"
+          },
+          {
+            "label": "Insert Set Back",
+            "value": "0"
+          },
+          {
+            "label": "Insert Set Back",
+            "value": "0"
+          },
+          {
+            "label": "Ref. Stance",
+            "value": "19"
+          },
+          {
+            "label": "Ref. Stance",
+            "value": "483"
+          },
+          {
+            "label": "Rider weight",
+            "value": "60 - 160"
+          },
+          {
+            "label": "Rider weight",
+            "value": "27 - 73"
+          }
+        ]
+      },
+      {
+        "size": "SMALL (148)",
+        "length": 148,
+        "effectiveEdge": 1095,
+        "waistWidth": 260,
+        "stanceSetback": 0,
+        "sourceValues": [
+          {
+            "label": "Size",
+            "value": "SMALL (148)"
+          },
+          {
+            "label": "Eff-Edge",
+            "value": "1095"
+          },
+          {
+            "label": "Waist width",
+            "value": "260"
+          },
+          {
+            "label": "Sidecut entry radius",
+            "value": "5.1"
+          },
+          {
+            "label": "Sidecut focus radius",
+            "value": "-"
+          },
+          {
+            "label": "Sidecut exit radius",
+            "value": "6.2"
+          },
+          {
+            "label": "Tip width",
+            "value": "311"
+          },
+          {
+            "label": "Tail width",
+            "value": "301"
+          },
+          {
+            "label": "Insert Set Back",
+            "value": "0"
+          },
+          {
+            "label": "Insert Set Back",
+            "value": "0"
+          },
+          {
+            "label": "Ref. Stance",
+            "value": "21"
+          },
+          {
+            "label": "Ref. Stance",
+            "value": "533"
+          },
+          {
+            "label": "Rider weight",
+            "value": "100 - 205"
+          },
+          {
+            "label": "Rider weight",
+            "value": "45 - 93"
+          }
+        ]
+      },
+      {
+        "size": "MEDIUM (151)",
+        "length": 151,
+        "effectiveEdge": 1121,
+        "waistWidth": 265,
+        "stanceSetback": 0,
+        "sourceValues": [
+          {
+            "label": "Size",
+            "value": "MEDIUM (151)"
+          },
+          {
+            "label": "Eff-Edge",
+            "value": "1121"
+          },
+          {
+            "label": "Waist width",
+            "value": "265"
+          },
+          {
+            "label": "Sidecut entry radius",
+            "value": "5.4"
+          },
+          {
+            "label": "Sidecut focus radius",
+            "value": "-"
+          },
+          {
+            "label": "Sidecut exit radius",
+            "value": "6.5"
+          },
+          {
+            "label": "Tip width",
+            "value": "316"
+          },
+          {
+            "label": "Tail width",
+            "value": "306"
+          },
+          {
+            "label": "Insert Set Back",
+            "value": "0"
+          },
+          {
+            "label": "Insert Set Back",
+            "value": "0"
+          },
+          {
+            "label": "Ref. Stance",
+            "value": "22"
+          },
+          {
+            "label": "Ref. Stance",
+            "value": "559"
+          },
+          {
+            "label": "Rider weight",
+            "value": "130 - 210"
+          },
+          {
+            "label": "Rider weight",
+            "value": "59 - 95"
+          }
+        ]
+      },
+      {
+        "size": "LARGE (154)",
+        "length": 154,
+        "effectiveEdge": 1146,
+        "waistWidth": 270,
+        "stanceSetback": 0,
+        "sourceValues": [
+          {
+            "label": "Size",
+            "value": "LARGE (154)"
+          },
+          {
+            "label": "Eff-Edge",
+            "value": "1146"
+          },
+          {
+            "label": "Waist width",
+            "value": "270"
+          },
+          {
+            "label": "Sidecut entry radius",
+            "value": "5.6"
+          },
+          {
+            "label": "Sidecut focus radius",
+            "value": "-"
+          },
+          {
+            "label": "Sidecut exit radius",
+            "value": "6.9"
+          },
+          {
+            "label": "Tip width",
+            "value": "321"
+          },
+          {
+            "label": "Tail width",
+            "value": "311"
+          },
+          {
+            "label": "Insert Set Back",
+            "value": "0"
+          },
+          {
+            "label": "Insert Set Back",
+            "value": "0"
+          },
+          {
+            "label": "Ref. Stance",
+            "value": "22"
+          },
+          {
+            "label": "Ref. Stance",
+            "value": "559"
+          },
+          {
+            "label": "Rider weight",
+            "value": "140 - 220+"
+          },
+          {
+            "label": "Rider weight",
+            "value": "64 - 100+"
+          }
+        ]
+      },
+      {
+        "size": "X-LARGE (158)",
+        "length": 158,
+        "effectiveEdge": 1171,
+        "waistWidth": 277,
+        "stanceSetback": 0,
+        "sourceValues": [
+          {
+            "label": "Size",
+            "value": "X-LARGE (158)"
+          },
+          {
+            "label": "Eff-Edge",
+            "value": "1171"
+          },
+          {
+            "label": "Waist width",
+            "value": "277"
+          },
+          {
+            "label": "Sidecut entry radius",
+            "value": "5.9"
+          },
+          {
+            "label": "Sidecut focus radius",
+            "value": "-"
+          },
+          {
+            "label": "Sidecut exit radius",
+            "value": "7.2"
+          },
+          {
+            "label": "Tip width",
+            "value": "328"
+          },
+          {
+            "label": "Tail width",
+            "value": "318"
+          },
+          {
+            "label": "Insert Set Back",
+            "value": "0"
+          },
+          {
+            "label": "Insert Set Back",
+            "value": "0"
+          },
+          {
+            "label": "Ref. Stance",
+            "value": "23"
+          },
+          {
+            "label": "Ref. Stance",
+            "value": "584"
+          },
+          {
+            "label": "Rider weight",
+            "value": "170 - 220+"
+          },
+          {
+            "label": "Rider weight",
+            "value": "77 - 100+"
+          }
+        ]
+      }
+    ],
+    "sourceNotes": [
+      "找到 RIDE 尺寸表 5 个尺寸。",
+      "Eff-Edge、Waist width、Insert Set Back 使用官方 mm；首行单位说明已保留在 sourceValues。",
+      "官方 Sidecut 为 entry / focus / exit 三段半径，完整原文保留，不压成单一 schema 数值。",
+      "官方尺寸表未找到代表尺寸 154，不生成 specs。"
+    ]
+  },
+  "originalValidation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "review": {
+    "seasonEvidence": "https://ridesnowboards.com/en-cn/p/warpig-snowboard-rd261857",
+    "representativeSize": "LARGE (154)",
+    "unitPolicy": [
+      "Waist、有效刃长、板头尾宽、站距单位为 mm；板重单位为 g。",
+      "Running Length 独立记录，不冒充 Effective Edge。",
+      "多段侧切保留官方整串原文，不折成首个半径。",
+      "RIDE 的 entry/focus/exit 顺序保留；- 表示厂商未提供。",
+      "Nitro、RIDE setback 保留官方正负号。",
+      "CAPiTA Suggested Boot Size 缩写按原文保存，不推断其尺码体系。",
+      "CAPiTA 无单位的 Taper 原值留在证据表中，不猜测 mm/cm。"
+    ],
+    "normalizedSizeSpecs": [
+      {
+        "size": "X-SMALL (142)",
+        "effectiveEdge": 1044,
+        "waistWidth": 250,
+        "setback": 0,
+        "noseWidth": 301,
+        "tailWidth": 291,
+        "stanceWidth": "483 mm",
+        "riderWeight": "27 - 73 kg",
+        "sidecutRadii": "4.6 / - / 5.6 m（entry / focus / exit；- 表示未提供）"
+      },
+      {
+        "size": "SMALL (148)",
+        "effectiveEdge": 1095,
+        "waistWidth": 260,
+        "setback": 0,
+        "noseWidth": 311,
+        "tailWidth": 301,
+        "stanceWidth": "533 mm",
+        "riderWeight": "45 - 93 kg",
+        "sidecutRadii": "5.1 / - / 6.2 m（entry / focus / exit；- 表示未提供）"
+      },
+      {
+        "size": "MEDIUM (151)",
+        "effectiveEdge": 1121,
+        "waistWidth": 265,
+        "setback": 0,
+        "noseWidth": 316,
+        "tailWidth": 306,
+        "stanceWidth": "559 mm",
+        "riderWeight": "59 - 95 kg",
+        "sidecutRadii": "5.4 / - / 6.5 m（entry / focus / exit；- 表示未提供）"
+      },
+      {
+        "size": "LARGE (154)",
+        "effectiveEdge": 1146,
+        "waistWidth": 270,
+        "setback": 0,
+        "noseWidth": 321,
+        "tailWidth": 311,
+        "stanceWidth": "559 mm",
+        "riderWeight": "64 - 100+ kg",
+        "sidecutRadii": "5.6 / - / 6.9 m（entry / focus / exit；- 表示未提供）"
+      },
+      {
+        "size": "X-LARGE (158)",
+        "effectiveEdge": 1171,
+        "waistWidth": 277,
+        "setback": 0,
+        "noseWidth": 328,
+        "tailWidth": 318,
+        "stanceWidth": "584 mm",
+        "riderWeight": "77 - 100+ kg",
+        "sidecutRadii": "5.9 / - / 7.2 m（entry / focus / exit；- 表示未提供）"
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "target": "nitro-beast-2026",
+  "capturedAt": "2026-10-12T07:01:38.331Z",
+  "source": [
+    "https://www.nitrosnowboards.com/products/beast-snowboard"
+  ],
+  "reviewedAt": "2026-10-12",
+  "sizeSpecs": [
+    {
+      "size": "151mw",
+      "waistWidth": 248,
+      "runningLength": 1110,
+      "noseWidth": 290,
+      "tailWidth": 290,
+      "riderWeight": "50-70 kg",
+      "stanceWidth": "46-58 cm",
+      "sidecutRadii": "7.3 m",
+      "setback": 0
+    },
+    {
+      "size": "155mw",
+      "waistWidth": 253,
+      "runningLength": 1150,
+      "noseWidth": 295,
+      "tailWidth": 295,
+      "riderWeight": "55-75 kg",
+      "stanceWidth": "48-60 cm",
+      "sidecutRadii": "7.6 m",
+      "setback": 0
+    },
+    {
+      "size": "158mw",
+      "waistWidth": 258,
+      "runningLength": 1170,
+      "noseWidth": 300,
+      "tailWidth": 300,
+      "riderWeight": "60-80 kg",
+      "stanceWidth": "50-62 cm",
+      "sidecutRadii": "8 m",
+      "setback": 0
+    },
+    {
+      "size": "162mw",
+      "waistWidth": 262,
+      "runningLength": 1210,
+      "noseWidth": 304,
+      "tailWidth": 304,
+      "riderWeight": "60-80 kg",
+      "stanceWidth": "50-62 cm",
+      "sidecutRadii": "8 m",
+      "setback": 0
+    }
+  ],
+  "notes": "2026 官方逐码表保留 mw 标记；未随意指定代表尺寸。"
+}

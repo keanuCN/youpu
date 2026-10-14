@@ -4,7 +4,8 @@ brand: atomic
 model: Bent Chetler 120
 year: 2026
 title: Atomic Bent Chetler 120 2025/26
-one_liner: Atomic 粉雪自由滑旗舰型号，120 mm 板腰搭配 Powder Rocker 30/40/30 与 HRZN 3D；184 cm 单只重量 1800 g。
+one_liner: Atomic 粉雪自由滑旗舰型号，120 mm 板腰搭配 Powder Rocker 30/40/30 与 HRZN 3D；184 cm
+  单只重量 1800 g。
 price:
   min: 7998
   max: 7998
@@ -14,7 +15,8 @@ specs:
   waistWidth: 120
   turnRadius: 19
   turnRadiusReferenceLength: 184 cm
-  sidecutDimensions: "176: 142-120-133 mm / 18 m；184: 143-120-134 mm / 19 m；192: 144-120-135 mm / 20 m"
+  sidecutDimensions: "176: 142-120-133 mm / 18 m；184: 143-120-134 mm / 19 m；192:
+    144-120-135 mm / 20 m"
   profile: Powder Rocker 30/40/30（板头、板尾摇臂，脚下反拱）
   core: Light Woodcore（杨木）
   construction: Dura Cap Sidewall
@@ -26,6 +28,27 @@ specs:
   terrain: 粉雪 / 全山地自由滑
   skierLevel: 进阶至专家
   bindingSetup: 裸板，不含固定器
+  weightBasis: 现有重量仅对应档案所列参考长度；逐长度重量及是否含固定器需进一步核对，不能当作所有尺码的通用重量。
+  geometryNotes: 官方日本 25/26 页面列出 176/184/192 cm 对应 18/19/20 m 半径，并明确 184 cm 为
+    143-120-134 mm；其他长度的板头/板尾宽不推算。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
+    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。
+  seasonEvidence: Atomic 日本 2526 官方自由滑专题对应 2025/26 雪季。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://atomicsnow.jp/pages/2526-freeride-skiandboots；https://www.atomic.com/en-us/products/bent-chetler-120-aa7364-202600；https://www.grip-walk.com/faq/
+  sizeSpecs:
+    - size: 176 cm
+      turnRadius: 18
+      notes: 官方日本 25/26 页面仅给出此长度的半径，未给出板头/板尾宽。
+    - size: 184 cm
+      turnRadius: 19
+      noseWidth: 143
+      waistWidth: 120
+      tailWidth: 134
+    - size: 192 cm
+      turnRadius: 20
+      notes: 官方日本 25/26 页面仅给出此长度的半径，未给出板头/板尾宽。
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/products/bent-chetler-120-aa7364-202600

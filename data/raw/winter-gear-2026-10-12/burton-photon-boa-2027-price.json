@@ -1,0 +1,2704 @@
+{
+  "slug": "burton-photon-boa-2027",
+  "price": "USD 479.95",
+  "source": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:47:36.870Z",
+  "productName": "Men's Burton Photon BOA® Snowboard Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861",
+  "hasVariant": [
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871169793#variant",
+      "@type": "Product",
+      "gtin": "193177922708",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871169793#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871169793"
+      },
+      "sku": "20685103400-7.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871202561#variant",
+      "@type": "Product",
+      "gtin": "193177922715",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871202561#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871202561"
+      },
+      "sku": "20685103400-7.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871235329#variant",
+      "@type": "Product",
+      "gtin": "193177922722",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871235329#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871235329"
+      },
+      "sku": "20685103400-8.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871268097#variant",
+      "@type": "Product",
+      "gtin": "193177922739",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871268097#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871268097"
+      },
+      "sku": "20685103400-8.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871300865#variant",
+      "@type": "Product",
+      "gtin": "193177922746",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871300865#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871300865"
+      },
+      "sku": "20685103400-9.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871333633#variant",
+      "@type": "Product",
+      "gtin": "193177922753",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871333633#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871333633"
+      },
+      "sku": "20685103400-9.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871366401#variant",
+      "@type": "Product",
+      "gtin": "193177922623",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871366401#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871366401"
+      },
+      "sku": "20685103400-10"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871399169#variant",
+      "@type": "Product",
+      "gtin": "193177922630",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871399169#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871399169"
+      },
+      "sku": "20685103400-105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871431937#variant",
+      "@type": "Product",
+      "gtin": "193177922647",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871431937#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871431937"
+      },
+      "sku": "20685103400-11"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871464705#variant",
+      "@type": "Product",
+      "gtin": "193177922654",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871464705#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871464705"
+      },
+      "sku": "20685103400-115"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871497473#variant",
+      "@type": "Product",
+      "gtin": "193177922661",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871497473#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871497473"
+      },
+      "sku": "20685103400-12"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871530241#variant",
+      "@type": "Product",
+      "gtin": "193177922678",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871530241#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871530241"
+      },
+      "sku": "20685103400-13"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871563009#variant",
+      "@type": "Product",
+      "gtin": "193177922685",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871563009#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871563009"
+      },
+      "sku": "20685103400-14"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871595777#variant",
+      "@type": "Product",
+      "gtin": "193177922692",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Wide / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871595777#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581871595777"
+      },
+      "sku": "20685103400-15"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151962369#variant",
+      "@type": "Product",
+      "gtin": "193177921749",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151962369#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151962369"
+      },
+      "sku": "15086109400-7.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151995137#variant",
+      "@type": "Product",
+      "gtin": "193177921756",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151995137#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151995137"
+      },
+      "sku": "15086109400-7.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152027905#variant",
+      "@type": "Product",
+      "gtin": "193177921763",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152027905#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152027905"
+      },
+      "sku": "15086109400-8.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152060673#variant",
+      "@type": "Product",
+      "gtin": "193177921770",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152060673#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152060673"
+      },
+      "sku": "15086109400-8.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152093441#variant",
+      "@type": "Product",
+      "gtin": "193177921787",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152093441#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152093441"
+      },
+      "sku": "15086109400-9.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152126209#variant",
+      "@type": "Product",
+      "gtin": "193177921794",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152126209#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152126209"
+      },
+      "sku": "15086109400-9.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152158977#variant",
+      "@type": "Product",
+      "gtin": "193177921664",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152158977#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152158977"
+      },
+      "sku": "15086109400-10"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152191745#variant",
+      "@type": "Product",
+      "gtin": "193177921671",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152191745#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152191745"
+      },
+      "sku": "15086109400-105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152224513#variant",
+      "@type": "Product",
+      "gtin": "193177921688",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152224513#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152224513"
+      },
+      "sku": "15086109400-11"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152257281#variant",
+      "@type": "Product",
+      "gtin": "193177921695",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152257281#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152257281"
+      },
+      "sku": "15086109400-115"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152290049#variant",
+      "@type": "Product",
+      "gtin": "193177921701",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152290049#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152290049"
+      },
+      "sku": "15086109400-12"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152322817#variant",
+      "@type": "Product",
+      "gtin": "193177921718",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152322817#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152322817"
+      },
+      "sku": "15086109400-13"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152355585#variant",
+      "@type": "Product",
+      "gtin": "193177921725",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152355585#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152355585"
+      },
+      "sku": "15086109400-14"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152388353#variant",
+      "@type": "Product",
+      "gtin": "193177921732",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508619AUA_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Nightfall / Deep Emerald / Regular / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152388353#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755152388353"
+      },
+      "sku": "15086109400-15"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873004801#variant",
+      "@type": "Product",
+      "gtin": "197183373240",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873004801#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873004801"
+      },
+      "sku": "1508617E7MWD007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873037569#variant",
+      "@type": "Product",
+      "gtin": "197183373103",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873037569#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873037569"
+      },
+      "sku": "1508617E7MWD075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873070337#variant",
+      "@type": "Product",
+      "gtin": "197183373110",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873070337#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873070337"
+      },
+      "sku": "1508617E7MWD008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873103105#variant",
+      "@type": "Product",
+      "gtin": "197183373127",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873103105#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873103105"
+      },
+      "sku": "1508617E7MWD085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873135873#variant",
+      "@type": "Product",
+      "gtin": "197183373134",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873135873#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873135873"
+      },
+      "sku": "1508617E7MWD009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873168641#variant",
+      "@type": "Product",
+      "gtin": "197183373141",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873168641#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873168641"
+      },
+      "sku": "1508617E7MWD095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873201409#variant",
+      "@type": "Product",
+      "gtin": "197183373158",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873201409#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873201409"
+      },
+      "sku": "1508617E7MWD010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873234177#variant",
+      "@type": "Product",
+      "gtin": "197183373165",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873234177#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873234177"
+      },
+      "sku": "1508617E7MWD105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873266945#variant",
+      "@type": "Product",
+      "gtin": "197183373035",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873266945#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873266945"
+      },
+      "sku": "1508617E7MWD011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873299713#variant",
+      "@type": "Product",
+      "gtin": "197183373042",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873299713#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873299713"
+      },
+      "sku": "1508617E7MWD11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873332481#variant",
+      "@type": "Product",
+      "gtin": "197183373059",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873332481#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873332481"
+      },
+      "sku": "1508617E7MWD012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873365249#variant",
+      "@type": "Product",
+      "gtin": "197183373066",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873365249#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873365249"
+      },
+      "sku": "1508617E7MWD013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873398017#variant",
+      "@type": "Product",
+      "gtin": "197183373073",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873398017#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873398017"
+      },
+      "sku": "1508617E7MWD014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873430785#variant",
+      "@type": "Product",
+      "gtin": "197183373080",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Wide / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873430785#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873430785"
+      },
+      "sku": "1508617E7MWD015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872546049#variant",
+      "@type": "Product",
+      "gtin": "197183373905",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872546049#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872546049"
+      },
+      "sku": "1508617E7MRG007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872578817#variant",
+      "@type": "Product",
+      "gtin": "197183373844",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872578817#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872578817"
+      },
+      "sku": "1508617E7MRG075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872611585#variant",
+      "@type": "Product",
+      "gtin": "197183373837",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872611585#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872611585"
+      },
+      "sku": "1508617E7MRG008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872644353#variant",
+      "@type": "Product",
+      "gtin": "197183373820",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872644353#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872644353"
+      },
+      "sku": "1508617E7MRG085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872677121#variant",
+      "@type": "Product",
+      "gtin": "197183373813",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872677121#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872677121"
+      },
+      "sku": "1508617E7MRG009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872709889#variant",
+      "@type": "Product",
+      "gtin": "197183373806",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872709889#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872709889"
+      },
+      "sku": "1508617E7MRG095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872742657#variant",
+      "@type": "Product",
+      "gtin": "197183373981",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872742657#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872742657"
+      },
+      "sku": "1508617E7MRG010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872775425#variant",
+      "@type": "Product",
+      "gtin": "197183373967",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872775425#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872775425"
+      },
+      "sku": "1508617E7MRG105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872808193#variant",
+      "@type": "Product",
+      "gtin": "197183373912",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872808193#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872808193"
+      },
+      "sku": "1508617E7MRG011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872840961#variant",
+      "@type": "Product",
+      "gtin": "197183373929",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872840961#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872840961"
+      },
+      "sku": "1508617E7MRG11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872873729#variant",
+      "@type": "Product",
+      "gtin": "197183373974",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872873729#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872873729"
+      },
+      "sku": "1508617E7MRG012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872906497#variant",
+      "@type": "Product",
+      "gtin": "197183373950",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872906497#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872906497"
+      },
+      "sku": "1508617E7MRG013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872939265#variant",
+      "@type": "Product",
+      "gtin": "197183373943",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872939265#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872939265"
+      },
+      "sku": "1508617E7MRG014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872972033#variant",
+      "@type": "Product",
+      "gtin": "197183373936",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E7M_1.webp?v=1783620161&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Chinchilla Gray / Regular / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872972033#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872972033"
+      },
+      "sku": "1508617E7MRG015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873922305#variant",
+      "@type": "Product",
+      "gtin": "197183373097",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873922305#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873922305"
+      },
+      "sku": "1508617E8EWD007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873955073#variant",
+      "@type": "Product",
+      "gtin": "197183372960",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873955073#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873955073"
+      },
+      "sku": "1508617E8EWD075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873987841#variant",
+      "@type": "Product",
+      "gtin": "197183372977",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873987841#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873987841"
+      },
+      "sku": "1508617E8EWD008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874020609#variant",
+      "@type": "Product",
+      "gtin": "197183372939",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874020609#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874020609"
+      },
+      "sku": "1508617E8EWD085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874053377#variant",
+      "@type": "Product",
+      "gtin": "197183372984",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874053377#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874053377"
+      },
+      "sku": "1508617E8EWD009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874086145#variant",
+      "@type": "Product",
+      "gtin": "197183372991",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874086145#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874086145"
+      },
+      "sku": "1508617E8EWD095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874118913#variant",
+      "@type": "Product",
+      "gtin": "197183373004",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874118913#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874118913"
+      },
+      "sku": "1508617E8EWD010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874151681#variant",
+      "@type": "Product",
+      "gtin": "197183373011",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874151681#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874151681"
+      },
+      "sku": "1508617E8EWD105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874184449#variant",
+      "@type": "Product",
+      "gtin": "197183373028",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874184449#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874184449"
+      },
+      "sku": "1508617E8EWD011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874217217#variant",
+      "@type": "Product",
+      "gtin": "197183372885",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874217217#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874217217"
+      },
+      "sku": "1508617E8EWD11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874249985#variant",
+      "@type": "Product",
+      "gtin": "197183372892",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874249985#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874249985"
+      },
+      "sku": "1508617E8EWD012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874282753#variant",
+      "@type": "Product",
+      "gtin": "197183372908",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874282753#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874282753"
+      },
+      "sku": "1508617E8EWD013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874315521#variant",
+      "@type": "Product",
+      "gtin": "197183372915",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874315521#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874315521"
+      },
+      "sku": "1508617E8EWD014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874348289#variant",
+      "@type": "Product",
+      "gtin": "197183372922",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Wide / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874348289#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581874348289"
+      },
+      "sku": "1508617E8EWD015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873463553#variant",
+      "@type": "Product",
+      "gtin": "197183374445",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873463553#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873463553"
+      },
+      "sku": "1508617E8ERG007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873496321#variant",
+      "@type": "Product",
+      "gtin": "197183373752",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873496321#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873496321"
+      },
+      "sku": "1508617E8ERG075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873529089#variant",
+      "@type": "Product",
+      "gtin": "197183373660",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873529089#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873529089"
+      },
+      "sku": "1508617E8ERG008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873561857#variant",
+      "@type": "Product",
+      "gtin": "197183373745",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873561857#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873561857"
+      },
+      "sku": "1508617E8ERG085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873594625#variant",
+      "@type": "Product",
+      "gtin": "197183375503",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873594625#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873594625"
+      },
+      "sku": "1508617E8ERG009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873627393#variant",
+      "@type": "Product",
+      "gtin": "197183375633",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873627393#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873627393"
+      },
+      "sku": "1508617E8ERG095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873660161#variant",
+      "@type": "Product",
+      "gtin": "197183373790",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873660161#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873660161"
+      },
+      "sku": "1508617E8ERG010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873692929#variant",
+      "@type": "Product",
+      "gtin": "197183373783",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873692929#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873692929"
+      },
+      "sku": "1508617E8ERG105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873725697#variant",
+      "@type": "Product",
+      "gtin": "197183373738",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873725697#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873725697"
+      },
+      "sku": "1508617E8ERG011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873758465#variant",
+      "@type": "Product",
+      "gtin": "197183373721",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873758465#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873758465"
+      },
+      "sku": "1508617E8ERG11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873791233#variant",
+      "@type": "Product",
+      "gtin": "197183373714",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873791233#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873791233"
+      },
+      "sku": "1508617E8ERG012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873824001#variant",
+      "@type": "Product",
+      "gtin": "197183373851",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873824001#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873824001"
+      },
+      "sku": "1508617E8ERG013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873856769#variant",
+      "@type": "Product",
+      "gtin": "197183375954",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873856769#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873856769"
+      },
+      "sku": "1508617E8ERG014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873889537#variant",
+      "@type": "Product",
+      "gtin": "197183375763",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617E8E_1.webp?v=1783620165&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Selvedge Blue / Regular / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873889537#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581873889537"
+      },
+      "sku": "1508617E8ERG015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150586113#variant",
+      "@type": "Product",
+      "gtin": "197183154863",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150586113#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150586113"
+      },
+      "sku": "1508616AA9WD007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150618881#variant",
+      "@type": "Product",
+      "gtin": "197183155761",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150618881#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150618881"
+      },
+      "sku": "1508616AA9WD075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150651649#variant",
+      "@type": "Product",
+      "gtin": "197183154740",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150651649#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150651649"
+      },
+      "sku": "1508616AA9WD008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150684417#variant",
+      "@type": "Product",
+      "gtin": "197183154788",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150684417#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150684417"
+      },
+      "sku": "1508616AA9WD085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150717185#variant",
+      "@type": "Product",
+      "gtin": "197183154641",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150717185#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150717185"
+      },
+      "sku": "1508616AA9WD009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150749953#variant",
+      "@type": "Product",
+      "gtin": "197183155983",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150749953#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150749953"
+      },
+      "sku": "1508616AA9WD095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150782721#variant",
+      "@type": "Product",
+      "gtin": "197183154689",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150782721#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150782721"
+      },
+      "sku": "1508616AA9WD010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150815489#variant",
+      "@type": "Product",
+      "gtin": "197183154559",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150815489#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150815489"
+      },
+      "sku": "1508616AA9WD105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150848257#variant",
+      "@type": "Product",
+      "gtin": "197183155808",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150848257#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150848257"
+      },
+      "sku": "1508616AA9WD011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150881025#variant",
+      "@type": "Product",
+      "gtin": "197183155921",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150881025#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150881025"
+      },
+      "sku": "1508616AA9WD11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150913793#variant",
+      "@type": "Product",
+      "gtin": "197183156058",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150913793#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150913793"
+      },
+      "sku": "1508616AA9WD012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150946561#variant",
+      "@type": "Product",
+      "gtin": "197183154511",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150946561#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150946561"
+      },
+      "sku": "1508616AA9WD013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150979329#variant",
+      "@type": "Product",
+      "gtin": "197183154535",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150979329#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150979329"
+      },
+      "sku": "1508616AA9WD014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151012097#variant",
+      "@type": "Product",
+      "gtin": "197183156065",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Wide / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151012097#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151012097"
+      },
+      "sku": "1508616AA9WD015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150127361#variant",
+      "@type": "Product",
+      "gtin": "197183157611",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150127361#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150127361"
+      },
+      "sku": "1508616AA9RG007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150160129#variant",
+      "@type": "Product",
+      "gtin": "197183157758",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150160129#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150160129"
+      },
+      "sku": "1508616AA9RG075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150192897#variant",
+      "@type": "Product",
+      "gtin": "197183157741",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150192897#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150192897"
+      },
+      "sku": "1508616AA9RG008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150225665#variant",
+      "@type": "Product",
+      "gtin": "197183157680",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150225665#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150225665"
+      },
+      "sku": "1508616AA9RG085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150258433#variant",
+      "@type": "Product",
+      "gtin": "197183158472",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150258433#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150258433"
+      },
+      "sku": "1508616AA9RG009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150291201#variant",
+      "@type": "Product",
+      "gtin": "197183158465",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150291201#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150291201"
+      },
+      "sku": "1508616AA9RG095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150323969#variant",
+      "@type": "Product",
+      "gtin": "197183157703",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150323969#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150323969"
+      },
+      "sku": "1508616AA9RG010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150356737#variant",
+      "@type": "Product",
+      "gtin": "197183157659",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150356737#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150356737"
+      },
+      "sku": "1508616AA9RG105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150389505#variant",
+      "@type": "Product",
+      "gtin": "197183157673",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150389505#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150389505"
+      },
+      "sku": "1508616AA9RG011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150422273#variant",
+      "@type": "Product",
+      "gtin": "197183157604",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150422273#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150422273"
+      },
+      "sku": "1508616AA9RG11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150455041#variant",
+      "@type": "Product",
+      "gtin": "197183157666",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150455041#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150455041"
+      },
+      "sku": "1508616AA9RG012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150487809#variant",
+      "@type": "Product",
+      "gtin": "197183157642",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150487809#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150487809"
+      },
+      "sku": "1508616AA9RG013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150520577#variant",
+      "@type": "Product",
+      "gtin": "197183157635",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150520577#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150520577"
+      },
+      "sku": "1508616AA9RG014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150553345#variant",
+      "@type": "Product",
+      "gtin": "197183157628",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616AA9_1.webp?v=1790184460&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Forest Moss / Regular / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150553345#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755150553345"
+      },
+      "sku": "1508616AA9RG015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148751105#variant",
+      "@type": "Product",
+      "gtin": "193177357159",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148751105#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148751105"
+      },
+      "sku": "20685102001-7.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148783873#variant",
+      "@type": "Product",
+      "gtin": "193177357166",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148783873#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148783873"
+      },
+      "sku": "20685102001-7.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148816641#variant",
+      "@type": "Product",
+      "gtin": "193177357173",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148816641#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148816641"
+      },
+      "sku": "20685102001-8.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148849409#variant",
+      "@type": "Product",
+      "gtin": "193177357180",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148849409#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148849409"
+      },
+      "sku": "20685102001-8.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148882177#variant",
+      "@type": "Product",
+      "gtin": "193177357197",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148882177#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148882177"
+      },
+      "sku": "20685102001-9.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148914945#variant",
+      "@type": "Product",
+      "gtin": "193177357203",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148914945#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755148914945"
+      },
+      "sku": "20685102001-9.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872283905#variant",
+      "@type": "Product",
+      "gtin": "197183373318",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617A02_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872283905#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872283905"
+      },
+      "sku": "1508617A02WD010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872316673#variant",
+      "@type": "Product",
+      "gtin": "197183373325",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617A02_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872316673#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872316673"
+      },
+      "sku": "1508617A02WD105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149013249#variant",
+      "@type": "Product",
+      "gtin": "193177357098",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149013249#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149013249"
+      },
+      "sku": "20685102001-11"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149046017#variant",
+      "@type": "Product",
+      "gtin": "193177357104",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149046017#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149046017"
+      },
+      "sku": "20685102001-115"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149078785#variant",
+      "@type": "Product",
+      "gtin": "193177357111",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149078785#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149078785"
+      },
+      "sku": "20685102001-12"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149111553#variant",
+      "@type": "Product",
+      "gtin": "193177357128",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149111553#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149111553"
+      },
+      "sku": "20685102001-13"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149144321#variant",
+      "@type": "Product",
+      "gtin": "193177357135",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149144321#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149144321"
+      },
+      "sku": "20685102001-14"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872513281#variant",
+      "@type": "Product",
+      "gtin": "197183373233",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508617A02_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Wide / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872513281#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=49581872513281"
+      },
+      "sku": "1508617A02WD015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149209857#variant",
+      "@type": "Product",
+      "gtin": "193177355292",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149209857#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149209857"
+      },
+      "sku": "15086106001-7.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149242625#variant",
+      "@type": "Product",
+      "gtin": "193177355308",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149242625#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149242625"
+      },
+      "sku": "15086106001-7.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149275393#variant",
+      "@type": "Product",
+      "gtin": "193177355315",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149275393#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149275393"
+      },
+      "sku": "15086106001-8.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149308161#variant",
+      "@type": "Product",
+      "gtin": "193177355322",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149308161#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149308161"
+      },
+      "sku": "15086106001-8.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149340929#variant",
+      "@type": "Product",
+      "gtin": "193177355339",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149340929#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149340929"
+      },
+      "sku": "15086106001-9.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149373697#variant",
+      "@type": "Product",
+      "gtin": "193177355346",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149373697#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149373697"
+      },
+      "sku": "15086106001-9.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149406465#variant",
+      "@type": "Product",
+      "gtin": "193177355216",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149406465#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149406465"
+      },
+      "sku": "15086106001-10"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149439233#variant",
+      "@type": "Product",
+      "gtin": "193177355223",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149439233#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149439233"
+      },
+      "sku": "15086106001-105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149472001#variant",
+      "@type": "Product",
+      "gtin": "193177355230",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149472001#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149472001"
+      },
+      "sku": "15086106001-11"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149504769#variant",
+      "@type": "Product",
+      "gtin": "193177355247",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149504769#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149504769"
+      },
+      "sku": "15086106001-115"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149537537#variant",
+      "@type": "Product",
+      "gtin": "193177355254",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149537537#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149537537"
+      },
+      "sku": "15086106001-12"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149570305#variant",
+      "@type": "Product",
+      "gtin": "193177355261",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149570305#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149570305"
+      },
+      "sku": "15086106001-13"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149603073#variant",
+      "@type": "Product",
+      "gtin": "193177355278",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149603073#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149603073"
+      },
+      "sku": "15086106001-14"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149635841#variant",
+      "@type": "Product",
+      "gtin": "193177355285",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508612A02_1.webp?v=1778423523&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Regular / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149635841#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755149635841"
+      },
+      "sku": "15086106001-15"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151503617#variant",
+      "@type": "Product",
+      "gtin": "197183155150",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151503617#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151503617"
+      },
+      "sku": "1508616K94WD007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151536385#variant",
+      "@type": "Product",
+      "gtin": "197183155020",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151536385#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151536385"
+      },
+      "sku": "1508616K94WD075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151569153#variant",
+      "@type": "Product",
+      "gtin": "197183154986",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151569153#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151569153"
+      },
+      "sku": "1508616K94WD008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151601921#variant",
+      "@type": "Product",
+      "gtin": "197183155068",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151601921#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151601921"
+      },
+      "sku": "1508616K94WD085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151634689#variant",
+      "@type": "Product",
+      "gtin": "197183155082",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151634689#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151634689"
+      },
+      "sku": "1508616K94WD009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151667457#variant",
+      "@type": "Product",
+      "gtin": "197183154955",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151667457#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151667457"
+      },
+      "sku": "1508616K94WD095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151700225#variant",
+      "@type": "Product",
+      "gtin": "197183154993",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151700225#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151700225"
+      },
+      "sku": "1508616K94WD010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151732993#variant",
+      "@type": "Product",
+      "gtin": "197183154870",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151732993#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151732993"
+      },
+      "sku": "1508616K94WD105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151765761#variant",
+      "@type": "Product",
+      "gtin": "197183154900",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151765761#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151765761"
+      },
+      "sku": "1508616K94WD011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151798529#variant",
+      "@type": "Product",
+      "gtin": "197183154917",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151798529#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151798529"
+      },
+      "sku": "1508616K94WD11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151831297#variant",
+      "@type": "Product",
+      "gtin": "197183154931",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151831297#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151831297"
+      },
+      "sku": "1508616K94WD012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151864065#variant",
+      "@type": "Product",
+      "gtin": "197183154771",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151864065#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151864065"
+      },
+      "sku": "1508616K94WD013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151896833#variant",
+      "@type": "Product",
+      "gtin": "197183154818",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151896833#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151896833"
+      },
+      "sku": "1508616K94WD014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151929601#variant",
+      "@type": "Product",
+      "gtin": "197183154849",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Wide / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151929601#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151929601"
+      },
+      "sku": "1508616K94WD015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151044865#variant",
+      "@type": "Product",
+      "gtin": "197183155235",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151044865#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151044865"
+      },
+      "sku": "1508616K94RG007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151077633#variant",
+      "@type": "Product",
+      "gtin": "197183156096",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151077633#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151077633"
+      },
+      "sku": "1508616K94RG075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151110401#variant",
+      "@type": "Product",
+      "gtin": "197183157857",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151110401#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151110401"
+      },
+      "sku": "1508616K94RG008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151143169#variant",
+      "@type": "Product",
+      "gtin": "197183158397",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151143169#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151143169"
+      },
+      "sku": "1508616K94RG085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151175937#variant",
+      "@type": "Product",
+      "gtin": "197183157833",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151175937#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151175937"
+      },
+      "sku": "1508616K94RG009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151208705#variant",
+      "@type": "Product",
+      "gtin": "197183157963",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151208705#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151208705"
+      },
+      "sku": "1508616K94RG095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151241473#variant",
+      "@type": "Product",
+      "gtin": "197183156089",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151241473#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151241473"
+      },
+      "sku": "1508616K94RG010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151274241#variant",
+      "@type": "Product",
+      "gtin": "197183157987",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151274241#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151274241"
+      },
+      "sku": "1508616K94RG105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151307009#variant",
+      "@type": "Product",
+      "gtin": "197183158359",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151307009#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151307009"
+      },
+      "sku": "1508616K94RG011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151339777#variant",
+      "@type": "Product",
+      "gtin": "197183156041",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151339777#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151339777"
+      },
+      "sku": "1508616K94RG11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151372545#variant",
+      "@type": "Product",
+      "gtin": "197183156034",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151372545#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151372545"
+      },
+      "sku": "1508616K94RG012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151405313#variant",
+      "@type": "Product",
+      "gtin": "197183156027",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151405313#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151405313"
+      },
+      "sku": "1508616K94RG013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151438081#variant",
+      "@type": "Product",
+      "gtin": "197183156010",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151438081#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151438081"
+      },
+      "sku": "1508616K94RG014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151470849#variant",
+      "@type": "Product",
+      "gtin": "197183156003",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508616K94_1.webp?v=1790184461&width=1920",
+      "name": "Men's Burton Photon BOA® Snowboard Boots - Black / Multi / Regular / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151470849#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "479.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861?variant=48755151470849"
+      },
+      "sku": "1508616K94RG015"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "d46a736f727dc2e5e2070229e55c46db2ab4bc99e1ecdafbb919e2a631785ed9",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

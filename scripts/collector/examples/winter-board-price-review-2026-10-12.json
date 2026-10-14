@@ -1,0 +1,334 @@
+[
+  {
+    "slug": "arbor-a-frame-2025",
+    "category": "snowboard",
+    "brand": "arbor",
+    "model": "A-Frame",
+    "year": 2025,
+    "url": "https://www.arborcollective.com/products/a-frame-snowboard-25",
+    "mode": "cheerio",
+    "representativeSize": "162"
+  },
+  {
+    "slug": "bc-stream-r2-2026",
+    "category": "snowboard",
+    "brand": "bc-stream",
+    "model": "R2",
+    "year": 2026,
+    "url": "https://item.rakuten.co.jp/seeslife/26bcr2/",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "bc-stream-riders-spec-dr-2027",
+    "category": "snowboard",
+    "brand": "bc-stream",
+    "model": "Riders' Spec DR",
+    "year": 2027,
+    "url": "https://item.rakuten.co.jp/fujiswat/202603041/",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "bc-stream-rx-2027",
+    "category": "snowboard",
+    "brand": "bc-stream",
+    "model": "RX",
+    "year": 2027,
+    "url": "https://item.rakuten.co.jp/fujiswat/202603043/",
+    "mode": "cheerio",
+    "representativeSize": "159"
+  },
+  {
+    "slug": "burton-custom-camber-2027",
+    "category": "snowboard",
+    "brand": "burton",
+    "model": "Custom Camber",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881",
+    "mode": "cheerio",
+    "representativeSize": "158"
+  },
+  {
+    "slug": "burton-good-company-camber-2027",
+    "category": "snowboard",
+    "brand": "burton",
+    "model": "Good Company Camber",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951",
+    "mode": "cheerio",
+    "representativeSize": "152"
+  },
+  {
+    "slug": "burton-process-2026",
+    "category": "snowboard",
+    "brand": "burton",
+    "model": "Process",
+    "year": 2026,
+    "url": "https://eu.burton.com/en-pt/products/mens-burton-process-camber-snowboard-106921e-o?country=PT",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "capita-dark-horse-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Dark Horse",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "154"
+  },
+  {
+    "slug": "capita-defenders-of-awesome-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Defenders of Awesome",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-d-o-a-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "gnu-rider-s-choice-2025",
+    "category": "snowboard",
+    "brand": "gnu",
+    "model": "Rider's Choice",
+    "year": 2025,
+    "url": "https://cad.gnu.com/2526-riders-choice-157-5",
+    "mode": "cheerio",
+    "representativeSize": "157.5"
+  },
+  {
+    "slug": "gray-despe-wood-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "DESPE WOOD",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "gray-desperado-ti-type-r-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "DESPERADO Ti Type-R",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+    "mode": "cheerio",
+    "representativeSize": "167W"
+  },
+  {
+    "slug": "gray-dsprd-ti-iz-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "DSPRD Ti [iz]",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_jpn_low_0215.pdf",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "gray-dsprd-ti-type-x-ver-s-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "DSPRD Ti Type-X ver.S",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/product-2627-eng/",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "gray-epic-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "EPIC",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/product-2627-eng/",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "gray-lovebuzz-58-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "LOVEBUZZ 58",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/product-2627-eng/",
+    "mode": "cheerio",
+    "representativeSize": "158"
+  },
+  {
+    "slug": "gray-prodigy-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "PRODIGY",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/product-2627-eng/",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "gray-sonicalmach-lt-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "SONICALMACH LT",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/product-2627-eng/",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "gray-sonicalmach-lt-ver-c-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "SONICALMACH LT ver.C",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/product-2627-eng/",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "gray-tycoon-type-s-iz-2027",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "TYCOON Type-S [iz]",
+    "year": 2027,
+    "url": "https://graysnowboards.co.jp/product-2627-eng/",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "jones-dream-weaver-2-0-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Dream Weaver 2.0",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/womens-dream-weaver-20-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "148"
+  },
+  {
+    "slug": "jones-flagship-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Flagship",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/mens-flagship-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "161"
+  },
+  {
+    "slug": "k2-alchemist-2027",
+    "category": "snowboard",
+    "brand": "k2",
+    "model": "Alchemist",
+    "year": 2027,
+    "url": "https://k2snow.com/en-us/p/alchemist-mens-snowboard-kb262025",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "k2-excavator-2027",
+    "category": "snowboard",
+    "brand": "k2",
+    "model": "Excavator",
+    "year": 2027,
+    "url": "https://k2snow.com/en-us/p/excavator-unisex-snowboard-kb261687",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "k2-passport-2027",
+    "category": "snowboard",
+    "brand": "k2",
+    "model": "Passport",
+    "year": 2027,
+    "url": "https://k2snow.com/en-us/p/passport-unisex-snowboard-kb261689",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "lib-tech-t-rice-pro-2025",
+    "category": "snowboard",
+    "brand": "lib-tech",
+    "model": "T.Rice Pro",
+    "year": 2025,
+    "url": "https://cad.lib-tech.com/2425-t-rice-pro-148",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "never-summer-proto-slinger-2025",
+    "category": "snowboard",
+    "brand": "never-summer",
+    "model": "Proto Slinger",
+    "year": 2025,
+    "url": "https://neversummer.com/pages/mens-proto-slinger-size-chart",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "nitro-banker-2027",
+    "category": "snowboard",
+    "brand": "nitro",
+    "model": "Banker",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/all-mens-snowboards-26-27/products/banker-snowboard-1",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "ogasaka-ct-2026",
+    "category": "snowboard",
+    "brand": "ogasaka",
+    "model": "CT",
+    "year": 2026,
+    "url": "https://www.ogasaka-snowboard.com/product_25_03_ct.html",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "ogasaka-fc-2026",
+    "category": "snowboard",
+    "brand": "ogasaka",
+    "model": "FC",
+    "year": 2026,
+    "url": "https://www.ogasaka-snowboard.com/product_25_08_fc.html",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "ogasaka-shin-2026",
+    "category": "snowboard",
+    "brand": "ogasaka",
+    "model": "SHIN",
+    "year": 2026,
+    "url": "https://www.ogasaka-snowboard.com/product_25_12_shin-160.html",
+    "mode": "cheerio",
+    "representativeSize": "160"
+  },
+  {
+    "slug": "ride-algorythm-2026",
+    "category": "snowboard",
+    "brand": "ride",
+    "model": "Algorhythm",
+    "year": 2026,
+    "url": "https://ridesnowboards.com/en-us/all-mountain",
+    "mode": "cheerio",
+    "representativeSize": "160W"
+  },
+  {
+    "slug": "salomon-assassin-pro-2027",
+    "category": "snowboard",
+    "brand": "salomon",
+    "model": "Assassin Pro",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/assassin-pro-li1301/L49292000",
+    "mode": "cheerio",
+    "representativeSize": "150"
+  },
+  {
+    "slug": "salomon-huck-knife-2027",
+    "category": "snowboard",
+    "brand": "salomon",
+    "model": "Huck Knife",
+    "year": 2027,
+    "url": "https://www.salomon.com/en-us/product/huck-knife-li1304",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  }
+]

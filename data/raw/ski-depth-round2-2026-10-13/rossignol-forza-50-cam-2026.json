@@ -1,0 +1,64 @@
+{
+  "seedFile": "data/skis/rossignol-forza-50-cam-2026.yaml",
+  "retrievedAt": "2026-10-13",
+  "source": "https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html",
+  "partial": false,
+  "rows": [
+    {
+      "size": "150 cm",
+      "noseWidth": 127,
+      "waistWidth": 75,
+      "tailWidth": 111,
+      "turnRadius": 10
+    },
+    {
+      "size": "157 cm",
+      "noseWidth": 127,
+      "waistWidth": 75,
+      "tailWidth": 111,
+      "turnRadius": 11
+    },
+    {
+      "size": "164 cm",
+      "noseWidth": 127,
+      "waistWidth": 75,
+      "tailWidth": 111,
+      "turnRadius": 12
+    },
+    {
+      "size": "171 cm",
+      "noseWidth": 127,
+      "waistWidth": 75,
+      "tailWidth": 111,
+      "turnRadius": 14
+    },
+    {
+      "size": "179 cm",
+      "noseWidth": 127,
+      "waistWidth": 75,
+      "tailWidth": 111,
+      "turnRadius": 15
+    }
+  ],
+  "verifiedFields": {
+    "core": "PEFC 认证杨木板芯",
+    "construction": "Rectangular Full Sidewall",
+    "profile": "Tip Rocker + 传统 Camber",
+    "technologies": "V-Profile；Carbon Alloy Matrix；Mini Cap；Premium Hardtop；Sintered HD Base",
+    "bindingCompatibility": "可选 NX 12 KONECT GW B80：官方支持成人 Alpine ISO 5355 A / GripWalk ISO 23223 靴底，BSL 260–375 mm。仅适用于此固定器选项，无固定器版本需另核对。",
+    "seasonEvidence": "官方 RAOPX01000 页面未明确销售雪季；2025/26 标记仍需同 SKU 年度目录确认。"
+  },
+  "limitations": "几何已逐长度核对，重量配置口径未确认",
+  "weightRaw": {
+    "label": "Ski weight (kg/pair)",
+    "values": [
+      1.5,
+      1.6,
+      1.6,
+      1.7,
+      1.8
+    ],
+    "mapped": false,
+    "reason": "单只/一对或含固定器口径尚未确认"
+  }
+}

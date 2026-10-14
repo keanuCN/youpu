@@ -1,0 +1,105 @@
+{
+  "slug": "k2-excavator-2027",
+  "price": "USD 629.95",
+  "source": "https://k2snow.com/en-us/p/excavator-unisex-snowboard-kb261687",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T07:05:26.365Z",
+  "productName": "K2 Excavator Unisex Snowboard 2027 ",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/s/k2/k2_2627_excavator_KB261687?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Excavator Unisex Snowboard 2027  - Size: 142",
+      "size": "142",
+      "sku": "KB261687001",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/excavator-unisex-snowboard-kb261687?Size=142",
+        "priceCurrency": "USD",
+        "price": 629.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/s/k2/k2_2627_excavator_KB261687?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Excavator Unisex Snowboard 2027  - Size: 146",
+      "size": "146",
+      "sku": "KB261687002",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/excavator-unisex-snowboard-kb261687?Size=146",
+        "priceCurrency": "USD",
+        "price": 629.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/s/k2/k2_2627_excavator_KB261687?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Excavator Unisex Snowboard 2027  - Size: 150",
+      "size": "150",
+      "sku": "KB261687003",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/excavator-unisex-snowboard-kb261687?Size=150",
+        "priceCurrency": "USD",
+        "price": 629.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/s/k2/k2_2627_excavator_KB261687?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Excavator Unisex Snowboard 2027  - Size: 154",
+      "size": "154",
+      "sku": "KB261687004",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/excavator-unisex-snowboard-kb261687?Size=154",
+        "priceCurrency": "USD",
+        "price": 629.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/s/k2/k2_2627_excavator_KB261687?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Excavator Unisex Snowboard 2027  - Size: 158",
+      "size": "158",
+      "sku": "KB261687005",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/excavator-unisex-snowboard-kb261687?Size=158",
+        "priceCurrency": "USD",
+        "price": 629.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/s/k2/k2_2627_excavator_KB261687?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Excavator Unisex Snowboard 2027  - Size: 162",
+      "size": "162",
+      "sku": "KB261687006",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/excavator-unisex-snowboard-kb261687?Size=162",
+        "priceCurrency": "USD",
+        "price": 629.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "d9847cdc24241c9d6f9a25d0379ca3267e15fc39ad2e7186525fec1ed15e60c9",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

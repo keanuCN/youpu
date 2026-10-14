@@ -1,0 +1,64 @@
+{
+  "slug": "rome-katana-aw-fase-binding-2027",
+  "price": "USD 429.95",
+  "source": "https://romesnowboards.com/products/katana-asymwrap-fase-snowboard-bindings",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:44:30.428Z",
+  "productName": "Katana AW FASE® Men's Snowboard Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://romesnowboards.com/products/katana-asymwrap-fase-snowboard-bindings",
+  "hasVariant": [
+    {
+      "@id": "/products/katana-asymwrap-fase-snowboard-bindings?variant=45859836919939#variant",
+      "@type": "Product",
+      "gtin": "8721164508608",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-AW-FASE_C1-BLACK_1_49371da6-92c0-48d4-a570-a94f41a3051f.jpg?v=1790603475&width=1920",
+      "name": "Katana AW FASE® Men's Snowboard Bindings - Black / S",
+      "offers": {
+        "@id": "/products/katana-asymwrap-fase-snowboard-bindings?variant=45859836919939#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "429.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/katana-asymwrap-fase-snowboard-bindings?variant=45859836919939"
+      },
+      "sku": "RO.27.28.KATA.S.BK"
+    },
+    {
+      "@id": "/products/katana-asymwrap-fase-snowboard-bindings?variant=45859836952707#variant",
+      "@type": "Product",
+      "gtin": "8721164508578",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-AW-FASE_C1-BLACK_1_49371da6-92c0-48d4-a570-a94f41a3051f.jpg?v=1790603475&width=1920",
+      "name": "Katana AW FASE® Men's Snowboard Bindings - Black / M/L",
+      "offers": {
+        "@id": "/products/katana-asymwrap-fase-snowboard-bindings?variant=45859836952707#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "429.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/katana-asymwrap-fase-snowboard-bindings?variant=45859836952707"
+      },
+      "sku": "RO.27.28.KATA.ML.BK"
+    },
+    {
+      "@id": "/products/katana-asymwrap-fase-snowboard-bindings?variant=45859836985475#variant",
+      "@type": "Product",
+      "gtin": "8721164508547",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-AW-FASE_C1-BLACK_1_49371da6-92c0-48d4-a570-a94f41a3051f.jpg?v=1790603475&width=1920",
+      "name": "Katana AW FASE® Men's Snowboard Bindings - Black / L/XL",
+      "offers": {
+        "@id": "/products/katana-asymwrap-fase-snowboard-bindings?variant=45859836985475#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "429.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/katana-asymwrap-fase-snowboard-bindings?variant=45859836985475"
+      },
+      "sku": "RO.27.28.KATA.LXL.BK"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "10f1b590f3e0810bd11d728a0760e330844b2c440c30dbe873107b917225da0a",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

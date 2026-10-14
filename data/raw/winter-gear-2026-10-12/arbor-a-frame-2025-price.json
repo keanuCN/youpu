@@ -1,0 +1,64 @@
+{
+  "slug": "arbor-a-frame-2025",
+  "price": "USD 334.95–389.95",
+  "source": "https://www.arborcollective.com/products/a-frame-snowboard-25",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T07:05:05.981Z",
+  "productName": "A-Frame Snowboard",
+  "productType": "Product",
+  "productUrl": "https://www.arborcollective.com/products/a-frame-snowboard-25",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "12518580",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 389.95,
+      "priceCurrency": "USD",
+      "url": "https://www.arborcollective.com/products/a-frame-snowboard-25?variant=45478756974840"
+    },
+    {
+      "@type": "Offer",
+      "sku": "12518592",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 389.95,
+      "priceCurrency": "USD",
+      "url": "https://www.arborcollective.com/products/a-frame-snowboard-25?variant=45478757007608"
+    },
+    {
+      "@type": "Offer",
+      "sku": "12518620",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 389.95,
+      "priceCurrency": "USD",
+      "url": "https://www.arborcollective.com/products/a-frame-snowboard-25?variant=45478757040376"
+    },
+    {
+      "@type": "Offer",
+      "sku": "12518651",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 389.95,
+      "priceCurrency": "USD",
+      "url": "https://www.arborcollective.com/products/a-frame-snowboard-25?variant=45478757073144"
+    },
+    {
+      "@type": "Offer",
+      "sku": "12518702",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 389.95,
+      "priceCurrency": "USD",
+      "url": "https://www.arborcollective.com/products/a-frame-snowboard-25?variant=45478757105912"
+    },
+    {
+      "@type": "Offer",
+      "sku": "22518592",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 334.95,
+      "priceCurrency": "USD",
+      "url": "https://www.arborcollective.com/products/a-frame-snowboard-25?variant=46199178952952"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "54588bacf1888f5eac6a524e353727db265e3d8e727dbf7d52ec02d4d22a91d2",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

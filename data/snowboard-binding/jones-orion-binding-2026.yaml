@@ -9,7 +9,7 @@ specs:
   entrySystem: strap
   flexFeel: mid-soft
   mountingSystem: "Jones Universal Mounting Disk；兼容 4x4、2x4 与 Burton Channel/EST"
-  bootCompatibility: "常规绑带式固定器，兼容各品牌雪鞋"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "男款：S US 5–7 / M 7.5–10 / L 10.5+；女款：S US 5–8.5 / M 9–11.5"
   baseplateMaterial: "SkateTech Hanger、Kingpin、Post 与可换硬软衬套构成杠杆传力系统"
   ankleStrap: "Comfort Flex 3D 脚踝绑带，均匀分压；Flip-It 可切换 Surf/Freeride 模式"
@@ -17,6 +17,13 @@ specs:
   highback: "Progressive Flex 非对称高背，中部支撑较硬、顶部更柔韧"
   highbackAdjustment: "免工具前倾角调节"
   cushioning: "全长 EVA Comfort Foam foot pillow；SkateTech 橡胶衬套吸收振动，硬/软衬套可调响应"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 319.95–379.95
+  priceMarket: 原币 USD；来源商店 www.jonessnowboards.com
+  priceSource: https://www.jonessnowboards.com/en-int/products/mens-orion-snowboard-binding-2026
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: "https://www.jonessnowboards.com/cdn/shop/files/J.26.BNM.ORI.GN-gallery-1.webp?v=1768452354&width=1946"
     kind: face

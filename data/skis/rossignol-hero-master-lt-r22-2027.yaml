@@ -6,12 +6,47 @@ year: 2027
 title: Rossignol Hero Master LT R22 2026/27
 one_liner: Hero 系列竞技取向长弧雪道板，2026/27 官方产品目录在售。
 specs:
-  lengthOptions: 173 / 179 / 183 cm
+  lengthOptions: 169 / 173 / 179 / 183 cm
   terrain: 雪道 / 竞速 / 长弧
-  skierLevel: 进阶至专家
+  skierLevel: 专家
   bindingSetup: R22 系统板，固定器依套装配置
+  weightBasis: 官方列名为 kg/pair，但具体配置口径仍待确认；本轮保留来源中的数值，不折算为单只或套装重量。
+  geometryNotes: 完整逐长度几何来自对应官方 SKU。板长为 cm，板宽为 mm，半径为 m；规格表不代表当前库存。
+  bindingCompatibility: 官方可选 SPX 14 ROCKERACE GW / SPX 15 ROCKERACE GW MASTER，要求
+    R22 板层；支持成人 Alpine ISO 5355 A / GripWalk ISO 23223 A。不能把 KONECT 或 XPRESS 当作
+    R22 的通用替代。
+  mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
+  seasonEvidence: 官方 RAPHE01000 页面明确标注 NEW COLLECTION FW2627。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.rossignol.com/se-en/hero-master-lt-r22-alpine-skis-RAPHE01000.html；https://www.grip-walk.com/faq/
+  sizeSpecs:
+    - size: 169 cm
+      noseWidth: 115
+      waistWidth: 70
+      tailWidth: 98
+      turnRadius: 15
+    - size: 173 cm
+      noseWidth: 115
+      waistWidth: 70
+      tailWidth: 98
+      turnRadius: 17
+    - size: 179 cm
+      noseWidth: 115
+      waistWidth: 70
+      tailWidth: 97
+      turnRadius: 19
+    - size: 183 cm
+      noseWidth: 115
+      waistWidth: 71
+      tailWidth: 96
+      turnRadius: 21
+  core: PEFC 认证山毛榉木板芯
+  construction: Rectangular Full Sidewall；Full Titanal Layer
+  profile: Full Camber
+  technologies: LCT；Cascade Tip；Oversized Sidecut；Sintered UHD Base
 images:
-  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dw283c3bb5/images/large/RAPHE01000_72DPI_01_v01.jpg"
+  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/\
+      default/dw283c3bb5/images/large/RAPHE01000_72DPI_01_v01.jpg"
     kind: face
     alt: Rossignol Hero Master LT R22 2026/27 官方雪板商品图
     source: Rossignol 官方产品页（图片使用授权待核）

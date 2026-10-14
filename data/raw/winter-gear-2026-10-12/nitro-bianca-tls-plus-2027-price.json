@@ -1,0 +1,400 @@
+{
+  "slug": "nitro-bianca-tls-plus-2027",
+  "price": "EUR 549.9",
+  "source": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:47:14.706Z",
+  "productName": "Nitro Bianca TLS+ Womens Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1",
+  "hasVariant": [
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714923851#variant",
+      "@type": "Product",
+      "gtin": "7630349342375",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 230",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714923851#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714923851"
+      },
+      "sku": "13BT21018-102-230"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714956619#variant",
+      "@type": "Product",
+      "gtin": "7630349342382",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 235",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714956619#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714956619"
+      },
+      "sku": "13BT21018-102-235"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714989387#variant",
+      "@type": "Product",
+      "gtin": "7630349342399",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 240",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714989387#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714989387"
+      },
+      "sku": "13BT21018-102-240"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277715022155#variant",
+      "@type": "Product",
+      "gtin": "7630349342405",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 245",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277715022155#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277715022155"
+      },
+      "sku": "13BT21018-102-245"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277715054923#variant",
+      "@type": "Product",
+      "gtin": "7630349342412",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 250",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277715054923#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277715054923"
+      },
+      "sku": "13BT21018-102-250"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277715087691#variant",
+      "@type": "Product",
+      "gtin": "7630349342429",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 255",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277715087691#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277715087691"
+      },
+      "sku": "13BT21018-102-255"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277715120459#variant",
+      "@type": "Product",
+      "gtin": "7630349342436",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 260",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277715120459#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277715120459"
+      },
+      "sku": "13BT21018-102-260"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277715153227#variant",
+      "@type": "Product",
+      "gtin": "7630349342443",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 265",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277715153227#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277715153227"
+      },
+      "sku": "13BT21018-102-265"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277715185995#variant",
+      "@type": "Product",
+      "gtin": "7630349342450",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 270",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277715185995#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277715185995"
+      },
+      "sku": "13BT21018-102-270"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277715218763#variant",
+      "@type": "Product",
+      "gtin": "7630349342467",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 275",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277715218763#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277715218763"
+      },
+      "sku": "13BT21018-102-275"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277715251531#variant",
+      "@type": "Product",
+      "gtin": "7630349342474",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 280",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277715251531#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277715251531"
+      },
+      "sku": "13BT21018-102-280"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277715284299#variant",
+      "@type": "Product",
+      "gtin": "7630349342481",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Light Grey / 285",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277715284299#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277715284299"
+      },
+      "sku": "13BT21018-102-285"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714530635#variant",
+      "@type": "Product",
+      "gtin": "7630349342252",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 230",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714530635#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714530635"
+      },
+      "sku": "13BT21018-101-230"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714563403#variant",
+      "@type": "Product",
+      "gtin": "7630349342269",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 235",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714563403#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714563403"
+      },
+      "sku": "13BT21018-101-235"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714596171#variant",
+      "@type": "Product",
+      "gtin": "7630349342276",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 240",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714596171#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714596171"
+      },
+      "sku": "13BT21018-101-240"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714628939#variant",
+      "@type": "Product",
+      "gtin": "7630349342283",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 245",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714628939#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714628939"
+      },
+      "sku": "13BT21018-101-245"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714661707#variant",
+      "@type": "Product",
+      "gtin": "7630349342290",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 250",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714661707#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714661707"
+      },
+      "sku": "13BT21018-101-250"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714694475#variant",
+      "@type": "Product",
+      "gtin": "7630349342306",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 255",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714694475#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714694475"
+      },
+      "sku": "13BT21018-101-255"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714727243#variant",
+      "@type": "Product",
+      "gtin": "7630349342313",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 260",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714727243#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714727243"
+      },
+      "sku": "13BT21018-101-260"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714760011#variant",
+      "@type": "Product",
+      "gtin": "7630349342320",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 265",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714760011#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714760011"
+      },
+      "sku": "13BT21018-101-265"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714792779#variant",
+      "@type": "Product",
+      "gtin": "7630349342337",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 270",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714792779#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714792779"
+      },
+      "sku": "13BT21018-101-270"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714825547#variant",
+      "@type": "Product",
+      "gtin": "7630349342344",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 275",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714825547#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714825547"
+      },
+      "sku": "13BT21018-101-275"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714858315#variant",
+      "@type": "Product",
+      "gtin": "7630349342351",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 280",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714858315#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714858315"
+      },
+      "sku": "13BT21018-101-280"
+    },
+    {
+      "@id": "/products/bianca-tls-womens-boots-1?variant=57277714891083#variant",
+      "@type": "Product",
+      "gtin": "7630349342368",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=1920",
+      "name": "Nitro Bianca TLS+ Womens Boots - Black / 285",
+      "offers": {
+        "@id": "/products/bianca-tls-womens-boots-1?variant=57277714891083#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "549.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1?variant=57277714891083"
+      },
+      "sku": "13BT21018-101-285"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "9deab5d8196fed58769f5bfa0932388066dfc3a4ef461194be62aca2a3182d14",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

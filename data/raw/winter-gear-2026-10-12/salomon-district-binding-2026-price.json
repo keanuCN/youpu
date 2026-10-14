@@ -1,0 +1,84 @@
+{
+  "slug": "salomon-district-binding-2026",
+  "price": "USD 299.95",
+  "source": "https://www.salomon.com/en-us/product/district-li1289",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:43:35.600Z",
+  "productName": "DISTRICT",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "DISTRICT White / Navy Blue",
+      "image": "https://cdn.dam.salomon.com/fb6d3e52-e631-4fe0-9ca7-b36001082c68/L49290100/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "White / Navy Blue",
+      "size": "S",
+      "sku": "L49290100054",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/district-li1289/L49290100?sizeId=L49290100054",
+        "priceCurrency": "USD",
+        "price": "299.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "DISTRICT White / Navy Blue",
+      "image": "https://cdn.dam.salomon.com/fb6d3e52-e631-4fe0-9ca7-b36001082c68/L49290100/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "White / Navy Blue",
+      "size": "M",
+      "sku": "L49290100056",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/district-li1289/L49290100?sizeId=L49290100056",
+        "priceCurrency": "USD",
+        "price": "299.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "DISTRICT White / Navy Blue",
+      "image": "https://cdn.dam.salomon.com/fb6d3e52-e631-4fe0-9ca7-b36001082c68/L49290100/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "White / Navy Blue",
+      "size": "L",
+      "sku": "L49290100058",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/district-li1289/L49290100?sizeId=L49290100058",
+        "priceCurrency": "USD",
+        "price": "299.95"
+      }
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-li1289/L49289800?sizeId=L49289800054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-li1289/L49289800?sizeId=L49289800056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-li1289/L49289800?sizeId=L49289800058"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-li1289/L49290000?sizeId=L49290000054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-li1289/L49290000?sizeId=L49290000056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-li1289/L49290000?sizeId=L49290000058"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-li1289/L49289900?sizeId=L49289900054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-li1289/L49289900?sizeId=L49289900056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/district-li1289/L49289900?sizeId=L49289900058"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "2ceca2d476671e189d2bf753805bddf3152a6bade6999982bfbc02ced0ce0206",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

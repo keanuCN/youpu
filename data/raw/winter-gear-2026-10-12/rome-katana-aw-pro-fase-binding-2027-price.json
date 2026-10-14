@@ -1,0 +1,64 @@
+{
+  "slug": "rome-katana-aw-pro-fase-binding-2027",
+  "price": "USD 449.95",
+  "source": "https://romesnowboards.com/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:33.823Z",
+  "productName": "Katana AW Pro FASE® Men's Snowboard Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://romesnowboards.com/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings",
+  "hasVariant": [
+    {
+      "@id": "/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings?variant=47145361178755#variant",
+      "@type": "Product",
+      "gtin": "8721164508677",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-PRO-AW-FASE_C1-STALE_1_78442129-1b64-47c3-82dc-610e0a874fb6.jpg?v=1790603465&width=1920",
+      "name": "Katana AW Pro FASE® Men's Snowboard Bindings - S / Black",
+      "offers": {
+        "@id": "/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings?variant=47145361178755#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings?variant=47145361178755"
+      },
+      "sku": "RO.27.28.KATP.S.BK"
+    },
+    {
+      "@id": "/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings?variant=47145361211523#variant",
+      "@type": "Product",
+      "gtin": "8721164508653",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-PRO-AW-FASE_C1-STALE_1_78442129-1b64-47c3-82dc-610e0a874fb6.jpg?v=1790603465&width=1920",
+      "name": "Katana AW Pro FASE® Men's Snowboard Bindings - M/L / Black",
+      "offers": {
+        "@id": "/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings?variant=47145361211523#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings?variant=47145361211523"
+      },
+      "sku": "RO.27.28.KATP.ML.BK"
+    },
+    {
+      "@id": "/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings?variant=47145361244291#variant",
+      "@type": "Product",
+      "gtin": "8721164508639",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-PRO-AW-FASE_C1-STALE_1_78442129-1b64-47c3-82dc-610e0a874fb6.jpg?v=1790603465&width=1920",
+      "name": "Katana AW Pro FASE® Men's Snowboard Bindings - L/XL / Black",
+      "offers": {
+        "@id": "/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings?variant=47145361244291#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings?variant=47145361244291"
+      },
+      "sku": "RO.27.28.KATP.LXL.BK"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "47bb72791b994015e57ab6b7e0b41af22467f80da69c443db7f3a7c44c75205a",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

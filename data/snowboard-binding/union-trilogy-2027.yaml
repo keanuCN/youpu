@@ -9,7 +9,7 @@ specs:
   entrySystem: strap
   flexFeel: mid-stiff
   mountingSystem: "Camber Disk；兼容 4x4、4x2 与 Burton Channel"
-  bootCompatibility: "普通绑带雪鞋；女款 S/M/L"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表"
   baseplateMaterial: "S9 Duraflex ST 高强度底盘；Molecular Bushing Suspension System"
   ankleStrap: "Exoframe 6.0 PU Core，缓冲舒适与快速响应结合"
@@ -19,6 +19,17 @@ specs:
   highbackAdjustment: "Cam-Lock 前倾角调节"
   cushioning: "Molecular Bushing 悬挂衬套用于减震与吸收冲击"
   warranty: "底盘与后跟杯终身保修；其余部件 2 年保修"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide
+  sizeChart:
+    - { size: SMALL, usMen: "* - 5.5", usWomen: 4 - 6.5, uk: 2 - 4.5, eu: 34 - 37, mondo: 21 - 23.5 }
+    - { size: MEDIUM, usMen: 5.5 - 7.5, usWomen: 6.5 - 8.5, uk: 4.5 - 6.5, eu: 37 - 40.5, mondo: 23.5 - 25.5 }
+    - { size: LARGE, usMen: 8 - 10, usWomen: 9 - 11, uk: 7 - 9, eu: 41 - 43, mondo: 26 - 28 }
+  priceCheckedAt: 2026-10-12
+  officialPrice: JPY 46200
+  priceMarket: 原币 JPY；来源商店 jp.unionbindingcompany.com
+  priceSource: https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: "https://unionbindingcompany.com/cdn/shop/files/UN26_TRILOGY_BLACK_1024x.jpg?v=1785333206"
     kind: face

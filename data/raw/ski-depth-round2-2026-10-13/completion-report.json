@@ -1,0 +1,273 @@
+{
+  "date": "2026-10-13",
+  "newTables": 6,
+  "newRows": 22,
+  "fullTables": 4,
+  "partialTables": 2,
+  "additionalLengthOnly": "head-easy-joy-r-2026",
+  "changed": [
+    {
+      "slug": "rossignol-forza-50-cam-2026",
+      "rows": 5,
+      "partial": false,
+      "before": {
+        "slug": "rossignol-forza-50-cam-2026",
+        "category": "skis",
+        "brand": "rossignol",
+        "model": "Forza 50° CAM KONECT",
+        "year": 2026,
+        "title": "Rossignol Forza 50° CAM KONECT 2025/26",
+        "one_liner": "面向中级滑手的雪道 carving 系列，官网标注多种板长与可选固定器。",
+        "specs": {
+          "lengthOptions": "150 / 157 / 164 / 171 / 179 cm",
+          "waistWidth": 75,
+          "turnRadius": 12,
+          "turnRadiusReferenceLength": "164 cm",
+          "terrain": "雪道 / carving",
+          "skierLevel": "中级",
+          "bindingSetup": "裸板或可选 NX 12 KONECT GW",
+          "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+          "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+          "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+          "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+          "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+          "sourceCheckedAt": "2026-10-13",
+          "compatibilitySources": "https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html；https://www.grip-walk.com/faq/"
+        },
+        "images": [
+          {
+            "url": "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dw562b8531/images/large/RAOPX01000_72DPI_01_v01.jpg",
+            "kind": "face",
+            "alt": "Rossignol Forza 50 CAM KONECT 2025/26 官方雪板商品图",
+            "source": "Rossignol 官方产品页（图片使用授权待核）",
+            "sort_order": 0
+          }
+        ],
+        "data_source": {
+          "kind": "official",
+          "origin_url": "https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html"
+        },
+        "status": "published"
+      }
+    },
+    {
+      "slug": "rossignol-hero-elite-lt-ti-2027",
+      "rows": 4,
+      "partial": false,
+      "before": {
+        "slug": "rossignol-hero-elite-lt-ti-2027",
+        "category": "skis",
+        "brand": "rossignol",
+        "model": "Hero Elite LT TI",
+        "year": 2027,
+        "title": "Rossignol Hero Elite LT TI 2026/27",
+        "one_liner": "官方定位为高速长弧雪道竞速风格板，面向技术型滑手。",
+        "specs": {
+          "lengthOptions": "167 / 172 / 177 / 182 cm",
+          "waistWidth": 71,
+          "turnRadius": 16,
+          "turnRadiusReferenceLength": "172 cm",
+          "terrain": "雪道 / 长弧 carving",
+          "skierLevel": "进阶",
+          "bindingSetup": "裸板或可选 SPX 14 KONECT GW",
+          "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+          "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+          "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+          "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+          "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+          "sourceCheckedAt": "2026-10-13",
+          "compatibilitySources": "https://www.rossignol.com/us-en/hero-elite-lt-ti-alpine-skis-RAPSE01000.html；https://www.grip-walk.com/faq/"
+        },
+        "images": [
+          {
+            "url": "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dwa8eccfa0/images/large/RAPSE01000_72DPI_01_v01.jpg",
+            "kind": "face",
+            "alt": "Rossignol Hero Elite LT TI 2026/27 官方雪板商品图",
+            "source": "Rossignol 官方产品页（图片使用授权待核）",
+            "sort_order": 0
+          }
+        ],
+        "data_source": {
+          "kind": "official",
+          "origin_url": "https://www.rossignol.com/us-en/hero-elite-lt-ti-alpine-skis-RAPSE01000.html"
+        },
+        "status": "published"
+      }
+    },
+    {
+      "slug": "rossignol-hero-master-lt-r22-2027",
+      "rows": 4,
+      "partial": false,
+      "before": {
+        "slug": "rossignol-hero-master-lt-r22-2027",
+        "category": "skis",
+        "brand": "rossignol",
+        "model": "Hero Master LT R22",
+        "year": 2027,
+        "title": "Rossignol Hero Master LT R22 2026/27",
+        "one_liner": "Hero 系列竞技取向长弧雪道板，2026/27 官方产品目录在售。",
+        "specs": {
+          "lengthOptions": "173 / 179 / 183 cm",
+          "terrain": "雪道 / 竞速 / 长弧",
+          "skierLevel": "进阶至专家",
+          "bindingSetup": "R22 系统板，固定器依套装配置",
+          "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+          "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+          "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+          "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+          "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+          "sourceCheckedAt": "2026-10-13",
+          "compatibilitySources": "https://www.rossignol.com/se-en/hero-master-lt-r22-alpine-skis-RAPHE01000.html；https://www.grip-walk.com/faq/"
+        },
+        "images": [
+          {
+            "url": "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dw283c3bb5/images/large/RAPHE01000_72DPI_01_v01.jpg",
+            "kind": "face",
+            "alt": "Rossignol Hero Master LT R22 2026/27 官方雪板商品图",
+            "source": "Rossignol 官方产品页（图片使用授权待核）",
+            "sort_order": 0
+          }
+        ],
+        "data_source": {
+          "kind": "official",
+          "origin_url": "https://www.rossignol.com/se-en/hero-master-lt-r22-alpine-skis-RAPHE01000.html"
+        },
+        "status": "published"
+      }
+    },
+    {
+      "slug": "rossignol-forza-40-ca-xpress-2027",
+      "rows": 5,
+      "partial": false,
+      "before": {
+        "slug": "rossignol-forza-40-ca-xpress-2027",
+        "category": "skis",
+        "brand": "rossignol",
+        "model": "Forza 40° CA Xpress",
+        "year": 2027,
+        "title": "Rossignol Forza 40° CA Xpress 2026/27",
+        "one_liner": "面向中级滑手的雪道 carving 型号，强调易上手的操控与刻滑体验。",
+        "specs": {
+          "lengthOptions": "150 / 157 / 164 / 171 / 179 cm",
+          "waistWidth": 75,
+          "turnRadius": 11,
+          "turnRadiusReferenceLength": "157 cm",
+          "terrain": "雪道 / carving",
+          "skierLevel": "中级",
+          "bindingSetup": "裸板，可选 XPRESS 11 GW 固定器",
+          "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+          "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+          "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+          "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+          "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+          "sourceCheckedAt": "2026-10-13",
+          "compatibilitySources": "https://www.rossignol.com/it-it/sci-pista-uomo-forza-40%C2%B0-ca-xpress-RAPPX05000157.html；https://www.grip-walk.com/faq/"
+        },
+        "data_source": {
+          "kind": "official",
+          "origin_url": "https://www.rossignol.com/it-it/sci-pista-uomo-forza-40%C2%B0-ca-xpress-RAPPX05000157.html"
+        },
+        "images": [
+          {
+            "url": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa510bcb6/images/large/RAPPX05000_72DPI_01_v00.jpg?sh=140",
+            "kind": "face",
+            "alt": "Rossignol Forza 40° CA Xpress 2026/27 官方产品图",
+            "source": "Rossignol 官方产品页图片（本地演示，版权授权待核）",
+            "sort_order": 0
+          }
+        ],
+        "status": "published"
+      }
+    },
+    {
+      "slug": "head-supershape-e-magnum-2026",
+      "rows": 2,
+      "partial": true,
+      "before": {
+        "slug": "head-supershape-e-magnum-2026",
+        "category": "skis",
+        "brand": "head",
+        "model": "Supershape e-Magnum",
+        "year": 2026,
+        "title": "HEAD Supershape e-Magnum 2025/26",
+        "one_liner": "HEAD Supershape 雪道系列，官方产品页列出 149–177 cm 多个板长。",
+        "specs": {
+          "lengthOptions": "149 / 156 / 163 / 170 / 177 cm",
+          "waistWidth": 72,
+          "turnRadius": 13.1,
+          "turnRadiusReferenceLength": "170 cm",
+          "terrain": "雪道",
+          "skierLevel": "进阶",
+          "bindingSetup": "含 Protector EVO PR 11 GW 固定器套装",
+          "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+          "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+          "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+          "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+          "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+          "sourceCheckedAt": "2026-10-13",
+          "compatibilitySources": "https://www.head.com/en_US/product/supershape-e-magnum-313306-set；https://www.grip-walk.com/faq/"
+        },
+        "images": [
+          {
+            "url": "https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/683x911/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
+            "kind": "face",
+            "alt": "HEAD Supershape e-Magnum 官方雪板商品图",
+            "source": "HEAD 官方商品页（图片使用授权待核）",
+            "sort_order": 0
+          }
+        ],
+        "data_source": {
+          "kind": "official",
+          "origin_url": "https://www.head.com/en_US/product/supershape-e-magnum-313306-set"
+        },
+        "status": "published"
+      }
+    },
+    {
+      "slug": "head-e-sl-pro-2026",
+      "rows": 2,
+      "partial": true,
+      "before": {
+        "slug": "head-e-sl-pro-2026",
+        "category": "skis",
+        "brand": "head",
+        "model": "Worldcup Rebels e-SL Pro",
+        "year": 2026,
+        "title": "HEAD Worldcup Rebels e-SL Pro 2025/26",
+        "one_liner": "官方归类为雪道竞速小回转板，面向有经验滑手；绑定组合依具体套装。",
+        "specs": {
+          "terrain": "雪道 / 竞速 / 小回转",
+          "skierLevel": "进阶",
+          "bindingSetup": "可选固定器套装",
+          "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+          "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+          "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+          "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+          "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+          "sourceCheckedAt": "2026-10-13",
+          "compatibilitySources": "https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set；https://www.grip-walk.com/faq/"
+        },
+        "images": [
+          {
+            "url": "https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/683x911/worldcup-rebels-e-sl-pro-without-binding.webp",
+            "kind": "face",
+            "alt": "HEAD Worldcup Rebels e-SL Pro 官方雪板商品图",
+            "source": "HEAD 官方商品页（图片使用授权待核）",
+            "sort_order": 0
+          }
+        ],
+        "data_source": {
+          "kind": "official",
+          "origin_url": "https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set"
+        },
+        "status": "published"
+      }
+    }
+  ],
+  "cumulative": {
+    "skiTables": 19,
+    "lengthRows": 80,
+    "fullTables": 16,
+    "partialTables": 3
+  }
+}

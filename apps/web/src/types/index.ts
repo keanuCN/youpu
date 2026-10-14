@@ -145,6 +145,7 @@ export interface GearItem {
   specs: Record<string, number | string | null>;
   /** Verified size-specific rows preserved for catalog detail and seed export. */
   sizeSpecs?: GearSizeSpec[];
+  equipmentSizeChart?: GearSizeSpec[];
   fitGuide?: FitGuide;
   scores: Record<string, number>;
   composite: number;

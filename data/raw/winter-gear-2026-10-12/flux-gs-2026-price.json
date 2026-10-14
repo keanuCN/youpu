@@ -1,0 +1,48 @@
+{
+  "slug": "flux-gs-2026",
+  "price": "CNY 1731–2163",
+  "source": "https://flux-bindings.com/en/products/2526gs",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:42:58.736Z",
+  "productName": "GS",
+  "productType": "Product",
+  "productUrl": "https://flux-bindings.com/en/products/2526gs",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "F25GSXB",
+      "availability": "http://schema.org/InStock",
+      "price": 1731,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526gs?variant=52949799207222"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F25GSSB",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2163,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526gs?variant=52949799239990"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F25GSXW",
+      "availability": "http://schema.org/InStock",
+      "price": 1731,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526gs?variant=52949799272758"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F25GSSW",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 2163,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526gs?variant=52949799305526"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "1ddf6495e1b9bdc45beb8825556238776d0c1d380368416088716e3fe3f18742",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

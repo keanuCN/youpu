@@ -1,0 +1,139 @@
+[
+  {
+    "slug": "bataleon-evil-twin-2025",
+    "category": "snowboard",
+    "brand": "bataleon",
+    "model": "Evil Twin",
+    "year": 2025,
+    "url": "https://ca.bataleon.com/pages/board-archive",
+    "mode": "cheerio",
+    "representativeSize": "154"
+  },
+  {
+    "slug": "burton-custom-camber-2026",
+    "category": "snowboard",
+    "brand": "burton",
+    "model": "Custom Camber",
+    "year": 2026,
+    "url": "https://www.burton.com/se/en/p/mens-burton-custom-camber-snowboard/W26-106881.html",
+    "mode": "cheerio",
+    "representativeSize": "158"
+  },
+  {
+    "slug": "capita-defenders-of-awesome-2026",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Defenders of Awesome",
+    "year": 2026,
+    "url": "https://golgoda.com/PDF/25-26%20CAPiTA.pdf",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "capita-horrorscope-2024",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Pathfinder Reverse",
+    "year": 2024,
+    "url": "https://www.evo.com/products/238313-capita-pathfinder-reverse-camber-snowboard-2024",
+    "mode": "cheerio",
+    "representativeSize": "151"
+  },
+  {
+    "slug": "decathlon-all-road-900-2026",
+    "category": "snowboard",
+    "brand": "decathlon",
+    "model": "All Road 900",
+    "year": 2026,
+    "url": "https://www.decathlon.co.uk/p/adults-snowboarding-board-for-slope-and-freeride-all-road-900/332434/c314c29m8643399",
+    "mode": "cheerio",
+    "representativeSize": "154"
+  },
+  {
+    "slug": "decathlon-park-ride-500-2026",
+    "category": "snowboard",
+    "brand": "decathlon",
+    "model": "Park & Ride 500",
+    "year": 2026,
+    "url": "https://www.decathlon.co.uk/p/mens-all-mountain-and-freestyle-snowboard-park-and-ride-500-green/306010/c49c1m8938817",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "decathlon-snb-100-2026",
+    "category": "snowboard",
+    "brand": "decathlon",
+    "model": "SNB 100",
+    "year": 2026,
+    "url": "https://www.decathlon.ca/en/p/all-mountain-and-freestyle-snowboard-snb-100/309522/c193m8660203",
+    "mode": "cheerio",
+    "representativeSize": "152"
+  },
+  {
+    "slug": "gray-desperado-2024",
+    "category": "snowboard",
+    "brand": "gray",
+    "model": "DESPERADO micro/mini",
+    "year": 2024,
+    "url": "https://graysnowboards.co.jp/product2324/",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "jones-hovercraft-2026",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Hovercraft 2.0",
+    "year": 2026,
+    "url": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "160"
+  },
+  {
+    "slug": "jones-mountain-twin-2026",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Mountain Twin",
+    "year": 2026,
+    "url": "https://eu.jonessnowboards.com/de/products/mens-mountain-twin-snowboard-2026?variant=43731143983239",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "nitro-beast-2026",
+    "category": "snowboard",
+    "brand": "nitro",
+    "model": "Beast",
+    "year": 2026,
+    "url": "https://www.nitrosnowboards.com/products/beast-snowboard",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "nitro-team-2026",
+    "category": "snowboard",
+    "brand": "nitro",
+    "model": "Team",
+    "year": 2026,
+    "url": "https://www.nitrosnow.ca/products/2026-team",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "salomon-assassin-2026",
+    "category": "snowboard",
+    "brand": "salomon",
+    "model": "Assassin",
+    "year": 2026,
+    "url": "https://www.salomon.com/en-us/product/assassin-li1300",
+    "mode": "cheerio"
+  },
+  {
+    "slug": "salomon-sight-2026",
+    "category": "snowboard",
+    "brand": "salomon",
+    "model": "Sight",
+    "year": 2026,
+    "url": "https://cdn.shopify.com/s/files/1/0673/9981/1381/files/FW25_digitalcatalogue_techbook.pdf?v=1736124811",
+    "mode": "cheerio",
+    "representativeSize": "153"
+  }
+]

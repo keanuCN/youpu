@@ -1,0 +1,694 @@
+{
+  "date": "2026-10-12",
+  "scope": "2027 单板逐尺码补充",
+  "before": {
+    "products": 77,
+    "withSizeTables": 35
+  },
+  "after": {
+    "products": 77,
+    "withSizeTables": 62,
+    "newSizeRows": 208,
+    "totalSizeRows": 476
+  },
+  "updates": [
+    {
+      "slug": "burton-talent-scout-2027",
+      "sizeRows": 5,
+      "sourceUrl": "https://www.burton.com/en-us/products/womens-burton-talent-scout-camber-snowboard-132181",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/burton-talent-scout-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "138 / 141 / 146 / 149 / 152"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "capita-aeronaut-2027",
+      "sizeRows": 9,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-aeronaut-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-aeronaut-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "153 / 155 / 157 / 159 / 161 / 156W / 158W / 160W / 162W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "sidecutRadii": {
+          "before": null,
+          "after": "8.5/7.5 m"
+        },
+        "sidecut": {
+          "before": 8.5,
+          "after": null
+        }
+      }
+    },
+    {
+      "slug": "capita-indoor-survival-2027",
+      "sizeRows": 9,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-indoor-survival-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-indoor-survival-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "150 / 152 / 154 / 156 / 158 / 160 / 155W / 158W / 161W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "sidecutRadii": {
+          "before": null,
+          "after": "7.96/3/-1.5/3/7.96 m"
+        },
+        "sidecut": {
+          "before": 7.96,
+          "after": null
+        }
+      }
+    },
+    {
+      "slug": "capita-kazu-kokubo-pro-2027",
+      "sizeRows": 8,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-kazu-kokubo-pro-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-kazu-kokubo-pro-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "151 / 154 / 157 / 160 / 155W / 158W / 161W / 164W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "capita-mega-death-2027",
+      "sizeRows": 7,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-mega-death-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-mega-death-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "156 / 159 / 162 / 157W / 161W / 165W / 169W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "sidecutRadii": {
+          "before": null,
+          "after": "8.4/8.0/7.8 m"
+        },
+        "sidecut": {
+          "before": 8.4,
+          "after": null
+        }
+      }
+    },
+    {
+      "slug": "capita-mega-merc-2027",
+      "sizeRows": 8,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-mega-merc-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-mega-merc-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "153 / 155 / 157 / 159 / 161 / 156W / 158W / 160W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "sidecutRadii": {
+          "before": null,
+          "after": "7.85/3/-1.5/3/7.85 m"
+        },
+        "sidecut": {
+          "before": 7.85,
+          "after": null
+        }
+      }
+    },
+    {
+      "slug": "capita-outerspace-living-2027",
+      "sizeRows": 11,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-outerspace-living-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-outerspace-living-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "148 / 150 / 152 / 154 / 156 / 158 / 160 / 155W / 157W / 159W / 161W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "capita-pathfinder-2027",
+      "sizeRows": 11,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-pathfinder-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-pathfinder-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "145 / 147 / 149 / 151 / 153 / 155 / 157 / 153W / 155W / 157W / 159W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "capita-sb-resort-twin-2027",
+      "sizeRows": 7,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-sb-resort-twin-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-sb-resort-twin-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "152 / 154 / 156 / 158 / 160 / 155W / 158W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "sidecutRadii": {
+          "before": null,
+          "after": "7.96/3/-1.5/3/7.96 m"
+        },
+        "sidecut": {
+          "before": 7.96,
+          "after": null
+        }
+      }
+    },
+    {
+      "slug": "capita-sidewinder-2027",
+      "sizeRows": 4,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-sidewinder-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-sidewinder-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "153 / 156 / 159 / 162"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "sidecutRadii": {
+          "before": null,
+          "after": "7.0/6.5 m"
+        },
+        "sidecut": {
+          "before": 7,
+          "after": null
+        }
+      }
+    },
+    {
+      "slug": "capita-super-doa-2027",
+      "sizeRows": 10,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-super-d-o-a-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-super-doa-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "152 / 154 / 156 / 158 / 160 / 155W / 157W / 159W / 161W / 163W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "capita-the-black-snowboard-of-death-2027",
+      "sizeRows": 7,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-the-black-snowboard-of-death-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-the-black-snowboard-of-death-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "156 / 159 / 162 / 157W / 161W / 165W / 169W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "sidecutRadii": {
+          "before": null,
+          "after": "8.4/8.0/7.8 m"
+        },
+        "sidecut": {
+          "before": 8.4,
+          "after": null
+        }
+      }
+    },
+    {
+      "slug": "capita-the-matriarch-2027",
+      "sizeRows": 5,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-the-matriarch-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-the-matriarch-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "155 / 158 / 161 / 157W / 160W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "capita-the-navigator-2027",
+      "sizeRows": 5,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-the-navigator-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-the-navigator-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "155 / 158 / 161 / 164 / 167"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "sidecutRadii": {
+          "before": null,
+          "after": "8.3/7.2/8.3 m"
+        },
+        "sidecut": {
+          "before": 8.3,
+          "after": null
+        }
+      }
+    },
+    {
+      "slug": "capita-ultrafear-2027",
+      "sizeRows": 8,
+      "sourceUrl": "https://capitasnowboarding.com/products/capita-ultrafear-mens-snowboard-2027",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/capita-ultrafear-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "149 / 151 / 153 / 155 / 157 / 153W / 155W / 157W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "sidecut": {
+          "before": 8.26,
+          "after": 7.8
+        }
+      }
+    },
+    {
+      "slug": "jones-flagship-pro-2027",
+      "sizeRows": 7,
+      "sourceUrl": "https://www.jonessnowboards.com/products/mens-flagship-pro-snowboard",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/jones-flagship-pro-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "154 / 158 / 159W / 161 / 162W / 164 / 165W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "jones-freecarver-6000s-2027",
+      "sizeRows": 7,
+      "sourceUrl": "https://www.jonessnowboards.com/products/freecarver-6000s-snowboard",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/jones-freecarver-6000s-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "150N / 150 / 154N / 154 / 158N / 158 / 162"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "weight": {
+          "before": 2700,
+          "after": 3000
+        },
+        "waistWidth": {
+          "before": 248,
+          "after": 263
+        }
+      }
+    },
+    {
+      "slug": "jones-frontier-2-0-2027",
+      "sizeRows": 11,
+      "sourceUrl": "https://www.jonessnowboards.com/products/mens-frontier-20-snowboard",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/jones-frontier-2-0-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "150 / 153 / 155W / 156 / 158W / 159 / 161W / 162 / 164W / 165 / 167W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "jones-howler-2027",
+      "sizeRows": 8,
+      "sourceUrl": "https://www.jonessnowboards.com/products/mens-howler-snowboard",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/jones-howler-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "152 / 155 / 157W / 158 / 160W / 161 / 163W / 164"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "jones-mind-expander-2-0-2027",
+      "sizeRows": 7,
+      "sourceUrl": "https://www.jonessnowboards.com/products/mind-expander-20-snowboard",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/jones-mind-expander-2-0-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "142 / 146 / 150 / 154 / 158 / 162 / 166"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "jones-mountain-twin-2027",
+      "sizeRows": 15,
+      "sourceUrl": "https://www.jonessnowboards.com/products/mens-mountain-twin-snowboard",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/jones-mountain-twin-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "149 / 151 / 153W / 154 / 156W / 157 / 158UW / 159W / 160 / 161UW / 162W / 163 / 164UW / 165W / 168W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "jones-rally-cat-2027",
+      "sizeRows": 10,
+      "sourceUrl": "https://www.jonessnowboards.com/products/mens-rally-cat-snowboard",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/jones-rally-cat-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "151 / 154 / 155W / 156 / 158 / 159W / 161 / 162W / 166W / 170W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "jones-storm-chaser-2027",
+      "sizeRows": 4,
+      "sourceUrl": "https://www.jonessnowboards.com/products/storm-chaser-snowboard",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/jones-storm-chaser-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "142 / 147 / 152 / 157"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        }
+      }
+    },
+    {
+      "slug": "jones-twin-sister-2027",
+      "sizeRows": 6,
+      "sourceUrl": "https://www.jonessnowboards.com/products/womens-twin-sister-snowboard",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/jones-twin-sister-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "140 / 143 / 146 / 149 / 152 / 155"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "weight": {
+          "before": null,
+          "after": 2400
+        },
+        "effectiveEdge": {
+          "before": null,
+          "after": 1150
+        },
+        "stanceSetback": {
+          "before": 20,
+          "after": 0
+        },
+        "sidecut": {
+          "before": null,
+          "after": 7.2
+        }
+      }
+    },
+    {
+      "slug": "nitro-alternator-2027",
+      "sizeRows": 4,
+      "sourceUrl": "https://www.nitrosnowboards.com/collections/snowboards-mountain-26-27/products/alternator-snowboard-1",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/nitro-alternator-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "154 / 157 / 160 / 162"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "stanceSetback": {
+          "before": 15,
+          "after": -15
+        },
+        "sidecutRadii": {
+          "before": null,
+          "after": "10.8 / 6.8 / 10.8 m"
+        }
+      }
+    },
+    {
+      "slug": "ride-deep-fake-2027",
+      "sizeRows": 10,
+      "sourceUrl": "https://ridesnowboards.com/en-us/p/deep-fake-snowboard-rd261850",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/ride-deep-fake-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "144 / 148 / 151 / 155 / 157 / 159 / 162 / 157W / 161W / 165W"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "stanceSetback": {
+          "before": null,
+          "after": -19
+        },
+        "sidecutRadii": {
+          "before": null,
+          "after": "9.8 / 6.7 / - m（entry / focus / exit；- 表示未提供）"
+        }
+      }
+    },
+    {
+      "slug": "ride-warpig-2027",
+      "sizeRows": 5,
+      "sourceUrl": "https://ridesnowboards.com/en-us/p/warpig-snowboard-rd261857",
+      "evidence": "data/raw/snowboard/completion-2026-10-12/ride-warpig-2027.json",
+      "delta": {
+        "lengthOptions": {
+          "before": null,
+          "after": "X-SMALL (142) / SMALL (148) / MEDIUM (151) / LARGE (154) / X-LARGE (158)"
+        },
+        "widthVariant": {
+          "before": null,
+          "after": "standard"
+        },
+        "stanceSetback": {
+          "before": null,
+          "after": 0
+        },
+        "sidecutRadii": {
+          "before": null,
+          "after": "5.6 / - / 6.9 m（entry / focus / exit；- 表示未提供）"
+        }
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "slug": "jones-hovercraft-2-0-2027",
+      "reason": "官网当前 SKU 不属于目标季节",
+      "sku": "J.26.SNU.HVC.XX.144.1"
+    }
+  ],
+  "remaining": [
+    "历史季节的全尺码证据",
+    "Hovercraft 2.0 2027 的对应 SKU",
+    "中国市场价格来源",
+    "同季节实测与编辑评分依据",
+    "图片展示授权"
+  ],
+  "additionalCorrection": {
+    "slug": "salomon-huck-knife-2027",
+    "size": "156",
+    "field": "waistWidth",
+    "before": 248,
+    "after": 255,
+    "sourceUrl": "https://www.salomon.com/en-us/product/huck-knife-li1304",
+    "article": "L49292200",
+    "evidence": "官网 156 行及现有 seed 逐尺码表均列 255 mm；旧 248 mm 对应 149 码。",
+    "sidecut": {
+      "before": 7.1,
+      "after": 7.5,
+      "unit": "m"
+    }
+  },
+  "pendingProducts": [
+    {
+      "slug": "bataleon-evil-twin-2025",
+      "year": 2025,
+      "sourceUrl": "https://ca.bataleon.com/pages/board-archive",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "burton-custom-camber-2026",
+      "year": 2026,
+      "sourceUrl": "https://www.burton.com/se/en/p/mens-burton-custom-camber-snowboard/W26-106881.html",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "capita-defenders-of-awesome-2026",
+      "year": 2026,
+      "sourceUrl": "https://golgoda.com/PDF/25-26%20CAPiTA.pdf",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "capita-horrorscope-2024",
+      "year": 2024,
+      "sourceUrl": "https://www.evo.com/products/238313-capita-pathfinder-reverse-camber-snowboard-2024",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "decathlon-all-road-900-2026",
+      "year": 2026,
+      "sourceUrl": "https://www.decathlon.co.uk/p/adults-snowboarding-board-for-slope-and-freeride-all-road-900/332434/c314c29m8643399",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "decathlon-park-ride-500-2026",
+      "year": 2026,
+      "sourceUrl": "https://www.decathlon.co.uk/p/mens-all-mountain-and-freestyle-snowboard-park-and-ride-500-green/306010/c49c1m8938817",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "decathlon-snb-100-2026",
+      "year": 2026,
+      "sourceUrl": "https://www.decathlon.ca/en/p/all-mountain-and-freestyle-snowboard-snb-100/309522/c193m8660203",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "gray-desperado-2024",
+      "year": 2024,
+      "sourceUrl": "https://graysnowboards.co.jp/product2324/",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "jones-hovercraft-2-0-2027",
+      "year": 2027,
+      "sourceUrl": "https://eu.jonessnowboards.com/products/hovercraft-20-snowboard",
+      "reason": "当前官网 SKU 与目标季节不一致"
+    },
+    {
+      "slug": "jones-hovercraft-2026",
+      "year": 2026,
+      "sourceUrl": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "jones-mountain-twin-2026",
+      "year": 2026,
+      "sourceUrl": "https://eu.jonessnowboards.com/de/products/mens-mountain-twin-snowboard-2026?variant=43731143983239",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "nitro-beast-2026",
+      "year": 2026,
+      "sourceUrl": "https://www.nitrosnowboards.com/products/beast-snowboard",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "nitro-team-2026",
+      "year": 2026,
+      "sourceUrl": "https://www.nitrosnow.ca/products/2026-team",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "salomon-assassin-2026",
+      "year": 2026,
+      "sourceUrl": "https://www.salomon.com/en-us/product/assassin-li1300",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    },
+    {
+      "slug": "salomon-sight-2026",
+      "year": 2026,
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0673/9981/1381/files/FW25_digitalcatalogue_techbook.pdf?v=1736124811",
+      "reason": "需对应历史季节的完整逐尺码证据"
+    }
+  ],
+  "checks": {
+    "dataValidation": "130 类目 / 59 品牌 / 294 产品通过",
+    "webTypecheck": "通过",
+    "diffCheck": "通过",
+    "protectedFields": "77 款的价格、评分、图片、文案均与基线一致",
+    "sizeTableParity": "27 款 seed 与核验映射一致，代表尺寸关键数值一致",
+    "regressions": "154/154N 分列、149/156 腰宽和侧切错码、多段侧切、单位重复检查通过",
+    "sizeTableRendering": "实际组件静态渲染通过：选码字段显示，cm/kg 不重复添加 mm/g"
+  }
+}

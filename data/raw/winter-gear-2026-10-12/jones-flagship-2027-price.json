@@ -1,0 +1,700 @@
+{
+  "slug": "jones-flagship-2027",
+  "price": "USD 749.95",
+  "source": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T07:05:47.595Z",
+  "productName": "Men's Flagship Snowboard",
+  "productType": "Product",
+  "productUrl": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard",
+  "offers": [
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822233240",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.151.1",
+      "gtin13": "7630680887887",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822266008",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.154.1",
+      "gtin13": "7630680887894",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822298776",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.156W.1",
+      "gtin13": "7630680887900",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822331544",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.158.1",
+      "gtin13": "7630680887917",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822364312",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.159W.1",
+      "gtin13": "7630680887924",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822397080",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.161.1",
+      "gtin13": "7630680887931",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822429848",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.162W.1",
+      "gtin13": "7630680887948",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822462616",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.164.1",
+      "gtin13": "7630680887955",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822495384",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.165W.1",
+      "gtin13": "7630680887962",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822528152",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.167.1",
+      "gtin13": "7630680887979",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822560920",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.169W.1",
+      "gtin13": "7630680887986",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard?variant=49196822593688",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.SNM.FLA.000.172.1",
+      "gtin13": "7630680887993",
+      "availability": "https://schema.org/OutOfStock",
+      "price": 749.95,
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "USD"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://www.jonessnowboards.com/en-int/policies/refund-policy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards US",
+        "url": "https://www.jonessnowboards.com"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "c98a94645b1a81e291d6781b8c2f85da0e9b654c0142e2d995498df533b21bc1",
+    "normalizedSpecHash": "403af5a92f3b86a81d42a81f695e28701828a0f5bd22516ae616d3fb4c7879e8"
+  }
+}

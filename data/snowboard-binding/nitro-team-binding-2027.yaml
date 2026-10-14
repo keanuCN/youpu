@@ -9,12 +9,19 @@ specs:
   entrySystem: strap
   flexFeel: medium
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Burton Channel，较小盘面有助于保留板面自然弯曲"
-  bootCompatibility: "普通绑带雪鞋；官方尺码 M/L"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "Nitro 男款：M US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 11–14 / MP 29–32 / EU 44–48"
   ankleStrap: "3D OptiFrame Locked Down 聚氨酯脚踝绑带，强调支撑与响应"
   toeStrap: "Übergrip PRO 3D 注塑脚趾绑带，内侧防滑垫，适配不同鞋头"
   buckles: "Speed Wheel 3.0 卡扣/棘轮；Cable Reinforced Connectors 内置不锈钢线缆加固梯带"
   cushioning: "Air Dampening 后跟缓震；3° 倾斜脚床"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://www.nitrosnowboards.com/products/team-bindings-1
+  priceCheckedAt: 2026-10-12
+  officialPrice: EUR 319.9
+  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
+  priceSource: https://www.nitrosnowboards.com/products/team-bindings-1
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: "https://www.nitrosnowboards.com/cdn/shop/files/12BG11005-104_Team-Bindings_Vivid-Orange_Product-1.jpg?v=1779339368&width=2500"
     kind: face

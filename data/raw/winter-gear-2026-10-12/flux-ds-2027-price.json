@@ -1,0 +1,216 @@
+{
+  "slug": "flux-ds-2027",
+  "price": "CNY 2562",
+  "source": "https://flux-bindings.com/en/products/2627-ds",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:42:56.669Z",
+  "productName": "DS",
+  "productType": "Product",
+  "productUrl": "https://flux-bindings.com/en/products/2627-ds",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "F27DSXC",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190489398"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSSC",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190522166"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSMC",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190554934"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSLC",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190587702"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26DSXB",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190227254"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26DSSB",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190260022"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26DSMB",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190292790"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSLB",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190325558"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26DSXW",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467182821686"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26DSSW",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467182854454"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26DSMW",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467182887222"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSLW",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467182919990"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSSO",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190391094"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSMO",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190423862"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSLO",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190456630"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSXG",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190620470"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSSG",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190653238"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSMG",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190686006"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSLG",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190718774"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSXP",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190751542"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSSP",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190784310"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSMP",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190817078"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSSZ",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190915382"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSMZ",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190948150"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F27DSLZ",
+      "availability": "http://schema.org/InStock",
+      "price": 2562,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2627-ds?variant=54467190980918"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "73f71492f2b76c2c510db474d752fce4e71c482e6fad93daae871cd1cf8f55cb",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "slug": "capita-dark-horse-2027",
+  "price": "USD 499.95",
+  "source": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T07:05:11.826Z",
+  "productName": "DARK HORSE",
+  "productType": "Product",
+  "productUrl": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "21040501-MSC-148",
+      "gtin12": 810161592203,
+      "availability": "http://schema.org/OutOfStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027?variant=48140331548907"
+    },
+    {
+      "@type": "Offer",
+      "sku": "21040501-MSC-150",
+      "gtin12": 810161592210,
+      "availability": "http://schema.org/OutOfStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027?variant=48140331581675"
+    },
+    {
+      "@type": "Offer",
+      "sku": "21040501-MSC-152",
+      "gtin12": 810161592227,
+      "availability": "http://schema.org/InStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027?variant=48140331614443"
+    },
+    {
+      "@type": "Offer",
+      "sku": "21040501-MSC-154",
+      "gtin12": 810161592234,
+      "availability": "http://schema.org/OutOfStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027?variant=48140331647211"
+    },
+    {
+      "@type": "Offer",
+      "sku": "21040501-MSC-156",
+      "gtin12": 810161592241,
+      "availability": "http://schema.org/OutOfStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027?variant=48140331679979"
+    },
+    {
+      "@type": "Offer",
+      "sku": "21040501-MSC-158",
+      "gtin12": 810161592258,
+      "availability": "http://schema.org/OutOfStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027?variant=48140331712747"
+    },
+    {
+      "@type": "Offer",
+      "sku": "21040601-MSC-154W",
+      "gtin12": 810161592265,
+      "availability": "http://schema.org/OutOfStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027?variant=48140331745515"
+    },
+    {
+      "@type": "Offer",
+      "sku": "21040601-MSC-156W",
+      "gtin12": 810161592272,
+      "availability": "http://schema.org/OutOfStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027?variant=48140331778283"
+    },
+    {
+      "@type": "Offer",
+      "sku": "21040601-MSC-158W",
+      "gtin12": 810161592289,
+      "availability": "http://schema.org/OutOfStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027?variant=48140331811051"
+    },
+    {
+      "@type": "Offer",
+      "sku": "21040601-MSC-160W",
+      "gtin12": 810161592296,
+      "availability": "http://schema.org/OutOfStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027?variant=48140331843819"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "45d2fb53b78175b1a40e907854208bc9de4cf5313ee2d8e55da1279abdd86711",
+    "normalizedSpecHash": "ec0e2cff703350e7b1458bb71456ccc9c4191ff567af5bc0ad3546048a24709f"
+  }
+}

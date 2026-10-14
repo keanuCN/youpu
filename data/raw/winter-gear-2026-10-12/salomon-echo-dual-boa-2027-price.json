@@ -1,0 +1,211 @@
+{
+  "slug": "salomon-echo-dual-boa-2027",
+  "price": "USD 469.95",
+  "source": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:47:55.399Z",
+  "productName": "ECHO DUAL BOA®",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "7",
+      "sku": "L49298000022",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000022",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "7.5",
+      "sku": "L49298000023",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000023",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "8",
+      "sku": "L49298000024",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000024",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "8.5",
+      "sku": "L49298000025",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000025",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "9",
+      "sku": "L49298000026",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000026",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "9.5",
+      "sku": "L49298000027",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000027",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "10",
+      "sku": "L49298000028",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000028",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "10.5",
+      "sku": "L49298000029",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000029",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "11",
+      "sku": "L49298000030",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000030",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "11.5",
+      "sku": "L49298000031",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000031",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "12",
+      "sku": "L49298000032",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000032",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "12.5",
+      "sku": "L49298000033",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000033",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "13",
+      "sku": "L49298000034",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000034",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "ECHO DUAL BOA® Black / Wren / Fiery Red",
+      "image": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Wren / Fiery Red",
+      "size": "13.5",
+      "sku": "L49298000035",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035/L49298000?sizeId=L49298000035",
+        "priceCurrency": "USD",
+        "price": "469.95"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "ce6297156957988218ba0f16b1303223dac06d9042ce03a7765ea55ab0c26093",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

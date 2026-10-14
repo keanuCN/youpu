@@ -5,7 +5,11 @@
  * 唯一实时链路是埋点上报 `track()` → POST /api/events（见 lib/track.ts）。
  * M2 起这里将补齐目录/详情/搜索等接口，内容层改为「API 优先、内容包回退」。
  */
-export const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:3001";
+const configuredApiBase = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:3001";
+// 浏览器走同源代理；服务端继续使用绝对地址，兼容正式域名和 SSH 转发入口。
+export const API_BASE = typeof window !== "undefined" && process.env.NEXT_PUBLIC_API_SAME_ORIGIN === "true"
+  ? `${window.location.origin}${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}`
+  : configuredApiBase;
 
 const ACCESS_TOKEN_KEY = "youpu:auth:access-token";
 const REFRESH_TOKEN_KEY = "youpu:auth:refresh-token";
@@ -159,7 +163,7 @@ export function productRefForGear(gear: { id: string; brand: string; model: stri
 
 async function request<T>(
   path: string,
-  options: { method?: string; body?: unknown; retry?: boolean; accessToken?: string | null } = {},
+  options: { method?: string; body?: unknown; retry?: boolean; accessToken?: string | null; signal?: AbortSignal } = {},
 ): Promise<T> {
   const headers: Record<string, string> = { Accept: "application/json" };
   const accessToken = options.accessToken === undefined ? getCloudAccessToken() : options.accessToken;
@@ -173,6 +177,7 @@ async function request<T>(
       headers,
       body: options.body === undefined ? undefined : JSON.stringify(options.body),
       cache: "no-store",
+      signal: options.signal,
     });
   } catch (error) {
     throw new WebApiError(`无法连接本地 API：${API_BASE}`, 0, error);
@@ -305,8 +310,8 @@ export function cloudCreateReport(targetType: "rating" | "reply", targetId: stri
   return request("/api/reports", { method: "POST", body: { targetType, targetId, reason, note } });
 }
 
-export function cloudRecommendations(categorySlug: string, answers: Record<string, unknown>): Promise<{ categorySlug: string; picks: CloudRecommendation[] }> {
-  return request("/api/recommendations", { method: "POST", body: { categorySlug, answers } });
+export function cloudRecommendations(categorySlug: string, answers: Record<string, unknown>, signal?: AbortSignal): Promise<{ categorySlug: string; picks: CloudRecommendation[] }> {
+  return request("/api/recommendations", { method: "POST", body: { categorySlug, answers }, signal });
 }
 
 export function cloudMarkNotificationRead(id: string, read = true): Promise<{ ok: true }> {

@@ -33,15 +33,20 @@ specs:
     - powder
     - carving
   sizeSpecs:
-    - {size: "148", effectiveEdge: 1120, noseWidth: 284, waistWidth: 240, tailWidth: 278, sidecutRadii: "6.9 m", stanceWidth: "483 mm (19 in reference)", setback: 19}
-    - {size: "151", effectiveEdge: 1140, noseWidth: 288, waistWidth: 243, tailWidth: 282, sidecutRadii: "7.1 m", stanceWidth: "508 mm (20 in reference)", setback: 19}
-    - {size: "154", effectiveEdge: 1170, noseWidth: 293, waistWidth: 247, tailWidth: 287, sidecutRadii: "7.3 m", stanceWidth: "533 mm (21 in reference)", setback: 19}
-    - {size: "157", effectiveEdge: 1190, noseWidth: 297, waistWidth: 250, tailWidth: 291, sidecutRadii: "7.8 m", stanceWidth: "533 mm (21 in reference)", setback: 19}
-    - {size: "160", effectiveEdge: 1220, noseWidth: 301, waistWidth: 253, tailWidth: 295, sidecutRadii: "8.0 m", stanceWidth: "559 mm (22 in reference)", setback: 19}
-    - {size: "160W", effectiveEdge: 1220, noseWidth: 309, waistWidth: 261, tailWidth: 303, sidecutRadii: "8.0 m", stanceWidth: "559 mm (22 in reference)", setback: 19}
-    - {size: "163", effectiveEdge: 1240, noseWidth: 305, waistWidth: 256, tailWidth: 299, sidecutRadii: "8.1 m", stanceWidth: "584 mm (23 in reference)", setback: 19}
-    - {size: "163W", effectiveEdge: 1240, noseWidth: 315, waistWidth: 264, tailWidth: 307, sidecutRadii: "8.1 m", stanceWidth: "584 mm (23 in reference)", setback: 19}
-    - {size: "166", effectiveEdge: 1270, noseWidth: 312, waistWidth: 262, tailWidth: 306, sidecutRadii: "8.3 m", stanceWidth: "584 mm (23 in reference)", setback: 19}
+    - { size: "148", effectiveEdge: 1120, noseWidth: 284, waistWidth: 240, tailWidth: 278, sidecutRadii: "6.9 m", stanceWidth: "483 mm (19 in reference)", setback: 19 }
+    - { size: "151", effectiveEdge: 1140, noseWidth: 288, waistWidth: 243, tailWidth: 282, sidecutRadii: "7.1 m", stanceWidth: "508 mm (20 in reference)", setback: 19 }
+    - { size: "154", effectiveEdge: 1170, noseWidth: 293, waistWidth: 247, tailWidth: 287, sidecutRadii: "7.3 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "157", effectiveEdge: 1190, noseWidth: 297, waistWidth: 250, tailWidth: 291, sidecutRadii: "7.8 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "160", effectiveEdge: 1220, noseWidth: 301, waistWidth: 253, tailWidth: 295, sidecutRadii: "8.0 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "160W", effectiveEdge: 1220, noseWidth: 309, waistWidth: 261, tailWidth: 303, sidecutRadii: "8.0 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "163", effectiveEdge: 1240, noseWidth: 305, waistWidth: 256, tailWidth: 299, sidecutRadii: "8.1 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+    - { size: "163W", effectiveEdge: 1240, noseWidth: 315, waistWidth: 264, tailWidth: 307, sidecutRadii: "8.1 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+    - { size: "166", effectiveEdge: 1270, noseWidth: 312, waistWidth: 262, tailWidth: 306, sidecutRadii: "8.3 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 849.95
+  priceMarket: 原币 USD；来源商店 k2snow.com
+  priceSource: https://k2snow.com/en-us/p/alchemist-mens-snowboard-kb262025
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 images:
   - url: "https://blauerboardshop.com/cdn/shop/files/K2AlchemistSnowboard2027.png?v=1776976538"
     kind: face

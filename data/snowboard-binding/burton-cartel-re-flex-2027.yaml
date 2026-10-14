@@ -9,7 +9,7 @@ specs:
   entrySystem: strap
   flexFeel: medium
   mountingSystem: "Re:Flex；兼容主要雪板安装系统。Burton 3D 系统需另购 3D Hinge Disc（不含）"
-  bootCompatibility: "适配常规单板雪鞋"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "S：男靴 US 6–8 / EU 38–41；M：US 8–11 / EU 41–44；L：US 10+ / EU 43+"
   baseplateMaterial: "30% 短切玻纤/尼龙复合材料"
   ankleStrap: "Hammockstrap 2.0"
@@ -19,6 +19,10 @@ specs:
   highbackAdjustment: "DialFLAD 前倾角调节"
   cushioning: "Re:Flex FullBED 全掌缓震"
   warranty: "底盘终身保修；绑带和高背自购买日起 1 年保修"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 本轮官方型号证据未通过复核，现有尺寸不视为重新核实；详见待核记录。
+  compatibilitySources: https://www.burton.com/en-us/products/mens-burton-cartel-re-flex-snowboard-bindings-105391
+  priceCheckedAt: 2026-10-12
+  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
 images:
   - url: "https://www.burton.com/cdn/shop/files/1053917E7W_1.webp?v=1783620002&width=1200"
     kind: face

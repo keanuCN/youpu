@@ -4,7 +4,8 @@ brand: salomon
 model: Assassin
 year: 2026
 title: Salomon Assassin 2026
-one_liner: 面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；25/26 MSRP $649.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥4,680 CNY。
+one_liner: 面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；25/26 MSRP
+  $649.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥4,680 CNY。
 editorial_scores:
   stability: 7.7
   response: 7.8
@@ -29,8 +30,100 @@ specs:
     - all-mountain
     - freestyle
     - powder
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 649.95
+  priceMarket: 原币 USD；来源商店 www.salomon.com
+  priceSource: https://www.salomon.com/en-us/product/assassin-li1300
+  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
+  sizeSpecs:
+    - size: "150"
+      weight: 2650
+      contactLength: 1020
+      effectiveEdge: 1106
+      waistWidth: 248
+      noseWidth: 286
+      tailWidth: 286
+      sidecutRadii: "7.1"
+      setback: 0
+    - size: "153"
+      weight: 2730
+      contactLength: 1044
+      effectiveEdge: 1130
+      waistWidth: 251
+      noseWidth: 291
+      tailWidth: 291
+      sidecutRadii: "7.3"
+      setback: 0
+    - size: "156"
+      weight: 2810
+      contactLength: 1068
+      effectiveEdge: 1160
+      waistWidth: 253
+      noseWidth: 296
+      tailWidth: 296
+      sidecutRadii: "7.5"
+      setback: 0
+    - size: "159"
+      weight: 2850
+      contactLength: 1092
+      effectiveEdge: 1188
+      waistWidth: 255
+      noseWidth: 301
+      tailWidth: 301
+      sidecutRadii: "7.7"
+      setback: 0
+    - size: "162"
+      weight: 2930
+      contactLength: 1120
+      effectiveEdge: 1214
+      waistWidth: 258
+      noseWidth: 303
+      tailWidth: 303
+      sidecutRadii: "7.9"
+      setback: 0
+    - size: "165"
+      weight: 3050
+      contactLength: 1146
+      effectiveEdge: 1242
+      waistWidth: 260
+      noseWidth: 307
+      tailWidth: 307
+      sidecutRadii: "8.1"
+      setback: 0
+    - size: 158W
+      weight: 2950
+      contactLength: 1084
+      effectiveEdge: 1176
+      waistWidth: 263
+      noseWidth: 304
+      tailWidth: 304
+      sidecutRadii: "7.6"
+      setback: 0
+    - size: 163W
+      weight: 3100
+      contactLength: 1118
+      effectiveEdge: 1212
+      waistWidth: 266
+      noseWidth: 308
+      tailWidth: 308
+      sidecutRadii: "8"
+      setback: 0
+    - size: 168W
+      weight: 3240
+      contactLength: 1155
+      effectiveEdge: 1251
+      waistWidth: 268
+      noseWidth: 313
+      tailWidth: 313
+      sidecutRadii: "8.2"
+      setback: 0
+  selectionNotes: 2025/26 官方技术册第 117 页列出 150/153/156/159/162/165 和 158W/163W/168W。W
+    为加宽尺码；板重为各长度目录标称值。结合雪鞋外壳、体重和站姿选择，不把板腰单一参考值套用到所有尺码。
+  compatibilitySources: https://cdn.shopify.com/s/files/1/0673/9981/1381/files/FW25_digitalcatalogue_techbook.pdf?v=1736124811；https://salomon.jp/pages/snowboard-catalog
 images:
-  - url: "https://cdn.dam.salomon.com/af8e2e75-eeed-4307-9ef2-b3b8010090b3/L49291700/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p"
+  - url: "https://cdn.dam.salomon.com/af8e2e75-eeed-4307-9ef2-b3b8010090b3/L4929170\
+      0/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=\
+      f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p"
     kind: face
     alt: Salomon Assassin 单板官方主图
     source: Salomon 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

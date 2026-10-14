@@ -25,6 +25,22 @@ specs:
   scenes:
     - all-mountain
     - freestyle
+  lengthOptions: 148 / 150 / 152 / 154 / 156 / 158 / 160 / 155W / 157W / 159W / 161W
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "148", effectiveEdge: 1120, waistWidth: 244, noseWidth: 282, tailWidth: 282, sidecutRadii: 7.5 m, stanceWidth: 508 mm（参考）, riderWeight: 80-140 lb / 36-63 kg, bootSize: US Men 6–9.5 / EU 39–43 }
+    - { size: "150", effectiveEdge: 1136, waistWidth: 246, noseWidth: 285, tailWidth: 285, sidecutRadii: 7.6 m, stanceWidth: 533 mm（参考）, riderWeight: 100-150 lb / 45-68 kg, bootSize: US Men 6–9.5 / EU 39–43 }
+    - { size: "152", effectiveEdge: 1152, waistWidth: 248, noseWidth: 288, tailWidth: 288, sidecutRadii: 7.7 m, stanceWidth: 533 mm（参考）, riderWeight: 110-160 lb / 49-72 kg, bootSize: US Men 6–9.5 / EU 39–43 }
+    - { size: "154", effectiveEdge: 1168, waistWidth: 250, noseWidth: 291, tailWidth: 291, sidecutRadii: 7.8 m, stanceWidth: 533 mm（参考）, riderWeight: 120-180 lb / 54-81 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "156", effectiveEdge: 1184, waistWidth: 252, noseWidth: 294, tailWidth: 294, sidecutRadii: 7.9 m, stanceWidth: 559 mm（参考）, riderWeight: 130-190 lb / 59-86 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "158", effectiveEdge: 1200, waistWidth: 254, noseWidth: 297, tailWidth: 297, sidecutRadii: 8 m, stanceWidth: 559 mm（参考）, riderWeight: 140-200 lb / 63-90 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "160", effectiveEdge: 1216, waistWidth: 256, noseWidth: 300, tailWidth: 300, sidecutRadii: 8.1 m, stanceWidth: 584 mm（参考）, riderWeight: 150-210 lb / 68-95 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 155W, effectiveEdge: 1180, waistWidth: 260, noseWidth: 303, tailWidth: 303, sidecutRadii: 7.8 m, stanceWidth: 559 mm（参考）, riderWeight: 125-185 lb / 56-83 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 157W, effectiveEdge: 1196, waistWidth: 262, noseWidth: 306, tailWidth: 306, sidecutRadii: 7.9 m, stanceWidth: 559 mm（参考）, riderWeight: 135-195 lb / 61-88 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 159W, effectiveEdge: 1212, waistWidth: 264, noseWidth: 309, tailWidth: 309, sidecutRadii: 8 m, stanceWidth: 559 mm（参考）, riderWeight: 145-210 lb / 65-95 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 161W, effectiveEdge: 1228, waistWidth: 266, noseWidth: 312, tailWidth: 312, sidecutRadii: 8.1 m, stanceWidth: 584 mm（参考）, riderWeight: 155-225 lb / 70-102 kg, bootSize: US 10+ / EU 43+ }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 7.6
   response: 7.7
@@ -39,6 +55,6 @@ images:
     source: CAPiTA 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://capitasnowboarding.com/products/capita-outerspace-living-mens-snowboard-2027
 status: published

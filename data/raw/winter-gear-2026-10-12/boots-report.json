@@ -1,0 +1,213 @@
+{
+  "phase": "boots",
+  "updated": [
+    {
+      "slug": "burton-ion-boa-2027",
+      "sizeRows": 16,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "burton-ion-step-on-2027",
+      "sizeRows": 16,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "burton-moto-boa-2027",
+      "sizeRows": 16,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "burton-photon-boa-2027",
+      "sizeRows": 16,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "k2-boundary-2027",
+      "sizeRows": 19,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "k2-maysis-2027",
+      "sizeRows": 19,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "k2-raider-2027",
+      "sizeRows": 19,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "k2-taro-tamai-snowsurfer-rs-2027",
+      "sizeRows": 19,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "nitro-bianca-tls-plus-2027",
+      "sizeRows": 14,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "nitro-sentinel-boa-2027",
+      "sizeRows": 21,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "nitro-sentinel-tls-2027",
+      "sizeRows": 21,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "nitro-tangent-tls-2027",
+      "sizeRows": 21,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "nitro-team-boa-2027",
+      "sizeRows": 21,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "nitro-team-pro-mk-tls-2027",
+      "sizeRows": 21,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "nitro-team-tls-2027",
+      "sizeRows": 21,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "nitro-team-tls-wide-2027",
+      "sizeRows": 21,
+      "seasonConfirmed": true
+    },
+    {
+      "slug": "nitro-venture-boa-2027",
+      "sizeRows": 21,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "nitro-venture-pro-tls-2027",
+      "sizeRows": 21,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "nitro-venture-step-on-tls-2027",
+      "sizeRows": 18,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "nitro-venture-tls-2027",
+      "sizeRows": 21,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "salomon-dialogue-dual-boa-2027",
+      "sizeRows": 20,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "salomon-dialogue-dual-boa-team-2027",
+      "sizeRows": 20,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "salomon-dialogue-dual-boa-wide-2027",
+      "sizeRows": 20,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "salomon-echo-dual-boa-2027",
+      "sizeRows": 20,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "salomon-faction-boa-2027",
+      "sizeRows": 20,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "salomon-launch-boa-sj-boa-2027",
+      "sizeRows": 20,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "salomon-malamute-dual-boa-2027",
+      "sizeRows": 20,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "salomon-titan-boa-2027",
+      "sizeRows": 20,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "salomon-trek-2027",
+      "sizeRows": 20,
+      "seasonConfirmed": false
+    },
+    {
+      "slug": "salomon-x-approach-lace-sj-boa-2027",
+      "sizeRows": 20,
+      "seasonConfirmed": false
+    }
+  ],
+  "pending": [
+    {
+      "slug": "nitro-venture-boa-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "nitro-venture-pro-tls-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "nitro-venture-step-on-tls-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "nitro-venture-tls-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "salomon-dialogue-dual-boa-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "salomon-dialogue-dual-boa-team-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "salomon-dialogue-dual-boa-wide-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "salomon-echo-dual-boa-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "salomon-faction-boa-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "salomon-launch-boa-sj-boa-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "salomon-malamute-dual-boa-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "salomon-titan-boa-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "salomon-trek-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    },
+    {
+      "slug": "salomon-x-approach-lace-sj-boa-2027",
+      "reason": "当前页面未明确 2027 季节；新增资料按当前同名型号参考处理。"
+    }
+  ]
+}

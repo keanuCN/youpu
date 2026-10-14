@@ -1,0 +1,256 @@
+{
+  "slug": "nitro-talent-binding-2027",
+  "price": "EUR 179.9",
+  "source": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:26.820Z",
+  "productName": "Nitro Talent Unisex Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1",
+  "hasVariant": [
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695754571#variant",
+      "@type": "Product",
+      "gtin": "7630349335216",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-105_Talent-Unisex-Bindings_Bubble-Gum_Product-1.jpg?v=1779339424&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Bubble Gum / S",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695754571#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695754571"
+      },
+      "sku": "12BG41008-105-S"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695721803#variant",
+      "@type": "Product",
+      "gtin": "7630349335223",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-105_Talent-Unisex-Bindings_Bubble-Gum_Product-1.jpg?v=1779339424&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Bubble Gum / M",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695721803#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695721803"
+      },
+      "sku": "12BG41008-105-M"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695689035#variant",
+      "@type": "Product",
+      "gtin": "7630349335230",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-105_Talent-Unisex-Bindings_Bubble-Gum_Product-1.jpg?v=1779339424&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Bubble Gum / L",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695689035#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695689035"
+      },
+      "sku": "12BG41008-105-L"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695656267#variant",
+      "@type": "Product",
+      "gtin": "7630349335186",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-104_Talent-Unisex-Bindings_Hard-Violet_Product-1.jpg?v=1779339424&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Hard Violet / S",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695656267#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695656267"
+      },
+      "sku": "12BG41008-104-S"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695623499#variant",
+      "@type": "Product",
+      "gtin": "7630349335193",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-104_Talent-Unisex-Bindings_Hard-Violet_Product-1.jpg?v=1779339424&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Hard Violet / M",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695623499#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695623499"
+      },
+      "sku": "12BG41008-104-M"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695590731#variant",
+      "@type": "Product",
+      "gtin": "7630349335209",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-104_Talent-Unisex-Bindings_Hard-Violet_Product-1.jpg?v=1779339424&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Hard Violet / L",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695590731#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695590731"
+      },
+      "sku": "12BG41008-104-L"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695557963#variant",
+      "@type": "Product",
+      "gtin": "7630349335155",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-103_Talent-Unisex-Bindings_Teal_Product-1.jpg?v=1779339423&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Teal / S",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695557963#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695557963"
+      },
+      "sku": "12BG41008-103-S"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695525195#variant",
+      "@type": "Product",
+      "gtin": "7630349335162",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-103_Talent-Unisex-Bindings_Teal_Product-1.jpg?v=1779339423&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Teal / M",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695525195#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695525195"
+      },
+      "sku": "12BG41008-103-M"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695492427#variant",
+      "@type": "Product",
+      "gtin": "7630349335179",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-103_Talent-Unisex-Bindings_Teal_Product-1.jpg?v=1779339423&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Teal / L",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695492427#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695492427"
+      },
+      "sku": "12BG41008-103-L"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695361355#variant",
+      "@type": "Product",
+      "gtin": "7630349335094",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-101_Talent-Unisex-Bindings_Ultra-Black_Product-1.jpg?v=1779339423&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Ultra Black / S",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695361355#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695361355"
+      },
+      "sku": "12BG41008-101-S"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695328587#variant",
+      "@type": "Product",
+      "gtin": "7630349335100",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-101_Talent-Unisex-Bindings_Ultra-Black_Product-1.jpg?v=1779339423&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Ultra Black / M",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695328587#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695328587"
+      },
+      "sku": "12BG41008-101-M"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695295819#variant",
+      "@type": "Product",
+      "gtin": "7630349335117",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-101_Talent-Unisex-Bindings_Ultra-Black_Product-1.jpg?v=1779339423&width=1920",
+      "name": "Nitro Talent Unisex Bindings - Ultra Black / L",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695295819#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695295819"
+      },
+      "sku": "12BG41008-101-L"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695459659#variant",
+      "@type": "Product",
+      "gtin": "7630349335124",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-102_Talent-Unisex-Bindings_White_Product-1.jpg?v=1779339423&width=1920",
+      "name": "Nitro Talent Unisex Bindings - White / S",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695459659#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695459659"
+      },
+      "sku": "12BG41008-102-S"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695426891#variant",
+      "@type": "Product",
+      "gtin": "7630349335131",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-102_Talent-Unisex-Bindings_White_Product-1.jpg?v=1779339423&width=1920",
+      "name": "Nitro Talent Unisex Bindings - White / M",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695426891#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695426891"
+      },
+      "sku": "12BG41008-102-M"
+    },
+    {
+      "@id": "/products/talent-unisex-bindings-1?variant=57277695394123#variant",
+      "@type": "Product",
+      "gtin": "7630349335148",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG41008-102_Talent-Unisex-Bindings_White_Product-1.jpg?v=1779339423&width=1920",
+      "name": "Nitro Talent Unisex Bindings - White / L",
+      "offers": {
+        "@id": "/products/talent-unisex-bindings-1?variant=57277695394123#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "179.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1?variant=57277695394123"
+      },
+      "sku": "12BG41008-102-L"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "9294eef9d2700b5571a2d2c65f3bc1d3512961981216adfe842181bce25d9ca1",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

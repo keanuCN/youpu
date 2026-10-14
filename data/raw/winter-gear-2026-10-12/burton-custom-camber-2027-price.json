@@ -1,0 +1,336 @@
+{
+  "slug": "burton-custom-camber-2027",
+  "price": "USD 679.95",
+  "source": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T07:05:08.049Z",
+  "productName": "Men's Burton Custom Camber Snowboard",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881",
+  "hasVariant": [
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837353217#variant",
+      "@type": "Product",
+      "gtin": "197183367874",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1068819I66_1.webp?v=1783620054&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Faded / 150",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837353217#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837353217"
+      },
+      "sku": "1068819I66RG150"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837385985#variant",
+      "@type": "Product",
+      "gtin": "197183367959",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1068819I66_1.webp?v=1783620054&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Faded / 154",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837385985#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837385985"
+      },
+      "sku": "1068819I66RG154"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837418753#variant",
+      "@type": "Product",
+      "gtin": "197183367942",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1068819I66_1.webp?v=1783620054&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Faded / 156",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837418753#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837418753"
+      },
+      "sku": "1068819I66RG156"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837451521#variant",
+      "@type": "Product",
+      "gtin": "197183367928",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1068819I66_1.webp?v=1783620054&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Faded / 158",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837451521#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837451521"
+      },
+      "sku": "1068819I66RG158"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837484289#variant",
+      "@type": "Product",
+      "gtin": "197183367911",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1068819I66_1.webp?v=1783620054&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Faded / 162",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837484289#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837484289"
+      },
+      "sku": "1068819I66RG162"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837517057#variant",
+      "@type": "Product",
+      "gtin": "197183367614",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1068819I66_1.webp?v=1783620054&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Faded / 154W",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837517057#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837517057"
+      },
+      "sku": "1068819I66RG54W"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837549825#variant",
+      "@type": "Product",
+      "gtin": "197183367898",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1068819I66_1.webp?v=1783620054&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Faded / 158W",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837549825#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837549825"
+      },
+      "sku": "1068819I66RG58W"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837582593#variant",
+      "@type": "Product",
+      "gtin": "197183368000",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1068819I66_1.webp?v=1783620054&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Faded / 162W",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837582593#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837582593"
+      },
+      "sku": "1068819I66RG62W"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837615361#variant",
+      "@type": "Product",
+      "gtin": "197183367362",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1068819I66_1.webp?v=1783620054&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Faded / 166W",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837615361#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837615361"
+      },
+      "sku": "1068819I66RG66W"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837648129#variant",
+      "@type": "Product",
+      "gtin": "197183367355",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1068819I66_1.webp?v=1783620054&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Faded / 170W",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837648129#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837648129"
+      },
+      "sku": "1068819I66RG70W"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837025537#variant",
+      "@type": "Product",
+      "gtin": "197183152258",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Jungle / 150",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837025537#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837025537"
+      },
+      "sku": "106881997DRG150"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237831937#variant",
+      "@type": "Product",
+      "gtin": "197183152654",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Jungle / 154",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237831937#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237831937"
+      },
+      "sku": "106881A97DRG154"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237864705#variant",
+      "@type": "Product",
+      "gtin": "197183152524",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Jungle / 156",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237864705#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237864705"
+      },
+      "sku": "106881A97DRG156"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237897473#variant",
+      "@type": "Product",
+      "gtin": "197183152531",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Jungle / 158",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237897473#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237897473"
+      },
+      "sku": "106881A97DRG158"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237930241#variant",
+      "@type": "Product",
+      "gtin": "197183152548",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Jungle / 162",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237930241#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761237930241"
+      },
+      "sku": "106881A97DRG162"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837189377#variant",
+      "@type": "Product",
+      "gtin": "197183152326",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Jungle / 154W",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837189377#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837189377"
+      },
+      "sku": "106881997DRG54W"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837222145#variant",
+      "@type": "Product",
+      "gtin": "197183152340",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Jungle / 158W",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837222145#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837222145"
+      },
+      "sku": "106881997DRG58W"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837254913#variant",
+      "@type": "Product",
+      "gtin": "197183152210",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Jungle / 162W",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837254913#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837254913"
+      },
+      "sku": "106881997DRG62W"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761238061313#variant",
+      "@type": "Product",
+      "gtin": "197183152456",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Jungle / 166W",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761238061313#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=48761238061313"
+      },
+      "sku": "106881A97DRG66W"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837320449#variant",
+      "@type": "Product",
+      "gtin": "197183152609",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456&width=1920",
+      "name": "Men's Burton Custom Camber Snowboard - Jungle / 170W",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837320449#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "679.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881?variant=49581837320449"
+      },
+      "sku": "106881997DRG70W"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "255c9e078bd5c65c09dcd934b36c8266c743f2ec48248baf81f84f926191e9e8",
+    "normalizedSpecHash": "557cc6ab52f9cea41d1c45e5b99564e5e835429bf8643bc3d912e8e5df7aae93"
+  }
+}

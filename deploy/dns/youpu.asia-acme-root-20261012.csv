@@ -1,0 +1,2 @@
+﻿主机记录,记录类型,线路类型,记录值,MX优先级,权重,TTL,备注,状态
+_acme-challenge,TXT,默认,X3Qwtm5WC80sOx1HBBy-H1tSCCTH0d8CQxGY3s57fBs,-,-,600,临时证书验证记录,正常

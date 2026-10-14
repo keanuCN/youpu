@@ -1,0 +1,591 @@
+{
+  "slug": "k2-boundary-2027",
+  "price": "USD 349.95",
+  "source": "https://k2snow.com/en-cn/p/boundary-mens-snowboard-boot-kb261666",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:46:54.249Z",
+  "productName": "K2 Boundary Men's Snowboard Boots 2027 ",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 7",
+      "color": "BROWN",
+      "size": "7",
+      "sku": "KB261666013",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=7",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 7.5",
+      "color": "BROWN",
+      "size": "7.5",
+      "sku": "KB261666014",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=7.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 8",
+      "color": "BROWN",
+      "size": "8",
+      "sku": "KB261666015",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=8",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 8.5",
+      "color": "BROWN",
+      "size": "8.5",
+      "sku": "KB261666016",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=8.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 9",
+      "color": "BROWN",
+      "size": "9",
+      "sku": "KB261666017",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=9",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 9.5",
+      "color": "BROWN",
+      "size": "9.5",
+      "sku": "KB261666018",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=9.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 10",
+      "color": "BROWN",
+      "size": "10",
+      "sku": "KB261666019",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=10",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 10.5",
+      "color": "BROWN",
+      "size": "10.5",
+      "sku": "KB261666020",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=10.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 11",
+      "color": "BROWN",
+      "size": "11",
+      "sku": "KB261666021",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=11",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 11.5",
+      "color": "BROWN",
+      "size": "11.5",
+      "sku": "KB261666022",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=11.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 12",
+      "color": "BROWN",
+      "size": "12",
+      "sku": "KB261666023",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=12",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BROWN, Size: 13",
+      "color": "BROWN",
+      "size": "13",
+      "sku": "KB261666024",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BROWN&Size=13",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 7",
+      "color": "BLACK",
+      "size": "7",
+      "sku": "KB261666001",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=7",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 7.5",
+      "color": "BLACK",
+      "size": "7.5",
+      "sku": "KB261666002",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=7.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 8",
+      "color": "BLACK",
+      "size": "8",
+      "sku": "KB261666003",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=8",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 8.5",
+      "color": "BLACK",
+      "size": "8.5",
+      "sku": "KB261666004",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=8.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 9",
+      "color": "BLACK",
+      "size": "9",
+      "sku": "KB261666005",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=9",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 9.5",
+      "color": "BLACK",
+      "size": "9.5",
+      "sku": "KB261666006",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=9.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 10",
+      "color": "BLACK",
+      "size": "10",
+      "sku": "KB261666007",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=10",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 10.5",
+      "color": "BLACK",
+      "size": "10.5",
+      "sku": "KB261666008",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=10.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 11",
+      "color": "BLACK",
+      "size": "11",
+      "sku": "KB261666009",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=11",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 11.5",
+      "color": "BLACK",
+      "size": "11.5",
+      "sku": "KB261666010",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=11.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 12",
+      "color": "BLACK",
+      "size": "12",
+      "sku": "KB261666011",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=12",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_black_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: BLACK, Size: 13",
+      "color": "BLACK",
+      "size": "13",
+      "sku": "KB261666012",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=BLACK&Size=13",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 7",
+      "color": "GREY",
+      "size": "7",
+      "sku": "KB261666025",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=7",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 7.5",
+      "color": "GREY",
+      "size": "7.5",
+      "sku": "KB261666026",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=7.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 8",
+      "color": "GREY",
+      "size": "8",
+      "sku": "KB261666027",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=8",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 8.5",
+      "color": "GREY",
+      "size": "8.5",
+      "sku": "KB261666028",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=8.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 9",
+      "color": "GREY",
+      "size": "9",
+      "sku": "KB261666029",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=9",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 9.5",
+      "color": "GREY",
+      "size": "9.5",
+      "sku": "KB261666030",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=9.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 10",
+      "color": "GREY",
+      "size": "10",
+      "sku": "KB261666031",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=10",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 10.5",
+      "color": "GREY",
+      "size": "10.5",
+      "sku": "KB261666032",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=10.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 11",
+      "color": "GREY",
+      "size": "11",
+      "sku": "KB261666033",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=11",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 11.5",
+      "color": "GREY",
+      "size": "11.5",
+      "sku": "KB261666034",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=11.5",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 12",
+      "color": "GREY",
+      "size": "12",
+      "sku": "KB261666035",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=12",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "product",
+      "image": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_grey_KB261666_1?w=1200&qlt=90&fmt=auto",
+      "name": "K2 Boundary Men's Snowboard Boots 2027  - Color: GREY, Size: 13",
+      "color": "GREY",
+      "size": "13",
+      "sku": "KB261666036",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://k2snow.com/p/boundary-mens-snowboard-boot-kb261666?Color=GREY&Size=13",
+        "priceCurrency": "USD",
+        "price": 349.95,
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "8f063ad568a4fcc518663b6de885d464c6ab1115f9537134bbe0f39f58463b0b",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

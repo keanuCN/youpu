@@ -1,0 +1,112 @@
+{
+  "slug": "union-trilogy-2027",
+  "price": "JPY 46200",
+  "source": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:14.190Z",
+  "productName": "Union Trilogy",
+  "productType": "Product",
+  "productUrl": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "02026011010001003",
+      "availability": "http://schema.org/InStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877045488"
+    },
+    {
+      "@type": "Offer",
+      "sku": "02026011010001004",
+      "availability": "http://schema.org/InStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877078256"
+    },
+    {
+      "@type": "Offer",
+      "sku": "02026011010001005",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877111024"
+    },
+    {
+      "@type": "Offer",
+      "sku": "02026011010011003",
+      "availability": "http://schema.org/InStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877143792"
+    },
+    {
+      "@type": "Offer",
+      "sku": "02026011010011004",
+      "availability": "http://schema.org/InStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877176560"
+    },
+    {
+      "@type": "Offer",
+      "sku": "02026011010011005",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877209328"
+    },
+    {
+      "@type": "Offer",
+      "sku": "02026011010091003",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877242096"
+    },
+    {
+      "@type": "Offer",
+      "sku": "02026011010091004",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877274864"
+    },
+    {
+      "@type": "Offer",
+      "sku": "02026011010091005",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877307632"
+    },
+    {
+      "@type": "Offer",
+      "sku": "02026011010381003",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877340400"
+    },
+    {
+      "@type": "Offer",
+      "sku": "02026011010381004",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877373168"
+    },
+    {
+      "@type": "Offer",
+      "sku": "02026011010381005",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 46200,
+      "priceCurrency": "JPY",
+      "url": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027?variant=49961877405936"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "b6a08e2308a70f2cbd76d1b6d200410c0b695872c089e752d3faa7889a725aed",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

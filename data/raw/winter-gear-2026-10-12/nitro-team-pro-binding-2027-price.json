@@ -1,0 +1,128 @@
+{
+  "slug": "nitro-team-pro-binding-2027",
+  "price": "EUR 359.9",
+  "source": "https://www.nitrosnowboards.com/products/team-pro-bindings-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:31.348Z",
+  "productName": "Nitro Team Pro Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/team-pro-bindings-1",
+  "hasVariant": [
+    {
+      "@id": "/products/team-pro-bindings-1?variant=57277687071051#variant",
+      "@type": "Product",
+      "gtin": "7630349334776",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11003-103_Team-Pro-Bindings_Nitro-x-Markus-Kleveland_Product-1.jpg?v=1779339350&width=1920",
+      "name": "Nitro Team Pro Bindings - Nitro x Markus Kleveland / M",
+      "offers": {
+        "@id": "/products/team-pro-bindings-1?variant=57277687071051#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "359.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-bindings-1?variant=57277687071051"
+      },
+      "sku": "12BG11003-103-M"
+    },
+    {
+      "@id": "/products/team-pro-bindings-1?variant=57277687038283#variant",
+      "@type": "Product",
+      "gtin": "7630349334783",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11003-103_Team-Pro-Bindings_Nitro-x-Markus-Kleveland_Product-1.jpg?v=1779339350&width=1920",
+      "name": "Nitro Team Pro Bindings - Nitro x Markus Kleveland / L",
+      "offers": {
+        "@id": "/products/team-pro-bindings-1?variant=57277687038283#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "359.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-bindings-1?variant=57277687038283"
+      },
+      "sku": "12BG11003-103-L"
+    },
+    {
+      "@id": "/products/team-pro-bindings-1?variant=57277687005515#variant",
+      "@type": "Product",
+      "gtin": "7630349334752",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11003-102_Team-Pro-Bindings_Black-Red_Product-1.jpg?v=1779339350&width=1920",
+      "name": "Nitro Team Pro Bindings - Black Red / M",
+      "offers": {
+        "@id": "/products/team-pro-bindings-1?variant=57277687005515#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "359.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-bindings-1?variant=57277687005515"
+      },
+      "sku": "12BG11003-102-M"
+    },
+    {
+      "@id": "/products/team-pro-bindings-1?variant=57277686972747#variant",
+      "@type": "Product",
+      "gtin": "7630349334769",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11003-102_Team-Pro-Bindings_Black-Red_Product-1.jpg?v=1779339350&width=1920",
+      "name": "Nitro Team Pro Bindings - Black Red / L",
+      "offers": {
+        "@id": "/products/team-pro-bindings-1?variant=57277686972747#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "359.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-bindings-1?variant=57277686972747"
+      },
+      "sku": "12BG11003-102-L"
+    },
+    {
+      "@id": "/products/team-pro-bindings-1?variant=57277686939979#variant",
+      "@type": "Product",
+      "gtin": "7630349334745",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11003-101_Team-Pro-Bindings_Ultra-Black_Product-1.jpg?v=1779339350&width=1920",
+      "name": "Nitro Team Pro Bindings - Ultra Black / S/M",
+      "offers": {
+        "@id": "/products/team-pro-bindings-1?variant=57277686939979#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "359.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-bindings-1?variant=57277686939979"
+      },
+      "sku": "12BG11003-101-S/M"
+    },
+    {
+      "@id": "/products/team-pro-bindings-1?variant=57277686907211#variant",
+      "@type": "Product",
+      "gtin": "7630349334721",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11003-101_Team-Pro-Bindings_Ultra-Black_Product-1.jpg?v=1779339350&width=1920",
+      "name": "Nitro Team Pro Bindings - Ultra Black / M",
+      "offers": {
+        "@id": "/products/team-pro-bindings-1?variant=57277686907211#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "359.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-bindings-1?variant=57277686907211"
+      },
+      "sku": "12BG11003-101-M"
+    },
+    {
+      "@id": "/products/team-pro-bindings-1?variant=57277686874443#variant",
+      "@type": "Product",
+      "gtin": "7630349334738",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11003-101_Team-Pro-Bindings_Ultra-Black_Product-1.jpg?v=1779339350&width=1920",
+      "name": "Nitro Team Pro Bindings - Ultra Black / L",
+      "offers": {
+        "@id": "/products/team-pro-bindings-1?variant=57277686874443#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "359.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-bindings-1?variant=57277686874443"
+      },
+      "sku": "12BG11003-101-L"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "11d3371ad52f66efb61d3d9a990d1146d60c08769b09fdd3e25b09d1349890e4",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

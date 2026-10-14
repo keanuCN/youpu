@@ -1,0 +1,48 @@
+{
+  "capturedAt": "2026-10-12T06:42:36.343Z",
+  "target": {
+    "slug": "flow-fuse-hybrid-binding-2026",
+    "category": "snowboard-binding",
+    "brand": "flow",
+    "model": "Fuse Hybrid",
+    "year": 2026,
+    "url": "https://www.nidecker.com/products/flow-fuse-hybrid-2026",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.nidecker.com/products/flow-fuse-hybrid-2026",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.nidecker.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:21.949Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": false,
+    "seasonMatch": null,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": false,
+    "issues": [
+      {
+        "path": "source.identity",
+        "message": "页面内容未确认包含目标型号“Fuse Hybrid”，可能发生重定向、错季节或链接失效"
+      }
+    ]
+  },
+  "page": {
+    "title": "Different by Design | Engineered in Switzerland | Nidecker | USA",
+    "canonicalUrl": "https://www.nidecker.com/en-int",
+    "tables": []
+  },
+  "review": {
+    "rows": [],
+    "sources": "https://www.nidecker.com/products/flow-fuse-hybrid-2026",
+    "good": false
+  }
+}

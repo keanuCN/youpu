@@ -25,6 +25,19 @@ specs:
   scenes:
     - all-mountain
     - powder
+  lengthOptions: 151 / 154 / 157 / 160 / 155W / 158W / 161W / 164W
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "151", effectiveEdge: 1171, waistWidth: 251, noseWidth: 296, tailWidth: 290, sidecutRadii: 8.4 m, stanceWidth: 533 mm（参考）, riderWeight: 100-150 lb / 45-68 kg, bootSize: M 6–9.5 }
+    - { size: "154", effectiveEdge: 1200, waistWidth: 253, noseWidth: 300, tailWidth: 293, sidecutRadii: 8.2 m, stanceWidth: 533 mm（参考）, riderWeight: 100-160 lb / 45-72 kg, bootSize: M 8–10 }
+    - { size: "157", effectiveEdge: 1221, waistWidth: 255, noseWidth: 304, tailWidth: 294, sidecutRadii: 8.4 m, stanceWidth: 559 mm（参考）, riderWeight: 130-190 lb / 59-86 kg, bootSize: M 8–10 }
+    - { size: "160", effectiveEdge: 1254, waistWidth: 257, noseWidth: 307, tailWidth: 297, sidecutRadii: 8.6 m, stanceWidth: 584 mm（参考）, riderWeight: 140-200 lb / 63-90 kg, bootSize: M 6–10 }
+    - { size: 155W, effectiveEdge: 1214, waistWidth: 263, noseWidth: 310, tailWidth: 302, sidecutRadii: 8.3 m, stanceWidth: 559 mm（参考）, riderWeight: 110-170 lb / 49-77 kg, bootSize: M 10+ }
+    - { size: 158W, effectiveEdge: 1244, waistWidth: 265, noseWidth: 314, tailWidth: 306, sidecutRadii: 8.5 m, stanceWidth: 559 mm（参考）, riderWeight: 130-190 lb / 59-86 kg, bootSize: M 10+ }
+    - { size: 161W, effectiveEdge: 1261, waistWidth: 267, noseWidth: 316, tailWidth: 308, sidecutRadii: 8.7 m, stanceWidth: 584 mm（参考）, riderWeight: 150-210 lb / 68-95 kg, bootSize: M 10+ }
+    - { size: 164W, effectiveEdge: 1284, waistWidth: 269, noseWidth: 319, tailWidth: 311, sidecutRadii: 8.8 m, stanceWidth: 584 mm（参考）, riderWeight: 170-230 lb / 77-104 kg, bootSize: M 10+ }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 8.4
   response: 8.4
@@ -39,6 +52,6 @@ images:
     source: CAPiTA 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://capitasnowboarding.com/products/capita-kazu-kokubo-pro-mens-snowboard-2027
 status: published

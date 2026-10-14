@@ -9,7 +9,7 @@ specs:
   entrySystem: fast-entry
   flexFeel: medium
   mountingSystem: "Jones Universal Mounting Disk；兼容 4x4、2x4 与 Burton Channel/EST"
-  bootCompatibility: "FASE 双绑带快速穿脱系统，兼容各品牌常规雪鞋"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "官方尺码：S 男 US 5–8 / 女 6.5–9.5；M 男 8.5–10.5 / 女 10–12；L 男 11–14 / 女 12.5–15.5"
   baseplateMaterial: "Fusion XR 玻纤尼龙复合底盘；三层 TPU/EVA Fusion Pad 缓震层"
   ankleStrap: "DualFlex 脚踝带，硬质 TPU 中芯搭配柔软 TPU 边缘"
@@ -19,6 +19,17 @@ specs:
   highbackAdjustment: "免工具双档前倾角调节；高背可折叠前翻"
   cushioning: "Fusion Pad 三层 TPU/EVA 吸震；低接触面积底盘保留侧向板面弯曲"
   warranty: "FASE 系统终身保修；Jones 其他部件保修按官网保修政策"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding
+  sizeChart:
+    - { size: Small, usMen: 5 - 8, usWomen: 6.5 - 9.5, eu: 37.5 - 41, uk: 4 - 7, mondo: 23.0 - 26.0 }
+    - { size: Medium, usMen: 8.5 - 10.5, usWomen: 10 - 12, eu: 41.5 - 44, uk: 7.5 - 9.5, mondo: 26.5 - 28.5 }
+    - { size: Large, usMen: 11 - 14, usWomen: 12.5 - 15.5, eu: 44.5 - 48, uk: 10 - 13, mondo: 29.0 - 31.0 }
+  priceCheckedAt: 2026-10-12
+  officialPrice: CHF 359.95
+  priceMarket: 原币 CHF；来源商店 eu.jonessnowboards.com
+  priceSource: https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding
+  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: "https://www.jonessnowboards.com/cdn/shop/files/J.26.BNU.FAA.GN-gallery-1.webp?v=1776481535&width=1946"
     kind: face

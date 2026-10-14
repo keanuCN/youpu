@@ -15,6 +15,7 @@ import { RADAR_COLORS, RadarChart } from "@/components/gear/radar";
 import { ReviewPanel } from "@/components/gear/review-panel";
 import { SizeSpecTable } from "@/components/gear/size-spec-table";
 import { SpecTable } from "@/components/gear/spec-table";
+import { EquipmentBuyingGuide } from "@/components/gear/equipment-buying-guide";
 import { SectionHead } from "@/components/layout/section-head";
 import { reviewCount, userRating } from "@/data/boards";
 import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
@@ -102,8 +103,9 @@ export default function GearDetailPage({
         <div>
           <SectionHead index="02" title="完整参数" titleEn="Specifications" desc={`按 ${category?.name ?? ""} 品类的统一模板录入，缺测项显示 —。`} />
           <FitGuideTable guide={gear.fitGuide} />
-          {gear.categorySlug === "snowboard" ? <SizeSpecTable specs={gear.sizeSpecs} /> : null}
+            {["snowboard", "skis"].includes(gear.categorySlug) ? <SizeSpecTable specs={gear.sizeSpecs} /> : null}
           <SpecTable gear={gear} groups={groups} />
+          <EquipmentBuyingGuide gear={gear} />
         </div>
         <div>
           <SectionHead index="03" title={`${dims.length || 0}维评分`} titleEn="Score Radar" />
@@ -229,10 +231,10 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
 
       <div className="border-b border-border py-5">
         <div className="flex items-baseline justify-between">
-          <p className="mono-label">参考价</p>
-          <p className="mono-data text-[24px] leading-none tnum">{priceReady ? fmtPrice(gear.price, gear.priceCurrency) : <PendingValue label="价格待补" />}</p>
+          <p className="mono-label">{priceReady && gear.specs.priceCheckedAt ? '人民币参考价（待核）' : !priceReady && gear.specs.officialPrice ? '官方地区挂牌价' : '参考价'}</p>
+          <p className="mono-data text-[24px] leading-none tnum">{priceReady ? fmtPrice(gear.price, gear.priceCurrency) : gear.specs.officialPrice ? String(gear.specs.officialPrice) : <PendingValue label="价格待补" />}</p>
         </div>
-        {priceReady ? (
+        {priceReady && !gear.specs.priceCheckedAt ? (
           <>
             <div className="relative mt-4 h-[6px] bg-border">
               <span className="absolute inset-y-0 left-0 bg-foreground/25" style={{ width: `${pos}%` }} />
@@ -248,7 +250,7 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
           </>
         ) : (
           <p className="mt-4 border border-dashed border-border bg-secondary/45 px-3 py-3 text-[13px] leading-relaxed text-muted-foreground">
-            暂无可比价格，当前页面只展示已核验的官方规格。
+            {gear.specs.priceCheckedAt ? '人民币参考价尚未完成来源核实。官方原币报价、地区与核查日期见下方价格依据；暂不做同类价位比较。' : '暂无可比价格，当前页面只展示已核验的官方规格。'}
           </p>
         )}
       </div>

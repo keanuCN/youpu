@@ -1,0 +1,985 @@
+{
+  "slug": "jones-mercury-fase-binding-2026",
+  "price": "CHF 359.95",
+  "source": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:42:42.144Z",
+  "productName": "Mercury FASE® Snowboard Binding",
+  "productType": "Product",
+  "productUrl": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding",
+  "offers": [
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=45370014269575",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.BK.2S.1",
+      "gtin13": "7630680865458",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=45370014302343",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.BK.3M.1",
+      "gtin13": "7630680865465",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=44791557619847",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.400.2S.1",
+      "gtin13": "7630961803575",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=44791557652615",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.582.2S.1",
+      "gtin13": "7630961803650",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=44791557685383",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.963.2S.1",
+      "gtin13": "7630961803636",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=44791557718151",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.976.2S.1",
+      "gtin13": "7630961803605",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=45370014335111",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.582.3M.1",
+      "gtin13": "7630961803667",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=45370014367879",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.BK.4L.1",
+      "gtin13": "7630680865472",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=45370014400647",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.582.4L.1",
+      "gtin13": "7630961803674",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=45370014433415",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.WH.2S.1",
+      "gtin13": "7630680865489",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=45370014466183",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.WH.3M.1",
+      "gtin13": "7630680865496",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=45370014498951",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.WH.4L.1",
+      "gtin13": "7630680865502",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=44791557750919",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.400.3M.1",
+      "gtin13": "7630961803582",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=44791557783687",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.963.3M.1",
+      "gtin13": "7630961803643",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=44791557816455",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.976.3M.1",
+      "gtin13": "7630961803612",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=44791557849223",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.400.4L.1",
+      "gtin13": "7630961803599",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    },
+    {
+      "@type": "Offer",
+      "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding?variant=44791557881991",
+      "itemCondition": "https://schema.org/NewCondition",
+      "sku": "J.27.BNU.MEF.976.4L.1",
+      "gtin13": "7630961803629",
+      "availability": "https://schema.org/InStock",
+      "price": 359.95,
+      "priceCurrency": "CHF",
+      "priceValidUntil": "2027-03-01",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "freeShippingThreshold": {
+          "@type": "DeliveryChargeSpecification",
+          "price": 100,
+          "priceCurrency": "CHF"
+        },
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "CHF"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CH"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "url": "https://eu.jonessnowboards.com/policies/refund-policy",
+        "applicableCountry": "CH",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Jones Snowboards EU",
+        "url": "https://eu.jonessnowboards.com"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "d6746c93e04ace91df2c16fb586164fea9983e5199d0b4f9aca78c5913977d5f",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

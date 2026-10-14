@@ -1,0 +1,183 @@
+{
+  "slug": "salomon-trek-2027",
+  "price": "USD 599.95",
+  "source": "https://www.salomon.com/en-us/product/trek-lg8695",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:47:33.125Z",
+  "productName": "TREK",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "7",
+      "sku": "L47033600022",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600022",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "7.5",
+      "sku": "L47033600023",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600023",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "8",
+      "sku": "L47033600024",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600024",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "8.5",
+      "sku": "L47033600025",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600025",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "9",
+      "sku": "L47033600026",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600026",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "9.5",
+      "sku": "L47033600027",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600027",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "10",
+      "sku": "L47033600028",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600028",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "10.5",
+      "sku": "L47033600029",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600029",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "11",
+      "sku": "L47033600030",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600030",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "11.5",
+      "sku": "L47033600031",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600031",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "12",
+      "sku": "L47033600032",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600032",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TREK Black / Black / White",
+      "image": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / White",
+      "size": "12.5",
+      "sku": "L47033600033",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/trek-lg8695/L47033600?sizeId=L47033600033",
+        "priceCurrency": "USD",
+        "price": "599.95"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "79f7f0c394fcb0e4603c7f4469ac82a4204747a11afde62a80c0d1bb9cfc2199",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

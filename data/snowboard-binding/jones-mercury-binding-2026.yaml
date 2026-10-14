@@ -8,7 +8,11 @@ one_liner: "全地形 freeride 取向固定器，采用 SkateTech 力量传递�
 specs:
   entrySystem: strap
   flex: 7
-  bootCompatibility: "通用圆盘适配 4x4、2x4 与 Channel；普通绑带雪鞋"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
+  selectionNotes: 原型号链接已跳转到固定器分类页，未找到 Mercury 2026 的型号级官方尺码表。不得套用 Mercury FASE 或其他型号的尺寸；按实物、原说明书和对应雪鞋试装。
+  compatibilitySources: https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026
+  priceCheckedAt: 2026-10-12
+  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
 images:
   - url: "https://images.evo.com/imgp/zoom/264057/1202448/jones-mercury-snowboard-bindings-2026-.jpg"
     kind: face

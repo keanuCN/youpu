@@ -1,0 +1,282 @@
+[
+  {
+    "slug": "burton-talent-scout-2027",
+    "category": "snowboard",
+    "brand": "burton",
+    "model": "Talent Scout",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/womens-burton-talent-scout-camber-snowboard-132181",
+    "mode": "cheerio",
+    "representativeSize": "146"
+  },
+  {
+    "slug": "capita-aeronaut-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Aeronaut",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-aeronaut-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "capita-indoor-survival-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Indoor Survival",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-indoor-survival-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "capita-kazu-kokubo-pro-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Kazu Kokubo Pro",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-kazu-kokubo-pro-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "capita-mega-death-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Mega Death",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-mega-death-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "159"
+  },
+  {
+    "slug": "capita-mega-merc-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Mega Merc",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-mega-merc-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "capita-outerspace-living-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Outerspace Living",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-outerspace-living-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "154"
+  },
+  {
+    "slug": "capita-pathfinder-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Pathfinder",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-pathfinder-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "151"
+  },
+  {
+    "slug": "capita-sb-resort-twin-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "SB Resort Twin",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-sb-resort-twin-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "capita-sidewinder-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Sidewinder",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-sidewinder-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "159"
+  },
+  {
+    "slug": "capita-super-doa-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Super D.O.A.",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-super-d-o-a-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "capita-the-black-snowboard-of-death-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "The Black Snowboard of Death",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-the-black-snowboard-of-death-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "159"
+  },
+  {
+    "slug": "capita-the-matriarch-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "The Matriarch",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-the-matriarch-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "158"
+  },
+  {
+    "slug": "capita-the-navigator-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "The Navigator",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-the-navigator-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "161"
+  },
+  {
+    "slug": "capita-ultrafear-2027",
+    "category": "snowboard",
+    "brand": "capita",
+    "model": "Ultrafear",
+    "year": 2027,
+    "url": "https://capitasnowboarding.com/products/capita-ultrafear-mens-snowboard-2027",
+    "mode": "cheerio",
+    "representativeSize": "153"
+  },
+  {
+    "slug": "jones-flagship-pro-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Flagship PRO",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/mens-flagship-pro-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "161"
+  },
+  {
+    "slug": "jones-freecarver-6000s-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Freecarver 6000s",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/freecarver-6000s-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "154"
+  },
+  {
+    "slug": "jones-frontier-2-0-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Frontier 2.0",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/mens-frontier-20-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "159"
+  },
+  {
+    "slug": "jones-hovercraft-2-0-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Hovercraft 2.0",
+    "year": 2027,
+    "url": "https://eu.jonessnowboards.com/products/hovercraft-20-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "jones-howler-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Howler",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/mens-howler-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "158"
+  },
+  {
+    "slug": "jones-mind-expander-2-0-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Mind Expander 2.0",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/mind-expander-20-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "154"
+  },
+  {
+    "slug": "jones-mountain-twin-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Mountain Twin",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/mens-mountain-twin-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "jones-rally-cat-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Rally Cat",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/mens-rally-cat-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "156"
+  },
+  {
+    "slug": "jones-storm-chaser-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Storm Chaser",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/storm-chaser-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "152"
+  },
+  {
+    "slug": "jones-twin-sister-2027",
+    "category": "snowboard",
+    "brand": "jones",
+    "model": "Twin Sister",
+    "year": 2027,
+    "url": "https://www.jonessnowboards.com/products/womens-twin-sister-snowboard",
+    "mode": "cheerio",
+    "representativeSize": "149"
+  },
+  {
+    "slug": "nitro-alternator-2027",
+    "category": "snowboard",
+    "brand": "nitro",
+    "model": "Alternator",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/snowboards-mountain-26-27/products/alternator-snowboard-1",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "ride-deep-fake-2027",
+    "category": "snowboard",
+    "brand": "ride",
+    "model": "Deep Fake",
+    "year": 2027,
+    "url": "https://ridesnowboards.com/en-us/p/deep-fake-snowboard-rd261850",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  {
+    "slug": "ride-warpig-2027",
+    "category": "snowboard",
+    "brand": "ride",
+    "model": "WARPIG",
+    "year": 2027,
+    "url": "https://ridesnowboards.com/en-us/p/warpig-snowboard-rd261857",
+    "mode": "cheerio",
+    "representativeSize": "154"
+  }
+]

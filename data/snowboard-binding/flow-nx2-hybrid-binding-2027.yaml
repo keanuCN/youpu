@@ -11,8 +11,20 @@ specs:
   flexFeel: stiff
   entrySystem: rear-entry
   mountingSystem: Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对
-  bindingSizeGuide: Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU
-    41.5–44.5；XL 11.5–15 / EU 45–49.5。
+  bindingSizeGuide: Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。
+  bootCompatibility: 常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://www.nidecker.com/products/flow-nx2-hybrid
+  sizeChart:
+    - { size: S, usMen: 2 - 4.5, usWomen: 5.5 - 6, eu: 35 - 36, uk: 1 - 3.5, mondo: 20.5 - 22.5 }
+    - { size: M, usMen: 5 - 8, usWomen: 6.5 - 9.5, eu: 37 - 41, uk: 4 - 7, mondo: 23 - 26 }
+    - { size: L, usMen: 8.5 - 11, usWomen: 10 - 11, eu: 41.5 - 44.5, uk: 7.5 - 10, mondo: 26.5 - 29 }
+    - { size: XL, usMen: 11.5 - 15, eu: 45 - 49.5, uk: 10.5 - 14, mondo: 29.5 - 32.5 }
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 379.95
+  priceMarket: 原币 USD；来源商店 www.nidecker.com
+  priceSource: https://www.nidecker.com/en-int/products/flow-nx2-hybrid
+  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.27.BNU.N2H.001-Flow_NX2_Hybrid_Black-1.webp?v=1788231960&width=1200
     kind: face

@@ -1,0 +1,42 @@
+{
+  "capturedAt": "2026-10-12T06:42:27.605Z",
+  "target": {
+    "slug": "cosone-step-on-binding-2026",
+    "category": "snowboard-binding",
+    "brand": "cosone",
+    "model": "Step On",
+    "year": 2026,
+    "url": "https://www.cos1.net/",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.cos1.net/",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.cos1.net/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:14.120Z",
+      "status": 404,
+      "allowed": true,
+      "reason": "robots.txt 不存在，按无额外规则处理"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "COSONE - 专业单板滑雪装备",
+    "tables": []
+  },
+  "review": {
+    "rows": [],
+    "sources": "https://www.cos1.net/；https://www.burton.com/en-us/pages/size-charts",
+    "good": false
+  }
+}

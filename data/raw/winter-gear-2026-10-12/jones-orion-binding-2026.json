@@ -1,0 +1,258 @@
+{
+  "capturedAt": "2026-10-12T06:43:03.643Z",
+  "target": {
+    "slug": "jones-orion-binding-2026",
+    "category": "snowboard-binding",
+    "brand": "jones",
+    "model": "Orion",
+    "year": 2026,
+    "url": "https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.jonessnowboards.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:40.509Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Men's Orion Snowboard Binding 2026 | Jones",
+    "canonicalUrl": "https://www.jonessnowboards.com/en-int/products/mens-orion-snowboard-binding-2026",
+    "tables": [
+      {
+        "headers": [
+          "Men",
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "rows": [
+          [
+            "US Men",
+            "5.0 - 7.0",
+            "7.5 - 10",
+            "10.5 +"
+          ],
+          [
+            "EU",
+            "36.5 - 39.5",
+            "40 - 43",
+            "43.5 +"
+          ],
+          [
+            "Mondo",
+            "23.5 - 25.0",
+            "25.5 - 28.0",
+            "28.5 +"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Women",
+          "Small",
+          "Medium"
+        ],
+        "rows": [
+          [
+            "US Women",
+            "5 - 8.5",
+            "9 - 11.5"
+          ],
+          [
+            "EU",
+            "35 - 39.5",
+            "40 - 42.5"
+          ],
+          [
+            "Mondo",
+            "22 - 25",
+            "25.5 - 27.5"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Men",
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "rows": [
+          [
+            "US Men",
+            "5.0 - 7.0",
+            "7.5 - 10",
+            "10.5 +"
+          ],
+          [
+            "EU",
+            "36.5 - 39.5",
+            "40 - 43",
+            "43.5 +"
+          ],
+          [
+            "Mondo",
+            "23.5 - 25.0",
+            "25.5 - 28.0",
+            "28.5 +"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Women",
+          "Small",
+          "Medium"
+        ],
+        "rows": [
+          [
+            "US Women",
+            "5 - 8.5",
+            "9 - 11.5"
+          ],
+          [
+            "EU",
+            "35 - 39.5",
+            "40 - 42.5"
+          ],
+          [
+            "Mondo",
+            "22 - 25",
+            "25.5 - 27.5"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Men",
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "rows": [
+          [
+            "US Men",
+            "5.0 - 7.0",
+            "7.5 - 10",
+            "10.5 +"
+          ],
+          [
+            "EU",
+            "36.5 - 39.5",
+            "40 - 43",
+            "43.5 +"
+          ],
+          [
+            "Mondo",
+            "23.5 - 25.0",
+            "25.5 - 28.0",
+            "28.5 +"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Women",
+          "Small",
+          "Medium"
+        ],
+        "rows": [
+          [
+            "US Women",
+            "5 - 8.5",
+            "9 - 11.5"
+          ],
+          [
+            "EU",
+            "35 - 39.5",
+            "40 - 42.5"
+          ],
+          [
+            "Mondo",
+            "22 - 25",
+            "25.5 - 27.5"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Board size (cm)",
+          "Atlantic Blue / M",
+          "Moss Green / M",
+          "White Glacier Frost / M",
+          "Atlantic Blue / L",
+          "Moss Green / L",
+          "White Glacier Frost / L"
+        ],
+        "rows": [
+          [
+            "boots_min_size",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "boots_max_size",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "min_weight",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "max_weight",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "comment",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  "review": {
+    "rows": [],
+    "sources": "https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
+    "good": true
+  }
+}

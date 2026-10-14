@@ -1,0 +1,97 @@
+{
+  "slug": "nitro-team-2026",
+  "price": "CAD 455",
+  "source": "https://www.nitrosnow.ca/products/2026-team",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T07:01:40.285Z",
+  "productName": "TEAM",
+  "productType": "Product",
+  "productUrl": "https://www.nitrosnow.ca/products/2026-team",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "N833222-001152",
+      "availability": "http://schema.org/InStock",
+      "price": 455,
+      "priceCurrency": "CAD",
+      "priceValidUntil": "2026-10-22",
+      "url": "https://www.nitrosnow.ca/products/2026-team?variant=46371565961431"
+    },
+    {
+      "@type": "Offer",
+      "sku": "N833222-001155",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 455,
+      "priceCurrency": "CAD",
+      "priceValidUntil": "2026-10-22",
+      "url": "https://www.nitrosnow.ca/products/2026-team?variant=46371565994199"
+    },
+    {
+      "@type": "Offer",
+      "sku": "N833222-001157",
+      "availability": "http://schema.org/InStock",
+      "price": 455,
+      "priceCurrency": "CAD",
+      "priceValidUntil": "2026-10-22",
+      "url": "https://www.nitrosnow.ca/products/2026-team?variant=46371566026967"
+    },
+    {
+      "@type": "Offer",
+      "sku": "N833222-001159",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 455,
+      "priceCurrency": "CAD",
+      "priceValidUntil": "2026-10-22",
+      "url": "https://www.nitrosnow.ca/products/2026-team?variant=46371566059735"
+    },
+    {
+      "@type": "Offer",
+      "sku": "N833222-001162",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 455,
+      "priceCurrency": "CAD",
+      "priceValidUntil": "2026-10-22",
+      "url": "https://www.nitrosnow.ca/products/2026-team?variant=46371566092503"
+    },
+    {
+      "@type": "Offer",
+      "sku": "N833223-001157",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 455,
+      "priceCurrency": "CAD",
+      "priceValidUntil": "2026-10-22",
+      "url": "https://www.nitrosnow.ca/products/2026-team?variant=46373958353111"
+    },
+    {
+      "@type": "Offer",
+      "sku": "N833223-001159",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 455,
+      "priceCurrency": "CAD",
+      "priceValidUntil": "2026-10-22",
+      "url": "https://www.nitrosnow.ca/products/2026-team?variant=46373958385879"
+    },
+    {
+      "@type": "Offer",
+      "sku": "N833223-001162",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 455,
+      "priceCurrency": "CAD",
+      "priceValidUntil": "2026-10-22",
+      "url": "https://www.nitrosnow.ca/products/2026-team?variant=46373958418647"
+    },
+    {
+      "@type": "Offer",
+      "sku": "N833223-001165",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 455,
+      "priceCurrency": "CAD",
+      "priceValidUntil": "2026-10-22",
+      "url": "https://www.nitrosnow.ca/products/2026-team?variant=46373958451415"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "4f1f6f059b09b66f67202dc5ce4d2b12829d00aaad0178718e378546eb1454bc",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

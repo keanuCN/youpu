@@ -1,0 +1,268 @@
+{
+  "capturedAt": "2026-10-12T06:47:22.121Z",
+  "target": {
+    "slug": "burton-moto-boa-2027",
+    "category": "snowboard-boot",
+    "brand": "burton",
+    "model": "Moto BOA",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.burton.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:45:30.784Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Men's Burton Moto BOA® Snowboard Boots 2027",
+    "canonicalUrl": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761",
+    "tables": [
+      {
+        "headers": [
+          "Men's US",
+          "6",
+          "6.5",
+          "7",
+          "7.5",
+          "8",
+          "8.5",
+          "9",
+          "9.5",
+          "10",
+          "10.5",
+          "11",
+          "11.5",
+          "12",
+          "13",
+          "14",
+          "15"
+        ],
+        "rows": [
+          [
+            "Women's US",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "*",
+            "*",
+            "*",
+            "*",
+            "*",
+            "*",
+            "*"
+          ],
+          [
+            "EURO",
+            "38",
+            "39",
+            "40",
+            "40.5",
+            "41",
+            "41.5",
+            "42",
+            "42.5",
+            "43",
+            "43.5",
+            "44",
+            "44.5",
+            "45",
+            "46",
+            "47",
+            "48"
+          ],
+          [
+            "UK",
+            "5",
+            "5.5",
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          [
+            "Mondo",
+            "24",
+            "24.5",
+            "25",
+            "25.5",
+            "26",
+            "26.5",
+            "27",
+            "27.5",
+            "28",
+            "28.5",
+            "29",
+            "29.5",
+            "30",
+            "31",
+            "32",
+            "33"
+          ]
+        ]
+      }
+    ]
+  },
+  "review": {
+    "sizeRows": [
+      {
+        "size": "US 男 6",
+        "usMen": "6",
+        "usWomen": "7",
+        "eu": "38",
+        "uk": "5",
+        "mondo": "24"
+      },
+      {
+        "size": "US 男 6.5",
+        "usMen": "6.5",
+        "usWomen": "7.5",
+        "eu": "39",
+        "uk": "5.5",
+        "mondo": "24.5"
+      },
+      {
+        "size": "US 男 7",
+        "usMen": "7",
+        "usWomen": "8",
+        "eu": "40",
+        "uk": "6",
+        "mondo": "25"
+      },
+      {
+        "size": "US 男 7.5",
+        "usMen": "7.5",
+        "usWomen": "8.5",
+        "eu": "40.5",
+        "uk": "6.5",
+        "mondo": "25.5"
+      },
+      {
+        "size": "US 男 8",
+        "usMen": "8",
+        "usWomen": "9",
+        "eu": "41",
+        "uk": "7",
+        "mondo": "26"
+      },
+      {
+        "size": "US 男 8.5",
+        "usMen": "8.5",
+        "usWomen": "9.5",
+        "eu": "41.5",
+        "uk": "7.5",
+        "mondo": "26.5"
+      },
+      {
+        "size": "US 男 9",
+        "usMen": "9",
+        "usWomen": "10",
+        "eu": "42",
+        "uk": "8",
+        "mondo": "27"
+      },
+      {
+        "size": "US 男 9.5",
+        "usMen": "9.5",
+        "usWomen": "10.5",
+        "eu": "42.5",
+        "uk": "8.5",
+        "mondo": "27.5"
+      },
+      {
+        "size": "US 男 10",
+        "usMen": "10",
+        "usWomen": "11",
+        "eu": "43",
+        "uk": "9",
+        "mondo": "28"
+      },
+      {
+        "size": "US 男 10.5",
+        "usMen": "10.5",
+        "eu": "43.5",
+        "uk": "9.5",
+        "mondo": "28.5"
+      },
+      {
+        "size": "US 男 11",
+        "usMen": "11",
+        "eu": "44",
+        "uk": "10",
+        "mondo": "29"
+      },
+      {
+        "size": "US 男 11.5",
+        "usMen": "11.5",
+        "eu": "44.5",
+        "uk": "10.5",
+        "mondo": "29.5"
+      },
+      {
+        "size": "US 男 12",
+        "usMen": "12",
+        "eu": "45",
+        "uk": "11",
+        "mondo": "30"
+      },
+      {
+        "size": "US 男 13",
+        "usMen": "13",
+        "eu": "46",
+        "uk": "12",
+        "mondo": "31"
+      },
+      {
+        "size": "US 男 14",
+        "usMen": "14",
+        "eu": "47",
+        "uk": "13",
+        "mondo": "32"
+      },
+      {
+        "size": "US 男 15",
+        "usMen": "15",
+        "eu": "48",
+        "uk": "14",
+        "mondo": "33"
+      }
+    ],
+    "heatQuote": "iding elevated comfort thanks to a heat-moldable liner with integrated lacing for enhanced foot wrap and heel hold. Explore Liners Asym Life Lin",
+    "sources": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761；https://www.burton.com/en-us/pages/size-charts",
+    "seasonConfirmed": true,
+    "fitBoundary": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 Wide 应与该品牌同型号标准版比较，不能视为跨品牌统一宽度。",
+    "heatScope": "generic liner technology copy; model-specific heat molding not confirmed"
+  }
+}

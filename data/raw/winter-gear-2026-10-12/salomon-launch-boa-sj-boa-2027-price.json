@@ -1,0 +1,337 @@
+{
+  "slug": "salomon-launch-boa-sj-boa-2027",
+  "price": "USD 389.95",
+  "source": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:47:26.563Z",
+  "productName": "LAUNCH BOA® SJ BOA®",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "7",
+      "sku": "L49262200022",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200022",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "7.5",
+      "sku": "L49262200023",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200023",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "8",
+      "sku": "L49262200024",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200024",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "8.5",
+      "sku": "L49262200025",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200025",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "9",
+      "sku": "L49262200026",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200026",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "9.5",
+      "sku": "L49262200027",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200027",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "10",
+      "sku": "L49262200028",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200028",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "10.5",
+      "sku": "L49262200029",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200029",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "11",
+      "sku": "L49262200030",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200030",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "11.5",
+      "sku": "L49262200031",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200031",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "12",
+      "sku": "L49262200032",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200032",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "12.5",
+      "sku": "L49262200033",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200033",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "13",
+      "sku": "L49262200034",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200034",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "LAUNCH BOA® SJ BOA® Kelp / Brown Lentil / Dragon Fire",
+      "image": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Kelp / Brown Lentil / Dragon Fire",
+      "size": "13.5",
+      "sku": "L49262200035",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49262200?sizeId=L49262200035",
+        "priceCurrency": "USD",
+        "price": "389.95"
+      }
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400022"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400023"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400024"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400025"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400026"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400027"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400028"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400029"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400030"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400031"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400032"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400033"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400034"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49261400?sizeId=L49261400035"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000022"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000023"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000024"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000025"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000026"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000027"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000028"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000029"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000030"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000031"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000032"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000033"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000034"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L49272000?sizeId=L49272000035"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000022"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000023"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000024"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000025"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000026"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000027"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000028"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000029"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000030"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000031"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000032"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000033"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000034"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670/L47403000?sizeId=L47403000035"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "d5fe353e42c8ae613740d62265557f14fbbdf0874f64ecfd00d0bab9549354d2",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

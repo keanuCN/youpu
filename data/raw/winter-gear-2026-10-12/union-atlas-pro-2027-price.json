@@ -1,0 +1,88 @@
+{
+  "slug": "union-atlas-pro-2027",
+  "price": "USD 499.95",
+  "source": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:57.205Z",
+  "productName": "Union Atlas Pro",
+  "productType": "Product",
+  "productUrl": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "11000100-BLK-S",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027?variant=48907736449279"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11000100-BLK-M",
+      "availability": "http://schema.org/InStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027?variant=48907736482047"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11000100-BLK-L",
+      "availability": "http://schema.org/InStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027?variant=48907736514815"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11000100-STO-S",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027?variant=48907736547583"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11000100-STO-M",
+      "availability": "http://schema.org/InStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027?variant=48907736580351"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11000100-STO-L",
+      "availability": "http://schema.org/InStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027?variant=48907736613119"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11000100-KZ1-S",
+      "availability": "http://schema.org/InStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027?variant=48907736645887"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11000100-KZ1-M",
+      "availability": "http://schema.org/InStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027?variant=48907736678655"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11000100-KZ1-L",
+      "availability": "http://schema.org/InStock",
+      "price": 499.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027?variant=48907736711423"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "27ff5f82d70550c34506028cd14d759506beaf358671752eae0b58d5a6357f9b",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -10,8 +10,17 @@ specs:
   terrain: 巡游 / 全山地
   skierLevel: 中级至进阶
   bindingSetup: 裸板，固定器另配
+  weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
+  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
+    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。
+  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.salomon.com/en-us/product/mtn-86-carbon-li8310；https://www.grip-walk.com/faq/
 images:
-  - url: "https://cdn.dam.salomon.com/f142d815-a33c-4a23-ab3a-b31b00bd6bb5/L47824000%2B/PNG-2000px-max-72dpi.png"
+  - url: "https://cdn.dam.salomon.com/f142d815-a33c-4a23-ab3a-b31b00bd6bb5/L4782400\
+      0%2B/PNG-2000px-max-72dpi.png"
     kind: face
     alt: Salomon MTN 86 Carbon 2026/27 官方雪板商品图
     source: Salomon 官方产品页（图片使用授权待核）

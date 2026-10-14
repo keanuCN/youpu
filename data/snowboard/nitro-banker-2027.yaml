@@ -32,10 +32,15 @@ specs:
     - powder
     - carving
   sizeSpecs:
-    - {size: "148", waistWidth: 243, runningLength: 1060, noseWidth: 286, tailWidth: 282, sidecutRadii: "7.5/5.9 m", stanceWidth: "44–56 cm", setback: -15}
-    - {size: "152", waistWidth: 246, runningLength: 1090, noseWidth: 289, tailWidth: 286, sidecutRadii: "7.8/6.1 m", stanceWidth: "46–58 cm", setback: -15}
-    - {size: "156", waistWidth: 255, runningLength: 1120, noseWidth: 300, tailWidth: 296, sidecutRadii: "8.0/6.3 m", stanceWidth: "48–60 cm", setback: -15}
-    - {size: "160", waistWidth: 260, runningLength: 1150, noseWidth: 306, tailWidth: 302, sidecutRadii: "8.2/6.5 m", stanceWidth: "50–62 cm", setback: -15}
+    - { size: "148", waistWidth: 243, runningLength: 1060, noseWidth: 286, tailWidth: 282, sidecutRadii: "7.5/5.9 m", stanceWidth: "44–56 cm", setback: -15 }
+    - { size: "152", waistWidth: 246, runningLength: 1090, noseWidth: 289, tailWidth: 286, sidecutRadii: "7.8/6.1 m", stanceWidth: "46–58 cm", setback: -15 }
+    - { size: "156", waistWidth: 255, runningLength: 1120, noseWidth: 300, tailWidth: 296, sidecutRadii: "8.0/6.3 m", stanceWidth: "48–60 cm", setback: -15 }
+    - { size: "160", waistWidth: 260, runningLength: 1150, noseWidth: 306, tailWidth: 302, sidecutRadii: "8.2/6.5 m", stanceWidth: "50–62 cm", setback: -15 }
+  priceCheckedAt: 2026-10-12
+  officialPrice: EUR 649.9
+  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
+  priceSource: https://www.nitrosnowboards.com/products/banker-snowboard-1
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 images:
   - url: "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/11SB11004-101-1multBankerII.jpg?v=1787539883"
     kind: face

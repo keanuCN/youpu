@@ -8,3 +8,4 @@ export * from './admin';
 export * from './auth';
 export * from './community';
 export * from './price';
+export * from './equipment-fit';

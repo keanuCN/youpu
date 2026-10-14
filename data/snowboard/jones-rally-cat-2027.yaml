@@ -26,6 +26,21 @@ specs:
   scenes:
     - all-mountain
     - freestyle
+  lengthOptions: 151 / 154 / 155W / 156 / 158 / 159W / 161 / 162W / 166W / 170W
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "151", weight: 2400, effectiveEdge: 1110, waistWidth: 247, setback: 20, contactLength: 1064, noseLength: 228, tailLength: 218, noseWidth: 288, tailWidth: 288, frontFootWidth: 256, backFootWidth: 259, taper: 0, sidecutRadii: 7.0 m, stanceWidth: 500 mm（参考） / 520 mm（居中）, riderWeight: 110-160 lbs. / 49-73 kg., bootSize: US 7-9 / EU 39.5-41.5 }
+    - { size: "154", weight: 2500, effectiveEdge: 1140, waistWidth: 250, setback: 20, contactLength: 1088, noseLength: 231, tailLength: 221, noseWidth: 291, tailWidth: 291, frontFootWidth: 260, backFootWidth: 263, taper: 0, sidecutRadii: 7.3 m, stanceWidth: 520 mm（参考） / 540 mm（居中）, riderWeight: 120-170 lbs. / 54-77 kg., bootSize: US 7-9 / EU 39.5-41.5 }
+    - { size: 155W, weight: 2700, effectiveEdge: 1150, waistWidth: 258, setback: 20, contactLength: 1100, noseLength: 230, tailLength: 220, noseWidth: 300, tailWidth: 300, frontFootWidth: 268, backFootWidth: 271, taper: 0, sidecutRadii: 7.4 m, stanceWidth: 540 mm（参考） / 560 mm（居中）, riderWeight: 130-180 lbs. / 59-82 kg., bootSize: US 9.5-11 / EU 42.5-44.5 }
+    - { size: "156", weight: 2700, effectiveEdge: 1150, waistWidth: 252, setback: 20, contactLength: 1104, noseLength: 233, tailLength: 223, noseWidth: 294, tailWidth: 294, frontFootWidth: 262, backFootWidth: 265, taper: 0, sidecutRadii: 7.5 m, stanceWidth: 540 mm（参考） / 560 mm（居中）, riderWeight: 130-180 lbs. / 59-82 kg., bootSize: US 9-11 / EU 41.5-44.5 }
+    - { size: "158", weight: 2800, effectiveEdge: 1170, waistWidth: 254, setback: 20, contactLength: 1120, noseLength: 235, tailLength: 225, noseWidth: 296, tailWidth: 296, frontFootWidth: 264, backFootWidth: 268, taper: 0, sidecutRadii: 7.7 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 140-190 lbs. / 64-86 kg., bootSize: US 9-11 / EU 41.5-44.5 }
+    - { size: 159W, weight: 2800, effectiveEdge: 1180, waistWidth: 263, setback: 20, contactLength: 1130, noseLength: 235, tailLength: 225, noseWidth: 305, tailWidth: 305, frontFootWidth: 273, backFootWidth: 277, taper: 0, sidecutRadii: 7.8 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 150-200 lbs. / 67-91 kg., bootSize: US 11 / EU 44.5 }
+    - { size: "161", weight: 2800, effectiveEdge: 1190, waistWidth: 257, setback: 20, contactLength: 1144, noseLength: 238, tailLength: 228, noseWidth: 299, tailWidth: 299, frontFootWidth: 267, backFootWidth: 270, taper: 0, sidecutRadii: 8.0 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 150-200 lbs. / 67-91 kg., bootSize: US 9-11 / EU 41.5-44.5 }
+    - { size: 162W, weight: 2900, effectiveEdge: 1210, waistWidth: 265, setback: 20, contactLength: 1156, noseLength: 237, tailLength: 227, noseWidth: 307, tailWidth: 307, frontFootWidth: 275, backFootWidth: 278, taper: 0, sidecutRadii: 8.2 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 160-210 lbs. / 73-95 kg., bootSize: US 11 / EU 44.5 }
+    - { size: 166W, weight: 3100, effectiveEdge: 1240, waistWidth: 267, setback: 20, contactLength: 1192, noseLength: 239, tailLength: 229, noseWidth: 309, tailWidth: 309, frontFootWidth: 276, backFootWidth: 279, taper: 0, sidecutRadii: 8.6 m, stanceWidth: 600 mm（参考） / 580 mm（居中）, riderWeight: 170-220 lbs.+ / 77-100 kg.+, bootSize: US 11 / EU 44.5 }
+    - { size: 170W, weight: 3300, effectiveEdge: 1280, waistWidth: 269, setback: 20, contactLength: 1228, noseLength: 241, tailLength: 231, noseWidth: 312, tailWidth: 312, frontFootWidth: 279, backFootWidth: 282, taper: 0, sidecutRadii: 8.9 m, stanceWidth: 620 mm（参考） / 600 mm（居中）, riderWeight: 170-220 lbs.+ / 77-100 kg.+, bootSize: US 11 / EU 44.5 }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 6.9
   response: 7.1
@@ -40,6 +55,6 @@ images:
     source: Jones 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://www.jonessnowboards.com/products/mens-rally-cat-snowboard
 status: published

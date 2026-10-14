@@ -10,7 +10,8 @@ specs:
   waistWidth: 89
   turnRadius: 16.5
   turnRadiusReferenceLength: 167 cm
-  sidecutDimensions: "167 cm: 120-89-108 mm；185 cm: 124-89-112 mm（官方展示尺寸）；半径：167/16.5、173/17、179/17.5、185/18 m"
+  sidecutDimensions: "167 cm: 120-89-108 mm；185 cm: 124-89-112
+    mm（官方展示尺寸）；半径：167/16.5、173/17、179/17.5、185/18 m"
   profile: All Mountain Rocker（板头、板尾摇臂）
   core: Performance Wood + Pulse Core
   construction: 2 Ti Pulse Core；金属夹层与侧墙结构
@@ -22,6 +23,39 @@ specs:
   terrain: 雪道 / 全山地
   skierLevel: 中级至进阶
   bindingSetup: 裸板，固定器另配
+  weightBasis: 官方 Weight per pair：一对裸板重量；每个板长分别记录，不推算单只重量。
+  sizeSpecs:
+    - size: 167 cm
+      noseWidth: 120
+      waistWidth: 89
+      tailWidth: 108
+      turnRadius: 16.5
+      weightPerPair: 3540
+    - size: 173 cm
+      noseWidth: 121.5
+      waistWidth: 89
+      tailWidth: 109.5
+      turnRadius: 17
+      weightPerPair: 3720
+    - size: 179 cm
+      noseWidth: 122.5
+      waistWidth: 89
+      tailWidth: 110.5
+      turnRadius: 17.5
+      weightPerPair: 3900
+    - size: 185 cm
+      noseWidth: 124
+      waistWidth: 89
+      tailWidth: 112
+      turnRadius: 18
+      weightPerPair: 4120
+  geometryNotes: 已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替
+    BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。
+  seasonEvidence: 官方页面标题明确标注 2026/27，逐长度数据于 2026-10-13 提取。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-89-flat；https://www.grip-walk.com/faq/
 images:
   - url: "https://www.nordica.com/storage/Product/0A668400001_ENFORCER_89_FLAT.png"
     kind: face

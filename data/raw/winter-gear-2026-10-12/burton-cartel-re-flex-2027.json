@@ -1,0 +1,28 @@
+{
+  "capturedAt": "2026-10-12T06:40:00.889Z",
+  "target": {
+    "slug": "burton-cartel-re-flex-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Cartel Re:Flex",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-cartel-re-flex-snowboard-bindings-105391",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.burton.com/en-us/products/mens-burton-cartel-re-flex-snowboard-bindings-105391",
+    "robots": {
+      "robotsUrl": "https://www.burton.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:39:50.887Z",
+      "status": null,
+      "allowed": false,
+      "reason": "robots.txt 无法访问：The operation was aborted due to timeout"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "page": null,
+  "review": {
+    "rows": [],
+    "sources": "https://www.burton.com/en-us/products/mens-burton-cartel-re-flex-snowboard-bindings-105391"
+  }
+}

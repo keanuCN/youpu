@@ -1,0 +1,80 @@
+{
+  "slug": "rome-390-boss-aw-binding-2027",
+  "price": "USD 349.95",
+  "source": "https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:21.284Z",
+  "productName": "390 Boss AW Men's Snowboard Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings",
+  "hasVariant": [
+    {
+      "@id": "/products/rome-390-boss-aw-2627-men-bindings?variant=47796347109507#variant",
+      "@type": "Product",
+      "gtin": "8721164508158",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-aw-c2-acid-binding-1-1782374511046.jpg?v=1787636963&width=1920",
+      "name": "390 Boss AW Men's Snowboard Bindings - Acid / M/L",
+      "offers": {
+        "@id": "/products/rome-390-boss-aw-2627-men-bindings?variant=47796347109507#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings?variant=47796347109507"
+      },
+      "sku": "RO.27.20.390.ML.GN"
+    },
+    {
+      "@id": "/products/rome-390-boss-aw-2627-men-bindings?variant=47796347175043#variant",
+      "@type": "Product",
+      "gtin": "8721164508134",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-aw-c2-acid-binding-1-1782374511046.jpg?v=1787636963&width=1920",
+      "name": "390 Boss AW Men's Snowboard Bindings - Acid / L/XL",
+      "offers": {
+        "@id": "/products/rome-390-boss-aw-2627-men-bindings?variant=47796347175043#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings?variant=47796347175043"
+      },
+      "sku": "RO.27.20.390.LXL.GN"
+    },
+    {
+      "@id": "/products/rome-390-boss-aw-2627-men-bindings?variant=47796347142275#variant",
+      "@type": "Product",
+      "gtin": "8721164508165",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-aw-c3-orange-binding-1-1782374516480.jpg?v=1787636963&width=1920",
+      "name": "390 Boss AW Men's Snowboard Bindings - Orange / M/L",
+      "offers": {
+        "@id": "/products/rome-390-boss-aw-2627-men-bindings?variant=47796347142275#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings?variant=47796347142275"
+      },
+      "sku": "RO.27.20.390.ML.OG"
+    },
+    {
+      "@id": "/products/rome-390-boss-aw-2627-men-bindings?variant=47796347207811#variant",
+      "@type": "Product",
+      "gtin": "8721164508141",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-aw-c3-orange-binding-1-1782374516480.jpg?v=1787636963&width=1920",
+      "name": "390 Boss AW Men's Snowboard Bindings - Orange / L/XL",
+      "offers": {
+        "@id": "/products/rome-390-boss-aw-2627-men-bindings?variant=47796347207811#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "349.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings?variant=47796347207811"
+      },
+      "sku": "RO.27.20.390.LXL.OG"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "9b649197f50da93838b8e38e11fa3c421f06e3f15b1d59f1189c21c5d26f5b7b",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

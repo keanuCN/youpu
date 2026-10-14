@@ -1,0 +1,256 @@
+{
+  "slug": "nitro-tangent-tls-2027",
+  "price": "EUR 239.9",
+  "source": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:47:39.284Z",
+  "productName": "Nitro Tangent TLS Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1",
+  "hasVariant": [
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277713973579#variant",
+      "@type": "Product",
+      "gtin": "7630349345765",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 250",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277713973579#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277713973579"
+      },
+      "sku": "13BT11017-101-250"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714006347#variant",
+      "@type": "Product",
+      "gtin": "7630349345772",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 255",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714006347#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714006347"
+      },
+      "sku": "13BT11017-101-255"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714039115#variant",
+      "@type": "Product",
+      "gtin": "7630349345789",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 260",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714039115#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714039115"
+      },
+      "sku": "13BT11017-101-260"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714071883#variant",
+      "@type": "Product",
+      "gtin": "7630349345796",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 265",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714071883#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714071883"
+      },
+      "sku": "13BT11017-101-265"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714104651#variant",
+      "@type": "Product",
+      "gtin": "7630349345802",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 270",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714104651#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714104651"
+      },
+      "sku": "13BT11017-101-270"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714137419#variant",
+      "@type": "Product",
+      "gtin": "7630349345819",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 275",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714137419#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714137419"
+      },
+      "sku": "13BT11017-101-275"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714170187#variant",
+      "@type": "Product",
+      "gtin": "7630349345826",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 280",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714170187#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714170187"
+      },
+      "sku": "13BT11017-101-280"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714202955#variant",
+      "@type": "Product",
+      "gtin": "7630349345833",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 285",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714202955#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714202955"
+      },
+      "sku": "13BT11017-101-285"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714235723#variant",
+      "@type": "Product",
+      "gtin": "7630349345840",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 290",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714235723#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714235723"
+      },
+      "sku": "13BT11017-101-290"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714268491#variant",
+      "@type": "Product",
+      "gtin": "7630349345857",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 295",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714268491#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714268491"
+      },
+      "sku": "13BT11017-101-295"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714301259#variant",
+      "@type": "Product",
+      "gtin": "7630349345864",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 300",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714301259#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714301259"
+      },
+      "sku": "13BT11017-101-300"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714334027#variant",
+      "@type": "Product",
+      "gtin": "7630349345871",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 305",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714334027#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714334027"
+      },
+      "sku": "13BT11017-101-305"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714366795#variant",
+      "@type": "Product",
+      "gtin": "7630349345888",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 310",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714366795#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714366795"
+      },
+      "sku": "13BT11017-101-310"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714399563#variant",
+      "@type": "Product",
+      "gtin": "7630349345895",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 315",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714399563#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714399563"
+      },
+      "sku": "13BT11017-101-315"
+    },
+    {
+      "@id": "/products/tangent-tls-boots-1?variant=57277714432331#variant",
+      "@type": "Product",
+      "gtin": "7630349345901",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+      "name": "Nitro Tangent TLS Boots - Black / 320",
+      "offers": {
+        "@id": "/products/tangent-tls-boots-1?variant=57277714432331#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "239.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1?variant=57277714432331"
+      },
+      "sku": "13BT11017-101-320"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "cff8e258f4c1fb1cc1db38c1adeeb5c91c09d940ac971efdcfc6e25f2c0da39d",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

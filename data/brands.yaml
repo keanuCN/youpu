@@ -113,6 +113,22 @@
   official_url: https://www.nidecker.com/
   description: 瑞士滑雪品牌，雪具产品涵盖传统绑带固定器与快速穿脱系统。
 
+- slug: kailas
+  name: KAILAS
+  name_cn: 凯乐石
+  country: CN
+  official_url: https://www.kailas.com.cn/
+  description: 中国户外品牌，提供登山、滑雪与徒步装备。
+
+- slug: cosone
+  name: COSONE
+
+- slug: flow
+  name: Flow
+
+- slug: rome
+  name: Rome Snowboards
+
 - slug: bc-stream
   name: BC Stream
   country: JP

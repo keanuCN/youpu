@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-10-12T06:43:16.320Z",
+  "target": {
+    "slug": "nitro-phantom-plus-binding-2027",
+    "category": "snowboard-binding",
+    "brand": "nitro",
+    "model": "Phantom+",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/cs/collections/all-mens-bindings-26-27/products/phantom-bindings-3?variant=57278273716555",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.nitrosnowboards.com/cs/collections/all-mens-bindings-26-27/products/phantom-bindings-3?variant=57278273716555",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.nitrosnowboards.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:51.452Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "The 2027 Nitro Phantom+ Bindings - The Future of Precision Freeriding",
+    "canonicalUrl": "https://www.nitrosnowboards.com/products/phantom-bindings-3",
+    "tables": []
+  },
+  "review": {
+    "rows": [],
+    "sources": "https://www.nitrosnowboards.com/cs/collections/all-mens-bindings-26-27/products/phantom-bindings-3?variant=57278273716555",
+    "good": true
+  }
+}

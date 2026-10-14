@@ -1,0 +1,89 @@
+{
+  "snowboard": {
+    "total": 77,
+    "withTable": 67,
+    "rows": 512,
+    "missingTable": [
+      "bataleon-evil-twin-2025.yaml",
+      "burton-custom-camber-2026.yaml",
+      "capita-defenders-of-awesome-2026.yaml",
+      "capita-horrorscope-2024.yaml",
+      "decathlon-all-road-900-2026.yaml",
+      "decathlon-park-ride-500-2026.yaml",
+      "decathlon-snb-100-2026.yaml",
+      "gray-desperado-2024.yaml",
+      "jones-hovercraft-2-0-2027.yaml",
+      "jones-mountain-twin-2026.yaml"
+    ],
+    "cnyPending": 77,
+    "withExplicitKg": 34,
+    "withWeightRangeFor60To75": 34
+  },
+  "snowboard-binding": {
+    "total": 60,
+    "withTable": 36,
+    "rows": 125,
+    "missingTable": [
+      "burton-cartel-re-flex-2027.yaml",
+      "cosone-step-on-binding-2026.yaml",
+      "decathlon-snb-500-binding-2026.yaml",
+      "flow-fuse-binding-2026.yaml",
+      "flow-fuse-hybrid-binding-2026.yaml",
+      "jones-mercury-binding-2026.yaml",
+      "jones-orion-binding-2026.yaml",
+      "nitro-fate-binding-2027.yaml",
+      "nitro-one-binding-2027.yaml",
+      "nitro-phantom-binding-2027.yaml",
+      "nitro-phantom-plus-binding-2027.yaml",
+      "nitro-poison-binding-2027.yaml",
+      "nitro-rambler-binding-2027.yaml",
+      "nitro-talent-binding-2027.yaml",
+      "nitro-team-binding-2027.yaml",
+      "nitro-team-pro-binding-2027.yaml",
+      "salomon-district-binding-2026.yaml",
+      "salomon-district-pro-binding-2026.yaml",
+      "salomon-edb-binding-2026.yaml",
+      "salomon-edb-prime-binding-2026.yaml",
+      "salomon-highlander-binding-2026.yaml",
+      "salomon-hologram-binding-2026.yaml",
+      "salomon-pact-binding-2026.yaml",
+      "salomon-rhythm-binding-2026.yaml"
+    ],
+    "cnyPending": 60
+  },
+  "snowboard-boot": {
+    "total": 30,
+    "withTable": 30,
+    "rows": 582,
+    "missingTable": [],
+    "cnyPending": 30
+  },
+  "skis": {
+    "total": 39,
+    "withTable": 19,
+    "rows": 80,
+    "missingTable": [
+      "atomic-redster-q7-2026.yaml",
+      "atomic-redster-q7-8-2026.yaml",
+      "atomic-redster-q9-2026.yaml",
+      "atomic-redster-q9-8-2026.yaml",
+      "atomic-redster-s9-2026.yaml",
+      "head-e-slr-2026.yaml",
+      "head-easy-joy-r-2026.yaml",
+      "head-shape-e-v5-2026.yaml",
+      "head-shape-v2-2026.yaml",
+      "head-shape-v2-r-2026.yaml",
+      "nordica-unleashed-98-2027.yaml",
+      "rossignol-experience-76-2026.yaml",
+      "salomon-mtn-86-carbon-2027.yaml",
+      "salomon-qst-100-2027.yaml",
+      "salomon-qst-106-2027.yaml",
+      "salomon-qst-92-2027.yaml",
+      "salomon-qst-94-2027.yaml",
+      "salomon-qst-98-2027.yaml",
+      "salomon-qst-blank-2027.yaml",
+      "salomon-stance-84-2027.yaml"
+    ],
+    "cnyPending": 0
+  }
+}

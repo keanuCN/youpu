@@ -1,0 +1,304 @@
+{
+  "slug": "burton-good-company-camber-2027",
+  "price": "USD 449.95",
+  "source": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T07:05:09.981Z",
+  "productName": "Burton Good Company Camber Snowboard",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951",
+  "hasVariant": [
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939360001#variant",
+      "@type": "Product",
+      "gtin": "197183366952",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359514FAF_1.webp?v=1783619431&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Alien / 135",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939360001#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939360001"
+      },
+      "sku": "2359514FAFRG135"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939392769#variant",
+      "@type": "Product",
+      "gtin": "197183366969",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359514FAF_1.webp?v=1783619431&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Alien / 140",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939392769#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939392769"
+      },
+      "sku": "2359514FAFRG140"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939425537#variant",
+      "@type": "Product",
+      "gtin": "197183367720",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359514FAF_1.webp?v=1783619431&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Alien / 145",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939425537#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939425537"
+      },
+      "sku": "2359514FAFRG145"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939458305#variant",
+      "@type": "Product",
+      "gtin": "197183366945",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359514FAF_1.webp?v=1783619431&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Alien / 148",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939458305#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939458305"
+      },
+      "sku": "2359514FAFRG148"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939491073#variant",
+      "@type": "Product",
+      "gtin": "197183367041",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359514FAF_1.webp?v=1783619431&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Alien / 152",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939491073#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939491073"
+      },
+      "sku": "2359514FAFRG152"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939523841#variant",
+      "@type": "Product",
+      "gtin": "197183367010",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359514FAF_1.webp?v=1783619431&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Alien / 155",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939523841#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939523841"
+      },
+      "sku": "2359514FAFRG155"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939556609#variant",
+      "@type": "Product",
+      "gtin": "197183367126",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359514FAF_1.webp?v=1783619431&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Alien / 159",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939556609#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939556609"
+      },
+      "sku": "2359514FAFRG159"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939589377#variant",
+      "@type": "Product",
+      "gtin": "197183367058",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359514FAF_1.webp?v=1783619431&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Alien / 155W",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939589377#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939589377"
+      },
+      "sku": "2359514FAFRG55W"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939622145#variant",
+      "@type": "Product",
+      "gtin": "197183367188",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359514FAF_1.webp?v=1783619431&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Alien / 159W",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939622145#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939622145"
+      },
+      "sku": "2359514FAFRG59W"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939654913#variant",
+      "@type": "Product",
+      "gtin": "197183367164",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359514FAF_1.webp?v=1783619431&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Alien / 162W",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939654913#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=49581939654913"
+      },
+      "sku": "2359514FAFRG62W"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755263996161#variant",
+      "@type": "Product",
+      "gtin": "197183150896",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359513A03_1.webp?v=1778421389&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Graphic / 135",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755263996161#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755263996161"
+      },
+      "sku": "2359513A03RG135"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264028929#variant",
+      "@type": "Product",
+      "gtin": "197183150902",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359513A03_1.webp?v=1778421389&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Graphic / 145",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264028929#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264028929"
+      },
+      "sku": "2359513A03RG145"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264061697#variant",
+      "@type": "Product",
+      "gtin": "197183150919",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359513A03_1.webp?v=1778421389&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Graphic / 148",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264061697#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264061697"
+      },
+      "sku": "2359513A03RG148"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264094465#variant",
+      "@type": "Product",
+      "gtin": "197183150926",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359513A03_1.webp?v=1778421389&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Graphic / 152",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264094465#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264094465"
+      },
+      "sku": "2359513A03RG152"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264127233#variant",
+      "@type": "Product",
+      "gtin": "197183150933",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359513A03_1.webp?v=1778421389&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Graphic / 155",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264127233#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264127233"
+      },
+      "sku": "2359513A03RG155"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264160001#variant",
+      "@type": "Product",
+      "gtin": "197183150797",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359513A03_1.webp?v=1778421389&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Graphic / 159",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264160001#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264160001"
+      },
+      "sku": "2359513A03RG159"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264192769#variant",
+      "@type": "Product",
+      "gtin": "197183150803",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359513A03_1.webp?v=1778421389&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Graphic / 155W",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264192769#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264192769"
+      },
+      "sku": "2359513A03RG55W"
+    },
+    {
+      "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264225537#variant",
+      "@type": "Product",
+      "gtin": "197183150810",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359513A03_1.webp?v=1778421389&width=1920",
+      "name": "Burton Good Company Camber Snowboard - Graphic / 159W",
+      "offers": {
+        "@id": "/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264225537#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "449.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951?variant=48755264225537"
+      },
+      "sku": "2359513A03RG59W"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "400527ede94fdf2fb10381ff9a7d1c44f6521dbb95b9409d8534e03567c7e724",
+    "normalizedSpecHash": "60d0866473661a7e9d3ee3585d3e7014cae798a3f077210acfb578dc1d61de00"
+  }
+}

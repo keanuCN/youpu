@@ -9,7 +9,7 @@ import { generateUpdateDrafts, writeUpdateDraftReport } from './engine/update-dr
 import { updateTargetLedger } from './engine/ledger';
 import { crawlTargetSchema, type CrawlTarget, type CrawlMode } from './engine/types';
 
-const DEFAULT_USER_AGENT = 'youpu-collector/0.1 (+https://xiaopang.club/)';
+const DEFAULT_USER_AGENT = 'youpu-collector/0.1 (+https://youpu.asia/)';
 const MIN_INTERVAL_MS = 2_000;
 
 interface CliArgs {

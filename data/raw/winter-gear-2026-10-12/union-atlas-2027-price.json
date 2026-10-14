@@ -1,0 +1,112 @@
+{
+  "slug": "union-atlas-2027",
+  "price": "USD 399.95",
+  "source": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:53.682Z",
+  "productName": "Union Atlas",
+  "productType": "Product",
+  "productUrl": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "11010700-BK1-S",
+      "availability": "http://schema.org/InStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737596159"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010700-BK1-M",
+      "availability": "http://schema.org/InStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737628927"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010700-BK1-L",
+      "availability": "http://schema.org/InStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737661695"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010700-CGR-S",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737694463"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010700-CGR-M",
+      "availability": "http://schema.org/InStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737727231"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010700-CGR-L",
+      "availability": "http://schema.org/InStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737759999"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010700-ORG-S",
+      "availability": "http://schema.org/InStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737792767"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010700-ORG-M",
+      "availability": "http://schema.org/InStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737825535"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010700-ORG-L",
+      "availability": "http://schema.org/InStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737858303"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010700-KVB-S",
+      "availability": "http://schema.org/InStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737891071"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010700-KVB-M",
+      "availability": "http://schema.org/InStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737923839"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11010700-KVB-L",
+      "availability": "http://schema.org/InStock",
+      "price": 399.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027?variant=48907737956607"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "bc20876d7a60fb1b86fa3bbf4dcc5d5000ce40a8d1287ee08450eb82426c723d",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

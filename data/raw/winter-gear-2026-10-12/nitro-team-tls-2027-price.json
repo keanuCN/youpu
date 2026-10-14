@@ -1,0 +1,832 @@
+{
+  "slug": "nitro-team-tls-2027",
+  "price": "EUR 479.9",
+  "source": "https://www.nitrosnowboards.com/products/team-tls-boots-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:47:51.508Z",
+  "productName": "Nitro Team TLS Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/team-tls-boots-1",
+  "hasVariant": [
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707092299#variant",
+      "@type": "Product",
+      "gtin": "7630349341583",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 250",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707092299#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707092299"
+      },
+      "sku": "13BT11008-102-250"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707125067#variant",
+      "@type": "Product",
+      "gtin": "7630349341590",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 255",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707125067#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707125067"
+      },
+      "sku": "13BT11008-102-255"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707157835#variant",
+      "@type": "Product",
+      "gtin": "7630349341606",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 260",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707157835#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707157835"
+      },
+      "sku": "13BT11008-102-260"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707190603#variant",
+      "@type": "Product",
+      "gtin": "7630349341613",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 265",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707190603#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707190603"
+      },
+      "sku": "13BT11008-102-265"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707223371#variant",
+      "@type": "Product",
+      "gtin": "7630349341620",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 270",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707223371#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707223371"
+      },
+      "sku": "13BT11008-102-270"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707256139#variant",
+      "@type": "Product",
+      "gtin": "7630349341637",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 275",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707256139#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707256139"
+      },
+      "sku": "13BT11008-102-275"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707288907#variant",
+      "@type": "Product",
+      "gtin": "7630349341644",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 280",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707288907#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707288907"
+      },
+      "sku": "13BT11008-102-280"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707321675#variant",
+      "@type": "Product",
+      "gtin": "7630349341651",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 285",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707321675#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707321675"
+      },
+      "sku": "13BT11008-102-285"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707354443#variant",
+      "@type": "Product",
+      "gtin": "7630349341668",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 290",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707354443#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707354443"
+      },
+      "sku": "13BT11008-102-290"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707387211#variant",
+      "@type": "Product",
+      "gtin": "7630349341675",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 295",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707387211#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707387211"
+      },
+      "sku": "13BT11008-102-295"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707419979#variant",
+      "@type": "Product",
+      "gtin": "7630349341682",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 300",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707419979#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707419979"
+      },
+      "sku": "13BT11008-102-300"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707452747#variant",
+      "@type": "Product",
+      "gtin": "7630349341699",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 305",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707452747#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707452747"
+      },
+      "sku": "13BT11008-102-305"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707485515#variant",
+      "@type": "Product",
+      "gtin": "7630349341705",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 310",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707485515#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707485515"
+      },
+      "sku": "13BT11008-102-310"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707518283#variant",
+      "@type": "Product",
+      "gtin": "7630349341712",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 315",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707518283#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707518283"
+      },
+      "sku": "13BT11008-102-315"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707551051#variant",
+      "@type": "Product",
+      "gtin": "7630349341729",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 320",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707551051#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707551051"
+      },
+      "sku": "13BT11008-102-320"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707583819#variant",
+      "@type": "Product",
+      "gtin": "7630349341736",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 325",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707583819#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707583819"
+      },
+      "sku": "13BT11008-102-325"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707616587#variant",
+      "@type": "Product",
+      "gtin": "7630349341743",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - White-Black / 330",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707616587#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707616587"
+      },
+      "sku": "13BT11008-102-330"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706535243#variant",
+      "@type": "Product",
+      "gtin": "7630349341415",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 250",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706535243#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706535243"
+      },
+      "sku": "13BT11008-101-250"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706568011#variant",
+      "@type": "Product",
+      "gtin": "7630349341422",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 255",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706568011#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706568011"
+      },
+      "sku": "13BT11008-101-255"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706600779#variant",
+      "@type": "Product",
+      "gtin": "7630349341439",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 260",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706600779#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706600779"
+      },
+      "sku": "13BT11008-101-260"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706633547#variant",
+      "@type": "Product",
+      "gtin": "7630349341446",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 265",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706633547#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706633547"
+      },
+      "sku": "13BT11008-101-265"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706666315#variant",
+      "@type": "Product",
+      "gtin": "7630349341453",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 270",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706666315#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706666315"
+      },
+      "sku": "13BT11008-101-270"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706699083#variant",
+      "@type": "Product",
+      "gtin": "7630349341460",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 275",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706699083#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706699083"
+      },
+      "sku": "13BT11008-101-275"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706731851#variant",
+      "@type": "Product",
+      "gtin": "7630349341477",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 280",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706731851#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706731851"
+      },
+      "sku": "13BT11008-101-280"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706764619#variant",
+      "@type": "Product",
+      "gtin": "7630349341484",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 285",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706764619#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706764619"
+      },
+      "sku": "13BT11008-101-285"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706797387#variant",
+      "@type": "Product",
+      "gtin": "7630349341491",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 290",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706797387#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706797387"
+      },
+      "sku": "13BT11008-101-290"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706830155#variant",
+      "@type": "Product",
+      "gtin": "7630349341507",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 295",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706830155#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706830155"
+      },
+      "sku": "13BT11008-101-295"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706862923#variant",
+      "@type": "Product",
+      "gtin": "7630349341514",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 300",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706862923#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706862923"
+      },
+      "sku": "13BT11008-101-300"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706895691#variant",
+      "@type": "Product",
+      "gtin": "7630349341521",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 305",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706895691#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706895691"
+      },
+      "sku": "13BT11008-101-305"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706928459#variant",
+      "@type": "Product",
+      "gtin": "7630349341538",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 310",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706928459#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706928459"
+      },
+      "sku": "13BT11008-101-310"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706961227#variant",
+      "@type": "Product",
+      "gtin": "7630349341545",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 315",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706961227#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706961227"
+      },
+      "sku": "13BT11008-101-315"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277706993995#variant",
+      "@type": "Product",
+      "gtin": "7630349341552",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 320",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277706993995#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277706993995"
+      },
+      "sku": "13BT11008-101-320"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707026763#variant",
+      "@type": "Product",
+      "gtin": "7630349341569",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 325",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707026763#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707026763"
+      },
+      "sku": "13BT11008-101-325"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707059531#variant",
+      "@type": "Product",
+      "gtin": "7630349341576",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-101_Team-TLS-Boots_Black_Product-1.jpg?v=1779339453&width=1920",
+      "name": "Nitro Team TLS Boots - Black / 330",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707059531#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707059531"
+      },
+      "sku": "13BT11008-101-330"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707649355#variant",
+      "@type": "Product",
+      "gtin": "7630349341750",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 250",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707649355#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707649355"
+      },
+      "sku": "13BT11008-103-250"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707682123#variant",
+      "@type": "Product",
+      "gtin": "7630349341767",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 255",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707682123#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707682123"
+      },
+      "sku": "13BT11008-103-255"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707714891#variant",
+      "@type": "Product",
+      "gtin": "7630349341774",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 260",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707714891#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707714891"
+      },
+      "sku": "13BT11008-103-260"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707747659#variant",
+      "@type": "Product",
+      "gtin": "7630349341781",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 265",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707747659#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707747659"
+      },
+      "sku": "13BT11008-103-265"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707780427#variant",
+      "@type": "Product",
+      "gtin": "7630349341798",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 270",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707780427#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707780427"
+      },
+      "sku": "13BT11008-103-270"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707813195#variant",
+      "@type": "Product",
+      "gtin": "7630349341804",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 275",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707813195#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707813195"
+      },
+      "sku": "13BT11008-103-275"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707845963#variant",
+      "@type": "Product",
+      "gtin": "7630349341811",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 280",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707845963#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707845963"
+      },
+      "sku": "13BT11008-103-280"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707878731#variant",
+      "@type": "Product",
+      "gtin": "7630349341828",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 285",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707878731#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707878731"
+      },
+      "sku": "13BT11008-103-285"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707911499#variant",
+      "@type": "Product",
+      "gtin": "7630349341835",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 290",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707911499#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707911499"
+      },
+      "sku": "13BT11008-103-290"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707944267#variant",
+      "@type": "Product",
+      "gtin": "7630349341842",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 295",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707944267#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707944267"
+      },
+      "sku": "13BT11008-103-295"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277707977035#variant",
+      "@type": "Product",
+      "gtin": "7630349341859",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 300",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277707977035#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277707977035"
+      },
+      "sku": "13BT11008-103-300"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277708009803#variant",
+      "@type": "Product",
+      "gtin": "7630349341866",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 305",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277708009803#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277708009803"
+      },
+      "sku": "13BT11008-103-305"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277708042571#variant",
+      "@type": "Product",
+      "gtin": "7630349341873",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 310",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277708042571#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277708042571"
+      },
+      "sku": "13BT11008-103-310"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277708075339#variant",
+      "@type": "Product",
+      "gtin": "7630349341880",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 315",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277708075339#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277708075339"
+      },
+      "sku": "13BT11008-103-315"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277708108107#variant",
+      "@type": "Product",
+      "gtin": "7630349341897",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 320",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277708108107#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277708108107"
+      },
+      "sku": "13BT11008-103-320"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277708140875#variant",
+      "@type": "Product",
+      "gtin": "7630349341903",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 325",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277708140875#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277708140875"
+      },
+      "sku": "13BT11008-103-325"
+    },
+    {
+      "@id": "/products/team-tls-boots-1?variant=57277708173643#variant",
+      "@type": "Product",
+      "gtin": "7630349341910",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-103_Team-TLS-Boots_Grey_Product-1.jpg?v=1779339452&width=1920",
+      "name": "Nitro Team TLS Boots - Grey / 330",
+      "offers": {
+        "@id": "/products/team-tls-boots-1?variant=57277708173643#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "479.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-tls-boots-1?variant=57277708173643"
+      },
+      "sku": "13BT11008-103-330"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "0f91cfe80228bfb93341994c62ed6e030c12c09ae0a15eb8c054f5323ca99869",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -1,0 +1,1456 @@
+{
+  "slug": "burton-moto-boa-2027",
+  "price": "USD 279.95",
+  "source": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:47:22.121Z",
+  "productName": "Men's Burton Moto BOA® Snowboard Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761",
+  "hasVariant": [
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848068353#variant",
+      "@type": "Product",
+      "gtin": "197183372625",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 6",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848068353#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848068353"
+      },
+      "sku": "1317614E7MRG006"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848101121#variant",
+      "@type": "Product",
+      "gtin": "197183372618",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848101121#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848101121"
+      },
+      "sku": "1317614E7MRG007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848133889#variant",
+      "@type": "Product",
+      "gtin": "197183372601",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848133889#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848133889"
+      },
+      "sku": "1317614E7MRG075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848166657#variant",
+      "@type": "Product",
+      "gtin": "197183372595",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848166657#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848166657"
+      },
+      "sku": "1317614E7MRG008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848199425#variant",
+      "@type": "Product",
+      "gtin": "197183372588",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848199425#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848199425"
+      },
+      "sku": "1317614E7MRG085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848232193#variant",
+      "@type": "Product",
+      "gtin": "197183372571",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848232193#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848232193"
+      },
+      "sku": "1317614E7MRG009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848264961#variant",
+      "@type": "Product",
+      "gtin": "197183372717",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848264961#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848264961"
+      },
+      "sku": "1317614E7MRG095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848297729#variant",
+      "@type": "Product",
+      "gtin": "197183372748",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848297729#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848297729"
+      },
+      "sku": "1317614E7MRG010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848330497#variant",
+      "@type": "Product",
+      "gtin": "197183372731",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848330497#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848330497"
+      },
+      "sku": "1317614E7MRG105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848363265#variant",
+      "@type": "Product",
+      "gtin": "197183372724",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848363265#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848363265"
+      },
+      "sku": "1317614E7MRG011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848396033#variant",
+      "@type": "Product",
+      "gtin": "197183372793",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848396033#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848396033"
+      },
+      "sku": "1317614E7MRG11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848428801#variant",
+      "@type": "Product",
+      "gtin": "197183372755",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848428801#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848428801"
+      },
+      "sku": "1317614E7MRG012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848461569#variant",
+      "@type": "Product",
+      "gtin": "197183372519",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848461569#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848461569"
+      },
+      "sku": "1317614E7MRG013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848494337#variant",
+      "@type": "Product",
+      "gtin": "197183372502",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848494337#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848494337"
+      },
+      "sku": "1317614E7MRG014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848527105#variant",
+      "@type": "Product",
+      "gtin": "197183372632",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Regular / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848527105#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848527105"
+      },
+      "sku": "1317614E7MRG015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848559873#variant",
+      "@type": "Product",
+      "gtin": "197183371932",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 6",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848559873#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848559873"
+      },
+      "sku": "1317614E7MWD006"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848592641#variant",
+      "@type": "Product",
+      "gtin": "197183371895",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848592641#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848592641"
+      },
+      "sku": "1317614E7MWD007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848625409#variant",
+      "@type": "Product",
+      "gtin": "197183371864",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848625409#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848625409"
+      },
+      "sku": "1317614E7MWD075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848658177#variant",
+      "@type": "Product",
+      "gtin": "197183371956",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848658177#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848658177"
+      },
+      "sku": "1317614E7MWD008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848690945#variant",
+      "@type": "Product",
+      "gtin": "197183371680",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848690945#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848690945"
+      },
+      "sku": "1317614E7MWD085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848723713#variant",
+      "@type": "Product",
+      "gtin": "197183371970",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848723713#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848723713"
+      },
+      "sku": "1317614E7MWD009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848756481#variant",
+      "@type": "Product",
+      "gtin": "197183371994",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848756481#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848756481"
+      },
+      "sku": "1317614E7MWD095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848789249#variant",
+      "@type": "Product",
+      "gtin": "197183371819",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848789249#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848789249"
+      },
+      "sku": "1317614E7MWD010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848822017#variant",
+      "@type": "Product",
+      "gtin": "197183371833",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848822017#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848822017"
+      },
+      "sku": "1317614E7MWD105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848854785#variant",
+      "@type": "Product",
+      "gtin": "197183371727",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848854785#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848854785"
+      },
+      "sku": "1317614E7MWD011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848887553#variant",
+      "@type": "Product",
+      "gtin": "197183371758",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848887553#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848887553"
+      },
+      "sku": "1317614E7MWD11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848920321#variant",
+      "@type": "Product",
+      "gtin": "197183371772",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848920321#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848920321"
+      },
+      "sku": "1317614E7MWD012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848953089#variant",
+      "@type": "Product",
+      "gtin": "197183371659",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848953089#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848953089"
+      },
+      "sku": "1317614E7MWD013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848985857#variant",
+      "@type": "Product",
+      "gtin": "197183371666",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848985857#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581848985857"
+      },
+      "sku": "1317614E7MWD014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849018625#variant",
+      "@type": "Product",
+      "gtin": "197183371673",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Chinchilla Gray / Wide / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849018625#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849018625"
+      },
+      "sku": "1317614E7MWD015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849051393#variant",
+      "@type": "Product",
+      "gtin": "197183372557",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 6",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849051393#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849051393"
+      },
+      "sku": "1317614E9ORG006"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849084161#variant",
+      "@type": "Product",
+      "gtin": "197183372540",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849084161#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849084161"
+      },
+      "sku": "1317614E9ORG007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849116929#variant",
+      "@type": "Product",
+      "gtin": "197183373479",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849116929#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849116929"
+      },
+      "sku": "1317614E9ORG075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849149697#variant",
+      "@type": "Product",
+      "gtin": "197183373363",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849149697#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849149697"
+      },
+      "sku": "1317614E9ORG008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849182465#variant",
+      "@type": "Product",
+      "gtin": "197183373356",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849182465#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849182465"
+      },
+      "sku": "1317614E9ORG085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849215233#variant",
+      "@type": "Product",
+      "gtin": "197183373349",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849215233#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849215233"
+      },
+      "sku": "1317614E9ORG009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849248001#variant",
+      "@type": "Product",
+      "gtin": "197183373332",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849248001#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849248001"
+      },
+      "sku": "1317614E9ORG095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849280769#variant",
+      "@type": "Product",
+      "gtin": "197183373417",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849280769#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849280769"
+      },
+      "sku": "1317614E9ORG010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849313537#variant",
+      "@type": "Product",
+      "gtin": "197183373547",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849313537#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849313537"
+      },
+      "sku": "1317614E9ORG105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849346305#variant",
+      "@type": "Product",
+      "gtin": "197183373530",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849346305#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849346305"
+      },
+      "sku": "1317614E9ORG011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849379073#variant",
+      "@type": "Product",
+      "gtin": "197183373523",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849379073#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849379073"
+      },
+      "sku": "1317614E9ORG11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849411841#variant",
+      "@type": "Product",
+      "gtin": "197183373516",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849411841#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849411841"
+      },
+      "sku": "1317614E9ORG012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849444609#variant",
+      "@type": "Product",
+      "gtin": "197183373509",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849444609#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849444609"
+      },
+      "sku": "1317614E9ORG013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849477377#variant",
+      "@type": "Product",
+      "gtin": "197183372434",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849477377#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849477377"
+      },
+      "sku": "1317614E9ORG014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849510145#variant",
+      "@type": "Product",
+      "gtin": "197183372564",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Regular / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849510145#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849510145"
+      },
+      "sku": "1317614E9ORG015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849542913#variant",
+      "@type": "Product",
+      "gtin": "197183371697",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 6",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849542913#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849542913"
+      },
+      "sku": "1317614E9OWD006"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849575681#variant",
+      "@type": "Product",
+      "gtin": "197183371703",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849575681#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849575681"
+      },
+      "sku": "1317614E9OWD007"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849608449#variant",
+      "@type": "Product",
+      "gtin": "197183371710",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849608449#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849608449"
+      },
+      "sku": "1317614E9OWD075"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849641217#variant",
+      "@type": "Product",
+      "gtin": "197183371598",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849641217#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849641217"
+      },
+      "sku": "1317614E9OWD008"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849673985#variant",
+      "@type": "Product",
+      "gtin": "197183372342",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849673985#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849673985"
+      },
+      "sku": "1317614E9OWD085"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849706753#variant",
+      "@type": "Product",
+      "gtin": "197183372465",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849706753#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849706753"
+      },
+      "sku": "1317614E9OWD009"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849739521#variant",
+      "@type": "Product",
+      "gtin": "197183372472",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849739521#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849739521"
+      },
+      "sku": "1317614E9OWD095"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849772289#variant",
+      "@type": "Product",
+      "gtin": "197183372489",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849772289#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849772289"
+      },
+      "sku": "1317614E9OWD010"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849805057#variant",
+      "@type": "Product",
+      "gtin": "197183372496",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849805057#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849805057"
+      },
+      "sku": "1317614E9OWD105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849837825#variant",
+      "@type": "Product",
+      "gtin": "197183372366",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849837825#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849837825"
+      },
+      "sku": "1317614E9OWD011"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849870593#variant",
+      "@type": "Product",
+      "gtin": "197183372533",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849870593#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849870593"
+      },
+      "sku": "1317614E9OWD11P"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849903361#variant",
+      "@type": "Product",
+      "gtin": "197183372526",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849903361#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849903361"
+      },
+      "sku": "1317614E9OWD012"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849936129#variant",
+      "@type": "Product",
+      "gtin": "197183372311",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849936129#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849936129"
+      },
+      "sku": "1317614E9OWD013"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849968897#variant",
+      "@type": "Product",
+      "gtin": "197183372328",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849968897#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581849968897"
+      },
+      "sku": "1317614E9OWD014"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581850001665#variant",
+      "@type": "Product",
+      "gtin": "197183372335",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E9O_1.webp?v=1783620138&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Geranium Red / Black / Wide / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581850001665#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=49581850001665"
+      },
+      "sku": "1317614E9OWD015"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48338444878081#variant",
+      "@type": "Product",
+      "gtin": "190450679311",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 6",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48338444878081#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48338444878081"
+      },
+      "sku": "21425100001-6.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141771521#variant",
+      "@type": "Product",
+      "gtin": "190450679328",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141771521#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141771521"
+      },
+      "sku": "21425100001-7.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141804289#variant",
+      "@type": "Product",
+      "gtin": "190450679335",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141804289#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141804289"
+      },
+      "sku": "21425100001-7.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141837057#variant",
+      "@type": "Product",
+      "gtin": "190450679342",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141837057#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141837057"
+      },
+      "sku": "21425100001-8.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141869825#variant",
+      "@type": "Product",
+      "gtin": "190450679359",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141869825#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141869825"
+      },
+      "sku": "21425100001-8.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141902593#variant",
+      "@type": "Product",
+      "gtin": "190450679366",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141902593#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141902593"
+      },
+      "sku": "21425100001-9.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141935361#variant",
+      "@type": "Product",
+      "gtin": "190450679373",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141935361#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141935361"
+      },
+      "sku": "21425100001-9.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141968129#variant",
+      "@type": "Product",
+      "gtin": "190450679281",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141968129#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755141968129"
+      },
+      "sku": "21425100001-10"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142000897#variant",
+      "@type": "Product",
+      "gtin": "190450679298",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142000897#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142000897"
+      },
+      "sku": "21425100001-105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142033665#variant",
+      "@type": "Product",
+      "gtin": "190450679304",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142033665#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142033665"
+      },
+      "sku": "21425100001-11"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142066433#variant",
+      "@type": "Product",
+      "gtin": "193177934442",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142066433#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142066433"
+      },
+      "sku": "21425100001-115"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142099201#variant",
+      "@type": "Product",
+      "gtin": "193177934459",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142099201#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142099201"
+      },
+      "sku": "21425100001-12"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142131969#variant",
+      "@type": "Product",
+      "gtin": "193177934466",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142131969#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142131969"
+      },
+      "sku": "21425100001-13"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142164737#variant",
+      "@type": "Product",
+      "gtin": "193177934473",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142164737#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142164737"
+      },
+      "sku": "21425100001-14"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142197505#variant",
+      "@type": "Product",
+      "gtin": "193177934480",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Wide / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142197505#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142197505"
+      },
+      "sku": "21425100001-15"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142230273#variant",
+      "@type": "Product",
+      "gtin": "190450500233",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 6",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142230273#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142230273"
+      },
+      "sku": "13176104001-6.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142263041#variant",
+      "@type": "Product",
+      "gtin": "190450209471",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142263041#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142263041"
+      },
+      "sku": "13176104001-7.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142295809#variant",
+      "@type": "Product",
+      "gtin": "190450209488",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142295809#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142295809"
+      },
+      "sku": "13176104001-7.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142328577#variant",
+      "@type": "Product",
+      "gtin": "190450209495",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142328577#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142328577"
+      },
+      "sku": "13176104001-8.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142361345#variant",
+      "@type": "Product",
+      "gtin": "190450209501",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142361345#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142361345"
+      },
+      "sku": "13176104001-8.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142394113#variant",
+      "@type": "Product",
+      "gtin": "190450209518",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142394113#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142394113"
+      },
+      "sku": "13176104001-9.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142426881#variant",
+      "@type": "Product",
+      "gtin": "190450209525",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142426881#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142426881"
+      },
+      "sku": "13176104001-9.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142459649#variant",
+      "@type": "Product",
+      "gtin": "190450209396",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142459649#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142459649"
+      },
+      "sku": "13176104001-10"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142492417#variant",
+      "@type": "Product",
+      "gtin": "190450209402",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142492417#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142492417"
+      },
+      "sku": "13176104001-105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142525185#variant",
+      "@type": "Product",
+      "gtin": "190450209419",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142525185#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142525185"
+      },
+      "sku": "13176104001-11"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142557953#variant",
+      "@type": "Product",
+      "gtin": "190450209426",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142557953#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142557953"
+      },
+      "sku": "13176104001-115"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142590721#variant",
+      "@type": "Product",
+      "gtin": "190450209433",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142590721#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142590721"
+      },
+      "sku": "13176104001-12"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142623489#variant",
+      "@type": "Product",
+      "gtin": "190450209440",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142623489#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142623489"
+      },
+      "sku": "13176104001-13"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142656257#variant",
+      "@type": "Product",
+      "gtin": "190450209457",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 14",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142656257#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142656257"
+      },
+      "sku": "13176104001-14"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142689025#variant",
+      "@type": "Product",
+      "gtin": "190450209464",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614A02_1.webp?v=1778459950&width=1920",
+      "name": "Men's Burton Moto BOA® Snowboard Boots - Black / Regular / 15",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142689025#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "279.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761?variant=48755142689025"
+      },
+      "sku": "13176104001-15"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "b03e4da6235e548675743a4964f260a93f9c959face23b20614b89bb57239874",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

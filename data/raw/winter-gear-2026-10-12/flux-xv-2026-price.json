@@ -1,0 +1,48 @@
+{
+  "slug": "flux-xv-2026",
+  "price": "CNY 3330–3700",
+  "source": "https://flux-bindings.com/en/products/2526xv",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:43:25.802Z",
+  "productName": "XV",
+  "productType": "Product",
+  "productUrl": "https://flux-bindings.com/en/products/2526xv",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "F26XVXZ",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 3700,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xv?variant=52944194830646"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XVSZ",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 3700,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xv?variant=52944194863414"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XVMZ",
+      "availability": "http://schema.org/InStock",
+      "price": 3330,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xv?variant=52944194896182"
+    },
+    {
+      "@type": "Offer",
+      "sku": "F26XVLZ",
+      "availability": "http://schema.org/OutOfStock",
+      "price": 3700,
+      "priceCurrency": "CNY",
+      "url": "https://flux-bindings.com/en/products/2526xv?variant=52944194928950"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "e46b69cbd623ac3b6dcf55af8034216fcb0c0568410a82c9fc0ebaf3a54a098c",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

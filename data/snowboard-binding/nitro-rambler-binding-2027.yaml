@@ -9,11 +9,17 @@ specs:
     - all-mountain
   entrySystem: strap
   mountingSystem: Universal Mini Disc；兼容 2x4 与 Channel
-  bindingSizeGuide: Nitro Rambler 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L
-    US 男 11–14 / MP 29–32 / EU 44–48。
-  bootCompatibility: Universal Mini Disc 兼容 2x4 与 Channel；适配常规绑带雪鞋
+  bindingSizeGuide: Nitro Rambler 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。
+  bootCompatibility: 常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。
   brandComfortScore: 7
   brandResponseScore: 5
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://www.nitrosnowboards.com/collections/bindings-26-27/products/rambler-bindings-1
+  priceCheckedAt: 2026-10-12
+  officialPrice: EUR 239.9
+  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
+  priceSource: https://www.nitrosnowboards.com/products/rambler-bindings-1
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11007-103_Rambler-Bindings_Lite-Acid_Product-1.jpg?v=1779339376&width=1920
     kind: face

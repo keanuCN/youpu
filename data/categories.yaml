@@ -68,6 +68,18 @@
         diffThreshold: 0.03
         order: 20
 
+      - key: runningLength
+        label: 滑行长度（Running Length）
+        group: 尺寸与形状
+        type: number
+        unit: mm
+        min: 500
+        max: 1800
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 21
+
       - key: sidecut
         label: 侧切半径
         group: 尺寸与形状
@@ -254,10 +266,18 @@
           effectiveEdge: { type: number, label: 有效刃长 }
           sidecutRadii: { type: text, label: 侧切半径 }
           stanceWidth: { type: text, label: 站距范围 }
+          stanceMin: { type: number, label: 最小站距（mm） }
+          stanceMax: { type: number, label: 最大站距（mm） }
           setback: { type: number, label: 站位后移 }
           base: { type: text, label: 底面 }
           camber: { type: number, label: 拱高 }
           contactLength: { type: number, label: 接触长度 }
+          runningLength: { type: number, label: 滑行长度（Running Length） }
+          frontFootWidth: { type: number, label: 前脚处板宽 }
+          backFootWidth: { type: number, label: 后脚处板宽 }
+          taper: { type: number, label: 板头尾宽差 }
+          riderWeight: { type: text, label: 建议骑手体重 }
+          bootSize: { type: text, label: 建议雪鞋尺码 }
           edge: { type: text, label: 钢刃 }
           insertQty: { type: text, label: 固定器孔位 }
           noseHeight: { type: number, label: 板头高度 }
@@ -288,6 +308,55 @@
         compare: true
         compareDirection: higher-better
         order: 410
+      - key: officialPrice
+        label: 官方地区参考价（原币）
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 801
+      - key: priceMarket
+        label: 报价地区
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 802
+      - key: priceCheckedAt
+        label: 价格核查日期
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 803
+      - key: priceSource
+        label: 价格来源
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 804
+      - key: priceStatus
+        label: 价格核验状态
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 805
+      - key: selectionNotes
+        label: 季节与选码核验
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 701
+      - key: compatibilitySources
+        label: 选码与核验依据
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 702
 
     # 编辑分项评分不在此声明字段：它存在 product.editorial_scores 列，
     # 维度定义见下方 rating_dimensions（编辑评分与社区评分共用同一组维度键）
@@ -499,6 +568,87 @@
         filter: false
         compare: false
         order: 65
+      - key: officialPrice
+        label: 官方地区参考价（原币）
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 801
+      - key: priceMarket
+        label: 报价地区
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 802
+      - key: priceCheckedAt
+        label: 价格核查日期
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 803
+      - key: priceSource
+        label: 价格来源
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 804
+      - key: priceStatus
+        label: 价格核验状态
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 805
+      - key: selectionNotes
+        label: 选码与试装提示
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 701
+      - key: compatibilitySources
+        label: 兼容与选码依据
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 702
+      - key: sizeChart
+        label: 官方逐码参考
+        group: 选购参考
+        type: nested
+        itemSchema:
+          size:
+            type: text
+            label: 尺码
+          usMen:
+            type: text
+            label: US 男码
+          usWomen:
+            type: text
+            label: US 女码
+          eu:
+            type: text
+            label: EU
+          uk:
+            type: text
+            label: UK
+          mondo:
+            type: text
+            label: Mondopoint
+          notes:
+            type: text
+            label: 限制与边界
+          footLength:
+            type: text
+            label: 足长（mm）
+        filter: false
+        compare: false
+        order: 703
     rating_dimensions:
       - { key: response, label: 支撑与响应, weight: 0.25 }
       - { key: comfort, label: 舒适与减震, weight: 0.2 }
@@ -599,6 +749,101 @@
         compare: true
         compareDirection: context
         order: 50
+      - key: officialPrice
+        label: 官方地区参考价（原币）
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 801
+      - key: priceMarket
+        label: 报价地区
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 802
+      - key: priceCheckedAt
+        label: 价格核查日期
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 803
+      - key: priceSource
+        label: 价格来源
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 804
+      - key: priceStatus
+        label: 价格核验状态
+        group: 价格与来源
+        type: text
+        filter: false
+        compare: false
+        order: 805
+      - key: selectionNotes
+        label: 选码与试装提示
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 701
+      - key: compatibilitySources
+        label: 兼容与选码依据
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 702
+      - key: sizeChart
+        label: 官方逐码参考
+        group: 选购参考
+        type: nested
+        itemSchema:
+          size:
+            type: text
+            label: 尺码
+          usMen:
+            type: text
+            label: US 男码
+          usWomen:
+            type: text
+            label: US 女码
+          eu:
+            type: text
+            label: EU
+          uk:
+            type: text
+            label: UK
+          mondo:
+            type: text
+            label: Mondopoint
+          notes:
+            type: text
+            label: 限制与边界
+          footLength:
+            type: text
+            label: 足长（mm）
+        filter: false
+        compare: false
+        order: 703
+      - key: fitEvidence
+        label: 脚型信息边界
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 704
+      - key: heatMolding
+        label: 鞋胆热塑信息
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 705
     rating_dimensions:
       - { key: fit, label: 贴合舒适, weight: 0.3 }
       - { key: support, label: 支撑响应, weight: 0.25 }
@@ -747,6 +992,88 @@
         compare: true
         compareDirection: context
         order: 60
+
+      - key: geometryNotes
+        label: 几何参数依据
+        group: 选配与来源
+        type: text
+        filter: false
+        compare: false
+        order: 70
+      - key: weightBasis
+        label: 重量口径
+        group: 选配与来源
+        type: text
+        filter: false
+        compare: false
+        order: 80
+      - key: bindingCompatibility
+        label: 靴底与固定器兼容
+        group: 选配与来源
+        type: text
+        filter: false
+        compare: false
+        order: 90
+      - key: mountingNotes
+        label: 安装与调节
+        group: 选配与来源
+        type: text
+        filter: false
+        compare: false
+        order: 100
+      - key: seasonEvidence
+        label: 年款依据
+        group: 选配与来源
+        type: text
+        filter: false
+        compare: false
+        order: 110
+      - key: sourceCheckedAt
+        label: 资料整理日期
+        group: 选配与来源
+        type: text
+        filter: false
+        compare: false
+        order: 120
+      - key: compatibilitySources
+        label: 规格与兼容来源
+        group: 选配与来源
+        type: text
+        filter: false
+        compare: false
+        order: 130
+      - key: sizeSpecs
+        label: 逐长度参数
+        group: 尺寸与几何
+        type: nested
+        itemSchema:
+          size:
+            type: text
+            label: 板长（cm）
+          noseWidth:
+            type: number
+            label: 板头宽（mm）
+          waistWidth:
+            type: number
+            label: 板腰宽（mm）
+          tailWidth:
+            type: number
+            label: 板尾宽（mm）
+          turnRadius:
+            type: number
+            label: 转弯半径（m）
+          weightPerSki:
+            type: number
+            label: 单只重量（g）
+          weightPerPair:
+            type: number
+            label: 一对重量（g）
+          notes:
+            type: text
+            label: 参数说明
+        filter: false
+        compare: false
+        order: 37
 
 - slug: racket-sports
   name: 球类

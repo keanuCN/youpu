@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-10-12T06:43:12.032Z",
+  "target": {
+    "slug": "nitro-phantom-binding-2027",
+    "category": "snowboard-binding",
+    "brand": "nitro",
+    "model": "Phantom",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/phantom-bindings-2",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/phantom-bindings-2",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.nitrosnowboards.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:49.446Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "The 2027 Nitro Phantom Bindings - Snowboarding's New Favorite All-Mountain Interface",
+    "canonicalUrl": "https://www.nitrosnowboards.com/products/phantom-bindings-2",
+    "tables": []
+  },
+  "review": {
+    "rows": [],
+    "sources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/phantom-bindings-2",
+    "good": true
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "phase": "bindings",
+  "updated": [
+    {
+      "slug": "burton-cartel-re-flex-2027",
+      "sizeRows": 0
+    },
+    {
+      "slug": "burton-cartel-x-re-flex-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "burton-freestyle-re-flex-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "burton-genesis-re-flex-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "burton-lexa-x-est-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "burton-mission-re-flex-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "burton-step-on-genesis-re-flex-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "burton-step-on-re-flex-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "cosone-step-on-binding-2026",
+      "sizeRows": 0,
+      "good": false
+    },
+    {
+      "slug": "decathlon-snb-500-binding-2026",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "flow-fenix-binding-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "flow-fuse-binding-2026",
+      "sizeRows": 0,
+      "good": false
+    },
+    {
+      "slug": "flow-fuse-hybrid-binding-2026",
+      "sizeRows": 0,
+      "good": false
+    },
+    {
+      "slug": "flow-nexus-binding-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "flow-nx2-carbon-binding-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "flow-nx2-hybrid-binding-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "flux-cv-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "flux-ds-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "flux-gs-2026",
+      "sizeRows": 2,
+      "good": true
+    },
+    {
+      "slug": "flux-xf-2026",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "flux-xv-2026",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "jones-mercury-binding-2026",
+      "sizeRows": 0,
+      "good": false
+    },
+    {
+      "slug": "jones-mercury-fase-binding-2026",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "jones-orion-binding-2026",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "nidecker-kaon-plus-2026",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "nidecker-lt-supermatic-2026",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "nidecker-og-supermatic-2026",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "nidecker-orbit-binding-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "nitro-fate-binding-2027",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "nitro-one-binding-2027",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "nitro-phantom-binding-2027",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "nitro-phantom-plus-binding-2027",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "nitro-poison-binding-2027",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "nitro-rambler-binding-2027",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "nitro-talent-binding-2027",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "nitro-team-binding-2027",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "nitro-team-pro-binding-2027",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "rome-390-boss-aw-binding-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "rome-390-boss-fw-binding-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "rome-brass-aw-binding-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "rome-katana-aw-binding-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "rome-katana-aw-fase-binding-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "rome-katana-aw-pro-fase-binding-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "rome-katana-fw-pro-binding-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "rome-volt-fase-binding-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "salomon-district-binding-2026",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "salomon-district-pro-binding-2026",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "salomon-edb-binding-2026",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "salomon-edb-prime-binding-2026",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "salomon-highlander-binding-2026",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "salomon-hologram-binding-2026",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "salomon-pact-binding-2026",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "salomon-rhythm-binding-2026",
+      "sizeRows": 0,
+      "good": true
+    },
+    {
+      "slug": "union-atlas-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "union-atlas-pro-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "union-force-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "union-force-classic-2027",
+      "sizeRows": 4,
+      "good": true
+    },
+    {
+      "slug": "union-legacy-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "union-trilogy-2027",
+      "sizeRows": 3,
+      "good": true
+    },
+    {
+      "slug": "union-ultra-2027",
+      "sizeRows": 3,
+      "good": true
+    }
+  ],
+  "pending": [
+    {
+      "slug": "burton-cartel-re-flex-2027",
+      "reason": "robots.txt 无法访问：The operation was aborted due to timeout"
+    },
+    {
+      "slug": "cosone-step-on-binding-2026",
+      "reason": "缺少型号级官方页面和 Step On 授权依据"
+    },
+    {
+      "slug": "flow-fuse-binding-2026",
+      "reason": [
+        {
+          "path": "source.identity",
+          "message": "页面内容未确认包含目标型号“Fuse”，可能发生重定向、错季节或链接失效"
+        }
+      ]
+    },
+    {
+      "slug": "flow-fuse-hybrid-binding-2026",
+      "reason": [
+        {
+          "path": "source.identity",
+          "message": "页面内容未确认包含目标型号“Fuse Hybrid”，可能发生重定向、错季节或链接失效"
+        }
+      ]
+    },
+    {
+      "slug": "jones-mercury-binding-2026",
+      "reason": "原链接跳转到分类页；采集器通用名称匹配为假阳性，未采用分类页尺寸。"
+    }
+  ],
+  "structuredCharts": 36,
+  "totalRows": 125
+}

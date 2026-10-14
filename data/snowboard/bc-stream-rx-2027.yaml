@@ -26,12 +26,14 @@ specs:
     - carving
     - all-mountain
   sizeSpecs:
-    - {size: "154N", overallLength: 1540, effectiveEdge: 1290, waistWidth: 242, sidecutRadii: "8.8 / 8.5 / 8.2 / 8.8 / 9.4 m"}
-    - {size: "159N", overallLength: 1590, effectiveEdge: 1340, waistWidth: 244, sidecutRadii: "9.3 / 9.0 / 8.7 / 9.3 / 9.9 m"}
-    - {size: "159", overallLength: 1590, effectiveEdge: 1340, waistWidth: 252, sidecutRadii: "9.3 / 9.0 / 8.7 / 9.3 / 9.9 m"}
-    - {size: "164", overallLength: 1640, effectiveEdge: 1390, waistWidth: 254, sidecutRadii: "9.8 / 9.5 / 9.2 / 9.8 / 10.4 m"}
-    - {size: "169", overallLength: 1690, effectiveEdge: 1440, waistWidth: 256, sidecutRadii: "10.3 / 10.0 / 9.7 / 10.3 / 10.9 m"}
-    - {size: "174", overallLength: 1740, effectiveEdge: 1490, waistWidth: 258, sidecutRadii: "10.8 / 10.5 / 10.2 / 10.8 / 11.4 m"}
+    - { size: "154N", overallLength: 1540, effectiveEdge: 1290, waistWidth: 242, sidecutRadii: "8.8 / 8.5 / 8.2 / 8.8 / 9.4 m" }
+    - { size: "159N", overallLength: 1590, effectiveEdge: 1340, waistWidth: 244, sidecutRadii: "9.3 / 9.0 / 8.7 / 9.3 / 9.9 m" }
+    - { size: "159", overallLength: 1590, effectiveEdge: 1340, waistWidth: 252, sidecutRadii: "9.3 / 9.0 / 8.7 / 9.3 / 9.9 m" }
+    - { size: "164", overallLength: 1640, effectiveEdge: 1390, waistWidth: 254, sidecutRadii: "9.8 / 9.5 / 9.2 / 9.8 / 10.4 m" }
+    - { size: "169", overallLength: 1690, effectiveEdge: 1440, waistWidth: 256, sidecutRadii: "10.3 / 10.0 / 9.7 / 10.3 / 10.9 m" }
+    - { size: "174", overallLength: 1740, effectiveEdge: 1490, waistWidth: 258, sidecutRadii: "10.8 / 10.5 / 10.2 / 10.8 / 11.4 m" }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
   - url: "https://www.follows.co.jp/pic-labo/2627bc-rxn-1.jpg"
     kind: face

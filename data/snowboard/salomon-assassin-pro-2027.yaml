@@ -74,6 +74,11 @@ specs:
       waistWidth: 266
       tailWidth: 313
       sidecutRadii: "8.2 m"
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 699.95
+  priceMarket: 原币 USD；来源商店 www.salomon.com
+  priceSource: https://www.salomon.com/en-us/product/assassin-pro-li1301
+  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 images:
   - url: "https://cdn.dam.salomon.com/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p"
     kind: face

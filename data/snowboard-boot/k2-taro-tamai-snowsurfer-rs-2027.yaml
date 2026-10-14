@@ -16,6 +16,36 @@ specs:
   warmthFeatures: "SpaceHeater 反射保温层；95% 消费后再生咖啡渣网布有助于吸湿除味"
   footbed: "Eco-Harshmellow Pro Insole；官方描述具备减震与全天舒适性"
   sizeGuide: "官方男款可选 US 6–12；K2 官方换算表列有 US、EU、UK 与 CM 对照，具体半码映射见商品页尺码表"
+  sizeChart:
+    - { size: US 男 5, usMen: "5", usWomen: "6", uk: "4", eu: "36.5", mondo: "23" }
+    - { size: US 男 5.5, usMen: "5.5", usWomen: "6.5", uk: "4.5", eu: "37", mondo: "23.5" }
+    - { size: US 男 6, usMen: "6", usWomen: "7", uk: "5", eu: "38", mondo: "24" }
+    - { size: US 男 6.5, usMen: "6.5", usWomen: "7.5", uk: "5.5", eu: "39", mondo: "24.5" }
+    - { size: US 男 7, usMen: "7", usWomen: "8", uk: "6", eu: "39.5", mondo: "25" }
+    - { size: US 男 7.5, usMen: "7.5", usWomen: "8.5", uk: "6.5", eu: "40", mondo: "25.5" }
+    - { size: US 男 8, usMen: "8", usWomen: "9", uk: "7", eu: "40.5", mondo: "26" }
+    - { size: US 男 8.5, usMen: "8.5", usWomen: "9.5", uk: "7.5", eu: "41.5", mondo: "26.5" }
+    - { size: US 男 9, usMen: "9", usWomen: "10", uk: "8", eu: "42", mondo: "27" }
+    - { size: US 男 9.5, usMen: "9.5", usWomen: "10.5", uk: "8.5", eu: "42.5", mondo: "27.5" }
+    - { size: US 男 10, usMen: "10", usWomen: "11", uk: "9", eu: "43.5", mondo: "28" }
+    - { size: US 男 10.5, usMen: "10.5", uk: "9.5", eu: "44", mondo: "28.5" }
+    - { size: US 男 11, usMen: "11", uk: "10", eu: "44.5", mondo: "29" }
+    - { size: US 男 11.5, usMen: "11.5", uk: "10.5", eu: "45", mondo: "29.5" }
+    - { size: US 男 12, usMen: "12", uk: "11", eu: "46", mondo: "30" }
+    - { size: US 男 12.5, usMen: "12.5", uk: "11.5", eu: "47", mondo: "30.5" }
+    - { size: US 男 13, usMen: "13", uk: "12", eu: "48", mondo: "31" }
+    - { size: US 男 14, usMen: "14", uk: "13", eu: "49", mondo: "32" }
+    - { size: US 男 15, usMen: "15", uk: "14", eu: "50", mondo: "33" }
+  bindingCompatibility: 常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。
+  selectionNotes: 穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。
+  fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。
+  heatMolding: 官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。
+  compatibilitySources: https://k2snow.com/en-us/p/taro-tamai-snowsurfer-rs-mens-snowboard-boot-kb261654?color=black-brown
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 669.95
+  priceMarket: 原币 USD；来源商店 k2snow.com
+  priceSource: https://k2snow.com/en-sg/p/taro-tamai-snowsurfer-rs-mens-snowboard-boot-kb261654
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: "https://cdn11.bigcommerce.com/s-ncrhbujr7m/product_images/attribute_rule_images/4575552_source_1780349255.jpg"
     kind: face

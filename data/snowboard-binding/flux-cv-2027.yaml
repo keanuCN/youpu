@@ -10,7 +10,7 @@ specs:
   flex: 7
   flexFeel: stiff
   mountingSystem: "FLUX Multi Disc；兼容 4x4 与 2H 安装，可前后或左右偏移 5/10 mm"
-  bootCompatibility: "FLUX 固定器安装圆盘；适配普通绑带雪鞋"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   baseplateMaterial: "Super Transfer 底盘；Performance Blend 中等硬度材料；4Corner Stabilizer"
   ankleStrap: "Waffle Strap 双层缓冲结构；UU Fit 环绕固定"
   toeStrap: "F.T.M. Ver. 5.0；L-Guide 收纳带尾"
@@ -18,6 +18,16 @@ specs:
   highback: "Buffalo Highback；Super Tough Nylon 中等硬度材料"
   highbackAdjustment: "Slide Highback Rotation、Toolless Lever、Micro Adjuster；每格约 2.5° 前倾"
   cushioning: "Boost FootOn 比标准脚床高 4 mm；Heel Up；可调 toe/heel cushion"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://flux-bindings.com/products/2627-cv；https://flux-bindings.com/pages/size-chart_binding
+  sizeChart:
+    - { size: XS, mondo: 21 - 23.5, usMen: 3 - 5.5, usWomen: 4 - 6.5, eu: 34 - 37.5, uk: 2 - 4.5, notes: FLUX 通用参考表；鞋品牌/型号会影响试装。 }
+    - { size: S, mondo: 22.5 - 25.5, usMen: 4.5 - 7.5, usWomen: 5.5 - 8.5, eu: 36 - 40.5, uk: 3.5 - 6.5, notes: FLUX 通用参考表；鞋品牌/型号会影响试装。 }
+    - { size: M, mondo: 25 - 27.5, usMen: 7 - 9.5, usWomen: 8 - 10.5, eu: 40 - 42.5, uk: 6 - 8.5, notes: FLUX 通用参考表；鞋品牌/型号会影响试装。 }
+    - { size: L, mondo: 27+, usMen: 9+, eu: 42+, uk: 8+, notes: FLUX 通用参考表；鞋品牌/型号会影响试装。 }
+  bindingSizeGuide: "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。"
+  priceCheckedAt: 2026-10-12
+  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
 images:
   - url: "https://flux-bindings.com/cdn/shop/files/2627-cv-purple.png?v=1787656749&width=1160"
     kind: face

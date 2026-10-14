@@ -1,0 +1,832 @@
+{
+  "slug": "nitro-team-boa-2027",
+  "price": "EUR 529.9",
+  "source": "https://www.nitrosnowboards.com/products/team-boa-boots-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:47:41.350Z",
+  "productName": "Nitro Team BOA® Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/team-boa-boots-1",
+  "hasVariant": [
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705191755#variant",
+      "@type": "Product",
+      "gtin": "7630349341088",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 250",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705191755#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705191755"
+      },
+      "sku": "13BT11006-103-250"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705224523#variant",
+      "@type": "Product",
+      "gtin": "7630349341095",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 255",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705224523#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705224523"
+      },
+      "sku": "13BT11006-103-255"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705257291#variant",
+      "@type": "Product",
+      "gtin": "7630349341101",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 260",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705257291#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705257291"
+      },
+      "sku": "13BT11006-103-260"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705290059#variant",
+      "@type": "Product",
+      "gtin": "7630349341118",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 265",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705290059#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705290059"
+      },
+      "sku": "13BT11006-103-265"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705322827#variant",
+      "@type": "Product",
+      "gtin": "7630349341125",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 270",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705322827#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705322827"
+      },
+      "sku": "13BT11006-103-270"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705355595#variant",
+      "@type": "Product",
+      "gtin": "7630349341132",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 275",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705355595#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705355595"
+      },
+      "sku": "13BT11006-103-275"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705388363#variant",
+      "@type": "Product",
+      "gtin": "7630349341149",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 280",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705388363#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705388363"
+      },
+      "sku": "13BT11006-103-280"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705421131#variant",
+      "@type": "Product",
+      "gtin": "7630349341156",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 285",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705421131#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705421131"
+      },
+      "sku": "13BT11006-103-285"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705453899#variant",
+      "@type": "Product",
+      "gtin": "7630349341163",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 290",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705453899#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705453899"
+      },
+      "sku": "13BT11006-103-290"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705486667#variant",
+      "@type": "Product",
+      "gtin": "7630349341170",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 295",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705486667#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705486667"
+      },
+      "sku": "13BT11006-103-295"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705519435#variant",
+      "@type": "Product",
+      "gtin": "7630349341187",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 300",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705519435#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705519435"
+      },
+      "sku": "13BT11006-103-300"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705552203#variant",
+      "@type": "Product",
+      "gtin": "7630349341194",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 305",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705552203#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705552203"
+      },
+      "sku": "13BT11006-103-305"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705584971#variant",
+      "@type": "Product",
+      "gtin": "7630349341200",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 310",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705584971#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705584971"
+      },
+      "sku": "13BT11006-103-310"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705617739#variant",
+      "@type": "Product",
+      "gtin": "7630349341217",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 315",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705617739#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705617739"
+      },
+      "sku": "13BT11006-103-315"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705650507#variant",
+      "@type": "Product",
+      "gtin": "7630349341224",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 320",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705650507#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705650507"
+      },
+      "sku": "13BT11006-103-320"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705683275#variant",
+      "@type": "Product",
+      "gtin": "7630349341231",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 325",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705683275#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705683275"
+      },
+      "sku": "13BT11006-103-325"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705716043#variant",
+      "@type": "Product",
+      "gtin": "7630349341248",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Grey / 330",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705716043#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705716043"
+      },
+      "sku": "13BT11006-103-330"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704077643#variant",
+      "@type": "Product",
+      "gtin": "7630349340746",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 250",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704077643#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704077643"
+      },
+      "sku": "13BT11006-101-250"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704110411#variant",
+      "@type": "Product",
+      "gtin": "7630349340753",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 255",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704110411#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704110411"
+      },
+      "sku": "13BT11006-101-255"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704143179#variant",
+      "@type": "Product",
+      "gtin": "7630349340760",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 260",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704143179#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704143179"
+      },
+      "sku": "13BT11006-101-260"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704175947#variant",
+      "@type": "Product",
+      "gtin": "7630349340777",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 265",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704175947#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704175947"
+      },
+      "sku": "13BT11006-101-265"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704208715#variant",
+      "@type": "Product",
+      "gtin": "7630349340784",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 270",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704208715#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704208715"
+      },
+      "sku": "13BT11006-101-270"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704241483#variant",
+      "@type": "Product",
+      "gtin": "7630349340791",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 275",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704241483#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704241483"
+      },
+      "sku": "13BT11006-101-275"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704274251#variant",
+      "@type": "Product",
+      "gtin": "7630349340807",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 280",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704274251#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704274251"
+      },
+      "sku": "13BT11006-101-280"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704307019#variant",
+      "@type": "Product",
+      "gtin": "7630349340814",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 285",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704307019#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704307019"
+      },
+      "sku": "13BT11006-101-285"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704339787#variant",
+      "@type": "Product",
+      "gtin": "7630349340821",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 290",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704339787#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704339787"
+      },
+      "sku": "13BT11006-101-290"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704372555#variant",
+      "@type": "Product",
+      "gtin": "7630349340838",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 295",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704372555#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704372555"
+      },
+      "sku": "13BT11006-101-295"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704405323#variant",
+      "@type": "Product",
+      "gtin": "7630349340845",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 300",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704405323#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704405323"
+      },
+      "sku": "13BT11006-101-300"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704438091#variant",
+      "@type": "Product",
+      "gtin": "7630349340852",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 305",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704438091#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704438091"
+      },
+      "sku": "13BT11006-101-305"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704470859#variant",
+      "@type": "Product",
+      "gtin": "7630349340869",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 310",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704470859#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704470859"
+      },
+      "sku": "13BT11006-101-310"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704503627#variant",
+      "@type": "Product",
+      "gtin": "7630349340876",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 315",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704503627#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704503627"
+      },
+      "sku": "13BT11006-101-315"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704536395#variant",
+      "@type": "Product",
+      "gtin": "7630349340883",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 320",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704536395#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704536395"
+      },
+      "sku": "13BT11006-101-320"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704569163#variant",
+      "@type": "Product",
+      "gtin": "7630349340890",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 325",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704569163#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704569163"
+      },
+      "sku": "13BT11006-101-325"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704601931#variant",
+      "@type": "Product",
+      "gtin": "7630349340906",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-101_Team-BOA-Boots_Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - Black / 330",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704601931#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704601931"
+      },
+      "sku": "13BT11006-101-330"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704634699#variant",
+      "@type": "Product",
+      "gtin": "7630349340913",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 250",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704634699#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704634699"
+      },
+      "sku": "13BT11006-102-250"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704667467#variant",
+      "@type": "Product",
+      "gtin": "7630349340920",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 255",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704667467#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704667467"
+      },
+      "sku": "13BT11006-102-255"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704700235#variant",
+      "@type": "Product",
+      "gtin": "7630349340937",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 260",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704700235#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704700235"
+      },
+      "sku": "13BT11006-102-260"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704733003#variant",
+      "@type": "Product",
+      "gtin": "7630349340944",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 265",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704733003#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704733003"
+      },
+      "sku": "13BT11006-102-265"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704765771#variant",
+      "@type": "Product",
+      "gtin": "7630349340951",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 270",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704765771#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704765771"
+      },
+      "sku": "13BT11006-102-270"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704798539#variant",
+      "@type": "Product",
+      "gtin": "7630349340968",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 275",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704798539#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704798539"
+      },
+      "sku": "13BT11006-102-275"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704831307#variant",
+      "@type": "Product",
+      "gtin": "7630349340975",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 280",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704831307#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704831307"
+      },
+      "sku": "13BT11006-102-280"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704864075#variant",
+      "@type": "Product",
+      "gtin": "7630349340982",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 285",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704864075#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704864075"
+      },
+      "sku": "13BT11006-102-285"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704896843#variant",
+      "@type": "Product",
+      "gtin": "7630349340999",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 290",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704896843#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704896843"
+      },
+      "sku": "13BT11006-102-290"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704929611#variant",
+      "@type": "Product",
+      "gtin": "7630349341002",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 295",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704929611#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704929611"
+      },
+      "sku": "13BT11006-102-295"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704962379#variant",
+      "@type": "Product",
+      "gtin": "7630349341019",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 300",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704962379#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704962379"
+      },
+      "sku": "13BT11006-102-300"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277704995147#variant",
+      "@type": "Product",
+      "gtin": "7630349341026",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 305",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277704995147#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277704995147"
+      },
+      "sku": "13BT11006-102-305"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705027915#variant",
+      "@type": "Product",
+      "gtin": "7630349341033",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 310",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705027915#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705027915"
+      },
+      "sku": "13BT11006-102-310"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705060683#variant",
+      "@type": "Product",
+      "gtin": "7630349341040",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 315",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705060683#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705060683"
+      },
+      "sku": "13BT11006-102-315"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705093451#variant",
+      "@type": "Product",
+      "gtin": "7630349341057",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 320",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705093451#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705093451"
+      },
+      "sku": "13BT11006-102-320"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705126219#variant",
+      "@type": "Product",
+      "gtin": "7630349341064",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 325",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705126219#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705126219"
+      },
+      "sku": "13BT11006-102-325"
+    },
+    {
+      "@id": "/products/team-boa-boots-1?variant=57277705158987#variant",
+      "@type": "Product",
+      "gtin": "7630349341071",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=1920",
+      "name": "Nitro Team BOA® Boots - White-Black / 330",
+      "offers": {
+        "@id": "/products/team-boa-boots-1?variant=57277705158987#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-boa-boots-1?variant=57277705158987"
+      },
+      "sku": "13BT11006-102-330"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "67cab58bb541dac2a542d65333911922b5289552739ff8f1165014f0fc526689",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

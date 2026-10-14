@@ -1,0 +1,66 @@
+{
+  "slug": "salomon-highlander-binding-2026",
+  "price": "USD 379.95",
+  "source": "https://www.salomon.com/en-us/product/highlander-li8702",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:43:44.306Z",
+  "productName": "HIGHLANDER",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "HIGHLANDER Castor Gray",
+      "image": "https://cdn.dam.salomon.com/68e6042c-dc3a-4478-a479-b360010827af/L49289500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Castor Gray",
+      "size": "S",
+      "sku": "L49289500054",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/highlander-li8702/L49289500?sizeId=L49289500054",
+        "priceCurrency": "USD",
+        "price": "379.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "HIGHLANDER Castor Gray",
+      "image": "https://cdn.dam.salomon.com/68e6042c-dc3a-4478-a479-b360010827af/L49289500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Castor Gray",
+      "size": "M",
+      "sku": "L49289500056",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/highlander-li8702/L49289500?sizeId=L49289500056",
+        "priceCurrency": "USD",
+        "price": "379.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "HIGHLANDER Castor Gray",
+      "image": "https://cdn.dam.salomon.com/68e6042c-dc3a-4478-a479-b360010827af/L49289500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Castor Gray",
+      "size": "L",
+      "sku": "L49289500058",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/highlander-li8702/L49289500?sizeId=L49289500058",
+        "priceCurrency": "USD",
+        "price": "379.95"
+      }
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/highlander-li8702/L47940300?sizeId=L47940300054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/highlander-li8702/L47940300?sizeId=L47940300056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/highlander-li8702/L47940300?sizeId=L47940300058"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "9cd7211afa52e5a2a0d95fca9818b7f4d001bfb4b3449ee9c1644a81d463b89c",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

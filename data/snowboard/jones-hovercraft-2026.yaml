@@ -16,7 +16,7 @@ specs:
   effectiveEdge: 1260
   sidecut: 9.3
   waistWidth: 267
-  stanceSetback: 50
+  stanceSetback: 0
   profile: Camber + 大勺形板头
   shape: 强定向锥形
   core: FSC 白杨 / 竹
@@ -31,6 +31,20 @@ specs:
   profileFamily: hybrid
   scenes:
     - powder
+  sizeSpecs:
+    - { size: "144", weight: 2600, effectiveEdge: 1130, waistWidth: 251, contactLength: 909, noseLength: 388, tailLength: 143, noseWidth: 297, tailWidth: 280, frontFootWidth: 264, backFootWidth: 259, taper: 17, sidecutRadii: 8.1 m, setback: 0 }
+    - { size: "148", weight: 2700, effectiveEdge: 1160, waistWidth: 255, contactLength: 941, noseLength: 392, tailLength: 147, noseWidth: 302, tailWidth: 285, frontFootWidth: 268, backFootWidth: 263, taper: 17, sidecutRadii: 8.4 m, setback: 0 }
+    - { size: "152", weight: 2900, effectiveEdge: 1190, waistWidth: 259, contactLength: 973, noseLength: 396, tailLength: 151, noseWidth: 306, tailWidth: 289, frontFootWidth: 272, backFootWidth: 267, taper: 17, sidecutRadii: 8.7 m, setback: 0 }
+    - { size: "156", weight: 3100, effectiveEdge: 1230, waistWidth: 263, contactLength: 1005, noseLength: 400, tailLength: 155, noseWidth: 311, tailWidth: 294, frontFootWidth: 277, backFootWidth: 271, taper: 17, sidecutRadii: 9 m, setback: 0 }
+    - { size: "160", weight: 3200, effectiveEdge: 1260, waistWidth: 267, contactLength: 1037, noseLength: 404, tailLength: 159, noseWidth: 316, tailWidth: 299, frontFootWidth: 281, backFootWidth: 276, taper: 17, sidecutRadii: 9.3 m, setback: 0 }
+    - { size: "164", weight: 3300, effectiveEdge: 1290, waistWidth: 271, contactLength: 1069, noseLength: 408, tailLength: 163, noseWidth: 321, tailWidth: 304, frontFootWidth: 285, backFootWidth: 279, taper: 17, sidecutRadii: 9.6 m, setback: 0 }
+  selectionNotes: 官方 J.26 型号页面；160 代表尺码后移按官方表由 50 mm 修正为 0 mm。该表只用于 2026，不填入 2027 档案。
+  compatibilitySources: https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 649.95
+  priceMarket: 原币 USD；来源商店 www.jonessnowboards.com
+  priceSource: https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard
+  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 editorial_scores:
   stability: 8.5
   response: 7

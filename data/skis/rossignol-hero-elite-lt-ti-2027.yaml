@@ -11,10 +11,44 @@ specs:
   turnRadius: 16
   turnRadiusReferenceLength: 172 cm
   terrain: 雪道 / 长弧 carving
-  skierLevel: 进阶
+  skierLevel: 进阶至专家
   bindingSetup: 裸板或可选 SPX 14 KONECT GW
+  weightBasis: 官方列名为 kg/pair，但具体配置口径仍待确认；本轮保留来源中的数值，不折算为单只或套装重量。
+  geometryNotes: 完整逐长度几何来自对应官方 SKU。板长为 cm，板宽为 mm，半径为 m；规格表不代表当前库存。
+  bindingCompatibility: 可选 SPX 14 KONECT GW B80：成人 Alpine ISO 5355 A / GripWalk
+    ISO 23223 A，BSL 260–375 mm。仅适用于此固定器选项；系统板不能任意替换为其他轨道固定器。
+  mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
+  seasonEvidence: 官方 RAPSE01000 页面明确标注 NEW COLLECTION FW2627。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.rossignol.com/us-en/hero-elite-lt-ti-alpine-skis-RAPSE01000.html；https://www.grip-walk.com/faq/
+  sizeSpecs:
+    - size: 167 cm
+      noseWidth: 120
+      waistWidth: 71
+      tailWidth: 102
+      turnRadius: 15
+    - size: 172 cm
+      noseWidth: 120
+      waistWidth: 71
+      tailWidth: 102
+      turnRadius: 16
+    - size: 177 cm
+      noseWidth: 120
+      waistWidth: 71
+      tailWidth: 102
+      turnRadius: 17
+    - size: 182 cm
+      noseWidth: 120
+      waistWidth: 71
+      tailWidth: 102
+      turnRadius: 18
+  core: PEFC 认证山毛榉木板芯
+  construction: Rectangular Full Sidewall；Full Titanal Layer
+  profile: Tip Rocker + 传统 Camber
+  technologies: Power Tip；Predictive Sidecut；LCT；V-Profile；Sintered HD Base；Premium Hardtop
 images:
-  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dwa8eccfa0/images/large/RAPSE01000_72DPI_01_v01.jpg"
+  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/\
+      default/dwa8eccfa0/images/large/RAPSE01000_72DPI_01_v01.jpg"
     kind: face
     alt: Rossignol Hero Elite LT TI 2026/27 官方雪板商品图
     source: Rossignol 官方产品页（图片使用授权待核）

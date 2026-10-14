@@ -13,8 +13,18 @@ specs:
   terrain: 雪道 / 全山地
   skierLevel: 入门至中级
   bindingSetup: 裸板或可选 XPRESS 10 GW
+  weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
+  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
+    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
+  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.rossignol.com/us-en/experience-76-xpress-RAMFT04000152.html；https://www.grip-walk.com/faq/
 images:
-  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dw0f3e9f73/images/large/RAMFT04_FCMDX02_EXPERIENCE_76_XPRESS_XPRESS_10_GW_B83_BLACK_72DPI_01.jpg"
+  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/\
+      default/dw0f3e9f73/images/large/RAMFT04_FCMDX02_EXPERIENCE_76_XPRESS_XPRE\
+      SS_10_GW_B83_BLACK_72DPI_01.jpg"
     kind: face
     alt: Rossignol Experience 76 Xpress 2025/26 官方雪板商品图
     source: Rossignol 官方产品页（图片使用授权待核）

@@ -1,0 +1,53 @@
+{
+  "seedFile": "data/skis/nordica-enforcer-94-2027.yaml",
+  "url": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-94-flat",
+  "retrievedAt": "2026-10-13",
+  "heading": "Enforcer 94 - 2026/27 - Nordica - Skis and Boots – Official website",
+  "season": "2026-27",
+  "rows": [
+    {
+      "size": "167 cm",
+      "noseWidth": 125,
+      "waistWidth": 94,
+      "tailWidth": 113,
+      "turnRadius": 16.5,
+      "weightPerPair": 3580
+    },
+    {
+      "size": "173 cm",
+      "noseWidth": 126.5,
+      "waistWidth": 94,
+      "tailWidth": 114.5,
+      "turnRadius": 17,
+      "weightPerPair": 3800
+    },
+    {
+      "size": "179 cm",
+      "noseWidth": 127.5,
+      "waistWidth": 94,
+      "tailWidth": 115.5,
+      "turnRadius": 17.5,
+      "weightPerPair": 4080
+    },
+    {
+      "size": "185 cm",
+      "noseWidth": 128.5,
+      "waistWidth": 94,
+      "tailWidth": 116.5,
+      "turnRadius": 18,
+      "weightPerPair": 4260
+    }
+  ],
+  "extraction": {
+    "selector": "[data-accordion]",
+    "fields": [
+      "noseWidthMm",
+      "waistWidthMm",
+      "tailWidthMm",
+      "turnRadiusM",
+      "weightPerPairG"
+    ],
+    "method": "JSON.parse attribute; no interpolation",
+    "htmlSha256": "422d036836d7b5d04f3d47dbeb90402c9e5bf83e9206a65f37545cd2be0f04e1"
+  }
+}

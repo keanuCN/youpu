@@ -1,0 +1,57 @@
+{
+  "slug": "salomon-pact-binding-2026",
+  "price": "USD 159.95",
+  "source": "https://www.salomon.com/en-us/product/pact-li6862",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:43:49.000Z",
+  "productName": "PACT",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "PACT Black",
+      "image": "https://cdn.dam.salomon.com/8e5e6b58-7bb3-4636-9c58-b2f4013ba909/L47671400/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black",
+      "size": "S",
+      "sku": "L47671400054",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/pact-li6862/L47671400?sizeId=L47671400054",
+        "priceCurrency": "USD",
+        "price": "159.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "PACT Black",
+      "image": "https://cdn.dam.salomon.com/8e5e6b58-7bb3-4636-9c58-b2f4013ba909/L47671400/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black",
+      "size": "M",
+      "sku": "L47671400056",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/pact-li6862/L47671400?sizeId=L47671400056",
+        "priceCurrency": "USD",
+        "price": "159.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "PACT Black",
+      "image": "https://cdn.dam.salomon.com/8e5e6b58-7bb3-4636-9c58-b2f4013ba909/L47671400/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black",
+      "size": "L",
+      "sku": "L47671400058",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/pact-li6862/L47671400?sizeId=L47671400058",
+        "priceCurrency": "USD",
+        "price": "159.95"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "8a00857976c13067124646c941a10642dd71f6cf51206bb14b56b6ca4c289b24",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

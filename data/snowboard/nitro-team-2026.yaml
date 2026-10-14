@@ -13,8 +13,6 @@ price:
   currency: CNY
 specs:
   length: 157
-  effectiveEdge: 1170
-  sidecut: 7.3
   sidecutRadii: 11.3 / 7.3 / 11.3 m
   waistWidth: 252
   stanceSetback: 15
@@ -23,16 +21,32 @@ specs:
   core: Powerlite Core
   fiberglass: Bi-Lite Laminates
   base: Sintered EcoSpeed HD Base
-  weight: 2810
   damping: 7
   pop: 7.5
   turnRadiusFeel: 中性偏快，好带
   warranty: 2
-  flex: 6
+  flex: 7
   profileFamily: camber
   scenes:
     - all-mountain
     - freestyle
+  runningLength: 1170
+  sizeSpecs:
+    - { size: "152", runningLength: 1140, noseWidth: 289, tailWidth: 289, waistWidth: 246, sidecutRadii: 10.7 / 6.8 / 10.7 m, riderWeight: 50-70 kg, setback: 15 }
+    - { size: "155", runningLength: 1160, noseWidth: 293, tailWidth: 293, waistWidth: 250, sidecutRadii: 11 / 7.2 / 11 m, riderWeight: 55-75 kg, setback: 15 }
+    - { size: "157", runningLength: 1170, noseWidth: 295, tailWidth: 295, waistWidth: 252, sidecutRadii: 11.3 / 7.3 / 11.3 m, riderWeight: 60-80 kg, setback: 15 }
+    - { size: "159", runningLength: 1180, noseWidth: 297, tailWidth: 297, waistWidth: 254, sidecutRadii: 11.7 / 7.3 / 11.7 m, riderWeight: 65-85 kg, setback: 15 }
+    - { size: "162", runningLength: 1210, noseWidth: 297, tailWidth: 297, waistWidth: 256, sidecutRadii: 12.8 / 8.1 / 12.8 m, riderWeight: 70+ kg, setback: 15 }
+    - { size: 159W, runningLength: 1180, noseWidth: 309, tailWidth: 309, waistWidth: 266, sidecutRadii: 11.7 / 7.3 / 11.7 m, riderWeight: 65-85 kg, setback: 15 }
+    - { size: 162W, runningLength: 1210, noseWidth: 311, tailWidth: 311, waistWidth: 270, sidecutRadii: 12.8 / 8.1 / 12.8 m, riderWeight: 70+ kg, setback: 15 }
+    - { size: 165W, runningLength: 1240, noseWidth: 313, tailWidth: 313, waistWidth: 272, sidecutRadii: 12.4 / 8.8 / 12.4 m, riderWeight: 75+ kg, setback: 15 }
+  selectionNotes: 2025–2026 Nitro 厂商经销目录（零售商托管）第 36 页复核；后移表原文 -15 mm，沿用本档案后移量 15 mm 的记法。多段半径完整保留；1170 mm 为 running length，不再误作有效刃长；目录未给整板重量，删除无官方依据的 2810 g。官网出现 157W，但该目录没有对应行，未补造。
+  compatibilitySources: https://www.nitrosnow.ca/products/2026-team；https://golgoda.com/PDF/25-26%20NITRO_compressed.pdf
+  priceCheckedAt: 2026-10-12
+  officialPrice: CAD 455
+  priceMarket: 原币 CAD；来源商店 www.nitrosnow.ca
+  priceSource: https://www.nitrosnow.ca/products/2026-team
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 editorial_scores:
   stability: 7.5
   response: 7.5

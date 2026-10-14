@@ -1,0 +1,149 @@
+{
+  "capturedAt": "2026-10-12T06:42:31.984Z",
+  "target": {
+    "slug": "flow-fenix-binding-2027",
+    "category": "snowboard-binding",
+    "brand": "flow",
+    "model": "Fenix",
+    "year": 2027,
+    "url": "https://www.nidecker.com/products/flow-fenix",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.nidecker.com/products/flow-fenix",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.nidecker.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:17.940Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": null,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Flow Fenix | Accelerate Your Progression | Nidecker | US",
+    "canonicalUrl": "https://www.nidecker.com/en-int/products/flow-fenix",
+    "tables": [
+      {
+        "headers": [
+          "",
+          "US Youth & Men",
+          "US Women",
+          "EU",
+          "UK",
+          "Japan/Mondo"
+        ],
+        "rows": [
+          [
+            "S",
+            "2 - 4.5",
+            "5.5 - 6",
+            "35 - 36",
+            "1 - 3.5",
+            "20.5 - 22.5"
+          ],
+          [
+            "M",
+            "5 - 8",
+            "6.5 - 9.5",
+            "37 - 41",
+            "4 - 7",
+            "23 - 26"
+          ],
+          [
+            "L",
+            "8.5 - 11",
+            "10 - 11",
+            "41.5 - 44.5",
+            "7.5 - 10",
+            "26.5 - 29"
+          ],
+          [
+            "XL",
+            "11.5 - 15",
+            "-",
+            "45 - 49.5",
+            "10.5 - 14",
+            "29.5 - 32.5"
+          ]
+        ]
+      }
+    ]
+  },
+  "review": {
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "2 - 4.5",
+        "usWomen": "5.5 - 6",
+        "uk": "1 - 3.5",
+        "mondo": "20.5 - 22.5"
+      },
+      {
+        "size": "M",
+        "usMen": "5 - 8",
+        "usWomen": "6.5 - 9.5",
+        "uk": "4 - 7",
+        "mondo": "23 - 26"
+      },
+      {
+        "size": "L",
+        "usMen": "8.5 - 11",
+        "usWomen": "10 - 11",
+        "uk": "7.5 - 10",
+        "mondo": "26.5 - 29"
+      },
+      {
+        "size": "XL",
+        "usMen": "11.5 - 15",
+        "uk": "10.5 - 14",
+        "mondo": "29.5 - 32.5"
+      }
+    ],
+    "sources": "https://www.nidecker.com/products/flow-fenix",
+    "good": true
+  },
+  "sizeChart": [
+    {
+      "size": "S",
+      "usMen": "2 - 4.5",
+      "usWomen": "5.5 - 6",
+      "eu": "35 - 36",
+      "uk": "1 - 3.5",
+      "mondo": "20.5 - 22.5"
+    },
+    {
+      "size": "M",
+      "usMen": "5 - 8",
+      "usWomen": "6.5 - 9.5",
+      "eu": "37 - 41",
+      "uk": "4 - 7",
+      "mondo": "23 - 26"
+    },
+    {
+      "size": "L",
+      "usMen": "8.5 - 11",
+      "usWomen": "10 - 11",
+      "eu": "41.5 - 44.5",
+      "uk": "7.5 - 10",
+      "mondo": "26.5 - 29"
+    },
+    {
+      "size": "XL",
+      "usMen": "11.5 - 15",
+      "eu": "45 - 49.5",
+      "uk": "10.5 - 14",
+      "mondo": "29.5 - 32.5"
+    }
+  ]
+}

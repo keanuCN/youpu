@@ -9,7 +9,7 @@ specs:
   entrySystem: strap
   flexFeel: medium
   mountingSystem: "非对称 Mini Disk；兼容 4x2 与 Burton Channel"
-  bootCompatibility: "常规绑带系统，可适配普通雪鞋；女款 S/M/L"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表"
   baseplateMaterial: "S11 Duraflex ST 非对称 Mini Disk 底盘；Moleculer 衬套与 TPE 外底"
   ankleStrap: "Hybrid 1.0 PU Core，Exoframe 外层搭配柔软舒适内衬"
@@ -19,6 +19,17 @@ specs:
   highbackAdjustment: "Integrated 2-Stage 前倾角微调，使用 3 号螺丝刀"
   cushioning: "Moleculer 衬套与 TPE 外底提供缓震和回弹；Union 标注固定器硬度 6/10"
   warranty: "底盘与后跟杯终身保修；其余部件 2 年保修"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 Mini Disk 支持 2x4 与 Channel，不支持 4x4 或旧 3D；不能套用 Universal Disk V2 的兼容范围。
+  compatibilitySources: https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide
+  sizeChart:
+    - { size: SMALL, usMen: "* - 5.5", usWomen: 4 - 6.5, uk: 2 - 4.5, eu: 34 - 37, mondo: 21 - 23.5 }
+    - { size: MEDIUM, usMen: 5.5 - 7.5, usWomen: 6.5 - 8.5, uk: 4.5 - 6.5, eu: 37 - 40.5, mondo: 23.5 - 25.5 }
+    - { size: LARGE, usMen: 8 - 10, usWomen: 9 - 11, uk: 7 - 9, eu: 41 - 43, mondo: 26 - 28 }
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 329.95
+  priceMarket: 原币 USD；来源商店 unionbindingcompany.com
+  priceSource: https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: "https://jp.unionbindingcompany.com/cdn/shop/files/UN26_ULTRA_WOMEN_WHITE_FRONT_1024x.jpg?v=1782986738"
     kind: face

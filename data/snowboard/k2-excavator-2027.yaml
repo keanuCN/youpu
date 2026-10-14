@@ -18,12 +18,12 @@ price:
   currency: CNY
 specs:
   sizeSpecs:
-    - {size: "142", effectiveEdge: 1040, noseWidth: 299, waistWidth: 250, tailWidth: 279, sidecutRadii: "5.5/6.5 m", stanceWidth: "483 mm (19 in reference)", setback: 19}
-    - {size: "146", effectiveEdge: 1080, noseWidth: 305, waistWidth: 254, tailWidth: 285, sidecutRadii: "5.7/6.7 m", stanceWidth: "483 mm (19 in reference)", setback: 19}
-    - {size: "150", effectiveEdge: 1110, noseWidth: 313, waistWidth: 260, tailWidth: 293, sidecutRadii: "5.9/6.9 m", stanceWidth: "508 mm (20 in reference)", setback: 19}
-    - {size: "154", effectiveEdge: 1150, noseWidth: 318, waistWidth: 264, tailWidth: 298, sidecutRadii: "6.1/7.1 m", stanceWidth: "533 mm (21 in reference)", setback: 19}
-    - {size: "158", effectiveEdge: 1180, noseWidth: 324, waistWidth: 268, tailWidth: 304, sidecutRadii: "6.3/7.3 m", stanceWidth: "559 mm (22 in reference)", setback: 19}
-    - {size: "162", effectiveEdge: 1220, noseWidth: 327, waistWidth: 270, tailWidth: 307, sidecutRadii: "6.5/7.5 m", stanceWidth: "584 mm (23 in reference)", setback: 19}
+    - { size: "142", effectiveEdge: 1040, noseWidth: 299, waistWidth: 250, tailWidth: 279, sidecutRadii: "5.5/6.5 m", stanceWidth: "483 mm (19 in reference)", setback: 19 }
+    - { size: "146", effectiveEdge: 1080, noseWidth: 305, waistWidth: 254, tailWidth: 285, sidecutRadii: "5.7/6.7 m", stanceWidth: "483 mm (19 in reference)", setback: 19 }
+    - { size: "150", effectiveEdge: 1110, noseWidth: 313, waistWidth: 260, tailWidth: 293, sidecutRadii: "5.9/6.9 m", stanceWidth: "508 mm (20 in reference)", setback: 19 }
+    - { size: "154", effectiveEdge: 1150, noseWidth: 318, waistWidth: 264, tailWidth: 298, sidecutRadii: "6.1/7.1 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "158", effectiveEdge: 1180, noseWidth: 324, waistWidth: 268, tailWidth: 304, sidecutRadii: "6.3/7.3 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "162", effectiveEdge: 1220, noseWidth: 327, waistWidth: 270, tailWidth: 307, sidecutRadii: "6.5/7.5 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
   profile: Directional Camber
   profileFamily: camber
   shape: Tapered Directional / Volume Shift
@@ -34,6 +34,11 @@ specs:
     - carving
     - powder
     - all-mountain
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 629.95
+  priceMarket: 原币 USD；来源商店 k2snow.com
+  priceSource: https://k2snow.com/en-us/p/excavator-unisex-snowboard-kb261687
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 images:
   - url: "https://cdn.media.amplience.net/s/k2/k2_2627_excavator_KB261687?w=1200&qlt=90&fmt=auto"
     kind: face

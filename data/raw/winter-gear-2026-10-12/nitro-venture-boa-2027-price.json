@@ -1,0 +1,496 @@
+{
+  "slug": "nitro-venture-boa-2027",
+  "price": "EUR 399.9",
+  "source": "https://www.nitrosnowboards.com/products/venture-boa-boots",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:47:59.233Z",
+  "productName": "Nitro Venture BOA® Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/venture-boa-boots",
+  "hasVariant": [
+    {
+      "@id": "/products/venture-boa-boots?variant=53154715959627#variant",
+      "@type": "Product",
+      "gtin": "7630349315522",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 250",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154715959627#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154715959627"
+      },
+      "sku": "848717-001-250"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154715992395#variant",
+      "@type": "Product",
+      "gtin": "7630349315539",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 255",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154715992395#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154715992395"
+      },
+      "sku": "848717-001-255"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716025163#variant",
+      "@type": "Product",
+      "gtin": "7630349315546",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 260",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716025163#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716025163"
+      },
+      "sku": "848717-001-260"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716057931#variant",
+      "@type": "Product",
+      "gtin": "7630349315553",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 265",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716057931#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716057931"
+      },
+      "sku": "848717-001-265"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716090699#variant",
+      "@type": "Product",
+      "gtin": "7630349315560",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 270",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716090699#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716090699"
+      },
+      "sku": "848717-001-270"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716123467#variant",
+      "@type": "Product",
+      "gtin": "7630349315577",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 275",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716123467#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716123467"
+      },
+      "sku": "848717-001-275"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716156235#variant",
+      "@type": "Product",
+      "gtin": "7630349315584",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 280",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716156235#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716156235"
+      },
+      "sku": "848717-001-280"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716189003#variant",
+      "@type": "Product",
+      "gtin": "7630349315591",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 285",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716189003#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716189003"
+      },
+      "sku": "848717-001-285"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716221771#variant",
+      "@type": "Product",
+      "gtin": "7630349315607",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 290",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716221771#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716221771"
+      },
+      "sku": "848717-001-290"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716254539#variant",
+      "@type": "Product",
+      "gtin": "7630349315614",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 295",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716254539#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716254539"
+      },
+      "sku": "848717-001-295"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716287307#variant",
+      "@type": "Product",
+      "gtin": "7630349315621",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 300",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716287307#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716287307"
+      },
+      "sku": "848717-001-300"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716320075#variant",
+      "@type": "Product",
+      "gtin": "7630349315638",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 305",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716320075#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716320075"
+      },
+      "sku": "848717-001-305"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716352843#variant",
+      "@type": "Product",
+      "gtin": "7630349315645",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 310",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716352843#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716352843"
+      },
+      "sku": "848717-001-310"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716385611#variant",
+      "@type": "Product",
+      "gtin": "7630349315652",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 315",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716385611#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716385611"
+      },
+      "sku": "848717-001-315"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=53154716418379#variant",
+      "@type": "Product",
+      "gtin": "7630349315669",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+      "name": "Nitro Venture BOA® Boots - Black / 320",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=53154716418379#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=53154716418379"
+      },
+      "sku": "848717-001-320"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103357771#variant",
+      "@type": "Product",
+      "gtin": "7630349348322",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 250",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103357771#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103357771"
+      },
+      "sku": "848717-004-250"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103390539#variant",
+      "@type": "Product",
+      "gtin": "7630349348339",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 255",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103390539#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103390539"
+      },
+      "sku": "848717-004-255"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103423307#variant",
+      "@type": "Product",
+      "gtin": "7630349348346",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 260",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103423307#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103423307"
+      },
+      "sku": "848717-004-260"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103488843#variant",
+      "@type": "Product",
+      "gtin": "7630349348353",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 265",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103488843#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103488843"
+      },
+      "sku": "848717-004-265"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103521611#variant",
+      "@type": "Product",
+      "gtin": "7630349348360",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 270",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103521611#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103521611"
+      },
+      "sku": "848717-004-270"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103587147#variant",
+      "@type": "Product",
+      "gtin": "7630349348377",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 275",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103587147#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103587147"
+      },
+      "sku": "848717-004-275"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103619915#variant",
+      "@type": "Product",
+      "gtin": "7630349348384",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 280",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103619915#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103619915"
+      },
+      "sku": "848717-004-280"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103652683#variant",
+      "@type": "Product",
+      "gtin": "7630349348391",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 285",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103652683#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103652683"
+      },
+      "sku": "848717-004-285"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103718219#variant",
+      "@type": "Product",
+      "gtin": "7630349348407",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 290",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103718219#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103718219"
+      },
+      "sku": "848717-004-290"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103783755#variant",
+      "@type": "Product",
+      "gtin": "7630349348414",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 295",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103783755#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103783755"
+      },
+      "sku": "848717-004-295"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103816523#variant",
+      "@type": "Product",
+      "gtin": "7630349348421",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 300",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103816523#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103816523"
+      },
+      "sku": "848717-004-300"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674103947595#variant",
+      "@type": "Product",
+      "gtin": "7630349348438",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 305",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674103947595#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674103947595"
+      },
+      "sku": "848717-004-305"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674104013131#variant",
+      "@type": "Product",
+      "gtin": "7630349348445",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 310",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674104013131#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674104013131"
+      },
+      "sku": "848717-004-310"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674104340811#variant",
+      "@type": "Product",
+      "gtin": "7630349348452",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 315",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674104340811#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674104340811"
+      },
+      "sku": "848717-004-315"
+    },
+    {
+      "@id": "/products/venture-boa-boots?variant=57674104373579#variant",
+      "@type": "Product",
+      "gtin": "7630349348469",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-004_Venture-BOA-Boots_X-Motorhead_Product-1_dd5b853c-e5df-42c2-8979-fb8eb8551e59.jpg?v=1788164744&width=1920",
+      "name": "Nitro Venture BOA® Boots - Motorhead / 320",
+      "offers": {
+        "@id": "/products/venture-boa-boots?variant=57674104373579#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "399.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-boa-boots?variant=57674104373579"
+      },
+      "sku": "848717-004-320"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "079b0fa390023213be74e4322e24b95aad8c693e3021dc1be1aa9346ec045e38",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

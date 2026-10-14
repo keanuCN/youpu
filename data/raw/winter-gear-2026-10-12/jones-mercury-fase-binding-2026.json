@@ -1,0 +1,336 @@
+{
+  "capturedAt": "2026-10-12T06:42:42.144Z",
+  "target": {
+    "slug": "jones-mercury-fase-binding-2026",
+    "category": "snowboard-binding",
+    "brand": "jones",
+    "model": "Mercury FASE",
+    "year": 2026,
+    "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://eu.jonessnowboards.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:39.494Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": null,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Mercury FASE® Snowboard Binding | Jones",
+    "canonicalUrl": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding",
+    "tables": [
+      {
+        "headers": [
+          "Size",
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "rows": [
+          [
+            "US Youth & Men's",
+            "5 - 8",
+            "8.5 - 10.5",
+            "11 - 14"
+          ],
+          [
+            "US Women's",
+            "6.5 - 9.5",
+            "10 - 12",
+            "12.5 - 15.5"
+          ],
+          [
+            "EU",
+            "37.5 - 41",
+            "41.5 - 44",
+            "44.5 - 48"
+          ],
+          [
+            "UK",
+            "4 - 7",
+            "7.5 - 9.5",
+            "10 - 13"
+          ],
+          [
+            "Mondo",
+            "23.0 - 26.0",
+            "26.5 - 28.5",
+            "29.0 - 31.0"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Size",
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "rows": [
+          [
+            "US Youth & Men's",
+            "5 - 8",
+            "8.5 - 10.5",
+            "11 - 14"
+          ],
+          [
+            "US Women's",
+            "6.5 - 9.5",
+            "10 - 12",
+            "12.5 - 15.5"
+          ],
+          [
+            "EU",
+            "37.5 - 41",
+            "41.5 - 44",
+            "44.5 - 48"
+          ],
+          [
+            "UK",
+            "4 - 7",
+            "7.5 - 9.5",
+            "10 - 13"
+          ],
+          [
+            "Mondo",
+            "23.0 - 26.0",
+            "26.5 - 28.5",
+            "29.0 - 31.0"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Size",
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "rows": [
+          [
+            "US Youth & Men's",
+            "5 - 8",
+            "8.5 - 10.5",
+            "11 - 14"
+          ],
+          [
+            "US Women's",
+            "6.5 - 9.5",
+            "10 - 12",
+            "12.5 - 15.5"
+          ],
+          [
+            "EU",
+            "37.5 - 41",
+            "41.5 - 44",
+            "44.5 - 48"
+          ],
+          [
+            "UK",
+            "4 - 7",
+            "7.5 - 9.5",
+            "10 - 13"
+          ],
+          [
+            "Mondo",
+            "23.0 - 26.0",
+            "26.5 - 28.5",
+            "29.0 - 31.0"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "Board size (cm)",
+          "Stealth Black / S",
+          "Stealth Black / M",
+          "Polar Blue / S",
+          "MTN Black/Silver / S",
+          "Borealis Black/Pink / S",
+          "Black Surf Series / S",
+          "MTN Black/Silver / M",
+          "Stealth Black / L",
+          "MTN Black/Silver / L",
+          "Cloud White / S",
+          "Cloud White / M",
+          "Cloud White / L",
+          "Polar Blue / M",
+          "Borealis Black/Pink / M",
+          "Black Surf Series / M",
+          "Polar Blue / L",
+          "Black Surf Series / L"
+        ],
+        "rows": [
+          [
+            "boots_min_size",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "boots_max_size",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "min_weight",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "max_weight",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "comment",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  "review": {
+    "rows": [
+      {
+        "size": "Small",
+        "usMen": "5 - 8",
+        "usWomen": "6.5 - 9.5",
+        "uk": "4 - 7",
+        "mondo": "23.0 - 26.0"
+      },
+      {
+        "size": "Medium",
+        "usMen": "8.5 - 10.5",
+        "usWomen": "10 - 12",
+        "uk": "7.5 - 9.5",
+        "mondo": "26.5 - 28.5"
+      },
+      {
+        "size": "Large",
+        "usMen": "11 - 14",
+        "usWomen": "12.5 - 15.5",
+        "uk": "10 - 13",
+        "mondo": "29.0 - 31.0"
+      }
+    ],
+    "sources": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding",
+    "good": true
+  },
+  "sizeChart": [
+    {
+      "size": "Small",
+      "usMen": "5 - 8",
+      "usWomen": "6.5 - 9.5",
+      "eu": "37.5 - 41",
+      "uk": "4 - 7",
+      "mondo": "23.0 - 26.0"
+    },
+    {
+      "size": "Medium",
+      "usMen": "8.5 - 10.5",
+      "usWomen": "10 - 12",
+      "eu": "41.5 - 44",
+      "uk": "7.5 - 9.5",
+      "mondo": "26.5 - 28.5"
+    },
+    {
+      "size": "Large",
+      "usMen": "11 - 14",
+      "usWomen": "12.5 - 15.5",
+      "eu": "44.5 - 48",
+      "uk": "10 - 13",
+      "mondo": "29.0 - 31.0"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "slug": "nitro-beast-2026",
+  "price": "EUR 729.9",
+  "source": "https://www.nitrosnowboards.com/products/beast-snowboard",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T07:01:38.331Z",
+  "productName": "Nitro Beast Snowboard",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/beast-snowboard",
+  "hasVariant": [
+    {
+      "@id": "/products/beast-snowboard?variant=53154659205451#variant",
+      "@type": "Product",
+      "gtin": "7630349322117",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/833227-001_Beast_151_Product-1.jpg?v=1755928801&width=1920",
+      "name": "Nitro Beast Snowboard - 151mw",
+      "offers": {
+        "@id": "/products/beast-snowboard?variant=53154659205451#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "729.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/beast-snowboard?variant=53154659205451"
+      },
+      "sku": "833227-001-151"
+    },
+    {
+      "@id": "/products/beast-snowboard?variant=53154659238219#variant",
+      "@type": "Product",
+      "gtin": "7630349322124",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/833227-001_Beast_151_Product-1.jpg?v=1755928801&width=1920",
+      "name": "Nitro Beast Snowboard - 155mw",
+      "offers": {
+        "@id": "/products/beast-snowboard?variant=53154659238219#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "729.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/beast-snowboard?variant=53154659238219"
+      },
+      "sku": "833227-001-155"
+    },
+    {
+      "@id": "/products/beast-snowboard?variant=53154659270987#variant",
+      "@type": "Product",
+      "gtin": "7630349322131",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/833227-001_Beast_151_Product-1.jpg?v=1755928801&width=1920",
+      "name": "Nitro Beast Snowboard - 158mw",
+      "offers": {
+        "@id": "/products/beast-snowboard?variant=53154659270987#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "729.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/beast-snowboard?variant=53154659270987"
+      },
+      "sku": "833227-001-158"
+    },
+    {
+      "@id": "/products/beast-snowboard?variant=53154659303755#variant",
+      "@type": "Product",
+      "gtin": "7630349322148",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/833227-001_Beast_151_Product-1.jpg?v=1755928801&width=1920",
+      "name": "Nitro Beast Snowboard - 162mw",
+      "offers": {
+        "@id": "/products/beast-snowboard?variant=53154659303755#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "729.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/beast-snowboard?variant=53154659303755"
+      },
+      "sku": "833227-001-162"
+    },
+    {
+      "@id": "/products/beast-snowboard?variant=53154659336523#variant",
+      "@type": "Product",
+      "gtin": "7630349322155",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/833227-001_Beast_151_Product-1.jpg?v=1755928801&width=1920",
+      "name": "Nitro Beast Snowboard - 151mw",
+      "offers": {
+        "@id": "/products/beast-snowboard?variant=53154659336523#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "729.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/beast-snowboard?variant=53154659336523"
+      },
+      "sku": "833227-002-151"
+    },
+    {
+      "@id": "/products/beast-snowboard?variant=53154659369291#variant",
+      "@type": "Product",
+      "gtin": "7630349322162",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/833227-001_Beast_151_Product-1.jpg?v=1755928801&width=1920",
+      "name": "Nitro Beast Snowboard - 155mw",
+      "offers": {
+        "@id": "/products/beast-snowboard?variant=53154659369291#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "729.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/beast-snowboard?variant=53154659369291"
+      },
+      "sku": "833227-002-155"
+    },
+    {
+      "@id": "/products/beast-snowboard?variant=53154659402059#variant",
+      "@type": "Product",
+      "gtin": "7630349322179",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/833227-001_Beast_151_Product-1.jpg?v=1755928801&width=1920",
+      "name": "Nitro Beast Snowboard - 158mw",
+      "offers": {
+        "@id": "/products/beast-snowboard?variant=53154659402059#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "729.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/beast-snowboard?variant=53154659402059"
+      },
+      "sku": "833227-002-158"
+    },
+    {
+      "@id": "/products/beast-snowboard?variant=53154659434827#variant",
+      "@type": "Product",
+      "gtin": "7630349322186",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/833227-001_Beast_151_Product-1.jpg?v=1755928801&width=1920",
+      "name": "Nitro Beast Snowboard - 162mw",
+      "offers": {
+        "@id": "/products/beast-snowboard?variant=53154659434827#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "729.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/beast-snowboard?variant=53154659434827"
+      },
+      "sku": "833227-002-162"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "62ffe24a6fe9ceb0915a0a2b868326efa37dc7e574940e6d84cf0245144b0535",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

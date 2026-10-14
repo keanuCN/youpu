@@ -1,0 +1,6 @@
+﻿主机记录,记录类型,线路类型,记录值,MX优先级,权重,TTL,备注,状态
+resend._domainkey,TXT,默认,p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCmvGXGfIcE+WJzBjaWnESM33LCmo9vkEEYDy88+aMqthE2P9l+WwIWi/G8mrY8MA2IcsSAqB5yvGp5vbM/C4JFhfjrf8DEjKa4c344jS0jakUTosqFy4FqmpH/bArkGHhMVC415KnHTWskyYJzA/CrYn+sHK6MeQQI9OqQMgJ0yQIDAQAB,-,-,600,有谱注册邮件 DKIM,正常
+rsend,CNAME,默认,rsend.forge.rmta.net,-,-,600,Resend 发信验证,正常
+send,CNAME,默认,send.forge.rmta.net,-,-,600,Resend 发信验证,正常
+_dmarc,TXT,默认,v=DMARC1; p=none;,-,-,600,邮件认证观察策略,正常
+_acme-challenge.www,TXT,默认,UkvS9T7BQ2G4b4riMVeEBCPv3SMAd5VgxUF3WOv0zIc,-,-,600,临时证书验证记录,正常

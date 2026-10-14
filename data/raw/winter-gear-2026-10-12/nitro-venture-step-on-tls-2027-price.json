@@ -1,0 +1,464 @@
+{
+  "slug": "nitro-venture-step-on-tls-2027",
+  "price": "EUR 489.9",
+  "source": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:47:18.590Z",
+  "productName": "Nitro Venture Step On® TLS Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots",
+  "hasVariant": [
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713567563#variant",
+      "@type": "Product",
+      "gtin": "7630349315102",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 250",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713567563#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713567563"
+      },
+      "sku": "848716-001-250"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713600331#variant",
+      "@type": "Product",
+      "gtin": "7630349315119",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 255",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713600331#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713600331"
+      },
+      "sku": "848716-001-255"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713633099#variant",
+      "@type": "Product",
+      "gtin": "7630349315126",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 260",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713633099#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713633099"
+      },
+      "sku": "848716-001-260"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713665867#variant",
+      "@type": "Product",
+      "gtin": "7630349315133",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 265",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713665867#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713665867"
+      },
+      "sku": "848716-001-265"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713698635#variant",
+      "@type": "Product",
+      "gtin": "7630349315140",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 270",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713698635#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713698635"
+      },
+      "sku": "848716-001-270"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713731403#variant",
+      "@type": "Product",
+      "gtin": "7630349315157",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 275",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713731403#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713731403"
+      },
+      "sku": "848716-001-275"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713764171#variant",
+      "@type": "Product",
+      "gtin": "7630349315164",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 280",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713764171#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713764171"
+      },
+      "sku": "848716-001-280"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713796939#variant",
+      "@type": "Product",
+      "gtin": "7630349315171",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 285",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713796939#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713796939"
+      },
+      "sku": "848716-001-285"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713829707#variant",
+      "@type": "Product",
+      "gtin": "7630349315188",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 290",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713829707#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713829707"
+      },
+      "sku": "848716-001-290"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713862475#variant",
+      "@type": "Product",
+      "gtin": "7630349315195",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 295",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713862475#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713862475"
+      },
+      "sku": "848716-001-295"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713895243#variant",
+      "@type": "Product",
+      "gtin": "7630349315201",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 300",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713895243#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713895243"
+      },
+      "sku": "848716-001-300"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713928011#variant",
+      "@type": "Product",
+      "gtin": "7630349315218",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 310",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713928011#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713928011"
+      },
+      "sku": "848716-001-310"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713960779#variant",
+      "@type": "Product",
+      "gtin": "7630349315225",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 320",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713960779#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713960779"
+      },
+      "sku": "848716-001-320"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=53154713993547#variant",
+      "@type": "Product",
+      "gtin": "7630349315232",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Black / 330",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=53154713993547#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=53154713993547"
+      },
+      "sku": "848716-001-330"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102210891#variant",
+      "@type": "Product",
+      "gtin": "7630349348186",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 250",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102210891#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102210891"
+      },
+      "sku": "848716-004-250"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102276427#variant",
+      "@type": "Product",
+      "gtin": "7630349348193",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 255",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102276427#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102276427"
+      },
+      "sku": "848716-004-255"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102341963#variant",
+      "@type": "Product",
+      "gtin": "7630349348209",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 260",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102341963#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102341963"
+      },
+      "sku": "848716-004-260"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102407499#variant",
+      "@type": "Product",
+      "gtin": "7630349348216",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 265",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102407499#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102407499"
+      },
+      "sku": "848716-004-265"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102473035#variant",
+      "@type": "Product",
+      "gtin": "7630349348223",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 270",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102473035#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102473035"
+      },
+      "sku": "848716-004-270"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102538571#variant",
+      "@type": "Product",
+      "gtin": "7630349348230",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 275",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102538571#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102538571"
+      },
+      "sku": "848716-004-275"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102604107#variant",
+      "@type": "Product",
+      "gtin": "7630349348247",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 280",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102604107#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102604107"
+      },
+      "sku": "848716-004-280"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102669643#variant",
+      "@type": "Product",
+      "gtin": "7630349348254",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 285",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102669643#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102669643"
+      },
+      "sku": "848716-004-285"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102702411#variant",
+      "@type": "Product",
+      "gtin": "7630349348261",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 290",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102702411#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102702411"
+      },
+      "sku": "848716-004-290"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102767947#variant",
+      "@type": "Product",
+      "gtin": "7630349348278",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 295",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102767947#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102767947"
+      },
+      "sku": "848716-004-295"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102833483#variant",
+      "@type": "Product",
+      "gtin": "7630349348285",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 300",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102833483#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102833483"
+      },
+      "sku": "848716-004-300"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102899019#variant",
+      "@type": "Product",
+      "gtin": "7630349348292",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 310",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102899019#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102899019"
+      },
+      "sku": "848716-004-310"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674102931787#variant",
+      "@type": "Product",
+      "gtin": "7630349348308",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 320",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674102931787#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674102931787"
+      },
+      "sku": "848716-004-320"
+    },
+    {
+      "@id": "/products/venture-step-on-tls-boots?variant=57674103030091#variant",
+      "@type": "Product",
+      "gtin": "7630349348315",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1920",
+      "name": "Nitro Venture Step On® TLS Boots - Grey / 330",
+      "offers": {
+        "@id": "/products/venture-step-on-tls-boots?variant=57674103030091#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "489.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots?variant=57674103030091"
+      },
+      "sku": "848716-004-330"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "684c533c81d5ce49daf6a7e36c994ef41d9fc455ccae50b04fd0cfef6ab0fa1a",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

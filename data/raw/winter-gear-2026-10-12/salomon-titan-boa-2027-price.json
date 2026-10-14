@@ -1,0 +1,211 @@
+{
+  "slug": "salomon-titan-boa-2027",
+  "price": "USD 269.95",
+  "source": "https://www.salomon.com/en-us/product/titan-boa-lg5971",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:47:30.971Z",
+  "productName": "TITAN BOA®",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "7",
+      "sku": "L47242900022",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900022",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "7.5",
+      "sku": "L47242900023",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900023",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "8",
+      "sku": "L47242900024",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900024",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "8.5",
+      "sku": "L47242900025",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900025",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "9",
+      "sku": "L47242900026",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900026",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "9.5",
+      "sku": "L47242900027",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900027",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "10",
+      "sku": "L47242900028",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900028",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "10.5",
+      "sku": "L47242900029",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900029",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "11",
+      "sku": "L47242900030",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900030",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "11.5",
+      "sku": "L47242900031",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900031",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "12",
+      "sku": "L47242900032",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900032",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "12.5",
+      "sku": "L47242900033",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900033",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "13",
+      "sku": "L47242900034",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900034",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "TITAN BOA® Black / Black / Roasted Cashew",
+      "image": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black / Black / Roasted Cashew",
+      "size": "13.5",
+      "sku": "L47242900035",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/titan-boa-lg5971/L47242900?sizeId=L47242900035",
+        "priceCurrency": "USD",
+        "price": "269.95"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "53a0bd119ba5fb7988c6c22c722264c7637246584823598607f1e6517fc3a11e",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

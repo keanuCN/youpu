@@ -37,6 +37,8 @@ export const recommendationInputSchema = z
         level: z.string().optional(),
         scene: z.array(z.string()).optional(),
         weight: z.string().optional(),
+        weightKg: z.string().regex(/^(?:\d{1,3}(?:\.\d)?|)$/).refine((v) => !v || (Number(v) >= 20 && Number(v) <= 200)).optional(),
+        bootEu: z.string().regex(/^(?:\d{2}(?:\.\d)?|)$/).refine((v) => !v || (Number(v) >= 25 && Number(v) <= 55)).optional(),
         budget: z.string().optional(),
         flex: z.string().optional(),
         priority: z.string().optional(),

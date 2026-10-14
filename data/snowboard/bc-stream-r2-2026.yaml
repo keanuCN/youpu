@@ -30,11 +30,13 @@ specs:
     - carving
     - all-mountain
   sizeSpecs:
-    - {size: "154", overallLength: 1540, effectiveEdge: 1270, waistWidth: 250, sidecutRadii: "9.0 / 8.6 / 8.2 / 8.6 / 9.0 m", stanceWidth: "520 / 560 / 600 mm", setback: 20}
-    - {size: "157", overallLength: 1570, effectiveEdge: 1300, waistWidth: 250, sidecutRadii: "9.2 / 8.8 / 8.4 / 8.8 / 9.2 m", stanceWidth: "520 / 560 / 600 mm", setback: 20}
-    - {size: "157W", overallLength: 1570, effectiveEdge: 1300, waistWidth: 254, sidecutRadii: "9.2 / 8.8 / 8.4 / 8.8 / 9.2 m", stanceWidth: "520 / 560 / 600 mm", setback: 20}
-    - {size: "162", overallLength: 1620, effectiveEdge: 1350, waistWidth: 252, sidecutRadii: "9.4 / 9.0 / 8.6 / 9.0 / 9.4 m", stanceWidth: "520 / 560 / 600 mm", setback: 20}
-    - {size: "162W", overallLength: 1620, effectiveEdge: 1350, waistWidth: 256, sidecutRadii: "9.4 / 9.0 / 8.6 / 9.0 / 9.4 m", stanceWidth: "520 / 560 / 600 mm", setback: 20}
+    - { size: "154", overallLength: 1540, effectiveEdge: 1270, waistWidth: 250, sidecutRadii: "9.0 / 8.6 / 8.2 / 8.6 / 9.0 m", stanceWidth: "520 / 560 / 600 mm", setback: 20 }
+    - { size: "157", overallLength: 1570, effectiveEdge: 1300, waistWidth: 250, sidecutRadii: "9.2 / 8.8 / 8.4 / 8.8 / 9.2 m", stanceWidth: "520 / 560 / 600 mm", setback: 20 }
+    - { size: "157W", overallLength: 1570, effectiveEdge: 1300, waistWidth: 254, sidecutRadii: "9.2 / 8.8 / 8.4 / 8.8 / 9.2 m", stanceWidth: "520 / 560 / 600 mm", setback: 20 }
+    - { size: "162", overallLength: 1620, effectiveEdge: 1350, waistWidth: 252, sidecutRadii: "9.4 / 9.0 / 8.6 / 9.0 / 9.4 m", stanceWidth: "520 / 560 / 600 mm", setback: 20 }
+    - { size: "162W", overallLength: 1620, effectiveEdge: 1350, waistWidth: 256, sidecutRadii: "9.4 / 9.0 / 8.6 / 9.0 / 9.4 m", stanceWidth: "520 / 560 / 600 mm", setback: 20 }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
   - url: "https://www.follows.co.jp/pic-labo/2526bc-r2-1a.jpg"
     kind: face

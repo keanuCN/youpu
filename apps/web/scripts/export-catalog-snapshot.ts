@@ -1,12 +1,17 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, writeFile, readFile, readdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
-import { normalizePriceRange, productListResponseSchema, type ProductListItem } from "@youpu/schema";
+import { brandSeedSchema, productSeedSchema, productListItemSchema, normalizePriceRange, productListResponseSchema, type ProductListItem } from "@youpu/schema";
+import { parse as parseYaml } from 'yaml';
 import { shouldRejectCatalogCountDecrease } from "./catalog-build-policy";
-import { CATALOG_SNAPSHOT_META } from "../src/data/catalog-snapshot";
+import { CATALOG_SNAPSHOT, CATALOG_SNAPSHOT_META } from "../src/data/catalog-snapshot";
+import { SNOWBOARD_SETUPS } from '../src/data/snowboard-setups';
+import previousSetupProducts from '../src/data/snowboard-setup-products.json';
 
 const PAGE_SIZE = 48;
 const apiBase = (process.env.CONTENT_EXPORT_API_BASE ?? process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:3001").replace(/\/$/, "");
+const seedDir = process.env.CONTENT_EXPORT_SEED_DIR ? resolve(process.env.CONTENT_EXPORT_SEED_DIR) : undefined;
+const seedCategories = new Set((process.env.CONTENT_EXPORT_SEED_CATEGORIES ?? '').split(',').map(v => v.trim()).filter(Boolean));
 const outputPath = resolve(
   process.env.CONTENT_EXPORT_OUTPUT ?? resolve(process.cwd(), "src/data/catalog-snapshot.ts"),
 );
@@ -59,6 +64,37 @@ function stableSort(items: ProductListItem[]): ProductListItem[] {
   );
 }
 
+async function readSeedCatalog(dataDir: string): Promise<ProductListItem[]> {
+  const brands = brandSeedSchema.array().parse(parseYaml(await readFile(resolve(dataDir, 'brands.yaml'), 'utf8')));
+  const existing = new Map(CATALOG_SNAPSHOT.map(item => [item.slug, item]));
+  const items: ProductListItem[] = [];
+  if (seedCategories.size) items.push(...CATALOG_SNAPSHOT.filter(item => !seedCategories.has(item.categorySlug)));
+  for (const directory of await readdir(dataDir, { withFileTypes: true })) {
+    if (!directory.isDirectory() || ['raw', 'tmp'].includes(directory.name)) continue;
+    if (seedCategories.size && !seedCategories.has(directory.name)) continue;
+    for (const filename of await readdir(resolve(dataDir, directory.name))) {
+      if (!filename.endsWith('.yaml')) continue;
+      const seed = productSeedSchema.parse(parseYaml(await readFile(resolve(dataDir, directory.name, filename), 'utf8')));
+      const old = existing.get(seed.slug);
+      // 草稿不得经内容包回退重新出现在公开目录。
+      if (seed.status !== 'published') continue;
+      const brand = brands.find(item => item.slug === seed.brand);
+      if (!brand) throw new Error(`品牌不存在：${seed.brand}`);
+      const price = normalizePriceRange(seed.price ? { min: seed.price.min, max: seed.price.max, currency: seed.price.currency } : { min: null, max: null, currency: 'CNY' });
+      items.push(productListItemSchema.parse({
+        id: old?.id ?? seed.slug, slug: seed.slug, title: seed.title, model: seed.model, year: seed.year,
+        oneLiner: seed.one_liner ?? null, priceMin: price.min, priceMax: price.max, priceCurrency: 'CNY',
+        coverUrl: seed.images?.[0]?.url ?? null,
+        ratingOverall: old?.ratingOverall ?? null, ratingCount: old?.ratingCount ?? 0,
+        favoriteCount: old?.favoriteCount ?? 0, composite: old?.composite ?? null,
+        brand: { slug: brand.slug, name: brand.name, nameCn: brand.name_cn ?? null },
+        categorySlug: seed.category, specs: seed.specs, highlights: [],
+      }));
+    }
+  }
+  return items;
+}
+
 function render(items: ProductListItem[], source: string): string {
   const categorySlugs = [...new Set(items.map((item) => item.categorySlug))].sort();
   const meta = {
@@ -70,10 +106,11 @@ function render(items: ProductListItem[], source: string): string {
   };
 
   return `/**
- * 云端目录快照。
+ * 公开目录快照。
  *
  * 由 apps/web/scripts/export-catalog-snapshot.ts 自动生成，请勿手工编辑。
- * 快照只保存公开目录接口返回的事实字段；编辑分析、评分分布等内容继续由本地内容包维护。
+ * 事实字段来自公开 API 或校验后的 seed；seed 导出保留既有社区统计，不伪造评分。
+ * 编辑分析、评分分布等内容继续由本地内容包维护。
  */
 export interface CatalogSnapshotItem {
   id: string;
@@ -115,7 +152,11 @@ async function main(): Promise<void> {
   let total = Number.POSITIVE_INFINITY;
   let page = 1;
 
-  while (items.length < total) {
+  if (seedDir) {
+    items.push(...await readSeedCatalog(seedDir));
+    total = items.length;
+  }
+  while (!seedDir && items.length < total) {
     const result = await fetchPage(page);
     total = result.total;
     items.push(...result.items);
@@ -140,8 +181,23 @@ async function main(): Promise<void> {
   }
 
   await mkdir(dirname(outputPath), { recursive: true });
-  await writeFile(outputPath, render(sorted, apiBase), "utf8");
-  console.log(`已从 ${apiBase} 导出 ${sorted.length} 条产品到 ${outputPath}`);
+  const source = seedDir ? `repository seed YAML${seedCategories.size ? `: ${[...seedCategories].join(',')}` : ''} (community statistics retained from previous snapshot)` : apiBase;
+  await writeFile(outputPath, render(sorted, source), "utf8");
+  if (!process.env.CONTENT_EXPORT_OUTPUT) {
+    const setupSlugs = [...new Set(SNOWBOARD_SETUPS.flatMap(setup => [...setup.products]))];
+    const setupProducts = setupSlugs.map(slug => {
+      const product = sorted.find(item => item.slug === slug);
+      if (!product) throw new Error(`搭配指南缺少产品：${slug}`);
+      const text = (key: string) => typeof product.specs[key] === 'string' ? product.specs[key] as string : '';
+      return {
+        slug, title: product.title, model: product.model, year: product.year, category: product.categorySlug,
+        quote: text('officialPrice'), checkedAt: text('priceCheckedAt'), priceNote: text('priceStatus'),
+        source: text('priceSource') || (text('compatibilitySources').match(/https:\/\/[^\s；]+/) ?? [])[0] || previousSetupProducts.find(item => item.slug === slug)?.source || '',
+      };
+    });
+    await writeFile(resolve(dirname(outputPath), 'snowboard-setup-products.json'), JSON.stringify(setupProducts, null, 2) + '\n', 'utf8');
+  }
+  console.log(`已从 ${source} 导出 ${sorted.length} 条产品到 ${outputPath}`);
   console.log(`覆盖品类：${[...new Set(sorted.map((item) => item.categorySlug))].sort().join("、")}`);
 }
 

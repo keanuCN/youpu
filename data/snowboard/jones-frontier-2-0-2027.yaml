@@ -26,6 +26,22 @@ specs:
   scenes:
     - all-mountain
     - powder
+  lengthOptions: 150 / 153 / 155W / 156 / 158W / 159 / 161W / 162 / 164W / 165 / 167W
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "150", weight: 2500, effectiveEdge: 1140, waistWidth: 246, setback: 20, contactLength: 1083, noseLength: 241, tailLength: 176, noseWidth: 291, tailWidth: 286, frontFootWidth: 257, backFootWidth: 257, taper: 5, sidecutRadii: 7.2 m, stanceWidth: 500 mm（参考） / 520 mm（居中）, riderWeight: 110-160 lbs. / 49-73 kg., bootSize: US 7-9 / EU 39.5-41.5 }
+    - { size: "153", weight: 2600, effectiveEdge: 1170, waistWidth: 249, setback: 20, contactLength: 1107, noseLength: 244, tailLength: 179, noseWidth: 294, tailWidth: 289, frontFootWidth: 261, backFootWidth: 261, taper: 5, sidecutRadii: 7.4 m, stanceWidth: 520 mm（参考） / 540 mm（居中）, riderWeight: 110-160 lbs. / 49-73 kg., bootSize: US 7-9 / EU 39.5-41.5 }
+    - { size: 155W, weight: 2800, effectiveEdge: 1180, waistWidth: 263, setback: 20, contactLength: 1119, noseLength: 248, tailLength: 183, noseWidth: 308, tailWidth: 303, frontFootWidth: 275, backFootWidth: 275, taper: 5, sidecutRadii: 7.6 m, stanceWidth: 540 mm（参考） / 560 mm（居中）, riderWeight: 120-170 lbs. / 54-77 kg., bootSize: US 9.5-11.5 / EU 42.5-45.5 }
+    - { size: "156", weight: 2700, effectiveEdge: 1190, waistWidth: 252, setback: 20, contactLength: 1131, noseLength: 247, tailLength: 182, noseWidth: 298, tailWidth: 293, frontFootWidth: 264, backFootWidth: 264, taper: 5, sidecutRadii: 7.6 m, stanceWidth: 540 mm（参考） / 560 mm（居中）, riderWeight: 120-170 lbs. / 54-77 kg., bootSize: US 8-10 / EU 40.5-43.5 }
+    - { size: 158W, weight: 2900, effectiveEdge: 1210, waistWidth: 265, setback: 20, contactLength: 1145, noseLength: 250, tailLength: 185, noseWidth: 311, tailWidth: 306, frontFootWidth: 278, backFootWidth: 277, taper: 5, sidecutRadii: 7.8 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 140-190 lbs. / 64-86 kg., bootSize: US 10 / EU 43 }
+    - { size: "159", weight: 2900, effectiveEdge: 1220, waistWidth: 255, setback: 20, contactLength: 1155, noseLength: 250, tailLength: 185, noseWidth: 302, tailWidth: 297, frontFootWidth: 268, backFootWidth: 268, taper: 5, sidecutRadii: 7.8 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 140-190 lbs. / 64-86 kg., bootSize: US 9-11 / EU 41.5-44.5 }
+    - { size: 161W, weight: 3000, effectiveEdge: 1230, waistWidth: 267, setback: 20, contactLength: 1171, noseLength: 252, tailLength: 187, noseWidth: 314, tailWidth: 309, frontFootWidth: 279, backFootWidth: 279, taper: 5, sidecutRadii: 8.0 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 150-200 lbs. / 67-91 kg., bootSize: US 11 / EU 44.5 }
+    - { size: "162", weight: 3000, effectiveEdge: 1240, waistWidth: 258, setback: 20, contactLength: 1179, noseLength: 253, tailLength: 188, noseWidth: 305, tailWidth: 300, frontFootWidth: 270, backFootWidth: 270, taper: 5, sidecutRadii: 8.0 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 160-210 lbs. / 73-95 kg., bootSize: US 9-11 / EU 41.5-44.5 }
+    - { size: 164W, weight: 3100, effectiveEdge: 1260, waistWidth: 269, setback: 20, contactLength: 1197, noseLength: 254, tailLength: 189, noseWidth: 317, tailWidth: 312, frontFootWidth: 281, backFootWidth: 281, taper: 5, sidecutRadii: 8.2 m, stanceWidth: 600 mm（参考） / 580 mm（居中）, riderWeight: 170-220 lbs.+ / 77-100 kg.+, bootSize: US 11 / EU 44.5 }
+    - { size: "165", weight: 3200, effectiveEdge: 1260, waistWidth: 261, setback: 20, contactLength: 1203, noseLength: 256, tailLength: 191, noseWidth: 309, tailWidth: 304, frontFootWidth: 273, backFootWidth: 273, taper: 5, sidecutRadii: 8.2 m, stanceWidth: 600 mm（参考） / 580 mm（居中）, riderWeight: 170-220 lbs.+ / 77-100 kg.+, bootSize: US 9-11 / EU 41.5-44.5 }
+    - { size: 167W, weight: 3300, effectiveEdge: 1280, waistWidth: 271, setback: 20, contactLength: 1223, noseLength: 256, tailLength: 191, noseWidth: 319, tailWidth: 314, frontFootWidth: 283, backFootWidth: 283, taper: 5, sidecutRadii: 8.4 m, stanceWidth: 600 mm（参考） / 580 mm（居中）, riderWeight: 170-220 lbs.+ / 77-100 kg.+, bootSize: US 11 / EU 44.5 }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 7.7
   response: 7.5
@@ -40,6 +56,6 @@ images:
     source: Jones 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://www.jonessnowboards.com/products/mens-frontier-20-snowboard
 status: published

@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-13",
+  "products": 39,
+  "productsWithLengthTable": 13,
+  "lengthRows": 58,
+  "changed": [
+    {
+      "file": "data/skis/atomic-bent-100-2026.yaml",
+      "rows": 5,
+      "status": "draft"
+    },
+    {
+      "file": "data/skis/atomic-bent-chetler-120-2026.yaml",
+      "rows": 3,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/atomic-redster-q7-2026.yaml",
+      "rows": 0,
+      "status": "draft"
+    },
+    {
+      "file": "data/skis/atomic-redster-q7-2027.yaml",
+      "rows": 5,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/atomic-redster-q7-8-2026.yaml",
+      "rows": 0,
+      "status": "draft"
+    },
+    {
+      "file": "data/skis/atomic-redster-q7-8-2027.yaml",
+      "rows": 4,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/atomic-redster-q9-2026.yaml",
+      "rows": 0,
+      "status": "draft"
+    },
+    {
+      "file": "data/skis/atomic-redster-q9-2027.yaml",
+      "rows": 5,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/atomic-redster-q9-8-2026.yaml",
+      "rows": 0,
+      "status": "draft"
+    },
+    {
+      "file": "data/skis/atomic-redster-q9-8-2027.yaml",
+      "rows": 4,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/atomic-redster-s9-2026.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/head-e-sl-pro-2026.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/head-e-slr-2026.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/head-easy-joy-r-2026.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/head-shape-e-v5-2026.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/head-shape-v2-2026.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/head-shape-v2-r-2026.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/head-supershape-e-magnum-2026.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/nordica-enforcer-104-2027.yaml",
+      "rows": 5,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/nordica-enforcer-89-2027.yaml",
+      "rows": 4,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/nordica-enforcer-94-2027.yaml",
+      "rows": 4,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/nordica-enforcer-99-2027.yaml",
+      "rows": 5,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/nordica-santa-ana-102-2027.yaml",
+      "rows": 5,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/nordica-unleashed-98-2027.yaml",
+      "rows": 0,
+      "status": "draft"
+    },
+    {
+      "file": "data/skis/rossignol-experience-76-2026.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/rossignol-forza-40-ca-xpress-2027.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/rossignol-forza-50-cam-2026.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/rossignol-forza-60-ti-2027.yaml",
+      "rows": 4,
+      "status": "draft"
+    },
+    {
+      "file": "data/skis/rossignol-hero-elite-lt-ti-2027.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/rossignol-hero-master-lt-r22-2027.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/rossignol-soul-102-2027.yaml",
+      "rows": 5,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/salomon-mtn-86-carbon-2027.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/salomon-qst-100-2027.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/salomon-qst-106-2027.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/salomon-qst-92-2027.yaml",
+      "rows": 0,
+      "status": "draft"
+    },
+    {
+      "file": "data/skis/salomon-qst-94-2027.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/salomon-qst-98-2027.yaml",
+      "rows": 0,
+      "status": "draft"
+    },
+    {
+      "file": "data/skis/salomon-qst-blank-2027.yaml",
+      "rows": 0,
+      "status": "published"
+    },
+    {
+      "file": "data/skis/salomon-stance-84-2027.yaml",
+      "rows": 0,
+      "status": "published"
+    }
+  ]
+}

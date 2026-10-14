@@ -1,0 +1,35 @@
+{
+  "seedFile": "data/skis/head-e-sl-pro-2026.yaml",
+  "retrievedAt": "2026-10-13",
+  "source": "https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set",
+  "partial": true,
+  "rows": [
+    {
+      "size": "150 cm",
+      "noseWidth": 122,
+      "waistWidth": 68,
+      "tailWidth": 107,
+      "turnRadius": 10.5
+    },
+    {
+      "size": "160 cm",
+      "turnRadius": 12,
+      "notes": "此长度仅取得官方参考半径；板头/板腰/板尾宽未取得，不沿用默认长度。"
+    }
+  ],
+  "verifiedFields": {
+    "skierLevel": "专家",
+    "profile": "Rebel Camber：Camber 100%（150 cm 页面展示）",
+    "bindingSetup": "可选多种 Freeflex / Protector 固定器，也可选择无固定器；按具体 SKU 核对",
+    "seasonEvidence": "官方商品号 313236.SET 已核对，页面未直接标注销售雪季；2025/26 待目录确认。",
+    "bindingCompatibility": "页面同时列出 GW 和非 GW 的不同 Freeflex 固定器，不将整个 e-SL Pro 套装系列视为通用 GripWalk 兼容；按实际所选固定器说明核对靴底与板层。"
+  },
+  "limitations": "仅默认长度几何和参考长度半径，未获取其他长度；重量口径未确认",
+  "weightRaw": {
+    "label": "Weight",
+    "valueG": 2225,
+    "referenceLengthCm": 150,
+    "mapped": false,
+    "reason": "单只/一对或含固定器口径尚未确认"
+  }
+}

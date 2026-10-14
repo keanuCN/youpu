@@ -10,10 +10,17 @@ specs:
     - freestyle
   entrySystem: strap
   mountingSystem: Universal Mini Disc；兼容 2x4 与 Channel
-  bindingSizeGuide: Nitro 女款官方尺码：S US 女 4–7.5 / MP 21–24.5 / EU 33.5–38；S/M US 女
-    6–11 / MP 23–28 / EU 36–43。区间有重叠，试穿确认。
+  bindingSizeGuide: Nitro 女款官方尺码：S US 女 4–7.5 / MP 21–24.5 / EU 33.5–38；S/M US 女 6–11 / MP 23–28 / EU 36–43。区间有重叠，试穿确认。
   brandComfortScore: 9
   brandResponseScore: 7
+  bootCompatibility: 常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://www.nitrosnowboards.com/collections/bindings-26-27/products/fate-womens-bindings-1
+  priceCheckedAt: 2026-10-12
+  officialPrice: EUR 299.9
+  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
+  priceSource: https://www.nitrosnowboards.com/products/fate-womens-bindings-1
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21011-103_Fate-Womens-Bindings_Nitro-x-Hailey-Langland_Product-1.jpg?v=1779339397&width=1920
     kind: face

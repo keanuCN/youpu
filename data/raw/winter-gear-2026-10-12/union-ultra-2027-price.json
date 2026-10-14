@@ -1,0 +1,88 @@
+{
+  "slug": "union-ultra-2027",
+  "price": "USD 329.95",
+  "source": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:17.646Z",
+  "productName": "Union Ultra",
+  "productType": "Product",
+  "productUrl": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027",
+  "offers": [
+    {
+      "@type": "Offer",
+      "sku": "11020201-BLU-S",
+      "availability": "http://schema.org/InStock",
+      "price": 329.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027?variant=48907742150911"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020201-BLU-M",
+      "availability": "http://schema.org/InStock",
+      "price": 329.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027?variant=48907742183679"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020201-BLU-L",
+      "availability": "http://schema.org/InStock",
+      "price": 329.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027?variant=48907742216447"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020201-BLK-S",
+      "availability": "http://schema.org/InStock",
+      "price": 329.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027?variant=48907741954303"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020201-BLK-M",
+      "availability": "http://schema.org/InStock",
+      "price": 329.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027?variant=48907741987071"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020201-BLK-L",
+      "availability": "http://schema.org/InStock",
+      "price": 329.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027?variant=48907742019839"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020201-WHT-S",
+      "availability": "http://schema.org/InStock",
+      "price": 329.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027?variant=48907742052607"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020201-WHT-M",
+      "availability": "http://schema.org/InStock",
+      "price": 329.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027?variant=48907742085375"
+    },
+    {
+      "@type": "Offer",
+      "sku": "11020201-WHT-L",
+      "availability": "http://schema.org/InStock",
+      "price": 329.95,
+      "priceCurrency": "USD",
+      "url": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027?variant=48907742118143"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "ef0147489f544ff22e25c6ba92e559919576e1076dcf2be0badd42253bcc2427",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

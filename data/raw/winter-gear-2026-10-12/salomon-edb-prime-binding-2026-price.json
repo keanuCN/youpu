@@ -1,0 +1,57 @@
+{
+  "slug": "salomon-edb-prime-binding-2026",
+  "price": "USD 279.95",
+  "source": "https://www.salomon.com/en-us/product/edb-prime-li8710",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:43:42.270Z",
+  "productName": "EDB PRIME",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "EDB PRIME Black",
+      "image": "https://cdn.dam.salomon.com/06801898-0c9a-4476-b079-b31b00b424be/L47939700/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black",
+      "size": "S",
+      "sku": "L47939700054",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/edb-prime-li8710/L47939700?sizeId=L47939700054",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "EDB PRIME Black",
+      "image": "https://cdn.dam.salomon.com/06801898-0c9a-4476-b079-b31b00b424be/L47939700/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black",
+      "size": "M",
+      "sku": "L47939700056",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/edb-prime-li8710/L47939700?sizeId=L47939700056",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "EDB PRIME Black",
+      "image": "https://cdn.dam.salomon.com/06801898-0c9a-4476-b079-b31b00b424be/L47939700/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Black",
+      "size": "L",
+      "sku": "L47939700058",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/edb-prime-li8710/L47939700?sizeId=L47939700058",
+        "priceCurrency": "USD",
+        "price": "279.95"
+      }
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "c097adf69e295ab71275f3b59bd8e401a64d96587e48dbfd8fecbc54ad918406",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -13,7 +13,6 @@ specs:
   length: 159
   effectiveEdge: 1225
   waistWidth: 258
-  sidecut: 7
   stanceSetback: 20.3
   profile: Alpine V3 Directional
   profileFamily: hybrid
@@ -25,6 +24,16 @@ specs:
   scenes:
     - carving
     - all-mountain
+  lengthOptions: 153 / 156 / 159 / 162
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "153", effectiveEdge: 1179, waistWidth: 254, noseWidth: 314, tailWidth: 299, sidecutRadii: 6.6/6.25 m, stanceWidth: 533 mm（参考）, riderWeight: 120-180 lb / 54-81 kg, bootSize: M 6–9.5 }
+    - { size: "156", effectiveEdge: 1202, waistWidth: 256, noseWidth: 317, tailWidth: 302, sidecutRadii: 6.8/6.4 m, stanceWidth: 559 mm（参考）, riderWeight: 130-190 lb / 59-86 kg, bootSize: M 8–10 }
+    - { size: "159", effectiveEdge: 1225, waistWidth: 258, noseWidth: 320, tailWidth: 305, sidecutRadii: 7.0/6.5 m, stanceWidth: 559 mm（参考）, riderWeight: 145-205 lb / 65-93 kg, bootSize: M 8–10+ }
+    - { size: "162", effectiveEdge: 1248, waistWidth: 260, noseWidth: 323, tailWidth: 308, sidecutRadii: 7.1/6.6 m, stanceWidth: 584 mm（参考）, riderWeight: 155-215 lb / 70-97 kg, bootSize: M 10+ }
+  sidecutRadii: 7.0/6.5 m
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 8.7
   response: 8.8
@@ -39,6 +48,6 @@ images:
     source: CAPiTA 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://capitasnowboarding.com/products/capita-sidewinder-mens-snowboard-2027
 status: published

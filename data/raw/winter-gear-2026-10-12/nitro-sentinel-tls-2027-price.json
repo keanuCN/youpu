@@ -1,0 +1,736 @@
+{
+  "slug": "nitro-sentinel-tls-2027",
+  "price": "EUR 279.9",
+  "source": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:47:23.408Z",
+  "productName": "Nitro Sentinel TLS Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1",
+  "hasVariant": [
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711352139#variant",
+      "@type": "Product",
+      "gtin": "7630349345314",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 250",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711352139#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711352139"
+      },
+      "sku": "13BT11015-102-250"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711384907#variant",
+      "@type": "Product",
+      "gtin": "7630349345321",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 255",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711384907#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711384907"
+      },
+      "sku": "13BT11015-102-255"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711417675#variant",
+      "@type": "Product",
+      "gtin": "7630349345338",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 260",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711417675#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711417675"
+      },
+      "sku": "13BT11015-102-260"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711450443#variant",
+      "@type": "Product",
+      "gtin": "7630349345345",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 265",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711450443#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711450443"
+      },
+      "sku": "13BT11015-102-265"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711483211#variant",
+      "@type": "Product",
+      "gtin": "7630349345352",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 270",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711483211#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711483211"
+      },
+      "sku": "13BT11015-102-270"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711515979#variant",
+      "@type": "Product",
+      "gtin": "7630349345369",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 275",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711515979#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711515979"
+      },
+      "sku": "13BT11015-102-275"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711548747#variant",
+      "@type": "Product",
+      "gtin": "7630349345376",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 280",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711548747#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711548747"
+      },
+      "sku": "13BT11015-102-280"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711581515#variant",
+      "@type": "Product",
+      "gtin": "7630349345383",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 285",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711581515#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711581515"
+      },
+      "sku": "13BT11015-102-285"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711614283#variant",
+      "@type": "Product",
+      "gtin": "7630349345390",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 290",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711614283#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711614283"
+      },
+      "sku": "13BT11015-102-290"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711647051#variant",
+      "@type": "Product",
+      "gtin": "7630349345406",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 295",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711647051#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711647051"
+      },
+      "sku": "13BT11015-102-295"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711679819#variant",
+      "@type": "Product",
+      "gtin": "7630349345413",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 300",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711679819#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711679819"
+      },
+      "sku": "13BT11015-102-300"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711712587#variant",
+      "@type": "Product",
+      "gtin": "7630349345420",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 305",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711712587#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711712587"
+      },
+      "sku": "13BT11015-102-305"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711745355#variant",
+      "@type": "Product",
+      "gtin": "7630349345437",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 310",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711745355#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711745355"
+      },
+      "sku": "13BT11015-102-310"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711778123#variant",
+      "@type": "Product",
+      "gtin": "7630349345444",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 315",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711778123#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711778123"
+      },
+      "sku": "13BT11015-102-315"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711810891#variant",
+      "@type": "Product",
+      "gtin": "7630349345451",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Sand / 320",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711810891#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711810891"
+      },
+      "sku": "13BT11015-102-320"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277710860619#variant",
+      "@type": "Product",
+      "gtin": "7630349345161",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 250",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277710860619#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277710860619"
+      },
+      "sku": "13BT11015-101-250"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277710893387#variant",
+      "@type": "Product",
+      "gtin": "7630349345178",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 255",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277710893387#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277710893387"
+      },
+      "sku": "13BT11015-101-255"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277710926155#variant",
+      "@type": "Product",
+      "gtin": "7630349345185",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 260",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277710926155#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277710926155"
+      },
+      "sku": "13BT11015-101-260"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277710958923#variant",
+      "@type": "Product",
+      "gtin": "7630349345192",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 265",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277710958923#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277710958923"
+      },
+      "sku": "13BT11015-101-265"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277710991691#variant",
+      "@type": "Product",
+      "gtin": "7630349345208",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 270",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277710991691#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277710991691"
+      },
+      "sku": "13BT11015-101-270"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711024459#variant",
+      "@type": "Product",
+      "gtin": "7630349345215",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 275",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711024459#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711024459"
+      },
+      "sku": "13BT11015-101-275"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711057227#variant",
+      "@type": "Product",
+      "gtin": "7630349345222",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 280",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711057227#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711057227"
+      },
+      "sku": "13BT11015-101-280"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711089995#variant",
+      "@type": "Product",
+      "gtin": "7630349345239",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 285",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711089995#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711089995"
+      },
+      "sku": "13BT11015-101-285"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711122763#variant",
+      "@type": "Product",
+      "gtin": "7630349345246",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 290",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711122763#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711122763"
+      },
+      "sku": "13BT11015-101-290"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711155531#variant",
+      "@type": "Product",
+      "gtin": "7630349345253",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 295",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711155531#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711155531"
+      },
+      "sku": "13BT11015-101-295"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711188299#variant",
+      "@type": "Product",
+      "gtin": "7630349345260",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 300",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711188299#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711188299"
+      },
+      "sku": "13BT11015-101-300"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711221067#variant",
+      "@type": "Product",
+      "gtin": "7630349345277",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 305",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711221067#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711221067"
+      },
+      "sku": "13BT11015-101-305"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711253835#variant",
+      "@type": "Product",
+      "gtin": "7630349345284",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 310",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711253835#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711253835"
+      },
+      "sku": "13BT11015-101-310"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711286603#variant",
+      "@type": "Product",
+      "gtin": "7630349345291",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 315",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711286603#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711286603"
+      },
+      "sku": "13BT11015-101-315"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711319371#variant",
+      "@type": "Product",
+      "gtin": "7630349345307",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Black / 320",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711319371#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711319371"
+      },
+      "sku": "13BT11015-101-320"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711843659#variant",
+      "@type": "Product",
+      "gtin": "7630349345468",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 250",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711843659#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711843659"
+      },
+      "sku": "13BT11015-103-250"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711876427#variant",
+      "@type": "Product",
+      "gtin": "7630349345475",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 255",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711876427#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711876427"
+      },
+      "sku": "13BT11015-103-255"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711909195#variant",
+      "@type": "Product",
+      "gtin": "7630349345482",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 260",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711909195#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711909195"
+      },
+      "sku": "13BT11015-103-260"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711941963#variant",
+      "@type": "Product",
+      "gtin": "7630349345499",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 265",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711941963#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711941963"
+      },
+      "sku": "13BT11015-103-265"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277711974731#variant",
+      "@type": "Product",
+      "gtin": "7630349345505",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 270",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277711974731#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277711974731"
+      },
+      "sku": "13BT11015-103-270"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277712007499#variant",
+      "@type": "Product",
+      "gtin": "7630349345512",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 275",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277712007499#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277712007499"
+      },
+      "sku": "13BT11015-103-275"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277712040267#variant",
+      "@type": "Product",
+      "gtin": "7630349345529",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 280",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277712040267#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277712040267"
+      },
+      "sku": "13BT11015-103-280"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277712073035#variant",
+      "@type": "Product",
+      "gtin": "7630349345536",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 285",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277712073035#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277712073035"
+      },
+      "sku": "13BT11015-103-285"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277712105803#variant",
+      "@type": "Product",
+      "gtin": "7630349345543",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 290",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277712105803#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277712105803"
+      },
+      "sku": "13BT11015-103-290"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277712138571#variant",
+      "@type": "Product",
+      "gtin": "7630349345550",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 295",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277712138571#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277712138571"
+      },
+      "sku": "13BT11015-103-295"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277712171339#variant",
+      "@type": "Product",
+      "gtin": "7630349345567",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 300",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277712171339#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277712171339"
+      },
+      "sku": "13BT11015-103-300"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277712204107#variant",
+      "@type": "Product",
+      "gtin": "7630349345574",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 305",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277712204107#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277712204107"
+      },
+      "sku": "13BT11015-103-305"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277712236875#variant",
+      "@type": "Product",
+      "gtin": "7630349345581",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 310",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277712236875#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277712236875"
+      },
+      "sku": "13BT11015-103-310"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277712269643#variant",
+      "@type": "Product",
+      "gtin": "7630349345598",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 315",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277712269643#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277712269643"
+      },
+      "sku": "13BT11015-103-315"
+    },
+    {
+      "@id": "/products/sentinel-tls-boots-1?variant=57277712302411#variant",
+      "@type": "Product",
+      "gtin": "7630349345604",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-103_Sentinel-TLS-Boots_Brown_Product-1.jpg?v=1779339466&width=1920",
+      "name": "Nitro Sentinel TLS Boots - Brown / 320",
+      "offers": {
+        "@id": "/products/sentinel-tls-boots-1?variant=57277712302411#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "279.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1?variant=57277712302411"
+      },
+      "sku": "13BT11015-103-320"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "742afce0e1019014424554e794fe1cc721f7e738a8a432229bd66193318ab4b1",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -6,6 +6,9 @@ import {
 } from '@nestjs/common';
 import {
   accountPatchSchema,
+  decisionComposite,
+  hasDecisionPrice,
+  snowboardFit,
   notificationReadSchema,
   ratingInputSchema,
   ratingListQuerySchema,
@@ -464,12 +467,15 @@ export class CommunityService {
 
   async recommend(accountId: string | undefined, input: RecommendationInput) {
     const body = recommendationInputSchema.parse(input);
+    if (body.categorySlug !== 'snowboard') throw new BadRequestException('该品类推荐规则尚未开放');
     const products = (await this.prisma.product.findMany({
       where: { status: 'published', category: { slug: body.categorySlug } },
       orderBy: [{ ratingCount: 'desc' }, { updatedAt: 'desc' }],
       include: { brand: { select: { name: true, nameCn: true } } },
     })) as ProductRow[];
-    const candidates = products.map((product) => this.scoreProduct(product, body)).sort((a, b) => b.raw - a.raw);
+    const candidates = products.filter((product) => !snowboardFit(asRecord(product.specs).sizeSpecs, body.answers).excluded)
+      .map((product) => this.scoreProduct(product, body)).sort((a, b) =>
+        ((body.answers.weightKg || body.answers.bootEu) ? Number(b.fitVerified) - Number(a.fitVerified) : 0) || b.raw - a.raw || a.slug.localeCompare(b.slug));
     const top = candidates.slice(0, 3);
     const maxRaw = top[0]?.raw ?? 1;
     const minRaw = Math.min(0, top[top.length - 1]?.raw ?? 0);
@@ -492,13 +498,13 @@ export class CommunityService {
     return { categorySlug: body.categorySlug, picks };
   }
 
-  private scoreProduct(product: ProductRow, input: RecommendationInput): RecommendationCandidate & { raw: number } {
+  private scoreProduct(product: ProductRow, input: RecommendationInput): RecommendationCandidate & { raw: number; fitVerified: boolean } {
     const answers = input.answers;
     const specs = asRecord(product.specs);
     const scenes = stringArray(specs.scenes);
     const price = priceOf(product);
     const flex = numberValue(specs.flex);
-    const length = numberValue(specs.length) ?? 157;
+    const fit = snowboardFit(specs.sizeSpecs, answers);
     const hardcore = hardcoreOf(specs, asRecord(product.editorialScores));
     let raw = 0;
     const reasons: string[] = [];
@@ -506,24 +512,20 @@ export class CommunityService {
       const hits = answers.scene.filter((scene) => scenes.includes(scene));
       if (hits.length) {
         raw += 30 * (hits.length / answers.scene.length) + (hits.length === answers.scene.length ? 8 : 0);
-        reasons.push(`场景命中「${hits.join('、')}」`);
+        const labels: Record<string, string> = { 'all-mountain': '全山地', freestyle: '自由式', powder: '野雪浮雪', carving: '刻滑' };
+        reasons.push(`场景命中「${hits.map((scene) => labels[scene] ?? scene).join('、')}」`);
       } else raw -= 18;
     }
     const budget = budgetRange(answers.budget);
-    if (budget && price !== null) {
+    if (budget && answers.budget !== 'any' && price !== null && hasDecisionPrice(specs)) {
       if (price >= budget[0] && price <= budget[1]) {
         raw += 20;
         reasons.push(`价格 ${price} 元落在你的预算内`);
       } else if (price > budget[1]) raw -= 25;
       else raw += 6;
     }
-    const lengthRange = weightLength(answers.weight);
-    if (lengthRange) {
-      if (length >= lengthRange[0] && length <= lengthRange[1]) {
-        raw += 12;
-        reasons.push(`${length}cm 板长适配你的体重区间`);
-      } else raw -= 8;
-    }
+    raw += fit.points;
+    reasons.push(fit.note);
     if (answers.flex && answers.flex !== 'unsure' && flex !== undefined) {
       const matched = answers.flex === 'soft' ? flex < 4 : answers.flex === 'mid' ? flex >= 4 && flex < 8 : flex >= 7;
       if (matched) {
@@ -538,7 +540,7 @@ export class CommunityService {
         reasons.push(answers.level === 'first' ? '进阶指数低，容错高，适合第一年' : '难度落在你的水平舒适区');
       } else if (answers.level === 'first' && hardcore > 65) raw -= 22;
     }
-    if (answers.priority) {
+    if (answers.priority && (answers.priority !== 'value' || (price !== null && hasDecisionPrice(specs)))) {
       const scores = asRecord(product.editorialScores);
       const value = numberValue(scores[answers.priority === 'value' ? 'value' : answers.priority]);
       if (value !== undefined) {
@@ -546,8 +548,8 @@ export class CommunityService {
         if (value >= 8.5) reasons.push(`${answers.priority} ${value}/10，是它的强项`);
       }
     }
-    const composite = compositeOf(product.editorialScores);
-    if (composite !== null) raw += (composite - 70) * 0.4;
+    const composite = decisionComposite(asRecord(product.editorialScores), specs);
+    if (composite !== undefined) raw += (composite - 70) * 0.4;
     return {
       productId: product.id,
       slug: product.slug,
@@ -556,6 +558,7 @@ export class CommunityService {
       model: product.model,
       year: product.year,
       raw,
+      fitVerified: fit.sizes.length > 0,
       reasons,
       match: 0,
       fallback: raw < 0,
@@ -633,14 +636,6 @@ function budgetRange(value: string | undefined): [number, number] | null {
   if (value === '4000to6000') return [4000, 6000];
   if (value === '6000to8000') return [6000, 8000];
   if (value === 'any') return [0, 99999];
-  return null;
-}
-
-function weightLength(value: string | undefined): [number, number] | null {
-  if (value === 'lt60') return [148, 155];
-  if (value === '60to75') return [153, 159];
-  if (value === '75to90') return [156, 162];
-  if (value === 'gt90') return [159, 168];
   return null;
 }
 

@@ -1,0 +1,144 @@
+{
+  "slug": "nitro-team-binding-2027",
+  "price": "EUR 319.9",
+  "source": "https://www.nitrosnowboards.com/products/team-bindings-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:28.959Z",
+  "productName": "Nitro Team Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/team-bindings-1",
+  "hasVariant": [
+    {
+      "@id": "/products/team-bindings-1?variant=57277688840523#variant",
+      "@type": "Product",
+      "gtin": "7630349334974",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11005-104_Team-Bindings_Vivid-Orange_Product-1.jpg?v=1779339368&width=1920",
+      "name": "Nitro Team Bindings - Vivid Orange / M",
+      "offers": {
+        "@id": "/products/team-bindings-1?variant=57277688840523#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "319.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-bindings-1?variant=57277688840523"
+      },
+      "sku": "12BG11005-104-M"
+    },
+    {
+      "@id": "/products/team-bindings-1?variant=57277688807755#variant",
+      "@type": "Product",
+      "gtin": "7630349334981",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11005-104_Team-Bindings_Vivid-Orange_Product-1.jpg?v=1779339368&width=1920",
+      "name": "Nitro Team Bindings - Vivid Orange / L",
+      "offers": {
+        "@id": "/products/team-bindings-1?variant=57277688807755#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "319.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-bindings-1?variant=57277688807755"
+      },
+      "sku": "12BG11005-104-L"
+    },
+    {
+      "@id": "/products/team-bindings-1?variant=57277688774987#variant",
+      "@type": "Product",
+      "gtin": "7630349334950",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11005-103_Team-Bindings_Deep-Teal_Product-1.jpg?v=1779339368&width=1920",
+      "name": "Nitro Team Bindings - Deep Teal / M",
+      "offers": {
+        "@id": "/products/team-bindings-1?variant=57277688774987#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "319.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-bindings-1?variant=57277688774987"
+      },
+      "sku": "12BG11005-103-M"
+    },
+    {
+      "@id": "/products/team-bindings-1?variant=57277688742219#variant",
+      "@type": "Product",
+      "gtin": "7630349334967",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11005-103_Team-Bindings_Deep-Teal_Product-1.jpg?v=1779339368&width=1920",
+      "name": "Nitro Team Bindings - Deep Teal / L",
+      "offers": {
+        "@id": "/products/team-bindings-1?variant=57277688742219#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "319.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-bindings-1?variant=57277688742219"
+      },
+      "sku": "12BG11005-103-L"
+    },
+    {
+      "@id": "/products/team-bindings-1?variant=57277688643915#variant",
+      "@type": "Product",
+      "gtin": "7630349334912",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11005-101_Team-Bindings_Ultra-Black_Product-1.jpg?v=1779339368&width=1920",
+      "name": "Nitro Team Bindings - Ultra Black / M",
+      "offers": {
+        "@id": "/products/team-bindings-1?variant=57277688643915#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "319.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-bindings-1?variant=57277688643915"
+      },
+      "sku": "12BG11005-101-M"
+    },
+    {
+      "@id": "/products/team-bindings-1?variant=57277688611147#variant",
+      "@type": "Product",
+      "gtin": "7630349334929",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11005-101_Team-Bindings_Ultra-Black_Product-1.jpg?v=1779339368&width=1920",
+      "name": "Nitro Team Bindings - Ultra Black / L",
+      "offers": {
+        "@id": "/products/team-bindings-1?variant=57277688611147#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "319.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-bindings-1?variant=57277688611147"
+      },
+      "sku": "12BG11005-101-L"
+    },
+    {
+      "@id": "/products/team-bindings-1?variant=57277688709451#variant",
+      "@type": "Product",
+      "gtin": "7630349334936",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11005-102_Team-Bindings_White_Product-1.jpg?v=1779339367&width=1920",
+      "name": "Nitro Team Bindings - White / M",
+      "offers": {
+        "@id": "/products/team-bindings-1?variant=57277688709451#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "319.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-bindings-1?variant=57277688709451"
+      },
+      "sku": "12BG11005-102-M"
+    },
+    {
+      "@id": "/products/team-bindings-1?variant=57277688676683#variant",
+      "@type": "Product",
+      "gtin": "7630349334943",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11005-102_Team-Bindings_White_Product-1.jpg?v=1779339367&width=1920",
+      "name": "Nitro Team Bindings - White / L",
+      "offers": {
+        "@id": "/products/team-bindings-1?variant=57277688676683#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "319.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-bindings-1?variant=57277688676683"
+      },
+      "sku": "12BG11005-102-L"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "637c9f3a76456f8b5fa887412470228ab7ac8f1636a4f726589e7c43609adcb5",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "slug": "nitro-one-binding-2027",
+  "price": "EUR 299.9",
+  "source": "https://www.nitrosnowboards.com/products/one-bindings-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:09.636Z",
+  "productName": "Nitro One Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/one-bindings-1",
+  "hasVariant": [
+    {
+      "@id": "/products/one-bindings-1?variant=57277689463115#variant",
+      "@type": "Product",
+      "gtin": "7630349335018",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11006-102_One-Bindings_Nitro-x-Motorhead_Product-1.jpg?v=1779339370&width=1920",
+      "name": "Nitro One Bindings - Nitro x Motorhead / M",
+      "offers": {
+        "@id": "/products/one-bindings-1?variant=57277689463115#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "299.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/one-bindings-1?variant=57277689463115"
+      },
+      "sku": "12BG11006-102-M"
+    },
+    {
+      "@id": "/products/one-bindings-1?variant=57277689430347#variant",
+      "@type": "Product",
+      "gtin": "7630349335025",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11006-102_One-Bindings_Nitro-x-Motorhead_Product-1.jpg?v=1779339370&width=1920",
+      "name": "Nitro One Bindings - Nitro x Motorhead / L",
+      "offers": {
+        "@id": "/products/one-bindings-1?variant=57277689430347#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "299.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/one-bindings-1?variant=57277689430347"
+      },
+      "sku": "12BG11006-102-L"
+    },
+    {
+      "@id": "/products/one-bindings-1?variant=57277689397579#variant",
+      "@type": "Product",
+      "gtin": "7630349334998",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11006-101_One-Bindings_Ultra-Black_Product-1.jpg?v=1779339369&width=1920",
+      "name": "Nitro One Bindings - Ultra Black / M",
+      "offers": {
+        "@id": "/products/one-bindings-1?variant=57277689397579#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "299.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/one-bindings-1?variant=57277689397579"
+      },
+      "sku": "12BG11006-101-M"
+    },
+    {
+      "@id": "/products/one-bindings-1?variant=57277689364811#variant",
+      "@type": "Product",
+      "gtin": "7630349335001",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11006-101_One-Bindings_Ultra-Black_Product-1.jpg?v=1779339369&width=1920",
+      "name": "Nitro One Bindings - Ultra Black / L",
+      "offers": {
+        "@id": "/products/one-bindings-1?variant=57277689364811#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "299.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/one-bindings-1?variant=57277689364811"
+      },
+      "sku": "12BG11006-101-L"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "93e3f9cdaaacfc16da4f73c7bbe3e4cb57437d3b06324bbee9a709191ba96e38",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "capturedAt": "2026-10-12T06:44:22.532Z",
+  "target": {
+    "slug": "burton-step-on-genesis-re-flex-2027",
+    "category": "snowboard-binding",
+    "brand": "burton",
+    "model": "Step On Genesis Re:Flex",
+    "year": 2027,
+    "url": "https://www.burton.com/en-us/products/mens-burton-step-on-genesis-re-flex-snowboard-bindings-229601",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.burton.com/en-us/products/mens-burton-step-on-genesis-re-flex-snowboard-bindings-229601",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.burton.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:11.076Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Men's Burton Step On® Genesis Bindings 2027",
+    "canonicalUrl": "https://www.burton.com/en-us/products/mens-burton-step-on-genesis-re-flex-snowboard-bindings-229601",
+    "tables": [
+      {
+        "headers": [
+          "Binding Size",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "rows": [
+          [
+            "Men's Boot Size",
+            "6-8",
+            "8.5-10.5",
+            "11-13",
+            "14-15"
+          ],
+          [
+            "Euro Boot Size",
+            "38-41",
+            "41.5-43.5",
+            "44-46",
+            "47-48"
+          ],
+          [
+            "UK Boot Size",
+            "5-7",
+            "7.5-9.5",
+            "10-12",
+            "13-14"
+          ],
+          [
+            "Mondo Boot Size",
+            "24-26",
+            "26.5-28.5",
+            "29-31",
+            "32-33"
+          ],
+          [
+            "CN (2.5)",
+            "240-260",
+            "265-285",
+            "290-310",
+            "320-330"
+          ],
+          [
+            "CN (1.5)",
+            "240-260",
+            "265-285",
+            "290-310",
+            "320-330"
+          ],
+          [
+            "CN (2)",
+            "*",
+            "*",
+            "*",
+            "*"
+          ]
+        ]
+      }
+    ]
+  },
+  "review": {
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "6-8",
+        "eu": "38-41",
+        "uk": "5-7",
+        "mondo": "24-26"
+      },
+      {
+        "size": "M",
+        "usMen": "8.5-10.5",
+        "eu": "41.5-43.5",
+        "uk": "7.5-9.5",
+        "mondo": "26.5-28.5"
+      },
+      {
+        "size": "L",
+        "usMen": "11-13",
+        "eu": "44-46",
+        "uk": "10-12",
+        "mondo": "29-31"
+      },
+      {
+        "size": "XL",
+        "usMen": "14-15",
+        "eu": "47-48",
+        "uk": "13-14",
+        "mondo": "32-33"
+      }
+    ],
+    "sources": "https://www.burton.com/en-us/products/mens-burton-step-on-genesis-re-flex-snowboard-bindings-229601；https://www.burton.com/en-us/pages/size-charts",
+    "good": true
+  },
+  "sizeChart": [
+    {
+      "size": "S",
+      "usMen": "6-8",
+      "eu": "38-41",
+      "uk": "5-7",
+      "mondo": "24-26"
+    },
+    {
+      "size": "M",
+      "usMen": "8.5-10.5",
+      "eu": "41.5-43.5",
+      "uk": "7.5-9.5",
+      "mondo": "26.5-28.5"
+    },
+    {
+      "size": "L",
+      "usMen": "11-13",
+      "eu": "44-46",
+      "uk": "10-12",
+      "mondo": "29-31"
+    },
+    {
+      "size": "XL",
+      "usMen": "14-15",
+      "eu": "47-48",
+      "uk": "13-14",
+      "mondo": "32-33"
+    }
+  ]
+}

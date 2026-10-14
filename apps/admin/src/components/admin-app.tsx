@@ -1241,12 +1241,12 @@ export function AdminApp() {
       <main className="login-screen">
         <div className="login-grid-mark" aria-hidden="true">+</div>
         <section className="login-card">
-          <p className="eyebrow">有谱 / 后台管理 / 第二阶段</p>
+          <p className="eyebrow">有谱 / 后台管理</p>
           <h1>有谱<br /><em>资料工作台</em></h1>
           <p className="login-copy">产品资料、类目参数与采集状态的单一操作入口。</p>
           <div className="login-mode-switch" role="tablist" aria-label="登录方式">
             <button className={loginMode === 'account' ? 'login-mode is-active' : 'login-mode'} type="button" onClick={() => setLoginMode('account')}>账号登录</button>
-            <button className={loginMode === 'legacy-token' ? 'login-mode is-active' : 'login-mode'} type="button" onClick={() => setLoginMode('legacy-token')}>旧令牌登录</button>
+            {process.env.NEXT_PUBLIC_ENABLE_LEGACY_ADMIN === 'true' ? <button className={loginMode === 'legacy-token' ? 'login-mode is-active' : 'login-mode'} type="button" onClick={() => setLoginMode('legacy-token')}>旧令牌登录</button> : null}
           </div>
           <form onSubmit={handleLogin} className="login-form">
             {loginMode === 'account' ? <>
@@ -1268,7 +1268,7 @@ export function AdminApp() {
           </form>
           <div className="login-footnote">
             <span>{loginMode === 'account' ? '账号会话自动续期' : '兼容旧版管理令牌'}</span>
-            <span>仅限本地使用</span>
+            <span>管理员 / 编辑账号</span>
           </div>
           {notice && <Notice notice={notice} />}
         </section>

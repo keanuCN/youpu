@@ -1,8 +1,9 @@
 /**
- * 云端目录快照。
+ * 公开目录快照。
  *
  * 由 apps/web/scripts/export-catalog-snapshot.ts 自动生成，请勿手工编辑。
- * 快照只保存公开目录接口返回的事实字段；编辑分析、评分分布等内容继续由本地内容包维护。
+ * 事实字段来自公开 API 或校验后的 seed；seed 导出保留既有社区统计，不伪造评分。
+ * 编辑分析、评分分布等内容继续由本地内容包维护。
  */
 export interface CatalogSnapshotItem {
   id: string;
@@ -34,9 +35,9 @@ export interface CatalogSnapshotMeta {
 }
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
-  "source": "https://xiaopang.club",
-  "generatedAt": "2026-10-02T05:13:49.524Z",
-  "total": 285,
+  "source": "repository seed YAML (community statistics retained from previous snapshot)",
+  "generatedAt": "2026-10-13T02:19:27.101Z",
+  "total": 283,
   "pageSize": 48,
   "categorySlugs": [
     "action-cam",
@@ -107,28 +108,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "travel"
       ]
     },
-    "highlights": [
-      {
-        "key": "cameraType",
-        "label": "相机类型",
-        "value": "传统运动相机"
-      },
-      {
-        "key": "maxFrameRate",
-        "label": "最高帧率",
-        "value": "120fps"
-      },
-      {
-        "key": "waterproofDepth",
-        "label": "裸机防水深度",
-        "value": "18m"
-      },
-      {
-        "key": "weight",
-        "label": "机身重量",
-        "value": "145g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-193f-782c-9988-2dc78445601c",
@@ -171,28 +151,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "travel"
       ]
     },
-    "highlights": [
-      {
-        "key": "cameraType",
-        "label": "相机类型",
-        "value": "传统运动相机"
-      },
-      {
-        "key": "maxFrameRate",
-        "label": "最高帧率",
-        "value": "120fps"
-      },
-      {
-        "key": "waterproofDepth",
-        "label": "裸机防水深度",
-        "value": "20m"
-      },
-      {
-        "key": "weight",
-        "label": "机身重量",
-        "value": "146g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1958-7c2f-814c-9c6dd1f889c3",
@@ -234,28 +193,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "travel"
       ]
     },
-    "highlights": [
-      {
-        "key": "cameraType",
-        "label": "相机类型",
-        "value": "传统运动相机"
-      },
-      {
-        "key": "maxFrameRate",
-        "label": "最高帧率",
-        "value": "120fps"
-      },
-      {
-        "key": "waterproofDepth",
-        "label": "裸机防水深度",
-        "value": "20m"
-      },
-      {
-        "key": "weight",
-        "label": "机身重量",
-        "value": "149g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1972-7e24-9e3b-40c33660c7c2",
@@ -296,28 +234,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "travel"
       ]
     },
-    "highlights": [
-      {
-        "key": "cameraType",
-        "label": "相机类型",
-        "value": "传统运动相机"
-      },
-      {
-        "key": "maxFrameRate",
-        "label": "最高帧率",
-        "value": "240fps"
-      },
-      {
-        "key": "waterproofDepth",
-        "label": "裸机防水深度",
-        "value": "10m"
-      },
-      {
-        "key": "weight",
-        "label": "机身重量",
-        "value": "154g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1983-7611-badd-ba612880ff6e",
@@ -360,28 +277,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "vlogging"
       ]
     },
-    "highlights": [
-      {
-        "key": "cameraType",
-        "label": "相机类型",
-        "value": "传统运动相机"
-      },
-      {
-        "key": "maxFrameRate",
-        "label": "最高帧率",
-        "value": "240fps"
-      },
-      {
-        "key": "waterproofDepth",
-        "label": "裸机防水深度",
-        "value": "10m"
-      },
-      {
-        "key": "weight",
-        "label": "机身重量",
-        "value": "154g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1998-7ef1-b79f-575cdbccd6c7",
@@ -410,13 +306,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "maxVideo": "5.3K@60fps",
       "maxFrameRate": 240,
       "maxPhoto": "27.6MP",
-      "fov": "广角，支持 HB 系列镜头",
       "stabilization": "HyperSmooth 6.0",
       "waterproofDepth": 10,
       "weight": 154,
       "batteryLife": 150,
       "screen": "后置触屏 + 前置彩屏",
       "storage": "microSD",
+      "fov": "广角，支持 HB 系列镜头",
       "scenes": [
         "cycling",
         "motorcycle",
@@ -425,28 +321,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "vlogging"
       ]
     },
-    "highlights": [
-      {
-        "key": "cameraType",
-        "label": "相机类型",
-        "value": "传统运动相机"
-      },
-      {
-        "key": "maxFrameRate",
-        "label": "最高帧率",
-        "value": "240fps"
-      },
-      {
-        "key": "waterproofDepth",
-        "label": "裸机防水深度",
-        "value": "10m"
-      },
-      {
-        "key": "weight",
-        "label": "机身重量",
-        "value": "154g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-19be-7a2a-b1bc-beeaf4c8330f",
@@ -490,28 +365,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "travel"
       ]
     },
-    "highlights": [
-      {
-        "key": "cameraType",
-        "label": "相机类型",
-        "value": "传统运动相机"
-      },
-      {
-        "key": "maxFrameRate",
-        "label": "最高帧率",
-        "value": "120fps"
-      },
-      {
-        "key": "waterproofDepth",
-        "label": "裸机防水深度",
-        "value": "10m"
-      },
-      {
-        "key": "weight",
-        "label": "机身重量",
-        "value": "179.8g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-19ae-7d94-9594-d9da1255096c",
@@ -556,28 +410,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "travel"
       ]
     },
-    "highlights": [
-      {
-        "key": "cameraType",
-        "label": "相机类型",
-        "value": "传统运动相机"
-      },
-      {
-        "key": "maxFrameRate",
-        "label": "最高帧率",
-        "value": "120fps"
-      },
-      {
-        "key": "waterproofDepth",
-        "label": "裸机防水深度",
-        "value": "12m"
-      },
-      {
-        "key": "weight",
-        "label": "机身重量",
-        "value": "184g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-19cf-7642-be42-98520b48d4ff",
@@ -617,28 +450,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "travel"
       ]
     },
-    "highlights": [
-      {
-        "key": "cameraType",
-        "label": "相机类型",
-        "value": "拇指 / 佩戴式"
-      },
-      {
-        "key": "maxFrameRate",
-        "label": "最高帧率",
-        "value": "50fps"
-      },
-      {
-        "key": "waterproofDepth",
-        "label": "裸机防水深度",
-        "value": "5m"
-      },
-      {
-        "key": "weight",
-        "label": "机身重量",
-        "value": "35.5g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-19e2-7048-98e1-5a6b1ed17e66",
@@ -679,28 +491,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "travel"
       ]
     },
-    "highlights": [
-      {
-        "key": "cameraType",
-        "label": "相机类型",
-        "value": "拇指 / 佩戴式"
-      },
-      {
-        "key": "maxFrameRate",
-        "label": "最高帧率",
-        "value": "120fps"
-      },
-      {
-        "key": "waterproofDepth",
-        "label": "裸机防水深度",
-        "value": "10m"
-      },
-      {
-        "key": "weight",
-        "label": "机身重量",
-        "value": "39.1g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-0896-78d7-9cde-5de82a169526",
@@ -742,28 +533,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "diving"
       ]
     },
-    "highlights": [
-      {
-        "key": "cameraType",
-        "label": "相机类型",
-        "value": "传统运动相机"
-      },
-      {
-        "key": "maxFrameRate",
-        "label": "最高帧率",
-        "value": "120fps"
-      },
-      {
-        "key": "waterproofDepth",
-        "label": "裸机防水深度",
-        "value": "15m"
-      },
-      {
-        "key": "weight",
-        "label": "机身重量",
-        "value": "200g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3bf3-7bcd-8150-a687810601f2",
@@ -797,28 +567,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       ],
       "playerLevel": "advanced"
     },
-    "highlights": [
-      {
-        "key": "weightClass",
-        "label": "重量等级",
-        "value": "3U / 4U"
-      },
-      {
-        "key": "maxTension",
-        "label": "最高建议磅数",
-        "value": "29lbs"
-      },
-      {
-        "key": "scenes",
-        "label": "使用取向",
-        "value": "双打 · 速度"
-      },
-      {
-        "key": "playerLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3c19-75ee-beaf-e1affa897f91",
@@ -852,28 +601,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       ],
       "playerLevel": "advanced"
     },
-    "highlights": [
-      {
-        "key": "weightClass",
-        "label": "重量等级",
-        "value": "3U / 4U"
-      },
-      {
-        "key": "maxTension",
-        "label": "最高建议磅数",
-        "value": "32lbs"
-      },
-      {
-        "key": "scenes",
-        "label": "使用取向",
-        "value": "单打 · 进攻"
-      },
-      {
-        "key": "playerLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3c2f-7279-9f15-5a59ec9fdfee",
@@ -897,42 +625,21 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "badminton-racket",
     "specs": {
-      "weightClass": "3U/4U",
       "balance": "even",
+      "weightClass": "3U/4U",
       "flex": "stiff",
       "maxTension": 28,
       "frameMaterial": "HM Graphite + POCKETING BOOSTER",
       "shaftMaterial": "HM Graphite + SUPER HMG + ULTRA PE FIBER",
       "lengthNote": "加长 10mm",
-      "stringPattern": "4U 19-27 lbs；3U 20-28 lbs",
       "scenes": [
         "singles",
         "control"
       ],
-      "playerLevel": "advanced"
+      "playerLevel": "advanced",
+      "stringPattern": "4U 19-27 lbs；3U 20-28 lbs"
     },
-    "highlights": [
-      {
-        "key": "weightClass",
-        "label": "重量等级",
-        "value": "3U / 4U"
-      },
-      {
-        "key": "balance",
-        "label": "平衡取向",
-        "value": "均衡"
-      },
-      {
-        "key": "flex",
-        "label": "杆身硬度",
-        "value": "硬 Stiff"
-      },
-      {
-        "key": "maxTension",
-        "label": "最高建议磅数",
-        "value": "28lbs"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3c47-737f-a746-8ea4f035f809",
@@ -956,42 +663,21 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "badminton-racket",
     "specs": {
-      "weightClass": "3U/4U",
       "balance": "head-heavy",
-      "flex": "extra-stiff",
       "maxTension": 29,
+      "weightClass": "3U/4U",
+      "flex": "extra-stiff",
       "frameMaterial": "HM Graphite + Namd + Tungsten + Black Micro Core",
       "shaftMaterial": "HM Graphite + Namd",
-      "lengthNote": "加长 10mm",
-      "stringPattern": "3U 21-29 lbs；4U 20-28 lbs",
       "scenes": [
         "singles",
         "attack"
       ],
-      "playerLevel": "advanced"
+      "playerLevel": "advanced",
+      "lengthNote": "加长 10mm",
+      "stringPattern": "3U 21-29 lbs；4U 20-28 lbs"
     },
-    "highlights": [
-      {
-        "key": "weightClass",
-        "label": "重量等级",
-        "value": "3U / 4U"
-      },
-      {
-        "key": "balance",
-        "label": "平衡取向",
-        "value": "头重"
-      },
-      {
-        "key": "flex",
-        "label": "杆身硬度",
-        "value": "特硬 Extra Stiff"
-      },
-      {
-        "key": "maxTension",
-        "label": "最高建议磅数",
-        "value": "29lbs"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3c59-7a1a-88fd-f217dac82321",
@@ -1029,28 +715,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       ],
       "playerLevel": "advanced"
     },
-    "highlights": [
-      {
-        "key": "weightClass",
-        "label": "重量等级",
-        "value": "3U / 4U"
-      },
-      {
-        "key": "balance",
-        "label": "平衡取向",
-        "value": "头轻"
-      },
-      {
-        "key": "flex",
-        "label": "杆身硬度",
-        "value": "特硬 Extra Stiff"
-      },
-      {
-        "key": "maxTension",
-        "label": "最高建议磅数",
-        "value": "29lbs"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-08f9-743b-a883-b59c46d9839d",
@@ -1083,18 +748,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "audioPrompt": true,
       "sensorCompatibility": "全面传感器兼容"
     },
-    "highlights": [
-      {
-        "key": "screenSize",
-        "label": "屏幕尺寸",
-        "value": "3.3in"
-      },
-      {
-        "key": "batteryLife",
-        "label": "官方续航",
-        "value": "25h"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-0905-7275-826a-99cd23748beb",
@@ -1124,18 +778,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "batteryLife": 50,
       "navigation": true
     },
-    "highlights": [
-      {
-        "key": "screenSize",
-        "label": "屏幕尺寸",
-        "value": "3.5in"
-      },
-      {
-        "key": "batteryLife",
-        "label": "官方续航",
-        "value": "50h"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-0919-798e-94f3-45436cf05132",
@@ -1170,28 +813,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "weight": 203,
       "waterproof": "裸机 10 m 防水"
     },
-    "highlights": [
-      {
-        "key": "screenSize",
-        "label": "屏幕尺寸",
-        "value": "2.5英寸"
-      },
-      {
-        "key": "batteryLife",
-        "label": "续航时间",
-        "value": "135min"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "2290mAh"
-      },
-      {
-        "key": "weight",
-        "label": "重量",
-        "value": "203g"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3c6e-7e57-b00c-144ddd6701ce",
@@ -1229,28 +851,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "finesse"
       ]
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "全长",
-        "value": "1.93m"
-      },
-      {
-        "key": "sections",
-        "label": "节数",
-        "value": "2"
-      },
-      {
-        "key": "weight",
-        "label": "标准自重",
-        "value": "96g"
-      },
-      {
-        "key": "power",
-        "label": "调性强度",
-        "value": "轻 L"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3c86-784c-a3e8-8ebd94f61a6f",
@@ -1288,28 +889,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "bass"
       ]
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "全长",
-        "value": "1.96m"
-      },
-      {
-        "key": "sections",
-        "label": "节数",
-        "value": "2"
-      },
-      {
-        "key": "weight",
-        "label": "标准自重",
-        "value": "109g"
-      },
-      {
-        "key": "power",
-        "label": "调性强度",
-        "value": "中 M"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3c97-73db-891c-659535541e47",
@@ -1348,28 +928,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "heavy-lure"
       ]
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "全长",
-        "value": "2.03m"
-      },
-      {
-        "key": "sections",
-        "label": "节数",
-        "value": "2"
-      },
-      {
-        "key": "weight",
-        "label": "标准自重",
-        "value": "119g"
-      },
-      {
-        "key": "power",
-        "label": "调性强度",
-        "value": "中重 MH"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3caa-7ac3-92f2-1a491edc84ea",
@@ -1405,28 +964,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "light-lure"
       ]
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "全长",
-        "value": "2.59m"
-      },
-      {
-        "key": "sections",
-        "label": "节数",
-        "value": "2"
-      },
-      {
-        "key": "power",
-        "label": "调性强度",
-        "value": "中轻 ML"
-      },
-      {
-        "key": "rodType",
-        "label": "轮座类型",
-        "value": "直柄纺车"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3cbc-7de9-9e54-b01a921794eb",
@@ -1462,28 +1000,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "light-lure"
       ]
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "全长",
-        "value": "2.13m"
-      },
-      {
-        "key": "sections",
-        "label": "节数",
-        "value": "2"
-      },
-      {
-        "key": "power",
-        "label": "调性强度",
-        "value": "轻 L"
-      },
-      {
-        "key": "rodType",
-        "label": "轮座类型",
-        "value": "直柄纺车"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-0984-72e0-8fde-70f8d137acfd",
@@ -1507,29 +1024,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "drone",
     "specs": {
-      "flightTime": 23,
-      "batteryCapacity": 2150,
       "maxVideo": "4K/120fps",
+      "transmissionRange": 13,
       "cameraSensor": "1/1.3 英寸影像传感器",
-      "transmissionRange": 13
+      "flightTime": 23,
+      "batteryCapacity": 2150
     },
-    "highlights": [
-      {
-        "key": "flightTime",
-        "label": "最长飞行时间",
-        "value": "23min"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "2150mAh"
-      },
-      {
-        "key": "transmissionRange",
-        "label": "图传距离",
-        "value": "13km"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-0998-7800-bd08-35877608aef7",
@@ -1554,37 +1055,16 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "drone",
     "specs": {
       "weightNote": "轻于 249 g",
+      "maxVideo": "4K/60fps HDR",
+      "transmissionRange": 20,
+      "cameraSensor": "1/1.3 英寸 CMOS",
       "flightTime": 34,
       "batteryCapacity": 2590,
-      "maxVideo": "4K/60fps HDR",
-      "cameraSensor": "1/1.3 英寸 CMOS",
-      "verticalShooting": true,
-      "transmissionRange": 20,
       "obstacleSensing": "omnidirectional",
-      "subjectTracking": true
+      "subjectTracking": true,
+      "verticalShooting": true
     },
-    "highlights": [
-      {
-        "key": "flightTime",
-        "label": "最长飞行时间",
-        "value": "34min"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "2590mAh"
-      },
-      {
-        "key": "transmissionRange",
-        "label": "图传距离",
-        "value": "20km"
-      },
-      {
-        "key": "obstacleSensing",
-        "label": "避障能力",
-        "value": "全向避障"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-09ae-71bf-af33-458d487f5a41",
@@ -1620,18 +1100,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "hotSwap": true,
       "keycapMaterial": "透明 PC 键帽"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd92-0dd1-7ea8-891b-07b29ac7fc47",
@@ -1656,37 +1125,21 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
-      "mounting": "Gasket Mount",
-      "caseMaterial": "ABS",
       "layout": "100%（108键）",
+      "mounting": "Gasket Mount",
       "connection": [
         "wired",
         "2.4g",
         "bluetooth"
       ],
       "backlight": "ARGB 背光",
-      "driver": "Akko Cloud Driver",
       "hotSwap": true,
+      "driver": "Akko Cloud Driver",
+      "batteryCapacity": 10000,
       "keycapMaterial": "PBT",
-      "batteryCapacity": 10000
+      "caseMaterial": "ABS"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "10000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-09bc-7b1b-8c97-de9c8daf458c",
@@ -1726,28 +1179,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "quickRelease": true,
       "customScreen": true
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "磁轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "pollingRate",
-        "label": "回报率",
-        "value": "8000Hz"
-      },
-      {
-        "key": "rapidTriggerPrecision",
-        "label": "RT 精度",
-        "value": "0.01mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd8e-3277-7aa1-96cc-613782c05664",
@@ -1772,8 +1204,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
-      "mounting": "Gasket",
       "layout": "108 键全尺寸",
+      "mounting": "Gasket",
       "connection": [
         "wired",
         "2.4g",
@@ -1783,23 +1215,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "customScreen": true,
       "batteryCapacity": 8000
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "8000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd83-2882-783a-96cf-f005615698f4",
@@ -1830,18 +1246,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       ],
       "backlight": "混彩背光"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-09cb-7c17-96ab-7203e8618d20",
@@ -1853,7 +1258,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0552/2803/9264/files/203A5822.jpg?v=1734921227&width=1600",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -1875,27 +1280,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "bluetooth"
       ],
       "backlight": "RGB 背光",
-      "driver": "AULA Driver",
       "hotSwap": true,
-      "batteryCapacity": 4000
+      "batteryCapacity": 4000,
+      "driver": "AULA Driver"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "4000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0ccef-00f0-74f2-a6b8-8e248f48f788",
@@ -1921,7 +1310,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "keyboardType": "mechanical",
       "mounting": "Gasket",
-      "caseMaterial": "ABS Plastic",
       "layout": "75%（80键）",
       "connection": [
         "wired",
@@ -1929,28 +1317,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "bluetooth"
       ],
       "backlight": "南向 RGB 背光",
-      "driver": "AULA Driver",
       "hotSwap": true,
+      "caseMaterial": "ABS Plastic",
       "keycapMaterial": "PBT",
-      "batteryCapacity": 4000
+      "batteryCapacity": 4000,
+      "driver": "AULA Driver"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "4000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cc31-9635-7807-a25e-f9d788defbcc",
@@ -1983,21 +1356,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "bluetooth"
       ],
       "backlight": "南向 RGB 背光",
-      "driver": "AULA Driver",
-      "hotSwap": true
+      "hotSwap": true,
+      "driver": "AULA Driver"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cc2b-76ea-75cb-a926-5e6d332bddd6",
@@ -2035,23 +1397,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "hotSwap": true,
       "batteryCapacity": 8000
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "8000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd5e-0b2b-7320-8115-eec9a0879008",
@@ -2077,33 +1423,17 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "keyboardType": "magnetic",
       "mounting": "Tray Mount",
-      "caseMaterial": "ABS Plastic",
       "layout": "65%（68键）",
+      "caseMaterial": "ABS Plastic",
       "connection": [
         "wired"
       ],
-      "pollingRate": 8000,
       "backlight": "南向 RGB 背光",
-      "driver": "AULA Driver",
-      "hotSwap": true
+      "hotSwap": true,
+      "pollingRate": 8000,
+      "driver": "AULA Driver"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "磁轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线"
-      },
-      {
-        "key": "pollingRate",
-        "label": "回报率",
-        "value": "8000Hz"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd6a-fe44-7e4a-9f51-b8b22767be20",
@@ -2141,28 +1471,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "hotSwap": true,
       "batteryCapacity": 6000
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "磁轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "rapidTriggerPrecision",
-        "label": "RT 精度",
-        "value": "0.01mm"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "6000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd80-45c6-7537-b8d5-28c8492c4006",
@@ -2187,25 +1496,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
-      "caseMaterial": "金属磨砂面板",
       "layout": "104 键全尺寸",
       "connection": [
         "wired"
       ],
-      "backlight": "分区 RGB 背光"
+      "backlight": "分区 RGB 背光",
+      "caseMaterial": "金属磨砂面板"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd95-2729-70a2-9cb4-79b54a68e9e4",
@@ -2230,28 +1528,17 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
-      "mounting": "Gasket",
       "layout": "75%",
+      "mounting": "Gasket",
       "connection": [
         "wired",
         "2.4g",
         "bluetooth"
       ],
-      "backlight": "RGB 背光",
-      "hotSwap": true
+      "hotSwap": true,
+      "backlight": "RGB 背光"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cc81-a442-7c96-b039-da2a4fa18ca3",
@@ -2276,26 +1563,15 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
-      "mounting": "无钢软弹结构",
-      "caseMaterial": "铝合金外壳",
       "layout": "108 键全尺寸",
       "connection": [
         "wired"
       ],
-      "backlight": "RGB 背光"
+      "caseMaterial": "铝合金外壳",
+      "backlight": "RGB 背光",
+      "mounting": "无钢软弹结构"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd9a-8521-74d7-8f44-9cbb2b3e7291",
@@ -2320,34 +1596,18 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
-      "mounting": "Gasket",
       "layout": "98键配列",
+      "mounting": "Gasket",
       "connection": [
         "wired",
         "2.4g",
         "bluetooth"
       ],
-      "backlight": "RGB 背光",
       "hotSwap": true,
+      "backlight": "RGB 背光",
       "batteryCapacity": 8000
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "8000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd58-567d-7f38-8f71-b267c8bf6d12",
@@ -2372,40 +1632,19 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "magnetic",
-      "mounting": "Gasket",
       "layout": "65%（68键）",
       "connection": [
         "wired"
       ],
+      "mounting": "Gasket",
       "pollingRate": 8000,
       "rapidTriggerPrecision": 0.01,
+      "keycapMaterial": "PBT + PC 透明键帽",
       "backlight": "RGB 背光 / 3D Light Wing 灯箱",
-      "driver": "DAREU 网页驱动",
       "hotSwap": true,
-      "keycapMaterial": "PBT + PC 透明键帽"
+      "driver": "DAREU 网页驱动"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "磁轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线"
-      },
-      {
-        "key": "pollingRate",
-        "label": "回报率",
-        "value": "8000Hz"
-      },
-      {
-        "key": "rapidTriggerPrecision",
-        "label": "RT 精度",
-        "value": "0.01mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd89-9c17-7a85-a79f-b005f58fcd90",
@@ -2430,28 +1669,17 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
-      "mounting": "Gasket",
       "layout": "87 键 TKL",
+      "mounting": "Gasket",
       "connection": [
         "wired",
         "2.4g",
         "bluetooth"
       ],
-      "driver": "MCHOSE M HUB",
-      "hotSwap": true
+      "hotSwap": true,
+      "driver": "MCHOSE M HUB"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cc67-7f23-7e4b-b28c-7340cdab2dd6",
@@ -2476,42 +1704,21 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
+      "layout": "98%（99键）",
       "switchType": "Icy Creamsicle Switch",
       "mounting": "Gasket",
-      "layout": "98%（99键）",
       "connection": [
         "wired",
         "2.4g",
         "bluetooth"
       ],
-      "pollingRate": 8000,
       "backlight": "16.8M 色 RGB 背光",
-      "driver": "MCHOSE M HUB",
       "hotSwap": true,
-      "batteryCapacity": 10000
+      "pollingRate": 8000,
+      "batteryCapacity": 10000,
+      "driver": "MCHOSE M HUB"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "pollingRate",
-        "label": "回报率",
-        "value": "8000Hz"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "10000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0ccf6-4d2b-750a-896e-dea5674b3786",
@@ -2536,9 +1743,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "magnetic",
+      "layout": "65%（68键）",
       "mounting": "Gasket Mount",
       "caseMaterial": "ABS + PC",
-      "layout": "65%（68键）",
       "connection": [
         "wired"
       ],
@@ -2549,28 +1756,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "backlight": "1600 万色 RGB 背光",
       "driver": "MelGeek HIVE"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "磁轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线"
-      },
-      {
-        "key": "pollingRate",
-        "label": "回报率",
-        "value": "8000Hz"
-      },
-      {
-        "key": "scanRate",
-        "label": "扫描率",
-        "value": "16000Hz"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-09d6-75f5-b002-7c3772a94d41",
@@ -2608,33 +1794,12 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scanRate": 32000,
       "rapidTriggerPrecision": 0.005,
       "actuationRange": "0.100–3.300mm",
+      "batteryCapacity": 8000,
       "backlight": "ARGB RGB 背光",
       "driver": "MonsGeek Driver & Web-Based Driver",
-      "quickRelease": true,
-      "batteryCapacity": 8000
+      "quickRelease": true
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "磁轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "pollingRate",
-        "label": "回报率",
-        "value": "8000Hz"
-      },
-      {
-        "key": "scanRate",
-        "label": "扫描率",
-        "value": "32000Hz"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-09e2-7c08-8415-7dabcd2e8691",
@@ -2674,23 +1839,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "quickRelease": true,
       "batteryCapacity": 8000
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "8000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd76-7437-758f-bdfd-c7e56df71966",
@@ -2723,29 +1872,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "2.4g",
         "bluetooth"
       ],
-      "backlight": "RGB 背光",
-      "driver": "Rapoo A Hub",
       "hotSwap": true,
       "keycapMaterial": "PBT双色注塑",
-      "batteryCapacity": 10000
+      "backlight": "RGB 背光",
+      "batteryCapacity": 10000,
+      "driver": "Rapoo A Hub"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "10000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd7b-2587-79d5-88f7-b5c7ef17c2ba",
@@ -2771,27 +1904,16 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "keyboardType": "mechanical",
       "switchType": "雷柏自主青轴、黑轴、茶轴可选",
-      "caseMaterial": "铝合金上盖",
       "layout": "108 键全尺寸",
       "connection": [
         "wired"
       ],
       "backlight": "RGB 幻彩背光",
-      "driver": "Rapoo 驱动软件",
-      "keycapMaterial": "双色注塑"
+      "caseMaterial": "铝合金上盖",
+      "keycapMaterial": "双色注塑",
+      "driver": "Rapoo 驱动软件"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cc55-206f-76ed-bd95-48c7fcea9615",
@@ -2817,25 +1939,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "keyboardType": "mechanical",
       "switchType": "雷柏自主黑轴、青轴、茶轴、红轴可选",
-      "caseMaterial": "磨砂金属上盖",
       "layout": "104 键全尺寸",
       "connection": [
         "wired"
       ],
-      "backlight": "混彩背光"
+      "backlight": "混彩背光",
+      "caseMaterial": "磨砂金属上盖"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d117-9ffc-7bd2-abb6-06bffa37cff6",
@@ -2860,9 +1971,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
+      "layout": "75%",
       "mounting": "可调式 Gasket",
       "caseMaterial": "铝合金底壳 + 金属边框",
-      "layout": "75%",
       "connection": [
         "wired",
         "2.4g",
@@ -2873,18 +1984,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "hotSwap": true,
       "customScreen": true
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd48-f919-7d8b-8c43-d2d23cbfce8a",
@@ -2909,39 +2009,18 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "magnetic",
-      "mounting": "Gasket",
       "layout": "68%（67键）",
+      "mounting": "Gasket",
       "connection": [
         "wired"
       ],
-      "pollingRate": 8000,
-      "rapidTriggerPrecision": 0.001,
       "backlight": "RGB 背光",
+      "hotSwap": true,
       "driver": "V HUB 网页驱动",
-      "hotSwap": true
+      "pollingRate": 8000,
+      "rapidTriggerPrecision": 0.001
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "磁轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线"
-      },
-      {
-        "key": "pollingRate",
-        "label": "回报率",
-        "value": "8000Hz"
-      },
-      {
-        "key": "rapidTriggerPrecision",
-        "label": "RT 精度",
-        "value": "0mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0ccef-3371-712f-bd92-75be076df01e",
@@ -2966,35 +2045,19 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
-      "mounting": "Gasket",
       "layout": "75%",
+      "mounting": "Gasket",
       "connection": [
         "wired",
         "2.4g",
         "bluetooth"
       ],
       "backlight": "RGB 背光",
-      "driver": "V HUB",
       "hotSwap": true,
-      "batteryCapacity": 8000
+      "batteryCapacity": 8000,
+      "driver": "V HUB"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "8000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cc5f-2c05-7b77-9464-716e1d85b0cc",
@@ -3020,36 +2083,20 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "keyboardType": "mechanical",
       "switchType": "动力金轴",
-      "mounting": "Gasket",
       "layout": "TKL（87键）",
+      "mounting": "Gasket",
       "connection": [
         "wired",
         "2.4g",
         "bluetooth"
       ],
       "backlight": "RGB 背光",
-      "driver": "V HUB",
       "hotSwap": true,
-      "keycapMaterial": "PBT",
-      "batteryCapacity": 10000
+      "batteryCapacity": 10000,
+      "driver": "V HUB",
+      "keycapMaterial": "PBT"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "10000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cc3c-bd7a-7974-9ead-621f3c153d1a",
@@ -3074,29 +2121,18 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
-      "mounting": "Gasket",
       "layout": "98%",
+      "mounting": "Gasket",
       "connection": [
         "wired",
         "2.4g",
         "bluetooth"
       ],
       "backlight": "RGB 背光",
-      "driver": "V HUB",
-      "customScreen": true
+      "customScreen": true,
+      "driver": "V HUB"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0cd50-4d63-7347-a6a6-7af925c4632a",
@@ -3121,41 +2157,20 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "magnetic",
-      "caseMaterial": "铝合金",
       "layout": "65% ANSI（68键）",
       "connection": [
         "wired"
       ],
+      "backlight": "南向 RGB 背光",
+      "hotSwap": true,
+      "caseMaterial": "铝合金",
+      "keycapMaterial": "PBT Cherry Profile 键帽",
+      "driver": "ATK HUB",
       "pollingRate": 8000,
       "rapidTriggerPrecision": 0.001,
-      "actuationRange": "0.001–3.3mm",
-      "backlight": "南向 RGB 背光",
-      "driver": "ATK HUB",
-      "hotSwap": true,
-      "keycapMaterial": "PBT Cherry Profile 键帽"
+      "actuationRange": "0.001–3.3mm"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "磁轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线"
-      },
-      {
-        "key": "pollingRate",
-        "label": "回报率",
-        "value": "8000Hz"
-      },
-      {
-        "key": "rapidTriggerPrecision",
-        "label": "RT 精度",
-        "value": "0mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-09f1-7ebc-92e9-cd0bf533886c",
@@ -3167,7 +2182,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://cdn.shopify.com/s/files/1/0691/4942/5882/files/ATK_V75X_Black.jpg?v=1741856682&width=1920",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -3189,22 +2204,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "bluetooth"
       ],
       "backlight": "南向 ARGB RGB 背光",
-      "driver": "ATK HUB",
       "hotSwap": true,
-      "keycapMaterial": "PBT Cherry/KOP Profile 键帽"
+      "keycapMaterial": "PBT Cherry/KOP Profile 键帽",
+      "driver": "ATK HUB"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-09fc-7f63-ab75-3573977f3f39",
@@ -3229,7 +2233,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "esports-keyboard",
     "specs": {
       "keyboardType": "mechanical",
-      "switchType": "WOB Switch",
       "mounting": "Gasket-mounted",
       "caseMaterial": "铝合金",
       "layout": "75%",
@@ -3238,26 +2241,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "2.4g",
         "bluetooth"
       ],
-      "backlight": "RGB 背光",
-      "batteryCapacity": 7000
+      "switchType": "WOB Switch",
+      "batteryCapacity": 7000,
+      "backlight": "RGB 背光"
     },
-    "highlights": [
-      {
-        "key": "keyboardType",
-        "label": "键盘类型",
-        "value": "机械轴"
-      },
-      {
-        "key": "connection",
-        "label": "连接方式",
-        "value": "有线 · 2.4G 无线 · 蓝牙"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "7000mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c87b-fc5b-7c30-b8f9-4f5f18fc0b30",
@@ -3332,28 +2320,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "fillLightIlluminance": 40,
       "fillLightColorTemperature": "2500 K 至 6000 K"
     },
-    "highlights": [
-      {
-        "key": "weight",
-        "label": "重量",
-        "value": "368g"
-      },
-      {
-        "key": "batteryCapacity",
-        "label": "电池容量",
-        "value": "3350mAh"
-      },
-      {
-        "key": "workingTime",
-        "label": "工作时间",
-        "value": "10h"
-      },
-      {
-        "key": "chargingTime",
-        "label": "充电时间",
-        "value": "2.5h"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-0a18-79ad-80e6-b145b037ad6e",
@@ -3389,23 +2356,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "speedAdjustment": true,
       "fineRetentionReduction": true
     },
-    "highlights": [
-      {
-        "key": "weight",
-        "label": "重量",
-        "value": "6810g"
-      },
-      {
-        "key": "catchCupCapacity",
-        "label": "接粉罐容量",
-        "value": "60g"
-      },
-      {
-        "key": "power",
-        "label": "功率",
-        "value": "230W"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c87b-fc81-7558-adb3-57bc3dbbfbb8",
@@ -3441,28 +2392,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "weight": 575,
       "weatherSealing": "防尘防滴 / 全天候防护"
     },
-    "highlights": [
-      {
-        "key": "focalLength",
-        "label": "焦距",
-        "value": "56mm"
-      },
-      {
-        "key": "maxAperture",
-        "label": "最大光圈",
-        "value": "1.2"
-      },
-      {
-        "key": "focusDistance",
-        "label": "最近对焦距离",
-        "value": "0.5m"
-      },
-      {
-        "key": "maxMagnification",
-        "label": "最大放大倍率",
-        "value": "0.13"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c87b-fc8c-7b4b-a7f8-8c10800f43b7",
@@ -3499,13 +2429,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "durability": "抗冲击、抗震、防 X 射线",
       "warranty": "10年有限质保"
     },
-    "highlights": [
-      {
-        "key": "readSpeed",
-        "label": "最高读取速度",
-        "value": "160MB/s"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-0a4c-7e0e-bd9f-64fd54536cf1",
@@ -3549,28 +2473,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "wirelessMode": "GFSK 2Mbps",
       "bluetoothProtocol": "蓝牙 5.3"
     },
-    "highlights": [
-      {
-        "key": "transmitterWeight",
-        "label": "发射器重量",
-        "value": "10g"
-      },
-      {
-        "key": "receiverWeight",
-        "label": "接收器重量",
-        "value": "17.8g"
-      },
-      {
-        "key": "chargingCaseWeight",
-        "label": "充电盒重量",
-        "value": "139g"
-      },
-      {
-        "key": "transmitterBatteryCapacity",
-        "label": "发射器电池容量",
-        "value": "114mAh"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1aad-7ff0-9d1f-a469af86bc2d",
@@ -3590,13 +2493,65 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "brand": {
       "slug": "canyon",
       "name": "Canyon",
-      "nameCn": "佳能道"
+      "nameCn": null
     },
     "categorySlug": "mtb",
     "specs": {
       "bikeType": "trail",
       "frameMaterial": "Carbon (CF)",
       "wheelSize": "XS/S 27.5\"；M/L/XL 29\"",
+      "geometry": [
+        {
+          "size": "XS",
+          "height": "≤166 cm",
+          "headAngle": "66°",
+          "seatAngle": "76°",
+          "wheelbase": 1139,
+          "stack": 587,
+          "reach": 410,
+          "wheelSize": "27.5\""
+        },
+        {
+          "size": "S",
+          "height": "166–175 cm",
+          "headAngle": "66°",
+          "seatAngle": "76°",
+          "wheelbase": 1164,
+          "stack": 596,
+          "reach": 430,
+          "wheelSize": "27.5\""
+        },
+        {
+          "size": "M",
+          "height": "175–183 cm",
+          "headAngle": "66°",
+          "seatAngle": "76°",
+          "wheelbase": 1203,
+          "stack": 626,
+          "reach": 455,
+          "wheelSize": "29\""
+        },
+        {
+          "size": "L",
+          "height": "183–192 cm",
+          "headAngle": "66°",
+          "seatAngle": "76°",
+          "wheelbase": 1234,
+          "stack": 639,
+          "reach": 480,
+          "wheelSize": "29\""
+        },
+        {
+          "size": "XL",
+          "height": "≥192 cm",
+          "headAngle": "66°",
+          "seatAngle": "76°",
+          "wheelbase": 1271,
+          "stack": 656,
+          "reach": 510,
+          "wheelSize": "29\""
+        }
+      ],
       "geometryNote": "Canyon Neuron CF 官方几何表；XS/S 使用 27.5 英寸轮径，M/L/XL 使用 29 英寸轮径。",
       "frontTravel": 140,
       "rearTravel": 140,
@@ -3614,28 +2569,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "全能林道 Trail"
-      },
-      {
-        "key": "frontTravel",
-        "label": "前叉行程",
-        "value": "140mm"
-      },
-      {
-        "key": "rearTravel",
-        "label": "后避震行程",
-        "value": "140mm"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "林道 Trail · 爬坡 · 下坡 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1acc-715e-9eee-184ae658430d",
@@ -3655,7 +2589,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "brand": {
       "slug": "canyon",
       "name": "Canyon",
-      "nameCn": "佳能道"
+      "nameCn": null
     },
     "categorySlug": "mtb",
     "specs": {
@@ -3663,6 +2597,58 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "frameMaterial": "CF 页面版本（组件材质待复核）",
       "completeWeight": 15.99,
       "wheelSize": "29\"；可按配置切换 Mullet",
+      "geometry": [
+        {
+          "size": "XS",
+          "height": "≤168 cm",
+          "headAngle": "64°",
+          "seatAngle": "76.5°",
+          "wheelbase": 1184,
+          "stack": 612,
+          "reach": 425,
+          "wheelSize": "Mullet（前29 / 后27.5）"
+        },
+        {
+          "size": "S",
+          "height": "163–177 cm",
+          "headAngle": "64°",
+          "seatAngle": "76.5°",
+          "wheelbase": 1213,
+          "stack": 621,
+          "reach": 450,
+          "wheelSize": "Mullet（前29 / 后27.5）"
+        },
+        {
+          "size": "M",
+          "height": "172–185 cm",
+          "headAngle": "64°",
+          "seatAngle": "76.5°",
+          "wheelbase": 1243,
+          "stack": 630,
+          "reach": 475,
+          "wheelSize": "Mullet / 29\""
+        },
+        {
+          "size": "L",
+          "height": "180–194 cm",
+          "headAngle": "64°",
+          "seatAngle": "76.5°",
+          "wheelbase": 1272,
+          "stack": 639,
+          "reach": 500,
+          "wheelSize": "Mullet / 29\""
+        },
+        {
+          "size": "XL",
+          "height": "≥189 cm",
+          "headAngle": "64°",
+          "seatAngle": "76.5°",
+          "wheelbase": 1301,
+          "stack": 648,
+          "reach": 525,
+          "wheelSize": "Mullet / 29\""
+        }
+      ],
       "geometryNote": "Canyon Spectral CF 官方表中的 Mullet 几何；切换为 29 英寸后，轮距与骑姿会按官方配置表变化，购买前需确认轮径版本。",
       "frontTravel": 150,
       "rearTravel": 140,
@@ -3680,28 +2666,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "全能林道 Trail"
-      },
-      {
-        "key": "completeWeight",
-        "label": "整车重量",
-        "value": "15.99kg"
-      },
-      {
-        "key": "frontTravel",
-        "label": "前叉行程",
-        "value": "150mm"
-      },
-      {
-        "key": "rearTravel",
-        "label": "后避震行程",
-        "value": "140mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1ae2-74be-9da9-be482d41fa0a",
@@ -3728,6 +2693,32 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "bikeType": "trail",
       "frameMaterial": "Advanced-Grade Composite",
       "wheelSize": "前 29\"；后 29\" 或 27.5\" Mullet",
+      "geometry": [
+        {
+          "size": "S",
+          "headAngle": "64.4° / 64.8° / 65.1°",
+          "seatAngle": "76.8° / 77.2° / 77.5°",
+          "wheelSize": "29\"；后轮可切换 27.5\""
+        },
+        {
+          "size": "M",
+          "headAngle": "64.4° / 64.8° / 65.1°",
+          "seatAngle": "76.8° / 77.2° / 77.5°",
+          "wheelSize": "29\"；后轮可切换 27.5\""
+        },
+        {
+          "size": "L",
+          "headAngle": "64.4° / 64.8° / 65.1°",
+          "seatAngle": "76.8° / 77.2° / 77.5°",
+          "wheelSize": "29\"；后轮可切换 27.5\""
+        },
+        {
+          "size": "XL",
+          "headAngle": "64.4° / 64.8° / 65.1°",
+          "seatAngle": "76.8° / 77.2° / 77.5°",
+          "wheelSize": "29\"；后轮可切换 27.5\""
+        }
+      ],
       "geometryNote": "Giant Trance X 官方页面给出三档 Flip Chip 几何；当前保留官方角度范围与轮径选项，Stack、Reach 和不同尺码完整表待补齐。",
       "frontTravel": 150,
       "rearTravel": 140,
@@ -3745,28 +2736,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "全能林道 Trail"
-      },
-      {
-        "key": "frontTravel",
-        "label": "前叉行程",
-        "value": "150mm"
-      },
-      {
-        "key": "rearTravel",
-        "label": "后避震行程",
-        "value": "140mm"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "林道 Trail · 爬坡 · 下坡 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1af6-7a12-9732-c75694865cbb",
@@ -3793,6 +2763,48 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "bikeType": "hardtail",
       "frameMaterial": "Advanced-grade Composite",
       "wheelSize": "29\"",
+      "geometry": [
+        {
+          "size": "S",
+          "height": "163–172 cm",
+          "headAngle": "69.5°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1087,
+          "stack": 604,
+          "reach": 416,
+          "wheelSize": "29\""
+        },
+        {
+          "size": "M",
+          "height": "171–180 cm",
+          "headAngle": "69.5°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1106,
+          "stack": 604,
+          "reach": 435,
+          "wheelSize": "29\""
+        },
+        {
+          "size": "L",
+          "height": "179–188 cm",
+          "headAngle": "70°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1128,
+          "stack": 613,
+          "reach": 453,
+          "wheelSize": "29\""
+        },
+        {
+          "size": "XL",
+          "height": "187–198 cm",
+          "headAngle": "70°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1159,
+          "stack": 632,
+          "reach": 477,
+          "wheelSize": "29\""
+        }
+      ],
       "geometryNote": "Giant XTC Advanced 29 官方几何表；硬尾车的有效骑姿还会明显受前叉下沉量和把位影响。",
       "frontTravel": 100,
       "rearTravel": 0,
@@ -3809,28 +2821,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "trail"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "硬尾越野"
-      },
-      {
-        "key": "frontTravel",
-        "label": "前叉行程",
-        "value": "100mm"
-      },
-      {
-        "key": "rearTravel",
-        "label": "后避震行程",
-        "value": "0mm"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "越野 XC · 爬坡 · 林道 Trail"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1b07-749d-9bae-87a3c842b147",
@@ -3858,6 +2849,20 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "frameMaterial": "S-Works FACT 12m Carbon",
       "completeWeight": 10,
       "wheelSize": "29\"",
+      "geometry": [
+        {
+          "size": "S"
+        },
+        {
+          "size": "M"
+        },
+        {
+          "size": "L"
+        },
+        {
+          "size": "XL"
+        }
+      ],
       "geometryNote": "Specialized S-Works Epic 8 官方页面列出 S/M/L/XL 尺码；当前内容只接入尺码选项，Stack、Reach 等完整几何待官方表格补齐。",
       "frontTravel": 120,
       "rearTravel": 120,
@@ -3874,28 +2879,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "trail"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "越野竞赛 XC"
-      },
-      {
-        "key": "completeWeight",
-        "label": "整车重量",
-        "value": "10kg"
-      },
-      {
-        "key": "frontTravel",
-        "label": "前叉行程",
-        "value": "120mm"
-      },
-      {
-        "key": "rearTravel",
-        "label": "后避震行程",
-        "value": "120mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1b19-7170-b303-3d9fed87ff41",
@@ -3923,6 +2907,32 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "frameMaterial": "FACT 11m Carbon",
       "completeWeight": 14.87,
       "wheelSize": "前 29\"；后轮按尺码 27.5\" / 29\"",
+      "geometry": [
+        {
+          "size": "S1",
+          "wheelSize": "前29\" / 后27.5\""
+        },
+        {
+          "size": "S2",
+          "wheelSize": "前29\" / 后27.5\""
+        },
+        {
+          "size": "S3",
+          "wheelSize": "29\" / 29\""
+        },
+        {
+          "size": "S4",
+          "wheelSize": "29\" / 29\""
+        },
+        {
+          "size": "S5",
+          "wheelSize": "29\" / 29\""
+        },
+        {
+          "size": "S6",
+          "wheelSize": "29\" / 29\""
+        }
+      ],
       "geometryNote": "Specialized Stumpjumper 15 官方尺码表；S1 前叉为 140mm，S2–S6 为 150mm，最终几何需按具体调节与轮径确认。",
       "frontTravel": 150,
       "rearTravel": 145,
@@ -3940,28 +2950,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "全能林道 Trail"
-      },
-      {
-        "key": "completeWeight",
-        "label": "整车重量",
-        "value": "14.87kg"
-      },
-      {
-        "key": "frontTravel",
-        "label": "前叉行程",
-        "value": "150mm"
-      },
-      {
-        "key": "rearTravel",
-        "label": "后避震行程",
-        "value": "145mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1b36-7ede-95f4-fcbcc81d8343",
@@ -3981,7 +2970,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "brand": {
       "slug": "canyon",
       "name": "Canyon",
-      "nameCn": "佳能道"
+      "nameCn": null
     },
     "categorySlug": "road-bike",
     "specs": {
@@ -3990,40 +2979,84 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "frameWeight": 1050,
       "completeWeight": 7.96,
       "tireClearance": 32,
-      "geometryNote": "Canyon Aeroad CF SLX 官方几何表；Aeroad 的把组宽度与座垫高度也会影响最终骑行姿势。",
       "groupset": "Shimano 105 Di2，带 4iiii 功率计",
       "drivetrain": "2x12",
       "brakes": "hydraulic-disc",
       "wheelset": "DT Swiss ARC 1600，65mm 碳纤轮组",
       "gearRange": "105 Di2，竞赛取向",
       "fit": "PACE 可调一体式把组，偏空力竞赛",
+      "geometry": [
+        {
+          "size": "2XS",
+          "height": "≤166 cm",
+          "headAngle": "70°",
+          "seatAngle": "73.5°",
+          "wheelbase": 975,
+          "stack": 498,
+          "reach": 372
+        },
+        {
+          "size": "XS",
+          "height": "166–172 cm",
+          "headAngle": "71.2°",
+          "seatAngle": "73.5°",
+          "wheelbase": 979,
+          "stack": 520,
+          "reach": 378
+        },
+        {
+          "size": "S",
+          "height": "172–178 cm",
+          "headAngle": "72.8°",
+          "seatAngle": "73.5°",
+          "wheelbase": 982,
+          "stack": 539,
+          "reach": 390
+        },
+        {
+          "size": "M",
+          "height": "178–184 cm",
+          "headAngle": "73.25°",
+          "seatAngle": "73.5°",
+          "wheelbase": 988,
+          "stack": 560,
+          "reach": 393
+        },
+        {
+          "size": "L",
+          "height": "184–190 cm",
+          "headAngle": "73.3°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1003,
+          "stack": 580,
+          "reach": 401
+        },
+        {
+          "size": "XL",
+          "height": "190–196 cm",
+          "headAngle": "73.5°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1029,
+          "stack": 606,
+          "reach": 419
+        },
+        {
+          "size": "2XL",
+          "height": "≥196 cm",
+          "headAngle": "73.8°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1042,
+          "stack": 624,
+          "reach": 429
+        }
+      ],
+      "geometryNote": "Canyon Aeroad CF SLX 官方几何表；Aeroad 的把组宽度与座垫高度也会影响最终骑行姿势。",
       "scenes": [
         "racing",
         "group-ride"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "空力竞赛"
-      },
-      {
-        "key": "frameWeight",
-        "label": "车架重量",
-        "value": "1050g"
-      },
-      {
-        "key": "completeWeight",
-        "label": "整车重量",
-        "value": "7.96kg"
-      },
-      {
-        "key": "tireClearance",
-        "label": "最大胎宽",
-        "value": "32mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1b55-78b8-be4d-a116d692a4fc",
@@ -4043,7 +3076,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "brand": {
       "slug": "canyon",
       "name": "Canyon",
-      "nameCn": "佳能道"
+      "nameCn": null
     },
     "categorySlug": "road-bike",
     "specs": {
@@ -4051,41 +3084,85 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "frameMaterial": "Carbon (CF)",
       "frameWeight": 1080,
       "tireClearance": 38,
-      "geometryNote": "Canyon Endurace CF 官方几何表；Endurace CF 7 与 CF 7 Di2 使用同一车架平台，配置与价格仍需分别核对。",
       "groupset": "Shimano 105 RD-R7100 12s",
       "drivetrain": "2x12，50/34，11-36",
       "brakes": "hydraulic-disc",
       "wheelset": "DT Swiss Endurance LN，铝合金",
       "gearRange": "11-36T / 50-34T",
       "fit": "Sport Geometry，偏舒适的长途设定",
+      "geometry": [
+        {
+          "size": "2XS",
+          "height": "≤165 cm",
+          "headAngle": "70.3°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1006,
+          "stack": 525,
+          "reach": 382
+        },
+        {
+          "size": "XS",
+          "height": "165–171 cm",
+          "headAngle": "71°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1010,
+          "stack": 545,
+          "reach": 386
+        },
+        {
+          "size": "S",
+          "height": "171–178 cm",
+          "headAngle": "71.8°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1013,
+          "stack": 563,
+          "reach": 390
+        },
+        {
+          "size": "M",
+          "height": "178–185 cm",
+          "headAngle": "72.5°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1014,
+          "stack": 584,
+          "reach": 392
+        },
+        {
+          "size": "L",
+          "height": "185–192 cm",
+          "headAngle": "72.5°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1030,
+          "stack": 605,
+          "reach": 401
+        },
+        {
+          "size": "XL",
+          "height": "192–198 cm",
+          "headAngle": "72.8°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1043,
+          "stack": 629,
+          "reach": 409
+        },
+        {
+          "size": "2XL",
+          "height": "≥198 cm",
+          "headAngle": "72.8°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1067,
+          "stack": 649,
+          "reach": 427
+        }
+      ],
+      "geometryNote": "Canyon Endurace CF 官方几何表；Endurace CF 7 与 CF 7 Di2 使用同一车架平台，配置与价格仍需分别核对。",
       "scenes": [
         "endurance",
         "all-road",
         "group-ride"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "耐力长途"
-      },
-      {
-        "key": "frameWeight",
-        "label": "车架重量",
-        "value": "1080g"
-      },
-      {
-        "key": "tireClearance",
-        "label": "最大胎宽",
-        "value": "38mm"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "长途耐力 · 泛铺装 · 团骑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1b6b-726b-86d2-9abc0d0a0297",
@@ -4105,7 +3182,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "brand": {
       "slug": "canyon",
       "name": "Canyon",
-      "nameCn": "佳能道"
+      "nameCn": null
     },
     "categorySlug": "road-bike",
     "specs": {
@@ -4113,41 +3190,85 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "frameMaterial": "Carbon (CF)",
       "frameWeight": 1080,
       "tireClearance": 38,
-      "geometryNote": "Canyon Endurace CF 官方几何表；Endurace CF 7 与 CF 7 Di2 使用同一车架平台，配置与价格仍需分别核对。",
       "groupset": "Shimano 105 Di2",
       "drivetrain": "2x12，50/34，11-36",
       "brakes": "hydraulic-disc",
       "wheelset": "DT Swiss Endurance LN，铝合金",
       "gearRange": "11-36T / 50-34T",
       "fit": "Sport Geometry，偏舒适的长途设定",
+      "geometry": [
+        {
+          "size": "2XS",
+          "height": "≤165 cm",
+          "headAngle": "70.3°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1006,
+          "stack": 525,
+          "reach": 382
+        },
+        {
+          "size": "XS",
+          "height": "165–171 cm",
+          "headAngle": "71°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1010,
+          "stack": 545,
+          "reach": 386
+        },
+        {
+          "size": "S",
+          "height": "171–178 cm",
+          "headAngle": "71.8°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1013,
+          "stack": 563,
+          "reach": 390
+        },
+        {
+          "size": "M",
+          "height": "178–185 cm",
+          "headAngle": "72.5°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1014,
+          "stack": 584,
+          "reach": 392
+        },
+        {
+          "size": "L",
+          "height": "185–192 cm",
+          "headAngle": "72.5°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1030,
+          "stack": 605,
+          "reach": 401
+        },
+        {
+          "size": "XL",
+          "height": "192–198 cm",
+          "headAngle": "72.8°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1043,
+          "stack": 629,
+          "reach": 409
+        },
+        {
+          "size": "2XL",
+          "height": "≥198 cm",
+          "headAngle": "72.8°",
+          "seatAngle": "73.5°",
+          "wheelbase": 1067,
+          "stack": 649,
+          "reach": 427
+        }
+      ],
+      "geometryNote": "Canyon Endurace CF 官方几何表；Endurace CF 7 与 CF 7 Di2 使用同一车架平台，配置与价格仍需分别核对。",
       "scenes": [
         "endurance",
         "all-road",
         "group-ride"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "耐力长途"
-      },
-      {
-        "key": "frameWeight",
-        "label": "车架重量",
-        "value": "1080g"
-      },
-      {
-        "key": "tireClearance",
-        "label": "最大胎宽",
-        "value": "38mm"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "长途耐力 · 泛铺装 · 团骑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1b7d-7a7f-aa50-83a3ab66e485",
@@ -4174,36 +3295,52 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "bikeType": "endurance",
       "frameMaterial": "Advanced-grade Composite",
       "tireClearance": 40,
-      "geometryNote": "Giant Defy Advanced 2 官方几何表；Giant 建议结合身高、内长与经销商尺寸向导确认。",
       "groupset": "Shimano 105",
       "drivetrain": "2x12，50/34，11-36",
       "brakes": "hydraulic-disc",
       "wheelset": "Giant P-R1 Disc，铝合金",
       "gearRange": "11-36T / 50-34T",
       "fit": "D-Fuse 车把与座杆，耐力长途设定",
+      "geometry": [
+        {
+          "size": "XS",
+          "stack": 527,
+          "reach": 369
+        },
+        {
+          "size": "S",
+          "stack": 541,
+          "reach": 375
+        },
+        {
+          "size": "M",
+          "stack": 558,
+          "reach": 380
+        },
+        {
+          "size": "M/L",
+          "stack": 577,
+          "reach": 384
+        },
+        {
+          "size": "L",
+          "stack": 596,
+          "reach": 393
+        },
+        {
+          "size": "XL",
+          "stack": 615,
+          "reach": 402
+        }
+      ],
+      "geometryNote": "Giant Defy Advanced 2 官方几何表；Giant 建议结合身高、内长与经销商尺寸向导确认。",
       "scenes": [
         "endurance",
         "all-road",
         "group-ride"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "耐力长途"
-      },
-      {
-        "key": "tireClearance",
-        "label": "最大胎宽",
-        "value": "40mm"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "长途耐力 · 泛铺装 · 团骑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1b8d-763b-a1b8-3c6fe7095442",
@@ -4229,30 +3366,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "bikeType": "aero",
       "frameMaterial": "Advanced-grade Composite",
-      "geometryNote": "Giant Propel Advanced Pro 2027 官方几何表；一体式把组的宽度、把立和座杆设定需在购买前确认。",
       "groupset": "SRAM Force AXS E1，带功率计",
       "drivetrain": "2x12，35/48",
       "brakes": "hydraulic-disc",
       "wheelset": "Giant SLR 0 50 Carbon WheelSystem",
       "gearRange": "SRAM Force AXS，空力竞赛取向",
       "fit": "Vector 复合座杆与一体式空力把组",
+      "geometry": [
+        {
+          "size": "XS",
+          "stack": 515,
+          "reach": 377,
+          "wheelSize": "700C"
+        },
+        {
+          "size": "S",
+          "stack": 530,
+          "reach": 383,
+          "wheelSize": "700C"
+        },
+        {
+          "size": "M",
+          "stack": 546,
+          "reach": 388,
+          "wheelSize": "700C"
+        },
+        {
+          "size": "M/L",
+          "stack": 565,
+          "reach": 392,
+          "wheelSize": "700C"
+        },
+        {
+          "size": "L",
+          "stack": 582,
+          "reach": 402,
+          "wheelSize": "700C"
+        },
+        {
+          "size": "XL",
+          "stack": 596,
+          "reach": 412,
+          "wheelSize": "700C"
+        }
+      ],
+      "geometryNote": "Giant Propel Advanced Pro 2027 官方几何表；一体式把组的宽度、把立和座杆设定需在购买前确认。",
       "scenes": [
         "racing",
         "group-ride"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "空力竞赛"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "竞赛 · 团骑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1ba1-7f54-9d09-74b85dcde7c9",
@@ -4278,31 +3442,52 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "bikeType": "race",
       "frameMaterial": "Advanced-grade Composite",
-      "geometryNote": "Giant TCR Advanced Pro 官方几何表；竞赛姿势对把位和坐垫高度更敏感，不能只按身高单项决定。",
       "groupset": "SRAM Force AXS E1，带 Quarq 功率计",
       "drivetrain": "2x12，35/48",
       "brakes": "hydraulic-disc",
       "wheelset": "Giant SLR 碳纤轮组",
       "gearRange": "SRAM Force AXS，竞赛取向",
       "fit": "TCR 综合竞赛几何",
+      "geometry": [
+        {
+          "size": "XS",
+          "stack": 517,
+          "reach": 376
+        },
+        {
+          "size": "S",
+          "stack": 528,
+          "reach": 383
+        },
+        {
+          "size": "M",
+          "stack": 545,
+          "reach": 388
+        },
+        {
+          "size": "M/L",
+          "stack": 562,
+          "reach": 393
+        },
+        {
+          "size": "L",
+          "stack": 581,
+          "reach": 402
+        },
+        {
+          "size": "XL",
+          "stack": 596,
+          "reach": 412
+        }
+      ],
+      "geometryNote": "Giant TCR Advanced Pro 官方几何表；竞赛姿势对把位和坐垫高度更敏感，不能只按身高单项决定。",
       "scenes": [
         "racing",
         "climbing",
         "group-ride"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "综合竞赛"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "竞赛 · 爬坡 · 团骑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1bb4-78f8-b465-cb364362fe96",
@@ -4329,36 +3514,64 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "bikeType": "race",
       "frameMaterial": "S-Works Tarmac SL8 FACT 12r Carbon",
       "completeWeight": 6.62,
-      "geometryNote": "Specialized Tarmac SL8 官方几何表；官方页面未在同一表格中给出骑手身高区间，因此这里保留车架尺码、Stack、Reach 和头管角。",
       "groupset": "SRAM RED AXS E1，带 Quarq 功率计",
       "drivetrain": "2x12，48/35，10-33",
       "brakes": "hydraulic-disc",
       "wheelset": "Roval Rapide CLX III，碳纤轮组",
       "gearRange": "10-33T / 48-35T",
       "fit": "Rider First Engineered，轻量竞赛取向",
+      "geometry": [
+        {
+          "size": "44",
+          "headAngle": "70.5°",
+          "stack": 501,
+          "reach": 366
+        },
+        {
+          "size": "49",
+          "headAngle": "71.75°",
+          "stack": 514,
+          "reach": 375
+        },
+        {
+          "size": "52",
+          "headAngle": "72.5°",
+          "stack": 527,
+          "reach": 380
+        },
+        {
+          "size": "54",
+          "headAngle": "73°",
+          "stack": 544,
+          "reach": 384
+        },
+        {
+          "size": "56",
+          "headAngle": "73.5°",
+          "stack": 565,
+          "reach": 395
+        },
+        {
+          "size": "58",
+          "headAngle": "73.5°",
+          "stack": 591,
+          "reach": 402
+        },
+        {
+          "size": "61",
+          "headAngle": "74°",
+          "stack": 612,
+          "reach": 408
+        }
+      ],
+      "geometryNote": "Specialized Tarmac SL8 官方几何表；官方页面未在同一表格中给出骑手身高区间，因此这里保留车架尺码、Stack、Reach 和头管角。",
       "scenes": [
         "racing",
         "climbing",
         "group-ride"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "综合竞赛"
-      },
-      {
-        "key": "completeWeight",
-        "label": "整车重量",
-        "value": "6.62kg"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "竞赛 · 爬坡 · 团骑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0be38-1bc4-7826-92a4-5e5404d990a5",
@@ -4384,39 +3597,72 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "bikeType": "race",
       "frameMaterial": "Tarmac SL8 FACT 10r Carbon",
-      "geometryNote": "Specialized Tarmac SL8 官方几何表；官方页面未在同一表格中给出骑手身高区间，因此这里保留车架尺码、Stack、Reach 和头管角。",
       "groupset": "SRAM Rival AXS E1",
       "drivetrain": "2x12，48/35，10-36",
       "brakes": "hydraulic-disc",
       "wheelset": "DT Swiss R470，支持真空胎",
       "gearRange": "10-36T / 48-35T",
       "fit": "Rider First Engineered，竞赛取向",
+      "geometry": [
+        {
+          "size": "44",
+          "headAngle": "70.5°",
+          "stack": 501,
+          "reach": 366
+        },
+        {
+          "size": "49",
+          "headAngle": "71.75°",
+          "stack": 514,
+          "reach": 375
+        },
+        {
+          "size": "52",
+          "headAngle": "72.5°",
+          "stack": 527,
+          "reach": 380
+        },
+        {
+          "size": "54",
+          "headAngle": "73°",
+          "stack": 544,
+          "reach": 384
+        },
+        {
+          "size": "56",
+          "headAngle": "73.5°",
+          "stack": 565,
+          "reach": 395
+        },
+        {
+          "size": "58",
+          "headAngle": "73.5°",
+          "stack": 591,
+          "reach": 402
+        },
+        {
+          "size": "61",
+          "headAngle": "74°",
+          "stack": 612,
+          "reach": 408
+        }
+      ],
+      "geometryNote": "Specialized Tarmac SL8 官方几何表；官方页面未在同一表格中给出骑手身高区间，因此这里保留车架尺码、Stack、Reach 和头管角。",
       "scenes": [
         "racing",
         "climbing",
         "group-ride"
       ]
     },
-    "highlights": [
-      {
-        "key": "bikeType",
-        "label": "车型取向",
-        "value": "综合竞赛"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "竞赛 · 爬坡 · 团骑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e673-7377-7658-b02f-ffac20ad94b0",
     "slug": "decathlon-snb-500-ziprotect-jacket-2026",
-    "title": "Men’s Warm and Durable Snowboard Jacket SNB 500 Ziprotect - Camel and Black | Decathlon",
+    "title": "Men's Warm and Durable Snowboard Jacket SNB 500 Ziprotect",
     "model": "SNB 500 Ziprotect Men's Snowboard Jacket",
     "year": 2026,
-    "oneLiner": null,
+    "oneLiner": "10000 mm 防水、全压胶并带身体与袖部不同克重的合成棉填充；具体保暖表现仍取决于内搭和环境。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -4432,47 +3678,26 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skiing-apparel",
     "specs": {
-      "garmentType": "jacket",
-      "waterproofMm": 10000,
-      "insulation": "100 g/m² body / 80 g/m² sleeves synthetic wadding",
       "fit": "loose",
+      "fabric": "100% Polyamide",
+      "insulation": "100 g/m² body / 80 g/m² sleeves synthetic wadding",
       "seamTaping": "fully-taped",
+      "garmentType": "jacket",
       "powderSkirt": true,
-      "helmetCompatibleHood": true,
-      "fabric": "100.0% Polyamide",
+      "waterproofMm": 10000,
       "skiPassPocket": true,
-      "ziprotectCompatible": true
+      "ziprotectCompatible": true,
+      "helmetCompatibleHood": true
     },
-    "highlights": [
-      {
-        "key": "garmentType",
-        "label": "款式",
-        "value": "滑雪夹克"
-      },
-      {
-        "key": "waterproofMm",
-        "label": "防水指数",
-        "value": "10000mm"
-      },
-      {
-        "key": "fit",
-        "label": "版型",
-        "value": "宽松长款"
-      },
-      {
-        "key": "seamTaping",
-        "label": "压胶",
-        "value": "全压胶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e673-7b30-71da-802d-4473935b6d25",
     "slug": "kailas-bm45-gtx-ski-pants-2026",
-    "title": "Kailas BM45 GTX Ski Pants – kailasgear.com",
+    "title": "Kailas BM45 GTX Ski Pants",
     "model": "BM45 GTX Ski Pants",
     "year": 2026,
-    "oneLiner": null,
+    "oneLiner": "75D 三层 GORE-TEX 面料，配通风拉链、可调背带和膝部活动剪裁。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -4488,46 +3713,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skiing-apparel",
     "specs": {
-      "garmentType": "pants",
-      "construction": "3L",
       "fit": "relaxed",
-      "venting": true,
       "recco": true,
       "fabric": "75D 3L GORE-TEX",
+      "venting": true,
       "suspenders": true,
-      "corduraReinforced": true,
-      "articulatedKnees": true
+      "garmentType": "pants",
+      "construction": "3L",
+      "articulatedKnees": true,
+      "corduraReinforced": true
     },
-    "highlights": [
-      {
-        "key": "garmentType",
-        "label": "款式",
-        "value": "滑雪裤"
-      },
-      {
-        "key": "construction",
-        "label": "面料层数",
-        "value": "三层"
-      },
-      {
-        "key": "fit",
-        "label": "版型",
-        "value": "宽松"
-      },
-      {
-        "key": "venting",
-        "label": "通风拉链",
-        "value": "是"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e673-87de-7256-90ba-09ece94c4711",
     "slug": "kailas-bm45-max-mens-down-jacket-95g-2026",
-    "title": "Kailas BM45 MAX Down Ski Jacket Men's – kailasgear.com",
+    "title": "Kailas BM45 MAX Down Ski Jacket Men's 95g",
     "model": "BM45 MAX Down Ski Jacket Men's",
     "year": 2026,
-    "oneLiner": null,
+    "oneLiner": "常规版男款，40D 三层 GORE-TEX 面料，填充 95g 800FP 羽绒。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -4543,47 +3747,26 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skiing-apparel",
     "specs": {
+      "fit": "athletic-y-cut",
+      "recco": true,
+      "fabric": "40D 3L GORE-TEX",
+      "venting": true,
+      "version": "regular",
+      "insulation": "95g 800FP down",
       "garmentType": "jacket",
       "construction": "3L",
-      "insulation": "95g 800FP down",
-      "fit": "athletic-y-cut",
-      "version": "regular",
-      "venting": true,
-      "recco": true,
-      "helmetCompatibleHood": true,
-      "fabric": "40D 3L GORE-TEX",
-      "skiPassPocket": true
+      "skiPassPocket": true,
+      "helmetCompatibleHood": true
     },
-    "highlights": [
-      {
-        "key": "garmentType",
-        "label": "款式",
-        "value": "滑雪夹克"
-      },
-      {
-        "key": "construction",
-        "label": "面料层数",
-        "value": "三层"
-      },
-      {
-        "key": "fit",
-        "label": "版型",
-        "value": "Y 型运动剪裁"
-      },
-      {
-        "key": "venting",
-        "label": "通风拉链",
-        "value": "是"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e673-82cc-71c0-a3bf-d48b05d159f4",
     "slug": "kailas-bm45-max-mens-down-jacket-100g-2026",
-    "title": "Kailas BM45 MAX Down Ski Jacket Men's – kailasgear.com",
+    "title": "Kailas BM45 MAX Down Ski Jacket Men's 100g Long",
     "model": "BM45 MAX Down Ski Jacket Men's (100g 800FP Long)",
     "year": 2026,
-    "oneLiner": null,
+    "oneLiner": "加长版男款，40D 三层 GORE-TEX 面料，填充 100g 800FP 羽绒。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -4599,48 +3782,27 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skiing-apparel",
     "specs": {
-      "garmentType": "jacket",
-      "construction": "3L",
-      "insulation": "100g 800FP down",
       "fit": "athletic-h-cut",
-      "version": "long",
-      "venting": true,
-      "powderSkirt": true,
       "recco": true,
-      "helmetCompatibleHood": true,
       "fabric": "40D 3L GORE-TEX",
-      "skiPassPocket": true
+      "venting": true,
+      "version": "long",
+      "insulation": "100g 800FP down",
+      "garmentType": "jacket",
+      "powderSkirt": true,
+      "construction": "3L",
+      "skiPassPocket": true,
+      "helmetCompatibleHood": true
     },
-    "highlights": [
-      {
-        "key": "garmentType",
-        "label": "款式",
-        "value": "滑雪夹克"
-      },
-      {
-        "key": "construction",
-        "label": "面料层数",
-        "value": "三层"
-      },
-      {
-        "key": "fit",
-        "label": "版型",
-        "value": "H 型运动剪裁"
-      },
-      {
-        "key": "venting",
-        "label": "通风拉链",
-        "value": "是"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e673-8d97-7609-8ae2-1c5d94c3c50c",
     "slug": "kailas-bm45-max-womens-down-jacket-95g-2026",
-    "title": "Kailas BM45 MAX Down Ski Jacket Women's – kailasgear.com",
+    "title": "Kailas BM45 MAX Down Ski Jacket Women's 95g",
     "model": "BM45 MAX Down Ski Jacket Women's",
     "year": 2026,
-    "oneLiner": null,
+    "oneLiner": "女款 BM45 MAX，40D 三层 GORE-TEX 面料，填充 95g 800FP 羽绒。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -4656,47 +3818,26 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skiing-apparel",
     "specs": {
-      "garmentType": "jacket",
-      "construction": "3L",
-      "insulation": "95g 800FP down",
       "fit": "athletic-y-cut",
-      "venting": true,
-      "powderSkirt": true,
       "recco": true,
-      "helmetCompatibleHood": true,
       "fabric": "40D 3L GORE-TEX",
-      "skiPassPocket": true
+      "venting": true,
+      "insulation": "95g 800FP down",
+      "garmentType": "jacket",
+      "powderSkirt": true,
+      "construction": "3L",
+      "skiPassPocket": true,
+      "helmetCompatibleHood": true
     },
-    "highlights": [
-      {
-        "key": "garmentType",
-        "label": "款式",
-        "value": "滑雪夹克"
-      },
-      {
-        "key": "construction",
-        "label": "面料层数",
-        "value": "三层"
-      },
-      {
-        "key": "fit",
-        "label": "版型",
-        "value": "Y 型运动剪裁"
-      },
-      {
-        "key": "venting",
-        "label": "通风拉链",
-        "value": "是"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e68e-2624-7dee-8062-6ca6920c7285",
     "slug": "kailas-bm45-pro-ski-bibs-unisex-2026",
-    "title": "Kailas BM45 PRO Ski Bibs Unisex – kailasgear.com",
+    "title": "Kailas BM45 PRO Ski Bibs Unisex",
     "model": "BM45 PRO Ski Bibs Unisex",
     "year": 2026,
-    "oneLiner": null,
+    "oneLiner": "100D 三层 GORE-TEX Pro 背带裤，带通风拉链、膝部立体剪裁与 Cordura 加固。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -4712,38 +3853,17 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skiing-apparel",
     "specs": {
-      "garmentType": "bib-pants",
-      "construction": "3L",
       "fit": "relaxed",
-      "venting": true,
       "recco": true,
       "fabric": "100D 3L GORE-TEX Pro",
+      "venting": true,
       "suspenders": true,
-      "corduraReinforced": true,
-      "articulatedKnees": true
+      "garmentType": "bib-pants",
+      "construction": "3L",
+      "articulatedKnees": true,
+      "corduraReinforced": true
     },
-    "highlights": [
-      {
-        "key": "garmentType",
-        "label": "款式",
-        "value": "背带滑雪裤"
-      },
-      {
-        "key": "construction",
-        "label": "面料层数",
-        "value": "三层"
-      },
-      {
-        "key": "fit",
-        "label": "版型",
-        "value": "宽松"
-      },
-      {
-        "key": "venting",
-        "label": "通风拉链",
-        "value": "是"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d24d-2549-76c5-9d96-0c3ce4a27b77",
@@ -4751,7 +3871,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Atomic Bent Chetler 120 2025/26",
     "model": "Bent Chetler 120",
     "year": 2026,
-    "oneLiner": "Atomic 粉雪自由滑旗舰型号，采用 120 mm 板腰与 HRZN 3D 板头板尾设计。",
+    "oneLiner": "Atomic 粉雪自由滑旗舰型号，120 mm 板腰搭配 Powder Rocker 30/40/30 与 HRZN 3D；184 cm 单只重量 1800 g。",
     "priceMin": 7998,
     "priceMax": 7998,
     "priceCurrency": "CNY",
@@ -4771,44 +3891,58 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "waistWidth": 120,
       "turnRadius": 19,
       "turnRadiusReferenceLength": "184 cm",
+      "sidecutDimensions": "176: 142-120-133 mm / 18 m；184: 143-120-134 mm / 19 m；192: 144-120-135 mm / 20 m",
+      "profile": "Powder Rocker 30/40/30（板头、板尾摇臂，脚下反拱）",
+      "core": "Light Woodcore（杨木）",
+      "construction": "Dura Cap Sidewall",
+      "technologies": "HRZN 3D Bent；Directional Shape；Glossy Topsheet",
+      "weightPerSki": 1800,
+      "weightReferenceLength": "184 cm",
+      "baseEdgeAngle": 1,
+      "sideEdgeAngle": 87,
       "terrain": "粉雪 / 全山地自由滑",
       "skierLevel": "进阶至专家",
-      "bindingSetup": "裸板，不含固定器"
+      "bindingSetup": "裸板，不含固定器",
+      "weightBasis": "现有重量仅对应档案所列参考长度；逐长度重量及是否含固定器需进一步核对，不能当作所有尺码的通用重量。",
+      "geometryNotes": "官方日本 25/26 页面列出 176/184/192 cm 对应 18/19/20 m 半径，并明确 184 cm 为 143-120-134 mm；其他长度的板头/板尾宽不推算。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。",
+      "seasonEvidence": "Atomic 日本 2526 官方自由滑专题对应 2025/26 雪季。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://atomicsnow.jp/pages/2526-freeride-skiandboots；https://www.atomic.com/en-us/products/bent-chetler-120-aa7364-202600；https://www.grip-walk.com/faq/",
+      "sizeSpecs": [
+        {
+          "size": "176 cm",
+          "turnRadius": 18,
+          "notes": "官方日本 25/26 页面仅给出此长度的半径，未给出板头/板尾宽。"
+        },
+        {
+          "size": "184 cm",
+          "turnRadius": 19,
+          "noseWidth": 143,
+          "waistWidth": 120,
+          "tailWidth": 134
+        },
+        {
+          "size": "192 cm",
+          "turnRadius": 20,
+          "notes": "官方日本 25/26 页面仅给出此长度的半径，未给出板头/板尾宽。"
+        }
+      ]
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "120mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "19m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "粉雪 / 全山地自由滑"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶至专家"
-      }
-    ]
+    "highlights": []
   },
   {
-    "id": "01a0d22f-e32a-7eb7-8806-80a40991f07a",
-    "slug": "atomic-redster-q7-2026",
-    "title": "Atomic Redster Q7 Revoshock C 2025/26",
+    "id": "atomic-redster-q7-2027",
+    "slug": "atomic-redster-q7-2027",
+    "title": "Atomic Redster Q7 Revoshock C 2026/27",
     "model": "Redster Q7 Revoshock C",
-    "year": 2026,
-    "oneLiner": "Redster Q 系列雪道板，官方目录列出 153–181 cm 尺寸范围。",
+    "year": 2027,
+    "oneLiner": "全地域雪道系统板，174 cm 半径 14.2 m、板腰 75 mm，单支含固定器重量 2811 g。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.amersports.com/017bc76f-f5cc-42b8-a786-b49f00cdff46/ATP_AASS03788_0_GHO_Redster_Q7_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445",
+    "coverUrl": "https://cdn.amersports.com/017bc76f-f5cc-42b8-a786-b49f00cdff46/ATP_AASS03788_0_GHO_Redster_Q7_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=1350&quality=80&width=1800",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4822,46 +3956,80 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "lengthOptions": "153 / 160 / 167 / 174 / 181 cm",
       "waistWidth": 75,
-      "turnRadius": 11.8,
-      "turnRadiusReferenceLength": "153 cm",
+      "turnRadius": 14.2,
+      "turnRadiusReferenceLength": "174 cm",
+      "sidecutDimensions": "153 cm: 121-75-106 mm / 11.8 m；160 cm: 123-75-107.5 mm / 12.6 m；167 cm: 125-75-109 mm / 13.4 m；174 cm: 127-75-110.5 mm / 14.2 m；181 cm: 129-75-112 mm / 15 m",
+      "profile": "Active Camber 0/100/0",
+      "core": "Power Woodcore（白蜡木与杨木）",
+      "construction": "Dura Cap Sidewall",
+      "technologies": "Revoshock C；All-Condition Piste Shape；TI Powered；Structured Topsheet；World Cup Base Finish；Tip Protector；Pro Trak",
+      "weightPerSki": 2811,
+      "weightReferenceLength": "174 cm",
+      "baseEdgeAngle": 0.8,
+      "sideEdgeAngle": 87,
       "terrain": "雪道 / 全地域",
       "skierLevel": "中级至进阶",
-      "bindingSetup": "含 MI 12 GW 固定器"
+      "bindingSetup": "含 MI 12 GW 固定器",
+      "weightBasis": "官方按单只标注重量，对应 MI 12 GW 套装与参考板长；其他长度未公布，不折算为一对裸板重量。",
+      "sizeSpecs": [
+        {
+          "size": "153 cm",
+          "noseWidth": 121,
+          "waistWidth": 75,
+          "tailWidth": 106,
+          "turnRadius": 11.8
+        },
+        {
+          "size": "160 cm",
+          "noseWidth": 123,
+          "waistWidth": 75,
+          "tailWidth": 107.5,
+          "turnRadius": 12.6
+        },
+        {
+          "size": "167 cm",
+          "noseWidth": 125,
+          "waistWidth": 75,
+          "tailWidth": 109,
+          "turnRadius": 13.4
+        },
+        {
+          "size": "174 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 110.5,
+          "turnRadius": 14.2,
+          "weightPerSki": 2811,
+          "notes": "官方单只重量，按此固定器套装配置记录；不要与裸板重量直接比较。"
+        },
+        {
+          "size": "181 cm",
+          "noseWidth": 129,
+          "waistWidth": 75,
+          "tailWidth": 112,
+          "turnRadius": 15
+        }
+      ],
+      "geometryNotes": "已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "官方商品页对应具体 SKU，但页面未直接标注销售雪季；档案年款沿用原整理结果，尚需同 SKU 季度目录确认。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.atomic.com/en-int/products/redster-q7-revoshock-c-mi-12-gw-aa7471-202600；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "75mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "11.8m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 全地域"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至进阶"
-      }
-    ]
+    "highlights": []
   },
   {
-    "id": "01a0d22f-e354-73aa-9b00-21d1d8d7cfc5",
-    "slug": "atomic-redster-q7-8-2026",
-    "title": "Atomic Redster Q7.8 Revoshock C 2025/26",
+    "id": "atomic-redster-q7-8-2027",
+    "slug": "atomic-redster-q7-8-2027",
+    "title": "Atomic Redster Q7.8 Revoshock C 2026/27",
     "model": "Redster Q7.8 Revoshock C",
-    "year": 2026,
-    "oneLiner": "Redster Q 系列雪道板，官方目录列出多档板长并配 MI 12 GW 固定器。",
+    "year": 2027,
+    "oneLiner": "全地域雪道系统板，173 cm 板腰 84.5 mm、半径 14.4 m，单支含固定器重量 2880 g。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.amersports.com/8fd450be-84c9-4bed-b255-b49f00cdfdd0/ATP_AASS03786_0_GHO_Redster_Q7.8_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445",
+    "coverUrl": "https://cdn.amersports.com/8fd450be-84c9-4bed-b255-b49f00cdfdd0/ATP_AASS03786_0_GHO_Redster_Q7.8_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=1350&quality=80&width=1800",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4874,43 +4042,69 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "skis",
     "specs": {
       "lengthOptions": "159 / 166 / 173 / 181 cm",
-      "waistWidth": 84,
-      "turnRadius": 13.6,
-      "turnRadiusReferenceLength": "166 cm",
+      "waistWidth": 84.5,
+      "turnRadius": 14.4,
+      "turnRadiusReferenceLength": "173 cm",
+      "sidecutDimensions": "159 cm: 130-83.5-115 mm / 12.8 m；166 cm: 132-84-117.5 mm / 13.6 m；173 cm: 134-84.5-118.8 mm / 14.4 m；181 cm: 136-85-120.5 mm / 15.2 m",
+      "profile": "Active Camber 0/100/0",
+      "core": "Power Woodcore（白蜡木与杨木）",
+      "construction": "Dura Cap Sidewall",
+      "technologies": "Revoshock C；All-Condition Piste Shape；TI Powered；Structured Topsheet；World Cup Base Finish；Tip Protector；Pro Trak",
+      "weightPerSki": 2880,
+      "weightReferenceLength": "173 cm",
+      "sideEdgeAngle": 87,
       "terrain": "雪道 / 全地域",
-      "skierLevel": "中级至進阶",
-      "bindingSetup": "含 MI 12 GW 固定器"
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "含 MI 12 GW 固定器",
+      "weightBasis": "官方按单只标注重量，对应 MI 12 GW 套装与参考板长；其他长度未公布，不折算为一对裸板重量。",
+      "sizeSpecs": [
+        {
+          "size": "159 cm",
+          "noseWidth": 130,
+          "waistWidth": 83.5,
+          "tailWidth": 115,
+          "turnRadius": 12.8
+        },
+        {
+          "size": "166 cm",
+          "noseWidth": 132,
+          "waistWidth": 84,
+          "tailWidth": 117.5,
+          "turnRadius": 13.6
+        },
+        {
+          "size": "173 cm",
+          "noseWidth": 134,
+          "waistWidth": 84.5,
+          "tailWidth": 118.8,
+          "turnRadius": 14.4,
+          "weightPerSki": 2880,
+          "notes": "官方单只重量，按此固定器套装配置记录；不要与裸板重量直接比较。"
+        },
+        {
+          "size": "181 cm",
+          "noseWidth": 136,
+          "waistWidth": 85,
+          "tailWidth": 120.5,
+          "turnRadius": 15.2
+        }
+      ],
+      "geometryNotes": "已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "官方商品页对应具体 SKU，但页面未直接标注销售雪季；档案年款沿用原整理结果，尚需同 SKU 季度目录确认。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.atomic.com/en-us/products/redster-q7-8-revoshock-c-mi-12-gw-aa7470-202600；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "84mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "13.6m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 全地域"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至進阶"
-      }
-    ]
+    "highlights": []
   },
   {
-    "id": "01a0d22f-e363-7c04-b588-66d62d5e884c",
-    "slug": "atomic-redster-q9-2026",
-    "title": "Atomic Redster Q9 Revoshock S 2025/26",
+    "id": "atomic-redster-q9-2027",
+    "slug": "atomic-redster-q9-2027",
+    "title": "Atomic Redster Q9 Revoshock S 2026/27",
     "model": "Redster Q9 Revoshock S",
-    "year": 2026,
-    "oneLiner": "Redster Q 系列雪道板，官方目录列出 153–181 cm 尺寸范围。",
+    "year": 2027,
+    "oneLiner": "全地域雪道竞速取向系统板；174 cm 半径 14.2 m，单支含固定器重量 3189 g。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -4928,46 +4122,80 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "lengthOptions": "153 / 160 / 167 / 174 / 181 cm",
       "waistWidth": 75,
-      "turnRadius": 12.6,
-      "turnRadiusReferenceLength": "160 cm",
+      "turnRadius": 14.2,
+      "turnRadiusReferenceLength": "174 cm",
+      "sidecutDimensions": "153 cm: 121-75-106 mm / 11.8 m；160 cm: 123-75-107.5 mm / 12.6 m；167 cm: 125-75-109 mm / 13.4 m；174 cm: 127-75-110.5 mm / 14.2 m；181 cm: 129-75-112 mm / 15 m",
+      "profile": "Active Camber 0/100/0",
+      "core": "Power Woodcore（白蜡木与杨木）",
+      "construction": "Ultrawall 全侧墙结构",
+      "technologies": "Revoshock S；Carbon Boost；All-Condition Piste Shape；Structured Topsheet；World Cup Base Finish；Tip Protector；Icon Flex Interface",
+      "weightPerSki": 3189,
+      "weightReferenceLength": "174 cm",
+      "baseEdgeAngle": 0.8,
+      "sideEdgeAngle": 87,
       "terrain": "雪道 / 全地域",
-      "skierLevel": "进阶",
-      "bindingSetup": "含 I 12 GW 固定器套装"
+      "skierLevel": "进阶至专家",
+      "bindingSetup": "含 I 12 GW 固定器",
+      "weightBasis": "官方按单只标注重量，对应 I 12 GW 套装与参考板长；其他长度未公布，不折算为一对裸板重量。",
+      "sizeSpecs": [
+        {
+          "size": "153 cm",
+          "noseWidth": 121,
+          "waistWidth": 75,
+          "tailWidth": 106,
+          "turnRadius": 11.8
+        },
+        {
+          "size": "160 cm",
+          "noseWidth": 123,
+          "waistWidth": 75,
+          "tailWidth": 107.5,
+          "turnRadius": 12.6
+        },
+        {
+          "size": "167 cm",
+          "noseWidth": 125,
+          "waistWidth": 75,
+          "tailWidth": 109,
+          "turnRadius": 13.4
+        },
+        {
+          "size": "174 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 110.5,
+          "turnRadius": 14.2,
+          "weightPerSki": 3189,
+          "notes": "官方单只重量，按此固定器套装配置记录；不要与裸板重量直接比较。"
+        },
+        {
+          "size": "181 cm",
+          "noseWidth": 129,
+          "waistWidth": 75,
+          "tailWidth": 112,
+          "turnRadius": 15
+        }
+      ],
+      "geometryNotes": "已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "官方商品页对应具体 SKU，但页面未直接标注销售雪季；档案年款沿用原整理结果，尚需同 SKU 季度目录确认。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.atomic.com/en-us/products/redster-q9-revoshock-s-i-12-gw-aa7469-202600；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "75mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "12.6m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 全地域"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
-    "id": "01a0d22f-e384-7641-93ea-727a2b636323",
-    "slug": "atomic-redster-q9-8-2026",
-    "title": "Atomic Redster Q9.8 Revoshock S 2025/26",
+    "id": "atomic-redster-q9-8-2027",
+    "slug": "atomic-redster-q9-8-2027",
+    "title": "Atomic Redster Q9.8 Revoshock S 2026/27",
     "model": "Redster Q9.8 Revoshock S",
-    "year": 2026,
-    "oneLiner": "Atomic Redster 雪道全能系列，官方商品目录列出多种板长与固定器配置。",
+    "year": 2027,
+    "oneLiner": "Q 系列宽腰雪道系统板，173 cm 板腰 84.5 mm、半径 14.4 m，单支含固定器重量 3344 g。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.amersports.com/59174f3d-d998-49a3-ae2a-b49f00cdfb23/ATP_AASS03782_0_GHO_Redster_Q9.8_I12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=10380&quality=80&width=1445",
+    "coverUrl": "https://cdn.amersports.com/59174f3d-d998-49a3-ae2a-b49f00cdfb23/ATP_AASS03782_0_GHO_Redster_Q9.8_I12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=1350&quality=80&width=1800",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -4980,35 +4208,62 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "skis",
     "specs": {
       "lengthOptions": "159 / 166 / 173 / 181 cm",
-      "waistWidth": 84,
-      "turnRadius": 13.6,
-      "turnRadiusReferenceLength": "166 cm",
+      "waistWidth": 84.5,
+      "turnRadius": 14.4,
+      "turnRadiusReferenceLength": "173 cm",
+      "sidecutDimensions": "159 cm: 130-83.5-115 mm / 12.8 m；166 cm: 132-84-117.5 mm / 13.6 m；173 cm: 134-84.5-118.8 mm / 14.4 m；181 cm: 136-85-120.5 mm / 15.2 m",
+      "profile": "Active Camber 0/100/0",
+      "core": "Power Woodcore（白蜡木与杨木）",
+      "construction": "Ultrawall 全侧墙结构",
+      "technologies": "Revoshock S；Carbon Boost；All-Condition Piste Shape；TI Powered；Structured Topsheet；World Cup Base Finish；Tip Protector；Icon Flex Interface",
+      "weightPerSki": 3344,
+      "weightReferenceLength": "173 cm",
+      "baseEdgeAngle": 0.8,
+      "sideEdgeAngle": 87,
       "terrain": "雪道 / 全地域",
-      "skierLevel": "进阶",
-      "bindingSetup": "含 X 12 GW 或 I 12 GW 固定器套装，依 SKU 区分"
+      "skierLevel": "进阶至专家",
+      "bindingSetup": "含 I 12 GW 固定器",
+      "weightBasis": "官方按单只标注重量，对应 I 12 GW 套装与参考板长；其他长度未公布，不折算为一对裸板重量。",
+      "sizeSpecs": [
+        {
+          "size": "159 cm",
+          "noseWidth": 130,
+          "waistWidth": 83.5,
+          "tailWidth": 115,
+          "turnRadius": 12.8
+        },
+        {
+          "size": "166 cm",
+          "noseWidth": 132,
+          "waistWidth": 84,
+          "tailWidth": 117.5,
+          "turnRadius": 13.6
+        },
+        {
+          "size": "173 cm",
+          "noseWidth": 134,
+          "waistWidth": 84.5,
+          "tailWidth": 118.8,
+          "turnRadius": 14.4,
+          "weightPerSki": 3344,
+          "notes": "官方单只重量，按此固定器套装配置记录；不要与裸板重量直接比较。"
+        },
+        {
+          "size": "181 cm",
+          "noseWidth": 136,
+          "waistWidth": 85,
+          "tailWidth": 120.5,
+          "turnRadius": 15.2
+        }
+      ],
+      "geometryNotes": "已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "官方商品页对应具体 SKU，但页面未直接标注销售雪季；档案年款沿用原整理结果，尚需同 SKU 季度目录确认。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.atomic.com/en-us/products/redster-q9-8-revoshock-s-i-12-gw-aa7468-202600；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "84mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "13.6m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 全地域"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e394-75fa-a0db-7dbb481412b5",
@@ -5032,36 +4287,18 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "155 / 160 / 165 / 170 cm",
-      "waistWidth": 68,
-      "turnRadius": 12.5,
-      "turnRadiusReferenceLength": "165 cm",
       "terrain": "雪道 / 竞速 / 小回转",
       "skierLevel": "进阶",
-      "bindingSetup": "含 I 12 GW 固定器套装"
+      "bindingSetup": "含 I 12 GW 固定器套装",
+      "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.atomic.com/en-us/collections/ato-men-skis-all-skis；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "68mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "12.5m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 竞速 / 小回转"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e3b1-746d-92bb-de33748b182f",
@@ -5085,36 +4322,18 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "149 / 156 / 163 / 170 cm",
-      "waistWidth": 66,
-      "turnRadius": 11.2,
-      "turnRadiusReferenceLength": "163 cm",
       "terrain": "雪道 / 小回转",
       "skierLevel": "中级至进阶",
-      "bindingSetup": "雪板+固定器，按具体 SKU 核对"
+      "bindingSetup": "雪板+固定器，按具体 SKU 核对",
+      "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.head.com/en_SE/product/worldcup-rebels-e-slr-313365-set；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "66mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "11.2m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 小回转"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e3bd-7b6b-afec-367232f53145",
@@ -5126,7 +4345,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/316485/1/1820x2428/easy-joy-r.webp",
+    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/316485/1/683x911/easy-joy-r.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5138,36 +4357,19 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "143 / 148 / 153 / 158 / 163 cm",
-      "waistWidth": 70,
-      "turnRadius": 13.3,
-      "turnRadiusReferenceLength": "163 cm",
       "terrain": "雪道",
       "skierLevel": "入门至进阶",
-      "bindingSetup": "常见雪板+固定器套装，按具体 SKU 核对"
+      "bindingSetup": "常见雪板+固定器套装，按具体 SKU 核对",
+      "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+      "geometryNotes": "官方 316485 页面只公开五个板长，没有逐长度几何；本轮仅补板长选项，不以 Easy Joy 非 R 版本规格替代。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.head.com/en_US/product/easy-joy-r-316485；https://www.grip-walk.com/faq/",
+      "lengthOptions": "143 / 148 / 153 / 158 / 163 cm"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "70mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "13.3m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "入门至进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d24d-3a66-7284-abbf-cf425b16e010",
@@ -5197,30 +4399,16 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "turnRadiusReferenceLength": "170 cm",
       "terrain": "雪道 / carving",
       "skierLevel": "中级至进阶",
-      "bindingSetup": "PR 11 GW 系统固定器套装"
+      "bindingSetup": "PR 11 GW 系统固定器套装",
+      "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://head.ru/ski/shop/skis/discounts/CF854649-178B-30D5-CA92-E692F4F09C64/104214/；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "74mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "13m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / carving"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e3c8-7049-b4c6-2ad4e0dcb9c7",
@@ -5232,7 +4420,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://img-cdn.heureka.group/v1/d23ae16d-8f92-56f6-a776-2ace62a9bcb1.jpg",
+    "coverUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/118454263/4956321347.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5244,36 +4432,18 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "149 / 156 / 163 / 170 / 177 cm",
-      "waistWidth": 70,
-      "turnRadius": 12.5,
-      "turnRadiusReferenceLength": "170 cm",
       "terrain": "全地域 / 雪道",
       "skierLevel": "入门至初中级",
-      "bindingSetup": "雪板+固定器或套装，按具体 SKU 核对"
+      "bindingSetup": "雪板+固定器或套装，按具体 SKU 核对",
+      "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://boutique.sommets.com/en/products/head-skis-shape-v2；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "70mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "12.5m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全地域 / 雪道"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "入门至初中级"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e3d4-7ba8-b3a3-1702f0728e63",
@@ -5285,7 +4455,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/316225/1/1820x2428/shape-v2-r.webp",
+    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/316225/1/683x911/shape-v2-r.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5297,36 +4467,18 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "142 / 149 / 156 / 163 / 170 / 177 cm",
-      "waistWidth": 70,
-      "turnRadius": 12.5,
-      "turnRadiusReferenceLength": "170 cm",
       "terrain": "全地域 / 雪道",
       "skierLevel": "入门至初中级",
-      "bindingSetup": "雪板+固定器，按具体 SKU 核对"
+      "bindingSetup": "雪板+固定器，按具体 SKU 核对",
+      "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.head.com/en_US/product/shape-v2-r-316225；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "70mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "12.5m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全地域 / 雪道"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "入门至初中级"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e3e0-720b-b6a2-80dadb5ac493",
@@ -5338,7 +4490,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/1820x2428/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
+    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/683x911/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5356,30 +4508,31 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "turnRadiusReferenceLength": "170 cm",
       "terrain": "雪道",
       "skierLevel": "进阶",
-      "bindingSetup": "含 Protector EVO PR 11 GW 固定器套装"
+      "bindingSetup": "含 Protector EVO PR 11 GW 固定器套装",
+      "weightBasis": "页面展示 Weight 数值，但未明确单只/一对及是否含固定器，本轮不映射为可比较重量。",
+      "geometryNotes": "部分长度已核对：只展示实际取得的默认长度几何和官方参考长度半径；其他可选板长的几何仍待取得，不表示完整尺码覆盖。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "官方商品号 313306.SET 已核对，当前页面没有直接标注销售雪季；2025/26 待目录确认。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.head.com/en_US/product/supershape-e-magnum-313306-set；https://www.grip-walk.com/faq/",
+      "sizeSpecs": [
+        {
+          "size": "149 cm",
+          "noseWidth": 126,
+          "waistWidth": 72,
+          "tailWidth": 110,
+          "turnRadius": 9.7
+        },
+        {
+          "size": "170 cm",
+          "turnRadius": 13.1,
+          "notes": "此长度仅取得官方参考半径；板头/板腰/板尾宽未取得，不沿用默认长度。"
+        }
+      ],
+      "profile": "Speedrocker：板头 Rocker 6% / Camber 94% / 板尾 Rocker 0%（149 cm 页面展示）"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "72mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "13.1m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e3a3-75a4-bfa1-7d60de36adbe",
@@ -5391,7 +4544,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/1820x2428/worldcup-rebels-e-sl-pro-without-binding.webp",
+    "coverUrl": "https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/683x911/worldcup-rebels-e-sl-pro-without-binding.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5403,36 +4556,33 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "150 / 155 / 160 / 165 / 170 cm",
-      "waistWidth": 68,
-      "turnRadius": 12,
-      "turnRadiusReferenceLength": "160 cm",
       "terrain": "雪道 / 竞速 / 小回转",
-      "skierLevel": "进阶",
-      "bindingSetup": "可选固定器套装"
+      "skierLevel": "专家",
+      "bindingSetup": "可选多种 Freeflex / Protector 固定器，也可选择无固定器；按具体 SKU 核对",
+      "weightBasis": "页面展示 Weight 数值，但未明确单只/一对及是否含固定器，本轮不映射为可比较重量。",
+      "geometryNotes": "部分长度已核对：只展示实际取得的默认长度几何和官方参考长度半径；其他可选板长的几何仍待取得，不表示完整尺码覆盖。",
+      "bindingCompatibility": "页面同时列出 GW 和非 GW 的不同 Freeflex 固定器，不将整个 e-SL Pro 套装系列视为通用 GripWalk 兼容；按实际所选固定器说明核对靴底与板层。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "官方商品号 313236.SET 已核对，页面未直接标注销售雪季；2025/26 待目录确认。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set；https://www.grip-walk.com/faq/",
+      "sizeSpecs": [
+        {
+          "size": "150 cm",
+          "noseWidth": 122,
+          "waistWidth": 68,
+          "tailWidth": 107,
+          "turnRadius": 10.5
+        },
+        {
+          "size": "160 cm",
+          "turnRadius": 12,
+          "notes": "此长度仅取得官方参考半径；板头/板腰/板尾宽未取得，不沿用默认长度。"
+        }
+      ],
+      "profile": "Rebel Camber：Camber 100%（150 cm 页面展示）"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "68mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "12m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 竞速 / 小回转"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e3f1-7e7b-842c-e0e3f29c7685",
@@ -5440,7 +4590,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nordica Enforcer 104 2026/27",
     "model": "Enforcer 104",
     "year": 2027,
-    "oneLiner": "Nordica 2026/27 Enforcer 全山地系列，官方新季目录在售。",
+    "oneLiner": "26/27 Enforcer 系列最宽的全山地型号，面向粉雪与多变雪况；双层钛金属与 Pulse Core 提供稳定支撑。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -5460,32 +4610,69 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "waistWidth": 104,
       "turnRadius": 17.5,
       "turnRadiusReferenceLength": "167 cm",
+      "sidecutDimensions": "167 cm: 132.5-104-122.5 mm；191 cm: 137.5-104-127.5 mm（官方展示尺寸）；半径：167/17.5、173/18、179/18.5、185/19、191/19.5 m",
+      "profile": "All Mountain Rocker（板头、板尾摇臂）",
+      "core": "Performance Wood + Pulse Core",
+      "construction": "2 Ti Pulse Core；金属夹层与侧墙结构",
+      "technologies": "True Tip；Unlocked Tail Shape",
+      "weightPerPair": 4660,
+      "weightReferenceLength": "191 cm",
+      "baseEdgeAngle": 0.9,
+      "sideEdgeAngle": 87.5,
       "terrain": "全山地 / 自由滑",
       "skierLevel": "进阶",
-      "bindingSetup": "裸板，固定器另配"
+      "bindingSetup": "裸板，固定器另配",
+      "weightBasis": "官方 Weight per pair：一对裸板重量；每个板长分别记录，不推算单只重量。",
+      "sizeSpecs": [
+        {
+          "size": "167 cm",
+          "noseWidth": 132.5,
+          "waistWidth": 104,
+          "tailWidth": 122.5,
+          "turnRadius": 17.5,
+          "weightPerPair": 3980
+        },
+        {
+          "size": "173 cm",
+          "noseWidth": 133.5,
+          "waistWidth": 104,
+          "tailWidth": 122.5,
+          "turnRadius": 18,
+          "weightPerPair": 4060
+        },
+        {
+          "size": "179 cm",
+          "noseWidth": 135,
+          "waistWidth": 104,
+          "tailWidth": 125,
+          "turnRadius": 18.5,
+          "weightPerPair": 4260
+        },
+        {
+          "size": "185 cm",
+          "noseWidth": 136,
+          "waistWidth": 104,
+          "tailWidth": 126,
+          "turnRadius": 19,
+          "weightPerPair": 4460
+        },
+        {
+          "size": "191 cm",
+          "noseWidth": 137.5,
+          "waistWidth": 104,
+          "tailWidth": 127.5,
+          "turnRadius": 19.5,
+          "weightPerPair": 4660
+        }
+      ],
+      "geometryNotes": "已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。",
+      "seasonEvidence": "官方页面标题明确标注 2026/27，逐长度数据于 2026-10-13 提取。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-104-flat；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "104mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "17.5m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 / 自由滑"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e408-79f3-934f-8a8df25f1e22",
@@ -5493,7 +4680,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nordica Enforcer 89 2026/27",
     "model": "Enforcer 89",
     "year": 2027,
-    "oneLiner": "Enforcer 系列中偏雪道取向型号，列入 Nordica 2026/27 官方新品目录。",
+    "oneLiner": "26/27 Enforcer 系列偏雪道取向型号，双层钛金属与 Pulse Core 增强操控和稳定；官方提供 167–185 cm 四种长度。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -5513,32 +4700,61 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "waistWidth": 89,
       "turnRadius": 16.5,
       "turnRadiusReferenceLength": "167 cm",
+      "sidecutDimensions": "167 cm: 120-89-108 mm；185 cm: 124-89-112 mm（官方展示尺寸）；半径：167/16.5、173/17、179/17.5、185/18 m",
+      "profile": "All Mountain Rocker（板头、板尾摇臂）",
+      "core": "Performance Wood + Pulse Core",
+      "construction": "2 Ti Pulse Core；金属夹层与侧墙结构",
+      "technologies": "True Tip；Unlocked Tail Shape",
+      "weightPerPair": 4120,
+      "weightReferenceLength": "185 cm",
+      "baseEdgeAngle": 0.9,
+      "sideEdgeAngle": 87.5,
       "terrain": "雪道 / 全山地",
       "skierLevel": "中级至进阶",
-      "bindingSetup": "裸板，固定器另配"
+      "bindingSetup": "裸板，固定器另配",
+      "weightBasis": "官方 Weight per pair：一对裸板重量；每个板长分别记录，不推算单只重量。",
+      "sizeSpecs": [
+        {
+          "size": "167 cm",
+          "noseWidth": 120,
+          "waistWidth": 89,
+          "tailWidth": 108,
+          "turnRadius": 16.5,
+          "weightPerPair": 3540
+        },
+        {
+          "size": "173 cm",
+          "noseWidth": 121.5,
+          "waistWidth": 89,
+          "tailWidth": 109.5,
+          "turnRadius": 17,
+          "weightPerPair": 3720
+        },
+        {
+          "size": "179 cm",
+          "noseWidth": 122.5,
+          "waistWidth": 89,
+          "tailWidth": 110.5,
+          "turnRadius": 17.5,
+          "weightPerPair": 3900
+        },
+        {
+          "size": "185 cm",
+          "noseWidth": 124,
+          "waistWidth": 89,
+          "tailWidth": 112,
+          "turnRadius": 18,
+          "weightPerPair": 4120
+        }
+      ],
+      "geometryNotes": "已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。",
+      "seasonEvidence": "官方页面标题明确标注 2026/27，逐长度数据于 2026-10-13 提取。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-89-flat；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "89mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "16.5m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 全山地"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e417-7df7-bea5-f832c1c3d32f",
@@ -5546,7 +4762,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nordica Enforcer 94 2026/27",
     "model": "Enforcer 94",
     "year": 2027,
-    "oneLiner": "Enforcer 系列雪道与全山地兼顾型号，当前官方页面标注 2026/27 款。",
+    "oneLiner": "26/27 全山地型号，双层钛金属与 Pulse 弹性芯增强稳定和减震；官方提供 167–185 cm 四种长度。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -5564,34 +4780,63 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "lengthOptions": "167 / 173 / 179 / 185 cm",
       "waistWidth": 94,
-      "turnRadius": 16.5,
-      "turnRadiusReferenceLength": "167 cm",
+      "turnRadius": 18,
+      "turnRadiusReferenceLength": "185 cm",
+      "sidecutDimensions": "167 cm: 125-94-113 mm；185 cm: 128.5-94-116.5 mm（官方页面展示尺寸）；半径：167/16.5、173/17、179/17.5、185/18 m",
+      "profile": "All Mountain Rocker（板头、板尾摇臂）",
+      "core": "Performance Wood + Pulse Core",
+      "construction": "2 Ti Pulse Core；金属夹层与侧墙结构",
+      "technologies": "True Tip；Unlocked Tail Shape",
+      "weightPerPair": 4260,
+      "weightReferenceLength": "185 cm",
+      "baseEdgeAngle": 0.9,
+      "sideEdgeAngle": 87.5,
       "terrain": "雪道 / 全山地",
       "skierLevel": "进阶",
-      "bindingSetup": "裸板，固定器另配"
+      "bindingSetup": "裸板，固定器另配",
+      "weightBasis": "官方 Weight per pair：一对裸板重量；每个板长分别记录，不推算单只重量。",
+      "sizeSpecs": [
+        {
+          "size": "167 cm",
+          "noseWidth": 125,
+          "waistWidth": 94,
+          "tailWidth": 113,
+          "turnRadius": 16.5,
+          "weightPerPair": 3580
+        },
+        {
+          "size": "173 cm",
+          "noseWidth": 126.5,
+          "waistWidth": 94,
+          "tailWidth": 114.5,
+          "turnRadius": 17,
+          "weightPerPair": 3800
+        },
+        {
+          "size": "179 cm",
+          "noseWidth": 127.5,
+          "waistWidth": 94,
+          "tailWidth": 115.5,
+          "turnRadius": 17.5,
+          "weightPerPair": 4080
+        },
+        {
+          "size": "185 cm",
+          "noseWidth": 128.5,
+          "waistWidth": 94,
+          "tailWidth": 116.5,
+          "turnRadius": 18,
+          "weightPerPair": 4260
+        }
+      ],
+      "geometryNotes": "已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。",
+      "seasonEvidence": "官方页面标题明确标注 2026/27，逐长度数据于 2026-10-13 提取。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-94-flat；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "94mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "16.5m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 全山地"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e423-7dc5-b375-1db3a3568ce5",
@@ -5599,7 +4844,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nordica Enforcer 99 2026/27",
     "model": "Enforcer 99",
     "year": 2027,
-    "oneLiner": "Enforcer 系列全山地型号，2026/27 官方产品页标注木芯与 Pulse Core 结构。",
+    "oneLiner": "26/27 全山地宽腰型号，双层钛金属与 Pulse Core 结构；官方列出 167–191 cm 五种长度。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -5619,32 +4864,69 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "waistWidth": 99,
       "turnRadius": 17,
       "turnRadiusReferenceLength": "167 cm",
+      "sidecutDimensions": "167 cm: 129-99-117 mm；191 cm: 134-99-122 mm（官方展示尺寸）；半径：167/17、173/17.5、179/18、185/18.5、191/19 m",
+      "profile": "All Mountain Rocker（板头、板尾摇臂）",
+      "core": "Performance Wood + Pulse Core",
+      "construction": "2 Ti Pulse Core；金属夹层与侧墙结构",
+      "technologies": "True Tip；Unlocked Tail Shape",
+      "weightPerPair": 4540,
+      "weightReferenceLength": "191 cm",
+      "baseEdgeAngle": 0.9,
+      "sideEdgeAngle": 87.5,
       "terrain": "全山地",
       "skierLevel": "进阶",
-      "bindingSetup": "裸板，固定器另配"
+      "bindingSetup": "裸板，固定器另配",
+      "weightBasis": "官方 Weight per pair：一对裸板重量；每个板长分别记录，不推算单只重量。",
+      "sizeSpecs": [
+        {
+          "size": "167 cm",
+          "noseWidth": 129,
+          "waistWidth": 99,
+          "tailWidth": 117,
+          "turnRadius": 17,
+          "weightPerPair": 3800
+        },
+        {
+          "size": "173 cm",
+          "noseWidth": 131,
+          "waistWidth": 99,
+          "tailWidth": 119,
+          "turnRadius": 17.5,
+          "weightPerPair": 3920
+        },
+        {
+          "size": "179 cm",
+          "noseWidth": 132,
+          "waistWidth": 99,
+          "tailWidth": 120,
+          "turnRadius": 18,
+          "weightPerPair": 4180
+        },
+        {
+          "size": "185 cm",
+          "noseWidth": 133,
+          "waistWidth": 99,
+          "tailWidth": 121,
+          "turnRadius": 18.5,
+          "weightPerPair": 4360
+        },
+        {
+          "size": "191 cm",
+          "noseWidth": 134,
+          "waistWidth": 99,
+          "tailWidth": 122,
+          "turnRadius": 19,
+          "weightPerPair": 4540
+        }
+      ],
+      "geometryNotes": "已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。",
+      "seasonEvidence": "官方页面标题明确标注 2026/27，逐长度数据于 2026-10-13 提取。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-99-flat；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "99mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "17m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e42e-75a0-a97c-6c5eb878a084",
@@ -5652,7 +4934,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nordica Santa Ana 102 2026/27",
     "model": "Santa Ana 102",
     "year": 2027,
-    "oneLiner": "Santa Ana 女性全山地系列宽板腰型号，2026/27 官方新品目录在售。",
+    "oneLiner": "26/27 Santa Ana 女性全山地宽板腰型号，采用 Terrain Specific Metal 与 Pulse Core；官方提供 155–179 cm 五种长度。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
@@ -5672,32 +4954,70 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "waistWidth": 102,
       "turnRadius": 16.5,
       "turnRadiusReferenceLength": "155 cm",
+      "sidecutDimensions": "155 cm: 128-102-118 mm；179 cm: 133-102-123 mm（官方展示尺寸）；半径：155/16.5、161/17、167/17.5、173/18、179/18.5 m",
+      "profile": "All Mountain Rocker（板头、板尾摇臂）",
+      "core": "Performance Wood + Pulse Core",
+      "construction": "TSM Pulse Core；Terrain Specific Metal 金属层",
+      "technologies": "True Tip",
+      "weightPerPair": 4320,
+      "weightReferenceLength": "179 cm",
+      "baseEdgeAngle": 0.9,
+      "sideEdgeAngle": 87.5,
       "terrain": "全山地 / 自由滑",
       "skierLevel": "中级至进阶",
-      "bindingSetup": "裸板，固定器另配"
+      "bindingSetup": "裸板，固定器另配",
+      "weightBasis": "官方 Weight per pair：一对裸板重量；每个板长分别记录，不推算单只重量。",
+      "sizeSpecs": [
+        {
+          "size": "155 cm",
+          "noseWidth": 128,
+          "waistWidth": 102,
+          "tailWidth": 118,
+          "turnRadius": 16.5,
+          "weightPerPair": 3500
+        },
+        {
+          "size": "161 cm",
+          "noseWidth": 129,
+          "waistWidth": 102,
+          "tailWidth": 119,
+          "turnRadius": 17,
+          "weightPerPair": 3700
+        },
+        {
+          "size": "167 cm",
+          "noseWidth": 130.5,
+          "waistWidth": 102,
+          "tailWidth": 120.5,
+          "turnRadius": 17.5,
+          "weightPerPair": 3920
+        },
+        {
+          "size": "173 cm",
+          "noseWidth": 131.5,
+          "waistWidth": 101,
+          "tailWidth": 121.5,
+          "turnRadius": 18,
+          "weightPerPair": 4060,
+          "notes": "官方此长度板腰为 101 mm，与型号名称及其他长度不同，按原表保留；购买前向品牌核对。"
+        },
+        {
+          "size": "179 cm",
+          "noseWidth": 133,
+          "waistWidth": 102,
+          "tailWidth": 123,
+          "turnRadius": 18.5,
+          "weightPerPair": 4320
+        }
+      ],
+      "geometryNotes": "已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。",
+      "seasonEvidence": "官方页面标题明确标注 2026/27，逐长度数据于 2026-10-13 提取。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.nordica.com/canada/en/collection/women/skis/santa-ana/santa-ana-102；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "102mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "16.5m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 / 自由滑"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e446-7c8a-add7-1c87a5b4ece1",
@@ -5709,7 +5029,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw0f3e9f73/images/large/RAMFT04_FCMDX02_EXPERIENCE_76_XPRESS_XPRESS_10_GW_B83_BLACK_72DPI_01.jpg?sw=800",
+    "coverUrl": "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dw0f3e9f73/images/large/RAMFT04_FCMDX02_EXPERIENCE_76_XPRESS_XPRESS_10_GW_B83_BLACK_72DPI_01.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5727,30 +5047,16 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "turnRadiusReferenceLength": "152 cm",
       "terrain": "雪道 / 全山地",
       "skierLevel": "入门至中级",
-      "bindingSetup": "裸板或可选 XPRESS 10 GW"
+      "bindingSetup": "裸板或可选 XPRESS 10 GW",
+      "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.rossignol.com/us-en/experience-76-xpress-RAMFT04000152.html；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "76mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "12m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 全山地"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "入门至中级"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d24d-2fcd-770a-be1c-687fa656ee5c",
@@ -5780,30 +5086,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "turnRadiusReferenceLength": "157 cm",
       "terrain": "雪道 / carving",
       "skierLevel": "中级",
-      "bindingSetup": "裸板，可选 XPRESS 11 GW 固定器"
+      "bindingSetup": "裸板，可选 XPRESS 11 GW 固定器",
+      "weightBasis": "官方列名为 kg/pair，但具体配置口径仍待确认；本轮保留来源中的数值，不折算为单只或套装重量。",
+      "geometryNotes": "完整逐长度几何来自对应官方 SKU。板长为 cm，板宽为 mm，半径为 m；规格表不代表当前库存。",
+      "bindingCompatibility": "可选 XPRESS 11 GW：成人 Alpine ISO 5355 A / GripWalk ISO 23223 A，BSL 260–385 mm。要求 XPRESS 系统；不能套用 KONECT 的调节范围。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "RAPPX05000 与对应尺码 SKU 已核对；当前官方页面未直接标注销售雪季，档案 2026/27 仍需年度目录确认。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.rossignol.com/ca-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000.html；https://www.rossignol.com/cz-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000150.html；https://www.rossignol.com/kr-ko/mens-forza-40-ca-xpress-piste-skis-RAPPX05000157.html；https://www.rossignol.com/de-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000164.html；https://www.rossignol.com/ch-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000171.html；https://www.rossignol.com/hr-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000179.html；https://www.grip-walk.com/faq/",
+      "sizeSpecs": [
+        {
+          "size": "150 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 111,
+          "turnRadius": 10
+        },
+        {
+          "size": "157 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 111,
+          "turnRadius": 11
+        },
+        {
+          "size": "164 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 111,
+          "turnRadius": 12
+        },
+        {
+          "size": "171 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 111,
+          "turnRadius": 14
+        },
+        {
+          "size": "179 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 111,
+          "turnRadius": 15
+        }
+      ],
+      "core": "PEFC 认证杨木板芯",
+      "construction": "Rectangular Full Sidewall",
+      "technologies": "V-Profile；Carbon Beam"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "75mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "11m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / carving"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e452-784e-b3eb-b1ba9c16ff07",
@@ -5815,7 +5147,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw562b8531/images/large/RAOPX01000_72DPI_01_v01.jpg?sw=800",
+    "coverUrl": "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dw562b8531/images/large/RAOPX01000_72DPI_01_v01.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5833,30 +5165,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "turnRadiusReferenceLength": "164 cm",
       "terrain": "雪道 / carving",
       "skierLevel": "中级",
-      "bindingSetup": "裸板或可选 NX 12 KONECT GW"
+      "bindingSetup": "裸板或可选 NX 12 KONECT GW",
+      "weightBasis": "官方列名为 kg/pair，但具体配置口径仍待确认；本轮保留来源中的数值，不折算为单只或套装重量。",
+      "geometryNotes": "完整逐长度几何来自对应官方 SKU。板长为 cm，板宽为 mm，半径为 m；规格表不代表当前库存。",
+      "bindingCompatibility": "可选 NX 12 KONECT GW B80：官方支持成人 Alpine ISO 5355 A / GripWalk ISO 23223 靴底，BSL 260–375 mm。仅适用于此固定器选项，无固定器版本需另核对。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "官方 RAOPX01000 页面未明确销售雪季；2025/26 标记仍需同 SKU 年度目录确认。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html；https://www.grip-walk.com/faq/",
+      "sizeSpecs": [
+        {
+          "size": "150 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 111,
+          "turnRadius": 10
+        },
+        {
+          "size": "157 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 111,
+          "turnRadius": 11
+        },
+        {
+          "size": "164 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 111,
+          "turnRadius": 12
+        },
+        {
+          "size": "171 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 111,
+          "turnRadius": 14
+        },
+        {
+          "size": "179 cm",
+          "noseWidth": 127,
+          "waistWidth": 75,
+          "tailWidth": 111,
+          "turnRadius": 15
+        }
+      ],
+      "core": "PEFC 认证杨木板芯",
+      "construction": "Rectangular Full Sidewall",
+      "profile": "Tip Rocker + 传统 Camber",
+      "technologies": "V-Profile；Carbon Alloy Matrix；Mini Cap；Premium Hardtop；Sintered HD Base"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "75mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "12m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / carving"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e46c-7c4a-907f-4c2a75deb835",
@@ -5868,7 +5227,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa8eccfa0/images/large/RAPSE01000_72DPI_01_v01.jpg?sw=800",
+    "coverUrl": "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dwa8eccfa0/images/large/RAPSE01000_72DPI_01_v01.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5885,31 +5244,51 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "turnRadius": 16,
       "turnRadiusReferenceLength": "172 cm",
       "terrain": "雪道 / 长弧 carving",
-      "skierLevel": "进阶",
-      "bindingSetup": "裸板或可选 SPX 14 KONECT GW"
+      "skierLevel": "进阶至专家",
+      "bindingSetup": "裸板或可选 SPX 14 KONECT GW",
+      "weightBasis": "官方列名为 kg/pair，但具体配置口径仍待确认；本轮保留来源中的数值，不折算为单只或套装重量。",
+      "geometryNotes": "完整逐长度几何来自对应官方 SKU。板长为 cm，板宽为 mm，半径为 m；规格表不代表当前库存。",
+      "bindingCompatibility": "可选 SPX 14 KONECT GW B80：成人 Alpine ISO 5355 A / GripWalk ISO 23223 A，BSL 260–375 mm。仅适用于此固定器选项；系统板不能任意替换为其他轨道固定器。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "官方 RAPSE01000 页面明确标注 NEW COLLECTION FW2627。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.rossignol.com/us-en/hero-elite-lt-ti-alpine-skis-RAPSE01000.html；https://www.grip-walk.com/faq/",
+      "sizeSpecs": [
+        {
+          "size": "167 cm",
+          "noseWidth": 120,
+          "waistWidth": 71,
+          "tailWidth": 102,
+          "turnRadius": 15
+        },
+        {
+          "size": "172 cm",
+          "noseWidth": 120,
+          "waistWidth": 71,
+          "tailWidth": 102,
+          "turnRadius": 16
+        },
+        {
+          "size": "177 cm",
+          "noseWidth": 120,
+          "waistWidth": 71,
+          "tailWidth": 102,
+          "turnRadius": 17
+        },
+        {
+          "size": "182 cm",
+          "noseWidth": 120,
+          "waistWidth": 71,
+          "tailWidth": 102,
+          "turnRadius": 18
+        }
+      ],
+      "core": "PEFC 认证山毛榉木板芯",
+      "construction": "Rectangular Full Sidewall；Full Titanal Layer",
+      "profile": "Tip Rocker + 传统 Camber",
+      "technologies": "Power Tip；Predictive Sidecut；LCT；V-Profile；Sintered HD Base；Premium Hardtop"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "71mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "16m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 长弧 carving"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e479-77ee-847a-9938a1da729b",
@@ -5921,7 +5300,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw283c3bb5/images/large/RAPHE01000_72DPI_01_v01.jpg?sw=800",
+    "coverUrl": "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dw283c3bb5/images/large/RAPHE01000_72DPI_01_v01.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5934,35 +5313,52 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "skis",
     "specs": {
       "lengthOptions": "169 / 173 / 179 / 183 cm",
-      "waistWidth": 70,
-      "turnRadius": 17,
-      "turnRadiusReferenceLength": "173 cm",
       "terrain": "雪道 / 竞速 / 长弧",
-      "skierLevel": "进阶至专家",
-      "bindingSetup": "R22 系统板，固定器依套装配置"
+      "skierLevel": "专家",
+      "bindingSetup": "R22 系统板，固定器依套装配置",
+      "weightBasis": "官方列名为 kg/pair，但具体配置口径仍待确认；本轮保留来源中的数值，不折算为单只或套装重量。",
+      "geometryNotes": "完整逐长度几何来自对应官方 SKU。板长为 cm，板宽为 mm，半径为 m；规格表不代表当前库存。",
+      "bindingCompatibility": "官方可选 SPX 14 ROCKERACE GW / SPX 15 ROCKERACE GW MASTER，要求 R22 板层；支持成人 Alpine ISO 5355 A / GripWalk ISO 23223 A。不能把 KONECT 或 XPRESS 当作 R22 的通用替代。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "官方 RAPHE01000 页面明确标注 NEW COLLECTION FW2627。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.rossignol.com/se-en/hero-master-lt-r22-alpine-skis-RAPHE01000.html；https://www.grip-walk.com/faq/",
+      "sizeSpecs": [
+        {
+          "size": "169 cm",
+          "noseWidth": 115,
+          "waistWidth": 70,
+          "tailWidth": 98,
+          "turnRadius": 15
+        },
+        {
+          "size": "173 cm",
+          "noseWidth": 115,
+          "waistWidth": 70,
+          "tailWidth": 98,
+          "turnRadius": 17
+        },
+        {
+          "size": "179 cm",
+          "noseWidth": 115,
+          "waistWidth": 70,
+          "tailWidth": 97,
+          "turnRadius": 19
+        },
+        {
+          "size": "183 cm",
+          "noseWidth": 115,
+          "waistWidth": 71,
+          "tailWidth": 96,
+          "turnRadius": 21
+        }
+      ],
+      "core": "PEFC 认证山毛榉木板芯",
+      "construction": "Rectangular Full Sidewall；Full Titanal Layer",
+      "profile": "Full Camber",
+      "technologies": "LCT；Cascade Tip；Oversized Sidecut；Sintered UHD Base"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "70mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "17m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 竞速 / 长弧"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶至专家"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e488-7252-ac28-beb307b374d3",
@@ -5970,11 +5366,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Rossignol Soul 102 2026/27",
     "model": "Soul 102",
     "year": 2027,
-    "oneLiner": "新一代多用途 freeride 雪板，官网列出 164、172、180 cm 等板长。",
+    "oneLiner": "2026/27 全山地自由滑雪板，172 cm 板腰 102 mm，采用渐进式板型与 Tip & Tail Rocker。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa120bfdc/images/large/RAPMR03000_72DPI_01_v01.jpg?sw=800",
+    "coverUrl": "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dwa120bfdc/images/large/RAPMR03000_72DPI_01_v01.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -5986,36 +5382,64 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "164 / 172 / 180 cm",
-      "waistWidth": 101,
-      "turnRadius": 15,
+      "lengthOptions": "156 / 164 / 172 / 180 / 188 cm",
+      "waistWidth": 102,
+      "turnRadius": 16,
       "turnRadiusReferenceLength": "172 cm",
+      "sidecutDimensions": "156 cm: 135-100-125 mm / 14 m；164 cm: 135-101-125 mm / 15 m；172 cm: 135-102-125 mm / 16 m；180 cm: 135-102-125 mm / 17 m；188 cm: 135-104-125 mm / 18 m",
+      "profile": "Tip & Tail Rocker",
+      "core": "PEFC 杨木木芯；LCT 木芯结构",
+      "construction": "Rectangular Full Sidewall",
+      "technologies": "Air Tip；Titanal Beam；V-A-S；LCT；Progressive Sidecut；Sintered HD Base",
       "terrain": "全山地 / 自由滑 / 粉雪",
-      "skierLevel": "中级至进阶",
-      "bindingSetup": "裸板，不含固定器"
+      "skierLevel": "进阶至专家",
+      "bindingSetup": "裸板，不含固定器",
+      "weightBasis": "官方重量字段的单位或配置口径尚需确认，本轮不填逐长度重量。",
+      "sizeSpecs": [
+        {
+          "size": "156 cm",
+          "noseWidth": 135,
+          "waistWidth": 100,
+          "tailWidth": 125,
+          "turnRadius": 14
+        },
+        {
+          "size": "164 cm",
+          "noseWidth": 135,
+          "waistWidth": 101,
+          "tailWidth": 125,
+          "turnRadius": 15
+        },
+        {
+          "size": "172 cm",
+          "noseWidth": 135,
+          "waistWidth": 102,
+          "tailWidth": 125,
+          "turnRadius": 16
+        },
+        {
+          "size": "180 cm",
+          "noseWidth": 135,
+          "waistWidth": 102,
+          "tailWidth": 125,
+          "turnRadius": 17
+        },
+        {
+          "size": "188 cm",
+          "noseWidth": 135,
+          "waistWidth": 104,
+          "tailWidth": 125,
+          "turnRadius": 18
+        }
+      ],
+      "geometryNotes": "已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。 板腰随板长变化，官方历史规格包含 156/188 cm，当前美国页面仅列 164/172/180 cm；规格不代表库存。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。",
+      "seasonEvidence": "官方页面标注 NEW COLLECTION FW2627。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.rossignol.com/us-en/soul-102-alpine-skis-RAPMR03000.html；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "101mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "15m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 / 自由滑 / 粉雪"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e493-7769-9f6a-6dea96e16442",
@@ -6039,29 +5463,65 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "148 / 156 / 164 / 172 / 180 cm",
       "waistWidth": 86,
       "terrain": "巡游 / 全山地",
       "skierLevel": "中级至进阶",
-      "bindingSetup": "裸板，固定器另配"
+      "bindingSetup": "裸板，固定器另配",
+      "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/mtn-86-carbon-li8310；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "86mm"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "巡游 / 全山地"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至进阶"
-      }
-    ]
+    "highlights": []
+  },
+  {
+    "id": "salomon-qst-100-2027",
+    "slug": "salomon-qst-100-2027",
+    "title": "Salomon QST 100 2026/27",
+    "model": "QST 100",
+    "year": 2027,
+    "oneLiner": "QST 系列全山地自由滑型号，100 mm 板腰兼顾雪道巡航与软雪探索。",
+    "priceMin": null,
+    "priceMax": null,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://cdn.dam.salomon.com/1aa634e6-dd58-4557-bc47-b45100de9b96/L49189200%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=medium&width=3840",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "brand": {
+      "slug": "salomon",
+      "name": "Salomon",
+      "nameCn": null
+    },
+    "categorySlug": "skis",
+    "specs": {
+      "lengthOptions": "148 / 156 / 164 / 172 / 180 / 188 cm",
+      "waistWidth": 100,
+      "turnRadius": 16.5,
+      "turnRadiusReferenceLength": "172 cm",
+      "sidecutDimensions": "156 cm: 131-100-119 mm / 14.5 m；164 cm: 132-100-120 mm / 15.5 m；172 cm: 133-100-121 mm / 16.5 m；180 cm: 134-100-122 mm / 17.5 m；188 cm: 135-100-123 mm / 18.5 m；148 cm 官方未提供对应尺寸表",
+      "profile": "Freeride Profile；Rocker-Camber-Rocker",
+      "core": "全杨木木芯",
+      "construction": "Full Sandwich Sidewalls；Ti Binding Reinforcement",
+      "technologies": "Cork Damplifier；Basalt Superlight Fibers；Fiberglass",
+      "weightPerSki": 1780,
+      "weightReferenceLength": "172 cm",
+      "terrain": "全山地 / 自由滑 / 粉雪",
+      "skierLevel": "中级至进阶",
+      "bindingSetup": "裸板，不含固定器",
+      "weightBasis": "现有重量仅对应档案所列参考长度；逐长度重量及是否含固定器需进一步核对，不能当作所有尺码的通用重量。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/qst-100-black-li9359；https://www.grip-walk.com/faq/"
+    },
+    "highlights": []
   },
   {
     "id": "01a0d22f-e49e-75cf-8b65-3bfb53b31650",
@@ -6069,11 +5529,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon QST 106 2026/27",
     "model": "QST 106",
     "year": 2027,
-    "oneLiner": "QST 系列宽板腰 freeride 型号，官方 2026/27 冬季目录在售。",
+    "oneLiner": "QST 系列宽板腰 freeride 型号，106 mm 板腰；173 cm 单支重量 1800 g。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/a71fd066-4d36-4bfa-951d-b45100de98e2/L49189000%2B/PNG-2000px-max-72dpi.png",
+    "coverUrl": "https://cdn.dam.salomon.com/abd97aa8-d2d7-4b98-87ab-b31b00bc75e5/L47774500%2B/PNG-2000px-max-72dpi.png",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -6087,46 +5547,39 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "lengthOptions": "157 / 165 / 173 / 181 / 189 cm",
       "waistWidth": 106,
-      "turnRadius": 16.5,
-      "turnRadiusReferenceLength": "157 cm",
+      "turnRadius": 18.5,
+      "turnRadiusReferenceLength": "173 cm",
+      "sidecutDimensions": "157 cm: 136-106-123 mm / 16.5 m；165 cm: 137-106-124 mm / 17.5 m；173 cm: 138-106-125 mm / 18.5 m；181 cm: 139-106-126 mm / 19.5 m；189 cm: 140-106-127 mm / 20.5 m",
+      "profile": "Rocker-Camber-Rocker（Freeride Profile）",
+      "core": "全杨木木芯",
+      "construction": "Full Sandwich Sidewalls；Ti Binding Reinforcement",
+      "technologies": "Cork Damplifier；Basalt Superlight Fibers；Fiberglass",
+      "weightPerSki": 1800,
+      "weightReferenceLength": "173 cm",
       "terrain": "自由滑 / 粉雪",
       "skierLevel": "进阶",
-      "bindingSetup": "裸板或依销售套装配置"
+      "bindingSetup": "裸板，不含固定器",
+      "weightBasis": "现有重量仅对应档案所列参考长度；逐长度重量及是否含固定器需进一步核对，不能当作所有尺码的通用重量。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/qst-106-almond-milk-li8133；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "106mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "16.5m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "自由滑 / 粉雪"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
-    "id": "01a0d22f-e4a9-75f1-a049-b409544e7724",
-    "slug": "salomon-qst-92-2027",
-    "title": "Salomon QST 92 2023/24",
-    "model": "QST 92",
-    "year": 2024,
-    "oneLiner": "QST freeride 系列中偏窄板腰的全山地型号，适合雪道与混合雪况。",
+    "id": "salomon-qst-94-2027",
+    "slug": "salomon-qst-94-2027",
+    "title": "Salomon QST 94 2026/27",
+    "model": "QST 94",
+    "year": 2027,
+    "oneLiner": "新一代 QST 全山地自由滑雪板，94 mm 板腰兼顾雪道抓边与软雪浮力。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/bc1e0c3d-981e-48e7-bd6a-b2f40157afe3/L47232400%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=medium&width=3840",
+    "coverUrl": "https://cdn.dam.salomon.com/f7204858-5aae-4ff2-a449-b45100dea002/L49189300%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=medium&width=3840",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -6138,89 +5591,29 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "152 / 160 / 168 / 176 / 184 cm",
-      "waistWidth": 92,
-      "turnRadius": 15,
-      "turnRadiusReferenceLength": "176 cm",
+      "lengthOptions": "156 / 164 / 172 / 180 / 188 cm",
+      "waistWidth": 94,
+      "turnRadius": 15.5,
+      "turnRadiusReferenceLength": "172 cm",
+      "sidecutDimensions": "156 cm: 131-94-117 mm / 13.5 m；164 cm: 132-94-118 mm / 14.5 m；172 cm: 133-94-119 mm / 15.5 m；180 cm: 134-94-120 mm / 16.5 m；188 cm: 135-94-121 mm / 17.5 m",
+      "profile": "Freeride Profile",
+      "core": "全杨木木芯",
+      "construction": "Full Sandwich Sidewalls；Ti Binding Reinforcement",
+      "technologies": "Cork Damplifier；Basalt Superlight Fibers；Fiberglass",
+      "weightPerSki": 1700,
+      "weightReferenceLength": "172 cm",
       "terrain": "全山地 / 自由滑",
-      "skierLevel": "中级至进阶",
-      "bindingSetup": "裸板或依销售套装配置"
+      "skierLevel": "中级",
+      "bindingSetup": "裸板，不含固定器",
+      "weightBasis": "现有重量仅对应档案所列参考长度；逐长度重量及是否含固定器需进一步核对，不能当作所有尺码的通用重量。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/qst-94-lilac-li9360；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "92mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "15m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 / 自由滑"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至进阶"
-      }
-    ]
-  },
-  {
-    "id": "01a0d22f-e4b4-7792-85a4-bef71207cf27",
-    "slug": "salomon-qst-98-2027",
-    "title": "Salomon QST 98 2023/24",
-    "model": "QST 98",
-    "year": 2024,
-    "oneLiner": "QST freeride 系列中宽度适中的全山地型号，主打多雪况适应。",
-    "priceMin": null,
-    "priceMax": null,
-    "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/f1b63fed-8741-4144-802d-b2f40156d659/L47232300%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=low&width=3840",
-    "ratingOverall": null,
-    "ratingCount": 0,
-    "favoriteCount": 0,
-    "composite": null,
-    "brand": {
-      "slug": "salomon",
-      "name": "Salomon",
-      "nameCn": null
-    },
-    "categorySlug": "skis",
-    "specs": {
-      "lengthOptions": "169 / 176 / 183 / 189 cm",
-      "waistWidth": 98,
-      "turnRadius": 16,
-      "turnRadiusReferenceLength": "176 cm",
-      "terrain": "全山地 / 自由滑",
-      "skierLevel": "中级至进阶",
-      "bindingSetup": "裸板或依销售套装配置"
-    },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "98mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "16m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 / 自由滑"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e4c2-7277-9562-c72119100cdd",
@@ -6244,36 +5637,19 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "skis",
     "specs": {
-      "lengthOptions": "170 / 178 / 186 / 192 cm",
       "waistWidth": 112,
-      "turnRadius": 17,
-      "turnRadiusReferenceLength": "170 cm",
       "terrain": "自由滑 / 粉雪",
       "skierLevel": "进阶",
-      "bindingSetup": "裸板或依销售套装配置"
+      "bindingSetup": "裸板或依销售套装配置",
+      "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/s-lab-qst-blank-li7032/L47713400%2B；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "112mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "17m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "自由滑 / 粉雪"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d22f-e4cc-70df-8ca7-17e0122748f9",
@@ -6303,30 +5679,16 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "turnRadiusReferenceLength": "169 cm",
       "terrain": "雪道 / 全山地",
       "skierLevel": "中级至进阶",
-      "bindingSetup": "雪板+板层+固定器"
+      "bindingSetup": "雪板+板层+固定器",
+      "weightBasis": "尚缺可核对的逐长度重量，不以同系列或其他年款推算。",
+      "geometryNotes": "现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。",
+      "bindingCompatibility": "实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。",
+      "mountingNotes": "按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。",
+      "seasonEvidence": "年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。",
+      "sourceCheckedAt": "2026-10-13",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/stance-84-r-and-mi12-li1721；https://www.grip-walk.com/faq/"
     },
-    "highlights": [
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "84mm"
-      },
-      {
-        "key": "turnRadius",
-        "label": "转弯半径",
-        "value": "13m"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "雪道 / 全山地"
-      },
-      {
-        "key": "skierLevel",
-        "label": "适合水平",
-        "value": "中级至进阶"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2b12-7504-9310-a349a1410840",
@@ -6334,11 +5696,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Arbor A-Frame 2025",
     "model": "A-Frame",
     "year": 2025,
-    "oneLiner": "一块要求你先把技术练好的板子。它的边刃精度接近硬鞋刻滑板，但依然保留了软鞋的舒适站位。",
+    "oneLiner": "长半径侧切与 RWD 碳纤维结构，主打粉雪中的控制力，同时也可作为日常全山板滑行。",
     "priceMin": 6599,
     "priceMax": 6599,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.arbor-collective.ca/cdn/shop/files/1-ARBOR_AFRAME_2024_STUDIO_01-rec.png?v=1724274612",
+    "coverUrl": "https://www.arborcollective.com/cdn/shop/files/1-ARBOR_AFRAME_2024_STUDIO_01-rec.png?v=1724274612&width=1445",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -6351,49 +5713,95 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 162,
-      "effectiveEdge": 1330,
-      "sidecut": 9.1,
-      "waistWidth": 260,
-      "stanceSetback": 25,
-      "profile": "纯 Camber",
-      "profileFamily": "camber",
+      "effectiveEdge": 1196,
+      "sidecutRadii": "9.3 / 8.4 / 9.3 m",
+      "waistWidth": 256,
+      "stanceSetback": 10,
+      "profile": "Parabolic Camber / System Camber",
       "shape": "定向",
-      "core": "FSC 白杨 / 竹",
-      "fiberglass": "Triax + 碳纤维带",
-      "base": "烧结 7200",
+      "core": "Highland III Core",
+      "fiberglass": "Mixed Glassing",
+      "base": "Sintered Base",
       "weight": 3180,
-      "flex": 8.5,
       "damping": 8.5,
       "pop": 5.5,
       "turnRadiusFeel": "长弧，需要主动压板",
+      "warranty": 3,
+      "flex": 8.5,
+      "profileFamily": "camber",
+      "sizeSpecs": [
+        {
+          "size": "158",
+          "overallLength": 1580,
+          "waistWidth": 254,
+          "effectiveEdge": 1160,
+          "sidecutRadii": "9.1 / 8.2 / 9.1 m",
+          "noseLength": 310,
+          "tailLength": 190,
+          "noseWidth": 296,
+          "tailWidth": 288,
+          "setback": 10
+        },
+        {
+          "size": "159W",
+          "overallLength": 1590,
+          "waistWidth": 267,
+          "effectiveEdge": 1170,
+          "sidecutRadii": "9.0 / 8.1 / 9.0 m",
+          "noseLength": 310,
+          "tailLength": 190,
+          "noseWidth": 310,
+          "tailWidth": 301,
+          "setback": 10
+        },
+        {
+          "size": "162",
+          "overallLength": 1620,
+          "waistWidth": 256,
+          "effectiveEdge": 1196,
+          "sidecutRadii": "9.3 / 8.4 / 9.3 m",
+          "noseLength": 312,
+          "tailLength": 192,
+          "noseWidth": 300,
+          "tailWidth": 291,
+          "setback": 10
+        },
+        {
+          "size": "165MW",
+          "overallLength": 1650,
+          "waistWidth": 266,
+          "effectiveEdge": 1222,
+          "sidecutRadii": "9.45 / 8.55 / 9.45 m",
+          "noseLength": 314,
+          "tailLength": 194,
+          "noseWidth": 311,
+          "tailWidth": 302,
+          "setback": 10
+        },
+        {
+          "size": "170W",
+          "overallLength": 1700,
+          "waistWidth": 274,
+          "effectiveEdge": 1268,
+          "sidecutRadii": "9.45 / 8.8 / 9.45 m",
+          "noseLength": 316,
+          "tailLength": 196,
+          "noseWidth": 320,
+          "tailWidth": 311,
+          "setback": 10
+        }
+      ],
       "scenes": [
         "carving",
         "all-mountain"
       ],
-      "warranty": 3
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 334.95–389.95",
+      "priceMarket": "原币 USD；来源商店 www.arborcollective.com",
+      "priceSource": "https://www.arborcollective.com/products/a-frame-snowboard-25",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "162cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1330mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "9.1m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "260mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2b3b-715a-bb53-944af2efe6f7",
@@ -6401,11 +5809,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Bataleon Evil Twin 2025",
     "model": "Evil Twin",
     "year": 2025,
-    "oneLiner": "勺形板头把卡刃这件事基本消除了。它是从新手过渡到公园最平滑的一块板，容错高但不软塌。",
+    "oneLiner": "3BT 与 Sidekick 配合中等 Camber 和真双向板型，定位公园与全山自由式；试滑反馈偏灵活、宽容，但板头尾在高速和烂雪中不适合强压。",
     "priceMin": 4899,
     "priceMax": 4899,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1103223.jpg?v=1767733151",
+    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1103223.jpg?height=1000&v=1767733151",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -6418,49 +5826,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 154,
-      "effectiveEdge": 1170,
-      "sidecut": 7.4,
-      "waistWidth": 251,
+      "effectiveEdge": 1175,
+      "sidecut": 7.94,
+      "waistWidth": 250,
       "stanceSetback": 0,
-      "profile": "3BT（板头尾勺形 + 板下 Camber）",
-      "profileFamily": "hybrid",
+      "profile": "3BT + Sidekick（中等 Camber）",
       "shape": "真双向",
-      "core": "白杨",
-      "fiberglass": "Biax",
-      "base": "烧结 4400",
+      "core": "Ultra Light Core（70%泡桐木/30%白杨木）+ Central Super Tube 碳管",
+      "fiberglass": "Triax + 碳纤维加强条",
+      "base": "Hyper Glide S 烧结底板",
       "weight": 2720,
-      "flex": 5,
       "damping": 6,
       "pop": 7.5,
-      "turnRadiusFeel": "极宽松，入弯无阻力",
+      "turnRadiusFeel": "中等半径，勺形边缘降低入弯咬刃感",
+      "warranty": 2,
+      "flex": 5,
+      "profileFamily": "hybrid",
       "scenes": [
         "freestyle",
         "beginner"
       ],
-      "warranty": 2
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "154cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1170mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.4m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "251mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d148-959a-705b-a45f-fe27eba628b8",
@@ -6487,6 +5876,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "length": 157,
       "effectiveEdge": 1300,
       "waistWidth": 250,
+      "sidecutRadii": "9.2 / 8.8 / 8.4 / 8.8 / 9.2 m",
       "stanceSetback": 20,
       "profile": "Variable Camber",
       "profileFamily": "hybrid",
@@ -6495,30 +5885,58 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "carving",
         "all-mountain"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "154",
+          "overallLength": 1540,
+          "effectiveEdge": 1270,
+          "waistWidth": 250,
+          "sidecutRadii": "9.0 / 8.6 / 8.2 / 8.6 / 9.0 m",
+          "stanceWidth": "520 / 560 / 600 mm",
+          "setback": 20
+        },
+        {
+          "size": "157",
+          "overallLength": 1570,
+          "effectiveEdge": 1300,
+          "waistWidth": 250,
+          "sidecutRadii": "9.2 / 8.8 / 8.4 / 8.8 / 9.2 m",
+          "stanceWidth": "520 / 560 / 600 mm",
+          "setback": 20
+        },
+        {
+          "size": "157W",
+          "overallLength": 1570,
+          "effectiveEdge": 1300,
+          "waistWidth": 254,
+          "sidecutRadii": "9.2 / 8.8 / 8.4 / 8.8 / 9.2 m",
+          "stanceWidth": "520 / 560 / 600 mm",
+          "setback": 20
+        },
+        {
+          "size": "162",
+          "overallLength": 1620,
+          "effectiveEdge": 1350,
+          "waistWidth": 252,
+          "sidecutRadii": "9.4 / 9.0 / 8.6 / 9.0 / 9.4 m",
+          "stanceWidth": "520 / 560 / 600 mm",
+          "setback": 20
+        },
+        {
+          "size": "162W",
+          "overallLength": 1620,
+          "effectiveEdge": 1350,
+          "waistWidth": 256,
+          "sidecutRadii": "9.4 / 9.0 / 8.6 / 9.0 / 9.4 m",
+          "stanceWidth": "520 / 560 / 600 mm",
+          "setback": 20
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1300mm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "250mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-2d21-7d3a-9f43-ffe9fad0b875",
@@ -6542,28 +5960,74 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "length": 157,
+      "effectiveEdge": 1190,
+      "waistWidth": 260,
+      "sidecutRadii": "8.8 / 8.5 / 8.2 / 8.8 / 9.4 m",
       "stanceSetback": 50,
+      "shape": "Directional",
       "profile": "Nose Rocker / Variable Camber",
       "profileFamily": "hybrid",
-      "shape": "Directional",
       "scenes": [
         "all-mountain",
         "powder",
         "carving"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "148",
+          "overallLength": 1480,
+          "effectiveEdge": 1090,
+          "waistWidth": 246,
+          "sidecutRadii": "8.2 / 7.9 / 7.6 / 8.2 / 8.8 m"
+        },
+        {
+          "size": "154",
+          "overallLength": 1540,
+          "effectiveEdge": 1150,
+          "waistWidth": 258,
+          "sidecutRadii": "8.6 / 8.3 / 8.0 / 8.6 / 9.2 m"
+        },
+        {
+          "size": "157",
+          "overallLength": 1570,
+          "effectiveEdge": 1190,
+          "waistWidth": 260,
+          "sidecutRadii": "8.8 / 8.5 / 8.2 / 8.8 / 9.4 m"
+        },
+        {
+          "size": "161",
+          "overallLength": 1610,
+          "effectiveEdge": 1220,
+          "waistWidth": 260,
+          "sidecutRadii": "9.0 / 8.7 / 8.4 / 9.0 / 9.6 m"
+        },
+        {
+          "size": "162",
+          "overallLength": 1620,
+          "effectiveEdge": 1220,
+          "waistWidth": 260,
+          "sidecutRadii": "9.0 / 8.7 / 8.4 / 9.0 / 9.6 m"
+        },
+        {
+          "size": "155W",
+          "overallLength": 1550,
+          "effectiveEdge": 1150,
+          "waistWidth": 272,
+          "sidecutRadii": "8.6 / 8.3 / 8.0 / 8.6 / 9.2 m"
+        },
+        {
+          "size": "162W",
+          "overallLength": 1620,
+          "effectiveEdge": 1220,
+          "waistWidth": 270,
+          "sidecutRadii": "9.0 / 8.7 / 8.4 / 9.0 / 9.6 m"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "全山地 · 野雪浮雪 · 刻滑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-310a-7c01-8891-8a916fc80942",
@@ -6571,7 +6035,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "BC Stream RX 2027",
     "model": "RX",
     "year": 2027,
-    "oneLiner": "以深弯和刻滑控制为核心，26/27 款增加 Hard Flex 选项；具体几何数据须按尺码读取。日本 26/27 官方渠道标价 ¥147,400 含税，按 2026-10-02 参考汇率折算约 ¥6,252 CNY（非中国零售价）。",
+    "oneLiner": "26/27 定向刻滑板，提供 Regular 与 Hard 两种硬度选项；各尺码几何参数按 26/27 商品规格逐项记录。日本含税标价 ¥147,400，按 2026-10-02 参考汇率折算约 ¥6,252 CNY（非中国零售价）。",
     "priceMin": 6252,
     "priceMax": 6252,
     "priceCurrency": "CNY",
@@ -6587,19 +6051,63 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "length": 159,
+      "effectiveEdge": 1340,
+      "waistWidth": 252,
+      "sidecutRadii": "9.3 / 9.0 / 8.7 / 9.3 / 9.9 m",
       "shape": "Directional",
       "scenes": [
         "carving",
         "all-mountain"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "154N",
+          "overallLength": 1540,
+          "effectiveEdge": 1290,
+          "waistWidth": 242,
+          "sidecutRadii": "8.8 / 8.5 / 8.2 / 8.8 / 9.4 m"
+        },
+        {
+          "size": "159N",
+          "overallLength": 1590,
+          "effectiveEdge": 1340,
+          "waistWidth": 244,
+          "sidecutRadii": "9.3 / 9.0 / 8.7 / 9.3 / 9.9 m"
+        },
+        {
+          "size": "159",
+          "overallLength": 1590,
+          "effectiveEdge": 1340,
+          "waistWidth": 252,
+          "sidecutRadii": "9.3 / 9.0 / 8.7 / 9.3 / 9.9 m"
+        },
+        {
+          "size": "164",
+          "overallLength": 1640,
+          "effectiveEdge": 1390,
+          "waistWidth": 254,
+          "sidecutRadii": "9.8 / 9.5 / 9.2 / 9.8 / 10.4 m"
+        },
+        {
+          "size": "169",
+          "overallLength": 1690,
+          "effectiveEdge": 1440,
+          "waistWidth": 256,
+          "sidecutRadii": "10.3 / 10.0 / 9.7 / 10.3 / 10.9 m"
+        },
+        {
+          "size": "174",
+          "overallLength": 1740,
+          "effectiveEdge": 1490,
+          "waistWidth": 258,
+          "sidecutRadii": "10.8 / 10.5 / 10.2 / 10.8 / 11.4 m"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2b57-7d7a-85c9-baeea48afcc2",
@@ -6607,11 +6115,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Burton Custom Camber 2026",
     "model": "Custom Camber",
     "year": 2026,
-    "oneLiner": "全山地基准板。它不试图讨好任何人，只是把「稳定 + 精准」这两件事做到该价位的上限。",
+    "oneLiner": "经典全山地 Camber：压雪道刻滑和常规雪场速度下稳定、响应直接；遇到烂雪或极高速仍会有震动与性能边界。",
     "priceMin": 6299,
     "priceMax": 6299,
     "priceCurrency": "CNY",
-    "coverUrl": "https://eu.burton.com/cdn/shop/files/1068819AI2_1.webp?v=1776120991&width=2880",
+    "coverUrl": "https://eu.burton.com/cdn/shop/files/1068819AI2_1.webp?v=1776120991&width=1160",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -6624,49 +6132,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 158,
-      "effectiveEdge": 1250,
+      "effectiveEdge": 1215,
       "sidecut": 7.9,
-      "waistWidth": 253,
+      "waistWidth": 254,
       "stanceSetback": 15,
       "profile": "纯 Camber",
-      "profileFamily": "camber",
       "shape": "定向双向",
-      "core": "FSC 认证杨木 / 双轴玻纤",
-      "fiberglass": "Triax + Biax",
-      "base": "烧结 7200",
+      "core": "Super Fly II 700G Core + Dualzone EGD（FSC 认证）",
+      "fiberglass": "45° Carbon Highlights",
+      "base": "WFO 烧结底板",
       "weight": 2980,
-      "flex": 7,
       "damping": 8,
       "pop": 7.5,
       "turnRadiusFeel": "长弧稳、短弧需发力",
+      "warranty": 3,
+      "flex": 7,
+      "profileFamily": "camber",
       "scenes": [
         "all-mountain",
         "carving"
       ],
-      "warranty": 3
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "158cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1250mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.9m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "253mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0fab1-0f00-7bf3-a1a4-252c199a1e38",
@@ -6690,10 +6179,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "lengthOptions": "150 / 154 / 156 / 158 / 162 / 154W / 158W / 162W / 166W / 170W",
       "length": 158,
+      "waistWidth": 254,
       "effectiveEdge": 1215,
       "sidecut": 7.9,
-      "waistWidth": 254,
       "profile": "Camber",
       "profileFamily": "camber",
       "shape": "Directional",
@@ -6704,30 +6194,106 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain",
         "freestyle"
       ],
-      "warranty": 3
+      "warranty": 3,
+      "sizeSpecs": [
+        {
+          "size": "150",
+          "waistWidth": 248,
+          "noseWidth": 288.1,
+          "tailWidth": 288.1,
+          "effectiveEdge": 1135,
+          "sidecutRadii": "7.4 m",
+          "stanceWidth": "505 mm"
+        },
+        {
+          "size": "154",
+          "waistWidth": 250,
+          "noseWidth": 291.5,
+          "tailWidth": 291.5,
+          "effectiveEdge": 1175,
+          "sidecutRadii": "7.6 m",
+          "stanceWidth": "530 mm"
+        },
+        {
+          "size": "156",
+          "waistWidth": 252,
+          "noseWidth": 294.3,
+          "tailWidth": 294.3,
+          "effectiveEdge": 1195,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "530 mm"
+        },
+        {
+          "size": "158",
+          "waistWidth": 254,
+          "noseWidth": 297,
+          "tailWidth": 297,
+          "effectiveEdge": 1215,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "162",
+          "waistWidth": 256,
+          "noseWidth": 300.5,
+          "tailWidth": 300.5,
+          "effectiveEdge": 1255,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "154W",
+          "waistWidth": 258,
+          "noseWidth": 299.5,
+          "tailWidth": 299.5,
+          "effectiveEdge": 1175,
+          "sidecutRadii": "7.6 m",
+          "stanceWidth": "530 mm"
+        },
+        {
+          "size": "158W",
+          "waistWidth": 262,
+          "noseWidth": 305,
+          "tailWidth": 305,
+          "effectiveEdge": 1215,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "162W",
+          "waistWidth": 264,
+          "noseWidth": 308.5,
+          "tailWidth": 308.5,
+          "effectiveEdge": 1255,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "166W",
+          "waistWidth": 266,
+          "noseWidth": 312,
+          "tailWidth": 312,
+          "effectiveEdge": 1295,
+          "sidecutRadii": "8.4 m",
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "170W",
+          "waistWidth": 270,
+          "noseWidth": 317.4,
+          "tailWidth": 317.4,
+          "effectiveEdge": 1335,
+          "sidecutRadii": "8.7 m",
+          "stanceWidth": "560 mm"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 679.95",
+      "priceMarket": "原币 USD；来源商店 www.burton.com",
+      "priceSource": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "158cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1215mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.9m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "254mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0fab1-18b2-716f-b9e0-b0190a0cfee6",
@@ -6752,9 +6318,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 152,
+      "waistWidth": 250,
       "effectiveEdge": 1155,
       "sidecut": 7.6,
-      "waistWidth": 250,
       "profile": "Camber",
       "profileFamily": "camber",
       "shape": "Twin",
@@ -6765,30 +6331,77 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain",
         "freestyle"
       ],
-      "warranty": 3
+      "warranty": 3,
+      "sizeSpecs": [
+        {
+          "size": "135",
+          "waistWidth": 235,
+          "sidecutRadii": "6.4 m",
+          "stanceWidth": "455 mm"
+        },
+        {
+          "size": "140",
+          "waistWidth": 240,
+          "sidecutRadii": "6.8 m",
+          "stanceWidth": "480 mm"
+        },
+        {
+          "size": "145",
+          "waistWidth": 245,
+          "sidecutRadii": "7.1 m",
+          "stanceWidth": "505 mm"
+        },
+        {
+          "size": "148",
+          "waistWidth": 248,
+          "sidecutRadii": "7.3 m",
+          "stanceWidth": "530 mm"
+        },
+        {
+          "size": "152",
+          "waistWidth": 250,
+          "effectiveEdge": 1155,
+          "sidecutRadii": "7.6 m",
+          "stanceWidth": "530 mm"
+        },
+        {
+          "size": "155",
+          "waistWidth": 252,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "159",
+          "waistWidth": 255,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "155W",
+          "waistWidth": 260,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "159W",
+          "waistWidth": 263,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "162W",
+          "waistWidth": 268,
+          "sidecutRadii": "8.3 m",
+          "stanceWidth": "560 mm"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 449.95",
+      "priceMarket": "原币 USD；来源商店 www.burton.com",
+      "priceSource": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "152cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1155mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.6m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "250mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2b6a-7e41-884b-233d2c386488",
@@ -6796,11 +6409,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Burton Process 2026",
     "model": "Process",
     "year": 2026,
-    "oneLiner": "比 Custom 软两度、比 DOA 稳一档，正好卡在公园与全山之间的那个位置。",
+    "oneLiner": "PurePop Camber、Twin Shape 与 Twin Flex 带来双向自由式脚感，官方定位覆盖跳台、侧击与全山巡航；它不是深粉雪或强攻刻滑专板。",
     "priceMin": 5499,
     "priceMax": 5499,
     "priceCurrency": "CNY",
-    "coverUrl": "https://eu.burton.com/cdn/shop/files/106921CA03_1.webp?v=1776121079&width=2880",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/106921CA03_1.webp?v=1780076294&width=1160",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -6813,49 +6426,157 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 157,
-      "effectiveEdge": 1200,
-      "sidecut": 7.7,
+      "effectiveEdge": 1215,
+      "sidecut": 8.1,
       "waistWidth": 252,
-      "stanceSetback": 12,
-      "profile": "纯 Camber",
-      "profileFamily": "camber",
-      "shape": "真双向",
-      "core": "FSC 杨木 / 双轴玻纤",
-      "fiberglass": "Triax + Biax",
-      "base": "烧结 7200",
-      "weight": 2790,
-      "flex": 5,
+      "stanceSetback": 12.5,
+      "profile": "PurePop Camber",
+      "shape": "Twin（真双向）",
+      "core": "Super Fly II 700G Core + Dualzone EGD",
+      "fiberglass": "Triax",
+      "base": "Sintered Base",
       "damping": 7,
       "pop": 8.5,
       "turnRadiusFeel": "灵活，中短半径",
+      "warranty": 3,
+      "flex": 5,
+      "profileFamily": "hybrid",
       "scenes": [
         "freestyle",
         "all-mountain"
       ],
-      "warranty": 3
+      "sizeSpecs": [
+        {
+          "size": "152",
+          "waistWidth": 249,
+          "runningLength": 1125,
+          "effectiveEdge": 1165,
+          "sidecutRadius": 7.7,
+          "sidecutDepth": 20.6,
+          "stanceLocation": -12.5,
+          "stanceWidth": "530 mm",
+          "noseWidth": 290.1,
+          "tailWidth": 290.1,
+          "riderWeightRange": "54–82 kg",
+          "bindingSize": "Men's L, Women's L"
+        },
+        {
+          "size": "155",
+          "waistWidth": 251,
+          "runningLength": 1155,
+          "effectiveEdge": 1195,
+          "sidecutRadius": 7.9,
+          "sidecutDepth": 21.1,
+          "stanceLocation": -12.5,
+          "stanceWidth": "530 mm",
+          "noseWidth": 293.2,
+          "tailWidth": 293.2,
+          "riderWeightRange": "54–82 kg",
+          "bindingSize": "Men's L, Women's L"
+        },
+        {
+          "size": "157",
+          "waistWidth": 252,
+          "runningLength": 1175,
+          "effectiveEdge": 1215,
+          "sidecutRadius": 8.1,
+          "sidecutDepth": 21.4,
+          "stanceLocation": -12.5,
+          "stanceWidth": "560 mm",
+          "noseWidth": 294.9,
+          "tailWidth": 294.9,
+          "riderWeightRange": "68–91 kg",
+          "bindingSize": "Men's L, Women's L"
+        },
+        {
+          "size": "159",
+          "waistWidth": 255,
+          "runningLength": 1195,
+          "effectiveEdge": 1235,
+          "sidecutRadius": 8.2,
+          "sidecutDepth": 21.8,
+          "stanceLocation": -12.5,
+          "stanceWidth": "560 mm",
+          "noseWidth": 298.6,
+          "tailWidth": 298.6,
+          "riderWeightRange": "68–91 kg",
+          "bindingSize": "Men's L, Women's L"
+        },
+        {
+          "size": "162",
+          "waistWidth": 257,
+          "runningLength": 1225,
+          "effectiveEdge": 1265,
+          "sidecutRadius": 8.4,
+          "sidecutDepth": 22.4,
+          "stanceLocation": -12.5,
+          "stanceWidth": "560 mm",
+          "noseWidth": 301.8,
+          "tailWidth": 301.8,
+          "riderWeightRange": "82–118 kg+",
+          "bindingSize": "Men's L, Women's L"
+        },
+        {
+          "size": "155W",
+          "waistWidth": 256,
+          "runningLength": 1155,
+          "effectiveEdge": 1195,
+          "sidecutRadius": 7.9,
+          "sidecutDepth": 21.1,
+          "stanceLocation": -12.5,
+          "stanceWidth": "530 mm",
+          "noseWidth": 298.2,
+          "tailWidth": 298.2,
+          "riderWeightRange": "54–82 kg",
+          "bindingSize": "Men's L, Women's L"
+        },
+        {
+          "size": "157W",
+          "waistWidth": 257,
+          "runningLength": 1175,
+          "effectiveEdge": 1215,
+          "sidecutRadius": 8.1,
+          "sidecutDepth": 21.4,
+          "stanceLocation": -12.5,
+          "stanceWidth": "560 mm",
+          "noseWidth": 299.9,
+          "tailWidth": 299.9,
+          "riderWeightRange": "68–91 kg",
+          "bindingSize": "Men's L, Women's L"
+        },
+        {
+          "size": "159W",
+          "waistWidth": 260,
+          "runningLength": 1195,
+          "effectiveEdge": 1235,
+          "sidecutRadius": 8.2,
+          "sidecutDepth": 21.8,
+          "stanceLocation": -12.5,
+          "stanceWidth": "560 mm",
+          "noseWidth": 303.6,
+          "tailWidth": 303.6,
+          "riderWeightRange": "68–91 kg",
+          "bindingSize": "Men's L, Women's L"
+        },
+        {
+          "size": "162W",
+          "waistWidth": 262,
+          "runningLength": 1225,
+          "effectiveEdge": 1265,
+          "sidecutRadius": 8.4,
+          "sidecutDepth": 22.4,
+          "stanceLocation": -12.5,
+          "stanceWidth": "560 mm",
+          "noseWidth": 306.8,
+          "tailWidth": 306.8,
+          "riderWeightRange": "82–118 kg+",
+          "bindingSize": "Men's L, Women's L"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1200mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.7m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "252mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-6a5b-7ead-bee2-c34185dd26ac",
@@ -6881,8 +6602,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 146,
       "effectiveEdge": 1095,
-      "sidecut": 7.04,
       "waistWidth": 240,
+      "sidecut": 7.04,
       "stanceSetback": 0,
       "profile": "Camber",
       "profileFamily": "camber",
@@ -6893,30 +6614,75 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "freestyle",
         "all-mountain"
-      ]
+      ],
+      "lengthOptions": "138 / 141 / 146 / 149 / 152",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "138",
+          "effectiveEdge": 1015,
+          "waistWidth": 235,
+          "runningLength": 970,
+          "noseWidth": 271.2,
+          "tailWidth": 271.2,
+          "sidecutRadii": "6.5m",
+          "stanceWidth": "480mm",
+          "riderWeight": "80-120 lb. / 36-54kg",
+          "setback": 0
+        },
+        {
+          "size": "141",
+          "effectiveEdge": 1045,
+          "waistWidth": 237,
+          "runningLength": 1000,
+          "noseWidth": 274.4,
+          "tailWidth": 274.4,
+          "sidecutRadii": "6.7m",
+          "stanceWidth": "480mm",
+          "riderWeight": "100-150 lb. / 45-68kg",
+          "setback": 0
+        },
+        {
+          "size": "146",
+          "effectiveEdge": 1095,
+          "waistWidth": 240,
+          "runningLength": 1050,
+          "noseWidth": 279.2,
+          "tailWidth": 279.2,
+          "sidecutRadii": "7.04m",
+          "stanceWidth": "505mm",
+          "riderWeight": "120-180 lb. / 54-82kg",
+          "setback": 0
+        },
+        {
+          "size": "149",
+          "effectiveEdge": 1125,
+          "waistWidth": 242,
+          "runningLength": 1080,
+          "noseWidth": 282.4,
+          "tailWidth": 282.4,
+          "sidecutRadii": "7.24m",
+          "stanceWidth": "530mm",
+          "riderWeight": "120-180 lb. / 54-82kg",
+          "setback": 0
+        },
+        {
+          "size": "152",
+          "effectiveEdge": 1155,
+          "waistWidth": 245,
+          "runningLength": 1110,
+          "noseWidth": 286.5,
+          "tailWidth": 286.5,
+          "sidecutRadii": "7.44m",
+          "stanceWidth": "530mm",
+          "riderWeight": "150-200 lb.+ / 68-91kg+",
+          "setback": 0
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "146cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1095mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.04m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "240mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3d1d-7210-9630-5c480f7aceb3",
@@ -6942,7 +6708,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 157,
       "effectiveEdge": 1230,
-      "sidecut": 8.5,
       "waistWidth": 253,
       "stanceSetback": 20.3,
       "profile": "ALPINE V3 DIRECTIONAL",
@@ -6954,30 +6719,115 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flex": 6,
       "scenes": [
         "all-mountain"
-      ]
+      ],
+      "lengthOptions": "153 / 155 / 157 / 159 / 161 / 156W / 158W / 160W / 162W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "153",
+          "effectiveEdge": 1200,
+          "waistWidth": 247,
+          "noseWidth": 292,
+          "tailWidth": 287,
+          "sidecutRadii": "8.3/7.3 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "115-175 lb / 52-79 kg",
+          "bootSize": "M 6–9.5"
+        },
+        {
+          "size": "155",
+          "effectiveEdge": 1215,
+          "waistWidth": 250,
+          "noseWidth": 296,
+          "tailWidth": 291,
+          "sidecutRadii": "8.4/7.4 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "125-185 lb / 56-83 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "157",
+          "effectiveEdge": 1230,
+          "waistWidth": 253,
+          "noseWidth": 300,
+          "tailWidth": 295,
+          "sidecutRadii": "8.5/7.5 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "135-195 lb / 61-88 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "159",
+          "effectiveEdge": 1245,
+          "waistWidth": 256,
+          "noseWidth": 304,
+          "tailWidth": 299,
+          "sidecutRadii": "8.6/7.6 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "145-205 lb / 65-93 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "161",
+          "effectiveEdge": 1260,
+          "waistWidth": 259,
+          "noseWidth": 308,
+          "tailWidth": 303,
+          "sidecutRadii": "8.7/7.7 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "160-220 lb / 72-99 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "156W",
+          "effectiveEdge": 1223,
+          "waistWidth": 260,
+          "noseWidth": 306,
+          "tailWidth": 301,
+          "sidecutRadii": "8.5/7.5 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "135-195 lb / 61-88 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "158W",
+          "effectiveEdge": 1238,
+          "waistWidth": 263,
+          "noseWidth": 310,
+          "tailWidth": 305,
+          "sidecutRadii": "8.6/7.6 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "145-205 lb / 65-93 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "160W",
+          "effectiveEdge": 1253,
+          "waistWidth": 266,
+          "noseWidth": 314,
+          "tailWidth": 309,
+          "sidecutRadii": "8.7/7.7 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "160-220 lb / 72-99 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "162W",
+          "effectiveEdge": 1268,
+          "waistWidth": 269,
+          "noseWidth": 318,
+          "tailWidth": 313,
+          "sidecutRadii": "8.8/7.8 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "170-230 lb / 77-104 kg",
+          "bootSize": "M 10+"
+        }
+      ],
+      "sidecutRadii": "8.5/7.5 m",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1230mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.5m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "253mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3d2d-73a8-bc2f-48dd938460d1",
@@ -7003,8 +6853,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 154,
       "effectiveEdge": 1188,
-      "sidecut": 8,
       "waistWidth": 254,
+      "sidecut": 8,
       "stanceSetback": 0,
       "profile": "PARK V1",
       "profileFamily": "hybrid",
@@ -7016,30 +6866,217 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "freestyle",
         "all-mountain"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "148",
+          "widthVariant": "standard",
+          "effectiveEdgeMm": 1150,
+          "waistWidthMm": 248,
+          "noseWidthMm": 290,
+          "tailWidthMm": 290,
+          "taperMm": 0,
+          "sidecutRadiusM": 7.7,
+          "referenceStanceMm": 508,
+          "recommendedRiderWeightLb": [
+            100,
+            150
+          ],
+          "recommendedRiderWeightKg": [
+            45,
+            68
+          ],
+          "suggestedBoot": "M 6–9.5"
+        },
+        {
+          "size": "150",
+          "widthVariant": "standard",
+          "effectiveEdgeMm": 1170,
+          "waistWidthMm": 250,
+          "noseWidthMm": 293,
+          "tailWidthMm": 293,
+          "taperMm": 0,
+          "sidecutRadiusM": 7.8,
+          "referenceStanceMm": 533,
+          "recommendedRiderWeightLb": [
+            100,
+            150
+          ],
+          "recommendedRiderWeightKg": [
+            45,
+            68
+          ],
+          "suggestedBoot": "M 6–9.5"
+        },
+        {
+          "size": "152",
+          "widthVariant": "standard",
+          "effectiveEdgeMm": 1185,
+          "waistWidthMm": 252,
+          "noseWidthMm": 295,
+          "tailWidthMm": 295,
+          "taperMm": 0,
+          "sidecutRadiusM": 7.9,
+          "referenceStanceMm": 533,
+          "recommendedRiderWeightLb": [
+            100,
+            160
+          ],
+          "recommendedRiderWeightKg": [
+            45,
+            72
+          ],
+          "suggestedBoot": "M 6–9.5"
+        },
+        {
+          "size": "154",
+          "widthVariant": "standard",
+          "effectiveEdgeMm": 1188,
+          "waistWidthMm": 254,
+          "noseWidthMm": 297,
+          "tailWidthMm": 297,
+          "taperMm": 0,
+          "sidecutRadiusM": 8,
+          "referenceStanceMm": 533,
+          "recommendedRiderWeightLb": [
+            120,
+            180
+          ],
+          "recommendedRiderWeightKg": [
+            54,
+            81
+          ],
+          "suggestedBoot": "M 8–10"
+        },
+        {
+          "size": "156",
+          "widthVariant": "standard",
+          "effectiveEdgeMm": 1220,
+          "waistWidthMm": 255,
+          "noseWidthMm": 299,
+          "tailWidthMm": 299,
+          "taperMm": 0,
+          "sidecutRadiusM": 8.1,
+          "referenceStanceMm": 559,
+          "recommendedRiderWeightLb": [
+            130,
+            190
+          ],
+          "recommendedRiderWeightKg": [
+            59,
+            86
+          ],
+          "suggestedBoot": "M 8–10"
+        },
+        {
+          "size": "158",
+          "widthVariant": "standard",
+          "effectiveEdgeMm": 1245,
+          "waistWidthMm": 258,
+          "noseWidthMm": 302,
+          "tailWidthMm": 302,
+          "taperMm": 0,
+          "sidecutRadiusM": 8.3,
+          "referenceStanceMm": 559,
+          "recommendedRiderWeightLb": [
+            140,
+            200
+          ],
+          "recommendedRiderWeightKg": [
+            63,
+            90
+          ],
+          "suggestedBoot": "M 8–10"
+        },
+        {
+          "size": "154W",
+          "widthVariant": "wide",
+          "effectiveEdgeMm": 1200,
+          "waistWidthMm": 258,
+          "noseWidthMm": 301,
+          "tailWidthMm": 301,
+          "taperMm": 0,
+          "sidecutRadiusM": 8,
+          "referenceStanceMm": 533,
+          "recommendedRiderWeightLb": [
+            130,
+            190
+          ],
+          "recommendedRiderWeightKg": [
+            59,
+            86
+          ],
+          "suggestedBoot": "M 10+"
+        },
+        {
+          "size": "156W",
+          "widthVariant": "wide",
+          "effectiveEdgeMm": 1220,
+          "waistWidthMm": 260,
+          "noseWidthMm": 304,
+          "tailWidthMm": 304,
+          "taperMm": 0,
+          "sidecutRadiusM": 8.1,
+          "referenceStanceMm": 559,
+          "recommendedRiderWeightLb": [
+            130,
+            190
+          ],
+          "recommendedRiderWeightKg": [
+            59,
+            86
+          ],
+          "suggestedBoot": "M 10+"
+        },
+        {
+          "size": "158W",
+          "widthVariant": "wide",
+          "effectiveEdgeMm": 1230,
+          "waistWidthMm": 264,
+          "noseWidthMm": 308,
+          "tailWidthMm": 308,
+          "taperMm": 0,
+          "sidecutRadiusM": 8.3,
+          "referenceStanceMm": 559,
+          "recommendedRiderWeightLb": [
+            130,
+            190
+          ],
+          "recommendedRiderWeightKg": [
+            59,
+            86
+          ],
+          "suggestedBoot": "M 10+"
+        },
+        {
+          "size": "160W",
+          "widthVariant": "wide",
+          "effectiveEdgeMm": 1250,
+          "waistWidthMm": 268,
+          "noseWidthMm": 312,
+          "tailWidthMm": 312,
+          "taperMm": 0,
+          "sidecutRadiusM": 8.4,
+          "referenceStanceMm": 584,
+          "recommendedRiderWeightLb": [
+            100,
+            150
+          ],
+          "recommendedRiderWeightKg": [
+            45,
+            68
+          ],
+          "suggestedBoot": "M 10+",
+          "sourceAnomaly": "Official page prints 100-150 lb / 45-68 kg for the 160W; preserved verbatim and flagged, not silently corrected."
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 499.95",
+      "priceMarket": "原币 USD；来源商店 capitasnowboarding.com",
+      "priceSource": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "154cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1188mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "254mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2b7c-7f80-a691-bc91376d35dd",
@@ -7047,11 +7084,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Capita Defenders of Awesome 2026",
     "model": "Defenders of Awesome",
     "year": 2026,
-    "oneLiner": "公园里的通用答案。弹性是它的全部性格，起跳时机对了它会把你送得比预期更高。",
+    "oneLiner": "Resort True Twin 配 Resort V1 + Flat Kick Tech；P2 Superlight 芯材与 Hybrid Carbon HolySheet 主打轻量、响应和弹性。",
     "priceMin": 5299,
     "priceMax": 5299,
     "priceCurrency": "CNY",
-    "coverUrl": "https://snowboards.com/files/store/items/lg/f/w/fw26--doa_150.jpg",
+    "coverUrl": "https://scene7.zumiez.com/is/image/zumiez/product_main_medium/Capita-D.O.A.-Snowboard-2026-_399518-front-US.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -7063,50 +7100,31 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "length": 155,
-      "effectiveEdge": 1195,
-      "sidecut": 7.6,
+      "length": 156,
+      "effectiveEdge": 1233,
+      "sidecut": 8,
       "waistWidth": 252,
       "stanceSetback": 0,
-      "profile": "Resort V1（Camber 主导 + 板头尾反弓）",
-      "profileFamily": "hybrid",
-      "shape": "真双向",
-      "core": "Dual Core 白杨",
-      "fiberglass": "Biax Carbon",
-      "base": "挤压 4000",
+      "profile": "Resort V1 + Flat Kick Tech",
+      "shape": "True Twin",
+      "core": "P2 Superlight Core",
+      "fiberglass": "Hybrid Carbon HolySheet Bi/Bi + Magic Bean Resin",
+      "base": "Quantum Drive（Sublimation）",
       "weight": 2760,
-      "flex": 5.5,
       "damping": 6,
       "pop": 9,
       "turnRadiusFeel": "灵活，短半径很快",
+      "warranty": 2,
+      "flex": 5.5,
+      "profileFamily": "hybrid",
       "scenes": [
         "freestyle",
         "all-mountain"
       ],
-      "warranty": 2
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "155cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1195mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.6m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "252mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2b94-7ddd-9f9e-ef2a6f7528ec",
@@ -7130,10 +7148,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "lengthOptions": "148 / 150 / 152 / 154 / 156 / 158 / 160 / 162 / 164 / 151W / 153W / 155W / 157W / 159W / 161W / 163W",
       "length": 156,
       "effectiveEdge": 1234,
-      "sidecut": 8,
       "waistWidth": 252,
+      "sidecut": 8,
       "stanceSetback": 0,
       "profile": "Resort V1 + Flat Kick Tech",
       "profileFamily": "hybrid",
@@ -7145,30 +7164,157 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "148",
+          "effectiveEdge": 1177,
+          "waistWidth": 244,
+          "noseWidth": 287,
+          "tailWidth": 287,
+          "sidecutRadii": "7.6 m",
+          "stanceWidth": "50.8 cm reference"
+        },
+        {
+          "size": "150",
+          "effectiveEdge": 1191,
+          "waistWidth": 246,
+          "noseWidth": 290,
+          "tailWidth": 290,
+          "sidecutRadii": "7.7 m",
+          "stanceWidth": "53.3 cm reference"
+        },
+        {
+          "size": "152",
+          "effectiveEdge": 1207,
+          "waistWidth": 248,
+          "noseWidth": 292,
+          "tailWidth": 292,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "53.3 cm reference"
+        },
+        {
+          "size": "154",
+          "effectiveEdge": 1223,
+          "waistWidth": 250,
+          "noseWidth": 295,
+          "tailWidth": 295,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "53.3 cm reference"
+        },
+        {
+          "size": "156",
+          "effectiveEdge": 1234,
+          "waistWidth": 252,
+          "noseWidth": 298,
+          "tailWidth": 298,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "55.9 cm reference"
+        },
+        {
+          "size": "158",
+          "effectiveEdge": 1256,
+          "waistWidth": 254,
+          "noseWidth": 300,
+          "tailWidth": 300,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "55.9 cm reference"
+        },
+        {
+          "size": "160",
+          "effectiveEdge": 1271,
+          "waistWidth": 257,
+          "noseWidth": 304,
+          "tailWidth": 304,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "58.4 cm reference"
+        },
+        {
+          "size": "162",
+          "effectiveEdge": 1287,
+          "waistWidth": 259,
+          "noseWidth": 307,
+          "tailWidth": 307,
+          "sidecutRadii": "8.3 m",
+          "stanceWidth": "58.4 cm reference"
+        },
+        {
+          "size": "164",
+          "effectiveEdge": 1301,
+          "waistWidth": 261,
+          "noseWidth": 309,
+          "tailWidth": 309,
+          "sidecutRadii": "8.4 m",
+          "stanceWidth": "58.4 cm reference"
+        },
+        {
+          "size": "151W",
+          "effectiveEdge": 1170,
+          "waistWidth": 255,
+          "noseWidth": 297,
+          "tailWidth": 297,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "53.3 cm reference"
+        },
+        {
+          "size": "153W",
+          "effectiveEdge": 1186,
+          "waistWidth": 257,
+          "noseWidth": 299,
+          "tailWidth": 299,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "53.3 cm reference"
+        },
+        {
+          "size": "155W",
+          "effectiveEdge": 1206,
+          "waistWidth": 258,
+          "noseWidth": 302,
+          "tailWidth": 302,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "55.9 cm reference"
+        },
+        {
+          "size": "157W",
+          "effectiveEdge": 1239,
+          "waistWidth": 260,
+          "noseWidth": 305,
+          "tailWidth": 305,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "55.9 cm reference"
+        },
+        {
+          "size": "159W",
+          "effectiveEdge": 1259,
+          "waistWidth": 261,
+          "noseWidth": 307,
+          "tailWidth": 307,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "55.9 cm reference"
+        },
+        {
+          "size": "161W",
+          "effectiveEdge": 1281,
+          "waistWidth": 262,
+          "noseWidth": 309,
+          "tailWidth": 309,
+          "sidecutRadii": "8.3 m",
+          "stanceWidth": "58.4 cm reference"
+        },
+        {
+          "size": "163W",
+          "effectiveEdge": 1297,
+          "waistWidth": 263,
+          "noseWidth": 311,
+          "tailWidth": 311,
+          "sidecutRadii": "8.4 m",
+          "stanceWidth": "58.4 cm reference"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1234mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "252mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3d80-7075-8d0d-8cd34c833ef6",
@@ -7194,7 +7340,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 156,
       "effectiveEdge": 1211,
-      "sidecut": 7.96,
       "waistWidth": 258,
       "stanceSetback": 0,
       "profile": "PARK V1 + FLAT KICK TECH",
@@ -7207,30 +7352,115 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "freestyle",
         "all-mountain"
-      ]
+      ],
+      "lengthOptions": "150 / 152 / 154 / 156 / 158 / 160 / 155W / 158W / 161W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "150",
+          "effectiveEdge": 1165,
+          "waistWidth": 249,
+          "noseWidth": 292,
+          "tailWidth": 292,
+          "sidecutRadii": "7.70/3/-1.5/3/7.70 m",
+          "stanceWidth": "508 mm（参考）",
+          "riderWeight": "100-150 lb / 45-68 kg",
+          "bootSize": "M 6–9.5"
+        },
+        {
+          "size": "152",
+          "effectiveEdge": 1180,
+          "waistWidth": 250,
+          "noseWidth": 296,
+          "tailWidth": 296,
+          "sidecutRadii": "7.73/3/-1.5/3/7.73 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "110-160 lb / 49-72 kg",
+          "bootSize": "M 6–9.5"
+        },
+        {
+          "size": "154",
+          "effectiveEdge": 1196,
+          "waistWidth": 255,
+          "noseWidth": 300,
+          "tailWidth": 300,
+          "sidecutRadii": "7.90/3/-1.5/3/7.90 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "120-180 lb / 54-81 kg",
+          "bootSize": "M 6–9.5"
+        },
+        {
+          "size": "156",
+          "effectiveEdge": 1211,
+          "waistWidth": 258,
+          "noseWidth": 304,
+          "tailWidth": 304,
+          "sidecutRadii": "7.96/3/-1.5/3/7.96 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "158",
+          "effectiveEdge": 1227,
+          "waistWidth": 260,
+          "noseWidth": 308,
+          "tailWidth": 308,
+          "sidecutRadii": "8.06/3/-1.5/3/8.06 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "160",
+          "effectiveEdge": 1242,
+          "waistWidth": 262,
+          "noseWidth": 312,
+          "tailWidth": 312,
+          "sidecutRadii": "8.16/3/-1.5/3/8.16 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "150-210 lb / 68-95 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "155W",
+          "effectiveEdge": 1204,
+          "waistWidth": 261,
+          "noseWidth": 309,
+          "tailWidth": 309,
+          "sidecutRadii": "7.93/3/-1.5/3/7.93 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "158W",
+          "effectiveEdge": 1227,
+          "waistWidth": 265,
+          "noseWidth": 313,
+          "tailWidth": 313,
+          "sidecutRadii": "8.06/3/-1.5/3/8.06 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "161W",
+          "effectiveEdge": 1250,
+          "waistWidth": 268,
+          "noseWidth": 317,
+          "tailWidth": 317,
+          "sidecutRadii": "8.19/3/-1.5/3/8.19 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "155-215 lb / 70-97 kg",
+          "bootSize": "M 10+"
+        }
+      ],
+      "sidecutRadii": "7.96/3/-1.5/3/7.96 m",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1211mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.96m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "258mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3d92-743d-9053-fbdbb04460ec",
@@ -7256,8 +7486,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 157,
       "effectiveEdge": 1221,
-      "sidecut": 8.4,
       "waistWidth": 255,
+      "sidecut": 8.4,
       "stanceSetback": 20.3,
       "profile": "RESORT V3 DIRECTIONAL",
       "profileFamily": "hybrid",
@@ -7269,30 +7499,103 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "lengthOptions": "151 / 154 / 157 / 160 / 155W / 158W / 161W / 164W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "151",
+          "effectiveEdge": 1171,
+          "waistWidth": 251,
+          "noseWidth": 296,
+          "tailWidth": 290,
+          "sidecutRadii": "8.4 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "100-150 lb / 45-68 kg",
+          "bootSize": "M 6–9.5"
+        },
+        {
+          "size": "154",
+          "effectiveEdge": 1200,
+          "waistWidth": 253,
+          "noseWidth": 300,
+          "tailWidth": 293,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "100-160 lb / 45-72 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "157",
+          "effectiveEdge": 1221,
+          "waistWidth": 255,
+          "noseWidth": 304,
+          "tailWidth": 294,
+          "sidecutRadii": "8.4 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "160",
+          "effectiveEdge": 1254,
+          "waistWidth": 257,
+          "noseWidth": 307,
+          "tailWidth": 297,
+          "sidecutRadii": "8.6 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "M 6–10"
+        },
+        {
+          "size": "155W",
+          "effectiveEdge": 1214,
+          "waistWidth": 263,
+          "noseWidth": 310,
+          "tailWidth": 302,
+          "sidecutRadii": "8.3 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "110-170 lb / 49-77 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "158W",
+          "effectiveEdge": 1244,
+          "waistWidth": 265,
+          "noseWidth": 314,
+          "tailWidth": 306,
+          "sidecutRadii": "8.5 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "161W",
+          "effectiveEdge": 1261,
+          "waistWidth": 267,
+          "noseWidth": 316,
+          "tailWidth": 308,
+          "sidecutRadii": "8.7 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "150-210 lb / 68-95 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "164W",
+          "effectiveEdge": 1284,
+          "waistWidth": 269,
+          "noseWidth": 319,
+          "tailWidth": 311,
+          "sidecutRadii": "8.8 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "170-230 lb / 77-104 kg",
+          "bootSize": "M 10+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1221mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.4m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "255mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3da2-7ba1-a74e-70df2ceee9c0",
@@ -7318,7 +7621,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 159,
       "effectiveEdge": 1221,
-      "sidecut": 8.4,
       "waistWidth": 259,
       "stanceSetback": 20.3,
       "profile": "Alpine V1 Directional + Flat Kick Tech",
@@ -7331,30 +7633,93 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "lengthOptions": "156 / 159 / 162 / 157W / 161W / 165W / 169W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "156",
+          "effectiveEdge": 1197,
+          "waistWidth": 256,
+          "noseWidth": 297,
+          "tailWidth": 295,
+          "sidecutRadii": "8.2/7.8/7.6 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "159",
+          "effectiveEdge": 1221,
+          "waistWidth": 259,
+          "noseWidth": 300,
+          "tailWidth": 299,
+          "sidecutRadii": "8.4/8.0/7.8 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "162",
+          "effectiveEdge": 1245,
+          "waistWidth": 262,
+          "noseWidth": 304,
+          "tailWidth": 303,
+          "sidecutRadii": "8.6/8.2/8.0 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "150-210 lb / 68-95 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "157W",
+          "effectiveEdge": 1205,
+          "waistWidth": 264,
+          "noseWidth": 305,
+          "tailWidth": 303,
+          "sidecutRadii": "8.25/7.85/7.7 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "161W",
+          "effectiveEdge": 1237,
+          "waistWidth": 267,
+          "noseWidth": 310,
+          "tailWidth": 309,
+          "sidecutRadii": "8.5/8.1/8.0 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "150-210 lb / 68-95 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "165W",
+          "effectiveEdge": 1269,
+          "waistWidth": 270,
+          "noseWidth": 313,
+          "tailWidth": 312,
+          "sidecutRadii": "8.8/8.4/8.2 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "160-220 lb / 72-99 kg",
+          "bootSize": "M 10+"
+        },
+        {
+          "size": "169W",
+          "effectiveEdge": 1301,
+          "waistWidth": 274,
+          "noseWidth": 318,
+          "tailWidth": 317,
+          "sidecutRadii": "9.0/8.6/8.5 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "170-230 lb / 77-104 kg",
+          "bootSize": "M 10+"
+        }
+      ],
+      "sidecutRadii": "8.4/8.0/7.8 m",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "159cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1221mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.4m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "259mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3db2-7cde-ae77-3bc82a006c5b",
@@ -7380,7 +7745,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 157,
       "effectiveEdge": 1215,
-      "sidecut": 7.85,
       "waistWidth": 257,
       "stanceSetback": 12.7,
       "profile": "Resort V2 Directional + Flat Kick Tech",
@@ -7393,30 +7757,103 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "lengthOptions": "153 / 155 / 157 / 159 / 161 / 156W / 158W / 160W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "153",
+          "effectiveEdge": 1183,
+          "waistWidth": 253,
+          "noseWidth": 296,
+          "tailWidth": 296,
+          "sidecutRadii": "7.55/3/-1.5/3/7.55 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "100-160 lb / 45-72 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "155",
+          "effectiveEdge": 1199,
+          "waistWidth": 255,
+          "noseWidth": 299,
+          "tailWidth": 299,
+          "sidecutRadii": "7.7/3/-1.5/3/7.7 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "120-180 lb / 54-81 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "157",
+          "effectiveEdge": 1215,
+          "waistWidth": 257,
+          "noseWidth": 301,
+          "tailWidth": 301,
+          "sidecutRadii": "7.85/3/-1.5/3/7.85 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "159",
+          "effectiveEdge": 1231,
+          "waistWidth": 259,
+          "noseWidth": 303,
+          "tailWidth": 303,
+          "sidecutRadii": "8/3/-1.5/3/8 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "161",
+          "effectiveEdge": 1247,
+          "waistWidth": 261,
+          "noseWidth": 306,
+          "tailWidth": 306,
+          "sidecutRadii": "8.15/3/-1.5/3/8.15 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "160-220 lb / 72-99 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "156W",
+          "effectiveEdge": 1207,
+          "waistWidth": 261,
+          "noseWidth": 305,
+          "tailWidth": 305,
+          "sidecutRadii": "7.8/3/-1.5/3/7.8 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "120-180 lb / 54-81 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "158W",
+          "effectiveEdge": 1223,
+          "waistWidth": 263,
+          "noseWidth": 307,
+          "tailWidth": 307,
+          "sidecutRadii": "7.9/3/-1.5/3/7.9 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg"
+        },
+        {
+          "size": "160W",
+          "effectiveEdge": 1239,
+          "waistWidth": 265,
+          "noseWidth": 309,
+          "tailWidth": 309,
+          "sidecutRadii": "8.0/3/-1.5/3/8.0 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US 10+ / EU 43+"
+        }
+      ],
+      "sidecutRadii": "7.85/3/-1.5/3/7.85 m",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1215mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.85m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "257mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3dc2-7632-a94e-dbdd5134359f",
@@ -7442,8 +7879,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 154,
       "effectiveEdge": 1168,
-      "sidecut": 7.8,
       "waistWidth": 250,
+      "sidecut": 7.8,
       "stanceSetback": 12.7,
       "profile": "RESORT V3",
       "profileFamily": "hybrid",
@@ -7455,30 +7892,136 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "lengthOptions": "148 / 150 / 152 / 154 / 156 / 158 / 160 / 155W / 157W / 159W / 161W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "148",
+          "effectiveEdge": 1120,
+          "waistWidth": 244,
+          "noseWidth": 282,
+          "tailWidth": 282,
+          "sidecutRadii": "7.5 m",
+          "stanceWidth": "508 mm（参考）",
+          "riderWeight": "80-140 lb / 36-63 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "150",
+          "effectiveEdge": 1136,
+          "waistWidth": 246,
+          "noseWidth": 285,
+          "tailWidth": 285,
+          "sidecutRadii": "7.6 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "100-150 lb / 45-68 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "152",
+          "effectiveEdge": 1152,
+          "waistWidth": 248,
+          "noseWidth": 288,
+          "tailWidth": 288,
+          "sidecutRadii": "7.7 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "110-160 lb / 49-72 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "154",
+          "effectiveEdge": 1168,
+          "waistWidth": 250,
+          "noseWidth": 291,
+          "tailWidth": 291,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "120-180 lb / 54-81 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "156",
+          "effectiveEdge": 1184,
+          "waistWidth": 252,
+          "noseWidth": 294,
+          "tailWidth": 294,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "158",
+          "effectiveEdge": 1200,
+          "waistWidth": 254,
+          "noseWidth": 297,
+          "tailWidth": 297,
+          "sidecutRadii": "8 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "160",
+          "effectiveEdge": 1216,
+          "waistWidth": 256,
+          "noseWidth": 300,
+          "tailWidth": 300,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "150-210 lb / 68-95 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "155W",
+          "effectiveEdge": 1180,
+          "waistWidth": 260,
+          "noseWidth": 303,
+          "tailWidth": 303,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "125-185 lb / 56-83 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "157W",
+          "effectiveEdge": 1196,
+          "waistWidth": 262,
+          "noseWidth": 306,
+          "tailWidth": 306,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "135-195 lb / 61-88 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "159W",
+          "effectiveEdge": 1212,
+          "waistWidth": 264,
+          "noseWidth": 309,
+          "tailWidth": 309,
+          "sidecutRadii": "8 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "145-210 lb / 65-95 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "161W",
+          "effectiveEdge": 1228,
+          "waistWidth": 266,
+          "noseWidth": 312,
+          "tailWidth": 312,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "155-225 lb / 70-102 kg",
+          "bootSize": "US 10+ / EU 43+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "154cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1168mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.8m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "250mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3dd1-7d6f-802e-c06c5f0ffd0d",
@@ -7504,8 +8047,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 151,
       "effectiveEdge": 1203,
-      "sidecut": 7.7,
       "waistWidth": 252,
+      "sidecut": 7.7,
       "stanceSetback": 0,
       "profile": "Park V2 + Flat Kick Tech",
       "profileFamily": "rocker",
@@ -7518,30 +8061,136 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "freestyle",
         "all-mountain",
         "beginner"
-      ]
+      ],
+      "lengthOptions": "145 / 147 / 149 / 151 / 153 / 155 / 157 / 153W / 155W / 157W / 159W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "145",
+          "effectiveEdge": 1155,
+          "waistWidth": 246,
+          "noseWidth": 290,
+          "tailWidth": 290,
+          "sidecutRadii": "7.4 m",
+          "stanceWidth": "508 mm（参考）",
+          "riderWeight": "80-120 lb / 36-54 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "147",
+          "effectiveEdge": 1171,
+          "waistWidth": 248,
+          "noseWidth": 292,
+          "tailWidth": 292,
+          "sidecutRadii": "7.5 m",
+          "stanceWidth": "508 mm（参考）",
+          "riderWeight": "90-140 lb / 40-63 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "149",
+          "effectiveEdge": 1187,
+          "waistWidth": 250,
+          "noseWidth": 295,
+          "tailWidth": 295,
+          "sidecutRadii": "7.6 m",
+          "stanceWidth": "508 mm（参考）",
+          "riderWeight": "95-150 lb / 43-68 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "151",
+          "effectiveEdge": 1203,
+          "waistWidth": 252,
+          "noseWidth": 297,
+          "tailWidth": 297,
+          "sidecutRadii": "7.7 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "100-155 lb / 45-70 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "153",
+          "effectiveEdge": 1218,
+          "waistWidth": 254,
+          "noseWidth": 300,
+          "tailWidth": 300,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "110-170 lb / 49-77 kg",
+          "bootSize": "US Men 6–10 / EU 39–43"
+        },
+        {
+          "size": "155",
+          "effectiveEdge": 1235,
+          "waistWidth": 256,
+          "noseWidth": 303,
+          "tailWidth": 303,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "120-180 lb / 54-81 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "157",
+          "effectiveEdge": 1251,
+          "waistWidth": 258,
+          "noseWidth": 305,
+          "tailWidth": 305,
+          "sidecutRadii": "8 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "153W",
+          "effectiveEdge": 1218,
+          "waistWidth": 260,
+          "noseWidth": 306,
+          "tailWidth": 306,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "110-170 lb / 49-77 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "155W",
+          "effectiveEdge": 1235,
+          "waistWidth": 261,
+          "noseWidth": 308,
+          "tailWidth": 308,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "157W",
+          "effectiveEdge": 1251,
+          "waistWidth": 263,
+          "noseWidth": 310,
+          "tailWidth": 310,
+          "sidecutRadii": "8 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "159W",
+          "effectiveEdge": 1267,
+          "waistWidth": 265,
+          "noseWidth": 312,
+          "tailWidth": 312,
+          "sidecutRadii": "8.3 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "150-210 lb / 68-95 kg",
+          "bootSize": "US 10+ / EU 43+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "151cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1203mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.7m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "252mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2ba2-7ef5-86f7-13c5bfb80560",
@@ -7549,7 +8198,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "CAPiTA Pathfinder Reverse 2024",
     "model": "Pathfinder Reverse",
     "year": 2024,
-    "oneLiner": "2024 款 Pathfinder Reverse 是 CAPiTA 对旧 Horrorscope 系列的承接型号；反弓/平底混合板型、153cm 真双向，软弹且容错高。零售商列示 MSRP $429.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥3,096 CNY；本条保留旧 Horrorscope slug 以兼容已有链接。",
+    "oneLiner": "2024 款 Pathfinder Reverse 采用 Park V2 与真双向板型，提供松弛、容易转向的自由式脚感，适合平花和公园进阶；保留旧 Horrorscope slug 以兼容已有链接。CNY 3096 仅为美国零售商页面标注原价 USD 429.95 按项目旧参考汇率换算的估值，不代表中国市场实售价。",
     "priceMin": 3096,
     "priceMax": 3096,
     "priceCurrency": "CNY",
@@ -7565,46 +8214,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "length": 153,
-      "effectiveEdge": 1218,
-      "sidecut": 7.8,
-      "waistWidth": 254,
+      "length": 151,
+      "effectiveEdge": 1202,
+      "sidecut": 7.7,
+      "waistWidth": 252,
       "stanceSetback": 0,
-      "profile": "Park V2（插孔间零拱，插孔外反弓，平踢板头/尾）",
-      "profileFamily": "rocker",
+      "profile": "Park V2（插入区平底，插入区外反弓 + Flat Kick）",
       "shape": "True Twin",
-      "core": "Dual Core",
-      "fiberglass": "Biax",
-      "base": "Superdrive Ex",
+      "core": "FSC Certified Dual Core（杨木芯 + 山毛榉木条）",
+      "fiberglass": "Special Blend 双轴玻纤 + Magic Bean 树脂",
+      "base": "Superdrive EX（sintruded）",
+      "warranty": 2,
       "flex": 4,
+      "damping": 5,
+      "pop": 7,
+      "turnRadiusFeel": "灵活、平底滑行感明显，重压和高速下稳定性有限",
+      "profileFamily": "rocker",
       "scenes": [
         "beginner",
         "freestyle"
       ],
-      "warranty": 2
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "153cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1218mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.8m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "254mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3de0-7f24-a52d-e593f9412943",
@@ -7630,7 +8263,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 156,
       "effectiveEdge": 1211,
-      "sidecut": 7.96,
       "waistWidth": 258,
       "stanceSetback": 0,
       "profile": "RESORT V2 Directional + Flat Kick Tech",
@@ -7643,30 +8275,93 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "freestyle",
         "all-mountain"
-      ]
+      ],
+      "lengthOptions": "152 / 154 / 156 / 158 / 160 / 155W / 158W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "152",
+          "effectiveEdge": 1180,
+          "waistWidth": 250,
+          "noseWidth": 296,
+          "tailWidth": 296,
+          "sidecutRadii": "7.73/3/-1.5/3/7.73 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "110-170 lb / 49-77 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "154",
+          "effectiveEdge": 1196,
+          "waistWidth": 255,
+          "noseWidth": 300,
+          "tailWidth": 300,
+          "sidecutRadii": "7.90/3/-1.5/3/7.90 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "120-180 lb / 54-81 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "156",
+          "effectiveEdge": 1211,
+          "waistWidth": 258,
+          "noseWidth": 304,
+          "tailWidth": 304,
+          "sidecutRadii": "7.96/3/-1.5/3/7.96 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "158",
+          "effectiveEdge": 1227,
+          "waistWidth": 260,
+          "noseWidth": 308,
+          "tailWidth": 308,
+          "sidecutRadii": "8.06/3/-1.5/3/8.06 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "160",
+          "effectiveEdge": 1242,
+          "waistWidth": 262,
+          "noseWidth": 312,
+          "tailWidth": 312,
+          "sidecutRadii": "8.16/3/-1.5/3/8.16 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "150-210 lb / 68-95 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "155W",
+          "effectiveEdge": 1204,
+          "waistWidth": 261,
+          "noseWidth": 309,
+          "tailWidth": 309,
+          "sidecutRadii": "7.93/3/-1.5/3/7.93 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "158W",
+          "effectiveEdge": 1227,
+          "waistWidth": 265,
+          "noseWidth": 313,
+          "tailWidth": 313,
+          "sidecutRadii": "8.06/3/-1.5/3/8.06 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US 10+ / EU 43+"
+        }
+      ],
+      "sidecutRadii": "7.96/3/-1.5/3/7.96 m",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1211mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.96m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "258mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3df3-7ac3-84eb-87f909672484",
@@ -7692,7 +8387,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 159,
       "effectiveEdge": 1225,
-      "sidecut": 7,
       "waistWidth": 258,
       "stanceSetback": 20.3,
       "profile": "Alpine V3 Directional",
@@ -7705,30 +8399,60 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "carving",
         "all-mountain"
-      ]
+      ],
+      "lengthOptions": "153 / 156 / 159 / 162",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "153",
+          "effectiveEdge": 1179,
+          "waistWidth": 254,
+          "noseWidth": 314,
+          "tailWidth": 299,
+          "sidecutRadii": "6.6/6.25 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "120-180 lb / 54-81 kg",
+          "bootSize": "M 6–9.5"
+        },
+        {
+          "size": "156",
+          "effectiveEdge": 1202,
+          "waistWidth": 256,
+          "noseWidth": 317,
+          "tailWidth": 302,
+          "sidecutRadii": "6.8/6.4 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "M 8–10"
+        },
+        {
+          "size": "159",
+          "effectiveEdge": 1225,
+          "waistWidth": 258,
+          "noseWidth": 320,
+          "tailWidth": 305,
+          "sidecutRadii": "7.0/6.5 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "145-205 lb / 65-93 kg",
+          "bootSize": "M 8–10+"
+        },
+        {
+          "size": "162",
+          "effectiveEdge": 1248,
+          "waistWidth": 260,
+          "noseWidth": 323,
+          "tailWidth": 308,
+          "sidecutRadii": "7.1/6.6 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "155-215 lb / 70-97 kg",
+          "bootSize": "M 10+"
+        }
+      ],
+      "sidecutRadii": "7.0/6.5 m",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "159cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1225mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "258mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3e02-7077-a96a-8d6930bcff86",
@@ -7754,8 +8478,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 156,
       "effectiveEdge": 1234,
-      "sidecut": 8,
       "waistWidth": 252,
+      "sidecut": 8,
       "stanceSetback": 0,
       "profile": "RESORT V1 + Flat Kick Tech",
       "profileFamily": "hybrid",
@@ -7767,30 +8491,125 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "lengthOptions": "152 / 154 / 156 / 158 / 160 / 155W / 157W / 159W / 161W / 163W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "152",
+          "effectiveEdge": 1203,
+          "waistWidth": 248,
+          "noseWidth": 293,
+          "tailWidth": 293,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "110-150 lb / 49-68 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "154",
+          "effectiveEdge": 1218,
+          "waistWidth": 250,
+          "noseWidth": 295,
+          "tailWidth": 295,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "120-180 lb / 54-81 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "156",
+          "effectiveEdge": 1234,
+          "waistWidth": 252,
+          "noseWidth": 298,
+          "tailWidth": 298,
+          "sidecutRadii": "8 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "158",
+          "effectiveEdge": 1250,
+          "waistWidth": 254,
+          "noseWidth": 301,
+          "tailWidth": 301,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "160",
+          "effectiveEdge": 1266,
+          "waistWidth": 256,
+          "noseWidth": 303,
+          "tailWidth": 303,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "160-220 lb / 72-99 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "155W",
+          "effectiveEdge": 1226,
+          "waistWidth": 260,
+          "noseWidth": 306,
+          "tailWidth": 306,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "157W",
+          "effectiveEdge": 1242,
+          "waistWidth": 262,
+          "noseWidth": 308,
+          "tailWidth": 308,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "159W",
+          "effectiveEdge": 1258,
+          "waistWidth": 264,
+          "noseWidth": 311,
+          "tailWidth": 311,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "161W",
+          "effectiveEdge": 1274,
+          "waistWidth": 266,
+          "noseWidth": 314,
+          "tailWidth": 314,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "160-220 lb / 72-99 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "163W",
+          "effectiveEdge": 1290,
+          "waistWidth": 268,
+          "noseWidth": 316,
+          "tailWidth": 316,
+          "sidecutRadii": "8.3 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "170-230 lb / 77-104 kg",
+          "bootSize": "US 10+ / EU 43+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1234mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "252mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3e13-7f30-8486-49d3fbc75ba6",
@@ -7816,7 +8635,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 159,
       "effectiveEdge": 1221,
-      "sidecut": 8.4,
       "waistWidth": 259,
       "stanceSetback": 20.3,
       "profile": "Alpine V1 Directional + Flat Kick Tech",
@@ -7829,30 +8647,93 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "lengthOptions": "156 / 159 / 162 / 157W / 161W / 165W / 169W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "156",
+          "effectiveEdge": 1197,
+          "waistWidth": 256,
+          "noseWidth": 297,
+          "tailWidth": 295,
+          "sidecutRadii": "8.2/7.8/7.6 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "159",
+          "effectiveEdge": 1221,
+          "waistWidth": 259,
+          "noseWidth": 300,
+          "tailWidth": 299,
+          "sidecutRadii": "8.4/8.0/7.8 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "162",
+          "effectiveEdge": 1245,
+          "waistWidth": 262,
+          "noseWidth": 304,
+          "tailWidth": 303,
+          "sidecutRadii": "8.6/8.2/8.0 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "150-210 lb / 68-95 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "157W",
+          "effectiveEdge": 1205,
+          "waistWidth": 264,
+          "noseWidth": 305,
+          "tailWidth": 303,
+          "sidecutRadii": "8.25/7.85/7.7 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "161W",
+          "effectiveEdge": 1237,
+          "waistWidth": 267,
+          "noseWidth": 310,
+          "tailWidth": 309,
+          "sidecutRadii": "8.5/8.1/8.0 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "150-210 lb / 68-95 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "165W",
+          "effectiveEdge": 1269,
+          "waistWidth": 270,
+          "noseWidth": 313,
+          "tailWidth": 312,
+          "sidecutRadii": "8.8/8.4/8.2 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "160-220 lb / 72-99 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "169W",
+          "effectiveEdge": 1301,
+          "waistWidth": 274,
+          "noseWidth": 318,
+          "tailWidth": 317,
+          "sidecutRadii": "9.0/8.6/8.5 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "170-230 lb / 77-104 kg",
+          "bootSize": "US 10+ / EU 43+"
+        }
+      ],
+      "sidecutRadii": "8.4/8.0/7.8 m",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "159cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1221mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.4m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "259mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3e23-72ec-bf62-15c88e2a2a4a",
@@ -7878,8 +8759,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 158,
       "effectiveEdge": 1180,
-      "sidecut": 8.1,
       "waistWidth": 257,
+      "sidecut": 8.1,
       "stanceSetback": 20.3,
       "profile": "Alpine V4 Directional",
       "profileFamily": "camber",
@@ -7891,30 +8772,70 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "lengthOptions": "155 / 158 / 161 / 157W / 160W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "155",
+          "effectiveEdge": 1158,
+          "waistWidth": 252,
+          "noseWidth": 297,
+          "tailWidth": 293,
+          "sidecutRadii": "8 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "158",
+          "effectiveEdge": 1180,
+          "waistWidth": 257,
+          "noseWidth": 300,
+          "tailWidth": 296,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "161",
+          "effectiveEdge": 1203,
+          "waistWidth": 259,
+          "noseWidth": 303,
+          "tailWidth": 299,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "150-210 lb / 68-95 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "157W",
+          "effectiveEdge": 1173,
+          "waistWidth": 263,
+          "noseWidth": 306,
+          "tailWidth": 302,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-200 lb / 63-90 kg",
+          "bootSize": "US Men 10+ / EU 43+"
+        },
+        {
+          "size": "160W",
+          "effectiveEdge": 1195,
+          "waistWidth": 265,
+          "noseWidth": 309,
+          "tailWidth": 305,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "150-210 lb / 68-95 kg",
+          "bootSize": "US Men 10+ / EU 43+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "158cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1180mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.1m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "257mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3e33-7f40-bb5a-603feeae0213",
@@ -7940,7 +8861,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 161,
       "effectiveEdge": 1216,
-      "sidecut": 8.3,
       "waistWidth": 260,
       "stanceSetback": 20.3,
       "profile": "RESORT V2 DIRECTIONAL + FLAT KICK TECH",
@@ -7953,30 +8873,71 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "powder",
         "all-mountain"
-      ]
+      ],
+      "lengthOptions": "155 / 158 / 161 / 164 / 167",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "155",
+          "effectiveEdge": 1169,
+          "waistWidth": 252,
+          "noseWidth": 302,
+          "tailWidth": 290,
+          "sidecutRadii": "8.0/6.8/8.0 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "130-190 lb / 59-86 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "158",
+          "effectiveEdge": 1192,
+          "waistWidth": 256,
+          "noseWidth": 305,
+          "tailWidth": 294,
+          "sidecutRadii": "8.1/7.0/8.1 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "150-200 lb / 68-90 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "161",
+          "effectiveEdge": 1216,
+          "waistWidth": 260,
+          "noseWidth": 310,
+          "tailWidth": 297,
+          "sidecutRadii": "8.3/7.2/8.3 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "160-210 lb / 72-95 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "164",
+          "effectiveEdge": 1229,
+          "waistWidth": 264,
+          "noseWidth": 315,
+          "tailWidth": 301,
+          "sidecutRadii": "8.5/7.4/8.5 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "170-220 lb / 77-99 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "167",
+          "effectiveEdge": 1249,
+          "waistWidth": 268,
+          "noseWidth": 322,
+          "tailWidth": 307,
+          "sidecutRadii": "8.7/7.6/8.7 m",
+          "stanceWidth": "584 mm（参考）",
+          "riderWeight": "180-230 lb / 81-104 kg",
+          "bootSize": "US 10+ / EU 43+"
+        }
+      ],
+      "sidecutRadii": "8.3/7.2/8.3 m",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "161cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1216mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.3m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "260mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3e42-77b7-9ae1-38b58a75db95",
@@ -8002,8 +8963,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 153,
       "effectiveEdge": 1183,
-      "sidecut": 8.26,
       "waistWidth": 254,
+      "sidecut": 7.8,
       "stanceSetback": 0,
       "profile": "Resort V1 + Flat Kick Tech",
       "profileFamily": "hybrid",
@@ -8014,30 +8975,103 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flex": 5.5,
       "scenes": [
         "freestyle"
-      ]
+      ],
+      "lengthOptions": "149 / 151 / 153 / 155 / 157 / 153W / 155W / 157W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "149",
+          "effectiveEdge": 1151,
+          "waistWidth": 251,
+          "noseWidth": 293,
+          "tailWidth": 293,
+          "sidecutRadii": "7.6 m",
+          "stanceWidth": "508 mm（参考）",
+          "riderWeight": "90-160 lb / 40-72 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "151",
+          "effectiveEdge": 1166,
+          "waistWidth": 252,
+          "noseWidth": 295,
+          "tailWidth": 295,
+          "sidecutRadii": "7.7 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "100-170 lb / 45-77 kg",
+          "bootSize": "US Men 6–9.5 / EU 39–43"
+        },
+        {
+          "size": "153",
+          "effectiveEdge": 1183,
+          "waistWidth": 254,
+          "noseWidth": 297,
+          "tailWidth": 297,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "130-180 lb / 59-81 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "155",
+          "effectiveEdge": 1199,
+          "waistWidth": 255,
+          "noseWidth": 299,
+          "tailWidth": 299,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "140-190 lb / 63-86 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "157",
+          "effectiveEdge": 1214,
+          "waistWidth": 256,
+          "noseWidth": 301,
+          "tailWidth": 301,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "150-200 lb / 68-90 kg",
+          "bootSize": "US Men 8–10 / EU 41–43"
+        },
+        {
+          "size": "153W",
+          "effectiveEdge": 1183,
+          "waistWidth": 264,
+          "noseWidth": 307,
+          "tailWidth": 307,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "533 mm（参考）",
+          "riderWeight": "140-190 lb / 63-86 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "155W",
+          "effectiveEdge": 1199,
+          "waistWidth": 265,
+          "noseWidth": 309,
+          "tailWidth": 309,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "150-200 lb / 68-90 kg",
+          "bootSize": "US 10+ / EU 43+"
+        },
+        {
+          "size": "157W",
+          "effectiveEdge": 1214,
+          "waistWidth": 266,
+          "noseWidth": 311,
+          "tailWidth": 311,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "559 mm（参考）",
+          "riderWeight": "160-210 lb / 72-95 kg",
+          "bootSize": "US 10+ / EU 43+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "153cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1183mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.26m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "254mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-58a4-763c-9899-6b12afb1001a",
@@ -8071,33 +9105,15 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "core": "20mm poplar wood",
       "base": "Sintered",
       "flex": 8,
+      "weight": 2500,
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "154cm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.3m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "245mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-5bf5-7230-a453-67dcaca4d658",
@@ -8135,30 +9151,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain",
         "freestyle",
         "powder"
-      ]
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.4m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "255mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-5599-7c14-b2e6-0b88a2c1bfb8",
@@ -8192,33 +9189,15 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "core": "20mm poplar wood",
       "base": "Extruded",
       "flex": 3,
+      "weight": 2767,
       "scenes": [
         "beginner",
         "all-mountain"
-      ]
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "152cm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.2m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "250mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2bb3-7ee7-895e-588073f0c0e8",
@@ -8226,11 +9205,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "GNU Rider's Choice 2025",
     "model": "Rider's Choice",
     "year": 2025,
-    "oneLiner": "波浪边刃 + C2X 板型的组合让它在冰面上比同级别更抓得住，同时保留了公园需要的弹性。",
+    "oneLiner": "非对称双向与 C2 Hybrid 全山自由式板；旧款滑测显示跳台和 switch 较突出，深粉雪与 jib 并非强项，25/26 款缺少同季独立滑测。",
     "priceMin": 5199,
     "priceMax": 5199,
     "priceCurrency": "CNY",
-    "coverUrl": "https://images.blue-tomato.com/is/image/bluetomato/305258540_front.jpg-G2lrQmzSDnKgLSGW6Q13RDLjzzE/Riders+Choice+Snowboard.jpg?$b1$",
+    "coverUrl": "https://www.bestboards.gr/wp-content/uploads/2025/03/2526-GNU-B2B-RIDERS-CHOICE_02.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -8242,50 +9221,161 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "length": 156,
+      "length": 157.5,
       "effectiveEdge": 1200,
-      "sidecut": 7.6,
+      "sidecutRadii": "7.8 / 8.2 m",
       "waistWidth": 255,
-      "stanceSetback": 10,
-      "profile": "C2X（板下反弓 + 板头尾 Camber）",
-      "profileFamily": "hybrid",
-      "shape": "定向双向",
-      "core": "Aspen / Paulownia",
+      "stanceSetback": 0,
+      "profile": "C2 Hybrid / GNU C2x",
+      "shape": "非对称双向",
+      "core": "3-D Delightwood Asym Chip",
       "fiberglass": "Biax Triax 混合",
       "base": "烧结 UHMW",
       "weight": 2860,
-      "flex": 6.5,
       "damping": 7.5,
       "pop": 8,
       "turnRadiusFeel": "抓刃强，波浪边刃",
+      "warranty": 3,
+      "flex": 6.5,
+      "profileFamily": "hybrid",
       "scenes": [
         "all-mountain",
         "freestyle"
       ],
-      "warranty": 3
+      "sizeSpecs": [
+        {
+          "size": "151.5",
+          "widthVariant": "standard",
+          "contactLengthCm": 113,
+          "sidecutRadiiMSourceOrder": "7.9 / 8.2",
+          "noseWidthCm": 29.2,
+          "tailWidthCm": 29.2,
+          "waistWidthMm": 251,
+          "stanceMinInches": 20,
+          "stanceMaxInches": 26,
+          "stanceSetbackInches": 0,
+          "stanceMinCm": 50.8,
+          "stanceMaxCm": 66,
+          "brandFlex": 5.5,
+          "riderWeightRaw": "90+ lb / 60+ kg"
+        },
+        {
+          "size": "154.5",
+          "widthVariant": "standard",
+          "contactLengthCm": 116,
+          "sidecutRadiiMSourceOrder": "7.7 / 8.1",
+          "noseWidthCm": 29.3,
+          "tailWidthCm": 29.3,
+          "waistWidthMm": 252,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceSetbackInches": 0,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "brandFlex": 5.5,
+          "riderWeightRaw": "120+ lb / 60+ kg"
+        },
+        {
+          "size": "155W",
+          "widthVariant": "wide",
+          "contactLengthCm": 116,
+          "sidecutRadiiMSourceOrder": "7.7 / 8.1",
+          "noseWidthCm": 30.7,
+          "tailWidthCm": 30.7,
+          "waistWidthMm": 265,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceSetbackInches": 0,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "brandFlex": 6,
+          "riderWeightRaw": "130+ lb / 60+ kg"
+        },
+        {
+          "size": "157.5",
+          "widthVariant": "standard",
+          "contactLengthCm": 119,
+          "sidecutRadiiMSourceOrder": "7.8 / 8.2",
+          "noseWidthCm": 29.9,
+          "tailWidthCm": 29.9,
+          "waistWidthMm": 255,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceSetbackInches": 0,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "brandFlex": 6,
+          "riderWeightRaw": "130+ lb / 65+ kg"
+        },
+        {
+          "size": "158W",
+          "widthVariant": "wide",
+          "contactLengthCm": 119,
+          "sidecutRadiiMSourceOrder": "7.8 / 8.2",
+          "noseWidthCm": 31.2,
+          "tailWidthCm": 31.2,
+          "waistWidthMm": 268,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceSetbackInches": 0,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "brandFlex": 6,
+          "riderWeightRaw": "130+ lb / 65+ kg"
+        },
+        {
+          "size": "159.5",
+          "widthVariant": "standard",
+          "contactLengthCm": 120,
+          "sidecutRadiiMSourceOrder": "7.9 / 8",
+          "noseWidthCm": 30,
+          "tailWidthCm": 30,
+          "waistWidthMm": 256,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceSetbackInches": 0,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "brandFlex": 6,
+          "riderWeightRaw": "135+ lb / 65+ kg"
+        },
+        {
+          "size": "161.5",
+          "widthVariant": "standard",
+          "contactLengthCm": 122,
+          "sidecutRadiiMSourceOrder": "8 / 8.4",
+          "noseWidthCm": 30.2,
+          "tailWidthCm": 30.2,
+          "waistWidthMm": 258,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceSetbackInches": 0,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "brandFlex": 7,
+          "riderWeightRaw": "140+ lb / 65+ kg"
+        },
+        {
+          "size": "162W",
+          "widthVariant": "wide",
+          "contactLengthCm": 122,
+          "sidecutRadiiMSourceOrder": "8 / 8.4",
+          "noseWidthCm": 31.3,
+          "tailWidthCm": 31.3,
+          "waistWidthMm": 268,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceSetbackInches": 0,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "brandFlex": 7,
+          "riderWeightRaw": "140+ lb / 70+ kg"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1200mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.6m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "255mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-3e08-7c7d-b856-caad70bd6085",
@@ -8309,71 +9399,174 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "lengthOptions": "148 / 153N / 154 / 158 / 159W / 162 / 163W",
+      "shape": "Directional",
       "profile": "Active Camber",
       "profileFamily": "camber",
-      "shape": "Directional",
-      "core": "Poplar / Paulownia Composite Wood Core",
-      "fiberglass": "Full Fiberglass",
+      "core": "Paulownia / Lightweight Poplar Composite Core",
+      "fiberglass": "2-ply 65/35 + 3-ply 50/50 fiberglass reinforcement",
+      "base": "P-Tex 3000 Graphite Sintered",
+      "sidecutRadii": "8.8/8.2/9.2 m",
+      "effectiveEdge": 1320,
+      "waistWidth": 252,
+      "stanceSetback": 35,
       "scenes": [
         "carving",
         "all-mountain"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "148",
+          "overallLength": 1480,
+          "effectiveEdge": 1280,
+          "contactLength": 1176,
+          "waistWidth": 242,
+          "sidecutRadii": "8.2/7.6/8.6 m",
+          "sidecutOffset": -35,
+          "noseLength": 167,
+          "noseWidth": 296,
+          "noseHeight": 25,
+          "tailLength": 137,
+          "tailWidth": 284,
+          "tailHeight": 23,
+          "camber": 8,
+          "stanceWidth": "440–520 mm",
+          "setback": 35,
+          "insertQty": "10+10",
+          "edge": "1.8 mm stainless steel",
+          "base": "P-Tex 3000 Graphite Sintered"
+        },
+        {
+          "size": "153N",
+          "overallLength": 1530,
+          "effectiveEdge": 1320,
+          "contactLength": 1220,
+          "waistWidth": 242,
+          "sidecutRadii": "8.8/8.2/9.2 m",
+          "sidecutOffset": -35,
+          "noseLength": 170,
+          "noseWidth": 296,
+          "noseHeight": 25,
+          "tailLength": 140,
+          "tailWidth": 284,
+          "tailHeight": 24,
+          "camber": 8,
+          "stanceWidth": "460–540 mm",
+          "setback": 35,
+          "insertQty": "10+10",
+          "edge": "1.8 mm stainless steel",
+          "base": "P-Tex 3000 Graphite Sintered"
+        },
+        {
+          "size": "154",
+          "overallLength": 1540,
+          "effectiveEdge": 1320,
+          "contactLength": 1220,
+          "waistWidth": 252,
+          "sidecutRadii": "8.8/8.2/9.2 m",
+          "sidecutOffset": -35,
+          "noseLength": 175,
+          "noseWidth": 306,
+          "noseHeight": 26,
+          "tailLength": 145,
+          "tailWidth": 294,
+          "tailHeight": 25,
+          "camber": 8,
+          "stanceWidth": "500–580 mm",
+          "setback": 35,
+          "insertQty": "10+10",
+          "edge": "1.8 mm stainless steel",
+          "base": "P-Tex 3000 Graphite Sintered"
+        },
+        {
+          "size": "158",
+          "overallLength": 1580,
+          "effectiveEdge": 1360,
+          "contactLength": 1254,
+          "waistWidth": 256,
+          "sidecutRadii": "9.3/8.6/9.8 m",
+          "sidecutOffset": -35,
+          "noseLength": 178,
+          "noseWidth": 310,
+          "noseHeight": 26.5,
+          "tailLength": 148,
+          "tailWidth": 298,
+          "tailHeight": 26,
+          "camber": 9,
+          "stanceWidth": "520–600 mm",
+          "setback": 35,
+          "insertQty": "10+10",
+          "edge": "1.8 mm stainless steel",
+          "base": "P-Tex 3000 Graphite Sintered"
+        },
+        {
+          "size": "159W",
+          "overallLength": 1590,
+          "effectiveEdge": 1360,
+          "contactLength": 1254,
+          "waistWidth": 266,
+          "sidecutRadii": "9.3/8.6/9.8 m",
+          "sidecutOffset": -35,
+          "noseLength": 183,
+          "noseWidth": 320,
+          "noseHeight": 29.5,
+          "tailLength": 153,
+          "tailWidth": 308,
+          "tailHeight": 28,
+          "camber": 9,
+          "stanceWidth": "520–600 mm",
+          "setback": 35,
+          "insertQty": "10+10",
+          "edge": "1.8 mm stainless steel",
+          "base": "P-Tex 3000 Graphite Sintered"
+        },
+        {
+          "size": "162",
+          "overallLength": 1620,
+          "effectiveEdge": 1400,
+          "contactLength": 1300,
+          "waistWidth": 258,
+          "sidecutRadii": "10.2/9.4/10.8 m",
+          "sidecutOffset": -35,
+          "noseLength": 175,
+          "noseWidth": 310,
+          "noseHeight": 26,
+          "tailLength": 145,
+          "tailWidth": 299,
+          "tailHeight": 25,
+          "camber": 10,
+          "stanceWidth": "540–620 mm",
+          "setback": 35,
+          "insertQty": "10+10",
+          "edge": "1.8 mm stainless steel",
+          "base": "P-Tex 3000 Graphite Sintered"
+        },
+        {
+          "size": "163W",
+          "overallLength": 1630,
+          "effectiveEdge": 1400,
+          "contactLength": 1300,
+          "waistWidth": 268,
+          "sidecutRadii": "10.2/9.4/10.8 m",
+          "sidecutOffset": -35,
+          "noseLength": 180,
+          "noseWidth": 320,
+          "noseHeight": 26.5,
+          "tailLength": 150,
+          "tailWidth": 309,
+          "tailHeight": 25.5,
+          "camber": 10,
+          "stanceWidth": "540–620 mm",
+          "setback": 35,
+          "insertQty": "10+10",
+          "edge": "1.8 mm stainless steel",
+          "base": "P-Tex 3000 Graphite Sintered"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑 · 全山地"
-      }
-    ]
-  },
-  {
-    "id": "01a0d149-36de-79b6-8e05-7b0c749b859a",
-    "slug": "gray-desperado-2024",
-    "title": "GRAY DESPERADO micro/mini 2024",
-    "model": "DESPERADO micro/mini",
-    "year": 2024,
-    "oneLiner": "GRAY 儿童软鞋刻滑板，采用全玻纤结构；2023/24 官方含税价 ¥108,900，按 2026-10-02 参考汇率折算约 ¥4,623 CNY。",
-    "priceMin": 4623,
-    "priceMax": 4623,
-    "priceCurrency": "CNY",
-    "coverUrl": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2324/product/18_DESPERADO",
-    "ratingOverall": null,
-    "ratingCount": 0,
-    "favoriteCount": 0,
-    "composite": null,
-    "brand": {
-      "slug": "gray",
-      "name": "GRAY",
-      "nameCn": null
-    },
-    "categorySlug": "snowboard",
-    "specs": {
-      "profile": "Single Camber",
-      "profileFamily": "camber",
-      "shape": "Directional",
-      "fiberglass": "Full Fiberglass",
-      "scenes": [
-        "carving"
-      ]
-    },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-3a83-7850-a91e-798ce7a5a4bc",
@@ -8381,7 +9574,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "GRAY DESPERADO Ti Type-R 2027",
     "model": "DESPERADO Ti Type-R",
     "year": 2027,
-    "oneLiner": "面向高水平刻滑的金属强化型号，以锤头轮廓、复合侧切和较强边刃支撑为主要特点。日本官方 MSRP 按尺码 ¥198,000–¥209,000 含税，折算目录价约 ¥8,405–¥8,872 CNY（非中国零售价）。",
+    "oneLiner": "面向高水平刻滑的锤头板，采用变截面多段侧切、Vario Camber 与 X 形 0.4 mm Titanal；26/27 目录列 11 个标准/宽版尺码，日本官方含税 MSRP ¥198,000–¥209,000（CNY 数值仅作汇率换算，不代表中国零售价）。",
     "priceMin": 8405,
     "priceMax": 8872,
     "priceCurrency": "CNY",
@@ -8397,26 +9590,292 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "lengthOptions": "154 IIIn / 155 III / 156 IIIw / 159 IV / 160 IVw / 166 Vw / 167 Vew / 172 VI / 173 VIew / 178 VII / 179 VIIew",
+      "length": 167,
+      "shape": "Directional Hammerhead / TripleRadius",
       "profile": "Vario Camber",
       "profileFamily": "hybrid",
-      "shape": "Directional Hammerhead / TripleRadius",
       "core": "Wood Core",
+      "fiberglass": "玻纤夹层；X 形 0.4 mm Titanal（官方结构图）",
+      "base": "IS7500 Graphite Sintered",
+      "widthVariant": "wide",
+      "effectiveEdge": 1490,
+      "sidecutRadii": "13.2/12.6/14.0 m",
+      "waistWidth": 270,
+      "stanceSetback": 60,
+      "sizeSpecs": [
+        {
+          "size": "154 IIIn",
+          "overallLength": 1540,
+          "effectiveEdge": 1390,
+          "contactLength": 1220,
+          "waistWidth": 238,
+          "sidecutRadii": "9.0/8.6/9.6 m",
+          "sidecutOffset": -30,
+          "noseLength": 195,
+          "noseWidth": 306,
+          "noseHeight": 24,
+          "tailLength": 125,
+          "tailWidth": 279,
+          "tailHeight": 19.3,
+          "camber": 9,
+          "stanceWidth": "440–560 mm",
+          "setback": 30,
+          "insertQty": "12+12",
+          "edge": "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC",
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED",
+          "base": "IS7500 Graphite",
+          "stiffness": "N 8.0 / W 8.7 / T 8.2"
+        },
+        {
+          "size": "155 III",
+          "overallLength": 1550,
+          "effectiveEdge": 1390,
+          "contactLength": 1220,
+          "waistWidth": 246,
+          "sidecutRadii": "9.0/8.6/9.6 m",
+          "sidecutOffset": -30,
+          "noseLength": 200,
+          "noseWidth": 306,
+          "noseHeight": 25.7,
+          "tailLength": 130,
+          "tailWidth": 287,
+          "tailHeight": 20.9,
+          "camber": 9,
+          "stanceWidth": "500–620 mm",
+          "setback": 30,
+          "insertQty": "12+12",
+          "edge": "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC",
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED",
+          "base": "IS7500 Graphite",
+          "stiffness": "N 8.4 / W 9.1 / T 8.6"
+        },
+        {
+          "size": "156 IIIw",
+          "overallLength": 1560,
+          "effectiveEdge": 1390,
+          "contactLength": 1220,
+          "waistWidth": 254,
+          "sidecutRadii": "9.0/8.6/9.6 m",
+          "sidecutOffset": -30,
+          "noseLength": 205,
+          "noseWidth": 314,
+          "noseHeight": 28,
+          "tailLength": 135,
+          "tailWidth": 295,
+          "tailHeight": 22.5,
+          "camber": 9,
+          "stanceWidth": "500–620 mm",
+          "setback": 30,
+          "insertQty": "12+12",
+          "edge": "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC",
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED",
+          "base": "IS7500 Graphite",
+          "stiffness": "N 8.4 / W 9.1 / T 8.6"
+        },
+        {
+          "size": "159 IV",
+          "overallLength": 1590,
+          "effectiveEdge": 1430,
+          "contactLength": 1260,
+          "waistWidth": 248,
+          "sidecutRadii": "9.6/9.2/10.2 m",
+          "sidecutOffset": -30,
+          "noseLength": 200,
+          "noseWidth": 307,
+          "noseHeight": 25.7,
+          "tailLength": 130,
+          "tailWidth": 289,
+          "tailHeight": 20.9,
+          "camber": 10,
+          "stanceWidth": "500–620 mm",
+          "setback": 40,
+          "insertQty": "12+12",
+          "edge": "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC",
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED",
+          "base": "IS7500 Graphite",
+          "stiffness": "N 8.6 / W 9.3 / T 8.8"
+        },
+        {
+          "size": "160 IVw",
+          "overallLength": 1600,
+          "effectiveEdge": 1430,
+          "contactLength": 1260,
+          "waistWidth": 256,
+          "sidecutRadii": "9.6/9.2/10.2 m",
+          "sidecutOffset": -30,
+          "noseLength": 205,
+          "noseWidth": 315,
+          "noseHeight": 28,
+          "tailLength": 135,
+          "tailWidth": 297,
+          "tailHeight": 22.5,
+          "camber": 10,
+          "stanceWidth": "500–620 mm",
+          "setback": 40,
+          "insertQty": "12+12",
+          "edge": "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC",
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED",
+          "base": "IS7500 Graphite",
+          "stiffness": "N 8.6 / W 9.3 / T 8.8"
+        },
+        {
+          "size": "166 Vw",
+          "overallLength": 1660,
+          "effectiveEdge": 1490,
+          "contactLength": 1320,
+          "waistWidth": 256,
+          "sidecutRadii": "12.8/12.2/13.6 m",
+          "sidecutOffset": -30,
+          "noseLength": 205,
+          "noseWidth": 304,
+          "noseHeight": 28,
+          "tailLength": 135,
+          "tailWidth": 290,
+          "tailHeight": 22.5,
+          "camber": 12,
+          "stanceWidth": "500–620 mm",
+          "setback": 60,
+          "insertQty": "12+12",
+          "edge": "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC",
+          "sidewallAngle": "15°",
+          "sidewallColor": "NEON RED",
+          "base": "IS7500 Graphite",
+          "stiffness": "N 8.7 / W 9.4 / T 8.9"
+        },
+        {
+          "size": "167 Vew",
+          "overallLength": 1670,
+          "effectiveEdge": 1490,
+          "contactLength": 1320,
+          "waistWidth": 270,
+          "sidecutRadii": "13.2/12.6/14.0 m",
+          "sidecutOffset": -30,
+          "noseLength": 210,
+          "noseWidth": 316,
+          "noseHeight": 30,
+          "tailLength": 140,
+          "tailWidth": 303,
+          "tailHeight": 24,
+          "camber": 12,
+          "stanceWidth": "500–660 mm",
+          "setback": 60,
+          "insertQty": "14+14",
+          "edge": "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC",
+          "sidewallAngle": "15°",
+          "sidewallColor": "NEON RED",
+          "base": "IS7500 Graphite",
+          "stiffness": "N 8.7 / W 9.4 / T 8.9"
+        },
+        {
+          "size": "172 VI",
+          "overallLength": 1720,
+          "effectiveEdge": 1550,
+          "contactLength": 1380,
+          "waistWidth": 260,
+          "sidecutRadii": "15.6/14.8/16.4 m",
+          "sidecutOffset": -30,
+          "noseLength": 205,
+          "noseWidth": 303,
+          "noseHeight": 28,
+          "tailLength": 135,
+          "tailWidth": 290,
+          "tailHeight": 22.5,
+          "camber": 12,
+          "stanceWidth": "500–620 mm",
+          "setback": 60,
+          "insertQty": "12+12",
+          "edge": "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC",
+          "sidewallAngle": "15°",
+          "sidewallColor": "NEON RED",
+          "base": "IS7500 Graphite",
+          "stiffness": "N 8.7 / W 9.4 / T 8.9"
+        },
+        {
+          "size": "173 VIew",
+          "overallLength": 1730,
+          "effectiveEdge": 1550,
+          "contactLength": 1380,
+          "waistWidth": 263,
+          "sidecutRadii": "15.6/14.8/16.4 m",
+          "sidecutOffset": -30,
+          "noseLength": 210,
+          "noseWidth": 316,
+          "noseHeight": 30,
+          "tailLength": 140,
+          "tailWidth": 303,
+          "tailHeight": 24,
+          "camber": 12,
+          "stanceWidth": "500–660 mm",
+          "setback": 60,
+          "insertQty": "14+14",
+          "edge": "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC",
+          "sidewallAngle": "15°",
+          "sidewallColor": "NEON RED",
+          "base": "IS7500 Graphite",
+          "stiffness": "N 8.7 / W 9.4 / T 8.9"
+        },
+        {
+          "size": "178 VII",
+          "overallLength": 1780,
+          "effectiveEdge": 1610,
+          "contactLength": 1440,
+          "waistWidth": 260,
+          "sidecutRadii": "18.2/17.2/19.2 m",
+          "sidecutOffset": -30,
+          "noseLength": 205,
+          "noseWidth": 300,
+          "noseHeight": 28,
+          "tailLength": 135,
+          "tailWidth": 289,
+          "tailHeight": 22.5,
+          "camber": 12,
+          "stanceWidth": "500–620 mm",
+          "setback": 60,
+          "insertQty": "12+12",
+          "edge": "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC",
+          "sidewallAngle": "15°",
+          "sidewallColor": "NEON RED",
+          "base": "IS7500 Graphite",
+          "stiffness": "N 8.9 / W 9.5 / T 9.1"
+        },
+        {
+          "size": "179 VIIew",
+          "overallLength": 1790,
+          "effectiveEdge": 1610,
+          "contactLength": 1440,
+          "waistWidth": 276,
+          "sidecutRadii": "18.2/17.2/19.2 m",
+          "sidecutOffset": -30,
+          "noseLength": 210,
+          "noseWidth": 316,
+          "noseHeight": 30,
+          "tailLength": 140,
+          "tailWidth": 305,
+          "tailHeight": 24,
+          "camber": 12,
+          "stanceWidth": "500–660 mm",
+          "setback": 60,
+          "insertQty": "14+14",
+          "edge": "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC",
+          "sidewallAngle": "15°",
+          "sidewallColor": "NEON RED",
+          "base": "IS7500 Graphite",
+          "stiffness": "N 8.9 / W 9.5 / T 9.1"
+        }
+      ],
       "scenes": [
         "carving"
-      ]
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0eabd-69ea-7459-9652-c4f3a8a978fd",
@@ -8440,33 +9899,234 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "profile": "Single Camber (IIw wide only: Vario Camber)",
-      "profileFamily": "camber",
-      "shape": "Directional Hammerhead / TripleRadius",
-      "core": "Wood Core + IZANAS Fiber",
+      "lengthOptions": "I / IIn / II / IIw / III / IIIw / IVw / IV / Vw",
       "length": 157,
       "effectiveEdge": 1360,
       "sidecutRadii": "9.8/9.2/10.4 m",
       "waistWidth": 246,
       "stanceSetback": 30,
+      "core": "Wood Core + IZANAS Fiber",
       "fiberglass": "Glass + IZANAS beneath core + upper-edge Titanal ribbon",
       "base": "IS7500 Graphite",
+      "shape": "Directional Hammerhead / TripleRadius",
       "scenes": [
         "carving"
-      ]
+      ],
+      "profile": "Single Camber (IIw wide only: Vario Camber)",
+      "profileFamily": "camber",
+      "sizeSpecs": [
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "I",
+          "camber": 8,
+          "setback": 30,
+          "insertQty": "12+12",
+          "noseWidth": 278,
+          "tailWidth": 275,
+          "noseHeight": 38.9,
+          "noseLength": 180,
+          "tailHeight": 30.8,
+          "tailLength": 160,
+          "waistWidth": 230,
+          "stanceWidth": "420–540",
+          "sidecutRadii": "8200/7600/8600",
+          "contactLength": 1120,
+          "effectiveEdge": 1250,
+          "overallLength": 1460,
+          "sidecutOffset": -20,
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED"
+        },
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "IIn",
+          "camber": 10,
+          "setback": 30,
+          "insertQty": "12+12",
+          "noseWidth": 282,
+          "tailWidth": 281,
+          "noseHeight": 38.9,
+          "noseLength": 175,
+          "tailHeight": 30.8,
+          "tailLength": 155,
+          "waistWidth": 232,
+          "stanceWidth": "440–560",
+          "sidecutRadii": "8840/8200/9240",
+          "contactLength": 1180,
+          "effectiveEdge": 1310,
+          "overallLength": 1510,
+          "sidecutOffset": -20,
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED"
+        },
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "II",
+          "camber": 10,
+          "setback": 30,
+          "insertQty": "12+12",
+          "noseWidth": 294,
+          "tailWidth": 287,
+          "noseHeight": 38.9,
+          "noseLength": 180,
+          "tailHeight": 30.8,
+          "tailLength": 160,
+          "waistWidth": 244,
+          "stanceWidth": "460–580",
+          "sidecutRadii": "8840/8200/9240",
+          "contactLength": 1180,
+          "effectiveEdge": 1310,
+          "overallLength": 1520,
+          "sidecutOffset": -20,
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED"
+        },
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "IIw",
+          "camber": 10,
+          "setback": 30,
+          "insertQty": "12+12",
+          "noseWidth": 301,
+          "tailWidth": 295,
+          "noseHeight": 38.9,
+          "noseLength": 180,
+          "tailHeight": 30.8,
+          "tailLength": 160,
+          "waistWidth": 252,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "9200/8600/9600",
+          "contactLength": 1200,
+          "effectiveEdge": 1330,
+          "overallLength": 1540,
+          "sidecutOffset": 20,
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED"
+        },
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "III",
+          "camber": 10,
+          "setback": 30,
+          "insertQty": "12+12",
+          "noseWidth": 293,
+          "tailWidth": 287,
+          "noseHeight": 38.9,
+          "noseLength": 180,
+          "tailHeight": 30.8,
+          "tailLength": 160,
+          "waistWidth": 246,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "9800/9200/10400",
+          "contactLength": 1230,
+          "effectiveEdge": 1360,
+          "overallLength": 1570,
+          "sidecutOffset": 20,
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED"
+        },
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "IIIw",
+          "camber": 10,
+          "setback": 30,
+          "insertQty": "12+12",
+          "noseWidth": 299,
+          "tailWidth": 293,
+          "noseHeight": 39.1,
+          "noseLength": 183,
+          "tailHeight": 31.2,
+          "tailLength": 163,
+          "waistWidth": 246,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "9800/9200/10400",
+          "contactLength": 1230,
+          "effectiveEdge": 1360,
+          "overallLength": 1576,
+          "sidecutOffset": 20,
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED"
+        },
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "IVw",
+          "camber": 10,
+          "setback": 40,
+          "insertQty": "12+12",
+          "noseWidth": 301,
+          "tailWidth": 293,
+          "noseHeight": 38.9,
+          "noseLength": 180,
+          "tailHeight": 30.8,
+          "tailLength": 160,
+          "waistWidth": 256,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "11600/10800/12200",
+          "contactLength": 1270,
+          "effectiveEdge": 1400,
+          "overallLength": 1610,
+          "sidecutOffset": -30,
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED"
+        },
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "IV",
+          "camber": 10,
+          "setback": 40,
+          "insertQty": "12+12",
+          "noseWidth": 289,
+          "tailWidth": 281,
+          "noseHeight": 45.5,
+          "noseLength": 195,
+          "tailHeight": 32.6,
+          "tailLength": 165,
+          "waistWidth": 244,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "11600/10800/12200",
+          "contactLength": 1270,
+          "effectiveEdge": 1405,
+          "overallLength": 1630,
+          "sidecutOffset": -30,
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED"
+        },
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "Vw",
+          "camber": 10,
+          "setback": 60,
+          "insertQty": "12+12",
+          "noseWidth": 307,
+          "tailWidth": 299,
+          "noseHeight": 41,
+          "noseLength": 185,
+          "tailHeight": 32.8,
+          "tailLength": 165,
+          "waistWidth": 262,
+          "stanceWidth": "520–640",
+          "sidecutRadii": "12200/11600/12800",
+          "contactLength": 1310,
+          "effectiveEdge": 1450,
+          "overallLength": 1660,
+          "sidecutOffset": -30,
+          "sidewallAngle": "25°",
+          "sidewallColor": "NEON RED"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0eabd-6db1-701f-82d8-390addef0fd1",
@@ -8490,26 +10150,69 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "profile": "Single Camber",
-      "profileFamily": "camber",
+      "lengthOptions": "152 ver.S / 161 ver.S",
+      "core": "STD Core II",
+      "fiberglass": "2-ply 65/35 + 3-ply 50/50 Fiberglass",
       "shape": "Directional Hammerhead",
-      "core": "Wood Core",
       "scenes": [
         "carving"
-      ]
+      ],
+      "profile": "Vario Camber",
+      "profileFamily": "camber",
+      "sizeSpecs": [
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm / 48 RCWL",
+          "size": "152 ver.S",
+          "camber": 8,
+          "setback": 30,
+          "insertQty": "12+12",
+          "noseWidth": 296,
+          "stiffness": "8.4/9.1/8.6",
+          "tailWidth": 276,
+          "noseHeight": 26,
+          "noseLength": 205,
+          "tailHeight": 21,
+          "tailLength": 135,
+          "waistWidth": 236,
+          "stanceWidth": "440–560",
+          "sidecutRadii": "8800/8400/9400",
+          "contactLength": 1180,
+          "effectiveEdge": 1360,
+          "overallLength": 1520,
+          "sidecutOffset": -30,
+          "sidewallAngle": "15°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm / 48 RCWL",
+          "size": "161 ver.S",
+          "camber": 10,
+          "setback": 40,
+          "insertQty": "12+12",
+          "noseWidth": 309,
+          "stiffness": "9.0/9.7/9.2",
+          "tailWidth": 294,
+          "noseHeight": 30.4,
+          "noseLength": 210,
+          "tailHeight": 24.2,
+          "tailLength": 140,
+          "waistWidth": 260,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "11800/11200/12600",
+          "contactLength": 1260,
+          "effectiveEdge": 1430,
+          "overallLength": 1610,
+          "sidecutOffset": -30,
+          "sidewallAngle": "15°",
+          "sidewallColor": "BLACK"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0eabd-70e5-757e-879b-c98eeab99f0e",
@@ -8533,27 +10236,184 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "profile": "Active Camber",
-      "profileFamily": "hybrid",
+      "lengthOptions": "38 / 41 / 44 / 48 / 51 / 54 / 57",
+      "core": "Super Light Core",
+      "fiberglass": "Mesh Fiberglass Plate",
+      "base": "IS 7500 Sintered Base",
       "shape": "True Twin",
-      "core": "Wood Core",
       "scenes": [
         "freestyle",
         "all-mountain"
-      ]
+      ],
+      "profile": "Active Camber",
+      "profileFamily": "hybrid",
+      "sizeSpecs": [
+        {
+          "base": "IS 7500 Natural",
+          "edge": "1.8 mm stainless",
+          "size": "38",
+          "camber": 7,
+          "setback": 0,
+          "insertQty": "10+10",
+          "noseWidth": 270,
+          "tailWidth": 270,
+          "noseHeight": 34.4,
+          "noseLength": 165,
+          "tailHeight": 34.4,
+          "tailLength": 165,
+          "waistWidth": 230,
+          "stanceWidth": "460–540",
+          "sidecutRadii": "7400/6600/7400",
+          "contactLength": 1050,
+          "effectiveEdge": 1100,
+          "overallLength": 1380,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS 7500 Natural",
+          "edge": "1.8 mm stainless",
+          "size": "41",
+          "camber": 7,
+          "setback": 0,
+          "insertQty": "10+10",
+          "noseWidth": 275,
+          "tailWidth": 275,
+          "noseHeight": 36.5,
+          "noseLength": 170,
+          "tailHeight": 36.5,
+          "tailLength": 170,
+          "waistWidth": 234,
+          "stanceWidth": "460–540",
+          "sidecutRadii": "7600/6800/7600",
+          "contactLength": 1070,
+          "effectiveEdge": 1120,
+          "overallLength": 1410,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS 7500 Natural",
+          "edge": "1.8 mm stainless",
+          "size": "44",
+          "camber": 7,
+          "setback": 0,
+          "insertQty": "10+10",
+          "noseWidth": 279,
+          "tailWidth": 279,
+          "noseHeight": 38.3,
+          "noseLength": 175,
+          "tailHeight": 38.3,
+          "tailLength": 175,
+          "waistWidth": 238,
+          "stanceWidth": "480–560",
+          "sidecutRadii": "7800/7000/7800",
+          "contactLength": 1090,
+          "effectiveEdge": 1140,
+          "overallLength": 1440,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS 7500 Natural",
+          "edge": "1.8 mm stainless",
+          "size": "48",
+          "camber": 8,
+          "setback": 0,
+          "insertQty": "12+12",
+          "noseWidth": 285,
+          "tailWidth": 285,
+          "noseHeight": 38.9,
+          "noseLength": 180,
+          "tailHeight": 38.9,
+          "tailLength": 180,
+          "waistWidth": 244,
+          "stanceWidth": "480–600",
+          "sidecutRadii": "8000/7400/8400",
+          "contactLength": 1120,
+          "effectiveEdge": 1170,
+          "overallLength": 1480,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS 7500 Natural",
+          "edge": "1.8 mm stainless",
+          "size": "51",
+          "camber": 8,
+          "setback": 0,
+          "insertQty": "12+12",
+          "noseWidth": 289,
+          "tailWidth": 289,
+          "noseHeight": 41.2,
+          "noseLength": 185,
+          "tailHeight": 41.2,
+          "tailLength": 185,
+          "waistWidth": 248,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "8600/7600/8600",
+          "contactLength": 1140,
+          "effectiveEdge": 1190,
+          "overallLength": 1510,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS 7500 Natural",
+          "edge": "1.8 mm stainless",
+          "size": "54",
+          "camber": 8,
+          "setback": 0,
+          "insertQty": "12+12",
+          "noseWidth": 292,
+          "tailWidth": 292,
+          "noseHeight": 43.2,
+          "noseLength": 190,
+          "tailHeight": 43.2,
+          "tailLength": 190,
+          "waistWidth": 250,
+          "stanceWidth": "520–640",
+          "sidecutRadii": "8800/7800/8800",
+          "contactLength": 1160,
+          "effectiveEdge": 1220,
+          "overallLength": 1540,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS 7500 Natural",
+          "edge": "1.8 mm stainless",
+          "size": "57",
+          "camber": 10,
+          "setback": 0,
+          "insertQty": "12+12",
+          "noseWidth": 294,
+          "tailWidth": 294,
+          "noseHeight": 41.2,
+          "noseLength": 185,
+          "tailHeight": 41.2,
+          "tailLength": 185,
+          "waistWidth": 252,
+          "stanceWidth": "540–660",
+          "sidecutRadii": "9200/8200/9200",
+          "contactLength": 1200,
+          "effectiveEdge": 1250,
+          "overallLength": 1570,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "自由式 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0eabd-73f9-7d21-9653-4b78a20b8ba0",
@@ -8577,34 +10437,47 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "lengthOptions": "158 cm",
       "length": 158,
-      "profile": "Single Camber",
-      "profileFamily": "camber",
+      "core": "2-ply 50/50 Paulownia Core",
       "shape": "Directional",
-      "core": "Wood Core",
       "scenes": [
         "all-mountain",
         "powder",
         "carving"
-      ]
+      ],
+      "profile": "Single Camber",
+      "profileFamily": "camber",
+      "sizeSpecs": [
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "58",
+          "camber": 7,
+          "setback": 40,
+          "insertQty": "12+12",
+          "noseWidth": 300,
+          "stiffness": "7.5/8.5/8.0",
+          "tailWidth": 282,
+          "noseHeight": 48.7,
+          "noseLength": 280,
+          "tailHeight": 20.4,
+          "tailLength": 120,
+          "waistWidth": 254,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "9900/8900/9500",
+          "contactLength": 1180,
+          "effectiveEdge": 1240,
+          "overallLength": 1580,
+          "sidecutOffset": -80,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "158cm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "全山地 · 野雪浮雪 · 刻滑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0eabd-76f7-7b85-a79a-099d7d5af26a",
@@ -8628,29 +10501,215 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "profile": "Single Camber",
-      "profileFamily": "camber",
+      "lengthOptions": "46.5 / 51.5 / 51.5w / 53.5 / 55.5 / 55.5w / 57.5 / 57.5w",
+      "core": "STD Core II",
       "shape": "Directional Twin",
-      "core": "Wood Core",
-      "fiberglass": "Fiberglass + X-shaped Carbon Roving",
       "scenes": [
         "all-mountain",
         "freestyle",
         "carving"
-      ]
+      ],
+      "profile": "Single Camber",
+      "fiberglass": "Fiberglass + X-shaped Carbon Roving",
+      "profileFamily": "camber",
+      "sizeSpecs": [
+        {
+          "base": "IS 7500 Graphite",
+          "edge": "1.8 mm 高碳不锈钢",
+          "size": "46.5",
+          "camber": 8,
+          "setback": 10,
+          "insertQty": "10+12",
+          "noseWidth": 275,
+          "stiffness": "4.8/6.3/5.3",
+          "tailWidth": 275,
+          "noseHeight": 47.7,
+          "noseLength": 195,
+          "tailHeight": 40.8,
+          "tailLength": 180,
+          "waistWidth": 234,
+          "stanceWidth": "460–560",
+          "sidecutRadii": "7800/6880/7800",
+          "contactLength": 1090,
+          "effectiveEdge": 1140,
+          "overallLength": 1465,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS 7500 Graphite",
+          "edge": "1.8 mm 高碳不锈钢",
+          "size": "51.5",
+          "camber": 10,
+          "setback": 20,
+          "insertQty": "12+12",
+          "noseWidth": 285,
+          "stiffness": "5.5/7.0/6.0",
+          "tailWidth": 285,
+          "noseHeight": 45.5,
+          "noseLength": 195,
+          "tailHeight": 38.9,
+          "tailLength": 180,
+          "waistWidth": 242,
+          "stanceWidth": "460–580",
+          "sidecutRadii": "8200/7180/8200",
+          "contactLength": 1140,
+          "effectiveEdge": 1180,
+          "overallLength": 1515,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS 7500 Graphite",
+          "edge": "1.8 mm 高碳不锈钢",
+          "size": "51.5w",
+          "camber": 10,
+          "setback": 20,
+          "insertQty": "12+12",
+          "noseWidth": 293,
+          "stiffness": "5.5/7.0/6.0",
+          "tailWidth": 293,
+          "noseHeight": 45.5,
+          "noseLength": 195,
+          "tailHeight": 38.9,
+          "tailLength": 180,
+          "waistWidth": 250,
+          "stanceWidth": "460–580",
+          "sidecutRadii": "8200/7180/8200",
+          "contactLength": 1140,
+          "effectiveEdge": 1180,
+          "overallLength": 1515,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "GREY"
+        },
+        {
+          "base": "IS 7500 Graphite",
+          "edge": "1.8 mm 高碳不锈钢",
+          "size": "53.5",
+          "camber": 10,
+          "setback": 20,
+          "insertQty": "12+12",
+          "noseWidth": 285,
+          "stiffness": "6.0/7.5/6.5",
+          "tailWidth": 285,
+          "noseHeight": 45.5,
+          "noseLength": 195,
+          "tailHeight": 38.9,
+          "tailLength": 180,
+          "waistWidth": 244,
+          "stanceWidth": "480–600",
+          "sidecutRadii": "8700/7880/8700",
+          "contactLength": 1160,
+          "effectiveEdge": 1200,
+          "overallLength": 1535,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS 7500 Graphite",
+          "edge": "1.8 mm 高碳不锈钢",
+          "size": "55.5",
+          "camber": 10,
+          "setback": 20,
+          "insertQty": "12+12",
+          "noseWidth": 287,
+          "stiffness": "6.5/8.0/7.0",
+          "tailWidth": 287,
+          "noseHeight": 45.5,
+          "noseLength": 195,
+          "tailHeight": 38.9,
+          "tailLength": 180,
+          "waistWidth": 250,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "9020/8080/9020",
+          "contactLength": 1180,
+          "effectiveEdge": 1220,
+          "overallLength": 1555,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS 7500 Graphite",
+          "edge": "1.8 mm 高碳不锈钢",
+          "size": "55.5w",
+          "camber": 10,
+          "setback": 20,
+          "insertQty": "12+12",
+          "noseWidth": 295,
+          "stiffness": "6.5/8.0/7.0",
+          "tailWidth": 295,
+          "noseHeight": 45.5,
+          "noseLength": 195,
+          "tailHeight": 38.9,
+          "tailLength": 180,
+          "waistWidth": 254,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "9020/8080/9020",
+          "contactLength": 1180,
+          "effectiveEdge": 1220,
+          "overallLength": 1555,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "GREY"
+        },
+        {
+          "base": "IS 7500 Graphite",
+          "edge": "1.8 mm 高碳不锈钢",
+          "size": "57.5",
+          "camber": 12,
+          "setback": 20,
+          "insertQty": "12+12",
+          "noseWidth": 288,
+          "stiffness": "7.0/8.5/7.5",
+          "tailWidth": 288,
+          "noseHeight": 45.5,
+          "noseLength": 195,
+          "tailHeight": 38.9,
+          "tailLength": 180,
+          "waistWidth": 246,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "9100/8280/9100",
+          "contactLength": 1200,
+          "effectiveEdge": 1240,
+          "overallLength": 1575,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLACK"
+        },
+        {
+          "base": "IS 7500 Graphite",
+          "edge": "1.8 mm 高碳不锈钢",
+          "size": "57.5w",
+          "camber": 12,
+          "setback": 20,
+          "insertQty": "12+12",
+          "noseWidth": 300,
+          "stiffness": "7.0/8.5/7.5",
+          "tailWidth": 300,
+          "noseHeight": 45.5,
+          "noseLength": 195,
+          "tailHeight": 38.9,
+          "tailLength": 180,
+          "waistWidth": 258,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "9100/8280/9100",
+          "contactLength": 1200,
+          "effectiveEdge": 1240,
+          "overallLength": 1575,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "GREY"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 · 刻滑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0eabd-1bf6-7d68-a902-f8468a104453",
@@ -8674,28 +10733,203 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "profile": "Single Camber",
-      "profileFamily": "camber",
-      "shape": "True Twin / Directional Twin / Directional（随长度变化）",
+      "lengthOptions": "146 / 151 / 152w / 154 / 155w / 156ew / 160w / 161ew",
       "core": "Poplar + Bamboo Wood Core",
+      "shape": "True Twin / Directional Twin / Directional（随长度变化）",
       "scenes": [
         "carving",
         "freestyle",
         "all-mountain"
-      ]
+      ],
+      "profile": "Single Camber（26/27 在线型号图表；日文目录另列 Vario Camber，冲突待确认）",
+      "profileFamily": "camber",
+      "sizeSpecs": [
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "46",
+          "setback": 0,
+          "insertQty": "12+12",
+          "noseWidth": 281,
+          "tailWidth": 281,
+          "noseHeight": 38,
+          "noseLength": 185,
+          "tailHeight": 38,
+          "tailLength": 185,
+          "waistWidth": 240,
+          "stanceWidth": "440–560",
+          "sidecutRadii": "7600/7200/7600",
+          "contactLength": 1090,
+          "effectiveEdge": 1140,
+          "overallLength": 1460,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLUEGREEN"
+        },
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "51",
+          "setback": 0,
+          "insertQty": "12+12",
+          "noseWidth": 288,
+          "tailWidth": 288,
+          "noseHeight": 38,
+          "noseLength": 185,
+          "tailHeight": 38,
+          "tailLength": 185,
+          "waistWidth": 248,
+          "stanceWidth": "440–560",
+          "sidecutRadii": "8400/8000/8400",
+          "contactLength": 1140,
+          "effectiveEdge": 1180,
+          "overallLength": 1510,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLUEGREEN"
+        },
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "52w",
+          "setback": 0,
+          "insertQty": "12+12",
+          "noseWidth": 296,
+          "tailWidth": 296,
+          "noseHeight": 40,
+          "noseLength": 190,
+          "tailHeight": 40,
+          "tailLength": 190,
+          "waistWidth": 256,
+          "stanceWidth": "440–560",
+          "sidecutRadii": "8400/8000/8400",
+          "contactLength": 1140,
+          "effectiveEdge": 1180,
+          "overallLength": 1520,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLUEGREEN"
+        },
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "54",
+          "camber": 8,
+          "setback": 10,
+          "insertQty": "12+12",
+          "noseWidth": 291,
+          "tailWidth": 291,
+          "noseHeight": 41,
+          "noseLength": 190,
+          "tailHeight": 32,
+          "tailLength": 170,
+          "waistWidth": 250,
+          "stanceWidth": "480–600",
+          "sidecutRadii": "8700/8300/8700",
+          "contactLength": 1180,
+          "effectiveEdge": 1220,
+          "overallLength": 1540,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLUEGREEN"
+        },
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "55w",
+          "camber": 8,
+          "setback": 10,
+          "insertQty": "12+12",
+          "noseWidth": 301,
+          "tailWidth": 301,
+          "noseHeight": 42.5,
+          "noseLength": 195,
+          "tailHeight": 34.4,
+          "tailLength": 175,
+          "waistWidth": 260,
+          "stanceWidth": "480–600",
+          "sidecutRadii": "8700/8300/8700",
+          "contactLength": 1180,
+          "effectiveEdge": 1220,
+          "overallLength": 1550,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLUEGREEN"
+        },
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "56ew",
+          "camber": 8,
+          "setback": 10,
+          "insertQty": "12+12",
+          "noseWidth": 311,
+          "tailWidth": 311,
+          "noseHeight": 44.5,
+          "noseLength": 200,
+          "tailHeight": 36.5,
+          "tailLength": 180,
+          "waistWidth": 270,
+          "stanceWidth": "480–600",
+          "sidecutRadii": "8700/8300/8700",
+          "contactLength": 1180,
+          "effectiveEdge": 1220,
+          "overallLength": 1560,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLUEGREEN"
+        },
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "60w",
+          "camber": 9,
+          "setback": 25,
+          "insertQty": "12+12",
+          "noseWidth": 304,
+          "tailWidth": 298,
+          "noseHeight": 47,
+          "noseLength": 205,
+          "tailHeight": 35,
+          "tailLength": 175,
+          "waistWidth": 262,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "9800/9200/10200",
+          "contactLength": 1220,
+          "effectiveEdge": 1260,
+          "overallLength": 1600,
+          "sidecutOffset": 20,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLUEGREEN"
+        },
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "61ew",
+          "camber": 9,
+          "setback": 25,
+          "insertQty": "12+12",
+          "noseWidth": 314,
+          "tailWidth": 308,
+          "noseHeight": 49.2,
+          "noseLength": 210,
+          "tailHeight": 36.2,
+          "tailLength": 180,
+          "waistWidth": 272,
+          "stanceWidth": "500–620",
+          "sidecutRadii": "9800/9200/10200",
+          "contactLength": 1220,
+          "effectiveEdge": 1260,
+          "overallLength": 1610,
+          "sidecutOffset": 20,
+          "sidewallAngle": "25°",
+          "sidewallColor": "BLUEGREEN"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑 · 自由式 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0eabd-79f0-74c1-bbee-29a9bc814f96",
@@ -8719,26 +10953,93 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "profile": "Single Camber",
-      "profileFamily": "camber",
+      "lengthOptions": "154 ver.C / 155w ver.C / 156ew ver.C",
       "core": "Poplar + Bamboo Wood Core",
+      "fiberglass": "Carbon strips beneath core + fiberglass laminate",
       "scenes": [
         "carving",
         "freestyle"
-      ]
+      ],
+      "profile": "Single Camber（26/27 在线型号图表；日文目录另列 Vario Camber，冲突待确认）",
+      "profileFamily": "camber",
+      "sizeSpecs": [
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "54 ver.C",
+          "camber": 8,
+          "setback": 10,
+          "insertQty": "12+12",
+          "noseWidth": 291,
+          "stiffness": "6.8/8.0/7.0",
+          "tailWidth": 291,
+          "noseHeight": 41,
+          "noseLength": 190,
+          "tailHeight": 32,
+          "tailLength": 170,
+          "waistWidth": 250,
+          "stanceWidth": "480–600",
+          "sidecutRadii": "8700/8300/8700",
+          "contactLength": 1180,
+          "effectiveEdge": 1220,
+          "overallLength": 1540,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "PURPLE"
+        },
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "55w ver.C",
+          "camber": 8,
+          "setback": 10,
+          "insertQty": "12+12",
+          "noseWidth": 301,
+          "stiffness": "6.8/8.0/7.0",
+          "tailWidth": 301,
+          "noseHeight": 42.5,
+          "noseLength": 195,
+          "tailHeight": 34.4,
+          "tailLength": 175,
+          "waistWidth": 260,
+          "stanceWidth": "480–600",
+          "sidecutRadii": "8700/8300/8700",
+          "contactLength": 1180,
+          "effectiveEdge": 1220,
+          "overallLength": 1550,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "PURPLE"
+        },
+        {
+          "base": "P-TEX 3000 Graphite",
+          "edge": "1.8 mm stainless",
+          "size": "56ew ver.C",
+          "camber": 8,
+          "setback": 10,
+          "insertQty": "12+12",
+          "noseWidth": 311,
+          "stiffness": "6.8/8.0/7.0",
+          "tailWidth": 311,
+          "noseHeight": 44.5,
+          "noseLength": 200,
+          "tailHeight": 36.5,
+          "tailLength": 180,
+          "waistWidth": 270,
+          "stanceWidth": "480–600",
+          "sidecutRadii": "8700/8300/8700",
+          "contactLength": 1180,
+          "effectiveEdge": 1220,
+          "overallLength": 1560,
+          "sidecutOffset": 0,
+          "sidewallAngle": "25°",
+          "sidewallColor": "PURPLE"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑 · 自由式"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0eabd-7d0c-7623-b1fc-137566925fca",
@@ -8746,7 +11047,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "GRAY TYCOON Type-S [iz] 2027",
     "model": "TYCOON Type-S [iz]",
     "year": 2027,
-    "oneLiner": "26/27 高端竞速刻滑型号，以全金属结构、IZANAS 纤维及复合材料控制弯曲后的回弹，可搭配雪板底板系统。日本官方含税 MSRP ¥198,000，按 2026-10-02 参考汇率折算约 ¥8,405 CNY（非中国零售价）。",
+    "oneLiner": "26/27 全金属夹层结合 Aspen 木芯下方 IZANAS 纤维的刻滑型号，官方称其兼顾金属切边感与受控回弹，并针对 ALLFLEX、VIST 等分离式底板测试。日本官方含税 MSRP ¥198,000，按 2026-10-02 参考汇率折算约 ¥8,405 CNY（非中国零售价）。",
     "priceMin": 8405,
     "priceMax": 8405,
     "priceCurrency": "CNY",
@@ -8762,20 +11063,66 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "profile": "Vario Camber",
+      "lengthOptions": "163 / 185",
+      "core": "Aspen Wood Core + IZANAS Fiber",
+      "fiberglass": "1-ply 65/35 Fiberglass (top and bottom)",
       "shape": "Directional Alpine",
-      "core": "Wood Core + IZANAS Fiber",
       "scenes": [
         "carving"
-      ]
+      ],
+      "profile": "Vario Camber",
+      "sizeSpecs": [
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm / 48 RCWL",
+          "size": "63",
+          "camber": 7,
+          "setback": 60,
+          "insertQty": "10+10 & ALLFLEX",
+          "noseWidth": 260,
+          "tailWidth": 247,
+          "noseHeight": 20.3,
+          "noseLength": 135,
+          "tailHeight": 5.2,
+          "tailLength": 85,
+          "waistWidth": 200,
+          "stanceWidth": "460–540",
+          "sidecutRadii": "10200/9800/10800",
+          "contactLength": 1410,
+          "effectiveEdge": 1510,
+          "overallLength": 1630,
+          "sidecutOffset": -40,
+          "sidewallAngle": "15°",
+          "sidewallColor": "NEON RED"
+        },
+        {
+          "base": "IS7500 Graphite",
+          "edge": "1.8 mm / 48 RCWL",
+          "size": "85",
+          "camber": 6,
+          "setback": 80,
+          "insertQty": "10+10 & ALLFLEX",
+          "noseWidth": 246,
+          "tailWidth": 232,
+          "noseHeight": 19.9,
+          "noseLength": 145,
+          "tailHeight": 6.4,
+          "tailLength": 95,
+          "waistWidth": 200,
+          "stanceWidth": "460–540",
+          "sidecutRadii": "18800/17800/20400",
+          "contactLength": 1610,
+          "effectiveEdge": 1735,
+          "overallLength": 1850,
+          "sidecutOffset": -60,
+          "sidewallAngle": "15°",
+          "sidewallColor": "NEON RED"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-7d48-7e81-8bee-78680ac52f0a",
@@ -8801,37 +11148,288 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 148,
       "effectiveEdge": 1120,
+      "sidecut": 7.1,
       "waistWidth": 241,
+      "stanceSetback": 20,
       "profile": "CamRock",
       "profileFamily": "hybrid",
       "shape": "Directional",
+      "core": "Master Core（Paulownia / Poplar）",
+      "fiberglass": "Biax",
+      "base": "Sintered 8000",
+      "weight": 2300,
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "139",
+          "weightKg": 2,
+          "riderWeightLb": [
+            90,
+            140
+          ],
+          "riderWeightKg": [
+            41,
+            63
+          ],
+          "bootUs": [
+            5,
+            7
+          ],
+          "bootEu": [
+            35.5,
+            37.5
+          ],
+          "surfaceAreaDm2": 33.7,
+          "contactLengthCm": 98.5,
+          "effectiveEdgeCm": 105,
+          "tipLengthCm": 23.5,
+          "tailLengthCm": 17,
+          "waistCm": 23.5,
+          "underfootWidthFrontCm": 24.6,
+          "underfootWidthBackCm": 24.6,
+          "tipWidthCm": 27.6,
+          "tailWidthCm": 27.1,
+          "sidecutM": 6.5,
+          "taperMm": 5,
+          "referenceStanceCm": 47,
+          "referenceStanceIn": 18.5,
+          "centeredStanceCm": 49,
+          "centeredStanceIn": 19.3,
+          "setbackCm": 2
+        },
+        {
+          "size": "142",
+          "weightKg": 2.1,
+          "riderWeightLb": [
+            90,
+            140
+          ],
+          "riderWeightKg": [
+            41,
+            63
+          ],
+          "bootUs": [
+            5,
+            7
+          ],
+          "bootEu": [
+            35.5,
+            37.5
+          ],
+          "surfaceAreaDm2": 34.75,
+          "contactLengthCm": 101.1,
+          "effectiveEdgeCm": 107,
+          "tipLengthCm": 23.7,
+          "tailLengthCm": 17.2,
+          "waistCm": 23.7,
+          "underfootWidthFrontCm": 24.8,
+          "underfootWidthBackCm": 24.8,
+          "tipWidthCm": 27.9,
+          "tailWidthCm": 27.4,
+          "sidecutM": 6.7,
+          "taperMm": 5,
+          "referenceStanceCm": 47,
+          "referenceStanceIn": 18.5,
+          "centeredStanceCm": 49,
+          "centeredStanceIn": 19.3,
+          "setbackCm": 2
+        },
+        {
+          "size": "145",
+          "weightKg": 2.2,
+          "riderWeightLb": [
+            100,
+            150
+          ],
+          "riderWeightKg": [
+            45,
+            68
+          ],
+          "bootUs": [
+            6,
+            8
+          ],
+          "bootEu": [
+            36.5,
+            38.5
+          ],
+          "surfaceAreaDm2": 35.81,
+          "contactLengthCm": 103.7,
+          "effectiveEdgeCm": 110,
+          "tipLengthCm": 23.9,
+          "tailLengthCm": 17.4,
+          "waistCm": 23.9,
+          "underfootWidthFrontCm": 25,
+          "underfootWidthBackCm": 25,
+          "tipWidthCm": 28.2,
+          "tailWidthCm": 27.7,
+          "sidecutM": 6.9,
+          "taperMm": 5,
+          "referenceStanceCm": 49,
+          "referenceStanceIn": 19.3,
+          "centeredStanceCm": 51,
+          "centeredStanceIn": 20.1,
+          "setbackCm": 2
+        },
+        {
+          "size": "148",
+          "weightKg": 2.3,
+          "riderWeightLb": [
+            100,
+            150
+          ],
+          "riderWeightKg": [
+            45,
+            68
+          ],
+          "bootUs": [
+            6,
+            8
+          ],
+          "bootEu": [
+            36.5,
+            38.5
+          ],
+          "surfaceAreaDm2": 36.88,
+          "contactLengthCm": 106.3,
+          "effectiveEdgeCm": 112,
+          "tipLengthCm": 24.1,
+          "tailLengthCm": 17.6,
+          "waistCm": 24.1,
+          "underfootWidthFrontCm": 25.2,
+          "underfootWidthBackCm": 25.2,
+          "tipWidthCm": 28.5,
+          "tailWidthCm": 28,
+          "sidecutM": 7.1,
+          "taperMm": 5,
+          "referenceStanceCm": 49,
+          "referenceStanceIn": 19.3,
+          "centeredStanceCm": 51,
+          "centeredStanceIn": 20.1,
+          "setbackCm": 2
+        },
+        {
+          "size": "151",
+          "weightKg": 2.4,
+          "riderWeightLb": [
+            110,
+            160
+          ],
+          "riderWeightKg": [
+            49,
+            73
+          ],
+          "bootUs": [
+            7,
+            9
+          ],
+          "bootEu": [
+            37.5,
+            39.5
+          ],
+          "surfaceAreaDm2": 37.96,
+          "contactLengthCm": 108.9,
+          "effectiveEdgeCm": 115,
+          "tipLengthCm": 24.3,
+          "tailLengthCm": 17.8,
+          "waistCm": 24.3,
+          "underfootWidthFrontCm": 25.4,
+          "underfootWidthBackCm": 25.4,
+          "tipWidthCm": 28.7,
+          "tailWidthCm": 28.2,
+          "sidecutM": 7.3,
+          "taperMm": 5,
+          "referenceStanceCm": 51,
+          "referenceStanceIn": 20.1,
+          "centeredStanceCm": 53,
+          "centeredStanceIn": 20.9,
+          "setbackCm": 2
+        },
+        {
+          "size": "154",
+          "weightKg": 2.5,
+          "riderWeightLb": [
+            120,
+            170
+          ],
+          "riderWeightKg": [
+            54,
+            77
+          ],
+          "bootUs": [
+            8,
+            10
+          ],
+          "bootEu": [
+            38.5,
+            42
+          ],
+          "surfaceAreaDm2": 39.06,
+          "contactLengthCm": 111.5,
+          "effectiveEdgeCm": 118,
+          "tipLengthCm": 24.5,
+          "tailLengthCm": 18,
+          "waistCm": 24.5,
+          "underfootWidthFrontCm": 25.6,
+          "underfootWidthBackCm": 25.6,
+          "tipWidthCm": 29,
+          "tailWidthCm": 28.5,
+          "sidecutM": 7.5,
+          "taperMm": 5,
+          "referenceStanceCm": 51,
+          "referenceStanceIn": 20.1,
+          "centeredStanceCm": 53,
+          "centeredStanceIn": 20.9,
+          "setbackCm": 2
+        },
+        {
+          "size": "156",
+          "weightKg": 2.6,
+          "riderWeightLb": [
+            120,
+            170
+          ],
+          "riderWeightKg": [
+            54,
+            77
+          ],
+          "bootUs": [
+            8,
+            11
+          ],
+          "bootEu": [
+            38.5,
+            43
+          ],
+          "surfaceAreaDm2": 39.85,
+          "contactLengthCm": 113.1,
+          "effectiveEdgeCm": 119,
+          "tipLengthCm": 24.7,
+          "tailLengthCm": 18.2,
+          "waistCm": 24.7,
+          "underfootWidthFrontCm": 25.9,
+          "underfootWidthBackCm": 25.9,
+          "tipWidthCm": 29.2,
+          "tailWidthCm": 28.7,
+          "sidecutM": 7.7,
+          "taperMm": 5,
+          "referenceStanceCm": 53,
+          "referenceStanceIn": 20.9,
+          "centeredStanceCm": 55,
+          "centeredStanceIn": 21.7,
+          "setbackCm": 2
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 549.95",
+      "priceMarket": "原币 USD；来源商店 www.jonessnowboards.com",
+      "priceSource": "https://www.jonessnowboards.com/en-int/products/womens-dream-weaver-20-snowboard",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "148cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1120mm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "241mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3e63-7f83-8d65-194d4da16980",
@@ -8855,10 +11453,12 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "lengthOptions": "151 / 154 / 156W / 158 / 159W / 161 / 162W / 164 / 165W / 167 / 169W / 172",
       "length": 161,
+      "weight": 3100,
       "effectiveEdge": 1200,
-      "sidecut": 9.1,
       "waistWidth": 252,
+      "sidecut": 9.1,
       "stanceSetback": 20,
       "profile": "Freeride CamRock",
       "profileFamily": "hybrid",
@@ -8866,35 +11466,152 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "core": "Control Core",
       "fiberglass": "Triax Fiberglass",
       "base": "Sintered 8000 Base",
-      "weight": 3100,
       "flex": 8,
+      "sizeSpecs": [
+        {
+          "size": "151",
+          "weight": 2700,
+          "effectiveEdge": 1120,
+          "contactLength": 1008,
+          "waistWidth": 243,
+          "noseWidth": 290,
+          "tailWidth": 276,
+          "sidecutRadii": "7.3 m",
+          "stanceWidth": "50 cm reference / 52 cm centered"
+        },
+        {
+          "size": "154",
+          "weight": 2800,
+          "effectiveEdge": 1140,
+          "contactLength": 1032,
+          "waistWidth": 246,
+          "noseWidth": 292,
+          "tailWidth": 278,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "52 cm reference / 54 cm centered"
+        },
+        {
+          "size": "156W",
+          "weight": 3000,
+          "effectiveEdge": 1160,
+          "contactLength": 1046,
+          "waistWidth": 261,
+          "noseWidth": 306,
+          "tailWidth": 292,
+          "sidecutRadii": "8.3 m",
+          "stanceWidth": "56 cm reference / 58 cm centered"
+        },
+        {
+          "size": "158",
+          "weight": 2900,
+          "effectiveEdge": 1180,
+          "contactLength": 1066,
+          "waistWidth": 249,
+          "noseWidth": 294,
+          "tailWidth": 281,
+          "sidecutRadii": "8.5 m",
+          "stanceWidth": "56 cm reference / 58 cm centered"
+        },
+        {
+          "size": "159W",
+          "weight": 3100,
+          "effectiveEdge": 1180,
+          "contactLength": 1070,
+          "waistWidth": 263,
+          "noseWidth": 307,
+          "tailWidth": 295,
+          "sidecutRadii": "8.7 m",
+          "stanceWidth": "56 cm reference / 58 cm centered"
+        },
+        {
+          "size": "161",
+          "weight": 3100,
+          "effectiveEdge": 1200,
+          "contactLength": 1090,
+          "waistWidth": 252,
+          "noseWidth": 296,
+          "tailWidth": 283,
+          "sidecutRadii": "9.1 m",
+          "stanceWidth": "56 cm reference / 58 cm centered"
+        },
+        {
+          "size": "162W",
+          "weight": 3300,
+          "effectiveEdge": 1210,
+          "contactLength": 1100,
+          "waistWidth": 263,
+          "noseWidth": 307,
+          "tailWidth": 294,
+          "sidecutRadii": "9.3 m",
+          "stanceWidth": "56 cm reference / 58 cm centered"
+        },
+        {
+          "size": "164",
+          "weight": 3200,
+          "effectiveEdge": 1230,
+          "contactLength": 1116,
+          "waistWidth": 254,
+          "noseWidth": 299,
+          "tailWidth": 286,
+          "sidecutRadii": "9.3 m",
+          "stanceWidth": "56 cm reference / 58 cm centered"
+        },
+        {
+          "size": "165W",
+          "weight": 3300,
+          "effectiveEdge": 1230,
+          "contactLength": 1124,
+          "waistWidth": 266,
+          "noseWidth": 311,
+          "tailWidth": 298,
+          "sidecutRadii": "9.4 m",
+          "stanceWidth": "60 cm reference / 58 cm centered"
+        },
+        {
+          "size": "167",
+          "weight": 3400,
+          "effectiveEdge": 1250,
+          "contactLength": 1136,
+          "waistWidth": 259,
+          "noseWidth": 305,
+          "tailWidth": 292,
+          "sidecutRadii": "9.4 m",
+          "stanceWidth": "60 cm reference / 58 cm centered"
+        },
+        {
+          "size": "169W",
+          "weight": 3600,
+          "effectiveEdge": 1270,
+          "contactLength": 1156,
+          "waistWidth": 270,
+          "noseWidth": 317,
+          "tailWidth": 304,
+          "sidecutRadii": "9.5 m",
+          "stanceWidth": "62 cm reference / 60 cm centered"
+        },
+        {
+          "size": "172",
+          "weight": 3600,
+          "effectiveEdge": 1290,
+          "contactLength": 1178,
+          "waistWidth": 263,
+          "noseWidth": 311,
+          "tailWidth": 298,
+          "sidecutRadii": "9.5 m",
+          "stanceWidth": "62 cm reference / 60 cm centered"
+        }
+      ],
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 749.95",
+      "priceMarket": "原币 USD；来源商店 www.jonessnowboards.com",
+      "priceSource": "https://www.jonessnowboards.com/en-int/products/mens-flagship-snowboard",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "161cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1200mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "9.1m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "252mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0faeb-3d41-70d8-a202-99f7b4f1da86",
@@ -8919,6 +11636,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 161,
+      "weight": 2900,
       "effectiveEdge": 1200,
       "sidecut": 9.1,
       "waistWidth": 252,
@@ -8928,35 +11646,152 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "shape": "Directional",
       "core": "Power Core + Koroyd",
       "base": "Sintered 9900",
-      "weight": 2900,
       "flex": 10,
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "lengthOptions": "154 / 158 / 159W / 161 / 162W / 164 / 165W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "154",
+          "weight": 2400,
+          "effectiveEdge": 1140,
+          "waistWidth": 246,
+          "setback": 20,
+          "contactLength": 1032,
+          "noseLength": 324,
+          "tailLength": 184,
+          "noseWidth": 292,
+          "tailWidth": 278,
+          "frontFootWidth": 261,
+          "backFootWidth": 255,
+          "taper": 14,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "520 mm（参考） / 540 mm（居中）",
+          "riderWeight": "120-170 lbs. / 54-77 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "158",
+          "weight": 2700,
+          "effectiveEdge": 1180,
+          "waistWidth": 249,
+          "setback": 20,
+          "contactLength": 1066,
+          "noseLength": 327,
+          "tailLength": 187,
+          "noseWidth": 294,
+          "tailWidth": 281,
+          "frontFootWidth": 265,
+          "backFootWidth": 259,
+          "taper": 12,
+          "sidecutRadii": "8.5 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "130-180 lbs. / 59-82 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "159W",
+          "weight": 2600,
+          "effectiveEdge": 1180,
+          "waistWidth": 263,
+          "setback": 20,
+          "contactLength": 1070,
+          "noseLength": 330,
+          "tailLength": 190,
+          "noseWidth": 307,
+          "tailWidth": 295,
+          "frontFootWidth": 278,
+          "backFootWidth": 273,
+          "taper": 13,
+          "sidecutRadii": "8.7 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "140-190 lbs. / 64-86 kg.",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "161",
+          "weight": 2900,
+          "effectiveEdge": 1200,
+          "waistWidth": 252,
+          "setback": 20,
+          "contactLength": 1090,
+          "noseLength": 330,
+          "tailLength": 190,
+          "noseWidth": 296,
+          "tailWidth": 283,
+          "frontFootWidth": 267,
+          "backFootWidth": 262,
+          "taper": 12,
+          "sidecutRadii": "9.1 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "150-200 lbs. / 67-91 kg.",
+          "bootSize": "US 8.5-10.5 / EU 41.5-44"
+        },
+        {
+          "size": "162W",
+          "weight": 3000,
+          "effectiveEdge": 1210,
+          "waistWidth": 263,
+          "setback": 20,
+          "contactLength": 1100,
+          "noseLength": 330,
+          "tailLength": 190,
+          "noseWidth": 307,
+          "tailWidth": 294,
+          "frontFootWidth": 277,
+          "backFootWidth": 273,
+          "taper": 12,
+          "sidecutRadii": "9.3 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "160-210 lbs. / 73-95 kg.",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "164",
+          "weight": 3000,
+          "effectiveEdge": 1230,
+          "waistWidth": 254,
+          "setback": 20,
+          "contactLength": 1116,
+          "noseLength": 332,
+          "tailLength": 192,
+          "noseWidth": 299,
+          "tailWidth": 286,
+          "frontFootWidth": 268,
+          "backFootWidth": 264,
+          "taper": 12,
+          "sidecutRadii": "9.3 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "160-210 lbs. / 73-95 kg.",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "165W",
+          "weight": 3100,
+          "effectiveEdge": 1230,
+          "waistWidth": 266,
+          "setback": 20,
+          "contactLength": 1124,
+          "noseLength": 333,
+          "tailLength": 193,
+          "noseWidth": 311,
+          "tailWidth": 298,
+          "frontFootWidth": 280,
+          "backFootWidth": 275,
+          "taper": 12,
+          "sidecutRadii": "9.4 m",
+          "stanceWidth": "600 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 11 / EU 44.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "161cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1200mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "9.1m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "252mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3e76-730d-8f77-24b45e6eb736",
@@ -8981,9 +11816,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 154,
+      "weight": 3000,
       "effectiveEdge": 1280,
+      "waistWidth": 263,
       "sidecut": 6.5,
-      "waistWidth": 248,
       "stanceSetback": 40,
       "profile": "True Medium Camber",
       "profileFamily": "camber",
@@ -8991,35 +11827,152 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "core": "Power Core",
       "fiberglass": "Biax Fiberglass",
       "base": "Sintered 8000 Base",
-      "weight": 2700,
       "flex": 6,
       "scenes": [
         "carving",
         "all-mountain"
-      ]
+      ],
+      "lengthOptions": "150N / 150 / 154N / 154 / 158N / 158 / 162",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "150N",
+          "weight": 2700,
+          "effectiveEdge": 1240,
+          "waistWidth": 246,
+          "setback": 40,
+          "contactLength": 1182,
+          "noseLength": 209,
+          "tailLength": 109,
+          "noseWidth": 310,
+          "tailWidth": 301,
+          "frontFootWidth": 257,
+          "backFootWidth": 261,
+          "taper": 9,
+          "sidecutRadii": "6.2 m",
+          "stanceWidth": "500 mm（参考） / 520 mm（居中）",
+          "riderWeight": "120-170 lbs. / 54-77 kg.",
+          "bootSize": "US 4-8 / EU 36-41.5"
+        },
+        {
+          "size": "150",
+          "weight": 2900,
+          "effectiveEdge": 1240,
+          "waistWidth": 261,
+          "setback": 40,
+          "contactLength": 1182,
+          "noseLength": 209,
+          "tailLength": 109,
+          "noseWidth": 325,
+          "tailWidth": 316,
+          "frontFootWidth": 272,
+          "backFootWidth": 276,
+          "taper": 9,
+          "sidecutRadii": "6.2 m",
+          "stanceWidth": "500 mm（参考） / 520 mm（居中）",
+          "riderWeight": "120-170 lbs. / 54-77 kg.",
+          "bootSize": "US 8.5-11 / EU 42-44.5"
+        },
+        {
+          "size": "154N",
+          "weight": 2700,
+          "effectiveEdge": 1280,
+          "waistWidth": 248,
+          "setback": 40,
+          "contactLength": 1220,
+          "noseLength": 210,
+          "tailLength": 110,
+          "noseWidth": 313,
+          "tailWidth": 304,
+          "frontFootWidth": 259,
+          "backFootWidth": 263,
+          "taper": 9,
+          "sidecutRadii": "6.5 m",
+          "stanceWidth": "520 mm（参考） / 540 mm（居中）",
+          "riderWeight": "130-180 lbs. / 59-82 kg.",
+          "bootSize": "US 4-9 / EU 36-43"
+        },
+        {
+          "size": "154",
+          "weight": 3000,
+          "effectiveEdge": 1280,
+          "waistWidth": 263,
+          "setback": 40,
+          "contactLength": 1220,
+          "noseLength": 210,
+          "tailLength": 110,
+          "noseWidth": 328,
+          "tailWidth": 319,
+          "frontFootWidth": 274,
+          "backFootWidth": 278,
+          "taper": 9,
+          "sidecutRadii": "6.5 m",
+          "stanceWidth": "520 mm（参考） / 540 mm（居中）",
+          "riderWeight": "130-180 lbs. / 59-82 kg.",
+          "bootSize": "US 9.5 / EU 43.5"
+        },
+        {
+          "size": "158N",
+          "weight": 2800,
+          "effectiveEdge": 1320,
+          "waistWidth": 250,
+          "setback": 40,
+          "contactLength": 1258,
+          "noseLength": 211,
+          "tailLength": 111,
+          "noseWidth": 317,
+          "tailWidth": 308,
+          "frontFootWidth": 263,
+          "backFootWidth": 267,
+          "taper": 9,
+          "sidecutRadii": "6.7 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "150-200+ lbs. / 67-91+ kg.",
+          "bootSize": "US 4-9 / EU 36-43"
+        },
+        {
+          "size": "158",
+          "weight": 3200,
+          "effectiveEdge": 1320,
+          "waistWidth": 265,
+          "setback": 40,
+          "contactLength": 1258,
+          "noseLength": 211,
+          "tailLength": 111,
+          "noseWidth": 332,
+          "tailWidth": 323,
+          "frontFootWidth": 278,
+          "backFootWidth": 282,
+          "taper": 9,
+          "sidecutRadii": "6.7 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "150-200+ lbs. / 67-91+ kg.",
+          "bootSize": "US 9.5 / EU 43.5"
+        },
+        {
+          "size": "162",
+          "weight": 3300,
+          "effectiveEdge": 1360,
+          "waistWidth": 267,
+          "setback": 40,
+          "contactLength": 1296,
+          "noseLength": 212,
+          "tailLength": 112,
+          "noseWidth": 335,
+          "tailWidth": 326,
+          "frontFootWidth": 279,
+          "backFootWidth": 283,
+          "taper": 9,
+          "sidecutRadii": "6.9 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220+ lbs. / 77-100+ kg.",
+          "bootSize": "US 10 / EU 44.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "154cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1280mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "6.5m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "248mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3e8a-7388-9abf-51587c4f12b4",
@@ -9044,9 +11997,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 159,
+      "weight": 2900,
       "effectiveEdge": 1220,
-      "sidecut": 7.8,
       "waistWidth": 255,
+      "sidecut": 7.8,
       "stanceSetback": 20,
       "profile": "Freeride CamRock",
       "profileFamily": "hybrid",
@@ -9054,47 +12008,240 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "core": "Master Core",
       "fiberglass": "Biax Fiberglass",
       "base": "Sintered 8000 Base",
-      "weight": 2900,
       "flex": 5,
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "lengthOptions": "150 / 153 / 155W / 156 / 158W / 159 / 161W / 162 / 164W / 165 / 167W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "150",
+          "weight": 2500,
+          "effectiveEdge": 1140,
+          "waistWidth": 246,
+          "setback": 20,
+          "contactLength": 1083,
+          "noseLength": 241,
+          "tailLength": 176,
+          "noseWidth": 291,
+          "tailWidth": 286,
+          "frontFootWidth": 257,
+          "backFootWidth": 257,
+          "taper": 5,
+          "sidecutRadii": "7.2 m",
+          "stanceWidth": "500 mm（参考） / 520 mm（居中）",
+          "riderWeight": "110-160 lbs. / 49-73 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "153",
+          "weight": 2600,
+          "effectiveEdge": 1170,
+          "waistWidth": 249,
+          "setback": 20,
+          "contactLength": 1107,
+          "noseLength": 244,
+          "tailLength": 179,
+          "noseWidth": 294,
+          "tailWidth": 289,
+          "frontFootWidth": 261,
+          "backFootWidth": 261,
+          "taper": 5,
+          "sidecutRadii": "7.4 m",
+          "stanceWidth": "520 mm（参考） / 540 mm（居中）",
+          "riderWeight": "110-160 lbs. / 49-73 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "155W",
+          "weight": 2800,
+          "effectiveEdge": 1180,
+          "waistWidth": 263,
+          "setback": 20,
+          "contactLength": 1119,
+          "noseLength": 248,
+          "tailLength": 183,
+          "noseWidth": 308,
+          "tailWidth": 303,
+          "frontFootWidth": 275,
+          "backFootWidth": 275,
+          "taper": 5,
+          "sidecutRadii": "7.6 m",
+          "stanceWidth": "540 mm（参考） / 560 mm（居中）",
+          "riderWeight": "120-170 lbs. / 54-77 kg.",
+          "bootSize": "US 9.5-11.5 / EU 42.5-45.5"
+        },
+        {
+          "size": "156",
+          "weight": 2700,
+          "effectiveEdge": 1190,
+          "waistWidth": 252,
+          "setback": 20,
+          "contactLength": 1131,
+          "noseLength": 247,
+          "tailLength": 182,
+          "noseWidth": 298,
+          "tailWidth": 293,
+          "frontFootWidth": 264,
+          "backFootWidth": 264,
+          "taper": 5,
+          "sidecutRadii": "7.6 m",
+          "stanceWidth": "540 mm（参考） / 560 mm（居中）",
+          "riderWeight": "120-170 lbs. / 54-77 kg.",
+          "bootSize": "US 8-10 / EU 40.5-43.5"
+        },
+        {
+          "size": "158W",
+          "weight": 2900,
+          "effectiveEdge": 1210,
+          "waistWidth": 265,
+          "setback": 20,
+          "contactLength": 1145,
+          "noseLength": 250,
+          "tailLength": 185,
+          "noseWidth": 311,
+          "tailWidth": 306,
+          "frontFootWidth": 278,
+          "backFootWidth": 277,
+          "taper": 5,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "140-190 lbs. / 64-86 kg.",
+          "bootSize": "US 10 / EU 43"
+        },
+        {
+          "size": "159",
+          "weight": 2900,
+          "effectiveEdge": 1220,
+          "waistWidth": 255,
+          "setback": 20,
+          "contactLength": 1155,
+          "noseLength": 250,
+          "tailLength": 185,
+          "noseWidth": 302,
+          "tailWidth": 297,
+          "frontFootWidth": 268,
+          "backFootWidth": 268,
+          "taper": 5,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "140-190 lbs. / 64-86 kg.",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "161W",
+          "weight": 3000,
+          "effectiveEdge": 1230,
+          "waistWidth": 267,
+          "setback": 20,
+          "contactLength": 1171,
+          "noseLength": 252,
+          "tailLength": 187,
+          "noseWidth": 314,
+          "tailWidth": 309,
+          "frontFootWidth": 279,
+          "backFootWidth": 279,
+          "taper": 5,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "150-200 lbs. / 67-91 kg.",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "162",
+          "weight": 3000,
+          "effectiveEdge": 1240,
+          "waistWidth": 258,
+          "setback": 20,
+          "contactLength": 1179,
+          "noseLength": 253,
+          "tailLength": 188,
+          "noseWidth": 305,
+          "tailWidth": 300,
+          "frontFootWidth": 270,
+          "backFootWidth": 270,
+          "taper": 5,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "160-210 lbs. / 73-95 kg.",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "164W",
+          "weight": 3100,
+          "effectiveEdge": 1260,
+          "waistWidth": 269,
+          "setback": 20,
+          "contactLength": 1197,
+          "noseLength": 254,
+          "tailLength": 189,
+          "noseWidth": 317,
+          "tailWidth": 312,
+          "frontFootWidth": 281,
+          "backFootWidth": 281,
+          "taper": 5,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "600 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "165",
+          "weight": 3200,
+          "effectiveEdge": 1260,
+          "waistWidth": 261,
+          "setback": 20,
+          "contactLength": 1203,
+          "noseLength": 256,
+          "tailLength": 191,
+          "noseWidth": 309,
+          "tailWidth": 304,
+          "frontFootWidth": 273,
+          "backFootWidth": 273,
+          "taper": 5,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "600 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "167W",
+          "weight": 3300,
+          "effectiveEdge": 1280,
+          "waistWidth": 271,
+          "setback": 20,
+          "contactLength": 1223,
+          "noseLength": 256,
+          "tailLength": 191,
+          "noseWidth": 319,
+          "tailWidth": 314,
+          "frontFootWidth": 283,
+          "backFootWidth": 283,
+          "taper": 5,
+          "sidecutRadii": "8.4 m",
+          "stanceWidth": "600 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 11 / EU 44.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "159cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1220mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.8m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "255mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2bd5-72e0-a121-e4b37424daec",
     "slug": "jones-hovercraft-2026",
-    "title": "Jones Hovercraft 2026",
-    "model": "Hovercraft",
+    "title": "Jones Hovercraft 2.0 2026",
+    "model": "Hovercraft 2.0",
     "year": 2026,
     "oneLiner": "浮雪的标杆。板头宽度和后移量让它在新雪里像船一样浮着，树林里转向比看起来灵活得多。",
     "priceMin": 6999,
     "priceMax": 6999,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.jonessnowboards.com/cdn/shop/files/J.26.SNU.HVC-gallery-1.webp?v=1768452295",
+    "coverUrl": "https://www.jonessnowboards.com/cdn/shop/files/J.26.SNU.HVC-gallery-1.webp?v=1768452295&width=1946",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9107,48 +12254,132 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 160,
-      "effectiveEdge": 1240,
-      "sidecut": 8.9,
-      "waistWidth": 268,
-      "stanceSetback": 50,
+      "effectiveEdge": 1260,
+      "sidecut": 9.3,
+      "waistWidth": 267,
+      "stanceSetback": 0,
       "profile": "Camber + 大勺形板头",
-      "profileFamily": "hybrid",
       "shape": "强定向锥形",
       "core": "FSC 白杨 / 竹",
       "fiberglass": "Triax Basalt",
       "base": "烧结 9000",
-      "weight": 2990,
-      "flex": 7,
+      "weight": 3200,
       "damping": 8,
       "pop": 5.5,
       "turnRadiusFeel": "深雪里灵活，硬雪面偏钝",
+      "warranty": 3,
+      "flex": 7,
+      "profileFamily": "hybrid",
       "scenes": [
         "powder"
       ],
-      "warranty": 3
+      "sizeSpecs": [
+        {
+          "size": "144",
+          "weight": 2600,
+          "effectiveEdge": 1130,
+          "waistWidth": 251,
+          "contactLength": 909,
+          "noseLength": 388,
+          "tailLength": 143,
+          "noseWidth": 297,
+          "tailWidth": 280,
+          "frontFootWidth": 264,
+          "backFootWidth": 259,
+          "taper": 17,
+          "sidecutRadii": "8.1 m",
+          "setback": 0
+        },
+        {
+          "size": "148",
+          "weight": 2700,
+          "effectiveEdge": 1160,
+          "waistWidth": 255,
+          "contactLength": 941,
+          "noseLength": 392,
+          "tailLength": 147,
+          "noseWidth": 302,
+          "tailWidth": 285,
+          "frontFootWidth": 268,
+          "backFootWidth": 263,
+          "taper": 17,
+          "sidecutRadii": "8.4 m",
+          "setback": 0
+        },
+        {
+          "size": "152",
+          "weight": 2900,
+          "effectiveEdge": 1190,
+          "waistWidth": 259,
+          "contactLength": 973,
+          "noseLength": 396,
+          "tailLength": 151,
+          "noseWidth": 306,
+          "tailWidth": 289,
+          "frontFootWidth": 272,
+          "backFootWidth": 267,
+          "taper": 17,
+          "sidecutRadii": "8.7 m",
+          "setback": 0
+        },
+        {
+          "size": "156",
+          "weight": 3100,
+          "effectiveEdge": 1230,
+          "waistWidth": 263,
+          "contactLength": 1005,
+          "noseLength": 400,
+          "tailLength": 155,
+          "noseWidth": 311,
+          "tailWidth": 294,
+          "frontFootWidth": 277,
+          "backFootWidth": 271,
+          "taper": 17,
+          "sidecutRadii": "9 m",
+          "setback": 0
+        },
+        {
+          "size": "160",
+          "weight": 3200,
+          "effectiveEdge": 1260,
+          "waistWidth": 267,
+          "contactLength": 1037,
+          "noseLength": 404,
+          "tailLength": 159,
+          "noseWidth": 316,
+          "tailWidth": 299,
+          "frontFootWidth": 281,
+          "backFootWidth": 276,
+          "taper": 17,
+          "sidecutRadii": "9.3 m",
+          "setback": 0
+        },
+        {
+          "size": "164",
+          "weight": 3300,
+          "effectiveEdge": 1290,
+          "waistWidth": 271,
+          "contactLength": 1069,
+          "noseLength": 408,
+          "tailLength": 163,
+          "noseWidth": 321,
+          "tailWidth": 304,
+          "frontFootWidth": 285,
+          "backFootWidth": 279,
+          "taper": 17,
+          "sidecutRadii": "9.6 m",
+          "setback": 0
+        }
+      ],
+      "selectionNotes": "官方 J.26 型号页面；160 代表尺码后移按官方表由 50 mm 修正为 0 mm。该表只用于 2026，不填入 2027 档案。",
+      "compatibilitySources": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 649.95",
+      "priceMarket": "原币 USD；来源商店 www.jonessnowboards.com",
+      "priceSource": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "160cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1240mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.9m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "268mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2bc6-7aa2-bf0e-65764b3411b3",
@@ -9173,9 +12404,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 156,
+      "weight": 3100,
       "effectiveEdge": 1230,
-      "sidecut": 9,
       "waistWidth": 263,
+      "sidecut": 9,
       "stanceSetback": 20,
       "profile": "Float CamRock",
       "profileFamily": "hybrid",
@@ -9183,35 +12415,15 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "core": "Re-Up Tech Core",
       "fiberglass": "Biax Fiberglass + Flax Fiber",
       "base": "Sintered 8000 Base",
-      "weight": 3100,
       "flex": 7,
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1230mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "9m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "263mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3ec6-7fca-98ed-46d3867db591",
@@ -9236,9 +12448,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 158,
+      "weight": 2800,
       "effectiveEdge": 1230,
-      "sidecut": 8.4,
       "waistWidth": 257,
+      "sidecut": 8.4,
       "stanceSetback": 20,
       "profile": "High Power Camber",
       "profileFamily": "camber",
@@ -9246,36 +12459,172 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "core": "Power Core + Koroyd",
       "fiberglass": "Triax Fiberglass",
       "base": "Sintered 8000 Base",
-      "weight": 2800,
       "flex": 8,
       "scenes": [
         "all-mountain",
         "powder",
         "freestyle"
-      ]
+      ],
+      "lengthOptions": "152 / 155 / 157W / 158 / 160W / 161 / 163W / 164",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "152",
+          "weight": 2600,
+          "effectiveEdge": 1180,
+          "waistWidth": 251,
+          "setback": 20,
+          "contactLength": 1077,
+          "noseLength": 254,
+          "tailLength": 189,
+          "noseWidth": 294,
+          "tailWidth": 286,
+          "frontFootWidth": 261,
+          "backFootWidth": 262,
+          "taper": 8,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "520 mm（参考） / 540 mm（居中）",
+          "riderWeight": "130-180 lbs. / 59-82 kg.",
+          "bootSize": "US 8.5-10.5 / EU 41.5-44"
+        },
+        {
+          "size": "155",
+          "weight": 2700,
+          "effectiveEdge": 1200,
+          "waistWidth": 254,
+          "setback": 20,
+          "contactLength": 1101,
+          "noseLength": 257,
+          "tailLength": 192,
+          "noseWidth": 298,
+          "tailWidth": 290,
+          "frontFootWidth": 265,
+          "backFootWidth": 265,
+          "taper": 8,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "540 mm（参考） / 560 mm（居中）",
+          "riderWeight": "140-190 lbs. / 64-86 kg.",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "157W",
+          "weight": 2800,
+          "effectiveEdge": 1220,
+          "waistWidth": 264,
+          "setback": 20,
+          "contactLength": 1115,
+          "noseLength": 260,
+          "tailLength": 195,
+          "noseWidth": 308,
+          "tailWidth": 300,
+          "frontFootWidth": 275,
+          "backFootWidth": 275,
+          "taper": 8,
+          "sidecutRadii": "8.4 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "160-210 lbs.+ / 73-95 kg.+",
+          "bootSize": "US 9 / EU 41.5"
+        },
+        {
+          "size": "158",
+          "weight": 2800,
+          "effectiveEdge": 1230,
+          "waistWidth": 257,
+          "setback": 20,
+          "contactLength": 1125,
+          "noseLength": 260,
+          "tailLength": 195,
+          "noseWidth": 302,
+          "tailWidth": 294,
+          "frontFootWidth": 268,
+          "backFootWidth": 268,
+          "taper": 8,
+          "sidecutRadii": "8.4 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "160-210 lbs.+ / 73-95 kg.+",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "160W",
+          "weight": 3000,
+          "effectiveEdge": 1240,
+          "waistWidth": 267,
+          "setback": 20,
+          "contactLength": 1139,
+          "noseLength": 263,
+          "tailLength": 198,
+          "noseWidth": 312,
+          "tailWidth": 304,
+          "frontFootWidth": 278,
+          "backFootWidth": 278,
+          "taper": 8,
+          "sidecutRadii": "8.6 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "160-210 lbs.+ / 73-95 kg.+",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "161",
+          "weight": 2900,
+          "effectiveEdge": 1250,
+          "waistWidth": 260,
+          "setback": 20,
+          "contactLength": 1149,
+          "noseLength": 263,
+          "tailLength": 198,
+          "noseWidth": 306,
+          "tailWidth": 298,
+          "frontFootWidth": 271,
+          "backFootWidth": 271,
+          "taper": 8,
+          "sidecutRadii": "8.6 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 9.5-11.5 / EU 42.5-45.5"
+        },
+        {
+          "size": "163W",
+          "weight": 3100,
+          "effectiveEdge": 1260,
+          "waistWidth": 270,
+          "setback": 20,
+          "contactLength": 1163,
+          "noseLength": 266,
+          "tailLength": 201,
+          "noseWidth": 316,
+          "tailWidth": 308,
+          "frontFootWidth": 281,
+          "backFootWidth": 281,
+          "taper": 8,
+          "sidecutRadii": "8.8 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "164",
+          "weight": 3200,
+          "effectiveEdge": 1260,
+          "waistWidth": 263,
+          "setback": 20,
+          "contactLength": 1163,
+          "noseLength": 271,
+          "tailLength": 206,
+          "noseWidth": 309,
+          "tailWidth": 301,
+          "frontFootWidth": 274,
+          "backFootWidth": 274,
+          "taper": 8,
+          "sidecutRadii": "8.8 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 9.5-11.5 / EU 42.5-45.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "158cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1230mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.4m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "257mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3ed6-7270-8ba6-60f22904fed5",
@@ -9300,6 +12649,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 154,
+      "weight": 3000,
       "effectiveEdge": 1140,
       "waistWidth": 257,
       "stanceSetback": 20,
@@ -9309,36 +12659,146 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "core": "Master Core",
       "fiberglass": "Biax Fiberglass",
       "base": "Sintered 8000 Base",
-      "weight": 3000,
       "flex": 7,
       "scenes": [
         "all-mountain",
         "powder",
         "freestyle"
-      ]
+      ],
+      "lengthOptions": "142 / 146 / 150 / 154 / 158 / 162 / 166",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "142",
+          "weight": 2400,
+          "effectiveEdge": 1030,
+          "waistWidth": 248,
+          "setback": 20,
+          "contactLength": 894,
+          "noseLength": 338,
+          "tailLength": 188,
+          "noseWidth": 288,
+          "tailWidth": 278,
+          "frontFootWidth": 261,
+          "backFootWidth": 254,
+          "taper": 10,
+          "stanceWidth": "500 mm（参考） / 480 mm（居中）",
+          "riderWeight": "90-140 lbs. / 41-63 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "146",
+          "weight": 2500,
+          "effectiveEdge": 1070,
+          "waistWidth": 251,
+          "setback": 20,
+          "contactLength": 928,
+          "noseLength": 341,
+          "tailLength": 191,
+          "noseWidth": 293,
+          "tailWidth": 283,
+          "frontFootWidth": 265,
+          "backFootWidth": 258,
+          "taper": 10,
+          "stanceWidth": "520 mm（参考） / 500 mm（居中）",
+          "riderWeight": "110-160 lbs. / 49-73 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "150",
+          "weight": 2800,
+          "effectiveEdge": 1100,
+          "waistWidth": 254,
+          "setback": 20,
+          "contactLength": 962,
+          "noseLength": 344,
+          "tailLength": 194,
+          "noseWidth": 297,
+          "tailWidth": 287,
+          "frontFootWidth": 268,
+          "backFootWidth": 261,
+          "taper": 10,
+          "stanceWidth": "540 mm（参考） / 520 mm（居中）",
+          "riderWeight": "120-170 lbs. / 54-77 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "154",
+          "weight": 3000,
+          "effectiveEdge": 1140,
+          "waistWidth": 257,
+          "setback": 20,
+          "contactLength": 996,
+          "noseLength": 347,
+          "tailLength": 197,
+          "noseWidth": 302,
+          "tailWidth": 292,
+          "frontFootWidth": 271,
+          "backFootWidth": 264,
+          "taper": 10,
+          "stanceWidth": "540 mm（参考） / 520 mm（居中）",
+          "riderWeight": "130-180 lbs. / 59-82 kg.",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "158",
+          "weight": 3200,
+          "effectiveEdge": 1170,
+          "waistWidth": 260,
+          "setback": 20,
+          "contactLength": 1030,
+          "noseLength": 350,
+          "tailLength": 200,
+          "noseWidth": 306,
+          "tailWidth": 296,
+          "frontFootWidth": 274,
+          "backFootWidth": 267,
+          "taper": 10,
+          "stanceWidth": "560 mm（参考） / 540 mm（居中）",
+          "riderWeight": "150-200 lbs. / 67-91 kg.",
+          "bootSize": "US 9.5-11.5 / EU 42.5-45.5"
+        },
+        {
+          "size": "162",
+          "weight": 3400,
+          "effectiveEdge": 1200,
+          "waistWidth": 264,
+          "setback": 20,
+          "contactLength": 1062,
+          "noseLength": 354,
+          "tailLength": 204,
+          "noseWidth": 311,
+          "tailWidth": 301,
+          "frontFootWidth": 279,
+          "backFootWidth": 272,
+          "taper": 10,
+          "stanceWidth": "580 mm（参考） / 560 mm（居中）",
+          "riderWeight": "170-220+ lbs. / 77-100+ kg.",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "166",
+          "weight": 3600,
+          "effectiveEdge": 1230,
+          "waistWidth": 268,
+          "setback": 20,
+          "contactLength": 1094,
+          "noseLength": 358,
+          "tailLength": 208,
+          "noseWidth": 317,
+          "tailWidth": 307,
+          "frontFootWidth": 283,
+          "backFootWidth": 276,
+          "taper": 10,
+          "stanceWidth": "600 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220+ lbs. / 77-100+ kg.",
+          "bootSize": "US 11 / EU 44.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "154cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1140mm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "257mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2beb-7718-85a6-8adb633ed8a3",
@@ -9350,7 +12810,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 5899,
     "priceMax": 5899,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1183297.jpg?v=1767736586",
+    "coverUrl": "https://www.melbournesnowboard.com.au/cdn/shop/files/0015_Jones26-Men-Mountain-Twin.jpg?v=1740011983&width=1800",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9363,49 +12823,30 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 157,
-      "effectiveEdge": 1225,
-      "sidecut": 8,
-      "waistWidth": 255,
+      "effectiveEdge": 1210,
+      "sidecut": 7.8,
+      "waistWidth": 254,
       "stanceSetback": 20,
       "profile": "Camber + 板头板尾微摇臂",
-      "profileFamily": "hybrid",
       "shape": "定向双向",
-      "core": "FSC 白杨 / 玄武岩纤维",
-      "fiberglass": "Biax + Basalt",
+      "core": "Master Core（杨木 / 泡桐 1:1）",
+      "fiberglass": "Biax + BComp Carbon/Flax Stringers",
       "base": "烧结 8000",
-      "weight": 2870,
-      "flex": 6,
+      "weight": 2800,
       "damping": 7.5,
       "pop": 7,
       "turnRadiusFeel": "中性，长短弧都好带",
+      "warranty": 3,
+      "flex": 6,
+      "profileFamily": "hybrid",
       "scenes": [
         "all-mountain",
         "freestyle"
       ],
-      "warranty": 3
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1225mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "255mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2bfe-7d8e-b4cc-0bc1b55597ae",
@@ -9430,9 +12871,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 157,
+      "weight": 2800,
       "effectiveEdge": 1210,
-      "sidecut": 7.8,
       "waistWidth": 254,
+      "sidecut": 7.8,
       "stanceSetback": 0,
       "profile": "CamRock",
       "profileFamily": "hybrid",
@@ -9440,36 +12882,304 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "core": "Master Core",
       "fiberglass": "Biax Fiberglass",
       "base": "Sintered 8000 Base",
-      "weight": 2800,
       "flex": 6,
       "scenes": [
         "all-mountain",
         "powder",
         "freestyle"
-      ]
+      ],
+      "lengthOptions": "149 / 151 / 153W / 154 / 156W / 157 / 158UW / 159W / 160 / 161UW / 162W / 163 / 164UW / 165W / 168W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "149",
+          "weight": 2400,
+          "effectiveEdge": 1150,
+          "waistWidth": 244,
+          "setback": 0,
+          "contactLength": 1050,
+          "noseLength": 225,
+          "tailLength": 215,
+          "noseWidth": 284.7,
+          "tailWidth": 284.7,
+          "frontFootWidth": 255,
+          "backFootWidth": 257,
+          "taper": 0,
+          "sidecutRadii": "7.2 m",
+          "stanceWidth": "520 mm（参考） / 520 mm（居中）",
+          "riderWeight": "110-160 lbs. / 49-73 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "151",
+          "weight": 2500,
+          "effectiveEdge": 1160,
+          "waistWidth": 248,
+          "setback": 0,
+          "contactLength": 1062,
+          "noseLength": 229,
+          "tailLength": 219,
+          "noseWidth": 288.5,
+          "tailWidth": 288.5,
+          "frontFootWidth": 259,
+          "backFootWidth": 261,
+          "taper": 0,
+          "sidecutRadii": "7.4 m",
+          "stanceWidth": "520 mm（参考） / 520 mm（居中）",
+          "riderWeight": "110-160 lbs. / 49-73 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "153W",
+          "effectiveEdge": 1180,
+          "waistWidth": 257,
+          "setback": 0,
+          "contactLength": 1078,
+          "noseLength": 231,
+          "tailLength": 221,
+          "noseWidth": 298,
+          "tailWidth": 298,
+          "frontFootWidth": 268,
+          "backFootWidth": 270,
+          "taper": 0,
+          "sidecutRadii": "7.5 m",
+          "stanceWidth": "540 mm（参考） / 540 mm（居中）",
+          "riderWeight": "120-170 lbs. / 54-77 kg.",
+          "bootSize": "US 9.5-11 / EU 42.5-44.5"
+        },
+        {
+          "size": "154",
+          "weight": 2600,
+          "effectiveEdge": 1190,
+          "waistWidth": 251,
+          "setback": 0,
+          "contactLength": 1086,
+          "noseLength": 232,
+          "tailLength": 222,
+          "noseWidth": 292.2,
+          "tailWidth": 292.2,
+          "frontFootWidth": 262,
+          "backFootWidth": 264,
+          "taper": 0,
+          "sidecutRadii": "7.6 m",
+          "stanceWidth": "540 mm（参考） / 540 mm（居中）",
+          "riderWeight": "120-170 lbs. / 54-77 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "156W",
+          "weight": 2700,
+          "effectiveEdge": 1200,
+          "waistWidth": 259,
+          "setback": 0,
+          "contactLength": 1104,
+          "noseLength": 233,
+          "tailLength": 223,
+          "noseWidth": 301,
+          "tailWidth": 301,
+          "frontFootWidth": 271,
+          "backFootWidth": 273,
+          "taper": 0,
+          "sidecutRadii": "7.7 m",
+          "stanceWidth": "560 mm（参考） / 560 mm（居中）",
+          "riderWeight": "130-180 lbs. / 59-82 kg.",
+          "bootSize": "US 9.5-11 / EU 42.5-44.5"
+        },
+        {
+          "size": "157",
+          "weight": 2800,
+          "effectiveEdge": 1210,
+          "waistWidth": 254,
+          "setback": 0,
+          "contactLength": 1110,
+          "noseLength": 235,
+          "tailLength": 225,
+          "noseWidth": 295.9,
+          "tailWidth": 295.9,
+          "frontFootWidth": 266,
+          "backFootWidth": 268,
+          "taper": 0,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "580 mm（参考） / 580 mm（居中）",
+          "riderWeight": "130-180 lbs. / 59-82 kg.",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "158UW",
+          "weight": 3200,
+          "effectiveEdge": 1220,
+          "waistWidth": 278,
+          "setback": 0,
+          "contactLength": 1120,
+          "noseLength": 235,
+          "tailLength": 225,
+          "noseWidth": 321,
+          "tailWidth": 321,
+          "frontFootWidth": 290,
+          "backFootWidth": 292,
+          "taper": 0,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "580 mm（参考） / 580 mm（居中）",
+          "riderWeight": "140-190 lbs. / 64-86 kg.",
+          "bootSize": "US 11.5+ / EU 45.5"
+        },
+        {
+          "size": "159W",
+          "weight": 2900,
+          "effectiveEdge": 1230,
+          "waistWidth": 261,
+          "setback": 0,
+          "contactLength": 1130,
+          "noseLength": 235,
+          "tailLength": 225,
+          "noseWidth": 303.8,
+          "tailWidth": 303.8,
+          "frontFootWidth": 273,
+          "backFootWidth": 275,
+          "taper": 0,
+          "sidecutRadii": "7.9 m",
+          "stanceWidth": "580 mm（参考） / 580 mm（居中）",
+          "riderWeight": "140-190 lbs. / 64-86 kg.",
+          "bootSize": "US 10-12 / EU 43.5-46"
+        },
+        {
+          "size": "160",
+          "weight": 2900,
+          "effectiveEdge": 1230,
+          "waistWidth": 257,
+          "setback": 0,
+          "contactLength": 1134,
+          "noseLength": 238,
+          "tailLength": 228,
+          "noseWidth": 299.6,
+          "tailWidth": 299.6,
+          "frontFootWidth": 269,
+          "backFootWidth": 271,
+          "taper": 0,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "580 mm（参考） / 580 mm（居中）",
+          "riderWeight": "150-200 lbs. / 67-91 kg.",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "161UW",
+          "weight": 3300,
+          "effectiveEdge": 1250,
+          "waistWidth": 280,
+          "setback": 0,
+          "contactLength": 1146,
+          "noseLength": 237,
+          "tailLength": 227,
+          "noseWidth": 324,
+          "tailWidth": 324,
+          "frontFootWidth": 292,
+          "backFootWidth": 294,
+          "taper": 0,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "580 mm（参考） / 580 mm（居中）",
+          "riderWeight": "150-200 lbs. / 67-91 kg.",
+          "bootSize": "US 11.5+ / EU 45.5"
+        },
+        {
+          "size": "162W",
+          "weight": 3000,
+          "effectiveEdge": 1260,
+          "waistWidth": 263,
+          "setback": 0,
+          "contactLength": 1156,
+          "noseLength": 237,
+          "tailLength": 227,
+          "noseWidth": 306.7,
+          "tailWidth": 306.7,
+          "frontFootWidth": 275,
+          "backFootWidth": 277,
+          "taper": 0,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "580 mm（参考） / 580 mm（居中）",
+          "riderWeight": "150-200 lbs. / 67-91 kg.",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "163",
+          "weight": 3000,
+          "effectiveEdge": 1260,
+          "waistWidth": 260,
+          "setback": 0,
+          "contactLength": 1158,
+          "noseLength": 241,
+          "tailLength": 231,
+          "noseWidth": 303.3,
+          "tailWidth": 303.3,
+          "frontFootWidth": 272,
+          "backFootWidth": 274,
+          "taper": 0,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "580 mm（参考） / 580 mm（居中）",
+          "riderWeight": "160-210 lbs. / 73-95 kg.",
+          "bootSize": "US 9.5-11.5 / EU 42.5-45.5"
+        },
+        {
+          "size": "164UW",
+          "weight": 3400,
+          "effectiveEdge": 1270,
+          "waistWidth": 282,
+          "setback": 0,
+          "contactLength": 1172,
+          "noseLength": 239,
+          "tailLength": 229,
+          "noseWidth": 326,
+          "tailWidth": 326,
+          "frontFootWidth": 294,
+          "backFootWidth": 296,
+          "taper": 0,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "580 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 11.5+ / EU 45.5"
+        },
+        {
+          "size": "165W",
+          "weight": 3200,
+          "effectiveEdge": 1280,
+          "waistWidth": 267,
+          "setback": 0,
+          "contactLength": 1178,
+          "noseLength": 241,
+          "tailLength": 231,
+          "noseWidth": 311.3,
+          "tailWidth": 311.3,
+          "frontFootWidth": 279,
+          "backFootWidth": 281,
+          "taper": 0,
+          "sidecutRadii": "8.3 m",
+          "stanceWidth": "580 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "168W",
+          "weight": 3300,
+          "effectiveEdge": 1300,
+          "waistWidth": 269,
+          "setback": 0,
+          "contactLength": 1204,
+          "noseLength": 243,
+          "tailLength": 233,
+          "noseWidth": 314.1,
+          "tailWidth": 314.1,
+          "frontFootWidth": 280,
+          "backFootWidth": 282,
+          "taper": 0,
+          "sidecutRadii": "8.5 m",
+          "stanceWidth": "580 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 11 / EU 44.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1210mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.8m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "254mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3f10-7bae-939c-3cc47a2eb86d",
@@ -9494,9 +13204,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 156,
+      "weight": 2700,
       "effectiveEdge": 1150,
-      "sidecut": 7.5,
       "waistWidth": 252,
+      "sidecut": 7.5,
       "stanceSetback": 20,
       "profile": "True Medium Camber",
       "profileFamily": "camber",
@@ -9504,35 +13215,209 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "core": "Master Core",
       "fiberglass": "Biax Fiberglass",
       "base": "Sintered 8000 Base",
-      "weight": 2700,
       "flex": 5,
       "scenes": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "lengthOptions": "151 / 154 / 155W / 156 / 158 / 159W / 161 / 162W / 166W / 170W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "151",
+          "weight": 2400,
+          "effectiveEdge": 1110,
+          "waistWidth": 247,
+          "setback": 20,
+          "contactLength": 1064,
+          "noseLength": 228,
+          "tailLength": 218,
+          "noseWidth": 288,
+          "tailWidth": 288,
+          "frontFootWidth": 256,
+          "backFootWidth": 259,
+          "taper": 0,
+          "sidecutRadii": "7.0 m",
+          "stanceWidth": "500 mm（参考） / 520 mm（居中）",
+          "riderWeight": "110-160 lbs. / 49-73 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "154",
+          "weight": 2500,
+          "effectiveEdge": 1140,
+          "waistWidth": 250,
+          "setback": 20,
+          "contactLength": 1088,
+          "noseLength": 231,
+          "tailLength": 221,
+          "noseWidth": 291,
+          "tailWidth": 291,
+          "frontFootWidth": 260,
+          "backFootWidth": 263,
+          "taper": 0,
+          "sidecutRadii": "7.3 m",
+          "stanceWidth": "520 mm（参考） / 540 mm（居中）",
+          "riderWeight": "120-170 lbs. / 54-77 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "155W",
+          "weight": 2700,
+          "effectiveEdge": 1150,
+          "waistWidth": 258,
+          "setback": 20,
+          "contactLength": 1100,
+          "noseLength": 230,
+          "tailLength": 220,
+          "noseWidth": 300,
+          "tailWidth": 300,
+          "frontFootWidth": 268,
+          "backFootWidth": 271,
+          "taper": 0,
+          "sidecutRadii": "7.4 m",
+          "stanceWidth": "540 mm（参考） / 560 mm（居中）",
+          "riderWeight": "130-180 lbs. / 59-82 kg.",
+          "bootSize": "US 9.5-11 / EU 42.5-44.5"
+        },
+        {
+          "size": "156",
+          "weight": 2700,
+          "effectiveEdge": 1150,
+          "waistWidth": 252,
+          "setback": 20,
+          "contactLength": 1104,
+          "noseLength": 233,
+          "tailLength": 223,
+          "noseWidth": 294,
+          "tailWidth": 294,
+          "frontFootWidth": 262,
+          "backFootWidth": 265,
+          "taper": 0,
+          "sidecutRadii": "7.5 m",
+          "stanceWidth": "540 mm（参考） / 560 mm（居中）",
+          "riderWeight": "130-180 lbs. / 59-82 kg.",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "158",
+          "weight": 2800,
+          "effectiveEdge": 1170,
+          "waistWidth": 254,
+          "setback": 20,
+          "contactLength": 1120,
+          "noseLength": 235,
+          "tailLength": 225,
+          "noseWidth": 296,
+          "tailWidth": 296,
+          "frontFootWidth": 264,
+          "backFootWidth": 268,
+          "taper": 0,
+          "sidecutRadii": "7.7 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "140-190 lbs. / 64-86 kg.",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "159W",
+          "weight": 2800,
+          "effectiveEdge": 1180,
+          "waistWidth": 263,
+          "setback": 20,
+          "contactLength": 1130,
+          "noseLength": 235,
+          "tailLength": 225,
+          "noseWidth": 305,
+          "tailWidth": 305,
+          "frontFootWidth": 273,
+          "backFootWidth": 277,
+          "taper": 0,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "150-200 lbs. / 67-91 kg.",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "161",
+          "weight": 2800,
+          "effectiveEdge": 1190,
+          "waistWidth": 257,
+          "setback": 20,
+          "contactLength": 1144,
+          "noseLength": 238,
+          "tailLength": 228,
+          "noseWidth": 299,
+          "tailWidth": 299,
+          "frontFootWidth": 267,
+          "backFootWidth": 270,
+          "taper": 0,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "150-200 lbs. / 67-91 kg.",
+          "bootSize": "US 9-11 / EU 41.5-44.5"
+        },
+        {
+          "size": "162W",
+          "weight": 2900,
+          "effectiveEdge": 1210,
+          "waistWidth": 265,
+          "setback": 20,
+          "contactLength": 1156,
+          "noseLength": 237,
+          "tailLength": 227,
+          "noseWidth": 307,
+          "tailWidth": 307,
+          "frontFootWidth": 275,
+          "backFootWidth": 278,
+          "taper": 0,
+          "sidecutRadii": "8.2 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "160-210 lbs. / 73-95 kg.",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "166W",
+          "weight": 3100,
+          "effectiveEdge": 1240,
+          "waistWidth": 267,
+          "setback": 20,
+          "contactLength": 1192,
+          "noseLength": 239,
+          "tailLength": 229,
+          "noseWidth": 309,
+          "tailWidth": 309,
+          "frontFootWidth": 276,
+          "backFootWidth": 279,
+          "taper": 0,
+          "sidecutRadii": "8.6 m",
+          "stanceWidth": "600 mm（参考） / 580 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 11 / EU 44.5"
+        },
+        {
+          "size": "170W",
+          "weight": 3300,
+          "effectiveEdge": 1280,
+          "waistWidth": 269,
+          "setback": 20,
+          "contactLength": 1228,
+          "noseLength": 241,
+          "tailLength": 231,
+          "noseWidth": 312,
+          "tailWidth": 312,
+          "frontFootWidth": 279,
+          "backFootWidth": 282,
+          "taper": 0,
+          "sidecutRadii": "8.9 m",
+          "stanceWidth": "620 mm（参考） / 600 mm（居中）",
+          "riderWeight": "170-220 lbs.+ / 77-100 kg.+",
+          "bootSize": "US 11 / EU 44.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1150mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.5m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "252mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0bdc1-3f21-78f9-8c77-9e1a37918358",
@@ -9557,9 +13442,10 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 152,
+      "weight": 2900,
       "effectiveEdge": 1070,
-      "sidecut": 6.9,
       "waistWidth": 275,
+      "sidecut": 6.9,
       "stanceSetback": 20,
       "profile": "Christenson Surf Rocker",
       "profileFamily": "rocker",
@@ -9567,35 +13453,95 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "core": "Master Core",
       "fiberglass": "Biax Fiberglass",
       "base": "Sintered 8000 Base",
-      "weight": 2900,
       "flex": 6,
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "lengthOptions": "142 / 147 / 152 / 157",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "142",
+          "weight": 2600,
+          "effectiveEdge": 990,
+          "waistWidth": 266,
+          "setback": 20,
+          "contactLength": 918,
+          "noseLength": 376,
+          "tailLength": 126,
+          "noseWidth": 311,
+          "tailWidth": 290,
+          "frontFootWidth": 283,
+          "backFootWidth": 275,
+          "taper": 20,
+          "sidecutRadii": "6.3 m",
+          "stanceWidth": "500 mm（参考） / 520 mm（居中）",
+          "riderWeight": "120-170 lbs. / 54-77 kg.",
+          "bootSize": "US 7-9 / EU 39.5-41.5"
+        },
+        {
+          "size": "147",
+          "weight": 2700,
+          "effectiveEdge": 1030,
+          "waistWidth": 271,
+          "setback": 20,
+          "contactLength": 958,
+          "noseLength": 381,
+          "tailLength": 131,
+          "noseWidth": 317,
+          "tailWidth": 297,
+          "frontFootWidth": 290,
+          "backFootWidth": 282,
+          "taper": 20,
+          "sidecutRadii": "6.6 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "130-180 lbs. / 59-82 kg.",
+          "bootSize": "US 9 / EU 41.5"
+        },
+        {
+          "size": "152",
+          "weight": 2900,
+          "effectiveEdge": 1070,
+          "waistWidth": 275,
+          "setback": 20,
+          "contactLength": 1000,
+          "noseLength": 385,
+          "tailLength": 135,
+          "noseWidth": 322,
+          "tailWidth": 302,
+          "frontFootWidth": 294,
+          "backFootWidth": 285,
+          "taper": 20,
+          "sidecutRadii": "6.9 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "140-190 lbs. / 63-86 kg.",
+          "bootSize": "US 10 / EU 43.5"
+        },
+        {
+          "size": "157",
+          "weight": 3100,
+          "effectiveEdge": 1120,
+          "waistWidth": 277,
+          "setback": 20,
+          "contactLength": 1046,
+          "noseLength": 387,
+          "tailLength": 137,
+          "noseWidth": 327,
+          "tailWidth": 307,
+          "frontFootWidth": 295,
+          "backFootWidth": 287,
+          "taper": 20,
+          "sidecutRadii": "7.2 m",
+          "stanceWidth": "560 mm（参考） / 580 mm（居中）",
+          "riderWeight": "150-200 lbs. / 67-91 kg.",
+          "bootSize": "US 11 / EU 44.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "152cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1070mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "6.9m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "275mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-79f7-7d6d-a2cb-98d589661a7e",
@@ -9621,7 +13567,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 149,
       "waistWidth": 244,
-      "stanceSetback": 20,
+      "stanceSetback": 0,
       "profile": "CamRock",
       "profileFamily": "hybrid",
       "shape": "Directional Twin",
@@ -9631,30 +13577,132 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain",
         "freestyle",
         "powder"
-      ]
+      ],
+      "lengthOptions": "140 / 143 / 146 / 149 / 152 / 155",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "140",
+          "weight": 2100,
+          "effectiveEdge": 1070,
+          "waistWidth": 238,
+          "setback": 0,
+          "contactLength": 972,
+          "noseLength": 219,
+          "tailLength": 209,
+          "noseWidth": 276.1,
+          "tailWidth": 276.1,
+          "frontFootWidth": 249,
+          "backFootWidth": 251,
+          "taper": 0,
+          "sidecutRadii": "6.6 m",
+          "stanceWidth": "490 mm（参考） / 490 mm（居中）",
+          "riderWeight": "90-140 lbs. / 41-63 kg.",
+          "bootSize": "US 5-7 / EU 35.5-37.5"
+        },
+        {
+          "size": "143",
+          "weight": 2200,
+          "effectiveEdge": 1100,
+          "waistWidth": 240,
+          "setback": 0,
+          "contactLength": 998,
+          "noseLength": 221,
+          "tailLength": 211,
+          "noseWidth": 279,
+          "tailWidth": 279,
+          "frontFootWidth": 251,
+          "backFootWidth": 253,
+          "taper": 0,
+          "sidecutRadii": "6.8 m",
+          "stanceWidth": "510 mm（参考） / 510 mm（居中）",
+          "riderWeight": "100-150 lbs. / 45-68 kg.",
+          "bootSize": "US 6-8 / EU 36.5-38.5"
+        },
+        {
+          "size": "146",
+          "weight": 2300,
+          "effectiveEdge": 1120,
+          "waistWidth": 242,
+          "setback": 0,
+          "contactLength": 1024,
+          "noseLength": 223,
+          "tailLength": 213,
+          "noseWidth": 281.8,
+          "tailWidth": 281.8,
+          "frontFootWidth": 253,
+          "backFootWidth": 255,
+          "taper": 0,
+          "sidecutRadii": "7.0 m",
+          "stanceWidth": "510 mm（参考） / 510 mm（居中）",
+          "riderWeight": "100-150 lbs. / 45-68 kg.",
+          "bootSize": "US 7-9 / EU 37.5-39.5"
+        },
+        {
+          "size": "149",
+          "weight": 2400,
+          "effectiveEdge": 1150,
+          "waistWidth": 244,
+          "setback": 0,
+          "contactLength": 1050,
+          "noseLength": 225,
+          "tailLength": 215,
+          "noseWidth": 284.7,
+          "tailWidth": 284.7,
+          "frontFootWidth": 255,
+          "backFootWidth": 257,
+          "taper": 0,
+          "sidecutRadii": "7.2 m",
+          "stanceWidth": "530 mm（参考） / 530 mm（居中）",
+          "riderWeight": "110-160 lbs. / 49-73 kg.",
+          "bootSize": "US 8-9.5 / EU 38.5-40.5"
+        },
+        {
+          "size": "152",
+          "weight": 2500,
+          "effectiveEdge": 1180,
+          "waistWidth": 246,
+          "setback": 0,
+          "contactLength": 1076,
+          "noseLength": 227,
+          "tailLength": 217,
+          "noseWidth": 287.5,
+          "tailWidth": 287.5,
+          "frontFootWidth": 257,
+          "backFootWidth": 259,
+          "taper": 0,
+          "sidecutRadii": "7.4 m",
+          "stanceWidth": "530 mm（参考） / 530 mm（居中）",
+          "riderWeight": "110-160 lbs. / 49-73 kg.",
+          "bootSize": "US 8-10 / EU 38.5-42"
+        },
+        {
+          "size": "155",
+          "weight": 2700,
+          "effectiveEdge": 1200,
+          "waistWidth": 248,
+          "setback": 0,
+          "contactLength": 1102,
+          "noseLength": 229,
+          "tailLength": 219,
+          "noseWidth": 290.4,
+          "tailWidth": 290.4,
+          "frontFootWidth": 259,
+          "backFootWidth": 261,
+          "taper": 0,
+          "sidecutRadii": "7.6 m",
+          "stanceWidth": "530 mm（参考） / 530 mm（居中）",
+          "riderWeight": "120-170 lbs. / 54-77 kg.",
+          "bootSize": "US 8-11 / EU 38.5-43"
+        }
+      ],
+      "weight": 2400,
+      "effectiveEdge": 1150,
+      "sidecut": 7.2,
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "149cm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "244mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 · 野雪浮雪"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-7604-7d2f-ab1e-f8cb504d0a78",
@@ -9662,7 +13710,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "K2 Alchemist 2027",
     "model": "Alchemist",
     "year": 2027,
-    "oneLiner": "K2 Landscape 系列旗舰定向野雪板，面向专家滑手，以高速稳定、精准控刃和大山地形为主要方向。官网美区标价 $849.95，按项目 USD/CNY 目录汇率折算。",
+    "oneLiner": "2027 大改款旗舰定向 freeride 板，S1 Pro Core 与 Recess3D 减轻摆动感、提升腰尾部可操控性；仍偏硬，面向进阶/专家骑手。",
     "priceMin": 6120,
     "priceMax": 6120,
     "priceCurrency": "CNY",
@@ -9678,27 +13726,121 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "length": 157,
+      "effectiveEdge": 1190,
+      "sidecut": 7.8,
+      "waistWidth": 250,
+      "stanceSetback": 19,
+      "core": "S1 Pro Core（Bamboo / Aspen / Paulownia）",
+      "fiberglass": "SpaceGlass 鼻部嵌件 / HyperWeave 全碳双轴编织 / Spectral Braid",
+      "base": "Wax-Infused Sintered 4001",
       "profile": "Directional Camber",
       "profileFamily": "camber",
-      "shape": "Directional",
+      "shape": "Tapered Directional / Traditional Shape",
       "scenes": [
         "all-mountain",
         "powder",
         "carving"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "148",
+          "effectiveEdge": 1120,
+          "noseWidth": 284,
+          "waistWidth": 240,
+          "tailWidth": 278,
+          "sidecutRadii": "6.9 m",
+          "stanceWidth": "483 mm (19 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "151",
+          "effectiveEdge": 1140,
+          "noseWidth": 288,
+          "waistWidth": 243,
+          "tailWidth": 282,
+          "sidecutRadii": "7.1 m",
+          "stanceWidth": "508 mm (20 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "154",
+          "effectiveEdge": 1170,
+          "noseWidth": 293,
+          "waistWidth": 247,
+          "tailWidth": 287,
+          "sidecutRadii": "7.3 m",
+          "stanceWidth": "533 mm (21 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "157",
+          "effectiveEdge": 1190,
+          "noseWidth": 297,
+          "waistWidth": 250,
+          "tailWidth": 291,
+          "sidecutRadii": "7.8 m",
+          "stanceWidth": "533 mm (21 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "160",
+          "effectiveEdge": 1220,
+          "noseWidth": 301,
+          "waistWidth": 253,
+          "tailWidth": 295,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "559 mm (22 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "160W",
+          "effectiveEdge": 1220,
+          "noseWidth": 309,
+          "waistWidth": 261,
+          "tailWidth": 303,
+          "sidecutRadii": "8.0 m",
+          "stanceWidth": "559 mm (22 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "163",
+          "effectiveEdge": 1240,
+          "noseWidth": 305,
+          "waistWidth": 256,
+          "tailWidth": 299,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "584 mm (23 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "163W",
+          "effectiveEdge": 1240,
+          "noseWidth": 315,
+          "waistWidth": 264,
+          "tailWidth": 307,
+          "sidecutRadii": "8.1 m",
+          "stanceWidth": "584 mm (23 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "166",
+          "effectiveEdge": 1270,
+          "noseWidth": 312,
+          "waistWidth": 262,
+          "tailWidth": 306,
+          "sidecutRadii": "8.3 m",
+          "stanceWidth": "584 mm (23 in reference)",
+          "setback": 19
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 849.95",
+      "priceMarket": "原币 USD；来源商店 k2snow.com",
+      "priceSource": "https://k2snow.com/en-us/p/alchemist-mens-snowboard-kb262025",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "全山地 · 野雪浮雪 · 刻滑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-71ff-764d-94c6-aca436e0a72f",
@@ -9706,11 +13848,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "K2 Excavator 2027",
     "model": "Excavator",
     "year": 2027,
-    "oneLiner": "宽腰短板思路的全山地型号，主打压雪道深弯与新雪浮力，官方建议按常规雪板尺寸适当缩短选择。官网美区标价 $629.95，按项目 USD/CNY 目录汇率折算。",
+    "oneLiner": "Volume Shift 短宽体定向板，双半径侧切兼顾压雪道深弯与粉雪浮力；官方建议较日常板长缩短约 5 cm 选码。",
     "priceMin": 4536,
     "priceMax": 4536,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.milosport.com/cdn/shop/files/KB2616871398Large.png?v=1774904988&width=800",
+    "coverUrl": "https://cdn.media.amplience.net/s/k2/k2_2627_excavator_KB261687?w=1200&qlt=90&fmt=auto",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9722,29 +13864,86 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "sizeSpecs": [
+        {
+          "size": "142",
+          "effectiveEdge": 1040,
+          "noseWidth": 299,
+          "waistWidth": 250,
+          "tailWidth": 279,
+          "sidecutRadii": "5.5/6.5 m",
+          "stanceWidth": "483 mm (19 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "146",
+          "effectiveEdge": 1080,
+          "noseWidth": 305,
+          "waistWidth": 254,
+          "tailWidth": 285,
+          "sidecutRadii": "5.7/6.7 m",
+          "stanceWidth": "483 mm (19 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "150",
+          "effectiveEdge": 1110,
+          "noseWidth": 313,
+          "waistWidth": 260,
+          "tailWidth": 293,
+          "sidecutRadii": "5.9/6.9 m",
+          "stanceWidth": "508 mm (20 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "154",
+          "effectiveEdge": 1150,
+          "noseWidth": 318,
+          "waistWidth": 264,
+          "tailWidth": 298,
+          "sidecutRadii": "6.1/7.1 m",
+          "stanceWidth": "533 mm (21 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "158",
+          "effectiveEdge": 1180,
+          "noseWidth": 324,
+          "waistWidth": 268,
+          "tailWidth": 304,
+          "sidecutRadii": "6.3/7.3 m",
+          "stanceWidth": "559 mm (22 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "162",
+          "effectiveEdge": 1220,
+          "noseWidth": 327,
+          "waistWidth": 270,
+          "tailWidth": 307,
+          "sidecutRadii": "6.5/7.5 m",
+          "stanceWidth": "584 mm (23 in reference)",
+          "setback": 19
+        }
+      ],
       "profile": "Directional Camber",
       "profileFamily": "camber",
       "shape": "Tapered Directional / Volume Shift",
-      "core": "S1 Core",
+      "core": "S1 Core (Bamboo / Aspen / Paulownia)",
+      "fiberglass": "ICG 10 Biax Glass With Carbon",
       "base": "Wax-Infused Sintered 4001",
       "scenes": [
         "carving",
         "powder",
         "all-mountain"
-      ]
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 629.95",
+      "priceMarket": "原币 USD；来源商店 k2snow.com",
+      "priceSource": "https://k2snow.com/en-us/p/excavator-unisex-snowboard-kb261687",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑 · 野雪浮雪 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-6d77-7fe5-8521-abd56a8025b4",
@@ -9752,7 +13951,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "K2 Passport 2027",
     "model": "Passport",
     "year": 2027,
-    "oneLiner": "定向全山自由滑板，兼顾压雪道、粉雪和大山地形；中高级滑手可按脚长在标准与宽版之间选择。官网美区标价 $599.95，按项目 USD/CNY 目录汇率折算。",
+    "oneLiner": "8 mm taper 的定向全山板，偏向压雪道刻滑与轻至中等粉雪；板感灵活且较 damp，可用于一板多用，但不是专用深粉或公园板。",
     "priceMin": 4320,
     "priceMax": 4320,
     "priceCurrency": "CNY",
@@ -9770,41 +13969,172 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 157,
       "effectiveEdge": 1180,
+      "sidecutRadii": "6.0/8.0/5.5 m",
       "waistWidth": 255,
       "stanceSetback": 19,
       "profile": "Directional Combination Camber",
       "profileFamily": "hybrid",
-      "shape": "Tapered Directional",
-      "core": "A1 Core",
+      "shape": "Tapered Directional / Traditional Shape",
+      "core": "A1 Core (Bamboo / Aspen / Paulownia)",
+      "fiberglass": "ICG 10 Triax Glass With Carbon",
       "base": "Sintered 4000",
       "scenes": [
         "all-mountain",
         "powder",
         "carving"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "146",
+          "widthVariant": "standard",
+          "effectiveEdge": 1090,
+          "noseWidth": 288,
+          "waistWidth": 243,
+          "tailWidth": 280,
+          "sidecutRadii": "5.3/7.3/4.8 m",
+          "stanceWidth": "483 mm (19 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "149",
+          "widthVariant": "standard",
+          "effectiveEdge": 1120,
+          "noseWidth": 292,
+          "waistWidth": 246,
+          "tailWidth": 284,
+          "sidecutRadii": "5.5/7.5/5.0 m",
+          "stanceWidth": "483 mm (19 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "151",
+          "widthVariant": "standard",
+          "effectiveEdge": 1130,
+          "noseWidth": 294,
+          "waistWidth": 248,
+          "tailWidth": 286,
+          "sidecutRadii": "5.6/7.6/5.1 m",
+          "stanceWidth": "508 mm (20 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "151W",
+          "widthVariant": "wide",
+          "effectiveEdge": 1130,
+          "noseWidth": 300,
+          "waistWidth": 254,
+          "tailWidth": 292,
+          "sidecutRadii": "5.6/7.6/5.1 m",
+          "stanceWidth": "508 mm (20 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "154",
+          "widthVariant": "standard",
+          "effectiveEdge": 1160,
+          "noseWidth": 299,
+          "waistWidth": 252,
+          "tailWidth": 291,
+          "sidecutRadii": "5.8/7.8/5.3 m",
+          "stanceWidth": "533 mm (21 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "154W",
+          "widthVariant": "wide",
+          "effectiveEdge": 1160,
+          "noseWidth": 307,
+          "waistWidth": 260,
+          "tailWidth": 299,
+          "sidecutRadii": "5.8/7.8/5.3 m",
+          "stanceWidth": "533 mm (21 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "157",
+          "widthVariant": "standard",
+          "effectiveEdge": 1180,
+          "noseWidth": 303,
+          "waistWidth": 255,
+          "tailWidth": 295,
+          "sidecutRadii": "6.0/8.0/5.5 m",
+          "stanceWidth": "533 mm (21 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "157W",
+          "widthVariant": "wide",
+          "effectiveEdge": 1180,
+          "noseWidth": 311,
+          "waistWidth": 263,
+          "tailWidth": 311,
+          "sidecutRadii": "6.0/8.0/5.5 m",
+          "stanceWidth": "533 mm (21 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "159W",
+          "widthVariant": "wide",
+          "effectiveEdge": 1210,
+          "noseWidth": 314,
+          "waistWidth": 266,
+          "tailWidth": 306,
+          "sidecutRadii": "6.2/8.2/5.7 m",
+          "stanceWidth": "559 mm (22 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "160",
+          "widthVariant": "standard",
+          "effectiveEdge": 1210,
+          "noseWidth": 306,
+          "waistWidth": 258,
+          "tailWidth": 298,
+          "sidecutRadii": "6.2/8.2/5.7 m",
+          "stanceWidth": "559 mm (22 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "162W",
+          "widthVariant": "wide",
+          "effectiveEdge": 1230,
+          "noseWidth": 318,
+          "waistWidth": 269,
+          "tailWidth": 310,
+          "sidecutRadii": "6.4/8.4/5.9 m",
+          "stanceWidth": "584 mm (23 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "163",
+          "widthVariant": "standard",
+          "effectiveEdge": 1230,
+          "noseWidth": 310,
+          "waistWidth": 261,
+          "tailWidth": 302,
+          "sidecutRadii": "6.4/8.4/5.9 m",
+          "stanceWidth": "584 mm (23 in reference)",
+          "setback": 19
+        },
+        {
+          "size": "166W",
+          "widthVariant": "wide",
+          "effectiveEdge": 1260,
+          "noseWidth": 319,
+          "waistWidth": 269,
+          "tailWidth": 311,
+          "sidecutRadii": "6.6/8.6/6.1 m",
+          "stanceWidth": "584 mm (23 in reference)",
+          "setback": 19
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 599.95",
+      "priceMarket": "原币 USD；来源商店 k2snow.com",
+      "priceSource": "https://k2snow.com/en-de/p/passport-unisex-snowboard-kb261689",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1180mm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "255mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2c0b-714f-9219-ea5f9d92d6ee",
@@ -9812,11 +14142,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Korua Shapes Cafe Racer 2026",
     "model": "Cafe Racer",
     "year": 2026,
-    "oneLiner": "一块只为「走刃」存在的板子。它不会跳、不会转得快，但当你把刃压下去时，它给你的稳定感是别的板给不了的。",
+    "oneLiner": "全长 Camber 为刻滑提供持续抓边，顺滑过渡的板头也为软雪保留浮力；它以刻滑为核心，同时覆盖全山地形。",
     "priceMin": 6899,
     "priceMax": 6899,
     "priceCurrency": "CNY",
-    "coverUrl": "https://original.accentuate.io/6939308982453/1758747603396/KORUA-Shapes-Cafe-Racer-Nicholas-Wolken-Thumbnail-01.jpg?v=1758747603396",
+    "coverUrl": "https://ca.koruashapes.com/cdn/shop/files/KORUA-Shapes_Web-ProductImages_PNG-MainImage_1000x2246px_Classic-Line_CafeRacer-59_pdp_2025-26_1000x.png?v=1758308079",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9828,50 +14158,186 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "length": 161,
-      "effectiveEdge": 1310,
-      "sidecut": 9.4,
-      "waistWidth": 262,
-      "stanceSetback": 45,
-      "profile": "纯 Camber + 长板头",
-      "profileFamily": "camber",
-      "shape": "强定向",
-      "core": "白杨 / 竹混合",
-      "fiberglass": "Triax",
-      "base": "烧结 9000",
-      "weight": 3120,
-      "flex": 7.5,
+      "length": 159,
+      "effectiveEdge": 1200,
+      "sidecut": 8.2,
+      "waistWidth": 269,
+      "stanceSetback": 35,
+      "profile": "全长 Camber（板头平顺过渡）",
+      "shape": "定向锥形",
+      "core": "轻质杨木芯",
+      "fiberglass": "Biaxial",
+      "base": "高级烧结底板",
       "damping": 8.5,
       "pop": 5,
-      "turnRadiusFeel": "大半径长弧，越滑越快",
+      "turnRadiusFeel": "以刻滑长弧为主",
+      "warranty": 2,
+      "flex": 7.5,
+      "profileFamily": "camber",
       "scenes": [
         "carving",
         "powder"
       ],
-      "warranty": 2
+      "sizeSpecs": [
+        {
+          "size": "144",
+          "effectiveEdge": 1050,
+          "runningLength": 930,
+          "waistWidth": 252,
+          "noseWidth": 301,
+          "tailWidth": 273,
+          "sidecutRadii": "8.0 m",
+          "sidecutRadiusM": 8,
+          "stanceWidth": "530 mm (ref); 490–570 mm (range)",
+          "recommendedStanceCm": 53,
+          "adjustableStanceRangeCm": [
+            49,
+            57
+          ],
+          "setback": 20,
+          "taperMm": 18,
+          "boardWeightKg": {
+            "gloss": 2.4,
+            "brushed": null
+          },
+          "selectableOnCapturedProductPage": false,
+          "maxBootSizeEU": 41,
+          "maxBootSoleLengthCm": 29.7,
+          "recommendedRiderWeightKg": [
+            40,
+            60
+          ],
+          "maxRiderHeightCm": 168
+        },
+        {
+          "size": "150",
+          "effectiveEdge": 1100,
+          "runningLength": 950,
+          "waistWidth": 254,
+          "noseWidth": 302,
+          "tailWidth": 276,
+          "sidecutRadii": "7.9 m",
+          "sidecutRadiusM": 7.9,
+          "stanceWidth": "530 mm (ref); 490–570 mm (range)",
+          "recommendedStanceCm": 53,
+          "adjustableStanceRangeCm": [
+            49,
+            57
+          ],
+          "setback": 35,
+          "taperMm": 26,
+          "boardWeightKg": {
+            "gloss": 2.6,
+            "brushed": 2.5
+          },
+          "selectableOnCapturedProductPage": true,
+          "maxBootSizeEU": 41,
+          "maxBootSoleLengthCm": 30.1,
+          "recommendedRiderWeightKg": [
+            45,
+            75
+          ],
+          "maxRiderHeightCm": 175
+        },
+        {
+          "size": "156",
+          "effectiveEdge": 1160,
+          "runningLength": 1010,
+          "waistWidth": 260,
+          "noseWidth": 311,
+          "tailWidth": 284,
+          "sidecutRadii": "8.0 m",
+          "sidecutRadiusM": 8,
+          "stanceWidth": "540 mm (ref); 500–580 mm (range)",
+          "recommendedStanceCm": 54,
+          "adjustableStanceRangeCm": [
+            50,
+            58
+          ],
+          "setback": 35,
+          "taperMm": 27,
+          "boardWeightKg": {
+            "gloss": 3.1,
+            "brushed": 2.7
+          },
+          "selectableOnCapturedProductPage": true,
+          "maxBootSizeEU": 44,
+          "maxBootSoleLengthCm": 30.4,
+          "recommendedRiderWeightKg": [
+            50,
+            80
+          ],
+          "maxRiderHeightCm": 185
+        },
+        {
+          "size": "159",
+          "effectiveEdge": 1200,
+          "runningLength": 1050,
+          "waistWidth": 269,
+          "noseWidth": 322,
+          "tailWidth": 294,
+          "sidecutRadii": "8.2 m",
+          "sidecutRadiusM": 8.2,
+          "stanceWidth": "550 mm (ref); 510–590 mm (range)",
+          "recommendedStanceCm": 55,
+          "adjustableStanceRangeCm": [
+            51,
+            59
+          ],
+          "setback": 35,
+          "taperMm": 28,
+          "boardWeightKg": {
+            "gloss": 3.2,
+            "brushed": 2.8
+          },
+          "selectableOnCapturedProductPage": true,
+          "maxBootSizeEU": 46,
+          "maxBootSoleLengthCm": 31.4,
+          "productPageRiderWeightKg": [
+            55,
+            85
+          ],
+          "sizeGuideRiderWeightKg": [
+            55,
+            90
+          ],
+          "maxRiderHeightCm": 190
+        },
+        {
+          "size": "164",
+          "effectiveEdge": 1230,
+          "runningLength": 1090,
+          "waistWidth": 276,
+          "noseWidth": 330,
+          "tailWidth": 302,
+          "sidecutRadii": "8.5 m",
+          "sidecutRadiusM": 8.5,
+          "stanceWidth": "550 mm (ref); 510–590 mm (range)",
+          "recommendedStanceCm": 55,
+          "adjustableStanceRangeCm": [
+            51,
+            59
+          ],
+          "setback": 35,
+          "taperMm": 28,
+          "boardWeightKg": {
+            "gloss": 3.3,
+            "brushed": 3.1
+          },
+          "selectableOnCapturedProductPage": true,
+          "maxBootSizeEU": {
+            "productPage": 49,
+            "sizeGuide": 48
+          },
+          "maxBootSoleLengthCm": 32.3,
+          "recommendedRiderWeightRaw": "65–95+ kg",
+          "maxRiderHeightCm": "195+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "161cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1310mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "9.4m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "262mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2c1f-723d-8b9b-9cd1651c9f93",
@@ -9879,11 +14345,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Lib Tech T.Rice Pro 2025",
     "model": "T.Rice Pro",
     "year": 2025,
-    "oneLiner": "为硬雪面和大跳台设计。波浪边刃在冰面上咬得住，落地时板面吸收冲击的能力比同硬度对手好一档。",
+    "oneLiner": "品牌将 T.Rice Pro 定位为全山自由式 Twin，采用 C2 混合板型与 Horsepower 构造，主打公园及全山多用途；独立实测与若干遗留字段仍待核。",
     "priceMin": 5699,
     "priceMax": 5699,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1153304.jpg",
+    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1104822.jpg?height=1000&v=1767733189",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9896,49 +14362,191 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 157,
-      "effectiveEdge": 1210,
-      "sidecut": 7.7,
-      "waistWidth": 256,
+      "sidecut": 8.2,
+      "waistWidth": 258,
       "stanceSetback": 0,
-      "profile": "C2（板下反弓 + 板头尾 Camber）",
-      "profileFamily": "hybrid",
-      "shape": "真双向",
+      "profile": "C2 Hybrid（官方定位）",
+      "shape": "Twin（品牌分类；未核为 True Twin）",
       "core": "Aspen / Paulownia 混合",
       "fiberglass": "Biax + Triax",
-      "base": "烧结 UHMW",
+      "base": "Sintered（官方描述：competition-ready）",
       "weight": 2890,
-      "flex": 6.5,
       "damping": 7,
       "pop": 8.5,
-      "turnRadiusFeel": "抓刃强，波浪边刃",
+      "turnRadiusFeel": "Magne-Traction® 波浪边刃",
+      "warranty": 3,
+      "flex": 6.5,
+      "profileFamily": "hybrid",
       "scenes": [
         "freestyle",
         "all-mountain"
       ],
-      "warranty": 3
+      "sizeSpecs": [
+        {
+          "size": "148",
+          "widthVariant": "standard",
+          "contactLengthCm": 116,
+          "sidecutRadiusM": 7.5,
+          "noseWidthCm": 29.7,
+          "waistWidthCm": 25.2,
+          "tailWidthCm": 29.7,
+          "stanceMinInches": 19.5,
+          "stanceMaxInches": 24.5,
+          "stanceMinCm": 49.5,
+          "stanceMaxCm": 62.25,
+          "setbackInches": 0,
+          "brandFlexOutOf10": 6,
+          "riderWeightRaw": "75+ lb / 35+ kg"
+        },
+        {
+          "size": "153",
+          "widthVariant": "standard",
+          "contactLengthCm": 118,
+          "sidecutRadiusM": 8,
+          "noseWidthCm": 29.5,
+          "waistWidthCm": 25.3,
+          "tailWidthCm": 29.5,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "setbackInches": 0,
+          "brandFlexOutOf10": 6,
+          "riderWeightRaw": "100+ lb / 45+ kg"
+        },
+        {
+          "size": "155",
+          "widthVariant": "standard",
+          "contactLengthCm": 119,
+          "sidecutRadiusM": 8.1,
+          "noseWidthCm": 29.8,
+          "waistWidthCm": 25.5,
+          "tailWidthCm": 29.8,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "setbackInches": 0,
+          "brandFlexOutOf10": 6.5,
+          "riderWeightRaw": "110+ lb / 50+ kg"
+        },
+        {
+          "size": "157",
+          "widthVariant": "standard",
+          "contactLengthCm": 121,
+          "sidecutRadiusM": 8.2,
+          "noseWidthCm": 30.1,
+          "waistWidthCm": 25.8,
+          "tailWidthCm": 30.1,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "setbackInches": 0,
+          "brandFlexOutOf10": 7,
+          "riderWeightRaw": "120+ lb / 55+ kg"
+        },
+        {
+          "size": "157W",
+          "widthVariant": "wide",
+          "contactLengthCm": 121,
+          "sidecutRadiusM": 8.2,
+          "noseWidthCm": 30.5,
+          "waistWidthCm": 26.3,
+          "tailWidthCm": 30.5,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "setbackInches": 0,
+          "brandFlexOutOf10": 7,
+          "riderWeightRaw": "125+ lb / 60+ kg"
+        },
+        {
+          "size": "159",
+          "widthVariant": "standard",
+          "contactLengthCm": 122,
+          "sidecutRadiusM": 8.3,
+          "noseWidthCm": 30.2,
+          "waistWidthCm": 25.9,
+          "tailWidthCm": 30.2,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "setbackInches": 0,
+          "brandFlexOutOf10": 7,
+          "riderWeightRaw": "125+ lb / 60+ kg"
+        },
+        {
+          "size": "161",
+          "widthVariant": "standard",
+          "contactLengthCm": 124.5,
+          "sidecutRadiusM": 8.4,
+          "noseWidthCm": 30.4,
+          "waistWidthCm": 26,
+          "tailWidthCm": 30.4,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "setbackInches": 0,
+          "brandFlexOutOf10": 7,
+          "riderWeightRaw": "130+ lb / 60+ kg"
+        },
+        {
+          "size": "161W",
+          "widthVariant": "wide",
+          "contactLengthCm": 124.5,
+          "sidecutRadiusM": 8.4,
+          "noseWidthCm": 31.1,
+          "waistWidthCm": 26.5,
+          "tailWidthCm": 31.1,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "setbackInches": 0,
+          "brandFlexOutOf10": 7,
+          "riderWeightRaw": "135+ lb / 65+ kg"
+        },
+        {
+          "size": "164",
+          "widthVariant": "standard",
+          "contactLengthCm": 127,
+          "sidecutRadiusM": 8.5,
+          "noseWidthCm": 31,
+          "waistWidthCm": 26.2,
+          "tailWidthCm": 31,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "setbackInches": 0,
+          "brandFlexOutOf10": 7,
+          "riderWeightRaw": "140+ lb / 65+ kg"
+        },
+        {
+          "size": "164W",
+          "widthVariant": "wide",
+          "contactLengthCm": 127,
+          "sidecutRadiusM": 8.5,
+          "noseWidthCm": 31.2,
+          "waistWidthCm": 26.7,
+          "tailWidthCm": 31.2,
+          "stanceMinInches": 20.25,
+          "stanceMaxInches": 25,
+          "stanceMinCm": 51.5,
+          "stanceMaxCm": 63.5,
+          "setbackInches": 0,
+          "brandFlexOutOf10": 7,
+          "riderWeightRaw": "145+ lb / 70+ kg"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1210mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.7m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "256mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2c32-72af-9a85-0f61a6ec8d78",
@@ -9946,11 +14554,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Never Summer Proto Slinger 2025",
     "model": "Proto Slinger",
     "year": 2025,
-    "oneLiner": "全山地里性格最鲜明的一块。碳纤层让它的回弹比同价位明显更快，出弯时能感觉到板子在推你。",
+    "oneLiner": "偏软、易压且有弹性的公园向双向板；非对称侧切帮助换刃和 carving，日常雪道可用，但不应把它当作深粉雪或高速刻滑专板。",
     "priceMin": 5499,
     "priceMax": 5499,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1104917.jpg?v=1767733189",
+    "coverUrl": "https://www.evo.com/cdn/shop/files/product-image-1104917.jpg?height=1000&v=1767733189",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -9962,50 +14570,72 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "length": 157,
-      "effectiveEdge": 1215,
-      "sidecut": 7.9,
-      "waistWidth": 254,
-      "stanceSetback": 12,
-      "profile": "Ripsaw（Camber 主导 + 板头长摇臂）",
-      "profileFamily": "hybrid",
-      "shape": "定向双向",
-      "core": "白杨 + 竹条",
-      "fiberglass": "Triax Carbon",
-      "base": "烧结 Durasurf",
-      "weight": 2840,
-      "flex": 6,
-      "damping": 7.5,
+      "length": 156,
+      "effectiveEdge": 1190,
+      "sidecutRadii": "8.18 / 7.36 m (VARIO; source order)",
+      "waistWidth": 253,
+      "stanceSetback": 0,
+      "profile": "Original Rocker Camber（Shock Wave Rocker Camber）",
+      "shape": "不对称双向",
+      "core": "NS Superlight Wood Core（白杨/泡桐/桦木）",
+      "fiberglass": "Carbon VXR Laminate Technology",
+      "base": "烧结 DuraSurf XT 5501",
+      "damping": 4,
       "pop": 8,
-      "turnRadiusFeel": "入弯快，出弯有推背感",
+      "turnRadiusFeel": "非对称侧切帮助快速换刃，板感偏软、易压板",
+      "warranty": 3,
+      "flex": 4,
+      "profileFamily": "hybrid",
       "scenes": [
         "all-mountain",
         "freestyle"
       ],
-      "warranty": 3
+      "sizeSpecs": [
+        {
+          "size": "149",
+          "effectiveEdge": 1130,
+          "waistWidth": 247,
+          "noseWidth": 292,
+          "tailWidth": 292,
+          "sidecutRadii": "7.35 / 6.57 m (VARIO; source order)"
+        },
+        {
+          "size": "153",
+          "effectiveEdge": 1170,
+          "waistWidth": 250,
+          "noseWidth": 295,
+          "tailWidth": 295,
+          "sidecutRadii": "7.83 / 7.01 m (VARIO; source order)"
+        },
+        {
+          "size": "156",
+          "effectiveEdge": 1190,
+          "waistWidth": 253,
+          "noseWidth": 298,
+          "tailWidth": 298,
+          "sidecutRadii": "8.18 / 7.36 m (VARIO; source order)"
+        },
+        {
+          "size": "154x",
+          "effectiveEdge": 1170,
+          "waistWidth": 258,
+          "noseWidth": 303,
+          "tailWidth": 303,
+          "sidecutRadii": "7.86 / 7.03 m (VARIO; source order)"
+        },
+        {
+          "size": "157x",
+          "effectiveEdge": 1200,
+          "waistWidth": 262,
+          "noseWidth": 307,
+          "tailWidth": 307,
+          "sidecutRadii": "8.23 / 7.37 m (VARIO; source order)"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1215mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.9m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "254mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-6548-7c35-955e-8a005f1e4ada",
@@ -10031,7 +14661,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "length": 157,
       "waistWidth": 254,
-      "stanceSetback": 15,
+      "stanceSetback": -15,
       "profile": "Trüe Camber",
       "profileFamily": "camber",
       "shape": "Directional",
@@ -10043,30 +14673,60 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain",
         "freestyle",
         "powder"
-      ]
+      ],
+      "lengthOptions": "154 / 157 / 160 / 162",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "154",
+          "waistWidth": 252,
+          "runningLength": 1090,
+          "setback": -15,
+          "noseWidth": 296,
+          "tailWidth": 291,
+          "sidecutRadii": "10.3 / 6.6 / 10.3 m",
+          "stanceWidth": "48-60 cm",
+          "riderWeight": "55-75 kg"
+        },
+        {
+          "size": "157",
+          "waistWidth": 254,
+          "runningLength": 1110,
+          "setback": -15,
+          "noseWidth": 298,
+          "tailWidth": 293,
+          "sidecutRadii": "10.8 / 6.8 / 10.8 m",
+          "stanceWidth": "48-60 cm",
+          "riderWeight": "60-80 kg"
+        },
+        {
+          "size": "160",
+          "waistWidth": 256,
+          "runningLength": 1140,
+          "setback": -15,
+          "noseWidth": 300,
+          "tailWidth": 295,
+          "sidecutRadii": "11.0 / 7.3 / 11.0 m",
+          "stanceWidth": "50-62 cm",
+          "riderWeight": "65-85 kg"
+        },
+        {
+          "size": "162",
+          "waistWidth": 264,
+          "runningLength": 1140,
+          "setback": -15,
+          "noseWidth": 308,
+          "tailWidth": 304,
+          "sidecutRadii": "11.0 / 7.3 / 11.0 m",
+          "stanceWidth": "50-62 cm",
+          "riderWeight": "70+ kg"
+        }
+      ],
+      "sidecutRadii": "10.8 / 6.8 / 10.8 m",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "254mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "8/10"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0fab1-2271-7dff-8603-dbb13c01bfec",
@@ -10075,8 +14735,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "model": "Banker",
     "year": 2027,
     "oneLiner": "面向全山高速刻滑与粉雪地形的定向板，采用 True Camber、Powercore II 与烧结底板；官方标注硬度 8/10。",
-    "priceMin": 4679,
-    "priceMax": 4679,
+    "priceMin": 4608,
+    "priceMax": 4608,
     "priceCurrency": "CNY",
     "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/11SB11004-101-1multBankerII.jpg?v=1787539883",
     "ratingOverall": null,
@@ -10104,30 +14764,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain",
         "powder",
         "carving"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "148",
+          "waistWidth": 243,
+          "runningLength": 1060,
+          "noseWidth": 286,
+          "tailWidth": 282,
+          "sidecutRadii": "7.5/5.9 m",
+          "stanceWidth": "44–56 cm",
+          "setback": -15
+        },
+        {
+          "size": "152",
+          "waistWidth": 246,
+          "runningLength": 1090,
+          "noseWidth": 289,
+          "tailWidth": 286,
+          "sidecutRadii": "7.8/6.1 m",
+          "stanceWidth": "46–58 cm",
+          "setback": -15
+        },
+        {
+          "size": "156",
+          "waistWidth": 255,
+          "runningLength": 1120,
+          "noseWidth": 300,
+          "tailWidth": 296,
+          "sidecutRadii": "8.0/6.3 m",
+          "stanceWidth": "48–60 cm",
+          "setback": -15
+        },
+        {
+          "size": "160",
+          "waistWidth": 260,
+          "runningLength": 1150,
+          "noseWidth": 306,
+          "tailWidth": 302,
+          "sidecutRadii": "8.2/6.5 m",
+          "stanceWidth": "50–62 cm",
+          "setback": -15
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 649.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/banker-snowboard-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "255mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "8/10"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-5fc3-76c9-80bc-23fc03fc6554",
@@ -10161,25 +14847,62 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "freestyle",
         "all-mountain"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "151mw",
+          "waistWidth": 248,
+          "runningLength": 1110,
+          "noseWidth": 290,
+          "tailWidth": 290,
+          "riderWeight": "50-70 kg",
+          "stanceWidth": "46-58 cm",
+          "sidecutRadii": "7.3 m",
+          "setback": 0
+        },
+        {
+          "size": "155mw",
+          "waistWidth": 253,
+          "runningLength": 1150,
+          "noseWidth": 295,
+          "tailWidth": 295,
+          "riderWeight": "55-75 kg",
+          "stanceWidth": "48-60 cm",
+          "sidecutRadii": "7.6 m",
+          "setback": 0
+        },
+        {
+          "size": "158mw",
+          "waistWidth": 258,
+          "runningLength": 1170,
+          "noseWidth": 300,
+          "tailWidth": 300,
+          "riderWeight": "60-80 kg",
+          "stanceWidth": "50-62 cm",
+          "sidecutRadii": "8 m",
+          "setback": 0
+        },
+        {
+          "size": "162mw",
+          "waistWidth": 262,
+          "runningLength": 1210,
+          "noseWidth": 304,
+          "tailWidth": 304,
+          "riderWeight": "60-80 kg",
+          "stanceWidth": "50-62 cm",
+          "sidecutRadii": "8 m",
+          "setback": 0
+        }
+      ],
+      "selectionNotes": "2026 官方逐码表保留 mw 标记；未随意指定代表尺寸。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/products/beast-snowboard",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 729.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/beast-snowboard",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "9/10"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "自由式 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2c45-7613-9918-0b143a5890ce",
@@ -10187,11 +14910,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Team 2026",
     "model": "Team",
     "year": 2026,
-    "oneLiner": "同价位里最难被挑出毛病的一块。它把全山地和公园的边界模糊掉了，价格还压在 5000 以内。",
+    "oneLiner": "25/26 Team 采用 Trüe Camber 与 Directional Twin 结构，强调全山控制和弹性，同时覆盖公园与多种雪况。",
     "priceMin": 4599,
     "priceMax": 4599,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.nitrosnow.ca/cdn/shop/files/22_82ac62fb-84b5-43f9-ad67-b43bfc261588.png?v=1784751877",
+    "coverUrl": "https://nitrosnowboards.com.au/cdn/shop/files/833222-001_Team_155_Product-1.jpg?v=1744092277&width=979",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10204,49 +14927,116 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 157,
-      "effectiveEdge": 1205,
-      "sidecut": 7.8,
-      "waistWidth": 253,
+      "sidecutRadii": "11.3 / 7.3 / 11.3 m",
+      "waistWidth": 252,
       "stanceSetback": 15,
-      "profile": "Cam-Out Camber",
-      "profileFamily": "hybrid",
-      "shape": "定向双向",
-      "core": "Powerlite 白杨",
-      "fiberglass": "Biax",
-      "base": "烧结 Speedlite",
-      "weight": 2810,
-      "flex": 6,
+      "profile": "Trüe Camber",
+      "shape": "Directional Twin",
+      "core": "Powerlite Core",
+      "fiberglass": "Bi-Lite Laminates",
+      "base": "Sintered EcoSpeed HD Base",
       "damping": 7,
       "pop": 7.5,
       "turnRadiusFeel": "中性偏快，好带",
+      "warranty": 2,
+      "flex": 7,
+      "profileFamily": "camber",
       "scenes": [
         "all-mountain",
         "freestyle"
       ],
-      "warranty": 2
+      "runningLength": 1170,
+      "sizeSpecs": [
+        {
+          "size": "152",
+          "runningLength": 1140,
+          "noseWidth": 289,
+          "tailWidth": 289,
+          "waistWidth": 246,
+          "sidecutRadii": "10.7 / 6.8 / 10.7 m",
+          "riderWeight": "50-70 kg",
+          "setback": 15
+        },
+        {
+          "size": "155",
+          "runningLength": 1160,
+          "noseWidth": 293,
+          "tailWidth": 293,
+          "waistWidth": 250,
+          "sidecutRadii": "11 / 7.2 / 11 m",
+          "riderWeight": "55-75 kg",
+          "setback": 15
+        },
+        {
+          "size": "157",
+          "runningLength": 1170,
+          "noseWidth": 295,
+          "tailWidth": 295,
+          "waistWidth": 252,
+          "sidecutRadii": "11.3 / 7.3 / 11.3 m",
+          "riderWeight": "60-80 kg",
+          "setback": 15
+        },
+        {
+          "size": "159",
+          "runningLength": 1180,
+          "noseWidth": 297,
+          "tailWidth": 297,
+          "waistWidth": 254,
+          "sidecutRadii": "11.7 / 7.3 / 11.7 m",
+          "riderWeight": "65-85 kg",
+          "setback": 15
+        },
+        {
+          "size": "162",
+          "runningLength": 1210,
+          "noseWidth": 297,
+          "tailWidth": 297,
+          "waistWidth": 256,
+          "sidecutRadii": "12.8 / 8.1 / 12.8 m",
+          "riderWeight": "70+ kg",
+          "setback": 15
+        },
+        {
+          "size": "159W",
+          "runningLength": 1180,
+          "noseWidth": 309,
+          "tailWidth": 309,
+          "waistWidth": 266,
+          "sidecutRadii": "11.7 / 7.3 / 11.7 m",
+          "riderWeight": "65-85 kg",
+          "setback": 15
+        },
+        {
+          "size": "162W",
+          "runningLength": 1210,
+          "noseWidth": 311,
+          "tailWidth": 311,
+          "waistWidth": 270,
+          "sidecutRadii": "12.8 / 8.1 / 12.8 m",
+          "riderWeight": "70+ kg",
+          "setback": 15
+        },
+        {
+          "size": "165W",
+          "runningLength": 1240,
+          "noseWidth": 313,
+          "tailWidth": 313,
+          "waistWidth": 272,
+          "sidecutRadii": "12.4 / 8.8 / 12.4 m",
+          "riderWeight": "75+ kg",
+          "setback": 15
+        }
+      ],
+      "selectionNotes": "2025–2026 Nitro 厂商经销目录（零售商托管）第 36 页复核；后移表原文 -15 mm，沿用本档案后移量 15 mm 的记法。多段半径完整保留；1170 mm 为 running length，不再误作有效刃长；目录未给整板重量，删除无官方依据的 2810 g。官网出现 157W，但该目录没有对应行，未补造。",
+      "compatibilitySources": "https://www.nitrosnow.ca/products/2026-team；https://golgoda.com/PDF/25-26%20NITRO_compressed.pdf",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "CAD 455",
+      "priceMarket": "原币 CAD；来源商店 www.nitrosnow.ca",
+      "priceSource": "https://www.nitrosnow.ca/products/2026-team",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1205mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.8m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "253mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-4433-792a-8d2d-b7574cb6bdb9",
@@ -10271,6 +15061,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 156,
+      "effectiveEdge": 1240,
+      "sidecut": 8.4,
+      "sidecutRadii": "8.7/8.4/8.7 m",
+      "waistWidth": 247,
+      "stanceSetback": 18,
       "profile": "Camber",
       "profileFamily": "camber",
       "shape": "Directional",
@@ -10280,25 +15075,156 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "carving",
         "all-mountain"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "139",
+          "effectiveEdge": 1070,
+          "contactLength": 1050,
+          "noseWidth": 268,
+          "waistWidth": 229,
+          "tailWidth": 268,
+          "sidecutRadii": "7.1/6.7/7.1 m",
+          "setback": 12,
+          "stanceWidth": "460 mm"
+        },
+        {
+          "size": "143",
+          "effectiveEdge": 1110,
+          "contactLength": 1070,
+          "noseWidth": 274,
+          "waistWidth": 234,
+          "tailWidth": 274,
+          "sidecutRadii": "7.4/7.1/7.4 m",
+          "setback": 13,
+          "stanceWidth": "480 mm"
+        },
+        {
+          "size": "146",
+          "effectiveEdge": 1140,
+          "contactLength": 1090,
+          "noseWidth": 277,
+          "waistWidth": 236,
+          "tailWidth": 277,
+          "sidecutRadii": "7.6/7.3/7.6 m",
+          "setback": 14,
+          "stanceWidth": "490 mm"
+        },
+        {
+          "size": "148",
+          "effectiveEdge": 1160,
+          "contactLength": 1120,
+          "noseWidth": 279,
+          "waistWidth": 237,
+          "tailWidth": 279,
+          "sidecutRadii": "7.8/7.5/7.8 m",
+          "setback": 15,
+          "stanceWidth": "500 mm"
+        },
+        {
+          "size": "150",
+          "effectiveEdge": 1180,
+          "contactLength": 1140,
+          "noseWidth": 285,
+          "waistWidth": 244,
+          "tailWidth": 285,
+          "sidecutRadii": "8.3/8.0/8.3 m",
+          "setback": 15,
+          "stanceWidth": "520 mm"
+        },
+        {
+          "size": "152",
+          "effectiveEdge": 1200,
+          "contactLength": 1160,
+          "noseWidth": 286,
+          "waistWidth": 245,
+          "tailWidth": 286,
+          "sidecutRadii": "8.4/8.1/8.4 m",
+          "setback": 17,
+          "stanceWidth": "540 mm"
+        },
+        {
+          "size": "154",
+          "effectiveEdge": 1220,
+          "contactLength": 1180,
+          "noseWidth": 287,
+          "waistWidth": 245,
+          "tailWidth": 287,
+          "sidecutRadii": "8.5/8.2/8.5 m",
+          "setback": 17,
+          "stanceWidth": "540 mm"
+        },
+        {
+          "size": "156",
+          "effectiveEdge": 1240,
+          "contactLength": 1200,
+          "noseWidth": 290,
+          "waistWidth": 247,
+          "tailWidth": 290,
+          "sidecutRadii": "8.7/8.4/8.7 m",
+          "setback": 18,
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "158",
+          "effectiveEdge": 1260,
+          "contactLength": 1230,
+          "noseWidth": 292,
+          "waistWidth": 249,
+          "tailWidth": 292,
+          "sidecutRadii": "8.9/8.6/8.9 m",
+          "setback": 19,
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "161",
+          "effectiveEdge": 1290,
+          "contactLength": 1270,
+          "noseWidth": 295,
+          "waistWidth": 251,
+          "tailWidth": 295,
+          "sidecutRadii": "9.1/8.8/9.1 m",
+          "setback": 20,
+          "stanceWidth": "580 mm"
+        },
+        {
+          "size": "154W",
+          "effectiveEdge": 1220,
+          "contactLength": 1180,
+          "noseWidth": 297,
+          "waistWidth": 255,
+          "tailWidth": 297,
+          "sidecutRadii": "8.8/8.5/8.8 m",
+          "setback": 17,
+          "stanceWidth": "540 mm"
+        },
+        {
+          "size": "156W",
+          "effectiveEdge": 1240,
+          "contactLength": 1200,
+          "noseWidth": 300,
+          "waistWidth": 258,
+          "tailWidth": 300,
+          "sidecutRadii": "9.1/8.8/9.1 m",
+          "setback": 18,
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "158W",
+          "effectiveEdge": 1260,
+          "contactLength": 1260,
+          "noseWidth": 303,
+          "waistWidth": 261,
+          "tailWidth": 303,
+          "sidecutRadii": "9.3/9.0/9.3 m",
+          "setback": 19,
+          "stanceWidth": "560 mm"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "刻滑 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-412a-7332-ba5f-19fc0bb56d2f",
@@ -10322,42 +15248,138 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "lengthOptions": "145 / 148 / 151 / 154 / 157 / 160 / 163 / 157W / 160W / 163W",
       "length": 157,
       "effectiveEdge": 1280,
       "waistWidth": 249,
+      "sidecutRadii": "8.8/8.4 m",
       "stanceSetback": 28,
       "profile": "Camber",
       "profileFamily": "camber",
       "shape": "Directional Semi-Hammerhead",
       "core": "OGK2 Core",
+      "fiberglass": "Glass Fiber + Carbon Ribbon Wide",
       "base": "Sintered Graphite",
       "scenes": [
         "carving",
         "all-mountain"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "145",
+          "effectiveEdge": 1170,
+          "contactLength": 1090,
+          "noseWidth": 278,
+          "waistWidth": 233,
+          "tailWidth": 275,
+          "sidecutRadii": "7.7/7.3 m",
+          "setback": 23,
+          "stanceWidth": "460 mm"
+        },
+        {
+          "size": "148",
+          "effectiveEdge": 1200,
+          "contactLength": 1120,
+          "noseWidth": 282,
+          "waistWidth": 236,
+          "tailWidth": 279,
+          "sidecutRadii": "7.9/7.5 m",
+          "setback": 24,
+          "stanceWidth": "480 mm"
+        },
+        {
+          "size": "151",
+          "effectiveEdge": 1230,
+          "contactLength": 1140,
+          "noseWidth": 286,
+          "waistWidth": 238,
+          "tailWidth": 283,
+          "sidecutRadii": "8.0/7.6 m",
+          "setback": 25,
+          "stanceWidth": "500 mm"
+        },
+        {
+          "size": "154",
+          "effectiveEdge": 1250,
+          "contactLength": 1160,
+          "noseWidth": 294,
+          "waistWidth": 246,
+          "tailWidth": 291,
+          "sidecutRadii": "8.3/7.9 m",
+          "setback": 27,
+          "stanceWidth": "540 mm"
+        },
+        {
+          "size": "157",
+          "effectiveEdge": 1280,
+          "contactLength": 1200,
+          "noseWidth": 296,
+          "waistWidth": 249,
+          "tailWidth": 293,
+          "sidecutRadii": "8.8/8.4 m",
+          "setback": 28,
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "160",
+          "effectiveEdge": 1310,
+          "contactLength": 1230,
+          "noseWidth": 300,
+          "waistWidth": 252,
+          "tailWidth": 297,
+          "sidecutRadii": "9.0/8.6 m",
+          "setback": 29,
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "163",
+          "effectiveEdge": 1340,
+          "contactLength": 1270,
+          "noseWidth": 302,
+          "waistWidth": 254,
+          "tailWidth": 299,
+          "sidecutRadii": "9.3/8.9 m",
+          "setback": 30,
+          "stanceWidth": "580 mm"
+        },
+        {
+          "size": "157W",
+          "effectiveEdge": 1270,
+          "contactLength": 1200,
+          "noseWidth": 307,
+          "waistWidth": 258,
+          "tailWidth": 304,
+          "sidecutRadii": "8.4/8.0 m",
+          "setback": 28,
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "160W",
+          "effectiveEdge": 1300,
+          "contactLength": 1230,
+          "noseWidth": 312,
+          "waistWidth": 262,
+          "tailWidth": 309,
+          "sidecutRadii": "8.5/8.0 m",
+          "setback": 29,
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "163W",
+          "effectiveEdge": 1330,
+          "contactLength": 1270,
+          "noseWidth": 311,
+          "waistWidth": 265,
+          "tailWidth": 307,
+          "sidecutRadii": "9.7/9.2 m",
+          "setback": 30,
+          "stanceWidth": "580 mm"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1280mm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "249mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-47b1-7c7c-9796-72a61000c4c2",
@@ -10365,9 +15387,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "OGASAKA SHIN 2026",
     "model": "SHIN",
     "year": 2026,
-    "oneLiner": "面向粉雪和全山地的系列雪板，官方将其定位为适应多种雪况的中高级型号；25/26 官方含税价 ¥132,000，按 2026-10-02 参考汇率折算约 ¥5,603 CNY；不同长度的尺寸与结构不可混用。",
-    "priceMin": 5603,
-    "priceMax": 5603,
+    "oneLiner": "SHIN 160 是介于 156 与 167 之间的中长全能粉雪板，较 156 浮力更强、比 167 更易操控，也面向希望兼顾刻滑的滑手；日本官网 25/26 含税价 ¥121,000，按 2026-10-02 汇率折算约 ¥5,137 CNY，仅为汇率估值，不是中国售价。",
+    "priceMin": 5137,
+    "priceMax": 5137,
     "priceCurrency": "CNY",
     "coverUrl": "https://www.ogasaka-snowboard.com/2025-img/12_shin_160.png",
     "ratingOverall": null,
@@ -10382,45 +15404,124 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 160,
+      "effectiveEdge": 1190,
       "waistWidth": 260,
+      "sidecut": 9,
       "stanceSetback": 20,
       "shape": "Directional",
       "core": "OGK2 Core",
+      "fiberglass": "Glass Fiber Carbon Composite + Carbon Sheet Wide",
       "base": "Sintered Graphite",
       "scenes": [
         "powder",
         "all-mountain"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "144",
+          "effectiveEdge": 1040,
+          "contactLength": 900,
+          "noseWidth": 280,
+          "waistWidth": 245,
+          "tailWidth": 270,
+          "sidecutRadius": 8.3,
+          "setback": 10,
+          "stanceWidth": "460 mm"
+        },
+        {
+          "size": "148",
+          "effectiveEdge": 1080,
+          "contactLength": 900,
+          "noseWidth": 288,
+          "waistWidth": 246,
+          "tailWidth": 276,
+          "sidecutRadius": 7.5,
+          "setback": 10,
+          "stanceWidth": "480 mm"
+        },
+        {
+          "size": "156",
+          "effectiveEdge": 1150,
+          "contactLength": 930,
+          "noseWidth": 304,
+          "waistWidth": 259,
+          "tailWidth": 290,
+          "sidecutRadius": 8.1,
+          "setback": 10,
+          "stanceWidth": "540 mm"
+        },
+        {
+          "size": "160",
+          "effectiveEdge": 1190,
+          "contactLength": 955,
+          "noseWidth": 303,
+          "waistWidth": 260,
+          "tailWidth": 291,
+          "sidecutRadius": 9,
+          "setback": 20,
+          "stanceWidth": "540 mm"
+        },
+        {
+          "size": "167",
+          "effectiveEdge": 1245,
+          "contactLength": 1005,
+          "noseWidth": 312,
+          "waistWidth": 270,
+          "tailWidth": 300,
+          "sidecutRadius": 10,
+          "setback": 20,
+          "stanceWidth": "560 mm"
+        },
+        {
+          "size": "SW158",
+          "effectiveEdge": 1240,
+          "contactLength": 955,
+          "noseWidth": 307,
+          "waistWidth": 259,
+          "tailWidth": 293,
+          "sidecutRadius": 8.7,
+          "setback": -12.5,
+          "stanceWidth": "540 mm"
+        },
+        {
+          "size": "SWCA163",
+          "effectiveEdge": 1310,
+          "contactLength": 1070,
+          "noseWidth": 310,
+          "waistWidth": 261,
+          "tailWidth": 296,
+          "sidecutRadius": 9.5,
+          "setback": 20,
+          "stanceWidth": "540 mm"
+        },
+        {
+          "size": "SW172",
+          "effectiveEdge": 1360,
+          "contactLength": 1050,
+          "noseWidth": 312,
+          "waistWidth": 270,
+          "tailWidth": 299,
+          "sidecutRadius": 12.5,
+          "setback": -5,
+          "stanceWidth": "540 mm"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "160cm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "260mm"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "野雪浮雪 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2c54-727f-919c-d84cdf5db3a9",
     "slug": "ride-algorythm-2026",
-    "title": "Ride Algorythm 2026",
-    "model": "Algorythm",
+    "title": "Ride Algorhythm 2026",
+    "model": "Algorhythm",
     "year": 2026,
-    "oneLiner": "为深雪日准备的重武器。板头浮力大到你会忘记自己脚下有 3 公斤的东西，回到压雪道也依然稳。",
+    "oneLiner": "全山定向双向板，官方定位覆盖公园跳台、粉雪线路与高速压雪道。",
     "priceMin": 7299,
     "priceMax": 7299,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.milosport.com/cdn/shop/files/RD2510321398Large.png?v=1742933585&width=2048",
+    "coverUrl": "https://www.sport-schindele.de/cdn/shop/files/Ride_2025_26_10079210_2_9c3c8d29-eb7c-4a4d-895d-bc2aad068bc8.jpg?v=1784233708&width=1946",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10433,49 +15534,116 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard",
     "specs": {
       "length": 160,
-      "effectiveEdge": 1265,
-      "sidecut": 8.6,
+      "widthVariant": "wide",
+      "effectiveEdge": 1197,
+      "sidecut": 6.9,
+      "sidecutRadii": "9.4 / 6.9 / 9.4 m",
       "waistWidth": 264,
-      "stanceSetback": 40,
-      "profile": "Camber + 大板头摇臂",
-      "profileFamily": "hybrid",
-      "shape": "强定向锥形",
-      "core": "白杨 / 竹 / 碳纤维梁",
-      "fiberglass": "Triax Carbon",
-      "base": "烧结 9000",
-      "weight": 3050,
-      "flex": 8,
+      "stanceSetback": 19,
+      "profile": "Standard Camber",
+      "shape": "Directional Twin",
+      "core": "Performance Core（Aspen / Bamboo / Paulownia）",
+      "fiberglass": "Pre-Cured Glass + Carbon Array 5 + Double Impact Plates",
+      "base": "Sintered 4000",
       "damping": 9,
       "pop": 6,
-      "turnRadiusFeel": "大弧为主，深雪里转向轻盈",
+      "warranty": 3,
+      "flex": 8,
+      "profileFamily": "camber",
       "scenes": [
-        "powder",
-        "carving"
+        "all-mountain",
+        "freestyle",
+        "powder"
       ],
-      "warranty": 3
+      "sizeSpecs": [
+        {
+          "size": "147",
+          "widthVariant": "standard",
+          "effectiveEdgeMm": 1096,
+          "waistWidthMm": 245,
+          "sidecutRadiiMSourceOrder": "9 / 6.5 / 9",
+          "stanceWidthIn": 20,
+          "stanceSetbackInches": 0.75,
+          "riderWeightLbRaw": "75-165"
+        },
+        {
+          "size": "151",
+          "widthVariant": "standard",
+          "effectiveEdgeMm": 1121,
+          "waistWidthMm": 248,
+          "sidecutRadiiMSourceOrder": "9.1 / 6.6 / 9.1",
+          "stanceWidthIn": 21,
+          "stanceSetbackInches": 0.75,
+          "riderWeightLbRaw": "100-180"
+        },
+        {
+          "size": "154",
+          "widthVariant": "standard",
+          "effectiveEdgeMm": 1147,
+          "waistWidthMm": 251,
+          "sidecutRadiiMSourceOrder": "9.2 / 6.7 / 9.2",
+          "stanceWidthIn": 22,
+          "stanceSetbackInches": 0.75,
+          "riderWeightLbRaw": "115-195"
+        },
+        {
+          "size": "155W",
+          "widthVariant": "wide",
+          "effectiveEdgeMm": 1159,
+          "waistWidthMm": 258,
+          "sidecutRadiiMSourceOrder": "9.2 / 6.7 / 9.2",
+          "stanceWidthIn": 22,
+          "stanceSetbackInches": 0.75,
+          "riderWeightLbRaw": "125-205"
+        },
+        {
+          "size": "157",
+          "widthVariant": "standard",
+          "effectiveEdgeMm": 1172,
+          "waistWidthMm": 254,
+          "sidecutRadiiMSourceOrder": "9.3 / 6.8 / 9.3",
+          "stanceWidthIn": 22,
+          "stanceSetbackInches": 0.75,
+          "riderWeightLbRaw": "125-205"
+        },
+        {
+          "size": "160W",
+          "widthVariant": "wide",
+          "effectiveEdgeMm": 1197,
+          "waistWidthMm": 264,
+          "sidecutRadiiMSourceOrder": "9.4 / 6.9 / 9.4",
+          "stanceWidthIn": 22,
+          "stanceSetbackInches": 0.75,
+          "riderWeightLbRaw": "160-220+",
+          "noseWidthMm": 311,
+          "tailWidthMm": 311,
+          "referenceStanceMm": 559
+        },
+        {
+          "size": "161",
+          "widthVariant": "standard",
+          "effectiveEdgeMm": 1197,
+          "waistWidthMm": 257,
+          "sidecutRadiiMSourceOrder": "9.4 / 6.9 / 9.4",
+          "stanceWidthIn": 22,
+          "stanceSetbackInches": 0.75,
+          "riderWeightLbRaw": "130-210"
+        },
+        {
+          "size": "164W",
+          "widthVariant": "wide",
+          "effectiveEdgeMm": 1223,
+          "waistWidthMm": 266,
+          "sidecutRadiiMSourceOrder": "9.5 / 7 / 9.5",
+          "stanceWidthIn": 23,
+          "stanceSetbackInches": 0.75,
+          "riderWeightLbRaw": "170-220+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "160cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1265mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "8.6m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "264mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0faeb-2199-7ca6-b03f-91abcc16ccf8",
@@ -10511,30 +15679,127 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "scenes": [
         "all-mountain",
         "powder"
-      ]
+      ],
+      "lengthOptions": "144 / 148 / 151 / 155 / 157 / 159 / 162 / 157W / 161W / 165W",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "144",
+          "effectiveEdge": 1088,
+          "waistWidth": 240,
+          "setback": -19,
+          "noseWidth": 284,
+          "tailWidth": 278,
+          "stanceWidth": "483 mm",
+          "riderWeight": "27 - 73 kg",
+          "sidecutRadii": "8.6 / 6.1 / - m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "148",
+          "effectiveEdge": 1126,
+          "waistWidth": 243,
+          "setback": -19,
+          "noseWidth": 289,
+          "tailWidth": 283,
+          "stanceWidth": "508 mm",
+          "riderWeight": "34 - 75 kg",
+          "sidecutRadii": "9.1 / 6.3 / - m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "151",
+          "effectiveEdge": 1152,
+          "waistWidth": 246,
+          "setback": -19,
+          "noseWidth": 293,
+          "tailWidth": 287,
+          "stanceWidth": "533 mm",
+          "riderWeight": "45 - 82 kg",
+          "sidecutRadii": "9.3 / 6.4 / - m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "155",
+          "effectiveEdge": 1177,
+          "waistWidth": 249,
+          "setback": -19,
+          "noseWidth": 297,
+          "tailWidth": 291,
+          "stanceWidth": "559 mm",
+          "riderWeight": "52 - 88 kg",
+          "sidecutRadii": "9.6 / 6.6 / - m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "157",
+          "effectiveEdge": 1190,
+          "waistWidth": 251,
+          "setback": -19,
+          "noseWidth": 299,
+          "tailWidth": 293,
+          "stanceWidth": "559 mm",
+          "riderWeight": "55 - 91 kg",
+          "sidecutRadii": "9.8 / 6.7 / - m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "159",
+          "effectiveEdge": 1203,
+          "waistWidth": 252,
+          "setback": -19,
+          "noseWidth": 301,
+          "tailWidth": 295,
+          "stanceWidth": "559 mm",
+          "riderWeight": "57 - 93 kg",
+          "sidecutRadii": "10.0 / 6.7 / - m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "162",
+          "effectiveEdge": 1228,
+          "waistWidth": 256,
+          "setback": -19,
+          "noseWidth": 306,
+          "tailWidth": 300,
+          "stanceWidth": "559 mm",
+          "riderWeight": "59 - 95 kg",
+          "sidecutRadii": "10.5 / 6.7 / - m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "157W",
+          "effectiveEdge": 1177,
+          "waistWidth": 259,
+          "setback": -19,
+          "noseWidth": 307,
+          "tailWidth": 301,
+          "stanceWidth": "559 mm",
+          "riderWeight": "57 - 93 kg",
+          "sidecutRadii": "9.6 / 6.7 / - m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "161W",
+          "effectiveEdge": 1228,
+          "waistWidth": 263,
+          "setback": -19,
+          "noseWidth": 313,
+          "tailWidth": 307,
+          "stanceWidth": "559 mm",
+          "riderWeight": "73 - 100+ kg",
+          "sidecutRadii": "10.5 / 6.7 / - m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "165W",
+          "effectiveEdge": 1253,
+          "waistWidth": 267,
+          "setback": -19,
+          "noseWidth": 318,
+          "tailWidth": 312,
+          "stanceWidth": "584 mm",
+          "riderWeight": "77 - 100+ kg",
+          "sidecutRadii": "10.7 / 6.8 / - m（entry / focus / exit；- 表示未提供）"
+        }
+      ],
+      "stanceSetback": -19,
+      "sidecutRadii": "9.8 / 6.7 / - m（entry / focus / exit；- 表示未提供）",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "157cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1190mm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "251mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0faeb-3025-7cf9-9504-7d796a021b40",
@@ -10570,30 +15835,72 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain",
         "freestyle",
         "powder"
-      ]
+      ],
+      "lengthOptions": "X-SMALL (142) / SMALL (148) / MEDIUM (151) / LARGE (154) / X-LARGE (158)",
+      "widthVariant": "standard",
+      "sizeSpecs": [
+        {
+          "size": "X-SMALL (142)",
+          "effectiveEdge": 1044,
+          "waistWidth": 250,
+          "setback": 0,
+          "noseWidth": 301,
+          "tailWidth": 291,
+          "stanceWidth": "483 mm",
+          "riderWeight": "27 - 73 kg",
+          "sidecutRadii": "4.6 / - / 5.6 m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "SMALL (148)",
+          "effectiveEdge": 1095,
+          "waistWidth": 260,
+          "setback": 0,
+          "noseWidth": 311,
+          "tailWidth": 301,
+          "stanceWidth": "533 mm",
+          "riderWeight": "45 - 93 kg",
+          "sidecutRadii": "5.1 / - / 6.2 m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "MEDIUM (151)",
+          "effectiveEdge": 1121,
+          "waistWidth": 265,
+          "setback": 0,
+          "noseWidth": 316,
+          "tailWidth": 306,
+          "stanceWidth": "559 mm",
+          "riderWeight": "59 - 95 kg",
+          "sidecutRadii": "5.4 / - / 6.5 m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "LARGE (154)",
+          "effectiveEdge": 1146,
+          "waistWidth": 270,
+          "setback": 0,
+          "noseWidth": 321,
+          "tailWidth": 311,
+          "stanceWidth": "559 mm",
+          "riderWeight": "64 - 100+ kg",
+          "sidecutRadii": "5.6 / - / 6.9 m（entry / focus / exit；- 表示未提供）"
+        },
+        {
+          "size": "X-LARGE (158)",
+          "effectiveEdge": 1171,
+          "waistWidth": 277,
+          "setback": 0,
+          "noseWidth": 328,
+          "tailWidth": 318,
+          "stanceWidth": "584 mm",
+          "riderWeight": "77 - 100+ kg",
+          "sidecutRadii": "5.9 / - / 7.2 m（entry / focus / exit；- 表示未提供）"
+        }
+      ],
+      "stanceSetback": 0,
+      "sidecutRadii": "5.6 / - / 6.9 m（entry / focus / exit；- 表示未提供）",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "154cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1146mm"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "270mm"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 · 野雪浮雪"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-51de-7454-ab33-37a80c6f1a61",
@@ -10617,8 +15924,8 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "sidecut": 7.1,
       "waistWidth": 248,
+      "sidecut": 7.1,
       "profile": "Rock Out Camber",
       "profileFamily": "hybrid",
       "shape": "Directional Twin",
@@ -10629,30 +15936,117 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
         "all-mountain",
         "freestyle",
         "powder"
-      ]
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 649.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/assassin-li1300",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。",
+      "sizeSpecs": [
+        {
+          "size": "150",
+          "weight": 2650,
+          "contactLength": 1020,
+          "effectiveEdge": 1106,
+          "waistWidth": 248,
+          "noseWidth": 286,
+          "tailWidth": 286,
+          "sidecutRadii": "7.1",
+          "setback": 0
+        },
+        {
+          "size": "153",
+          "weight": 2730,
+          "contactLength": 1044,
+          "effectiveEdge": 1130,
+          "waistWidth": 251,
+          "noseWidth": 291,
+          "tailWidth": 291,
+          "sidecutRadii": "7.3",
+          "setback": 0
+        },
+        {
+          "size": "156",
+          "weight": 2810,
+          "contactLength": 1068,
+          "effectiveEdge": 1160,
+          "waistWidth": 253,
+          "noseWidth": 296,
+          "tailWidth": 296,
+          "sidecutRadii": "7.5",
+          "setback": 0
+        },
+        {
+          "size": "159",
+          "weight": 2850,
+          "contactLength": 1092,
+          "effectiveEdge": 1188,
+          "waistWidth": 255,
+          "noseWidth": 301,
+          "tailWidth": 301,
+          "sidecutRadii": "7.7",
+          "setback": 0
+        },
+        {
+          "size": "162",
+          "weight": 2930,
+          "contactLength": 1120,
+          "effectiveEdge": 1214,
+          "waistWidth": 258,
+          "noseWidth": 303,
+          "tailWidth": 303,
+          "sidecutRadii": "7.9",
+          "setback": 0
+        },
+        {
+          "size": "165",
+          "weight": 3050,
+          "contactLength": 1146,
+          "effectiveEdge": 1242,
+          "waistWidth": 260,
+          "noseWidth": 307,
+          "tailWidth": 307,
+          "sidecutRadii": "8.1",
+          "setback": 0
+        },
+        {
+          "size": "158W",
+          "weight": 2950,
+          "contactLength": 1084,
+          "effectiveEdge": 1176,
+          "waistWidth": 263,
+          "noseWidth": 304,
+          "tailWidth": 304,
+          "sidecutRadii": "7.6",
+          "setback": 0
+        },
+        {
+          "size": "163W",
+          "weight": 3100,
+          "contactLength": 1118,
+          "effectiveEdge": 1212,
+          "waistWidth": 266,
+          "noseWidth": 308,
+          "tailWidth": 308,
+          "sidecutRadii": "8",
+          "setback": 0
+        },
+        {
+          "size": "168W",
+          "weight": 3240,
+          "contactLength": 1155,
+          "effectiveEdge": 1251,
+          "waistWidth": 268,
+          "noseWidth": 313,
+          "tailWidth": 313,
+          "sidecutRadii": "8.2",
+          "setback": 0
+        }
+      ],
+      "selectionNotes": "2025/26 官方技术册第 117 页列出 150/153/156/159/162/165 和 158W/163W/168W。W 为加宽尺码；板重为各长度目录标称值。结合雪鞋外壳、体重和站姿选择，不把板腰单一参考值套用到所有尺码。",
+      "compatibilitySources": "https://cdn.shopify.com/s/files/1/0673/9981/1381/files/FW25_digitalcatalogue_techbook.pdf?v=1736124811；https://salomon.jp/pages/snowboard-catalog"
     },
-    "highlights": [
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.1m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "248mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 · 野雪浮雪"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-4e97-7482-bed3-233b96946239",
@@ -10676,40 +16070,86 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "sidecut": 7.3,
+      "lengthOptions": "150 / 153 / 156 / 158W / 159 / 162 / 163W",
+      "length": 150,
       "waistWidth": 248,
+      "sidecut": 7.3,
       "profile": "Rock Out Camber",
       "profileFamily": "hybrid",
       "shape": "Directional Twin",
       "core": "Ghost Green Core / Popster Core",
+      "fiberglass": "BIAX HD fiberglass",
+      "base": "Sintered EG",
       "scenes": [
         "all-mountain",
         "freestyle",
         "powder"
-      ]
+      ],
+      "sizeSpecs": [
+        {
+          "size": "150",
+          "weight": 2500,
+          "noseWidth": 291,
+          "waistWidth": 248,
+          "tailWidth": 291,
+          "sidecutRadii": "7.3 m"
+        },
+        {
+          "size": "153",
+          "weight": 2580,
+          "noseWidth": 295,
+          "waistWidth": 251,
+          "tailWidth": 295,
+          "sidecutRadii": "7.5 m"
+        },
+        {
+          "size": "156",
+          "weight": 2650,
+          "noseWidth": 298,
+          "waistWidth": 253,
+          "tailWidth": 298,
+          "sidecutRadii": "7.7 m"
+        },
+        {
+          "size": "158W",
+          "weight": 2820,
+          "noseWidth": 309,
+          "waistWidth": 263,
+          "tailWidth": 309,
+          "sidecutRadii": "8.0 m"
+        },
+        {
+          "size": "159",
+          "weight": 2750,
+          "noseWidth": 301,
+          "waistWidth": 255,
+          "tailWidth": 301,
+          "sidecutRadii": "7.9 m"
+        },
+        {
+          "size": "162",
+          "weight": 2850,
+          "noseWidth": 305,
+          "waistWidth": 258,
+          "tailWidth": 305,
+          "sidecutRadii": "8.1 m"
+        },
+        {
+          "size": "163W",
+          "weight": 2950,
+          "noseWidth": 313,
+          "waistWidth": 266,
+          "tailWidth": 313,
+          "sidecutRadii": "8.2 m"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 699.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/assassin-pro-li1301",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.3m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "248mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "混合拱"
-      },
-      {
-        "key": "scenes",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 · 野雪浮雪"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d149-4b30-7fde-b329-a10b506c93b3",
@@ -10733,40 +16173,77 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
+      "lengthOptions": "149 / 153 / 156 / 156W / 159 / 159W / 162",
       "length": 156,
-      "sidecut": 7.1,
-      "waistWidth": 248,
+      "waistWidth": 255,
+      "sidecut": 7.5,
       "profile": "Quad Camber",
       "profileFamily": "camber",
       "shape": "True Twin",
-      "core": "Popster",
+      "core": "Popster；Basalt Booster",
+      "fiberglass": "TRIAX HD 玻纤；30% 生物基树脂",
       "base": "Sintered",
+      "sizeSpecs": [
+        {
+          "size": "149",
+          "noseWidth": 286,
+          "waistWidth": 248,
+          "tailWidth": 286,
+          "sidecutRadii": "7.1 m"
+        },
+        {
+          "size": "153",
+          "noseWidth": 292,
+          "waistWidth": 253,
+          "tailWidth": 292,
+          "sidecutRadii": "7.3 m"
+        },
+        {
+          "size": "156",
+          "noseWidth": 295,
+          "waistWidth": 255,
+          "tailWidth": 295,
+          "sidecutRadii": "7.5 m"
+        },
+        {
+          "size": "156W",
+          "noseWidth": 302,
+          "waistWidth": 262,
+          "tailWidth": 302,
+          "sidecutRadii": "7.6 m"
+        },
+        {
+          "size": "159",
+          "noseWidth": 298,
+          "waistWidth": 257,
+          "tailWidth": 298,
+          "sidecutRadii": "7.7 m"
+        },
+        {
+          "size": "159W",
+          "noseWidth": 305,
+          "waistWidth": 264,
+          "tailWidth": 305,
+          "sidecutRadii": "7.8 m"
+        },
+        {
+          "size": "162",
+          "noseWidth": 302,
+          "waistWidth": 260,
+          "tailWidth": 302,
+          "sidecutRadii": "7.9 m"
+        }
+      ],
       "scenes": [
         "freestyle"
-      ]
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 579.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/huck-knife-li1304",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "156cm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.1m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "248mm"
-      },
-      {
-        "key": "profileFamily",
-        "label": "板型族",
-        "value": "正拱 Camber"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0a804-2c66-7a84-8a68-a17b879beccb",
@@ -10774,11 +16251,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Sight 2026",
     "model": "Sight",
     "year": 2026,
-    "oneLiner": "它存在的意义就是让你少摔几次。板头板尾的反弓把卡刃概率压到很低，价格还留在入门区间。",
+    "oneLiner": "偏全山与轻 freeride 的锥形定向板；Cross Profile 面向压雪稳定，Royal Cork Pads 帮助过滤硬雪振动。",
     "priceMin": 3299,
     "priceMax": 3299,
     "priceCurrency": "CNY",
-    "coverUrl": "https://salomon.jp/cdn/shop/files/L47924900_0_VIR_SIGHT_156.png?v=1756098039",
+    "coverUrl": "https://salomon.jp/cdn/shop/files/L47924900_0_VIR_SIGHT_156.png?v=1756098039&width=1445",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10790,50 +16267,197 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard",
     "specs": {
-      "length": 155,
-      "effectiveEdge": 1180,
-      "sidecut": 7.8,
-      "waistWidth": 254,
-      "stanceSetback": 10,
-      "profile": "Rocker-Camber-Rocker",
-      "profileFamily": "hybrid",
-      "shape": "定向",
-      "core": "白杨 + 泡棉",
-      "fiberglass": "Biax",
-      "base": "挤压 3500",
-      "weight": 2650,
-      "flex": 4,
+      "length": 153,
+      "effectiveEdge": 1160,
+      "sidecut": 6.8,
+      "waistWidth": 250,
+      "stanceSetback": 20,
+      "profile": "Cross Profile Camber",
+      "shape": "锥形定向（Tapered Directional）",
+      "core": "Aspen Strong Core",
+      "fiberglass": "BA MD Fiberglass",
+      "base": "Extruded EG",
+      "weight": 2680,
       "damping": 5.5,
       "pop": 4.5,
-      "turnRadiusFeel": "宽松，容错高",
+      "turnRadiusFeel": "Quadratic，易于入弯与换刃",
+      "warranty": 2,
+      "flex": 4,
+      "profileFamily": "hybrid",
       "scenes": [
         "beginner",
         "all-mountain"
       ],
-      "warranty": 2
+      "sizeSpecs": [
+        {
+          "size": "147",
+          "weight": 2550,
+          "runningLength": 1025,
+          "effectiveEdge": 1110,
+          "waistWidth": 244,
+          "noseWidth": 287,
+          "tailWidth": 284,
+          "noseLength": 236,
+          "tailLength": 207,
+          "stanceWidth": "520 mm",
+          "stanceMin": 464,
+          "stanceMax": 576,
+          "riderWeight": "50 - 70 kg",
+          "bootSize": "235/265 mm（官方原表）",
+          "sidecutRadii": "6.4 m",
+          "setback": 20
+        },
+        {
+          "size": "150",
+          "weight": 2600,
+          "runningLength": 1050,
+          "effectiveEdge": 1135,
+          "waistWidth": 247,
+          "noseWidth": 293,
+          "tailWidth": 290,
+          "noseLength": 240,
+          "tailLength": 212,
+          "stanceWidth": "530 mm",
+          "stanceMin": 474,
+          "stanceMax": 586,
+          "riderWeight": "55 - 75 kg",
+          "bootSize": "245/275 mm（官方原表）",
+          "sidecutRadii": "6.6 m",
+          "setback": 20
+        },
+        {
+          "size": "153",
+          "weight": 2680,
+          "runningLength": 1070,
+          "effectiveEdge": 1160,
+          "waistWidth": 250,
+          "noseWidth": 296,
+          "tailWidth": 293,
+          "noseLength": 245,
+          "tailLength": 215,
+          "stanceWidth": "550 mm",
+          "stanceMin": 494,
+          "stanceMax": 606,
+          "riderWeight": "55 - 85 kg",
+          "bootSize": "255/285 mm（官方原表）",
+          "sidecutRadii": "6.8 m",
+          "setback": 20
+        },
+        {
+          "size": "156",
+          "weight": 2750,
+          "runningLength": 1090,
+          "effectiveEdge": 1180,
+          "waistWidth": 252,
+          "noseWidth": 299,
+          "tailWidth": 296,
+          "noseLength": 250,
+          "tailLength": 220,
+          "stanceWidth": "560 mm",
+          "stanceMin": 504,
+          "stanceMax": 616,
+          "riderWeight": "65 - 90 kg",
+          "bootSize": "255/295 mm（官方原表）",
+          "sidecutRadii": "7.1 m",
+          "setback": 20
+        },
+        {
+          "size": "159",
+          "weight": 2900,
+          "runningLength": 1110,
+          "effectiveEdge": 1200,
+          "waistWidth": 256,
+          "noseWidth": 304,
+          "tailWidth": 301,
+          "noseLength": 255,
+          "tailLength": 225,
+          "stanceWidth": "570 mm",
+          "stanceMin": 514,
+          "stanceMax": 626,
+          "riderWeight": "65 - 90 kg",
+          "bootSize": "255/295 mm（官方原表）",
+          "sidecutRadii": "7.4 m",
+          "setback": 20
+        },
+        {
+          "size": "155W",
+          "weight": 2890,
+          "runningLength": 1082,
+          "effectiveEdge": 1172,
+          "waistWidth": 262,
+          "noseWidth": 306,
+          "tailWidth": 303,
+          "noseLength": 248,
+          "tailLength": 220,
+          "stanceWidth": "560 mm",
+          "stanceMin": 504,
+          "stanceMax": 616,
+          "riderWeight": "65 - 90 kg",
+          "bootSize": "255/295 mm（官方原表）",
+          "sidecutRadii": "7 m",
+          "setback": 20
+        },
+        {
+          "size": "158W",
+          "weight": 3000,
+          "runningLength": 1105,
+          "effectiveEdge": 1185,
+          "waistWidth": 264,
+          "noseWidth": 308,
+          "tailWidth": 305,
+          "noseLength": 255,
+          "tailLength": 220,
+          "stanceWidth": "570 mm",
+          "stanceMin": 514,
+          "stanceMax": 626,
+          "riderWeight": "70 - 90 kg",
+          "bootSize": "265/305 mm（官方原表）",
+          "sidecutRadii": "7.7 m",
+          "setback": 20
+        },
+        {
+          "size": "162W",
+          "weight": 3100,
+          "runningLength": 1135,
+          "effectiveEdge": 1215,
+          "waistWidth": 271,
+          "noseWidth": 317,
+          "tailWidth": 314,
+          "noseLength": 260,
+          "tailLength": 225,
+          "stanceWidth": "585 mm",
+          "stanceMin": 529,
+          "stanceMax": 641,
+          "riderWeight": "70 - 105 kg",
+          "bootSize": "275/315 mm（官方原表）",
+          "sidecutRadii": "7.9 m",
+          "setback": 20
+        },
+        {
+          "size": "166W",
+          "weight": 3200,
+          "runningLength": 1165,
+          "effectiveEdge": 1245,
+          "waistWidth": 275,
+          "noseWidth": 321,
+          "tailWidth": 318,
+          "noseLength": 265,
+          "tailLength": 230,
+          "stanceWidth": "600 mm",
+          "stanceMin": 544,
+          "stanceMax": 656,
+          "riderWeight": "70 - 105 kg",
+          "bootSize": "275/315 mm（官方原表）",
+          "sidecutRadii": "8.1 m",
+          "setback": 20
+        }
+      ],
+      "selectionNotes": "Salomon FW25 技术目录 PDF 第 11 页、印刷页 118，逐码复核；原文靴码数值保留单位，不解释为实测鞋底长度。",
+      "compatibilitySources": "https://salomon.jp/pages/snowboard-catalog；https://cdn.shopify.com/s/files/1/0673/9981/1381/files/FW25_digitalcatalogue_techbook.pdf?v=1736124811",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。"
     },
-    "highlights": [
-      {
-        "key": "length",
-        "label": "长度",
-        "value": "155cm"
-      },
-      {
-        "key": "effectiveEdge",
-        "label": "有效边刃",
-        "value": "1180mm"
-      },
-      {
-        "key": "sidecut",
-        "label": "侧切半径",
-        "value": "7.8m"
-      },
-      {
-        "key": "waistWidth",
-        "label": "板腰宽",
-        "value": "254mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cd26-7b34-9dc1-569100b9cab6",
@@ -10845,7 +16469,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1053917E7W_1.webp?v=1783620002&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/1053917E7W_1.webp?v=1783620002&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10859,31 +16483,23 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flexFeel": "medium",
-      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
-      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋",
-      "bindingSizeGuide": "Burton 男款尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26；M 对应 US 8–11 / Mondo 26–29；L 对应 US 10+ / Mondo 28+。官方区间有重叠，请按具体雪鞋试配。",
-      "terrain": [
-        "all-mountain",
-        "freeride"
-      ]
+      "mountingSystem": "Re:Flex；兼容主要雪板安装系统。Burton 3D 系统需另购 3D Hinge Disc（不含）",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "S：男靴 US 6–8 / EU 38–41；M：US 8–11 / EU 41–44；L：US 10+ / EU 43+",
+      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
+      "ankleStrap": "Hammockstrap 2.0",
+      "toeStrap": "Supergrip Capstrap",
+      "buckles": "Smooth Glide",
+      "highback": "单一组件结构",
+      "highbackAdjustment": "DialFLAD 前倾角调节",
+      "cushioning": "Re:Flex FullBED 全掌缓震",
+      "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 本轮官方型号证据未通过复核，现有尺寸不视为重新核实；详见待核记录。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-cartel-re-flex-snowboard-bindings-105391",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cd59-7f2a-ade6-80f0ce04387b",
@@ -10895,7 +16511,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223010FA9_1.webp?v=1783620024&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/2223010FA9_1.webp?v=1783620024&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10909,31 +16525,49 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flexFeel": "stiff",
-      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
-      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋",
-      "bindingSizeGuide": "Burton 男款尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26；M 对应 US 8–11 / Mondo 26–29；L 对应 US 10+ / Mondo 28+。官方区间有重叠，请按具体雪鞋试配。",
-      "terrain": [
-        "all-mountain",
-        "freeride"
-      ]
+      "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
+      "baseplateMaterial": "45% 短切玻纤/尼龙复合材料",
+      "ankleStrap": "Hammockstrap 2.0",
+      "toeStrap": "Supergrip Capstrap 2.0",
+      "buckles": "Smooth Glide 卡扣",
+      "highback": "Heel Hammock",
+      "highbackAdjustment": "DialFLAD 前倾角调节",
+      "cushioning": "Re:Flex FullBED 全掌缓震",
+      "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-cartel-x-re-flex-snowboard-bindings-222301",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "usWomen": "5-9",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8-11",
+          "usWomen": "9-11",
+          "eu": "41-44",
+          "uk": "7-10",
+          "mondo": "26-29"
+        },
+        {
+          "size": "L",
+          "usMen": "10+",
+          "usWomen": "11+",
+          "eu": "43+",
+          "uk": "9+",
+          "mondo": "28+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cd6b-7eb7-8389-8d95d4fd3f72",
@@ -10945,7 +16579,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/105441BE8FRG_1.webp?v=1784128020&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/105441BE8FRG_1.webp?v=1784127972&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -10958,32 +16592,49 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "flexFeel": "soft",
-      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
-      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋",
-      "bindingSizeGuide": "Burton 男款尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26；M 对应 US 8–11 / Mondo 26–29；L 对应 US 10+ / Mondo 28+。官方区间有重叠，请按具体雪鞋试配。",
-      "terrain": [
-        "all-mountain",
-        "freestyle"
-      ]
+      "flexFeel": "medium",
+      "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
+      "baseplateMaterial": "Bomb-Proof 聚碳酸酯",
+      "ankleStrap": "Reactstrap",
+      "toeStrap": "Supergrip Capstrap",
+      "buckles": "Smooth Glide 卡扣",
+      "highbackAdjustment": "MicroFLAD 前倾角调节",
+      "cushioning": "Re:Flex FullBED 全掌缓震",
+      "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-freestyle-re-flex-snowboard-bindings-105441",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "usWomen": "5-9",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8-11",
+          "usWomen": "9-11",
+          "eu": "41-44",
+          "uk": "7-10",
+          "mondo": "26-29"
+        },
+        {
+          "size": "L",
+          "usMen": "10+",
+          "usWomen": "11+",
+          "eu": "43+",
+          "uk": "9+",
+          "mondo": "28+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "柔软"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cd78-75f7-a6f8-4abf7eb8b688",
@@ -10995,7 +16646,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1054719E9M_1.webp?v=1784135138&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/1054719E9M_1.webp?v=1784135138&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11009,31 +16660,49 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flexFeel": "medium",
-      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
-      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋",
-      "bindingSizeGuide": "Burton 男款尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26；M 对应 US 8–11 / Mondo 26–29；L 对应 US 10+ / Mondo 28+。官方区间有重叠，请按具体雪鞋试配。",
-      "terrain": [
-        "all-mountain",
-        "freestyle"
-      ]
+      "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
+      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
+      "ankleStrap": "Hammockstrap",
+      "toeStrap": "Supergrip Capstrap 2.0",
+      "buckles": "Double Take 卡扣",
+      "highback": "Kickback Hammock",
+      "highbackAdjustment": "MicroFLAD 前倾角调节",
+      "cushioning": "Re:Flex FullBED 全掌缓震；B3 凝胶缓震",
+      "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-genesis-re-flex-snowboard-bindings-105471",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "usWomen": "5-9",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8-11",
+          "usWomen": "9-11",
+          "eu": "41-44",
+          "uk": "7-10",
+          "mondo": "26-29"
+        },
+        {
+          "size": "L",
+          "usMen": "10+",
+          "usWomen": "11+",
+          "eu": "43+",
+          "uk": "9+",
+          "mondo": "28+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cd86-79f8-944e-e357366379bc",
@@ -11045,7 +16714,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2223314E9R_1.webp?v=1783620802&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/2223314E9R_1.webp?v=1783620802&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11058,26 +16727,52 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "mountingSystem": "EST，仅适配 Burton The Channel",
-      "bootCompatibility": "EST 版本仅用于 Burton The Channel 雪板；适配普通绑带雪鞋",
-      "bindingSizeGuide": "Burton 女款尺码表：S 对应雪鞋 US 4–6 / Mondo 21–23；M 对应 US 6–8 / Mondo 23–25；L 对应 US 8+ / Mondo 25+。",
-      "terrain": [
-        "all-mountain",
-        "freestyle"
-      ]
+      "flexFeel": "stiff",
+      "mountingSystem": "EST：仅适用于 Burton The Channel 雪板；底部无硬件，支持更灵活的站姿调节",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Burton 女款官方尺码：S US 女靴 4–6 / EU 34–36.5；M 6–8 / EU 36.5–40；L 8+ / EU 40+",
+      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
+      "ankleStrap": "非对称 Hammockstrap",
+      "toeStrap": "Supergrip Capstrap 2.0",
+      "buckles": "Double Take 卡扣",
+      "highback": "Heel Hammock",
+      "highbackAdjustment": "DialFLAD 前倾角调节，可调至零前倾",
+      "cushioning": "FullBED 全掌缓震",
+      "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 此 EST 版本仅适用于 The Channel，不适用于普通四孔雪板。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usWomen": "4-6",
+          "eu": "34-36.5",
+          "uk": "2.5-4",
+          "mondo": "21-23"
+        },
+        {
+          "size": "M",
+          "usWomen": "6-8",
+          "usMen": "6-7",
+          "eu": "36.5-40",
+          "uk": "4-6",
+          "mondo": "23-25"
+        },
+        {
+          "size": "L",
+          "usWomen": "8+",
+          "usMen": "7-10",
+          "eu": "40+",
+          "uk": "6+",
+          "mondo": "25+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 349.95",
+      "priceMarket": "原币 USD；来源商店 www.burton.com",
+      "priceSource": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cd91-7d2c-b73c-34cc569d209c",
@@ -11089,7 +16784,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1054617E9K_1.webp?v=1783620127&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/1054617E9K_1.webp?v=1783620127&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11103,30 +16798,48 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flexFeel": "medium",
-      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
-      "bootCompatibility": "Re:Flex 多板型安装；适配普通绑带雪鞋",
-      "bindingSizeGuide": "Burton 男款尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26；M 对应 US 8–11 / Mondo 26–29；L 对应 US 10+ / Mondo 28+。官方区间有重叠，请按具体雪鞋试配。",
-      "terrain": [
-        "all-mountain"
-      ]
+      "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
+      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
+      "ankleStrap": "Reactstrap",
+      "toeStrap": "Supergrip Capstrap",
+      "buckles": "Smooth Glide 卡扣",
+      "highbackAdjustment": "DialFLAD 前倾角调节；高背可独立调节前倾与旋转",
+      "cushioning": "Re:Flex FullBED 全掌缓震",
+      "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-mission-re-flex-snowboard-bindings-105461",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "usWomen": "5-9",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8-11",
+          "usWomen": "9-11",
+          "eu": "41-44",
+          "uk": "7-10",
+          "mondo": "26-29"
+        },
+        {
+          "size": "L",
+          "usMen": "10+",
+          "usWomen": "11+",
+          "eu": "43+",
+          "uk": "9+",
+          "mondo": "28+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cd9c-7c42-ab81-d88c9e19abcd",
@@ -11138,7 +16851,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2296011E9M_1.webp?v=1782872039&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/2296011E9M_1.webp?v=1782872039&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11152,30 +16865,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "step-in",
       "flexFeel": "medium",
-      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
-      "bootCompatibility": "仅兼容 Burton Step On 雪鞋；Re:Flex 多板型安装",
-      "bindingSizeGuide": "Burton 男款 Step On 尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26 / CN 240–260；M 对应 US 8.5–10.5 / Mondo 26.5–28.5 / CN 265–285；L 对应 US 11–13 / Mondo 29–31 / CN 290–310；XL 对应 US 14–15 / Mondo 32–33 / CN 320–330。仅配 Burton Step On 雪鞋。",
-      "terrain": [
-        "all-mountain"
-      ]
+      "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
+      "bootCompatibility": "仅配认证 Step On 专用雪鞋；男/女/儿童系列及固定器尺码必须匹配，不能使用普通绑带雪鞋。",
+      "bindingSizeGuide": "Burton 男款 Step On 官方靴码：S US 6–8 / EU 38–41；M 8.5–10.5 / EU 41.5–43.5；L 11–13 / EU 44–46；XL 14–15 / EU 47–48。仅配对应男款 Step On 雪鞋",
+      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
+      "highback": "Kickback Hammock",
+      "highbackAdjustment": "DialFLAD 前倾角调节",
+      "cushioning": "Re:Flex FullBED 全掌缓震",
+      "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 Step On 使用专用尺码表，不能套用普通绑带式 S/M/L 范围。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-step-on-genesis-re-flex-snowboard-bindings-229601；https://www.burton.com/en-us/pages/size-charts",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8.5-10.5",
+          "eu": "41.5-43.5",
+          "uk": "7.5-9.5",
+          "mondo": "26.5-28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "11-13",
+          "eu": "44-46",
+          "uk": "10-12",
+          "mondo": "29-31"
+        },
+        {
+          "size": "XL",
+          "usMen": "14-15",
+          "eu": "47-48",
+          "uk": "13-14",
+          "mondo": "32-33"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "踩入式"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cda8-728b-b82d-df8823fc368e",
@@ -11187,7 +16920,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1728316E7W_1.webp?v=1783620482&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/1728316E7W_1.webp?v=1783620482&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11201,62 +16934,49 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "step-in",
       "flexFeel": "medium",
-      "mountingSystem": "Re:Flex，兼容主要雪板安装系统（旧款 Burton 3D 需另配圆盘）",
-      "bootCompatibility": "仅兼容 Burton Step On 雪鞋；Re:Flex 多板型安装",
-      "bindingSizeGuide": "Burton 男款 Step On 尺码表：S 对应雪鞋 US 6–8 / Mondo 24–26 / CN 240–260；M 对应 US 8.5–10.5 / Mondo 26.5–28.5 / CN 265–285；L 对应 US 11–13 / Mondo 29–31 / CN 290–310；XL 对应 US 14–15 / Mondo 32–33 / CN 320–330。仅配 Burton Step On 雪鞋。",
-      "terrain": [
-        "all-mountain"
-      ]
+      "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
+      "bootCompatibility": "仅配认证 Step On 专用雪鞋；男/女/儿童系列及固定器尺码必须匹配，不能使用普通绑带雪鞋。",
+      "bindingSizeGuide": "Burton 男款 Step On 官方靴码：S US 6–8 / EU 38–41；M 8.5–10.5 / EU 41.5–43.5；L 11–13 / EU 44–46；XL 14–15 / EU 47–48。仅配对应男款 Step On 雪鞋",
+      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
+      "highbackAdjustment": "Step On FLAD 前倾角调节",
+      "cushioning": "Re:Flex FullBED 全掌缓震",
+      "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 Step On 使用专用尺码表，不能套用普通绑带式 S/M/L 范围。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-step-on-re-flex-snowboard-bindings-172831；https://www.burton.com/en-us/pages/size-charts",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8.5-10.5",
+          "eu": "41.5-43.5",
+          "uk": "7.5-9.5",
+          "mondo": "26.5-28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "11-13",
+          "eu": "44-46",
+          "uk": "10-12",
+          "mondo": "29-31"
+        },
+        {
+          "size": "XL",
+          "usMen": "14-15",
+          "eu": "47-48",
+          "uk": "13-14",
+          "mondo": "32-33"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "踩入式"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
-  },
-  {
-    "id": "01a0e5dc-5e10-7026-bf38-780f4de363f6",
-    "slug": "cosone-step-on-binding-2026",
-    "title": "COSONE Step On 快穿固定器 2026",
-    "model": "Step On",
-    "year": 2026,
-    "oneLiner": "COSONE 官网本季精选固定器，官方称其为 Step On 快穿款；具体雪鞋兼容范围待品牌进一步说明。",
-    "priceMin": null,
-    "priceMax": null,
-    "priceCurrency": "CNY",
-    "coverUrl": null,
-    "ratingOverall": null,
-    "ratingCount": 0,
-    "favoriteCount": 0,
-    "composite": null,
-    "brand": {
-      "slug": "cosone",
-      "name": "COSONE",
-      "nameCn": "COSONE"
-    },
-    "categorySlug": "snowboard-binding",
-    "specs": {
-      "entrySystem": "step-in"
-    },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "踩入式"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cdb4-7b9c-a7ea-7957096ae6e9",
@@ -11268,7 +16988,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://contents.mediadecathlon.com/p2573496/k%24353e5fd924967da12911035b5eeb0342/picture.jpg?format=webp&f=3000x0",
+    "coverUrl": "https://contents.mediadecathlon.com/p2573496/k%24353e5fd924967da12911035b5eeb0342/picture.jpg?f=3000x0&format=auto",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11281,24 +17001,14 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "mountingSystem": "插孔圆盘；兼容常规及 Burton 3D 插孔，不兼容 Channel",
-      "bootCompatibility": "兼容常规及 3D 插孔；不兼容 Burton Channel；普通绑带雪鞋",
-      "terrain": [
-        "all-mountain"
-      ]
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654",
+      "bindingSizeGuide": "官方当前页明确 L 对应 9–13，但原文未标明尺码体系，不自行转换为 EU 或 Mondopoint；雪鞋外形不同，必须试装。其他尺码范围待核。",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-9716-7e7d-9884-d5341096a0ce",
@@ -11322,31 +17032,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "mid-soft",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bindingSizeGuide": "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
       "terrain": [
         "all-mountain"
-      ]
+      ],
+      "flexFeel": "mid-soft",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nidecker.com/products/flow-fenix",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 269.95",
+      "priceMarket": "原币 USD；来源商店 www.nidecker.com",
+      "priceSource": "https://www.nidecker.com/en-int/products/flow-fenix",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏软"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-9a2b-74f4-8da5-95412f30dbe6",
@@ -11370,31 +17105,20 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "mid-stiff",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
       "terrain": [
         "all-mountain"
-      ]
+      ],
+      "flexFeel": "mid-stiff",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 本轮官方型号证据未通过复核，现有尺寸不视为重新核实；详见待核记录。",
+      "compatibilitySources": "https://www.nidecker.com/products/flow-fuse-2026",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-9d36-76fe-a7a0-595fddec7151",
@@ -11418,32 +17142,21 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "mid-stiff",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
       "terrain": [
         "all-mountain",
         "freeride"
-      ]
+      ],
+      "flexFeel": "mid-stiff",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 本轮官方型号证据未通过复核，现有尺寸不视为重新核实；详见待核记录。",
+      "compatibilitySources": "https://www.nidecker.com/products/flow-fuse-hybrid-2026",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-a04b-7973-a2c3-5037a58d426a",
@@ -11467,31 +17180,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "soft",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bindingSizeGuide": "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
       "terrain": [
         "all-mountain"
-      ]
+      ],
+      "flexFeel": "soft",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nidecker.com/products/flow-nexus",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 219.95",
+      "priceMarket": "原币 USD；来源商店 www.nidecker.com",
+      "priceSource": "https://www.nidecker.com/en-int/products/flow-nexus",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "柔软"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-a370-7287-9ade-2a8dc1dbc3bf",
@@ -11515,32 +17253,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "pro-stiff",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
       "terrain": [
         "all-mountain",
         "freeride"
-      ]
+      ],
+      "flexFeel": "pro-stiff",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nidecker.com/products/flow-nx2-carbon",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 479.95",
+      "priceMarket": "原币 USD；来源商店 www.nidecker.com",
+      "priceSource": "https://www.nidecker.com/en-int/products/flow-nx2-carbon",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "专业硬朗"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-a67a-7a59-a463-796007366c69",
@@ -11564,32 +17327,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "stiff",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
       "terrain": [
         "all-mountain",
         "freeride"
-      ]
+      ],
+      "flexFeel": "stiff",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nidecker.com/products/flow-nx2-hybrid",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 379.95",
+      "priceMarket": "原币 USD；来源商店 www.nidecker.com",
+      "priceSource": "https://www.nidecker.com/en-int/products/flow-nx2-hybrid",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cdc0-75bd-8984-e4b6b0c647bd",
@@ -11601,7 +17389,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/2627-cv-purple.png?v=1787656749&width=1160",
+    "coverUrl": "https://flux-bindings.com/cdn/shop/files/2627-cv-purple.png?v=1787656749&width=1160",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11615,30 +17403,60 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 7,
-      "mountingSystem": "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对",
-      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋",
-      "terrain": [
-        "carving",
-        "all-mountain"
-      ]
+      "flexFeel": "stiff",
+      "mountingSystem": "FLUX Multi Disc；兼容 4x4 与 2H 安装，可前后或左右偏移 5/10 mm",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "baseplateMaterial": "Super Transfer 底盘；Performance Blend 中等硬度材料；4Corner Stabilizer",
+      "ankleStrap": "Waffle Strap 双层缓冲结构；UU Fit 环绕固定",
+      "toeStrap": "F.T.M. Ver. 5.0；L-Guide 收纳带尾",
+      "buckles": "Beer Buckle 棘轮扣，带开瓶器",
+      "highback": "Buffalo Highback；Super Tough Nylon 中等硬度材料",
+      "highbackAdjustment": "Slide Highback Rotation、Toolless Lever、Micro Adjuster；每格约 2.5° 前倾",
+      "cushioning": "Boost FootOn 比标准脚床高 4 mm；Heel Up；可调 toe/heel cushion",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://flux-bindings.com/products/2627-cv；https://flux-bindings.com/pages/size-chart_binding",
+      "sizeChart": [
+        {
+          "size": "XS",
+          "mondo": "21 - 23.5",
+          "usMen": "3 - 5.5",
+          "usWomen": "4 - 6.5",
+          "eu": "34 - 37.5",
+          "uk": "2 - 4.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "S",
+          "mondo": "22.5 - 25.5",
+          "usMen": "4.5 - 7.5",
+          "usWomen": "5.5 - 8.5",
+          "eu": "36 - 40.5",
+          "uk": "3.5 - 6.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "M",
+          "mondo": "25 - 27.5",
+          "usMen": "7 - 9.5",
+          "usWomen": "8 - 10.5",
+          "eu": "40 - 42.5",
+          "uk": "6 - 8.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "L",
+          "mondo": "27+",
+          "usMen": "9+",
+          "eu": "42+",
+          "uk": "8+",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        }
+      ],
+      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "刻滑 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cdcd-78fa-b5c0-c01c889ea425",
@@ -11646,11 +17464,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "FLUX DS 2027",
     "model": "DS",
     "year": 2027,
-    "oneLiner": "FLUX 自由式全能款，26-27 官方页面介绍轻量底座与 Cloud Strap。",
+    "oneLiner": "FLUX 自由式全能款，26-27 官方规格为 4 级硬度，采用 Cloud Strap 与可弯曲安装盘。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://www.fluxsnowboarding.com/cdn/shop/files/25_1_bk_bs.png?v=1758571720&width=1200",
+    "coverUrl": "https://flux-bindings.com/cdn/shop/files/2627-ds-mhak-camo.png?v=1787708466&width=1160",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11663,31 +17481,64 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "flexFeel": "mid-stiff",
-      "mountingSystem": "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对",
-      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋",
-      "terrain": [
-        "freestyle",
-        "all-mountain"
-      ]
+      "flex": 4,
+      "flexFeel": "mid-soft",
+      "mountingSystem": "Flexible Disc 柔性旋转安装盘；官方页面未在本型号页进一步列明孔位兼容",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "baseplateMaterial": "Super Ultima 底盘；Glass Reinforced Flexlite Grade 轻量弹性材料；Flat Bottom",
+      "ankleStrap": "Cloud Strap 泡棉缓冲脚踝绑带",
+      "toeStrap": "F.T.M. Duo 一体成型脚趾绑带，贴合靴头",
+      "buckles": "Beer Buckle 棘轮扣，带开瓶器",
+      "highback": "Resistor Highback；Super Tough Nylon 中等硬度材料",
+      "highbackAdjustment": "Toolless Lever、五孔旋转调节、Micro Adjuster；每格约 2.5° 前倾",
+      "cushioning": "FootOn 脚床、Cushion Stabilizer、可分别调整的 toe/heel cushion",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://flux-bindings.com/products/2627-ds；https://flux-bindings.com/pages/size-chart_binding",
+      "sizeChart": [
+        {
+          "size": "XS",
+          "mondo": "21 - 23.5",
+          "usMen": "3 - 5.5",
+          "usWomen": "4 - 6.5",
+          "eu": "34 - 37.5",
+          "uk": "2 - 4.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "S",
+          "mondo": "22.5 - 25.5",
+          "usMen": "4.5 - 7.5",
+          "usWomen": "5.5 - 8.5",
+          "eu": "36 - 40.5",
+          "uk": "3.5 - 6.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "M",
+          "mondo": "25 - 27.5",
+          "usMen": "7 - 9.5",
+          "usWomen": "8 - 10.5",
+          "eu": "40 - 42.5",
+          "uk": "6 - 8.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "L",
+          "mondo": "27+",
+          "usMen": "9+",
+          "eu": "42+",
+          "uk": "8+",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        }
+      ],
+      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "CNY 2562",
+      "priceMarket": "原币 CNY；来源商店 flux-bindings.com",
+      "priceSource": "https://flux-bindings.com/en/products/2627-ds",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "自由式 / 公园 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cdd7-735a-b5f7-1ee5f9c820ad",
@@ -11699,7 +17550,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/60_1_f25-bdg-302-gs-blk.png?v=1705538624&width=1160",
+    "coverUrl": "https://flux-bindings.com/cdn/shop/files/60_1_f25-bdg-302-gs-blk.png?v=1705538624&width=1160",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11713,30 +17564,46 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 3,
-      "mountingSystem": "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对",
-      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋",
-      "terrain": [
-        "freestyle",
-        "all-mountain"
-      ]
+      "flexFeel": "soft",
+      "mountingSystem": "FLUX Multi Disc；兼容 4x4 与 2H 安装",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "baseplateMaterial": "女性专用 Vogue Baseplate，Performance Blend 中等弯曲复合材料",
+      "ankleStrap": "Honeycomb Strap Ver 2.0 蜂窝轻量缓冲脚踝带",
+      "toeStrap": "FTM Versa 双向脚背/脚趾绑带，适配不同靴型",
+      "buckles": "Trigger Ratchet Buckle 加大扳机式棘轮扣",
+      "highback": "Women's Resister Highback，Super Tough Nylon",
+      "highbackAdjustment": "Micro Adjuster 每格约 2.5° 前倾",
+      "cushioning": "FootOn 脚床、可调 toe/heel cushion 与可拆换 Custom Stabilizers",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://flux-bindings.com/products/2526gs；https://flux-bindings.com/pages/size-chart_binding",
+      "sizeChart": [
+        {
+          "size": "XS",
+          "mondo": "21 - 23.5",
+          "usMen": "3 - 5.5",
+          "usWomen": "4 - 6.5",
+          "eu": "34 - 37.5",
+          "uk": "2 - 4.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "SM",
+          "mondo": "24 - 26.5",
+          "usMen": "6 - 8.5",
+          "usWomen": "7 - 9.5",
+          "eu": "38 - 41.5",
+          "uk": "5 - 7.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        }
+      ],
+      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；SM: US 男 6 - 8.5 / US 女 7 - 9.5 / EU 38 - 41.5。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "CNY 1731–2163",
+      "priceMarket": "原币 CNY；来源商店 flux-bindings.com",
+      "priceSource": "https://flux-bindings.com/en/products/2526gs",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "3"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "自由式 / 公园 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cdf6-78f5-88a2-a46fd8a67767",
@@ -11748,7 +17615,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/23_1_gmable_bs-1.png?v=1775183864&width=1160",
+    "coverUrl": "https://flux-bindings.com/cdn/shop/files/23_1_gmable_bs-1.png?v=1775183864&width=1160",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11762,30 +17629,63 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 7,
-      "mountingSystem": "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对",
-      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋",
-      "terrain": [
-        "all-mountain",
-        "freeride"
-      ]
+      "flexFeel": "stiff",
+      "mountingSystem": "FLUX Multi Disc；兼容 4x4 与 2H 安装，可偏移安装",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "baseplateMaterial": "Super Ultima 底盘，Glass Reinforced Tough Grade 复合材质；Boost FootOn+ 脚床",
+      "ankleStrap": "Waffle Strap 双层缓冲结构，搭配 UU Fit 环绕固定",
+      "toeStrap": "F.T.M. Ver 5.0 可翻转脚背/脚趾绑带，L-Guide 收纳带尾",
+      "buckles": "Beer Buckle 棘轮扣",
+      "highback": "RETRO-Mod 非对称内侧结构高背，Super Tough Nylon 中等弯曲材料",
+      "highbackAdjustment": "Redux Lean Adjuster 与 Micro Adjuster；每格约 2.5° 前倾",
+      "cushioning": "Boost FootOn+ 加高脚床、XF 专用响应稳定器与可调 toe/heel cushion",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://flux-bindings.com/products/2526xf；https://flux-bindings.com/pages/size-chart_binding",
+      "sizeChart": [
+        {
+          "size": "XS",
+          "mondo": "21 - 23.5",
+          "usMen": "3 - 5.5",
+          "usWomen": "4 - 6.5",
+          "eu": "34 - 37.5",
+          "uk": "2 - 4.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "S",
+          "mondo": "22.5 - 25.5",
+          "usMen": "4.5 - 7.5",
+          "usWomen": "5.5 - 8.5",
+          "eu": "36 - 40.5",
+          "uk": "3.5 - 6.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "M",
+          "mondo": "25 - 27.5",
+          "usMen": "7 - 9.5",
+          "usWomen": "8 - 10.5",
+          "eu": "40 - 42.5",
+          "uk": "6 - 8.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "L",
+          "mondo": "27+",
+          "usMen": "9+",
+          "eu": "42+",
+          "uk": "8+",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        }
+      ],
+      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "CNY 2177–2562",
+      "priceMarket": "原币 CNY；来源商店 flux-bindings.com",
+      "priceSource": "https://flux-bindings.com/en/products/2526xf",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cdff-7b39-9f2f-bf3e24ae584e",
@@ -11797,7 +17697,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0676/1031/3014/files/2_1_xv__bronze_bs-1.png?v=1757410220&width=1160",
+    "coverUrl": "https://flux-bindings.com/cdn/shop/files/2_1_xv__bronze_bs-1.png?v=1757410220&width=1160",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11811,30 +17711,63 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 9,
-      "mountingSystem": "FLUX Flexible Mounting Disk；圆盘孔位以对应雪板系统核对",
-      "bootCompatibility": "FLUX 固定器安装圆盘；适配普通绑带雪鞋",
-      "terrain": [
-        "freeride",
-        "all-mountain"
-      ]
+      "flexFeel": "pro-stiff",
+      "mountingSystem": "Carbon Multi Disc；兼容 4x4 与 2H 安装，可作 5/10 mm 偏移安装",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "baseplateMaterial": "Super Ultima 碳纤维增强尼龙底盘；XV 专用大型 TPU Responsive Stabilizer",
+      "ankleStrap": "Waffle Strap 双层缓冲绑带与 UU Fit 环绕式固定",
+      "toeStrap": "F.T.M. Ver 5.0 Transfer 专用绑带；L-Guide 收纳带尾",
+      "buckles": "Beer Buckle 棘轮扣，带快速收紧结构",
+      "highback": "W-Props Carbon Reinforced 高背，含碳纤维增强与滑动衬片",
+      "highbackAdjustment": "Redux Lean Adjuster 单动作调节；Micro Adjuster 每格约 2.5° 前倾",
+      "cushioning": "Boost FootOn+ 脚床；可调 toe/heel cushion 与响应稳定器",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://flux-bindings.com/products/2526xv；https://flux-bindings.com/pages/size-chart_binding",
+      "sizeChart": [
+        {
+          "size": "XS",
+          "mondo": "21 - 23.5",
+          "usMen": "3 - 5.5",
+          "usWomen": "4 - 6.5",
+          "eu": "34 - 37.5",
+          "uk": "2 - 4.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "S",
+          "mondo": "22.5 - 25.5",
+          "usMen": "4.5 - 7.5",
+          "usWomen": "5.5 - 8.5",
+          "eu": "36 - 40.5",
+          "uk": "3.5 - 6.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "M",
+          "mondo": "25 - 27.5",
+          "usMen": "7 - 9.5",
+          "usWomen": "8 - 10.5",
+          "eu": "40 - 42.5",
+          "uk": "6 - 8.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "L",
+          "mondo": "27+",
+          "usMen": "9+",
+          "eu": "42+",
+          "uk": "8+",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        }
+      ],
+      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "CNY 3330–3700",
+      "priceMarket": "原币 CNY；来源商店 flux-bindings.com",
+      "priceSource": "https://flux-bindings.com/en/products/2526xv",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "9"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "野雪 / freeride · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce0b-70fa-ab1f-bac6788aa429",
@@ -11846,7 +17779,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.26.BNM.MER.GY-gallery-1.webp?v=1768450607&width=1946",
+    "coverUrl": "https://images.evo.com/imgp/zoom/264057/1202448/jones-mercury-snowboard-bindings-2026-.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11860,36 +17793,13 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 7,
-      "mountingSystem": "Universal Disk；兼容 4x4、2x4 与 EST/Channel",
-      "bootCompatibility": "通用圆盘适配 4x4、2x4 与 Channel；普通绑带雪鞋",
-      "bindingSizeGuide": "Jones 男款：S 对应雪鞋 US 5–7 / EU 36.5–39.5 / Mondo 23.5–25；M 对应 US 7.5–10 / EU 40–43 / 25.5–28；L 对应 US 10.5+ / EU 43.5+ / 28.5+。女款：S US 5–8.5 / EU 35–39.5 / Mondo 22–25；M US 9–11.5 / EU 40–42.5 / 25.5–27.5。",
-      "terrain": [
-        "all-mountain",
-        "freeride",
-        "freestyle"
-      ],
-      "brandFlexScore10": 7,
-      "brandResortScore10": 9,
-      "brandPowScore10": 9,
-      "brandParkScore10": 8
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "原型号链接已跳转到固定器分类页，未找到 Mercury 2026 的型号级官方尺码表。不得套用 Mercury FASE 或其他型号的尺寸；按实物、原说明书和对应雪鞋试装。",
+      "compatibilitySources": "https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce15-79e6-9ac9-bcbc36c8708c",
@@ -11901,7 +17811,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.26.BNU.MHF.C4-gallery-8.webp?v=1776481535&width=1200",
+    "coverUrl": "https://www.jonessnowboards.com/cdn/shop/files/J.26.BNU.FAA.GN-gallery-1.webp?v=1776481535&width=1946",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11914,43 +17824,53 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "fast-entry",
-      "flex": 7,
       "flexFeel": "medium",
-      "mountingSystem": "Universal Disk；兼容 4x4、2x4 与 EST/Channel",
-      "bootCompatibility": "FASE 官方称兼容各品牌普通雪鞋",
-      "bindingSizeGuide": "Jones Mercury FASE：S 对应雪鞋 US 男/Youth 5–8、女 6.5–9.5 / EU 37.5–41 / Mondo 23–26；M 对应 US 男/Youth 8.5–10.5、女 10–12 / EU 41.5–44 / 26.5–28.5；L 对应 US 男/Youth 11–14、女 12.5–15.5 / EU 44.5–48 / 29–31。",
-      "terrain": [
-        "all-mountain",
-        "freeride",
-        "freestyle"
+      "mountingSystem": "Jones Universal Mounting Disk；兼容 4x4、2x4 与 Burton Channel/EST",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "官方尺码：S 男 US 5–8 / 女 6.5–9.5；M 男 8.5–10.5 / 女 10–12；L 男 11–14 / 女 12.5–15.5",
+      "baseplateMaterial": "Fusion XR 玻纤尼龙复合底盘；三层 TPU/EVA Fusion Pad 缓震层",
+      "ankleStrap": "DualFlex 脚踝带，硬质 TPU 中芯搭配柔软 TPU 边缘",
+      "toeStrap": "Adaptive Fit 脚趾带，柔性外缘贴合鞋头，中心支撑脊与纹理内面锁定雪鞋",
+      "buckles": "高等级铝合金卡扣；脚趾卡扣为 LSR 2.1 Auto-Lock",
+      "highback": "AsymFlex 非对称高背，中偏硬脚感；内侧柔韧、外侧脊柱强化响应",
+      "highbackAdjustment": "免工具双档前倾角调节；高背可折叠前翻",
+      "cushioning": "Fusion Pad 三层 TPU/EVA 吸震；低接触面积底盘保留侧向板面弯曲",
+      "warranty": "FASE 系统终身保修；Jones 其他部件保修按官网保修政策",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding",
+      "sizeChart": [
+        {
+          "size": "Small",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37.5 - 41",
+          "uk": "4 - 7",
+          "mondo": "23.0 - 26.0"
+        },
+        {
+          "size": "Medium",
+          "usMen": "8.5 - 10.5",
+          "usWomen": "10 - 12",
+          "eu": "41.5 - 44",
+          "uk": "7.5 - 9.5",
+          "mondo": "26.5 - 28.5"
+        },
+        {
+          "size": "Large",
+          "usMen": "11 - 14",
+          "usWomen": "12.5 - 15.5",
+          "eu": "44.5 - 48",
+          "uk": "10 - 13",
+          "mondo": "29.0 - 31.0"
+        }
       ],
-      "brandFlexScore10": 7,
-      "brandResortScore10": 10,
-      "brandPowScore10": 10,
-      "brandParkScore10": 6
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "CHF 359.95",
+      "priceMarket": "原币 CHF；来源商店 eu.jonessnowboards.com",
+      "priceSource": "https://eu.jonessnowboards.com/products/mercury-fase-snowboard-binding",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "快速穿脱"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce1e-746f-b8ae-a512e0d7edbc",
@@ -11962,7 +17882,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.26.BNM.ORI.BU-gallery-1.webp?v=1768452354&width=1200",
+    "coverUrl": "https://www.jonessnowboards.com/cdn/shop/files/J.26.BNM.ORI.GN-gallery-1.webp?v=1768452354&width=1946",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -11975,30 +17895,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "mountingSystem": "Universal Disk；兼容 4x4、2x4 与 EST/Channel",
-      "bootCompatibility": "Jones 通用圆盘；普通绑带雪鞋",
-      "bindingSizeGuide": "Jones 男款：S 对应雪鞋 US 5–7 / EU 36.5–39.5 / Mondo 23.5–25；M 对应 US 7.5–10 / EU 40–43 / 25.5–28；L 对应 US 10.5+ / EU 43.5+ / 28.5+。女款：S US 5–8.5 / EU 35–39.5 / Mondo 22–25；M US 9–11.5 / EU 40–42.5 / 25.5–27.5。",
-      "terrain": [
-        "all-mountain",
-        "freeride"
-      ],
-      "brandFlexScore10": 6,
-      "brandResortScore10": 9,
-      "brandPowScore10": 8,
-      "brandParkScore10": 9
+      "flexFeel": "mid-soft",
+      "mountingSystem": "Jones Universal Mounting Disk；兼容 4x4、2x4 与 Burton Channel/EST",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "男款：S US 5–7 / M 7.5–10 / L 10.5+；女款：S US 5–8.5 / M 9–11.5",
+      "baseplateMaterial": "SkateTech Hanger、Kingpin、Post 与可换硬软衬套构成杠杆传力系统",
+      "ankleStrap": "Comfort Flex 3D 脚踝绑带，均匀分压；Flip-It 可切换 Surf/Freeride 模式",
+      "buckles": "ZyTech 纤维复合材料卡扣，搭配不锈钢弹簧与转轴",
+      "highback": "Progressive Flex 非对称高背，中部支撑较硬、顶部更柔韧",
+      "highbackAdjustment": "免工具前倾角调节",
+      "cushioning": "全长 EVA Comfort Foam foot pillow；SkateTech 橡胶衬套吸收振动，硬/软衬套可调响应",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 319.95–379.95",
+      "priceMarket": "原币 USD；来源商店 www.jonessnowboards.com",
+      "priceSource": "https://www.jonessnowboards.com/en-int/products/mens-orion-snowboard-binding-2026",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce29-7f0d-a364-d9771ae03879",
@@ -12010,7 +17925,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/N.26.BNU.KAP.BK-Kaon_Plus_Bio_Black-1.webp?v=1786632652&width=1200",
+    "coverUrl": "https://eu.nidecker.com/cdn/shop/files/N.26.BNU.KAP.BK-Kaon_Plus_Bio_Black-1.webp?v=1786632652&width=1946",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -12024,34 +17939,58 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flexFeel": "mid-stiff",
-      "mountingSystem": "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bootCompatibility": "Multi-Disk 兼容常见 4 孔与 Channel；普通绑带雪鞋",
-      "bindingSizeGuide": "Nidecker 官方商品页尺码：S EU 35–36；M 37–41；L 41.5–44.5；XL 45–49.5。",
-      "terrain": [
-        "all-mountain"
+      "mountingSystem": "Offset Multi-Disk；兼容四孔安装与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "官方 EU 靴码：S 35–36 / M 37–41 / L 41.5–44.5 / XL 45–49.5",
+      "baseplateMaterial": "Nylon+ Axis Kush Unibase（30% 玻纤/70% 尼龙），带固定后跟杯与摇臂边角",
+      "ankleStrap": "Exo-Kush 双层脚踝带：EVA 缓冲层与支撑骨架组合",
+      "toeStrap": "Hexo Toecap 2.0 AuxTech 3D 包角脚趾带，可左右脚互换",
+      "buckles": "Aluminium Axion 铣削铝合金棘轮",
+      "highback": "Nylon Meson Pro 非对称尼龙高背，强化脚跟侧支撑与能量传递",
+      "cushioning": "BankBeds 2.5° 倾斜接触面；底盘摇臂边角帮助保留板面自然弯曲",
+      "warranty": "Nidecker 官方 2+1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://eu.nidecker.com/products/kaon-plus",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
       ],
-      "brandFlexScore": 3,
-      "brandResortScore": 4,
-      "brandPowScore": 4,
-      "brandParkScore": 4
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "CHF 279.95",
+      "priceMarket": "原币 CHF；来源商店 eu.nidecker.com",
+      "priceSource": "https://eu.nidecker.com/products/kaon-plus",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce33-7328-b8af-3d87718dcf67",
@@ -12063,7 +18002,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/N.26.BNU.SPL.C5-LT_Supermatic_Bio_Black-1.webp?v=1786460721&width=1946",
+    "coverUrl": "https://www.nidecker.com/cdn/shop/files/N.26.BNU.SPL.GN-LT_Supermatic_Olive-1.webp?v=1786458347&width=1946",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -12077,35 +18016,59 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "rear-entry",
       "flexFeel": "stiff",
-      "mountingSystem": "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bootCompatibility": "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋",
-      "bindingSizeGuide": "Nidecker 官方商品页尺码：M EU 37.5–41；L 41.5–44；XL 44.5–47。",
-      "terrain": [
-        "all-mountain",
-        "freeride"
+      "mountingSystem": "Nidecker Offset Multi-Disk；兼容四孔安装与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "官方男款 US 码：M 5.5–8 / L 8.5–10.5 / XL 11–13",
+      "baseplateMaterial": "Nylon+ Auto 玻纤增强尼龙底盘（30% 玻纤/70% 尼龙）",
+      "ankleStrap": "Exo-Frame S Hybrid 单件 TPU 低轮廓脚踝带，轻量并便于鞋靴滑入",
+      "toeStrap": "Hexo Toecap 2.0 3D 包角脚趾带，可左右脚互换微调贴合",
+      "buckles": "LSR 2.0 Auto-Lock 双向自动锁止棘轮",
+      "highback": "Nylon+ S Ultraback 玻纤增强尼龙高背（30% 玻纤/70% 尼龙），增加侧向支撑并内置快穿导向筋",
+      "highbackAdjustment": "后仰高背触发 Drop IN 踩入机构与 Active Strap，前倾角调节",
+      "cushioning": "BankBeds 2.5° 倾斜接触面；Slip-N-Grip 降低鞋底滑入摩擦",
+      "warranty": "Nidecker 官方 2+1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nidecker.com/products/lt-supermatic-2026",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "4 - 5.5",
+          "usWomen": "5.5 - 7",
+          "eu": "35.5 - 37.5",
+          "uk": "3 - 4.5",
+          "mondo": "22 - 23.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5.5 - 8",
+          "usWomen": "7 - 9.5",
+          "eu": "37.5 - 41",
+          "uk": "4.5 - 7",
+          "mondo": "23.5 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 10.5",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44",
+          "uk": "7.5 - 9.5",
+          "mondo": "26.5 - 28.5"
+        },
+        {
+          "size": "XL",
+          "usMen": "11 - 13",
+          "eu": "44.5 - 47",
+          "uk": "10 - 12",
+          "mondo": "29 - 31"
+        }
       ],
-      "brandFlexScore": 4,
-      "brandResortScore": 5,
-      "brandPowScore": 4,
-      "brandParkScore": 3
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 479.95",
+      "priceMarket": "原币 USD；来源商店 www.nidecker.com",
+      "priceSource": "https://www.nidecker.com/en-int/products/lt-supermatic-2026",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce3f-721c-9f76-efdbb245281f",
@@ -12117,7 +18080,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0674/9582/1405/files/N.26.BNU.SPM.BN-OG_Supermatic_Desert-1.webp?v=1786464048&width=1200",
+    "coverUrl": "https://eu.nidecker.com/cdn/shop/files/N.26.BNU.SPM.BN-OG_Supermatic_Desert-1.webp?v=1786464048&width=1946",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -12131,35 +18094,59 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "rear-entry",
       "flexFeel": "mid-stiff",
-      "mountingSystem": "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bootCompatibility": "无需专用雪鞋；官方称兼容几乎所有品牌雪鞋",
-      "bindingSizeGuide": "Nidecker 官方商品页尺码：S EU 35.5–37.5；M 37.5–41；L 41.5–44；XL 44.5–47。",
-      "terrain": [
-        "all-mountain",
-        "freeride"
+      "mountingSystem": "Nidecker Offset Multi-Disk；兼容四孔安装与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "官方 EU 码：S 35.5–37.5 / M 37.5–41 / L 41.5–44 / XL 44.5–47",
+      "baseplateMaterial": "Nylon+ Auto 玻纤增强尼龙底盘（30% 玻纤/70% 尼龙），带摇臂边角",
+      "ankleStrap": "Exo-Frame Hybrid AuxTech 框架与 ExoSpines 结构，均匀分散压力",
+      "toeStrap": "Hexo Toecap AuxTech 3D 伸展式脚趾带",
+      "buckles": "LSR 2.0 Auto-Lock 双向自动锁止棘轮",
+      "highback": "Nylon+ Ultraback，玻纤增强尼龙（30% 玻纤/70% 尼龙）",
+      "highbackAdjustment": "一体式前倾角调节；后仰高背可触发 Drop IN 踩入机构与 Active Strap",
+      "cushioning": "BankBeds 2.5° 倾斜接触面；Slip-N-Grip 降低鞋底滑入摩擦",
+      "warranty": "Nidecker 官方 2+1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://eu.nidecker.com/en-int/products/og-supermatic-2026",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "4 - 5.5",
+          "usWomen": "5.5 - 7",
+          "eu": "35.5 - 37.5",
+          "uk": "3 - 4.5",
+          "mondo": "22 - 23.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5.5 - 8",
+          "usWomen": "7 - 9.5",
+          "eu": "37.5 - 41",
+          "uk": "4.5 - 7",
+          "mondo": "23.5 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 10.5",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44",
+          "uk": "7.5 - 9.5",
+          "mondo": "26.5 - 28.5"
+        },
+        {
+          "size": "XL",
+          "usMen": "11 - 13",
+          "eu": "44.5 - 47",
+          "uk": "10 - 12",
+          "mondo": "29 - 31"
+        }
       ],
-      "brandFlexScore": 3,
-      "brandResortScore": 5,
-      "brandPowScore": 3,
-      "brandParkScore": 3
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 399.95",
+      "priceMarket": "原币 EUR；来源商店 eu.nidecker.com",
+      "priceSource": "https://eu.nidecker.com/en-int/products/og-supermatic-2026",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-a99c-7ddb-8c93-daaec3ec49c8",
@@ -12183,35 +18170,60 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "mid-stiff",
-      "mountingSystem": "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bindingSizeGuide": "Nidecker 美国官方商品页男款/Youth 尺码：M US 5–8；L 8.5–11；XL 11.5–15。",
       "terrain": [
         "all-mountain"
       ],
-      "brandFlexScore": 3,
-      "brandResortScore": 4,
+      "flexFeel": "mid-stiff",
+      "entrySystem": "strap",
       "brandPowScore": 3,
-      "brandParkScore": 5
+      "brandFlexScore": 3,
+      "brandParkScore": 5,
+      "mountingSystem": "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker 美国官方商品页男款/Youth 尺码：M US 5–8；L 8.5–11；XL 11.5–15。",
+      "brandResortScore": 4,
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nidecker.com/products/orbit",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 249.95–279.95",
+      "priceMarket": "原币 USD；来源商店 www.nidecker.com",
+      "priceSource": "https://www.nidecker.com/en-int/products/orbit",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-acae-71a8-87af-3348a30300e0",
@@ -12235,28 +18247,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bindingSizeGuide": "Nitro 女款官方尺码：S US 女 4–7.5 / MP 21–24.5 / EU 33.5–38；S/M US 女 6–11 / MP 23–28 / EU 36–43。区间有重叠，试穿确认。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro 女款官方尺码：S US 女 4–7.5 / MP 21–24.5 / EU 33.5–38；S/M US 女 6–11 / MP 23–28 / EU 36–43。区间有重叠，试穿确认。",
       "brandComfortScore": 9,
-      "brandResponseScore": 7
+      "brandResponseScore": 7,
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/fate-womens-bindings-1",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 299.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/fate-womens-bindings-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-afbe-768c-9cbc-4fdb57eb034a",
@@ -12280,28 +18289,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bindingSizeGuide": "Nitro One 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro One 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
       "brandComfortScore": 8,
-      "brandResponseScore": 6
+      "brandResponseScore": 6,
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/one-bindings-1",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 299.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/one-bindings-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-b2c6-74dd-b2ce-163dc89c350b",
@@ -12325,29 +18331,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bootCompatibility": "官方标注适配中宽及偏宽雪鞋；Universal Mini Disc 兼容 2x4 与 Channel",
-      "bindingSizeGuide": "Nitro Phantom 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
       "terrain": [
         "all-mountain",
         "freeride"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro Phantom 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "brandComfortScore": 10,
-      "brandResponseScore": 8
+      "brandResponseScore": 8,
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/phantom-bindings-2",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 399.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/phantom-bindings-2",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce4b-71bf-9c88-5e4533ed1c07",
@@ -12355,11 +18357,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Phantom+ 2027",
     "model": "Phantom+",
     "year": 2027,
-    "oneLiner": "Nitro Phantom+ 高阶 freeride 固定器，列入 26-27 官方目录。",
+    "oneLiner": "高阶自由滑固定器，Air Plus Dampening、HYPER Foam 与 4 mm 后跟抬高强化响应。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11001-101_PhantomPlus-Bindings_Ultra-Black_Product-1.jpg?v=1779339335&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/12BG11001-101_PhantomPlus-Bindings_Ultra-Black_Product-1.jpg?v=1779339335&width=2500",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -12372,28 +18374,23 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bootCompatibility": "普通绑带雪鞋",
-      "bindingSizeGuide": "Nitro Phantom+ 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
-      "terrain": [
-        "all-mountain",
-        "freeride"
-      ],
-      "brandComfortScore": 10,
-      "brandResponseScore": 9
+      "flexFeel": "pro-stiff",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Nitro 男款：M US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 11–14 / MP 29–32 / EU 44–48",
+      "ankleStrap": "Premium Locked Down 脚踝绑带：45° 密度泡棉、纤维增强 3D 支撑骨架",
+      "toeStrap": "Übergrip PRO Integral 3D 脚趾绑带，防滑贴合不同鞋头",
+      "buckles": "Speed Wheel 3.0 卡扣/棘轮；Cable Reinforced Connectors 内置不锈钢线缆加固",
+      "cushioning": "Air Plus Dampening、HYPER Foam、3° 倾斜脚床及 4 mm 后跟抬高",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/cs/collections/all-mens-bindings-26-27/products/phantom-bindings-3?variant=57278273716555",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 439.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/phantom-bindings-3",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-b614-7c53-9ac5-1a51800013c5",
@@ -12417,28 +18414,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bindingSizeGuide": "Nitro Poison 女款官方尺码：S/M 单一尺码，适配 US 女码 6–11 / MP 23–28 / EU 36–43。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro Poison 女款官方尺码：S/M 单一尺码，适配 US 女码 6–11 / MP 23–28 / EU 36–43。",
       "brandComfortScore": 10,
-      "brandResponseScore": 8
+      "brandResponseScore": 8,
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/poison-womens-bindings-1",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 349.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/poison-womens-bindings-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-b93d-7a1e-bbeb-ee3e4f06f98d",
@@ -12462,28 +18456,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bootCompatibility": "Universal Mini Disc 兼容 2x4 与 Channel；适配常规绑带雪鞋",
-      "bindingSizeGuide": "Nitro Rambler 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
       "terrain": [
         "all-mountain"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro Rambler 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "brandComfortScore": 7,
-      "brandResponseScore": 5
+      "brandResponseScore": 5,
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/rambler-bindings-1",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 239.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/rambler-bindings-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-bc6e-7dfb-aaf7-fd7dbf2b1f8c",
@@ -12507,28 +18497,25 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bindingSizeGuide": "Nitro Talent 官方尺码：S US 男 3–6.5、女 3.5–7 / MP 21–24.5 / EU 33.5–38；M 男 7–10.5、女 7.5–11 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14、女 11.5–14.5 / MP 29–32 / EU 44–48。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro Talent 官方尺码：S US 男 3–6.5、女 3.5–7 / MP 21–24.5 / EU 33.5–38；M 男 7–10.5、女 7.5–11 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14、女 11.5–14.5 / MP 29–32 / EU 44–48。",
       "brandComfortScore": 7,
-      "brandResponseScore": 4
+      "brandResponseScore": 4,
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/talent-unisex-bindings-1",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 179.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce57-73cf-a90c-59f75e342ecd",
@@ -12536,11 +18523,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Team 2027",
     "model": "Team",
     "year": 2027,
-    "oneLiner": "Nitro 经典全能绑带系列，26-27 官方目录列出多种颜色版本。",
+    "oneLiner": "支撑型全山地绑带固定器，配 Mini Disc、Air Dampening 与 3° 倾斜脚床。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11005-104_Team-Bindings_Vivid-Orange_Product-1.jpg?v=1779339368&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/12BG11005-104_Team-Bindings_Vivid-Orange_Product-1.jpg?v=1779339368&width=2500",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -12553,28 +18540,23 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bootCompatibility": "普通绑带雪鞋",
-      "bindingSizeGuide": "Nitro Team 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
-      "terrain": [
-        "all-mountain",
-        "freestyle"
-      ],
-      "brandComfortScore": 9,
-      "brandResponseScore": 7
+      "flexFeel": "medium",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Burton Channel，较小盘面有助于保留板面自然弯曲",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Nitro 男款：M US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 11–14 / MP 29–32 / EU 44–48",
+      "ankleStrap": "3D OptiFrame Locked Down 聚氨酯脚踝绑带，强调支撑与响应",
+      "toeStrap": "Übergrip PRO 3D 注塑脚趾绑带，内侧防滑垫，适配不同鞋头",
+      "buckles": "Speed Wheel 3.0 卡扣/棘轮；Cable Reinforced Connectors 内置不锈钢线缆加固梯带",
+      "cushioning": "Air Dampening 后跟缓震；3° 倾斜脚床",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/products/team-bindings-1",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 319.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/team-bindings-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce61-7259-b23e-50f2d6dc6df5",
@@ -12582,11 +18564,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Team Pro 2027",
     "model": "Team Pro",
     "year": 2027,
-    "oneLiner": "Team 系列高阶版本，官方以 Pro-caliber performance 定位。",
+    "oneLiner": "高响应自由式固定器，配 3D OptiPro 脚踝绑带、HYPER Foam 与 Air Dampening。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11003-103_Team-Pro-Bindings_Nitro-x-Markus-Kleveland_Product-1.jpg?v=1779339350&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/12BG11003-103_Team-Pro-Bindings_Nitro-x-Markus-Kleveland_Product-1.jpg?v=1779339350&width=2500",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -12599,28 +18581,23 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bootCompatibility": "普通绑带雪鞋",
-      "bindingSizeGuide": "Nitro Team Pro 官方尺码：S/M US 男 5–10、女 5.5–10.5 / MP 23–28 / EU 36–43；M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14 / MP 29–32 / EU 44–48。官方区间有重叠，试穿确认。",
-      "terrain": [
-        "all-mountain",
-        "freestyle"
-      ],
-      "brandComfortScore": 9,
-      "brandResponseScore": 8
+      "flexFeel": "stiff",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Nitro：S/M 男靴 US 5–10 / 女靴 5.5–10.5 / MP 23–28 / EU 36–43；M 男 US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L 男 US 11–14 / MP 29–32 / EU 44–48",
+      "ankleStrap": "3D OptiPro 双组分聚氨酯脚踝绑带，兼顾响应、舒适与支撑",
+      "toeStrap": "Übergrip PRO 3D 注塑脚趾绑带，防滑贴合不同鞋头",
+      "buckles": "Speed Wheel 3.0 卡扣/棘轮；梯带与棘轮带内置不锈钢线缆加固",
+      "cushioning": "Air Dampening 后跟缓震、HYPER Foam 脚床与 3° 倾斜脚床",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/products/team-pro-bindings-1",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 359.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/team-pro-bindings-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-bf83-71e6-936d-dfed4425a949",
@@ -12644,31 +18621,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
       "flex": 6,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
       "terrain": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "entrySystem": "strap",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 349.95",
+      "priceMarket": "原币 USD；来源商店 romesnowboards.com",
+      "priceSource": "https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "6"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-c28d-7b08-86e2-3225eabf8876",
@@ -12692,31 +18688,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
       "flex": 7,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
       "terrain": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "entrySystem": "strap",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://us.romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 369.95",
+      "priceMarket": "原币 USD；来源商店 romesnowboards.com",
+      "priceSource": "https://romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-c598-74ec-899b-7f3b763005f6",
@@ -12740,31 +18755,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
       "flex": 6,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
       "terrain": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "entrySystem": "strap",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://romesnowboards.com/products/rome-brass-aw-2627-womens-snowboard-binding",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 349.95",
+      "priceMarket": "原币 USD；来源商店 romesnowboards.com",
+      "priceSource": "https://romesnowboards.com/products/rome-brass-aw-2627-womens-snowboard-binding",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "6"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-c954-7180-a68f-19261e8c9565",
@@ -12788,31 +18822,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
       "flex": 8,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
       "terrain": [
         "all-mountain",
         "freeride"
-      ]
+      ],
+      "entrySystem": "strap",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 399.95",
+      "priceMarket": "原币 USD；来源商店 romesnowboards.com",
+      "priceSource": "https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "8"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-cca4-72a8-abbc-1ba75250c380",
@@ -12836,31 +18889,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "fast-entry",
       "flex": 8,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
       "terrain": [
         "all-mountain",
         "freeride"
-      ]
+      ],
+      "entrySystem": "fast-entry",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://romesnowboards.com/products/katana-asymwrap-fase-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 429.95",
+      "priceMarket": "原币 USD；来源商店 romesnowboards.com",
+      "priceSource": "https://romesnowboards.com/products/katana-asymwrap-fase-snowboard-bindings",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "快速穿脱"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "8"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-cfdc-7ffb-ac52-83ba86693f7c",
@@ -12884,31 +18956,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "fast-entry",
       "flex": 9,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
       "terrain": [
         "all-mountain",
         "freeride"
-      ]
+      ],
+      "entrySystem": "fast-entry",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://romesnowboards.com/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 449.95",
+      "priceMarket": "原币 USD；来源商店 romesnowboards.com",
+      "priceSource": "https://romesnowboards.com/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "快速穿脱"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "9"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-d2e8-7f48-830f-325d83098a2c",
@@ -12932,31 +19023,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
       "flex": 9,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
       "terrain": [
         "all-mountain",
         "freeride"
-      ]
+      ],
+      "entrySystem": "strap",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://romesnowboards.com/products/rome-katana-fw-pro-2627-mens-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 469.95",
+      "priceMarket": "原币 USD；来源商店 romesnowboards.com",
+      "priceSource": "https://romesnowboards.com/products/rome-katana-fw-pro-2627-mens-snowboard-bindings",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "9"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-d619-79c1-a800-9c0d8cb1bf68",
@@ -12980,31 +19090,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "fast-entry",
       "flex": 5,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
       "terrain": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "entrySystem": "fast-entry",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5.5 - 8",
+          "usWomen": "7 - 9.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 26",
+          "notes": "官网实色范围；淡入/星号边界 US 男 5 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M",
+          "usMen": "7.5 - 10.5",
+          "usWomen": "9 - 12",
+          "eu": "40 - 44",
+          "mondo": "25.5 - 28.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L",
+          "usMen": "10.5 - 13",
+          "usWomen": "12 - 14.5",
+          "eu": "44 - 47",
+          "mondo": "28.5 - 31",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5.5 - 8 / US 女 7 - 9.5 / EU 37 - 40.5；M: US 男 7.5 - 10.5 / US 女 9 - 12 / EU 40 - 44；L: US 男 10.5 - 13 / US 女 12 - 14.5 / EU 44 - 47。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 329.95",
+      "priceMarket": "原币 USD；来源商店 romesnowboards.com",
+      "priceSource": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "快速穿脱"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "5"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-d922-7681-b821-bb70ae698b42",
@@ -13028,33 +19157,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "medium",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bootCompatibility": "官网标注 Universal disc，适配市场常见雪板安装系统；普通绑带雪鞋",
-      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
       "terrain": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "flexFeel": "medium",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/district-li1289",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 299.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/district-li1289",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-dc31-7ffc-9890-ec8f20c65c7a",
@@ -13078,32 +19198,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "stiff",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
       "terrain": [
         "all-mountain",
         "freeride"
-      ]
+      ],
+      "flexFeel": "stiff",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/district-pro-li1290",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 319.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/district-pro-li1290",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-df66-7111-ac33-2c25b3751cf8",
@@ -13127,25 +19239,19 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "terrain": [
+        "all-mountain"
+      ],
       "entrySystem": "strap",
       "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
       "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
-      "terrain": [
-        "all-mountain"
-      ]
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/c/men/winter-equipment/snowboard/bindings",
+      "priceCheckedAt": "2026-10-12",
+      "priceStatus": "未取得本型号可核查的官方挂牌价；价格待补充。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-e27b-71be-b57a-ffc39b5fbe98",
@@ -13169,31 +19275,23 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "stiff",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
       "terrain": [
         "all-mountain"
-      ]
+      ],
+      "flexFeel": "stiff",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/edb-prime-li8710",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 279.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/edb-prime-li8710",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-e5a1-7235-bd4a-b4fc1f4ff1dc",
@@ -13217,32 +19315,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "stiff",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
       "terrain": [
         "all-mountain",
         "freeride"
-      ]
+      ],
+      "flexFeel": "stiff",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/highlander-li8702",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 379.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/highlander-li8702",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-e8ba-7bc1-8703-eadd0bda840e",
@@ -13266,32 +19356,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "medium",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
       "terrain": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "flexFeel": "medium",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/hologram-li5326",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 359.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/hologram-li5326",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-ebcb-778d-885c-6ae2da03f95a",
@@ -13315,32 +19397,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "soft",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
       "terrain": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "flexFeel": "soft",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/pact-li6862",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 159.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/pact-li6862",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "柔软"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0e5dc-eee2-75b7-a627-b05a381ff0dd",
@@ -13364,33 +19438,24 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "soft",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bootCompatibility": "官网标注 Universal disc，适配市场常见雪板安装系统；普通绑带雪鞋",
-      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
       "terrain": [
         "all-mountain",
         "freestyle"
-      ]
+      ],
+      "flexFeel": "soft",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/rhythm-li3345",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 189.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/rhythm-li3345",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "柔软"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce6b-79a5-90d3-ceba1bf92897",
@@ -13402,7 +19467,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_BLACK_2000x.jpg?v=1785333183",
+    "coverUrl": "https://unionbindingcompany.com/cdn/shop/files/UN26_ATLAS_BLACK_1024x.jpg?v=1785333183",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13416,31 +19481,59 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 8,
-      "mountingSystem": "Camber Disk + Washer；4x4、4x2 与 Channel",
-      "bootCompatibility": "适配常见 4x4、4x2 与 Channel 安装；普通绑带雪鞋",
-      "bindingSizeGuide": "Union 男款/Unisex 尺码参考：S 对应雪鞋 US 男码 6–8 / Mondo 240–260；M 对应 8.5–10.5 / 265–285；L 对应 11–13 / 290–310；XL 对应 14–15 / 320–330。最终按具体雪鞋外长与官方尺码表确认。",
-      "terrain": [
-        "all-mountain",
-        "freeride"
-      ]
+      "flexFeel": "stiff",
+      "mountingSystem": "Camber Disk + Washer；兼容 4x4、4x2 与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Union 官方表：男靴 S US 5.5–7.5 / M 8–10 / L 10.5–13；女靴 S 4.5–6.5 / M 7–9；具体按官方尺码表核对",
+      "baseplateMaterial": "S7 Duraflex CB 碳纤维注入尼龙底盘；Vaporlite HD 2.0 防水减震衬套；3D 挤压铝后跟杯",
+      "ankleStrap": "Exoframe 5.0 三轴渐进弯曲脚踝绑带",
+      "toeStrap": "TS 6.0 Dual-Layer UltraGrip 双层防滑脚趾绑带",
+      "buckles": "Magnesium S1 镁合金棘轮扣，钢制底座",
+      "highback": "S22 Duraflex CB 高背",
+      "highbackAdjustment": "Cam-Lock FLAD 前倾调节；Pins + Quick-Lock 免工具绑带调节",
+      "cushioning": "Non-Stick HP EVA 防积雪脚床；Vaporlite HD 2.0 衬套；3° Canting",
+      "warranty": "底盘与后跟杯终身保修；其他部件 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "10.5 - 13",
+          "uk": "9.5 - 12",
+          "eu": "43.5 - 46",
+          "mondo": "28.5 - 31"
+        },
+        {
+          "size": "X-LARGE",
+          "usMen": "13 - 15",
+          "uk": "12 - 14",
+          "eu": "46 - 48",
+          "mondo": "31 - 33"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 399.95",
+      "priceMarket": "原币 USD；来源商店 unionbindingcompany.com",
+      "priceSource": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "8"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce7a-7505-a741-42c3d15cf78a",
@@ -13452,7 +19545,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ATLAS_PRO_BLACK_2000x.jpg?v=1785333161",
+    "coverUrl": "https://unionbindingcompany.com/cdn/shop/files/UN26_ATLAS_PRO_STONE_1024x.jpg?v=1785333161",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13465,32 +19558,59 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "flex": 9,
-      "mountingSystem": "Camber Disk + Washer；4x4、4x2 与 Channel",
-      "bootCompatibility": "官方列出 4x4、4x2 与 Channel 安装；普通绑带雪鞋",
-      "bindingSizeGuide": "Union 男款/Unisex 尺码参考：S 对应雪鞋 US 男码 6–8 / Mondo 240–260；M 对应 8.5–10.5 / 265–285；L 对应 11–13 / 290–310；XL 对应 14–15 / 320–330。最终按具体雪鞋外长与官方尺码表确认。",
-      "terrain": [
-        "all-mountain",
-        "freeride"
-      ]
+      "flexFeel": "pro-stiff",
+      "mountingSystem": "Camber Disk + Washer；兼容 4x4、4x2 与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Union 官方尺码表：男靴 S US 6–8 / M 8.5–10.5 / L 11–13；女靴 S 5–6 / M 6.5–8.5 / L 9–11",
+      "baseplateMaterial": "S7 Duraflex CB 碳纤维注入尼龙底盘；Vaporlite HD 2.0 防水减震衬套",
+      "ankleStrap": "Hybrid 2.0 TPE Core，V 型结构随鞋靴弯曲并兼顾支撑舒适",
+      "toeStrap": "TS 6.0 Dual-Layer UltraGrip 双层防滑脚趾绑带",
+      "buckles": "Magnesium S1 镁合金卡扣，铝合金底座",
+      "highback": "S14 Duraflex CB 碳纤维注入尼龙高背",
+      "highbackAdjustment": "Integrated Dial 一体式前倾角调节",
+      "cushioning": "Vaporlite HD 2.0 衬套、Forged Carbon 锻造碳踏板与 Non-Stick EVA；3° Canting",
+      "warranty": "底盘与后跟杯终身保修；其余部件 2 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "10.5 - 13",
+          "uk": "9.5 - 12",
+          "eu": "43.5 - 46",
+          "mondo": "28.5 - 31"
+        },
+        {
+          "size": "X-LARGE",
+          "usMen": "13 - 15",
+          "uk": "12 - 14",
+          "eu": "46 - 48",
+          "mondo": "31 - 33"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 499.95",
+      "priceMarket": "原币 USD；来源商店 unionbindingcompany.com",
+      "priceSource": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "9"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce83-765f-8c76-9ec51b0524fd",
@@ -13502,7 +19622,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_FORCE_BLACK_2000x.jpg?v=1785333204",
+    "coverUrl": "https://unionbindingcompany.com/cdn/shop/files/UN26_FORCE_BLACK_1024x.jpg?v=1785333204",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13516,32 +19636,59 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 7,
-      "mountingSystem": "Camber Disk；4x4、4x2 与 Channel",
-      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋",
-      "bindingSizeGuide": "Union 男款尺码参考：S 对应雪鞋 US 男码 6–8 / Mondo 240–260；M 对应 8.5–10.5 / 265–285；L 对应 11–13 / 290–310；XL 对应 14–15 / 320–330。最终按具体雪鞋外长与官方尺码表确认。",
-      "terrain": [
-        "all-mountain",
-        "freeride",
-        "freestyle"
-      ]
+      "flexFeel": "stiff",
+      "mountingSystem": "Camber Disk；兼容 4x4、4x2 与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Union 官方男靴尺码：S US 5.5–7.5 / M 8–10 / L 10.5–13 / XL 13–15",
+      "baseplateMaterial": "S9 Duraflex ST 底盘；Molecular Bushing Suspension System 缓震衬套；3D 挤压铝后跟杯",
+      "ankleStrap": "Exoframe 6.0 PU 芯脚踝绑带，兼顾贴合与缓冲",
+      "toeStrap": "TS 5.0 UltraGrip 多位置防滑脚趾绑带",
+      "buckles": "Magnesium S2 镁合金棘轮扣，钢制底座",
+      "highback": "S19 Duraflex ST 分层结构高背",
+      "highbackAdjustment": "Cam-Lock FLAD 前倾调节；EXO Quick-Lock 免工具绑带调节",
+      "cushioning": "Non-Stick HP EVA 防积雪脚床；Molecular Bushing Suspension System；3° Canting",
+      "warranty": "底盘与后跟杯终身保修；其他部件 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "10.5 - 13",
+          "uk": "9.5 - 12",
+          "eu": "43.5 - 46",
+          "mondo": "28.5 - 31"
+        },
+        {
+          "size": "X-LARGE",
+          "usMen": "13 - 15",
+          "uk": "12 - 14",
+          "eu": "46 - 48",
+          "mondo": "31 - 33"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 349.95",
+      "priceMarket": "原币 USD；来源商店 unionbindingcompany.com",
+      "priceSource": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce8d-76d5-bcbf-e4e6af517ae8",
@@ -13553,7 +19700,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_FORCE_CLASSIC_BLACK_2000x.jpg?v=1785333201",
+    "coverUrl": "https://unionbindingcompany.com/cdn/shop/files/UN26_FORCE_CLASSIC_BLACK_1024x.jpg?v=1785333201",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13567,32 +19714,59 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "flex": 6,
-      "mountingSystem": "Camber Disk；4x4、4x2 与 Channel",
-      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋",
-      "bindingSizeGuide": "Union 男款尺码参考：S 对应雪鞋 US 男码 6–8 / Mondo 240–260；M 对应 8.5–10.5 / 265–285；L 对应 11–13 / 290–310；XL 对应 14–15 / 320–330。最终按具体雪鞋外长与官方尺码表确认。",
-      "terrain": [
-        "all-mountain",
-        "freeride",
-        "freestyle"
-      ]
+      "flexFeel": "medium",
+      "mountingSystem": "Camber Disk；兼容 4x4、4x2 与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Union 官方男靴尺码：S US 5.5–7.5 / M 8–10 / L 10.5–13；官方页面当前列出 S、M、L",
+      "baseplateMaterial": "S4 Duraflex ST 底盘；Multi-Density Thermoformed EVA 缓震衬套；3D 挤压铝后跟杯",
+      "ankleStrap": "Exoframe 4.0 轻量脚踝绑带",
+      "toeStrap": "TS 2.1 UltraGrip 多位置防滑脚趾绑带，适配不同品牌雪鞋",
+      "buckles": "Aluminum S2 铝合金棘轮扣，钢制底座",
+      "highback": "S1 Duraflex ST 高背",
+      "highbackAdjustment": "Cam-Lock FLAD 前倾调节；EXO Quick-Lock 免工具绑带调节",
+      "cushioning": "Multi-Density Thermoformed EVA 缓震；3° Canting",
+      "warranty": "底盘与后跟杯终身保修；其他部件 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "10.5 - 13",
+          "uk": "9.5 - 12",
+          "eu": "43.5 - 46",
+          "mondo": "28.5 - 31"
+        },
+        {
+          "size": "X-LARGE",
+          "usMen": "13 - 15",
+          "uk": "12 - 14",
+          "eu": "46 - 48",
+          "mondo": "31 - 33"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 249.95",
+      "priceMarket": "原币 USD；来源商店 unionbindingcompany.com",
+      "priceSource": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "6"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-ce96-75b3-b41b-f3751624d68b",
@@ -13604,7 +19778,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_LEGACY_BLACK_2000x.jpg?v=1785333238",
+    "coverUrl": "https://unionbindingcompany.com/cdn/shop/files/UN26_LEGACY_BLACK_1024x.jpg?v=1785333238",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13617,32 +19791,53 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "flex": 5,
-      "mountingSystem": "Union Mini Disk；兼容常见 4 孔系统",
-      "bootCompatibility": "Union Mini Disk；适配普通绑带雪鞋",
-      "bindingSizeGuide": "Union 女款尺码参考：S 对应雪鞋 US 女码 5–6 / Mondo 220–230；M 对应 6.5–8.5 / 235–255；L 对应 9–11 / 260–280。最终按具体雪鞋外长与官方尺码表确认。",
-      "terrain": [
-        "all-mountain",
-        "freestyle"
-      ]
+      "flexFeel": "soft",
+      "mountingSystem": "Union Mini Disk；兼容 4x2 与 Burton Channel；不兼容 4x4 圆盘安装",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表",
+      "baseplateMaterial": "S6 Duraflex ST；中等偏软自由式底盘，提供较自然的板面弯曲",
+      "ankleStrap": "Forma Hybrid Memory Core，外侧响应、内侧带缓冲舒适衬垫",
+      "toeStrap": "TS 2.1 UltraGrip，多位置安装，可适配不同品牌雪鞋",
+      "buckles": "Aluminum S2 铝合金卡扣，钢制底座",
+      "highback": "S10 Duraflex ST",
+      "highbackAdjustment": "Classic 前倾调节，需使用 3 号螺丝刀",
+      "cushioning": "OTE Fused Vaporlite 2.0 缓震衬套；Mini Disk 结构保留板面自然弯曲",
+      "warranty": "底盘与后跟杯终身保修；其余部件 1 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 Mini Disk 支持 2x4 与 Channel，不支持 4x4 或旧 3D；不能套用 Universal Disk V2 的兼容范围。",
+      "compatibilitySources": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "* - 5.5",
+          "usWomen": "4 - 6.5",
+          "uk": "2 - 4.5",
+          "eu": "34 - 37",
+          "mondo": "21 - 23.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "CAD 349.95",
+      "priceMarket": "原币 CAD；来源商店 unionbindingcompany.com",
+      "priceSource": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "5"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cea0-7a4b-ac61-0c8030b4bd43",
@@ -13654,7 +19849,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0656/0251/9280/files/UN26_TRILOGY_BLACK_2000x.jpg?v=1782986724",
+    "coverUrl": "https://unionbindingcompany.com/cdn/shop/files/UN26_TRILOGY_BLACK_1024x.jpg?v=1785333206",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13667,32 +19862,53 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "flex": 7,
-      "mountingSystem": "Camber Disk；4x4、4x2 与 Channel",
-      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋",
-      "bindingSizeGuide": "Union 女款尺码参考：S 对应雪鞋 US 女码 5–6 / Mondo 220–230；M 对应 6.5–8.5 / 235–255；L 对应 9–11 / 260–280。最终按具体雪鞋外长与官方尺码表确认。",
-      "terrain": [
-        "all-mountain",
-        "freestyle"
-      ]
+      "flexFeel": "mid-stiff",
+      "mountingSystem": "Camber Disk；兼容 4x4、4x2 与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表",
+      "baseplateMaterial": "S9 Duraflex ST 高强度底盘；Molecular Bushing Suspension System",
+      "ankleStrap": "Exoframe 6.0 PU Core，缓冲舒适与快速响应结合",
+      "toeStrap": "TS 5.0 UltraGrip，多位置安装、防滑热塑材料",
+      "buckles": "Magnesium S2 镁合金卡扣，钢制底座",
+      "highback": "S19 Duraflex ST 分层高背，兼顾边刃响应与扭转柔韧",
+      "highbackAdjustment": "Cam-Lock 前倾角调节",
+      "cushioning": "Molecular Bushing 悬挂衬套用于减震与吸收冲击",
+      "warranty": "底盘与后跟杯终身保修；其余部件 2 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "* - 5.5",
+          "usWomen": "4 - 6.5",
+          "uk": "2 - 4.5",
+          "eu": "34 - 37",
+          "mondo": "21 - 23.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "JPY 46200",
+      "priceMarket": "原币 JPY；来源商店 jp.unionbindingcompany.com",
+      "priceSource": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d171-cea9-7a46-9fa5-d612638ee6b3",
@@ -13704,7 +19920,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0095/2254/4745/files/UN26_ULTRA_WOMEN_BLUE_2000x.jpg?v=1785333221",
+    "coverUrl": "https://jp.unionbindingcompany.com/cdn/shop/files/UN26_ULTRA_WOMEN_WHITE_FRONT_1024x.jpg?v=1782986738",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13717,32 +19933,53 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "categorySlug": "snowboard-binding",
     "specs": {
       "entrySystem": "strap",
-      "flex": 6,
-      "mountingSystem": "Union Mini Disk；兼容常见 4 孔系统",
-      "bootCompatibility": "Union 标准安装圆盘；适配普通绑带雪鞋",
-      "bindingSizeGuide": "Union 女款尺码参考：S 对应雪鞋 US 女码 5–6 / Mondo 220–230；M 对应 6.5–8.5 / 235–255；L 对应 9–11 / 260–280。最终按具体雪鞋外长与官方尺码表确认。",
-      "terrain": [
-        "all-mountain",
-        "freestyle"
-      ]
+      "flexFeel": "medium",
+      "mountingSystem": "非对称 Mini Disk；兼容 4x2 与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表",
+      "baseplateMaterial": "S11 Duraflex ST 非对称 Mini Disk 底盘；Moleculer 衬套与 TPE 外底",
+      "ankleStrap": "Hybrid 1.0 PU Core，Exoframe 外层搭配柔软舒适内衬",
+      "toeStrap": "TS 5.0 UltraGrip，多位置调节、防滑热塑材料",
+      "buckles": "Magnesium S1 镁合金卡扣，钢制底座",
+      "highback": "S25 Ultra Duraflex ST，预压 6° 前倾",
+      "highbackAdjustment": "Integrated 2-Stage 前倾角微调，使用 3 号螺丝刀",
+      "cushioning": "Moleculer 衬套与 TPE 外底提供缓震和回弹；Union 标注固定器硬度 6/10",
+      "warranty": "底盘与后跟杯终身保修；其余部件 2 年保修",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 Mini Disk 支持 2x4 与 Channel，不支持 4x4 或旧 3D；不能套用 Universal Disk V2 的兼容范围。",
+      "compatibilitySources": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "* - 5.5",
+          "usWomen": "4 - 6.5",
+          "uk": "2 - 4.5",
+          "eu": "34 - 37",
+          "mondo": "21 - 23.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        }
+      ],
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 329.95",
+      "priceMarket": "原币 USD；来源商店 unionbindingcompany.com",
+      "priceSource": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "6"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-83d0-740a-a5b3-61d31d44d020",
@@ -13754,7 +19991,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1857913AH2_1.webp?v=1778423456&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/1857913AH2_1.webp?v=1778423456&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13766,15 +20003,149 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "双区高功率 BOA"
+      "lacingSystem": "Dual Zone High Power Focus BOA：上下双区独立调节",
+      "flex": "硬朗支撑（Burton 官方标注 Stiff & Aggressive）",
+      "fit": "Regular 常规宽度",
+      "liner": "Life Liner",
+      "innerCuff": "Tuff Cuff Lite",
+      "outsole": "Autocant 外底；Burton 再生含量橡胶",
+      "warmthFeatures": "DRYRIDE Heat Cycle 内衬",
+      "sizeGuide": "官方男款尺码表覆盖 US 6–15、EU 38–48、UK 5–14、Mondo 24–33；半码对应以商品页逐码表为准",
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "sizeChart": [
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "39",
+          "uk": "5.5",
+          "mondo": "24.5"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "40",
+          "uk": "6",
+          "mondo": "25"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40.5",
+          "uk": "6.5",
+          "mondo": "25.5"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "41",
+          "uk": "7",
+          "mondo": "26"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "eu": "45",
+          "uk": "11",
+          "mondo": "30"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "eu": "46",
+          "uk": "12",
+          "mondo": "31"
+        },
+        {
+          "size": "US 男 14",
+          "usMen": "14",
+          "eu": "47",
+          "uk": "13",
+          "mondo": "32"
+        },
+        {
+          "size": "US 男 15",
+          "usMen": "15",
+          "eu": "48",
+          "uk": "14",
+          "mondo": "33"
+        }
+      ],
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791；https://www.burton.com/en-us/pages/size-charts",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 689.95",
+      "priceMarket": "原币 USD；来源商店 www.burton.com",
+      "priceSource": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "双区高功率 BOA"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-840a-7e13-80b4-7f16a5a87b2c",
@@ -13786,7 +20157,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/2031910A02_1.webp?v=1779495951&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13798,15 +20169,149 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "Speed Zone + BOA 压紧带"
+      "lacingSystem": "Speed Zone 快速系带 + BOA 可调压紧带",
+      "flex": "硬朗（Burton 官方标注 Stiff & Aggressive）",
+      "fit": "Regular/Wide 宽度可选",
+      "liner": "Life Liner",
+      "innerCuff": "Tuff Cuff Lite",
+      "outsole": "Vibram Traction Lug 外底，Vibram EcoStep 橡胶；Step On 前掌连接卡齿",
+      "warmthFeatures": "Sleeping Bag 反射隔热膜",
+      "sizeGuide": "官方男款尺码表覆盖 US 6–15、EU 38–48、UK 5–14、Mondo 24–33；当前页面尺码范围 US 7–13，半码对应以商品页逐码表为准",
+      "bindingCompatibility": "认证 Step On 专用雪鞋；仅按对应性别系列和尺码配 Step On 固定器，不能作为普通绑带雪鞋使用。",
+      "sizeChart": [
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "39",
+          "uk": "5.5",
+          "mondo": "24.5"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "40",
+          "uk": "6",
+          "mondo": "25"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40.5",
+          "uk": "6.5",
+          "mondo": "25.5"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "41",
+          "uk": "7",
+          "mondo": "26"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "eu": "45",
+          "uk": "11",
+          "mondo": "30"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "eu": "46",
+          "uk": "12",
+          "mondo": "31"
+        },
+        {
+          "size": "US 男 14",
+          "usMen": "14",
+          "eu": "47",
+          "uk": "13",
+          "mondo": "32"
+        },
+        {
+          "size": "US 男 15",
+          "usMen": "15",
+          "eu": "48",
+          "uk": "14",
+          "mondo": "33"
+        }
+      ],
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Step On 还需核对固定器男/女/儿童系列，普通绑带固定器不能仅因鞋码相同而替代。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 Wide 应与该品牌同型号标准版比较，不能视为跨品牌统一宽度。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191；https://www.burton.com/en-us/pages/size-charts",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 619.95",
+      "priceMarket": "原币 USD；来源商店 www.burton.com",
+      "priceSource": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "Speed Zone + BOA 压紧带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-841a-7249-b23d-b56b5e5dec09",
@@ -13818,7 +20323,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1317614E7M_1.webp?v=1783620135&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/1317614E7M_1.webp?v=1783620135&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13830,15 +20335,149 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "单 BOA 旋钮"
+      "lacingSystem": "Single Zone BOA：单旋钮系带",
+      "flex": "柔软、容错取向（Burton 官方描述）",
+      "fit": "Regular 常规楦与 Wide 宽楦可选",
+      "terrain": "官方定位全地形与公园滑行",
+      "liner": "Imprint 1+ Liner",
+      "innerCuff": "Integrated Lacing 一体式内靴系带",
+      "outsole": "DynoLITE 外底，轻量缓震结构",
+      "sizeGuide": "官方男款尺码表覆盖 US 6–15、EU 38–48、UK 5–14、Mondo 24–33；半码对应以商品页逐码表为准",
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "sizeChart": [
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "39",
+          "uk": "5.5",
+          "mondo": "24.5"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "40",
+          "uk": "6",
+          "mondo": "25"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40.5",
+          "uk": "6.5",
+          "mondo": "25.5"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "41",
+          "uk": "7",
+          "mondo": "26"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "eu": "45",
+          "uk": "11",
+          "mondo": "30"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "eu": "46",
+          "uk": "12",
+          "mondo": "31"
+        },
+        {
+          "size": "US 男 14",
+          "usMen": "14",
+          "eu": "47",
+          "uk": "13",
+          "mondo": "32"
+        },
+        {
+          "size": "US 男 15",
+          "usMen": "15",
+          "eu": "48",
+          "uk": "14",
+          "mondo": "33"
+        }
+      ],
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 Wide 应与该品牌同型号标准版比较，不能视为跨品牌统一宽度。",
+      "heatMolding": "官方当前页有热塑鞋胆的通用技术介绍，但本轮未核实该介绍是否对应本款所配鞋胆；具体型号、温度与流程须由专业店按品牌说明确认。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761；https://www.burton.com/en-us/pages/size-charts",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 279.95",
+      "priceMarket": "原币 USD；来源商店 www.burton.com",
+      "priceSource": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "单 BOA 旋钮"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8427-7e42-a2db-502d0d990f85",
@@ -13850,7 +20489,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1508613AUA_1.webp?v=1783620155&width=1920",
+    "coverUrl": "https://www.burton.com/cdn/shop/files/1508619AUA_1.webp?v=1790184461&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13862,15 +20501,149 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "双区 BOA"
+      "lacingSystem": "Dual Zone BOA Lockdown：双区调节并加强脚跟锁定",
+      "flex": "中等脚感（Burton 官方标注 Happy Medium）",
+      "fit": "Regular/Wide 宽度可选",
+      "liner": "Imprint 3 Liner",
+      "innerCuff": "Focus Cuff",
+      "outsole": "Vibram Traction Lug 外底，Vibram EcoStep 橡胶",
+      "warmthFeatures": "DRYRIDE Heat Cycle 内衬；反射隔热膜",
+      "sizeGuide": "官方男款尺码表覆盖 US 6–15、EU 38–48、UK 5–14、Mondo 24–33；半码对应以商品页逐码表为准",
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "sizeChart": [
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "39",
+          "uk": "5.5",
+          "mondo": "24.5"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "40",
+          "uk": "6",
+          "mondo": "25"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40.5",
+          "uk": "6.5",
+          "mondo": "25.5"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "41",
+          "uk": "7",
+          "mondo": "26"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "eu": "45",
+          "uk": "11",
+          "mondo": "30"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "eu": "46",
+          "uk": "12",
+          "mondo": "31"
+        },
+        {
+          "size": "US 男 14",
+          "usMen": "14",
+          "eu": "47",
+          "uk": "13",
+          "mondo": "32"
+        },
+        {
+          "size": "US 男 15",
+          "usMen": "15",
+          "eu": "48",
+          "uk": "14",
+          "mondo": "33"
+        }
+      ],
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 Wide 应与该品牌同型号标准版比较，不能视为跨品牌统一宽度。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861；https://www.burton.com/en-us/pages/size-charts",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 479.95",
+      "priceMarket": "原币 USD；来源商店 www.burton.com",
+      "priceSource": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "双区 BOA"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8432-7edc-90d4-ada1b7303a79",
@@ -13882,7 +20655,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.media.amplience.net/i/k2/k2_2627_boundary_brown_KB261666_1?w=1200&qlt=90&fmt=auto",
+    "coverUrl": "https://cdn11.bigcommerce.com/s-cppgporhzh/product_images/attribute_rule_images/11009118_source_1780343025.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13894,15 +20667,173 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "BOA 系带"
+      "lacingSystem": "双区 Zonal BOA Fit System（H5 与 M+2 旋钮，分别调节鞋面上下区域）",
+      "flex": "官方页面仅以 Playful–Precise 视觉轴展示脚感，未给出单一硬度值",
+      "fit": "Intuition Control Foam 3D 热塑鞋胆，3 点内靴束带及内外 J-Bar 辅助跟部贴合",
+      "terrain": "Freeride、Big Mountain、Freestyle、Powder（K2 官方列出的用途）",
+      "liner": "Intuition Control Foam 3D 热塑鞋胆",
+      "innerCuff": "3 点束带与内外 J-Bar；独立活动式鞋口",
+      "outsole": "This Grips! 橡胶外底，EVA 双密度中底与 Harshmellow 减震",
+      "footbed": "Harshmellow Insole；鞋底另含 EVA 双密度中底与 Harshmellow 减震材料",
+      "sizeGuide": "官方男款当前可选 US 7–13；K2 官方换算表覆盖 US 5–15、EU 36.5–50、CM 23–33，具体换算按商品页尺码表",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "uk": "4",
+          "eu": "36.5",
+          "mondo": "23"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "uk": "4.5",
+          "eu": "37",
+          "mondo": "23.5"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "uk": "5",
+          "eu": "38",
+          "mondo": "24"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "uk": "5.5",
+          "eu": "39",
+          "mondo": "24.5"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "uk": "6",
+          "eu": "39.5",
+          "mondo": "25"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "uk": "6.5",
+          "eu": "40",
+          "mondo": "25.5"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "uk": "7",
+          "eu": "40.5",
+          "mondo": "26"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "uk": "7.5",
+          "eu": "41.5",
+          "mondo": "26.5"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "uk": "8",
+          "eu": "42",
+          "mondo": "27"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "uk": "8.5",
+          "eu": "42.5",
+          "mondo": "27.5"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "uk": "9",
+          "eu": "43.5",
+          "mondo": "28"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "uk": "9.5",
+          "eu": "44",
+          "mondo": "28.5"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44.5",
+          "mondo": "29"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "45",
+          "mondo": "29.5"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "46",
+          "mondo": "30"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "47",
+          "mondo": "30.5"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "48",
+          "mondo": "31"
+        },
+        {
+          "size": "US 男 14",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "49",
+          "mondo": "32"
+        },
+        {
+          "size": "US 男 15",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "50",
+          "mondo": "33"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://k2snow.com/en-us/p/boundary-mens-snowboard-boot-kb261666?color=brown",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 349.95",
+      "priceMarket": "原币 USD；来源商店 k2snow.com",
+      "priceSource": "https://k2snow.com/en-cn/p/boundary-mens-snowboard-boot-kb261666",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "BOA 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-843b-71b5-b1c9-cdc9c47112d1",
@@ -13910,11 +20841,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "K2 Maysis 2027",
     "model": "Maysis",
     "year": 2027,
-    "oneLiner": "官方档案型号；单 BOA 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "采用双区 BOA 与 Conda 脚跟固定系统，搭配热塑 Intuition 鞋胆。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.media.amplience.net/i/k2/k2_2627_maysis_black_KB261665_1?w=1200&qlt=90&fmt=auto",
+    "coverUrl": "https://cdn11.bigcommerce.com/s-cppgporhzh/product_images/attribute_rule_images/11009064_source_1780342998.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13926,15 +20857,174 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "单 BOA 系带"
+      "lacingSystem": "双区 Zonal BOA（H5 与 M+2 旋钮）+ Conda 内靴 BOA 脚跟束带",
+      "flex": "官方页面仅以 Playful–Precise 视觉轴展示脚感，未给出单一硬度值",
+      "fit": "Conda 束带收紧脚跟；内外 J-Bar 减少脚跟抬起；Intuition Control Foam 3D 热塑鞋胆",
+      "terrain": "Freeride、Big Mountain、Freestyle、Powder（K2 官方列出的用途）",
+      "liner": "Intuition Control Foam 3D 热塑鞋胆；含 S’Cafe 咖啡渣网布层",
+      "innerCuff": "Conda 内靴系带提供脚跟固定与脚踝支撑",
+      "outsole": "This Grips! 双橡胶外底；EVA 双密度中底与 Harshmellow 减震",
+      "warmthFeatures": "Intuition Control Foam 3D 热塑鞋胆；K2 官方描述其提供保暖与舒适，未列独立反射隔热膜",
+      "footbed": "Harshmellow Plus Insole；鞋底另含 EVA 双密度中底与 Harshmellow 减震材料",
+      "sizeGuide": "官方男款可选 US 5–15；K2 官方换算表列有 US、EU、UK 与 CM 对照，具体半码映射见商品页尺码表",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "uk": "4",
+          "eu": "36.5",
+          "mondo": "23"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "uk": "4.5",
+          "eu": "37",
+          "mondo": "23.5"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "uk": "5",
+          "eu": "38",
+          "mondo": "24"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "uk": "5.5",
+          "eu": "39",
+          "mondo": "24.5"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "uk": "6",
+          "eu": "39.5",
+          "mondo": "25"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "uk": "6.5",
+          "eu": "40",
+          "mondo": "25.5"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "uk": "7",
+          "eu": "40.5",
+          "mondo": "26"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "uk": "7.5",
+          "eu": "41.5",
+          "mondo": "26.5"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "uk": "8",
+          "eu": "42",
+          "mondo": "27"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "uk": "8.5",
+          "eu": "42.5",
+          "mondo": "27.5"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "uk": "9",
+          "eu": "43.5",
+          "mondo": "28"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "uk": "9.5",
+          "eu": "44",
+          "mondo": "28.5"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44.5",
+          "mondo": "29"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "45",
+          "mondo": "29.5"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "46",
+          "mondo": "30"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "47",
+          "mondo": "30.5"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "48",
+          "mondo": "31"
+        },
+        {
+          "size": "US 男 14",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "49",
+          "mondo": "32"
+        },
+        {
+          "size": "US 男 15",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "50",
+          "mondo": "33"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://k2snow.com/en-us/p/maysis-mens-snowboard-boot-kb261665?color=black",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 379.95",
+      "priceMarket": "原币 USD；来源商店 k2snow.com",
+      "priceSource": "https://k2snow.com/en-us/p/maysis-mens-snowboard-boot-kb261665",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "单 BOA 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8446-7a09-b10d-2d1b4073abf1",
@@ -13942,11 +21032,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "K2 Raider 2027",
     "model": "Raider",
     "year": 2027,
-    "oneLiner": "官方档案型号；单 BOA 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "单 BOA 外壳闭合搭配 Fast-In 内靴系带，面向入门与进阶滑手。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.media.amplience.net/i/k2/k2_2627_raider_sand_KB261667_1?w=1200&qlt=90&fmt=auto",
+    "coverUrl": "https://cdn.media.amplience.net/s/k2/k2_2627_raider_KB261667?w=1200&qlt=90&fmt=auto",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13958,15 +21048,174 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "单 BOA 系带"
+      "lacingSystem": "单区 H5 Coiler BOA + Fast-In 内靴系带",
+      "flex": "官方页面仅以 Playful–Precise 视觉轴展示脚感，未给出单一硬度值",
+      "fit": "Intuition Comfort Foam 3D 热塑鞋胆；内外 J-Bar 支撑脚踝并减少脚跟抬起",
+      "terrain": "K2 官方列出的适用场景为 Big Mountain、Powder；产品说明面向入门与进阶滑手",
+      "liner": "Intuition Comfort Foam 3D 热塑鞋胆",
+      "innerCuff": "Fast-In 内靴系带与内外 J-Bar 脚踝支撑",
+      "outsole": "RollSole 外底，支持脚部内侧活动",
+      "warmthFeatures": "Intuition Comfort Foam 3D 热塑鞋胆；官方描述为保暖、透气，未列独立反射隔热膜",
+      "footbed": "Harshmellow Insole；鞋款介绍另说明 EVA 鞋垫",
+      "sizeGuide": "官方男款可选 US 6–15；K2 官方换算表列有 US、EU、UK 与 CM 对照，具体半码映射见商品页尺码表",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "uk": "4",
+          "eu": "36.5",
+          "mondo": "23"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "uk": "4.5",
+          "eu": "37",
+          "mondo": "23.5"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "uk": "5",
+          "eu": "38",
+          "mondo": "24"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "uk": "5.5",
+          "eu": "39",
+          "mondo": "24.5"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "uk": "6",
+          "eu": "39.5",
+          "mondo": "25"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "uk": "6.5",
+          "eu": "40",
+          "mondo": "25.5"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "uk": "7",
+          "eu": "40.5",
+          "mondo": "26"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "uk": "7.5",
+          "eu": "41.5",
+          "mondo": "26.5"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "uk": "8",
+          "eu": "42",
+          "mondo": "27"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "uk": "8.5",
+          "eu": "42.5",
+          "mondo": "27.5"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "uk": "9",
+          "eu": "43.5",
+          "mondo": "28"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "uk": "9.5",
+          "eu": "44",
+          "mondo": "28.5"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44.5",
+          "mondo": "29"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "45",
+          "mondo": "29.5"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "46",
+          "mondo": "30"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "47",
+          "mondo": "30.5"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "48",
+          "mondo": "31"
+        },
+        {
+          "size": "US 男 14",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "49",
+          "mondo": "32"
+        },
+        {
+          "size": "US 男 15",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "50",
+          "mondo": "33"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://k2snow.com/en-us/p/raider-mens-snowboard-boots-kb261667?color=sand",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 279.95",
+      "priceMarket": "原币 USD；来源商店 k2snow.com",
+      "priceSource": "https://k2snow.com/en-us/p/raider-mens-snowboard-boots-kb261667",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "单 BOA 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-844e-7001-ad1a-44b051c41378",
@@ -13974,11 +21223,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "K2 Taro Tamai Snowsurfer RS 2027",
     "model": "Taro Tamai Snowsurfer RS",
     "year": 2027,
-    "oneLiner": "官方档案型号；系带方式及兼容参数留待补充。尺码与脚感以实际试穿为准。",
+    "oneLiner": "双区 BOA、F.O.R.M. Wrap 与可拆舌片支撑，采用偏柔软的冲浪式脚感。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.media.amplience.net/s/k2/k2_2627_taro-tamai-rs_KB261654?w=1200&qlt=90&fmt=auto",
+    "coverUrl": "https://cdn11.bigcommerce.com/s-ncrhbujr7m/product_images/attribute_rule_images/4575552_source_1780349255.jpg",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13990,15 +21239,174 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "系带方式及兼容参数留待补充"
+      "lacingSystem": "双区 H5 Coiler BOA，独立调节鞋面上下区域",
+      "flex": "偏柔软、冲浪式脚感；两片可拆舌片支撑可调整内外侧弯曲",
+      "fit": "F.O.R.M. 三片式包裹结构，Intuition Pro Foam 3D Wrap 热塑鞋胆，3 点可调/可拆束带",
+      "terrain": "Freeride、Powder（K2 官方列出的用途）",
+      "liner": "Intuition Pro Foam 3D Wrap 热塑鞋胆，带 SpaceHeater 保温层",
+      "innerCuff": "可调/可拆 3 点束带与 J-Bar 脚踝支撑",
+      "outsole": "Vibram Rollsole 外底与 Eco-Harshmellow 减震",
+      "warmthFeatures": "SpaceHeater 反射保温层；95% 消费后再生咖啡渣网布有助于吸湿除味",
+      "footbed": "Eco-Harshmellow Pro Insole；官方描述具备减震与全天舒适性",
+      "sizeGuide": "官方男款可选 US 6–12；K2 官方换算表列有 US、EU、UK 与 CM 对照，具体半码映射见商品页尺码表",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "uk": "4",
+          "eu": "36.5",
+          "mondo": "23"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "uk": "4.5",
+          "eu": "37",
+          "mondo": "23.5"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "uk": "5",
+          "eu": "38",
+          "mondo": "24"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "uk": "5.5",
+          "eu": "39",
+          "mondo": "24.5"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "uk": "6",
+          "eu": "39.5",
+          "mondo": "25"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "uk": "6.5",
+          "eu": "40",
+          "mondo": "25.5"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "uk": "7",
+          "eu": "40.5",
+          "mondo": "26"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "uk": "7.5",
+          "eu": "41.5",
+          "mondo": "26.5"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "uk": "8",
+          "eu": "42",
+          "mondo": "27"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "uk": "8.5",
+          "eu": "42.5",
+          "mondo": "27.5"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "uk": "9",
+          "eu": "43.5",
+          "mondo": "28"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "uk": "9.5",
+          "eu": "44",
+          "mondo": "28.5"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44.5",
+          "mondo": "29"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "45",
+          "mondo": "29.5"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "46",
+          "mondo": "30"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "47",
+          "mondo": "30.5"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "48",
+          "mondo": "31"
+        },
+        {
+          "size": "US 男 14",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "49",
+          "mondo": "32"
+        },
+        {
+          "size": "US 男 15",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "50",
+          "mondo": "33"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://k2snow.com/en-us/p/taro-tamai-snowsurfer-rs-mens-snowboard-boot-kb261654?color=black-brown",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 669.95",
+      "priceMarket": "原币 USD；来源商店 k2snow.com",
+      "priceSource": "https://k2snow.com/en-sg/p/taro-tamai-snowsurfer-rs-mens-snowboard-boot-kb261654",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "系带方式及兼容参数留待补充"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8459-72f5-9d70-391b68964eba",
@@ -14006,11 +21414,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Bianca TLS+ 2027",
     "model": "Bianca TLS+",
     "year": 2027,
-    "oneLiner": "官方档案型号；女款；TLS+ 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "女款中等硬度全山地雪鞋，采用 TLS+、Cloud 10 鞋胆与 Vibram 冰雪外底。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT21018-102_Bianca-TLSPlus-Womens-Boots_Light-Grey_Product-1.jpg?v=1779339472&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/13BT21018-101_Bianca-TLSPlus-Womens-Boots_Black_Product-1.jpg?v=1779339472&width=2200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14022,15 +21430,156 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "女款"
+      "lacingSystem": "TLS+ 双区快速系带",
+      "flex": "中等硬度（Nitro 官方描述）",
+      "fit": "女款 Cloud 10 鞋胆，3D 后跟结构与定向防滑内衬；可选 Internal Ankle Support",
+      "terrain": "全山地；官方定位适合刻滑雪道、粉雪与天然地形",
+      "liner": "Women's Cloud 10，预成型 Thermacell 热塑鞋胆",
+      "innerCuff": "ILS 内靴固定系统、Power Strap、可选 Internal Ankle Support",
+      "outsole": "Vibram Icetrek 橡胶与 Arctic Grip All Terrain 湿冰抓地技术",
+      "warmthFeatures": "Therminator Shield 反射隔热层",
+      "footbed": "Ortholite High Cup Triple Density 鞋垫；EVA 中底、Air Dampening 与 D3O 缓震",
+      "sizeGuide": "官方女款 US 6–11.5 / Mondopoint 23.0–28.5 / EU 36–43⅓ / UK 4–9.5",
+      "sizeChart": [
+        {
+          "size": "US 女 4.5",
+          "mondo": "22",
+          "usMen": "4",
+          "usWomen": "4.5",
+          "uk": "3",
+          "eu": "34 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 5",
+          "mondo": "22.5",
+          "usMen": "4.5",
+          "usWomen": "5",
+          "uk": "3.5",
+          "eu": "35 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 5.5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "5.5",
+          "uk": "4",
+          "eu": "36",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 6",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6",
+          "uk": "4.5",
+          "eu": "36 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 6.5",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "6.5",
+          "uk": "5",
+          "eu": "37 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 7",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7",
+          "uk": "5.5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 7.5",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "7.5",
+          "uk": "6",
+          "eu": "38 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 8",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8",
+          "uk": "6.5",
+          "eu": "39 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 8.5",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "8.5",
+          "uk": "7",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 9",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9",
+          "uk": "7.5",
+          "eu": "40 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 9.5",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "9.5",
+          "uk": "8",
+          "eu": "41 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 10",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10",
+          "uk": "8.5",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 10.5",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "10.5",
+          "uk": "9",
+          "eu": "42 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 女 11",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "usWomen": "11",
+          "uk": "9.5",
+          "eu": "43 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/bianca-tls-womens-boots-1；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 549.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "女款"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8464-7f98-85cf-2b3c2d10bbd0",
@@ -14038,11 +21587,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Sentinel BOA 2027",
     "model": "Sentinel BOA",
     "year": 2027,
-    "oneLiner": "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "双区 BOA 闭合，Cloud 3 热塑鞋胆与 Interlock 脚跟固定结构。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/13BT11014-103_Sentinel-BOA-Boots_Brown_Product-1.jpg?v=1779339447&width=2251",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14054,15 +21603,210 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "BOA 系带"
+      "lacingSystem": "双区 BOA Fit System（M+2 与 H4 Coiler）",
+      "flex": "舒适、支撑与平衡脚感（Nitro 官方描述，未公布数值硬度）",
+      "fit": "Interlock 系统将鞋胆脚跟与鞋壳连接；3D 后跟结构与记忆泡棉",
+      "terrain": "全山地；官方列举雪道、雪场日常滑行与进阶练习",
+      "liner": "Cloud 3 热塑鞋胆，带 Re/Lace、DLS 直连系带与支撑框架",
+      "innerCuff": "Interlock 脚跟锁定与加固后跟",
+      "outsole": "EVA 外底，局部橡胶耐磨/抓地补强",
+      "warmthFeatures": "Nitro 官方称 EVA 外底提供热隔离；未列反射式隔热膜",
+      "footbed": "Anatomical 人体工学鞋垫",
+      "sizeGuide": "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "5.5",
+          "uk": "4",
+          "eu": "36",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 5.5",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6",
+          "uk": "4.5",
+          "eu": "36 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "6.5",
+          "uk": "5",
+          "eu": "37 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6.5",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7",
+          "uk": "5.5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "7.5",
+          "uk": "6",
+          "eu": "38 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7.5",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8",
+          "uk": "6.5",
+          "eu": "39 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "8.5",
+          "uk": "7",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8.5",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9",
+          "uk": "7.5",
+          "eu": "40 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "9.5",
+          "uk": "8",
+          "eu": "41 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9.5",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10",
+          "uk": "8.5",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "10.5",
+          "uk": "9",
+          "eu": "42 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10.5",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "usWomen": "11",
+          "uk": "9.5",
+          "eu": "43 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11",
+          "mondo": "29",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11.5",
+          "mondo": "29.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "44 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12",
+          "mondo": "30",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "45 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12.5",
+          "mondo": "30.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "46",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13",
+          "mondo": "31",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "46 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13.5",
+          "mondo": "31.5",
+          "usMen": "13.5",
+          "uk": "12.5",
+          "eu": "47 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14",
+          "mondo": "32",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "48",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14.5",
+          "mondo": "32.5",
+          "usMen": "14.5",
+          "uk": "13.5",
+          "eu": "48 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 15",
+          "mondo": "33",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "49 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/sentinel-boa-boots-1；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 329.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "BOA 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8470-78b0-a186-afe1ff95c313",
@@ -14070,11 +21814,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Sentinel TLS 2027",
     "model": "Sentinel TLS",
     "year": 2027,
-    "oneLiner": "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "TLS 双区快速系带，Cloud 3 热塑鞋胆与 Interlock 脚跟固定结构。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11015-102_Sentinel-TLS-Boots_Sand_Product-1.jpg?v=1779339466&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/13BT11015-101_Sentinel-TLS-Boots_Black_Product-1.jpg?v=1779339465&width=2202",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14086,15 +21830,210 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "TLS 系带"
+      "lacingSystem": "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱",
+      "flex": "舒适、支撑与平衡脚感（Nitro 官方描述，未公布数值硬度）",
+      "fit": "Interlock 系统将鞋胆脚跟与鞋壳连接；3D 后跟结构与记忆泡棉",
+      "terrain": "全山地；官方列举雪道、雪场日常滑行与进阶练习",
+      "liner": "Cloud 3 热塑鞋胆，带 Re/Lace、DLS 直连系带与支撑框架",
+      "innerCuff": "Interlock 脚跟锁定与加固后跟",
+      "outsole": "EVA 外底，局部橡胶耐磨/抓地补强",
+      "warmthFeatures": "Nitro 官方称 EVA 外底提供热隔离；未列反射式隔热膜",
+      "footbed": "Anatomical 人体工学鞋垫",
+      "sizeGuide": "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "5.5",
+          "uk": "4",
+          "eu": "36",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 5.5",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6",
+          "uk": "4.5",
+          "eu": "36 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "6.5",
+          "uk": "5",
+          "eu": "37 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6.5",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7",
+          "uk": "5.5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "7.5",
+          "uk": "6",
+          "eu": "38 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7.5",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8",
+          "uk": "6.5",
+          "eu": "39 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "8.5",
+          "uk": "7",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8.5",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9",
+          "uk": "7.5",
+          "eu": "40 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "9.5",
+          "uk": "8",
+          "eu": "41 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9.5",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10",
+          "uk": "8.5",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "10.5",
+          "uk": "9",
+          "eu": "42 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10.5",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "usWomen": "11",
+          "uk": "9.5",
+          "eu": "43 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11",
+          "mondo": "29",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11.5",
+          "mondo": "29.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "44 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12",
+          "mondo": "30",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "45 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12.5",
+          "mondo": "30.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "46",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13",
+          "mondo": "31",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "46 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13.5",
+          "mondo": "31.5",
+          "usMen": "13.5",
+          "uk": "12.5",
+          "eu": "47 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14",
+          "mondo": "32",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "48",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14.5",
+          "mondo": "32.5",
+          "usMen": "14.5",
+          "uk": "13.5",
+          "eu": "48 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 15",
+          "mondo": "33",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "49 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/sentinel-tls-boots-1；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 279.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "TLS 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8479-764b-aeb8-eca97bb259a8",
@@ -14102,11 +22041,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Tangent TLS 2027",
     "model": "Tangent TLS",
     "year": 2027,
-    "oneLiner": "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "偏柔和、适合进阶过程的全山地雪鞋，TLS 双区系带，配 Cloud 1 鞋胆。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/13BT11017-101_Tangent-TLS-Boots_Black_Product-1.jpg?v=1779339456&width=2322",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14118,15 +22057,210 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "TLS 系带"
+      "lacingSystem": "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱",
+      "flex": "偏柔和、易于进阶（Nitro 官方描述）",
+      "fit": "Interlock 系统将鞋胆脚跟与鞋壳连接",
+      "terrain": "全山地进阶；官方定位为日常雪场滑行",
+      "liner": "Cloud 1 热塑鞋胆，带 Re/Lace Liner Locker 与 DLS 直连系带",
+      "innerCuff": "Interlock 脚跟锁定与加固后跟",
+      "outsole": "全橡胶外底，强调耐磨与抓地",
+      "warmthFeatures": "EVA 鞋垫提供隔热（Nitro 官方鞋胆规格）",
+      "footbed": "EVA 鞋垫，提供缓震与隔热",
+      "sizeGuide": "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "5.5",
+          "uk": "4",
+          "eu": "36",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 5.5",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6",
+          "uk": "4.5",
+          "eu": "36 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "6.5",
+          "uk": "5",
+          "eu": "37 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6.5",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7",
+          "uk": "5.5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "7.5",
+          "uk": "6",
+          "eu": "38 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7.5",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8",
+          "uk": "6.5",
+          "eu": "39 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "8.5",
+          "uk": "7",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8.5",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9",
+          "uk": "7.5",
+          "eu": "40 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "9.5",
+          "uk": "8",
+          "eu": "41 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9.5",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10",
+          "uk": "8.5",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "10.5",
+          "uk": "9",
+          "eu": "42 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10.5",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "usWomen": "11",
+          "uk": "9.5",
+          "eu": "43 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11",
+          "mondo": "29",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11.5",
+          "mondo": "29.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "44 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12",
+          "mondo": "30",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "45 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12.5",
+          "mondo": "30.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "46",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13",
+          "mondo": "31",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "46 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13.5",
+          "mondo": "31.5",
+          "usMen": "13.5",
+          "uk": "12.5",
+          "eu": "47 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14",
+          "mondo": "32",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "48",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14.5",
+          "mondo": "32.5",
+          "usMen": "14.5",
+          "uk": "13.5",
+          "eu": "48 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 15",
+          "mondo": "33",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "49 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/tangent-tls-boots-1；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 239.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "TLS 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8486-7469-97e1-58ef39e8eac8",
@@ -14134,11 +22268,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Team BOA 2027",
     "model": "Team BOA",
     "year": 2027,
-    "oneLiner": "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "Nitro 全山地 Team 平台，双高功率 BOA，配 Vibram 外底与 Air Dampening。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11006-103_Team-BOA-Boots_Grey_Product-1.jpg?v=1779339445&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/13BT11006-102_Team-BOA-Boots_White-Black_Product-1.jpg?v=1779339445&width=2204",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14150,15 +22284,210 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "BOA 系带"
+      "lacingSystem": "Dual High Power BOA H5 双旋钮分区调节",
+      "flex": "平衡、多用途脚感（官方未标数值硬度）",
+      "fit": "标准宽度；ILS 内靴固定系统与 Armored Spine 脚跟加固",
+      "terrain": "全山地；官方列举刻滑、雪场、公园、粉雪与天然地形",
+      "liner": "Cloud 9 热塑鞋胆，Re/Lace 锁定结构与 3D 后跟构造",
+      "innerCuff": "ILS 内靴固定系统；Armored Spine 与加固后跟",
+      "outsole": "Vibram ECOSTEP 橡胶外底，含最高 3% 再生橡胶",
+      "warmthFeatures": "Therminator Shield 鞋底反射隔热层",
+      "footbed": "Ortholite High Cup Dual Density 鞋垫；EVA 中底与 Air Dampening 缓震",
+      "sizeGuide": "官方男款 US 7–15 / Mondopoint 25.0–33.0 / EU 38⅔–49⅓ / UK 6–14",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "5.5",
+          "uk": "4",
+          "eu": "36",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 5.5",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6",
+          "uk": "4.5",
+          "eu": "36 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "6.5",
+          "uk": "5",
+          "eu": "37 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6.5",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7",
+          "uk": "5.5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "7.5",
+          "uk": "6",
+          "eu": "38 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7.5",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8",
+          "uk": "6.5",
+          "eu": "39 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "8.5",
+          "uk": "7",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8.5",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9",
+          "uk": "7.5",
+          "eu": "40 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "9.5",
+          "uk": "8",
+          "eu": "41 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9.5",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10",
+          "uk": "8.5",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "10.5",
+          "uk": "9",
+          "eu": "42 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10.5",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "usWomen": "11",
+          "uk": "9.5",
+          "eu": "43 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11",
+          "mondo": "29",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11.5",
+          "mondo": "29.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "44 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12",
+          "mondo": "30",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "45 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12.5",
+          "mondo": "30.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "46",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13",
+          "mondo": "31",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "46 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13.5",
+          "mondo": "31.5",
+          "usMen": "13.5",
+          "uk": "12.5",
+          "eu": "47 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14",
+          "mondo": "32",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "48",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14.5",
+          "mondo": "32.5",
+          "usMen": "14.5",
+          "uk": "13.5",
+          "eu": "48 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 15",
+          "mondo": "33",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "49 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/team-boa-boots-1；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 529.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/team-boa-boots-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "BOA 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8494-7b08-86a5-a208f749a552",
@@ -14166,11 +22495,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Team Pro MK TLS 2027",
     "model": "Team Pro MK TLS",
     "year": 2027,
-    "oneLiner": "官方档案型号；TLS 系带；MK 系列。尺码与脚感以实际试穿为准。",
+    "oneLiner": "Marcus Kleveland 签名款自由式雪鞋，TLS 系带并可调节硬度与支撑。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=2195",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14182,15 +22511,210 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "TLS 系带"
+      "lacingSystem": "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱",
+      "flex": "可通过 Power Tongue Stiffener 调节支撑与弯曲感；官方未给数值等级",
+      "fit": "Armored Shell 支撑结构、ILS 内靴固定与可选 Internal Ankle Support",
+      "terrain": "自由式/全山地；官方签名款定位覆盖雪场和公园滑行",
+      "liner": "Cloud 9 热塑鞋胆，3D 后跟结构与 Response ExoFrame",
+      "innerCuff": "Shell Power Strap、ILS 内靴固定与加固后跟",
+      "outsole": "Vibram ECOSTEP 橡胶外底，含最高 3% 再生橡胶",
+      "warmthFeatures": "Therminator Shield 反射隔热层；Speed Gaiter 防雪防潮",
+      "footbed": "Ortholite High Cup Dual Density 鞋垫；EVA 中底与 Air Dampening 缓震",
+      "sizeGuide": "官方男款 US 7–15 / Mondopoint 25.0–33.0 / EU 38⅔–49⅓ / UK 6–14",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "5.5",
+          "uk": "4",
+          "eu": "36",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 5.5",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6",
+          "uk": "4.5",
+          "eu": "36 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "6.5",
+          "uk": "5",
+          "eu": "37 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6.5",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7",
+          "uk": "5.5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "7.5",
+          "uk": "6",
+          "eu": "38 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7.5",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8",
+          "uk": "6.5",
+          "eu": "39 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "8.5",
+          "uk": "7",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8.5",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9",
+          "uk": "7.5",
+          "eu": "40 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "9.5",
+          "uk": "8",
+          "eu": "41 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9.5",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10",
+          "uk": "8.5",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "10.5",
+          "uk": "9",
+          "eu": "42 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10.5",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "usWomen": "11",
+          "uk": "9.5",
+          "eu": "43 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11",
+          "mondo": "29",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11.5",
+          "mondo": "29.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "44 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12",
+          "mondo": "30",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "45 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12.5",
+          "mondo": "30.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "46",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13",
+          "mondo": "31",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "46 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13.5",
+          "mondo": "31.5",
+          "usMen": "13.5",
+          "uk": "12.5",
+          "eu": "47 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14",
+          "mondo": "32",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "48",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14.5",
+          "mondo": "32.5",
+          "usMen": "14.5",
+          "uk": "13.5",
+          "eu": "48 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 15",
+          "mondo": "33",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "49 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/team-pro-mk-tls-boots-1；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 529.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "TLS 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-849e-7852-841c-8e0df0f15123",
@@ -14198,11 +22722,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Team TLS 2027",
     "model": "Team TLS",
     "year": 2027,
-    "oneLiner": "官方档案型号；TLS 双区快速系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "Nitro 全山地 Team 平台，TLS 双区快速系带，配 Vibram 外底与 Air Dampening。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/13BT11008-102_Team-TLS-Boots_White-Black_Product-1.jpg?v=1779339453&width=2200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14214,15 +22738,210 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "TLS 双区快速系带"
+      "lacingSystem": "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱",
+      "flex": "平衡、多用途脚感（官方未标数值硬度）",
+      "fit": "标准宽度；ILS 内靴固定系统与 Armored Spine 脚跟加固",
+      "liner": "Cloud 9 热塑鞋胆，Re/Lace 锁定结构与 3D 后跟构造",
+      "innerCuff": "ILS 内靴固定系统；Armored Spine 与加固后跟",
+      "outsole": "Vibram ECOSTEP 橡胶外底，含最高 3% 再生橡胶",
+      "warmthFeatures": "Therminator Shield 鞋底反射隔热层",
+      "terrain": "全山地；官方列举刻滑、雪场、公园、粉雪与天然地形",
+      "footbed": "Ortholite High Cup Dual Density 鞋垫；EVA 中底与 Air Dampening 缓震",
+      "sizeGuide": "官方男款 US 7–15 / Mondopoint 25.0–33.0 / EU 38⅔–49⅓ / UK 6–14",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "5.5",
+          "uk": "4",
+          "eu": "36",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 5.5",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6",
+          "uk": "4.5",
+          "eu": "36 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "6.5",
+          "uk": "5",
+          "eu": "37 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6.5",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7",
+          "uk": "5.5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "7.5",
+          "uk": "6",
+          "eu": "38 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7.5",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8",
+          "uk": "6.5",
+          "eu": "39 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "8.5",
+          "uk": "7",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8.5",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9",
+          "uk": "7.5",
+          "eu": "40 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "9.5",
+          "uk": "8",
+          "eu": "41 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9.5",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10",
+          "uk": "8.5",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "10.5",
+          "uk": "9",
+          "eu": "42 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10.5",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "usWomen": "11",
+          "uk": "9.5",
+          "eu": "43 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11",
+          "mondo": "29",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11.5",
+          "mondo": "29.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "44 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12",
+          "mondo": "30",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "45 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12.5",
+          "mondo": "30.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "46",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13",
+          "mondo": "31",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "46 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13.5",
+          "mondo": "31.5",
+          "usMen": "13.5",
+          "uk": "12.5",
+          "eu": "47 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14",
+          "mondo": "32",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "48",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14.5",
+          "mondo": "32.5",
+          "usMen": "14.5",
+          "uk": "13.5",
+          "eu": "48 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 15",
+          "mondo": "33",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "49 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-boots-1；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 479.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/team-tls-boots-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "TLS 双区快速系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-84a9-7a2e-97e1-191999fdf096",
@@ -14230,11 +22949,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Team TLS Wide 2027",
     "model": "Team TLS Wide",
     "year": 2027,
-    "oneLiner": "官方档案型号；宽楦；TLS 双区快速系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "Team TLS 的宽楦版本，采用双区快速系带、Vibram 外底与 Air Dampening。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11007-101_Team-TLS-Wide-Boots_Black_Product-1.jpg?v=1779339428&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/13BT11007-101_Team-TLS-Wide-Boots_Black_Product-1.jpg?v=1779339428&width=2304",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14246,15 +22965,210 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "宽楦"
+      "lacingSystem": "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱",
+      "flex": "平衡、多用途脚感（官方未标数值硬度）",
+      "fit": "Wide 宽楦；ILS 内靴固定系统与 Armored Spine 脚跟加固",
+      "liner": "Cloud 9 热塑鞋胆，Re/Lace 锁定结构与 3D 后跟构造",
+      "innerCuff": "ILS 内靴固定系统；Armored Spine 与加固后跟",
+      "outsole": "Vibram ECOSTEP 橡胶外底，含最高 3% 再生橡胶",
+      "warmthFeatures": "Therminator Shield 鞋底反射隔热层",
+      "terrain": "全山地；官方列举刻滑、雪场、公园、粉雪与天然地形",
+      "footbed": "Ortholite High Cup Dual Density 鞋垫；EVA 中底与 Air Dampening 缓震",
+      "sizeGuide": "官方男款 US 7–15 / Mondopoint 25.0–33.0 / EU 38⅔–49⅓ / UK 6–14",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "5.5",
+          "uk": "4",
+          "eu": "36",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 5.5",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6",
+          "uk": "4.5",
+          "eu": "36 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "6.5",
+          "uk": "5",
+          "eu": "37 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6.5",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7",
+          "uk": "5.5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "7.5",
+          "uk": "6",
+          "eu": "38 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7.5",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8",
+          "uk": "6.5",
+          "eu": "39 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "8.5",
+          "uk": "7",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8.5",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9",
+          "uk": "7.5",
+          "eu": "40 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "9.5",
+          "uk": "8",
+          "eu": "41 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9.5",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10",
+          "uk": "8.5",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "10.5",
+          "uk": "9",
+          "eu": "42 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10.5",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "usWomen": "11",
+          "uk": "9.5",
+          "eu": "43 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11",
+          "mondo": "29",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11.5",
+          "mondo": "29.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "44 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12",
+          "mondo": "30",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "45 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12.5",
+          "mondo": "30.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "46",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13",
+          "mondo": "31",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "46 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13.5",
+          "mondo": "31.5",
+          "usMen": "13.5",
+          "uk": "12.5",
+          "eu": "47 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14",
+          "mondo": "32",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "48",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14.5",
+          "mondo": "32.5",
+          "usMen": "14.5",
+          "uk": "13.5",
+          "eu": "48 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 15",
+          "mondo": "33",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "49 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 Wide 应与该品牌同型号标准版比较，不能视为跨品牌统一宽度。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-wide-boots-1；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 479.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/team-tls-wide-boots-1",
+      "priceStatus": "对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "宽楦"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-84b1-7f06-856f-483cf92317eb",
@@ -14262,11 +23176,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Venture BOA 2027",
     "model": "Venture BOA",
     "year": 2027,
-    "oneLiner": "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "全山地雪鞋，双 BOA 调节、Cloud 6 热塑鞋胆与 EVA 外底。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=907",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14278,15 +23192,210 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "BOA 系带"
+      "lacingSystem": "Dual BOA Fit System：M+2 平台与 H4 Coiler 双区调节",
+      "flex": "平衡支撑与响应脚感（Nitro 官方描述，未公布数值硬度）",
+      "fit": "全山地多用途定位；ILS 内靴固定系统帮助减少脚跟滑动",
+      "terrain": "全山地；官方列举雪道、粉雪、天然地形、侧坡跳台与公园",
+      "liner": "Cloud 6 热塑鞋胆，支持热塑定型、Re/Lace 锁定、3D 鞋舌与后跟结构、Response ExoFrame、记忆垫和 Flex Toe",
+      "innerCuff": "ILS 内靴固定系统；3D 后跟结构与 Response ExoFrame 提供脚跟锁定和支撑",
+      "outsole": "EVA 外底，配局部橡胶耐磨/抓地补强；部分配色再生橡胶最高占 3%",
+      "warmthFeatures": "EVA 外底提供热隔离（Nitro 官方说明）",
+      "footbed": "Ortholite High Cup 鞋垫；高回弹缓震",
+      "sizeGuide": "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "5.5",
+          "uk": "4",
+          "eu": "36",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 5.5",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6",
+          "uk": "4.5",
+          "eu": "36 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "6.5",
+          "uk": "5",
+          "eu": "37 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6.5",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7",
+          "uk": "5.5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "7.5",
+          "uk": "6",
+          "eu": "38 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7.5",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8",
+          "uk": "6.5",
+          "eu": "39 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "8.5",
+          "uk": "7",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8.5",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9",
+          "uk": "7.5",
+          "eu": "40 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "9.5",
+          "uk": "8",
+          "eu": "41 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9.5",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10",
+          "uk": "8.5",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "10.5",
+          "uk": "9",
+          "eu": "42 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10.5",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "usWomen": "11",
+          "uk": "9.5",
+          "eu": "43 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11",
+          "mondo": "29",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11.5",
+          "mondo": "29.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "44 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12",
+          "mondo": "30",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "45 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12.5",
+          "mondo": "30.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "46",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13",
+          "mondo": "31",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "46 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13.5",
+          "mondo": "31.5",
+          "usMen": "13.5",
+          "uk": "12.5",
+          "eu": "47 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14",
+          "mondo": "32",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "48",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14.5",
+          "mondo": "32.5",
+          "usMen": "14.5",
+          "uk": "13.5",
+          "eu": "48 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 15",
+          "mondo": "33",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "49 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-boa-boots；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 399.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/venture-boa-boots",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "BOA 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-84ba-7d7a-bdcf-0fd2c64926b5",
@@ -14294,11 +23403,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Venture Pro TLS 2027",
     "model": "Venture Pro TLS",
     "year": 2027,
-    "oneLiner": "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "中等硬度全山地雪鞋，TLS 双区系带、Vibram ECOSTEP 外底与 Cloud 6 鞋胆。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848713-004_Venture-Pro-TLS-Boots_X-Bryan-Fox-26-27_Product-1-1050x1200-b16c651f-af5e-45db-8f48-8ec7b15da6d1.jpg?v=1788162591&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/848713-004_Venture-Pro-TLS-Boots_X-Bryan-Fox-26-27_Product-1-1050x1200-b16c651f-af5e-45db-8f48-8ec7b15da6d1.jpg?v=1788162591&width=1050",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14310,15 +23419,210 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "TLS 系带"
+      "lacingSystem": "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱",
+      "flex": "中等硬度（Nitro 官方描述，未公布数值等级）",
+      "fit": "标准版型；官方另有 Wide 宽版型号",
+      "terrain": "全山地；官方列举刻滑雪道、粉雪、天然地形与日常雪场滑行",
+      "liner": "Cloud 6 热塑鞋胆，支持热塑定型、Re/Lace 锁定、3D 鞋舌与后跟结构、Response ExoFrame、记忆垫和 Flex Toe",
+      "innerCuff": "ILS 内靴固定系统与 3D 后跟结构",
+      "outsole": "Vibram ECOSTEP 橡胶外底，含最高 3% 再生橡胶",
+      "warmthFeatures": "EVA 中底提供隔热与缓震；Speed Gaiter 防雪防潮并帮助保持干暖",
+      "footbed": "Ortholite High Cup Dual Density 双密度鞋垫",
+      "sizeGuide": "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "5.5",
+          "uk": "4",
+          "eu": "36",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 5.5",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6",
+          "uk": "4.5",
+          "eu": "36 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "6.5",
+          "uk": "5",
+          "eu": "37 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6.5",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7",
+          "uk": "5.5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "7.5",
+          "uk": "6",
+          "eu": "38 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7.5",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8",
+          "uk": "6.5",
+          "eu": "39 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "8.5",
+          "uk": "7",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8.5",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9",
+          "uk": "7.5",
+          "eu": "40 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "9.5",
+          "uk": "8",
+          "eu": "41 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9.5",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10",
+          "uk": "8.5",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "10.5",
+          "uk": "9",
+          "eu": "42 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10.5",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "usWomen": "11",
+          "uk": "9.5",
+          "eu": "43 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11",
+          "mondo": "29",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11.5",
+          "mondo": "29.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "44 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12",
+          "mondo": "30",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "45 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12.5",
+          "mondo": "30.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "46",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13",
+          "mondo": "31",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "46 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13.5",
+          "mondo": "31.5",
+          "usMen": "13.5",
+          "uk": "12.5",
+          "eu": "47 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14",
+          "mondo": "32",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "48",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14.5",
+          "mondo": "32.5",
+          "usMen": "14.5",
+          "uk": "13.5",
+          "eu": "48 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 15",
+          "mondo": "33",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "49 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 Wide 应与该品牌同型号标准版比较，不能视为跨品牌统一宽度。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-pro-tls-boots；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 399.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/venture-pro-tls-boots",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "TLS 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-84c5-7e91-8145-56a5c5f8b26e",
@@ -14326,11 +23630,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Venture Step On TLS 2027",
     "model": "Venture Step On TLS",
     "year": 2027,
-    "oneLiner": "官方档案型号；TLS 系带，Step On 系统需配专用固定器。尺码与脚感以实际试穿为准。",
+    "oneLiner": "Step On 专用全山地雪鞋，TLS 双区系带、可调踝带与 Cloud 6 鞋胆。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848716-001_Venture-TLS-Step-On_Black_Product-1-881x1200-28135e1d-80c9-4401-942d-ae41d4772763.jpg?v=1788164992&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/848716-004_Venture-Step-On-TLS-Boots_Grey_Product-1-1060x1200-331aa7d3-3ffb-4911-8e0e-318060d12a39.jpg?v=1788163517&width=1060",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14342,15 +23646,185 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "TLS 系带"
+      "lacingSystem": "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱；另有 BOA 可调踝带",
+      "flex": "支撑感可调；官方未给数值硬度等级",
+      "fit": "全山地多用途定位；ILS 内靴固定系统与 Armored Spine 后跟加固",
+      "terrain": "全山地；官方列举雪道、粉雪、天然地形与公园",
+      "bindingCompatibility": "认证 Step On 专用雪鞋；仅按对应性别系列和尺码配 Step On 固定器，不能作为普通绑带雪鞋使用。",
+      "liner": "Cloud 6 热塑鞋胆，支持热塑定型、Re/Lace 锁定、3D 鞋舌与后跟结构、Response ExoFrame、记忆垫和 Flex Toe",
+      "innerCuff": "ILS 内靴固定系统、Armored Spine 3D 后跟加固及 BOA 可调踝带",
+      "outsole": "Nitro Step On 专用高抓地耐磨橡胶外底，配 EVA 中底；部分配色再生橡胶最高占 3%",
+      "warmthFeatures": "EVA 中底提供缓震与隔热（Nitro 官方说明）",
+      "footbed": "Ortholite High Cup 鞋垫",
+      "sizeGuide": "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "6",
+          "uk": "4",
+          "eu": "36 ½",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 5.5",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "uk": "4.5",
+          "eu": "37",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "7",
+          "uk": "5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6.5",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "uk": "5.5",
+          "eu": "39",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "8",
+          "uk": "6",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7.5",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "uk": "6.5",
+          "eu": "40 ½",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "9",
+          "uk": "7",
+          "eu": "41",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8.5",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "uk": "7.5",
+          "eu": "41 ½",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "10",
+          "uk": "8",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9.5",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "uk": "8.5",
+          "eu": "42 ½",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "11",
+          "uk": "9",
+          "eu": "43",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10.5",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "uk": "9.5",
+          "eu": "43 ½",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11",
+          "mondo": "29",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11.5",
+          "mondo": "29.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "44 ½",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12",
+          "mondo": "30",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "45",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13",
+          "mondo": "31",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "46",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14",
+          "mondo": "32",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "47",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 15",
+          "mondo": "33",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "48",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。 Step On 还需核对固定器男/女/儿童系列，普通绑带固定器不能仅因鞋码相同而替代。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-step-on-tls-boots；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 489.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "TLS 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-84cd-7b85-82ae-54845014f9df",
@@ -14358,11 +23832,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Nitro Venture TLS 2027",
     "model": "Venture TLS",
     "year": 2027,
-    "oneLiner": "官方档案型号；TLS 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "全山地雪鞋，TLS 双区快速系带、Cloud 6 热塑鞋胆与 EVA 外底。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+    "coverUrl": "https://www.nitrosnowboards.com/cdn/shop/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1-1060x1200-4b52f99c-63b7-43d7-8b10-0694b2c7c44a.jpg?v=1788163886&width=1060",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14374,15 +23848,210 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "TLS 系带"
+      "lacingSystem": "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱",
+      "flex": "平衡支撑与响应脚感（Nitro 官方描述，未公布数值硬度）",
+      "fit": "全山地多用途定位；ILS 内靴固定系统帮助减少脚跟滑动",
+      "terrain": "全山地；官方列举雪道、粉雪、天然地形、侧坡跳台与公园",
+      "liner": "Cloud 6 热塑鞋胆，支持热塑定型、Re/Lace 锁定、3D 鞋舌与后跟结构、Response ExoFrame、记忆垫和 Flex Toe",
+      "innerCuff": "ILS 内靴固定系统与 3D 后跟结构",
+      "outsole": "EVA 外底，配局部橡胶耐磨/抓地补强；部分配色再生橡胶最高占 3%",
+      "warmthFeatures": "EVA 外底提供热隔离（Nitro 官方说明）",
+      "footbed": "Ortholite High Cup 鞋垫；高回弹缓震",
+      "sizeGuide": "官方男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13",
+      "sizeChart": [
+        {
+          "size": "US 男 5",
+          "mondo": "23",
+          "usMen": "5",
+          "usWomen": "5.5",
+          "uk": "4",
+          "eu": "36",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 5.5",
+          "mondo": "23.5",
+          "usMen": "5.5",
+          "usWomen": "6",
+          "uk": "4.5",
+          "eu": "36 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6",
+          "mondo": "24",
+          "usMen": "6",
+          "usWomen": "6.5",
+          "uk": "5",
+          "eu": "37 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 6.5",
+          "mondo": "24.5",
+          "usMen": "6.5",
+          "usWomen": "7",
+          "uk": "5.5",
+          "eu": "38",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7",
+          "mondo": "25",
+          "usMen": "7",
+          "usWomen": "7.5",
+          "uk": "6",
+          "eu": "38 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 7.5",
+          "mondo": "25.5",
+          "usMen": "7.5",
+          "usWomen": "8",
+          "uk": "6.5",
+          "eu": "39 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8",
+          "mondo": "26",
+          "usMen": "8",
+          "usWomen": "8.5",
+          "uk": "7",
+          "eu": "40",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 8.5",
+          "mondo": "26.5",
+          "usMen": "8.5",
+          "usWomen": "9",
+          "uk": "7.5",
+          "eu": "40 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9",
+          "mondo": "27",
+          "usMen": "9",
+          "usWomen": "9.5",
+          "uk": "8",
+          "eu": "41 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 9.5",
+          "mondo": "27.5",
+          "usMen": "9.5",
+          "usWomen": "10",
+          "uk": "8.5",
+          "eu": "42",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10",
+          "mondo": "28",
+          "usMen": "10",
+          "usWomen": "10.5",
+          "uk": "9",
+          "eu": "42 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 10.5",
+          "mondo": "28.5",
+          "usMen": "10.5",
+          "usWomen": "11",
+          "uk": "9.5",
+          "eu": "43 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11",
+          "mondo": "29",
+          "usMen": "11",
+          "uk": "10",
+          "eu": "44",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 11.5",
+          "mondo": "29.5",
+          "usMen": "11.5",
+          "uk": "10.5",
+          "eu": "44 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12",
+          "mondo": "30",
+          "usMen": "12",
+          "uk": "11",
+          "eu": "45 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 12.5",
+          "mondo": "30.5",
+          "usMen": "12.5",
+          "uk": "11.5",
+          "eu": "46",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13",
+          "mondo": "31",
+          "usMen": "13",
+          "uk": "12",
+          "eu": "46 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 13.5",
+          "mondo": "31.5",
+          "usMen": "13.5",
+          "uk": "12.5",
+          "eu": "47 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14",
+          "mondo": "32",
+          "usMen": "14",
+          "uk": "13",
+          "eu": "48",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 14.5",
+          "mondo": "32.5",
+          "usMen": "14.5",
+          "uk": "13.5",
+          "eu": "48 ⅔",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        },
+        {
+          "size": "US 男 15",
+          "mondo": "33",
+          "usMen": "15",
+          "uk": "14",
+          "eu": "49 ⅓",
+          "notes": "官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-tls-boots；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "EUR 349.9",
+      "priceMarket": "原币 EUR；来源商店 www.nitrosnowboards.com",
+      "priceSource": "https://www.nitrosnowboards.com/products/venture-tls-boots",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "TLS 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-84da-7e47-80e0-b68be676dfa0",
@@ -14390,11 +24059,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Dialogue Dual BOA 2027",
     "model": "Dialogue Dual BOA",
     "year": 2027,
-    "oneLiner": "官方档案型号；双区 BOA；官方标注中等硬度。尺码与脚感以实际试穿为准。",
+    "oneLiner": "中等硬度全山地/自由式雪鞋，Dual Zone BOA 与 Precision Harness 3.0 锁跟。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/ffcd71ac-1349-455b-8d18-b40c01097548/L49259900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "coverUrl": "https://cdn.dam.salomon.com/d72e65c3-9997-436f-89d5-b37d00cf5780/L49277200/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14406,15 +24075,229 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "双区 BOA"
+      "lacingSystem": "Dual Zone BOA 双区调节：上区控制支撑与弯曲感，下区锁定前掌",
+      "flex": "中等（Salomon 官方分类）",
+      "fit": "标准宽度；全山地/自由式取向，适合中级至高阶",
+      "terrain": "全山地；官方描述强调渐进式自由式表现",
+      "liner": "Response 全热塑性能鞋胆，踝部衬垫、魔术贴闭合与 Flexform 鞋头；Full Custom Fit 多密度泡棉",
+      "innerCuff": "Precision Harness 3.0 内部鞋跟带环绕前掌并锁定脚跟与踝部",
+      "outsole": "DAMPLite+ 外底，结合冬季橡胶、EVA 缓震与 Contagrip 抓地橡胶",
+      "footbed": "OrthoLite C2 双密度鞋垫与 Quickdry 快干鞋垫",
+      "sizeGuide": "官方男款页面尺码 US 7–13.5",
+      "sizeChart": [
+        {
+          "size": "US 男 3.5",
+          "usMen": "3.5",
+          "usWomen": "4",
+          "eu": "34.5",
+          "uk": "2.5",
+          "mondo": "22",
+          "footLength": "211-215",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 4",
+          "usMen": "4",
+          "usWomen": "5",
+          "eu": "35.5",
+          "uk": "3",
+          "mondo": "22.5",
+          "footLength": "216-220",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "eu": "36.5",
+          "uk": "4",
+          "mondo": "23",
+          "footLength": "221-225",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "eu": "37",
+          "uk": "4.5",
+          "mondo": "23.5",
+          "footLength": "226-230",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24",
+          "footLength": "231-235",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "38.5",
+          "uk": "5.5",
+          "mondo": "24.5",
+          "footLength": "236-240",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "39",
+          "uk": "6",
+          "mondo": "25",
+          "footLength": "241-245",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40",
+          "uk": "6.5",
+          "mondo": "25.5",
+          "footLength": "246-251",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "40.5",
+          "uk": "7",
+          "mondo": "26",
+          "footLength": "252-256",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5",
+          "footLength": "257-262",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27",
+          "footLength": "263-267",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5",
+          "footLength": "268-272",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28",
+          "footLength": "273-277",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "usWomen": "11.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5",
+          "footLength": "278-283",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "usWomen": "12",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29",
+          "footLength": "284-288",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "usWomen": "12.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5",
+          "footLength": "289-294",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "usWomen": "13",
+          "eu": "45.5",
+          "uk": "11",
+          "mondo": "30",
+          "footLength": "295-299",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "usWomen": "13.5",
+          "eu": "46",
+          "uk": "11.5",
+          "mondo": "30.5",
+          "footLength": "300-305",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "usWomen": "14",
+          "eu": "46.5",
+          "uk": "12",
+          "mondo": "31",
+          "footLength": "306-310",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13.5",
+          "usMen": "13.5",
+          "usWomen": "14.5",
+          "eu": "47",
+          "uk": "12.5",
+          "mondo": "31.5",
+          "footLength": "311-315",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/dialogue-dual-boa-li9150；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 429.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/dialogue-dual-boa-li9150",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "双区 BOA"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-84e2-75ae-8821-4b27579ec9b9",
@@ -14422,11 +24305,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Dialogue Dual BOA Team 2027",
     "model": "Dialogue Dual BOA Team",
     "year": 2027,
-    "oneLiner": "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。",
+    "oneLiner": "中等硬度全山地/自由式雪鞋，Team 配色版本采用双区 BOA 与 Precision Harness 3.0。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "coverUrl": "https://cdn.dam.salomon.com/5b8f5563-c91f-4f49-b794-b36700db5564/L49278500/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14438,15 +24321,229 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "双区 BOA"
+      "lacingSystem": "Dual Zone BOA 双区调节：上区控制支撑与弯曲感，下区锁定前掌",
+      "flex": "中等（Salomon 官方分类）",
+      "fit": "标准宽度；全山地/自由式取向，适合中级至高阶",
+      "terrain": "全山地；沿用 Dialogue Dual BOA 平台的自由式取向",
+      "liner": "Response 全热塑性能鞋胆，踝部衬垫、魔术贴闭合与 Flexform 鞋头；Full Custom Fit 多密度泡棉",
+      "innerCuff": "Precision Harness 3.0 内部鞋跟带环绕前掌并锁定脚跟与踝部",
+      "outsole": "DAMPLite+ 外底，结合冬季橡胶、EVA 缓震与 Contagrip 抓地橡胶",
+      "footbed": "OrthoLite C2 双密度鞋垫与 Quickdry 快干鞋垫",
+      "sizeGuide": "官方男款页面尺码 US 7–13.5",
+      "sizeChart": [
+        {
+          "size": "US 男 3.5",
+          "usMen": "3.5",
+          "usWomen": "4",
+          "eu": "34.5",
+          "uk": "2.5",
+          "mondo": "22",
+          "footLength": "211-215",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 4",
+          "usMen": "4",
+          "usWomen": "5",
+          "eu": "35.5",
+          "uk": "3",
+          "mondo": "22.5",
+          "footLength": "216-220",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "eu": "36.5",
+          "uk": "4",
+          "mondo": "23",
+          "footLength": "221-225",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "eu": "37",
+          "uk": "4.5",
+          "mondo": "23.5",
+          "footLength": "226-230",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24",
+          "footLength": "231-235",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "38.5",
+          "uk": "5.5",
+          "mondo": "24.5",
+          "footLength": "236-240",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "39",
+          "uk": "6",
+          "mondo": "25",
+          "footLength": "241-245",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40",
+          "uk": "6.5",
+          "mondo": "25.5",
+          "footLength": "246-251",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "40.5",
+          "uk": "7",
+          "mondo": "26",
+          "footLength": "252-256",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5",
+          "footLength": "257-262",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27",
+          "footLength": "263-267",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5",
+          "footLength": "268-272",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28",
+          "footLength": "273-277",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "usWomen": "11.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5",
+          "footLength": "278-283",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "usWomen": "12",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29",
+          "footLength": "284-288",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "usWomen": "12.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5",
+          "footLength": "289-294",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "usWomen": "13",
+          "eu": "45.5",
+          "uk": "11",
+          "mondo": "30",
+          "footLength": "295-299",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "usWomen": "13.5",
+          "eu": "46",
+          "uk": "11.5",
+          "mondo": "30.5",
+          "footLength": "300-305",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "usWomen": "14",
+          "eu": "46.5",
+          "uk": "12",
+          "mondo": "31",
+          "footLength": "306-310",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13.5",
+          "usMen": "13.5",
+          "usWomen": "14.5",
+          "eu": "47",
+          "uk": "12.5",
+          "mondo": "31.5",
+          "footLength": "311-315",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/dialogue-dual-boa-team-li9182；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 429.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/dialogue-dual-boa-team-li9182",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "双区 BOA"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-84ec-78d7-997a-49abe216a858",
@@ -14454,11 +24551,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Dialogue Dual BOA Wide 2027",
     "model": "Dialogue Dual BOA Wide",
     "year": 2027,
-    "oneLiner": "官方档案型号；宽楦；双区 BOA。尺码与脚感以实际试穿为准。",
+    "oneLiner": "宽楦中等硬度全山地/自由式雪鞋，双区 BOA 调节并配 Precision Harness 3.0 锁跟。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/f11bca7a-d437-4723-9233-b3e200a0ffbd/L45448100/PNG-2000px-max-72dpi.png?width=2000&fit=cover&optimize=medium&format=png",
+    "coverUrl": "https://cdn.dam.salomon.com/c3bbadcb-7bef-4e1e-b9f9-b37d00cfaf53/L45448100/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14470,15 +24567,229 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "宽楦"
+      "lacingSystem": "Dual Zone BOA 双区调节：上区控制支撑与弯曲感，下区锁定前掌",
+      "flex": "中等（Salomon 官方分类）",
+      "fit": "宽楦；官方说明按宽脚解剖结构设计",
+      "terrain": "全山地；偏自由式取向",
+      "liner": "Response 全热塑性能鞋胆，踝部衬垫、魔术贴闭合与 Flexform 鞋头；Full Custom Fit 多密度泡棉",
+      "innerCuff": "Precision Harness 3.0 内部鞋跟带环绕前掌并锁定脚跟与踝部",
+      "outsole": "DAMPLite+ 外底，结合冬季橡胶、EVA 缓震与 Contagrip 抓地橡胶",
+      "footbed": "OrthoLite C2 双密度鞋垫与 Quickdry 快干鞋垫",
+      "sizeGuide": "官方页面 Mondopoint 25.0–31.5",
+      "sizeChart": [
+        {
+          "size": "US 男 3.5",
+          "usMen": "3.5",
+          "usWomen": "4",
+          "eu": "34.5",
+          "uk": "2.5",
+          "mondo": "22",
+          "footLength": "211-215",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 4",
+          "usMen": "4",
+          "usWomen": "5",
+          "eu": "35.5",
+          "uk": "3",
+          "mondo": "22.5",
+          "footLength": "216-220",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "eu": "36.5",
+          "uk": "4",
+          "mondo": "23",
+          "footLength": "221-225",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "eu": "37",
+          "uk": "4.5",
+          "mondo": "23.5",
+          "footLength": "226-230",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24",
+          "footLength": "231-235",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "38.5",
+          "uk": "5.5",
+          "mondo": "24.5",
+          "footLength": "236-240",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "39",
+          "uk": "6",
+          "mondo": "25",
+          "footLength": "241-245",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40",
+          "uk": "6.5",
+          "mondo": "25.5",
+          "footLength": "246-251",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "40.5",
+          "uk": "7",
+          "mondo": "26",
+          "footLength": "252-256",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5",
+          "footLength": "257-262",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27",
+          "footLength": "263-267",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5",
+          "footLength": "268-272",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28",
+          "footLength": "273-277",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "usWomen": "11.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5",
+          "footLength": "278-283",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "usWomen": "12",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29",
+          "footLength": "284-288",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "usWomen": "12.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5",
+          "footLength": "289-294",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "usWomen": "13",
+          "eu": "45.5",
+          "uk": "11",
+          "mondo": "30",
+          "footLength": "295-299",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "usWomen": "13.5",
+          "eu": "46",
+          "uk": "11.5",
+          "mondo": "30.5",
+          "footLength": "300-305",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "usWomen": "14",
+          "eu": "46.5",
+          "uk": "12",
+          "mondo": "31",
+          "footLength": "306-310",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13.5",
+          "usMen": "13.5",
+          "usWomen": "14.5",
+          "eu": "47",
+          "uk": "12.5",
+          "mondo": "31.5",
+          "footLength": "311-315",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 Wide 应与该品牌同型号标准版比较，不能视为跨品牌统一宽度。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/dialogue-dual-boa-wide-li9184；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 429.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/dialogue-dual-boa-wide-li9184",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "宽楦"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-84f5-755a-9e9b-fb18482cffdb",
@@ -14486,11 +24797,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Echo Dual BOA 2027",
     "model": "Echo Dual BOA",
     "year": 2027,
-    "oneLiner": "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。",
+    "oneLiner": "全山地/自由滑取向，中等至偏硬脚感，Precision Harness 2.0 锁跟并配 MTN GOAT 外底。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "coverUrl": "https://cdn.dam.salomon.com/a49973b1-d25c-4d92-8003-b3600109189a/L49298000/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14502,15 +24813,230 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "双区 BOA"
+      "lacingSystem": "Dual Zone BOA 双区调节：上区控制支撑与弯曲感，下区锁定前掌",
+      "flex": "中等至偏硬（官方分档；定性描述为中等支撑）",
+      "fit": "标准宽度；全山地与自由滑定位，适合进阶/高阶",
+      "terrain": "全山地/自由滑；官方定位用于多地形滑行",
+      "liner": "Precision 全热塑鞋胆，配泡棉踝部包裹与 Precision Harness 2.0",
+      "innerCuff": "Precision Harness 2.0 内置脚跟/踝部固定结构",
+      "outsole": "MTN GOAT 橡胶外底，含 30% 天然橡胶；Fuze Surge 中底",
+      "warmthFeatures": "鞋头区域含 78% 再生 3M Thinsulate 保暖材料；雪裙阻挡进雪",
+      "footbed": "Relief 羊毛鞋垫（100% 天然羊毛、86% 再生泡棉）；Quickdry 快干结构",
+      "sizeGuide": "官方男款页面尺码 US 7–13.5",
+      "sizeChart": [
+        {
+          "size": "US 男 3.5",
+          "usMen": "3.5",
+          "usWomen": "4",
+          "eu": "34.5",
+          "uk": "2.5",
+          "mondo": "22",
+          "footLength": "211-215",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 4",
+          "usMen": "4",
+          "usWomen": "5",
+          "eu": "35.5",
+          "uk": "3",
+          "mondo": "22.5",
+          "footLength": "216-220",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "eu": "36.5",
+          "uk": "4",
+          "mondo": "23",
+          "footLength": "221-225",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "eu": "37",
+          "uk": "4.5",
+          "mondo": "23.5",
+          "footLength": "226-230",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24",
+          "footLength": "231-235",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "38.5",
+          "uk": "5.5",
+          "mondo": "24.5",
+          "footLength": "236-240",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "39",
+          "uk": "6",
+          "mondo": "25",
+          "footLength": "241-245",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40",
+          "uk": "6.5",
+          "mondo": "25.5",
+          "footLength": "246-251",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "40.5",
+          "uk": "7",
+          "mondo": "26",
+          "footLength": "252-256",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5",
+          "footLength": "257-262",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27",
+          "footLength": "263-267",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5",
+          "footLength": "268-272",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28",
+          "footLength": "273-277",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "usWomen": "11.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5",
+          "footLength": "278-283",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "usWomen": "12",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29",
+          "footLength": "284-288",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "usWomen": "12.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5",
+          "footLength": "289-294",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "usWomen": "13",
+          "eu": "45.5",
+          "uk": "11",
+          "mondo": "30",
+          "footLength": "295-299",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "usWomen": "13.5",
+          "eu": "46",
+          "uk": "11.5",
+          "mondo": "30.5",
+          "footLength": "300-305",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "usWomen": "14",
+          "eu": "46.5",
+          "uk": "12",
+          "mondo": "31",
+          "footLength": "306-310",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13.5",
+          "usMen": "13.5",
+          "usWomen": "14.5",
+          "eu": "47",
+          "uk": "12.5",
+          "mondo": "31.5",
+          "footLength": "311-315",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 469.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/echo-dual-boa-li8035",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "双区 BOA"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-84ff-7a5e-8e71-7a744721aa6c",
@@ -14518,11 +25044,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Faction BOA 2027",
     "model": "Faction BOA",
     "year": 2027,
-    "oneLiner": "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "新手进阶全山地雪鞋，柔软脚感、单 BOA 系带与轻量 Feather 1.0 外底。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/eda3d183-166b-40cf-9bbc-b36001090e5c/L49140500/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "coverUrl": "https://cdn.dam.salomon.com/9c1d11ae-9c2b-48d9-bbb2-b3600109091b/L49270000/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14534,15 +25060,228 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "BOA 系带"
+      "lacingSystem": "单 BOA Coiler 系带，H4 Coiler 快速收线，TX3 纺织鞋带",
+      "flex": "柔软（Salomon 官方分类）",
+      "fit": "标准宽度；全山地定位，官方适用等级为新手/中级",
+      "terrain": "全山地；适用于新手至中级滑手",
+      "liner": "Universal 热塑鞋胆，Full Custom Fit 多密度泡棉",
+      "outsole": "Feather 1.0 轻量外底：EVA 与 Contagrip 橡胶组合，吸震并提供抓地",
+      "footbed": "Imprint 舒适鞋垫",
+      "sizeGuide": "官方男款页面尺码 US 7–13.5",
+      "sizeChart": [
+        {
+          "size": "US 男 3.5",
+          "usMen": "3.5",
+          "usWomen": "4",
+          "eu": "34.5",
+          "uk": "2.5",
+          "mondo": "22",
+          "footLength": "211-215",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 4",
+          "usMen": "4",
+          "usWomen": "5",
+          "eu": "35.5",
+          "uk": "3",
+          "mondo": "22.5",
+          "footLength": "216-220",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "eu": "36.5",
+          "uk": "4",
+          "mondo": "23",
+          "footLength": "221-225",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "eu": "37",
+          "uk": "4.5",
+          "mondo": "23.5",
+          "footLength": "226-230",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24",
+          "footLength": "231-235",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "38.5",
+          "uk": "5.5",
+          "mondo": "24.5",
+          "footLength": "236-240",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "39",
+          "uk": "6",
+          "mondo": "25",
+          "footLength": "241-245",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40",
+          "uk": "6.5",
+          "mondo": "25.5",
+          "footLength": "246-251",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "40.5",
+          "uk": "7",
+          "mondo": "26",
+          "footLength": "252-256",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5",
+          "footLength": "257-262",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27",
+          "footLength": "263-267",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5",
+          "footLength": "268-272",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28",
+          "footLength": "273-277",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "usWomen": "11.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5",
+          "footLength": "278-283",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "usWomen": "12",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29",
+          "footLength": "284-288",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "usWomen": "12.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5",
+          "footLength": "289-294",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "usWomen": "13",
+          "eu": "45.5",
+          "uk": "11",
+          "mondo": "30",
+          "footLength": "295-299",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "usWomen": "13.5",
+          "eu": "46",
+          "uk": "11.5",
+          "mondo": "30.5",
+          "footLength": "300-305",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "usWomen": "14",
+          "eu": "46.5",
+          "uk": "12",
+          "mondo": "31",
+          "footLength": "306-310",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13.5",
+          "usMen": "13.5",
+          "usWomen": "14.5",
+          "eu": "47",
+          "uk": "12.5",
+          "mondo": "31.5",
+          "footLength": "311-315",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/faction-boa-li9008；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 279.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/faction-boa-li9008",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "BOA 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-850a-737b-8ec9-189b0684fe5e",
@@ -14550,11 +25289,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Launch BOA SJ BOA 2027",
     "model": "Launch BOA SJ BOA",
     "year": 2027,
-    "oneLiner": "官方档案型号；BOA 配合内部脚跟锁定系统。尺码与脚感以实际试穿为准。",
+    "oneLiner": "中等硬度全山地/自由式雪鞋，单 BOA 系带与 Str8jkt Pro 三点锁跟系统。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/0014fcf7-0671-47c1-8bdd-b40c010d18ef/L49262200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "coverUrl": "https://cdn.dam.salomon.com/f67819a3-e8b6-485a-a379-b36001090599/L49261400/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14566,15 +25305,229 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "BOA 配合内部脚跟锁定系统"
+      "lacingSystem": "单 BOA Coiler 系带；BOA 驱动 Str8jkt Pro 三点式脚跟锁定",
+      "flex": "中等（Salomon 官方分类）",
+      "fit": "标准宽度；全山地/自由式取向，适合中级至高阶",
+      "terrain": "全山地/自由式",
+      "liner": "Comfort 热塑鞋胆，柔软包裹并采用 Full Custom Fit 多密度泡棉",
+      "innerCuff": "Str8jkt BOA Pro 三点式鞋跟带，滑动扣具可微调贴合",
+      "outsole": "Feather 2.0 轻量外底：EVA 与 Contagrip 橡胶组合，提供抓地和吸震",
+      "footbed": "OrthoLite C2 双密度鞋垫",
+      "sizeGuide": "官方男款页面尺码 US 7–13.5",
+      "sizeChart": [
+        {
+          "size": "US 男 3.5",
+          "usMen": "3.5",
+          "usWomen": "4",
+          "eu": "34.5",
+          "uk": "2.5",
+          "mondo": "22",
+          "footLength": "211-215",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 4",
+          "usMen": "4",
+          "usWomen": "5",
+          "eu": "35.5",
+          "uk": "3",
+          "mondo": "22.5",
+          "footLength": "216-220",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "eu": "36.5",
+          "uk": "4",
+          "mondo": "23",
+          "footLength": "221-225",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "eu": "37",
+          "uk": "4.5",
+          "mondo": "23.5",
+          "footLength": "226-230",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24",
+          "footLength": "231-235",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "38.5",
+          "uk": "5.5",
+          "mondo": "24.5",
+          "footLength": "236-240",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "39",
+          "uk": "6",
+          "mondo": "25",
+          "footLength": "241-245",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40",
+          "uk": "6.5",
+          "mondo": "25.5",
+          "footLength": "246-251",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "40.5",
+          "uk": "7",
+          "mondo": "26",
+          "footLength": "252-256",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5",
+          "footLength": "257-262",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27",
+          "footLength": "263-267",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5",
+          "footLength": "268-272",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28",
+          "footLength": "273-277",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "usWomen": "11.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5",
+          "footLength": "278-283",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "usWomen": "12",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29",
+          "footLength": "284-288",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "usWomen": "12.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5",
+          "footLength": "289-294",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "usWomen": "13",
+          "eu": "45.5",
+          "uk": "11",
+          "mondo": "30",
+          "footLength": "295-299",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "usWomen": "13.5",
+          "eu": "46",
+          "uk": "11.5",
+          "mondo": "30.5",
+          "footLength": "300-305",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "usWomen": "14",
+          "eu": "46.5",
+          "uk": "12",
+          "mondo": "31",
+          "footLength": "306-310",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13.5",
+          "usMen": "13.5",
+          "usWomen": "14.5",
+          "eu": "47",
+          "uk": "12.5",
+          "mondo": "31.5",
+          "footLength": "311-315",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 389.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "BOA 配合内部脚跟锁定系统"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8517-7d76-8654-5cdbc22c6a8e",
@@ -14582,11 +25535,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Malamute Dual BOA 2027",
     "model": "Malamute Dual BOA",
     "year": 2027,
-    "oneLiner": "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。",
+    "oneLiner": "偏硬自由滑雪鞋，Power Frame 强化鞋身、可选 Dyna Flex 舌片与 MTN GOAT 外底。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/3d71cf3c-5e2c-4237-b2c2-b2f4008d48ad/L47773300/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "coverUrl": "https://cdn.dam.salomon.com/3d71cf3c-5e2c-4237-b2c2-b2f4008d48ad/L47773300/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14598,15 +25551,230 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "双区 BOA"
+      "lacingSystem": "Dual Zone BOA 双区调节：上区控制支撑与弯曲感，下区锁定前掌",
+      "flex": "偏硬（Salomon 官方分类）；可选 Dyna Flex 舌片加强支撑",
+      "fit": "标准宽度；自由滑定位，适合进阶/高阶",
+      "terrain": "自由滑/全山地；偏向进阶及高阶滑行",
+      "liner": "Precision 全热塑鞋胆，泡棉踝部包裹与 Precision Harness 2.0",
+      "innerCuff": "Precision Harness 2.0 锁定脚跟与踝部；Power Frame RPU 鞋身强化",
+      "outsole": "MTN GOAT 橡胶外底，含 30% 天然橡胶；Fuze Surge 中底",
+      "warmthFeatures": "78% 再生 3M Thinsulate 保暖材料；Fuze Surge 中底",
+      "footbed": "Relief 羊毛鞋垫（100% 天然羊毛、86% 再生泡棉）；Quickdry 快干结构",
+      "sizeGuide": "官方男款页面尺码 US 6–13.5",
+      "sizeChart": [
+        {
+          "size": "US 男 3.5",
+          "usMen": "3.5",
+          "usWomen": "4",
+          "eu": "34.5",
+          "uk": "2.5",
+          "mondo": "22",
+          "footLength": "211-215",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 4",
+          "usMen": "4",
+          "usWomen": "5",
+          "eu": "35.5",
+          "uk": "3",
+          "mondo": "22.5",
+          "footLength": "216-220",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "eu": "36.5",
+          "uk": "4",
+          "mondo": "23",
+          "footLength": "221-225",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "eu": "37",
+          "uk": "4.5",
+          "mondo": "23.5",
+          "footLength": "226-230",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24",
+          "footLength": "231-235",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "38.5",
+          "uk": "5.5",
+          "mondo": "24.5",
+          "footLength": "236-240",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "39",
+          "uk": "6",
+          "mondo": "25",
+          "footLength": "241-245",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40",
+          "uk": "6.5",
+          "mondo": "25.5",
+          "footLength": "246-251",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "40.5",
+          "uk": "7",
+          "mondo": "26",
+          "footLength": "252-256",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5",
+          "footLength": "257-262",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27",
+          "footLength": "263-267",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5",
+          "footLength": "268-272",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28",
+          "footLength": "273-277",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "usWomen": "11.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5",
+          "footLength": "278-283",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "usWomen": "12",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29",
+          "footLength": "284-288",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "usWomen": "12.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5",
+          "footLength": "289-294",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "usWomen": "13",
+          "eu": "45.5",
+          "uk": "11",
+          "mondo": "30",
+          "footLength": "295-299",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "usWomen": "13.5",
+          "eu": "46",
+          "uk": "11.5",
+          "mondo": "30.5",
+          "footLength": "300-305",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "usWomen": "14",
+          "eu": "46.5",
+          "uk": "12",
+          "mondo": "31",
+          "footLength": "306-310",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13.5",
+          "usMen": "13.5",
+          "usWomen": "14.5",
+          "eu": "47",
+          "uk": "12.5",
+          "mondo": "31.5",
+          "footLength": "311-315",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/malamute-dual-boa-li8071；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 499.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/malamute-dual-boa-li8071",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "双区 BOA"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8520-7e28-8af4-dc28f5616167",
@@ -14614,11 +25782,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Titan BOA 2027",
     "model": "Titan BOA",
     "year": 2027,
-    "oneLiner": "官方档案型号；BOA 系带。尺码与脚感以实际试穿为准。",
+    "oneLiner": "柔软全山地入门雪鞋，单 BOA 系带、Universal 热塑鞋胆与轻量 D-Light 外底。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "coverUrl": "https://cdn.dam.salomon.com/2f5a59c3-6fa1-4e55-9a3a-b2f800ae89f1/L47242900/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14630,15 +25798,228 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "BOA 系带"
+      "lacingSystem": "单 BOA 系带，H4 BOA 旋钮与 TX3 纺织鞋带",
+      "flex": "柔软（Salomon 官方分类）",
+      "fit": "标准宽度；全山地用途，官方适用等级为新手/中级",
+      "terrain": "全山地；新手至中级",
+      "liner": "Universal 热塑鞋胆，Full Custom Fit 多密度泡棉",
+      "outsole": "D-Light 低轮廓全 EVA 外底，轻量并提供缓震与板感",
+      "footbed": "Imprint 舒适耐用鞋垫",
+      "sizeGuide": "官方男款页面尺码 US 7–13.5",
+      "sizeChart": [
+        {
+          "size": "US 男 3.5",
+          "usMen": "3.5",
+          "usWomen": "4",
+          "eu": "34.5",
+          "uk": "2.5",
+          "mondo": "22",
+          "footLength": "211-215",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 4",
+          "usMen": "4",
+          "usWomen": "5",
+          "eu": "35.5",
+          "uk": "3",
+          "mondo": "22.5",
+          "footLength": "216-220",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "eu": "36.5",
+          "uk": "4",
+          "mondo": "23",
+          "footLength": "221-225",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "eu": "37",
+          "uk": "4.5",
+          "mondo": "23.5",
+          "footLength": "226-230",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24",
+          "footLength": "231-235",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "38.5",
+          "uk": "5.5",
+          "mondo": "24.5",
+          "footLength": "236-240",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "39",
+          "uk": "6",
+          "mondo": "25",
+          "footLength": "241-245",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40",
+          "uk": "6.5",
+          "mondo": "25.5",
+          "footLength": "246-251",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "40.5",
+          "uk": "7",
+          "mondo": "26",
+          "footLength": "252-256",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5",
+          "footLength": "257-262",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27",
+          "footLength": "263-267",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5",
+          "footLength": "268-272",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28",
+          "footLength": "273-277",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "usWomen": "11.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5",
+          "footLength": "278-283",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "usWomen": "12",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29",
+          "footLength": "284-288",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "usWomen": "12.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5",
+          "footLength": "289-294",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "usWomen": "13",
+          "eu": "45.5",
+          "uk": "11",
+          "mondo": "30",
+          "footLength": "295-299",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "usWomen": "13.5",
+          "eu": "46",
+          "uk": "11.5",
+          "mondo": "30.5",
+          "footLength": "300-305",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "usWomen": "14",
+          "eu": "46.5",
+          "uk": "12",
+          "mondo": "31",
+          "footLength": "306-310",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13.5",
+          "usMen": "13.5",
+          "usWomen": "14.5",
+          "eu": "47",
+          "uk": "12.5",
+          "mondo": "31.5",
+          "footLength": "311-315",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/titan-boa-lg5971；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 269.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/titan-boa-lg5971",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "BOA 系带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-852b-751a-886d-dca65d2bbe24",
@@ -14646,11 +26027,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon Trek 2027",
     "model": "Trek",
     "year": 2027,
-    "oneLiner": "官方档案型号；徒步/登山取向单板雪鞋。尺码与脚感以实际试穿为准。",
+    "oneLiner": "登山巡航取向单板雪鞋，铰接式鞋口配 Hike & Ride BOA，适合上坡行走与下坡滑行。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "coverUrl": "https://cdn.dam.salomon.com/43a6291e-fa13-41ef-a252-b2f800ae88e5/L47033600/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14662,15 +26043,229 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "徒步/登山取向单板雪鞋"
+      "lacingSystem": "Hike & Ride BOA 可调行走活动范围，另配传统鞋带与 Powerstrap",
+      "flex": "偏硬（Salomon 官方分类）",
+      "fit": "标准宽度；Touring 登山巡航用途，官方适用等级为高阶",
+      "terrain": "雪场外巡航/登山用途；铰接式鞋口支持上坡活动与下坡锁定",
+      "liner": "Drive 支撑型透气鞋胆，带 Split-Mode 活动区；Full Custom Fit Pro 热塑多密度泡棉",
+      "innerCuff": "可调内部鞋跟带固定鞋胆；Powerstrap 可调支撑",
+      "outsole": "MTN GOAT 橡胶外底，含 30% 天然橡胶；Contagrip W 抓地配方与 Fuze Surge 中底",
+      "footbed": "OrthoLite C3 双密度鞋垫，带成型后跟杯",
+      "sizeGuide": "官方男款页面尺码 US 7–12.5",
+      "sizeChart": [
+        {
+          "size": "US 男 3.5",
+          "usMen": "3.5",
+          "usWomen": "4",
+          "eu": "34.5",
+          "uk": "2.5",
+          "mondo": "22",
+          "footLength": "211-215",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 4",
+          "usMen": "4",
+          "usWomen": "5",
+          "eu": "35.5",
+          "uk": "3",
+          "mondo": "22.5",
+          "footLength": "216-220",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "eu": "36.5",
+          "uk": "4",
+          "mondo": "23",
+          "footLength": "221-225",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "eu": "37",
+          "uk": "4.5",
+          "mondo": "23.5",
+          "footLength": "226-230",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24",
+          "footLength": "231-235",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "38.5",
+          "uk": "5.5",
+          "mondo": "24.5",
+          "footLength": "236-240",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "39",
+          "uk": "6",
+          "mondo": "25",
+          "footLength": "241-245",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40",
+          "uk": "6.5",
+          "mondo": "25.5",
+          "footLength": "246-251",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "40.5",
+          "uk": "7",
+          "mondo": "26",
+          "footLength": "252-256",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5",
+          "footLength": "257-262",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27",
+          "footLength": "263-267",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5",
+          "footLength": "268-272",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28",
+          "footLength": "273-277",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "usWomen": "11.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5",
+          "footLength": "278-283",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "usWomen": "12",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29",
+          "footLength": "284-288",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "usWomen": "12.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5",
+          "footLength": "289-294",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "usWomen": "13",
+          "eu": "45.5",
+          "uk": "11",
+          "mondo": "30",
+          "footLength": "295-299",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "usWomen": "13.5",
+          "eu": "46",
+          "uk": "11.5",
+          "mondo": "30.5",
+          "footLength": "300-305",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "usWomen": "14",
+          "eu": "46.5",
+          "uk": "12",
+          "mondo": "31",
+          "footLength": "306-310",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13.5",
+          "usMen": "13.5",
+          "usWomen": "14.5",
+          "eu": "47",
+          "uk": "12.5",
+          "mondo": "31.5",
+          "footLength": "311-315",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/trek-lg8695；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 599.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/trek-lg8695",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "徒步/登山取向单板雪鞋"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0d1bf-8534-788d-a572-5dcd0f82600f",
@@ -14678,11 +26273,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Salomon X Approach Lace SJ BOA 2027",
     "model": "X Approach Lace SJ BOA",
     "year": 2027,
-    "oneLiner": "官方档案型号；鞋带与 BOA 脚跟锁定组合。尺码与脚感以实际试穿为准。",
+    "oneLiner": "中等硬度公园/自由式取向雪鞋，传统鞋带搭配 BOA 驱动 Str8jkt 脚跟锁定。",
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": "https://cdn.dam.salomon.com/2d8d238e-a3de-42e8-8636-b3600108ff81/L45418900/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+    "coverUrl": "https://cdn.dam.salomon.com/2d8d238e-a3de-42e8-8636-b3600108ff81/L45418900/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -14694,15 +26289,229 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-boot",
     "specs": {
-      "lacingSystem": "鞋带与 BOA 脚跟锁定组合"
+      "lacingSystem": "传统鞋带；BOA 驱动 Str8jkt 脚跟锁定系统",
+      "flex": "中等（Salomon 官方分类）",
+      "fit": "标准宽度；官方标注男女通用，全山地/自由式定位",
+      "terrain": "全山地；官方说明为公园/自由式雪鞋",
+      "liner": "Comfort 全热塑鞋胆，柔软包裹与 Full Custom Fit 多密度泡棉",
+      "innerCuff": "BOA 激活 Str8jkt 鞋跟带，减少脚跟抬起",
+      "outsole": "Feather 2.0 轻量外底：EVA 与 Contagrip 橡胶组合，提供抓地和吸震",
+      "footbed": "OrthoLite C2 双密度鞋垫",
+      "sizeGuide": "官方男女通用页面尺码 US 5–13.5",
+      "sizeChart": [
+        {
+          "size": "US 男 3.5",
+          "usMen": "3.5",
+          "usWomen": "4",
+          "eu": "34.5",
+          "uk": "2.5",
+          "mondo": "22",
+          "footLength": "211-215",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 4",
+          "usMen": "4",
+          "usWomen": "5",
+          "eu": "35.5",
+          "uk": "3",
+          "mondo": "22.5",
+          "footLength": "216-220",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5",
+          "usMen": "5",
+          "usWomen": "6",
+          "eu": "36.5",
+          "uk": "4",
+          "mondo": "23",
+          "footLength": "221-225",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 5.5",
+          "usMen": "5.5",
+          "usWomen": "6.5",
+          "eu": "37",
+          "uk": "4.5",
+          "mondo": "23.5",
+          "footLength": "226-230",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6",
+          "usMen": "6",
+          "usWomen": "7",
+          "eu": "38",
+          "uk": "5",
+          "mondo": "24",
+          "footLength": "231-235",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 6.5",
+          "usMen": "6.5",
+          "usWomen": "7.5",
+          "eu": "38.5",
+          "uk": "5.5",
+          "mondo": "24.5",
+          "footLength": "236-240",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7",
+          "usMen": "7",
+          "usWomen": "8",
+          "eu": "39",
+          "uk": "6",
+          "mondo": "25",
+          "footLength": "241-245",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 7.5",
+          "usMen": "7.5",
+          "usWomen": "8.5",
+          "eu": "40",
+          "uk": "6.5",
+          "mondo": "25.5",
+          "footLength": "246-251",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8",
+          "usMen": "8",
+          "usWomen": "9",
+          "eu": "40.5",
+          "uk": "7",
+          "mondo": "26",
+          "footLength": "252-256",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 8.5",
+          "usMen": "8.5",
+          "usWomen": "9.5",
+          "eu": "41.5",
+          "uk": "7.5",
+          "mondo": "26.5",
+          "footLength": "257-262",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9",
+          "usMen": "9",
+          "usWomen": "10",
+          "eu": "42",
+          "uk": "8",
+          "mondo": "27",
+          "footLength": "263-267",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 9.5",
+          "usMen": "9.5",
+          "usWomen": "10.5",
+          "eu": "42.5",
+          "uk": "8.5",
+          "mondo": "27.5",
+          "footLength": "268-272",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10",
+          "usMen": "10",
+          "usWomen": "11",
+          "eu": "43",
+          "uk": "9",
+          "mondo": "28",
+          "footLength": "273-277",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 10.5",
+          "usMen": "10.5",
+          "usWomen": "11.5",
+          "eu": "43.5",
+          "uk": "9.5",
+          "mondo": "28.5",
+          "footLength": "278-283",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11",
+          "usMen": "11",
+          "usWomen": "12",
+          "eu": "44",
+          "uk": "10",
+          "mondo": "29",
+          "footLength": "284-288",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 11.5",
+          "usMen": "11.5",
+          "usWomen": "12.5",
+          "eu": "44.5",
+          "uk": "10.5",
+          "mondo": "29.5",
+          "footLength": "289-294",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12",
+          "usMen": "12",
+          "usWomen": "13",
+          "eu": "45.5",
+          "uk": "11",
+          "mondo": "30",
+          "footLength": "295-299",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 12.5",
+          "usMen": "12.5",
+          "usWomen": "13.5",
+          "eu": "46",
+          "uk": "11.5",
+          "mondo": "30.5",
+          "footLength": "300-305",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13",
+          "usMen": "13",
+          "usWomen": "14",
+          "eu": "46.5",
+          "uk": "12",
+          "mondo": "31",
+          "footLength": "306-310",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        },
+        {
+          "size": "US 男 13.5",
+          "usMen": "13.5",
+          "usWomen": "14.5",
+          "eu": "47",
+          "uk": "12.5",
+          "mondo": "31.5",
+          "footLength": "311-315",
+          "notes": "Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。"
+        }
+      ],
+      "bindingCompatibility": "常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。",
+      "selectionNotes": "穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。",
+      "fitEvidence": "官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。",
+      "heatMolding": "官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/x-approach-lace-sj-boa-li5866；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+      "priceCheckedAt": "2026-10-12",
+      "officialPrice": "USD 349.95",
+      "priceMarket": "原币 USD；来源商店 www.salomon.com",
+      "priceSource": "https://www.salomon.com/en-us/product/x-approach-lace-sj-boa-li5866",
+      "priceStatus": "当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。"
     },
-    "highlights": [
-      {
-        "key": "lacingSystem",
-        "label": "闭合系统",
-        "value": "鞋带与 BOA 脚跟锁定组合"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-0dd2-7d51-bb80-a6285e4252ea",
@@ -14743,28 +26552,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "sportsModes": "180+",
       "healthSensors": "BioTracker™ 6.0 PPG 生物识别传感器 (5PD+2LED)"
     },
-    "highlights": [
-      {
-        "key": "displaySize",
-        "label": "屏幕尺寸",
-        "value": "1.5英寸"
-      },
-      {
-        "key": "peakBrightness",
-        "label": "峰值亮度",
-        "value": "3000nits"
-      },
-      {
-        "key": "weight",
-        "label": "重量",
-        "value": "75g"
-      },
-      {
-        "key": "waterResistance",
-        "label": "防水等级",
-        "value": "10ATM"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c87c-0073-7d8e-ac08-7f61ea98506a",
@@ -14803,28 +26591,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "weight": 1.2,
       "loadCapacity": 12
     },
-    "highlights": [
-      {
-        "key": "sections",
-        "label": "脚管节数",
-        "value": "4节"
-      },
-      {
-        "key": "tubeMaxDiameter",
-        "label": "管径上限",
-        "value": "25.8mm"
-      },
-      {
-        "key": "tubeMinDiameter",
-        "label": "管径下限",
-        "value": "15mm"
-      },
-      {
-        "key": "minHeight",
-        "label": "最低高度",
-        "value": "140mm"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c879-0de1-7c52-b51d-cee0d9821a30",
@@ -14854,13 +26621,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "stabilization": "三轴机械云台增稳",
       "verticalShooting": true
     },
-    "highlights": [
-      {
-        "key": "screenSize",
-        "label": "屏幕尺寸",
-        "value": "2英寸"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a0c87c-008a-721e-91f5-75715e144089",
@@ -14887,7 +26648,6 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "lightType": "COB 摄影灯",
       "power": 75,
       "colorTemperature": "2800K~6500K",
-      "illuminance": 25100,
       "dimmingRange": "0%~100%",
       "cri": 96,
       "tlci": 97,
@@ -14898,29 +26658,9 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "dimensions": "140mm*236mm*215mm",
       "weight": 1.5,
       "mount": "保荣卡口",
-      "lowNoise": true
+      "lowNoise": true,
+      "illuminance": 25100
     },
-    "highlights": [
-      {
-        "key": "power",
-        "label": "最大功率",
-        "value": "75W"
-      },
-      {
-        "key": "illuminance",
-        "label": "最高照度",
-        "value": "25100lux"
-      },
-      {
-        "key": "cri",
-        "label": "显色指数下限",
-        "value": "96"
-      },
-      {
-        "key": "tlci",
-        "label": "电视光源一致性指数下限",
-        "value": "97"
-      }
-    ]
+    "highlights": []
   }
 ];

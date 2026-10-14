@@ -1,0 +1,32 @@
+{
+  "slug": "nitro-poison-binding-2027",
+  "price": "EUR 349.9",
+  "source": "https://www.nitrosnowboards.com/products/poison-womens-bindings-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:18.287Z",
+  "productName": "Nitro Poison Women's Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/poison-womens-bindings-1",
+  "hasVariant": [
+    {
+      "@id": "/products/poison-womens-bindings-1?variant=57277691068747#variant",
+      "@type": "Product",
+      "gtin": "7630349335247",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21009-101_Poison-Womens-Bindings_Ultra-Black_Product-1.jpg?v=1779339363&width=1920",
+      "name": "Nitro Poison Women's Bindings - Ultra Black / S/M",
+      "offers": {
+        "@id": "/products/poison-womens-bindings-1?variant=57277691068747#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/poison-womens-bindings-1?variant=57277691068747"
+      },
+      "sku": "12BG21009-101-S/M"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "4e0bd6883c34b64481bd63158c438fa38b95c99cc478d98a05e92f7e9d90961c",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

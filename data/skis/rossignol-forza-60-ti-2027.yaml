@@ -10,16 +10,48 @@ specs:
   waistWidth: 75
   turnRadius: 11
   turnRadiusReferenceLength: 156 cm
-  sidecutDimensions: "156 cm: 130-75-112 mm / 11 m；164 cm: 130-75-112 mm / 12 m；171 cm: 130-75-112 mm / 13 m；179 cm: 130-75-112 mm / 14 m"
+  sidecutDimensions: "156 cm: 130-75-112 mm / 11 m；164 cm: 130-75-112 mm / 12
+    m；171 cm: 130-75-112 mm / 13 m；179 cm: 130-75-112 mm / 14 m"
   profile: Tip Rocker；传统 Camber
   core: PEFC 杨木木芯
   construction: Rectangular Full Sidewall
-  technologies: V-Profile；Titanal Beam；Carbon Alloy Matrix；Reinforced Torsion Tip Technology；V-A-S；Sintered HD Base；Premium Hardtop；Oversized Sidecut
+  technologies: V-Profile；Titanal Beam；Carbon Alloy Matrix；Reinforced Torsion Tip
+    Technology；V-A-S；Sintered HD Base；Premium Hardtop；Oversized Sidecut
   terrain: 雪道 / carving
   skierLevel: 进阶至专家
   bindingSetup: KONECT 系统板；商品页可选无固定器或 SPX 12 KONECT 固定器
+  weightBasis: 官方重量字段的单位或配置口径尚需确认，本轮不填逐长度重量。
+  sizeSpecs:
+    - size: 156 cm
+      noseWidth: 130
+      waistWidth: 75
+      tailWidth: 112
+      turnRadius: 11
+    - size: 164 cm
+      noseWidth: 130
+      waistWidth: 75
+      tailWidth: 112
+      turnRadius: 12
+    - size: 171 cm
+      noseWidth: 130
+      waistWidth: 75
+      tailWidth: 112
+      turnRadius: 13
+    - size: 179 cm
+      noseWidth: 130
+      waistWidth: 75
+      tailWidth: 112
+      turnRadius: 14
+  geometryNotes: 已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。
+  bindingCompatibility: 官方可选 SPX 12 KONECT GW B80：成人 Alpine ISO 5355 A / GripWalk ISO 23223 A，BSL
+    260–375 mm。仅适用于该固定器选项；选择无固定器版本时需另核对实际配置。
+  mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
+  seasonEvidence: 官方页面未明确雪季，年款待核，本轮不改变草稿状态。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.rossignol.com/us-en/rossignol-forza-60-ti-skis-konect-RAOPS01000.html；https://www.grip-walk.com/faq/
 images:
-  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/default/dw7efb611e/images/large/RAOPS01000_72DPI_01_v01.jpg"
+  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/\
+      default/dw7efb611e/images/large/RAOPS01000_72DPI_01_v01.jpg"
     kind: face
     alt: Rossignol Forza 60 TI KONECT 2026/27 官方雪板商品图
     source: Rossignol 官方产品页（图片使用授权待核）

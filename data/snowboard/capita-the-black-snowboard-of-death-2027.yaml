@@ -13,7 +13,6 @@ specs:
   length: 159
   effectiveEdge: 1221
   waistWidth: 259
-  sidecut: 8.4
   stanceSetback: 20.3
   profile: Alpine V1 Directional + Flat Kick Tech
   profileFamily: hybrid
@@ -25,6 +24,19 @@ specs:
   scenes:
     - all-mountain
     - powder
+  lengthOptions: 156 / 159 / 162 / 157W / 161W / 165W / 169W
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "156", effectiveEdge: 1197, waistWidth: 256, noseWidth: 297, tailWidth: 295, sidecutRadii: 8.2/7.8/7.6 m, stanceWidth: 559 mm（参考）, riderWeight: 130-190 lb / 59-86 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "159", effectiveEdge: 1221, waistWidth: 259, noseWidth: 300, tailWidth: 299, sidecutRadii: 8.4/8.0/7.8 m, stanceWidth: 559 mm（参考）, riderWeight: 140-200 lb / 63-90 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "162", effectiveEdge: 1245, waistWidth: 262, noseWidth: 304, tailWidth: 303, sidecutRadii: 8.6/8.2/8.0 m, stanceWidth: 584 mm（参考）, riderWeight: 150-210 lb / 68-95 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 157W, effectiveEdge: 1205, waistWidth: 264, noseWidth: 305, tailWidth: 303, sidecutRadii: 8.25/7.85/7.7 m, stanceWidth: 559 mm（参考）, riderWeight: 140-200 lb / 63-90 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 161W, effectiveEdge: 1237, waistWidth: 267, noseWidth: 310, tailWidth: 309, sidecutRadii: 8.5/8.1/8.0 m, stanceWidth: 584 mm（参考）, riderWeight: 150-210 lb / 68-95 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 165W, effectiveEdge: 1269, waistWidth: 270, noseWidth: 313, tailWidth: 312, sidecutRadii: 8.8/8.4/8.2 m, stanceWidth: 584 mm（参考）, riderWeight: 160-220 lb / 72-99 kg, bootSize: US 10+ / EU 43+ }
+    - { size: 169W, effectiveEdge: 1301, waistWidth: 274, noseWidth: 318, tailWidth: 317, sidecutRadii: 9.0/8.6/8.5 m, stanceWidth: 584 mm（参考）, riderWeight: 170-230 lb / 77-104 kg, bootSize: US 10+ / EU 43+ }
+  sidecutRadii: 8.4/8.0/7.8 m
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 8.8
   response: 8.7
@@ -39,6 +51,6 @@ images:
     source: CAPiTA 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://capitasnowboarding.com/products/capita-the-black-snowboard-of-death-mens-snowboard-2027
 status: published

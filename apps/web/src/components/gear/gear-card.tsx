@@ -211,9 +211,9 @@ export function GearCard({
           <div className="mt-auto flex items-end justify-between gap-2 border-t border-border pt-2.5">
             <div className="min-w-0">
               <p className="mono-data text-[15px] leading-none tnum">
-                {priceReady ? fmtPrice(gear.price, gear.priceCurrency) : <PendingValue label="价格待补" />}
+                {priceReady ? fmtPrice(gear.price, gear.priceCurrency) : gear.specs.officialPrice ? String(gear.specs.officialPrice) : <PendingValue label="价格待补" />}
               </p>
-              <p className="mono-label mt-1.5">{priceReady ? "参考价" : "价格尚未采集"}</p>
+              <p className="mono-label mt-1.5">{priceReady ? gear.specs.priceCheckedAt ? '人民币参考 · 待核' : '参考价' : gear.specs.officialPrice ? '官方原币参考' : '价格尚未采集'}</p>
             </div>
             <div className="flex flex-col items-end gap-1">
               {ratingReady ? (

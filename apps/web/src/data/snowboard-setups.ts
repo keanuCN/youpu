@@ -1,0 +1,42 @@
+export const SNOWBOARD_SETUPS = [
+  {
+    id: 'first-season', title: '第一季：基础动作与轻度自由式',
+    audience: '以雪道练习、换刃和小动作入门为主，愿意先把鞋穿舒服的骑手。',
+    products: ['capita-pathfinder-2027', 'burton-freestyle-re-flex-2027', 'burton-moto-boa-2027'],
+    reason: '以较易操控的板、绑带固定器和入门雪鞋组成练习搭配；优先解决脚跟固定和稳定站姿。',
+    tradeoff: '这套思路偏基础练习与自由式；高速硬雪和大幅落地的支撑需求提高后，应重新评估硬度。',
+    checks: 'Pathfinder 按体重选长度，再按实际雪鞋外形核对板宽。Freestyle 选 Re:Flex 版本，按雪鞋 US 男女码对应的固定器表试装。',
+  },
+  {
+    id: 'all-mountain', title: '全山进阶：一套覆盖多数雪道',
+    audience: '基础换刃稳定，希望覆盖机压道、侧坡和少量地形玩法的骑手。',
+    products: ['jones-mountain-twin-2027', 'union-force-2027', 'burton-photon-boa-2027'],
+    reason: 'Mountain Twin 的全山自由式定位搭配 Force 和 Photon BOA，供需要更多支撑、仍保留动作空间的骑手比较。',
+    tradeoff: '响应需求比入门搭配更高；鞋不合脚时，增加装备支撑不会解决脚痛或后跟浮动。',
+    checks: '先量双脚，再试穿 Photon；Force 按对应男靴尺码选大小。Mountain Twin 的标准与 W 宽版分别查表，不能只看板长。',
+  },
+  {
+    id: 'park', title: '公园与道具：重复练习、双向滑行',
+    audience: '已经能稳定控制速度，主要练习双向、小跳台与道具的骑手。',
+    products: ['burton-good-company-camber-2027', 'union-force-classic-2027', 'salomon-launch-boa-sj-boa-2027'],
+    reason: '以 Good Company Camber 的自由式取向为中心，比较 Force Classic 和 Launch 的支撑与动作自由度。',
+    tradeoff: 'Camber 需要更主动的控刃；这是一组候选方案，大跳台或高强度落地仍需按个人能力重新评估支撑。',
+    checks: 'Force Classic 随附圆盘须对应雪板孔位；Launch 的尺码换算只是试穿起点。不能把女款 Union Ultra 的尺码范围套到这套男款候选上。',
+  },
+  {
+    id: 'carving', title: '刻滑：偏定向的雪道搭配',
+    audience: '已有稳定控刃基础，以中长弧刻滑为主，能够主动给板施压的骑手。',
+    products: ['korua-shapes-cafe-racer-2026', 'union-atlas-2027', 'burton-ion-boa-2027'],
+    reason: 'Cafe Racer 以刻滑为核心，Atlas 与 Ion BOA 是偏响应的候选。先比较板宽、站位和雪鞋贴合，再决定是否需要这一级支撑。',
+    tradeoff: '定向板与较强支撑不等于更容易练基础；长时间低速练习、双向和道具玩法需要另作取舍。',
+    checks: 'Cafe Racer 为持续款，2026 是本站档案年份，不代表官方每年换代。按体重与鞋底外形选尺寸，较深倾角时再核对鞋头、鞋跟突出量。Ion BOA 是普通绑带靴，不能与 Ion Step On 混淆。',
+  },
+  {
+    id: 'freeride', title: '软雪与自由滑行：定向玩法',
+    audience: '在有管理的雪场地形中探索软雪、树林与侧坡，具备速度控制能力的骑手。',
+    products: ['jones-mind-expander-2-0-2027', 'nitro-team-pro-binding-2027', 'salomon-echo-dual-boa-2027'],
+    reason: 'Mind Expander 2.0 的定向软雪思路与 Team Pro、Echo 组成供比较的候选方案，重点检查浮力需求与脚部支撑。',
+    tradeoff: '深雪性能不能替代硬雪控刃与路线判断；进入非管理雪域还需要相应训练和安全装备。',
+    checks: '按本型号官方体重区间选板，不能把其他 volume-shifted 板的缩短规则直接套用。Team Pro 的大小要按 Echo 实际尺码和鞋底外形试装。',
+  },
+] as const;

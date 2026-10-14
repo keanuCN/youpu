@@ -1,4 +1,5 @@
 const IMAGE_PROXY_PATH = "/api/image-proxy";
+const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
 const AI_IMAGE_HOST = "g.cdn.meoo.host";
 const AI_IMAGE_PATH = "/uvayfd7jql5o/ai-images/";
 
@@ -62,7 +63,10 @@ const REMOTE_IMAGE_RULES = [
 function isAiPlaceholderUrl(source: string): boolean {
   try {
     const url = new URL(source, "https://youpu.local");
-    if (url.pathname === IMAGE_PROXY_PATH) {
+    const pathname = BASE_PATH && url.pathname.startsWith(`${BASE_PATH}/`)
+      ? url.pathname.slice(BASE_PATH.length)
+      : url.pathname;
+    if (pathname === IMAGE_PROXY_PATH) {
       const proxiedUrl = url.searchParams.get("url");
       return proxiedUrl ? isAiPlaceholderUrl(proxiedUrl) : false;
     }
@@ -101,9 +105,12 @@ export function isAllowedImageUrl(source: string): boolean {
 
 export function resolveImageUrl(source: string, useProxy = process.env.NODE_ENV === "development") {
   if (isAiPlaceholderUrl(source)) return "";
+  if (source.startsWith("/") && !source.startsWith("//")) {
+    return BASE_PATH ? `${BASE_PATH}${source}` : source;
+  }
   if (!useProxy || !isAllowedRemoteImageUrl(source)) {
     return source;
   }
 
-  return `${IMAGE_PROXY_PATH}?url=${encodeURIComponent(source)}`;
+  return `${BASE_PATH}${IMAGE_PROXY_PATH}?url=${encodeURIComponent(source)}`;
 }

@@ -1,0 +1,21 @@
+[Unit]
+Description=Youpu domain web (youpu.asia)
+After=network.target youpu-api.service
+
+[Service]
+Type=simple
+User=youpu
+WorkingDirectory=/opt/youpu/apps/web
+Environment=NODE_ENV=production
+Environment=PORT=3002
+Environment=NEXT_DIST_DIR=.next-youpu-domain
+Environment=NEXT_PUBLIC_BASE_PATH=
+Environment=NEXT_PUBLIC_SITE_URL=https://youpu.asia
+Environment=NEXT_PUBLIC_API_BASE=https://youpu.asia
+Environment=NEXT_PUBLIC_CONTENT_SOURCE=api
+ExecStart=/usr/bin/node /opt/youpu/apps/web/node_modules/next/dist/bin/next start -H 127.0.0.1 -p 3002
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

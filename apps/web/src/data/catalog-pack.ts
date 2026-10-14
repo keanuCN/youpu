@@ -1,4 +1,5 @@
 import { isAllowedImageUrl, resolveImageUrl } from "../lib/image-url";
+import { sizeSpecsOf } from '../lib/size-specs';
 import type { GearItem } from "../types";
 import type { CatalogSnapshotItem } from "./catalog-snapshot";
 
@@ -112,7 +113,9 @@ function mergeSnapshot(gear: GearItem, snapshot: CatalogSnapshotItem): GearItem 
     flexLabel: numberValue(specs.flex) === undefined ? gear.flexLabel : flexLabel(flex),
     hero: cover,
     gallery: galleryWithCover(cover, gear.gallery),
-    specs: { ...gear.specs, ...specs },
+    specs: snapshot.specs.priceCheckedAt || snapshot.specs.sourceCheckedAt ? specs : { ...gear.specs, ...specs },
+    sizeSpecs: sizeSpecsOf(snapshot.specs.sizeSpecs, gear.sizeSpecs),
+    equipmentSizeChart: sizeSpecsOf(snapshot.specs.sizeChart, gear.equipmentSizeChart),
     composite: snapshot.composite ?? gear.composite,
     analysis: snapshot.oneLiner ? { ...gear.analysis, verdict: snapshot.oneLiner } : gear.analysis,
     priceBand,
@@ -140,6 +143,8 @@ function createFromSnapshot(snapshot: CatalogSnapshotItem): GearItem {
     hero: cover,
     gallery: galleryWithCover(cover),
     specs,
+    sizeSpecs: sizeSpecsOf(snapshot.specs.sizeSpecs),
+    equipmentSizeChart: sizeSpecsOf(snapshot.specs.sizeChart),
     scores: {},
     composite: snapshot.composite ?? 0,
     hardcore: 0,
@@ -162,11 +167,11 @@ export function applyCatalogSnapshot(
   snapshots: readonly CatalogSnapshotItem[],
 ): GearItem[] {
   const used = new Set<number>();
-  const hydrated = base.map((gear) => {
+  const hydrated = base.flatMap((gear) => {
     const index = snapshots.findIndex((snapshot, candidate) => !used.has(candidate) && matchesSnapshot(gear, snapshot));
-    if (index < 0) return gear;
+    if (index < 0) return [];
     used.add(index);
-    return mergeSnapshot(gear, snapshots[index]!);
+    return [mergeSnapshot(gear, snapshots[index]!)];
   });
 
   return [...hydrated, ...snapshots.filter((_, index) => !used.has(index)).map(createFromSnapshot)];

@@ -1,0 +1,144 @@
+{
+  "slug": "nitro-banker-2027",
+  "price": "EUR 649.9",
+  "source": "https://www.nitrosnowboards.com/products/banker-snowboard-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T07:05:34.585Z",
+  "productName": "Nitro Banker Snowboard",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/banker-snowboard-1",
+  "hasVariant": [
+    {
+      "@id": "/products/banker-snowboard-1?variant=57278131110219#variant",
+      "@type": "Product",
+      "gtin": "7630349351032",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/27Banker-152_TB.jpg?v=1787537244&width=1920",
+      "name": "Nitro Banker Snowboard - 1st Choice / 148",
+      "offers": {
+        "@id": "/products/banker-snowboard-1?variant=57278131110219#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "649.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/banker-snowboard-1?variant=57278131110219"
+      },
+      "sku": "11SB11004-101-148"
+    },
+    {
+      "@id": "/products/banker-snowboard-1?variant=57278131142987#variant",
+      "@type": "Product",
+      "gtin": "7630349351049",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/27Banker-152_TB.jpg?v=1787537244&width=1920",
+      "name": "Nitro Banker Snowboard - 1st Choice / 152",
+      "offers": {
+        "@id": "/products/banker-snowboard-1?variant=57278131142987#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "649.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/banker-snowboard-1?variant=57278131142987"
+      },
+      "sku": "11SB11004-101-152"
+    },
+    {
+      "@id": "/products/banker-snowboard-1?variant=57278131175755#variant",
+      "@type": "Product",
+      "gtin": "7630349351056",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/27Banker-156_TB.jpg?v=1787537244&width=1920",
+      "name": "Nitro Banker Snowboard - 1st Choice / 156",
+      "offers": {
+        "@id": "/products/banker-snowboard-1?variant=57278131175755#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "649.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/banker-snowboard-1?variant=57278131175755"
+      },
+      "sku": "11SB11004-101-156"
+    },
+    {
+      "@id": "/products/banker-snowboard-1?variant=57278131208523#variant",
+      "@type": "Product",
+      "gtin": "7630349351063",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/27Banker-156_TB.jpg?v=1787537244&width=1920",
+      "name": "Nitro Banker Snowboard - 1st Choice / 160",
+      "offers": {
+        "@id": "/products/banker-snowboard-1?variant=57278131208523#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "649.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/banker-snowboard-1?variant=57278131208523"
+      },
+      "sku": "11SB11004-101-160"
+    },
+    {
+      "@id": "/products/banker-snowboard-1?variant=57278131241291#variant",
+      "@type": "Product",
+      "gtin": "7630349351070",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/27Banker-152_TB.jpg?v=1787537244&width=1920",
+      "name": "Nitro Banker Snowboard - 2nd Choice / 148",
+      "offers": {
+        "@id": "/products/banker-snowboard-1?variant=57278131241291#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "649.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/banker-snowboard-1?variant=57278131241291"
+      },
+      "sku": "11SB11004-102-148"
+    },
+    {
+      "@id": "/products/banker-snowboard-1?variant=57278131274059#variant",
+      "@type": "Product",
+      "gtin": "7630349351087",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/27Banker-152_TB.jpg?v=1787537244&width=1920",
+      "name": "Nitro Banker Snowboard - 2nd Choice / 152",
+      "offers": {
+        "@id": "/products/banker-snowboard-1?variant=57278131274059#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "649.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/banker-snowboard-1?variant=57278131274059"
+      },
+      "sku": "11SB11004-102-152"
+    },
+    {
+      "@id": "/products/banker-snowboard-1?variant=57278131306827#variant",
+      "@type": "Product",
+      "gtin": "7630349351094",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/27Banker-156_TB.jpg?v=1787537244&width=1920",
+      "name": "Nitro Banker Snowboard - 2nd Choice / 156",
+      "offers": {
+        "@id": "/products/banker-snowboard-1?variant=57278131306827#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "649.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/banker-snowboard-1?variant=57278131306827"
+      },
+      "sku": "11SB11004-102-156"
+    },
+    {
+      "@id": "/products/banker-snowboard-1?variant=57278131339595#variant",
+      "@type": "Product",
+      "gtin": "7630349351100",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/27Banker-156_TB.jpg?v=1787537244&width=1920",
+      "name": "Nitro Banker Snowboard - 2nd Choice / 160",
+      "offers": {
+        "@id": "/products/banker-snowboard-1?variant=57278131339595#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "649.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/banker-snowboard-1?variant=57278131339595"
+      },
+      "sku": "11SB11004-102-160"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "093e50aa3edad87f809ab20abe3480b6ed5e6995daedf5ea8dacd157dc17125f",
+    "normalizedSpecHash": "d73e8defb5d243689e09c8aa84597b2316514aa70214155e7c00a05ae792d9e6"
+  }
+}

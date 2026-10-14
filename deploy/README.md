@@ -1,5 +1,13 @@
 # 部署记录
 
+## 当前部署（2026-10-12）
+
+服务器已迁移到 `115.190.156.88`，正式域名配置改为 `youpu.asia`，注册邮件发件人改为 `no-reply@youpu.asia`。当前采用独立 Next.js 服务，保留 IP 下的点单应用及 `/youpu` 入口。
+
+**当前操作请使用 [youpu.asia 部署说明](./youpu.asia.md)。** DNS、证书和 Resend 验证已完成；公网仍受火山引擎备案/接入备案拦截。下面的旧服务器、宝塔路径和 xiaopang.club 操作属于历史记录。
+
+## 旧服务器部署记录（历史）
+
 线上形态：**Next.js 静态导出（`out/`）由 nginx 直接托管** + **PG/Redis 容器** + **systemd 常驻 Node API**。
 内测阶段不上 ES/Umami：服务器 2C1G 内存受限，搜索先用 PG（全文检索 / trgm），ES 是架构里唯一可从 PG 完全重建的组件。
 

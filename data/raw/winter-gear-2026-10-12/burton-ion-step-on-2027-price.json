@@ -1,0 +1,400 @@
+{
+  "slug": "burton-ion-step-on-2027",
+  "price": "USD 619.95",
+  "source": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:46:47.066Z",
+  "productName": "Men's Burton Ion Step On® Snowboard Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191",
+  "hasVariant": [
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191611649#variant",
+      "@type": "Product",
+      "gtin": "193177769815",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191611649#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191611649"
+      },
+      "sku": "24078100001-7.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191644417#variant",
+      "@type": "Product",
+      "gtin": "193177769822",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191644417#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191644417"
+      },
+      "sku": "24078100001-7.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191677185#variant",
+      "@type": "Product",
+      "gtin": "193177769839",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191677185#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191677185"
+      },
+      "sku": "24078100001-8.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191709953#variant",
+      "@type": "Product",
+      "gtin": "193177769846",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191709953#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191709953"
+      },
+      "sku": "24078100001-8.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191742721#variant",
+      "@type": "Product",
+      "gtin": "193177769853",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191742721#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191742721"
+      },
+      "sku": "24078100001-9.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191775489#variant",
+      "@type": "Product",
+      "gtin": "193177769860",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191775489#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191775489"
+      },
+      "sku": "24078100001-9.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191808257#variant",
+      "@type": "Product",
+      "gtin": "193177769754",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191808257#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191808257"
+      },
+      "sku": "24078100001-10"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191841025#variant",
+      "@type": "Product",
+      "gtin": "193177769761",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191841025#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191841025"
+      },
+      "sku": "24078100001-105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191873793#variant",
+      "@type": "Product",
+      "gtin": "193177769778",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191873793#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191873793"
+      },
+      "sku": "24078100001-11"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191906561#variant",
+      "@type": "Product",
+      "gtin": "193177769785",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191906561#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191906561"
+      },
+      "sku": "24078100001-115"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191939329#variant",
+      "@type": "Product",
+      "gtin": "193177769792",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191939329#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191939329"
+      },
+      "sku": "24078100001-12"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191972097#variant",
+      "@type": "Product",
+      "gtin": "193177769808",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Wide / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191972097#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755191972097"
+      },
+      "sku": "24078100001-13"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192004865#variant",
+      "@type": "Product",
+      "gtin": "193177358439",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 7",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192004865#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192004865"
+      },
+      "sku": "20319103001-7.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192037633#variant",
+      "@type": "Product",
+      "gtin": "193177358446",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 7.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192037633#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192037633"
+      },
+      "sku": "20319103001-7.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192070401#variant",
+      "@type": "Product",
+      "gtin": "193177358453",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 8",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192070401#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192070401"
+      },
+      "sku": "20319103001-8.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192103169#variant",
+      "@type": "Product",
+      "gtin": "193177358460",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 8.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192103169#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192103169"
+      },
+      "sku": "20319103001-8.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192135937#variant",
+      "@type": "Product",
+      "gtin": "193177358477",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 9",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192135937#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192135937"
+      },
+      "sku": "20319103001-9.0"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192168705#variant",
+      "@type": "Product",
+      "gtin": "193177358484",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 9.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192168705#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192168705"
+      },
+      "sku": "20319103001-9.5"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192201473#variant",
+      "@type": "Product",
+      "gtin": "193177358378",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 10",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192201473#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192201473"
+      },
+      "sku": "20319103001-10"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192234241#variant",
+      "@type": "Product",
+      "gtin": "193177358385",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 10.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192234241#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192234241"
+      },
+      "sku": "20319103001-105"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192267009#variant",
+      "@type": "Product",
+      "gtin": "193177358392",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 11",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192267009#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192267009"
+      },
+      "sku": "20319103001-11"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192299777#variant",
+      "@type": "Product",
+      "gtin": "193177358408",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 11.5",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192299777#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192299777"
+      },
+      "sku": "20319103001-115"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192332545#variant",
+      "@type": "Product",
+      "gtin": "193177358415",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 12",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192332545#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192332545"
+      },
+      "sku": "20319103001-12"
+    },
+    {
+      "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192365313#variant",
+      "@type": "Product",
+      "gtin": "193177358422",
+      "image": "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2031910A02_1.webp?v=1779495951&width=1920",
+      "name": "Men's Burton Ion Step On® Snowboard Boots - Black / Regular / 13",
+      "offers": {
+        "@id": "/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192365313#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "619.95",
+        "priceCurrency": "USD",
+        "url": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191?variant=48755192365313"
+      },
+      "sku": "20319103001-13"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "673d5c6b4b7e36b577fda7d09a6dcc4b35a6f7110a409d65e2b789dad0bdbb29",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

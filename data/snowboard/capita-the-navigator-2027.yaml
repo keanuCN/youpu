@@ -13,7 +13,6 @@ specs:
   length: 161
   effectiveEdge: 1216
   waistWidth: 260
-  sidecut: 8.3
   stanceSetback: 20.3
   profile: RESORT V2 DIRECTIONAL + FLAT KICK TECH
   profileFamily: hybrid
@@ -25,6 +24,17 @@ specs:
   scenes:
     - powder
     - all-mountain
+  lengthOptions: 155 / 158 / 161 / 164 / 167
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "155", effectiveEdge: 1169, waistWidth: 252, noseWidth: 302, tailWidth: 290, sidecutRadii: 8.0/6.8/8.0 m, stanceWidth: 533 mm（参考）, riderWeight: 130-190 lb / 59-86 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "158", effectiveEdge: 1192, waistWidth: 256, noseWidth: 305, tailWidth: 294, sidecutRadii: 8.1/7.0/8.1 m, stanceWidth: 559 mm（参考）, riderWeight: 150-200 lb / 68-90 kg, bootSize: US Men 8–10 / EU 41–43 }
+    - { size: "161", effectiveEdge: 1216, waistWidth: 260, noseWidth: 310, tailWidth: 297, sidecutRadii: 8.3/7.2/8.3 m, stanceWidth: 584 mm（参考）, riderWeight: 160-210 lb / 72-95 kg, bootSize: US 10+ / EU 43+ }
+    - { size: "164", effectiveEdge: 1229, waistWidth: 264, noseWidth: 315, tailWidth: 301, sidecutRadii: 8.5/7.4/8.5 m, stanceWidth: 584 mm（参考）, riderWeight: 170-220 lb / 77-99 kg, bootSize: US 10+ / EU 43+ }
+    - { size: "167", effectiveEdge: 1249, waistWidth: 268, noseWidth: 322, tailWidth: 307, sidecutRadii: 8.7/7.6/8.7 m, stanceWidth: 584 mm（参考）, riderWeight: 180-230 lb / 81-104 kg, bootSize: US 10+ / EU 43+ }
+  sidecutRadii: 8.3/7.2/8.3 m
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 8.2
   response: 8.0
@@ -39,6 +49,6 @@ images:
     source: CAPiTA 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://capitasnowboarding.com/products/capita-the-navigator-mens-snowboard-2027
 status: published

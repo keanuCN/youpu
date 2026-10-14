@@ -13,8 +13,27 @@ specs:
   terrain: 雪道
   skierLevel: 进阶
   bindingSetup: 含 Protector EVO PR 11 GW 固定器套装
+  weightBasis: 页面展示 Weight 数值，但未明确单只/一对及是否含固定器，本轮不映射为可比较重量。
+  geometryNotes: 部分长度已核对：只展示实际取得的默认长度几何和官方参考长度半径；其他可选板长的几何仍待取得，不表示完整尺码覆盖。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
+    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
+  seasonEvidence: 官方商品号 313306.SET 已核对，当前页面没有直接标注销售雪季；2025/26 待目录确认。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.head.com/en_US/product/supershape-e-magnum-313306-set；https://www.grip-walk.com/faq/
+  sizeSpecs:
+    - size: 149 cm
+      noseWidth: 126
+      waistWidth: 72
+      tailWidth: 110
+      turnRadius: 9.7
+    - size: 170 cm
+      turnRadius: 13.1
+      notes: 此长度仅取得官方参考半径；板头/板腰/板尾宽未取得，不沿用默认长度。
+  profile: Speedrocker：板头 Rocker 6% / Camber 94% / 板尾 Rocker 0%（149 cm 页面展示）
 images:
-  - url: "https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/683x911/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp"
+  - url: "https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/683x911/supershape-\
+      e-magnum-with-binding-protector-evo-pr-11-gw.webp"
     kind: face
     alt: HEAD Supershape e-Magnum 官方雪板商品图
     source: HEAD 官方商品页（图片使用授权待核）

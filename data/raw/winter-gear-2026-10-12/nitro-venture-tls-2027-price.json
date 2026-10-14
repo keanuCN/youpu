@@ -1,0 +1,496 @@
+{
+  "slug": "nitro-venture-tls-2027",
+  "price": "EUR 349.9",
+  "source": "https://www.nitrosnowboards.com/products/venture-tls-boots",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:48:06.643Z",
+  "productName": "Nitro Venture TLS Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/venture-tls-boots",
+  "hasVariant": [
+    {
+      "@id": "/products/venture-tls-boots?variant=53154718744907#variant",
+      "@type": "Product",
+      "gtin": "7630349315973",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 250",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154718744907#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154718744907"
+      },
+      "sku": "848718-001-250"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154718777675#variant",
+      "@type": "Product",
+      "gtin": "7630349315980",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 255",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154718777675#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154718777675"
+      },
+      "sku": "848718-001-255"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154718810443#variant",
+      "@type": "Product",
+      "gtin": "7630349315997",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 260",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154718810443#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154718810443"
+      },
+      "sku": "848718-001-260"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154718843211#variant",
+      "@type": "Product",
+      "gtin": "7630349316000",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 265",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154718843211#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154718843211"
+      },
+      "sku": "848718-001-265"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154718875979#variant",
+      "@type": "Product",
+      "gtin": "7630349316017",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 270",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154718875979#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154718875979"
+      },
+      "sku": "848718-001-270"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154718908747#variant",
+      "@type": "Product",
+      "gtin": "7630349316024",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 275",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154718908747#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154718908747"
+      },
+      "sku": "848718-001-275"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154718941515#variant",
+      "@type": "Product",
+      "gtin": "7630349316031",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 280",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154718941515#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154718941515"
+      },
+      "sku": "848718-001-280"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154718974283#variant",
+      "@type": "Product",
+      "gtin": "7630349316048",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 285",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154718974283#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154718974283"
+      },
+      "sku": "848718-001-285"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154719007051#variant",
+      "@type": "Product",
+      "gtin": "7630349316055",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 290",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154719007051#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154719007051"
+      },
+      "sku": "848718-001-290"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154719039819#variant",
+      "@type": "Product",
+      "gtin": "7630349316062",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 295",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154719039819#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154719039819"
+      },
+      "sku": "848718-001-295"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154719072587#variant",
+      "@type": "Product",
+      "gtin": "7630349316079",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 300",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154719072587#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154719072587"
+      },
+      "sku": "848718-001-300"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154719105355#variant",
+      "@type": "Product",
+      "gtin": "7630349316086",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 305",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154719105355#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154719105355"
+      },
+      "sku": "848718-001-305"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154719138123#variant",
+      "@type": "Product",
+      "gtin": "7630349316093",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 310",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154719138123#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154719138123"
+      },
+      "sku": "848718-001-310"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154719170891#variant",
+      "@type": "Product",
+      "gtin": "7630349316109",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 315",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154719170891#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154719170891"
+      },
+      "sku": "848718-001-315"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=53154719203659#variant",
+      "@type": "Product",
+      "gtin": "7630349316116",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-001_Venture-TLS_Black_Product-1-907x1200-b42c32a4-4a29-4623-92ea-4e34fea2dd63.jpg?v=1788164782&width=1920",
+      "name": "Nitro Venture TLS Boots - Black / 320",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=53154719203659#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=53154719203659"
+      },
+      "sku": "848718-001-320"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674105651531#variant",
+      "@type": "Product",
+      "gtin": "7630349348629",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 250",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674105651531#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674105651531"
+      },
+      "sku": "848718-004-250"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674105717067#variant",
+      "@type": "Product",
+      "gtin": "7630349348636",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 255",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674105717067#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674105717067"
+      },
+      "sku": "848718-004-255"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674105815371#variant",
+      "@type": "Product",
+      "gtin": "7630349348643",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 260",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674105815371#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674105815371"
+      },
+      "sku": "848718-004-260"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674105848139#variant",
+      "@type": "Product",
+      "gtin": "7630349348650",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 265",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674105848139#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674105848139"
+      },
+      "sku": "848718-004-265"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674105946443#variant",
+      "@type": "Product",
+      "gtin": "7630349348667",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 270",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674105946443#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674105946443"
+      },
+      "sku": "848718-004-270"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674105979211#variant",
+      "@type": "Product",
+      "gtin": "7630349348674",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 275",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674105979211#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674105979211"
+      },
+      "sku": "848718-004-275"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674106044747#variant",
+      "@type": "Product",
+      "gtin": "7630349348681",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 280",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674106044747#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674106044747"
+      },
+      "sku": "848718-004-280"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674106110283#variant",
+      "@type": "Product",
+      "gtin": "7630349348698",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 285",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674106110283#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674106110283"
+      },
+      "sku": "848718-004-285"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674106175819#variant",
+      "@type": "Product",
+      "gtin": "7630349348704",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 290",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674106175819#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674106175819"
+      },
+      "sku": "848718-004-290"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674106241355#variant",
+      "@type": "Product",
+      "gtin": "7630349348711",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 295",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674106241355#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674106241355"
+      },
+      "sku": "848718-004-295"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674106306891#variant",
+      "@type": "Product",
+      "gtin": "7630349348728",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 300",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674106306891#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674106306891"
+      },
+      "sku": "848718-004-300"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674106339659#variant",
+      "@type": "Product",
+      "gtin": "7630349348735",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 305",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674106339659#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674106339659"
+      },
+      "sku": "848718-004-305"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674106437963#variant",
+      "@type": "Product",
+      "gtin": "7630349348742",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 310",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674106437963#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674106437963"
+      },
+      "sku": "848718-004-310"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674106503499#variant",
+      "@type": "Product",
+      "gtin": "7630349348759",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 315",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674106503499#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674106503499"
+      },
+      "sku": "848718-004-315"
+    },
+    {
+      "@id": "/products/venture-tls-boots?variant=57674106569035#variant",
+      "@type": "Product",
+      "gtin": "7630349348766",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/848718-004_Venture-TLS-Boots_X-Motorhead_Product-1_3f34a399-78d1-4233-a044-1c8ff045fd02.jpg?v=1788164743&width=1920",
+      "name": "Nitro Venture TLS Boots - Motorhead / 320",
+      "offers": {
+        "@id": "/products/venture-tls-boots?variant=57674106569035#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "349.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/venture-tls-boots?variant=57674106569035"
+      },
+      "sku": "848718-004-320"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "4cb1db3ddb2bb709a7e44028e0aab2ad0cf0a47653a9f9645b706090d0e3e84f",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

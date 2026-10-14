@@ -1,0 +1,32 @@
+{
+  "seedFile": "data/skis/head-supershape-e-magnum-2026.yaml",
+  "retrievedAt": "2026-10-13",
+  "source": "https://www.head.com/en_US/product/supershape-e-magnum-313306-set",
+  "partial": true,
+  "rows": [
+    {
+      "size": "149 cm",
+      "noseWidth": 126,
+      "waistWidth": 72,
+      "tailWidth": 110,
+      "turnRadius": 9.7
+    },
+    {
+      "size": "170 cm",
+      "turnRadius": 13.1,
+      "notes": "此长度仅取得官方参考半径；板头/板腰/板尾宽未取得，不沿用默认长度。"
+    }
+  ],
+  "verifiedFields": {
+    "profile": "Speedrocker：板头 Rocker 6% / Camber 94% / 板尾 Rocker 0%（149 cm 页面展示）",
+    "seasonEvidence": "官方商品号 313306.SET 已核对，当前页面没有直接标注销售雪季；2025/26 待目录确认。"
+  },
+  "limitations": "仅默认长度几何和参考长度半径，未获取其他长度；重量口径未确认",
+  "weightRaw": {
+    "label": "Weight",
+    "valueG": 2307,
+    "referenceLengthCm": 149,
+    "mapped": false,
+    "reason": "单只/一对或含固定器口径尚未确认"
+  }
+}

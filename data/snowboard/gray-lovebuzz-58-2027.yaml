@@ -28,7 +28,9 @@ specs:
   profile: Single Camber
   profileFamily: camber
   sizeSpecs:
-    - {"base":"P-TEX 3000 Graphite","edge":"1.8 mm stainless","size":"58","camber":7,"setback":40,"insertQty":"12+12","noseWidth":300,"stiffness":"7.5/8.5/8.0","tailWidth":282,"noseHeight":48.7,"noseLength":280,"tailHeight":20.4,"tailLength":120,"waistWidth":254,"stanceWidth":"500–620","sidecutRadii":"9900/8900/9500","contactLength":1180,"effectiveEdge":1240,"overallLength":1580,"sidecutOffset":-80,"sidewallAngle":"25°","sidewallColor":"BLACK"}
+    - { "base": "P-TEX 3000 Graphite", "edge": "1.8 mm stainless", "size": "58", "camber": 7, "setback": 40, "insertQty": "12+12", "noseWidth": 300, "stiffness": "7.5/8.5/8.0", "tailWidth": 282, "noseHeight": 48.7, "noseLength": 280, "tailHeight": 20.4, "tailLength": 120, "waistWidth": 254, "stanceWidth": "500–620", "sidecutRadii": "9900/8900/9500", "contactLength": 1180, "effectiveEdge": 1240, "overallLength": 1580, "sidecutOffset": -80, "sidewallAngle": "25°", "sidewallColor": "BLACK" }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
   - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/11_LOVEBUZZ%2058/2627_11_LOVEBUZZ%2058_main.png"
     kind: face

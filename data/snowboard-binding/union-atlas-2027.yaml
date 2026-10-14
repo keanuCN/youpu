@@ -10,7 +10,7 @@ specs:
   flex: 8
   flexFeel: stiff
   mountingSystem: "Camber Disk + Washer；兼容 4x4、4x2 与 Burton Channel"
-  bootCompatibility: "普通绑带雪鞋；官方男款/女款尺码表覆盖多档"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "Union 官方表：男靴 S US 5.5–7.5 / M 8–10 / L 10.5–13；女靴 S 4.5–6.5 / M 7–9；具体按官方尺码表核对"
   baseplateMaterial: "S7 Duraflex CB 碳纤维注入尼龙底盘；Vaporlite HD 2.0 防水减震衬套；3D 挤压铝后跟杯"
   ankleStrap: "Exoframe 5.0 三轴渐进弯曲脚踝绑带"
@@ -20,6 +20,18 @@ specs:
   highbackAdjustment: "Cam-Lock FLAD 前倾调节；Pins + Quick-Lock 免工具绑带调节"
   cushioning: "Non-Stick HP EVA 防积雪脚床；Vaporlite HD 2.0 衬套；3° Canting"
   warranty: "底盘与后跟杯终身保修；其他部件 1 年保修"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide
+  sizeChart:
+    - { size: SMALL, usMen: 5.5 - 7.5, usWomen: 6.5 - 8.5, uk: 4.5 - 6.5, eu: 37 - 40.5, mondo: 23.5 - 25.5 }
+    - { size: MEDIUM, usMen: 8 - 10, usWomen: 9 - 11, uk: 7 - 9, eu: 41 - 43, mondo: 26 - 28 }
+    - { size: LARGE, usMen: 10.5 - 13, uk: 9.5 - 12, eu: 43.5 - 46, mondo: 28.5 - 31 }
+    - { size: X-LARGE, usMen: 13 - 15, uk: 12 - 14, eu: 46 - 48, mondo: 31 - 33 }
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 399.95
+  priceMarket: 原币 USD；来源商店 unionbindingcompany.com
+  priceSource: https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: "https://unionbindingcompany.com/cdn/shop/files/UN26_ATLAS_BLACK_1024x.jpg?v=1785333183"
     kind: face

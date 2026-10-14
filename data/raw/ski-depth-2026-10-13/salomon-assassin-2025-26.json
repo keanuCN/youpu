@@ -1,0 +1,110 @@
+{
+  "seedFile": "data/snowboard/salomon-assassin-2026.yaml",
+  "source": "https://cdn.shopify.com/s/files/1/0673/9981/1381/files/FW25_digitalcatalogue_techbook.pdf?v=1736124811",
+  "catalogPage": 117,
+  "pdfPage": 10,
+  "season": "2025/26",
+  "retrievedAt": "2026-10-13",
+  "rows": [
+    {
+      "size": "150",
+      "weight": 2650,
+      "contactLength": 1020,
+      "effectiveEdge": 1106,
+      "waistWidth": 248,
+      "noseWidth": 286,
+      "tailWidth": 286,
+      "sidecutRadii": "7.1",
+      "setback": 0
+    },
+    {
+      "size": "153",
+      "weight": 2730,
+      "contactLength": 1044,
+      "effectiveEdge": 1130,
+      "waistWidth": 251,
+      "noseWidth": 291,
+      "tailWidth": 291,
+      "sidecutRadii": "7.3",
+      "setback": 0
+    },
+    {
+      "size": "156",
+      "weight": 2810,
+      "contactLength": 1068,
+      "effectiveEdge": 1160,
+      "waistWidth": 253,
+      "noseWidth": 296,
+      "tailWidth": 296,
+      "sidecutRadii": "7.5",
+      "setback": 0
+    },
+    {
+      "size": "159",
+      "weight": 2850,
+      "contactLength": 1092,
+      "effectiveEdge": 1188,
+      "waistWidth": 255,
+      "noseWidth": 301,
+      "tailWidth": 301,
+      "sidecutRadii": "7.7",
+      "setback": 0
+    },
+    {
+      "size": "162",
+      "weight": 2930,
+      "contactLength": 1120,
+      "effectiveEdge": 1214,
+      "waistWidth": 258,
+      "noseWidth": 303,
+      "tailWidth": 303,
+      "sidecutRadii": "7.9",
+      "setback": 0
+    },
+    {
+      "size": "165",
+      "weight": 3050,
+      "contactLength": 1146,
+      "effectiveEdge": 1242,
+      "waistWidth": 260,
+      "noseWidth": 307,
+      "tailWidth": 307,
+      "sidecutRadii": "8.1",
+      "setback": 0
+    },
+    {
+      "size": "158W",
+      "weight": 2950,
+      "contactLength": 1084,
+      "effectiveEdge": 1176,
+      "waistWidth": 263,
+      "noseWidth": 304,
+      "tailWidth": 304,
+      "sidecutRadii": "7.6",
+      "setback": 0
+    },
+    {
+      "size": "163W",
+      "weight": 3100,
+      "contactLength": 1118,
+      "effectiveEdge": 1212,
+      "waistWidth": 266,
+      "noseWidth": 308,
+      "tailWidth": 308,
+      "sidecutRadii": "8",
+      "setback": 0
+    },
+    {
+      "size": "168W",
+      "weight": 3240,
+      "contactLength": 1155,
+      "effectiveEdge": 1251,
+      "waistWidth": 268,
+      "noseWidth": 313,
+      "tailWidth": 313,
+      "sidecutRadii": "8.2",
+      "setback": 0
+    }
+  ],
+  "note": "人工逐行核对官方 PDF；板头板尾宽相同，未推算其他尺码"
+}

@@ -1,0 +1,370 @@
+{
+  "capturedAt": "2026-10-12T06:21:11.475Z",
+  "target": {
+    "slug": "nitro-alternator-2027",
+    "category": "snowboard",
+    "brand": "nitro",
+    "model": "Alternator",
+    "year": 2027,
+    "url": "https://www.nitrosnowboards.com/collections/snowboards-mountain-26-27/products/alternator-snowboard-1",
+    "mode": "cheerio",
+    "representativeSize": "157"
+  },
+  "source": {
+    "url": "https://www.nitrosnowboards.com/collections/snowboards-mountain-26-27/products/alternator-snowboard-1",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.nitrosnowboards.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:19:42.722Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "page": {
+    "title": "The 2027 Nitro Alternator Snowboard - The Official All-Terrain Freestyle Powerhouse",
+    "canonicalUrl": "https://www.nitrosnowboards.com/products/alternator-snowboard-1",
+    "productIdentity": [],
+    "tables": [
+      {
+        "headers": [
+          "Size",
+          "154",
+          "157",
+          "160",
+          "162"
+        ],
+        "rows": [
+          [
+            "Nose / Tail Width",
+            "296 / 291",
+            "298 / 293",
+            "300 / 295",
+            "308 / 304"
+          ],
+          [
+            "Waist Width",
+            "252",
+            "254",
+            "256",
+            "264"
+          ],
+          [
+            "Running Length",
+            "1090",
+            "1110",
+            "1140",
+            "1140"
+          ],
+          [
+            "Sidecut (m)",
+            "10.3 / 6.6 / 10.3",
+            "10.8 / 6.8 / 10.8",
+            "11.0 / 7.3 / 11.0",
+            "11.0 / 7.3 / 11.0"
+          ],
+          [
+            "Stance Range (cm)",
+            "48-60",
+            "48-60",
+            "50-62",
+            "50-62"
+          ],
+          [
+            "Stance Range (in)",
+            "18.9-23.6",
+            "18.9-23.6",
+            "19.7-24.4",
+            "19.7-24.4"
+          ],
+          [
+            "Rider Weight (kg)",
+            "55-75",
+            "60-80",
+            "65-85",
+            "70+"
+          ],
+          [
+            "Rider Weight (lb)",
+            "120-165",
+            "130-175",
+            "145-185",
+            "155+"
+          ],
+          [
+            "Setback (mm)",
+            "-15",
+            "-15",
+            "-15",
+            "-15"
+          ]
+        ]
+      }
+    ]
+  },
+  "adapter": {
+    "name": "snowboard/nitro",
+    "normalizedSpecs": {
+      "length": 157,
+      "waistWidth": 254,
+      "stanceSetback": -15
+    },
+    "perSize": [
+      {
+        "size": "154",
+        "length": 154,
+        "waistWidth": 252,
+        "runningLength": 1090,
+        "stanceSetback": -15,
+        "sourceValues": [
+          {
+            "label": "Nose / Tail Width",
+            "value": "296 / 291"
+          },
+          {
+            "label": "Waist Width",
+            "value": "252"
+          },
+          {
+            "label": "Running Length",
+            "value": "1090"
+          },
+          {
+            "label": "Sidecut (m)",
+            "value": "10.3 / 6.6 / 10.3"
+          },
+          {
+            "label": "Stance Range (cm)",
+            "value": "48-60"
+          },
+          {
+            "label": "Stance Range (in)",
+            "value": "18.9-23.6"
+          },
+          {
+            "label": "Rider Weight (kg)",
+            "value": "55-75"
+          },
+          {
+            "label": "Rider Weight (lb)",
+            "value": "120-165"
+          },
+          {
+            "label": "Setback (mm)",
+            "value": "-15"
+          }
+        ]
+      },
+      {
+        "size": "157",
+        "length": 157,
+        "waistWidth": 254,
+        "runningLength": 1110,
+        "stanceSetback": -15,
+        "sourceValues": [
+          {
+            "label": "Nose / Tail Width",
+            "value": "298 / 293"
+          },
+          {
+            "label": "Waist Width",
+            "value": "254"
+          },
+          {
+            "label": "Running Length",
+            "value": "1110"
+          },
+          {
+            "label": "Sidecut (m)",
+            "value": "10.8 / 6.8 / 10.8"
+          },
+          {
+            "label": "Stance Range (cm)",
+            "value": "48-60"
+          },
+          {
+            "label": "Stance Range (in)",
+            "value": "18.9-23.6"
+          },
+          {
+            "label": "Rider Weight (kg)",
+            "value": "60-80"
+          },
+          {
+            "label": "Rider Weight (lb)",
+            "value": "130-175"
+          },
+          {
+            "label": "Setback (mm)",
+            "value": "-15"
+          }
+        ]
+      },
+      {
+        "size": "160",
+        "length": 160,
+        "waistWidth": 256,
+        "runningLength": 1140,
+        "stanceSetback": -15,
+        "sourceValues": [
+          {
+            "label": "Nose / Tail Width",
+            "value": "300 / 295"
+          },
+          {
+            "label": "Waist Width",
+            "value": "256"
+          },
+          {
+            "label": "Running Length",
+            "value": "1140"
+          },
+          {
+            "label": "Sidecut (m)",
+            "value": "11.0 / 7.3 / 11.0"
+          },
+          {
+            "label": "Stance Range (cm)",
+            "value": "50-62"
+          },
+          {
+            "label": "Stance Range (in)",
+            "value": "19.7-24.4"
+          },
+          {
+            "label": "Rider Weight (kg)",
+            "value": "65-85"
+          },
+          {
+            "label": "Rider Weight (lb)",
+            "value": "145-185"
+          },
+          {
+            "label": "Setback (mm)",
+            "value": "-15"
+          }
+        ]
+      },
+      {
+        "size": "162",
+        "length": 162,
+        "waistWidth": 264,
+        "runningLength": 1140,
+        "stanceSetback": -15,
+        "sourceValues": [
+          {
+            "label": "Nose / Tail Width",
+            "value": "308 / 304"
+          },
+          {
+            "label": "Waist Width",
+            "value": "264"
+          },
+          {
+            "label": "Running Length",
+            "value": "1140"
+          },
+          {
+            "label": "Sidecut (m)",
+            "value": "11.0 / 7.3 / 11.0"
+          },
+          {
+            "label": "Stance Range (cm)",
+            "value": "50-62"
+          },
+          {
+            "label": "Stance Range (in)",
+            "value": "19.7-24.4"
+          },
+          {
+            "label": "Rider Weight (kg)",
+            "value": "70+"
+          },
+          {
+            "label": "Rider Weight (lb)",
+            "value": "155+"
+          },
+          {
+            "label": "Setback (mm)",
+            "value": "-15"
+          }
+        ]
+      }
+    ],
+    "sourceNotes": [
+      "找到 Nitro 尺寸表 4 个尺寸。",
+      "Waist Width、Running Length 直接使用官方 mm；Setback 直接使用官方 mm。",
+      "官方 Sidecut 为三段半径，完整原文保留在 sourceValues，不压成一个 schema 数值。",
+      "已按代表尺寸 157 生成部分 specs；仍需人工复核当前页面季节。"
+    ]
+  },
+  "originalValidation": {
+    "identityMatch": true,
+    "seasonMatch": true,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "review": {
+    "seasonEvidence": "https://www.nitrosnowboards.com/products/alternator-snowboard-1",
+    "representativeSize": "157",
+    "unitPolicy": [
+      "Waist、有效刃长、板头尾宽、站距单位为 mm；板重单位为 g。",
+      "Running Length 独立记录，不冒充 Effective Edge。",
+      "多段侧切保留官方整串原文，不折成首个半径。",
+      "RIDE 的 entry/focus/exit 顺序保留；- 表示厂商未提供。",
+      "Nitro、RIDE setback 保留官方正负号。",
+      "CAPiTA Suggested Boot Size 缩写按原文保存，不推断其尺码体系。",
+      "CAPiTA 无单位的 Taper 原值留在证据表中，不猜测 mm/cm。"
+    ],
+    "normalizedSizeSpecs": [
+      {
+        "size": "154",
+        "waistWidth": 252,
+        "runningLength": 1090,
+        "setback": -15,
+        "noseWidth": 296,
+        "tailWidth": 291,
+        "sidecutRadii": "10.3 / 6.6 / 10.3 m",
+        "stanceWidth": "48-60 cm",
+        "riderWeight": "55-75 kg"
+      },
+      {
+        "size": "157",
+        "waistWidth": 254,
+        "runningLength": 1110,
+        "setback": -15,
+        "noseWidth": 298,
+        "tailWidth": 293,
+        "sidecutRadii": "10.8 / 6.8 / 10.8 m",
+        "stanceWidth": "48-60 cm",
+        "riderWeight": "60-80 kg"
+      },
+      {
+        "size": "160",
+        "waistWidth": 256,
+        "runningLength": 1140,
+        "setback": -15,
+        "noseWidth": 300,
+        "tailWidth": 295,
+        "sidecutRadii": "11.0 / 7.3 / 11.0 m",
+        "stanceWidth": "50-62 cm",
+        "riderWeight": "65-85 kg"
+      },
+      {
+        "size": "162",
+        "waistWidth": 264,
+        "runningLength": 1140,
+        "setback": -15,
+        "noseWidth": 308,
+        "tailWidth": 304,
+        "sidecutRadii": "11.0 / 7.3 / 11.0 m",
+        "stanceWidth": "50-62 cm",
+        "riderWeight": "70+ kg"
+      }
+    ]
+  }
+}

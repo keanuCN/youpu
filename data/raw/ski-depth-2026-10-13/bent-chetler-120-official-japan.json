@@ -1,0 +1,24 @@
+{
+  "source": "https://atomicsnow.jp/pages/2526-freeride-skiandboots",
+  "season": "2025/26",
+  "retrievedAt": "2026-10-13",
+  "rows": [
+    {
+      "size": "176 cm",
+      "turnRadius": 18,
+      "notes": "官方日本 25/26 页面仅给出此长度的半径，未给出板头/板尾宽。"
+    },
+    {
+      "size": "184 cm",
+      "turnRadius": 19,
+      "noseWidth": 143,
+      "waistWidth": 120,
+      "tailWidth": 134
+    },
+    {
+      "size": "192 cm",
+      "turnRadius": 20,
+      "notes": "官方日本 25/26 页面仅给出此长度的半径，未给出板头/板尾宽。"
+    }
+  ]
+}

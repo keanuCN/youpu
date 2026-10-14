@@ -42,7 +42,7 @@ specs:
       sidecutRadiusM: 8.0
       stanceWidth: 530 mm (ref); 490–570 mm (range)
       recommendedStanceCm: 53
-      adjustableStanceRangeCm: [49, 57]
+      adjustableStanceRangeCm: [ 49, 57 ]
       setback: 20
       taperMm: 18
       boardWeightKg:
@@ -51,7 +51,7 @@ specs:
       selectableOnCapturedProductPage: false
       maxBootSizeEU: 41
       maxBootSoleLengthCm: 29.7
-      recommendedRiderWeightKg: [40, 60]
+      recommendedRiderWeightKg: [ 40, 60 ]
       maxRiderHeightCm: 168
     - size: "150"
       effectiveEdge: 1100
@@ -63,7 +63,7 @@ specs:
       sidecutRadiusM: 7.9
       stanceWidth: 530 mm (ref); 490–570 mm (range)
       recommendedStanceCm: 53
-      adjustableStanceRangeCm: [49, 57]
+      adjustableStanceRangeCm: [ 49, 57 ]
       setback: 35
       taperMm: 26
       boardWeightKg:
@@ -72,7 +72,7 @@ specs:
       selectableOnCapturedProductPage: true
       maxBootSizeEU: 41
       maxBootSoleLengthCm: 30.1
-      recommendedRiderWeightKg: [45, 75]
+      recommendedRiderWeightKg: [ 45, 75 ]
       maxRiderHeightCm: 175
     - size: "156"
       effectiveEdge: 1160
@@ -84,7 +84,7 @@ specs:
       sidecutRadiusM: 8.0
       stanceWidth: 540 mm (ref); 500–580 mm (range)
       recommendedStanceCm: 54
-      adjustableStanceRangeCm: [50, 58]
+      adjustableStanceRangeCm: [ 50, 58 ]
       setback: 35
       taperMm: 27
       boardWeightKg:
@@ -93,7 +93,7 @@ specs:
       selectableOnCapturedProductPage: true
       maxBootSizeEU: 44
       maxBootSoleLengthCm: 30.4
-      recommendedRiderWeightKg: [50, 80]
+      recommendedRiderWeightKg: [ 50, 80 ]
       maxRiderHeightCm: 185
     - size: "159"
       effectiveEdge: 1200
@@ -105,7 +105,7 @@ specs:
       sidecutRadiusM: 8.2
       stanceWidth: 550 mm (ref); 510–590 mm (range)
       recommendedStanceCm: 55
-      adjustableStanceRangeCm: [51, 59]
+      adjustableStanceRangeCm: [ 51, 59 ]
       setback: 35
       taperMm: 28
       boardWeightKg:
@@ -114,8 +114,8 @@ specs:
       selectableOnCapturedProductPage: true
       maxBootSizeEU: 46
       maxBootSoleLengthCm: 31.4
-      productPageRiderWeightKg: [55, 85]
-      sizeGuideRiderWeightKg: [55, 90]
+      productPageRiderWeightKg: [ 55, 85 ]
+      sizeGuideRiderWeightKg: [ 55, 90 ]
       maxRiderHeightCm: 190
     - size: "164"
       effectiveEdge: 1230
@@ -127,7 +127,7 @@ specs:
       sidecutRadiusM: 8.5
       stanceWidth: 550 mm (ref); 510–590 mm (range)
       recommendedStanceCm: 55
-      adjustableStanceRangeCm: [51, 59]
+      adjustableStanceRangeCm: [ 51, 59 ]
       setback: 35
       taperMm: 28
       boardWeightKg:
@@ -140,6 +140,8 @@ specs:
       maxBootSoleLengthCm: 32.3
       recommendedRiderWeightRaw: 65–95+ kg
       maxRiderHeightCm: "195+"
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 9.5
   response: 8

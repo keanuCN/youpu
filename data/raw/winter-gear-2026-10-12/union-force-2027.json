@@ -1,0 +1,497 @@
+{
+  "capturedAt": "2026-10-12T06:43:59.976Z",
+  "target": {
+    "slug": "union-force-2027",
+    "category": "snowboard-binding",
+    "brand": "union",
+    "model": "Force",
+    "year": 2027,
+    "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://unionbindingcompany.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:41:36.542Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "匹配到 Allow 规则",
+      "matchedRule": "ALLOW /（第 19 行）"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": null,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Force Men's Snowboard Binding | Union Binding Company",
+    "canonicalUrl": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027",
+    "tables": [
+      {
+        "headers": [
+          "MEN’S/UNISEX",
+          "-",
+          "-",
+          "-",
+          "SMALL",
+          "MEDIUM",
+          "LARGE",
+          "X-LARGE"
+        ],
+        "rows": [
+          [
+            "US Men",
+            "-",
+            "-",
+            "-",
+            "5.5 - 7.5",
+            "8 - 10",
+            "10.5 - 13",
+            "13 - 15"
+          ],
+          [
+            "US Women",
+            "-",
+            "-",
+            "-",
+            "6.5 - 8.5",
+            "9 - 11",
+            "-",
+            "-"
+          ],
+          [
+            "US Kids",
+            "-",
+            "-",
+            "-",
+            "5.5K+",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "UK",
+            "-",
+            "-",
+            "-",
+            "4.5 - 6.5",
+            "7 - 9",
+            "9.5 - 12",
+            "12 - 14"
+          ],
+          [
+            "EURO",
+            "-",
+            "-",
+            "-",
+            "37 - 40.5",
+            "41 - 43",
+            "43.5 - 46",
+            "46 - 48"
+          ],
+          [
+            "MONDO",
+            "-",
+            "-",
+            "-",
+            "23.5 - 25.5",
+            "26 - 28",
+            "28.5 - 31",
+            "31 - 33"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rows": []
+      },
+      {
+        "headers": [
+          "WOMEN’S",
+          "-",
+          "-",
+          "SMALL",
+          "MEDIUM",
+          "LARGE",
+          "-",
+          "-"
+        ],
+        "rows": [
+          [
+            "US Men",
+            "-",
+            "-",
+            "* - 5.5",
+            "5.5 - 7.5",
+            "8 - 10",
+            "-",
+            "-"
+          ],
+          [
+            "US Women",
+            "-",
+            "-",
+            "4 - 6.5",
+            "6.5 - 8.5",
+            "9 - 11",
+            "-",
+            "-"
+          ],
+          [
+            "US Kids",
+            "-",
+            "-",
+            "3K - 5.5K",
+            "5.5K+",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "UK",
+            "-",
+            "-",
+            "2 - 4.5",
+            "4.5 - 6.5",
+            "7 - 9",
+            "-",
+            "-"
+          ],
+          [
+            "EURO",
+            "-",
+            "-",
+            "34 - 37",
+            "37 - 40.5",
+            "41 - 43",
+            "-",
+            "-"
+          ],
+          [
+            "MONDO",
+            "-",
+            "-",
+            "21 - 23.5",
+            "23.5 - 25.5",
+            "26 - 28",
+            "-",
+            "-"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rows": []
+      },
+      {
+        "headers": [
+          "KIDS",
+          "ONE",
+          "MINI",
+          "SMALL",
+          "MEDIUM",
+          "-",
+          "-",
+          "-"
+        ],
+        "rows": [
+          [
+            "US Men",
+            "-",
+            "-",
+            "* - 5.5",
+            "5.5 - 7.5",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "US Women",
+            "-",
+            "* - 4",
+            "4 - 6.5",
+            "6.5 - 8.5",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "US Kids",
+            "7C - 11C",
+            "11C - 3K",
+            "3K - 5.5K",
+            "5.5K+",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "UK",
+            "6 - 10",
+            "10K - 2",
+            "2 - 4.5",
+            "4.5 - 6.5",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "EURO",
+            "24 - 28",
+            "28 - 34",
+            "34 - 37",
+            "37 - 40.5",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "MONDO",
+            "13.5 - 17.5",
+            "17.5 - 21",
+            "21 - 23.5",
+            "23.5 - 25.5",
+            "-",
+            "-",
+            "-"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "",
+          "",
+          "",
+          "",
+          "CROSSOVER SIZING",
+          "",
+          "",
+          ""
+        ],
+        "rows": []
+      },
+      {
+        "headers": [
+          "MEN'S .cls-1 { fill: #fff; }",
+          "-",
+          "-",
+          "-",
+          "SMALL",
+          "MEDIUM",
+          "LARGE",
+          "X-LARGE"
+        ],
+        "rows": [
+          [
+            "US Men's Boot Size",
+            "-",
+            "-",
+            "-",
+            "6 - 8",
+            "8.5 - 10.5",
+            "11 - 13",
+            "14 - 15"
+          ],
+          [
+            "UK Boot Size",
+            "-",
+            "-",
+            "-",
+            "5 - 7",
+            "7.5 - 9.5",
+            "10 - 12",
+            "13 - 14"
+          ],
+          [
+            "CM Boot Size",
+            "-",
+            "-",
+            "-",
+            "24 - 26",
+            "26.5 - 28.5",
+            "29 - 31",
+            "32 - 33"
+          ],
+          [
+            "EU Boot Size",
+            "-",
+            "-",
+            "-",
+            "38 - 41",
+            "41.5 - 43.5",
+            "44 - 46",
+            "47 - 48"
+          ],
+          [
+            "Mondo Boot Size",
+            "-",
+            "-",
+            "-",
+            "240 - 260",
+            "265 - 285",
+            "290 - 310",
+            "320 - 330"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "WOMEN'S .cls-1 { fill: #fff; }",
+          "-",
+          "-",
+          "-",
+          "SMALL",
+          "MEDIUM",
+          "LARGE",
+          "-"
+        ],
+        "rows": [
+          [
+            "US Women's Boot Size",
+            "-",
+            "-",
+            "-",
+            "5 - 6",
+            "6.5 - 8.5",
+            "9 - 11",
+            "-"
+          ],
+          [
+            "UK Boot Size",
+            "-",
+            "-",
+            "-",
+            "3 - 4",
+            "4.5 - 6.5",
+            "7 - 9",
+            "-"
+          ],
+          [
+            "CM Boot Size",
+            "-",
+            "-",
+            "-",
+            "22 - 23",
+            "23.5 - 25.5",
+            "26 - 28",
+            "-"
+          ],
+          [
+            "EU Boot Size",
+            "-",
+            "-",
+            "-",
+            "35 - 36.5",
+            "37 - 40.5",
+            "41 - 43",
+            "-"
+          ],
+          [
+            "Mondo Boot Size",
+            "-",
+            "-",
+            "-",
+            "220 - 230",
+            "235 - 255",
+            "260 - 280",
+            "-"
+          ]
+        ]
+      }
+    ]
+  },
+  "review": {
+    "rows": [
+      {
+        "size": "SMALL",
+        "usMen": "5.5 - 7.5",
+        "usWomen": "6.5 - 8.5",
+        "uk": "4.5 - 6.5",
+        "eu": "37 - 40.5",
+        "mondo": "23.5 - 25.5"
+      },
+      {
+        "size": "MEDIUM",
+        "usMen": "8 - 10",
+        "usWomen": "9 - 11",
+        "uk": "7 - 9",
+        "eu": "41 - 43",
+        "mondo": "26 - 28"
+      },
+      {
+        "size": "LARGE",
+        "usMen": "10.5 - 13",
+        "uk": "9.5 - 12",
+        "eu": "43.5 - 46",
+        "mondo": "28.5 - 31"
+      },
+      {
+        "size": "X-LARGE",
+        "usMen": "13 - 15",
+        "uk": "12 - 14",
+        "eu": "46 - 48",
+        "mondo": "31 - 33"
+      }
+    ],
+    "sources": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+    "good": true
+  },
+  "sizeChart": [
+    {
+      "size": "SMALL",
+      "usMen": "5.5 - 7.5",
+      "usWomen": "6.5 - 8.5",
+      "uk": "4.5 - 6.5",
+      "eu": "37 - 40.5",
+      "mondo": "23.5 - 25.5"
+    },
+    {
+      "size": "MEDIUM",
+      "usMen": "8 - 10",
+      "usWomen": "9 - 11",
+      "uk": "7 - 9",
+      "eu": "41 - 43",
+      "mondo": "26 - 28"
+    },
+    {
+      "size": "LARGE",
+      "usMen": "10.5 - 13",
+      "uk": "9.5 - 12",
+      "eu": "43.5 - 46",
+      "mondo": "28.5 - 31"
+    },
+    {
+      "size": "X-LARGE",
+      "usMen": "13 - 15",
+      "uk": "12 - 14",
+      "eu": "46 - 48",
+      "mondo": "31 - 33"
+    }
+  ]
+}

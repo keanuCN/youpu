@@ -27,6 +27,19 @@ specs:
     - all-mountain
     - powder
     - freestyle
+  lengthOptions: 152 / 155 / 157W / 158 / 160W / 161 / 163W / 164
+  widthVariant: standard
+  sizeSpecs:
+    - { size: "152", weight: 2600, effectiveEdge: 1180, waistWidth: 251, setback: 20, contactLength: 1077, noseLength: 254, tailLength: 189, noseWidth: 294, tailWidth: 286, frontFootWidth: 261, backFootWidth: 262, taper: 8, sidecutRadii: 8.0 m, stanceWidth: 520 mm（参考） / 540 mm（居中）, riderWeight: 130-180 lbs. / 59-82 kg., bootSize: US 8.5-10.5 / EU 41.5-44 }
+    - { size: "155", weight: 2700, effectiveEdge: 1200, waistWidth: 254, setback: 20, contactLength: 1101, noseLength: 257, tailLength: 192, noseWidth: 298, tailWidth: 290, frontFootWidth: 265, backFootWidth: 265, taper: 8, sidecutRadii: 8.2 m, stanceWidth: 540 mm（参考） / 560 mm（居中）, riderWeight: 140-190 lbs. / 64-86 kg., bootSize: US 9-11 / EU 41.5-44.5 }
+    - { size: 157W, weight: 2800, effectiveEdge: 1220, waistWidth: 264, setback: 20, contactLength: 1115, noseLength: 260, tailLength: 195, noseWidth: 308, tailWidth: 300, frontFootWidth: 275, backFootWidth: 275, taper: 8, sidecutRadii: 8.4 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 160-210 lbs.+ / 73-95 kg.+, bootSize: US 9 / EU 41.5 }
+    - { size: "158", weight: 2800, effectiveEdge: 1230, waistWidth: 257, setback: 20, contactLength: 1125, noseLength: 260, tailLength: 195, noseWidth: 302, tailWidth: 294, frontFootWidth: 268, backFootWidth: 268, taper: 8, sidecutRadii: 8.4 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 160-210 lbs.+ / 73-95 kg.+, bootSize: US 9-11 / EU 41.5-44.5 }
+    - { size: 160W, weight: 3000, effectiveEdge: 1240, waistWidth: 267, setback: 20, contactLength: 1139, noseLength: 263, tailLength: 198, noseWidth: 312, tailWidth: 304, frontFootWidth: 278, backFootWidth: 278, taper: 8, sidecutRadii: 8.6 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 160-210 lbs.+ / 73-95 kg.+, bootSize: US 11 / EU 44.5 }
+    - { size: "161", weight: 2900, effectiveEdge: 1250, waistWidth: 260, setback: 20, contactLength: 1149, noseLength: 263, tailLength: 198, noseWidth: 306, tailWidth: 298, frontFootWidth: 271, backFootWidth: 271, taper: 8, sidecutRadii: 8.6 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 170-220 lbs.+ / 77-100 kg.+, bootSize: US 9.5-11.5 / EU 42.5-45.5 }
+    - { size: 163W, weight: 3100, effectiveEdge: 1260, waistWidth: 270, setback: 20, contactLength: 1163, noseLength: 266, tailLength: 201, noseWidth: 316, tailWidth: 308, frontFootWidth: 281, backFootWidth: 281, taper: 8, sidecutRadii: 8.8 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 170-220 lbs.+ / 77-100 kg.+, bootSize: US 11 / EU 44.5 }
+    - { size: "164", weight: 3200, effectiveEdge: 1260, waistWidth: 263, setback: 20, contactLength: 1163, noseLength: 271, tailLength: 206, noseWidth: 309, tailWidth: 301, frontFootWidth: 274, backFootWidth: 274, taper: 8, sidecutRadii: 8.8 m, stanceWidth: 560 mm（参考） / 580 mm（居中）, riderWeight: 170-220 lbs.+ / 77-100 kg.+, bootSize: US 9.5-11.5 / EU 42.5-45.5 }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 9.0
   response: 9.1
@@ -41,6 +54,6 @@ images:
     source: Jones 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://www.jonessnowboards.com/products/mens-howler-snowboard
 status: published

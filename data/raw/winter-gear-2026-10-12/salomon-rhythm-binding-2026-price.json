@@ -1,0 +1,111 @@
+{
+  "slug": "salomon-rhythm-binding-2026",
+  "price": "USD 189.95",
+  "source": "https://www.salomon.com/en-us/product/rhythm-li3345",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:43:51.082Z",
+  "productName": "RHYTHM",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "RHYTHM Dragon Fire / Black",
+      "image": "https://cdn.dam.salomon.com/f0c57cc4-3429-4574-a398-b36001082f58/L45450200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Dragon Fire / Black",
+      "size": "S",
+      "sku": "L45450200054",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450200?sizeId=L45450200054",
+        "priceCurrency": "USD",
+        "price": "189.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "RHYTHM Dragon Fire / Black",
+      "image": "https://cdn.dam.salomon.com/f0c57cc4-3429-4574-a398-b36001082f58/L45450200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Dragon Fire / Black",
+      "size": "M",
+      "sku": "L45450200056",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450200?sizeId=L45450200056",
+        "priceCurrency": "USD",
+        "price": "189.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "RHYTHM Dragon Fire / Black",
+      "image": "https://cdn.dam.salomon.com/f0c57cc4-3429-4574-a398-b36001082f58/L45450200/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Dragon Fire / Black",
+      "size": "L",
+      "sku": "L45450200058",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450200?sizeId=L45450200058",
+        "priceCurrency": "USD",
+        "price": "189.95"
+      }
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450100?sizeId=L45450100054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450100?sizeId=L45450100056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450100?sizeId=L45450100058"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450400?sizeId=L45450400054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450400?sizeId=L45450400056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450400?sizeId=L45450400058"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450300?sizeId=L45450300054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450300?sizeId=L45450300056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L45450300?sizeId=L45450300058"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L47930300?sizeId=L47930300054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L47930300?sizeId=L47930300056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L47930300?sizeId=L47930300058"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L41777500?sizeId=L41777500054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L41777500?sizeId=L41777500056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L41777500?sizeId=L41777500058"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L41777400?sizeId=L41777400054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L41777400?sizeId=L41777400056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/rhythm-li3345/L41777400?sizeId=L41777400058"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "fbb2f38e194a372ee9354e7f26af96aa683d223f1876d8f28305f1aa29ad9533",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -7,10 +7,29 @@ title: HEAD Worldcup Rebels e-SL Pro 2025/26
 one_liner: 官方归类为雪道竞速小回转板，面向有经验滑手；绑定组合依具体套装。
 specs:
   terrain: 雪道 / 竞速 / 小回转
-  skierLevel: 进阶
-  bindingSetup: 可选固定器套装
+  skierLevel: 专家
+  bindingSetup: 可选多种 Freeflex / Protector 固定器，也可选择无固定器；按具体 SKU 核对
+  weightBasis: 页面展示 Weight 数值，但未明确单只/一对及是否含固定器，本轮不映射为可比较重量。
+  geometryNotes: 部分长度已核对：只展示实际取得的默认长度几何和官方参考长度半径；其他可选板长的几何仍待取得，不表示完整尺码覆盖。
+  bindingCompatibility: 页面同时列出 GW 和非 GW 的不同 Freeflex 固定器，不将整个 e-SL Pro 套装系列视为通用
+    GripWalk 兼容；按实际所选固定器说明核对靴底与板层。
+  mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
+  seasonEvidence: 官方商品号 313236.SET 已核对，页面未直接标注销售雪季；2025/26 待目录确认。
+  sourceCheckedAt: 2026-10-13
+  compatibilitySources: https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set；https://www.grip-walk.com/faq/
+  sizeSpecs:
+    - size: 150 cm
+      noseWidth: 122
+      waistWidth: 68
+      tailWidth: 107
+      turnRadius: 10.5
+    - size: 160 cm
+      turnRadius: 12
+      notes: 此长度仅取得官方参考半径；板头/板腰/板尾宽未取得，不沿用默认长度。
+  profile: Rebel Camber：Camber 100%（150 cm 页面展示）
 images:
-  - url: "https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/683x911/worldcup-rebels-e-sl-pro-without-binding.webp"
+  - url: "https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/683x911/worldcup-rebels-e\
+      -sl-pro-without-binding.webp"
     kind: face
     alt: HEAD Worldcup Rebels e-SL Pro 官方雪板商品图
     source: HEAD 官方商品页（图片使用授权待核）

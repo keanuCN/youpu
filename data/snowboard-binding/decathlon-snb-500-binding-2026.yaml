@@ -7,7 +7,12 @@ title: "Decathlon SNB 500 2026"
 one_liner: "国内京东可见 200+ 条评论的入门全山地款；官方列出 EVA 缓震和传统扣带。"
 specs:
   entrySystem: strap
-  bootCompatibility: "兼容常规及 3D 插孔；不兼容 Burton Channel；普通绑带雪鞋"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  compatibilitySources: https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654
+  bindingSizeGuide: 官方当前页明确 L 对应 9–13，但原文未标明尺码体系，不自行转换为 EU 或 Mondopoint；雪鞋外形不同，必须试装。其他尺码范围待核。
+  priceCheckedAt: 2026-10-12
+  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
 images:
   - url: "https://contents.mediadecathlon.com/p2573496/k%24353e5fd924967da12911035b5eeb0342/picture.jpg?f=3000x0&format=auto"
     kind: face

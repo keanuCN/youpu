@@ -6,6 +6,11 @@ year: 2026
 title: COSONE Step On 快穿固定器 2026
 specs:
   entrySystem: step-in
+  bootCompatibility: 型号名称含 Step On，但尚未找到官方认证和鞋靴接口依据；不能据此确认与 Burton Step On 兼容。
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 Step On 使用专用尺码表，不能套用普通绑带式 S/M/L 范围。 本轮官方型号证据未通过复核，现有尺寸不视为重新核实；详见待核记录。
+  compatibilitySources: https://www.cos1.net/；https://www.burton.com/en-us/pages/size-charts
+  priceCheckedAt: 2026-10-12
+  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
 images: []
 status: draft
 one_liner: COSONE 官网本季精选固定器，官方称其为 Step On 快穿款；具体雪鞋兼容范围待品牌进一步说明。

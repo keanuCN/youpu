@@ -1,0 +1,48 @@
+{
+  "slug": "nitro-phantom-plus-binding-2027",
+  "price": "EUR 439.9",
+  "source": "https://www.nitrosnowboards.com/products/phantom-bindings-3",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:16.320Z",
+  "productName": "Nitro Phantom+ Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/phantom-bindings-3",
+  "hasVariant": [
+    {
+      "@id": "/products/phantom-bindings-3?variant=57278273716555#variant",
+      "@type": "Product",
+      "gtin": "7630349334646",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11001-101_PhantomPlus-Bindings_Ultra-Black_Product-1.jpg?v=1779339335&width=1920",
+      "name": "Nitro Phantom+ Bindings - Ultra Black / M",
+      "offers": {
+        "@id": "/products/phantom-bindings-3?variant=57278273716555#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "439.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/phantom-bindings-3?variant=57278273716555"
+      },
+      "sku": "12BG11001-101-M"
+    },
+    {
+      "@id": "/products/phantom-bindings-3?variant=57278273683787#variant",
+      "@type": "Product",
+      "gtin": "7630349334653",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11001-101_PhantomPlus-Bindings_Ultra-Black_Product-1.jpg?v=1779339335&width=1920",
+      "name": "Nitro Phantom+ Bindings - Ultra Black / L",
+      "offers": {
+        "@id": "/products/phantom-bindings-3?variant=57278273683787#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "439.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/phantom-bindings-3?variant=57278273683787"
+      },
+      "sku": "12BG11001-101-L"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "01c66d5f65bdd1bc1e82db8f395308bf2752e00492e569fac181295689db0210",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

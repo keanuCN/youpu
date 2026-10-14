@@ -8,8 +8,10 @@ if (isStaticExport && isApiContent) {
 
 const nextConfig = {
   reactStrictMode: true,
+  // Allow this app to be hosted beside other apps under a URL prefix.
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "",
   // Keep the development server's manifests and assets separate from production builds.
-  distDir: process.env.NODE_ENV === "development" ? ".next-dev" : ".next",
+  distDir: process.env.NEXT_DIST_DIR ?? (process.env.NODE_ENV === "development" ? ".next-dev" : ".next"),
   transpilePackages: ["@youpu/schema"],
   // 静态导出（内测站部署用）：纯前端产物交给 nginx，无需 Node 运行时
   ...(isStaticExport

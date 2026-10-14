@@ -1,0 +1,288 @@
+{
+  "slug": "nitro-team-pro-mk-tls-2027",
+  "price": "EUR 529.9",
+  "source": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:47:43.316Z",
+  "productName": "Nitro Team Pro MK TLS Boots",
+  "productType": "ProductGroup",
+  "productUrl": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1",
+  "hasVariant": [
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701718347#variant",
+      "@type": "Product",
+      "gtin": "7630349340418",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 250",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701718347#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277701718347"
+      },
+      "sku": "13BT11004-101-250"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701751115#variant",
+      "@type": "Product",
+      "gtin": "7630349340425",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 255",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701751115#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277701751115"
+      },
+      "sku": "13BT11004-101-255"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701783883#variant",
+      "@type": "Product",
+      "gtin": "7630349340432",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 260",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701783883#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277701783883"
+      },
+      "sku": "13BT11004-101-260"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701816651#variant",
+      "@type": "Product",
+      "gtin": "7630349340449",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 265",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701816651#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277701816651"
+      },
+      "sku": "13BT11004-101-265"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701849419#variant",
+      "@type": "Product",
+      "gtin": "7630349340456",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 270",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701849419#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277701849419"
+      },
+      "sku": "13BT11004-101-270"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701882187#variant",
+      "@type": "Product",
+      "gtin": "7630349340463",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 275",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701882187#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277701882187"
+      },
+      "sku": "13BT11004-101-275"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701914955#variant",
+      "@type": "Product",
+      "gtin": "7630349340470",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 280",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701914955#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277701914955"
+      },
+      "sku": "13BT11004-101-280"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701947723#variant",
+      "@type": "Product",
+      "gtin": "7630349340487",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 285",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701947723#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277701947723"
+      },
+      "sku": "13BT11004-101-285"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701980491#variant",
+      "@type": "Product",
+      "gtin": "7630349340494",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 290",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277701980491#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277701980491"
+      },
+      "sku": "13BT11004-101-290"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702013259#variant",
+      "@type": "Product",
+      "gtin": "7630349340500",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 295",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702013259#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277702013259"
+      },
+      "sku": "13BT11004-101-295"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702046027#variant",
+      "@type": "Product",
+      "gtin": "7630349340517",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 300",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702046027#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277702046027"
+      },
+      "sku": "13BT11004-101-300"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702078795#variant",
+      "@type": "Product",
+      "gtin": "7630349340524",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 305",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702078795#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277702078795"
+      },
+      "sku": "13BT11004-101-305"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702111563#variant",
+      "@type": "Product",
+      "gtin": "7630349340531",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 310",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702111563#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277702111563"
+      },
+      "sku": "13BT11004-101-310"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702144331#variant",
+      "@type": "Product",
+      "gtin": "7630349340548",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 315",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702144331#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277702144331"
+      },
+      "sku": "13BT11004-101-315"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702177099#variant",
+      "@type": "Product",
+      "gtin": "7630349340555",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 320",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702177099#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277702177099"
+      },
+      "sku": "13BT11004-101-320"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702209867#variant",
+      "@type": "Product",
+      "gtin": "7630349340562",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 325",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702209867#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277702209867"
+      },
+      "sku": "13BT11004-101-325"
+    },
+    {
+      "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702242635#variant",
+      "@type": "Product",
+      "gtin": "7630349340579",
+      "image": "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/13BT11004-101_Team-Pro-MK-TLS-Boots_Black_Product-1.jpg?v=1779339426&width=1920",
+      "name": "Nitro Team Pro MK TLS Boots - Black / 330",
+      "offers": {
+        "@id": "/products/team-pro-mk-tls-boots-1?variant=57277702242635#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "529.90",
+        "priceCurrency": "EUR",
+        "url": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1?variant=57277702242635"
+      },
+      "sku": "13BT11004-101-330"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "6558d94e3baa36e1370c5267d833eece676d99bad4e4a7e447e1e1cea144dc79",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

@@ -31,6 +31,8 @@ specs:
   scenes:
     - all-mountain
     - powder
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
   - url: "https://contents.mediadecathlon.com/p2572726/k$71ec9103476ba320ff720d13e85c95ba/picture.jpg?format=auto&f=3000x0"
     kind: face

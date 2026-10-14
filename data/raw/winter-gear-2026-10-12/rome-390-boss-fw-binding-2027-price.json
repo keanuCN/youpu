@@ -1,0 +1,80 @@
+{
+  "slug": "rome-390-boss-fw-binding-2027",
+  "price": "USD 369.95",
+  "source": "https://romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:43:32.316Z",
+  "productName": "390 Boss FW Men's Snowboard Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings",
+  "hasVariant": [
+    {
+      "@id": "/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384268419#variant",
+      "@type": "Product",
+      "gtin": "8721164508233",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-fw-c3-artifact-binding-1-1782373333346.jpg?v=1787636962&width=1920",
+      "name": "390 Boss FW Men's Snowboard Bindings - M/L / Artifact",
+      "offers": {
+        "@id": "/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384268419#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "369.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384268419"
+      },
+      "sku": "RO.27.22.390.ML.PK"
+    },
+    {
+      "@id": "/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384301187#variant",
+      "@type": "Product",
+      "gtin": "8721164508240",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-fw-c2-ivory-binding-1-1782373328233.jpg?v=1786613199&width=1920",
+      "name": "390 Boss FW Men's Snowboard Bindings - M/L / Ivory",
+      "offers": {
+        "@id": "/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384301187#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "369.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384301187"
+      },
+      "sku": "RO.27.22.390.ML.WH"
+    },
+    {
+      "@id": "/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384333955#variant",
+      "@type": "Product",
+      "gtin": "8721164508219",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-fw-c3-artifact-binding-1-1782373333346.jpg?v=1787636962&width=1920",
+      "name": "390 Boss FW Men's Snowboard Bindings - L/XL / Artifact",
+      "offers": {
+        "@id": "/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384333955#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "369.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384333955"
+      },
+      "sku": "RO.27.22.390.LXL.PK"
+    },
+    {
+      "@id": "/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384366723#variant",
+      "@type": "Product",
+      "gtin": "8721164508226",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-390-boss-fw-c2-ivory-binding-1-1782373328233.jpg?v=1786613199&width=1920",
+      "name": "390 Boss FW Men's Snowboard Bindings - L/XL / Ivory",
+      "offers": {
+        "@id": "/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384366723#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/OutOfStock",
+        "price": "369.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings?variant=47796384366723"
+      },
+      "sku": "RO.27.22.390.LXL.WH"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "ad278899d0d49ee083a3f879f97b2665430055f4ba9337bc019dcc55a7c6e196",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

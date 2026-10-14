@@ -25,8 +25,10 @@ specs:
     - carving
   profile: Vario Camber
   sizeSpecs:
-    - {"base":"IS7500 Graphite","edge":"1.8 mm / 48 RCWL","size":"63","camber":7,"setback":60,"insertQty":"10+10 & ALLFLEX","noseWidth":260,"tailWidth":247,"noseHeight":20.3,"noseLength":135,"tailHeight":5.2,"tailLength":85,"waistWidth":200,"stanceWidth":"460–540","sidecutRadii":"10200/9800/10800","contactLength":1410,"effectiveEdge":1510,"overallLength":1630,"sidecutOffset":-40,"sidewallAngle":"15°","sidewallColor":"NEON RED"}
-    - {"base":"IS7500 Graphite","edge":"1.8 mm / 48 RCWL","size":"85","camber":6,"setback":80,"insertQty":"10+10 & ALLFLEX","noseWidth":246,"tailWidth":232,"noseHeight":19.9,"noseLength":145,"tailHeight":6.4,"tailLength":95,"waistWidth":200,"stanceWidth":"460–540","sidecutRadii":"18800/17800/20400","contactLength":1610,"effectiveEdge":1735,"overallLength":1850,"sidecutOffset":-60,"sidewallAngle":"15°","sidewallColor":"NEON RED"}
+    - { "base": "IS7500 Graphite", "edge": "1.8 mm / 48 RCWL", "size": "63", "camber": 7, "setback": 60, "insertQty": "10+10 & ALLFLEX", "noseWidth": 260, "tailWidth": 247, "noseHeight": 20.3, "noseLength": 135, "tailHeight": 5.2, "tailLength": 85, "waistWidth": 200, "stanceWidth": "460–540", "sidecutRadii": "10200/9800/10800", "contactLength": 1410, "effectiveEdge": 1510, "overallLength": 1630, "sidecutOffset": -40, "sidewallAngle": "15°", "sidewallColor": "NEON RED" }
+    - { "base": "IS7500 Graphite", "edge": "1.8 mm / 48 RCWL", "size": "85", "camber": 6, "setback": 80, "insertQty": "10+10 & ALLFLEX", "noseWidth": 246, "tailWidth": 232, "noseHeight": 19.9, "noseLength": 145, "tailHeight": 6.4, "tailLength": 95, "waistWidth": 200, "stanceWidth": "460–540", "sidecutRadii": "18800/17800/20400", "contactLength": 1610, "effectiveEdge": 1735, "overallLength": 1850, "sidecutOffset": -60, "sidewallAngle": "15°", "sidewallColor": "NEON RED" }
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
   - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/28_TYCOON%20Type-S%5Biz%5D/2627_28_TYCOON%20Type-S%5Biz%5D_main.png"
     kind: face

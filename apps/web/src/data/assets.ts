@@ -28,10 +28,7 @@ export const IMG = {
     resolveImageUrl(
       "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-detail-binding.png?auth_key=b65df2b86b31534b53b605d6ae3c12bd3061d495618139b5d7bb821526f17890",
     ),
-  heroRidge:
-    resolveImageUrl(
-      "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/hero-ridge.png?auth_key=12382ced0bf2c0dc18c0c11c5e75b977d3b2310f18cb69254a0695446681db65",
-    ),
+  heroRidge: resolveImageUrl("/images/hero-ridge.webp"),
   riderCarve:
     resolveImageUrl(
       "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/rider-carve.png?auth_key=8f03132146310e5dc68c640fdc85ade30f12ee170b9a62e3e2cc06c2a07d2bf8",

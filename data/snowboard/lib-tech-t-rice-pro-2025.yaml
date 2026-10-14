@@ -172,6 +172,8 @@ specs:
       setbackInches: 0
       brandFlexOutOf10: 7
       riderWeightRaw: 145+ lb / 70+ kg
+  priceCheckedAt: 2026-10-12
+  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
   stability: 7.5
   response: 8

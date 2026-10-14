@@ -1,0 +1,64 @@
+{
+  "slug": "rome-katana-fw-pro-binding-2027",
+  "price": "USD 469.95",
+  "source": "https://romesnowboards.com/products/rome-katana-fw-pro-2627-mens-snowboard-bindings",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:35.853Z",
+  "productName": "Katana FW Pro Men's Snowboard Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://romesnowboards.com/products/rome-katana-fw-pro-2627-mens-snowboard-bindings",
+  "hasVariant": [
+    {
+      "@id": "/products/rome-katana-fw-pro-2627-mens-snowboard-bindings?variant=47796386365571#variant",
+      "@type": "Product",
+      "gtin": "8721164508271",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-PRO-FW_C1-BLACK_1_ffa43267-dae6-4049-a34f-5909b145fe75.jpg?v=1787636962&width=1920",
+      "name": "Katana FW Pro Men's Snowboard Bindings - S / Black",
+      "offers": {
+        "@id": "/products/rome-katana-fw-pro-2627-mens-snowboard-bindings?variant=47796386365571#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "469.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-katana-fw-pro-2627-mens-snowboard-bindings?variant=47796386365571"
+      },
+      "sku": "RO.27.22.KATP.S.BK"
+    },
+    {
+      "@id": "/products/rome-katana-fw-pro-2627-mens-snowboard-bindings?variant=47796386398339#variant",
+      "@type": "Product",
+      "gtin": "8721164508264",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-PRO-FW_C1-BLACK_1_ffa43267-dae6-4049-a34f-5909b145fe75.jpg?v=1787636962&width=1920",
+      "name": "Katana FW Pro Men's Snowboard Bindings - M/L / Black",
+      "offers": {
+        "@id": "/products/rome-katana-fw-pro-2627-mens-snowboard-bindings?variant=47796386398339#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "469.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-katana-fw-pro-2627-mens-snowboard-bindings?variant=47796386398339"
+      },
+      "sku": "RO.27.22.KATP.ML.BK"
+    },
+    {
+      "@id": "/products/rome-katana-fw-pro-2627-mens-snowboard-bindings?variant=47796386431107#variant",
+      "@type": "Product",
+      "gtin": "8721164508257",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_KATANA-PRO-FW_C1-BLACK_1_ffa43267-dae6-4049-a34f-5909b145fe75.jpg?v=1787636962&width=1920",
+      "name": "Katana FW Pro Men's Snowboard Bindings - L/XL / Black",
+      "offers": {
+        "@id": "/products/rome-katana-fw-pro-2627-mens-snowboard-bindings?variant=47796386431107#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "469.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-katana-fw-pro-2627-mens-snowboard-bindings?variant=47796386431107"
+      },
+      "sku": "RO.27.22.KATP.LXL.BK"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "112fbbb4c5958b8252387df31cccc06d966e7a0516c929cd00fb78f3b767f774",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

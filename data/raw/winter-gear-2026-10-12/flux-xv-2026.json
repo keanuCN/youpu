@@ -1,0 +1,81 @@
+{
+  "capturedAt": "2026-10-12T06:43:25.802Z",
+  "target": {
+    "slug": "flux-xv-2026",
+    "category": "snowboard-binding",
+    "brand": "flux",
+    "model": "XV",
+    "year": 2026,
+    "url": "https://flux-bindings.com/products/2526xv",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://flux-bindings.com/products/2526xv",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://flux-bindings.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:37.596Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "匹配到 Allow 规则",
+      "matchedRule": "ALLOW /（第 19 行）"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": null,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Snowboard Bindings | XV | FLUX ONLINE STORE",
+    "canonicalUrl": "https://flux-bindings.com/en/products/2526xv",
+    "tables": []
+  },
+  "review": {
+    "rows": [
+      {
+        "size": "XS",
+        "mondo": "21 - 23.5",
+        "usMen": "3 - 5.5",
+        "usWomen": "4 - 6.5",
+        "eu": "34 - 37.5",
+        "uk": "2 - 4.5",
+        "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+      },
+      {
+        "size": "S",
+        "mondo": "22.5 - 25.5",
+        "usMen": "4.5 - 7.5",
+        "usWomen": "5.5 - 8.5",
+        "eu": "36 - 40.5",
+        "uk": "3.5 - 6.5",
+        "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+      },
+      {
+        "size": "M",
+        "mondo": "25 - 27.5",
+        "usMen": "7 - 9.5",
+        "usWomen": "8 - 10.5",
+        "eu": "40 - 42.5",
+        "uk": "6 - 8.5",
+        "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+      },
+      {
+        "size": "L",
+        "mondo": "27+",
+        "usMen": "9+",
+        "eu": "42+",
+        "uk": "8+",
+        "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+      }
+    ],
+    "sources": "https://flux-bindings.com/products/2526xv；https://flux-bindings.com/pages/size-chart_binding",
+    "good": true,
+    "fluxChartImage": "https://cdn.shopify.com/s/files/1/0621/9120/6566/files/3bf0b21757afc494d0999753a20939f7_1024x1024.png?v=1671226541"
+  }
+}

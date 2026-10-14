@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-10-12T06:42:40.811Z",
+  "target": {
+    "slug": "jones-mercury-binding-2026",
+    "category": "snowboard-binding",
+    "brand": "jones",
+    "model": "Mercury",
+    "year": 2026,
+    "url": "https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026",
+    "mode": "cheerio"
+  },
+  "source": {
+    "url": "https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026",
+    "engine": "cheerio",
+    "statusCode": 200,
+    "robots": {
+      "robotsUrl": "https://www.jonessnowboards.com/robots.txt",
+      "fetchedAt": "2026-10-12T06:40:37.982Z",
+      "status": 200,
+      "allowed": true,
+      "reason": "未匹配到 Disallow 规则"
+    },
+    "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
+  },
+  "validation": {
+    "identityMatch": true,
+    "seasonMatch": null,
+    "specSchemaFound": true,
+    "partial": true,
+    "ok": true,
+    "issues": []
+  },
+  "page": {
+    "title": "Men’s Snowboard Bindings: FASE® Fast Entry & Traditional Two-Strap | Jones",
+    "canonicalUrl": "https://www.jonessnowboards.com/en-int/collections/mens-bindings",
+    "tables": []
+  },
+  "review": {
+    "rows": [],
+    "sources": "https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026",
+    "good": true
+  }
+}

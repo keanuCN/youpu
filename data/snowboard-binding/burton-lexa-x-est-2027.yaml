@@ -9,7 +9,7 @@ specs:
   entrySystem: strap
   flexFeel: stiff
   mountingSystem: "EST：仅适用于 Burton The Channel 雪板；底部无硬件，支持更灵活的站姿调节"
-  bootCompatibility: "EST 版本仅用于 Burton The Channel 雪板；适配普通绑带雪鞋"
+  bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "Burton 女款官方尺码：S US 女靴 4–6 / EU 34–36.5；M 6–8 / EU 36.5–40；L 8+ / EU 40+"
   baseplateMaterial: "30% 短切玻纤/尼龙复合材料"
   ankleStrap: "非对称 Hammockstrap"
@@ -19,6 +19,17 @@ specs:
   highbackAdjustment: "DialFLAD 前倾角调节，可调至零前倾"
   cushioning: "FullBED 全掌缓震"
   warranty: "底盘终身保修；绑带和高背自购买日起 1 年保修"
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 此 EST 版本仅适用于 The Channel，不适用于普通四孔雪板。
+  compatibilitySources: https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331
+  sizeChart:
+    - { size: S, usWomen: 4-6, eu: 34-36.5, uk: 2.5-4, mondo: 21-23 }
+    - { size: M, usWomen: 6-8, usMen: 6-7, eu: 36.5-40, uk: 4-6, mondo: 23-25 }
+    - { size: L, usWomen: 8+, usMen: 7-10, eu: 40+, uk: 6+, mondo: 25+ }
+  priceCheckedAt: 2026-10-12
+  officialPrice: USD 349.95
+  priceMarket: 原币 USD；来源商店 www.burton.com
+  priceSource: https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331
+  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
 images:
   - url: "https://www.burton.com/cdn/shop/files/2223314E9R_1.webp?v=1783620802&width=1200"
     kind: face

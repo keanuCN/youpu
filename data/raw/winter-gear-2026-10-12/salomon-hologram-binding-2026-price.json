@@ -1,0 +1,93 @@
+{
+  "slug": "salomon-hologram-binding-2026",
+  "price": "USD 359.95",
+  "source": "https://www.salomon.com/en-us/product/hologram-li5326",
+  "explicitSeason": false,
+  "capturedAt": "2026-10-12T06:43:46.373Z",
+  "productName": "HOLOGRAM",
+  "productType": "ProductGroup",
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "HOLOGRAM Huckleberry",
+      "image": "https://cdn.dam.salomon.com/9daa7dca-1d3d-4022-b448-b360010834ff/L49289300/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Huckleberry",
+      "size": "S",
+      "sku": "L49289300054",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/hologram-li5326/L49289300?sizeId=L49289300054",
+        "priceCurrency": "USD",
+        "price": "359.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "HOLOGRAM Huckleberry",
+      "image": "https://cdn.dam.salomon.com/9daa7dca-1d3d-4022-b448-b360010834ff/L49289300/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Huckleberry",
+      "size": "M",
+      "sku": "L49289300056",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/hologram-li5326/L49289300?sizeId=L49289300056",
+        "priceCurrency": "USD",
+        "price": "359.95"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "HOLOGRAM Huckleberry",
+      "image": "https://cdn.dam.salomon.com/9daa7dca-1d3d-4022-b448-b360010834ff/L49289300/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12",
+      "color": "Huckleberry",
+      "size": "L",
+      "sku": "L49289300058",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.salomon.com/en-us/product/hologram-li5326/L49289300?sizeId=L49289300058",
+        "priceCurrency": "USD",
+        "price": "359.95"
+      }
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L45416400?sizeId=L45416400054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L45416400?sizeId=L45416400056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L45416400?sizeId=L45416400058"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L45416300?sizeId=L45416300054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L45416300?sizeId=L45416300056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L45416300?sizeId=L45416300058"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L47341700?sizeId=L47341700054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L47341700?sizeId=L47341700056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L47341700?sizeId=L47341700058"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L47341300?sizeId=L47341300054"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L47341300?sizeId=L47341300056"
+    },
+    {
+      "url": "https://www.salomon.com/en-us/product/hologram-li5326/L47341300?sizeId=L47341300058"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "7868a3cf2067b701b881637de36d48466ae3bd0820e54d7ae67affc9fef16f3a",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

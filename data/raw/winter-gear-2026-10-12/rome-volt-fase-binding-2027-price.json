@@ -1,0 +1,176 @@
+{
+  "slug": "rome-volt-fase-binding-2027",
+  "price": "USD 329.95",
+  "source": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings",
+  "explicitSeason": true,
+  "capturedAt": "2026-10-12T06:44:37.851Z",
+  "productName": "Men's Volt FASE® Snowboard Bindings",
+  "productType": "ProductGroup",
+  "productUrl": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings",
+  "hasVariant": [
+    {
+      "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401111171#variant",
+      "@type": "Product",
+      "gtin": "8721164510717",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C1-BLACK_1_38fd3f25-1d31-4eb0-8c80-709d1b93c9d2.jpg?v=1787607576&width=1920",
+      "name": "Men's Volt FASE® Snowboard Bindings - XS / Black",
+      "offers": {
+        "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401111171#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "329.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401111171"
+      },
+      "sku": "RO.27.28.VO.XS.BK"
+    },
+    {
+      "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364553859#variant",
+      "@type": "Product",
+      "gtin": "8721164510687",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C1-BLACK_1_38fd3f25-1d31-4eb0-8c80-709d1b93c9d2.jpg?v=1787607576&width=1920",
+      "name": "Men's Volt FASE® Snowboard Bindings - S / Black",
+      "offers": {
+        "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364553859#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "329.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364553859"
+      },
+      "sku": "RO.27.28.VO.S.BK"
+    },
+    {
+      "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364652163#variant",
+      "@type": "Product",
+      "gtin": "8721164510656",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C1-BLACK_1_38fd3f25-1d31-4eb0-8c80-709d1b93c9d2.jpg?v=1787607576&width=1920",
+      "name": "Men's Volt FASE® Snowboard Bindings - M / Black",
+      "offers": {
+        "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364652163#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "329.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364652163"
+      },
+      "sku": "RO.27.28.VO.M.BK"
+    },
+    {
+      "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401143939#variant",
+      "@type": "Product",
+      "gtin": "8721164510625",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C1-BLACK_1_38fd3f25-1d31-4eb0-8c80-709d1b93c9d2.jpg?v=1787607576&width=1920",
+      "name": "Men's Volt FASE® Snowboard Bindings - L / Black",
+      "offers": {
+        "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401143939#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "329.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401143939"
+      },
+      "sku": "RO.27.28.VO.L.BK"
+    },
+    {
+      "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364586627#variant",
+      "@type": "Product",
+      "gtin": "8721164510694",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C3-ACID_1_64e656ed-4c63-438d-85d4-0a4bbd23cf8d.jpg?v=1787637018&width=1920",
+      "name": "Men's Volt FASE® Snowboard Bindings - S / Acid",
+      "offers": {
+        "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364586627#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "329.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364586627"
+      },
+      "sku": "RO.27.28.VO.S.GN"
+    },
+    {
+      "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364684931#variant",
+      "@type": "Product",
+      "gtin": "8721164510663",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C3-ACID_1_64e656ed-4c63-438d-85d4-0a4bbd23cf8d.jpg?v=1787637018&width=1920",
+      "name": "Men's Volt FASE® Snowboard Bindings - M / Acid",
+      "offers": {
+        "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364684931#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "329.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364684931"
+      },
+      "sku": "RO.27.28.VO.M.GN"
+    },
+    {
+      "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401176707#variant",
+      "@type": "Product",
+      "gtin": "8721164510632",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C3-ACID_1_64e656ed-4c63-438d-85d4-0a4bbd23cf8d.jpg?v=1787637018&width=1920",
+      "name": "Men's Volt FASE® Snowboard Bindings - L / Acid",
+      "offers": {
+        "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401176707#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "329.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401176707"
+      },
+      "sku": "RO.27.28.VO.L.GN"
+    },
+    {
+      "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364619395#variant",
+      "@type": "Product",
+      "gtin": "8721164510700",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C2-STONE_1_e38f690f-52bb-48f2-af99-b74250455b08.jpg?v=1787636963&width=1920",
+      "name": "Men's Volt FASE® Snowboard Bindings - S / Stone",
+      "offers": {
+        "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364619395#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "329.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364619395"
+      },
+      "sku": "RO.27.28.VO.S.GY"
+    },
+    {
+      "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364717699#variant",
+      "@type": "Product",
+      "gtin": "8721164510670",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C2-STONE_1_e38f690f-52bb-48f2-af99-b74250455b08.jpg?v=1787636963&width=1920",
+      "name": "Men's Volt FASE® Snowboard Bindings - M / Stone",
+      "offers": {
+        "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364717699#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "329.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47145364717699"
+      },
+      "sku": "RO.27.28.VO.M.GY"
+    },
+    {
+      "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401209475#variant",
+      "@type": "Product",
+      "gtin": "8721164510649",
+      "image": "https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627_ROME_WEB_BN_MENS-VOLT-FASE_C2-STONE_1_e38f690f-52bb-48f2-af99-b74250455b08.jpg?v=1787636963&width=1920",
+      "name": "Men's Volt FASE® Snowboard Bindings - L / Stone",
+      "offers": {
+        "@id": "/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401209475#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "329.95",
+        "priceCurrency": "USD",
+        "url": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings?variant=47796401209475"
+      },
+      "sku": "RO.27.28.VO.L.GY"
+    }
+  ],
+  "hashes": {
+    "rawContentHash": "09e9713a03b00848b499ca629bd3d6552bb1c7ec030f52b7ba33b48b19ff3410",
+    "normalizedSpecHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}
