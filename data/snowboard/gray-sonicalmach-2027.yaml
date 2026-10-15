@@ -14,7 +14,7 @@ specs:
   formerSeriesName: MACH
   manufacturer: GRAY SNOWBOARDS
   lengthOptions: 46 / 51 / 54 / 55w / 54 ver.C / 55w ver.C / 58 / 60w / 63w
-  shape: Directional（各尺码具体结构请核对目录）
+  shape: Directional；Directional Flex（按尺码与型号组变化）
   profile: Single Camber
   profileFamily: camber
   core: 木芯结构（结构随尺码）；芯材下方 X 形碳纤维配置
@@ -34,7 +34,6 @@ specs:
   sidewallColor: NEON RED
   insertQuantity: 12+12
   sidecutDesign: TripleRadius（三段复合侧切）
-  shape: Directional；Directional Flex（按尺码与型号组变化）
   officialCoreConstructionLegend: 目录标注 2ply 65/35、STD Core II、3ply 50/50，构造随尺码变化，未强行映射到每个尺码。
   sizeSpecs:
     - { size: "46", overallLength: 1460, effectiveEdge: 1140, contactLength: 1090, waistWidth: 240, sidecutRadii: "7.6 / 7.2 / 7.8", sidecutOffset: -15, noseLength: 190, noseWidth: 283, noseHeight: 45.4, tailLength: 180, tailWidth: 278, tailHeight: 40.8, camber: 6, stanceWidth: "440–560", setback: 5, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 4.0 / W 5.2 / T 4.1" }
