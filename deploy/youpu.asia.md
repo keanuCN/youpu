@@ -35,6 +35,8 @@ nginx -t && systemctl reload nginx
 
 ## 发布域名前台
 
+2026-10-15 已补充“单板教练认证体系”，按加拿大 CASI、日本 JSBA、美国 AASI/PSIA-AASI、新西兰 SBINZ、国际 ISIA 与中国职业技能评价体系介绍，并将该区块放在三件套搭配之后。IP 内测站 `http://115.190.156.88/youpu/guides/snowboard-setup` 与域名站服务器本机 HTTPS 路由均返回 HTTP 200；三个服务 active，根路径点单应用返回 HTTP 200。发布目录 `/opt/youpu-releases/20261015-instructor-systems/`，源码与 systemd 配置备份保留在该目录。部署只更新 Web 页面与标志图片，没有改动数据库或 API。公网域名仍受备案接入限制。
+
 2026-10-15 已更新单板科普排版，并增加可切换预设和前后脚角度滑块的俯视站姿模拟。IP 内测站与域名站分别切换到 `.next-snowboard-stance-ui-20261015-{ip,domain}`；IP 科普页与域名科普页在服务器本机校验均为 HTTP 200，点单根站 HTTP 200，三个服务均 active。构建与发布资料位于服务器 `/opt/youpu-releases/20261015-snowboard-stance-ui/`。域名公网访问仍受备案接入限制。
 
 2026-10-15 商品图片迁移随后完成线上同步：生产数据库中 228 款匹配商品的 295 张图已改为 TOS 地址；IP 内测站和域名前台均已切换到 `.next-image-tos-20261015-ip` / `.next-image-tos-20261015-domain`。备份和验收记录见[图片存储说明](../docs/product-image-storage.md)，服务器发布目录为 `/opt/youpu-releases/20261015-image-tos/`。两站首页、单板科普和商品详情经本机请求均返回 200，API 健康为 `db=true`、`redis=true`。域名公网仍受火山引擎备案接入限制。

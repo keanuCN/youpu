@@ -45,6 +45,8 @@ chown youpu:youpu apps/web/src/components/gear/snowboard-stance-guide.tsx
 chown youpu:youpu apps/web/src/components/gear/snowboard-stance-simulator.tsx
 chown youpu:youpu apps/web/src/components/gear/snowboard-instructor-systems.tsx
 chown youpu:youpu apps/web/public/logos/casi.svg apps/web/public/logos/isia.svg apps/web/public/logos/jsba.svg apps/web/public/logos/psia-aasi.svg apps/web/public/logos/sbinz.png
+chmod 755 apps/web/public/logos
+chmod 644 apps/web/public/logos/casi.svg apps/web/public/logos/isia.svg apps/web/public/logos/jsba.svg apps/web/public/logos/psia-aasi.svg apps/web/public/logos/sbinz.png
 
 runuser -u youpu -- env NODE_ENV=production NODE_OPTIONS=--max-old-space-size=1536 NEXT_DIST_DIR=.next-instructor-systems-20261015-domain NEXT_PUBLIC_BASE_PATH= NEXT_PUBLIC_SITE_URL=https://youpu.asia NEXT_PUBLIC_API_BASE=https://youpu.asia NEXT_PUBLIC_CONTENT_SOURCE=api NEXT_PUBLIC_API_SAME_ORIGIN=true NEXT_PUBLIC_CURATED_BASELINE=false pnpm --filter @youpu/web build > "$release/build-domain.log" 2>&1
 runuser -u youpu -- env NODE_ENV=production NODE_OPTIONS=--max-old-space-size=1536 NEXT_DIST_DIR=.next-instructor-systems-20261015-ip NEXT_PUBLIC_BASE_PATH=/youpu NEXT_PUBLIC_SITE_URL=http://115.190.156.88/youpu NEXT_PUBLIC_API_BASE=http://115.190.156.88/youpu NEXT_PUBLIC_CONTENT_SOURCE=api NEXT_PUBLIC_API_SAME_ORIGIN=true NEXT_PUBLIC_CURATED_BASELINE=false pnpm --filter @youpu/web build > "$release/build-ip.log" 2>&1
