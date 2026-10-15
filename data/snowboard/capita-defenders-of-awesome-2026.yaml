@@ -32,6 +32,25 @@ specs:
   scenes:
     - freestyle
     - all-mountain
+  lengthOptions: 148 / 150 / 152 / 154 / 156 / 158 / 160 / 162 / 164 / 151W / 153W / 155W / 157W / 159W / 161W / 163W
+  sizeSpecs:
+    - { size: "148", effectiveEdge: 1176, waistWidth: 244, noseWidth: 287, tailWidth: 287, sidecutRadii: 7.6 m, stanceWidth: 508 mm（参考）, riderWeight: 40-68 kg }
+    - { size: "150", effectiveEdge: 1191, waistWidth: 246, noseWidth: 290, tailWidth: 290, sidecutRadii: 7.7 m, stanceWidth: 533 mm（参考）, riderWeight: 45-68 kg }
+    - { size: "152", effectiveEdge: 1207, waistWidth: 248, noseWidth: 292, tailWidth: 292, sidecutRadii: 7.8 m, stanceWidth: 533 mm（参考）, riderWeight: 50-68 kg }
+    - { size: "154", effectiveEdge: 1222, waistWidth: 250, noseWidth: 295, tailWidth: 295, sidecutRadii: 7.9 m, stanceWidth: 533 mm（参考）, riderWeight: 54-81 kg }
+    - { size: "156", effectiveEdge: 1233, waistWidth: 252, noseWidth: 298, tailWidth: 298, sidecutRadii: 8.0 m, stanceWidth: 559 mm（参考）, riderWeight: 59-86 kg }
+    - { size: "158", effectiveEdge: 1256, waistWidth: 254, noseWidth: 300, tailWidth: 300, sidecutRadii: 8.1 m, stanceWidth: 559 mm（参考）, riderWeight: 63-90 kg }
+    - { size: "160", effectiveEdge: 1270, waistWidth: 257, noseWidth: 304, tailWidth: 304, sidecutRadii: 8.2 m, stanceWidth: 584 mm（参考）, riderWeight: 72-100 kg }
+    - { size: "162", effectiveEdge: 1287, waistWidth: 259, noseWidth: 306, tailWidth: 306, sidecutRadii: 8.3 m, stanceWidth: 584 mm（参考）, riderWeight: 82-110 kg }
+    - { size: "164", effectiveEdge: 1301, waistWidth: 261, noseWidth: 309, tailWidth: 309, sidecutRadii: 8.4 m, stanceWidth: 584 mm（参考）, riderWeight: 86-111 kg }
+    - { size: 151W, effectiveEdge: 1170, waistWidth: 255, noseWidth: 297, tailWidth: 297, sidecutRadii: 7.9 m, stanceWidth: 559 mm（参考）, riderWeight: 49-68 kg }
+    - { size: 153W, effectiveEdge: 1185, waistWidth: 256, noseWidth: 299, tailWidth: 299, sidecutRadii: 8.0 m, stanceWidth: 559 mm（参考）, riderWeight: 54-81 kg }
+    - { size: 155W, effectiveEdge: 1205, waistWidth: 258, noseWidth: 302, tailWidth: 302, sidecutRadii: 8.1 m, stanceWidth: 559 mm（参考）, riderWeight: 59-86 kg }
+    - { size: 157W, effectiveEdge: 1239, waistWidth: 260, noseWidth: 305, tailWidth: 305, sidecutRadii: 8.1 m, stanceWidth: 584 mm（参考）, riderWeight: 63-90 kg }
+    - { size: 159W, effectiveEdge: 1259, waistWidth: 261, noseWidth: 307, tailWidth: 307, sidecutRadii: 8.2 m, stanceWidth: 584 mm（参考）, riderWeight: 68-95 kg }
+    - { size: 161W, effectiveEdge: 1280, waistWidth: 262, noseWidth: 309, tailWidth: 309, sidecutRadii: 8.3 m, stanceWidth: 584 mm（参考）, riderWeight: 73-100 kg }
+    - { size: 163W, effectiveEdge: 1294, waistWidth: 263, noseWidth: 311, tailWidth: 311, sidecutRadii: 8.4 m, stanceWidth: 584 mm（参考）, riderWeight: 86-104+ kg }
+  selectionNotes: "尺码表来自 Melbourne Snowboard 的 2026 款商品页（零售商数据）；Sportano 同年页面交叉核对时，163W 有效刃长出现 3 mm 差异，本档案保留主来源数值：https://www.melbournesnowboard.com.au/products/capita-defenders-of-awesome-2026"
   priceCheckedAt: 2026-10-12
   priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 editorial_scores:
@@ -42,12 +61,12 @@ editorial_scores:
   forgiveness: 7
   value: 8.5
 images:
-  - url: "https://scene7.zumiez.com/is/image/zumiez/product_main_medium/Capita-D.O.A.-Snowboard-2026-_399518-front-US.jpg"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/aa1707afc83a7b08d1fe8af8fcde3ff98351081be5511310f1576aa6c91eb854.webp"
     kind: face
     alt: CAPiTA Defenders of Awesome 2026 单板商品图
     source: Zumiez 2026 商品页（图片使用授权待核）
     sort_order: 0
 data_source:
-  kind: official
-  origin_url: https://golgoda.com/PDF/25-26%20CAPiTA.pdf
+  kind: crawl
+  origin_url: https://www.melbournesnowboard.com.au/products/capita-defenders-of-awesome-2026
 status: published

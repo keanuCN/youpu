@@ -4,6 +4,10 @@ brand: mchose
 model: MCHOSE G87 V2
 year: 2026
 title: MCHOSE G87 V2 87-Key Tri-Mode Mechanical Keyboard
+price:
+  min: 329
+  max: 329
+  currency: CNY
 specs:
   keyboardType: mechanical
   layout: 87 键 TKL
@@ -14,9 +18,16 @@ specs:
     - bluetooth
   hotSwap: true
   driver: MCHOSE M HUB
-images: []
+  priceSource: https://item.jd.com/product/sz2e0TPNlFHCTjl2FFEV0g.html
+  priceStatus: 京东商品页于 2026-10-15 显示挂牌价 CNY 329；优惠券、会员价和地区库存可能不同。
+images:
+  - url: https://img.alicdn.com/bao/uploaded/i1/2213920268321/O1CN01FRvqQX2BL4m9LP6Y1_%21%214611686018427379745-0-item_pic.jpg
+    kind: face
+    alt: MCHOSE G87 V2 三模机械键盘
+    source: 迈从官方旗舰店商品图（天猫数据聚合页引用，展示授权状态待核）
+    sort_order: 0
 data_source:
   kind: crawl
-  origin_url: https://support.mchose.store/hc/en-us/articles/50413594299284-MCHOSE-Mix-87-M-HUB-Guide
+  origin_url: https://www.maicong.cn/
   snapshot_url: https://www.jd.com/hprm/670b1cbcaa6f508f47d.html
 status: published

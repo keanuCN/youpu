@@ -7,7 +7,13 @@
   "officialProductPage": {
     "url": "https://www.atomic.com/en-us/products/redster-q9-revoshock-s-i-12-gw-aa7469-202600",
     "evidence": "Atomic's official page lists SKU AASS03784+, sizes 153/160/167/174/181 cm, per-size turn radius and tip/waist/tail geometry, Active Camber 0/100/0, 0.8° base edge, 87° side edge, advanced/expert positioning, Power Woodcore (ash and poplar), Ultrawall full sidewall construction, Revoshock S, Carbon Boost, All-Condition Piste Shape, structured topsheet, World Cup Base Finish, Tip Protector, and I 12 GW binding bundle. The datasheet explicitly labels weight per ski and reports 3189 g at 174 cm.",
-    "seasonEvidence": "The product URL ends in the 202600 model identifier and Atomic currently lists lengths 153/160/167/174/181 for this SKU; retailer season listings identify this specification set as 2026/27. The previous seed called the same image/SKU 2025/26 and is retired to draft pending separate verification of an actual prior-season item."
+    "seasonEvidence": "Atomic Japan's official catalogue archive lists a 2026/27 catalogue, while Atomic's official product page confirms model AASS03784+ and matching sizes but does not label the season. Product-specific listings from Skihaus Hellenberg and SkiRace24 identify the same model/article as 2026/27; season is cross-checked by exact model/article mapping, not asserted from the official product page alone. The former 2025/26 seed remains retired to draft because its season-specific SKU is unverified.",
+    "seasonEvidenceSources": [
+      "https://atomicsnow.jp/pages/catalogue",
+      "https://www.atomic.com/en-us/products/redster-q9-revoshock-s-i-12-gw-aa7469-202600",
+      "https://www.ski-andmore.de/ski-alpin/sportcarver/atomic-redster-q9-revoshock-s-inkl-i-12-gw-bindung-2026-27_114051",
+      "https://www.skirace24.com/product-eng-16925-Skis-Atomic-Redster-Q9-Revoshock-S-I-12-GW-2026-27.html"
+    ]
   },
   "specifications": {
     "lengthSpecs": [

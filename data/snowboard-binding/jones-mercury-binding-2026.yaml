@@ -5,16 +5,32 @@ model: "Mercury"
 year: 2026
 title: "Jones Mercury 2026"
 one_liner: "全地形 freeride 取向固定器，采用 SkateTech 力量传递结构。"
+price:
+  min: 2700.80
+  max: 2700.80
+  currency: CNY
 specs:
+  sizeChart:
+    - { "size": "S", "gender": "US 男款口径", "usMen": "5–7", "eu": "36.5–39.5", "mondo": "23.5–25" }
+    - { "size": "M", "gender": "US 男款口径", "usMen": "7.5–10", "eu": "40–43", "mondo": "25.5–28" }
+    - { "size": "L", "gender": "US 男款口径", "usMen": "10.5+", "eu": "43.5+", "mondo": "28.5+" }
+    - { "size": "S", "gender": "US 女款口径", "usWomen": "5–8.5", "eu": "35–39.5", "mondo": "22–25" }
+    - { "size": "M", "gender": "US 女款口径", "usWomen": "9–11.5", "eu": "40–42.5", "mondo": "25.5–27.5" }
+  sizeChartCheckedAt: "2026-10-14"
+  sizeChartSource: https://www.jonessnowboards.com/products/mens-mercury-snowboard-binding-2026
   entrySystem: strap
   flex: 7
   bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
-  selectionNotes: 原型号链接已跳转到固定器分类页，未找到 Mercury 2026 的型号级官方尺码表。不得套用 Mercury FASE 或其他型号的尺寸；按实物、原说明书和对应雪鞋试装。
+  selectionNotes: 按 Jones Mercury 2026 官方尺码表分别核对男款或女款口径；EU 区间边界需结合对应口径与实物雪鞋试装，并检查后跟、绑带和鞋底居中。不要把 Mercury FASE 的表当成本型号规格。
   compatibilitySources: https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026
-  priceCheckedAt: 2026-10-12
-  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
+  priceCheckedAt: 2026-10-14
+  officialPrice: JPY 58,000（含日本消费税 JPY 63,800）
+  priceMarket: 日本 Jones 官方代理商 Hasco 2025/26 建议零售价；使用 ECB 参考汇率折算成人民币
+  priceSource: https://www.hasco.co.jp/pdf/2526Jones-Overview.pdf
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Hasco 2025/26 代理商产品总览列 Men's Mercury、Eclipse Black、S/M/L，未税 JPY 58,000、含税 JPY 63,800；按 2026-10-13 ECB EUR/JPY 176.91、EUR/CNY 7.4890 折算含税参考价 CNY 2,700.80。此为日本建议零售价折算，不是实时成交价或中国售价；未含跨境运输与进口费用。ECB 汇率仅供参考。
 images:
-  - url: "https://images.evo.com/imgp/zoom/264057/1202448/jones-mercury-snowboard-bindings-2026-.jpg"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/7efba2dbc1f5df263b6fdf07e05bafad5e91fb76615c434208ff732e6b67f68b.webp"
     kind: face
     alt: Jones Mercury 2026 固定器商品图
     source: evo 商品页（2026 Mercury 型号图；图片使用授权待核）
@@ -22,4 +38,11 @@ images:
 data_source:
   kind: official
   origin_url: https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 8.1
+  comfort: 6.2
+  versatility: 6.8
+  convenience: 6.2
+  value: 5.0
 status: published

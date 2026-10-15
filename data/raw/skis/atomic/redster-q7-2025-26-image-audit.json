@@ -1,0 +1,29 @@
+{
+  "product": "Atomic Redster Q7 Revoshock C + MI 12 GW",
+  "season": "2025/26",
+  "article": "AASS03668",
+  "checkedAt": "2026-10-15",
+  "previousImage": {
+    "url": "https://cdn.amersports.com/017bc76f-f5cc-42b8-a786-b49f00cdff46/ATP_AASS03788_0_GHO_Redster_Q7_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format=auto&height=1350&quality=80&width=1800",
+    "article": "AASS03788",
+    "season": "2026/27",
+    "decision": "Removed from the 2025/26 seed because its product image article did not match AASS03668."
+  },
+  "replacementImage": {
+    "url": "https://shop.r10s.jp/vail-skishop/cabinet/25-26/sk-ita1/226ato1018_00.jpg",
+    "sourcePage": "https://item.rakuten.co.jp/vail-skishop/226ato1018/",
+    "evidence": "Rakuten Vail product page is listed under 25/26 models, names REDSTER Q7 REVOSHOCK C + MI 12 GW, identifies article AASS03668, and lists lengths 160/168/176 cm with matching geometry. The product image is hosted in the same shop's 25-26 Atomic ski image directory.",
+    "rights": "Image is used as a product-identification reference; third-party display/republication permission has not been confirmed."
+  },
+  "crossChecks": [
+    {
+      "url": "https://www.sport-hun.at/wp-content/uploads/2025/03/Atomic-Katalog-2526.pdf",
+      "evidence": "Atomic 25/26 catalogue lists article AASS03668, sizes 152/160/168/176 cm, geometry and MI 12 GW binding."
+    },
+    {
+      "url": "https://www.ski-andmore.de/ski-alpin/sportcarver/atomic-redster-q7-revoshock-c-inkl-mi-12-gw-bindung-2025-26_113858",
+      "evidence": "Retailer page identifies 2025/26 and exact article AASS03668-168; price evidence is recorded separately."
+    }
+  ],
+  "catalogDecision": "The 2025/26 seed now has a same-season, exact-article product image reference. The product is published in the local seed and catalog snapshot; image rights remain pending."
+}

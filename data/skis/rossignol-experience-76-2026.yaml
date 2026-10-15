@@ -4,27 +4,72 @@ brand: rossignol
 model: Experience 76 Xpress
 year: 2026
 title: Rossignol Experience 76 Xpress 2025/26
+price:
+  min: 3212.17
+  max: 3212.17
+  currency: CNY
 one_liner: Rossignol 雪道与全山地入门型号，官网说明其侧重易操控 carving 和全雪场使用。
 specs:
   lengthOptions: 136 / 144 / 152 / 160 / 168 / 176 cm
   waistWidth: 76
   turnRadius: 12
   turnRadiusReferenceLength: 152 cm
+  sizeSpecs:
+    - size: 136 cm
+      noseWidth: 123
+      waistWidth: 76
+      tailWidth: 109
+      turnRadius: 9
+      weightPerPair: 2800
+      notes: 官方产品页重量口径为 kg/pair。
+    - size: 144 cm
+      noseWidth: 123
+      waistWidth: 76
+      tailWidth: 109
+      turnRadius: 10
+      weightPerPair: 2900
+    - size: 152 cm
+      noseWidth: 123
+      waistWidth: 76
+      tailWidth: 109
+      turnRadius: 12
+      weightPerPair: 3000
+    - size: 160 cm
+      noseWidth: 123
+      waistWidth: 76
+      tailWidth: 109
+      turnRadius: 13
+      weightPerPair: 3100
+    - size: 168 cm
+      noseWidth: 123
+      waistWidth: 76
+      tailWidth: 109
+      turnRadius: 15
+      weightPerPair: 3200
+    - size: 176 cm
+      noseWidth: 123
+      waistWidth: 76
+      tailWidth: 109
+      turnRadius: 16
+      weightPerPair: 3300
   terrain: 雪道 / 全山地
   skierLevel: 入门至中级
   bindingSetup: 裸板或可选 XPRESS 10 GW
-  weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
-  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
-  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
-    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  weightBasis: 官方产品页按 kg/pair 给出六个长度的整对雪板重量，逐码录入克数，没有折算成单只重量。
+  geometryNotes: 逐长度尺寸、半径及双只重量来自 Rossignol 官方产品页；产品页未标注销售雪季，25/26 归档依据及限制见 raw 证据。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
-  sourceCheckedAt: 2026-10-13
+  seasonEvidence: 官方 25/26 产品目录入口确认该季资料发布；RAMFT04000 规格与官方产品页对应，但产品页未直接标雪季，季节归属仍保留此限制。
+  sourceCheckedAt: 2026-10-14
+  priceCheckedAt: 2026-10-14
+  listedPrice: USD 479.95
+  priceMarket: Rossignol 美国官网挂牌价（无固定器选项）
+  priceSource: https://www.rossignol.com/us-en/experience-76-xpress-RAMFT04000.html
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 美国官网当前页面列 USD 479.95，默认说明为无固定器；页面同时展示 XPRESS 10 GW B83 固定器选项并标示 included in price，实际配置以结账所选项为准。按 ECB 2026-10-14 EUR/USD 1.1195、EUR/CNY 7.4925 折算 CNY 3,212.17。产品页未直接标注雪季；美元价仅作美国市场参考，不是中国售价，美国税费及跨境费用未计。
   compatibilitySources: https://www.rossignol.com/us-en/experience-76-xpress-RAMFT04000152.html；https://www.grip-walk.com/faq/
 images:
-  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/\
-      default/dw0f3e9f73/images/large/RAMFT04_FCMDX02_EXPERIENCE_76_XPRESS_XPRE\
-      SS_10_GW_B83_BLACK_72DPI_01.jpg"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/97ed0dd53fd1004cbb2e29463ed8fd1e8a44878a308371715eb65fd726160e43.webp"
     kind: face
     alt: Rossignol Experience 76 Xpress 2025/26 官方雪板商品图
     source: Rossignol 官方产品页（图片使用授权待核）

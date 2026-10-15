@@ -1,0 +1,163 @@
+{
+  "capturedAt": "2026-10-14",
+  "priceObservationDate": "2026-10-12",
+  "exchangeRate": {
+    "base": "EUR",
+    "CNY": 7.489,
+    "date": "2026-10-13",
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "note": "ECB reference rates are informational and not transaction rates."
+  },
+  "conversionFormula": "EUR list price * 7.4890 = CNY reference, rounded to 2 decimals",
+  "products": [
+    {
+      "slug": "nitro-bianca-tls-plus-2027",
+      "model": "Bianca TLS+",
+      "euroPrice": 549.9,
+      "cnyReference": 4118.2,
+      "productSource": "https://www.nitrosnowboards.com/products/bianca-tls-womens-boots-1",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-bianca-tls-plus-2027-price.json",
+      "representativeSku": "13BT21018-102-230",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": true,
+      "limitations": ["Official page title identifies the 2027 model.", "US/CNY conversion is a European official-store reference, not a China selling price."]
+    },
+    {
+      "slug": "nitro-sentinel-boa-2027",
+      "model": "Sentinel BOA",
+      "euroPrice": 329.9,
+      "cnyReference": 2470.62,
+      "productSource": "https://www.nitrosnowboards.com/products/sentinel-boa-boots-1",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-sentinel-boa-2027-price.json",
+      "representativeSku": "13BT11014-103-250",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": true,
+      "limitations": ["Official page title identifies the 2027 model.", "US/CNY conversion is a European official-store reference, not a China selling price."]
+    },
+    {
+      "slug": "nitro-sentinel-tls-2027",
+      "model": "Sentinel TLS",
+      "euroPrice": 279.9,
+      "cnyReference": 2096.17,
+      "productSource": "https://www.nitrosnowboards.com/products/sentinel-tls-boots-1",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-sentinel-tls-2027-price.json",
+      "representativeSku": "13BT11015-102-250",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": true,
+      "limitations": ["Official page title identifies the 2027 model.", "US/CNY conversion is a European official-store reference, not a China selling price."]
+    },
+    {
+      "slug": "nitro-tangent-tls-2027",
+      "model": "Tangent TLS",
+      "euroPrice": 239.9,
+      "cnyReference": 1796.61,
+      "productSource": "https://www.nitrosnowboards.com/products/tangent-tls-boots-1",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-tangent-tls-2027-price.json",
+      "representativeSku": "13BT11017-101-250",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": true,
+      "limitations": ["Official page title identifies the 2027 model.", "US/CNY conversion is a European official-store reference, not a China selling price."]
+    },
+    {
+      "slug": "nitro-team-boa-2027",
+      "model": "Team BOA",
+      "euroPrice": 529.9,
+      "cnyReference": 3968.42,
+      "productSource": "https://www.nitrosnowboards.com/products/team-boa-boots-1",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-team-boa-2027-price.json",
+      "representativeSku": "13BT11006-103-250",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": true,
+      "limitations": ["Official page title identifies the 2027 model.", "US/CNY conversion is a European official-store reference, not a China selling price."]
+    },
+    {
+      "slug": "nitro-team-pro-mk-tls-2027",
+      "model": "Team Pro MK TLS",
+      "euroPrice": 529.9,
+      "cnyReference": 3968.42,
+      "productSource": "https://www.nitrosnowboards.com/products/team-pro-mk-tls-boots-1",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-team-pro-mk-tls-2027-price.json",
+      "representativeSku": "13BT11004-101-250",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": true,
+      "limitations": ["Official page title identifies the 2027 model.", "US/CNY conversion is a European official-store reference, not a China selling price."]
+    },
+    {
+      "slug": "nitro-team-tls-2027",
+      "model": "Team TLS",
+      "euroPrice": 479.9,
+      "cnyReference": 3593.97,
+      "productSource": "https://www.nitrosnowboards.com/products/team-tls-boots-1",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-team-tls-2027-price.json",
+      "representativeSku": "13BT11008-102-250",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": true,
+      "limitations": ["Official page title identifies the 2027 model.", "US/CNY conversion is a European official-store reference, not a China selling price."]
+    },
+    {
+      "slug": "nitro-team-tls-wide-2027",
+      "model": "Team TLS Wide",
+      "euroPrice": 479.9,
+      "cnyReference": 3593.97,
+      "productSource": "https://www.nitrosnowboards.com/products/team-tls-wide-boots-1",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-team-tls-wide-2027-price.json",
+      "representativeSku": "13BT11007-101-250",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": true,
+      "limitations": ["Official page title identifies the 2027 model.", "US/CNY conversion is a European official-store reference, not a China selling price."]
+    },
+    {
+      "slug": "nitro-venture-boa-2027",
+      "model": "Venture BOA",
+      "euroPrice": 399.9,
+      "cnyReference": 2994.85,
+      "productSource": "https://www.nitrosnowboards.com/products/venture-boa-boots",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-venture-boa-2027-price.json",
+      "representativeSku": "848717-001-250",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": false,
+      "limitations": ["The official page and variant capture do not confirm the 2027 season; reference applies to the current same-name series.", "Not a China selling price."]
+    },
+    {
+      "slug": "nitro-venture-pro-tls-2027",
+      "model": "Venture Pro TLS",
+      "euroPrice": 399.9,
+      "cnyReference": 2994.85,
+      "productSource": "https://www.nitrosnowboards.com/products/venture-pro-tls-boots",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-venture-pro-tls-2027-price.json",
+      "representativeSku": "848713-004-250",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": false,
+      "limitations": ["The official page and variant capture do not confirm the 2027 season; reference applies to the current same-name series.", "Not a China selling price."]
+    },
+    {
+      "slug": "nitro-venture-step-on-tls-2027",
+      "model": "Venture Step On TLS",
+      "euroPrice": 489.9,
+      "cnyReference": 3668.86,
+      "productSource": "https://www.nitrosnowboards.com/products/venture-step-on-tls-boots",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-venture-step-on-tls-2027-price.json",
+      "representativeSku": "848716-001-250",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": false,
+      "limitations": ["The official page and variant capture do not confirm the 2027 season; reference applies to the current same-name series.", "Not a China selling price."]
+    },
+    {
+      "slug": "nitro-venture-tls-2027",
+      "model": "Venture TLS",
+      "euroPrice": 349.9,
+      "cnyReference": 2620.4,
+      "productSource": "https://www.nitrosnowboards.com/products/venture-tls-boots",
+      "priceSnapshot": "../winter-gear-2026-10-12/nitro-venture-tls-2027-price.json",
+      "representativeSku": "848718-001-250",
+      "representativeAvailabilityAtCapture": "OutOfStock",
+      "seasonExplicit": false,
+      "limitations": ["The official page and variant capture do not confirm the 2027 season; reference applies to the current same-name series.", "Not a China selling price."]
+    }
+  ],
+  "limitations": [
+    "The EUR amounts are preserved from Nitro's structured product-variant offers captured on 2026-10-12; live price and inventory can change.",
+    "CNY amounts are exchange-rate conversions, not domestic China retail prices or transaction quotes.",
+    "The selected representative variant was marked out of stock at capture; this does not establish stock for every size or color."
+  ]
+}

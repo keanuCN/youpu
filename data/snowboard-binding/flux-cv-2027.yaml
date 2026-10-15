@@ -4,6 +4,10 @@ brand: flux
 model: "CV"
 year: 2027
 title: "FLUX CV 2027"
+price:
+  min: 2323.06
+  max: 2323.06
+  currency: CNY
 one_liner: "26-27 刻滑与全山地取向型号，官方介绍其加高脚床及可调节结构。"
 specs:
   entrySystem: strap
@@ -26,10 +30,15 @@ specs:
     - { size: M, mondo: 25 - 27.5, usMen: 7 - 9.5, usWomen: 8 - 10.5, eu: 40 - 42.5, uk: 6 - 8.5, notes: FLUX 通用参考表；鞋品牌/型号会影响试装。 }
     - { size: L, mondo: 27+, usMen: 9+, eu: 42+, uk: 8+, notes: FLUX 通用参考表；鞋品牌/型号会影响试装。 }
   bindingSizeGuide: "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。"
-  priceCheckedAt: 2026-10-12
-  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
+  priceCheckedAt: 2026-10-15
+  officialPrice: JPY 55,000（税込）
+  priceMarket: FLUX 日本官方店 2026/27 商品价；按 ECB 2026-10-14 汇率折算人民币
+  priceSource: https://flux-bindings.com/products/2627-cv
+  priceStatus: 官方 26-27 CV 商品页列日元含税标价 JPY 55,000；按 ECB 汇率折算为日本市场参考，不是中国售价。跨境费用未计，核对时官网显示售罄。
+  exchangeRate: EUR/JPY 177.39；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html
 images:
-  - url: "https://flux-bindings.com/cdn/shop/files/2627-cv-purple.png?v=1787656749&width=1160"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/941bd9522e2920a2c6778ff6aa6dd1b6d44bebd68094ab8133839a79030fd778.webp"
     kind: face
     alt: FLUX CV 2026/27 官方固定器商品图
     source: FLUX 官方商品页（图片使用授权待核）
@@ -37,4 +46,11 @@ images:
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2627-cv
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 8.1
+  comfort: 6.5
+  versatility: 7.6
+  convenience: 6.2
+  value: 5.0
 status: published

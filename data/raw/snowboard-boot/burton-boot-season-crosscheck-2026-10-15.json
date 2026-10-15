@@ -1,0 +1,53 @@
+{
+  "auditDate": "2026-10-15",
+  "brand": "Burton",
+  "scope": "2027 snowboard boot season evidence cross-check",
+  "method": "Checked official Burton US product page title and selected color variant code. A page title marked 2027 plus a 27WIN variant is recorded as 2026/27 evidence. Product ID digits are model identifiers, not EANs.",
+  "products": [
+    {
+      "slug": "burton-ion-boa-2027",
+      "model": "Ion BOA",
+      "productId": "185791",
+      "officialTitle": "Men's Burton Ion BOA Snowboard Boot 2027",
+      "variantCode": "27WIN-185791",
+      "season": "2026/27",
+      "source": "https://www.burton.com/en-us/products/mens-burton-ion-boa-snowboard-boots-185791",
+      "finding": "Official product page title marks the boot as 2027; selected Summit Taupe variant code begins 27WIN."
+    },
+    {
+      "slug": "burton-ion-step-on-2027",
+      "model": "Ion Step On",
+      "productId": "203191",
+      "officialTitle": "Men's Burton Ion Step On Snowboard Boots 2027",
+      "variantCode": "27WIN-203191",
+      "season": "2026/27",
+      "source": "https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191",
+      "finding": "Official product page title marks the boot as 2027; page states Step On boots are only compatible with Step On bindings."
+    },
+    {
+      "slug": "burton-moto-boa-2027",
+      "model": "Moto BOA",
+      "productId": "131761",
+      "officialTitle": "Men's Burton Moto BOA Snowboard Boots 2027",
+      "variantCode": "27WIN-131761",
+      "season": "2026/27",
+      "source": "https://www.burton.com/en-us/products/mens-burton-moto-boa-snowboard-boots-131761",
+      "finding": "Official product page title marks the boot as 2027; selected color variant code begins 27WIN."
+    },
+    {
+      "slug": "burton-photon-boa-2027",
+      "model": "Photon BOA",
+      "productId": "150861",
+      "officialTitle": "Men's Burton Photon BOA Snowboard Boots 2027",
+      "variantCode": "27WIN-150861",
+      "season": "2026/27",
+      "source": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861",
+      "finding": "Official product page title marks the boot as 2027; selected Black variant code begins 27WIN."
+    }
+  ],
+  "limits": [
+    "These pages establish the product season and representative variant codes, not exhaustive color, size, or regional SKU availability.",
+    "Official US product pages and their variant codes are not evidence of China retail price or current China inventory.",
+    "The Ion Step On system-compatibility restriction is model-specific and should not be generalized to regular Ion BOA."
+  ]
+}

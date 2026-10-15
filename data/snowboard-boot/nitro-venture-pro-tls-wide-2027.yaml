@@ -1,0 +1,68 @@
+slug: nitro-venture-pro-tls-wide-2027
+category: snowboard-boot
+brand: nitro
+model: "Venture Pro TLS Wide"
+year: 2027
+title: "Nitro Venture Pro TLS Wide 2027"
+one_liner: "中等硬度全山地宽版雪鞋；Nitro 官方称 Wide 为前掌提供额外空间。"
+price:
+  min: 2996.25
+  max: 2996.25
+  currency: CNY
+specs:
+  lacingSystem: "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱"
+  flex: "中等硬度（Nitro 官方描述，未公布数值等级）"
+  fit: "Wide 宽版；Nitro 官方称相对标准版的版型宽 4 mm，并说明额外空间在前掌。原厂未说明这 4 mm 对应鞋壳、鞋胆或哪一种单独测量值；不能作为绝对楦宽或逐尺码宽度差。"
+  terrain: "全山地；官方列举刻滑雪道、粉雪、天然地形与日常雪场滑行"
+  liner: "Cloud 6 热塑鞋胆，Re/Lace 锁定、3D 鞋舌与后跟结构、Response ExoFrame、记忆垫和 Flex Toe"
+  innerCuff: "ILS 内靴固定系统与 3D 后跟结构"
+  outsole: "Vibram ECOSTEP 橡胶外底，含最高 3% 再生橡胶"
+  warmthFeatures: "EVA 中底隔热与缓震；Speed Gaiter 防雪防潮并帮助保持干暖"
+  footbed: "Ortholite High Cup Dual Density 双密度鞋垫"
+  sizeGuide: "Nitro 官方商品页男款 US 7–14 / Mondopoint 25.0–32.0 / EU 38⅔–48 / UK 6–13；这是商品尺码范围，不代表每码实时库存。"
+  sizeChart:
+    - { size: US 男 7, mondo: "25", usMen: "7", usWomen: "7.5", uk: "6", eu: 38 ⅔ }
+    - { size: US 男 7.5, mondo: "25.5", usMen: "7.5", usWomen: "8", uk: "6.5", eu: 39 ⅓ }
+    - { size: US 男 8, mondo: "26", usMen: "8", usWomen: "8.5", uk: "7", eu: "40" }
+    - { size: US 男 8.5, mondo: "26.5", usMen: "8.5", usWomen: "9", uk: "7.5", eu: 40 ⅔ }
+    - { size: US 男 9, mondo: "27", usMen: "9", usWomen: "9.5", uk: "8", eu: 41 ⅓ }
+    - { size: US 男 9.5, mondo: "27.5", usMen: "9.5", usWomen: "10", uk: "8.5", eu: "42" }
+    - { size: US 男 10, mondo: "28", usMen: "10", usWomen: "10.5", uk: "9", eu: 42 ⅔ }
+    - { size: US 男 10.5, mondo: "28.5", usMen: "10.5", usWomen: "11", uk: "9.5", eu: 43 ⅓ }
+    - { size: US 男 11, mondo: "29", usMen: "11", uk: "10", eu: "44" }
+    - { size: US 男 11.5, mondo: "29.5", usMen: "11.5", uk: "10.5", eu: 44 ⅔ }
+    - { size: US 男 12, mondo: "30", usMen: "12", uk: "11", eu: 45 ⅓ }
+    - { size: US 男 12.5, mondo: "30.5", usMen: "12.5", uk: "11.5", eu: "46" }
+    - { size: US 男 13, mondo: "31", usMen: "13", uk: "12", eu: 46 ⅔ }
+    - { size: US 男 13.5, mondo: "31.5", usMen: "13.5", uk: "12.5", eu: 47 ⅓ }
+    - { size: US 男 14, mondo: "32", usMen: "14", uk: "13", eu: "48" }
+  bindingCompatibility: 常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。
+  selectionNotes: 穿实际滑雪袜测量双脚脚长，以较长一侧查 Nitro 尺码表，再核对前掌压力、脚背舒适度和屈膝时的锁跟。Nitro 官方 Wide 说明指前掌额外空间，不等于提供更高脚背或更宽脚跟的保证；先选雪鞋再选固定器，不把其他品牌鞋码直接换算。
+  fitEvidence: Nitro 官方 26/27 德文款号页称 Wide 版型比标准版宽 4 mm，并说明额外空间在前掌，同时保留 Venture Pro 的支撑感、全山地响应和耐用性。官网未说明 4 mm 是鞋壳、鞋胆或哪种测量的变化；没有公布绝对楦宽、逐尺码宽度差、壳体/鞋胆各自增宽量或脚背容积；不把相对值转成个体适配保证。
+  heatMolding: 官方 Cloud 6 鞋胆可热塑，Nitro Thermacell 可随穿着贴合；热塑不能补救错误尺码或保证脚型适配。具体流程按品牌说明并由专业店确认。
+  compatibilitySources: https://www.nitrosnowboards.com/products/venture-pro-tls-wide-boots；https://www.nitrosnowboards.com/collections/boots-26-27；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide
+  seasonEvidence: Nitro 官方商品分类路径 boots-26-27 列出 Venture Pro TLS Wide，与官方商品页型号一致，确认对应 2026/27 雪季；代表商品变体 SKU 为 848712-001-250。
+  priceCheckedAt: 2026-10-15
+  officialPrice: EUR 399.90
+  regionalListPrice: EUR 399.90
+  priceMarket: Nitro 欧洲官方商店；2026/27 雪鞋商品集合页挂牌价
+  priceSource: https://www.nitrosnowboards.com/collections/boots-26-27
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Nitro 欧洲官方 2026/27 商品集合页挂牌 EUR 399.90，按 ECB 2026-10-14 EUR/CNY 7.4925 折算 CNY 2,996.25。仅为欧洲官方地区参考，不是中国售价；税费、配送和进口费用未计。商品页尺码选项不是实时库存证明。
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/9a5233ed72b11708804f15c8a81b82e80d2daef69ad64b305b2424af2874e251.webp"
+    kind: face
+    alt: Nitro Venture Pro TLS Wide 2027 黑色官方雪鞋商品图
+    source: Nitro 官方商品页（图片使用授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.nitrosnowboards.com/products/venture-pro-tls-wide-boots
+# 编辑暂估，非社区实测；评分口径见 docs/单板雪鞋编辑评分口径-2026-10-15.md
+editorial_scores:
+  fit: 8.3
+  support: 7.2
+  warmth: 7.4
+  convenience: 8.0
+  value: 5.0
+status: published

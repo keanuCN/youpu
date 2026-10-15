@@ -5,20 +5,38 @@ model: Shape V2
 year: 2026
 title: HEAD Shape V2 2025/26
 one_liner: 京东双板榜单中的热门入门全地域系列；套装评价仅作国内关注度参考。
+price:
+  min: 1880.39
+  max: 1880.39
+  currency: CNY
 specs:
+  lengthOptions: 142 / 149 / 156 / 163 / 170 cm
+  sizeSpecs:
+    - { size: 142 cm, noseWidth: 128, waistWidth: 70, tailWidth: 108, turnRadius: 7.9, notes: HEAD 25/26 手册货号 315285；逐码值由同货号商品规格复录。 }
+    - { size: 149 cm, noseWidth: 128, waistWidth: 70, tailWidth: 108, turnRadius: 8.9, notes: HEAD 25/26 手册货号 315285；逐码值由同货号商品规格复录。 }
+    - { size: 156 cm, noseWidth: 128, waistWidth: 70, tailWidth: 108, turnRadius: 9.9, notes: HEAD 25/26 手册货号 315285；逐码值由同货号商品规格复录。 }
+    - { size: 163 cm, noseWidth: 128, waistWidth: 70, tailWidth: 108, turnRadius: 11, notes: HEAD 25/26 手册货号 315285；逐码值由同货号商品规格复录。 }
+    - { size: 170 cm, noseWidth: 128, waistWidth: 70, tailWidth: 108, turnRadius: 12.5, notes: HEAD 25/26 手册货号 315285；逐码值由同货号商品规格复录。 }
+    - { size: 177 cm, noseWidth: 128, waistWidth: 70, tailWidth: 108, turnRadius: 13.3, notes: HEAD 25/26 手册货号 315285；逐码值由同货号商品规格复录。 }
+  waistWidth: 70
+  turnRadius: 12.5
+  turnRadiusReferenceLength: 170 cm
   terrain: 全地域 / 雪道
   skierLevel: 入门至初中级
   bindingSetup: 雪板+固定器或套装，按具体 SKU 核对
   weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
-  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
-  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
-    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  geometryNotes: HEAD 25/26 手册按 315285 确认长度与 170 cm 参考几何；同货号零售规格列出六档半径，并复录六档相同 sidecut。重量未录入。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
-  sourceCheckedAt: 2026-10-13
-  compatibilitySources: https://boutique.sommets.com/en/products/head-skis-shape-v2；https://www.grip-walk.com/faq/
+  seasonEvidence: HEAD 官方 25/26 目录列明 Shape V2、SKU 315285 及长度；同 SKU 商品资料确认季节和参考几何。
+  sourceCheckedAt: 2026-10-14
+  priceCheckedAt: 2026-10-14
+  priceMarket: 日本 Tanabe Sports 中文商品页动态折算显示人民币，商品货号 315285
+  priceSource: https://tanabesports.net/goods_zhcn_cny_45065.html
+  priceStatus: 商品页显示促销价 JPY 44,500，并动态折算显示 CNY 1,880.39；页面标注 2026 款和 article 315285。此为日本零售商参考价，不是中国国内售价；页面汇率可能变化，跨境运费、关税未计；页面列有多个尺码但具体尺码库存需下单前确认。
+  compatibilitySources: https://boutique.sommets.com/en/products/head-skis-shape-v2；https://www.tanabesports.jp/ts/wp-content/uploads/2025/05/25-26_HEAD_user.pdf；https://preisvergleich.heise.de/head-shape-v2-performance-pr-11-gw-inkl-bindung-modell-2025-2026-315285-a3620670.html；https://www.grip-walk.com/faq/
 images:
-  - url: "https://d2j6dbq0eux0bg.cloudfront.net/images/118454263/4956321347.png"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/0185f37d22e3339458b4af3de70a9dba07681a07646e6a3f28f8123ecf8320db.webp"
     kind: face
     alt: HEAD Shape V2 2025/26 雪板商品图
     source: Sommets 商品页（对应 Shape V2 2025 款；图片使用授权待核）

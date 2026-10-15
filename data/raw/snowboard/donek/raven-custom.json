@@ -1,0 +1,24 @@
+{
+  "brand": "Donek",
+  "model": "Raven Custom Snowboard",
+  "capturedAt": "2026-10-15",
+  "source": "https://donek.com/product/raven/",
+  "market": "Donek US official store",
+  "listedPrice": { "amount": 865, "currency": "USD" },
+  "profile": "Camber",
+  "shape": "Directional",
+  "flex": "Typical 5-6, adjusted to rider weight",
+  "terrain": "All Mountain",
+  "ability": "Beginner to Advanced",
+  "materials": { "coreLaminates": "Aspen, Poplar and Ash", "sidewall": "ABS", "base": "Perlatech 8223", "reinforcements": "Triaxial Fiberglass" },
+  "customizations": ["Width adjusted to boot size or rider needs", "Stiffness adjusted to rider weight or needs", "Sidecut adjustment listed in customization block"],
+  "sourceConflicts": ["The main product description calls its sidecut fixed, while the customization list says sidecut can be adjusted; do not promise adjustability without confirmation."],
+  "convertedReference": {
+    "amount": 5789.2,
+    "currency": "CNY",
+    "method": "USD 865 / EUR-USD 1.1195 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html",
+    "limitations": ["Base custom price reference only, not a China retail or final transaction price.", "Dimensions and final specifications require consultation with Donek.", "Shipping, taxes and import charges are excluded."]
+  }
+}

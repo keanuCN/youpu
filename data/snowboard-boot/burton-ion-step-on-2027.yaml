@@ -5,6 +5,10 @@ model: "Ion Step On"
 year: 2027
 title: "Burton Ion Step On 2027"
 one_liner: "官方档案型号；Speed Zone 系带与可调 BOA 压紧带，Step On 系统需配专用固定器。尺码与脚感以实际试穿为准。"
+price:
+  min: 3763.36
+  max: 3763.36
+  currency: CNY
 specs:
   lacingSystem: "Speed Zone 快速系带 + BOA 可调压紧带"
   flex: "硬朗（Burton 官方标注 Stiff & Aggressive）"
@@ -36,13 +40,16 @@ specs:
   fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 Wide 应与该品牌同型号标准版比较，不能视为跨品牌统一宽度。
   heatMolding: 官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。
   compatibilitySources: https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191；https://www.burton.com/en-us/pages/size-charts
-  priceCheckedAt: 2026-10-12
+  seasonEvidence: Burton 美国官方商品页标题标注 Ion Step On 2027，变体色款代码为 27WIN-203191；据此确认对应 2026/27 雪季。页面同时说明该鞋仅兼容 Step On 固定器。
+  priceCheckedAt: 2026-10-14
   officialPrice: USD 619.95
-  priceMarket: 原币 USD；来源商店 www.burton.com
-  priceSource: https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  regionalListPrice: JPY 89,100
+  priceMarket: Burton 日本官方商店；型号 ID 203191、色款标识 27WIN-203191
+  priceSource: https://jp.burton.com/ja-jp/products/mens-burton-ion-step-on-snowboard-boots-203191
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Burton 日本官方商品页对应 2027 款型号 ID 203191 / 色款标识 27WIN-203191，标价 JPY 89,100；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 3,763.36。页面列出 Regular/Wide 宽度及男款 Mondo 25–31 尺码；实时库存以结账页面所选变体为准。Step On 雪鞋只兼容 Burton Step On 固定器。税费口径以结账为准；此为日本官方店折算参考，不是中国售价，跨境配送及进口费用未计。
 images:
-  - url: "https://www.burton.com/cdn/shop/files/2031910A02_1.webp?v=1779495951&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/c33a9036db5c02b2471c77a083ef81a4d6421be8256628b13bfc1efca858e518.webp"
     kind: face
     alt: Burton Ion Step On 2027 官方雪鞋商品图
     source: Burton 官方商品页（图片使用授权待核）
@@ -50,4 +57,11 @@ images:
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-ion-step-on-snowboard-boots-203191
+# 编辑暂估，非社区实测；评分口径见 docs/单板雪鞋编辑评分口径-2026-10-15.md
+editorial_scores:
+  fit: 8.3
+  support: 8.6
+  warmth: 8.2
+  convenience: 8.0
+  value: 5.0
 status: published

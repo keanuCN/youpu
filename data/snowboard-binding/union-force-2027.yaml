@@ -5,6 +5,10 @@ model: "Force"
 year: 2027
 title: "Union Binding Company Force 2027"
 one_liner: "Union 全山地工作马型固定器，官方列出 7/10 硬度与全地形定位。"
+price:
+  min: 1951.37
+  max: 1951.37
+  currency: CNY
 specs:
   entrySystem: strap
   flex: 7
@@ -27,13 +31,16 @@ specs:
     - { size: MEDIUM, usMen: 8 - 10, usWomen: 9 - 11, uk: 7 - 9, eu: 41 - 43, mondo: 26 - 28 }
     - { size: LARGE, usMen: 10.5 - 13, uk: 9.5 - 12, eu: 43.5 - 46, mondo: 28.5 - 31 }
     - { size: X-LARGE, usMen: 13 - 15, uk: 12 - 14, eu: 46 - 48, mondo: 31 - 33 }
-  priceCheckedAt: 2026-10-12
+  priceCheckedAt: 2026-10-14
   officialPrice: USD 349.95
-  priceMarket: 原币 USD；来源商店 unionbindingcompany.com
+  regionalListPrice: JPY 46,200（含日本消费税）
+  priceMarket: Union Binding Company 日本官方商店；2027 款商品页
   priceSource: https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  regionalPriceSource: https://jp.unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Union 日本官方商店 2027 款 Force 页面标价 JPY 46,200（含税），按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 1,951.37。页面尺码为 S/M/L/XL，商品当时显示售罄；运费结账计算。日本官方店折算参考，不是中国售价或成交价，库存会变化。
 images:
-  - url: "https://unionbindingcompany.com/cdn/shop/files/UN26_FORCE_BLACK_1024x.jpg?v=1785333204"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/f5e1d8abda88e603afec45441c51c0c9bc7a850274b1c8b2504bbeb721df2944.webp"
     kind: face
     alt: Union Force 2026/27 官方固定器商品图
     source: Union Binding Company 官方商品页（图片使用授权待核）
@@ -41,4 +48,11 @@ images:
 data_source:
   kind: official
   origin_url: https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 8.1
+  comfort: 6.8
+  versatility: 7.6
+  convenience: 6.2
+  value: 5.0
 status: published

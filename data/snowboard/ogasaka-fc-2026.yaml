@@ -43,10 +43,10 @@ specs:
     - { size: "157W", effectiveEdge: 1270, contactLength: 1200, noseWidth: 307, waistWidth: 258, tailWidth: 304, sidecutRadii: "8.4/8.0 m", setback: 28, stanceWidth: "560 mm" }
     - { size: "160W", effectiveEdge: 1300, contactLength: 1230, noseWidth: 312, waistWidth: 262, tailWidth: 309, sidecutRadii: "8.5/8.0 m", setback: 29, stanceWidth: "560 mm" }
     - { size: "163W", effectiveEdge: 1330, contactLength: 1270, noseWidth: 311, waistWidth: 265, tailWidth: 307, sidecutRadii: "9.7/9.2 m", setback: 30, stanceWidth: "580 mm" }
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  priceCheckedAt: 2026-10-15
+  priceStatus: 2026-10-15 复核 OGASAKA 官方 25/26 FC 页：标准版含税 JPY 126,500、宽版含税 JPY 128,700。本档案代表 157 cm 标准版，按 2026-10-02 JPY/CNY 0.042451 折算为 CNY 5,370；这是日本官方挂牌价的历史汇率估值，不是中国售价，未核到中国销售报价或当前库存。
 images:
-  - url: "https://www.ogasaka-snowboard.com/2025-img/08_fc_03.png"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/437b293c6a43b1f4f810733495cfcc855b4c3d459da93886929fd96324fcb96e.webp"
     kind: face
     alt: OGASAKA FC 2026 单板图片
     source: OGASAKA 官方 FC 商品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

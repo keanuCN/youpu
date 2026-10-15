@@ -4,12 +4,22 @@ brand: nitro
 model: Rambler
 year: 2027
 title: Nitro Rambler 2027
+price:
+  min: 1796.61
+  max: 1796.61
+  currency: CNY
 specs:
+  seasonEvidence: Nitro 官方 26/27 固定器集合页列出 Rambler 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27
   terrain:
     - all-mountain
   entrySystem: strap
   mountingSystem: Universal Mini Disc；兼容 2x4 与 Channel
   bindingSizeGuide: Nitro Rambler 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。
+  sizeChart:
+    - { size: "M", usMen: "7–10.5", mondo: "25–28.5", eu: "38.5–43.5" }
+    - { size: "L", usMen: "11–14", mondo: "29–32", eu: "44–48" }
+  sizeChartCheckedAt: "2026-10-14"
+  sizeChartSource: https://www.nitrosnowboards.com/collections/bindings-26-27/products/rambler-bindings-1
   bootCompatibility: 常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。
   brandComfortScore: 7
   brandResponseScore: 5
@@ -17,15 +27,23 @@ specs:
   compatibilitySources: https://www.nitrosnowboards.com/collections/bindings-26-27/products/rambler-bindings-1
   priceCheckedAt: 2026-10-12
   officialPrice: EUR 239.9
-  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
+  priceMarket: Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY
   priceSource: https://www.nitrosnowboards.com/products/rambler-bindings-1
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 2026-10-12 官方结构化变体报价 EUR 239.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 1,796.61；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。
 images:
-  - url: https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG11007-103_Rambler-Bindings_Lite-Acid_Product-1.jpg?v=1779339376&width=1920
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/23483e2f3b4f8a231dbbaa0e8cdee93895a7eca943f25ac36387c36a40ca7b44.webp
     kind: face
     alt: Nitro Rambler 2027 商品图
     source: 品牌官方商品页公开图片；展示授权状态待核
     sort_order: 0
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 7.3
+  comfort: 6.2
+  versatility: 7.6
+  convenience: 6.2
+  value: 5.0
 status: published
 one_liner: Nitro 2026–27 全地形绑带固定器，官方标注 Universal Mini Disc 兼容 2x4 与 Channel。
 data_source:

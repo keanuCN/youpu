@@ -10,6 +10,7 @@ price:
   max: 4536
   currency: CNY
 specs:
+  seasonEvidence: CAPiTA 北美官方商品页标题标注 Indoor Survival Snowboard 2027；据官方 2027 年款归档为 2026/27。商品页未直接注明完整雪季日期，也不据此判断首次上市时间或实时库存。
   length: 156
   effectiveEdge: 1211
   waistWidth: 258
@@ -47,7 +48,7 @@ editorial_scores:
   forgiveness: 8.0
   value: 7.0
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST01-INDOOR-SURVIVAL-TOP.png?v=1776884610"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/b3aacbb5af6a60e434334eabe7e624f3259f431d0e2c7f4a1322decc35aed829.webp"
     kind: face
     alt: CAPiTA Indoor Survival 2027 官方产品图
     source: CAPiTA 官方产品页图片（本地演示，版权待核）

@@ -1,0 +1,50 @@
+slug: head-easy-joy-2027
+category: skis
+brand: head
+model: Easy Joy
+year: 2027
+title: HEAD Easy Joy 2026/27（315656）
+one_liner: 面向初学者的雪道女款双板，官方定位为低速、短弯和易控；价格为日本零售商折算人民币的缺货参考价。
+price:
+  min: 2531.04
+  max: 2531.04
+  currency: CNY
+specs:
+  articleNumber: "315656"
+  lengthOptions: 143 / 148 / 153 / 158 / 163 cm
+  sizeSpecs:
+    - { size: 143 cm, noseWidth: 117, waistWidth: 70, tailWidth: 103, turnRadius: 9.6, notes: HEAD 国际货号 315656.SET 官方页面默认选中 143 cm，直接显示相同几何；重量显示 1698 g 但未说明单只/一对口径，不录入。 }
+    - { size: 148 cm, noseWidth: 117, waistWidth: 70, tailWidth: 103, turnRadius: 10.5 }
+    - { size: 153 cm, noseWidth: 117, waistWidth: 70, tailWidth: 103, turnRadius: 11.3 }
+    - { size: 158 cm, noseWidth: 117, waistWidth: 70, tailWidth: 103, turnRadius: 12.2 }
+    - { size: 163 cm, noseWidth: 117, waistWidth: 70, tailWidth: 103, turnRadius: 13.3 }
+  waistWidth: 70
+  turnRadiusReferenceLength: 163 cm
+  profile: Allride Rocker；板头 rocker 20%、camber 80%、板尾 rocker 0%
+  terrain: 雪道
+  skierLevel: 初学者
+  speed: 低速
+  turnShape: 短弯
+  core: Synthetic Core
+  construction: LYT Tech Construction；Power Fiber Jacket Construction
+  base: UHM C Base
+  bindingSetup: 含 JOY 9 GW SLR 固定器的系统套装；具体绑定配置按地区 SKU 核实
+  weightBasis: HEAD 官方页面默认选中 143 cm 时显示 1698 g，但未说明重量按单只还是一对计；本档案不录入重量。
+  priceCheckedAt: 2026-10-14
+  priceMarket: 日本 Tanabe Sports；以网站人民币界面显示的折算价记录，原报价 JPY 59,800
+  priceSource: https://tanabesports.net/index_zhcn_cny_456-457.html?keyword=head
+  priceStatus: 日本零售商页面将促销挂牌价 JPY 59,800 折算显示为 CNY 2,531.04；查询时无库存，不含运费/进口税，非中国售价，页面汇率可能变化。
+  geometryNotes: HEAD 26/27 目录确认 article 315656 与 163 cm 参考规格；HEAD 官方俄语区商店商品货号 31565601、雪季 2026/27，并提供 143/148/153/158/163 cm 五档完整三围和半径。HEAD 加拿大国际 SKU 315656.SET 页面另直接确认 143 cm 几何。此前 31655507 候选货号不同，未用于本尺码表。此款不是 25/26 EASY JOY R 租赁款。
+  seasonEvidence: HEAD 26/27 Hardgoods 目录及 HEAD 国际产品页确认 article 315656、2026/27 与产品定位。HEAD 官方俄语区商店列货号 31565601、2026/27、JOY 9 GW SLR 套装及五档规格；后缀与国际 article 同根，按地区商品记录保留 SKU 差异。旧候选货号 31655507 不用于匹配。
+  sourceCheckedAt: 2026-10-15
+  compatibilitySources: https://www.head.com/en_GB/product/easy-joy-315656-set; https://head.ru/ski/shop/skis/8374/138146/; https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf
+data_source:
+  kind: official
+  origin_url: https://www.head.com/en_GB/product/easy-joy-315656-set
+images:
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/86c567a2662c036ade53fedb38622997a57c6b048c93cc7e4b8ffc4e15a8f52a.webp
+    kind: face
+    alt: HEAD Easy Joy 2026/27（货号 315656）官方商品图
+    source: HEAD 官方 CDN；目录货号 315656 与页面 SKU 一致（图片使用授权待核）
+    sort_order: 0
+status: published

@@ -38,6 +38,7 @@ export function SafeImage({
 
   return (
     <img
+      decoding="async"
       {...props}
       src={src}
       alt={alt}

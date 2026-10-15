@@ -1,0 +1,83 @@
+{
+  "capturedAt": "2026-10-15",
+  "brand": "jones",
+  "category": "snowboard",
+  "archiveSeason": "2026/27",
+  "method": "核对 Jones 官方商品页当前变体 SKU 中的 J.27 年款代码；仅将已能映射至本地 2027 型号种子的页面纳入。J.27 是年款证据，不单独证明首次上市日期、完整雪季起止或库存。",
+  "products": [
+    {
+      "slug": "jones-dream-weaver-2-0-2027",
+      "model": "Dream Weaver 2.0",
+      "sku": "J.27.SNW.DRC.000.139.1",
+      "source": "https://www.jonessnowboards.com/products/womens-dream-weaver-20-snowboard"
+    },
+    {
+      "slug": "jones-flagship-2027",
+      "model": "Flagship",
+      "sku": "J.27.SNM.FLA.000.151.1",
+      "source": "https://www.jonessnowboards.com/products/mens-flagship-snowboard"
+    },
+    {
+      "slug": "jones-flagship-pro-2027",
+      "model": "Flagship Pro",
+      "sku": "J.27.SNM.UFL.000.154.1",
+      "source": "https://www.jonessnowboards.com/products/mens-flagship-pro-snowboard"
+    },
+    {
+      "slug": "jones-freecarver-6000s-2027",
+      "model": "Freecarver 6000s",
+      "sku": "J.27.SNU.FRS.000.150N.1",
+      "source": "https://www.jonessnowboards.com/products/freecarver-6000s-snowboard"
+    },
+    {
+      "slug": "jones-frontier-2-0-2027",
+      "model": "Frontier 2.0",
+      "sku": "J.27.SNM.FRT.000.150.1",
+      "source": "https://www.jonessnowboards.com/products/mens-frontier-20-snowboard"
+    },
+    {
+      "slug": "jones-howler-2027",
+      "model": "Howler",
+      "sku": "J.27.SNM.HOV.000.152.1",
+      "source": "https://www.jonessnowboards.com/products/mens-howler-snowboard",
+      "sourceCapture": "data/raw/snowboard/completion-2026-10-12/jones-howler-2027.json",
+      "note": "官方页面本次打开失败；使用 2026-10-12 官方页面抓取快照中的商品身份与 SKU，不把本次页面打开失败写成当前缺货。"
+    },
+    {
+      "slug": "jones-mind-expander-2-0-2027",
+      "model": "Mind Expander 2.0",
+      "sku": "J.27.SNU.MEX.000.142.1",
+      "source": "https://www.jonessnowboards.com/products/mind-expander-20-snowboard"
+    },
+    {
+      "slug": "jones-mountain-twin-2027",
+      "model": "Mountain Twin",
+      "sku": "J.27.SNM.MTN.XX.149.1",
+      "source": "https://www.jonessnowboards.com/products/mens-mountain-twin-snowboard"
+    },
+    {
+      "slug": "jones-rally-cat-2027",
+      "model": "Rally Cat",
+      "sku": "J.27.SNM.MND.000.151.1",
+      "source": "https://www.jonessnowboards.com/products/mens-rally-cat-snowboard"
+    },
+    {
+      "slug": "jones-storm-chaser-2027",
+      "model": "Storm Chaser",
+      "sku": "J.27.SNU.STC.000.142.1",
+      "source": "https://www.jonessnowboards.com/products/storm-chaser-snowboard"
+    },
+    {
+      "slug": "jones-twin-sister-2027",
+      "model": "Twin Sister",
+      "sku": "J.27.SNW.TWS.XX.140.1",
+      "source": "https://www.jonessnowboards.com/products/womens-twin-sister-snowboard"
+    }
+  ],
+  "excluded": [
+    {
+      "slug": "jones-hovercraft-2-0-2027",
+      "reason": "本地资料注明其依据为 Hasco 日本官方渠道，尚无证据把 Hasco 商品与 Jones 全球官方商品 SKU 一一映射；本批不跨渠道补全球 SKU。"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-15",
+  "season": "2026/27 (2027 models)",
+  "manufacturerSources": {
+    "mensProduct": "https://www.nitrosnowboards.com/products/step-on-mens-bindings-1?variant=57277688021323",
+    "womensProduct": "https://www.nitrosnowboards.com/collections/all-26-27/products/step-on-womens-bindings",
+    "stepOnManual": "https://www.nitrosnowboards.com/pages/step-on",
+    "mensOfficialPriceListing": "https://www.nitrosnowboards.com/collections/all-mens-bindings-26-27",
+    "womensOfficialPriceListing": "https://www.nitrosnowboards.com/cs/collections/all-womens-bindings-26-27"
+  },
+  "products": [
+    {
+      "name": "Nitro Step On Men's Bindings",
+      "skuExample": "12BG11004-103-S",
+      "sizes": [
+        {"size":"S","usMens":"6–8","mondo":"24–26","eu":"38–41"},
+        {"size":"M","usMens":"8.5–10.5","mondo":"26.5–28.5","eu":"41.5–43.5"},
+        {"size":"L","usMens":"11–13","mondo":"29–31","eu":"44–46"},
+        {"size":"XL","usMens":"14–15","mondo":"32–33","eu":"47–48"}
+      ],
+      "listedEUR": 330.90,
+      "convertedCNY": 2479.27,
+      "image": "https://www.nitrosnowboards.com/cdn/shop/files/12BG11004-103_Step-On-Mens-Bindings_OG_Product-1.jpg?v=1779339346&width=2467",
+      "brandRatings": {"comfortOutOf10":9,"responseOutOf10":7},
+      "boardMounts": ["2x4","4x4","3D","Burton Channel"]
+    },
+    {
+      "name": "Nitro Step On Women's Bindings",
+      "skuExample": "12BG21010-102-S",
+      "sizes": [
+        {"size":"S","usWomens":"5–6","mondo":"22–23","eu":"35–36.5"},
+        {"size":"M","usWomens":"6.5–8.5","mondo":"23.5–25.5","eu":"37–40.5"},
+        {"size":"L","usWomens":"9–11","mondo":"26–28","eu":"41–43"}
+      ],
+      "listedEUR": 329.90,
+      "convertedCNY": 2471.78,
+      "image": "https://www.nitrosnowboards.com/cdn/shop/files/12BG21010-102_Step-On-Womens-Bindings_White_Product-1.jpg?v=1779339380&width=2445",
+      "brandRatings": {"comfortOutOf10":9,"responseOutOf10":7},
+      "boardMounts": ["2x4","4x4","3D","Burton Channel"]
+    }
+  ],
+  "confirmedFeatures": [
+    "2027 model pages and 26/27 collection listings confirm the product season label.",
+    "Nitro describes three toe/heel connection points, an asymmetric Step On highback with entry funnel, Re:Flex mounting, Hook 2 toe hooks and HYPER Foam footbed.",
+    "Nitro's official Step On guide says Nitro bindings are compatible with all Step On boots, but the system is gender- and size-specific; men's boots pair with men's bindings and women's boots with women's bindings.",
+    "Men's official boot-size ranges map to S/M/L/XL; women's ranges map to S/M/L. Both charts have no overlap between the listed recommended ranges."
+  ],
+  "exchangeRate": {
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-14",
+    "eurCny": 7.4925,
+    "method": "EUR price × EUR/CNY rate, rounded to CNY 0.01",
+    "convertedPricesAre": "Official European regional list-price references, not Mainland China prices; tax basis, shipping, import fees, and final checkout amount are not verified."
+  },
+  "limitations": [
+    "Nitro brand response and comfort scores are manufacturer ratings, not independent review results.",
+    "The size selector does not establish live inventory or checkout availability.",
+    "Cross-brand Step On compatibility is stated by Nitro for its bindings; confirm gender/size matching and full boot-to-binding engagement before riding.",
+    "Official product image URLs are confirmed on Nitro pages; display rights in this project remain unverified.",
+    "No Mainland China official or transaction price was verified."
+  ]
+}

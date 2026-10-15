@@ -5,7 +5,13 @@ model: Osmo Action 6
 year: 2026
 title: DJI Osmo Action 6
 one_liner: 以 1/1.1 英寸方形传感器、可变光圈和 8K 视频为核心的旗舰运动相机，适合希望兼顾运动记录与低光创作的人。
+price:
+  min: 2998
+  max: 2998
+  currency: CNY
 specs:
+  priceSource: https://store.dji.com/cn/product/osmo-action-6-adventure-combo?from=store_homepage&set_region=CN
+  priceStatus: DJI 中国官网于 2026-10-15 显示 Osmo Action 6 标准套装 CNY 2998；畅拍套装为 CNY 3698，当前档案记录标准套装挂牌价。
   cameraType: action
   sensor: 1/1.1 英寸方形传感器
   maxVideo: 8K@30fps

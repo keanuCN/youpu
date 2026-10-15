@@ -4,6 +4,10 @@ brand: flux
 model: "XV"
 year: 2026
 title: "FLUX XV 2026"
+price:
+  min: 3330
+  max: 3700
+  currency: CNY
 one_liner: "FLUX 高阶硬质型号，官方介绍其碳纤维高背与轻量化响应结构。"
 specs:
   entrySystem: strap
@@ -30,9 +34,11 @@ specs:
   officialPrice: CNY 3330–3700
   priceMarket: 原币 CNY；来源商店 flux-bindings.com
   priceSource: https://flux-bindings.com/en/products/2526xv
-  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
+  regionalListPrice: JPY 71,500；复核时促销 JPY 64,350
+  seasonEvidence: FLUX 官方商品页明确标注 25-26 Model（2026-10-14 复核）。
+  priceStatus: 2026-10-12 归档的 FLUX 官方结构化变体 Offer 为 CNY 3,330–3,700，含不同尺码变体；归档时 1 个变体可售、3 个售罄。2026-10-14 同一官方商品页标注 25-26 Model，日本商店页面显示 JPY 71,500、促销 JPY 64,350，且售罄。归档 CNY 值的市场/货币切换原因尚未由官网说明，作为带日期的官方人民币报价保留，不代表中国现价；勿与当前日本挂牌价混为一谈。
 images:
-  - url: "https://flux-bindings.com/cdn/shop/files/2_1_xv__bronze_bs-1.png?v=1757410220&width=1160"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ae44fd07abba2334ec1bb5df359063fc96b72444d587826387bad0a069bf7b96.webp"
     kind: face
     alt: FLUX XV 2025/26 官方固定器商品图
     source: FLUX 官方商品页（图片使用授权待核）
@@ -40,4 +46,11 @@ images:
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526xv
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 9.0
+  comfort: 6.5
+  versatility: 6.8
+  convenience: 6.2
+  value: 5.0
 status: published

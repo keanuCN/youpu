@@ -1,0 +1,37 @@
+slug: donek-knapton-twin-custom-2026
+category: snowboard
+brand: donek
+model: Knapton Twin Custom
+year: 2026
+title: Donek Knapton Twin 定制单板
+one_liner: 为激进软靴刻滑与自由式滑手设计的定制 Twin；板宽、硬度和侧切按靴码与滑手需求调整，没有固定尺码表。
+price:
+  min: 5789.2
+  max: 5789.2
+  currency: CNY
+specs:
+  shape: Twin
+  profile: 未在型号页明确列出
+  flexRange: 7–12（按体重及滑手需求定制）
+  core: Poplar and ash core
+  base: Perlatech 8223
+  sidewall: ABS
+  fiberglass: Triax fiberglass
+  lengthOptions: 按需求定制；下单前需与 Donek 沟通确认
+  scenes:
+    - carving
+    - all-mountain
+  abilityLevel: 中级至高级
+  customization: 板宽按靴码或需求调整；硬度按体重或需求调整；侧切按需求调整
+  priceCheckedAt: 2026-10-15
+  officialPrice: USD 865
+  priceMarket: Donek 官方美国站基础定制价
+  priceSource: https://donek.com/product/knapton/
+  exchangeRate: EUR/USD 1.1195；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 官方美国站挂牌 USD 865，按 ECB 2026-10-14 参考汇率折算约 CNY 5,789.20；是基础定制价的地区参考，不是中国售价或最终成交价。定制参数、运费、税费及进口费用另计；官网要求订购前与工程人员确认参数。
+images: []
+data_source:
+  kind: official
+  origin_url: https://donek.com/product/knapton/
+status: published

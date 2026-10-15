@@ -17,6 +17,7 @@ price:
   max: 6840
   currency: CNY
 specs:
+  seasonEvidence: Jones 官方商品页当前变体货号为 J.27.SNM.UFL.000.154.1（J.27 年款代码）且页面标注 2027，归档为 2026/27（2027 款）；此代码不证明首次上市年份或实时库存。
   length: 161
   weight: 2900
   effectiveEdge: 1200
@@ -45,7 +46,7 @@ specs:
   priceCheckedAt: 2026-10-12
   priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
-  - url: "https://www.jonessnowboards.com/cdn/shop/files/J.27.SNM.UFL-gallery-1.webp?v=1782443801&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/6d009c80ce330ead4cfd9e1cbd021d7b0d7311ce7c060b18e36a8ccdc34d3460.webp"
     kind: face
     alt: Jones Flagship PRO 2027 官方产品图
     source: Jones 官方产品页图片（商用授权状态待核）

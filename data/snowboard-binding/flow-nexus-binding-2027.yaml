@@ -4,6 +4,10 @@ brand: flow
 model: Nexus
 year: 2027
 title: Flow Nexus 2027
+price:
+  min: 1472.06
+  max: 1472.06
+  currency: CNY
 specs:
   terrain:
     - all-mountain
@@ -19,17 +23,26 @@ specs:
     - { size: M, usMen: 5 - 8, usWomen: 6.5 - 9.5, eu: 37 - 41, uk: 4 - 7, mondo: 23 - 26 }
     - { size: L, usMen: 8.5 - 11, usWomen: 10 - 11, eu: 41.5 - 44.5, uk: 7.5 - 10, mondo: 26.5 - 29 }
     - { size: XL, usMen: 11.5 - 15, eu: 45 - 49.5, uk: 10.5 - 14, mondo: 29.5 - 32.5 }
-  priceCheckedAt: 2026-10-12
+  priceCheckedAt: 2026-10-15
   officialPrice: USD 219.95
-  priceMarket: 原币 USD；来源商店 www.nidecker.com
-  priceSource: https://www.nidecker.com/en-int/products/flow-nexus
-  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
+  priceMarket: 美国 Nidecker 官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币
+  priceSource: https://www.nidecker.com/products/flow-nexus
+  priceStatus: 页面变体 SKU N.27.BNU.NEF.001.2S.1 确认 2027 款；人民币为美国官网折算参考，不是中国售价，未计税费与跨境成本。
+  exchangeRate: EUR/USD 1.1195；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html
 images:
-  - url: https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.27.BNU.NEF.001-Flow_Nexus_Black-1_bql3pa.webp?v=1788232250&width=1200
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/1248f661f5e66fbf5dd2a347d2497d39a37157fa46964da6bb1db2e255511d3c.webp
     kind: face
     alt: Flow Nexus 2027 商品图
     source: 品牌官方商品页公开图片；展示授权状态待核
     sort_order: 0
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 6.4
+  comfort: 6.2
+  versatility: 7.6
+  convenience: 8.0
+  value: 5.0
 status: published
 one_liner: Flow 后入式固定器，官网介绍采用单片 Fusion 绑带与后仰高背穿脱结构。
 data_source:

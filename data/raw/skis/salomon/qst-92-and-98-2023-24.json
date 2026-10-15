@@ -1,0 +1,104 @@
+{
+  "capturedAt": "2026-10-14",
+  "season": "2023/24",
+  "scope": "Salomon QST 92 and QST 98 SKU and size tables",
+  "decision": "Salomon's manufacturer-authored 2023/24 Japanese catalog lists article references L47232400+ and L47232300+ with complete size tables. Preserve both as 2023/24 archive products in the local public catalog; do not present these SKUs or specs as 2026/27. Keep historical/non-China price limitations explicit.",
+  "publicationStatus": {
+    "qst92": "published archive; Japan retailer has a 176 cm listing with shared inventory and cancellation caveat; Salomon UK page currently says not sold on its website.",
+    "qst98": "published archive; Salomon Europe historical list price is no longer offered on the current product page; price is historical reference only."
+  },
+  "sources": [
+    {
+      "publisher": "Salomon / Amer Sports Japan",
+      "document": "FW23/24 Japanese Alpine and Protective User Catalogue",
+      "originalUrl": "https://form.amersports.jp/sslimages/salomon/catalog/ski/fw23/FW23-24_JPN_NEW_ALPINE_AND_PROTECTIVE_UserCatalogue.pdf",
+      "mirrorUrl": "https://www.tanabesports.jp/ts/wp-content/uploads/2023/06/23-24_SALOMON_user.pdf",
+      "note": "Manufacturer-authored catalog copy hosted by a Japanese ski retailer. The original manufacturer-hosted URL currently returns 404; the mirror search extract includes the exact article numbers and complete size rows."
+    },
+    {
+      "publisher": "Salomon",
+      "document": "Current QST 92 product page",
+      "url": "https://www.salomon.com/en-gb/product/qst-92-li4911/L47232400%2B",
+      "note": "Confirms current product page article reference L47232400+; does not state a season or provide a per-size table."
+    },
+    {
+      "publisher": "Salomon",
+      "document": "Current QST 98 product page",
+      "url": "https://www.salomon.com/en-gb/product/qst-98-li4910/L47232300%2B?sizeId=L47232300169",
+      "note": "Confirms article reference L47232300+ and sizes 169, 176, 183, 189 cm; does not state a season or provide a per-size table."
+    }
+  ],
+  "verifiedTables": [
+    {
+      "model": "QST 92",
+      "article": "L47232400+",
+      "lengthsCm": [160, 168, 176, 184],
+      "sidecutMm": [[126, 92, 114], [127, 92, 115], [128, 92, 116], [129, 92, 117]],
+      "radiiM": [13, 14, 15, 16],
+      "weightPerSkiG": [1560, 1680, 1800, 1940],
+      "rows": 4
+    },
+    {
+      "model": "QST 98",
+      "article": "L47232300+",
+      "lengthsCm": [169, 176, 183, 189],
+      "sidecutMm": [[131, 98, 119], [132, 98, 120], [133, 98, 121], [133, 98, 121]],
+      "radiiM": [15, 16, 17, 18],
+      "weightPerSkiG": [1740, 1860, 1990, 2100],
+      "rows": 4
+    }
+  ],
+  "imageEvidence": [
+    {
+      "model": "QST 92",
+      "article": "L47232400+",
+      "productPage": "https://www.salomon.com/en-no/product/qst-92-li4911/L47232400%2B",
+      "imageUrl": "https://cdn.dam.salomon.com/bc1e0c3d-981e-48e7-bd6a-b2f40157afe3/L47232400%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=low&width=3840",
+      "evidence": "Salomon 官方商品页按货号 L47232400+ 展示图片；货号与 2023/24 官方目录和本档案一致。",
+      "limitations": "官方页面未单独标雪季，图片使用授权仍需确认。"
+    },
+    {
+      "model": "QST 98",
+      "article": "L47232300+",
+      "productPage": "https://www.salomon.com/de-ch/product/qst-98-li4910",
+      "imageUrl": "https://cdn.dam.salomon.com/d75c8f46-291b-48e7-bd6a-b2f40157f4aa/L47232300%2B/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&fit=cover&format=pjpg&optimize=medium&width=3840",
+      "evidence": "Salomon 官方商品页的 CDN 图片路径包含货号 L47232300+，且图片与 2023/24 目录货号一致。",
+      "limitations": "官方页面未单独标雪季，图片使用授权仍需确认。"
+    }
+  ],
+  "retailerPriceAudit": [
+    {
+      "model": "QST 92",
+      "article": "L47232400",
+      "url": "https://store.alpen-group.jp/Form/Product/ProductDetail.aspx?bid=0247&pid=5031102414-0001&shop=0",
+      "checkedAt": "2026-10-15",
+      "listedPrice": "JPY 59,900 incl. tax",
+      "listPrice": "JPY 93,500 incl. tax",
+      "size": "176 cm",
+      "configuration": "ski only; no binding",
+      "evidence": "Alpen 页面标题标注 23-24 年款与精确货号 L47232400；页面提供 176 cm 选项及加入购物车按钮，并提示线上库存与门店共享。",
+      "cnyReference": 2530.02,
+      "exchangeRate": "ECB 2026-10-14: EUR/JPY 177.39, EUR/CNY 7.4925",
+      "limitations": "单一长度零售挂牌且可能取消，不代表中国售价或可稳定购买；未计跨境运输、进口费用与支付汇兑成本。"
+    },
+    {
+      "model": "QST 98",
+      "article": "L47232300",
+      "url": "https://www.tanabesports.com/c/2008020301/cd82049",
+      "checkedAt": "2026-10-15",
+      "listedPrice": "JPY 93,500 incl. tax",
+      "listPrice": "JPY 110,000 incl. tax",
+      "size": "169 / 176 / 183 / 189 cm listed; all shown unavailable",
+      "configuration": "ski only",
+      "evidence": "Tanabe Sports 页面明确标题为 2023-2024 QST 98 [L47232300]，列四档尺寸、单板规格与挂牌价；页面当前显示缺货。",
+      "cnyReference": 3949.20,
+      "exchangeRate": "ECB 2026-10-14: EUR/JPY 177.39, EUR/CNY 7.4925",
+      "limitations": "缺货促销价，仅作日本历史挂牌交叉参考，不替代种子保留的 Salomon 欧洲官网历史参考价，也不是中国售价。"
+    }
+  ],
+  "limitations": [
+    "These are historical 2023/24 specifications and must not be reused for newer QST models without exact SKU and season matching.",
+    "The manufacturer-hosted catalog URL is unavailable at capture time; the archived retailer mirror is used for the complete tables.",
+    "No per-size weight or geometry values beyond the catalog rows were inferred."
+  ]
+}

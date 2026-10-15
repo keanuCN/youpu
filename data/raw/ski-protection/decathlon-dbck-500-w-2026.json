@@ -1,0 +1,76 @@
+{
+  "capturedAt": "2026-10-15",
+  "brand": "DREAMSCAPE / Decathlon",
+  "model": "DBCK 500 women's back protector vest",
+  "category": "ski-protection",
+  "styleCode": "ID 8903323; product family R-p-327580",
+  "sources": {
+    "officialUKProduct": {
+      "url": "https://www.decathlon.co.uk/p/womens-mtb-ski-and-snowboard-back-protector-vest-dbck-500-black-navy/327580/c43c382m8903323",
+      "evidence": "英国官方商品页列出 DREAMSCAPE 女款 DBCK 500、ID 8903323、XS/S/M/L/XL；当前显示 GBP 49.99、原价 GBP 59.99，并提供加入购物车按钮。页面未给逐码库存。卖点另称 available in four sizes，与五个选项及五行尺码建议冲突。"
+    },
+    "officialFranceCrossCheck": {
+      "url": "https://www.decathlon.fr/p/gilet-de-protection-dorsale-vtt-ski-et-snowboard-femme-dbck-500-noir-navy/327580/c43c382m8903323",
+      "evidence": "法国官方同款同 ID 商品页列出 XS/S/M/L/XL，常规标价 EUR 59.99，评分与英国页同为 4.7；法国页面也说明兼容 SNB 500/900 外套。当前价格按地区保留，不与英国促销价混为同一市场报价。"
+    },
+    "sizeChart": {
+      "url": "https://www.decathlon.fr/p/gilet-de-protection-dorsale-vtt-ski-et-snowboard-femme-dbck-500-noir-navy/327580/c43c382m8903323",
+      "crossCheckUrl": "https://www.decathlon.co.uk/p/womens-mountain-biking-skiing-and-snowboarding-back-protector-dbck-500-black/_/R-p-327580?c=asphalt+blue_smoked+black",
+      "evidence": "英法官方页一致：XS 胸圍 83–87 cm、身高約 150–162 cm；S 87–90 cm、162–172 cm；M 90–96 cm、172–177 cm；L 96–105 cm、177–183 cm；XL 105–116 cm、183–190 cm。身高只是参考值。与男款表中 M 码区间重叠的问题不同，女款此表区间连续、不重叠。"
+    },
+    "protection": {
+      "url": "https://www.decathlon.co.uk/p/womens-mountain-biking-skiing-and-snowboarding-back-protector-dbck-500-black/_/R-p-327580?c=asphalt+blue_smoked+black",
+      "evidence": "官方描述区写 EN 1621-2 Level 1，但同页 Testing 区写 EN 1621-1 Level 1；两处标准存在冲突。完整背部覆盖、女款弹性版型、侧边调节、500–600 g 重量及面料成分另见规格区。"
+    },
+    "2025Declaration": {
+      "url": "https://support.decathlon.fr/dbck-500-w-up",
+      "coveredRefs": ["8758741", "8903323"],
+      "documentDate": "2025-05-23",
+      "designCode": "327580",
+      "harmonisedStandards": ["VPSki-009", "VêtProVTT-008"],
+      "typeExaminationCertificate": "2754/0372/162/05/22/1051",
+      "evidence": "迪卡侬官方支持页将 2025 符合性声明关联至 Ref 8758741 与 8903323。声明列 VPSki-009 与 VêtProVTT-008，未列商品页所写 EN 1621-2 或 EN 1621-1；未找到官方标准映射说明，不能把这些标准等同或推断防护等级。"
+    },
+    "jacketCompatibility": {
+      "url": "https://www.decathlon.co.uk/p/womens-mountain-biking-skiing-and-snowboarding-back-protector-dbck-500-black/_/R-p-327580?c=asphalt+blue_smoked+black",
+      "evidence": "英国和法国官方女款页面均说明可与 SNB 500/900 外套拉链连接，并有裤袢连接带。仅确认系列兼容性；购买前仍应核对具体外套尺码与对应拉链配置。"
+    },
+    "exchangeRate": {
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+      "date": "2026-10-14",
+      "gbpPerEur": 0.84385,
+      "cnyPerEur": 7.4925,
+      "formula": "GBP 49.99 / 0.84385 × 7.4925 = CNY 443.86"
+    }
+  },
+  "priceDecision": {
+    "currentRegionalSalePrice": {"amount": 49.99, "currency": "GBP", "market": "United Kingdom"},
+    "formerPrice": {"amount": 59.99, "currency": "GBP"},
+    "convertedReference": {"amount": 443.86, "currency": "CNY"},
+    "regionalCrossReference": {"amount": 59.99, "currency": "EUR", "market": "France", "convertedAmountCny": 449.48},
+    "decision": "主参考使用英国官网当前促销价；法国官网常规价作为独立地区交叉参考。任何折算均不是中国售价。"
+  },
+  "seasonDecision": "英国和法国商品页均没有明确雪季；种子 2026 仅作为本次采集/归档标签。",
+  "image": {
+    "url": "https://contents.mediadecathlon.com/p3014427/k%24696c8ed65393c16ba1ef3268e2a09f77/picture.jpg?f=3000x0&format=auto",
+    "source": "Decathlon official product image CDN",
+    "retrievalNote": "英国官方商品图库第 1/8 张；2026-10-15 HTTP HEAD 返回 200 image/jpeg，本站展示授权状态待核。"
+  },
+  "galleryImages": [
+    {"order": 1, "url": "https://contents.mediadecathlon.com/p3014427/k%24696c8ed65393c16ba1ef3268e2a09f77/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 2, "url": "https://contents.mediadecathlon.com/p3014428/k%24456a6d9f838b09ca959fbf4d91672cc9/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 3, "url": "https://contents.mediadecathlon.com/p3014424/k%245ed8399161b5fd47d497d996177a508f/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 4, "url": "https://contents.mediadecathlon.com/p3014423/k%2455d3fae5637b1c8907ae092423c9f6cf/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 5, "url": "https://contents.mediadecathlon.com/p3014429/k%241b4409300e3eaacee6b80e596d6c1de8/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 6, "url": "https://contents.mediadecathlon.com/p3014425/k%24c6c01d9c3b0c60c71391757160087876/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 7, "url": "https://contents.mediadecathlon.com/p2271715/k%248d3808aba9549e9f6dc793bdc45275bc/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"}
+  ],
+  "limitations": [
+    "尺码表是官方建议的身体胸围和身高，不是护具成衣尺寸。",
+    "官方卖点称四个尺码，但颜色变体选择器及胸围建议表列五个尺码；原样记录，不推断实际停产/库存尺码。",
+    "商品页描述区与 Testing 区分别给出 EN 1621-2 Level 1 和 EN 1621-1 Level 1；2025 符合性声明列 VPSki-009、VêtProVTT-008，官方未说明三组标准的对应关系，种子不发布单一等级。",
+    "英国促销价与法国常规价属于不同地区报价，不代表中国售价；页面价格/库存可能变化。",
+    "商品页未确认雪季，2026 只是采集标签。",
+    "英国商品页标示图库 8 张；本轮从公开图链提取并核验 7 张，均返回 HTTP 200 image/jpeg 并已收录，第 8 张图链未能从页面提取。图库展示授权仍待核。"
+  ]
+}

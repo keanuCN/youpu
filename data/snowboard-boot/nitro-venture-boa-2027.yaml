@@ -5,6 +5,10 @@ model: "Venture BOA"
 year: 2027
 title: "Nitro Venture BOA 2027"
 one_liner: "全山地雪鞋，双 BOA 调节、Cloud 6 热塑鞋胆与 EVA 外底。"
+price:
+  min: 2994.85
+  max: 2994.85
+  currency: CNY
 specs:
   lacingSystem: "Dual BOA Fit System：M+2 平台与 H4 Coiler 双区调节"
   flex: "平衡支撑与响应脚感（Nitro 官方描述，未公布数值硬度）"
@@ -40,16 +44,19 @@ specs:
     - { size: US 男 15, mondo: "33", usMen: "15", uk: "14", eu: 49 ⅓, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
   bindingCompatibility: 常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。
   selectionNotes: 穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。
-  fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。
+  fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。
   heatMolding: 官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。
   compatibilitySources: https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-boa-boots；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide
+  seasonEvidence: Nitro 官方 2026/27 雪鞋目录（boots-26-27）列有 Venture BOA，目录挂牌 EUR 399.90；档案据该官方目录归入 2026/27（2027）。页面标题未单独印年份，季节结论依官方目录上下文。
   priceCheckedAt: 2026-10-12
   officialPrice: EUR 399.9
-  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
+  regionalListPrice: EUR 399.90
+  priceMarket: Nitro 欧洲官方商店；代表变体 SKU 848717-001-250
   priceSource: https://www.nitrosnowboards.com/products/venture-boa-boots
-  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 官方商品变体价格快照于 2026-10-12 记录为 EUR 399.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算为 CNY 2,994.85；2026-10-15 官方 2026/27 雪鞋目录仍列 EUR 399.90。仅为 Nitro 欧洲官方店参考，不是中国售价；税费、配送及进口费用未计。快照中代表变体 US 7 显示缺货，库存会变化。
 images:
-  - url: "https://www.nitrosnowboards.com/cdn/shop/files/848717-001_Venture-BOA_Black_Product-1-907x1200-3f31ab6d-6a6e-427e-9605-79fef5a5df1f.jpg?v=1788164587&width=907"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/fc2183aba68551b2fe4f1163e7af39b4eb3daa4f77e01363fd9a7163335c127d.webp"
     kind: face
     alt: Nitro Venture BOA 2027 黑色款官方雪鞋商品图
     source: Nitro 官方商品页（图片使用授权待核）
@@ -57,4 +64,11 @@ images:
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-boa-boots
+# 编辑暂估，非社区实测；评分口径见 docs/单板雪鞋编辑评分口径-2026-10-15.md
+editorial_scores:
+  fit: 7.7
+  support: 7.5
+  warmth: 6.7
+  convenience: 8.9
+  value: 5.0
 status: published

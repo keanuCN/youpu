@@ -4,6 +4,10 @@ brand: flow
 model: NX2 Carbon
 year: 2027
 title: Flow NX2 Carbon 2027
+price:
+  min: 2697.23
+  max: 2697.23
+  currency: CNY
 specs:
   terrain:
     - all-mountain
@@ -20,17 +24,27 @@ specs:
     - { size: M, usMen: 5 - 8, usWomen: 6.5 - 9.5, eu: 37 - 41, uk: 4 - 7, mondo: 23 - 26 }
     - { size: L, usMen: 8.5 - 11, usWomen: 10 - 11, eu: 41.5 - 44.5, uk: 7.5 - 10, mondo: 26.5 - 29 }
     - { size: XL, usMen: 11.5 - 15, eu: 45 - 49.5, uk: 10.5 - 14, mondo: 29.5 - 32.5 }
-  priceCheckedAt: 2026-10-12
-  officialPrice: USD 479.95
-  priceMarket: 原币 USD；来源商店 www.nidecker.com
-  priceSource: https://www.nidecker.com/en-int/products/flow-nx2-carbon
-  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
+  priceCheckedAt: 2026-10-15
+  officialPrice: EUR 359.99（促销价；原价 EUR 449.99）
+  regionalListPrice: EUR 449.99
+  priceMarket: Montaz 欧洲零售商 2026/27 在售商品；按 ECB 2026-10-14 汇率折算人民币
+  priceSource: https://www.montaz.com/en/nidecker-flow-nx2-carbon-black-p249996.html
+  priceStatus: Montaz 页面列商品参考号 249996、季节 2026-2027，原价 EUR 449.99、促销价 EUR 359.99，核对时可加入购物车。Ski West 加拿大页也明确列 2027 款、标价 $549.99（页面未显式注明货币代码），作为地区交叉参考，不用于换算。人民币采用 Montaz 页面促销价折算，不是中国售价；运费及跨境费用未计。Nidecker 品牌官网当前页货号为 N.25，未用其价格映射到此档案。
+  exchangeRate: EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html
 images:
-  - url: https://cdn.shopify.com/s/files/1/0685/4131/7295/files/Flow-NX2-Carbon-Fusion-Black-1.webp?v=1786507660&width=1200
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/69b6395ce1b006faf6ac1c991c734360414ad5951cad620de156185d700a7f0e.webp
     kind: face
     alt: Flow NX2 Carbon 2027 商品图
     source: 品牌官方商品页公开图片；展示授权状态待核
     sort_order: 0
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 9.0
+  comfort: 6.2
+  versatility: 7.6
+  convenience: 8.0
+  value: 5.0
 status: published
 one_liner: Flow 高背后仰式固定器，官网标注铝合金底板与碳纤维复合高背。
 data_source:

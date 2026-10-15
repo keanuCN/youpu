@@ -1,0 +1,56 @@
+{
+  "brand": "GRAY",
+  "model": "SONICALMACH",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-15",
+  "seedFile": "data/snowboard/gray-sonicalmach-2027.yaml",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://graysnowboards.co.jp/product-2627-eng/",
+      "evidence": "GRAY separates SONICALMACH and SONICALMACH LT. Standard SONICALMACH 46/51/54/55w is positioned for carving and ground tricks at low to mid speeds; 54ver.C, 55w ver.C, 58, 60w, and 63w are positioned for higher-speed carving and ground tricks."
+    },
+    "officialTechnologyPage": {
+      "url": "https://graysnowboards.co.jp/tech-2627-eng/",
+      "evidence": "Standard SONICALMACH uses X-shaped carbon roving beneath the core, an ABS topsheet, and stainless steel edges. Official technology page describes SONICALMACH LT separately as developed using technology derived from MACH."
+    },
+    "officialEnglishCatalog": {
+      "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/26-27gray_cata_eng_low.pdf",
+      "evidence": "The 26/27 English catalog lists standard SONICALMACH sizes 46, 51, 54, 55w and the faster ver.C/longboard group. Standard-size-group Japanese MSRP is JPY 156,200 tax-inclusive; ver.C/longboard group MSRP is JPY 168,300 tax-inclusive. The 63w English sidecut row reads 9100/9900 while the Japanese catalog row reads 9100/9500/9600; left as an unresolved source discrepancy."
+    },
+    "officialJapaneseProductPage": {
+      "url": "https://graysnowboards.co.jp/product/",
+      "evidence": "Lists SONICALMACH standard-size-group tax-inclusive MSRP JPY 156,200 and the ver.C/longboard group JPY 168,300."
+    }
+  },
+  "pricing": {
+    "officialJapan": {
+      "currency": "JPY",
+      "standardSizesTaxInclusive": 156200,
+      "verCAndLongboardSizesTaxInclusive": 168300
+    },
+    "seedNormalization": {
+      "currency": "CNY",
+      "rateCnyPerJpy": 0.042451,
+      "rateSource": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+      "rateDate": "2026-10-02",
+      "formula": "round(156200 * 0.042451) = 6631; round(168300 * 0.042451) = 7145",
+      "note": "Currency conversion of Japanese MSRP only; not a China-market retail quote."
+    }
+  },
+  "sizeTable": [
+    { "size": "46", "overallLengthMm": 1460, "effectiveEdgeMm": 1140, "contactLengthMm": 1090, "waistWidthMm": 240, "sidecutRadiusMm": [7600, 7200, 7800], "sidecutOffsetMm": -15, "noseLengthMm": 190, "noseWidthMm": 283, "noseHeightMm": 45.4, "tailLengthMm": 180, "tailWidthMm": 278, "tailHeightMm": 40.8, "camberMm": 6, "stanceWidthMm": [440, 560], "setbackMm": 5, "insertQuantity": "12+12", "edge": "1.8mm stainless", "sidewallAngle": "25°", "sidewallColor": "NEON RED", "base": "IS7500 Graphite", "stiffnessNwt": [4.0, 5.2, 4.1], "topsheet": "ABS" },
+    { "size": "51", "overallLengthMm": 1510, "effectiveEdgeMm": 1190, "contactLengthMm": 1140, "waistWidthMm": 248, "sidecutRadiusMm": [8400, 8000, 8600], "sidecutOffsetMm": -15, "noseLengthMm": 190, "noseWidthMm": 290, "noseHeightMm": 43.2, "tailLengthMm": 180, "tailWidthMm": 285, "tailHeightMm": 38.9, "camberMm": 6, "stanceWidthMm": [480, 600], "setbackMm": 5, "insertQuantity": "12+12", "edge": "1.8mm stainless", "sidewallAngle": "25°", "sidewallColor": "NEON RED", "base": "IS7500 Graphite", "stiffnessNwt": [5.0, 6.2, 5.1], "topsheet": "ABS" },
+    { "size": "54", "overallLengthMm": 1540, "effectiveEdgeMm": 1220, "contactLengthMm": 1180, "waistWidthMm": 250, "sidecutRadiusMm": [8700, 8300, 9000], "sidecutOffsetMm": -15, "noseLengthMm": 185, "noseWidthMm": 293, "noseHeightMm": 41.0, "tailLengthMm": 175, "tailWidthMm": 288, "tailHeightMm": 36.8, "camberMm": 6, "stanceWidthMm": [480, 600], "setbackMm": 5, "insertQuantity": "12+12", "edge": "1.8mm stainless", "sidewallAngle": "25°", "sidewallColor": "NEON RED", "base": "IS7500 Graphite", "stiffnessNwt": [6.5, 7.6, 6.6], "topsheet": "ABS" },
+    { "size": "55w", "overallLengthMm": 1550, "effectiveEdgeMm": 1220, "contactLengthMm": 1180, "waistWidthMm": 260, "sidecutRadiusMm": [8700, 8300, 9000], "sidecutOffsetMm": -15, "noseLengthMm": 190, "noseWidthMm": 303, "noseHeightMm": 43.2, "tailLengthMm": 180, "tailWidthMm": 298, "tailHeightMm": 38.9, "camberMm": 6, "stanceWidthMm": [480, 600], "setbackMm": 5, "insertQuantity": "12+12", "edge": "1.8mm stainless", "sidewallAngle": "25°", "sidewallColor": "NEON RED", "base": "IS7500 Graphite", "stiffnessNwt": [6.5, 7.6, 6.6], "topsheet": "ABS" },
+    { "size": "54 ver.C", "overallLengthMm": 1540, "effectiveEdgeMm": 1220, "contactLengthMm": 1180, "waistWidthMm": 250, "sidecutRadiusMm": [8700, 8300, 9000], "sidecutOffsetMm": -15, "noseLengthMm": 185, "noseWidthMm": 293, "noseHeightMm": 41.0, "tailLengthMm": 175, "tailWidthMm": 288, "tailHeightMm": 36.8, "camberMm": 6, "stanceWidthMm": [480, 600], "setbackMm": 15, "insertQuantity": "12+12", "edge": "1.8mm stainless", "sidewallAngle": "25°", "sidewallColor": "NEON RED", "base": "IS7500 Graphite", "stiffnessNwt": [6.8, 8.0, 7.0], "topsheet": "Polyamide" },
+    { "size": "55w ver.C", "overallLengthMm": 1550, "effectiveEdgeMm": 1220, "contactLengthMm": 1180, "waistWidthMm": 260, "sidecutRadiusMm": [8700, 8300, 9000], "sidecutOffsetMm": -15, "noseLengthMm": 190, "noseWidthMm": 303, "noseHeightMm": 43.2, "tailLengthMm": 180, "tailWidthMm": 298, "tailHeightMm": 38.9, "camberMm": 6, "stanceWidthMm": [480, 600], "setbackMm": 15, "insertQuantity": "12+12", "edge": "1.8mm stainless", "sidewallAngle": "25°", "sidewallColor": "NEON RED", "base": "IS7500 Graphite", "stiffnessNwt": [6.8, 8.0, 7.0], "topsheet": "Polyamide" },
+    { "size": "58", "overallLengthMm": 1580, "effectiveEdgeMm": 1245, "contactLengthMm": 1200, "waistWidthMm": 252, "sidecutRadiusMm": [9400, 8900, 9800], "sidecutOffsetMm": -20, "noseLengthMm": 205, "noseWidthMm": 295, "noseHeightMm": 50.2, "tailLengthMm": 175, "tailWidthMm": 288, "tailHeightMm": 36.8, "camberMm": 8, "stanceWidthMm": [500, 620], "setbackMm": 25, "insertQuantity": "12+12", "edge": "1.8mm stainless", "sidewallAngle": "25°", "sidewallColor": "NEON RED", "base": "IS7500 Graphite", "stiffnessNwt": [7.2, 8.4, 7.4], "topsheet": "Polyamide" },
+    { "size": "60w", "overallLengthMm": 1600, "effectiveEdgeMm": 1255, "contactLengthMm": 1200, "waistWidthMm": 262, "sidecutRadiusMm": [9800, 9300, 10200], "sidecutOffsetMm": -20, "noseLengthMm": 215, "noseWidthMm": 304, "noseHeightMm": 55.1, "tailLengthMm": 185, "tailWidthMm": 297, "tailHeightMm": 41.0, "camberMm": 8, "stanceWidthMm": [500, 620], "setbackMm": 25, "insertQuantity": "12+12", "edge": "1.8mm stainless", "sidewallAngle": "25°", "sidewallColor": "NEON RED", "base": "IS7500 Graphite", "stiffnessNwt": [7.2, 8.4, 7.4], "topsheet": "Polyamide" },
+    { "size": "63w", "overallLengthMm": 1630, "effectiveEdgeMm": 1290, "contactLengthMm": 1230, "waistWidthMm": 256, "sidecutRadiusSourceDiscrepancy": { "englishCatalogMm": [9100, 9900], "japaneseCatalogMm": [9100, 9500, 9600] }, "sidecutOffsetMm": -45, "noseLengthMm": 215, "noseWidthMm": 303, "noseHeightMm": 55.1, "tailLengthMm": 185, "tailWidthMm": 288, "tailHeightMm": 41.0, "camberMm": 10, "stanceWidthMm": [500, 620], "setbackMm": 35, "insertQuantity": "12+12", "edge": "1.8mm stainless", "sidewallAngle": "25°", "sidewallColor": "NEON RED", "base": "IS7500 Graphite", "stiffnessNwt": [7.5, 8.8, 7.8], "topsheet": "Polyamide" }
+  ],
+  "communityEvidence": {
+    "userRatingCount": 0,
+    "fieldReportCount": 0,
+    "note": "No user rating or field report is seeded."
+  }
+}

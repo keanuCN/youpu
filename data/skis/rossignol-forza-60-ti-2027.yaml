@@ -4,19 +4,21 @@ brand: rossignol
 model: Forza 60° TI KONECT
 year: 2027
 title: Rossignol Forza 60° TI KONECT 2026/27
-one_liner: Forza 雪道 carving 系列高阶款，官网 2026/27 商品目录在售。
+price:
+  min: 6692.39
+  max: 6692.39
+  currency: CNY
+  one_liner: Forza 雪道 carving 系列高阶款；Rossignol 斯洛伐克官方商城列为 2026/27 款。
 specs:
   lengthOptions: 156 / 164 / 171 / 179 cm
   waistWidth: 75
   turnRadius: 11
   turnRadiusReferenceLength: 156 cm
-  sidecutDimensions: "156 cm: 130-75-112 mm / 11 m；164 cm: 130-75-112 mm / 12
-    m；171 cm: 130-75-112 mm / 13 m；179 cm: 130-75-112 mm / 14 m"
+  sidecutDimensions: "156 cm: 130-75-112 mm / 11 m；164 cm: 130-75-112 mm / 12 m；171 cm: 130-75-112 mm / 13 m；179 cm: 130-75-112 mm / 14 m"
   profile: Tip Rocker；传统 Camber
   core: PEFC 杨木木芯
   construction: Rectangular Full Sidewall
-  technologies: V-Profile；Titanal Beam；Carbon Alloy Matrix；Reinforced Torsion Tip
-    Technology；V-A-S；Sintered HD Base；Premium Hardtop；Oversized Sidecut
+  technologies: V-Profile；Titanal Beam；Carbon Alloy Matrix；Reinforced Torsion Tip Technology；V-A-S；Sintered HD Base；Premium Hardtop；Oversized Sidecut
   terrain: 雪道 / carving
   skierLevel: 进阶至专家
   bindingSetup: KONECT 系统板；商品页可选无固定器或 SPX 12 KONECT 固定器
@@ -43,15 +45,22 @@ specs:
       tailWidth: 112
       turnRadius: 14
   geometryNotes: 已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。
-  bindingCompatibility: 官方可选 SPX 12 KONECT GW B80：成人 Alpine ISO 5355 A / GripWalk ISO 23223 A，BSL
-    260–375 mm。仅适用于该固定器选项；选择无固定器版本时需另核对实际配置。
+  bindingCompatibility: 官方可选 SPX 12 KONECT GW B80：成人 Alpine ISO 5355 A / GripWalk ISO 23223 A，BSL 260–375 mm。仅适用于该固定器选项；选择无固定器版本时需另核对实际配置。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 官方页面未明确雪季，年款待核，本轮不改变草稿状态。
-  sourceCheckedAt: 2026-10-13
+  seasonEvidence: Rossignol 斯洛伐克官方商城将 Forza 60' TI KONECT + NX 12 KONECT GW（型号族 RAOPS01）列为 Model 26/27；种子厂商货号 RAOPS01000 与该型号族前缀对应。故归档为 2026/27。美国官方单品页仍未直接注明雪季；SkiEssentials 2027 延续款测试及两家同型号零售页另作交叉核对。
+  sourceCheckedAt: 2026-10-15
+  priceCheckedAt: 2026-10-15
+  officialPrice: USD 999.95
+  priceMarket: Rossignol 美国官网无固定器选项挂牌价
+  priceSource: https://www.rossignol.com/us-en/rossignol-forza-60-ti-skis-konect-RAOPS01000.html
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  regionalOfficialPrice: Rossignol 斯洛伐克官方商城 26/27 Forza 60 TI KONECT + NX 12 KONECT GW 套装 EUR 760；按 ECB 2026-10-14 EUR/CNY 7.4925 折算 CNY 5,694.30。此为含固定器地区套餐价，与美国无固定器参考配置不同。
+  regionalPriceSource: https://www.rossignol.sk/all-mountain-performance/
+  exchangeRate: EUR 760 × EUR/CNY 7.4925 = CNY 5,694.30；参考汇率不含支付渠道成本
+  priceStatus: 美国官网 RAOPS01000 无固定器选项 USD 999.95，按 ECB 2026-10-14 EUR/USD 1.1195、EUR/CNY 7.4925 折算 CNY 6,692.39；另有 Rossignol 斯洛伐克官方商城 26/27 含 NX 12 固定器套装 EUR 760，折算 CNY 5,694.30。两者配置不同，均为境外官网参考价，不是中国售价；税费口径、跨境运费与进口成本另核。雪季已由品牌区域商城同型号 26/27 条目确认。
   compatibilitySources: https://www.rossignol.com/us-en/rossignol-forza-60-ti-skis-konect-RAOPS01000.html；https://www.grip-walk.com/faq/
 images:
-  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/\
-      default/dw7efb611e/images/large/RAOPS01000_72DPI_01_v01.jpg"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/187e02e3a4b8dd5e726fabe68eb804a3753e3f7469af3b2609c6f7a7bb746077.webp"
     kind: face
     alt: Rossignol Forza 60 TI KONECT 2026/27 官方雪板商品图
     source: Rossignol 官方产品页（图片使用授权待核）
@@ -59,4 +68,4 @@ images:
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/rossignol-forza-60-ti-skis-konect-RAOPS01000.html
-status: draft
+status: published

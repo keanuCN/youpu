@@ -5,20 +5,59 @@ model: Shape V2 R
 year: 2026
 title: HEAD Shape V2 R 2025/26
 one_liner: HEAD V-shape 入门全地域系列；国内平台存在板+固定器销售款。
+price:
+  min: 2229.30
+  max: 2229.30
+  currency: CNY
 specs:
+  articleNumber: "316225"
+  lengthOptions: 142 / 149 / 156 / 163 / 170 / 177 cm
+  waistWidth: 70
+  turnRadius: 12.5
+  turnRadiusReferenceLength: 170 cm
+  profile: Allride Rocker
+  core: Synthetic Core
+  construction: LYT Tech Construction；Power Fiber Jacket Construction
+  technologies: ERA 3.0
+  base: UHM C Base black
+  sizeSpecs:
+    - size: 156 cm
+      noseWidth: 128
+      waistWidth: 70
+      tailWidth: 108
+      turnRadius: 10.5
+      notes: 同货号 316225 的零售商商品规格逐尺码列出的尺寸；该页面未标明雪季。只录入其明确列出的 156 cm，不据此外推其它长度。
+    - size: 163 cm
+      noseWidth: 128
+      waistWidth: 70
+      tailWidth: 108
+      turnRadius: 11.2
+      notes: 同货号 316225 的零售商商品规格逐尺码列出的尺寸；该页面未标明雪季。只录入其明确列出的 163 cm，不据此外推其它长度。
+    - size: 170 cm
+      noseWidth: 128
+      waistWidth: 70
+      tailWidth: 108
+      turnRadius: 12.5
+      notes: HEAD 25/26 手册 article 316225 的参考长度规格；同季租赁手册及零售商规格页记为 12.4 m，差异已记录；其它长度不外推。
   terrain: 全地域 / 雪道
   skierLevel: 入门至初中级
-  bindingSetup: 雪板+固定器，按具体 SKU 核对
+  bindingSetup: HEAD 25/26 Workbook 对 316225 列 rental base 与 PR 11 GW（114517）；Trojan Sport 2026 套装页对应 316225#114517。另有零售商将 316225 配 PR 10 GW，按实际 SKU 核对，不能混作同一套装。
   weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
-  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
-  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
-    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  geometryNotes: HEAD 25/26 Hardgoods Workbook 对 article 316225 列出六个长度（142/149/156/163/170/177 cm）及 170 cm 参考几何 128-70-108 mm、12.5 m；同季 Rental Handbook 的租赁配置只列 142/149/156/163/170 cm 五个长度，并将 170 cm 半径记为 12.4 m。两份原厂资料的货品配置范围和半径存在差异，故保留六档目录选项与 12.5/12.4 m 冲突，不将 177 cm 默认为租赁配置可供长度。精确货号零售规格页另逐项列出 156 cm（128-70-108 mm、10.5 m）和 163 cm（128-70-108 mm、11.2 m），已补入这两行；该零售页未注明雪季。其它长度不外推，170 cm 采用官方 Hardgoods Workbook 数值并保留冲突说明。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
-  sourceCheckedAt: 2026-10-13
-  compatibilitySources: https://www.head.com/en_US/product/shape-v2-r-316225；https://www.grip-walk.com/faq/
+  seasonEvidence: HEAD Hardgoods Workbook 2025/26 列明 Shape V2 R article 316225、六个长度和参考几何。
+  sourceCheckedAt: 2026-10-15
+  priceCheckedAt: 2026-10-15
+  listedPrice: PLN 1,298.99 含税；142 cm；套装标识 316225#114517（PR 11 GW）
+  priceMarket: Trojan Sport 波兰；HEAD Shape V2 R 316225 + PR 11 GW 114517，142 cm 变体
+  priceSource: https://trojansport.pl/narty-head-shape-v2-r-2026-pr-11-gw.html
+  regionalPriceCrossCheckSource: https://esqui-outlet.com/en/skis/head-shape-v2-r-amt-ski-set-316225-pr-10-gw-bindings-114528.html
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Trojan Sport 页面当前将商品标为 HEAD Shape V2 R 2026 + PR 11 GW，商品 ID 316225#114517；选中 142 cm，含税挂牌 PLN 1,298.99，价史显示该价截至 2026-10-15 且页面标注库存余量少。按 ECB 2026-10-14 PLN/EUR 4.3658、EUR/CNY 7.4925 折算为 CNY 2,229.30，作为与 HEAD 目录 PR 11 配置相符的波兰地区套装参考；不是中国价或裸板价。Esqui Outlet 西班牙 316225 + PR 10 GW 114528 套装 EUR 279.99（CNY 2,097.83）及 Emmecisport EUR 299（CNY 2,240.26）仍留作不同绑定配置的地区旁证，不再作为本种子主价。Bottero Ski 对参考号 316225 252 的 Winter 2026 商品 EUR 190（CNY 1,423.58）明确缺货，仅作历史参考。所有地区价均不代表中国售价；跨境运费、进口税及配送限制另核。
+  compatibilitySources: https://www.head.com/en_US/product/shape-v2-r-316225；https://www.skiandbikes.com/image/document/head_workbook_2526_en.pdf；https://www.grip-walk.com/faq/
 images:
-  - url: "https://cdn-mdb.head.com/CDN3/D/316225/1/683x911/shape-v2-r.webp"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/717afc7206162d5bbed029bc241f5fc3b73f673a581466e6ed837172fe888e77.webp"
     kind: face
     alt: HEAD Shape V2 R 官方雪板商品图
     source: HEAD 官方商品页（图片使用授权待核）

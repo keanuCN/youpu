@@ -1,0 +1,66 @@
+{
+  "brand": "HEAD",
+  "model": "Worldcup Rebels e-SL Pro",
+  "season": "2025-26",
+  "articleNumber": "313235",
+  "retrievedAt": "2026-10-15",
+  "seedFile": "data/skis/head-e-sl-pro-2026.yaml",
+  "officialSeasonAndSpecs": {
+    "url": "https://head.ru/ski/shop/skis/discounts/6265/104054/",
+    "catalogUrl": "https://www.eski.sk/image/document/head_workbook_2526_en.pdf",
+    "regionalArticleNumber": "31323506",
+    "evidence": "The HEAD regional product page explicitly identifies season 2025/2026 and article 31323506, says the set includes FF 11 GW, and gives all five size rows: 150 cm 122/68/107 mm R10.5; 155 cm 122/68/107 R11.2; 160 cm 122/68/107 R12.0; 165 cm 122/68/107 R12.9; 170 cm 122/68/107 R13.7. HEAD 25/26 Hardgoods Workbook independently maps article 313235 to Worldcup Rebels e-SL Pro, lists 150/155/160/165/170 cm, reference sidecut 122/68/107 at 160 cm and radius 12.0 m at 160 cm."
+  },
+  "officialPriceEvidence": {
+    "url": "https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/383a3ba9-007e-442e-a92d-fdc0140aa976/HEAD_RETAIL%20PRICING_FOR%20PRINT_12.20_01%202_combi.pdf?ver=1744650386194",
+    "dateOnDocument": "2024-12-19",
+    "articleNumber": "313235",
+    "market": "United States",
+    "msrpUsd": 1125,
+    "mapUsd": 999,
+    "bindingInPackage": "---",
+    "evidence": "HEAD 2025/26 Alpine Retail Price List lists article 313235, model WC Rebels e-SL Pro RP WCR 14, sizes 150/155/160/165/170, MSRP USD 1,125 and MAP USD 999. Binding-in-package field is blank/dashes, so the MSRP is treated as ski-only."
+  },
+  "officialCanadaBundleCrossCheck": {
+    "url": "https://www.head.com/en_CA/product/worldcup-rebels-e-sl-pro-313235-set",
+    "articleNumber": "313235.SET",
+    "listedPrice": "CAD 1,359 final price",
+    "binding": "FREEFLEX 14 GW",
+    "availabilityAtRetrieval": "Out of Stock",
+    "imageUrl": "https://cdn-mdb.head.com/CDN3/D/313235.SET_31323505/1/1820x2428/worldcup-rebels-e-sl-pro-with-binding-freeflex-14-gw.webp",
+    "currencyConversion": {
+      "retrievedAt": "2026-10-15",
+      "ecbRatesDate": "2026-10-14",
+      "cadPerEur": 1.5918,
+      "cnyPerEur": 7.4925,
+      "formula": "1359 CAD / 1.5918 CAD per EUR * 7.4925 CNY per EUR",
+      "convertedCny": 6396.73,
+      "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+    },
+    "evidence": "HEAD Canada's official 313235.SET page shows CAD 1,359 as final price, status Out of Stock, and offers FREEFLEX 14 GW. This is a binding-equipped regional package and is recorded separately from the US official bare-ski MSRP. The official CDN image URL is under the same 313235.SET / 31323505 product path."
+  },
+  "currencyConversion": {
+    "retrievedAt": "2026-10-15",
+    "ecbRatesDate": "2026-10-14",
+    "eurPerUsd": 1.1195,
+    "cnyPerEur": 7.4925,
+    "formula": "1125 USD / 1.1195 USD per EUR * 7.4925 CNY per EUR",
+    "convertedCny": 7529.31,
+    "ecbSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Converted from the United States manufacturer MSRP; not a China retail quote or landed price.",
+      "Taxes, shipping, import fees, dealer discounts and current availability are not included.",
+      "HEAD Russia page has a regional ruble price for a FF 11 GW set; it is deliberately not mixed with the United States ski-only MSRP."
+    ]
+  },
+  "crossSeasonCheck": {
+    "nextSeasonWorkbook": "https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf",
+    "nextSeasonArticleNumber": "313236",
+    "evidence": "The HEAD 26/27 workbook assigns article 313236 to WC Rebels e-SL Pro. It is maintained in a separate 2026/27 seed and its price/image/specs are not used as evidence for 313235."
+  },
+  "limitations": [
+    "The official regional page represents set article 31323506 with FF 11 GW; binding configuration may differ by market and by exact SKU.",
+    "Official manufacturer weight for the exact 2025/26 article was not verified and is omitted.",
+      "The captured official 25/26 image is the Canadian FREEFLEX 14 GW package image; binding setup may differ by market. The 313236 26/27 image is not reused."
+  ]
+}

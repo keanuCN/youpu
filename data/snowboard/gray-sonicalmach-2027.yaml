@@ -1,0 +1,53 @@
+slug: gray-sonicalmach-2027
+category: snowboard
+brand: gray
+model: SONICALMACH
+year: 2027
+title: GRAY SONICALMACH 2027
+one_liner: GRAY 26/27 MACH 系列的现行官方名称为 SONICALMACH，与 SONICALMACH LT 分开列示；含中低速刻滑与地形技巧款，以及更偏高速刻滑的 ver.C 和长板。
+price:
+  min: 6631
+  max: 7145
+  currency: CNY
+specs:
+  season: 2026–2027（26/27）
+  formerSeriesName: MACH
+  manufacturer: GRAY SNOWBOARDS
+  lengthOptions: 46 / 51 / 54 / 55w / 54 ver.C / 55w ver.C / 58 / 60w / 63w
+  shape: Directional（各尺码具体结构请核对目录）
+  profile: Single Camber
+  profileFamily: camber
+  core: 木芯结构（结构随尺码）；芯材下方 X 形碳纤维配置
+  base: IS7500 Graphite
+  scenes:
+    - carving
+    - freestyle
+  priceSource: https://graysnowboards.co.jp/product/
+  listedPrice: JPY 156,200（46 / 51 / 54 / 55w）；JPY 168,300（ver.C / 长板尺码），含税
+  priceCheckedAt: 2026-10-15
+  priceStatus: 按 2026-10-02 汇率 1 JPY = 0.042451 CNY 折算，CNY 6631–7145 为日元官方含税 MSRP 的币种换算参考，不是中国零售价；不同尺码及版本分组价格不同。
+  sizingNote: 目录将标准尺码组与 ver.C / 长板组分开描述；详情页尺码表记录已核实的部分几何数据。
+  officialSkillLevels: 刻滑 8/10；速度 8/10；专家 7/10；中级 8/10；入门 5/10；硬度 5/10（GRAY 官方图示，不是用户评分）
+  topsheet: 标准尺码组 ABS；ver.C 与长板组 Polyamide
+  edge: 1.8 mm stainless steel
+  sidewallAngle: 25°
+  sidewallColor: NEON RED
+  insertQuantity: 12+12
+  sidecutDesign: TripleRadius（三段复合侧切）
+  shape: Directional；Directional Flex（按尺码与型号组变化）
+  officialCoreConstructionLegend: 目录标注 2ply 65/35、STD Core II、3ply 50/50，构造随尺码变化，未强行映射到每个尺码。
+  sizeSpecs:
+    - { size: "46", overallLength: 1460, effectiveEdge: 1140, contactLength: 1090, waistWidth: 240, sidecutRadii: "7.6 / 7.2 / 7.8", sidecutOffset: -15, noseLength: 190, noseWidth: 283, noseHeight: 45.4, tailLength: 180, tailWidth: 278, tailHeight: 40.8, camber: 6, stanceWidth: "440–560", setback: 5, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 4.0 / W 5.2 / T 4.1" }
+    - { size: "51", overallLength: 1510, effectiveEdge: 1190, contactLength: 1140, waistWidth: 248, sidecutRadii: "8.4 / 8.0 / 8.6", sidecutOffset: -15, noseLength: 190, noseWidth: 290, noseHeight: 43.2, tailLength: 180, tailWidth: 285, tailHeight: 38.9, camber: 6, stanceWidth: "480–600", setback: 5, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 5.0 / W 6.2 / T 5.1" }
+    - { size: "54", overallLength: 1540, effectiveEdge: 1220, contactLength: 1180, waistWidth: 250, sidecutRadii: "8.7 / 8.3 / 9.0", sidecutOffset: -15, noseLength: 185, noseWidth: 293, noseHeight: 41.0, tailLength: 175, tailWidth: 288, tailHeight: 36.8, camber: 6, stanceWidth: "480–600", setback: 5, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 6.5 / W 7.6 / T 6.6" }
+    - { size: "55w", overallLength: 1550, effectiveEdge: 1220, contactLength: 1180, waistWidth: 260, sidecutRadii: "8.7 / 8.3 / 9.0", sidecutOffset: -15, noseLength: 190, noseWidth: 303, noseHeight: 43.2, tailLength: 180, tailWidth: 298, tailHeight: 38.9, camber: 6, stanceWidth: "480–600", setback: 5, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 6.5 / W 7.6 / T 6.6" }
+    - { size: "54 ver.C", overallLength: 1540, effectiveEdge: 1220, contactLength: 1180, waistWidth: 250, sidecutRadii: "8.7 / 8.3 / 9.0", sidecutOffset: -15, noseLength: 185, noseWidth: 293, noseHeight: 41.0, tailLength: 175, tailWidth: 288, tailHeight: 36.8, camber: 6, stanceWidth: "480–600", setback: 15, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 6.8 / W 8.0 / T 7.0", topsheet: Polyamide }
+    - { size: "55w ver.C", overallLength: 1550, effectiveEdge: 1220, contactLength: 1180, waistWidth: 260, sidecutRadii: "8.7 / 8.3 / 9.0", sidecutOffset: -15, noseLength: 190, noseWidth: 303, noseHeight: 43.2, tailLength: 180, tailWidth: 298, tailHeight: 38.9, camber: 6, stanceWidth: "480–600", setback: 15, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 6.8 / W 8.0 / T 7.0", topsheet: Polyamide }
+    - { size: "58", overallLength: 1580, effectiveEdge: 1245, contactLength: 1200, waistWidth: 252, sidecutRadii: "9.4 / 8.9 / 9.8", sidecutOffset: -20, noseLength: 205, noseWidth: 295, noseHeight: 50.2, tailLength: 175, tailWidth: 288, tailHeight: 36.8, camber: 8, stanceWidth: "500–620", setback: 25, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 7.2 / W 8.4 / T 7.4", topsheet: Polyamide }
+    - { size: "60w", overallLength: 1600, effectiveEdge: 1255, contactLength: 1200, waistWidth: 262, sidecutRadii: "9.8 / 9.3 / 10.2", sidecutOffset: -20, noseLength: 215, noseWidth: 304, noseHeight: 55.1, tailLength: 185, tailWidth: 297, tailHeight: 41.0, camber: 8, stanceWidth: "500–620", setback: 25, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 7.2 / W 8.4 / T 7.4", topsheet: Polyamide }
+    - { size: "63w", overallLength: 1630, effectiveEdge: 1290, contactLength: 1230, waistWidth: 256, sidecutRadii: "English 9.1 / 9.9; Japanese 9.1 / 9.5 / 9.6（原表不一致）", sidecutOffset: -45, noseLength: 215, noseWidth: 303, noseHeight: 55.1, tailLength: 185, tailWidth: 288, tailHeight: 41.0, camber: 10, stanceWidth: "500–620", setback: 35, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 7.5 / W 8.8 / T 7.8", topsheet: Polyamide }
+status: published
+images: []
+data_source:
+  kind: official
+  origin_url: https://graysnowboards.co.jp/product-2627-eng/

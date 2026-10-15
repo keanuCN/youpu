@@ -1,0 +1,43 @@
+slug: quechua-fs-300-ski-snowboard-helmet-2026
+category: ski-protection
+brand: quechua
+model: FS 300
+year: 2026
+title: QUECHUA FS 300 滑雪与单板头盔
+one_liner: ABS 硬壳与 EPS 内衬，EN 1077:2007 Class B；S/M/L 对应 52–62 cm 头围。2026 为采集标签，官方页面未确认具体雪季。
+price:
+  min: 355.07
+  max: 355.07
+  currency: CNY
+specs:
+  protectorType: helmet
+  protectionStandard: EN 1077:2007
+  protectionClass: class-b
+  coverage: 滑雪头盔；官方说明 Class B 覆盖范围较 Class A 小，抗穿透保护也较低。
+  weightRangeGr: 520 g（M码）
+  useSports: [skiing, snowboard]
+  availableSizes: [S, M, L]
+  sizeChart:
+    - { size: S, headCircumferenceCm: 52-54, sourceNote: 官方尺码表 }
+    - { size: M, headCircumferenceCm: 55-58, sourceNote: 官方尺码表 }
+    - { size: L, headCircumferenceCm: 59-62, sourceNote: 官方尺码表 }
+  fitAdvice: 官方建议按平时尺码选择；页面提示 FS 300 前额高度略低于其他 Wedze 头盔，建议试戴确认贴合度。
+  attachment: 后部旋钮调节系统（Turnring）与可调节下颌带；内衬泡棉可拆洗。
+  materials: ABS 硬壳、EPS 内胆、聚酯内衬。
+  helmetSafetyGuidance: 发生撞击后应更换；无严重撞击时官方建议最长使用 5 年（从制造日期起算）。厚帽及加装运动相机可能影响安全性；本款无镜片，可兼容眼镜与雪镜。
+  styleCode: "8524785"
+  seasonEvidence: 官方商品页未标注具体雪季或年款；2026 仅为采集标签。
+  priceCheckedAt: 2026-10-15
+  priceMarket: 英国 Decathlon 官方商品页
+  priceSource: https://www.decathlon.co.uk/p/adults-and-kids-ski-and-snowboard-helmet-fs-300-black/166071/c382c76m8524785
+  priceStatus: 英国挂牌价 GBP 39.99，按 ECB 2026-10-14 GBP/EUR 0.84385、EUR/CNY 7.4925 折合 CNY 355.07；这是英国地区折算参考，不是中国售价，未计运费、税费及汇率差异。
+images:
+  - url: "https://contents.mediadecathlon.com/p2977665/k%24ddb3016d4dc9373eb8837ea16e0d23a4/picture.jpg?f=3000x0&format=auto"
+    kind: face
+    alt: QUECHUA FS 300 黑色滑雪头盔
+    source: Decathlon 官方商品图库；图片地址响应 200 且为 JPEG，前台展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/adults-and-kids-ski-and-snowboard-helmet-fs-300-black/166071/c382c76m8524785
+status: published

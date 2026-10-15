@@ -1,0 +1,52 @@
+slug: head-supershape-e-magnum-2027
+category: skis
+brand: head
+model: Supershape e-Magnum
+year: 2027
+title: HEAD Supershape e-Magnum 2026/27（313306）
+price:
+  min: 7355.30
+  max: 7355.30
+  currency: CNY
+one_liner: HEAD 官方将其定位为 Supershape 系列中适用范围广的雪道板，可在不同速度下滑短弯或长弯，并强调刃抓地与回弹。
+specs:
+  lengthOptions: 149 / 156 / 163 / 170 / 177 cm
+  waistWidth: 72
+  turnRadius: 13.1
+  turnRadiusReferenceLength: 170 cm
+  terrain: 雪道
+  skierLevel: 进阶
+  speed: Fast
+  turnShape: Medium Radius
+  technologies: Crossforce Carbon（官方称其将力量传入板体结构）
+  bindingSetup: 含 Protector EVO PR 11 GW 固定器套装
+  weightBasis: 页面展示 Weight 数值，但未明确单只/一对及是否含固定器，本轮不映射为可比较重量。
+  geometryNotes: 26/27 HEAD Hardgoods 手册确认 article 313306、五个板长及 170 cm 参考几何；官方商品页按 313306.SET 展示 149 cm 规格。Sport Bittl 和 HEAD 合作商 VOSIsportSHOP 的 26/27 同货号页面给出五档逐码三围与半径。25/26 article 313305 与本档案分开，不混用。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
+  seasonEvidence: HEAD 26/27 Hardgoods Workbook 列 Supershape e-Magnum article 313306；HEAD 当前商品页货号为 313306.SET，合作零售页明确标注 2026/27 且列出同货号。HEAD 25/26 Workbook 对应货号是 313305，原档案雪季错配已纠正。
+  sourceCheckedAt: 2026-10-15
+  priceCheckedAt: 2026-10-14
+  listedPrice: USD 1,099.00
+  priceMarket: HEAD 美国官网挂牌参考
+  priceSource: https://www.head.com/en_US/product/supershape-e-magnum-313306-set
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: HEAD 美国官网按商品号 313306.SET 显示 USD 1,099.00，页面核对时已 Out of Stock；按 ECB 2026-10-14 EUR/USD 1.1195、EUR/CNY 7.4925 折算 CNY 7,355.30。该页面当前含 PROTECTOR EVO PR 13 GW 与 PRD 12 GW 绑定选项，价格配置需按结账选择确认。雪季由 HEAD 26/27 手册货号及同货号合作商页面确认；美国参考价不是中国售价。
+  compatibilitySources: https://www.head.com/en_US/product/supershape-e-magnum-313306-set；https://www.grip-walk.com/faq/
+  sizeSpecs:
+    - { size: 149 cm, noseWidth: 126, waistWidth: 72, tailWidth: 110, turnRadius: 9.7 }
+    - { size: 156 cm, noseWidth: 126, waistWidth: 72, tailWidth: 110, turnRadius: 10.8 }
+    - { size: 163 cm, noseWidth: 126, waistWidth: 72, tailWidth: 110, turnRadius: 11.9 }
+    - { size: 170 cm, noseWidth: 126, waistWidth: 72, tailWidth: 110, turnRadius: 13.1 }
+    - { size: 177 cm, noseWidth: 126, waistWidth: 72, tailWidth: 110, turnRadius: 14.3 }
+  profile: Speedrocker：板头 Rocker 6% / Camber 94% / 板尾 Rocker 0%（HEAD 官方页选中 149 cm 时显示）
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/dd28c8c9f6d45b9109e1958e2c85f19c9d98fe3bb86496ece69dddf7139c247f.webp"
+    kind: face
+    alt: HEAD Supershape e-Magnum 官方雪板商品图
+    source: HEAD 官方商品页（图片使用授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.head.com/en_US/product/supershape-e-magnum-313306-set
+status: published

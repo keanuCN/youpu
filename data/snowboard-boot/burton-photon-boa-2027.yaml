@@ -5,6 +5,10 @@ model: "Photon BOA"
 year: 2027
 title: "Burton Photon BOA 2027"
 one_liner: "官方档案型号；双区 BOA。尺码与脚感以实际试穿为准。"
+price:
+  min: 3998
+  max: 3998
+  currency: CNY
 specs:
   lacingSystem: "Dual Zone BOA Lockdown：双区调节并加强脚跟锁定"
   flex: "中等脚感（Burton 官方标注 Happy Medium）"
@@ -33,16 +37,19 @@ specs:
     - { size: US 男 14, usMen: "14", eu: "47", uk: "13", mondo: "32" }
     - { size: US 男 15, usMen: "15", eu: "48", uk: "14", mondo: "33" }
   selectionNotes: 穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。
-  fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 Wide 应与该品牌同型号标准版比较，不能视为跨品牌统一宽度。
+  fitEvidence: Burton 日本官方 Photon BOA 2027 页面按颜色变体代码 27WIN-150861 确认提供 Wide 选项。Burton 官方宽版指南明确称所有标记为 Wide 的 Burton 雪鞋均使用同尺码 Regular 外壳，并在前掌与中足连接处以弹性氯丁橡胶鞋胆面板替代泡棉，从而增加该处空间；此处是将品牌通用规则应用于已确认的 Photon Wide 变体，不是 Photon 专属拆解或毫米测量。品牌建议结合脚长测量、试穿、多款比较和锁跟情况判断；宽街鞋（EE 或更宽）及整日挤压、热点、麻木或脚趾发冷者可考虑 Wide，但鞋码本身不能单独决定宽度。Photon 2027 未公布鞋楦毫米宽度或脚背容积。
   heatMolding: 官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。
   compatibilitySources: https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861；https://www.burton.com/en-us/pages/size-charts
-  priceCheckedAt: 2026-10-12
+  seasonEvidence: Burton 美国官方商品页标题标注 Photon BOA 2027，变体色款代码为 27WIN-150861；据此确认对应 2026/27 雪季。
+  priceCheckedAt: 2026-10-15
   officialPrice: USD 479.95
-  priceMarket: 原币 USD；来源商店 www.burton.com
-  priceSource: https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  regionalListPrice: JPY 69,300
+  priceMarket: 中国零售挂牌参考；SPADERS 黑桃滑雪俱乐部微信店铺的 26/27 Photon BOA Black
+  priceSource: https://detail.youzan.com/show/goods?alias=1yaa3wlsebfamck&from_source=gbox_seo
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: SPADERS 黑桃滑雪俱乐部微信认证店铺页面标注 26/27 Burton Photon BOA Black，挂牌 CNY 3,998，支持立即购买；页面显示运费范围 CNY 0–200，但没有商品货号、尺码选项或库存明细，因此仅作为中国零售商挂牌参考，不能称作 Burton 官方价或实际成交价。Burton 日本官方同型号 ID 150861、色款代码 27WIN-150861 页面标价 JPY 69,300，按 ECB 2026-10-13 汇率折算 CNY 2,933.63，继续保留为独立地区对照。日本 BURTON 正规取扱零售页另列 26/27 Photon BOA Wide、Chinchilla Gray、型号 150861，挂牌 JPY 69,300；页面显示 Mondo 26、27、27.5 等尺码残量较少且其他尺码有货或缺货，属于日本单店瞬时库存快照，不等于品牌全球尺码范围或中国库存。跨境运费和进口费用未计。
 images:
-  - url: "https://www.burton.com/cdn/shop/files/1508619AUA_1.webp?v=1790184461&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/621c107205416d11915c9009c4798479fa3a5ad39375a74134b2a3837e00edf6.webp"
     kind: face
     alt: Burton Photon BOA 2027 官方雪鞋商品图
     source: Burton 官方商品页（图片使用授权待核）
@@ -50,4 +57,11 @@ images:
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861
+# 编辑暂估，非社区实测；评分口径见 docs/单板雪鞋编辑评分口径-2026-10-15.md
+editorial_scores:
+  fit: 8.3
+  support: 7.2
+  warmth: 8.2
+  convenience: 8.9
+  value: 5.0
 status: published

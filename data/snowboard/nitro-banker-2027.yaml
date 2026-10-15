@@ -13,9 +13,9 @@ editorial_scores:
   forgiveness: 5.8
   value: 7.3
 price:
-  min: 639.95
-  max: 639.95
-  currency: USD
+  min: 5203.65
+  max: 5203.65
+  currency: CNY
 specs:
   length: 156
   waistWidth: 255
@@ -36,13 +36,18 @@ specs:
     - { size: "152", waistWidth: 246, runningLength: 1090, noseWidth: 289, tailWidth: 286, sidecutRadii: "7.8/6.1 m", stanceWidth: "46–58 cm", setback: -15 }
     - { size: "156", waistWidth: 255, runningLength: 1120, noseWidth: 300, tailWidth: 296, sidecutRadii: "8.0/6.3 m", stanceWidth: "48–60 cm", setback: -15 }
     - { size: "160", waistWidth: 260, runningLength: 1150, noseWidth: 306, tailWidth: 302, sidecutRadii: "8.2/6.5 m", stanceWidth: "50–62 cm", setback: -15 }
-  priceCheckedAt: 2026-10-12
-  officialPrice: EUR 649.9
-  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
-  priceSource: https://www.nitrosnowboards.com/products/banker-snowboard-1
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
+  priceCheckedAt: 2026-10-02
+  priceConvertedAt: 2026-10-15
+  officialEuropeanPrice: EUR 649.9
+  northAmericanPrice: USD 639.95
+  regionalListPrice: JPY 123200
+  priceMarket: 日本 Murasaki Sports 26/27 预售页；税含报价，非中国市场售价
+  priceSource: https://www.murasaki.jp/Form/Product/ProductDetail.aspx?bid=snow&pid=n05430101019993
+  exchangeRate: EUR/JPY 177.39；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 日本零售商 2026/27 预售价 JPY 123,200（含税），按 ECB 2026-10-14 汇率折算 CNY 5,203.65。日本地区参考，不是中国售价或成交价；预售库存、跨境运输及进口费用未计。美国经销页面另列 USD 639.95，官方欧洲页列 EUR 649.90，地区价格不混用。来源与换算见 data/raw/snowboard/nitro/banker-price-conversion-2026-10-15.json。
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0580/2773/7217/files/11SB11004-101-1multBankerII.jpg?v=1787539883"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/9fc70b396b47956fa0693692808324dccb5b8f62ff9df132aaf6c14180dbc967.webp"
     kind: face
     alt: Nitro Banker 2027 官方产品图
     source: Nitro 官方产品页图片（转载授权未核实）

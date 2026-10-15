@@ -1,0 +1,54 @@
+slug: head-e-slr-2027
+category: skis
+brand: head
+model: Worldcup Rebels e.SLR
+year: 2027
+title: HEAD Worldcup Rebels e.SLR 2026/27（313366）
+price:
+  min: 5469.53
+  max: 5469.53
+  currency: CNY
+one_liner: HEAD 新雪季雪道小回转板，适合有经验的滑手在整备雪道上练习快速、精准的刻滑弯。
+specs:
+  articleNumber: "313366.SET"
+  lengthOptions: 149 / 156 / 163 / 170 cm
+  sizeSpecs:
+    - { size: 149 cm, noseWidth: 123, waistWidth: 66, tailWidth: 107, turnRadius: 9.2 }
+    - { size: 156 cm, noseWidth: 123, waistWidth: 66, tailWidth: 107, turnRadius: 10.2 }
+    - { size: 163 cm, noseWidth: 123, waistWidth: 66, tailWidth: 107, turnRadius: 11.2, notes: HEAD 官方参考尺码；规格目录与官方商品页一致。 }
+    - { size: 170 cm, noseWidth: 123, waistWidth: 66, tailWidth: 107, turnRadius: 12.3 }
+  waistWidth: 66
+  turnRadius: 11.2
+  turnRadiusReferenceLength: 163 cm
+  core: Full Woodcore
+  construction: Metal layers
+  technologies: Graphene；Titanal layers；EMC 电子减震系统
+  terrain: 整备雪道
+  skierLevel: 中级进阶至专家；HEAD 官方标注 Advanced
+  speed: Fast
+  turnShape: Short Radius
+  bindingSetup: HEAD 官方套装页提供 PR 11 GW 标准选项及 PROTECTOR EVO PR 11 GW 加价选项；下单前核对实际固定器和安装选项。
+  weightBasis: HEAD 商品页选中 149 cm 时显示 1995 g，但未明确该重量是单只/一对及是否含固定器，因此暂不录为可比较重量。
+  geometryNotes: HEAD 26/27 Workbook 确认 article 313366、四个长度、163 cm 参考几何和 PR 11 GW；HEAD 官方商品页直接显示 149 cm 的 123/66/107 mm、R9.2 及重量。Skitreff 精确 2026/27 套装页补充其余三档几何与半径。
+  bindingCompatibility: 标准套装页列 PR 11 GW，HEAD 表示该固定器兼容 GripWalk；仍须按具体雪靴底标识及固定器型号核对，不把 GW 视为兼容所有徒步靴底。
+  mountingNotes: 固定器安装和释放值应由专业店根据靴底长度、体重、年龄及能力设定并校验；下单前区分预装、未安装及保护型固定器选项。
+  seasonEvidence: HEAD 26/27 Hardgoods Workbook 将 article 313366 对应 Worldcup Rebels e.SLR；HEAD 25/26 的 313365 单独记录于 head-e-slr-2026，不跨季混用。
+  sourceCheckedAt: 2026-10-15
+  priceCheckedAt: 2026-10-15
+  listedPrice: EUR 730.00
+  priceMarket: HEAD 斯洛文尼亚官方商品页；Worldcup Rebels e.SLR 313366.SET，PR 11 GW 套装页面
+  priceSource: https://www.head.com/en_SL/product/worldcup-rebels-e-slr-313366-set
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: HEAD 斯洛文尼亚官方 313366.SET 页面列 EUR 730 final price，图片及选项对应 PR 11 GW 套装，PROTECTOR EVO PR 11 GW 需加 EUR 50。按 ECB 2026-10-14 EUR/CNY 7.4925 折算 CNY 5,469.53；官方区域参考，不是中国售价，价格、绑定选择及库存会变化。韩国 ONE8 同货号 313366 + PR 11 GW 页面另列 KRW 1,843,000（ECB 汇率折 CNY 9,227.07），但页面标记为新款预览/预约专用，未证明可立即下单，故只作韩国挂牌参考，不并入当前主价；详见 data/raw/skis/head/e-slr-313366-2026-27.json。
+  compatibilitySources: https://www.head.com/en_SL/product/worldcup-rebels-e-slr-313366-set; https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf; https://www.grip-walk.com/faq/
+  profile: Rebel Camber；HEAD 官方页在选中 149 cm 时列出 camber 100%、tip rocker 0%、tail rocker 0%
+images:
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ae79059354523e684e724fade39b46aac05abd41fbf3f1dc979bd8b91672fd3c.webp
+    kind: face
+    alt: HEAD Worldcup Rebels e.SLR 2026/27 官方 PR 11 GW 套装图片
+    source: HEAD 官方商品页及官方 CDN（图片展示授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.head.com/en_SL/product/worldcup-rebels-e-slr-313366-set
+status: published

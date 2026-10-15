@@ -40,7 +40,7 @@ specs:
   priceSource: https://k2snow.com/en-us/p/excavator-unisex-snowboard-kb261687
   priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 images:
-  - url: "https://cdn.media.amplience.net/s/k2/k2_2627_excavator_KB261687?w=1200&qlt=90&fmt=auto"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/1f137cea322389a1e1198db5d143d58e8b5273251c05c5c3e44ed68a553ae29b.webp"
     kind: face
     alt: K2 Excavator 2027 单板商品图
     source: K2 官方 2027 商品页结构化商品数据中的图片地址（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

@@ -25,9 +25,18 @@ export type SpecOption = { value: string; label: string };
 
 /** nested 行内字段：简写 "number" 或 {type, label}；解析后统一为对象 */
 const itemFieldSchema = z
-  .union([z.enum(['number', 'text']), z.object({ type: z.enum(['number', 'text']), label: z.string() })])
+  .union([
+    z.enum(['number', 'text', 'bool', 'number[]', 'number|string', 'object<number>', 'number|object<number>']),
+    z.object({
+      type: z.enum(['number', 'text', 'bool', 'number[]', 'number|string', 'object<number>', 'number|object<number>']),
+      label: z.string(),
+    }),
+  ])
   .transform((v): SpecItemField => (typeof v === 'string' ? { type: v } : v));
-export type SpecItemField = { type: 'number' | 'text'; label?: string };
+export type SpecItemField = {
+  type: 'number' | 'text' | 'bool' | 'number[]' | 'number|string' | 'object<number>' | 'number|object<number>';
+  label?: string;
+};
 
 export const specFieldSchema = z.object({
   key: z.string().min(1),
@@ -54,6 +63,8 @@ export const specFieldSchema = z.object({
   required: z.boolean().default(false),
   /** 展示顺序（升序） */
   order: z.number().default(0),
+  /** false=仅用于来源/核验等数据审计，不进入公开参数行 */
+  display: z.boolean().optional(),
   help: z.string().optional(),
 });
 export type SpecField = z.infer<typeof specFieldSchema>;
@@ -233,6 +244,21 @@ function validateField(field: SpecField, value: unknown, issues: SpecValidationI
           if (rowField.type === 'text' && typeof cell !== 'string') {
             issues.push({ path: `${field.key}[${i}].${rowKey}`, message: `应为文本` });
           }
+          if (rowField.type === 'bool' && typeof cell !== 'boolean') {
+            issues.push({ path: `${field.key}[${i}].${rowKey}`, message: `应为布尔值` });
+          }
+          if (rowField.type === 'number[]' && (!Array.isArray(cell) || cell.some((v) => typeof v !== 'number' || !Number.isFinite(v)))) {
+            issues.push({ path: `${field.key}[${i}].${rowKey}`, message: `应为数字数组` });
+          }
+          if (rowField.type === 'number|string' && typeof cell !== 'number' && typeof cell !== 'string') {
+            issues.push({ path: `${field.key}[${i}].${rowKey}`, message: `应为数字或文本` });
+          }
+          if (rowField.type === 'object<number>' && !isNumberRecord(cell)) {
+            issues.push({ path: `${field.key}[${i}].${rowKey}`, message: `应为数字对象` });
+          }
+          if (rowField.type === 'number|object<number>' && typeof cell !== 'number' && !isNumberRecord(cell)) {
+            issues.push({ path: `${field.key}[${i}].${rowKey}`, message: `应为数字或数字对象` });
+          }
         }
       });
       return;
@@ -245,6 +271,15 @@ function validateField(field: SpecField, value: unknown, issues: SpecValidationI
       if (typeof value !== 'string') return fail(`${field.label} 应为文本`);
     }
   }
+}
+
+function isNumberRecord(value: unknown): value is Record<string, number | null> {
+  return (
+    typeof value === 'object' &&
+    value !== null &&
+    !Array.isArray(value) &&
+    Object.values(value).every((cell) => cell === null || (typeof cell === 'number' && Number.isFinite(cell)))
+  );
 }
 
 function checkRange(field: SpecField, value: number, fail: (msg: string) => void): void {

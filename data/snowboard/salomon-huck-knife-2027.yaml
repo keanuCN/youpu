@@ -43,7 +43,7 @@ specs:
   priceSource: https://www.salomon.com/en-us/product/huck-knife-li1304
   priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 images:
-  - url: "https://cdn.dam.salomon.com/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/1e06ff852a64926f551ae81131e9aaeac2304dc742ade051706734ea402713de.webp"
     kind: face
     alt: Salomon Huck Knife 2027 单板官方主图
     source: Salomon 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

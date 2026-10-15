@@ -152,7 +152,7 @@ export default function MePage() {
         kicker={`MEMBER SINCE ${fmtDate(persisted.accounts.find((a) => a.userKey === profile.userKey)?.createdAt ?? new Date().toISOString())}`}
         title={profile.username}
         titleEn="Personal Archive"
-        desc={`${profile.level} · ${profile.years} 年使用经验 · ${profile.heightCm}cm / ${profile.weightKg}kg${profile.resort ? ` · 常用 ${profile.resort}` : ""}`}
+        desc={`${profile.level} · ${profile.years} 年雪龄 / 使用经验 · ${profile.heightCm}cm / ${profile.weightKg}kg${profile.resort ? ` · 常滑 ${profile.resort}` : ""}`}
         aside={
           <div className="flex items-center gap-4">
             <Avatar seed={profile.avatarSeed} name={profile.username} size={56} />
@@ -474,7 +474,7 @@ function ProfileForm() {
       <div className="grid gap-4 sm:grid-cols-2">
         {field("username", "昵称")}
         {field("resort", "常滑场地")}
-        {field("years", "使用年限（年）", "number")}
+        {field("years", "雪龄 / 使用年限（年）", "number")}
         {field("heightCm", "身高 cm", "number")}
         {field("weightKg", "体重 kg", "number")}
         <div className="space-y-1.5">
@@ -514,13 +514,13 @@ function ProfileForm() {
                 return;
               }
             }
-            toast.success("资料已保存，发布评论时会自动带上这些条件");
+            toast.success("资料已保存，发布实测时会自动带上这些条件");
           }}
           className="mono-label h-9 rounded-none bg-foreground px-5 text-[12px] hover:bg-primary"
         >
           保存资料
         </Button>
-        <p className="mono-label flex items-center text-muted-foreground">这些条件会作为你评论的「使用条件」标注</p>
+        <p className="mono-label flex items-center text-muted-foreground">这些资料会自动显示在你的实测评论中</p>
       </div>
     </div>
   );

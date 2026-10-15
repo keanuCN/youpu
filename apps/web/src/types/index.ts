@@ -91,6 +91,7 @@ export interface Category extends CategoryNode {
 export interface GalleryShot {
   url: string;
   label: string;
+  source?: string;
 }
 
 /** 官方尺码/几何表，用于需要按尺码做选择的装备。 */
@@ -147,6 +148,7 @@ export interface GearItem {
   sizeSpecs?: GearSizeSpec[];
   equipmentSizeChart?: GearSizeSpec[];
   fitGuide?: FitGuide;
+  dataSource?: { kind: "official" | "manual" | "crawl"; originUrl: string };
   scores: Record<string, number>;
   composite: number;
   hardcore: number;

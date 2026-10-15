@@ -1,0 +1,133 @@
+{
+  "checkedAt": "2026-10-15",
+  "product": {
+    "brand": "QUECHUA",
+    "model": "FS 300",
+    "productId": "8524785",
+    "officialTitle": "Adults' and kids' ski and snowboard helmet FS 300",
+    "source": "https://www.decathlon.co.uk/p/adults-and-kids-ski-and-snowboard-helmet-fs-300-black/166071/c382c76m8524785",
+    "crossCheck": "https://www.decathlon.es/es/p/casco-esqui-y-snowboard-transpirable-adultos-ninos-wedze-h-fs-300/166071/c382c76m8524785"
+  },
+  "specifications": {
+    "standard": "EN 1077:2007 Class B",
+    "weight": "520 g, size M",
+    "shell": "ABS",
+    "innerCup": "EPS",
+    "lining": "polyester; removable foam pads",
+    "vents": 12,
+    "fitSystem": "Turnring adjustment wheel; adjustable chin strap and occipital adjustment",
+    "lens": "No visor; compatible with glasses and ski goggles",
+    "sizes": [
+      { "size": "S", "headCircumferenceCm": "52-54" },
+      { "size": "M", "headCircumferenceCm": "55-58" },
+      { "size": "L", "headCircumferenceCm": "59-62" }
+    ],
+    "fitNote": "Choose usual size; official page says FS 300 forehead is slightly shorter than other Wedze helmets, so try it on.",
+    "safety": "Replace after any impact. Maximum recommended use is 5 years from manufacture if there has been no serious impact. Thick hats and adding a camera may affect safety.",
+    "warranty": "2 years",
+    "season": "The official page identifies winter season but does not confirm a product snow-year. 2026 in the seed is a collection label only."
+  },
+  "price": {
+    "market": "United Kingdom",
+    "listedGBP": 39.99,
+    "checkedAt": "2026-10-15",
+    "referenceRatesDate": "2026-10-14",
+    "gbpPerEur": 0.84385,
+    "cnyPerEur": 7.4925,
+    "calculation": "39.99 / 0.84385 * 7.4925 = 355.07 CNY",
+    "convertedCNY": 355.07,
+    "caveat": "UK regional converted reference, not a China retail price; shipping, taxes and exchange spread are excluded.",
+    "productSource": "https://www.decathlon.co.uk/p/adults-and-kids-ski-and-snowboard-helmet-fs-300-black/166071/c382c76m8524785",
+    "rateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+  },
+  "regionalPriceCrossCheck": {
+    "checkedAt": "2026-10-15",
+    "fxSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "fxDate": "2026-10-14",
+    "cnyPerEur": 7.4925,
+    "localCurrencyPerEur": { "GBP": 0.84385, "CHF": 0.933, "CAD": 1.5918, "ILS": 3.4443 },
+    "listings": [
+      {
+        "market": "Spain",
+        "listed": { "amount": 44.99, "currency": "EUR" },
+        "convertedCNY": 337.09,
+        "source": "https://www.decathlon.es/es/p/casco-esqui-y-snowboard-transpirable-adultos-ninos-wedze-h-fs-300/166071/c382c76m8524785",
+        "productId": "8524785"
+      },
+      {
+        "market": "Germany",
+        "listed": { "amount": 44.99, "currency": "EUR" },
+        "convertedCNY": 337.09,
+        "source": "https://www.decathlon.de/p/skihelm-erwachsene-kinder-h-fs-300-schwarz/166071/c382c76m8524785",
+        "productId": "8524785"
+      },
+      {
+        "market": "Slovakia",
+        "listed": { "amount": 45.95, "currency": "EUR" },
+        "convertedCNY": 344.28,
+        "source": "https://www.decathlon.sk/p/166071-459331-lyziarska-a-snowboardova-prilba-fs-300-cierna.html",
+        "productId": "8524785"
+      },
+      {
+        "market": "Switzerland",
+        "listed": { "amount": 59.9, "currency": "CHF" },
+        "convertedCNY": 481.03,
+        "source": "https://www.decathlon.ch/en/p/adults-and-kids-ski-and-snowboard-helmet-fs-300-black/166071/c382c76m8524785",
+        "productId": "8524785"
+      },
+      {
+        "market": "Canada",
+        "listed": { "amount": 59.99, "currency": "CAD" },
+        "convertedCNY": 282.37,
+        "source": "https://www.decathlon.ca/en/p/ski-and-snowboard-helmet-h-fs-300/166071/c382c76m8524785",
+        "productId": "8524785"
+      },
+      {
+        "market": "Israel",
+        "listed": { "amount": 229.9, "currency": "ILS" },
+        "convertedCNY": 500.11,
+        "source": "https://www.decathlon.co.il/p/166071-124719-%D7%A7%D7%A1%D7%93%D7%AA-%D7%A1%D7%A7%D7%99-%D7%95%D7%A1%D7%A0%D7%95%D7%91%D7%95%D7%A8%D7%93-%D7%9C%D7%9E%D7%91%D7%95%D7%92%D7%A8%D7%99%D7%9D-%D7%95%D7%9C%D7%A0%D7%95%D7%A2%D7%A8-%D7%93%D7%92%D7%9D-h-fs-300-%D7%A9%D7%97%D7%95%D7%A8.html",
+        "productId": "8524785"
+      }
+    ],
+    "limitations": [
+      "均为对应国家/地区官方店的挂牌价汇率折算，不是中国人民币售价。",
+      "商品页尺码选择器和购买按钮不等于每个尺码均有库存或可完成结账。",
+      "未发现可读取且能同时映射商品号 8524785 与中国人民币金额的国内商品页；当前保留英国官方折算价作为种子主参考。",
+      "以色列官方页的 229.90 ILS 按 ECB 2026-10-14 EUR/ILS 3.4443、EUR/CNY 7.4925 折合 CNY 500.11，仅作为额外地区挂牌参考。"
+    ]
+  },
+  "chinaPriceSearch20261015": {
+    "checkedAt": "2026-10-15",
+    "queries": [
+      "site:decathlon.com.cn 8524785 滑雪头盔",
+      "迪卡侬 FS 300 滑雪头盔 8524785 中国",
+      "京东 8524785 FS 300 头盔"
+    ],
+    "result": "本次检索未找到可读取且能将中国人民币售价与商品号 8524785 同时对应的商品页。",
+    "limitation": "搜索结果缺失不能证明中国没有在售商品；京东分类页仅能证明官方店铺含滑雪头盔类目，不能对应本型号或确认价格。",
+    "sources": [
+      "https://mall.jd.com/view_search-1890029-16658906-99-1-20-1.html",
+      "https://www.decathlon.de/p/skihelm-erwachsene-kinder-h-fs-300-schwarz/166071/c382c76m8524785"
+    ]
+  },
+  "officialSupportSeasonRecheck20261015": {
+    "checkedAt": "2026-10-15",
+    "source": "https://support.decathlon.fr/casque-wedze-ski-hfs-300-epi",
+    "crossCheck": "https://support.decathlon.co.uk/mens-ski-helmet-wedze-300-epi",
+    "finding": "迪卡侬官方售后页将 REF 8524785 列入 H-FS 300 型号组；法国支持页可见 2020–2025 年合规声明入口，英国页列出 2021 年声明。",
+    "limitation": "这些是型号组的合规声明年份，不足以确认当前种子对应的具体雪季、销售年款或生产批次，故 year 仍作为采集标签。"
+  },
+  "image": {
+    "url": "https://contents.mediadecathlon.com/p2977665/k%24ddb3016d4dc9373eb8837ea16e0d23a4/picture.jpg?f=3000x0&format=auto",
+    "httpStatus": 200,
+    "contentType": "image/jpeg",
+    "rights": "Display authorization not verified"
+  },
+  "remainingGaps": [
+    "Exact product snow season/year is not stated on the official page.",
+    "No China-specific CNY price verified; 2026-10-15 searches did not surface a readable exact-product domestic price page, but this is not proof that none exists. Converted UK price is a regional reference only.",
+    "Official support declaration archive years do not establish the exact product snow season or retail year.",
+    "Front-end display rights for the official product image remain unverified."
+  ]
+}

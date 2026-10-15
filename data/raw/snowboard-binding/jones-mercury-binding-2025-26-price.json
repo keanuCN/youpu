@@ -1,0 +1,31 @@
+{
+  "brand": "Jones",
+  "model": "Men's Mercury Snowboard Binding",
+  "season": "2025-26",
+  "skuFamilyPrefix": "J.26.BNM.MER",
+  "retrievedAt": "2026-10-14",
+  "seedFile": "data/snowboard-binding/jones-mercury-binding-2026.yaml",
+  "manufacturerSource": "https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026",
+  "regionalPriceSource": {
+    "url": "https://www.hasco.co.jp/pdf/2526Jones-Overview.pdf",
+    "publisher": "Hasco Enterprises（Jones 日本官方代理商）",
+    "evidence": "2025-26 Bindings 产品总览表列出 Men's Mercury、Eclipse Black、尺码 S/M/L，未税价格 JPY 58,000、含税价格 JPY 63,800。",
+    "listPriceJpyBeforeTax": 58000,
+    "listPriceJpyTaxIncluded": 63800,
+    "sizes": ["S", "M", "L"],
+    "color": "Eclipse Black"
+  },
+  "conversion": {
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-13",
+    "eurJpy": 176.91,
+    "eurCny": 7.489,
+    "formula": "63800 / 176.91 * 7.489 = 2700.80 CNY",
+    "convertedTaxIncludedCny": 2700.8,
+    "limitations": "ECB 参考汇率仅供信息参考，不是交易汇率。折算值是日本代理商建议零售价参考，不是当前零售成交价或中国售价；未含跨境运输、关税和其他进口费用。"
+  },
+  "remainingUnknowns": [
+    "未核实中国境内对应货号的现货及人民币成交价。",
+    "日本代理商建议零售价不代表当前零售商促销价或实际到手价。"
+  ]
+}

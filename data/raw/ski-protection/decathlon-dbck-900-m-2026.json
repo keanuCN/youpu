@@ -1,0 +1,108 @@
+{
+  "capturedAt": "2026-10-15",
+  "brand": "DREAMSCAPE / Decathlon",
+  "model": "DBCK 900 men's back protector vest",
+  "category": "ski-protection",
+  "styleCode": "ID 8738342",
+  "sources": {
+    "officialProduct": {
+      "url": "https://www.decathlon.co.uk/p/mens-mtb-skiing-and-snowboarding-back-protector-vest-dbck-900-black/339069/c382m8738342",
+      "evidence": "官方商品页标注 DBCK 900 男款黑色、ID 8738342，选项为 S/M/L/XL/2XL；页面当前价 GBP 79.99、原价 GBP 99.99。页面卖点另称 available in 4 sizes，与五个尺码选项及下方五档尺码表不一致，保留为来源内部矛盾。"
+    },
+    "protectionAndMaterials": {
+      "url": "https://www.decathlon.co.uk/p/mens-mtb-skiing-and-snowboarding-back-protector-vest-dbck-900-black/339069/c382m8738342",
+      "evidence": "官方称全背覆盖、背心式、侧边调节；商品描述段称按 EN 1621-2 Level 1 冲击测试，但同页后部 Testing 段写 EN1621-1 Level 1。适用山地自行车、双板与单板滑雪。护垫 100% SBS，主体 22% 氨纶/78% 聚酯，内层 100% 聚酯，背部 5% 氨纶/95% 聚酯。商品介绍称采用法国制造的 Hexaflex 柔性材料。"
+    },
+    "sizeChart": {
+      "url": "https://www.decathlon.co.uk/p/mens-mtb-skiing-and-snowboarding-back-protector-vest-dbck-900-black/339069/c382m8738342",
+      "evidence": "官方建议：S 胸围 87–93 cm、身高约 166–172 cm；M 83–99 cm、172–177 cm；L 99–107 cm、177–183 cm；XL 107–117 cm、183–192 cm；XXL 117–127 cm、身高约 192 cm 以上。M 胸围区间与 S/L 重叠，未推测修正。"
+    },
+    "sizeChartRegionalCrossCheck20261015": {
+      "checkedAt": "2026-10-15",
+      "officialPages": [
+        {"market": "United Kingdom", "url": "https://www.decathlon.co.uk/p/mens-mtb-skiing-and-snowboarding-back-protector-vest-dbck-900-black/339069/c382m8738342"},
+        {"market": "Greece", "url": "https://www.decathlon.com.gr/en/p/339069-373738-men-s-mtb-skiing-and-snowboarding-back-protector-vest-dbck-900-black.html"},
+        {"market": "Switzerland", "url": "https://www.decathlon.ch/en/p/men-s-mtb-skiing-and-snowboarding-back-protector-vest-dbck-900-black/_/R-p-339069?c=smoked+black"},
+        {"market": "Malta", "url": "https://www.decathlon.mt/p/339069-496267-men-s-mtb-skiing-and-snowboarding-back-protector-vest-dbck-900-black.html"}
+      ],
+      "finding": "四个地区官方页面均重复 S 87–93、M 83–99、L 99–107、XL 107–117、XXL 117–127 cm 胸围范围；M 与 S/L 重叠。商品卖点仍称 4 sizes，尺码选择器列 S/M/L/XL/2XL 五项。",
+      "interpretation": "多地区重复证明这组异常建议范围被共同发布，但不能证明它是正确的设计范围，也不能排除共享源数据中的系统性录入错误。",
+      "decision": "继续原样保留官方数值和冲突说明；不擅自把 M 码下限 83 改为推测值，也未找到腰到肩的逐码区间。需要品牌更正尺码表或提供尺码技术文件。"
+    },
+    "jacketCompatibility": {
+      "url": "https://www.decathlon.co.uk/p/mens-mtb-skiing-and-snowboarding-back-protector-vest-dbck-900-black/339069/c382m8738342",
+      "jacketStyleCodes": ["8758723", "8809963", "8600856"],
+      "evidence": "官方说明 ZIPROTEC 可与 SNB 500 和 SNB 900 外套组合，页面列出三个外套款号；护具还有裤袢连接带。实际产品页尺码与外套接口仍需核实。"
+    },
+    "officialUseManualRecheck20261015": {
+      "url": "https://cdn.decathlon-share.com/product-user-guide/zd2xiqw4xda31/en_339069_usg_web_2024-02-22_en.pdf",
+      "documentId": "339069",
+      "evidence": "迪卡侬官方商品号 339069 使用说明要求按尺码表选择，并同时量胸围与腰到肩距离；穿着后检查保护区域覆盖，调节腰部绑带并活动确认产品不移位；DBCK900M/W 可通过弹性橙色连接带固定于裤袢，连接滑雪服时护具与雪服需同尺码。过大或过小会降低保护效果。",
+      "protectionLevelConflict": "同一商品号的官方商品页描述段写 EN 1621-2 Level 1，后部 Testing 段写 EN1621-1 Level 1；官方使用说明文本另出现 Level 2。未取得可核验的产品铭牌/有效符合性声明，本轮无法裁定哪个标示对应当前商品。",
+      "decision": "在种子中补充腰到肩测量、覆盖检查、活动后稳定性检查和护具/雪服同尺码要求；胸围 M 区间与相邻尺码重叠问题仍原样保留。因标准/等级来源冲突，从结构化种子移除单一保护等级结论，只公开冲突待核说明。"
+    },
+    "officialDeclaration2024": {
+      "supportPage": "https://support.decathlon.es/chaleco-dorsal-esqui-snowboard-dreamscape-dbck900-declaracion-de-conf",
+      "productReferencePage": "https://support.decathlon.fr/dreamscape-protection-dorsale-dbck-900-m-hexaflex",
+      "documentType": "EU Declaration of Conformity",
+      "documentYear": 2024,
+      "signedDate": "2024-02-27",
+      "tradeNames": ["DBCK900 M", "DBCK900 W", "DBCK900 JR"],
+      "modelCodes": ["339069", "339240", "339176"],
+      "designCodes": ["8738342", "8738343", "8810022"],
+      "matchingProduct": {"tradeName": "DBCK900 M", "modelCode": "339069", "designCode": "8738342"},
+      "legislation": "EU Regulation 2016/425 on personal protective equipment",
+      "technicalSpecifications": ["VPski-009", "VêtProVTT-008"],
+      "euTypeExamination": {"notifiedBody": "ALIENOR CERTIFICATION N°2754", "certificateNumber": "2754/0372/162/02/24/0029", "module": "B"},
+      "signatory": "Sophie Jaray, Universum Director",
+      "evidence": "迪卡侬官方支持页以 REF 8738342 发布 2024 符合性声明；已读取声明两页。声明把设计码 8738342 与 DBCK900 M、型号码 339069 对应，并列 EU PPE Regulation 2016/425、VPski-009 与 VêtProVTT-008，以及 ALIENOR Certification 型式检验信息。",
+      "doesNotSpecify": ["EN 1621-1 或 EN 1621-2 标准", "Level 1 或 Level 2 等级", "冲击后残余力数值"],
+      "decision": "该文件证明 8738342 对应 DBCK900 M 并有 2024 EU 符合性声明，但不能裁定商品页与说明书中互相矛盾的 EN 1621 / 防护等级文字。种子不恢复单一 protectionLevel；如需确认该数值，仍须查实物标识、技术文件或向制造商澄清。"
+    },
+    "customerReviewLead20261015": {
+      "url": "https://www.decathlon.de/r/ruckenprotektor-erwachsene-mtb-ski-snowboard-dbck-900-schwarz/339069/c382m8738342",
+      "observedAt": "2026-10-15",
+      "evidence": "一则标记为已验证购买者的德语评论称其产品和说明书标为 Cat. 2，与商品网页 Level 1 描述不同。该内容是用户评论，不视为认证文件或等级定论；仅作为官方来源冲突的二级线索。",
+      "decision": "不据用户评论判定防护等级；继续等待商品铭牌或有效符合性声明。"
+    },
+    "exchangeRate": {
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+      "date": "2026-10-14",
+      "gbpPerEur": 0.84385,
+      "cnyPerEur": 7.4925,
+      "formula": "GBP 79.99 / 0.84385 × 7.4925 = CNY 710.23"
+    }
+  },
+  "priceDecision": {
+    "currentRegionalSalePrice": {"amount": 79.99, "currency": "GBP", "market": "United Kingdom"},
+    "formerPrice": {"amount": 99.99, "currency": "GBP"},
+    "convertedReference": {"amount": 710.23, "currency": "CNY"},
+    "decision": "使用官方商品页当前显示的促销价作英国地区参考并按 ECB 汇率折算；不是中国售价，价格与库存可能变化。"
+  },
+  "seasonDecision": "商品页没有明确雪季；2026 仅作为采集与归档标签。",
+  "image": {
+    "url": "https://contents.mediadecathlon.com/p2704381/k%24ab0c91c40be9e2f58234589b5e0d9ce8/picture.jpg?f=3000x0&format=auto",
+    "source": "Decathlon official product image CDN",
+      "retrievalNote": "官方商品页图库前五张图的直接 HEAD 检查均返回 HTTP 200、image/jpeg；网页文本读取器未能拉取图片二进制。可访问性已核，站内展示授权仍未确认。"
+  },
+    "galleryImageAudit20261015": {
+      "checkedAt": "2026-10-15",
+      "sourcePage": "https://www.decathlon.co.uk/p/mens-mtb-skiing-and-snowboarding-back-protector-vest-dbck-900-black/339069/c382m8738342",
+      "items": [
+        {"order": 1, "url": "https://contents.mediadecathlon.com/p2704381/k%24ab0c91c40be9e2f58234589b5e0d9ce8/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+        {"order": 2, "url": "https://contents.mediadecathlon.com/p2704382/k%243228311b1e508a7db49b706d93c2b2ce/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+        {"order": 3, "url": "https://contents.mediadecathlon.com/p2704380/k%2402de9e75cf9b6c97cb94bd7845cb0532/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+        {"order": 4, "url": "https://contents.mediadecathlon.com/p2662130/k%24361dc51288eca88273e586528cf70b5c/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+        {"order": 5, "url": "https://contents.mediadecathlon.com/p2662124/k%2492a14f8e5898f58a46667fcdac0d4837/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"}
+      ],
+      "limitation": "仅确认图片链接可访问及返回 JPEG；未单独目视审图，也未确认复制到有谱站内展示的授权。"
+    },
+  "limitations": [
+    "官方 M 码胸围范围与相邻码重叠；四个地区官方页面重复同值，但这不能排除共享源数据错误，仍须品牌确认。",
+    "商品卖点称四个尺码，但选择器和建议表列五码；以选择器/尺码表保留选项并记录矛盾。",
+    "胸围和身高是官方人体选码参考，不是成衣平铺尺寸。",
+    "2024 官方 EU 符合性声明确认 8738342 / DBCK900 M 与 EU PPE Regulation 2016/425、VPski-009 和 VêtProVTT-008 对应，但未声明 EN 1621 标准、Level 1/2 或残余力数值；商品页与说明书的等级冲突仍未裁定。",
+    "英镑折算为地区价格参考，不代表中国价格；商品页未确认雪季。",
+    "商品图前五张已确认 HTTP 200 image/jpeg，网站展示授权仍未核实。"
+  ]
+}

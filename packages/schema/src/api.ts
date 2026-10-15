@@ -39,6 +39,8 @@ export const productListItemSchema = z.object({
   favoriteCount: z.number(),
   /** 综合指数（编辑分项评分按类目权重算出，计算值不落库） */
   composite: z.number().nullable(),
+  /** 编辑分项评分；用于目录卡片与离线快照，不包含社区实测数据 */
+  editorialScores: z.record(z.string(), z.number()).nullable().optional(),
   brand: brandBriefSchema,
   categorySlug: z.string(),
   /** §13 最小返回：列表只带非 nested 的标量参数 */

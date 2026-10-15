@@ -6,8 +6,8 @@ year: 2027
 title: CAPiTA The Black Snowboard Of Death Snowboard 2027 CAPiTA Snowboards | NA
 one_liner: 以全地形性能为核心的经典定向板，兼顾高速压雪、变化雪况和粉雪浮力，适合有经验的全山和自由滑手。
 price:
-  min: 5400
-  max: 5400
+  min: 4971.35
+  max: 4971.35
   currency: CNY
 specs:
   length: 159
@@ -35,8 +35,13 @@ specs:
     - { size: 165W, effectiveEdge: 1269, waistWidth: 270, noseWidth: 313, tailWidth: 312, sidecutRadii: 8.8/8.4/8.2 m, stanceWidth: 584 mm（参考）, riderWeight: 160-220 lb / 72-99 kg, bootSize: US 10+ / EU 43+ }
     - { size: 169W, effectiveEdge: 1301, waistWidth: 274, noseWidth: 318, tailWidth: 317, sidecutRadii: 9.0/8.6/8.5 m, stanceWidth: 584 mm（参考）, riderWeight: 170-230 lb / 77-104 kg, bootSize: US 10+ / EU 43+ }
   sidecutRadii: 8.4/8.0/7.8 m
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  priceCheckedAt: 2026-10-15
+  seasonEvidence: CAPiTA 北美与日本官方商品页均标注 The Black Snowboard of Death 2027；经销商 Golgoda 公布的 CAPiTA Japan 26/27 临时价目表也列出该型号，税前 JPY 107,000 加 10% 消费税后与日本官方店 JPY 117,700 一致。归档为 2026/27；商品页未直接注明完整雪季日期。
+  regionalListPrice: JPY 117700
+  priceMarket: CAPiTA 日本官方商店；美国官网同款 USD 749.95 作地区价差对照
+  priceSource: https://jp.capitasnowboarding.com/products/capita-the-black-snowboard-of-death-mens-snowboard-2027
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: CAPiTA 日本官方页面标价 JPY 117,700，按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 4,971.35，作为亚洲地区价格参考。美国官网同款标价 USD 749.95，按 EUR/USD 1.1195、EUR/CNY 7.4925 折算为 CNY 5,019.21；两地官方价接近但并不相同。本次检索未找到可核实的中国销售报价；以上均非中国售价，跨境费用、汇兑和税费影响未计。原种子 CNY 5,400 未找到可回查依据，已替换为日本官网折算参考。
 editorial_scores:
   stability: 8.8
   response: 8.7
@@ -45,7 +50,7 @@ editorial_scores:
   forgiveness: 6.4
   value: 6.8
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD03_BSOD_43ad6df8-c222-4b12-93af-d408da7f7605.jpg?v=1776978812"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/40291109baa9dd47076ff5a9ae652aaa8722de51eed89b342428aa93f0020d2c.webp"
     kind: face
     alt: CAPiTA The Black Snowboard Of Death 2027 官方产品图
     source: CAPiTA 官方产品页图片（本地演示，版权待核）

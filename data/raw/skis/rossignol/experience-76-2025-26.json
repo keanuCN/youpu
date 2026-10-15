@@ -1,0 +1,36 @@
+{
+  "brand": "Rossignol",
+  "model": "Experience 76 Xpress",
+  "seedFile": "data/skis/rossignol-experience-76-2026.yaml",
+  "capturedAt": "2026-10-14",
+  "modelSeason": "2025/26 seed attribution; official product page does not print a season label",
+  "sources": {
+    "officialProductPage": {
+      "url": "https://www.rossignol.com/us-en/experience-76-xpress-RAMFT04000152.html",
+      "productCode": "RAMFT04000",
+      "title": "EXPERIENCE 76 XPRESS | ALL MOUNTAIN | Rossignol",
+      "evidence": "Rossignol lists all six sizes, tip/waist/tail width, turn radius, and ski weight in kg/pair. Its page describes the model as an all-resort ski with Drive Tip, PEFC poplar woodcore, and cap construction."
+    },
+    "seasonCatalogAnnouncement": {
+      "url": "https://rossignol.co.jp/user_catalog2526/",
+      "evidence": "Official Rossignol Japan announcement says the 25-26 web catalog was published on 2025-06-02 and links to the official Rossignol 25-26 catalog. The catalog itself is hosted on Google Drive. This confirms an official season catalog exists but does not alone prove the Experience 76 entry's exact specs."
+    },
+    "seasonAdjacentCrossCheck": {
+      "url": "https://www.tanabesports.com/c/2008020301/2008020330/2008052457/cd92490",
+      "evidence": "2025 retailer listing describes Experience 76 + Xpress 10 and reports the same six size-specific radii, 123/76/109 mm sidecut, and ski-pair weights. It corroborates seasonal continuity, but is not treated as the primary technical source."
+    }
+  },
+  "sizeSpecs": [
+    {"sizeCm":136,"noseWidthMm":123,"waistWidthMm":76,"tailWidthMm":109,"turnRadiusM":9,"weightPerPairKg":2.8},
+    {"sizeCm":144,"noseWidthMm":123,"waistWidthMm":76,"tailWidthMm":109,"turnRadiusM":10,"weightPerPairKg":2.9},
+    {"sizeCm":152,"noseWidthMm":123,"waistWidthMm":76,"tailWidthMm":109,"turnRadiusM":12,"weightPerPairKg":3.0},
+    {"sizeCm":160,"noseWidthMm":123,"waistWidthMm":76,"tailWidthMm":109,"turnRadiusM":13,"weightPerPairKg":3.1},
+    {"sizeCm":168,"noseWidthMm":123,"waistWidthMm":76,"tailWidthMm":109,"turnRadiusM":15,"weightPerPairKg":3.2},
+    {"sizeCm":176,"noseWidthMm":123,"waistWidthMm":76,"tailWidthMm":109,"turnRadiusM":16,"weightPerPairKg":3.3}
+  ],
+  "mappingNotes": [
+    "Product-page weight is explicitly per pair; YAML stores the same measurement in grams as weightPerPair.",
+    "Official product page does not identify a model year. Target seed remains labeled 2025/26 based on the existing archive; exact season attribution remains a caveat, not an inferred technical value."
+  ],
+  "imageRights": "The official image URL is a reference only; no explicit reuse license verified."
+}

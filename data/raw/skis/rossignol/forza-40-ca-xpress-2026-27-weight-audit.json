@@ -1,0 +1,49 @@
+{
+  "brand": "Rossignol",
+  "model": "Forza 40° CA Xpress",
+  "season": "2026/27",
+  "articleNumber": "RAPPX05000",
+  "seedFile": "data/skis/rossignol-forza-40-ca-xpress-2027.yaml",
+  "checkedAt": "2026-10-15",
+  "officialProductPage": {
+    "url": "https://www.rossignol.com/de-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000.html",
+    "evidence": "Rossignol Germany labels the page NEUE KOLLEKTION FW2627, identifies product code RAPPX05000 and lists the no-bindings configuration at EUR 540. The product-dimensions table lists lengths 150/157/164/171/179 cm, 127/75/111 mm, radii 10/11/12/14/15 m, and Ski weight (kg/pair) values 1.5/1.6/1.6/1.7/1.8. The page says no bindings selected; it does not clarify why pair values are substantially lower than the retailer's per-pair table."
+  },
+  "officialSizePageCrossChecks": [
+    "https://www.rossignol.com/de-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000150.html",
+    "https://www.rossignol.com/de-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000157.html",
+    "https://www.rossignol.com/de-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000164.html",
+    "https://www.rossignol.com/de-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000179.html"
+  ],
+  "retailerWeightTable": {
+    "url": "https://www.auvieuxcampeur.fr/ski-piste-forza-40-ca-xpress-11gw-b83-blac-1.html",
+    "merchant": "Au Vieux Campeur, France",
+    "season": "2027",
+    "productConfiguration": "Forza 40° CA + XPRESS 11 GW B83 bundle",
+    "productReference": "13.801092980",
+    "evidence": "Search-indexed retailer page identifies Rossignol Forza 40° CA + XPRESS 11 GW B83, year 2027, all five lengths, exact sidecut/radius table, and weight/pair values. Page does not expose the Rossignol article number and does not state whether listed pair weight includes the binding. It showed EUR 519 and unavailable at capture; price is not used to update the seed.",
+    "sizeWeightsPerPairG": [
+      { "lengthCm": 150, "weightG": 3000 },
+      { "lengthCm": 157, "weightG": 3100 },
+      { "lengthCm": 164, "weightG": 3200 },
+      { "lengthCm": 171, "weightG": 3400 },
+      { "lengthCm": 179, "weightG": 3500 }
+    ]
+  },
+  "weightConflict": {
+    "lengthsCm": [150, 157, 164, 171, 179],
+    "officialProductPageKgPerPair": [1.5, 1.6, 1.6, 1.7, 1.8],
+    "retailerPairWeightG": [3000, 3100, 3200, 3400, 3500],
+    "caveats": [
+      "The exact-season Rossignol page labels its values kg/pair, but the amounts are about half the independent 2027 retailer's explicit pair weights.",
+      "The retailer's product name and season match, but the page does not show manufacturer article RAPPX05000 and does not state whether weights include bindings.",
+      "Rossignol 2025/26 catalogue records for the previous Forza 40 article RAOPX02 are not transferable to the 2026/27 article RAPPX05000."
+    ],
+    "decision": "Seed records the retailer's explicit pair values with per-size notes and a visible weightBasis caveat. Do not interpret them as bare-ski or binding-inclusive weight until Rossignol or a matching exact-article source resolves the discrepancy."
+  },
+  "remainingEvidenceNeeded": [
+    "Rossignol clarification of the official Ski weight (kg/pair) values",
+    "Exact RAPPX05000 source confirming whether the retailer table belongs to the same article",
+    "Confirmation whether the retailer's pair weights include XPRESS 11 GW bindings"
+  ]
+}

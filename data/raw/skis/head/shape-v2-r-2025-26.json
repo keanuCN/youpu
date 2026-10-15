@@ -1,0 +1,554 @@
+{
+  "brand": "HEAD",
+  "model": "Shape V2 R",
+  "season": "2025-26",
+  "articleNumber": "316225",
+  "retrievedAt": "2026-10-14",
+  "seedFile": "data/skis/head-shape-v2-r-2026.yaml",
+  "officialSeasonSource": {
+    "url": "https://www.eski.sk/image/document/head_workbook_2526_en.pdf",
+    "evidence": "HEAD Hardgoods Workbook 2025/26 将 Shape V2 R 与 article 316225 对应，列出 142/149/156/163/170/177 cm；170 cm 参考几何为 128/70/108 mm，半径 12.5 m。该 PDF 是 HEAD 厂商资料副本。"
+  },
+  "officialProductFeatures20261015": {
+    "url": "https://www.skiandbikes.nl/image/document/head_workbook_2526_en.pdf",
+    "articleNumber": "316225",
+    "season": "2025/26",
+    "features": {
+      "profile": "Allride Rocker",
+      "core": "Synthetic Core",
+      "construction": ["LYT Tech Construction", "Power Fiber Jacket Construction"],
+      "technology": "ERA 3.0",
+      "base": "UHM C Base black"
+    },
+    "evidence": "HEAD Hardgoods Workbook 同页按型号标题 Shape V2 R 和 article 316225 列出上述产品特征；与种子中已确认的 2025/26 货号对应。该文件为 HEAD 厂商资料的经销商托管副本。",
+    "decision": "补入与型号/雪季对应的原厂目录特征；这些材料和结构标签不补足缺失的 142/149/177 cm 几何，也不消除 170 cm 半径冲突。"
+  },
+  "officialRentalHandbookCrossCheck": {
+    "url": "https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/d1d55eee-6c7d-45e8-80f2-f29f0e059c55/HRS%20Handbook%2025-26.pdf?ver=1744650386194",
+    "evidence": "HEAD Rental Handbook 2025/26 将 Shape V2 R 与 article 316225 对应，但只列 142/149/156/163/170 cm 五档（未列 177 cm）；170 cm 参考几何仍为 128/70/108 mm，半径为 12.4 m。该资料代表租赁产品配置，区别于 Hardgoods Workbook 六档产品长度。"
+  },
+  "lengthOptionsVariance": {
+    "hardgoodsWorkbookCm": [142, 149, 156, 163, 170, 177],
+    "rentalHandbookCm": [142, 149, 156, 163, 170],
+    "decision": "种子保留 Hardgoods Workbook 明确列出的产品长度；在适用说明中指出 Rental Handbook 租赁配置只列到 170 cm。不能据此保证 177 cm 租赁库存，也不能将租赁手册缺项推断为零售款不可选。"
+  },
+  "perLengthRetailerSource": {
+    "url": "https://www.emmecisport.com/catalogo/173-sci-all-mountain/32556-sci-head-shape-v2-r-con-attacchi-pr-10-gw-316225",
+    "evidence": "同货号商品页明确逐项列出 156 cm：128-70-108 mm、10.5 m；163 cm：128-70-108 mm、11.2 m；170 cm：128-70-108 mm、12.4 m。页面没有说明商品雪季，故仅把明确列出的 156/163 数据作为逐尺码零售商规格补充，保留季节归属限制；170 cm 数值不覆盖官方 Workbook。"
+  },
+  "exactArticleVariantAvailabilityCrossCheck": {
+    "url": "https://lb.mikesport.com/products/head-shape-v2-r-ski-white-black",
+    "retrievedAt": "2026-10-15",
+    "headProductCode": "316225",
+    "selectedVariantSku": "IN234078_142",
+    "visibleVariantLengthsCm": [142, 149, 156, 163, 170],
+    "availabilityAtRetrieval": "sold out",
+    "seasonSpecifiedByMerchant": false,
+    "perLengthGeometryProvided": false,
+    "evidence": "MikeSport 页面明确显示 HEAD Product Code 316225，并提供 142/149/156/163/170 cm 变体选择；页面未给各长度逐码三围或半径，也未展示 177 cm 变体且未注明雪季。只作为精确货号的零售变体存在性旁证，不改变 Hardgoods Workbook 的六档目录长度，也不补充尺码几何。"
+  },
+  "nonExactArticleCrossCheck": {
+    "sources": [
+      {
+        "url": "https://www.snow-online.com/ski/head-shape-v2-2025.htmlp",
+        "evidence": "页面标注 Head Shape V2 2025/26，列出 142/149/156/163/170/177 cm 半径 7.9/8.9/9.9/11.0/12.5/13.3 m，三围均列为 128-70-108 mm；页面未给出 316225 货号。"
+      },
+      {
+        "url": "https://geizhals.de/head-shape-v2-performance-modell-2025-2026-v216679.html",
+        "evidence": "页面列出 Shape V2 Performance 2025/26 六个长度及同一组逐码半径，关联货号 315285，并非本档案的 316225。"
+      },
+      {
+        "url": "https://www.hc5.ru/gornye-lyzhi-head-shape-v2-krepleniya-pr-10-gw-promo-brake-85-g-2026/",
+        "modelLabel": "Head Shape V2 + PR 10 GW Promo Brake (2026)",
+        "articleNumberProvided": false,
+        "bindingVariant": "PR 10 GW; seed article 316225 is documented with PR 11 GW rental base",
+        "listedLengthsCm": [142, 149, 156, 163, 170, 177],
+        "candidatePerLengthGeometry": [
+          { "lengthCm": 142, "sidecutMm": [125, 68, 105], "radiusM": 8.7 },
+          { "lengthCm": 149, "sidecutMm": [126, 69, 106], "radiusM": 9.5 },
+          { "lengthCm": 156, "sidecutMm": [127, 69, 107], "radiusM": 10.5 },
+          { "lengthCm": 163, "sidecutMm": [128, 70, 107], "radiusM": 11.2 },
+          { "lengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.5 },
+          { "lengthCm": 177, "sidecutMm": [128, 70, 108], "radiusM": 13.3 }
+        ],
+        "evidence": "页面标注 2026、Shape V2、PR 10 GW 套装并列出六档尺寸与半径，但没有 HEAD article。其 170 cm 参考值与 316225 相同，163 cm 三围却为 128/70/107 mm，与精确货号零售规格的 128/70/108 mm 不同。该表可能对应不同地区或非 R 变体，不用于填补 316225。"
+      }
+    ],
+    "decision": "不把候选表中的 142/149/177 cm 半径并入 316225：Snow-Online 未列货号、Geizhals 关联货号 315285，HC5 的 2026 Shape V2 + PR 10 GW 页面也未列 HEAD article，且其 163 cm 三围与精确货号来源不符。相似名称、年份及 170 cm 参考行均不足以证明它们是 316225 的逐码表。"
+  },
+  "officialRegionalNearVariantAudit": {
+    "url": "https://head.ru/ski/shop/skis/discounts/CF854649-178B-30D5-CA92-E692F4F09C64/104233/",
+    "retrievedAt": "2026-10-15",
+    "season": "2025/26",
+    "modelLabel": "HEAD Shape V2 + PR 10 GW Promo",
+    "articleNumber": "31532507",
+    "lengthsCm": [142, 149, 156, 163, 170, 177],
+    "perLengthGeometry": [
+      { "lengthCm": 142, "sidecutMm": [125, 68, 105], "radiusM": 8.7 },
+      { "lengthCm": 149, "sidecutMm": [126, 69, 106], "radiusM": 9.5 },
+      { "lengthCm": 156, "sidecutMm": [127, 69, 107], "radiusM": 10.5 },
+      { "lengthCm": 163, "sidecutMm": [128, 70, 107], "radiusM": 11.2 },
+      { "lengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.5 },
+      { "lengthCm": 177, "sidecutMm": [128, 70, 108], "radiusM": null }
+    ],
+    "evidence": "HEAD 俄语区商品页直接列出 2025/26、商品名称、article 31532507、PR 10 GW Promo 固定器、六档长度与逐码几何。",
+    "exclusionReason": "目标商品是 Shape V2 R article 316225 + PR 11 GW/租赁底板；该页是无 R 的 Shape V2 + PR 10 GW Promo，货号不同。该表 163 cm 板尾宽为 107 mm，也与 316225 精确货号来源的 108 mm 不同，故不用于补 142/149/177 cm。"
+  },
+  "headRuPerformanceSkuGeometryExclusion": {
+    "url": "https://head.ru/ski/shop/skis/discounts/CF854649-178B-30D5-CA92-E692F4F09C64/104226/",
+    "checkedAt": "2026-10-15",
+    "pageProductLabel": "Shape V2 + PR 11 GW",
+    "season": "2025/26",
+    "articleNumber": "31528501",
+    "binding": "PR 11 GW BRAKE 85 [G]",
+    "lengthsCm": [142, 149, 156, 163, 170, 177],
+    "perLengthGeometry": [
+      { "lengthCm": 142, "sidecutMm": [125, 68, 105], "radiusM": 8.7 },
+      { "lengthCm": 149, "sidecutMm": [126, 69, 106], "radiusM": 9.5 },
+      { "lengthCm": 156, "sidecutMm": [127, 69, 107], "radiusM": 10.5 },
+      { "lengthCm": 163, "sidecutMm": [128, 70, 107], "radiusM": 11.2 },
+      { "lengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.5 },
+      { "lengthCm": 177, "sidecutMm": [128, 70, 108], "radiusM": 13.3 }
+    ],
+    "evidence": "HEAD 俄语区商品页明确标注 2025/26、Shape V2、货号 31528501 和 PR 11 GW，提供六档逐码板型与半径。",
+    "targetArticleNumber": "316225",
+    "decision": "不映射到 Shape V2 R。虽然页面同雪季、同系列且 170 cm 几何接近，但商品货号不同；该表 163 cm 尾宽为 107 mm，与目标 article 316225 精确货号来源的 108 mm 不同。继续保留 316225 的 142、149、177 cm 几何缺口。"
+  },
+  "regionalPriceReference": {
+    "url": "https://www.sporhit.com/urun/head-shape-v2-r-performance-baglamasiz-kayak-takimi-156",
+    "merchant": "Sporhit（土耳其）",
+    "articleAndSize": "316225/156",
+    "listedGrossPrice": 14500,
+    "listedCurrency": "TRY",
+    "priceIncludesVat": true,
+    "availabilityAtRetrieval": "缺货；页面显示到货通知",
+    "seasonSpecifiedByMerchant": false,
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "exchangeRateDate": "2026-10-13",
+    "eurTry": 55.2325,
+    "eurCny": 7.489,
+    "conversion": "14500 / 55.2325 * 7.489 = 1966.06 CNY",
+    "convertedCny": 1966.06,
+    "limitations": "仅为土耳其商家单一尺码的缺货挂牌价折算。商家未注明雪季；不含跨境运费、关税或其他费用；不代表中国售价。ECB 参考汇率仅供信息参考，不是交易汇率。"
+  },
+  "currentPolandPriceReference": {
+    "url": "https://trojansport.pl/narty-head-shape-v2-r-2026-pr-11-gw.html",
+    "merchant": "Trojan Sport（波兰）",
+    "retrievedAt": "2026-10-15",
+    "latestRecheckAt": "2026-10-15",
+    "productLabel": "Narty Head Shape V2 R 2026 + PR 11 GW",
+    "articleAndBinding": "316225#114517",
+      "selectedLengthCm": 142,
+    "listedGrossPrice": 1298.99,
+    "listedCurrency": "PLN",
+    "package": "ski + PR 11 GW binding",
+    "availabilityAtRetrieval": "复查页面显示最后几件；当前页面价史将 PLN 1,298.99 记录至 2026-10-15 并标记该日为最低价，页面同时显示最后几件；下单时仍需核库存",
+    "ecbRatesDate": "2026-10-14",
+    "plnPerEur": 4.3658,
+    "cnyPerEur": 7.4925,
+    "conversion": "1298.99 PLN / 4.3658 PLN per EUR * 7.4925 CNY per EUR = 2229.30 CNY",
+    "convertedCny": 2229.3,
+    "ecbSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "evidence": "2026-10-15 复查商品页标题为 Head Shape V2 R 2026 + PR 11 GW，商品 ID 316225#114517；商品说明称整套雪板与固定器，页面的价格历史明确显示长度 142 cm、含税价 PLN 1,298.99、最近记录日期 2026-10-15、库存最后几件。详细规格另列 PR 11 GW。该配置与 HEAD 25/26 Workbook 的 316225 + 114517 PR 11 GW 对应；记录为波兰地区 142 cm 套装参考，不能视为中国售价或裸板价格。"
+  },
+  "primaryPriceDecision20261015": {
+    "decision": "以 Poland Trojan Sport 的 316225#114517（PR 11 GW）142 cm 含税价格 CNY 2,229.30 作为商品种子主参考，替换此前 Spain 316225 + PR 10 GW 114528 的 CNY 2,097.83。选择理由是波兰页面的型号、雪板货号与 HEAD Workbook 对 316225 的 PR 11 GW 配置相符；西班牙条目是另一固定器配置，保留为跨区旁证，不并作同一套装。",
+    "currencyConversion": {
+      "sourceAmount": 1298.99,
+      "sourceCurrency": "PLN",
+      "plnPerEur": 4.3658,
+      "cnyPerEur": 7.4925,
+      "ratesDate": "2026-10-14",
+      "calculation": "1298.99 / 4.3658 * 7.4925 = 2229.30 CNY",
+      "resultCNY": 2229.3,
+      "rateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+    },
+    "limitations": "来源为波兰 142 cm 含 PR 11 GW 固定器套装；不是中国售价、裸板价格或全尺码价格承诺。页面库存提示和汇率会变化，运费及跨境费用未计。"
+  },
+  "currentSpainPriceReference": {
+    "url": "https://esqui-outlet.com/en/skis/head-shape-v2-r-amt-ski-set-316225-pr-10-gw-bindings-114528.html?ean13=&id=4057",
+    "merchant": "Esqui Outlet（西班牙）",
+    "retrievedAt": "2026-10-15",
+    "merchantSeasonExplicit": false,
+    "skiArticleNumber": "316225",
+    "bindingArticleNumber": "114528",
+    "package": "HEAD Shape V2 R AMT ski + PR 10 GW binding",
+    "listedGrossPrice": 279.99,
+    "listedCurrency": "EUR",
+    "displayedReferencePriceEUR": 450,
+    "taxIncluded": true,
+    "availabilityAtCapture": "页面显示 ADD TO CART 和 24 小时备货；尺码选择器未返回可读取选项，因此具体尺码库存未确认",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-cny.en.html",
+    "exchangeRateDate": "2026-10-14",
+    "eurToCny": 7.4925,
+    "conversion": "279.99 EUR × 7.4925 CNY/EUR = 2097.83 CNY",
+    "convertedCny": 2097.83,
+    "evidence": "商品标题同时列 HEAD 雪板货号 316225 和 PR 10 GW 固定器货号 114528；页面未明确单品雪季，显示含税促销价 EUR 279.99、参考价 EUR 450、尺码选择控件、加入购物车按钮和 24 小时备货信息。ECB 页面列 2026-10-14 EUR/CNY 7.4925；货号与 HEAD 25/26 档案相同，但商家雪季未明示。",
+    "limitations": "西班牙地区含税套装价折算，不是中国售价或裸板价格。未能读取各尺码选项及库存；实际配送、退换和付款条件需按结账页确认。固定器 114528（PR 10 GW）不同于 HEAD Workbook 对租赁底板列出的 114517（PR 11 GW），不同套装配置不能混同。"
+  },
+  "botteroExactArticleHistoricalPriceReference": {
+    "url": "https://www.botteroski.com/en/163-ski/491416-head-shape-v2-r-amt-pr-skis.html",
+    "merchant": "Bottero Ski（意大利）",
+    "retrievedAt": "2026-10-15",
+    "productLabel": "Head Shape V2 R + AMT PR Skis",
+    "reference": "316225 252",
+    "season": "Winter 2026",
+    "listedGrossPriceEUR": 190,
+    "displayedRegularPriceEUR": 380,
+    "taxIncluded": true,
+    "availabilityAtCapture": "Out-of-Stock；页面明确显示 This product is currently not available",
+    "bindingArticleNumber": null,
+    "lengthVariantAtCapture": null,
+    "ecbExchangeRateDate": "2026-10-14",
+    "eurToCny": 7.4925,
+    "convertedCny": 1423.58,
+    "evidence": "商品标题标注 Shape V2 R + AMT PR，商品数据表给出 Winter 2026、参考号 316225 252；含税挂牌价 EUR 190、常规价 EUR 380。按 ECB 2026-10-14 EUR/CNY 7.4925 折算为 CNY 1423.58。",
+    "limitations": "页面明确缺货，未列尺码或固定器货号；只作精确雪板参考号的地区历史报价旁证，不能作为现售报价、指定尺码价格、中国售价或裸板价格，也不能据此推断种子套装绑定配置。"
+  },
+  "chinaMarketplaceLeadAudit": {
+    "retrievedAt": "2026-10-15",
+    "marketplace": "京东商品列表",
+    "url": "https://www.jd.com/zuozhe/13181fca4d6bffa44a54.html",
+    "listingTitle": "海德（HEAD）25-26新款双板滑雪板男女通用新手入门套装全地域板V2/VR/JOY R套装（女款）JOY R白+65白（鞋码35）适用人群：入门",
+    "matchedVariantText": "V2R+男款80鞋套装316225+604357",
+    "articleNumberMatch": true,
+    "listedCnyPriceVisible": false,
+    "availabilityVerified": false,
+    "evidence": "京东可索引商品列表出现 V2R 与 HEAD article 316225、雪鞋 article 604357 的组合标识，构成中国渠道的精确货号套装线索；读取到的列表没有展示该变体当前人民币价格或可购状态，未将其写入商品价格。该套装价格也不能视作裸板价格。",
+    "specificItemPageFollowUp": {
+      "checkedAt": "2026-10-15",
+      "url": "https://item.jd.com/10190320076222.html",
+      "listingTitle": "海德（HEAD）新品25/26款双板滑雪板男女初中级新手入门全地域V2/EASY JOY V2 R-白蓝色-板+固 149cm",
+      "sourceListingUrl": "https://www.jd.com/book/1318ec8981773fe88ecd.html",
+      "publicListingEvidence": "京东公开预约/订购列表将该条目描述为 25/26 V2/EASY JOY V2 R 白蓝色板+固定器、149 cm；京东索引未显示人民币金额。",
+      "directPageResult": "item.jd.com 直达页面只返回浏览器兼容提示，未能读取商品货号、当前价格、库存或套装固定器型号。",
+      "decision": "作为中国渠道和尺码存在性线索留档；未能由该具体条目独立确认 Article 316225，不能据此填写价格或将该套装视为精确货号已核实。"
+    },
+    "decision": "保留为国内渠道待复核线索，不据此更改人民币价格或商品配置；后续需打开具体变体详情并核对当前价格、库存、商品季节及套装内容。"
+  },
+  "chinaMarketplaceRefresh20261015": {
+    "checkedAt": "2026-10-15",
+    "sources": [
+      {
+        "url": "https://www.jd.com/xinkuan/1318b85b45d21f4d19c4.html",
+        "marketplace": "京东 HEAD 官方旗舰店商品索引",
+        "itemUrl": "https://item.jd.com/10205299335426.html",
+        "listingTitle": "HEAD 官方旗舰 25/26 款双板滑雪板初级入门全地域 V2R/EASY JOY V2 R-白蓝色",
+        "listedVariantLengthCm": 142,
+        "exposedArticleNumber": null,
+        "capturedEvidence": "商品索引列出 142 cm 选项；点开商品详情后只返回浏览器兼容提示，不能读取当前价格、库存、SKU 或款号。"
+      },
+      {
+        "url": "https://www.jd.com/jiage/1318147a6ee49caae238.html?catID=17347&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_default",
+        "marketplace": "京东公开价格索引",
+        "matchedVariantText": "V2R+男款80鞋套装316225+604357",
+        "articleNumberMatch": true,
+        "bindingOrBootArticle": "604357（男款 80 硬度雪鞋）",
+        "currentPriceVisible": false,
+        "availabilityVerified": false,
+        "capturedEvidence": "索引可见精确板号与雪鞋货号的套装变体文字，但没有展示对应变体价格、长度、库存及结账总价。"
+      }
+    ],
+    "decision": "新增索引条目仍不能建立 316225 + 指定尺码 + 当前人民币价格/库存的完整对应关系。142 cm 的 V2R/EASY JOY V2 R 混合标题没有 article；316225+604357 条目没有价格与尺码。继续只记作渠道线索，不更新裸板或套装价格。"
+  },
+  "exactArticleSizeGeometrySearchFollowUp": {
+    "checkedAt": "2026-10-15",
+    "sources": [
+      {
+        "url": "https://www.head.com/en_FI/product/shape-v2-r-316225",
+        "evidence": "HEAD 搜索索引摘要列出 Shape V2 R 和 142/149/156/163/170/177 cm 六个长度；官方直访本轮返回 404，索引没有逐码板型或半径。"
+      },
+      {
+        "url": "https://cdn-magento2-media.head.com/wysiwyg/Rental-Technical-Manual-23-24.pdf",
+        "evidence": "HEAD 官方 2023/24 Rental Technical Manual 的 SHAPE V2 R article 为 316223，列 142/149/156/163/170 cm 及 170 cm 参考几何；货号和雪季均不同于本档案 316225 / 2025/26，且没有逐码半径，因此排除。"
+      },
+      {
+        "url": "https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/24-25%20HEAD%20RENTAL%20price%20sheet%202023-12-11.pdf?ver=1710287401497",
+        "evidence": "HEAD 2024/25 Rental Price List 标注 Shape V2 R article 31622402；长度与 170 cm 参考几何不等同于 316225 的逐码参数，排除。"
+      }
+    ],
+    "decision": "本轮未找到 316225 的 142、149、177 cm 精确逐码几何；继续保持空缺，不从 316223、31622402 或非 R 的 315285 推算。"
+  },
+  "manufacturerAndExactArticleGeometryAudit": {
+    "checkedAt": "2026-10-15",
+    "officialProductPage": {
+      "url": "https://www.head.com/en_FI/product/shape-v2-r-316225",
+      "indexedLengthsCm": [142, 149, 156, 163, 170, 177],
+      "indexedPerLengthGeometry": false,
+      "directFetchResult": "404",
+      "evidence": "HEAD 官方搜索索引结果显示 Shape V2 R 和六个可选长度，但未显示逐尺码几何；本轮直接打开同一官方 URL 返回 404。索引摘要不能作为缺失尺寸的几何来源。"
+    },
+    "exactArticleRetailerPage": {
+      "url": "https://www.intersport.de/p/head-herren-all-mountain-ski-heuni-shape-v2-r-pr-11-gw-p2271800?articleId=a203439128",
+      "manufacturerModelNumber": "31622501",
+      "listedLengthsCm": [142, 149, 156, 163, 170, 177],
+      "onlyReferenceGeometry": {
+        "lengthCm": 170,
+        "sidecutMm": [128, 70, 108],
+        "radiusM": 12.5
+      },
+      "perLengthGeometryProvided": false,
+      "evidence": "INTERSPORT 页面列出 HEAD 型号 31622501、142/149/156/163/170/177 cm 尺码，以及 170 cm 的 128/70/108 mm、R12.5 参考规格；未展示各长度独立侧切或半径。"
+    },
+    "selectedVariantWithoutGeometry": {
+      "url": "https://lb.mikesport.com/products/head-shape-v2-r-ski-white-black",
+      "headProductCode": "316225",
+      "selectedVariantSku": "IN234078_142",
+      "lengthCm": 142,
+      "priceListedUSD": 394,
+      "availabilityAtCapture": "缺货",
+      "perLengthGeometryProvided": false,
+      "evidence": "精确货号零售页在 142 cm 变体下确认产品代码 316225、商家 SKU IN234078_142 和缺货状态；没有提供该长度的侧切或半径。"
+    },
+    "decision": "本轮未找到可用于填补 142、149、177 cm 的精确逐码几何。保留现有 156/163/170 cm 三行及 170 cm 官方资料的半径差异，不使用无货号的相似 Shape V2 表推算。"
+  },
+  "exactArticleRetailerFeedRecheck": {
+    "checkedAt": "2026-10-15",
+    "sources": [
+      {
+        "url": "https://tocikusa.com/products/ws-5457_2025-2026-head-shape-v2-r-skis-men",
+        "articleNumber": "316225",
+        "season": "2025-26",
+        "listedLengthsCm": [142, 149, 156, 163, 170, 177],
+        "geometryProvided": {
+          "referenceLengthCm": 170,
+          "sidecutMm": [128, 70, 108],
+          "radiusM": 12.5
+        },
+        "evidence": "零售商品页明确标注 2025-2026 HEAD Shape V2 R、article 316225、PR 11 GW / 114517 及六档目录长度，但几何只给 170 cm 参考值。"
+      },
+      {
+        "url": "https://wintersports.co.nz/products/ws-5457_2025-2026-head-shape-v2-r-skis-men",
+        "evidence": "商品名、article 316225、六档长度和 170 cm 参考几何文本与 Tocik 页面相同；视为相同商品描述数据的复现，不作为独立逐尺码证据。"
+      }
+    ],
+    "decision": "本次重查未补出 142/149/177 cm 的三围或半径；Tocik / Winter Sports 页面未提供逐码表，不增加尺码行，也不以目录参考几何外推。"
+  },
+  "radiusConflict": {
+    "lengthCm": 170,
+    "hardgoodsWorkbookRadiusM": 12.5,
+    "rentalHandbookRadiusM": 12.4,
+    "retailerRadiusM": 12.4,
+    "rentalHandbookUrl": "https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/d1d55eee-6c7d-45e8-80f2-f29f0e059c55/HRS%20Handbook%2025-26.pdf?ver=1744650386194",
+    "decision": "保留同一货号、同一季 HEAD 两份官方资料的 12.5/12.4 m 差异；种子采用全季 Hardgoods Workbook 的 12.5 m，零售页 12.4 m 作为额外交叉记录，不把 12.4 静默覆盖进去。"
+  },
+  "sizeRows": [
+    {
+      "lengthCm": 156,
+      "sidecutMm": [128, 70, 108],
+      "radiusM": 10.5,
+      "source": "perLengthRetailerSource"
+    },
+    {
+      "lengthCm": 163,
+      "sidecutMm": [128, 70, 108],
+      "radiusM": 11.2,
+      "source": "perLengthRetailerSource"
+    },
+    {
+      "lengthCm": 170,
+      "sidecutMm": [128, 70, 108],
+      "radiusM": 12.5,
+      "source": "officialSeasonSource",
+      "conflict": "The rental handbook and retailer list 12.4 m."
+    }
+  ],
+  "exactSizeSearchRecheck20261015": {
+    "checkedAt": "2026-10-15",
+    "sources": [
+      {
+        "url": "https://tocikusa.com/products/ws-5457_2025-2026-head-shape-v2-r-skis-men",
+        "articleNumber": "316225",
+        "season": "2025-26",
+        "lengthsCm": [142, 149, 156, 163, 170, 177],
+        "geometryShown": {
+          "referenceLengthCm": 170,
+          "sidecutMm": [128, 70, 108],
+          "radiusM": 12.5
+        },
+        "evidence": "当前可访问的零售页精确列 article 316225 和六个尺码，但只列 170 cm 参考几何；没有 142、149、177 cm 的逐码数值。该零售页复用厂商目录型参数文本，不作为第二份独立逐码表。"
+      },
+      {
+        "url": "https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/d1d55eee-6c7d-45e8-80f2-f29f0e059c55/HRS%20Handbook%2025-26.pdf?ver=1744650386194",
+        "articleNumber": "316225",
+        "season": "2025-26",
+        "lengthsCm": [142, 149, 156, 163, 170],
+        "geometryShown": {
+          "referenceLengthCm": 170,
+          "sidecutMm": [128, 70, 108],
+          "radiusM": 12.4
+        },
+        "evidence": "HEAD Rental Handbook 页面版面将 SHAPE V2 R 与 article 316225 对应，只列 142/149/156/163/170 cm 租赁配置，参考几何为 170 cm、128/70/108 mm、R12.4。它没有 142、149 cm 逐码半径或三围，也未列 177 cm 租赁配置；该租赁目录不能取代六档 Hardgoods Workbook 的产品长度范围。"
+      },
+      {
+        "url": "https://www.emmecisport.com/catalogo/173-sci-all-mountain/32556-sci-head-shape-v2-r-con-attacchi-pr-10-gw-316225",
+        "articleNumber": "316225",
+        "binding": "PR 10 GW; retailer-specific bundle",
+        "geometryShownByLength": [
+          {"lengthCm": 156, "sidecutMm": [128, 70, 108], "radiusM": 10.5},
+          {"lengthCm": 163, "sidecutMm": [128, 70, 108], "radiusM": 11.2},
+          {"lengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.4}
+        ],
+        "evidence": "同货号零售页面逐项列出 156、163、170 cm；规格不含目标缺失的 142、149 或 177 cm。零售商套装配置与 HEAD Workbook 的 114517 PR 11 GW 不同，且页面没有明确雪季。"
+      }
+    ],
+    "decision": "本轮再次核对后，142、149、177 cm 的准确货号逐码几何仍无可靠公开来源。保留空缺；不从 Shape V2 315285、其它雪季 316223/31622402、相邻长度或参考尺寸反推。170 cm 同季官方 12.5/12.4 m 差异继续记录。"
+  },
+  "exactArticleSearchRecheck20261015Late": {
+    "checkedAt": "2026-10-15",
+    "newPerSizeValuesFound": false,
+    "sources": [
+      {
+        "url": "https://wintersports.co.nz/products/ws-5457_2025-2026-head-shape-v2-r-skis-men",
+        "articleNumber": "316225",
+        "season": "2025-26",
+        "lengthsCm": [142, 149, 156, 163, 170, 177],
+        "geometryShown": {"referenceLengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.5},
+        "evidence": "重查商品页确认 316225 与六档长度，但仍仅显示 170 cm 参考几何；其页面参数文案与 Tocik 同类描述重复，不作为独立逐尺码证据。"
+      },
+      {
+        "url": "https://trojansport.pl/narty-head-shape-v2-r-2026-pr-11-gw.html",
+        "articleNumber": "316225#114517",
+        "season": "2026 listing for 2025/26 model",
+        "lengthsCm": [142, 149, 156, 163, 170, 177],
+        "selectedLengthCm": 142,
+          "listedPricePLN": 1298.99,
+          "convertedPriceCNY": 2229.30,
+          "package": "ski + PR 11 GW binding; 316225#114517",
+          "availabilityAtCapture": "页面显示最后几件；该尺码几何未列",
+        "geometryShown": {"referenceLengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.5},
+          "evidence": "精确货号商品页当前选择 142 cm，页面显示含税价 PLN 1,298.99 与最后几件库存，但规格栏仍只列 170 cm 参考板型和半径；页面未提供其它长度逐码几何。"
+      },
+      {
+        "url": "https://lb.mikesport.com/products/head-shape-v2-r-ski-white-black",
+        "articleNumber": "316225",
+        "season": "not stated",
+        "lengthCm": 142,
+        "geometryShown": null,
+        "evidence": "商品变体明确为 142 cm、货号 316225，但页面显示缺货且无该尺码三围或半径。"
+      },
+      {
+        "url": "https://www.outdoorxl.com/head-shape-v2-r-503333.html",
+        "articleNumber": null,
+        "season": "24/25",
+        "lengthsCm": [142, 149, 177],
+        "geometryShown": {"referenceLengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.5},
+        "evidence": "虽有多档长度和 170 cm 参考规格，但页标旧季且无 316225 货号匹配；排除作为 2025/26 逐尺码数据来源。"
+      }
+    ],
+    "decision": "新增检查没有找到 142、149、177 cm 的逐码三围或半径。维持缺口，不从 170 cm 参考值、旧季同名商品或邻近尺码推算。"
+  },
+  "exactArticleGeometrySearchRecheck20261016": {
+    "checkedAt": "2026-10-16",
+    "newPerLengthGeometryFound": false,
+    "149cmMarketplaceCandidate": {
+      "url": "https://www.decathlon.it/p/mp/head-shape-v2-pr-10-white-blue/74fe0aa2-06f5-4d70-872d-ca7476f5c018/c1c5c4",
+      "marketplaceSeller": "Sports Gràcia（Decathlon marketplace 合作商）",
+      "listedLengthCm": 149,
+      "ean": "198772204730",
+      "modelTitle": "HEAD Shape V2 + PR 10 - White/Blue",
+      "descriptionNamesRVariant": true,
+      "displayedPriceEUR": 400,
+      "convertedPriceCNY": 2997.00,
+      "crossMarketPriceChecks": [
+        {"market": "Italy", "priceEUR": 400.00, "url": "https://www.decathlon.it/p/mp/head-shape-v2-pr-10-white-blue/74fe0aa2-06f5-4d70-872d-ca7476f5c018/c1c5c4"},
+        {"market": "Germany", "priceEUR": 399.99, "url": "https://www.decathlon.de/p/mp/ski-snowboard-unisex-head-shape-v2-pr-10-white-blue/74fe0aa2-06f5-4d70-872d-ca7476f5c018/c1c5c4"}
+      ],
+      "conversion": "400 EUR × 7.4925 CNY/EUR = 2,997.00 CNY",
+      "exchangeRateDate": "2026-10-14",
+      "ecbSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+      "article316225Shown": false,
+      "merchantSeasonConfirmed": false,
+      "eanMappingRecheck20261016": "精确检索 EAN 198772204730 只返回同一 Decathlon 合作商商品在意大利/德国等区域页面；没有找到 HEAD 或其他零售商来源将 EAN 映射到 article 316225。",
+      "geometryShown": null,
+      "evidence": "页面明确 149 cm、EAN 198772204730、EUR 400、合作卖家 Sports Gràcia；描述称 Shape V2 R + PR 10 GW，但商品标题未含 R、未显示 HEAD article 或雪季，也没有 149 cm 三围/半径。",
+      "decision": "仅作为 149 cm 商品变体和地区价格候选；EAN 与 article 316225 的映射及雪季未证实，不合并进精确 316225 价格或几何数据。"
+    },
+    "149cmOlderModelListing": {
+      "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/head-shape-v2-r-head-pr-11-gw-bindung-laengenwahl-mod-2025-neuware-1602391800/",
+      "modelLabel": "HEAD Shape V2 R + PR 11 GW, Model 2025",
+      "listedLengthsCm": [149, 156, 163, 170],
+      "articleNumberShown": false,
+      "geometryShown": {"referenceLengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.5},
+      "evidence": "商家列出 149 cm 可选，并给 170 cm 参考几何；未列每个长度的几何，且没有 316225 article 映射。",
+      "decision": "不将其视为 2025/26 精确货号逐码尺寸来源。"
+    },
+    "177cmExactListingRecheck": {
+      "url": "https://trojansport.pl/narty-head-shape-v2-r-2026-pr-11-gw.html",
+      "articleAndBinding": "316225#114517",
+      "listedLengthCm": 177,
+      "geometryShown": {"referenceLengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.5},
+      "evidence": "商品规格列出 177 cm 长度，但仅给 170 cm 参考板型和半径。",
+      "decision": "确认该套装列表有 177 cm 选项；不把 170 cm 参考几何复制到 177 cm。"
+    },
+    "officialManufacturerProductPageRecheck": {
+      "url": "https://www.head.com/en_FI/product/shape-v2-r-316225",
+      "articleNumber": "316225",
+      "listedLengthsCm": [142, 149, 156, 163, 170, 177],
+      "perLengthGeometryShown": false,
+      "evidence": "HEAD 官方 Shape V2 R 商品页显示商品名称及六个长度选项，但页面索引未提供逐尺码三围或半径。",
+      "decision": "用于确认 316225 的商品身份和长度目录，不用于填充逐尺码几何。"
+    },
+    "excluded149cmShapeV2GeometryCandidate": {
+      "url": "https://www.snow-online.com/ski/head-shape-v2-2025.htmlp",
+      "season": "2025/26",
+      "pageModelLabel": "Head Shape V2",
+      "listed149cmGeometry": {"sidecutMm": [128, 70, 108], "radiusM": 8.9},
+      "articleNumberShown": false,
+      "evidence": "页面列出 149 cm 的 128/70/108 mm、8.90 m，并标注 2025/26 Shape V2；没有显示 HEAD article 316225，页面型号也未标 R。",
+      "decision": "作为同系列、同雪季候选信息留档；货号和 R 变体均未匹配，不并入 Shape V2 R 的逐尺码表。"
+    },
+    "decision": "HEAD 官方商品页复核只确认 316225 的六个长度，不提供逐尺码几何。仍无 142、149、177 cm 的精确 316225 逐尺码三围/半径来源；Snow-Online 149 cm Shape V2 参数未标 R 或 article，继续排除。149 cm EUR 400 变体因 article/雪季未映射，也不用于种子售价。"
+  },
+  "perSizeGeometryRecheck20261015": {
+    "checkedAt": "2026-10-15",
+    "sources": [
+      {
+        "url": "https://trojansport.pl/narty-head-shape-v2-r-2026-pr-11-gw.html",
+        "productId": "316225#114517",
+        "listedLengthsCm": [142, 149, 156, 163, 170, 177],
+        "geometryShown": { "referenceLengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.5 },
+        "evidence": "当前商品规格重申六个长度及 170 cm 参考几何；142 cm 价格历史和变体选择不附带该长度专属三围或半径。"
+      },
+      {
+        "url": "https://tocikusa.com/products/ws-5457_2025-2026-head-shape-v2-r-skis-men",
+        "productArticleNumber": "316225",
+        "geometryShown": { "referenceLengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.5 },
+        "evidence": "同货号 25/26 页面列出长度和 170 cm 参考值，没有缺失三个长度的逐码表。"
+      },
+      {
+        "url": "https://wintersports.co.nz/products/ws-5457_2025-2026-head-shape-v2-r-skis-men",
+        "productArticleNumber": "316225",
+        "geometryShown": { "referenceLengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.5 },
+        "evidence": "内容与 TociK 商品资料一致，只复述 170 cm 参考规格，不作为独立逐码数据来源。"
+      }
+    ],
+    "decision": "本轮未找到 142、149、177 cm 的精确逐码三围或半径。保留现有 156/163 cm 零售规格、170 cm 官方参考规格及官方手册半径差异，不根据参考长度或同名非精确货号商品推算。"
+  },
+  "remainingUnknowns": [
+    "142, 149 and 177 cm still lack an exact-article per-length geometry source. Searches of the HEAD 316225 page and older rental manuals found only length options/reference geometry or different articles (316223, 31622402); similar Shape V2 article 315285 data remains excluded.",
+    "The retailer page does not identify the season, although the article matches the 2025/26 workbook model.",
+    "The exact 170 cm radius differs by 0.1 m across same-season manufacturer documents and the retailer page.",
+    "No verifiable China-market CNY offer for article 316225 was found. JD has 25/26 V2 R bundle listing leads, but the specific page did not expose an article match, price or stock; the recorded TRY conversion is a single-size, out-of-stock regional reference with unspecified season."
+  ],
+  "italianRetailPriceCrossCheck20261015": {
+    "source": "https://www.emmecisport.com/catalogo/173-sci-all-mountain/32556-sci-head-shape-v2-r-con-attacchi-pr-10-gw-316225",
+    "retailerCode": "323876",
+    "articleNumberInTitle": "316225",
+    "productTitle": "HEAD Shape V2 R con attacchi PR 10 GW",
+    "bindingConfiguration": "PR 10 GW; binding article number not shown",
+    "listedPrice": {"listEUR": 400, "discountPercent": 25, "saleEUR": 299},
+    "convertedReferenceCNY": 2240.26,
+    "conversion": "EUR 299 × ECB 2026-10-14 EUR/CNY 7.4925 = CNY 2240.26",
+    "fxSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html",
+    "geometryShown": [
+      {"lengthCm": 156, "sidecutMm": [128, 70, 108], "radiusM": 10.5},
+      {"lengthCm": 163, "sidecutMm": [128, 70, 108], "radiusM": 11.2},
+      {"lengthCm": 170, "sidecutMm": [128, 70, 108], "radiusM": 12.4}
+    ],
+    "availabilityStatus": "页面只有商品咨询表单，没有加入购物车/可选尺寸/库存控件；不作当前可购判断。",
+    "seasonEvidence": "商品页没有标注雪季；article 316225 与 HEAD 2025/26 Workbook 的映射能确认型号，但页面本身不提供季节或固定器货号。",
+    "decision": "保存为同 article 的意大利地区价格快照，作为不同固定器配置的地区价格快照保留；当前种子主价采用 Trojan Sport 的 316225#114517 PR 11 GW 套装。页面明确配置 PR 10 GW，但未给固定器货号、税费口径、季节或可购买状态；CNY 2240.26 仅为地区折算参考，非中国售价。"
+  }
+}
+

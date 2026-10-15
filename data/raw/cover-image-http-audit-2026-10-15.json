@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-15",
+  "scope": "data/ 下单板、固定器、雪鞋、双板、滑雪服装与滑雪护具 240 个 YAML 种子的首张封面图 URL。",
+  "method": "对每个已有封面 URL 发起 HTTP HEAD 并跟随重定向；需要响应状态为 200 且 Content-Type 为 image/*。Salomon Assassin 的 Node fetch 曾一次性失败，随后由 PowerShell 连续三次复核为 HTTP 200，Content-Type image/jpeg，计为可访问。",
+  "summary": {
+    "seedFiles": 240,
+    "coverUrlsPresent": 239,
+    "http200ImageResponses": 239,
+    "missingCoverUrl": 1
+  },
+  "byCategory": {
+    "snowboard": {"seedFiles": 77, "http200ImageResponses": 77},
+    "snowboard-binding": {"seedFiles": 63, "http200ImageResponses": 62},
+    "snowboard-boot": {"seedFiles": 40, "http200ImageResponses": 40},
+    "skis": {"seedFiles": 44, "http200ImageResponses": 44},
+    "skiing-apparel": {"seedFiles": 10, "http200ImageResponses": 10},
+    "ski-protection": {"seedFiles": 6, "http200ImageResponses": 6}
+  },
+  "missingCover": {
+    "slug": "cosone-step-on-binding-2026",
+    "file": "data/snowboard-binding/cosone-step-on-binding-2026.yaml",
+    "status": "draft",
+    "decision": "无可核对的型号详情页或可访问官方替代图；保持空图，不借用其他产品图片。"
+  },
+  "limitations": [
+    "HEAD 可访问状态不保证浏览器 GET、解码、尺寸或后续可用性；外部 CDN 内容可能变化。",
+    "本次只核对首张封面图，不逐一核对图库中的其他图片。",
+    "HTTP 可访问不代表图片获得本站展示授权；各图片授权状态仍需单独确认。"
+  ]
+}

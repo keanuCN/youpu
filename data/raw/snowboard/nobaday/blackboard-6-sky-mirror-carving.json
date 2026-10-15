@@ -1,0 +1,31 @@
+{
+  "brand": "NOBADAY",
+  "model": "Blackboard 6.0 Sky Mirror Carving Snowboard",
+  "capturedAt": "2026-10-15",
+  "source": "https://nobaday.com/products/blackboard-6-sky-mirror-carving-snowboard",
+  "market": "NOBADAY US official store",
+  "listedPrice": { "amount": 649, "currency": "USD" },
+  "sizes": ["147", "152", "155", "156W", "159", "161W", "163W"],
+  "shape": "Directional",
+  "profile": "FLAT-OUT-CAMBER",
+  "flexClaims": ["6/10 in overview prose", "7 in specification block"],
+  "brandStyleRatings": { "allMountain": 6, "carving": 9, "powder": 5, "groundTrick": 4, "park": 8 },
+  "construction": ["ICP2115 high-gloss mirror topsheet", "800g biaxial fiberglass", "2 X-shaped 25mm carbon stringers", "Poplar and beech wood core", "IS7500 sintered graphite base"],
+  "sizeGuide": [
+    { "size": "147", "effectiveLengthMm": 1470, "noseWidthMm": 283, "waistWidthMm": 240, "tailWidthMm": 278, "bindingSize": "M" },
+    { "size": "152", "effectiveLengthMm": 1520, "noseWidthMm": 290, "waistWidthMm": 248, "tailWidthMm": 285, "bindingSize": "M" },
+    { "size": "155", "effectiveLengthMm": 1540, "noseWidthMm": 293, "waistWidthMm": 250, "tailWidthMm": 288, "bindingSize": "M/L" },
+    { "size": "156W", "effectiveLengthMm": 1560, "noseWidthMm": 303, "waistWidthMm": 260, "tailWidthMm": 298, "bindingSize": "M/L" },
+    { "size": "159", "effectiveLengthMm": 1580, "noseWidthMm": 295, "waistWidthMm": 252, "tailWidthMm": 288, "bindingSize": "M/L" },
+    { "size": "161W", "effectiveLengthMm": 1600, "noseWidthMm": 304, "waistWidthMm": 262, "tailWidthMm": 297, "bindingSize": "M/L" },
+    { "size": "163W", "effectiveLengthMm": 1620, "noseWidthMm": 303, "waistWidthMm": 256, "tailWidthMm": 288, "bindingSize": "M/L" }
+  ],
+  "convertedReference": {
+    "amount": 4343.58,
+    "currency": "CNY",
+    "method": "USD 649 / EUR-USD 1.1195 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html",
+    "limitations": ["Reference conversion only, not a China retail or transaction price.", "Taxes, international shipping and import charges are excluded.", "The source uses the term Effective Length; it does not provide effective edge or sidecut radius.", "Official page gives conflicting flex values in separate sections."]
+  }
+}

@@ -10,6 +10,7 @@ import type { AdminSessionAccount } from './admin-session';
 
 const configuredBase = process.env.NEXT_PUBLIC_API_BASE ?? 'http://localhost:3001';
 export const API_BASE = configuredBase.replace(/\/$/, '');
+const API_REQUEST_TIMEOUT_MS = 12_000;
 
 export interface AdminSessionResponse {
   accessToken: string;
@@ -355,15 +356,23 @@ async function requestJson<T>(url: string, options: RequestOptions = {}): Promis
   if (options.body !== undefined && multipartBody === undefined) headers['Content-Type'] = 'application/json';
 
   let response: Response;
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), API_REQUEST_TIMEOUT_MS);
   try {
     response = await fetch(url, {
       method: options.method ?? 'GET',
       headers,
       body: requestBody,
       cache: 'no-store',
+      signal: controller.signal,
     });
   } catch (error) {
+    if (controller.signal.aborted) {
+      throw new AdminApiError(`API 请求超时（${API_REQUEST_TIMEOUT_MS / 1000} 秒）：${url}`, 408, error);
+    }
     throw new AdminApiError(`无法连接 API：${API_BASE}`, 0, error);
+  } finally {
+    clearTimeout(timeout);
   }
 
   const text = await response.text();

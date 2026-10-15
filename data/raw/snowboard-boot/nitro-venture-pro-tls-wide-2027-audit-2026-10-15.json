@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-15",
+  "model": "Nitro Venture Pro TLS Wide",
+  "season": "2026/27",
+  "officialProductSource": "https://www.nitrosnowboards.com/products/venture-pro-tls-wide-boots",
+  "seasonCollectionSource": "https://www.nitrosnowboards.com/collections/boots-26-27",
+  "representativeVariantSku": "848712-001-250",
+  "publishedSizeRange": {
+    "usMen": "7-14",
+    "mondopointCm": "25.0-32.0",
+    "eu": "38 2/3-48",
+    "ukMen": "6-13",
+    "dropdownOptionsObserved": ["25", "25.5", "26", "26.5", "27", "27.5", "28", "28.5", "29", "29.5", "30", "30.5", "31", "31.5", "32"]
+  },
+  "fitEvidence": {
+    "manufacturerStatement": "Nitro says the Wide version adds comfort through extra room in the forefoot while retaining supportive feel, all-mountain response, and durability.",
+    "manufacturerComparativeWidthStatement": {
+      "source": "https://www.nitrosnowboards.com/de/collections/all-26-27/products/venture-pro-tls-wide-boots?variant=53154707210571",
+      "observedVariantSku": "848712-001-250",
+      "originalStatement": "Die Wide Version bietet eine um 4mm breitere Passform.",
+      "normalizedMeaning": "Nitro states the Wide fit is 4 mm wider; the same exact 26/27 product page says the extra room is in the forefoot.",
+      "limitation": "Manufacturer does not specify whether 4 mm describes shell width, liner width, or another fit measurement; it is not a per-size last measurement or absolute last width."
+    },
+    "regularVariant": "Venture Pro TLS 2027, model family 848713; the standard product record links to this Wide sibling.",
+    "unknown": ["absolute last width in millimeters", "per-size regular-to-wide width delta", "separate shell and liner width changes", "instep volume"]
+  },
+  "price": {
+    "market": "Nitro European official store, 2026/27 boots collection",
+    "eur": 399.9,
+    "ecbDate": "2026-10-14",
+    "cnyPerEur": 7.4925,
+    "convertedCny": 2996.25,
+    "source": "https://www.nitrosnowboards.com/collections/boots-26-27",
+    "limit": "Regional official reference only; not a China price. Tax, shipping, and import costs are excluded."
+  },
+  "regularSiblingPriceCrosscheck": {
+    "model": "Nitro Venture Pro TLS 2027",
+    "representativeVariantSku": "848713-004-250",
+    "eur": 399.9,
+    "sameCollectionSource": "https://www.nitrosnowboards.com/collections/boots-26-27",
+    "ecbDate": "2026-10-14",
+    "cnyPerEur": 7.4925,
+    "convertedCny": 2996.25,
+    "decision": "Both official 26/27 Venture Pro TLS and Wide listings show EUR 399.90; the regular seed was refreshed to the same dated exchange rate for like-for-like comparison."
+  },
+  "image": {
+    "url": "https://www.nitrosnowboards.com/cdn/shop/files/848712-001_Venture-Pro-TLS-Wide_Black_Product-1.jpg?v=1756087613&width=1587",
+    "httpHead": 200,
+    "source": "Nitro product image 848712-001"
+  },
+  "decision": "Add a separate Wide model seed because Nitro sells it as an official distinct model variant. Record Nitro's 4 mm comparative fit statement and forefoot scope, but do not reinterpret it as a shell/liner measurement or per-size last width. Do not infer inventory for every size from the size dropdown."
+}

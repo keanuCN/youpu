@@ -5,6 +5,10 @@ model: BM45 MAX Down Ski Jacket Men's
 year: 2026
 title: Kailas BM45 MAX Down Ski Jacket Men's 95g
 one_liner: 常规版男款，40D 三层 GORE-TEX 面料，填充 95g 800FP 羽绒。
+price:
+  min: 6158.28
+  max: 6158.28
+  currency: CNY
 specs:
   fit: athletic-y-cut
   recco: true
@@ -16,12 +20,67 @@ specs:
   construction: 3L
   skiPassPocket: true
   helmetCompatibleHood: true
+  recommendedUse: 雪道滑行 / 极寒保暖（KAILAS 官方商品页推荐用途）
+  availableSizes: [ S, M, L ]
+  sizeGuide: KAILAS 美国官网当前列 S/M/L，未展示本款尺码表入口、人体围度或成衣尺寸。品牌通用指南称装备采用 athletic / technical cut、各地区尺码标准可能不同，并建议严格按图表测量选码；但该指南只列男女鞋、手套和袜子表，没有服装图表，不能据此换算 KG2531144。京东公开索引另出现同款号赤缇红 XXS 变体，但未给身材数据、变体价或可下单库存；中外尺码标签不能直接换算。当前 availableSizes 仅表示美国官网所列尺码。
+  styleCode: KG2531144
+  seasonEvidence: 当前官方页说明 95g 800FP、Y-Cut 常规版和 40D 三层 GORE-TEX，但未标注雪季；2026 年份暂作为档案标签，年款待核。
+  priceCheckedAt: 2026-10-15
+  officialPrice: USD 920.00
+  priceMarket: Kailas 美国官方商店；货号 KG2531144
+  priceSource: https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens
+  priceStatus: 2026-10-15 复核美国官方同货号标价 USD 920，按 ECB 2026-10-13 交叉汇率折算 CNY 6158.28，仅作美国地区参考。京东检索页找到精确款色尺码商品（商品 ID 10221071731160，KG2531144 赤缇红 S），但详情只返回浏览器兼容提示，未能读取人民币金额、卖家和当前可售状态；中国售价仍未核实。海外税费与配送另计；页面未确认本档案雪季。
 images:
-  - url: "https://kailasgear.com/cdn/shop/files/KG2531144_-2.webp?v=1786155291&width=1090"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/541e235efa6bb728e7f4fd1360ac5b69486f9c0d2ff5fc0df6c515b27ce170ba.webp"
     kind: face
     alt: KAILAS BM45 MAX 男款 95g 800FP 羽绒滑雪夹克
     source: KAILAS 官网商品图；展示授权状态待核
     sort_order: 0
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/bf05e031f790bde2fc067762b4166972594632b7f8ede2457f62a8e0c63f9ab6.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 男款 95g 羽绒滑雪夹克商品图 2
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 1
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/f494c89f3e0c10b753ef7f926effb20330b54c4ce245bc95a99cf23490505fbd.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 男款 95g 羽绒滑雪夹克商品图 3
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 2
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/a6ed296cb752447e84e647858eae2db88941b8af079a9bac0ab08d3882b2d4b8.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 男款 95g 羽绒滑雪夹克商品图 4
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 3
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/918f72198a63fe66e9c2d8cc3839b75090184e9d275ced14f311a1060cb05aad.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 男款 95g 羽绒滑雪夹克商品图 5
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 4
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ce01011a46778fd6714c136a432ec9fc2695ec13698c01a10675861192a680ed.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 男款 95g 羽绒滑雪夹克商品图 6
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 5
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/25b549c60c09ac7cec64a9700180cf6d105b992100c7995b8a62c9664913221c.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 男款 95g 羽绒滑雪夹克商品图 7
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 6
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ea160dca36bee00f17c6fa579c0b79586026fbbb3369ab595f4aa9093f9a4ac2.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 男款 95g 羽绒滑雪夹克商品图 8
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 7
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/f6c3b58ad1f892a0ca917ef93a9a0478f4686e5088d49d5c762da580e9046104.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 男款 95g 羽绒滑雪夹克商品图 9
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 8
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/9b3bd4c72a3cf0532cc147e9e79db5ec8b2f7cd77ef3f4be04451957f7417604.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 男款 95g 羽绒滑雪夹克商品图 10
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 9
 data_source:
   kind: official
   origin_url: https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens

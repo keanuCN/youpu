@@ -1,0 +1,38 @@
+{
+  "product": "Nitro Venture Step On TLS",
+  "slug": "nitro-venture-step-on-tls-2027",
+  "checkedAt": "2026-10-15",
+  "seasonDecision": "2026/27（2027）目录款",
+  "evidence": [
+    {
+      "sourceType": "manufacturer",
+      "url": "https://www.nitrosnowboards.com/collections/boots-26-27",
+      "observation": "Nitro 官方 2026/27 雪鞋目录列出 Venture Step On TLS；目录展示 EUR 489.90。",
+      "supports": "该同名型号属于 Nitro 当前 2026/27 目录。"
+    },
+    {
+      "sourceType": "manufacturer",
+      "url": "https://www.nitrosnowboards.com/collections/step-on-boots-26-27",
+      "observation": "Nitro 官方 Step On 雪鞋 2026/27 集合列出 Venture Step On TLS，挂牌 EUR 489.90。",
+      "supports": "交叉确认该型号属于 2026/27 Step On 分类目录。"
+    },
+    {
+      "sourceType": "manufacturer",
+      "url": "https://www.nitrosnowboards.com/cs/collections/boots-26-27/products/venture-step-on-tls-boots?variant=53154713567563",
+      "observation": "同名产品详情页从 boots-26-27 集合打开，列出男款 US 7–14、Mondopoint 25–32、EU 38 2/3–48、UK 6–13。",
+      "supports": "确认同名产品详情和目录关联；尺码信息仍以品牌页为准。"
+    },
+    {
+      "sourceType": "dealerManual",
+      "url": "https://golgoda.com/PDF/25-26%20NITRO_compressed.pdf",
+      "observation": "Nitro 2025/26 经销商手册也列出 Venture Step On TLS。",
+      "supports": "表明该型号在前一雪季已存在；不能把 2027 描述成首发年。"
+    }
+  ],
+  "limits": [
+    "官方目录将产品置于 2026/27 集合中，但产品标题本身未印出 2027。",
+    "季节结论依据官方目录上下文，不代表每个颜色或尺码版本都有独立年份标记。",
+    "EUR 489.90 为欧洲地区价格；CNY 3,668.86 是按 ECB 2026-10-13 EUR/CNY 7.4890 换算的参考价，不是中国售价。",
+    "经销商手册是次级来源，只用于证明前季也存在，不覆盖官方目录对当前雪季的归类。"
+  ]
+}

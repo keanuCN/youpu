@@ -6,8 +6,8 @@ year: 2027
 title: CAPiTA Mega Death Snowboard 2027 CAPiTA Snowboards | NA
 one_liner: 面向高阶滑手的轻量高性能自由滑板，在高速度、硬雪和深雪中追求更强的支撑与响应，价格和使用门槛都较高。
 price:
-  min: 8640
-  max: 8640
+  min: 6969.18
+  max: 6969.18
   currency: CNY
 specs:
   length: 159
@@ -35,8 +35,13 @@ specs:
     - { size: 165W, effectiveEdge: 1269, waistWidth: 270, noseWidth: 313, tailWidth: 312, sidecutRadii: 8.8/8.4/8.2 m, stanceWidth: 584 mm（参考）, riderWeight: 160-220 lb / 72-99 kg, bootSize: M 10+ }
     - { size: 169W, effectiveEdge: 1301, waistWidth: 274, noseWidth: 318, tailWidth: 317, sidecutRadii: 9.0/8.6/8.5 m, stanceWidth: 584 mm（参考）, riderWeight: 170-230 lb / 77-104 kg, bootSize: M 10+ }
   sidecutRadii: 8.4/8.0/7.8 m
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  priceCheckedAt: 2026-10-15
+  seasonEvidence: CAPiTA 北美与日本官方商品页均以 2027 为商品年份；CAPiTA Japan 对应页面所列型号亦出现在发布为 2026/27 的日本价目表中，因此归档为 2026/27（2027 款）。商品页标题本身未写完整雪季日期。
+  regionalListPrice: JPY 165000
+  priceMarket: CAPiTA 日本官方商店；美国官网同款 USD 1,199.95 作地区价差对照
+  priceSource: https://jp.capitasnowboarding.com/products/capita-mega-death-mens-snowboard-2027
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: CAPiTA 日本官方页面标价 JPY 165,000，按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 6,969.18，作为亚洲地区价格参考。美国官网同款标价 USD 1,199.95，按 EUR/USD 1.1195、EUR/CNY 7.4925 折算为 CNY 8,030.93，说明地区定价有明显差异。本次检索未找到可核实的中国销售报价；以上均非中国售价，跨境费用、汇兑和税费影响未计。原种子 CNY 8,640 未找到可回查依据，已替换为日本官网折算参考。
 editorial_scores:
   stability: 9.0
   response: 9.2
@@ -45,7 +50,7 @@ editorial_scores:
   forgiveness: 5.8
   value: 5.9
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD01-MEGA-DEATH-159_1.png?v=1777402409&width=1024"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/6e914df1bdd38be9ce8230cb27d7f3a1af4b608ba980defb64b6c08d4ae50eed.webp"
     kind: face
     alt: CAPiTA Mega Death 2027 官方产品图
     source: CAPiTA 官方产品页图片（本地演示，版权待核）

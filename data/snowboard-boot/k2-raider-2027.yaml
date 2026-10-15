@@ -5,6 +5,10 @@ model: "Raider"
 year: 2027
 title: "K2 Raider 2027"
 one_liner: "单 BOA 外壳闭合搭配 Fast-In 内靴系带，面向入门与进阶滑手。"
+price:
+  min: 1873.92
+  max: 1873.92
+  currency: CNY
 specs:
   lacingSystem: "单区 H5 Coiler BOA + Fast-In 内靴系带"
   flex: "官方页面仅以 Playful–Precise 视觉轴展示脚感，未给出单一硬度值"
@@ -41,13 +45,16 @@ specs:
   fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。
   heatMolding: 官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。
   compatibilitySources: https://k2snow.com/en-us/p/raider-mens-snowboard-boots-kb261667?color=sand
-  priceCheckedAt: 2026-10-12
+  priceCheckedAt: 2026-10-14
   officialPrice: USD 279.95
-  priceMarket: 原币 USD；来源商店 k2snow.com
+  regionalListPrice: USD 279.95
+  priceMarket: K2 美国官方商店；2027 男款商品页
   priceSource: https://k2snow.com/en-us/p/raider-mens-snowboard-boots-kb261667
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  seasonEvidence: K2 美国官方商品页标题为 K2 Raider Men's Snowboard Boots 2027；价格与型号直接对应。
+  priceStatus: 2026-10-14 K2 美国官方 2027 商品页标价 USD 279.95，按 ECB 2026-10-13 EUR/USD 1.1188、EUR/CNY 7.4890 折算为 CNY 1,873.92。仅为美国官方店折算参考，不是中国售价；汇率仅供参考，税费、配送及进口费用未计。
 images:
-  - url: "https://cdn.media.amplience.net/s/k2/k2_2627_raider_KB261667?w=1200&qlt=90&fmt=auto"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/5114dd145b6a2bd27f15aa29e007c957fbd24b37a5400ae71fb23870735dd525.webp"
     kind: face
     alt: K2 Raider 2027 官方雪鞋商品图
     source: K2 官方商品页（图片使用授权待核）
@@ -55,4 +62,11 @@ images:
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/raider-mens-snowboard-boots-kb261667?color=sand
+# 编辑暂估，非社区实测；评分口径见 docs/单板雪鞋编辑评分口径-2026-10-15.md
+editorial_scores:
+  fit: 7.7
+  support: 7.3
+  warmth: 8.2
+  convenience: 8.1
+  value: 5.0
 status: published

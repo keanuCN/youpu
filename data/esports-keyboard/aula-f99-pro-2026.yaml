@@ -4,6 +4,10 @@ brand: aula
 model: AULA F99 Pro
 year: 2026
 title: 96% Gasket-Mounted Triple-Mode Mechanical Keyboard with Knob – Aula Gear
+price:
+  min: 339
+  max: 359
+  currency: CNY
 specs:
   keyboardType: mechanical
   mounting: Gasket
@@ -15,6 +19,8 @@ specs:
     - bluetooth
   backlight: 南向 RGB 背光
   driver: AULA Driver
+  priceSource: https://detail.zol.com.cn/keyboard/aula/s3229/pic_4.html
+  priceStatus: 中关村在线于 2026-10-15 展示京东 F99 Pro 不同配色与轴体报价 CNY 339–359；具体变体、优惠和库存以商品页为准。
   hotSwap: true
   batteryCapacity: 8000
 images:

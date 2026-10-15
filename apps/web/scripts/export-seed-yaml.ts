@@ -58,7 +58,7 @@ function toSeed(g: GearItem, index: number) {
   // 原型的 specs 把「官方参考价 / 年款」也当作参数行，本模型中它们是产品列，导出时剔除
   const images = g.gallery.filter((shot) => isAllowedImageUrl(shot.url)).map((shot, i) => {
     const kind = SHOT_KIND.find((k) => shot.label.includes(k.match))?.kind ?? 'side';
-    return { url: shot.url, kind, alt: `${g.brand} ${g.model} ${shot.label}`, source: '原型内容包素材（来源待核验）', sort_order: i };
+    return { url: shot.url, kind, alt: `${g.brand} ${g.model} ${shot.label}`, source: shot.source ?? '原型内容包素材（来源待核验）', sort_order: i };
   });
 
   return {
@@ -72,6 +72,7 @@ function toSeed(g: GearItem, index: number) {
     one_liner: g.analysis.verdict.slice(0, 200),
     price: { min: g.price, max: g.price, currency: 'CNY' },
     specs: toSeedSpecs(g.specs, g.scenes, g.sizeSpecs),
+    ...(g.dataSource ? { data_source: { kind: g.dataSource.kind, origin_url: g.dataSource.originUrl } } : {}),
     // 编辑分项评分独立成列（维度键与 rating_dimensions 对齐）
     editorial_scores: {
       stability: g.scores.stability ?? null,
@@ -102,7 +103,7 @@ function main(): void {
     const { _source_index: _drop, ...payload } = seed;
     const header = [
       `# 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）`,
-      `# 原型 id：${gear.id} · 参数未经官网逐项校对，转入正式发布前需人工核对`,
+      `# 原型 id：${gear.id} · ${payload.slug === 'jones-mountain-twin-2026' ? 'J.26 官方索引保留型号与尺码表；日本官方 HASCO 25/26 页面提供日元地区价折算参考；中国售价、逐码库存、评分边界、保修和图片授权仍待复核' : payload.slug === 'korua-shapes-cafe-racer-2026' ? '品牌不按雪季划分该 carry-over 型号；159 体重建议及 164 靴码上限存在来源差异，见逐码字段/raw' : '参数未经官网逐项校对，转入正式发布前需人工核对'}`,
       '',
     ].join('\n');
     writeFileSync(resolve(outDir, `${payload.slug}.yaml`), header + toYaml(payload, { lineWidth: 120 }), 'utf8');

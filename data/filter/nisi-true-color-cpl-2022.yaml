@@ -13,7 +13,12 @@ specs:
   waterOilResistance: true
   edgeBlackening: true
   frameOptions: 标准框 / 铜框
-images: []
+images:
+  - url: https://www.nisioptics.com/wp-content/uploads/2022/04/truecolor-cpl-7.jpg
+    kind: face
+    alt: NiSi TRUE COLOR 色彩保真 CPL 偏振镜
+    source: NiSi 官方商品页（展示授权状态待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.nisioptics.com/true-color-cpl

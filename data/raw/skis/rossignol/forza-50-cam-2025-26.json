@@ -1,0 +1,95 @@
+{
+  "brand": "Rossignol",
+  "model": "Forza 50° CAM KONECT",
+  "articleNumber": "RAOPX01000",
+  "familyCode": "RAOPX01",
+  "seedFile": "data/skis/rossignol-forza-50-cam-2026.yaml",
+  "checkedAt": "2026-10-15",
+  "seasonEvidence": [
+    {
+      "season": "2025/26",
+      "source": "https://rossignol.co.jp/user_catalog2526/",
+      "evidence": "Rossignol Japan's official release announces the 25/26 Rossignol alpine catalog. The linked catalog is hosted on Google Drive; the catalog table reproduced by a Rossignol distributor archive lists FORZA 50° CAM (KONECT), family code RAOPX01, and the same five lengths, sidecut, and radii as article RAOPX01000. Exact product-page article number RAOPX01000 shares the catalog family code RAOPX01."
+    },
+    {
+      "season": "2026/27 carry-over",
+      "source": "https://www.rossignol.sk/all-mountain-performance/",
+      "evidence": "Rossignol Slovakia official storefront's 26/27 season listing includes FORZA 50' CAM KONECT + NX 12 KONECT GW B80 with family code RAOPX01. This supports carry-over into 26/27; it does not change this seed's archival start-season or prove a distinct new article."
+    },
+    {
+      "season": "catalog publication notice",
+      "source": "https://rossignol.co.jp/user_catalog2627/",
+      "evidence": "Rossignol Japan's official corporate page announces publication of its 26/27 catalogs."
+    }
+  ],
+  "officialProductPage": {
+    "source": "https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html",
+    "evidence": "Rossignol US identifies SKU RAOPX01000, no-bindings base price USD 899.95, and lengths 150/157/164/171/179 cm. It provides sidecuts 127/75/111 mm and radii 10/11/12/14/15 m. Its Product Dimensions table labels Ski weight (kg/pair) and lists 1.5/1.55/1.6/1.7/1.75. The page itself does not label the season."
+  },
+  "catalogueEvidence": {
+    "season": "2025/26",
+    "source": "https://www.rossignol.sk/sub/rossignol.sk/images/katalogy/07-2025_Workbook_Alpine_25-26_SK_01.indd.pdf?17588052=",
+    "catalogMirror": "https://www.skiandbikes.com/image/document/rossignol_alpine_2526_gb.pdf",
+    "evidence": "Catalog family code RAOPX01, Forza 50° CAM KONECT; lengths 150/157/164/171/179 cm; sidecuts 127-75-111 mm; radii 10/11/12/14/15 m; weight 2.5/2.6/2.7/2.9/3.0 kg per pair without bindings. Rossignol Japan's official 25/26 release links its catalog; the direct Google Drive catalog was not machine-readable during this check."
+  },
+  "weightConflict": {
+    "officialProductPageKgPerPair": [1.5, 1.55, 1.6, 1.7, 1.75],
+    "catalogKgPerPairWithoutBindings": [2.5, 2.6, 2.7, 2.9, 3.0],
+    "lengthsCm": [150, 157, 164, 171, 179],
+    "decision": "Do not copy either series into structured per-size weights until Rossignol clarifies the discrepancy. Both sources label pair weight, but the catalog explicitly excludes bindings while the US page's weights are about 1 kg lower per pair."
+  },
+  "officialWeightPageRecheck20261015": {
+    "checkedAt": "2026-10-15",
+    "source": "https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html",
+    "articleNumber": "RAOPX01000",
+    "pageLabel": "Ski weight (kg/pair)",
+    "lengthsCm": [150, 157, 164, 171, 179],
+    "officialProductPageKgPerPair": [1.5, 1.6, 1.6, 1.7, 1.8],
+    "catalogSource": "https://www.rossignol.sk/sub/rossignol.sk/images/katalogy/07-2025_Workbook_Alpine_25-26_SK_01.indd.pdf?17588052=",
+    "catalogLabel": "Weight kg/pair without bindings",
+    "catalogKgPerPairWithoutBindings": [2.5, 2.6, 2.7, 2.9, 3.0],
+    "evidence": "复核 Rossignol 美国官网 RAOPX01000 商品页，产品尺寸表将 1.5/1.6/1.6/1.7/1.8 标为 kg/pair。Rossignol.sk 托管的 2025/26 Workbook 对家族代码 RAOPX01 列 2.5/2.6/2.7/2.9/3.0 kg/pair without bindings。两套均为厂商来源，且长度顺序相同；目录明确注明不含固定器，官网虽称双只重量但数值低约 1 kg。官网页面未注明雪季。",
+    "decision": "新一轮原厂页复核没有消除冲突；美站显示值与此前德国区域页面提取的逐码小数值略有差别，进一步说明不可把任一读数当作已解决的标准重量。继续不录入逐码重量，并保留原厂目录与官网标签及数值。"
+  },
+  "weightUnitResolution20261016": {
+    "checkedAt": "2026-10-16",
+    "officialCatalog": {
+      "source": "https://www.rossignol.sk/sub/rossignol.sk/images/katalogy/07-2025_Workbook_Alpine_25-26_SK_01.indd.pdf?17588052=",
+      "publisher": "Rossignol Slovakia official site",
+      "modelCode": "RAOPX01",
+      "season": "2025/26",
+      "label": "Weight kg/pair without bindings",
+      "weightsByLengthKg": [2.5, 2.6, 2.7, 2.9, 3.0],
+      "lengthsCm": [150, 157, 164, 171, 179],
+      "decision": "按原厂目录明确的型号代码、板长顺序与无固定器双只口径，作为本归档季逐码裸板重量来源。"
+    },
+    "manufacturerHalfPairCrossCheck": {
+      "source": "https://rossignol.au/collections/forza/products/raopx01-forza-50-cam-skis-konect",
+      "articleFamily": "RAOPX01",
+      "referenceLengthCm": 171,
+      "referenceWeight": "1.7 kg / 1/2 pair",
+      "decision": "澳大利亚官方页明确标注每半双重量，支持美国官网尺寸表中约 1.5–1.75 的数值代表单只而非双只；但该页不是不含固定器双只逐码表，不取代原厂目录数值。"
+    },
+    "retailerHalfPairCrossCheck": {
+      "source": "https://www.sportinglife.ca/en-CA/equipment/ski/alpine-skis/adult-alpine-skis/forza-50-cam-ski-%2B-nx-12-konect-gw-binding-2026/25923673.html",
+      "vendorStyle": "RAOPX01",
+      "referenceLengthCm": 171,
+      "weight": "1.7 kg per ski",
+      "bindingConfiguration": "NX 12 KONECT GW included",
+      "decision": "独立零售商明确称每只 1.7 kg，与官方澳大利亚页的 1/2 pair 口径相符；不将含固定器商品的重量当作裸板双只重量。"
+    },
+    "currentSeasonRetailerCrossCheck": {
+      "source": "https://tocikusa.com/products/ws-5704_2026-2027-rossignol-forza-50-cam-konect-all-mountain-skis-me",
+      "season": "2026/27 carry-over listing",
+      "articleNumber": "RAOPX01000",
+      "referenceLengthCm": 171,
+      "skiWeightKgPerPair": 3.4,
+      "weightReference": "1.7 kg / 1/2 pair",
+      "package": "NX 12 GW binding package",
+      "decision": "同 SKU 的 26/27 套装列表分别给出 3.4 kg/双和 1.7 kg/半双；因套装含固定器且为下一季零售数据，只作为单位交叉旁证，不混入 25/26 裸板目录值。"
+    },
+    "decision": "将 Rossignol 25/26 官方目录的 2.5/2.6/2.7/2.9/3.0 kg per pair without bindings 录入产品逐码重量。美站 1.5/1.6/1.6/1.7/1.8 kg/pair 数值与官方澳大利亚页和零售商明确的单只/半双重量相符，判断为官网表格单位标签错误；仍保留该页面原始标签和记录，等待品牌修正文案。26/27 含 NX 12 固定器套装的双只重量仅作旁证。"
+  },
+  "specificationDecision": "Keep the existing exact official product-page geometry. Record 2025/26 catalog attribution and official 26/27 carry-over evidence. Preserve the season history in this single seed rather than create a duplicate article record.",
+  "imageRights": "Official Rossignol CDN image is retained as a reference; public display/reuse permission is not established."
+}

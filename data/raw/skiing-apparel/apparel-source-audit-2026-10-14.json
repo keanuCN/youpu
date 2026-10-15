@@ -1,0 +1,637 @@
+{
+  "capturedAt": "2026-10-15",
+  "scope": "Published ski apparel and soft-goods seed records",
+  "exchangeRates": {
+    "source": "European Central Bank euro foreign exchange reference rates",
+    "date": "2026-10-13",
+    "usdPerEur": 1.1188,
+    "gbpPerEur": 0.8446,
+    "cnyPerEur": 7.489,
+    "formulas": {
+      "USD to CNY": "USD amount * CNY per EUR / USD per EUR",
+      "GBP to CNY": "GBP amount * CNY per EUR / GBP per EUR"
+    },
+    "rounding": "CNY rounded to 2 decimal places"
+  },
+  "limitations": [
+    "Current retailer pages do not explicitly verify the 2026 season label in the seed records.",
+    "Kailas clothing size selectors expose alpha sizes but the linked brand size guide has no apparel body-measurement chart; do not infer chest, waist, or garment dimensions.",
+    "All foreign-currency prices are regional list-price references converted to CNY, not China prices; transaction taxes, shipping, import charges, and FX fees may apply."
+  ],
+  "brandSizeGuideAudit": {
+    "checkedAt": "2026-10-15",
+    "brand": "KAILAS",
+    "url": "https://kailasgear.com/pages/size-chart-1",
+    "evidence": "品牌当前尺码指南列出鞋、手套和袜子尺码表，没有夹克或滑雪裤的身体尺寸或成衣尺寸表。",
+    "excludedGenericChart": {
+      "url": "https://runnercart.com/en/pages/kailas-sizechart-jacket",
+      "reason": "第三方通用 Kailas 外套尺码页没有对应 BM45 型号、货号或季节映射，也未说明表中腰围/臀围/长度属于人体尺寸还是成衣测量；不作为这 5 款具体服装的尺码数据来源。"
+    },
+    "decision": "保留六款商品页面明确显示的字母尺码选项，不填写胸围、腰围、臀围、肩宽或衣长数值；取得款号级厂商尺寸表后再补。"
+  },
+  "decathlonSizeGuideAudit": {
+    "checkedAt": "2026-10-15",
+    "productUrl": "https://www.decathlon.co.uk/p/mens-warm-durable-snowboard-jacket-snb-500-ziprotect-camel-and-black/350525/c152c382m8881806",
+    "productEvidence": "商品页列出 S、M、L、XL、2XL，并建议选择平时尺码；没有在页面内容中给出这些码对应的身体围度或成衣尺寸。",
+    "genericGuideUrl": "https://www.decathlon.com/pages/size-guides",
+    "genericGuideEvidence": "Decathlon 美国通用男装上装表给出胸围与腰围，但没有把表格映射到英国 SNB 500 Ziprotect 的商品款号、尺码地区或服装成衣尺寸。",
+    "smartsizeRecheck20261015": {
+      "candidatePages": [
+        {"url": "https://smartsize-front.decathlon.net/en-GB/11", "pageBrandTitle": "Adidas"},
+        {"url": "https://smartsize-front.decathlon.net/en-GB/1579", "pageBrandTitle": "Puma"}
+      ],
+      "evidence": "两个 Decathlon Smartsize 域名页面虽提供男装通用人体围度，但页面分别标为 Adidas 与 Puma；未找到它们与商品 ID 8881806 的映射，因此不能作为这款 Decathlon 夹克的适用尺码模型。",
+      "decision": "排除这两张通用表；继续等待商品页实际链接的款号/地区尺码指南或品牌确认。"
+    },
+    "decision": "不将美国通用男装上装围度表直接复制为英国该款的精确选码表。当前只记录商品自身的尺码选项及‘按平时尺码’建议；取得英国商品页面内的款号级图表或 Decathlon 对应尺码模型确认后再补数值。",
+    "officialSizingPrinciple": {
+      "checkedAt": "2026-10-15",
+      "source": "https://www.decathlon.fr/c/htc/taille-de-vetement-de-sport-le-bon-choix_b13cbc5b-67be-4987-a5b5-fe2d3553577e",
+      "evidence": "迪卡侬官方服装选码说明指出，各品牌尺码范围并不通用，应以对应品牌/商品的尺码指南为准；版型也会影响合身感。",
+      "decision": "此说明支持继续寻找 SNB 500 所属地区/商品的具体尺码模型；不把美国泛用上装表迁移到英国款，也不把人体围度误写成成衣尺寸。"
+    }
+  },
+  "regionalWaterproofRatingConflict20261015": {
+    "checkedAt": "2026-10-15",
+    "productId": "8881806",
+    "sources": [
+      {
+        "market": "United Kingdom",
+        "url": "https://www.decathlon.co.uk/p/mens-warm-durable-snowboard-jacket-snb-500-ziprotect-camel-and-black/350525/c152c382m8881806",
+        "highlightMm": 10000,
+        "technicalSpecificationMm": 10000
+      },
+      {
+        "market": "Czech Republic",
+        "url": "https://www.decathlon.cz/p/panska-bunda-na-snowboard-hrejiva-odolna-snb-500-ziprotect/350525/c152c382m8881806",
+        "highlightMm": 15000,
+        "technicalSpecificationMm": 10000
+      },
+      {
+        "market": "Portugal",
+        "url": "https://www.decathlon.pt/p/casaco-de-snowboard-quente-e-resistente-snb-500-ziprotect-homem-camel-preto/350525/c152c382m8881806",
+        "highlightMm": 15000,
+        "technicalSpecificationMm": null
+      }
+    ],
+    "decision": "三站商品 ID 相同，但区域页亮点对 10,000/15,000 mm 存在冲突；捷克页自身亮点与技术参数也互相矛盾。种子保留英国页亮点及技术参数均支持的 10,000 mm，并在前台说明该规格存在迪卡侬地区页冲突；不将 15,000 mm 当作已确认值，也不据此推定材料或款号发生变化。需品牌澄清或产品洗标/正式技术单确认。"
+  },
+  "apparelSizeChartRecheck": {
+    "checkedAt": "2026-10-15",
+    "method": "逐款复查品牌/零售商官方商品页、可见尺码选项和品牌尺码指南；只把能对应到同一商品款号的数据作为尺码表。",
+    "items": [
+      {
+        "slug": "decathlon-snb-500-ziprotect-jacket-2026",
+        "styleCode": "ID 8881806; product family R-p-350525",
+        "source": "https://www.decathlon.co.uk/p/mens-warm-durable-snowboard-jacket-snb-500-ziprotect-camel-and-black/350525/c152c382m8881806",
+        "listedSizes": ["S", "M", "L", "XL", "2XL"],
+        "verifiedFitAdvice": "True to size. Choose your usual size.",
+        "sizeChartFinding": "页面显示尺码指南入口，但可读取商品内容没有 S 至 2XL 对应的身体围度或成衣测量值。商品规格另标 loose fit 与 long length。",
+        "decision": "保留按平时尺码的官方建议、宽松版型和长款信息；不把通用男装表或 DBCK 背部护具尺码表当作此夹克尺码表。"
+      },
+      {
+        "slug": "kailas-bm45-gtx-ski-pants-2026",
+        "styleCode": "KG2541316",
+        "source": "https://kailasgear.com/products/kailas-bm45-gtx-ski-pants",
+        "listedSizes": ["S", "M", "L", "XL"],
+        "sizeChartFinding": "官方商品页列出字母尺码，未给出款号级身体围度或成衣测量值；KAILAS 当前通用尺码指南也没有服装尺寸表。",
+        "officialPageRecheck20261015": {
+          "checkedAt": "2026-10-15",
+          "url": "https://kailasgear.com/products/kailas-bm45-gtx-ski-pants",
+          "baseStyleCode": "KG2541316",
+          "selectedColorSku": "KG254131617159705",
+          "selectedVariantAtCapture": "Deep Black / S",
+          "pageListingPriceUSD": 405,
+          "displayedSizeOptions": ["S", "M", "L", "XL"],
+          "sizeGuideLinkAvailable": true,
+          "linkedGuideUrl": "https://kailasgear.com/pages/size-chart-1",
+          "linkedGuideContainsApparelMeasurements": false,
+          "evidence": "官方页面显示 BM45 GTX Ski Pants、SKU KG254131617159705、Deep Black/S 选项与 USD 405 标价；尺码选择器列 S/M/L/XL。页面有尺码指南入口，但关联的 KAILAS 官方通用指南只列鞋、手套和袜子尺码，没有服装围度或成衣尺寸。页面显示单个变体及库存提示，不能据此确认所有尺码库存。",
+          "decision": "维持四个官方尺码选项，不填腰围、臀围或裤长；不能把字母码直接转换成身体/成衣测量值。"
+        },
+        "officialUseAndFeatureRecheck20261015": {
+          "checkedAt": "2026-10-15",
+          "source": "https://kailasgear.com/products/kailas-bm45-gtx-ski-pants",
+          "matchedBaseStyleCode": "KG2541316",
+          "variantSkuObserved": "KG254131617159705",
+          "recommendedUse": ["Big Mountain", "Backcountry", "Off-piste Skiing"],
+          "weatherCopy": "Designed for harsh, cold skiing environments; no temperature rating is stated.",
+          "verifiedFeatures": ["RECCO reflector on lower leg", "CORDURA abrasion-resistant panels", "mid-waist RIRI connector for jacket powder skirt", "three-point detachable suspenders", "two-way waterproof side zipper for ventilation and easier dressing", "adjustable boot cuff", "3D articulated knees", "two hand pockets with YKK waterproof zippers"],
+          "materialAndFit": {"fabric": "75D 3L GORE-TEX", "fit": "Relaxed"},
+          "decision": "将品牌明确列出的用途、寒冷环境定位和结构特征录入种子；没有温度等级、完整服装测量表或经核实的裤装尺码转换，不推导这些数据。"
+        },
+        "decision": "不将第三方尺码助手中 S、L 两个个性化输出外推到完整尺码表。"
+      },
+      {
+        "slug": "kailas-bm45-max-mens-down-jacket-95g-2026",
+        "styleCode": "KG2531144",
+        "source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens",
+        "listedSizes": ["S", "M", "L"],
+        "sizeChartFinding": "官方商品页列出尺码选项，未提供对应身体围度或成衣尺寸。",
+        "decision": "不借用其他 KAILAS 夹克型号的尺码表。"
+      },
+      {
+        "slug": "kailas-bm45-max-mens-down-jacket-100g-2026",
+        "styleCode": "KG2531143",
+        "source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens-1",
+        "listedSizes": ["S", "M", "L"],
+        "sizeChartFinding": "官方商品页列出尺码选项，未提供对应身体围度或成衣尺寸。",
+        "decision": "不借用 95g 常规版或其他 KAILAS 夹克型号的尺码表。"
+      },
+      {
+        "slug": "kailas-bm45-max-womens-down-jacket-95g-2026",
+        "styleCode": "KG2531244",
+        "source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-womens",
+        "listedSizes": ["S", "M", "L"],
+        "sizeChartFinding": "官方商品页列出尺码选项，未提供对应身体围度或成衣尺寸。",
+        "decision": "不借用男款或其他 KAILAS 夹克型号的尺码表。"
+      },
+      {
+        "slug": "kailas-bm45-pro-ski-bibs-unisex-2026",
+        "styleCode": "KG2541314",
+        "source": "https://kailasgear.com/products/kailas-bm45-pro-ski-bibs-unisex",
+        "listedSizes": ["S", "M", "L"],
+        "sizeChartFinding": "官方商品页列出尺码选项，未提供对应腰围、臀围或裤长。",
+        "decision": "保留现有尺码选项；不从 BM45 GTX 裤或其他 KAILAS 背带裤推算。"
+      }
+    ],
+    "nextEvidenceNeeded": "优先向 KAILAS 索取 KG2541316、KG2541314、KG2531144、KG2531143、KG2531244 的款号级人体尺码表或成衣测量表；向 Decathlon 核实英国款 ID 8881806 的地区尺码模型。"
+  },
+  "kailasAccessorySizeChartAudit": {
+    "checkedAt": "2026-10-15",
+    "brandSizeGuideUrl": "https://kailasgear.com/pages/size-chart-1",
+    "sources": [
+      "https://kailasgear.com/products/kailas-bm45-high-cut-ski-socks-unisex",
+      "https://kailasgear.com/products/kailas-bm45-full-finger-ski-gloves"
+    ],
+    "evidence": "Kailas BM45 高筒滑雪袜与全指滑雪手套官方商品页均列 S/M/L。品牌官方通用尺码指南另列 Unisex 袜码脚长/欧码映射，以及 Unisex 手套手掌围度和中指长度。",
+    "sockChart": [
+      { "size": "S", "footLengthMm": [240, 260], "euShoeSize": [37, 39] },
+      { "size": "M", "footLengthMm": [260, 280], "euShoeSize": [40, 42] },
+      { "size": "L", "footLengthMm": [280, 300], "euShoeSize": [43, 45] }
+    ],
+    "gloveChart": [
+      { "size": "S", "palmCircumferenceMm": [180, 198], "middleFingerLengthMm": 78 },
+      { "size": "M", "palmCircumferenceMm": [200, 213], "middleFingerLengthMm": 82 },
+      { "size": "L", "palmCircumferenceMm": [213, 230], "middleFingerLengthMm": 93 }
+    ],
+    "decision": "将尺码表作为品牌通用中性配件尺码参考录入：产品页尺码与通用表尺码类别相同。明确注明不是 BM45 款号专属版型表；厚袜、手套内衬厚度及穿着偏好仍可能影响合脚度。"
+  },
+  "items": [
+    {
+      "slug": "decathlon-snb-500-ziprotect-jacket-2026",
+      "brand": "Decathlon / Dreamscape",
+      "model": "Men's SNB 500 Ziprotect snowboard jacket",
+      "styleCode": "ID 8881806; product family R-p-350525",
+      "source": "https://www.decathlon.co.uk/p/mens-warm-durable-snowboard-jacket-snb-500-ziprotect-camel-and-black/350525/c152c382m8881806",
+      "variantSaleSource": "https://www.decathlon.co.uk/p/mens-warm-durable-snowboard-jacket-snb-500-ziprotect-khaki-and-black/350525/c382c91m8842645",
+      "listedSizes": ["S", "M", "L", "XL", "2XL"],
+      "fitAdvice": "True to size; choose usual size",
+      "seasonConfirmed": false,
+      "officialPrice": { "amount": 129.99, "currency": "GBP", "variant": "Camel / smoked black" },
+      "convertedPrice": { "amount": 1152.61, "currency": "CNY" },
+      "salePrice": { "amount": 99.99, "currency": "GBP", "variant": "Khaki / black; sale snapshot" },
+      "convertedSalePrice": { "amount": 886.6, "currency": "CNY" },
+      "officialRecheck20261015": {
+        "sources": [
+          "https://www.decathlon.co.uk/p/mens-warm-durable-snowboard-jacket-snb-500-ziprotect-camel-and-black/350525/c152c382m8881806",
+          "https://www.decathlon.fr/p/veste-de-snowboard-chaude-et-resistante-homme-snb-500-ziprotect-camel-et-noir/350525/c152c382m8881806"
+        ],
+        "productId": "8881806",
+        "listedSizes": ["S", "M", "L", "XL", "2XL"],
+        "fitAdvice": "True to size; choose your usual size",
+        "use": { "level": "all levels", "frequency": "regular", "weather": "cold weather", "fit": "loose", "length": "long" },
+        "compatibility": "Official description names DREAMSCAPE DBCK 500 M or DBCK 900 M back protectors as ZIPROTEC compatible models.",
+        "pocketCountConflict": "Marketing feature copy says 5 secure pockets including one ski-pass pocket; technical details list 7 pockets. Unresolved.",
+        "seasonConfirmed": false,
+        "imageFetch": "The product page exposes a 15-image gallery. On 2026-10-15, 14 direct image URLs returned HTTP 200 with image/jpeg content via PowerShell HEAD requests; p2704354 returned HTTP 410 and was not added."
+      },
+      "officialGalleryRecheck20261015": {
+        "source": "https://www.decathlon.co.uk/p/mens-warm-durable-snowboard-jacket-snb-500-ziprotect-camel-and-black/350525/c152c382m8881806",
+        "productId": "8881806",
+        "galleryCountOnOfficialPage": 15,
+        "verifiedImageCount": 14,
+        "newlyAddedImageCount": 13,
+        "unavailableImage": { "assetId": "p2704354", "httpStatus": 410 },
+        "verification": "14 of 15 direct image URLs returned HTTP 200 and image/jpeg on 2026-10-15; the p2704354 CDN URL returned HTTP 410 and was excluded. The first available image was already in the seed.",
+        "imageRights": "Images are linked from the official product gallery; permission for display on this site remains unverified."
+      },
+      "chinaPriceRecheck20261015": {
+        "queries": ["site:decathlon.com.cn SNB 500 Ziprotect 滑雪夹克", "site:decathlon.com.cn 8881806", "迪卡侬 SNB 500 Ziprotect 男款滑雪夹克 价格"],
+        "result": "No exact China-region official listing or verifiable CNY price for product ID 8881806 was found in this search.",
+        "decision": "Keep the UK GBP price conversion as a regional reference only; do not label it as a China selling price."
+      },
+      "sourceNotes": [
+        "Official page specifies 10,000 mm waterproof rating, 100% taped seams, 100 g/m² body and 80 g/m² sleeves padding, helmet-compatible adjustable hood, and exact ZIPROTEC compatibility with DBCK 500 M or DBCK 900 M.",
+        "The product is listed for all skill levels, regular use, cold weather, loose fit, and long length.",
+        "Marketing feature copy says 5 secure pockets including a ski-pass pocket; the technical table says 7 pockets. Keep the count conflict unresolved.",
+        "The observed sale price is a color-specific offer, not a universal product price."
+      ]
+    },
+    {
+      "slug": "kailas-bm45-gtx-ski-pants-2026",
+      "brand": "KAILAS",
+      "model": "BM45 GTX Ski Pants",
+      "styleCode": "KG2541316",
+      "source": "https://kailasgear.com/products/kailas-bm45-gtx-ski-pants",
+      "chinaOfficialShopSource": "https://detail.youzan.com/show/goods?alias=271lvpwy1x7q3ac&from_source=gbox_seo",
+      "listedSizes": ["S", "M", "L", "XL"],
+      "seasonConfirmed": false,
+      "officialPrice": { "amount": 2800, "currency": "CNY", "market": "Kailas brand mini-store" },
+      "regionalPrice": { "amount": 405, "currency": "USD", "market": "Kailas US store" },
+      "convertedRegionalPrice": { "amount": 2710.98, "currency": "CNY" },
+      "chinaOfficialStoreGalleryRecheck20261015": {
+        "checkedAt": "2026-10-15",
+        "source": "https://detail.youzan.com/show/goods?alias=271lvpwy1x7q3ac&from_source=gbox_seo",
+        "pageTitle": "KAILAS凯乐石 BM45硬壳高山滑雪长裤 KG2541316",
+        "priceCNY": 2800,
+        "galleryImages": [
+          { "url": "https://img.yzcdn.cn/upload_files/2025/11/27/FsxfOdRwxjfoRD9U8EYiTlf1jMbU.jpg%21middle.jpg", "httpStatus": 200, "contentType": "image/jpeg" },
+          { "url": "https://img.yzcdn.cn/upload_files/2025/11/27/FuKlOBhZMLtAaDnLfJO7SSJ9Rbv3.jpg%21middle.jpg", "httpStatus": 200, "contentType": "image/jpeg" },
+          { "url": "https://img.yzcdn.cn/upload_files/2025/11/27/Fgbxn0qm_MmBjtQlJICXXtmrRzQH.jpg%21middle.jpg", "httpStatus": 200, "contentType": "image/jpeg" },
+          { "url": "https://img.yzcdn.cn/upload_files/2025/11/27/Ftn2rYIKGgccGcsEOOb98zaBgFds.jpg%21middle.jpg", "httpStatus": 200, "contentType": "image/jpeg" },
+          { "url": "https://img.yzcdn.cn/upload_files/2025/11/27/FsrDONRVTHyAwyohB4PQhmJuhL03.jpg%21middle.jpg", "httpStatus": 200, "contentType": "image/jpeg" }
+        ],
+        "imageRights": "官方微商城精确货号商品页图片；展示授权仍待核。"
+      },
+      "thirdPartySizeGuideLead": {
+        "checkedAt": "2026-10-15",
+        "sources": [
+          {
+            "url": "https://www-test.thepoizon.ru/product/kailas-ski-pants-s-stone-gray-green-colorblock-pants-kg2541316-sk8902532296129433",
+            "selectedVariant": "RU 54 (S)",
+            "displayedValuesCm": { "waist": 83, "hip": 111 }
+          },
+          {
+            "url": "https://www.thepoizon.ru/product/kailas-ski-pants-l-lightning-purple-colorblock-pants-kg2541316-sk8902532296259433",
+            "selectedVariant": "RU 58 (L)",
+            "displayedValuesCm": { "waist": 91, "hip": 119 }
+          }
+        ],
+        "evidence": "两条 Poizon 页面均显示精确货号 KG2541316；尺码助手在对应选中尺码时显示腰围/臀围数值。当前只能读到 S 与 L 两个选中尺码页面。",
+        "limitations": "页面呈现为个性化尺码助手结果，不是完整静态尺码表；未说明围度是人体测量还是成衣测量，也没有官方 Kailas 文档交叉确认。",
+        "decision": "仅作为向品牌方核验的线索，不录入商品选码数据，不对 M/XL 插值。"
+      },
+      "familyLevelFitAnecdote": {
+        "checkedAt": "2026-10-15",
+        "source": "https://post.smzdm.com/p/a95zeo25/",
+        "originalSource": "抖音用户‘芷若’内容，经什么值得买聚合转载，原始发布时间 2026-02-08",
+        "reportedProfile": { "heightCm": 165, "weightKg": null },
+        "reportedSize": "XS",
+        "reportedFit": "作者称 BM45 雪服与雪裤 XS 穿着合适，并提及双板/单板实测；未提供身材围度、内搭层数或裤款货号。",
+        "exactStyleCodeConfirmed": false,
+        "decision": "作为 BM45 系列的单条穿着反馈留档，不映射到 KG2541316 的具体尺码建议。该反馈与 KAILAS 美国站当前裤款 S/M/L/XL 选项不一致，可能涉及中国区尺码/不同款号/尺码助手环境，需品牌或原作者确认后才能用于选码。"
+      },
+      "sourceNotes": ["US product page lists 75D 3L GORE-TEX, relaxed fit, detachable suspenders, side ventilation zipper, articulated knees, CORDURA reinforcements, and backcountry/off-piste use.", "No apparel body-measurement chart found in the linked Kailas size guide; Poizon exact-style-code size-assistant outputs for S and L are retained as unverified leads only."]
+    },
+    {
+      "slug": "kailas-bm45-max-mens-down-jacket-95g-2026",
+      "brand": "KAILAS",
+      "model": "BM45 MAX men's down ski jacket, regular 95 g version",
+      "styleCode": "KG2531144",
+      "source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens",
+      "listedSizes": ["S", "M", "L"],
+      "seasonConfirmed": false,
+      "officialPrice": { "amount": 920, "currency": "USD" },
+      "convertedPrice": { "amount": 6158.28, "currency": "CNY" },
+      "chinaMarketAudit": {
+        "checkedAt": "2026-10-15",
+        "exactStyleCode": "KG2531144",
+        "officialChinaStoreSearch": "按精确货号及型号搜索凯乐石微商城；未找到能打开并同时核验此货号和人民币标价的中国店商品页。",
+        "officialRetailSearch": "京东索引与类目结果可找到 KG2531144 赤缇红 S 商品标题；直接商品页本轮不可读取，未能核验具体变体价格、店铺与库存。",
+        "jdRegionalSizeLead": {
+          "checkedAt": "2026-10-15",
+          "url": "https://www.jd.com/hprm/9987e0e6c63b4dcc8398.html",
+          "evidence": "京东搜索索引的商品标题将 BM45 MAX 男款 800 蓬羽绒滑雪外套与货号 KG2531144 同列，并分别出现赤缇红 XXS 和赤缇红 S 的变体标题；该索引未显示款号级身材尺码表、具体变体成交价或可下单库存。",
+          "comparison": "KAILAS 美国官方商品页只列 S/M/L。中外区域尺码标签可能不同，当前证据不能建立 XXS、S 与美国 S/M/L 的换算关系。",
+          "decision": "只作中国区域尺码选项线索；不覆盖官方 availableSizes，不推导身高/体重对应表，不据此更新人民币价格。"
+        },
+        "jdExactListingRecheck20261015": {
+          "checkedAt": "2026-10-15",
+          "listingTitle": "凯乐石（KAILAS）BM45 MAX羽绒滑雪外套800蓬鹅绒GTX防水男 KG2531144 赤缇红 S",
+          "directItemUrl": "https://item.jd.com/10221071731160.html",
+          "listingIndexSource": "https://www.jd.com/jiage/1318f691f28ac7d51eb0.html?catID=17343&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_default",
+          "evidence": "京东滑雪服价格索引可见 KG2531144 赤缇红 S 的精确商品标题；对应商品直达页本轮返回不可访问，未显示人民币价格、卖家、下单库存或商品 SKU 详情。",
+          "decision": "确认中国市场存在精确货号与颜色/尺码的商品索引；该索引不是当前人民币标价证据，不改变价格字段。"
+        },
+        "officialPageRecheck20261015": {
+          "url": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens",
+          "selectedVariantSku": "KG253114411497705",
+          "displayedSizes": ["S", "M", "L"],
+          "sizeGuideUrl": "https://kailasgear.com/pages/size-chart-1",
+          "sizeGuideSections": ["men's shoes", "women's shoes", "gloves", "socks"],
+          "garmentMeasurementsFound": false,
+          "evidence": "KAILAS 官方商品页显示精确 SKU KG253114411497705、颜色和 S/M/L 选项；链接尺码指南只提供鞋、手套和袜子表，没有服装身体围度或衣服实测数据。",
+          "decision": "美国官网的 S/M/L 继续作为该地区选项记录；不能据此声称覆盖中国同款的 XXS 变体，也不把通用尺码表转写为 KG2531144 的款号级尺寸。"
+        },
+        "chinaStorePriceLead20261015": {
+          "checkedAt": "2026-10-15",
+          "url": "https://tao.hooos.com/goods_aRXJBpkmtotMY3gpoG8fQzNTjty-rkOPPMub7wMve8ZCy.html",
+          "claimedStore": "KAILAS 凯乐石男装旗舰店（天猫；由第三方导购页标注）",
+          "listedPriceCNY": 6200,
+          "listingTitle": "KAILAS 凯乐石男款 BM45 MAX 羽绒服滑雪外套 800 蓬鹅绒 GTX 防水防风",
+          "styleCodeShown": null,
+          "evidence": "第三方导购详情页显示男装旗舰店、商品标题与 BM45 MAX 800 蓬滑雪羽绒服相符，并列低价 CNY 6200；未展示制造商款号、充绒量版本、尺码库存或可核验的天猫直达商品链接。",
+          "decision": "作为中国官方店价格线索保留，不覆盖种子的海外参考价格。需取得天猫原商品链接并确认 KG2531144（95g 常规版）后，才可录为精确款号人民币挂牌价。"
+        },
+        "excludedCrossBorderPrice20261015": {
+          "url": "https://mobile.yangkeduo.com/poros/h5?_dr_sku_id=1872649724283&abs_id=208156&ad_cks=1-1BigRC&ad_rcto=YWJY7a6B6ZDBl_k4b5T-SyD7Q9gz61YGop_oqw32nx95ZWjon_kTaKLNj_UiyU8H--qhNdJYtr1_bDXRyk0qLtpa&ads_channel=google_shopping&goods_id=922423037841&order_type=0&page_uid=b971bac98f094ca794aca85ddfba20cb&plsn=aa6919efe32aa37bf70fee57f47e5340&region=SG&sku_id=1872649724283&vst_scene=pdv",
+          "displayedPrice": "S$1.17K (约 ¥6.2K)",
+          "evidence": "拼多多跨境搜索页的链接参数标明 region=SG，页面主要价格币种为新加坡元；人民币数值为折算展示，且页面未给出可确认的境内人民币下单价。",
+          "decision": "排除此条作为中国人民币挂牌价证据；保留为新加坡区域跨境价格线索，不与天猫导购页标注的 CNY 6200 混为同一价格。"
+        },
+        "decision": "未验证中国人民币价；保留美国官方 USD 920 折算 CNY 6158.28 作为海外地区参考，不把同系列女款或其它版型价格套入。"
+      },
+      "sourceNotes": ["Official page describes 95 g 800FP down, 40D 3L GORE-TEX, Y-cut regular version, helmet-compatible hood, RECCO reflector, underarm ventilation, and on-piste/cold-weather use.", "No apparel body-measurement chart found in the linked Kailas size guide."],
+      "officialImageGalleryRecheck20261015": {
+        "source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens",
+        "officialGalleryUniqueImages": 10,
+        "seedImagesAfterUpdate": 10,
+        "availabilityProbe": {"checkedUrls": 10, "http200": 10, "failed": 0, "contentType": "image/jpeg"},
+        "checkedAt": "2026-10-15",
+        "limitation": "商品页图库的不同颜色/视图资源共 10 个唯一 URL，种子已收录；本次 95g 羽绒服与 BM45 PRO 背带裤共核验 25 个原图地址。图片前台展示授权仍待确认。"
+      }
+    },
+    {
+      "slug": "kailas-bm45-max-mens-down-jacket-100g-2026",
+      "brand": "KAILAS",
+      "model": "BM45 MAX men's down ski jacket, long 100 g version",
+      "styleCode": "KG2531143",
+      "source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens-1",
+      "listedSizes": ["S", "M", "L"],
+      "seasonConfirmed": false,
+      "officialPrice": { "amount": 990, "currency": "USD" },
+      "convertedPrice": { "amount": 6626.84, "currency": "CNY" },
+      "chinaMarketAudit": {
+        "checkedAt": "2026-10-15",
+        "exactStyleCode": "KG2531143",
+        "officialChinaStoreSearch": "按精确货号及型号搜索凯乐石微商城；未找到能打开并同时核验此货号和人民币标价的中国店商品页。",
+        "officialRetailSearch": "KAILAS 京东官方旗舰店有男滑雪服分类，但本轮可读取页面未返回能同时核验 KG2531143 与人民币标价的商品行。",
+        "exactStyleCodeSearchRecheck20261015": {
+          "queries": ["KG2531143 凯乐石 微商城", "KG2531143 天猫", "KG2531143 京东 价格"],
+          "result": "未找到能把 KG2531143 精确货号、100g 加长款和中国人民币标价同时对应起来的可读取国内商品页；京东当前可见为系列级商品索引，未展示该货号对应的当前金额。",
+          "decision": "继续保留美国官方 USD 990 折算参考；不把同款 95g 常规版的中国价格或无货号聚合页报价映射给 KG2531143。"
+        },
+        "decision": "未验证中国人民币价；保留美国官方 USD 990 折算 CNY 6626.84 作为海外地区参考，不把 95g 常规版价格视作 100g 加长版报价。"
+      },
+      "sourceNotes": ["Official page describes 100 g 800FP down, 40D 3L GORE-TEX, H-cut long version, helmet-compatible hood, RECCO reflector, underarm ventilation, and on-piste/cold-weather use.", "No apparel body-measurement chart found in the linked Kailas size guide."],
+      "officialImageGalleryRecheck20261015": {
+        "source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens-1",
+        "officialGalleryUniqueImages": 10,
+        "seedImagesAfterUpdate": 10,
+        "availabilityProbe": {"checkedUrls": 9, "http200": 9, "failed": 0, "contentType": "image/jpeg"},
+        "checkedAt": "2026-10-15",
+        "limitation": "图库有两组视图图像，种子包含 10 张唯一商品图；本轮新增的 9 个链接全部通过 HTTP 200 和 image/jpeg 核验。图片展示授权仍待确认。"
+      }
+    },
+    {
+      "slug": "kailas-bm45-max-womens-down-jacket-95g-2026",
+      "brand": "KAILAS",
+      "model": "BM45 MAX women's down ski jacket, 95 g version",
+      "styleCode": "KG2531244",
+      "source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-womens",
+      "chinaOfficialShopSource": "https://detail.youzan.com/show/goods?alias=2g2sri0raz5wrkp&from_source=gbox_seo",
+      "listedSizes": ["S", "M", "L"],
+      "seasonConfirmed": false,
+      "officialPrice": { "amount": 920, "currency": "USD", "market": "Kailas US store" },
+      "convertedPrice": { "amount": 6158.28, "currency": "CNY" },
+      "regionalPrice": { "amount": 6200, "currency": "CNY", "market": "Kailas brand mini-store" },
+      "priceReview": {
+        "checkedAt": "2026-10-15",
+        "primaryReference": { "amount": 6200, "currency": "CNY", "source": "https://detail.youzan.com/show/goods?alias=2g2sri0raz5wrkp&from_source=gbox_seo", "matchedStyleCode": "KG2531244", "evidence": "凯乐石微商城商品标题直接列出女款 BM45 MAX 羽绒滑雪外套及货号 KG2531244，页面标价 CNY 6200。作为中国大陆人民币目录参考；页面文本未说明尺码库存或雪季。" },
+        "officialShopRecheck20261015": {"source": "https://detail.youzan.com/show/goods?alias=2g2sri0raz5wrkp&from_source=gbox_seo", "title": "KAILAS凯乐石 女款 BM45 MAX 羽绒滑雪外套 KG2531244", "displayedPriceCNY": 6200, "purchaseEntry": "立即购买", "evidence": "再次打开品牌微商城，标题、精确货号和 CNY 6,200 目录价仍可见；页面未提供可读取的尺码库存、年款或结账信息。"},
+        "regionalCrossCheck": { "amount": 920, "currency": "USD", "convertedAmount": 6158.28, "convertedCurrency": "CNY", "source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-womens", "evidence": "Kailas 美国官方店同款标价 USD 920；按 ECB 2026-10-13 汇率约折 CNY 6158.28。仅作地区差价参考，不取代中国店人民币价。" }
+      },
+      "sourceNotes": ["Official US page describes 95 g 800FP down, 40D 3L GORE-TEX, Y-cut, helmet-compatible hood, RECCO reflector, underarm ventilation, and on-piste/cold-weather use.", "Use the exact-style-code mainland China mini-store price CNY 6200 as the product's RMB reference; retain US USD 920 / converted CNY 6158.28 as a regional comparison.", "No apparel body-measurement chart found in the linked Kailas size guide."],
+      "officialImageGalleryRecheck20261015": {
+        "source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-womens",
+        "officialGalleryUniqueImages": 10,
+        "seedImagesAfterUpdate": 10,
+        "availabilityProbe": {"checkedUrls": 9, "http200": 9, "failed": 0, "contentType": "image/jpeg"},
+        "checkedAt": "2026-10-15",
+        "limitation": "国际官网图库共 10 个不同 URL，种子已收录；本轮新增的 9 个链接全部通过 HTTP 200 和 image/jpeg 核验。图片展示授权仍待确认。"
+      }
+    },
+    {
+      "slug": "kailas-bm45-pro-ski-bibs-unisex-2026",
+      "brand": "KAILAS",
+      "model": "BM45 PRO unisex ski bibs",
+      "styleCode": "KG2541314",
+      "source": "https://kailasgear.com/products/kailas-bm45-pro-ski-bibs-unisex",
+      "listedSizes": ["S", "M", "L"],
+      "seasonConfirmed": false,
+      "officialPrice": { "amount": 580, "currency": "USD" },
+      "convertedPrice": { "amount": 3882.39, "currency": "CNY" },
+      "chinaMarketAudit": {
+        "checkedAt": "2026-10-15",
+        "status": "exact_domestic_listing_found_price_not_verifiable",
+        "jdSearchPage": "https://www.jd.com/jiage/1318c57408f7c439eca7.html",
+        "jdProductPage": "https://item.jd.com/10221071823387.html",
+        "jdObservedListing": "京东商品列表明确显示 KAILAS BM45 PRO 硬壳高山滑雪背带裤，货号 KG2541314，闪电紫/山矾白/光电绿，S 码。该列表没有可读价格。商品详情抓取只返回浏览器兼容提示。",
+        "jdRecheck20261015": {
+          "source": "https://www.jd.com/jiage/1318c57408f7c439eca7.html",
+          "result": "再次看到京东列表项：BM45 PRO 背带裤，KG2541314，闪电紫/山矾白/光电绿，S 码；搜索列表仍未提供可读人民币价格。",
+          "detailPageResult": "https://item.jd.com/10221071823387.html 本轮仍无法读取。",
+          "decision": "款号和商品变体可确认，人民币价格不能确认；不更新主价格。"
+        },
+        "jdUnmappedSelfOperatedListing20261015": {
+          "source": "https://www.jd.com/jiage/1318f0175a27553848c7.html",
+          "itemUrl": "https://item.jd.com/100222832951.html",
+          "observed": "京东分类页列出自营 BM45 PRO 硬壳高山滑雪背带裤，显示 3+ 条评论；该行没有 KG2541314、尺码或人民币价格。",
+          "decision": "记录为国内同系列渠道线索，不与 KG2541314 绑定，不能用于覆盖海外折算价。"
+        },
+        "jdProductId": "10221071823387",
+        "regionalCurrencyFalseLead20261015": "搜索索引另返回同名 KG2541314 商品的新加坡地区拼多多页面，显示 S$756.55 左右及非稳定的人民币括注；该页面地区参数为 region=SG，不是中国境内人民币挂牌，排除。",
+        "excludedListing": {
+          "url": "https://mobile.yangkeduo.com/poros/h5?_dr_sku_id=1797040895803&abs_id=214186&ad_cks=1-1XAuhO&ad_rcto=YWJ3wJwj3XVbYuZVtbD2AJhlQ9gz61YGop-GrcOVj9_5Q6OhkSENxxqSY2xIHgDsAlYX21obN49rIoFtvFpOpabQ&ads_channel=google_shopping&goods_id=833836815998&order_type=0&page_uid=4376c1ab965d4c5193aa2f853084602a&plsn=0c44d2454d5a2e2a3dc9a7d2dcbbf46f&region=MY&sku_id=1797040895803&vst_scene=pdv",
+          "reason": "搜索索引显示马来西亚林吉特金额和多国货币折算，无法确认这是中国境内的 KG2541314 实际可售报价，故排除。"
+        },
+        "officialRetailSearch": "继续核查 KAILAS 京东官方旗舰店与搜索索引；虽有 KG2541314 精确商品条目，但可读取结果没有人民币价格，不能核作中国标价。",
+    "chinaStorePriceLead20261015": {
+      "url": "https://tao.hooos.com/goods_a8KNDb7FotM9Gy8ojziQzkUjty-2RmPPyF66p5YPrxIn.html",
+      "store": "KAILAS凯乐石官方旗舰店（天猫；第三方导购页标注）",
+      "listingTitle": "KAILAS凯乐石 BM45 PRO 滑雪背带裤 GTX 防风耐磨保暖登山滑雪男裤",
+      "priceLeadCNY": 4000,
+      "observedPriceLabel": "4000低价",
+      "styleCodeShown": false,
+      "evidence": "第三方天猫导购详情页显示同系列男款 BM45 PRO 背带裤、官方旗舰店、‘4000低价’，并称商品数据来自天猫官方；页面未显示 KG2541314、尺码变体、原始天猫商品链接或可购买价格明细。",
+      "purchaseJumpCheck": "点击导购页购买入口本轮返回 403；按精确款号搜索未找到原始天猫商品链接。",
+      "decision": "作为中国同系列人民币价格线索，不覆盖 KG2541314 的海外参考价；取得原始天猫页并确认款号、尺码及实时报价后再升级为精确价格。"
+    },
+    "excludedCrossBorderPrice20261015": {
+      "url": "https://mobile.yangkeduo.com/poros/h5?_dr_sku_id=1900434983682&abs_id=208156&ad_cks=1-4BtLah&ad_rcto=YWL8nt9aqElGEalb1faN0mkHQ9gz61YGop-pGlfyYun_Yi__Nu8b-aIleT8u-eecPn1sJqRi1xY71rc--7yUEK5o&ads_channel=google_shopping&goods_id=953667326938&order_type=0&page_uid=d0c4a66d2fc4479da45505693fc19e51&plsn=348837ef8bc3b3209956a2315641d037&region=SG&sku_id=1900434983682&vst_scene=pdv",
+      "displayedPrice": "S$756.55（约 ¥4,000）",
+      "evidence": "搜索索引的链接参数标明 region=SG，实际展示新加坡元，人民币为折算值；没有可确认的中国境内下单价或原始商品页款号变体。",
+      "decision": "排除此条作为中国人民币挂牌价；虽然折算金额与天猫导购线索接近，也不能据此确认 KG2541314 的中国价格。"
+    },
+        "assessment": "未找到可复核的中国人民币成交或标价。保留美国官方 USD 580 折算参考 CNY 3,882.39，不标记为中国售价。"
+      },
+      "sourceNotes": ["Official page describes 100D 3L GORE-TEX Pro, relaxed fit, four-point adjustable suspenders, side ventilation zipper, articulated knees, CORDURA reinforcements, RECCO reflector, and ski-mountaineering/backcountry use.", "No apparel body-measurement chart found in the linked Kailas size guide."],
+      "officialImageGalleryRecheck20261015": {
+        "source": "https://kailasgear.com/products/kailas-bm45-pro-ski-bibs-unisex",
+        "officialGalleryUniqueImages": 15,
+        "seedImagesAfterUpdate": 15,
+        "availabilityProbe": {"checkedUrls": 15, "http200": 15, "failed": 0, "contentType": "image/jpeg"},
+        "checkedAt": "2026-10-15",
+        "limitation": "图库含多个颜色的视图；共 15 个唯一图片 URL，已全部录入种子。本次两款商品合计核验 25 个原图地址。图片前台展示授权仍待确认。"
+      }
+    },
+    {
+      "slug": "kailas-bm45-high-cut-ski-socks-2026",
+      "brand": "KAILAS",
+      "model": "BM45 High-Cut Ski Socks Unisex",
+      "styleCode": "KH250100322364705",
+      "source": "https://kailasgear.com/products/kailas-bm45-high-cut-ski-socks-unisex",
+      "listedSizes": ["S", "M", "L"],
+      "seasonConfirmed": false,
+      "officialPrice": { "amount": 33, "currency": "USD", "market": "Kailas US store" },
+      "exchangeRate": {
+        "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+        "date": "2026-10-14",
+        "usdPerEur": 1.1195,
+        "cnyPerEur": 7.4925,
+        "convertedPriceCNY": 220.86
+      },
+      "fitDataStatus": "brand-level unisex sock chart available; not a style-code-specific fit test",
+      "brandSizeChartSource": "https://kailasgear.com/pages/size-chart-1",
+      "brandSizeChart": [
+        { "size": "S", "footLengthMm": [240, 260], "euShoeSize": [37, 39] },
+        { "size": "M", "footLengthMm": [260, 280], "euShoeSize": [40, 42] },
+        { "size": "L", "footLengthMm": [280, 300], "euShoeSize": [43, 45] }
+      ],
+      "sourceNotes": [
+        "Official product page identifies the unisex BM45 high-cut ski sock, SKU KH250100322364705, Lightning Purple 22364, and sizes S/M/L.",
+        "Official page lists merino wool, Lycra, breathable mesh, terry cushioning, arch/ankle support, left/right-specific construction, and seamless toe; it does not publish fiber percentages. The separate official brand guide supplies a generic unisex foot-length chart, not a BM45-specific chart.",
+        "USD 33 is the Kailas US store regional list price. Converted using ECB 2026-10-14 rates (USD 1.1195 and CNY 7.4925 per EUR); CNY 220.86 is not a mainland China price."
+      ],
+      "officialImageGalleryRecheck20261015": {
+        "source": "https://kailasgear.com/products/kailas-bm45-high-cut-ski-socks-unisex",
+        "officialGalleryUniqueImages": 5,
+        "seedImagesAfterUpdate": 5,
+        "verifiedAdditionalImageUrls": [
+          {
+            "url": "https://kailasgear.com/cdn/shop/files/KH2501003_5-2.webp?v=1786153736&width=1090",
+            "httpStatus": 200,
+            "contentType": "image/jpeg"
+          },
+          {
+            "url": "https://kailasgear.com/cdn/shop/files/KH2501003_5-3.webp?v=1786153737&width=1090",
+            "httpStatus": 200,
+            "contentType": "image/jpeg"
+          },
+          {
+            "url": "https://kailasgear.com/cdn/shop/files/KH2501003_5.webp?v=1786153738&width=1090",
+            "httpStatus": 200,
+            "contentType": "image/jpeg"
+          },
+          {
+            "url": "https://kailasgear.com/cdn/shop/files/KH2501003_5-1.webp?v=1786153737&width=1090",
+            "httpStatus": 200,
+            "contentType": "image/jpeg"
+          }
+        ],
+        "checkedAt": "2026-10-15",
+        "limitation": "官方商品页图库共 5 张不同图片；4 个补入的图片 URL 均返回 200 和 image/jpeg。图片展示授权仍待核实。"
+      }
+    },
+    {
+      "slug": "kailas-bm45-full-finger-ski-gloves-2026",
+      "brand": "KAILAS",
+      "model": "BM45 Full-Finger Ski Gloves",
+      "styleCode": "KM256200117159706",
+      "source": "https://kailasgear.com/products/kailas-bm45-full-finger-ski-gloves",
+      "listedSizes": ["S", "M", "L"],
+      "seasonConfirmed": false,
+      "officialPrice": { "amount": 159, "currency": "USD", "market": "Kailas US store" },
+      "officialSalePrice": { "amount": 143.1, "currency": "USD", "market": "Kailas US store collection listing" },
+      "exchangeRate": {
+        "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+        "date": "2026-10-14",
+        "usdPerEur": 1.1195,
+        "cnyPerEur": 7.4925,
+        "convertedListPriceCNY": 1064.14,
+        "convertedSalePriceCNY": 957.73
+      },
+      "fitDataStatus": "brand-level unisex glove chart available; not a style-code-specific fit test",
+      "brandSizeChartSource": "https://kailasgear.com/pages/size-chart-1",
+      "brandSizeChart": [
+        { "size": "S", "palmCircumferenceMm": [180, 198], "middleFingerLengthMm": 78 },
+        { "size": "M", "palmCircumferenceMm": [200, 213], "middleFingerLengthMm": 82 },
+        { "size": "L", "palmCircumferenceMm": [213, 230], "middleFingerLengthMm": 93 }
+      ],
+      "sourceNotes": [
+        "Official product page identifies BM45 full-finger ski gloves, SKU KM256200117159706, black, and sizes S/M/L.",
+        "Official page specifies a GORE-TEX liner, 3M insulation, goat-leather palm, hook-and-loop cuff, back-of-hand padding, curved fingers, goggle-wiping thumb, wrist strap, and clip buckle. The separate official brand guide supplies a generic unisex glove chart, not a BM45-specific chart.",
+        "USD 159 is the product-page list price; the official Kailas collection listing displayed USD 143.10 sale price during capture. Converted using ECB 2026-10-14 rates (USD 1.1195 and CNY 7.4925 per EUR); both CNY amounts are regional references, not mainland China prices."
+      ],
+      "officialImageGalleryRecheck20261015": {
+        "source": "https://kailasgear.com/products/kailas-bm45-full-finger-ski-gloves",
+        "officialGalleryUniqueImages": 5,
+        "seedImagesAfterUpdate": 5,
+        "verifiedAdditionalImageUrls": [
+          {
+            "url": "https://kailasgear.com/cdn/shop/files/GJGW-KM2562001_6-1.webp?v=1786153530&width=1090",
+            "httpStatus": 200,
+            "contentType": "image/jpeg"
+          },
+          {
+            "url": "https://kailasgear.com/cdn/shop/files/GJGW-KM2562001_6-3.webp?v=1786153531&width=1090",
+            "httpStatus": 200,
+            "contentType": "image/jpeg"
+          },
+          {
+            "url": "https://kailasgear.com/cdn/shop/files/GJGW-KM2562001_5-2.webp?v=1786153530&width=1090",
+            "httpStatus": 200,
+            "contentType": "image/jpeg"
+          },
+          {
+            "url": "https://kailasgear.com/cdn/shop/files/GJGW-KM2562001_5.webp?v=1786153531&width=1090",
+            "httpStatus": 200,
+            "contentType": "image/jpeg"
+          }
+        ],
+        "checkedAt": "2026-10-15",
+        "limitation": "页面图库共 5 张不同图片，重复的 width=1 缩略项未计入；4 个补入的原图 URL 均返回 200 和 image/jpeg。图片展示授权仍待核实。"
+      },
+      "domesticMarketRecheck": {
+        "checkedAt": "2026-10-15",
+        "officialProductSku": "KM256200117159706",
+        "domesticArticlePrefix": "KM2562001",
+        "officialJdStoreListing": {
+          "url": "https://item.jd.com/100198547461.html",
+          "store": "KAILAS凯乐石京东自营旗舰店",
+          "indexedTitle": "KAILAS凯乐石 中性 GTX 防水五指滑雪手套 KM2562001 玄青黑 L",
+          "status": "商品型号、玄青黑 L 变体及自营旗舰店可核；商品详情中的京东价区域仅显示动态占位，未能读取当前金额。"
+        },
+        "thirdPartyListingLead": {
+          "url": "https://shop.vafox.com/front/index/product.html?id=82&type=showPro&uniacid=1",
+          "title": "KAILAS凯乐石 中性 GTX 防水五指滑雪手套 KM2562001",
+          "listedPrice": { "amount": 1100, "currency": "CNY" },
+          "displayedStock": 4,
+          "status": "第三方户外商城的型号级挂牌价；页面未列颜色尺码变体、成交信息或与完整原厂 SKU 的变体映射。"
+        },
+        "decision": "国内零售渠道已出现与原厂完整 SKU 前缀及商品名称一致的 KM2562001，第三方挂牌 CNY 1,100 可作国内型号级价格线索；京东自营旗舰店精确商品页未显示可读价格，故不将第三方挂牌升级为品牌官方价或成交价，也暂不替换种子中的美国地区参考价。"
+      },
+      "chinaOfficialStoreOfferSnapshot20261015": {
+        "source": "https://tao.hooos.com/goods_kavWQKZSYtaxo82KARtGG5CPtJ-zzQnnasovJRDw5RsJ.html",
+        "sourceType": "第三方聚合页，页面声明商品数据来自天猫官方店铺",
+        "storeAsListed": "KAILAS凯乐石官方旗舰店",
+        "platformAsListed": "天猫",
+        "productTitle": "KAILAS凯乐石 中性 GTX 防水五指滑雪手套 KM2562001",
+        "domesticArticlePrefix": "KM2562001",
+        "listPriceCNY": 1100,
+        "observedOfferPriceCNY": 990,
+        "openGraphPriceCNY": 1100,
+        "descriptionMetadataPriceCNY": 1100,
+        "descriptionMetadataMonthlySales": 0,
+        "offerPeriodAsShown": { "start": "2026-10-07", "end": "2026-10-31" },
+        "monthlySalesAsShown": 45,
+        "capturedAt": "2026-10-15",
+        "directTmallProductUrlAvailable": false,
+        "checkoutPriceVerified": false,
+        "metadataConflict": "页面正文显示 CNY 990 活动价及月销量 45；Open Graph 商品价与描述元数据仍为 CNY 1,100，描述元数据月销量为 0。",
+        "decision": "商品标题与型号前缀 KM2562001 匹配，聚合页将店铺标为天猫 KAILAS 官方旗舰店，并在可见正文显示 CNY 1,100 标价及 2026-10-07 至 2026-10-31 的 CNY 990 活动价。由于页面 Open Graph/描述元数据仍列 CNY 1,100，保留页内活动价冲突；将 990–1,100 CNY 作为国内挂牌/活动参考范围，而非结账价。该二级证据没有提供天猫原始商品链接或结账页，也不证明所有颜色/尺码均能以活动价购买。"
+      }
+    }
+  ]
+}

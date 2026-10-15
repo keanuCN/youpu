@@ -1,0 +1,73 @@
+slug: salomon-qst-98-2024
+category: skis
+brand: salomon
+model: QST 98
+year: 2024
+title: Salomon QST 98 2023/24
+price:
+  min: 4720.27
+  max: 4720.27
+  currency: CNY
+one_liner: 98 mm 板腰的全山地自由滑雪板；此档案记录 2023/24 旧款。
+specs:
+  lengthOptions: 169 / 176 / 183 / 189 cm
+  waistWidth: 98
+  turnRadius: 15
+  turnRadiusReferenceLength: 169 cm
+  sizeSpecs:
+    - size: 169 cm
+      noseWidth: 131
+      waistWidth: 98
+      tailWidth: 119
+      turnRadius: 15
+      weightPerSki: 1740
+    - size: 176 cm
+      noseWidth: 132
+      waistWidth: 98
+      tailWidth: 120
+      turnRadius: 16
+      weightPerSki: 1860
+    - size: 183 cm
+      noseWidth: 133
+      waistWidth: 98
+      tailWidth: 121
+      turnRadius: 17
+      weightPerSki: 1990
+    - size: 189 cm
+      noseWidth: 133
+      waistWidth: 98
+      tailWidth: 121
+      turnRadius: 18
+      weightPerSki: 2100
+  profile: Rocker-Camber-Rocker（Freeride Profile）
+  core: 全杨木木芯
+  construction: Full Sandwich Sidewalls；Ti Binding Reinforcement
+  technologies: Cork Damplifier；C/FX；Double Sidewalls
+  weightPerSki: 1740
+  weightReferenceLength: 169 cm
+  terrain: 全山地 / 自由滑
+  skierLevel: 中级至进阶
+  bindingSetup: 裸板，不含固定器
+  weightBasis: Salomon 编制的 2023/24 日本规格目录按每只雪板列重；数据仅适用于表内对应长度，不含固定器。
+  geometryNotes: 货号 L47232300+ 的 2023/24 目录逐尺码表列出四个长度的板头/腰/尾宽、半径和单只重量。Salomon 当前官方产品页仍显示同一货号和四个长度，但不单独标注雪季；本档案按 2023/24 目录归档，不标为 2026/27。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。
+  seasonEvidence: Salomon 编制的 2023/24 日本雪板规格目录以货号 L47232300+ 列出 QST 98 与四个长度。Salomon 当前官方产品页确认同一货号及尺码；本档案按 2023/24 目录归档，不标为 2026/27。
+  sourceCheckedAt: 2026-10-14
+  priceCheckedAt: 2026-10-14
+  officialPrice: EUR 630.00
+  priceMarket: Salomon 欧洲官网存档挂牌价
+  priceSource: https://www.salomon.com/es-es/product/qst-98-li4910/L47232300%2B
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Salomon 西班牙官方页面曾按货号 L47232300+ 显示 EUR 630.00，但该商品已不在官网销售；按 ECB 2026-10-14 EUR/CNY 7.4925 折算历史挂牌参考 CNY 4,720.27。该数仅供 2023/24 旧款档案参考，不代表当前可购价格或中国售价。
+  compatibilitySources: https://www.salomon.com/en-gb/product/qst-98-li4910/L47232300%2B?sizeId=L47232300169；https://www.grip-walk.com/faq/
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-gb/product/qst-98-li4910/L47232300%2B?sizeId=L47232300169
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ed4de590b145d4c8b89015c768572d9298283e7352080657bb93028ee731ffb4.webp"
+    kind: face
+    alt: Salomon QST 98 2023/24 雪板图
+    source: Salomon 官方商品页图片 CDN；页面货号 L47232300+ 与本档案相符（图片授权待核）
+    sort_order: 0
+status: published

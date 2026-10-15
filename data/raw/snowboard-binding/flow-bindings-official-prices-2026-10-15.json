@@ -1,0 +1,63 @@
+{
+  "capturedAt": "2026-10-15",
+  "exchangeRate": {
+    "date": "2026-10-14",
+    "eurUsd": 1.1195,
+    "eurCny": 7.4925,
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "formula": "USD × EUR/CNY ÷ EUR/USD"
+  },
+  "products": [
+    {
+      "slug": "flow-fenix-binding-2027",
+      "name": "Flow Fenix",
+      "season": "2027",
+      "officialPrice": 269.95,
+      "currency": "USD",
+      "convertedCny": 1806.70,
+      "sku": "N.27.BNU.FEF.400.2S.1",
+      "url": "https://www.nidecker.com/products/flow-fenix",
+      "availability": "页面显示仅余少量库存；库存可能变化"
+    },
+    {
+      "slug": "flow-nexus-binding-2027",
+      "name": "Flow Nexus",
+      "season": "2027",
+      "officialPrice": 219.95,
+      "currency": "USD",
+      "convertedCny": 1472.06,
+      "sku": "N.27.BNU.NEF.001.2S.1",
+      "url": "https://www.nidecker.com/products/flow-nexus",
+      "availability": "页面显示少量库存/预售提示，具体到货时间按地区和尺码变化"
+    },
+    {
+      "slug": "flow-fuse-hybrid-binding-2026",
+      "name": "Flow Fuse Hybrid 2026",
+      "season": "2026",
+      "officialPrice": 319.95,
+      "currency": "USD",
+      "convertedCny": 2141.34,
+      "sku": "N.26.BNU.FUH.GN.3M.1",
+      "url": "https://www.nidecker.com/products/flow-fuse-hybrid-2026",
+      "availability": "页面对应的个别尺码库存有限；其他变体另核"
+    },
+    {
+      "slug": "flow-fuse-binding-2026",
+      "name": "Flow Fuse 2026",
+      "season": "2026",
+      "officialPrice": 319.95,
+      "currency": "USD",
+      "convertedCny": 2141.34,
+      "sku": "N.26.BNU.FUF.GN.3M.1",
+      "url": "https://www.nidecker.com/products/flow-fuse-2026",
+      "availability": "商品页显示售罄；价格不代表可购买库存"
+    }
+  ],
+  "limitations": [
+    "人民币数值均为美国官网美元标价按 ECB 参考汇率折算，不是中国售价。",
+    "未计美国销售税、支付汇兑成本、跨境运费、关税和进口税。",
+    "Flow Fenix 与 Nexus 的官网页面未在标题中固定年份，以产品变体 SKU 的 N.27 前缀确认 2027 款。",
+    "Fuse 与 Fuse Hybrid 使用明确标示 2026 的官方商品页，并以 N.26 变体货号对照种子档案。",
+    "库存和预售状态会按地区、颜色与尺码变化。"
+  ]
+}

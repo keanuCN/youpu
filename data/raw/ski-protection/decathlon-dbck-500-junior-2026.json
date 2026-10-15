@@ -1,0 +1,67 @@
+{
+  "capturedAt": "2026-10-15",
+  "brand": "DREAMSCAPE / Decathlon",
+  "model": "DBCK 500 Junior back protector vest",
+  "category": "ski-protection",
+  "styleCode": "ID 8585102; product family R-p-312102",
+  "sources": {
+    "officialUKProduct": {
+      "url": "https://www.decathlon.co.uk/p/junior-mtb-ski-and-snowboard-back-protector-vest-dbck-500/312102/c251m8585102",
+      "evidence": "英国官方商品页标注 DBCK 500 Junior、ID 8585102、灰色；选项为 6/8/10/12/14 岁；当前 GBP 44.99、原价 GBP 54.99，并提供加入购物车按钮。页面卖点称 available in 4 sizes，与选择器和五档尺码表不一致。"
+    },
+    "officialFranceCrossCheck": {
+      "url": "https://www.decathlon.fr/p/gilet-de-protection-dorsale-vtt-ski-et-snowboard-junior-dbck-500-orange/312102/c125m9002193",
+      "evidence": "法国官方同系列页面标注 DBCK 500 Junior、橙色变体 ID 9002193，同样列出 6/8/10/12/14 岁五个选项和相同的身高/胸围建议表；当前标价 EUR 54.99。不同颜色及区域报价分别保存。"
+    },
+    "sizeChart": {
+      "url": "https://www.decathlon.co.uk/p/junior-mtb-ski-and-snowboard-back-protector-vest-dbck-500/312102/c251m8585102",
+      "crossCheckUrl": "https://www.decathlon.fr/p/gilet-de-protection-dorsale-vtt-ski-et-snowboard-junior-dbck-500-orange/312102/c125m9002193",
+      "evidence": "英法官方尺码表一致：6 岁身高 115–124 cm（胸围 58–61 cm）；8 岁 124–133 cm（61–64.5 cm）；10 岁 133–142 cm（64.5–68.5 cm）；12 岁 142–151 cm（68.5–75.5 cm）；14 岁 152–162 cm（75.5–85.5 cm）。官方明确身高是主要选码依据，胸围仅供参考。"
+    },
+    "protectionAndMaterials": {
+      "url": "https://www.decathlon.co.uk/p/junior-mtb-ski-and-snowboard-back-protector-vest-dbck-500/312102/c251m8585102",
+      "evidence": "官方商品描述区写 EN 1621-2 Level 1，但同页 Testing 区写 EN 1621-1 Level 1；两处标准存在冲突。另确认全背覆盖、弹性注塑泡棉背心、侧边调节、透气侧片；用于山地自行车、双板或单板滑雪。成分：泡棉 100% 聚氨酯；主体 14% 氨纶/86% 聚酯；包边 22% 氨纶/78% 聚酰胺；拼片 35% 氨纶/65% 聚酰胺。"
+    },
+    "ziprotecCompatibility": {
+      "url": "https://www.decathlon.co.uk/p/junior-mtb-ski-and-snowboard-back-protector-vest-dbck-500/312102/c251m8585102",
+      "jacketStyleCodes": ["8829923", "8829925"],
+      "evidence": "官方明确兼容 Teen Boys' SNB 500 Jacket (8829923) 与 Girls' SNB 500 Jacket (8829925)。ZIPROTEC 结构为外套内侧附加拉链及背部挂点。此证据不扩展为兼容全部儿童或成人款式。"
+    },
+    "exchangeRate": {
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+      "date": "2026-10-14",
+      "gbpPerEur": 0.84385,
+      "cnyPerEur": 7.4925,
+      "formula": "GBP 44.99 / 0.84385 × 7.4925 = CNY 399.46"
+    }
+  },
+  "priceDecision": {
+    "ukSalePrice": {"amount": 44.99, "currency": "GBP", "market": "United Kingdom"},
+    "ukFormerPrice": {"amount": 54.99, "currency": "GBP"},
+    "ukConvertedReference": {"amount": 399.46, "currency": "CNY"},
+    "franceVariantPrice": {"amount": 54.99, "currency": "EUR", "variant": "orange / ID 9002193", "convertedCny": 412.01},
+    "decision": "英国当前促销价与法国另一颜色变体常规价分开保存，均为海外地区参考，不是中国售价。"
+  },
+  "seasonDecision": "英法商品页均未明确雪季；种子 year 2026 只是本轮采集/归档标签。",
+  "image": {
+    "url": "https://contents.mediadecathlon.com/p2598966/k%24261e05a2209b76268de8ce15bc58fc5c/picture.jpg?f=3000x0&format=auto",
+    "source": "Decathlon official product image CDN",
+    "retrievalNote": "英国官方商品图库第 1/7 张；2026-10-15 HTTP HEAD 返回 200 image/jpeg，本站展示授权状态待核。"
+  },
+  "galleryImages": [
+    {"order": 1, "url": "https://contents.mediadecathlon.com/p2598966/k%24261e05a2209b76268de8ce15bc58fc5c/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 2, "url": "https://contents.mediadecathlon.com/p2027367/k%24e0d4e6dc625104285c5cb9f1cc726104/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 3, "url": "https://contents.mediadecathlon.com/p2027408/k%248d4577a26aa9d424e1d34738bedaac4a/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 4, "url": "https://contents.mediadecathlon.com/p2027427/k%24cde022422ac3a732a249e5388c28fd45/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 5, "url": "https://contents.mediadecathlon.com/p2027379/k%24c4329196fa7e5257d20d041739c055f6/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 6, "url": "https://contents.mediadecathlon.com/p2569199/k%245f373510d1c08596894d727329492b89/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"}
+  ],
+  "limitations": [
+    "官网卖点称四个尺码，但选项和尺码建议表都列五码；保留差异，不猜测应删除哪一码。",
+    "身高为官方主要选码依据，胸围是参考值；不是护具成衣测量尺寸。",
+    "商品页描述区与 Testing 区分别给出 EN 1621-2 Level 1 和 EN 1621-1 Level 1；该 Junior 款暂未找到对应符合性声明，等级待官方确认。",
+    "英镑/欧元折算是地区价格参考，不代表中国售价；价格和库存可能变化。",
+    "商品页未确认雪季；2026 仅为归档标签。",
+    "英国商品页标示图库 7 张；本轮从公开图链提取并核验 6 张，均返回 HTTP 200 image/jpeg 并已收录，第 7 张图链未能从页面提取。图库展示授权仍待核。"
+  ]
+}

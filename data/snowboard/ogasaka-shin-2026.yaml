@@ -38,10 +38,10 @@ specs:
     - { size: "SW158", effectiveEdge: 1240, contactLength: 955, noseWidth: 307, waistWidth: 259, tailWidth: 293, sidecutRadius: 8.7, setback: -12.5, stanceWidth: "540 mm" }
     - { size: "SWCA163", effectiveEdge: 1310, contactLength: 1070, noseWidth: 310, waistWidth: 261, tailWidth: 296, sidecutRadius: 9.5, setback: 20, stanceWidth: "540 mm" }
     - { size: "SW172", effectiveEdge: 1360, contactLength: 1050, noseWidth: 312, waistWidth: 270, tailWidth: 299, sidecutRadius: 12.5, setback: -5, stanceWidth: "540 mm" }
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  priceCheckedAt: 2026-10-15
+  priceStatus: 2026-10-15 复核 OGASAKA 官方 25/26 SHIN 160 页：含税日本挂牌价 JPY 121,000；按 2026-10-02 JPY/CNY 0.042451 折算为 CNY 5,137。这是日本官方挂牌价的历史汇率估值，不是中国售价，未核到中国销售报价或当前库存。
 images:
-  - url: "https://www.ogasaka-snowboard.com/2025-img/12_shin_160.png"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/2307fc308389eeaa60ae1e83e044f9812b0bd95abd5ba49b8cc228253afec480.webp"
     kind: face
     alt: OGASAKA SHIN 160 2026 单板图片
     source: OGASAKA 官方 SHIN 商品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

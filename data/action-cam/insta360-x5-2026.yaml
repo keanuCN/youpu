@@ -4,7 +4,13 @@ brand: insta360
 model: X5
 year: 2026
 title: 影石Insta360 X5 — 8K 旗舰款全景运动相机
+price:
+  min: 2898
+  max: 2898
+  currency: CNY
 specs:
+  priceSource: https://store.insta360.com/cn/product/x5
+  priceStatus: 影石中国官网于 2026-10-15 显示 X5 标准套餐 CNY 2898，页面原价 CNY 3798；套餐不含存储卡。
   cameraType: action
   sensor: 1/1.28 英寸传感器
   maxVideo: 8K/30fps

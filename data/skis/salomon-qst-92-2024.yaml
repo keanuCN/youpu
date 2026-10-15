@@ -1,0 +1,73 @@
+slug: salomon-qst-92-2024
+category: skis
+brand: salomon
+model: QST 92
+year: 2024
+title: Salomon QST 92 2023/24
+price:
+  min: 2530.02
+  max: 2530.02
+  currency: CNY
+one_liner: 92 mm 板腰的全山地自由滑雪板；此档案记录 2023/24 旧款，不代表后续 QST 92 或 QST 94。
+specs:
+  lengthOptions: 160 / 168 / 176 / 184 cm
+  waistWidth: 92
+  turnRadius: 14
+  turnRadiusReferenceLength: 168 cm
+  sizeSpecs:
+    - size: 160 cm
+      noseWidth: 126
+      waistWidth: 92
+      tailWidth: 114
+      turnRadius: 13
+      weightPerSki: 1560
+    - size: 168 cm
+      noseWidth: 127
+      waistWidth: 92
+      tailWidth: 115
+      turnRadius: 14
+      weightPerSki: 1680
+    - size: 176 cm
+      noseWidth: 128
+      waistWidth: 92
+      tailWidth: 116
+      turnRadius: 15
+      weightPerSki: 1800
+    - size: 184 cm
+      noseWidth: 129
+      waistWidth: 92
+      tailWidth: 117
+      turnRadius: 16
+      weightPerSki: 1940
+  profile: Rocker-Camber-Rocker（Freeride Profile）
+  core: 全杨木木芯
+  construction: Full Sandwich Sidewalls；Ti Binding Reinforcement
+  technologies: C/FX；Double Sidewalls
+  weightPerSki: 1680
+  weightReferenceLength: 168 cm
+  terrain: 全山地 / 自由滑
+  skierLevel: 中级
+  bindingSetup: 裸板，不含固定器
+  weightBasis: Salomon 编制的 2023/24 日本规格目录按每只雪板列重；数据仅适用于表内对应长度，不含固定器。
+  geometryNotes: 货号 L47232400+ 的 2023/24 目录逐尺码表列出四个长度的板头/腰/尾宽、半径和单只重量。该旧货号不可用于证明 2026/27 年款；后续 QST 92/94 应按其自身 SKU 和雪季区分。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  mountingNotes: 裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。
+  seasonEvidence: Salomon 编制的 2023/24 日本雪板规格目录以货号 L47232400+ 列出 QST 92 与四个长度。Salomon 当前官方产品页仍显示相同货号，但没有单独标注雪季；本档案按同货号 2023/24 目录归档，不标为 2026/27。
+  sourceCheckedAt: 2026-10-14
+  regionalRetailPrice: JPY 59,900
+  priceMarket: Alpen 日本零售页；2023/24、176 cm 单板
+  priceSource: https://store.alpen-group.jp/Form/Product/ProductDetail.aspx?bid=0247&pid=5031102414-0001&shop=0
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceCheckedAt: 2026-10-15
+  priceStatus: Alpen 页面标题标注 23/24 QST 92，制造商货号 L47232400，176 cm 选项挂牌 JPY 59,900（页面同时列制造商建议价 JPY 93,500），且为单板不含固定器；页面说明库存与实体店共享，下单后仍可能取消。按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 2,530.02。仅是日本商家单一长度的旧款挂牌参考，不代表中国售价或稳定库存；Salomon 官方页当前标记该商品不在官网销售。
+  compatibilitySources: https://www.salomon.com/en-gb/product/qst-92-li4911/L47232400%2B；https://www.grip-walk.com/faq/
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-gb/product/qst-92-li4911/L47232400%2B
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/108d820dfaa9bdc4f1c71b035cf580763d58c8c895a4cb3cceee5e8305bca8b9.webp"
+    kind: face
+    alt: Salomon QST 92 2023/24 雪板图
+    source: Salomon 官方商品页图片 CDN；页面货号 L47232400+ 与本档案相符（图片授权待核）
+    sort_order: 0
+status: published

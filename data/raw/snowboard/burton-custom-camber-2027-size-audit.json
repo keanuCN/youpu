@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-15",
+  "slug": "burton-custom-camber-2027",
+  "source": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881",
+  "sourceType": "Burton 官方商品页尺码表",
+  "seasonVariant": "Custom Camber 2027 / 27WIN-106881",
+  "riderWeightUnit": "kg",
+  "sizeRows": [
+    { "size": "150", "riderWeight": "54–82 kg" },
+    { "size": "154", "riderWeight": "54–82 kg" },
+    { "size": "156", "riderWeight": "68–91 kg" },
+    { "size": "158", "riderWeight": "68–91 kg" },
+    { "size": "162", "riderWeight": "82–118 kg+" },
+    { "size": "154W", "riderWeight": "54–82 kg" },
+    { "size": "158W", "riderWeight": "68–91 kg" },
+    { "size": "162W", "riderWeight": "82–118 kg+" },
+    { "size": "166W", "riderWeight": "82–118 kg+" },
+    { "size": "170W", "riderWeight": "82–118 kg+" }
+  ],
+  "decision": "将官方表中每个板长的体重区间逐字转录到 sizeSpecs.riderWeight。不同尺码范围重叠按官方原值保留；该范围是选板参考，不单独决定尺码。",
+  "limitations": [
+    "官方尺码表未说明体重是否包含装备，因此不作口径推断。",
+    "中国 2026/27 精确款人民币价格仍待核；本记录只补尺寸推荐体重。"
+  ]
+}

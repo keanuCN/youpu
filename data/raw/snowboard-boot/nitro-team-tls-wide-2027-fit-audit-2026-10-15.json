@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-15",
+  "season": "2026/27",
+  "regular": {
+    "model": "Nitro Team TLS",
+    "sku": "13BT11008",
+    "source": "https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-boots-1"
+  },
+  "wide": {
+    "model": "Nitro Team TLS Wide",
+    "sku": "13BT11007",
+    "source": "https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-wide-boots-1"
+  },
+  "manufacturerStatements": [
+    "The standard Team TLS page says a wider-fitting version is also available.",
+    "Nitro describes the Wide version as providing additional room for snowboarders who need it while retaining the Team's versatile flex and all-mountain performance.",
+    "Nitro's official German 2026/27 Team TLS Wide page says: 'Die Wide Version bietet eine um 4mm breitere Passform' (the Wide version offers a fit that is 4 mm wider). The page does not define a measurement location or method.",
+    "The Wide product page lists men's US 7-15, Mondopoint 25.0-33.0, EU 38 2/3-49 1/3 and UK 6-14. The regular page lists the same model size range. These are published size ranges, not proof of current inventory in each size."
+  ],
+  "newOfficialMeasurementWording": {
+    "source": "https://www.nitrosnowboards.com/de/collections/all-26-27/products/team-tls-wide-boots-1",
+    "originalGerman": "Die Wide Version bietet eine um 4mm breitere Passform.",
+    "checkedAt": "2026-10-15",
+    "interpretation": "The manufacturer gives a 4 mm relative fit-width statement, but does not define whether this is last width, shell, liner, a specific foot area, or size-specific. Do not convert it into an absolute boot measurement."
+  },
+  "notPublished": [
+    "Last width in millimeters by boot size",
+    "Measurement definition and location for the 4 mm wider-fit claim",
+    "Outer-shell width difference",
+    "Foot-volume measurement or a high-instep rating"
+  ],
+  "decision": "Retain separate regular and wide product records because Nitro assigns distinct model/SKU families. Record the official German page's 4 mm relative fit-width statement verbatim with its undefined measurement scope; do not present it as a per-size last, shell, or liner measurement. Foot volume remains unknown."
+}

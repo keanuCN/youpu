@@ -9,6 +9,7 @@ import {
 import { GEAR, gearOfCategory, getGear } from "../data/boards";
 import { flexBucket, isLive } from "../data/categories";
 import { API_BASE } from "./api";
+import { removeInlinePriceClaims } from "./format";
 import { isAllowedImageUrl, resolveImageUrl } from "./image-url";
 import type { FitGuide, FitGuideRow, GearAnalysis, GearItem, GalleryShot } from "../types";
 import { sizeSpecsOf } from './size-specs';
@@ -123,7 +124,7 @@ function priceOf(item: ApiProduct, fallback?: GearItem): number {
 function analysisOf(item: ApiProduct, fallback?: GearItem): GearAnalysis {
   if (fallback) return fallback.analysis;
   return {
-    verdict: item.oneLiner ?? "",
+    verdict: removeInlinePriceClaims(item.oneLiner ?? ""),
     strengths: [],
     weaknesses: [],
     fits: [],

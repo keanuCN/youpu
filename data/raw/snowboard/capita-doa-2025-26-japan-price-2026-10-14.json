@@ -1,0 +1,33 @@
+{
+  "slug": "capita-defenders-of-awesome-2026",
+  "model": "CAPiTA D.O.A.",
+  "seedSeason": "2025/26",
+  "checkedAt": "2026-10-14",
+  "source": {
+    "url": "https://golgoda.com/PDF/25-26%20CAPiTA%20PRICE.pdf",
+    "publisher": "Golgoda retailer price-list PDF",
+    "documentTitle": "25/26 CAPiTA 商品ラインナップ・価格一覧",
+    "documentLastUpdated": "2025-01-15",
+    "priceBasis": "上代（税抜）; provisional list price, not a current transaction quote"
+  },
+  "observedPrice": {
+    "amount": 81000,
+    "currency": "JPY",
+    "sizes": ["148", "150", "152", "154", "156", "158", "160", "162", "164", "151W", "153W", "155W", "157W", "159W", "161W", "163W"],
+    "standardSizeManufacturerPartFamily": "21030300-MSC",
+    "wideSizeManufacturerPartFamily": "21030400-MSC",
+    "evidence": "PDF rows identify D.O.A., 25/26, each listed size, JPY 81,000 pre-tax, and corresponding manufacturer part number."
+  },
+  "chinaMarketAudit": {
+    "status": "no_verifiable_cny_price_found",
+    "assessment": "This is an exact-season Japanese retailer list price, but it is explicitly tax-exclusive, provisional, and dated 2025-01-15. It is not a mainland-China price or a current payable quote. Do not convert it into or substitute it for the seed's CNY value.",
+    "seedPriceDisposition": "Keep the existing CNY 5,299 field unchanged for now; its China-market source and capture date remain unverified, as the seed already states."
+  },
+  "exclusions": [
+    {
+      "source": "CAPiTA official 2027 D.O.A. product page",
+      "url": "https://capitasnowboarding.com/products/capita-d-o-a-mens-snowboard-2027",
+      "reason": "The page is for 2026/27, while this seed is 2025/26. Its regional price must not be attributed to the seed."
+    }
+  ]
+}

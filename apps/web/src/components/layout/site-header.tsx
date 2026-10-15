@@ -20,6 +20,7 @@ import { CategoryPanel } from "./category-panel";
  * （面板由 CATEGORY_TREE 配置驱动，新增品类自动出现，无需改导航）。
  */
 const NAV = [
+  { label: "科普", href: "/guides" },
   { label: "榜单", href: "/rankings" },
   { label: "参数对比", href: "/compare" },
   { label: "选装备问卷", href: "/quiz" },
@@ -31,13 +32,31 @@ export function SiteHeader() {
   const profile = me.profile;
   const [q, setQ] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
+  const [categoryOpen, setCategoryOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
+  const categoryCloseTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const unread = me.notifications.filter((n) => !n.read).length;
 
   useEffect(() => {
     if (searchOpen) searchRef.current?.focus();
   }, [searchOpen]);
+
+  useEffect(() => () => {
+    if (categoryCloseTimerRef.current) clearTimeout(categoryCloseTimerRef.current);
+  }, []);
+
+  const openCategoryMenu = () => {
+    if (categoryCloseTimerRef.current) clearTimeout(categoryCloseTimerRef.current);
+    categoryCloseTimerRef.current = null;
+    setCategoryOpen(true);
+  };
+
+  const scheduleCategoryMenuClose = () => {
+    if (categoryCloseTimerRef.current) clearTimeout(categoryCloseTimerRef.current);
+    categoryCloseTimerRef.current = setTimeout(() => setCategoryOpen(false), 150);
+  };
 
   const submitSearch = () => {
     const query = q.trim();
@@ -60,7 +79,7 @@ export function SiteHeader() {
 
       <div className="mx-auto flex h-14 max-w-[1400px] items-center gap-4 px-5 sm:px-8">
         {/* 移动端菜单 */}
-        <Sheet>
+        <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className="lg:hidden" aria-label="打开菜单">
               <Menu size={18} strokeWidth={1.5} />
@@ -87,7 +106,7 @@ export function SiteHeader() {
                 个人中心
               </Link>
             </nav>
-            <CategoryPanel />
+            <CategoryPanel onNavigate={() => setMobileMenuOpen(false)} />
           </SheetContent>
         </Sheet>
 
@@ -99,10 +118,17 @@ export function SiteHeader() {
 
         {/* 桌面导航 */}
         <nav className="ml-2 hidden items-center gap-1 lg:flex">
-          <Popover>
+          <Popover
+            open={categoryOpen}
+            onOpenChange={(open) => {
+              if (!open && categoryCloseTimerRef.current) clearTimeout(categoryCloseTimerRef.current);
+              setCategoryOpen(open);
+            }}
+          >
             <PopoverTrigger asChild>
               <button
                 type="button"
+                onMouseLeave={scheduleCategoryMenuClose}
                 className="flex items-center gap-1 px-3 py-2 text-[13px] font-medium transition-colors hover:text-primary"
               >
                 <LayoutGrid size={14} strokeWidth={1.6} />
@@ -110,8 +136,13 @@ export function SiteHeader() {
                 <ChevronDown size={13} strokeWidth={1.6} />
               </button>
             </PopoverTrigger>
-            <PopoverContent align="start" className="w-[min(92vw,860px)] rounded-none border-foreground p-0">
-              <CategoryPanel />
+            <PopoverContent
+              align="start"
+              onMouseEnter={openCategoryMenu}
+              onMouseLeave={scheduleCategoryMenuClose}
+              className="w-[min(92vw,860px)] rounded-none border-foreground p-0"
+            >
+              <CategoryPanel onNavigate={() => setCategoryOpen(false)} />
             </PopoverContent>
           </Popover>
           {NAV.map((n) => (

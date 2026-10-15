@@ -46,10 +46,10 @@ specs:
     - { size: "154W", effectiveEdge: 1220, contactLength: 1180, noseWidth: 297, waistWidth: 255, tailWidth: 297, sidecutRadii: "8.8/8.5/8.8 m", setback: 17, stanceWidth: "540 mm" }
     - { size: "156W", effectiveEdge: 1240, contactLength: 1200, noseWidth: 300, waistWidth: 258, tailWidth: 300, sidecutRadii: "9.1/8.8/9.1 m", setback: 18, stanceWidth: "560 mm" }
     - { size: "158W", effectiveEdge: 1260, contactLength: 1260, noseWidth: 303, waistWidth: 261, tailWidth: 303, sidecutRadii: "9.3/9.0/9.3 m", setback: 19, stanceWidth: "560 mm" }
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  priceCheckedAt: 2026-10-15
+  priceStatus: 2026-10-15 复核 OGASAKA 官方 25/26 CT 页：标准版含税 JPY 114,400、宽版含税 JPY 116,600。本档案代表 156 cm 标准版，按 2026-10-02 JPY/CNY 0.042451 折算为 CNY 4,856；这是日本官方挂牌价的历史汇率估值，不是中国售价，未核到中国销售报价或当前库存。
 images:
-  - url: "https://www.ogasaka-snowboard.com/2025-img/03_ct_02.png"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/4c125496ae4d2c0a611612d05e50314a0b03337f270d99704fe06d5d62fb278b.webp"
     kind: face
     alt: OGASAKA CT 2026 单板图片
     source: OGASAKA 官方 CT 商品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

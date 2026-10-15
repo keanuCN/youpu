@@ -1,0 +1,29 @@
+{
+  "slug": "burton-mission-re-flex-2027",
+  "model": "Burton Mission Re:Flex",
+  "season": "2026/27",
+  "productId": "105461",
+  "variantCode": "27WIN-105461",
+  "market": "Burton Japan official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 38500,
+    "currency": "JPY",
+    "source": "https://jp.burton.com/ja-jp/products/mens-burton-mission-re-flex-snowboard-bindings-105461"
+  },
+  "convertedReference": {
+    "amount": 1626.14,
+    "currency": "CNY",
+    "method": "JPY 38,500 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan official-store reference only; not a mainland China selling price.",
+      "Shipping, import charges, and tax treatment at checkout are not included or confirmed.",
+      "Price and size availability can change; check the selected variant at checkout."
+    ]
+  },
+  "observedSizes": ["S", "M", "L"],
+  "soldOutAtCapture": ["M", "L"],
+  "notes": "The official page identifies the 2026/27 model/color code 27WIN-105461. M and L were marked sold out in the captured page; this is a transient inventory observation. ECB reference rates are informational, not transaction rates."
+}

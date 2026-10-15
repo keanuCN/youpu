@@ -1,0 +1,19 @@
+{
+  "brand": "COSONE",
+  "capturedAt": "2026-10-15",
+  "sources": [
+    "https://www.jd.com/pinpai1/131817092e46a37f3f98.html",
+    "https://item.jd.com/10126434518310.html",
+    "https://item.jd.com/10233872436423.html",
+    "https://item.jd.com/10174325508787.html",
+    "https://thesnowfever.com/detail/---8947"
+  ],
+  "catalogLeads": [
+    { "model": "大鸟 4.0", "seasonClaim": "25-26 / 2025 款 in JD listing title", "observedLengthsCm": [150, 152, 155, 157, 168], "note": "Variant titles were visible in JD catalog/search; product detail page did not expose readable specifications or a stable price." },
+    { "model": "5.0 大鸟", "observedVariant": "5.0 黑鸟 152 cm", "note": "Listed on COSONE JD shop page as a preorder; no accessible specification or final price." },
+    { "model": "锤头板战舰", "observedVariant": "三星战舰 148 cm", "note": "Listed in JD catalog; marketing title mentions carving, but no accessible specification or final price." },
+    { "model": "全能板龙猫 / 飞天", "observedVariant": "龙猫 + binding + upgraded boot 150 cm", "note": "Bundle listing; not enough evidence to separate the board price or confirm board specifications." },
+    { "model": "鹤 全能平花板", "seasonClaim": "19/20", "observedPrice": { "amount": 3680, "currency": "CNY", "qualifier": "starting price from SnowFever historical profile" }, "note": "Historical community profile only; stale price and no verified technical specifications." }
+  ],
+  "decision": "Keep COSONE product records in draft until a readable official or authorized retailer detail page provides model-specific specifications, size chart, and current price. Do not infer specs from marketing names or bundle listings."
+}

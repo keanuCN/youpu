@@ -1,5 +1,6 @@
 {
   "capturedAt": "2026-10-12T06:20:42.228Z",
+  "recheckedAt": "2026-10-14",
   "target": {
     "slug": "jones-hovercraft-2-0-2027",
     "category": "snowboard",
@@ -24,7 +25,7 @@
     "userAgent": "youpu-collector/0.1 (+https://xiaopang.club/)"
   },
   "observedSku": "J.26.SNU.HVC.XX.144.1",
-  "decision": "不回写 2027 seed：SKU 属于 2026，美国官网复查也显示季节冲突。",
+  "decision": "本记录保留 2026-10-14 首轮复核时的判断：当时只找到 Jones 全球商品页的 J.26 SKU，未找到 J.27 对应数据，因此暂缓回写。2026-10-14 后续补充核验发现 Jones 日本官方代理商 Hasco 的 26/27 商品分类明确列出 Hovercraft 2.0，并提供六个尺码的当季地区商品资料；因此已更新 2027 seed 的六档结构化数据，但精确制造商 SKU 仍待 26/27 目录页进一步确认。完整新证据见 data/raw/snowboard/jones/hovercraft-2-0-2026-27.json。",
   "validation": {
     "identityMatch": true,
     "seasonMatch": null,
@@ -45,5 +46,12 @@
         "message": "页面显式年份与目标 2027 不一致，不能把当前页面当作历史季节数据"
       }
     ]
+  },
+  "officialPageRecheckedAt": "2026-10-14",
+  "latestOfficialPageCheck": {
+    "url": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard",
+    "visibleSku": "J.26.SNU.HVC.XX.144.1",
+    "visibleSizesCm": [144, 148, 152, 156, 160, 164],
+    "result": "Official current manufacturer product page still identifies the selected item as J.26 and does not display J.27. This alone remains insufficient for 2027 attribution. Later evidence from the official Japanese distributor's 26/27 lineup and product page was added separately; its season/SKU linkage is documented with the remaining uncertainty in data/raw/snowboard/jones/hovercraft-2-0-2026-27.json."
   }
 }

@@ -1,0 +1,28 @@
+{
+  "slug": "k2-taro-tamai-snowsurfer-rs-2027",
+  "model": "K2 Taro Tamai Snowsurfer RS Men's Snowboard Boots 2027",
+  "season": "2026/27 (K2 names the model year 2027)",
+  "articleRef": "KB261654",
+  "market": "K2 US official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 669.95,
+    "currency": "USD",
+    "source": "https://k2snow.com/en-us/c/snowboard-boots/mens-snowboard-boots/"
+  },
+  "productSource": "https://k2snow.com/en-sg/p/taro-tamai-snowsurfer-rs-mens-snowboard-boot-kb261654",
+  "convertedReference": {
+    "amount": 4484.50,
+    "currency": "CNY",
+    "method": "USD 669.95 / EUR-USD 1.1188 * EUR-CNY 7.4890",
+    "exchangeRateDate": "2026-10-13",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "K2 US official-store reference only; not a mainland China selling price.",
+      "The US category listing identifies the RS men's 2027 model and price; the matching product URL carries article reference KB261654.",
+      "ECB reference rates are informational, not transaction rates.",
+      "US taxes, shipping, and import charges are excluded or unconfirmed; price and availability can change."
+    ]
+  },
+  "notes": "K2's US official men's snowboard boot listing shows the Taro Tamai Snowsurfer RS Men's model year 2027 at USD 669.95. The unqualified Snowsurfer is a different model and must not be confused with the RS model recorded here."
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "atomic-redster-q7-2027",
+  "model": "Atomic Redster Q7 Revoshock C + MI 12 GW",
+  "season": "2026/27",
+  "productId": "AASS03788",
+  "market": "Atomic US official online store",
+  "capturedAt": "2026-10-15",
+  "source": "https://www.atomic.com/en-us/products/redster-q7-revoshock-c-mi-12-gw-aa7471-202600",
+  "selectedVariant": "160 cm",
+  "listedPrice": {
+    "amount": 1030,
+    "currency": "USD",
+    "taxIncluded": false,
+    "displayedTaxText": "exc. VAT"
+  },
+  "convertedReference": {
+    "amount": 6893.50,
+    "currency": "CNY",
+    "method": "USD 1,030 / EUR-USD 1.1195 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html"
+  },
+  "availabilityAtCapture": "页面当前选中 160 cm，并显示仅余 2 件；选项中还列有 153/167/174/181 cm，但未分别核对其价格或库存。",
+  "shippingLimitation": "Atomic 美国商品页说明仅向 Atomic 美国网店服务国家配送，不提供国际配送。",
+  "limitations": [
+    "这是 Atomic 美国地区的未税挂牌价，不是中国售价或成交价。",
+    "价格和库存只对应页面当时选中的 160 cm 变体；其它长度的价格与库存未核实。",
+    "美国页面不支持国际配送，未含美国销售税、跨境运输及进口费用。",
+    "ECB 参考汇率用于折算，不是实际支付汇率。"
+  ],
+  "decision": "与日本官方店 160 cm 含税挂牌价分市场记录。日本 CNY 6,035.31 仍作为种子主参考；本条仅作美国官方未税价格对照，不合并为中国价格。"
+}

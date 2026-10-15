@@ -4,29 +4,62 @@ brand: atomic
 model: Redster Q7 Revoshock C
 year: 2026
 title: Atomic Redster Q7 Revoshock C 2025/26
-one_liner: Redster Q 系列雪道板，官方目录列出 153–181 cm 尺寸范围。
+price:
+  min: 6443.48
+  max: 6443.48
+  currency: CNY
+one_liner: Redster Q 系列雪道板，2025/26 厂商目录列出 152–176 cm 四档尺寸。
 specs:
-  lengthOptions: 153 / 160 / 167 / 174 / 181 cm
+  lengthOptions: 152 / 160 / 168 / 176 cm
+  sizeSpecs:
+    - size: 152 cm
+      noseWidth: 120.5
+      waistWidth: 75
+      tailWidth: 104.5
+      turnRadius: 12.3
+      notes: 厂商目录货号 AASS03668；重量仅在 168 cm 提供。
+    - size: 160 cm
+      noseWidth: 123
+      waistWidth: 75
+      tailWidth: 107
+      turnRadius: 13
+      notes: 厂商目录货号 AASS03668；重量仅在 168 cm 提供。
+    - size: 168 cm
+      noseWidth: 125.5
+      waistWidth: 75
+      tailWidth: 109.5
+      turnRadius: 13.5
+      weightPerSki: 2643
+      notes: 厂商目录货号 AASS03668；参考重量为单只，含板和固定器。
+    - size: 176 cm
+      noseWidth: 128
+      waistWidth: 75
+      tailWidth: 112
+      turnRadius: 14.2
+      notes: 厂商目录货号 AASS03668；重量仅在 168 cm 提供。
   terrain: 雪道 / 全地域
   skierLevel: 中级至进阶
   bindingSetup: 含 MI 12 GW 固定器
-  weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
-  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
-  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
-    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  weightBasis: 厂商目录仅给出 168 cm 单只参考重量 2643 g，含板和固定器；其它长度不推算。
+  geometryNotes: 2025/26 厂商目录按 AASS03668 提供四档逐长度尺寸与半径；重量参考值对应 168 cm，含板和固定器。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
-  sourceCheckedAt: 2026-10-13
+  seasonEvidence: Atomic 2025/26 厂商目录确认 Q7 货号 AASS03668，长度 152/160/168/176 cm。产品图现改为 Vail 25/26 同货号 AASS03668 零售页配图；该图不是 Atomic 官方 CDN 图，转载展示授权待核。
+  sourceCheckedAt: 2026-10-14
+  priceCheckedAt: 2026-10-14
+  listedPrice: EUR 859.99
+  priceMarket: 奥地利/德国零售商 2025/26 固定器套装挂牌价
+  priceSource: https://www.ski-andmore.de/ski-alpin/sportcarver/atomic-redster-q7-revoshock-c-inkl-mi-12-gw-bindung-2025-26_113858
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 精确型号/季节零售页以货号 AASS03668-176 列示 2025/26 Q7 + MI 12 GW 套装原价 EUR 859.99；按 ECB 2026-10-14 EUR/CNY 7.4925 折算 CNY 6,443.48。零售商当时另列促销价，未将促销价写入种子；不是中国售价，跨境费用未计。
   compatibilitySources: https://www.atomic.com/en-us/collections/ato-men-skis-all-skis；https://www.grip-walk.com/faq/
 images:
-  - url: "https://cdn.amersports.com/017bc76f-f5cc-42b8-a786-b49f00cdff46/ATP_AASS0\
-      3788_0_GHO_Redster_Q7_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format\
-      =auto&height=1350&quality=80&width=1800"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/6d2e0258e4170d5a18f7361161603a20eec81fc07c8f748ec706c37fba4f42da.webp"
     kind: face
-    alt: Atomic Redster Q7 Revoshock C 2025/26 官方雪板商品图
-    source: Atomic 官方商品页（图片使用授权待核）
+    alt: Atomic Redster Q7 Revoshock C + MI 12 GW 2025/26（AASS03668）商品图
+    source: Rakuten Vail 25/26 商品页；商品货号 AASS03668 匹配，图片展示授权待核
     sort_order: 0
 data_source:
   kind: official
-  origin_url: https://www.atomic.com/en-us/collections/ato-men-skis-all-skis
-status: draft
+  origin_url: https://www.sport-hun.at/wp-content/uploads/2025/03/Atomic-Katalog-2526.pdf
+status: published

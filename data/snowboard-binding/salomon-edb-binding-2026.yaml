@@ -4,23 +4,45 @@ brand: salomon
 model: EDB
 year: 2026
 title: Salomon EDB 2026
+price:
+  min: 1672.85
+  max: 1672.85
+  currency: CNY
 specs:
   terrain:
     - all-mountain
   entrySystem: strap
   mountingSystem: Universal Disc；兼容主要雪板安装系统
-  bindingSizeGuide: Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。
+  bindingSizeGuide: Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。
+  sizeChart:
+    - { "size": "S", "usMen": "3–8", "usWomen": "3–9", "eu": "34.5–40.5", "uk": "2–7", "mondo": "21.5–26" }
+    - { "size": "M", "usMen": "7.5–10.5", "usWomen": "8.5–11.5", "eu": "40–43.5", "uk": "7–9.5", "mondo": "25.5–28.5" }
+    - { "size": "L", "usMen": "10–13.5", "usWomen": "11–14.5", "eu": "43–47", "uk": "9–12.5", "mondo": "28–31.5" }
+  sizeChartCheckedAt: "2026-10-14"
+  sizeChartSource: https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men
   bootCompatibility: 常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。
   selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
   compatibilitySources: https://www.salomon.com/en-us/c/men/winter-equipment/snowboard/bindings
-  priceCheckedAt: 2026-10-12
-  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
+  priceCheckedAt: 2026-10-15
+  officialPrice: USD 249.95
+  priceMarket: Salomon 美国官网当前型号挂牌价；按 ECB 2026-10-14 汇率折算人民币
+  priceSource: https://www.salomon.com/en-us/product/edb-li6675/L49304400
+  priceStatus: 官方当前商品页列 USD 249.95，货号 L49304400；页面未直接标年款，价格仅作为同型号美国市场参考，不用于证明 2026 雪季，也不是中国售价。税费及跨境成本未计。
+  exchangeRate: EUR/USD 1.1195；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html
 images:
-  - url: https://cdn.dam.salomon.com/4e88d690-8431-4ab7-b0f7-b36001082530/L45439300/PNG-2000px-max-72dpi.png
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/8e16e8bb5f70079ebb4d4c89de48ccb2a0751fa49d505d7dc9bbec11a90ece67.webp
     kind: face
     alt: Salomon EDB 2026 商品图
     source: 品牌官方商品页公开图片；展示授权状态待核
     sort_order: 0
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 7.3
+  comfort: 6.2
+  versatility: 7.6
+  convenience: 6.2
+  value: 5.0
 status: published
 one_liner: Salomon 全山地固定器，官网当前目录同时提供该款与 EDB PRIME。
 data_source:

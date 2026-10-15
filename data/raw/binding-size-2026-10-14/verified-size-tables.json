@@ -1,0 +1,655 @@
+[
+  {
+    "slug": "nitro-fate-binding-2027",
+    "url": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/fate-womens-bindings-1",
+    "rows": [
+      {
+        "size": "S",
+        "usWomen": "4–7.5",
+        "mondo": "21–24.5",
+        "eu": "33.5–38"
+      },
+      {
+        "size": "S/M",
+        "usWomen": "6–11",
+        "mondo": "23–28",
+        "eu": "36–43"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Nitro 官方商品页面 Size Info；保留官网原有 EU、US 男/女、MP 口径。"
+  },
+  {
+    "slug": "nitro-one-binding-2027",
+    "url": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/one-bindings-1",
+    "rows": [
+      {
+        "size": "M",
+        "usMen": "7–10.5",
+        "mondo": "25–28.5",
+        "eu": "38.5–43.5"
+      },
+      {
+        "size": "L",
+        "usMen": "11–14",
+        "mondo": "29–32",
+        "eu": "44–48"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Nitro 官方商品页面 Size Info；保留官网原有 EU、US 男/女、MP 口径。"
+  },
+  {
+    "slug": "nitro-phantom-binding-2027",
+    "url": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/phantom-bindings-2",
+    "rows": [
+      {
+        "size": "M",
+        "usMen": "7–10.5",
+        "mondo": "25–28.5",
+        "eu": "38.5–43.5"
+      },
+      {
+        "size": "L",
+        "usMen": "11–14",
+        "mondo": "29–32",
+        "eu": "44–48"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Nitro 官方商品页面 Size Info；保留官网原有 EU、US 男/女、MP 口径。"
+  },
+  {
+    "slug": "nitro-phantom-plus-binding-2027",
+    "url": "https://www.nitrosnowboards.com/cs/collections/all-mens-bindings-26-27/products/phantom-bindings-3?variant=57278273716555",
+    "rows": [
+      {
+        "size": "M",
+        "usMen": "7–10.5",
+        "mondo": "25–28.5",
+        "eu": "38.5–43.5"
+      },
+      {
+        "size": "L",
+        "usMen": "11–14",
+        "mondo": "29–32",
+        "eu": "44–48"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Nitro 官方商品页面 Size Info；保留官网原有 EU、US 男/女、MP 口径。"
+  },
+  {
+    "slug": "nitro-poison-binding-2027",
+    "url": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/poison-womens-bindings-1",
+    "rows": [
+      {
+        "size": "S/M",
+        "usWomen": "6–11",
+        "mondo": "23–28",
+        "eu": "36–43"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Nitro 官方商品页面 Size Info；保留官网原有 EU、US 男/女、MP 口径。"
+  },
+  {
+    "slug": "nitro-rambler-binding-2027",
+    "url": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/rambler-bindings-1",
+    "rows": [
+      {
+        "size": "M",
+        "usMen": "7–10.5",
+        "mondo": "25–28.5",
+        "eu": "38.5–43.5"
+      },
+      {
+        "size": "L",
+        "usMen": "11–14",
+        "mondo": "29–32",
+        "eu": "44–48"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Nitro 官方商品页面 Size Info；保留官网原有 EU、US 男/女、MP 口径。"
+  },
+  {
+    "slug": "nitro-talent-binding-2027",
+    "url": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/talent-unisex-bindings-1",
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "3–6.5",
+        "usWomen": "3.5–7",
+        "mondo": "21–24.5",
+        "eu": "33.5–38"
+      },
+      {
+        "size": "M",
+        "usMen": "7–10.5",
+        "mondo": "25–28.5",
+        "eu": "38.5–43.5",
+        "usWomen": "7.5–11"
+      },
+      {
+        "size": "L",
+        "usMen": "11–14",
+        "mondo": "29–32",
+        "eu": "44–48",
+        "usWomen": "11.5–14.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Nitro 官方商品页面 Size Info；保留官网原有 EU、US 男/女、MP 口径。"
+  },
+  {
+    "slug": "nitro-team-binding-2027",
+    "url": "https://www.nitrosnowboards.com/products/team-bindings-1",
+    "rows": [
+      {
+        "size": "M",
+        "usMen": "7–10.5",
+        "mondo": "25–28.5",
+        "eu": "38.5–43.5"
+      },
+      {
+        "size": "L",
+        "usMen": "11–14",
+        "mondo": "29–32",
+        "eu": "44–48"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Nitro 官方商品页面 Size Info；保留官网原有 EU、US 男/女、MP 口径。"
+  },
+  {
+    "slug": "nitro-team-pro-binding-2027",
+    "url": "https://www.nitrosnowboards.com/products/team-pro-bindings-1",
+    "rows": [
+      {
+        "size": "S/M",
+        "usMen": "5–10",
+        "usWomen": "5.5–10.5",
+        "mondo": "23–28",
+        "eu": "36–43"
+      },
+      {
+        "size": "M",
+        "usMen": "7–10.5",
+        "mondo": "25–28.5",
+        "eu": "38.5–43.5"
+      },
+      {
+        "size": "L",
+        "usMen": "11–14",
+        "mondo": "29–32",
+        "eu": "44–48"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Nitro 官方商品页面 Size Info；保留官网原有 EU、US 男/女、MP 口径。"
+  },
+  {
+    "slug": "burton-cartel-re-flex-2027",
+    "url": "https://www.burton.com/en-au/products/mens-burton-cartel-re-flex-snowboard-bindings-105391",
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "6–8",
+        "usWomen": "5–9",
+        "eu": "38–41",
+        "uk": "5–7",
+        "mondo": "24–26"
+      },
+      {
+        "size": "M",
+        "usMen": "8–11",
+        "usWomen": "9–11",
+        "eu": "41–44",
+        "uk": "7–10",
+        "mondo": "26–29"
+      },
+      {
+        "size": "L",
+        "usMen": "10+",
+        "usWomen": "11+",
+        "eu": "43+",
+        "uk": "9+",
+        "mondo": "28+"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Burton 官方 Cartel Re:Flex 商品页 Binding to Snowboard Boot Size Chart；保留官方男女 US、EU、UK、Mondo 区间。",
+    "expectedSelectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 本轮官方型号证据未通过复核，现有尺寸不视为重新核实；详见待核记录。",
+    "selectionNotes": "按本型号官方表核对雪鞋 US 或 EU 码；M/L 区间存在重叠，边界码应以实际雪鞋试装，并检查鞋底居中、脚踝与脚趾绑带余量及后跟贴合。安装孔位按随附 Re:Flex 圆盘核对；Burton 3D 系统需另购适配圆盘。"
+  },
+  {
+    "slug": "flow-fuse-binding-2026",
+    "url": "https://eu.nidecker.com/en-int/products/flow-fuse-2026",
+    "rows": [
+      {
+        "size": "M",
+        "eu": "37–41"
+      },
+      {
+        "size": "L",
+        "eu": "41.5–44.5"
+      },
+      {
+        "size": "XL",
+        "eu": "45–49.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Nidecker/Flow 官方 2026 商品页的欧码尺码选项；仅录入商品页标示的 EU 范围，不推导 US/MP。",
+    "bindingSizeGuide": "Nidecker/Flow 2026 商品页标示 EU：M 37–41；L 41.5–44.5；XL 45–49.5。该商品页未将 EU 范围对应到 US 或 MP 尺码，暂不换算。",
+    "expectedBindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。"
+  },
+  {
+    "slug": "flow-fuse-hybrid-binding-2026",
+    "url": "https://eu.nidecker.com/en-int/products/flow-fuse-hybrid-2026",
+    "rows": [
+      {
+        "size": "M",
+        "eu": "37–41"
+      },
+      {
+        "size": "L",
+        "eu": "41.5–44.5"
+      },
+      {
+        "size": "XL",
+        "eu": "45–49.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Nidecker/Flow 官方 2026 商品页的欧码尺码选项；仅录入商品页标示的 EU 范围，不推导 US/MP。",
+    "bindingSizeGuide": "Nidecker/Flow 2026 商品页标示 EU：M 37–41；L 41.5–44.5；XL 45–49.5。该商品页未将 EU 范围对应到 US 或 MP 尺码，暂不换算。",
+    "expectedBindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。"
+  },
+  {
+    "slug": "jones-mercury-binding-2026",
+    "url": "https://www.jonessnowboards.com/products/mens-mercury-snowboard-binding-2026",
+    "rows": [
+      {
+        "size": "S",
+        "gender": "US 男款口径",
+        "usMen": "5–7",
+        "eu": "36.5–39.5",
+        "mondo": "23.5–25"
+      },
+      {
+        "size": "M",
+        "gender": "US 男款口径",
+        "usMen": "7.5–10",
+        "eu": "40–43",
+        "mondo": "25.5–28"
+      },
+      {
+        "size": "L",
+        "gender": "US 男款口径",
+        "usMen": "10.5+",
+        "eu": "43.5+",
+        "mondo": "28.5+"
+      },
+      {
+        "size": "S",
+        "gender": "US 女款口径",
+        "usWomen": "5–8.5",
+        "eu": "35–39.5",
+        "mondo": "22–25"
+      },
+      {
+        "size": "M",
+        "gender": "US 女款口径",
+        "usWomen": "9–11.5",
+        "eu": "40–42.5",
+        "mondo": "25.5–27.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Jones 官方 2026 型号页 Size chart；男款与女款分别保留官方尺码口径，型号选项页面显示 M/L 或 S/M/L。",
+    "expectedSelectionNotes": "原型号链接已跳转到固定器分类页，未找到 Mercury 2026 的型号级官方尺码表。不得套用 Mercury FASE 或其他型号的尺寸；按实物、原说明书和对应雪鞋试装。",
+    "selectionNotes": "按 Jones Mercury 2026 官方尺码表分别核对男款或女款口径；EU 区间边界需结合对应口径与实物雪鞋试装，并检查后跟、绑带和鞋底居中。不要把 Mercury FASE 的表当成本型号规格。"
+  },
+  {
+    "slug": "jones-orion-binding-2026",
+    "url": "https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
+    "rows": [
+      {
+        "size": "S",
+        "gender": "US 男款口径",
+        "usMen": "5–7",
+        "eu": "36.5–39.5",
+        "mondo": "23.5–25"
+      },
+      {
+        "size": "M",
+        "gender": "US 男款口径",
+        "usMen": "7.5–10",
+        "eu": "40–43",
+        "mondo": "25.5–28"
+      },
+      {
+        "size": "L",
+        "gender": "US 男款口径",
+        "usMen": "10.5+",
+        "eu": "43.5+",
+        "mondo": "28.5+"
+      },
+      {
+        "size": "S",
+        "gender": "US 女款口径",
+        "usWomen": "5–8.5",
+        "eu": "35–39.5",
+        "mondo": "22–25"
+      },
+      {
+        "size": "M",
+        "gender": "US 女款口径",
+        "usWomen": "9–11.5",
+        "eu": "40–42.5",
+        "mondo": "25.5–27.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Jones 官方 2026 型号页 Size chart；男款与女款分别保留官方尺码口径，型号选项页面显示 M/L 或 S/M/L。"
+  },
+  {
+    "slug": "salomon-district-binding-2026",
+    "url": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "3–8",
+        "usWomen": "3–9",
+        "eu": "34.5–40.5",
+        "uk": "2–7",
+        "mondo": "21.5–26"
+      },
+      {
+        "size": "M",
+        "usMen": "7.5–10.5",
+        "usWomen": "8.5–11.5",
+        "eu": "40–43.5",
+        "uk": "7–9.5",
+        "mondo": "25.5–28.5"
+      },
+      {
+        "size": "L",
+        "usMen": "10–13.5",
+        "usWomen": "11–14.5",
+        "eu": "43–47",
+        "uk": "9–12.5",
+        "mondo": "28–31.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Salomon 官方 snowboard-bindings 尺码指南与该型号官方商品页可选 S/M/L 对照核实；EU、US 男/女、UK、JP(cm) 均按官网原口径录入。",
+    "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+    "expectedBindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。"
+  },
+  {
+    "slug": "salomon-district-pro-binding-2026",
+    "url": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "3–8",
+        "usWomen": "3–9",
+        "eu": "34.5–40.5",
+        "uk": "2–7",
+        "mondo": "21.5–26"
+      },
+      {
+        "size": "M",
+        "usMen": "7.5–10.5",
+        "usWomen": "8.5–11.5",
+        "eu": "40–43.5",
+        "uk": "7–9.5",
+        "mondo": "25.5–28.5"
+      },
+      {
+        "size": "L",
+        "usMen": "10–13.5",
+        "usWomen": "11–14.5",
+        "eu": "43–47",
+        "uk": "9–12.5",
+        "mondo": "28–31.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Salomon 官方 snowboard-bindings 尺码指南与该型号官方商品页可选 S/M/L 对照核实；EU、US 男/女、UK、JP(cm) 均按官网原口径录入。",
+    "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+    "expectedBindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。"
+  },
+  {
+    "slug": "salomon-edb-binding-2026",
+    "url": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "3–8",
+        "usWomen": "3–9",
+        "eu": "34.5–40.5",
+        "uk": "2–7",
+        "mondo": "21.5–26"
+      },
+      {
+        "size": "M",
+        "usMen": "7.5–10.5",
+        "usWomen": "8.5–11.5",
+        "eu": "40–43.5",
+        "uk": "7–9.5",
+        "mondo": "25.5–28.5"
+      },
+      {
+        "size": "L",
+        "usMen": "10–13.5",
+        "usWomen": "11–14.5",
+        "eu": "43–47",
+        "uk": "9–12.5",
+        "mondo": "28–31.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Salomon 官方 snowboard-bindings 尺码指南与该型号官方商品页可选 S/M/L 对照核实；EU、US 男/女、UK、JP(cm) 均按官网原口径录入。",
+    "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+    "expectedBindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。"
+  },
+  {
+    "slug": "salomon-edb-prime-binding-2026",
+    "url": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "3–8",
+        "usWomen": "3–9",
+        "eu": "34.5–40.5",
+        "uk": "2–7",
+        "mondo": "21.5–26"
+      },
+      {
+        "size": "M",
+        "usMen": "7.5–10.5",
+        "usWomen": "8.5–11.5",
+        "eu": "40–43.5",
+        "uk": "7–9.5",
+        "mondo": "25.5–28.5"
+      },
+      {
+        "size": "L",
+        "usMen": "10–13.5",
+        "usWomen": "11–14.5",
+        "eu": "43–47",
+        "uk": "9–12.5",
+        "mondo": "28–31.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Salomon 官方 snowboard-bindings 尺码指南与该型号官方商品页可选 S/M/L 对照核实；EU、US 男/女、UK、JP(cm) 均按官网原口径录入。",
+    "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+    "expectedBindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。"
+  },
+  {
+    "slug": "salomon-highlander-binding-2026",
+    "url": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "3–8",
+        "usWomen": "3–9",
+        "eu": "34.5–40.5",
+        "uk": "2–7",
+        "mondo": "21.5–26"
+      },
+      {
+        "size": "M",
+        "usMen": "7.5–10.5",
+        "usWomen": "8.5–11.5",
+        "eu": "40–43.5",
+        "uk": "7–9.5",
+        "mondo": "25.5–28.5"
+      },
+      {
+        "size": "L",
+        "usMen": "10–13.5",
+        "usWomen": "11–14.5",
+        "eu": "43–47",
+        "uk": "9–12.5",
+        "mondo": "28–31.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Salomon 官方 snowboard-bindings 尺码指南与该型号官方商品页可选 S/M/L 对照核实；EU、US 男/女、UK、JP(cm) 均按官网原口径录入。",
+    "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+    "expectedBindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。"
+  },
+  {
+    "slug": "salomon-hologram-binding-2026",
+    "url": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "3–8",
+        "usWomen": "3–9",
+        "eu": "34.5–40.5",
+        "uk": "2–7",
+        "mondo": "21.5–26"
+      },
+      {
+        "size": "M",
+        "usMen": "7.5–10.5",
+        "usWomen": "8.5–11.5",
+        "eu": "40–43.5",
+        "uk": "7–9.5",
+        "mondo": "25.5–28.5"
+      },
+      {
+        "size": "L",
+        "usMen": "10–13.5",
+        "usWomen": "11–14.5",
+        "eu": "43–47",
+        "uk": "9–12.5",
+        "mondo": "28–31.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Salomon 官方 snowboard-bindings 尺码指南与该型号官方商品页可选 S/M/L 对照核实；EU、US 男/女、UK、JP(cm) 均按官网原口径录入。",
+    "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+    "expectedBindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。"
+  },
+  {
+    "slug": "salomon-pact-binding-2026",
+    "url": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "3–8",
+        "usWomen": "3–9",
+        "eu": "34.5–40.5",
+        "uk": "2–7",
+        "mondo": "21.5–26"
+      },
+      {
+        "size": "M",
+        "usMen": "7.5–10.5",
+        "usWomen": "8.5–11.5",
+        "eu": "40–43.5",
+        "uk": "7–9.5",
+        "mondo": "25.5–28.5"
+      },
+      {
+        "size": "L",
+        "usMen": "10–13.5",
+        "usWomen": "11–14.5",
+        "eu": "43–47",
+        "uk": "9–12.5",
+        "mondo": "28–31.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Salomon 官方 snowboard-bindings 尺码指南与该型号官方商品页可选 S/M/L 对照核实；EU、US 男/女、UK、JP(cm) 均按官网原口径录入。",
+    "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+    "expectedBindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。"
+  },
+  {
+    "slug": "salomon-rhythm-binding-2026",
+    "url": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+    "rows": [
+      {
+        "size": "S",
+        "usMen": "3–8",
+        "usWomen": "3–9",
+        "eu": "34.5–40.5",
+        "uk": "2–7",
+        "mondo": "21.5–26"
+      },
+      {
+        "size": "M",
+        "usMen": "7.5–10.5",
+        "usWomen": "8.5–11.5",
+        "eu": "40–43.5",
+        "uk": "7–9.5",
+        "mondo": "25.5–28.5"
+      },
+      {
+        "size": "L",
+        "usMen": "10–13.5",
+        "usWomen": "11–14.5",
+        "eu": "43–47",
+        "uk": "9–12.5",
+        "mondo": "28–31.5"
+      }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Salomon 官方 snowboard-bindings 尺码指南与该型号官方商品页可选 S/M/L 对照核实；EU、US 男/女、UK、JP(cm) 均按官网原口径录入。",
+    "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+    "expectedBindingSizeGuide": "Salomon 官方通用尺码表：S US男3.5–7 / 女4–8 / EU34.5–39；S/M 男7.5–8 / 女8.5–9 / EU40–40.5；M 男8.5–9.5 / 女9.5–10.5 / EU41.5–42.5；M/L 男10–10.5 / 女11–11.5 / EU43–43.5；L 男11–13.5 / 女12–14.5 / EU44–47。尺码区间重叠，具体型号尺码以商品页为准。"
+  },
+  {
+    "slug": "decathlon-snb-500-binding-2026",
+    "url": "https://www.decathlon.fr/p/fixations-snowboard-all-mountain-freestyle-adulte-snb-500-noir/336603/c1m8882775",
+    "rows": [
+      { "size": "S–M", "eu": "36–42" },
+      { "size": "L–XL", "eu": "43–47" }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Decathlon 法国官方 SNB 500 商品页（型号编码 8668654）明示 S-M EU 36–42、L-XL EU 43–47；页面变体标签显示 M/L，未将两种标签自行映射。",
+    "expectedBindingSizeGuide": "官方当前页明确 L 对应 9–13，但原文未标明尺码体系，不自行转换为 EU 或 Mondopoint；雪鞋外形不同，必须试装。其他尺码范围待核。",
+    "bindingSizeGuide": "加拿大官方页列出 S–M 与 L–XL 的 US 男女范围；法国官方页列出 S–M 对应 EU 36–42、L–XL 对应 EU 43–47。地区页面的变体标签与范围有差异，不跨地区换算，需按实物标签和雪鞋试装。",
+    "expectedSelectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+    "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。法国官方页列 S–M 对应 EU 36–42、L–XL 对应 EU 43–47；商品变体选择器显示 M/L，需按实物标签和试装确认，不自行映射二者。雪板安装孔位另按随附圆盘核对。"
+  },
+  {
+    "slug": "burton-step-on-re-flex-womens-2027",
+    "url": "https://www.burton.com/en-us/products/womens-burton-step-on-re-flex-snowboard-bindings-172841",
+    "rows": [
+      { "size": "S", "usWomen": "5–6", "eu": "35–36.5", "uk": "3–4", "mondo": "22–23", "cnMm": "220–230" },
+      { "size": "M", "usWomen": "6.5–8.5", "eu": "37–40.5", "uk": "4.5–6.5", "mondo": "23.5–25.5", "cnMm": "235–255" },
+      { "size": "L", "usWomen": "9–11", "eu": "41–42", "uk": "7–8", "mondo": "26–27", "cnMm": "260–270" }
+    ],
+    "checkedAt": "2026-10-14",
+    "evidence": "Burton 官方女款 Step On 商品页的型号级尺码表；明确仅配 Step On 雪鞋，并警示不可混用男女款。"
+  }
+]

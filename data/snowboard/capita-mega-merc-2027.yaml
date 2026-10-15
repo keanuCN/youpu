@@ -6,8 +6,8 @@ year: 2027
 title: CAPiTA Mega Merc Snowboard 2027 CAPiTA Snowboards | NA
 one_liner: 以全山适应性为核心的高规格定向板，在硬雪、侧country和深雪之间保持强响应，适合想要一块高性能日常板的进阶滑手。
 price:
-  min: 7200
-  max: 7200
+  min: 6504.57
+  max: 6504.57
   currency: CNY
 specs:
   length: 157
@@ -36,8 +36,13 @@ specs:
     - { size: 158W, effectiveEdge: 1223, waistWidth: 263, noseWidth: 307, tailWidth: 307, sidecutRadii: 7.9/3/-1.5/3/7.9 m, stanceWidth: 559 mm（参考）, riderWeight: 130-190 lb / 59-86 kg }
     - { size: 160W, effectiveEdge: 1239, waistWidth: 265, noseWidth: 309, tailWidth: 309, sidecutRadii: 8.0/3/-1.5/3/8.0 m, stanceWidth: 584 mm（参考）, riderWeight: 140-200 lb / 63-90 kg, bootSize: US 10+ / EU 43+ }
   sidecutRadii: 7.85/3/-1.5/3/7.85 m
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  priceCheckedAt: 2026-10-15
+  seasonEvidence: CAPiTA 北美与日本官方商品页标题均为 Mega Merc Snowboard 2027，按官方 2027 款归档为 2026/27；页面未直接注明完整雪季日期。
+  regionalListPrice: JPY 154000
+  priceMarket: CAPiTA 日本官方商店；美国官网同款 USD 999.95 作地区价差对照
+  priceSource: https://jp.capitasnowboarding.com/products/capita-mega-merc-mens-snowboard-2027
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: CAPiTA 日本官方页面标价 JPY 154,000，按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 6,504.57，作为亚洲地区价格参考。美国官网同款标价 USD 999.95，按 EUR/USD 1.1195、EUR/CNY 7.4925 折算为 CNY 6,692.39；两地官方价接近但并不相同。本次检索未找到可核实的中国销售报价；以上均非中国售价，跨境费用、汇兑和税费影响未计。原种子 CNY 7,200 未找到可回查依据，已替换为日本官网折算参考。
 editorial_scores:
   stability: 8.9
   response: 9.0
@@ -46,7 +51,7 @@ editorial_scores:
   forgiveness: 6.2
   value: 6.2
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FRD02_MEGA_MERC_0ecde98f-d861-4a1b-b13f-d286c1c58235.jpg?v=1776978817"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/19ad1668fb76353eefaf055b1b9a856cb014b632c1d08717b61e1e61bdc47f54.webp"
     kind: face
     alt: CAPiTA Mega Merc 2027 官方产品图
     source: CAPiTA 官方产品页图片（本地演示，版权待核）

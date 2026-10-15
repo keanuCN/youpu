@@ -1,0 +1,64 @@
+{
+  "brand": "Nordica",
+  "model": "Unleashed 98 CA",
+  "season": "2026-27",
+  "articleNumber": "0A669500001",
+  "seedFile": "data/skis/nordica-unleashed-98-ca-2027.yaml",
+  "capturedAt": "2026-10-15",
+  "officialProductPage": {
+    "url": "https://www.nordica.com/usa/en/collection/men/skis/unleashed/unleashed-98-ca-2",
+    "evidence": "Nordica 官方商品页标题为 Unleashed 98 CA - 2026/27，标注 SKU 0A669500001、Blue/Orange；尺码 156/162/168/174/180/186 cm。页面说明全木芯加碳纤维、Lite Performance Wood + Carbon + Sidewall、Freeride Flow Shape、底刃 0.9°、侧刃 87.5°、建议固定器 Marker Griffon 13，描述适用树林、雪道与软雪。交互尺码视图显示 156 cm 129/98/118 mm、双只 3080 g、R15.5；比较表显示 186 cm 134/98/123 mm、双只 4080 g，并列半径 156/162/168/174/180/186 cm = 15.5/16/16.5/17/18/19 m。",
+    "productImageUrl": "https://www.nordica.com/storage/Product/0A669500001_UNLEASHED_98_CA_FLAT.png"
+  },
+  "officialSeasonCatalogue": {
+    "url": "https://www.skiandbikes.com/image/document/katalog_-_nordica_fw26.pdf",
+    "articleNumber": "0A6695 00 001",
+    "evidence": "Nordica Catalogue 2026 | 2027 将 Unleashed 98 CA flat 对应货号 0A6695 00 001，列出六档长度、逐码板型、逐码半径、TSM construction 与 Powder Profile。"
+  },
+  "catalogueSizeSpecs": [
+    { "lengthCm": 156, "noseMm": 129, "waistMm": 98, "tailMm": 118, "radiusM": 15.3 },
+    { "lengthCm": 162, "noseMm": 130, "waistMm": 98, "tailMm": 119, "radiusM": 16.0 },
+    { "lengthCm": 168, "noseMm": 131, "waistMm": 98, "tailMm": 120, "radiusM": 16.7 },
+    { "lengthCm": 174, "noseMm": 132, "waistMm": 98, "tailMm": 121, "radiusM": 17.4 },
+    { "lengthCm": 180, "noseMm": 133, "waistMm": 98, "tailMm": 122, "radiusM": 18.1 },
+    { "lengthCm": 186, "noseMm": 134, "waistMm": 98, "tailMm": 123, "radiusM": 18.8 }
+  ],
+  "retailerSizeAndWeightTable": {
+    "url": "https://comorsports.com/products/nordica-mens-unleashed-98-ca-ski-2027",
+    "merchant": "Comor Sports, Canada",
+    "capturedAt": "2026-10-15",
+    "season": "Winter 2027",
+    "listedPrice": { "amount": 649.99, "currency": "CAD", "evidence": "商品页为加拿大零售商 Comor Sports；价格符号显示 $，按加拿大市场标价记 CAD。" },
+    "evidence": "页面标题为 Nordica Men's Unleashed 98 CA Ski 2027，标明 Winter 2027；完整表逐码列出 156/162/168/174/180/186 cm 的重量、半径和板型。商品页长度和两端重量与 Nordica 官方页面相符。该商家表的半径为 15.5/16/16.5/17/18/19 m，与官方目录半径的精度不同；仅采用其逐码双只重量，不以圆整半径覆盖目录值。",
+    "sizeWeightsPerPairG": [
+      { "lengthCm": 156, "weightG": 3080 },
+      { "lengthCm": 162, "weightG": 3260 },
+      { "lengthCm": 168, "weightG": 3400 },
+      { "lengthCm": 174, "weightG": 3620 },
+      { "lengthCm": 180, "weightG": 3840 },
+      { "lengthCm": 186, "weightG": 4080 }
+    ]
+  },
+  "usRetailPrice": {
+    "url": "https://hv2.skiessentials.com/products/2027-nordica-unleashed-98-ca-skis-0a669500",
+    "merchant": "SkiEssentials, USA",
+    "sku": "0A669500",
+    "priceUsd": 649.99,
+    "exchangeRateDate": "2026-10-14",
+    "usdPerEur": 1.1195,
+    "cnyPerEur": 7.4925,
+    "convertedPriceCny": 4350.20,
+    "priceType": "裸板美国地区挂牌价，非品牌 MSRP、非中国售价、非成交价。"
+  },
+  "radiusConflict": {
+    "catalogueValuesM": [15.3, 16.0, 16.7, 17.4, 18.1, 18.8],
+    "officialInteractivePageValuesM": [15.5, 16.0, 16.5, 17.0, 18.0, 19.0],
+    "comorRetailerValuesM": [15.5, 16.0, 16.5, 17.0, 18.0, 19.0],
+    "decision": "采用 Nordica 同季目录逐码表作为种子半径值；官方交互页和 Comor 零售表的圆整值全部保留为冲突证据。商品不可与结构不同的 Unleashed 98（0A669400001，带 Drift Lock Metal）混并。"
+  },
+  "limitations": [
+    "Comor 逐码重量表是零售来源；Nordica 官方页交叉支持 156 cm 与 186 cm 两端重量，但未独立公开其余四个长度的重量。",
+    "CNY 4350.20 是按 ECB 汇率折算的美国零售价参考，不代表中国售价或含税到手价。",
+    "产品图片来自 Nordica 官方 CDN，公开展示授权状态待核。"
+  ]
+}

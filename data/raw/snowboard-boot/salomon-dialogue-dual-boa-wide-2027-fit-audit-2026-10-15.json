@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-15",
+  "season": "2026/27",
+  "regular": {
+    "model": "Dialogue Dual BOA",
+    "articleRef": "L49277200",
+    "manufacturerWidthLabel": "Regular",
+    "source": "https://www.salomon.com/en-us/product/dialogue-dual-boa-li9150/L49277200"
+  },
+  "wide": {
+    "model": "Dialogue Dual BOA Wide",
+    "articleRef": "L45448100",
+    "manufacturerWidthLabel": "Wide",
+    "manufacturerDescription": "Anatomically designed to accommodate wide feet.",
+    "source": "https://www.salomon.com/en-us/product/dialogue-dual-boa-wide-li9184"
+  },
+  "sharedPublishedProductFacts": {
+    "bestFor": ["All-Mountain", "Freestyle"],
+    "level": ["Intermediate", "Advanced", "Expert"],
+    "flex": "Medium",
+    "usMenSizeOptionsObserved": "7–13.5 in half sizes on both product pages",
+    "priceUSD": 429.95
+  },
+  "officialSeasonCatalogCrossCheck": {
+    "catalogLandingPage": "https://salomon.jp/pages/snowboard-catalog",
+    "catalogPdf": "https://cdn.shopify.com/s/files/1/0673/9981/1381/files/SNOWBOARD_SEASON_CATALOG_FW2026-27_BOOTS.pdf?v=1768810119",
+    "section": "Boots, printed page 83 / PDF page 6",
+    "wideVariant": { "color": "Black", "articleRef": "L45448100", "mondopointCm": "25–30.5" },
+    "regularColorVariants": { "articleRefs": ["L49277200", "L49278500", "L49259900"], "mondopointCm": "25–29.5" },
+    "japanSuggestedPrice": { "beforeTaxJPY": 59000, "taxIncludedJPY": 64900 },
+    "limitations": "This is a seasonal catalog range and Japanese suggested price; it does not establish live stock, China pricing, or a millimeter last-width difference."
+  },
+  "footWidthGuide": {
+    "source": "https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+    "manufacturerAdvice": "Measure foot width using the same wall-and-paper method; over 107 mm is described as wide, with a recommendation to order a model's Wide version if available or add 0.5 to the size.",
+    "limit": "This is a measurement of the rider's foot, not boot last width. The page is filtered to women's snowboard boots, so record only as Salomon brand guidance and do not claim a model-specific threshold for this men's boot."
+  },
+  "notPublished": [
+    "Dialogue Dual BOA and Wide last width by size",
+    "Millimeter difference between regular and wide",
+    "Instep volume or shell-width measurements"
+  ],
+  "decision": "Keep regular and Wide as separate official product records. Describe the Wide construction only with Salomon's qualitative anatomical-fit statement; do not turn the 107 mm rider-foot guideline into boot-width data."
+}

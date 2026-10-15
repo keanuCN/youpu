@@ -10,6 +10,7 @@ price:
   max: 3960
   currency: CNY
 specs:
+  seasonEvidence: CAPiTA 北美官方商品页标题标注 Ultrafear Snowboard 2027；据官方 2027 年款归档为 2026/27。商品页未直接注明完整雪季日期，也不据此判断首次上市时间或实时库存。
   length: 153
   effectiveEdge: 1183
   waistWidth: 254
@@ -45,7 +46,7 @@ editorial_scores:
   forgiveness: 8.4
   value: 7.9
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST02-ULTRAFEAR-TOP.png?v=1776884585"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/76d6ea312d937b93a14137be6db79980a32985e22f36936271ddb525a5e0ddb6.webp"
     kind: face
     alt: CAPiTA Ultrafear 2027 官方产品图
     source: CAPiTA 官方产品页图片（本地演示，版权待核）

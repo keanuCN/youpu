@@ -10,6 +10,7 @@ price:
   max: 3240
   currency: CNY
 specs:
+  seasonEvidence: CAPiTA 北美官方商品页标题标注 Pathfinder Camber Snowboard 2027；据官方 2027 年款归档为 2026/27。商品页未直接注明完整雪季日期，也不据此判断首次上市时间或实时库存。
   length: 151
   effectiveEdge: 1203
   waistWidth: 252
@@ -50,7 +51,7 @@ editorial_scores:
   forgiveness: 8.5
   value: 8.8
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST04-PATHFINDER-TOP.png?v=1776884552"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/392d6e84e727b0278e7a1709421e43855291b3081322c8197785a550566d4797.webp"
     kind: face
     alt: CAPiTA Pathfinder 2027 官方产品图
     source: CAPiTA 官方产品页图片（本地演示，版权待核）

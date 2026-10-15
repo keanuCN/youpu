@@ -1,0 +1,54 @@
+slug: moss-snowstick-wing-sw-67-2027
+category: snowboard
+brand: moss
+model: Snowstick WING SW 67
+year: 2027
+title: MOSS Snowstick WING SW 67 2027
+one_liner: 167 cm 中长型燕尾方向板，面向粉雪浮力与雪道长弧滑行；官方页面抓取时标记为不可用。
+price:
+  min: 5321.92
+  max: 5321.92
+  currency: CNY
+specs:
+  length: 167
+  noseWidth: 304
+  waistWidth: 265
+  tailWidth: 286
+  runningLength: 962
+  effectiveEdge: 1080
+  sidecutRadii: 9.2/8.6 m
+  stanceWidth: 520
+  stanceRange: 460–580 mm
+  stanceSetback: -39
+  shape: Directional Swallowtail with wing shape
+  profile: Snowsurf Camber 4 mm
+  profileFamily: camber
+  flex: 7
+  core: Poplar and bamboo
+  base: ISO High-Speed Graphite
+  scenes:
+    - powder
+    - all-mountain
+    - carving
+  priceCheckedAt: 2026-10-15
+  officialPrice: JPY 126000（含税）
+  priceMarket: MOSS Snowstick 官方日本站 2027 款建议价
+  priceSource: https://mosssnowstick.com/products/wing-sw-67-2027
+  exchangeRate: EUR/JPY 177.39；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 官方日本站含税价 JPY 126,000，按 ECB 2026-10-14 参考汇率折算约 CNY 5,321.92；不是中国售价或成交价，页面采集时商品状态为不可用，库存、跨境配送和进口费用未计。
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/65e6dce9bb23078d7f53fa151000ded140c1d390ee373c9e0b47edb7c6545b7e.webp"
+    kind: face
+    alt: MOSS Snowstick WING SW 67 2027 官方板面图
+    source: MOSS Snowstick 2027 官方商品页；图片使用授权待核
+    sort_order: 0
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/9d7cefa85f2d44feddf8c3ba66dd8516847415ede614ac657be867d567001bd0.webp"
+    kind: base
+    alt: MOSS Snowstick WING SW 67 2027 官方底面图
+    source: MOSS Snowstick 2027 官方商品页；图片使用授权待核
+    sort_order: 1
+data_source:
+  kind: official
+  origin_url: https://mosssnowstick.com/products/wing-sw-67-2027
+status: published

@@ -12,6 +12,7 @@ price:
   max: 4899
   currency: CNY
 specs:
+  lengthOptions: 151 / 154 / 156W / 157 / 159 / 159W
   length: 154
   effectiveEdge: 1175
   sidecut: 7.94
@@ -32,8 +33,16 @@ specs:
   scenes:
     - freestyle
     - beginner
+  sizeSpecs:
+    - { size: "151", effectiveEdge: 1148, waistWidth: 247, noseWidth: 285, tailWidth: 285, sidecutRadii: "7.85 m", stanceMin: 475, stanceMax: 595, riderWeight: "59–79 kg", bootSize: "EU 39–43 / MP 24.5–27.5" }
+    - { size: "154", effectiveEdge: 1175, waistWidth: 250, noseWidth: 290, tailWidth: 290, sidecutRadii: "7.94 m", stanceMin: 490, stanceMax: 610, riderWeight: "64–84 kg", bootSize: "EU 39–44 / MP 25–28" }
+    - { size: "156W", effectiveEdge: 1193, waistWidth: 262, noseWidth: 303, tailWidth: 303, sidecutRadii: "8 m", stanceMin: 510, stanceMax: 630, riderWeight: "70–90 kg", bootSize: "EU 42–47 / MP 27–30" }
+    - { size: "157", effectiveEdge: 1202, waistWidth: 253, noseWidth: 294, tailWidth: 294, sidecutRadii: "8.03 m", stanceMin: 510, stanceMax: 630, riderWeight: "70–90 kg", bootSize: "EU 39–44 / MP 25–28" }
+    - { size: "159", effectiveEdge: 1220, waistWidth: 255, noseWidth: 297, tailWidth: 297, sidecutRadii: "8.09 m", stanceMin: 520, stanceMax: 640, riderWeight: "74–94 kg", bootSize: "EU 39–44 / MP 25–28" }
+    - { size: "159W", effectiveEdge: 1220, waistWidth: 265, noseWidth: 307, tailWidth: 307, sidecutRadii: "8.09 m", stanceMin: 520, stanceMax: 640, riderWeight: "76–96 kg", bootSize: "EU 43–48 / MP 27.5–30.5" }
   priceCheckedAt: 2026-10-12
   priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  selectionNotes: "各尺寸几何、建议体重及鞋码依据 Bataleon Argentina 官方页面：https://bataleon.com.ar/shop/evil-twin/（2024/25 型号表）。"
 editorial_scores:
   stability: 5.5
   response: 7.5
@@ -42,12 +51,12 @@ editorial_scores:
   forgiveness: 9
   value: 8
 images:
-  - url: "https://www.evo.com/cdn/shop/files/product-image-1103223.jpg?height=1000&v=1767733151"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/358585346e9f908665b4ad8bf6fc3e7388482ee37224fb46ac6757c12fa63782.webp"
     kind: face
     alt: Bataleon Evil Twin 2024/25 单板商品图
     source: evo 2025 商品页（图片使用授权待核）
     sort_order: 0
 data_source:
   kind: official
-  origin_url: https://ca.bataleon.com/pages/board-archive
+  origin_url: https://bataleon.com.ar/shop/evil-twin/
 status: published

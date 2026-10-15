@@ -1,0 +1,24 @@
+{
+  "capturedAt": "2026-10-14",
+  "scope": "30 snowboard boot records in data/snowboard-boot",
+  "findings": [
+    {
+      "brand": "Salomon",
+      "source": "https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women",
+      "verified": "Salomon provides a snowboard-boot foot measurement method and says a measured foot width above 107 mm is wide; it recommends an available wide model or adding half a size.",
+      "limit": "This is a rider-foot threshold, not the measured last width of each boot model. Do not store it as boot width."
+    },
+    {
+      "brand": "K2",
+      "source": "https://k2snow.com/en-gb/p/maysis-wide-mens-snowboard-boots-2025",
+      "verified": "The separate Maysis Wide 2025 product states that its last and shell are 7 mm wider than a traditional snowboard boot.",
+      "limit": "This is a model-specific difference versus a traditional boot; no absolute last width is given, and the 2025 wide SKU is not one of the 30 seeded products. Do not transfer it to K2 Maysis 2027."
+    },
+    {
+      "brand": "Burton, Nitro, Salomon and K2",
+      "verified": "Current seeded models expose regular/wide fit labels or fit-construction descriptions, but most do not publish a comparable numeric snowboard-boot last width on the checked product pages.",
+      "decision": "Keep manufacturer fit labels and model-specific fit descriptions. Numeric last remains unknown unless a source names that exact model and season."
+    }
+  ],
+  "dataPolicy": "Foot width measured on a person, boot last width, boot shell width, and a brand's relative Wide-version increase are different quantities and must not be merged."
+}

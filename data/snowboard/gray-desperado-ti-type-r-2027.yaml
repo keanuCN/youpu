@@ -17,6 +17,8 @@ price:
   max: 8872
   currency: CNY
 specs:
+  season: 2026–2027（26/27）
+  manufacturer: GRAY SNOWBOARDS
   lengthOptions: 154 IIIn / 155 III / 156 IIIw / 159 IV / 160 IVw / 166 Vw / 167 Vew / 172 VI / 173 VIew / 178 VII / 179 VIIew
   length: 167
   shape: Directional Hammerhead / TripleRadius
@@ -30,6 +32,13 @@ specs:
   sidecutRadii: 13.2/12.6/14.0 m
   waistWidth: 270
   stanceSetback: 60
+  flex: 9.4
+  stiffnessScale: N / W / T 分别代表板头 / 腰部 / 板尾硬度；官方按尺码分别给值，不应用一个数字概括整板
+  edgeSpecNote: 官方资料的尺码表与产品说明对刃角标注存在差异；选购前应以对应尺码实物或厂商确认值为准
+  sizingNote: 11 个尺码覆盖 154–179 cm；同长度含标准、Wide 与 Extra Wide 版本，选码需同时核对腰宽、靴底长度、体重和目标弯型
+  useCase: 偏向压雪道与硬雪上的高速刻滑、连续走刃和主动控弯
+  useCaseLimit: 高硬度和强支撑需要稳定的换刃与压板能力；新手容错、道具公园或深粉雪浮力不是主要取向
+  flexNote: 当前选中 167 Vew 的官方分区硬度为 N 8.7 / W 9.4 / T 8.9（10 分制）；其余尺码请查看尺码表
   sizeSpecs:
     - { size: "154 IIIn", overallLength: 1540, effectiveEdge: 1390, contactLength: 1220, waistWidth: 238, sidecutRadii: "9.0/8.6/9.6 m", sidecutOffset: -30, noseLength: 195.0, noseWidth: 306.0, noseHeight: 24.0, tailLength: 125.0, tailWidth: 279.0, tailHeight: 19.3, camber: 9.0, stanceWidth: "440–560 mm", setback: 30, insertQty: "12+12", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "25°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.0 / W 8.7 / T 8.2" }
     - { size: "155 III", overallLength: 1550, effectiveEdge: 1390, contactLength: 1220, waistWidth: 246, sidecutRadii: "9.0/8.6/9.6 m", sidecutOffset: -30, noseLength: 200.0, noseWidth: 306.0, noseHeight: 25.7, tailLength: 130.0, tailWidth: 287.0, tailHeight: 20.9, camber: 9.0, stanceWidth: "500–620 mm", setback: 30, insertQty: "12+12", edge: "1.8 mm / 45 RCW in size table; 26/27 narrative says 48 RC", sidewallAngle: "25°", sidewallColor: NEON RED, base: IS7500 Graphite, stiffness: "N 8.4 / W 9.1 / T 8.6" }
@@ -47,7 +56,7 @@ specs:
   priceCheckedAt: 2026-10-12
   priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
-  - url: "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2627/product/21_DSPRD%20Ti%20type-R/2627_21_DSPRD%20Ti%20type-R_main.png"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/df09879956fb3a768e0c5b73a0c385aa557efa0685afd231b6d4ba9c2d8835e4.webp"
     kind: face
     alt: Gray DESPERADO Ti Type-R 2027 单板正面图
     source: Gray Snowboards 官方 2026–2027 产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

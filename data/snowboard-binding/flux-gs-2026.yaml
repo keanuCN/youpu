@@ -4,6 +4,10 @@ brand: flux
 model: "GS"
 year: 2026
 title: "FLUX GS 2026"
+price:
+  min: 1731
+  max: 2163
+  currency: CNY
 one_liner: "女款全能固定器，官方介绍其沿用 DS 特性并兼顾活动范围与舒适度。"
 specs:
   entrySystem: strap
@@ -28,9 +32,11 @@ specs:
   officialPrice: CNY 1731–2163
   priceMarket: 原币 CNY；来源商店 flux-bindings.com
   priceSource: https://flux-bindings.com/en/products/2526gs
-  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
+  regionalListPrice: JPY 41,800；复核时促销 JPY 33,440
+  seasonEvidence: FLUX 官方商品页明确标注 25-26 Model（2026-10-14 复核）。
+  priceStatus: 2026-10-12 归档的 FLUX 官方结构化变体 Offer 为 CNY 1,731–2,163，含不同颜色/尺码变体；归档时有可售与售罄变体。2026-10-14 同一官方商品页标注 25-26 Model，日本商店页面显示 JPY 41,800、促销 JPY 33,440，且售罄。归档 CNY 值的市场/货币切换原因尚未由官网说明，作为带日期的官方人民币报价保留，不代表中国现价；勿与当前日本挂牌价混为一谈。
 images:
-  - url: "https://flux-bindings.com/cdn/shop/files/60_1_f25-bdg-302-gs-blk.png?v=1705538624&width=1160"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/9749865d52e4efc280f3eebbaeb88666c8e987e8b7e9e8e5b1f8cfc1224dfeaf.webp"
     kind: face
     alt: FLUX GS 2025/26 官方固定器商品图
     source: FLUX 官方商品页（图片使用授权待核）
@@ -38,4 +44,11 @@ images:
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526gs
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 6.1
+  comfort: 6.5
+  versatility: 7.6
+  convenience: 6.2
+  value: 5.0
 status: published

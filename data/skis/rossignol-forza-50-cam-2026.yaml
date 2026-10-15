@@ -4,6 +4,10 @@ brand: rossignol
 model: Forza 50° CAM KONECT
 year: 2026
 title: Rossignol Forza 50° CAM KONECT 2025/26
+price:
+  min: 6023.11
+  max: 6023.11
+  currency: CNY
 one_liner: 面向中级滑手的雪道 carving 系列，官网标注多种板长与可选固定器。
 specs:
   lengthOptions: 150 / 157 / 164 / 171 / 179 cm
@@ -13,13 +17,20 @@ specs:
   terrain: 雪道 / carving
   skierLevel: 中级
   bindingSetup: 裸板或可选 NX 12 KONECT GW
-  weightBasis: 官方列名为 kg/pair，但具体配置口径仍待确认；本轮保留来源中的数值，不折算为单只或套装重量。
+  weightPerPair: 2900
+  weightReferenceLength: 171 cm
+  weightBasis: 逐码重量采用 Rossignol 25/26 原厂目录对 RAOPX01 明确列出的 kg/pair without bindings；美国官网约 1.5–1.8 kg 数值与澳大利亚官方页明确的 1/2 pair、Sporting Life 的 per ski 标注吻合，判断为官网逐码表的单位标签错误。重量指一对裸板，不含固定器；不与 26/27 含固定器套装重量混用。官网标签仍待品牌修正。
   geometryNotes: 完整逐长度几何来自对应官方 SKU。板长为 cm，板宽为 mm，半径为 m；规格表不代表当前库存。
-  bindingCompatibility: 可选 NX 12 KONECT GW B80：官方支持成人 Alpine ISO 5355 A / GripWalk
-    ISO 23223 靴底，BSL 260–375 mm。仅适用于此固定器选项，无固定器版本需另核对。
+  bindingCompatibility: 可选 NX 12 KONECT GW B80：官方支持成人 Alpine ISO 5355 A / GripWalk ISO 23223 靴底，BSL 260–375 mm。仅适用于此固定器选项，无固定器版本需另核对。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 官方 RAOPX01000 页面未明确销售雪季；2025/26 标记仍需同 SKU 年度目录确认。
-  sourceCheckedAt: 2026-10-13
+  seasonEvidence: 官方 25/26 目录列 Forza 50° CAM、型号代码 RAOPX01，规格与 RAOPX01000 页面逐码对应；Rossignol 日本发布的 26/27 目录公告及斯洛伐克官方店 26/27 列表又确认该型号延续销售。美国商品页 SKU 为 RAOPX01000，本档保留 25/26 起始归档标签并注明 26/27 carry-over，不据此拆成重复商品。
+  sourceCheckedAt: 2026-10-16
+  priceCheckedAt: 2026-10-14
+  officialPrice: USD 899.95
+  priceMarket: Rossignol 美国官网裸板挂牌价
+  priceSource: https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 美国官方 RAOPX01000 商品页挂牌 USD 899.95，默认显示无固定器，并提供 NX 12 KONECT GW 固定器选项；页面未标雪季，因此此价格不作为 2025/26 年款的直接佐证。按 ECB 2026-10-14 EUR/USD 1.1195、EUR/CNY 7.4925 折算 CNY 6,023.11。美国官网参考，不是中国售价；税费、跨境运输和进口费用未计。
   compatibilitySources: https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html；https://www.grip-walk.com/faq/
   sizeSpecs:
     - size: 150 cm
@@ -27,33 +38,37 @@ specs:
       waistWidth: 75
       tailWidth: 111
       turnRadius: 10
+      weightPerPair: 2500
     - size: 157 cm
       noseWidth: 127
       waistWidth: 75
       tailWidth: 111
       turnRadius: 11
+      weightPerPair: 2600
     - size: 164 cm
       noseWidth: 127
       waistWidth: 75
       tailWidth: 111
       turnRadius: 12
+      weightPerPair: 2700
     - size: 171 cm
       noseWidth: 127
       waistWidth: 75
       tailWidth: 111
       turnRadius: 14
+      weightPerPair: 2900
     - size: 179 cm
       noseWidth: 127
       waistWidth: 75
       tailWidth: 111
       turnRadius: 15
+      weightPerPair: 3000
   core: PEFC 认证杨木板芯
   construction: Rectangular Full Sidewall
   profile: Tip Rocker + 传统 Camber
   technologies: V-Profile；Carbon Alloy Matrix；Mini Cap；Premium Hardtop；Sintered HD Base
 images:
-  - url: "https://www.rossignol.com/on/demandware.static/-/Sites-rossignol-catalog/\
-      default/dw562b8531/images/large/RAOPX01000_72DPI_01_v01.jpg"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/b58688ad4fff8b5a9afdb5e8a94cf78e1f49f5b67be88f167f55eb320bc79a04.webp"
     kind: face
     alt: Rossignol Forza 50 CAM KONECT 2025/26 官方雪板商品图
     source: Rossignol 官方产品页（图片使用授权待核）

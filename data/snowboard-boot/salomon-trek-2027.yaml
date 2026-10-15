@@ -5,6 +5,10 @@ model: "Trek"
 year: 2027
 title: "Salomon Trek 2027"
 one_liner: "登山巡航取向单板雪鞋，铰接式鞋口配 Hike & Ride BOA，适合上坡行走与下坡滑行。"
+price:
+  min: 4015.93
+  max: 4015.93
+  currency: CNY
 specs:
   lacingSystem: "Hike & Ride BOA 可调行走活动范围，另配传统鞋带与 Powerstrap"
   flex: "偏硬（Salomon 官方分类）"
@@ -14,7 +18,7 @@ specs:
   innerCuff: "可调内部鞋跟带固定鞋胆；Powerstrap 可调支撑"
   outsole: "MTN GOAT 橡胶外底，含 30% 天然橡胶；Contagrip W 抓地配方与 Fuze Surge 中底"
   footbed: "OrthoLite C3 双密度鞋垫，带成型后跟杯"
-  sizeGuide: "官方男款页面尺码 US 7–12.5"
+  sizeGuide: "官方男款页面尺码 US 7–12.5；FW2026/27 日本官方目录对应货号 Mondopoint 25–29.5 cm，目录尺码不代表实时库存。"
   sizeChart:
     - { size: US 男 3.5, usMen: "3.5", usWomen: "4", eu: "34.5", uk: "2.5", mondo: "22", footLength: 211-215, notes: Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。 }
     - { size: US 男 4, usMen: "4", usWomen: "5", eu: "35.5", uk: "3", mondo: "22.5", footLength: 216-220, notes: Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。 }
@@ -38,21 +42,30 @@ specs:
     - { size: US 男 13.5, usMen: "13.5", usWomen: "14.5", eu: "47", uk: "12.5", mondo: "31.5", footLength: 311-315, notes: Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。 }
   bindingCompatibility: 常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。
   selectionNotes: 穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。
-  fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。
+  fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。
+  seasonEvidence: Salomon 官方 FW2026/27 单板雪鞋目录列 Trek，货号 L47033600（Black），尺码 Mondopoint 25–29.5 cm；日版目录建议零售价未税 JPY 71,000、含税 JPY 78,100。目录将 Trek 列为 Touring 款；美国商品页价格仍作为美国市场参考。
   heatMolding: 官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。
   compatibilitySources: https://www.salomon.com/en-us/product/trek-lg8695；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women
-  priceCheckedAt: 2026-10-12
+  priceCheckedAt: 2026-10-14
   officialPrice: USD 599.95
-  priceMarket: 原币 USD；来源商店 www.salomon.com
+  regionalListPrice: USD 599.95
+  priceMarket: Salomon 美国官方商店；货号 L47033600
   priceSource: https://www.salomon.com/en-us/product/trek-lg8695
-  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
+  priceStatus: 当前同名型号美国官方挂牌价按 ECB 2026-10-13 汇率折算为 CNY 4,015.93；雪季由 FW2026/27 日本官方目录核实，日版目录另列未税 JPY 71,000、含税 JPY 78,100。美国折算价不是中国售价，税费、配送与进口费用未计。
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/trek-lg8695
+# 编辑暂估，非社区实测；评分口径见 docs/单板雪鞋编辑评分口径-2026-10-15.md
+editorial_scores:
+  fit: 7.7
+  support: 8.6
+  warmth: 6.7
+  convenience: 7.7
+  value: 5.0
 status: published
 images:
-  - url: "https://cdn.dam.salomon.com/43a6291e-fa13-41ef-a252-b2f800ae88e5/L47033600/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/c11dc910a95a13c2dc299e28e021156ecca7b4ede0450c48082b8e81015fc020.webp"
     kind: face
     alt: Salomon TREK 2026/27 黑色款官方雪鞋商品图
-    source: Salomon 官方商品页（图片使用授权待核）
+    source: Salomon 官方商品页主图库；CDN 图片响应已核为 200（图片使用授权待核）
     sort_order: 0

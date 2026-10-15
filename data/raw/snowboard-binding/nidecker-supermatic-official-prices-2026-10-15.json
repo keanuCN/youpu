@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-10-15",
+  "exchangeRate": {
+    "date": "2026-10-14",
+    "eurUsd": 1.1195,
+    "eurCny": 7.4925,
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "formula": "USD × EUR/CNY ÷ EUR/USD"
+  },
+  "products": [
+    {
+      "slug": "nidecker-og-supermatic-2026",
+      "name": "OG Supermatic 2026",
+      "season": "2026",
+      "sku": "N.26.BNU.SPM.BU.2S.1",
+      "usOfficialPrice": 429.95,
+      "usCurrency": "USD",
+      "convertedCny": 2877.53,
+      "usSource": "https://www.nidecker.com/products/og-supermatic-2026",
+      "euOfficialPrice": 399.95,
+      "euCurrency": "EUR",
+      "euSource": "https://eu.nidecker.com/en-int/products/og-supermatic-2026",
+      "availability": "美国页所选颜色尺码仅余少量；欧盟价格作独立地区交叉参考"
+    },
+    {
+      "slug": "nidecker-lt-supermatic-2026",
+      "name": "LT Supermatic 2026",
+      "season": "2026",
+      "sku": "N.26.BNU.SPL.GN.3M.1",
+      "usOfficialPrice": 479.95,
+      "usCurrency": "USD",
+      "convertedCny": 3212.17,
+      "usSource": "https://www.nidecker.com/products/lt-supermatic-2026",
+      "availability": "美国页所选尺码仅余少量；其他尺码库存另核"
+    }
+  ],
+  "limitations": [
+    "CNY 为美国官方美元报价按 ECB 参考汇率折算，不是中国售价。",
+    "未计美国销售税、支付汇兑、跨境运费、关税及进口税。",
+    "OG Supermatic 欧盟 EUR 报价保留为独立地区交叉核对，不并入美国价区间。",
+    "ECB 参考汇率仅用于信息折算，不建议用于交易。"
+  ]
+}

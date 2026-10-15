@@ -1,0 +1,143 @@
+slug: decathlon-dbck-500-m-2026
+category: ski-protection
+brand: decathlon
+model: DREAMSCAPE DBCK 500 Men's Back Protector Vest
+year: 2026
+title: DREAMSCAPE DBCK 500 男款背部护具
+one_liner: 背心式软护背，官方页面对 EN 防护标准的描述与测试区块不一致；2025 符合性声明列出另一组标准，等级映射待核。可通过 ZIPROTEC 与 SNB 500/900 外套组合；M 码胸围区间与相邻尺码重叠。
+price:
+  min: 449.48
+  max: 449.48
+  currency: CNY
+specs:
+  protectorType: back-vest
+  protectionStandard: 官方资料冲突待核：商品描述写 EN 1621-2 Level 1，测试区块写 EN 1621-1 Level 1；2025 符合性声明列 VPSki-009 与 VêtProVTT-008，未列上述 EN 标准，三者关系未确认
+  coverage: 全背部
+  useSports: [skiing, snowboard, mtb]
+  availableSizes: [XS, S, M, L, XL, 2XL]
+  sizeChart:
+    - { size: S, chestRangeCm: 87-93, heightRangeCm: 166-172, sourceNote: 官方建议范围 }
+    - { size: M, chestRangeCm: 83-99, heightRangeCm: 172-177, sourceNote: 官方原文与 S、L 尺码胸围区间重叠，疑似录入错误；未自行修正，购买前需核实 }
+    - { size: L, chestRangeCm: 99-107, heightRangeCm: 177-183, sourceNote: 官方建议范围 }
+    - { size: XL, chestRangeCm: 107-117, heightRangeCm: 183-192, sourceNote: 官方建议范围 }
+    - { size: 2XL, chestRangeCm: 117-127, heightRangeCm: '>192', sourceNote: 官方建议范围 }
+  fitAdvice: 官方页面建议按平时尺码选择；德国同货号 Ref 8494020 页面尺码选择器列 XS、S、M、L、XL、2XL，但官方胸围/身高建议表仅覆盖 S–2XL，未提供 XS 对应数据。护具需贴合并保持稳定，胸围处于临界或 M 区间时先核实官方尺码表异常值；XS 选码也应先向商家确认。
+  jacketCompatibility: DREAMSCAPE 官方说明 ZIPROTEC 可与 SNB JKT 500、SNB JKT 900 系列外套组合；下单时按护具与外套同尺码确认具体款式接口。
+  attachment: 弹性背心穿着，侧边调节；另有裤袢连接带，官方说明可 ZIPROTEC 拉链连接兼容外套。
+  materials: 注塑聚氨酯泡棉；主体面料为聚酰胺、聚酯与氨纶混纺。
+  styleCode: Ref 8494020（灰色）；Ref 8903324（黑色）
+  seasonEvidence: 商品页没有明确雪季；2026 是本次数据采集标签，不代表已确认年款。
+  priceCheckedAt: 2026-10-15
+  priceMarket: 法国 Decathlon DREAMSCAPE 官方零售页面
+  priceSource: https://www.decathlon.fr/p/gilet-de-protection-dorsale-vtt-ski-et-snowboard-homme-dbck-500-gris/_/R-p-173334
+  priceStatus: 法国页面列出的常规价 EUR 59.99，按 ECB 2026-10-14 EUR/CNY 7.4925 折算为 CNY 449.48；法国促销 EUR 39.99 已注明截至 2026-09-14。德国官方同货号页面当前显示 EUR 39.99，按同一汇率折算为 CNY 299.63，作为德国地区独立价格快照。价格字段仍以法国常规挂牌为主参考；地区价格不同，不合并成通用价格区间，也都不是中国售价。运费、税费及汇率差异未计。
+images:
+  - url: "https://contents.mediadecathlon.com/p3014512/k%2463949858dcbbe0005995c5bb191761b7/picture.jpg?f=3000x0&format=auto"
+    kind: face
+    alt: DREAMSCAPE DBCK 500 男款黑色背部护具
+    source: 迪卡侬英国官方商品图库第 1/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 0
+  - url: "https://contents.mediadecathlon.com/p2950511/k%244806003b21c6d1ca9bc3ff7aa156a1b7/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 2
+    source: 迪卡侬英国官方商品图库第 2/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 1
+  - url: "https://contents.mediadecathlon.com/p3014511/k%248b6676ba6b83a3de1283159287145bda/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 3
+    source: 迪卡侬英国官方商品图库第 3/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 2
+  - url: "https://contents.mediadecathlon.com/p2950512/k%24900652742dc16ab06f9377ab42deab83/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 4
+    source: 迪卡侬英国官方商品图库第 4/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 3
+  - url: "https://contents.mediadecathlon.com/p3014513/k%24a0d6971916e8db8107ba079b1b1c0203/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 5
+    source: 迪卡侬英国官方商品图库第 5/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 4
+  - url: "https://contents.mediadecathlon.com/p2950509/k%24ab94f3376759e8a10276464de9138bdc/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 6
+    source: 迪卡侬英国官方商品图库第 6/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 5
+  - url: "https://contents.mediadecathlon.com/p3014514/k%2486bc252499159c7f9e6b320295abb614/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 7
+    source: 迪卡侬英国官方商品图库第 7/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 6
+  - url: "https://contents.mediadecathlon.com/p3014510/k%249a855347bc376a1a5dc253b23a051e4f/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 8
+    source: 迪卡侬英国官方商品图库第 8/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 7
+  - url: "https://contents.mediadecathlon.com/p3014509/k%247678cb18711eb50a191775a0cc5f24ea/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 9
+    source: 迪卡侬英国官方商品图库第 9/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 8
+  - url: "https://contents.mediadecathlon.com/p2271715/k%248d3808aba9549e9f6dc793bdc45275bc/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 10
+    source: 迪卡侬英国官方商品图库第 10/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 9
+  - url: "https://contents.mediadecathlon.com/p2271714/k%249f956bbf718fbd4f269ceab7c47c6183/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 11
+    source: 迪卡侬英国官方商品图库第 11/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 10
+  - url: "https://contents.mediadecathlon.com/p2271712/k%241a2ed155bb98d03c8c6eabe33a708cc4/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 12
+    source: 迪卡侬英国官方商品图库第 12/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 11
+  - url: "https://contents.mediadecathlon.com/p2271711/k%24bcecfab49ca88650b9b5a52f37461a1e/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 13
+    source: 迪卡侬英国官方商品图库第 13/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 12
+  - url: "https://contents.mediadecathlon.com/p2271710/k%240fb43f5960a94ba315e8dca351dbb3b1/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 14
+    source: 迪卡侬英国官方商品图库第 14/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 13
+  - url: "https://contents.mediadecathlon.com/p2271709/k%2404daf7cae805969e00d00f9b23a70605/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 15
+    source: 迪卡侬英国官方商品图库第 15/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 14
+  - url: "https://contents.mediadecathlon.com/p2248650/k%24a981b441a9b8610a5d070cabb4c13231/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 16
+    source: 迪卡侬英国官方商品图库第 16/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 15
+  - url: "https://contents.mediadecathlon.com/p2248430/k%2415b5c9a35c9ed00204d2971f741aecc3/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 17
+    source: 迪卡侬英国官方商品图库第 17/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 16
+  - url: "https://contents.mediadecathlon.com/p2970095/k%2497403685738d0da35aa1e34efb931034/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 18
+    source: 迪卡侬英国官方商品图库第 18/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 17
+  - url: "https://contents.mediadecathlon.com/p2271713/k%241b86b53b8593203ba0106032a1fbd910/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 19
+    source: 迪卡侬英国官方商品图库第 19/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 18
+  - url: "https://contents.mediadecathlon.com/p2271782/k%244de7a03ef48beda027c8ed36b69288d6/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 21
+    source: 迪卡侬英国官方商品图库第 21/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 20
+  - url: "https://contents.mediadecathlon.com/p2271776/k%24bd43c638028d92c5d18287486dba2563/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 男款背部护具官方图库图 22
+    source: 迪卡侬英国官方商品图库第 22/22 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 21
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.fr/p/gilet-de-protection-dorsale-vtt-ski-et-snowboard-homme-dbck-500-gris/_/R-p-173334
+status: published

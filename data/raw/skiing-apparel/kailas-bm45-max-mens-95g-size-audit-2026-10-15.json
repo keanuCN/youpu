@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-15",
+  "product": "KAILAS BM45 MAX Down Ski Jacket Men's 95g Regular",
+  "styleCode": "KG2531144",
+  "officialProductSource": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens",
+  "brandSizeGuideSource": "https://kailasgear.com/pages/size-chart",
+  "officialProductPageEvidence": {
+    "selectedVariantSku": "KG253114411497705",
+    "availableSizes": ["S", "M", "L"],
+    "recommendedUse": ["On-piste Skiing", "Extreme Cold Warmth"],
+    "fit": "Athletic Y-Cut",
+    "version": "Regular",
+    "shell": "40D 3L GORE-TEX",
+    "insulation": "95g 800FP down",
+    "sizeChartLinkOrTableShown": false,
+    "bodyMeasurementsShown": false,
+    "garmentMeasurementsShown": false
+  },
+  "brandSizeGuideEvidence": {
+    "source": "https://kailasgear.com/pages/size-chart",
+    "apparelSizeChartShown": false,
+    "recheckedAt": "2026-10-15",
+    "pageSizingAdvice": "装备采用 athletic / technical cut；地区尺码标准可能不同，品牌建议按图表测量值选码，而非依赖常穿 S/M/L。",
+    "chartTypesShown": ["男鞋", "女鞋", "手套", "袜子"],
+    "apparelBodyOrGarmentMeasurementsShown": false,
+    "decision": "品牌提醒按图表测量、不可依赖惯常字母码；但现行通用指南没有服装图表，因此不能为 KG2531144 推导胸围、衣长或 S/M/L 对应身体范围，也不能用品牌其他服装尺码代替。"
+  },
+  "domesticListingCrossCheck": {
+    "source": "https://www.jd.com/hprm/9987e0e6c63b4dcc8398.html",
+    "indexedVariants": ["KG2531144 赤缇红 XXS", "KG2531144 赤缇红 S"],
+    "measurementsShown": false,
+    "decision": "索引标题仅证明有不同尺码商品记录，不构成 XXS 与美国 S/M/L 的尺码映射，也没有围度或成衣数据。"
+  },
+  "chinaPriceCrossCheck": {
+    "checkedAt": "2026-10-15",
+    "exactStyleCodeCrossBorderLead": {
+      "source": "https://mobile.yangkeduo.com/poros/h5?_dr_sku_id=1872649724283&abs_id=208156&ad_cks=1-1BigRC&ad_rcto=YWJY7a6B6ZDBl_k4b5T-SyD7Q9gz61YGop_oqw32nx95ZWjon_kTaKLNj_UiyU8H--qhNdJYtr1_bDXRyk0qLtpa&ads_channel=google_shopping&goods_id=922423037841&order_type=0&page_uid=b971bac98f094ca794aca85ddfba20cb&plsn=aa6919efe32aa37bf70fee57f47e5340&region=SG&sku_id=1872649724283&vst_scene=pdv",
+      "titleIncludesStyleCode": "KG2531144",
+      "displayedPrice": "S$1.17K（页面折算约 ¥6.2K）",
+      "region": "SG",
+      "decision": "款号精确但属新加坡区域跨境展示；折算人民币不是中国人民币挂牌价，排除为国内售价。"
+    },
+    "domesticShoppingGuideLeads": [
+      {
+        "amountCNY": 6200,
+        "source": "https://tao.hooos.com/goods_aRXJBpkmtotMY3gpoG8fQzNTjty-rkOPPMub7wMve8ZCy.html",
+        "displayedStore": "KAILAS 凯乐石男装旗舰店（天猫）",
+        "styleCodeShown": false,
+        "configurationShown": false
+      },
+      {
+        "amountCNY": 6600,
+        "source": "https://tao.hooos.com/tag_%E5%87%AF%E4%B9%90%E7%9F%B3%E8%BD%AF%E5%A3%B3_12.html",
+        "displayedStore": "KAILAS 凯乐石女装旗舰店",
+        "styleCodeShown": false,
+        "configurationShown": false,
+        "indexedDescription": "BM45 MAX 男款 800 蓬羽绒 GTX 防水；所在页面为软壳分类结果，商品原始详情未能读取。"
+      }
+    ],
+    "jdExactVariantRecheck20261015": {
+      "listingSource": "https://www.jd.com/jiage/1318f691f28ac7d51eb0.html?catID=17343&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_default",
+      "itemId": "10221071731160",
+      "itemSource": "https://item.jd.com/10221071731160.html",
+      "indexedVariant": "KAILAS BM45 MAX 男款 KG2531144 赤缇红 S",
+      "listingObservations": "分类页显示商品标题和 21+ 条评价；当前页面内容没有可读取价格字段。",
+      "itemPageResult": "只返回‘请使用高版本浏览器’兼容提示，未能读取价格、店铺、规格选择或结账可售状态。",
+      "decision": "精确国内商品条目得到确认，但价格与购买状态仍不可核；不把商品搜索结果、历史评价数或 USD 折算值记成中国售价。"
+    },
+    "decision": "导购页的 6200 与 6600 元均缺少 KG2531144 款号及 95g 常规版配置对应证据；仅作为未映射的国内搜索线索，不构成售价区间、官方价或当前成交价。"
+  },
+  "unresolvedMeasurements": ["人体胸围建议区间", "成衣胸围", "衣长", "肩宽", "袖长"],
+  "decision": "补充官方用途和版型信息；只保留美国官网明确列出的 S/M/L。没有精确款号尺码表时，不借用其他 KAILAS 羽绒服、其他款号或京东标题推断尺寸。"
+}

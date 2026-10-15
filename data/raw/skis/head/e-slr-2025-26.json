@@ -1,0 +1,59 @@
+{
+  "brand": "HEAD",
+  "model": "Worldcup Rebels e.SLR",
+  "season": "2025-26",
+  "articleNumber": "313365",
+  "retrievedAt": "2026-10-15",
+  "seedFile": "data/skis/head-e-slr-2026.yaml",
+  "officialSeasonAndReferenceSpecs": {
+    "url": "https://www.eski.sk/image/document/head_workbook_2526_en.pdf",
+    "evidence": "HEAD 2025/26 Hardgoods Workbook maps article 313365 to Worldcup Rebels e.SLR. It lists 149/156/163/170 cm, reference sidecut 123/66/107 mm and radius 11.2 m at 163 cm, LYT PR Base, and package binding 100911 PR 11 GW Brake [G] 78 mm. The workbook provides one reference-size geometry row, not a full per-length table."
+  },
+  "perLengthSpecsCrossCheck": {
+    "primaryRetailerUrl": "https://www.sport-bittl.com/en/head-worldcup-rebels-e-slr-25-26-ski-with-pr-11-gripwalk-r-binding%3A%3A246340.html",
+    "crossCheckUrl": "https://preisvergleich.heise.de/head-worldcup-rebels-e-slr-pr-11-gw-inkl-bindung-modell-2025-2026-313365-a3617720.html",
+    "lengthRows": [
+      { "lengthCm": 149, "sidecutMm": [123, 66, 107], "radiusM": 9.2 },
+      { "lengthCm": 156, "sidecutMm": [123, 66, 107], "radiusM": 10.2 },
+      { "lengthCm": 163, "sidecutMm": [123, 66, 107], "radiusM": 11.2 },
+      { "lengthCm": 170, "sidecutMm": [123, 66, 107], "radiusM": 12.3 }
+    ],
+    "evidence": "Sport-Bittl's exact 313365 product page lists all four length-specific sidecuts and radii, identifies the 25/26 PR 11 GripWalk package, and reports a weight field of 1830 g without defining whether the binding is included; weight is therefore not copied into the seed. The HEAD workbook independently confirms article, season, length range, reference geometry, plate and binding family. Heise's exact 2025/26 article 313365 comparison page reproduces all four sidecuts and radii."
+  },
+  "chinaMarketplaceLeadAudit": {
+    "retrievedAt": "2026-10-15",
+    "marketplace": "JD.com",
+    "listingUrl": "https://item.jd.com/10195493803775.html",
+    "listingIndexUrl": "https://www.jd.com/brand/1318ec8981773fe88ecd.html",
+    "listingText": "海德（HEAD）25/26新品滑雪板双板套装男女中级小回转雪板雪鞋 SLR包杖六件套 e.SLR313365-100911+EDGE 90 156cm",
+    "articleNumberEvidence": "The indexed listing title explicitly includes ski article 313365 and binding article 100911; the title also identifies an EDGE 90 boot and a six-piece bundle.",
+    "directPageStatus": "The direct product page returned a browser compatibility prompt; no variant-level price or stock could be verified.",
+    "listedCnyPriceVisible": false,
+    "decision": "Record only as a Chinese-market exact-board/binding bundle lead. It includes additional boot/accessory components and cannot be used as the comparable price of the ski plus PR 11 GW binding alone. Do not change the seed CNY reference without a readable current variant price, availability, and bundle contents."
+  },
+  "priceAudit": {
+    "seedListedPrice": "EUR 349.90",
+    "seedPriceMarket": "Germany price comparison listing for HEAD article 313365 + PR 11 GW binding",
+    "sourceUrl": "https://preisvergleich.heise.de/head-worldcup-rebels-e-slr-pr-11-gw-inkl-bindung-modell-2025-2026-313365-a3617720.html",
+    "pricePageUpdateDate": "2026-09-13",
+    "comparisonObservedAt": "2026-10-15",
+    "lowestOfferMerchant": "Sport Robl",
+    "availabilityAtCapture": "Price comparison page marked the EUR 349.90 offer as in stock.",
+    "shippingAtCapture": "EUR 29.90 shown for advance payment; excluded from converted product price.",
+    "exchangeRateDate": "2026-10-14",
+    "eurToCny": 7.4925,
+    "convertedCny": 2621.63,
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "The CNY amount is converted from a German regional listing, not a Chinese retail quote or landed price.",
+      "The comparison page's displayed offer update date is 2026-09-13; although the offer is shown in stock at retrieval, its price and inventory can change.",
+      "The JD exact-board/binding lead is an additional boot/accessory bundle with unreadable current price and stock, so it is not comparable and does not replace the regional reference."
+    ]
+  },
+  "remainingUnknowns": [
+    "No current, readable China-market price and availability for a 313365 + 100911 ski-and-binding set were confirmed.",
+    "The retailer's 1830 g weight figure does not define whether it includes the binding; omit from the seed until weight basis is explicit.",
+    "The official workbook gives a 163 cm reference radius; the other three length radii are supported by exact-article retailer/comparison pages, not an official HEAD per-length table.",
+    "Image display/licensing permission for the HEAD CDN product image is not verified."
+  ]
+}

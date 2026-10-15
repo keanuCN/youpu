@@ -1,38 +1,26 @@
 {
   "brand": "Salomon",
-  "model": "QST 100 Black",
+  "model": "QST 100 BLACK",
   "season": "2026-27",
-  "retrievedAt": "2026-10-10",
+  "sku": "L49189200+",
   "seedFile": "data/skis/salomon-qst-100-2027.yaml",
+  "capturedAt": "2026-10-14",
   "sources": {
-    "officialProductPage": "https://www.salomon.com/en-us/product/qst-100-black-li9359",
-    "officialProductEvidence": "The official page confirms QST 100 Black, article reference L49189200+, sizes 148/156/164/172/180/188 cm, 100 mm waist, intermediate and advanced levels, Freeride Profile, Rocker-Camber-Rocker, 13.5 m displayed radius, 130-100-118 mm displayed sidecut, Full Poplar Woodcore, Ti Binding Reinforcement, Basalt Superlight Fibers, Fiberglass, Full Sandwich Sidewalls and Cork Damplifier.",
-    "seasonEvidence": "The official product listing marks QST 100 Black as New in the current lineup; the 2026/27 Salomon catalogue includes QST 100. The product detail page itself does not print a season label."
+    "officialSeasonCatalogue": "https://www.tanabesports.jp/ts/wp-content/uploads/2026/03/26-27_SALOMON_SKI_user.pdf",
+    "officialProductPage": "https://www.salomon.com/en-us/product/qst-100-black-li9359/L49189200%2B?sizeId=L49189200148",
+    "catalogueEvidence": "Season catalogue matches SKU L49189200+ and gives lengths 156/164/172/180/188, geometry, radii, midsole positions and single-ski weights. Catalogue says the weights exclude bindings.",
+    "productPageEvidence": "Official Salomon page gives the complete six-size geometry and radii for 148/156/164/172/180/188 plus net weights 2940/3160/3370/3560/3760/4000 g. The listed net weights match twice the catalogue single-ski weights for the five overlapping sizes, so stored weightPerPair is the page's pair-level net weight.",
+    "limitations": [
+      "The 148 cm option is present on the official product page but absent from the season catalogue's per-ski weight and midsole rows.",
+      "No weight or midsole value is inferred for 148 cm."
+    ]
   },
-  "catalogueAndTestReport": {
-    "url": "https://www.tanabesports.jp/gear/skis/26_27_newmodel_staff_testdrive_salomon/",
-    "evidence": "The retailer's 2026/27 staff test report lists per-length sidecut, radius, and ski-only mass (1/2 pair) for 156/164/172/180/188 cm. It identifies the 172 cm ski as 1780 g. The official product page separately includes a 148 cm size, but the report does not publish that size's geometry or weight."
-  },
-  "specifications": {
-    "articleReference": "L49189200+",
-    "lengthsCm": [148, 156, 164, 172, 180, 188],
-    "waistMm": 100,
-    "sidecutMmAndRadius": [
-      {"lengthCm":156,"tipMm":131,"waistMm":100,"tailMm":119,"radiusM":14.5},
-      {"lengthCm":164,"tipMm":132,"waistMm":100,"tailMm":120,"radiusM":15.5},
-      {"lengthCm":172,"tipMm":133,"waistMm":100,"tailMm":121,"radiusM":16.5},
-      {"lengthCm":180,"tipMm":134,"waistMm":100,"tailMm":122,"radiusM":17.5},
-      {"lengthCm":188,"tipMm":135,"waistMm":100,"tailMm":123,"radiusM":18.5}
-    ],
-    "weightPerSkiG": {"value":1780,"referenceLengthCm":172},
-    "profile": "Rocker-Camber-Rocker / Freeride Profile",
-    "core": "Full Poplar Woodcore",
-    "construction": "Full Sandwich Sidewalls",
-    "reinforcements": ["Ti Binding Reinforcement", "Basalt Superlight Fibers", "Fiberglass"],
-    "technology": ["Cork Damplifier"]
-  },
-  "mappingNotes": [
-    "The 13.5 m radius and 130-100-118 mm sidecut displayed by Salomon's official product page are not associated with a stated length, so they are not mapped to the 148 cm size. The retailer's report provides per-length values only for 156-188 cm; the 148 cm geometry and weight remain unknown."
-  ],
-  "imageRights": "The official product image URL is a source reference only; no explicit reuse license verified."
+  "sizeSpecs": [
+    {"lengthCm":148,"tipMm":130,"waistMm":100,"tailMm":118,"radiusM":13.5,"midsoleMm":null,"weightPerPairG":2940,"weightPerSkiG":null},
+    {"lengthCm":156,"tipMm":131,"waistMm":100,"tailMm":119,"radiusM":14.5,"midsoleMm":692,"weightPerPairG":3160,"weightPerSkiG":1580},
+    {"lengthCm":164,"tipMm":132,"waistMm":100,"tailMm":120,"radiusM":15.5,"midsoleMm":732,"weightPerPairG":3370,"weightPerSkiG":1685},
+    {"lengthCm":172,"tipMm":133,"waistMm":100,"tailMm":121,"radiusM":16.5,"midsoleMm":772,"weightPerPairG":3560,"weightPerSkiG":1780},
+    {"lengthCm":180,"tipMm":134,"waistMm":100,"tailMm":122,"radiusM":17.5,"midsoleMm":812,"weightPerPairG":3760,"weightPerSkiG":1880},
+    {"lengthCm":188,"tipMm":135,"waistMm":100,"tailMm":123,"radiusM":18.5,"midsoleMm":857,"weightPerPairG":4000,"weightPerSkiG":2000}
+  ]
 }

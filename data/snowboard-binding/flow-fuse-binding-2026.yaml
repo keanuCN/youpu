@@ -4,24 +4,46 @@ brand: flow
 model: Fuse
 year: 2026
 title: Flow Fuse 2026
+price:
+  min: 2141.34
+  max: 2141.34
+  currency: CNY
 specs:
   terrain:
     - all-mountain
   flexFeel: mid-stiff
   entrySystem: rear-entry
   mountingSystem: Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对
-  bindingSizeGuide: Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。
+  bindingSizeGuide: Nidecker/Flow 2026 商品页标示 EU：M 37–41；L 41.5–44.5；XL 45–49.5。该商品页未将 EU 范围对应到 US 或 MP 尺码，暂不换算。
+  sizeChart:
+    - { "size": "M", "eu": "37–41" }
+    - { "size": "L", "eu": "41.5–44.5" }
+    - { "size": "XL", "eu": "45–49.5" }
+  sizeChartCheckedAt: "2026-10-14"
+  sizeChartSource: https://eu.nidecker.com/en-int/products/flow-fuse-2026
   bootCompatibility: 常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。
-  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 本轮官方型号证据未通过复核，现有尺寸不视为重新核实；详见待核记录。
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
   compatibilitySources: https://www.nidecker.com/products/flow-fuse-2026
-  priceCheckedAt: 2026-10-12
-  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
+  priceCheckedAt: 2026-10-15
+  officialPrice: USD 319.95
+  priceMarket: 美国 Nidecker 官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币
+  priceSource: https://www.nidecker.com/products/flow-fuse-2026
+  priceStatus: 2026 官方商品页与 N.26 变体 SKU 对应本档案雪季；人民币为美国官网折算参考，不是中国售价，未计税费与跨境成本。
+  exchangeRate: EUR/USD 1.1195；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html
 images:
-  - url: https://cdn.shopify.com/s/files/1/0674/9582/1405/files/High-_0024_FLOW_FUSE_WHITE_fusion.jpg?v=1788232288&width=800
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/5d4e33d0d9691e385a7ac918fb8296d7410ab8e003e1b8bdfcb90948b17e34a2.webp
     kind: face
     alt: Flow Fuse 2026 商品图
     source: 品牌官方商品页公开图片；展示授权状态待核
     sort_order: 0
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 7.8
+  comfort: 6.2
+  versatility: 7.6
+  convenience: 8.0
+  value: 5.0
 status: published
 one_liner: Flow 后入式固定器，Fusion 一体式绑带协助快速进入后仰高背结构。
 data_source:

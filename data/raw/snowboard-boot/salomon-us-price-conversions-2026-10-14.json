@@ -1,0 +1,86 @@
+{
+  "capturedAt": "2026-10-14",
+  "brand": "Salomon",
+  "market": "United States official online store",
+  "currencyConversion": {
+    "source": "European Central Bank euro foreign exchange reference rates",
+    "date": "2026-10-13",
+    "usdPerEur": 1.1188,
+    "cnyPerEur": 7.489,
+    "formula": "USD price * (CNY per EUR / USD per EUR)",
+    "rounding": "CNY rounded to 2 decimal places"
+  },
+  "caveat": "Official Salomon US list prices converted to CNY reference values, not China retail prices. Excludes taxes, shipping, import charges, and exchange fees. Salomon product pages do not directly confirm the archive season; do not infer 2026/27 from the New badge. Prices and inventory can change.",
+  "items": [
+    {
+      "slug": "salomon-dialogue-dual-boa-2027",
+      "model": "Dialogue Dual BOA",
+      "articleRef": "L49277200",
+      "officialPrice": { "amount": 429.95, "currency": "USD" },
+      "convertedPrice": { "amount": 2877.99, "currency": "CNY" },
+      "seasonConfirmed": false,
+      "source": "https://www.salomon.com/en-us/product/dialogue-dual-boa-li9150",
+      "archivedSnapshot": "../winter-gear-2026-10-12/salomon-dialogue-dual-boa-2027-price.json"
+    },
+    {
+      "slug": "salomon-dialogue-dual-boa-team-2027",
+      "model": "Dialogue Dual BOA Team",
+      "articleRef": "L49278500",
+      "officialPrice": { "amount": 429.95, "currency": "USD" },
+      "convertedPrice": { "amount": 2877.99, "currency": "CNY" },
+      "seasonConfirmed": false,
+      "source": "https://www.salomon.com/en-us/product/dialogue-dual-boa-team-li9182",
+      "archivedSnapshot": "../winter-gear-2026-10-12/salomon-dialogue-dual-boa-team-2027-price.json"
+    },
+    {
+      "slug": "salomon-dialogue-dual-boa-wide-2027",
+      "model": "Dialogue Dual BOA Wide",
+      "articleRef": "L45448100",
+      "officialPrice": { "amount": 429.95, "currency": "USD" },
+      "convertedPrice": { "amount": 2877.99, "currency": "CNY" },
+      "seasonConfirmed": false,
+      "source": "https://www.salomon.com/en-us/product/dialogue-dual-boa-wide-li9184",
+      "archivedSnapshot": "../winter-gear-2026-10-12/salomon-dialogue-dual-boa-wide-2027-price.json"
+    },
+    {
+      "slug": "salomon-launch-boa-sj-boa-2027",
+      "model": "Launch BOA SJ BOA",
+      "articleRef": "L49272000",
+      "officialPrice": { "amount": 389.95, "currency": "USD" },
+      "convertedPrice": { "amount": 2610.24, "currency": "CNY" },
+      "seasonConfirmed": false,
+      "source": "https://www.salomon.com/en-us/product/launch-boa-sj-boa-li5670",
+      "archivedSnapshot": "../winter-gear-2026-10-12/salomon-launch-boa-sj-boa-2027-price.json"
+    },
+    {
+      "slug": "salomon-titan-boa-2027",
+      "model": "Titan BOA",
+      "articleRef": "L47242900",
+      "officialPrice": { "amount": 269.95, "currency": "USD" },
+      "convertedPrice": { "amount": 1806.99, "currency": "CNY" },
+      "seasonConfirmed": false,
+      "source": "https://www.salomon.com/en-us/product/titan-boa-lg5971",
+      "archivedSnapshot": "../winter-gear-2026-10-12/salomon-titan-boa-2027-price.json"
+    },
+    {
+      "slug": "salomon-trek-2027",
+      "model": "Trek",
+      "articleRef": "L47033600",
+      "officialPrice": { "amount": 599.95, "currency": "USD" },
+      "convertedPrice": { "amount": 4015.93, "currency": "CNY" },
+      "seasonConfirmed": false,
+      "source": "https://www.salomon.com/en-us/product/trek-lg8695",
+      "archivedSnapshot": "../winter-gear-2026-10-12/salomon-trek-2027-price.json"
+    },
+    {
+      "slug": "salomon-x-approach-lace-sj-boa-2027",
+      "model": "X Approach Lace SJ BOA",
+      "articleRef": "L45418900",
+      "officialPrice": { "amount": 349.95, "currency": "USD" },
+      "convertedPrice": { "amount": 2342.49, "currency": "CNY" },
+      "seasonConfirmed": false,
+      "source": "https://www.salomon.com/en-us/product/x-approach-lace-sj-boa-li5866",
+      "archivedSnapshot": "../winter-gear-2026-10-12/salomon-x-approach-lace-sj-boa-2027-price.json"
+    }
+  ]
+}

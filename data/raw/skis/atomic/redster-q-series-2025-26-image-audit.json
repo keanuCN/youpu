@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-15",
+  "decision": "Replace the 2025/26 Q7.8, Q9, and Q9.8 seeds' 2026/27 Atomic CDN images with retailer-hosted images matched to the exact prior-season articles; publish the local seeds while retaining image-rights caveats.",
+  "products": [
+    {
+      "slug": "atomic-redster-q7-8-2026",
+      "model": "Redster Q7.8 Revoshock C + MI 12 GW",
+      "season": "2025/26",
+      "article": "AASS03666",
+      "previousImageArticle": "AASS03786",
+      "replacementImage": "https://www.skitreff.de/media/d7/06/2b/1748298505/atomic-redster-q7-8-revoshock-c-aass03666.jpg",
+      "sourcePage": "https://www.skitreff.de/atomic-redster-q7-8-revoshock-c-ski-set-all-mountain-ski-2025-26-aass03666173-616464",
+      "evidence": "The Atomic 25/26 catalogue lists Q7.8 under AASS03666. The retailer image filename includes AASS03666 and its listing identifies the model as 2025/26. The 2026/27 Atomic CDN image in the seed was AASS03786.",
+      "rights": "Retailer-hosted image used for product identification; republication/display permission is not confirmed."
+    },
+    {
+      "slug": "atomic-redster-q9-2026",
+      "model": "Redster Q9 Revoshock S + I 12 GW",
+      "season": "2025/26",
+      "article": "AASS03664",
+      "previousImageArticle": "AASS03784",
+      "replacementImage": "https://shop.r10s.jp/fusosports/cabinet/25-26/sk-ita/226ato1017.jpg",
+      "sourcePage": "https://item.rakuten.co.jp/fusosports/226ato1017/",
+      "evidence": "The 25/26 retailer page names article AASS03664, Q9 Revoshock S + I 12 GW, and lists 160/168 cm specifications. The replacement image is hosted in the same retailer's 25-26 Atomic ski directory. The previous Atomic CDN image was article AASS03784.",
+      "rights": "Retailer-hosted image used for product identification; republication/display permission is not confirmed."
+    },
+    {
+      "slug": "atomic-redster-q9-8-2026",
+      "model": "Redster Q9.8 Revoshock S + I 12 GW",
+      "season": "2025/26",
+      "article": "AASS03662",
+      "previousImageArticle": "AASS03782",
+      "replacementImage": "https://billandpauls.com/cdn/shop/files/38483-default-l_fdc19c7a-d442-4871-b162-3a113bb974d7.jpg?v=1763771177&width=1600",
+      "sourcePage": "https://billandpauls.com/products/redster-q9-8-revoshock-s-w-i12-25-26",
+      "evidence": "The 25/26 retailer page identifies style AASS03662 and lists four lengths with matching sidecut and radius. The replacement image is from that product page's gallery. The previous Atomic CDN image was article AASS03782.",
+      "rights": "Retailer-hosted image used for product identification; republication/display permission is not confirmed."
+    }
+  ],
+  "catalogueCrossCheck": "https://www.sport-hun.at/wp-content/uploads/2025/03/Atomic-Katalog-2526.pdf",
+  "catalogDecision": "All three local seeds now use same-season, exact-article image references and are included in the local public catalog snapshot. No image-rights status is implied by publication."
+}

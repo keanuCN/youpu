@@ -122,6 +122,26 @@
 
 - slug: cosone
   name: COSONE
+  official_url: https://www.cos1.net/
+  description: 单板装备品牌；现有官网公开资料有限，型号参数需逐项核验。
+
+- slug: nobaday
+  name: NOBADAY
+  name_cn: 小黑板
+  official_url: https://nobaday.com/
+  description: 单板装备品牌，产品覆盖雪板、雪鞋及雪服；Blackboard 系列包含全山地与刻滑方向型号。
+
+- slug: donek
+  name: Donek
+  official_url: https://donek.com/
+  country: US
+  description: 美国定制单板品牌，可按滑手需求调整板宽、硬度与侧切等参数。
+
+- slug: moss
+  name: MOSS
+  country: JP
+  official_url: https://mosssnowboards.co.jp/
+  description: 日本单板品牌；MOSS Snowstick 系列提供冲浪风格与粉雪取向的方向性板型。
 
 - slug: flow
   name: Flow
@@ -375,3 +395,17 @@
   country: TW
   official_url: https://www.giant-bicycles.com
   description: 全球自行车品牌，公路车覆盖 TCR 竞赛、Propel 空力、Defy 耐力和 Contend 入门系列。
+
+- slug: quechua
+  name: Quechua
+  name_cn: Quechua（迪卡侬）
+  country: FR
+  official_url: https://www.decathlon.co.uk/brands/quechua
+  description: 迪卡侬旗下山地与户外品牌，产品涵盖徒步、露营及雪上运动装备。
+
+- slug: wedze
+  name: WEDZE
+  name_cn: WEDZE（迪卡侬）
+  country: FR
+  official_url: https://www.decathlon.co.uk/sports-equipment/helmets/f-brand_wedze
+  description: 迪卡侬旗下雪上运动品牌，覆盖滑雪与单板装备及头盔、雪镜等护具。

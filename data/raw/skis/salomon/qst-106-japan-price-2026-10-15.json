@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-15",
+  "product": "Salomon QST 106 Almond Milk 2026/27 skis only",
+  "manufacturerArticle": "L47774500+",
+  "sources": {
+    "officialJapanStoreRecheck20261015": {
+      "url": "https://salomon.jp/products/qst-106-almond-milk-l477745",
+      "productTitle": "QST 106 ALMOND MILK",
+      "manufacturerArticle": "L47774500+",
+      "listedPrice": { "amount": 132000, "currency": "JPY", "taxIncluded": true },
+      "configuration": "Skis only",
+      "listedLengthsCm": [157, 165, 173, 181, 189],
+      "pageState": "官方日本商品页显示线上商店不可购买；页面有尺码选择及附近门店查询入口。",
+      "limitations": ["日元挂牌价是日本地区价格，不是中国售价。", "线上不可购买状态与实体店查询入口不代表任何尺码的实时门店库存。", "未将该页用于中国价格或库存推断。"]
+    },
+    "seasonCatalogue": {
+      "url": "https://www.tanabesports.jp/ts/wp-content/uploads/2026/03/26-27_SALOMON_SKI_user.pdf",
+      "evidence": "26/27 Salomon ski catalogue lists QST 106 Almond Milk, article L47774500+, JPY 120,000 before tax / JPY 132,000 tax included, and the per-length dimensions/weight table.",
+      "listedTaxIncludedPriceJPY": 132000,
+      "configuration": "Skis only"
+    },
+    "retailerSnapshot": {
+      "url": "https://www.a-golf.net/c/53425/53426/53427/53431/10001-l47774500",
+      "title": "SALOMON QST 106 ALMOND MILK 2026-2027 ski only",
+      "manufacturerArticle": "L47774500",
+      "listedPriceJPY": 112200,
+      "taxIncluded": true,
+      "configuration": "Skis only",
+      "sizeOptions": [157, 165, 173, 181, 189],
+      "pageStateConflict": "页面同时显示销售结束提示以及购买控件/尺码状态；不能由页面提取断定当前库存或可下单状态。",
+      "decision": "保留为零售挂牌价格快照，不称为当前可售价格。"
+    },
+    "websportsModelCrossCheck20261015": {
+      "url": "https://www.websports.co.jp/c/freeski/salomonfreeski/40943",
+      "title": "QST 106 BLACK PINK 2026-2027 skis only",
+      "listedPriceJPY": 112000,
+      "taxIncluded": true,
+      "manufacturerArticleShown": false,
+      "listedSizesCm": [165, 173],
+      "availabilityText": "预约商品；页面显示 165 cm 与 173 cm 的加入购物车控件；预计 2026 年 10–11 月到货，可能延迟",
+      "retailerSpecs": {
+        "lengthsCm": [157, 165, 173, 181, 189],
+        "sidecutAndRadius": [
+          { "lengthCm": 157, "sidecutMm": [136, 106, 123], "radiusM": 16.5, "weightPerSkiG": 1500 },
+          { "lengthCm": 165, "sidecutMm": [137, 106, 124], "radiusM": 17.5, "weightPerSkiG": 1650 },
+          { "lengthCm": 173, "sidecutMm": [138, 106, 125], "radiusM": 18.5, "weightPerSkiG": 1800 },
+          { "lengthCm": 181, "sidecutMm": [139, 106, 126], "radiusM": 19.5, "weightPerSkiG": 2000 },
+          { "lengthCm": 189, "sidecutMm": [140, 106, 127], "radiusM": 20.5, "weightPerSkiG": 2190 }
+        ],
+        "weightBasis": "每支重量；与 Salomon 26/27 季节目录逐码数据一致"
+      },
+      "convertedCNY": 4730.59,
+      "decision": "零售页确认 QST 106、26/27、裸板、税入 JPY 112,000 及 165/173 cm 预约控件；逐码参数与官方季节目录一致，可作同型号零售交叉核对。页面未显示制造商货号，且 BLACK PINK 色名与官方日本/目录的 ALMOND MILK 标注不同，因此不作为 L47774500+ 的精确变体映射、不覆盖种子价格；预约控件和预计到货时间也不能证明当前现货。"
+    }
+  },
+  "exchangeRate": {
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-14",
+    "eurJpy": 177.39,
+    "eurCny": 7.4925,
+    "formula": "JPY / 177.39 * 7.4925",
+    "cataloguePriceCNY": 5575.34,
+    "retailerSnapshotCNY": 4739.04,
+    "note": "CNY values are exchange-rate references, not transaction amounts; cross-border shipping, import charges, and payment fees excluded. WebSports JPY 112,000 is a same-model/season candidate with article/color mapping unresolved, so it is not listed as an exact-SKU price reference."
+  },
+  "chinaPriceCheck": {
+    "sources": [
+      "https://www.jd.com/hprm/13187f4c48bc186ca4a3.html",
+      "https://www.jd.com/jiage/13189ba5301a4731d066.html",
+      "https://www.jd.com/brand/1318c617fdfa12821cb2.html"
+    ],
+    "indexedCandidate20261015": {
+      "source": "https://www.jd.com/jiage/13189ba5301a4731d066.html",
+      "indexedTitle": "萨洛蒙（Salomon）男女通用自由式滑雪板 QST 106宽板腰高性能粉雪高山双板滑雪板 奶白蓝Almond Milk / Race 165m",
+      "itemId": "10235095268777",
+      "detailUrl": "https://item.jd.com/10235095268777.html",
+      "listedLengthCm": 165,
+      "status": "京东价格索引标题可读；点击商品详情只返回浏览器兼容提示，金额、卖家和库存不可读。标题未列制造商货号或雪季。",
+      "decision": "配色文字与 26/27 官方页面的 ALMOND MILK 接近，但缺少货号、雪季及详情数据映射，只作为国内商品候选线索，不录入中国人民币价格。"
+    },
+    "result": "检索到一条 QST 106、165 cm、奶白蓝 Almond Milk / Race 的京东索引候选，商品 ID 10235095268777；详情页不可读取，且标题没有 L47774500 货号或雪季。仍未找到可同时核对中国人民币价格、26/27 雪季及精确货号的国内商品详情。",
+    "decision": "不把未映射的京东标题价格、旧款或不同颜色页面并入本款中国售价；等待可读的精确商品详情或结账页面。"
+  },
+  "decision": "在现有美国官方价格折算参考之外补充日本 26/27 税入目录价和精确货号零售价格快照；不替换主价格，不将日本零售价格称为中国售价，也不将有贺园页面快照当作当前可售库存。"
+}

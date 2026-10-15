@@ -5,22 +5,29 @@
   "sources": {
     "officialProductPage": {
       "url": "https://www.decathlon.co.uk/p/adults-snowboarding-board-for-slope-and-freeride-all-road-900/332434/c314c29m8643399",
-      "retrievedAt": "2026-10-02",
+      "retrievedAt": "2026-10-15",
       "sku": "8643399",
       "priceGBP": 279.99,
       "priceType": "UK current listing price; not a China-market quote",
       "manufacturerClaims": [
         "Advanced-rider piste/freeride board; directional shape, standard camber plus rocker, 8/10 flex and about 8/10 torsional stiffness.",
-        "Official page describes strong grip at speed, large-radius turning, 50 mm setback and powder flotation from the long nose rocker.",
+        "Official page describes strong grip at speed, large-radius turning, 50 mm setback and powder flotation from the long nose rocker; a separate terrain-program paragraph describes the setback as 35 mm, so the manufacturer page is internally inconsistent.",
         "Sintered HDPE base, 20 mm poplar core and ash wood topsheet; sold without bindings.",
         "Official terrain scale says 100% piste, 80% off-piste and 20% park; its separate explanation says park features are not its design focus, though jumps are possible.",
         "Official listed weights: 154 = 2.50 kg +/-5%; 160 = 3.17 kg +/-5%; 166 = 3.21 kg +/-5%."
       ],
       "sizeRows": [
-        {"size":"154","noseWaistTailMm":[289,245,280],"sidecutM":8.3,"setbackMm":50,"recommendedStanceMm":540,"weightKg":2.50,"weightTolerancePercent":5,"recommendedRiderWeightKg":[55,70]},
-        {"size":"160","noseWaistTailMm":[298,252,290],"sidecutM":8.4,"setbackMm":50,"recommendedStanceMm":560,"weightKg":3.17,"weightTolerancePercent":5,"recommendedRiderWeightKg":[65,80]},
-        {"size":"166","noseWaistTailMm":[308,260,301],"sidecutM":8.5,"setbackMm":50,"recommendedStanceMm":580,"weightKg":3.21,"weightTolerancePercent":5,"recommendedRiderWeightKg":[80,110]}
+        {"size":"154","noseWaistTailMm":[289,245,280],"sidecutM":8.3,"setbackMm":50,"recommendedStanceMm":540,"weightKg":2.50,"weightTolerancePercent":5,"recommendedRiderWeightKg":[55,70],"recommendedHeightCm":[164,170]},
+        {"size":"160","noseWaistTailMm":[298,252,290],"sidecutM":8.4,"setbackMm":50,"recommendedStanceMm":560,"weightKg":3.17,"weightTolerancePercent":5,"recommendedRiderWeightKg":[65,80],"recommendedHeightCm":[169,177]},
+        {"size":"166","noseWaistTailMm":[308,260,301],"sidecutM":8.5,"setbackMm":50,"recommendedStanceMm":580,"weightKg":3.21,"weightTolerancePercent":5,"recommendedRiderWeightKg":[80,110],"recommendedHeightCm":[175,185]}
       ],
+      "setbackConflict": {
+        "source": "same current official product page, SKU 8643399",
+        "sizeTableValueMm": 50,
+        "featureDescriptionValueMm": 50,
+        "terrainProgramDescriptionValueMm": 35,
+        "handling": "Keep the explicit per-size table and feature-section value at 50 mm in the seed. Preserve the conflicting 35 mm narrative value here; do not silently overwrite either statement or imply the issue is resolved."
+      },
       "limitations": "Live UK listing and SKU do not identify a specific model season. The catalog's 2026 label is a snapshot convention. Price is UK-only and dynamic; never label the FX-normalized CNY value as a China retail price."
     },
     "independentReview2023Steph": {

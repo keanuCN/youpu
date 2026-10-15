@@ -4,27 +4,61 @@ brand: head
 model: EASY JOY R
 year: 2026
 title: HEAD EASY JOY R 2025/26
-one_liner: 面向女性滑手的轻量雪道系列；板长、固定器和雪季款式需按具体商品确认。
+one_liner: 面向女性滑手的轻量雪道租赁型号；25/26 货号为 316485。补入同货号零售页明确的 158 cm 几何；价格折算对应欧洲零售商的雪板 + JOY 9 GW 固定器套装，非中国售价。
+price:
+  min: 1947.98
+  max: 1947.98
+  currency: CNY
 specs:
   terrain: 雪道
   skierLevel: 入门至进阶
-  bindingSetup: 常见雪板+固定器套装，按具体 SKU 核对
+  bindingSetup: HEAD 25/26 手册列出 JOY 9 GW SLR、78 mm 制动器（article 316485）；是否包含固定器仍按地区 SKU 核实。
   weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
-  geometryNotes: 官方 316485 页面只公开五个板长，没有逐长度几何；本轮仅补板长选项，不以 Easy Joy 非 R 版本规格替代。
+  lengthOptions: 143 / 148 / 153 / 158 / 163 cm
+  turnRadius: 13.3
+  turnRadiusReferenceLength: 163 cm
+  sizeSpecs:
+    - size: 143 cm
+      noseWidth: 117
+      waistWidth: 70
+      tailWidth: 103
+      turnRadius: 9.6
+      notes: Snowleader 2026 同名 Easy Joy R + Joy 9 GW SLR 套装的逐码表列出此几何；该页面未显示 HEAD article。Winter Sports 新西兰同季页面确认 article 316485、固定器 100952 及 143 cm 尺码选项，但未列 143 cm 几何。因此此行几何仍是零售商补充值，不标为原厂确认逐码数据。
+    - size: 148 cm
+      notes: 25/26 韩国零售页面明确对应 HEAD 316485 + 固定器 100952，并列出 148 cm R9.3；Snowleader 同年款逐码表列 R10.5，但未显示 HEAD article。两家零售数据冲突，故暂不发布该尺码半径，也不补写三围。
+    - size: 153 cm
+      notes: 25/26 韩国零售页面明确对应 HEAD 316485 + 固定器 100952，并列出 153 cm R10.1；Snowleader 同年款逐码表列 R11.3，但未显示 HEAD article。两家零售数据冲突，故暂不发布该尺码半径，也不补写三围。
+    - size: 158 cm
+      noseWidth: 124
+      waistWidth: 69
+      tailWidth: 105
+      turnRadius: 10.7
+      notes: 同货号 316485 的零售商页面明确列出的 158 cm 几何；单一零售商来源，未将该尺寸推算到其他长度。
+    - size: 163 cm
+      noseWidth: 117
+      waistWidth: 70
+      tailWidth: 103
+      turnRadius: 13.3
+      notes: HEAD 25/26 手册 article 316485 的参考长度规格；143 cm 未找到逐码几何，不作外推。
+  geometryNotes: HEAD 25/26 手册与精确货号零售页将 Easy Joy R 对应 article 316485，列出五个长度及 163 cm 参考几何 117-70-103 mm、13.3 m。Winter Sports 同季页面另确认 article 316485 和 143/148/153/158/163 cm 长度选项，但仍只列 163 cm 参考几何。同货号 Esqui Outlet 页面明确列 158 cm 为 124-69-105 mm、10.7 m。148/153 cm 的韩国 OneEight 精确货号页分别列 R9.3/R10.1；Snowleader 2026 同名逐码表列 R10.5/R11.3，但未显示 HEAD article。由于同年款零售来源冲突，148/153 cm 半径已从前台逐码数据撤下，待原厂或第二个精确货号来源裁决。143 cm 仅保留 Snowleader 补充值（117-70-103 mm、R9.6），该页未显示 HEAD article；精确货号独立来源只确认该长度可选，故不称原厂逐码规格。原先相邻抽取文本将 316265 错配给 Easy Joy R；HEAD 官方商品页确认 316265 是 Shape VX R，故不再使用其货号、几何或图片。
   bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
     鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
-  sourceCheckedAt: 2026-10-13
-  compatibilitySources: https://www.head.com/en_US/product/easy-joy-r-316485；https://www.grip-walk.com/faq/
-  lengthOptions: 143 / 148 / 153 / 158 / 163 cm
+  seasonEvidence: HEAD Rental Handbook 2025/26 列明 EASY JOY R article 316485、五个长度及 163 cm 参考几何；同季零售页列出相同货号和规格。HEAD 官方商品页确认 316265 属于 Shape VX R。HEAD Hardgoods Workbook 搜索索引的跨栏文本顺序曾造成货号错配，按目录版面及独立货号记录纠正。
+  sourceCheckedAt: 2026-10-15
+  priceCheckedAt: 2026-10-15
+  listedPrice: EUR 259.99（雪板 + 固定器 100952 套装；页面同时显示 EUR 400 参考价，尺码级可售状态需下单时复核）
+  priceMarket: 欧洲零售商 Esqui Outlet，精确 article 316485 + 固定器 100952
+  priceSource: https://esqui-outlet.com/en/skis/head-easy-joy-r-slr-ski-set-316485-joy-9-gw-bindings-100952-women.html
+  priceStatus: Esqui Outlet 对 HEAD article 316485 + JOY 9 GW 固定器 100952 套装显示 EUR 259.99、参考价 EUR 400；按 ECB 2026-10-14 EUR/CNY 7.4925 折算为 CNY 1,947.98，继续作为主参考。Catti Sport 同货号页面本轮显示 EUR 249，折算 CNY 1,865.63；页面在线不可购提示与店内可售提示并存，库存不明，仅作价格线索，不覆盖主参考。韩国零售商 ONEEIGHT 同货号 + 固定器页面另显示 547,000 KRW（148/153 cm 选项），按 ECB 同日 EUR/KRW 1,496.54、EUR/CNY 7.4925 折算约 CNY 2,738.58，作为韩国市场交叉参考。波兰 Trojan Sport 的精确组合货号 316485#100952 曾列含税价 PLN 1,399（页面记录 2026-08-11 最低价），按 ECB 2026-10-14 EUR/PLN 4.3658、EUR/CNY 7.4925 折算为 CNY 2,400.94；核对时缺货，仅作历史地区参考。以上均为含固定器套装区域报价，不是中国售价或裸板价格；当前中国精确货号价格仍未核实，库存和结账费用另核。旧 Catti Sport EUR 299 报价作为先前采集记录保留在原始审计中。
+  compatibilitySources: https://www.skiandbikes.com/image/document/head_workbook_2526_en.pdf; https://www.grip-walk.com/faq/
 images:
   - url: "https://cdn-mdb.head.com/CDN3/D/316485/1/683x911/easy-joy-r.webp"
     kind: face
-    alt: HEAD Easy Joy R 官方雪板商品图
-    source: HEAD 官方商品页（图片使用授权待核）
+    alt: HEAD EASY JOY R 2025/26（货号 316485）官方商品图
+    source: HEAD 官方 CDN 图片，路径货号与 2025/26 手册 article 316485 一致（图片使用授权待核）
     sort_order: 0
 data_source:
   kind: official
-  origin_url: https://www.head.com/en_US/product/easy-joy-r-316485
-status: published
+  origin_url: https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/d1d55eee-6c7d-45e8-80f2-f29f0e059c55/HRS%20Handbook%2025-26.pdf?ver=1744650386194
+status: draft

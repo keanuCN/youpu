@@ -1,0 +1,71 @@
+slug: head-e-sl-pro-2027
+category: skis
+brand: head
+model: Worldcup Rebels e-SL Pro
+year: 2027
+title: HEAD Worldcup Rebels e-SL Pro 2026/27（313236）
+price:
+  min: 9815.18
+  max: 9815.18
+  currency: CNY
+one_liner: 官方归类为雪道竞速小回转板，面向有经验滑手；绑定组合依具体套装核对。
+specs:
+  articleNumber: "313236.SET"
+  lengthOptions: 150 / 155 / 160 / 165 / 170 cm
+  terrain: 雪道 / 竞速 / 小回转
+  skierLevel: 专家
+  bindingSetup: HEAD 官方商品页提供不含固定器选项，也可选配不同 Freeflex / Protector 固定器；核对实际结账 SKU。
+  weightBasis: 官方商品页显示 2225 g，但页面读取到的重量长度与单只/一对口径不够清楚，本档案不映射为可比较重量。
+  geometryNotes: HEAD 官方 26/27 商品页确认货号 313236.SET、长度选项及 150 cm 默认规格，并提供 160 cm 参考半径。HEAD 俄罗斯官方零售页及 XSPO 的 26h-HEA313236 商品页均列出五档逐码几何；165/170 cm 半径采用多来源一致的 12.9/13.7 m。Ski Catalogue 对这两档分别列 12.8/13.6 m，冲突保留于原始证据。
+  bindingCompatibility: 按实际所选固定器型号与雪靴底标准核对；系列可选绑定不等于所有版本通用 GripWalk。
+  mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。
+  seasonEvidence: HEAD 26/27 Hardgoods Workbook 将 article 313236 对应 WC Rebels e-SL Pro；官方 HEAD 商品页 SKU 为 313236.SET。25/26 使用 article 313235，另见 head-e-sl-pro-2026。
+  sourceCheckedAt: 2026-10-15
+  priceCheckedAt: 2026-10-14
+  listedPrice: EUR 1,310.00
+  priceMarket: HEAD 摩纳哥官方页面裸板起始挂牌价
+  priceSource: https://www.head.com/fr_MC/product/worldcup-rebels-e-sl-pro-313236-set
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: HEAD 官方摩纳哥页面按货号 313236.SET 列裸板起始价 EUR 1,310.00；不同固定器为加价选项。按 ECB 2026-10-14 EUR/CNY 7.4925 折算 CNY 9,815.18。摩纳哥地区参考，不是中国售价；页面价格和库存可能变化。
+  compatibilitySources: https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set; https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf; https://www.grip-walk.com/faq/
+  sizeSpecs:
+    - size: 150 cm
+      noseWidth: 122
+      waistWidth: 68
+      tailWidth: 107
+      turnRadius: 10.5
+    - size: 155 cm
+      noseWidth: 122
+      waistWidth: 68
+      tailWidth: 107
+      turnRadius: 11.2
+    - size: 160 cm
+      noseWidth: 122
+      waistWidth: 68
+      tailWidth: 107
+      turnRadius: 12
+      notes: HEAD 官方页将 160 cm 标作参考半径；三围由同季精确货号零售规格表交叉确认。
+    - size: 165 cm
+      noseWidth: 122
+      waistWidth: 68
+      tailWidth: 107
+      turnRadius: 12.9
+      notes: XSPO 与 HEAD 俄罗斯官方零售页、Heise 比价资料一致；Ski Catalogue 另列 12.8 m，差异见原始证据。
+    - size: 170 cm
+      noseWidth: 122
+      waistWidth: 68
+      tailWidth: 107
+      turnRadius: 13.7
+      notes: XSPO 与 HEAD 俄罗斯官方零售页、Heise 比价资料一致；Ski Catalogue 另列 13.6 m，差异见原始证据。
+  profile: Rebel Camber；HEAD 官方页在选中 150 cm 时列出 camber 100%、tip rocker 0%、tail rocker 0%
+  technologies: Graphene；Titanal；EMC 电子减震系统
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/7da8867585f1c79d05913186ca423f6e3858d9a656f2cc2f667ddd38d9992182.webp"
+    kind: face
+    alt: HEAD Worldcup Rebels e-SL Pro 2026/27 官方雪板商品图
+    source: HEAD 官方商品页 313236.SET（图片使用授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set
+status: published

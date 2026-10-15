@@ -1,0 +1,54 @@
+slug: moss-snowstick-u4-2027
+category: snowboard
+brand: moss
+model: Snowstick U4
+year: 2027
+title: MOSS Snowstick U4 2027
+one_liner: 151 cm 短菱形尾全山地雪浪板，传统定向正拱风格，强调快速换刃、林间机动和粉雪中的自然浮力；官网页面采集时显示不可用。
+price:
+  min: 4646.12
+  max: 4646.12
+  currency: CNY
+specs:
+  length: 151
+  effectiveEdge: 1016
+  runningLength: 828
+  noseWidth: 310
+  waistWidth: 262
+  tailWidth: 293
+  sidecutRadii: 9.0/6.17 m
+  stanceWidth: 520
+  stanceRange: 480–560 mm
+  stanceSetback: -45
+  shape: Directional tapered outline, short diamond-cut tail
+  profile: Snowsurf Camber 3 mm
+  profileFamily: camber
+  flex: 6
+  core: Poplar and bamboo
+  base: ISO High-Speed Graphite
+  scenes:
+    - all-mountain
+    - powder
+    - carving
+  priceCheckedAt: 2026-10-15
+  officialPrice: JPY 110000（含税）
+  priceMarket: MOSS Snowstick 官方日本站 2027 款建议价
+  priceSource: https://mosssnowstick.com/products/u4-2027
+  exchangeRate: EUR/JPY 177.39；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html
+  priceStatus: 官方日本站含税价 JPY 110,000，按 ECB 2026-10-14 参考汇率折算 CNY 4,646.12；不是中国售价或成交价。页面采集时商品状态为不可用，库存、跨境配送及进口费用未计。
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/746ed84634f0cf1ed9e30ded9886827fe99c9bfe544a3106d61d2b38ab9b0a4b.webp"
+    kind: face
+    alt: MOSS Snowstick U4 2027 官方板面图
+    source: MOSS Snowstick 2027 官方商品页；图片使用授权待核
+    sort_order: 0
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/021cfa7cb78edbf6bcd6a976dd6b48f2cde2d61b9d4ddfac3d06eae43875a252.webp"
+    kind: base
+    alt: MOSS Snowstick U4 2027 官方底面图
+    source: MOSS Snowstick 2027 官方商品页；图片使用授权待核
+    sort_order: 1
+data_source:
+  kind: official
+  origin_url: https://mosssnowstick.com/products/u4-2027
+status: published

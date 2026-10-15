@@ -1,0 +1,22 @@
+slug: cosone-pro-all-mountain-2026
+category: snowboard
+brand: cosone
+model: COSONE Pro 全能板
+year: 2026
+title: COSONE Pro 全能板 2026
+one_liner: 官网首页确认的 2026 男女通用款，挂牌价 ¥3,999；官方暂未提供可核验的尺码、硬度和技术参数，本档案暂不作性能评分。
+price:
+  min: 3999
+  max: 3999
+  currency: CNY
+specs:
+  priceCheckedAt: 2026-10-15
+  officialPrice: CNY 3999
+  priceMarket: COSONE 官网首页商品卡
+  priceSource: https://www.cos1.net/
+  priceStatus: 官网首页卡片展示 CNY 3,999；首页其他导航和按钮为占位链接，无法确认具体型号参数、库存或是否可下单。仅保留展示价快照。
+images: []
+data_source:
+  kind: official
+  origin_url: https://www.cos1.net/
+status: published

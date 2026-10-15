@@ -1,0 +1,48 @@
+slug: burton-step-on-re-flex-womens-2027
+category: snowboard-binding
+brand: burton
+model: "Women's Step On Re:Flex"
+year: 2027
+title: "Burton Women's Step On Re:Flex 2027"
+one_liner: "女款 Step On 快穿固定器，尺码需与女款 Step On 雪鞋对应；不得与男款 Step On 产品混搭。"
+price:
+  min: 1811.99
+  max: 1811.99
+  currency: CNY
+specs:
+  terrain: [ all-mountain ]
+  styleCode: "172841"
+  seasonEvidence: Burton 美国与日本官方商品页均标注 2027；日本官方变体代码为 27WIN-172841，归档为 2026/27（2027 款）。
+  entrySystem: step-in
+  flexFeel: medium
+  flexFeelEvidence: Burton 将脚感标为 Happy Medium；此为品牌定性档位，不是量化硬度值。
+  mountingSystem: "Re:Flex：兼容当前主流雪板安装系统；2014 年前 Burton 3D 板需另购 3D Hinge Disc"
+  bootCompatibility: "仅兼容女款 Burton Step On 雪鞋；Burton 明确警示勿与男款 Step On 产品混搭。"
+  bindingSizeGuide: "Burton 女款 Step On 官方靴码：S 女靴 US 5–6 / EU 35–36.5；M 6.5–8.5 / EU 37–40.5；L 9–11 / EU 41–42。另有多个 CN 标注列，详见来源审计，不合并成单一换算。仅配对应女款 Step On 雪鞋。"
+  sizeChartScope: "女款 Step On 推荐 US 靴码按半码衔接、无重叠：5–6、6.5–8.5、9–11。必须匹配女款 Step On 雪鞋；Burton 原厂另列的 CN 标记列口径不同，不作为单一换算。"
+  baseplateMaterial: "18% 短切玻纤/尼龙复合材料"
+  highbackAdjustment: "Step On FLAD 前倾角调节"
+  cushioning: "Re:Flex FullBED 全掌缓震"
+  warranty: "底盘终身保修；绑带和高背自购买日起 1 年保修"
+  selectionNotes: 只配女款 Burton Step On 雪鞋，按专用表逐半码对应并试装确认前掌/后跟连接点扣合；尺码范围不与相邻档重叠。不得与男款或普通绑带产品混搭。Re:Flex 安装盘适配当前主流安装系统，2014 年前 Burton 3D 板需单独购买 3D Hinge Disc。
+  compatibilitySources: https://www.burton.com/en-us/products/womens-burton-step-on-re-flex-snowboard-bindings-172841；https://www.burton.com/en-us/pages/size-charts
+  sizeChart:
+    - { size: S, usWomen: "5–6", eu: "35–36.5", uk: "3–4", mondo: "22–23" }
+    - { size: M, usWomen: "6.5–8.5", eu: "37–40.5", uk: "4.5–6.5", mondo: "23.5–25.5" }
+    - { size: L, usWomen: "9–11", eu: "41–42", uk: "7–8", mondo: "26–27" }
+  priceCheckedAt: 2026-10-14
+  regionalListPrice: JPY 42,900
+  priceMarket: Burton 日本官方商店；型号 ID 172841、色款标识 27WIN-172841
+  priceSource: https://jp.burton.com/ja-jp/products/womens-burton-step-on-re-flex-snowboard-bindings-172841
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Burton 日本官方商品页对应 2026/27 款型号 ID 172841 / 色款标识 27WIN-172841，标价 JPY 42,900；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 1,811.99。Murasaki Sports 日本零售预售页对 26-27 款 Black/S 列价 JPY 42,900，并显示 2026 年 11 月至 12 月下旬到货；该“在库あり”为可预订状态，不等于现货即时发货。虎窝淘聚合页列 CNY 2,598，标题匹配 26/27 与 172841，并称来源店为天猫 BURTON 官方旗舰店；其购买入口连续进入淘宝 s.click JavaScript 跳转包装页，未到达可读天猫详情，因此只记为国内价格候选。京东索引另出现同季、同型号 SKU 1728416FBJRG 的 S/M 选中变体，但未返回可读人民币价格或库存；不能据此确认候选价。主参考仍是日本地区价格，非中国售价；跨境配送、税费和进口费用另计。
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/5522809370067831cb865b394d24f6543db331c494028e1eed0151e374a2314e.webp"
+    kind: face
+    alt: Burton Women's Step On Re:Flex 固定器官方商品图
+    source: Burton 官方商品页（图片使用授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.burton.com/en-us/products/womens-burton-step-on-re-flex-snowboard-bindings-172841
+status: published

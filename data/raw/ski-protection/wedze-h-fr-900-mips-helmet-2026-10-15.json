@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-15",
+  "product": {
+    "brand": "WEDZE",
+    "model": "H-FR 900 MIPS",
+    "productId": "8773682",
+    "officialTitle": "Adult's Ski Helmet Freeride FR 900 Mips Black & White",
+    "source": "https://www.decathlon.co.uk/p/adult-s-ski-helmet-freeride-fr-900-mips-black-and-white/302052/c382c227m8773682",
+    "familySupportPage": "https://support.decathlon.fr/casque-wedze-ski-fr-900-epi",
+    "familyReferenceIds": ["8503323", "8660329", "8773682", "8817967"]
+  },
+  "sizeEvidence": {
+    "checkedAt": "2026-10-15",
+    "ukPage": "https://www.decathlon.co.uk/p/adult-s-ski-helmet-freeride-fr-900-mips-black-and-white/302052/c382c227m8773682",
+    "ukListedSizes": ["S/52-55 cm", "M/55-59 cm"],
+    "belgiumPage": "https://www.decathlon.be/fr/p/casque-ski-freeride-adulte-fr-900-mips-noir-et-blanc/302052/c382c227m8773682",
+    "belgiumListedSizes": ["S/52-55 cm", "M/55-59 cm", "L/59-62 cm"],
+    "matchingEvidence": "Both official regional pages identify product ID 8773682 and the same black/white H-FR 900 MIPS product.",
+    "limitation": "The size range is confirmed across regions; regional stock, price and delivery availability are not interchangeable."
+  },
+  "specifications": {
+    "standard": "CE EN 1077:2007 Class B",
+    "sizes": [
+      { "size": "S", "headCircumferenceCm": "52-55" },
+      { "size": "M", "headCircumferenceCm": "55-59" },
+      { "size": "L", "headCircumferenceCm": "59-62", "source": "Decathlon Belgium official same-product page; availability is region-specific and not inferred for the UK." }
+    ],
+    "weight": "500 g, size M",
+    "shell": "50% ABS / 50% polycarbonate",
+    "liner": "EPS",
+    "foam": "polyurethane; detachable",
+    "mips": "Official page says the low-friction layer allows 10-15 mm multi-directional movement under certain oblique impacts to reduce rotational force transferred to the head and brain.",
+    "recco": "Integrated RECCO reflector; compatible resort rescue teams need a RECCO detector. It is not an avalanche transceiver.",
+    "ventilation": "Adjustable two-mode system: passive ventilation at rest and channeled airflow while skiing.",
+    "fit": "Adjustment wheel, adjustable height, 3D ears, adjustable chin strap; choose usual size and check goggle fit.",
+    "other": "No visor; compatible with glasses and goggles; no fixed or removable chin guard.",
+    "safety": "Replace after impact. Decathlon recommends changing at least every five years; significant impact warrants earlier replacement.",
+    "officialUsageClassification": {"levelOfPractice": "advanced", "frequency": "intensive", "source": "https://www.decathlon.co.uk/p/adult-s-ski-helmet-freeride-fr-900-mips-black-and-white/302052/c382c227m8773682", "interpretation": "商品页分类标签，不是安全等级或使用限制。"},
+    "season": "Official product page does not state a snow season. The support page lists conformity-document downloads from 2021 to 2024 for the FR 900 MIPS family, which does not establish the exact product season."
+  },
+  "price": {
+    "market": "United Kingdom",
+    "listedGBP": 99.99,
+    "formerGBP": 109.99,
+    "checkedAt": "2026-10-15",
+    "referenceRatesDate": "2026-10-14",
+    "gbpPerEur": 0.84385,
+    "cnyPerEur": 7.4925,
+    "calculation": "99.99 / 0.84385 * 7.4925 = 887.81 CNY",
+    "convertedCNY": 887.81,
+    "previousRecordedPrice": {"listedGBP": 109.99, "formerGBP": 119.99, "convertedCNY": 976.60, "note": "此前记录的挂牌价现显示为当前页面原价；不再作为当前价。"},
+    "caveat": "UK regional promotional converted reference, not a China retail price. Size was not selected at checkout; stock, shipping, taxes and exchange spread are not confirmed.",
+    "productSource": "https://www.decathlon.co.uk/p/adult-s-ski-helmet-freeride-fr-900-mips-black-and-white/302052/c382c227m8773682",
+    "rateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+  },
+  "image": {
+    "url": "https://contents.mediadecathlon.com/p2576864/k%24aae088041e430d3d2c214bb9d0f8953e/picture.jpg?f=3000x0&format=auto",
+    "httpStatus": 200,
+    "contentType": "image/jpeg",
+    "rights": "Display authorization not verified"
+  },
+  "remainingGaps": [
+    "Exact model snow season/year is not stated.",
+    "No China-specific CNY price verified; converted UK price is a regional reference only.",
+    "Exact UK variant availability at checkout and delivery charges are unverified.",
+    "Front-end display rights for the official product image remain unverified."
+  ]
+}

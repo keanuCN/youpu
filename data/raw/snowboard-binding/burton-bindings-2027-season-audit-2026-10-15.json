@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-15",
+  "market": "Burton 日本官方商店",
+  "finding": "Burton 日本官方商品页将下列型号商品标题标注为 2027，并展示对应 27WIN 色款代码。按 2027 款归档到 2026/27；官方页未直接注明完整雪季日期。该证据不代表首次上市时间或实时库存。",
+  "products": [
+    {
+      "slug": "burton-cartel-re-flex-2027",
+      "model": "Cartel Re:Flex",
+      "productId": "105391",
+      "variantCode": "27WIN-105391",
+      "source": "https://jp.burton.com/en-jp/products/mens-burton-cartel-re-flex-snowboard-bindings-105391"
+    },
+    {
+      "slug": "burton-cartel-x-re-flex-2027",
+      "model": "Cartel X Re:Flex",
+      "productId": "222301",
+      "variantCode": "27WIN-222301",
+      "source": "https://jp.burton.com/en-jp/products/mens-burton-cartel-x-re-flex-snowboard-bindings-222301"
+    },
+    {
+      "slug": "burton-freestyle-re-flex-2027",
+      "model": "Freestyle Re:Flex",
+      "productId": "105441",
+      "variantCode": "27WIN-105441",
+      "source": "https://jp.burton.com/ja-jp/products/mens-burton-freestyle-re-flex-snowboard-bindings-105441"
+    },
+    {
+      "slug": "burton-genesis-re-flex-2027",
+      "model": "Genesis Re:Flex",
+      "productId": "105471",
+      "variantCode": "27WIN-105471",
+      "source": "https://jp.burton.com/ja-jp/products/mens-burton-genesis-re-flex-snowboard-bindings-105471"
+    },
+    {
+      "slug": "burton-lexa-x-est-2027",
+      "model": "Lexa X EST",
+      "productId": "222331",
+      "variantCode": "27WIN-222331",
+      "source": "https://jp.burton.com/en-jp/products/womens-burton-lexa-x-est-snowboard-bindings-222331"
+    },
+    {
+      "slug": "burton-mission-re-flex-2027",
+      "model": "Mission Re:Flex",
+      "productId": "105461",
+      "variantCode": "27WIN-105461",
+      "source": "https://jp.burton.com/ja-jp/products/mens-burton-mission-re-flex-snowboard-bindings-105461"
+    },
+    {
+      "slug": "burton-step-on-genesis-re-flex-2027",
+      "model": "Step On Genesis Re:Flex",
+      "productId": "229601",
+      "variantCode": "27WIN-229601",
+      "source": "https://jp.burton.com/en-jp/products/mens-burton-step-on-genesis-re-flex-snowboard-bindings-229601"
+    },
+    {
+      "slug": "burton-step-on-re-flex-2027",
+      "model": "Step On Re:Flex",
+      "productId": "172831",
+      "variantCode": "27WIN-172831",
+      "source": "https://jp.burton.com/ja-jp/products/mens-burton-step-on-re-flex-snowboard-bindings-172831"
+    }
+  ],
+  "limitations": [
+    "商品页的 2027 年款标注与 27WIN 色款代码支持 2026/27 归档，但没有直接写明完整雪季日期。",
+    "年款证据不表示首次上市时间、生产批次或任一尺码的实时库存。",
+    "日本官方页面的挂牌价格只能作为地区参考；折算人民币不代表中国售价。"
+  ]
+}

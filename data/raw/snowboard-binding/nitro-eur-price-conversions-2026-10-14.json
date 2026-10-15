@@ -1,0 +1,22 @@
+{
+  "capturedAt": "2026-10-14",
+  "exchangeRate": {
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-13",
+    "eurCny": 7.489,
+    "method": "EUR × 7.4890，四舍五入到人民币分"
+  },
+  "priceEvidence": "Nitro 欧洲官方商品页 2026-10-12 的 ProductGroup/Offer 结构化数据；归档尺码变体报价相同，抽样变体均标记 OutOfStock。2026-10-14 重查页面未显示价格，转向零售商查询。人民币值仅作欧洲价格折算参考，不代表中国售价。",
+  "checkedCurrentPageAt": "2026-10-14",
+  "products": [
+    { "slug": "nitro-fate-binding-2027", "eur": 299.9, "cny": 2245.95, "seasonConfirmed": true, "source": "https://www.nitrosnowboards.com/products/fate-womens-bindings-1", "archive": "data/raw/winter-gear-2026-10-12/nitro-fate-binding-2027-price.json" },
+    { "slug": "nitro-one-binding-2027", "eur": 299.9, "cny": 2245.95, "seasonConfirmed": true, "source": "https://www.nitrosnowboards.com/products/one-bindings-1", "archive": "data/raw/winter-gear-2026-10-12/nitro-one-binding-2027-price.json" },
+    { "slug": "nitro-phantom-binding-2027", "eur": 399.9, "cny": 2994.85, "seasonConfirmed": true, "source": "https://www.nitrosnowboards.com/products/phantom-bindings-2", "archive": "data/raw/winter-gear-2026-10-12/nitro-phantom-binding-2027-price.json" },
+    { "slug": "nitro-phantom-plus-binding-2027", "eur": 439.9, "cny": 3294.41, "seasonConfirmed": true, "source": "https://www.nitrosnowboards.com/products/phantom-bindings-3", "archive": "data/raw/winter-gear-2026-10-12/nitro-phantom-plus-binding-2027-price.json" },
+    { "slug": "nitro-poison-binding-2027", "eur": 349.9, "cny": 2620.4, "seasonConfirmed": true, "source": "https://www.nitrosnowboards.com/products/poison-womens-bindings-1", "archive": "data/raw/winter-gear-2026-10-12/nitro-poison-binding-2027-price.json" },
+    { "slug": "nitro-rambler-binding-2027", "eur": 239.9, "cny": 1796.61, "seasonConfirmed": true, "source": "https://www.nitrosnowboards.com/products/rambler-bindings-1", "archive": "data/raw/winter-gear-2026-10-12/nitro-rambler-binding-2027-price.json" },
+    { "slug": "nitro-talent-binding-2027", "eur": 179.9, "cny": 1347.27, "seasonConfirmed": true, "source": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1", "archive": "data/raw/winter-gear-2026-10-12/nitro-talent-binding-2027-price.json" },
+    { "slug": "nitro-team-binding-2027", "eur": 319.9, "cny": 2395.73, "seasonConfirmed": true, "source": "https://www.nitrosnowboards.com/products/team-bindings-1", "archive": "data/raw/winter-gear-2026-10-12/nitro-team-binding-2027-price.json" },
+    { "slug": "nitro-team-pro-binding-2027", "eur": 359.9, "cny": 2695.29, "seasonConfirmed": true, "source": "https://www.nitrosnowboards.com/products/team-pro-bindings-1", "archive": "data/raw/winter-gear-2026-10-12/nitro-team-pro-binding-2027-price.json" }
+  ]
+}

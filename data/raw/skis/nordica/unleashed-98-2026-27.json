@@ -1,0 +1,27 @@
+{
+  "brand": "Nordica",
+  "model": "Unleashed 98",
+  "season": "2026-27",
+  "sku": "0A669400001",
+  "seedFile": "data/skis/nordica-unleashed-98-2027.yaml",
+  "capturedAt": "2026-10-14",
+  "source": {
+    "officialProductPage": "https://www.nordica.com/usa/en/collection/men/skis/unleashed/unleashed-98-2",
+    "officialSeasonCatalogue": "https://www.skiandbikes.com/image/document/katalog_-_nordica_fw26.pdf",
+    "catalogueEvidence": "Nordica 2026/27 catalogue lists Unleashed 98 flat, article 0A6694 00 001, with sidecut and radius by size for all six lengths.",
+    "productPageEvidence": "The official product page confirms the same 2026/27 model and SKU. It gives 3160 g per pair on the selected 156 cm variant, and 4080 g per pair plus sidecut 134-98-123 mm at 186 cm in the compare table. Its interactive radii are 15.5/16/16.5/17/18/19 m.",
+    "radiusConflict": "For the same SKU/year, the 26/27 catalogue lists 15.3/16/16.7/17.4/18.1/18.8 m. The catalogue's size-by-size values are used in the table; the official interactive-page values are retained here for audit."
+  },
+  "knownLengthSpecs": [
+    {"lengthCm":156,"noseMm":129,"waistMm":98,"tailMm":118,"radiusM":15.3,"weightPerPairG":3160},
+    {"lengthCm":162,"noseMm":130,"waistMm":98,"tailMm":119,"radiusM":16},
+    {"lengthCm":168,"noseMm":131,"waistMm":98,"tailMm":120,"radiusM":16.7},
+    {"lengthCm":174,"noseMm":132,"waistMm":98,"tailMm":121,"radiusM":17.4},
+    {"lengthCm":180,"noseMm":133,"waistMm":98,"tailMm":122,"radiusM":18.1},
+    {"lengthCm":186,"noseMm":134,"waistMm":98,"tailMm":123,"radiusM":18.8,"weightPerPairG":4080}
+  ],
+  "limitations": [
+    "Only 156 cm and 186 cm have verifiable pair weights on the product page; no weights are inferred for the other lengths.",
+    "The official product page and same-season catalogue disagree on the radii for five lengths. The catalogue's size-by-size figures are used, with the discrepancy documented above."
+  ]
+}

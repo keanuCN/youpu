@@ -2,16 +2,36 @@
   "brand": "Salomon",
   "model": "QST 94 Lilac",
   "season": "2026-27",
-  "retrievedAt": "2026-10-10",
+  "retrievedAt": "2026-10-15",
   "seedFile": "data/skis/salomon-qst-94-2027.yaml",
   "sources": {
     "officialProductPage": "https://www.salomon.com/en-us/product/qst-94-lilac-li9360",
     "officialProductEvidence": "The official page confirms the QST 94 Lilac product, article reference L49189300+, sizes 156/164/172/180/188 cm, 94 mm waist, intermediate skill level, Freeride Profile, 13.5 m displayed radius, 131-94-117 mm displayed sidecut, Full Poplar Woodcore, Ti Binding Reinforcement, Basalt Superlight Fibers, Fiberglass, Full Sandwich Sidewalls and Cork Damplifier.",
-    "seasonEvidence": "The Salomon 2026/27 product lineup includes QST 94; the official product page itself does not print a season label."
+    "seasonEvidence": "The current Salomon US and German product pages confirm article L49189300+ but do not print a season label. Tanabe's 2026/27 report places QST 94 in its '25-26 carryover models' section; exact-model retailer pages from SkiEssentials, Sporting Life, and Snow-How label the article/model as 2027 or 2026/27. Archive as a 2026/27 carryover and retain that the official product page omits the season."
+  },
+  "regionalOfficialPrice": {
+    "url": "https://www.salomon.com/de-de/product/qst-94-lilac-li9360/L49189300%2B",
+    "market": "Germany",
+    "checkedAt": "2026-10-15",
+    "articleReference": "L49189300+",
+    "listedPrice": {"amount": 550, "currency": "EUR"},
+    "packageContents": "Skis only",
+    "convertedReference": {
+      "amount": 4120.88,
+      "currency": "CNY",
+      "rateDate": "2026-10-14",
+      "eurCny": 7.4925,
+      "calculation": "550 EUR × 7.4925 = 4,120.875 CNY, rounded to 4,120.88",
+      "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+    },
+    "limitations": [
+      "German official-store reference price; not a mainland-China price.",
+      "The captured product text does not establish tax treatment, cross-border delivery cost, import charges, or payment conversion cost."
+    ]
   },
   "catalogueAndTestReport": {
     "url": "https://www.tanabesports.jp/gear/skis/26_27_newmodel_staff_testdrive_salomon/",
-    "evidence": "The retailer's 2026/27 staff test report lists per-length sidecut, radius, and ski-only mass (1/2 pair) for sizes 156/164/172/180/188. It identifies the 172 cm ski as 1700 g. The published 188 cm weight appears anomalous (2940 g) and is intentionally not mapped."
+    "evidence": "The 2026/27 staff test report places QST 94 under '25-26 carryover models' and lists sidecut, radius, and ski-only mass (1/2 pair) for 156/164/172/180/188 cm. The 188 cm value is 2940 g per ski, which conflicts with the official German page's 3880 g net weight for a pair; do not map the retailer value."
   },
   "specifications": {
     "articleReference": "L49189300+",
@@ -24,6 +44,23 @@
       {"lengthCm":180,"tipMm":134,"waistMm":94,"tailMm":120,"radiusM":16.5},
       {"lengthCm":188,"tipMm":135,"waistMm":94,"tailMm":121,"radiusM":17.5}
     ],
+    "officialGermanChart": {
+      "url": "https://www.salomon.com/de-de/product/qst-94-lilac-li9360/L49189300%2B",
+      "capturedAt": "2026-10-15",
+      "rows": [
+        {"lengthCm":156,"tipMm":131,"waistMm":94,"tailMm":117,"radiusM":13.5,"underfootLengthMm":696,"netWeightG":3040},
+        {"lengthCm":164,"tipMm":132,"waistMm":94,"tailMm":118,"radiusM":14.5,"underfootLengthMm":731,"netWeightG":3200},
+        {"lengthCm":172,"tipMm":133,"waistMm":94,"tailMm":119,"radiusM":15.5,"underfootLengthMm":766,"netWeightG":3400},
+        {"lengthCm":180,"tipMm":134,"waistMm":94,"tailMm":120,"radiusM":16.5,"underfootLengthMm":801,"netWeightG":3620},
+        {"lengthCm":188,"tipMm":135,"waistMm":94,"tailMm":121,"radiusM":17.5,"underfootLengthMm":836,"netWeightG":3880}
+      ],
+      "weightInterpretation": "德国官方表将重量列为 Nettogewicht，按商品内容仅含雪板，故作为整双净重录入。Tanabe 2026/27 试乘报告（该款列在 25/26 延续款部分）独立列出 156 cm 单只 1520 g、172 cm 单只 1700 g，与官方表 3040 g、3400 g 对应。"
+    },
+    "skillLevelRegionalDifference": {
+      "usPage": "Intermediate",
+      "germanPage": "Fortgeschritten",
+      "decision": "Retain the US-page level and explicitly disclose that Salomon's regional pages use different labels; do not normalize the two terms as if identical."
+    },
     "weightPerSkiG": {"value":1700,"referenceLengthCm":172},
     "profile": "Freeride Profile",
     "core": "Full Poplar Woodcore",
@@ -32,7 +69,7 @@
     "technology": ["Cork Damplifier"]
   },
   "mappingNotes": [
-    "The official Salomon product page and 2026/27 retailer test-report table agree on the dimensions and radii. The report's 188 cm weight is anomalous, so only the unambiguous 172 cm per-ski weight is mapped."
+    "The Salomon German official chart is the source of all five per-size dimensions, radii, underfoot lengths, and pair net weights. The Tanabe report agrees on the 156/164/172/180/188 sidecuts and radii; its 188 cm per-ski mass is inconsistent with the official pair net weight and is excluded."
   ],
   "imageRights": "The official product image URL is a source reference only; no explicit reuse license verified."
 }

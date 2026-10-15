@@ -1,0 +1,50 @@
+{
+  "capturedAt": "2026-10-15",
+  "exchangeRates": {
+    "date": "2026-10-14",
+    "eurJpy": 177.39,
+    "eurCad": 1.5918,
+    "eurCny": 7.4925,
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html"
+  },
+  "products": [
+    {
+      "slug": "flux-cv-2027",
+      "model": "FLUX CV",
+      "season": "2026/27",
+      "market": "Japan official store",
+      "officialPrice": 55000,
+      "currency": "JPY",
+      "convertedCny": 2323.06,
+      "conversionFormula": "JPY / 177.39 * 7.4925",
+      "url": "https://flux-bindings.com/products/2627-cv",
+      "availabilityAtCapture": "Sold out"
+    },
+    {
+      "slug": "decathlon-snb-500-binding-2026",
+      "model": "SNB 500",
+      "productId": "8668654",
+      "market": "Canada official store",
+      "officialPrice": 170,
+      "currency": "CAD",
+      "convertedCny": 800.18,
+      "conversionFormula": "CAD / 1.5918 * 7.4925",
+      "url": "https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654"
+    },
+    {
+      "slug": "cosone-step-on-binding-2026",
+      "model": "COSONE Step On",
+      "market": "China official store homepage product card",
+      "officialPrice": 2599,
+      "currency": "CNY",
+      "url": "https://www.cos1.net/",
+      "limitations": "Exact-name product card displays the price; no accessible product detail/checkout page was confirmed, and availability is unknown."
+    }
+  ],
+  "limitations": [
+    "The Decathlon product page does not state a season; its current Canadian price does not prove the 2026 season.",
+    "Converted prices are regional price references, not Chinese retail prices.",
+    "Taxes, shipping, payment conversion costs, duties, and import charges are excluded unless included in the source listing.",
+    "Prices and availability can change after the checked date."
+  ]
+}

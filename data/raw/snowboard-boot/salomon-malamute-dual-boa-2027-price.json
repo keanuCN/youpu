@@ -1,0 +1,35 @@
+{
+  "slug": "salomon-malamute-dual-boa-2027",
+  "model": "Salomon Malamute Dual BOA",
+  "season": "2026/27 label is not confirmed by the official product page; archived seed label retained as a provisional reference",
+  "articleRef": "L47773300",
+  "market": "Salomon US official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 499.95,
+    "currency": "USD",
+    "source": "https://www.salomon.com/en-us/product/malamute-dual-boa-li8071/L47773300"
+  },
+  "convertedReference": {
+    "amount": 3346.55,
+    "currency": "CNY",
+    "method": "USD 499.95 / EUR-USD 1.1188 * EUR-CNY 7.4890",
+    "exchangeRateDate": "2026-10-13",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "US official-store reference only; not a mainland China selling price.",
+      "The product page does not explicitly identify the model season.",
+      "Exchange rates are informational; tax, shipping, and import charges are excluded or unconfirmed.",
+      "Displayed sizes and availability can change; check the selected variant at checkout."
+    ]
+  },
+  "observed": {
+    "productName": "MALAMUTE DUAL BOA",
+    "category": "Snowboard boots",
+    "terrain": "All-Mountain",
+    "level": ["Expert", "Advanced"],
+    "flex": "Stiff",
+    "displayedUsMenSizes": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5]
+  },
+  "notes": "Official US page shows USD 499.95, article reference L47773300, advanced/expert positioning, and stiff flex. The model text says freeride performance while the classification field says All-Mountain; both descriptions are retained rather than flattened into one category."
+}

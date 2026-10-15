@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-10-15",
+  "product": "Burton Custom Camber 2026/27",
+  "productId": "106881",
+  "variantCode": "27WIN-106881",
+  "chinaMarketSearch": {
+    "exactSeasonAndVariantLead": {
+      "source": "https://www.jd.com/xinghao/1318ae1d7a8b48a47346.html?catID=17346&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_totalsales15_desc",
+      "indexedTitle": "BURTON伯顿官方26-27雪季新品男士CUSTOM 滑雪单板106881/107071 106881AI66RG-Camber板型 156cm",
+      "whatItConfirms": ["搜索索引中出现 26/27 雪季、Custom、商品号 106881、156 cm 的商品标题"],
+      "whatItDoesNotConfirm": ["商品页当前人民币价格", "实际卖家身份", "库存或可下单状态", "该商品变体与 Burton 日本颜色代码 27WIN-106881 的关系"],
+      "directProductPages": [
+        {"source": "https://item.jd.com/10229459878147.html", "itemId": "10229459878147", "indexedTitle": "BURTON伯顿官方26-27雪季新品男士CUSTOM 滑雪单板106881/107071 106881AI66RG-Camber板型 156cm", "pageResult": "详情页仅显示浏览器版本提示，未取得价格、卖家、库存或完整变体信息。"},
+        {"source": "https://item.jd.com/10233984562828.html", "itemId": "10233984562828", "indexedTitle": "BURTON 伯顿27雪季新款单板滑雪板全能板Custom男款106881 FADED 156cm", "pageResult": "详情页仅显示浏览器版本提示，未取得价格、卖家、库存或完整变体信息。"}
+      ],
+      "directProductPageDecision": "已取得两个京东商品 ID，但详情内容不可读取；标题未证明商品变体与 Burton 日本颜色代码 27WIN-106881 一致，且不能作为价格来源。"
+    },
+    "domesticOfficialStorePriceCandidate20261015": {
+      "checkedAt": "2026-10-15",
+      "source": "https://tao.hooos.com/goods_Pw4Rbg3h3t68d5pRXQCvvqCPt6-k5v00GfRj6NR48yHp.html",
+      "platformClaim": "虎窝淘页面标注商城为天猫、店铺为 BURTON 官方旗舰店；属于聚合页自述，未独立验证原始店铺身份。",
+      "indexedTitle": "BURTON伯顿26-27雪季新品男士CUSTOM 滑雪单板全山106881/107071",
+      "displayedPriceCNY": 5998,
+      "listingActivitySnapshot": "页面显示月销量 5；仅为聚合页抓取快照。",
+      "productIdentityLimits": ["页面标题同时列出 106881 Camber 与 107071 Flying V 两个商品号", "未展示 Faded 27WIN-106881 或 106881AI66RG 的款色/尺码变体选择", "购买跳转指向淘宝联盟短链，未取得可读的原始天猫商品详情与结账金额"],
+      "decision": "新增国内官方店铺挂牌价候选 CNY 5,998，但无法证明该金额专属于本档案的 27WIN-106881 Camber 变体；只留作待映射线索，不更新种子主价。"
+    },
+    "excludedOlderSeasonPriceLead": {
+      "source": "https://www.smzdm.com/p/158826628/",
+      "indexedProduct": "BURTON 伯顿 Custom 滑雪板 106881，规格 106881A97DRG-Camber，150 cm",
+      "displayedPriceCNY": 6798,
+      "seasonEvidence": "页面相关说明指向 25/26；未证明为本种子 26/27 的 27WIN-106881 变体。",
+      "decision": "虽共享基础商品号 106881，但颜色代码与雪季不同，不映射到 2026/27 Custom Camber。"
+    },
+    "decision": "本轮没有找到能将中国人民币金额、2026/27 雪季和本款变体同时关联的可读取国内商品详情。"
+  },
+  "regionalPriceReference": {
+    "market": "Burton Japan official store",
+    "source": "https://jp.burton.com/ja-jp/products/mens-burton-custom-camber-snowboard-106881",
+    "seasonCode": "27WIN-106881",
+    "listedPrice": {"amount": 107800, "currency": "JPY"},
+    "convertedReference": {"amount": 4553.2, "currency": "CNY", "exchangeRateDate": "2026-10-14", "eurJpy": 177.39, "eurCny": 7.4925},
+    "decision": "保留为日本地区官方店铺折算参考，不称为中国售价。"
+  },
+  "japanRetailerCrossCheck": {
+    "checkedAt": "2026-10-15",
+    "source": "https://store.shopping.yahoo.co.jp/masanagoya/w26jp-106881b.html",
+    "platform": "Yahoo! Shopping Japan",
+    "store": "masa surf and snow",
+    "storeClaim": "页面自述为 BURTON 日本正規販売店；此为店铺自述，不是独立授权证明。",
+    "productTitleEvidence": "26-27 Men's Burton Custom Camber Snowboard，Faded，款色代码 27WIN-106881",
+    "listedPriceJPY": 107800,
+    "displayedSizes": ["150", "154", "156", "158", "162", "154W", "158W"],
+    "availabilitySnapshot": "页面标记 150 与 162 cm 缺货；页面同时保留 9/12 的其他商店最低价快照和过期配送提示，因此不据此记录当前各尺码库存。",
+    "decision": "同雪季、同 Faded 27WIN-106881 的日本零售挂牌与 Burton 日本官方价 JPY 107,800 一致；仅作为日本地区价格交叉核对，不是中国人民币售价，也不取代中国市场证据。"
+  },
+  "chinaSearchRecheck": {
+    "checkedAt": "2026-10-15",
+    "queries": ["106881AI66RG 26-27 价格 人民币 单板", "27WIN-106881 Burton 107800 价格 国内", "106881AI66RG 元", "106881 Burton 26-27 中国"],
+    "newDomesticEvidence": "京东索引仍只露出 26/27、106881、156 cm 标题；两个已知京东商品详情页返回浏览器兼容提示，未读到人民币价、卖家或可售状态。另发现虎窝淘聚合页报 CNY 5,998 并自述来自天猫 BURTON 官方旗舰店，但标题同时列 106881 Camber 与 107071 Flying V，未显示 Faded 27WIN-106881 的具体变体或原始天猫链接。",
+    "decision": "中国大陆候选挂牌价已发现，但精确型号/款色映射和原始商品页面尚未验证，暂不录为种子主价。"
+  },
+  "japanRetailerCurrentListingRecheck": {
+    "checkedAt": "2026-10-15",
+    "source": "https://store.shopping.yahoo.co.jp/move-select/106881ai66rg.html",
+    "platform": "Yahoo! Shopping Japan",
+    "store": "MOVEセレクト / MOVE Select",
+    "listedPriceJPY": 107800,
+    "listingEvidence": {
+      "season": "26-27",
+      "productCode": "106881AI66RG",
+      "color": "Faded",
+      "sizeOptions": ["150", "154", "156", "158", "162"],
+      "jan": "9010884397401"
+    },
+    "availabilitySnapshot": {
+      "lowStock": ["150", "156"],
+      "outOfStock": ["154", "158", "162"],
+      "note": "仅为 2026-10-15 页面快照，不代表后续库存或完成结账后的可售状态。"
+    },
+    "sellerClaims": ["正規代理店商品"],
+    "sellerClaimLimit": "授权身份仅为商品页文字自述，未独立核实。",
+    "priceInterpretation": "日本零售挂牌价与 Burton 日本官方 JPY 107,800 一致；作为日本地区价格交叉核对，不是中国人民币售价。"
+  },
+  "finalDecision": "新增一条聚合页报告的天猫 BURTON 官方旗舰店 CNY 5,998 国内挂牌候选，但标题混列 106881 Camber 与 107071 Flying V，未得到精确款色变体及原始天猫详情，故暂不作为该种子的中国售价。旧季 CNY 6,798 仍排除。日本正規販売店同雪季同款色挂牌 JPY 107,800，与 Burton 日本官方店一致；种子主价继续按 ECB 汇率折算 CNY 4,553.20，并明确标为日本地区参考而非中国售价。"
+}

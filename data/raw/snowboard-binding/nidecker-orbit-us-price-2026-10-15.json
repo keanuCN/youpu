@@ -1,0 +1,26 @@
+{
+  "capturedAt": "2026-10-15",
+  "market": "Nidecker United States official store",
+  "currency": "USD",
+  "exchangeRate": {
+    "date": "2026-10-14",
+    "eurUsd": 1.1195,
+    "eurCny": 7.4925,
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html",
+    "formula": "USD × EUR/CNY ÷ EUR/USD"
+  },
+  "product": {
+    "slug": "nidecker-orbit-binding-2027",
+    "model": "Orbit",
+    "sku": "N.27.BNU.OBS.744.3M.1",
+    "officialPriceUsd": 279.95,
+    "convertedCny": 1873.63,
+    "url": "https://www.nidecker.com/en-int/products/orbit"
+  },
+  "limitations": [
+    "The SKU prefix N.27 aligns with the 2027 archive, while the current US product page lists the price; confirm season availability again before purchase.",
+    "Converted amount is a United States regional reference, not a Chinese retail price.",
+    "Sales tax, payment conversion fees, cross-border shipping, customs duties, and import taxes are excluded.",
+    "Price and stock may change after the checked date."
+  ]
+}

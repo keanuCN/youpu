@@ -13,9 +13,9 @@ editorial_scores:
   forgiveness: 8.4
   value: 8.4
 price:
-  min: 449.95
-  max: 449.95
-  currency: USD
+  min: 2787.67
+  max: 2787.67
+  currency: CNY
 specs:
   length: 152
   waistWidth: 250
@@ -31,24 +31,29 @@ specs:
     - all-mountain
     - freestyle
   warranty: 3
+  riderWeightEvidence: Burton 美国官方 2027 商品页尺码表逐尺码列出建议体重范围；范围用于辅助选板，仍需结合身高、靴码、风格与地形，不作为唯一选尺依据。
   sizeSpecs:
-    - { size: "135", waistWidth: 235, sidecutRadii: "6.4 m", stanceWidth: "455 mm" }
-    - { size: "140", waistWidth: 240, sidecutRadii: "6.8 m", stanceWidth: "480 mm" }
-    - { size: "145", waistWidth: 245, sidecutRadii: "7.1 m", stanceWidth: "505 mm" }
-    - { size: "148", waistWidth: 248, sidecutRadii: "7.3 m", stanceWidth: "530 mm" }
-    - { size: "152", waistWidth: 250, effectiveEdge: 1155, sidecutRadii: "7.6 m", stanceWidth: "530 mm" }
-    - { size: "155", waistWidth: 252, sidecutRadii: "7.8 m", stanceWidth: "560 mm" }
-    - { size: "159", waistWidth: 255, sidecutRadii: "8.1 m", stanceWidth: "560 mm" }
-    - { size: "155W", waistWidth: 260, sidecutRadii: "7.8 m", stanceWidth: "560 mm" }
-    - { size: "159W", waistWidth: 263, sidecutRadii: "8.1 m", stanceWidth: "560 mm" }
-    - { size: "162W", waistWidth: 268, sidecutRadii: "8.3 m", stanceWidth: "560 mm" }
-  priceCheckedAt: 2026-10-12
-  officialPrice: USD 449.95
-  priceMarket: 原币 USD；来源商店 www.burton.com
-  priceSource: https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
+    - { size: "135", waistWidth: 235, sidecutRadii: "6.4 m", stanceWidth: "455 mm", riderWeight: "36–54 kg" }
+    - { size: "140", waistWidth: 240, sidecutRadii: "6.8 m", stanceWidth: "480 mm", riderWeight: "36–54 kg" }
+    - { size: "145", waistWidth: 245, sidecutRadii: "7.1 m", stanceWidth: "505 mm", riderWeight: "45–68 kg" }
+    - { size: "148", waistWidth: 248, sidecutRadii: "7.3 m", stanceWidth: "530 mm", riderWeight: "45–68 kg" }
+    - { size: "152", waistWidth: 250, effectiveEdge: 1155, sidecutRadii: "7.6 m", stanceWidth: "530 mm", riderWeight: "54–82 kg" }
+    - { size: "155", waistWidth: 252, sidecutRadii: "7.8 m", stanceWidth: "560 mm", riderWeight: "54–82 kg" }
+    - { size: "159", waistWidth: 255, sidecutRadii: "8.1 m", stanceWidth: "560 mm", riderWeight: "68–91 kg" }
+    - { size: "155W", waistWidth: 260, sidecutRadii: "7.8 m", stanceWidth: "560 mm", riderWeight: "54–82 kg" }
+    - { size: "159W", waistWidth: 263, sidecutRadii: "8.1 m", stanceWidth: "560 mm", riderWeight: "68–91 kg" }
+    - { size: "162W", waistWidth: 268, sidecutRadii: "8.3 m", stanceWidth: "560 mm", riderWeight: "82–118 kg+" }
+  priceCheckedAt: 2026-10-14
+  seasonEvidence: Burton 美国官方商品页标题标注 2027，日本官方色款代码为 27WIN-235951；日本官方价页记录亦明确 2026/27。归档为 2026/27（2027 款）；商品页未直接写明完整雪季日期。
+  officialPrice: JPY 66000
+  regionalListPrice: JPY 66,000
+  priceMarket: Burton 日本官方商店；型号 235951、色款代码 27WIN-235951
+  priceSource: https://jp.burton.com/ja-jp/products/burton-good-company-camber-snowboard-235951
+  regionalPriceSource: https://jp.burton.com/ja-jp/products/burton-good-company-camber-snowboard-235951
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Burton 日本官方商品页 2027 款型号 235951 标价 JPY 66,000；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 2,787.67。页面列出 135/140/145/148/152/155/159/155W/159W/162W，145 与 162W 当时标为售罄。页面未明确税费口径；日本官方店折算参考，不是中国售价，运费、跨境配送和进口费用未计。
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/2359513A03_1.webp?v=1778421389"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/9ff5ca8ae0863c158baeb5cf587fd0af508f1f1ef109343f68228dc7e57555f5.webp"
     kind: face
     alt: Burton Good Company Camber 2027 官方产品图
     source: Burton 官方产品页图片（转载授权未核实）

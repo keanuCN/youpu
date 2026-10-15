@@ -1,0 +1,100 @@
+{
+  "capturedAt": "2026-10-15",
+  "brand": "DREAMSCAPE / Decathlon",
+  "model": "DBCK 500 men's back protector vest",
+  "category": "ski-protection",
+  "styleCodes": ["8494020", "8903324"],
+  "sources": {
+    "grayVariant": {
+      "url": "https://www.decathlon.fr/p/gilet-de-protection-dorsale-vtt-ski-et-snowboard-homme-dbck-500-gris/_/R-p-173334",
+      "evidence": "官方商品页列出 Ref 8494020、S/M/L/XL/2XL，产品定位适用于 VTT、滑雪与单板滑雪；价格区展示 EUR 59.99 常规价与 EUR 39.99 促销价，并标注促销期间 2026-06-23 至 2026-09-14。页面抓取时只有 M 显示有货，其余尺码缺货；该库存仅代表采集时刻。"
+    },
+    "blackVariant": {
+      "url": "https://www.decathlon.fr/p/gilet-de-protection-dorsale-vtt-ski-et-snowboard-homme-dbck-500-gris/_/R-p-173334?c=noir",
+      "evidence": "官方商品页将黑色变体列为 Ref 8903324，并展示与灰色 Ref 8494020 同一产品系列的颜色选择。"
+    },
+    "fitAndProtection": {
+      "url": "https://www.decathlon.fr/p/gilet-de-protection-dorsale-vtt-ski-et-snowboard-homme-dbck-500-gris/_/R-p-173334",
+      "evidence": "官方商品页描述区写按 EN 1621-2 Level 1 冲击测试，但同页 Testing 区写 EN 1621-1 Level 1；两处不能同时作为已核实等级发布。"
+    },
+    "2025Declaration": {
+      "url": "https://support.decathlon.fr/gilet-protection-dorsale-vtt-ski-et-snowboard-homme-dbck-500-gris",
+      "coveredRefs": ["8494020", "8903324"],
+      "documentDate": "2025-05-23",
+      "designCode": "126813",
+      "harmonisedStandards": ["VPSki-009", "VêtProVTT-008"],
+      "typeExaminationCertificate": "2754/0372/162/08/21/0532",
+      "evidence": "迪卡侬官方支持页将 2025 符合性声明关联至 Ref 8494020 与 8903324。声明列 VPSki-009 与 VêtProVTT-008，未列商品页所写 EN 1621-2 或 EN 1621-1；未找到官方标准映射说明，不能把这些标准等同或推断防护等级。"
+    },
+    "sizeChart": {
+      "url": "https://www.decathlon.fr/p/gilet-de-protection-dorsale-vtt-ski-et-snowboard-homme-dbck-500-gris/_/R-p-173334",
+      "evidence": "官方说明胸围/身高建议：S 87–93 cm / 166–172 cm；M 83–99 cm / 172–177 cm；L 99–107 cm / 177–183 cm；XL 107–117 cm / 183–192 cm；2XL 117–127 cm / 身高约 192 cm 以上。M 的胸围范围与 S 和 L 明显重叠，保留原文并标记待厂商澄清；不以推测值替换。"
+    },
+    "germanyVariantRecheck20261015": {
+      "url": "https://www.decathlon.de/p/ruckenprotektorweste-herren-dbck-500-grau/173334/c382c125m8494020",
+      "styleCode": "8494020",
+      "sizeSelector": ["XS", "S", "M", "L", "XL", "2XL"],
+      "sizeChartSizes": ["S", "M", "L", "XL", "2XL"],
+      "unmappedSize": "XS",
+      "copyConflict": "页面卖点称四个尺码；选择器列六个，胸围/身高建议表列五个。",
+      "displayedPriceEUR": 39.99,
+      "priceCaptureStatus": "德国 Decathlon 官方页面本次读取显示现价 EUR 39.99、原价 EUR 59.99；按 ECB 2026-10-14 EUR/CNY 7.4925 折合 CNY 299.63，仅作德国地区价格快照。",
+      "decision": "确认同一 Ref 8494020 的德国页面列出 XS 至 2XL，但 XS 缺少官方身体尺寸建议；不推断 XS 胸围或身高。法国和德国挂牌价分开记录，不将地区价合并为单一通用价格。"
+    },
+    "ziprotecCompatibility": {
+      "url": "https://www.decathlon.fr/p/veste-de-snowboard-chaude-et-resistante-homme-snb-500-ziprotect-kaki-et-noir/350525/c382c91m8842645",
+      "relatedProtector": "DBCK 500 M / DBCK 900 M",
+      "evidence": "Decathlon 男款 SNB 500 Ziprotect 商品说明明确列出可配 DBCK 500 M 或 DBCK 900 M；护具产品说明也描述与 SNB JKT 500/900 系列外套的 ZIPROTEC 组合。实际购买仍须核对同尺码与衣服的拉链接口。"
+    },
+    "exchangeRate": {
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+      "date": "2026-10-14",
+      "eurToCny": 7.4925,
+      "formula": "EUR 59.99 × 7.4925 = CNY 449.475075，四舍五入至 CNY 449.48"
+    }
+  },
+  "priceDecision": {
+    "regionalListPrice": {"amount": 59.99, "currency": "EUR", "market": "France"},
+    "convertedReference": {"amount": 449.48, "currency": "CNY"},
+    "excludedExpiredPromotion": {"amount": 39.99, "currency": "EUR", "validThrough": "2026-09-14"},
+    "decision": "以官方常规挂牌价作为法国地区参考并折算人民币。已结束促销价不当作当前价格；该金额不是中国售价，也不包含跨境成本。"
+  },
+  "seasonDecision": "商品页没有明确雪季。种子 2026 仅用于本轮归档，不作为年款事实。",
+  "image": {
+    "url": "https://contents.mediadecathlon.com/p3014512/k%2463949858dcbbe0005995c5bb191761b7/picture.jpg?f=3000x0&format=auto",
+    "source": "Decathlon official product image CDN",
+    "retrievalNote": "英国官方商品图库第 1/22 张；2026-10-15 HTTP HEAD 返回 200 image/jpeg，本站展示授权状态待核。"
+  },
+  "galleryImages": [
+    {"order": 1, "url": "https://contents.mediadecathlon.com/p3014512/k%2463949858dcbbe0005995c5bb191761b7/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 2, "url": "https://contents.mediadecathlon.com/p2950511/k%244806003b21c6d1ca9bc3ff7aa156a1b7/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 3, "url": "https://contents.mediadecathlon.com/p3014511/k%248b6676ba6b83a3de1283159287145bda/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 4, "url": "https://contents.mediadecathlon.com/p2950512/k%24900652742dc16ab06f9377ab42deab83/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 5, "url": "https://contents.mediadecathlon.com/p3014513/k%24a0d6971916e8db8107ba079b1b1c0203/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 6, "url": "https://contents.mediadecathlon.com/p2950509/k%24ab94f3376759e8a10276464de9138bdc/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 7, "url": "https://contents.mediadecathlon.com/p3014514/k%2486bc252499159c7f9e6b320295abb614/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 8, "url": "https://contents.mediadecathlon.com/p3014510/k%249a855347bc376a1a5dc253b23a051e4f/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 9, "url": "https://contents.mediadecathlon.com/p3014509/k%247678cb18711eb50a191775a0cc5f24ea/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 10, "url": "https://contents.mediadecathlon.com/p2271715/k%248d3808aba9549e9f6dc793bdc45275bc/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 11, "url": "https://contents.mediadecathlon.com/p2271714/k%249f956bbf718fbd4f269ceab7c47c6183/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 12, "url": "https://contents.mediadecathlon.com/p2271712/k%241a2ed155bb98d03c8c6eabe33a708cc4/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 13, "url": "https://contents.mediadecathlon.com/p2271711/k%24bcecfab49ca88650b9b5a52f37461a1e/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 14, "url": "https://contents.mediadecathlon.com/p2271710/k%240fb43f5960a94ba315e8dca351dbb3b1/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 15, "url": "https://contents.mediadecathlon.com/p2271709/k%2404daf7cae805969e00d00f9b23a70605/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 16, "url": "https://contents.mediadecathlon.com/p2248650/k%24a981b441a9b8610a5d070cabb4c13231/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 17, "url": "https://contents.mediadecathlon.com/p2248430/k%2415b5c9a35c9ed00204d2971f741aecc3/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 18, "url": "https://contents.mediadecathlon.com/p2970095/k%2497403685738d0da35aa1e34efb931034/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 19, "url": "https://contents.mediadecathlon.com/p2271713/k%241b86b53b8593203ba0106032a1fbd910/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 20, "url": "https://contents.mediadecathlon.com/p2033387/k%24bc6de5ca0f73877cd8df9fdb88f00fd6/picture.jpg?f=3000x0&format=auto", "httpStatus": 410, "contentType": null},
+    {"order": 21, "url": "https://contents.mediadecathlon.com/p2271782/k%244de7a03ef48beda027c8ed36b69288d6/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"},
+    {"order": 22, "url": "https://contents.mediadecathlon.com/p2271776/k%24bd43c638028d92c5d18287486dba2563/picture.jpg?f=3000x0&format=auto", "httpStatus": 200, "contentType": "image/jpeg"}
+  ],
+  "limitations": [
+    "M 尺码胸围建议 83–99 cm 与相邻尺码明显重叠，原样保留并要求购买前向商家确认。",
+    "商品页仅提供建议胸围与身高，不是护具平铺成衣尺寸。",
+    "商品页描述区与 Testing 区分别给出 EN 1621-2 Level 1 和 EN 1621-1 Level 1；2025 符合性声明列 VPSki-009、VêtProVTT-008，官方未说明三组标准的对应关系，种子不发布单一等级。",
+    "法国产品价折算不代表中国境内价格，且商品页库存会变化。",
+    "商品页未确认雪季；2026 只是快照/归档标签。",
+    "英国官方图库共 22 张，21 张返回 HTTP 200 image/jpeg 并已收录；第 20 张返回 HTTP 410，未放入种子。图库展示授权仍待核。"
+  ]
+}

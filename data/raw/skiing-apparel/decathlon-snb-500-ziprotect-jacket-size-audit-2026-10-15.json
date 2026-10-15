@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-15",
+  "product": "DREAMSCAPE SNB 500 Ziprotect Men's Snowboard Jacket",
+  "productId": "8881806",
+  "productPage": "https://www.decathlon.co.uk/p/mens-warm-durable-snowboard-jacket-snb-500-ziprotect-camel-and-black/350525/c152c382m8881806",
+  "productPageEvidence": {
+    "availableSizes": ["S", "M", "L", "XL", "2XL"],
+    "fit": "Loose, long fit",
+    "sizeAdvice": "Choose your usual size"
+  },
+  "officialUkMensSportswearGuide": {
+    "source": "https://smartsize-front.decathlon.net/en-GB/11",
+    "appliesTo": "Decathlon UK general men's sportswear body measurements; not garment measurements and not a product-specific fit test.",
+    "bodyChestCircumferenceCm": {
+      "S": [87, 92],
+      "M": [93, 100],
+      "L": [101, 108],
+      "XL": [109, 118],
+      "2XL": [119, 130]
+    },
+    "decision": "Same Decathlon UK market and men's sportswear size system; record as general body-size reference alongside the jacket's usual-size advice, not garment chest measurements."
+  },
+  "unresolved": [
+    "Jacket garment chest circumference and other garment dimensions by size",
+    "Product-specific fit ease between body and garment measurements"
+  ]
+}

@@ -5,10 +5,15 @@ model: "Maysis"
 year: 2027
 title: "K2 Maysis 2027"
 one_liner: "采用双区 BOA 与 Conda 脚跟固定系统，搭配热塑 Intuition 鞋胆。"
+price:
+  min: 2543.30
+  max: 2543.30
+  currency: CNY
 specs:
   lacingSystem: "双区 Zonal BOA（H5 与 M+2 旋钮）+ Conda 内靴 BOA 脚跟束带"
   flex: "官方页面仅以 Playful–Precise 视觉轴展示脚感，未给出单一硬度值"
   fit: "Conda 束带收紧脚跟；内外 J-Bar 减少脚跟抬起；Intuition Control Foam 3D 热塑鞋胆"
+  wideVariant: "同季宽版 K2 Maysis Wide（KB261664）：K2 标注鞋壳与鞋胆均比常规 Maysis 宽 7 mm。该值是型号间相对差值，不是常规版绝对楦宽。"
   terrain: "Freeride、Big Mountain、Freestyle、Powder（K2 官方列出的用途）"
   liner: "Intuition Control Foam 3D 热塑鞋胆；含 S’Cafe 咖啡渣网布层"
   innerCuff: "Conda 内靴系带提供脚跟固定与脚踝支撑"
@@ -38,16 +43,19 @@ specs:
     - { size: US 男 15, usMen: "15", uk: "14", eu: "50", mondo: "33" }
   bindingCompatibility: 常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。
   selectionNotes: 穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。
-  fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。
+  fitEvidence: K2 未公布常规 Maysis 的绝对鞋楦宽度或脚背容积。官方 2027 Maysis Wide（KB261664）页面称壳体与鞋胆均比常规版宽 7 mm；这是相对型号差值，不是特定尺码的 last 宽度，也不等于实测脚型适配结论。
   heatMolding: 官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。
   compatibilitySources: https://k2snow.com/en-us/p/maysis-mens-snowboard-boot-kb261665?color=black
-  priceCheckedAt: 2026-10-12
+  priceCheckedAt: 2026-10-15
   officialPrice: USD 379.95
-  priceMarket: 原币 USD；来源商店 k2snow.com
+  regionalListPrice: USD 379.95
+  priceMarket: K2 美国官方商店；2027 男款商品页
   priceSource: https://k2snow.com/en-us/p/maysis-mens-snowboard-boot-kb261665
-  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  seasonEvidence: K2 美国官方商品页标题为 K2 Maysis Men's Snowboard Boots 2027；价格与型号直接对应。
+  priceStatus: K2 美国官方 2027 商品页标价 USD 379.95，按 ECB 2026-10-13 EUR/USD 1.1188、EUR/CNY 7.4890 折算 CNY 2,543.30，仍作为主参考。Murasaki 日本零售商另列 K2 MAYSIS 男款 26-27 含税价 JPY 64,900，按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 2,741.21；作为日本地区零售价交叉参考，不是中国售价，商品页未显示 K2 厂商货号。页面标示预计 2026 年 11 月至 12 月下旬到货，所选 23 cm 线上无货，不能推断其它尺码库存。两地价格均未含跨境运输及进口费用，汇率为参考值而非交易汇率。
 images:
-  - url: "https://cdn11.bigcommerce.com/s-cppgporhzh/product_images/attribute_rule_images/11009064_source_1780342998.jpg"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/2a653606e818b1fa38abaee916268f052a5c5f81e58ed110e3e9528294725954.webp"
     kind: face
     alt: K2 Maysis 2027 黑色款官方雪鞋商品图
     source: K2 官方商品页（图片使用授权待核）
@@ -55,4 +63,11 @@ images:
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/maysis-mens-snowboard-boot-kb261665?color=black
+# 编辑暂估，非社区实测；评分口径见 docs/单板雪鞋编辑评分口径-2026-10-15.md
+editorial_scores:
+  fit: 7.7
+  support: 7.3
+  warmth: 8.2
+  convenience: 8.9
+  value: 5.0
 status: published

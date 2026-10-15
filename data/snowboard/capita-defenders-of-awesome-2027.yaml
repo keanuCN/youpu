@@ -6,8 +6,8 @@ year: 2027
 title: CAPiTA D.O.A. Snowboard 2027 CAPiTA Snowboards | NA
 one_liner: 兼顾度假区全山和自由式的经典双向板，响应、弹性和可玩性平衡，适合想在跳台、侧击和日常巡航之间切换的滑手。
 price:
-  min: 4320
-  max: 4320
+  min: 3763.36
+  max: 3763.36
   currency: CNY
 specs:
   lengthOptions: 148 / 150 / 152 / 154 / 156 / 158 / 160 / 162 / 164 / 151W / 153W / 155W / 157W / 159W / 161W / 163W
@@ -43,8 +43,12 @@ specs:
     - { size: "159W", effectiveEdge: 1259, waistWidth: 261, noseWidth: 307, tailWidth: 307, sidecutRadii: "8.2 m", stanceWidth: "55.9 cm reference" }
     - { size: "161W", effectiveEdge: 1281, waistWidth: 262, noseWidth: 309, tailWidth: 309, sidecutRadii: "8.3 m", stanceWidth: "58.4 cm reference" }
     - { size: "163W", effectiveEdge: 1297, waistWidth: 263, noseWidth: 311, tailWidth: 311, sidecutRadii: "8.4 m", stanceWidth: "58.4 cm reference" }
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  priceCheckedAt: 2026-10-14
+  seasonEvidence: CAPiTA 日本官方商品页标题为 D.O.A. Snowboard 2027，北美官方对应商品页也标注 2027；按 2027 款归入 2026/27 档案。商品页没有直接写明雪季起止日期。
+  priceMarket: CAPiTA 日本官方商店；日本地区挂牌价参考
+  priceSource: https://jp.capitasnowboarding.com/products/capita-d-o-a-mens-snowboard-2027
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: CAPiTA 日本官方店 D.O.A. 2026/27 显示 JPY 89,100；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 3,763.36。商品页列出 148–164 及 151W–163W。页面未明确税费口径；该折算是日本官方店参考，不是中国售价，跨境运费和进口费用未计。
 editorial_scores:
   stability: 7.9
   response: 8.0
@@ -53,12 +57,12 @@ editorial_scores:
   forgiveness: 7.1
   value: 7.5
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST03-D.O.A.-TOP.png?v=1776884618"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/51dcbbbec72249f9fcf42c4ce7887dab628d147fabf56b4c0552691e438eaea7.webp"
     kind: face
     alt: CAPiTA D.O.A. 2027 官方产品图
     source: CAPiTA 官方产品页图片（本地演示，版权待核）
     sort_order: 0
 data_source:
-  kind: crawl
+  kind: official
   origin_url: https://capitasnowboarding.com/products/capita-d-o-a-mens-snowboard-2027
 status: published

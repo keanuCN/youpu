@@ -18,6 +18,14 @@
       "host": "Tanabe Sports (official Atomic catalog copy hosted by retailer)",
       "evidence": "The 25/26 catalog table lists per-length dimensions: 176 (142/120/133 mm), 184 (143/120/134 mm), and 192 (144/120/135 mm); radii 18/19/20 m; Powder Rocker 30/40/30; weight 1800 g at 184 cm.",
       "limitations": "Third-party-hosted catalog PDF; used only to preserve the manufacturer catalog data. Product page independently confirms the model technologies and edge angles."
+    },
+    "chinaRetailListing": {
+      "url": "https://detail.youzan.com/show/goods?alias=2fwj4g8h5inpkkh&from_source=gbox_seo",
+      "seller": "自由地带雪具连锁（微信认证）",
+      "checkedAt": "2026-10-15",
+      "sellerListingCode": "AAST02444",
+      "evidence": "商品标题标注 ATOMIC 25/26 新品 BENT Chetler 120；页面挂牌价 CNY 7,998，另列运费 CNY 100。",
+      "limitations": "AAST02444 仅按卖家页记录，未确认是 Atomic 厂商货号；页面未能确认实际成交、库存、尺码变体及是否包含固定器。挂牌价是核验时的页面状态，不代表长期价格。"
     }
   },
   "lengthSpecs": [

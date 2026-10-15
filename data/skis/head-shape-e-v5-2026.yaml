@@ -5,8 +5,18 @@ model: Shape e-V5
 year: 2026
 title: HEAD Shape e-V5 2025/26
 one_liner: HEAD Shape 雪道系列型号，采用 74 mm 板腰与前摇设计，定位于雪道巡航与 carving。
+price:
+  min: 2480.43
+  max: 2480.43
+  currency: CNY
 specs:
   lengthOptions: 149 / 156 / 163 / 170 / 177 cm
+  sizeSpecs:
+    - { size: 149 cm, noseWidth: 128, waistWidth: 74, tailWidth: 109, turnRadius: 9.1, notes: HEAD 25/26 手册货号 315255；逐码值由同货号商品规格复录。 }
+    - { size: 156 cm, noseWidth: 128, waistWidth: 74, tailWidth: 109, turnRadius: 10.2, notes: HEAD 25/26 手册货号 315255；逐码值由同货号商品规格复录。 }
+    - { size: 163 cm, noseWidth: 128, waistWidth: 74, tailWidth: 109, turnRadius: 11.3, notes: HEAD 25/26 手册货号 315255；逐码值由同货号商品规格复录。 }
+    - { size: 170 cm, noseWidth: 128, waistWidth: 74, tailWidth: 109, turnRadius: 13, notes: HEAD 25/26 手册货号 315255；逐码值由同货号商品规格复录。 }
+    - { size: 177 cm, noseWidth: 128, waistWidth: 74, tailWidth: 109, turnRadius: 15, notes: HEAD 25/26 手册货号 315255；逐码值由同货号商品规格复录。 }
   waistWidth: 74
   turnRadius: 13
   turnRadiusReferenceLength: 170 cm
@@ -14,18 +24,21 @@ specs:
   skierLevel: 中级至进阶
   bindingSetup: PR 11 GW 系统固定器套装
   weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
-  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
-  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
-    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  geometryNotes: HEAD 25/26 手册按 315255 确认长度与 170 cm 参考几何；同货号零售规格列出五档半径，并复录五档相同 sidecut。重量未录入。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
-  sourceCheckedAt: 2026-10-13
-  compatibilitySources: https://head.ru/ski/shop/skis/discounts/CF854649-178B-30D5-CA92-E692F4F09C64/104214/；https://www.grip-walk.com/faq/
+  seasonEvidence: HEAD 官方 25/26 目录列明 Shape e.V5、SKU 315255 与板长；逐长度 radius 来源为同 SKU 25/26 商品资料，详见证据审计。
+  sourceCheckedAt: 2026-10-14
+  priceCheckedAt: 2026-10-14
+  priceMarket: 日本 Tanabe Sports 中文商品页动态折算显示人民币，商品货号 315255
+  priceSource: https://tanabesports.net/goods_zhcn_cny_44295.html
+  priceStatus: 2025/26 对应商品页显示促销价 JPY 58,700，并动态折算显示 CNY 2,480.43；页面列出 149/156/163/170 cm。该数为日本零售商折算参考价，不是中国国内售价；页面汇率可能变化，跨境运费、关税未计，且尺码即时库存需下单前核对。
+  compatibilitySources: https://head.ru/ski/shop/skis/discounts/CF854649-178B-30D5-CA92-E692F4F09C64/104214/；https://www.tanabesports.jp/ts/wp-content/uploads/2025/05/25-26_HEAD_user.pdf；https://preisvergleich.heise.de/head-shape-e-v5-performance-pr-11-gw-inkl-bindung-modell-2025-2026-315255-a3620573.html；https://www.grip-walk.com/faq/
 data_source:
   kind: official
   origin_url: https://head.ru/ski/shop/skis/discounts/CF854649-178B-30D5-CA92-E692F4F09C64/104214/
 images:
-  - url: https://www.outdoorsports.com/cdn/shop/files/Head-Shape_e.V5-Mens-2026_TIPS_1200x.png?v=1755546338
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/f5cbbf386033670c136bfb69e5ae15d74a06c3733f117f6fd2ce9beaa4432093.webp
     kind: face
     alt: HEAD Shape e-V5 2025/26 雪板商品图
     source: OutdoorSports 公开商品页图片（本地演示，版权授权待核）

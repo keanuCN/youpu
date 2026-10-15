@@ -21,7 +21,7 @@ import { reviewCount, userRating } from "@/data/boards";
 import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear, type CloudRatingsResponse } from "@/lib/api";
 import { formatSpecValue, gearById, pricePosition, sameScenePeers } from "@/lib/domain";
-import { fmtCompact, fmtPrice } from "@/lib/format";
+import { fmtCompact, fmtOfficialPriceCny, fmtPrice } from "@/lib/format";
 import { hasEditorialScores, hasHardcoreIndex, hasPrice, hasUserRating } from "@/lib/gear-state";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
 import { track } from "@/lib/track";
@@ -231,10 +231,10 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
 
       <div className="border-b border-border py-5">
         <div className="flex items-baseline justify-between">
-          <p className="mono-label">{priceReady && gear.specs.priceCheckedAt ? '人民币参考价（待核）' : !priceReady && gear.specs.officialPrice ? '官方地区挂牌价' : '参考价'}</p>
-          <p className="mono-data text-[24px] leading-none tnum">{priceReady ? fmtPrice(gear.price, gear.priceCurrency) : gear.specs.officialPrice ? String(gear.specs.officialPrice) : <PendingValue label="价格待补" />}</p>
+          <p className="mono-label">{gear.specs.officialPrice ? '官网地区挂牌价折合人民币' : '参考价'}</p>
+          <p className="mono-data text-[24px] leading-none tnum">{gear.specs.officialPrice ? fmtOfficialPriceCny(String(gear.specs.officialPrice)) ?? <PendingValue label="人民币折算待补" /> : priceReady ? fmtPrice(gear.price, gear.priceCurrency) : <PendingValue label="价格待补" />}</p>
         </div>
-        {priceReady && !gear.specs.priceCheckedAt ? (
+        {priceReady && !gear.specs.priceCheckedAt && !gear.specs.officialPrice ? (
           <>
             <div className="relative mt-4 h-[6px] bg-border">
               <span className="absolute inset-y-0 left-0 bg-foreground/25" style={{ width: `${pos}%` }} />
@@ -250,7 +250,7 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
           </>
         ) : (
           <p className="mt-4 border border-dashed border-border bg-secondary/45 px-3 py-3 text-[13px] leading-relaxed text-muted-foreground">
-            {gear.specs.priceCheckedAt ? '人民币参考价尚未完成来源核实。官方原币报价、地区与核查日期见下方价格依据；暂不做同类价位比较。' : '暂无可比价格，当前页面只展示已核验的官方规格。'}
+            {gear.specs.officialPrice ? '官网地区挂牌价已按人民币汇率折算，来源与核查日期见下方价格依据；该金额不代表中国零售价，暂不做同类价位比较。' : gear.specs.priceCheckedAt ? '价格来源与核查日期见下方价格依据；暂不做同类价位比较。' : '暂无可比价格，当前页面只展示已核验的官方规格。'}
           </p>
         )}
       </div>
@@ -396,16 +396,34 @@ function categorySignalFor(gear: GearItem): { label: string; value: string; sub:
 function DetailSignals({ gear }: { gear: GearItem }) {
   if (gear.categorySlug === "snowboard") {
     return (
-      <div className="grid gap-5 border-b border-border py-5 sm:grid-cols-2">
-        <div>
-          <p className="mono-label mb-2.5">硬度 / FLEX</p>
-          <FlexBar value={gear.flexValue} />
-          <p className="mono-label mt-2 text-foreground/70">{gear.flexLabel}</p>
+      <div className="border-b border-border py-5">
+        <div className="grid gap-5 sm:grid-cols-2">
+          <div>
+            <p className="mono-label mb-2.5">硬度 / FLEX</p>
+            <FlexBar value={gear.flexValue} />
+            <p className="mono-label mt-2 text-foreground/70">{gear.flexLabel}{gear.id === "gray-desperado-ti-type-r-2027" ? " · 167 Vew 腰部硬度" : ""}</p>
+          </div>
+          <div>
+            <p className="mono-label mb-2.5">适用场景 / SCENES</p>
+            <SceneTags scenes={gear.scenes} />
+          </div>
         </div>
-        <div>
-          <p className="mono-label mb-2.5">适用场景 / SCENES</p>
-          <SceneTags scenes={gear.scenes} />
-        </div>
+        {gear.id === "gray-desperado-ti-type-r-2027" ? (
+          <div className="mt-4 grid gap-3 border-t border-border pt-4 sm:grid-cols-2">
+            {[
+              ["定位", gear.specs.useCase],
+              ["适用边界", gear.specs.useCaseLimit],
+              ["选码提示", gear.specs.sizingNote],
+              ["硬度 / 资料说明", `${gear.specs.flexNote ?? gear.specs.stiffnessScale ?? ""}；${gear.specs.edgeSpecNote ?? ""}`],
+              ["进阶指数口径", gear.specs.hardcoreNote],
+            ].map(([label, value]) => (
+              <div key={label} className="border-l-2 border-foreground/25 pl-3">
+                <p className="mono-label mb-1">{label}</p>
+                <p className="text-[12px] leading-relaxed text-muted-foreground">{value}</p>
+              </div>
+            ))}
+          </div>
+        ) : null}
       </div>
     );
   }

@@ -4,7 +4,11 @@ brand: decathlon
 model: SNB 500 Ziprotect Men's Snowboard Jacket
 year: 2026
 title: Men's Warm and Durable Snowboard Jacket SNB 500 Ziprotect
-one_liner: 10000 mm 防水、全压胶并带身体与袖部不同克重的合成棉填充；具体保暖表现仍取决于内搭和环境。
+one_liner: 英国官方页列 10,000 mm 防水并全压胶；迪卡侬部分地区页面出现 15,000 mm 冲突标注，防水等级待品牌核实。身体与袖部采用不同克重合成棉填充，实际保暖表现仍取决于内搭和环境。
+price:
+  min: 886.60
+  max: 1152.61
+  currency: CNY
 specs:
   fit: loose
   fabric: 100% Polyamide
@@ -13,16 +17,95 @@ specs:
   garmentType: jacket
   powderSkirt: true
   waterproofMm: 10000
+  waterproofEvidence: 英国同款商品 ID 8881806 的亮点和技术参数均列 10,000 mm；捷克同款页亮点写 15,000 mm、技术参数仍写 10,000 mm，葡萄牙页亮点写 15,000 mm。保留英国双重一致的 10,000 mm，并标记存在官方地区页冲突，待品牌或洗标/正式技术单澄清。
   skiPassPocket: true
   ziprotectCompatible: true
   helmetCompatibleHood: true
+  features: ZIPROTEC 明确兼容 DREAMSCAPE DBCK 500 M 或 DBCK 900 M 背护；长款剪裁为穿戴背护时提供活动空间。
+  availableSizes: [ S, M, L, XL, 2XL ]
+  sizeGuide: 英国官网尺码选项 S、M、L、XL、2XL，并建议选择平时穿着尺码。迪卡侬英国通用男装身体胸围参考为 S 87–92 cm、M 93–100 cm、L 101–108 cm、XL 109–118 cm、2XL 119–130 cm；这是品牌通用人体尺寸表，不是本款成衣胸围或款号级试穿数据，衣服松量及成衣尺寸仍未知。
+  seasonEvidence: 当前英国商品页未直接标注该夹克的雪季；2026 年份暂作为档案标签，年款待核。
+  level: 官网标注适合所有水平
+  weather: 官网标注适合寒冷天气；身体填充 100 g/m²、袖部 80 g/m²，实际保暖感受仍受内搭和环境影响
+  pocketCountEvidence: 营销区称 5 个安全口袋（含 1 个雪票袋），技术参数区列 7 个口袋；页面口径冲突，暂不归一成单一数量。
+  priceCheckedAt: 2026-10-14
+  officialPrice: GBP 129.99
+  regionalSalePrice: GBP 99.99
+  priceMarket: Decathlon 英国官网；£99.99 为指定卡其/黑色变体促销价，页面原价 £129.99
+  priceSource: https://www.decathlon.co.uk/p/mens-warm-durable-snowboard-jacket-snb-500-ziprotect-camel-and-black/350525/c152c382m8881806
+  priceStatus: 英国官网标价 GBP 129.99，按 ECB 2026-10-13 GBP/CNY 交叉参考汇率折算为 CNY 1152.61；指定颜色促销 GBP 99.99 折算为 CNY 886.60。不是中国售价，运费及税费依结账地而定。
 images:
-  - url: "https://contents.mediadecathlon.com/p2704355/k%243bbcff8c29e8445fef3bb62d38588b81/picture.jpg?f=3000x0&format=auto"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/75971d33521217f626006282bfcfa19fb89a248c586616a91ceff628feb0b9e0.webp"
     kind: face
     alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克
     source: 迪卡侬英国官网商品图；展示授权状态待核
     sort_order: 0
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/9b89c7536086442869c321e8ed8be3e9b7af8421021aa193618c1d736e3d81fd.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 2
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 1
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/981a7964878cd6b31ee460e60cd93cde75f0ee193b1bb273a7036d32611dc7c4.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 4
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 2
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/9ed0436179d5ca43a561f34612470908ff2786393cfc3579cf2c1cc6b0454de5.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 5
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 3
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/4bbd956e5e89aff88f1a48166a504a5c7b36f4ee5387ab138ba214e1da10d28b.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 6
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 4
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/f812125ba23eb3e9af7e03b34f9431cefceced5ba82558709615ec41b8dede1a.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 7
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 5
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/29e54a2c175ee2eec050b72a744a0081d73c77490ad990f57fcb8622e538a369.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 8
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 6
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/3c1d0e6fdd870df77c6bec1d4516ead2952fbdb2d1279b729a2a4a629827ec0a.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 9
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 7
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ea509b608d30972caf283c67c98cea54214de807472ca6ec0d1577a9885f2ddd.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 10
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 8
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/edefcfefc35fb903f4d9f005968853275df99f90c31df180a90a82fd24b7da38.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 11
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 9
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ad47d3b053499564cfcc21ffe7c669092dab676438426957e2f818dd398df3c5.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 12
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 10
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/aa6b82dcb289b42da0abe89d10ca278592a54dec98c6a99a517ec4361a589b51.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 13
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 11
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/575525faf785cd0abc32cfae1092df66b7cd6318d95ca795a5b788865c18224e.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 14
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 12
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/cf62ef8a12935295800dea8f571d999b02c0e1e39c50abd2ccc171ad17c26168.webp"
+    kind: face
+    alt: 迪卡侬 SNB 500 Ziprotect 男款滑雪夹克图 15
+    source: 迪卡侬英国官网商品图库；展示授权状态待核
+    sort_order: 13
 data_source:
   kind: official
-  origin_url: "https://www.decathlon.co.uk/p/men%27s-snb-jacket-500/_/R-p-350525"
+  origin_url: "https://www.decathlon.co.uk/p/mens-warm-durable-snowboard-jacket-snb-500-ziprotect-camel-and-black/350525/c152c382m8881806"
 status: published

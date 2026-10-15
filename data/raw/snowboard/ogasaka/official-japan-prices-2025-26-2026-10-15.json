@@ -1,0 +1,65 @@
+{
+  "brand": "OGASAKA",
+  "checkedAt": "2026-10-15",
+  "season": "2025/26",
+  "exchangeRate": {
+    "source": "https://cn.investing.com/currencies/jpy-cny-historical-data",
+    "date": "2026-10-02",
+    "cnyPer100Jpy": 4.2451,
+    "cnyPerJpy": 0.042451,
+    "note": "Historical market close used only to reproduce the project's CNY-normalized display estimates. Exchange prices vary by source and are not retail prices."
+  },
+  "products": [
+    {
+      "slug": "ogasaka-ct-2026",
+      "model": "CT",
+      "representativeSize": "156 standard",
+      "officialProductPage": "https://www.ogasaka-snowboard.com/product_25_03_ct.html",
+      "checkedAt": "2026-10-15",
+      "officialJapanPriceJpy": {
+        "standardTaxExclusive": 104000,
+        "standardTaxInclusive": 114400,
+        "wideTaxExclusive": 106000,
+        "wideTaxInclusive": 116600
+      },
+      "seedCnyEstimate": 4856,
+      "calculation": "114400 JPY × 0.042451 CNY/JPY = 4856.3944 CNY, rounded to 4856",
+      "market": "Japan domestic official list price converted to a CNY estimate; not a China-market offer. Current inventory was not verified."
+    },
+    {
+      "slug": "ogasaka-fc-2026",
+      "model": "FC",
+      "representativeSize": "157 standard",
+      "officialProductPage": "https://www.ogasaka-snowboard.com/product_25_08_fc.html",
+      "checkedAt": "2026-10-15",
+      "officialJapanPriceJpy": {
+        "standardTaxExclusive": 115000,
+        "standardTaxInclusive": 126500,
+        "wideTaxExclusive": 117000,
+        "wideTaxInclusive": 128700
+      },
+      "seedCnyEstimate": 5370,
+      "calculation": "126500 JPY × 0.042451 CNY/JPY = 5370.0515 CNY, rounded to 5370",
+      "market": "Japan domestic official list price converted to a CNY estimate; not a China-market offer. Current inventory was not verified."
+    },
+    {
+      "slug": "ogasaka-shin-2026",
+      "model": "SHIN 160",
+      "representativeSize": "160",
+      "officialProductPage": "https://www.ogasaka-snowboard.com/product_25_12_shin-160.html",
+      "checkedAt": "2026-10-15",
+      "officialJapanPriceJpy": {
+        "taxExclusive": 110000,
+        "taxInclusive": 121000
+      },
+      "seedCnyEstimate": 5137,
+      "calculation": "121000 JPY × 0.042451 CNY/JPY = 5136.571 CNY, rounded to 5137",
+      "market": "Japan domestic official list price converted to a CNY estimate; not a China-market offer. Current inventory was not verified."
+    }
+  ],
+  "limitations": [
+    "The manufacturer pages verify Japanese tax-exclusive and tax-inclusive list prices, not China retail prices.",
+    "The CNY values are exchange-rate-normalized estimates for the representative sizes, not transaction prices or recommended China retail prices.",
+    "No China-market offer or current stock status was confirmed in this review."
+  ]
+}

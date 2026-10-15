@@ -1,0 +1,63 @@
+slug: decathlon-dbck-900-m-2026
+category: ski-protection
+brand: decathlon
+model: DREAMSCAPE DBCK 900 Men's Back Protector Vest
+year: 2026
+title: DREAMSCAPE DBCK 900 男款背部护具
+one_liner: 轻量、高透气的背心式护背，2024 欧盟符合性声明确认款号 8738342 对应 DBCK900 M，并列出 PPE Regulation 2016/425 与 VPski-009 / VêtProVTT-008；声明未注明 EN 1621 等级，商品页与说明书标示仍有冲突。M 码胸围区间与相邻尺码重叠，应先向商家核实。
+price:
+  min: 710.23
+  max: 710.23
+  currency: CNY
+specs:
+  protectorType: back-vest
+  protectionStandard: 2024 欧盟符合性声明将该型号列入 PPE Regulation (EU) 2016/425，并列技术规范 VPski-009 与 VêtProVTT-008；声明未列 EN 1621 标准或等级。商品页正文标注 EN 1621-2 Level 1、测试段另写 EN 1621-1 Level 1，使用说明出现 Level 2，互相冲突，不发布单一等级结论。
+  coverage: 全背部
+  useSports: [skiing, snowboard, mtb]
+  availableSizes: [S, M, L, XL, 2XL]
+  sizeChart:
+    - { size: S, chestRangeCm: 87-93, heightRangeCm: 166-172, sourceNote: 官方建议范围 }
+    - { size: M, chestRangeCm: 83-99, heightRangeCm: 172-177, sourceNote: 英国、希腊、瑞士和马耳他官方页面均重复此范围，与 S、L 尺码胸围区间重叠；本轮未找到更正值。页面卖点称可选四个尺码但选择器列出五码；未自行修正，购买前需核实 }
+    - { size: L, chestRangeCm: 99-107, heightRangeCm: 177-183, sourceNote: 官方建议范围 }
+    - { size: XL, chestRangeCm: 107-117, heightRangeCm: 183-192, sourceNote: 官方建议范围 }
+    - { size: 2XL, chestRangeCm: 117-127, heightRangeCm: '>192', sourceNote: 官方建议范围 }
+  fitAdvice: 官方提供胸围和身高参考；对应商品号的使用说明还要求量腰到肩的距离，穿好后确认背部保护区域覆盖到位、调节腰带并活动检查护具是否移位。过大或过小都会降低保护效果。因 M 胸围范围异常重叠，临界尺码应咨询商家并试穿确认贴合度，不按单一身高推断尺码。
+  jacketCompatibility: DREAMSCAPE 官方说明 ZIPROTEC 可连接男款 SNB 500 与 SNB 900 外套；产品页列出款号 8758723、8809963、8600856。使用说明称护具与雪服应为同一尺码；购买前确认目标外套款号、尺码和拉链配置。
+  attachment: 弹性护背背心，侧边调节，带裤袢连接带；通过 ZIPROTEC 拉链与兼容外套连接。
+  materials: 护垫为 100% 苯乙烯-乙烯-丁二烯共聚物（SBS）；主体 78% 聚酯纤维、22% 氨纶；内层为聚酯纤维；背部面料为聚酯纤维与氨纶。
+  styleCode: Decathlon ID 8738342
+  seasonEvidence: 商品页没有明确雪季；2026 是本次数据采集标签，不代表已确认年款。
+  priceCheckedAt: 2026-10-15
+  priceMarket: 英国 Decathlon DREAMSCAPE 官方零售页面
+  priceSource: https://www.decathlon.co.uk/p/mens-mtb-skiing-and-snowboarding-back-protector-vest-dbck-900-black/339069/c382m8738342
+  priceStatus: 官方页面当前显示 GBP 79.99，原价 GBP 99.99。按 ECB 2026-10-14 汇率 GBP/EUR 0.84385、CNY/EUR 7.4925 折算为 CNY 710.23。此为英国地区促销参考价，不是中国售价；运输、税费与支付汇率另计，促销和库存可能变化。
+images:
+  - url: "https://contents.mediadecathlon.com/p2704381/k%24ab0c91c40be9e2f58234589b5e0d9ce8/picture.jpg?f=3000x0&format=auto"
+    kind: face
+    alt: DREAMSCAPE DBCK 900 男款黑色背部护具
+    source: 迪卡侬官方商品图库第 1/15 张；HTTP 200 image/jpeg，网站展示授权状态待核
+    sort_order: 0
+  - url: "https://contents.mediadecathlon.com/p2704382/k%243228311b1e508a7db49b706d93c2b2ce/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 900 男款背部护具官方图库图 2
+    source: 迪卡侬官方商品图库第 2/15 张；HTTP 200 image/jpeg，网站展示授权状态待核
+    sort_order: 1
+  - url: "https://contents.mediadecathlon.com/p2704380/k%2402de9e75cf9b6c97cb94bd7845cb0532/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 900 男款背部护具官方图库图 3
+    source: 迪卡侬官方商品图库第 3/15 张；HTTP 200 image/jpeg，网站展示授权状态待核
+    sort_order: 2
+  - url: "https://contents.mediadecathlon.com/p2662130/k%24361dc51288eca88273e586528cf70b5c/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 900 男款背部护具官方图库图 4
+    source: 迪卡侬官方商品图库第 4/15 张；HTTP 200 image/jpeg，网站展示授权状态待核
+    sort_order: 3
+  - url: "https://contents.mediadecathlon.com/p2662124/k%2492a14f8e5898f58a46667fcdac0d4837/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 900 男款背部护具官方图库图 5
+    source: 迪卡侬官方商品图库第 5/15 张；HTTP 200 image/jpeg，网站展示授权状态待核
+    sort_order: 4
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/mens-mtb-skiing-and-snowboarding-back-protector-vest-dbck-900-black/339069/c382m8738342
+status: published

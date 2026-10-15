@@ -2,20 +2,51 @@ const IMAGE_PROXY_PATH = "/api/image-proxy";
 const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
 const AI_IMAGE_HOST = "g.cdn.meoo.host";
 const AI_IMAGE_PATH = "/uvayfd7jql5o/ai-images/";
+const PRODUCT_STORAGE_HOST = "youpu.tos-cn-beijing.volces.com";
+const PRODUCT_CDN_BASE_URL = (() => {
+  const value = process.env.NEXT_PUBLIC_TOS_CDN_BASE_URL?.trim();
+  if (!value) return "";
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" && !url.username && !url.password &&
+      url.pathname === "/" && !url.search && !url.hash
+      ? url.origin
+      : "";
+  } catch {
+    return "";
+  }
+})();
 
 /**
  * 远程图片只允许来自明确登记的产品图片路径。
- * 新品类的本地演示图来自品牌官网或公开零售页面，正式上线前仍应迁移到自有 COS。
+ * 品牌官网或零售图片应迁移到自有 TOS，自有图片直接交给浏览器缓存。
  */
 const REMOTE_IMAGE_RULES = [
-  { host: "youpu.tos-cn-beijing.volces.com", pathPrefix: "/product-images/" },
+  { host: PRODUCT_STORAGE_HOST, pathPrefix: "/product-images/" },
   { host: "us.yonex.com", pathPrefix: "/cdn/shop/files/" },
   { host: "shop.au.victorsport.com", pathPrefix: "/cdn/shop/" },
   { host: "bbsports.co.nz", pathPrefix: "/cdn/shop/" },
   { host: "www.smartmarine.co.nz", pathPrefix: "/cdn/images/products/" },
   { host: "www.follows.co.jp", pathPrefix: "/pic-labo/" },
   { host: "cdn.media.amplience.net", pathPrefix: "/s/ride/" },
+  { host: "cdn.media.amplience.net", pathPrefix: "/s/k2/" },
   { host: "www.jonessnowboards.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "www.arborcollective.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "scene7.zumiez.com", pathPrefix: "/is/image/zumiez/" },
+  { host: "www.bestboards.gr", pathPrefix: "/wp-content/uploads/2025/" },
+  { host: "www.melbournesnowboard.com.au", pathPrefix: "/cdn/shop/files/" },
+  { host: "ca.koruashapes.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "nitrosnowboards.com.au", pathPrefix: "/cdn/shop/files/" },
+  { host: "www.sport-schindele.de", pathPrefix: "/cdn/shop/files/" },
+  { host: "eu.nidecker.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "www.nidecker.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "flux-bindings.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "unionbindingcompany.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "jp.unionbindingcompany.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "www.burton.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "www.nitrosnowboards.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "nobaday.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "images.evo.com", pathPrefix: "/imgp/zoom/264057/" },
   { host: "www.arbor-collective.ca", pathPrefix: "/cdn/shop/files/" },
   { host: "eu.burton.com", pathPrefix: "/cdn/shop/files/" },
   { host: "www.evo.com", pathPrefix: "/cdn/shop/files/" },
@@ -31,12 +62,25 @@ const REMOTE_IMAGE_RULES = [
   { host: "graysnowboards.co.jp", pathPrefix: "/wp2021/wp-content/themes/gray/images/img_" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0231/7366/0752/files/" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0580/2773/7217/files/" },
+  { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0685/4131/7295/files/" },
+  { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0674/9582/1405/files/" },
+  { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0370/4055/4115/files/" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0804/4062/3361/files/" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0641/4722/6759/files/" },
   { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0694/6291/7272/files/" },
+  { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0510/1705/files/" },
+  { host: "cdn.shopify.com", pathPrefix: "/s/files/1/0804/4062/files/" },
   { host: "cdn.dam.salomon.com", pathPrefix: "/af8e2e75-eeed-4307-9ef2-b3b8010090b3/L49291700/" },
   { host: "cdn.dam.salomon.com", pathPrefix: "/27ef3c33-710b-4b27-8734-b3b801009110/L49292000/" },
   { host: "cdn.dam.salomon.com", pathPrefix: "/e650fee6-2dae-488b-9c35-b3b80100923d/L49292200/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/fb6d3e52-e631-4fe0-9ca7-b36001082c68/L49290100/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/2dd43218-0575-4f37-92d2-b360010835d6/L49289600/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/4e88d690-8431-4ab7-b0f7-b36001082530/L45439300/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/06801898-0c9a-4476-b079-b31b00b424be/L47939700/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/68e6042c-dc3a-4478-a479-b360010827af/L49289500/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/9daa7dca-1d3d-4022-b448-b360010834ff/L49289300/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/8e5e6b58-7bb3-4636-9c58-b2f4013ba909/L47671400/" },
+  { host: "cdn.dam.salomon.com", pathPrefix: "/f0c57cc4-3429-4574-a398-b36001082f58/L45450200/" },
   { host: "www.ogasaka-snowboard.com", pathPrefix: "/2025-img/" },
   { host: "blauerboardshop.com", pathPrefix: "/cdn/shop/files/" },
   { host: "www.milosport.com", pathPrefix: "/cdn/shop/files/" },
@@ -103,10 +147,19 @@ export function isAllowedImageUrl(source: string): boolean {
   return isAllowedRemoteImageUrl(source);
 }
 
-export function resolveImageUrl(source: string, useProxy = process.env.NODE_ENV === "development") {
+export function resolveImageUrl(
+  source: string,
+  useProxy = process.env.NODE_ENV === "development" || process.env.NEXT_PUBLIC_CONTENT_SOURCE === "api",
+) {
   if (isAiPlaceholderUrl(source)) return "";
   if (source.startsWith("/") && !source.startsWith("//")) {
     return BASE_PATH ? `${BASE_PATH}${source}` : source;
+  }
+  // 自有存储不需要应用服务器中转；API 内容模式下也应直接读取 TOS。
+  if (isAllowedRemoteImageUrl(source) && new URL(source).hostname === PRODUCT_STORAGE_HOST) {
+    if (!PRODUCT_CDN_BASE_URL) return source;
+    const imageUrl = new URL(source);
+    return `${PRODUCT_CDN_BASE_URL}${imageUrl.pathname}${imageUrl.search}`;
   }
   if (!useProxy || !isAllowedRemoteImageUrl(source)) {
     return source;

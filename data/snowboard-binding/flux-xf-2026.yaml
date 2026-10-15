@@ -4,6 +4,10 @@ brand: flux
 model: "XF"
 year: 2026
 title: "FLUX XF 2026"
+price:
+  min: 2177
+  max: 2562
+  currency: CNY
 one_liner: "25-26 XF 型号，官方覆盖公园、刻滑、粉雪与全山地取向。"
 specs:
   entrySystem: strap
@@ -30,9 +34,11 @@ specs:
   officialPrice: CNY 2177–2562
   priceMarket: 原币 CNY；来源商店 flux-bindings.com
   priceSource: https://flux-bindings.com/en/products/2526xf
-  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
+  regionalListPrice: JPY 49,500；复核时促销 JPY 42,075
+  seasonEvidence: FLUX 官方商品页明确标注 25-26 Model（2026-10-14 复核）。
+  priceStatus: 2026-10-12 归档的 FLUX 官方结构化变体 Offer 为 CNY 2,177–2,562，含不同颜色/尺码变体；归档时有可售与售罄变体。2026-10-14 同一官方商品页标注 25-26 Model，日本商店页面显示 JPY 49,500、促销 JPY 42,075，且售罄。归档 CNY 值的市场/货币切换原因尚未由官网说明，作为带日期的官方人民币报价保留，不代表中国现价；勿与当前日本挂牌价混为一谈。
 images:
-  - url: "https://flux-bindings.com/cdn/shop/files/23_1_gmable_bs-1.png?v=1775183864&width=1160"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/a3aef664875a61a40d8505e70475800caa283d2c082d5ee507c3398f60f0e829.webp"
     kind: face
     alt: FLUX XF 2025/26 官方固定器商品图
     source: FLUX 官方商品页（图片使用授权待核）
@@ -40,4 +46,11 @@ images:
 data_source:
   kind: official
   origin_url: https://flux-bindings.com/products/2526xf
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 8.1
+  comfort: 6.5
+  versatility: 7.6
+  convenience: 6.2
+  value: 5.0
 status: published

@@ -17,7 +17,12 @@ specs:
   storageTemperature: -40°C to 85°C (-40°F to 185°F)
   durability: 抗冲击、抗震、防 X 射线
   warranty: 10年有限质保
-images: []
+images:
+  - url: https://www-oss.lexar.com/uploads/product_images/1066sd_feature_1.jpg?202610141404
+    kind: face
+    alt: Lexar Professional 1066x SDXC UHS-I SILVER 存储卡
+    source: Lexar 官方商品页（展示授权状态待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.lexar.com/zh-hans/products/Lexar-Professional-1066x-SDXC-UHS-I-Card-SILVER-Series/

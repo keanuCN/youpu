@@ -1,0 +1,74 @@
+slug: decathlon-dbck-500-w-2026
+category: ski-protection
+brand: decathlon
+model: DREAMSCAPE DBCK 500 Women's Back Protector Vest
+year: 2026
+title: DREAMSCAPE DBCK 500 女款背部护具
+one_liner: 轻柔、透气的女款背心式护背，官方提供 XS–XL 胸围与身高建议；商品页的 EN 防护标准描述与测试区块冲突，2025 符合性声明另列标准，等级映射待核。兼容 SNB 500/900 外套 ZIPROTEC 系统。
+price:
+  min: 443.86
+  max: 443.86
+  currency: CNY
+specs:
+  protectorType: back-vest
+  protectionStandard: 官方资料冲突待核：商品描述写 EN 1621-2 Level 1，测试区块写 EN 1621-1 Level 1；2025 符合性声明列 VPSki-009 与 VêtProVTT-008，未列上述 EN 标准，三者关系未确认
+  coverage: 全背部
+  weightRangeGr: 500–600 g
+  useSports: [skiing, snowboard, mtb]
+  availableSizes: [XS, S, M, L, XL]
+  sizeChart:
+    - { size: XS, chestRangeCm: 83-87, heightRangeCm: 150-162, sourceNote: 官方建议范围；身高仅供参考 }
+    - { size: S, chestRangeCm: 87-90, heightRangeCm: 162-172, sourceNote: 官方建议范围；身高仅供参考 }
+    - { size: M, chestRangeCm: 90-96, heightRangeCm: 172-177, sourceNote: 官方建议范围；身高仅供参考 }
+    - { size: L, chestRangeCm: 96-105, heightRangeCm: 177-183, sourceNote: 官方建议范围；身高仅供参考 }
+    - { size: XL, chestRangeCm: 105-116, heightRangeCm: 183-190, sourceNote: 官方建议范围；身高仅供参考 }
+  fitAdvice: 英国官网建议选择平时尺码；护背应贴合身体并保持稳定，胸围或身高处于相邻档交界时试穿确认。卖点文字称四个尺码，但选择器及尺码表列五码，按选择器/尺码表记录并保留来源差异。
+  jacketCompatibility: 官方说明可通过 ZIPROTEC 与 SNB JKT 500、SNB JKT 900 系列外套组合；购买时核对具体外套款式、尺码和拉链接口。
+  attachment: 背心式穿着，侧边调节，带裤袢连接带；可通过 ZIPROTEC 拉链连接兼容外套。
+  materials: 护垫为 100% 聚氨酯；主体 95% 聚酯纤维、5% 氨纶；胸部拼片 84% 聚酯纤维、16% 氨纶；侧片 65% 聚酰胺、35% 氨纶。
+  styleCode: Decathlon ID 8903323（英国黑蓝款）；产品系列 Ref 327580
+  seasonEvidence: 商品页没有明确雪季；2026 是本次数据采集标签，不代表已确认年款。
+  priceCheckedAt: 2026-10-15
+  priceMarket: 英国 Decathlon DREAMSCAPE 官方零售页面
+  priceSource: https://www.decathlon.co.uk/p/womens-mtb-ski-and-snowboard-back-protector-vest-dbck-500-black-navy/327580/c43c382m8903323
+  priceStatus: 官方页面当前显示 GBP 49.99，原价 GBP 59.99。按 ECB 2026-10-14 汇率 GBP/EUR 0.84385、CNY/EUR 7.4925 折算为 CNY 443.86。该金额是英国促销参考价，不是中国售价；运费、税费与支付汇率另计，促销和库存会变化。法国官网同系列页面常规价 EUR 59.99，地区价格分开记录。
+images:
+  - url: "https://contents.mediadecathlon.com/p3014427/k%24696c8ed65393c16ba1ef3268e2a09f77/picture.jpg?f=3000x0&format=auto"
+    kind: face
+    alt: DREAMSCAPE DBCK 500 女款黑蓝色背部护具
+    source: 迪卡侬英国官方商品图库第 1/8 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 0
+  - url: "https://contents.mediadecathlon.com/p3014428/k%24456a6d9f838b09ca959fbf4d91672cc9/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 女款背部护具官方图库图 2
+    source: 迪卡侬英国官方商品图库第 2/8 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 1
+  - url: "https://contents.mediadecathlon.com/p3014424/k%245ed8399161b5fd47d497d996177a508f/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 女款背部护具官方图库图 3
+    source: 迪卡侬英国官方商品图库第 3/8 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 2
+  - url: "https://contents.mediadecathlon.com/p3014423/k%2455d3fae5637b1c8907ae092423c9f6cf/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 女款背部护具官方图库图 4
+    source: 迪卡侬英国官方商品图库第 4/8 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 3
+  - url: "https://contents.mediadecathlon.com/p3014429/k%241b4409300e3eaacee6b80e596d6c1de8/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 女款背部护具官方图库图 5
+    source: 迪卡侬英国官方商品图库第 5/8 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 4
+  - url: "https://contents.mediadecathlon.com/p3014425/k%24c6c01d9c3b0c60c71391757160087876/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 女款背部护具官方图库图 6
+    source: 迪卡侬英国官方商品图库第 6/8 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 5
+  - url: "https://contents.mediadecathlon.com/p2271715/k%248d3808aba9549e9f6dc793bdc45275bc/picture.jpg?f=3000x0&format=auto"
+    kind: base
+    alt: DREAMSCAPE DBCK 500 女款背部护具官方图库图 7
+    source: 迪卡侬英国官方商品图库第 7/8 张；HTTP 200 image/jpeg，本站展示授权状态待核
+    sort_order: 6
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/womens-mtb-ski-and-snowboard-back-protector-vest-dbck-500-black-navy/327580/c43c382m8903323
+status: published

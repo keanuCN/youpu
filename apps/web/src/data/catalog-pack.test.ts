@@ -97,3 +97,20 @@ test("云端新增产品进入统一目录并使用明确的空默认值", () =>
   assert.deepEqual(result[0]?.whoFor, []);
   assert.deepEqual(result[0]?.ratingDist, { "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 });
 });
+
+test('已迁移的种子图集覆盖原型外链并保留正反面与来源', () => {
+  const front = 'https://youpu.tos-cn-beijing.volces.com/product-images/front.webp';
+  const back = 'https://youpu.tos-cn-beijing.volces.com/product-images/back.webp';
+  const item = snapshot({ coverUrl: front });
+  const galleries = { [item.slug]: [{ url: front, kind: 'face', source: '官方商品页' }, { url: back, kind: 'base', source: '官方商品页' }] };
+  const [result] = applyCatalogSnapshot([base], [item], galleries);
+  assert.deepEqual(result?.gallery.map(image => image.url), [front, back]);
+  assert.equal(result?.gallery[1]?.label, '底面 / BASE');
+  assert.equal(result?.gallery[0]?.source, '官方商品页');
+});
+
+test('后台更换封面后不重新使用旧的种子图集', () => {
+  const item = snapshot({ coverUrl: '/new-cover.png' });
+  const [result] = applyCatalogSnapshot([], [item], { [item.slug]: [{ url: '/old-cover.png', kind: 'face' }, { url: '/old-back.png', kind: 'base' }] });
+  assert.deepEqual(result?.gallery.map(image => image.url), ['/new-cover.png']);
+});

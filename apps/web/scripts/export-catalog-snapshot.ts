@@ -1,17 +1,20 @@
 import { mkdir, writeFile, readFile, readdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
-import { brandSeedSchema, productSeedSchema, productListItemSchema, normalizePriceRange, productListResponseSchema, type ProductListItem } from "@youpu/schema";
+import { brandSeedSchema, categorySeedSchema, parseSpecSchema, productSeedSchema, productListItemSchema, normalizePriceRange, productListResponseSchema, type ProductListItem } from "@youpu/schema";
 import { parse as parseYaml } from 'yaml';
 import { shouldRejectCatalogCountDecrease } from "./catalog-build-policy";
 import { CATALOG_SNAPSHOT, CATALOG_SNAPSHOT_META } from "../src/data/catalog-snapshot";
 import { SNOWBOARD_SETUPS } from '../src/data/snowboard-setups';
 import previousSetupProducts from '../src/data/snowboard-setup-products.json';
+import previousImageGalleries from '../src/data/product-image-galleries.json';
 
 const PAGE_SIZE = 48;
 const apiBase = (process.env.CONTENT_EXPORT_API_BASE ?? process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:3001").replace(/\/$/, "");
 const seedDir = process.env.CONTENT_EXPORT_SEED_DIR ? resolve(process.env.CONTENT_EXPORT_SEED_DIR) : undefined;
 const seedCategories = new Set((process.env.CONTENT_EXPORT_SEED_CATEGORIES ?? '').split(',').map(v => v.trim()).filter(Boolean));
+const seedImageOnly = process.env.CONTENT_EXPORT_SEED_IMAGE_ONLY === 'true';
+const exportedImageGalleries: Record<string, Array<{ url: string; kind: string; alt?: string; source?: string }>> = { ...previousImageGalleries };
 const outputPath = resolve(
   process.env.CONTENT_EXPORT_OUTPUT ?? resolve(process.cwd(), "src/data/catalog-snapshot.ts"),
 );
@@ -66,6 +69,12 @@ function stableSort(items: ProductListItem[]): ProductListItem[] {
 
 async function readSeedCatalog(dataDir: string): Promise<ProductListItem[]> {
   const brands = brandSeedSchema.array().parse(parseYaml(await readFile(resolve(dataDir, 'brands.yaml'), 'utf8')));
+  const categories = categorySeedSchema.array().parse(parseYaml(await readFile(resolve(dataDir, 'categories.yaml'), 'utf8')));
+  const publicKeysByCategory = new Map(categories.flatMap(category => {
+    if (!category.spec_schema) return [];
+    const schema = parseSpecSchema(category.spec_schema);
+    return [[category.slug, new Set(schema.fields.filter(field => field.display !== false).map(field => field.key))] as const];
+  }));
   const existing = new Map(CATALOG_SNAPSHOT.map(item => [item.slug, item]));
   const items: ProductListItem[] = [];
   if (seedCategories.size) items.push(...CATALOG_SNAPSHOT.filter(item => !seedCategories.has(item.categorySlug)));
@@ -77,9 +86,13 @@ async function readSeedCatalog(dataDir: string): Promise<ProductListItem[]> {
       const seed = productSeedSchema.parse(parseYaml(await readFile(resolve(dataDir, directory.name, filename), 'utf8')));
       const old = existing.get(seed.slug);
       // 草稿不得经内容包回退重新出现在公开目录。
-      if (seed.status !== 'published') continue;
+      if (seed.status !== 'published') { delete exportedImageGalleries[seed.slug]; continue; }
+      exportedImageGalleries[seed.slug] = seed.images.map(image => ({ url: image.url, kind: image.kind, alt: image.alt, source: image.source }));
       const brand = brands.find(item => item.slug === seed.brand);
       if (!brand) throw new Error(`品牌不存在：${seed.brand}`);
+      const publicKeys = publicKeysByCategory.get(seed.category);
+      if (!publicKeys) throw new Error(`类目缺失公开规格 schema：${seed.category}`);
+      const publicSpecs = Object.fromEntries(Object.entries(seed.specs).filter(([key]) => publicKeys.has(key)));
       const price = normalizePriceRange(seed.price ? { min: seed.price.min, max: seed.price.max, currency: seed.price.currency } : { min: null, max: null, currency: 'CNY' });
       items.push(productListItemSchema.parse({
         id: old?.id ?? seed.slug, slug: seed.slug, title: seed.title, model: seed.model, year: seed.year,
@@ -87,10 +100,21 @@ async function readSeedCatalog(dataDir: string): Promise<ProductListItem[]> {
         coverUrl: seed.images?.[0]?.url ?? null,
         ratingOverall: old?.ratingOverall ?? null, ratingCount: old?.ratingCount ?? 0,
         favoriteCount: old?.favoriteCount ?? 0, composite: old?.composite ?? null,
+        editorialScores: seed.editorial_scores ?? old?.editorialScores ?? null,
         brand: { slug: brand.slug, name: brand.name, nameCn: brand.name_cn ?? null },
-        categorySlug: seed.category, specs: seed.specs, highlights: [],
+        categorySlug: seed.category, specs: publicSpecs, highlights: [],
       }));
     }
+  }
+  if (seedImageOnly) {
+    const covers = new Map(items.map(item => [item.slug, item.coverUrl]));
+    // 图片迁移时仅更新现有快照的封面；不增删商品或覆盖人工/社区事实。
+    return CATALOG_SNAPSHOT.map(item => {
+      const next = { ...item, coverUrl: covers.get(item.slug) ?? item.coverUrl };
+      if (covers.has(item.slug) && covers.get(item.slug) === null) next.coverUrl = null;
+      productListItemSchema.parse(next);
+      return next;
+    });
   }
   return items;
 }
@@ -127,6 +151,7 @@ export interface CatalogSnapshotItem {
   ratingCount: number;
   favoriteCount: number;
   composite: number | null;
+  editorialScores?: Record<string, number> | null;
   brand: { slug: string; name: string; nameCn?: string | null };
   categorySlug: string;
   specs: Record<string, unknown>;
@@ -148,6 +173,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = ${JSON.stringify
 }
 
 async function main(): Promise<void> {
+  if (seedImageOnly && !seedDir) throw new Error('CONTENT_EXPORT_SEED_IMAGE_ONLY 需要同时设置 CONTENT_EXPORT_SEED_DIR');
   const items: ProductListItem[] = [];
   let total = Number.POSITIVE_INFINITY;
   let page = 1;
@@ -181,9 +207,14 @@ async function main(): Promise<void> {
   }
 
   await mkdir(dirname(outputPath), { recursive: true });
-  const source = seedDir ? `repository seed YAML${seedCategories.size ? `: ${[...seedCategories].join(',')}` : ''} (community statistics retained from previous snapshot)` : apiBase;
+  const source = seedDir ? `repository seed YAML${seedCategories.size ? `: ${[...seedCategories].join(',')}` : ''} (${seedImageOnly ? 'cover URLs only; catalog facts and community statistics retained' : 'community statistics retained from previous snapshot'})` : apiBase;
   await writeFile(outputPath, render(sorted, source), "utf8");
   if (!process.env.CONTENT_EXPORT_OUTPUT) {
+    if (seedDir) {
+      const publishedSlugs = new Set(sorted.map(item => item.slug));
+      const galleries = Object.fromEntries(Object.entries(exportedImageGalleries).filter(([slug]) => publishedSlugs.has(slug)).sort(([a], [b]) => a.localeCompare(b)));
+      await writeFile(resolve(dirname(outputPath), 'product-image-galleries.json'), JSON.stringify(galleries, null, 2) + '\n', 'utf8');
+    }
     const setupSlugs = [...new Set(SNOWBOARD_SETUPS.flatMap(setup => [...setup.products]))];
     const setupProducts = setupSlugs.map(slug => {
       const product = sorted.find(item => item.slug === slug);

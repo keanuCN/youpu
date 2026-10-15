@@ -1,0 +1,43 @@
+{
+  "slug": "burton-ion-boa-2027",
+  "model": "Burton Ion BOA",
+  "season": "2026/27",
+  "productId": "185791",
+  "variantCode": "27WIN-185791",
+  "market": "Burton Japan official store",
+  "capturedAt": "2026-10-15",
+  "listedPrice": {
+    "amount": 91300,
+    "currency": "JPY",
+    "source": "https://jp.burton.com/ja-jp/products/mens-burton-ion-boa-snowboard-boots-185791"
+  },
+  "convertedReference": {
+    "amount": 3856.28,
+    "currency": "CNY",
+    "method": "JPY 91,300 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan official-store reference only; not a mainland China selling price.",
+      "Shipping, import charges, and tax treatment at checkout are not included or confirmed.",
+      "Price and size availability can change; check the selected variant at checkout."
+    ]
+  },
+  "observedOptions": {
+    "width": "Regular",
+    "sizes": [25, 25.5, 26, 26.5, 27, 27.5, 28, 28.5, 29, 29.5, 30, 31],
+    "soldOutAtCapture": [31]
+  },
+  "mainlandChinaPriceResearch": {
+    "marketplace": "JD.com",
+    "categoryPageUrl": "https://www.jd.com/brand/1318727c33f31f325bd1.html",
+    "itemUrl": "https://item.jd.com/10235718191415.html",
+    "observedTitle": "BURTON 伯顿27雪季新款单板滑雪鞋全能雪鞋Ion双BOA男185791 黑色 40 /7",
+    "observedAt": "2026-10-15",
+    "evidence": "The JD brand page lists the 27-season Ion double-BOA boot with model 185791, black color and US 7 / EU 40 variant. The indexed item page itself only returns a browser compatibility prompt in the captured response, so no RMB price, seller identity, stock status or checkout amount can be verified.",
+    "priceCny": null,
+    "useForSeedPrice": false,
+    "limitation": "Exact domestic-market product lead only. Older Ion BOA offers, Step On Ion models, or other seasons and variants are not interchangeable with 27WIN-185791 and must not be used to overwrite its price."
+  },
+  "notes": "The official page identifies the 2026/27 model/color code 27WIN-185791 and lists JPY 91,300. The availability snapshot applies to the displayed color/width option and may change. ECB reference rates are informational, not transaction rates."
+}

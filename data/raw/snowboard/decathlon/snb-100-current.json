@@ -5,7 +5,7 @@
   "sources": {
     "officialProductPage": {
       "url": "https://www.decathlon.ca/en/p/all-mountain-and-freestyle-snowboard-snb-100/309522/c193m8660203",
-      "retrievedAt": "2026-10-02",
+      "retrievedAt": "2026-10-15",
       "sku": "8660203",
       "priceCAD": {"formerPrice":220,"currentSalePrice":165,"saleStart":"2025-12-24","note":"Canada-only dynamic sale price; the seed's CNY 1037 is a conversion of the former CAD 220 price, not a China-market offer."},
       "officialClaims": [
@@ -16,6 +16,11 @@
         "156 geometry: nose/waist/tail 295/253/295 mm, sidecut 8.5 m, recommended stance 550 mm, weight 2670 g +/-6%, rider range 50-80 kg.",
         "160 midwide geometry: nose/waist/tail 309/265/309 mm, sidecut 8.5 m, recommended stance 575 mm, weight 2966 g +/-6%, rider range 70-90 kg.",
         "Current page reports a 2-year warranty."
+      ],
+      "sizeRows": [
+        {"size":"152","noseWaistTailMm":[291,250,291],"sidecutM":8.2,"recommendedStanceMm":540,"weightGrams":2767,"weightTolerancePercent":6,"recommendedRiderWeightKg":[30,60],"recommendedHeightCm":[167,174]},
+        {"size":"156","noseWaistTailMm":[295,253,295],"sidecutM":8.5,"recommendedStanceMm":550,"weightGrams":2670,"weightTolerancePercent":6,"recommendedRiderWeightKg":[50,80],"recommendedHeightCm":[171,178]},
+        {"size":"160 MW","noseWaistTailMm":[309,265,309],"sidecutM":8.5,"recommendedStanceMm":575,"weightGrams":2966,"weightTolerancePercent":6,"recommendedRiderWeightKg":[70,90],"recommendedHeightCm":[175,190]}
       ],
       "internalBaseMaterialConflict": {
         "technicalInformationHeading": "Sintered base",

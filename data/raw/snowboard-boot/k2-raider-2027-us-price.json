@@ -1,0 +1,33 @@
+{
+  "slug": "k2-raider-2027",
+  "model": "K2 Raider Men's Snowboard Boots 2027",
+  "season": "2026/27 (K2 names the model year 2027)",
+  "articleRef": "KB261667",
+  "market": "K2 US official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 279.95,
+    "currency": "USD",
+    "source": "https://k2snow.com/en-us/p/raider-mens-snowboard-boots-kb261667"
+  },
+  "convertedReference": {
+    "amount": 1873.92,
+    "currency": "CNY",
+    "method": "USD 279.95 / EUR-USD 1.1188 * EUR-CNY 7.4890",
+    "exchangeRateDate": "2026-10-13",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "K2 US official-store reference only; not a mainland China selling price.",
+      "ECB reference rates are informational, not transaction rates.",
+      "US taxes, shipping, and import charges are excluded or unconfirmed.",
+      "Product price and size availability can change."
+    ]
+  },
+  "observed": {
+    "productTitle": "K2 Raider Men's Snowboard Boots 2027",
+    "ability": ["Beginner", "Intermediate"],
+    "bestFor": ["All Mountain"],
+    "closure": "Single H5 Coiler BOA shell closure with Fast-In liner lacing"
+  },
+  "notes": "The official K2 US listing names the model year and article reference. The current localized product page may redirect to another currency region; the recorded price comes from K2's US listing."
+}

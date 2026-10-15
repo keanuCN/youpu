@@ -1,0 +1,42 @@
+{
+  "capturedAt": "2026-10-15",
+  "product": {
+    "slug": "flow-nx2-carbon-binding-2027",
+    "brand": "Nidecker / Flow",
+    "model": "Flow NX2 Carbon",
+    "season": "2026/27"
+  },
+  "primaryPrice": {
+    "market": "Montaz European retailer",
+    "productReference": "249996",
+    "currency": "EUR",
+    "listPrice": 449.99,
+    "salePrice": 359.99,
+    "convertedCny": 2697.23,
+    "exchangeRate": {
+      "date": "2026-10-14",
+      "eurCny": 7.4925,
+      "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html"
+    },
+    "url": "https://www.montaz.com/en/nidecker-flow-nx2-carbon-black-p249996.html",
+    "pageEvidence": "The retailer page labels the season 2026-2027, lists the product reference, crossed-out EUR 449.99 list price and EUR 359.99 sale price, and allows the item to be added to cart."
+  },
+  "crossCheck": {
+    "market": "Ski West Canada",
+    "listedPrice": "$549.99",
+    "currencyCodeExplicitlyShown": false,
+    "url": "https://skiwest.ca/collections/nidecker/products/nidecker-flow-nx2-carbon-2027",
+    "pageEvidence": "The product title says Nidecker Flow NX2 Carbon 2027; the page showed $549.99 and low inventory. The page did not visibly state the currency code, so this amount was not used for conversion."
+  },
+  "manufacturerPageCaveat": {
+    "url": "https://www.nidecker.com/en-int/products/flow-nx2-carbon",
+    "observedSkuPrefix": "N.25",
+    "handling": "Manufacturer current-page price was excluded from the 2027 price record because its visible product SKU identifies the N.25 season."
+  },
+  "limitations": [
+    "Retailer references confirm the 2026/27 season but do not expose a manufacturer SKU on the captured page.",
+    "The converted amount is a European promotional retail reference, not a Chinese retail price.",
+    "Shipping, payment conversion costs, customs duties, and import taxes are excluded.",
+    "Prices and inventory can change after capture."
+  ]
+}

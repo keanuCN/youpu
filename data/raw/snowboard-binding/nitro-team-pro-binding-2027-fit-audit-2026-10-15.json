@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-15",
+  "brand": "Nitro",
+  "model": "Team Pro Bindings",
+  "season": "2026/27",
+  "productSource": "https://www.nitrosnowboards.com/collections/all-26-27/products/team-pro-bindings-1?variant=57277687005515",
+  "manufacturerPageEvidence": {
+    "pageTitle": "The 2027 Nitro Team Pro Bindings",
+    "pageSkuAtCapture": "12BG11003-102-M",
+    "sizeSelectorOptions": ["S/M", "M", "L"],
+    "officialSizeRanges": [
+      { "bindingSize": "S/M", "usMens": "5.0–10.0", "usWomens": "5.5–10.5", "mondopointCm": "23.0–28.0", "eu": "36.0–43.0" },
+      { "bindingSize": "M", "usMens": "7.0–10.5", "mondopointCm": "25.0–28.5", "eu": "38.5–43.5" },
+      { "bindingSize": "L", "usMens": "11.0–14.0", "mondopointCm": "29.0–32.0", "eu": "44.0–48.0" }
+    ],
+    "mountingCompatibility": "Universal Mini Disc; official page says compatible with 2x4 and Burton Channel.",
+    "toeStrapClaim": "Nitro says the Übergrip PRO Toe Strap conforms to any boot toe box; this is a strap claim, not a guarantee that every boot fits every binding size."
+  },
+  "manufacturerPerformanceUseCaseRecheck20261015": {
+    "source": "https://www.nitrosnowboards.com/cs/collections/bindings-26-27/products/team-pro-bindings-1?variant=57277687005515",
+    "brandResponseScoreOutOf10": 8,
+    "brandComfortScoreOutOf10": 9,
+    "manufacturerAudience": "Intermediate to pro riders",
+    "manufacturerUseCases": ["park laps", "big jumps", "technical tricks", "all-mountain freestyle", "competition"],
+    "evidenceScope": "These are manufacturer ratings and positioning, not independent test results; they do not resolve the S/M and M size overlap."
+  },
+  "manufacturerHowToIndexRecheck20261015": {
+    "source": "https://www.nitrosnowboards.com/pages/how-to-1",
+    "listedGuide": "How To Adjust Your Snowboard Binding Heel Cups and Highbacks",
+    "evidenceScope": "The index lists a general adjustment video, but provides no textual transcript, Team Pro-specific boot dimensions, or rule for choosing between overlapping sizes."
+  },
+  "fitInterpretation": {
+    "overlap": "S/M and M both include men's US 7.0–10.0. The manufacturer presents both ranges without explaining the intended selection when they overlap.",
+    "advice": "Treat the chart as a recommended sizing range, not a unique mapping. Trial-fit the actual boot and check footbed support, heel/toe centering, strap position and ladder adjustment; use physical fit to resolve overlapping or boundary sizes.",
+    "limits": [
+      "The product page does not publish model-specific boot-shell dimensions or strap-length limits by binding size.",
+      "The size selector and published size ranges do not establish current stock in each size.",
+      "The generic toe-strap fit claim does not certify cross-brand or every-size boot compatibility."
+    ]
+  }
+}

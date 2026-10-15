@@ -356,7 +356,43 @@ export function rankRows(
     ...d,
     final: Math.round((d.dataScore * 0.7 + (d.votes / maxVotes) * 100 * 0.3) * 10) / 10,
   }));
-  scored.sort((a, b) => b.final - a.final);
+  if (categorySlug === "snowboard" && rankKey === "overall") {
+    // 单板综合榜的编辑推荐顺序优先展示重点刻滑板和热门 Jones 型号；其余产品继续按榜单分排序。
+    const preferredOrder = [
+      "gray-desperado-ti-type-r-2027",
+      "donek-knapton-twin-custom-2026",
+      "gray-sonicalmach-2027",
+      "ogasaka-fc-s-2027",
+      "jones-mountain-twin-2027",
+      "jones-flagship-2027",
+      "jones-mind-expander-2-0-2027",
+      "jones-frontier-2-0-2027",
+      "jones-hovercraft-2-0-2027",
+      "jones-howler-2027",
+      "jones-flagship-pro-2027",
+      "jones-twin-sister-2027",
+      "jones-dream-weaver-2-0-2027",
+      "jones-storm-chaser-2027",
+      "jones-rally-cat-2027",
+      "jones-freecarver-6000s-2027",
+      "nobaday-blackboard-6-sky-mirror-2026",
+      "nobaday-blackboard-pro-5-camber-2026",
+      "moss-snowstick-u4-2027",
+      "moss-snowstick-wing-sw-67-2027",
+      "cosone-pro-all-mountain-2026",
+    ];
+    const priority = new Map(preferredOrder.map((id, index) => [id, index]));
+    scored.sort((a, b) => {
+      const aPriority = priority.get(a.gear.id);
+      const bPriority = priority.get(b.gear.id);
+      if (aPriority !== undefined || bPriority !== undefined) {
+        return (aPriority ?? Number.POSITIVE_INFINITY) - (bPriority ?? Number.POSITIVE_INFINITY);
+      }
+      return b.final - a.final;
+    });
+  } else {
+    scored.sort((a, b) => b.final - a.final);
+  }
   return scored.map((d, i) => ({ ...d, rank: i + 1 }));
 }
 

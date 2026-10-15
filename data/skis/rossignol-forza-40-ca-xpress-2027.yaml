@@ -4,6 +4,10 @@ brand: rossignol
 model: Forza 40° CA Xpress
 year: 2027
 title: Rossignol Forza 40° CA Xpress 2026/27
+price:
+  min: 4045.95
+  max: 4045.95
+  currency: CNY
 one_liner: 面向中级滑手的雪道 carving 型号，强调易上手的操控与刻滑体验。
 specs:
   lengthOptions: 150 / 157 / 164 / 171 / 179 cm
@@ -13,40 +17,55 @@ specs:
   terrain: 雪道 / carving
   skierLevel: 中级
   bindingSetup: 裸板，可选 XPRESS 11 GW 固定器
-  weightBasis: 官方列名为 kg/pair，但具体配置口径仍待确认；本轮保留来源中的数值，不折算为单只或套装重量。
+  weightBasis: Au Vieux Campeur 2027 页面列一对重量 3000–3500 g；商品为雪板 + XPRESS 11 GW 套装，但页面未说明重量是否含固定器。Rossignol 官方页同型号列 1.5–1.8 kg/pair，两组数据冲突；逐码表采用零售商明示的 pair 数值并标注口径待核，不作为裸板重量比较。
   geometryNotes: 完整逐长度几何来自对应官方 SKU。板长为 cm，板宽为 mm，半径为 m；规格表不代表当前库存。
-  bindingCompatibility: 可选 XPRESS 11 GW：成人 Alpine ISO 5355 A / GripWalk ISO 23223
-    A，BSL 260–385 mm。要求 XPRESS 系统；不能套用 KONECT 的调节范围。
+  bindingCompatibility: 可选 XPRESS 11 GW：成人 Alpine ISO 5355 A / GripWalk ISO 23223 A，BSL 260–385 mm。要求 XPRESS 系统；不能套用 KONECT 的调节范围。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: RAPPX05000 与对应尺码 SKU 已核对；当前官方页面未直接标注销售雪季，档案 2026/27 仍需年度目录确认。
-  sourceCheckedAt: 2026-10-13
-  compatibilitySources: https://www.rossignol.com/ca-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000.html；https://www.rossignol.com/cz-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000150.html；https://www.rossignol.com/kr-ko/mens-forza-40-ca-xpress-piste-skis-RAPPX05000157.html；https://www.rossignol.com/de-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000164.html；https://www.rossignol.com/ch-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000171.html；https://www.rossignol.com/hr-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000179.html；https://www.grip-walk.com/faq/
+  seasonEvidence: Rossignol 德国官方商品页标注 NEUE KOLLEKTION FW2627，SKU RAPPX05000；档案 2026/27 年份获品牌页面确认。
+  sourceCheckedAt: 2026-10-15
+  priceCheckedAt: 2026-10-14
+  officialPrice: EUR 540.00
+  priceMarket: Rossignol 德国官网裸板挂牌价
+  priceSource: https://www.rossignol.com/de-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000.html
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 德国官方页面列 EUR 540.00，并注明不含固定器；按 ECB 2026-10-14 EUR/CNY 7.4925 折算 CNY 4,045.95。仅为德国官网参考，不是中国售价；未计跨境配送、进口及支付汇兑费用。
+  compatibilitySources: https://www.rossignol.com/ca-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000.html；https://www.rossignol.com/cz-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000150.html；https://www.rossignol.com/kr-ko/mens-forza-40-ca-xpress-piste-skis-RAPPX05000157.html；https://www.rossignol.com/de-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000164.html；https://www.rossignol.com/ch-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000171.html；https://www.rossignol.com/hr-en/mens-forza-40-ca-xpress-piste-skis-RAPPX05000179.html；https://www.auvieuxcampeur.fr/ski-piste-forza-40-ca-xpress-11gw-b83-blac-1.html；https://www.grip-walk.com/faq/
   sizeSpecs:
     - size: 150 cm
       noseWidth: 127
       waistWidth: 75
       tailWidth: 111
       turnRadius: 10
+      weightPerPair: 3000
+      notes: Au Vieux Campeur 2027 规格表标示双只 3000 g；该商品为雪板 + XPRESS 11 GW 套装，重量是否含固定器未说明；与 Rossignol 官网的重量字段冲突。
     - size: 157 cm
       noseWidth: 127
       waistWidth: 75
       tailWidth: 111
       turnRadius: 11
+      weightPerPair: 3100
+      notes: Au Vieux Campeur 2027 规格表标示双只 3100 g；该商品为雪板 + XPRESS 11 GW 套装，重量是否含固定器未说明；与 Rossignol 官网的重量字段冲突。
     - size: 164 cm
       noseWidth: 127
       waistWidth: 75
       tailWidth: 111
       turnRadius: 12
+      weightPerPair: 3200
+      notes: Au Vieux Campeur 2027 规格表标示双只 3200 g；该商品为雪板 + XPRESS 11 GW 套装，重量是否含固定器未说明；与 Rossignol 官网的重量字段冲突。
     - size: 171 cm
       noseWidth: 127
       waistWidth: 75
       tailWidth: 111
       turnRadius: 14
+      weightPerPair: 3400
+      notes: Au Vieux Campeur 2027 规格表标示双只 3400 g；该商品为雪板 + XPRESS 11 GW 套装，重量是否含固定器未说明；与 Rossignol 官网的重量字段冲突。
     - size: 179 cm
       noseWidth: 127
       waistWidth: 75
       tailWidth: 111
       turnRadius: 15
+      weightPerPair: 3500
+      notes: Au Vieux Campeur 2027 规格表标示双只 3500 g；该商品为雪板 + XPRESS 11 GW 套装，重量是否含固定器未说明；与 Rossignol 官网的重量字段冲突。
   core: PEFC 认证杨木板芯
   construction: Rectangular Full Sidewall
   technologies: V-Profile；Carbon Beam
@@ -54,7 +73,7 @@ data_source:
   kind: official
   origin_url: https://www.rossignol.com/it-it/sci-pista-uomo-forza-40%C2%B0-ca-xpress-RAPPX05000157.html
 images:
-  - url: https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwa510bcb6/images/large/RAPPX05000_72DPI_01_v00.jpg?sh=140
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/c592027a8ab4a2dee9b9eb99d67d615cd9a9c6f449fbace9c123250bffebeeec.webp
     kind: face
     alt: Rossignol Forza 40° CA Xpress 2026/27 官方产品图
     source: Rossignol 官方产品页图片（本地演示，版权授权待核）

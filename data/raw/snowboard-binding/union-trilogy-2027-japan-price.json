@@ -1,0 +1,19 @@
+{
+  "slug": "union-trilogy-2027",
+  "model": "Union Trilogy",
+  "season": "2026/27",
+  "market": "Union Binding Company Japan official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": { "amount": 46200, "currency": "JPY", "taxIncluded": true, "source": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027" },
+  "convertedReference": {
+    "amount": 1951.37,
+    "currency": "CNY",
+    "method": "JPY 46,200 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": ["Japan official-store reference only; not a mainland China selling price or transaction price.", "The product page listed sizes S/M/L and showed sold out; availability may change.", "Shipping is calculated at checkout; cross-border shipping and import charges are not included."]
+  },
+  "observedSizes": ["S", "M", "L"],
+  "availabilityAtCapture": "Product page marked sold out.",
+  "notes": "Official Union Japan page explicitly identifies the 2027 Trilogy. Listed JPY price includes Japanese consumption tax. ECB reference rates are informational and are not transaction rates."
+}

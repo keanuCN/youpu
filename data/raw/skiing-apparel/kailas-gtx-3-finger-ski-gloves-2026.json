@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-10-15",
+  "product": "KAILAS 中性 GTX 防水三指滑雪手套",
+  "styleCode": "KM2562002",
+  "officialStoreListing": {
+    "url": "https://detail.youzan.com/show/goods?alias=1y92mexqc7inf3x&from_source=gbox_seo",
+    "store": "凯乐石微商城",
+    "title": "KAILAS凯乐石 中性 GTX 防水三指滑雪手套 KM2562002",
+    "listedPrice": { "amount": 1100, "currency": "CNY" },
+    "purchaseAction": "页面显示立即购买",
+    "seasonShown": false,
+    "sizeOptionsShown": false,
+    "technicalDetailsShown": false
+  },
+  "jdListingCrossCheck": {
+    "source": "https://www.jd.com/jiage/1318ced08af7e69952b2.html",
+    "observedTitles": [
+      "KAILAS凯乐石 GTX 防水三指滑雪手套 KM2562002 玄青黑 S",
+      "KAILAS凯乐石 户外中性款 GTX 防水三指滑雪手套 KM2562002 玄青黑 M"
+    ],
+    "status": "搜索索引可见 S 与 M 的精确货号商品标题，但不能证明全部尺码范围或当前库存；未读取到售价。",
+    "exactListingsRecheck20261015": [
+      {
+        "itemId": "100219282833",
+        "url": "https://item.jd.com/100219282833.html",
+        "indexedTitle": "KAILAS凯乐石 GTX 防水三指滑雪手套 KM2562002 玄青黑 S",
+        "sellerLabel": "京东自营",
+        "detailPageResult": "详情页只返回浏览器兼容提示，未显示价格、规格或库存。"
+      },
+      {
+        "itemId": "10193005681710",
+        "url": "https://item.jd.com/10193005681710.html",
+        "indexedTitle": "KAILAS凯乐石 户外中性款 GTX 防水三指滑雪手套 KM2562002 玄青黑 M",
+        "sellerLabel": "索引未标明",
+        "detailPageResult": "详情页只返回浏览器兼容提示，未显示价格、规格或库存。"
+      }
+    ],
+    "decision": "确认京东索引存在精确款号的 S 与 M 商品条目；仅作为尺码存在性及国内渠道线索，不能推断完整官方尺码、实际库存或当前中国价格。"
+  },
+  "regionalRetailerSizeCrossCheck": {
+    "source": "https://www.momoshop.com.tw/TP/TP0010400/goodsDetail/TP00104000002046",
+    "market": "Taiwan",
+    "seller": "島野集 ISLE OUTDOOR（第三方零售商）",
+    "matchingStyleCode": "KM2562002",
+    "listedOptions": ["S", "M", "L"],
+    "displayedPrice": { "amount": 10372, "currency": "TWD" },
+    "status": "精确货号零售页列出 S/M/L，但这只能证明该零售页列出的选项；不证明凯乐石官方完整尺码范围、当前库存或品牌通用尺码表与本型号的尺寸映射。台湾地区新台币价格不作为中国人民币售价。页面末尾还出现不一致的 XXS 文案，可能是页面组件混入，保留为来源限制。"
+  },
+  "brandGenericSizeGuide": {
+    "source": "https://kailasgear.com/pages/size-chart-1",
+    "scope": "KAILAS 通用中性手套尺码参考，并非 KM2562002 专属尺码或可售尺码声明。",
+    "sizes": [
+      { "size": "S", "palmCircumferenceMm": [180, 198], "middleFingerLengthMm": 78 },
+      { "size": "M", "palmCircumferenceMm": [200, 213], "middleFingerLengthMm": 82 },
+      { "size": "L", "palmCircumferenceMm": [213, 230], "middleFingerLengthMm": 93 }
+    ],
+    "measurementMethod": "中指长从中指尖量至掌根；掌围在四指并拢时绕手掌最宽处测量。"
+  },
+  "imageCheck": {
+    "url": "https://img01.yzcdn.cn/upload_files/2026/07/09/FrhyPSDqNmQfaNYGL2D_KvUZaZ2V.jpg%21middle.jpg",
+    "httpStatus": 200,
+    "contentType": "image/jpeg",
+    "source": "凯乐石微商城商品图 0",
+    "rightsStatus": "展示授权待核"
+  },
+  "imageGalleryRecheck20261015": {
+    "source": "https://detail.youzan.com/show/goods?alias=1y92mexqc7inf3x&from_source=gbox_seo",
+    "pageEvidence": "官方微商城商品页列出商品图 0–4 共 5 张轮播图；页面精确标注 KM2562002。",
+    "images": [
+      { "index": 0, "url": "https://img01.yzcdn.cn/upload_files/2026/07/09/FrhyPSDqNmQfaNYGL2D_KvUZaZ2V.jpg%21middle.jpg", "httpStatus": 200, "contentType": "image/jpeg" },
+      { "index": 1, "url": "https://img01.yzcdn.cn/upload_files/2026/07/09/FhOfE1x7STa367oXl3lxRZIy1dtB.jpg%21middle.jpg", "httpStatus": 200, "contentType": "image/jpeg" },
+      { "index": 2, "url": "https://img01.yzcdn.cn/upload_files/2026/07/09/FmUP83eFOjY0WnmhL8u2VKBNJk0y.jpg%21middle.jpg", "httpStatus": 200, "contentType": "image/jpeg" },
+      { "index": 3, "url": "https://img01.yzcdn.cn/upload_files/2026/07/09/FuRqABMkgM9hVu-0TZUg-qJdg5uD.jpg%21middle.jpg", "httpStatus": 200, "contentType": "image/jpeg" },
+      { "index": 4, "url": "https://img01.yzcdn.cn/upload_files/2026/07/09/FqBPBbAn7TaosFGcb1g4qKox7zez.jpg%21middle.jpg", "httpStatus": 200, "contentType": "image/jpeg" }
+    ],
+    "rightsStatus": "图片来自品牌微商城同款商品页面；本站前台展示授权仍待核。"
+  },
+  "unresolved": [
+    "商品具体雪季",
+    "凯乐石官方确认的 KM2562002 实际尺码范围，以及其与品牌通用手套尺码表的对应关系；第三方页面虽列 S/M/L，但不作为官方确认或库存证明",
+    "GTX 对应膜材型号、防水透湿参数、掌面材质与保暖填充等技术规格",
+    "页面购买入口对应的实际库存与结账状态",
+    "商品图在本站展示的授权状态"
+  ],
+  "decision": "建立草稿种子，仅录入品牌微商城直接展示的名称、KM2562002 货号、三指结构、CNY 1,100 挂牌价和首图。京东精确商品索引补充玄青黑 S/M 条目（S 商品 ID 100219282833 标为京东自营，M 商品 ID 10193005681710 未标卖家），详情页均未读出价格或库存；台湾第三方零售页对精确货号列出 S/M/L，但不作为官方完整尺码/库存证明，且 TWD 挂牌不作为中国价格。雪季与详细规格缺失，商品保持 draft。"
+}

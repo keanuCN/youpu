@@ -17,9 +17,14 @@ specs:
   backlight: RGB 氛围灯箱
   hotSwap: true
   batteryCapacity: 6000
-images: []
+images:
+  - url: https://cdn2.aulacn.com/storage/20260403/Suh1775210422euFXdZ.jpg
+    kind: face
+    alt: 狼蛛 AULA HERO68XS 幻影黑 雪神磁轴键盘
+    source: AULA 狼蛛官方商品页（展示授权状态待核）
+    sort_order: 0
 data_source:
   kind: crawl
-  origin_url: https://www.aulacn.com/product/99.html
+  origin_url: https://www.aulacn.com/index/index/product?goods_id=99
   snapshot_url: https://aula2026.obs.cn-south-1.myhuaweicloud.com/pdf/HERO%2068%20XS-%E4%B8%89%E6%A8%A1%E7%A3%81%E8%BD%B4%E9%94%AE%E7%9B%98%20%E7%94%B5%E5%AD%90%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6%20%E4%B8%AD%E8%8B%B1%E6%96%87.pdf
 status: published

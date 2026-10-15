@@ -5,7 +5,13 @@ model: Ace Pro 2
 year: 2024
 title: Insta360 Ace Pro 2
 one_liner: 以 1/1.3 英寸 8K 传感器、翻转触控屏和低光模式为核心，适合运动与 Vlog 混合拍摄。
+price:
+  min: 2398
+  max: 2398
+  currency: CNY
 specs:
+  priceSource: https://store.insta360.com/cn/product/ace-pro-2
+  priceStatus: 影石中国官网于 2026-10-15 显示双电池标准套餐促销价 CNY 2398，页面原价 CNY 2798；价格对应双电池标准套餐。
   cameraType: action
   sensor: 1/1.3 英寸 8K 传感器
   maxVideo: 8K@30fps

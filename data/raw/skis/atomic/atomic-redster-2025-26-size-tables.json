@@ -1,0 +1,68 @@
+{
+  "capturedAt": "2026-10-14",
+  "season": "2025/26",
+  "brand": "Atomic",
+  "source": {
+    "title": "Atomic Katalog 2025/26",
+    "url": "https://www.sport-hun.at/wp-content/uploads/2025/03/Atomic-Katalog-2526.pdf",
+    "sourceType": "manufacturer-authored catalog copy",
+    "notes": "表格逐款包含 Art. No.、长度、Radius、Sidecut Tip/Waist/Tail 和重量。目录脚注注明重量含 plate and binding。"
+  },
+  "products": [
+    {
+      "model": "Redster Q7 Revoshock C",
+      "article": "AASS03668",
+      "weightReference": {"lengthCm": 168, "grams": 2643, "basis": "per ski / half pair", "includes": ["plate", "binding"]},
+      "sizeSpecs": [
+        {"lengthCm": 152, "radiusM": 12.3, "tipMm": 120.5, "waistMm": 75, "tailMm": 104.5},
+        {"lengthCm": 160, "radiusM": 13, "tipMm": 123, "waistMm": 75, "tailMm": 107},
+        {"lengthCm": 168, "radiusM": 13.5, "tipMm": 125.5, "waistMm": 75, "tailMm": 109.5},
+        {"lengthCm": 176, "radiusM": 14.2, "tipMm": 128, "waistMm": 75, "tailMm": 112}
+      ]
+    },
+    {
+      "model": "Redster Q7.8 Revoshock C",
+      "article": "AASS03666",
+      "weightReference": {"lengthCm": 173, "grams": 2710, "basis": "per ski / half pair", "includes": ["plate", "binding"]},
+      "sizeSpecs": [
+        {"lengthCm": 159, "radiusM": 12.8, "tipMm": 130, "waistMm": 83.5, "tailMm": 115},
+        {"lengthCm": 166, "radiusM": 13.6, "tipMm": 132, "waistMm": 84, "tailMm": 117.5},
+        {"lengthCm": 173, "radiusM": 14.4, "tipMm": 134, "waistMm": 84.5, "tailMm": 118.8},
+        {"lengthCm": 181, "radiusM": 15.2, "tipMm": 136, "waistMm": 85, "tailMm": 120.5}
+      ]
+    },
+    {
+      "model": "Redster Q9 Revoshock S",
+      "article": "AASS03664",
+      "weightReference": {"lengthCm": 168, "grams": 2995, "basis": "per ski / half pair", "includes": ["plate", "binding"]},
+      "sizeSpecs": [
+        {"lengthCm": 152, "radiusM": 12.3, "tipMm": 120.5, "waistMm": 75, "tailMm": 104.5},
+        {"lengthCm": 160, "radiusM": 13, "tipMm": 123, "waistMm": 75, "tailMm": 107},
+        {"lengthCm": 168, "radiusM": 13.5, "tipMm": 125.5, "waistMm": 75, "tailMm": 109.5},
+        {"lengthCm": 176, "radiusM": 14.2, "tipMm": 128, "waistMm": 75, "tailMm": 112}
+      ]
+    },
+    {
+      "model": "Redster Q9.8 Revoshock S",
+      "article": "AASS03662",
+      "weightReference": {"lengthCm": 173, "grams": 3223, "basis": "per ski / half pair", "includes": ["plate", "binding"]},
+      "sizeSpecs": [
+        {"lengthCm": 159, "radiusM": 12.8, "tipMm": 130, "waistMm": 83.5, "tailMm": 115},
+        {"lengthCm": 166, "radiusM": 13.6, "tipMm": 132, "waistMm": 84, "tailMm": 117.5},
+        {"lengthCm": 173, "radiusM": 14.4, "tipMm": 134, "waistMm": 84.5, "tailMm": 118.8},
+        {"lengthCm": 181, "radiusM": 15.2, "tipMm": 136, "waistMm": 85, "tailMm": 120.5}
+      ]
+    },
+    {
+      "model": "Redster S9 Revoshock S",
+      "article": "AASS03628",
+      "weightReference": {"lengthCm": 165, "grams": 3181, "basis": "per ski / half pair", "includes": ["plate", "binding"]},
+      "sizeSpecs": [
+        {"lengthCm": 155, "radiusM": 11.3, "tipMm": 115, "waistMm": 68, "tailMm": 101},
+        {"lengthCm": 160, "radiusM": 11.9, "tipMm": 116.5, "waistMm": 68, "tailMm": 102.5},
+        {"lengthCm": 165, "radiusM": 12.5, "tipMm": 118, "waistMm": 68, "tailMm": 104},
+        {"lengthCm": 170, "radiusM": 13.1, "tipMm": 119.5, "waistMm": 68, "tailMm": 105.5}
+      ]
+    }
+  ]
+}

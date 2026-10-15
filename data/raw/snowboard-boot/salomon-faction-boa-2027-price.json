@@ -1,0 +1,36 @@
+{
+  "slug": "salomon-faction-boa-2027",
+  "model": "Salomon Faction BOA",
+  "season": "2026/27 label is not confirmed by the official product page; archived seed label retained as a provisional reference",
+  "articleRef": "L49270000",
+  "market": "Salomon US official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 279.95,
+    "currency": "USD",
+    "source": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000"
+  },
+  "convertedReference": {
+    "amount": 1873.92,
+    "currency": "CNY",
+    "method": "USD 279.95 / EUR-USD 1.1188 * EUR-CNY 7.4890",
+    "exchangeRateDate": "2026-10-13",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "US official-store reference only; not a mainland China selling price.",
+      "The product page does not explicitly identify the model season.",
+      "Exchange rates are informational; tax, shipping, and import charges are excluded or unconfirmed.",
+      "Displayed sizes and availability can change; check the selected variant at checkout."
+    ]
+  },
+  "observed": {
+    "productName": "FACTION BOA",
+    "category": "Snowboard boots",
+    "terrain": "All-Mountain",
+    "level": ["Beginner", "Intermediate"],
+    "flex": "Soft",
+    "displayedUsMenSizes": [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
+    "fewLeftNotice": true
+  },
+  "notes": "Official product page shows price, article reference, use category, level, flex, and size selector. The season is not directly stated on that page; do not treat the retained 2026/27 archive title as independently verified season evidence."
+}

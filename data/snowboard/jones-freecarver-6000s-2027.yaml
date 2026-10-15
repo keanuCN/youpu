@@ -10,6 +10,7 @@ price:
   max: 5040
   currency: CNY
 specs:
+  seasonEvidence: Jones 官方商品页当前变体货号为 J.27.SNU.FRS.000.150N.1（J.27 年款代码）且页面标注 2027，归档为 2026/27（2027 款）；此代码不证明首次上市年份或实时库存。
   length: 154
   weight: 3000
   effectiveEdge: 1280
@@ -46,7 +47,7 @@ editorial_scores:
   forgiveness: 4.8
   value: 6.8
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNU.FRS-gallery-1.webp?v=1782443909&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/b2889c408a3f8e6e11a24cac301bf336b76eb3647907ccc52a59f67661f358b6.webp"
     kind: face
     alt: Jones Freecarver 6000s 2027 官方产品图
     source: Jones 官方产品页图片（本地演示，版权待核）

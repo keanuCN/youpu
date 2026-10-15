@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-15",
+  "status": "unverified_catalog_candidate",
+  "brand": "KAILAS",
+  "listingTitle": "凯乐石 男款 BM45 TAIGA 硬壳羽绒滑雪服",
+  "styleCode": "KG2631129",
+  "listedColor": "雪灰蓝",
+  "listedSize": "XS",
+  "source": "https://www.jd.com/zuozhe/1318f691f28ac7d51eb0.html",
+  "sourceType": "JD search-indexed listing title",
+  "capturedEvidence": "2026-10-15 搜索索引显示精确标题、货号 KG2631129、颜色雪灰蓝和 XS；检索结果未提供可核验的人民币售价或商品详情参数。直接打开列表页时该候选未出现在可读取正文中。",
+  "seasonConfirmed": false,
+  "manufacturerProductPage": null,
+  "officialSearchRecheck": {
+    "checkedAt": "2026-10-15",
+    "queries": [
+      "KG2631129 凯乐石",
+      "BM45 TAIGA 凯乐石 官方",
+      "site:kailas.com.cn TAIGA 滑雪",
+      "site:kailasgear.com TAIGA"
+    ],
+    "result": "搜索索引仍只返回京东滑雪服列表中的精确标题，没有找到 KAILAS 官方商品页或官方目录记录；京东结果正文可读，但其中候选条目未能在页面可读正文中定位。",
+    "interpretation": "未找到官方索引结果不证明产品不存在，也不能确认雪季、规格、价格或授权图片。"
+  },
+  "knownFromListingOnly": ["男款", "BM45 TAIGA", "硬壳羽绒滑雪服", "货号 KG2631129", "雪灰蓝", "XS"],
+  "missingEvidence": [
+    "KAILAS 官方商品页或官方目录对型号与货号的确认",
+    "雪季",
+    "面料层数、防水透湿参数及羽绒填充量",
+    "完整尺码范围及尺码表",
+    "中国境内人民币售价与可售状态",
+    "官方图片和使用授权"
+  ],
+  "nextAction": "取得 KAILAS 官方目录/商品链接，或能打开的官方旗舰店商品页；再核款号、雪季、规格、尺码、人民币价和图片。",
+  "decision": "仅列入待核型号候选；不创建已发布商品种子，不从 BM45 MAX/PRO 等其他款推断规格、雪季、价格或图片。"
+}

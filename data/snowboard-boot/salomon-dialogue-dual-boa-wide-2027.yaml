@@ -5,6 +5,10 @@ model: "Dialogue Dual BOA Wide"
 year: 2027
 title: "Salomon Dialogue Dual BOA Wide 2027"
 one_liner: "宽楦中等硬度全山地/自由式雪鞋，双区 BOA 调节并配 Precision Harness 3.0 锁跟。"
+price:
+  min: 2877.99
+  max: 2877.99
+  currency: CNY
 specs:
   lacingSystem: "Dual Zone BOA 双区调节：上区控制支撑与弯曲感，下区锁定前掌"
   flex: "中等（Salomon 官方分类）"
@@ -14,7 +18,8 @@ specs:
   innerCuff: "Precision Harness 3.0 内部鞋跟带环绕前掌并锁定脚跟与踝部"
   outsole: "DAMPLite+ 外底，结合冬季橡胶、EVA 缓震与 Contagrip 抓地橡胶"
   footbed: "OrthoLite C2 双密度鞋垫与 Quickdry 快干鞋垫"
-  sizeGuide: "官方页面 Mondopoint 25.0–31.5"
+  sizeGuide: "美国官方商品页 US 男 7–13.5；FW2026/27 日本官方雪鞋目录对 L45448100 黑色 Wide 款列 Mondopoint 25–30.5 cm，普通颜色列 25–29.5 cm。地区尺码范围与库存不可互推；目录范围不是实时可售承诺。"
+  sizeEvidenceSource: "Salomon 官方 FW2026/27 雪鞋目录 BOOTS 第 6 页，按黑色 Wide 款货号 L45448100 单独列码；目录同时列日本建议价。"
   sizeChart:
     - { size: US 男 3.5, usMen: "3.5", usWomen: "4", eu: "34.5", uk: "2.5", mondo: "22", footLength: 211-215, notes: Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。 }
     - { size: US 男 4, usMen: "4", usWomen: "5", eu: "35.5", uk: "3", mondo: "22.5", footLength: 216-220, notes: Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。 }
@@ -38,16 +43,18 @@ specs:
     - { size: US 男 13.5, usMen: "13.5", usWomen: "14.5", eu: "47", uk: "12.5", mondo: "31.5", footLength: 311-315, notes: Salomon 官方通用雪鞋表同时列男/女 US 码；保留原表跳码，不插值。非型号在售尺码表。 }
   bindingCompatibility: 常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。
   selectionNotes: 穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 足长区间与 MONDO 是官网不同列，不能用区间端点替代 MONDO。
-  fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 Wide 应与该品牌同型号标准版比较，不能视为跨品牌统一宽度。 当前型号页未明确 2027 季节，新增资料标为当前同名型号参考，未完成年款复核。
+  fitEvidence: Salomon 官方将此商品明确标为 Wide，并称其采用适应宽脚的解剖结构；同季 Dialogue Dual BOA 常规款 L49277200 则标为 Regular。两页未公布该款逐尺码楦宽、脚背容积或 Wide 与 Regular 的毫米差。Salomon 尺码指南提到的 107 mm 是脚宽测量筛选值，不是此雪鞋的鞋楦宽度；相关页面为女款雪鞋分类，作为品牌测量提示使用，不转换为本款适配承诺。
   heatMolding: 官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。
-  compatibilitySources: https://www.salomon.com/en-us/product/dialogue-dual-boa-wide-li9184；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women
-  priceCheckedAt: 2026-10-12
+  compatibilitySources: https://www.salomon.com/en-us/product/dialogue-dual-boa-wide-li9184；https://www.salomon.com/en-us/product/dialogue-dual-boa-li9150/L49277200；https://www.salomon.com/en-us/sizingchart?category=women-snowboard-boots&gender=women
+  seasonEvidence: Salomon 官方 FW2026/27 单板雪鞋目录在 Dialogue Dual BOA 栏目单列黑色 Wide 款货号 L45448100，尺码 Mondopoint 25–30.5 cm；普通颜色为 25–29.5 cm。目录建议零售价未税 JPY 59,000、含税 JPY 64,900。来源为 Salomon 日本官网发布的官方季节目录；尺码选项不代表库存，Wide 不能据此换算为鞋楦毫米或跨品牌宽度。
+  priceCheckedAt: 2026-10-14
   officialPrice: USD 429.95
-  priceMarket: 原币 USD；来源商店 www.salomon.com
+  regionalListPrice: USD 429.95
+  priceMarket: Salomon 美国官方商店；货号 L45448100
   priceSource: https://www.salomon.com/en-us/product/dialogue-dual-boa-wide-li9184
-  priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。
+  priceStatus: 当前同名型号美国官方挂牌价按 ECB 2026-10-13 汇率折算为 CNY 2,877.99；雪季由 Salomon FW2026/27 日本官方目录核实。日版目录另列未税 JPY 59,000、含税 JPY 64,900；美国折算价不是中国售价，未计税费、配送与进口费用。
 images:
-  - url: "https://cdn.dam.salomon.com/c3bbadcb-7bef-4e1e-b9f9-b37d00cfaf53/L45448100/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/888ee39253f5d2bb7cb96e37881c6cb62bd2a489422d954c0f0bdf97d5bace0c.webp"
     kind: face
     alt: Salomon Dialogue Dual BOA Wide 2026/27 官方雪鞋商品图
     source: Salomon 官方商品页（图片使用授权待核）
@@ -55,4 +62,11 @@ images:
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/dialogue-dual-boa-wide-li9184
+# 编辑暂估，非社区实测；评分口径见 docs/单板雪鞋编辑评分口径-2026-10-15.md
+editorial_scores:
+  fit: 8.3
+  support: 7.2
+  warmth: 6.7
+  convenience: 8.9
+  value: 5.0
 status: published

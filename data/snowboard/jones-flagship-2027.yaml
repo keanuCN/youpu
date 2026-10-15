@@ -10,6 +10,7 @@ price:
   max: 5400
   currency: CNY
 specs:
+  seasonEvidence: Jones 官方商品页当前变体货号为 J.27.SNM.FLA.000.151.1（J.27 年款代码）且页面标注 2027，归档为 2026/27（2027 款）；此代码不证明首次上市年份或实时库存。
   lengthOptions: 151 / 154 / 156W / 158 / 159W / 161 / 162W / 164 / 165W / 167 / 169W / 172
   length: 161
   weight: 3100
@@ -53,7 +54,7 @@ editorial_scores:
   forgiveness: 5.8
   value: 6.5
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.FLA-gallery-1.webp?v=1782443915&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/c74841814f9e9e46555af058502ce8fd9cc9769053c183c643b5dd97085bc35d.webp"
     kind: face
     alt: Jones Flagship 2027 官方产品图
     source: Jones 官方产品页图片（本地演示，版权待核）

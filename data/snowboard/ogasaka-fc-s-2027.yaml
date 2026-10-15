@@ -1,0 +1,58 @@
+slug: ogasaka-fc-s-2027
+category: snowboard
+brand: ogasaka
+model: FC-S
+year: 2027
+title: OGASAKA FC-S 2027
+one_liner: 26/27 FC 系列专家级刻滑板，针对高速推进和稳定性设计；官方称 S 指 Stiff，并更新了 flex balance。建议有成熟压弯能力的进阶滑手试板后选择。
+editorial_scores:
+  stability: 9.3
+  response: 9.4
+  float: 5.5
+  park: 3.2
+  forgiveness: 4.5
+  value: 6.5
+specs:
+  lengthOptions: 150 / 156 / 159 / 162 / 165 / 157W / 160W / 163W
+  length: 162
+  effectiveEdge: 1370
+  contactLength: 1280
+  noseWidth: 310
+  waistWidth: 257
+  tailWidth: 306
+  sidecutRadii: 8.4 / 8.9 / 9.5 m
+  stanceSetback: 33
+  stanceWidth: 560 mm
+  profile: Camber
+  profileFamily: camber
+  shape: 自由式刻滑 / FC 系列专家型号
+  core: OGK2 Core
+  fiberglass: Glass Fiber + Carbon Sheet Wide
+  topsheet: PA
+  pcPlate: Type-S
+  edge: Stainless
+  base: Sintered Graphite
+  soleFinish: Stone Finish（convex sole）
+  flex: 偏硬；26/27 官方标注 NEW FLEX，未给出可跨品牌比较的数值硬度
+  scenes:
+    - carving
+  abilityLevel: 高阶至专家
+  officialPrice: JPY 137,500（标准版含税）；宽版 JPY 139,700（含税）
+  priceCheckedAt: 2026-10-15
+  priceStatus: OGASAKA 官方 26/27 页面公布标准版含税价 JPY 137,500、宽版含税价 JPY 139,700。本档案尺寸表展示标准宽 162 cm 版本，未换算为人民币；尚未核实中国大陆到手价及实时库存。
+  sourceCheckedAt: 2026-10-15
+  sourceNote: 官方页面称 FC-S 为 FC 系列专家型号，面向高速推进与稳定性，并说明 S 代表 Stiff。已按官方页面记录 26/27 尺寸表；分数为编辑暂估，不是雪上实测。
+  sizeSpecs:
+    - { size: "150", effectiveEdge: 1250, contactLength: 1180, noseWidth: 292, waistWidth: 241, tailWidth: 288, sidecutRadii: "7 / 7.8 / 8.2 m", setback: 30, stanceWidth: "500 mm" }
+    - { size: "156", effectiveEdge: 1310, contactLength: 1220, noseWidth: 305, waistWidth: 254, tailWidth: 301, sidecutRadii: "8 / 8.6 / 9.1 m", setback: 31, stanceWidth: "540 mm" }
+    - { size: "159", effectiveEdge: 1340, contactLength: 1240, noseWidth: 308, waistWidth: 255, tailWidth: 304, sidecutRadii: "8 / 8.6 / 9.2 m", setback: 32, stanceWidth: "560 mm" }
+    - { size: "162", effectiveEdge: 1370, contactLength: 1280, noseWidth: 310, waistWidth: 257, tailWidth: 306, sidecutRadii: "8.4 / 8.9 / 9.5 m", setback: 33, stanceWidth: "560 mm" }
+    - { size: "165", effectiveEdge: 1400, contactLength: 1320, noseWidth: 308, waistWidth: 260, tailWidth: 304, sidecutRadii: "9.6 / 10.3 / 11.3 m", setback: 34, stanceWidth: "580 mm" }
+    - { size: "157W", effectiveEdge: 1320, contactLength: 1220, noseWidth: 312, waistWidth: 260, tailWidth: 308, sidecutRadii: "7.8 / 8.4 / 9 m", setback: 31, stanceWidth: "560 mm" }
+    - { size: "160W", effectiveEdge: 1350, contactLength: 1240, noseWidth: 313, waistWidth: 262, tailWidth: 309, sidecutRadii: "8.4 / 9 / 9.5 m", setback: 32, stanceWidth: "560 mm" }
+    - { size: "163W", effectiveEdge: 1380, contactLength: 1280, noseWidth: 314, waistWidth: 266, tailWidth: 310, sidecutRadii: "9.3 / 10.1 / 10.8 m", setback: 33, stanceWidth: "560 mm" }
+images: []
+data_source:
+  kind: official
+  origin_url: https://www.ogasaka-snowboard.com/product_26_09_fc-s.html
+status: published

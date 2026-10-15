@@ -1,0 +1,32 @@
+{
+  "slug": "burton-moto-boa-2027",
+  "model": "Burton Moto BOA",
+  "season": "2026/27",
+  "productId": "131761",
+  "variantCode": "27WIN-131761",
+  "market": "Burton Japan official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 35200,
+    "currency": "JPY",
+    "source": "https://jp.burton.com/ja-jp/products/mens-burton-moto-boa-snowboard-boots-131761"
+  },
+  "convertedReference": {
+    "amount": 1486.76,
+    "currency": "CNY",
+    "method": "JPY 35,200 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan official-store reference only; not a mainland China selling price.",
+      "Shipping, import charges, and tax treatment at checkout are not included or confirmed.",
+      "Price and size availability can change; check the selected variant at checkout."
+    ]
+  },
+  "observedOptions": {
+    "widthOptionShown": "Wide",
+    "sizes": [24, 25, 25.5, 26, 26.5, 27, 27.5, 28, 28.5, 29, 29.5, 30, 31, 32, 33],
+    "soldOutAtCapture": [24, 31, 32, 33]
+  },
+  "notes": "The official product page identifies the season/color code 27WIN-131761 and lists JPY 35,200. Availability reflects the page capture and may vary by color, width, or size. ECB reference rates are informational, not transaction rates."
+}

@@ -1,0 +1,88 @@
+slug: nordica-unleashed-98-ca-2027
+category: skis
+brand: nordica
+model: Unleashed 98 CA
+year: 2027
+title: Nordica Unleashed 98 CA 2026/27
+price:
+  min: 4350.20
+  max: 4350.20
+  currency: CNY
+one_liner: 无金属夹层的全山地自由滑款；比 Unleashed 98 更轻、更柔和，官方强调树林、雪道与软雪中的灵活性。
+specs:
+  articleNumber: "0A669500001"
+  lengthOptions: 156 / 162 / 168 / 174 / 180 / 186 cm
+  waistWidth: 98
+  turnRadius: 17.4
+  turnRadiusReferenceLength: 174 cm
+  sizeSpecs:
+    - size: 156 cm
+      noseWidth: 129
+      waistWidth: 98
+      tailWidth: 118
+      turnRadius: 15.3
+      weightPerPair: 3080
+      notes: 26/27 Nordica 目录逐码几何；双只重量来自 Comor 同季商品表，并与官方页面所示 156 cm 重量一致。
+    - size: 162 cm
+      noseWidth: 130
+      waistWidth: 98
+      tailWidth: 119
+      turnRadius: 16
+      weightPerPair: 3260
+      notes: 几何及半径采用 Nordica 26/27 目录；双只重量为 Comor 同季商品表。
+    - size: 168 cm
+      noseWidth: 131
+      waistWidth: 98
+      tailWidth: 120
+      turnRadius: 16.7
+      weightPerPair: 3400
+      notes: 几何及半径采用 Nordica 26/27 目录；双只重量为 Comor 同季商品表。
+    - size: 174 cm
+      noseWidth: 132
+      waistWidth: 98
+      tailWidth: 121
+      turnRadius: 17.4
+      weightPerPair: 3620
+      notes: 几何及半径采用 Nordica 26/27 目录；双只重量为 Comor 同季商品表。
+    - size: 180 cm
+      noseWidth: 133
+      waistWidth: 98
+      tailWidth: 122
+      turnRadius: 18.1
+      weightPerPair: 3840
+      notes: 几何及半径采用 Nordica 26/27 目录；双只重量为 Comor 同季商品表。
+    - size: 186 cm
+      noseWidth: 134
+      waistWidth: 98
+      tailWidth: 123
+      turnRadius: 18.8
+      weightPerPair: 4080
+      notes: 26/27 Nordica 目录逐码几何；双只重量来自 Comor 同季商品表，并与官方页面所示 186 cm 重量一致。
+  terrain: 全山地 / 自由滑 / 雪道、树林与软雪
+  skierLevel: 官方等级图示覆盖 Beginner 至 Expert，未细分单一推荐水平
+  bindingSetup: 裸板，固定器另配；Nordica 建议搭配 Marker Griffon 13，具体制动器宽度按实际固定器型号核对
+  weightBasis: Comor 2027 商品表提供六个长度的双只重量；不是单只重量。156 cm 与 186 cm 数值可由 Nordica 官方产品页交叉确认。
+  construction: Full Wood Core with Carbon Stringers；Lite Performance Wood + Carbon + Sidewall
+  profile: Freeride Flow Shape
+  baseEdgeAngle: 0.9
+  sideEdgeAngle: 87.5
+  geometryNotes: Nordica 26/27 目录将商品货号 0A6695 00 001 对应 Unleashed 98 CA，给出六个长度的逐码板型与半径。官方交互商品页及 Comor 商品表部分半径采用 15.5/16/16.5/17/18/19 m 的圆整值；此处采用当季目录的 15.3/16.0/16.7/17.4/18.1/18.8 m，并在原始审计中保留冲突。不要与带 Drift Lock Metal 的 Unleashed 98（货号 0A669400001）合并。
+  seasonEvidence: Nordica 官方 2026/27 商品页标注 Unleashed 98 CA 与 SKU 0A669500001；26/27 官方目录将 article 0A6695 00 001 列为 Unleashed 98 CA flat。
+  sourceCheckedAt: 2026-10-15
+  priceCheckedAt: 2026-10-15
+  regionalRetailPrice: USD 649.99
+  priceMarket: SkiEssentials 美国零售页面；裸板挂牌价，SKU 0A669500
+  priceSource: https://hv2.skiessentials.com/products/2027-nordica-unleashed-98-ca-skis-0a669500
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: SkiEssentials 页面列 2027 款、SKU 0A669500、裸板价 USD 649.99；按 ECB 2026-10-14 EUR/USD 1.1195、EUR/CNY 7.4925 折算 CNY 4,350.20。美国地区挂牌参考，不是中国售价或成交价，未计税费、运费及汇兑成本。
+  compatibilitySources: https://www.nordica.com/usa/en/collection/men/skis/unleashed/unleashed-98-ca-2; https://www.skiandbikes.com/image/document/katalog_-_nordica_fw26.pdf; https://www.grip-walk.com/faq/
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/8e5d34faa16f2f3cf582487a263174901bc73753db0886b2c3996c1f82c6b63a.webp"
+    kind: face
+    alt: Nordica Unleashed 98 CA 2026/27 官方雪板商品图
+    source: Nordica 官方产品页（图片使用授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.nordica.com/usa/en/collection/men/skis/unleashed/unleashed-98-ca-2
+status: published

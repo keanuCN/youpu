@@ -1,0 +1,42 @@
+{
+  "slug": "capita-kazu-kokubo-pro-2027",
+  "model": "CAPiTA Kazu Kokubo Pro",
+  "season": "2026/27 (official product page titled 2027)",
+  "checkedAt": "2026-10-15",
+  "usOfficial": {
+    "source": "https://capitasnowboarding.com/products/capita-kazu-kokubo-pro-mens-snowboard-2027",
+    "market": "CAPiTA North America official store",
+    "listedPrice": { "amount": 679.95, "currency": "USD" },
+    "convertedReference": { "amount": 4550.71, "currency": "CNY" }
+  },
+  "japanCrossCheck": {
+    "source": "https://www.morispo.shop/shopdetail/000000061178/",
+    "market": "Moriyama Sports Japan online store",
+    "productCode": "00201012732044",
+    "productTitleSeason": "26-27",
+    "listedPrice": { "amount": 107800, "currency": "JPY", "taxIncluded": true },
+    "convertedReference": { "amount": 4553.2, "currency": "CNY" }
+  },
+  "japanPriceListCrossCheck": {
+    "source": "https://golgoda.com/PDF/26-27%20CAPITA%20PRICE.pdf",
+    "market": "CAPiTA Japan 2026/27 provisional price list as published by Golgoda",
+    "listedPrice": { "amount": 98000, "currency": "JPY", "taxIncluded": false },
+    "notes": "The PDF labels the list provisional and prices excluding tax; 10% tax gives JPY 107,800, matching the Moriyama Sports tax-included retail page."
+  },
+  "exchangeRates": {
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-14",
+    "eurUsd": 1.1195,
+    "eurJpy": 177.39,
+    "eurCny": 7.4925,
+    "usCalculation": "USD 679.95 * EUR/CNY 7.4925 / EUR/USD 1.1195 = CNY 4,550.71",
+    "japanCalculation": "JPY 107,800 / EUR/JPY 177.39 * EUR/CNY 7.4925 = CNY 4,553.20"
+  },
+  "decision": "Use the CAPiTA US official price as the seed's CNY conversion reference; retain the Moriyama Sports Japan retail price as a cross-check. Neither value is a mainland China quote. Replace the old unsupported seed value CNY 4,896.",
+  "limitations": [
+    "The US price is an official regional price converted to CNY, not a mainland China selling price.",
+    "US tax, transaction exchange fees, shipping, and import charges are not included.",
+    "The Japan price list is provisional and pre-tax; Murasaki's tax-included item page matches its expected tax-included amount.",
+    "Availability and prices may change; the Moriyama Sports page showed a preorder listing and all listed sizes were sold out when checked."
+  ]
+}

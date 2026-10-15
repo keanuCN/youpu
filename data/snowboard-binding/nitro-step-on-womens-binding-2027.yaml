@@ -1,0 +1,47 @@
+slug: nitro-step-on-womens-binding-2027
+category: snowboard-binding
+brand: nitro
+model: "Step On Women's"
+year: 2027
+title: "Nitro Step On Women's 2027"
+one_liner: "Nitro 女款 Step On 固定器；品牌标注响应 7/10、舒适 9/10，须配女款 Step On 雪鞋并按尺码表确认。"
+price:
+  min: 2471.78
+  max: 2471.78
+  currency: CNY
+specs:
+  seasonEvidence: Nitro 官方页面标题标注 2027，官方女款 26/27 集合页列出此型号；据此归档为 2026/27（2027 款），不据此推断首次上市时间或当前库存。
+  entrySystem: step-in
+  brandResponseScore: 7
+  brandComfortScore: 9
+  terrain: [ all-mountain, freestyle ]
+  mountingSystem: "Re:Flex；官方列出 2x4、4x4、3D 与 Burton Channel 安装孔位兼容"
+  bootCompatibility: "Nitro 官方 Step On 指南称其固定器兼容所有 Step On 雪鞋，但系统按性别和尺码区分：女款靴须配女款固定器；US 女 5–6 / 6.5–8.5 / 9–11 分别配 S/M/L。跨品牌也须确认靴卡完全扣合。普通绑带雪鞋不兼容。"
+  bindingSizeGuide: "女款 S：US 5–6 / MP 22–23 / EU 35–36.5；M：US 6.5–8.5 / MP 23.5–25.5 / EU 37–40.5；L：US 9–11 / MP 26–28 / EU 41–43。"
+  sizeChartScope: "Nitro 官方 2027 女款 Step On 固定器尺码表；US 女 5–6、6.5–8.5、9–11 分档，无重叠。为 Step On 连接系统的推荐尺码，仍需与对应 Step On 雪鞋按尺码表匹配并实际检查扣合；页面尺码选项不代表实时库存。"
+  sizeChart:
+    - { size: S, usWomen: "5–6", mondo: "22–23", eu: "35–36.5" }
+    - { size: M, usWomen: "6.5–8.5", mondo: "23.5–25.5", eu: "37–40.5" }
+    - { size: L, usWomen: "9–11", mondo: "26–28", eu: "41–43" }
+  highback: "Step On 非对称高背；集成导入槽辅助雪鞋进入固定器，系统以三点连接并使用 Hook 2 弹簧脚趾钩"
+  cushioning: "Nitro HYPER Foam 脚床缓震"
+  selectionNotes: 先选择合脚的女款 Step On 雪鞋，再按 US/MP 尺码选 S/M/L 固定器，逐一确认后跟卡扣及两侧前掌卡齿完全锁定；Nitro 官方要求女鞋配女款固定器，勿跨男女系列混搭。安装前核对雪板 2x4、4x4、3D 或 Channel 孔位。
+  compatibilitySources: https://www.nitrosnowboards.com/collections/all-26-27/products/step-on-womens-bindings；https://www.nitrosnowboards.com/pages/step-on
+  sizeChartCheckedAt: "2026-10-15"
+  sizeChartSource: https://www.nitrosnowboards.com/collections/all-26-27/products/step-on-womens-bindings
+  officialPrice: EUR 329.90
+  priceCheckedAt: "2026-10-15"
+  priceMarket: "Nitro 欧洲官方女款固定器集合页（EUR 标价）"
+  priceSource: https://www.nitrosnowboards.com/cs/collections/all-womens-bindings-26-27
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Nitro 欧洲官方女款集合页标价 EUR 329.90；按 ECB 2026-10-14 EUR/CNY 7.4925 折合 CNY 2,471.78。此为欧洲官方地区挂牌折算参考，不是中国售价；页面税费口径、跨境运费及进口费用以结账为准，尺码库存会变化。
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/c45ac3e045c5c505c311481a67b04aca7d7534a2871ce7349b2b6243074fc17d.webp"
+    kind: face
+    alt: Nitro Step On 女款固定器官方商品图
+    source: Nitro 官方商品页（图片展示授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.nitrosnowboards.com/collections/all-26-27/products/step-on-womens-bindings
+status: published

@@ -17,6 +17,7 @@ price:
   max: 3960
   currency: CNY
 specs:
+  seasonEvidence: Jones 官方商品页当前变体货号为 J.27.SNW.DRC.000.139.1（J.27 年款代码）且页面标注 2027，归档为 2026/27（2027 款）；此代码不证明首次上市年份或实时库存。
   length: 148
   effectiveEdge: 1120
   sidecut: 7.1
@@ -200,7 +201,7 @@ specs:
   priceSource: https://www.jonessnowboards.com/en-int/products/womens-dream-weaver-20-snowboard
   priceStatus: 当前同名产品系列官方挂牌价，页面未确认本档案年份；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0641/4722/6759/files/J.27.SNW.DRC-gallery-1.webp?v=1782443953&width=1946"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/b5da471e522153ab8175f515f9a0d61fe06ed8eb3fbe37bedb3ae9b8dd5dcf85.webp"
     kind: face
     alt: Jones Dream Weaver 2.0 2027 单板正面图
     source: Jones 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

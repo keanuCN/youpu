@@ -1,0 +1,102 @@
+{
+  "checkedAt": "2026-10-14",
+  "exchangeRates": {
+    "source": "European Central Bank euro foreign exchange reference rates",
+    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-14",
+    "eurUsd": 1.1195,
+    "eurGbp": 0.84385,
+    "eurCny": 7.4925,
+    "usdCnyCrossRate": 6.6927199643,
+    "gbpCnyCrossRate": 8.8789476829
+  },
+  "caveats": [
+    "Prices are official regional store references converted to CNY, not China prices.",
+    "Current US product pages do not state a season; for season-labeled 2026/27 seeds, season identity comes from the separately recorded catalogue and matching article reference.",
+    "The official QST 92 and QST 98 pages state that the products are no longer sold on the Salomon website; their displayed amounts are archival list-price references only and their seeds remain draft.",
+    "Stance 84 R is listed as a ski, plate, and binding set, but its season is not confirmed and its seed remains draft.",
+    "US sales tax, cross-border shipping, import costs, and payment exchange fees are excluded."
+  ],
+  "products": [
+    {
+      "seed": "data/skis/salomon-mtn-86-carbon-2027.yaml",
+      "model": "MTN 86 Carbon",
+      "articleReference": "L47824000+",
+      "season": "2026/27 by matching article and season catalogue; product page has no season label",
+      "officialPrice": "USD 749.95",
+      "convertedPriceCny": 5019.21,
+      "configuration": "Skis only",
+      "source": "https://www.salomon.com/en-us/product/mtn-86-carbon-li8310"
+    },
+    {
+      "seed": "data/skis/salomon-qst-100-2027.yaml",
+      "model": "QST 100 BLACK",
+      "articleReference": "L49189200+",
+      "season": "2026/27 by official season catalogue and matching article; product page has no season label",
+      "officialPrice": "USD 749.95",
+      "convertedPriceCny": 5019.21,
+      "configuration": "Skis only",
+      "source": "https://www.salomon.com/en-us/product/qst-100-black-li9359"
+    },
+    {
+      "seed": "data/skis/salomon-qst-106-2027.yaml",
+      "model": "QST 106 Almond Milk",
+      "articleReference": "L47774500+",
+      "season": "2026/27 by official season catalogue and matching article; product page has no season label",
+      "officialPrice": "USD 849.95",
+      "convertedPriceCny": 5688.48,
+      "configuration": "Skis only",
+      "source": "https://www.salomon.com/en-us/product/qst-106-almond-milk-li8133"
+    },
+    {
+      "seed": "data/skis/salomon-qst-94-2027.yaml",
+      "model": "QST 94 Lilac",
+      "articleReference": "L49189300+",
+      "season": "2026/27 lineup and same-article retailer sizing report; official product page has no season label",
+      "officialPrice": "USD 749.95",
+      "convertedPriceCny": 5019.21,
+      "configuration": "Skis only",
+      "source": "https://www.salomon.com/en-us/product/qst-94-lilac-li9360"
+    },
+    {
+      "seed": "data/skis/salomon-qst-blank-2027.yaml",
+      "model": "S/LAB QST Blank",
+      "articleReference": "L47713400+",
+      "season": "2026/27 season catalogue and matching article; current official page lists an extra 170 cm option beyond the season catalogue",
+      "officialPrice": "USD 899.95",
+      "convertedPriceCny": 6023.11,
+      "configuration": "Skis only",
+      "source": "https://www.salomon.com/en-us/product/s-lab-qst-blank-li7032"
+    },
+    {
+      "seed": "data/skis/salomon-stance-84-2027.yaml",
+      "model": "Stance 84 R (and MI12)",
+      "articleReference": "L45457300+",
+      "season": "unconfirmed",
+      "officialPrice": "USD 799.95",
+      "convertedPriceCny": 5353.84,
+      "configuration": "Skis, plate, and binding set",
+      "source": "https://www.salomon.com/en-us/product/stance-84-r-and-mi12-li1721"
+    },
+    {
+      "seed": "data/skis/salomon-qst-92-2024.yaml",
+      "model": "QST 92",
+      "articleReference": "L47232400+",
+      "season": "2023/24 according to same-article season catalogue; official page says no longer sold",
+      "officialPrice": "GBP 460.00",
+      "convertedPriceCny": 4084.32,
+      "configuration": "Skis only; archived list-price reference, not currently for sale",
+      "source": "https://www.salomon.com/en-gb/product/qst-92-li4911/L47232400%2B"
+    },
+    {
+      "seed": "data/skis/salomon-qst-98-2024.yaml",
+      "model": "QST 98",
+      "articleReference": "L47232300+",
+      "season": "2023/24 according to same-article season catalogue; official page says no longer sold",
+      "officialPrice": "EUR 630.00",
+      "convertedPriceCny": 4720.27,
+      "configuration": "Skis only; archived list-price reference, not currently for sale",
+      "source": "https://www.salomon.com/es-es/product/qst-98-li4910/L47232300%2B"
+    }
+  ]
+}

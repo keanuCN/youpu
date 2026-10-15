@@ -5,7 +5,13 @@ model: GO 3S
 year: 2024
 title: Insta360 GO 3S
 one_liner: 轻量化的 4K 拇指相机，优先解决佩戴、磁吸和第一视角记录问题。
+price:
+  min: 1898
+  max: 1988
+  currency: CNY
 specs:
+  priceSource: https://store.insta360.com/cn/product/go-3S
+  priceStatus: 影石中国官网于 2026-10-15 显示 GO 3S 标准套餐 64GB CNY 1898、128GB CNY 1988；标准套餐含拓展舱，未含其他增配件。
   cameraType: wearable
   sensor: 1/2.3 英寸
   maxVideo: 4K@30fps

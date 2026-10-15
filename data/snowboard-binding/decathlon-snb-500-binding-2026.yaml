@@ -4,17 +4,33 @@ brand: decathlon
 model: "SNB 500"
 year: 2026
 title: "Decathlon SNB 500 2026"
+price:
+  min: 800.18
+  max: 800.18
+  currency: CNY
 one_liner: "国内京东可见 200+ 条评论的入门全山地款；官方列出 EVA 缓震和传统扣带。"
 specs:
   entrySystem: strap
   bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
-  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。法国官方页列 S–M 对应 EU 36–42、L–XL 对应 EU 43–47；商品变体选择器显示 M/L，需按实物标签和试装确认，不自行映射二者。雪板安装孔位另按随附圆盘核对。
   compatibilitySources: https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654
-  bindingSizeGuide: 官方当前页明确 L 对应 9–13，但原文未标明尺码体系，不自行转换为 EU 或 Mondopoint；雪鞋外形不同，必须试装。其他尺码范围待核。
-  priceCheckedAt: 2026-10-12
-  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
+  bindingSizeGuide: 加拿大官方页列出 S–M 与 L–XL 的 US 男女范围；法国官方页列出 S–M 对应 EU 36–42、L–XL 对应 EU 43–47。地区页面的变体标签与范围有差异，不跨地区换算，需按实物标签和雪鞋试装。
+  sizeChart:
+    - size: "S–M"
+      eu: "36–42"
+    - size: "L–XL"
+      eu: "43–47"
+  sizeChartCheckedAt: "2026-10-14"
+  sizeChartSource: https://www.decathlon.fr/p/fixations-snowboard-all-mountain-freestyle-adulte-snb-500-noir/336603/c1m8882775
+  priceCheckedAt: 2026-10-15
+  officialPrice: CAD 170.00
+  priceMarket: Decathlon 加拿大官网当前 SNB 500 标价；按 ECB 2026-10-14 汇率折算人民币
+  priceSource: https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654
+  priceStatus: 加拿大官网同商品 ID 8668654 当前标价 CAD 170；页面未标雪季，人民币仅为加拿大市场折算参考，不证明 2026 雪季，也不是中国售价。税费、运费和汇兑成本未计。
+  exchangeRate: EUR/CAD 1.5918；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html
 images:
-  - url: "https://contents.mediadecathlon.com/p2573496/k%24353e5fd924967da12911035b5eeb0342/picture.jpg?f=3000x0&format=auto"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/c7585d201162778d0b9bd481ef4722d7bb31f33a2c25c3993b86d17b13585ca1.webp"
     kind: face
     alt: Decathlon SNB 500 固定器官方商品图
     source: Decathlon 官方商品页（图片使用授权待核）
@@ -22,4 +38,11 @@ images:
 data_source:
   kind: official
   origin_url: https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 7.3
+  comfort: 6.2
+  versatility: 7.6
+  convenience: 6.2
+  value: 5.0
 status: published

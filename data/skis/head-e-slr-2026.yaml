@@ -4,24 +4,42 @@ brand: head
 model: e.SLR
 year: 2026
 title: HEAD Worldcup Rebels e.SLR 2025/26
+price:
+  min: 2621.63
+  max: 2621.63
+  currency: CNY
 one_liner: 京东海德雪板排行出现的民用小回转型号，定位偏雪道 carving。
 specs:
+  lengthOptions: 149 / 156 / 163 / 170 cm
+  sizeSpecs:
+    - { size: 149 cm, noseWidth: 123, waistWidth: 66, tailWidth: 107, turnRadius: 9.2, notes: HEAD 25/26 手册货号 313365；逐码值由同货号商品规格复录。 }
+    - { size: 156 cm, noseWidth: 123, waistWidth: 66, tailWidth: 107, turnRadius: 10.2, notes: HEAD 25/26 手册货号 313365；逐码值由同货号商品规格复录。 }
+    - { size: 163 cm, noseWidth: 123, waistWidth: 66, tailWidth: 107, turnRadius: 11.2, notes: HEAD 25/26 手册货号 313365；逐码值由同货号商品规格复录。 }
+    - { size: 170 cm, noseWidth: 123, waistWidth: 66, tailWidth: 107, turnRadius: 12.3, notes: HEAD 25/26 手册货号 313365；逐码值由同货号商品规格复录。 }
+  waistWidth: 66
+  turnRadius: 11.2
+  turnRadiusReferenceLength: 163 cm
   terrain: 雪道 / 小回转
   skierLevel: 中级至进阶
   bindingSetup: 雪板+固定器，按具体 SKU 核对
   weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
-  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
-  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
-    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  geometryNotes: HEAD 25/26 手册按 313365 确认长度与 163 cm 参考几何；同货号零售商品规格列出四档半径，并复录相同 sidecut。重量未录入。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
-  sourceCheckedAt: 2026-10-13
-  compatibilitySources: https://www.head.com/en_SE/product/worldcup-rebels-e-slr-313365-set；https://www.grip-walk.com/faq/
+  seasonEvidence: HEAD Hardgoods Workbook 2025/26 列明 article 313365 及四个长度；零售归档页标注同一 article 与 2025/26 雪季。
+  sourceCheckedAt: 2026-10-15
+  priceCheckedAt: 2026-10-15
+  listedPrice: EUR 349.90
+  priceMarket: 德国零售比价页同货号最低挂牌参考
+  priceSource: https://preisvergleich.heise.de/head-worldcup-rebels-e-slr-pr-11-gw-inkl-bindung-modell-2025-2026-313365-a3617720.html
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 德国比价页按 HEAD article 313365 列出 2025/26 e.SLR + PR 11 GW 套装，2026-10-15 复核最低挂牌 EUR 349.90，Sport Robl 标注有货，另列 EUR 29.90 配送费；该报价本身对应 2026-09-13 的价格更新记录，价格和库存可能变化。按 ECB 2026-10-14 EUR/CNY 7.4925 折算 CNY 2,621.63，不含配送费，是欧洲零售参考而非中国售价。京东列表另有 313365+100911 雪板固定器组合的含雪鞋/配件套装线索，直达页不可读且无可核实的变体价和库存，不替代本款雪板+固定器价格；见 data/raw/skis/head/e-slr-2025-26.json。
+  compatibilitySources: https://www.head.com/en_SE/product/worldcup-rebels-e-slr-313365-set；https://www.skiandbikes.com/image/document/head_workbook_2526_en.pdf；https://www.sportokay.com/at_en/head-worldcup-rebels-e-slr-pr-11-gw-skiset-2026.html；https://www.grip-walk.com/faq/
 data_source:
   kind: official
   origin_url: https://www.head.com/en_SE/product/worldcup-rebels-e-slr-313365-set
 images:
-  - url: https://cdn-mdb.head.com/CDN3/D/313365.SET_WO/4/1820x2428/worldcup-rebels-e-slr-without-binding.webp
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/18d3bc70737288db6bfa1d884f7588e85c5388d1686389f676f04ce5dbbd95e4.webp
     kind: face
     alt: HEAD Worldcup Rebels e.SLR 2025/26 官方产品图
     source: HEAD 官方产品页图片（本地演示，版权授权待核）

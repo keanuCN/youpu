@@ -19,8 +19,13 @@ specs:
   monopodMinHeight: 330
   weight: 1.2
   loadCapacity: 12
-images: []
+images:
+  - url: https://s2.sirui.com/mobile/products/protripodts2018020907B.jpg
+    kind: face
+    alt: SIRUI T-1204SK 碳纤维旅行三脚架
+    source: SIRUI 官方 T-S 系列商品页（展示授权状态待核）
+    sort_order: 0
 data_source:
   kind: crawl
-  origin_url: https://www.sirui.com/index/tpl/producttripodts.html
+  origin_url: https://en.sirui.com/index/tpl/producttripodts.html
 status: published

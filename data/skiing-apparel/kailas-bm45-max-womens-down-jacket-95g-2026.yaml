@@ -5,6 +5,10 @@ model: BM45 MAX Down Ski Jacket Women's
 year: 2026
 title: Kailas BM45 MAX Down Ski Jacket Women's 95g
 one_liner: 女款 BM45 MAX，40D 三层 GORE-TEX 面料，填充 95g 800FP 羽绒。
+price:
+  min: 6200
+  max: 6200
+  currency: CNY
 specs:
   fit: athletic-y-cut
   recco: true
@@ -16,12 +20,67 @@ specs:
   construction: 3L
   skiPassPocket: true
   helmetCompatibleHood: true
+  availableSizes: [ S, M, L ]
+  sizeGuide: 官网尺码选项为 S、M、L；未找到对应成衣尺寸表，不能从尺码名推断胸围或衣长。
+  styleCode: KG2531244
+  seasonEvidence: 当前官方页说明女款 95g 800FP、Y-Cut 和 40D 三层 GORE-TEX，但未标注雪季；2026 年份暂作为档案标签，年款待核。
+  priceCheckedAt: 2026-10-15
+  officialPrice: CNY 6200
+  regionalListPrice: USD 920.00
+  priceMarket: 凯乐石微商城（中国大陆），同货号 KG2531244
+  priceSource: https://detail.youzan.com/show/goods?alias=2g2sri0raz5wrkp&from_source=gbox_seo
+  priceStatus: 凯乐石微商城精确货号 KG2531244 标价 CNY 6200，作为人民币参考价；美国官方店另列 USD 920，约折 CNY 6158.28，仅作地区价格交叉参考。微商城页面未确认库存与雪季，成交及配送费用以购买页为准。
 images:
-  - url: "https://kailasgear.com/cdn/shop/files/KG2531244_-2.webp?v=1786156036&width=1090"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/0aae5458750ed3d4147309ee4e97baab874239f884e422c182fece3bef277806.webp"
     kind: face
     alt: KAILAS BM45 MAX 女款 95g 800FP 羽绒滑雪夹克
     source: KAILAS 官网商品图；展示授权状态待核
     sort_order: 0
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/9694e3d81870644d05dc5a086adf99f7889a0f90a76665e738623ebe5ab50f0c.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 女款 95g 羽绒滑雪夹克商品图 2
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 1
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/8e365f8e3037c21859df8a72f849e2d696a0065e5cffc36ce00f2f42a1a38820.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 女款 95g 羽绒滑雪夹克商品图 3
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 2
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/d70b4217efdf163d9f3ec21bf363a836e9bdd97dcffca33ae3637489d04678f6.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 女款 95g 羽绒滑雪夹克商品图 4
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 3
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/bcf8bb6011fd59e3eaa5560d6db5f9c874195692f36812b5adb40428a3af40d1.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 女款 95g 羽绒滑雪夹克商品图 5
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 4
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/fedeba0af4458eabd6173a7ca067c44ac2d110d63da7a27a949ea31eab9ec3d8.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 女款 95g 羽绒滑雪夹克商品图 6
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 5
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/5b681bdba1261ff720193ed07179857e57823e71112993712a3eb49a4e4a5125.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 女款 95g 羽绒滑雪夹克商品图 7
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 6
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/22c11ae3726fcbbf4264f6af8fed43de3a326e994c23d204bbe0cfbf96950208.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 女款 95g 羽绒滑雪夹克商品图 8
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 7
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/d581f71510d2430d7b90cbf8121494801d9352c1d86d3d475063fea6c895839d.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 女款 95g 羽绒滑雪夹克商品图 9
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 8
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/0b5afc5509a425059262e9caa1954c2e45dc24ce400c0d0109209c918f733e5a.webp"
+    kind: face
+    alt: KAILAS BM45 MAX 女款 95g 羽绒滑雪夹克商品图 10
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 9
 data_source:
   kind: official
   origin_url: https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-womens

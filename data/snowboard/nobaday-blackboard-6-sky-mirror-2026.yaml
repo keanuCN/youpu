@@ -1,0 +1,49 @@
+slug: nobaday-blackboard-6-sky-mirror-2026
+category: snowboard
+brand: nobaday
+model: Blackboard 6.0 Sky Mirror Carving
+year: 2026
+title: NOBADAY 小黑板 Blackboard 6.0 Sky Mirror Carving
+one_liner: 面向刻滑和全山地的方向性板，采用 Flat-Out-Camber、碳纤维补强与白杨木/山毛榉板芯；官网同页对硬度标注不一致，故不录入单一硬度值。
+price:
+  min: 4343.58
+  max: 4343.58
+  currency: CNY
+specs:
+  lengthOptions: 147 / 152 / 155 / 156W / 159 / 161W / 163W
+  shape: Directional
+  profile: Flat-Out-Camber
+  profileFamily: hybrid
+  core: Poplar and beech wood core
+  fiberglass: 800g biaxial fiberglass
+  base: IS7500 sintered graphite
+  construction: 2 X-shaped 25 mm carbon stringers; ICP2115 high-gloss mirror topsheet
+  scenes:
+    - all-mountain
+    - carving
+  brandStyleRatings: 全山地 6/10；刻滑 9/10；粉雪 5/10；平花 4/10；公园 8/10（品牌自评）
+  sizeSpecs:
+    - { size: "147", effectiveLength: 1470, noseWidth: 283, waistWidth: 240, tailWidth: 278, bindingSize: M }
+    - { size: "152", effectiveLength: 1520, noseWidth: 290, waistWidth: 248, tailWidth: 285, bindingSize: M }
+    - { size: "155", effectiveLength: 1540, noseWidth: 293, waistWidth: 250, tailWidth: 288, bindingSize: M/L }
+    - { size: "156W", effectiveLength: 1560, noseWidth: 303, waistWidth: 260, tailWidth: 298, bindingSize: M/L }
+    - { size: "159", effectiveLength: 1580, noseWidth: 295, waistWidth: 252, tailWidth: 288, bindingSize: M/L }
+    - { size: "161W", effectiveLength: 1600, noseWidth: 304, waistWidth: 262, tailWidth: 297, bindingSize: M/L }
+    - { size: "163W", effectiveLength: 1620, noseWidth: 303, waistWidth: 256, tailWidth: 288, bindingSize: M/L }
+  priceCheckedAt: 2026-10-15
+  officialPrice: USD 649
+  priceMarket: NOBADAY 官方美国站
+  priceSource: https://nobaday.com/products/blackboard-6-sky-mirror-carving-snowboard
+  exchangeRate: EUR/USD 1.1195；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 官方美国站挂牌 USD 649，按 ECB 2026-10-14 参考汇率折算 CNY 4,343.58；不是中国售价或成交价，税费、跨境配送和进口费用未计。
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/a6df544f6ad74b03cd589389f6afc296b305d968355b55c74ab84aa6d59c27c0.webp"
+    kind: face
+    alt: NOBADAY Blackboard 6.0 Sky Mirror Carving 官方产品图
+    source: NOBADAY 官方商品页图片（转载授权未核实）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://nobaday.com/products/blackboard-6-sky-mirror-carving-snowboard
+status: published

@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-10-15",
+  "brand": "K2",
+  "model": "Maysis Wide Men's Snowboard Boots",
+  "season": "2027",
+  "articleNumber": "KB261664",
+  "regularVariantArticle": "KB261665",
+  "source": "https://k2snow.com/en-us/p/maysis-wide-mens-snowboard-boots-kb261664?Color=BLACK&Size=8",
+  "officialEvidence": {
+    "wideClaim": "7 mm wider in both the liner and shell than regular Maysis",
+    "listedUse": ["Freeride", "Big Mountain", "Freestyle", "Powder"],
+    "availableUsMensSizes": ["6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"],
+    "priceUSD": 379.95,
+    "selectedVariant": {"usSize": "8", "sku": "KB261664006", "upc": "196222716390", "image": "https://cdn11.bigcommerce.com/s-cppgporhzh/product_images/attribute_rule_images/11008797_source_1780342988.jpg"},
+    "lacing": "H5 + M+2 dual BOA; Conda internal liner lacing",
+    "liner": "Intuition Control Foam 3D, heat moldable",
+    "flexScale": "Playful–Precise visual axis; no numeric value"
+  },
+  "fitInterpretation": "The 7 mm figure is a model-specific relative shell/liner difference from regular Maysis. K2 does not publish an absolute last width in millimeters or foot-volume measurement; do not present 7 mm as a universal width or guaranteed fit result.",
+  "sizeChart": "The exact Wide product page supplies the K2 US men's, US women's, UK, EU, and centimeter conversion table used in the seed.",
+  "priceConversion": {
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-13",
+    "eurUsd": 1.1188,
+    "eurCny": 7.489,
+    "calculation": "USD 379.95 / 1.1188 EUR per USD × 7.489 CNY per EUR = CNY 2,543.30",
+    "limitation": "US official store reference converted to CNY, not a China-market price; taxes and cross-border costs excluded. Product page does not establish per-size live inventory."
+  },
+  "japanRetailCrossCheck": {
+    "source": "https://store.alpen-group.jp/Form/Product/ProductDetail.aspx?bid=0203&cat=127002&pid=5836395016-0001&shop=0",
+    "retailer": "Alpen Online",
+    "productTitle": "K2 MAYSIS WIDE 26-27 model",
+    "manufacturerModelCode": "KB26166400",
+    "selectedSizesCm": ["25.5", "26.0", "26.5", "27.0", "27.5", "28.0"],
+    "listedPrice": { "amount": 64900, "currency": "JPY", "taxIncluded": true },
+    "priceConversion": {
+      "rateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+      "date": "2026-10-14",
+      "eurJpy": 177.39,
+      "eurCny": 7.4925,
+      "calculation": "JPY 64,900 / 177.39 JPY per EUR × 7.4925 CNY per EUR = CNY 2,741.21"
+    },
+    "availabilityAndSeasonLimitations": "商品页尺码选择器列出 25.5–28.0 cm，但该页面提示店铺无库存，门店库存共享商品可能延迟 1–2 周且下单后仍可能因检品取消。标题标示 26-27 年款，规格文字另称 2026 年款；季节标签存在页面内部差异。仅作日本地区挂牌和选项记录，不证明实时可售或适用于中国。",
+    "articleMapping": "KB26166400 与 K2 官方 2027 商品货号 KB261664 前缀一致，商品名为 MAYSIS WIDE；作为第三方区域零售对应线索，不能替代制造商页面。"
+  },
+  "lastTaxonomyHistoricalEvidence": {
+    "source": "https://k2sports.a.bigcontent.io/v1/static/F24_K2%20SB_CATALOG",
+    "catalogSeason": "2024/25",
+    "manufacturerStatement": "K2 的 Wide Last 基于 E & 1/2 Last，前倾角 11°；鞋壳与鞋胆比传统 last 和鞋壳宽 7 mm；Wide Last 用于 Maysis Wide。",
+    "scope": "官方历史目录明确将 2024/25 Maysis Wide 归入 Wide Last，但本雪季 2027 商品页未复述 Last 字母分类。作为历史设计分类留档，不把 E & 1/2 Last 作为 2027 已重新确认的尺码级宽度，也不当作毫米制绝对宽度。"
+  },
+  "imageEvidence": "The selected US 8 variant maps SKU KB261664006 to the official K2 BigCommerce image URL recorded in the seed; display reuse permission is not established."
+}

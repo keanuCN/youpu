@@ -1,11 +1,11 @@
-# 旧 slug 保留兼容；零售商同季资料将产品确认为 2023/24 Pathfinder Reverse，尺寸按标准尺码中位更新；无官方历史技术表。
+# 旧 slug 保留兼容；同季零售商尺码表将产品确认为 2023/24 Pathfinder Reverse。
 slug: capita-horrorscope-2024
 category: snowboard
 brand: capita
 model: Pathfinder Reverse
 year: 2024
 title: CAPiTA Pathfinder Reverse 2024
-one_liner: 2024 款 Pathfinder Reverse 采用 Park V2 与真双向板型，提供松弛、容易转向的自由式脚感，适合平花和公园进阶；保留旧 Horrorscope slug 以兼容已有链接。CNY 3096 仅为美国零售商页面标注原价 USD 429.95 按项目旧参考汇率换算的估值，不代表中国市场实售价。
+one_liner: 2024 款 Pathfinder Reverse 采用 Park V2 与方向双向板型，提供松弛、容易转向的自由式脚感，适合平花和公园进阶；保留旧 Horrorscope slug 以兼容已有链接。CNY 3096 仅为美国零售商页面标注原价 USD 429.95 按项目旧参考汇率换算的估值，不代表中国市场实售价。
 editorial_scores:
   stability: 5.8
   response: 7.2
@@ -22,9 +22,8 @@ specs:
   effectiveEdge: 1202
   sidecut: 7.7
   waistWidth: 252
-  stanceSetback: 0
   profile: Park V2（插入区平底，插入区外反弓 + Flat Kick）
-  shape: True Twin
+  shape: Directional Twin
   core: FSC Certified Dual Core（杨木芯 + 山毛榉木条）
   fiberglass: Special Blend 双轴玻纤 + Magic Bean 树脂
   base: Superdrive EX（sintruded）
@@ -37,15 +36,31 @@ specs:
   scenes:
     - beginner
     - freestyle
+  lengthOptions: 145 / 147 / 149 / 151 / 153 / 155 / 157 / 151W / 153W / 155W / 157W / 159W / 162W
+  sizeSpecs:
+    - { size: "145", effectiveEdge: 1154, waistWidth: 246, noseWidth: 290, tailWidth: 290, sidecutRadii: 7.4 m, stanceWidth: 504 mm（参考）, riderWeight: 80-120 lb / 36-54 kg }
+    - { size: "147", effectiveEdge: 1171, waistWidth: 248, noseWidth: 292, tailWidth: 292, sidecutRadii: 7.5 m, stanceWidth: 504 mm（参考）, riderWeight: 90-140 lb / 41-63 kg }
+    - { size: "149", effectiveEdge: 1186, waistWidth: 250, noseWidth: 295, tailWidth: 295, sidecutRadii: 7.6 m, stanceWidth: 529 mm（参考）, riderWeight: 95-150 lb / 43-68 kg }
+    - { size: "151", effectiveEdge: 1202, waistWidth: 252, noseWidth: 297, tailWidth: 297, sidecutRadii: 7.7 m, stanceWidth: 529 mm（参考）, riderWeight: 100-155 lb / 45-70 kg }
+    - { size: "153", effectiveEdge: 1218, waistWidth: 254, noseWidth: 300, tailWidth: 300, sidecutRadii: 7.8 m, stanceWidth: 529 mm（参考）, riderWeight: 110-170 lb / 49-77 kg }
+    - { size: "155", effectiveEdge: 1234, waistWidth: 256, noseWidth: 303, tailWidth: 303, sidecutRadii: 7.9 m, stanceWidth: 555 mm（参考）, riderWeight: 120-180 lb / 54-81 kg }
+    - { size: "157", effectiveEdge: 1250, waistWidth: 258, noseWidth: 305, tailWidth: 305, sidecutRadii: 8.0 m, stanceWidth: 555 mm（参考）, riderWeight: 140-200+ lb / 63-90+ kg }
+    - { size: 151W, effectiveEdge: 1202, waistWidth: 258, noseWidth: 303, tailWidth: 303, sidecutRadii: 7.7 m, stanceWidth: 529 mm（参考）, riderWeight: 110-150 lb / 50-68 kg }
+    - { size: 153W, effectiveEdge: 1218, waistWidth: 260, noseWidth: 306, tailWidth: 306, sidecutRadii: 7.8 m, stanceWidth: 529 mm（参考）, riderWeight: 110-170 lb / 50-77 kg }
+    - { size: 155W, effectiveEdge: 1234, waistWidth: 261, noseWidth: 308, tailWidth: 308, sidecutRadii: 7.9 m, stanceWidth: 555 mm（参考）, riderWeight: 130-190 lb / 59-86 kg }
+    - { size: 157W, effectiveEdge: 1250, waistWidth: 263, noseWidth: 310, tailWidth: 310, sidecutRadii: 8.0 m, stanceWidth: 555 mm（参考）, riderWeight: 140-200 lb / 64-91 kg }
+    - { size: 159W, effectiveEdge: 1265, waistWidth: 265, noseWidth: 312, tailWidth: 312, sidecutRadii: 8.2 m, stanceWidth: 555 mm（参考）, riderWeight: 150-210 lb / 68-95 kg }
+    - { size: 162W, effectiveEdge: 1298, waistWidth: 268, noseWidth: 316, tailWidth: 316, sidecutRadii: 8.2 m, stanceWidth: 555 mm（参考）, riderWeight: 160-220+ lb / 72-99+ kg }
+  selectionNotes: "旧 slug capita-horrorscope-2024 保留兼容；此档案实际为 2023/24 Pathfinder Reverse。尺码数据来自标注 2024 款且声明数据由厂商提供的零售商页面：https://pacificboarder.com/products/capita-mens-pathfinder-reverse-camber-snowboard-2024"
   priceCheckedAt: 2026-10-12
   priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
-  - url: https://cdn.shopify.com/s/files/1/0510/1705/6454/files/pathreverse57.jpg?v=1750863390
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/325df1e96c47f04e82dec5c04fa5e91d76556163525f2d4c4a2d9720ac0d0cc0.webp
     kind: face
     alt: CAPiTA Pathfinder Reverse 2024 板面图
     source: Boyne Country Sports 2024 商品图；上线前仍应确认图片使用授权或迁移至自有 COS
     sort_order: 0
 status: published
 data_source:
-  kind: manual
-  origin_url: https://www.evo.com/products/238313-capita-pathfinder-reverse-camber-snowboard-2024
+  kind: crawl
+  origin_url: https://pacificboarder.com/products/capita-mens-pathfinder-reverse-camber-snowboard-2024

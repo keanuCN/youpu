@@ -12,10 +12,10 @@ price:
 specs:
   length: 156
   weight: 3100
-  effectiveEdge: 1230
+  effectiveEdge: 1225
   waistWidth: 263
   sidecut: 9
-  stanceSetback: 20
+  stanceSetback: 0
   profile: Float CamRock
   profileFamily: hybrid
   shape: Volume-shifted directional
@@ -26,8 +26,15 @@ specs:
   scenes:
     - all-mountain
     - powder
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  sizeSpecs:
+    - { size: "144", overallLength: 1440, weight: 2600, effectiveEdge: 1129, waistWidth: 251, noseWidth: 297, tailWidth: 280, taper: 17, sidecutRadii: "8.1 m", stanceWidth: "490 mm（参考）", setback: 0, riderWeight: "41–63 kg", bootSize: "US 0–9 / EU 0–39.5" }
+    - { size: "148", overallLength: 1480, weight: 2700, effectiveEdge: 1161, waistWidth: 255, noseWidth: 302, tailWidth: 285, taper: 17, sidecutRadii: "8.4 m", stanceWidth: "500 mm（参考）", setback: 0, riderWeight: "41–63 kg", bootSize: "US 7–9 / EU 39.5–41.5" }
+    - { size: "152", overallLength: 1520, weight: 2900, effectiveEdge: 1193, waistWidth: 259, noseWidth: 306, tailWidth: 289, taper: 17, sidecutRadii: "8.7 m", stanceWidth: "520 mm（参考）", setback: 0, riderWeight: "49–73 kg", bootSize: "US 7–9 / EU 39.5–41.5" }
+    - { size: "156", overallLength: 1560, weight: 3100, effectiveEdge: 1225, waistWidth: 263, noseWidth: 311, tailWidth: 294, taper: 17, sidecutRadii: "9.0 m", stanceWidth: "540 mm（参考）", setback: 0, riderWeight: "59–82 kg", bootSize: "US 9+ / EU 41.5+" }
+    - { size: "160", overallLength: 1600, weight: 3200, effectiveEdge: 1257, waistWidth: 267, noseWidth: 316, tailWidth: 299, taper: 17, sidecutRadii: "9.3 m", stanceWidth: "560 mm（参考）", setback: 0, riderWeight: "73–95 kg", bootSize: "US 11+ / EU 44.5+" }
+    - { size: "164", overallLength: 1640, weight: 3300, effectiveEdge: 1289, waistWidth: 271, noseWidth: 321, tailWidth: 304, taper: 17, sidecutRadii: "9.6 m", stanceWidth: "560 mm（参考）", setback: 0, riderWeight: "77–100 kg+", bootSize: "US 11+ / EU 44.5+" }
+  priceCheckedAt: 2026-10-14
+  priceStatus: 现有 CNY 4680 缺少可核查的中国销售渠道与报价日期，仍未确认；不得视为已核实的中国售价。
 editorial_scores:
   stability: 8.1
   response: 7.9
@@ -36,12 +43,12 @@ editorial_scores:
   forgiveness: 7.2
   value: 7.0
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0641/4722/6759/files/J.26.SNU.HVC-gallery-1.webp?v=1768407048&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/1a1ad2717a1f1f563d6dd342ca7ee5f57f269e6b6bc5c74e041bdd6c66a9d9ae.webp"
     kind: face
     alt: Jones Hovercraft 2.0 2027 官方产品图
-    source: Jones 官方产品页图片（本地演示，版权待核）
+    source: Jones 日本官方代理商 26/27 商品页配图（图片使用授权待核）
     sort_order: 0
 data_source:
-  kind: crawl
-  origin_url: https://eu.jonessnowboards.com/products/hovercraft-20-snowboard
+  kind: official
+  origin_url: https://www.hasco.co.jp/jonessnowboards/products_list/hovercraft-2-0-3/
 status: published

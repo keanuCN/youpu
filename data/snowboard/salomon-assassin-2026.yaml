@@ -4,8 +4,7 @@ brand: salomon
 model: Assassin
 year: 2026
 title: Salomon Assassin 2026
-one_liner: 面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；25/26 MSRP
-  $649.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥4,680 CNY。
+one_liner: 面向全山日常滑行的多用途板，方向性双向板型与 Rock Out Camber 兼顾浮雪、刻滑和自由式；25/26 MSRP $649.95，按项目参考汇率 1 USD=¥7.2 折算约 ¥4,680 CNY。
 editorial_scores:
   stability: 7.7
   response: 7.8
@@ -117,13 +116,10 @@ specs:
       tailWidth: 313
       sidecutRadii: "8.2"
       setback: 0
-  selectionNotes: 2025/26 官方技术册第 117 页列出 150/153/156/159/162/165 和 158W/163W/168W。W
-    为加宽尺码；板重为各长度目录标称值。结合雪鞋外壳、体重和站姿选择，不把板腰单一参考值套用到所有尺码。
+  selectionNotes: 2025/26 官方技术册第 117 页列出 150/153/156/159/162/165 和 158W/163W/168W。W 为加宽尺码；板重为各长度目录标称值。结合雪鞋外壳、体重和站姿选择，不把板腰单一参考值套用到所有尺码。
   compatibilitySources: https://cdn.shopify.com/s/files/1/0673/9981/1381/files/FW25_digitalcatalogue_techbook.pdf?v=1736124811；https://salomon.jp/pages/snowboard-catalog
 images:
-  - url: "https://cdn.dam.salomon.com/af8e2e75-eeed-4307-9ef2-b3b8010090b3/L4929170\
-      0/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=\
-      f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/b288f7269ace1a28363bd532998d20c1bff2abd5f7098a2c12ca13544ccaa983.webp"
     kind: face
     alt: Salomon Assassin 单板官方主图
     source: Salomon 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

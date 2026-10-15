@@ -12,7 +12,25 @@
       "title": "Men's Mountain Twin Snowboard 2026 | Jones",
       "availabilityNote": "Jones search index retained the official page contents during this audit, including J.26 SKU and technical table, but direct re-open returned HTTP 404. Do not silently replace these historical-season facts with the current J.27 page.",
       "evidence": "Confirms season 2026, J.26 model identity, Mountain Twin/Directional Twin, CamRock, Medium flex, 3D Contour Base, official construction (Master Core, Paulownia/Poplar 1:1; Biax fiberglass; BComp Carbon/Flax stringers; Sintered 8000 base), and brand terrain/personality scales: All-mountain 10/10, Freeride/Powder 8/10, Freestyle/Park 8/10, flex 6/10. Do not map brand scales numerically to local editorial scores.",
-      "officialRegionalPrice": {"amount":579.95,"currency":"CHF","market":"Jones Switzerland storefront","captureDate":"2026-10-02","note":"Regional official listing only; does not establish the CNY 5899 seed as a China-market price."}
+      "officialRegionalPrice": {"amount":579.95,"currency":"CHF","market":"Jones Switzerland storefront","captureDate":"2026-10-02","note":"Official regional listing captured before the historical page returned 404. The previous CNY 5899 seed had no traceable China-market evidence and has been replaced by a dated ECB conversion reference; that conversion is still not a China-market price."}
+    },
+    "japanAuthorizedDistributor2026Price": {
+      "url": "https://www.hasco.co.jp/jonessnowboards/products_list/mens-mountain-twin-2/",
+      "title": "Men’s Mountain Twin | Jones Snowboards 公式",
+      "merchant": "HASCO ENTERPRISES INC.（Jones 日本官方站运营方）",
+      "season": "2025-26",
+      "retrievedAt": "2026-10-15",
+      "listedPrice": 107800,
+      "currency": "JPY",
+      "taxIncluded": true,
+      "listedSizesCm": [149, 151, 153, 154, 156, 157, 159, 160, 162, 163, 165, 168],
+      "ecbRateDate": "2026-10-14",
+      "eurJpy": 177.39,
+      "eurCny": 7.4925,
+      "conversion": "107800 JPY / 177.39 JPY per EUR * 7.4925 CNY per EUR = 4553.20 CNY",
+      "convertedCny": 4553.2,
+      "evidence": "HASCO 的商品页位于 25/26 Products > Snowboarding 目录，列出 Men’s Mountain Twin、JPY 107,800（tax incl.）及 12 个长度；逐码重量、几何、站距和固定器插孔数据与已归档 J.26 表一致。",
+      "limitations": "日本官方地区挂牌价折算，不是中国售价或当前中国报价；网页未展示逐码可购库存。未计跨境运费、进口税及实际汇兑成本。原瑞士官方 CHF 579.95 报价保留为历史地区参考，不覆盖或删除。"
     },
     "boardOfTheWorld": {
       "url": "https://www.boardoftheworld.com/jones-mountain-twin-review/",
@@ -42,6 +60,41 @@
     },
     "notes": "Seed uses only this explicit standard-width row. No values are interpolated from wide sizes or J.27."
   },
+  "sizeTable": {
+    "capturedAt": "2026-10-14",
+    "source": "Jones official J.26 product page retained in search index; direct page re-open currently returns HTTP 404.",
+    "sizeOrder": ["149", "151", "153W", "154", "156W", "157", "159W", "160", "162W", "163", "165W", "168W"],
+    "rows": [
+      {"size":"149","weightKg":2.4,"surfaceAreaDm2":38.1,"contactLengthCm":105.0,"effectiveEdgeCm":115,"noseLengthCm":22.5,"tailLengthCm":21.5,"waistWidthCm":24.4,"frontFootWidthCm":25.5,"backFootWidthCm":25.7,"noseWidthCm":28.5,"tailWidthCm":28.5,"sidecutRadiusM":7.2,"taperCm":0,"referenceStanceCm":52,"setbackCm":0,"riderWeight":"110-160 lbs. / 49-73 kg.","bootSize":"US 7-9 / EU 39.5-41.5"},
+      {"size":"151","weightKg":2.5,"surfaceAreaDm2":39.2,"contactLengthCm":106.2,"effectiveEdgeCm":116,"noseLengthCm":22.9,"tailLengthCm":21.9,"waistWidthCm":24.8,"frontFootWidthCm":25.9,"backFootWidthCm":26.1,"noseWidthCm":28.9,"tailWidthCm":28.9,"sidecutRadiusM":7.4,"taperCm":0,"referenceStanceCm":52,"setbackCm":0,"riderWeight":"110-160 lbs. / 49-73 kg.","bootSize":"US 7-9 / EU 39.5-41.5"},
+      {"size":"153W","weightKg":2.7,"surfaceAreaDm2":41.1,"contactLengthCm":107.8,"effectiveEdgeCm":118,"noseLengthCm":23.1,"tailLengthCm":22.1,"waistWidthCm":25.7,"frontFootWidthCm":26.8,"backFootWidthCm":27.0,"noseWidthCm":29.8,"tailWidthCm":29.8,"sidecutRadiusM":7.5,"taperCm":0,"referenceStanceCm":54,"setbackCm":0,"riderWeight":"120-170 lbs. / 54-77 kg.","bootSize":"US 9.5-11 / EU 42.5-44.5"},
+      {"size":"154","weightKg":2.6,"surfaceAreaDm2":40.4,"contactLengthCm":108.6,"effectiveEdgeCm":119,"noseLengthCm":23.2,"tailLengthCm":22.2,"waistWidthCm":25.1,"frontFootWidthCm":26.2,"backFootWidthCm":26.4,"noseWidthCm":29.2,"tailWidthCm":29.2,"sidecutRadiusM":7.6,"taperCm":0,"referenceStanceCm":54,"setbackCm":0,"riderWeight":"120-170 lbs. / 54-77 kg.","bootSize":"US 7-9 / EU 39.5-41.5"},
+      {"size":"156W","weightKg":2.7,"surfaceAreaDm2":42.2,"contactLengthCm":110.4,"effectiveEdgeCm":120,"noseLengthCm":23.3,"tailLengthCm":22.3,"waistWidthCm":25.9,"frontFootWidthCm":27.1,"backFootWidthCm":27.3,"noseWidthCm":30.1,"tailWidthCm":30.1,"sidecutRadiusM":7.7,"taperCm":0,"referenceStanceCm":56,"setbackCm":0,"riderWeight":"130-180 lbs. / 59-82 kg.","bootSize":"US 9.5-11 / EU 42.5-44.5"},
+      {"size":"157","weightKg":2.8,"surfaceAreaDm2":41.7,"contactLengthCm":111.0,"effectiveEdgeCm":121,"noseLengthCm":23.5,"tailLengthCm":22.5,"waistWidthCm":25.4,"frontFootWidthCm":26.6,"backFootWidthCm":26.8,"noseWidthCm":29.6,"tailWidthCm":29.6,"sidecutRadiusM":7.8,"taperCm":0,"referenceStanceCm":58,"setbackCm":0,"riderWeight":"130-180 lbs. / 59-82 kg.","bootSize":"US 9-11 / EU 41.5-44.5"},
+      {"size":"159W","weightKg":2.9,"surfaceAreaDm2":43.4,"contactLengthCm":113.0,"effectiveEdgeCm":123,"noseLengthCm":23.5,"tailLengthCm":22.5,"waistWidthCm":26.1,"frontFootWidthCm":27.3,"backFootWidthCm":27.5,"noseWidthCm":30.4,"tailWidthCm":30.4,"sidecutRadiusM":7.9,"taperCm":0,"referenceStanceCm":58,"setbackCm":0,"riderWeight":"140-190 lbs. / 64-86 kg.","bootSize":"US 10-12 / EU 43.5-46"},
+      {"size":"160","weightKg":2.9,"surfaceAreaDm2":43.0,"contactLengthCm":113.4,"effectiveEdgeCm":123,"noseLengthCm":23.8,"tailLengthCm":22.8,"waistWidthCm":25.7,"frontFootWidthCm":26.9,"backFootWidthCm":27.1,"noseWidthCm":30.0,"tailWidthCm":30.0,"sidecutRadiusM":8.0,"taperCm":0,"referenceStanceCm":58,"setbackCm":0,"riderWeight":"150-200 lbs. / 67-91 kg.","bootSize":"US 9-11 / EU 41.5-44.5"},
+      {"size":"162W","weightKg":3.0,"surfaceAreaDm2":44.6,"contactLengthCm":115.6,"effectiveEdgeCm":126,"noseLengthCm":23.7,"tailLengthCm":22.7,"waistWidthCm":26.3,"frontFootWidthCm":27.5,"backFootWidthCm":27.7,"noseWidthCm":30.7,"tailWidthCm":30.7,"sidecutRadiusM":8.1,"taperCm":0,"referenceStanceCm":58,"setbackCm":0,"riderWeight":"150-200 lbs. / 67-91 kg.","bootSize":"US 11+ / EU 44.5+"},
+      {"size":"163","weightKg":3.0,"surfaceAreaDm2":44.3,"contactLengthCm":115.8,"effectiveEdgeCm":126,"noseLengthCm":24.1,"tailLengthCm":23.1,"waistWidthCm":26.0,"frontFootWidthCm":27.2,"backFootWidthCm":27.4,"noseWidthCm":30.3,"tailWidthCm":30.3,"sidecutRadiusM":8.2,"taperCm":0,"referenceStanceCm":58,"setbackCm":0,"riderWeight":"160-210 lbs. / 73-95 kg.","bootSize":"US 9.5-11.5 / EU 42.5-45.5"},
+      {"size":"165W","weightKg":3.2,"surfaceAreaDm2":46.1,"contactLengthCm":117.8,"effectiveEdgeCm":128,"noseLengthCm":24.1,"tailLengthCm":23.1,"waistWidthCm":26.7,"frontFootWidthCm":27.9,"backFootWidthCm":28.1,"noseWidthCm":31.1,"tailWidthCm":31.1,"sidecutRadiusM":8.3,"taperCm":0,"referenceStanceCm":58,"setbackCm":0,"riderWeight":"170-220 lbs.+ / 77-100 kg.+","bootSize":"US 11+ / EU 44.5+"},
+      {"size":"168W","weightKg":3.3,"surfaceAreaDm2":47.3,"contactLengthCm":120.4,"effectiveEdgeCm":130,"noseLengthCm":24.3,"tailLengthCm":23.3,"waistWidthCm":26.9,"frontFootWidthCm":28.0,"backFootWidthCm":28.2,"noseWidthCm":31.4,"tailWidthCm":31.4,"sidecutRadiusM":8.5,"taperCm":0,"referenceStanceCm":58,"setbackCm":0,"riderWeight":"170-220 lbs.+ / 77-100 kg.+","bootSize":"US 11+ / EU 44.5+"}
+    ],
+    "notes": "The official page gives board specs in cm and kg; seed converts lengths to mm and kg to g. 3D nose/tail widths are recorded at the source's displayed 0.1 cm precision."
+  },
+  "priceConversion": {
+    "sourceUrl": "https://eu.jonessnowboards.com/de/products/mens-mountain-twin-snowboard-2026?variant=43731143983239",
+    "sourceType": "Jones official Switzerland storefront",
+    "capturedAt": "2026-10-02",
+    "listedAmount": 579.95,
+    "listedCurrency": "CHF",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "exchangeRateDate": "2026-10-02",
+    "chfPerEur": 0.9279,
+    "cnyPerEur": 7.5259,
+    "conversion": "579.95 / 0.9279 * 7.5259 = 4703.79 CNY",
+    "convertedCny": 4703.79,
+    "availabilityAtCapture": "商品页当时保留 J.26 SKU 与 CHF 579.95；目前该历史 URL 返回 404，当前库存不可核实。",
+    "limitations": "这是 Jones 瑞士地区官方挂牌价的历史人民币折算参考，不是中国售价或当前在售价格；未计地区税费差异、运费、跨境配送和进口费用。ECB 参考汇率不是实际交易汇率。"
+  },
   "scoreReview": {
     "previous": {"stability":8,"response":7.5,"float":7.5,"park":6.5,"forgiveness":6.5,"value":8},
     "current": {"stability":8,"response":7.5,"float":7.5,"park":7.5,"forgiveness":7,"value":8},
@@ -53,14 +106,14 @@
       "stability": "Retained 8 but medium confidence: solid for resort/jump approaches, with tip chatter at very high speeds and less damping than the Pro.",
       "response": "Retained 7.5: medium-to-quick turn initiation and good grip, but external scales differ and not all reviews are exact J.26 samples.",
       "float": "Retained 7.5, low-to-medium confidence: reviews call it usable/moderate rather than a dedicated powder board; true powder exposure varies by test.",
-      "value": "Retained 8, low confidence: CNY 5899 lacks a verified China-market price source; US/European regional prices are not substitutes."
+      "value": "Retained 8, low confidence: the untraceable CNY 5899 seed was replaced with the dated CNY 4553.20 conversion of the Jones Japan official 25/26 JPY 107800 tax-included listing. This is a Japan-region reference, not a China-market price or confirmed in-stock quote; China pricing remains unknown. The earlier Swiss CHF 579.95 conversion is retained as a historical comparison."
     },
     "mappingPolicy": "No external overall scores, sub-scores, or Jones brand terrain/flex bars are linearly converted to Youpu's six dimensions."
   },
   "unresolved": [
     "The official J.26 product URL currently returns 404; preserve the captured search-index evidence and recheck if Jones republishes a historical 2026 page/catalog.",
     "The exact manufacturing year of the Board of the World physical 157 sample is not stated beyond the review's 2025-26 context and its reviewer note identifying the board as 2025.",
-    "No verified China-market price, dated local retail quote, or price-type metadata.",
+    "No verified China-market price or dated local retail quote; the recorded CNY 4703.79 is only a historical conversion of an official Swiss CHF quote, and the original J.26 page now returns 404.",
     "AI placeholder image entries have been removed from the seed; replace with licensed or original images before launch.",
     "Season-specific warranty term was not verified; existing warranty field is retained as unresolved rather than used in scoring."
   ]

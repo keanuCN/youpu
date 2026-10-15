@@ -10,6 +10,7 @@ price:
   max: 4320
   currency: CNY
 specs:
+  seasonEvidence: Jones 官方商品页当前变体货号为 J.27.SNM.MTN.XX.149.1（J.27 年款代码）且页面标注 2027，归档为 2026/27（2027 款）；此代码不证明首次上市年份或实时库存。
   length: 157
   weight: 2800
   effectiveEdge: 1210
@@ -55,7 +56,7 @@ editorial_scores:
   forgiveness: 7.2
   value: 7.5
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.MTN-gallery-1_cdsmc7.webp?v=1782443870&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/0e16c4f2dea9727abf5acc606e85d3962bf2251671f588fa395bde16ec6346d6.webp"
     kind: face
     alt: Jones Mountain Twin 2027 官方产品图
     source: Jones 官方产品页图片（本地演示，版权待核）

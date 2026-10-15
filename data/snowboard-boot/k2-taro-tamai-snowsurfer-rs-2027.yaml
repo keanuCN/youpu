@@ -5,6 +5,10 @@ model: "Taro Tamai Snowsurfer RS"
 year: 2027
 title: "K2 Taro Tamai Snowsurfer RS 2027"
 one_liner: "双区 BOA、F.O.R.M. Wrap 与可拆舌片支撑，采用偏柔软的冲浪式脚感。"
+price:
+  min: 4484.50
+  max: 4484.50
+  currency: CNY
 specs:
   lacingSystem: "双区 H5 Coiler BOA，独立调节鞋面上下区域"
   flex: "偏柔软、冲浪式脚感；两片可拆舌片支撑可调整内外侧弯曲"
@@ -41,13 +45,16 @@ specs:
   fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。
   heatMolding: 官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。
   compatibilitySources: https://k2snow.com/en-us/p/taro-tamai-snowsurfer-rs-mens-snowboard-boot-kb261654?color=black-brown
-  priceCheckedAt: 2026-10-12
+  priceCheckedAt: 2026-10-14
   officialPrice: USD 669.95
-  priceMarket: 原币 USD；来源商店 k2snow.com
-  priceSource: https://k2snow.com/en-sg/p/taro-tamai-snowsurfer-rs-mens-snowboard-boot-kb261654
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  regionalListPrice: USD 669.95
+  priceMarket: K2 美国官方商店；2027 男款商品目录
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  seasonEvidence: K2 美国官方男款雪鞋目录将 Taro Tamai Snowsurfer RS 列为 2027 款，并显示 USD 669.95；对应档案商品型号为 RS 男款。
+  priceSource: https://k2snow.com/en-us/c/snowboard-boots/mens-snowboard-boots/
+  priceStatus: 2026-10-14 K2 美国官方 2027 男款商品目录标价 USD 669.95，按 ECB 2026-10-13 EUR/USD 1.1188、EUR/CNY 7.4890 折算为 CNY 4,484.50。仅为美国官方店折算参考，不是中国售价；汇率仅供参考，税费、配送及进口费用未计。
 images:
-  - url: "https://cdn11.bigcommerce.com/s-ncrhbujr7m/product_images/attribute_rule_images/4575552_source_1780349255.jpg"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/37496de78c1c70977796987992759bb1c27e9667f91d6d0d3475a1115b9ef1f7.webp"
     kind: face
     alt: K2 Taro Tamai Snowsurfer RS 2027 黑棕款官方雪鞋商品图
     source: K2 官方商品页（图片使用授权待核）
@@ -55,4 +62,11 @@ images:
 data_source:
   kind: official
   origin_url: https://k2snow.com/en-us/p/taro-tamai-snowsurfer-rs-mens-snowboard-boot-kb261654?color=black-brown
+# 编辑暂估，非社区实测；评分口径见 docs/单板雪鞋编辑评分口径-2026-10-15.md
+editorial_scores:
+  fit: 7.7
+  support: 6.2
+  warmth: 8.2
+  convenience: 8.9
+  value: 5.0
 status: published

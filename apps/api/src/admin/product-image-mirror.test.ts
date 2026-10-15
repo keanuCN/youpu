@@ -1,9 +1,18 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { assertLocalMirrorDatabase, imageSourceReferer, isApprovedSourceImageUrl, mirrorObjectKey, shouldRetryImageFetch } from './product-image-mirror';
+import { imageSourceFailureReason } from './product-image-source';
 
 const cloneUrl = 'postgresql://youpu:secret@localhost:5432/youpu_prod_sync_20260930_113514';
 const approvedHosts = new Set(['cdn.shopify.com']);
+
+test('classifies source failures without exposing private query strings or request details', () => {
+  const source = 'https://cdn.shopify.com/file.jpg?token=secret';
+  assert.equal(imageSourceFailureReason(new Error('Image source returned HTTP 404'), source), '源图返回 HTTP 404（cdn.shopify.com）');
+  assert.equal(imageSourceFailureReason(Object.assign(new Error('secret'), { name: 'TimeoutError' }), source), '源图读取超时（cdn.shopify.com）');
+  assert.equal(imageSourceFailureReason(new Error('Unsupported image format'), source), '图片格式不受支持（cdn.shopify.com）');
+  assert.ok(!imageSourceFailureReason(new Error('secret request details'), source).includes('secret'));
+});
 
 test('accepts only the named production-clone database on loopback', () => {
   assert.equal(assertLocalMirrorDatabase(cloneUrl), 'youpu_prod_sync_20260930_113514');

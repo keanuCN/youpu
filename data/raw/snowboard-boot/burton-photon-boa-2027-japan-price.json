@@ -1,0 +1,128 @@
+{
+  "slug": "burton-photon-boa-2027",
+  "model": "Burton Photon BOA",
+  "season": "2026/27",
+  "productId": "150861",
+  "variantCode": "27WIN-150861",
+  "market": "Burton Japan official store",
+  "capturedAt": "2026-10-15",
+  "chinaRetailerListing": {
+    "url": "https://detail.youzan.com/show/goods?alias=1yaa3wlsebfamck&from_source=gbox_seo",
+    "merchant": "SPADERS 黑桃滑雪俱乐部微信店铺（微信认证）",
+    "retrievedAt": "2026-10-15",
+    "productTitle": "26/27 BURTON 雪鞋 PHOTON BOA BLACK",
+    "listedPrice": { "amount": 3998, "currency": "CNY" },
+    "shippingDisplayed": "CNY 0–200",
+    "purchaseActionDisplayed": "立即购买",
+    "manufacturerCrossCheck": {
+      "url": "https://jp.burton.com/ja-jp/products/mens-burton-photon-boa-snowboard-boots-150861",
+      "productId": "150861",
+      "variantCode": "27WIN-150861",
+      "season": "2026/27",
+      "colorMatch": "Burton 官方页面将 Black 列为 150861 的颜色选项。"
+    },
+    "limitations": [
+      "零售页面没有 Burton 货号、尺码选项或库存明细；型号、颜色和雪季与官方 150861 商品相符，但没有共享 SKU 可用于确认具体变体。",
+      "这是中国零售商挂牌价，不是 Burton 官方店价格或已核实成交价。",
+      "页面显示的运费为范围，实际金额需以结账页为准。"
+    ],
+    "decision": "种子主参考采用 CNY 3,998 中国零售挂牌价；日本官方 JPY 69,300 及折算 CNY 2,933.63 保留为独立地区对照，不标称中国官方价。"
+  },
+  "chinaRetailerSearchRecheck": {
+    "checkedAt": "2026-10-15",
+    "jdSearchSource": "https://www.jd.com/brand/1318727c33f31f325bd1.html",
+    "observedListings": [
+      {
+        "title": "BURTON 伯顿官方男士 Photon BOA 滑雪鞋 150861",
+        "variantSku": "15086109400",
+        "indexedSizes": ["40.5", "41", "42"],
+        "seasonShown": false
+      },
+      {
+        "title": "BURTON 伯顿官方 26-27 雪季新品男士 Photon BOA 滑雪鞋 150861",
+        "variantSku": "1508616E7MWD",
+        "indexedSize": "40",
+        "seasonShown": "26/27"
+      }
+    ],
+    "detailPageCheck": {
+      "productUrl": "https://item.jd.com/10210830019996.html",
+      "result": "京东商品页只返回浏览器兼容提示；无法读取售价、卖家资料、变体库存或 SKU 详情。"
+    },
+    "latestIndexedListingCheck": {
+      "checkedAt": "2026-10-15",
+      "source": "https://www.jd.com/jiage/1318ae1d7a8b48a47346.html",
+      "title": "BURTON伯顿官方26-27雪季新品男士 PHOTON BOA 滑雪鞋缓震150861 1508616E7MWD 40",
+      "articleNumber": "150861",
+      "variantSku": "1508616E7MWD",
+      "indexedSize": "40",
+      "seasonShown": "26/27",
+      "directProductUrl": "https://item.jd.com/10230218419540.html",
+      "directPageResult": "京东商品页只返回浏览器兼容提示；无法读取售价、卖家资料或库存。"
+    },
+    "indexedVariantRecheck20261015": {
+      "sources": [
+        "https://www.jd.com/brand/13181b37c6a7208bfadb.html?catID=17348&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_redissale_desc",
+        "https://www.jd.com/jiage/1318e90a75d8a7480c0a.html",
+        "https://www.jd.com/xinghao/1318ae1d7a8b48a47346.html?catID=17348&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_totalsales15_desc"
+      ],
+      "articleNumber": "150861",
+      "variantSku": "1508616E7MWD",
+      "seasonTitle": "26-27",
+      "indexedEuSizeLabels": ["40", "41", "41.5", "42", "42.5", "43.5"],
+      "result": "多个京东品牌、价格和型号列表再次收录同款货号与不同尺码标题；索引没有提供可核对的人民币金额。尺码标签按页面标题原样记录，不换算为 Mondo 或视为库存。",
+      "detailPageLimitation": "商品详情仅返回浏览器兼容提示，不能确认卖家、变体关系、实际尺码选项、价格或库存。"
+    },
+    "decision": "京东搜索索引增加了 150861 的国内尺码/SKU 线索，但不含可核验的 CNY 价格；26/27 中国零售挂牌仍以 SPADERS 微信店铺 CNY 3,998 作为型号级参考，不升级为具体尺码/SKU 价格。"
+  },
+  "japanWideRetailVariantRecheck": {
+    "checkedAt": "2026-10-15",
+    "source": "https://store.shopping.yahoo.co.jp/tamaya-group/rc-it51a1weiery-oycr.html",
+    "crossCheckSource": "https://shop.a-bony.com/products/rc_it51a1weiery_hyau",
+    "merchant": "TAMAYA-GROUP Yahoo!店（商品页说明其实体店 A-BONY 为 BURTON 正规取扱店）",
+    "productTitle": "26/27 Men's Photon BOA Snowboard Boots Wide #CHINCHILLA GRAY [150861]",
+    "styleNumber": "150861",
+    "season": "2026/27",
+    "fit": "Wide",
+    "color": "Chinchilla Gray",
+    "listedPrice": {"amount": 69300, "currency": "JPY"},
+    "listedSizesMondoCm": [25, 25.5, 26, 26.5, 27, 27.5, 28, 28.5, 29],
+    "availabilitySnapshot": {"25": "可选", "25.5": "可选", "26": "残量较少", "26.5": "缺货", "27": "残量较少", "27.5": "残量较少", "28": "可选", "28.5": "可选", "29": "缺货"},
+    "crossCheckDetails": {
+      "aBonyPagePriceJPY": 69300,
+      "aBonyPageSelectedSizesCm": [26, 26.5, 27, 27.5],
+      "aBonyPageStockText": "残り1点",
+      "yahooPageProductCode": "193177357159",
+      "yahooPageStyleAndSeasonMatch": true
+    },
+    "limitations": [
+      "这是日本零售商商品和尺码/库存快照，不是中国人民币售价；JPY 69,300 与日本官方商品页挂牌价相同。",
+      "尺码库存会随时间变化，不等于品牌全球尺码范围，也不代表当前结账可售。",
+      "零售商品标题和款号匹配 2026/27 Photon BOA Wide，但品牌页面仍未发布型号专属鞋楦宽度或脚背容积。"
+    ],
+    "decision": "作为精确 26/27 Wide 变体的日本零售交叉记录，保留 JPY 标价与瞬时尺码选项；不覆盖中国 CNY 3,998 型号级挂牌参考，不将区域库存写入品牌全球尺码表。"
+  },
+  "listedPrice": {
+    "amount": 69300,
+    "currency": "JPY",
+    "source": "https://jp.burton.com/ja-jp/products/mens-burton-photon-boa-snowboard-boots-150861"
+  },
+  "convertedReference": {
+    "amount": 2933.63,
+    "currency": "CNY",
+    "method": "JPY 69,300 / EUR-JPY 176.91 * EUR-CNY 7.4890",
+    "exchangeRateDate": "2026-10-13",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan official-store reference only; not a mainland China selling price.",
+      "Shipping, import charges, and tax treatment at checkout are not included or confirmed.",
+      "Price and size availability can change; check the selected variant at checkout."
+    ]
+  },
+  "observedOptions": {
+    "widths": ["Regular", "Wide"],
+    "mondoSizes": [25, 25.5, 26, 26.5, 27, 27.5, 28, 28.5, 29, 29.5, 30, 31, 32, 33],
+    "soldOutAtCapture": [29, 32, 33]
+  },
+  "notes": "Burton Japan page identifies product 150861 and variant code 27WIN-150861. The availability snapshot is transient and does not establish stock for every color/width combination. ECB reference rates are informational, not transaction rates."
+}

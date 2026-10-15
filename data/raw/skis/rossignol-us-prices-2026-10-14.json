@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-10-14",
+  "market": "United States",
+  "currency": "USD",
+  "exchangeRate": {
+    "source": "European Central Bank euro foreign exchange reference rates",
+    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-14",
+    "eurUsd": 1.1195,
+    "eurCny": 7.4925,
+    "usdCnyCrossRate": 6.6927199643,
+    "formula": "EUR/CNY divided by EUR/USD; USD list price multiplied by cross rate; rounded to CNY 0.01"
+  },
+  "caveats": [
+    "Converted amounts are US-market reference prices, not prices in China.",
+    "US sales tax, cross-border shipping, import duties, and payment exchange costs are excluded.",
+    "The US Forza 60 TI product page itself does not identify a season; subsequent Rossignol Slovakia official e-shop evidence identifies the RAOPS01 + NX 12 KONECT package as Model 26/27, and the seed records that regional confirmation.",
+    "Binding configuration follows the official product page: Soul 102 and Hero Master LT R22 are skis without bindings; Hero Elite LT TI is listed as a system ski with a selectable SPX 14 KONECT GW binding; Forza 60 TI is listed as a system ski with selectable no-binding or SPX 12 KONECT GW configurations. Check the selected option at checkout."
+  ],
+  "products": [
+    {
+      "seed": "data/skis/rossignol-soul-102-2027.yaml",
+      "model": "Soul 102",
+      "season": "2026/27",
+      "seasonEvidence": "Official page identifies NEW COLLECTION FW2627.",
+      "sku": "RAPMR03000",
+      "officialPriceUsd": 799.95,
+      "convertedPriceCny": 5353.84,
+      "configuration": "Skis without bindings",
+      "priceNote": "Official page says the product is excluded from site promotions.",
+      "source": "https://www.rossignol.com/us-en/soul-102-alpine-skis-RAPMR03000.html"
+    },
+    {
+      "seed": "data/skis/rossignol-hero-master-lt-r22-2027.yaml",
+      "model": "Hero Master LT R22",
+      "season": "2026/27",
+      "seasonEvidence": "Official page identifies NEW COLLECTION FW2627.",
+      "sku": "RAPHE01000",
+      "officialPriceUsd": 1429.95,
+      "convertedPriceCny": 9570.25,
+      "configuration": "Skis without bindings",
+      "priceNote": "Official page says the product is excluded from site promotions.",
+      "source": "https://www.rossignol.com/us-en/hero-master-lt-r22-alpine-skis-RAPHE01000.html"
+    },
+    {
+      "seed": "data/skis/rossignol-hero-elite-lt-ti-2027.yaml",
+      "model": "Hero Elite LT TI",
+      "season": "2026/27",
+      "seasonEvidence": "Official page identifies NEW COLLECTION FW2627.",
+      "sku": "RAPSE01000",
+      "officialPriceUsd": 1349.95,
+      "convertedPriceCny": 9034.84,
+      "configuration": "System ski page with SPX 14 KONECT GW binding option.",
+      "source": "https://www.rossignol.com/us-en/hero-elite-lt-ti-alpine-skis-RAPSE01000.html"
+    },
+    {
+      "seed": "data/skis/rossignol-forza-60-ti-2027.yaml",
+      "model": "Forza 60 TI KONECT",
+      "season": "2026/27",
+      "seasonEvidence": "US page omits season. Rossignol Slovakia official e-shop lists matching RAOPS01 + NX 12 KONECT as Model 26/27; see data/raw/skis/rossignol/forza-60-ti-2026-27.json.",
+      "sku": "RAOPS01000",
+      "officialPriceUsd": 999.95,
+      "convertedPriceCny": 6692.39,
+      "configuration": "System ski page offers no-binding or SPX 12 KONECT GW configuration; verify selected configuration at checkout.",
+      "source": "https://www.rossignol.com/us-en/rossignol-forza-60-ti-skis-konect-RAOPS01000.html"
+    },
+    {
+      "seed": "data/skis/rossignol-experience-76-2026.yaml",
+      "model": "Experience 76 Xpress",
+      "season": "2025/26 archive label; current US product page does not identify season",
+      "sku": "RAMFT04000",
+      "officialPriceUsd": 479.95,
+      "convertedPriceCny": 3212.17,
+      "configuration": "Page defaults to skis without bindings; XPRESS 10 GW B83 option is shown as included in price. Confirm selected configuration at checkout.",
+      "priceNote": "US-market reference only; US tax, cross-border shipping, and import costs excluded.",
+      "source": "https://www.rossignol.com/us-en/experience-76-xpress-RAMFT04000.html"
+    }
+  ]
+}

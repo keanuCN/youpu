@@ -113,6 +113,12 @@ export class CatalogService {
 
     const specSchema = product.category.specSchema ? parseSpecSchema(product.category.specSchema) : null;
     const specs = (product.specs ?? {}) as Record<string, unknown>;
+    const publicSpecSchema = specSchema
+      ? { ...specSchema, fields: specSchema.fields.filter((field) => field.display !== false) }
+      : null;
+    const publicSpecs = Object.fromEntries(Object.entries(specs).filter(([key]) =>
+      publicSpecSchema?.fields.some((field) => field.key === key),
+    ));
     const normalizedPrice = normalizeStoredPrice(product.priceMin, product.priceMax, product.priceCurrency);
 
     return {
@@ -148,12 +154,12 @@ export class CatalogService {
         alt: img.alt,
         source: img.source,
       })),
-      specs,
+      specs: publicSpecs,
       /** 前端参数表 / 客观分析区按此动态渲染（新增品类零改动） */
-      specSchema,
+      specSchema: publicSpecSchema,
       /** 参数表展示行：schema 顺序 + 人类可读格式化 + 分组 */
-      specRows: specSchema
-        ? specSchema.fields.map((field) => ({
+      specRows: publicSpecSchema
+        ? publicSpecSchema.fields.map((field) => ({
             key: field.key,
             label: field.label,
             group: field.group,
@@ -225,6 +231,7 @@ export function serializeProductListItem(row: CatalogProductListRow): ProductLis
     ratingCount: row.ratingCount,
     favoriteCount: row.favoriteCount,
     composite: schema ? computeComposite(schema, editorialScores) : null,
+    editorialScores,
     brand: row.brand,
     categorySlug: row.category.slug,
     // §13 防盗爬：列表页不返回全量 specs，只带非 nested 的标量字段
@@ -251,6 +258,7 @@ function pickListSpecs(schema: SpecSchema | null, raw: unknown): Record<string, 
   if (!schema) return {};
   const out: Record<string, unknown> = {};
   for (const field of schema.fields) {
+    if (field.display === false) continue;
     if (field.type === 'nested') continue;
     if (specs[field.key] !== undefined) out[field.key] = specs[field.key];
   }
@@ -262,7 +270,7 @@ function buildHighlights(schema: SpecSchema | null, raw: unknown): Array<{ key: 
   const specs = (raw ?? {}) as Record<string, unknown>;
   if (!schema) return [];
   return schema.fields
-    .filter((field) => field.filter !== false && field.type !== 'nested' && specs[field.key] !== undefined)
+    .filter((field) => field.display !== false && field.filter !== false && field.type !== 'nested' && specs[field.key] !== undefined)
     .slice(0, 4)
     .map((field) => ({ key: field.key, label: field.label, value: formatSpecValue(field, specs[field.key]) }));
 }

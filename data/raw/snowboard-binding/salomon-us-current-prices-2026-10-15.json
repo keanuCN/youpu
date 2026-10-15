@@ -1,0 +1,30 @@
+{
+  "sourceType": "official-current-product-price-snapshot",
+  "checkedAt": "2026-10-15",
+  "market": "Salomon United States",
+  "currency": "USD",
+  "exchangeRate": {
+    "date": "2026-10-14",
+    "eurUsd": 1.1195,
+    "eurCny": 7.4925,
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html"
+  },
+  "conversionFormula": "USD / 1.1195 * 7.4925; rounded to 2 decimal places",
+  "products": [
+    {"slug":"salomon-district-binding-2026","model":"DISTRICT","officialPriceUsd":299.95,"referencePriceCny":2007.48,"source":"https://www.salomon.com/en-us/product/district-li1289"},
+    {"slug":"salomon-district-pro-binding-2026","model":"DISTRICT PRO","officialPriceUsd":319.95,"referencePriceCny":2141.34,"source":"https://www.salomon.com/en-us/product/district-pro-li1290"},
+    {"slug":"salomon-edb-prime-binding-2026","model":"EDB PRIME","officialPriceUsd":279.95,"referencePriceCny":1873.63,"source":"https://www.salomon.com/en-us/product/edb-prime-li8710"},
+    {"slug":"salomon-highlander-binding-2026","model":"HIGHLANDER","officialPriceUsd":379.95,"referencePriceCny":2542.90,"source":"https://www.salomon.com/en-us/product/highlander-li8702"},
+    {"slug":"salomon-hologram-binding-2026","model":"HOLOGRAM","officialPriceUsd":359.95,"referencePriceCny":2409.04,"source":"https://www.salomon.com/en-us/product/hologram-li5326"},
+    {"slug":"salomon-pact-binding-2026","model":"PACT","officialPriceUsd":159.95,"referencePriceCny":1070.50,"source":"https://www.salomon.com/en-us/product/pact-li6862"},
+    {"slug":"salomon-rhythm-binding-2026","model":"RHYTHM","officialPriceUsd":189.95,"referencePriceCny":1271.28,"source":"https://www.salomon.com/en-us/product/rhythm-li3345"},
+    {"slug":"salomon-edb-binding-2026","model":"EDB","articleReference":"L49304400","officialPriceUsd":249.95,"referencePriceCny":1672.85,"source":"https://www.salomon.com/en-us/product/edb-li6675/L49304400"}
+  ],
+  "limitations": [
+    "Salomon product pages show current US official list prices but do not directly identify the season for these prices; this snapshot does not prove the 2026 season.",
+    "Converted values are regional reference prices, not Chinese retail prices.",
+    "US sales tax, payment conversion costs, international shipping, duties, and import taxes are excluded.",
+    "Prices may change after the checked date; recheck the official pages before purchase."
+  ],
+  "catalogPage": "https://www.salomon.com/en-us/c/men/winter-equipment/snowboard/bindings"
+}

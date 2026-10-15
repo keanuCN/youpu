@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-15",
+  "brand": "Nitro",
+  "season": "2026/27 (2027 models)",
+  "evidenceScope": "Nitro product-page comfort and response scores plus manufacturer audience/use-case claims. Scores are brand-reported, not independent field-test scores.",
+  "products": {
+    "nitro-phantom-plus-binding-2027": {
+      "source": "https://www.nitrosnowboards.com/collections/all-26-27/products/phantom-bindings-3",
+      "title": "The 2027 Nitro Phantom+ Bindings - The Future of Precision Freeriding",
+      "brandComfortScoreOutOf10": 10,
+      "brandResponseScoreOutOf10": 9,
+      "manufacturerAudience": "Intermediate to expert riders",
+      "manufacturerUseCases": ["aggressive carving", "technical terrain", "high-speed freeride"],
+      "otherManufacturerClaims": ["4 mm heel rise", "Air Plus Dampening", "HYPER Foam", "3-degree canted footbed"],
+      "limits": ["Ratings are manufacturer claims, not independent tests.", "The product page does not provide a test protocol for the scores."]
+    },
+    "nitro-team-binding-2027": {
+      "source": "https://www.nitrosnowboards.com/products/team-bindings-1?variant=57277688840523",
+      "title": "The 2027 Nitro Team Bindings - Your Favorite Snowboarder's Favorite Binding",
+      "brandComfortScoreOutOf10": 9,
+      "brandResponseScoreOutOf10": 7,
+      "manufacturerAudience": "Intermediate to advanced riders",
+      "manufacturerUseCases": ["carving", "freestyle", "powder", "everyday resort riding"],
+      "otherManufacturerClaims": ["all-mountain", "Air Dampening", "3-degree canted footbed"],
+      "limits": ["Ratings are manufacturer claims, not independent tests.", "The product page does not provide a test protocol for the scores."]
+    }
+  }
+}

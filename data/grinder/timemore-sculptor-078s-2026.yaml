@@ -16,7 +16,12 @@ specs:
   voltage: 110V
   speedAdjustment: true
   fineRetentionReduction: true
-images: []
+images:
+  - url: https://www.timemore.com/cdn/shop/files/078S.jpg?v=1713171847
+    kind: face
+    alt: TIMEMORE Sculptor 078S 电动磨豆机
+    source: TIMEMORE 官方 Sculptor 系列商品页（展示授权状态待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.xn--14us3q.tw/products/泰摩咖啡-雕刻家078s-電動磨豆機-黑色

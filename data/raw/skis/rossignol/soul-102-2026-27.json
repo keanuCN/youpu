@@ -3,6 +3,78 @@
   "model": "Soul 102",
   "season": "2026-27",
   "retrievedAt": "2026-10-10",
+  "officialCanadianPriceCrossCheck20261015": {
+    "source": "https://www.rossignol.com/ca-en/soul-102-alpine-skis-RAPMR03000.html",
+    "checkedAt": "2026-10-15",
+    "region": "Canada",
+    "styleCode": "RAPMR03000",
+    "productConfiguration": "Ski only; no bindings",
+    "listedPrice": {"amount": 899.95, "currency": "CAD"},
+    "displayedSizeOptionsCm": [164, 172, 180],
+    "convertedPriceReference": {
+      "amount": 4236.01,
+      "currency": "CNY",
+      "rateDate": "2026-10-14",
+      "calculation": "899.95 CAD × (7.4925 CNY/EUR ÷ 1.5918 CAD/EUR) = 4,236.01 CNY",
+      "eurCad": 1.5918,
+      "eurCny": 7.4925,
+      "ecbSource": "https://www.ecb.europa.eu/stats/shared/pdf/eurofxref.pdf?f044e4859d04a42d307217f8e29c6692="
+    },
+    "limitations": "Canadian official-market price converted to CNY for comparison only; not a China-market offer or payment amount. Page size controls do not prove stock or successful checkout; shipping, taxes and cross-border costs are excluded."
+  },
+  "latestWeightRecheck": {
+    "checkedAt": "2026-10-15",
+    "officialSpanishPage": {
+      "url": "https://www.rossignol.com/es-es/esqu%C3%ADs-alpinos-soul-102-RAPMR03000.html",
+      "styleCode": "RAPMR03000",
+      "season": "FW 26/27",
+      "tableLabel": "Peso esquíes (kg/par)",
+      "tableValuesByLength": {"156": 1.75, "164": 1.85, "172": 1.95, "180": 2.05, "188": 2.15},
+      "referenceLabel": "2.05 Kg / 1/2 Pair (180cm)",
+      "decision": "精确货号的官方页面内部标签冲突：逐码表写 kg/par，但 180 cm 单码参考值明确写每半双。不能将表格数值直接发布为整双重量。"
+    },
+    "relatedWorkbookCandidate": {
+      "url": "https://irp.cdn-website.com/55899fe3/files/uploaded/CATALOGO_ROSSIGNOL_SPECIALIST_FW2627.pdf",
+      "document": "Rossignol Specialist Workbook Fall/Winter 2026–2027",
+      "sourceProvenance": "PDF hosted on a third-party CDN; publisher identity and authorization as a manufacturer document are unverified.",
+      "modelAndCode": "SAVAGE FREE (OPEN), RAPMR04",
+      "lengthsCm": [156, 164, 172, 180, 188],
+      "sidecutMm": [[135, 100, 125], [135, 101, 125], [135, 102, 125], [135, 102, 125], [135, 104, 125]],
+      "radiiM": [14, 15, 16, 17, 18],
+      "weightsKgPerPairWithoutBindings": [3.5, 3.7, 3.9, 4.1, 4.3],
+      "mappingLimit": "规格和每个长度的重量与 Soul 102 RAPMR03000 页面吻合，但名称与货号不同；该目录条目属于 Savage Free/开放式固定器配置，未找到 Rossignol 将它与 RAPMR03000 明确映射为同一 SKU。",
+      "decision": "仅作为第三方托管目录中的同平台型号重量线索；因来源身份和 SKU 映射均未验证，不转录为 Soul 102 的逐码重量或原厂证据。"
+    },
+    "conclusion": "Rossignol 精确货号官方页确认存在单位冲突：180 cm 参考值为 2.05 kg/半双，而逐码表将相同数字列在 kg/pair 栏。第三方托管目录中的同平台候选与其余长度的双倍数值相合，但发布方身份和 RAPMR03000 映射未核实，不能据此定论。当前种子继续不填逐码重量，等待该精确货号的原厂整双重量表或品牌澄清。"
+  },
+  "officialRegionalWeightCrossCheck20261016": {
+    "checkedAt": "2026-10-16",
+    "officialCzechPage": {
+      "url": "https://www.rossignol.com/cz-en/soul-102-alpine-skis-RAPMR03000.html",
+      "styleCode": "RAPMR03000",
+      "season": "FW 26/27",
+      "tableLabel": "Ski weight (kg/pair)",
+      "weightsByLengthKg": {"156": 1.8, "164": 1.9, "172": 2.0, "180": 2.1, "188": 2.2},
+      "decision": "相同货号和雪季的官方英文区域页面仍将 1.8–2.2 kg 标为每双；没有解释该数字是否实际按单只计。"
+    },
+    "officialAustrianPage": {
+      "url": "https://www.rossignol.com/at-de/soul-102-alpinski-RAPMR03000.html",
+      "styleCode": "RAPMR03000",
+      "season": "FW 26/27",
+      "referenceLengthCm": 180,
+      "referenceWeight": "2.05 Kg/ 1/2 Pair (180cm)",
+      "decision": "同一官方货号的奥地利页面将 180 cm 参考重量明确标作半双，与逐码表的 kg/pair 标签存在单位口径冲突。"
+    },
+    "independentRetailerCrossCheck": {
+      "url": "https://www.rei.com/product/C11605/rossignol-soul-102-skis-20262027",
+      "retailer": "REI Co-op",
+      "season": "2026/27",
+      "referenceLengthCm": 180,
+      "weight": "9 lb 7.68 oz per pair (约 4.30 kg/pair)",
+      "decision": "零售商明示 180 cm 每双约 4.30 kg，数量级接近官方 2.05 kg/半双，但不能裁定制造商逐码表其他长度的重量，也不能消除官方 180 cm 2.05/2.1 kg 单只数值差。"
+    },
+    "conclusion": "多区域证据支持官方逐码表的 kg/pair 标签可能存在单只/双只口径问题，但官方 180 cm 参考值为 2.05 kg/半双、捷克逐码表为 2.1 kg/pair、REI 为约 4.30 kg/pair，仍有数值与标注差异。继续不将重量写入种子，等待 Rossignol 对精确货号的书面澄清或可直接对应的原厂每双重量表。"
+  },
   "seedFile": "data/skis/rossignol-soul-102-2027.yaml",
   "officialProductPage": {
     "url": "https://www.rossignol.com/us-en/soul-102-alpine-skis-RAPMR03000.html",

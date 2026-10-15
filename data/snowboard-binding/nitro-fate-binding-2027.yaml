@@ -4,13 +4,23 @@ brand: nitro
 model: Fate
 year: 2027
 title: Nitro Fate 女款 2027
+price:
+  min: 2245.95
+  max: 2245.95
+  currency: CNY
 specs:
+  seasonEvidence: Nitro 官方 26/27 固定器集合页列出 Fate 女款固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27
   terrain:
     - all-mountain
     - freestyle
   entrySystem: strap
   mountingSystem: Universal Mini Disc；兼容 2x4 与 Channel
   bindingSizeGuide: Nitro 女款官方尺码：S US 女 4–7.5 / MP 21–24.5 / EU 33.5–38；S/M US 女 6–11 / MP 23–28 / EU 36–43。区间有重叠，试穿确认。
+  sizeChart:
+    - { size: "S", usWomen: "4–7.5", mondo: "21–24.5", eu: "33.5–38" }
+    - { size: "S/M", usWomen: "6–11", mondo: "23–28", eu: "36–43" }
+  sizeChartCheckedAt: "2026-10-14"
+  sizeChartSource: https://www.nitrosnowboards.com/collections/bindings-26-27/products/fate-womens-bindings-1
   brandComfortScore: 9
   brandResponseScore: 7
   bootCompatibility: 常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。
@@ -18,15 +28,23 @@ specs:
   compatibilitySources: https://www.nitrosnowboards.com/collections/bindings-26-27/products/fate-womens-bindings-1
   priceCheckedAt: 2026-10-12
   officialPrice: EUR 299.9
-  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
+  priceMarket: Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY
   priceSource: https://www.nitrosnowboards.com/products/fate-womens-bindings-1
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 2026-10-12 官方结构化变体报价 EUR 299.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 2,245.95；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。
 images:
-  - url: https://cdn.shopify.com/s/files/1/0580/2773/7217/files/12BG21011-103_Fate-Womens-Bindings_Nitro-x-Hailey-Langland_Product-1.jpg?v=1779339397&width=1920
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/cc8bef986d0bf20cb66ddb68727f164e27c64b918c525b9592a93bc248b54ca3.webp
     kind: face
     alt: Nitro Fate 女款 2027 商品图
     source: 品牌官方商品页公开图片；展示授权状态待核
     sort_order: 0
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 7.3
+  comfort: 6.2
+  versatility: 7.6
+  convenience: 6.2
+  value: 5.0
 status: published
 one_liner: Nitro 2026–27 女款全山地固定器，官方目录将其列为经典全山地型号。
 data_source:

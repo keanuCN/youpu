@@ -1,0 +1,39 @@
+{
+  "slug": "nitro-banker-2027",
+  "product": "Nitro Banker 2026/27",
+  "capturedAt": "2026-10-02",
+  "listedPrice": {
+    "amount": 123200,
+    "currency": "JPY",
+    "taxIncluded": true,
+    "market": "Japan retailer preorder",
+    "source": "https://www.murasaki.jp/Form/Product/ProductDetail.aspx?bid=snow&pid=n05430101019993"
+  },
+  "convertedReference": {
+    "amount": 5203.65,
+    "currency": "CNY",
+    "method": "JPY 123,200 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan retailer preorder reference only; not a mainland China selling price or transaction price.",
+      "Preorder availability may change; shipping and import charges are not included.",
+      "Other regional prices are recorded separately and are not mixed into this reference."
+    ]
+  },
+  "crossChecks": [
+    {
+      "amount": 639.95,
+      "currency": "USD",
+      "market": "North American distributor and retailer listing",
+      "source": "https://www.christysports.com/product/nitro-banker-snowboard-mens/8205529.html?cgid=nitro&dwvar_8205529_color=000"
+    },
+    {
+      "amount": 649.9,
+      "currency": "EUR",
+      "market": "Nitro official European storefront",
+      "source": "https://www.nitrosnowboards.com/products/banker-snowboard-1"
+    }
+  ],
+  "notes": "The seed price is normalized to CNY as requested. Keep JPY, USD and EUR source prices as distinct regional observations; none establishes a China-market price."
+}

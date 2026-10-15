@@ -5,19 +5,20 @@ model: Redster Q7 Revoshock C
 year: 2027
 title: Atomic Redster Q7 Revoshock C 2026/27
 one_liner: 全地域雪道系统板，174 cm 半径 14.2 m、板腰 75 mm，单支含固定器重量 2811 g。
+price:
+  min: 6035.31
+  max: 6035.31
+  currency: CNY
 specs:
   lengthOptions: 153 / 160 / 167 / 174 / 181 cm
   waistWidth: 75
   turnRadius: 14.2
   turnRadiusReferenceLength: 174 cm
-  sidecutDimensions: "153 cm: 121-75-106 mm / 11.8 m；160 cm: 123-75-107.5 mm /
-    12.6 m；167 cm: 125-75-109 mm / 13.4 m；174 cm: 127-75-110.5 mm / 14.2 m；181
-    cm: 129-75-112 mm / 15 m"
+  sidecutDimensions: "153 cm: 121-75-106 mm / 11.8 m；160 cm: 123-75-107.5 mm / 12.6 m；167 cm: 125-75-109 mm / 13.4 m；174 cm: 127-75-110.5 mm / 14.2 m；181 cm: 129-75-112 mm / 15 m"
   profile: Active Camber 0/100/0
   core: Power Woodcore（白蜡木与杨木）
   construction: Dura Cap Sidewall
-  technologies: Revoshock C；All-Condition Piste Shape；TI Powered；Structured
-    Topsheet；World Cup Base Finish；Tip Protector；Pro Trak
+  technologies: Revoshock C；All-Condition Piste Shape；TI Powered；Structured Topsheet；World Cup Base Finish；Tip Protector；Pro Trak
   weightPerSki: 2811
   weightReferenceLength: 174 cm
   baseEdgeAngle: 0.8
@@ -55,16 +56,23 @@ specs:
       tailWidth: 112
       turnRadius: 15
   geometryNotes: 已整理官方逐长度参数；板头、板腰、板尾为 mm，半径为 m，板长为 cm。档案顶部标量只代表参考长度，不能套用到其他板长。
-  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替
-    BSL，GW 标识也不表示兼容所有巡游靴。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 官方商品页对应具体 SKU，但页面未直接标注销售雪季；档案年款沿用原整理结果，尚需同 SKU 季度目录确认。
-  sourceCheckedAt: 2026-10-13
+  seasonEvidence: Atomic 日本官网目录页列有 2026/27 目录入口；官网商品页确认型号与 AASS03788 货号，但未直接标雪季。Mahsport、Wrosport 等零售商品页把同型号/货号标为 2026/27，故以官网型号身份和多家 SKU 对应零售记录交叉确认；旧季记录仍单独保留。
+  sourceCheckedAt: 2026-10-14
   compatibilitySources: https://www.atomic.com/en-int/products/redster-q7-revoshock-c-mi-12-gw-aa7471-202600；https://www.grip-walk.com/faq/
+  priceCheckedAt: 2026-10-14
+  officialPrice: JPY 142890
+  regionalListPrice: JPY 142,890（含税）
+  priceMarket: Atomic 日本官方商店；AASS03788，选中变体 AASS03788160
+  priceSource: https://atomicsnow.jp/products/aass03788
+  regionalPriceSource: https://atomicsnow.jp/products/aass03788
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Atomic 日本官方店页面对应 AASS03788、选中 160 cm 变体 AASS03788160，标价 JPY 142,890（含税）；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 6,035.31。页面标记线上不可购买，建议到店查询；运费按结账计算。此为日本官方参考价，不是中国售价或成交价，跨境运输及进口费用未计。
+  priceCrossCheckSource: https://www.atomic.com/en-us/products/redster-q7-revoshock-c-mi-12-gw-aa7471-202600
+  priceCrossCheckStatus: Atomic 美国官网同货号 AASS03788 选中 160 cm 页面挂牌 USD 1,030（页面标注 exc. VAT），按 ECB 2026-10-14 汇率折合 CNY 6,893.50；页面当时显示仅余 2 件且不支持国际配送。仅作美国地区官方价格对照，不覆盖日本含税主参考，也不是中国售价。
 images:
-  - url: "https://cdn.amersports.com/017bc76f-f5cc-42b8-a786-b49f00cdff46/ATP_AASS0\
-      3788_0_GHO_Redster_Q7_Mi12_GW_FullImageWebOptimized.png?fit=bounds&format\
-      =auto&height=1350&quality=80&width=1800"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/07479be30116559c9cfec8729c338e392fb6ccf1eb8ebea467295d412f4e31a5.webp"
     kind: face
     alt: Atomic Redster Q7 Revoshock C 2026/27 官方雪板套装图
     source: Atomic 官方产品页（图片使用授权待核）

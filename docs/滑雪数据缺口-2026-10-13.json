@@ -60,29 +60,20 @@
   },
   "skis": {
     "total": 39,
-    "withTable": 19,
-    "rows": 80,
-    "missingTable": [
-      "atomic-redster-q7-2026.yaml",
-      "atomic-redster-q7-8-2026.yaml",
-      "atomic-redster-q9-2026.yaml",
-      "atomic-redster-q9-8-2026.yaml",
-      "atomic-redster-s9-2026.yaml",
-      "head-e-slr-2026.yaml",
-      "head-easy-joy-r-2026.yaml",
-      "head-shape-e-v5-2026.yaml",
-      "head-shape-v2-2026.yaml",
-      "head-shape-v2-r-2026.yaml",
-      "nordica-unleashed-98-2027.yaml",
-      "rossignol-experience-76-2026.yaml",
-      "salomon-mtn-86-carbon-2027.yaml",
-      "salomon-qst-100-2027.yaml",
-      "salomon-qst-106-2027.yaml",
-      "salomon-qst-92-2027.yaml",
-      "salomon-qst-94-2027.yaml",
-      "salomon-qst-98-2027.yaml",
-      "salomon-qst-blank-2027.yaml",
-      "salomon-stance-84-2027.yaml"
+    "withTable": 37,
+    "rows": 163,
+    "missingTable": [],
+    "partialTable": [
+      {
+        "file": "head-easy-joy-r-2026.yaml",
+        "knownRows": 1,
+        "reason": "HEAD 25/26 手册只给 article 316265 的 163 cm 参考几何；匹配货号的官方图片已找到，其余四个长度仍缺逐码值。"
+      },
+      {
+        "file": "head-shape-v2-r-2026.yaml",
+        "knownRows": 1,
+        "reason": "HEAD 25/26 手册按 article 316225 给出 170 cm 参考几何；其余五个长度缺逐码值，半径 12.5 与租赁手册副本的 12.4 冲突已备注。"
+      }
     ],
     "cnyPending": 0
   }

@@ -4,26 +4,43 @@ brand: nitro
 model: "Team Pro"
 year: 2027
 title: "Nitro Team Pro 2027"
-one_liner: "高响应自由式固定器，配 3D OptiPro 脚踝绑带、HYPER Foam 与 Air Dampening。"
+price:
+  min: 2695.29
+  max: 2695.29
+  currency: CNY
+one_liner: "高响应自由式固定器；Nitro 品牌评分响应 8/10、舒适 9/10，建议中级至职业滑手。"
 specs:
+  seasonEvidence: Nitro 官方 26/27 固定器集合页列出 Team Pro 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27
   entrySystem: strap
   flexFeel: stiff
+  brandResponseScore: 8
+  brandComfortScore: 9
+  terrain: [ all-mountain, freestyle ]
   mountingSystem: "Universal Mini Disc；兼容 2x4 与 Burton Channel"
   bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "Nitro：S/M 男靴 US 5–10 / 女靴 5.5–10.5 / MP 23–28 / EU 36–43；M 男 US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L 男 US 11–14 / MP 29–32 / EU 44–48"
+  sizeChartScope: "2027 官方页尺码选择器列 S/M、M、L；厂商推荐鞋码区间存在重叠：US 男 7–10 同时落入 S/M 与 M。区间是推荐范围，不是唯一映射、实装保证或实时库存。"
+  bootFitEvidence: "Nitro 官方 2027 Team Pro 页面分别列出三档固定器尺码的 US/MP/EU 鞋码范围；S/M 与 M 在 US 男 7–10 区间重叠。应结合雪鞋外形实装检查底盘承托、鞋头/后跟居中、脚踝绑带位置及梯带余量，边界或重叠尺码需试装。"
+  sizeChart:
+    - { size: "S/M", usMen: "5–10", usWomen: "5.5–10.5", mondo: "23–28", eu: "36–43" }
+    - { size: "M", usMen: "7–10.5", mondo: "25–28.5", eu: "38.5–43.5" }
+    - { size: "L", usMen: "11–14", mondo: "29–32", eu: "44–48" }
+  sizeChartCheckedAt: "2026-10-15"
+  sizeChartSource: https://www.nitrosnowboards.com/collections/all-26-27/products/team-pro-bindings-1?variant=57277687005515
   ankleStrap: "3D OptiPro 双组分聚氨酯脚踝绑带，兼顾响应、舒适与支撑"
   toeStrap: "Übergrip PRO 3D 注塑脚趾绑带，防滑贴合不同鞋头"
   buckles: "Speed Wheel 3.0 卡扣/棘轮；梯带与棘轮带内置不锈钢线缆加固"
   cushioning: "Air Dampening 后跟缓震、HYPER Foam 脚床与 3° 倾斜脚床"
   selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
-  compatibilitySources: https://www.nitrosnowboards.com/products/team-pro-bindings-1
+  compatibilitySources: https://www.nitrosnowboards.com/collections/all-26-27/products/team-pro-bindings-1?variant=57277687005515
   priceCheckedAt: 2026-10-12
   officialPrice: EUR 359.9
-  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
+  priceMarket: Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY
   priceSource: https://www.nitrosnowboards.com/products/team-pro-bindings-1
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 2026-10-12 官方结构化变体报价 EUR 359.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 2,695.29；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。
 images:
-  - url: "https://www.nitrosnowboards.com/cdn/shop/files/12BG11003-103_Team-Pro-Bindings_Nitro-x-Markus-Kleveland_Product-1.jpg?v=1779339350&width=2500"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/5227d782191e17a36f55f6fae7d32b2af7e882040c7f8c5d28ccfa349ebfc907.webp"
     kind: face
     alt: Nitro Team Pro 2027 固定器官方商品图
     source: Nitro 官方商品页（图片使用授权待核）
@@ -31,4 +48,11 @@ images:
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/products/team-pro-bindings-1
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 8.5
+  comfort: 6.8
+  versatility: 7.2
+  convenience: 6.2
+  value: 5.0
 status: published

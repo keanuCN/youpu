@@ -2,12 +2,57 @@
   "brand": "Rossignol",
   "model": "Forza 60° TI KONECT",
   "season": "2026-27",
-  "retrievedAt": "2026-10-10",
+  "retrievedAt": "2026-10-15",
   "seedFile": "data/skis/rossignol-forza-60-ti-2027.yaml",
   "officialProductPage": {
     "url": "https://www.rossignol.com/us-en/rossignol-forza-60-ti-skis-konect-RAOPS01000.html",
     "evidence": "Rossignol's product page confirms product code RAOPS01000; lengths 156/164/171/179 cm; tip/waist/tail dimensions 130/75/112 mm for each size; radii 11/12/13/14 m respectively; Advanced-Expert performance label; KONECT system; PEFC Poplar Wood Core; Rectangular Full Sidewall; Titanal Beam; Carbon Alloy Matrix; Reinforced Torsion Tip Technology; V-A-S; Sintered HD Base; Tip Rocker; Oversized Sidecut and Premium Hardtop. The page offers skis without bindings and an SPX 12 KONECT binding option.",
-    "limitations": "The official product page does not state the model season explicitly, weight, or factory edge angles. No values were inferred for these fields. The existing seed remains draft."
+    "limitations": "The official product page does not state the model season explicitly, weight, or factory edge angles. No values were inferred for these fields. Season is cross-confirmed by third-party model-specific evidence below; it is not represented as an explicit Rossignol-page label."
+  },
+  "seasonEvidence": [
+    {
+      "url": "https://www.rossignol.sk/all-mountain-performance/",
+      "evidence": "Rossignol Slovakia official e-shop lists FORZA 60' TI KONECT + NX 12 KONECT GW under Model 26/27 and gives the product-family code RAOPS01+FCLCN03; RAOPS01 matches the seed article family RAOPS01000.",
+      "role": "official regional season and binding-package confirmation"
+    },
+    {
+      "url": "https://hv2.skiessentials.com/2027-ski-test/skis/2027-rossignol-forza-60-ti",
+      "evidence": "2027 model test says Forza 60 returns unchanged for 2027; identifies 2026 model as the prior-year item.",
+      "role": "model-year/carryover corroboration"
+    },
+    {
+      "url": "https://www.skitreff.de/rossignol-forza-600-ti-ski-set-2026-27-raops01-171-920862",
+      "evidence": "Exact Forza 60 Ti model, season 2025/26 and 2026/27, lengths, radii and geometry are listed.",
+      "role": "season and configuration corroboration"
+    },
+    {
+      "url": "https://snow-how.de/en/skis/allroundcarver/53497/rossignol-forza-600-ti-konect-look-nx-12-gw-2026/27?c=639&number=RROPS01-0-171",
+      "evidence": "Exact Forza 60 TI KONECT product listed as 2026/27; page exposes the RAOPS01 family item identifier and 171 cm geometry.",
+      "role": "season/model corroboration"
+    }
+  ],
+  "publicationDecision": "Publish as 2026/27: official Rossignol Slovakia storefront identifies the RAOPS01 model family as Model 26/27; the US official product page supplies exact article RAOPS01000 and per-length geometry. SkiEssentials and exact-model retailer listings are additional corroboration. Preserve that the US product page itself omits the season label.",
+  "regionalPriceEvidence": {
+    "source": "https://www.rossignol.sk/all-mountain-performance/",
+    "market": "Rossignol Slovakia official e-shop",
+    "model": "FORZA 60' TI KONECT + NX 12 KONECT GW B80 BK HOT RED",
+    "modelCode": "RAOPS01+FCLCN03",
+    "season": "2026/27",
+    "listedPrice": {"amount": 760, "currency": "EUR"},
+    "configuration": "NX 12 KONECT GW binding included",
+    "convertedReference": {
+      "amount": 5694.30,
+      "currency": "CNY",
+      "exchangeRateDate": "2026-10-14",
+      "eurCny": 7.4925,
+      "method": "EUR 760 × 7.4925",
+      "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+    },
+    "limitations": [
+      "European official-market bundle price, not a mainland-China price.",
+      "Includes NX 12 KONECT binding and is not directly comparable to the US no-binding base option.",
+      "Cross-border delivery, import charges, payment costs, and local tax treatment are not established by the captured text."
+    ]
   },
   "specifications": {
     "lengthsCm": [156, 164, 171, 179],

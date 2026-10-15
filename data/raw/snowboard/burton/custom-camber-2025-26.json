@@ -21,7 +21,7 @@
         "sidecutRadiusM": 7.9,
         "manufacturerRiderWeight": "150-200 lb / 68-91 kg"
       },
-      "limits": "Official page does not establish the seed's 2980 g board mass or CNY 6299 price. The printed stance-location field is not silently treated as a setback measurement."
+      "limits": "Official page does not establish the seed's 2980 g board mass or any mainland-China price. A separately verified CNY 5,998 SPADERS same-season listing is recorded below, but the seller page does not expose manufacturer SKU, board length, stock, or checkout confirmation. The printed stance-location field is not silently treated as a setback measurement."
     },
     "bpmProshop2026Review": {
       "url": "https://www.bpmproshop.de/Burton-Custom-Camber-2026-Snowboard-Testbericht",
@@ -48,8 +48,21 @@
       "scoreUse": "Historical model-year proxy only; external sub-scores are not converted to the site's six dimensions."
     },
     "priceSearch": {
-      "retrievedAt": "2026-10-02",
-      "result": "No verifiable mainland-China 2025/26 CNY retail price or MSRP located.",
+      "retrievedAt": "2026-10-15",
+      "result": "A current SPADERS mainland-China listing now provides a 25/26 Custom Glow / M Custom Jungle CNY asking price; manufacturer SKU, exact board length, and live inventory remain unexposed.",
+      "mainlandChinaListing": {
+        "urls": [
+          "https://detail.youzan.com/show/goods?alias=3ersstb5f52viu3&from_source=gbox_seo",
+          "https://detail.youzan.com/show/goods?alias=26xwovjh04t7imq&from_source=gbox_seo"
+        ],
+        "seller": "SPADERS 黑桃滑雪俱乐部（页面标注微信认证）",
+        "listingTitles": ["25/26BURTON雪板CUSTOM GLOW", "25/26BURTON雪板M CUSTOM JUNGLE"],
+        "listedPriceCny": 5998,
+        "captureDate": "2026-10-15",
+        "pageState": "Both pages show an immediate-purchase action and shipping range CNY 0-200; checkout, stock, SKU, and length are not exposed in captured page text.",
+        "identityEvidence": "Listing titles identify the same 25/26 Custom model family and the official Burton Japan season page identifies the Glow variant as 26WIN-106881; the seller pages do not expose a manufacturer item code, so exact SKU identity is not fully verified.",
+        "decision": "Use CNY 5,998 as the seed's local seller listing reference in place of the unsupported prototype CNY 6,299. Do not describe it as a transaction price or a verified size-specific price; retain explicit limitations and keep value scoring cautious."
+      },
       "regionalReferences": {
         "officialBurtonJapan2026Page": {
           "url": "https://jp.burton.com/ja-jp/products/mens-burton-custom-camber-snowboard-106881a-o",
@@ -76,9 +89,9 @@
         "Burton Japan listing in JPY is a different market and currency.",
         "Current 2027 USD prices do not verify the 2025/26 CNY seed price.",
         "JD's indexed 25/26 listing identifies model 106881 and 158 cm but exposes no verifiable price in the captured result.",
-        "A CNY 5,998 listing found in the current search is for 26/27, not the 2025/26 seed; a separate CNY 4,998 aggregator result combines Custom and Process without an exact SKU/size. Neither verifies the seed price."
+        "A previously encountered CNY 5,998 listing was for 26/27 and is excluded; it is distinct from the new SPADERS 25/26 Custom Glow/Jungle listings recorded above. A separate CNY 4,998 aggregator result combines Custom and Process without an exact SKU/size. Neither excluded lead verifies the seed price."
       ],
-      "decision": "Keep seed CNY 6299 and value score 6.5 unchanged, but mark them low confidence pending dated mainland-China price evidence."
+      "decision": "Replace unsupported prototype CNY 6,299 with the dated CNY 5,998 SPADERS listing reference. Keep value score 6.5 low-confidence because the listing does not expose manufacturer SKU, size, stock, or checkout confirmation."
     }
   },
   "imageProvenance": {
@@ -106,7 +119,7 @@
     "copyDecision": "Removed unsupported absolutes about near-zero high-speed chatter, effortless/crippling low-speed behavior, and rider mass threshold. Updated product construction terms to W26 manufacturer nomenclature."
   },
   "unverifiedSeedFieldsRetained": [
-    "CNY price 6299",
+    "CNY 5,998 local listing reference remains limited: exact manufacturer SKU, length, stock and completed checkout are not exposed",
     "board weight 2980 g",
     "stance setback 15 mm",
     "subjective damping and pop values"

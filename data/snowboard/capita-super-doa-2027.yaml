@@ -6,8 +6,8 @@ year: 2027
 title: CAPiTA Super D.O.A. Snowboard 2027 CAPiTA Snowboards | NA
 one_liner: 更强调技术感和响应的双向全山自由式板，适合喜欢跳台、侧击和强节奏巡航、并能驾驭偏硬设定的滑手。
 price:
-  min: 5760
-  max: 5760
+  min: 5575.34
+  max: 5575.34
   currency: CNY
 specs:
   length: 156
@@ -38,8 +38,13 @@ specs:
     - { size: 159W, effectiveEdge: 1258, waistWidth: 264, noseWidth: 311, tailWidth: 311, sidecutRadii: 8.1 m, stanceWidth: 559 mm（参考）, riderWeight: 140-200 lb / 63-90 kg, bootSize: US 10+ / EU 43+ }
     - { size: 161W, effectiveEdge: 1274, waistWidth: 266, noseWidth: 314, tailWidth: 314, sidecutRadii: 8.2 m, stanceWidth: 584 mm（参考）, riderWeight: 160-220 lb / 72-99 kg, bootSize: US 10+ / EU 43+ }
     - { size: 163W, effectiveEdge: 1290, waistWidth: 268, noseWidth: 316, tailWidth: 316, sidecutRadii: 8.3 m, stanceWidth: 584 mm（参考）, riderWeight: 170-230 lb / 77-104 kg, bootSize: US 10+ / EU 43+ }
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  priceCheckedAt: 2026-10-15
+  seasonEvidence: CAPiTA 北美与日本官方商品页均标注 Super D.O.A. Snowboard 2027；经销商 Golgoda 公布的 CAPiTA Japan 26/27 临时价目表也列出该型号，税前 JPY 120,000 加 10% 消费税后与日本官方店 JPY 132,000 一致。归档为 2026/27；商品页未直接注明完整雪季日期。
+  regionalListPrice: JPY 132000
+  priceMarket: CAPiTA 日本官方商店；美国官网同款 USD 799.95 作地区价差对照
+  priceSource: https://jp.capitasnowboarding.com/products/capita-super-d-o-a-mens-snowboard-2027
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: CAPiTA 日本官方页面标价 JPY 132,000，按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 5,575.34，作为亚洲地区价格参考。美国官网同款标价 USD 799.95，按 EUR/USD 1.1195、EUR/CNY 7.4925 折算为 CNY 5,353.84；两地官方价接近但并不相同。本次检索未找到可核实的中国销售报价；以上均非中国售价，跨境费用、汇兑和税费影响未计。原种子 CNY 5,760 未找到可回查依据，已替换为日本官网折算参考。
 editorial_scores:
   stability: 8.5
   response: 8.8
@@ -48,7 +53,7 @@ editorial_scores:
   forgiveness: 6.3
   value: 6.6
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST01-SUPER-D.O.A.-TOP.png?v=1776884610"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/cd26ddffb8e12aac4d463a1eb1057db0bbbe98efb988ff0333249c68ccbf3e22.webp"
     kind: face
     alt: CAPiTA Super D.O.A. 2027 官方产品图
     source: CAPiTA 官方产品页图片（本地演示，版权待核）

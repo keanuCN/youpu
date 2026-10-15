@@ -1,0 +1,35 @@
+{
+  "brand": "GRAY",
+  "model": "DESPERADO micro/mini",
+  "season": "2023-24",
+  "retrievedAt": "2026-10-15",
+  "seedFile": "data/snowboard/gray-desperado-2024.yaml",
+  "officialArchive": {
+    "url": "https://graysnowboards.co.jp/product2324/",
+    "catalogUrl": "https://graysnowboards.co.jp/pdf/23-24_GR_CL_GRAY_A4_japan_web.pdf",
+    "evidence": "GRAY 2023/24 官方产品归档将 DESPERADO micro/mini 列为 100% 玻璃纤维儿童刻滑板，含税价格 JPY 108,900。官方 PDF 明确 micro 为 132 cm、mini 为 138 cm，并列有效刃长、接触长度、板腰、三段侧切半径、站距范围、20 mm 站位后移、拱高与分区硬度。"
+  },
+  "currentOfficialFamilyPage": {
+    "url": "https://graysnowboards.co.jp/product/",
+    "evidence": "GRAY 当前 26/27 商品页仍列 DSPRD micro/mini，含税价 JPY 108,900；页面图像标识 23_DSPRD，但没有提供 SKU 或逐码规格与 2023/24 旧型号的直接映射。仅作为型号系列仍出现在当前官方目录中的旁证，不将其视为旧款现货证明。"
+  },
+  "officialImage": {
+    "url": "https://graysnowboards.co.jp/wp2021/wp-content/themes/gray/images/img_2324/product/19_DESPERADO%20micro-mini/23-24_19_DESPERADO%20micro-mini_main.png",
+    "sourcePage": "https://graysnowboards.co.jp/product2324/",
+    "evidence": "从 GRAY 2023/24 官方归档 DESPERADO micro/mini 图像链接取得完整 PNG 路径，路径包含 img_2324 与 micro-mini 型号信息。展示使用授权仍待确认。"
+  },
+  "regionalPriceReference": {
+    "merchant": "GRAY 日本官网",
+    "listedGrossPrice": 108900,
+    "listedCurrency": "JPY",
+    "seasonBasis": "2023/24 official product archive",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/shared/pdf/eurofxref.pdf",
+    "exchangeRateDate": "2026-10-14",
+    "eurJpy": 177.39,
+    "eurCny": 7.4925,
+    "conversion": "108900 / 177.39 * 7.4925 = 4599.66 CNY",
+    "convertedCny": 4599.66,
+    "limitations": "这是 2023/24 日本官方归档含税价按 2026-10-14 ECB 参考汇率折算的人民币参考，不是中国售价或当前成交价；未含运输、税费和汇兑成本。当前官方 26/27 页面显示同名系列和同额日元价，但没有 SKU 映射，不能据此确认旧季板仍在售。"
+  },
+  "statusDecision": "保持 draft：型号、历史季节、两档规格、官方价格和官方图片来源已核；图片展示授权仍待确认。"
+}

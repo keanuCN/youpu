@@ -1,0 +1,129 @@
+{
+  "slug": "burton-step-on-re-flex-womens-2027",
+  "model": "Burton Women's Step On Re:Flex",
+  "season": "2026/27",
+  "productId": "172841",
+  "variantCode": "27WIN-172841",
+  "market": "Burton Japan official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 42900,
+    "currency": "JPY",
+    "source": "https://jp.burton.com/ja-jp/products/womens-burton-step-on-re-flex-snowboard-bindings-172841"
+  },
+  "convertedReference": {
+    "amount": 1811.99,
+    "currency": "CNY",
+    "method": "JPY 42,900 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan official-store reference only; not a mainland China selling price.",
+      "Shipping, import charges, and tax treatment at checkout are not included or confirmed.",
+      "Price and size availability can change; check the selected variant at checkout."
+    ]
+  },
+  "sizeChart": {
+    "source": "https://www.burton.com/en-us/products/womens-burton-step-on-re-flex-snowboard-bindings-172841",
+    "checkedAt": "2026-10-14",
+    "rows": [
+      { "size": "S", "usWomen": "5–6", "eu": "35–36.5", "uk": "3–4", "mondo": "22–23" },
+      { "size": "M", "usWomen": "6.5–8.5", "eu": "37–40.5", "uk": "4.5–6.5", "mondo": "23.5–25.5" },
+      { "size": "L", "usWomen": "9–11", "eu": "41–42", "uk": "7–8", "mondo": "26–27" }
+    ],
+    "compatibility": "Burton states Step On bindings only fit Step On boots and warns against mixing men's and women's Step On products."
+  },
+  "officialSizeChartLabels": {
+    "sourceColumns": ["Women's Boot Size", "Euro Boot Size", "UK Boot Size", "Mondo Boot Size", "CN (2.5)", "CN (1.5)", "CN (2)"],
+    "cnVariants": {
+      "CN (2.5)": { "S": "220–230", "M": "235–255", "L": "260–270" },
+      "CN (1.5)": { "S": "220–230", "M": "235–255", "L": "260–270" },
+      "CN (2)": { "S": "220–230", "M": "*", "L": "*" }
+    },
+    "decision": "保留官网 CN 列原标签；因存在三种列且 M/L 的 CN (2) 为星号，不把这些值简化成一个无标签 cnMm 换算。"
+  },
+  "officialTechAudit": {
+    "checkedAt": "2026-10-15",
+    "usOfficialSource": "https://www.burton.com/en-us/products/womens-burton-step-on-re-flex-snowboard-bindings-172841",
+    "japanOfficialSource": "https://jp.burton.com/ja-jp/products/womens-burton-step-on-re-flex-snowboard-bindings-172841",
+    "confirmed": {
+      "seasonVariant": "Women's Step On Re:Flex 2027; 27WIN-172841",
+      "listedSizes": ["S", "M", "L"],
+      "mounting": "Re:Flex; all current snowboard mounting systems; 3D Hinge Disc required and not included for pre-2014 Burton 3D boards",
+      "baseplateMaterial": "18% Short-Glass/Nylon Composite",
+      "hiBack": "Step On FLAD; screwdriver-adjustable forward lean",
+      "cushioning": "Re:Flex FullBED",
+      "flexFeel": "Happy Medium (qualitative brand scale)",
+      "bootCompatibility": "Step On boots only; exact boot/binding size must match; men’s and women’s Step On products must not be mixed because mismatch may malfunction and compromise safety",
+      "warranty": "Lifetime baseplate warranty; one year for straps and hi-backs"
+    },
+    "japanListedPrice": "JPY 42,900",
+    "availability": "Page exposes size selector and restock notification; not treated as proof of current stock or checkout availability."
+  },
+  "japanRetailerCrossCheck20261015": {
+    "source": "https://www.murasaki.jp/Form/Product/ProductDetail.aspx?bid=snow&cat=018&pid=n06120101119986&shop=0&vid=n0612010111998690016010",
+    "retailer": "Murasaki Sports",
+    "listingTitle": "Women's Step On Re:Flex Snowboard Bindings 26-27 early purchase",
+    "listedJPY": 42900,
+    "selectedVariant": {"color": "Black", "size": "S"},
+    "otherListedColors": ["GreenVoltage", "MoondustPurple", "PinkOutline"],
+    "sizeOptions": ["S", "M", "L"],
+    "availabilityText": "Black / S / 在庫あり",
+    "fulfillmentNote": "页面同时标明 2026 年 11 月至 12 月下旬到货的预售说明，并注明不可退换/取消；因此“在库あり”理解为可预订条目，不等于仓库现货或即时发货。",
+    "itemCode": "n0612010111998690016010",
+    "priceCrossCheck": "与 Burton 日本官方 2026-10-14 页面列价 JPY 42,900 相同；仅作日本地区预售交叉核验，不代表中国售价。",
+    "decision": "确认日本零售商按 26/27 预售展示该款价格、尺码选项和所选 Black/S 变体；不据单个预售变体推断其他颜色尺码库存。"
+  },
+  "chinaAggregatorPriceLead20261015": {
+    "source": "https://tao.k7dj.com/goods-PajwOPyI3t68d3rx53UvD5UPt6-d8ZBBDF0GKeq3OxhW.html",
+    "sourceType": "虎窝淘天猫商品聚合页；未取得原始天猫详情页",
+    "listingTitle": "BURTON伯顿官方26-27雪季新品女士 Step On Re:Flex固定器172841",
+    "productId": "172841",
+    "seasonAsListed": "2026/27",
+    "storeClaim": "BURTON官方旗舰店（聚合页标注；未独立验证）",
+    "listedPriceCNY": 2598,
+    "monthlySalesAsShown": 12,
+    "evidence": "聚合页标题同时列出女款、26-27 雪季和型号 172841，正文显示优惠价格 CNY 2,598、天猫年销量 12，并将店铺称为 BURTON 官方旗舰店。",
+    "limitations": [
+      "第三方聚合页不是天猫原始商品页，未取得可核验的原始商品链接。",
+      "未显示具体颜色/尺码变体与各变体价格；聚合页价格不等于结账价。",
+      "店铺身份、活动条件和当前库存尚未独立确认。"
+    ],
+    "decision": "记为与 172841 和 26/27 标题匹配的中国人民币价格候选，不覆盖日本官方 JPY 42,900 折合 CNY 1,811.99 的主参考。取得原始天猫页并确认变体与结账价后再考虑升级。"
+  },
+  "chinaAggregatorSearchRecheck20261015": {
+    "source": "https://tao.k7dj.com/goods-PajwOPyI3t68d3rx53UvD5UPt6-d8ZBBDF0GKeq3OxhW.html",
+    "sourceType": "第三方天猫商品聚合页的搜索索引快照",
+    "observedTitle": "BURTON伯顿官方26-27雪季新品女士 Step On Re:Flex固定器172841",
+    "observedPrice": { "amount": 2598, "currency": "CNY", "label": "优惠价格" },
+    "otherDisplayedFields": { "originalPriceCNY": 0, "salesLabel": "天猫年销量", "salesCount": 10, "storeClaim": "BURTON官方旗舰店", "regionText": "卖家地址河北廊坊" },
+    "comparisonWithEarlierSnapshot": "此前同一聚合页记录显示年销量 12；本次搜索索引显示年销量 10。销量标签/数值会变化，且原售价显示 0 元，无法用于验证折扣幅度。",
+    "decision": "重新确认聚合页仍展示标题匹配型号 172841、26/27 与 CNY 2,598 候选；价格、店铺身份和变体仍未由原始天猫详情或结账页核实，原售价 0 元及销量变化进一步说明不应将聚合字段视为确证。维持候选状态，不更新种子价格。"
+  },
+  "chinaAggregatorRedirectInspection20261015": {
+    "checkedAt": "2026-10-15",
+    "aggregatorSource": "https://tao.k7dj.com/goods-PajwOPyI3t68d3rx53UvD5UPt6-d8ZBBDF0GKeq3OxhW.html",
+    "observedEntry": "聚合页购买表单将用户导向 s.click.taobao.com 跟踪链接",
+    "inspection": "通过只读 HTTP 请求检查跳转响应；连续 5 次返回 200 的 JavaScript 自动跳转包装页，目标仍为 s.click.taobao.com，没有抵达可读天猫商品详情。",
+    "decision": "不能据此取得原始天猫商品链接或验证款色尺码价格；保留 CNY 2,598 为聚合页候选，不升级为已确认国内售价。停止重复展开该追踪跳转，等待可直接读取的原始商品页或新渠道证据。"
+  },
+  "chinaJdVariantIndexRecheck20261015": {
+    "checkedAt": "2026-10-15",
+    "sources": [
+      "https://www.jd.com/brand/1318ae1d7a8b48a47346.html",
+      "https://www.jd.com/jiage/131814a47758d56e2e36.html"
+    ],
+    "indexedTitle": "BURTON伯顿官方26-27雪季新品女士 Step On Re:Flex 固定器172841",
+    "observedVariantSku": "1728416FBJRG",
+    "observedSizeSnapshots": ["S", "M"],
+    "reviewCountSnapshots": [1, 2],
+    "evidence": "京东品牌/价格索引出现精确型号 172841、26-27 雪季标题及变体 SKU 1728416FBJRG；不同索引快照分别显示 S 与 M 以及 1/2 条评价。",
+    "limitations": [
+      "当前可读取内容是京东搜索/分类索引，不是可核验的商品详情页。",
+      "索引没有返回人民币价格、店铺详情、库存或结账可售状态。",
+      "S/M 仅为不同索引中的选中变体快照，不证明完整尺码范围或库存。"
+    ],
+    "decision": "作为国内同款变体存在的辅助证据，不作为价格或可售证据；继续等待可读商品详情或结账页。"
+  },
+  "decision": "US and Japan official pages confirm the product identity, 2027 variant, mounting and binding specs, compatibility warning, warranty, and women's size chart. Preserve non-quantitative flex wording and the original CN chart labels. The converted CNY 1,811.99 remains a Japan-market reference, not a mainland-China price. The CNY 2,598 aggregator lead remains unverified; a fresh search snapshot shows original price CNY 0 and sales count 10 versus a previous 12, so neither the discount nor variant checkout amount can be established."
+}

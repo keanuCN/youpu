@@ -1,0 +1,18 @@
+{
+  "brand": "Jones",
+  "model": "Mountain Twin",
+  "season": "2025-26",
+  "sku": "J.26.SNM.MTN",
+  "capturedAt": "2026-10-15",
+  "productPage": "https://www.melbournesnowboard.com.au/products/jones-mountain-twin-2026",
+  "productPageTitle": "Jones Mountain Twin 2026",
+  "retailerSku": "J .26.SNM.MTN 151",
+  "imageUrl": "https://www.melbournesnowboard.com.au/cdn/shop/files/0015_Jones26-Men-Mountain-Twin.jpg?v=1740011983&width=1800",
+  "imageLabel": "Jones Mountain Twin 2026 board topsheet",
+  "evidence": "The retailer page names the exact 2026 product and lists SKU J.26.SNM.MTN 151. The image is served from the same product page's gallery. Jones's official 2026 page remains in search index but direct URL returns 404.",
+  "limitations": [
+    "The image is hosted by a retailer, not Jones's official CDN.",
+    "Image display authorization has not been confirmed; replace or self-host only after permission/rights review.",
+    "The retailer page reported the product sold out when checked; this image is product identification only, not availability evidence."
+  ]
+}

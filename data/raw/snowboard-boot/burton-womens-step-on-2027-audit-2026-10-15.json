@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-10-15",
+  "season": "2026/27 (2027 models)",
+  "models": [
+    {
+      "name": "Women's Felix Step On",
+      "productId": "172861",
+      "variantCode": "27WIN-172861",
+      "officialUsSource": "https://www.burton.com/en-us/products/womens-burton-felix-step-on-snowboard-boots-172861",
+      "officialJapanSource": null,
+      "usPrice": "USD 499.95",
+      "regionalPrice": "USD 499.95",
+      "priceMarket": "United States",
+      "convertedCNY": 3346.55,
+      "image": "https://www.burton.com/cdn/shop/files/1728610A02_1.webp?v=1778423934&width=1200",
+      "sizeSelectorUSWomen": ["5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10"],
+      "widths": ["Regular", "Wide"],
+      "features": ["Sequence BOA", "Imprint 3 liner", "Focus Cuff", "Vibram Traction Lug/Vibram EcoStep", "DRYRIDE Heat Cycle lining", "medium flex", "1-year warranty"],
+      "inventorySnapshot": "At crawl time several sizes showed sold out; the selector is not treated as a stock guarantee."
+    },
+    {
+      "name": "Women's Highshot Step On",
+      "productId": "303011",
+      "variantCode": "27WIN-303011",
+      "officialUsSource": "https://www.burton.com/en-us/products/womens-burton-highshot-step-on-snowboard-boots-303011",
+      "officialJapanSource": "https://jp.burton.com/en-jp/products/womens-burton-highshot-step-on-snowboard-boots-303011",
+      "usPrice": "USD 349.95",
+      "regionalPrice": "JPY 49,500",
+      "priceMarket": "Japan",
+      "convertedCNY": 2095.45,
+      "image": "https://www.burton.com/cdn/shop/files/3030110E7M_1.webp?v=1783620792&width=1200",
+      "sizeSelectorUSWomen": ["5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "11"],
+      "japanSelectorMondo": ["22", "23", "23.5", "24", "24.5", "25", "25.5", "26", "26.5", "27"],
+      "widths": ["Regular", "Wide"],
+      "features": ["Sequence BOA", "Imprint 2 liner", "Lock-Up Cuff", "Step On outsole", "3M Thinsulate", "medium-stiff flex", "1-year warranty"]
+    },
+    {
+      "name": "Women's Highshot X Step On",
+      "productId": "303021",
+      "variantCode": "27WIN-303021",
+      "officialUsSource": "https://www.burton.com/en-us/products/womens-burton-highshot-x-step-on-snowboard-boots-303021",
+      "officialJapanSource": "https://jp.burton.com/en-jp/products/womens-burton-highshot-x-step-on-snowboard-boots-303021",
+      "usPrice": "USD 529.95",
+      "regionalPrice": "JPY 75,900",
+      "priceMarket": "Japan",
+      "convertedCNY": 3213.02,
+      "image": "https://www.burton.com/cdn/shop/files/3030211E7Z_1.webp?v=1782872244&width=1200",
+      "sizeSelectorUSWomen": ["5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "11"],
+      "widths": ["Regular", "Wide"],
+      "features": ["Dual Zone BOA with internal ankle hammock", "Asym Imprint 3 liner", "Ankle Hammock", "X Firm Vibram Step On outsole", "DRYRIDE Heat Cycle lining", "firm/supportive flex", "1-year warranty"]
+    }
+  ],
+  "sizeConversionSource": "https://www.burton.com/en-us/pages/size-charts",
+  "sizeConversionEvidence": "Burton women's conversion chart: US 5/6/6.5/7/7.5/8/8.5/9/9.5/10/11 maps respectively to EU 35/36.5/37/38/39/40/40.5/41/41.5/42/43, UK 3/4/4.5/5/5.5/6/6.5/7/7.5/8/9, Mondo 22/23/23.5/24/24.5/25/25.5/26/26.5/27/28. Model-specific US size selectors differ; only selector-listed sizes were seeded.",
+  "bindingCompatibility": {
+    "bindingSeed": "data/snowboard-binding/burton-step-on-re-flex-womens-2027.yaml",
+    "source": "https://www.burton.com/en-us/products/womens-burton-step-on-re-flex-snowboard-bindings-172841",
+    "officialBootSizeRanges": {"S": "women US 5–6", "M": "women US 6.5–8.5", "L": "women US 9–11"},
+    "mapping": "Each model-listed women's boot size maps to one women's Step On binding size without overlap. Burton says Step On boots are only compatible with Step On bindings. Nitro's official guide separately states Nitro Step On bindings work with all Step On boots and requires women boots to be paired with women bindings; the Nitro women's chart has the same US 5–6 / 6.5–8.5 / 9–11 S/M/L ranges. This supports the cross-brand pairing from Nitro's side, but boots and bindings must still be physically checked for full engagement.",
+    "nitroCompatibilitySource": "https://www.nitrosnowboards.com/pages/step-on",
+    "nitroWomen'sBindingSource": "https://www.nitrosnowboards.com/collections/all-26-27/products/step-on-womens-bindings",
+    "nitroOfficialSizeRanges": {"S": "women US 5–6 / MP 22–23 / EU 35–36.5", "M": "women US 6.5–8.5 / MP 23.5–25.5 / EU 37–40.5", "L": "women US 9–11 / MP 26–28 / EU 41–43"},
+    "systemFitWarnings": "Nitro's Step On guide states the system is size- and gender-specific and warns against mixing men's and women's boots/bindings. It also requires boot and binding size confirmation and a physical connection check before riding."
+  },
+  "exchangeRate": {
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-13",
+    "EURUSD": 1.1188,
+    "EURJPY": 176.91,
+    "EURCNY": 7.489,
+    "method": "foreign currency / EUR × CNY per EUR; rounded to two decimals",
+    "convertedPricesAre": "Regional official list-price references, not China prices; shipping, tax and import charges are excluded."
+  },
+  "limits": [
+    "The US/EU/UK/Mondo chart is Burton's general women's boot conversion table; it is not a foot-length measurement chart.",
+    "Available size selectors do not prove current stock. Felix's US page showed several sizes sold out during collection.",
+    "Burton's US page states Step On boots are only compatible with Step On bindings. Match women's boots to the women's Step On chart and physically confirm engagement.",
+    "Official product image URLs were read from Burton product pages; website display authorization remains unverified.",
+    "No China official retail price or China transaction price was verified for these three models."
+  ]
+}

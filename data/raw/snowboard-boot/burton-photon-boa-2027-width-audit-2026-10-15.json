@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-15",
+  "product": "Burton Photon BOA 2027 / 26-27",
+  "articleNumber": "150861",
+  "variantCode": "27WIN-150861",
+  "officialProductSource": "https://www.burton.com/en-us/products/mens-burton-photon-boa-snowboard-boots-150861",
+  "observedOptions": ["Regular", "Wide"],
+  "officialProductPageRecheck": {
+    "checkedAt": "2026-10-15",
+    "pageTitle": "Men's Burton Photon BOA Snowboard Boots 2027",
+    "variantCode": "27WIN-150861",
+    "listedPriceUSD": 479.95,
+    "observedColor": "Nightfall / Deep Emerald",
+    "widthSelector": { "Wide": "Sold out", "Regular": "listed" },
+    "sizeAvailability": "The page marks some sizes sold out and leaves others selectable; this is a live, color/region-specific snapshot, not a complete size inventory.",
+    "sizeChart": "Official page still lists the Men's US 6–15 conversion chart; chart coverage must not be read as in-stock availability."
+  },
+  "official2027WideVariantCrossCheck": {
+    "source": "https://jp.burton.com/en-jp/products/mens-burton-photon-boa-snowboard-boots-150861?dwvar_W26JP-150861_variationColor=K94&dwvar_W26JP-150861_variationSize=015",
+    "pageTitle": "Men's Burton Photon BOA Snowboard Boots 2027",
+    "variantCode": "27WIN-150861",
+    "observedColor": "Forest Moss",
+    "widthOption": "Wide",
+    "sizeOptionsCm": ["25", "25.5", "26", "26.5", "27", "27.5", "28", "28.5", "29", "29.5", "30", "31", "32", "33"],
+    "availabilityNote": "页面列出部分尺码缺货及补货通知；选项不代表当前可售库存。"
+  },
+  "wideFitGuideSource": "https://www.burton.com/en-au/blogs/the-burton-blog/wide-fit-snowboard-boots",
+  "brandGuideClaims": {
+    "outerShell": "Burton says a Wide boot uses the same outer shell as its same-size Regular counterpart.",
+    "liner": "The guide describes stretch neoprene panels instead of foam around the midfoot/forefoot transition to provide more room.",
+    "selectionAdvice": [
+      "Measure feet with a shop fitting tool and try several boots in person.",
+      "A wide street shoe marked EE or wider may benefit from Wide, but street-shoe width alone does not decide the fit.",
+      "All-day pressure, hot spots, blisters, or cold/numb toes are reasons to try Wide.",
+      "Bring riding socks, walk in securely fastened boots for at least 15 minutes, and check heel hold while flexing forward.",
+      "US 11 or larger is only a prompt to consider a wide snowboard, not a boot-width threshold."
+    ]
+  },
+  "limits": [
+    "The Burton guide is brand-wide guidance and does not publish Photon 2027 last width in millimeters or foot-volume measurements.",
+    "The Photon-specific page confirms the exact 2027 Wide option, while construction details come from Burton's universal rule for every boot labeled Wide; the Photon page does not independently enumerate liner materials.",
+    "Do not interpret its same-shell statement as a shell-width increase or convert it to a millimeter difference.",
+    "Do not use US 11 board-width guidance as a rule for choosing boot width."
+  ],
+  "decision": "Keep Regular/Wide as selectable fit options. The 2027 Photon page confirms the Wide variant, and Burton states its same-shell/stretch-neoprene-liner construction applies to any Burton boot labeled Wide; record this as application of a brand-wide published rule, not Photon-specific teardown or measurement. No absolute or relative millimeter width or foot-volume value is known."
+}

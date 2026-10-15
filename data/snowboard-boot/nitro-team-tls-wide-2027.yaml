@@ -4,11 +4,15 @@ brand: nitro
 model: "Team TLS Wide"
 year: 2027
 title: "Nitro Team TLS Wide 2027"
-one_liner: "Team TLS 的宽楦版本，采用双区快速系带、Vibram 外底与 Air Dampening。"
+one_liner: "Team TLS 宽版；Nitro 官方称宽版贴合比标准版宽 4 mm，但未说明具体测量口径。"
+price:
+  min: 3593.97
+  max: 3593.97
+  currency: CNY
 specs:
   lacingSystem: "TLS Twin Lacing 双区快速系带，Dyneema 鞋带与 Bail Out 快速松脱"
   flex: "平衡、多用途脚感（官方未标数值硬度）"
-  fit: "Wide 宽楦；ILS 内靴固定系统与 Armored Spine 脚跟加固"
+  fit: "Nitro 德国官方 26/27 页面称 Wide 版贴合比标准版宽 4 mm；未说明测量部位、尺码差异或数值是否对应鞋楦/鞋壳/鞋胆。"
   liner: "Cloud 9 热塑鞋胆，Re/Lace 锁定结构与 3D 后跟构造"
   innerCuff: "ILS 内靴固定系统；Armored Spine 与加固后跟"
   outsole: "Vibram ECOSTEP 橡胶外底，含最高 3% 再生橡胶"
@@ -40,20 +44,30 @@ specs:
     - { size: US 男 15, mondo: "33", usMen: "15", uk: "14", eu: 49 ⅓, notes: 官方 Mondopoint 毫米值转换为厘米；品牌通用换算，不代表型号库存。 }
   bindingCompatibility: 常规单板雪鞋；先按固定器尺码表核对鞋码，再实装检查鞋底、后跟与绑带。不可作为 Step On 专用鞋使用，快穿固定器也需核对具体型号范围。
   selectionNotes: 穿实际滑雪袜测量双脚脚长，以较长一侧查本品牌尺码表，再核对脚宽、脚背压力和屈膝时的锁跟。先选雪鞋再选固定器；不要把不同品牌的 EU/US 码作统一换算，也不要用单板腰宽直接断言鞋底不会拖雪。 Nitro 官网将男款脚长加量分为贴身 +5 mm、标准 +10 mm、宽松 +15 mm；女款分别 +10/+15/+20 mm。这是 Nitro 自身的拟合参考，不可套用于其他品牌。
-  fitEvidence: 官网未公布可跨品牌比较的鞋楦毫米宽度或脚背容积；现有宽楦/贴合描述属于厂家标注，不等于适合某种脚型的实测结论。 Wide 应与该品牌同型号标准版比较，不能视为跨品牌统一宽度。
+  fitEvidence: Nitro 德国官方 26/27 Team TLS Wide 页面明确称 Wide 版提供比标准版宽 4 mm 的贴合；未定义所指测量部位或方法，也未说明是否按尺码变化。品牌还称该款适合需要额外空间的宽脚滑手。4 mm 仅作为原厂相对贴合描述，不解释为鞋楦、鞋壳或鞋胆的实测宽度；逐尺码楦宽和脚背容积仍未公布，不作跨品牌标准。
   heatMolding: 官方当前型号页提及鞋胆可热塑；热塑有助于贴合，但不等于能补救错误尺码或改变外壳结构。温度、流程与适用鞋胆须按品牌说明，由专业店确认。
-  compatibilitySources: https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-wide-boots-1；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide
+  compatibilitySources: https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-wide-boots-1；https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-boots-1；https://www.nitrosnowboards.com/pages/boot-size-and-fit-guide
   priceCheckedAt: 2026-10-12
   officialPrice: EUR 479.9
-  priceMarket: 原币 EUR；来源商店 www.nitrosnowboards.com
+  regionalListPrice: EUR 479.90
+  priceMarket: Nitro 欧洲官方商店；代表变体 SKU 13BT11007-101-250
   priceSource: https://www.nitrosnowboards.com/products/team-tls-wide-boots-1
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  seasonEvidence: Nitro 官方商品页标题标注 The 2027 Nitro Team TLS Wide Boots；商品变体 SKU 与价格快照相符。
+  priceStatus: 官方商品变体价格快照于 2026-10-12 记录为 EUR 479.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算为 CNY 3,593.97。仅为 Nitro 欧洲官方商店折算参考，不是中国售价；税费、配送及进口费用未计。快照中代表变体 US 7 显示缺货，库存会变化。
 data_source:
   kind: official
   origin_url: https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-wide-boots-1
+# 编辑暂估，非社区实测；评分口径见 docs/单板雪鞋编辑评分口径-2026-10-15.md
+editorial_scores:
+  fit: 8.3
+  support: 7.5
+  warmth: 8.2
+  convenience: 8.0
+  value: 5.0
 status: published
 images:
-  - url: "https://www.nitrosnowboards.com/cdn/shop/files/13BT11007-101_Team-TLS-Wide-Boots_Black_Product-1.jpg?v=1779339428&width=2304"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/2dee2c986411c636f5c40a8ddcc6a981f9676b062d97992b0bac2c78d2ec6862.webp"
     kind: face
     alt: Nitro Team TLS Wide 2027 黑色款官方雪鞋商品图
     source: Nitro 官方商品页（图片使用授权待核）

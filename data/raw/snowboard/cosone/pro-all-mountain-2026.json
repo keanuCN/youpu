@@ -1,0 +1,20 @@
+{
+  "brand": "COSONE",
+  "model": "COSONE Pro 全能板",
+  "season": "2026 (as stated on homepage card)",
+  "capturedAt": "2026-10-15",
+  "source": "https://www.cos1.net/",
+  "market": "COSONE official homepage",
+  "homepageCard": {
+    "name": "COSONE Pro 全能板",
+    "label": "2026新款 男女通用",
+    "listedPrice": { "amount": 3999, "currency": "CNY" }
+  },
+  "verificationLimitations": [
+    "No accessible product detail page or size chart was found.",
+    "Homepage navigation and product actions appeared to use placeholder links.",
+    "Technical specifications, stock and checkout availability could not be verified.",
+    "The product image URL returned 404 at capture; no image is assigned."
+  ],
+  "status": "draft"
+}

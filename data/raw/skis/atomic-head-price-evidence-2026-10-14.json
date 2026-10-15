@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-10-14",
+  "exchangeRates": {
+    "source": "European Central Bank euro foreign exchange reference rates",
+    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-14",
+    "eurUsd": 1.1195,
+    "eurCny": 7.4925,
+    "usdCnyCrossRate": 6.6927199643
+  },
+  "caveats": [
+    "Converted values are regional store or retailer price references, not prices in China.",
+    "Atomic Redster amounts use the retailer-displayed 2025/26 reference/UVP for skis with the indicated binding system; retailer sale prices can be lower.",
+    "Atomic Bent 100 official US page shows USD 850.00 excluding VAT and does not identify the season; article AA0030952 is cross-confirmed as 2026/27 by model-specific retail pages. This is a US official-price reference, not a China price; the seed is published as 2026/27.",
+    "HEAD e-SL Pro official Monaco page lists the ski starting price; bindings are separately priced options. The page does not identify the season.",
+    "HEAD e.SLR retailer comparison price is a dated low offer for article 313365 with PR 11 GW; price and availability can change.",
+    "HEAD Supershape e-Magnum US official page showed out of stock and did not state a season; exact article 313306 is independently confirmed as 2026/27 by the HEAD workbook and matching retail pages. Its price remains a US regional reference."
+  ],
+  "products": [
+    {
+      "seed": "data/skis/atomic-bent-100-2027.yaml",
+      "model": "Atomic Bent 100",
+      "articleReference": "AA0030952+",
+      "season": "2026/27 by article AA0030952 cross-reference; not explicitly printed on current official product page",
+      "listedPrice": "USD 850.00 excluding VAT",
+      "convertedPriceCny": 5688.81,
+      "configuration": "Flat skis only",
+      "source": "https://www.atomic.com/en-us/products/bent-100-aa7366-202600"
+    },
+    {
+      "seed": "data/skis/atomic-redster-q7-2026.yaml",
+      "model": "Redster Q7 Revoshock C",
+      "articleReference": "AASS03668",
+      "season": "2025/26",
+      "listedPrice": "EUR 859.99 retailer reference price",
+      "convertedPriceCny": 6443.48,
+      "configuration": "MI 12 GW binding set",
+      "source": "https://www.ski-andmore.de/ski-alpin/sportcarver/atomic-redster-q7-revoshock-c-inkl-mi-12-gw-bindung-2025-26_113858"
+    },
+    {
+      "seed": "data/skis/atomic-redster-q7-8-2026.yaml",
+      "model": "Redster Q7.8 Revoshock C",
+      "articleReference": "AASS03666",
+      "season": "2025/26",
+      "listedPrice": "EUR 899.99 retailer UVP",
+      "convertedPriceCny": 6743.18,
+      "configuration": "MI 12 GW binding set",
+      "source": "https://www.intersport.de/p/atomic-herren-ski-redster-q78-rvsk-c-mi-12-gw-p2229852"
+    },
+    {
+      "seed": "data/skis/atomic-redster-q9-2026.yaml",
+      "model": "Redster Q9 Revoshock S",
+      "articleReference": "AASS03664",
+      "season": "2025/26",
+      "listedPrice": "EUR 1,159.99 retailer reference price",
+      "convertedPriceCny": 8691.23,
+      "configuration": "I 12 GW binding set",
+      "source": "https://www.bruendl.at/de/produkte-marken/produkte/ausruestung/atomic-redster-q9-rvsk-s--i-12-gw"
+    },
+    {
+      "seed": "data/skis/atomic-redster-q9-8-2026.yaml",
+      "model": "Redster Q9.8 Revoshock S",
+      "articleReference": "AASS03662",
+      "season": "2025/26",
+      "listedPrice": "EUR 1,199.99 retailer UVP",
+      "convertedPriceCny": 8990.93,
+      "configuration": "I 12 GW binding set",
+      "source": "https://sport-kaufmann.de/wintersport/ski-alpin/ski/racecaver/366937/atomic-redster-q9-8-revoshock-s-i-12-gw-2025/26-allmountainski"
+    },
+    {
+      "seed": "data/skis/atomic-redster-s9-2026.yaml",
+      "model": "Redster S9 Revoshock S",
+      "articleReference": "AASS03628",
+      "season": "2025/26",
+      "listedPrice": "EUR 1,159.99 retailer UVP",
+      "convertedPriceCny": 8691.23,
+      "configuration": "I 12 GW binding set",
+      "source": "https://sport-kaufmann.de/wintersport/ski-alpin/ski/slalomcarver/366935/atomic-redster-s9-revoshock-s-i-12-gw-2025/26-slalomski"
+    },
+    {
+      "seed": "data/skis/head-e-sl-pro-2026.yaml",
+      "model": "Worldcup Rebels e-SL Pro",
+      "articleReference": "313236.SET",
+      "season": "not identified on official product page",
+      "listedPrice": "EUR 1,310.00 starting price",
+      "convertedPriceCny": 9815.18,
+      "configuration": "Ski base price; binding options carry additional charges",
+      "source": "https://www.head.com/fr_MC/product/worldcup-rebels-e-sl-pro-313236-set"
+    },
+    {
+      "seed": "data/skis/head-e-slr-2026.yaml",
+      "model": "Worldcup Rebels e.SLR",
+      "articleReference": "313365",
+      "season": "2025/26",
+      "listedPrice": "EUR 349.90 lowest comparison offer observed",
+      "convertedPriceCny": 2621.63,
+      "configuration": "Skis plus PR 11 GW binding; comparison page last updated 2026-09-13",
+      "source": "https://preisvergleich.heise.de/head-worldcup-rebels-e-slr-pr-11-gw-inkl-bindung-modell-2025-2026-313365-a3617720.html"
+    },
+    {
+      "seed": "data/skis/head-supershape-e-magnum-2027.yaml",
+      "model": "Supershape e-Magnum",
+      "articleReference": "313306.SET",
+      "season": "2026/27 by HEAD article 313306; official US product page itself does not state season and showed out of stock at capture",
+      "listedPrice": "USD 1,099.00",
+      "convertedPriceCny": 7355.30,
+      "configuration": "Product page offers binding selection; verify selected setup at checkout",
+      "source": "https://www.head.com/en_US/product/supershape-e-magnum-313306-set"
+    }
+  ]
+}

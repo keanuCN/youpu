@@ -4,6 +4,10 @@ brand: aula
 model: AULA F75 Max
 year: 2026
 title: AULA F75 MAX – Aula Gear
+price:
+  min: 279
+  max: 319
+  currency: CNY
 specs:
   keyboardType: mechanical
   mounting: Gasket
@@ -18,6 +22,8 @@ specs:
   keycapMaterial: PBT
   batteryCapacity: 4000
   driver: AULA Driver
+  priceSource: https://detail.zol.com.cn/series/33/10925456_1.html
+  priceStatus: 中关村在线于 2026-10-15 展示 F75 MAX 京东参考报价 CNY 279–319；具体配色、轴体、优惠和库存以商品页为准。
 images:
   - url: https://aulagear.com/cdn/shop/files/IMG_5706.png?v=1734344767&width=900
     kind: face

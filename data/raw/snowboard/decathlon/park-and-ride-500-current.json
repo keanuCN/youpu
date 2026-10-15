@@ -5,7 +5,7 @@
   "sources": {
     "officialProductPage": {
       "url": "https://www.decathlon.co.uk/p/mens-all-mountain-and-freestyle-snowboard-park-and-ride-500-green/306010/c49c1m8938817",
-      "retrievedAt": "2026-10-02",
+      "retrievedAt": "2026-10-15",
       "sku": "8938817",
       "priceGBP": 199.99,
       "priceType": "UK listing price; page does not label this as MSRP",
@@ -16,10 +16,10 @@
         "Product page claims 2-year warranty."
       ],
       "sizeRows": [
-        {"size":"152","noseWaistTailMm":[288,250,288],"sidecutM":8.2,"stanceMm":560},
-        {"size":"153W","noseWaistTailMm":[300,258,300],"sidecutM":8.3,"stanceMm":565},
-        {"size":"156","noseWaistTailMm":[296,255,296],"sidecutM":8.4,"stanceMm":575},
-        {"size":"158W","noseWaistTailMm":[304,266,304],"sidecutM":8.4,"stanceMm":585}
+        {"size":"152","noseWaistTailMm":[288,250,288],"sidecutM":8.2,"stanceMm":560,"weightGrams":2710,"weightTolerancePercent":6,"recommendedHeightCm":[167,177]},
+        {"size":"153 MW","noseWaistTailMm":[300,258,300],"sidecutM":8.3,"stanceMm":565,"weightGrams":2800,"weightTolerancePercent":6,"recommendedHeightCm":[168,178]},
+        {"size":"156","noseWaistTailMm":[296,255,296],"sidecutM":8.4,"stanceMm":575,"weightGrams":2848,"weightTolerancePercent":6,"recommendedHeightCm":[171,181]},
+        {"size":"158 W","noseWaistTailMm":[304,266,304],"sidecutM":8.4,"stanceMm":585,"weightGrams":3000,"weightTolerancePercent":6,"recommendedHeightCm":[178,190]}
       ],
       "limitations": "The official listing is live and SKU-specific but does not state a production season or model year. The catalog's 2026 label is a snapshot convention, not confirmed season attribution. Values are for the UK market; current dynamic price must not be presented as a verified China retail price."
     },
@@ -51,6 +51,17 @@
       "listedFormerPriceGBP": 199.99,
       "note": "A distinct UK product/color/size listing for the same named model showed a dynamic promotional price. It is not the seed's selected SKU 8938817 and is not a China-market price; do not merge this price into the seed."
     },
+    "turkeyOfficialRegionalPrice": {
+      "url": "https://www.decathlon.com.tr/p/yetiskin-pist-ve-freeride-snowboard-park-and-ride-500/_/R-p-306010?c=S%C4%B0YAH_YE%C5%9E%C4%B0L",
+      "retrievedAt": "2026-10-15",
+      "sku": "8938817",
+      "priceTRY": 14500,
+      "priceType": "Turkey Decathlon official regional listing price; not labeled MSRP",
+      "variantEvidence": "The page names Park & Ride 500, reference 8938817, and offers 152, 153 Midwide, 156 and 158 Wide options. All sizes were shown unavailable when captured.",
+      "convertedPriceCNY": 1964.86,
+      "conversion": "TRY 14,500 / EUR-TRY 55.2921 * EUR-CNY 7.4925, ECB 2026-10-14 reference rates",
+      "limitations": "Regional Turkey price only; not a China retail price. Exchange rates are informational. Tax treatment, delivery, import costs and current availability outside the captured region are not inferred."
+    },
     "chinaMarketSecondaryPriceLead": {
       "url": "https://thesnowfever.com/brandstory/Decathlon",
       "retrievedAt": "2026-10-02",
@@ -69,7 +80,7 @@
   },
   "unresolved": [
     "Official product year/season and review sample year are not established.",
-    "No verified SKU-/size-specific China-market price; SnowFever lists a CNY 1699.90 starting-price lead without a dated offer or SKU. Current UK GBP price and German EUR review price are not interchangeable with CNY retail.",
+    "No verified SKU-/size-specific China-market price; SnowFever lists a CNY 1699.90 starting-price lead without a dated offer or SKU. UK and Turkey official regional price conversions are market references, not China retail.",
     "No verified board weight, effective edge, or image reuse license in this evidence set.",
     "Review does not disclose test size, rider details, exact conditions, or test duration."
   ]

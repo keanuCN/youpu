@@ -1,0 +1,106 @@
+{
+  "brand": "HEAD",
+  "model": "Worldcup Rebels e-SL Pro",
+  "articleNumber": "313236.SET",
+  "retrievedAt": "2026-10-15",
+  "seedFile": "data/skis/head-e-sl-pro-2027.yaml",
+  "officialSeasonSource": {
+    "url": "https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf",
+    "articleNumber": "313236",
+    "evidence": "HEAD 26/27 Hardgoods Workbook identifies article 313236 as WC Rebels e-SL Pro. The previous season's article is 313235."
+  },
+  "officialProductPage": {
+    "url": "https://www.head.com/nl_NL/product/worldcup-rebels-e-sl-pro-313236-set",
+    "evidence": "HEAD official product page for SKU 313236.SET lists 150/155/160/165/170 cm options; default 150 cm shows 122/68/107 mm and 10.5 m radius. It also gives a 12.0 m reference radius at 160 cm. Season is established separately by the official 26/27 workbook."
+  },
+  "officialFeaturesRecheck20261015": {
+    "url": "https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set",
+    "articleNumber": "313236.SET",
+    "verifiedFields": {
+      "skill": "Expert",
+      "terrain": "On Piste",
+      "speed": "Superfast",
+      "turnRadiusType": "Short Radius",
+      "profile": "Rebel Camber",
+      "selected150cmProfile": {"camberPercent": 100, "tipRockerPercent": 0, "tailRockerPercent": 0},
+      "materialsAndSystems": ["Graphene", "Titanal layers", "EMC electronic ski dampening system"]
+    },
+    "evidence": "HEAD 官方 313236.SET 商品页直接列出 Expert、On Piste、Superfast、Short Radius、Rebel Camber，以及 Graphene/titanal 层和 EMC 减震系统；当前选中 150 cm 时页面的 Camber/Rocker Profile 显示 camber 100%、tip/tail rocker 0%。",
+    "decision": "把官方产品定位、材料/系统名称和 150 cm 当前显示的板型比例分别记录；比例数据明确限定在页面所选 150 cm，不外推其他长度。"
+  },
+  "verifiedLengthOptionsCm": [150, 155, 160, 165, 170],
+  "verifiedSizeRows": [
+    {
+      "lengthCm": 150,
+      "sidecutMm": [122, 68, 107],
+      "radiusM": 10.5,
+      "source": "officialProductPage"
+    },
+    {
+      "lengthCm": 155,
+      "sidecutMm": [122, 68, 107],
+      "radiusM": 11.2,
+      "source": "xspoExactArticleAndSeason",
+      "corroboratedBy": ["headRuRetailProductPage", "heiseProductAggregate"]
+    },
+    {
+      "lengthCm": 160,
+      "sidecutMm": [122, 68, 107],
+      "radiusM": 12.0,
+      "source": "officialProductPageAndExactArticleRetailTables",
+      "notes": "官方商品页标注为 160 cm 参考半径；HEAD 俄罗斯官方零售页、XSPO 与 Heise 资料确认相同三围。"
+    },
+    {
+      "lengthCm": 165,
+      "sidecutMm": [122, 68, 107],
+      "radiusM": 12.9,
+      "source": "xspoExactArticleAndSeason",
+      "corroboratedBy": ["headRuRetailProductPage", "heiseProductAggregate", "skixpressListing", "snowHowListing"],
+      "conflict": {
+        "source": "https://skicatalogue.com/products/head-wc-rebels-e-sl-pro-26-27",
+        "reportedRadiusM": 12.8
+      }
+    },
+    {
+      "lengthCm": 170,
+      "sidecutMm": [122, 68, 107],
+      "radiusM": 13.7,
+      "source": "xspoExactArticleAndSeason",
+      "corroboratedBy": ["headRuRetailProductPage", "heiseProductAggregate"],
+      "conflict": {
+        "source": "https://skicatalogue.com/products/head-wc-rebels-e-sl-pro-26-27",
+        "reportedRadiusM": 13.6
+      }
+    }
+  ],
+  "retailerGeometrySource": {
+    "url": "https://www.xspo.com/head-worldcup-rebels-e-sl-pro-wcr-14-167742",
+    "articleNumber": "26h-HEA313236",
+    "season": "2026/27",
+    "evidence": "XSPO marks the exact manufacturer article and season and provides 150/155/160/165/170 cm geometry. HEAD Russia shop pages for exact article 313236 bundles independently reproduce all five rows; Heise corroborates 155–170 cm.",
+    "corroboratingSources": [
+      {
+        "url": "https://head.ru/ski/shop/skis/8368/137784/",
+        "evidence": "HEAD Russia shop article 31323605, season 2026/27, FF ST 16 bundle; lists all five geometry rows."
+      },
+      {
+        "url": "https://head.ru/ski/shop/skis/8368/137790/",
+        "evidence": "HEAD Russia shop article 31323605, season 2026/27, FF 14 GW bundle; lists all five geometry rows."
+      },
+      {
+        "url": "https://preisvergleich.heise.de/head-worldcup-rebels-e-sl-pro-modell-2026-2027-313236-a3969004.html",
+        "evidence": "Model aggregate for article 313236; corroborates 155–170 cm dimensions and radii."
+      }
+    ]
+  },
+  "conflictingRetailerSource": {
+    "url": "https://skicatalogue.com/products/head-wc-rebels-e-sl-pro-26-27",
+    "sku": "313236160",
+    "evidence": "Lists same 26/27 model/article and matching dimensions, but gives 165 cm radius 12.8 m and 170 cm 13.6 m, versus 12.9/13.7 m from XSPO, HEAD Russia shop and other retailer references."
+  },
+  "limitations": [
+    "Product page itself does not state the season; 26/27 attribution is supported by the official HEAD workbook for article 313236.",
+    "155/165/170 cm full geometry is transcribed from exact-article, exact-season retailer sources rather than the HEAD global product page; 165/170 cm has an explicitly recorded conflicting retailer table.",
+    "HEAD official sources directly expose 150 cm selected geometry and 160 cm reference radius; full geometry for other sizes is not present in the global product-page text."
+  ]
+}

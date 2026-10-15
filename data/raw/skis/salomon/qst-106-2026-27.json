@@ -8,7 +8,15 @@
     "officialProductPage": "https://www.salomon.com/en-us/product/qst-106-almond-milk-li8133",
     "officialProductEvidence": "The official Salomon page confirms sizes 157/165/173/181/189 cm, 106 mm waist, Freeride Profile, Rocker-Camber-Rocker, 16.5 m radius (page's displayed reference), Full Poplar Woodcore, Ti Binding Reinforcement, Basalt Superlight Fibers, Fiberglass, Full Sandwich Sidewalls and Cork Damplifier.",
     "sizeTable": "https://www.tanabesports.jp/ts/wp-content/uploads/2026/03/26-27_SALOMON_SKI_user.pdf",
-    "sizeTableEvidence": "The 2026/27 Salomon catalogue table lists per-length tip/waist/tail, radius, midsole position, and explicitly labels the weight column WEIGHT (/ski). It reports 1800 g per ski at 173 cm."
+    "sizeTableEvidence": "The 2026/27 Salomon catalogue table lists all five lengths for article L47774500+, including per-length tip/waist/tail, radius, midsole position, and a weight column explicitly labeled WEIGHT (/ski). It reports 1800 g per ski at 173 cm. The catalogue is the season-specific primary source for the full table; the same article reference is visible on Salomon's official product page.",
+    "capturedAt": "2026-10-14",
+    "fullLengthTable": [
+      {"lengthCm":157,"tipMm":136,"waistMm":106,"tailMm":123,"radiusM":16.5,"midsoleMm":690,"weightPerSkiG":1500},
+      {"lengthCm":165,"tipMm":137,"waistMm":106,"tailMm":124,"radiusM":17.5,"midsoleMm":730,"weightPerSkiG":1650},
+      {"lengthCm":173,"tipMm":138,"waistMm":106,"tailMm":125,"radiusM":18.5,"midsoleMm":769,"weightPerSkiG":1800},
+      {"lengthCm":181,"tipMm":139,"waistMm":106,"tailMm":126,"radiusM":19.5,"midsoleMm":810,"weightPerSkiG":2000},
+      {"lengthCm":189,"tipMm":140,"waistMm":106,"tailMm":127,"radiusM":20.5,"midsoleMm":851,"weightPerSkiG":2190}
+    ]
   },
   "specifications": {
     "lengthsCm": [157, 165, 173, 181, 189],
@@ -28,7 +36,7 @@
     "technology":["Cork Damplifier"]
   },
   "mappingNotes": [
-    "The seed's turnRadius uses the 173 cm reference (18.5 m); all size-specific sidecut and radius values are retained.",
+    "The seed's turnRadius uses the 173 cm reference (18.5 m); all five sizes' sidecut, radius and single-ski weight are retained.",
     "The official product page's 3000 g net-weight field does not identify its reference length or per-ski/per-pair basis and is not mapped. The separately cited 2026/27 catalogue explicitly labels weight per ski; its 173 cm value (1800 g) is used."
   ],
   "imageRights": "The official product image URL is a source reference only; no explicit reuse license verified."

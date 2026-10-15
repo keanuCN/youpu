@@ -40,7 +40,7 @@ specs:
   priceCheckedAt: 2026-10-12
   priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
 images:
-  - url: "https://www.follows.co.jp/pic-labo/2627bc-dr-1.jpg"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/beb0de848c718ae06a5e11c62274a03b74d70ea3f2d850dacb989a1a9970c58a.webp"
     kind: face
     alt: BC Stream Rider's Spec DR 2027 单板正面图
     source: Follows 商品页（零售商图片，授权待核；正式上线前迁移至自有 COS 或替换为自制图）

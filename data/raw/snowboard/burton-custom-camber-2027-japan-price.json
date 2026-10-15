@@ -1,0 +1,30 @@
+{
+  "slug": "burton-custom-camber-2027",
+  "model": "Burton Custom Camber",
+  "season": "2026/27",
+  "productId": "106881",
+  "variantCode": "27WIN-106881",
+  "market": "Burton Japan official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 107800,
+    "currency": "JPY",
+    "source": "https://jp.burton.com/ja-jp/products/mens-burton-custom-camber-snowboard-106881"
+  },
+  "convertedReference": {
+    "amount": 4553.20,
+    "currency": "CNY",
+    "method": "JPY 107,800 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan official-store reference only; not a mainland China selling price or transaction price.",
+      "The crawled page listed sizes 150/154/156/158/162/154W/158W/162W/166W/170W but did not expose reliable stock state for every size.",
+      "The page did not explicitly establish tax treatment; shipping, cross-border delivery, and import charges are not included.",
+      "ECB reference rates are informational and are not transaction rates."
+    ]
+  },
+  "observedSizes": ["150", "154", "156", "158", "162", "154W", "158W", "162W", "166W", "170W"],
+  "availabilityAtCapture": "A restock-notification control was present; per-size availability was not reliably exposed in the captured page text.",
+  "notes": "Official Burton Japan page explicitly identifies season code 27WIN-106881 and lists JPY 107,800."
+}

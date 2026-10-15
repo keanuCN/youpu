@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-15",
+  "market": "Nitro 官方产品目录",
+  "collection": {
+    "source": "https://www.nitrosnowboards.com/collections/bindings-26-27",
+    "seasonInOfficialCollectionPath": "26-27",
+    "observedAt": "2026-10-15",
+    "finding": "官方固定器集合页列出下列九款同名型号。结合各商品页标题所示的 2027，将其归档到 2026/27（2027）。该集合关系只确认该季在售目录归属，不表示首次上市时间，也不证明某款尺码实时有库存。"
+  },
+  "products": [
+    { "slug": "nitro-fate-binding-2027", "model": "Fate 女款", "productPage": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/fate-womens-bindings-1" },
+    { "slug": "nitro-one-binding-2027", "model": "One", "productPage": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/one-bindings-1" },
+    { "slug": "nitro-phantom-binding-2027", "model": "Phantom", "productPage": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/phantom-bindings-2" },
+    { "slug": "nitro-phantom-plus-binding-2027", "model": "Phantom+", "productPage": "https://www.nitrosnowboards.com/collections/all-mens-bindings-26-27/products/phantom-bindings-3" },
+    { "slug": "nitro-poison-binding-2027", "model": "Poison 女款", "productPage": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/poison-womens-bindings-1" },
+    { "slug": "nitro-rambler-binding-2027", "model": "Rambler", "productPage": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/rambler-bindings-1" },
+    { "slug": "nitro-talent-binding-2027", "model": "Talent Unisex", "productPage": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/talent-unisex-bindings-1" },
+    { "slug": "nitro-team-binding-2027", "model": "Team", "productPage": "https://www.nitrosnowboards.com/products/team-bindings-1" },
+    { "slug": "nitro-team-pro-binding-2027", "model": "Team Pro", "productPage": "https://www.nitrosnowboards.com/products/team-pro-bindings-1" }
+  ],
+  "limitations": [
+    "没有将 2027 解释为首次上市年份。",
+    "官方目录和页面尺码选择器不能证明实时库存。",
+    "价格仍按对应价格审计记录中的欧洲官方挂牌价折算为人民币地区参考，不是中国售价。"
+  ]
+}

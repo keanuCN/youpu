@@ -1,0 +1,33 @@
+{
+  "brand": "HEAD",
+  "model": "Shape V2",
+  "season": "2025-26",
+  "articleNumber": "315285",
+  "retrievedAt": "2026-10-14",
+  "seedFile": "data/skis/head-shape-v2-2026.yaml",
+  "retailer": "Tanabe Sports",
+  "market": "Japan; Chinese-language, CNY-converted storefront",
+  "source": "https://tanabesports.net/goods_zhcn_cny_45065.html",
+  "productPageEvidence": {
+    "evidence": "商品页标题明确标注 HEAD Shape V2、2026 款与商品号码 315285；产品信息区再次列出 Article Number 315285。页面公布 JPY 82,500 原价、JPY 44,500 促销价，并动态折算显示 CNY 1,880.39。套装配套 PR 11 GW 固定器和 All Mountain PR Base。页面列出 142/149/156/163/170 cm 尺码选项。",
+    "availableSizes": [142, 149, 156, 163, 170],
+    "articleNumber": "315285",
+    "listPriceJpy": 82500,
+    "salePriceJpy": 44500,
+    "displayedPriceCny": 1880.39,
+    "binding": "100942 / PR 11 GW Brake [G] 85 mm",
+    "plate": "All Mountain PR Base"
+  },
+  "priceInterpretation": {
+    "recordedCurrency": "CNY",
+    "recordedPrice": 1880.39,
+    "isChinaDomesticOffer": false,
+    "seasonMatched": true,
+    "availabilityBySizeConfirmed": false,
+    "limitations": "Tanabe Sports 为日本零售商；CNY 为页面按动态汇率折算显示，原促销报价为 JPY 44,500。不同尺码的即时库存未从当前中文页面结构化状态确认；结账前应复核所选尺码、报价和能否配送至目的地。未计跨境运费、进口税费或其他费用。"
+  },
+  "remainingUnknowns": [
+    "各尺码的即时库存状态需在结账前确认。",
+    "CNY 折算金额会随零售商汇率更新，不等于国内渠道报价或含税到手价。"
+  ]
+}

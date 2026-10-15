@@ -10,6 +10,7 @@ price:
   max: 5256
   currency: CNY
 specs:
+  seasonEvidence: Jones 官方商品页当前变体货号为 J.27.SNU.STC.000.142.1（J.27 年款代码）且页面标注 2027，归档为 2026/27（2027 款）；此代码不证明首次上市年份或实时库存。
   length: 152
   weight: 2900
   effectiveEdge: 1070
@@ -43,7 +44,7 @@ editorial_scores:
   forgiveness: 7.0
   value: 6.6
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNU.STC-gallery-1.webp?v=1782443829&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/d5bdead8fea935fb7b3b26aaf3113d054bf2d38856a9fea6dfcdaa3ee67b5ae6.webp"
     kind: face
     alt: Jones Storm Chaser 2027 官方产品图
     source: Jones 官方产品页图片（本地演示，版权待核）

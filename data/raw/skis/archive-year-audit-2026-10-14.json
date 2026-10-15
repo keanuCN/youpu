@@ -1,0 +1,77 @@
+{
+  "capturedAt": "2026-10-14",
+  "scope": "Ski season and article identity checks for Atomic, HEAD, and Salomon records",
+  "findings": [
+    {
+      "brand": "Atomic",
+      "seedFiles": [
+        "data/skis/atomic-redster-q7-2026.yaml",
+        "data/skis/atomic-redster-q7-8-2026.yaml",
+        "data/skis/atomic-redster-q9-2026.yaml",
+        "data/skis/atomic-redster-q9-8-2026.yaml",
+        "data/skis/atomic-redster-s9-2026.yaml"
+      ],
+      "seasonEvidence": "Atomic's current 26/27 Redster catalog/site shows new model/SKU variants; Atomic's official press release states the Q line was renewed for 26/27. These are not interchangeable with the seed's 25/26 records.",
+      "sources": [
+        "https://press.atomic.com/news/a-sneak-peek-at-the-26-slash-27-product-highlights-from-atomic-505638",
+        "https://www.atomic.com/en-int/collections/ato-featured-family-redster",
+        "https://www.atomic.com/en-int/products/redster-q9-8-revoshock-s-i-12-gw-aa7468-202600"
+      ],
+      "seasonSource": "Atomic manufacturer-authored 2025/26 catalog copy: https://www.sport-hun.at/wp-content/uploads/2025/03/Atomic-Katalog-2526.pdf",
+      "verifiedTables": [
+        {"model":"Redster Q7 Revoshock C","article":"AASS03668","lengthsCm":[152,160,168,176],"rows":4},
+        {"model":"Redster Q7.8 Revoshock C","article":"AASS03666","lengthsCm":[159,166,173,181],"rows":4},
+        {"model":"Redster Q9 Revoshock S","article":"AASS03664","lengthsCm":[152,160,168,176],"rows":4},
+        {"model":"Redster Q9.8 Revoshock S","article":"AASS03662","lengthsCm":[159,166,173,181],"rows":4},
+        {"model":"Redster S9 Revoshock S","article":"AASS03628","lengthsCm":[155,160,165,170],"rows":4}
+      ],
+      "decision": "Add structured geometry only from matching 25/26 article numbers. Manufacturer catalog gives one representative weight per model, explicitly including plate and binding; record weight only for that reference length. On 2026-10-15, replace the Q7 AASS03668 25/26 seed's mismatched AASS03788 image with a retailer product image whose page title and article match AASS03668, then publish that record; retailer-image display rights remain unconfirmed. Keep Q7.8, Q9, and Q9.8 in draft because their existing image article numbers are 26/27 SKUs. S9 article and image SKU match.",
+      "limitations": ["The manufacturer catalog is preserved as a hosted catalog copy rather than an Atomic-owned domain."]
+    },
+    {
+      "brand": "HEAD",
+      "seedFiles": [
+        "data/skis/head-e-slr-2026.yaml",
+        "data/skis/head-easy-joy-r-2026.yaml",
+        "data/skis/head-shape-e-v5-2026.yaml",
+        "data/skis/head-shape-v2-2026.yaml",
+        "data/skis/head-shape-v2-r-2026.yaml"
+      ],
+      "seasonSource": "HEAD Hardgoods Workbook 2025/26, manufacturer-authored catalog copy: https://www.skiandbikes.com/image/document/head_workbook_2526_en.pdf",
+      "verifiedExamples": [
+        {"model":"Worldcup Rebels e.SLR","article":"313365","lengthsCm":[149,156,163,170],"referenceSidecutMm":[123,66,107],"referenceLengthCm":163,"referenceRadiusM":11.2},
+        {"model":"EASY JOY R","article":"316265","lengthsCm":[143,148,153,158,163],"referenceSidecutMm":[121,75,107],"referenceLengthCm":163,"referenceRadiusM":13.1},
+        {"model":"Shape V2 R","article":"316225","lengthsCm":[142,149,156,163,170,177],"referenceSidecutMm":[128,70,108],"referenceLengthCm":170,"referenceRadiusM":12.5}
+      ],
+      "verifiedTables": [
+        {"model":"Worldcup Rebels e.SLR","article":"313365","lengthsCm":[149,156,163,170],"sidecutByLengthMm":[[123,66,107],[123,66,107],[123,66,107],[123,66,107]],"radiiM":[9.2,10.2,11.2,12.3],"sizeRows":4,"sources":["https://www.skiandbikes.com/image/document/head_workbook_2526_en.pdf","https://www.sportokay.com/at_en/head-worldcup-rebels-e-slr-pr-11-gw-skiset-2026.html"]},
+        {"model":"Shape e-V5","article":"315255","lengthsCm":[149,156,163,170,177],"sidecutByLengthMm":[[128,74,109],[128,74,109],[128,74,109],[128,74,109],[128,74,109]],"radiiM":[9.1,10.2,11.3,13,15],"sizeRows":5,"sources":["https://www.skiandbikes.com/image/document/head_workbook_2526_en.pdf","https://preisvergleich.heise.de/head-shape-e-v5-performance-pr-11-gw-inkl-bindung-modell-2025-2026-315255-a3620573.html"]},
+        {"model":"Shape V2","article":"315285","lengthsCm":[142,149,156,163,170,177],"sidecutByLengthMm":[[128,70,108],[128,70,108],[128,70,108],[128,70,108],[128,70,108],[128,70,108]],"radiiM":[7.9,8.9,9.9,11,12.5,13.3],"sizeRows":6,"sources":["https://www.skiandbikes.com/image/document/head_workbook_2526_en.pdf","https://preisvergleich.heise.de/head-shape-v2-performance-pr-11-gw-inkl-bindung-modell-2025-2026-315285-a3620670.html"]}
+      ],
+      "unresolved": [
+        {"model":"EASY JOY R","seedArticle":"316265","workbookReference":{"lengthCm":163,"sidecutMm":[121,75,107],"radiusM":13.1},"nextSeasonArticle":"316266","nextSeasonSource":"https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf","excludedProductPageArticle":"316485","observedProductPage":"https://www.head.com/en_US/product/easy-joy-r-316485","productPageReference":{"lengthCm":163,"sidecutMm":[117,70,103],"radiusM":13.3},"verifiedImage":"https://cdn-mdb.head.com/CDN3/D/316265/1/683x911/easy-joy-r.webp","decision":"The 2025/26 seed follows article 316265 from the HEAD workbook and records only its 163 cm reference geometry. The matching official CDN image path contains article 316265 and returns image/webp. The next-season 26/27 workbook uses article 316266 for EASY JOY R. For 316485, the 25/26 workbook lists PURE JOY R, while an indexed HEAD product-page slug and retailer pages use EASY JOY R; this exact-article naming conflict is unresolved. Exclude its values from 316265. Keep draft because the other four lengths for article 316265 still lack per-size specifications."},
+        {"model":"Shape V2 R","article":"316225","workbookReference":{"lengthCm":170,"sidecutMm":[128,70,108],"radiusM":12.5},"rentalHandbookReference":{"lengthCm":170,"sidecutMm":[128,70,108],"radiusM":12.4},"newPerLengthRows":[{"lengthCm":156,"sidecutMm":[128,70,108],"radiusM":10.5},{"lengthCm":163,"sidecutMm":[128,70,108],"radiusM":11.2}],"sources":["https://www.eski.sk/image/document/head_workbook_2526_en.pdf","https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/d1d55eee-6c7d-45e8-80f2-f29f0e059c55/HRS%20Handbook%2025-26.pdf?ver=1744650386194","https://www.intersport.de/p/head-herren-all-mountain-ski-heuni-shape-v2-r-pr-11-gw-promo-p2271800?articleId=a203439183","https://www.tocikusa.com/products/ws-5457_2025-2026-head-shape-v2-r-skis-men","https://www.emmecisport.com/catalogo/173-sci-all-mountain/32556-sci-head-shape-v2-r-con-attacchi-pr-10-gw-316225"],"decision":"The 25/26 HEAD hardgoods workbook and rental handbook identify article 316225 and disagree on the 170 cm radius (12.5 vs 12.4 m); the exact-article retailer also lists 12.4 m at 170 and adds explicit 156 cm (10.5 m) and 163 cm (11.2 m) rows. Add only those two explicitly listed rows, preserve 12.5 m for 170 from the hardgoods workbook, and leave 142, 149 and 177 cm unfilled. The per-length retailer page does not state the season."}
+      ],
+      "decision": "Three HEAD 25/26 models have structured size rows from exact-article retailer transcriptions cross-checked against the manufacturer-authored workbook. No weight was inferred. Easy Joy R identity is resolved to article 316265 and its matching official image is recorded, but only its 163 cm geometry is available; article 316485 has conflicting model names between the workbook and product/retailer pages, and 26/27 uses article 316266. Shape V2 R now has explicit 156, 163 and 170 cm rows, while 142, 149 and 177 cm remain unavailable; the 170 cm radius conflict between same-season manufacturer documents remains recorded."
+    },
+    {
+      "brand": "Salomon",
+      "seedFiles": [
+        "data/skis/salomon-qst-92-2024.yaml",
+        "data/skis/salomon-qst-98-2024.yaml"
+      ],
+      "seasonEvidence": "Salomon manufacturer-authored FW23/24 Japanese catalog mirror lists QST 92 article L47232400+ and QST 98 article L47232300+ with full size rows. Salomon's current product pages confirm the matching article references; the 26/27 catalog omits both models.",
+      "sources": [
+        "https://www.tanabesports.jp/ts/wp-content/uploads/2023/06/23-24_SALOMON_user.pdf",
+        "https://www.salomon.com/en-gb/product/qst-92-li4911/L47232400%2B",
+        "https://www.salomon.com/en-gb/product/qst-98-li4910/L47232300%2B?sizeId=L47232300169"
+      ],
+      "verifiedTables": [
+        {"model":"QST 92","article":"L47232400+","season":"2023/24","lengthsCm":[160,168,176,184],"rows":4},
+        {"model":"QST 98","article":"L47232300+","season":"2023/24","lengthsCm":[169,176,183,189],"rows":4}
+      ],
+      "decision": "Reclassify both former 2026/27 drafts as 2023/24 historical records, add only catalog-supported per-size geometry, radius, and single-ski weights, and keep draft status. The manufacturer-hosted PDF URL now returns 404; a retailer-hosted copy of the manufacturer-authored catalog provides the tables.",
+      "limitations": ["Do not reuse these older specifications for current QST products without SKU and season matching.", "The manufacturer-hosted catalog URL is unavailable; evidence records the mirror limitation."]
+    }
+  ]
+}

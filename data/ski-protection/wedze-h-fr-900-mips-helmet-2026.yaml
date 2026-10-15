@@ -1,0 +1,48 @@
+slug: wedze-h-fr-900-mips-helmet-2026
+category: ski-protection
+brand: wedze
+model: H-FR 900 MIPS
+year: 2026
+title: WEDZE H-FR 900 MIPS 滑雪头盔
+one_liner: ABS/PC 混合壳体、MIPS 与 RECCO，EN 1077:2007 Class B；M 码 500 g。2026 为采集标签，官方资料未确认具体雪季。
+price:
+  min: 887.81
+  max: 887.81
+  currency: CNY
+specs:
+  protectorType: helmet
+  intendedUse: Decathlon 将其列为进阶水平、高频使用的 freeride 头盔；这是商品定位标签，不是安全等级或使用限制。
+  protectionStandard: EN 1077:2007
+  protectionClass: class-b
+  coverage: 滑雪与单板头部防护；Class B 依 EN 1077:2007 测试冲击吸收和抗穿透能力。
+  impactTechnology: MIPS 低摩擦层；官方说明可在特定斜向冲击时多方向移动约 10–15 mm，以降低传递至头部的旋转力。
+  weightRangeGr: 500 g（M码）
+  ventilation: 可调通风；后部拨片在静止与滑行状态间切换气流路径。
+  rescueSystem: 集成 RECCO 反射器，需由救援人员使用 RECCO 探测器搜寻；不替代雪崩信标或其他救援装备。
+  useSports: [skiing, snowboard]
+  availableSizes: [S, M, L]
+  sizeChart:
+    - { size: S, headCircumferenceCm: 52-55, sourceNote: 英国官方商品页尺码选项 }
+    - { size: M, headCircumferenceCm: 55-59, sourceNote: 英国官方商品页尺码选项 }
+    - { size: L, headCircumferenceCm: 59-62, sourceNote: 比利时官方同货号商品页尺码选项；不代表英国站可售 }
+  sizeEvidence: 英国官方同款页面当前只列 S/M；比利时官方页面以同款货号 8773682 列出 S/M/L 头围范围。尺码范围可交叉核实，但各地区尺码库存、价格和配送状态不通用。
+  fitAdvice: 官方建议按平时尺码选择；后旋钮调节头围，支持高度调整，耳罩为 3D 结构。建议试戴并确认与雪镜贴合。
+  attachment: 后部 Turnring 旋钮、可调下颌带及高度调节；泡棉可拆卸；无固定式或可拆式下巴护罩、无镜片。
+  materials: ABS 与聚碳酸酯混合外壳、EPS 内衬、聚氨酯泡棉。
+  helmetSafetyGuidance: 受到撞击后应更换；官方建议至少每 5 年更换一次，发生严重撞击则提前更换。MIPS 只描述特定斜向冲击下的旋转力管理，不应理解为不会脑震荡或可替代正确佩戴。
+  styleCode: 8773682（英国黑/白款）；官方 FR 900 MIPS 支持页还列出 8503323、8660329、8817967 等参考号，未跨色款合并价格。
+  seasonEvidence: 官方商品页未标注具体雪季；Decathlon 支持页列有 2021–2024 年合规声明下载入口，但不能据此认定为这些雪季款。2026 仅为采集标签。
+  priceCheckedAt: 2026-10-15
+  priceMarket: 英国 Decathlon 官方商品页
+  priceSource: https://www.decathlon.co.uk/p/adult-s-ski-helmet-freeride-fr-900-mips-black-and-white/302052/c382c227m8773682
+  priceStatus: 英国官方页当前列价 GBP 99.99，页面原价 GBP 109.99；按 ECB 2026-10-14 GBP/EUR 0.84385、EUR/CNY 7.4925 折合 CNY 887.81。此前记录的 GBP 109.99（折合 CNY 976.60）已成为该页显示的原价。当前折算为英国促销参考，不是中国售价；页面未选定具体尺码结账，库存与运费税费另核。
+images:
+  - url: "https://contents.mediadecathlon.com/p2576864/k%24aae088041e430d3d2c214bb9d0f8953e/picture.jpg?f=3000x0&format=auto"
+    kind: face
+    alt: WEDZE H-FR 900 MIPS 黑白滑雪头盔
+    source: Decathlon 英国官方商品图库；图片链接 HEAD 请求返回 200，前台展示授权待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/adult-s-ski-helmet-freeride-fr-900-mips-black-and-white/302052/c382c227m8773682
+status: published

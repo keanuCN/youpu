@@ -10,6 +10,7 @@ price:
   max: 3960
   currency: CNY
 specs:
+  seasonEvidence: Jones 官方商品页当前变体货号为 J.27.SNM.FRT.000.150.1（J.27 年款代码）且页面标注 2027，归档为 2026/27（2027 款）；此代码不证明首次上市年份或实时库存。
   length: 159
   weight: 2900
   effectiveEdge: 1220
@@ -50,7 +51,7 @@ editorial_scores:
   forgiveness: 8.0
   value: 8.0
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNM.FRT-gallery-1.webp?v=1782443696&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/952112879186d7d4f3577da6e3b913d2f6f19d762453ae754d4749370fbc347e.webp"
     kind: face
     alt: Jones Frontier 2.0 2027 官方产品图
     source: Jones 官方产品页图片（本地演示，版权待核）

@@ -4,7 +4,7 @@ brand: burton
 model: Talent Scout
 year: 2027
 title: Women's Burton Talent Scout Camber Snowboard 2027
-one_liner: Burton 女款公园双向板，Camber 结构强调跳台弹性和道具控制，并采用针对女性滑手调校的软硬设定。官网美区标价 $549.95，按项目 USD/CNY 目录汇率折算。
+one_liner: Burton 女款公园双向板，Camber 结构强调跳台弹性和道具控制，并采用针对女性滑手调校的软硬设定。
 editorial_scores:
   stability: 7.3
   response: 8.0
@@ -13,8 +13,8 @@ editorial_scores:
   forgiveness: 6.3
   value: 7.8
 price:
-  min: 3960
-  max: 3960
+  min: 3159.36
+  max: 3159.36
   currency: CNY
 specs:
   length: 146
@@ -39,10 +39,17 @@ specs:
     - { size: "146", effectiveEdge: 1095, waistWidth: 240, runningLength: 1050, noseWidth: 279.2, tailWidth: 279.2, sidecutRadii: 7.04m, stanceWidth: 505mm, riderWeight: 120-180 lb. / 54-82kg, setback: 0 }
     - { size: "149", effectiveEdge: 1125, waistWidth: 242, runningLength: 1080, noseWidth: 282.4, tailWidth: 282.4, sidecutRadii: 7.24m, stanceWidth: 530mm, riderWeight: 120-180 lb. / 54-82kg, setback: 0 }
     - { size: "152", effectiveEdge: 1155, waistWidth: 245, runningLength: 1110, noseWidth: 286.5, tailWidth: 286.5, sidecutRadii: 7.44m, stanceWidth: 530mm, riderWeight: 150-200 lb.+ / 68-91kg+, setback: 0 }
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  priceCheckedAt: 2026-10-14
+  seasonEvidence: Burton 美国官方商品页标题标注 2027，日本官方色款代码为 27WIN-132181；日本官方价页记录亦明确 2026/27。归档为 2026/27（2027 款）；商品页未直接写明完整雪季日期。
+  officialPrice: JPY 74800
+  regionalListPrice: JPY 74,800
+  priceMarket: Burton 日本官方商店；型号 132181、色款代码 27WIN-132181
+  priceSource: https://jp.burton.com/en-jp/products/womens-burton-talent-scout-camber-snowboard-132181
+  regionalPriceSource: https://jp.burton.com/en-jp/products/womens-burton-talent-scout-camber-snowboard-132181
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Burton 日本官方商品页 2027 款型号 132181 标价 JPY 74,800；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 3,159.36。页面列出 138/141/146/149/152，152 当时标为售罄。页面未明确税费口径；日本官方店折算参考，不是中国售价，运费、跨境配送和进口费用未计。
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/132181CBO2_1.webp?v=1783957423&width=2100"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ebcc6f734a119bd543f9d14b842df700bcc43310ec563d18c649119a4b27c5f8.webp"
     kind: face
     alt: Burton Talent Scout Camber 2027 单板正面图
     source: Burton 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

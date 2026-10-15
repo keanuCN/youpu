@@ -7,7 +7,13 @@
   "officialProductPage": {
     "url": "https://www.atomic.com/en-int/products/redster-q7-revoshock-c-mi-12-gw-aa7471-202600",
     "evidence": "Atomic's official page lists SKU AASS03788+, sizes 153/160/167/174/181 cm, per-size radius and tip/waist/tail geometry, Active Camber 0/100/0, 0.8° base edge, 87° side edge, intermediate-to-advanced positioning, Power Woodcore (ash and poplar), Dura Cap Sidewall, Revoshock C, All-Condition Piste Shape, TI Powered, structured topsheet, World Cup Base Finish, Tip Protector, Pro Trak, and MI 12 GW binding bundle. The datasheet labels weight per ski and reports 2811 g at 174 cm.",
-    "seasonEvidence": "The current official product page uses Atomic article AASS03788+ and sizes 153/160/167/174/181; this specification set is listed by current retail sources as 2026/27. The previous seed used the same image/SKU but described it as 2025/26 and is retired to draft pending verification of a prior-season SKU."
+    "seasonEvidence": "Atomic Japan's official catalogue archive lists a 2026/27 catalogue, while Atomic's official product page confirms model AASS03788+ and matching sizes but does not label the season. Retail product listings from Mahsport and Wrosport identify the same model/article as 2026/27; season is cross-checked by exact model/article mapping, not asserted from the official product page alone. The former 2025/26 seed remains retired to draft because its season-specific SKU is unverified.",
+    "seasonEvidenceSources": [
+      "https://atomicsnow.jp/pages/catalogue",
+      "https://www.atomic.com/en-int/products/redster-q7-revoshock-c-mi-12-gw-aa7471-202600",
+      "https://mahsport.com/proizvodi/skijaska-oprema/skije/skije-atomic-redster-q7-rvsk-c-27-mi-12gw-5096/",
+      "https://wrosport.pl/narty-zjazdowe/narty-atomic-redster-q7-revoshock-c-mi-12-gw-2027.html"
+    ]
   },
   "specifications": {
     "lengthSpecs": [

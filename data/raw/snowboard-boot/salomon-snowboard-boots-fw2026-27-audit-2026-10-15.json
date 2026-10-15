@@ -1,0 +1,130 @@
+{
+  "brand": "Salomon",
+  "checkedAt": "2026-10-15",
+  "season": "FW2026/27",
+  "catalogLandingPage": "https://salomon.jp/pages/snowboard-catalog",
+  "bootsCatalogPdf": "https://cdn.shopify.com/s/files/1/0673/9981/1381/files/SNOWBOARD_SEASON_CATALOG_FW2026-27_BOOTS.pdf?v=1768810119",
+  "seasonDecision": "Products listed below appear in Salomon's official FW2026/27 snowboard boots catalog with matching model names and article/color codes. Records are therefore cataloged as 2026/27 (2027). Product pages do not independently print the year.",
+  "products": [
+    {
+      "slug": "salomon-dialogue-dual-boa-2027",
+      "model": "Dialogue Dual BOA",
+      "articleCodes": ["L49277200 Black", "L49278500 Team Grey", "L49259900 Rainy Day"],
+      "mondopointRangeCm": "25–29.5 by listed color",
+      "japanListPriceJpy": 59000,
+      "japanTaxIncludedPriceJpy": 64900,
+      "catalogPrintedPage": 83,
+      "note": "Team Grey is listed as a color/article variant under the Dialogue Dual BOA family."
+    },
+    {
+      "slug": "salomon-dialogue-dual-boa-team-2027",
+      "model": "Dialogue Dual BOA Team Grey",
+      "articleCodes": ["L49278500"],
+      "mondopointRangeCm": "25–29.5",
+      "japanListPriceJpy": 59000,
+      "japanTaxIncludedPriceJpy": 64900,
+      "catalogPrintedPage": 83,
+      "note": "Catalog identifies Team Grey as a Dialogue Dual BOA colorway, not a separately substantiated construction/model."
+    },
+    {
+      "slug": "salomon-dialogue-dual-boa-wide-2027",
+      "model": "Dialogue Dual BOA Wide",
+      "articleCodes": ["L45448100 Black Wide"],
+      "mondopointRangeCm": "25–30.5",
+      "japanListPriceJpy": 59000,
+      "japanTaxIncludedPriceJpy": 64900,
+      "catalogPrintedPage": 83
+    },
+    {
+      "slug": "salomon-echo-dual-boa-2027",
+      "model": "Echo Dual BOA",
+      "articleCodes": ["L49298000 Brown"],
+      "mondopointRangeCm": "25–29.5",
+      "japanListPriceJpy": 68000,
+      "japanTaxIncludedPriceJpy": 74800,
+      "catalogPrintedPage": 81
+    },
+    {
+      "slug": "salomon-faction-boa-2027",
+      "model": "Faction BOA",
+      "articleCodes": ["L49270000 Olive"],
+      "mondopointRangeCm": "25–30.5",
+      "japanListPriceJpy": 46000,
+      "japanTaxIncludedPriceJpy": 50600,
+      "catalogPrintedPage": 93,
+      "imageAudit": {
+        "checkedAt": "2026-10-15",
+        "officialVariantPage": "https://www.salomon.com/en-us/product/faction-boa-li9008/L49270000?sizeId=L49270000024",
+        "articleRef": "L49270000",
+        "previousImageUrl": "https://cdn.dam.salomon.com/9c1d11ae-2c9b-48d9-bbb2-b3600109091b/L49270000/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
+        "previousImageStatus": 404,
+        "replacementImageUrl": "https://cdn.dam.salomon.com/e274309f-a9d4-43be-b1f6-b3e200a284e1/L49270000/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=3840",
+        "replacementImageStatus": 200,
+        "evidence": "Salomon 官方精确货号页提供 L49270000 Olive 变体图库；第一张图库图 UUID 返回 404，第二张图库图仍标同一货号并通过 HEAD 检查返回 200。"
+      }
+    },
+    {
+      "slug": "salomon-launch-boa-sj-boa-2027",
+      "model": "Launch BOA SJ BOA",
+      "articleCodes": ["L47403000 Black", "L49261400 White", "L49272000 Blue Night", "L49262200 Kelp"],
+      "mondopointRangeCm": "Black 25–30.5; other listed colors 25–29.5",
+      "japanListPriceJpy": 54000,
+      "japanTaxIncludedPriceJpy": 59400,
+      "catalogPrintedPage": 87
+    },
+    {
+      "slug": "salomon-malamute-dual-boa-2027",
+      "model": "Malamute Dual BOA",
+      "articleCodes": ["L47773300 Black"],
+      "mondopointRangeCm": "24–29.5",
+      "japanListPriceJpy": 69000,
+      "japanTaxIncludedPriceJpy": 75900,
+      "catalogPrintedPage": 80
+    },
+    {
+      "slug": "salomon-titan-boa-2027",
+      "model": "Titan BOA",
+      "articleCodes": ["L47242900 Black"],
+      "mondopointRangeCm": "25–30.5",
+      "japanListPriceJpy": 40000,
+      "japanTaxIncludedPriceJpy": 44000,
+      "catalogPrintedPage": 95
+    },
+    {
+      "slug": "salomon-trek-2027",
+      "model": "Trek",
+      "articleCodes": ["L47033600 Black"],
+      "mondopointRangeCm": "25–29.5",
+      "japanListPriceJpy": 71000,
+      "japanTaxIncludedPriceJpy": 78100,
+      "catalogPrintedPage": 79,
+      "ridingCategory": "Touring",
+      "imageAudit": {
+        "checkedAt": "2026-10-15",
+        "officialProductPage": "https://www.salomon.com/en-us/product/trek-lg8695",
+        "articleRef": "L47033600",
+        "previousImageUrl": "https://cdn.dam.salomon.com/43a6291e-fa13-41ef-a252-b2f800ae88e5/L47033600/PNG-2000px-max-72dpi.png?bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=1200",
+        "previousImageStatus": 404,
+        "replacementImageUrl": "https://cdn.dam.salomon.com/39e8cd4e-f1cd-44d9-95bd-b2f800ae88fa/L47033600/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=3840",
+        "replacementImageStatus": 200,
+        "evidence": "Salomon 官方 Trek 商品图库将首图链接到新 CDN UUID；链接路径仍标记同一货号 L47033600。旧种子 CDN UUID 已返回 404，新图通过 HEAD 检查返回 200。"
+      }
+    },
+    {
+      "slug": "salomon-x-approach-lace-sj-boa-2027",
+      "model": "X Approach Lace SJ BOA",
+      "articleCodes": ["L45418900 Silver", "L49271800 Black", "L49271900 Team"],
+      "mondopointRangeCm": "23–29.5",
+      "japanListPriceJpy": 52000,
+      "japanTaxIncludedPriceJpy": 57200,
+      "catalogPrintedPage": 90,
+      "ridingCategory": "Unisex all-terrain/freestyle"
+    }
+  ],
+  "limits": [
+    "The Salomon Japan catalog establishes seasonal catalog inclusion and Japanese regional list prices; it does not prove current stock in every size/color.",
+    "Japanese yen prices are regional catalog references, not Chinese retail prices.",
+    "The existing CNY prices remain conversions of U.S. official prices and are labeled as U.S. market references.",
+    "Mondopoint ranges are transcribed from the Japanese seasonal catalog; official U.S. size ranges can differ by region and SKU."
+  ]
+}

@@ -52,7 +52,7 @@ specs:
   priceSource: https://k2snow.com/en-de/p/passport-unisex-snowboard-kb261689
   priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
 images:
-  - url: "https://blauerboardshop.com/cdn/shop/files/K2PassportSnowboard2027.png?v=1776985303"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/2eddafe9c81f1e39e8951c3fb7662bc88a04f6c2e0b823f74a7e187d821cd2e3.webp"
     kind: face
     alt: K2 Passport 2027 单板商品图
     source: Blauer Board Shop 2027 商品页图片（零售商图片，授权待核；正式上线前迁移至自有 COS 或替换为自制图）

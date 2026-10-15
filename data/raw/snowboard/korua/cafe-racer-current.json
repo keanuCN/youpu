@@ -64,7 +64,7 @@
   "imageEvidence": {
     "officialProductPage": "https://ca.koruashapes.com/products/cafe-racer",
     "galleryPresent": true,
-    "reuseDecision": "Official gallery exists, but no explicit license allowing third-party republication was confirmed. Keep AI placeholders until permission or original photography is available."
+    "reuseDecision": "Official gallery image is mapped to the product seed for identification; no explicit third-party republication license was confirmed, so display rights remain pending. Replace it if permission cannot be established."
   },
   "schemaGaps": [
     "All five official size rows, including running length, taper, topsheet-variant weights, stance range, availability and fit guidance, have been mapped to prototype/YAML sizeSpecs. The product page and size guide disagree on 159 rider-weight range and 164 maximum EU boot size; both values are retained separately by source.",

@@ -708,16 +708,19 @@ export function AdminApp() {
         const identity = await callAdmin<{ authenticated: boolean; role: string }>('/auth/me');
         if (!alive) return;
         setRole(identity.role);
-        const [nextDashboard, nextBrands, nextCategories] = await Promise.all([
+        setSessionState('signed-in');
+        void Promise.all([
           callAdmin<AdminDashboard>('/dashboard'),
           callAdmin<AdminBrandRecord[]>('/brands'),
           callAdmin<AdminCategoryRecord[]>('/categories'),
-        ]);
-        if (!alive) return;
-        setDashboard(nextDashboard);
-        setBrands(nextBrands);
-        setCategories(nextCategories);
-        setSessionState('signed-in');
+        ]).then(([nextDashboard, nextBrands, nextCategories]) => {
+          if (!alive) return;
+          setDashboard(nextDashboard);
+          setBrands(nextBrands);
+          setCategories(nextCategories);
+        }).catch((error) => {
+          if (alive) setNotice({ kind: 'error', text: getErrorText(error) });
+        });
       } catch (error) {
         if (!alive) return;
         if (error instanceof AdminApiError && (error.status === 401 || error.status === 403)) {

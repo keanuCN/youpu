@@ -5,10 +5,10 @@ import { useEffect, useRef } from "react";
 import { Heart, Scale } from "lucide-react";
 import { toast } from "sonner";
 import { MediaPlaceholder, PendingValue } from "@/components/gear/data-state";
-import { reviewCount, userRating } from "@/data/boards";
+import { GEAR, reviewCount, userRating } from "@/data/boards";
 import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
 import { sceneLabel } from "@/lib/domain";
-import { fmtCompact, fmtPrice } from "@/lib/format";
+import { fmtCompact, fmtOfficialPriceCny, fmtPrice } from "@/lib/format";
 import { hasEditorialScores, hasMedia, hasPrice, hasUserRating, mediaUrl } from "@/lib/gear-state";
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear } from "@/lib/api";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
@@ -21,9 +21,61 @@ import { SafeImage } from "./safe-image";
 
 type FromSource = "home" | "list" | "search" | "ranking" | "compare" | "recommend";
 
+const HOT_SHARE = 0.2;
+const HOT_HEAT_THRESHOLD_BY_CATEGORY = new Map(
+  [...new Set(GEAR.map((item) => item.categorySlug))].flatMap((categorySlug) => {
+    const heats = GEAR
+      .filter((item) => item.categorySlug === categorySlug && item.heat > 0)
+      .map((item) => item.heat)
+      .sort((a, b) => b - a);
+    if (!heats.length) return [];
+    const topCount = Math.max(1, Math.ceil(heats.length * HOT_SHARE));
+    return [[categorySlug, heats[topCount - 1]] as const];
+  }),
+);
+
+function isHot(gear: GearItem) {
+  const threshold = HOT_HEAT_THRESHOLD_BY_CATEGORY.get(gear.categorySlug);
+  return gear.heat > 0 && threshold !== undefined && gear.heat >= threshold;
+}
+
 function CardSignal({ gear }: { gear: GearItem }) {
   if (gear.categorySlug === "snowboard") {
     return <FlexBar value={gear.flexValue} />;
+  }
+
+  if (gear.categorySlug === "snowboard-binding") {
+    const entrySystemLabels: Record<string, string> = {
+      strap: "绑带式",
+      "fast-entry": "快穿式",
+      "rear-entry": "后入式",
+      "step-in": "Step On 踩入式",
+    };
+    const flexFeelLabels: Record<string, string> = {
+      soft: "软",
+      "mid-soft": "中偏软",
+      medium: "中等",
+      "mid-stiff": "中偏硬",
+      stiff: "硬",
+      "pro-stiff": "专业级偏硬",
+    };
+    const entrySystem = String(gear.specs.entrySystem ?? "");
+    const flexFeel = String(gear.specs.flexFeel ?? "");
+    const signals = [
+      ["入门方式", entrySystemLabels[entrySystem] ?? "待补充"],
+      ["脚感", flexFeelLabels[flexFeel] ?? "待补充"],
+    ];
+
+    return (
+      <div className="grid grid-cols-2 gap-2 border-y border-border py-2">
+        {signals.map(([label, value]) => (
+          <div key={label} className="min-w-0">
+            <p className="mono-label">{label}</p>
+            <p className="mt-1 truncate text-[12px] text-foreground/80">{value}</p>
+          </div>
+        ))}
+      </div>
+    );
   }
 
   const signals =
@@ -47,10 +99,14 @@ function CardSignal({ gear }: { gear: GearItem }) {
                 ["车型", mtbTypeLabel(gear.specs.bikeType)],
                 ["悬挂", `${gear.specs.frontTravel ?? "—"} / ${gear.specs.rearTravel ?? "—"} mm`],
               ]
-      : [
-          ["调性", gear.specs.power],
-          ["饵重", gear.specs.lureWeight],
-        ];
+            : gear.categorySlug === "casting-rod"
+              ? [
+                  ["调性", gear.specs.power],
+                  ["饵重", gear.specs.lureWeight],
+                ]
+              : null;
+
+  if (!signals) return null;
 
   return (
     <div className="grid grid-cols-2 gap-2 border-y border-border py-2">
@@ -169,7 +225,7 @@ export function GearCard({
           ) : (
             <MediaPlaceholder label={`${gear.brand} ${gear.model}`} />
           )}
-          <div className="absolute top-0 left-0">
+          <div className="absolute top-0 left-0 flex items-start gap-1">
             {rank ? (
               <span className="mono-data bg-foreground px-2 py-1 text-[13px] text-background tnum">
                 {String(rank).padStart(2, "0")}
@@ -177,6 +233,7 @@ export function GearCard({
             ) : gear.isNew ? (
               <span className="mono-label bg-primary px-2 py-[6px] text-primary-foreground">New</span>
             ) : null}
+            {isHot(gear) ? <span className="mono-label bg-destructive px-2 py-[6px] text-destructive-foreground">HOT</span> : null}
           </div>
           <div className="absolute top-0 right-0">
             {editorialReady ? <ScoreMark value={gear.composite} size="sm" /> : <PendingValue label="待补分" className="bg-background/90 px-1.5 py-1" />}
@@ -211,9 +268,9 @@ export function GearCard({
           <div className="mt-auto flex items-end justify-between gap-2 border-t border-border pt-2.5">
             <div className="min-w-0">
               <p className="mono-data text-[15px] leading-none tnum">
-                {priceReady ? fmtPrice(gear.price, gear.priceCurrency) : gear.specs.officialPrice ? String(gear.specs.officialPrice) : <PendingValue label="价格待补" />}
+                {gear.specs.officialPrice ? fmtOfficialPriceCny(String(gear.specs.officialPrice)) ?? <PendingValue label="人民币折算待补" /> : priceReady ? fmtPrice(gear.price, gear.priceCurrency) : <PendingValue label="价格待补" />}
               </p>
-              <p className="mono-label mt-1.5">{priceReady ? gear.specs.priceCheckedAt ? '人民币参考 · 待核' : '参考价' : gear.specs.officialPrice ? '官方原币参考' : '价格尚未采集'}</p>
+              <p className="mono-label mt-1.5">{gear.specs.officialPrice ? '官网价折合人民币' : priceReady ? gear.specs.priceCheckedAt ? '价格来源见详情' : '参考价' : '价格尚未采集'}</p>
             </div>
             <div className="flex flex-col items-end gap-1">
               {ratingReady ? (

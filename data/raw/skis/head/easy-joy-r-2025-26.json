@@ -1,0 +1,341 @@
+{
+  "brand": "HEAD",
+  "model": "EASY JOY R",
+  "season": "2025-26",
+  "articleNumber": "316485",
+  "retrievedAt": "2026-10-15",
+  "seedFile": "data/skis/head-easy-joy-r-2026.yaml",
+  "officialSeasonSource": {
+    "url": "https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/d1d55eee-6c7d-45e8-80f2-f29f0e059c55/HRS%20Handbook%2025-26.pdf?ver=1744650386194",
+    "evidence": "HEAD Rental Handbook 25/26（产品目录 PDF）将 EASY JOY R 对应 article 316485 SLR Pro Rent Base，长度为 143/148/153/158/163 cm，参考规格为 163 cm 时 117/70/103 mm、半径 13.3 m；列出的固定器为 100952 JOY 9 GW SLR、78 mm 制动器。精确货号与几何另由 Catti Sport 同季商品页交叉确认。该参考规格不是其它长度的逐码表，目录配置也不能替代地区商品 SKU 的套装核验。"
+  },
+  "nextSeasonWorkbookTextOnlyCrossCheck": {
+    "url": "https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf",
+    "articleNumber": "316266",
+    "evidence": "26/27 Workbook 的搜索文本包含 EASY JOY R、316266 及 121/75/107 mm、13.1 m，但目前没有通过版面或同季独立商品页确认这些相邻栏位的对应关系。因 25/26 搜索抽取已证实会跨栏错位，此项不用于确认下一季货号或规格，待查原始版面。"
+  },
+  "resolvedArticleAssignment": {
+    "articleNumber": "316485",
+    "modelLabel": "EASY JOY R",
+    "crossCheckUrl": "https://www.cattisport.com/en/sci-2/downhill/7390-head-easy-joy-r-joy-9-gw-slr-25-26/",
+    "retailerSpecs": {
+      "lengthsCm": [143, 148, 153, 158, 163],
+      "referenceLengthCm": 163,
+      "sidecutMm": [117, 70, 103],
+      "radiusM": 13.3
+    },
+    "evidence": "25/26 HEAD Rental Handbook 目录版面和 Catti Sport 同季商品页均将 316485 标为 EASY JOY R，并列出 117/70/103 mm、163 cm R13.3。此前根据 HEAD Hardgoods Workbook 搜索索引的抽取顺序，将相邻栏内容错读为 316265；这是跨栏文本抽取错位，而不是已证实的型号改名。"
+  },
+  "resolvedNeighborArticleAssignment": {
+    "articleNumber": "316265",
+    "modelLabel": "SHAPE VX R",
+    "officialProductUrl": "https://head.ru/ski/shop/skis/6697/104931/",
+    "evidence": "HEAD 官方俄区 2025/26 商品页将 31626501 标为 Shape VX R，并列出 142/149/156/163/170/177 cm 尺码；据此纠正其与 Easy Joy R 的错误关联。"
+  },
+  "priorSeasonSkuCrossCheck": {
+    "url": "https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/24-25%20HEAD%20RENTAL%20price%20sheet%202023-12-11.pdf?ver=1710287401497",
+    "document": "HEAD 2024/25 Rental Price List",
+    "retrievedAt": "2026-10-15",
+    "entries": [
+      {
+        "articleNumber": "31646401",
+        "modelLabel": "e.pure Joy R SLR Pro R",
+        "referenceLengthCm": 163,
+        "sidecutMm": [121, 75, 107],
+        "radiusM": 13.1,
+        "lengthsCm": [143, 148, 153, 158, 163]
+      },
+      {
+        "articleNumber": "31648401",
+        "modelLabel": "easy Joy R SLR Pro R",
+        "referenceLengthCm": 163,
+        "sidecutMm": [117, 70, 103],
+        "radiusM": 13.3,
+        "lengthsCm": [143, 148, 153, 158, 163]
+      }
+    ],
+    "decision": "仅作为上一雪季型号/货号演变的排除性旁证，不并入 316485。24/25 价目表把 121/75/107、13.1 m 参考规格列给 e.pure Joy R 31646401，把 117/70/103、13.3 m 列给 easy Joy R 31648401；25/26 HEAD Rental Handbook 与同季零售页将 316485 对应 Easy Joy R。旧季 SKU 不能替代 25/26 货号或逐码规格。"
+  },
+  "nonRentalRetailAlternative": {
+    "articleNumber": "31565501",
+    "modelLabel": "Easy Joy + Joy 9 GW SLR",
+    "season": "2025/26",
+    "url": "https://head.ru/ski/shop/skis/discounts/womens/104334/",
+    "geometry": {
+      "lengthsCm": [143, 148, 153, 158, 163],
+      "sidecutAt163Mm": [117, 70, 103],
+      "radiiM": [9.6, 10.5, 11.3, 12.2, 13.3]
+    },
+    "binding": "JOY 9 GW SLR BRAKE 78 [H] included",
+    "evidence": "HEAD 俄罗斯官方商品页按货号 31565501 标注标准 Easy Joy 2025/26，逐长度列出几何、半径和固定器套装；与 rental article 316485 在 163 cm 的 117/70/103 mm、13.3 m 参考规格不同。",
+    "exclusionReason": "这是标准零售版 Easy Joy，不是 Easy Joy R 316485 租赁底板；其参数、图像和价格均不得映射到 316485。"
+  },
+  "retailPriceListCrossCheck": {
+    "url": "https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/383a3ba9-007e-442e-a92d-fdc0140aa976/HEAD_RETAIL%20PRICING_FOR%20PRINT_12.20_01%202_combi.pdf?ver=1744650386194",
+    "title": "2025/26 HEAD Alpine Retail Price List",
+    "retrievedAt": "2026-10-15",
+    "evidence": "价格表将 31565501 标为 easy Joy SLR BB Joy Pro，表列 MSRP $575、MAP $449、批发 $288；该标准零售套装不是 EASY JOY R 316485。价格表零售区没有列出 316485 Rent Base 的消费者售价，不能把标准版价格移植到租赁底板。",
+    "linkedWorkbook": "https://www.eski.sk/image/document/head_workbook_2526_en.pdf",
+    "workbookEvidence": "25/26 HEAD Rental Handbook 将 316485 EASY JOY R 标为 SLR Pro Rent Base，并在 RENTAL 产品目录列出；与 31565501 标准零售 Easy Joy 区分。"
+  },
+  "image": {
+    "url": "https://cdn-mdb.head.com/CDN3/D/316485/1/683x911/easy-joy-r.webp",
+    "evidence": "HEAD 官方 CDN 图片路径包含货号 316485，与 25/26 Rental Handbook 和同季商品页的 Easy Joy R 货号一致。图片复用/发布授权仍需确认。"
+  },
+  "priceAudit": {
+    "status": "unverified",
+    "evidence": "已核实 article 316485 为 Easy Joy R。欧洲 Esqui Outlet 对 316485 + 100952 套装挂牌 EUR 259.99，按 ECB 汇率折算 CNY 1,947.98；韩国 ONEEIGHT 同货号 + 固定器页面挂牌 KRW 547,000，按 ECB 2026-10-14 交叉汇率折算 CNY 2,738.58。两者均为地区套装参考，不是中国售价；中国当前精确货号报价仍未核实。意大利 Catti Sport EUR 299 缺货挂牌保留作历史交叉记录。",
+    "latestForeignRetailerReference": {
+      "url": "https://esqui-outlet.com/en/skis/head-easy-joy-r-slr-ski-set-316485-joy-9-gw-bindings-100952-women.html",
+      "merchant": "Esqui Outlet",
+      "retrievedAt": "2026-10-15",
+      "articleNumber": "316485",
+      "bindingArticleNumber": "100952",
+      "listedCurrentPriceEUR": 259.99,
+      "displayedReferencePriceEUR": 400,
+      "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+      "exchangeRateDate": "2026-10-14",
+      "eurToCny": 7.4925,
+      "convertedPriceCNY": 1947.98,
+      "availabilityAtCapture": "页面显示加入购物车；未选择并确认具体尺码库存，结账税费及运费需另核",
+      "evidence": "页面标题和路径明确包含 Easy Joy R 316485 及固定器 100952；技术区明确列 158 cm 几何 124/69/105 mm、半径 10.7 m。该页面为同一零售商的区域语言版本，不视作多个独立来源。",
+      "limitations": "欧洲零售商动态挂牌价折算，不是中国售价；促销、库存、结账税费和配送会变化。"
+    },
+    "foreignMarketReference": {
+      "url": "https://www.cattisport.com/en/sci-2/downhill/7390-head-easy-joy-r-joy-9-gw-slr-25-26/",
+      "articleNumber": "316485",
+      "listedPriceEUR": 299,
+      "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-cny.en.html",
+      "exchangeRateDate": "2026-10-14",
+      "eurToCny": 7.4925,
+      "convertedPriceCNY": 2240.76,
+      "availabilityAtCapture": "页面显示 Product not available",
+      "limitations": "意大利零售商挂牌折算参考，非中国售价或当前可购报价；运费、税费未计。"
+    },
+    "latestCattiSportReference": {
+      "url": "https://www.cattisport.com/it/sci/discesa/7390-head-easy-joy-r-joy-9-gw-slr-25-26/",
+      "merchant": "Catti Sport（意大利）",
+      "retrievedAt": "2026-10-15",
+      "articleNumber": "316485",
+      "bindingArticleNumber": "100952",
+      "listedPriceEUR": 249,
+      "ecbExchangeRateDate": "2026-10-14",
+      "eurToCny": 7.4925,
+      "convertedPriceCNY": 1865.63,
+      "availabilityAtCapture": "页面显示 Prodotto non disponibile；另有 Prodotto disponibile in negozio 提示，线上与实体店库存表述不一致，实际门店库存未确认。",
+      "evidence": "商品页标题为 Head easy Joy R + JOY 9 GW SLR 25-26，规格区域明确标注 ARTICLE NUMBER 316485 SLR PRO Rent Base 和 BINDING 100952 JOY 9 GW SLR Brake [H] 78 mm；页面挂牌 EUR 249。按 ECB 2026-10-14 EUR/CNY 7.4925 折算 EUR 249 × 7.4925 = CNY 1865.63。",
+      "limitations": "意大利地区含固定器套装挂牌参考；页面库存提示相互矛盾，不能视为可下单报价；非中国售价，税费、配送和实际门店库存未核。旧记录的 EUR 299 保留为先前采集值，不与本次页面值合并。"
+    },
+    "koreaRetailerReference": {
+      "url": "https://www.one8.co.kr/product/2526-%ED%97%A4%EB%93%9C-%EC%97%AC%EC%84%B1-%EC%8A%A4%ED%82%A4-%EC%9D%B4%EC%A7%80-%EC%A1%B0%EC%9D%B4-r-slr-%ED%94%84%EB%A1%9C-r-2526-head316485100952easy-joy-r-slr-pro/128323/",
+      "merchant": "ONEEIGHT（韩国）",
+      "retrievedAt": "2026-10-15",
+      "articleNumber": "316485",
+      "bindingArticleNumber": "100952",
+      "season": "2025-26",
+      "lengthVariantsCm": [148, 153],
+      "listedPriceKRW": 547000,
+      "referencePriceKRW": 843000,
+      "ecbExchangeRateDate": "2026-10-14",
+      "krwPerEUR": 1496.54,
+      "cnyPerEURate": 7.4925,
+      "convertedPriceCNY": 2738.58,
+      "geometry": [
+        { "lengthCm": 148, "radiusM": 9.3 },
+        { "lengthCm": 153, "radiusM": 10.1 }
+      ],
+      "evidence": "ONEEIGHT 页面标题明确标注 2025/26、HEAD article 316485、固定器 100952 和选项 148/153 cm；商品说明分别列 148 cm R9.3 与 153 cm R10.1。商品价为 KRW 547,000，页面参考价 KRW 843,000。ECB 2026-10-14 参考汇率为 EUR/KRW 1,496.54、EUR/CNY 7.4925，折算 547000/1496.54*7.4925 = CNY 2738.58。",
+      "limitations": "韩国市场套装挂牌价，含固定器，不是中国售价或裸板价格；页面列出尺码选项但本次未核实可下单库存，汇率仅为参考换算。商家没有提供 148/153 cm 的板头/板腰/板尾宽。"
+    },
+    "polandRetailerReference": {
+      "url": "https://trojansport.pl/narty-damskie-head-easy-joy-r-slr-pro-r-white-2026-joy-9-gw.html",
+      "merchant": "Trojan Sport（波兰）",
+      "retrievedAt": "2026-10-15",
+      "articleAndBinding": "316485#100952",
+      "selectedLengthCm": 143,
+      "listedGrossPricePLN": 1399,
+      "displayedReferencePricePLN": 2000,
+      "lowestPriceDate": "2026-08-11",
+      "availabilityAtCapture": "缺货；页面显示 143 cm 选中项和其他选项可用提示，但该选中尺码不可下单",
+      "ecbExchangeRateDate": "2026-10-14",
+      "plnPerEUR": 4.3658,
+      "cnyPerEUR": 7.4925,
+      "convertedPriceCNY": 2400.94,
+      "evidence": "商品标题和 ID 明确对应 HEAD Easy Joy R 2026 + Joy 9 GW，article/binding 标识为 316485#100952；所选长度为 143 cm，页面含税价 PLN 1,399，显示 2026-08-11 曾为最低价。按 ECB 2026-10-14 汇率 1 EUR = 4.3658 PLN、7.4925 CNY，折算 1399/4.3658*7.4925 = CNY 2400.94。",
+      "geometryConflict": "页面另将参考半径写为 13.1 m / 163 cm，与 HEAD 25/26 Rental Handbook article 316485 的 13.3 m / 163 cm 不同；该不一致不影响货号/尺码/价格线索，但此页不作为 143 cm 几何来源。",
+      "limitations": "波兰地区含固定器的历史缺货挂牌价，不是中国售价或当前可购报价；不替代欧洲主参考价，也不能视为裸板价。汇率只作参考换算。"
+    },
+    "nearMatchesExcluded": [
+      {
+        "url": "https://www.snowleader.com/easy-joy-r-joy-9-gw-slr-1.html",
+        "modelLabel": "Easy Joy R + Joy 9 GW SLR 2026",
+        "listedPrice": "EUR 279.90 sale / EUR 399.90 supplier reference",
+        "evidence": "页面列出可选 148/153/158 cm、逐码侧切和半径，但未提供 HEAD article number。不能单凭型号文字将价格或几何认定为 316485。"
+      },
+      {
+        "url": "https://wintersports.co.nz/products/ws-5454_2025-2026-head-easy-joy-r-skis-women",
+        "modelLabel": "2025-2026 HEAD Easy Joy R",
+        "articleNumber": "316485",
+        "listedPrice": "USD 567.37 for 153 cm with bindings (page also shows USD 810.53 reference price)",
+        "evidence": "零售页明确列 article 316485。现已由 HEAD 25/26 Rental Handbook 与另一同季商品页交叉确认其为 EASY JOY R。价格属于新西兰市场，仍不直接等同中国售价；价格记录只用于货号匹配交叉证据。"
+      },
+      {
+        "url": "https://www.snowleader.co.uk/en/easy-joy-r-joy-9-gw-slr-1-HEAD00826.html",
+        "modelLabel": "Easy Joy R + Joy 9 GW SLR 2026",
+        "retrievedAt": "2026-10-15",
+        "listedPrice": "GBP 226.50 sale / GBP 347.90 reference; page showed 153 and 158 cm in stock at capture",
+        "retailerGeometry": "117/70/103 mm; 153 cm reference radius 11.3 m; page table lists 143/148/153/158/163 with 163 cm radius 13.3 m",
+        "evidence": "页面未提供 HEAD article number，仍不作为精确货号来源或该型号价格证据。2026-10-15 复查逐码表发现其 143 cm 行为 117/70/103 mm、R9.6，163 cm 行与 316485 官方 25/26 参考几何完全一致，因此仅将 143 cm 行作为专业零售商补充值写入种子，并在参数说明中明确 article 映射未由该零售页确认；不把这条零售数据升级为原厂逐码认证。"
+      },
+      {
+        "url": "https://www.speck-sports.com/en/women-alpine-ski-pack/64399-head-easy-joy-r-joy-9-gw-slr-ski-package.html",
+        "modelLabel": "Head EASY JOY R + JOY 9 GW SLR 2025/26 package",
+        "retrievedAt": "2026-10-15",
+        "listedPrice": "EUR 279.99 sale / EUR 399.99 reference; page currently out of stock",
+        "retailerGeometry": "117/70/103 mm; listed lengths 148/153/158 cm",
+        "evidence": "页面未提供 HEAD article number，列示几何不是 316485 手册提供的 163 cm 单一参考行，且页面状态为缺货；不得作为中国价格或逐码规格依据。"
+      },
+      {
+        "url": "https://www.hc5.ru/gornye-lyzhi-head-easy-joy-r-slr-pro-r-krepleniya-joy-9-gw-slr-brake-78-h-2026/",
+        "modelLabel": "Head Easy Joy R SLR Pro R + Joy 9 GW SLR Brake 78 [H] (2026)",
+        "retailerArticleNumber": "134848",
+        "listedPrice": "56,512 RUB",
+        "lengthsCm": [143, 148, 153, 158, 163],
+        "retailerGeometry": "117/70/103 mm for all listed lengths; radii 9.6/10.5/11.3/12.2/13.1 m",
+        "evidence": "商家称其为 2026 Easy Joy R 租赁套装，并说明 JOY 9 GW SLR、78 mm 制动器与出租型底板；但未列 HEAD article number，零售商编号 134848 不能确认是 HEAD 316485。其逐码数据不用于填补手册未公开的逐码几何，中国价格核验也未采用。"
+      }
+    ]
+  },
+  "chinaMarketplaceLeadAudit": {
+    "retrievedAt": "2026-10-15",
+    "marketplace": "京东商品列表",
+    "url": "https://www.jd.com/zuozhe/13181fca4d6bffa44a54.html",
+    "observations": [
+      {
+        "listingText": "EASY JOY R / JOY R 女款套装；列表中一处变体标识为 EASY JOY/316484",
+        "articleNumber": "316484",
+        "exactArticleMatch": false,
+        "listedCnyPriceVisible": false,
+        "decision": "不匹配 25/26 Easy Joy R article 316485；不用于价格或尺码数据。"
+      },
+      {
+        "listingText": "京东商品列表另有 25/26 EASY JOY R 相关标题，但可见摘录未提供 HEAD article number",
+        "articleNumber": null,
+        "exactArticleMatch": false,
+        "listedCnyPriceVisible": false,
+        "decision": "型号名称和雪季文字不足以确认 316485，保留为未匹配线索。"
+      }
+    ],
+    "evidence": "国内列表搜索结果没有显示可核验的 316485 变体人民币价格。相近型号/货号和缺少精确文章号的标题不能替代目标 SKU。",
+    "decision": "不修改商品人民币价格；后续只有在具体商品变体显示 HEAD article 316485 且当前人民币价及库存可核实时，才作为国内报价记录。"
+  },
+  "exactArticleRetailerCrossCheck": {
+    "url": "https://dfsport.ru/catalog/alpine-skis/gornye_lyzhi_s_krepleniyami_head_25_26_easy_joy_r_slr_pro_r_kr_head_joy_9_gw_slr_100953/",
+    "retrievedAt": "2026-10-15",
+    "market": "俄罗斯",
+    "merchantArticle": "316485+100953",
+    "headArticleNumber": "316485",
+    "bindingArticleNumber": "100953",
+    "season": "2025-26",
+    "listedPrice": 33990,
+    "currency": "RUB",
+    "referencePrice": 49990,
+    "availabilityAtCapture": "页面显示莫斯科仓库有货、蒂米里亚泽夫斯卡娅门店少量有货；贝利亚耶沃门店无货",
+    "lengthVariantsCm": [143, 148, 153, 158],
+    "geometryShown": {
+      "sidecutMm": [117, 70, 103],
+      "radiusM": 9.6,
+      "referenceLengthUnspecified": true
+    },
+    "evidence": "零售页面标题明确 Easy Joy R 25-26，属性区显示组合货号 316485+100953、季节 2025-2026、板头/腰/尾宽 117/70/103 mm；选择列表列 143/148/153/158 cm，页面价格区显示 RUB 33,990（参考价 RUB 49,990）及分门店库存。页面显示的 R9.6 没有标注对应长度，故不映射到任何逐码尺寸。该零售商使用的固定器 article 100953，与 HEAD 手册列出的 100952 存在地区 SKU 差异，记录为地区套装旁证。",
+    "limitations": "俄罗斯地区套装报价不是中国售价；未换算进种子人民币主参考价。门店库存、价格会变动。该页面未给出 143/148/153/158 cm 各自的侧切或半径，且未列 163 cm 变体；不能据此补齐缺失尺码几何。"
+  },
+  "exactArticleSizeOptionCrossCheck20261015": {
+    "url": "https://wintersports.co.nz/products/ws-5454_2025-2026-head-easy-joy-r-skis-women",
+    "retrievedAt": "2026-10-15",
+    "market": "New Zealand",
+    "productTitle": "2025-2026 HEAD EASY JOY R SKIS WOMEN",
+    "headArticleNumber": "316485",
+    "bindingArticleNumber": "100952",
+    "listedLengthsCm": [143, 148, 153, 158, 163],
+    "referenceGeometry": {"lengthCm": 163, "sidecutMm": [117, 70, 103], "radiusM": 13.3},
+    "displayedPriceText": "$567.37（页面另显示原价 $810.53；币种未核实）",
+    "evidence": "商品页明确列出 2025/26 HEAD EASY JOY R、article 316485、固定器 100952、五个长度和 163 cm 参考几何；未提供 143 cm 专属几何。它可独立确认 143 cm 属于精确款号的长度选项，并加强 Snowleader 同季商品的型号/长度对应，但不独立验证 Snowleader 的 143 cm 尺寸数据。",
+    "limitations": "域名为新西兰站，但页面价格只显示 $ 符号，本轮未确认币种，因此不转换、不作为价格记录。页面的规格几何只标 163 cm；不可据此推导 143 cm 或其它长度。"
+  },
+  "confirmedSizeRows": [
+    {
+      "lengthCm": 143,
+      "sidecutMm": [117, 70, 103],
+      "radiusM": 9.6,
+      "source": "snowleaderRetailerTableRecheck",
+      "role": "single specialist-retailer table for 2026 Easy Joy R + Joy 9 GW SLR; article 316485 is not displayed, so this is supplementary retail evidence, not manufacturer-confirmed per-size data"
+    },
+    {
+      "lengthCm": 148,
+      "radiusM": 9.3,
+      "source": "priceAudit.koreaRetailerReference",
+      "role": "exact article 316485, 2025/26 regional retailer; radius only, no per-length sidecut published"
+    },
+    {
+      "lengthCm": 153,
+      "radiusM": 10.1,
+      "source": "priceAudit.koreaRetailerReference",
+      "role": "exact article 316485, 2025/26 regional retailer; radius only, no per-length sidecut published"
+    },
+    {
+      "lengthCm": 158,
+      "sidecutMm": [124, 69, 105],
+      "radiusM": 10.7,
+      "source": "latestForeignRetailerReference",
+      "role": "single retailer exact-article per-length listing; not an official manufacturer table"
+    },
+    {
+      "lengthCm": 163,
+      "sidecutMm": [117, 70, 103],
+      "radiusM": 13.3,
+      "source": "officialSeasonSource",
+      "role": "reference length only"
+    }
+  ],
+  "snowleaderRetailerTableRecheck": {
+    "retrievedAt": "2026-10-15",
+    "url": "https://www.snowleader.co.uk/en/easy-joy-r-joy-9-gw-slr-1-HEAD00826.html",
+    "market": "United Kingdom",
+    "productName": "Easy Joy R + Joy 9 GW SLR",
+    "pageYear": 2026,
+    "listedSizeTable": [
+      { "lengthCm": 143, "sidecutMm": [117, 70, 103], "radiusM": 9.6, "listedWeightG": 1698 },
+      { "lengthCm": 148, "sidecutMm": [117, 70, 103], "radiusM": 10.5 },
+      { "lengthCm": 153, "sidecutMm": [117, 70, 103], "radiusM": 11.3 },
+      { "lengthCm": 158, "sidecutMm": [117, 70, 103], "radiusM": 12.2 },
+      { "lengthCm": 163, "sidecutMm": [117, 70, 103], "radiusM": 13.3 }
+    ],
+    "crossCheck": "The page's model name, year, length range and 163 cm reference geometry match the HEAD 25/26 EASY JOY R article 316485 handbook entry. A separate New Zealand listing explicitly maps 316485 to the same five lengths including 143 cm and the same 163 cm reference geometry; it still does not publish 143 cm geometry.",
+    "limitations": "Snowleader does not display HEAD article 316485. The separate exact-article listing corroborates the model and size option, but not Snowleader's per-size geometry. Therefore the 143 cm geometry remains specialist-retailer supplementary data, not manufacturer-confirmed data. The listed 1698 g weight is not entered in the seed because the page does not clarify whether it is per ski or per pair. Only 153/158 cm were shown in stock when checked."
+  },
+  "radiusConflictAssessment20261015": {
+    "affectedLengthsCm": [148, 153],
+    "exactArticleRetailer": {
+      "source": "https://www.one8.co.kr/product/p021-%ED%97%A4%EB%93%9C-%EC%97%AC%EC%84%B1-%EC%8A%A4%ED%82%A4-%EC%84%B8%ED%8A%B8/112858/category/3997/display/1/",
+      "articleAndBinding": "316485 + 100952",
+      "season": "2025-26",
+      "radiiM": [{"lengthCm": 148, "radiusM": 9.3}, {"lengthCm": 153, "radiusM": 10.1}],
+      "evidence": "商品名及组合信息明确对应 25/26 HEAD 316485 EASY JOY R SLR PRO R + JOY 9 GW SLR；详情文案列出 148 cm R9.3 和 153 cm R10.1。"
+    },
+    "sameSeasonFullTableRetailer": {
+      "source": "https://www.snowleader.co.uk/en/easy-joy-r-joy-9-gw-slr-1-HEAD00826.html",
+      "modelLabel": "Easy Joy R + Joy 9 GW SLR 2026",
+      "headArticleDisplayed": false,
+      "radiiM": [{"lengthCm": 148, "radiusM": 10.5}, {"lengthCm": 153, "radiusM": 11.3}],
+      "evidence": "同名同年款商品逐码表列 143/148/153/158/163 cm 半径 9.6/10.5/11.3/12.2/13.3 m；163 cm 行与 HEAD 316485 官方手册参考值相同，但商品页未显示 HEAD article。"
+    },
+    "decision": "两来源对 148 cm 与 153 cm 半径均不一致，当前没有原厂逐码数据可以裁决。商品种子不再展示争议半径；两方原始数值、来源映射差异及待核状态保留在审计中。"
+  },
+  "remainingUnknowns": [
+    "The HEAD 25/26 handbook does not publish per-size data for 143 cm. A Snowleader specialist-retailer page called Easy Joy R + Joy 9 GW SLR (2026) lists 143 cm as 117/70/103 mm and R9.6, with a matching 163 cm reference row, but does not display HEAD article 316485. Keep the row as retailer-sourced supplementary evidence, not manufacturer-confirmed data. A Polish exact-article page is out of stock and has no 143 cm geometry; its 163 cm radius conflicts with HEAD. A Korean exact-article listing provides only 148/153 cm radii.",
+    "No current CNY price with verifiable China-market availability was found. Foreign market listings are evidence for product/article matching only, not a China retail price.",
+    "The official 2025/26 standard Easy Joy article 31565501 has per-length data, but differs from rental article 316485 and must not be substituted.",
+    "The geometry represented by the 163 cm reference row remains a single reference-size specification, not proof that other lengths share those dimensions."
+  ]
+}

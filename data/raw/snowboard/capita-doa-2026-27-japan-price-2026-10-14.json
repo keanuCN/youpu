@@ -1,0 +1,37 @@
+{
+  "slug": "capita-defenders-of-awesome-2027",
+  "model": "CAPiTA D.O.A.",
+  "season": "2026/27",
+  "market": "CAPiTA Japan official store",
+  "capturedAt": "2026-10-14",
+  "productPage": "https://jp.capitasnowboarding.com/products/capita-d-o-a-mens-snowboard-2027",
+  "listedPrice": {
+    "amount": 89100,
+    "currency": "JPY",
+    "displayedTaxTreatment": "Not explicitly stated on the captured product page"
+  },
+  "sizesListed": ["148", "150", "152", "154", "156", "158", "160", "162", "164", "151W", "153W", "155W", "157W", "159W", "161W", "163W"],
+  "convertedReference": {
+    "amount": 3763.36,
+    "currency": "CNY",
+    "method": "JPY 89,100 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan official-store reference only; not a mainland China selling price.",
+      "The product page does not explicitly state the tax treatment of the displayed price.",
+      "Shipping, import charges, and transaction exchange costs are not included.",
+      "Price and size availability can change; recheck the selected size at checkout."
+    ]
+  },
+  "evidence": "The Japanese official CAPiTA product page identifies D.O.A. 2027, displays JPY 89,100, and lists all 16 standard and wide sizes. The ECB page lists the 2026-10-14 reference rates used above and warns that they are informational, not for transaction purposes.",
+  "officialPageRecheck20261015": {
+    "northAmericaProductPage": "https://capitasnowboarding.com/products/capita-d-o-a-mens-snowboard-2027",
+    "japanProductPage": "https://jp.capitasnowboarding.com/products/capita-d-o-a-mens-snowboard-2027",
+    "verifiedTitle": "CAPiTA D.O.A. Snowboard 2027",
+    "japanDisplayedPrice": "JPY 89,100",
+    "listedSizes": ["148", "150", "152", "154", "156", "158", "160", "162", "164", "151W", "153W", "155W", "157W", "159W", "161W", "163W"],
+    "taxTreatment": "未在当前读取的日本商品页文字中明确说明",
+    "seasonDecision": "以官方商品页年份 2027 归档为 2026/27；页面没有直接写出雪季起止日期。"
+  }
+}

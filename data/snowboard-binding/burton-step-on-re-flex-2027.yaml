@@ -5,27 +5,38 @@ model: "Step On Re:Flex"
 year: 2027
 title: "Burton Step On Re:Flex 2027"
 one_liner: "Step On 快穿系统的 Re:Flex 版本，须与 Step On 雪鞋配套使用。"
+price:
+  min: 1811.99
+  max: 1811.99
+  currency: CNY
 specs:
+  terrain: [ all-mountain ]
+  seasonEvidence: Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-172831；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。
   entrySystem: step-in
   flexFeel: medium
   mountingSystem: "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc"
   bootCompatibility: "仅配认证 Step On 专用雪鞋；男/女/儿童系列及固定器尺码必须匹配，不能使用普通绑带雪鞋。"
   bindingSizeGuide: "Burton 男款 Step On 官方靴码：S US 6–8 / EU 38–41；M 8.5–10.5 / EU 41.5–43.5；L 11–13 / EU 44–46；XL 14–15 / EU 47–48。仅配对应男款 Step On 雪鞋"
+  sizeChartScope: "男款 Step On 推荐范围按半码衔接、无重叠：US 6–8、8.5–10.5、11–13、14–15。必须匹配男款 Step On 雪鞋尺码；不得套用普通 Re:Flex 固定器尺码表。"
   baseplateMaterial: "30% 短切玻纤/尼龙复合材料"
   highbackAdjustment: "Step On FLAD 前倾角调节"
   cushioning: "Re:Flex FullBED 全掌缓震"
   warranty: "底盘终身保修；绑带和高背自购买日起 1 年保修"
-  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 Step On 使用专用尺码表，不能套用普通绑带式 S/M/L 范围。
+  selectionNotes: 只配 Burton 男款 Step On 雪鞋，并按 Step On 专用表逐半码对应；US 男 8 对 S、8.5 对 M，尺码档之间不重叠。试装确认前掌和后跟连接点正确扣合；不能使用普通绑带雪鞋。安装孔位按 Re:Flex 圆盘核对，旧款 Burton 3D 板需另购适配圆盘。
   compatibilitySources: https://www.burton.com/en-us/products/mens-burton-step-on-re-flex-snowboard-bindings-172831；https://www.burton.com/en-us/pages/size-charts
   sizeChart:
     - { size: S, usMen: 6-8, eu: 38-41, uk: 5-7, mondo: 24-26 }
     - { size: M, usMen: 8.5-10.5, eu: 41.5-43.5, uk: 7.5-9.5, mondo: 26.5-28.5 }
     - { size: L, usMen: 11-13, eu: 44-46, uk: 10-12, mondo: 29-31 }
     - { size: XL, usMen: 14-15, eu: 47-48, uk: 13-14, mondo: 32-33 }
-  priceCheckedAt: 2026-10-12
-  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
+  priceCheckedAt: 2026-10-14
+  regionalListPrice: JPY 42,900
+  priceMarket: Burton 日本官方商店；型号 ID 172831、色款标识 27WIN-172831
+  priceSource: https://jp.burton.com/ja-jp/products/mens-burton-step-on-re-flex-snowboard-bindings-172831
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Burton 日本官方商品页对应 2027 款型号 ID 172831 / 色款标识 27WIN-172831，标价 JPY 42,900；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 1,811.99。页面列出 S/M/L/XL，XL 码当时显示售罄。仅兼容 Step On 雪鞋；税费口径以结账为准。此为日本官方店折算参考，不是中国售价，跨境配送及进口费用未计，库存会变化。
 images:
-  - url: "https://www.burton.com/cdn/shop/files/1728316E7W_1.webp?v=1783620482&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/55e4c6a7eca7f8b6cea2ab884fac547d73aa7866b0ed99dae630e01b0a85f35d.webp"
     kind: face
     alt: Burton Step On Re:Flex 固定器官方商品图
     source: Burton 官方商品页（图片使用授权待核）
@@ -33,4 +44,11 @@ images:
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-step-on-re-flex-snowboard-bindings-172831
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 7.3
+  comfort: 6.5
+  versatility: 6.8
+  convenience: 8.8
+  value: 5.0
 status: published

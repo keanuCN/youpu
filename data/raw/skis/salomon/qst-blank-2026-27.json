@@ -1,0 +1,24 @@
+{
+  "brand": "Salomon",
+  "model": "S/LAB QST Blank",
+  "season": "2026-27",
+  "sku": "L47713400+",
+  "seedFile": "data/skis/salomon-qst-blank-2027.yaml",
+  "capturedAt": "2026-10-14",
+  "sources": {
+    "officialSeasonCatalogue": "https://www.tanabesports.jp/ts/wp-content/uploads/2026/03/26-27_SALOMON_SKI_user.pdf",
+    "officialProductPage": "https://www.salomon.com/en-us/product/s-lab-qst-blank-li7032/L47713400%2B",
+    "catalogueEvidence": "The season catalogue lists sizes 178/186/192 and complete geometry, turn radius, midsole position, and single-ski weights.",
+    "productEvidence": "The official product page confirms SKU L47713400+ and offers sizes 170/178/186/192. With sizeId L47713400170 selected, the page displays 137-112-126 mm and 17 m for the 170 cm option.",
+    "limitations": [
+      "170 cm is absent from the season catalogue table; its geometry and radius come from the exact selected size on the official product page.",
+      "The official sources do not provide a verifiable 170 cm weight or midsole position."
+    ]
+  },
+  "knownSizeSpecs": [
+    {"lengthCm":170,"tipMm":137,"waistMm":112,"tailMm":126,"radiusM":17,"source":"official product page selected sizeId L47713400170"},
+    {"lengthCm":178,"tipMm":138,"waistMm":112,"tailMm":127,"radiusM":18,"midsoleMm":812,"weightPerSkiG":1950},
+    {"lengthCm":186,"tipMm":139,"waistMm":112,"tailMm":128,"radiusM":19,"midsoleMm":855,"weightPerSkiG":2070},
+    {"lengthCm":192,"tipMm":140,"waistMm":112,"tailMm":129,"radiusM":20,"midsoleMm":885,"weightPerSkiG":2270}
+  ]
+}

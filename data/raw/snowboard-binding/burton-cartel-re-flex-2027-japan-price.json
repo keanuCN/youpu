@@ -1,0 +1,46 @@
+{
+  "slug": "burton-cartel-re-flex-2027",
+  "model": "Burton Cartel Re:Flex",
+  "season": "2026/27",
+  "productId": "105391",
+  "variantCode": "27WIN-105391",
+  "market": "Burton Japan official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 46200,
+    "currency": "JPY",
+    "source": "https://jp.burton.com/en-jp/products/mens-burton-cartel-re-flex-snowboard-bindings-105391"
+  },
+  "convertedReference": {
+    "amount": 1951.37,
+    "currency": "CNY",
+    "method": "JPY 46,200 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan official-store reference only; not a mainland China selling price.",
+      "Shipping, import charges, and tax treatment at checkout are not included or confirmed.",
+      "Price and size availability can change; check the selected variant at checkout."
+    ]
+  },
+  "observedSizes": ["S", "M", "L"],
+  "soldOutAtCapture": ["S"],
+  "chinaMarketAudit": {
+    "checkedAt": "2026-10-14",
+    "status": "no_verifiable_cny_price_visible",
+    "jdBrandListing": {
+      "url": "https://www.jd.com/brand/13181b37c6a7208bfadb.html?catID=17366&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_redissale_desc",
+      "visibleModel": "BURTON 官方男士 CARTEL Re:Flex",
+      "visibleStyleNumber": "105391",
+      "visibleVariantCode": "10539107001",
+      "observed": "品牌列表展示商品名、货号和 41+ 条评价，但检索文本未展示价格；京东商品详情链接 https://item.jd.com/10057033221466.html 的可读取页面仅返回浏览器兼容提示。"
+    },
+    "excludedJapanRetailer": {
+      "url": "https://www.murasaki.jp/Form/Product/ProductDetail.aspx?bid=snow&pid=n06120101119982&shop=0&swrd=Burton&vid=n0612010111998290016010",
+      "observedPrice": "JPY 46,200",
+      "evidence": "该页为日本 Murasaki Sports 店铺，明确标示 26/27 和 Burton 商品型号。金额为日元，不能误读成 CNY 46,200，也不能作为中国市场售价。"
+    },
+    "assessment": "目前没有通过可读取页面核实到 Burton Cartel Re:Flex 2026/27 的中国人民币售价。保留日本官方 JPY 46,200 折算为 CNY 1,951.37 的地区参考，不把它标成中国售价。"
+  },
+  "notes": "Official page identifies the 2026/27 model/color code 27WIN-105391. Size S was marked sold out in the captured page; this is a transient inventory observation. ECB reference rates are informational, not transaction rates."
+}

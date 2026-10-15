@@ -2,11 +2,34 @@
   "brand": "Burton",
   "model": "Men's Custom Camber",
   "season": "2026-27",
-  "retrievedAt": "2026-10-11",
+  "retrievedAt": "2026-10-15",
   "sources": {
     "officialProductPage": {
       "url": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881",
       "evidence": "Burton official 2027 product page identifies Camber bend, Directional shape, Twin flex, Super Fly II 700G core with Dualzone EGD, 45-degree Carbon Highlights, Sintered WFO base, The Channel mounting system, intermediate/expert rider level and a 3-year warranty. The qualitative Twin flex is preserved as manufacturer terminology and not converted into a numeric flex score."
+    }
+  },
+  "priceResearch": {
+    "currentSeedReference": {
+      "market": "Japan",
+      "sourceUrl": "https://jp.burton.com/ja-jp/products/mens-burton-custom-camber-snowboard-106881",
+      "modelCode": "27WIN-106881",
+      "listedPrice": "JPY 107,800",
+      "convertedPriceCny": 4553.20,
+      "conversion": "ECB 2026-10-14 EUR/JPY 177.39 and EUR/CNY 7.4925; shipping, cross-border delivery and import costs excluded",
+      "priceType": "Burton Japan official regional list price; not a mainland China price"
+    },
+    "mainlandChinaListingLead": {
+      "marketplace": "JD.com",
+      "categoryPageUrl": "https://www.jd.com/hprm/1318ae1d7a8b48a47346.html",
+      "itemUrl": "https://item.jd.com/10229459878147.html",
+      "observedTitle": "BURTON伯顿官方26-27雪季新品男士CUSTOM 滑雪单板106881/107071 106881AI66RG-Camber板型 156cm",
+      "observedVariant": "156 cm; 106881AI66RG (listing title)",
+      "observedAt": "2026-10-15",
+      "evidence": "JD category page exposes the exact season, model family, model code and 156 cm variant. The item page is indexed but its captured response only displays a browser compatibility prompt; no RMB amount, seller identity, stock status, or checkout price is verifiable from the captured page.",
+      "priceCny": null,
+      "useForSeedPrice": false,
+      "limitation": "A current mainland-market listing lead, not sufficient evidence for an RMB reference price. Do not transfer prices from older 25/26 listings or unrelated 107071/Flying V variants."
     }
   },
   "sizeTable": {

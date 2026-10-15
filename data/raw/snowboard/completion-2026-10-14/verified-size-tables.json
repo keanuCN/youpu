@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-10-14",
+  "scope": "8 snowboard products; size specs inserted into seed YAML",
+  "sources": [
+    {
+      "slug": "bataleon-evil-twin-2025",
+      "url": "https://bataleon.com.ar/shop/evil-twin/",
+      "sourceType": "brand regional store",
+      "modelSeason": "2024/25",
+      "sizes": ["151", "154", "156W", "157", "159", "159W"],
+      "notes": "Official product page provides effective edge, waist, tip/tail, sidecut, min/max stance, rider weight and boot-size ranges. Distances in source cm converted to mm for numeric mm fields."
+    },
+    {
+      "slug": "burton-custom-camber-2026",
+      "url": "https://eu.burton.com/en-gb/products/mens-burton-custom-camber-snowboard-106881a-o?variant=42867455721549",
+      "sourceType": "manufacturer product page",
+      "modelSeason": "2025/26 (page identifies Custom Camber 2026)",
+      "sizes": ["150", "154", "156", "158", "162", "154W", "158W", "162W", "166W", "170W"],
+      "notes": "Official table provides weight range, waist width, running length, radius, stance width, nose/tail width, and effective edge. Burton stance-location value is not mapped to setback because the unit/meaning is not explicit in the table."
+    },
+    {
+      "slug": "decathlon-all-road-900-2026",
+      "url": "https://www.decathlon.co.uk/p/adults-snowboarding-board-for-slope-and-freeride-all-road-900/332434/c314c29m8643399",
+      "sourceType": "manufacturer retailer product page",
+      "modelSeason": "All Road 900 model page; 2026 seed identity",
+      "sizes": ["154", "160", "166"],
+      "notes": "Official page lists front/center/rear widths, sidecut radius, recommended stance, rider weight and height. Its body contains differing 50 mm and 35 mm setback descriptions; the per-size table leaves setback unspecified."
+    },
+    {
+      "slug": "decathlon-park-ride-500-2026",
+      "url": "https://www.decathlon.co.uk/p/mens-all-mountain-and-freestyle-snowboard-park-and-ride-500-green/306010/c49c1m8938817",
+      "sourceType": "manufacturer retailer product page",
+      "modelSeason": "Park & Ride 500 model page; 2026 seed identity",
+      "sizes": ["152", "153 MW", "156", "158 W"],
+      "notes": "Official page lists width geometry, sidecut radius, recommended stance, standard 20 mm setback and nominal board weights. Nominal weights are 2710/2800/2848/3000 g, each with stated ±6% tolerance. The separate Powder Stance is 60 mm setback."
+    },
+    {
+      "slug": "decathlon-snb-100-2026",
+      "url": "https://www.decathlon.co.uk/p/mens-all-mountain-snowboarding-board-snb-100-beige/309522/c179m8996555",
+      "sourceType": "manufacturer retailer product page",
+      "modelSeason": "SNB 100 model page; 2026 seed identity",
+      "sizes": ["152", "156", "160 MW"],
+      "notes": "Official page lists width geometry, radius, recommended stance, 20 mm setback and nominal weights 2767/2670/2966 g (±6%)."
+    },
+    {
+      "slug": "capita-defenders-of-awesome-2026",
+      "url": "https://www.melbournesnowboard.com.au/products/capita-defenders-of-awesome-2026",
+      "sourceType": "retailer product page",
+      "modelSeason": "2025/26 (2026 model; product page and full size table agree)",
+      "sizes": ["148", "150", "152", "154", "156", "158", "160", "162", "164", "151W", "153W", "155W", "157W", "159W", "161W", "163W"],
+      "notes": "Complete standard and wide size table: effective edge, sidecut, nose/tail, waist, reference stance and rider weight. Values are retailer-published and are not tagged as direct manufacturer data. Sportano independently confirms the 2026 model and most geometry; its 163W effective edge differs by 3 mm, so the primary source values are retained throughout."
+    },
+    {
+      "slug": "capita-horrorscope-2024",
+      "url": "https://pacificboarder.com/products/capita-mens-pathfinder-reverse-camber-snowboard-2024",
+      "sourceType": "retailer product page reproducing manufacturer sizing data",
+      "modelSeason": "2023/24 Pathfinder Reverse (2024 product)",
+      "sizes": ["145", "147", "149", "151", "153", "155", "157", "151W", "153W", "155W", "157W", "159W", "162W"],
+      "notes": "The exact 2024 product page identifies the model and publishes full geometry, reference stance and rider weight. Corrected shape to Directional Twin and removed unsupported zero-setback value. Existing slug remains unchanged for URL compatibility."
+    },
+    {
+      "slug": "gray-desperado-2024",
+      "url": "https://graysnowboards.co.jp/pdf/23-24_GR_CL_GRAY_A4_japan_web.pdf",
+      "sourceType": "manufacturer 2023/24 catalog",
+      "modelSeason": "2023/24",
+      "sizes": ["132", "138"],
+      "notes": "Official catalog section explicitly names DESPERADO micro/mini and includes effective edge, contact length, waist, nose/tail width, three-radius sidecut, stance range/setback, camber, and flex distribution. Lengths are 1320 and 1380 mm, represented as 132 and 138 cm."
+    }
+  ],
+  "excludedCandidates": [
+    {
+      "slug": "jones-mountain-twin-2026",
+      "url": "https://eu.jonessnowboards.com/products/mens-mountain-twin-snowboard?variant=43773545054343",
+      "reason": "Current official page includes newer size labels and is not verified as the 2025/26 chart."
+    },
+    {
+      "slug": "jones-hovercraft-2-0-2027",
+      "url": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard?variant=46716348334232",
+      "reason": "Official page has a size chart but does not identify its season as 2026/27."
+    }
+  ]
+}

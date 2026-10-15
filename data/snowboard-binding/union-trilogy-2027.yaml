@@ -5,6 +5,10 @@ model: "Trilogy"
 year: 2027
 title: "Union Binding Company Trilogy 2027"
 one_liner: "Union 女款全山地固定器，官方定位覆盖雪道、粉雪与公园场景。"
+price:
+  min: 1951.37
+  max: 1951.37
+  currency: CNY
 specs:
   entrySystem: strap
   flexFeel: mid-stiff
@@ -25,13 +29,15 @@ specs:
     - { size: SMALL, usMen: "* - 5.5", usWomen: 4 - 6.5, uk: 2 - 4.5, eu: 34 - 37, mondo: 21 - 23.5 }
     - { size: MEDIUM, usMen: 5.5 - 7.5, usWomen: 6.5 - 8.5, uk: 4.5 - 6.5, eu: 37 - 40.5, mondo: 23.5 - 25.5 }
     - { size: LARGE, usMen: 8 - 10, usWomen: 9 - 11, uk: 7 - 9, eu: 41 - 43, mondo: 26 - 28 }
-  priceCheckedAt: 2026-10-12
+  priceCheckedAt: 2026-10-14
   officialPrice: JPY 46200
-  priceMarket: 原币 JPY；来源商店 jp.unionbindingcompany.com
+  priceMarket: Union Binding Company 日本官方商店；2027 款官方商品页
   priceSource: https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  regionalPriceSource: https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Union 日本官方商店 2027 款 Trilogy 页面标价 JPY 46,200（含日本消费税），按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 1,951.37。页面列出 S/M/L 并显示售罄；运费结账计算。日本官方店折算参考，不是中国售价或成交价，跨境运输及进口费用未计，库存会变化。
 images:
-  - url: "https://unionbindingcompany.com/cdn/shop/files/UN26_TRILOGY_BLACK_1024x.jpg?v=1785333206"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/51dc14fbee054701df1d4eedc2edb1babb6a29e7a8f8734ccd8ee4c2743715c3.webp"
     kind: face
     alt: Union Trilogy 2027 固定器官方商品图
     source: Union Binding Company 官方商品页（图片使用授权待核）
@@ -39,4 +45,11 @@ images:
 data_source:
   kind: official
   origin_url: https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 7.8
+  comfort: 6.8
+  versatility: 7.6
+  convenience: 6.2
+  value: 5.0
 status: published

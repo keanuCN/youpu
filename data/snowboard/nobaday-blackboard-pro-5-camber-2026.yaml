@@ -1,0 +1,51 @@
+slug: nobaday-blackboard-pro-5-camber-2026
+category: snowboard
+brand: nobaday
+model: Blackboard Pro 5.0 Camber
+year: 2026
+title: NOBADAY 小黑板 Blackboard Pro 5.0 Camber
+one_liner: 全山地 True Twin 正拱板，官方标注硬度 5/10，尺码表提供 142–161 cm 八个长度；产品页未注明雪季。
+price:
+  min: 2670.4
+  max: 2670.4
+  currency: CNY
+specs:
+  lengthOptions: 142 / 145 / 148 / 151 / 153 / 155 / 157 / 161
+  shape: True Twin
+  profile: Camber
+  profileFamily: camber
+  flex: 5
+  core: Poplar wood core
+  fiberglass: Triax laminated fiberglass
+  base: IS7500 sintered graphite
+  construction: 14 carbon stringers; PU sidewalls
+  scenes:
+    - all-mountain
+    - carving
+    - freestyle
+  sizeSpecs:
+    - { size: "142", effectiveEdge: 1004, noseWidth: 281, waistWidth: 242, sidecutRadius: 6.9965, bindingSize: S }
+    - { size: "145", effectiveEdge: 1034, noseWidth: 284, waistWidth: 244, sidecutRadius: 7.2192, bindingSize: S/M }
+    - { size: "148", effectiveEdge: 1064, noseWidth: 287, waistWidth: 246, sidecutRadius: 7.4421, bindingSize: M }
+    - { size: "151", effectiveEdge: 1094, noseWidth: 290, waistWidth: 248, sidecutRadius: 7.665, bindingSize: M }
+    - { size: "153", effectiveEdge: 1114, noseWidth: 293, waistWidth: 250, sidecutRadius: 7.7533, bindingSize: M }
+    - { size: "155", effectiveEdge: 1134, noseWidth: 296, waistWidth: 252, sidecutRadius: 7.842, bindingSize: M }
+    - { size: "157", effectiveEdge: 1154, noseWidth: 299, waistWidth: 254, sidecutRadius: 7.9315, bindingSize: M }
+    - { size: "161", effectiveEdge: 1194, noseWidth: 303, waistWidth: 257, sidecutRadius: 8.1, bindingSize: M/L }
+  priceCheckedAt: 2026-10-15
+  officialPrice: USD 399
+  priceMarket: NOBADAY 官方美国站
+  priceSource: https://nobaday.com/products/nbd-camber-snowboard
+  exchangeRate: EUR/USD 1.1195；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 官方美国站挂牌 USD 399，按 ECB 2026-10-14 参考汇率折算约 CNY 2,670.40；不是中国售价或成交价，税费、跨境配送和进口费用未计。产品页未注明雪季。官方尺码表没有列出尾宽，故不补录。
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ff3fd3c93fedf493da9effca6c21e9e40a6fd7faf588da3534a879e0657cdaad.webp"
+    kind: face
+    alt: NOBADAY Blackboard Pro 5.0 Camber 官方产品图
+    source: NOBADAY 官方商品页图片（转载授权未核实）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://nobaday.com/products/nbd-camber-snowboard
+status: published

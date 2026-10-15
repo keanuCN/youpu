@@ -1,5 +1,9 @@
 import { resolveImageUrl } from "../lib/image-url";
 
+function heroImageSet(small: string, large: string) {
+  return `${resolveImageUrl(small)} 768w, ${resolveImageUrl(large)} 1280w`;
+}
+
 // 视觉素材（CDN；开发环境通过本地代理加载，避免浏览器直连大图不稳定）
 export const IMG = {
   baseA:
@@ -28,7 +32,6 @@ export const IMG = {
     resolveImageUrl(
       "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/board-detail-binding.png?auth_key=b65df2b86b31534b53b605d6ae3c12bd3061d495618139b5d7bb821526f17890",
     ),
-  heroRidge: resolveImageUrl("/images/hero-ridge.webp"),
   riderCarve:
     resolveImageUrl(
       "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/rider-carve.png?auth_key=8f03132146310e5dc68c640fdc85ade30f12ee170b9a62e3e2cc06c2a07d2bf8",
@@ -38,6 +41,45 @@ export const IMG = {
       "https://g.cdn.meoo.host/uvayfd7jql5o/ai-images/rider-powder.png?auth_key=bb4c509a661d64e1e86a68cefb9758a24f192e26d4065224e061fa128bdb66a6",
     ),
 } as const;
+
+/** 首页雪场主图池：本地优化图片，避免依赖外部站点加载。 */
+export const HERO_IMAGE_POOL = [
+  {
+    src: resolveImageUrl("/hero/ridge-1440.webp"),
+    srcSet: `${resolveImageUrl("/hero/ridge-768.webp")} 768w, ${resolveImageUrl("/hero/ridge-1440.webp")} 1440w`,
+    alt: "雪山山脊与滑雪场原创插画",
+    credit: "有谱原创视觉",
+    sourcePage: undefined,
+  },
+  {
+    src: resolveImageUrl("/hero/jiangjunshan-1280.webp"),
+    srcSet: heroImageSet("/hero/jiangjunshan-768.webp", "/hero/jiangjunshan-1280.webp"),
+    alt: "阿勒泰将军山滑雪场远景",
+    credit: "Pazakui · CC BY 4.0 · 已裁切",
+    sourcePage: "https://commons.wikimedia.org/wiki/File:Altay_China_horizon_-_Jiangjunshan_Ski_Resort.jpg",
+  },
+  {
+    src: resolveImageUrl("/hero/altay-picture3-1280.webp"),
+    srcSet: heroImageSet("/hero/altay-picture3-768.webp", "/hero/altay-picture3-1280.webp"),
+    alt: "新疆阿勒泰地区冬季雪景",
+    credit: "Huangdan2060 · CC BY 3.0 · 已裁切",
+    sourcePage: "https://commons.wikimedia.org/wiki/File:Snow_Scenery_in_Altay_Prefecture,_Xinjiang,_China,_picture3.jpg",
+  },
+  {
+    src: resolveImageUrl("/hero/hemu-picture10-1280.webp"),
+    srcSet: heroImageSet("/hero/hemu-picture10-768.webp", "/hero/hemu-picture10-1280.webp"),
+    alt: "新疆布尔津禾木乡冬季雪景",
+    credit: "Huangdan2060 · CC BY 3.0 · 已裁切",
+    sourcePage: "https://commons.wikimedia.org/wiki/File:Snow_Scenery_in_Altay_Prefecture,_Xinjiang,_China,_picture10.jpg",
+  },
+  {
+    src: resolveImageUrl("/hero/altay-picture1-1280.webp"),
+    srcSet: heroImageSet("/hero/altay-picture1-768.webp", "/hero/altay-picture1-1280.webp"),
+    alt: "新疆阿勒泰地区冬季山景",
+    credit: "Huangdan2060 · CC BY 3.0 · 已裁切",
+    sourcePage: "https://commons.wikimedia.org/wiki/File:Snow_Scenery_in_Altay_Prefecture,_Xinjiang,_China,_picture1.jpg",
+  },
+] as const;
 
 /** 底面主视觉轮换池：详情页图集第一张固定用底面 */
 export const BASE_POOL = [IMG.baseA, IMG.baseB, IMG.baseC, IMG.baseD];

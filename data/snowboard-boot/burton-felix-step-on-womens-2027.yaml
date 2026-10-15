@@ -1,0 +1,61 @@
+slug: burton-felix-step-on-womens-2027
+category: snowboard-boot
+brand: burton
+model: "Women's Felix Step On"
+year: 2027
+title: "Burton Women's Felix Step On 2027"
+one_liner: "女款中等脚感 Step On 雪鞋，双区 BOA 与 Vibram 外底；仅配 Burton Step On 固定器。"
+price:
+  min: 3346.55
+  max: 3346.55
+  currency: CNY
+specs:
+  terrain: "Burton 官方定位全地形（all-terrain versatility）"
+  lacingSystem: "Sequence BOA：双路径单旋钮调节"
+  flex: "中等脚感（Burton 官方标注 Happy Medium）"
+  fit: "女款 Regular/Wide 可选；页面列出 US 女 5–10 尺码选项"
+  liner: "Imprint 3 女款鞋胆，可热塑"
+  innerCuff: "Focus Cuff"
+  outsole: "Vibram Traction Lug / Vibram EcoStep；Step On 前掌连接卡齿"
+  warmthFeatures: "DRYRIDE Heat Cycle 内衬"
+  bindingCompatibility: "仅兼容 Step On 固定器，不能用于普通绑带固定器。Nitro 官方指南说明 Nitro Step On 固定器兼容所有 Step On 雪鞋，但须使用女款固定器并按尺码表配码；本款女 US 5–6 / 6.5–8.5 / 9–10 分别对应女款 S/M/L。跨品牌实装仍应确认靴卡完全扣合。"
+  sizeGuide: "商品页尺码选择器列女 US 5、6、6.5、7、7.5、8、8.5、9、9.5、10；Burton 女款转换表对应 EU 35–42、UK 3–8、Mondo 22–27。码数列表不代表当前有货。"
+  sizeChart:
+    - { size: US 女 5, usWomen: "5", eu: "35", uk: "3", mondo: "22", matchingBindingSize: S }
+    - { size: US 女 6, usWomen: "6", eu: "36.5", uk: "4", mondo: "23", matchingBindingSize: S }
+    - { size: US 女 6.5, usWomen: "6.5", eu: "37", uk: "4.5", mondo: "23.5", matchingBindingSize: M }
+    - { size: US 女 7, usWomen: "7", eu: "38", uk: "5", mondo: "24", matchingBindingSize: M }
+    - { size: US 女 7.5, usWomen: "7.5", eu: "39", uk: "5.5", mondo: "24.5", matchingBindingSize: M }
+    - { size: US 女 8, usWomen: "8", eu: "40", uk: "6", mondo: "25", matchingBindingSize: M }
+    - { size: US 女 8.5, usWomen: "8.5", eu: "40.5", uk: "6.5", mondo: "25.5", matchingBindingSize: M }
+    - { size: US 女 9, usWomen: "9", eu: "41", uk: "7", mondo: "26", matchingBindingSize: L }
+    - { size: US 女 9.5, usWomen: "9.5", eu: "41.5", uk: "7.5", mondo: "26.5", matchingBindingSize: L }
+    - { size: US 女 10, usWomen: "10", eu: "42", uk: "8", mondo: "27", matchingBindingSize: L }
+  selectionNotes: 按穿雪袜后的较长脚查 Burton 女款尺码表，再试穿核对脚趾余量、脚背压力和屈膝锁跟。女款 Burton 与 Nitro Step On 固定器表均按 US 5–6 为 S、6.5–8.5 为 M、9–11 为 L；需选择女款固定器并实扣确认。官网尺码选择器显示选项不等于库存。
+  fitEvidence: Burton 商品页确认 Regular/Wide 两种宽度选项；未提供该款鞋楦毫米宽度或脚背容积，宽度需试穿确定。
+  heatMolding: 商品页确认 Imprint 3 可热塑；热塑不能替代正确尺码和锁跟检查，操作按 Burton 指引由专业店完成。
+  compatibilitySources: https://www.burton.com/en-us/products/womens-burton-felix-step-on-snowboard-boots-172861；https://www.burton.com/en-us/products/womens-burton-step-on-re-flex-snowboard-bindings-172841；https://www.nitrosnowboards.com/pages/step-on；https://www.nitrosnowboards.com/collections/all-26-27/products/step-on-womens-bindings；https://www.burton.com/en-us/pages/size-charts
+  seasonEvidence: Burton 美国官方商品页标题标注 2027，Black 变体代码为 27WIN-172861，据此归档为 2026/27（2027 款）。
+  priceCheckedAt: 2026-10-15
+  officialPrice: USD 499.95
+  priceMarket: Burton 美国官方商店
+  priceSource: https://www.burton.com/en-us/products/womens-burton-felix-step-on-snowboard-boots-172861
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Burton 美国官方商品页标价 USD 499.95；按 ECB 2026-10-13 EUR/USD 1.1188、EUR/CNY 7.489 折合 CNY 3,346.55。该数值是美国地区官方挂牌折算参考，不是中国售价，未计跨境运费、税费及进口成本；页面尺码与库存会变化。
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/275087c025fe3b227fab131a34202a0ee5b48cf37a2082ec7667897fb963c35d.webp"
+    kind: face
+    alt: Burton Women's Felix Step On 2027 官方雪鞋商品图
+    source: Burton 官方商品页（图片展示授权待核）
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.burton.com/en-us/products/womens-burton-felix-step-on-snowboard-boots-172861
+# 编辑暂估，非社区实测；评分口径见 docs/单板雪鞋编辑评分口径-2026-10-15.md
+editorial_scores:
+  fit: 8.3
+  support: 7.2
+  warmth: 8.2
+  convenience: 8.3
+  value: 5.0
+status: published

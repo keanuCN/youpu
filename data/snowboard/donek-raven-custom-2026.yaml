@@ -1,0 +1,39 @@
+slug: donek-raven-custom-2026
+category: snowboard
+brand: donek
+model: Raven Custom
+year: 2026
+title: Donek Raven 定制单板
+one_liner: Donek 全山地定制方向板，板头更宽以增加浮力，同时保留较易反脚滑行的轮廓；硬度按滑手体重设定，没有固定尺码表。
+price:
+  min: 5789.2
+  max: 5789.2
+  currency: CNY
+specs:
+  shape: Directional
+  profile: Camber
+  profileFamily: camber
+  flexRange: 5–6（随滑手体重调整）
+  core: Aspen, poplar and ash laminates
+  fiberglass: Triaxial fiberglass
+  base: Perlatech 8223
+  sidewall: ABS
+  lengthOptions: 按滑手尺寸和需求定制
+  scenes:
+    - all-mountain
+    - carving
+    - powder
+    - freestyle
+  customization: 板宽和硬度按滑手需求调整；产品介绍称侧切固定，但定制选项又列出可调侧切，订购前需向 Donek 确认。
+  priceCheckedAt: 2026-10-15
+  officialPrice: USD 865
+  priceMarket: Donek 官方美国站基础定制价
+  priceSource: https://donek.com/product/raven/
+  exchangeRate: EUR/USD 1.1195；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: 官方美国站挂牌 USD 865，按 ECB 2026-10-14 参考汇率折算 CNY 5,789.20；是基础定制价的地区参考，不是中国售价或最终成交价。最终尺寸、定制费用、运费、税费及进口费用需另行确认。
+images: []
+data_source:
+  kind: official
+  origin_url: https://donek.com/product/raven/
+status: published

@@ -1,0 +1,22 @@
+{
+  "brand": "Salomon",
+  "model": "MTN 86 Carbon",
+  "season": "2026-27",
+  "sku": "L47824000+",
+  "seedFile": "data/skis/salomon-mtn-86-carbon-2027.yaml",
+  "capturedAt": "2026-10-14",
+  "sources": {
+    "officialProductPage": "https://www.salomon.com/en-us/product/mtn-86-carbon-li8310",
+    "officialProductTable": "https://www.salomon.com/en-nl/product/mtn-86-carbon-li8310",
+    "seasonCatalogue": "https://manuals.plus/m/a40b75f6412fd6aeff3f59315f6cb4cd96298cd2f0ae432a68878459d4efaf07.pdf",
+    "productEvidence": "Official Salomon pages identify article L47824000+, list all five sizes and give per-size geometry, radius, midsole and net weight. The 26/27 catalogue supplies season-specific single-ski weights.",
+    "weightMapping": "The official product page net weights 1920/2020/2120/2300/2520 g correspond to twice the catalogue single-ski weights 960/1010/1060/1150/1260 g; stored weightPerPair follows the product page unit basis."
+  },
+  "sizeSpecs": [
+    {"lengthCm":148,"tipMm":114,"waistMm":86,"tailMm":100,"radiusM":17,"midsoleMm":646,"weightPerPairG":1920,"weightPerSkiG":960},
+    {"lengthCm":156,"tipMm":116,"waistMm":86,"tailMm":102,"radiusM":17,"midsoleMm":673,"weightPerPairG":2020,"weightPerSkiG":1010},
+    {"lengthCm":164,"tipMm":118,"waistMm":86,"tailMm":104,"radiusM":18,"midsoleMm":715,"weightPerPairG":2120,"weightPerSkiG":1060},
+    {"lengthCm":172,"tipMm":120,"waistMm":86,"tailMm":106,"radiusM":18,"midsoleMm":746,"weightPerPairG":2300,"weightPerSkiG":1150},
+    {"lengthCm":180,"tipMm":122,"waistMm":86,"tailMm":108,"radiusM":19,"midsoleMm":778,"weightPerPairG":2520,"weightPerSkiG":1260}
+  ]
+}

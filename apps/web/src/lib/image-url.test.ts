@@ -41,7 +41,8 @@ test("only allows local paths and approved remote image prefixes", () => {
 test("allows product images from the project TOS bucket only under product-images", () => {
   const mirroredImage = "https://youpu.tos-cn-beijing.volces.com/product-images/mirror.webp";
   assert.equal(isAllowedImageUrl(mirroredImage), true);
-  assert.equal(resolveImageUrl(mirroredImage, true), `/api/image-proxy?url=${encodeURIComponent(mirroredImage)}`);
+  assert.equal(resolveImageUrl(mirroredImage, true), mirroredImage);
+  assert.equal(resolveImageUrl(mirroredImage, false), mirroredImage);
   assert.equal(isAllowedImageUrl("https://youpu.tos-cn-beijing.volces.com/private/mirror.webp"), false);
 });
 

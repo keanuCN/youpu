@@ -4,7 +4,11 @@ brand: kailas
 model: BM45 GTX Ski Pants
 year: 2026
 title: Kailas BM45 GTX Ski Pants
-one_liner: 75D 三层 GORE-TEX 面料，配通风拉链、可调背带和膝部活动剪裁。
+one_liner: 75D 三层 GORE-TEX 滑雪裤，品牌推荐大山、野雪与非雪道滑行；带 RECCO 反射器、可拆卸背带和通风侧拉链。
+price:
+  min: 2800
+  max: 2800
+  currency: CNY
 specs:
   fit: relaxed
   recco: true
@@ -15,12 +19,50 @@ specs:
   construction: 3L
   articulatedKnees: true
   corduraReinforced: true
+  recommendedUse: 大山滑雪 / 野雪 / 非雪道滑行（KAILAS 官方商品页推荐用途）
+  weather: 面向寒冷滑雪环境；商品页未标注温度等级
+  availableSizes: [ S, M, L, XL ]
+  sizeGuide: 官网尺码选项为 S、M、L、XL；未找到对应成衣尺寸表，不能从尺码名推断腰围或臀围。
+  seasonEvidence: 当前官方页面未直接标注该裤款雪季；2026 年份暂作为档案标签，年款待核。
+  styleCode: KG2541316
+  priceCheckedAt: 2026-10-14
+  officialPrice: CNY 2800
+  regionalListPrice: USD 405.00
+  priceMarket: 凯乐石微商城；货号 KG2541316
+  priceSource: https://detail.youzan.com/show/goods?alias=271lvpwy1x7q3ac&from_source=gbox_seo
+  priceStatus: 凯乐石微商城同货号标价 CNY 2800；凯乐石美国官方店另标 USD 405，按 ECB 2026-10-13 汇率折算约 CNY 2710.98。地区价格有差异；人民币店铺标价为首选参考，非跨境到手价。雪季未由当前商品页确认。
+  imageEvidence: 凯乐石微商城商品页标题及款号 KG2541316 与本档案一致；补入该页五张商品轮播图，图片均复测为 HTTP 200 image/jpeg。图片展示授权状态仍待核。
 images:
-  - url: "https://kailasgear.com/cdn/shop/files/KG2541316_-1.webp?v=1786154508&width=1090"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/76a3b36e68b5543cfc2d3b81ecd5e875aee1fa47a5bda5af24095a845e4b4622.webp"
     kind: face
     alt: KAILAS BM45 GTX 滑雪裤
     source: KAILAS 官网商品图；展示授权状态待核
     sort_order: 0
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/c4890f8e400ca86745759e4d783a311fe80b188fb27aebd72ba46945f4f0bb6f.webp"
+    kind: base
+    alt: KAILAS BM45 GTX 滑雪裤（KG2541316）微商城商品图 1
+    source: 凯乐石微商城精确款号商品页商品轮播图；HTTP 200 image/jpeg，展示授权待核
+    sort_order: 1
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/d71192d65a4edfa283fa321b4d78f3b703ffe5b88b131fb44120fb9787e00865.webp"
+    kind: base
+    alt: KAILAS BM45 GTX 滑雪裤（KG2541316）微商城商品图 2
+    source: 凯乐石微商城精确款号商品页商品轮播图；HTTP 200 image/jpeg，展示授权待核
+    sort_order: 2
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/36aaf8358cb3db45703a2d538a421bf86f81d62fa83602088ac4b384aeedb5ce.webp"
+    kind: base
+    alt: KAILAS BM45 GTX 滑雪裤（KG2541316）微商城商品图 3
+    source: 凯乐石微商城精确款号商品页商品轮播图；HTTP 200 image/jpeg，展示授权待核
+    sort_order: 3
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/3aadfd33cedf156437d7b307b0862cb69d9f7f83d56d65c6640ada6f88717299.webp"
+    kind: base
+    alt: KAILAS BM45 GTX 滑雪裤（KG2541316）微商城商品图 4
+    source: 凯乐石微商城精确款号商品页商品轮播图；HTTP 200 image/jpeg，展示授权待核
+    sort_order: 4
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/36bcd34400bf651d7d99bf2f22215375e929105ba78953f24236979f8e8d2b73.webp"
+    kind: base
+    alt: KAILAS BM45 GTX 滑雪裤（KG2541316）微商城商品图 5
+    source: 凯乐石微商城精确款号商品页商品轮播图；HTTP 200 image/jpeg，展示授权待核
+    sort_order: 5
 data_source:
   kind: official
   origin_url: https://kailasgear.com/products/kailas-bm45-gtx-ski-pants

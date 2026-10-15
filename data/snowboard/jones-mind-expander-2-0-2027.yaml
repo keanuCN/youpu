@@ -10,6 +10,7 @@ price:
   max: 4536
   currency: CNY
 specs:
+  seasonEvidence: Jones 官方商品页当前变体货号为 J.27.SNU.MEX.000.142.1（J.27 年款代码）且页面标注 2027，归档为 2026/27（2027 款）；此代码不证明首次上市年份或实时库存。
   length: 154
   weight: 3000
   effectiveEdge: 1140
@@ -46,7 +47,7 @@ editorial_scores:
   forgiveness: 6.9
   value: 7.1
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNU.MEX-gallery-1.webp?v=1782443855&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/360e3f72af9f9cb8c86c24bd3c3fb19092ad6e41c320eb933b6339a1a26bbb67.webp"
     kind: face
     alt: Jones Mind Expander 2.0 2027 官方产品图
     source: Jones 官方产品页图片（本地演示，版权待核）

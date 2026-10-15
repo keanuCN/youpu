@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-15",
+  "moss": [
+    {
+      "slug": "moss-snowstick-u4-2027",
+      "source": "https://mosssnowstick.com/products/u4-2027",
+      "productJson": "https://mosssnowstick.com/products/u4-2027.js",
+      "officialTitle": "U4 2027",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0742/6156/1640/files/U4_5c196d06-e59e-4f2d-ab85-7850eb9fec53.png?v=1773214050",
+        "https://cdn.shopify.com/s/files/1/0742/6156/1640/files/U4_base_4d7879c6-da69-463f-8dc8-860619506dd1.png?v=1773214050"
+      ]
+    },
+    {
+      "slug": "moss-snowstick-wing-sw-67-2027",
+      "source": "https://mosssnowstick.com/products/wing-sw-67-2027",
+      "productJson": "https://mosssnowstick.com/products/wing-sw-67-2027.js",
+      "officialTitle": "WING SW 67 2027",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0742/6156/1640/files/WINGSW67.png?v=1772873936",
+        "https://cdn.shopify.com/s/files/1/0742/6156/1640/files/WINGSW67_base.png?v=1772873936"
+      ]
+    }
+  ],
+  "donek": {
+    "sources": ["https://donek.com/product/knapton/", "https://donek.com/product/raven/"],
+    "rejectedPreview": "https://donek.com/wp-content/uploads/2021/06/blanktemplate.png",
+    "reason": "两页 Topsheet Preview 的重复图片链接均指向 blanktemplate.png，不将此模板用作商品实图。"
+  },
+  "rights": "来源可核对不等于转载授权已取得；图片使用授权仍待核。"
+}

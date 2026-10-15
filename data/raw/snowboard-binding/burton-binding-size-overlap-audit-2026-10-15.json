@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-15",
+  "brand": "Burton",
+  "season": "2026/27 (2027 models)",
+  "method": "Compare the manufacturer's listed binding-size ranges as written. A range overlap means the chart alone does not determine one binding size; it is not a statement that both sizes fit equally well.",
+  "standardReFlexChart": {
+    "sources": [
+      "https://www.burton.com/en-us/products/mens-burton-cartel-re-flex-snowboard-bindings-105391",
+      "https://www.burton.com/en-us/products/mens-burton-cartel-x-re-flex-snowboard-bindings-222301",
+      "https://www.burton.com/en-us/products/mens-burton-freestyle-re-flex-snowboard-bindings-105441",
+      "https://www.burton.com/en-us/products/mens-burton-genesis-re-flex-snowboard-bindings-105471",
+      "https://www.burton.com/en-us/products/mens-burton-mission-re-flex-snowboard-bindings-105461"
+    ],
+    "menUsBootRanges": { "S": "6–8", "M": "8–11", "L": "10+" },
+    "womenUsBootRanges": { "S": "5–9", "M": "9–11", "L": "11+" },
+    "overlaps": [
+      "Men's US 8 falls in S and M.",
+      "Men's US 10–11 falls in M and L.",
+      "Women's US 9 falls in S and M.",
+      "Women's US 11 falls in M and L."
+    ],
+    "guidance": "Use actual boots to compare baseplate support, toe/heel centering, strap position and ladder adjustment. Burton does not publish boot-shell dimensions or a choice rule for overlapping sizes on these charts."
+  },
+  "lexaXEstChart": {
+    "source": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
+    "womenUsBootRanges": { "S": "4–6", "M": "6–8", "L": "8+" },
+    "menUsBootRanges": { "M": "6–7", "L": "7–10" },
+    "overlaps": [
+      "Women's US 6 falls in S and M.",
+      "Women's US 8 falls in M and L.",
+      "Men's US 7 falls in M and L."
+    ],
+    "mountingLimit": "EST is compatible only with Burton The Channel."
+  },
+  "stepOnMenChart": {
+    "sources": [
+      "https://www.burton.com/en-us/products/mens-burton-step-on-re-flex-snowboard-bindings-172831",
+      "https://www.burton.com/en-us/products/mens-burton-step-on-genesis-re-flex-snowboard-bindings-229601"
+    ],
+    "usBootRanges": { "S": "6–8", "M": "8.5–10.5", "L": "11–13", "XL": "14–15" },
+    "overlap": false,
+    "compatibility": "Burton says Step On bindings are only compatible with Step On boots; the men's chart is distinct from ordinary Re:Flex strap-binding charts.",
+    "bootSeedCrossCheck": {
+      "seed": "data/snowboard-boot/burton-ion-step-on-2027.yaml",
+      "mapping": "The men's Ion Step On boot size rows US 6–8 map to S, 8.5–10.5 to M, 11–13 to L, and 14–15 to XL according to the binding chart.",
+      "limits": "This confirms one men's Step On boot model's chart against the binding size ranges; it does not establish women's boot coverage or fit across other brands."
+    }
+  },
+  "stepOnWomenChart": {
+    "source": "https://www.burton.com/en-us/products/womens-burton-step-on-re-flex-snowboard-bindings-172841",
+    "womenUsBootRanges": { "S": "5–6", "M": "6.5–8.5", "L": "9–11" },
+    "overlap": false,
+    "compatibility": "Burton explicitly warns against mixing men's and women's Step On products; use a matching women's Step On boot and binding size.",
+    "coverageGap": "The current snowboard-boot seed directory contains a men's Burton Ion Step On model but no women's Burton Step On boot entry. A chart/fit audit of the binding does not close that product-coverage gap."
+  },
+  "limits": [
+    "Size ranges are manufacturer recommendations, not guaranteed fit or stock by size.",
+    "No unique choice is inferred for any overlapping size.",
+    "A correct size-chart match does not replace physical interface and boot fit checks."
+  ]
+}

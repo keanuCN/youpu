@@ -1,0 +1,55 @@
+{
+  "slug": "capita-mega-death-2027",
+  "model": "CAPiTA Mega Death",
+  "season": "2026/27 (official product page titled 2027)",
+  "checkedAt": "2026-10-15",
+  "seasonAudit": {
+    "northAmericaOfficialProduct": "https://capitasnowboarding.com/products/capita-mega-death-mens-snowboard-2027",
+    "japanOfficialProduct": "https://jp.capitasnowboarding.com/products/capita-mega-death-mens-snowboard-2027",
+    "japanOfficialPriceList": "https://golgoda.com/PDF/26-27%20CAPITA%20PRICE.pdf",
+    "evidence": "北美与日本官方商品页标题均为 CAPiTA Mega Death Snowboard 2027；日本官方地区商品页可见 JPY 165,000。CAPiTA 26/27 价目表由经销商公开，列示该型号税前 JPY 150,000，加 10% 消费税后与日本官方店 JPY 165,000 一致。商品页未直接写明雪季起止日期，因此季节仍以 2026/27（2027 款）归档，不表述为商品页明示完整雪季。"
+  },
+  "japanOfficial": {
+    "source": "https://jp.capitasnowboarding.com/products/capita-mega-death-mens-snowboard-2027",
+    "market": "CAPiTA Japan official store",
+    "listedPrice": { "amount": 165000, "currency": "JPY" },
+    "convertedReference": { "amount": 6969.18, "currency": "CNY" },
+    "sizes": ["156", "159", "162", "157W", "161W", "165W", "169W"]
+  },
+  "usOfficial": {
+    "source": "https://capitasnowboarding.com/products/capita-mega-death-mens-snowboard-2027",
+    "market": "CAPiTA North America official store",
+    "listedPrice": { "amount": 1199.95, "currency": "USD" },
+    "convertedReference": { "amount": 8030.93, "currency": "CNY" }
+  },
+  "japanPriceListCrossCheck": {
+    "source": "https://golgoda.com/PDF/26-27%20CAPITA%20PRICE.pdf",
+    "market": "CAPiTA Japan 2026/27 provisional price list as published by Golgoda",
+    "listedPrice": { "amount": 150000, "currency": "JPY", "taxIncluded": false },
+    "notes": "The provisional Japanese list price is JPY 150,000 excluding tax; adding 10% consumption tax yields JPY 165,000, matching the official Japan store's displayed price."
+  },
+  "japanRetailerCrossCheck": {
+    "source": "https://www.a-golf.net/c/53425/70000/70012?sort=price_high",
+    "market": "Arigaen Golf Japan retailer",
+    "manufacturerPrice": { "amount": 165000, "currency": "JPY" },
+    "retailPrice": { "amount": 148500, "currency": "JPY", "taxIncluded": true },
+    "notes": "The retailer lists the 2026/27 model with a JPY 165,000 manufacturer price and a JPY 148,500 tax-included sale price; a sale listing is not used as the seed's reference value."
+  },
+  "exchangeRates": {
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-14",
+    "eurUsd": 1.1195,
+    "eurJpy": 177.39,
+    "eurCny": 7.4925,
+    "japanCalculation": "JPY 165,000 / EUR/JPY 177.39 * EUR/CNY 7.4925 = CNY 6,969.18",
+    "usCalculation": "USD 1,199.95 * EUR/CNY 7.4925 / EUR/USD 1.1195 = CNY 8,030.93"
+  },
+  "decision": "Use the CAPiTA Japan official store's JPY 165,000 displayed price as the Asia-market CNY conversion reference; preserve the US official conversion as a separate region comparison because official regional prices differ materially. Replace unsupported seed value CNY 8,640.",
+  "limitations": [
+    "Neither official regional price is a mainland China selling price; this search did not confirm a China-specific quote.",
+    "Regional prices differ materially: the US official conversion is about CNY 1,061.75 higher than the Japan official conversion.",
+    "The exchange rates are ECB reference rates published for information, not transaction rates; bank spreads and payment fees are excluded.",
+    "Shipping, local tax treatment outside the displayed market price, and import charges are not included.",
+    "Prices and availability may change. The Japanese CAPiTA 2026/27 price list is marked provisional."
+  ]
+}

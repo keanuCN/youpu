@@ -1,0 +1,52 @@
+slug: kailas-bm45-plus-womens-insulated-ski-jacket-2026
+category: skiing-apparel
+brand: kailas
+model: BM45 PLUS Women's Insulated Ski Jacket
+year: 2026
+title: KAILAS 女款 BM45 PLUS 夹棉滑雪外套
+one_liner: 凯乐石微商城按货号 KG2541241 标价 CNY 5,200；雪季与完整产品参数待核。
+price:
+  min: 5200
+  max: 5200
+  currency: CNY
+specs:
+  garmentType: jacket
+  insulationType: 夹棉（品牌微商城商品名称）
+  styleCode: KG2541241
+  seasonEvidence: 凯乐石微商城当前商品页未标注雪季；2026 仅作档案年份，不据款号推断年款。
+  priceCheckedAt: 2026-10-15
+  priceMarket: 凯乐石微商城（中国大陆）
+  priceSource: https://detail.youzan.com/show/goods?alias=360gu6koswo4rqu&from_source=gbox_seo
+  priceStatus: 凯乐石微商城按精确货号 KG2541241 列价 CNY 5,200 并显示立即购买入口；未核实实际尺码库存、结账可售状态或最终支付金额。
+  sizeEvidence: 京东索引显示闪电紫 S 的该货号商品标题；这只能证明搜索索引中的单个变体记录，不能作为完整尺码表或库存证明。
+  imageEvidence: 已录入官方微商城精确款号商品页的 5 张轮播图，链接均返回 HTTP 200 image/jpeg；前台展示授权仍待核。
+images:
+  - url: "https://img01.yzcdn.cn/upload_files/2026/04/07/FixWusBfAuVzgmtNXFC9zI6J3JrY.jpg%21middle.jpg"
+    kind: face
+    alt: 凯乐石女款 BM45 PLUS 夹棉滑雪外套（KG2541241）官方商品图
+    source: 凯乐石微商城精确款号商品页首张商品图；图片链接已确认返回 JPEG，前台展示授权待核
+    sort_order: 0
+  - url: "https://img01.yzcdn.cn/upload_files/2026/04/07/FguoYqOIgPCkYzIgxic1zsNMQqgb.jpg%21middle.jpg"
+    kind: base
+    alt: 凯乐石女款 BM45 PLUS 夹棉滑雪外套（KG2541241）官方商品图 1
+    source: 凯乐石微商城精确款号商品页商品轮播图；HTTP 200 image/jpeg，展示授权待核
+    sort_order: 1
+  - url: "https://img01.yzcdn.cn/upload_files/2026/04/07/FhFxog5AFfRfovV7I16nNUz9xMs6.jpg%21middle.jpg"
+    kind: base
+    alt: 凯乐石女款 BM45 PLUS 夹棉滑雪外套（KG2541241）官方商品图 2
+    source: 凯乐石微商城精确款号商品页商品轮播图；HTTP 200 image/jpeg，展示授权待核
+    sort_order: 2
+  - url: "https://img01.yzcdn.cn/upload_files/2026/04/07/Fg212lUTT4Rcoc-EhEXKcPvBpIgb.jpg%21middle.jpg"
+    kind: base
+    alt: 凯乐石女款 BM45 PLUS 夹棉滑雪外套（KG2541241）官方商品图 3
+    source: 凯乐石微商城精确款号商品页商品轮播图；HTTP 200 image/jpeg，展示授权待核
+    sort_order: 3
+  - url: "https://img01.yzcdn.cn/upload_files/2026/04/07/Fl8JJsfPv2ZXhkU-FOvBh7BQoLuF.jpg%21middle.jpg"
+    kind: base
+    alt: 凯乐石女款 BM45 PLUS 夹棉滑雪外套（KG2541241）官方商品图 4
+    source: 凯乐石微商城精确款号商品页商品轮播图；HTTP 200 image/jpeg，展示授权待核
+    sort_order: 4
+data_source:
+  kind: official
+  origin_url: https://detail.youzan.com/show/goods?alias=360gu6koswo4rqu&from_source=gbox_seo
+status: draft

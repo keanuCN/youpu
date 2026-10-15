@@ -5,6 +5,10 @@ model: "LT Supermatic"
 year: 2026
 title: "Nidecker LT Supermatic 2026"
 one_liner: "Supermatic 轻量快速穿脱系列，侧重支撑、响应与快速进出。"
+price:
+  min: 3212.17
+  max: 3212.17
+  currency: CNY
 specs:
   entrySystem: rear-entry
   flexFeel: stiff
@@ -26,13 +30,15 @@ specs:
     - { size: M, usMen: 5.5 - 8, usWomen: 7 - 9.5, eu: 37.5 - 41, uk: 4.5 - 7, mondo: 23.5 - 26 }
     - { size: L, usMen: 8.5 - 10.5, usWomen: 10 - 11, eu: 41.5 - 44, uk: 7.5 - 9.5, mondo: 26.5 - 28.5 }
     - { size: XL, usMen: 11 - 13, eu: 44.5 - 47, uk: 10 - 12, mondo: 29 - 31 }
-  priceCheckedAt: 2026-10-12
+  priceCheckedAt: 2026-10-15
   officialPrice: USD 479.95
-  priceMarket: 原币 USD；来源商店 www.nidecker.com
-  priceSource: https://www.nidecker.com/en-int/products/lt-supermatic-2026
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  priceMarket: 美国 Nidecker 官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币
+  priceSource: https://www.nidecker.com/products/lt-supermatic-2026
+  priceStatus: 2026 官方页面和 N.26 SKU 确认雪季；人民币为美国官网价折算参考，不是中国售价，未计美国税费及跨境成本。
+  exchangeRate: EUR/USD 1.1195；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html
 images:
-  - url: "https://www.nidecker.com/cdn/shop/files/N.26.BNU.SPL.GN-LT_Supermatic_Olive-1.webp?v=1786458347&width=1946"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/4dcee91106dae206010618daef21573edd57d60f366f9493cdea70706ac7f828.webp"
     kind: face
     alt: Nidecker LT Supermatic 2026 固定器官方商品图
     source: Nidecker 官方商品页（图片使用授权待核）
@@ -40,4 +46,11 @@ images:
 data_source:
   kind: official
   origin_url: https://www.nidecker.com/products/lt-supermatic-2026
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 8.5
+  comfort: 6.5
+  versatility: 6.8
+  convenience: 8.0
+  value: 5.0
 status: published

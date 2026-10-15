@@ -4,6 +4,10 @@ brand: rome
 model: Katana AW
 year: 2027
 title: Rome Katana AW 2027
+price:
+  min: 2676.75
+  max: 2676.75
+  currency: CNY
 specs:
   flex: 8
   terrain:
@@ -19,17 +23,26 @@ specs:
     - { size: M/L, usMen: 7.5 - 10, usWomen: 9 - 11.5, eu: 40 - 43, mondo: 25.5 - 28, notes: 官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。 }
     - { size: L/XL, usMen: 10.5 - 12.5, usWomen: 12 - 14, eu: 44 - 46, mondo: 28.5 - 30.5, notes: 官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。 }
   bindingSizeGuide: "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。"
-  priceCheckedAt: 2026-10-12
+  priceCheckedAt: 2026-10-15
   officialPrice: USD 399.95
-  priceMarket: 原币 USD；来源商店 romesnowboards.com
+  priceMarket: Rome 美国官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币
   priceSource: https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。
+  priceStatus: Rome 2026/27 官方商品页标价；人民币为美国官网价折算参考，不是中国售价，未计美国税费与跨境成本。
+  exchangeRate: EUR/USD 1.1195；EUR/CNY 7.4925（ECB 2026-10-14）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html
 images:
-  - url: https://cdn.shopify.com/s/files/1/0370/4055/4115/files/2627-rome-katana-aw-c2-sage-binding-1-1782373162882.jpg?v=1787636963&width=1920
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/bff840088e4e0c69c26e835b23ceb9d9b28eb7cb8403a415c00fae9b3033dbc2.webp
     kind: face
     alt: Rome Katana AW 2027 商品图
     source: 品牌官方商品页公开图片；展示授权状态待核
     sort_order: 0
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 8.5
+  comfort: 6.2
+  versatility: 7.6
+  convenience: 6.2
+  value: 5.0
 status: published
 one_liner: Rome 2026–27 传统绑带全山地固定器，官方主打调节范围与舒适性。
 data_source:

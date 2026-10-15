@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-14",
+  "officialProductPages": [
+    {
+      "slug": "flux-ds-2027",
+      "seasonLabel": "26-27 Model",
+      "japanStoreListPrice": "JPY 49,500",
+      "japanStoreAvailability": "Sold out",
+      "archivedOfferCurrency": "CNY",
+      "archivedOfferRange": "CNY 2,562",
+      "archive": "data/raw/winter-gear-2026-10-12/flux-ds-2027-price.json",
+      "productPage": "https://flux-bindings.com/en/products/2627-ds"
+    },
+    {
+      "slug": "flux-gs-2026",
+      "seasonLabel": "25-26 Model",
+      "japanStoreListPrice": "JPY 41,800",
+      "japanStoreSalePrice": "JPY 33,440",
+      "japanStoreAvailability": "Sold out",
+      "archivedOfferCurrency": "CNY",
+      "archivedOfferRange": "CNY 1,731–2,163",
+      "archive": "data/raw/winter-gear-2026-10-12/flux-gs-2026-price.json",
+      "productPage": "https://flux-bindings.com/en/products/2526gs"
+    },
+    {
+      "slug": "flux-xf-2026",
+      "seasonLabel": "25-26 Model",
+      "japanStoreListPrice": "JPY 49,500",
+      "japanStoreSalePrice": "JPY 42,075",
+      "japanStoreAvailability": "Sold out",
+      "archivedOfferCurrency": "CNY",
+      "archivedOfferRange": "CNY 2,177–2,562",
+      "archive": "data/raw/winter-gear-2026-10-12/flux-xf-2026-price.json",
+      "productPage": "https://flux-bindings.com/en/products/2526xf"
+    },
+    {
+      "slug": "flux-xv-2026",
+      "seasonLabel": "25-26 Model",
+      "japanStoreListPrice": "JPY 71,500",
+      "japanStoreSalePrice": "JPY 64,350",
+      "japanStoreAvailability": "Sold out",
+      "archivedOfferCurrency": "CNY",
+      "archivedOfferRange": "CNY 3,330–3,700",
+      "archive": "data/raw/winter-gear-2026-10-12/flux-xv-2026-price.json",
+      "productPage": "https://flux-bindings.com/en/products/2526xv"
+    }
+  ],
+  "interpretation": "历史 CNY Offer 与 2026-10-14 官方商店可见的日元挂牌/促销价并存。两组数据都来自官方商品页，但可能对应不同币种或地区市场；官网当前可见页面未提供导致差异的市场说明，也未能通过 country=CN 查询复现 CNY 视图（请求返回 HTTP 429）。CNY 区间保留为有日期的人民币报价快照；日本店价格另存于种子 regionalListPrice 与 priceStatus，不据此合并或推导中国售价。"
+}

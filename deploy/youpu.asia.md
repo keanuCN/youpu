@@ -35,7 +35,15 @@ nginx -t && systemctl reload nginx
 
 ## 发布域名前台
 
-2026-10-13 第二轮装备内容已发布，当前服务通过 drop-in 使用 `.next-equipment-20261013b-domain`；后续发布与回滚请先查看 [本次装备发布记录](./equipment-20261013.md)。下方命令记录的是首次域名迁移使用的原构建目录。
+2026-10-15 已更新单板科普排版，并增加可切换预设和前后脚角度滑块的俯视站姿模拟。IP 内测站与域名站分别切换到 `.next-snowboard-stance-ui-20261015-{ip,domain}`；IP 科普页与域名科普页在服务器本机校验均为 HTTP 200，点单根站 HTTP 200，三个服务均 active。构建与发布资料位于服务器 `/opt/youpu-releases/20261015-snowboard-stance-ui/`。域名公网访问仍受备案接入限制。
+
+2026-10-15 商品图片迁移随后完成线上同步：生产数据库中 228 款匹配商品的 295 张图已改为 TOS 地址；IP 内测站和域名前台均已切换到 `.next-image-tos-20261015-ip` / `.next-image-tos-20261015-domain`。备份和验收记录见[图片存储说明](../docs/product-image-storage.md)，服务器发布目录为 `/opt/youpu-releases/20261015-image-tos/`。两站首页、单板科普和商品详情经本机请求均返回 200，API 健康为 `db=true`、`redis=true`。域名公网仍受火山引擎备案接入限制。
+
+2026-10-15 已同步滑雪装备资料并发布新前台构建。生产数据库更新 210 款、增加 3 款双板；两个前台目录分别为 `.next-snow-data-20261015-ip` 和 `.next-snow-data-20261015-domain`，API 已重建并重启。线上核验、字段校验限制与回滚备份见[滑雪数据同步记录](./snow-data-sync-20261015.md)，服务器发布目录为 `/opt/youpu-releases/20261015-snow-data-sync/`。IP 内测站与服务端本机 HTTPS 页面返回 200；域名公网访问仍受备案接入限制。
+
+2026-10-14 已发布单板科普快速导航及 Regular / Goofy 站姿选择说明。当前 IP 内测站使用 `.next-regular-goofy-20261014-ip`，域名站使用 `.next-regular-goofy-20261014-domain`；发布备份和构建日志位于服务器 `/opt/youpu-releases/20261014-regular-goofy/`。线上页面检查通过。域名公网访问仍受备案接入限制，服务器本机 HTTPS 验证不代表公网可访问。
+
+2026-10-13 第二轮装备内容已发布；发布记录见[装备发布说明](./equipment-20261013.md)。下方命令记录的是首次域名迁移使用的原构建目录。
 
 独立构建目录避免覆盖 IP `/youpu` 入口的已有构建。生产环境变量需同时用于构建和运行：
 

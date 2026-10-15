@@ -10,6 +10,7 @@ price:
   max: 4320
   currency: CNY
 specs:
+  seasonEvidence: CAPiTA 北美官方商品页标题标注 Spring Break Resort Twin Snowboard 2027；据官方 2027 年款归档为 2026/27。商品页未直接注明完整雪季日期，也不据此判断首次上市时间或实时库存。
   length: 156
   effectiveEdge: 1211
   waistWidth: 258
@@ -45,7 +46,7 @@ editorial_scores:
   forgiveness: 7.6
   value: 7.0
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/SB04-RESORT-TWIN-TOP.png?v=1776884550"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/0394ffd4bb91083c6307a8cf7fc46a44a2bd9b30157d3b75fdf0e60bf11a6df5.webp"
     kind: face
     alt: Spring Break Resort Twin 2027 官方产品图
     source: CAPiTA 官方产品页图片（本地演示，版权待核）

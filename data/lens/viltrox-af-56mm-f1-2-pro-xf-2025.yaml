@@ -17,7 +17,12 @@ specs:
   filterSize: 67
   weight: 575
   weatherSealing: 防尘防滴 / 全天候防护
-images: []
+images:
+  - url: https://cdn.shopify.com/s/files/1/0104/0380/7298/files/AF_56mm_F1.2_Pro_XF-Front_view2.png?v=1756881179
+    kind: face
+    alt: Viltrox AF 56mm F1.2 Pro XF 镜头
+    source: Viltrox 官方商品页（展示授权状态待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://viltrox.com/products/af-56mm-f1-2-xf

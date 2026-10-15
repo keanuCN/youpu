@@ -1,0 +1,28 @@
+{
+  "slug": "nidecker-kaon-plus-2026",
+  "capturedAt": "2026-10-15",
+  "product": {
+    "name": "Kaon Plus",
+    "season": "2026",
+    "sku": "N.26.BNU.KAP.BK.2S.1",
+    "officialPrice": 279.95,
+    "currency": "CHF",
+    "source": "https://eu.nidecker.com/products/kaon-plus",
+    "availability": "核验时显示仅余 1 件且预售提示；地区、尺码库存会变化"
+  },
+  "convertedPrice": {
+    "currency": "CNY",
+    "amount": 2248.15,
+    "formula": "CHF 279.95 × EUR/CNY 7.4925 ÷ EUR/CHF 0.9330",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html",
+    "eurChf": 0.9330,
+    "eurCny": 7.4925
+  },
+  "limitations": [
+    "人民币金额是欧盟官网瑞郎挂牌价折算参考，不是中国售价。",
+    "未计支付汇兑、跨境运费、关税或进口税。",
+    "页面显示的库存与预售提示仅对应采集时所选市场和变体。",
+    "ECB 参考汇率供信息用途，不建议用于交易。"
+  ]
+}

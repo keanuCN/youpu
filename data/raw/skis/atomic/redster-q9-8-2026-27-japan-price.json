@@ -1,0 +1,31 @@
+{
+  "slug": "atomic-redster-q9-8-2027",
+  "model": "Atomic Redster Q9.8 Revoshock S + I 12 GW",
+  "season": "2026/27",
+  "productId": "AASS03782",
+  "selectedVariant": "AASS03782166",
+  "market": "Atomic Japan official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 199980,
+    "currency": "JPY",
+    "taxIncluded": true,
+    "source": "https://atomicsnow.jp/products/aass03782"
+  },
+  "convertedReference": {
+    "amount": 8446.64,
+    "currency": "CNY",
+    "method": "JPY 199,980 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan official-store reference only; not a mainland China selling price or transaction price.",
+      "The captured product page was for selected 166 cm variant AASS03782166; price and availability for every length were not separately confirmed.",
+      "Page marked not available online and directed customers to find a store; inventory can change.",
+      "Shipping is calculated at checkout; cross-border delivery and import charges are not included.",
+      "ECB reference rates are informational, not transaction rates."
+    ]
+  },
+  "onlineAvailabilityAtCapture": "Not available online; page directs customers to find a store.",
+  "notes": "Official page variant matches the seed's 2026/27 AASS03782 product family and 166 cm size. The tax-included note is explicit on the source page."
+}

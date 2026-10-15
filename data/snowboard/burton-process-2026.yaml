@@ -140,8 +140,11 @@ specs:
       tailWidth: 306.8
       riderWeightRange: 82–118 kg+
       bindingSize: Men's L, Women's L
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  priceCheckedAt: 2026-10-15
+  seasonEvidence: Burton 官方商品页标题标注 Process Camber 2026，官方色款代码为 26WIN-106921，日本官方页也标注 2026；据此归档为 2025/26（2026 款）。商品页未直接写出完整雪季日期。
+  regionalListPrice: CNY 4,998；SPADERS 店铺 25/26 M PROCESS NO COLOR 挂牌，未标板型与尺码
+  regionalPriceSource: https://detail.youzan.com/show/goods?alias=3694gxpatxifyt5&from_source=gbox_seo
+  priceStatus: SPADERS 中国店铺页面显示同季 PROCESS CNY 4,998，但没有确认 Camber/Flying V、制造商货号或尺码；仅作同季款系挂牌线索，不覆盖当前主价 CNY 5,499。京东索引另列 106921 / 106921CA03RG 157 cm，但商品详情未显示可核查的价格。
 editorial_scores:
   stability: 7
   response: 7.5
@@ -150,7 +153,7 @@ editorial_scores:
   forgiveness: 7.5
   value: 7.5
 images:
-  - url: "https://www.burton.com/cdn/shop/files/106921CA03_1.webp?v=1780076294&width=1160"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/aea2e86e3e83318c1fef15e1fe0caa292a5bfccc024e86fb9b5ee71912d843d2.webp"
     kind: face
     alt: Burton Process Camber 2025/26 官方雪板商品图
     source: Burton 官方商品页（图片使用授权待核）

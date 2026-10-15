@@ -4,23 +4,70 @@ brand: salomon
 model: MTN 86 Carbon
 year: 2027
 title: Salomon MTN 86 Carbon 2026/27
+price:
+  min: 5019.21
+  max: 5019.21
+  currency: CNY
 one_liner: Salomon 官方雪板目录中的轻量化巡游系列，定位与固定器需按具体组合确认。
 specs:
+  lengthOptions: 148 / 156 / 164 / 172 / 180 cm
   waistWidth: 86
+  turnRadius: 17
+  turnRadiusReferenceLength: 148 cm
+  sizeSpecs:
+    - size: 148 cm
+      noseWidth: 114
+      waistWidth: 86
+      tailWidth: 100
+      turnRadius: 17
+      weightPerPair: 1920
+      notes: 官网净重字段按双只记；目录逐只重量为 960 g/只。midsole 位置 646 mm。
+    - size: 156 cm
+      noseWidth: 116
+      waistWidth: 86
+      tailWidth: 102
+      turnRadius: 17
+      weightPerPair: 2020
+      notes: 官网净重字段按双只记；目录逐只重量为 1010 g/只。midsole 位置 673 mm。
+    - size: 164 cm
+      noseWidth: 118
+      waistWidth: 86
+      tailWidth: 104
+      turnRadius: 18
+      weightPerPair: 2120
+      notes: 官网净重字段按双只记；目录逐只重量为 1060 g/只。midsole 位置 715 mm。
+    - size: 172 cm
+      noseWidth: 120
+      waistWidth: 86
+      tailWidth: 106
+      turnRadius: 18
+      weightPerPair: 2300
+      notes: 官网净重字段按双只记；目录逐只重量为 1150 g/只。midsole 位置 746 mm。
+    - size: 180 cm
+      noseWidth: 122
+      waistWidth: 86
+      tailWidth: 108
+      turnRadius: 19
+      weightPerPair: 2520
+      notes: 官网净重字段按双只记；目录逐只重量为 1260 g/只。midsole 位置 778 mm。
   terrain: 巡游 / 全山地
   skierLevel: 中级至进阶
   bindingSetup: 裸板，固定器另配
-  weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
-  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
-  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
-    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  weightBasis: 官网净重为双只总重；Salomon 26/27 目录另列每只重量。sizeSpecs 按双只口径记录，逐只值仅用于交叉核对。
+  geometryNotes: Salomon 26/27 目录的完整五码含板头/腰/尾、半径、midsole 与每只重量；官网对应 L47824000+ SKU 页面复核板长和板型。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
   mountingNotes: 裸板须另外选配固定器，核对安装说明、制动器宽度和雪靴 BSL；由专业店安装并按本人信息调节、校验释放。
-  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
-  sourceCheckedAt: 2026-10-13
+  seasonEvidence: 26/27 目录列出 MTN 86 Carbon 及 L47824000+ 货号；Salomon 官网同货号商品页列出相同五个板长。
+  sourceCheckedAt: 2026-10-14
+  priceCheckedAt: 2026-10-14
+  officialPrice: USD 749.95
+  priceMarket: Salomon 美国官网裸板挂牌价
+  priceSource: https://www.salomon.com/en-us/product/mtn-86-carbon-li8310
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Salomon 美国官网当前页面按货号 L47824000+ 列 USD 749.95，内容为 skis only；按 ECB 2026-10-14 EUR/USD 1.1195、EUR/CNY 7.4925 折算 CNY 5,019.21。页面未直接标季，26/27 年份依据独立目录与同货号核对；美国参考价，不是中国售价，税费及跨境费用未计。
   compatibilitySources: https://www.salomon.com/en-us/product/mtn-86-carbon-li8310；https://www.grip-walk.com/faq/
 images:
-  - url: "https://cdn.dam.salomon.com/f142d815-a33c-4a23-ab3a-b31b00bd6bb5/L4782400\
-      0%2B/PNG-2000px-max-72dpi.png"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/426c17a9de39ebe5c173f59c08ece1067f49e2c487b454533e26a16e1ea7ed1d.webp"
     kind: face
     alt: Salomon MTN 86 Carbon 2026/27 官方雪板商品图
     source: Salomon 官方产品页（图片使用授权待核）

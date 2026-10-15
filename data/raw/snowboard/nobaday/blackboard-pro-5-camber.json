@@ -1,0 +1,31 @@
+{
+  "brand": "NOBADAY",
+  "model": "Blackboard Pro 5.0 Camber Snowboard",
+  "capturedAt": "2026-10-15",
+  "source": "https://nobaday.com/products/nbd-camber-snowboard",
+  "market": "NOBADAY US official store",
+  "season": null,
+  "listedPrice": { "amount": 399, "currency": "USD" },
+  "shape": "TRUE TWIN",
+  "profile": "CAMBER",
+  "flex": 5,
+  "construction": ["14 carbon stringers", "Poplar wood core", "IS7500 sintered graphite base", "Triax laminated fiberglass", "PU sidewalls"],
+  "sizeGuide": [
+    { "length": 142, "effectiveEdgeMm": 1004, "noseWidthMm": 281, "waistWidthMm": 242, "sidecutRadiusMm": 6996.5, "bindingSize": "S" },
+    { "length": 145, "effectiveEdgeMm": 1034, "noseWidthMm": 284, "waistWidthMm": 244, "sidecutRadiusMm": 7219.2, "bindingSize": "S/M" },
+    { "length": 148, "effectiveEdgeMm": 1064, "noseWidthMm": 287, "waistWidthMm": 246, "sidecutRadiusMm": 7442.1, "bindingSize": "M" },
+    { "length": 151, "effectiveEdgeMm": 1094, "noseWidthMm": 290, "waistWidthMm": 248, "sidecutRadiusMm": 7665, "bindingSize": "M" },
+    { "length": 153, "effectiveEdgeMm": 1114, "noseWidthMm": 293, "waistWidthMm": 250, "sidecutRadiusMm": 7753.3, "bindingSize": "M" },
+    { "length": 155, "effectiveEdgeMm": 1134, "noseWidthMm": 296, "waistWidthMm": 252, "sidecutRadiusMm": 7842, "bindingSize": "M" },
+    { "length": 157, "effectiveEdgeMm": 1154, "noseWidthMm": 299, "waistWidthMm": 254, "sidecutRadiusMm": 7931.5, "bindingSize": "M" },
+    { "length": 161, "effectiveEdgeMm": 1194, "noseWidthMm": 303, "waistWidthMm": 257, "sidecutRadiusMm": 8100, "bindingSize": "M/L"}
+  ],
+  "convertedReference": {
+    "amount": 2670.4,
+    "currency": "CNY",
+    "method": "USD 399 / EUR-USD 1.1195 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": ["Reference conversion only, not a China retail or transaction price.", "Taxes, international shipping and import charges are excluded.", "The page did not state the season.", "The official size guide does not list tail width."]
+  }
+}

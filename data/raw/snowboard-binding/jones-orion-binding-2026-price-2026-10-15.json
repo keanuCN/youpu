@@ -1,0 +1,35 @@
+{
+  "slug": "jones-orion-binding-2026",
+  "capturedAt": "2026-10-15",
+  "product": {
+    "name": "Men's Orion Snowboard Binding 2026",
+    "season": "2026",
+    "officialProductUrl": "https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
+    "price": 319.95,
+    "currency": "USD",
+    "skuObservedOnOfficialPage": "J.26.BNM.ORI.GN.3M.1",
+    "availabilityAtCapture": "官方页面选项显示可购买；库存会随地区和尺码变化"
+  },
+  "regionalCrossCheck": {
+    "country": "Canada",
+    "price": 379.99,
+    "currency": "CAD",
+    "source": "https://ca.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
+    "note": "保留为独立地区价格，不与美国 USD 报价混合。"
+  },
+  "convertedPrice": {
+    "currency": "CNY",
+    "amount": 2141.34,
+    "formula": "USD 319.95 × (EUR/CNY 7.4925 ÷ EUR/USD 1.1195)",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "eurUsd": 1.1195,
+    "eurCny": 7.4925
+  },
+  "limitations": [
+    "未确认中国渠道售价；人民币为美国官网价折算参考，不是中国售价。",
+    "未计美国税费、支付汇兑费、跨境运费、关税或进口税。",
+    "加拿大 CAD 报价与美国 USD 报价属于不同市场，不代表尺码价差。",
+    "ECB 参考汇率仅用于信息折算，不建议用于交易。"
+  ]
+}

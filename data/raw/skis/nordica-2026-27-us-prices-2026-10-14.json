@@ -1,0 +1,25 @@
+{
+  "capturedAt": "2026-10-14",
+  "market": "United States retailer listings",
+  "exchangeRate": {
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-14",
+    "eurUsd": 1.1195,
+    "eurCny": 7.4925,
+    "usdCny": 6.69272,
+    "method": "USD / 1.1195 × 7.4925，四舍五入到人民币分"
+  },
+  "limitations": [
+    "零售商挂牌价，不是 Nordica 品牌 MSRP 或中国售价。",
+    "美国税费、运费、跨境配送、进口费用及支付汇兑成本未计。",
+    "价格与库存可能变化；人民币值是捕获日的参考换算。"
+  ],
+  "products": [
+    { "slug": "nordica-enforcer-89-2027", "season": "2026/27", "sku": "0A668400", "usd": 749.99, "cny": 5019.47, "retailer": "SkiEssentials", "source": "https://www.skiessentials.com/products/2027-nordica-enforcer-89-skis-0a668400", "brandSource": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-89-flat" },
+    { "slug": "nordica-enforcer-94-2027", "season": "2026/27", "sku": "0A668300", "usd": 799.99, "cny": 5354.11, "retailer": "SkiEssentials", "source": "https://www.skiessentials.com/products/2027-nordica-enforcer-94-skis-0a668300", "brandSource": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-94-flat" },
+    { "slug": "nordica-enforcer-99-2027", "season": "2026/27", "sku": "0A668200", "usd": 849.99, "cny": 5688.75, "retailer": "evo", "source": "https://www.evo.com/collections/nordica-enforcer", "brandSource": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-99-flat" },
+    { "slug": "nordica-enforcer-104-2027", "season": "2026/27", "sku": "0A668100", "usd": 899.99, "cny": 6023.38, "retailer": "evo", "source": "https://www.evo.com/collections/nordica-enforcer", "brandSource": "https://www.nordica.com/usa/en/collection/men/skis/enforcer/enforcer-104-flat" },
+    { "slug": "nordica-santa-ana-102-2027", "season": "2026/27", "sku": "0A548500", "usd": 899.99, "cny": 6023.38, "retailer": "SkiEssentials", "source": "https://www.skiessentials.com/products/2026-nordica-santa-ana-102-women-s-skis-0a548500", "brandSource": "https://www.nordica.com/usa/en/collection/women/skis/santa-ana/santa-ana-102" },
+    { "slug": "nordica-unleashed-98-2027", "season": "2026/27", "sku": "0A669400001", "usd": 749.99, "cny": 5019.47, "retailer": "evo", "source": "https://www.evo.com/collections/nordica-skis", "brandSource": "https://www.nordica.com/usa/en/collection/men/skis/unleashed/unleashed-98-2", "seedStatus": "published" }
+  ]
+}

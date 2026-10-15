@@ -13,9 +13,9 @@ editorial_scores:
   forgiveness: 6.1
   value: 6.7
 price:
-  min: 679.95
-  max: 679.95
-  currency: USD
+  min: 4553.20
+  max: 4553.20
+  currency: CNY
 specs:
   lengthOptions: 150 / 154 / 156 / 158 / 162 / 154W / 158W / 162W / 166W / 170W
   length: 158
@@ -32,24 +32,30 @@ specs:
     - all-mountain
     - freestyle
   warranty: 3
+  riderWeightEvidence: Burton 美国官方 2027 商品页尺码表逐尺码列出建议体重范围；范围用于辅助选板，仍需结合身高、靴码、风格与地形，不作为唯一选尺依据。
   sizeSpecs:
-    - { size: "150", waistWidth: 248, noseWidth: 288.1, tailWidth: 288.1, effectiveEdge: 1135, sidecutRadii: "7.4 m", stanceWidth: "505 mm" }
-    - { size: "154", waistWidth: 250, noseWidth: 291.5, tailWidth: 291.5, effectiveEdge: 1175, sidecutRadii: "7.6 m", stanceWidth: "530 mm" }
-    - { size: "156", waistWidth: 252, noseWidth: 294.3, tailWidth: 294.3, effectiveEdge: 1195, sidecutRadii: "7.8 m", stanceWidth: "530 mm" }
-    - { size: "158", waistWidth: 254, noseWidth: 297.0, tailWidth: 297.0, effectiveEdge: 1215, sidecutRadii: "7.9 m", stanceWidth: "560 mm" }
-    - { size: "162", waistWidth: 256, noseWidth: 300.5, tailWidth: 300.5, effectiveEdge: 1255, sidecutRadii: "8.2 m", stanceWidth: "560 mm" }
-    - { size: "154W", waistWidth: 258, noseWidth: 299.5, tailWidth: 299.5, effectiveEdge: 1175, sidecutRadii: "7.6 m", stanceWidth: "530 mm" }
-    - { size: "158W", waistWidth: 262, noseWidth: 305.0, tailWidth: 305.0, effectiveEdge: 1215, sidecutRadii: "7.9 m", stanceWidth: "560 mm" }
-    - { size: "162W", waistWidth: 264, noseWidth: 308.5, tailWidth: 308.5, effectiveEdge: 1255, sidecutRadii: "8.2 m", stanceWidth: "560 mm" }
-    - { size: "166W", waistWidth: 266, noseWidth: 312.0, tailWidth: 312.0, effectiveEdge: 1295, sidecutRadii: "8.4 m", stanceWidth: "560 mm" }
-    - { size: "170W", waistWidth: 270, noseWidth: 317.4, tailWidth: 317.4, effectiveEdge: 1335, sidecutRadii: "8.7 m", stanceWidth: "560 mm" }
-  priceCheckedAt: 2026-10-12
-  officialPrice: USD 679.95
-  priceMarket: 原币 USD；来源商店 www.burton.com
-  priceSource: https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881
-  priceStatus: 对应目标年份的官方页面挂牌价；可能含促销与变体价，不视为中国零售价或建议零售价。 现有人民币参考价未重新核实。
+    - { size: "150", waistWidth: 248, noseWidth: 288.1, tailWidth: 288.1, effectiveEdge: 1135, sidecutRadii: "7.4 m", stanceWidth: "505 mm", riderWeight: "54–82 kg" }
+    - { size: "154", waistWidth: 250, noseWidth: 291.5, tailWidth: 291.5, effectiveEdge: 1175, sidecutRadii: "7.6 m", stanceWidth: "530 mm", riderWeight: "54–82 kg" }
+    - { size: "156", waistWidth: 252, noseWidth: 294.3, tailWidth: 294.3, effectiveEdge: 1195, sidecutRadii: "7.8 m", stanceWidth: "530 mm", riderWeight: "68–91 kg" }
+    - { size: "158", waistWidth: 254, noseWidth: 297.0, tailWidth: 297.0, effectiveEdge: 1215, sidecutRadii: "7.9 m", stanceWidth: "560 mm", riderWeight: "68–91 kg" }
+    - { size: "162", waistWidth: 256, noseWidth: 300.5, tailWidth: 300.5, effectiveEdge: 1255, sidecutRadii: "8.2 m", stanceWidth: "560 mm", riderWeight: "82–118 kg+" }
+    - { size: "154W", waistWidth: 258, noseWidth: 299.5, tailWidth: 299.5, effectiveEdge: 1175, sidecutRadii: "7.6 m", stanceWidth: "530 mm", riderWeight: "54–82 kg" }
+    - { size: "158W", waistWidth: 262, noseWidth: 305.0, tailWidth: 305.0, effectiveEdge: 1215, sidecutRadii: "7.9 m", stanceWidth: "560 mm", riderWeight: "68–91 kg" }
+    - { size: "162W", waistWidth: 264, noseWidth: 308.5, tailWidth: 308.5, effectiveEdge: 1255, sidecutRadii: "8.2 m", stanceWidth: "560 mm", riderWeight: "82–118 kg+" }
+    - { size: "166W", waistWidth: 266, noseWidth: 312.0, tailWidth: 312.0, effectiveEdge: 1295, sidecutRadii: "8.4 m", stanceWidth: "560 mm", riderWeight: "82–118 kg+" }
+    - { size: "170W", waistWidth: 270, noseWidth: 317.4, tailWidth: 317.4, effectiveEdge: 1335, sidecutRadii: "8.7 m", stanceWidth: "560 mm", riderWeight: "82–118 kg+" }
+  priceCheckedAt: 2026-10-14
+  seasonEvidence: Burton 美国官方商品页标题标注 2027，所选日本色款代码为 27WIN-106881，官方日本页记录亦指向 2026/27；据此归档为 2026/27（2027 款）。商品页未直接写明完整雪季日期。
+  officialPrice: JPY 107800
+  regionalListPrice: JPY 107,800
+  priceMarket: Burton 日本官方商店；型号 106881、色款代码 27WIN-106881
+  priceSource: https://jp.burton.com/ja-jp/products/mens-burton-custom-camber-snowboard-106881
+  regionalPriceSource: https://jp.burton.com/ja-jp/products/mens-burton-custom-camber-snowboard-106881
+  regionalRetailerPriceSource: https://store.shopping.yahoo.co.jp/move-select/106881ai66rg.html
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Burton 日本官方商品页 2027 款型号 106881 标价 JPY 107,800；Yahoo! Shopping Japan 的 MOVE Select 对 26-27 Faded、货号 106881AI66RG、JAN 9010884397401 挂牌 JPY 107,800，交叉确认日本地区价格。零售页自称正規代理店商品，授权未独立核实；2026-10-15 页面显示 150、156 cm 余量少，154、158、162 cm 缺货，仅是当日快照。按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 4,553.20。国内另发现聚合页 CNY 5,998 线索，自述来自天猫 BURTON 官方旗舰店，但标题同时列 106881 Camber 与 107071 Flying V，未展示本款 27WIN-106881 的具体变体，故不作为中国售价。中国京东索引另出现 26/27、106881、156 cm 商品标题，详情页无法读取人民币价格、卖家和库存；相同货号的 25/26 CNY 6,798 线索不映射本雪季。日本价格仅为地区参考，不是中国售价，运费、跨境配送和进口费用未计。
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106881997D_1.webp?v=1790184456"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/b653a6f785d0e68f6e50f0806e10c42d9ef45fa0d165a953c4f2da4b3f571f8c.webp"
     kind: face
     alt: Burton Custom Camber 2027 官方产品图
     source: Burton 官方产品页图片（转载授权未核实）

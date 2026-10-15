@@ -1,0 +1,28 @@
+{
+  "brand": "Donek",
+  "model": "Knapton Twin Custom Snowboard",
+  "capturedAt": "2026-10-15",
+  "source": "https://donek.com/product/knapton/",
+  "market": "Donek US official store",
+  "listedPrice": { "amount": 865, "currency": "USD" },
+  "shape": "Twin",
+  "targetRider": "Aggressive soft-boot rider; intermediate to advanced",
+  "terrain": "Groomed runs on piste",
+  "customizations": ["Width adjusted to boot size or rider needs", "Stiffness adjusted to weight or rider needs", "Sidecut adjusted to rider needs"],
+  "specifications": {
+    "flexRange": "7-12, adjusted to weight",
+    "core": "Poplar and ash",
+    "base": "Perlatech 8223",
+    "sidewall": "ABS",
+    "fiberglass": "Triax"
+  },
+  "convertedReference": {
+    "amount": 5789.2,
+    "currency": "CNY",
+    "method": "USD 865 / EUR-USD 1.1195 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": ["Base custom price reference only, not a China retail or final transaction price.", "Final dimensions and parameters require consultation with Donek.", "Shipping, taxes and import charges are excluded."]
+  },
+  "notes": "The official page recommends contacting the engineer before placing an order. No fixed size chart is published for this custom model."
+}

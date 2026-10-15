@@ -1,22 +1,22 @@
 # 由 apps/web/scripts/export-seed-yaml.ts 从原型内容包导出（勿手改，改原型后重跑）
-# 原型 id：sb-02 · J.26 代表尺寸几何与结构已核；地区价格、评分边界、保修和图片授权仍待复核
+# 原型 id：sb-02 · J.26 官方索引保留型号与尺码表；日本官方 HASCO 25/26 页面提供日元地区价折算参考；中国售价、逐码库存、评分边界、保修和图片授权仍待复核
 slug: jones-mountain-twin-2026
 category: snowboard
 brand: jones
 model: Mountain Twin
 year: 2026
 title: Jones Mountain Twin 2026
-one_liner: 最没有短板的一块。它不会在任何一项上给你惊喜，但也不会让你在任何一天后悔带它出门。
+one_liner: 全山地定向双向板，硬雪抓边、switch 与跳台都能兼顾；高速会有板头 chatter，粉雪浮力也不及专门 freeride 板。
 price:
-  min: 5899
-  max: 5899
+  min: 4553.2
+  max: 4553.2
   currency: CNY
 specs:
   length: 157
   effectiveEdge: 1210
   sidecut: 7.8
   waistWidth: 254
-  stanceSetback: 20
+  stanceSetback: 0
   profile: Camber + 板头板尾微摇臂
   shape: 定向双向
   core: Master Core（杨木 / 泡桐 1:1）
@@ -28,12 +28,236 @@ specs:
   turnRadiusFeel: 中性，长短弧都好带
   warranty: 3
   flex: 6
+  priceCheckedAt: 2026-10-15
+  listedPrice: JPY 107,800（含税）
+  priceMarket: Jones 日本官方站 HASCO 25/26 商品页，日元挂牌价折算参考
+  priceSource: https://www.hasco.co.jp/jonessnowboards/products_list/mens-mountain-twin-2/
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Jones 日本官方站由 HASCO 运营，25/26 Mountain Twin 页面列含税挂牌价 JPY 107,800；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 4,553.20。页面未显示逐码库存，作为日本地区官方参考价，不是中国售价或当前可购报价；未计跨境运费、进口税及汇兑成本。原瑞士官方 CHF 579.95 历史报价仍保留在原始审计记录中。
   profileFamily: hybrid
   scenes:
     - all-mountain
     - freestyle
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  sizeSpecs:
+    - size: "149"
+      weight: 2400
+      effectiveEdge: 1150
+      waistWidth: 244
+      setback: 0
+      contactLength: 1050
+      noseLength: 225
+      tailLength: 215
+      noseWidth: 285
+      tailWidth: 285
+      frontFootWidth: 255
+      backFootWidth: 257
+      taper: 0
+      sidecutRadii: 7.2 m
+      stanceWidth: 520 mm（参考） / 520 mm（居中）
+      riderWeight: 110-160 lbs. / 49-73 kg.
+      bootSize: US 7-9 / EU 39.5-41.5
+      surfaceArea: 38.1
+    - size: "151"
+      weight: 2500
+      effectiveEdge: 1160
+      waistWidth: 248
+      setback: 0
+      contactLength: 1062
+      noseLength: 229
+      tailLength: 219
+      noseWidth: 289
+      tailWidth: 289
+      frontFootWidth: 259
+      backFootWidth: 261
+      taper: 0
+      sidecutRadii: 7.4 m
+      stanceWidth: 520 mm（参考） / 520 mm（居中）
+      riderWeight: 110-160 lbs. / 49-73 kg.
+      bootSize: US 7-9 / EU 39.5-41.5
+      surfaceArea: 39.2
+    - size: 153W
+      weight: 2700
+      effectiveEdge: 1180
+      waistWidth: 257
+      setback: 0
+      contactLength: 1078
+      noseLength: 231
+      tailLength: 221
+      noseWidth: 298
+      tailWidth: 298
+      frontFootWidth: 268
+      backFootWidth: 270
+      taper: 0
+      sidecutRadii: 7.5 m
+      stanceWidth: 540 mm（参考） / 540 mm（居中）
+      riderWeight: 120-170 lbs. / 54-77 kg.
+      bootSize: US 9.5-11 / EU 42.5-44.5
+      surfaceArea: 41.1
+    - size: "154"
+      weight: 2600
+      effectiveEdge: 1190
+      waistWidth: 251
+      setback: 0
+      contactLength: 1086
+      noseLength: 232
+      tailLength: 222
+      noseWidth: 292
+      tailWidth: 292
+      frontFootWidth: 262
+      backFootWidth: 264
+      taper: 0
+      sidecutRadii: 7.6 m
+      stanceWidth: 540 mm（参考） / 540 mm（居中）
+      riderWeight: 120-170 lbs. / 54-77 kg.
+      bootSize: US 7-9 / EU 39.5-41.5
+      surfaceArea: 40.4
+    - size: 156W
+      weight: 2700
+      effectiveEdge: 1200
+      waistWidth: 259
+      setback: 0
+      contactLength: 1104
+      noseLength: 233
+      tailLength: 223
+      noseWidth: 301
+      tailWidth: 301
+      frontFootWidth: 271
+      backFootWidth: 273
+      taper: 0
+      sidecutRadii: 7.7 m
+      stanceWidth: 560 mm（参考） / 560 mm（居中）
+      riderWeight: 130-180 lbs. / 59-82 kg.
+      bootSize: US 9.5-11 / EU 42.5-44.5
+      surfaceArea: 42.2
+    - size: "157"
+      weight: 2800
+      effectiveEdge: 1210
+      waistWidth: 254
+      setback: 0
+      contactLength: 1110
+      noseLength: 235
+      tailLength: 225
+      noseWidth: 296
+      tailWidth: 296
+      frontFootWidth: 266
+      backFootWidth: 268
+      taper: 0
+      sidecutRadii: 7.8 m
+      stanceWidth: 580 mm（参考） / 580 mm（居中）
+      riderWeight: 130-180 lbs. / 59-82 kg.
+      bootSize: US 9-11 / EU 41.5-44.5
+      surfaceArea: 41.7
+    - size: 159W
+      weight: 2900
+      effectiveEdge: 1230
+      waistWidth: 261
+      setback: 0
+      contactLength: 1130
+      noseLength: 235
+      tailLength: 225
+      noseWidth: 304
+      tailWidth: 304
+      frontFootWidth: 273
+      backFootWidth: 275
+      taper: 0
+      sidecutRadii: 7.9 m
+      stanceWidth: 580 mm（参考） / 580 mm（居中）
+      riderWeight: 140-190 lbs. / 64-86 kg.
+      bootSize: US 10-12 / EU 43.5-46
+      surfaceArea: 43.4
+    - size: "160"
+      weight: 2900
+      effectiveEdge: 1230
+      waistWidth: 257
+      setback: 0
+      contactLength: 1134
+      noseLength: 238
+      tailLength: 228
+      noseWidth: 300
+      tailWidth: 300
+      frontFootWidth: 269
+      backFootWidth: 271
+      taper: 0
+      sidecutRadii: 8.0 m
+      stanceWidth: 580 mm（参考） / 580 mm（居中）
+      riderWeight: 150-200 lbs. / 67-91 kg.
+      bootSize: US 9-11 / EU 41.5-44.5
+      surfaceArea: 43
+    - size: 162W
+      weight: 3000
+      effectiveEdge: 1260
+      waistWidth: 263
+      setback: 0
+      contactLength: 1156
+      noseLength: 237
+      tailLength: 227
+      noseWidth: 307
+      tailWidth: 307
+      frontFootWidth: 275
+      backFootWidth: 277
+      taper: 0
+      sidecutRadii: 8.1 m
+      stanceWidth: 580 mm（参考） / 580 mm（居中）
+      riderWeight: 150-200 lbs. / 67-91 kg.
+      bootSize: US 11+ / EU 44.5+
+      surfaceArea: 44.6
+    - size: "163"
+      weight: 3000
+      effectiveEdge: 1260
+      waistWidth: 260
+      setback: 0
+      contactLength: 1158
+      noseLength: 241
+      tailLength: 231
+      noseWidth: 303
+      tailWidth: 303
+      frontFootWidth: 272
+      backFootWidth: 274
+      taper: 0
+      sidecutRadii: 8.2 m
+      stanceWidth: 580 mm（参考） / 580 mm（居中）
+      riderWeight: 160-210 lbs. / 73-95 kg.
+      bootSize: US 9.5-11.5 / EU 42.5-45.5
+      surfaceArea: 44.3
+    - size: 165W
+      weight: 3200
+      effectiveEdge: 1280
+      waistWidth: 267
+      setback: 0
+      contactLength: 1178
+      noseLength: 241
+      tailLength: 231
+      noseWidth: 311
+      tailWidth: 311
+      frontFootWidth: 279
+      backFootWidth: 281
+      taper: 0
+      sidecutRadii: 8.3 m
+      stanceWidth: 580 mm（参考） / 580 mm（居中）
+      riderWeight: 170-220 lbs.+ / 77-100 kg.+
+      bootSize: US 11+ / EU 44.5+
+      surfaceArea: 46.1
+    - size: 168W
+      weight: 3300
+      effectiveEdge: 1300
+      waistWidth: 269
+      setback: 0
+      contactLength: 1204
+      noseLength: 243
+      tailLength: 233
+      noseWidth: 314
+      tailWidth: 314
+      frontFootWidth: 280
+      backFootWidth: 282
+      taper: 0
+      sidecutRadii: 8.5 m
+      stanceWidth: 580 mm（参考） / 580 mm（居中）
+      riderWeight: 170-220 lbs.+ / 77-100 kg.+
+      bootSize: US 11+ / EU 44.5+
+      surfaceArea: 47.3
+data_source:
+  kind: crawl
+  origin_url: https://www.hasco.co.jp/jonessnowboards/products_list/mens-mountain-twin-2/
 editorial_scores:
   stability: 8
   response: 7.5
@@ -42,12 +266,9 @@ editorial_scores:
   forgiveness: 7
   value: 8
 images:
-  - url: "https://www.melbournesnowboard.com.au/cdn/shop/files/0015_Jones26-Men-Mountain-Twin.jpg?v=1740011983&width=1800"
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/02b43d707fe6db5f4505c8ae0fe25cb992a1689dec5052af31e4de45824bfa42.webp
     kind: face
-    alt: Jones Mountain Twin 2025/26 单板商品图
-    source: Melbourne Snowboard 2026 商品页（图片使用授权待核）
+    alt: Jones Mountain Twin 板面 / TOPSHEET
+    source: Melbourne Snowboard 2026 商品页；SKU J.26.SNM.MTN 151；图片展示授权待核
     sort_order: 0
-data_source:
-  kind: official
-  origin_url: https://eu.jonessnowboards.com/de/products/mens-mountain-twin-snowboard-2026?variant=43731143983239
 status: published

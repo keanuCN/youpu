@@ -1,0 +1,127 @@
+{
+  "brand": "HEAD",
+  "model": "Worldcup Rebels e.SLR",
+  "season": "2026-27",
+  "articleNumber": "313366.SET",
+  "retrievedAt": "2026-10-15",
+  "seedFile": "data/skis/head-e-slr-2027.yaml",
+  "officialSeasonSource": {
+    "url": "https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf",
+    "articleNumber": "313366",
+    "evidence": "HEAD 26/27 Hardgoods Workbook lists article 313366 as Worldcup Rebels e.SLR, lengths 149/156/163/170 cm, reference sidecut 123/66/107 mm and radius 11.2 m at 163 cm, LYT PR Base, and binding 100911 PR 11 GW Brake [G] 78 mm. The previous-season product article is 313365 and is kept in a separate seed."
+  },
+  "officialProductPage": {
+    "url": "https://www.head.com/en_SL/product/worldcup-rebels-e-slr-313366-set",
+    "pageTitleArticle": "Worldcup Rebels e.SLR, 313366.SET",
+    "listedPrice": "EUR 730 final price",
+    "bindingOptions": ["PR 11 GW", "PROTECTOR EVO PR 11 GW (+ EUR 50)"],
+    "mountingOptions": ["binding not mounted", "binding mounted"],
+    "selectedSizeAtCapture": 149,
+    "selectedSizeGeometry": { "sidecutMm": [123, 66, 107], "radiusM": 9.2 },
+    "displayedWeight": "1995 g",
+    "evidence": "HEAD Slovenia official product page is for article 313366.SET, gives a final price of EUR 730, lists 149/156/163/170 cm, advanced skill level and on-piste terrain. The selected 149 cm geometry is 123/66/107 mm with 9.2 m radius. PR 11 GW is the standard binding option and Protector EVO PR 11 GW is shown with a EUR 50 surcharge. The page displays weight 1995 g but does not specify single ski/pair or binding inclusion, so weight basis remains unresolved."
+  },
+  "officialFeaturesRecheck20261015": {
+    "url": "https://www.head.com/en_SL/product/worldcup-rebels-e-slr-313366-set",
+    "articleNumber": "313366.SET",
+    "verifiedFields": {
+      "core": "Full woodcore",
+      "construction": "Metal",
+      "technologies": ["Graphene", "Titanal layers", "EMC electronic ski dampening system"],
+      "skill": "Advanced",
+      "terrain": "On Piste",
+      "speed": "Fast",
+      "turnRadiusType": "Short Radius",
+      "profile": "Rebel Camber",
+      "selected149cmProfile": {"camberPercent": 100, "tipRockerPercent": 0, "tailRockerPercent": 0}
+    },
+    "evidence": "HEAD 官方商品页明确描述 full woodcore、metal、减振 EMC，列 Graphene 与 titanal layers，并列 Advanced/On Piste/Fast/Short Radius/Rebel Camber。页面当前选中 149 cm 时显示 camber 100%、tip/tail rocker 0%。",
+    "decision": "补齐型号级芯材、结构、技术和定位；板型百分比只记录页面当前选中的 149 cm，不延伸到其他长度。重量 1995 g 仍因口径不明而不录入。"
+  },
+  "exactSeasonSizeTable": {
+    "url": "https://www.skitreff.de/head-worldcup-rebels-e.slr-ski-set-slalom-2026-27-31336601-1376028",
+    "articleNumber": "31336601",
+    "season": "2026/27",
+    "bindingArticleNumber": "100911",
+    "rows": [
+      { "lengthCm": 149, "sidecutMm": [123, 66, 107], "radiusM": 9.2 },
+      { "lengthCm": 156, "sidecutMm": [123, 66, 107], "radiusM": 10.2 },
+      { "lengthCm": 163, "sidecutMm": [123, 66, 107], "radiusM": 11.2 },
+      { "lengthCm": 170, "sidecutMm": [123, 66, 107], "radiusM": 12.3 }
+    ],
+    "evidence": "Skitreff identifies a 2026/27 HEAD Worldcup Rebels e.SLR set and lists all four exact-length geometry rows. The displayed manufacturer set article is 31336601, and binding 100911 is independently established by the HEAD 26/27 workbook. The 163 cm row matches the official HEAD product page and workbook."
+  },
+  "priceAudit": {
+    "market": "Slovenia, HEAD official online store",
+    "sourceUrl": "https://www.head.com/en_SL/product/worldcup-rebels-e-slr-313366-set",
+    "retrievedAt": "2026-10-15",
+    "listedPriceEUR": 730,
+    "pricePresentation": "EUR 730 final price; PR 11 GW standard option; PROTECTOR EVO PR 11 GW + EUR 50; mounting can be selected separately.",
+    "availabilityAtCapture": "Add to Bag control was present; no selected-size stock count was exposed in the retrieved page text.",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "exchangeRateDate": "2026-10-14",
+    "eurToCny": 7.4925,
+    "formula": "730 EUR * 7.4925 CNY/EUR",
+    "convertedCny": 5469.53,
+    "limitations": [
+      "Converted from HEAD Slovenia official regional price; not a China retail price or landed price.",
+      "The price is for the official set page with PR 11 GW as the base binding option; a different binding or mounting selection changes the configuration and may change the price.",
+      "Stock by length was not confirmed.",
+      "Image display/licensing permission is not verified."
+    ]
+  },
+  "regionalRetailerReference": {
+    "market": "South Korea",
+    "merchant": "ONE8",
+    "url": "https://one8.co.kr/product/2627-%ED%97%A4%EB%93%9C-%EC%8A%A4%ED%82%A4-%EC%9B%94%EB%93%9C%EC%BB%B5-%EB%A0%88%EB%B8%94%EC%8A%A4-eslr-sw-lyt-pr-2627-head313366wc-rebels-eslr-sw-lyt/136711/category/7268/display/1/",
+    "retrievedAt": "2026-10-15",
+    "headArticleNumber": "313366",
+    "binding": "PR 11 GW Brake 78 [G]",
+    "retailerSku": "B1HA603W2",
+    "listedPriceKRW": 1843000,
+    "listedPriceLabel": "Consumer/reference price on product page; the page also says 26/27 new model preview and reservation-only product.",
+    "listedSizesCm": [156, 163],
+    "availabilityText": "예약 전용 상품 / 10~11월 입고 예정 (reservation-only; expected arrival October-November)",
+    "exchangeRateDate": "2026-10-14",
+    "krwPerEur": 1496.54,
+    "cnyPerEur": 7.4925,
+    "formula": "1843000 KRW / 1496.54 KRW per EUR * 7.4925 CNY per EUR",
+    "convertedPriceCNY": 9227.07,
+    "exchangeRateSources": [
+      "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+      "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-krw.de.html"
+    ],
+    "decision": "Retain as a Korean regional listed-price reference only. The page explicitly identifies the correct article and binding, but its reservation/preview label does not establish that this amount is the current payable preorder price or that stock is available. It is not a China retail price and does not replace the HEAD Slovenia official set price.",
+    "limitations": [
+      "KRW amount is not a China market quote or landed price.",
+      "Page is marked preview/reservation-only; exact payable amount and availability are unconfirmed.",
+      "Only 156 and 163 cm are listed on this regional page; these are not the full season's length range."
+    ]
+  },
+  "image": {
+    "url": "https://cdn-mdb.head.com/CDN3/D/313366.SET_31336601/1/1820x2428/worldcup-rebels-e-slr-with-binding-pr-11-gw.webp",
+    "pageImageUrl": "https://cdn-mdb.head.com/CDN3/D/313366.SET_31336601/1/224x298/worldcup-rebels-e-slr-with-binding-pr-11-gw.webp",
+    "evidence": "The HEAD official product gallery image source includes 313366.SET_31336601 and identifies the PR 11 GW binding set. The 1820x2428 CDN URL returned HTTP 200 on 2026-10-15. Display rights remain unverified."
+  },
+  "crossSeasonAndRegionalSkuSeparation": [
+    {
+      "source": "https://head.ru/ski/shop/skis/8369/137864/",
+      "articleNumber": "31351607",
+      "market": "Russia",
+      "season": "2026/27",
+      "evidence": "Regional e.SLR special make-up product page; article 31351607, RUB 93,590, only 156/163 cm shown. Not the international 313366 article and not used for its price or complete length set."
+    },
+    {
+      "source": "https://head.com/en_SL/product/worldcup-rebels-e-slr-313366-set",
+      "articleNumber": "313366.SET",
+      "market": "Slovenia/international",
+      "evidence": "Official international product SKU and image path used for this 2026/27 seed."
+    }
+  ],
+  "remainingUnknowns": [
+    "No current, readable exact 313366 China-market quote with verifiable availability was confirmed.",
+    "The official page's 1995 g weight has no clear single/pair or binding basis and is not stored as a comparable product weight.",
+    "HEAD official workbook provides only the 163 cm reference geometry; 156 and 170 cm rows rely on an exact-season retailer table.",
+    "Official product image usage permission is unverified."
+  ]
+}

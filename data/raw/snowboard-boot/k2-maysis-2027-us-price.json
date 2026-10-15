@@ -1,0 +1,60 @@
+{
+  "slug": "k2-maysis-2027",
+  "model": "K2 Maysis Men's Snowboard Boots 2027",
+  "season": "2026/27 (K2 names the model year 2027)",
+  "articleRef": "KB261665",
+  "market": "K2 US official store",
+  "capturedAt": "2026-10-15",
+  "japanRetailerPriceCrossCheck": {
+    "url": "https://www.murasaki.jp/Form/Product/ProductDetail.aspx?bid=snow&pid=n02410101219996&shop=0&swrd=ON&vid=n0241010121999690022023",
+    "merchant": "Murasaki Sports（日本零售商）",
+    "retrievedAt": "2026-10-15",
+    "productTitle": "K2 MAYSIS メンズ 26-27",
+    "merchantProductCode": "n0241010121999690022023",
+    "listedPrice": { "amount": 64900, "currency": "JPY", "taxIncluded": true },
+    "convertedReference": {
+      "amount": 2741.21,
+      "currency": "CNY",
+      "method": "JPY 64,900 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+      "exchangeRateDate": "2026-10-14",
+      "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html"
+    },
+    "listedSizesCm": [23, 23.5, 24, 24.5, 25, 25.5, 26, 26.5, 27, 27.5, 28, 28.5, 29, 29.5, 30, 31, 32, 33],
+    "color": "BK",
+    "availabilityAtCapture": "页面为预售/预约购买说明，预计 2026 年 11 月至 12 月下旬到货；当前所选 23 cm 线上无库存，不能据此断定其它尺码库存。",
+    "exactModelCrossCheck": "商品页明确写 K2 MAYSIS 男款 26-27；K2 美国官方 KB261665 页面将 Maysis 命名为 2027 男款，地区与商家货号不同，未声称共享厂商 SKU。",
+    "limitations": [
+      "日本地区含税零售价折算，不是中国售价或可送达中国的报价。",
+      "商家页面未显示 K2 厂商货号 KB261665；同型号及雪季通过名称交叉核对。",
+      "尺码选项存在不代表当前有货；购买和到货时间以零售商实时页面为准。",
+      "ECB 汇率为信息参考，非交易汇率；国际运费、税费和进口费用未计。"
+    ],
+    "decision": "只作为精确型号和雪季的日本地区零售价交叉参考；种子主参考仍采用 K2 美国官方 USD 379.95 折算 CNY 2,543.30。"
+  },
+  "listedPrice": {
+    "amount": 379.95,
+    "currency": "USD",
+    "source": "https://k2snow.com/en-us/p/maysis-mens-snowboard-boot-kb261665"
+  },
+  "convertedReference": {
+    "amount": 2543.30,
+    "currency": "CNY",
+    "method": "USD 379.95 / EUR-USD 1.1188 * EUR-CNY 7.4890",
+    "exchangeRateDate": "2026-10-13",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "K2 US official-store reference only; not a mainland China selling price.",
+      "ECB reference rates are informational, not transaction rates.",
+      "US taxes, shipping, and import charges are excluded or unconfirmed.",
+      "Product price and size availability can change."
+    ]
+  },
+  "observed": {
+    "productTitle": "K2 Maysis Men's Snowboard Boots 2027",
+    "displayedUsSizes": [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 13, 14, 15],
+    "ability": ["Intermediate", "Advanced"],
+    "bestFor": ["Freeride", "Big Mountain", "Freestyle", "Powder"],
+    "closure": "Dual-zone Zonal BOA (H5 and M+2) with Conda liner lacing"
+  },
+  "notes": "The K2 US product page directly identifies the 2027 model, article reference, price, use categories, ability range, and size selector."
+}

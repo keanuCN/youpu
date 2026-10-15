@@ -1,0 +1,112 @@
+{
+  "brand": "HEAD",
+  "model": "Easy Joy",
+  "season": "2026/27",
+  "articleNumber": "315656",
+  "seedFile": "data/skis/head-easy-joy-2027.yaml",
+  "retrievedAt": "2026-10-14",
+  "sources": {
+    "regionalRetailProductPage": {
+      "url": "https://www.head.ru/ski/shop/skis/8374/138172/",
+      "pageArticleNumber": "31655507",
+      "pageProductLabel": "Easy Joy + JOY 9 GW SLR",
+      "pageRole": "HEAD 俄语区零售页（页面列有销售价格、购物车、门店与配送信息）",
+      "listedPriceRUB": 44790,
+      "listedLengthsCm": [143, 148, 153, 158, 163],
+      "sizeTable": [
+        { "lengthCm": 143, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 9.6 },
+        { "lengthCm": 148, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 10.5 },
+        { "lengthCm": 153, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 11.3 },
+        { "lengthCm": 158, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 12.2 },
+        { "lengthCm": 163, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 13.3 }
+      ],
+      "evidence": "HEAD 俄语区零售页标注 2026/2027、五个长度、逐尺码几何、初学者/雪道/低速定位、JOY 9 GW SLR 固定器及 RUB 44,790 页面价格。此页零售货号为 31655507，与 HEAD 国际商品页及 26/27 Workbook 中的 article 315656 不同；几何与 315656 种子表一致。"
+    },
+    "manufacturerProductPage": {
+      "url": "https://www.head.com/en_CA/product/easy-joy-315656-set",
+      "evidence": "HEAD 官方商品页 SKU 315656.SET，确认 Easy Joy 套装、五个长度、Beginner / On Piste / Slow / Short Radius、Allride Rocker；页面默认 143 cm 选项显示 117/70/103 mm、9.6 m、1698 g。重量页面在选中 143 cm 时显示，但没有说明按单只还是一对计，因此未录入产品档案。"
+    },
+    "manufacturerProductPageRecheck20261015": {
+      "url": "https://www.head.com/en_CA/product/easy-joy-315656-set",
+      "retrievedAt": "2026-10-15",
+      "manufacturerSku": "315656.SET",
+      "selectedLengthCm": 143,
+      "officialValues": {
+        "sidecutMm": [117, 70, 103],
+        "radiusM": 9.6,
+        "displayedWeightG": 1698,
+        "weightBasis": null
+      },
+      "pageShowsLengthOptionsCm": [143, 148, 153, 158, 163],
+      "evidence": "HEAD 官方加拿大商品页当前将 143 cm 选为默认长度，并在尺寸与几何区域显示板尾 103 mm、板腰 70 mm、板头 117 mm、半径 9.6 m、重量 1698 g。选项列表还显示 148/153/158/163 cm；这次页面抓取只明确呈现默认 143 cm 对应的数据。",
+      "decision": "143 cm 行新增一条国际货号 315656.SET 的原厂页面直接交叉证据；页面未说明重量口径，仍不将 1698 g 录入种子。该证据不改变 31655507 地区零售 SKU 与 315656 的映射限制。"
+    },
+    "manufacturerRegionalProductPageExactArticleRecheck20261015": {
+      "url": "https://head.ru/ski/shop/skis/8374/138146/",
+      "publisher": "HEAD 官方俄语区线上商店",
+      "storeIdentitySource": "https://head.ru/ski/shop/",
+      "retrievedAt": "2026-10-15",
+      "pageProductName": "Easy Joy + JOY 9 GW SLR",
+      "pageArticleNumber": "31565601",
+      "internationalArticleNumber": "315656",
+      "season": "2026/27",
+      "binding": "JOY 9 GW SLR BRAKE 78 [H]",
+      "listedPriceRUB": 52590,
+      "pageSizeTable": [
+        { "lengthCm": 143, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 9.6 },
+        { "lengthCm": 148, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 10.5 },
+        { "lengthCm": 153, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 11.3 },
+        { "lengthCm": 158, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 12.2 },
+        { "lengthCm": 163, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 13.3 }
+      ],
+      "positioning": {
+        "terrain": "100% groomed piste",
+        "skill": "Beginner",
+        "speed": "Low speed",
+        "turnShape": "Short radius",
+        "profile": "Allride Rocker & Women's Camber; rocker 20% / camber 80%"
+      },
+      "articleMappingDecision": "地区页货号 31565601 与 HEAD 国际 SKU/article 315656 同根，且官方商品页和 26/27 目录均确认 Easy Joy 及相同长度范围；作为 HEAD 官方俄语区店铺的型号级逐码证据记录。此前 31655507 候选与目标货号不同，继续排除。地区后缀不证明不同销售地区的套装配置完全相同。",
+      "priceDecision": "保留原始 RUB 52,590 作为俄语区页面挂牌信息；本轮不换算，亦不视作中国价格。种子主价继续采用已有日本地区 CNY 折算参考。"
+    },
+    "manufacturerCatalog": {
+      "url": "https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf",
+      "evidence": "HEAD 26/27 Hardgoods 目录列出 article 315656，并提供 163 cm 参考三围 117/70/103 mm、半径 13.3 m，确认雪季与型号锚点。"
+    },
+    "japaneseRetailerCnyConvertedPrice": {
+      "localizedUrl": "https://tanabesports.net/index_zhcn_cny_456-457.html?keyword=head",
+      "productUrl": "https://tanabesports.net/goods_en_USD_48250.html",
+      "productArticle": "315656",
+      "listedPriceJpy": 59800,
+      "displayedConvertedPriceCny": 2531.04,
+      "originalListPriceJpy": 75900,
+      "capturedAt": "2026-10-14",
+      "stockStatus": "页面标注缺货",
+      "evidence": "Tanabe Sports 的中文 CNY 页面将 HEAD Easy Joy 2027、article 315656 的促销价 59,800 日元折算显示为 2,531.04 元；商品页确认 75,900 日元原价、21% 折扣及规格货号。该金额是日本地区价格的动态折算，不是中国本地售价；无库存，运费、进口税不包含在此金额中。"
+    },
+    "manufacturerImage": {
+      "url": "https://cdn-mdb.head.com/CDN3/SP/315656.SET/1260x1680/easy-joy.webp",
+      "evidence": "HEAD 官方产品页规格图链接指向 CDN，路径含型号 315656.SET，尺寸为 1260×1680。"
+    }
+  },
+  "regionalRetailSkuMapping": {
+    "internationalArticleNumber": "315656",
+    "regionalRetailArticleNumber": "31655507",
+    "regionalRetailPage": "https://www.head.ru/ski/shop/skis/8374/138172/",
+    "internationalManufacturerPage": "https://www.head.com/en_GB/product/easy-joy-315656-set",
+    "manufacturerCatalog": "https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf",
+    "decision": "主种子继续使用 HEAD 国际页面和 26/27 Hardgoods Workbook 锚定的 article 315656。31655507 仅作为俄语区零售套装 SKU 旁证；虽然逐码规格相同，但 SKU、地区价格和绑定组合须分别标注，不视为同一可售变体。"
+  },
+  "sizeTable": [
+    { "lengthCm": 143, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 9.6 },
+    { "lengthCm": 148, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 10.5 },
+    { "lengthCm": 153, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 11.3 },
+    { "lengthCm": 158, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 12.2 },
+    { "lengthCm": 163, "tipMm": 117, "waistMm": 70, "tailMm": 103, "radiusM": 13.3 }
+  ],
+  "unverified": [
+    "HEAD 加拿大官方页面在默认 143 cm 下显示 1698 g，但未说明单只/一对重量口径；不录入。",
+    "未找到能核验中国渠道、具体 SKU 和当前人民币报价的商品页；不转换海外售价。",
+    "图片使用授权未核实。"
+  ]
+}

@@ -594,6 +594,7 @@ export const SNOWBOARD: Category = {
   rankCategories: [
     { key: "overall", label: "综合榜" },
     { key: "all-mountain", label: "全山地", scenes: ["all-mountain"] },
+    { key: "carving", label: "刻滑", scenes: ["carving"] },
     { key: "freestyle", label: "自由式", scenes: ["freestyle"] },
     { key: "powder", label: "野雪", scenes: ["powder"] },
     { key: "beginner", label: "新手友好", scenes: ["beginner"] },

@@ -1,0 +1,57 @@
+{
+  "capturedAt": "2026-10-15",
+  "brand": "CAPiTA",
+  "archiveSeason": "2026/27",
+  "method": "使用 CAPiTA 北美官方商品页标题中明确标注的 2027 款型号作为年款依据；商品页没有直接给出完整雪季起止日期，因此只支持项目按 2027 年款归档为 2026/27，不推断首次上市时间或实时库存。",
+  "products": [
+    {
+      "slug": "capita-dark-horse-2027",
+      "model": "Dark Horse",
+      "officialPageTitle": "CAPiTA Dark Horse Snowboard 2027 CAPiTA Snowboards | NA",
+      "source": "https://capitasnowboarding.com/products/capita-dark-horse-mens-snowboard-2027"
+    },
+    {
+      "slug": "capita-indoor-survival-2027",
+      "model": "Indoor Survival",
+      "officialPageTitle": "CAPiTA Indoor Survival Snowboard 2027 CAPiTA Snowboards | NA",
+      "source": "https://capitasnowboarding.com/products/capita-indoor-survival-mens-snowboard-2027"
+    },
+    {
+      "slug": "capita-outerspace-living-2027",
+      "model": "Outerspace Living",
+      "officialPageTitle": "CAPiTA Outerspace Living Snowboard 2027 CAPiTA Snowboards | NA",
+      "source": "https://capitasnowboarding.com/products/capita-outerspace-living-mens-snowboard-2027"
+    },
+    {
+      "slug": "capita-pathfinder-2027",
+      "model": "Pathfinder",
+      "officialPageTitle": "CAPiTA Pathfinder Camber Snowboard 2027 CAPiTA Snowboards | NA",
+      "source": "https://capitasnowboarding.com/products/capita-pathfinder-mens-snowboard-2027"
+    },
+    {
+      "slug": "capita-sb-resort-twin-2027",
+      "model": "Spring Break Resort Twin",
+      "officialPageTitle": "Spring Break Resort Twin Snowboard 2027 CAPiTA Snowboards | NA",
+      "source": "https://capitasnowboarding.com/products/capita-sb-resort-twin-mens-snowboard-2027"
+    },
+    {
+      "slug": "capita-the-navigator-2027",
+      "model": "The Navigator",
+      "officialPageTitle": "CAPiTA The Navigator Snowboard 2027 CAPiTA Snowboards | NA",
+      "source": "https://capitasnowboarding.com/products/capita-the-navigator-mens-snowboard-2027"
+    },
+    {
+      "slug": "capita-ultrafear-2027",
+      "model": "Ultrafear",
+      "officialPageTitle": "CAPiTA Ultrafear Snowboard 2027 CAPiTA Snowboards | NA",
+      "source": "https://capitasnowboarding.com/products/capita-ultrafear-mens-snowboard-2027"
+    }
+  ],
+  "excluded": [
+    {
+      "slug": "capita-sidewinder-2027",
+      "source": "https://capitasnowboarding.com/products/capita-sidewinder-mens-snowboard-2027",
+      "reason": "当前官方页面标题没有显示 2027，虽然 URL 路径含 2027；本批不以 URL alone 作为足够的标题年款证据。"
+    }
+  ]
+}

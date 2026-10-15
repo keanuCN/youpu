@@ -13,9 +13,9 @@ export function MediaPlaceholder({ label, className }: { label: string; classNam
     <div
       className={cn("relative flex h-full min-h-24 flex-col justify-between overflow-hidden bg-secondary p-3", className)}
       role="img"
-      aria-label={`${label} 图片待补充`}
+      aria-label={`${label}，暂无图片`}
     >
-      <span className="mono-label text-foreground/45">IMAGE / PENDING</span>
+      <span className="mono-label text-foreground/45">暂无图片</span>
       <span className="relative max-w-[85%] text-[14px] leading-snug text-foreground/70">{label}</span>
       <span className="absolute -right-8 -bottom-8 h-28 w-28 rotate-45 border border-foreground/10" aria-hidden="true" />
     </div>

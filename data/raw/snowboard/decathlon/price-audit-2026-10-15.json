@@ -1,0 +1,76 @@
+{
+  "batchDate": "2026-10-15",
+  "currencyPolicy": "Seed prices are stored in CNY. When no China-market offer is verified, an explicitly labeled foreign-market price may be converted to CNY as a reference; it must not be presented as a Chinese retail price.",
+  "exchangeRate": {
+    "source": "European Central Bank daily euro foreign exchange reference rates",
+    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.es.html",
+    "date": "2026-10-14",
+    "ratesPerEUR": {"GBP": 0.8439, "CAD": 1.5918, "CNY": 7.4925},
+    "conversion": "Foreign currency amount / foreign-currency units per EUR * CNY per EUR; rounded to nearest CNY. ECB rates are reference rates, not transaction quotes."
+  },
+  "products": [
+    {
+      "slug": "decathlon-snb-100-2026",
+      "sku": "8660203",
+      "market": "Canada",
+      "officialPage": "https://www.decathlon.ca/en/p/all-mountain-and-freestyle-snowboard-snb-100/309522/c193m8660203",
+      "checkedAt": "2026-10-15",
+      "observedPrice": {"currency": "CAD", "currentSale": 165, "formerPrice": 220},
+      "seedPriceCNY": 777,
+      "formerPriceCNY": 1036,
+      "limitations": ["Canada-market offer; sale price and stock can change.", "No matching China official or authorized retail offer was verified in this batch.", "The listing does not identify a production season; 2026 in the seed is a snapshot label."]
+    },
+    {
+      "slug": "decathlon-all-road-900-2026",
+      "sku": "8643399",
+      "market": "United Kingdom",
+      "officialPage": "https://www.decathlon.co.uk/p/adults-snowboarding-board-for-slope-and-freeride-all-road-900/332434/c314c29m8643399",
+      "checkedAt": "2026-10-15",
+      "observedPrice": {"currency": "GBP", "currentListing": 279.99},
+      "seedPriceCNY": 2486,
+      "limitations": ["UK-market offer; price and stock can change.", "No matching China official or authorized retail offer was verified in this batch.", "The listing does not identify a production season; 2026 in the seed is a snapshot label."]
+    },
+    {
+      "slug": "decathlon-park-ride-500-2026",
+      "sku": "8938817",
+      "market": "United Kingdom",
+      "officialPage": "https://www.decathlon.co.uk/p/mens-all-mountain-and-freestyle-snowboard-park-and-ride-500-green/306010/c49c1m8938817",
+      "checkedAt": "2026-10-15",
+      "observedPrice": {"currency": "GBP", "currentListing": 199.99},
+      "seedPriceCNY": 1776,
+      "limitations": ["UK-market offer; price and stock can change.", "A promotion for another SKU was not merged into SKU 8938817.", "No matching China official or authorized retail offer was verified in this batch.", "The listing does not identify a production season; 2026 in the seed is a snapshot label."]
+    }
+  ],
+  "chinaMarketSearch": {
+    "checkedAt": "2026-10-15",
+    "result": "Searches targeting decathlon.com.cn did not return a matching official China product page with a verifiable price. Follow-up searches found JD self-operated listing leads for All Road 900 and SNB 100, but the public category/search pages did not expose current CNY amounts and the item pages were blocked by JD risk control. These are domestic-market leads, not verified price quotes or proof of brand-authorized seller status.",
+    "officialChinaSearch": "Web search queries restricted to decathlon.com.cn and exact model names; no exact official China product page with a current price was returned.",
+    "domesticRetailerLeads": [
+      {
+        "model": "All Road 900",
+        "platform": "JD.com",
+        "listingIds": ["4263566", "4263567"],
+        "listingPage": "https://www.jd.com/jiage/13182858055b54696903.html?electedExtAttrSet=4662%2C&extAttrValue=expand_name%2C%4076301%3A%3A4662&sort_type=sort_default",
+        "observedEvidence": "JD search/category results label entries as Decathlon ALL ROAD 900, identify ID 4263567 as 166 cm, show self-operated (自营) and 32+ reviews. A separate 4263566 result includes a malformed size string and was not mapped to a size.",
+        "priceCNY": null,
+        "limitations": "The result page did not expose a current CNY price; product detail navigation was blocked by JD risk control. Self-operated status does not by itself establish Decathlon brand authorization."
+      },
+      {
+        "model": "SNB 100",
+        "platform": "JD.com",
+        "listingId": "4278169",
+        "listingPage": "https://so.m.jd.com/chanpin/1282438.html",
+        "observedEvidence": "JD search results label the item Decathlon SNB 100, grey, 156 cm, ID 4278169; 96 reviews were displayed at capture.",
+        "priceCNY": null,
+        "limitations": "The result page did not expose a current CNY price; the 156 cm listing is a domestic sales lead only and was not used to set price or season for the seed."
+      }
+    ],
+    "unmatchedCandidatesExcluded": [
+      {
+        "listingIds": ["4914366", "4914367"],
+        "observedTitle": "Decathlon freestyle/twin-tip snowboard",
+        "exclusionReason": "Search results do not identify Park & Ride 500, an exact model season, or manufacturer article number; not mapped to that seed."
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "brand": "HEAD",
+  "model": "Shape e-V5",
+  "season": "2025-26",
+  "articleNumber": "315255",
+  "retrievedAt": "2026-10-14",
+  "seedFile": "data/skis/head-shape-e-v5-2026.yaml",
+  "retailer": "Tanabe Sports",
+  "market": "Japan; Chinese-language, CNY-converted storefront",
+  "source": "https://tanabesports.net/goods_zhcn_cny_44295.html",
+  "productPageEvidence": {
+    "evidence": "Tanabe Sports 商品页标题标注 HEAD Shape e.V5、2026 款和商品号码 315255；产品信息再次列出 article 315255。页面显示 JPY 108,900 原价、JPY 58,700 促销价及 CNY 2,480.43 动态折算价。套装绑定 100942 / PR 11 GW Brake [G] 85 mm，板底 All Mountain PR Base。尺码选项列有 149/156/163/170 cm。",
+    "listedSizesCm": [149, 156, 163, 170],
+    "articleNumber": "315255",
+    "listPriceJpy": 108900,
+    "salePriceJpy": 58700,
+    "displayedPriceCny": 2480.43,
+    "binding": "100942 / PR 11 GW Brake [G] 85 mm",
+    "plate": "All Mountain PR Base"
+  },
+  "priceInterpretation": {
+    "recordedCurrency": "CNY",
+    "recordedPrice": 2480.43,
+    "isChinaDomesticOffer": false,
+    "seasonMatched": true,
+    "availabilityBySizeConfirmed": false,
+    "limitations": "日本零售商中文页面按动态汇率把 JPY 报价显示为 CNY；页面未结构化确认每个尺码的即时库存。页面列有 SF Express、EMS、DHL，并注明 DHL/EMS 限发香港和台湾；大陆具体配送方式需向商家确认。未计跨境运费、进口税费或其他费用，不是中国国内售价。"
+  },
+  "remainingUnknowns": [
+    "各尺码当前库存状态需在结账前确认。",
+    "中国大陆具体可用配送渠道与费用未确认。",
+    "CNY 折算金额会随零售商汇率变化。"
+  ]
+}

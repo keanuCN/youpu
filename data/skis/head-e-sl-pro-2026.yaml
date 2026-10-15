@@ -3,38 +3,65 @@ category: skis
 brand: head
 model: Worldcup Rebels e-SL Pro
 year: 2026
-title: HEAD Worldcup Rebels e-SL Pro 2025/26
+title: HEAD Worldcup Rebels e-SL Pro 2025/26（313235）
+price:
+  min: 7529.31
+  max: 7529.31
+  currency: CNY
 one_liner: 官方归类为雪道竞速小回转板，面向有经验滑手；绑定组合依具体套装。
 specs:
+  lengthOptions: 150 / 155 / 160 / 165 / 170 cm
   terrain: 雪道 / 竞速 / 小回转
   skierLevel: 专家
-  bindingSetup: 可选多种 Freeflex / Protector 固定器，也可选择无固定器；按具体 SKU 核对
-  weightBasis: 页面展示 Weight 数值，但未明确单只/一对及是否含固定器，本轮不映射为可比较重量。
-  geometryNotes: 部分长度已核对：只展示实际取得的默认长度几何和官方参考长度半径；其他可选板长的几何仍待取得，不表示完整尺码覆盖。
-  bindingCompatibility: 页面同时列出 GW 和非 GW 的不同 Freeflex 固定器，不将整个 e-SL Pro 套装系列视为通用
-    GripWalk 兼容；按实际所选固定器说明核对靴底与板层。
+  articleNumber: "313235"
+  bindingSetup: HEAD 25/26 目录列出 WCR 14 Short 板层与 Freeflex ST 16 套装配置；地区零售 SKU 可能搭配不同固定器，购买前按实际货号核对。
+  weightBasis: 尚未找到该雪季精确货号的官方重量口径，本档案不记录重量。
+  geometryNotes: HEAD 25/26 官方商品页按货号 31323506 明确列出五个长度的完整几何表；商品套装为 FF 11 GW，不能与 313235 的目录默认绑定表混为同一地区 SKU。
+  bindingCompatibility: HEAD 俄罗斯地区 31323506 套装列出 FF 11 GW；其他市场 SKU 可能使用不同固定器，按实际配置核对靴底兼容性。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 官方商品号 313236.SET 已核对，页面未直接标注销售雪季；2025/26 待目录确认。
-  sourceCheckedAt: 2026-10-13
-  compatibilitySources: https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set；https://www.grip-walk.com/faq/
+  seasonEvidence: HEAD 25/26 Hardgoods Workbook 对应 article 313235；HEAD 官方俄罗斯地区页明确标注 2025/2026、商品号 31323506 和 FF 11 GW 套装。313236 属于下一雪季，已另建档案。
+  sourceCheckedAt: 2026-10-15
+  priceCheckedAt: 2026-10-15
+  listedPrice: USD 1,125 MSRP
+  priceMarket: HEAD 美国 2025/26 官方零售价格表（裸板；绑定栏为 ---）
+  priceSource: https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/383a3ba9-007e-442e-a92d-fdc0140aa976/HEAD_RETAIL%20PRICING_FOR%20PRINT_12.20_01%202_combi.pdf?ver=1744650386194
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: HEAD 美国 2025/26 官方零售表对 article 313235 列裸板 MSRP USD 1,125、MAP USD 999，折算 MSRP 为 CNY 7,529.31。HEAD 加拿大官方 313235 商品页另显示含 Freeflex 14 GW 的套装最终价 CAD 1,359（查询时缺货），按 ECB 2026-10-14 汇率折算 CNY 6,396.73；套装配置和地区不同，不与美国裸板价合并。两者均非中国售价，未计跨境运费、税费及进口成本。
+  compatibilitySources: https://head.ru/ski/shop/skis/discounts/6265/104054/; https://www.eski.sk/image/document/head_workbook_2526_en.pdf; https://www.grip-walk.com/faq/
   sizeSpecs:
     - size: 150 cm
       noseWidth: 122
       waistWidth: 68
       tailWidth: 107
       turnRadius: 10.5
+    - size: 155 cm
+      noseWidth: 122
+      waistWidth: 68
+      tailWidth: 107
+      turnRadius: 11.2
     - size: 160 cm
+      noseWidth: 122
+      waistWidth: 68
+      tailWidth: 107
       turnRadius: 12
-      notes: 此长度仅取得官方参考半径；板头/板腰/板尾宽未取得，不沿用默认长度。
+    - size: 165 cm
+      noseWidth: 122
+      waistWidth: 68
+      tailWidth: 107
+      turnRadius: 12.9
+    - size: 170 cm
+      noseWidth: 122
+      waistWidth: 68
+      tailWidth: 107
+      turnRadius: 13.7
   profile: Rebel Camber：Camber 100%（150 cm 页面展示）
 images:
-  - url: "https://cdn-mdb.head.com/CDN3/D/313236.SET_WO/5/683x911/worldcup-rebels-e\
-      -sl-pro-without-binding.webp"
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/884f4d90cb21ff8d61cb667a939a5d4514e7730b9f744f04c9564c079b4ccaeb.webp
     kind: face
-    alt: HEAD Worldcup Rebels e-SL Pro 官方雪板商品图
-    source: HEAD 官方商品页（图片使用授权待核）
+    alt: HEAD Worldcup Rebels e-SL Pro 2025/26（313235）官方商品图
+    source: HEAD 加拿大官方 313235.SET 商品页及官方 CDN（图片使用授权待核）
     sort_order: 0
 data_source:
   kind: official
-  origin_url: https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set
+  origin_url: https://head.ru/ski/shop/skis/discounts/6265/104054/
 status: published

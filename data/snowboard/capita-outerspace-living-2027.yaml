@@ -10,6 +10,7 @@ price:
   max: 3816
   currency: CNY
 specs:
+  seasonEvidence: CAPiTA 北美官方商品页标题标注 Outerspace Living Snowboard 2027；据官方 2027 年款归档为 2026/27。商品页未直接注明完整雪季日期，也不据此判断首次上市时间或实时库存。
   length: 154
   effectiveEdge: 1168
   waistWidth: 250
@@ -49,7 +50,7 @@ editorial_scores:
   forgiveness: 7.4
   value: 7.8
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST05-OUTERSPACE-LIVING-TOP.png?v=1776884612"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/b0bfe217bf3106394fce1fcc237b6c9420ca3047b3c1c9db1022e94d6f372155.webp"
     kind: face
     alt: CAPiTA Outerspace Living 2027 官方产品图
     source: CAPiTA 官方产品页图片（本地演示，版权待核）

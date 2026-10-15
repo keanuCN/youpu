@@ -7,7 +7,7 @@ import RankingsClient from "./rankings-client";
 
 export const metadata = simpleMetadata({
   title: `${SEASON} 装备榜单 · 数据分 70% + 社区投票 30%`,
-  description: `有谱装备榜单：单板、羽毛球拍与路亚竿按品类查看综合榜、性能榜和性价比榜，数据分与社区投票加权排名。`,
+  description: `有谱装备榜单：单板可查看综合榜、全山地、刻滑、自由式、野雪、新手友好与性价比榜，数据分与社区投票加权排名。`,
   path: "/rankings",
 });
 

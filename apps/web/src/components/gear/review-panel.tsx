@@ -32,7 +32,6 @@ import { useAuthGate } from "@/store/app-shell";
 import { Stars } from "./primitives";
 import { SafeImage } from "./safe-image";
 
-const LEVELS = ["新手", "中级", "进阶", "高阶"];
 const EMPTY_RATING_DIST = { "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 };
 
 type ReviewCopy = {
@@ -470,35 +469,21 @@ function ReviewForm({ gear }: { gear: GearItem }) {
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
   const [content, setContent] = useState("");
-  const [meta, setMeta] = useState({
-    years: profile?.years ?? 3,
-    weightKg: profile?.weightKg ?? 70,
-    level: profile?.level ?? "中级",
-    resort: profile?.resort ?? "",
-  });
-
   const submit = async () => {
     if (!rating) {
       toast.error("请先打分");
       return;
     }
     if (content.trim().length < 10) {
-      toast.error("实测内容至少 10 个字，写清你的使用条件");
+      toast.error("实测内容至少 10 个字，请写下产品体验");
       return;
     }
     if (hasCloudSession()) {
       try {
-        const riderProfile: Record<string, unknown> = {
-          years: Number(meta.years) || 1,
-          level: levelToApi(meta.level),
-          home_resort: meta.resort.trim() || undefined,
-        };
-        if (copy.showHeight) riderProfile.height = profile?.heightCm ?? 175;
-        if (copy.showWeight) riderProfile.weight = Number(meta.weightKg) || 70;
         await cloudCreateRating(productRefForGear(gear), {
           overall: rating,
           content: content.trim(),
-          riderProfile,
+          riderProfile: {},
         });
       } catch (error) {
         toast.error(error instanceof Error ? error.message : "评论发布失败");
@@ -512,11 +497,11 @@ function ReviewForm({ gear }: { gear: GearItem }) {
       images: [],
       authorName: profile?.username ?? "匿名档案员",
       authorMeta: {
-        years: Number(meta.years) || 1,
+        years: profile?.years ?? 1,
         heightCm: copy.showHeight ? profile?.heightCm ?? 175 : 0,
-        weightKg: copy.showWeight ? Number(meta.weightKg) || undefined : undefined,
-        level: meta.level,
-        resort: meta.resort.trim(),
+        weightKg: copy.showWeight ? profile?.weightKg ?? undefined : undefined,
+        level: profile?.level ?? "中级",
+        resort: profile?.resort ?? "",
       },
     });
     track("rating_submit", { product_id: gear.id });
@@ -529,7 +514,7 @@ function ReviewForm({ gear }: { gear: GearItem }) {
     <div className="border border-foreground">
       <div className="flex items-center justify-between border-b border-border bg-secondary/50 px-4 py-2.5">
         <p className="mono-label">写下你的实测 / FIELD REPORT</p>
-        <p className="mono-label text-primary">必须标注使用条件</p>
+        <a href="/me" className="mono-label text-primary hover:underline">使用个人资料 · 修改资料</a>
       </div>
       <div className="space-y-4 p-4">
         <div className="flex flex-wrap items-center gap-4">
@@ -551,52 +536,6 @@ function ReviewForm({ gear }: { gear: GearItem }) {
           <span className="mono-data text-[12px] text-muted-foreground tnum">
             {rating ? `${rating}.0 / 5` : "未打分"}
           </span>
-        </div>
-
-        <div className={cn("grid gap-3", copy.showWeight ? "sm:grid-cols-4" : "sm:grid-cols-3")}>
-          <MetaField label={copy.experienceLabel}>
-            <input
-              type="number"
-              min={0}
-              max={40}
-              value={meta.years}
-              onChange={(e) => setMeta((m) => ({ ...m, years: Number(e.target.value) }))}
-              className="mono-data h-8 w-full border border-border bg-transparent px-2 text-[12px] outline-none focus:border-foreground"
-            />
-          </MetaField>
-          {copy.showWeight ? (
-            <MetaField label="体重 kg">
-              <input
-                type="number"
-                min={30}
-                max={150}
-                value={meta.weightKg}
-                onChange={(e) => setMeta((m) => ({ ...m, weightKg: Number(e.target.value) }))}
-                className="mono-data h-8 w-full border border-border bg-transparent px-2 text-[12px] outline-none focus:border-foreground"
-              />
-            </MetaField>
-          ) : null}
-            <MetaField label={copy.levelLabel}>
-            <select
-              value={meta.level}
-              onChange={(e) => setMeta((m) => ({ ...m, level: e.target.value }))}
-              className="mono-data h-8 w-full rounded-none border border-border bg-transparent px-1.5 text-[12px] outline-none focus:border-foreground"
-            >
-              {LEVELS.map((l) => (
-                <option key={l} value={l}>
-                  {l}
-                </option>
-              ))}
-            </select>
-          </MetaField>
-          <MetaField label={copy.placeLabel}>
-            <input
-              value={meta.resort}
-              onChange={(e) => setMeta((m) => ({ ...m, resort: e.target.value }))}
-              placeholder={copy.placePlaceholder}
-              className="mono-data h-8 w-full border border-border bg-transparent px-2 text-[12px] outline-none focus:border-foreground"
-            />
-          </MetaField>
         </div>
 
         <Textarea
@@ -621,15 +560,6 @@ function ReviewForm({ gear }: { gear: GearItem }) {
   );
 }
 
-function MetaField({ label, children }: { label: string; children: React.ReactNode }) {
-  return (
-    <label className="block">
-      <span className="mono-label mb-1 block">{label}</span>
-      {children}
-    </label>
-  );
-}
-
 function StarIcon({ filled }: { filled: boolean }) {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden>
@@ -641,13 +571,6 @@ function StarIcon({ filled }: { filled: boolean }) {
       />
     </svg>
   );
-}
-
-function levelToApi(level: string): "beginner" | "intermediate" | "advanced" | "expert" {
-  if (level === "新手") return "beginner";
-  if (level === "进阶") return "advanced";
-  if (level === "高阶") return "expert";
-  return "intermediate";
 }
 
 function mergeCloudRatings(base: Persisted, gearId: string, ratings: CloudRating[]): Persisted {

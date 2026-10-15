@@ -6,8 +6,8 @@ year: 2027
 title: CAPiTA Aeronaut Snowboard 2027 CAPiTA Snowboards | NA
 one_liner: 定向传统正拱的度假全山板，强调速度、侧击和连续腾空，适合已经能主动压板并想提升山地表现的滑手。
 price:
-  min: 4896
-  max: 4896
+  min: 4550.71
+  max: 4550.71
   currency: CNY
 specs:
   length: 157
@@ -36,8 +36,13 @@ specs:
     - { size: 160W, effectiveEdge: 1253, waistWidth: 266, noseWidth: 314, tailWidth: 309, sidecutRadii: 8.7/7.7 m, stanceWidth: 584 mm（参考）, riderWeight: 160-220 lb / 72-99 kg, bootSize: M 10+ }
     - { size: 162W, effectiveEdge: 1268, waistWidth: 269, noseWidth: 318, tailWidth: 313, sidecutRadii: 8.8/7.8 m, stanceWidth: 584 mm（参考）, riderWeight: 170-230 lb / 77-104 kg, bootSize: M 10+ }
   sidecutRadii: 8.5/7.5 m
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  priceCheckedAt: 2026-10-15
+  seasonEvidence: CAPiTA 北美官方商品页标题为 Aeronaut Snowboard 2027，按官方 2027 款归档为 2026/27；页面未直接注明完整雪季日期。
+  regionalListPrice: USD 679.95
+  priceMarket: CAPiTA 美国官方商店；日本 Murasaki Sports 同款页面交叉核对 JPY 107,800 含税
+  priceSource: https://capitasnowboarding.com/products/capita-aeronaut-mens-snowboard-2027
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: CAPiTA 美国官方页面标价 USD 679.95；按 ECB 2026-10-14 EUR/USD 1.1195、EUR/CNY 7.4925 折算为 CNY 4,550.71。日本 Murasaki Sports 的 26/27 同型号页面标价 JPY 107,800（含税），按 EUR/JPY 177.39、EUR/CNY 7.4925 折算约 CNY 4,553.20，与美国官方价交叉接近。价格是美国官方售价折算参考，不是中国售价；美国税费、汇兑、跨境运输及进口费用未计。原种子 CNY 4,896 未找到可回查依据，已用来源可核的折算值替换。
 editorial_scores:
   stability: 8.6
   response: 8.5
@@ -46,7 +51,7 @@ editorial_scores:
   forgiveness: 6.5
   value: 7.1
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/RST02-AERONAUT-TOP.png?v=1776884582"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/c5b1db97016ff8652186d210fa478180a47646ffe10ed47913fbb4e2718b0912.webp"
     kind: face
     alt: CAPiTA Aeronaut 2027 官方产品图
     source: CAPiTA 官方产品页图片（本地演示，版权待核）

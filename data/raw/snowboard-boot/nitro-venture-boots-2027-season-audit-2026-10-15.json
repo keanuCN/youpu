@@ -1,0 +1,50 @@
+{
+  "brand": "Nitro",
+  "checkedAt": "2026-10-15",
+  "collection": "2026/27 snowboard boots",
+  "collectionUrl": "https://www.nitrosnowboards.com/collections/boots-26-27",
+  "seasonDecision": "The four Venture variants below are catalogued as 2026/27 (2027) models based on their presence in Nitro's official 2026/27 boots collection. Product card titles do not independently print the model year.",
+  "products": [
+    {
+      "slug": "nitro-venture-boa-2027",
+      "model": "Venture BOA",
+      "productUrl": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-boa-boots",
+      "eurListPrice": 399.9,
+      "cnyReference": 2994.85,
+      "priceConversion": "ECB 2026-10-13 EUR/CNY 7.4890",
+      "collectionEvidence": "Official collection lists Nitro Venture BOA Boots at EUR 399.90."
+    },
+    {
+      "slug": "nitro-venture-pro-tls-2027",
+      "model": "Venture Pro TLS",
+      "productUrl": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-pro-tls-boots",
+      "eurListPrice": 399.9,
+      "cnyReference": 2994.85,
+      "priceConversion": "ECB 2026-10-13 EUR/CNY 7.4890",
+      "collectionEvidence": "Official collection lists Nitro Venture Pro TLS Boots at EUR 399.90."
+    },
+    {
+      "slug": "nitro-venture-tls-2027",
+      "model": "Venture TLS",
+      "productUrl": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-tls-boots",
+      "eurListPrice": 349.9,
+      "cnyReference": 2620.4,
+      "priceConversion": "ECB 2026-10-13 EUR/CNY 7.4890",
+      "collectionEvidence": "Official collection lists Nitro Venture TLS Boots at EUR 349.90."
+    },
+    {
+      "slug": "nitro-venture-step-on-tls-2027",
+      "model": "Venture Step On TLS",
+      "productUrl": "https://www.nitrosnowboards.com/collections/boots-26-27/products/venture-step-on-tls-boots",
+      "eurListPrice": 489.9,
+      "cnyReference": 3668.86,
+      "priceConversion": "ECB 2026-10-13 EUR/CNY 7.4890",
+      "collectionEvidence": "Official collection lists Nitro Venture Step On TLS Boots at EUR 489.90."
+    }
+  ],
+  "limits": [
+    "The collection path explicitly identifies the 2026/27 season, but the product card titles do not independently include 2027.",
+    "Euro prices and CNY conversions are European market references, not prices in China; taxes, shipping, and import costs are not included.",
+    "Some representative US 7 variants were out of stock in the 2026-10-12 saved product snapshots; that does not establish overall size availability."
+  ]
+}

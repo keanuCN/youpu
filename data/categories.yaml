@@ -115,6 +115,50 @@
         order: 40
         help: 大脚（EU 43+）用户需关注，板腰过窄会 boot 突出
 
+      - key: noseWidth
+        label: 板头宽
+        group: 尺寸与形状
+        type: number
+        unit: mm
+        min: 200
+        max: 400
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 41
+
+      - key: tailWidth
+        label: 板尾宽
+        group: 尺寸与形状
+        type: number
+        unit: mm
+        min: 180
+        max: 400
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 42
+
+      - key: stanceWidth
+        label: 参考站距
+        group: 尺寸与形状
+        type: number
+        unit: mm
+        min: 300
+        max: 750
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 45
+
+      - key: stanceRange
+        label: 可调站距范围
+        group: 尺寸与形状
+        type: text
+        filter: false
+        compare: false
+        order: 46
+
       - key: stanceSetback
         label: 站位后移
         group: 尺寸与形状
@@ -192,6 +236,22 @@
         compareDirection: lower-better
         order: 140
 
+      - key: construction
+        label: 结构与补强
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: true
+        order: 150
+
+      - key: sidewall
+        label: 侧墙
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: true
+        order: 160
+
       # ── 性能取向 ──
       - key: flex
         label: 硬度
@@ -206,6 +266,15 @@
         compareDirection: context
         order: 210
         help: 1-3 软（新手/公园），4-6 中等（全能），7-10 硬（刻滑/大体重/高手）
+
+      - key: flexRange
+        label: 可调硬度范围
+        group: 性能取向
+        type: text
+        filter: false
+        compare: false
+        order: 215
+        help: 用于按体重或定制调整的范围，保留品牌原文；不与固定 1–10 硬度分数直接比较
 
       - key: damping
         label: 减震
@@ -256,19 +325,76 @@
         compare: true
         order: 310
 
+      - key: abilityLevel
+        label: 建议水平
+        group: 适用场景
+        type: text
+        filter: false
+        compare: false
+        order: 320
+
+      - key: customization
+        label: 定制选项
+        group: 适用场景
+        type: text
+        filter: false
+        compare: false
+        order: 330
+
+      - key: brandStyleRatings
+        label: 品牌场景自评
+        group: 适用场景
+        type: text
+        filter: false
+        compare: false
+        order: 340
+        help: 品牌提供的主观场景评分，仅作原厂参考，不与有谱实测评分混用
+
       - key: sizeSpecs
         label: 各尺寸参数表
         group: 尺寸与形状
         type: nested
         itemSchema:
           size: { type: text, label: 尺码 }
+          effectiveLength: { type: number, label: 有效长度（原表） }
           waistWidth: { type: number, label: 板腰宽 }
+          waistWidthMm: { type: number, label: 板腰宽（mm） }
+          waistWidthCm: { type: number, label: 板腰宽（cm） }
+          waistCm: { type: number, label: 板腰宽（cm） }
           effectiveEdge: { type: number, label: 有效刃长 }
+          effectiveEdgeMm: { type: number, label: 有效刃长（mm） }
+          effectiveEdgeCm: { type: number, label: 有效刃长（cm） }
+          contactLengthCm: { type: number, label: 接触长度（cm） }
           sidecutRadii: { type: text, label: 侧切半径 }
+          sidecutRadius: { type: number, label: 侧切半径 }
+          sidecutRadiusM: { type: number, label: 侧切半径（m） }
+          sidecutM: { type: number, label: 侧切半径（m） }
+          sidecutRadiiMSourceOrder: { type: text, label: 侧切半径原始顺序（m） }
+          noseWidthMm: { type: number, label: 板头宽（mm） }
+          noseWidthCm: { type: number, label: 板头宽（cm） }
+          tipWidthCm: { type: number, label: 板头宽（cm） }
+          tailWidthMm: { type: number, label: 板尾宽（mm） }
+          tailWidthCm: { type: number, label: 板尾宽（cm） }
+          tipLengthCm: { type: number, label: 板头长度（cm） }
+          tailLengthCm: { type: number, label: 板尾长度（cm） }
           stanceWidth: { type: text, label: 站距范围 }
+          stanceWidthIn: { type: number, label: 参考站距（in） }
+          recommendedStanceCm: { type: number, label: 推荐站距（cm） }
+          referenceStanceMm: { type: number, label: 参考站距（mm） }
+          referenceStanceCm: { type: number, label: 参考站距（cm） }
+          referenceStanceIn: { type: number, label: 参考站距（in） }
+          centeredStanceCm: { type: number, label: 居中站距（cm） }
+          centeredStanceIn: { type: number, label: 居中站距（in） }
           stanceMin: { type: number, label: 最小站距（mm） }
+          stanceMinCm: { type: number, label: 最小站距（cm） }
+          stanceMinInches: { type: number, label: 最小站距（in） }
           stanceMax: { type: number, label: 最大站距（mm） }
+          stanceMaxCm: { type: number, label: 最大站距（cm） }
+          stanceMaxInches: { type: number, label: 最大站距（in） }
           setback: { type: number, label: 站位后移 }
+          setbackCm: { type: number, label: 站位后移（cm） }
+          setbackInches: { type: number, label: 站位后移（in） }
+          stanceSetbackInches: { type: number, label: 站位后移（in） }
           base: { type: text, label: 底面 }
           camber: { type: number, label: 拱高 }
           contactLength: { type: number, label: 接触长度 }
@@ -277,7 +403,37 @@
           backFootWidth: { type: number, label: 后脚处板宽 }
           taper: { type: number, label: 板头尾宽差 }
           riderWeight: { type: text, label: 建议骑手体重 }
+          riderWeightRange: { type: text, label: 建议骑手体重范围 }
+          riderWeightRaw: { type: text, label: 建议体重原文 }
+          recommendedRiderWeightRaw: { type: text, label: 建议体重原文 }
+          riderWeightLbRaw: { type: text, label: 建议体重（lb 原文） }
+          riderWeightKg: { type: 'number[]', label: 建议体重范围（kg） }
+          riderWeightLb: { type: 'number[]', label: 建议体重范围（lb） }
+          recommendedRiderWeightKg: { type: 'number[]', label: 建议体重范围（kg） }
+          recommendedRiderWeightLb: { type: 'number[]', label: 建议体重范围（lb） }
+          productPageRiderWeightKg: { type: 'number[]', label: 商品页建议体重范围（kg） }
+          sizeGuideRiderWeightKg: { type: 'number[]', label: 尺码表建议体重范围（kg） }
+          adjustableStanceRangeCm: { type: 'number[]', label: 可调站距范围（cm） }
+          boardWeightKg: { type: 'object<number>', label: 按表面版本区分的板重（kg） }
+          bootEu: { type: 'number[]', label: 雪鞋欧码范围 }
+          bootUs: { type: 'number[]', label: 雪鞋美码范围 }
+          maxBootSizeEU: { type: 'number|object<number>', label: 最大适配欧码 }
+          maxBootSoleLengthCm: { type: number, label: 最大雪鞋底长（cm） }
+          maxRiderHeightCm: { type: 'number|string', label: 建议身高上限（cm） }
+          selectableOnCapturedProductPage: { type: bool, label: 采集时页面可选状态 }
+          sidecutDepth: { type: number, label: 侧切深度（mm） }
+          stanceLocation: { type: number, label: 站位位置原值 }
+          stanceSetback: { type: text, label: 站位后移原文 }
+          surfaceArea: { type: number, label: 板面面积原值 }
+          taperMm: { type: number, label: 板头尾宽差（mm） }
+          underfootWidthBackCm: { type: number, label: 后脚处板宽（cm） }
+          underfootWidthFrontCm: { type: number, label: 前脚处板宽（cm） }
+          weightKg: { type: number, label: 板重（kg） }
+          widthVariant: { type: text, label: 宽度版本 }
+          sourceAnomaly: { type: text, label: 原始来源异常说明 }
+          riderHeight: { type: text, label: 建议骑手身高 }
           bootSize: { type: text, label: 建议雪鞋尺码 }
+          bindingSize: { type: text, label: 推荐固定器尺码 }
           edge: { type: text, label: 钢刃 }
           insertQty: { type: text, label: 固定器孔位 }
           noseHeight: { type: number, label: 板头高度 }
@@ -288,6 +444,11 @@
           sidewallAngle: { type: text, label: 侧墙角度 }
           sidewallColor: { type: text, label: 侧墙颜色 }
           stiffness: { type: text, label: 硬度说明 }
+          flex: { type: text, label: 板身分区硬度 }
+          brandFlex: { type: number, label: 品牌尺码硬度（/10） }
+          brandFlexOutOf10: { type: number, label: 品牌尺码硬度（/10） }
+          suggestedBoot: { type: text, label: 品牌推荐鞋码 }
+          surfaceAreaDm2: { type: number, label: 板面面积（dm²） }
           weight: { type: number, label: 板重（g） }
           tailHeight: { type: number, label: 板尾高度 }
           tailLength: { type: number, label: 板尾长度 }
@@ -357,6 +518,20 @@
         filter: false
         compare: false
         order: 702
+      - { key: listedPrice, label: 原始挂牌价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 910 }
+      - { key: northAmericanPrice, label: 北美报价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 911 }
+      - { key: officialEuropeanPrice, label: 欧洲官网价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 912 }
+      - { key: regionalListPrice, label: 地区挂牌价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 913 }
+      - { key: regionalPriceSource, label: 地区价格来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 914 }
+      - { key: exchangeRate, label: 汇率说明（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 915 }
+      - { key: exchangeRateSource, label: 汇率来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 916 }
+      - { key: exchangeRateDate, label: 汇率日期（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 917 }
+      - { key: eurCny, label: 欧元人民币汇率（审计）, group: 来源审计, type: number, filter: false, compare: false, display: false, order: 918 }
+      - { key: eurJpy, label: 欧元日元汇率（审计）, group: 来源审计, type: number, filter: false, compare: false, display: false, order: 919 }
+      - { key: priceConvertedAt, label: 价格折算日期（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 920 }
+      - { key: seasonEvidence, label: 雪季依据（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 921 }
+      - { key: riderWeightEvidence, label: 推荐体重依据, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 922 }
+      - { key: regionalRetailerPriceSource, label: 地区零售价格来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 923 }
 
     # 编辑分项评分不在此声明字段：它存在 product.editorial_scores 列，
     # 维度定义见下方 rating_dimensions（编辑评分与社区评分共用同一组维度键）
@@ -603,6 +778,13 @@
         filter: false
         compare: false
         order: 805
+      - key: seasonEvidence
+        label: 雪季依据
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 706
       - key: selectionNotes
         label: 选码与试装提示
         group: 选购参考
@@ -649,6 +831,42 @@
         filter: false
         compare: false
         order: 703
+      - key: sizeChartScope
+        label: 尺码表适用范围
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 704
+      - key: bootFitEvidence
+        label: 雪鞋实装依据
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 705
+      - key: sizeChartCheckedAt
+        label: 尺码表核查日期
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 704
+      - key: sizeChartSource
+        label: 尺码表官方来源
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 705
+      - { key: exchangeRate, label: 汇率说明（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 910 }
+      - { key: exchangeRateSource, label: 汇率来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 911 }
+      - { key: regionalListPrice, label: 地区挂牌价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 912 }
+      - { key: regionalOfficialPrice, label: 地区官网价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 913 }
+      - { key: regionalPriceSource, label: 地区价格来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 914 }
+      - { key: styleCode, label: 官方款号, group: 来源, type: text, filter: false, compare: false, display: false, order: 909 }
+      - { key: flexFeelEvidence, label: 品牌脚感描述依据, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 907 }
+      - { key: imageEvidence, label: 图片来源与展示授权（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 908 }
     rating_dimensions:
       - { key: response, label: 支撑与响应, weight: 0.25 }
       - { key: comfort, label: 舒适与减震, weight: 0.2 }
@@ -844,6 +1062,17 @@
         filter: false
         compare: false
         order: 705
+      - { key: exchangeRateSource, label: 汇率来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 910 }
+      - { key: regionalListPrice, label: 地区挂牌价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 911 }
+      - { key: styleCode, label: 官方款号, group: 来源, type: text, filter: false, compare: false, display: false, order: 909 }
+      - { key: seasonEvidence, label: 雪季依据, group: 选购参考, type: text, filter: false, compare: false, order: 706 }
+      - { key: wideVariant, label: 宽版差异说明（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 907 }
+      - { key: sizeEvidenceSource, label: 尺码来源说明（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 908 }
+      - { key: japanRetailPrice, label: 日本零售价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 909 }
+      - { key: japanRetailPriceCNY, label: 日本零售价人民币折算（审计）, group: 来源审计, type: number, filter: false, compare: false, display: false, order: 910 }
+      - { key: japanRetailPriceSource, label: 日本零售价来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 911 }
+      - { key: japanRetailSizeOptions, label: 日本尺码选项与库存说明（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 912 }
+      - { key: japanPriceExchangeRateSource, label: 日元折算汇率来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 913 }
     rating_dimensions:
       - { key: fit, label: 贴合舒适, weight: 0.3 }
       - { key: support, label: 支撑响应, weight: 0.25 }
@@ -1074,6 +1303,29 @@
         filter: false
         compare: false
         order: 37
+      - { key: articleNumber, label: 官方货号, group: 规格与来源, type: text, filter: false, compare: false, order: 140 }
+      - { key: base, label: 底板材料, group: 结构与材料, type: text, filter: false, compare: true, order: 150 }
+      - { key: speed, label: 适合速度, group: 使用取向, type: text, filter: false, compare: true, order: 160 }
+      - { key: turnShape, label: 转弯取向, group: 使用取向, type: text, filter: false, compare: true, order: 170 }
+      - { key: officialPrice, label: 官方地区参考价（原币）, group: 价格与来源, type: text, filter: false, compare: false, order: 801 }
+      - { key: listedPrice, label: 原始挂牌价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 910 }
+      - { key: regionalListPrice, label: 地区挂牌价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 911 }
+      - { key: regionalRetailPrice, label: 地区零售价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 912 }
+      - { key: regionalPriceSource, label: 地区价格来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 913 }
+      - { key: exchangeRateSource, label: 汇率来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 914 }
+      - { key: regionalOfficialPrice, label: 地区官网价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 915 }
+      - { key: exchangeRate, label: 汇率说明（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 916 }
+      - { key: priceCheckedAt, label: 价格核查日期, group: 价格与来源, type: text, filter: false, compare: false, order: 802 }
+      - { key: priceMarket, label: 报价地区, group: 价格与来源, type: text, filter: false, compare: false, order: 803 }
+      - { key: priceSource, label: 价格来源, group: 价格与来源, type: text, filter: false, compare: false, order: 804 }
+      - { key: priceStatus, label: 价格核验说明, group: 价格与来源, type: text, filter: false, compare: false, order: 805 }
+      - { key: priceCrossCheckSource, label: 交叉价格来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 917 }
+      - { key: priceCrossCheckStatus, label: 交叉价格核验说明（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 918 }
+      - { key: regionalPriceCrossCheckSource, label: 地区价格交叉来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 919 }
+      - { key: japanCatalogueListPriceCNY, label: 日本目录价人民币折算（审计）, group: 来源审计, type: number, filter: false, compare: false, display: false, order: 920 }
+      - { key: japanRetailSnapshotCNY, label: 日本零售快照人民币折算（审计）, group: 来源审计, type: number, filter: false, compare: false, display: false, order: 921 }
+      - { key: japanPriceEvidence, label: 日本价格证据说明（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 922 }
+      - { key: japanPriceSource, label: 日本价格来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 923 }
 
 - slug: racket-sports
   name: 球类
@@ -4287,7 +4539,7 @@
   sort_order: 20
 
 - slug: skiing-apparel
-  name: 雪服
+  name: 滑雪服饰
   parent: skiing
   sort_order: 20
   spec_schema:
@@ -4300,6 +4552,8 @@
           - { value: jacket, label: 滑雪夹克 }
           - { value: pants, label: 滑雪裤 }
           - { value: bib-pants, label: 背带滑雪裤 }
+          - { value: gloves, label: 滑雪手套 }
+          - { value: socks, label: 滑雪袜 }
         filter: multi
         compare: true
         order: 10
@@ -4388,6 +4642,68 @@
         filter: false
         compare: true
         order: 100
+      - key: membrane
+        label: 防水透湿膜
+        group: 防护性能
+        type: text
+        filter: false
+        compare: true
+        order: 105
+      - key: palmMaterial
+        label: 掌面材料
+        group: 面料
+        type: text
+        filter: false
+        compare: true
+        order: 106
+      - key: features
+        label: 结构与功能
+        group: 功能
+        type: text
+        filter: false
+        compare: true
+        order: 107
+      - key: availableColors
+        label: 官网颜色选项
+        group: 款式与结构
+        type: text
+        filter: false
+        compare: false
+        order: 108
+      - key: sizeChart
+        label: 尺码测量参考
+        group: 尺码与版型
+        type: nested
+        itemSchema:
+          size: { type: text, label: 尺码 }
+          footLengthMm: { type: text, label: 脚长范围（mm） }
+          euShoeSize: { type: text, label: 欧码参考 }
+          palmCircumferenceMm: { type: text, label: 手掌围度范围（mm） }
+          middleFingerLengthMm: { type: number, label: 中指长度（mm） }
+        filter: false
+        compare: false
+        order: 109
+      - key: waterRepellent
+        label: 防泼水
+        group: 防护性能
+        type: bool
+        filter: single
+        compare: true
+        order: 109
+      - key: windproof
+        label: 防风
+        group: 防护性能
+        type: bool
+        filter: single
+        compare: true
+        order: 110
+      - key: breathable
+        label: 透气
+        group: 防护性能
+        type: bool
+        filter: single
+        compare: true
+        order: 111
       - key: recco
         label: RECCO 救援反射器
         group: 安全与功能
@@ -4447,6 +4763,78 @@
         filter: single
         compare: true
         order: 180
+      - { key: availableSizes, label: 可选尺码, group: 尺码与版型, type: 'enum[]', options: [S, M, L, XL, 2XL], filter: false, compare: false, order: 190 }
+      - { key: sizeGuide, label: 尺码指南与限制, group: 尺码与版型, type: text, filter: false, compare: false, order: 200 }
+      - { key: styleCode, label: 官方款号, group: 规格与来源, type: text, filter: false, compare: false, order: 210 }
+      - { key: seasonEvidence, label: 雪季依据, group: 规格与来源, type: text, filter: false, compare: false, order: 220 }
+      - { key: level, label: 适用水平, group: 适用场景, type: text, filter: false, compare: true, order: 230 }
+      - { key: weather, label: 适用天气, group: 适用场景, type: text, filter: false, compare: true, order: 240 }
+      - { key: pocketCountEvidence, label: 口袋数量来源说明, group: 规格与来源, type: text, filter: false, compare: false, order: 250 }
+      - { key: officialPrice, label: 官方地区参考价（原币）, group: 价格与来源, type: text, filter: false, compare: false, order: 801 }
+      - { key: priceCheckedAt, label: 价格核查日期, group: 价格与来源, type: text, filter: false, compare: false, order: 802 }
+      - { key: priceMarket, label: 报价地区, group: 价格与来源, type: text, filter: false, compare: false, order: 803 }
+      - { key: priceSource, label: 价格来源, group: 价格与来源, type: text, filter: false, compare: false, order: 804 }
+      - { key: priceStatus, label: 价格核验说明, group: 价格与来源, type: text, filter: false, compare: false, order: 805 }
+      - { key: regionalListPrice, label: 地区挂牌价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 910 }
+      - { key: regionalSalePrice, label: 地区促销价（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 911 }
+      - { key: waterproofEvidence, label: 防水数据来源与冲突（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 912 }
+      - { key: chinaOfficialStoreObservedListPrice, label: 中国官方店挂牌价快照（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 913 }
+      - { key: chinaOfficialStoreObservedSalePrice, label: 中国官方店促销价快照（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 914 }
+      - { key: chinaOfferPeriod, label: 中国活动时间（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 915 }
+      - { key: chinaOfferMetadataConflict, label: 中国活动价元数据冲突（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 916 }
+      - { key: regionalPriceSource, label: 地区价格来源（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 917 }
+      - { key: recommendedUse, label: 品牌推荐用途, group: 适用场景, type: text, filter: false, compare: true, order: 250 }
+      - { key: insulationType, label: 填充结构, group: 保暖与舒适, type: text, filter: false, compare: true, order: 251 }
+      - { key: sizeEvidence, label: 尺码证据与限制（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 918 }
+      - { key: imageEvidence, label: 图片来源与展示授权（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 919 }
+      - { key: fingerType, label: 手套指型, group: 款式与结构, type: text, filter: false, compare: true, order: 252 }
+      - { key: membraneLabel, label: 膜材标注, group: 防护性能, type: text, filter: false, compare: true, order: 253 }
+      - { key: sizeChartScope, label: 尺码表适用范围与限制, group: 选购参考, type: text, filter: false, compare: false, display: false, order: 254 }
+      - { key: retailerSizeEvidence, label: 零售商尺码证据与限制（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 920 }
+
+- slug: ski-protection
+  name: 滑雪护具
+  parent: skiing
+  sort_order: 50
+  spec_schema:
+    fields:
+      - { key: protectorType, label: 护具类型, group: 防护, type: enum, options: [{ value: back-vest, label: 背心式护背 }, { value: helmet, label: 滑雪头盔 }], filter: multi, compare: true, order: 10 }
+      - { key: protectionStandard, label: 防护标准, group: 防护, type: text, filter: false, compare: true, order: 20 }
+      - { key: protectionLevel, label: 防护等级, group: 防护, type: enum, options: [{ value: level-1, label: Level 1 }], filter: multi, compare: true, order: 30 }
+      - { key: protectionClass, label: 防护类别, group: 防护, type: enum, options: [{ value: class-a, label: Class A }, { value: class-b, label: Class B }], filter: multi, compare: true, order: 35 }
+      - { key: coverage, label: 防护范围, group: 防护, type: text, filter: false, compare: true, order: 40 }
+      - { key: impactTechnology, label: 冲击防护技术, group: 防护, type: text, filter: false, compare: true, order: 42 }
+      - { key: weightRangeGr, label: 重量, group: 重量, type: text, filter: false, compare: true, order: 45 }
+      - { key: ventilation, label: 通风系统, group: 通风, type: text, filter: false, compare: true, order: 47 }
+      - { key: rescueSystem, label: 搜救反射系统, group: 安全, type: text, filter: false, compare: true, order: 48 }
+      - { key: useSports, label: 适用运动, group: 适用场景, type: 'enum[]', options: [{ value: skiing, label: 双板滑雪 }, { value: snowboard, label: 单板滑雪 }, { value: mtb, label: 山地自行车 }], filter: multi, compare: true, order: 50 }
+      - { key: availableSizes, label: 可选尺码, group: 尺码, type: 'enum[]', options: [XS, S, M, L, XL, 2XL, 6y, 8y, 10y, 12y, 14y], filter: false, compare: false, order: 60 }
+      - key: sizeChart
+        label: 尺码参考
+        group: 尺码
+        type: nested
+        itemSchema:
+          size: { type: text, label: 尺码 }
+          chestRangeCm: { type: text, label: 官方胸围范围（cm） }
+          heightRangeCm: { type: text, label: 身高参考范围（cm） }
+          headCircumferenceCm: { type: text, label: 头围范围（cm） }
+          sourceNote: { type: text, label: 来源说明 }
+        filter: false
+        compare: false
+        order: 70
+      - { key: fitAdvice, label: 版型建议, group: 尺码, type: text, filter: false, compare: false, order: 80 }
+      - { key: jacketCompatibility, label: 外套兼容性, group: 兼容性, type: text, filter: false, compare: true, order: 90 }
+      - { key: attachment, label: 固定方式, group: 结构, type: text, filter: false, compare: true, order: 100 }
+      - { key: materials, label: 材料, group: 结构, type: text, filter: false, compare: false, order: 110 }
+      - { key: helmetSafetyGuidance, label: 头盔安全与使用提示, group: 使用, type: text, filter: false, compare: false, order: 115 }
+      - { key: styleCode, label: 官方货号, group: 来源, type: text, filter: false, compare: false, order: 120 }
+      - { key: seasonEvidence, label: 雪季依据, group: 来源, type: text, filter: false, compare: false, order: 130 }
+      - { key: priceCheckedAt, label: 价格核查日期, group: 价格与来源, type: text, filter: false, compare: false, order: 801 }
+      - { key: priceMarket, label: 报价地区, group: 价格与来源, type: text, filter: false, compare: false, order: 802 }
+      - { key: priceSource, label: 价格来源, group: 价格与来源, type: text, filter: false, compare: false, order: 803 }
+      - { key: priceStatus, label: 价格核验说明, group: 价格与来源, type: text, filter: false, compare: false, order: 804 }
+      - { key: intendedUse, label: 品牌定位用途, group: 适用场景, type: text, filter: false, compare: true, order: 121 }
+      - { key: sizeEvidence, label: 尺码证据与限制（审计）, group: 来源审计, type: text, filter: false, compare: false, display: false, order: 910 }
 
 - slug: diving
   name: 潜水

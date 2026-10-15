@@ -1,12 +1,12 @@
 {
   "brand": "COSONE",
   "model": "Step On 快穿固定器",
-  "retrievedAt": "2026-10-10",
+  "retrievedAt": "2026-10-15",
   "seedFile": "data/snowboard-binding/cosone-step-on-binding-2026.yaml",
   "source": {
     "officialHomepage": "https://www.cos1.net/",
     "evidence": "The site homepage lists COSONE Step On 快穿固定器 as a current featured product.",
-    "imageProbe": "The homepage's product image resolves to https://www.cos1.net/images/product-2.jpg, which returned HTTP 404 when checked on 2026-10-10."
+    "imageProbe": "On 2026-10-15, the official homepage still labels its featured binding card COSONE 快穿固定器 and points to https://www.cos1.net/images/product-2.jpg; a fresh HTTP HEAD request returned 404. The homepage markup does not expose a separate product detail link or a model-specific alternate image."
   },
   "decision": "Keep this record as draft and do not substitute a Burton or unrelated COSONE binding photo. Restore publication only after a matching product cover can be verified.",
   "imageRights": "No usable matching product image was available to assess."

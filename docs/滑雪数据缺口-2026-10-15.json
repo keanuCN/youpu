@@ -1,0 +1,569 @@
+{
+  "snapshotDate": "2026-10-15",
+  "scope": "data/ 下单板、固定器、雪鞋、双板、滑雪服装和滑雪护具种子文件的数量及结构化尺码表字段覆盖；首张封面图 HTTP 状态核验见 data/raw/cover-image-http-audit-2026-10-15.json。图片可访问不代表展示授权，价格、雪季和逐项规格来源也仍需审计。",
+  "seedFiles": {
+    "total": 240,
+    "published": 234,
+    "draft": 6
+  },
+  "categories": {
+    "snowboard": {
+      "total": 77,
+      "published": 76,
+      "draft": 1,
+      "withTable": 77,
+      "rows": 587,
+      "missingTable": []
+    },
+    "snowboard-binding": {
+      "total": 63,
+      "published": 62,
+      "draft": 1,
+      "withTable": 62,
+      "rows": 199,
+      "missingTable": ["cosone-step-on-binding-2026.yaml"]
+    },
+    "snowboard-boot": {
+      "total": 40,
+      "published": 40,
+      "draft": 0,
+      "withTable": 40,
+      "rows": 704,
+      "missingTable": []
+    },
+    "skis": {
+      "total": 44,
+      "published": 42,
+      "draft": 2,
+      "withTable": 44,
+      "rows": 199,
+      "missingTable": [],
+      "partialTable": [
+        {
+          "file": "head-easy-joy-r-2026.yaml",
+          "knownSizes": ["143 cm（零售商补充）", "148 cm（仅半径）", "153 cm（仅半径）", "158 cm", "163 cm"],
+          "availableSizes": ["143 cm", "148 cm", "153 cm", "158 cm", "163 cm"],
+          "missingSizes": [],
+          "partialSizes": ["143 cm（零售商补充，未显示 HEAD article）", "148 cm", "153 cm"],
+          "reason": "HEAD 25/26 官方手册给 163 cm 参考几何；同货号来源补得 158 cm 完整板型与半径，韩国精确货号零售商另给 148/153 cm 半径但未列板型三围。Snowleader 2026 同名 Easy Joy R + Joy 9 GW SLR 逐码表列出 143 cm 117/70/103 mm、R9.6，且 163 cm 参考几何与 HEAD 手册一致；但页面没有显示 HEAD article number，因此作为专业零售商补充值录入，保留映射限制，不标作原厂逐码数据。波兰精确组合货号页面无几何且 163 cm 半径与官方值冲突。"
+        },
+        {
+          "file": "head-shape-v2-r-2026.yaml",
+          "knownSizes": ["156 cm", "163 cm", "170 cm"],
+          "availableSizes": ["142 cm", "149 cm", "156 cm", "163 cm", "170 cm", "177 cm"],
+          "missingSizes": ["142 cm", "149 cm", "177 cm"],
+          "reason": "HEAD 25/26 Workbook 只给 170 cm 参考几何；156/163 cm 为未标雪季的精确货号零售规格补充。170 cm 的官方手册半径存在 12.4/12.5 m 冲突。"
+        },
+        {
+          "file": "head-easy-joy-r-2027.yaml",
+          "knownSizes": ["163 cm"],
+          "availableSizes": ["143 cm", "148 cm", "153 cm", "158 cm", "163 cm"],
+          "missingSizes": ["143 cm", "148 cm", "153 cm", "158 cm"],
+          "partialSizes": [],
+          "reason": "HEAD 26/27 目录确认货号 316486 及五个长度；Bottero 同季 316486 262 零售页只提供 163 cm 参考几何。HEAD Russia 地区页有 31655507（Easy Joy，非 316486 EASY JOY R）完整尺寸表，没有货号映射，故不移植；Viglietti 的 316486+100952 组合页当前仅显示 163 cm，也没有逐码几何。HC5 标注 2026 的页面在 163 cm 给出 R13.1，与本季精确参考 R13.3 冲突。143/148/153/158 cm 仍不外推。"
+        }
+      ]
+    },
+    "skiing-apparel": {
+      "total": 10,
+      "published": 8,
+      "draft": 2,
+      "withProductSizeChart": 3,
+      "productSizeChartRows": 9,
+      "withGarmentMeasurementChart": 0,
+      "rows": 0,
+      "missingMeasurementChart": [
+        "decathlon-snb-500-ziprotect-jacket-2026.yaml",
+        "kailas-bm45-gtx-ski-pants-2026.yaml",
+        "kailas-bm45-max-mens-down-jacket-100g-2026.yaml",
+        "kailas-bm45-max-mens-down-jacket-95g-2026.yaml",
+        "kailas-bm45-max-womens-down-jacket-95g-2026.yaml",
+        "kailas-bm45-pro-ski-bibs-unisex-2026.yaml",
+        "kailas-bm45-plus-womens-insulated-ski-jacket-2026.yaml"
+      ],
+      "withoutProductSizeChart": [
+        "decathlon-snb-500-ziprotect-jacket-2026.yaml",
+        "kailas-bm45-gtx-ski-pants-2026.yaml",
+        "kailas-bm45-max-mens-down-jacket-100g-2026.yaml",
+        "kailas-bm45-max-mens-down-jacket-95g-2026.yaml",
+        "kailas-bm45-max-womens-down-jacket-95g-2026.yaml",
+        "kailas-bm45-pro-ski-bibs-unisex-2026.yaml",
+        "kailas-bm45-plus-womens-insulated-ski-jacket-2026.yaml"
+      ]
+    },
+    "ski-protection": {
+      "total": 6,
+      "published": 6,
+      "draft": 0,
+      "withSizeChart": 6,
+      "rows": 26,
+      "sizeChartWarnings": [
+        "DBCK 500 M 官方胸围区间 83–99 cm 与 S、L 重叠，原样记录并待品牌澄清。",
+        "DBCK 900 M 官方胸围区间 83–99 cm 与 S、L 重叠；商品卖点称四个尺码但选择器与尺码表列五码。",
+        "DBCK 500 女款卖点称四个尺码，但选择器与尺码表列五码。",
+        "DBCK 500 Junior 卖点称四个尺码，但选择器与尺码表列五档年龄尺码。"
+      ],
+      "protectionWarnings": [
+        "DBCK 500 M/W/Junior 商品描述区写 EN 1621-2 Level 1，Testing 区写 EN 1621-1 Level 1；M/W 的 2025 符合性声明列 VPSki-009 与 VêtProVTT-008，但未说明与 EN 标准的映射。三款均不展示单一等级，Junior 尚未找到对应声明。",
+        "DBCK 900 M 商品页的标准段、Testing 段和使用说明对 EN/等级描述不一致；符合性声明另列 VPSki-009 与 VêtProVTT-008，等级不作单一结论。"
+      ],
+      "imageWarnings": [
+        "DBCK 500 M 官方图库 22 张中 21 张可访问并已录入；第 20 张 HTTP 410。W 官方图库标示 8 张，现录入并核验 7 张；Junior 标示 7 张，现录入并核验 6 张，剩余各 1 张图链未从页面提取。三款展示授权均待核。"
+      ]
+    }
+  },
+  "closedEvidence": {
+    "burton-step-on-womens-boot-coverage": {
+      "checkedAt": "2026-10-15",
+      "evidenceRecord": "data/raw/snowboard-boot/burton-womens-step-on-2027-audit-2026-10-15.json",
+      "seeds": ["data/snowboard-boot/burton-felix-step-on-womens-2027.yaml", "data/snowboard-boot/burton-highshot-step-on-womens-2027.yaml", "data/snowboard-boot/burton-highshot-x-step-on-womens-2027.yaml"],
+      "confirmed": "已新增 Burton 女款 Step On Felix、Highshot、Highshot X 2027 三款，录入型号专属尺码选项、官方女款转换表及与 Burton/Nitro 女款 Step On S/M/L 的逐码映射；Nitro 官方指南明确其固定器兼容所有 Step On 雪鞋并要求按性别和尺码配套。",
+      "remainingLimits": ["中国官方售价/成交价未核实", "实时尺码库存不由尺码选择器推断", "商品图片本站展示授权待核"],
+      "decision": "不再把 Burton 女款 Step On 雪鞋型号与尺码表列为数据缺口；跨品牌仍需依官方性别/尺码表并实扣检查；价格为地区折算参考，不当作中国价格。"
+    },
+    "nitro-step-on-womens-boot-coverage": {
+      "checkedAt": "2026-10-15",
+      "evidenceRecord": "data/raw/snowboard-boot/nitro-step-on-boots-2027-audit-2026-10-15.json",
+      "seeds": ["data/snowboard-boot/nitro-fate-step-on-tls-womens-2027.yaml", "data/snowboard-boot/nitro-monarch-step-on-tls-womens-2027.yaml", "data/snowboard-boot/nitro-scala-step-on-boa-womens-2027.yaml", "data/snowboard-boot/nitro-sentinel-step-on-boa-2027.yaml", "data/snowboard-boot/nitro-team-step-on-tls-2027.yaml"],
+      "confirmed": "Nitro 官方 2026/27 Step On 雪鞋目录列出女款 Fate、Monarch、Scala 和男款 Sentinel、Team；种子录入型号页评分、结构、尺码选项、EUR 官方挂牌折合人民币参考与官方图。按 Nitro 指南加入男女款固定器尺码映射。",
+      "remainingLimits": ["Monarch 页面尺码选项与 Size Info 的范围不完全一致，已标注并保留待核", "中国售价与实时库存未核实", "图片展示授权待核", "各款绝对楦宽和脚背容积未公开"],
+      "decision": "已补齐 Nitro Step On 女款三型和此前缺少的男款 Sentinel、Team；不从页面尺码选择器推断库存，Monarch 尺码冲突明确披露。"
+    }
+  },
+  "openEvidenceGaps": {
+    "burton-custom-camber-2027-china-price": {
+      "checkedAt": "2026-10-15",
+      "productId": "106881",
+      "variantCode": "27WIN-106881",
+      "seed": "data/snowboard/burton-custom-camber-2027.yaml",
+      "evidenceRecord": "data/raw/snowboard/burton-custom-camber-2027-china-price-audit.json",
+      "sizeChartRecheck": {"checkedAt": "2026-10-15", "source": "https://www.burton.com/en-us/products/mens-burton-custom-camber-snowboard-106881", "evidenceRecord": "data/raw/snowboard/burton-custom-camber-2027-size-audit.json", "updated": "10 个尺码的官方推荐体重已补入种子；此项与中国价格缺口无关。"},
+        "chinaListingLead": {"source": "https://www.jd.com/xinghao/1318ae1d7a8b48a47346.html?catID=17346&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_totalsales15_desc", "indexedTitle": "BURTON伯顿官方26-27雪季新品男士CUSTOM 滑雪单板106881/107071 106881AI66RG-Camber板型 156cm", "status": "已定位两个 26/27 156 cm 商品 ID，但详情页不可读取价格、卖家、库存或变体映射"},
+        "jdIndexedDetailPages": [
+          {"itemId": "10229459878147", "source": "https://item.jd.com/10229459878147.html", "indexedTitle": "BURTON伯顿官方26-27雪季新品男士CUSTOM 滑雪单板106881/107071 106881AI66RG-Camber板型 156cm"},
+          {"itemId": "10233984562828", "source": "https://item.jd.com/10233984562828.html", "indexedTitle": "BURTON 伯顿27雪季新款单板滑雪板全能板Custom男款106881 FADED 156cm"}
+        ],
+      "excludedOlderSeasonLead": {"source": "https://www.smzdm.com/p/158826628/", "priceCNY": 6798, "season": "25/26", "variantCode": "106881A97DRG", "decision": "雪季和色款代码不匹配 27WIN-106881，不映射至 2026/27。"},
+      "currentPriceReference": {"market": "Japan", "source": "https://jp.burton.com/ja-jp/products/mens-burton-custom-camber-snowboard-106881", "convertedCNY": 4553.2, "status": "日本官方店地区折算参考，不是中国售价"},
+        "missingEvidence": ["可从原始天猫商品页读取、并且明确对应 2026/27 / 27WIN-106881 Camber 的中国人民币挂牌或成交价", "京东商品详情中可读取的卖家、可售尺码、当前价格及与 27WIN-106881 的变体关联"],
+      "japanRetailerCrossCheck": {"source": "https://store.shopping.yahoo.co.jp/masanagoya/w26jp-106881b.html", "store": "masa surf and snow（店铺自述为 BURTON 日本正規販売店）", "variant": "26-27 Faded 27WIN-106881", "listedJPY": 107800, "status": "日本地区挂牌，与日本官方价一致；页面含过期库存/配送快照，不推断实时库存"},
+      "japanRetailerCurrentRecheck20261015": {"source": "https://store.shopping.yahoo.co.jp/move-select/106881ai66rg.html", "store": "MOVE Select / Yahoo! Shopping Japan", "variant": "26-27 Faded / 106881AI66RG / JAN 9010884397401", "listedJPY": 107800, "availabilitySnapshot": {"lowStock": ["150", "156"], "outOfStock": ["154", "158", "162"]}, "sellerClaim": "页面自述正規代理店商品，授权未独立核实", "status": "日本零售价与日本官方挂牌一致；库存仅是 2026-10-15 页面快照，不代表中国价格或后续可售状态"},
+      "domesticOfficialStorePriceCandidate20261015": {"source": "https://tao.hooos.com/goods_Pw4Rbg3h3t68d5pRXQCvvqCPt6-k5v00GfRj6NR48yHp.html", "aggregatorDisplayedCNY": 5998, "storeClaim": "天猫 BURTON 官方旗舰店（虎窝淘聚合页自述，未独立验证）", "identityIssue": "标题同时列 106881 Camber 与 107071 Flying V，未展示 27WIN-106881 或 106881AI66RG 的款色/尺码选择；原始天猫详情无法取得。", "decision": "国内人民币挂牌候选，仅作线索，不覆盖日本地区折算主参考 CNY 4,553.20。"},
+      "decision": "保留日本官方店 JPY 107,800 / CNY 4,553.20 地区折算价，并以日本零售页同款同价交叉确认；国内 26/27 索引仍无可读人民币金额，旧季 CNY 6,798 线索排除。"
+    },
+    "burton-step-on-re-flex-womens-2027": {
+      "checkedAt": "2026-10-15",
+      "productId": "172841",
+      "variantCode": "27WIN-172841",
+      "seed": "data/snowboard-binding/burton-step-on-re-flex-womens-2027.yaml",
+      "evidenceRecord": "data/raw/snowboard-binding/burton-step-on-re-flex-womens-2027-japan-price.json",
+      "confirmed": ["美国/日本官方页确认 2027 女款商品及 Re:Flex", "S/M/L 女款 Step On 靴码表及男女系列不可混用警告", "底盘、FLAD、FullBED、定性脚感和保修"],
+      "priceReference": {"market": "Japan", "listedJPY": 42900, "convertedCNY": 1811.99, "status": "日本官方地区折算参考，不是中国售价"},
+      "japanRetailerCrossCheck20261015": {"source": "https://www.murasaki.jp/Form/Product/ProductDetail.aspx?bid=snow&cat=018&pid=n06120101119986&shop=0&vid=n0612010111998690016010", "variant": "26-27 Black / S", "listedJPY": 42900, "preorderArrival": "2026-11 至 2026-12 下旬", "stockInterpretation": "页面显示在库あり并有未来到货/不可取消说明，视为可预订而非现货即时发货", "status": "与日本官方 JPY 42,900 价格交叉一致；不代表中国售价"},
+      "chinaAggregatorPriceLead20261015": {"source": "https://tao.k7dj.com/goods-PajwOPyI3t68d3rx53UvD5UPt6-d8ZBBDF0GKeq3OxhW.html", "listingTitle": "BURTON伯顿官方26-27雪季新品女士 Step On Re:Flex固定器172841", "listedPriceCNY": 2598, "storeClaim": "天猫 BURTON 官方旗舰店（聚合页标注，未独立验证）", "limitations": "非天猫原始详情；未确认颜色/尺码变体价格、店铺身份或结账金额", "decision": "国内人民币候选价，不覆盖日本官方地区折算主参考 CNY 1,811.99。"},
+      "chinaAggregatorSearchRecheck20261015": {"source": "https://tao.k7dj.com/goods-PajwOPyI3t68d3rx53UvD5UPt6-d8ZBBDF0GKeq3OxhW.html", "indexedPriceCNY": 2598, "indexedOriginalPriceCNY": 0, "indexedSalesCount": 10, "previousSalesSnapshot": 12, "indexedStoreClaim": "BURTON官方旗舰店", "indexedSellerRegion": "河北廊坊", "decision": "搜索索引仍显示 CNY 2,598 候选，但原售价为 0 元、销量字段从此前快照 12 变为 10；这些聚合字段不能核验真实折扣、店铺身份、变体价格或结账金额，不提升为已确认中国售价。"},
+      "chinaAggregatorRedirectInspection20261015": {"observedEntry": "购买表单先导向 s.click.taobao.com", "result": "连续 5 次返回 JavaScript 跳转包装页，未到达可读天猫商品详情", "decision": "无法确认原始商品链接或变体结账价；保留 CNY 2,598 为候选，不升级为已确认国内售价。"},
+      "chinaJdVariantIndexRecheck20261015": {"sources": ["https://www.jd.com/brand/1318ae1d7a8b48a47346.html", "https://www.jd.com/jiage/131814a47758d56e2e36.html"], "indexedTitle": "BURTON伯顿官方26-27雪季新品女士 Step On Re:Flex 固定器172841", "observedVariantSku": "1728416FBJRG", "observedSizeSnapshots": ["S", "M"], "priceVisible": false, "decision": "京东索引补充同款 SKU/尺码存在证据，但没有可读人民币金额或库存。"},
+      "missingEvidence": ["天猫原始详情或可核验结账页，确认 CNY 2,598 候选价对应的颜色/尺码与实际价格", "京东精确商品详情的人民币价格和当前可售状态", "商品图前台展示授权", "各颜色尺码的实际库存和结账可售状态"],
+      "decision": "规格已足以发布；日本官方与零售商同价核对仍作为主价格参考。CNY 2,598 天猫聚合候选复查后仍未获得原始详情；搜索索引的原售价 0 元及销量变化不能验证真实优惠、变体价或库存。京东同款 SKU 1728416FBJRG 的 S/M 索引也未提供可核验的人民币结账价和库存。日本零售页仅证明 Black/S 预订条目，不外推其他颜色尺码库存；图片授权仍待核。"
+    },
+    "salomon-qst-106-china-price": {
+      "checkedAt": "2026-10-15",
+      "manufacturerArticle": "L47774500+",
+      "seed": "data/skis/salomon-qst-106-2027.yaml",
+      "evidenceRecord": "data/raw/skis/salomon/qst-106-japan-price-2026-10-15.json",
+      "confirmedRegionalPrices": [
+        {"market": "US", "source": "https://www.salomon.com/en-us/product/qst-106-almond-milk-li8133", "listed": "USD 849.95", "convertedCNY": 5688.48, "configuration": "Skis only"},
+        {"market": "Japan catalogue", "source": "https://www.tanabesports.jp/ts/wp-content/uploads/2026/03/26-27_SALOMON_SKI_user.pdf", "listed": "JPY 132,000 tax included", "convertedCNY": 5575.34},
+        {"market": "Japan retailer snapshot", "source": "https://www.a-golf.net/c/53425/53426/53427/53431/10001-l47774500", "listed": "JPY 112,200 tax included", "convertedCNY": 4739.04, "status": "exact article and season; page has conflicting sale-ended and purchase/size controls"}
+      ],
+      "officialJapanStoreRecheck20261015": {"source": "https://salomon.jp/products/qst-106-almond-milk-l477745", "manufacturerArticle": "L47774500+", "listedPrice": "JPY 132,000 tax included", "configuration": "Skis only", "listedLengthsCm": [157, 165, 173, 181, 189], "availability": "日本官方页显示线上商店不可购买；未确认实体店库存", "evidenceRecord": "data/raw/skis/salomon/qst-106-japan-price-2026-10-15.json"},
+      "japanRetailerModelCrossCheck20261015": {"source": "https://www.websports.co.jp/c/freeski/salomonfreeski/40943", "season": "2026/27", "listedJPY": 112000, "convertedCNY": 4730.59, "configuration": "裸板；含税；预约商品", "listedSizesCm": [165, 173], "manufacturerArticleShown": false, "colorTitle": "BLACK PINK（与官方目录 ALMOND MILK 色名不同）", "geometryCrossCheck": "零售页列出五个长度的三围、半径和单支重量，均与 26/27 Salomon 目录逐码数值一致。", "decision": "补充同型号/雪季的日本零售价格及规格交叉证据；缺少制造商货号与色款映射，不作为 L47774500+ 精确变体价格，也不替代中国人民币价格。页面预约控件和预计到货时间不证明现货。"},
+      "chinaIndexedCandidate20261015": {"source": "https://www.jd.com/jiage/13189ba5301a4731d066.html", "indexedTitle": "萨洛蒙（Salomon）男女通用自由式滑雪板 QST 106宽板腰高性能粉雪高山双板滑雪板 奶白蓝Almond Milk / Race 165m", "itemId": "10235095268777", "detailUrl": "https://item.jd.com/10235095268777.html", "listedLengthCm": 165, "status": "京东索引标题可读；详情页只返回浏览器兼容提示，价格、卖家和库存不可读。标题无厂家货号或雪季。", "decision": "配色文字与官方 ALMOND MILK 接近，但无货号/雪季映射；作为国内候选线索，不录入中国价格。"},
+      "missingEvidence": ["可同时对应 L47774500、2026/27 和当前中国人民币售价的可读取国内商品页", "京东候选商品 ID 10235095268777 的价格、卖家、库存和厂家货号/雪季映射", "有贺园零售页相互矛盾控件对应的真实库存/结账状态"],
+      "decision": "日本价格只作地区折算和挂牌快照；WebSports 新增同型号/雪季候选，但货号及色款映射未证实，不能并入精确 SKU 价格。以上不覆盖美国官方 CNY 5,688.48 主参考，也不把任何日本标价当作中国售价。"
+    },
+    "kailas-bm45-plus-womens-insulated-ski-jacket-2026": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "KG2541241",
+      "seed": "data/skiing-apparel/kailas-bm45-plus-womens-insulated-ski-jacket-2026.yaml",
+      "evidenceRecord": "data/raw/skiing-apparel/kailas-bm45-plus-womens-insulated-ski-jacket-2026-10-15.json",
+      "officialListing": {"source": "https://detail.youzan.com/show/goods?alias=360gu6koswo4rqu&from_source=gbox_seo", "title": "KAILAS凯乐石 女款 BM45 PLUS 夹棉滑雪外套 KG2541241", "priceCNY": 5200, "purchaseEntryShown": true},
+      "retailerVariantLead": {"source": "https://www.jd.com/brand/13180080fb2e44e3fceb.html?brand=%E5%87%AF%E4%B9%90%E7%9F%B3%EF%BC%88KAILAS%EF%BC%89&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_redissale_desc", "indexedVariant": "闪电紫 S", "status": "复查仍只见单个索引标题，不能证明完整尺码、库存或颜色范围。"},
+      "thirdPartyRecheck": {"checkedAt": "2026-10-15", "unmappedAggregator": {"source": "https://www.joom.com/en/products/69882228b28a0e01a548f183", "title": "KAILAS Women's BM45 PLUS GTX 3L Insulated Alpine Freeride Ski Jacket", "sizes": ["S", "M", "L"], "priceEUR": 1028.12, "styleCodeShown": false, "decision": "同产品家族的第三方聚合页未显示 KG2541241，尺码/秋季标签/价格不映射至本种子。"}, "exactStyleCodeForeignCurrencyListing": {"source": "https://mobile.yangkeduo.com/poros/h5?_dr_sku_id=1872649724283&abs_id=208156&ad_cks=1-1BigRC&ad_rcto=YWJY7a6B6ZDBl_k4b5T-SyD7Q9gz61YGop_oqw32nx95ZWjon_kTaKLNj_UiyU8H--qhNdJYtr1_bDXRyk0qLtpa&ads_channel=google_shopping&goods_id=922423037841&order_type=0&page_uid=b971bac98f094ca794aca85ddfba20cb&plsn=aa6919efe32aa37bf70fee57f47e5340&region=SG&sku_id=1872649724283&vst_scene=pdv", "styleCode": "KG2541241", "priceSGD": 983.79, "approximateCNYLabel": "¥5.2K", "decision": "虽然精确货号可见，但地区为新加坡，金额以 SGD 标示，括号内 CNY 只是换算展示，不作为中国人民币售价。"}, "communityClaims": {"source": "https://post.smzdm.com/p/aogvnzv7/", "publishedAt": "2025-11-18", "claims": ["75D GORE-TEX 3L", "28,000 mm", "ApexHeat", "全压胶"], "styleCodeShown": false, "decision": "用户文章未证明这些参数适用于 KG2541241，不作原厂规格。"}, "jdFamilyTitles": {"source": "https://www.jd.com/xinghao/1318ec558a325513af73.html", "decision": "索引含 GTX3L/APEXHEAT 等 BM45 PLUS 家族描述，但标题没有 KG2541241 款号映射。"}},
+      "missingEvidence": ["产品雪季", "完整实际可选尺码和逐码库存", "KG2541241 款号级面料、膜材与保暖规格", "官方商品图的前台展示授权", "购买入口结账可售状态"],
+      "decision": "以 draft 收录品牌微商城精确货号及 CNY 5,200 挂牌；京东单一码标题和未映射款号的聚合/社区来源只作线索；新加坡跨境页虽对应精确货号但以 SGD 报价，括号 CNY 为折算显示，不作国内售价。"
+    },
+    "kailas-gtx-3-finger-ski-gloves-2026": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "KM2562002",
+      "officialStoreListing": "凯乐石微商城列出中性 GTX 防水三指滑雪手套，CNY 1,100，页面提供购买入口。",
+      "evidenceRecord": "data/raw/skiing-apparel/kailas-gtx-3-finger-ski-gloves-2026.json",
+      "seed": "data/skiing-apparel/kailas-gtx-3-finger-ski-gloves-2026.yaml",
+      "jdSizeLeads": [
+        {"size": "S", "color": "玄青黑", "itemId": "100219282833", "sellerLabel": "京东自营", "detailPageReadable": false},
+        {"size": "M", "color": "玄青黑", "itemId": "10193005681710", "sellerLabel": "索引未标明", "detailPageReadable": false}
+      ],
+      "jdRecheck20261015": "重新打开京东精确货号的 S/M 两条商品详情均返回浏览器兼容提示，未读取到人民币价格、库存或完整尺码选项；不据此改写 availableSizes 或标注成交价。",
+      "regionalRetailerSizeLead": {"source": "https://www.momoshop.com.tw/TP/TP0010400/goodsDetail/TP00104000002046", "market": "台湾", "seller": "島野集 ISLE OUTDOOR（第三方）", "styleCode": "KM2562002", "listedSizes": ["S", "M", "L"], "displayedPrice": "TWD 10,372（非中国人民币售价）", "limitation": "页面尺码选项仅为零售商线索，不等于品牌完整尺码/库存确认；页面另出现不一致的 XXS 文案。"},
+      "brandGenericSizeGuide": {"source": "https://kailasgear.com/pages/size-chart-1", "scope": "品牌通用中性手套参考，不是 KM2562002 专属规格", "values": {"S": "掌围 180–198 mm，中指长 78 mm", "M": "掌围 200–213 mm，中指长 82 mm", "L": "掌围 213–230 mm，中指长 93 mm"}},
+      "imageGalleryRecheck20261015": {"source": "https://detail.youzan.com/show/goods?alias=1y92mexqc7inf3x&from_source=gbox_seo", "verifiedImages": 5, "httpStatus": 200, "contentType": "image/jpeg", "rightsStatus": "同款品牌微商城商品图；本站展示授权待核", "evidenceRecord": "data/raw/skiing-apparel/kailas-gtx-3-finger-ski-gloves-2026.json"},
+      "missingEvidence": ["产品雪季", "凯乐石官方确认的 KM2562002 实际尺码范围及其与通用手套表的映射", "GTX 膜材及防水透湿参数", "掌面材质与保暖填充", "购买入口的实际库存", "图片展示授权"],
+      "decision": "仅建草稿，价格记录为品牌微商城页面挂牌 CNY 1,100；录入凯乐石通用中性手套尺码表并明确不是该型号专属数据。京东索引有 S/M 标题，台湾第三方精确货号零售页列出 S/M/L，但都不是品牌完整尺码或库存确认；TWD 10,372 不作为中国售价。页面有疑似混入的 XXS 文案。未由 GTX 商品名推导技术参数。完成型号专属资料核实后再考虑发布。"
+    },
+    "kailas-bm45-taiga-unverified-catalog-candidate": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "KG2631129",
+      "lead": "京东搜索索引出现‘凯乐石 男款 BM45 TAIGA 硬壳羽绒滑雪服’，列颜色雪灰蓝、XS；直接打开列表页时该条目未出现在可读取正文中。",
+      "source": "https://www.jd.com/zuozhe/1318f691f28ac7d51eb0.html",
+      "evidenceRecord": "data/raw/skiing-apparel/kailas-bm45-taiga-lead-2026-10-15.json",
+      "officialSearchRecheck": "按 KG2631129、BM45 TAIGA 及 KAILAS 官方域名组合检索，搜索索引只返回京东列表，未找到 KAILAS 官方商品页或目录；未找到不代表产品不存在。",
+      "seasonConfirmed": false,
+      "missingEvidence": ["品牌官方型号/货号确认", "雪季", "硬壳与羽绒规格", "尺码表", "中国人民币售价和在售状态", "授权图片"],
+      "nextAction": "继续查找 KAILAS 官方目录或官方商城商品链接；若暂时没有，转向其它已有明确原厂页的数据缺口。",
+      "decision": "作为潜在新品型号候选留档，不发布种子记录、不借用其它 BM45 款的参数。取得 KAILAS 官方页或官方目录后再评估是否纳入。"
+    },
+    "kailas-bm45-max-mens-domestic-size-mapping": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "KG2531144",
+      "domesticListingLead": "京东索引出现同款号标题的赤缇红 XXS 与 S 变体；另有精确商品索引标题对应 KG2531144 赤缇红 S（京东商品 ID 10221071731160）。KAILAS 美国官方页列 S/M/L。",
+      "source": "https://www.jd.com/hprm/9987e0e6c63b4dcc8398.html",
+      "jdExactListing": {"productId": "10221071731160", "url": "https://item.jd.com/10221071731160.html", "title": "凯乐石（KAILAS）BM45 MAX羽绒滑雪外套800蓬鹅绒GTX防水男 KG2531144 赤缇红 S", "listingIndex": "https://www.jd.com/jiage/1318f691f28ac7d51eb0.html?catID=17343&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_default", "status": "索引可核实款号、颜色与尺码标题；直达商品页不可读取，未核实价格、卖家和库存"},
+      "officialProductSizeRecheck": {"checkedAt": "2026-10-15", "source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens", "variantSku": "KG253114411497705", "availableSizes": ["S", "M", "L"], "recommendedUse": ["On-piste Skiing", "Extreme Cold Warmth"], "fit": "Athletic Y-Cut", "sizeChartOrGarmentMeasurementsShown": false, "evidenceRecord": "data/raw/skiing-apparel/kailas-bm45-max-mens-95g-size-audit-2026-10-15.json"},
+      "chinaPriceLeadsNotMappedToStyleCode": [{"amountCNY": 6200, "store": "第三方导购页标注 KAILAS 凯乐石男装旗舰店（天猫）", "source": "https://tao.hooos.com/goods_aRXJBpkmtotMY3gpoG8fQzNTjty-rkOPPMub7wMve8ZCy.html", "styleCodeShown": false, "configurationShown": false}, {"amountCNY": 6600, "store": "第三方导购页标注 KAILAS 凯乐石女装旗舰店", "source": "https://tao.hooos.com/tag_%E5%87%AF%E4%B9%90%E7%9F%B3%E8%BD%AF%E5%A3%B3_12.html", "styleCodeShown": false, "configurationShown": false, "indexedDescription": "BM45 MAX 男款 800 蓬羽绒 GTX 防水；所在页面为软壳分类结果，商品原始详情未能读取。"}],
+      "excludedCrossBorderPrice": {"displayed": "S$1.17K（约 ¥6.2K）", "region": "SG", "source": "https://mobile.yangkeduo.com/poros/h5?_dr_sku_id=1872649724283&abs_id=208156&ad_cks=1-1BigRC&ad_rcto=YWJY7a6B6ZDBl_k4b5T-SyD7Q9gz61YGop_oqw32nx95ZWjon_kTaKLNj_UiyU8H--qhNdJYtr1_bDXRyk0qLtpa&ads_channel=google_shopping&goods_id=922423037841&order_type=0&page_uid=b971bac98f094ca794aca85ddfba20cb&plsn=aa6919efe32aa37bf70fee57f47e5340&region=SG&sku_id=1872649724283&vst_scene=pdv", "status": "新加坡区域跨境价格，人民币仅为折算展示，不作为中国人民币挂牌价"},
+      "priceEvidenceRecord": "data/raw/skiing-apparel/kailas-bm45-max-mens-95g-size-audit-2026-10-15.json",
+      "missingEvidence": ["中外尺码映射", "人体围度或成衣尺寸表", "原始天猫商品链接和款号映射", "当前具体尺码库存", "京东精确商品当前人民币价格及卖家"],
+      "decision": "京东索引确认存在款号、颜色与尺码匹配的商品标题，但价格不可读；第三方导购页出现 6200 与 6600 元两条无款号、无配置映射的国内线索，不能据此推断售价区间。拼多多精确款号结果显示 region=SG 且币种为新加坡元，排除为中国人民币价。未将任何线索写成 KG2531144 精确人民币售价；不把 XXS 与海外 S/M/L 换算。"
+    },
+    "k2-maysis-boot-width-comparison": {
+      "checkedAt": "2026-10-15",
+      "regularArticle": "KB261665",
+      "wideArticle": "KB261664",
+      "wideSource": "https://k2snow.com/en-us/p/maysis-wide-mens-snowboard-boots-kb261664?Color=BLACK&Size=8",
+      "officialRelativeDifference": "Maysis Wide 的 liner 与 shell 分别比常规 Maysis 宽 7 mm",
+      "absoluteLastWidthMm": null,
+      "footVolumeData": null,
+      "japanRetailCrossCheck": {"source": "https://store.alpen-group.jp/Form/Product/ProductDetail.aspx?bid=0203&cat=127002&pid=5836395016-0001&shop=0", "modelCode": "KB26166400", "listedPriceJPY": 64900, "convertedCNY": 2741.21, "rateDate": "2026-10-14", "sizesCm": ["25.5", "26.0", "26.5", "27.0", "27.5", "28.0"], "status": "日本零售含税挂牌；页面显示店铺无库存，购买后可能取消。商品标题称 26-27 款，规格文字另称 2026 年款；未将此地区可选尺码写入制造商全球尺码表。"},
+      "historicalLastTaxonomy": {"source": "https://k2sports.a.bigcontent.io/v1/static/F24_K2%20SB_CATALOG", "catalogSeason": "2024/25", "finding": "K2 将 Maysis Wide 列入 Wide Last，并称该 last 基于 E & 1/2 Last、前倾 11°，鞋壳和鞋胆较传统结构宽 7 mm。", "limitation": "是历史目录对 Wide Last 的分类，2027 官方产品页未重新标明 E & 1/2；不等于毫米制绝对楦宽或 2027 尺码级测量。"},
+      "decision": "分别维护常规版和 Wide 版产品；把 7 mm 保留为同系列相对差值，并补入日本地区参考挂牌价与零售尺码选项。K2 未发布毫米制绝对鞋楦宽度或脚背容积；历史 E & 1/2 分类不冒充 2027 尺码级尺寸，不延伸到跨品牌比较或个体适配保证。"
+    },
+    "burton-photon-boa-2027-wide-fit": {
+      "checkedAt": "2026-10-15",
+      "articleNumber": "150861",
+      "officialOptions": ["Regular", "Wide"],
+      "official2027WideVariantCrossCheck": {"source": "https://jp.burton.com/en-jp/products/mens-burton-photon-boa-snowboard-boots-150861?dwvar_W26JP-150861_variationColor=K94&dwvar_W26JP-150861_variationSize=015", "variantCode": "27WIN-150861", "color": "Forest Moss", "confirmedOption": "Wide", "evidenceRecord": "data/raw/snowboard-boot/burton-photon-boa-2027-width-audit-2026-10-15.json"},
+      "brandGuideSource": "https://www.burton.com/en-au/blogs/the-burton-blog/wide-fit-snowboard-boots",
+      "officialProductPageRecheck": "Burton 美国 2027 商品页确认货号 150861、款号代码 27WIN-150861、标价 USD 479.95；所显示 Nightfall / Deep Emerald 颜色中 Wide 标为缺货，Regular 下部分尺码也缺货。库存是当前颜色/地区/页面时点快照，尺码转换表不代表在库。",
+      "guideSays": "Burton 的宽版使用同尺码常规外壳，宽度空间来自前掌/中足处的弹性鞋胆面板；建议测量、试穿并检查锁跟，EE 或更宽街鞋及持续挤压、热点、麻木/发冷可作为尝试宽版的信号。",
+      "missingEvidence": ["Photon 2027 专属鞋楦毫米宽度", "Photon 2027 专属脚背容积"],
+      "evidenceRecord": "data/raw/snowboard-boot/burton-photon-boa-2027-width-audit-2026-10-15.json",
+      "decision": "2027 日本官方商品页按色款代码 27WIN-150861 确认 Wide 选项；Burton 官方宽版指南称所有标注 Wide 的 Burton 雪鞋使用同尺码 Regular 外壳，并在前掌/中足连接处采用弹性氯丁橡胶鞋胆面板。将其记录为品牌通用规则对本款变体的适用说明，不冒充 Photon 专属拆解或测量；鞋楦毫米宽度与脚背容积仍未知。"
+    },
+    "burton-photon-boa-2027-china-retail-variant-price": {
+      "checkedAt": "2026-10-15",
+      "articleNumber": "150861",
+      "jdSearchSource": "https://www.jd.com/brand/1318727c33f31f325bd1.html",
+      "indexedVariantLeads": [
+        {"sku": "15086109400", "sizes": ["40.5", "41", "42"], "seasonShown": false},
+        {"sku": "1508616E7MWD", "size": "40", "seasonShown": "26/27"}
+      ],
+      "detailPageCheck": "京东商品页返回浏览器兼容提示，价格、卖家、商品详情及库存不可读取。",
+      "latestExactListingCheck": {
+        "source": "https://www.jd.com/jiage/1318ae1d7a8b48a47346.html",
+        "title": "BURTON伯顿官方26-27雪季新品男士 PHOTON BOA 滑雪鞋缓震150861 1508616E7MWD 40",
+        "sku": "1508616E7MWD",
+        "size": "40",
+        "season": "26/27",
+        "directProductUrl": "https://item.jd.com/10230218419540.html",
+        "directPageResult": "仅返回浏览器兼容提示；售价、卖家和库存不可读取。"
+      },
+  "indexedVariantRecheck20261015": {
+    "sources": ["https://www.jd.com/brand/13181b37c6a7208bfadb.html?catID=17348&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_redissale_desc", "https://www.jd.com/jiage/1318e90a75d8a7480c0a.html", "https://www.jd.com/xinghao/1318ae1d7a8b48a47346.html?catID=17348&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_totalsales15_desc"],
+    "variantSku": "1508616E7MWD",
+    "seasonTitle": "26-27",
+    "indexedSizeLabels": ["40", "41", "41.5", "42", "42.5", "43.5"],
+    "limitation": "仅为索引标题中的尺码文字；未读取商品变体、价格或实时库存，不换算成 Mondo。"
+  },
+      "japanWideRetailVariantRecheck": {
+        "source": "https://store.shopping.yahoo.co.jp/tamaya-group/rc-it51a1weiery-oycr.html",
+        "crossCheckSource": "https://shop.a-bony.com/products/rc_it51a1weiery_hyau",
+        "merchant": "TAMAYA-GROUP Yahoo!店 / A-BONY BURTON 正规取扱店",
+        "season": "2026/27",
+        "variant": "Photon BOA Wide / Chinchilla Gray / 150861",
+        "listedPriceJPY": 69300,
+        "listedSizesMondoCm": [25, 25.5, 26, 26.5, 27, 27.5, 28, 28.5, 29],
+        "availabilitySnapshot": {"26": "残量较少", "26.5": "缺货", "27": "残量较少", "27.5": "残量较少", "29": "缺货"},
+        "decision": "日本地区精确 Wide 变体零售快照；不作为中国售价、不覆盖 Burton 全球尺码表，库存随时间变化。"
+      },
+      "chinaModelPriceReference": {"amountCNY": 3998, "merchant": "SPADERS 黑桃滑雪俱乐部微信认证店铺", "seasonTitle": "26/27 BURTON 雪鞋 PHOTON BOA BLACK", "skuAndSizeMapped": false},
+      "evidenceRecord": "data/raw/snowboard-boot/burton-photon-boa-2027-japan-price.json",
+      "decision": "保留 3998 元为 26/27 型号级中国零售挂牌参考，不映射到京东检索出的具体尺码/SKU；具体变体价格和可售状态待核。"
+    },
+    "nitro-team-tls-wide-2027-fit": {
+      "checkedAt": "2026-10-15",
+      "regularSku": "13BT11008",
+      "wideSku": "13BT11007",
+      "officialSources": ["https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-boots-1", "https://www.nitrosnowboards.com/collections/boots-26-27/products/team-tls-wide-boots-1", "https://www.nitrosnowboards.com/de/collections/all-26-27/products/team-tls-wide-boots-1"],
+      "confirmed": "2027 两个官方商品页确认常规版/宽版产品；Nitro 德国官方宽版页另称 Wide 版提供比标准版宽 4 mm 的贴合，但未定义测量部位或方法。",
+      "missingEvidence": ["逐尺码鞋楦毫米值", "4 mm 贴合描述对应的测量部位、方法及是否随尺码变化", "脚背容积数据"],
+      "evidenceRecord": "data/raw/snowboard-boot/nitro-team-tls-wide-2027-fit-audit-2026-10-15.json",
+      "decision": "记录官方 4 mm 相对贴合声明，同时注明口径未定义；不把它当成逐码鞋楦、鞋壳或鞋胆实测宽度。尺码范围是商品尺码范围，不代表当前库存。"
+    },
+    "salomon-dialogue-dual-boa-wide-2027-fit": {
+      "checkedAt": "2026-10-15",
+      "regularArticleRef": "L49277200",
+      "wideArticleRef": "L45448100",
+      "manufacturerEvidence": "常规商品页标注 Regular；Wide 商品页标注 Wide，称其解剖结构适应宽脚。两款官方页面均列 US 男 7–13.5（半码档），中等硬度、All-Mountain/Freestyle、Intermediate/Advanced/Expert。Salomon FW2026/27 官方日本目录按货号列黑色 Wide 款 L45448100，Mondopoint 25–30.5 cm；普通颜色为 25–29.5 cm。",
+      "officialCatalogCrossCheck": {"landingPage": "https://salomon.jp/pages/snowboard-catalog", "pdf": "https://cdn.shopify.com/s/files/1/0673/9981/1381/files/SNOWBOARD_SEASON_CATALOG_FW2026-27_BOOTS.pdf?v=1768810119", "wideVariant": {"articleRef": "L45448100", "color": "Black", "mondopointCm": "25–30.5"}, "regularColorRangeMondopointCm": "25–29.5", "japanSuggestedPriceJPY": {"beforeTax": 59000, "taxIncluded": 64900}, "limitation": "目录尺码范围及日本建议价不证明实时库存、中国售价或鞋楦毫米差。"},
+      "footWidthGuide": "Salomon 尺码指南以 >107 mm 描述宽脚并建议优先选择可用 Wide 款；该数值是脚宽测量，不是鞋楦宽。页面筛选为女款单板雪鞋，故不作为 Dialogue 男款的型号阈值或适配承诺。",
+      "missingEvidence": ["逐尺码鞋楦宽度", "Regular 与 Wide 的毫米差", "脚背容积"],
+      "evidenceRecord": "data/raw/snowboard-boot/salomon-dialogue-dual-boa-wide-2027-fit-audit-2026-10-15.json",
+      "decision": "分别保留官方 Regular/Wide 商品，并记录目录对 Wide 黑色款的单独尺码范围及日本建议价；楦宽毫米差、逐码宽度和脚背容积仍未知。脚宽筛选值不是靴楦数据。"
+    },
+    "nitro-venture-pro-tls-wide-2027": {
+      "checkedAt": "2026-10-15",
+      "officialSku": "848712-001",
+      "sizeRange": "US 男 7-14 / Mondopoint 25-32 cm",
+      "manufacturerFitStatement": "Venture Pro Wide 在前掌增加空间，保留支撑感、全山地响应与耐用性。",
+      "missingEvidence": ["逐尺码楦宽", "4 mm 声明对应的具体测量部位", "鞋壳与鞋胆各自的宽度变化", "脚背容积"],
+      "resolvedComparativeFitEvidence": {"source": "https://www.nitrosnowboards.com/de/collections/all-26-27/products/venture-pro-tls-wide-boots?variant=53154707210571", "variantSku": "848712-001-250", "manufacturerClaim": "Nitro describes the Wide fit as 4 mm wider and says the additional room is in the forefoot.", "limitation": "The manufacturer does not say whether the 4 mm refers to shell, liner, or another fit measurement; not a per-size last measurement."},
+      "officialPrice": {"eur": 399.9, "ecbDate": "2026-10-14", "cnyPerEur": 7.4925, "convertedCny": 2996.25, "market": "Nitro 欧洲官方 2026/27 商品集合页，非中国售价"},
+      "evidenceRecord": "data/raw/snowboard-boot/nitro-venture-pro-tls-wide-2027-audit-2026-10-15.json",
+      "decision": "新增独立 Wide 种子；已记录原厂 4 mm 相对版型宽度及前掌空间说明，但没有足够定义把它当作鞋壳/鞋胆尺寸或逐码楦宽。商品尺码选择器不代表实时库存。"
+    },
+    "nitro-team-pro-binding-2027-fit": {
+      "checkedAt": "2026-10-15",
+      "seed": "data/snowboard-binding/nitro-team-pro-binding-2027.yaml",
+      "evidenceRecord": "data/raw/snowboard-binding/nitro-team-pro-binding-2027-fit-audit-2026-10-15.json",
+      "confirmed": "Nitro 2027 官方页列 S/M、M、L 固定器尺码及各自鞋码建议范围；S/M 与 M 的 US 男 7–10 区间重叠。官方另列响应 8/10、舒适 9/10，建议中级至职业滑手，适用场景包括公园、跳台、技术动作、全山自由式与比赛；这些是品牌评分与定位。",
+      "manufacturerHowToVideoLead": "Nitro 官方 How To 索引列出固定器后跟杯与高背调节视频，但没有可核验的文字尺码规则，也没有 Team Pro 专属重叠码建议。",
+      "missingEvidence": ["重叠尺码下官方推荐选法", "按固定器尺码公布的鞋底承托/绑带余量或其他实装尺寸", "各尺码当前库存"],
+      "decision": "补录品牌评分与用途定位但不当作独立实测；把重叠区间如实保留，不强行生成唯一对应，建议按实际雪鞋实装检查底盘承托、居中、绑带位置和梯带余量。"
+    },
+    "cosone-step-on-binding-2026": {
+      "status": "draft",
+      "officialHomepageCheckedAt": "2026-10-15",
+      "observedPriceCNY": 2599,
+      "productDetailPage": null,
+      "sizeChart": null,
+      "bootInterfaceCertification": null,
+      "homepageImageCheck": {"url": "https://www.cos1.net/images/product-2.jpg", "checkedAt": "2026-10-15", "status": 404, "decision": "官网首页商品卡仍指向失效图片；没有可确认属于此 Step On 型号的替代图，种子保留空图，避免错配其他品牌或 COSONE 其他品类图片。"},
+      "homepageCommerceCheck": {"script": "https://www.cos1.net/js/main.js", "quickView": "仅显示首页卡片已有的名称、短描述、标价和图片", "addToCart": "本地模拟计数，无真实下单请求", "priceMeaning": "CNY 2,599 为首页展示价快照，不确认在售或可下单"},
+      "decision": "官网首页展示商品名与价格，但没有可查型号详情、尺码表或接口认证；不借用 Burton Step On 尺码表，也不推定兼容 Burton/Nitro Step On 雪鞋。"
+    },
+    "head-exact-size-gaps": {
+      "checkedAt": "2026-10-15",
+      "newPerSizeValuesFound": false,
+      "directManufacturerPageAccess": "HEAD 官方 Shape V2 R 商品页（article 316225）索引确认 142/149/156/163/170/177 cm 六档长度，但未提供逐码几何；本轮先前直接打开该官方 URL 曾返回 HTTP 404。其他官方商品页先前返回 HTTP 429。访问错误不证明几何资料不存在。",
+      "newExactArticleChecks": "INTERSPORT 的 HEAD 31622501 页面列六个长度，但只提供 170 cm 参考值；MikeSport 的 316225/142 变体确认缺货且没有逐码几何。10 月 15 日重查 Winter Sports、Trojan Sport 的精确 316225 页面，规格仍只列 170 cm 参考值；Trojan 当前 142 cm 变体为 316225#114517、PR 11 GW，含税价 PLN 1,298.99，按 10 月 14 日 ECB 汇率折合 CNY 2,229.30。该套装配置与 HEAD Workbook 一致，现作为种子的主地区参考价；西班牙 PR 10 GW 报价降为不同配置的旁证。页面显示余量少。",
+      "easyJoyR143": "Snowleader 专业零售商页面对 2026 Easy Joy R + Joy 9 GW SLR 列出 143 cm 几何 117/70/103 mm、R9.6；163 cm 参考行与 HEAD 25/26 article 316485 手册规格一致，但该页未显示 HEAD article number。新增 Winter Sports 新西兰同季商品页明确 article 316485、100952 固定器及 143/148/153/158/163 五档和 163 cm 参考几何，独立确认 143 cm 属于该型号尺码，但不验证 143 cm 专属几何；Snowleader 数值仍作为零售商补充。Trojan Sport 精确组合货号 316485#100952 确认 143 cm 变体但缺货、未列几何；中国市场当前精确货号人民币价仍未核实。",
+      "easyJoyR143ExactArticleLengthCrossCheck": {"source": "https://wintersports.co.nz/products/ws-5454_2025-2026-head-easy-joy-r-skis-women", "season": "2025/26", "articleNumber": "316485", "bindingArticleNumber": "100952", "lengthsCm": [143, 148, 153, 158, 163], "referenceGeometry163": {"sidecutMm": [117, 70, 103], "radiusM": 13.3}, "decision": "确认 143 cm 是 article 316485 可选长度；页面没有 143 cm 专属几何，Snowleader 的 R9.6 仍保留为单一零售商逐码补充，未提升为原厂确认。",
+        "displayedPriceText": "$567.37（页面另显示原价 $810.53；币种未核实）", "priceStatus": "未确认货币，不作汇率换算或价格参考。"},
+      "142cmRegionalBundlePrice": {"merchant": "Trojan Sport（波兰）", "articleAndBinding": "316225#114517（PR 11 GW）", "pricePLN": 1298.99, "convertedCNY": 2229.30, "selectedLengthCm": 142, "source": "https://trojansport.pl/narty-head-shape-v2-r-2026-pr-11-gw.html", "ecbSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html", "isPrimaryRegionalPriceReference": true, "status": "精确货号、PR 11 GW 配置与 142 cm 含税套装价格可核；按 ECB 2026-10-14 折算。不是中国售价或裸板价；该尺码三围/半径仍缺"},
+      "149cmMarketplaceCandidate": {"lengthCm": 149, "ean": "198772204730", "modelTitle": "HEAD Shape V2 + PR 10 - White/Blue", "displayedPriceEUR": 400, "convertedCNY": 2997.00, "seller": "Sports Gràcia（Decathlon marketplace 合作商）", "source": "https://www.decathlon.it/p/mp/head-shape-v2-pr-10-white-blue/74fe0aa2-06f5-4d70-872d-ca7476f5c018/c1c5c4", "crossMarketPriceEUR": {"Italy": 400.00, "Germany": 399.99}, "eanMappingRecheck": "精确检索只找到该合作商跨区域商品页；未找到 HEAD 或其他零售商将此 EAN 映射到 article 316225", "article316225Shown": false, "seasonConfirmed": false, "geometryShown": null, "status": "149 cm EAN/价格候选；未映射到 316225 article 或雪季，不录为本种子售价，也无该尺码几何"},
+      "italianRetailPriceCrossCheck": {"source": "https://www.emmecisport.com/catalogo/173-sci-all-mountain/32556-sci-head-shape-v2-r-con-attacchi-pr-10-gw-316225", "articleNumber": "316225", "binding": "PR 10 GW（固定器货号未列）", "listedEUR": 299, "convertedCNY": 2240.26, "status": "意大利不同固定器配置的地区报价快照；页面无购买/尺码/库存控件，不能判断当前可购；非中国售价"},
+      "excluded149cmShapeV2GeometryCandidate": {"source": "https://www.snow-online.com/ski/head-shape-v2-2025.htmlp", "season": "2025/26", "pageModelLabel": "Head Shape V2", "geometry": {"sidecutMm": [128, 70, 108], "radiusM": 8.9}, "articleNumberShown": false, "decision": "页面未标 R 变体或 article 316225，仅作为相似型号候选；不用于补齐目标型号几何"},
+      "latestRecheckResult": "HEAD 官方商品页确认 316225 有 142/149/156/163/170/177 cm 六档，但没有逐码几何。仍未找到 142、149、177 cm 的精确货号逐码三围或半径；Trojan 的 142 cm 变体仅列 170 cm 参考几何，149 cm marketplace 变体仅有 EAN/价格且 article/雪季未映射，Snow-Online 的 149 cm 8.9 m 候选也未标 R 或 article；177 cm 仅确认有长度选项。",
+      "nextAction": "继续查 HEAD 26/27 与旧季官方原始版面、区域零售 SKU 及尺码接口；只接受货号和配置能匹配的逐码值。"
+    },
+    "decathlon-dbck-500-m-size-chart": {
+      "checkedAt": "2026-10-15",
+      "styleCodes": ["8494020", "8903324"],
+      "issue": "官方 M 胸围范围 83–99 cm 与 S 的 87–93 cm、L 的 99–107 cm 重叠；德国 Ref 8494020 选择器另列 XS，但人体尺码建议表没有 XS 数据。页面尺码数量也不一致：卖点称四码，选择器列六码，建议表列五码。",
+      "decision": "逐字保留厂商建议值并显示待核提示；德国页面确认为 XS–2XL 选择项，但不推断 XS 的胸围或身高。购买时核实 XS 测量建议及 M 范围，并确认实际地区可售尺码。"
+    },
+    "decathlon-dbck-900-m-size-chart": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "8738342",
+      "issue": "官方 M 胸围范围 83–99 cm 与 S/L 重叠；产品卖点称 available in 4 sizes，但尺码选择器和建议表列五个尺码。",
+      "decision": "保留可选尺码与原始建议范围，并分别记录两项官方页面矛盾；不作推测修订。"
+    },
+    "decathlon-snb-500-ziprotect-jacket": {
+      "checkedAt": "2026-10-15",
+      "productId": "8881806",
+      "newEvidence": ["官方精确列明 ZIPROTEC 兼容 DBCK 500 M/DBCK 900 M", "适用所有水平、常规频率、寒冷天气", "宽松长款；10,000 mm 防水、100% 压胶", "迪卡侬英国通用男装 Smartsize 表给出 S–2XL 身体胸围范围，可作为品牌人体尺寸参考；不是本款成衣尺寸", "官方页面列出 15 张商品图，14 张直链通过 HTTP 200 与 image/jpeg 验证并录入种子；另 1 张 CDN 图返回 HTTP 410"],
+      "unresolved": ["5 个安全口袋与规格栏 7 个口袋冲突", "无本夹克 S–2XL 成衣尺寸或身体与衣服的松量数据", "官方商品页未确认雪季", "图片在本站展示的授权仍待核", "未找到商品 ID 8881806 的中国官方渠道人民币报价；现有英镑折算仅为英国地区价格参考", "此前检索到的美国 Adidas/Puma 通用 Smartsize 表不适用；当前英国迪卡侬表只作为一般身体尺寸参考，不作为本款专属选码或成衣数据"],
+      "sizeEvidence": {"source": "https://smartsize-front.decathlon.net/en-GB/11", "scope": "英国迪卡侬通用男装人体胸围参考，不是本款成衣尺寸或款号级试穿数据", "bodyChestCircumferenceCm": {"S": [87, 92], "M": [93, 100], "L": [101, 108], "XL": [109, 118], "2XL": [119, 130]}, "audit": "../data/raw/skiing-apparel/decathlon-snb-500-ziprotect-jacket-size-audit-2026-10-15.json"},
+      "decision": "已结构化录入兼容型号、使用场景、英国品牌通用人体胸围参考和 14 张经 HTTP 验证的官方商品图库图片；余下 1 张返回 HTTP 410 未录入。不把人体尺寸当作衣服尺寸，不推算成衣松量，不统一口袋数量、不据归档年份声称雪季。图链可访问不代表展示授权完成。"
+    },
+    "kailas-bm45-pro-ski-bibs-china-price": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "KG2541314",
+      "jdProductId": "10221071823387",
+      "jdResult": "商品列表精确匹配款号、颜色和 S 码，但没有人民币金额；商品详情不可读。",
+      "jdRecheck20261015": "再次打开京东价格列表页后仍能匹配 KG2541314、闪电紫/山矾白/光电绿与 S 码，但无人民币金额；精确商品详情页仍无法读取。此次复查未改变价格判断。",
+      "excludedLead": "拼多多同款索引为新加坡地区货币展示，非中国人民币挂牌。",
+      "chinaPriceLead": {"amountCNY": 4000, "observedLabel": "4000低价", "store": "第三方导购页标注 KAILAS 凯乐石官方旗舰店（天猫）", "listingTitle": "BM45 PRO 滑雪背带裤 GTX 防风耐磨保暖登山滑雪男裤", "source": "https://tao.hooos.com/goods_a8KNDb7FotM9Gy8ojziQzkUjty-2RmPPyF66p5YPrxIn.html", "styleCodeShown": false, "purchaseJumpStatus": "点击导购购买入口返回 403；精确款号搜索没有找到原始天猫链接", "status": "同系列国内价格线索；尚未确认是否为 KG2541314，页面没有尺码/成交价格明细"},
+      "excludedSingaporePrice": {"displayed": "S$756.55（约 ¥4,000）", "region": "SG", "source": "https://mobile.yangkeduo.com/poros/h5?_dr_sku_id=1900434983682&abs_id=208156&ad_cks=1-4BtLah&ad_rcto=YWL8nt9aqElGEalb1faN0mkHQ9gz61YGop-pGlfyYun_Yi__Nu8b-aIleT8u-eecPn1sJqRi1xY71rc--7yUEK5o&ads_channel=google_shopping&goods_id=953667326938&order_type=0&page_uid=d0c4a66d2fc4479da45505693fc19e51&plsn=348837ef8bc3b3209956a2315641d037&region=SG&sku_id=1900434983682&vst_scene=pdv", "status": "新加坡元跨境价格，人民币仅为折算展示，不作为中国人民币售价"},
+      "missingEvidence": ["原始天猫商品链接", "KG2541314 与该导购商品的款号映射", "具体尺码与当前可售状态", "原始商品页实时报价"],
+      "decision": "第三方导购页将同系列商品标为天猫官方旗舰店并列‘4000低价’，但未显示 KG2541314，且购买跳转失败，因此只记为国内价格线索；拼多多的相近金额来自 SG 新加坡元跨境页，排除为国内售价。精确款号人民币价仍未核实，只保留美国官方 USD 580 折算 CNY 3882.39 作为海外参考。"
+    },
+    "kailas-bm45-full-finger-ski-gloves-china-price": {
+      "checkedAt": "2026-10-15",
+      "officialSku": "KM256200117159706",
+      "domesticModelCode": "KM2562001",
+      "jdOfficialStoreListing": {
+        "productId": "100198547461",
+        "url": "https://item.jd.com/100198547461.html",
+        "store": "KAILAS凯乐石京东自营旗舰店",
+        "indexedVariant": "玄青黑 L",
+        "priceStatus": "详情页价格区域只返回动态占位，无法核实金额。"
+      },
+      "thirdPartyPriceLead": {
+        "amountCNY": 1100,
+        "displayedStock": 4,
+        "source": "https://shop.vafox.com/front/index/product.html?id=82&type=showPro&uniacid=1",
+        "title": "KAILAS凯乐石 中性 GTX 防水五指滑雪手套 KM2562001",
+        "status": "与原厂 SKU 前缀和型号名称匹配的第三方国内挂牌；未核实具体变体和成交价。"
+      },
+    "officialStoreAggregatorOfferSnapshot": {
+      "amountCNY": 990,
+      "listPriceCNY": 1100,
+      "store": "聚合页标注为天猫 KAILAS 凯乐石官方旗舰店",
+      "productCode": "KM2562001",
+      "offerPeriodShown": "2026-10-07 至 2026-10-31",
+      "source": "https://tao.hooos.com/goods_kavWQKZSYtaxo82KARtGG5CPtJ-zzQnnasovJRDw5RsJ.html",
+      "status": "与官方 SKU 前缀匹配的中国市场活动参考；来源是第三方聚合页。正文列 CNY 990，Open Graph/描述元数据列 CNY 1,100；天猫原始商品链接与结账价未核实。"
+    },
+      "evidenceRecord": "data/raw/skiing-apparel/apparel-source-audit-2026-10-14.json",
+    "decision": "补得 KM2562001 在天猫凯乐石官方旗舰店的聚合页活动快照：正文列 CNY 1,100 标价、CNY 990 活动价（显示有效期 2026-10-07 至 2026-10-31），元数据仍列 CNY 1,100，故种子记录 CNY 990–1,100 国内参考范围并保留冲突。该证据并非天猫原始商品页或结账金额；原始链接、具体变体可购状态和成交价仍待核。"
+    },
+    "kailas-bm45-pro-ski-bibs-size-chart": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "KG2541314",
+      "productSource": "https://kailasgear.com/products/kailas-bm45-pro-ski-bibs-unisex",
+      "brandSizeGuideSource": "https://kailasgear.com/pages/size-chart",
+      "confirmed": {"availableSizes": ["S", "M", "L"], "fit": "Relaxed", "recommendedUse": ["Big Mountain", "Ski Mountaineering", "Backcountry Ski"]},
+      "missingMeasurements": ["腰围", "臀围", "大腿围", "裤内长", "裤长"],
+      "brandChartCheck": "KAILAS 通用尺寸指南列出男女鞋、手套与袜子图表，没有服装或裤装测量值；京东精确款号索引只有 S 码商品标题，没有可读取尺寸表。",
+      "evidenceRecord": "data/raw/skiing-apparel/kailas-bm45-pro-ski-bibs-size-audit-2026-10-15.json",
+      "decision": "原厂商品页仅支持尺码选项和宽松版型；不从其他品类通用表推算裤装围度或成衣测量。"
+    },
+    "rossignol-soul-102-weight-unit": {
+      "checkedAt": "2026-10-15",
+      "productCode": "RAPMR03000",
+      "canadianOfficialPriceCrossCheck": {"source": "https://www.rossignol.com/ca-en/soul-102-alpine-skis-RAPMR03000.html", "listedCAD": 899.95, "convertedCNY": 4236.01, "conversionRate": "EUR/CAD 1.5918; EUR/CNY 7.4925, ECB 2026-10-14", "configuration": "ski only, no bindings", "region": "Canada", "status": "official regional price reference only; not a China-market offer; listed size controls do not confirm stock or checkout"},
+      "officialExactCodePage": {"source": "https://www.rossignol.com/es-es/esqu%C3%ADs-alpinos-soul-102-RAPMR03000.html", "tableLabel": "kg/par", "listedWeightsByLengthKg": [1.75, 1.85, 1.95, 2.05, 2.15], "referenceWeight": "2.05 kg / 1/2 Pair (180cm)", "season": "FW 26/27"},
+      "officialRegionalWeightCrossCheck20261016": {"czechOfficialPage": {"source": "https://www.rossignol.com/cz-en/soul-102-alpine-skis-RAPMR03000.html", "tableLabel": "kg/pair", "weightsByLengthKg": [1.8, 1.9, 2.0, 2.1, 2.2], "lengthsCm": [156, 164, 172, 180, 188]}, "austrianOfficialPage": {"source": "https://www.rossignol.com/at-de/soul-102-alpinski-RAPMR03000.html", "referenceLengthCm": 180, "referenceWeight": "2.05 Kg/ 1/2 Pair (180cm)"}, "rei2026_27Listing": {"source": "https://www.rei.com/product/C11605/rossignol-soul-102-skis-20262027", "referenceLengthCm": 180, "weight": "9 lb 7.68 oz per pair (approximately 4.30 kg/pair)"}, "decision": "多区域证据支持官方逐码表的 kg/pair 标签可能存在单只/双只口径问题，但 180 cm 参考值、捷克逐码表和 REI 每双值仍有小幅数值差异。继续不录入重量，等待 Rossignol 对精确货号书面澄清或直接对应的原厂每双重量表。"},
+      "relatedWorkbookCandidate": {"source": "https://irp.cdn-website.com/55899fe3/files/uploaded/CATALOGO_ROSSIGNOL_SPECIALIST_FW2627.pdf", "sourceProvenance": "third-party hosted PDF; publisher identity and authorization as manufacturer material not verified", "model": "SAVAGE FREE (OPEN)", "code": "RAPMR04", "matchingLengthsCm": [156, 164, 172, 180, 188], "matchingSidecutAndRadius": true, "weightsKgPerPair": [3.5, 3.7, 3.9, 4.1, 4.3], "mappingStatus": "dimensions and lengths match Soul 102, but the product name/code differ and no direct SKU equivalence was found"},
+      "decision": "The exact-code Rossignol page internally conflicts: its table labels 1.75–2.15 kg per pair while the 180 cm reference explicitly says 2.05 kg per half pair. A third-party-hosted 2026/27 workbook lists the doubled values as kg/pair for related Savage Free RAPMR04, whose geometry and lengths match but whose publisher and SKU mapping are unverified. Keep weight out of the Soul 102 seed until Rossignol confirms RAPMR03000's per-length pair weight or SKU equivalence.",
+      "evidenceRecord": "data/raw/skis/rossignol/soul-102-2026-27.json"
+    },
+    "rossignol-forza-50-cam-weight": {
+      "checkedAt": "2026-10-15",
+      "articleNumber": "RAOPX01000",
+      "resolved": ["25/26 目录型号 RAOPX01 与官网 SKU 前缀、长度及几何相符", "Rossignol 官方斯洛伐克店列入 26/27，确认延续销售"],
+      "weightConflict": {
+        "usOfficialKgPerPair": [1.5, 1.55, 1.6, 1.7, 1.75],
+        "latestUsPageKgPerPair": [1.5, 1.6, 1.6, 1.7, 1.8],
+        "catalogKgPerPairWithoutBindings": [2.5, 2.6, 2.7, 2.9, 3.0],
+        "lengthsCm": [150, 157, 164, 171, 179]
+      },
+      "latestOfficialPageRecheck": {"checkedAt": "2026-10-15", "source": "https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html", "label": "Ski weight (kg/pair)", "seasonSpecified": false, "decision": "同一精确 SKU 的美站逐码值确为 1.5/1.6/1.6/1.7/1.8 kg/pair；Rossignol 25/26 Workbook 对应 RAOPX01 列 2.5/2.6/2.7/2.9/3.0 kg/pair without bindings。新复核确认冲突仍在，页面本身没有说明重量口径差异。"},
+        "missingEvidence": ["Rossignol 对美国官网逐码重量表 kg/pair 标签的正式修正或解释"],
+        "resolutionEvidence20261016": {"officialCatalog": "Rossignol Slovakia 25/26 Workbook 对 RAOPX01 明确列出 150/157/164/171/179 cm 不含固定器双只重量 2.5/2.6/2.7/2.9/3.0 kg。", "officialHalfPairCrossCheck": "Rossignol Australia 对同家族 RAOPX01 的 171 cm 明确标为 1.7 kg / 1/2 pair。", "retailerCrossCheck": "Sporting Life 对 vendor style RAOPX01 的 171 cm 明确标 1.7 kg per ski；26/27 TociK 套装页列 3.4 kg/pair 与 1.7 kg/1/2 pair，并注明 NX 12 GW 套装。", "decision": "逐码参数采用原厂目录不含固定器双只重量；官网表格 kg/pair 标签判断为单只/半双字段误标，仍保留为待品牌修正文案。"},
+        "decision": "逐码重量缺口已通过官方目录和单只重量旁证解决：种子使用 25/26 裸板双只重量。官方美站仍需修正其 kg/pair 标签，因此保留该文案问题作为开放的来源质量备注。"
+    },
+    "rossignol-forza-40-ca-weight": {
+      "checkedAt": "2026-10-15",
+      "articleNumber": "RAPPX05000",
+      "retailerWeightsPerPairG": [3000, 3100, 3200, 3400, 3500],
+      "officialWeightsKgPerPair": [1.5, 1.6, 1.6, 1.7, 1.8],
+      "lengthsCm": [150, 157, 164, 171, 179],
+      "missingEvidence": ["品牌解释官方重量字段与零售双只重量差异", "零售重量与精确制造商货号映射", "确认零售重量是否含 XPRESS 11 GW 固定器"],
+      "decision": "种子保留 2027 零售商双只重量并逐码提示口径不明；不视为裸板重量或含固定器重量的已核实值。"
+    },
+    "kailas-bm45-max-mens-100g-jacket-china-price": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "KG2531143",
+      "seed": "data/skiing-apparel/kailas-bm45-max-mens-down-jacket-100g-2026.yaml",
+      "evidenceRecord": "data/raw/skiing-apparel/apparel-source-audit-2026-10-14.json",
+      "domesticSearchRecheck": {"queries": ["KG2531143 凯乐石 微商城", "KG2531143 天猫", "KG2531143 京东 价格"], "exactChinaRmbListingFound": false, "decision": "未找到能同时匹配精确货号 KG2531143、100g 加长款及人民币标价的国内商品详情；不把无款号导购候选价格移入种子。"},
+      "regionalReference": {"market": "United States", "listedUSD": 990, "convertedCNY": 6626.84, "status": "海外地区折算参考，不是中国售价"},
+      "missingEvidence": ["可读取且明确对应 KG2531143 100g 加长款的中国人民币挂牌/结账价格", "具体雪季", "衣服成衣尺寸或人体围度表", "图片展示授权"],
+      "decision": "保留美国官方 USD 990 折算参考；中国人民币价仍待核。"
+    },
+    "kailas-bm45-max-mens-100g-jacket-image-rights": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "KG2531143",
+      "seed": "data/skiing-apparel/kailas-bm45-max-mens-down-jacket-100g-2026.yaml",
+      "evidenceRecord": "data/raw/skiing-apparel/apparel-source-audit-2026-10-14.json",
+      "galleryRecheck": {"source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens-1", "distinctImages": 10, "seedImages": 10, "verifiedHttp200JpegUrls": 10},
+      "missingEvidence": ["本站展示授权或可复用许可"],
+      "decision": "官方商品图库已收录 10 张，新增的 9 个 URL 均返回 HTTP 200 / image/jpeg；授权仍待核。"
+    },
+    "kailas-bm45-max-womens-95g-jacket-image-rights": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "KG2531244",
+      "seed": "data/skiing-apparel/kailas-bm45-max-womens-down-jacket-95g-2026.yaml",
+      "evidenceRecord": "data/raw/skiing-apparel/apparel-source-audit-2026-10-14.json",
+      "galleryRecheck": {"source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-womens", "distinctImages": 10, "seedImages": 10, "verifiedHttp200JpegUrls": 10},
+      "chinaPriceRecheck": {"source": "https://detail.youzan.com/show/goods?alias=2g2sri0raz5wrkp&from_source=gbox_seo", "exactStyleCode": "KG2531244", "listedCNY": 6200, "status": "品牌微商城精确款号人民币目录价；实际库存/结账与雪季仍待核"},
+      "missingEvidence": ["本站展示授权或可复用许可", "具体雪季、实际尺码库存及最终结账金额"],
+      "decision": "品牌微商城再次确认 CNY 6,200 挂牌；官方国际站图库已收录 10 张，新增 9 张链接已核验。展示授权仍待确认。"
+    },
+    "kailas-bm45-max-95g-jacket-image-rights": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "KG2531144",
+      "seed": "data/skiing-apparel/kailas-bm45-max-mens-down-jacket-95g-2026.yaml",
+      "evidenceRecord": "data/raw/skiing-apparel/apparel-source-audit-2026-10-14.json",
+      "galleryRecheck": {"source": "https://kailasgear.com/products/kailas-bm45-max-down-ski-jacket-mens", "distinctImages": 10, "seedImages": 10, "verifiedHttp200JpegUrls": 10},
+      "missingEvidence": ["本站展示授权或可复用许可"],
+      "decision": "官方商品图库已收录 10 张并通过图片链接核验；授权仍待确认。"
+    },
+    "kailas-bm45-pro-bibs-image-rights": {
+      "checkedAt": "2026-10-15",
+      "styleCode": "KG2541314",
+      "seed": "data/skiing-apparel/kailas-bm45-pro-ski-bibs-unisex-2026.yaml",
+      "evidenceRecord": "data/raw/skiing-apparel/apparel-source-audit-2026-10-14.json",
+      "galleryRecheck": {"source": "https://kailasgear.com/products/kailas-bm45-pro-ski-bibs-unisex", "distinctImages": 15, "seedImages": 15, "verifiedHttp200JpegUrls": 15},
+      "missingEvidence": ["本站展示授权或可复用许可"],
+      "decision": "官方商品图库已收录 15 张并通过图片链接核验；图库包含多个颜色，授权仍待确认。"
+    },
+    "kailas-bm45-high-cut-ski-socks-image-rights": {
+      "checkedAt": "2026-10-15",
+      "seed": "data/skiing-apparel/kailas-bm45-high-cut-ski-socks-2026.yaml",
+      "evidenceRecord": "data/raw/skiing-apparel/apparel-source-audit-2026-10-14.json",
+      "galleryRecheck": {
+        "source": "https://kailasgear.com/products/kailas-bm45-high-cut-ski-socks-unisex",
+        "distinctImages": 5,
+        "newImageUrlsVerified": 4,
+        "httpStatus": 200,
+        "contentType": "image/jpeg"
+      },
+      "missingEvidence": ["本站展示授权或可复用许可"],
+      "decision": "官方图库已补齐为 5 张且新增链接可访问；授权仍未核实，保留来源标注并继续记录为开放缺口。"
+    },
+    "quechua-fs-300-helmet-2026": {
+      "checkedAt": "2026-10-15",
+      "productId": "8524785",
+      "seed": "data/ski-protection/quechua-fs-300-ski-snowboard-helmet-2026.yaml",
+      "evidenceRecord": "data/raw/ski-protection/quechua-fs-300-helmet-2026-10-15.json",
+      "confirmed": ["EN 1077:2007 Class B", "S/M/L 头围 52–54、55–58、59–62 cm", "M 码 520 g", "ABS 外壳与 EPS 内衬", "英国、德国、西班牙、斯洛伐克、瑞士、加拿大和以色列官方同货号挂牌价"],
+      "priceReferences": [
+        {"market": "United Kingdom", "listedGBP": 39.99, "convertedCNY": 355.07},
+        {"market": "Germany", "listedEUR": 44.99, "convertedCNY": 337.09},
+        {"market": "Spain", "listedEUR": 44.99, "convertedCNY": 337.09},
+        {"market": "Slovakia", "listedEUR": 45.95, "convertedCNY": 344.28},
+        {"market": "Switzerland", "listedCHF": 59.9, "convertedCNY": 481.03},
+        {"market": "Canada", "listedCAD": 59.99, "convertedCNY": 282.37},
+        {"market": "Israel", "listedILS": 229.9, "convertedCNY": 500.11}
+      ],
+      "missingEvidence": ["具体商品雪季/年款", "中国人民币售价", "官方商品图前台展示授权"],
+      "decision": "按官方页规格发布；2026 仅为采集标签。同货号的多地区官方价已交叉记录，仅作地区折算参考，不能替代仍待核的中国人民币售价。图片 URL 已确认可访问，但授权待核。"
+    },
+    "wedze-h-fr-900-mips-helmet-2026": {
+      "checkedAt": "2026-10-15",
+      "productId": "8773682",
+      "seed": "data/ski-protection/wedze-h-fr-900-mips-helmet-2026.yaml",
+      "evidenceRecord": "data/raw/ski-protection/wedze-h-fr-900-mips-helmet-2026-10-15.json",
+      "confirmed": ["EN 1077:2007 Class B", "同款货号英国页列 S/M、比利时页列 S/M/L 及 52–55/55–59/59–62 cm 头围", "M 码 500 g", "MIPS、RECCO 与双模式可调通风", "官方分类为进阶水平/高频使用", "英国官网当前 GBP 99.99（原价 GBP 109.99）"],
+      "sizeCrossCheck": {"ukSource": "https://www.decathlon.co.uk/p/adult-s-ski-helmet-freeride-fr-900-mips-black-and-white/302052/c382c227m8773682", "ukSizes": ["S/52-55 cm", "M/55-59 cm"], "belgiumSource": "https://www.decathlon.be/fr/p/casque-ski-freeride-adulte-fr-900-mips-noir-et-blanc/302052/c382c227m8773682", "belgiumSizes": ["S/52-55 cm", "M/55-59 cm", "L/59-62 cm"], "limitation": "两页同为商品 ID 8773682；仅交叉确认尺码范围，地区库存、价格和配送不可互推。"},
+      "priceReference": {"market": "United Kingdom", "listedGBP": 99.99, "formerGBP": 109.99, "convertedCNY": 887.81, "rateDate": "2026-10-14", "status": "英国促销价汇率折算参考，非中国售价"},
+      "missingEvidence": ["具体商品雪季/年款", "中国人民币售价", "选定尺码当前库存与结账运费", "官方商品图前台展示授权"],
+      "decision": "按英国官方商品页和 FR 900 MIPS 支持页录入；L 码范围由比利时同货号页补证，不能据此推断英国或中国库存。支持页列出 2021–2024 合规声明入口，但不据此推定商品雪季；图像链接可访问，授权待核。"
+    }
+  },
+  "interpretation": "尺码表覆盖数只表示有结构化行；三款 HEAD 双板存在逐尺码缺项，详见 partialTable。六件雪服仍无成衣测量表；凯乐石袜子和手套已录入品牌通用中性尺码参考表，不代表 BM45 款号专属试穿数据。两款 BM45 袜子/手套的官方商品图库已补齐并核验链接，但本站展示授权仍待核实。新增 DBCK 背护尺码表是胸围/身高建议，不是成衣测量；DBCK 500/900 男款的 M 胸围区间存在官方原文冲突，DBCK 900 男款、DBCK 500 女款和 Junior 页面另有尺码数量说法不一致。Rossignol Forza 50 与 Forza 40 逐码重量均存在跨来源口径冲突，已列为待核。QUECHUA FS 300 与 WEDZE H-FR 900 MIPS 头盔已新增官方尺码和防护数据；雪季、中国售价与图片展示授权仍需逐款核实。"
+}

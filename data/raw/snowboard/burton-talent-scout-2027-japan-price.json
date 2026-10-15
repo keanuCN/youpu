@@ -1,0 +1,30 @@
+{
+  "slug": "burton-talent-scout-2027",
+  "model": "Burton Talent Scout Camber",
+  "season": "2026/27",
+  "productId": "132181",
+  "variantCode": "27WIN-132181",
+  "market": "Burton Japan official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 74800,
+    "currency": "JPY",
+    "source": "https://jp.burton.com/en-jp/products/womens-burton-talent-scout-camber-snowboard-132181"
+  },
+  "convertedReference": {
+    "amount": 3159.36,
+    "currency": "CNY",
+    "method": "JPY 74,800 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan official-store reference only; not a mainland China selling price or transaction price.",
+      "The page marked size 152 sold out; inventory can change.",
+      "The page did not explicitly establish tax treatment; shipping, cross-border delivery, and import charges are not included.",
+      "ECB reference rates are informational and are not transaction rates."
+    ]
+  },
+  "observedSizes": ["138", "141", "146", "149", "152"],
+  "soldOutSizes": ["152"],
+  "notes": "Official Burton Japan page explicitly identifies season code 27WIN-132181 and lists JPY 74,800."
+}

@@ -1,0 +1,82 @@
+{
+  "brand": "Jones",
+  "model": "Hovercraft 2.0",
+  "season": "2026-27",
+  "retrievedAt": "2026-10-14",
+  "seedFile": "data/snowboard/jones-hovercraft-2-0-2027.yaml",
+  "representativeSize": "156",
+  "seasonEvidence": {
+    "officialDistributorCatalogIndex": {
+      "url": "https://www.hasco.co.jp/for-dealer/dealersn/",
+      "evidence": "Hasco Enterprises（Jones 日本代理商）的经销商资料页列出 2026-2027 Jones Snowboards PDF catalog、订单表、条件表和产品图包。PDF catalog 大小 103.3 MB；搜索工具无法读取其页面，但可下载并核验官方 XLSX 订单表。"
+    },
+    "officialDistributorOrderSheet": {
+      "url": "https://www.hasco.co.jp/pdf/2627Jones_Standard_ordersheet.xlsx",
+      "sheetTitle": "26-27 JONES SNOWBOARD HARD GOODS",
+      "japaneseItemNumber": "69126021",
+      "sizesCm": [144, 148, 152, 156, 160, 164],
+      "taxInclusiveRetailPriceJPY": 127600,
+      "evidence": "Hasco 官方 26-27 订单表列出 HOVERCRAFT 2.0，品番 69126021，尺码 144/148/152/156/160/164；未税上代 116,000 日元，含税上代 127,600 日元。该品番是日本代理商订单表品番，不等同于 Jones 全球 J.26 型号 SKU，也不等同于 JAN/EAN 码。"
+    },
+    "officialDistributorSeasonListing": {
+      "url": "https://www.hasco.co.jp/jonessnowboards/products_cat/snowboarding/snowboards/",
+      "evidence": "官方代理商 26/27 Snowboards 分类把 Hovercraft 2.0 列为 26/27 商品。官方地区详情页列出 JPY 127,600 和 144/148/152/156/160/164 六个尺码。"
+    },
+    "manufacturerSkuCaveat": {
+      "url": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard?variant=46716348334232",
+      "visibleSku": "J.26.SNU.HVC.XX.144.1",
+      "evidence": "Jones 全球现行商品页继续显示 J.26 SKU，而没有 J.27 SKU。Jones 页尺寸和结构信息与代理商页相符；Hasco 26-27 订单表进一步确认型号、雪季、六个尺码及日本代理商品番 69126021。精确 Jones 全球 SKU 与 26/27 目录 PDF 页面对应关系仍未直接核实。"
+    }
+  },
+  "sources": {
+    "officialDistributorProductPage": {
+      "url": "https://www.hasco.co.jp/jonessnowboards/products_list/hovercraft-2-0-3/",
+      "evidence": "官方代理商当前 26/27 商品页列出六个尺码、单板重量、侧切半径、有效刃长、板腰、板头/板尾宽、taper、参考站距、推荐体重和雪鞋码。板重分别 2.6/2.7/2.9/3.1/3.2/3.3 kg；有效刃长 112.9/116.1/119.3/122.5/125.7/128.9 cm。"
+    },
+    "seasonSpecificOfficialImage": {
+      "url": "https://www.hasco.co.jp/jonessnowboards/wp-content/uploads/sites/6/2026/09/2627Jones_Hovercraft2-0-816x1024.jpg",
+      "evidence": "日本官方代理商 26/27 Hovercraft 2.0 商品页主图链接，文件路径含 2627 与 Hovercraft2-0，替换此前未确认雪季的 J.26 全球页图片。图像复用/出版授权仍待确认。"
+    },
+    "manufacturerProductPage": {
+      "url": "https://www.jonessnowboards.com/en-int/products/hovercraft-20-snowboard?variant=46716348334232",
+      "evidence": "制造商页面核实 Float CamRock、Volume-Shifted Directional、Re-Up Tech Core、Biax Fiberglass、Flax Fiber、Sintered 8000 Base、medium flex 及 2-5 cm 短选建议。页面可见 J.26 SKU，因此不单独用于声明 2026-27。品牌 7/10 flex 和场景分数未换算成有谱编辑评分。"
+    },
+    "seasonRetailerCrossCheck": {
+      "url": "https://www.evo.com/products/264077-jones-hovercraft-2-0-snowboard-2026",
+      "evidence": "evo 将此商品标为 Jones Hovercraft 2.0 2027，并列相同六个尺码，作为独立季节旁证；零售页价格为 USD，不导入有谱 CNY 商品价。"
+    },
+    "setbackCrossCheck": {
+      "url": "https://thinkempire.com/products/jones-hovercraft-2-0-2027-powder-snowboard-wt27",
+      "evidence": "2027 商品表列六个尺码的 stance setback 均为 0；日本代理商旧季 Hovercraft 2.0 官方表也列出 0 cm。该值因此将种子代表规格从 20 mm 修正为 0 mm。"
+    },
+    "regionalPrice": {
+      "amount": 127600,
+      "currency": "JPY",
+      "market": "Japan; Hasco Enterprises official Jones distributor",
+      "captureDate": "2026-10-14",
+      "taxStatus": "未明确",
+      "note": "只保留为日本地区价格证据；不换算成 CNY，也不作为中国售价。seed 中 CNY 4680 未找到中国销售渠道和报价日期，仍标记为未确认。"
+    }
+  },
+  "sizeTable": [
+    { "sizeCm": 144, "boardWeightKg": 2.6, "effectiveEdgeCm": 112.9, "waistWidthCm": 25.1, "noseWidthCm": 29.7, "tailWidthCm": 28.0, "taperMm": 17, "sidecutRadiusM": 8.1, "referenceStanceCm": 49, "riderWeightKg": "41-63", "bootSizeUS": "0-9", "bootSizeEU": "0-39.5" },
+    { "sizeCm": 148, "boardWeightKg": 2.7, "effectiveEdgeCm": 116.1, "waistWidthCm": 25.5, "noseWidthCm": 30.2, "tailWidthCm": 28.5, "taperMm": 17, "sidecutRadiusM": 8.4, "referenceStanceCm": 50, "riderWeightKg": "41-63", "bootSizeUS": "7-9", "bootSizeEU": "39.5-41.5" },
+    { "sizeCm": 152, "boardWeightKg": 2.9, "effectiveEdgeCm": 119.3, "waistWidthCm": 25.9, "noseWidthCm": 30.6, "tailWidthCm": 28.9, "taperMm": 17, "sidecutRadiusM": 8.7, "referenceStanceCm": 52, "riderWeightKg": "49-73", "bootSizeUS": "7-9", "bootSizeEU": "39.5-41.5" },
+    { "sizeCm": 156, "boardWeightKg": 3.1, "effectiveEdgeCm": 122.5, "waistWidthCm": 26.3, "noseWidthCm": 31.1, "tailWidthCm": 29.4, "taperMm": 17, "sidecutRadiusM": 9.0, "referenceStanceCm": 54, "riderWeightKg": "59-82", "bootSizeUS": "9+", "bootSizeEU": "41.5+" },
+    { "sizeCm": 160, "boardWeightKg": 3.2, "effectiveEdgeCm": 125.7, "waistWidthCm": 26.7, "noseWidthCm": 31.6, "tailWidthCm": 29.9, "taperMm": 17, "sidecutRadiusM": 9.3, "referenceStanceCm": 56, "riderWeightKg": "73-95", "bootSizeUS": "11+", "bootSizeEU": "44.5+" },
+    { "sizeCm": 164, "boardWeightKg": 3.3, "effectiveEdgeCm": 128.9, "waistWidthCm": 27.1, "noseWidthCm": 32.1, "tailWidthCm": 30.4, "taperMm": 17, "sidecutRadiusM": 9.6, "referenceStanceCm": 56, "riderWeightKg": "77-100+", "bootSizeUS": "11+", "bootSizeEU": "44.5+" }
+  ],
+  "changes": [
+    "补入六个尺码的官方代理商 26/27 尺码表：长度、板重、有效刃长、板腰、侧切半径、参考站距、推荐体重和建议雪鞋码。",
+    "代表尺寸 156 的有效刃长按来源精确记录为 1225 mm，而不是四舍五入的 1230 mm。",
+    "站位后移从旧 seed 的 20 mm 改为 0 mm，来源为 2027 零售规格表并由 Hovercraft 2.0 官方旧季表交叉核对。",
+    "人民币商品价 4680 保留但仍显式标记来源未核；不得把 JPY 127600 或 USD 629.95/649.95 转写为中国售价。"
+  ],
+  "remainingUncertainty": [
+    "Jones 全球页面仍显示 J.26 SKU；日本代理商将型号列入 26/27 商品目录，但本轮未能直接读取 103.3 MB 的当季目录 PDF 对应页。",
+    "没有可核实的中国本地销售渠道与 CNY 报价；现存 seed CNY 4680 不应当作已确认中国价格。",
+    "26/27 官方代理商图稿已与雪季对应，但图片复用/出版授权未核实。",
+    "Hasco 26-27 品番 69126021 已由官方订单表确认；Jones 全球商品页的 J.26 SKU 与该日本品番之间没有直接映射表，不能将两者视作同一编码。",
+    "现有编辑评分不是 26/27 样板实测评分，本轮未调整。"
+  ]
+}

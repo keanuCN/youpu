@@ -13,7 +13,7 @@ interface SeedProduct {
   slug: string;
   category: string;
   status?: string;
-  images?: unknown[];
+  images?: Array<{ url?: string }>;
   price?: { min?: number | null; max?: number | null } | null;
   specs?: Record<string, unknown>;
 }
@@ -41,7 +41,7 @@ async function readApiProducts(): Promise<ProductListItem[]> {
   let expectedTotal = Number.POSITIVE_INFINITY;
   for (let page = 1; products.length < expectedTotal; page += 1) {
     const url = `${apiBase}/api/products?page=${page}&pageSize=${PAGE_SIZE}&sort=new`;
-    const response = await fetch(url, { headers: { Accept: "application/json" } });
+    const response = await fetch(url, { headers: { Accept: "application/json" }, signal: AbortSignal.timeout(20_000) });
     if (!response.ok) throw new Error(`目录 API 返回 HTTP ${response.status}：${url}`);
     const parsed = productListResponseSchema.parse(await response.json());
     expectedTotal = parsed.total;
@@ -71,6 +71,26 @@ function printList(label: string, values: string[]): void {
   if (values.length > 0) console.log(`  ${values.join("、")}`);
 }
 
+function printImageDelivery(label: string, urls: Array<string | null | undefined>): void {
+  const counts = { tos: 0, external: 0, local: 0, missing: 0, invalid: 0 };
+  const externalHosts = new Map<string, number>();
+  for (const source of urls) {
+    if (!source) { counts.missing += 1; continue; }
+    if (source.startsWith('/') && !source.startsWith('//')) { counts.local += 1; continue; }
+    try {
+      const url = new URL(source);
+      if (url.protocol !== 'https:' && url.protocol !== 'http:') { counts.invalid += 1; continue; }
+      if (url.protocol === 'https:' && url.hostname === 'youpu.tos-cn-beijing.volces.com' && url.pathname.startsWith('/product-images/')) counts.tos += 1;
+      else {
+        counts.external += 1;
+        externalHosts.set(url.hostname, (externalHosts.get(url.hostname) ?? 0) + 1);
+      }
+    } catch { counts.invalid += 1; }
+  }
+  console.log(`${label}：TOS ${counts.tos}、外链 ${counts.external}、本地路径 ${counts.local}、缺图 ${counts.missing}、无效地址 ${counts.invalid}`);
+  if (externalHosts.size) console.log(`  外链来源：${[...externalHosts].sort((a, b) => b[1] - a[1]).map(([host, count]) => `${host} (${count})`).join('、')}`);
+}
+
 async function main(): Promise<void> {
   const seeds = await readSeedProducts();
   const publishedSeeds = seeds.filter((seed) => seed.status !== "draft");
@@ -89,10 +109,10 @@ async function main(): Promise<void> {
   const apiCounts = countByCategory(apiProducts, (product) => product.categorySlug);
   const snapshotCounts = countByCategory(snapshot, (product) => product.categorySlug);
 
-  console.log(`目录一致性检查：种子 ${publishedSeeds.length} 款（另有 ${seeds.length - publishedSeeds.length} 款草稿），本地 API ${apiProducts.length} 款，快照 ${CATALOG_SNAPSHOT_META.total} 款`);
+  console.log(`目录一致性检查：种子 ${publishedSeeds.length} 款（另有 ${seeds.length - publishedSeeds.length} 款草稿），API ${apiProducts.length} 款，快照 ${CATALOG_SNAPSHOT_META.total} 款`);
   console.log(`快照生成时间：${CATALOG_SNAPSHOT_META.generatedAt}；API：${apiBase}`);
   console.log("\n分类数量：");
-  console.log("分类\t种子\t本地 API\t前台快照");
+  console.log("分类\t种子\tAPI\t前台快照");
   for (const category of categories) {
     console.log(`${category}\t${seedCounts.get(category) ?? 0}\t${apiCounts.get(category) ?? 0}\t${snapshotCounts.get(category) ?? 0}`);
   }
@@ -111,8 +131,13 @@ async function main(): Promise<void> {
     .sort();
   console.log("\n内容缺项：");
   printList("种子缺少图片", seedMissingImages);
-  printList("本地 API 缺少封面", apiMissingImages);
+  printList("API 缺少封面", apiMissingImages);
   printList("种子缺少价格", seedMissingPrices);
+
+  console.log("\n封面图片交付来源（每件商品首图；不发起图片请求）：");
+  printImageDelivery('仓库种子', publishedSeeds.map(seed => seed.images?.[0]?.url));
+  printImageDelivery('目录 API', apiProducts.map(product => product.coverUrl));
+  printImageDelivery('前台快照', snapshot.map(product => product.coverUrl));
 }
 
 main().catch((error: unknown) => {

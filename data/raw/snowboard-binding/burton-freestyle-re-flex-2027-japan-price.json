@@ -1,0 +1,28 @@
+{
+  "slug": "burton-freestyle-re-flex-2027",
+  "model": "Burton Freestyle Re:Flex",
+  "season": "2026/27",
+  "productId": "105441",
+  "variantCode": "27WIN-105441",
+  "market": "Burton Japan official store",
+  "capturedAt": "2026-10-14",
+  "listedPrice": {
+    "amount": 24200,
+    "currency": "JPY",
+    "source": "https://jp.burton.com/ja-jp/products/mens-burton-freestyle-re-flex-snowboard-bindings-105441"
+  },
+  "convertedReference": {
+    "amount": 1022.15,
+    "currency": "CNY",
+    "method": "JPY 24,200 / EUR-JPY 177.39 * EUR-CNY 7.4925",
+    "exchangeRateDate": "2026-10-14",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "limitations": [
+      "Japan official-store reference only; not a mainland China selling price.",
+      "Shipping, import charges, and tax treatment at checkout are not included or confirmed.",
+      "Price and size availability can change; check the selected variant at checkout."
+    ]
+  },
+  "observedSizes": ["S", "M", "L"],
+  "notes": "Official page identifies the 2026/27 model/color code 27WIN-105441. The page presents S/M/L options; the captured text did not establish stock for each size. ECB reference rates are informational, not transaction rates."
+}

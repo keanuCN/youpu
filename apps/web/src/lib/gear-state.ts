@@ -36,10 +36,7 @@ export function hasHardcoreIndex(gear: Pick<GearItem, "hardcore" | "flexValue" |
     hasFlex(gear) &&
     gear.specs.effectiveEdge !== null &&
     gear.specs.effectiveEdge !== undefined &&
-    gear.specs.sidecut !== null &&
-    gear.specs.sidecut !== undefined &&
-    gear.specs.damping !== null &&
-    gear.specs.damping !== undefined &&
+    ((gear.specs.sidecut !== null && gear.specs.sidecut !== undefined) || Boolean(gear.specs.sidecutRadii)) &&
     Object.keys(gear.scores).length > 0
   );
 }

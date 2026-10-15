@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-10-15",
+  "product": "KAILAS 女款 BM45 PLUS 夹棉滑雪外套",
+  "styleCode": "KG2541241",
+  "officialStoreSource": "https://detail.youzan.com/show/goods?alias=360gu6koswo4rqu&from_source=gbox_seo",
+  "officialStoreEvidence": {
+    "storeName": "凯乐石微商城",
+    "title": "KAILAS凯乐石 女款 BM45 PLUS 夹棉滑雪外套 KG2541241",
+    "listedPrice": {"amount": 5200, "currency": "CNY"},
+    "purchaseEntryShown": true,
+    "productImagesShown": true,
+    "productImage0Url": "https://img01.yzcdn.cn/upload_files/2026/04/07/FixWusBfAuVzgmtNXFC9zI6J3JrY.jpg%21middle.jpg",
+    "productGalleryImageUrls": [
+      "https://img01.yzcdn.cn/upload_files/2026/04/07/FixWusBfAuVzgmtNXFC9zI6J3JrY.jpg%21middle.jpg",
+      "https://img01.yzcdn.cn/upload_files/2026/04/07/FguoYqOIgPCkYzIgxic1zsNMQqgb.jpg%21middle.jpg",
+      "https://img01.yzcdn.cn/upload_files/2026/04/07/FhFxog5AFfRfovV7I16nNUz9xMs6.jpg%21middle.jpg",
+      "https://img01.yzcdn.cn/upload_files/2026/04/07/Fg212lUTT4Rcoc-EhEXKcPvBpIgb.jpg%21middle.jpg",
+      "https://img01.yzcdn.cn/upload_files/2026/04/07/Fl8JJsfPv2ZXhkU-FOvBh7BQoLuF.jpg%21middle.jpg"
+    ],
+    "productImageAssetCheck": {"checkedAt": "2026-10-15", "statusByGalleryIndex": [200, 200, 200, 200, 200], "contentType": "image/jpeg", "pageRole": "凯乐石微商城精确款号商品页标为商品图0–4的轮播图库", "decision": "五张同一精确款号商品页的官方图库图片链接均已确认返回 JPEG，已补入草稿种子；授权核验完成前不把图片展示授权标为已确认。"},
+    "sizeOptionsShown": false,
+    "stockBySizeShown": false,
+    "seasonShown": false,
+    "technicalDescriptionText": false,
+    "imageDisplayAuthorizationVerified": false
+  },
+  "retailerIndexCrossCheck": {
+    "source": "https://www.jd.com/brand/13180080fb2e44e3fceb.html?brand=%E5%87%AF%E4%B9%90%E7%9F%B3%EF%BC%88KAILAS%EF%BC%89&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_redissale_desc",
+    "indexedVariant": "KAILAS 女款 BM45 PLUS 夹棉滑雪外套 KG2541241 闪电紫 S",
+    "decision": "仅记录索引中出现的单个颜色和尺码标题；不可据此补完整尺码表、库存或映射到其它颜色。"
+  },
+  "additionalRetailerTitleEvidence": {
+    "source": "https://www.jd.com/brand/13180080fb2e44e3fceb.html?brand=%E5%87%AF%E4%B9%90%E7%9F%B3%EF%BC%88KAILAS%EF%BC%89&electedExtAttrSet=&extAttrValue=expand_name%2C&sort_type=sort_redissale_desc",
+    "indexedTitle": "凯乐石 BM45 PLUS 夹棉滑雪服男女 GTX3L 防水 APEXHEAT 棉",
+    "decision": "该索引描述用于待核参数线索；在找到精确款号对应的官方技术规格前，不将 GTX3L 或 APEXHEAT 标为已确认产品规格。"
+  },
+  "thirdPartyRecheck": {
+    "checkedAt": "2026-10-15",
+    "productAggregator": {
+      "source": "https://www.joom.com/en/products/69882228b28a0e01a548f183",
+      "title": "KAILAS Women's BM45 PLUS GTX 3L Insulated Alpine Freeride Ski Jacket",
+      "listedSizes": ["S", "M", "L"],
+      "listedSeason": "fall",
+      "displayedPrice": { "amount": 1028.12, "currency": "EUR" },
+      "styleCodeShown": false,
+      "sellerIdentity": "JDST online",
+      "decision": "Title matches the product family and women's insulated variant, but no KG2541241 style code is shown; seller is third party, and the displayed price/season/size options are not mapped to the Chinese official listing. Do not use as exact-SKU evidence or convert its price to the seed."
+    },
+    "userArticle": {
+      "source": "https://post.smzdm.com/p/aogvnzv7/",
+      "publishedAt": "2025-11-18",
+      "claims": ["75D GORE-TEX 3L", "28,000 mm waterproof rating", "ApexHeat insulation", "fully taped seams"],
+      "styleCodeShown": false,
+      "authorType": "community user post",
+      "decision": "The post discusses BM45 PLUS but does not establish that the claims apply to women's style KG2541241; not treated as manufacturer specifications."
+    },
+    "jdOfficialStoreIndex": {
+      "source": "https://www.jd.com/xinghao/1318ec558a325513af73.html",
+      "observedTitles": ["KAILAS凯乐石 BM45 PLUS 夹棉滑雪服男女 GTX3L 防水 APEXHEAT 棉运动保暖棉服", "KAILAS凯乐石 BM45 PLUS 夹棉滑雪服女 GTX 3L 防水高山自由滑雪服"],
+      "styleCodeMappedInTitle": false,
+      "decision": "Confirms the retailer index contains these BM45 PLUS descriptions, but the titles do not include KG2541241; descriptions remain unverified for this exact women's SKU."
+    },
+    "exactStyleCodeRegionalListing": {
+      "source": "https://mobile.yangkeduo.com/poros/h5?_dr_sku_id=1872649724283&abs_id=208156&ad_cks=1-1BigRC&ad_rcto=YWJY7a6B6ZDBl_k4b5T-SyD7Q9gz61YGop_oqw32nx95ZWjon_kTaKLNj_UiyU8H--qhNdJYtr1_bDXRyk0qLtpa&ads_channel=google_shopping&goods_id=922423037841&order_type=0&page_uid=b971bac98f094ca794aca85ddfba20cb&plsn=aa6919efe32aa37bf70fee57f47e5340&region=SG&sku_id=1872649724283&vst_scene=pdv",
+      "indexedTitle": "KAILAS凯乐石BM45 PLUS夹棉滑雪外套高效保暖GTX防水女KG2541241",
+      "displayedPrice": {"amount": 983.79, "currency": "SGD", "approximateCNYText": "¥5.2K"},
+      "region": "SG",
+      "styleCodeShown": true,
+      "decision": "The cross-border listing names the exact style code, but its price is denominated in Singapore dollars and the parenthetical CNY amount is an approximate conversion. Exclude it as a China-market RMB listing and do not replace the official microstore CNY 5,200 price."
+    }
+  },
+  "unresolved": [
+    "官方商品页对应的产品雪季",
+    "完整实际可选尺码与逐码库存",
+    "该货号专属的面料、膜材、防水透湿参数、保暖填充和结构详情",
+    "官方商品图的前台展示授权",
+    "当前购买入口的结账可售状态及最终成交价"
+  ],
+  "decision": "新建草稿仅收录官方微商城精确货号和 CNY 5,200 页面标价。不由 KG2541241 推断雪季，不把搜索索引的单一码当作完整尺码表，也不把未映射货号的聚合页尺码、价格或社区文章和零售标题中的技术词升级为款号级原厂规格。"
+}

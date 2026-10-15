@@ -10,6 +10,7 @@ price:
   max: 3600
   currency: CNY
 specs:
+  seasonEvidence: CAPiTA 北美官方商品页标题标注 Dark Horse Snowboard 2027；据官方 2027 年款归档为 2026/27。商品页未直接注明完整雪季日期，也不据此判断首次上市时间或实时库存。
   length: 154
   effectiveEdge: 1188
   waistWidth: 254
@@ -160,7 +161,7 @@ editorial_scores:
   forgiveness: 8.0
   value: 8.2
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0231/7366/0752/files/FST03-DARK-HORSE-TOP.png?v=1776884600"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/30ac807dc05915423d65c16474e9ba76610b00a437d7e902dc8dc25672bc3b1a.webp"
     kind: face
     alt: CAPiTA Dark Horse 2027 官方产品图
     source: CAPiTA 官方北美 2027 产品页图片（复用授权待核）

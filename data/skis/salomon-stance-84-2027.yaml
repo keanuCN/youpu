@@ -4,26 +4,39 @@ brand: salomon
 model: Stance 84 R
 year: 2027
 title: Salomon Stance 84 R 2026/27
-one_liner: 官方定位为雪道与全山地兼顾的稳定型双板，含板、板芯与固定器系统。
+price:
+  min: 5353.84
+  max: 5353.84
+  currency: CNY
+  one_liner: 雪道与全山地兼顾的稳定型双板；2027 延续款身份由年度测试与零售商品页交叉确认，含板、板托及固定器系统。
 specs:
   lengthOptions: 161 / 169 / 177 / 185 cm
   waistWidth: 84
   turnRadius: 13
   turnRadiusReferenceLength: 169 cm
+  sizeSpecs:
+    - { size: 161 cm, noseWidth: 121, waistWidth: 84, tailWidth: 104, turnRadius: 13, weightPerPair: 5090, notes: Salomon 商品页按货号 L45457300+ 列出；净重为板、板层和固定器套装。2027 雪季由年度测试及零售商品页确认。 }
+    - { size: 169 cm, noseWidth: 122, waistWidth: 84, tailWidth: 105, turnRadius: 15, weightPerPair: 5210, notes: Salomon 商品页按货号 L45457300+ 列出；净重为板、板层和固定器套装。2027 雪季由年度测试及零售商品页确认。 }
+    - { size: 177 cm, noseWidth: 123, waistWidth: 84, tailWidth: 106, turnRadius: 16, weightPerPair: 5490, notes: Salomon 商品页按货号 L45457300+ 列出；净重为板、板层和固定器套装。2027 雪季由年度测试及零售商品页确认。 }
+    - { size: 185 cm, noseWidth: 124, waistWidth: 84, tailWidth: 107, turnRadius: 18, weightPerPair: 5650, notes: Salomon 商品页按货号 L45457300+ 列出；净重为板、板层和固定器套装。2027 雪季由年度测试及零售商品页确认。 }
   terrain: 雪道 / 全山地
   skierLevel: 中级至进阶
   bindingSetup: 雪板+板层+固定器
   weightBasis: 尚缺可核对的逐长度重量，不以同系列或其他年款推算。
-  geometryNotes: 现有板长与几何文字保留；逐长度官方表待核对，不按型号名称、相邻长度或其他年款插值。
-  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL
-    鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
+  geometryNotes: Salomon 官网商品页按货号 L45457300+ 给出四个长度的板头/腰/尾宽、半径和套装净重；官方 26/27 日本目录未收录该型号，但 SkiEssentials 2027 延续款测试和零售页明确标为 2027，商品系列名称与规格可对应。此雪季判断来自第三方交叉来源，不声称官方目录列出。
+  bindingCompatibility: 实际兼容性取决于固定器型号与靴底类型。核对 Alpine / GripWalk 标识、成人或儿童靴底及 BSL 鞋底外壳长度（mm）；鞋码不能代替 BSL，GW 标识也不表示兼容所有巡游靴。
   mountingNotes: 按实际 SKU 核对是否含固定器、系统板/轨道与对应固定器；由专业店根据雪靴 BSL 调节并校验释放。商品标题出现系统名称不等于固定器已包含。
-  seasonEvidence: 年款沿用现有档案；本轮不以 URL 数字或同名新款替代年份证据。
-  sourceCheckedAt: 2026-10-13
+  seasonEvidence: Salomon 26/27 日本雪板目录未列 Stance 84 R；Salomon 当前官方商品页按 L45457300+ 提供四码规格但未标雪季。SkiEssentials 的 2027 年度测试称其为 2027 延续款；Sporting Life 与 Bottero Ski 的商品页将 Stance 84 R + MI12 GW 标为 2027，后者同时列出 L45457300/L45436800 系列货号。雪季经第三方型号/货号交叉确认，官方目录缺项如实保留。
+  sourceCheckedAt: 2026-10-15
+  priceCheckedAt: 2026-10-14
+  officialPrice: USD 799.95
+  priceMarket: Salomon 美国官网雪板系统套装挂牌价
+  priceSource: https://www.salomon.com/en-us/product/stance-84-r-and-mi12-li1721
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Salomon 美国官网按货号 L45457300+ 列 USD 799.95，包装内容为雪板、板托及固定器；按 ECB 2026-10-14 EUR/USD 1.1195、EUR/CNY 7.4925 折算 CNY 5,353.84。雪季由独立年度测试与同名零售商品页交叉确认，不由价格推断。美国参考价，不是中国售价，税费与跨境费用未计。
   compatibilitySources: https://www.salomon.com/en-us/product/stance-84-r-and-mi12-li1721；https://www.grip-walk.com/faq/
 images:
-  - url: "https://cdn.dam.salomon.com/d46f845f-a04e-4b4c-8419-b45100de593b/L4545730\
-      0%2B/PNG-2000px-max-72dpi.png"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/61ea873a212fb988c7e143811c56ba276e793f8272fd3ed29148fed78012eb81.webp"
     kind: face
     alt: Salomon Stance 84 R 2026/27 官方雪板商品图
     source: Salomon 官方产品页（图片使用授权待核）

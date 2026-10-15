@@ -1,0 +1,178 @@
+{
+  "brand": "HEAD",
+  "model": "EASY JOY R",
+  "season": "2026-27",
+  "articleNumber": "316486",
+  "retrievedAt": "2026-10-15",
+  "seedFile": "data/skis/head-easy-joy-r-2027.yaml",
+  "officialSeasonSource": {
+    "url": "https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf",
+    "document": "HEAD Hardgoods Season 26/27",
+    "evidence": "目录将 EASY JOY R 对应 article 316486 SLR PRO Rent Base，列出 143/148/153/158/163 cm；目录同页列出 JOY 9 GW SLR。参考长度规格为 163 cm、117/70/103 mm、R13.3。PDF 搜索索引有跨栏抽取错序风险，因此产品与参考规格另用同季零售页面交叉核对。"
+  },
+  "retailerCrossCheck": {
+    "url": "https://www.botteroski.com/en/163-ski/155-Allround/568780-easy-joy-r-slr-pro-r-joy-9-gw-slr.html",
+    "merchant": "Bottero Ski（意大利）",
+    "retrievedAt": "2026-10-15",
+    "retailerReference": "316486 262",
+    "season": "Winter 2027",
+    "binding": "JOY 9 GW SLR",
+    "listedPriceEUR": 319,
+    "referencePriceEUR": 400,
+    "availabilityAtCapture": "页面显示 Last item in stock；没有核实可配送尺码",
+    "geometry": {
+      "referenceLengthCm": 163,
+      "sidecutMm": [117, 70, 103],
+      "radiusM": 13.3
+    },
+    "evidence": "页面标题确认 EASY JOY R + SLR PRO R + JOY 9 GW SLR 套装，技术表列季节 Winter 2027、参考货号 316486 262 和固定器 JOY 9 GW SLR。规格摘要列 163 cm 时 117/70/103 mm、R13.3；库存提示为最后一件。该页面未提供其它尺码逐码几何。",
+    "limitations": "意大利地区的含固定器套装挂牌价，不是中国售价或裸板价格；页面尺码级库存需结账时确认。价格、库存、税费、配送和汇率可能变化。"
+  },
+  "geometryDecision": {
+    "confirmedLengthsCm": [143, 148, 153, 158, 163],
+    "confirmedReferenceRow": {
+      "lengthCm": 163,
+      "sidecutMm": [117, 70, 103],
+      "radiusM": 13.3
+    },
+    "evidence": "HEAD 26/27 目录提供长度与参考尺寸；Bottero Ski 同季零售套装以 316486 262 交叉确认参考几何。",
+    "unresolved": [
+      "143/148/153/158 cm 的逐码板头、板腰、板尾宽与转弯半径未核实，不按旧季数据或相邻长度推算。",
+      "缺少可确认的单只/双只雪板重量。",
+      "当前中国市场的精确货号价格与库存未核实。"
+    ]
+  },
+  "exactArticleSizeRecheck20261015": {
+    "checkedAt": "2026-10-15",
+    "newPerSizeValuesFound": false,
+    "sources": [
+      {
+        "url": "https://www.vigliettisport.com/en/1095-SPORT/1096-ski/1113-ski-bundle-w-bindings/104003-sci-easy-joy-r-piastra-slr-pro-r-attacchi-joy-9-gw-slr-all-round-donna-2027.html",
+        "supplierReference": "316486+100952",
+        "season": "2027 winter",
+        "binding": "JOY 9 GW SLR",
+        "selectedLengthCm": 163,
+        "geometryShown": null,
+        "evidence": "零售页确认 EASY JOY R、2027 冬季、供应商组合参考号 316486+100952 与 JOY 9 GW SLR；页面当前仅显示 163 cm 选项，没有逐码几何。该组合参考号与 HEAD 目录套装参考 316486 262 不同，不能替代逐码规格。"
+      },
+      {
+        "url": "https://www.botteroski.com/en/163-ski/155-Allround/568780-easy-joy-r-slr-pro-r-joy-9-gw-slr.html",
+        "supplierReference": "316486 262",
+        "season": "2027 winter",
+        "binding": "JOY 9 GW SLR",
+        "selectedLengthCm": null,
+        "geometryShown": {"referenceLengthCm": 163, "sidecutMm": [117, 70, 103], "radiusM": 13.3},
+        "evidence": "同季精确型号零售页确认 316486 262 和固定器配置，规格只显示 163 cm 参考几何；尺码选择器未返回可读取逐码尺寸表。"
+      },
+      {
+        "url": "https://head.ru/ski/shop/skis/8374/138172/",
+        "articleNumber": "31655507",
+        "model": "Easy Joy",
+        "season": "2026/27",
+        "reportedLengthsCm": [143, 148, 153, 158, 163],
+        "reportedGeometry": [
+          {"lengthCm": 143, "sidecutMm": [117, 70, 103], "radiusM": 9.6},
+          {"lengthCm": 148, "sidecutMm": [117, 70, 103], "radiusM": 10.5},
+          {"lengthCm": 153, "sidecutMm": [117, 70, 103], "radiusM": 11.3},
+          {"lengthCm": 158, "sidecutMm": [117, 70, 103], "radiusM": 12.2},
+          {"lengthCm": 163, "sidecutMm": [117, 70, 103], "radiusM": 13.3}
+        ],
+        "decision": "排除这些小尺码行：该 HEAD 地区页产品货号为 31655507 且型号标为 Easy Joy；没有来源将它映射至目标目录中的 EASY JOY R 316486 SLR PRO Rent Base。"
+      }
+    ],
+    "decision": "当前没有可靠来源证明 143/148/153/158 cm 的逐码几何适用于 316486。继续只保留已核实的 163 cm 参考行，不因相同长度和板型宽度而跨货号移植。"
+  },
+  "exactArticleSizeFollowUp20261015": {
+    "checkedAt": "2026-10-15",
+    "newPerSizeValuesFound": false,
+    "queries": [
+      "316486 143 9.6 ski",
+      "316486 148 10.5 HEAD ski",
+      "Easy Joy R 316486 geometry 143 148 153",
+      "316486 262 143 ski HEAD"
+    ],
+    "sourcesReconfirmed": [
+      {
+        "source": "https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf",
+        "publisher": "HEAD 26/27 Hardgoods catalogue",
+        "articleNumber": "316486",
+        "lengthsCm": [143, 148, 153, 158, 163],
+        "geometryShown": {"referenceLengthCm": 163, "sidecutMm": [117, 70, 103], "radiusM": 13.3},
+        "decision": "确认型号、五个长度和 163 cm 参考几何；没有其它长度的逐码几何。"
+      },
+      {
+        "source": "https://www.botteroski.com/en/163-ski/155-Allround/568780-easy-joy-r-slr-pro-r-joy-9-gw-slr.html",
+        "publisher": "Bottero Ski",
+        "articleAndBinding": "316486 262 + JOY 9 GW SLR",
+        "season": "2026/27",
+        "geometryShown": {"referenceLengthCm": 163, "sidecutMm": [117, 70, 103], "radiusM": 13.3},
+        "decision": "同季精确套装页仍只给 163 cm 参考几何；尺码选择器没有提供可核验的逐码表。"
+      }
+    ],
+    "excludedSearchCandidate": {
+      "source": "https://head.ru/ski/shop/skis/8374/138172/",
+      "articleNumber": "31655507",
+      "modelLabel": "Easy Joy",
+      "reportedGeometry": [
+        {"lengthCm": 143, "sidecutMm": [117, 70, 103], "radiusM": 9.6},
+        {"lengthCm": 148, "sidecutMm": [117, 70, 103], "radiusM": 10.5},
+        {"lengthCm": 153, "sidecutMm": [117, 70, 103], "radiusM": 11.3},
+        {"lengthCm": 158, "sidecutMm": [117, 70, 103], "radiusM": 12.2},
+        {"lengthCm": 163, "sidecutMm": [117, 70, 103], "radiusM": 13.3}
+      ],
+      "decision": "官方地区页的货号为 31655507，型号标 Easy Joy；没有证据将其对应到 316486 EASY JOY R，因此仍排除。"
+    },
+    "decision": "复查未找到 316486 的 143/148/153/158 cm 逐码三围或半径。保持仅有 163 cm 参考行，不移植不同货号 31655507 的数据，也不按半径规律外推。"
+  },
+  "alternateVariantChecks": [
+    {
+      "source": "https://head.ru/ski/shop/skis/8374/138172/",
+      "publisher": "HEAD Russia official regional shop",
+      "pageModel": "Easy Joy + JOY 9 GW SLR",
+      "pageArticleNumber": "31655507",
+      "season": "2026/27",
+      "reportedGeometry": [
+        { "lengthCm": 143, "sidecutMm": [117, 70, 103], "radiusM": 9.6 },
+        { "lengthCm": 148, "sidecutMm": [117, 70, 103], "radiusM": 10.5 },
+        { "lengthCm": 153, "sidecutMm": [117, 70, 103], "radiusM": 11.3 },
+        { "lengthCm": 158, "sidecutMm": [117, 70, 103], "radiusM": 12.2 },
+        { "lengthCm": 163, "sidecutMm": [117, 70, 103], "radiusM": 13.3 }
+      ],
+      "decision": "Not copied into article 316486 sizeSpecs. The official regional page identifies a different article number and calls the product Easy Joy (not EASY JOY R); no source maps 31655507 to 316486. The shared 163 cm reference row is a useful cross-check but does not establish that every size row belongs to the target rental article.",
+      "evidence": "The page states article 31655507, season 2026/2027, JOY 9 GW SLR, and a five-length geometry table. The target HEAD 26/27 hardgoods catalog instead lists EASY JOY R article 316486 SLR PRO Rent Base."
+    },
+    {
+      "source": "https://www.hc5.ru/gornye-lyzhi-head-easy-joy-r-slr-pro-r-krepleniya-joy-9-gw-slr-brake-78-h-2026/",
+      "publisher": "HC5 retailer",
+      "pageModel": "Easy Joy R SLR Pro R + JOY 9 GW SLR Brake 78 [H]",
+      "retailerArticleNumber": "134848",
+      "pageSeasonLabel": "2026",
+      "reported163CmRadiusM": 13.1,
+      "decision": "Not copied into 2026/27 data. The page does not expose HEAD article 316486 and its 163 cm radius 13.1 m conflicts with the target-season HEAD catalog and Bottero cross-check value 13.3 m. The 143-158 cm candidates are therefore not used to fill the target season.",
+      "evidence": "The retailer reports five lengths and per-length geometry but labels the model year 2026 and reports 13.1 m at 163 cm; the target 2026/27 exact-season cross-check reports 13.3 m."
+    }
+  ],
+  "previousSeasonSeparation": {
+    "previousSeason": "2025-26",
+    "previousArticleNumber": "316485",
+    "decision": "2025/26 的 EASY JOY R 316485 与 2026/27 的 316486 分别建档；前季半径、地区价格与图片路径不移植到本季种子。"
+  },
+  "priceAudit": {
+    "merchant": "Bottero Ski（意大利）",
+    "url": "https://www.botteroski.com/en/163-ski/155-Allround/568780-easy-joy-r-slr-pro-r-joy-9-gw-slr.html",
+    "listedPriceEUR": 319,
+    "referencePriceEUR": 400,
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/html/index.en.html",
+    "exchangeRateDate": "2026-10-14",
+    "eurToCny": 7.4925,
+    "calculation": "319 * 7.4925 = 2390.1075，按分四舍五入为 CNY 2390.11",
+    "convertedPriceCNY": 2390.11,
+    "availabilityAtCapture": "页面显示 Last item in stock；尺码库存和国际配送范围未核实",
+    "limitations": "意大利地区促销挂牌价，含 JOY 9 GW SLR 固定器；不是中国售价或裸板价格。运费、进口税、付款汇率及库存未计入。"
+  },
+  "image": {
+    "url": "https://cdn-mdb.head.com/CDN3/D/316486/1/683x911/easy-joy-r.webp",
+    "httpStatus": 200,
+    "evidence": "HEAD 官方 CDN URL 含本季货号 316486，图片 HEAD 请求返回 HTTP 200；图片复用/展示授权仍需确认。"
+  }
+}

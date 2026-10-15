@@ -5,12 +5,19 @@ model: "Genesis Re:Flex"
 year: 2027
 title: "Burton Genesis Re:Flex 2027"
 one_liner: "采用 Genesis 缓震结构的绑带款，主打舒适脚感与全山地性能。"
+price:
+  min: 2787.67
+  max: 2787.67
+  currency: CNY
 specs:
+  terrain: [ all-mountain ]
+  seasonEvidence: Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-105471；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。
   entrySystem: strap
   flexFeel: medium
   mountingSystem: "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc"
   bootCompatibility: "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。"
   bindingSizeGuide: "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+"
+  sizeChartScope: "官方推荐范围重叠：男靴 US 8 同属 S/M，US 10–11 同属 M/L；女靴 US 9 同属 S/M、US 11 同属 M/L。此表不是唯一尺码映射，须用实际雪鞋试装。"
   baseplateMaterial: "30% 短切玻纤/尼龙复合材料"
   ankleStrap: "Hammockstrap"
   toeStrap: "Supergrip Capstrap 2.0"
@@ -19,16 +26,20 @@ specs:
   highbackAdjustment: "MicroFLAD 前倾角调节"
   cushioning: "Re:Flex FullBED 全掌缓震；B3 凝胶缓震"
   warranty: "底盘终身保修；绑带和高背自购买日起 1 年保修"
-  selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。
+  selectionNotes: 按官方表核对雪鞋 US/EU 码；男靴 US 8 与 10–11、女靴 US 9 与 11 落入相邻两档，重叠码须用实际雪鞋试装，检查底盘承托、鞋头/后跟居中及绑带余量。雪板安装孔位按随附 Re:Flex 圆盘核对。
   compatibilitySources: https://www.burton.com/en-us/products/mens-burton-genesis-re-flex-snowboard-bindings-105471
   sizeChart:
     - { size: S, usMen: 6-8, usWomen: 5-9, eu: 38-41, uk: 5-7, mondo: 24-26 }
     - { size: M, usMen: 8-11, usWomen: 9-11, eu: 41-44, uk: 7-10, mondo: 26-29 }
     - { size: L, usMen: 10+, usWomen: 11+, eu: 43+, uk: 9+, mondo: 28+ }
-  priceCheckedAt: 2026-10-12
-  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
+  priceCheckedAt: 2026-10-14
+  regionalListPrice: JPY 66,000
+  priceMarket: Burton 日本官方商店；型号 ID 105471、色款标识 27WIN-105471
+  priceSource: https://jp.burton.com/ja-jp/products/mens-burton-genesis-re-flex-snowboard-bindings-105471
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: Burton 日本官方商品页对应 2027 款型号 ID 105471 / 色款标识 27WIN-105471，标价 JPY 66,000；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 2,787.67。页面列出 S/M/L，S 码当时显示售罄。税费口径以结账为准；此为日本官方店折算参考，不是中国售价，跨境配送及进口费用未计，库存会变化。
 images:
-  - url: "https://www.burton.com/cdn/shop/files/1054719E9M_1.webp?v=1784135138&width=1200"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/0a40d5f379bc1b90555df9f9cdc37d26d8341decc69a28239445d15e8a13b624.webp"
     kind: face
     alt: Burton Genesis Re:Flex 固定器官方商品图
     source: Burton 官方商品页（图片使用授权待核）
@@ -36,4 +47,11 @@ images:
 data_source:
   kind: official
   origin_url: https://www.burton.com/en-us/products/mens-burton-genesis-re-flex-snowboard-bindings-105471
+# 首版编辑暂估，非社区实测；评分口径见 docs/固定器编辑评分口径-2026-10-14.md
+editorial_scores:
+  response: 7.3
+  comfort: 7.4
+  versatility: 7.6
+  convenience: 6.2
+  value: 5.0
 status: published

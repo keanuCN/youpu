@@ -1,0 +1,57 @@
+{
+  "capturedAt": "2026-10-15",
+  "product": "COSONE Step On 快穿固定器",
+  "source": "https://www.cos1.net/",
+  "observed": {
+    "homepageProductName": "COSONE Step On 快穿固定器",
+    "homepagePriceCny": 2599,
+    "productDetailUrl": null,
+    "sizeChart": null,
+    "bootInterfaceCertification": null,
+    "homepageHtmlRecheck": {
+        "checkedAt": "2026-10-15",
+      "pageTitle": "COSONE - 专业单板滑雪装备",
+      "productCardHasDetailLink": false,
+      "uniqueHrefTargets": [
+        "#",
+        "css/style.css",
+        "https://fonts.googleapis.com",
+        "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+      ],
+      "sizeGuideHasDestination": false,
+        "notes": "2026-10-15 再访官网，首页显示“2026 雪季新品”横幅、COSONE Step On 快穿固定器商品卡及 ¥2,599；商品卡未给型号货号或可访问的商品详情，尺码指南链接仍无独立目的页。首页展示可证明品牌当前列出该商品和标价，不能核实具体尺码、可下单状态、产品雪季或接口认证。"
+    },
+    "searchRecheck": {
+      "checkedAt": "2026-10-14",
+      "queries": [
+        "COSONE Step On 固定器 尺码",
+        "COSONE Step On 雪鞋 兼容 固定器 尺码",
+        "COSONE 快穿固定器 货号 尺码表"
+      ],
+      "result": "2026-10-15 官网重查和型号检索仍未取得匹配的型号级尺码表、兼容靴款清单或接口认证；搜索结果中的 Burton / Nitro Step On 尺码资料不能用于推定 COSONE 规格。"
+    },
+    "latestHomepageImageRecheck": {
+      "checkedAt": "2026-10-15",
+      "source": "https://www.cos1.net/",
+      "productCardTitle": "COSONE Step On 快穿固定器",
+      "displayedPriceCny": 2599,
+      "imageAlt": "COSONE 快穿固定器",
+      "imageUrl": "https://www.cos1.net/images/product-2.jpg",
+      "imageFetchStatus": 404,
+      "productCardAction": "快速查看按钮；页面抽取未暴露商品详情 URL，卡片链接目标为 #。",
+      "searchImageRecheck": "精确搜索未找到可确认属于 COSONE Step On 款的品牌或经销商图片；可见的 COSONE 固定器图片对应传统绑带款，未采用。",
+      "decision": "官方首页图源当前失效，不能作为已加载商品图；不以相似款图片替代，保持 images 为空并显示暂无图片。"
+    },
+    "latestHomepageFunctionAudit": {
+      "checkedAt": "2026-10-15",
+      "homepage": "https://www.cos1.net/",
+      "script": "https://www.cos1.net/js/main.js",
+      "scriptHttpStatus": 200,
+      "quickViewBehavior": "showQuickViewModal 只读取首页卡片已有的商品名、短描述、标价和图片地址并显示弹窗；没有型号详情、尺码或库存请求。",
+      "addToCartBehavior": "首页脚本注释标注为模拟加购；点击只增加本地购物车数字并显示提示，没有服务器请求或订单确认。",
+      "decision": "首页 CNY 2,599 是官网展示价快照；静态首页与模拟加购不能证明商品在售或可下单，保持 draft，不作为已验证成交/可售价格。"
+    }
+  },
+  "decision": "商品种子继续保持 draft，不补固定器尺码区间，也不推定其与 Burton Step On、Nitro Step On 或其它 Step On 雪鞋兼容。首页仅能证明该站展示了商品名和 ¥2,599；源码检查显示商品卡和尺码指南无独立地址，因此型号、可售状态、规格及价格均未达到可发布核验标准。",
+  "followUp": "继续寻找品牌可追溯的商品详情、授权渠道商品页或品牌书面资料；取得具体型号尺码表、兼容靴款清单与接口/认证说明后再补入产品规格和价格。"
+}

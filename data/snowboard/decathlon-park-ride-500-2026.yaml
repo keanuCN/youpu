@@ -4,7 +4,7 @@ brand: decathlon
 model: Park & Ride 500
 year: 2026
 title: DREAMSCAPE Park & Ride 500 2026
-one_liner: 迪卡侬全山地与自由式型号，标准正拱配合摇杆与粉雪站位；英国官网原价 £199.99（现为促销价），按 2026-10-02 参考汇率 1 GBP≈¥8.8475 折算约 ¥1,769 CNY（非中国售价）。规格以 156cm 为例。
+one_liner: 迪卡侬全山地与自由式型号，标准正拱配合摇杆与粉雪站位；英、土官方页折算约 ¥1,776–1,965 CNY（地区参考，非中国售价）。规格以 156cm 为例。
 editorial_scores:
   stability: 7.2
   response: 7.5
@@ -13,10 +13,11 @@ editorial_scores:
   forgiveness: 6.5
   value: 8.4
 price:
-  min: 1769
-  max: 1769
+  min: 1775.70
+  max: 1964.86
   currency: CNY
 specs:
+  lengthOptions: 152 / 153 MW / 156 / 158 W
   length: 156
   sidecut: 8.4
   waistWidth: 255
@@ -31,10 +32,20 @@ specs:
     - all-mountain
     - freestyle
     - powder
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  sizeSpecs:
+    - { size: "152", overallLength: 1520, waistWidth: 250, sidecutRadii: "8.2 m", stanceWidth: "560 mm", setback: 20, noseWidth: 288, tailWidth: 288, weight: 2710, riderHeight: "167–177 cm" }
+    - { size: "153 MW", overallLength: 1530, waistWidth: 258, sidecutRadii: "8.3 m", stanceWidth: "565 mm", setback: 20, noseWidth: 300, tailWidth: 300, weight: 2800, riderHeight: "168–178 cm" }
+    - { size: "156", overallLength: 1560, waistWidth: 255, sidecutRadii: "8.4 m", stanceWidth: "575 mm", setback: 20, noseWidth: 296, tailWidth: 296, weight: 2848, riderHeight: "171–181 cm" }
+    - { size: "158 W", overallLength: 1580, waistWidth: 266, sidecutRadii: "8.4 m", stanceWidth: "585 mm", setback: 20, noseWidth: 304, tailWidth: 304, weight: 3000, riderHeight: "178–190 cm" }
+  priceCheckedAt: 2026-10-15
+  priceMarket: Decathlon 英国与土耳其官方商店，SKU 8938817；均为地区参考价，非中国售价
+  priceSource: https://www.decathlon.co.uk/p/mens-all-mountain-and-freestyle-snowboard-park-and-ride-500-green/306010/c49c1m8938817
+  regionalPriceSource: https://www.decathlon.com.tr/p/yetiskin-pist-ve-freeride-snowboard-park-and-ride-500/_/R-p-306010?c=S%C4%B0YAH_YE%C5%9E%C4%B0L
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  priceStatus: CNY 1,775.70 为英国官方页 GBP 199.99 的折算值；CNY 1,964.86 为土耳其官方页 TRY 14,500 的折算值，两页均对应 SKU 8938817，均非中国售价。按 ECB 2026-10-14 EUR/GBP 0.84385、EUR/TRY 55.2921、EUR/CNY 7.4925 折算。土耳其页当时列出 152/153 MW/156/158 W，但均显示缺货；英国价与库存动态变化。尚未核实中国官方或授权渠道报价，税费、配送及进口费用不计入。
+  selectionNotes: "尺寸、宽度、半径、推荐站距、适用身高与标称重量依据 Decathlon 官方页面：https://www.decathlon.co.uk/p/mens-all-mountain-and-freestyle-snowboard-park-and-ride-500-green/306010/c49c1m8938817。标称重量公差 ±6%；标准站位后移 20 mm，Powder Stance 为 60 mm。页面未注明生产雪季，2026 为采集快照标签。"
 images:
-  - url: "https://contents.mediadecathlon.com/p2944924/k$e21f8365347b4de89819c934c9ed67d6/picture.jpg?format=auto&f=3000x0"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/2f2359044c2efbcc9ae547b2ca096327d99317dec38890ee0546f2dcaa0ea891.webp"
     kind: face
     alt: Decathlon Park & Ride 500 单板主图
     source: Decathlon 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

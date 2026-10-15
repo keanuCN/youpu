@@ -4,7 +4,7 @@ brand: decathlon
 model: All Road 900
 year: 2026
 title: DREAMSCAPE All Road 900 2026
-one_liner: 迪卡侬成人全山地与自由滑取向型号，154/160/166cm 可选；英国官网标价 £279.99，按 2026-10-02 参考汇率 1 GBP≈¥8.8475 折算约 ¥2,478 CNY（非中国售价）。154cm 规格为示例尺码。
+one_liner: 迪卡侬成人全山地与自由滑取向型号，154/160/166cm 可选；英国官网页面标价 £279.99，按 ECB 2026-10-14 汇率折算约 ¥2,486 CNY（非中国售价，页面价格与库存动态变化）。154cm 规格为示例尺码。
 editorial_scores:
   stability: 8.6
   response: 8.7
@@ -13,10 +13,11 @@ editorial_scores:
   forgiveness: 3.8
   value: 8.4
 price:
-  min: 2478
-  max: 2478
+  min: 2486
+  max: 2486
   currency: CNY
 specs:
+  lengthOptions: 154 / 160 / 166
   length: 154
   sidecut: 8.3
   waistWidth: 245
@@ -31,10 +32,15 @@ specs:
   scenes:
     - all-mountain
     - powder
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  sizeSpecs:
+    - { size: "154", overallLength: 1540, waistWidth: 245, sidecutRadii: "8.3 m", stanceWidth: "540 mm", setback: 50, noseWidth: 289, tailWidth: 280, weight: 2500, riderWeight: "55–70 kg", riderHeight: "164–170 cm" }
+    - { size: "160", overallLength: 1600, waistWidth: 252, sidecutRadii: "8.4 m", stanceWidth: "560 mm", setback: 50, noseWidth: 298, tailWidth: 290, weight: 3170, riderWeight: "65–80 kg", riderHeight: "169–177 cm" }
+    - { size: "166", overallLength: 1660, waistWidth: 260, sidecutRadii: "8.5 m", stanceWidth: "580 mm", setback: 50, noseWidth: 308, tailWidth: 301, weight: 3210, riderWeight: "80–110 kg", riderHeight: "175–185 cm" }
+  priceCheckedAt: 2026-10-15
+  priceStatus: CNY 2,486 为英国官方页 GBP 279.99 按 ECB 2026-10-14 汇率折算，不是中国售价；页面价格与库存动态变化。京东结果出现 ALL ROAD 900 条目号 4263566/4263567（其中 4263567 标注 166 cm），但未显示当前人民币金额，也未核实授权店铺及与本档案雪季的关系，暂不作为中国报价。
+  selectionNotes: "154/160/166 的尺寸、几何、推荐站距与体重依据 Decathlon 官方页面：https://www.decathlon.co.uk/p/adults-snowboarding-board-for-slope-and-freeride-all-road-900/332434/c314c29m8643399。该页逐尺寸规格表及特性说明列 setback 50 mm，另一段地形说明列 35 mm；种子沿用逐尺寸表的 50 mm，冲突未解决。页面未注明具体生产雪季，2026 为采集快照标签。"
 images:
-  - url: "https://contents.mediadecathlon.com/p2572726/k$71ec9103476ba320ff720d13e85c95ba/picture.jpg?format=auto&f=3000x0"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/2e556dc2186ce25b188a7f434b67e7dcc5a7ded213fca60c4282937370bb598d.webp"
     kind: face
     alt: Decathlon All Road 900 单板主图
     source: Decathlon 官方产品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）

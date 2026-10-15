@@ -10,7 +10,12 @@ specs:
   touchScreen: true
   batteryLife: 50
   navigation: true
-images: []
+images:
+  - url: https://hwcdn.igpsport.cn/picture/2024/10/cfaff525d66c72194eeb9885e027f2dc.png
+    kind: face
+    alt: iGPSPORT iGS800 彩屏触控 GPS 骑行码表
+    source: iGPSPORT 官网产品图（展示授权状态待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://www.igpsport.cn/product/igs800

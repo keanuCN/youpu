@@ -4,16 +4,24 @@ brand: cosone
 model: Step On
 year: 2026
 title: COSONE Step On 快穿固定器 2026
+price:
+  min: 2599
+  max: 2599
+  currency: CNY
 specs:
   entrySystem: step-in
   bootCompatibility: 型号名称含 Step On，但尚未找到官方认证和鞋靴接口依据；不能据此确认与 Burton Step On 兼容。
   selectionNotes: 先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 Step On 使用专用尺码表，不能套用普通绑带式 S/M/L 范围。 本轮官方型号证据未通过复核，现有尺寸不视为重新核实；详见待核记录。
   compatibilitySources: https://www.cos1.net/；https://www.burton.com/en-us/pages/size-charts
-  priceCheckedAt: 2026-10-12
-  priceStatus: 未取得本型号可核查的官方挂牌价；价格待补充。
+  priceCheckedAt: 2026-10-15
+  officialPrice: CNY 2,599
+  priceMarket: COSONE 中国官网首页商品卡
+  priceSource: https://www.cos1.net/
+  priceStatus: 官网静态首页商品卡显示 CNY 2,599；快速查看只复制首页字段，加入购物车为本地模拟，没有真实商品详情、库存或订单请求。仅保留为官网展示价快照，不代表商品在售或可下单；固定器接口兼容性仍待核。
+  imageEvidence: 官网首页商品卡图源 https://www.cos1.net/images/product-2.jpg 当前返回 404；未找到能确认属于此 Step On 型号的替代图，故保留空图。
 images: []
 status: draft
-one_liner: COSONE 官网本季精选固定器，官方称其为 Step On 快穿款；具体雪鞋兼容范围待品牌进一步说明。
+one_liner: COSONE 首页列出 Step On 快穿固定器；商品详情、可售状态、尺码表和接口兼容资料尚未找到，当前仅作待核草稿。
 data_source:
   kind: official
   origin_url: https://www.cos1.net/

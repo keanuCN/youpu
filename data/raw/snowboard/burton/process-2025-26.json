@@ -46,7 +46,7 @@
         "tailWidthMm": 294.9,
         "riderWeightRange": "150-200 lb / 68-91 kg"
       },
-      "limits": "The Burton table labels the -12.5 mm field Stance Location, not setback. The prototype's positive stanceSetback convention is normalized to 12.5 mm; exact source notation is retained here. Official page does not list board mass, damping score, pop score or a mainland-China CNY retail price. A 2026-10-02 direct page check showed EUR 590 and all sizes sold out; a search-index capture had shown EUR 472 sale, so that dynamic sale snippet is not treated as current or available. Neither EU price is substituted for seed CNY 5499. Official page identifies the base as Sintered and does not substantiate the former '7200' grade."
+      "limits": "The Burton table labels the -12.5 mm field Stance Location, not setback. The prototype's positive stanceSetback convention is normalized to 12.5 mm; exact source notation is retained here. Official page does not list board mass, damping score, pop score or a mainland-China Camber-specific CNY retail price. A 2026-10-02 direct page check showed EUR 590 and all sizes sold out; a search-index capture had shown EUR 472 sale, so that dynamic sale snippet is not treated as current or available. Neither EU price is substituted for seed CNY 5499. Official page identifies the base as Sintered and does not substantiate the former '7200' grade."
     },
     "snowboardingProfilesNextModelRideTest": {
       "url": "https://snowboardingprofiles.com/burton-process-review-all-mountain-snowboard",
@@ -72,7 +72,7 @@
       "scoreUse": "Not used to change scores because target year and test setup are unknown."
     },
     "priceSearch": {
-      "checkedAt": "2026-10-02",
+      "checkedAt": "2026-10-15",
       "mainlandChinaCandidate": {
         "url": "https://detail.youzan.com/show/goods?alias=3694gxpatxifyt5&from_source=gbox_seo",
         "seller": "SPADERS 黑桃滑雪俱乐部（页面标注微信认证）",
@@ -80,6 +80,15 @@
         "listedPriceCny": 4998,
         "availability": "Page shows a buy action; stock and checkout price were not independently confirmed.",
         "identityLimit": "Season/model family matches Process 25/26, but listing title does not specify Camber versus Flying V and page text provides no SKU; do not treat as an exact Camber offer or change the canonical CNY seed price from this listing alone. Product photos are not reused; publication rights are unknown."
+      },
+      "mainlandChinaCandidateRechecked": {
+        "url": "https://detail.youzan.com/show/goods?alias=2xizzlo2i2o2mk9&from_source=gbox_seo",
+        "seller": "SPADERS 黑桃滑雪俱乐部（页面标注微信认证）",
+        "listingTitle": "25/26BURTON雪板CN CNY PROCESS NO COLOR",
+        "listedPriceCny": 4998,
+        "captureDate": "2026-10-15",
+        "pageState": "Immediate-purchase action and shipping range CNY 0-200 shown; stock and checkout not confirmed.",
+        "identityLimit": "Season and Process family match, but no Camber/Flying V designation, exact Burton SKU, or size is exposed. Do not replace the Camber seed's CNY 5,499 reference with this ambiguous listing."
       },
       "jdIndexedOfferLead": {
         "productIndexUrl": "https://www.jd.com/jiage/1318eda938c7ac60e471.html",
@@ -126,7 +135,7 @@
           "priceType": "Official regional listed price; not mainland-China CNY retail."
         }
       ],
-      "seedPriceDecision": "Keep CNY 5499 unchanged for now; value score remains low-confidence. One SPADERS China listing still does not distinguish Camber from Flying V. A separate JD/aggregator lead identifies 25/26 Process Camber and CNY 4998, but the reported selected size is 155W and the current JD detail price/inventory could not be verified; it does not establish the seed's representative standard 157 offer. Burton EU's official page lists EUR 590 but currently shows all sizes sold out; an indexed EUR 472 sale snippet conflicts with the direct page. Geizhals' EUR 469 listing is an older 2026-08-31 snapshot. These and Korea/Japan prices remain regional comparisons, not current China offers."
+      "seedPriceDecision": "Keep CNY 5,499 unchanged as an unverified legacy reference; value score remains low-confidence. Rechecked SPADERS listing still does not distinguish Camber from Flying V, SKU, or size. JD index identifies exact 25/26 Process Camber 106921 / 106921CA03RG in 157 cm but the direct JD page does not expose price. A JD/aggregator CNY 4,998 lead selected 155W and remains historical; it does not establish a current standard-157 offer. Burton EU lists EUR 590 but shows sizes sold out; the indexed EUR 472 snippet conflicts with direct page. Geizhals EUR 469 is an older snapshot."
     }
   },
   "editorialDecision": {

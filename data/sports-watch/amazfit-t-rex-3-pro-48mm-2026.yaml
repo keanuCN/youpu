@@ -21,7 +21,12 @@ specs:
   offlineNavigation: true
   sportsModes: 180+
   healthSensors: BioTracker™ 6.0 PPG 生物识别传感器 (5PD+2LED)
-images: []
+images:
+  - url: https://cdn.shopify.com/s/files/1/0464/1475/8043/files/A_588e7798-a148-463d-9fb1-e931356cea73.jpg?v=1779843822&width=1000
+    kind: face
+    alt: Amazfit T-Rex 3 PRO 48mm 五级钛合金运动手表
+    source: Amazfit 台湾官方商品页（展示授权状态待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://tw.amazfit.com/products/trex3pro

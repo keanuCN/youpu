@@ -10,9 +10,10 @@ import { SectionHead } from "@/components/layout/section-head";
 import { Avatar } from "@/components/layout/site-header";
 import { Stars } from "@/components/gear/primitives";
 import { GEAR, getGear } from "@/data/boards";
-import { IMG } from "@/data/assets";
+import { HERO_IMAGE_POOL } from "@/data/assets";
+import { SEED_REVIEWS } from "@/data/seeds";
 import { CATEGORY_LEAVES, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
-import { hotReviews, rankRows } from "@/lib/domain";
+import { helpfulOf, rankRows } from "@/lib/domain";
 import { getCategoryProducts, resolveContentSource } from "@/lib/content";
 import { timeAgo } from "@/lib/format";
 import { usePersisted } from "@/lib/store";
@@ -33,7 +34,15 @@ export default function HomePage() {
   const featuredCategory = getCategory(featuredSlug) ?? SNOWBOARD;
   const top = rankRows(snapshot, "overall", featuredSlug, featuredPool).slice(0, 5);
   const fresh = (featuredSlug === "snowboard" ? featuredPool.filter((g) => g.isNew) : featuredPool).slice(0, 4);
-  const reviews = hotReviews(snapshot, 3);
+  const userReviews = snapshot.userReviews
+    .filter((review) => !review.parentId)
+    .sort((a, b) => helpfulOf(snapshot, b) - helpfulOf(snapshot, a))
+    .map((review) => ({ review, isMock: false }));
+  const mockReviews = SEED_REVIEWS
+    .filter((review) => !review.parentId)
+    .sort((a, b) => (b.seedHelpful ?? 0) - (a.seedHelpful ?? 0))
+    .map((review) => ({ review, isMock: true }));
+  const reviews = [...userReviews, ...mockReviews].slice(0, 3);
 
   useEffect(() => {
     let cancelled = false;
@@ -135,10 +144,10 @@ export default function HomePage() {
               index="03"
               title="社区实测"
               titleEn="Field Reports"
-              desc="每条评论都带雪龄、体重与常滑场地——你能直接看到和自己条件接近的人怎么说。"
+              desc="完善一次个人资料，发布实测时会自动带上雪龄、体重与常滑场地。"
             />
             <ul className="space-y-4">
-              {reviews.map((r) => {
+              {reviews.map(({ review: r, isMock }) => {
                 const gear = getGear(r.gearId);
                 return (
                   <li key={r.id}>
@@ -149,7 +158,9 @@ export default function HomePage() {
                       <div className="flex items-center gap-2.5">
                         <Avatar seed={r.authorName} name={r.authorName} size={28} />
                         <div className="min-w-0 flex-1">
-                          <p className="truncate text-[13px] font-medium">{r.authorName}</p>
+                          <p className="truncate text-[13px] font-medium">
+                            {r.authorName}{isMock ? <span className="mono-label ml-2 text-muted-foreground">示例实测</span> : null}
+                          </p>
                           <p className="mono-label truncate">
                             {r.authorMeta.years} 年 · {r.authorMeta.weightKg ?? "—"}kg · {r.authorMeta.resort || "未标注场地"}
                           </p>
@@ -218,18 +229,34 @@ function Cover({
   liveCategoryCount: number;
   liveCategoryNames: string;
 }) {
+  const [heroImage, setHeroImage] = useState<(typeof HERO_IMAGE_POOL)[number] | null>(null);
+  const [heroImageReady, setHeroImageReady] = useState(false);
+
+  useEffect(() => {
+    // Skip the illustrated fallback: the hero should show a resort photo from its first render.
+    const resortImages = HERO_IMAGE_POOL.slice(1);
+    const randomIndex = Math.floor(Math.random() * resortImages.length);
+    setHeroImage(resortImages[randomIndex] ?? HERO_IMAGE_POOL[0]);
+  }, []);
+
   return (
     <section className="relative border-b border-foreground">
-      <div className="grid lg:grid-cols-[1.15fr_1fr]">
-        <div className="relative order-2 min-h-[320px] overflow-hidden lg:order-1 lg:min-h-[560px]">
-          <SafeImage
-            src={IMG.heroRidge}
-            alt="雪脊"
-            fallbackLabel="雪脊"
+      <div className="grid xl:grid-cols-[1.15fr_1fr] xl:grid-rows-[640px]">
+        <div className="group relative order-2 aspect-[4/3] min-h-0 overflow-hidden bg-secondary xl:order-1 xl:aspect-auto xl:h-full">
+          {heroImage ? <SafeImage
+            src={heroImage.src}
+            srcSet={heroImage.srcSet}
+            sizes="(min-width: 1440px) 714px, (min-width: 1024px) calc((100vw - 64px) * 0.535), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
+            alt={heroImage.alt}
+            fallbackLabel="雪场风景"
             fallbackMode="muted"
-            className="plate h-full w-full object-cover"
-            style={{ filter: "grayscale(0.85) contrast(1.08)" }}
-          />
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className={`plate h-full w-full object-cover ${heroImageReady ? 'opacity-100' : 'opacity-0'}`}
+            onLoad={() => setHeroImageReady(true)}
+            onError={() => setHeroImageReady(true)}
+          /> : null}
           <div className="dot-grid pointer-events-none absolute inset-0" />
           <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-3 bg-gradient-to-t from-foreground/80 to-transparent p-5 sm:p-8">
             <p className="mono-label text-background/80">FIELD TEST · 崇礼 / 可可托海 / 将军山</p>
@@ -237,7 +264,7 @@ function Cover({
           </div>
         </div>
 
-        <div className="relative order-1 flex flex-col justify-center border-r border-border px-5 py-12 sm:px-10 lg:order-2 lg:px-14 lg:py-16">
+        <div className="relative order-1 flex flex-col justify-center border-r border-border px-5 py-12 sm:px-10 xl:order-2 xl:px-14 xl:py-16">
           <p className="mono-label mb-5 text-primary">ISSUE No.42 / 全品类装备档案</p>
           <h1 className="text-[42px] leading-[1.1] font-medium tracking-tight text-balance sm:text-[58px] lg:text-[64px]">
             把装备拆成

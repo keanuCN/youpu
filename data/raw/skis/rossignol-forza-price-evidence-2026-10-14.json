@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-14",
+  "exchangeRateSources": {
+    "ecbUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-14",
+    "eurCny": 7.4925,
+    "eurUsd": 1.1195,
+    "usdCnyCrossRate": 6.6927199643
+  },
+  "caveats": [
+    "Converted amounts are official regional store reference prices, not prices in China.",
+    "Cross-border shipping, import costs, payment exchange costs, and any taxes not shown in the selected store are excluded.",
+    "Forza 40 official Germany page labels FW2627 and lists the ski without bindings at EUR 540.00.",
+    "Forza 50 official US page identifies SKU RAOPX01000 and lists USD 899.95 with no bindings selected; it does not identify a season, so its listed price is not treated as evidence for the seed season. The NX 12 KONECT GW binding is an optional selection."
+  ],
+  "products": [
+    {
+      "seed": "data/skis/rossignol-forza-40-ca-xpress-2027.yaml",
+      "model": "Forza 40° CA Xpress",
+      "sku": "RAPPX05000",
+      "season": "2026/27",
+      "seasonEvidence": "Official Germany page says NEUE KOLLEKTION FW2627.",
+      "officialPrice": "EUR 540.00",
+      "convertedPriceCny": 4045.95,
+      "configuration": "No bindings",
+      "source": "https://www.rossignol.com/de-de/herren-pisten-ski-forza-40%C2%B0-ca-xpress-RAPPX05000.html"
+    },
+    {
+      "seed": "data/skis/rossignol-forza-50-cam-2026.yaml",
+      "model": "Forza 50° CAM KONECT",
+      "sku": "RAOPX01000",
+      "season": "not identified on product page; seed retains 2025/26 catalog evidence",
+      "officialPrice": "USD 899.95",
+      "convertedPriceCny": 6023.11,
+      "configuration": "No bindings selected; NX 12 KONECT GW binding offered as an option",
+      "source": "https://www.rossignol.com/us-en/rossignol-forza-50-cam-skis-konect-RAOPX01000.html"
+    }
+  ]
+}

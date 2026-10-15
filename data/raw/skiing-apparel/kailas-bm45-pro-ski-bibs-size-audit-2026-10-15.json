@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-15",
+  "product": "KAILAS BM45 PRO Ski Bibs Unisex",
+  "styleCode": "KG2541314",
+  "productSource": "https://kailasgear.com/products/kailas-bm45-pro-ski-bibs-unisex",
+  "brandSizeGuideSource": "https://kailasgear.com/pages/size-chart-1",
+  "officialProductPageEvidence": {
+    "availableSizes": ["S", "M", "L"],
+    "fit": "Relaxed",
+    "recommendedUse": ["Big Mountain", "Ski Mountaineering", "Backcountry Ski"],
+    "material": "100D 3L GORE-TEX Pro",
+    "garmentMeasurementsShown": false,
+    "bodyMeasurementChartShown": false
+  },
+  "brandSizeGuideEvidence": {
+    "chartsListed": ["Men's Shoes", "Women's Shoes", "Gloves", "Socks"],
+    "apparelGarmentChartShown": false,
+    "note": "页面虽提示按其尺寸图表选购，但所展示的图表栏目不含服装或裤装测量值。"
+  },
+  "officialGuideLinkRecheck": {
+    "checkedAt": "2026-10-15",
+    "productPageGuideLink": "https://kailasgear.com/pages/size-chart-1",
+    "observedSections": ["Men's Shoes", "Women's Shoes", "Gloves", "Socks"],
+    "observedApparelChart": false,
+    "decision": "从目标产品页打开当前尺码指南后，仍未发现服装/裤装的人体围度或成衣测量表；不为 KG2541314 推导尺寸。"
+  },
+  "missingMeasurements": ["腰围", "臀围", "大腿围", "裤内长", "裤长"],
+  "excludedEvidence": [
+    {
+      "source": "https://www.jd.com/tupian/1318efe5996d087af05d.html",
+      "evidence": "京东索引结果标题包含 KG2541314、颜色与 S 码，但没有可读的成衣测量表或腰臀围数字。",
+      "decision": "只作为精确款号、颜色和尺码存在性的线索，不用于补全尺寸测量或人民币价格。"
+    },
+    {
+      "source": "https://kailasgear.com/pages/size-chart",
+      "evidence": "品牌通用尺码指南列出鞋、手套、袜子的图表，没有这款背带裤或服装成衣测量值。",
+      "decision": "不将其他品类尺码表映射为 KG2541314 的裤装尺码。"
+    }
+  ],
+  "marketplaceRecheck20261015": {
+    "exactStyleCodeListing": {
+      "source": "https://www.jd.com/jiage/1318c57408f7c439eca7.html",
+      "itemUrl": "https://item.jd.com/10221071823387.html",
+      "observed": "京东索引再次列出 KG2541314、闪电紫/山矾白/光电绿、S 码；详情页返回浏览器兼容提示。",
+      "priceDisplayed": false,
+      "measurementDisplayed": false
+    },
+    "unmappedSelfOperatedListing": {
+      "source": "https://www.jd.com/jiage/1318f0175a27553848c7.html",
+      "itemUrl": "https://item.jd.com/100222832951.html",
+      "observed": "京东列表另有自营 BM45 PRO 硬壳高山滑雪背带裤，显示 3+ 条评论；列表未显示具体款号、尺码或价格。",
+      "styleCodeMappingConfirmed": false,
+      "priceDisplayed": false,
+      "decision": "只作为可能的国内同系列渠道线索，不映射到 KG2541314，也不用于价格字段。"
+    }
+  },
+  "decision": "保留商品页明确提供的 S/M/L 与 Relaxed fit；不推断人体围度或成衣尺寸。要补齐服装尺码，需要品牌发布该款或可明确映射到 KG2541314 的尺码表。"
+}

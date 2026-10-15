@@ -1,0 +1,79 @@
+{
+  "brand": "HEAD",
+  "model": "Supershape e-Magnum",
+  "season": "2026-27",
+  "articleNumber": "313306 / 313306.SET",
+  "retrievedAt": "2026-10-15",
+  "seedFile": "data/skis/head-supershape-e-magnum-2027.yaml",
+  "seasonEvidence": {
+    "manufacturerWorkbook": {
+      "url": "https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf",
+      "evidence": "HEAD 26/27 Hardgoods Workbook lists Supershape e-Magnum article 313306, lengths 149/156/163/170/177, 126/72/110 mm at 170 cm, and 13.1 m radius at 170 cm."
+    },
+    "priorSeasonDistinction": {
+      "url": "https://www.skiandbikes.com/image/document/head_workbook_2526_en.pdf",
+      "evidence": "HEAD 25/26 Hardgoods Workbook lists the prior-season Supershape e-Magnum as article 313305, not 313306. The former seed combined 313306 product data with a 2025/26 label."
+    },
+    "matchingRetailPages": [
+      {
+        "url": "https://www.sport-bittl.com/de/head-supershape-e-magnum-26-27-ski-inkl-protector-evo-pr-13-gripwalk-r-bindung%3A%3A260099_1_7192.html",
+        "evidence": "Product title identifies 26/27, manufacturer article 313306, and all five sizes with dimensions 126/72/110 and radii 9.7/10.8/11.9/13.1/14.3 m."
+      },
+      {
+        "url": "https://www.vosisportshop.cz/eshop/p/lyze-head-supershape-e-magnum-sw-vazani-protector-pr-13-do-140-kg-2026-2027-7191/",
+        "evidence": "Product title identifies 2026/2027 and product code 313306-Prot13; lists the same five lengths and corresponding radii, with 170 cm reference dimensions."
+      },
+      {
+        "url": "https://www.power-ski.at/collections/race/products/head-supershape-e-magnum-protector-evo-pr-13-gw-2627",
+        "evidence": "26/27 product page identifies article 313306 and provides all five lengths, sidecut dimensions, turn radii and edge-angle values."
+      }
+    ]
+  },
+  "officialProductPage": {
+    "url": "https://www.head.com/en_US/product/supershape-e-magnum-313306-set",
+    "evidence": "HEAD product page carries 313306.SET; lists lengths 149/156/163/170/177, Advanced / On Piste / Fast / Medium Radius, Speedrocker, and the selected 149 cm geometry 126/72/110 mm, radius 9.7 m. Page offers PROTECTOR EVO PR 13 GW and PRD 12 GW binding options.",
+    "price": {
+      "amount": 1099,
+      "currency": "USD",
+      "convertedCny": 7355.30,
+      "configuration": "Official US price reference for product 313306.SET; verify the chosen binding option at checkout.",
+      "limitations": "Product showed out of stock when captured; US page does not state season; conversion uses ECB 2026-10-14 rates and is not a China price."
+    }
+  },
+  "officialFeaturesRecheck20261015": {
+    "url": "https://www.head.com/en_US/product/supershape-e-magnum-313306-set",
+    "articleNumber": "313306.SET",
+    "pageOutOfStock": true,
+    "productPositioning": "Versatile Supershape piste ski; short or long turns at all speeds, with edge grip and rebound emphasis.",
+    "verifiedFields": {
+      "skill": "Advanced",
+      "terrain": "On Piste",
+      "speed": "Fast",
+      "turnRadiusType": "Medium Radius",
+      "radiusReference": "13.1 m @ 170 cm",
+      "profile": "Speedrocker",
+      "selected149cmProfile": {"tipRockerPercent": 6, "camberPercent": 94, "tailRockerPercent": 0},
+      "technology": "Crossforce Carbon; HEAD says it transfers power directly into ski construction."
+    },
+    "regionalBindingImageRecheck": {
+      "observedOnUSPage": "Gallery image label identifies PROTECTOR EVO PR 11 GW.",
+      "priorAuditOptions": ["PROTECTOR EVO PR 13 GW", "PRD 12 GW"],
+      "decision": "HEAD localized product pages show differing binding imagery/options for the same 313306.SET product family. Keep price/binding configuration scoped to the actual regional page and selected variant; do not treat the binding options as globally identical."
+    },
+    "evidence": "HEAD US official page at the URL above directly labels Advanced, On Piste, Fast, Medium Radius, Speedrocker and Crossforce Carbon; it gives 13.1 m at 170 cm and shows the selected 149 cm profile as 6% tip rocker, 94% camber, 0% tail rocker. The retrieved US gallery labels the binding image PROTECTOR EVO PR 11 GW and the page says Out of Stock.",
+    "weightLimitation": "Page displays 2307 g at selected 149 cm but does not state one-ski/pair or binding inclusion; weight remains unrecorded."
+  },
+  "sizeSpecs": [
+    {"lengthCm":149,"tipMm":126,"waistMm":72,"tailMm":110,"radiusM":9.7},
+    {"lengthCm":156,"tipMm":126,"waistMm":72,"tailMm":110,"radiusM":10.8},
+    {"lengthCm":163,"tipMm":126,"waistMm":72,"tailMm":110,"radiusM":11.9},
+    {"lengthCm":170,"tipMm":126,"waistMm":72,"tailMm":110,"radiusM":13.1},
+    {"lengthCm":177,"tipMm":126,"waistMm":72,"tailMm":110,"radiusM":14.3}
+  ],
+  "weight": {
+    "status": "not recorded",
+    "reason": "The HEAD selected-size page displays 2307 g at the 149 cm default, but the measurement/configuration basis is not explicit; do not treat it as comparable ski-only weight."
+  },
+  "imageRights": "Current image URL belongs to HEAD's official CDN and article 313306.SET; no explicit reuse license verified.",
+  "publicationDecision": "Correct the season to 2026/27 based on the 313306 manufacturer-workbook article and exact-article matching retail listings; the prior 25/26 model was 313305. Add full five-size geometry from exact 26/27 article listings, cross-checking the 170 cm manufacturer-workbook reference."
+}

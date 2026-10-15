@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-15",
+  "slug": "burton-good-company-camber-2027",
+  "source": "https://www.burton.com/en-us/products/burton-good-company-camber-snowboard-235951",
+  "sourceType": "Burton 官方商品页尺码表",
+  "seasonVariant": "Good Company Camber 2027 / 27WIN-235951",
+  "riderWeightUnit": "kg",
+  "sizeRows": [
+    { "size": "135", "riderWeight": "36–54 kg" },
+    { "size": "140", "riderWeight": "36–54 kg" },
+    { "size": "145", "riderWeight": "45–68 kg" },
+    { "size": "148", "riderWeight": "45–68 kg" },
+    { "size": "152", "riderWeight": "54–82 kg" },
+    { "size": "155", "riderWeight": "54–82 kg" },
+    { "size": "159", "riderWeight": "68–91 kg" },
+    { "size": "155W", "riderWeight": "54–82 kg" },
+    { "size": "159W", "riderWeight": "68–91 kg" },
+    { "size": "162W", "riderWeight": "82–118 kg+" }
+  ],
+  "decision": "按官方 2027 尺码表中的板长顺序逐项录入推荐体重范围；官方范围重叠及 118 kg+ 上限原样保留，不自行修正。",
+  "limitations": [
+    "官方页未说明推荐体重是否包含装备，因此不作口径推断。",
+    "范围只是选板参考，需结合身高、靴码、水平和用途。"
+  ]
+}

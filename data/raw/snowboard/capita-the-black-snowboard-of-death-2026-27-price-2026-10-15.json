@@ -1,0 +1,42 @@
+{
+  "slug": "capita-the-black-snowboard-of-death-2027",
+  "model": "CAPiTA The Black Snowboard of Death",
+  "season": "2026/27 (official product page titled 2027)",
+  "checkedAt": "2026-10-15",
+  "japanOfficial": {
+    "source": "https://jp.capitasnowboarding.com/products/capita-the-black-snowboard-of-death-mens-snowboard-2027",
+    "market": "CAPiTA Japan official store",
+    "listedPrice": { "amount": 117700, "currency": "JPY" },
+    "convertedReference": { "amount": 4971.35, "currency": "CNY" },
+    "sizes": ["156", "159", "162", "157W", "161W", "165W", "169W"]
+  },
+  "usOfficial": {
+    "source": "https://capitasnowboarding.com/products/capita-the-black-snowboard-of-death-mens-snowboard-2027",
+    "market": "CAPiTA North America official store",
+    "listedPrice": { "amount": 749.95, "currency": "USD" },
+    "convertedReference": { "amount": 5019.21, "currency": "CNY" }
+  },
+  "japanPriceListCrossCheck": {
+    "source": "https://golgoda.com/PDF/26-27%20CAPITA%20PRICE.pdf",
+    "market": "CAPiTA Japan 2026/27 provisional price list as published by Golgoda",
+    "listedPrice": { "amount": 107000, "currency": "JPY", "taxIncluded": false },
+    "notes": "The provisional list labels THE BLACK SNOWBOARD OF DEATH at JPY 107,000 excluding tax; adding 10% consumption tax yields JPY 117,700, matching the official Japan store's displayed price."
+  },
+  "exchangeRates": {
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "date": "2026-10-14",
+    "eurUsd": 1.1195,
+    "eurJpy": 177.39,
+    "eurCny": 7.4925,
+    "japanCalculation": "JPY 117,700 / EUR/JPY 177.39 * EUR/CNY 7.4925 = CNY 4,971.35",
+    "usCalculation": "USD 749.95 * EUR/CNY 7.4925 / EUR/USD 1.1195 = CNY 5,019.21"
+  },
+  "decision": "Use the CAPiTA Japan official store's JPY 117,700 displayed price as the Asia-market CNY conversion reference; preserve the US official conversion as a separate regional cross-check. Replace unsupported seed value CNY 5,400.",
+  "limitations": [
+    "Neither official regional price is a mainland China selling price; this search did not confirm a China-specific quote.",
+    "Official US conversion is about CNY 47.86 higher than Japan official conversion.",
+    "The ECB reference exchange rates are for information purposes, not transaction rates; bank spreads and payment fees are excluded.",
+    "Shipping and import charges are not included.",
+    "Prices and availability may change. The CAPiTA Japan 2026/27 price list is marked provisional."
+  ]
+}

@@ -23,7 +23,12 @@ specs:
   driver: 网页或软件双驱动
   quickRelease: true
   customScreen: true
-images: []
+images:
+  - url: https://33357402.s21i.faiusr.com/2/ABUIABACGAAgvLmDzgYo08q5ogQwoAY4oAY.jpg
+    kind: face
+    alt: Akko MOD007 V5 HE 三模磁轴键盘
+    source: Akko 官方商品图库（展示授权状态待核）
+    sort_order: 0
 data_source:
   kind: crawl
   origin_url: https://akkogear.com/pd.jsp?id=56

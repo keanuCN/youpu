@@ -4,7 +4,11 @@ brand: kailas
 model: BM45 PRO Ski Bibs Unisex
 year: 2026
 title: Kailas BM45 PRO Ski Bibs Unisex
-one_liner: 100D 三层 GORE-TEX Pro 背带裤，带通风拉链、膝部立体剪裁与 Cordura 加固。
+one_liner: 面向大山滑雪、滑雪登山与野雪场景的 100D 三层 GORE-TEX Pro 背带裤，带通风拉链、膝部立体剪裁与 Cordura 加固。
+price:
+  min: 3882.39
+  max: 3882.39
+  currency: CNY
 specs:
   fit: relaxed
   recco: true
@@ -15,12 +19,90 @@ specs:
   construction: 3L
   articulatedKnees: true
   corduraReinforced: true
+  availableSizes: [ S, M, L ]
+  sizeGuide: 官网尺码选项为 S、M、L，版型为 Relaxed；通用尺码指南只列鞋、手套和袜子图表，未提供此裤款成衣尺寸或腰围、臀围、大腿围、裤内长和裤长数据。不可从尺码名推断围度。
+  styleCode: KG2541314
+  priceCheckedAt: 2026-10-15
+  officialPrice: USD 580.00
+  priceMarket: Kailas 美国官方商店；货号 KG2541314
+  priceSource: https://kailasgear.com/products/kailas-bm45-pro-ski-bibs-unisex
+  priceStatus: 2026-10-15 复核美国官方同货号标价 USD 580，按 ECB 2026-10-13 交叉汇率折算 CNY 3882.39；京东精确商品页 ID 10221071823387 对应 KG2541314，但页面未展示人民币价格且详情无法读取。京东另有自营 BM45 PRO 背带裤列表，未显示款号与价格，暂不能确认其与 KG2541314 的映射。拼多多同名结果带 region=SG 并以新加坡元展示，排除为中国报价。当前 CNY 3882.39 仅为美国地区折算参考，不是中国售价；海外税费与配送另计，页面未确认本档案雪季。
 images:
-  - url: "https://cdn.shopify.com/s/files/1/0535/8433/0946/files/GJGW-KG2541314_5-4.webp?v=1786154017&width=800"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/59de7eb346150a2aecb05c80a84d6d24cac59e45cf50fb36876140f72a151dd4.webp"
     kind: face
     alt: KAILAS BM45 PRO 滑雪背带裤
     source: KAILAS 官网 JSON-LD 商品图；展示授权状态待核
     sort_order: 0
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/4923a4a0e2ee609cebef655d9b1634b246ed7ba52bd6929f1b2d4047e875a86a.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 2
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 1
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/1e472d21f8e52608aa37888cbf25df05a6a5560609e50de285e044b824055056.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 3
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 2
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/dd515f074384e27e01345b1a2655a0f8afb2c7ee7bb6dba41c8149ec53a559d7.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 4
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 3
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/63a7293c83f20bcf3f97dc4a1e3a21007aba928329f1f7dc812990f1b6bd7365.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 5
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 4
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/26201a4a4a75e1defa7e629d3d53970c5c4ad0ebe093a2ef9e6420d809e2ef76.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 6
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 5
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/98c4c4df5bbfe6ddf3aa673340dd4ab8747d88326214dfe3a3067a950d7254a3.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 7
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 6
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/885deb46a21e1dc80fae5e7d19c6265a6f4d9ce8e0d4cede47e23e2f12b9df7c.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 8
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 7
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/bf63d80a71a813dc3de81de3cdcccf2b927c38546f4903a1adae18c2a54c2ef6.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 9
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 8
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/0f7d29e80bb8e9988c822384b36c1de868e411dfd36338a2851f590e33820800.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 10
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 9
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/7d48264410914d3c19ae416a18849c73a2302c05cfa3c42a151ae29d3cb3c55b.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 11
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 10
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/663ca7c1eeafa5a86761a5625ab7f2984e48ed2b31b889697ce0ffd7a3821a81.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 12
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 11
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/d239d5597cbd1767a4795adc1046f463b29d32effdf2a98f1e9620cf0ddc0e48.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 13
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 12
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/c53683cbb661acc84fc779f69b7999656d018460dd770f96206efee08a930ab5.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 14
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 13
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/2bd3acd7c4717ac714a5afefdd077c3ecfcf72509ef218ebeeafd100512e0bf7.webp"
+    kind: face
+    alt: KAILAS BM45 PRO 滑雪背带裤商品图 15
+    source: KAILAS 官网商品图库；展示授权状态待核
+    sort_order: 14
 data_source:
   kind: official
   origin_url: https://kailasgear.com/products/kailas-bm45-pro-ski-bibs-unisex

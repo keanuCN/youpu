@@ -4,7 +4,7 @@ brand: decathlon
 model: SNB 100
 year: 2026
 title: DREAMSCAPE SNB 100 2026
-one_liner: DREAMSCAPE 入门全山地男款，平底与长摇杆、软 flex 3/10、方向性双向板型；加拿大官网原价 CAD $220，按 2026-10-02 参考汇率 1 CAD≈¥4.7121 折算约 ¥1,037 CNY（非中国售价）。规格以 152cm 为例。
+one_liner: DREAMSCAPE 入门全山地男款，平底与长摇杆、软 flex 3/10、方向性双向板型；加拿大官网页面显示促销价 CAD $165（原价 CAD $220），按 ECB 2026-10-14 汇率折算约 ¥777 CNY（非中国售价，促销与库存动态变化）。规格以 152cm 为例。
 editorial_scores:
   stability: 4.4
   response: 4.3
@@ -13,10 +13,11 @@ editorial_scores:
   forgiveness: 9.0
   value: 9.2
 price:
-  min: 1037
-  max: 1037
+  min: 777
+  max: 777
   currency: CNY
 specs:
+  lengthOptions: 152 / 156 / 160 MW
   length: 152
   sidecut: 8.2
   waistWidth: 250
@@ -31,16 +32,21 @@ specs:
   scenes:
     - beginner
     - all-mountain
-  priceCheckedAt: 2026-10-12
-  priceStatus: 现有人民币参考价缺少可核查的中国销售渠道与报价日期，本轮未确认；不能视为已核实官方价格。
+  sizeSpecs:
+    - { size: "152", overallLength: 1520, waistWidth: 250, sidecutRadii: "8.2 m", stanceWidth: "540 mm", setback: 20, noseWidth: 291, tailWidth: 291, weight: 2767, riderWeight: "30–60 kg", riderHeight: "167–174 cm" }
+    - { size: "156", overallLength: 1560, waistWidth: 253, sidecutRadii: "8.5 m", stanceWidth: "550 mm", setback: 20, noseWidth: 295, tailWidth: 295, weight: 2670, riderWeight: "50–80 kg", riderHeight: "171–178 cm" }
+    - { size: "160 MW", overallLength: 1600, waistWidth: 265, sidecutRadii: "8.5 m", stanceWidth: "575 mm", setback: 20, noseWidth: 309, tailWidth: 309, weight: 2966, riderWeight: "70–90 kg", riderHeight: "175–190 cm" }
+  priceCheckedAt: 2026-10-15
+  priceStatus: CNY 777 为加拿大官方页 CAD 165 促销价按 ECB 2026-10-14 汇率折算；同页原价 CAD 220 约合 CNY 1,036。加拿大价格不代表中国售价，促销与库存动态变化。京东结果出现 SNB 100 156 cm、条目号 4278169，但未显示当前人民币金额，也未核实授权店铺及与本档案的雪季对应关系，暂不作为中国报价。
+  selectionNotes: "尺寸、板宽、半径、推荐站距与标称重量依据 Decathlon 官方页面：https://www.decathlon.co.uk/p/mens-all-mountain-snowboarding-board-snb-100-beige/309522/c179m8996555。标称重量公差 ±6%。"
 images:
-  - url: "https://contents.mediadecathlon.com/p2027365/k%247ef3d02e4e2afe08ebbe0e24d400c10b/tabla-de-snowboard-hombre-snb100.jpg"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/592023b2cd65264ef7949e93696d2eb26c5302ab23e8263f05aac6ab829ef245.webp"
     kind: face
     alt: Decathlon SNB 100 单板主图
     source: Decathlon Chile 官方 SNB 100 商品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）
     sort_order: 0
 data_source:
   kind: official
-  origin_url: https://www.decathlon.ca/en/p/all-mountain-and-freestyle-snowboard-snb-100/309522/c193m8660203
+  origin_url: https://www.decathlon.co.uk/p/mens-all-mountain-snowboarding-board-snb-100-beige/309522/c179m8996555
   snapshot_url: https://thesnowfever.com/list/snowboards?b_id=1&level=&sort=-comment_count&style=common
 status: published

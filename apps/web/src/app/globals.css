@@ -162,7 +162,7 @@
   /* 全站交互签名：灰度 → 彩色 */
   .plate {
     filter: grayscale(1) contrast(1.04);
-    transition: filter 0.7s var(--ease-swiss), transform 0.7s var(--ease-swiss);
+    transition: opacity 0.5s ease-out, filter 0.7s var(--ease-swiss), transform 0.7s var(--ease-swiss);
   }
   .group:hover .plate,
   a:hover .plate,

@@ -1,0 +1,37 @@
+{
+  "capturedAt": "2026-10-14",
+  "product": "Salomon STANCE 84 R (and MI12)",
+  "article": "L45457300+",
+  "officialProductPage": "https://www.salomon.com/en-us/product/stance-84-r-and-mi12-li1721",
+  "officialPageSizes": [161, 169, 177, 185],
+  "sizeSpecs": [
+    {"lengthCm": 161, "tipMm": 121, "waistMm": 84, "tailMm": 104, "radiusM": 13, "netWeightG": 5090},
+    {"lengthCm": 169, "tipMm": 122, "waistMm": 84, "tailMm": 105, "radiusM": 15, "netWeightG": 5210},
+    {"lengthCm": 177, "tipMm": 123, "waistMm": 84, "tailMm": 106, "radiusM": 16, "netWeightG": 5490},
+    {"lengthCm": 185, "tipMm": 124, "waistMm": 84, "tailMm": 107, "radiusM": 18, "netWeightG": 5650}
+  ],
+  "weightBasis": "官网将套装内容列为 skis + plates + bindings，字段标签为 Net Weight；录入为每双套装净重。",
+  "seasonCheck": {
+    "catalog": "Salomon Japan 2026/27 ski catalog checked 2026-10-14",
+    "result": "STANCE 84 R 未列入该季目录。官网当前商品页没有显示年份或季节。",
+    "thirdPartyEvidence": [
+      {
+        "url": "https://hv2.skiessentials.com/2027-ski-test/skis/2027-salomon-stance-84",
+        "evidence": "页面标题为 2027 Salomon Stance 84，并明确称 Stance 84 R 是 2027 carryover model；长度 161/169/177/185 cm，与官方商品页相同。",
+        "role": "season/model corroboration"
+      },
+      {
+        "url": "https://www.sportinglife.ca/en-CA/equipment/ski/alpine-skis/adult-alpine-skis/stance-84-r-ski-%2B-mi-12-gw-binding-2027/25931912-00291295.html",
+        "evidence": "Stance 84 R + MI 12 GW 商品明确标为 [2027]，并列 161/169/177/185 四个长度。",
+        "role": "season/configuration corroboration"
+      },
+      {
+        "url": "https://www.botteroski.com/en/163-ski/543-All-mountain/496698-sci-salomon-e-stance-84-r-con.html",
+        "evidence": "商品页标注 Inverno 2027，并列货号 L45457300-L45436800+L4758720015，与 Salomon 官网 L45457300+ article 前缀相符。",
+        "role": "season/article-family corroboration"
+      }
+    ],
+    "decision": "Publish as 2026/27 (model year 2027): the official page remains the authority for L45457300+ size geometry and bundle contents; season is established by the 2027 carryover test and model-specific retail listings. Note that Salomon Japan's 2026/27 catalog omits the model, and do not claim the season is printed on the manufacturer page."
+  },
+  "publicationDecision": "Published following third-party season corroboration; official catalog absence and official product page's missing season label remain explicit limitations."
+}
