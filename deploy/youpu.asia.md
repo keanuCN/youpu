@@ -35,6 +35,8 @@ nginx -t && systemctl reload nginx
 
 ## 发布域名前台
 
+2026-10-15 榜单排序回退修复：发现服务器源码落后于 GitHub `main`，新建前台时使用了旧版 `rankRows`。已从提交 `b6dc25a` 的工作树同步源码并分别构建 IP 与域名站，覆盖后的单板综合榜包含本地确认的优先顺序；榜单页 HTTP 200，API 健康检查 `db=true`、`redis=true`，点单根路径 HTTP 200。源码部署前备份、两套构建日志和校验结果保存在 `/opt/youpu-releases/20261015-full-commit-66dd5e6/`。本次没有写生产数据库：同步预检发现滑雪种子字段与类目规格声明不一致，需先补齐 schema 再同步 MACH / Ogasaka 新商品。
+
 2026-10-15 已补充“单板教练认证体系”，按加拿大 CASI、日本 JSBA、美国 AASI/PSIA-AASI、新西兰 SBINZ、国际 ISIA 与中国职业技能评价体系介绍，并将该区块放在三件套搭配之后。IP 内测站 `http://115.190.156.88/youpu/guides/snowboard-setup` 与域名站服务器本机 HTTPS 路由均返回 HTTP 200；三个服务 active，根路径点单应用返回 HTTP 200。发布目录 `/opt/youpu-releases/20261015-instructor-systems/`，源码与 systemd 配置备份保留在该目录。部署只更新 Web 页面与标志图片，没有改动数据库或 API。公网域名仍受备案接入限制。
 
 2026-10-15 已更新单板科普排版，并增加可切换预设和前后脚角度滑块的俯视站姿模拟。IP 内测站与域名站分别切换到 `.next-snowboard-stance-ui-20261015-{ip,domain}`；IP 科普页与域名科普页在服务器本机校验均为 HTTP 200，点单根站 HTTP 200，三个服务均 active。构建与发布资料位于服务器 `/opt/youpu-releases/20261015-snowboard-stance-ui/`。域名公网访问仍受备案接入限制。
