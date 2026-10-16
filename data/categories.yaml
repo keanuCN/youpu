@@ -252,6 +252,187 @@
         compare: true
         order: 160
 
+      # ── 官方规格补充（保留品牌原文，不强行归一化） ──
+      - key: manufacturer
+        label: 制造商
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: false
+        order: 165
+
+      - key: topsheet
+        label: 板面材料
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: true
+        order: 166
+
+      - key: edge
+        label: 钢刃
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: true
+        order: 167
+
+      - key: sidewallAngle
+        label: 侧墙角度
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: false
+        order: 168
+
+      - key: sidewallColor
+        label: 侧墙颜色
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: false
+        order: 169
+
+      - key: officialCoreConstructionLegend
+        label: 官方板芯构造说明
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: false
+        order: 170
+
+      - key: insertQuantity
+        label: 固定器孔位
+        group: 尺寸与形状
+        type: text
+        filter: false
+        compare: false
+        order: 75
+
+      - key: contactLength
+        label: 接触长度
+        group: 尺寸与形状
+        type: number
+        unit: mm
+        filter: false
+        compare: true
+        compareDirection: context
+        order: 76
+
+      - key: pcPlate
+        label: PC 板型号
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: false
+        order: 171
+
+      - key: soleFinish
+        label: 板底处理
+        group: 板芯与结构
+        type: text
+        filter: false
+        compare: false
+        order: 172
+
+      - key: sidecutDesign
+        label: 侧切设计
+        group: 尺寸与形状
+        type: text
+        filter: false
+        compare: false
+        order: 77
+
+      - key: formerSeriesName
+        label: 原系列名称
+        group: 价格与年份
+        type: text
+        filter: false
+        compare: false
+        order: 420
+
+      - key: stiffnessScale
+        label: 硬度标注说明
+        group: 性能取向
+        type: text
+        filter: false
+        compare: false
+        order: 250
+
+      - key: officialSkillLevels
+        label: 官方能力等级说明
+        group: 适用场景
+        type: text
+        filter: false
+        compare: false
+        order: 350
+
+      - key: useCase
+        label: 官方用途说明
+        group: 适用场景
+        type: text
+        filter: false
+        compare: false
+        order: 360
+
+      - key: useCaseLimit
+        label: 使用限制与注意
+        group: 适用场景
+        type: text
+        filter: false
+        compare: false
+        order: 370
+
+      - key: sizingNote
+        label: 选码说明
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 703
+
+      - key: edgeSpecNote
+        label: 刃角规格说明
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 704
+
+      - key: flexNote
+        label: 硬度规格说明
+        group: 选购参考
+        type: text
+        filter: false
+        compare: false
+        order: 705
+
+      - key: season
+        label: 雪季
+        group: 价格与年份
+        type: text
+        filter: false
+        compare: false
+        order: 430
+
+      - key: sourceCheckedAt
+        label: 来源核查日期
+        group: 来源审计
+        type: text
+        filter: false
+        compare: false
+        display: false
+        order: 930
+
+      - key: sourceNote
+        label: 来源备注
+        group: 来源审计
+        type: text
+        filter: false
+        compare: false
+        display: false
+        order: 931
+
       # ── 性能取向 ──
       - key: flex
         label: 硬度
