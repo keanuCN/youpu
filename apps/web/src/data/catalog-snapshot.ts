@@ -36,8 +36,8 @@ export interface CatalogSnapshotMeta {
 }
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
-  "source": "http://115.190.156.88/youpu",
-  "generatedAt": "2026-10-16T02:42:17.568Z",
+  "source": "repository seed YAML: snowboard (cover URLs only; catalog facts and community statistics retained)",
+  "generatedAt": "2026-10-16T02:56:00.071Z",
   "total": 326,
   "pageSize": 48,
   "categorySlugs": [
@@ -11542,7 +11542,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 6631,
     "priceMax": 7145,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/93d0b624be41d697476feb068148746e56fc446c1aab2cef703845106a8eca31.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -13963,7 +13963,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": null,
     "priceMax": null,
     "priceCurrency": "CNY",
-    "coverUrl": null,
+    "coverUrl": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/0d8149df83c0ec3b7bff8957489f3594061616853b61d607a1e1205ca2a1a49f.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,

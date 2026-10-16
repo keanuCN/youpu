@@ -712,6 +712,14 @@
       "source": "GRAY 官方 26-27 商品页（图片授权待核）"
     }
   ],
+  "gray-sonicalmach-2027": [
+    {
+      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/93d0b624be41d697476feb068148746e56fc446c1aab2cef703845106a8eca31.webp",
+      "kind": "face",
+      "alt": "GRAY SONICALMACH 2027 官方板面与底面图（46/51/54/55w 系列）",
+      "source": "GRAY 官方 26-27 商品页；仅对应标准尺寸组，图片使用授权待核"
+    }
+  ],
   "gray-sonicalmach-lt-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/7abf4bca5e0d712ff41bd78f9228091c7cb7fee40ad2551fe5124c78f96487b1.webp",
@@ -1824,7 +1832,14 @@
       "source": "OGASAKA 官方 FC 商品页图片（授权待核；正式上线前迁移至自有 COS 或替换为自制图）"
     }
   ],
-  "ogasaka-fc-s-2027": [],
+  "ogasaka-fc-s-2027": [
+    {
+      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/0d8149df83c0ec3b7bff8957489f3594061616853b61d607a1e1205ca2a1a49f.webp",
+      "kind": "face",
+      "alt": "OGASAKA FC-S 2027 官方板面与底面图",
+      "source": "OGASAKA 官方 26-27 FC-S 商品页；图片使用授权待核"
+    }
+  ],
   "ogasaka-shin-2026": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/2307fc308389eeaa60ae1e83e044f9812b0bd95abd5ba49b8cc228253afec480.webp",
