@@ -165,6 +165,7 @@ async function main(): Promise<void> {
         const created = await tx.product.create({ data: {
           id: uuidv7(), slug: seed.slug, categoryId: category.id, brandId: brand.id,
           model: seed.model, year: seed.year, title: seed.title, oneLiner: seed.one_liner,
+          coverUrl: seed.images[0]?.url ?? null,
           priceMin: price.min, priceMax: price.max, priceCurrency: price.currency,
           specs: toJsonInput(seed.specs), editorialScores: seed.editorial_scores ? toJsonInput(seed.editorial_scores) : undefined,
           status: seed.status, dataSource: source?.id ?? null, publishedAt: new Date(),
