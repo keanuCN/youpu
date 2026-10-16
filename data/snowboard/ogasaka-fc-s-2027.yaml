@@ -51,7 +51,12 @@ specs:
     - { size: "157W", effectiveEdge: 1320, contactLength: 1220, noseWidth: 312, waistWidth: 260, tailWidth: 308, sidecutRadii: "7.8 / 8.4 / 9 m", setback: 31, stanceWidth: "560 mm" }
     - { size: "160W", effectiveEdge: 1350, contactLength: 1240, noseWidth: 313, waistWidth: 262, tailWidth: 309, sidecutRadii: "8.4 / 9 / 9.5 m", setback: 32, stanceWidth: "560 mm" }
     - { size: "163W", effectiveEdge: 1380, contactLength: 1280, noseWidth: 314, waistWidth: 266, tailWidth: 310, sidecutRadii: "9.3 / 10.1 / 10.8 m", setback: 33, stanceWidth: "560 mm" }
-images: []
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/0d8149df83c0ec3b7bff8957489f3594061616853b61d607a1e1205ca2a1a49f.webp"
+    kind: face
+    alt: OGASAKA FC-S 2027 官方板面与底面图
+    source: OGASAKA 官方 26-27 FC-S 商品页；图片使用授权待核
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://www.ogasaka-snowboard.com/product_26_09_fc-s.html

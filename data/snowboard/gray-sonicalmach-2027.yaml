@@ -46,7 +46,12 @@ specs:
     - { size: "60w", overallLength: 1600, effectiveEdge: 1255, contactLength: 1200, waistWidth: 262, sidecutRadii: "9.8 / 9.3 / 10.2", sidecutOffset: -20, noseLength: 215, noseWidth: 304, noseHeight: 55.1, tailLength: 185, tailWidth: 297, tailHeight: 41.0, camber: 8, stanceWidth: "500–620", setback: 25, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 7.2 / W 8.4 / T 7.4", topsheet: Polyamide }
     - { size: "63w", overallLength: 1630, effectiveEdge: 1290, contactLength: 1230, waistWidth: 256, sidecutRadii: "English 9.1 / 9.9; Japanese 9.1 / 9.5 / 9.6（原表不一致）", sidecutOffset: -45, noseLength: 215, noseWidth: 303, noseHeight: 55.1, tailLength: 185, tailWidth: 288, tailHeight: 41.0, camber: 10, stanceWidth: "500–620", setback: 35, insertQty: "12+12", edge: "1.8 mm stainless", base: "IS7500 Graphite", stiffness: "N 7.5 / W 8.8 / T 7.8", topsheet: Polyamide }
 status: published
-images: []
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/93d0b624be41d697476feb068148746e56fc446c1aab2cef703845106a8eca31.webp"
+    kind: face
+    alt: GRAY SONICALMACH 2027 官方板面与底面图（46/51/54/55w 系列）
+    source: GRAY 官方 26-27 商品页；仅对应标准尺寸组，图片使用授权待核
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://graysnowboards.co.jp/product-2627-eng/
