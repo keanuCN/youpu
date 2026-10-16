@@ -193,6 +193,7 @@ async function main(): Promise<void> {
             year: seed.year,
             title: seed.title,
             oneLiner: seed.one_liner,
+            coverUrl: seed.images[0]?.url ?? null,
             priceMin: normalizedPrice.min,
             priceMax: normalizedPrice.max,
             priceCurrency: normalizedPrice.currency,

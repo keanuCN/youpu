@@ -15,7 +15,7 @@ import { toJsonInput } from '../common/json';
 import { uuidv7 } from '../common/uuid';
 import type { Prisma } from '../common/db';
 
-const CATEGORIES = ['snowboard', 'snowboard-binding', 'snowboard-boot', 'skis', 'skiing-apparel'];
+const CATEGORIES = ['snowboard', 'snowboard-binding', 'snowboard-boot', 'skis', 'skiing-apparel', 'ski-protection'];
 
 /**
  * Synchronize curated winter-sports catalog fields from YAML while preserving
