@@ -22,7 +22,7 @@ specs:
   tailWidth: 306
   sidecutRadii: 8.4 / 8.9 / 9.5 m
   stanceSetback: 33
-  stanceWidth: 560 mm
+  stanceWidth: 560
   profile: Camber
   profileFamily: camber
   shape: 自由式刻滑 / FC 系列专家型号
@@ -33,7 +33,7 @@ specs:
   edge: Stainless
   base: Sintered Graphite
   soleFinish: Stone Finish（convex sole）
-  flex: 偏硬；26/27 官方标注 NEW FLEX，未给出可跨品牌比较的数值硬度
+  flexNote: 偏硬；26/27 官方标注 NEW FLEX，未给出可跨品牌比较的数值硬度
   scenes:
     - carving
   abilityLevel: 高阶至专家
