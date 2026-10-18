@@ -93,10 +93,14 @@
 pnpm --filter @youpu/api mirror:seed-product-images
 ```
 
-抽查 3 张单板源图，下载并转换为 WebP（不上传、不改种子；报告写入 `data/tmp/product-image-mirror/`）：
+抽查 3 张单板源图，下载并转换为 WebP（不上传、不改种子；报告写入 `data/tmp/product-image-mirror/`）。如需限定商品，可通过 `--slug` 指定一个或多个已发布商品 slug，多个 slug 用逗号分隔：
 
 ```bash
 pnpm --filter @youpu/api mirror:seed-product-images --category snowboard --limit 3 --check-sources
+```
+
+```bash
+pnpm --filter @youpu/api mirror:seed-product-images --category snowboard --slug donek-knapton-twin-custom-2026,donek-raven-custom-2026 --check-sources
 ```
 
 已有镜像可以先复用，无需密钥、不写入云端：工具下载源图计算哈希，验证对应 TOS 对象的公开读取、类型和大小，仅把匹配图片的本地种子 URL 改为已有地址，并生成备份。不存在或验证失败的对象保留源地址，报告列为失败项，命令非零退出；这不撤回同批次成功替换的本地文件。

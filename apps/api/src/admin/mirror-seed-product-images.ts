@@ -11,7 +11,7 @@ const PUBLIC_BASE = 'https://youpu.tos-cn-beijing.volces.com';
 const DATA_ROOT = path.resolve(__dirname, '../../../../data');
 const WINTER_CATEGORIES = ['snowboard', 'snowboard-binding', 'snowboard-boot', 'skis', 'skiing-apparel'];
 
-interface Options { apply: boolean; checkSources: boolean; reuseExisting: boolean; envFile?: string; categories: string[]; limit: number }
+interface Options { apply: boolean; checkSources: boolean; reuseExisting: boolean; envFile?: string; categories: string[]; slugs?: string[]; limit: number }
 interface SeedFile { file: string; original: string; slug: string; category: string; images: Array<{ url: string }> }
 interface ImageResult { source: string; target?: string; bytes?: number; error?: string }
 
@@ -24,13 +24,16 @@ function optionsFrom(argv: string[]): Options {
     else if (arg === '--reuse-existing') options.reuseExisting = true;
     else if (arg === '--env-file' && argv[i + 1] && !argv[i + 1]!.startsWith('--')) options.envFile = path.resolve(argv[++i]!);
     else if (arg === '--category' && argv[i + 1]) options.categories = argv[++i]!.split(',');
+    else if (arg === '--slug' && argv[i + 1]) options.slugs = argv[++i]!.split(',');
     else if (arg === '--limit' && argv[i + 1]) options.limit = Number(argv[++i]);
     else throw new Error(`不支持的参数：${arg}`);
   }
   if ([options.apply, options.checkSources, options.reuseExisting].filter(Boolean).length > 1) throw new Error('--apply、--check-sources 与 --reuse-existing 只能选择一个');
   if (options.limit !== Infinity && (!Number.isSafeInteger(options.limit) || options.limit < 1)) throw new Error('--limit 必须为正整数');
   if (!options.categories.every(c => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(c))) throw new Error('类目必须为合法 slug');
+  if (options.slugs && !options.slugs.every(slug => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))) throw new Error('商品 slug 必须为合法 slug');
   options.categories = [...new Set(options.categories)].sort();
+  if (options.slugs) options.slugs = [...new Set(options.slugs)];
   return options;
 }
 
@@ -56,7 +59,12 @@ async function verifyPublicImage(key: string, body: Buffer): Promise<boolean> {
 
 async function main(): Promise<void> {
   const options = optionsFrom(process.argv.slice(2));
-  const seeds = await readSeeds(options.categories);
+  const allSeeds = await readSeeds(options.categories);
+  const seeds = options.slugs ? allSeeds.filter(seed => options.slugs!.includes(seed.slug)) : allSeeds;
+  if (options.slugs && seeds.length !== options.slugs.length) {
+    const found = new Set(seeds.map(seed => seed.slug));
+    throw new Error(`未找到已发布商品：${options.slugs.filter(slug => !found.has(slug)).join(', ')}`);
+  }
   const allSources = [...new Set(seeds.flatMap(s => s.images.map(i => i.url)))];
   const own = (url: string) => url.startsWith(`${PUBLIC_BASE}/product-images/`);
   const eligible = allSources.filter(url => !own(url) && isApprovedSourceImageUrl(url, APPROVED_SOURCE_HOSTS));
@@ -65,6 +73,7 @@ async function main(): Promise<void> {
   console.log(JSON.stringify({
     mode: options.apply ? 'apply' : options.reuseExisting ? 'reuse-existing' : options.checkSources ? 'check-sources' : 'dry-run',
     categories: options.categories,
+    ...(options.slugs ? { slugs: options.slugs } : {}),
     publishedProducts: seeds.length,
     productsWithoutImages: seeds.filter(s => !s.images.length).length,
     distinctImages: allSources.length,

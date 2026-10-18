@@ -1,0 +1,58 @@
+slug: k2-vandal-2026
+category: snowboard
+brand: k2
+model: Vandal
+year: 2026
+title: K2 Vandal 2025/26
+one_liner: 25/26 青少年全能 Twin，四码 129–141 cm；Twin Rocker 板型配 Aspen 木芯、Biax 玻纤与 Extruded 2000 底板，Catch-Free 调校降低卡刃，官方定位入门到进阶。
+editorial_scores:
+  stability: 6
+  response: 5.8
+  float: 5.5
+  park: 7.2
+  forgiveness: 8
+  value: 5.8
+price:
+  min: 1303.61
+  max: 2172.68
+  currency: CNY
+specs:
+  length: 137
+  effectiveEdge: 1090
+  sidecut: 7.3
+  waistWidth: 229
+  stanceSetback: 0
+  core: Aspen Core
+  fiberglass: Biax Glass
+  base: Extruded 2000 Base
+  profile: Twin Rocker
+  profileFamily: rocker
+  shape: Twin
+  scenes:
+    - all-mountain
+    - freestyle
+  lengthOptions: 129 / 134 / 137 / 141
+  sidecutRadii: 7.30 m（137）
+  sizeSpecs:
+    - { size: "129", effectiveEdge: 960, noseWidth: 256, waistWidth: 224, tailWidth: 255, sidecutRadii: "7.00 m", stanceWidth: "381 mm (15 in reference)", setback: 0 }
+    - { size: "134", effectiveEdge: 1010, noseWidth: 261, waistWidth: 226, tailWidth: 260, sidecutRadii: "7.20 m", stanceWidth: "406 mm (16 in reference)", setback: 0 }
+    - { size: "137", effectiveEdge: 1090, noseWidth: 268, waistWidth: 229, tailWidth: 267, sidecutRadii: "7.30 m", stanceWidth: "432 mm (17 in reference)", setback: 0 }
+    - { size: "141", effectiveEdge: 1110, noseWidth: 272, waistWidth: 232, tailWidth: 271, sidecutRadii: "7.50 m", stanceWidth: "457 mm (18 in reference)", setback: 0 }
+  sourceCheckedAt: 2026-10-16
+  seasonEvidence: 来源为 K2 官方 25/26 单板产品目录 PDF（K2 官方静态资源域，由 k2snow.com 支持页链出）。目录 YOUTH COLLECTION 页标该款 BOARD SHAPE 为 Twin、RIDING STYLE 为 All-Mountain、ABILITY 为 Beginner to Advanced，列出 129/134/137/141 四个尺码。该目录页同时收录 KANDI，两者各有独立尺码表。
+  priceCheckedAt: 2026-10-18
+  priceSource: https://secure.als.com/k2-vandal-snowboard-2026-kids-10614571/p
+  exchangeRate: USD/CNY 6.6862（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: "按 ECB 2026-10-16 汇率折算外币页面售价；Al’s Sporting Goods K2 Vandal 2026 页面列出 USD 194.97 折扣价与 USD 324.95 标价。 仅作人民币参考，不代表中国国内售价，税费、汇兑及跨境费用未计。"
+images:
+  - url: "https://alssports.vteximg.com.br/arquivos/ids/3427043/10526596x3048694.jpg?v=638918679348470000"
+    kind: face
+    alt: "K2 Vandal 2025/26 商品图"
+    source: "Al’s Sporting Goods 2026 款 K2 Vandal 商品页图；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

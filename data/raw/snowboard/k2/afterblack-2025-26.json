@@ -1,0 +1,19 @@
+{
+  "brand": "K2",
+  "model": "Afterblack",
+  "season": "2025/26",
+  "sourceUrl": "https://k2snow.com/en-us/p/afterblack-mens-snowboard-2526",
+  "retrievedAt": "2026-10-16",
+  "officialUsd": { "list": 539.95 },
+  "sizeChart": [
+    { "size": "149", "effectiveEdgeCm": 114, "noseWaistTailCm": [28.5, 24.5, 28.5], "sidecutM": 7.5, "stanceIn": 19, "setback": "center", "weightKg": "50-82+" },
+    { "size": "151", "effectiveEdgeCm": 117, "noseWaistTailCm": [28.8, 24.7, 28.8], "sidecutM": 7.7, "stanceIn": 20, "setback": "center", "weightKg": "54-86+" },
+    { "size": "154", "effectiveEdgeCm": 119, "noseWaistTailCm": [29.3, 25.1, 29.3], "sidecutM": 7.9, "stanceIn": 21, "setback": "center", "weightKg": "54-86+" },
+    { "size": "156W", "effectiveEdgeCm": 122, "noseWaistTailCm": [30.5, 26.2, 30.5], "sidecutM": 8.1, "stanceIn": 21, "setback": "center", "weightKg": "59-100+" },
+    { "size": "157", "effectiveEdgeCm": 122, "noseWaistTailCm": [29.7, 25.4, 29.7], "sidecutM": 8.1, "stanceIn": 21, "setback": "center", "weightKg": "59-91+" },
+    { "size": "159W", "effectiveEdgeCm": 124, "noseWaistTailCm": [30.8, 26.5, 30.8], "sidecutM": 8.3, "stanceIn": 22, "setback": "center", "weightKg": "59-104+" },
+    { "size": "160", "effectiveEdgeCm": 124, "noseWaistTailCm": [30.0, 25.7, 30.0], "sidecutM": 8.3, "stanceIn": 22, "setback": "center", "weightKg": "59-100+" }
+  ],
+  "features": { "shape": "true twin", "profile": "twin combination camber", "core": "BAP", "glass": "triax", "additive": "Carbon DarkWeb", "base": "sintered 4000", "inserts": "2x4", "flex": "mid-flex; official page does not show numeric rating" },
+  "notes": "页面正文有一次拼写 Aterblack，商品标题与其余内容均为 Afterblack；档案采用官方商品标题拼写。"
+}

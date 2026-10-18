@@ -1,0 +1,51 @@
+slug: atomic-redster-s9-revoshock-s-2027
+category: skis
+brand: atomic
+model: Redster S9 Revoshock S + I 12 GW
+year: 2027
+title: Atomic Redster S9 Revoshock S 2026/27
+price:
+  min: 9260.41
+  max: 9260.41
+  currency: CNY
+one_liner: 系统式雪道回转板；68 mm 腰宽，155–170 cm 四种长度，Revoshock S、Carbon Boost、TI Powered 与 Active Camber。
+specs:
+  lengthOptions: 155 / 160 / 165 / 170 cm
+  waistWidth: 68
+  turnRadius: 12.5
+  turnRadiusReferenceLength: 165 cm
+  sidecutDimensions: "155: 115-68-101 mm / 11.3 m；160: 116.5-68-102.5 mm / 11.9 m；165: 118-68-104 mm / 12.5 m；170: 119.5-68-105.5 mm / 13.1 m。"
+  profile: Active Camber 0/100/0
+  core: Power Woodcore（白蜡木与杨木）
+  construction: Ultrawall 全侧墙；TI Powered 钛合金层
+  technologies: Revoshock S；Carbon Boost；World Cup Base Finish；Icon Flex Interface
+  baseEdgeAngle: 0.8
+  sideEdgeAngle: 87
+  terrain: 雪道 / 短弯 / 硬雪
+  skierLevel: 进阶至专家
+  bindingSetup: I 12 GW 系统套装；商品页重量字段口径需按具体地区 SKU 确认
+  geometryNotes: Atomic 官网列出全部四种长度、截面与半径；不将 165 cm 的页面重量泛化到其他长度。
+  seasonEvidence: Atomic 当前官网商品货号 AASS03628，标题为 Redster S9 Revoshock S + I 12 GW；以官网当前款入库，精确雪季已通过官网当前商品信息与系列页核对。
+  sourceCheckedAt: 2026-10-17
+  officialPrice: USD 1,385（不含 VAT）
+  priceMarket: Atomic 美国官网，含 I 12 GW 固定器的系统套装
+  priceSource: https://www.atomic.com/en-us/products/redster-s9-revoshock-s-i-12-gw-aa7218-202600
+  exchangeRateSource: ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240；折算 USD/CNY 6.686213
+  priceStatus: 美国官网 I 12 GW 系统套装挂牌 USD 1,385（页面注明 exc. VAT）；按 ECB 2026-10-16 汇率折合 CNY 9,260.41。美国地区参考，不是中国售价；未计当地税费、运输、进口及支付汇兑成本，不能与裸板价格直接比较。
+editorial_scores:
+  edgeGrip: 9.4
+  stability: 8.8
+  agility: 9.4
+  softSnow: 3
+  versatility: 5.2
+  forgiveness: 3.5
+data_source:
+  kind: official
+  origin_url: https://www.atomic.com/en-us/products/redster-s9-revoshock-s-i-12-gw-aa7218-202600
+images:
+  - url: "https://cdn.amersports.com/cdbfffab-ebd3-4caa-a4bc-b49c013b8723/ATP_AASS03628_3_GHO_REDSTER_S9_RVSK_S_I12_GW_FullImageWebOptimized.png?width=1200&height=630&fit=bounds&format=auto&canvas=1200,630&bg-color=ffffff&quality=80"
+    kind: face
+    alt: Atomic Redster S9 Revoshock S 2026/27 雪板商品图
+    source: Atomic 官方商品页 Open Graph 图；图片使用授权待核
+    sort_order: 0
+status: published

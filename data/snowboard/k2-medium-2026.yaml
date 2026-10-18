@@ -1,0 +1,65 @@
+slug: k2-medium-2026
+category: snowboard
+brand: k2
+model: Medium
+year: 2026
+title: K2 Medium 2025/26
+one_liner: Jake Kuzyk 主导的全性别自由式 Twin 板，25/26 雪季完全重做：传统圆头圆尾、以 Camber 为主的板型与可预期弹性的 BAP 三拼木芯，新增 Carbon Backbone 提升弹跳而不加硬。
+editorial_scores:
+  stability: 7.2
+  response: 8.0
+  float: 5.5
+  park: 8.8
+  forgiveness: 6.5
+  value: 7.0
+price:
+  min: 2408.56
+  max: 4014.27
+  currency: CNY
+specs:
+  length: 152
+  effectiveEdge: 1180
+  sidecut: 7.5
+  waistWidth: 247
+  stanceSetback: 0
+  core: BAP Core（Bamboo / Aspen / Paulownia 三拼）
+  fiberglass: Triax Glass
+  base: Sintered 4000, Stone Finish
+  profile: Camber
+  profileFamily: camber
+  shape: Twin / Traditional Shape
+  scenes:
+    - freestyle
+    - all-mountain
+  lengthOptions: 141 / 144 / 147 / 149 / 152 / 154W / 155 / 157 / 158W / 159
+  sidecutRadii: 7.50 m（152）
+  sizeSpecs:
+    - { size: "141", effectiveEdge: 1090, noseWidth: 275, waistWidth: 235, tailWidth: 275, sidecutRadii: "6.80 m", stanceWidth: "457 mm (18 in reference)", setback: 0 }
+    - { size: "144", effectiveEdge: 1120, noseWidth: 279, waistWidth: 238, tailWidth: 279, sidecutRadii: "7.00 m", stanceWidth: "483 mm (19 in reference)", setback: 0 }
+    - { size: "147", effectiveEdge: 1140, noseWidth: 284, waistWidth: 242, tailWidth: 284, sidecutRadii: "7.20 m", stanceWidth: "483 mm (19 in reference)", setback: 0 }
+    - { size: "149", effectiveEdge: 1160, noseWidth: 286, waistWidth: 244, tailWidth: 286, sidecutRadii: "7.30 m", stanceWidth: "508 mm (20 in reference)", setback: 0 }
+    - { size: "152", effectiveEdge: 1180, noseWidth: 290, waistWidth: 247, tailWidth: 290, sidecutRadii: "7.50 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+    - { size: "154W", effectiveEdge: 1210, noseWidth: 302, waistWidth: 258, tailWidth: 302, sidecutRadii: "7.70 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+    - { size: "155", effectiveEdge: 1210, noseWidth: 294, waistWidth: 251, tailWidth: 294, sidecutRadii: "7.70 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+    - { size: "157", effectiveEdge: 1220, noseWidth: 296, waistWidth: 252, tailWidth: 296, sidecutRadii: "7.80 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+    - { size: "158W", effectiveEdge: 1230, noseWidth: 307, waistWidth: 262, tailWidth: 307, sidecutRadii: "7.90 m", stanceWidth: "559 mm (22 in reference)", setback: 0 }
+    - { size: "159", effectiveEdge: 1230, noseWidth: 299, waistWidth: 254, tailWidth: 299, sidecutRadii: "7.90 m", stanceWidth: "559 mm (22 in reference)", setback: 0 }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 599.95 list; USD 359.97 sale
+  priceMarket: K2 美国官方商店
+  priceSource: https://k2snow.com/en-us/p/medium-unisex-snowboard-2526
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261015.pdf
+  seasonEvidence: K2 官方美国商品页标题为 K2 Medium Unisex Snowboard 2026、URL 路径含 2526；页面正文明确写 "designing the all-new K2 Medium for the '25/26 season"，并列出 141–159 十个尺码，故按 2025/26 雪季归档。官方分类为 Freestyle、能力定位 Advanced–Expert。官方 152 行尾宽单元格原文写作 "29.0 - 24.7 29.0"（缺连字符），档案按同表格式取 24.7 / 290 mm，原始写法保留在 raw 证据中。
+  priceStatus: 按 ECB 2026-10-15 USD/CNY 6.6910 折算，K2 美国官方商店显示 USD 359.97 折扣价约 CNY 2,408.56、USD 599.95 标价约 CNY 4,014.27。仅为美国页面折算参考，不代表中国售价；税费、汇兑和跨境费用未计。尺码表 SETBACK 列 10 个尺码全部标 CENTERED，故档案记 stanceSetback 0，未套用其他型号的英寸 setback 口径。
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0670/5135/6456/files/2026-k2-medium-snowboard-kb251080-kb251080.jpg?crop=center&height=1200&v=1774449683&width=1200"
+    kind: face
+    alt: "K2 Medium 2025/26 商品图"
+    source: "SkiEssentials 2026 款 K2 Medium SKU KB251080 商品页图；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/medium-unisex-snowboard-2526
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

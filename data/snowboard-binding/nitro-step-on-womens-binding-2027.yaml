@@ -5,6 +5,12 @@ model: "Step On Women's"
 year: 2027
 title: "Nitro Step On Women's 2027"
 one_liner: "Nitro 女款 Step On 固定器；品牌标注响应 7/10、舒适 9/10，须配女款 Step On 雪鞋并按尺码表确认。"
+editorial_scores:
+  response: 7
+  comfort: 9
+  versatility: 7.5
+  convenience: 9.5
+  value: 7
 price:
   min: 2471.78
   max: 2471.78

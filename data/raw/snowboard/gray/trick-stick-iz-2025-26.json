@@ -1,0 +1,36 @@
+{
+  "brand": "GRAY",
+  "model": "TRICK STICK [iz]",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "sourceUrlEnglish": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "GRAY 官方 25/26 目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / FREESTYLE CATEGORY'。",
+  "category": "Freestyle",
+  "positioning": "目录自由式类目；板型 SINGLE CAMBER，图注区标 'TRICK S TICK [ iz ]' 与 GULL WING W CAMBER；官方型号名含 [iz] 后缀，档案按原文保留，未简写为 TRICK STICK。",
+  "priceGroups": [
+    { "models": ["TRICK STICK iz 38", "TRICK STICK iz 41", "TRICK STICK iz 44", "TRICK STICK iz 48", "TRICK STICK iz 51", "TRICK STICK iz 54"], "pretaxJpy": 109000, "taxIncludedJpy": 119900 }
+  ],
+  "priceSourceNote": "自由式图例区把 TRICK STICK [iz] 与 GENIUS [HV] 并列为 '109,000 / 119,900' 一档（该区另列 SHRED 与 R.P.M. 为 79,000/86,900）。档案据此记 TRICK STICK iz 为税前 109,000、含税 119,900。\\245 为日元符号编码。",
+  "sizeTable": [
+    { "size": "TRICK STICK iz 38", "overallLengthMm": 1380, "effectiveEdgeMm": 1100, "contactLengthMm": 1050, "noseWidthMm": 270, "waistWidthMm": 230, "tailWidthMm": 270, "sidecutMm": [7400, 6600, 7400], "offsetMm": 0, "camberMm": 7.0, "rockerMm": null, "stanceRangeMm": [420, 500], "setbackMm": 0, "insertQuantity": "10+10", "noseHeightMm": 34.4, "tailHeightMm": 34.4 },
+    { "size": "TRICK STICK iz 41", "overallLengthMm": 1410, "effectiveEdgeMm": 1120, "contactLengthMm": 1070, "noseWidthMm": 275, "waistWidthMm": 234, "tailWidthMm": 275, "sidecutMm": [7600, 6800, 7600], "offsetMm": 0, "camberMm": 7.0, "rockerMm": null, "stanceRangeMm": [430, 510], "setbackMm": 0, "insertQuantity": "10+10", "noseHeightMm": 36.5, "tailHeightMm": 36.5 },
+    { "size": "TRICK STICK iz 44", "overallLengthMm": 1440, "effectiveEdgeMm": 1140, "contactLengthMm": 1090, "noseWidthMm": 279, "waistWidthMm": 238, "tailWidthMm": 279, "sidecutMm": [7800, 7000, 7800], "offsetMm": 0, "camberMm": 7.0, "rockerMm": null, "stanceRangeMm": [440, 520], "setbackMm": 0, "insertQuantity": "10+10", "noseHeightMm": 38.3, "tailHeightMm": 38.3 },
+    { "size": "TRICK STICK iz 48", "overallLengthMm": 1480, "effectiveEdgeMm": 1170, "contactLengthMm": 1120, "noseWidthMm": 285, "waistWidthMm": 244, "tailWidthMm": 285, "sidecutMm": [8400, 7400, 8400], "offsetMm": 0, "camberMm": 8.0, "rockerMm": null, "stanceRangeMm": [480, 560], "setbackMm": 0, "insertQuantity": "10+10", "noseHeightMm": 38.9, "tailHeightMm": 38.9 },
+    { "size": "TRICK STICK iz 51", "overallLengthMm": 1510, "effectiveEdgeMm": 1190, "contactLengthMm": 1140, "noseWidthMm": 289, "waistWidthMm": 248, "tailWidthMm": 289, "sidecutMm": [8600, 7600, 8600], "offsetMm": 0, "camberMm": 8.0, "rockerMm": null, "stanceRangeMm": [500, 580], "setbackMm": 0, "insertQuantity": "10+10", "noseHeightMm": 41.2, "tailHeightMm": 41.2 },
+    { "size": "TRICK STICK iz 54", "overallLengthMm": 1540, "effectiveEdgeMm": 1220, "contactLengthMm": 1160, "noseWidthMm": 292, "waistWidthMm": 250, "tailWidthMm": 292, "sidecutMm": [8800, 7800, 8800], "offsetMm": 0, "camberMm": 8.0, "rockerMm": null, "stanceRangeMm": [520, 600], "setbackMm": 0, "insertQuantity": "10+10", "noseHeightMm": 43.2, "tailHeightMm": 43.2 }
+  ],
+  "construction": {
+    "edge": "1.8mm/stainless",
+    "sidewallAngle": 25,
+    "runningBase": "P-TEX3000 Sintered（图注区）",
+    "profile": "Single Camber",
+    "shape": "Twin（鼻/尾宽对称，退格 0）",
+    "structure": "GULL WING W CAMBER（图注区）"
+  },
+  "sizeTableNote": "每码鼻长与尾长相同、鼻宽与尾宽相同、退格 0，属对称 Twin 口径。侧切为三段多半径。目录型号写 'TRICK STICK iz 38' 等（iz 不带方括号），档案 slug 采用 TRICK STICK [iz] 以区别于其他 TRICK STICK 变体，型号数值保留原文。",
+  "conflicts": [
+    "图注区写作 'TRICK S TICK [ iz ]'，型号行写作 'TRICK S TICK iz'，方括号写法不一致，档案两者都保留。",
+    "目录另有 'TRICK STICK PE \\rS\\rC\\003w' 等变体条目，与 [iz] 不同，本档案不收。"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "brand": "MOSS Snowstick",
+  "model": "U5 EX",
+  "season": "2025/26",
+  "sourceUrl": "https://www.mosssnowstick.com/25-26/u5-ex",
+  "capturedAt": "2026-10-16",
+  "listedPrice": { "amount": 1250, "currency": "USD" },
+  "specifications": {
+    "lengthMm": 1570,
+    "runningLengthMm": 864,
+    "effectiveEdgeMm": 1060,
+    "sidecutRadiusMm": [9800, 6900],
+    "noseWidthMm": 310,
+    "waistWidthMm": 262,
+    "tailWidthMm": 292,
+    "stanceMm": 540,
+    "stanceRangeMm": [500, 580],
+    "setbackMm": -46.5,
+    "profile": "Snowsurf Camber 3 mm",
+    "flex": "Stiff",
+    "topSheet": ["Poplar", "Cherry"],
+    "core": ["Poplar", "Bamboo"],
+    "base": "ISO High-Speed Graphite"
+  },
+  "convertedReference": {
+    "amount": 8363.78,
+    "currency": "CNY",
+    "method": "USD 1250 * (EUR-CNY 7.4993 / EUR-USD 1.1208)",
+    "exchangeRateDate": "2026-10-15",
+    "exchangeRateSource": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html",
+    "limitations": ["Historical US official-page listed price converted for reference; not China retail or transaction price.", "Taxes, shipping, currency conversion and import charges are excluded.", "Official page says flex is stiff but gives no numeric rating."]
+  }
+}

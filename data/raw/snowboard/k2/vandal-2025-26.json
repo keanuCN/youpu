@@ -1,0 +1,29 @@
+{
+  "brand": "K2",
+  "model": "Vandal",
+  "season": "2025/26",
+  "sourceUrl": "https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard",
+  "sourcePageUrl": "https://k2snow.com/en-us/support/product-catalogs",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "K2 官方 25/26 单板产品目录 PDF。目录 YOUTH COLLECTION 页标 'VANDAL | KANDI | LIL KAT | LIL MINI'，VANDAL 页眉标 youth / all-mountain / twin。",
+  "category": "Youth / All-Mountain",
+  "collection": "YOUTH COLLECTION",
+  "positioning": "目录标注 BOARD SHAPE: Twin，RIDING STYLE: All-Mountain，ABILITY: Beginner to Advanced。标语 'DESIGNED TO FUEL THE NEXT GENERATION'。",
+  "sizeTable": [
+    { "size": "129", "effectiveEdgeCm": 96, "noseWaistTailMm": [256, 224, 255], "sidecutM": 7.00, "stanceIn": 15, "setback": "CENTER", "weightLb": "<120", "weightKg": "<54" },
+    { "size": "134", "effectiveEdgeCm": 101, "noseWaistTailMm": [261, 226, 260], "sidecutM": 7.20, "stanceIn": 16, "setback": "CENTER", "weightLb": "<130", "weightKg": "<59" },
+    { "size": "137", "effectiveEdgeCm": 109, "noseWaistTailMm": [268, 229, 267], "sidecutM": 7.30, "stanceIn": 17, "setback": "CENTER", "weightLb": "<130", "weightKg": "<59" },
+    { "size": "141", "effectiveEdgeCm": 111, "noseWaistTailMm": [272, 232, 271], "sidecutM": 7.50, "stanceIn": 18, "setback": "CENTER", "weightLb": "<150", "weightKg": "<68" }
+  ],
+  "features": {
+    "profile": "Twin Rocker Profile",
+    "shape": "Twin",
+    "core": "Aspen Core",
+    "glass": "Biax Glass",
+    "base": "Extruded 2000 Base",
+    "tune": "Catch-Free Tune"
+  },
+  "sizeTableNote": "目录同页 VANDAL 与 KANDI 共用 FEA TURES 行（两者结构描述一致：Twin Rocker、Extruded 2000、Aspen Core、Biax Glass、Catch-Free Tune），但各有独立尺码表。经比对，第一张表为 KANDI（132/137/142/145W/148W，腰宽 231–250 mm），第二张表为 VANDAL（129/134/137/141，腰宽 224–232 mm）；本档案只取第二张 VANDAL 表。VANDAL 表 134 行 TIP/WAIST/TAIL 原文写作 '26.1 - 22.6 - - 26'（尾宽前多一连字符、尾宽未补零），按同表格式录作 260 mm，原始写法在此保留。",
+  "priceNote": "该型号官方商品页在 K2 官方 sitemap 中未见独立 25/26 条目，且 25/26 目录为规格型文档、不含标价，故本档案不填价格。",
+  "notes": "腰宽 224–232 mm，属青少年板口径。体重列为上限值，档案按原文保留不等号含义。目录未给数值硬度。"
+}

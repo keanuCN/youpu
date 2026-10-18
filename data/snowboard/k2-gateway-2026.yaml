@@ -1,0 +1,62 @@
+slug: k2-gateway-2026
+category: snowboard
+brand: k2
+model: Gateway
+year: 2026
+title: K2 Gateway 2025/26
+one_liner: 25/26 入门到中级全山地定向 Twin，八码 150–164W cm 含三个宽版；Directional Rocker 板型配 Aspen 木芯、ICG 10 碳纤玻纤与 Extruded 2000 底板，Hybritech 结构面向进阶与探索。
+editorial_scores:
+  stability: 6.8
+  response: 6.5
+  float: 7
+  park: 6
+  forgiveness: 8
+  value: 5.8
+price:
+  min: 1416.37
+  max: 2360.80
+  currency: CNY
+specs:
+  length: 156
+  effectiveEdge: 1190
+  sidecut: 8.0
+  waistWidth: 247
+  stanceSetback: 19
+  core: Aspen Core
+  fiberglass: ICG 10 Biax Carbon Glass
+  base: Extruded 2000 Base
+  profile: Directional Rocker
+  profileFamily: rocker
+  shape: Directional Twin
+  scenes:
+    - all-mountain
+    - powder
+  lengthOptions: 150 / 153 / 156 / 157W / 159 / 160W / 162 / 164W
+  sidecutRadii: 8.00 m（156）
+  sizeSpecs:
+    - { size: "150", effectiveEdge: 1170, noseWidth: 282, waistWidth: 242, tailWidth: 282, sidecutRadii: "7.50 m", stanceWidth: "508 mm (20 in reference)", setback: 19 }
+    - { size: "153", effectiveEdge: 1170, noseWidth: 286, waistWidth: 245, tailWidth: 286, sidecutRadii: "7.90 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "156", effectiveEdge: 1190, noseWidth: 287, waistWidth: 247, tailWidth: 287, sidecutRadii: "8.00 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "157W", effectiveEdge: 1190, noseWidth: 303, waistWidth: 260, tailWidth: 303, sidecutRadii: "8.00 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "159", effectiveEdge: 1220, noseWidth: 291, waistWidth: 249, tailWidth: 291, sidecutRadii: "8.10 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "160W", effectiveEdge: 1220, noseWidth: 307, waistWidth: 263, tailWidth: 307, sidecutRadii: "8.10 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "162", effectiveEdge: 1250, noseWidth: 295, waistWidth: 251, tailWidth: 295, sidecutRadii: "8.20 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+    - { size: "164W", effectiveEdge: 1270, noseWidth: 313, waistWidth: 266, tailWidth: 313, sidecutRadii: "8.20 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+  sourceCheckedAt: 2026-10-16
+  seasonEvidence: 来源为 K2 官方 25/26 单板产品目录 PDF（K2 官方静态资源域，由 k2snow.com 支持页链出）；目录第 017 页将 GATEWAY POP 与 GATEWAY 并排，GATEWAY 列标 BOARD SHAPE 为 Directional Twin、RIDING STYLE 为 All-Mountain、ABILITY 为 Beginner to Intermediate，列出 150–164W 八个尺码。官方商品页 k2snow.com/en-us/p/gateway-mens-snowboard-2526 多次采集均返回 HTTP 410，故以官方目录为唯一来源。
+  priceCheckedAt: 2026-10-18
+  priceSource: https://www.sportchek.ca/en/pdp/k2-gateway-men-s-snowboard-2026-86563940f.html
+  exchangeRate: CAD/CNY 4.7217（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: "按 ECB 2026-10-16 汇率折算外币页面售价；SportChek K2 Gateway 2026 页面列出 CAD 299.97 折扣价与 CAD 499.99 标价。 仅作人民币参考，不代表中国国内售价，税费、汇兑及跨境费用未计。"
+images:
+  - url: "https://blauerboardshop.com/cdn/shop/files/K2GatewaySnowboard2026-Men_s.png?v=1744481756"
+    kind: face
+    alt: "K2 Gateway 2025/26 商品图"
+    source: "Blauer Board Shop 2026 款 K2 Gateway 商品页；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

@@ -63,7 +63,7 @@ const REVIEW_COPY: Record<string, ReviewCopy> = {
     summary: "雪龄 / 体重 / 水平 / 场地",
     placeLabel: "常滑场地",
     placePlaceholder: "如 崇礼 · 万龙",
-    contentPlaceholder: "在什么雪况、什么速度、滑了几天？它哪里超出预期，哪里让你后悔？",
+    contentPlaceholder: "写清雪板年份与长度、实滑天数、雪况和玩法（如刻滑/平花/公园），再说最满意与不满意的地方。",
     showHeight: true,
     showWeight: true,
   },
@@ -545,6 +545,12 @@ function ReviewForm({ gear }: { gear: GearItem }) {
           placeholder={copy.contentPlaceholder}
           className="min-h-24 resize-y rounded-none border-border text-[13px] leading-relaxed"
         />
+
+        {gear.categorySlug === "snowboard" ? (
+          <p className="-mt-2 text-[11px] leading-5 text-muted-foreground">
+            建议补充雪板年份、长度、实滑天数、雪况与主要玩法；雪龄、体重、水平和常滑场地会从个人资料带入。
+          </p>
+        ) : null}
 
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p className="mono-label">{content.trim().length} / 10 字起</p>

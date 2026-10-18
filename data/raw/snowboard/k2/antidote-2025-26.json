@@ -1,0 +1,33 @@
+{
+  "brand": "K2",
+  "model": "Antidote",
+  "season": "2025/26",
+  "sourceUrl": "https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard",
+  "sourcePageUrl": "https://k2snow.com/en-us/support/product-catalogs",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "K2 官方 25/26 单板产品目录 PDF（K2 官方静态资源域，由 k2snow.com/en-us/support/product-catalogs 页面链出）。目录 DOPAMINE COLLECTION 跨页标 'ANTIDOTE | SKY PILOT'，两款共用一页但各有独立 FEA TURES 与尺码表；ANTIDOTE 页眉标 freeride / directional twin / sage kotsenburg。",
+  "category": "Freeride",
+  "collection": "DOPAMINE COLLECTION（Sage Kotsenburg 系列）",
+  "positioning": "目录标注 BOARD SHAPE: Directional Twin，RIDING STYLE: Big Mountain Freeride/Freestyle，ABILITY: Advanced to Expert。标语 'SAGE KOTSENBURG HAS HIS HANDS ON THE CONTROLS... AND WE LOVE WHERE HE'S HEADED'。",
+  "sizeTable": [
+    { "size": "148", "effectiveEdgeCm": 112, "noseWaistTailMm": [295, 249, 285], "sidecutM": 6.90, "stanceIn": 19, "setbackIn": 0.75, "weightLb": "90-160+", "weightKg": "41-73+" },
+    { "size": "151", "effectiveEdgeCm": 114, "noseWaistTailMm": [300, 253, 290], "sidecutM": 7.10, "stanceIn": 20, "setbackIn": 0.75, "weightLb": "100-170+", "weightKg": "45-77+" },
+    { "size": "154", "effectiveEdgeCm": 117, "noseWaistTailMm": [304, 256, 294], "sidecutM": 7.30, "stanceIn": 21, "setbackIn": 0.75, "weightLb": "110-180+", "weightKg": "50-82+" },
+    { "size": "157", "effectiveEdgeCm": 119, "noseWaistTailMm": [308, 259, 298], "sidecutM": 7.50, "stanceIn": 21, "setbackIn": 0.75, "weightLb": "120-190+", "weightKg": "54-86+" },
+    { "size": "160", "effectiveEdgeCm": 122, "noseWaistTailMm": [312, 262, 302], "sidecutM": 7.70, "stanceIn": 22, "setbackIn": 0.75, "weightLb": "130-200+", "weightKg": "59-91+" },
+    { "size": "163", "effectiveEdgeCm": 124, "noseWaistTailMm": [316, 265, 306], "sidecutM": 7.90, "stanceIn": 23, "setbackIn": 0.75, "weightLb": "130-200+", "weightKg": "59-91+" }
+  ],
+  "features": {
+    "profile": "Camber Profile",
+    "shape": "Directional Twin",
+    "core": "A1 Core",
+    "glass": "ICG 20 Triax Glass with Carbon",
+    "additive": "SpaceGlass Tip and Tail",
+    "base": "Wax Infused Sintered 4001 Base",
+    "contour": "3D Base Contour",
+    "topsheet": "Recess3D Top Sheet"
+  },
+  "sizeTableNote": "ANTIDOTE 与 SKY PILOT 在目录中共用一页，两款的 FEA TURES 与尺码表分列。本档案只取 ANTIDOTE 列（Camber Profile / A1 Core / SpaceGlass / ICG 20 Triax），未混入 SKY PILOT 的 Directional Combination Camber / VolumeShift / S1 Core / Carbon Y Beam 列。ANTIDOTE 侧切为单值（6.90–7.90），与同页 SKY PILOT 的三段多半径（8.6/6.0/8.6 等）形式不同，可据此区分两列。",
+  "priceNote": "该型号官方商品页（k2snow.com/en-us/p/antidote-unisex-snowboard-2526）连续多次采集均返回 HTTP 410，且 25/26 目录为规格型文档、不含标价，故本档案不填价格，也不由同批型号推断。",
+  "notes": "目录未给该款数值硬度（FLEX 行为图形表示），档案未补造 flex 数值。Sage Kotsenburg 为 K2 签约滑手，此处仅记录官方页面署名，未据此生成评分。"
+}

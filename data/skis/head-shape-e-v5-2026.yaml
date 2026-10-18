@@ -34,6 +34,13 @@ specs:
   priceSource: https://tanabesports.net/goods_zhcn_cny_44295.html
   priceStatus: 2025/26 对应商品页显示促销价 JPY 58,700，并动态折算显示 CNY 2,480.43；页面列出 149/156/163/170 cm。该数为日本零售商折算参考价，不是中国国内售价；页面汇率可能变化，跨境运费、关税未计，且尺码即时库存需下单前核对。
   compatibilitySources: https://head.ru/ski/shop/skis/discounts/CF854649-178B-30D5-CA92-E692F4F09C64/104214/；https://www.tanabesports.jp/ts/wp-content/uploads/2025/05/25-26_HEAD_user.pdf；https://preisvergleich.heise.de/head-shape-e-v5-performance-pr-11-gw-inkl-bindung-modell-2025-2026-315255-a3620573.html；https://www.grip-walk.com/faq/
+editorial_scores:
+  edgeGrip: 8.1
+  stability: 7.7
+  agility: 8.2
+  softSnow: 4.8
+  versatility: 7.5
+  forgiveness: 7
 data_source:
   kind: official
   origin_url: https://head.ru/ski/shop/skis/discounts/CF854649-178B-30D5-CA92-E692F4F09C64/104214/

@@ -1,0 +1,63 @@
+slug: k2-extravision-2026
+category: snowboard
+brand: k2
+model: Extravision
+year: 2026
+title: K2 Extravision 2025/26
+one_liner: 面向中级到进阶的女性定向板，Combination Camber 在双脚之间保留 Camber、板头板尾转为 Rocker；Rhythm 女性专用木芯配 ICG 10 碳纤玻纤，兼顾客厅道与粉雪。
+editorial_scores:
+  stability: 7.4
+  response: 7.5
+  float: 8.0
+  park: 6.0
+  forgiveness: 7.0
+  value: 7.5
+price:
+  min: 2167.68
+  max: 3612.81
+  currency: CNY
+specs:
+  length: 147
+  effectiveEdge: 1120
+  sidecut: 7.1
+  waistWidth: 240
+  stanceSetback: 13
+  core: Rhythm Core（Aspen 为主，板头板尾用 Paulownia）
+  fiberglass: ICG 10 Biax Glass with Carbon
+  base: Sintered 4000, Stone Finish
+  profile: Combination Camber
+  profileFamily: camber
+  shape: Directional / Traditional Shape
+  scenes:
+    - all-mountain
+    - powder
+  lengthOptions: 139 / 142 / 145 / 147 / 149 / 149W / 152 / 152W
+  sidecutRadii: 7.10 m（147）
+  sizeSpecs:
+    - { size: "139", effectiveEdge: 1050, noseWidth: 269, waistWidth: 230, tailWidth: 269, sidecutRadii: "6.60 m", stanceWidth: "457 mm (18 in reference)", setback: 13 }
+    - { size: "142", effectiveEdge: 1080, noseWidth: 273, waistWidth: 234, tailWidth: 273, sidecutRadii: "6.80 m", stanceWidth: "457 mm (18 in reference)", setback: 13 }
+    - { size: "145", effectiveEdge: 1100, noseWidth: 277, waistWidth: 237, tailWidth: 277, sidecutRadii: "7.00 m", stanceWidth: "483 mm (19 in reference)", setback: 13 }
+    - { size: "147", effectiveEdge: 1120, noseWidth: 280, waistWidth: 240, tailWidth: 280, sidecutRadii: "7.10 m", stanceWidth: "483 mm (19 in reference)", setback: 13 }
+    - { size: "149", effectiveEdge: 1130, noseWidth: 282, waistWidth: 241, tailWidth: 282, sidecutRadii: "7.25 m", stanceWidth: "483 mm (19 in reference)", setback: 13 }
+    - { size: "149W", effectiveEdge: 1130, noseWidth: 288, waistWidth: 247, tailWidth: 288, sidecutRadii: "7.25 m", stanceWidth: "483 mm (19 in reference)", setback: 13 }
+    - { size: "152", effectiveEdge: 1160, noseWidth: 285, waistWidth: 244, tailWidth: 285, sidecutRadii: "7.50 m", stanceWidth: "508 mm (20 in reference)", setback: 13 }
+    - { size: "152W", effectiveEdge: 1160, noseWidth: 293, waistWidth: 252, tailWidth: 293, sidecutRadii: "7.50 m", stanceWidth: "508 mm (20 in reference)", setback: 13 }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 539.95 list; USD 323.97 sale
+  priceMarket: K2 美国官方商店
+  priceSource: https://k2snow.com/en-us/p/extravision-womens-snowboard-2526
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261015.pdf
+  seasonEvidence: K2 官方美国商品页标题为 K2 Extravision Women's Snowboard 2026、URL 路径含 2526，列出 139–152W 八个尺码；官方分类为 All Mountain / Powder、能力定位 Intermediate–Advanced，按 2025/26 雪季归档。官方 features 图注另写作 Twin Combination Camber，与分类行的 Directional 并存，档案按分类行取 Directional。
+  priceStatus: 按 ECB 2026-10-15 USD/CNY 6.6910 折算，K2 美国官方商店显示 USD 323.97 折扣价约 CNY 2,167.68、USD 539.95 标价约 CNY 3,612.81。仅为美国页面折算参考，不代表中国售价；税费、汇兑和跨境费用未计。尺码表 SETBACK 列为 0.5 in，按 1 in = 25.4 mm 录作 13 mm 整；W 版与标准版同长同侧切，仅宽度不同，未合并成同一尺码。
+images:
+  - url: "https://cdn11.bigcommerce.com/s-186hk/images/stencil/1280x1280/products/114348/211143/k2%20extravision%202026__34650.1752083142.jpg?c=2"
+    kind: face
+    alt: "K2 Extravision 2025/26 商品图"
+    source: "Corbetts 2026 款 K2 Extravision 商品页；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/extravision-womens-snowboard-2526
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

@@ -1,0 +1,29 @@
+{
+  "brand": "GRAY",
+  "model": "SONICALMACH (MACH series redesign; excludes SONICALMACH LT)",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "englishCatalogUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "capturedAt": "2026-10-16",
+  "priceGroups": [
+    { "models": ["46", "51", "54", "55w"], "amount": 149600, "currency": "JPY", "taxIncluded": true },
+    { "models": ["54 Ver.C", "55w Ver.C", "58", "60w", "63w"], "amount": 159500, "currency": "JPY", "taxIncluded": true }
+  ],
+  "sizeTable": [
+    { "size": "146", "overallLengthMm": 1460, "effectiveEdgeMm": 1140, "contactLengthMm": 1090, "noseWidthMm": 283, "waistWidthMm": 240, "tailWidthMm": 278, "sidecutMm": [7600, 7200, 7800], "offsetMm": -15, "camberMm": 6, "stanceRangeMm": [440, 560], "setbackMm": 5, "stiffnessNWT": [4.0, 5.2, 4.1] },
+    { "size": "151", "overallLengthMm": 1510, "effectiveEdgeMm": 1190, "contactLengthMm": 1140, "noseWidthMm": 290, "waistWidthMm": 248, "tailWidthMm": 285, "sidecutMm": [8400, 8000, 8600], "offsetMm": -15, "camberMm": 6, "stanceRangeMm": [480, 600], "setbackMm": 5, "stiffnessNWT": [5.0, 6.2, 5.1] },
+    { "size": "154", "overallLengthMm": 1540, "effectiveEdgeMm": 1220, "contactLengthMm": 1180, "noseWidthMm": 293, "waistWidthMm": 250, "tailWidthMm": 288, "sidecutMm": [8700, 8300, 9000], "offsetMm": -15, "camberMm": 6, "stanceRangeMm": [480, 600], "setbackMm": 5, "stiffnessNWT": [6.5, 7.6, 6.6] },
+    { "size": "155W", "overallLengthMm": 1550, "effectiveEdgeMm": 1220, "contactLengthMm": 1180, "noseWidthMm": 303, "waistWidthMm": 260, "tailWidthMm": 298, "sidecutMm": [8700, 8300, 9000], "offsetMm": -15, "camberMm": 6, "stanceRangeMm": [480, 600], "setbackMm": 5, "stiffnessNWT": [6.5, 7.6, 6.6] },
+    { "size": "154 Ver.C", "overallLengthMm": 1540, "effectiveEdgeMm": 1220, "contactLengthMm": 1180, "noseWidthMm": 293, "waistWidthMm": 250, "tailWidthMm": 288, "sidecutMm": [8700, 8300, 9000], "offsetMm": -15, "camberMm": 6, "stanceRangeMm": [480, 600], "setbackMm": 15, "stiffnessNWT": [6.5, 8.0, 7.0] },
+    { "size": "155W Ver.C", "overallLengthMm": 1550, "effectiveEdgeMm": 1220, "contactLengthMm": 1180, "noseWidthMm": 303, "waistWidthMm": 260, "tailWidthMm": 298, "sidecutMm": [8700, 8300, 9000], "offsetMm": -15, "camberMm": 6, "stanceRangeMm": [480, 600], "setbackMm": 15, "stiffnessNWT": [6.5, 8.0, 7.0] },
+    { "size": "158", "overallLengthMm": 1580, "effectiveEdgeMm": 1245, "contactLengthMm": 1200, "noseWidthMm": 295, "waistWidthMm": 252, "tailWidthMm": 288, "sidecutMm": [9400, 8900, 9800], "offsetMm": -20, "camberMm": 8, "stanceRangeMm": [500, 620], "setbackMm": 25, "stiffnessNWT": [6.9, 8.4, 7.4] },
+    { "size": "160W", "overallLengthMm": 1600, "effectiveEdgeMm": 1255, "contactLengthMm": 1200, "noseWidthMm": 304, "waistWidthMm": 262, "tailWidthMm": 297, "sidecutMm": [9800, 9300, 10200], "offsetMm": -20, "camberMm": 8, "stanceRangeMm": [500, 620], "setbackMm": 25, "stiffnessNWT": [6.9, 8.4, 7.4] },
+    { "size": "163W", "overallLengthMm": 1630, "effectiveEdgeMm": 1290, "contactLengthMm": 1230, "noseWidthMm": 303, "waistWidthMm": 256, "tailWidthMm": 288, "sidecutMm": [9100, 9960], "offsetMm": -45, "camberMm": 10, "stanceRangeMm": [500, 620], "setbackMm": 35, "stiffnessNWT": [7.3, 8.8, 7.8] }
+  ],
+  "catalogNotes": [
+    "The 25/26 catalog states MACH was redesigned as SONICALMACH with revised construction and flex.",
+    "The official model name SONICALMACH is distinct from SONICALMACH LT; do not merge the two lines.",
+    "Catalog records 63w sidecut as 9100/9960 mm; raw values are retained without guessing an omitted radius."
+  ],
+  "conversion": { "eurJpy": 177.06, "eurCny": 7.4993, "date": "2026-10-15", "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html" }
+}

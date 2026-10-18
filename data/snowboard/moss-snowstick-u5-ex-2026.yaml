@@ -1,0 +1,59 @@
+slug: moss-snowstick-u5-ex-2026
+category: snowboard
+brand: moss
+model: Snowstick U5 EX
+year: 2026
+title: MOSS Snowstick U5 EX 2025/26
+one_liner: U 系列 157 cm 手工木皮雪浪板，白杨木与樱桃木面板搭配白杨/竹木芯和 3 mm Snowsurf Camber；官方描述为硬韧，兼顾高速控制、粉雪浮力与机动性。
+editorial_scores:
+  stability: 8.5
+  response: 8.5
+  float: 8.8
+  park: 3.8
+  forgiveness: 6.2
+  value: 5.8
+price:
+  min: 8363.78
+  max: 8363.78
+  currency: CNY
+specs:
+  length: 157
+  effectiveEdge: 1060
+  runningLength: 864
+  noseWidth: 310
+  waistWidth: 262
+  tailWidth: 292
+  sidecutRadii: 9.8/6.9 m
+  stanceWidth: 540
+  stanceRange: 500–580 mm
+  stanceSetback: -46.5
+  shape: Directional
+  profile: Snowsurf Camber 3 mm
+  profileFamily: camber
+  core: Poplar and bamboo
+  fiberglass: Official page does not specify
+  base: ISO High-Speed Graphite
+  scenes:
+    - all-mountain
+    - powder
+    - carving
+  sizeSpecs:
+    - { size: "157", overallLength: 1570, effectiveEdge: 1060, runningLength: 864, noseWidth: 310, waistWidth: 262, tailWidth: 292, sidecutRadii: "9.8/6.9 m", stanceWidth: "540 mm (500-580 mm range)", setback: -46.5, flex: Stiff, profile: "Snowsurf Camber 3 mm" }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 1250
+  priceMarket: MOSS Snowstick 美国官方 2025/26 商店页
+  priceSource: https://www.mosssnowstick.com/25-26/u5-ex
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: MOSS Snowstick 官方美国 25/26 U5 EX 页面标价 USD 1250，按 ECB 2026-10-15 USD/CNY 6.6910 折算约 CNY 8363.78。为美国页面历史标价换算参考，不代表中国售价；税费、汇兑和跨境费用未计。页面只写 Flex Stiff，未给出数值硬度。
+images:
+  - url: "https://shop.r10s.jp/spray/cabinet/moss/imgrc0110182865.jpg"
+    kind: face
+    alt: MOSS Snowstick U5 EX 2025/26 单板商品图
+    source: SPRAY 25/26 MOSS SNOWSTICK 商品页；图片使用授权待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.mosssnowstick.com/25-26/u5-ex
+  snapshot_url: https://www.mosssnowstick.com/24-25
+status: published

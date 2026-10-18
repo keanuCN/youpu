@@ -1,0 +1,53 @@
+slug: dps-pagoda-tour-cfl-105-2027
+category: skis
+brand: dps
+model: Pagoda Tour CFL 105
+year: 2027
+title: DPS Pagoda Tour CFL 105 2026/27
+price:
+  min: 11333.14
+  max: 11333.14
+  currency: CNY
+one_liner: 105 mm 腰宽的轻量登山巡游板；40% rocker / 60% 有效刃，18 m 半径，五种板长均公开逐尺寸重量。
+specs:
+  lengthOptions: 155 / 163 / 171 / 179 / 184 cm
+  waistWidth: 105
+  turnRadius: 18
+  turnRadiusReferenceLength: 各长度均为 18 m
+  sidecutDimensions: "155: 131-105-115 mm；163: 132-105-116 mm；171: 133-105-117 mm；179: 134-105-118 mm；184: 135-105-119 mm；半径均为 18 m。"
+  profile: 40% rocker / 60% effective edge
+  core: 页面未披露木芯材料
+  construction: Pagoda Tour CFL；Made in the USA
+  technologies: 高效爬升与下滑性能取向；官方描述强调可处理多种野雪和复杂地形
+  weightPerSki: 1531
+  weightReferenceLength: 171 cm
+  terrain: 登山巡游 / 粉雪 / 复杂野雪
+  skierLevel: 进阶至专家
+  bindingSetup: 裸板；固定器另配
+  weightBasis: 官网逐长度单只重量：155/1367、163/1437、171/1531、179/1619、184/1643 g。
+  geometryNotes: 官方产品页公开五种板长对应截面、重量和相同 18 m 半径；171 cm 重量仅作顶部参考值。
+  seasonEvidence: DPS 当前官方 Pagoda Tour CFL 105 页面给出完整逐长度尺寸与重量；未直接标示雪季，故根据当前官网在售货号记录为 2026/27，需与官方目录交叉确认后再细化季节。
+  sourceCheckedAt: 2026-10-17
+  seasonStatus: 当前官网型号；具体年款待官方目录确认
+  officialPrice: USD 1,695（DPS 美国官网 2027 款裸板常规挂牌价）
+  priceMarket: DPS 美国官网；裸板
+  priceSource: https://www.dpsskis.com/collections/pagoda-tour-cfl
+  exchangeRateSource: ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240；折算 USD/CNY 6.686213
+  priceStatus: DPS 美国官网将 2027 款 Pagoda Tour CFL 105 裸板列价 USD 1,695；按 ECB 2026-10-16 汇率折合 CNY 11,333.14。美国地区挂牌参考，不是中国售价；未计税费、跨境运输、进口及支付汇兑成本。
+editorial_scores:
+  edgeGrip: 6.2
+  stability: 6.8
+  agility: 7.8
+  softSnow: 8.2
+  versatility: 7.1
+  forgiveness: 5.8
+data_source:
+  kind: official
+  origin_url: https://www.dpsskis.com/collections/south-america-ski-collection/products/carbon-pagoda-tour-cfl-105
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0079/8133/4575/files/SupportingImage1-PTCFL105.jpg?v=1721077483"
+    kind: face
+    alt: DPS Pagoda Tour CFL 105 雪板商品图
+    source: DPS 官方 Pagoda Tour CFL 105 商品页；页面未明确雪季，档案 2026/27 年款仍待目录交叉确认；图片使用授权待核
+    sort_order: 0
+status: published

@@ -5,6 +5,13 @@ model: SONICALMACH
 year: 2027
 title: GRAY SONICALMACH 2027
 one_liner: GRAY 26/27 MACH 系列的现行官方名称为 SONICALMACH，与 SONICALMACH LT 分开列示；含中低速刻滑与地形技巧款，以及更偏高速刻滑的 ver.C 和长板。
+editorial_scores:
+  stability: 8.2
+  response: 8.8
+  float: 4.0
+  park: 3.5
+  forgiveness: 5.2
+  value: 6.3
 price:
   min: 6631
   max: 7145

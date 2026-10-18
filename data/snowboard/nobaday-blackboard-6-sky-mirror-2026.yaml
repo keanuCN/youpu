@@ -5,6 +5,13 @@ model: Blackboard 6.0 Sky Mirror Carving
 year: 2026
 title: NOBADAY 小黑板 Blackboard 6.0 Sky Mirror Carving
 one_liner: 面向刻滑和全山地的方向性板，采用 Flat-Out-Camber、碳纤维补强与白杨木/山毛榉板芯；官网同页对硬度标注不一致，故不录入单一硬度值。
+editorial_scores:
+  stability: 8.0
+  response: 8.3
+  float: 6.0
+  park: 5.5
+  forgiveness: 5.5
+  value: 6.0
 price:
   min: 4343.58
   max: 4343.58

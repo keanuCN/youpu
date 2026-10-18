@@ -1,0 +1,64 @@
+slug: k2-manifest-2026
+category: snowboard
+brand: k2
+model: Manifest
+year: 2026
+title: K2 Manifest 2025/26
+one_liner: 定向全山地板，骑行定位介于 freeride 与 freestyle；A1 木芯、ICG 20 Triax 碳纤玻纤和 Carbon DarkWeb 兼顾稳定、弹性与粉雪浮力，官方定位中等硬度。
+editorial_scores:
+  stability: 7.8
+  response: 8.4
+  float: 7.8
+  park: 6.0
+  forgiveness: 6.5
+  value: 7.2
+price:
+  min: 2609.29
+  max: 4348.82
+  currency: CNY
+specs:
+  length: 156
+  effectiveEdge: 1180
+  sidecut: 6.9
+  waistWidth: 253
+  stanceSetback: 13
+  core: A1 Core（Bamboo / Aspen / Paulownia）
+  fiberglass: ICG 20 Triax Glass with Carbon
+  base: Sintered 4000
+  profile: Directional Combination Camber
+  profileFamily: camber
+  shape: Directional Twin
+  scenes:
+    - all-mountain
+    - powder
+    - freestyle
+    - carving
+  lengthOptions: 150 / 153 / 156 / 157W / 159 / 160W / 162 / 164W
+  sizeSpecs:
+    - { size: "150", effectiveEdge: 1130, noseWidth: 290, waistWidth: 246, tailWidth: 290, sidecutRadii: "8.6 / 6.5 / 8.6 m", stanceWidth: "508 mm (20 in reference)", setback: 13 }
+    - { size: "153", effectiveEdge: 1160, noseWidth: 295, waistWidth: 250, tailWidth: 295, sidecutRadii: "8.8 / 6.7 / 8.8 m", stanceWidth: "533 mm (21 in reference)", setback: 13 }
+    - { size: "156", effectiveEdge: 1180, noseWidth: 298, waistWidth: 253, tailWidth: 298, sidecutRadii: "9.0 / 6.9 / 9.0 m", stanceWidth: "533 mm (21 in reference)", setback: 13 }
+    - { size: "157W", effectiveEdge: 1180, noseWidth: 306, waistWidth: 261, tailWidth: 306, sidecutRadii: "9.0 / 6.9 / 9.0 m", stanceWidth: "533 mm (21 in reference)", setback: 13 }
+    - { size: "159", effectiveEdge: 1210, noseWidth: 301, waistWidth: 255, tailWidth: 301, sidecutRadii: "9.2 / 7.1 / 9.2 m", stanceWidth: "559 mm (22 in reference)", setback: 13 }
+    - { size: "160W", effectiveEdge: 1210, noseWidth: 309, waistWidth: 263, tailWidth: 309, sidecutRadii: "9.2 / 7.1 / 9.2 m", stanceWidth: "559 mm (22 in reference)", setback: 13 }
+    - { size: "162", effectiveEdge: 1230, noseWidth: 305, waistWidth: 258, tailWidth: 305, sidecutRadii: "9.4 / 7.3 / 9.4 m", stanceWidth: "584 mm (23 in reference)", setback: 13 }
+    - { size: "164W", effectiveEdge: 1240, noseWidth: 312, waistWidth: 265, tailWidth: 312, sidecutRadii: "9.5 / 7.4 / 9.5 m", stanceWidth: "584 mm (23 in reference)", setback: 13 }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 389.97 sale; USD 649.95 list
+  priceMarket: K2 美国官方商店
+  priceSource: https://k2snow.com/en-us/p/manifest-unisex-snowboard-2526
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261015.pdf
+  seasonEvidence: K2 官方商品页标题为 Manifest Unisex Snowboard 2026、路径含 2526，列出八个尺码，按 2025/26 雪季归档。侧切按官方逐尺码三段半径记录；156 cm 基准尺码 set back 为 0.5 in。
+  priceStatus: 按 ECB 2026-10-15 USD/CNY 6.6910 折算，K2 美国官方商店显示 USD 389.97 折扣价约 CNY 2,609.29、USD 649.95 标价约 CNY 4,348.82。仅为美国页面折算参考，不代表中国售价；税费、汇兑和跨境费用未计。
+images:
+  - url: "https://www.eriksbikeshop.com/cdn/shop/files/k2-manifest-snowboard_pr5a25705_51ae.jpg?v=1754465163&width=1445"
+    kind: face
+    alt: "K2 Manifest 2025/26 商品图"
+    source: "ERIK’S 2026 款 K2 Manifest 商品页；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/manifest-unisex-snowboard-2526
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

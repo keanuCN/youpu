@@ -65,6 +65,13 @@ images:
     alt: HEAD Worldcup Rebels e-SL Pro 2026/27 官方雪板商品图
     source: HEAD 官方商品页 313236.SET（图片使用授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 9.4
+  stability: 8.8
+  agility: 9.4
+  softSnow: 3
+  versatility: 5.2
+  forgiveness: 3.5
 data_source:
   kind: official
   origin_url: https://www.head.com/product/worldcup-rebels-e-sl-pro-313236-set

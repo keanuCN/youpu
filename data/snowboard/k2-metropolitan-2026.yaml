@@ -1,0 +1,59 @@
+slug: k2-metropolitan-2026
+category: snowboard
+brand: k2
+model: Metropolitan
+year: 2026
+title: K2 Metropolitan 2025/26
+one_liner: 25/26 入门向女性 Twin 自由式板，五码 138–153 cm；Twin Combination Camber 配 Rhythm 女性专用木芯、Biax 玻纤与 Extruded 2000 底板，官方定位为易压板、容错高的公园入门选择。
+editorial_scores:
+  stability: 6.2
+  response: 6.5
+  float: 5.8
+  park: 8.2
+  forgiveness: 8
+  value: 6
+price:
+  min: 1480.51
+  max: 2792.62
+  currency: CNY
+specs:
+  length: 146
+  effectiveEdge: 1140
+  sidecut: 7.4
+  waistWidth: 240
+  stanceSetback: 0
+  core: Rhythm Core
+  fiberglass: Biax Glass
+  base: Extruded 2000 Base
+  profile: Twin Combination Camber
+  profileFamily: camber
+  shape: Twin
+  scenes:
+    - freestyle
+    - all-mountain
+  lengthOptions: 138 / 142 / 146 / 149 / 153
+  sidecutRadii: 7.40 m（146）
+  sizeSpecs:
+    - { size: "138", effectiveEdge: 1090, noseWidth: 272, waistWidth: 236, tailWidth: 272, sidecutRadii: "7.20 m", stanceWidth: "483 mm (19 in reference)", setback: 0 }
+    - { size: "142", effectiveEdge: 1120, noseWidth: 275, waistWidth: 238, tailWidth: 275, sidecutRadii: "7.30 m", stanceWidth: "483 mm (19 in reference)", setback: 0 }
+    - { size: "146", effectiveEdge: 1140, noseWidth: 278, waistWidth: 240, tailWidth: 278, sidecutRadii: "7.40 m", stanceWidth: "508 mm (20 in reference)", setback: 0 }
+    - { size: "149", effectiveEdge: 1170, noseWidth: 284, waistWidth: 242, tailWidth: 284, sidecutRadii: "7.50 m", stanceWidth: "508 mm (20 in reference)", setback: 0 }
+    - { size: "153", effectiveEdge: 1190, noseWidth: 285, waistWidth: 244, tailWidth: 285, sidecutRadii: "7.60 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+  sourceCheckedAt: 2026-10-16
+  seasonEvidence: "来源为 K2 官方 25/26 单板产品目录 PDF（K2 官方静态资源域，由 k2snow.com 支持页链出），目录标注该款 BOARD SHAPE 为 Twin、RIDING STYLE 为 Freestyle、ABILITY 为 Beginner，并列出 138/142/146/149/153 五个尺码。官方商品页 k2snow.com/en-us/p/metropolitan-womens-snowboard-2526 采集时返回 HTTP 410，故档案以官方目录为唯一来源。"
+  priceCheckedAt: 2026-10-18
+  priceSource: https://www.morispo.shop/shopdetail/000000058180/
+  exchangeRate: JPY/CNY 0.04231245（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: "按 ECB 2026-10-16 汇率折算外币页面售价；Moriyama Sports 2025/26 页面列出 JPY 34,990 售价与 JPY 66,000 标价（含日本消费税）。 仅作人民币参考，不代表中国国内售价，税费、汇兑及跨境费用未计。"
+images:
+  - url: "https://makeshop-multi-images.akamaized.net/morispo/shopimages/80/81/1_000000058180.jpg"
+    kind: face
+    alt: "K2 Metropolitan 2025/26 商品图"
+    source: "Moriyama Sports 2025/26 K2 Metropolitan 商品页图；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

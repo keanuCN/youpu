@@ -1,0 +1,60 @@
+slug: gray-rpm-2026
+category: snowboard
+brand: gray
+model: R.P.M.
+year: 2026
+title: GRAY R.P.M. 2025/26
+one_liner: 25/26 自由式阵容中硬度最低的一档，五码覆盖 138–152 cm；Hybrid Camber 加 CAM&ROC 混合板型配 3 mm Camber 与 3 mm Rocker、P-TEX3000 Natural 底，面向公园与街道的轻量操控。
+editorial_scores:
+  stability: 5.8
+  response: 6.5
+  float: 4.8
+  park: 8.0
+  forgiveness: 8.8
+  value: 7.5
+price:
+  min: 3346.01
+  max: 3680.61
+  currency: CNY
+specs:
+  length: 146
+  effectiveEdge: 1110
+  sidecut: 7.4
+  waistWidth: 246
+  stanceSetback: 0
+  shape: Twin
+  profile: Hybrid Camber + CAM&ROC
+  profileFamily: hybrid
+  core: Ultra Light Core
+  fiberglass: 2ply 70/30 / 2ply 50/50+ / 1ply 90/10
+  base: P-TEX3000 Natural
+  scenes:
+    - freestyle
+    - all-mountain
+  lengthOptions: RPM 38 / 42 / 46 / 48 / 52
+  sidecutRadii: 7.40 m（RPM 46）
+  sizeSpecs:
+    - { size: "RPM 38", overallLength: 1380, effectiveEdge: 1030, contactLength: 820, noseWidth: 270, waistWidth: 230, tailWidth: 270, sidecutRadii: "6.40 m", sidecutOffset: 0, camber: 3.0, rocker: 3.0, stanceWidth: "420-500 mm", setback: 0, stiffness: "N 2.2 / W 2.5 / T 3.2", inserts: "10+10" }
+    - { size: "RPM 42", overallLength: 1420, effectiveEdge: 1070, contactLength: 840, noseWidth: 278, waistWidth: 238, tailWidth: 278, sidecutRadii: "6.80 m", sidecutOffset: 0, camber: 3.0, rocker: 3.0, stanceWidth: "440-520 mm", setback: 0, stiffness: "N 2.5 / W 2.8 / T 3.5", inserts: "10+10" }
+    - { size: "RPM 46", overallLength: 1460, effectiveEdge: 1110, contactLength: 880, noseWidth: 286, waistWidth: 246, tailWidth: 286, sidecutRadii: "7.40 m", sidecutOffset: 0, camber: 3.0, rocker: 3.0, stanceWidth: "480-560 mm", setback: 0, stiffness: "N 2.8 / W 3.8", inserts: "10+10" }
+    - { size: "RPM 48", overallLength: 1480, effectiveEdge: 1130, contactLength: 900, noseWidth: 290, waistWidth: 250, tailWidth: 290, sidecutRadii: "7.60 m", sidecutOffset: 0, camber: 3.0, rocker: 3.0, stanceWidth: "500-580 mm", setback: 0, stiffness: "N 3.8 / W 4.8", inserts: "10+10" }
+    - { size: "RPM 52", overallLength: 1520, effectiveEdge: 1170, contactLength: 920, noseWidth: 294, waistWidth: 252, tailWidth: 294, sidecutRadii: "7.70 m", sidecutOffset: 0, camber: 3.0, rocker: 3.0, stanceWidth: "520-600 mm", setback: 0, stiffness: "N 4.3 / W 5.3", inserts: "10+10" }
+  priceCheckedAt: 2026-10-16
+  officialPrice: JPY 79000（税抜）；JPY 86900（税込）
+  priceMarket: GRAY 日本官方 2025/26 产品目录
+  priceSource: https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf
+  exchangeRate: EUR/JPY 177.06；EUR/CNY 7.4993（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  seasonEvidence: GRAY 官方目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / FREESTYLE CATEGORY'，故按 2025/26 雪季归档。目录将该款与 TRICK STICK [iz]、SHRED、GENIUS [HV] 同列自由式类目，板型标 Hybrid Camber + CAM&ROC 与 GULL WING W CAMBER。目录在 R.P.M. 行未给出鼻/尾翘高（原表为 ---），档案保持缺省，未补造数值。
+  priceStatus: GRAY 日本官方 25/26 目录自由式价格图例区把 '79,000 / 86,900' 一档对应 SHRED 与 R.P.M. 两组，按 ECB 2026-10-15 EUR/JPY 177.06、EUR/CNY 7.4993 折算约 CNY 3,346.01 / 3,680.61。历史日本标价参考，不是中国售价；跨境运输与进口费用未计。价格为目录图例按型号组读取，非商品页实时报价。
+images:
+  - url: "https://shop.r10s.jp/auc-follows/cabinet/2526snowboard/25gray-rpm-1.jpg?fitin=720%3A720"
+    kind: face
+    alt: GRAY R.P.M. 2025/26 单板商品图
+    source: follows 25/26 GRAY 商品页；图片使用授权待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf
+  snapshot_url: https://graysnowboards.co.jp/2025/02/03/25-26%E3%83%A2%E3%83%87%E3%83%AB-%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%83%BB%E8%8B%B1%E8%AA%9E%E7%89%88%EF%BC%89%E3%82%92%E6%8E%B2%E8%BC%89%E3%81%97/
+status: published

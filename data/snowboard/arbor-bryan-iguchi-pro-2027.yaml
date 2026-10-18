@@ -1,0 +1,47 @@
+slug: arbor-bryan-iguchi-pro-2027
+category: snowboard
+brand: arbor
+model: Bryan Iguchi Pro
+year: 2027
+title: Bryan Iguchi Pro Snowboard | Arbor 2027
+one_liner: 以方向性正拱作为全山底色，强调压弯时的清晰支撑，同时覆盖雪场、自然地形和野雪；是主动滑行的全山板，不是单一粉雪或公园专板。
+editorial_scores:
+  stability: 8.5
+  response: 8.3
+  float: 8
+  park: 7
+  forgiveness: 5.8
+  value: 6.3
+price:
+  min: 4546.29
+  max: 4546.29
+  currency: CNY
+specs:
+  seasonEvidence: Arbor 官方商品页标注 Bryan Iguchi Pro Snowboard，当前页面对应 2027 款产品。
+  lengthOptions: 156 / 158W / 159 / 162 / 164W
+  profile: System Camber / Parabolic Camber
+  profileFamily: camber
+  shape: Directional
+  core: Highland III Core
+  base: Sintered Base
+  scenes:
+    - all-mountain
+    - powder
+    - freestyle
+  priceCheckedAt: 2026-10-18
+  officialPrice: USD 679.95
+  priceMarket: Arbor 美国官方 2026/27 商品页
+  priceSource: https://www.arborcollective.com/products/bryan-iguchi-pro-snowboard-27
+  exchangeRate: EUR/USD 1.1253；EUR/CNY 7.5240（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: Arbor 美国官方 2026/27 商品页挂牌 USD 679.95，按 ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240 折算约 CNY 4546.29。此为美国官方挂牌价的人民币折算参考，不是中国售价；税费、汇兑、运输及进口费用未计。
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0085/5762/5410/files/1-ARBOR_BRYAN_IGUCHI_PRO_2025_STUDIOcopy2.png?v=1775578774&width=1200"
+    kind: face
+    alt: "Arbor Bryan Iguchi Pro Snowboard 2027 商品图"
+    source: Arbor 美国官方 2026/27 商品图库；图片文件名含 2025，官方当前商品页仍将其列为该型号主图；展示授权待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.arborcollective.com/products/bryan-iguchi-pro-snowboard-27
+status: published

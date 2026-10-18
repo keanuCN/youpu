@@ -1,0 +1,48 @@
+slug: wedze-am-500-mens-ski-jacket-2026
+category: skiing-apparel
+brand: wedze
+model: AM 500 Men's Ski and Snowboard Jacket
+year: 2026
+title: WEDZE 男款 AM 500 全山地滑雪夹克
+one_liner: 15,000 mm 防水、全压胶，身体 100 g/m²、袖部 60 g/m² 填充；配 RECCO 反射器、腋下通风拉链与头盔兼容风帽。品牌舒适温度标注为 -4°C。
+price:
+  min: 1063.94
+  max: 1063.94
+  currency: CNY
+specs:
+  garmentType: jacket
+  fabric: 聚酯主面料，含聚氨酯防水膜（官方成分表）
+  insulation: 身体 100 g/m²、袖部 60 g/m² 合成棉；品牌舒适温度标注 -4°C
+  weightG: 900
+  weightSize: M
+  seamTaping: fully-taped
+  waterproofMm: 15000
+  waterproofEvidence: WEDZE 英国官方商品页将防水组件标为 15,000 mm，并注明全压胶、防水拉链。
+  venting: true
+  powderSkirt: true
+  recco: true
+  fit: loose
+  membrane: 聚氨酯膜；未标注面料层数
+  breathable: true
+  features: RECCO 反射器；腋下通风拉链；防雪裙；雪票口袋；头盔兼容 3D 可调风帽；可调下摆与袖口；雪镜擦布。
+  availableSizes: [ XS, S, M, L, XL, 2XL, 3XL ]
+  sizeGuide: 英国官方尺码选项 XS 至 3XL，并建议选择平时尺码；未在该商品页取得对应身体围度或成衣测量表，不推算胸围、衣长或袖长。
+  seasonEvidence: 2026-10-17 复核时官方页面标注 New Collection，但未直接写明 2026/27 或其他具体雪季；year 2026 仅为档案年份。
+  weather: 官方标注冷天气使用，舒适温度 -4°C；体感会随内搭、活动强度和天气变化。
+  styleCode: Decathlon 商品 ID 8872013
+  priceCheckedAt: 2026-10-17
+  officialPrice: GBP 119.99
+  priceMarket: Decathlon 英国官网；黑色商品 ID 8872013
+  priceSource: https://www.decathlon.co.uk/p/all-mountain-mens-warm-and-breathable-ski-and-snowboard-jacket-am-500-black/352922/c1c1m8872013
+  priceStatus: 英国官网商品页于 2026-10-17 显示 GBP 119.99；按 ECB 2026-10-13 GBP 0.84460 / EUR、CNY 7.4890 / EUR 折合 CNY 1,063.94。仅为英区标价折算参考，不是中国售价，未含可能产生的税费、运费及汇兑费用。
+  availableColors: 黑色（本记录变体）；商品页列 AM 500 有多个颜色。
+images:
+  - url: "https://contents.mediadecathlon.com/p2985381/k%2489f9c93ecf1bc277ac79bd3e92018b66/picture.jpg?f=3000x0&format=auto"
+    kind: face
+    alt: WEDZE 男款 AM 500 全山地滑雪夹克
+    source: Decathlon 英国官方商品图库；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/all-mountain-mens-warm-and-breathable-ski-and-snowboard-jacket-am-500-black/352922/c1c1m8872013
+status: published

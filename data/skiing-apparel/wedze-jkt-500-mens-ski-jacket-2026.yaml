@@ -1,0 +1,51 @@
+slug: wedze-jkt-500-mens-ski-jacket-2026
+category: skiing-apparel
+brand: wedze
+model: JKT 500 Men's Ski and Snowboard Jacket
+year: 2026
+title: WEDZE 男款 JKT 500 滑雪夹克
+one_liner: 2 层结构，15,000 mm 防水、密封接缝，保暖合成填充，官方建议用于低至 -6°C 环境；页面列出的当前尺码为 XS、L、2XL、3XL。
+price:
+  min: 638.33
+  max: 797.93
+  currency: CNY
+specs:
+  garmentType: jacket
+  construction: 2L
+  fabric: 聚酯主面料；含聚氨酯膜，官方称产品含 35% 再生聚酯
+  insulation: 合成纤维填充；品牌建议使用温度低至 -6°C，未公布填充克重
+  seamTaping: fully-taped
+  waterproofMm: 15000
+  waterproofEvidence: WEDZE 英国官方商品页标注 15,000 mm、防水拉链与密封接缝；页面未提供与本型号对应的第三方实验室报告。
+  venting: false
+  powderSkirt: true
+  recco: false
+  membrane: 2 层聚氨酯膜结构
+  breathable: true
+  features: 雪裙；背部透气条（规格区注明无拉链通风系统）；雪票口袋；可调风帽、袖口；两侧插手袋、内胸袋和内网袋；官方标注 L 码约 1,020 g。
+  weightG: 1020
+  weightSize: L
+  availableSizes: [ XS, L, 2XL, 3XL ]
+  sizeGuide: 2026-10-17 商品页当前只显示 XS、L、2XL、3XL 选项，不能据此断定其他尺码没有生产或库存。官网建议选择平时尺码；未取得对应身体围度/成衣测量表。
+  seasonEvidence: 2026-10-17 官方页面标注 Last chance，未直接标明具体雪季；year 2026 仅为档案年份。
+  weather: 官方建议在低至 -6°C 环境使用；实际体感受内搭、活动强度、风雪和个人差异影响。
+  level: 官网标注适合所有水平
+  styleCode: Decathlon 商品 ID 8807723
+  priceCheckedAt: 2026-10-17
+  officialPrice: GBP 89.99
+  regionalSalePrice: GBP 71.99
+  priceMarket: Decathlon 英国官网；黑色变体商品 ID 8807723
+  priceSource: https://www.decathlon.co.uk/p/men-s-warm-and-waterproof-ski-and-snowboard-jacket-jkt-500-black/346314/c382c344m8807723
+  priceStatus: 2026-10-17 页面显示促销 GBP 71.99、原价 GBP 89.99；按 ECB 2026-10-13 GBP 0.84460 / EUR、CNY 7.4890 / EUR 折合约 CNY 638.33–797.93。为英国地区标价区间，不是中国售价，未含结账时可能产生的税费、配送和汇兑费用。
+  availableColors: 黑色（本记录变体）；商品页列出多个颜色
+  imageEvidence: 官方图库首图链接核查时返回 410 Gone，未记录该图片；等待可访问的官方图片地址或稳定授权素材。
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/men-s-warm-and-waterproof-ski-and-snowboard-jacket-jkt-500-black/346314/c382c344m8807723
+images:
+  - url: "https://contents.mediadecathlon.com/p2532124/k%24a963fefb0634702ac14731aa6615c908/men-s-ski-jacket-500-6-c-black-wedze-8807723.jpg?f=1920x0&format=auto"
+    kind: face
+    alt: WEDZE 男款 JKT 500 滑雪夹克商品图（货号 8807723）
+    source: Decathlon 官方商品页，货号 8807723；图片使用授权待核
+    sort_order: 0
+status: published

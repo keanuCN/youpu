@@ -1,0 +1,62 @@
+slug: k2-afterblack-2026
+category: snowboard
+brand: k2
+model: Afterblack
+year: 2026
+title: K2 Afterblack 2025/26
+one_liner: 中级到专家级全地形 freestyle 真双向板，BAP 木芯、Triax 玻纤与 Carbon DarkWeb 强调稳定和回弹；适合公园、道具、雪道和大跳台。官方描述硬度为中等，未标数字硬度。
+editorial_scores:
+  stability: 7.6
+  response: 8.2
+  float: 6.5
+  park: 8.0
+  forgiveness: 6.5
+  value: 7.0
+price:
+  min: 3612.81
+  max: 3612.81
+  currency: CNY
+specs:
+  length: 157
+  effectiveEdge: 1220
+  sidecut: 8.1
+  waistWidth: 254
+  stanceSetback: 0
+  core: BAP（Bamboo / Aspen / Paulownia）
+  fiberglass: Triax Glass / Carbon DarkWeb
+  base: Sintered 4000
+  profile: Twin Combination Camber
+  profileFamily: camber
+  shape: True Twin
+  scenes:
+    - freestyle
+    - all-mountain
+  lengthOptions: 149 / 151 / 154 / 156W / 157 / 159W / 160
+  sidecutRadii: 8.1 m（157）
+  sizeSpecs:
+    - { size: "149", effectiveEdge: 1140, noseWidth: 285, waistWidth: 245, tailWidth: 285, sidecutRadii: "7.50 m", stanceWidth: "483 mm (19 in reference)", setback: 0 }
+    - { size: "151", effectiveEdge: 1170, noseWidth: 288, waistWidth: 247, tailWidth: 288, sidecutRadii: "7.70 m", stanceWidth: "508 mm (20 in reference)", setback: 0 }
+    - { size: "154", effectiveEdge: 1190, noseWidth: 293, waistWidth: 251, tailWidth: 293, sidecutRadii: "7.90 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+    - { size: "156W", effectiveEdge: 1220, noseWidth: 305, waistWidth: 262, tailWidth: 305, sidecutRadii: "8.10 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+    - { size: "157", effectiveEdge: 1220, noseWidth: 297, waistWidth: 254, tailWidth: 297, sidecutRadii: "8.10 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+    - { size: "159W", effectiveEdge: 1240, noseWidth: 308, waistWidth: 265, tailWidth: 308, sidecutRadii: "8.30 m", stanceWidth: "559 mm (22 in reference)", setback: 0 }
+    - { size: "160", effectiveEdge: 1240, noseWidth: 300, waistWidth: 257, tailWidth: 300, sidecutRadii: "8.30 m", stanceWidth: "559 mm (22 in reference)", setback: 0 }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 539.95（页面当前标价；未显示折扣价）
+  priceMarket: K2 美国官方商店
+  priceSource: https://k2snow.com/en-us/p/afterblack-mens-snowboard-2526
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261015.pdf
+  seasonEvidence: K2 官方商品页标题为 Afterblack Men's Snowboard 2026、URL 含 2526，列出七个尺码，按产品页命名归档为 2025/26。尺码和技术参数均按官方页记录。
+  priceStatus: K2 美国官方商店页面标价 USD 539.95，按 ECB 2026-10-15 USD/CNY 6.6910 折算约 CNY 3,612.81。该值不是中国售价；税费、汇兑、跨境运输及进口费用未计。官方页面未显示折扣价。
+images:
+  - url: "https://www.philsskiandboardshop.com/cdn/shop/files/K2_Afterblack_top.jpg?v=1759969542&width=2000"
+    kind: face
+    alt: "K2 Afterblack 2025/26 商品图"
+    source: "Phil’s Ski & Snowboard 2026 款商品页；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/afterblack-mens-snowboard-2526
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

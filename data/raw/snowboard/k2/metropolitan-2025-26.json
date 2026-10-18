@@ -1,0 +1,29 @@
+{
+  "brand": "K2",
+  "model": "Metropolitan",
+  "season": "2025/26",
+  "sourceUrl": "https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard",
+  "sourcePageUrl": "https://k2snow.com/en-us/support/product-catalogs",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "K2 官方 25/26 单板产品目录 PDF（托管于 K2 官方静态资源域 k2sports.a.bigcontent.io，由 k2snow.com/en-us/support/product-catalogs 页面链出）。目录内页眉标 '25/26'，并含 'METROPOLITAN' 型号页。",
+  "category": "Freestyle",
+  "positioning": "目录标注 freestyle / twin / predictable；BOARD SHAPE: Twin，RIDING STYLE: Freestyle，ABILITY: Beginner。标语 'PRESSABLE, FORGIVING, & A LOTTA FUN'。",
+  "sizeTable": [
+    { "size": "138", "effectiveEdgeCm": 109, "noseWaistTailMm": [272, 236, 272], "sidecutM": 7.20, "stanceIn": 19, "setback": "CENTER", "weightLb": "90-160+", "weightKg": "41-73+" },
+    { "size": "142", "effectiveEdgeCm": 112, "noseWaistTailMm": [275, 238, 275], "sidecutM": 7.30, "stanceIn": 19, "setback": "CENTER", "weightLb": "90-160+", "weightKg": "41-73+" },
+    { "size": "146", "effectiveEdgeCm": 114, "noseWaistTailMm": [278, 240, 278], "sidecutM": 7.40, "stanceIn": 20, "setback": "CENTER", "weightLb": "100-170+", "weightKg": "45-77+" },
+    { "size": "149", "effectiveEdgeCm": 117, "noseWaistTailMm": [284, 242, 284], "sidecutM": 7.50, "stanceIn": 20, "setback": "CENTER", "weightLb": "100-170+", "weightKg": "45-77+" },
+    { "size": "153", "effectiveEdgeCm": 119, "noseWaistTailMm": [285, 244, 285], "sidecutM": 7.60, "stanceIn": 21, "setback": "CENTER", "weightLb": "110-190+", "weightKg": "50-86+" }
+  ],
+  "features": {
+    "profile": "Twin Combination Camber Profile",
+    "shape": "Twin",
+    "core": "Rhythm Core",
+    "glass": "Biax Glass",
+    "base": "Extruded 2000 Base",
+    "construction": "Hybritech Construction"
+  },
+  "sizeTableNote": "目录 146 行的 TIP/WAIST/TAIL 单元格原文写作 '27.8 - 24 - - 27.8'（腰宽与尾宽之间多一个连字符），按同表格式取 240 mm，原始写法在此保留。目录未给该款尺码表的下标（即未给出逐码长度单位行），长度按 cm 解读。",
+  "priceNote": "该型号的官方商品页（k2snow.com/en-us/p/metropolitan-womens-snowboard-2526）采集时返回 HTTP 410，且 25/26 目录为规格型文档、不含标价，故本档案不填价格，也不由其他型号价格推断。",
+  "notes": "目录 ABILITY 标 Beginner，官方商品页已下架无法交叉核对。本档案只采用目录可确证的字段，未补造 flex 数值、场景评分或价格。"
+}

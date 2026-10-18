@@ -1,0 +1,22 @@
+{
+  "brand": "K2",
+  "model": "Commonwealth",
+  "season": "2025/26",
+  "sourceUrl": "https://k2snow.com/en-us/p/commonwealth-unisex-snowboard-2526",
+  "retrievedAt": "2026-10-16",
+  "officialUsd": { "sale": 419.97, "list": 699.95 },
+  "sizeChart": [
+    { "size": "146", "effectiveEdgeCm": 109, "noseWaistTailCm": [28.8, 24.3, 28.0], "sidecutM": [5.3, 7.3, 4.8], "stanceIn": 19, "setbackIn": 0.75, "weightKg": "41-73+" },
+    { "size": "149", "effectiveEdgeCm": 112, "noseWaistTailCm": [29.2, 24.6, 28.4], "sidecutM": [5.5, 7.5, 5.0], "stanceIn": 19, "setbackIn": 0.75, "weightKg": "41-73+" },
+    { "size": "151", "effectiveEdgeCm": 113, "noseWaistTailCm": [29.4, 24.8, 28.6], "sidecutM": [5.6, 7.6, 5.1], "stanceIn": 20, "setbackIn": 0.75, "weightKg": "54-86+" },
+    { "size": "154", "effectiveEdgeCm": 116, "noseWaistTailCm": [29.9, 25.2, 29.1], "sidecutM": [5.8, 7.8, 5.3], "stanceIn": 21, "setbackIn": 0.75, "weightKg": "54-86+" },
+    { "size": "154W", "effectiveEdgeCm": 116, "noseWaistTailCm": [30.7, 26.0, 29.9], "sidecutM": [5.8, 7.8, 5.3], "stanceIn": 21, "setbackIn": 0.75, "weightKg": "54-86+" },
+    { "size": "157", "effectiveEdgeCm": 118, "noseWaistTailCm": [30.3, 25.5, 29.5], "sidecutM": [6.0, 8.0, 5.5], "stanceIn": 21, "setbackIn": 0.75, "weightKg": "54-86+" },
+    { "size": "157W", "effectiveEdgeCm": 118, "noseWaistTailCm": [31.1, 26.3, 31.1], "sidecutM": [6.0, 8.0, 5.5], "stanceIn": 21, "setbackIn": 0.75, "weightKg": "54-86+" },
+    { "size": "159W", "effectiveEdgeCm": 121, "noseWaistTailCm": [31.4, 26.6, 30.6], "sidecutM": [6.2, 8.2, 5.7], "stanceIn": 22, "setbackIn": 0.75, "weightKg": "59-95+" },
+    { "size": "160", "effectiveEdgeCm": 121, "noseWaistTailCm": [30.6, 25.8, 29.8], "sidecutM": [6.2, 8.2, 5.7], "stanceIn": 22, "setbackIn": 0.75, "weightKg": "59-95+" },
+    { "size": "162W", "effectiveEdgeCm": 123, "noseWaistTailCm": [31.8, 26.9, 31.0], "sidecutM": [6.4, 8.4, 5.9], "stanceIn": 23, "setbackIn": 0.75, "weightKg": "64-104+" },
+    { "size": "163", "effectiveEdgeCm": 123, "noseWaistTailCm": [31.0, 26.1, 30.2], "sidecutM": [6.4, 8.4, 5.9], "stanceIn": 23, "setbackIn": 0.75, "weightKg": "64-104+" }
+  ],
+  "features": { "shape": "tapered directional", "profile": "twin camber", "core": "A1", "glass": "heavyweight triax", "reinforcement": "Spectral Braid", "base": "wax-infused sintered 4001", "inserts": "2x4" }
+}

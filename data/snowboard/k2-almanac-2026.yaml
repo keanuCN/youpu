@@ -1,0 +1,65 @@
+slug: k2-almanac-2026
+category: snowboard
+brand: k2
+model: Almanac
+year: 2026
+title: K2 Almanac 2025/26
+one_liner: VolumeShift 全山地日常板，偏宽的定向板型搭配 BAP 木芯、Carbon Backbone 和组合 Camber；适合全山地转弯、粉雪、雪道与自由式，官方建议通常下调约 5 cm。
+editorial_scores:
+  stability: 7.3
+  response: 7.3
+  float: 8.0
+  park: 7.2
+  forgiveness: 7.5
+  value: 8.0
+price:
+  min: 2247.98
+  max: 3746.63
+  currency: CNY
+specs:
+  length: 149
+  effectiveEdge: 1100
+  sidecut: 6.6
+  waistWidth: 257
+  stanceSetback: 0
+  core: BAP（Bamboo / Aspen / Paulownia）
+  fiberglass: Biax Fiberglass / Carbon Backbone
+  base: Sintered 4000
+  profile: Directional Combination Camber
+  profileFamily: camber
+  shape: VolumeShift Directional
+  scenes:
+    - all-mountain
+    - powder
+    - freestyle
+    - carving
+  lengthOptions: 137 / 141 / 145 / 149 / 153 / 157 / 161
+  sidecutRadii: 6.60 m（149）
+  flex: 5
+  sizeSpecs:
+    - { size: "137", effectiveEdge: 1020, noseWidth: 287, waistWidth: 242, tailWidth: 275, sidecutRadii: "6.00 m", stanceWidth: "457 mm (18 in reference)", setback: 0 }
+    - { size: "141", effectiveEdge: 1040, noseWidth: 292, waistWidth: 246, tailWidth: 280, sidecutRadii: "6.20 m", stanceWidth: "483 mm (19 in reference)", setback: 0 }
+    - { size: "145", effectiveEdge: 1080, noseWidth: 298, waistWidth: 251, tailWidth: 286, sidecutRadii: "6.40 m", stanceWidth: "508 mm (20 in reference)", setback: 0 }
+    - { size: "149", effectiveEdge: 1100, noseWidth: 305, waistWidth: 257, tailWidth: 293, sidecutRadii: "6.60 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+    - { size: "153", effectiveEdge: 1140, noseWidth: 313, waistWidth: 263, tailWidth: 301, sidecutRadii: "6.80 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+    - { size: "157", effectiveEdge: 1170, noseWidth: 319, waistWidth: 268, tailWidth: 307, sidecutRadii: "7.00 m", stanceWidth: "559 mm (22 in reference)", setback: 0 }
+    - { size: "161", effectiveEdge: 1210, noseWidth: 324, waistWidth: 272, tailWidth: 312, sidecutRadii: "7.90 m", stanceWidth: "584 mm (23 in reference)", setback: 0 }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 335.97 sale; USD 559.95 list
+  priceMarket: K2 美国官方商店
+  priceSource: https://k2snow.com/en-us/p/almanac-unisex-snowboard-2526
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261015.pdf
+  seasonEvidence: K2 官方 Almanac 2026 商品页 URL 含 2526，列出 137–161 七个尺码；产品概述说明推荐下调约 5 cm，技术页说明可下调 4–10 cm。档案记录两个官方建议，不以单一值覆盖。
+  priceStatus: 按 ECB 2026-10-15 USD/CNY 6.6910 折算，K2 美国官方商店显示 USD 335.97 折扣价约 CNY 2,247.98、USD 559.95 标价约 CNY 3,746.63。该区间为美国页面折算参考，不是中国售价；税费、汇兑及跨境费用未计。
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0777/2746/5754/files/K2-Snowboards-11L0004_K2_2504_ALMANAC_1-2026-Snowtrax.png?v=1755095486&width=1500"
+    kind: face
+    alt: "K2 Almanac 2025/26 商品图"
+    source: "Snowtrax 2026 款商品页；K2 Almanac 型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/almanac-unisex-snowboard-2526
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

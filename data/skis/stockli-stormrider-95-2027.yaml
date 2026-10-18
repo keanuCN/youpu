@@ -1,0 +1,49 @@
+slug: stockli-stormrider-95-2027
+category: skis
+brand: stockli
+model: Stormrider 95
+year: 2027
+title: Stöckli Stormrider 95 2026/27
+price:
+  min: 9021.28
+  max: 9021.28
+  currency: CNY
+one_liner: 95 mm 腰宽的全山自由滑板；Titanal Technology PRO、Freeride Tail 与 SME Light，官方面向压雪道到新雪场景。
+specs:
+  lengthOptions: 170 / 176 / 182 / 188 cm
+  waistWidth: 95
+  turnRadius: 18.5
+  turnRadiusReferenceLength: 182 cm
+  sidecutDimensions: "官方产品页列示 132-95-123 mm；参考长度未在截面字段旁标注。"
+  profile: Freeride Tail；官方未以统一摇臂百分比披露板型
+  construction: Sandwich System；Titanal Technology PRO；Polywall
+  technologies: SME Light；PWA；TITEC PRO；FTA；Freeride Tail
+  terrain: 全山 / 自由滑 / 压雪道与新雪
+  skierLevel: 进阶至专家
+  bindingSetup: 裸板，支持选购 alpine / hybrid touring 固定器
+  geometryNotes: 官方可选长度半径：170/15.6、176/17、182/18.5、188/20 m；板腰95 mm，官方单一截面为132-95-123 mm，未确认其对应板长。
+  seasonEvidence: Stöckli 官方商品页货号 41040527，列出 Stormrider 95 当前结构、尺寸及产品定位；货号年份编码对应 2026/27 型号，官网未在标题直接标年款。
+  sourceCheckedAt: 2026-10-17
+  seasonStatus: 依据货号末尾 27 与当前官方页记录为 2026/27；待官方型录再次交叉核对
+  officialPrice: EUR 1,199 起（含 VAT）
+  priceMarket: Stöckli 英国/欧洲官网
+  priceSource: https://www.stoeckli.ch/uken/ski/ski/allmountain/stormrider-95
+  exchangeRateSource: ECB 2026-10-16 EUR/CNY 7.5240
+  priceStatus: Stöckli 欧洲官网起售价 EUR 1,199（含 VAT），按 ECB 2026-10-16 汇率折合 CNY 9,021.28；配置可选。仅作欧洲地区参考，不是中国售价；未计跨境运输、进口及支付汇兑成本。
+editorial_scores:
+  edgeGrip: 6.8
+  stability: 8.1
+  agility: 7
+  softSnow: 8.8
+  versatility: 7.9
+  forgiveness: 6.4
+data_source:
+  kind: official
+  origin_url: https://www.stoeckli.ch/uken/ski/ski/allmountain/stormrider-95
+images:
+  - url: "https://theskimonster.com/cdn/shop/files/Stockli-Stormrider-95_2_e45f53b5-25fc-4794-9de1-46f0187f5628_1024x1024.jpg?v=1764114271"
+    kind: face
+    alt: Stöckli Stormrider 95 2026/27 雪板商品图
+    source: THE SKI MONSTER 2027 商品页；图片使用授权待核
+    sort_order: 0
+status: published

@@ -1,0 +1,41 @@
+slug: head-supershape-e-magnum-2026
+category: skis
+brand: head
+model: Supershape e-Magnum
+year: 2026
+title: HEAD Supershape e-Magnum 2025/26
+price:
+  min: 7856.3
+  max: 7856.3
+  currency: CNY
+specs:
+  terrain: 雪道
+  skierLevel: 进阶
+  turnRadius: 13.1
+  waistWidth: 72
+  bindingSetup: 含 Protector EVO PR 11 GW 固定器套装
+  officialPrice: USD 1,175（HEAD 2025/26 美国零售价格表建议零售价，含 Protector PR 11 GW）
+  priceMarket: HEAD 美国市场；2025/26 系统套装 MSRP
+  priceSource: https://img1.wsimg.com/blobby/go/3c75046d-27b1-48f2-8c85-4fcee384abf2/downloads/383a3ba9-007e-442e-a92d-fdc0140aa976/HEAD_RETAIL%20PRICING_FOR%20PRINT_12.20_01%202_combi.pdf?ver=1744650386194
+  exchangeRateSource: ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240；折算 USD/CNY 6.686213
+  priceStatus: HEAD 2025/26 美国零售价格表列 Supershape e-Magnum + Protector PR 11 GW 建议零售价 USD 1,175；按 ECB 2026-10-16 汇率折合 CNY 7,856.30。历史季建议零售价，不代表当前可购价或中国售价；未计税费及跨境费用。
+  lengthOptions: 149 / 156 / 163 / 170 / 177 cm
+  turnRadiusReferenceLength: 170 cm
+images:
+  - url: https://cdn-mdb.head.com/CDN3/D/313306.SET_31330602/5/683x911/supershape-e-magnum-with-binding-protector-evo-pr-11-gw.webp
+    kind: face
+    alt: HEAD Supershape e-Magnum 官方雪板商品图
+    source: HEAD 官方商品页（图片使用授权待核）
+    sort_order: 0
+status: published
+one_liner: HEAD Supershape 雪道系列，官方产品页列出 149–177 cm 多个板长。
+editorial_scores:
+  edgeGrip: 9
+  stability: 8.7
+  agility: 8
+  softSnow: 4.2
+  versatility: 7.1
+  forgiveness: 5.4
+data_source:
+  kind: official
+  origin_url: https://www.head.com/en_US/product/supershape-e-magnum-313306-set

@@ -1,0 +1,62 @@
+{
+  "capturedAt": "2026-10-17",
+  "brand": "WEDZE",
+  "market": "United Kingdom",
+  "season": {
+    "explicitSeasonLabel": null,
+    "trousersCollectionBadge": "New Collection",
+    "decision": "未确认具体雪季；seed year=2026 仅作档案年份。"
+  },
+  "exchangeRate": {
+    "source": "European Central Bank euro foreign exchange reference rates",
+    "sourceUrl": "https://www.ecb.europa.eu/stats/shared/pdf/eurofxref.pdf?3ac10bca04b204d3b4884578daa9399d=",
+    "date": "2026-10-13",
+    "gbpPerEur": 0.8446,
+    "cnyPerEur": 7.489,
+    "formula": "GBP amount * CNY per EUR / GBP per EUR",
+    "limitation": "人民币折算值仅作英国地区参考价，不代表中国售价或结账到手金额。"
+  },
+  "products": [
+    {
+      "slug": "wedze-womens-am-500-ski-jacket-2026",
+      "styleCode": "Decathlon product ID 8949954",
+      "source": "https://www.decathlon.co.uk/p/womens-warm-and-breathable-all-mountain-ski-and-snowboard-jacket-500-am-green/352847/c49c219m8949954",
+      "observedPrice": "GBP 119.99",
+      "convertedReferenceCny": 1063.94,
+      "listedSizes": ["UK 6-8 / EU S", "UK 10 / EU M", "UK 12-14 / EU L", "UK 16 / EU XL"],
+      "fit": "Loose",
+      "waterproof": "15,000 mm component; waterproof zips; 100% sealed seams",
+      "insulation": "100 g/m² on body, 60 g/m² on arms; comfort temperature -4°C",
+      "breathability": "RET 12; ventilation zips; no g/m²/24h value provided",
+      "weight": "900 g in size M",
+      "features": ["RECCO", "snow skirt", "ski-pass pocket", "helmet-compatible adjustable hood", "adjustable cuffs and hem", "goggle wipe"],
+      "composition": "Polyester padding and lining; polyurethane membrane",
+      "retailerRatingSnapshot": "4.8 stars / 75 reviews in opened official page snapshot, while search index showed 4.9 / 111 earlier; retailer aggregate is volatile and excluded from Youpu user ratings/field reports.",
+      "imageAttempt": "Official product-gallery image URL returned a fetch error in this capture; omitted from YAML rather than storing an unverified remote image link."
+    },
+    {
+      "slug": "wedze-womens-am-500-ski-pants-2026",
+      "styleCode": "Decathlon product ID 8872022",
+      "source": "https://www.decathlon.co.uk/p/women-s-500-am-waterproof-and-breathable-ski-and-snowboard-trousers-black/352866/c1m8872022",
+      "observedPrice": "GBP 79.99",
+      "convertedReferenceCny": 709.26,
+      "listedSizes": ["UK 4 / FR 34", "UK 6 / FR 36", "UK 8 / FR 38", "UK 10 / FR 40", "UK 12 / FR 42", "UK 14 / FR 44", "UK 16 / FR 46", "UK 18 / FR 48"],
+      "fit": "Relaxed / straight in structured specification",
+      "waterproof": "15,000 mm fabric, waterproof zips and 100% waterproof seams",
+      "insulation": "60 g/m²; comfort temperature -7°C",
+      "breathability": "Highlights state RET < 12; detailed copy says RET 12; no g/m²/24h figure provided",
+      "weight": "1,000 g in size 40",
+      "features": ["RECCO", "two hand pockets", "two thigh pockets", "ventilation zips", "snow gaiters", "adjustable waistband", "brace loops", "lower-leg reinforcement"],
+      "composition": "Polyester main fabric and padding; lower-leg reinforcement 95% polyamide and 5% polyester; polyurethane membrane",
+      "retailerRatingSnapshot": "4.7 stars / 119 reviews in opened official page snapshot; search index counts differed. Retailer aggregate is excluded from Youpu user ratings/field reports.",
+      "imageAttempt": "Official product-gallery image URL returned a fetch error in this capture; omitted from YAML rather than storing an unverified remote image link."
+    }
+  ],
+  "limitations": [
+    "Retailer rating and review counts changed between search and page snapshots; they are provenance context only and not imported as community evidence.",
+    "The product pages provide size labels, but no garment measurements or body circumference chart for these exact models.",
+    "Reference weights use different size bases: jacket size M and trousers FR 40.",
+    "RET values are not converted into the category's breathabilityG unit.",
+    "Images were not added because image endpoint fetches failed; user-facing catalog should use its no-image state."
+  ]
+}

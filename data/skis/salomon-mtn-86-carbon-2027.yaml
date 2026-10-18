@@ -72,6 +72,13 @@ images:
     alt: Salomon MTN 86 Carbon 2026/27 官方雪板商品图
     source: Salomon 官方产品页（图片使用授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 6.8
+  stability: 7.2
+  agility: 7.8
+  softSnow: 7.4
+  versatility: 7.1
+  forgiveness: 5.8
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/mtn-86-carbon-li8310

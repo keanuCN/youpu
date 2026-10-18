@@ -1,0 +1,62 @@
+slug: k2-sky-pilot-2026
+category: snowboard
+brand: k2
+model: Sky Pilot
+year: 2026
+title: K2 Sky Pilot 2025/26
+one_liner: Sage Kotsenburg 参与设计的全性别 VolumeShift 定向板，3D Contour、Carbon Y-Beam 与中等硬度瞄准树林、粉雪和技术地形；官方建议比常规长度短 3–5 cm。
+editorial_scores:
+  stability: 8.2
+  response: 8.3
+  float: 9.2
+  park: 5.5
+  forgiveness: 5.8
+  value: 6.2
+price:
+  min: 2529.00
+  max: 4215.00
+  currency: CNY
+specs:
+  length: 157
+  effectiveEdge: 1190
+  sidecut: 7.5
+  waistWidth: 259
+  stanceSetback: 19
+  core: S1 Core（Bamboo / Aspen / Paulownia）
+  fiberglass: Triax Fiberglass / Carbon Y-Beam
+  base: Wax-Infused Sintered 4001
+  profile: Directional Combination Camber
+  profileFamily: camber
+  shape: VolumeShift Directional
+  scenes:
+    - powder
+    - all-mountain
+    - carving
+  lengthOptions: 148 / 151 / 154 / 157 / 160 / 163
+  sidecutRadii: 7.50 m（157）
+  sizeSpecs:
+    - { size: "148", effectiveEdge: 1120, noseWidth: 295, waistWidth: 249, tailWidth: 285, sidecutRadii: "6.90 m", stanceWidth: "483 mm (19 in reference)", setback: 19 }
+    - { size: "151", effectiveEdge: 1140, noseWidth: 300, waistWidth: 253, tailWidth: 290, sidecutRadii: "7.10 m", stanceWidth: "508 mm (20 in reference)", setback: 19 }
+    - { size: "154", effectiveEdge: 1170, noseWidth: 304, waistWidth: 256, tailWidth: 294, sidecutRadii: "7.30 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "157", effectiveEdge: 1190, noseWidth: 308, waistWidth: 259, tailWidth: 298, sidecutRadii: "7.50 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "160", effectiveEdge: 1220, noseWidth: 312, waistWidth: 262, tailWidth: 302, sidecutRadii: "7.70 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "163", effectiveEdge: 1240, noseWidth: 316, waistWidth: 265, tailWidth: 306, sidecutRadii: "7.90 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 377.97 sale; USD 629.95 list
+  priceMarket: K2 美国官方商店
+  priceSource: https://k2snow.com/en-us/p/sky-pilot-unisex-snowboard-2526
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261015.pdf
+  seasonEvidence: K2 官方商品页标题为 Sky Pilot Unisex Snowboard 2026，URL 含 2526，列出 148–163 六个尺码；按官方页面命名归档为 2025/26。官方建议下调 3–5 cm；尺码表原始数据逐项保留。
+  priceStatus: 按 ECB 2026-10-15 USD/CNY 6.6910 折算，K2 美国官方商店显示 USD 377.97 折扣价约 CNY 2,529.00、USD 629.95 标价约 CNY 4,215.00。该区间是美国页面折算参考，不是中国售价；税费、汇兑及跨境费用未计。
+images:
+  - url: "https://www.melbournesnowboard.com.au/cdn/shop/files/0004_2026-sky-pilot.jpg?v=1737346354"
+    kind: face
+    alt: "K2 Sky Pilot 2025/26 商品图"
+    source: "Melbourne Snowboard 2026 款 K2 Sky Pilot 商品页；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/sky-pilot-unisex-snowboard-2526
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

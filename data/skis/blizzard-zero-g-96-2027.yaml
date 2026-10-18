@@ -1,0 +1,55 @@
+slug: blizzard-zero-g-96-2027
+category: skis
+brand: blizzard
+model: Zero G 96
+year: 2027
+title: Blizzard Zero G 96 2026/27
+price:
+  min: 5683.22
+  max: 5683.22
+  currency: CNY
+one_liner: 96 mm 腰宽的登山巡游双板；Trueblend Tour 木芯与板下白蜡木加强，平衡上升重量与下滑稳定性。
+specs:
+  lengthOptions: 164 / 171 / 178 / 185 cm
+  waistWidth: 96
+  turnRadius: 20
+  turnRadiusReferenceLength: 178 cm
+  sidecutDimensions: "178 cm: 127-96-111 mm；各长度半径：164/18、171/19、178/20、185/22 m。"
+  profile: Early Rise Tip and Tail；Camber Under Foot
+  core: Trueblend Tour Woodcore（泡桐与杨木）+ Ash Wood Insert
+  construction: Trueblend RPET Tour；Partial ABS Sidewall
+  technologies: Five Radius Sidecut；板下 Ash Core Insert
+  weightPerPair: 2620
+  weightReferenceLength: 178 cm
+  baseEdgeAngle: 0.9
+  sideEdgeAngle: 87.5
+  terrain: 登山巡游 / 软雪 / 全山
+  skierLevel: 中级至专家
+  bindingSetup: 裸板；官方建议 Pintech Touring 固定器
+  weightBasis: 官方比较栏列 178 cm 每对 2620 g；页面其他位置出现 2300 g 但未清楚标注板长/口径，保留可比较表的板长口径并记录差异。
+  geometryNotes: 官网页面两处重量读数不一致：详细规格区域显示 2300 g，对比栏显示 2620 g（178 cm）。暂按对比栏逐板长重量作为显式数据，等待品牌进一步澄清后再决定发布重量字段。
+  seasonEvidence: Blizzard-Tecnica 官方产品页标题标注 Zero G 96 2026/27，列出长度、半径、技术结构和刃角。
+  sourceCheckedAt: 2026-10-17
+  compatibilitySources: https://www.blizzard-tecnica.com/us/en/collection/men/skis/zero-g/zero-g-96
+  officialPrice: USD 849.99（evo 美国零售商 2027 款裸板挂牌价）
+  priceMarket: evo 美国零售商；裸板，不含固定器
+  priceSource: https://www.evo.com/products/266542-blizzard-zero-g-96-skis-2026
+  exchangeRateSource: ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240；折算 USD/CNY 6.686213
+  priceStatus: evo 美国零售页列 2027 款、裸板 USD 849.99；按 ECB 2026-10-16 汇率折合 CNY 5,683.22。零售挂牌参考，不是品牌 MSRP 或中国售价；未计美国税费、运输、进口及支付汇兑成本。
+editorial_scores:
+  edgeGrip: 6.5
+  stability: 6.8
+  agility: 7.8
+  softSnow: 7.8
+  versatility: 7.1
+  forgiveness: 5.8
+data_source:
+  kind: official
+  origin_url: https://www.blizzard-tecnica.com/us/en/collection/men/skis/zero-g/zero-g-96
+images:
+  - url: "https://ski-depot.com/cdn/shop/files/81XtFAAw_2000x.jpg?v=1751976809"
+    kind: face
+    alt: Blizzard Zero G 96 2026/27 雪板商品图
+    source: Ski Depot 2027 商品页；图片使用授权待核
+    sort_order: 0
+status: published

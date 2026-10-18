@@ -1,0 +1,60 @@
+slug: k2-isolator-2026
+category: snowboard
+brand: k2
+model: Isolator
+year: 2026
+title: K2 Isolator 2025/26
+one_liner: 25/26 进阶分离板，六码 142–162 cm；Directional Camber 配 VolumeShift、Paulownia Tour-Lite 木芯、ICG 10 碳纤玻纤与 Sintered 4000 底，Karakoram UltraClips 搭配 Splitrack 导轨嵌入面向登山滑雪。
+editorial_scores:
+  stability: 7.8
+  response: 7.7
+  float: 8.5
+  park: 2
+  forgiveness: 6
+  value: 5
+price:
+  min: 6097.55
+  max: 7621.93
+  currency: CNY
+specs:
+  length: 154
+  effectiveEdge: 1150
+  sidecut: 6.1
+  waistWidth: 264
+  stanceSetback: 19
+  core: Paulownia Tour-Lite Core
+  fiberglass: ICG 10 Carbon Glass
+  base: Sintered 4000 Base
+  profile: Directional Camber
+  profileFamily: camber
+  shape: Directional / VolumeShift
+  scenes:
+    - powder
+    - all-mountain
+  lengthOptions: 142 / 146 / 150 / 154 / 158 / 162
+  sidecutRadii: 6.1/7.1 m（154，两段值）
+  sizeSpecs:
+    - { size: "142", effectiveEdge: 1040, noseWidth: 299, waistWidth: 250, tailWidth: 279, sidecutRadii: "5.5/6.5 m", stanceWidth: "483 mm (19 in reference)", setback: 19 }
+    - { size: "146", effectiveEdge: 1080, noseWidth: 305, waistWidth: 254, tailWidth: 285, sidecutRadii: "5.7/6.7 m", stanceWidth: "483 mm (19 in reference)", setback: 19 }
+    - { size: "150", effectiveEdge: 1110, noseWidth: 313, waistWidth: 260, tailWidth: 293, sidecutRadii: "5.9/6.9 m", stanceWidth: "508 mm (20 in reference)", setback: 19 }
+    - { size: "154", effectiveEdge: 1150, noseWidth: 318, waistWidth: 264, tailWidth: 298, sidecutRadii: "6.1/7.1 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "158", effectiveEdge: 1180, noseWidth: 324, waistWidth: 268, tailWidth: 304, sidecutRadii: "6.3/7.3 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "162", effectiveEdge: 1220, noseWidth: 327, waistWidth: 270, tailWidth: 307, sidecutRadii: "6.5/7.5 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+  sourceCheckedAt: 2026-10-16
+  seasonEvidence: 来源为 K2 官方 25/26 单板产品目录 PDF（K2 官方静态资源域，由 k2snow.com 支持页链出）；目录第 028 页将 ISOLATOR 与 TREE SPLITTER 并排，页眉 all-gender / backcountry / splitboard，并标该款 BOARD SHAPE 为 Directional、RIDING STYLE 为 All-Mountain Freeride、ABILITY 为 Intermediate to Expert，列出 142–162 六个尺码。官方商品页 k2snow.com/en-us/p/isolator-unisex-splitboard-snowboard-2526 多次采集均返回 HTTP 410，故以官方目录为唯一来源。
+  priceCheckedAt: 2026-10-18
+  priceSource: https://k2snow.com/ja-jp/c/womens-snowboarding/womens-splitboards/
+  exchangeRate: USD/CNY 6.6862（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: "按 ECB 2026-10-16 汇率折算外币页面售价；K2 官方目录页列出 Isolator 2026 USD 911.96 折扣价与 USD 1,139.95 标价。 仅作人民币参考，不代表中国国内售价，税费、汇兑及跨境费用未计。"
+images:
+  - url: "https://content.backcountry.com/images/items/large/K2S/K2SO0N5/ONECOL.jpg"
+    kind: face
+    alt: "K2 Isolator 2025/26 商品图"
+    source: "Backcountry 2026 款 K2 Isolator 商品页图；与 K2 25/26 产品目录型号匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

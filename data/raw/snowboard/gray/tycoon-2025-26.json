@@ -1,0 +1,34 @@
+{
+  "brand": "GRAY",
+  "model": "TYCOON",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "sourceUrlEnglish": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "GRAY 官方 25/26 目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / CARVING CATEGORY'，内页含 '25/26 GRAY SNOWBOARDS' 字样。",
+  "category": "Carving",
+  "positioning": "刻滑类目；板型 POSITIVE VARIO CAMBER；目录图注区标 'TY COON'、Type-S [iz] 与 GULL WING 结构并列。边刃 1.8mm/48R CWL、侧墙角 15 度。",
+  "priceGroups": [
+    { "models": ["TYCOON 57", "TYCOON 62", "TYCOON 67"], "pretaxJpy": 136000, "taxIncludedJpy": 149600 }
+  ],
+  "priceSourceNote": "价格取自同一 PDF 刻滑类目图例区：'\\245136,000 \\245149,600' 一档对应 TYCOON / QUADRA / FORCE / TYCOON Type-S [iz] 基础组（该区另列 QUADRA 57,72 为 154,000/169,400、QUADRA 63,85 为 172,000/189,200、ALLFLEX(Vist) 组为 108,000/118,800、FORCE+Type-S+ALLFLEX VIST 为 180,000/198,000）。档案只记 TYCOON 57/62/67 属 136,000/149,600 基础档，不并入 ALLFLEX 选装价。\\245 为 PDF 文本层的日元符号编码。",
+  "sizeTable": [
+    { "size": "TYCOON 57", "overallLengthMm": 1570, "effectiveEdgeMm": 1445, "contactLengthMm": 1350, "noseWidthMm": 246, "waistWidthMm": 190, "tailWidthMm": 236, "sidecutMm": [9800, 9100, 10400], "offsetMm": -30, "camberMm": 8.0, "rockerMm": null, "stanceRangeMm": [420, 540], "setbackMm": 30, "insertQuantity": "12+12" },
+    { "size": "TYCOON 62", "overallLengthMm": 1620, "effectiveEdgeMm": 1495, "contactLengthMm": 1400, "noseWidthMm": 256, "waistWidthMm": 196, "tailWidthMm": 247, "sidecutMm": [9900, 9200, 9900], "offsetMm": -30, "camberMm": 8.0, "rockerMm": null, "stanceRangeMm": [460, 580], "setbackMm": 30, "insertQuantity": "12+12" },
+    { "size": "TYCOON 67", "overallLengthMm": 1670, "effectiveEdgeMm": 1545, "contactLengthMm": 1430, "noseWidthMm": 258, "waistWidthMm": 196, "tailWidthMm": 247, "sidecutMm": [10200, 9800, 10200], "offsetMm": -35, "camberMm": 9.0, "rockerMm": null, "stanceRangeMm": [460, 580], "setbackMm": 35, "insertQuantity": "12+12" }
+  ],
+  "construction": {
+    "edge": "1.8mm/48R CWL",
+    "sidewallAngle": 15,
+    "sidewallColor": "NEON RED",
+    "runningBase": "IS7500 Graphite",
+    "profile": "Positive Vario Camber",
+    "core": "Aspen Core（图注区与 FORCE 并列标 ASPEN Cor e）",
+    "plate": "0.4t Titanal（图注区）"
+  },
+  "sizeTableNote": "腰宽 190–196 mm，属刻滑窄板口径，与自由式型号不可直接横向比较。目录以 'TYCOON 57/62/67' 记录型号，此处保留原始写法。侧切为三段多半径。目录另有 'TYCOON Type-S [iz]' 与 'TYCOON 63 Type-S [iz]'、'TYCOON 85 Type-S [iz]' 条目，属 Type-S 子线，本档案不收，另见 gray-tycoon-type-s-iz-2027。",
+  "conflicts": [
+    "图注区同时出现 'TY COON'、'GULL WING'、'Valio Camber'、'ALLFLEX' 等结构词，部分与选装/子线相关，档案只采用正文表格可确证的 Positive Vario Camber。",
+    "TYCOON 与 FORCE 共享同一尺码几何（长/有效边刃/接触长/腰宽/侧切/站距/退格均相同），差异在 camber 值与侧墙角，档案分别建档未合并。"
+  ]
+}

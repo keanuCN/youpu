@@ -1,0 +1,26 @@
+{
+  "brand": "K2",
+  "model": "Tree Splitter",
+  "season": "2025/26",
+  "sourceUrl": "https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard",
+  "sourcePageUrl": "https://k2snow.com/en-us/support/product-catalogs",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "K2 官方 25/26 单板产品目录 PDF，第 028 页标 'ISOLATOR | TREE SPLITTER'。目录将 Tree Splitter 归为 backcountry / splitboard 线。",
+  "category": "Splitboard / Backcountry",
+  "positioning": "目录页眉（同页两列标注）含 BOARD SHAPE: Tapered Directional / RIDING STYLE: 'Look out below!' / ABILITY: Beginner to Expert，与标语 '100% A GOOD TIME, EVERY SINGLE TIME' 及结构词 Flat Rocker Profile、Extruded 2000 Base、Veneer Core、Paracord Leash、Traction Pad 相配。",
+  "attributionNote": "该目录页把 ISOLATOR 与 TREE SPLITTER 并排展示，两款的 BOARD SHAPE / RIDING STYLE / ABILITY 与 FEA TURES 分列两栏。经结构词比对：ISOLATOR 列为 Directional / All-Mountain Freeride / Intermediate to Expert，配 Directional Camber Profile、VolumeShift、Sintered 4000 Base、Paulownia Tour-Lite Core、Karakoram UltraClips、ICG 10 Carbon Glass、Splitrack Inserts（该列数值与既有 moss/其他分体板结构不同，属 K2 ISOLATOR）；TREE SPLITTER 列为 Tapered Directional、Flat Rocker Profile、Extruded 2000 Base、Veneer Core、Paracord Leash、Traction Pad。本档案只取 TREE SPLITTER 列。",
+  "sizeTable": [
+    { "size": "120", "effectiveEdgeCm": 86, "noseWaistTailMm": [290, 242, 245], "sidecutM": 9.00, "stanceIn": null, "setbackIn": null, "weightLb": "70-190+", "weightKg": "32-86+" },
+    { "size": "136", "effectiveEdgeCm": 98, "noseWaistTailMm": [302, 250, 257], "sidecutM": 9.00, "stanceIn": null, "setbackIn": null, "weightLb": "90-220+", "weightKg": "40-100+" }
+  ],
+  "features": {
+    "profile": "Flat Rocker Profile",
+    "shape": "Tapered Directional",
+    "core": "Veneer Core",
+    "base": "Extruded 2000 Base",
+    "accessories": "Paracord Leash, Traction Pad"
+  },
+  "sizeTableNote": "树分离板表中 STANCE 与 SETBACK 两列均标 'N/A'，档案记 null 而非补造。目录只给出 120 与 136 两个尺码。鼻/腰/尾宽为不对称（290/242/245、302/250/257），符合 Tapered Directional 造型，非 Twin。",
+  "priceNote": "该型号官方商品页（k2snow.com/en-us/p/tree-splitter-snowboard-2526）多次采集均返回 HTTP 410，且 25/26 目录不含标价，故本档案不填价格。",
+  "notes": "目录该页两列共用部分表头，尺码行归属已按上述结构词比对确定；为避免把 Isolator 的参数并入，档案不记录侧切多半径值（Isolator 列为 5.5/6.5 形式，Tree Splitter 列为单值 9.00）。"
+}

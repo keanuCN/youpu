@@ -409,3 +409,57 @@
   country: FR
   official_url: https://www.decathlon.co.uk/sports-equipment/helmets/f-brand_wedze
   description: 迪卡侬旗下雪上运动品牌，覆盖滑雪与单板装备及头盔、雪镜等护具。
+
+- slug: armada
+  name: Armada
+  country: US
+  official_url: https://www.armadasnow.com
+  description: 滑雪品牌，产品涵盖双板及雪上运动装备。
+
+- slug: black-crows
+  name: Black Crows
+  country: FR
+  official_url: https://www.black-crows.com
+  description: 法国滑雪品牌，产品以双板、雪杖和滑雪服饰为主。
+
+- slug: blizzard
+  name: Blizzard
+  country: AT
+  official_url: https://www.blizzard-tecnica.com
+  description: 奥地利滑雪品牌，产品覆盖雪道竞速、全山地、自由骑和登山滑雪。
+
+- slug: dps
+  name: DPS
+  country: US
+  official_url: https://www.dpsskis.com
+  description: 美国滑雪品牌，产品覆盖全山地、粉雪、刻滑和登山滑雪双板。
+
+- slug: fischer
+  name: Fischer
+  country: AT
+  official_url: https://www.fischersports.com
+  description: 奥地利冬季运动品牌，产品覆盖高山滑雪、越野滑雪及相关装备。
+
+- slug: kaestle
+  name: Kästle
+  country: AT
+  official_url: https://kaestle.com
+  description: 奥地利滑雪品牌，产品覆盖高山滑雪、自由骑、巡游和越野滑雪。
+
+- slug: line
+  name: LINE
+  country: US
+  official_url: https://lineskis.com
+  description: 美国滑雪品牌，产品覆盖自由式、公园、全山地和登山滑雪双板。
+
+- slug: stockli
+  name: Stöckli
+  country: CH
+  official_url: https://www.stoeckli.ch
+  description: 瑞士滑雪品牌，专注高山滑雪双板及配套装备。
+
+- slug: volkl
+  name: Völkl
+  country: DE
+  official_url: https://volkl.com
+  description: 德国滑雪品牌，产品覆盖雪道、竞速、全山地、自由式和登山滑雪。

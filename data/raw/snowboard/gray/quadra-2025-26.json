@@ -1,0 +1,37 @@
+{
+  "brand": "GRAY",
+  "model": "QUADRA",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "sourceUrlEnglish": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "GRAY 官方 25/26 目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / CARVING CATEGORY'。",
+  "category": "Carving",
+  "positioning": "刻滑类目；板型 POSITIVE VARIO CAMBER 与 TripleRadius；目录图注区分两个价格组：QUADRA 57/72（ALLFLEX + 4x4）与 QUADRA 63/85（ALLFLEX）。边刃 1.8mm/48R CWL。",
+  "priceGroups": [
+    { "models": ["QUADRA 57", "QUADRA 72"], "pretaxJpy": 154000, "taxIncludedJpy": 169400, "note": "ALLFLEX + 4x4" },
+    { "models": ["QUADRA 63", "QUADRA 85"], "pretaxJpy": 172000, "taxIncludedJpy": 189200, "note": "ALLFLEX" }
+  ],
+  "priceSourceNote": "价格取自同一 PDF 刻滑类目图例区，该区明确分列 'QU ADRA 57, 72 ALLFLEX + 4x4 : \\245154,000 \\245169,400' 与 'QU ADRA 63, 85 ALLFLEX : \\245172,000 \\245189,200'。\\245 为 PDF 文本层的日元符号编码。前值税前、后值含税。",
+  "sizeTable": [
+    { "size": "QUADRA 57", "overallLengthMm": 1570, "effectiveEdgeMm": 1445, "contactLengthMm": 1350, "noseWidthMm": 246, "waistWidthMm": 190, "tailWidthMm": 236, "sidecutMm": [9800, 9100, 10400], "offsetMm": -30, "camberMm": 8.0, "rockerMm": null, "stanceWidth": "420-500 mm", "setbackMm": 50, "insertQuantity": "10+10 & AFX" },
+    { "size": "QUADRA 63", "overallLengthMm": 1630, "effectiveEdgeMm": 1510, "contactLengthMm": 1410, "noseWidthMm": 260, "waistWidthMm": 200, "tailWidthMm": 247, "sidecutMm": [10200, 9800, 10800], "offsetMm": -40, "camberMm": 6.5, "rockerMm": null, "stanceWidth": "500 mm", "setbackMm": 60, "insertQuantity": "AFX" },
+    { "size": "QUADRA 72", "overallLengthMm": 1720, "effectiveEdgeMm": 1605, "contactLengthMm": 1480, "noseWidthMm": 242, "waistWidthMm": 192, "tailWidthMm": 228, "sidecutMm": [14600, 13800, 15400], "offsetMm": -55, "camberMm": 6.0, "rockerMm": null, "stanceWidth": "420-500 mm", "setbackMm": 60, "insertQuantity": "10+10 & AFX" },
+    { "size": "QUADRA 85", "overallLengthMm": 1850, "effectiveEdgeMm": 1735, "contactLengthMm": 1610, "noseWidthMm": 244, "waistWidthMm": 200, "tailWidthMm": 230, "sidecutMm": [18800, 17800, 20400], "offsetMm": -60, "camberMm": 5.5, "rockerMm": null, "stanceWidth": "500 mm", "setbackMm": 80, "insertQuantity": "AFX" }
+  ],
+  "construction": {
+    "edge": "1.8mm/48R CWL",
+    "sidewallAngle": 15,
+    "sidewallColor": "BLACK",
+    "runningBase": "IS7500 Graphite",
+    "profile": "Positive Vario Camber + TripleRadius",
+    "core": "100% beech core（图注区，与 72/85 分组并列）；0.3t Ti Ribon + 3ply 65/35",
+    "plate": "0.4t Titanal+ / 1ply 65/35（图注区）",
+    "origin": "made in OG JAPAN（图注区四个 Quandra 条目均标）"
+  },
+  "sizeTableNote": "QUADRA 为刻滑长板线，腰宽 190–200 mm、退格 50–80 mm，与自由式型号口径不同。目录以 'QUADRA 57/63/72/85' 记录，此处保留原始写法。72/85 两码侧切半径显著放大（14.6–20.4 m），保留原值不做平滑。嵌入列为 '10+10&AFX' 或 'AFX'，属 ALLFLEX 导轨口径，未套用常规 2x4。",
+  "conflicts": [
+    "图注区同时出现 'QU ADRA II'（独立型号，5 码 58/64/78/80/89）与 'QUADRA'（本档案 4 码 57/63/72/85），二者为不同型号，档案只收 QUADRA。",
+    "QUADRA 57 与 TYCOON 57 的几何行部分数值相同，但 camber 与退格不同，未合并。"
+  ]
+}

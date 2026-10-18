@@ -1,0 +1,33 @@
+{
+  "brand": "Jones",
+  "model": "Frontier 2.0",
+  "season": "2025/26",
+  "sourceUrl": "https://www.jonessnowboards.com/products/mens-frontier-20-snowboard-2026",
+  "retrievedAt": "2026-10-16",
+  "seasonEvidence": "Jones 官方美国站商品页 URL 与标题后缀为 2026，页面内 SKU 前缀为 J.26.SNM.FRT（J.26 即 25/26 雪季），JSON-LD 价格有效期为 2027-03-01；据此归档为 2025/26 雪季。",
+  "category": "All-Mountain / Freeride",
+  "positioning": "官方描述为 'redesigned Frontier 2.0 ... all-terrain, shred anything board with a tapered directional shape and a friendly flex'。",
+  "officialUsd": { "list": 529.95 },
+  "sizeTable": [
+    { "size": "150", "boardWeight": "2.5kg / 5.5lbs", "surfaceAreaDm2": 38.2, "contactLengthCm": 108.3, "effectiveEdgeCm": 114, "tipLengthCm": 24.1, "tailLengthCm": 17.6, "waistWidthCm": 24.6, "underfootFrontCm": 25.7, "underfootBackCm": 25.7, "tipWidthCm": 29.1, "tailWidthCm": 28.6, "sidecutM": 7.2, "taperMm": 5.0, "referenceStanceCm": 50.0, "centeredStanceCm": 52, "stanceSetbackCm": 2 },
+    { "size": "153", "boardWeight": "2.6kg / 5.8lbs", "surfaceAreaDm2": 39.4, "contactLengthCm": 110.7, "effectiveEdgeCm": 117, "tipLengthCm": 24.4, "tailLengthCm": 17.9, "waistWidthCm": 24.9, "underfootFrontCm": 26.1, "underfootBackCm": 26.1, "tipWidthCm": 29.4, "tailWidthCm": 28.9, "sidecutM": 7.4, "taperMm": 5.0, "referenceStanceCm": 52.0, "centeredStanceCm": 54, "stanceSetbackCm": 2 },
+    { "size": "155W", "boardWeight": "2.8kg / 6.2lbs", "surfaceAreaDm2": 41.9, "contactLengthCm": 111.9, "effectiveEdgeCm": 118, "tipLengthCm": 24.8, "tailLengthCm": 18.3, "waistWidthCm": 26.3, "underfootFrontCm": 27.5, "underfootBackCm": 27.5, "tipWidthCm": 30.8, "tailWidthCm": 30.3, "sidecutM": 7.6, "taperMm": 5.0, "referenceStanceCm": 54.0, "centeredStanceCm": 56, "stanceSetbackCm": 2 },
+    { "size": "156", "boardWeight": "2.7kg / 6lbs", "surfaceAreaDm2": 40.7, "contactLengthCm": 113.1, "effectiveEdgeCm": 119, "tipLengthCm": 24.7, "tailLengthCm": 18.2, "waistWidthCm": 25.2, "underfootFrontCm": 26.4, "underfootBackCm": 26.4, "tipWidthCm": 29.8, "tailWidthCm": 29.3, "sidecutM": 7.6, "taperMm": 5.0, "referenceStanceCm": 54.0, "centeredStanceCm": 56, "stanceSetbackCm": 2 },
+    { "size": "158W", "boardWeight": "2.9kg / 6.4lbs", "surfaceAreaDm2": 43.1, "contactLengthCm": 114.5, "effectiveEdgeCm": 121, "tipLengthCm": 25.0, "tailLengthCm": 18.5, "waistWidthCm": 26.5, "underfootFrontCm": 27.8, "underfootBackCm": 27.7, "tipWidthCm": 31.1, "tailWidthCm": 30.6, "sidecutM": 7.8, "taperMm": 5.0, "referenceStanceCm": 56.0, "centeredStanceCm": 58, "stanceSetbackCm": 2 },
+    { "size": "159", "boardWeight": "2.9kg / 6.3lbs", "surfaceAreaDm2": 41.9, "contactLengthCm": 115.5, "effectiveEdgeCm": 122, "tipLengthCm": 25.0, "tailLengthCm": 18.5, "waistWidthCm": 25.5, "underfootFrontCm": 26.8, "underfootBackCm": 26.8, "tipWidthCm": 30.2, "tailWidthCm": 29.7, "sidecutM": 7.8, "taperMm": 5.0, "referenceStanceCm": 56.0, "centeredStanceCm": 58, "stanceSetbackCm": 2 },
+    { "size": "161W", "boardWeight": "3kg / 6.6lbs", "surfaceAreaDm2": 44.3, "contactLengthCm": 117.1, "effectiveEdgeCm": 123, "tipLengthCm": 25.2, "tailLengthCm": 18.7, "waistWidthCm": 26.7, "underfootFrontCm": 27.9, "underfootBackCm": 27.9, "tipWidthCm": 31.4, "tailWidthCm": 30.9, "sidecutM": 8.0, "taperMm": 5.0, "referenceStanceCm": 56.0, "centeredStanceCm": 58, "stanceSetbackCm": 2 },
+    { "size": "162", "boardWeight": "3kg / 6.6lbs", "surfaceAreaDm2": 43.2, "contactLengthCm": 117.9, "effectiveEdgeCm": 124, "tipLengthCm": 25.3, "tailLengthCm": 18.8, "waistWidthCm": 25.8, "underfootFrontCm": 27.0, "underfootBackCm": 27.0, "tipWidthCm": 30.5, "tailWidthCm": 30.0, "sidecutM": 8.0, "taperMm": 5.0, "referenceStanceCm": 56.0, "centeredStanceCm": 58, "stanceSetbackCm": 2 },
+    { "size": "164W", "boardWeight": "3.1kg / 6.8lbs", "surfaceAreaDm2": 45.5, "contactLengthCm": 119.7, "effectiveEdgeCm": 126, "tipLengthCm": 25.4, "tailLengthCm": 18.9, "waistWidthCm": 26.9, "underfootFrontCm": 28.1, "underfootBackCm": 28.1, "tipWidthCm": 31.7, "tailWidthCm": 31.2, "sidecutM": 8.2, "taperMm": 5.0, "referenceStanceCm": 60.0, "centeredStanceCm": 58, "stanceSetbackCm": 2 },
+    { "size": "165", "boardWeight": "3.2kg / 6.9lbs", "surfaceAreaDm2": 44.5, "contactLengthCm": 120.3, "effectiveEdgeCm": 126, "tipLengthCm": 25.6, "tailLengthCm": 19.1, "waistWidthCm": 26.1, "underfootFrontCm": 27.3, "underfootBackCm": 27.3, "tipWidthCm": 30.9, "tailWidthCm": 30.4, "sidecutM": 8.2, "taperMm": 5.0, "referenceStanceCm": 60.0, "centeredStanceCm": 58, "stanceSetbackCm": 2 },
+    { "size": "167W", "boardWeight": "3.3kg / 7.3lbs", "surfaceAreaDm2": 46.7, "contactLengthCm": 122.3, "effectiveEdgeCm": 128, "tipLengthCm": 25.6, "tailLengthCm": 19.1, "waistWidthCm": 27.1, "underfootFrontCm": 28.3, "underfootBackCm": 28.3, "tipWidthCm": 31.9, "tailWidthCm": 31.4, "sidecutM": 8.4, "taperMm": 5.0, "referenceStanceCm": 60.0, "centeredStanceCm": 58, "stanceSetbackCm": 2 }
+  ],
+  "features": {
+    "shape": "Tapered Directional",
+    "insertPack": "Standard Pack",
+    "flex": "官方描述为 friendly flex，未给出数值",
+    "profile": "官方页面未在本表给出 profile 字段"
+  },
+  "sizeTableNote": "该表为 Jones 官方商品页内嵌的完整规格表，含 11 个尺码 × 13 行参数（板重、表面积、接触长、有效边刃、板头/板尾长度、腰宽、前后脚下宽度、板头/板尾宽度、侧切半径、Taper、参考站距、居中站距、嵌入组、退格）。档案逐码完整保留，未抽样、未平滑。164W/165 两码的 Centered stance 均为 58 cm，而 Reference stance 为 60 cm，二者关系按原表并存记录。",
+  "priceNote": "官方页面 JSON-LD 列 USD 529.95。",
+  "notes": "该款为 25/26 季（J.26 SKU）；与既有 jones-frontier-2-0-2027（26/27）为不同雪季档案，未互相覆盖。"
+}

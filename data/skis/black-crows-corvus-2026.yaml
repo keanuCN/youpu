@@ -1,0 +1,47 @@
+slug: black-crows-corvus-2026
+category: skis
+brand: black-crows
+model: Corvus
+year: 2026
+title: Black Crows Corvus（官网现行版本；年款待核）
+price:
+  min: 7013.84
+  max: 7013.84
+  currency: CNY
+one_liner: 大山自由滑取向，110 mm 腰宽；当前官方产品页将本版描述为双摇臂、脚下传统反拱及加入 Titanal 的方向性大山板。
+specs:
+  lengthOptions: 169.4 / 176.3 / 181.0 / 186.2 / 191.4 cm
+  waistWidth: 110
+  profile: Double Rocker；Classic Medium Camber
+  core: 官方页面未说明
+  construction: Semi-cap / 具体结构待核；页面说明带 Titanal
+  technologies: progressive rocker；long-turn sidecut；推荐安装点 -6 cm
+  terrain: 大山 / 全地形
+  skierLevel: 进阶至专家
+  bindingSetup: 裸板；页面提供多款固定器供选装
+  geometryNotes: 官网当前版本产品页列出五个长度和 110 mm 腰宽；半径 25 m 未标注对应板长，暂不录入长度参考半径。未提供逐长度头腰尾尺寸。
+  seasonEvidence: Black Crows 当前 Corvus 产品页给出产品介绍、五种长度、110 mm 腰宽、结构与 -6 cm 安装点；页面未明确雪季，精确年款待官方目录核实。
+  sourceCheckedAt: 2026-10-17
+  seasonStatus: 官网当前产品版本；季节年份待型录确认
+  officialPrice: USD 1,049（Black Crows 美国官网当前产品列表价格）
+  priceMarket: Black Crows 美国官网；Corvus 裸板
+  priceSource: https://www.black-crows.com/
+  exchangeRateSource: ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240；折算 USD/CNY 6.686213
+  priceStatus: Black Crows 美国官网当前产品列表列 Corvus USD 1,049；按 ECB 2026-10-16 汇率折合 CNY 7,013.84。该价来自官网列表，详情页曾显示不同金额，待页面价格一致后复核；美国地区参考，不是中国售价，雪季待核，税费和跨境成本另计。
+editorial_scores:
+  edgeGrip: 6.2
+  stability: 8.1
+  agility: 6.6
+  softSnow: 9.5
+  versatility: 7.9
+  forgiveness: 6.4
+data_source:
+  kind: official
+  origin_url: https://www.black-crows.com/products/102577
+images:
+  - url: "https://www.evo.com/cdn/shop/files/product-image-1170156.jpg?v=1767736066&width=720"
+    kind: face
+    alt: Black Crows Corvus 2026 雪板商品图
+    source: evo 2026 Corvus 商品页；图片使用授权待核
+    sort_order: 0
+status: published

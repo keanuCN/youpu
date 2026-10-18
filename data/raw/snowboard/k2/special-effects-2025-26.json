@@ -1,0 +1,16 @@
+{
+  "brand": "K2",
+  "model": "Special Effects",
+  "season": "2025/26",
+  "sourceUrl": "https://k2snow.com/en-us/p/special-effects-snowboard-2526",
+  "retrievedAt": "2026-10-16",
+  "officialUsd": { "sale": 401.97, "list": 669.95 },
+  "sizeChart": [
+    { "size": "140", "effectiveEdgeCm": 99, "noseWaistTailCm": [31.3, 26.8, 29.3], "sidecutM": 6.2, "stanceIn": 20, "setbackIn": 0.75, "weightKg": "41-73+" },
+    { "size": "144", "effectiveEdgeCm": 101, "noseWaistTailCm": [32.1, 27.6, 30.1], "sidecutM": 6.4, "stanceIn": 21, "setbackIn": 0.75, "weightKg": "41-73+" },
+    { "size": "148", "effectiveEdgeCm": 105, "noseWaistTailCm": [32.7, 28.0, 30.7], "sidecutM": 6.6, "stanceIn": 22, "setbackIn": 0.75, "weightKg": "54-86+" },
+    { "size": "152", "effectiveEdgeCm": 109, "noseWaistTailCm": [33.3, 28.4, 31.3], "sidecutM": 6.8, "stanceIn": 23, "setbackIn": 0.75, "weightKg": "59-95+" }
+  ],
+  "features": { "shape": "tapered directional VolumeShift", "core": "Bambooyah", "glass": "ICG 10 biax with carbon", "base": "sintered 4000", "contour": "3D contour at nose", "inserts": "2x4" },
+  "sourceConflict": "K2 页面 features 字段将 profile 写作 Directional Rocker，profile 图片图注却为 Flat Rocker；档案暂按 features 字段记录，并保留该冲突供后续核查。页面概述提到板头 8 mm contour，技术说明另称 3 mm，未将数值作为确定规格写入商品档案。"
+}

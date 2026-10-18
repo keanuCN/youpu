@@ -1,0 +1,19 @@
+{
+  "brand": "K2",
+  "model": "World Peace",
+  "season": "2025/26",
+  "sourceUrl": "https://k2snow.com/en-us/p/world-peace-mens-snowboard-2526",
+  "retrievedAt": "2026-10-16",
+  "officialUsd": { "sale": 299.97, "list": 499.95 },
+  "sizeChart": [
+    { "size": "148", "effectiveEdgeCm": 114, "noseWaistTailCm": [28.9, 24.6, 28.9], "sidecutM": [7.7, 7.3, 7.7], "stanceIn": 19, "setback": "center", "weightKg": "41-73+" },
+    { "size": "151", "effectiveEdgeCm": 117, "noseWaistTailCm": [29.2, 24.9, 29.2], "sidecutM": [7.9, 7.5, 7.9], "stanceIn": 20, "setback": "center", "weightKg": "54-86+" },
+    { "size": "152W", "effectiveEdgeCm": 117, "noseWaistTailCm": [30.0, 25.7, 30.0], "sidecutM": [7.9, 7.5, 7.9], "stanceIn": 20, "setback": "center", "weightKg": "54-86+" },
+    { "size": "154", "effectiveEdgeCm": 120, "noseWaistTailCm": [29.6, 25.2, 29.6], "sidecutM": [8.1, 7.7, 8.1], "stanceIn": 21, "setback": "center", "weightKg": "54-86+" },
+    { "size": "155W", "effectiveEdgeCm": 120, "noseWaistTailCm": [30.4, 26.0, 30.4], "sidecutM": [8.1, 7.7, 8.1], "stanceIn": 21, "setback": "center", "weightKg": "54-86+" },
+    { "size": "157", "effectiveEdgeCm": 122, "noseWaistTailCm": [29.9, 25.4, 29.9], "sidecutM": [8.3, 7.9, 8.3], "stanceIn": 22, "setback": "center", "weightKg": "59-95+" },
+    { "size": "158W", "effectiveEdgeCm": 122, "noseWaistTailCm": [30.7, 26.2, 30.7], "sidecutM": [8.3, 7.9, 8.3], "stanceIn": 22, "setback": "center", "weightKg": "59-95+" }
+  ],
+  "features": { "shape": "true twin", "profile": "twin combination camber", "flex": "4/10", "core": "100% Aspen", "glass": "biax", "base": "sintered 4000", "inserts": "2x4" },
+  "notes": "官方尺码表列出的原始数据；收录文件按产品页的 cm、in 单位保留。"
+}

@@ -1,0 +1,44 @@
+slug: armada-arv-112-2020
+category: skis
+brand: armada
+model: ARV 112
+year: 2020
+title: Armada ARV 112 2019/20（官网存档规格）
+one_liner: 112 mm 腰宽的粉雪自由式板；Freestyle Rocker、Poplar Core、Ash Binding Insert 与 W3DGEWALL，保留摇臂板头板尾和脚下反拱。
+specs:
+  lengthOptions: 165 / 175 / 185 / 192 cm
+  waistWidth: 112
+  turnRadius: 21
+  turnRadiusReferenceLength: 185 cm
+  sidecutDimensions: "165: 135-112-130 mm / 17 m；175: 135-112-130 mm / 19 m；185: 135-112-130 mm / 21 m；192: 135-112-130 mm / 23 m。"
+  profile: AR Freestyle Rocker（摇臂板头与板尾，脚下正拱）
+  core: Poplar Core；Ash Binding Insert
+  construction: W3DGEWALL；2.5 Impact Edge；S7 Base
+  technologies: AR Freestyle Rocker
+  weightPerSki: 2020
+  weightReferenceLength: 185 cm
+  terrain: 粉雪 / 自由式 / 全山
+  skierLevel: 进阶至专家
+  bindingSetup: 裸板，不含固定器
+  weightBasis: Armada 官网存档页约重，185 cm 单只约 2020 g。
+  geometryNotes: 官网存档页所示为历史版 ARV 112，不代表 2026/27 当前款；板长 192 cm 的资料未显示板尾完整值，故尺寸列表注明官方腰宽与板头数据范围，避免补推。
+  seasonEvidence: 官网产品货号 RA0651 存档页列出 165/175/185/192 cm 与结构、各长度半径；该页面内容显示数据版本约为 2020，作为历史款记录。
+  sourceCheckedAt: 2026-10-17
+  priceStatus: 历史款，不录当前价格。
+editorial_scores:
+  edgeGrip: 6.1
+  stability: 7
+  agility: 8.4
+  softSnow: 7.5
+  versatility: 7.8
+  forgiveness: 7.7
+data_source:
+  kind: official
+  origin_url: https://www.armadaskis.com/en-se/shop-emea/product/arv-112-ra0651.html
+images:
+  - url: "https://cdn.amersports.com/d99f2ba0-f6f6-44b4-bdd4-b4a400be0e06/ARP_RA0000756_0_GHO_ARV_112_FullImageWebOptimized.png?width=1200&height=630&fit=bounds&format=auto&canvas=1200,630&bg-color=ffffff&quality=80"
+    kind: face
+    alt: Armada ARV 112 2019/20 雪板商品图
+    source: Armada 官方商品页 Open Graph 图；图片使用授权待核
+    sort_order: 0
+status: published

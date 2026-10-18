@@ -1,0 +1,52 @@
+slug: volkl-revolt-96-2027
+category: skis
+brand: volkl
+model: Revolt 96
+year: 2027
+title: Völkl Revolt 96 2026/27
+price:
+  min: 3956.21
+  max: 3956.21
+  currency: CNY
+one_liner: 96 mm 腰宽的公园与街式 twin-tip；Tip & Tail Rocker、3D Radius Sidecut 与全长侧墙，板头至板尾分别强化公园动作反馈。
+specs:
+  lengthOptions: 157 / 165 / 173 / 181 cm
+  waistWidth: 96
+  turnRadius: 17
+  turnRadiusReferenceLength: 173 cm
+  sidecutDimensions: "四种长度均列 126-96-117 mm；分段半径 157: 15.5/13.4/14.3、165: 17.6/15.2/16.6、173: 19.9/17.0/18.6、181: 23.0/19.8/21.5 m（板头/前段/中段/板尾，依官网表头定义）。"
+  profile: Tip & Tail Rocker
+  core: Multilayer Woodcore
+  construction: Full Sidewall / Mini Cap；强化边刃
+  technologies: 3D Radius Sidecut；Park & Urban flex zones
+  weightPerSki: 1985
+  weightReferenceLength: 173 cm
+  terrain: 公园 / 街式 / 全山自由式
+  skierLevel: 中级至专家
+  bindingSetup: 裸板，不含固定器
+  weightBasis: 官方无绑定单只重量：157/1805、165/1925、173/1985、181/2095 g。
+  geometryNotes: 官网 173 cm 产品页标价与尺寸均来自日本地区页面；计量数据以品牌页面原表为准。
+  seasonEvidence: Völkl 官方商品页标注 2027 款，列出四种长度、分段半径、板型、重量及不含固定器说明。
+  sourceCheckedAt: 2026-10-17
+  officialPrice: JPY 93,500 含税
+  priceMarket: Völkl 日本官方商品页
+  priceSource: https://volkl.com/en-jp/p/revolt-96-skis-v2610156
+  exchangeRateSource: ECB 2026-10-16 EUR/JPY 177.82、EUR/CNY 7.5240；折算 JPY/CNY 0.042313
+  priceStatus: Völkl 日本官方页面标价 JPY 93,500（含税）；按 ECB 2026-10-16 汇率折合 CNY 3,956.21。日本地区挂牌参考，不是中国售价；未计跨境运输、进口及支付汇兑成本。
+editorial_scores:
+  edgeGrip: 6.7
+  stability: 7
+  agility: 8.8
+  softSnow: 6.8
+  versatility: 7.8
+  forgiveness: 7.7
+data_source:
+  kind: official
+  origin_url: https://volkl.com/en-jp/p/revolt-96-skis-v2610156
+images:
+  - url: "https://stevessnowstore.com/cdn/shop/files/Volkl_Revolt_96_Skis_2027.png?v=1780111313&width=1920"
+    kind: face
+    alt: Völkl Revolt 96 2026/27 雪板商品图
+    source: Steve's Snow Store 2027 商品图；图片使用授权待核
+    sort_order: 0
+status: published

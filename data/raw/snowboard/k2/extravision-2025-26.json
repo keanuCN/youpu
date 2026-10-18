@@ -1,0 +1,33 @@
+{
+  "brand": "K2",
+  "model": "Extravision",
+  "season": "2025/26",
+  "gender": "Women's",
+  "sourceUrl": "https://k2snow.com/en-us/p/extravision-womens-snowboard-2526",
+  "retrievedAt": "2026-10-16",
+  "pageTitle": "K2 Extravision Women's Snowboard 2026 | K2 Skis and K2 Snowboarding",
+  "seasonEvidence": "K2 官方美国商品页标题为 'K2 Extravision Women's Snowboard 2026'，URL 路径含 2526；页面标语为 'Designed for the intermediate-to-advanced snowboarder' 并列出 139–152W 八个尺码，故归档为 2025/26。",
+  "officialUsd": { "sale": 323.97, "list": 539.95 },
+  "category": "All Mountain, Powder",
+  "ability": ["Intermediate", "Advanced"],
+  "sizeChart": [
+    { "size": "139", "effectiveEdgeCm": 105, "noseWaistTailCm": [26.9, 23.0, 26.9], "sidecutM": 6.60, "stanceIn": 18, "setbackIn": 0.5, "weightLb": "70 - 160+", "weightKg": "32 - 73+" },
+    { "size": "142", "effectiveEdgeCm": 108, "noseWaistTailCm": [27.3, 23.4, 27.3], "sidecutM": 6.80, "stanceIn": 18, "setbackIn": 0.5, "weightLb": "70 - 160+", "weightKg": "32 - 73+" },
+    { "size": "145", "effectiveEdgeCm": 110, "noseWaistTailCm": [27.7, 23.7, 27.7], "sidecutM": 7.00, "stanceIn": 19, "setbackIn": 0.5, "weightLb": "90 - 160+", "weightKg": "41 - 73+" },
+    { "size": "147", "effectiveEdgeCm": 112, "noseWaistTailCm": [28.0, 24.0, 28.0], "sidecutM": 7.10, "stanceIn": 19, "setbackIn": 0.5, "weightLb": "90 - 160+", "weightKg": "41 - 73+" },
+    { "size": "149", "effectiveEdgeCm": 113, "noseWaistTailCm": [28.2, 24.1, 28.2], "sidecutM": 7.25, "stanceIn": 19, "setbackIn": 0.5, "weightLb": "90 - 160+", "weightKg": "41 - 73+" },
+    { "size": "149W", "effectiveEdgeCm": 113, "noseWaistTailCm": [28.8, 24.7, 28.8], "sidecutM": 7.25, "stanceIn": 19, "setbackIn": 0.5, "weightLb": "90 - 160+", "weightKg": "41 - 73+" },
+    { "size": "152", "effectiveEdgeCm": 116, "noseWaistTailCm": [28.5, 24.4, 28.5], "sidecutM": 7.50, "stanceIn": 20, "setbackIn": 0.5, "weightLb": "110 - 180+", "weightKg": "50 - 82+" },
+    { "size": "152W", "effectiveEdgeCm": 116, "noseWaistTailCm": [29.3, 25.2, 29.3], "sidecutM": 7.50, "stanceIn": 20, "setbackIn": 0.5, "weightLb": "110 - 180+", "weightKg": "50 - 82+" }
+  ],
+  "features": {
+    "profile": "Combination Camber",
+    "shape": "Directional / Traditional Shape",
+    "core": "Rhythm Core (aspen with paulownia in tip and tail)",
+    "glass": "ICG 10 Biax Glass with Carbon",
+    "base": "Sintered 4000, Stone Finish",
+    "additive": "Hybritech Construction",
+    "inserts": "2 x 4"
+  },
+  "notes": "官方 features 区在 'Flex / Construction / Profile' 图注中同时出现 'Twin Combination Camber'；档案 profile 取组合 Camber，shape 取 Directional（分类行 Snowboard Shape 为 Directional）。Rhythm Core 官方说明为以 aspen 为主、板头板尾换用 paulownia，未给出百分比配比。"
+}

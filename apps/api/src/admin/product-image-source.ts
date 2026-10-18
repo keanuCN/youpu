@@ -69,6 +69,8 @@ export const APPROVED_SOURCE_HOSTS = new Set([
   'shop.r10s.jp',
   'www.hasco.co.jp',
   'www.skitreff.de',
+  'xgamesnow.co.kr',
+  'www.xgamesnow.co.kr',
 ]);
 
 async function readResponseBounded(response: Response): Promise<Buffer> {

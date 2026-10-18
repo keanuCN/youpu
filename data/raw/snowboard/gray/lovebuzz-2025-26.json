@@ -1,0 +1,40 @@
+{
+  "brand": "GRAY",
+  "model": "LOVEBUZZ",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "sourceUrlEnglish": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "GRAY 官方 25/26 目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / FREESTYLE CATEGORY'，内页含 '25/26 GRAY SNOWBOARDS' 字样。",
+  "category": "Freestyle",
+  "positioning": "目录自由式类目；板型标注 SINGLE CAMBER，另有 [ROC] 与 [CAM] 两个并行款式标注（见 conflicts）。目录该页说明该款为 Directional / Directional Flex Negative / TripleRadius / Paulownia Core。",
+  "priceGroups": [
+    { "models": ["LOVEBUZZ 148", "LOVEBUZZ 152", "LOVEBUZZ 158", "LOVEBUZZ 162"], "pretaxJpy": 79000, "taxIncludedJpy": 86900 },
+    { "models": ["LOVEBUZZ 157 (Rocker/Camber)"], "pretaxJpy": 94000, "taxIncludedJpy": 103400 }
+  ],
+  "priceSourceNote": "自由式目录明确写 'L O VEBUZZ 1 4 8 , 1 5 2 , 1 5 8 , 1 6 2 : \\24579,000 \\24586,900 | 1 5 7 R o c k e r / C a m b e r : \\24594,000 \\245103,400'，即 148/152/158/162 四码为 79,000/86,900 档，157 的 Rocker/Camber 版本为 94,000/103,400 档。\\245 为日元符号编码，前值税前、后值含税。目录未单列 48/52 两码价格，故该两码价格未在档案中下推。",
+  "sizeTable": [
+    { "size": "LOVEBUZZ 148", "overallLengthMm": 1480, "effectiveEdgeMm": 1160, "contactLengthMm": 1100, "noseWidthMm": 286, "waistWidthMm": 240, "tailWidthMm": 268, "sidecutMm": [8800, 7800, 8400], "offsetMm": -80, "camberMm": 5.0, "rockerMm": null, "stanceRangeMm": [440, 560], "setbackMm": 40, "insertQuantity": "12+12", "stiffnessNWT": [6.0, 6.5, 6.8] },
+    { "size": "LOVEBUZZ 152", "overallLengthMm": 1520, "effectiveEdgeMm": 1180, "contactLengthMm": 1120, "noseWidthMm": 296, "waistWidthMm": 250, "tailWidthMm": 278, "sidecutMm": [9200, 8200, 8800], "offsetMm": -80, "camberMm": 6.0, "rockerMm": null, "stanceRangeMm": [460, 580], "setbackMm": 40, "insertQuantity": "12+12", "stiffnessNWT": [6.5, 7.3, 7.5] },
+    { "size": "LOVEBUZZ 157 [ROC]", "overallLengthMm": 1570, "effectiveEdgeMm": 1290, "contactLengthMm": 1240, "noseWidthMm": 300, "waistWidthMm": 251, "tailWidthMm": 293, "sidecutMm": [9200, 8800, 8400, 9000, 9600], "offsetMm": -20, "camberMm": null, "rockerMm": 6.0, "stanceRangeMm": [500, 620], "setbackMm": 55, "insertQuantity": "12+12", "stiffnessNWT": [7.2, 7.6, 8.0] },
+    { "size": "LOVEBUZZ 157 [CAM]", "overallLengthMm": 1570, "effectiveEdgeMm": 1290, "contactLengthMm": 1240, "noseWidthMm": 300, "waistWidthMm": 251, "tailWidthMm": 293, "sidecutMm": [9200, 8800, 8400, 9000, 9600], "offsetMm": -20, "camberMm": 6.0, "rockerMm": null, "stanceRangeMm": [500, 620], "setbackMm": 55, "insertQuantity": "12+12", "stiffnessNWT": [7.2, 7.6, 8.0] },
+    { "size": "LOVEBUZZ 158", "overallLengthMm": 1580, "effectiveEdgeMm": 1240, "contactLengthMm": 1180, "noseWidthMm": 300, "waistWidthMm": 254, "tailWidthMm": 282, "sidecutMm": [9900, 8900, 9500], "offsetMm": -80, "camberMm": 7.0, "rockerMm": null, "stanceRangeMm": [500, 620], "setbackMm": 40, "insertQuantity": "12+12", "stiffnessNWT": [7.5, 8.0, 8.5] },
+    { "size": "LOVEBUZZ 162", "overallLengthMm": 1620, "effectiveEdgeMm": 1270, "contactLengthMm": 1210, "noseWidthMm": 306, "waistWidthMm": 260, "tailWidthMm": 290, "sidecutMm": [10200, 9200, 9800], "offsetMm": -80, "camberMm": 7.0, "rockerMm": null, "stanceRangeMm": [500, 620], "setbackMm": 40, "insertQuantity": "12+12", "stiffnessNWT": [7.8, 8.3, 8.8] }
+  ],
+  "construction": {
+    "edge": "1.8mm/stainless",
+    "sidewallAngle": 25,
+    "sidewallColor": "BLACK",
+    "runningBase": "P-TEX3000 Graphite（148/152/158/162）；IS R2118（157 [ROC]/[CAM]）",
+    "profile": "Single Camber / Rocker（157 版）",
+    "shape": "Directional",
+    "core": "Paulownia Core",
+    "laminate": "2ply 50/50 + 2ply 50/50（图注区）"
+  },
+  "sizeTableNote": "目录把 157 拆成 [ROC] 与 [CAM] 两个变体：前者 Camber 列为 '---'、Rocker 为 6.0；后者相反。两行其余几何数值相同。档案按目录保留两行，未合并成单一 157。该款鼻长 245–290 mm、鼻翘高 47.8–65.5 mm、退格 -20 至 -80 mm，属明显方向性粉雪造型，与同页 Twin 型号口径不同。",
+  "conflicts": [
+    "157 的 [ROC] 与 [CAM] 为目录并列的两个变体，档案分别列出，未合并。",
+    "该款与既有 gray-lovebuzz-58-2027 为不同雪季档案（本档为 2025/26 目录），未覆盖既有 2027 档案。",
+    "目录未单列 48/52 两码价格，档案未为其下推价格。"
+  ]
+}

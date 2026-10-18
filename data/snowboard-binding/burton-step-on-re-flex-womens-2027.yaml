@@ -5,6 +5,12 @@ model: "Women's Step On Re:Flex"
 year: 2027
 title: "Burton Women's Step On Re:Flex 2027"
 one_liner: "女款 Step On 快穿固定器，尺码需与女款 Step On 雪鞋对应；不得与男款 Step On 产品混搭。"
+editorial_scores:
+  response: 7.5
+  comfort: 8
+  versatility: 6.5
+  convenience: 9.5
+  value: 6.5
 price:
   min: 1811.99
   max: 1811.99

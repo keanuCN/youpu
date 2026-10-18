@@ -1,0 +1,30 @@
+{
+  "brand": "K2",
+  "model": "Kandi",
+  "season": "2025/26",
+  "sourceUrl": "https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard",
+  "sourcePageUrl": "https://k2snow.com/en-us/support/product-catalogs",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "K2 官方 25/26 单板产品目录 PDF。目录 YOUTH COLLECTION 页标 'VANDAL | KANDI | LIL KAT | LIL MINI'，KANDI 页眉标 youth / all-mountain / twin。",
+  "category": "Youth / All-Mountain",
+  "collection": "YOUTH COLLECTION",
+  "positioning": "目录标注 BOARD SHAPE: Twin，RIDING STYLE: All-Mountain，ABILITY: Beginner to Advanced。标语 'BUILT TO INSTILL CONFIDENCE'。",
+  "sizeTable": [
+    { "size": "132", "effectiveEdgeCm": 102, "noseWaistTailMm": [271, 231, 271], "sidecutM": 6.20, "stanceIn": 17, "setback": "CENTER", "weightLb": "<120", "weightKg": "<54" },
+    { "size": "137", "effectiveEdgeCm": 107, "noseWaistTailMm": [275, 234, 275], "sidecutM": 6.60, "stanceIn": 18, "setback": "CENTER", "weightLb": "<130", "weightKg": "<59" },
+    { "size": "142", "effectiveEdgeCm": 112, "noseWaistTailMm": [280, 237, 280], "sidecutM": 7.00, "stanceIn": 19, "setback": "CENTER", "weightLb": "<130", "weightKg": "<59" },
+    { "size": "145W", "effectiveEdgeCm": 114, "noseWaistTailMm": [291, 247, 291], "sidecutM": 7.20, "stanceIn": 20, "setback": "CENTER", "weightLb": "<150", "weightKg": "<68" },
+    { "size": "148W", "effectiveEdgeCm": 117, "noseWaistTailMm": [294, 250, 294], "sidecutM": 7.40, "stanceIn": 20, "setback": "CENTER", "weightLb": "<160", "weightKg": "<72" }
+  ],
+  "features": {
+    "profile": "Twin Rocker Profile",
+    "shape": "Twin",
+    "core": "Aspen Core",
+    "glass": "Biax Glass",
+    "base": "Extruded 2000 Base",
+    "tune": "Catch-Free Tune"
+  },
+  "sizeTableNote": "目录同一页的 VANDAL 与 KANDI 各有独立尺码表。经比对，VANDAL 表为 129/134/137/141（腰宽 224–232 mm），KANDI 表为 132/137/142/145W/148W（腰宽 231–250 mm）；本档案只取 KANDI 表（与官方 sitemap 中 kandi-youth-snowboard-2526 对应）。两表的 STANCE 与 SETBACK 形式一致（英寸 / CENTER）。体重列为上限值（'<120' 等），档案按原文保留不等号含义。",
+  "priceNote": "该型号官方商品页（k2snow.com/en-us/p/kandi-youth-snowboard-2526）采集时返回 HTTP 404，且 25/26 目录为规格型文档、不含标价，故本档案不填价格。",
+  "notes": "腰宽 231–250 mm，属青少年板口径。目录标注 ABILITY 为 Beginner to Advanced，未给数值硬度。"
+}

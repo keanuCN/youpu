@@ -1,0 +1,50 @@
+slug: stockli-laser-sc-2027
+category: skis
+brand: stockli
+model: Laser SC
+year: 2027
+title: Stöckli Laser SC 2026/27
+price:
+  min: 9021.28
+  max: 9021.28
+  currency: CNY
+one_liner: 多弯型雪道刻滑板；官方强调 Race Core、FTC 与 Full Edge Contact，适合短弯与较长弯型切换。
+specs:
+  lengthOptions: 152 / 158 / 164 / 170 / 176 cm
+  waistWidth: 70
+  turnRadius: 13.8
+  turnRadiusReferenceLength: 164 cm
+  sidecutDimensions: "网页技术参数显示 123-72-104 mm；产品介绍称板腰 70 mm，存在标注冲突，未合并成单一结论。"
+  core: Piste Race Core（Race Core）
+  construction: Sandwich System；Racing Sidewalls Black；Polyamid 表层；Racing-Graphite 底板
+  technologies: FTC Flex Torsion Control；FEC Full Edge Contact；SME Solid Metal Edge；SOC Size Optimized Construction
+  baseEdgeAngle: 1.0
+  sideEdgeAngle: 2.0
+  terrain: 雪道 / 刻滑 / 多弯型
+  skierLevel: 进阶至专家
+  bindingSetup: 可选多种 Stöckli 板台与绑定配置；基础型号未固定为单一套装
+  geometryNotes: Stöckli 官方当前产品页给出 152/11.6、158/12.7、164/13.8、170/14.9、176/16.0 m；同页截面标 123-72-104 mm，但文案另称 70 mm 板腰。重量未公开。
+  seasonEvidence: 官方产品页货号 41010127-20；Stöckli Winter 2026/27 Workbook 将 Laser SC 列入当季型录。
+  sourceCheckedAt: 2026-10-17
+  officialPrice: EUR 1,199 起（含 VAT；绑定选项另计）
+  priceMarket: Stöckli 欧洲官网
+  priceSource: https://www.stoeckli.ch/inten/ski/ski/race/laser-sc
+  exchangeRateSource: ECB 2026-10-16 EUR/CNY 7.5240
+  priceStatus: Stöckli 欧洲官网裸板起售价 EUR 1,199（含 VAT），按 ECB 2026-10-16 汇率折合 CNY 9,021.28；绑定与板台另计。仅作欧洲地区参考，不是中国售价；未计跨境运输、进口及支付汇兑成本。
+editorial_scores:
+  edgeGrip: 9.3
+  stability: 8.7
+  agility: 8
+  softSnow: 3.7
+  versatility: 7.1
+  forgiveness: 5.4
+data_source:
+  kind: official
+  origin_url: https://www.stoeckli.ch/inten/ski/ski/race/laser-sc
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0831/7177/0663/files/LASER-SC-BIND-SRT-12.jpg?v=1760248834"
+    kind: face
+    alt: Stöckli Laser SC 2026/27 雪板商品图，含 SRT 固定器
+    source: PTO Ski 2026/27 商品页；此图为含 SRT 12 固定器的套装展示，图片使用授权待核
+    sort_order: 0
+status: published

@@ -1,0 +1,55 @@
+slug: k2-tree-splitter-2026
+category: snowboard
+brand: k2
+model: Tree Splitter
+year: 2026
+title: K2 Tree Splitter 2025/26
+one_liner: 25/26 入门向树林粉雪板，仅 120 与 136 cm 两个短尺码；Flat Rocker 板型配 Veneer 木皮芯、Extruded 2000 底板与 Paracord 牵引绳、防滑贴，Tapered Directional 造型面向林间粉雪玩乐。
+editorial_scores:
+  stability: 6.2
+  response: 7.5
+  float: 9
+  park: 4
+  forgiveness: 7
+  value: 5.2
+price:
+  min: 1470.63
+  max: 1470.63
+  currency: CNY
+specs:
+  length: 136
+  effectiveEdge: 980
+  sidecut: 9.0
+  waistWidth: 250
+  stanceSetback: 0
+  core: Veneer Core
+  base: Extruded 2000 Base
+  profile: Flat Rocker
+  profileFamily: rocker
+  shape: Tapered Directional
+  scenes:
+    - powder
+    - all-mountain
+  lengthOptions: 120 / 136
+  sidecutRadii: 9.00 m（全尺码）
+  sizeSpecs:
+    - { size: "120", effectiveEdge: 860, noseWidth: 290, waistWidth: 242, tailWidth: 245, sidecutRadii: "9.00 m" }
+    - { size: "136", effectiveEdge: 980, noseWidth: 302, waistWidth: 250, tailWidth: 257, sidecutRadii: "9.00 m" }
+  sourceCheckedAt: 2026-10-16
+  seasonEvidence: 来源为 K2 官方 25/26 单板产品目录 PDF（K2 官方静态资源域，由 k2snow.com 支持页链出）；目录第 028 页将 ISOLATOR 与 TREE SPLITTER 并排展示，页眉含 Tapered Directional、Flat Rocker Profile、Extruded 2000 Base、Veneer Core、Paracord Leash、Traction Pad 等结构词，对应 TREE SPLITTER 列。目录给出 120 与 136 两个尺码。官方商品页 k2snow.com/en-us/p/tree-splitter-snowboard-2526 多次采集均返回 HTTP 410，故以官方目录为唯一来源。
+  priceCheckedAt: 2026-10-18
+  priceSource: https://k2snow.com/en-us/deep
+  exchangeRate: USD/CNY 6.6862（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: "按 ECB 2026-10-16 汇率折算外币页面售价；K2 官方 Deep Collection 页面列出 Tree Splitter 2026 售价 USD 219.95。 仅作人民币参考，不代表中国国内售价，税费、汇兑及跨境费用未计。"
+images:
+  - url: "https://cherripow.com.au/cdn/shop/files/2026-K2-TREE-SPLITTER-TOP-Unisex-Snowboard.webp?v=1741646812&width=1946"
+    kind: face
+    alt: "K2 Tree Splitter 2025/26 商品图"
+    source: "Cherri Cherri Pow Pow 2026 款 K2 Tree Splitter 商品页图；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

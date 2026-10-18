@@ -5,11 +5,12 @@ import products from '@/data/snowboard-setup-products.json';
 import { simpleMetadata } from '@/lib/seo';
 import { SnowboardStanceGuide } from '@/components/gear/snowboard-stance-guide';
 import { SnowboardInstructorSystems } from '@/components/gear/snowboard-instructor-systems';
+import { SnowboardRidingStyles } from '@/components/gear/snowboard-riding-styles';
 import { fmtOfficialPriceCny, fmtPrice, officialPriceRangeCny } from '@/lib/format';
 
 export const metadata = simpleMetadata({
   title: '单板、固定器、雪鞋三件套选配指南',
-  description: '了解单板固定器八字角、一顺角、角度调整和站距，再学习雪鞋、固定器与雪板的搭配方法。',
+  description: '了解单板全山、刻滑、平花、公园、跳台与粉雪等滑行风格，再学习站姿、固定器角度和三件套搭配。',
   path: '/guides/snowboard-setup',
 });
 
@@ -29,6 +30,19 @@ function GuideQuickNav() {
       <p className="mono-label mb-3 text-primary">本页章节</p>
       <ul className="grid grid-cols-2 gap-x-3 gap-y-1 text-[13px] leading-6 sm:grid-cols-3 lg:grid-cols-1">
         <li><a href="#setup-order" className="block border-l-2 border-transparent py-1 pl-3 transition-colors hover:border-primary hover:text-primary">选配顺序</a></li>
+        <li>
+          <a href="#riding-styles" className="block border-l-2 border-transparent py-1 pl-3 transition-colors hover:border-primary hover:text-primary">单板滑行风格</a>
+          <ul className="ml-3 space-y-0.5 border-l border-border py-1 pl-3 text-muted-foreground lg:ml-4">
+            <li><a href="#style-all-mountain" className="transition-colors hover:text-primary">全山</a></li>
+            <li><a href="#style-carving" className="transition-colors hover:text-primary">刻滑</a></li>
+            <li><a href="#style-flatground" className="transition-colors hover:text-primary">平花</a></li>
+            <li><a href="#style-park" className="transition-colors hover:text-primary">公园</a></li>
+            <li><a href="#style-jumps" className="transition-colors hover:text-primary">跳台 / Big Air</a></li>
+            <li><a href="#style-halfpipe" className="transition-colors hover:text-primary">半管</a></li>
+            <li><a href="#style-freeride" className="transition-colors hover:text-primary">自由骑与粉雪</a></li>
+            <li><a href="#field-reports" className="transition-colors hover:text-primary">公开实测样本</a></li>
+          </ul>
+        </li>
         <li>
           <a href="#stance-guide" className="block border-l-2 border-transparent py-1 pl-3 transition-colors hover:border-primary hover:text-primary">站姿与固定器角度</a>
           <ul className="ml-3 space-y-0.5 border-l border-border py-1 pl-3 text-muted-foreground lg:ml-4">
@@ -65,7 +79,8 @@ export default function SnowboardSetupPage() {
             雪鞋、固定器、雪板一起决定站姿和控制感。先把合脚与接口弄明白，再调角度、选板型。
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href="#stance-guide" className="inline-flex min-h-11 items-center bg-primary px-5 text-sm font-medium text-primary-foreground transition-colors hover:bg-foreground">看站姿与角度</a>
+            <a href="#riding-styles" className="inline-flex min-h-11 items-center bg-primary px-5 text-sm font-medium text-primary-foreground transition-colors hover:bg-foreground">认识滑行风格</a>
+            <a href="#stance-guide" className="inline-flex min-h-11 items-center border border-foreground/30 px-5 text-sm font-medium transition-colors hover:border-primary hover:text-primary">看站姿与角度</a>
             <a href="#setup-recommendations" className="inline-flex min-h-11 items-center border border-foreground/30 px-5 text-sm font-medium transition-colors hover:border-primary hover:text-primary">看三件套搭配</a>
           </div>
           <p className="mt-5 max-w-xl border-l-2 border-primary pl-4 text-xs leading-5 text-muted-foreground">
@@ -104,6 +119,8 @@ export default function SnowboardSetupPage() {
           </li>
         </ol>
       </section>
+
+      <SnowboardRidingStyles />
 
       <SnowboardStanceGuide />
 

@@ -1,0 +1,67 @@
+slug: k2-embassy-2026
+category: snowboard
+brand: k2
+model: Embassy
+year: 2026
+title: K2 Embassy 2025/26
+one_liner: 25/26 全山地定向 Twin，十码 149–165W cm 含四个宽版；Twin Combination Camber 配 BAP 木芯、ICG 10 碳纤玻纤与 Sintered 4000 底板，Hybritech 结构定位中级到进阶。
+editorial_scores:
+  stability: 8
+  response: 7.7
+  float: 7.5
+  park: 7
+  forgiveness: 6
+  value: 5.8
+price:
+  min: 2527.12
+  max: 3610.22
+  currency: CNY
+specs:
+  priceCheckedAt: 2026-10-17
+  officialPrice: USD 539.95 标价；USD 377.96 折扣价
+  priceMarket: K2 官方英文商品页（25/26）
+  priceSource: https://k2snow.com/en-nl/p/embassy-mens-snowboard-2526
+  exchangeRate: EUR/USD 1.1253；EUR/CNY 7.5240（ECB 2026-10-16）；USD/CNY 6.68621701
+  exchangeRateSource: https://www.lb.lt/en/daily-euro-foreign-exchange-reference-rates-published-by-the-european-central-bank
+  priceStatus: K2 官方商品页搜索索引保留 2026 款标价 USD 539.95 与折扣价 USD 377.96；按 ECB 2026-10-16 参考汇率折算约 CNY 2,527.12–3,610.22。页面目前返回 410，价格是索引快照，不是中国售价或成交价，税费与跨境费用未计。
+  length: 155
+  effectiveEdge: 1180
+  sidecut: 7.7
+  waistWidth: 247
+  stanceSetback: 13
+  core: BAP Core
+  fiberglass: ICG 10 Biax Carbon Glass
+  base: Sintered 4000 Base
+  profile: Twin Combination Camber
+  profileFamily: camber
+  shape: Directional Twin
+  scenes:
+    - all-mountain
+    - powder
+    - carving
+  lengthOptions: 149 / 152 / 155 / 157 / 157W / 159 / 159W / 162 / 162W / 165W
+  sidecutRadii: 7.70 m（155）
+  sizeSpecs:
+    - { size: "149", effectiveEdge: 1130, noseWidth: 282, waistWidth: 241, tailWidth: 282, sidecutRadii: "7.25 m", stanceWidth: "483 mm (19 in reference)", setback: 13 }
+    - { size: "152", effectiveEdge: 1160, noseWidth: 285, waistWidth: 244, tailWidth: 285, sidecutRadii: "7.50 m", stanceWidth: "508 mm (20 in reference)", setback: 13 }
+    - { size: "155", effectiveEdge: 1180, noseWidth: 289, waistWidth: 247, tailWidth: 289, sidecutRadii: "7.70 m", stanceWidth: "533 mm (21 in reference)", setback: 13 }
+    - { size: "157", effectiveEdge: 1190, noseWidth: 291, waistWidth: 249, tailWidth: 291, sidecutRadii: "7.80 m", stanceWidth: "533 mm (21 in reference)", setback: 13 }
+    - { size: "157W", effectiveEdge: 1190, noseWidth: 299, waistWidth: 257, tailWidth: 299, sidecutRadii: "7.80 m", stanceWidth: "508 mm (20 in reference)", setback: 13 }
+    - { size: "159", effectiveEdge: 1220, noseWidth: 295, waistWidth: 251, tailWidth: 295, sidecutRadii: "7.90 m", stanceWidth: "559 mm (22 in reference)", setback: 13 }
+    - { size: "159W", effectiveEdge: 1220, noseWidth: 303, waistWidth: 259, tailWidth: 303, sidecutRadii: "7.90 m", stanceWidth: "559 mm (22 in reference)", setback: 13 }
+    - { size: "162", effectiveEdge: 1230, noseWidth: 297, waistWidth: 254, tailWidth: 297, sidecutRadii: "8.10 m", stanceWidth: "584 mm (23 in reference)", setback: 13 }
+    - { size: "162W", effectiveEdge: 1230, noseWidth: 305, waistWidth: 262, tailWidth: 305, sidecutRadii: "8.10 m", stanceWidth: "584 mm (23 in reference)", setback: 13 }
+    - { size: "165W", effectiveEdge: 1260, noseWidth: 310, waistWidth: 266, tailWidth: 310, sidecutRadii: "8.30 m", stanceWidth: "584 mm (23 in reference)", setback: 13 }
+  sourceCheckedAt: 2026-10-16
+  seasonEvidence: 来源为 K2 官方 25/26 单板产品目录 PDF（K2 官方静态资源域，由 k2snow.com 支持页链出）；目录第 016 页将 ALMANAC 与 EMBASSY 并排，EMBASSY 列标 BOARD SHAPE 为 Directional Twin、RIDING STYLE 为 All-Mountain、ABILITY 为 Intermediate to Advanced，列出 149–165W 十个尺码。官方商品页 k2snow.com/en-us/p/embassy-mens-snowboard-2526 连续三次采集均返回 HTTP 410，故以官方目录为唯一来源。
+images:
+  - url: "https://www.evo.com/cdn/shop/files/product-image-1192368.jpg?v=1767736914"
+    kind: face
+    alt: "K2 Embassy 2025/26 商品图"
+    source: "evo 2026 款 K2 Embassy 商品页图；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

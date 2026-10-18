@@ -38,6 +38,13 @@ specs:
   seasonEvidence: HEAD 26/27 Hardgoods 目录及 HEAD 国际产品页确认 article 315656、2026/27 与产品定位。HEAD 官方俄语区商店列货号 31565601、2026/27、JOY 9 GW SLR 套装及五档规格；后缀与国际 article 同根，按地区商品记录保留 SKU 差异。旧候选货号 31655507 不用于匹配。
   sourceCheckedAt: 2026-10-15
   compatibilitySources: https://www.head.com/en_GB/product/easy-joy-315656-set; https://head.ru/ski/shop/skis/8374/138146/; https://www.eski.sk/image/document/head-hardgoods-26-27-en.pdf
+editorial_scores:
+  edgeGrip: 7
+  stability: 6.6
+  agility: 8
+  softSnow: 4
+  versatility: 6.6
+  forgiveness: 8.6
 data_source:
   kind: official
   origin_url: https://www.head.com/en_GB/product/easy-joy-315656-set

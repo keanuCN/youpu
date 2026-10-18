@@ -1,0 +1,58 @@
+{
+  "capturedAt": "2026-10-17",
+  "brand": "WEDZE",
+  "market": "United Kingdom",
+  "exchangeRate": {
+    "source": "European Central Bank euro foreign exchange reference rates",
+    "sourceUrl": "https://www.ecb.europa.eu/stats/shared/pdf/eurofxref.pdf?3ac10bca04b204d3b4884578daa9399d=",
+    "date": "2026-10-13",
+    "gbpPerEur": 0.8446,
+    "cnyPerEur": 7.489,
+    "formula": "GBP amount * CNY per EUR / GBP per EUR",
+    "limitation": "人民币数值仅为英国标价折算参考，不代表中国售价、结账价或到手价。"
+  },
+  "products": [
+    {
+      "slug": "wedze-jkt-500-mens-ski-jacket-2026",
+      "styleCode": "Decathlon product ID 8807723",
+      "source": "https://www.decathlon.co.uk/p/men-s-warm-and-waterproof-ski-and-snowboard-jacket-jkt-500-black/346314/c382c344m8807723",
+      "observedPrice": { "sale": "GBP 71.99", "list": "GBP 89.99" },
+      "convertedReferenceCny": { "sale": 638.33, "list": 797.93 },
+      "currentSelectableSizes": ["XS", "L", "2XL", "3XL"],
+      "sizeEvidence": "尺码控件仅呈现当前选项，不能据此断定其他尺码没有生产或库存；无本款具体成衣测量表。",
+      "construction": "2-layer polyurethane membrane construction",
+      "waterproof": "15,000 mm; sealed seams; waterproof zips",
+      "insulation": "Synthetic loose fibres; brand states use down to -6°C; fill weight not provided",
+      "breathability": "RET 11; back ventilation strip; structured specifications state no ventilation system",
+      "weight": "1,020 g in size L",
+      "otherFeatures": ["automatic snow skirt", "ski-pass pocket", "adjustable hood and cuffs", "two hand pockets", "inner chest pocket", "inner mesh pocket"],
+      "fitSourceConflict": "Description says fitted cut; structured specifications say straight. Seed leaves fit unfilled.",
+      "recco": "Official specifications explicitly state no integrated RECCO.",
+      "retailerRatingSnapshot": "4.8 from 2,434 reviews at capture time; excluded from Youpu community rating and field-test counts.",
+      "imageAttempt": "Official first gallery image URL returned HTTP 410 Gone during verification; no image URL added to seed."
+    },
+    {
+      "slug": "wedze-500-mens-insulated-ski-pants-2026",
+      "styleCode": "Decathlon product ID 8545714",
+      "source": "https://www.decathlon.co.uk/p/mens-very-warm-and-breathable-ski-and-snowboard-trousers-500-black/141936/c382c344m8545714",
+      "observedPrice": { "sale": "GBP 47.99", "list": "GBP 59.99" },
+      "convertedReferenceCny": { "sale": 425.52, "list": 531.93 },
+      "currentSelectableSizes": ["XS", "S"],
+      "sizeEvidence": "尺码控件仅呈现当前选项，不能据此断定其他尺码没有生产或库存；无本款具体成衣测量表。",
+      "waterproof": "15,000 mm; official page says seams are partially waterproof in highlights, while detailed copy describes waterproof seams and zips; seed preserves the conservative partial-seam classification.",
+      "insulation": "60 g/m²; brand comfort temperature -4°C",
+      "breathability": "RET < 12 and ventilation zips; another specification row describes RET 12",
+      "weight": "720 g in size L",
+      "otherFeatures": ["two hand pockets", "one thigh pocket", "integrated snow gaiters", "adjustable belt", "brace loops", "lower-leg reinforcement"],
+      "recco": "Official specifications explicitly state no integrated RECCO.",
+      "retailerRatingSnapshot": "4.7 from 1,647 reviews at capture time; excluded from Youpu community rating and field-test counts.",
+      "imageAttempt": "Official first gallery image URL could not be fetched during verification; no image URL added to seed."
+    }
+  ],
+  "limitations": [
+    "Official pages label these listings Last chance but do not explicitly identify a snow season. Seed year=2026 is an archive label only.",
+    "RET values are kept as text because category field breathabilityG requires a different unit and no valid conversion is available.",
+    "Retailer review summaries are source snapshots only, not Youpu user feedback.",
+    "Prices and visible size selectors can change after capture."
+  ]
+}

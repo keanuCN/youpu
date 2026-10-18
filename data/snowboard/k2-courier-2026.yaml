@@ -1,0 +1,61 @@
+slug: k2-courier-2026
+category: snowboard
+brand: k2
+model: Courier
+year: 2026
+title: K2 Courier 2025/26
+one_liner: 25/26 入门向全山地定向 Twin，七码 147–163W cm 含三个宽版；Twin Rocker 板型配 Aspen 木芯、Biax 玻纤与 Extruded 2000 底板，Catch-Free 调校与 Hybritech 结构面向新手建立信心。
+editorial_scores:
+  stability: 6.7
+  response: 6.2
+  float: 6.5
+  park: 6.5
+  forgiveness: 8.5
+  value: 6
+price:
+  min: 1885.31
+  max: 3142.18
+  currency: CNY
+specs:
+  length: 155
+  effectiveEdge: 1220
+  sidecut: 8.1
+  waistWidth: 249
+  stanceSetback: 19
+  core: Aspen Core
+  fiberglass: Biax Glass
+  base: Extruded 2000 Base
+  profile: Twin Rocker
+  profileFamily: rocker
+  shape: Directional Twin
+  scenes:
+    - all-mountain
+    - powder
+  lengthOptions: 147 / 152 / 155 / 156W / 158 / 159W / 163W
+  sidecutRadii: 8.10 m（155）
+  sizeSpecs:
+    - { size: "147", effectiveEdge: 1170, noseWidth: 287, waistWidth: 245, tailWidth: 287, sidecutRadii: "7.90 m", stanceWidth: "508 mm (20 in reference)", setback: 19 }
+    - { size: "152", effectiveEdge: 1190, noseWidth: 290, waistWidth: 247, tailWidth: 290, sidecutRadii: "8.00 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "155", effectiveEdge: 1220, noseWidth: 293, waistWidth: 249, tailWidth: 293, sidecutRadii: "8.10 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "156W", effectiveEdge: 1220, noseWidth: 306, waistWidth: 262, tailWidth: 306, sidecutRadii: "8.10 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "158", effectiveEdge: 1240, noseWidth: 297, waistWidth: 251, tailWidth: 297, sidecutRadii: "8.20 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "159W", effectiveEdge: 1270, noseWidth: 313, waistWidth: 265, tailWidth: 313, sidecutRadii: "8.20 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "163W", effectiveEdge: 1300, noseWidth: 317, waistWidth: 268, tailWidth: 317, sidecutRadii: "8.30 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+  sourceCheckedAt: 2026-10-16
+  seasonEvidence: 来源为 K2 官方 25/26 单板产品目录 PDF（K2 官方静态资源域，由 k2snow.com 支持页链出）；目录第 018 页将 COURIER 与 EXTRAVISION 并排，COURIER 列标 BOARD SHAPE 为 Directional Twin、RIDING STYLE 为 All-Mountain、ABILITY 为 Beginner，列出 147–163W 七个尺码。官方商品页 k2snow.com/en-us/p/courier-mens-snowboard-kb261699 采集时返回 HTTP 410，故以官方目录为唯一来源。
+  priceCheckedAt: 2026-10-18
+  priceSource: https://www.skiessentials.com/products/2026-k2-courier-snowboard-kb251087
+  exchangeRate: USD/CNY 6.6862（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: "按 ECB 2026-10-16 汇率折算外币页面售价；K2 Courier 2026 页面列出 USD 281.97 折扣价与 USD 469.95 标价。 仅作人民币参考，不代表中国国内售价，税费、汇兑及跨境费用未计。"
+images:
+  - url: "https://www.evo.com/cdn/shop/files/product-image-1192382.jpg?width=1200&v=1767736913"
+    kind: face
+    alt: "K2 Courier 2025/26 商品图"
+    source: "evo 2026 款 K2 Courier 商品页图；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

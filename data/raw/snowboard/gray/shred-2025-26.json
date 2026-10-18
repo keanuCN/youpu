@@ -1,0 +1,36 @@
+{
+  "brand": "GRAY",
+  "model": "SHRED",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "sourceUrlEnglish": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "GRAY 官方 25/26 目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / FREESTYLE CATEGORY'。",
+  "category": "Freestyle",
+  "positioning": "目录自由式类目；板型为纯 ROCKER（Camber 整行为 '---'、Rocker 全码 5.0），是同页唯一无 camber 的自由式型号；图注区标 'SHRED' 与 W W 结构、1.8mm P-tex 3000 Sintered Base。",
+  "priceGroups": [
+    { "models": ["SHRED 40", "SHRED 44", "SHRED 48", "SHRED 51", "SHRED 54"], "pretaxJpy": 79000, "taxIncludedJpy": 86900 }
+  ],
+  "priceSourceNote": "自由式图例区把 '79,000 / 86,900' 一档对应 SHRED 与 R.P.M. 两组（TRICK STICK [iz] 与 GENIUS [HV] 共用 109,000/119,900 档）。档案据此记 SHRED 为税前 79,000、含税 86,900。\\245 为日元符号编码。",
+  "sizeTable": [
+    { "size": "SHRED 40", "overallLengthMm": 1400, "effectiveEdgeMm": 1080, "contactLengthMm": 1040, "noseWidthMm": 276, "waistWidthMm": 234, "tailWidthMm": 276, "sidecutMm": [6400], "offsetMm": 0, "camberMm": null, "rockerMm": 5.0, "stanceRangeMm": [420, 500], "setbackMm": 0, "insertQuantity": "10+10", "noseHeightMm": 46.8, "tailHeightMm": 46.8 },
+    { "size": "SHRED 44", "overallLengthMm": 1440, "effectiveEdgeMm": 1120, "contactLengthMm": 1080, "noseWidthMm": 282, "waistWidthMm": 238, "tailWidthMm": 282, "sidecutMm": [6600], "offsetMm": 0, "camberMm": null, "rockerMm": 5.0, "stanceRangeMm": [440, 520], "setbackMm": 0, "insertQuantity": "10+10", "noseHeightMm": 46.8, "tailHeightMm": 46.8 },
+    { "size": "SHRED 48", "overallLengthMm": 1480, "effectiveEdgeMm": 1150, "contactLengthMm": 1110, "noseWidthMm": 288, "waistWidthMm": 246, "tailWidthMm": 288, "sidecutMm": [7400], "offsetMm": 0, "camberMm": null, "rockerMm": 5.0, "stanceRangeMm": [480, 560], "setbackMm": 0, "insertQuantity": "10+10", "noseHeightMm": 49.2, "tailHeightMm": 49.2 },
+    { "size": "SHRED 51", "overallLengthMm": 1510, "effectiveEdgeMm": 1180, "contactLengthMm": 1140, "noseWidthMm": 290, "waistWidthMm": 248, "tailWidthMm": 290, "sidecutMm": [7600], "offsetMm": 0, "camberMm": null, "rockerMm": 5.0, "stanceRangeMm": [500, 580], "setbackMm": 0, "insertQuantity": "10+10", "noseHeightMm": 49.2, "tailHeightMm": 49.2 },
+    { "size": "SHRED 54", "overallLengthMm": 1540, "effectiveEdgeMm": 1210, "contactLengthMm": 1160, "noseWidthMm": 294, "waistWidthMm": 250, "tailWidthMm": 294, "sidecutMm": [7800], "offsetMm": 0, "camberMm": null, "rockerMm": 5.0, "stanceRangeMm": [520, 600], "setbackMm": 0, "insertQuantity": "10+10", "noseHeightMm": 51.4, "tailHeightMm": 51.4 }
+  ],
+  "construction": {
+    "edge": "1.8mm/stainless",
+    "sidewallAngle": 25,
+    "sidewallColor": "PINK / PURPLE / BLUEGREEN / NEON GREEN / PURPLE（按尺码）",
+    "runningBase": "P-TEX3000 Natural",
+    "profile": "Rocker（无 Camber）",
+    "shape": "Twin（鼻/尾宽对称，退格 0）",
+    "structure": "W W（图注区）"
+  },
+  "sizeTableNote": "Camber 整行为 '---'，Rocker 全码 5.0，档案将 camber 记 null、rocker 记 5.0，未把 rocker 值改写进 camber 字段。侧切为单一半径值（与同页多半径型号不同）。鼻/尾宽对称、退格 0，属对称 Twin。",
+  "conflicts": [
+    "目录将该款与 R.P.M. 归入同一价格档，两者型号与尺码表各自独立，档案分别建档未合并。",
+    "侧墙颜色逐码不同（PINK/PURPLE/BLUEGREEN/NEON GREEN/PURPLE），档案在 construction 中按码记录，未并入单一颜色。"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "brand": "GRAY",
+  "model": "DESPE WOOD 32/38/43（短尺码组）",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "sourceUrlEnglish": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "GRAY 官方 25/26 目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / CARVING CATEGORY'，内页含 '25/26 GRAY SNOWBOARDS' 字样。",
+  "category": "Carving",
+  "positioning": "刻滑类目木皮系列 DESPE WOOD 的短尺码组（32/38/43），比同系列 48–62 组更短更窄；板型标注同时出现 Directional Vario Camber 与 Single Camber（见 conflicts）。图注区标 Negative / TripleRadius / Directional Flex / Directional、Poplar Light Core。",
+  "priceGroups": [
+    { "models": ["DESPE WOOD 32", "DESPE WOOD 38", "DESPE WOOD 43"], "pretaxJpy": 99000, "taxIncludedJpy": 108900 }
+  ],
+  "priceSourceNote": "目录图例区写 'DSPRD micro / mini / DESPE W OOD 32, 38, 43 … \\24599,000 \\245108,900 \\24569,000 \\24575,900'。该区把 DSPRD micro/mini 与 DESPE WOOD 32/38/43 并列，随后给出两对价格：99,000/108,900 与 69,000/75,900。档案按 DESPE WOOD 32/38/43 三码取 99,000/108,900；69,000/75,900 归 DSPRD micro/mini 组，不并入本档。\\245 为日元符号编码，前值税前、后值含税。",
+  "sizeTable": [
+    { "size": "DESPE WOOD 32", "overallLengthMm": 1320, "effectiveEdgeMm": 1120, "contactLengthMm": 1010, "noseWidthMm": 264, "waistWidthMm": 214, "tailWidthMm": 254, "sidecutMm": [6500, 6200, 6800], "offsetMm": -20, "camberMm": 6.0, "rockerMm": null, "stanceRangeMm": [380, 460], "setbackMm": 20, "insertQuantity": "10+10", "noseHeightMm": 36.5, "tailHeightMm": 24.9, "stiffnessNWT": [2.3, 3.8, 4.8] },
+    { "size": "DESPE WOOD 38", "overallLengthMm": 1380, "effectiveEdgeMm": 1180, "contactLengthMm": 1070, "noseWidthMm": 270, "waistWidthMm": 220, "tailWidthMm": 260, "sidecutMm": [7200, 6800, 7600], "offsetMm": -20, "camberMm": 6.0, "rockerMm": null, "stanceRangeMm": [400, 480], "setbackMm": 20, "insertQuantity": "10+10", "noseHeightMm": 36.5, "tailHeightMm": 24.9, "stiffnessNWT": [2.8, 4.3, 5.3] },
+    { "size": "DESPE WOOD 43", "overallLengthMm": 1430, "effectiveEdgeMm": 1230, "contactLengthMm": 1120, "noseWidthMm": 284, "waistWidthMm": 232, "tailWidthMm": 272, "sidecutMm": [7700, 7300, 8100], "offsetMm": -30, "camberMm": 7.0, "rockerMm": null, "stanceRangeMm": [420, 500], "setbackMm": 30, "insertQuantity": "10+10", "noseHeightMm": 36.5, "tailHeightMm": 24.9, "stiffnessNWT": [3.3, 4.8, 5.8] }
+  ],
+  "construction": {
+    "edge": "1.8mm/stainless",
+    "sidewallAngle": 25,
+    "sidewallColor": "BLACK",
+    "runningBase": "P-TEX3000 Graphite",
+    "core": "Poplar Light Core",
+    "laminate": "3ply 50/50 + 2ply 65/35（图注区）",
+    "profile": "Directional Vario Camber / Single Camber（图注并存）"
+  },
+  "sizeTableNote": "本组鼻翘高 36.5 mm 与尾翘高 24.9 mm 在三码间完全相同（与同系列 48–62 组逐码不同形成对比），档案按原值逐码记录，四舍五入未做处理。腰宽 214–232 mm。侧切为三段多半径。",
+  "conflicts": [
+    "目录把 DESPE WOOD 分为 32/38/43 与 48/53n/54/58/62 两个独立尺码表，价格档亦不同；档案只收 32/38/43 组，48–62 组另行建档。",
+    "图注区同时出现 'Directional Vario Camber' 与 'Single Camber'，未判定唯一值。",
+    "既有 gray-despe-wood-2027 为不同雪季档案，未覆盖。"
+  ]
+}

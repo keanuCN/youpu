@@ -1,0 +1,33 @@
+{
+  "brand": "K2",
+  "model": "Courier",
+  "season": "2025/26",
+  "sourceUrl": "https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard",
+  "sourcePageUrl": "https://k2snow.com/en-us/support/product-catalogs",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "K2 官方 25/26 单板产品目录 PDF 第 018 页标 'COURIER | EXTRAVISION'，页眉 all-mountain / directional twin。",
+  "category": "All-Mountain",
+  "positioning": "目录标注 BOARD SHAPE: Directional Twin，RIDING STYLE: All-Mountain，ABILITY: Beginner。标语 'SET YOURSELF UP FOR SUCCESS'。",
+  "columnAttribution": "该目录页并排展示 COURIER 与 EXTRAVISION：COURIER 列为 all-mountain / directional twin / beginner，配 Directional Twin + All-Mountain + Beginner、Twin Rocker Profile、Extruded 2000 Base、Aspen Core、Biax Glass、Catch-Free Tune；EXTRAVISION 列为 all-mountain / directional twin / intuitive，配 Intermediate to Advanced、Twin Combination Camber Profile、Sintered 4000 Base、Rhythm Core、ICG 10 Biax Carbon Glass。本档案取 COURIER 列（Twin Rocker、Aspen Core、Biax Glass），未混入 EXTRAVISION 列（Combination Camber、Rhythm Core、ICG 10）。",
+  "sizeTable": [
+    { "size": "147", "effectiveEdgeCm": 117, "noseWaistTailMm": [287, 245, 287], "sidecutM": 7.90, "stanceIn": 20, "setbackIn": 0.75, "weightLb": "110-190+", "weightKg": "50-86+" },
+    { "size": "152", "effectiveEdgeCm": 119, "noseWaistTailMm": [290, 247, 290], "sidecutM": 8.00, "stanceIn": 21, "setbackIn": 0.75, "weightLb": "120-200+", "weightKg": "54-91+" },
+    { "size": "155", "effectiveEdgeCm": 122, "noseWaistTailMm": [293, 249, 293], "sidecutM": 8.10, "stanceIn": 21, "setbackIn": 0.75, "weightLb": "120-200+", "weightKg": "54-91+" },
+    { "size": "156W", "effectiveEdgeCm": 122, "noseWaistTailMm": [306, 262, 306], "sidecutM": 8.10, "stanceIn": 21, "setbackIn": 0.75, "weightLb": "130-210+", "weightKg": "59-95+" },
+    { "size": "158", "effectiveEdgeCm": 124, "noseWaistTailMm": [297, 251, 297], "sidecutM": 8.20, "stanceIn": 22, "setbackIn": 0.75, "weightLb": "130-210+", "weightKg": "59-95+" },
+    { "size": "159W", "effectiveEdgeCm": 127, "noseWaistTailMm": [313, 265, 313], "sidecutM": 8.20, "stanceIn": 22, "setbackIn": 0.75, "weightLb": "130-220+", "weightKg": "59-100+" },
+    { "size": "163W", "effectiveEdgeCm": 130, "noseWaistTailMm": [317, 268, 317], "sidecutM": 8.30, "stanceIn": 23, "setbackIn": 0.75, "weightLb": "140-230+", "weightKg": "64-104+" }
+  ],
+  "features": {
+    "profile": "Twin Rocker Profile",
+    "shape": "Directional Twin",
+    "core": "Aspen Core",
+    "glass": "Biax Glass",
+    "base": "Extruded 2000 Base",
+    "construction": "Hybritech Construction",
+    "tune": "Catch-Free Tune"
+  },
+  "sizeTableNote": "该表 7 行，含 156W/159W/163W 三个宽版。EXTRAVISION 列尺码表紧随其后（起始 139/142...），未并入本档案。鼻/腰/尾宽在标准版为对称（287/245/287 等），W 版同步加宽。",
+  "priceNote": "该型号官方商品页（k2snow.com/en-us/p/courier-mens-snowboard-kb261699）采集时返回 HTTP 410，且 25/26 目录为规格型文档、不含标价，故本档案不填价格。",
+  "notes": "尺码表 SETBACK 列为 0.75 in，按 1 in = 25.4 mm 录作 19 mm 整。目录未给数值硬度。该款与同页 EXTRAVISION 为两个独立型号。"
+}

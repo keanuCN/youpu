@@ -1,0 +1,46 @@
+slug: wedze-womens-am-500-ski-pants-2026
+category: skiing-apparel
+brand: wedze
+model: Women's 500 AM All-Mountain Ski and Snowboard Trousers
+year: 2026
+title: WEDZE 女款 AM 500 全山地滑雪裤
+one_liner: 15,000 mm 防水、全压胶，60 g/m² 填充，品牌舒适温度标注 -7°C；具 RECCO、双侧通风拉链、内置雪裙和裤脚加固。
+price:
+  min: 709.26
+  max: 709.26
+  currency: CNY
+specs:
+  garmentType: pants
+  fabric: 聚酯面料；裤脚加固片为 95% 聚酰胺、5% 聚酯；含聚氨酯防水膜
+  insulation: 60 g/m² 合成棉；品牌舒适温度标注 -7°C
+  weightG: 1000
+  weightSize: FR 40
+  seamTaping: fully-taped
+  waterproofMm: 15000
+  waterproofEvidence: 英国官方商品页标注 15,000 mm 防水面料、全防水接缝与防水拉链。
+  venting: true
+  recco: true
+  membrane: 聚氨酯防水膜；官方未明确面料层数
+  breathable: true
+  features: RECCO 反射器；两个插手袋、两个大腿袋（其中一个内有手机网袋）；双侧通风拉链；内置雪裙；可调腰围；背带环；裤脚加固。
+  sizeGuide: 英国商品页列 UK 4–18 对应 FR 34–48 的尺码选项，并建议选择平时尺码。该表只是尺码标签映射，不是腰臀围或成衣尺寸表。
+  seasonEvidence: 2026-10-17 复核时官方页面标注 New Collection，但没有明确写出具体雪季；year 2026 仅为档案年份。
+  weather: 官方舒适温度标注 -7°C；实际体感随内搭、活动强度和天气变化。
+  styleCode: Decathlon 商品 ID 8872022
+  priceCheckedAt: 2026-10-17
+  officialPrice: GBP 79.99
+  priceMarket: Decathlon 英国官网；黑色款商品 ID 8872022
+  priceSource: https://www.decathlon.co.uk/p/women-s-500-am-waterproof-and-breathable-ski-and-snowboard-trousers-black/352866/c1m8872022
+  priceStatus: 2026-10-17 英国官网标价 GBP 79.99；按 ECB 2026-10-13 GBP 0.84460 / EUR、CNY 7.4890 / EUR 折合 CNY 709.26。仅为英国地区参考价，不是中国售价，未含结账时可能产生的税费、配送与汇兑费用。
+  availableColors: 黑色（本记录变体）；商品页另列多个颜色
+  imageEvidence: 官方商品图库图片在本轮抓取核对时无法读取，因此未将未确认可访问的图片写入商品记录。
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/women-s-500-am-waterproof-and-breathable-ski-and-snowboard-trousers-black/352866/c1m8872022
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0779/9635/9920/files/pic_a9184638-51bd-41ce-8666-750fd38490cd.jpg?v=1792219027&width=1200"
+    kind: face
+    alt: WEDZE 女款 AM 500 全山地滑雪裤黑色商品图（货号 8872022）
+    source: Decathlon 阿根廷官方商品页变体图片，货号 8872022；图片使用授权待核
+    sort_order: 0
+status: published

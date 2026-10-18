@@ -1,0 +1,55 @@
+slug: nordica-dobermann-slr-dc-2027
+category: skis
+brand: nordica
+model: Dobermann SLR DC
+year: 2027
+title: Nordica Dobermann SLR DC 2026/27
+price:
+  min: 7446.99
+  max: 7446.99
+  currency: CNY
+one_liner: 短弯与硬雪取向系统板；155–170 cm，Double Core 2 Titanal、全弧形板型，165 cm 半径 13 m。
+specs:
+  lengthOptions: 155 / 160 / 165 / 170 cm
+  waistWidth: 69
+  turnRadius: 13
+  turnRadiusReferenceLength: 165 cm
+  sidecutDimensions: "170 cm: 120-69-104 mm；165 cm 半径 13 m。其余尺寸和半径以品牌页面逐长度表为准，未展开处不外推。"
+  profile: Full Camber
+  core: Performance Wood + Double Core（木芯与 Pulse 弹性体层）
+  construction: Double Core 2 Titanal；Sidewall；Carbon；FDT Race Plate Pro N
+  technologies: Energy 2 Ti DC；两层 Titanal 包夹双木芯与 Pulse Core；FDT Race Plate Pro N
+  weightPerPair: 3380
+  weightReferenceLength: 170 cm
+  baseEdgeAngle: 0.9
+  sideEdgeAngle: 87.5
+  terrain: 雪道 / 硬雪 / 短弯
+  skierLevel: 进阶至专家
+  bindingSetup: 含 Comp 13 FDT 固定器；产品页面列 DIN 4–13 TCX
+  weightBasis: 官方对比表列 170 cm 重量 3380 g / pair，为整对含系统组件规格，不能与裸板单只重量比较。
+  geometryNotes: 官网列 155/160/165/170 cm；对比表提供 170 cm 板腰外形与整对重量，半径序列 155/11.5、160/12.5、165/13、170/14 m。
+  seasonEvidence: Nordica 2026/27 产品列表列 Dobermann SLR DC + Comp 13，货号 0A5426NC001；官方产品页给出结构、几何与配置。
+  sourceCheckedAt: 2026-10-17
+  compatibilitySources: https://www.nordica.com/usa/en/products-list/men/skis
+  officialPrice: JPY 220,000 MSRP；日本零售挂牌 JPY 176,000（含 Comp 13 FDT）
+  priceMarket: MSP NET SHOP 日本零售商；2026/27 含 Comp 13 FDT 套装
+  priceSource: https://store.shopping.yahoo.co.jp/msp-net/0a542600001.html
+  exchangeRateSource: ECB 2026-10-16 EUR/JPY 177.82、EUR/CNY 7.5240；折算 JPY/CNY 0.042313
+  priceStatus: 日本零售商列 2026/27 Dobermann SLR DC FDT + Comp 13 FDT 套装 JPY 176,000，页面同时列 MSRP JPY 220,000；按 ECB 2026-10-16 汇率将零售价折合 CNY 7,446.99。日本地区零售参考，不是中国售价；价格与库存可能变化，未计跨境运输、进口及支付汇兑成本。
+editorial_scores:
+  edgeGrip: 9.4
+  stability: 8.8
+  agility: 9.4
+  softSnow: 3
+  versatility: 5.2
+  forgiveness: 3.5
+data_source:
+  kind: official
+  origin_url: https://www.nordica.com/global/en/collection/men/skis/dobermann-dc/dobermann-slr-dc-fdt
+images:
+  - url: "https://snow-how.de/media/image/8f/42/2f/Nordica-Dobermann-SLR-DC.jpg"
+    kind: face
+    alt: Nordica Dobermann SLR DC 2026/27 雪板商品图
+    source: Snow-How 2026/27 Dobermann SLR DC + Comp 13 FDT 商品图；图片使用授权待核
+    sort_order: 0
+status: published

@@ -1,0 +1,34 @@
+{
+  "brand": "GRAY",
+  "model": "FORCE",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "sourceUrlEnglish": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "GRAY 官方 25/26 目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / CARVING CATEGORY'，内页含 '25/26 GRAY SNOWBOARDS' 字样；目录绘制 FORCE / QUADRA / TYCOON / TYCOON Type-S [iz] 同属刻滑类目排布。",
+  "category": "Carving",
+  "positioning": "刻滑类目；板型 POSITIVE VARIO CAMBER 与 TripleRadius；边刃 1.8mm/48R CWL；侧墙角 6 度（与同页 TYCOON 的 15 度不同）。目录标注 2ply 50/50 + 1ply 50/50 + 0.4t Ti Ribon + 3ply 65/35 与 ASPEN Core。",
+  "priceGroups": [
+    { "models": ["FORCE 57", "FORCE 62", "FORCE 67"], "pretaxJpy": 136000, "taxIncludedJpy": 149600 }
+  ],
+  "priceSourceNote": "价格取自同一 PDF 刻滑类目图例区。该区把 'TY COON / QU ADRA / F ORCE / TY COON T ype-S [iz]' 与结构词 'GRA Y / ALLFLEX / ALLFLEX (Vist) / ALLFLEX + \\rS / FORCE + TYCOON Type-S / Valio Camber / FORCE + Type-S + ALLFLEX VIST' 并列，随后给出 '\\245136,000 \\245149,600' 基础档。FORCE 57/62/67 属该基础档；该区另有 QUADRA 57,72 = 154,000/169,400、QUADRA 63,85 = 172,000/189,200、ALLFLEX(Vist) 组 = 108,000/118,800、FORCE+Type-S+ALLFLEX VIST 组 = 180,000/198,000，均不与 FORCE 基础档混用。\\245 为 PDF 文本层的日元符号编码。前值税前、后值含税。",
+  "sizeTable": [
+    { "size": "FORCE 57", "overallLengthMm": 1570, "effectiveEdgeMm": 1445, "contactLengthMm": 1350, "noseWidthMm": 246, "waistWidthMm": 190, "tailWidthMm": 236, "sidecutMm": [9800, 9100, 10400], "offsetMm": -30, "camberMm": 10.0, "rockerMm": null, "stanceRangeMm": [420, 540], "setbackMm": 30, "insertQuantity": "12+12" },
+    { "size": "FORCE 62", "overallLengthMm": 1620, "effectiveEdgeMm": 1495, "contactLengthMm": 1400, "noseWidthMm": 256, "waistWidthMm": 196, "tailWidthMm": 247, "sidecutMm": [9900, 9200, 9900], "offsetMm": -30, "camberMm": 10.0, "rockerMm": null, "stanceRangeMm": [460, 580], "setbackMm": 30, "insertQuantity": "12+12" },
+    { "size": "FORCE 67", "overallLengthMm": 1670, "effectiveEdgeMm": 1545, "contactLengthMm": 1430, "noseWidthMm": 258, "waistWidthMm": 196, "tailWidthMm": 247, "sidecutMm": [10200, 9800, 10200], "offsetMm": -35, "camberMm": 12.0, "rockerMm": null, "stanceRangeMm": [460, 580], "setbackMm": 35, "insertQuantity": "12+12" }
+  ],
+  "construction": {
+    "edge": "1.8mm/48R CWL",
+    "sidewallAngle": 6,
+    "sidewallColor": "NEON RED",
+    "runningBase": "IS7500 Graphite",
+    "profile": "Positive Vario Camber + TripleRadius",
+    "core": "ASPEN Core",
+    "laminate": "2ply 50/50 + 1ply 50/50 + 0.4t Ti Ribon + 3ply 65/35"
+  },
+  "sizeTableNote": "FORCE 57/62/67 的长度、有效边刃、接触长、腰宽、侧切、站距与退格数值与同页 TYCOON 57/62/67 完全相同；两者差异在 camber（FORCE 10/10/12 vs TYCOON 8/8/9）与侧墙角（6 度 vs 15 度）。档案保留 FORCE 自身 camber 值，未套用 TYCOON。腰宽 190–196 mm，低于单板类目变更前的 200 mm 下限，本轮放宽后通过校验。",
+  "conflicts": [
+    "图例区把 FORCE 与 TYCOON Type-S 组合标为 'FORCE + Type-S + ALLFLEX VIST' 一档（180,000/198,000），属选装/组合口径，未并入 FORCE 基础档。",
+    "目录未给 FORCE 单列独立价格表，价格按刻滑图例型号组读取。"
+  ]
+}

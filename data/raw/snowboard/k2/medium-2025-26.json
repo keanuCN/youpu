@@ -1,0 +1,37 @@
+{
+  "brand": "K2",
+  "model": "Medium",
+  "season": "2025/26",
+  "gender": "Unisex",
+  "sourceUrl": "https://k2snow.com/en-us/p/medium-unisex-snowboard-2526",
+  "retrievedAt": "2026-10-16",
+  "pageTitle": "K2 Medium Unisex Snowboard 2026 | K2 Skis and K2 Snowboarding",
+  "seasonEvidence": "K2 官方美国商品页标题为 'K2 Medium Unisex Snowboard 2026'，URL 路径含 2526；页面正文明确写 \"designing the all-new K2 Medium for the '25/26 season\"，并列出 141–159 十个尺码，故归档为 2025/26。",
+  "officialUsd": { "sale": 359.97, "list": 599.95 },
+  "category": "Freestyle",
+  "ability": ["Advanced", "Expert"],
+  "rider": "Jake Kuzyk",
+  "sizeChart": [
+    { "size": "141", "effectiveEdgeCm": 109, "noseWaistTailCm": [27.5, 23.5, 27.5], "sidecutM": 6.80, "stanceIn": 18, "setback": "CENTERED", "weightLb": "90 - 160+", "weightKg": "41 - 73+" },
+    { "size": "144", "effectiveEdgeCm": 112, "noseWaistTailCm": [27.9, 23.8, 27.9], "sidecutM": 7.00, "stanceIn": 19, "setback": "CENTERED", "weightLb": "90 - 160+", "weightKg": "41 - 73+" },
+    { "size": "147", "effectiveEdgeCm": 114, "noseWaistTailCm": [28.4, 24.2, 28.4], "sidecutM": 7.20, "stanceIn": 19, "setback": "CENTERED", "weightLb": "90 - 160+", "weightKg": "41 - 73+" },
+    { "size": "149", "effectiveEdgeCm": 116, "noseWaistTailCm": [28.6, 24.4, 28.6], "sidecutM": 7.30, "stanceIn": 20, "setback": "CENTERED", "weightLb": "110 - 180+", "weightKg": "50 - 82+" },
+    { "size": "152", "effectiveEdgeCm": 118, "noseWaistTailCm": [29.0, 24.7, 29.0], "sidecutM": 7.50, "stanceIn": 21, "setback": "CENTERED", "weightLb": "120 - 190+", "weightKg": "54 - 86+" },
+    { "size": "154W", "effectiveEdgeCm": 121, "noseWaistTailCm": [30.2, 25.8, 30.2], "sidecutM": 7.70, "stanceIn": 21, "setback": "CENTERED", "weightLb": "130 - 220+", "weightKg": "59 - 100+" },
+    { "size": "155", "effectiveEdgeCm": 121, "noseWaistTailCm": [29.4, 25.1, 29.4], "sidecutM": 7.70, "stanceIn": 21, "setback": "CENTERED", "weightLb": "130 - 230+", "weightKg": "59 - 104+" },
+    { "size": "157", "effectiveEdgeCm": 122, "noseWaistTailCm": [29.6, 25.2, 29.6], "sidecutM": 7.80, "stanceIn": 21, "setback": "CENTERED", "weightLb": "130 - 220+", "weightKg": "59 - 100+" },
+    { "size": "158W", "effectiveEdgeCm": 123, "noseWaistTailCm": [30.7, 26.2, 30.7], "sidecutM": 7.90, "stanceIn": 22, "setback": "CENTERED", "weightLb": "130 - 230+", "weightKg": "59 - 104+" },
+    { "size": "159", "effectiveEdgeCm": 123, "noseWaistTailCm": [29.9, 25.4, 29.9], "sidecutM": 7.90, "stanceIn": 22, "setback": "CENTERED", "weightLb": "130 - 230+", "weightKg": "59 - 104+" }
+  ],
+  "features": {
+    "profile": "Camber",
+    "shape": "Twin / Traditional Shape",
+    "core": "BAP Core (Bamboo, Aspen, Paulownia tri-blend)",
+    "glass": "Triax Glass",
+    "base": "Sintered 4000, Stone Finish",
+    "additive": "Carbon DarkWeb + Carbon Backbone + Hybritech Construction",
+    "inserts": "2 x 4"
+  },
+  "sizeTableNote": "官方 152 行 nose/waist/tail 单元格写作 '29.0 - 24.7 29.0'，tail 前缺少连字符；按同表其余行格式补为 29.0，并在此保留原始写法。",
+  "notes": "官方页 'Flex / Construction / Profile' 图注写作 'Camber Profile'，分类行 Snowboard Profile 为 Camber，二者一致。页面正文说明该款为 '25/26 雪季全新重新设计，起点 141cm、上限 159cm。"
+}

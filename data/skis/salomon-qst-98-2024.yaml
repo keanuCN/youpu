@@ -61,6 +61,13 @@ specs:
   exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
   priceStatus: Salomon 西班牙官方页面曾按货号 L47232300+ 显示 EUR 630.00，但该商品已不在官网销售；按 ECB 2026-10-14 EUR/CNY 7.4925 折算历史挂牌参考 CNY 4,720.27。该数仅供 2023/24 旧款档案参考，不代表当前可购价格或中国售价。
   compatibilitySources: https://www.salomon.com/en-gb/product/qst-98-li4910/L47232300%2B?sizeId=L47232300169；https://www.grip-walk.com/faq/
+editorial_scores:
+  edgeGrip: 6.8
+  stability: 8.1
+  agility: 7
+  softSnow: 8.8
+  versatility: 7.9
+  forgiveness: 6.4
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-gb/product/qst-98-li4910/L47232300%2B?sizeId=L47232300169

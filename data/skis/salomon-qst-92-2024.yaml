@@ -61,6 +61,13 @@ specs:
   priceCheckedAt: 2026-10-15
   priceStatus: Alpen 页面标题标注 23/24 QST 92，制造商货号 L47232400，176 cm 选项挂牌 JPY 59,900（页面同时列制造商建议价 JPY 93,500），且为单板不含固定器；页面说明库存与实体店共享，下单后仍可能取消。按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 2,530.02。仅是日本商家单一长度的旧款挂牌参考，不代表中国售价或稳定库存；Salomon 官方页当前标记该商品不在官网销售。
   compatibilitySources: https://www.salomon.com/en-gb/product/qst-92-li4911/L47232400%2B；https://www.grip-walk.com/faq/
+editorial_scores:
+  edgeGrip: 6.8
+  stability: 8.1
+  agility: 7
+  softSnow: 8.8
+  versatility: 7.9
+  forgiveness: 6.4
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-gb/product/qst-92-li4911/L47232400%2B

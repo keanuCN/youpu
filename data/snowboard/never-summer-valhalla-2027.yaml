@@ -1,0 +1,44 @@
+slug: never-summer-valhalla-2027
+category: snowboard
+brand: never-summer
+model: Valhalla
+year: 2027
+title: Men's Valhalla Snowboard | Never Summer 2027
+one_liner: 面向自由骑和大山线路的方向性板，Triple Camber Hybrid 试图在边刃支撑、混合雪况适应和粉雪通过性之间取得平衡，偏向有经验的主动滑手。
+editorial_scores:
+  stability: 9
+  response: 9
+  float: 9
+  park: 6
+  forgiveness: 4.8
+  value: 5.5
+price:
+  min: 4613.42
+  max: 4613.42
+  currency: CNY
+specs:
+  seasonEvidence: Never Summer 官方商品页标注 Men's 2027。
+  lengthOptions: 147 / 153 / 156 / 160 / 164
+  profile: Triple Camber Hybrid
+  profileFamily: hybrid
+  shape: Directional
+  scenes:
+    - all-mountain
+    - powder
+  priceCheckedAt: 2026-10-18
+  officialPrice: USD 689.99
+  priceMarket: Never Summer 美国官方 2026/27 商品页
+  priceSource: https://neversummer.com/collections/mens-snowboards/products/mens-valhalla-snowboard
+  exchangeRate: EUR/USD 1.1253；EUR/CNY 7.5240（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: Never Summer 美国官方 2026/27 商品页挂牌 USD 689.99，按 ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240 折算约 CNY 4613.42。此为美国官方挂牌价的人民币折算参考，不是中国售价；税费、汇兑、运输及进口费用未计。
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0627/5838/7964/files/26.27_Valhalla_Web.png?v=1765163140"
+    kind: face
+    alt: "Men's Valhalla Snowboard | Never Summer 2027 商品图"
+    source: 品牌官网商品页主图；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://neversummer.com/collections/mens-snowboards/products/mens-valhalla-snowboard
+status: published

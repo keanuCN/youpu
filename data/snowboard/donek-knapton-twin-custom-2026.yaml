@@ -5,6 +5,13 @@ model: Knapton Twin Custom
 year: 2026
 title: Donek Knapton Twin 定制单板
 one_liner: 为激进软靴刻滑与自由式滑手设计的定制 Twin；板宽、硬度和侧切按靴码与滑手需求调整，没有固定尺码表。
+editorial_scores:
+  stability: 8.8
+  response: 9.2
+  float: 4
+  park: 7.2
+  forgiveness: 5
+  value: 5.5
 price:
   min: 5789.2
   max: 5789.2
@@ -30,7 +37,12 @@ specs:
   exchangeRate: EUR/USD 1.1195；EUR/CNY 7.4925（ECB 2026-10-14）
   exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
   priceStatus: 官方美国站挂牌 USD 865，按 ECB 2026-10-14 参考汇率折算约 CNY 5,789.20；是基础定制价的地区参考，不是中国售价或最终成交价。定制参数、运费、税费及进口费用另计；官网要求订购前与工程人员确认参数。
-images: []
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/20d3a4a7d5118c62f7f45ccce1cb2c453a02fcf41968d8b098433f0029b6e8ae.webp"
+    kind: face
+    alt: Donek Knapton Twin 定制实物样图；板面图案、长度与板宽因订单定制而异
+    source: Donek 官方列出的韩国经销商 XgameSnow 商品页（图片授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://donek.com/product/knapton/

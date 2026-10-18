@@ -1,0 +1,61 @@
+slug: gray-desperado-ti-type-r-2026
+category: snowboard
+brand: gray
+model: DESPERADO Ti Type-R
+year: 2026
+title: GRAY DESPERADO Ti Type-R 2025/26
+one_liner: GRAY 25/26 高速刻滑锤头板，Vario Camber、多段侧切及 X 形 0.4 mm Titanal 支撑高速走刃；目录覆盖短弯款与长接触刃宽板款。
+editorial_scores:
+  stability: 9.4
+  response: 9.5
+  float: 2.5
+  park: 1.5
+  forgiveness: 3.2
+  value: 5.0
+price:
+  min: 8386.20
+  max: 8386.20
+  currency: CNY
+specs:
+  length: 156
+  effectiveEdge: 1390
+  sidecut: 8.6
+  waistWidth: 254
+  stanceSetback: 30
+  shape: Directional Hammerhead / TripleRadius
+  profile: Vario Camber
+  profileFamily: hybrid
+  core: Wood Core
+  fiberglass: Fiberglass laminate; X-shaped 0.4 mm Titanal reinforcement
+  base: IS7500 Graphite
+  scenes:
+    - carving
+  lengthOptions: 154 IIIn / 155 III / 156 IIIw / 159 IV / 160 IVw / 166 Vw / 172 VIw / 178 VIIw
+  sidecutRadii: 9.0 / 8.6 / 9.6 m（III 系列基准；各型号见尺码表）
+  sizeSpecs:
+    - { size: "154 IIIn", overallLength: 1540, effectiveEdge: 1390, contactLength: 1220, noseWidth: 298, waistWidth: 238, tailWidth: 279, sidecutRadii: "9.0/8.6/9.6 m", stanceWidth: "440-560 mm", setback: 30, camber: 9.0, stiffness: "N 8.0 / W 8.7 / T 8.2" }
+    - { size: "155 III", overallLength: 1550, effectiveEdge: 1390, contactLength: 1220, noseWidth: 306, waistWidth: 246, tailWidth: 287, sidecutRadii: "9.0/8.6/9.6 m", stanceWidth: "500-620 mm", setback: 30, camber: 9.0, stiffness: "N 8.4 / W 9.1 / T 8.6" }
+    - { size: "156 IIIw", overallLength: 1560, effectiveEdge: 1390, contactLength: 1220, noseWidth: 314, waistWidth: 254, tailWidth: 295, sidecutRadii: "9.0/8.6/9.6 m", stanceWidth: "500-620 mm", setback: 30, camber: 9.0, stiffness: "N 8.4 / W 9.1 / T 8.6" }
+    - { size: "159 IV", overallLength: 1590, effectiveEdge: 1430, contactLength: 1260, noseWidth: 307, waistWidth: 248, tailWidth: 289, sidecutRadii: "9.6/9.2/10.2 m", stanceWidth: "500-620 mm", setback: 40, camber: 10.0, stiffness: "N 8.6 / W 9.3 / T 8.8" }
+    - { size: "160 IVw", overallLength: 1600, effectiveEdge: 1430, contactLength: 1260, noseWidth: 315, waistWidth: 256, tailWidth: 297, sidecutRadii: "9.6/9.2/10.2 m", stanceWidth: "500-620 mm", setback: 40, camber: 10.0, stiffness: "N 8.6 / W 9.3 / T 8.8" }
+    - { size: "166 Vw", overallLength: 1660, effectiveEdge: 1490, contactLength: 1320, noseWidth: 304, waistWidth: 256, tailWidth: 290, sidecutRadii: "12.8/12.2/13.6 m", stanceWidth: "500-620 mm", setback: 60, camber: 12.0, stiffness: "N 8.7 / W 9.4 / T 8.9" }
+    - { size: "172 VIw", overallLength: 1720, effectiveEdge: 1550, contactLength: 1380, noseWidth: 303, waistWidth: 260, tailWidth: 290, sidecutRadii: "15.6/14.8/16.4 m", stanceWidth: "500-620 mm", setback: 60, camber: 12.0, stiffness: "N 8.8 / W 9.5 / T 9.0" }
+    - { size: "178 VIIw", overallLength: 1780, effectiveEdge: 1610, contactLength: 1440, noseWidth: 300, waistWidth: 260, tailWidth: 289, sidecutRadii: "18.2/17.2/19.2 m", stanceWidth: "500-620 mm", setback: 60, camber: 12.0, stiffness: "N 8.9 / W 9.5 / T 9.1" }
+  priceCheckedAt: 2026-10-16
+  officialPrice: JPY 198000（含税；本体 JPY 180000）
+  priceMarket: GRAY 日本官方 2025/26 产品目录
+  priceSource: https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf
+  exchangeRate: EUR/JPY 177.06；EUR/CNY 7.4993（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: 日本官方 25/26 目录列 Type-R 含税价 JPY 198000，按 ECB 2026-10-15 汇率折算约 CNY 8386.20。该值是日本历史挂牌价换算参考，不是中国售价或当前成交价，未计跨境运输及进口费用。
+images:
+  - url: "https://tshop.r10s.jp/follows1/cabinet/2526snowboard/25gray-tityper-1.jpg"
+    kind: face
+    alt: GRAY DESPERADO Ti Type-R 2025/26 单板商品图
+    source: follows 25/26 GRAY 商品页；图片使用授权待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf
+  snapshot_url: https://graysnowboards.co.jp/2025/02/03/25-26%E3%83%A2%E3%83%87%E3%83%AB-%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%83%BB%E8%8B%B1%E8%AA%9E%E7%89%88%EF%BC%89%E3%82%92%E6%8E%B2%E8%BC%89%E3%81%97/
+status: published

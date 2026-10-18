@@ -5,6 +5,13 @@ model: Blackboard Pro 5.0 Camber
 year: 2026
 title: NOBADAY 小黑板 Blackboard Pro 5.0 Camber
 one_liner: 全山地 True Twin 正拱板，官方标注硬度 5/10，尺码表提供 142–161 cm 八个长度；产品页未注明雪季。
+editorial_scores:
+  stability: 7.0
+  response: 7.2
+  float: 5.5
+  park: 6.5
+  forgiveness: 8.0
+  value: 7.5
 price:
   min: 2670.4
   max: 2670.4

@@ -1,0 +1,55 @@
+slug: blizzard-rustler-10-2027
+category: skis
+brand: blizzard
+model: Rustler 10
+year: 2027
+title: Blizzard Rustler 10 2026/27
+price:
+  min: 5683.22
+  max: 5683.22
+  currency: CNY
+one_liner: 102 mm 腰宽的全山自由滑板；FluxForm Freeride Ti 与 Trueblend Free 木芯，提供板头/板尾摇臂和脚下反拱。
+specs:
+  lengthOptions: 162 / 168 / 174 / 180 / 186 / 192 cm
+  waistWidth: 102
+  turnRadius: 17.5
+  turnRadiusReferenceLength: 180 cm
+  sidecutDimensions: "180 cm: 134-102-123 mm；各长度半径：162/14.5、168/15.5、174/16.5、180/17.5、186/18.5、192/19.5 m。"
+  profile: Rockered Tip / Camber Under Foot / Rockered Tail
+  core: Trueblend Free Woodcore（山毛榉、杨木、泡桐）
+  construction: FluxForm Freeride Ti；Full ABS Sidewall
+  technologies: FluxForm；Trueblend Free Woodcore
+  weightPerPair: 3760
+  weightReferenceLength: 180 cm
+  baseEdgeAngle: 0.9
+  sideEdgeAngle: 87.5
+  terrain: 全山 / 自由滑 / 软雪
+  skierLevel: 中级至专家
+  bindingSetup: 裸板；官方建议 Marker Royal Family，110 mm 刹车宽度
+  weightBasis: Blizzard 官方 2026/27 产品页对 180 cm 标注每对 3760 g；以页面当前对比区域读数记录。
+  geometryNotes: 官方页面显示标准款腰宽为 102 mm；部分区域规格比较行出现 180 cm 134-102-123 mm。其他长度只记录其官方半径，不推算外形尺寸。
+  seasonEvidence: Blizzard-Tecnica 官方产品页标题标注 Rustler 10 2026/27，并列板长、半径、结构和重量。
+  sourceCheckedAt: 2026-10-17
+  compatibilitySources: https://www.blizzard-tecnica.com/us/en/collection/men/skis/rustler/rustler-10-flat-2
+  officialPrice: USD 849.99（evo 美国零售商 2027 款裸板挂牌价）
+  priceMarket: evo 美国零售商；2027 款裸板
+  priceSource: https://www.evo.com/products/266524-blizzard-rustler-10-skis-2026
+  exchangeRateSource: ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240；折算 USD/CNY 6.686213
+  priceStatus: evo 美国零售页列 2027 款 Rustler 10 裸板 USD 849.99；按 ECB 2026-10-16 汇率折合 CNY 5,683.22。零售挂牌参考，不是品牌 MSRP 或中国售价；未计税费、运输、进口及支付汇兑成本。
+editorial_scores:
+  edgeGrip: 6.5
+  stability: 8.1
+  agility: 7
+  softSnow: 9.2
+  versatility: 7.9
+  forgiveness: 6.4
+data_source:
+  kind: official
+  origin_url: https://www.blizzard-tecnica.com/us/en/collection/men/skis/rustler/rustler-10-flat-2
+images:
+  - url: "https://denverskicompany.com/cdn/shop/files/8A536100-001_RUSTLER_10_flat_02.png?v=1765756765&width=1080"
+    kind: face
+    alt: Blizzard Rustler 10 2026/27 雪板商品图
+    source: Denver Ski Company 2027 商品页，图示为 26/27 新款外观；图片使用授权待核
+    sort_order: 0
+status: published

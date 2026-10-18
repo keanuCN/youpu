@@ -1,0 +1,59 @@
+slug: k2-special-effects-2026
+category: snowboard
+brand: k2
+model: Special Effects
+year: 2026
+title: K2 Special Effects 2025/26
+one_liner: VolumeShift 粉雪取向的短宽定向板，Bambooyah 木芯、ICG 10 碳纤玻纤和立体板头兼顾深雪浮力与硬雪转弯；官方建议比日常板长缩短 4–10 cm。
+editorial_scores:
+  stability: 7.8
+  response: 7.5
+  float: 10.0
+  park: 4.0
+  forgiveness: 6.5
+  value: 6.5
+price:
+  min: 2689.58
+  max: 4482.64
+  currency: CNY
+specs:
+  length: 148
+  effectiveEdge: 1050
+  sidecut: 6.6
+  waistWidth: 280
+  stanceSetback: 19
+  core: Bambooyah（Bamboo / Aspen / Paulownia）
+  fiberglass: ICG 10 Biax Glass with Carbon
+  base: Sintered 4000
+  profile: Directional Rocker
+  profileFamily: rocker
+  shape: Tapered Directional / Volume Shift
+  scenes:
+    - powder
+    - all-mountain
+    - carving
+  lengthOptions: 140 / 144 / 148 / 152
+  sizeSpecs:
+    - { size: "140", effectiveEdge: 990, noseWidth: 313, waistWidth: 268, tailWidth: 293, sidecutRadii: "6.2 m", stanceWidth: "508 mm (20 in reference)", setback: 19 }
+    - { size: "144", effectiveEdge: 1010, noseWidth: 321, waistWidth: 276, tailWidth: 301, sidecutRadii: "6.4 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "148", effectiveEdge: 1050, noseWidth: 327, waistWidth: 280, tailWidth: 307, sidecutRadii: "6.6 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "152", effectiveEdge: 1090, noseWidth: 333, waistWidth: 284, tailWidth: 313, sidecutRadii: "6.8 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 401.97 sale; USD 669.95 list
+  priceMarket: K2 美国官方商店
+  priceSource: https://k2snow.com/en-us/p/special-effects-snowboard-2526
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261015.pdf
+  seasonEvidence: K2 官方商品页标题为 Special Effects Unisex Snowboard 2026、路径含 2526，列出 140、144、148、152 四个尺码，按 2025/26 雪季归档。官方建议下调 4–10 cm。页面 features 将 profile 标为 Directional Rocker，另一个 profile 图注写 Flat Rocker，需保留冲突，不当作已完全澄清。
+  priceStatus: 按 ECB 2026-10-15 USD/CNY 6.6910 折算，K2 美国官方商店显示 USD 401.97 折扣价约 CNY 2,689.58、USD 669.95 标价约 CNY 4,482.64。仅为美国页面折算参考，不代表中国售价；税费、汇兑和跨境费用未计。
+images:
+  - url: "https://www.evo.com/cdn/shop/files/product-image-1192489.jpg?width=1200&v=1767736915"
+    kind: face
+    alt: "K2 Special Effects 2025/26 商品图"
+    source: "evo 2026 款 K2 Special Effects 商品页图；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/special-effects-snowboard-2526
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

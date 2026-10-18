@@ -1,0 +1,53 @@
+slug: salomon-huck-knife-pro-2027
+category: snowboard
+brand: salomon
+model: Huck Knife Pro
+year: 2027
+title: Huck Knife Pro Snowboard | Salomon 2027
+one_liner: 面向高水平公园滑手的强反馈真双向板，强正拱、稳定板头尾与弹性回馈服务于跳台和高强度 freestyle；不以粉雪浮力或新手容错为优先。
+editorial_scores:
+  stability: 8.7
+  response: 9.1
+  float: 4
+  park: 9.3
+  forgiveness: 4.3
+  value: 6.3
+price:
+  min: 4546.29
+  max: 4546.29
+  currency: CNY
+specs:
+  seasonEvidence: Salomon 官方商品页当前列为新品；该页面没有明确标注雪季年份，按 2026/27 在售款归档，待后续核对年份货号。
+  lengthOptions: 149 / 153 / 156 / 156W / 159 / 159W
+  profile: Quad Camber
+  profileFamily: camber
+  shape: True Twin
+  scenes:
+    - freestyle
+    - all-mountain
+  productCode: L49292300
+  sidecutRadii: 7.1 / 7.3 / 7.5 / 7.6 / 7.7 / 7.8 m（依尺码）
+  sizeSpecs:
+    - { size: "149", noseWidth: 286, waistWidth: 248, tailWidth: 286, sidecutRadii: "7.1 m" }
+    - { size: "153", noseWidth: 292, waistWidth: 253, tailWidth: 292, sidecutRadii: "7.3 m" }
+    - { size: "156", noseWidth: 295, waistWidth: 255, tailWidth: 295, sidecutRadii: "7.5 m" }
+    - { size: "156W", noseWidth: 302, waistWidth: 262, tailWidth: 302, sidecutRadii: "7.6 m" }
+    - { size: "159", noseWidth: 298, waistWidth: 257, tailWidth: 298, sidecutRadii: "7.7 m" }
+    - { size: "159W", noseWidth: 305, waistWidth: 264, tailWidth: 305, sidecutRadii: "7.8 m" }
+  priceCheckedAt: 2026-10-18
+  officialPrice: USD 679.95
+  priceMarket: Salomon 美国官方当前商品页
+  priceSource: https://www.salomon.com/en-us/product/huck-knife-pro-li1305/L49292300
+  exchangeRate: EUR/USD 1.1253；EUR/CNY 7.5240（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: Salomon 美国官方当前商品页标价 USD 679.95，按 ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240 折算约 CNY 4546.29。该页标记为新品，但未明确显示雪季；本档案按 2026/27 在售款归档，年份仍以货号/雪季复核为准。此为美区挂牌价折算，不是中国售价；税费、汇兑、运输及进口费用未计。
+images:
+  - url: "https://cdn.dam.salomon.com/5498bf2f-9852-4ef1-9414-b3b8010093ee/L49292300/PNG-2000px-max-72dpi.png?pad=0.12,0.12,0.12,0.12"
+    kind: face
+    alt: "Huck Knife Pro Snowboard | Salomon 2027 商品图"
+    source: 品牌官网商品页主图；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.salomon.com/en-ca/product/huck-knife-pro-li1305
+status: published

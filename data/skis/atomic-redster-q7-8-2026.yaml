@@ -59,6 +59,13 @@ images:
     alt: Atomic Redster Q7.8 Revoshock C 2025/26（AASS03666）商品图
     source: Skitreff 2025/26 商品页，页面货号 AASS03666 与板型匹配（图片展示授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 8.1
+  stability: 7.7
+  agility: 8.2
+  softSnow: 4.8
+  versatility: 7.5
+  forgiveness: 7
 data_source:
   kind: official
   origin_url: https://www.sport-hun.at/wp-content/uploads/2025/03/Atomic-Katalog-2526.pdf

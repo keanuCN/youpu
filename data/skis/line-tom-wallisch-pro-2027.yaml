@@ -1,0 +1,52 @@
+slug: line-tom-wallisch-pro-2027
+category: skis
+brand: line
+model: Tom Wallisch Pro
+year: 2027
+title: LINE Tom Wallisch Pro 2026/27
+price:
+  min: 3677.09
+  max: 3677.09
+  currency: CNY
+one_liner: 90 mm 腰宽的高性能公园板，5CUT 多半径侧切、对称弯曲与加厚刃/底板结构面向公园、街式及大跳台。
+specs:
+  lengthOptions: 157 / 164 / 171 / 178 / 185 cm
+  waistWidth: 90
+  turnRadius: 19
+  turnRadiusReferenceLength: 178 cm
+  sidecutDimensions: "178 cm: 118-90-116 mm；平均半径 19 m。官网尚未提供本条目全长度逐板几何表。"
+  profile: 5-4-5（板头/腰部/板尾）
+  core: Aspen Veneer Core
+  construction: Thick-Cut Sidewall；Thin Tip；reinforced core
+  technologies: Bio-Resin（31% 生物基碳含量）；5CUT Multi-Radius Sidecut；Symmetric Flex；Fatty Base & Edge；Early Rise
+  weightPerSki: 2010
+  weightReferenceLength: 178 cm
+  terrain: 公园 / 街式 / 雪道
+  skierLevel: 中级至专家
+  bindingSetup: 裸板，不含固定器
+  weightBasis: 官网 178 cm 单只重量 2010 g；不与含固定器雪道系统板的对重量级直接比较。
+  geometryNotes: 2027 官方商品页提供长度、平均半径、178 cm 截面、178 cm 重量及技术；其余长度具体几何暂不推算。
+  seasonEvidence: LINE 官方商品页标题为 Tom Wallisch Pro Skis 2027，列 157/164/171/178/185 cm。
+  sourceCheckedAt: 2026-10-17
+  officialPrice: USD 549.95
+  priceMarket: LINE 美国官网裸板挂牌价
+  priceSource: https://lineskis.com/en-us/p/tom-wallisch-pro-skis-ln261776
+  exchangeRateSource: ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240；折算 USD/CNY 6.686213
+  priceStatus: LINE 美国官网裸板挂牌 USD 549.95；按 ECB 2026-10-16 汇率折合 CNY 3,677.09。美国地区参考，不是中国售价；未计税费、运输、进口及支付汇兑成本。
+editorial_scores:
+  edgeGrip: 7
+  stability: 7
+  agility: 8.8
+  softSnow: 6.4
+  versatility: 7.8
+  forgiveness: 7.7
+data_source:
+  kind: official
+  origin_url: https://lineskis.com/en-us/p/tom-wallisch-pro-skis-ln261776
+images:
+  - url: "https://cdn.media.amplience.net/s/lineskis/line_2627_tom-wallisch-pro_LN261776?w=1200&qlt=90&fmt=auto"
+    kind: face
+    alt: LINE Tom Wallisch Pro 2026/27 雪板商品图
+    source: LINE 官方商品页 Open Graph 图，图片文件名含 2627 与货号 LN261776；图片使用授权待核
+    sort_order: 0
+status: published

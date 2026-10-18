@@ -1,0 +1,36 @@
+{
+  "brand": "GRAY",
+  "model": "GENIUS",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "sourceUrlEnglish": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "GRAY 官方 25/26 目录 PDF 内页页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / FREESTYLE CATEGORY'，并含 '25/26 GRAY SNOWBOARDS' 字样，确认该目录对应 2025/26 雪季。",
+  "category": "Freestyle",
+  "positioning": "ALL MOUNTAIN / SPEED / PARK / RIDING / STREET；板型 SINGLE CAMBER；官方将该款与 TRICK STICK [iz]、SHRED、GENIUS [HV]、R.P.M. 同列 FREE STYLE CATEGORY。",
+  "priceGroups": [
+    { "models": ["GENIUS 40", "GENIUS 44", "GENIUS 49", "GENIUS 52", "GENIUS 55"], "pretaxJpy": 109000, "taxIncludedJpy": 119900 }
+  ],
+  "priceSourceNote": "价格取自同一 PDF 的 FREESTYLE 图例区，该区把 TRICK STICK [iz] / SHRED / GENIUS [HV] / R.P.M. 四组型号与四组价格并列；GENIUS 组对应 '109,000' 与 '119,900' 两值。日元符号在 PDF 文本层编码为 \\245，已按 ¥ 解读。前值为税前、后值为含税，与 GRAY 目录既有口径一致。",
+  "sizeTable": [
+    { "size": "GENIUS 40", "overallLengthMm": 1400, "effectiveEdgeMm": 1090, "contactLengthMm": 1040, "noseWidthMm": 273, "waistWidthMm": 235, "tailWidthMm": 273, "sidecutMm": [7800, 7500, 7200, 7500, 7800], "offsetMm": 0, "camberMm": 8, "rockerMm": null, "stanceRangeMm": [440, 560], "setbackMm": 0, "insertQuantity": "12+12", "stiffnessNWT": [3.1, 3.3] },
+    { "size": "GENIUS 44", "overallLengthMm": 1440, "effectiveEdgeMm": 1130, "contactLengthMm": 1080, "noseWidthMm": 277, "waistWidthMm": 238, "tailWidthMm": 277, "sidecutMm": [8200, 7900, 7600, 7900, 8200], "offsetMm": 0, "camberMm": 8, "rockerMm": null, "stanceRangeMm": [440, 560], "setbackMm": 0, "insertQuantity": "12+12", "stiffnessNWT": [3.3, 3.5] },
+    { "size": "GENIUS 49", "overallLengthMm": 1490, "effectiveEdgeMm": 1170, "contactLengthMm": 1120, "noseWidthMm": 286, "waistWidthMm": 246, "tailWidthMm": 286, "sidecutMm": [8600, 8300, 8000, 8300, 8600], "offsetMm": 0, "camberMm": 10, "rockerMm": null, "stanceRangeMm": [500, 620], "setbackMm": 0, "insertQuantity": "12+12", "stiffnessNWT": [3.6, 3.8] },
+    { "size": "GENIUS 52", "overallLengthMm": 1520, "effectiveEdgeMm": 1200, "contactLengthMm": 1150, "noseWidthMm": 289, "waistWidthMm": 248, "tailWidthMm": 289, "sidecutMm": [8800, 8500, 8200, 8500, 8800], "offsetMm": 0, "camberMm": 10, "rockerMm": null, "stanceRangeMm": [520, 640], "setbackMm": 0, "insertQuantity": "12+12", "stiffnessNWT": [4.3, 4.5] },
+    { "size": "GENIUS 55", "overallLengthMm": 1550, "effectiveEdgeMm": 1230, "contactLengthMm": 1180, "noseWidthMm": 292, "waistWidthMm": 250, "tailWidthMm": 292, "sidecutMm": [9000, 8700, 8400, 8700, 9000], "offsetMm": 0, "camberMm": 12, "rockerMm": null, "stanceRangeMm": [520, 640], "setbackMm": 0, "insertQuantity": "12+12", "stiffnessNWT": [5.5, 5.7] }
+  ],
+  "construction": {
+    "edge": "1.8mm/stainless",
+    "sidewallAngle": 25,
+    "runningBase": "IS 7500 Natural",
+    "core": "Super Light Core（图注区 Super Light Cor e，与 48/51/54 分组并列）",
+    "laminate": "2ply 65/35 + 2ply 50/50",
+    "profile": "Single Camber",
+    "shape": "Twin / Negative Twin 标注并存（目录图注区同时出现 Twin 与 Negative Twin）"
+  },
+  "sizeTableNote": "目录以 'GENIUS 40/44/49/52/55' 记录型号，此处保留原始型号写法（数字为厘米长度但未带 cm 单位）。侧切为 5 段多半径值，按目录原序保留。Stiffness 目录给出 N/W/T 三档，原表 GENIUS 组首档与 W 档并列印刷，档案只保留可确证的 N 与 W 两值，不补造第三值。",
+  "conflicts": [
+    "目录图注区同页出现 'Twin' 与 'Negative Twin' 两种 shape 标注，未判定唯一值。",
+    "GENIUS 与 GENIUS [HV] 是目录中并列的不同条目：GENIUS 为 40/44/49/52/55 五码、运行底 IS 7500 Natural；GENIUS HV 为 40/44/49/52 四码、运行底 IS 7700 Natural。本档案只收 GENIUS，不并入 GENIUS HV。"
+  ]
+}

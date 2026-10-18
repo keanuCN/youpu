@@ -1,0 +1,54 @@
+slug: moss-snowstick-u4-half-2026
+category: snowboard
+brand: moss
+model: Snowstick U4 Half
+year: 2026
+title: MOSS Snowstick U4 Half 2025/26
+one_liner: 经过五年开发测试的 154 cm 中等硬度浪板，三种木材芯材配合 Snowsurf Camber；官方强调雪浪式操控、稳定与易转弯。
+editorial_scores:
+  stability: 7.8
+  response: 8.2
+  float: 9.0
+  park: 4.8
+  forgiveness: 7.2
+  value: 5.4
+price:
+  min: 10237.23
+  max: 10237.23
+  currency: CNY
+specs:
+  length: 154
+  effectiveEdge: 1040
+  runningLength: 818
+  noseWidth: 314
+  waistWidth: 268
+  tailWidth: 294
+  sidecutRadii: 9.2/6.5 m
+  stanceWidth: 510
+  stanceRange: 470–550 mm
+  stanceSetback: -36
+  shape: Directional
+  profile: Snowsurf Camber 3 mm
+  profileFamily: camber
+  core: Basswood / Japanese Wingnut / Maple
+  fiberglass: Official page does not specify
+  base: ISO JP Graphite
+  scenes:
+    - all-mountain
+    - powder
+    - carving
+  sizeSpecs:
+    - { size: "154", overallLength: 1540, effectiveEdge: 1040, runningLength: 818, noseWidth: 314, waistWidth: 268, tailWidth: 294, sidecutRadii: "9.2/6.5 m", stanceWidth: "510 mm (470-550 mm range)", setback: -36, flex: Medium, profile: "Snowsurf Camber 3 mm" }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 1530
+  priceMarket: MOSS Snowstick 美国官方 2025/26 商店页
+  priceSource: https://www.mosssnowstick.com/25-26/u4-half
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: MOSS Snowstick 官方美国 25/26 页面标价 USD 1530，按 ECB 2026-10-15 USD/CNY 6.6910 折算约 CNY 10237.23。为美国页面历史标价换算参考，不代表中国售价；税费、汇兑和跨境费用未计。
+images: []
+data_source:
+  kind: official
+  origin_url: https://www.mosssnowstick.com/25-26/u4-half
+  snapshot_url: https://www.mosssnowstick.com/24-25
+status: published

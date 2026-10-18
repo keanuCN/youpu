@@ -1,0 +1,52 @@
+slug: rossignol-hero-elite-st-ti-2027
+category: skis
+brand: rossignol
+model: Hero Elite ST TI
+year: 2027
+title: Rossignol Hero Elite ST TI 2026/27
+price:
+  min: 10211.74
+  max: 10211.74
+  currency: CNY
+one_liner: 雪道短弯取向裸板；68 mm 腰宽，157–172 cm 四种长度，LCT、Power Tip 与全幅 Titanal 支持快速换刃和竞技风格弯型。
+specs:
+  lengthOptions: 157 / 162 / 167 / 172 cm
+  waistWidth: 68
+  turnRadius: 13
+  turnRadiusReferenceLength: 167 cm
+  sidecutDimensions: "各长度均为 123-68-103 mm；半径：157/11、162/12、167/13、172/14 m。"
+  profile: 雪道 / 短弯取向
+  core: PEFC 山毛榉木芯
+  construction: Rectangular Full Sidewall；Full Ti Layer
+  technologies: Predictive Sidecut；Power Tip；LCT Technology
+  weightPerPair: 1950
+  weightReferenceLength: 167 cm
+  terrain: 雪道 / 短弯刻滑
+  skierLevel: 进阶至专家
+  bindingSetup: 裸板，不含固定器；安装前按雪靴 BSL 与本人参数配置
+  weightBasis: Rossignol 官方商品页表格以 kg/pair 列出逐长度重量：157/1.85、162/1.90、167/1.95、172/2.00。
+  geometryNotes: 逐长度几何和每对重量均来自 Rossignol 官方商品页；尺寸只适用于对应雪季与商品型号。
+  seasonEvidence: Rossignol 墨西哥官方商品页标题为 26/27 新系列，产品为 HERO ELITE ST TI，裸板 SKU 系列 RAPSD01000。
+  sourceCheckedAt: 2026-10-17
+  priceMarket: Rossignol 墨西哥官网，裸板
+  officialPrice: MXN 28,077
+  priceSource: https://www.rossignol.com/mx-es/esqu%C3%ADs-alpinos-hero-elite-st-ti-RAPSD01000157.html
+  exchangeRateSource: ECB 2026-10-16 EUR/MXN 20.6871、EUR/CNY 7.5240；折算 MXN/CNY 0.363685
+  priceStatus: Rossignol 墨西哥官网裸板标价 MXN 28,077；按 ECB 2026-10-16 汇率折合 CNY 10,211.74。墨西哥地区参考，不是中国售价；官网税费口径及跨境费用未计。
+editorial_scores:
+  edgeGrip: 9.4
+  stability: 8.8
+  agility: 9.4
+  softSnow: 3
+  versatility: 5.2
+  forgiveness: 3.5
+data_source:
+  kind: official
+  origin_url: https://www.rossignol.com/mx-es/esqu%C3%ADs-alpinos-hero-elite-st-ti-RAPSD01000157.html
+images:
+  - url: "https://bettineschisport.b-cdn.net/21933-thickbox_default/ski-rossignol-hero-elite-st-ti-konect-spx-14-gw-2026-2027.jpg"
+    kind: face
+    alt: Rossignol Hero Elite ST TI 2026/27 雪板商品图
+    source: Bettineschi Sport 2026/27 商品图；该零售套装图带 Konect SPX 14 GW 固定器，图片使用授权待核
+    sort_order: 0
+status: published

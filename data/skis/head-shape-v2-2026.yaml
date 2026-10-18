@@ -41,6 +41,13 @@ images:
     alt: HEAD Shape V2 2025/26 雪板商品图
     source: Sommets 商品页（对应 Shape V2 2025 款；图片使用授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 7
+  stability: 6.6
+  agility: 8
+  softSnow: 4
+  versatility: 6.6
+  forgiveness: 8.6
 data_source:
   kind: manual
   origin_url: https://boutique.sommets.com/en/products/head-skis-shape-v2

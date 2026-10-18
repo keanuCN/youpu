@@ -58,6 +58,13 @@ images:
     alt: Rossignol Hero Master LT R22 2026/27 官方雪板商品图
     source: Rossignol 官方产品页（图片使用授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 9.6
+  stability: 9.6
+  agility: 6.6
+  softSnow: 3
+  versatility: 5.1
+  forgiveness: 3.2
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/se-en/hero-master-lt-r22-alpine-skis-RAPHE01000.html

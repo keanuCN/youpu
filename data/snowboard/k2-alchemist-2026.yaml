@@ -1,0 +1,62 @@
+slug: k2-alchemist-2026
+category: snowboard
+brand: k2
+model: Alchemist
+year: 2026
+title: K2 Alchemist 2025/26
+one_liner: 2025/26 款硬朗定向 freeride 板，S1 Core、SpaceGlass 与 Spectral Braid 服务于高速压雪道和大山地滑行；2026/27 款已改用 S1 Pro Core 并扩展尺码。
+editorial_scores:
+  stability: 9.0
+  response: 8.8
+  float: 8.0
+  park: 3.5
+  forgiveness: 5.0
+  value: 5.5
+price:
+  min: 3251.64
+  max: 5419.4
+  currency: CNY
+specs:
+  length: 160
+  effectiveEdge: 1220
+  sidecut: 7.98
+  waistWidth: 253
+  stanceSetback: 19
+  core: S1 Core（Bamboo / Aspen / Paulownia）
+  fiberglass: SpaceGlass 鼻部嵌件 / Spectral Braid
+  base: Wax-Infused Sintered 4001
+  profile: Directional Camber
+  profileFamily: camber
+  shape: Traditional Shape / Tapered Directional
+  scenes:
+    - all-mountain
+    - powder
+    - carving
+  lengthOptions: 154 / 157 / 159W / 160 / 163 / 164W
+  sidecutRadii: 7.98 m
+  sizeSpecs:
+    - { size: "154", effectiveEdge: 1170, noseWidth: 293, waistWidth: 247, tailWidth: 287, sidecutRadii: "7.29 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "157", effectiveEdge: 1190, noseWidth: 297, waistWidth: 250, tailWidth: 291, sidecutRadii: "7.82 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "159W", effectiveEdge: 1220, noseWidth: 311, waistWidth: 263, tailWidth: 305, sidecutRadii: "7.98 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "160", effectiveEdge: 1220, noseWidth: 301, waistWidth: 253, tailWidth: 295, sidecutRadii: "7.98 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "163", effectiveEdge: 1240, noseWidth: 305, waistWidth: 256, tailWidth: 299, sidecutRadii: "8.14 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+    - { size: "164W", effectiveEdge: 1240, noseWidth: 315, waistWidth: 266, tailWidth: 309, sidecutRadii: "8.14 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 809.95 list; USD 485.97 sale
+  priceMarket: K2 美国官方商店
+  priceSource: https://k2snow.com/en-us/p/alchemist-mens-snowboard-2526
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261015.pdf
+  seasonEvidence: K2 美国官方商品页标注 Alchemist 2026，尺码为 154、157、159W、160、163、164W；K2 官方目录页列有 2025/26 Snowboard Catalog，故归档为 2025/26。此款采用 S1 Core；勿与 2026/27 新款 S1 Pro Core 和九个尺码混为一款。
+  priceStatus: 按 ECB 2026-10-15 USD/CNY 6.6910 折算，官方美国商店页面显示的 USD 485.97 折扣价约 CNY 3,251.64，USD 809.95 标价约 CNY 5,419.40。该区间是美国商店的页面快照，不是中国售价；折扣、库存、地区税费和跨境费用会变化。
+images:
+  - url: "https://images.evo.com/imgp/zoom/265341/1192300/k2-alchemist-snowboard-2026-.jpg"
+    kind: face
+    alt: "K2 Alchemist 2025/26 商品图"
+    source: "evo 2026 款 K2 Alchemist 商品页图；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/alchemist-mens-snowboard-2526
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

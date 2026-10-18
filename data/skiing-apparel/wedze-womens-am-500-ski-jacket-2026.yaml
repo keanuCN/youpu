@@ -1,0 +1,49 @@
+slug: wedze-womens-am-500-ski-jacket-2026
+category: skiing-apparel
+brand: wedze
+model: Women's 500 AM All-Mountain Ski and Snowboard Jacket
+year: 2026
+title: WEDZE 女款 AM 500 全山地滑雪夹克
+one_liner: 15,000 mm 防水、全压胶，身体 100 g/m² / 袖部 60 g/m² 填充，品牌舒适温度标注 -4°C；带 RECCO、通风拉链和头盔兼容风帽。
+price:
+  min: 1063.94
+  max: 1063.94
+  currency: CNY
+specs:
+  garmentType: jacket
+  fabric: 聚酯面料与聚氨酯防水膜
+  insulation: 身体 100 g/m²、袖部 60 g/m² 合成棉；品牌舒适温度标注 -4°C
+  weightG: 900
+  weightSize: M
+  seamTaping: fully-taped
+  waterproofMm: 15000
+  waterproofEvidence: 英国官方商品页标注 15,000 mm 防水组件、全压胶和防水拉链。
+  venting: true
+  powderSkirt: true
+  recco: true
+  fit: loose
+  membrane: 聚氨酯膜；官方未明确面料层数
+  breathable: true
+  features: RECCO 反射器；通风拉链；雪裙；雪票袋；头盔兼容 3D 可调风帽；可调袖口与下摆；内网袋、内外胸袋及雪镜擦布。
+  availableSizes: [ S, M, L, XL ]
+  sizeGuide: 英国商品页选项为 UK 6–8/EU S、UK 10/EU M、UK 12–14/EU L、UK 16/EU XL，并建议选择平时尺码。没有本款对应的成衣测量表，不能从字母码推算胸围或衣长。
+  seasonEvidence: 2026-10-17 复核的官方商品页未标注具体雪季；year 2026 仅为档案年份。
+  weather: 官方舒适温度标注 -4°C；实际体感随内搭、活动强度和天气变化。
+  styleCode: Decathlon 商品 ID 8949954
+  priceCheckedAt: 2026-10-17
+  officialPrice: GBP 119.99
+  priceMarket: Decathlon 英国官网；绿色款商品 ID 8949954
+  priceSource: https://www.decathlon.co.uk/p/womens-warm-and-breathable-all-mountain-ski-and-snowboard-jacket-500-am-green/352847/c49c219m8949954
+  priceStatus: 2026-10-17 英国官网标价 GBP 119.99；按 ECB 2026-10-13 GBP 0.84460 / EUR、CNY 7.4890 / EUR 折合 CNY 1,063.94。仅为英国地区参考价，不是中国售价，未含结账时可能产生的税费、配送与汇兑费用。
+  availableColors: 城市绿/鼠尾草绿（本记录变体）；商品页另列粉黑、黑色和烟紫色
+  imageEvidence: 官方商品图库图片在本轮抓取核对时无法读取，因此未将未确认可访问的图片写入商品记录。
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/womens-warm-and-breathable-all-mountain-ski-and-snowboard-jacket-500-am-green/352847/c49c219m8949954
+images:
+  - url: "https://contents.mediadecathlon.com/p2953412/k%240148330638de9f9430c58751318e8ca0/picture.jpg?format=auto&f=1920x0"
+    kind: face
+    alt: WEDZE 女款 AM 500 全山地滑雪夹克商品图（货号 8949954）
+    source: Decathlon 官方商品页，货号 8949954；图片使用授权待核
+    sort_order: 0
+status: published

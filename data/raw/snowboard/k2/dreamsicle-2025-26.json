@@ -1,0 +1,30 @@
+{
+  "brand": "K2",
+  "model": "Dreamsicle",
+  "season": "2025/26",
+  "sourceUrl": "https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard",
+  "sourcePageUrl": "https://k2snow.com/en-us/support/product-catalogs",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "K2 官方 25/26 单板产品目录 PDF 第 019 页标 'DREAMSICLE | CHLORO'，页眉 all-mountain / directional twin。",
+  "category": "All-Mountain",
+  "positioning": "目录标注 BOARD SHAPE: Directional Twin，RIDING STYLE: All-Mountain，ABILITY: Beginner to Intermediate。标语 'THE RIGHT TOOL TO SCOPE OUT A NEW LINE'。",
+  "columnAttribution": "该目录页并排展示 DREAMSICLE 与 CHLORO：DREAMSICLE 列为 all-mountain / directional twin / performance，配 Directional Twin + All-Mountain + Beginner to Intermediate、Directional Rocker Profile、Extruded 2000 Base、Rhythm Core、ICG 10 Biax Carbon Glass；CHLORO 列为 all-mountain / directional twin / beginner，配 Beginner、Twin Rocker Profile、Rhythm Core、Biax Glass、Catch-Free Tune。本档案取 DREAMSICLE 列（Directional Rocker、ICG 10），未混入 CHLORO 列（Twin Rocker、Biax Glass）。",
+  "sizeTable": [
+    { "size": "138", "effectiveEdgeCm": 108, "noseWaistTailMm": [275, 237, 275], "sidecutM": 7.10, "stanceIn": 18, "setbackIn": 0.75, "weightLb": "90-160+", "weightKg": "41-73+" },
+    { "size": "142", "effectiveEdgeCm": 111, "noseWaistTailMm": [279, 239, 279], "sidecutM": 7.30, "stanceIn": 19, "setbackIn": 0.75, "weightLb": "90-160+", "weightKg": "41-73+" },
+    { "size": "146", "effectiveEdgeCm": 112, "noseWaistTailMm": [284, 241, 284], "sidecutM": 7.40, "stanceIn": 19, "setbackIn": 0.75, "weightLb": "100-170+", "weightKg": "45-77+" },
+    { "size": "149", "effectiveEdgeCm": 114, "noseWaistTailMm": [284, 242, 284], "sidecutM": 7.50, "stanceIn": 20, "setbackIn": 0.75, "weightLb": "100-170+", "weightKg": "45-77+" },
+    { "size": "153", "effectiveEdgeCm": 122, "noseWaistTailMm": [289, 245, 289], "sidecutM": 7.80, "stanceIn": 21, "setbackIn": 0.75, "weightLb": "110-190+", "weightKg": "50-86+" }
+  ],
+  "features": {
+    "profile": "Directional Rocker Profile",
+    "shape": "Directional Twin",
+    "core": "Rhythm Core",
+    "glass": "ICG 10 Biax Carbon Glass",
+    "base": "Extruded 2000 Base",
+    "construction": "Hybritech Construction"
+  },
+  "sizeTableNote": "该表 5 行（138/142/146/149/153），SETBACK 全为 0.75 in。CHLORO 列尺码表紧随其后（138/142/146/150/154，SETBACK 为 CENTER），未并入本档案。DREAMSICLE 的 153 行有效边刃 122 cm 明显高于相邻 149 行的 114 cm（同系列该行边刃增幅较大），档案按目录原值保留未做平滑或修正。",
+  "priceNote": "该型号官方商品页（k2snow.com/en-us/p/dreamsicle-womens-snowboard-kb261701）采集时返回 HTTP 404，且 25/26 目录为规格型文档、不含标价，故本档案不填价格。",
+  "notes": "目录未给数值硬度。该款与同页 CHLORO 为两个独立型号；CHLORO 已有 2026 档案（k2-chloro-2026）。"
+}

@@ -82,6 +82,13 @@ images:
     alt: Nordica Unleashed 98 CA 2026/27 官方雪板商品图
     source: Nordica 官方产品页（图片使用授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 6.8
+  stability: 7.8
+  agility: 7.4
+  softSnow: 8.8
+  versatility: 7.9
+  forgiveness: 6.9
 data_source:
   kind: official
   origin_url: https://www.nordica.com/usa/en/collection/men/skis/unleashed/unleashed-98-ca-2

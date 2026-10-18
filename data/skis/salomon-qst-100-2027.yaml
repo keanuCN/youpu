@@ -86,6 +86,13 @@ images:
     alt: Salomon QST 100 Black 2026/27 官方雪板商品图
     source: Salomon 官方产品页（图片使用授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 6.5
+  stability: 8.1
+  agility: 7
+  softSnow: 9.2
+  versatility: 7.9
+  forgiveness: 6.4
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/qst-100-black-li9359

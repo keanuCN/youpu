@@ -75,6 +75,13 @@ images:
     alt: Atomic Redster Q9 Revoshock S 2026/27 官方雪板套装图
     source: Atomic 官方产品页（图片使用授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 9
+  stability: 8.7
+  agility: 8
+  softSnow: 4.2
+  versatility: 7.1
+  forgiveness: 5.4
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/products/redster-q9-revoshock-s-i-12-gw-aa7469-202600

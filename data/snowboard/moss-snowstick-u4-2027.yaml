@@ -5,6 +5,13 @@ model: Snowstick U4
 year: 2027
 title: MOSS Snowstick U4 2027
 one_liner: 151 cm 短菱形尾全山地雪浪板，传统定向正拱风格，强调快速换刃、林间机动和粉雪中的自然浮力；官网页面采集时显示不可用。
+editorial_scores:
+  stability: 7.8
+  response: 8.7
+  float: 8.5
+  park: 4.0
+  forgiveness: 7.2
+  value: 6.8
 price:
   min: 4646.12
   max: 4646.12

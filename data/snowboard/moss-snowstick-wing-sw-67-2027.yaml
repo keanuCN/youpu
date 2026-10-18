@@ -5,6 +5,13 @@ model: Snowstick WING SW 67
 year: 2027
 title: MOSS Snowstick WING SW 67 2027
 one_liner: 167 cm 中长型燕尾方向板，面向粉雪浮力与雪道长弧滑行；官方页面抓取时标记为不可用。
+editorial_scores:
+  stability: 8.0
+  response: 7.8
+  float: 9.4
+  park: 1.0
+  forgiveness: 6.3
+  value: 6.0
 price:
   min: 5321.92
   max: 5321.92

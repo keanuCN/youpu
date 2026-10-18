@@ -1,0 +1,47 @@
+slug: wedze-am-500-mens-ski-pants-2026
+category: skiing-apparel
+brand: wedze
+model: AM 500 Men's Ski and Snowboard Trousers
+year: 2026
+title: WEDZE 男款 AM 500 全山地滑雪裤
+one_liner: 15,000 mm 防水、全压胶并配防水拉链，60 g/m² 填充，品牌舒适温度标注 -6°C；带 RECCO、侧部通风拉链、雪裙与裤脚加固。
+price:
+  min: 709.26
+  max: 709.26
+  currency: CNY
+specs:
+  garmentType: pants
+  fabric: 聚酯主面料，裤脚加固片为 95% 聚酰胺、5% 聚酯（官方成分表）
+  insulation: 60 g/m² 合成棉；品牌舒适温度标注 -6°C
+  weightG: 1100
+  weightSize: L
+  seamTaping: fully-taped
+  waterproofMm: 15000
+  waterproofEvidence: WEDZE 英国官方商品页将防水面料标为 15,000 mm，并注明全压胶、防水拉链。
+  venting: true
+  recco: true
+  fit: loose
+  membrane: 聚氨酯膜；未标注面料层数
+  breathable: true
+  features: RECCO 反射器；侧部通风拉链；两个插手口袋与一个大腿口袋；雪靴内置雪裙；可调腰带并兼容背带；裤脚耐磨加固。
+  availableSizes: [ XS, S, M, L, XL, 2XL, 3XL ]
+  sizeGuide: 英国官方尺码选项映射为 UK 27 英寸/EU XS、UK 30/EU S、UK 32/EU M、UK 34/EU L、UK 39/EU XL、UK 43/EU 2XL、UK 48/EU 3XL。该标签不等于本款成衣腰围测量；页面建议选择平时尺码，未提供完整成衣尺寸表。
+  seasonEvidence: 2026-10-17 复核时官方页面标注 New Collection，但未直接写明 2026/27 或其他具体雪季；year 2026 仅为档案年份。
+  weather: 官方标注冷天气使用，舒适温度 -6°C；实际体感受内搭、活动强度和天气影响。
+  styleCode: Decathlon 商品 ID 8872016
+  priceCheckedAt: 2026-10-17
+  officialPrice: GBP 79.99
+  priceMarket: Decathlon 英国官网；黑色商品 ID 8872016
+  priceSource: https://www.decathlon.co.uk/p/men-s-500-am-waterproof-and-breathable-ski-and-snowboard-trousers-black/352923/c1m8872016
+  priceStatus: 英国官网商品页于 2026-10-17 显示 GBP 79.99；按 ECB 2026-10-13 GBP 0.84460 / EUR、CNY 7.4890 / EUR 折合 CNY 709.26。仅为英区标价折算参考，不是中国售价，未含可能产生的税费、运费及汇兑费用。
+  availableColors: 黑色（本记录变体）；商品页列 AM 500 有多个颜色。
+images:
+  - url: "https://contents.mediadecathlon.com/p2945327/k%2454eb0e8b2134e707b34e008cf198a61a/picture.jpg?f=3000x0&format=auto"
+    kind: face
+    alt: WEDZE 男款 AM 500 全山地滑雪裤
+    source: Decathlon 英国官方商品图库；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/men-s-500-am-waterproof-and-breathable-ski-and-snowboard-trousers-black/352923/c1m8872016
+status: published

@@ -1,0 +1,63 @@
+slug: k2-world-peace-2026
+category: snowboard
+brand: k2
+model: World Peace
+year: 2026
+title: K2 World Peace 2025/26
+one_liner: 以公园和街式玩法为核心的真双向板，100% Aspen 木芯、Biax 玻纤和 4/10 软硬度，适合 press、butter、道具与轻松全山地滑行。
+editorial_scores:
+  stability: 6.0
+  response: 6.3
+  float: 5.5
+  park: 9.0
+  forgiveness: 8.5
+  value: 8.5
+price:
+  min: 2007.10
+  max: 3345.17
+  currency: CNY
+specs:
+  length: 154
+  effectiveEdge: 1200
+  sidecut: 8.1
+  waistWidth: 252
+  stanceSetback: 0
+  core: 100% Aspen
+  fiberglass: Biax Fiberglass
+  base: Sintered 4000
+  profile: Twin Combination Camber
+  profileFamily: camber
+  shape: True Twin
+  scenes:
+    - freestyle
+    - all-mountain
+  lengthOptions: 148 / 151 / 152W / 154 / 155W / 157 / 158W
+  sidecutRadii: 8.1 / 7.7 / 8.1 m（154）
+  flex: 4
+  sizeSpecs:
+    - { size: "148", effectiveEdge: 1140, noseWidth: 289, waistWidth: 246, tailWidth: 289, sidecutRadii: "7.7 / 7.3 / 7.7 m", stanceWidth: "483 mm (19 in reference)", setback: 0 }
+    - { size: "151", effectiveEdge: 1170, noseWidth: 292, waistWidth: 249, tailWidth: 292, sidecutRadii: "7.9 / 7.5 / 7.9 m", stanceWidth: "508 mm (20 in reference)", setback: 0 }
+    - { size: "152W", effectiveEdge: 1170, noseWidth: 300, waistWidth: 257, tailWidth: 300, sidecutRadii: "7.9 / 7.5 / 7.9 m", stanceWidth: "508 mm (20 in reference)", setback: 0 }
+    - { size: "154", effectiveEdge: 1200, noseWidth: 296, waistWidth: 252, tailWidth: 296, sidecutRadii: "8.1 / 7.7 / 8.1 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+    - { size: "155W", effectiveEdge: 1200, noseWidth: 304, waistWidth: 260, tailWidth: 304, sidecutRadii: "8.1 / 7.7 / 8.1 m", stanceWidth: "533 mm (21 in reference)", setback: 0 }
+    - { size: "157", effectiveEdge: 1220, noseWidth: 299, waistWidth: 254, tailWidth: 299, sidecutRadii: "8.3 / 7.9 / 8.3 m", stanceWidth: "559 mm (22 in reference)", setback: 0 }
+    - { size: "158W", effectiveEdge: 1220, noseWidth: 307, waistWidth: 262, tailWidth: 307, sidecutRadii: "8.3 / 7.9 / 8.3 m", stanceWidth: "559 mm (22 in reference)", setback: 0 }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 299.97 sale; USD 499.95 list
+  priceMarket: K2 美国官方商店
+  priceSource: https://k2snow.com/en-us/p/world-peace-mens-snowboard-2526
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261015.pdf
+  seasonEvidence: K2 官方商品页标题为 2026 并标出七个尺码；商品 URL 含 2526，按 K2 产品命名归档为 2025/26。参数来自该商品页尺码表和技术说明。
+  priceStatus: 以 ECB 2026-10-15 USD/CNY 6.6910 折算，K2 美国官方商店显示 USD 299.97 折扣价约 CNY 2,007.10、USD 499.95 标价约 CNY 3,345.17。此为美国页面价格折算参考，并非中国售价；税费、汇兑及跨境费用未计。
+images:
+  - url: "https://blauerboardshop.com/cdn/shop/files/K2WorldPeaceSnowboard2026-Men_s_1024x.png?v=1744482240"
+    kind: face
+    alt: "K2 World Peace 2025/26 商品图"
+    source: "Blauer Board Shop 2026 款 K2 World Peace 商品页；型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/world-peace-mens-snowboard-2526
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

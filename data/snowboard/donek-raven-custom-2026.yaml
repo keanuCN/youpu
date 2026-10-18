@@ -5,6 +5,13 @@ model: Raven Custom
 year: 2026
 title: Donek Raven 定制单板
 one_liner: Donek 全山地定制方向板，板头更宽以增加浮力，同时保留较易反脚滑行的轮廓；硬度按滑手体重设定，没有固定尺码表。
+editorial_scores:
+  stability: 7.8
+  response: 8
+  float: 8.5
+  park: 6
+  forgiveness: 6
+  value: 5.5
 price:
   min: 5789.2
   max: 5789.2
@@ -32,7 +39,12 @@ specs:
   exchangeRate: EUR/USD 1.1195；EUR/CNY 7.4925（ECB 2026-10-14）
   exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
   priceStatus: 官方美国站挂牌 USD 865，按 ECB 2026-10-14 参考汇率折算 CNY 5,789.20；是基础定制价的地区参考，不是中国售价或最终成交价。最终尺寸、定制费用、运费、税费及进口费用需另行确认。
-images: []
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/4fff1cb9217ad3f7d09f59b6064085a000df4d87e094b460a1e8a54d3187c07e.webp"
+    kind: face
+    alt: Donek Raven 142 定制实物样图；该配色与长度仅为经销商样例，定制订单会有差异
+    source: Donek 官方列出的韩国经销商 XgameSnow 商品页（图片授权待核）
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://donek.com/product/raven/

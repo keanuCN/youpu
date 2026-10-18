@@ -1,0 +1,63 @@
+slug: k2-antidote-2026
+category: snowboard
+brand: k2
+model: Antidote
+year: 2026
+title: K2 Antidote 2025/26
+one_liner: Sage Kotsenburg 联名的 25/26 定向 Twin 大山板，六码 148–163 cm；Camber 板型配 A1 木芯、ICG 20 碳纤三轴玻纤与 SpaceGlass 板头板尾嵌件，另有 3D Base Contour 与 Recess3D 板面，官方定位进阶到专家。
+editorial_scores:
+  stability: 9
+  response: 9.1
+  float: 8
+  park: 6
+  forgiveness: 4.8
+  value: 5.5
+price:
+  min: 4188.93
+  max: 4188.93
+  currency: CNY
+specs:
+  priceCheckedAt: 2026-10-17
+  officialPrice: JPY 99,000（税込）
+  priceMarket: K2 Japan 官方在线商店（2026 款）
+  priceSource: https://www.k2japan.shop/view/item/000000001294
+  exchangeRate: EUR/JPY 177.82；EUR/CNY 7.5240（ECB 2026-10-16）；JPY/CNY 0.04231245
+  exchangeRateSource: https://www.lb.lt/en/daily-euro-foreign-exchange-reference-rates-published-by-the-european-central-bank
+  priceStatus: 日本官方在线商店列出 2026 款含税价 JPY 99,000；按 ECB 2026-10-16 参考汇率折算约 CNY 4,188.93。此为日本地区挂牌价折算，不是中国售价或成交价，未计跨境运输及进口费用。
+  length: 157
+  effectiveEdge: 1190
+  sidecut: 7.5
+  waistWidth: 259
+  stanceSetback: 19
+  core: A1 Core
+  fiberglass: ICG 20 Triax Glass with Carbon
+  base: Wax Infused Sintered 4001 Base
+  profile: Camber
+  profileFamily: camber
+  shape: Directional Twin
+  scenes:
+    - powder
+    - all-mountain
+    - carving
+  lengthOptions: 148 / 151 / 154 / 157 / 160 / 163
+  sidecutRadii: 7.50 m（157）
+  sizeSpecs:
+    - { size: "148", effectiveEdge: 1120, noseWidth: 295, waistWidth: 249, tailWidth: 285, sidecutRadii: "6.90 m", stanceWidth: "483 mm (19 in reference)", setback: 19 }
+    - { size: "151", effectiveEdge: 1140, noseWidth: 300, waistWidth: 253, tailWidth: 290, sidecutRadii: "7.10 m", stanceWidth: "508 mm (20 in reference)", setback: 19 }
+    - { size: "154", effectiveEdge: 1170, noseWidth: 304, waistWidth: 256, tailWidth: 294, sidecutRadii: "7.30 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "157", effectiveEdge: 1190, noseWidth: 308, waistWidth: 259, tailWidth: 298, sidecutRadii: "7.50 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+    - { size: "160", effectiveEdge: 1220, noseWidth: 312, waistWidth: 262, tailWidth: 302, sidecutRadii: "7.70 m", stanceWidth: "559 mm (22 in reference)", setback: 19 }
+    - { size: "163", effectiveEdge: 1240, noseWidth: 316, waistWidth: 265, tailWidth: 306, sidecutRadii: "7.90 m", stanceWidth: "584 mm (23 in reference)", setback: 19 }
+  sourceCheckedAt: 2026-10-16
+  seasonEvidence: 来源为 K2 官方 25/26 单板产品目录 PDF（K2 官方静态资源域，由 k2snow.com 支持页链出）；目录 DOPAMINE COLLECTION 页标该款 BOARD SHAPE 为 Directional Twin、RIDING STYLE 为 Big Mountain Freeride/Freestyle、ABILITY 为 Advanced to Expert，并列出 148/151/154/157/160/163 六个尺码。官方商品页 k2snow.com/en-us/p/antidote-unisex-snowboard-2526 多次采集均返回 HTTP 410，故以官方目录为唯一来源。
+images:
+  - url: "https://images.evo.com/imgp/zoom/265345/1232717/clone.jpg"
+    kind: face
+    alt: "K2 Antidote 2025/26 商品图"
+    source: "evo 2026 款商品页图；K2 Antidote 型号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

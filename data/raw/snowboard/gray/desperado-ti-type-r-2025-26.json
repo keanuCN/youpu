@@ -1,0 +1,21 @@
+{
+  "brand": "GRAY",
+  "model": "DESPERADO Ti Type-R",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "englishCatalogUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "capturedAt": "2026-10-16",
+  "officialPrice": { "amount": 198000, "currency": "JPY", "taxIncluded": true, "preTax": 180000 },
+  "sizeTable": [
+    { "size": "154 IIIn", "overallLengthMm": 1540, "effectiveEdgeMm": 1390, "contactLengthMm": 1220, "noseWidthMm": 298, "waistWidthMm": 238, "tailWidthMm": 279, "sidecutMm": [9000, 8600, 9600], "stanceRangeMm": [440, 560], "setbackMm": 30, "camberMm": 9, "stiffnessNWT": [8.0, 8.7, 8.2] },
+    { "size": "155 III", "overallLengthMm": 1550, "effectiveEdgeMm": 1390, "contactLengthMm": 1220, "noseWidthMm": 306, "waistWidthMm": 246, "tailWidthMm": 287, "sidecutMm": [9000, 8600, 9600], "stanceRangeMm": [500, 620], "setbackMm": 30, "camberMm": 9, "stiffnessNWT": [8.4, 9.1, 8.6] },
+    { "size": "156 IIIw", "overallLengthMm": 1560, "effectiveEdgeMm": 1390, "contactLengthMm": 1220, "noseWidthMm": 314, "waistWidthMm": 254, "tailWidthMm": 295, "sidecutMm": [9000, 8600, 9600], "stanceRangeMm": [500, 620], "setbackMm": 30, "camberMm": 9, "stiffnessNWT": [8.4, 9.1, 8.6] },
+    { "size": "159 IV", "overallLengthMm": 1590, "effectiveEdgeMm": 1430, "contactLengthMm": 1260, "noseWidthMm": 307, "waistWidthMm": 248, "tailWidthMm": 289, "sidecutMm": [9600, 9200, 10200], "stanceRangeMm": [500, 620], "setbackMm": 40, "camberMm": 10, "stiffnessNWT": [8.6, 9.3, 8.8] },
+    { "size": "160 IVw", "overallLengthMm": 1600, "effectiveEdgeMm": 1430, "contactLengthMm": 1260, "noseWidthMm": 315, "waistWidthMm": 256, "tailWidthMm": 297, "sidecutMm": [9600, 9200, 10200], "stanceRangeMm": [500, 620], "setbackMm": 40, "camberMm": 10, "stiffnessNWT": [8.6, 9.3, 8.8] },
+    { "size": "166 Vw", "overallLengthMm": 1660, "effectiveEdgeMm": 1490, "contactLengthMm": 1320, "noseWidthMm": 304, "waistWidthMm": 256, "tailWidthMm": 290, "sidecutMm": [12800, 12200, 13600], "stanceRangeMm": [500, 620], "setbackMm": 60, "camberMm": 12, "stiffnessNWT": [8.7, 9.4, 8.9] },
+    { "size": "172 VIw", "overallLengthMm": 1720, "effectiveEdgeMm": 1550, "contactLengthMm": 1380, "noseWidthMm": 303, "waistWidthMm": 260, "tailWidthMm": 290, "sidecutMm": [15600, 14800, 16400], "stanceRangeMm": [500, 620], "setbackMm": 60, "camberMm": 12, "stiffnessNWT": [8.8, 9.5, 9.0] },
+    { "size": "178 VIIw", "overallLengthMm": 1780, "effectiveEdgeMm": 1610, "contactLengthMm": 1440, "noseWidthMm": 300, "waistWidthMm": 260, "tailWidthMm": 289, "sidecutMm": [18200, 17200, 19200], "stanceRangeMm": [500, 620], "setbackMm": 60, "camberMm": 12, "stiffnessNWT": [8.9, 9.5, 9.1] }
+  ],
+  "construction": { "shape": "tapered hammerhead", "profile": "Vario Camber", "reinforcement": "X-shaped 0.4 mm Titanal; IZANAS under core; polyamide top sheet", "base": "IS7500 Graphite", "edge": "1.8 mm / 48 RCWL" },
+  "priceConversion": { "amount": 8386.20, "currency": "CNY", "method": "JPY 198000 / EUR-JPY 177.06 * EUR-CNY 7.4993", "exchangeRateDate": "2026-10-15", "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html", "limitations": ["Converted historic Japanese MSRP, not China retail price or a current transaction price.", "Shipping and import charges are excluded."] }
+}

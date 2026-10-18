@@ -1,0 +1,35 @@
+{
+  "brand": "K2",
+  "model": "Embassy",
+  "season": "2025/26",
+  "sourceUrl": "https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard",
+  "sourcePageUrl": "https://k2snow.com/en-us/support/product-catalogs",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "K2 官方 25/26 单板产品目录 PDF 第 016 页标 'ALMANAC | EMBASSY'，页眉 all-mountain / directional twin / versatile。",
+  "category": "All-Mountain",
+  "positioning": "目录标注 BOARD SHAPE: Directional Twin，RIDING STYLE: All-Mountain，ABILITY: Intermediate to Advanced。标语 'AN INSTANT CLASSIC'。",
+  "columnAttribution": "该目录页并排展示 ALMANAC 与 EMBASSY，各有独立尺码表。经比对：第一张表（137/141/145/149/153/157/161，SETBACK 全为 CENTER，侧切 6.00–7.90 单值）对应 ALMANAC 列（ALL-MOUNTAIN / DIRECTIONAL / TECHNICAL，配 Directional、All-Mountain Freestyle、Directional Combination Camber、VolumeShift、BAP Core、Carbon Backbone）；第二张表（149/152/155/157/157W/159/159W/162/162W/165W，SETBACK 全为 0.50 in，侧切 7.25–8.30）对应 EMBASSY 列（ALL-MOUNTAIN / DIRECTIONAL TWIN / VERSATILE，配 Directional Twin、All-Mountain、Twin Combination Camber、ICG 10 Biax Carbon Glass）。本档案取 EMBASSY 列，未混入 ALMANAC。",
+  "sizeTable": [
+    { "size": "149", "effectiveEdgeCm": 113, "noseWaistTailMm": [282, 241, 282], "sidecutM": 7.25, "stanceIn": 19, "setbackIn": 0.5, "weightLb": "90-160+", "weightKg": "41-73+" },
+    { "size": "152", "effectiveEdgeCm": 116, "noseWaistTailMm": [285, 244, 285], "sidecutM": 7.50, "stanceIn": 20, "setbackIn": 0.5, "weightLb": "110-180+", "weightKg": "50-82+" },
+    { "size": "155", "effectiveEdgeCm": 118, "noseWaistTailMm": [289, 247, 289], "sidecutM": 7.70, "stanceIn": 21, "setbackIn": 0.5, "weightLb": "120-190+", "weightKg": "54-86+" },
+    { "size": "157", "effectiveEdgeCm": 119, "noseWaistTailMm": [291, 249, 291], "sidecutM": 7.80, "stanceIn": 21, "setbackIn": 0.5, "weightLb": "120-190+", "weightKg": "54-86+" },
+    { "size": "157W", "effectiveEdgeCm": 119, "noseWaistTailMm": [299, 257, 299], "sidecutM": 7.80, "stanceIn": 20, "setbackIn": 0.5, "weightLb": "110-180+", "weightKg": "50-82+" },
+    { "size": "159", "effectiveEdgeCm": 122, "noseWaistTailMm": [295, 251, 295], "sidecutM": 7.90, "stanceIn": 22, "setbackIn": 0.5, "weightLb": "130-220+", "weightKg": "59-100+" },
+    { "size": "159W", "effectiveEdgeCm": 122, "noseWaistTailMm": [303, 259, 303], "sidecutM": 7.90, "stanceIn": 22, "setbackIn": 0.5, "weightLb": "130-220+", "weightKg": "59-100+" },
+    { "size": "162", "effectiveEdgeCm": 123, "noseWaistTailMm": [297, 254, 297], "sidecutM": 8.10, "stanceIn": 23, "setbackIn": 0.5, "weightLb": "140-230+", "weightKg": "64-104+" },
+    { "size": "162W", "effectiveEdgeCm": 123, "noseWaistTailMm": [305, 262, 305], "sidecutM": 8.10, "stanceIn": 23, "setbackIn": 0.5, "weightLb": "140-230+", "weightKg": "64-104+" },
+    { "size": "165W", "effectiveEdgeCm": 126, "noseWaistTailMm": [310, 266, 310], "sidecutM": 8.30, "stanceIn": 23, "setbackIn": 0.5, "weightLb": "140-230+", "weightKg": "64-104+" }
+  ],
+  "features": {
+    "profile": "Twin Combination Camber Profile",
+    "shape": "Directional Twin",
+    "core": "BAP Core",
+    "glass": "ICG 10 Biax Carbon Glass",
+    "base": "Sintered 4000 Base",
+    "construction": "Hybritech Construction"
+  },
+  "sizeTableNote": "EMBASSY 尺码表共 10 行（149–165W），含四个 W 宽版。157W 行的 STANCE 记 20\"，与同长度标准版 157 的 21\" 不同，档案按目录原值保留未做统一。目录未给出尾宽缺失值。",
+  "priceNote": "该型号官方商品页（k2snow.com/en-us/p/embassy-mens-snowboard-2526）连续三次采集均返回 HTTP 410，且 25/26 目录为规格型文档、不含标价，故本档案不填价格。",
+  "notes": "尺码表 SETBACK 列全部为 0.50 in，按 1 in = 25.4 mm 录作 13 mm 整。目录未给数值硬度。该款与同页 ALMANAC 为两个独立型号，ALMANAC 另行建档。"
+}

@@ -1,0 +1,44 @@
+slug: nidecker-blade-pro-2027
+category: snowboard
+brand: nidecker
+model: Blade Pro
+year: 2027
+title: Blade Pro Snowboard | Nidecker 2027
+one_liner: Nidecker 的高硬度刻滑取向代表，以强正拱、快速边刃响应和长有效刃服务整备雪道上的精准压弯；需要较强技术与持续主动发力。
+editorial_scores:
+  stability: 9.3
+  response: 9.7
+  float: 4
+  park: 2
+  forgiveness: 3.5
+  value: 5.3
+price:
+  min: 4680.02
+  max: 4680.02
+  currency: CNY
+specs:
+  seasonEvidence: Nidecker 官方商品页标注 2027 款，商品货号含 N.27。
+  lengthOptions: 158 / 160W / 162W
+  profile: Positive Camber
+  profileFamily: camber
+  shape: Directional
+  scenes:
+    - carving
+    - all-mountain
+  priceCheckedAt: 2026-10-18
+  officialPrice: USD 699.95
+  priceMarket: Nidecker 美国官方 2026/27 商品页
+  priceSource: https://www.nidecker.com/products/blade-pro
+  exchangeRate: EUR/USD 1.1253；EUR/CNY 7.5240（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: Nidecker 美国官方 2026/27 商品页挂牌 USD 699.95，按 ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240 折算约 CNY 4680.02。此为美国官方挂牌价的人民币折算参考，不是中国售价；税费、汇兑、运输及进口费用未计。
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0685/4131/7295/files/N.27.SNM.BLP-Blade_Pro-1.webp?v=1786457611"
+    kind: face
+    alt: "Blade Pro Snowboard | Nidecker 2027 商品图"
+    source: 品牌官网商品页主图；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.nidecker.com/products/blade-pro
+status: published

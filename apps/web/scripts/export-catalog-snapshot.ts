@@ -1,7 +1,7 @@
 import { mkdir, writeFile, readFile, readdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
-import { brandSeedSchema, categorySeedSchema, parseSpecSchema, productSeedSchema, productListItemSchema, normalizePriceRange, productListResponseSchema, type ProductListItem } from "@youpu/schema";
+import { brandSeedSchema, categorySeedSchema, computeComposite, parseSpecSchema, productSeedSchema, productListItemSchema, normalizePriceRange, productListResponseSchema, type ProductListItem } from "@youpu/schema";
 import { parse as parseYaml } from 'yaml';
 import { shouldRejectCatalogCountDecrease } from "./catalog-build-policy";
 import { CATALOG_SNAPSHOT, CATALOG_SNAPSHOT_META } from "../src/data/catalog-snapshot";
@@ -70,10 +70,10 @@ function stableSort(items: ProductListItem[]): ProductListItem[] {
 async function readSeedCatalog(dataDir: string): Promise<ProductListItem[]> {
   const brands = brandSeedSchema.array().parse(parseYaml(await readFile(resolve(dataDir, 'brands.yaml'), 'utf8')));
   const categories = categorySeedSchema.array().parse(parseYaml(await readFile(resolve(dataDir, 'categories.yaml'), 'utf8')));
-  const publicKeysByCategory = new Map(categories.flatMap(category => {
+  const specSchemasByCategory = new Map(categories.flatMap(category => {
     if (!category.spec_schema) return [];
     const schema = parseSpecSchema(category.spec_schema);
-    return [[category.slug, new Set(schema.fields.filter(field => field.display !== false).map(field => field.key))] as const];
+    return [[category.slug, schema] as const];
   }));
   const existing = new Map(CATALOG_SNAPSHOT.map(item => [item.slug, item]));
   const items: ProductListItem[] = [];
@@ -90,17 +90,20 @@ async function readSeedCatalog(dataDir: string): Promise<ProductListItem[]> {
       exportedImageGalleries[seed.slug] = seed.images.map(image => ({ url: image.url, kind: image.kind, alt: image.alt, source: image.source }));
       const brand = brands.find(item => item.slug === seed.brand);
       if (!brand) throw new Error(`品牌不存在：${seed.brand}`);
-      const publicKeys = publicKeysByCategory.get(seed.category);
-      if (!publicKeys) throw new Error(`类目缺失公开规格 schema：${seed.category}`);
+      const specSchema = specSchemasByCategory.get(seed.category);
+      if (!specSchema) throw new Error(`类目缺失公开规格 schema：${seed.category}`);
+      const publicKeys = new Set(specSchema.fields.filter(field => field.display !== false).map(field => field.key));
       const publicSpecs = Object.fromEntries(Object.entries(seed.specs).filter(([key]) => publicKeys.has(key)));
       const price = normalizePriceRange(seed.price ? { min: seed.price.min, max: seed.price.max, currency: seed.price.currency } : { min: null, max: null, currency: 'CNY' });
+      const editorialScores = seed.editorial_scores ?? old?.editorialScores ?? null;
       items.push(productListItemSchema.parse({
         id: old?.id ?? seed.slug, slug: seed.slug, title: seed.title, model: seed.model, year: seed.year,
         oneLiner: seed.one_liner ?? null, priceMin: price.min, priceMax: price.max, priceCurrency: 'CNY',
         coverUrl: seed.images?.[0]?.url ?? null,
         ratingOverall: old?.ratingOverall ?? null, ratingCount: old?.ratingCount ?? 0,
-        favoriteCount: old?.favoriteCount ?? 0, composite: old?.composite ?? null,
-        editorialScores: seed.editorial_scores ?? old?.editorialScores ?? null,
+        favoriteCount: old?.favoriteCount ?? 0,
+        composite: computeComposite(specSchema, editorialScores),
+        editorialScores,
         brand: { slug: brand.slug, name: brand.name, nameCn: brand.name_cn ?? null },
         categorySlug: seed.category, specs: publicSpecs, highlights: [],
       }));

@@ -1,0 +1,85 @@
+{
+  "brand": "K2",
+  "model": "Alchemist",
+  "season": "2025-26",
+  "seedFile": "data/snowboard/k2-alchemist-2026.yaml",
+  "retrievedAt": "2026-10-16",
+  "sources": {
+    "officialK2ProductPage": {
+      "url": "https://k2snow.com/en-us/p/alchemist-mens-snowboard-2526",
+      "title": "K2 Alchemist Men's Snowboard 2026",
+      "evidence": "K2's indexed official product page identifies the 2026 model and 2025-26 SKU page; it describes a directional freeride board for advanced/expert riders, Directional Camber, S1 Core, SpaceGlass tip insert, Spectral Braid, Recess3D, Carbon Power Fork, Wax-Infused Sintered 4001 base, sizes 154/157/159W/160/163/164W and the full six-row size chart. The live product URL returned HTTP 410 during this collection; the indexed content was captured in the search result."
+    },
+    "officialK2CatalogIndex": {
+      "url": "https://k2snow.com/en-us/support/product-catalogs",
+      "catalogLink": "https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard",
+      "title": "K2 official Product Catalogs page",
+      "evidence": "K2's current support page lists a 25/26 Snowboard Catalog link. The linked PDF is hosted on K2's official static asset host. The PDF is very large and could not be opened in the web reader, so the K2 product page remains the source for the specific measurements."
+    },
+    "catalogTextCrossCheck": {
+      "url": "https://eoc-japan.com/catalog/2025_26/25_26_K2_SNOWBOARDING.pdf",
+      "title": "K2 2025/26 Snowboarding catalog copy hosted by a Japanese retailer",
+      "hostNote": "Secondary copy of a K2-branded seasonal catalog; not a K2 domain.",
+      "evidence": "The indexed catalog text cross-checks the Alchemist 154 cm row's sidecut as 7.29 m. K2's indexed product page loses the decimal in this one row and displays '297'; the seed uses the catalog value and retains the discrepancy here."
+    },
+    "officialK2StorePrice": {
+      "url": "https://k2snow.com/en-us/p/alchemist-mens-snowboard-2526",
+      "captureDate": "2026-10-16",
+      "currency": "USD",
+      "listPrice": 809.95,
+      "displayedSalePrice": 485.97,
+      "evidence": "The indexed official US storefront page showed USD 485.97 sale price against USD 809.95. This is a regional live price snapshot, not a Chinese-market price or a season MSRP guarantee."
+    },
+    "exchangeRate": {
+      "url": "https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261015.pdf",
+      "date": "2026-10-15",
+      "eurUsd": 1.1208,
+      "eurCny": 7.4993,
+      "derivedUsdCny": 6.6910,
+      "formula": "EUR/CNY divided by EUR/USD; rounded to four decimals",
+      "convertedListPriceCny": 5419.4,
+      "convertedSalePriceCny": 3251.64,
+      "note": "Reference conversion only; excludes fees, shipping, and import costs."
+    }
+  },
+  "specs": {
+    "profile": "Directional Camber",
+    "shape": "Traditional Shape, Tapered Directional",
+    "core": "S1 Core",
+    "base": "Wax-Infused Sintered 4001",
+    "reinforcements": ["SpaceGlass tip insert", "Spectral Braid", "Carbon Power Fork"],
+    "inserts": "2 x 4",
+    "targetAbility": ["Advanced", "Expert"],
+    "targetTerrain": ["Freeride", "Big Mountain", "Powder", "Piste", "Speed"]
+  },
+  "units": {
+    "effectiveEdgeCm": "K2 table source unit centimetres; converted to millimetres in the seed.",
+    "tipWaistTailCm": "K2 table order nose/waist/tail in centimetres; converted individually to millimetres in the seed.",
+    "sidecutM": "K2 table source unit metres.",
+    "referenceStanceInches": "Single reference stance, not a stance range.",
+    "setbackInches": "K2 table lists 0.75 in for each size; seed stores the rounded positive magnitude 19 mm."
+  },
+  "sizeRows": [
+    {"size":"154","widthVariant":"standard","effectiveEdgeCm":117,"tipWaistTailCm":[29.3,24.7,28.7],"sidecutM":7.29,"referenceStanceInches":21,"setbackInches":0.75,"riderWeightLb":"120-200+","riderWeightKg":"54-91+"},
+    {"size":"157","widthVariant":"standard","effectiveEdgeCm":119,"tipWaistTailCm":[29.7,25.0,29.1],"sidecutM":7.82,"referenceStanceInches":21,"setbackInches":0.75,"riderWeightLb":"120-200+","riderWeightKg":"54-91+"},
+    {"size":"159W","widthVariant":"wide","effectiveEdgeCm":122,"tipWaistTailCm":[31.1,26.3,30.5],"sidecutM":7.98,"referenceStanceInches":22,"setbackInches":0.75,"riderWeightLb":"130-230+","riderWeightKg":"59-104+"},
+    {"size":"160","widthVariant":"standard","effectiveEdgeCm":122,"tipWaistTailCm":[30.1,25.3,29.5],"sidecutM":7.98,"referenceStanceInches":22,"setbackInches":0.75,"riderWeightLb":"130-230+","riderWeightKg":"59-104+"},
+    {"size":"163","widthVariant":"standard","effectiveEdgeCm":124,"tipWaistTailCm":[30.5,25.6,29.9],"sidecutM":8.14,"referenceStanceInches":23,"setbackInches":0.75,"riderWeightLb":"130-230+","riderWeightKg":"59-104+"},
+    {"size":"164W","widthVariant":"wide","effectiveEdgeCm":124,"tipWaistTailCm":[31.5,26.6,30.9],"sidecutM":8.14,"referenceStanceInches":23,"setbackInches":0.75,"riderWeightLb":"130-230+","riderWeightKg":"59-104+"}
+  ],
+  "representativeSize": {
+    "size": "160 cm",
+    "basis": "Median-listed standard-width sample in the six-size lineup; this is an editorial representative size, not a K2 designation."
+  },
+  "uncertainties": [
+    "The indexed K2 product page prints the 154 cm sidecut as '297', evidently missing the decimal separator. The matching K2 25/26 catalog text indexed by specialist catalog sources gives 7.29 m; preserve the source transcription issue for review.",
+    "The official 2026 product page is currently gone (HTTP 410). K2 still lists the 25/26 catalog from its official support page, but its 70 MB PDF exceeded the web reader limit.",
+    "No riding score or user field report was created for this historical listing.",
+    "No product image was added because a reuse license for the available retailer images was not confirmed."
+  ],
+  "generationComparison": {
+    "2025-26": "S1 Core, six sizes: 154/157/159W/160/163/164W.",
+    "2026-27": "Separate redesign in current seed k2-alchemist-2027: S1 Pro Core/Recess3D-focused construction and nine sizes, including 148/151/160W/163W/166.",
+    "note": "Do not reuse 2026-27 size rows or product image as the 2025-26 model."
+  }
+}

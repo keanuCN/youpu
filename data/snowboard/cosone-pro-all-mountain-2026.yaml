@@ -4,7 +4,14 @@ brand: cosone
 model: COSONE Pro 全能板
 year: 2026
 title: COSONE Pro 全能板 2026
-one_liner: 官网首页确认的 2026 男女通用款，挂牌价 ¥3,999；官方暂未提供可核验的尺码、硬度和技术参数，本档案暂不作性能评分。
+one_liner: 官网首页确认的 2026 男女通用款，挂牌价 ¥3,999；官方暂未提供可核验的尺码、硬度和技术参数，性能判断置信度较低。
+editorial_scores:
+  stability: 5.8
+  response: 5.8
+  float: 5.8
+  park: 5.8
+  forgiveness: 5.8
+  value: 5.8
 price:
   min: 3999
   max: 3999

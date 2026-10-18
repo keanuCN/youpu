@@ -1,0 +1,32 @@
+{
+  "brand": "K2",
+  "model": "Isolator",
+  "season": "2025/26",
+  "sourceUrl": "https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard",
+  "sourcePageUrl": "https://k2snow.com/en-us/support/product-catalogs",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "K2 官方 25/26 单板产品目录 PDF 第 028 页标 'ISOLATOR | TREE SPLITTER'，页眉 all-gender / backcountry / splitboard。",
+  "category": "Splitboard / Backcountry",
+  "positioning": "目录标注 BOARD SHAPE: Directional，RIDING STYLE: All-Mountain Freeride，ABILITY: Intermediate to Expert。标语 'USE THIS TOOL TO AVOID OTHER HUMANS'。",
+  "sizeTable": [
+    { "size": "142", "effectiveEdgeCm": 104, "noseWaistTailMm": [299, 250, 279], "sidecutM": [5.5, 6.5], "stanceIn": 19, "setbackIn": 0.75, "weightLb": "90-160+", "weightKg": "41-73+" },
+    { "size": "146", "effectiveEdgeCm": 108, "noseWaistTailMm": [305, 254, 285], "sidecutM": [5.7, 6.7], "stanceIn": 19, "setbackIn": 0.75, "weightLb": "90-160+", "weightKg": "41-73+" },
+    { "size": "150", "effectiveEdgeCm": 111, "noseWaistTailMm": [313, 260, 293], "sidecutM": [5.9, 6.9], "stanceIn": 20, "setbackIn": 0.75, "weightLb": "120-190+", "weightKg": "54-86+" },
+    { "size": "154", "effectiveEdgeCm": 115, "noseWaistTailMm": [318, 264, 298], "sidecutM": [6.1, 7.1], "stanceIn": 21, "setbackIn": 0.75, "weightLb": "120-190+", "weightKg": "54-86+" },
+    { "size": "158", "effectiveEdgeCm": 118, "noseWaistTailMm": [324, 268, 304], "sidecutM": [6.3, 7.3], "stanceIn": 22, "setbackIn": 0.75, "weightLb": "130-210+", "weightKg": "59-95+" },
+    { "size": "162", "effectiveEdgeCm": 122, "noseWaistTailMm": [327, 270, 307], "sidecutM": [6.5, 7.5], "stanceIn": 23, "setbackIn": 0.75, "weightLb": "130-210+", "weightKg": "59-95+" }
+  ],
+  "features": {
+    "profile": "Directional Camber Profile",
+    "shape": "Directional",
+    "core": "Paulownia Tour-Lite Core",
+    "glass": "ICG 10 Carbon Glass",
+    "base": "Sintered 4000 Base",
+    "clips": "Karakoram UltraClips",
+    "inserts": "Splitrack Inserts",
+    "volumeShift": "VolumeShift"
+  },
+  "sizeTableNote": "目录页把 ISOLATOR 与 TREE SPLITTER 并排，两列各有尺码表。本档案只取 ISOLATOR 列：六码 142–162、侧切为两段值（5.5/6.5 形式）、含 Splitrack Inserts 与 Karakoram UltraClips。未并入 TREE SPLITTER 列（120、136 两码，侧切单值 9.00 m，配 Flat Rocker / Veneer Core / Traction Pad）。侧切按目录原序记为两段值。",
+  "priceNote": "该型号官方商品页（k2snow.com/en-us/p/isolator-unisex-splitboard-snowboard-2526）多次采集均返回 HTTP 410，且 25/26 目录为规格型文档、不含标价，故本档案不填价格。",
+  "notes": "Splitrack 为分离板专用导轨嵌入系统，与常规 2x4 不同，档案按官方原文保留。目录未给数值硬度。"
+}

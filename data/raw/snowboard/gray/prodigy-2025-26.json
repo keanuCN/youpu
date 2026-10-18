@@ -1,0 +1,37 @@
+{
+  "brand": "GRAY",
+  "model": "PRODIGY",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "sourceUrlEnglish": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "GRAY 官方 25/26 目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / FREESTYLE CATEGORY'，内页含 '25/26 GRAY SNOWBOARDS' 字样。",
+  "category": "Freestyle",
+  "positioning": "ALL MOUNTAIN / SPEED / PARK / RIDING / STREET；板型 SINGLE CAMBER；目录将 PRODIGY 与 GENIUS、LOVEBUZZ、TRICK STICK [iz] 同列自由式类目。",
+  "priceGroups": [
+    { "models": ["PRODIGY 46.5", "PRODIGY 51.5", "PRODIGY 51.5w", "PRODIGY 53.5", "PRODIGY 55.5", "PRODIGY 55.5w", "PRODIGY 57.5", "PRODIGY 57.5w"], "pretaxJpy": 109000, "taxIncludedJpy": 119900 }
+  ],
+  "priceSourceNote": "价格取自同一 PDF 自由式图例区，该区把 TRICK STICK [iz] / SHRED / GENIUS [HV] / R.P.M. 四组与四组价格并列。目录中 PRODIGY 与 GENIUS 同属该页自由式阵容且共用 '109,000 / 119,900' 一档；日元符号在 PDF 文本层编码为 \\245。前值税前、后值含税。",
+  "sizeTable": [
+    { "size": "PRODIGY 46.5", "overallLengthMm": 1465, "effectiveEdgeMm": 1140, "contactLengthMm": 1090, "noseWidthMm": 275, "waistWidthMm": 234, "tailWidthMm": 275, "sidecutMm": [7800, 6880, 7800], "offsetMm": 0, "camberMm": 8.0, "rockerMm": null, "stanceRangeMm": [460, 560], "setbackMm": 10, "insertQuantity": "10+12", "stiffnessNWT": [4.8, 5.3, 6.3] },
+    { "size": "PRODIGY 51.5", "overallLengthMm": 1515, "effectiveEdgeMm": 1180, "contactLengthMm": 1140, "noseWidthMm": 285, "waistWidthMm": 242, "tailWidthMm": 285, "sidecutMm": [8200, 7180, 8200], "offsetMm": 0, "camberMm": 10.0, "rockerMm": null, "stanceRangeMm": [460, 580], "setbackMm": 20, "insertQuantity": "12+12", "stiffnessNWT": [5.5, 6.0, 7.0] },
+    { "size": "PRODIGY 51.5w", "overallLengthMm": 1515, "effectiveEdgeMm": 1180, "contactLengthMm": 1140, "noseWidthMm": 293, "waistWidthMm": 250, "tailWidthMm": 293, "sidecutMm": [8200, 7180, 8200], "offsetMm": 0, "camberMm": 10.0, "rockerMm": null, "stanceRangeMm": [460, 580], "setbackMm": 20, "insertQuantity": "12+12", "stiffnessNWT": [5.5, 6.0, 7.0] },
+    { "size": "PRODIGY 53.5", "overallLengthMm": 1535, "effectiveEdgeMm": 1200, "contactLengthMm": 1160, "noseWidthMm": 285, "waistWidthMm": 244, "tailWidthMm": 285, "sidecutMm": [8700, 7880, 8700], "offsetMm": 0, "camberMm": 10.0, "rockerMm": null, "stanceRangeMm": [480, 600], "setbackMm": 20, "insertQuantity": "12+12", "stiffnessNWT": [6.0, 6.5, 7.5] },
+    { "size": "PRODIGY 55.5", "overallLengthMm": 1555, "effectiveEdgeMm": 1220, "contactLengthMm": 1180, "noseWidthMm": 287, "waistWidthMm": 246, "tailWidthMm": 287, "sidecutMm": [9020, 8080, 9020], "offsetMm": 0, "camberMm": 10.0, "rockerMm": null, "stanceRangeMm": [500, 620], "setbackMm": 20, "insertQuantity": "12+12", "stiffnessNWT": [6.5, 7.0, 8.0] },
+    { "size": "PRODIGY 55.5w", "overallLengthMm": 1555, "effectiveEdgeMm": 1220, "contactLengthMm": 1180, "noseWidthMm": 295, "waistWidthMm": 254, "tailWidthMm": 295, "sidecutMm": [9020, 8080, 9020], "offsetMm": 0, "camberMm": 10.0, "rockerMm": null, "stanceRangeMm": [500, 620], "setbackMm": 20, "insertQuantity": "12+12", "stiffnessNWT": [6.5, 7.0, 8.0] },
+    { "size": "PRODIGY 57.5", "overallLengthMm": 1575, "effectiveEdgeMm": 1240, "contactLengthMm": 1200, "noseWidthMm": 288, "waistWidthMm": 246, "tailWidthMm": 288, "sidecutMm": [9100, 8200, 9100], "offsetMm": 0, "camberMm": 12.0, "rockerMm": null, "stanceRangeMm": [500, 620], "setbackMm": 20, "insertQuantity": "12+12", "stiffnessNWT": [7.0, 7.5, 8.5] },
+    { "size": "PRODIGY 57.5w", "overallLengthMm": 1575, "effectiveEdgeMm": 1240, "contactLengthMm": 1200, "noseWidthMm": 300, "waistWidthMm": 258, "tailWidthMm": 300, "sidecutMm": [9100, 8200, 9100], "offsetMm": 0, "camberMm": 12.0, "rockerMm": null, "stanceRangeMm": [500, 620], "setbackMm": 20, "insertQuantity": "12+12", "stiffnessNWT": [7.0, 7.5, 8.5] }
+  ],
+  "construction": {
+    "edge": "1.8mm/stainless",
+    "sidewallAngle": 25,
+    "runningBase": "IS 7500 Graphite",
+    "profile": "Single Camber",
+    "shape": "Directional Twin（目录图注区 Flex Negative / Directional Twin 并存）"
+  },
+  "sizeTableNote": "目录以半码记型号（46.5/51.5/51.5w…），此处保留原始写法。w 版与标准版同长同侧切，仅鼻/腰/尾宽不同，未合并为同一尺码。侧切为 3 段多半径值，按目录原序保留。",
+  "conflicts": [
+    "目录图注区同时出现 'Directional Twin'、'Twin'、'Flex Negative' 等标注，档案 shape 取 Directional Twin，不判定唯一值。",
+    "PRODIGY 与 GENIUS 在目录中同页同档价，两者型号与尺码表各自独立，未合并建档。"
+  ]
+}

@@ -1,0 +1,48 @@
+slug: burton-custom-x-camber-2027
+category: snowboard
+brand: burton
+model: Custom X Camber
+year: 2027
+title: Men's Custom X Camber Snowboard | Burton 2027
+one_liner: Burton 将 Custom X 定位为高强度、精准驱动的全山旗舰；正拱与碳纤强化取向更适合主动发力和高速控刃的进阶滑手。
+editorial_scores:
+  stability: 9.5
+  response: 9.6
+  float: 6.2
+  park: 5
+  forgiveness: 3.5
+  value: 5.8
+price:
+  min: 6017.26
+  max: 6017.26
+  currency: CNY
+specs:
+  seasonEvidence: Burton 官方商品页标注 2027 款，货号含 27WIN；归档为 2026/27。
+  lengthOptions: 150 / 154 / 156 / 158 / 162 / 158W / 162W / 166W
+  profile: Camber
+  profileFamily: camber
+  shape: Directional
+  flexType: Twin Flex
+  core: Dragonfly 600G Core with Multizone EGD
+  fiberglass: 45° Carbon Highlights High Voltage
+  base: Sintered WFO
+  scenes:
+    - all-mountain
+    - carving
+  priceCheckedAt: 2026-10-18
+  officialPrice: USD 899.95
+  priceMarket: Burton 美国官方 2026/27 商品页
+  priceSource: https://www.burton.com/en-us/products/mens-burton-custom-x-camber-snowboard-106891
+  exchangeRate: EUR/USD 1.1253；EUR/CNY 7.5240（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: Burton 美国官方 2026/27 商品页挂牌 USD 899.95，按 ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240 折算约 CNY 6017.26。此为美国官方挂牌价的人民币折算参考，不是中国售价；税费、汇兑、运输及进口费用未计。
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/106891CA03_1.webp?v=1791989438&width=2880"
+    kind: face
+    alt: "Men's Custom X Camber Snowboard | Burton 2027 商品图"
+    source: 品牌官网商品页主图；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.burton.com/en-us/products/mens-burton-custom-x-camber-snowboard-106891
+status: published

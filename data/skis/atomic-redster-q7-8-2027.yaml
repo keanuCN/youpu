@@ -69,6 +69,13 @@ images:
     alt: Atomic Redster Q7.8 Revoshock C 2026/27 官方雪板套装图
     source: Atomic 官方产品页（图片使用授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 7.7
+  stability: 7.7
+  agility: 8
+  softSnow: 5.3
+  versatility: 7.5
+  forgiveness: 7
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/products/redster-q7-8-revoshock-c-mi-12-gw-aa7470-202600

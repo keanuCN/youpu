@@ -1,0 +1,49 @@
+slug: volkl-peregrine-72-2027
+category: skis
+brand: volkl
+model: Peregrine 72
+year: 2027
+title: Völkl Peregrine 72 2026/27
+price:
+  min: 8692.02
+  max: 8692.02
+  currency: CNY
+one_liner: 72 mm 腰宽的雪道全山刻滑系统板；3D Radius、Tailored Carbon Tips 与多层木芯，官方定位覆盖硬雪和混合雪况。
+specs:
+  lengthOptions: 158 / 163 / 168 / 173 / 178 cm
+  waistWidth: 72
+  turnRadius: 13.6
+  turnRadiusReferenceLength: 168 cm
+  sidecutDimensions: "各长度均为 122-72-103 mm；163 cm 起官方逐段半径/重量见 sizeSpecs。"
+  profile: Tip & Tail Rocker
+  core: Multilayer Woodcore
+  construction: Full ABS Sidewall；3D.Glass；Full Titanal（官方技术介绍）
+  technologies: Tailored Carbon Tips；3D Radius Sidecut；P-Tex 4504 Base；Serial Finish；Fully Structured
+  terrain: 雪道 / 硬雪 / 混合雪况
+  skierLevel: 中级至专家
+  bindingSetup: 商品可选择含或不含 MARKER R-Motion-T 12 系统固定器；页面预装 rMotion Toolless interface
+  geometryNotes: 官网列出全部长度和每个长度的三段半径：158/16.8-11.8-14.2、163/18.1-12.7-15.2、168/19.4-13.6-16.2、173/20.7-14.5-17.3、178/22.2-15.5-18.4 m。绑定配置选择会影响重量，未记录未显示的重量值。
+  seasonEvidence: Völkl 官方商品页标题为 Peregrine 72 Green Skis 2027，列出尺寸、结构与固定器接口。
+  sourceCheckedAt: 2026-10-17
+  officialPrice: USD 1,299.99（系统板页面挂牌价）
+  priceMarket: Völkl 美国官网；产品页含绑定选项
+  priceSource: https://volkl.com/en-us/p/peregrine-72-green-skis-v2610025
+  exchangeRateSource: ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240；折算 USD/CNY 6.686213
+  priceStatus: Völkl 美国官网 2027 款页面挂牌 USD 1,299.99，商品可选绑定配置；按 ECB 2026-10-16 汇率折合 CNY 8,692.02。具体价格配置按官网选择项为准；美国地区参考，不是中国售价，未计税费、运输、进口及支付汇兑成本。
+editorial_scores:
+  edgeGrip: 9
+  stability: 8.7
+  agility: 8
+  softSnow: 4.2
+  versatility: 7.1
+  forgiveness: 5.4
+data_source:
+  kind: official
+  origin_url: https://volkl.com/en-us/p/peregrine-72-green-skis-v2610025
+images:
+  - url: "https://cdn.media.amplience.net/s/k2skis/volkl_2627_peregrine-72-green_V2610025?w=1200&qlt=90&fmt=auto"
+    kind: face
+    alt: Völkl Peregrine 72 Green 2026/27 雪板商品图（货号 V2610025）
+    source: Völkl 官方商品页 Open Graph 图，文件名含 2627 与货号 V2610025；图片使用授权待核
+    sort_order: 0
+status: published

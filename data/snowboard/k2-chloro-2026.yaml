@@ -1,0 +1,60 @@
+slug: k2-chloro-2026
+category: snowboard
+brand: k2
+model: Chloro
+year: 2026
+title: K2 Chloro 2025/26
+one_liner: 面向初学者的女性全能 Twin 板，Twin Rocker 板型配 Aspen 木芯与 Extruded 2000 底板，Hybritech 结构减轻板头板尾摆动重量；官方标注为入门取向。
+editorial_scores:
+  stability: 5.8
+  response: 5.8
+  float: 5.8
+  park: 6.0
+  forgiveness: 9.1
+  value: 8.5
+price:
+  min: 1886.66
+  max: 3144.44
+  currency: CNY
+specs:
+  length: 146
+  effectiveEdge: 1160
+  sidecut: 7.5
+  waistWidth: 236
+  stanceSetback: 0
+  core: Aspen Core
+  fiberglass: Biax Fiberglass
+  base: Extruded 2000, Stone Finish
+  profile: Twin Rocker
+  profileFamily: rocker
+  shape: Twin / Traditional Shape
+  scenes:
+    - all-mountain
+    - freestyle
+  lengthOptions: 138 / 142 / 146 / 150 / 154
+  sidecutRadii: 7.50 m（146）
+  sizeSpecs:
+    - { size: "138", effectiveEdge: 1080, noseWidth: 273, waistWidth: 232, tailWidth: 273, sidecutRadii: "7.10 m", stanceWidth: "457 mm (18 in reference)", setback: 0 }
+    - { size: "142", effectiveEdge: 1110, noseWidth: 276, waistWidth: 234, tailWidth: 276, sidecutRadii: "7.30 m", stanceWidth: "483 mm (19 in reference)", setback: 0 }
+    - { size: "146", effectiveEdge: 1160, noseWidth: 280, waistWidth: 236, tailWidth: 280, sidecutRadii: "7.50 m", stanceWidth: "483 mm (19 in reference)", setback: 0 }
+    - { size: "150", effectiveEdge: 1190, noseWidth: 283, waistWidth: 238, tailWidth: 283, sidecutRadii: "7.70 m", stanceWidth: "508 mm (20 in reference)", setback: 0 }
+    - { size: "154", effectiveEdge: 1210, noseWidth: 286, waistWidth: 240, tailWidth: 286, sidecutRadii: "7.90 m", stanceWidth: "508 mm (20 in reference)", setback: 0 }
+  priceCheckedAt: 2026-10-16
+  officialPrice: USD 469.95 list; USD 281.97 sale
+  priceMarket: K2 美国官方商店
+  priceSource: https://k2snow.com/en-us/p/chloro-womens-snowboard-2526
+  exchangeRate: USD/CNY 6.6910（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/exchange/eurofxref/shared/pdf/2026/10/20261015.pdf
+  seasonEvidence: K2 官方美国商品页标题为 K2 Chloro Women's Snowboard 2026、URL 路径含 2526，列出 138/142/146/150/154 五个尺码；按 2025/26 雪季归档。官方分类为 All Mountain / Beginner。官方产品分类行 shape 为 Twin、shape notes 为 Traditional Shape；features 区把 profile 混标为 Catch Free Tune，档案按构造说明取 Twin Rocker，冲突保留在 raw 证据中。
+  priceStatus: 按 ECB 2026-10-15 USD/CNY 6.6910 折算，K2 美国官方商店显示 USD 281.97 折扣价约 CNY 1,886.66、USD 469.95 标价约 CNY 3,144.44。仅为美国页面折算参考，不代表中国售价；税费、汇兑和跨境费用未计。尺码表 SETBACK 列 5 个尺码全部标 CENTER，故档案记 stanceSetback 0，未套用其他型号的英寸 setback 口径。
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0670/5135/6456/files/2026-snowboard-chloro-snowboard-kb251092-1-kb251092.jpg?v=1775757041&width=1600&height=1600"
+    kind: face
+    alt: "K2 Chloro 2025/26 商品图"
+    source: "SkiEssentials 2026 款 SKU KB251092 商品页；型号、货号与雪季匹配，图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-us/p/chloro-womens-snowboard-2526
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

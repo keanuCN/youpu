@@ -1,0 +1,51 @@
+slug: stockli-laser-sl-2027
+category: skis
+brand: stockli
+model: Laser SL
+year: 2027
+title: Stöckli Laser SL 2026/27
+price:
+  min: 9021.28
+  max: 9021.28
+  currency: CNY
+one_liner: 短弯雪道刻滑板，Race Core 加强山毛榉比例；150–170 cm 版本板腰 66 mm，官方列逐长度半径。
+specs:
+  lengthOptions: 150 / 155 / 160 / 165 / 170 cm
+  waistWidth: 66
+  turnRadius: 13.6
+  turnRadiusReferenceLength: 165 cm
+  sidecutDimensions: "各长度均为 120-66-98 mm；半径：150/11.0、155/11.8、160/12.7、165/13.6、170/14.5 m。"
+  profile: 雪道竞速取向；官网型录未用统一 rocker 术语描述
+  core: Race Core（山毛榉 / 杨木，增加山毛榉比例）
+  construction: Sandwich System；Racing Sidewalls Black；Solid Metal Edge
+  technologies: FTC Flex Torsion Control；CPT Carbon Power Turn；FEC Full Edge Contact；SOC Size Optimized Construction
+  baseEdgeAngle: 1.0
+  sideEdgeAngle: 2.0
+  terrain: 雪道 / 短弯刻滑
+  skierLevel: 进阶至专家
+  bindingSetup: 裸板与绑定/板台为可选配置，具体组合按市场销售方案确认
+  geometryNotes: 尺寸及半径取自 Stöckli 2026/27 官方型录。官方未公开该型号逐长度重量，因此不录重量；“轻量化”不能从型录数据推出。
+  seasonEvidence: Stöckli 官方 Winter 2026/27 Workbook 列 Laser SL，型号货号 41010327-20，并列板长、截面、半径和结构技术。
+  sourceCheckedAt: 2026-10-17
+  officialPrice: EUR 1,199 起（Warehouse One 德国零售商 2027 Laser SL 套装起价，板台/绑定可选）
+  priceMarket: Warehouse One 德国零售商；2026/27 套装起价
+  priceSource: https://www.warehouse-one.de/stoeckli/laser-sl-ski-set-2027.html
+  exchangeRateSource: ECB 2026-10-16 EUR/CNY 7.5240
+  priceStatus: Warehouse One 列 2027 款 Laser SL Ski Set 起价 EUR 1,199，板台和绑定需选配；按 ECB 2026-10-16 汇率折合 CNY 9,021.28。德国零售套装起价，不是裸板价或中国售价；配置、库存及税费口径以商家页面为准，跨境费用另计。
+editorial_scores:
+  edgeGrip: 9.4
+  stability: 8.8
+  agility: 9.4
+  softSnow: 3
+  versatility: 5.2
+  forgiveness: 3.5
+data_source:
+  kind: official
+  origin_url: https://www.stoeckli.ch/media/contentmanager/content/File/Workbook-Winter-2026-27.pdf
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0831/7177/0663/files/LASER-SL-BIND-WRT-12.jpg?v=1760248758"
+    kind: face
+    alt: Stöckli Laser SL 2026/27 雪板商品图，含 WRT 固定器
+    source: PTO Ski 2026/27 商品页；此图为含 WRT 12 固定器的套装展示，图片使用授权待核
+    sort_order: 0
+status: published

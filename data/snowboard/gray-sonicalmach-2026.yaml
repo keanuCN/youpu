@@ -1,0 +1,64 @@
+slug: gray-sonicalmach-2026
+category: snowboard
+brand: gray
+model: SONICALMACH
+year: 2026
+title: GRAY SONICALMACH 2025/26
+one_liner: 原 MACH 系列于 25/26 雪季重设为 SONICALMACH，主打刻滑与平花结合的跑跳路线；低中速款和 Ver.C/长尺码旗舰款有不同结构与价格，和 SONICALMACH LT 是不同产品线。
+editorial_scores:
+  stability: 7.8
+  response: 8.4
+  float: 4.0
+  park: 3.0
+  forgiveness: 6.0
+  value: 6.8
+price:
+  min: 6336.24
+  max: 6755.55
+  currency: CNY
+specs:
+  length: 154
+  effectiveEdge: 1220
+  sidecut: 8.3
+  waistWidth: 250
+  stanceSetback: 15
+  shape: Directional
+  profile: Single Camber
+  profileFamily: camber
+  core: Wood core; Poplar/Bamboo construction varies by model and catalog grid
+  fiberglass: 3-ply 50/50 and 2-ply 65/35 laminates (catalog grid)
+  base: IS7500 Graphite
+  scenes:
+    - carving
+    - freestyle
+  lengthOptions: 146 / 151 / 154 / 155W / 154 Ver.C / 155W Ver.C / 158 / 160W / 163W
+  sidecutRadii: 8.7/8.3/9.0 m（154 cm；其他型号见尺码表）
+  sizeSpecs:
+    - { size: "146", overallLength: 1460, effectiveEdge: 1140, contactLength: 1090, noseWidth: 283, waistWidth: 240, tailWidth: 278, sidecutRadii: "7.6/7.2/7.8 m", sidecutOffset: -15, camber: 6.0, stanceWidth: "440-560 mm", setback: 5, stiffness: "N 4.0 / W 5.2 / T 4.1" }
+    - { size: "151", overallLength: 1510, effectiveEdge: 1190, contactLength: 1140, noseWidth: 290, waistWidth: 248, tailWidth: 285, sidecutRadii: "8.4/8.0/8.6 m", sidecutOffset: -15, camber: 6.0, stanceWidth: "480-600 mm", setback: 5, stiffness: "N 5.0 / W 6.2 / T 5.1" }
+    - { size: "154", overallLength: 1540, effectiveEdge: 1220, contactLength: 1180, noseWidth: 293, waistWidth: 250, tailWidth: 288, sidecutRadii: "8.7/8.3/9.0 m", sidecutOffset: -15, camber: 6.0, stanceWidth: "480-600 mm", setback: 5, stiffness: "N 6.5 / W 7.6 / T 6.6" }
+    - { size: "155W", overallLength: 1550, effectiveEdge: 1220, contactLength: 1180, noseWidth: 303, waistWidth: 260, tailWidth: 298, sidecutRadii: "8.7/8.3/9.0 m", sidecutOffset: -15, camber: 6.0, stanceWidth: "480-600 mm", setback: 5, stiffness: "N 6.5 / W 7.6 / T 6.6" }
+    - { size: "154 Ver.C", overallLength: 1540, effectiveEdge: 1220, contactLength: 1180, noseWidth: 293, waistWidth: 250, tailWidth: 288, sidecutRadii: "8.7/8.3/9.0 m", sidecutOffset: -15, camber: 6.0, stanceWidth: "480-600 mm", setback: 15, stiffness: "N 6.5 / W 8.0 / T 7.0" }
+    - { size: "155W Ver.C", overallLength: 1550, effectiveEdge: 1220, contactLength: 1180, noseWidth: 303, waistWidth: 260, tailWidth: 298, sidecutRadii: "8.7/8.3/9.0 m", sidecutOffset: -15, camber: 6.0, stanceWidth: "480-600 mm", setback: 15, stiffness: "N 6.5 / W 8.0 / T 7.0" }
+    - { size: "158", overallLength: 1580, effectiveEdge: 1245, contactLength: 1200, noseWidth: 295, waistWidth: 252, tailWidth: 288, sidecutRadii: "9.4/8.9/9.8 m", sidecutOffset: -20, camber: 8.0, stanceWidth: "500-620 mm", setback: 25, stiffness: "N 6.9 / W 8.4 / T 7.4" }
+    - { size: "160W", overallLength: 1600, effectiveEdge: 1255, contactLength: 1200, noseWidth: 304, waistWidth: 262, tailWidth: 297, sidecutRadii: "9.8/9.3/10.2 m", sidecutOffset: -20, camber: 8.0, stanceWidth: "500-620 mm", setback: 25, stiffness: "N 6.9 / W 8.4 / T 7.4" }
+    - { size: "163W", overallLength: 1630, effectiveEdge: 1290, contactLength: 1230, noseWidth: 303, waistWidth: 256, tailWidth: 288, sidecutRadii: "9.1/9.96 m (catalog entry)", sidecutOffset: -45, camber: 10.0, stanceWidth: "500-620 mm", setback: 35, stiffness: "N 7.3 / W 8.8 / T 7.8" }
+  priceCheckedAt: 2026-10-16
+  officialPrice: JPY 149600（税込；146/151/154/155W）；JPY 159500（税込；Ver.C/158/160W/163W）
+  priceMarket: GRAY 日本官方 2025/26 产品目录
+  priceSource: https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf
+  exchangeRate: EUR/JPY 177.06；EUR/CNY 7.4993（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  seasonEvidence: GRAY 官方 25/26 目录将 MACH 系列列名为 SONICALMACH，目录说明 25/26 经过结构和硬度重设；46/51/54/55w 为低中速跑跳款，Ver.C 与 58/60w/63w 为更偏高速刻滑款。此档案刻意不并入 SONICALMACH LT。
+  priceStatus: GRAY 日本官方目录列普通组含税 JPY 149600，Ver.C/长尺码组含税 JPY 159500；按 ECB 2026-10-15 汇率分别折算 CNY 6336.24 与 CNY 6755.55。历史日本标价参考，不是中国售价；跨境运输与进口费用未计。目录 63w 的侧切记为 9100/9960 mm，保留原始数据，不据此推测第三段数值。
+images:
+  - url: "https://gigaplus.makeshop.jp/dreamy1117/NewFolder1/gray26sonicalmach01.jpg"
+    kind: face
+    alt: GRAY SONICALMACH 2025/26 单板商品图
+    source: Pro Shop Dreamy 25/26 GRAY 商品页；图片使用授权待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf
+  snapshot_url: https://graysnowboards.co.jp/2025/02/03/25-26%E3%83%A2%E3%83%87%E3%83%AB-%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%83%BB%E8%8B%B1%E8%AA%9E%E7%89%88%EF%BC%89%E3%82%92%E6%8E%B2%E8%BC%89%E3%81%97/
+status: published

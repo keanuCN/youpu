@@ -1,0 +1,48 @@
+slug: wedze-500-mens-insulated-ski-pants-2026
+category: skiing-apparel
+brand: wedze
+model: 500 Men's Warm and Breathable Ski and Snowboard Trousers
+year: 2026
+title: WEDZE 男款 500 保暖透气滑雪裤
+one_liner: 15,000 mm 防水面料，重点部位防水接缝，60 g/m² 填充，官方舒适温度标注 -4°C；L 码重约 720 g。
+price:
+  min: 425.52
+  max: 531.93
+  currency: CNY
+specs:
+  garmentType: pants
+  fabric: 聚酯主面料与填充，含聚氨酯防水膜；官方称产品含 26% 再生聚酯
+  insulation: 60 g/m² 合成棉；品牌舒适温度标注 -4°C
+  seamTaping: critically-taped
+  waterproofMm: 15000
+  waterproofEvidence: WEDZE 英国官方页面摘要称接缝部分防水，详情描述称接缝和拉链具防水处理；按重点部位防护记录，不提升为全压胶。
+  venting: true
+  recco: false
+  membrane: 聚氨酯防水膜
+  breathable: true
+  features: 两个插手袋、一个大腿袋；通风拉链；内置雪裙；可调腰带；裤脚加固；裤袢兼容背带；官方标注 L 码约 720 g。
+  weightG: 720
+  weightSize: L
+  availableSizes: [ XS, S ]
+  sizeGuide: 2026-10-17 商品页当前仅显示 XS、S 选项，属于当时页面可选项快照，不代表完整尺码范围。官网建议选择平时尺码；未取得对应身体围度或成衣测量表。
+  seasonEvidence: 2026-10-17 官方页面标注 Last chance，未直接标明具体雪季；year 2026 仅为档案年份。
+  weather: 官方标注适合寒冷天气，舒适温度 -4°C；实际体感受内搭、活动强度和天气影响。
+  styleCode: Decathlon 商品 ID 8545714
+  priceCheckedAt: 2026-10-17
+  officialPrice: GBP 59.99
+  regionalSalePrice: GBP 47.99
+  priceMarket: Decathlon 英国官网；黑色变体商品 ID 8545714
+  priceSource: https://www.decathlon.co.uk/p/mens-very-warm-and-breathable-ski-and-snowboard-trousers-500-black/141936/c382c344m8545714
+  priceStatus: 2026-10-17 页面显示促销 GBP 47.99、原价 GBP 59.99；按 ECB 2026-10-13 GBP 0.84460 / EUR、CNY 7.4890 / EUR 折合约 CNY 425.52–531.93。为英国地区标价区间，不是中国售价，未含结账时可能产生的税费、配送和汇兑费用。
+  availableColors: 黑色（本记录变体）；商品页列出多个颜色
+  imageEvidence: 官方图库首图核查时取图失败，未记录未确认可用的图片链接。
+data_source:
+  kind: official
+  origin_url: https://www.decathlon.co.uk/p/mens-very-warm-and-breathable-ski-and-snowboard-trousers-500-black/141936/c382c344m8545714
+images:
+  - url: "https://contents.mediadecathlon.com/p1691830/k%24503109d1669e2eebddd70ab9948dd4e7/picture.jpg?format=auto&f=1920x0"
+    kind: face
+    alt: WEDZE 男款 500 滑雪裤商品图（货号 8545714）
+    source: Decathlon 官方商品页，货号 8545714；图片使用授权待核
+    sort_order: 0
+status: published

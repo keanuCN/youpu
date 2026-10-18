@@ -1,0 +1,48 @@
+slug: burton-feelgood-camber-2027
+category: snowboard
+brand: burton
+model: Feelgood Camber
+year: 2027
+title: Women's Feelgood Camber Snowboard | Burton 2027
+one_liner: Feelgood Camber 是偏稳定和有力反馈的女性全山板，适合在压雪道刻滑、追线和自然地形间切换；不要与混合板型的 Flying V 版本混为一谈。
+editorial_scores:
+  stability: 8.5
+  response: 8.3
+  float: 6.5
+  park: 6.5
+  forgiveness: 6.2
+  value: 6.3
+price:
+  min: 4345.71
+  max: 4345.71
+  currency: CNY
+specs:
+  seasonEvidence: Burton 官方商品页标注 2027 款，货号含 27WIN；归档为 2026/27。
+  lengthOptions: 142 / 146 / 149 / 152
+  profile: Camber
+  profileFamily: camber
+  shape: Directional
+  flexType: Twin Flex
+  core: Super Fly II 700G Core with Dualzone EGD
+  fiberglass: Women's Specific Triax with Carbon I-Beam
+  base: Sintered WFO
+  scenes:
+    - all-mountain
+    - carving
+  priceCheckedAt: 2026-10-18
+  officialPrice: USD 649.95
+  priceMarket: Burton 美国官方 2026/27 商品页
+  priceSource: https://www.burton.com/en-us/products/womens-burton-feelgood-camber-snowboard-106911
+  exchangeRate: EUR/USD 1.1253；EUR/CNY 7.5240（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: Burton 美国官方 2026/27 商品页挂牌 USD 649.95，按 ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240 折算约 CNY 4345.71。此为美国官方挂牌价的人民币折算参考，不是中国售价；税费、汇兑、运输及进口费用未计。
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0804/4062/3361/files/1069119E1V_1.webp?v=1791989442&width=2880"
+    kind: face
+    alt: "Women's Feelgood Camber Snowboard | Burton 2027 商品图"
+    source: 品牌官网商品页主图；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.burton.com/en-us/products/womens-burton-feelgood-camber-snowboard-106911
+status: published

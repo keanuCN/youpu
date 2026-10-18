@@ -1,0 +1,36 @@
+{
+  "brand": "K2",
+  "model": "Freeloader",
+  "season": "2025/26",
+  "gender": "Unisex",
+  "sourceUrl": "https://k2snow.com/en-us/p/freeloader-splitboard-snowboard-2526",
+  "retrievedAt": "2026-10-16",
+  "pageTitle": "K2 Freeloader Unisex Splitboard Package 2026 | K2 Skis and K2 Snowboarding",
+  "seasonEvidence": "K2 官方美国商品页标题为 'K2 Freeloader Unisex Splitboard Package 2026'，URL 路径含 2526，页面列出 147–166W 八个尺码，故归档为 2025/26。",
+  "officialUsd": { "sale": 779.97 },
+  "category": "Freeride, Powder, Splitboards",
+  "ability": ["Advanced", "Expert"],
+  "bundleNote": "官方页标题将本款标为 'Splitboard Package'；页面未拆分列出包含的板体与配件清单，档案按整包记录，不推测套包内具体附件。",
+  "sizeChart": [
+    { "size": "147", "effectiveEdgeCm": 108, "noseWaistTailCm": [28.5, 23.8, 28.1], "sidecutM": 7.7, "stanceIn": 20, "setbackIn": 0.75, "weightLb": "90 - 160+", "weightKg": "41 - 73+" },
+    { "size": "151", "effectiveEdgeCm": 111, "noseWaistTailCm": [29.0, 24.2, 28.6], "sidecutM": 7.7, "stanceIn": 21, "setbackIn": 0.75, "weightLb": "120 - 190+", "weightKg": "54 - 86+" },
+    { "size": "156", "effectiveEdgeCm": 115, "noseWaistTailCm": [29.7, 24.8, 29.3], "sidecutM": 7.7, "stanceIn": 22, "setbackIn": 0.75, "weightLb": "120 - 190+", "weightKg": "54 - 86+" },
+    { "size": "159", "effectiveEdgeCm": 117, "noseWaistTailCm": [29.9, 25.0, 29.5], "sidecutM": 7.7, "stanceIn": 22, "setbackIn": 0.75, "weightLb": "130 - 210+", "weightKg": "59 - 95+" },
+    { "size": "162", "effectiveEdgeCm": 119, "noseWaistTailCm": [30.2, 25.2, 29.8], "sidecutM": 7.7, "stanceIn": 23, "setbackIn": 0.75, "weightLb": "130 - 210+", "weightKg": "59 - 95+" },
+    { "size": "158W", "effectiveEdgeCm": 116, "noseWaistTailCm": [30.5, 25.6, 30.1], "sidecutM": 7.7, "stanceIn": 22, "setbackIn": 0.75, "weightLb": "130 - 210+", "weightKg": "59 - 95+" },
+    { "size": "163W", "effectiveEdgeCm": 120, "noseWaistTailCm": [31.4, 26.4, 31.0], "sidecutM": 7.7, "stanceIn": 23, "setbackIn": 0.75, "weightLb": "130 - 210+", "weightKg": "59 - 95+" },
+    { "size": "166W", "effectiveEdgeCm": 122, "noseWaistTailCm": [31.9, 26.9, 31.5], "sidecutM": 7.7, "stanceIn": 23, "setbackIn": 0.75, "weightLb": "140 - 230+", "weightKg": "64 - 104+" }
+  ],
+  "features": {
+    "profile": "Combination Camber (Directional Camber Profile per feature block)",
+    "shape": "Directional / Traditional Shape, Tapered Directional",
+    "core": "Paulownia Tour Lite Core",
+    "glass": "ICG 20 Triax Glass with Carbon",
+    "base": "Carbon Infused 5500 Sintered, Stone Finish",
+    "topsheet": "Snophobic Topsheet",
+    "clips": "Karakoram Ultraclips",
+    "inserts": "Splitrack Insert Binding Mounting"
+  },
+  "specConflict": "官方 features 分类行把 Snowboard Profile 标为 'Combination Camber'，而同页 'Flex / Construction / Profile' 图注写作 'Directional Camber Profile'。档案按分类行采用 Combination Camber，并把矛盾记录在此，不把两者合并成单一确定值。",
+  "notes": "Splitrack 为分离板专用导轨嵌入系统，与常规 2x4 嵌入不同；档案 inserts 保留官方原文，未套用 2 x 4。侧切全尺码均为 7.7 m，官方表未按尺码变化。官方页未显示划线原价，故只记录折扣价。"
+}

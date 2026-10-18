@@ -1,0 +1,54 @@
+slug: gray-quadra-ii-2026
+category: snowboard
+brand: gray
+model: QUADRA II
+year: 2026
+title: GRAY QUADRA II 2025/26
+one_liner: GRAY 刻滑线中最窄的超长半径板，五码 158–189 cm、腰宽仅 190–200 mm；ALLFLEX 专用嵌入配 0.4t Titanal，80/89 码侧切达 15.4–20.4 m，退格最深 80 mm 面向大回转与高速长弧。
+editorial_scores:
+  stability: 9.6
+  response: 9.7
+  float: 1.5
+  park: 1.0
+  forgiveness: 2.0
+  value: 4.5
+price:
+  min: 3346.01
+  max: 3680.61
+  currency: CNY
+specs:
+  length: 164
+  effectiveEdge: 1520
+  sidecut: 9.2
+  waistWidth: 200
+  stanceSetback: 60
+  shape: Directional
+  profile: Positive Vario Camber
+  profileFamily: camber
+  core: ASPEN Core
+  fiberglass: 0.4t Titanal / 1ply 65/35
+  base: IS7500 Graphite
+  scenes:
+    - carving
+  lengthOptions: QUADRA II 58 / 64 / 78 / 80 / 89
+  sidecutRadii: 9.2/10.5/11.8 m（QUADRA II 64，三段多半径）
+  sizeSpecs:
+    - { size: "QUADRA II 58", overallLength: 1580, effectiveEdge: 1460, contactLength: 1360, noseWidth: 260, waistWidth: 190, tailWidth: 238, sidecutRadii: "7.2/8.2/9.6 m", sidecutOffset: -30, camber: 8.0, setback: 50, inserts: "ALLFLEX only" }
+    - { size: "QUADRA II 64", overallLength: 1640, effectiveEdge: 1520, contactLength: 1420, noseWidth: 262, waistWidth: 200, tailWidth: 239, sidecutRadii: "9.2/10.5/11.8 m", sidecutOffset: -50, camber: 10.0, setback: 60, inserts: "ALLFLEX only" }
+    - { size: "QUADRA II 78", overallLength: 1780, effectiveEdge: 1665, contactLength: 1540, noseWidth: 254, waistWidth: 190, tailWidth: 230, sidecutRadii: "9.4/11.4/15.2 m", sidecutOffset: -30, camber: 10.0, setback: 80, inserts: "ALLFLEX only" }
+    - { size: "QUADRA II 80", overallLength: 1800, effectiveEdge: 1685, contactLength: 1560, noseWidth: 250, waistWidth: 200, tailWidth: 229, sidecutRadii: "17.8/16.8/19.4 m", sidecutOffset: -100, camber: 10.0, setback: 80, inserts: "ALLFLEX only" }
+    - { size: "QUADRA II 89", overallLength: 1890, effectiveEdge: 1775, contactLength: 1650, noseWidth: 248, waistWidth: 200, tailWidth: 234, sidecutRadii: "15.4/17.4/20.4 m", sidecutOffset: -30, camber: 12.0, setback: 80, inserts: "ALLFLEX only" }
+  priceCheckedAt: 2026-10-16
+  officialPrice: JPY 79000（税抜）；JPY 86900（税込）；目录同区另列 JPY 172000 / JPY 189200（与 QUADRA II 64 ALLFLEX 并排）
+  priceMarket: GRAY 日本官方 2025/26 产品目录
+  priceSource: https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf
+  exchangeRate: EUR/JPY 177.06；EUR/CNY 7.4993（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  seasonEvidence: GRAY 官方目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / CARVING CATEGORY'，内页另有 'GRAY / 25-26' 字样，故按 2025/26 雪季归档。目录将 QUADRA II 58/64/78/80/89 列入刻滑类目，与 QUADRA（57/63/72/85）为并列的两个不同型号，档案只收 QUADRA II。目录 Stance Width 整行为 ---，档案保持缺省未补造；嵌入为 ALLFLEX 专用，未套用常规 2x4。
+  priceStatus: GRAY 日本官方 25/26 目录在该型号表下方列税前 JPY 79,000、含税 JPY 86,900，同区另有 JPY 172,000 / JPY 189,200 与 'QUADRA II 64 ALLFLEX' 并排。档案以 79,000/86,900 为主价档，按 ECB 2026-10-15 EUR/JPY 177.06、EUR/CNY 7.4993 折算约 CNY 3,346.01 / 3,680.61；172,000 档是否覆盖全部尺码未经目录确认，故未下推、未计入区间。历史日本标价参考，不是中国售价；跨境运输与进口费用未计。
+images: []
+data_source:
+  kind: official
+  origin_url: https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf
+  snapshot_url: https://graysnowboards.co.jp/2025/02/03/25-26%E3%83%A2%E3%83%87%E3%83%AB-%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%83%BB%E8%8B%B1%E8%AA%9E%E7%89%88%EF%BC%89%E3%82%92%E6%8E%B2%E8%BC%89%E3%81%97/
+status: published

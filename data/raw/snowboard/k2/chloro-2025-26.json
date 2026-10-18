@@ -1,0 +1,32 @@
+{
+  "brand": "K2",
+  "model": "Chloro",
+  "season": "2025/26",
+  "gender": "Women's",
+  "sourceUrl": "https://k2snow.com/en-us/p/chloro-womens-snowboard-2526",
+  "retrievedAt": "2026-10-16",
+  "pageTitle": "K2 Chloro Women's Snowboard 2026 | K2 Skis and K2 Snowboarding",
+  "seasonEvidence": "K2 官方美国商品页标题为 'K2 Chloro Women's Snowboard 2026'，URL 路径含 2526，页面正文按 25/26 雪季描述并列出 138/142/146/150/154 五个尺码，故归档为 2025/26。",
+  "officialUsd": { "sale": 281.97, "list": 469.95 },
+  "category": "All Mountain",
+  "ability": ["Beginner"],
+  "sizeChart": [
+    { "size": "138", "effectiveEdgeCm": 108, "noseWaistTailCm": [27.3, 23.2, 27.3], "sidecutM": 7.1, "stanceIn": 18, "setback": "CENTER", "weightLb": "90-160+", "weightKg": "41-73+" },
+    { "size": "142", "effectiveEdgeCm": 111, "noseWaistTailCm": [27.6, 23.4, 27.6], "sidecutM": 7.3, "stanceIn": 19, "setback": "CENTER", "weightLb": "90-160+", "weightKg": "41-73+" },
+    { "size": "146", "effectiveEdgeCm": 116, "noseWaistTailCm": [28.0, 23.6, 28.0], "sidecutM": 7.5, "stanceIn": 19, "setback": "CENTER", "weightLb": "100-170+", "weightKg": "45-77+" },
+    { "size": "150", "effectiveEdgeCm": 119, "noseWaistTailCm": [28.3, 23.8, 28.3], "sidecutM": 7.7, "stanceIn": 20, "setback": "CENTER", "weightLb": "100-170+", "weightKg": "45-77+" },
+    { "size": "154", "effectiveEdgeCm": 121, "noseWaistTailCm": [28.6, 24.0, 28.6], "sidecutM": 7.9, "stanceIn": 20, "setback": "CENTER", "weightLb": "110-190+", "weightKg": "50-86+" }
+  ],
+  "features": {
+    "profile": "Twin Rocker",
+    "shape": "Twin / Traditional Shape",
+    "shapeNotes": "Traditional Shape",
+    "core": "Aspen Core",
+    "glass": "Biax Fiberglass",
+    "base": "Extruded 2000, Stone Finish",
+    "additive": "Hybritech Construction",
+    "tune": "Catch-Free Tune (2 deg bevel, factory detuned tip and tail)",
+    "inserts": "2 x 4"
+  },
+  "notes": "官方页 features 区将 profile 列作 'Catch Free Tune' 并混有 'Twin Rocker' 的构造/板型标注；档案按构造说明取 Twin Rocker 为 profile、Catch-Free Tune 为调校项，保留原始分类不合并。尺码表 SETBACK 列全部标 'CENTER'，与 K2 其他型号的英寸 setback 口径不同，未换算成毫米。"
+}

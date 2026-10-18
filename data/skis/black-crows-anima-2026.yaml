@@ -1,0 +1,48 @@
+slug: black-crows-anima-2026
+category: skis
+brand: black-crows
+model: Anima
+year: 2026
+title: Black Crows Anima（官网现行版本；年款待核）
+price:
+  min: 7348.15
+  max: 7348.15
+  currency: CNY
+one_liner: 115 mm 腰宽的大山粉雪板；双摇臂与脚下短传统反拱兼顾浮力、转向与硬雪接触。
+specs:
+  lengthOptions: 176.6 / 182.1 / 189.2 / 194.4 cm
+  waistWidth: 115
+  turnRadius: 19
+  profile: Double Rocker；Classic Short Camber
+  core: Poplar / Fiberglass
+  construction: Semi-cap；ABS Sidewalls
+  technologies: Carbon / Kevlar Tape；推荐安装点 -6 cm
+  terrain: 大山 / 粉雪 / 自由滑
+  skierLevel: 进阶至专家
+  bindingSetup: 裸板；固定器需另选或单独确认商品配置
+  geometryNotes: Black Crows 官方页面列出长度及 115 mm 腰宽、19 m 半径；半径和 2375 g 重量未绑定明确板长，故重量不录入、半径不标参考长度。逐长度头腰尾尺寸不完整披露。
+  seasonEvidence: Black Crows 官方现行产品页列 Anima 115 mm、四种长度、19 m 半径和结构；未明确雪季，精确年款待官方目录核实。
+  sourceCheckedAt: 2026-10-17
+  seasonStatus: 官网当前产品版本；季节年份待型录确认
+  officialPrice: USD 1,099（Black Crows 美国官网裸板挂牌价）
+  priceMarket: Black Crows 美国官网；裸板
+  priceSource: https://www.black-crows.com/us/en/p/anima/102143-189.html
+  exchangeRateSource: ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240；折算 USD/CNY 6.686213
+  priceStatus: 美国官网 Anima 裸板挂牌 USD 1,099；按 ECB 2026-10-16 汇率折合 CNY 7,348.15。官网库存显示售罄，价格为地区挂牌参考，不代表可购或中国售价；税费、运输及进口成本另计。产品雪季仍待核实。
+editorial_scores:
+  edgeGrip: 6.2
+  stability: 8.1
+  agility: 6.6
+  softSnow: 9.5
+  versatility: 7.9
+  forgiveness: 6.4
+data_source:
+  kind: official
+  origin_url: https://www.black-crows.com/us/en/p/anima/102143-189.html
+images:
+  - url: "https://images.snowleader.com/media/catalog/product/cache/1/image/0dc2d03fe217f8c83829496872af24a0/B/L/BLAC00987_01_202508200437.jpg"
+    kind: face
+    alt: Black Crows Anima 2026 雪板商品图
+    source: Snowleader 2026 Anima 商品页；图片使用授权待核
+    sort_order: 0
+status: published

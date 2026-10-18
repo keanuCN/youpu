@@ -1,0 +1,57 @@
+slug: gray-despe-wood-32-43-2026
+category: snowboard
+brand: gray
+model: DESPE WOOD 32/38/43
+year: 2026
+title: GRAY DESPE WOOD 32/38/43 2025/26
+one_liner: 刻滑木皮系列 DESPE WOOD 的短尺码组，三码 132–143 cm、腰宽仅 214–232 mm；Poplar Light 木芯配三段多半径侧切与 Vario Camber，鼻翘 36.5 mm 明显高于尾翘 24.9 mm。
+editorial_scores:
+  stability: 7.6
+  response: 8.5
+  float: 5.2
+  park: 2.0
+  forgiveness: 7.2
+  value: 6.4
+price:
+  min: 4193.10
+  max: 4612.41
+  currency: CNY
+specs:
+  length: 138
+  effectiveEdge: 1180
+  sidecut: 7.2
+  waistWidth: 220
+  stanceSetback: 20
+  shape: Directional
+  profile: Directional Vario Camber
+  profileFamily: camber
+  core: Poplar Light Core
+  fiberglass: 3ply 50/50 + 2ply 65/35
+  base: P-TEX3000 Graphite
+  scenes:
+    - carving
+  lengthOptions: DESPE WOOD 32 / 38 / 43
+  sidecutRadii: 7.2/6.8/7.6 m（DESPE WOOD 38，三段多半径）
+  sizeSpecs:
+    - { size: "DESPE WOOD 32", overallLength: 1320, effectiveEdge: 1120, contactLength: 1010, noseWidth: 264, waistWidth: 214, tailWidth: 254, sidecutRadii: "6.5/6.2/6.8 m", sidecutOffset: -20, camber: 6.0, stanceWidth: "380-460 mm", setback: 20, stiffness: "N 2.3 / W 3.8 / T 4.8", inserts: "10+10" }
+    - { size: "DESPE WOOD 38", overallLength: 1380, effectiveEdge: 1180, contactLength: 1070, noseWidth: 270, waistWidth: 220, tailWidth: 260, sidecutRadii: "7.2/6.8/7.6 m", sidecutOffset: -20, camber: 6.0, stanceWidth: "400-480 mm", setback: 20, stiffness: "N 2.8 / W 4.3 / T 5.3", inserts: "10+10" }
+    - { size: "DESPE WOOD 43", overallLength: 1430, effectiveEdge: 1230, contactLength: 1120, noseWidth: 284, waistWidth: 232, tailWidth: 272, sidecutRadii: "7.7/7.3/8.1 m", sidecutOffset: -30, camber: 7.0, stanceWidth: "420-500 mm", setback: 30, stiffness: "N 3.3 / W 4.8 / T 5.8", inserts: "10+10" }
+  priceCheckedAt: 2026-10-16
+  officialPrice: JPY 99000（税抜）；JPY 108900（税込）
+  priceMarket: GRAY 日本官方 2025/26 产品目录
+  priceSource: https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf
+  exchangeRate: EUR/JPY 177.06；EUR/CNY 7.4993（ECB 2026-10-15）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  seasonEvidence: GRAY 官方目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / CARVING CATEGORY'，内页另有 '25/26 GRAY SNOWBOARDS' 字样，故按 2025/26 雪季归档。目录把 DESPE WOOD 分为 32/38/43 与 48/53n/54/58/62 两个尺码表并给不同价档；本档案只收 32/38/43 组。图注区同时出现 Directional Vario Camber 与 Single Camber，档案取前者并保留冲突。此档案与既有 gray-despe-wood-2027 属不同雪季，未覆盖该 2027 档案。
+  priceStatus: GRAY 日本官方 25/26 目录图例区把 DESPE WOOD 32/38/43 与 DSPRD micro/mini 并列，随后列出两对价格；本档案按三码组取税前 JPY 99,000、含税 JPY 108,900，按 ECB 2026-10-15 EUR/JPY 177.06、EUR/CNY 7.4993 折算约 CNY 4,193.10 / 4,612.41。同区 JPY 69,000 / 75,900 归 DSPRD micro/mini，未并入本档。历史日本标价参考，不是中国售价；跨境运输与进口费用未计。
+images:
+  - url: "https://tshop.r10s.jp/follows1/cabinet/2526snowboard/25gray-despe-wood-1.jpg"
+    kind: face
+    alt: GRAY DESPE WOOD 32/38/43 2025/26 单板商品图
+    source: follows 25/26 GRAY 商品页，图片展示 32/38/43 尺码组；图片使用授权待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf
+  snapshot_url: https://graysnowboards.co.jp/2025/02/03/25-26%E3%83%A2%E3%83%87%E3%83%AB-%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%83%BB%E8%8B%B1%E8%AA%9E%E7%89%88%EF%BC%89%E3%82%92%E6%8E%B2%E8%BC%89%E3%81%97/
+status: published

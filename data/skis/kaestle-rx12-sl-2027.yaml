@@ -1,0 +1,54 @@
+slug: kaestle-rx12-sl-2027
+category: skis
+brand: kaestle
+model: RX12 SL
+year: 2027
+title: Kästle RX12 SL 2026/27
+price:
+  min: 11232.84
+  max: 11232.84
+  currency: CNY
+one_liner: Kästle 雪道竞速系列短弯型号；155 cm 页面参考为 122-68-104 mm、11 m、1480 g/单只，双层 Titanal 与 Infini-Core Race。
+specs:
+  lengthOptions: 155 / 160 / 165 / 170 cm
+  waistWidth: 68
+  turnRadius: 11
+  turnRadiusReferenceLength: 155 cm
+  sidecutDimensions: "官方所选 155 cm：122-68-104 mm；其余板长的逐长度几何未在当前页面显示。"
+  profile: Standard Camber；Fast Grip shovel / tail
+  core: Infini Core RACE（杨木 / 山毛榉）+ Carbon-Glassfiber Winded Core
+  construction: Sandwich Sidewall / Full Race Sidewall；Double Titanal；Hollowtech Race
+  technologies: Hollowtech Race；Race Finish；Armoclad Topsheet；Metal Tip Protector
+  weightPerSki: 1480
+  weightReferenceLength: 155 cm
+  baseEdgeAngle: 0.6
+  sideEdgeAngle: 87
+  terrain: 雪道 / 短弯 / 硬雪
+  skierLevel: 进阶至专家
+  bindingSetup: 可选 Flat 裸板或 K14 Freeflex ST + Raceplate EVO 14；页面 SKU SR12S26RP5502 对应绑定配置
+  weightBasis: Kästle 官方页面当前选择 155 cm 时标注 1480 g/Ski；不推算其他长度重量。
+  geometryNotes: 官网显示 26/27，新款型号可选 155/160/165/170 cm；当前加载的详细尺寸、重量和 11 m 半径对应 155 cm，不能套用到其他长度。
+  seasonEvidence: Kästle 美国官网商品标题 NEW 26/27，SKU SR12S26RP5502。
+  sourceCheckedAt: 2026-10-17
+  officialPrice: USD 1,680（当前页面所选绑定版）
+  priceMarket: Kästle 美国官网；页面可选 Flat 或 K14 系统，当前价格对应所选绑定版
+  priceSource: https://us.kaestle.com/products/rx12-sl-26
+  exchangeRateSource: ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240；折算 USD/CNY 6.686213
+  priceStatus: 美国官网页面当前选择 K14 Freeflex ST 绑定套装时显示 USD 1,680；按 ECB 2026-10-16 汇率折合 CNY 11,232.84。此价对应含绑定选项，裸板价格不同；美国地区参考，不是中国售价，税费及跨境成本另计。
+editorial_scores:
+  edgeGrip: 9.4
+  stability: 8.8
+  agility: 9.4
+  softSnow: 3
+  versatility: 5.2
+  forgiveness: 3.5
+data_source:
+  kind: official
+  origin_url: https://us.kaestle.com/products/rx12-sl-26
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0586/8352/3115/files/rx12sl_01_9d86a215-e207-4b57-abbe-855ada96510b.jpg?v=1781264091&width=2048"
+    kind: face
+    alt: Kästle RX12 SL 2026/27 雪板商品图
+    source: Kästle 官方商品页，页面标注 NEW 26/27；图片使用授权待核
+    sort_order: 0
+status: published

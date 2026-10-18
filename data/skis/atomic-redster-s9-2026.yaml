@@ -59,6 +59,13 @@ images:
     alt: Atomic Redster S9 Revoshock S 2025/26 官方雪板商品图
     source: Atomic 官方商品页（图片使用授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 9.4
+  stability: 8.8
+  agility: 9.4
+  softSnow: 3
+  versatility: 5.2
+  forgiveness: 3.7
 data_source:
   kind: official
   origin_url: https://www.sport-hun.at/wp-content/uploads/2025/03/Atomic-Katalog-2526.pdf

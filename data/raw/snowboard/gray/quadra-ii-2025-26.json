@@ -1,0 +1,38 @@
+{
+  "brand": "GRAY",
+  "model": "QUADRA II",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "sourceUrlEnglish": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "GRAY 官方 25/26 目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / CARVING CATEGORY'，内页含 'GRA Y / 25-26' 字样。",
+  "category": "Carving",
+  "positioning": "刻滑类目中最窄的超长半径线；板型标注同时出现 Single Camber 与 Positive Vario Camber + TripleRadius（见 conflicts）。边刃 1.8mm/48R CWL，侧墙角 15 度。目录标 0.4t Titanal / 1ply 65/35。",
+  "priceGroups": [
+    { "models": ["QUADRA II 58", "QUADRA II 64"], "pretaxJpy": 79000, "taxIncludedJpy": 86900, "note": "目录在该型号表下方直接列出 '\\24579,000 \\24586,900' 与其后的 'I I 64 ALLFLEX \\245172,000 \\245189,200'。" },
+    { "models": ["QUADRA II 64 (ALLFLEX)"], "pretaxJpy": 172000, "taxIncludedJpy": 189200, "note": "同一区域内 ALLFLEX 规格档，仅出现在 64 标注旁，是否为全尺码选装价未确认。" }
+  ],
+  "priceSourceNote": "费用取自该型号表正下方区域：'QU ADR A II \\rS \\rC GRA Y / 25-26 I I 64 ALLFLEX \\24579,000 \\24586,900 \\245172,000 \\245189,200'。两对价格在该区域并列出现，档案按原文并存记录：79,000/86,900 为基准档，172,000/189,200 与 'I I 64 ALLFLEX' 相邻。因目录未明确 172,000 档覆盖哪些尺码，档案将其标注为仅 64 已确认、不下推至全部尺码。\\245 为日元符号编码，前值税前、后值含税。",
+  "sizeTable": [
+    { "size": "QUADRA II 58", "overallLengthMm": 1580, "effectiveEdgeMm": 1460, "contactLengthMm": 1360, "noseWidthMm": 260, "waistWidthMm": 190, "tailWidthMm": 238, "sidecutMm": [7200, 8200, 9600], "offsetMm": -30, "camberMm": 8.0, "rockerMm": null, "stanceWidth": null, "setbackMm": 50, "insertQuantity": "ALLFLEX only" },
+    { "size": "QUADRA II 64", "overallLengthMm": 1640, "effectiveEdgeMm": 1520, "contactLengthMm": 1420, "noseWidthMm": 262, "waistWidthMm": 200, "tailWidthMm": 239, "sidecutMm": [9200, 10500, 11800], "offsetMm": -50, "camberMm": 10.0, "rockerMm": null, "stanceWidth": null, "setbackMm": 60, "insertQuantity": "ALLFLEX only" },
+    { "size": "QUADRA II 78", "overallLengthMm": 1780, "effectiveEdgeMm": 1665, "contactLengthMm": 1540, "noseWidthMm": 254, "waistWidthMm": 190, "tailWidthMm": 230, "sidecutMm": [9400, 11400, 15200], "offsetMm": -30, "camberMm": 10.0, "rockerMm": null, "stanceWidth": null, "setbackMm": 80, "insertQuantity": "ALLFLEX only" },
+    { "size": "QUADRA II 80", "overallLengthMm": 1800, "effectiveEdgeMm": 1685, "contactLengthMm": 1560, "noseWidthMm": 250, "waistWidthMm": 200, "tailWidthMm": 229, "sidecutMm": [17800, 16800, 19400], "offsetMm": -100, "camberMm": 10.0, "rockerMm": null, "stanceWidth": null, "setbackMm": 80, "insertQuantity": "ALLFLEX only" },
+    { "size": "QUADRA II 89", "overallLengthMm": 1890, "effectiveEdgeMm": 1775, "contactLengthMm": 1650, "noseWidthMm": 248, "waistWidthMm": 200, "tailWidthMm": 234, "sidecutMm": [15400, 17400, 20400], "offsetMm": -30, "camberMm": 12.0, "rockerMm": null, "stanceWidth": null, "setbackMm": 80, "insertQuantity": "ALLFLEX only" }
+  ],
+  "construction": {
+    "edge": "1.8mm/48R CWL",
+    "sidewallAngle": 15,
+    "sidewallColor": "BLACK",
+    "runningBase": "IS7500 Graphite",
+    "core": "ASPEN Core（图注区）",
+    "plate": "0.4t Titanal / 1ply 65/35（图注区）",
+    "origin": "made in OG JAPAN / PM TAIWAN（图注区并列，未逐尺码确认对应关系）"
+  },
+  "sizeTableNote": "目录 Stance Width 整行为 '---'，档案记 null 而非补造。Insert Quantity 整行标 'ALLFLEX only'，为 ALLFLEX 导轨专用口径，未套用常规 2x4 或 12+12。侧切半径跨度极大（7.2–20.4 m），保留原值不做平滑。型号数字为厘米长度但不带单位，保留目录原始写法。",
+  "conflicts": [
+    "QUADRA II 与 QUADRA 是目录中并列的不同型号（II 为 58/64/78/80/89 五码，QUADRA 为 57/63/72/85 四码），档案分别建档未合并。",
+    "图注区对本品同时出现 'Single Camber' 与 'Positive Vario Camber'，未判定唯一值。",
+    "172,000/189,200 价格档仅与 'I I 64 ALLFLEX' 并排出现，是否覆盖其他尺码未确认，故未下推。"
+  ]
+}

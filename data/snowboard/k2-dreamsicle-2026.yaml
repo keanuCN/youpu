@@ -1,0 +1,61 @@
+slug: k2-dreamsicle-2026
+category: snowboard
+brand: k2
+model: Dreamsicle
+year: 2026
+title: K2 Dreamsicle 2025/26
+one_liner: 25/26 女性全山地定向 Twin，五码 138–153 cm；Directional Rocker 板型配 Rhythm 女性专用木芯、ICG 10 碳纤玻纤与 Extruded 2000 底板，官方定位入门到中级。
+editorial_scores:
+  stability: 6.8
+  response: 6.5
+  float: 6.8
+  park: 6.2
+  forgiveness: 8.3
+  value: 6
+price:
+  min: 1965.55
+  max: 3275.91
+  currency: CNY
+specs:
+  priceCheckedAt: 2026-10-17
+  officialPrice: USD 489.95 标价；USD 293.97 折扣价
+  priceMarket: K2 美国官方商店（25/26）
+  priceSource: https://k2snow.com/en-us/p/dreamsicle-womens-snowboard-2526
+  exchangeRate: EUR/USD 1.1253；EUR/CNY 7.5240（ECB 2026-10-16）；USD/CNY 6.68621701
+  exchangeRateSource: https://www.lb.lt/en/daily-euro-foreign-exchange-reference-rates-published-by-the-european-central-bank
+  priceStatus: K2 美国官方商品页搜索索引保留 2026 款标价 USD 489.95 与折扣价 USD 293.97；按 ECB 2026-10-16 参考汇率折算约 CNY 1,965.55–3,275.91。官方页面目前返回 410，价格是索引快照，不是中国售价或成交价，税费与跨境费用未计。
+  length: 146
+  effectiveEdge: 1120
+  sidecut: 7.4
+  waistWidth: 241
+  stanceSetback: 19
+  core: Rhythm Core
+  fiberglass: ICG 10 Biax Carbon Glass
+  base: Extruded 2000 Base
+  profile: Directional Rocker
+  profileFamily: rocker
+  shape: Directional Twin
+  scenes:
+    - all-mountain
+    - powder
+  lengthOptions: 138 / 142 / 146 / 149 / 153
+  sidecutRadii: 7.40 m（146）
+  sizeSpecs:
+    - { size: "138", effectiveEdge: 1080, noseWidth: 275, waistWidth: 237, tailWidth: 275, sidecutRadii: "7.10 m", stanceWidth: "457 mm (18 in reference)", setback: 19 }
+    - { size: "142", effectiveEdge: 1110, noseWidth: 279, waistWidth: 239, tailWidth: 279, sidecutRadii: "7.30 m", stanceWidth: "483 mm (19 in reference)", setback: 19 }
+    - { size: "146", effectiveEdge: 1120, noseWidth: 284, waistWidth: 241, tailWidth: 284, sidecutRadii: "7.40 m", stanceWidth: "483 mm (19 in reference)", setback: 19 }
+    - { size: "149", effectiveEdge: 1140, noseWidth: 284, waistWidth: 242, tailWidth: 284, sidecutRadii: "7.50 m", stanceWidth: "508 mm (20 in reference)", setback: 19 }
+    - { size: "153", effectiveEdge: 1220, noseWidth: 289, waistWidth: 245, tailWidth: 289, sidecutRadii: "7.80 m", stanceWidth: "533 mm (21 in reference)", setback: 19 }
+  sourceCheckedAt: 2026-10-16
+  seasonEvidence: 来源为 K2 官方 25/26 单板产品目录 PDF（K2 官方静态资源域，由 k2snow.com 支持页链出）；目录第 019 页将 DREAMSICLE 与 CHLORO 并排，DREAMSICLE 列标 BOARD SHAPE 为 Directional Twin、RIDING STYLE 为 All-Mountain、ABILITY 为 Beginner to Intermediate，列出 138–153 五个尺码。官方商品页 k2snow.com/en-us/p/dreamsicle-womens-snowboard-kb261701 采集时返回 HTTP 404，故以官方目录为唯一来源。
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0626/6876/7468/files/K2_DREAMSICLE_KB251090_Top.jpg?v=1757398511"
+    kind: face
+    alt: "K2 Dreamsicle 2025/26 商品图"
+    source: "The Ride Side 2026 款 K2 Dreamsicle SKU KB251090 商品页；图片展示授权待核"
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard
+  snapshot_url: https://k2snow.com/en-us/support/product-catalogs
+status: published

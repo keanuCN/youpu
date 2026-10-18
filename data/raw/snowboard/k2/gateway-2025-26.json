@@ -1,0 +1,33 @@
+{
+  "brand": "K2",
+  "model": "Gateway",
+  "season": "2025/26",
+  "sourceUrl": "https://k2sports.a.bigcontent.io/v1/static/k2_2526_product-catalog_snowboard",
+  "sourcePageUrl": "https://k2snow.com/en-us/support/product-catalogs",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "K2 官方 25/26 单板产品目录 PDF 第 017 页标 'GATEWAY POP | GATEWAY'，页眉 all-mountain / directional twin。",
+  "category": "All-Mountain",
+  "positioning": "目录标注 BOARD SHAPE: Directional Twin，RIDING STYLE: All-Mountain，ABILITY: Beginner to Intermediate。标语 'YOUR SIDEKICK IN PROGRESSION AND EXPLORATION'。",
+  "columnAttribution": "该目录页并排展示 GATEWAY POP 与 GATEWAY 两款：GATEWAY POP 列为 all-mountain / directional twin / snappy + ABILITY: Intermediate to Advanced + Directional Combination Camber Profile；GATEWAY 列为 all-mountain / directional twin / playful + ABILITY: Beginner to Intermediate + Directional Rocker Profile。本档案取 GATEWAY 列（Directional Rocker），未混入 GATEWAY POP 的 Combination Camber 列。",
+  "sizeTable": [
+    { "size": "150", "effectiveEdgeCm": 117, "noseWaistTailMm": [282, 242, 282], "sidecutM": 7.50, "stanceIn": 20, "setbackIn": 0.75, "weightLb": "110-180+", "weightKg": "50-82+" },
+    { "size": "153", "effectiveEdgeCm": 117, "noseWaistTailMm": [286, 245, 286], "sidecutM": 7.90, "stanceIn": 21, "setbackIn": 0.75, "weightLb": "120-190+", "weightKg": "54-86+" },
+    { "size": "156", "effectiveEdgeCm": 119, "noseWaistTailMm": [287, 247, 287], "sidecutM": 8.00, "stanceIn": 22, "setbackIn": 0.75, "weightLb": "120-190+", "weightKg": "54-86+" },
+    { "size": "157W", "effectiveEdgeCm": 119, "noseWaistTailMm": [303, 260, 303], "sidecutM": 8.00, "stanceIn": 22, "setbackIn": 0.75, "weightLb": "130-220+", "weightKg": "59-100+" },
+    { "size": "159", "effectiveEdgeCm": 122, "noseWaistTailMm": [291, 249, 291], "sidecutM": 8.10, "stanceIn": 22, "setbackIn": 0.75, "weightLb": "130-200+", "weightKg": "59-91+" },
+    { "size": "160W", "effectiveEdgeCm": 122, "noseWaistTailMm": [307, 263, 307], "sidecutM": 8.10, "stanceIn": 22, "setbackIn": 0.75, "weightLb": "130-220+", "weightKg": "59-100+" },
+    { "size": "162", "effectiveEdgeCm": 125, "noseWaistTailMm": [295, 251, 295], "sidecutM": 8.20, "stanceIn": 23, "setbackIn": 0.75, "weightLb": "130-220+", "weightKg": "59-100+" },
+    { "size": "164W", "effectiveEdgeCm": 127, "noseWaistTailMm": [313, 266, 313], "sidecutM": 8.20, "stanceIn": 23, "setbackIn": 0.75, "weightLb": "140-230+", "weightKg": "64-104+" }
+  ],
+  "features": {
+    "profile": "Directional Rocker Profile",
+    "shape": "Directional Twin",
+    "core": "Aspen Core",
+    "glass": "ICG 10 Biax Carbon Glass",
+    "base": "Extruded 2000 Base",
+    "construction": "Hybritech Construction"
+  },
+  "sizeTableNote": "GATEWAY 与 GATEWAY POP 共用同一页与同一表头，尺码行格式一致（含 W 宽版）。经结构词比对，本表与 GATEWAY 列（Directional Rocker、Beginner to Intermediate）对应；GATEWAY POP 列为 Directional Combination Camber。因两列尺码行在文本层相邻，档案只采用与 GATEWAY 结构描述一致的这组数值，并在 raw 中保留该归属判断。鼻/腰/尾宽在标准版为对称（如 282/242/282），W 版同步加宽。",
+  "priceNote": "该型号官方商品页（k2snow.com/en-us/p/gateway-mens-snowboard-2526）多次采集均返回 HTTP 410，且 25/26 目录为规格型文档、不含标价，故本档案不填价格。",
+  "notes": "目录未给数值硬度。GATEWAY 与 GATEWAY POP 为同页两个独立型号，本档案只收 GATEWAY。"
+}

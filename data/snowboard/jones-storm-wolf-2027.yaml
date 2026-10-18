@@ -1,0 +1,44 @@
+slug: jones-storm-wolf-2027
+category: snowboard
+brand: jones
+model: Storm Wolf
+year: 2027
+title: Storm Wolf Snowboard | Jones 2027
+one_liner: 以燕尾、长板头浮力和冲浪式转弯为特征的自由骑板，偏爱深雪、快速弧线与方向性滑行，公园和频繁倒滑不是它的主场。
+editorial_scores:
+  stability: 8.7
+  response: 8.4
+  float: 9.5
+  park: 3
+  forgiveness: 5.2
+  value: 5.8
+price:
+  min: 4680.02
+  max: 4680.02
+  currency: CNY
+specs:
+  seasonEvidence: Jones 官方商品页当前款标题与货号标注 2027，货号 J.27；归档为 2026/27。
+  lengthOptions: 150 / 154 / 158 / 162
+  profile: Float CamRock
+  profileFamily: hybrid
+  shape: Directional Swallowtail
+  scenes:
+    - powder
+    - all-mountain
+  priceCheckedAt: 2026-10-18
+  officialPrice: USD 699.95
+  priceMarket: Jones 美国官方 2026/27 商品页
+  priceSource: https://www.jonessnowboards.com/products/storm-wolf-snowboard
+  exchangeRate: EUR/USD 1.1253；EUR/CNY 7.5240（ECB 2026-10-16）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
+  priceStatus: Jones 美国官方 2026/27 商品页挂牌 USD 699.95，按 ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240 折算约 CNY 4680.02。此为美国官方挂牌价的人民币折算参考，不是中国售价；税费、汇兑、运输及进口费用未计。
+images:
+  - url: "https://cdn.shopify.com/s/files/1/0694/6291/7272/files/J.27.SNU.STW-gallery-1.webp?v=1782443690"
+    kind: face
+    alt: "Storm Wolf Snowboard | Jones 2027 商品图"
+    source: 品牌官网商品页主图；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://www.jonessnowboards.com/products/storm-wolf-snowboard
+status: published

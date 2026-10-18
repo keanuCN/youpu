@@ -1,0 +1,35 @@
+{
+  "brand": "GRAY",
+  "model": "R.P.M.",
+  "season": "2025/26",
+  "sourceUrl": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf",
+  "sourceUrlEnglish": "https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_eng.pdf",
+  "retrievedAt": "2026-10-16",
+  "documentEvidence": "GRAY 官方 25/26 目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / FREESTYLE CATEGORY'。",
+  "category": "Freestyle",
+  "positioning": "目录自由式类目；板型标注 'Hybrid Camber + CAM&ROC'；图注区与 TRICK STICK [iz]、SHRED、GENIUS [HV] 并列。目录另标 GULL WING W CAMBER 与 1.8mm P-tex 3000 Sintered Base。",
+  "priceGroups": [
+    { "models": ["RPM 38", "RPM 42", "RPM 46", "RPM 48", "RPM 52"], "pretaxJpy": 79000, "taxIncludedJpy": 86900 }
+  ],
+  "priceSourceNote": "自由式图例区四组价格中，'79,000 / 86,900' 一档对应 SHRED 与 R.P.M. 两组（该页 TRICK STICK [iz] 与 GENIUS [HV] 共用 '109,000 / 119,900'）。档案按该图例记 R.P.M. 为税前 79,000、含税 86,900，与既有日本目录口径一致；日元符号在 PDF 文本层编码为 \\245。",
+  "sizeTable": [
+    { "size": "RPM 38", "overallLengthMm": 1380, "effectiveEdgeMm": 1030, "contactLengthMm": 820, "noseWidthMm": 270, "waistWidthMm": 230, "tailWidthMm": 270, "sidecutMm": [6400], "offsetMm": 0, "camberMm": 3.0, "rockerMm": 3.0, "stanceRangeMm": [420, 500], "setbackMm": 0, "insertQuantity": "10+10", "stiffnessNWT": [2.2, 2.5, 3.2], "noseHeightMm": null, "tailHeightMm": null },
+    { "size": "RPM 42", "overallLengthMm": 1420, "effectiveEdgeMm": 1070, "contactLengthMm": 840, "noseWidthMm": 278, "waistWidthMm": 238, "tailWidthMm": 278, "sidecutMm": [6800], "offsetMm": 0, "camberMm": 3.0, "rockerMm": 3.0, "stanceRangeMm": [440, 520], "setbackMm": 0, "insertQuantity": "10+10", "stiffnessNWT": [2.5, 2.8, 3.5], "noseHeightMm": null, "tailHeightMm": null },
+    { "size": "RPM 46", "overallLengthMm": 1460, "effectiveEdgeMm": 1110, "contactLengthMm": 880, "noseWidthMm": 286, "waistWidthMm": 246, "tailWidthMm": 286, "sidecutMm": [7400], "offsetMm": 0, "camberMm": 3.0, "rockerMm": 3.0, "stanceRangeMm": [480, 560], "setbackMm": 0, "insertQuantity": "10+10", "stiffnessNWT": [2.8, 3.8], "noseHeightMm": null, "tailHeightMm": null },
+    { "size": "RPM 48", "overallLengthMm": 1480, "effectiveEdgeMm": 1130, "contactLengthMm": 900, "noseWidthMm": 290, "waistWidthMm": 250, "tailWidthMm": 290, "sidecutMm": [7600], "offsetMm": 0, "camberMm": 3.0, "rockerMm": 3.0, "stanceRangeMm": [500, 580], "setbackMm": 0, "insertQuantity": "10+10", "stiffnessNWT": [3.8, 4.8], "noseHeightMm": null, "tailHeightMm": null },
+    { "size": "RPM 52", "overallLengthMm": 1520, "effectiveEdgeMm": 1170, "contactLengthMm": 920, "noseWidthMm": 294, "waistWidthMm": 252, "tailWidthMm": 294, "sidecutMm": [7700], "offsetMm": 0, "camberMm": 3.0, "rockerMm": 3.0, "stanceRangeMm": [520, 600], "setbackMm": 0, "insertQuantity": "10+10", "stiffnessNWT": [4.3, 5.3], "noseHeightMm": null, "tailHeightMm": null }
+  ],
+  "construction": {
+    "edge": "1.8mm/48R CWL",
+    "sidewallAngle": 25,
+    "runningBase": "P-TEX3000 Natural",
+    "profile": "Hybrid Camber + CAM&ROC（目录图注）",
+    "laminate": "2ply 70/30 / 2ply 50/50+ / 1ply 90/10（图注区，与 R.P.M. 分组并列）",
+    "core": "Ultra Light Core（图注区标 'Ul tr a Light Cor e'）"
+  },
+  "sizeTableNote": "目录在 R.P.M. 行未给出 Nose Hight / Tail Hight（原表为 '---'），档案保留为 null 而非补造。侧切为单一半径值，与同页多半径型号不同。目录同时标注产地（made in AG JAPAN / PM TAIWAN / OG JAPAN），该标注与型号分组的对应关系在文本层不完整，未写入档案。",
+  "conflicts": [
+    "Stiffness 三档在部分尺码行印刷合并，档案只保留文本层可确证的数值，不推算缺失档位。",
+    "图注区 camber/rocker 数值同为 3.0，官方未说明二者关系，档案按原值分别记录。"
+  ]
+}

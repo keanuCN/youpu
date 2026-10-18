@@ -64,6 +64,13 @@ images:
     alt: Salomon S/LAB QST Blank 2026/27 官方商品图
     source: Salomon 官方商品页（货号 L47713400；图片使用授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 6.2
+  stability: 8.1
+  agility: 6.6
+  softSnow: 9.5
+  versatility: 7.9
+  forgiveness: 6.4
 data_source:
   kind: official
   origin_url: https://www.salomon.com/en-us/product/s-lab-qst-blank-li7032/L47713400%2B

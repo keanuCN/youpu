@@ -1,0 +1,18 @@
+{
+  "brand": "K2",
+  "model": "Sky Pilot",
+  "season": "2025/26",
+  "sourceUrl": "https://k2snow.com/en-us/p/sky-pilot-unisex-snowboard-2526",
+  "retrievedAt": "2026-10-16",
+  "officialUsd": { "sale": 377.97, "list": 629.95 },
+  "sizeChart": [
+    { "size": "148", "effectiveEdgeCm": 112, "noseWaistTailCm": [29.5, 24.9, 28.5], "sidecutM": 6.9, "stanceIn": 19, "setbackIn": 0.75, "weightKg": "41-73+" },
+    { "size": "151", "effectiveEdgeCm": 114, "noseWaistTailCm": [30.0, 25.3, 29.0], "sidecutM": 7.1, "stanceIn": 20, "setbackIn": 0.75, "weightKg": "45-77+" },
+    { "size": "154", "effectiveEdgeCm": 117, "noseWaistTailCm": [30.4, 25.6, 29.4], "sidecutM": 7.3, "stanceIn": 21, "setbackIn": 0.75, "weightKg": "50-82+" },
+    { "size": "157", "effectiveEdgeCm": 119, "noseWaistTailCm": [30.8, 25.9, 29.8], "sidecutM": 7.5, "stanceIn": 21, "setbackIn": 0.75, "weightKg": "54-86+" },
+    { "size": "160", "effectiveEdgeCm": 122, "noseWaistTailCm": [31.2, 26.2, 30.2], "sidecutM": 7.7, "stanceIn": 22, "setbackIn": 0.75, "weightKg": "59-91+" },
+    { "size": "163", "effectiveEdgeCm": 124, "noseWaistTailCm": [31.6, 26.5, 30.6], "sidecutM": 7.9, "stanceIn": 23, "setbackIn": 0.75, "weightKg": "59-91+" }
+  ],
+  "features": { "shape": "directional, VolumeShift", "profile": "directional combination camber", "core": "S1", "glass": "triax", "additive": "Carbon Y-Beam", "base": "wax-infused sintered 4001", "contour": "3 mm 3D tip and tail", "inserts": "2x4", "flex": "medium" },
+  "notes": "官方页面 160 尺码鼻腰尾宽将腰宽显示为 26,2，按原表小数点格式统一录作 26.2 cm。"
+}

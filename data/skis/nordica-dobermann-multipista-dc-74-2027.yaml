@@ -1,0 +1,53 @@
+slug: nordica-dobermann-multipista-dc-74-2027
+category: skis
+brand: nordica
+model: Dobermann Multipista DC 74 + TPX 13 Royal
+year: 2027
+title: Nordica Dobermann Multipista DC 74 2026/27
+price:
+  min: 8691.75
+  max: 8691.75
+  currency: CNY
+one_liner: 雪道与全天候刻滑取向系统板；74 mm 腰宽、双层 Titanal Double Core，官方称板头 rocker 便于入弯、板尾强调弯中支撑。
+specs:
+  lengthOptions: 160 / 165 / 170 / 175 / 180 / 185 cm
+  waistWidth: 74
+  turnRadius: 14
+  turnRadiusReferenceLength: 160 cm
+  sidecutDimensions: "官网详情区域显示 117-74-95 mm；对比表列 185 cm 为 121-74-99 mm，取决于长度。"
+  profile: Full Camber；宽 rocker tip 外形
+  core: Performance Wood + Double Core（双木芯夹 Pulse 弹性体）
+  construction: Double Core 2 Titanal；Sidewall；Carbon；FDT Race Plate Pro N
+  technologies: Energy 2 Ti DC；Multi-Condition Shape；On-piste Rocker
+  baseEdgeAngle: 0.9
+  sideEdgeAngle: 87.5
+  terrain: 雪道 / 硬雪 / 午后变化雪况
+  skierLevel: 中级至进阶
+  bindingSetup: TPX 13 Royal FDT 系统固定器，页面列 DIN 4–13 Royal
+  weightBasis: 页面详情区的 3040 g 与比较表 185 cm 的 3780 g 口径不一致，故不录重量字段。
+  geometryNotes: 官方详情区显示 160 cm 参考半径 14 m；比较表列出逐长度半径 160/14、165/14.5、170/15、175/15.5、180/16、185/16.5 m。网页存在尺寸和重量口径差异，均已保留来源说明。
+  seasonEvidence: Nordica 商品页标题标注 2026/27，SKU 0A6625MM001，套装为 Dobermann Multipista DC 74 + TPX 13 Royal。
+  sourceCheckedAt: 2026-10-17
+  compatibilitySources: https://www.nordica.com/usa/en/collection/men/skis/dobermann-dc/dobermann-multipista-dc-fdt-2?v=Account
+  officialPrice: USD 1,299.95（美国零售商 Dobermann Multipista DC 74 + TPX 13 Royal 套装价）
+  priceMarket: Ski Town All-Stars 美国零售商；含 TPX 13 Royal FDT 固定器
+  priceSource: https://skitownallstars.com/products/2026-nordica-dobermann-multipista-dc
+  exchangeRateSource: ECB 2026-10-16 EUR/USD 1.1253、EUR/CNY 7.5240；折算 USD/CNY 6.686213
+  priceStatus: 美国零售商列 2027 款 Dobermann Multipista DC 74 + TPX 13 Royal 套装 USD 1,299.95；按 ECB 2026-10-16 汇率折合 CNY 8,691.75。含绑定套装的零售参考，不是品牌 MSRP 或中国售价；未计税费、运输、进口及支付汇兑成本。
+editorial_scores:
+  edgeGrip: 9
+  stability: 8.7
+  agility: 8
+  softSnow: 4.2
+  versatility: 7.1
+  forgiveness: 5.4
+data_source:
+  kind: official
+  origin_url: https://www.nordica.com/usa/en/collection/men/skis/dobermann-dc/dobermann-multipista-dc-fdt-2?v=Account
+images:
+  - url: "https://www.nordica.com/storage/thumbs/Product/1200_627_ogTags__0A662500001_DOBERMANN_MULTIPISTA_DC_FDT_WEB_IMAGE_01_attacchi.webp"
+    kind: face
+    alt: Nordica Dobermann Multipista DC 74 2026/27 雪板商品图（货号 0A662500001）
+    source: Nordica 官方商品页 Open Graph 图；页面商品包含 TPX 13 Royal 固定器；图片使用授权待核
+    sort_order: 0
+status: published

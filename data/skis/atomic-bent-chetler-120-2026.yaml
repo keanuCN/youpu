@@ -49,6 +49,13 @@ specs:
     - size: 192 cm
       turnRadius: 20
       notes: 官方日本 25/26 页面仅给出此长度的半径，未给出板头/板尾宽。
+editorial_scores:
+  edgeGrip: 6.2
+  stability: 8.1
+  agility: 6.6
+  softSnow: 9.5
+  versatility: 7.9
+  forgiveness: 6.4
 data_source:
   kind: official
   origin_url: https://www.atomic.com/en-us/products/bent-chetler-120-aa7364-202600

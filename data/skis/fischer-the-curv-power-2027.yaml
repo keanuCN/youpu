@@ -1,0 +1,54 @@
+slug: fischer-the-curv-power-2027
+category: skis
+brand: fischer
+model: The Curv Power
+year: 2027
+title: Fischer The Curv Power 2026/27
+price:
+  min: 3626.18
+  max: 3626.18
+  currency: CNY
+one_liner: The Curv 系列中更轻松的雪道刻滑型号；164 cm 参考尺寸 120-70-102 mm、13 m，以杨木芯和 Triple Radius 为主。
+specs:
+  lengthOptions: 150 / 157 / 164 / 171 cm
+  waistWidth: 70
+  turnRadius: 13
+  turnRadiusReferenceLength: 164 cm
+  sidecutDimensions: "官网给出 120-70-102 mm，半径 13 m / 164 cm；未提供逐长度外形尺寸。"
+  profile: On-piste rocker；Radical Triple Radius
+  core: Poplar Woodcore
+  construction: Sandwich Sidewall Construction；Race Sidewall
+  technologies: Radical Triple Radius；Diagofiber；Shaped Ti 0.5/0.5；LYT PR；Sintered Bases
+  weightReferenceLength: 未明确
+  terrain: 雪道 / 刻滑
+  skierLevel: 中级至高级
+  bindingSetup: Twin Powerrail 系统；RS 11 GW Powerrail
+  weightBasis: 官方列出 1820 g，但页面未明确单只或一对；保留原始数值并标注单位归属待确认。
+  geometryNotes: 与 The Curv TI 几何数据相同，但结构不同：Power 不使用金属层，采用轻量杨木芯。未由结构描述推断具体软硬或稳定性等级。
+  seasonEvidence: Fischer 日本官方 THE CURV 页面标注 26/27，并列 The Curv Power 型号及其规格。
+  sourceCheckedAt: 2026-10-17
+  compatibilitySources: https://www.fischersports.jp/alpine/the-curv/
+  officialPrice: JPY 104,500 MSRP；Tanabe Sports 当前套装挂牌 JPY 85,700（含 RS 10 GW 固定器）
+  priceMarket: Tanabe Sports 日本零售商；2027 款系统套装
+  priceSource: https://www.tanabesports.com/c/new0001/newski001/newski011
+  exchangeRateSource: ECB 2026-10-16 EUR/JPY 177.82、EUR/CNY 7.5240；折算 JPY/CNY 0.042313
+  priceStatus: Tanabe Sports 2027 款目录列 THE CURV POWER + RS 10 GW 套装 JPY 85,700，标示 MSRP JPY 104,500；按 ECB 2026-10-16 汇率折合 CNY 3,626.18。日本零售挂牌会变化，非中国售价；含固定器，未计跨境运输、进口及支付汇兑成本。
+editorial_scores:
+  edgeGrip: 8.4
+  stability: 7.7
+  agility: 8.2
+  softSnow: 4.3
+  versatility: 7.5
+  forgiveness: 7
+data_source:
+  kind: official
+  origin_url: https://www.fischersports.jp/alpine/the-curv/
+images:
+  - url: "https://www.fischersports.jp/alpine/the-curv/assets/img/curv/p08826v_the_curv_power.png"
+    kind: face
+    alt: Fischer The Curv Power 2026/27 雪板商品图
+    source: Fischer 日本官方 26/27 商品页图片；图片使用授权待核
+    sort_order: 0
+status: published
+
+

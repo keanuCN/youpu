@@ -69,6 +69,13 @@ specs:
   core: PEFC 认证杨木板芯
   construction: Rectangular Full Sidewall
   technologies: V-Profile；Carbon Beam
+editorial_scores:
+  edgeGrip: 8.1
+  stability: 7.7
+  agility: 8.2
+  softSnow: 4.8
+  versatility: 7.5
+  forgiveness: 7
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/it-it/sci-pista-uomo-forza-40%C2%B0-ca-xpress-RAPPX05000157.html

@@ -1,0 +1,19 @@
+{
+  "brand": "K2",
+  "model": "Manifest",
+  "season": "2025/26",
+  "sourceUrl": "https://k2snow.com/en-us/p/manifest-unisex-snowboard-2526",
+  "retrievedAt": "2026-10-16",
+  "officialUsd": { "sale": 389.97, "list": 649.95 },
+  "sizeChart": [
+    { "size": "150", "effectiveEdgeCm": 113, "noseWaistTailCm": [29.0, 24.6, 29.0], "sidecutM": [8.6, 6.5, 8.6], "stanceIn": 20, "setbackIn": 0.5, "weightKg": "54-86+" },
+    { "size": "153", "effectiveEdgeCm": 116, "noseWaistTailCm": [29.5, 25.0, 29.5], "sidecutM": [8.8, 6.7, 8.8], "stanceIn": 21, "setbackIn": 0.5, "weightKg": "54-86+" },
+    { "size": "156", "effectiveEdgeCm": 118, "noseWaistTailCm": [29.8, 25.3, 29.8], "sidecutM": [9.0, 6.9, 9.0], "stanceIn": 21, "setbackIn": 0.5, "weightKg": "54-86+" },
+    { "size": "157W", "effectiveEdgeCm": 118, "noseWaistTailCm": [30.6, 26.1, 30.6], "sidecutM": [9.0, 6.9, 9.0], "stanceIn": 21, "setbackIn": 0.5, "weightKg": "54-86+" },
+    { "size": "159", "effectiveEdgeCm": 121, "noseWaistTailCm": [30.1, 25.5, 30.1], "sidecutM": [9.2, 7.1, 9.2], "stanceIn": 22, "setbackIn": 0.5, "weightKg": "59-95+" },
+    { "size": "160W", "effectiveEdgeCm": 121, "noseWaistTailCm": [30.9, 26.3, 30.9], "sidecutM": [9.2, 7.1, 9.2], "stanceIn": 22, "setbackIn": 0.5, "weightKg": "59-95+" },
+    { "size": "162", "effectiveEdgeCm": 123, "noseWaistTailCm": [30.5, 25.8, 30.5], "sidecutM": [9.4, 7.3, 9.4], "stanceIn": 23, "setbackIn": 0.5, "weightKg": "64-104+" },
+    { "size": "164W", "effectiveEdgeCm": 124, "noseWaistTailCm": [31.2, 26.5, 31.2], "sidecutM": [9.5, 7.4, 9.5], "stanceIn": 23, "setbackIn": 0.5, "weightKg": "64-104+" }
+  ],
+  "features": { "shape": "directional", "profile": "combination camber", "core": "A1", "glass": "ICG 20 triax with carbon", "additive": "Carbon DarkWeb", "base": "sintered 4000", "inserts": "2x4", "flex": "mid-flex" }
+}

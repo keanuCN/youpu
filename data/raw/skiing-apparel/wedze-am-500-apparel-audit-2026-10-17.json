@@ -1,0 +1,61 @@
+{
+  "capturedAt": "2026-10-17",
+  "brand": "WEDZE",
+  "market": "United Kingdom",
+  "season": {
+    "officialCollectionLabel": "New Collection",
+    "explicitSnowSeason": null,
+    "decision": "商品页未标注具体雪季，seed year=2026 作为档案年份使用，不宣称已确认 2026/27 年款。"
+  },
+  "exchangeRate": {
+    "source": "European Central Bank euro foreign exchange reference rates",
+    "sourceUrl": "https://www.ecb.europa.eu/stats/shared/pdf/eurofxref.pdf?3ac10bca04b204d3b4884578daa9399d=",
+    "date": "2026-10-13",
+    "gbpPerEur": 0.8446,
+    "cnyPerEur": 7.489,
+    "formula": "GBP amount * CNY per EUR / GBP per EUR",
+    "limitation": "折算值是英国地区标价的人民币参考，不代表中国售价、结账价格或含税到手价。"
+  },
+  "products": [
+    {
+      "slug": "wedze-am-500-mens-ski-jacket-2026",
+      "styleCode": "Decathlon product ID 8872013",
+      "source": "https://www.decathlon.co.uk/p/all-mountain-mens-warm-and-breathable-ski-and-snowboard-jacket-am-500-black/352922/c1c1m8872013",
+      "observedPrice": "GBP 119.99",
+      "convertedReferenceCny": 1063.94,
+      "listedSizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+      "fitAdvice": "Choose your usual size; loose fit.",
+      "waterproof": "15,000 mm component; waterproof zips; 100% sealed seams.",
+      "insulation": "100 g/m² body and 60 g/m² arms; brand comfort temperature -4°C.",
+      "breathability": "RET 12 and ventilation zips; no g/m²/24h value given.",
+      "features": ["RECCO", "snow skirt", "underarm ventilation", "helmet-compatible adjustable hood", "ski-pass pocket", "goggle wipe"],
+      "composition": "Main fabric, padding and main lining are polyester; membrane is polyurethane.",
+      "retailerRatingSnapshot": "4.8 from 128 reviews on the official retail page at capture time; excluded from Youpu user review/rating data.",
+      "imageSource": "https://contents.mediadecathlon.com/p2985381/k%2489f9c93ecf1bc277ac79bd3e92018b66/picture.jpg?f=3000x0&format=auto",
+      "imageCaveat": "Official retailer image URL recorded; display authorization and long-term URL stability remain unverified."
+    },
+    {
+      "slug": "wedze-am-500-mens-ski-pants-2026",
+      "styleCode": "Decathlon product ID 8872016",
+      "source": "https://www.decathlon.co.uk/p/men-s-500-am-waterproof-and-breathable-ski-and-snowboard-trousers-black/352923/c1m8872016",
+      "observedPrice": "GBP 79.99",
+      "convertedReferenceCny": 709.26,
+      "listedSizes": ["UK 27 / EU XS", "UK 30 / EU S", "UK 32 / EU M", "UK 34 / EU L", "UK 39 / EU XL", "UK 43 / EU 2XL", "UK 48 / EU 3XL"],
+      "fitAdvice": "Choose your usual size; loose fit.",
+      "waterproof": "15,000 mm component; waterproof zips; 100% waterproof seams.",
+      "insulation": "60 g/m²; brand comfort temperature -6°C.",
+      "breathability": "RET < 12 with ventilation zips; no g/m²/24h value given.",
+      "features": ["RECCO", "side ventilation", "two hand pockets", "one thigh pocket", "integrated snow gaiters", "adjustable waistband", "brace loops", "lower-leg reinforcement"],
+      "composition": "Main fabric and padding are polyester; bottom reinforcement is 95% polyamide and 5% polyester; membrane is polyurethane.",
+      "retailerRatingSnapshot": "4.5 from 188 reviews on the official retail page at capture time; excluded from Youpu user review/rating data.",
+      "imageSource": "https://contents.mediadecathlon.com/p2945327/k%2454eb0e8b2134e707b34e008cf198a61a/picture.jpg?f=3000x0&format=auto",
+      "imageCaveat": "Official retailer image URL recorded; display authorization and long-term URL stability remain unverified."
+    }
+  ],
+  "limitations": [
+    "Neither product page exposes a full garment measurement table; size labels and waist-label mappings must not be presented as finished garment measurements.",
+    "RET is preserved in text because it is not the category's breathabilityG field and cannot be converted without an approved source method.",
+    "Official retailer review aggregates are provenance notes only; they are not Youpu community ratings or field reports.",
+    "Current retailer pages do not explicitly verify a 2026/27 snow-season label."
+  ]
+}

@@ -74,6 +74,13 @@ images:
     alt: Rossignol Experience 76 Xpress 2025/26 官方雪板商品图
     source: Rossignol 官方产品页（图片使用授权待核）
     sort_order: 0
+editorial_scores:
+  edgeGrip: 6.7
+  stability: 6.6
+  agility: 8
+  softSnow: 4.5
+  versatility: 6.6
+  forgiveness: 8.6
 data_source:
   kind: official
   origin_url: https://www.rossignol.com/us-en/experience-76-xpress-RAMFT04000152.html
