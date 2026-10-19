@@ -11,7 +11,6 @@ import { Avatar } from "@/components/layout/site-header";
 import { Stars } from "@/components/gear/primitives";
 import { GEAR, getGear } from "@/data/boards";
 import { HERO_IMAGE_POOL } from "@/data/assets";
-import { SEED_REVIEWS } from "@/data/seeds";
 import { CATEGORY_LEAVES, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { helpfulOf, rankRows } from "@/lib/domain";
 import { getCategoryProducts, resolveContentSource } from "@/lib/content";
@@ -38,11 +37,7 @@ export default function HomePage() {
     .filter((review) => !review.parentId)
     .sort((a, b) => helpfulOf(snapshot, b) - helpfulOf(snapshot, a))
     .map((review) => ({ review, isMock: false }));
-  const mockReviews = SEED_REVIEWS
-    .filter((review) => !review.parentId)
-    .sort((a, b) => (b.seedHelpful ?? 0) - (a.seedHelpful ?? 0))
-    .map((review) => ({ review, isMock: true }));
-  const reviews = [...userReviews, ...mockReviews].slice(0, 3);
+  const reviews = userReviews.slice(0, 3);
 
   useEffect(() => {
     let cancelled = false;
@@ -147,7 +142,7 @@ export default function HomePage() {
               desc="完善一次个人资料，发布实测时会自动带上雪龄、体重与常滑场地。"
             />
             <ul className="space-y-4">
-              {reviews.map(({ review: r, isMock }) => {
+              {reviews.map(({ review: r }) => {
                 const gear = getGear(r.gearId);
                 return (
                   <li key={r.id}>
@@ -159,7 +154,7 @@ export default function HomePage() {
                         <Avatar seed={r.authorName} name={r.authorName} size={28} />
                         <div className="min-w-0 flex-1">
                           <p className="truncate text-[13px] font-medium">
-                            {r.authorName}{isMock ? <span className="mono-label ml-2 text-muted-foreground">示例实测</span> : null}
+                            {r.authorName}
                           </p>
                           <p className="mono-label truncate">
                             {r.authorMeta.years} 年 · {r.authorMeta.weightKg ?? "—"}kg · {r.authorMeta.resort || "未标注场地"}
@@ -181,6 +176,12 @@ export default function HomePage() {
                 );
               })}
             </ul>
+            {!reviews.length ? (
+              <div className="border border-dashed border-border px-5 py-8 text-center">
+                <p className="text-[14px] font-medium">等待第一条真实实测</p>
+                <p className="mono-label mt-2">拥有装备体验后，可以在产品页提交评分和评论。</p>
+              </div>
+            ) : null}
           </div>
         </section>
 

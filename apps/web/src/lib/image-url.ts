@@ -28,6 +28,8 @@ const REMOTE_IMAGE_RULES = [
   { host: "bbsports.co.nz", pathPrefix: "/cdn/shop/" },
   { host: "www.smartmarine.co.nz", pathPrefix: "/cdn/images/products/" },
   { host: "www.follows.co.jp", pathPrefix: "/pic-labo/" },
+  { host: "makeshop-multi-images.akamaized.net", pathPrefix: "/sidecarshop/itemimages/" },
+  { host: "shop.r10s.jp", pathPrefix: "/sidecar/cabinet/items/" },
   { host: "cdn.media.amplience.net", pathPrefix: "/s/ride/" },
   { host: "cdn.media.amplience.net", pathPrefix: "/s/k2/" },
   { host: "www.jonessnowboards.com", pathPrefix: "/cdn/shop/files/" },

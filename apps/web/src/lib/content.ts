@@ -171,7 +171,8 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
   const specs = toSpecs(rawSpecs);
   const fallbackFlex = fallback?.flexValue ?? 0;
   const flexValue = numberValue(rawSpecs.flex) ?? fallbackFlex;
-  const cover = safeImageUrl(item.coverUrl, fallback?.hero ?? "");
+  const fallbackCover = fallback?.hero || fallback?.gallery.find((image) => isAllowedImageUrl(image.url))?.url || "";
+  const cover = safeImageUrl(item.coverUrl, fallbackCover);
   const categorySlug = "categorySlug" in item ? item.categorySlug : item.category.slug;
   const scores = "editorialScores" in item && item.editorialScores ? item.editorialScores : fallback?.scores ?? {};
   const price = priceOf(item, fallback);

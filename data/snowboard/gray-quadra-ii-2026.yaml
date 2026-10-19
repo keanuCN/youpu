@@ -46,7 +46,12 @@ specs:
   exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html
   seasonEvidence: GRAY 官方目录 PDF 页脚标 '2025-2026 GRAY SNOWBOARDS / PERFECT GUIDE / CARVING CATEGORY'，内页另有 'GRAY / 25-26' 字样，故按 2025/26 雪季归档。目录将 QUADRA II 58/64/78/80/89 列入刻滑类目，与 QUADRA（57/63/72/85）为并列的两个不同型号，档案只收 QUADRA II。目录 Stance Width 整行为 ---，档案保持缺省未补造；嵌入为 ALLFLEX 专用，未套用常规 2x4。
   priceStatus: GRAY 日本官方 25/26 目录在该型号表下方列税前 JPY 79,000、含税 JPY 86,900，同区另有 JPY 172,000 / JPY 189,200 与 'QUADRA II 64 ALLFLEX' 并排。档案以 79,000/86,900 为主价档，按 ECB 2026-10-15 EUR/JPY 177.06、EUR/CNY 7.4993 折算约 CNY 3,346.01 / 3,680.61；172,000 档是否覆盖全部尺码未经目录确认，故未下推、未计入区间。历史日本标价参考，不是中国售价；跨境运输与进口费用未计。
-images: []
+images:
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/29e66636cde49d322022fecc39938285bfd62be9da65776d1bde483c9b19c2fa.webp"
+    kind: face
+    alt: GRAY QUADRA II 2025/26 板面图
+    source: GRAY 官方 25/26 技术页 QUADRA II / QUADRA 63、85 图片；图片展示授权状态待核
+    sort_order: 0
 data_source:
   kind: official
   origin_url: https://graysnowboards.co.jp/wp2021/wp-content/uploads/25-26gray_cata_jpn.pdf

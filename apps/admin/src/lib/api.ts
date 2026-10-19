@@ -356,6 +356,7 @@ async function requestJson<T>(url: string, options: RequestOptions = {}): Promis
   if (options.body !== undefined && multipartBody === undefined) headers['Content-Type'] = 'application/json';
 
   let response: Response;
+  let text: string;
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), API_REQUEST_TIMEOUT_MS);
   try {
@@ -366,6 +367,7 @@ async function requestJson<T>(url: string, options: RequestOptions = {}): Promis
       cache: 'no-store',
       signal: controller.signal,
     });
+    text = await response.text();
   } catch (error) {
     if (controller.signal.aborted) {
       throw new AdminApiError(`API 请求超时（${API_REQUEST_TIMEOUT_MS / 1000} 秒）：${url}`, 408, error);
@@ -375,7 +377,6 @@ async function requestJson<T>(url: string, options: RequestOptions = {}): Promis
     clearTimeout(timeout);
   }
 
-  const text = await response.text();
   let payload: unknown = undefined;
   if (text) {
     try {

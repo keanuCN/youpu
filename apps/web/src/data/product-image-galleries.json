@@ -39,8 +39,22 @@
       "source": "Arbor 官方商品页（图片使用授权待核）"
     }
   ],
-  "arbor-bryan-iguchi-pro-2027": [],
-  "armada-arv-112-2020": [],
+  "arbor-bryan-iguchi-pro-2027": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0085/5762/5410/files/1-ARBOR_BRYAN_IGUCHI_PRO_2025_STUDIOcopy2.png?v=1775578774&width=1200",
+      "kind": "face",
+      "alt": "Arbor Bryan Iguchi Pro Snowboard 2027 商品图",
+      "source": "Arbor 美国官方 2026/27 商品图库；图片文件名含 2025，官方当前商品页仍将其列为该型号主图；展示授权待核"
+    }
+  ],
+  "armada-arv-112-2020": [
+    {
+      "url": "https://cdn.amersports.com/d99f2ba0-f6f6-44b4-bdd4-b4a400be0e06/ARP_RA0000756_0_GHO_ARV_112_FullImageWebOptimized.png?width=1200&height=630&fit=bounds&format=auto&canvas=1200,630&bg-color=ffffff&quality=80",
+      "kind": "face",
+      "alt": "Armada ARV 112 2019/20 雪板商品图",
+      "source": "Armada 官方商品页 Open Graph 图；图片使用授权待核"
+    }
+  ],
   "atk-rs6-ultra-white-shadow-warrior-2026": [
     {
       "url": "https://cdn.shopify.com/s/files/1/0691/4942/5882/files/ATK_RS6_White.jpg?v=1763534451&width=1920",
@@ -65,7 +79,14 @@
       "source": "自由地带雪具连锁商品页图片（公开引用，版权授权待核）"
     }
   ],
-  "atomic-redster-g9-rsm-revoshock-2026": [],
+  "atomic-redster-g9-rsm-revoshock-2026": [
+    {
+      "url": "https://atomicsnow.jp/cdn/shop/files/AA0030576_6_GHO_REDSTER_G9_RSM_REVOSHOCK_176.png?v=1747458779&width=1445",
+      "kind": "face",
+      "alt": "Atomic Redster G9 RSM Revoshock 雪板商品图",
+      "source": "Atomic 日本官方商店，同系列货号 AA0030576 图片；对应长度为 176 cm，图片使用授权待核"
+    }
+  ],
   "atomic-redster-q7-2026": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/6d2e0258e4170d5a18f7361161603a20eec81fc07c8f748ec706c37fba4f42da.webp",
@@ -138,7 +159,14 @@
       "source": "Atomic 官方商品页（图片使用授权待核）"
     }
   ],
-  "atomic-redster-s9-revoshock-s-2027": [],
+  "atomic-redster-s9-revoshock-s-2027": [
+    {
+      "url": "https://cdn.amersports.com/cdbfffab-ebd3-4caa-a4bc-b49c013b8723/ATP_AASS03628_3_GHO_REDSTER_S9_RVSK_S_I12_GW_FullImageWebOptimized.png?width=1200&height=630&fit=bounds&format=auto&canvas=1200,630&bg-color=ffffff&quality=80",
+      "kind": "face",
+      "alt": "Atomic Redster S9 Revoshock S 2026/27 雪板商品图",
+      "source": "Atomic 官方商品页 Open Graph 图；图片使用授权待核"
+    }
+  ],
   "aula-f108-pro-2026": [
     {
       "url": "https://cdn.shopify.com/s/files/1/0552/2803/9264/files/4_470afb17-1075-4b9a-b085-0f4ce8568ac4.jpg?v=1756891443&width=900",
@@ -251,10 +279,38 @@
       "source": "Follows 商品页（零售商图片，授权待核；正式上线前迁移至自有 COS 或替换为自制图）"
     }
   ],
-  "black-crows-anima-2026": [],
-  "black-crows-corvus-2026": [],
-  "blizzard-rustler-10-2027": [],
-  "blizzard-zero-g-96-2027": [],
+  "black-crows-anima-2026": [
+    {
+      "url": "https://images.snowleader.com/media/catalog/product/cache/1/image/0dc2d03fe217f8c83829496872af24a0/B/L/BLAC00987_01_202508200437.jpg",
+      "kind": "face",
+      "alt": "Black Crows Anima 2026 雪板商品图",
+      "source": "Snowleader 2026 Anima 商品页；图片使用授权待核"
+    }
+  ],
+  "black-crows-corvus-2026": [
+    {
+      "url": "https://www.evo.com/cdn/shop/files/product-image-1170156.jpg?v=1767736066&width=720",
+      "kind": "face",
+      "alt": "Black Crows Corvus 2026 雪板商品图",
+      "source": "evo 2026 Corvus 商品页；图片使用授权待核"
+    }
+  ],
+  "blizzard-rustler-10-2027": [
+    {
+      "url": "https://denverskicompany.com/cdn/shop/files/8A536100-001_RUSTLER_10_flat_02.png?v=1765756765&width=1080",
+      "kind": "face",
+      "alt": "Blizzard Rustler 10 2026/27 雪板商品图",
+      "source": "Denver Ski Company 2027 商品页，图示为 26/27 新款外观；图片使用授权待核"
+    }
+  ],
+  "blizzard-zero-g-96-2027": [
+    {
+      "url": "https://ski-depot.com/cdn/shop/files/81XtFAAw_2000x.jpg?v=1751976809",
+      "kind": "face",
+      "alt": "Blizzard Zero G 96 2026/27 雪板商品图",
+      "source": "Ski Depot 2027 商品页；图片使用授权待核"
+    }
+  ],
   "burton-cartel-re-flex-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/adc2c69b5b161ef60a3628eabe2ca8b8524dc5599e7bd989abf4f9d128a9ac30.webp",
@@ -1112,9 +1168,30 @@
       "source": "Donek 官方列出的韩国经销商 XgameSnow 商品页（图片授权待核）"
     }
   ],
-  "dps-pagoda-tour-cfl-105-2027": [],
-  "fischer-the-curv-power-2027": [],
-  "fischer-the-curv-ti-2027": [],
+  "dps-pagoda-tour-cfl-105-2027": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0079/8133/4575/files/SupportingImage1-PTCFL105.jpg?v=1721077483",
+      "kind": "face",
+      "alt": "DPS Pagoda Tour CFL 105 雪板商品图",
+      "source": "DPS 官方 Pagoda Tour CFL 105 商品页；页面未明确雪季，档案 2026/27 年款仍待目录交叉确认；图片使用授权待核"
+    }
+  ],
+  "fischer-the-curv-power-2027": [
+    {
+      "url": "https://www.fischersports.jp/alpine/the-curv/assets/img/curv/p08826v_the_curv_power.png",
+      "kind": "face",
+      "alt": "Fischer The Curv Power 2026/27 雪板商品图",
+      "source": "Fischer 日本官方 26/27 商品页图片；图片使用授权待核"
+    }
+  ],
+  "fischer-the-curv-ti-2027": [
+    {
+      "url": "https://www.fischersports.jp/alpine/the-curv/assets/img/curv/p15426_the_curv_ti_w.png",
+      "kind": "face",
+      "alt": "Fischer The Curv TI 2026/27 雪板商品图",
+      "source": "Fischer 日本官方 26/27 商品页图片；图片使用授权待核"
+    }
+  ],
   "flow-fenix-binding-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/a5034d2a74946db4c8e4b34e09f8d5fdd8b89003f8cad9d34ee943dff8cf29c5.webp",
@@ -1299,8 +1376,22 @@
       "source": "Gray Snowboards 官方 2026–2027 产品素材（授权待核；正式上线前迁移至自有 COS 或替换为自制图）"
     }
   ],
-  "gray-despe-wood-32-43-2026": [],
-  "gray-desperado-ti-type-r-2026": [],
+  "gray-despe-wood-32-43-2026": [
+    {
+      "url": "https://tshop.r10s.jp/follows1/cabinet/2526snowboard/25gray-despe-wood-1.jpg",
+      "kind": "face",
+      "alt": "GRAY DESPE WOOD 32/38/43 2025/26 单板商品图",
+      "source": "follows 25/26 GRAY 商品页，图片展示 32/38/43 尺码组；图片使用授权待核"
+    }
+  ],
+  "gray-desperado-ti-type-r-2026": [
+    {
+      "url": "https://tshop.r10s.jp/follows1/cabinet/2526snowboard/25gray-tityper-1.jpg",
+      "kind": "face",
+      "alt": "GRAY DESPERADO Ti Type-R 2025/26 单板商品图",
+      "source": "follows 25/26 GRAY 商品页；图片使用授权待核"
+    }
+  ],
   "gray-desperado-ti-type-r-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/df09879956fb3a768e0c5b73a0c385aa557efa0685afd231b6d4ba9c2d8835e4.webp",
@@ -1333,9 +1424,30 @@
       "source": "GRAY 官方 26-27 商品页（图片授权待核）"
     }
   ],
-  "gray-force-2026": [],
-  "gray-genius-2026": [],
-  "gray-lovebuzz-2026": [],
+  "gray-force-2026": [
+    {
+      "url": "https://shop.r10s.jp/auc-follows/cabinet/2526snowboard/25gray-force-1.jpg",
+      "kind": "face",
+      "alt": "GRAY FORCE 2025/26 单板商品图",
+      "source": "follows 25/26 GRAY 商品页；图片使用授权待核"
+    }
+  ],
+  "gray-genius-2026": [
+    {
+      "url": "https://tshop.r10s.jp/auc-follows/cabinet/2526snowboard/25gray-genius-1.jpg?fitin=720%3A720",
+      "kind": "face",
+      "alt": "GRAY GENIUS 2025/26 单板商品图",
+      "source": "follows 25/26 GRAY 商品页；图片使用授权待核"
+    }
+  ],
+  "gray-lovebuzz-2026": [
+    {
+      "url": "https://break-out.shop/cdn/shop/files/26gry-buz-1.jpg?v=1770721711",
+      "kind": "face",
+      "alt": "GRAY LOVEBUZZ 2025/26 单板商品图",
+      "source": "BREAKOUT 25/26 GRAY LOVEBUZZ 商品页；图片使用授权待核"
+    }
+  ],
   "gray-lovebuzz-58-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/88b50407a40ba4b820f8e0536fee31331544dc77a443c6fb337d52fc0077bbc3.webp",
@@ -1344,7 +1456,14 @@
       "source": "GRAY 官方 26-27 商品页（图片授权待核）"
     }
   ],
-  "gray-prodigy-2026": [],
+  "gray-prodigy-2026": [
+    {
+      "url": "https://shop.r10s.jp/follows1/cabinet/2526snowboard/25gray-prodigy-1.jpg",
+      "kind": "face",
+      "alt": "GRAY PRODIGY 2025/26 单板商品图",
+      "source": "follows 25/26 GRAY 商品页；图片使用授权待核"
+    }
+  ],
   "gray-prodigy-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/39c7a3fee9a947f6a9e60d71cb13e5836081541e133cf14a0036410dfcfeef5f.webp",
@@ -1353,11 +1472,46 @@
       "source": "GRAY 官方 26-27 商品页（图片授权待核）"
     }
   ],
-  "gray-quadra-2026": [],
-  "gray-quadra-ii-2026": [],
-  "gray-rpm-2026": [],
-  "gray-shred-2026": [],
-  "gray-sonicalmach-2026": [],
+  "gray-quadra-2026": [
+    {
+      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/39f8f3e4fc249edb920f75869190927002e4afcb5a63b959105a3bdb679e9e78.webp",
+      "kind": "face",
+      "alt": "GRAY QUADRA 2025/26 板面图",
+      "source": "GRAY 官方 25/26 技术页 QUADRA 57/72 图片；图片展示授权状态待核"
+    }
+  ],
+  "gray-quadra-ii-2026": [
+    {
+      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/29e66636cde49d322022fecc39938285bfd62be9da65776d1bde483c9b19c2fa.webp",
+      "kind": "face",
+      "alt": "GRAY QUADRA II 2025/26 板面图",
+      "source": "GRAY 官方 25/26 技术页 QUADRA II / QUADRA 63、85 图片；图片展示授权状态待核"
+    }
+  ],
+  "gray-rpm-2026": [
+    {
+      "url": "https://shop.r10s.jp/auc-follows/cabinet/2526snowboard/25gray-rpm-1.jpg?fitin=720%3A720",
+      "kind": "face",
+      "alt": "GRAY R.P.M. 2025/26 单板商品图",
+      "source": "follows 25/26 GRAY 商品页；图片使用授权待核"
+    }
+  ],
+  "gray-shred-2026": [
+    {
+      "url": "https://shop.r10s.jp/auc-follows/cabinet/2526snowboard/2526gray-shred-1.jpg",
+      "kind": "face",
+      "alt": "GRAY SHRED 2025/26 单板商品图",
+      "source": "follows 25/26 GRAY 商品页；图片使用授权待核"
+    }
+  ],
+  "gray-sonicalmach-2026": [
+    {
+      "url": "https://gigaplus.makeshop.jp/dreamy1117/NewFolder1/gray26sonicalmach01.jpg",
+      "kind": "face",
+      "alt": "GRAY SONICALMACH 2025/26 单板商品图",
+      "source": "Pro Shop Dreamy 25/26 GRAY 商品页；图片使用授权待核"
+    }
+  ],
   "gray-sonicalmach-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/93d0b624be41d697476feb068148746e56fc446c1aab2cef703845106a8eca31.webp",
@@ -1382,8 +1536,22 @@
       "source": "GRAY 官方 26-27 商品页（图片授权待核）"
     }
   ],
-  "gray-trick-stick-iz-2026": [],
-  "gray-tycoon-2026": [],
+  "gray-trick-stick-iz-2026": [
+    {
+      "url": "https://shop.r10s.jp/auc-follows/cabinet/2526snowboard/2526gray-trckskiz-1.jpg",
+      "kind": "face",
+      "alt": "GRAY TRICKSTICK [iz] 2025/26 单板商品图",
+      "source": "follows 25/26 GRAY 商品页；图片使用授权待核"
+    }
+  ],
+  "gray-tycoon-2026": [
+    {
+      "url": "https://www.follows.co.jp/pic-labo/25gray-tycoon-1.jpg",
+      "kind": "face",
+      "alt": "GRAY TYCOON 2025/26 单板商品图",
+      "source": "follows 25/26 GRAY 商品页；图片使用授权待核"
+    }
+  ],
   "gray-tycoon-type-s-iz-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/86666072f823058f142c5f872cf7b6c58f517e4fb2f45fac3846495c4aa006d5.webp",
@@ -1928,7 +2096,14 @@
       "source": "Blauer Board Shop 2026 款 K2 World Peace 商品页；型号与雪季匹配，图片展示授权待核"
     }
   ],
-  "kaestle-rx12-sl-2027": [],
+  "kaestle-rx12-sl-2027": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0586/8352/3115/files/rx12sl_01_9d86a215-e207-4b57-abbe-855ada96510b.jpg?v=1781264091&width=2048",
+      "kind": "face",
+      "alt": "Kästle RX12 SL 2026/27 雪板商品图",
+      "source": "Kästle 官方商品页，页面标注 NEW 26/27；图片使用授权待核"
+    }
+  ],
   "kailas-bm45-full-finger-ski-gloves-2026": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/df03d564597ae82dcf61c4af834e4b1b06bb4e6931a3b0bdd9003d565403d149.webp",
@@ -2341,7 +2516,14 @@
       "source": "evo 2025 商品页（图片使用授权待核）"
     }
   ],
-  "line-tom-wallisch-pro-2027": [],
+  "line-tom-wallisch-pro-2027": [
+    {
+      "url": "https://cdn.media.amplience.net/s/lineskis/line_2627_tom-wallisch-pro_LN261776?w=1200&qlt=90&fmt=auto",
+      "kind": "face",
+      "alt": "LINE Tom Wallisch Pro 2026/27 雪板商品图",
+      "source": "LINE 官方商品页 Open Graph 图，图片文件名含 2627 与货号 LN261776；图片使用授权待核"
+    }
+  ],
   "mchose-g87-v2-2026": [
     {
       "url": "https://img.alicdn.com/bao/uploaded/i1/2213920268321/O1CN01FRvqQX2BL4m9LP6Y1_%21%214611686018427379745-0-item_pic.jpg",
@@ -2396,8 +2578,22 @@
       "source": "MOSS Snowstick 2027 官方商品页；图片使用授权待核"
     }
   ],
-  "moss-snowstick-u4-half-2026": [],
-  "moss-snowstick-u5-ex-2026": [],
+  "moss-snowstick-u4-half-2026": [
+    {
+      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/c2b181adfbe545f58d421813c2d1a1216214a44bffa442e67060689bebc5f830.webp",
+      "kind": "face",
+      "alt": "MOSS Snowstick U4 Half 2025/26 商品图",
+      "source": "SIDECAR 乐天商品页明确标注 25-26 U4 HALF；图片使用授权待核"
+    }
+  ],
+  "moss-snowstick-u5-ex-2026": [
+    {
+      "url": "https://shop.r10s.jp/spray/cabinet/moss/imgrc0110182865.jpg",
+      "kind": "face",
+      "alt": "MOSS Snowstick U5 EX 2025/26 单板商品图",
+      "source": "SPRAY 25/26 MOSS SNOWSTICK 商品页；图片使用授权待核"
+    }
+  ],
   "moss-snowstick-wing-sw-67-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/65e6dce9bb23078d7f53fa151000ded140c1d390ee373c9e0b47edb7c6545b7e.webp",
@@ -2756,8 +2952,22 @@
       "source": "NOBADAY 官方商品页图片（转载授权未核实）"
     }
   ],
-  "nordica-dobermann-multipista-dc-74-2027": [],
-  "nordica-dobermann-slr-dc-2027": [],
+  "nordica-dobermann-multipista-dc-74-2027": [
+    {
+      "url": "https://www.nordica.com/storage/thumbs/Product/1200_627_ogTags__0A662500001_DOBERMANN_MULTIPISTA_DC_FDT_WEB_IMAGE_01_attacchi.webp",
+      "kind": "face",
+      "alt": "Nordica Dobermann Multipista DC 74 2026/27 雪板商品图（货号 0A662500001）",
+      "source": "Nordica 官方商品页 Open Graph 图；页面商品包含 TPX 13 Royal 固定器；图片使用授权待核"
+    }
+  ],
+  "nordica-dobermann-slr-dc-2027": [
+    {
+      "url": "https://snow-how.de/media/image/8f/42/2f/Nordica-Dobermann-SLR-DC.jpg",
+      "kind": "face",
+      "alt": "Nordica Dobermann SLR DC 2026/27 雪板商品图",
+      "source": "Snow-How 2026/27 Dobermann SLR DC + Comp 13 FDT 商品图；图片使用授权待核"
+    }
+  ],
   "nordica-enforcer-104-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/f818c24c9eb4c0d51a0112bc9dad02c70ff6d55de688aca06f71ec686d424e99.webp",
@@ -2798,7 +3008,14 @@
       "source": "Nordica 官方产品页（图片使用授权待核）"
     }
   ],
-  "nordica-spitfire-ti-fdt-2027": [],
+  "nordica-spitfire-ti-fdt-2027": [
+    {
+      "url": "https://www.nordica.com/storage/Product/0A543200001_SPITFIRE_TI_FDT.png",
+      "kind": "face",
+      "alt": "Nordica Spitfire TI FDT 2026/27 雪板商品图（货号 0A5432OD001）",
+      "source": "Nordica 官方商品页，货号 0A5432OD001；官方图库展示的图片使用授权待核"
+    }
+  ],
   "nordica-unleashed-98-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/efa874ef1411b6231151114832f87e43cf7e130ce6ca93a06ef4d9ef175515e4.webp",
@@ -3031,7 +3248,14 @@
       "source": "Rossignol 官方产品页（图片使用授权待核）"
     }
   ],
-  "rossignol-hero-elite-st-ti-2027": [],
+  "rossignol-hero-elite-st-ti-2027": [
+    {
+      "url": "https://bettineschisport.b-cdn.net/21933-thickbox_default/ski-rossignol-hero-elite-st-ti-konect-spx-14-gw-2026-2027.jpg",
+      "kind": "face",
+      "alt": "Rossignol Hero Elite ST TI 2026/27 雪板商品图",
+      "source": "Bettineschi Sport 2026/27 商品图；该零售套装图带 Konect SPX 14 GW 固定器，图片使用授权待核"
+    }
+  ],
   "rossignol-hero-master-lt-r22-2027": [
     {
       "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/06e412fd386ed484f416741845004db744130b301de6f1a752ca50b3483fc598.webp",
@@ -3352,9 +3576,30 @@
       "source": "Specialized 官方产品页图片（本地演示，版权待核）"
     }
   ],
-  "stockli-laser-sc-2027": [],
-  "stockli-laser-sl-2027": [],
-  "stockli-stormrider-95-2027": [],
+  "stockli-laser-sc-2027": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0831/7177/0663/files/LASER-SC-BIND-SRT-12.jpg?v=1760248834",
+      "kind": "face",
+      "alt": "Stöckli Laser SC 2026/27 雪板商品图，含 SRT 固定器",
+      "source": "PTO Ski 2026/27 商品页；此图为含 SRT 12 固定器的套装展示，图片使用授权待核"
+    }
+  ],
+  "stockli-laser-sl-2027": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0831/7177/0663/files/LASER-SL-BIND-WRT-12.jpg?v=1760248758",
+      "kind": "face",
+      "alt": "Stöckli Laser SL 2026/27 雪板商品图，含 WRT 固定器",
+      "source": "PTO Ski 2026/27 商品页；此图为含 WRT 12 固定器的套装展示，图片使用授权待核"
+    }
+  ],
+  "stockli-stormrider-95-2027": [
+    {
+      "url": "https://theskimonster.com/cdn/shop/files/Stockli-Stormrider-95_2_e45f53b5-25fc-4794-9de1-46f0187f5628_1024x1024.jpg?v=1764114271",
+      "kind": "face",
+      "alt": "Stöckli Stormrider 95 2026/27 雪板商品图",
+      "source": "THE SKI MONSTER 2027 商品页；图片使用授权待核"
+    }
+  ],
   "timemore-sculptor-078s-2026": [
     {
       "url": "https://www.timemore.com/cdn/shop/files/078S.jpg?v=1713171847",
@@ -3475,8 +3720,22 @@
       "source": "Viltrox 官方商品页（展示授权状态待核）"
     }
   ],
-  "volkl-peregrine-72-2027": [],
-  "volkl-revolt-96-2027": [],
+  "volkl-peregrine-72-2027": [
+    {
+      "url": "https://cdn.media.amplience.net/s/k2skis/volkl_2627_peregrine-72-green_V2610025?w=1200&qlt=90&fmt=auto",
+      "kind": "face",
+      "alt": "Völkl Peregrine 72 Green 2026/27 雪板商品图（货号 V2610025）",
+      "source": "Völkl 官方商品页 Open Graph 图，文件名含 2627 与货号 V2610025；图片使用授权待核"
+    }
+  ],
+  "volkl-revolt-96-2027": [
+    {
+      "url": "https://stevessnowstore.com/cdn/shop/files/Volkl_Revolt_96_Skis_2027.png?v=1780111313&width=1920",
+      "kind": "face",
+      "alt": "Völkl Revolt 96 2026/27 雪板商品图",
+      "source": "Steve's Snow Store 2027 商品图；图片使用授权待核"
+    }
+  ],
   "vxe-v75-x-2026": [
     {
       "url": "https://cdn.shopify.com/s/files/1/0691/4942/5882/files/ATK_V75X_Black.jpg?v=1741856682&width=1920",
@@ -3485,7 +3744,14 @@
       "source": "ATK 官网产品页 JSON-LD 黑色款主图；展示授权状态待核"
     }
   ],
-  "wedze-500-mens-insulated-ski-pants-2026": [],
+  "wedze-500-mens-insulated-ski-pants-2026": [
+    {
+      "url": "https://contents.mediadecathlon.com/p1691830/k%24503109d1669e2eebddd70ab9948dd4e7/picture.jpg?format=auto&f=1920x0",
+      "kind": "face",
+      "alt": "WEDZE 男款 500 滑雪裤商品图（货号 8545714）",
+      "source": "Decathlon 官方商品页，货号 8545714；图片使用授权待核"
+    }
+  ],
   "wedze-am-500-mens-ski-jacket-2026": [
     {
       "url": "https://contents.mediadecathlon.com/p2985381/k%2489f9c93ecf1bc277ac79bd3e92018b66/picture.jpg?f=3000x0&format=auto",
@@ -3510,9 +3776,30 @@
       "source": "Decathlon 英国官方商品图库；图片链接 HEAD 请求返回 200，前台展示授权待核"
     }
   ],
-  "wedze-jkt-500-mens-ski-jacket-2026": [],
-  "wedze-womens-am-500-ski-jacket-2026": [],
-  "wedze-womens-am-500-ski-pants-2026": [],
+  "wedze-jkt-500-mens-ski-jacket-2026": [
+    {
+      "url": "https://contents.mediadecathlon.com/p2532124/k%24a963fefb0634702ac14731aa6615c908/men-s-ski-jacket-500-6-c-black-wedze-8807723.jpg?f=1920x0&format=auto",
+      "kind": "face",
+      "alt": "WEDZE 男款 JKT 500 滑雪夹克商品图（货号 8807723）",
+      "source": "Decathlon 官方商品页，货号 8807723；图片使用授权待核"
+    }
+  ],
+  "wedze-womens-am-500-ski-jacket-2026": [
+    {
+      "url": "https://contents.mediadecathlon.com/p2953412/k%240148330638de9f9430c58751318e8ca0/picture.jpg?format=auto&f=1920x0",
+      "kind": "face",
+      "alt": "WEDZE 女款 AM 500 全山地滑雪夹克商品图（货号 8949954）",
+      "source": "Decathlon 官方商品页，货号 8949954；图片使用授权待核"
+    }
+  ],
+  "wedze-womens-am-500-ski-pants-2026": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0779/9635/9920/files/pic_a9184638-51bd-41ce-8666-750fd38490cd.jpg?v=1792219027&width=1200",
+      "kind": "face",
+      "alt": "WEDZE 女款 AM 500 全山地滑雪裤黑色商品图（货号 8872022）",
+      "source": "Decathlon 阿根廷官方商品页变体图片，货号 8872022；图片使用授权待核"
+    }
+  ],
   "wobkey-rainy75-pro-2026": [
     {
       "url": "https://www.wobkey.com/cdn/shop/files/3500_dd7a8372-ed99-4a0a-a932-e4ed6e94d9bb.jpg?v=1703696458&width=900",

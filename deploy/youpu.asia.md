@@ -67,7 +67,21 @@ Nginx 模板：`deploy/nginx/youpu.asia.conf`；systemd 模板：`deploy/systemd
 
 2026-10-13 用户确认：`youpu.asia` 已取得 ICP 备案，但尚未接入火山引擎。下一步办理接入备案，使用现有备案信息和当前服务器 `115.190.156.88`；备案主体、服务负责人、真实性核验及协议提交由本人核对完成。控制台：<https://console.volcengine.com/beian/overview/>。接入审核完成后再复核公网 HTTPS 访问。
 
-未向真实用户发送测试邮件，未创建注册账号，故不宣称验证码端到端投递验收完成。
+2026-10-12 域名迁移验证当时未向真实用户发送测试邮件或创建注册账号，因此该次记录不代表验证码端到端验收。此后用户已自行注册并确认管理台可用；真实邮件投递链路仍需单独验收。
+
+## 2026-10-19 上线准备只读检查
+
+- `http://115.190.156.88/youpu/`、`/youpu/auth`、`/youpu/admin/` 返回 HTTP 200；管理台此处只验证页面响应，用户此前已确认其登录后可用。
+- `/youpu/api/health` 返回 `status=ok`、`db=true`、`redis=true`、`es=false`；单板目录 API 返回 134 条记录。
+- 分页只读核对全部 134 条单板：4 款缺封面（COSONE PRO、GRAY QUADRA、GRAY QUADRA II、MOSS U4 Half），编辑评分字段完整，当前有价格的记录均为 CNY；目录 API 暂无显示社区评分数大于零的单板。缺图和社区实测应按真实来源逐步补齐，不添加示例评分或评论。
+- 未携带会话访问 `/youpu/api/admin/auth/me` 返回 401，符合未登录预期，不代表用户自己的管理会话无效。未调用注册邮件、评论或审核写接口。
+- 此处记录的是部署前状态。用户随后要求统一部署，三款有来源的单板图片、工作区前台和管理台变更已于 2026-10-19 发布；域名公网仍等待接入备案，邮件真实投递、登录后的社区写入和审核链路仍待人工端到端验收。
+
+2026-10-19 部署完成：GRAY QUADRA、GRAY QUADRA II、MOSS Snowstick U4 Half 的商品图已镜像到 TOS，并以事务写入生产数据库；价格、参数、编辑评分、社区评价、收藏和浏览统计均未改动。COSONE 官网图片资源仍为 404，保留无图。IP 内测站首页、登录、管理台、单板科普、API 健康及点单根路径全部返回 200；域名站在服务器本机用正式 Host/SNI 检查首页、管理台、科普和 API 均为 200。公开域名仍受火山引擎接入备案影响，未能进行公网验收。
+
+本次发布目录：`/opt/youpu-releases/20261019-images-and-ui/`；生产库同步前备份及校验清单在该目录，前台构建日志也保存在其中。IP/域名前台构建目录为 `.next-20261019-deploy-ip`、`.next-20261019-deploy-domain`；管理台发布目录为 `/opt/youpu/apps/admin/releases/20261019-deploy/{ip,domain}`。三个 systemd 服务均 active。旧前台构建和管理台目录保留，回滚可将 `NEXT_DIST_DIR` 改回原来的 `.next-f8877e5-{ip,domain}`，并将管理台 `current-ip`、`current-domain` 符号链接恢复到发布目录中的 `admin-*-before.txt` 所记目标后重启两个前台服务。
+
+发布验证：IP 前台、域名 Host/SNI 前台及管理台构建成功；API `tsc -p tsconfig.build.json` 成功。全仓 `pnpm typecheck` 仍被未改动的 `apps/api/src/community/community.service.test.ts` 类型夹具错误阻断（测试对象包含契约不支持的 `images` 属性），未影响 API 生产构建。部署后代码和数据记录随本地 `main` 分支发布提交保留。
 
 ## 回滚依据
 

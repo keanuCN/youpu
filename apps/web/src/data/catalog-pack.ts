@@ -148,7 +148,7 @@ function seedGallery(snapshot: CatalogSnapshotItem, galleries: CatalogImageGalle
   if (!images) return undefined;
   // API 封面已被管理台更新时，不用旧种子图集覆盖新的商品图。
   if (!images.length) return snapshot.coverUrl ? undefined : [];
-  if (images[0]?.url !== snapshot.coverUrl) return undefined;
+  if (snapshot.coverUrl && images[0]?.url !== snapshot.coverUrl) return undefined;
   const labels: Record<string, string> = { face: '正面 / FRONT', base: '底面 / BASE', side: '侧面 / SIDE', field: '实地 / FIELD', shape: '板型 / SHAPE', card3x4: '商品图 / PRODUCT' };
   const allowed = images.filter(image => isAllowedImageUrl(image.url));
   if (!allowed.length) return undefined;

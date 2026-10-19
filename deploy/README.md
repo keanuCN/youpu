@@ -35,25 +35,44 @@
 
 正式开放前仍需：
 
-1. 指定并启用首个管理员账号（当前数据库有普通账号，但尚无 admin）。
-2. 用真实浏览器走通注册/登录、搜索、评论、后台审核及埋点关键链路。
-3. 配置自动化、异地保存且有保留策略的数据库备份；当前确认只有一次手工备份与恢复演练，未发现站点自动备份定时任务。
-4. 向站长平台提交 sitemap，并观察首批真实访问 / 错误日志。
+1. **完成真实用户链路验收。** 用户已确认管理台可用；2026-10-19 的只读检查确认 IP 内测页、登录页、管理台页面壳、API 健康和单板目录接口可响应。注册邮件真实投递、登录态下的评分/评论、后台审核与埋点仍需用已登录浏览器完成，当前不能据未登录的 401 响应判断用户会话失效。
+2. **启用并验证自动备份。** 仓库脚本和 systemd 配置已准备，尚未安装到服务器或启用；异地 COS 备份也未配置。按下方步骤完成手动备份、隔离恢复后，再启用定时器。
+3. **通过公网验收。** `youpu.asia` 仍受火山引擎接入备案审核影响；审核通过后检查公网 HTTPS、主要页面与 API，再向站长平台提交 sitemap 并观察访问和错误日志。
+4. **已发布 2026-10-19 工作区变更。** 三款单板图片同步生产库；IP/域名前台与管理台已切换新版本，数据库和旧构建均留有回滚材料。发布细节及公网限制见 [youpu.asia 部署记录](./youpu.asia.md)。日常数据与界面工作仍不自动发布，后续等用户明确指示。
 
-### PostgreSQL 自动备份模板（尚未在线启用）
+### PostgreSQL 自动备份（仓库配置，尚未在线启用）
 
-仓库提供 `deploy/backup-postgres.sh` 和 systemd service/timer 模板。脚本通过 Docker Compose 在 PostgreSQL 容器内执行自定义格式 `pg_dump`，随后用容器内 `pg_restore --list` 校验归档，写入 SHA-256 校验文件，并默认保留 30 天。锁文件防止重叠运行；备份目录使用仅 root 可读写权限。
+当前服务器使用原生 PostgreSQL 16。`deploy/backup-native-postgres.sh` 以 `postgres` 系统用户执行自定义格式 `pg_dump`，用 `pg_restore --list` 校验归档并生成 SHA-256 文件。备份目录固定为 `/var/backups/youpu/postgres`，权限为仅 root 可访问；`flock` 避免重复运行。每次备份成功后，脚本会删除超过 30 天、且名称符合本脚本格式的归档及其 `.contents`、`.sha256` 文件。
 
-当前部署尚未安装或启用该定时器，也没有配置异地 COS 上传。执行部署时需先核实 compose 与 `.env` 的服务器路径、磁盘空间和备份策略，再安装到 `/etc/systemd/system/`；配置 `/etc/youpu/backup.env`（仅路径和保留天数，不要把数据库密码写入此文件，Compose `.env` 仍由 Docker Compose 安全读取），例如：
+仓库中的 `deploy/systemd/youpu-native-postgres-backup.service` 和 `.timer` 配套该脚本，计划每日 UTC 03:17 执行，并随机延迟最多 5 分钟。**目前尚未确认脚本和 systemd 单元已安装到服务器，也未启用定时器；线上自动备份和 30 天清理尚未生效。** 当前也没有配置异地 COS 保存。上线启用前，需先核对服务器版本与磁盘空间、安装脚本至 `/usr/local/sbin/youpu-native-postgres-backup`，安装 systemd 单元，手动执行备份并使用 `deploy/verify-native-postgres-backup.sh` 完成隔离恢复演练，再启用 timer。不要在本地运行这些服务器脚本，也不要把数据库密码写进备份配置；脚本通过 `runuser -u postgres` 使用本机 PostgreSQL 权限。
 
-```ini
-YOUPU_COMPOSE_FILE=/opt/youpu/docker/compose.yml
-YOUPU_ENV_FILE=/opt/youpu/.env
-YOUPU_PG_BACKUP_DIR=/var/backups/youpu/postgres
-YOUPU_PG_BACKUP_RETENTION_DAYS=30
+服务器确认使用 PostgreSQL 16 且 `/opt/youpu/deploy` 是当前版本源码后，按以下顺序操作。先安装并手动执行一次，不要立即启用 timer：
+
+```bash
+install -o root -g root -m 0750 /opt/youpu/deploy/backup-native-postgres.sh /usr/local/sbin/youpu-native-postgres-backup
+install -o root -g root -m 0644 /opt/youpu/deploy/systemd/youpu-native-postgres-backup.service /etc/systemd/system/
+install -o root -g root -m 0644 /opt/youpu/deploy/systemd/youpu-native-postgres-backup.timer /etc/systemd/system/
+systemctl daemon-reload
+systemctl start youpu-native-postgres-backup.service
+systemctl status --no-pager youpu-native-postgres-backup.service
 ```
 
-手动运行一次 service 并完成隔离恢复演练后，再 enable timer。每日计划时间为 UTC 03:17（加最多 5 分钟随机延迟）；异地备份仍是正式开放前的独立事项。
+从 `BACKUP_COMPLETE` 输出中复制刚生成的归档完整路径，然后用它执行隔离恢复演练；恢复脚本会创建临时数据库并在退出时删除：
+
+```bash
+/opt/youpu/deploy/verify-native-postgres-backup.sh /var/backups/youpu/postgres/youpu-20261019T031700Z.dump
+```
+
+上面是路径格式示例，执行时请将文件名替换为备份命令实际输出的时间戳。
+
+只有备份服务成功且隔离恢复输出 `ISOLATED_RESTORE_VERIFIED` 后，才启用并核对定时器：
+
+```bash
+systemctl enable --now youpu-native-postgres-backup.timer
+systemctl list-timers youpu-native-postgres-backup.timer
+```
+
+若验收失败，停止并禁用 timer（若已启用），保留现有归档供排查：`systemctl disable --now youpu-native-postgres-backup.timer`。此流程仅覆盖本机备份；服务器磁盘损坏时仍需另行完成异地 COS 保存及恢复演练。
 
 内测资源取舍：Elasticsearch 未启用（`es=false`），搜索由 PostgreSQL 兜底；这不是 API 健康故障。
 
