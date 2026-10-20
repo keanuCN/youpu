@@ -248,7 +248,7 @@ function Cover({
   liveCategoryNames: string;
 }) {
   return (
-    <section className="relative border-b border-foreground">
+    <section id="home-hero" className="relative border-b border-foreground">
       <div className="grid xl:grid-cols-[1.15fr_1fr] xl:grid-rows-[640px]">
         <div className="group relative order-2 aspect-[4/3] min-h-0 overflow-hidden bg-secondary xl:order-1 xl:aspect-auto xl:h-full">
           <SafeImage
