@@ -89,6 +89,12 @@ Nginx 模板：`deploy/nginx/youpu.asia.conf`；systemd 模板：`deploy/systemd
 
 发布验收：IP 内测站首页、登录页和头像资源均返回 HTTP 200；域名站通过服务器本机正式 Host/SNI 检查，首页、登录页和头像资源均返回 HTTP 200。两个入口的 API 健康状态均为 `db=true`、`redis=true`。域名公网访问仍受火山引擎接入备案限制，本次未做公网验收。回滚时将 `systemd-before/` 中的两个站点 drop-in 配置恢复并重启 `youpu-web` 与 `youpu-domain-web`，旧构建目录仍保留。
 
+## 2026-10-20 首屏优化与单板科普图片
+
+已发布提交 `36435c3`。首页随机雪场主图改为首屏服务端直接渲染，商品推荐与分类计数请求延后并减少数据量；单板风格科普替换为 7 张原创 WebP 图片，包含全山、刻滑、平花、公园、跳台、半管和自由骑。图片单张约 74–109 KB，并按 IP 子路径正确加 `/youpu` 前缀。本次未修改生产数据库。
+
+IP 与域名前台分别使用 `.next-20261020-36435c3-ip`、`.next-20261020-36435c3-domain`，服务 drop-in 为 `zzzzzzzzzz-home-speed-20261020.conf`。发布备份及两份构建日志位于 `/opt/youpu-releases/20261020-home-speed-snowboard-art-36435c3-r5/`。部署后 IP 首页、域名站本机 Host/SNI 首页、两站单板科普页及 IP 根路径点单应用均返回 HTTP 200；单板图片资源可访问；API 健康状态为 `db=true`、`redis=true`、`es=false`。域名公网访问仍受火山引擎接入备案影响，本次只做服务器本机 Host/SNI 验收。
+
 ## 回滚依据
 
 生产 API 环境备份：`/opt/youpu/apps/api/.env.before-domain-20261012`（600 权限）。回滚邮件发件人时只恢复 `EMAIL_FROM`，保留其他环境项并重启 API。
