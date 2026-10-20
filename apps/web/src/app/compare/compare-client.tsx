@@ -357,7 +357,11 @@ export default function ComparePage() {
       <section className="reveal mt-12">
         <SectionHead title="完整参数横表" titleEn="Full Matrix" desc="移动端可左右滑动；首列固定。" />
         <div className="thin-scroll overflow-x-auto border border-foreground">
-          <table className="w-full min-w-[640px] border-collapse text-left">
+          <table className="w-full min-w-[640px] table-fixed border-collapse text-left">
+            <colgroup>
+              <col className="w-44" />
+              {items.map((g) => <col key={g.id} />)}
+            </colgroup>
             <thead>
               <tr>
                 <th className="sticky left-0 z-10 w-44 border-r border-b border-foreground bg-background p-3 align-bottom">
@@ -368,8 +372,8 @@ export default function ComparePage() {
                     <div className="flex items-start justify-between gap-2">
                       <div className="min-w-0">
                         <span className="mb-1.5 block h-[3px] w-8" style={{ background: RADAR_COLORS[i % RADAR_COLORS.length] }} />
-                        <span className="mono-label block truncate">{g.brand}</span>
-                        <Link href={`/gear/${g.id}`} className="block truncate text-[13.5px] font-medium hover:text-primary">
+                        <span className="mono-label block break-words">{g.brand}</span>
+                        <Link href={`/gear/${g.id}`} className="block break-words text-[13.5px] font-medium hover:text-primary">
                           {g.model}
                         </Link>
                       </div>
@@ -408,7 +412,7 @@ export default function ComparePage() {
                 {groupRows.map((r) => (
                   <tr key={`${r.group}-${r.key}`} className={cn(r.isDiff && "bg-primary/[0.045]")}>
                     <th scope="row" className="sticky left-0 z-10 border-r border-b border-border bg-background px-3 py-2 align-middle">
-                      <span className="mono-label">{r.label}</span>
+                      <span className="mono-label break-words">{r.label}</span>
                       {r.isDiff ? <span className="mono-label ml-1.5 text-primary">差异</span> : null}
                     </th>
                     {r.values.map((v, i) => {
@@ -421,7 +425,7 @@ export default function ComparePage() {
                             win && "bg-foreground text-background",
                           )}
                         >
-                          <span className="mono-data flex items-center gap-1.5 text-[13px] tnum">
+                          <span className="mono-data flex min-w-0 flex-wrap items-center gap-1.5 break-words text-[13px] tnum">
                             {win ? <Crown size={12} strokeWidth={1.8} className="shrink-0" /> : null}
                             {v === null || v === undefined || v === "" ? <span className="opacity-40">—</span> : formatSpecValue(v)}
                             {r.unit && v !== null && v !== undefined && v !== "" ? (

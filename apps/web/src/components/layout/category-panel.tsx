@@ -49,9 +49,7 @@ export function CategoryPanel({ onNavigate, className }: { onNavigate?: () => vo
         })}
       </div>
 
-      <p className="mono-label mb-3 border-b border-foreground pb-2">
-        {activeRoot.name} <span className="text-muted-foreground/60">/ {activeRoot.nameEn.toUpperCase()}</span>
-      </p>
+      <p className="mono-label mb-3 border-b border-foreground pb-2">{activeRoot.name}</p>
       <div className="grid gap-5 sm:grid-cols-[132px_1fr]">
         {/* 二级场景：悬停 / 点击切换 */}
         <ul className="flex flex-wrap gap-1 sm:flex-col sm:gap-0">
@@ -82,9 +80,7 @@ export function CategoryPanel({ onNavigate, className }: { onNavigate?: () => vo
 
         {/* 当前场景的商品叶子 */}
         <div>
-          <p className="mono-label mb-2 text-foreground/70">
-            {active.name} <span className="opacity-60">/ {active.nameEn}</span>
-          </p>
+          <p className="mono-label mb-2 text-foreground/70">{active.name}</p>
           <ul className="grid gap-x-6 gap-y-1.5 sm:grid-cols-2 lg:grid-cols-3">
             {active.children?.map((leaf) =>
               leaf.status === "live" ? (
@@ -95,7 +91,6 @@ export function CategoryPanel({ onNavigate, className }: { onNavigate?: () => vo
                     className="story-link text-[13px] text-foreground hover:text-primary"
                   >
                     {leaf.name}
-                    <span className="mono-label ml-1.5">{leaf.nameEn}</span>
                   </Link>
                 </li>
               ) : (

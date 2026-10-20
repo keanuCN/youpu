@@ -1,3 +1,5 @@
+import { resolveImageUrl } from '@/lib/image-url';
+
 const systems: {
   region: string;
   title: string;
@@ -77,7 +79,7 @@ export function SnowboardInstructorSystems() {
           <article key={region} className="border-t-2 border-border pt-4">
             <div className="flex items-center gap-3">
               <span className="flex h-12 w-28 shrink-0 items-center justify-start">
-                {logo ? <img src={logo} alt={logoAlt ?? ''} loading="lazy" decoding="async" className="max-h-11 max-w-28 object-contain object-left" /> : null}
+                {logo ? <img src={resolveImageUrl(logo)} alt={logoAlt ?? ''} loading="lazy" decoding="async" className="max-h-11 max-w-28 object-contain object-left" /> : null}
                 {logoText ? <span className="inline-flex h-10 min-w-10 items-center justify-center border border-primary/40 bg-secondary/70 px-2 font-mono text-xs font-semibold tracking-wide text-primary">{logoText}</span> : null}
               </span>
               <p className="mono-label text-primary">{region}</p>

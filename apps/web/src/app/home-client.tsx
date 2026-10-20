@@ -385,7 +385,7 @@ function CategoryEntries({
 
   return (
     <section ref={sectionRef} id="categories" className="reveal mt-16 scroll-mt-32">
-      <SectionHead index="00" title="品类入口" titleEn="Categories" desc="已开档品类可直接浏览；其余品类共用同一套模板引擎，配置就绪即上线。" />
+      <SectionHead index="00" title="品类入口" desc="已开档品类可直接浏览；其余品类共用同一套模板引擎，配置就绪即上线。" />
       <div className="grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
         {previewCategories.map((c) => {
           const live = c.status === "live";
@@ -399,7 +399,6 @@ function CategoryEntries({
               <div>
                 <p className="mono-label group-hover:text-background/60">{c.path.join(" / ")}</p>
                 <p className="mt-2 text-[20px] leading-none font-medium">{c.name}</p>
-                <p className="serif-display mt-1.5 text-[15px] opacity-60">{c.nameEn}</p>
               </div>
               <div className="mt-6 flex items-end justify-between">
                 <span className="mono-data text-[12px] tnum opacity-70">

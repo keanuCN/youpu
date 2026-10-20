@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import { resolveImageUrl } from "@/lib/image-url";
 
 function SideAdSlot({ side, reveal }: { side: "left" | "right"; reveal: number }) {
   const label = side === "left" ? "左侧广告位" : "右侧广告位";
@@ -19,9 +21,16 @@ function SideAdSlot({ side, reveal }: { side: "left" | "right"; reveal: number }
       }}
     >
       <span className="mono-label border border-border px-2 py-1 text-muted-foreground">广告位</span>
-      <p className="mt-4 text-sm font-medium">品牌与雪场展示</p>
-      <p className="mt-2 text-xs leading-5 text-muted-foreground">竖版广告素材预留区域</p>
-      <p className="mono-label mt-6 text-muted-foreground">160 × 600</p>
+      <p className="mt-4 text-sm font-medium">商务合作请联系</p>
+      <p className="mono-label mt-2 break-all text-foreground">vx15833770890</p>
+      <Image
+        src={resolveImageUrl("/images/contact/wechat-business-qr.png")}
+        alt="商务合作微信二维码"
+        width={640}
+        height={640}
+        className="mt-3 h-32 w-32 shrink-0 bg-white object-contain p-1"
+      />
+      <p className="mono-label mt-2 text-muted-foreground">微信扫码添加</p>
     </aside>
   );
 }

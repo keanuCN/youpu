@@ -20,7 +20,6 @@ export default function CategoriesPage() {
       <PageHead
         kicker="装备档案目录"
         title="全部品类"
-        titleEn="Categories"
         desc="按装备领域浏览所有品类。已开档的品类可以查看资料，筹备中的品类会在配置完成后开放。"
         aside={
           <Link
@@ -49,7 +48,6 @@ export default function CategoriesPage() {
               <SectionHead
                 index={String(rootIndex + 1).padStart(2, "0")}
                 title={root.name}
-                titleEn={root.nameEn}
                 desc={`${categories.length} 个品类 · ${categories.filter((category) => category.status === "live").length} 个已开档`}
               />
               <div className="grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
@@ -64,7 +62,6 @@ export default function CategoriesPage() {
                       <div>
                         <p className="mono-label group-hover:text-background/60">{category.path.join(" / ")}</p>
                         <p className="mt-2 text-[20px] leading-none font-medium">{category.name}</p>
-                        <p className="serif-display mt-1.5 text-[15px] opacity-60">{category.nameEn}</p>
                       </div>
                       <div className="mt-6 flex items-end justify-between">
                         <span className="mono-data text-[12px] opacity-70">{live ? "浏览装备档案" : "即将开放"}</span>
