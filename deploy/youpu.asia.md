@@ -95,6 +95,12 @@ Nginx 模板：`deploy/nginx/youpu.asia.conf`；systemd 模板：`deploy/systemd
 
 IP 与域名前台分别使用 `.next-20261020-36435c3-ip`、`.next-20261020-36435c3-domain`，服务 drop-in 为 `zzzzzzzzzz-home-speed-20261020.conf`。发布备份及两份构建日志位于 `/opt/youpu-releases/20261020-home-speed-snowboard-art-36435c3-r5/`。部署后 IP 首页、域名站本机 Host/SNI 首页、两站单板科普页及 IP 根路径点单应用均返回 HTTP 200；单板图片资源可访问；API 健康状态为 `db=true`、`redis=true`、`es=false`。域名公网访问仍受火山引擎接入备案影响，本次只做服务器本机 Host/SNI 验收。
 
+## 2026-10-20 品类目录、参数横表与商务广告位
+
+已发布提交 `36b06a3`。全部品类菜单、目录页及首页入口移除英文分类副标题；完整参数横表的商品列等宽分配，长内容自动换行；教练认证标志按部署子路径加载本地图片；左右商务广告位展示联系微信号及用户提供的二维码。未修改或同步生产数据库。
+
+IP 与域名前台分别构建到 `.next-20261020-36b06a3-ip` 和 `.next-20261020-36b06a3-domain`，通过 `zzzzzzzzzzzzz-20261020-36b06a3.conf` 切换。源码备份、发布包及构建日志位于 `/opt/youpu-releases/20261020-ui-36b06a3/`。部署后两个服务均 active；IP 内测站、服务器本机 Host/SNI 域名站及两站二维码图片均返回 HTTP 200；API 健康检查为 `db=true`、`redis=true`、`es=false`。域名公网访问仍受火山引擎接入备案影响，本次只做服务器本机 Host/SNI 验收。
+
 ## 回滚依据
 
 生产 API 环境备份：`/opt/youpu/apps/api/.env.before-domain-20261012`（600 权限）。回滚邮件发件人时只恢复 `EMAIL_FROM`，保留其他环境项并重启 API。
