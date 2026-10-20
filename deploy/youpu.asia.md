@@ -83,6 +83,12 @@ Nginx 模板：`deploy/nginx/youpu.asia.conf`；systemd 模板：`deploy/systemd
 
 发布验证：IP 前台、域名 Host/SNI 前台及管理台构建成功；API `tsc -p tsconfig.build.json` 成功。全仓 `pnpm typecheck` 仍被未改动的 `apps/api/src/community/community.service.test.ts` 类型夹具错误阻断（测试对象包含契约不支持的 `images` 属性），未影响 API 生产构建。部署后代码和数据记录随本地 `main` 分支发布提交保留。
 
+## 2026-10-20 前台更新
+
+已发布提交 `6010eec`。前台更新包含注册昵称提示、个人中心预设头像、单板科普插图及近期界面调整；本次没有同步或修改生产数据库。服务器发布目录为 `/opt/youpu-releases/20261020-frontend-6010eec/`，其中保存部署前源码、systemd 配置备份和构建输入包。IP 与域名前台分别构建到 `.next-20261020-6010eec-ip`、`.next-20261020-6010eec-domain`，两个服务均已切换并保持 active。
+
+发布验收：IP 内测站首页、登录页和头像资源均返回 HTTP 200；域名站通过服务器本机正式 Host/SNI 检查，首页、登录页和头像资源均返回 HTTP 200。两个入口的 API 健康状态均为 `db=true`、`redis=true`。域名公网访问仍受火山引擎接入备案限制，本次未做公网验收。回滚时将 `systemd-before/` 中的两个站点 drop-in 配置恢复并重启 `youpu-web` 与 `youpu-domain-web`，旧构建目录仍保留。
+
 ## 回滚依据
 
 生产 API 环境备份：`/opt/youpu/apps/api/.env.before-domain-20261012`（600 权限）。回滚邮件发件人时只恢复 `EMAIL_FROM`，保留其他环境项并重启 API。
