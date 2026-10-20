@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-10-20",
+  "category": "skis",
+  "brand": "Fischer",
+  "scope": "RC4 Worldcup Noize SL 2026/27 Men/Women M-Plate 官方货号、规格、配置、价格与主图核对",
+  "sources": {
+    "menProduct": "https://www.fischersports.com/us_en/rc4-worldcup-noize-sl-men-m-plate/A04026",
+    "womenProduct": "https://www.fischersports.com/us_en/rc4-worldcup-noize-sl-women-m-plate/A04626",
+    "officialCatalogue": "https://www.fischersports.jp/asset/pdf/book/fischer_alpine_2627_sp.pdf",
+    "ecbRates": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.eu.html",
+    "menImage": "https://www.fischersports.com/media/3072x4096/7c/79/0e/1789999293/a04026_rc4_noize_sl_01.png",
+    "womenImage": "https://www.fischersports.com/media/3072x4096/4b/82/e7/1789999296/a04626_rc4_noize_sl_01.png"
+  },
+  "confirmed": {
+    "season": "Fischer 26/27 官方目录",
+    "men": {
+      "articleNumber": "A04026",
+      "lengthCm": [165],
+      "radiusM": 12,
+      "baseEdgeAngleDeg": 0.3,
+      "sideEdgeAngleDeg": 87,
+      "classification": ["FIS Standard", "Expert", "Competition Race"],
+      "technology": ["Race Code", "M-Plate", "Solid Woodcore", "Noize Control"],
+      "binding": "目录列出 T00425 RC4 Z17 Freeflex ST Brake 85 [A]，DIN 6–17。"
+    },
+    "women": {
+      "articleNumber": "A04626",
+      "lengthCm": [155, 158],
+      "radiusMByLength": {"155": 10.9, "158": 11.4},
+      "dimensionsMm": {"tip": 115.4, "waist": 66.01, "tail": 100.7},
+      "dimensionLengthMapping": "官方商品页显示该三围但没有标注对应长度；不可将其分摊到 155/158 cm。",
+      "baseEdgeAngleDeg": 0.5,
+      "sideEdgeAngleDeg": 87,
+      "classification": ["FIS Standard", "Expert", "Competition Race"],
+      "technology": ["Race Code", "M-Plate", "Solid Woodcore", "Noize Control"],
+      "binding": "目录列出 T00425 RC4 Z17 Freeflex ST Brake 85 [A]，DIN 6–17。"
+    },
+    "japanCataloguePrice": {
+      "skiOnlyJPY": 187000,
+      "setJPY": 242000,
+      "bindingJPY": 55000,
+      "convertedSkiOnlyCNY": 7894.68,
+      "exchangeRateDate": "2026-10-19",
+      "eurJpy": 177.63,
+      "eurCny": 7.4991,
+      "jpyCny": 0.042217531
+    },
+    "usStorePrice": {
+      "usd": 1299,
+      "taxAndShipping": "页面注明未含税费与运费；此价格与日本目录的裸板/套装口径未进一步等同。"
+    },
+    "images": [
+      {"articleNumber": "A04026", "httpStatus": 200, "mimeType": "image/png", "displayAuthorization": "待核"},
+      {"articleNumber": "A04626", "httpStatus": 200, "mimeType": "image/png", "displayAuthorization": "待核"}
+    ]
+  },
+  "unresolved": [
+    "中国人民币售价、活动价及可售配置未核实。",
+    "男款和女款均没有可核实的重量数据。",
+    "男款 165 cm 板型三围未在本轮官方来源中找到。",
+    "女款页面三围没有对应长度标记，保留为未映射参考值，不作尺码表参数。",
+    "美国官方 USD 1,299 的具体固定器包含情况未明确；不同地区价格和配置不互推。",
+    "商品图片可访问，但本站展示授权仍待核实。",
+    "官方页未显示品牌用户评价；有谱评分与实测数维持真实空值，不录入编辑模拟评分。"
+  ],
+  "decisions": [
+    "Men M-Plate 与 Women M-Plate 分开建档，分别按 A04026、A04626 货号识别。",
+    "目录按顺序给出女款 155/158 cm 与 10.9/11.4 m 半径，映射按同一表格顺序录入；商品页展示的三围没有尺码映射，故不放入逐码尺寸表。",
+    "价格仅使用日本官方目录裸板价 JPY 187,000 折算 CNY 7,894.68；不把固定器套装价与裸板价混用。"
+  ]
+}

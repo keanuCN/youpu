@@ -1,0 +1,18 @@
+{
+  "snapshotDate": "2026-10-20",
+  "scope": "Fischer RC4 Worldcup Noize SL Men/Women M-Plate 新增档案的字段缺口；不是全站滑雪目录重算。全量基线仍见滑雪数据缺口-2026-10-15.json。",
+  "products": [
+    {
+      "slug": "fischer-rc4-worldcup-noize-sl-men-m-plate-2027",
+      "articleNumber": "A04026",
+      "confirmed": ["165 cm", "R 12 m", "FIS Standard", "Expert / Competition Race", "M-Plate / Noize Control / Solid Woodcore", "日本官方不含固定器双板参考价"],
+      "unresolved": ["中国人民币售价与成交价", "板头/板腰/板尾完整尺寸", "可比重量", "美国 USD 1,299 商品配置是否含固定器", "商品图片本站展示授权", "有谱用户评分与实测条数（等待真实用户数据）"]
+    },
+    {
+      "slug": "fischer-rc4-worldcup-noize-sl-women-m-plate-2027",
+      "articleNumber": "A04626",
+      "confirmed": ["155 / 158 cm", "R 10.9 / 11.4 m（官方目录尺码顺序）", "FIS Standard", "Expert / Competition Race", "M-Plate / Noize Control / Solid Woodcore", "日本官方不含固定器双板参考价"],
+      "unresolved": ["中国人民币售价与成交价", "官方页面所示 115.4-66.01-100.7 mm 三围对应的具体板长", "可比重量", "美国 USD 1,299 商品配置是否含固定器", "商品图片本站展示授权", "有谱用户评分与实测条数（等待真实用户数据）"]
+    }
+  ]
+}

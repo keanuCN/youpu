@@ -1,0 +1,45 @@
+slug: fischer-rc4-worldcup-noize-sl-men-m-plate-2027
+category: skis
+brand: fischer
+model: RC4 Worldcup Noize SL Men M-Plate
+year: 2027
+title: Fischer RC4 Worldcup Noize SL Men M-Plate 2026/27
+price:
+  min: 7894.68
+  max: 7894.68
+  currency: CNY
+one_liner: FIS 标准竞赛回转板，165 cm、12 m 半径，配 M-Plate；官方将其定位为专家级竞赛器材。
+specs:
+  articleNumber: A04026
+  lengthOptions: 165 cm
+  turnRadius: 12
+  turnRadiusReferenceLength: 165 cm
+  sidecutDimensions: 官方当前商品页与 26/27 目录未提供该型号完整板头-板腰-板尾尺寸，暂不补推。
+  core: Solid Woodcore 实木芯
+  construction: Race Code；M-Plate；FIS Standard
+  technologies: Noize Control；实木芯；M-Plate；Race Code
+  baseEdgeAngle: 0.3
+  sideEdgeAngle: 87
+  terrain: 雪道 / 回转 / 竞赛
+  skierLevel: 专家级（品牌官方标注）
+  bindingSetup: Fischer 日本 26/27 目录列配 RC4 Z17 Freeflex ST Brake 85 [A]（T00425，DIN 6–17）；该页面美国售价是否含固定器未说明，需按地区 SKU 核对。
+  geometryNotes: 官方页面列唯一长度 165 cm 与半径 12 m；未提供板型三围、重量或逐码其他尺寸，不作推算。
+  weightBasis: Fischer 26/27 目录未列该 SKU 可核实的重量。
+  seasonEvidence: Fischer 官方 26/27 Alpine 目录列出货号 A04026；美国官方商品页名称为 RC4 WORLDCUP NOIZE SL MEN M-PLATE。
+  sourceCheckedAt: 2026-10-20
+  compatibilitySources: https://www.fischersports.com/us_en/rc4-worldcup-noize-sl-men-m-plate/A04026 ; https://www.fischersports.jp/asset/pdf/book/fischer_alpine_2627_sp.pdf
+  officialPrice: JPY 187,000（日本官方 26/27 目录，不含固定器双板价）；另列 JPY 242,000 固定器套装价
+  priceMarket: Fischer 日本官方 26/27 Alpine 目录
+  priceSource: https://www.fischersports.jp/asset/pdf/book/fischer_alpine_2627_sp.pdf
+  exchangeRateSource: ECB 2026-10-19 EUR/JPY 177.63、EUR/CNY 7.4991；折算 JPY/CNY 0.042217531
+  priceStatus: 日本官方 26/27 目录列不含固定器双板价 JPY 187,000、套装价 JPY 242,000（含 JPY 55,000 固定器）；不含固定器双板价按 ECB 2026-10-19 参考汇率折合 CNY 7,894.68。仅为日本地区目录参考，不是中国售价，未计跨境运费、税费或支付汇兑成本。美国官方商品页另列 USD 1,299（未含税费及运费），价格范围与配置未据此推定。
+data_source:
+  kind: official
+  origin_url: https://www.fischersports.com/us_en/rc4-worldcup-noize-sl-men-m-plate/A04026
+images:
+  - url: https://www.fischersports.com/media/3072x4096/7c/79/0e/1789999293/a04026_rc4_noize_sl_01.png
+    kind: face
+    alt: Fischer RC4 Worldcup Noize SL Men M-Plate 2026/27 雪板商品图
+    source: Fischer 美国官方商品页图片；HTTP 200，图片展示授权待核
+    sort_order: 0
+status: published

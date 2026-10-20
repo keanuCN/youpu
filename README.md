@@ -467,6 +467,8 @@ Jones Mountain Twin J.26 原人民币数值 CNY 5,899 缺少可回查来源。�
 
 ## 滑雪数据持续核验
 
+2026-10-20 新增 Fischer RC4 Worldcup Noize SL Men M-Plate（A04026）与 Women M-Plate（A04626）26/27 双板档案：补录原厂板长、半径、竞赛定位、刃角、M-Plate / Noize Control 结构及日本官方目录价格折算。中国售价、男款三围、重量和商品图片展示授权仍待核；评分与实测数未伪造。详见[数据补充记录](docs/Fischer-RC4-Noize-SL-数据补充-2026-10-20.md)、[本批缺口清单](docs/滑雪数据缺口-2026-10-20.json)和[来源审计](data/raw/skis/fischer-rc4-worldcup-noize-sl-2026-27.json)。
+
 2026-10-15 Rossignol Forza 50° CAM KONECT 补入 25/26 目录与 26/27 官方延续销售依据；美国官网逐码重量与目录无固定器双只重量明显冲突，因此重量继续待核、未录入参数。详见[Forza 50 逐码审计](data/raw/skis/rossignol/forza-50-cam-2025-26.json)和[滑雪数据补充记录](docs/滑雪数据补充-2026-10-15.md)。
 
 2026-10-15 Rossignol Forza 40° CA Xpress 2026/27 补入五档双只重量零售表，逐行注明与官方重量字段的冲突及固定器口径未明；未将其标成裸板重量。详见[Forza 40 重量审计](data/raw/skis/rossignol/forza-40-ca-xpress-2026-27-weight-audit.json)。

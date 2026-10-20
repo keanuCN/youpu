@@ -1,0 +1,47 @@
+slug: fischer-rc4-worldcup-noize-sl-women-m-plate-2027
+category: skis
+brand: fischer
+model: RC4 Worldcup Noize SL Women M-Plate
+year: 2027
+title: Fischer RC4 Worldcup Noize SL Women M-Plate 2026/27
+price:
+  min: 7894.68
+  max: 7894.68
+  currency: CNY
+one_liner: FIS 标准竞赛回转板，提供 155/158 cm，品牌标注专家级；官方资料强调快速换刃与 Noize Control 减振。
+specs:
+  articleNumber: A04626
+  lengthOptions: 155 / 158 cm
+  waistWidth: 66.01
+  turnRadius: 11.4
+  turnRadiusReferenceLength: 158 cm
+  sidecutDimensions: 官方商品页显示 115.4-66.01-100.7 mm，但没有将这组三围标注到具体长度；不外推至其它尺码。
+  core: Solid Woodcore 实木芯
+  construction: Race Code；M-Plate；FIS Standard
+  technologies: Noize Control；实木芯；M-Plate；Race Code
+  baseEdgeAngle: 0.5
+  sideEdgeAngle: 87
+  terrain: 雪道 / 回转 / 竞赛
+  skierLevel: 专家级（品牌官方标注）
+  bindingSetup: Fischer 日本 26/27 目录列配 RC4 Z17 Freeflex ST Brake 85 [A]（T00425，DIN 6–17）；该页面美国售价是否含固定器未说明，需按地区 SKU 核对。
+  bindingCompatibility: 竞赛固定器须按雪靴标准、鞋底长度及品牌安装要求由专业雪具店匹配并校验释放值；不能仅凭板型判断兼容性。
+  geometryNotes: 官方产品页提供 155/158 cm 选项及 11.4 m 页面半径；26/27 目录按顺序列出 155/158 cm 与 10.9/11.4 m 半径，本记录保留此尺码对应关系。官方商品页显示的三围未指明对应长度，保持未映射。
+  weightBasis: Fischer 26/27 目录未列该 SKU 可核实的重量。
+  seasonEvidence: Fischer 官方 26/27 Alpine 目录列出货号 A04626；美国官方商品页名称为 RC4 WORLDCUP NOIZE SL WOMEN M-PLATE。
+  sourceCheckedAt: 2026-10-20
+  compatibilitySources: https://www.fischersports.com/us_en/rc4-worldcup-noize-sl-women-m-plate/A04626 ; https://www.fischersports.jp/asset/pdf/book/fischer_alpine_2627_sp.pdf
+  officialPrice: JPY 187,000（日本官方 26/27 目录，不含固定器双板价）；另列 JPY 242,000 固定器套装价
+  priceMarket: Fischer 日本官方 26/27 Alpine 目录
+  priceSource: https://www.fischersports.jp/asset/pdf/book/fischer_alpine_2627_sp.pdf
+  exchangeRateSource: ECB 2026-10-19 EUR/JPY 177.63、EUR/CNY 7.4991；折算 JPY/CNY 0.042217531
+  priceStatus: 日本官方 26/27 目录列不含固定器双板价 JPY 187,000、套装价 JPY 242,000（含 JPY 55,000 固定器）；不含固定器双板价按 ECB 2026-10-19 参考汇率折合 CNY 7,894.68。仅为日本地区目录参考，不是中国售价，未计跨境运费、税费或支付汇兑成本。美国官方商品页另列 USD 1,299（未含税费及运费），价格范围与配置未据此推定。
+data_source:
+  kind: official
+  origin_url: https://www.fischersports.com/us_en/rc4-worldcup-noize-sl-women-m-plate/A04626
+images:
+  - url: https://www.fischersports.com/media/3072x4096/4b/82/e7/1789999296/a04626_rc4_noize_sl_01.png
+    kind: face
+    alt: Fischer RC4 Worldcup Noize SL Women M-Plate 2026/27 雪板商品图
+    source: Fischer 美国官方商品页图片；HTTP 200，图片展示授权待核
+    sort_order: 0
+status: published
