@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Compass, Trophy } from "lucide-react";
 import { FallbackNotice, GearGridSkeleton, LoadingStatus, RankRowsSkeleton } from "@/components/gear/data-state";
 import { GearCard, GearRow } from "@/components/gear/gear-card";
@@ -13,14 +13,15 @@ import { GEAR, getGear } from "@/data/boards";
 import { HERO_IMAGE_POOL } from "@/data/assets";
 import { CATEGORY_LEAVES, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { helpfulOf, rankRows } from "@/lib/domain";
-import { getCategoryProducts, resolveContentSource } from "@/lib/content";
 import { timeAgo } from "@/lib/format";
 import { usePersisted } from "@/lib/store";
 import type { GearItem } from "@/types";
 
-export default function HomePage() {
+type HeroImage = (typeof HERO_IMAGE_POOL)[number];
+
+export default function HomePage({ initialHeroImage }: { initialHeroImage: HeroImage }) {
   const snapshot = usePersisted();
-  const categoryCounts = useLiveCategoryCounts();
+  const { categoryCounts, categoryEntriesRef } = useLiveCategoryCounts();
   const liveCategories = CATEGORY_LEAVES.filter((category) => category.status === "live");
   const catalogCount = liveCategories.reduce((sum, category) => sum + (categoryCounts[category.slug] ?? 0), 0);
   const snowboardCount = categoryCounts.snowboard ?? GEAR.length;
@@ -44,7 +45,7 @@ export default function HomePage() {
     const localPool = GEAR.filter((gear) => gear.categorySlug === featuredSlug);
     setFeaturedPool(localPool);
     setFeaturedFallback(false);
-    if (resolveContentSource() === "pack") {
+    if (process.env.NEXT_PUBLIC_CONTENT_SOURCE !== "api") {
       setFeaturedLoading(false);
       return () => {
         cancelled = true;
@@ -52,26 +53,40 @@ export default function HomePage() {
     }
 
     setFeaturedLoading(true);
-    void getCategoryProducts(featuredSlug, {
-      source: "api",
-      onFallback: () => {
-        if (!cancelled) setFeaturedFallback(true);
-      },
-    }).then((next) => {
-      if (cancelled) return;
-      setFeaturedPool(next);
-      setFeaturedLoading(false);
-    });
+    const timer = window.setTimeout(() => {
+      void import("@/lib/content").then(({ getCategoryProducts }) =>
+        getCategoryProducts(featuredSlug, {
+          source: "api",
+          onFallback: () => {
+            if (!cancelled) setFeaturedFallback(true);
+          },
+        }),
+      ).then((next) => {
+        if (cancelled) return;
+        setFeaturedPool(next);
+        setFeaturedLoading(false);
+      }).catch(() => {
+        if (cancelled) return;
+        setFeaturedFallback(true);
+        setFeaturedLoading(false);
+      });
+    }, featuredRetry === 0 && featuredSlug === "snowboard" ? 1200 : 0);
     return () => {
       cancelled = true;
+      window.clearTimeout(timer);
     };
   }, [featuredRetry, featuredSlug]);
 
   return (
     <div>
-      <Cover catalogCount={catalogCount} liveCategoryCount={liveCategories.length} liveCategoryNames={liveCategoryNames} />
+      <Cover
+        heroImage={initialHeroImage}
+        catalogCount={catalogCount}
+        liveCategoryCount={liveCategories.length}
+        liveCategoryNames={liveCategoryNames}
+      />
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
-        <CategoryEntries categoryCounts={categoryCounts} />
+        <CategoryEntries categoryCounts={categoryCounts} sectionRef={categoryEntriesRef} />
 
         <section className="reveal reveal-up mt-20">
           <FeaturedCategorySwitch categories={liveCategories} value={featuredSlug} onChange={setFeaturedSlug} />
@@ -222,29 +237,21 @@ function FeaturedCategorySwitch({
 }
 
 function Cover({
+  heroImage,
   catalogCount,
   liveCategoryCount,
   liveCategoryNames,
 }: {
+  heroImage: HeroImage;
   catalogCount: number;
   liveCategoryCount: number;
   liveCategoryNames: string;
 }) {
-  const [heroImage, setHeroImage] = useState<(typeof HERO_IMAGE_POOL)[number] | null>(null);
-  const [heroImageReady, setHeroImageReady] = useState(false);
-
-  useEffect(() => {
-    // Skip the illustrated fallback: the hero should show a resort photo from its first render.
-    const resortImages = HERO_IMAGE_POOL.slice(1);
-    const randomIndex = Math.floor(Math.random() * resortImages.length);
-    setHeroImage(resortImages[randomIndex] ?? HERO_IMAGE_POOL[0]);
-  }, []);
-
   return (
     <section className="relative border-b border-foreground">
       <div className="grid xl:grid-cols-[1.15fr_1fr] xl:grid-rows-[640px]">
         <div className="group relative order-2 aspect-[4/3] min-h-0 overflow-hidden bg-secondary xl:order-1 xl:aspect-auto xl:h-full">
-          {heroImage ? <SafeImage
+          <SafeImage
             src={heroImage.src}
             srcSet={heroImage.srcSet}
             sizes="(min-width: 1440px) 714px, (min-width: 1024px) calc((100vw - 64px) * 0.535), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
@@ -254,10 +261,8 @@ function Cover({
             loading="eager"
             fetchPriority="high"
             decoding="async"
-            className={`plate h-full w-full object-cover ${heroImageReady ? 'opacity-100' : 'opacity-0'}`}
-            onLoad={() => setHeroImageReady(true)}
-            onError={() => setHeroImageReady(true)}
-          /> : null}
+            className="plate h-full w-full object-cover"
+          />
           <div className="dot-grid pointer-events-none absolute inset-0" />
           <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-3 bg-gradient-to-t from-foreground/80 to-transparent p-5 sm:p-8">
             <p className="mono-label text-background/80">雪场实测 · 崇礼 / 可可托海 / 将军山</p>
@@ -315,32 +320,71 @@ function Cover({
   );
 }
 
-function useLiveCategoryCounts(): Record<string, number> {
-  const [categoryCounts, setCategoryCounts] = useState<Record<string, number>>({ snowboard: GEAR.length });
+function useLiveCategoryCounts() {
+  const categoryEntriesRef = useRef<HTMLElement>(null);
+  const [categoryCounts, setCategoryCounts] = useState<Record<string, number>>(() =>
+    GEAR.reduce<Record<string, number>>((counts, gear) => {
+      counts[gear.categorySlug] = (counts[gear.categorySlug] ?? 0) + 1;
+      return counts;
+    }, {}),
+  );
 
   useEffect(() => {
+    if (process.env.NEXT_PUBLIC_CONTENT_SOURCE !== "api") return;
     let cancelled = false;
-    const liveSlugs = CATEGORY_LEAVES.filter((category) => category.status === "live").map((category) => category.slug);
-    void Promise.all(
-      liveSlugs.map(async (slug) => [slug, (await getCategoryProducts(slug)).length] as const),
-    ).then((entries) => {
-      if (!cancelled) setCategoryCounts(Object.fromEntries(entries));
+    const target = categoryEntriesRef.current;
+    if (!target) return;
+
+    const loadCounts = () => {
+      void import("@/lib/content").then(({ getCategoryProductCount }) =>
+        Promise.all(
+          CATEGORY_LEAVES
+            .filter((category) => category.status === "live")
+            .map(async (category) => [category.slug, await getCategoryProductCount(category.slug, { source: "api" })] as const),
+        ),
+      ).then((entries) => {
+        if (!cancelled) setCategoryCounts(Object.fromEntries(entries));
+      }).catch(() => {
+        // 首页继续使用本地快照计数；分类内容本身不依赖这组汇总请求。
+      });
+    };
+
+    if (typeof IntersectionObserver === "undefined") {
+      loadCounts();
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return;
+      observer.disconnect();
+      loadCounts();
     });
+    observer.observe(target);
+
     return () => {
       cancelled = true;
+      observer.disconnect();
     };
   }, []);
 
-  return categoryCounts;
+  return { categoryCounts, categoryEntriesRef };
 }
 
-function CategoryEntries({ categoryCounts }: { categoryCounts: Record<string, number> }) {
+function CategoryEntries({
+  categoryCounts,
+  sectionRef,
+}: {
+  categoryCounts: Record<string, number>;
+  sectionRef: React.RefObject<HTMLElement>;
+}) {
   const liveCategories = CATEGORY_LEAVES.filter((category) => category.status === "live");
   const previewCategories = liveCategories.slice(0, 8);
   const remainingCount = CATEGORY_LEAVES.length - previewCategories.length;
 
   return (
-    <section id="categories" className="reveal mt-16 scroll-mt-32">
+    <section ref={sectionRef} id="categories" className="reveal mt-16 scroll-mt-32">
       <SectionHead index="00" title="品类入口" titleEn="Categories" desc="已开档品类可直接浏览；其余品类共用同一套模板引擎，配置就绪即上线。" />
       <div className="grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
         {previewCategories.map((c) => {

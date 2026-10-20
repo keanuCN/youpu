@@ -280,6 +280,24 @@ export async function getCategoryProducts(slug: string, options: ContentOptions 
   }
 }
 
+/** 首页分类卡片只需要总数，避免为了计数下载整个品类的商品列表。 */
+export async function getCategoryProductCount(slug: string, options: ContentOptions = {}): Promise<number> {
+  const fallbackCount = gearOfCategory(slug).length;
+  if ((options.source ?? resolveContentSource()) === "pack" || !isLive(slug)) return fallbackCount;
+
+  try {
+    const page = await requestJson(
+      `/api/products?category=${encodeURIComponent(slug)}&page=1&pageSize=1`,
+      productListResponseSchema,
+      options.fetcher ?? fetch,
+    );
+    return page.total;
+  } catch (error) {
+    options.onFallback?.(error);
+    return fallbackCount;
+  }
+}
+
 export async function getProductDetail(id: string, options: ContentOptions = {}): Promise<GearItem | undefined> {
   const fallback = getGear(id);
   if ((options.source ?? resolveContentSource()) === "pack") return fallback;
