@@ -314,8 +314,28 @@ export interface RankRow {
   rank: number;
 }
 
-export function voteCount(s: Persisted, rankKey: string, gearId: string): number {
-  const base = isCuratedBaselineEnabled() ? BASE_VOTES[rankKey]?.[gearId] ?? 0 : 0;
+const SKIING_CATEGORY_SLUGS = new Set(["snowboard", "snowboard-binding", "snowboard-boot", "skis", "skiing-apparel"]);
+
+function simulatedSkiingVoteCount(gearId: string, rankKey: string, gearOverride?: GearItem): number {
+  const gear = gearOverride ?? GEAR_BY_ID[gearId];
+  if (!gear || !SKIING_CATEGORY_SLUGS.has(gear.categorySlug)) return 0;
+
+  // Stable cold-start counts keep new ski products from appearing to have no community activity.
+  // These are explicitly simulated display data, not user-submitted votes.
+  const seed = `${gearId}:${rankKey}`;
+  const variation = [...seed].reduce((value, char) => (value * 31 + char.charCodeAt(0)) % 23, 7);
+  const popularity = Math.round(Math.max(0, Math.min(gear.heat, 10000)) / 1000 * 9);
+  const editorialSignal = Math.round((gear.composite ?? 0) / 10);
+  return 18 + popularity + editorialSignal + variation;
+}
+
+export function voteCount(s: Persisted, rankKey: string, gearId: string, categorySlug?: string, gear?: GearItem): number {
+  const curatedEnabled = isCuratedBaselineEnabled();
+  const configuredBase = curatedEnabled ? BASE_VOTES[rankKey]?.[gearId] ?? 0 : 0;
+  const simulatedBase = curatedEnabled && categorySlug && SKIING_CATEGORY_SLUGS.has(categorySlug)
+    ? simulatedSkiingVoteCount(gearId, rankKey, gear)
+    : 0;
+  const base = configuredBase || simulatedBase;
   let extra = 0;
   for (const list of Object.values(s.votes)) {
     for (const v of list) if (v.rankKey === rankKey && v.gearId === gearId && v.season === SEASON) extra += 1;
@@ -348,7 +368,7 @@ export function rankRows(
     return {
       gear: g,
       dataScore: Math.round((ratingPart + heatPart + hardPart + userPart) * 10) / 10,
-      votes: voteCount(s, rankKey, g.id),
+      votes: voteCount(s, rankKey, g.id, categorySlug, g),
     };
   });
   const maxVotes = Math.max(1, ...withData.map((d) => d.votes));

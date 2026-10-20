@@ -18,7 +18,7 @@ export default function SoonClient({ slug }: { slug: string }) {
   return (
     <div className="mx-auto max-w-[1000px] px-5 py-12 sm:px-8">
       <PageHead
-        kicker="COMING SOON"
+        kicker="即将开放"
         title={`${category?.name ?? slug} 品类筹备中`}
         titleEn={category?.nameEn}
         desc="有谱的所有品类共用同一套模板引擎：参数分组、评分维度、筛选维度、榜单口径与问卷都由配置驱动。这个品类的配置写好后，页面会自动长出来，不需要改一行代码。"
@@ -63,7 +63,7 @@ export default function SoonClient({ slug }: { slug: string }) {
                       <span className="mono-label block truncate">{n.path.join(" / ")}</span>
                       <span className="block truncate text-[14px] font-medium">{n.name}</span>
                     </span>
-                    <span className={cn("mono-label shrink-0", live && "text-primary")}>{live ? "LIVE" : "SOON"}</span>
+                    <span className={cn("mono-label shrink-0", live && "text-primary")}>{live ? "已上线" : "即将开放"}</span>
                   </Link>
                 );
               })}

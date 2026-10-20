@@ -71,9 +71,9 @@ export function SiteHeader() {
       <div className="hidden border-b border-border lg:block">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-8 py-1.5">
           <p className="mono-label">
-            {BRAND.archive} · {BRAND.archiveEn.toUpperCase()}
+            {BRAND.archive}
           </p>
-          <p className="mono-label">ISSUE No.42 · {BRAND.tagline}</p>
+          <p className="mono-label">第 42 期 · {BRAND.tagline}</p>
         </div>
       </div>
 
@@ -202,7 +202,7 @@ export function SiteHeader() {
           <Popover>
             <PopoverTrigger asChild>
               <button type="button" className="flex items-center gap-2 border border-border px-2 py-1 hover:border-foreground">
-                <Avatar seed={profile.avatarSeed} name={profile.username} />
+                <Avatar seed={profile.avatarSeed} name={profile.username} avatarUrl={profile.avatarUrl} />
                 <span className="mono-label hidden max-w-24 truncate sm:inline">{profile.username}</span>
               </button>
             </PopoverTrigger>
@@ -211,7 +211,9 @@ export function SiteHeader() {
                 <p className="text-[13px] font-medium">{profile.username}</p>
                 <p className="mono-label mt-1">{profile.email || "未设置邮箱"}</p>
                 <p className="mono-label mt-2 text-foreground/70">
-                  {profile.level} · {profile.years} 年雪龄
+                  {profile.level || profile.years !== undefined
+                    ? [profile.level, profile.years !== undefined ? `${profile.years} 年雪龄` : undefined].filter(Boolean).join(" · ")
+                    : "滑雪资料未填写"}
                 </p>
               </div>
               <Link href="/me" className="block border-b border-border px-3 py-2.5 text-[13px] hover:bg-accent">
@@ -319,22 +321,22 @@ function NotificationList() {
   );
 }
 
-export function Avatar({ seed, name, size = 24 }: { seed: string; name: string; size?: number }) {
+export function Avatar({ seed, name, size = 24, avatarUrl }: { seed: string; name: string; size?: number; avatarUrl?: string }) {
   let h = 0;
   for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
   const hue = h % 360;
   return (
     <span
-      className="mono-data flex shrink-0 items-center justify-center font-medium text-background"
+      className="mono-data flex shrink-0 items-center justify-center overflow-hidden font-medium text-background"
       style={{
         width: size,
         height: size,
         fontSize: size * 0.44,
         background: `oklch(0.45 0.09 ${hue})`,
       }}
-      aria-hidden
+      aria-label={`${name}的头像`}
     >
-      {name.slice(0, 1).toUpperCase()}
+      {avatarUrl ? <img src={avatarUrl} alt="" className="h-full w-full object-cover" /> : name.slice(0, 1).toUpperCase()}
     </span>
   );
 }

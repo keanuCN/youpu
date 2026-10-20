@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-19",
+  "product": {
+    "brand": "K2",
+    "model": "Wayback 98 Men's Skis 2027",
+    "articleNumber": "KS261807",
+    "seed": "data/skis/k2-wayback-98-2027.yaml",
+    "season": "2026/27",
+    "source": "https://k2snow.com/en-pl/p/wayback-98-mens-skis-ks261807",
+    "evidenceLevel": "品牌官方商品页直接证据"
+  },
+  "verifiedFacts": {
+    "sizesCm": [165, 172, 179, 186],
+    "referenceLengthCm": 179,
+    "sidecutMm": [126, 98, 114],
+    "turnRadiusM": 22.1,
+    "weightGramsPerSkiWithoutPlate": 1390,
+    "terrainLabel": "Touring",
+    "abilityLabels": ["Intermediate", "Advanced", "Expert"],
+    "bindingIncluded": false,
+    "core": "Paulownia Tour Light",
+    "constructionTechnologies": ["All-Terrain Rocker", "Bio Resin", "Titanal Touring Tech", "Snowphobic Topsheet"]
+  },
+  "price": {
+    "status": "未纳入种子",
+    "reason": "官方商品页在本次核验时显示官网不可购买，并提示到门店查询。搜索索引曾显示 USD 799.95，但无法在可核验的当前商品页复现；未据此折算人民币，也未将其视为挂牌价。",
+    "unverifiedLead": {
+      "currency": "USD",
+      "amount": 799.95,
+      "market": "美国地区搜索索引",
+      "source": "https://k2snow.com/en-us/wayback",
+      "decision": "仅记录为未核实线索，不作为产品价格"
+    }
+  },
+  "unresolved": [
+    "可复核的地区挂牌价与价格日期；无法确认当前是否可购买。",
+    "其它长度逐码几何、逐码重量。",
+    "商品图片的前台展示授权。",
+    "本地编辑评分与真实用户评分、实测条数；不创建示例评分或实测。"
+  ],
+  "sources": [
+    {
+      "url": "https://k2snow.com/en-pl/p/wayback-98-mens-skis-ks261807",
+      "type": "K2 官方商品页",
+      "accessedAt": "2026-10-19",
+      "supports": "货号、2027 型号身份、长度、参考几何、单只重量、用途、能力等级、固定器是否包含、结构技术"
+    },
+    {
+      "url": "https://k2snow.com/en-us/wayback",
+      "type": "K2 Wayback 官方系列页",
+      "accessedAt": "2026-10-19",
+      "supports": "系列用途和型号概览；搜索索引价格因当前商品页无法复核而不作为价格证据"
+    }
+  ]
+}

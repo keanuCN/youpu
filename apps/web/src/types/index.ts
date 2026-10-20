@@ -164,11 +164,11 @@ export interface GearItem {
 }
 
 export interface ReviewerMeta {
-  years: number;
-  heightCm: number;
+  years?: number;
+  heightCm?: number;
   weightKg?: number;
-  level: string;
-  resort: string;
+  level?: string;
+  resort?: string;
 }
 
 export interface Review {
@@ -230,10 +230,11 @@ export interface Profile {
   username: string;
   email: string;
   avatarSeed: string;
-  years: number;
-  heightCm: number;
-  weightKg: number;
-  level: string;
+  avatarUrl?: string;
+  years?: number;
+  heightCm?: number;
+  weightKg?: number;
+  level?: string;
   resort: string;
 }
 

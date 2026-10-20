@@ -14,7 +14,7 @@ specs:
   waistWidth: 70
   turnRadius: 13.8
   turnRadiusReferenceLength: 164 cm
-  sidecutDimensions: "网页技术参数显示 123-72-104 mm；产品介绍称板腰 70 mm，存在标注冲突，未合并成单一结论。"
+  sidecutDimensions: "Stöckli 2026/27 官方手册按长度列出 152/158/164/170/176 cm 均为 120-70-102 mm；官方当前商品页另显示 123-72-104 mm，与该雪季手册冲突。"
   core: Piste Race Core（Race Core）
   construction: Sandwich System；Racing Sidewalls Black；Polyamid 表层；Racing-Graphite 底板
   technologies: FTC Flex Torsion Control；FEC Full Edge Contact；SME Solid Metal Edge；SOC Size Optimized Construction
@@ -23,9 +23,10 @@ specs:
   terrain: 雪道 / 刻滑 / 多弯型
   skierLevel: 进阶至专家
   bindingSetup: 可选多种 Stöckli 板台与绑定配置；基础型号未固定为单一套装
-  geometryNotes: Stöckli 官方当前产品页给出 152/11.6、158/12.7、164/13.8、170/14.9、176/16.0 m；同页截面标 123-72-104 mm，但文案另称 70 mm 板腰。重量未公开。
+  geometryNotes: Stöckli Winter 2026/27 官方 Workbook 按货号 41010127-20 列出五个长度的几何：152/11.6、158/12.7、164/13.8、170/14.9、176/16.0 m，逐长截面均为 120-70-102 mm。官方当前商品页技术参数显示 123-72-104 mm，但产品介绍亦称 70 mm 腰宽；当前页与当季手册冲突，本档以雪季对应的官方手册为准并保留冲突说明。重量未公开。
   seasonEvidence: 官方产品页货号 41010127-20；Stöckli Winter 2026/27 Workbook 将 Laser SC 列入当季型录。
-  sourceCheckedAt: 2026-10-17
+  sourceCheckedAt: 2026-10-20
+  compatibilitySources: https://www.stoeckli.ch/inten/ski/ski/race/laser-sc; https://www.stoeckli.ch/media/contentmanager/content/File/Workbook-Winter-2026-27.pdf
   officialPrice: EUR 1,199 起（含 VAT；绑定选项另计）
   priceMarket: Stöckli 欧洲官网
   priceSource: https://www.stoeckli.ch/inten/ski/ski/race/laser-sc

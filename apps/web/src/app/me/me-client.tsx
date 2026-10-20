@@ -20,6 +20,7 @@ import { getCompareProducts, resolveContentSource } from "@/lib/content";
 import { hasEditorialScores } from "@/lib/gear-state";
 import { helpfulOf, reviewsByUser } from "@/lib/domain";
 import { fmtDate, timeAgo } from "@/lib/format";
+import { absoluteUrl } from "@/lib/seo";
 import {
   deleteNotification,
   deleteReview,
@@ -43,6 +44,20 @@ const TABS = [
   { key: "note", label: "通知", icon: Bell },
   { key: "profile", label: "资料设置", icon: User },
 ] as const;
+
+const AVATAR_PRESETS = [
+  { label: "雪线蓝", path: "/avatars/rider-01.svg" },
+  { label: "落日红", path: "/avatars/rider-02.svg" },
+  { label: "松林绿", path: "/avatars/rider-03.svg" },
+  { label: "山雾紫", path: "/avatars/rider-04.svg" },
+  { label: "暖阳金", path: "/avatars/rider-05.svg" },
+  { label: "冰川灰", path: "/avatars/rider-06.svg" },
+] as const;
+
+function avatarPresetUrl(path: string): string {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  return absoluteUrl(`${basePath}${path}`);
+}
 
 type TabKey = (typeof TABS)[number]["key"];
 
@@ -112,7 +127,7 @@ export default function MePage() {
   if (!profile) {
     return (
       <div className="mx-auto max-w-[720px] px-5 py-16 text-center sm:px-8">
-        <p className="mono-label text-primary">ACCOUNT REQUIRED</p>
+        <p className="mono-label text-primary">请先登录</p>
         <h1 className="mt-4 text-[32px] leading-tight font-medium tracking-tight">个人中心需要登录</h1>
         <p className="mx-auto mt-4 max-w-md text-[13.5px] leading-relaxed text-muted-foreground">
           收藏、对比记录、我的评论与通知都绑定在账号上。
@@ -149,13 +164,19 @@ export default function MePage() {
   return (
     <div className="mx-auto max-w-[1400px] px-5 py-10 sm:px-8">
       <PageHead
-        kicker={`MEMBER SINCE ${fmtDate(persisted.accounts.find((a) => a.userKey === profile.userKey)?.createdAt ?? new Date().toISOString())}`}
+        kicker={`注册于 ${fmtDate(persisted.accounts.find((a) => a.userKey === profile.userKey)?.createdAt ?? new Date().toISOString())}`}
         title={profile.username}
-        titleEn="Personal Archive"
-        desc={`${profile.level} · ${profile.years} 年雪龄 / 使用经验 · ${profile.heightCm}cm / ${profile.weightKg}kg${profile.resort ? ` · 常滑 ${profile.resort}` : ""}`}
+        titleEn="个人档案"
+        desc={[
+          profile.level,
+          profile.years !== undefined ? `${profile.years} 年雪龄 / 使用经验` : undefined,
+          profile.heightCm !== undefined ? `${profile.heightCm}cm` : undefined,
+          profile.weightKg !== undefined ? `${profile.weightKg}kg` : undefined,
+          profile.resort ? `常滑 ${profile.resort}` : undefined,
+        ].filter(Boolean).join(" · ") || "个人滑雪资料尚未填写"}
         aside={
           <div className="flex items-center gap-4">
-            <Avatar seed={profile.avatarSeed} name={profile.username} size={56} />
+            <Avatar seed={profile.avatarSeed} name={profile.username} size={56} avatarUrl={profile.avatarUrl} />
             <div className="text-right">
               <p className="mono-data text-[26px] leading-none tnum">{favIds.length + myReviews.length + votes.length}</p>
               <p className="mono-label mt-1.5">条本地记录</p>
@@ -448,12 +469,13 @@ function ProfileForm() {
   const profile = me.profile;
   const [form, setForm] = useState({
     username: profile?.username ?? "",
-    years: profile?.years ?? 1,
-    heightCm: profile?.heightCm ?? 175,
-    weightKg: profile?.weightKg ?? 70,
-    level: profile?.level ?? "中级",
+    years: profile?.years === undefined ? "" : String(profile.years),
+    heightCm: profile?.heightCm === undefined ? "" : String(profile.heightCm),
+    weightKg: profile?.weightKg === undefined ? "" : String(profile.weightKg),
+    level: profile?.level ?? "",
     resort: profile?.resort ?? "",
   });
+  const [avatarUrl, setAvatarUrl] = useState(profile?.avatarUrl ?? "");
   if (!profile) return null;
 
   const field = (key: keyof typeof form, label: string, type = "text") => (
@@ -462,7 +484,7 @@ function ProfileForm() {
       <Input
         type={type}
         value={String(form[key])}
-        onChange={(e) => setForm((f) => ({ ...f, [key]: type === "number" ? Number(e.target.value) : e.target.value }))}
+        onChange={(e) => setForm((f) => ({ ...f, [key]: e.target.value }))}
         className="h-9 rounded-none border-border text-[13px]"
       />
     </div>
@@ -470,7 +492,41 @@ function ProfileForm() {
 
   return (
     <div className="max-w-2xl border border-border p-5">
-      <p className="mono-label mb-4 border-b border-border pb-2.5">档案资料 / PROFILE</p>
+      <p className="mono-label mb-4 border-b border-border pb-2.5">个人资料</p>
+      <div className="mb-5 flex flex-col gap-4 border-b border-border pb-5 sm:flex-row sm:items-center">
+        <Avatar seed={profile.avatarSeed} name={form.username || profile.username} size={72} avatarUrl={avatarUrl || undefined} />
+        <div className="min-w-0 flex-1">
+          <Label className="mono-label">头像</Label>
+          <p className="mt-1 text-xs leading-5 text-muted-foreground">选择一个滑雪主题头像，保存后会同步到账号。</p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => setAvatarUrl("")}
+              aria-pressed={!avatarUrl}
+              className={cn("flex items-center gap-2 border px-2 py-1.5 text-xs transition-colors", !avatarUrl ? "border-primary bg-primary/5" : "border-border hover:border-foreground")}
+            >
+              <Avatar seed={profile.avatarSeed} name={form.username || profile.username} size={28} />
+              默认头像
+            </button>
+            {AVATAR_PRESETS.map((preset) => {
+              const url = avatarPresetUrl(preset.path);
+              const selected = avatarUrl === url;
+              return (
+                <button
+                  key={preset.path}
+                  type="button"
+                  onClick={() => setAvatarUrl(url)}
+                  aria-label={`选择${preset.label}头像`}
+                  aria-pressed={selected}
+                  className={cn("border p-1 transition-colors", selected ? "border-primary bg-primary/5" : "border-border hover:border-foreground")}
+                >
+                  <Avatar seed={profile.avatarSeed} name={preset.label} size={32} avatarUrl={url} />
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
       <div className="grid gap-4 sm:grid-cols-2">
         {field("username", "昵称")}
         {field("resort", "常滑场地")}
@@ -484,6 +540,7 @@ function ProfileForm() {
             onChange={(e) => setForm((f) => ({ ...f, level: e.target.value }))}
             className="h-9 w-full rounded-none border border-border bg-transparent px-2 text-[13px] outline-none focus:border-foreground"
           >
+            <option value="">未填写</option>
             {["新手", "中级", "进阶", "高阶"].map((l) => (
               <option key={l} value={l}>
                 {l}
@@ -496,18 +553,31 @@ function ProfileForm() {
       <div className="mt-5 flex gap-2 border-t border-border pt-4">
         <Button
           onClick={async () => {
-            updateProfile(form);
+            const years = form.years === "" ? undefined : Number(form.years);
+            const heightCm = form.heightCm === "" ? undefined : Number(form.heightCm);
+            const weightKg = form.weightKg === "" ? undefined : Number(form.weightKg);
+            const profilePatch = {
+              username: form.username.trim(),
+              years,
+              heightCm,
+              weightKg,
+              level: form.level || undefined,
+              resort: form.resort.trim(),
+              avatarUrl: avatarUrl || undefined,
+            };
+            updateProfile(profilePatch);
             if (hasCloudSession()) {
               try {
                 await cloudUpdateMe({
                   nickname: form.username.trim(),
-                  riderProfile: {
-                    years: Number(form.years) || 1,
-                    height: Number(form.heightCm) || 175,
-                    weight: Number(form.weightKg) || 70,
-                    level: profileLevelToApi(form.level),
+                  avatarUrl: avatarUrl || null,
+                  riderProfile: Object.fromEntries(Object.entries({
+                    years,
+                    height: heightCm,
+                    weight: weightKg,
+                    level: form.level ? profileLevelToApi(form.level) : undefined,
                     home_resort: form.resort.trim() || undefined,
-                  },
+                  }).filter(([, value]) => value !== undefined)),
                 });
               } catch (error) {
                 toast.error(error instanceof Error ? error.message : "云端资料保存失败");

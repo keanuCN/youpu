@@ -1,3 +1,5 @@
+import { SnowboardStyleIllustration } from "./snowboard-style-illustration";
+
 const styles = [
   {
     id: 'style-all-mountain',
@@ -125,33 +127,41 @@ export function SnowboardRidingStyles() {
         <p className="text-sm leading-6 text-muted-foreground">这些风格可以交叉。比如全山滑手也能练刻滑和小跳；公园里的 Big Air、Slopestyle 与半管则是规则和场地不同的项目。</p>
       </header>
 
-      <p className="border-b border-border py-4 text-[13px] leading-6 text-muted-foreground">
-        <span className="mono-label mr-2 text-primary">FIELD NOTES</span>
-        下列观察点是实测记录提纲，不代表本站已经完成这些测试。真实记录应同时写清雪板型号与年份、滑行场地、雪况和个人水平；同一动作或装备在不同条件下的感受可能不同。
+      <p className="border-b border-border py-4 text-xs leading-5 text-muted-foreground">
+        <span className="mono-label mr-2 text-primary">风格说明</span>
+        图示用于快速理解地形与线路，不是动作教学；本站没有把观察提纲冒充成已完成的实测。
       </p>
 
-      <div className="divide-y divide-border">
+      <div className="grid gap-4 pt-5 md:grid-cols-2 xl:grid-cols-3">
         {styles.map((style) => (
-          <section id={style.id} key={style.id} className="scroll-mt-32 grid gap-x-8 gap-y-3 py-6 md:grid-cols-[150px_minmax(0,1fr)] md:py-7">
-            <div>
-              <span className="font-mono text-xs tabular-nums text-primary">{style.index} / STYLE</span>
+          <article id={style.id} key={style.id} className="scroll-mt-32 min-w-0 border border-border bg-background">
+            <div className="aspect-[2/1] overflow-hidden border-b border-border">
+              <SnowboardStyleIllustration id={style.id} />
+            </div>
+            <div className="p-4 md:p-5">
+              <p className="mono-label text-primary">风格 {style.index} · {style.label}</p>
               <h3 className="mt-2 text-lg font-medium tracking-tight">{style.name}</h3>
-              <p className="mt-1 text-[11px] leading-5 text-muted-foreground">{style.label}</p>
+              <p className="mt-2 line-clamp-3 text-[13px] leading-6 text-muted-foreground">{style.summary}</p>
+              <details className="group mt-4 border-t border-border pt-3">
+                <summary className="cursor-pointer list-none text-xs font-medium marker:hidden hover:text-primary">
+                  展开入门与装备建议
+                  <span className="float-right text-muted-foreground transition-transform group-open:rotate-180" aria-hidden="true">⌄</span>
+                </summary>
+                <dl className="mt-4 space-y-3 text-xs leading-5">
+                  <div><dt className="mono-label text-primary">怎么开始</dt><dd className="mt-1 text-muted-foreground">{style.entry}</dd></div>
+                  <div><dt className="mono-label text-primary">装备关注</dt><dd className="mt-1 text-muted-foreground">{style.gear}</dd></div>
+                  <div><dt className="mono-label text-primary">实测记录点</dt><dd className="mt-1 text-muted-foreground">{style.fieldFocus}</dd></div>
+                </dl>
+              </details>
             </div>
-            <div className="grid gap-x-8 gap-y-4 text-[13px] leading-6 sm:grid-cols-2">
-              <div><p className="mono-label text-muted-foreground">玩法是什么</p><p className="mt-1">{style.summary}</p></div>
-              <div><p className="mono-label text-muted-foreground">怎么开始</p><p className="mt-1">{style.entry}</p></div>
-              <div><p className="mono-label text-muted-foreground">装备怎么想</p><p className="mt-1 text-muted-foreground">{style.gear}</p></div>
-              <div><p className="mono-label text-primary">实测观察点</p><p className="mt-1 text-muted-foreground">{style.fieldFocus}</p></div>
-            </div>
-          </section>
+          </article>
         ))}
       </div>
 
       <section id="field-reports" className="scroll-mt-32 border-t-2 border-foreground/80 pt-7 md:pt-8">
         <header className="grid gap-3 md:grid-cols-[minmax(0,1fr)_minmax(240px,0.55fr)] md:items-end">
           <div>
-            <p className="mono-label text-primary">FIELD REPORTS · 外部公开实测</p>
+            <p className="mono-label text-primary">实测评价 · 外部公开资料</p>
             <h3 className="mt-2 text-xl font-medium tracking-tight md:text-2xl">先看清测试条件，再读体验结论。</h3>
           </div>
           <p className="text-xs leading-5 text-muted-foreground">以下为第三方评测或用户自述的摘要，不是有谱用户实测，不计入本站评分；年份、样本量和雪况不同，不能直接横向排名。</p>
@@ -176,7 +186,7 @@ export function SnowboardRidingStyles() {
 
       <div className="mt-6 flex flex-col gap-3 border border-border p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
         <div>
-          <p className="mono-label text-primary">YOUR FIELD REPORT</p>
+          <p className="mono-label text-primary">我的实测记录</p>
           <p className="mt-1 text-sm leading-6">滑过哪款板，就去它的档案写下年份、长度、天数、雪况和玩法。</p>
           <p className="text-xs leading-5 text-muted-foreground">雪龄、体重、水平和常滑场地从个人资料带入。</p>
         </div>

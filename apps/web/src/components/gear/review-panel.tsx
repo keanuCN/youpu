@@ -398,13 +398,13 @@ function ReviewItem({ review, gear, copy, persisted, isCloudReview }: { review: 
 
 function ReviewerMetaLine({ meta, copy }: { meta: ReviewerMeta; copy: ReviewCopy }) {
   const parts = [
-    `${meta.years} 年${copy.experienceLabel}`,
+    meta.years !== undefined ? `${meta.years} 年${copy.experienceLabel}` : null,
     copy.showHeight && meta.heightCm ? `${meta.heightCm}cm` : null,
     copy.showWeight && meta.weightKg ? `${meta.weightKg}kg` : null,
     meta.level,
     meta.resort,
   ].filter(Boolean) as string[];
-  return <p className="mono-label mt-1.5">{parts.join(" · ")}</p>;
+  return <p className="mono-label mt-1.5">{parts.join(" · ") || "未填写个人资料"}</p>;
 }
 
 function ReplyForm({ gear, parentId, cloudParent, onDone }: { gear: GearItem; parentId: string; cloudParent: boolean; onDone: () => void }) {
@@ -432,7 +432,7 @@ function ReplyForm({ gear, parentId, cloudParent, onDone }: { gear: GearItem; pa
       authorName: profile?.username ?? "匿名",
       authorMeta: profile
         ? { years: profile.years, heightCm: profile.heightCm, weightKg: profile.weightKg, level: profile.level, resort: profile.resort }
-        : { years: 1, heightCm: 0, level: "中级", resort: "" },
+        : {},
       parentId,
     });
     track("reply_submit", { rating_id: parentId });
@@ -497,11 +497,11 @@ function ReviewForm({ gear }: { gear: GearItem }) {
       images: [],
       authorName: profile?.username ?? "匿名档案员",
       authorMeta: {
-        years: profile?.years ?? 1,
-        heightCm: copy.showHeight ? profile?.heightCm ?? 175 : 0,
-        weightKg: copy.showWeight ? profile?.weightKg ?? undefined : undefined,
-        level: profile?.level ?? "中级",
-        resort: profile?.resort ?? "",
+        years: profile?.years,
+        heightCm: copy.showHeight ? profile?.heightCm : undefined,
+        weightKg: copy.showWeight ? profile?.weightKg : undefined,
+        level: profile?.level,
+        resort: profile?.resort,
       },
     });
     track("rating_submit", { product_id: gear.id });
@@ -513,7 +513,7 @@ function ReviewForm({ gear }: { gear: GearItem }) {
   return (
     <div className="border border-foreground">
       <div className="flex items-center justify-between border-b border-border bg-secondary/50 px-4 py-2.5">
-        <p className="mono-label">写下你的实测 / FIELD REPORT</p>
+        <p className="mono-label">写下你的实测</p>
         <a href="/me" className="mono-label text-primary hover:underline">使用个人资料 · 修改资料</a>
       </div>
       <div className="space-y-4 p-4">
@@ -623,10 +623,10 @@ function reviewerMeta(...values: unknown[]): ReviewerMeta {
   const merged = values.find((value) => value && typeof value === "object" && !Array.isArray(value)) as Record<string, unknown> | undefined;
   const levelMap: Record<string, string> = { beginner: "新手", intermediate: "中级", advanced: "进阶", expert: "高阶" };
   return {
-    years: Number(merged?.years ?? 1),
-    heightCm: Number(merged?.height ?? 0),
-    weightKg: Number(merged?.weight ?? 0) || undefined,
-    level: levelMap[String(merged?.level ?? "intermediate")] ?? "中级",
+    years: typeof merged?.years === "number" ? merged.years : undefined,
+    heightCm: typeof merged?.height === "number" ? merged.height : undefined,
+    weightKg: typeof merged?.weight === "number" ? merged.weight : undefined,
+    level: merged?.level === undefined ? undefined : levelMap[String(merged.level)] ?? String(merged.level),
     resort: String(merged?.home_resort ?? ""),
   };
 }

@@ -52,7 +52,7 @@ export function SnowboardStanceSimulator() {
     <section id="stance-simulator" aria-labelledby="stance-simulator-title" className="scroll-mt-32 mt-8 border-y border-border bg-secondary/30 p-4 sm:p-6">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <p className="mono-label text-primary">角度模拟 / TOP VIEW</p>
+          <p className="mono-label text-primary">站姿角度模拟 · 俯视图</p>
           <h3 id="stance-simulator-title" className="mt-2 text-lg font-medium tracking-tight">转动脚印，看看站姿变化</h3>
         </div>
         <p className="text-xs text-muted-foreground">俯视示意 · 非安装刻度</p>
@@ -73,11 +73,11 @@ export function SnowboardStanceSimulator() {
                 <circle cx={center} cy="96" r="4" />
               </g>
             ))}
-            <text x="300" y="88" textAnchor="middle" fill="#738188" fontSize="8" letterSpacing="2">CENTER LINE</text>
+            <text x="300" y="88" textAnchor="middle" fill="#738188" fontSize="8" letterSpacing="2">中心线</text>
           </svg>
-          <div className="absolute left-[7%] top-1/2 -translate-y-1/2 rounded-sm bg-[#f4f3ef]/85 px-1.5 py-1 font-mono text-[9px] tracking-[0.16em] text-muted-foreground">TAIL</div>
-          <div className="absolute right-[6%] top-1/2 -translate-y-1/2 rounded-sm bg-[#f4f3ef]/85 px-1.5 py-1 text-right font-mono text-[9px] tracking-[0.12em] text-primary">NOSE →</div>
-          <div className="absolute left-1/2 top-2 -translate-x-1/2 rounded-sm bg-[#f4f3ef]/90 px-2 py-1 font-mono text-[9px] tracking-[0.14em] text-primary">TOE EDGE ↑</div>
+          <div className="absolute left-[7%] top-1/2 -translate-y-1/2 rounded-sm bg-[#f4f3ef]/85 px-1.5 py-1 font-mono text-[9px] tracking-[0.16em] text-muted-foreground">板尾</div>
+          <div className="absolute right-[6%] top-1/2 -translate-y-1/2 rounded-sm bg-[#f4f3ef]/85 px-1.5 py-1 text-right font-mono text-[9px] tracking-[0.12em] text-primary">板头 →</div>
+          <div className="absolute left-1/2 top-2 -translate-x-1/2 rounded-sm bg-[#f4f3ef]/90 px-2 py-1 font-mono text-[9px] tracking-[0.14em] text-primary">脚尖侧刃 ↑</div>
           <Footprint angle={shownFrontAngle} label="前脚" side="front" />
           <Footprint angle={shownRearAngle} label="后脚" side="rear" />
         </div>

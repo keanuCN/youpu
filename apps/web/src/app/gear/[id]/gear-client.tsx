@@ -18,11 +18,13 @@ import { SpecTable } from "@/components/gear/spec-table";
 import { EquipmentBuyingGuide } from "@/components/gear/equipment-buying-guide";
 import { SectionHead } from "@/components/layout/section-head";
 import { reviewCount, userRating } from "@/data/boards";
+import { EXTERNAL_REVIEW_SNAPSHOTS } from "@/data/external-review-snapshots";
 import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear, type CloudRatingsResponse } from "@/lib/api";
 import { formatSpecValue, gearById, pricePosition, sameScenePeers } from "@/lib/domain";
 import { fmtCompact, fmtOfficialPriceCny, fmtPrice } from "@/lib/format";
 import { hasEditorialScores, hasHardcoreIndex, hasPrice, hasUserRating } from "@/lib/gear-state";
+import { isCuratedBaselineEnabled } from "@/lib/curated-content";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
 import { track } from "@/lib/track";
 import { cn } from "@/lib/utils";
@@ -186,6 +188,8 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
   const ratingReady = summary.overall !== null && summary.count > 0;
   const hardcoreReady = gear.categorySlug === "snowboard" && hasHardcoreIndex(gear);
   const categorySignal = categorySignalFor(gear);
+  const externalReview = EXTERNAL_REVIEW_SNAPSHOTS[gear.id];
+  const heat = gear.heat > 0 ? gear.heat : isCuratedBaselineEnabled() && gear.categorySlug === "snowboard" ? simulatedHeat(gear) : 0;
 
   const onDock = () => {
     if (inDock) {
@@ -216,16 +220,25 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
 
       <div className="grid grid-cols-2 gap-x-6 border-b border-border py-5 sm:grid-cols-4">
         <Stat
-          label="用户评分"
+          label="站内评分"
           value={ratingReady ? summary.overall!.toFixed(1) : "—"}
-          sub={ratingReady ? <Stars value={summary.overall!} size={11} className="mt-1" /> : <PendingValue label="暂无实测" className="mt-1 block" />}
+          sub={ratingReady ? <Stars value={summary.overall!} size={11} className="mt-1" /> : (
+            <div className="mt-1 space-y-1">
+              <PendingValue label="暂无站内评分" className="block" />
+              {externalReview ? (
+                <a href={externalReview.url} target="_blank" rel="noreferrer" title={`${externalReview.scope}；核查日期：${externalReview.checkedAt}`} className="block text-[10px] leading-4 text-muted-foreground underline underline-offset-2 hover:text-foreground">
+                  外部旧款参考 {externalReview.rating.toFixed(1)} / 5 · {externalReview.count} 条
+                </a>
+              ) : null}
+            </div>
+          )}
         />
-        <Stat label="实测条数" value={String(summary.count)} sub={<span className="mono-label mt-1 block">FIELD REPORTS</span>} />
+        <Stat label="站内实测" value={String(summary.count)} sub={<span className="mono-label mt-1 block">真实用户记录</span>} />
         <Stat label={categorySignal.label} value={categorySignal.value} sub={<span className="mono-label mt-1 block">{categorySignal.sub}</span>} />
         <Stat
           label="浏览热度"
-          value={gear.heat > 0 ? fmtCompact(gear.heat) : "—"}
-          sub={<span className="mono-label mt-1 block">{gear.heat > 0 ? "近 90 天" : "数据待补"}</span>}
+          value={heat > 0 ? fmtCompact(heat) : "—"}
+          sub={<span className="mono-label mt-1 block">{gear.heat > 0 ? "近 90 天" : heat > 0 ? "冷启动模拟值" : "真实数据待积累"}</span>}
         />
       </div>
 
@@ -342,8 +355,21 @@ function Stat({ label, value, sub }: { label: string; value: string; sub?: React
   );
 }
 
+function simulatedHeat(gear: GearItem): number {
+  const hash = [...gear.id].reduce((value, char) => (value * 33 + char.charCodeAt(0)) % 997, 17);
+  return 1200 + Math.round(gear.composite * 24) + hash;
+}
+
 function categorySignalFor(gear: GearItem): { label: string; value: string; sub: string } {
   if (gear.categorySlug === "snowboard") {
+    const parkScore = gear.scores.park ?? 0;
+    if (!hasHardcoreIndex(gear) && parkScore > 0) {
+      return {
+        label: "公园表现",
+        value: `${parkScore.toFixed(1)} / 10`,
+        sub: "编辑维度评分；参数不足，未计算进阶指数",
+      };
+    }
     return {
       label: "进阶指数",
       value: hasHardcoreIndex(gear) ? String(gear.hardcore) : "—",

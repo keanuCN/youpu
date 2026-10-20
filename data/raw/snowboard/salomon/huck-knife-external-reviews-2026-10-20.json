@@ -1,0 +1,24 @@
+{
+  "brand": "Salomon",
+  "modelFamily": "Huck Knife",
+  "retrievedAt": "2026-10-20",
+  "source": {
+    "url": "https://thesnowfever.com/detail/salomon-huck-knife-snowboard-3899",
+    "publisher": "热雪 SnowFever",
+    "scope": "历史款产品页，页面包含多个年份选项，评价没有明确限定到 2026–27 款",
+    "reviewCount": 5,
+    "ratingDistribution": {
+      "5": 4,
+      "4": 1,
+      "3": 0,
+      "2": 0,
+      "1": 0
+    },
+    "derivedAverage": 4.8
+  },
+  "decision": "只作为外部历史参考展示；不合并进有谱站内评分、实测条数或用户投票。",
+  "officialCurrentSeason": {
+    "url": "https://www.salomon.com/en-us/product/huck-knife-li1304/L49292200?sizeId=L49292200062",
+    "reviewStatus": "官方产品页显示尚无产品评价"
+  }
+}

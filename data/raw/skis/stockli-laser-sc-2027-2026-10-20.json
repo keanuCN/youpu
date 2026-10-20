@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-20",
+  "product": {
+    "brand": "Stöckli",
+    "model": "Laser SC",
+    "articleNumber": "41010127-20",
+    "season": "2026/27",
+    "seed": "data/skis/stockli-laser-sc-2027.yaml"
+  },
+  "sources": [
+    {
+      "url": "https://www.stoeckli.ch/media/contentmanager/content/File/Workbook-Winter-2026-27.pdf",
+      "type": "Stöckli 官方 2026/27 Workbook",
+      "accessedAt": "2026-10-20",
+      "supports": "型号货号、五个长度的逐长三围与半径、70 mm 腰宽、Race Core 及绑定/板台选项"
+    },
+    {
+      "url": "https://www.stoeckli.ch/inten/ski/ski/race/laser-sc",
+      "type": "Stöckli 官方当前商品页",
+      "accessedAt": "2026-10-20",
+      "supports": "当前产品技术参数区域显示 123-72-104 mm；介绍文字称 70 mm 腰宽"
+    }
+  ],
+  "conflict": {
+    "officialSeasonManual": {
+      "sidecutMmByLength": {
+        "152": [120, 70, 102],
+        "158": [120, 70, 102],
+        "164": [120, 70, 102],
+        "170": [120, 70, 102],
+        "176": [120, 70, 102]
+      },
+      "radiiM": {"152": 11.6, "158": 12.7, "164": 13.8, "170": 14.9, "176": 16.0}
+    },
+    "currentProductPageSidecutMm": [123, 72, 104],
+    "decision": "以对应 2026/27 雪季且有逐码表的品牌官方手册为准，规格记录 70 mm 腰宽和 120-70-102 mm；同时保留官方商品页冲突，不把两组值混合。"
+  },
+  "evidenceLevel": "品牌官方当季手册直接证据；另有品牌当前商品页字段冲突",
+  "unresolved": [
+    "Stöckli 官方当前商品页的 123-72-104 mm 是否为旧页面数据或另一硬件版本，尚无品牌澄清。",
+    "单只/成对重量未公开，继续不录重量。",
+    "商品图片的前台展示授权未确认。"
+  ]
+}

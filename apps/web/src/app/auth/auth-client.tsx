@@ -280,7 +280,7 @@ export default function AuthPage() {
                 id="username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                placeholder="例如：刃上有风"
+                placeholder="请填写昵称"
                 className="h-9 rounded-none border-border text-[13px]"
               />
             </div>

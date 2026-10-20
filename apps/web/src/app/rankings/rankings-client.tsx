@@ -14,6 +14,7 @@ import { GEAR } from "@/data/boards";
 import { CATEGORIES, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { getCategoryProducts, resolveContentSource } from "@/lib/content";
 import { hasEditorialScores, hasMedia, mediaUrl } from "@/lib/gear-state";
+import { isCuratedBaselineEnabled } from "@/lib/curated-content";
 import { rankRows } from "@/lib/domain";
 import { fmtCompact } from "@/lib/format";
 import { useCurrentUser, usePersisted, vote } from "@/lib/store";
@@ -114,6 +115,12 @@ export default function RankingsPage() {
           </div>
         }
       />
+
+      {isCuratedBaselineEnabled() && ["snowboard", "snowboard-binding", "snowboard-boot", "skis", "skiing-apparel"].includes(categorySlug) ? (
+        <p className="mt-3 text-xs leading-5 text-muted-foreground">
+          社区票含冷启动模拟票，仅用于榜单展示；真实用户投票会继续累计。
+        </p>
+      ) : null}
 
       <div className="thin-scroll mt-8 flex items-center gap-1.5 overflow-x-auto border-b border-border pb-3">
         <span className="mono-label mr-1 shrink-0 text-muted-foreground">品类</span>

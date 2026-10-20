@@ -17,7 +17,7 @@ export function AnalysisBlock({ gear }: { gear: GearItem }) {
   return (
     <div className="space-y-8">
       <blockquote className="border-l-2 border-primary pl-5">
-        <p className="mono-label mb-2 text-primary">编辑结论 / VERDICT</p>
+        <p className="mono-label mb-2 text-primary">编辑结论</p>
         <p className="serif-display text-[21px] leading-[1.5] text-balance sm:text-[25px]">{a.verdict}</p>
       </blockquote>
 
@@ -32,7 +32,7 @@ export function AnalysisBlock({ gear }: { gear: GearItem }) {
         <div className="grid gap-6 border-t border-border pt-6 sm:grid-cols-2">
           {a.fits.length ? (
             <div>
-              <p className="mono-label mb-3">适合谁 / FITS</p>
+              <p className="mono-label mb-3">适合人群</p>
               <ul className="space-y-2">
                 {a.fits.map((t) => (
                   <li key={t} className="flex gap-2.5 text-[13px] leading-relaxed">
@@ -45,7 +45,7 @@ export function AnalysisBlock({ gear }: { gear: GearItem }) {
           ) : null}
           {a.notFits.length ? (
             <div>
-              <p className="mono-label mb-3">不适合谁 / NOT FOR</p>
+              <p className="mono-label mb-3">不适合人群</p>
               <ul className="space-y-2">
                 {a.notFits.map((t) => (
                   <li key={t} className="flex gap-2.5 text-[13px] leading-relaxed text-muted-foreground">

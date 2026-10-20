@@ -10,7 +10,7 @@ export const metadata = simpleMetadata({
 export default function GuidesPage() {
   return (
     <main className="mx-auto min-h-[60vh] max-w-[1080px] px-5 py-10 md:px-8 md:py-14">
-      <p className="mono-label text-muted-foreground">FIELD NOTES · KNOWLEDGE</p>
+      <p className="mono-label text-muted-foreground">实用指南 · 装备知识</p>
       <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-5xl">科普</h1>
       <p className="mt-4 max-w-2xl text-sm leading-7 text-muted-foreground">
         按运动品类整理装备知识、调节方法与选购指南。选择一个类别开始浏览。

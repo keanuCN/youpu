@@ -6,6 +6,7 @@ import { simpleMetadata } from '@/lib/seo';
 import { SnowboardStanceGuide } from '@/components/gear/snowboard-stance-guide';
 import { SnowboardInstructorSystems } from '@/components/gear/snowboard-instructor-systems';
 import { SnowboardRidingStyles } from '@/components/gear/snowboard-riding-styles';
+import { SnowboardSetupStepIllustration } from '@/components/gear/snowboard-style-illustration';
 import { fmtOfficialPriceCny, fmtPrice, officialPriceRangeCny } from '@/lib/format';
 
 export const metadata = simpleMetadata({
@@ -103,16 +104,19 @@ export default function SnowboardSetupPage() {
         </div>
         <ol className="mt-7 grid gap-x-6 gap-y-6 md:grid-cols-3">
           <li className="border-t border-border pt-4">
+            <div className="mb-3 overflow-hidden border border-border"><SnowboardSetupStepIllustration step={1} /></div>
             <span className="font-mono text-3xl font-light tabular-nums text-primary">01</span>
             <h3 className="mt-3 text-base font-medium">先试雪鞋</h3>
             <p className="mt-2 text-[13px] leading-6 text-muted-foreground">量双脚足长，带滑雪袜试穿。屈膝时脚跟应稳定，不能靠一味缩码解决后跟浮动。脚宽、脚背和左右脚差异都要记录；品牌换算表不等于本型号内部尺寸。</p>
           </li>
           <li className="border-t border-border pt-4">
+            <div className="mb-3 overflow-hidden border border-border"><SnowboardSetupStepIllustration step={2} /></div>
             <span className="font-mono text-3xl font-light tabular-nums text-primary">02</span>
             <h3 className="mt-3 text-base font-medium">再配固定器</h3>
             <p className="mt-2 text-[13px] leading-6 text-muted-foreground">按实际靴码及鞋底外形试装，检查鞋跟杯、绑带长度和前后居中。Step On 需要认证专用靴；EST 仅适用于 Channel；Mini Disk 与普通圆盘的孔位范围分别核对。</p>
           </li>
           <li className="border-t border-border pt-4">
+            <div className="mb-3 overflow-hidden border border-border"><SnowboardSetupStepIllustration step={3} /></div>
             <span className="font-mono text-3xl font-light tabular-nums text-primary">03</span>
             <h3 className="mt-3 text-base font-medium">最后选雪板</h3>
             <p className="mt-2 text-[13px] leading-6 text-muted-foreground">先查本型号的体重区间，再核对板宽、靴码和站距。标准版、W、MW、N 等标记不能混用；代表尺码参数不能覆盖整条产品线。</p>

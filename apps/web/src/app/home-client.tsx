@@ -157,7 +157,7 @@ export default function HomePage() {
                             {r.authorName}
                           </p>
                           <p className="mono-label truncate">
-                            {r.authorMeta.years} 年 · {r.authorMeta.weightKg ?? "—"}kg · {r.authorMeta.resort || "未标注场地"}
+                            {r.authorMeta.years !== undefined ? `${r.authorMeta.years} 年` : "雪龄未填写"} · {r.authorMeta.weightKg ?? "—"}kg · {r.authorMeta.resort || "未标注场地"}
                           </p>
                         </div>
                         <Stars value={r.rating} size={11} />
@@ -260,13 +260,13 @@ function Cover({
           /> : null}
           <div className="dot-grid pointer-events-none absolute inset-0" />
           <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-3 bg-gradient-to-t from-foreground/80 to-transparent p-5 sm:p-8">
-            <p className="mono-label text-background/80">FIELD TEST · 崇礼 / 可可托海 / 将军山</p>
+            <p className="mono-label text-background/80">雪场实测 · 崇礼 / 可可托海 / 将军山</p>
             <p className="mono-data text-[12px] text-background/80 tnum">当前在档 {catalogCount} 件装备</p>
           </div>
         </div>
 
         <div className="relative order-1 flex flex-col justify-center border-r border-border px-5 py-12 sm:px-10 xl:order-2 xl:px-14 xl:py-16">
-          <p className="mono-label mb-5 text-primary">ISSUE No.42 / 全品类装备档案</p>
+          <p className="mono-label mb-5 text-primary">第 42 期 / 全品类装备档案</p>
           <h1 className="text-[42px] leading-[1.1] font-medium tracking-tight text-balance sm:text-[58px] lg:text-[64px]">
             把装备拆成
             <br />
@@ -368,7 +368,7 @@ function CategoryEntries({ categoryCounts }: { categoryCounts: Record<string, nu
                       : "mono-label border border-current px-2 py-[3px] opacity-60"
                   }
                 >
-                  {live ? "LIVE" : "SOON"}
+                  {live ? "已上线" : "即将开放"}
                 </span>
               </div>
             </Link>
@@ -395,7 +395,7 @@ function QuizBand({ snowboardCount }: { snowboardCount: number }) {
     <section className="reveal reveal-up mt-20 border border-foreground">
       <div className="grid lg:grid-cols-[1fr_320px]">
         <div className="p-7 sm:p-10">
-          <p className="mono-label mb-4 text-primary">RECOMMENDATION ENGINE</p>
+          <p className="mono-label mb-4 text-primary">装备选购推荐</p>
           <h2 className="text-[28px] leading-tight font-medium tracking-tight text-balance sm:text-[34px]">
             不知道选哪件？<span className="serif-display text-primary"> 6 个问题</span>给出带理由的三件装备。
           </h2>

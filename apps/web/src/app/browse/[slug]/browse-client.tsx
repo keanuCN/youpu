@@ -54,7 +54,7 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
   if (!category || !isLive(slug)) {
     return (
       <div className="mx-auto max-w-[1400px] px-5 py-20 sm:px-8">
-        <p className="mono-label text-primary">CATEGORY NOT LIVE</p>
+        <p className="mono-label text-primary">该品类暂未开放</p>
         <h1 className="mt-4 text-[32px] font-medium">{category?.name ?? slug} 尚在筹备</h1>
         <p className="mt-3 max-w-lg text-[13.5px] leading-relaxed text-muted-foreground">
           该品类的参数模板、评分维度与筛选维度还没配置完成。回到已开档的单板档案库继续浏览。

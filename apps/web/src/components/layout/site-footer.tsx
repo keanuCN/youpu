@@ -72,7 +72,7 @@ export function SiteFooter() {
           </nav>
         </div>
         <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-5">
-          <p className="mono-label">{SEASON} SEASON · ISSUE No.42</p>
+          <p className="mono-label">{SEASON} 雪季 · 第 42 期</p>
           <a
             href={BRAND.icpUrl}
             target="_blank"

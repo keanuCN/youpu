@@ -1,0 +1,34 @@
+slug: k2-wayback-98-2027
+category: skis
+brand: k2
+model: Wayback 98
+year: 2027
+title: K2 Wayback 98 2026/27
+one_liner: 98 mm 腰宽的登山巡游双板；K2 将其定位为兼顾春季巡游与多变雪况的全日型巡游板。
+specs:
+  articleNumber: KS261807
+  lengthOptions: 165 / 172 / 179 / 186 cm
+  waistWidth: 98
+  turnRadius: 22.1
+  turnRadiusReferenceLength: 179 cm
+  sidecutDimensions: "179 cm: 126-98-114 mm。官方商品页未列其它长度逐码几何，不外推。"
+  weightPerSki: 1390
+  weightReferenceLength: 179 cm
+  profile: All-Terrain Rocker（渐进式板头 rocker，脚下传统 camber）
+  core: Paulownia Tour Light 泡桐木芯
+  construction: Titanal Touring Tech；Bio Resin
+  technologies: Snowphobic Topsheet；All-Terrain Rocker；Paulownia Tour Light；Titanal Touring Tech；Bio Resin
+  terrain: 登山巡游 / 春季巡游 / 多变雪况
+  skierLevel: 中级至专家（K2 官方商品页标注）
+  bindingSetup: 裸板，不含固定器
+  weightBasis: K2 官方列示 179 cm 单只重量 1390 g（无板下固定器底板）；不可与系统板或整套重量直接比较。
+  geometryNotes: K2 官方商品页列出 165/172/179/186 cm，179 cm 的 126-98-114 mm、22.1 m 和 1390 g；未找到逐长度完整几何与重量，不作推算。
+  seasonEvidence: K2 官方商品页标题为 K2 Wayback 98 Men's Skis 2027，商品货号 KS261807；对应 2026/27 雪季。
+  sourceCheckedAt: 2026-10-19
+  compatibilitySources: https://k2snow.com/en-pl/p/wayback-98-mens-skis-ks261807
+  priceStatus: K2 官方商品页目前显示该款无法在官网购买，仅提示到门店查询；未记录挂牌价或人民币参考价。搜索索引曾显示美国地区 USD 799.95，但无法在当前可核验商品页复现，不作为价格证据。
+data_source:
+  kind: official
+  origin_url: https://k2snow.com/en-pl/p/wayback-98-mens-skis-ks261807
+images: []
+status: draft

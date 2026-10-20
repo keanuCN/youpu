@@ -7,7 +7,7 @@ export default function NotFound() {
       <div className="w-full border-y border-foreground py-10 sm:py-14">
         <div className="flex flex-wrap items-start justify-between gap-8">
           <div className="max-w-xl">
-            <p className="mono-label text-primary">404 / ARCHIVE NOT FOUND</p>
+            <p className="mono-label text-primary">404 / 页面未找到</p>
             <h1 className="mt-4 text-[34px] leading-tight font-medium tracking-tight sm:text-[46px]">
               这条装备档案
               <br />

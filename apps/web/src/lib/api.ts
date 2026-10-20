@@ -252,7 +252,7 @@ export function cloudResetPassword(email: string, password: string, code: string
   return request<{ ok: true }>("/api/auth/reset-password", { method: "POST", body: { email, password, code } });
 }
 
-export function cloudUpdateMe(input: { nickname?: string; riderProfile?: Record<string, unknown> }): Promise<CloudAccount> {
+export function cloudUpdateMe(input: { nickname?: string; avatarUrl?: string | null; riderProfile?: Record<string, unknown> }): Promise<CloudAccount> {
   return request<CloudAccount>("/api/auth/me", { method: "PATCH", body: input });
 }
 
