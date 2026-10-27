@@ -9,7 +9,7 @@ import { GEAR, reviewCount, userRating } from "@/data/boards";
 import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
 import { sceneLabel } from "@/lib/domain";
 import { fmtCompact, fmtOfficialPriceCny, fmtPrice } from "@/lib/format";
-import { hasEditorialScores, hasMedia, hasPrice, hasUserRating, mediaUrl } from "@/lib/gear-state";
+import { hasEditorialScores, hasMedia, hasPrice, hasUserRating, mediaUrl, showFullProductImage } from "@/lib/gear-state";
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear } from "@/lib/api";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
 import { track, trackExposeOnce } from "@/lib/track";
@@ -219,7 +219,7 @@ export function GearCard({
               fallbackClassName="p-3"
               className={cn(
                 "plate h-full w-full",
-                gear.categorySlug === "snowboard" ? "object-cover" : "object-contain p-4",
+                showFullProductImage(gear) ? "object-contain p-4" : "object-cover",
               )}
             />
           ) : (

@@ -23,7 +23,7 @@ import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories"
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear, type CloudRatingsResponse } from "@/lib/api";
 import { formatSpecValue, gearById, pricePosition, sameScenePeers } from "@/lib/domain";
 import { fmtCompact, fmtOfficialPriceCny, fmtPrice } from "@/lib/format";
-import { hasEditorialScores, hasHardcoreIndex, hasPrice, hasUserRating } from "@/lib/gear-state";
+import { hasEditorialScores, hasHardcoreIndex, hasPrice, hasUserRating, showFullProductImage } from "@/lib/gear-state";
 import { isCuratedBaselineEnabled } from "@/lib/curated-content";
 import { DOCK_MAX, addToDock, removeFromDock, toggleFavorite, useCurrentUser } from "@/lib/store";
 import { track } from "@/lib/track";
@@ -91,7 +91,7 @@ export default function GearDetailPage({
         <Gallery
           shots={gear.gallery}
           alt={`${gear.brand} ${gear.model}`}
-          fit={gear.categorySlug === "snowboard" ? "cover" : "contain"}
+          fit={showFullProductImage(gear) ? "contain" : "cover"}
         />
          <InfoCard gear={gear} ratingSummary={ratingSummary} />
       </div>

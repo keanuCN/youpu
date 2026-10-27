@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { GEAR } from "@/data/boards";
 import { CATEGORIES, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { getCategoryProducts, resolveContentSource } from "@/lib/content";
-import { hasEditorialScores, hasMedia, mediaUrl } from "@/lib/gear-state";
+import { hasEditorialScores, hasMedia, mediaUrl, showFullProductImage } from "@/lib/gear-state";
 import { isCuratedBaselineEnabled } from "@/lib/curated-content";
 import { rankRows } from "@/lib/domain";
 import { fmtCompact } from "@/lib/format";
@@ -198,7 +198,7 @@ export default function RankingsPage() {
                     fallbackClassName="p-8"
                     className={cn(
                       "plate h-full w-full",
-                      r.gear.categorySlug === "snowboard" ? "object-cover" : "object-contain p-6",
+                      showFullProductImage(r.gear) ? "object-contain p-3" : "object-cover",
                     )}
                   />
                 ) : (
