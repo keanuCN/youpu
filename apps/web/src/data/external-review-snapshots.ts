@@ -46,6 +46,30 @@ export const EXTERNAL_REVIEW_SNAPSHOTS: Record<string, ExternalReviewSnapshot> =
     scope: "Jones 官网商品页评价，可能合并相关产品或其他年份；不代表本站实测",
     checkedAt: "2026-10-27",
   },
+  "jones-mini-mind-expander-2025": {
+    rating: 4.8, count: 26,
+    url: "https://www.jonessnowboards.com/products/mini-mind-expander-snowboard-2025",
+    scope: "Jones 官网商品页评价，其中可见其他相关型号的评论；不代表本站实测",
+    checkedAt: "2026-10-27",
+  },
+  "jones-frontier-2-0-2026": {
+    rating: 4.8, count: 207,
+    url: "https://www.jonessnowboards.com/products/mens-frontier-20-snowboard-2026",
+    scope: "Jones 官网商品页评价，可能合并相关产品或其他年份；不代表本站实测",
+    checkedAt: "2026-10-27",
+  },
+  "jones-dream-weaver-2-0-2026": {
+    rating: 4.9, count: 131,
+    url: "https://www.jonessnowboards.com/products/womens-dream-weaver-20-snowboard-2026",
+    scope: "Jones 官网商品页评价，可能合并相关产品或其他年份；不代表本站实测",
+    checkedAt: "2026-10-27",
+  },
+  "jones-tweaker-womens-2026": {
+    rating: 4.8, count: 56,
+    url: "https://www.jonessnowboards.com/products/womens-tweaker-snowboard-2026",
+    scope: "Jones 官网商品页评价，可能合并相关产品或其他年份；不代表本站实测",
+    checkedAt: "2026-10-27",
+  },
   "salomon-huck-knife-2027": {
     rating: 4.8,
     count: 5,
