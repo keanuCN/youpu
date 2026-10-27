@@ -12,7 +12,7 @@ const manifestSchema = z.object({
     season: z.enum(['2024/25', '2025/26']),
     sku: z.string().regex(/^J\.(25|26)\.[A-Z]+\.[A-Z]+$/),
     page: z.string().url(), image: z.string().url(),
-  })).length(10),
+  })).length(11),
 });
 
 async function main() {
@@ -25,7 +25,9 @@ async function main() {
   for (const item of manifest.items) {
     const image = new URL(item.image);
     const page = new URL(item.page);
-    if (image.protocol !== 'https:' || image.hostname !== 'www.jonessnowboards.com' || !image.pathname.startsWith(`/cdn/shop/files/${item.sku}-`) || page.protocol !== 'https:' || page.hostname !== image.hostname || !page.pathname.startsWith('/products/')) {
+    const official = image.hostname === 'www.jonessnowboards.com' && image.pathname.startsWith(`/cdn/shop/files/${item.sku}-`) && page.hostname === image.hostname && page.pathname.startsWith('/products/');
+    const verifiedRetailer = item.slug === 'jones-tweaker-2026' && item.sku === 'J.26.SNM.TTR' && image.hostname === 'www.melbournesnowboard.com.au' && image.pathname === '/cdn/shop/files/0019_Jones26-Men-Tweaker.jpg' && page.hostname === image.hostname && page.pathname === '/products/jones-mens-tweaker';
+    if (image.protocol !== 'https:' || page.protocol !== 'https:' || (!official && !verifiedRetailer)) {
       throw new Error(`来源或图片与货号不匹配：${item.slug}`);
     }
   }
@@ -58,7 +60,7 @@ async function main() {
         await tx.productImage.create({ data: {
           id: uuidv7(), productId: row.id, url: item.image, kind: 'face', sortOrder: 0,
           alt: `${row.title} 官方整板图`,
-          source: `Jones 官方商品页 ${item.page}；${manifest.checkedAt} 核验；展示授权待核`,
+          source: `${item.slug === 'jones-tweaker-2026' ? '零售商商品页，货号 J.26.SNM.TTR' : 'Jones 官方商品页'} ${item.page}；${manifest.checkedAt} 核验；展示授权待核`,
         } });
       }
     }, { isolationLevel: 'Serializable', timeout: 30000 });

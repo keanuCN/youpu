@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-10-27",
-  "source": "Jones 官方商品页首张产品图；仅在图片缺失时使用官网外链。展示授权待核。",
+  "source": "10 张来自 Jones 官方商品页，1 张来自明确标注货号的零售商商品页；仅在图片缺失时使用外链。展示授权待核。",
   "items": [
     {"slug":"jones-flagship-2025","season":"2024/25","sku":"J.25.SNM.FLA","page":"https://www.jonessnowboards.com/products/mens-flagship-snowboard-2025","image":"https://www.jonessnowboards.com/cdn/shop/files/J.25.SNM.FLA-gallery-1.webp?v=1768450624&width=800"},
     {"slug":"jones-flagship-womens-2025","season":"2024/25","sku":"J.25.SNW.WFL","page":"https://www.jonessnowboards.com/products/womens-flagship-snowboard-2025","image":"https://www.jonessnowboards.com/cdn/shop/files/J.25.SNW.WFL-gallery-1.webp?v=1768450724&width=800"},
@@ -11,6 +11,7 @@
     {"slug":"jones-storm-wolf-2025","season":"2024/25","sku":"J.25.SNU.STW","page":"https://www.jonessnowboards.com/products/storm-wolf-snowboard-2025","image":"https://www.jonessnowboards.com/cdn/shop/files/J.25.SNU.STW-gallery-1.webp?v=1768453625&width=800"},
     {"slug":"jones-frontier-2-0-2026","season":"2025/26","sku":"J.26.SNM.FRT","page":"https://www.jonessnowboards.com/products/mens-frontier-20-snowboard-2026","image":"https://www.jonessnowboards.com/cdn/shop/files/J.26.SNM.FRT-gallery-1_b0365c74-ec59-44a6-a14e-36028f826278.webp?v=1792465884&width=800"},
     {"slug":"jones-dream-weaver-2-0-2026","season":"2025/26","sku":"J.26.SNW.DRC","page":"https://www.jonessnowboards.com/products/womens-dream-weaver-20-snowboard-2026","image":"https://www.jonessnowboards.com/cdn/shop/files/J.26.SNW.DRC-gallery-1.webp?v=1768450951&width=800"},
-    {"slug":"jones-tweaker-womens-2026","season":"2025/26","sku":"J.26.SNW.TTW","page":"https://www.jonessnowboards.com/products/womens-tweaker-snowboard-2026","image":"https://www.jonessnowboards.com/cdn/shop/files/J.26.SNW.TTW-gallery-1.webp?v=1768451300&width=800"}
+    {"slug":"jones-tweaker-womens-2026","season":"2025/26","sku":"J.26.SNW.TTW","page":"https://www.jonessnowboards.com/products/womens-tweaker-snowboard-2026","image":"https://www.jonessnowboards.com/cdn/shop/files/J.26.SNW.TTW-gallery-1.webp?v=1768451300&width=800"},
+    {"slug":"jones-tweaker-2026","season":"2025/26","sku":"J.26.SNM.TTR","page":"https://www.melbournesnowboard.com.au/products/jones-mens-tweaker","image":"https://www.melbournesnowboard.com.au/cdn/shop/files/0019_Jones26-Men-Tweaker.jpg?v=1740012019&width=1000"}
   ]
 }
