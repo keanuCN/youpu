@@ -7,6 +7,7 @@ const LIMITS = {
   reply: { seconds: 30, key: 'reply' },
   report: { seconds: 60, key: 'report' },
   helpful: { seconds: 5, key: 'helpful' },
+  rankingVote: { seconds: 5, key: 'ranking-vote' },
 } as const;
 
 export type CommunityRateLimitScope = keyof typeof LIMITS;

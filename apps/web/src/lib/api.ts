@@ -291,6 +291,19 @@ export function cloudRatings(productRef: string, sort: "helpful" | "latest" = "h
   return request(`/api/products/${encodeURIComponent(productRef)}/ratings?sort=${sort}`);
 }
 
+export interface CloudRankingVotes {
+  counts: Record<string, number>;
+  mine: { slug: string; changed: boolean } | null;
+}
+
+export function cloudRankingVotes(category: string, rank: string, season: string): Promise<CloudRankingVotes> {
+  return request(`/api/ranking-votes?${new URLSearchParams({ category, rank, season })}`);
+}
+
+export function cloudSubmitRankingVote(category: string, rank: string, season: string, product: string): Promise<CloudRankingVotes> {
+  return request('/api/ranking-votes', { method: 'POST', body: { category, rank, season, product } });
+}
+
 export function cloudCreateRating(productRef: string, input: { overall: number; content: string; riderProfile: Record<string, unknown> }): Promise<CloudRating> {
   return request(`/api/products/${encodeURIComponent(productRef)}/ratings`, { method: "POST", body: input });
 }

@@ -348,7 +348,7 @@ export function rankRows(
   rankKey: string,
   categorySlug = "snowboard",
   sourcePool: GearItem[] = GEAR,
-  options: { includeVotes?: boolean } = {},
+  options: { includeVotes?: boolean; serverVotes?: Record<string, number> } = {},
 ): RankRow[] {
   const category = getCategory(categorySlug) ?? SNOWBOARD;
   const cat = category.rankCategories.find((c) => c.key === rankKey) ?? category.rankCategories[0];
@@ -369,7 +369,7 @@ export function rankRows(
     return {
       gear: g,
       dataScore: Math.round((ratingPart + heatPart + hardPart + userPart) * 10) / 10,
-      votes: options.includeVotes === false ? 0 : voteCount(s, rankKey, g.id, categorySlug, g),
+      votes: options.includeVotes === false ? 0 : options.serverVotes ? (options.serverVotes[g.productSlug ?? g.id] ?? 0) : voteCount(s, rankKey, g.id, categorySlug, g),
     };
   });
   const maxVotes = Math.max(1, ...withData.map((d) => d.votes));

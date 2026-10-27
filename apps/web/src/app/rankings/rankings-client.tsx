@@ -2,20 +2,24 @@
 
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { toast } from "sonner";
 import { FallbackNotice, MediaPlaceholder, PendingValue, RankingsSkeleton } from "@/components/gear/data-state";
 import { GearRow } from "@/components/gear/gear-card";
 import { ScoreMark } from "@/components/gear/primitives";
 import { SafeImage } from "@/components/gear/safe-image";
 import { PageHead } from "@/components/layout/section-head";
+import { Button } from "@/components/ui/button";
 import { GEAR } from "@/data/boards";
 import { CATEGORIES, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { getCategoryProducts, resolveContentSource } from "@/lib/content";
 import { hasEditorialScores, hasMedia, mediaUrl } from "@/lib/gear-state";
 import { rankRows } from "@/lib/domain";
-import { usePersisted } from "@/lib/store";
+import { cloudRankingVotes, cloudSubmitRankingVote, hasCloudSession, productRefForGear, type CloudRankingVotes } from "@/lib/api";
+import { useCurrentUser, usePersisted } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import type { GearItem } from "@/types";
+import { useAuthGate } from "@/store/app-shell";
 
 const LIVE_CATEGORIES = Object.values(CATEGORIES).filter((category) => category.status === "live");
 
@@ -23,6 +27,8 @@ export default function RankingsPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const persisted = usePersisted();
+  const me = useCurrentUser();
+  const { requireAuth } = useAuthGate();
   const requestedCategory = searchParams.get("category");
   const categorySlug = getCategory(requestedCategory ?? "")?.status === "live" ? requestedCategory! : "snowboard";
   const category = getCategory(categorySlug) ?? SNOWBOARD;
@@ -31,6 +37,10 @@ export default function RankingsPage() {
   const [catalogLoading, setCatalogLoading] = useState(resolveContentSource() === "api");
   const [catalogFallback, setCatalogFallback] = useState(false);
   const [catalogRetry, setCatalogRetry] = useState(0);
+  const [votes, setVotes] = useState<CloudRankingVotes | null>(null);
+  const [voting, setVoting] = useState(false);
+  const currentVoteKey = useRef("");
+  currentVoteKey.current = `${categorySlug}:${rankKey}`;
 
   useEffect(() => {
     setRankKey(category.rankCategories[0]?.key ?? "overall");
@@ -64,13 +74,33 @@ export default function RankingsPage() {
     };
   }, [catalogRetry, categorySlug]);
 
+  useEffect(() => {
+    let active = true;
+    setVotes(null);
+    void cloudRankingVotes(categorySlug, rankKey, SEASON).then((result) => {
+      if (active) setVotes(result);
+    }).catch(() => { if (active) setVotes(null); });
+    return () => { active = false; };
+  }, [categorySlug, rankKey, me.profile?.userKey]);
+
   const rows = useMemo(
-    () => rankRows(persisted, rankKey, categorySlug, catalog, { includeVotes: false }),
-    [catalog, categorySlug, persisted, rankKey],
+    () => rankRows(persisted, rankKey, categorySlug, catalog, votes ? { serverVotes: votes.counts } : { includeVotes: false }),
+    [catalog, categorySlug, persisted, rankKey, votes],
   );
   const podium = rows.slice(0, 3);
   const rest = rows.slice(3);
   const maxFinal = Math.max(1, ...rows.map((row) => row.final));
+
+  const onVote = (gear: GearItem) => requireAuth(() => {
+    if (!votes || !hasCloudSession() || voting) return;
+    setVoting(true);
+    const requestedKey = `${categorySlug}:${rankKey}`;
+    void cloudSubmitRankingVote(categorySlug, rankKey, SEASON, productRefForGear(gear)).then((result) => {
+      if (currentVoteKey.current === requestedKey) setVotes(result);
+      toast.success(result.mine?.changed ? "改投成功" : "投票成功");
+    }).catch((error: unknown) => toast.error(error instanceof Error ? error.message : "投票失败"))
+      .finally(() => setVoting(false));
+  }, "投票需要先登录");
 
   const selectCategory = (slug: string) => {
     router.replace(slug === "snowboard" ? "/rankings" : `/rankings?category=${encodeURIComponent(slug)}`);
@@ -86,8 +116,8 @@ export default function RankingsPage() {
         titleEn="Rankings"
         desc={
           isSnowboard
-            ? "综合榜优先展示编辑推荐，其他榜单按已有数据排序；社区投票功能暂未开放。"
-            : `${category.name}榜单按已有资料排序；社区投票功能暂未开放。`
+            ? "综合榜优先展示编辑推荐，其他榜单参考数据分及真实社区投票。"
+            : `${category.name}榜单参考数据分及真实社区投票。`
         }
         aside={
           <div className="text-right">
@@ -187,6 +217,7 @@ export default function RankingsPage() {
                 <dt className="mono-label">数据分</dt>
                 <dd>{hasEditorialScores(r.gear) ? r.dataScore.toFixed(1) : "待补"}</dd>
               </div>
+              <div className="flex justify-between"><dt className="mono-label">社区票</dt><dd>{votes ? r.votes : "暂不可用"}</dd></div>
               <div className="flex justify-between text-foreground">
                 <dt className="mono-label text-foreground">参考分</dt>
                 <dd className="font-medium">{r.final.toFixed(1)}</dd>
@@ -196,6 +227,9 @@ export default function RankingsPage() {
             <div className="mt-3 h-[4px] bg-border">
               <span className="animate-bar-grow block h-full bg-primary" style={{ width: `${(r.final / maxFinal) * 100}%` }} />
             </div>
+            <Button type="button" size="sm" variant="outline" disabled={!votes || voting} onClick={() => onVote(r.gear)} className="mono-label mt-4 h-8 w-full rounded-none text-[12px]">
+              {votes?.mine?.slug === (r.gear.productSlug ?? r.gear.id) ? "已投票" : votes?.mine?.changed ? "改投机会已用完" : votes?.mine ? "改投" : "投票"}
+            </Button>
 
           </article>
         ))}
@@ -205,7 +239,7 @@ export default function RankingsPage() {
       <section className="mt-12">
         <div className="rule-heavy mb-2 flex flex-wrap items-center justify-between gap-3 pb-2.5">
           <p className="mono-label text-foreground">完整名次 · {rows.length} 件</p>
-          <p className="mono-label">社区投票暂未开放</p>
+          <p className="mono-label">{votes ? "每人每榜每季一票，可改投一次" : "投票服务暂不可用"}</p>
         </div>
         <div>
           {rest.map((r) => (
@@ -214,9 +248,12 @@ export default function RankingsPage() {
                 <GearRow
                   gear={r.gear}
                   rank={r.rank}
-                  note={`参考分 ${hasEditorialScores(r.gear) ? r.dataScore.toFixed(1) : "待补"}`}
+                  note={`参考分 ${hasEditorialScores(r.gear) ? r.dataScore.toFixed(1) : "待补"} · 社区 ${votes ? r.votes : "—"} 票`}
                 />
               </div>
+              <button type="button" disabled={!votes || voting} onClick={() => onVote(r.gear)} className="mono-label mb-3 hidden shrink-0 border px-3 py-1.5 disabled:opacity-40 sm:block">
+                {votes?.mine?.slug === (r.gear.productSlug ?? r.gear.id) ? "已投" : "投票"}
+              </button>
             </div>
           ))}
         </div>
@@ -233,10 +270,10 @@ export default function RankingsPage() {
           <li>· 单板综合榜优先展示编辑推荐，推荐顺序不由参考分决定</li>
           <li>· 热度目前来自内容快照，仅作参考，并非实时浏览量</li>
           <li>· 性价比榜只在价格最低的 10 件里排名，避免高价板靠品牌溢价占位</li>
-          <li>· 社区投票暂未开放，也不参与当前排名</li>
+          <li>· 社区票来自站内真实账号，按本榜最高票数归一化后占参考分 30%</li>
         </ul>
         <p className="mono-label mt-4 border-t border-border pt-3">
-          榜单仅供参考，请结合雪况、经验和个人需求选择。
+          每人每榜每季一票，可改投一次；综合榜的编辑推荐顺序优先。
         </p>
       </section>
         </>

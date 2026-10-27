@@ -30,10 +30,24 @@ import { AuthGuard, OptionalAuthGuard } from '../auth/auth.guard';
 import { CurrentAccount } from '../auth/current-account.decorator';
 import type { AccountView, AuthRequest } from '../auth/auth.types';
 import { CommunityService } from './community.service';
+import { RankingService, rankingVoteInputSchema, rankingVoteQuerySchema } from './ranking.service';
+import { z } from 'zod';
 
 @Controller()
 export class CommunityController {
-  constructor(private readonly community: CommunityService) {}
+  constructor(private readonly community: CommunityService, private readonly ranking: RankingService) {}
+
+  @Get('ranking-votes')
+  @UseGuards(OptionalAuthGuard)
+  rankingVotes(@Query(new ZodValidationPipe(rankingVoteQuerySchema)) query: z.infer<typeof rankingVoteQuerySchema>, @Req() request: AuthRequest) {
+    return this.ranking.getVotes(query, request.account?.id);
+  }
+
+  @Post('ranking-votes')
+  @UseGuards(AuthGuard)
+  submitRankingVote(@Body(new ZodValidationPipe(rankingVoteInputSchema)) body: z.infer<typeof rankingVoteInputSchema>, @CurrentAccount() account: AccountView) {
+    return this.ranking.vote(body, account.id);
+  }
 
   @Get('products/:productRef/ratings')
   @UseGuards(OptionalAuthGuard)
