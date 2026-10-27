@@ -93,6 +93,7 @@ model Product {
   favorites    Favorite[]
   rankEntries  RankEntry[]
   rankingVotes RankingVote[]
+  communityRankingVotes CommunityRankingVote[]
 
   @@unique([brandId, model, year])
   @@index([categoryId, status, year(sort: Desc)])
@@ -178,6 +179,7 @@ model Account {
   reportsMade             Report[]            @relation("Reporter")
   reportsHandled          Report[]            @relation("ReportHandler")
   rankingVotes            RankingVote[]
+  communityRankingVotes   CommunityRankingVote[]
   auditLogs               AuditLog[]
   configRules             ConfigRule[]
   submittedProductImports ProductImport[]     @relation("ProductImportSubmitter")
@@ -410,6 +412,24 @@ model RankingVote {
 
   @@id([rankingId, accountId, productId])
   @@map("ranking_vote")
+}
+
+model CommunityRankingVote {
+  categorySlug String   @map("category_slug")
+  rankKey      String   @map("rank_key")
+  season       String
+  accountId    String   @map("account_id") @db.Uuid
+  productId    String   @map("product_id") @db.Uuid
+  changed      Boolean  @default(false)
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt    DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@id([categorySlug, rankKey, season, accountId])
+  @@index([categorySlug, rankKey, season, productId], map: "community_ranking_vote_totals_idx")
+  @@map("community_ranking_vote")
 }
 
 // ─────────────────────────── 数据管线域 ───────────────────────────
