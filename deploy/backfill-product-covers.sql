@@ -13,4 +13,15 @@ WITH first_image AS (
   RETURNING p.id
 )
 SELECT count(*) AS covers_backfilled FROM updated;
+DO $$
+BEGIN
+  IF EXISTS (
+    SELECT 1 FROM product AS p
+    WHERE p.status = 'published' AND p.cover_url IS NULL
+      AND EXISTS (SELECT 1 FROM product_image AS i
+                  WHERE i.product_id = p.id AND i.url IS NOT NULL AND btrim(i.url) <> '')
+  ) THEN
+    RAISE EXCEPTION '已上架商品存在可用图片但封面为空';
+  END IF;
+END $$;
 COMMIT;
