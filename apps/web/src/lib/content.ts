@@ -228,7 +228,8 @@ export function mapProductDetail(item: ProductDetail, fallback?: GearItem): Gear
 }
 
 function apiPath(path: string): string {
-  return `${API_BASE.replace(/\/$/, "")}${path}`;
+  const base = typeof window === "undefined" ? process.env.CONTENT_API_BASE || API_BASE : API_BASE;
+  return `${base.replace(/\/$/, "")}${path}`;
 }
 
 async function requestJson<T>(
@@ -237,6 +238,7 @@ async function requestJson<T>(
   fetcher: typeof fetch,
 ): Promise<T> {
   const controller = new AbortController();
+  const started = performance.now();
   const timer = setTimeout(() => controller.abort(), API_TIMEOUT_MS);
   try {
     const response = await fetcher(apiPath(path), {
@@ -248,10 +250,14 @@ async function requestJson<T>(
     return schema.parse(await response.json());
   } finally {
     clearTimeout(timer);
+    if (typeof window === "undefined" && process.env.CONTENT_TIMING === "true") {
+      console.info(`[content] ${path} ${Math.round(performance.now() - started)}ms`);
+    }
   }
 }
 
 export async function getCategoryProducts(slug: string, options: ContentOptions = {}): Promise<GearItem[]> {
+  const started = performance.now();
   const fallback = gearOfCategory(slug);
   if ((options.source ?? resolveContentSource()) === "pack" || !isLive(slug)) return fallback;
 
@@ -278,6 +284,10 @@ export async function getCategoryProducts(slug: string, options: ContentOptions 
   } catch (error) {
     options.onFallback?.(error);
     return fallback;
+  } finally {
+    if (typeof window === "undefined" && process.env.CONTENT_TIMING === "true") {
+      console.info(`[content] category=${slug} total=${Math.round(performance.now() - started)}ms`);
+    }
   }
 }
 

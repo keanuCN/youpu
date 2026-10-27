@@ -37,6 +37,7 @@ if [[ "$phase" = prepare ]]; then
   readlink apps/admin/current-domain > "$release/admin-domain-before.txt"
   tar -xzf "$archive" -C /opt/youpu
   chown youpu:youpu apps/web apps/admin apps/api packages/schema
+  find apps/web apps/admin packages/schema -maxdepth 1 -type f -exec chown youpu:youpu {} +
   chown -R youpu:youpu apps/web/src apps/web/scripts apps/web/public apps/admin/src apps/api/src apps/api/prisma packages/schema/src data
   chown youpu:youpu package.json pnpm-lock.yaml apps/web/package.json apps/api/package.json apps/admin/package.json
   echo '正在安装依赖并构建共享契约与 API'
@@ -71,6 +72,7 @@ echo '正在应用数据库迁移和滑雪目录同步'
 runuser -u youpu -- pnpm --filter @youpu/api prisma:migrate > "$release/migrate.log" 2>&1
 protected_counts > "$release/protected-presync.json"
 runuser -u youpu -- pnpm --filter @youpu/api exec tsx src/seed/sync-curated-snow-data.ts --apply > "$release/sync-apply.log" 2>&1
+runuser -u postgres -- /usr/pgsql-16/bin/psql -d youpu -f deploy/backfill-product-covers.sql > "$release/cover-backfill.log" 2>&1
 protected_counts > "$release/protected-after.json"
 cmp "$release/protected-presync.json" "$release/protected-after.json"
 cp -a "$api_stage/." apps/api/dist/
@@ -84,7 +86,7 @@ node -e 'const h=JSON.parse(require("fs").readFileSync(process.argv[1],"utf8"));
 echo '正在切换前台和后台发布版本'
 for target in domain ip; do
   if [[ "$target" = domain ]]; then service=youpu-domain-web; else service=youpu-web; fi
-  printf '[Service]\nEnvironment=NEXT_DIST_DIR=.next-release-%s-%s\nEnvironment=NEXT_PUBLIC_API_SAME_ORIGIN=true\nEnvironment=NEXT_PUBLIC_CURATED_BASELINE=false\n' "$revision" "$target" > "/etc/systemd/system/$service.service.d/$dropin"
+  printf '[Service]\nEnvironment=NEXT_DIST_DIR=.next-release-%s-%s\nEnvironment=NEXT_PUBLIC_API_SAME_ORIGIN=true\nEnvironment=NEXT_PUBLIC_CURATED_BASELINE=false\nEnvironment=CONTENT_API_BASE=http://127.0.0.1:3001\nEnvironment=CONTENT_TIMING=true\n' "$revision" "$target" > "/etc/systemd/system/$service.service.d/$dropin"
 done
 test -L apps/admin/current-ip
 test -L apps/admin/current-domain

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ChevronRight, SlidersHorizontal, X } from "lucide-react";
 import { GearCard } from "@/components/gear/gear-card";
 import { PageHead } from "@/components/layout/section-head";
@@ -27,6 +27,7 @@ import { cn } from "@/lib/utils";
 import type { GearItem, SortKey } from "@/types";
 
 const SORTS: SortKey[] = ["heat", "new", "score", "hardcore"];
+const PAGE_SIZE = 24;
 
 export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?: GearItem[] }) {
   const searchParams = useSearchParams();
@@ -46,6 +47,8 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
   const defaultSort = availableSorts.includes(sortParam as SortKey) ? (sortParam as SortKey) : "heat";
   const [filters, setFilters] = useState<Filters>({ ...DEFAULT_FILTERS, q, price: priceBounds });
   const [sort, setSort] = useState<SortKey>(defaultSort);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  useEffect(() => setVisibleCount(PAGE_SIZE), [filters, sort, slug]);
 
   const pool = useMemo(() => initialPool ?? gearOfCategory(slug), [initialPool, slug]);
   const result = useMemo(() => sortGear(applyFilters(pool, filters, priceBounds), sort), [pool, filters, priceBounds, sort]);
@@ -239,8 +242,9 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
           ) : null}
 
           {result.length ? (
+            <>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
-              {result.map((g, i) => (
+              {result.slice(0, visibleCount).map((g, i) => (
                 <GearCard
                   key={g.id}
                   gear={g}
@@ -251,6 +255,14 @@ export function BrowseClient({ slug, initialPool }: { slug: string; initialPool?
                 />
               ))}
             </div>
+            {visibleCount < result.length ? (
+              <div className="mt-8 text-center">
+                <Button variant="outline" onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}>
+                  加载更多（已显示 {visibleCount} / {result.length}）
+                </Button>
+              </div>
+            ) : null}
+            </>
           ) : (
             <div className="border border-dashed border-border py-24 text-center">
               <p className="text-[15px] font-medium">没有符合条件的装备</p>
