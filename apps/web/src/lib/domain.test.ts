@@ -17,6 +17,13 @@ test("ranking can exclude browser-local and simulated votes", () => {
   assert.equal(row.final, row.dataScore);
 });
 
+test("server vote counts override browser and simulated counts", () => {
+  const gear = GEAR.find((item) => item.categorySlug === "snowboard");
+  assert.ok(gear);
+  const [row] = rankRows(guestState(), "overall", "snowboard", [gear], { serverVotes: { [gear.productSlug ?? gear.id]: 7 } });
+  assert.equal(row?.votes, 7);
+});
+
 test("explicit flex filters exclude products whose flex is unknown", () => {
   const source = GEAR[0];
   assert.ok(source);
