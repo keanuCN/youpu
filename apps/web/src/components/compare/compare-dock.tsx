@@ -104,7 +104,7 @@ export function CompareDock() {
                   loading="lazy"
                   fallbackLabel={`${g.brand} ${g.model}`}
                   fallbackMode="muted"
-                  className="h-9 w-9 object-cover"
+                  className={cn("h-9 w-9", g.categorySlug === "snowboard" ? "object-contain" : "object-cover")}
                 />
                 <span className="max-w-28 sm:max-w-40">
                   <span className="mono-label block truncate">{g.brand}</span>

@@ -17,12 +17,6 @@ export function mediaUrl(gear: Pick<GearItem, "hero" | "gallery">): string | und
   return gear.hero || gear.gallery[0]?.url;
 }
 
-/** Knapton 官方实物图为细长的整板照片，应完整展示板头和板尾。 */
-export function showFullProductImage(gear: Pick<GearItem, "categorySlug" | "brand" | "model">): boolean {
-  return gear.categorySlug !== "snowboard" ||
-    (gear.brand.toLowerCase() === "donek" && gear.model.toLowerCase().includes("knapton"));
-}
-
 export function hasEditorialScores(gear: Pick<GearItem, "composite" | "scores">): boolean {
   return gear.composite > 0 || Object.values(gear.scores).some((value) => Number.isFinite(value) && value > 0);
 }

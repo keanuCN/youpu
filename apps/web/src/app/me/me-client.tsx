@@ -267,7 +267,7 @@ export default function MePage() {
                             loading="lazy"
                             fallbackLabel={`${g.brand} ${g.model}`}
                             fallbackMode="muted"
-                            className="h-9 w-9 object-cover grayscale"
+                            className={cn("h-9 w-9 grayscale", g.categorySlug === "snowboard" ? "object-contain" : "object-cover")}
                           />
                           <span className="min-w-0">
                             <span className="mono-label block truncate">{g.brand}</span>
@@ -349,7 +349,7 @@ export default function MePage() {
                             loading="lazy"
                             fallbackLabel={`${g.brand} ${g.model}`}
                             fallbackMode="muted"
-                            className="h-10 w-10 object-cover grayscale"
+                            className={cn("h-10 w-10 grayscale", g.categorySlug === "snowboard" ? "object-contain" : "object-cover")}
                           />
                           <span className="min-w-0 flex-1">
                             <span className="mono-label block truncate">{g.brand}</span>

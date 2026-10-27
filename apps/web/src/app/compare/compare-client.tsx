@@ -157,7 +157,7 @@ export default function ComparePage() {
                     fallbackMode="muted"
                     className={cn(
                       "h-14 w-14 shrink-0 bg-secondary",
-                      gear.categorySlug === "snowboard" ? "object-cover" : "object-contain p-1.5",
+                      "object-contain p-1.5",
                     )}
                     loading="lazy"
                   />
@@ -291,7 +291,7 @@ export default function ComparePage() {
                       loading="lazy"
                       fallbackLabel={`${g.brand} ${g.model}`}
                       fallbackMode="muted"
-                      className="h-10 w-10 shrink-0 object-cover"
+                      className={cn("h-10 w-10 shrink-0", g.categorySlug === "snowboard" ? "object-contain" : "object-cover")}
                     />
                   ) : (
                     <MediaPlaceholder label="图片待补" className="h-10 w-10 min-h-0 shrink-0 p-1.5" />
@@ -393,7 +393,7 @@ export default function ComparePage() {
                         loading="lazy"
                         fallbackLabel={`${g.brand} ${g.model}`}
                         fallbackMode="muted"
-                        className="mt-2.5 h-16 w-full object-cover grayscale"
+                        className={cn("mt-2.5 h-16 w-full grayscale", g.categorySlug === "snowboard" ? "object-contain" : "object-cover")}
                       />
                     ) : (
                       <MediaPlaceholder label="图片待补" className="mt-2.5 h-16 w-full min-h-0 p-2" />
