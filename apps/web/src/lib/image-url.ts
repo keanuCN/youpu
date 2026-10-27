@@ -43,6 +43,7 @@ const REMOTE_IMAGE_RULES = [
   { host: "eu.nidecker.com", pathPrefix: "/cdn/shop/files/" },
   { host: "www.nidecker.com", pathPrefix: "/cdn/shop/files/" },
   { host: "flux-bindings.com", pathPrefix: "/cdn/shop/files/" },
+  { host: "sp-bindings.jp", pathPrefix: "/cdn/shop/files/" },
   { host: "unionbindingcompany.com", pathPrefix: "/cdn/shop/files/" },
   { host: "jp.unionbindingcompany.com", pathPrefix: "/cdn/shop/files/" },
   { host: "www.burton.com", pathPrefix: "/cdn/shop/files/" },

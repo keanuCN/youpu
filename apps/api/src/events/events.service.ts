@@ -12,6 +12,7 @@ interface RawEntry {
   props: Record<string, unknown>;
   ts: number;
   path?: string;
+  region: string;
 }
 
 /** 写路径：POST /api/events → 校验 + props 白名单裁剪 → Redis Stream（§12.1） */
@@ -21,7 +22,7 @@ export class EventsService {
 
   constructor(@Inject(REDIS) private readonly redis: Redis) {}
 
-  async ingest(batch: EventBatch, accountId?: string): Promise<number> {
+  async ingest(batch: EventBatch, accountId?: string, region = '未知'): Promise<number> {
     const entries: RawEntry[] = [];
     for (const event of batch.events) {
       const props = sanitizeEventProps(event.name, event.props);
@@ -36,6 +37,7 @@ export class EventsService {
         props,
         ts: event.ts,
         path: event.path,
+        region,
       });
     }
     if (entries.length === 0) return 0;

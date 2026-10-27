@@ -14,6 +14,8 @@ export const APPROVED_SOURCE_HOSTS = new Set([
   'cdn.media.amplience.net',
   'cdn.shopify.com',
   'contents.mediadecathlon.com',
+  'donek.com',
+  'sp-bindings.jp',
   'dma.canyon.com',
   'eu.burton.com',
   'gopro.com',

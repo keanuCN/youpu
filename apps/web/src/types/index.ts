@@ -131,6 +131,8 @@ export type GearSizeSpec = Record<string, GearSizeSpecValue>;
 
 export interface GearItem {
   id: string;
+  /** 真实目录地址；互动请求不得从可变型号名重新拼接。 */
+  productSlug?: string;
   categorySlug: string;
   brand: string;
   model: string;

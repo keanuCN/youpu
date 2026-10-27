@@ -100,6 +100,12 @@
   official_url: https://unionbindingcompany.com/
   description: 专注单板固定器的品牌，产品覆盖全山地、自由式、野雪和快穿系统。
 
+- slug: sp-bindings
+  name: SP Bindings
+  name_cn: SP 固定器
+  official_url: https://sp-bindings.jp/
+  description: 奥地利单板固定器品牌，以 FASTEC 双入口系统为特色，产品覆盖公园、全山地与野雪场景。
+
 - slug: flux
   name: FLUX
   name_cn: Flux

@@ -1,0 +1,47 @@
+slug: sp-core-2026
+category: snowboard-binding
+brand: sp-bindings
+model: CORE
+year: 2026
+title: SP Bindings CORE 2025/26
+one_liner: SP 中级至进阶取向固定器，柔和脚感覆盖公园与全山地，FASTEC 快穿与传统绑带两种方式均可使用。
+price:
+  min: 1951.11
+  max: 1951.11
+  currency: CNY
+specs:
+  terrain:
+    - all-mountain
+    - freestyle
+  flexFeel: soft
+  entrySystem: fast-entry
+  mountingSystem: 附带树脂圆盘；官方说明该圆盘不兼容 Burton Channel，需另购铝合金圆盘。其他孔位请按随附圆盘核对。
+  bootCompatibility: 官方称适配常规单板雪鞋；尺码仅作参考，鞋型会影响实际贴合，需试装检查绑带覆盖与雪鞋居中。
+  bindingSizeGuide: SP 官方 sLAB（CORE/TEAM/PEAK）尺码参考：S 22–25 cm、M 25–28 cm、L 28–30 cm、XL 30–32 cm；尺码区间有重叠，按雪鞋实物试装。
+  baseplateMaterial: sLAB 铝合金底盘（型号说明）；具体合金牌号未在产品页核实。
+  selectionNotes: 官方定位覆盖公园至全山地，柔和、灵活的脚感面向中级至进阶滑手。快穿可从后方入脚，也可使用传统棘轮逐步收紧。购买前核对实际雪鞋与尺码、圆盘和雪板孔位。
+  compatibilitySources: https://sp-bindings.jp/pages/sp-bindings-size-chart；https://sp-bindings.jp/pages/technology
+  sizeChart:
+    - { size: S, mondo: 22–25 }
+    - { size: M, mondo: 25–28 }
+    - { size: L, mondo: 28–30 }
+    - { size: XL, mondo: 30–32 }
+  sizeChartCheckedAt: 2026-10-21
+  sizeChartSource: https://sp-bindings.jp/pages/sp-bindings-size-chart
+  priceCheckedAt: 2026-10-21
+  officialPrice: JPY 46,200（日本官网含税挂牌价）
+  priceMarket: SP Bindings 日本官方商店 25/26 商品页；按 ECB 2026-10-20 EUR/JPY 与 EUR/CNY 汇率折算人民币
+  priceSource: https://sp-bindings.jp/products/core
+  priceStatus: 日本官网 25/26 商品页含税标价 JPY 46,200；按 ECB 2026-10-20 EUR/JPY 177.34、EUR/CNY 7.4894 折算约 CNY 1,951.11。仅作日本地区价格参考，不是中国售价或成交价，未计跨境运输及进口费用。
+  exchangeRate: EUR/JPY 177.34；EUR/CNY 7.4894（ECB 2026-10-20）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+images:
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/a80ef53282d9d82a8399421f4020e7c8ef01b37415b8cc5b3dd982a7e569f0fe.webp
+    kind: face
+    alt: SP Bindings CORE 固定器官方商品图
+    source: SP Bindings 日本官方商品页公开图片；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://sp-bindings.jp/products/core
+status: published

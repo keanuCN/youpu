@@ -82,6 +82,12 @@ interface EventBreakdownRow {
   count: number;
 }
 
+interface RegionBreakdownRow {
+  region: string;
+  visitors: number;
+  events: number;
+}
+
 interface PathBreakdownRow {
   path: string;
   count: number;
@@ -354,7 +360,7 @@ export class AdminService {
     const to = new Date();
     const from = new Date(to.getTime() - rangeDays * DAY_MS);
 
-    const [summaryRows, funnelRows, engagementRows, dailyRows, eventRows, pathRows, productRows, recentRows, system] = await Promise.all([
+    const [summaryRows, funnelRows, engagementRows, dailyRows, eventRows, pathRows, productRows, recentRows, regionRows, system] = await Promise.all([
       this.prisma.$queryRaw<AnalyticsSummaryRow[]>`
         SELECT
           COUNT(*)::int AS events,
@@ -439,6 +445,17 @@ export class AdminService {
         ORDER BY created_at DESC
         LIMIT 24
       `,
+      this.prisma.$queryRaw<RegionBreakdownRow[]>`
+        SELECT
+          region,
+          COUNT(DISTINCT anon_id)::int AS visitors,
+          COUNT(*)::int AS events
+        FROM event
+        WHERE created_at >= ${from}
+        GROUP BY region
+        ORDER BY visitors DESC, events DESC, region ASC
+        LIMIT 24
+      `,
       this.systemStatus(),
     ]);
 
@@ -507,6 +524,11 @@ export class AdminService {
         path: row.path || null,
         productId: row.product_id || null,
         createdAt: row.created_at.toISOString(),
+      })),
+      regions: regionRows.map((row) => ({
+        region: row.region,
+        visitors: Number(row.visitors),
+        events: Number(row.events),
       })),
       system,
     };

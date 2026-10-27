@@ -1154,10 +1154,10 @@
   ],
   "donek-knapton-twin-custom-2026": [
     {
-      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/20d3a4a7d5118c62f7f45ccce1cb2c453a02fcf41968d8b098433f0029b6e8ae.webp",
+      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ad8e740967a90bb450af5d2e9bcbfc05091018e8373588baf4360916e41756ac.webp",
       "kind": "face",
-      "alt": "Donek Knapton Twin 定制实物样图；板面图案、长度与板宽因订单定制而异",
-      "source": "Donek 官方列出的韩国经销商 XgameSnow 商品页（图片授权待核）"
+      "alt": "Donek Knapton Twin 黑底蓝标实物正面图；官网 155 cm 样例，定制板面与尺寸因订单而异",
+      "source": "Donek 官方 155 Knapton 商品页 https://donek.com/product/155-knapton/（展示授权待核；2026-10-27 核对）"
     }
   ],
   "donek-raven-custom-2026": [
@@ -3542,6 +3542,46 @@
       "kind": "face",
       "alt": "SIRUI T-1204SK 碳纤维旅行三脚架",
       "source": "SIRUI 官方 T-S 系列商品页（展示授权状态待核）"
+    }
+  ],
+  "sp-base-2026": [
+    {
+      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/092839a5ab0b638e82984a72ac5a69f3f47d9e9fd0a96c1c86d09c5543d55dc8.webp",
+      "kind": "face",
+      "alt": "SP Bindings BASE 固定器官方商品图",
+      "source": "SP Bindings 日本官方商品页公开图片；展示授权状态待核"
+    }
+  ],
+  "sp-base-plus-2026": [
+    {
+      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/4a9a4a7943998114c546e3f720b0d87e9d918bb90cfaae56ad05b696c2298b8e.webp",
+      "kind": "face",
+      "alt": "SP Bindings BASE+ 固定器官方商品图",
+      "source": "SP Bindings 日本官方商品页公开图片；展示授权状态待核"
+    }
+  ],
+  "sp-core-2026": [
+    {
+      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/a80ef53282d9d82a8399421f4020e7c8ef01b37415b8cc5b3dd982a7e569f0fe.webp",
+      "kind": "face",
+      "alt": "SP Bindings CORE 固定器官方商品图",
+      "source": "SP Bindings 日本官方商品页公开图片；展示授权状态待核"
+    }
+  ],
+  "sp-peak-2026": [
+    {
+      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/42c7d38ef9f288ca55f32f81363d29e796e0f28d9aebefe8c7827e55314b5926.webp",
+      "kind": "face",
+      "alt": "SP Bindings PEAK 固定器官方商品图",
+      "source": "SP Bindings 日本官方商品页公开图片；展示授权状态待核"
+    }
+  ],
+  "sp-team-2026": [
+    {
+      "url": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/1c9bae4c297aa3b543a74f22c353cd8fb6ccb0eb0a766447e7b11d6b48496d8e.webp",
+      "kind": "face",
+      "alt": "SP Bindings TEAM 固定器官方商品图",
+      "source": "SP Bindings 日本官方商品页公开图片；展示授权状态待核"
     }
   ],
   "specialized-s-works-epic-8-2026": [

@@ -149,7 +149,7 @@ UPDATE account SET role = 'admin', status = 'active' WHERE email = 'your-admin@e
 
 - **IP 内测入口**：<http://115.190.156.88/youpu/>；管理台：<http://115.190.156.88/youpu/admin/>。
 - 2026-10-14 双板数据同步记录与回滚备份位置见 [`deploy/ski-content-20261014.md`](deploy/ski-content-20261014.md)。
-- **正式域名**：<https://youpu.asia> 已配置 DNS 和 HTTPS；公网访问仍受火山引擎接入备案限制。服务器本机按正式 Host/SNI 检查通过，不等于公网已开放。
+- **正式域名**：<https://youpu.asia> 已通过 2026-10-27 公网 HTTPS 检查，HTTP 与 www 正确跳转主域名；当前上线缺口、账号域名迁移影响与待验收项见 [上线检查](docs/上线检查-2026-10-27.md)。
 - 2026-10-20 已发布首页首屏加载优化与单板风格科普原创 WebP 插图，IP 与域名两站验收通过；未改生产数据库。详见 [部署记录](deploy/youpu.asia.md#2026-10-20-首屏优化与单板科普图片)。
 - **站点共存**：IP 根路径的点单应用保留；有谱运行在独立 `/youpu/` 前缀，域名站点使用独立 Next.js 服务。API、PostgreSQL 和 Redis 由服务器服务运行。
 - **生产目录**：服务器源码位于 `/opt/youpu`；当前服务、域名与回滚记录见 [deploy/README.md](deploy/README.md) 和 [youpu.asia 部署说明](deploy/youpu.asia.md)。

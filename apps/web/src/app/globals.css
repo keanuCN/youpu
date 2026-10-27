@@ -262,6 +262,24 @@
     }
   }
 
+  @keyframes riding-drawer-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes riding-drawer-backdrop {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   @keyframes skeleton-shimmer {
     from {
       transform: translateX(-100%);
@@ -286,6 +304,12 @@
     transform-origin: left center;
     animation: bar-grow 0.9s var(--ease-swiss) both;
   }
+  .animate-riding-drawer-in {
+    animation: riding-drawer-in 0.24s var(--ease-swiss) both;
+  }
+  .animate-riding-drawer-backdrop {
+    animation: riding-drawer-backdrop 0.2s ease-out both;
+  }
 
   .loading-skeleton {
     position: relative;
@@ -305,6 +329,11 @@
   @media (prefers-reduced-motion: reduce) {
     .loading-skeleton::after {
       animation: none;
+    }
+
+    .animate-riding-drawer-in,
+    .animate-riding-drawer-backdrop {
+      animation-duration: 0.01ms;
     }
   }
 }

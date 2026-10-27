@@ -153,7 +153,8 @@ export function clearCloudSession(): void {
   storage()?.removeItem(REFRESH_TOKEN_KEY);
 }
 
-export function productRefForGear(gear: { id: string; brand: string; model: string; year: number }): string {
+export function productRefForGear(gear: { id: string; productSlug?: string; brand: string; model: string; year: number }): string {
+  if (gear.productSlug) return gear.productSlug;
   if (/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(gear.id)) return gear.id;
   return `${gear.brand}-${gear.model}-${gear.year}`
     .toLowerCase()

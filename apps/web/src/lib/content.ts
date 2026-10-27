@@ -186,6 +186,7 @@ function mapProduct(item: ApiProduct, fallback?: GearItem): GearItem {
     // Detail routes are slug-based. Keep the local id while transitional data exists,
     // and use the API slug for new products so cards can link to a resolvable route.
     id: fallback?.id ?? item.slug,
+    productSlug: item.slug,
     categorySlug,
     brand: item.brand.name,
     model: item.model,

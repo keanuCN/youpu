@@ -53,8 +53,8 @@ export function SnowboardSetupStepIllustration({ step }: { step: 1 | 2 | 3 }) {
     { src: "setup-boot.webp", alt: "店员协助检查单板雪鞋贴合度与脚跟固定" },
     { src: "setup-binding.webp", alt: "将单板雪鞋放入固定器，检查鞋底居中和绑带位置" },
     { src: "setup-board.webp", alt: "店员根据滑雪者身高比较单板长度" },
-  ];
-  const image = images[step - 1];
+  ] as const;
+  const image = images[step - 1] ?? images[0];
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   return <img

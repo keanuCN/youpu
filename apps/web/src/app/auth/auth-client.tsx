@@ -231,7 +231,7 @@ export default function AuthPage() {
                 setEmail(e.target.value);
                 clearEmailCode();
               }}
-              placeholder="you@example.com"
+              placeholder="请填写邮箱"
               className="h-9 rounded-none border-border text-[13px]"
             />
           </div>
@@ -265,9 +265,6 @@ export default function AuthPage() {
                   {emailCooldown > 0 ? "重新获取 " + emailCooldown + "s" : emailCodeSent ? "重新发送" : "获取验证码"}
                 </Button>
               </div>
-              <p className="mono-label border border-dashed border-border p-3 leading-relaxed">
-                验证码 10 分钟有效。开发和生产环境都必须配置真实邮件服务。
-              </p>
             </div>
           ) : null}
 

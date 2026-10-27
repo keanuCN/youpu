@@ -175,6 +175,7 @@ function mergeSnapshot(gear: GearItem, snapshot: CatalogSnapshotItem, galleries:
 
   return {
     ...gear,
+    productSlug: snapshot.slug,
     categorySlug: snapshot.categorySlug,
     brand: snapshot.brand.name,
     model: snapshot.model,
@@ -206,6 +207,7 @@ function createFromSnapshot(snapshot: CatalogSnapshotItem, galleries: CatalogIma
 
   return {
     id: snapshot.slug,
+    productSlug: snapshot.slug,
     categorySlug: snapshot.categorySlug,
     brand: snapshot.brand.name,
     model: snapshot.model,

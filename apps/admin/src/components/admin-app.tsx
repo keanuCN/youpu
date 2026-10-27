@@ -13,6 +13,7 @@ import {
   type SpecSchema,
 } from '@youpu/schema';
 import { useEffect, useMemo, useState, type ChangeEvent, type FormEvent } from 'react';
+import dynamic from 'next/dynamic';
 import {
   adminFetch,
   adminLogin,
@@ -46,6 +47,11 @@ import {
   type AdminSession,
 } from '../lib/admin-session';
 import { formatModerationReasons } from '../lib/moderation';
+
+const ChinaRegionMap = dynamic(
+  () => import('./china-region-map').then((module) => module.ChinaRegionMap),
+  { ssr: false, loading: () => <div className="china-region-loading">正在加载中国省级地图……</div> },
+);
 
 type Section = AdminSection;
 type NoticeKind = 'success' | 'error' | 'info';
@@ -1655,6 +1661,27 @@ export function AdminApp() {
             <EventBreakdown items={analytics?.eventBreakdown ?? []} />
           </section>
         </div>
+        <section className="data-panel analytics-regions-panel">
+          <PanelHeader eyebrow="访客来源" title="客户地区分布" meta={`最近 ${analyticsDays} 天 · 按省级/国家级汇总`} />
+          <div className="analytics-region-layout">
+            <div className="analytics-region-map-wrap">
+              <div className="analytics-region-map-caption"><strong>中国省级访客分布</strong><span>悬停省份查看访客数</span></div>
+              <ChinaRegionMap regions={analytics?.regions ?? []} />
+            </div>
+            <div className="analytics-region-list-wrap">
+              {analytics?.regions.some((item) => item.visitors > 0) ? (
+                <div className="rank-list">{analytics.regions.map((item, index) => (
+                  <div className="rank-row" key={item.region}>
+                    <span className="rank-index">{String(index + 1).padStart(2, '0')}</span>
+                    <div className="rank-main"><strong>{item.region}</strong><small>{formatCompactNumber(item.events)} 次访问事件</small></div>
+                    <b>{formatCompactNumber(item.visitors)} 位访客</b>
+                  </div>
+                ))}</div>
+              ) : <EmptyState title="地域数据正在积累" detail="从功能启用后收到的访问事件开始统计；未识别的网络会归入“未知”。" />}
+            </div>
+          </div>
+          <p className="analytics-region-privacy">地域由服务器本地 IP 数据库推断，只保存省级或国家级标签，不保存原始 IP、城市或精确坐标。定位结果可能受运营商出口和代理影响。</p>
+        </section>
         <div className="analytics-grid analytics-decision-grid">
           <section className="data-panel">
             <PanelHeader eyebrow="浏览转化" title="产品浏览漏斗" meta="访客去重" />

@@ -137,6 +137,7 @@ export interface AdminAnalytics {
     productId: string | null;
     createdAt: string;
   }>;
+  regions: Array<{ region: string; visitors: number; events: number }>;
   system: {
     status: 'ok' | 'degraded';
     checkedAt: string;

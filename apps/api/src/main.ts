@@ -7,12 +7,15 @@ import 'reflect-metadata';
 };
 
 import { Logger } from '@nestjs/common';
+import type { NestExpressApplication } from '@nestjs/platform-express';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { env } from './config/env';
 
 async function bootstrap(): Promise<void> {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
+  // API 仅绑定 loopback，由本机 Nginx 反代；只信任 loopback 代理转发的客户端 IP。
+  app.set('trust proxy', 'loopback');
   app.setGlobalPrefix('api');
   app.enableCors({ origin: env.CORS_ORIGINS.split(',').map((s) => s.trim()) });
   app.enableShutdownHooks();

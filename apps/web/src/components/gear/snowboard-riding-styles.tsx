@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
 import { SnowboardStyleIllustration } from "./snowboard-style-illustration";
 
 const styles = [
@@ -64,9 +67,9 @@ const styles = [
   {
     id: 'style-freeride',
     index: '07',
-    name: '自由骑与粉雪 / Freeride',
+    name: '野雪与粉雪 / Freeride',
     label: '自然地形 · 林间 · 新雪',
-    summary: '重视地形选择、线路、速度和雪况，可能在雪道边、树林或粉雪中滑行。雪场开放边界外的野雪与回山路线有额外风险，不应把自由骑理解成可以离开雪场管理范围。',
+    summary: '正式赛事或新闻语境可称“高山自由滑雪”，雪圈日常更常说“野雪”或“滑野雪”。核心是在自然地形中的自由滑行，重视线路、速度和雪况判断；无论在雪场边缘还是开放边界外，都要先确认区域开放状态与安全要求。',
     entry: '先在开放雪道练习不同半径的控速转弯，了解当天雪况并跟随有经验的伙伴；进入雪场管控区以外的地形前，接受雪崩风险与救援装备训练。',
     gear: '定向板和较宽板腰常用于增加方向性或软雪浮力，但宽板并不会自动提升安全性；尺寸仍须结合体重、技术和雪况。',
     fieldFocus: '记录雪深、雪型、坡向、能见度和路线是否位于开放区域；描述浮力、转弯空间与疲劳变化，不以单次顺利滑行推断线路安全。',
@@ -117,6 +120,29 @@ const fieldReports = [
 ];
 
 export function SnowboardRidingStyles() {
+  const [activeStyle, setActiveStyle] = useState<(typeof styles)[number] | null>(null);
+  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const closeRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    if (!activeStyle) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    closeRef.current?.focus();
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setActiveStyle(null);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', handleKeyDown);
+      triggerRef.current?.focus();
+    };
+  }, [activeStyle]);
+
   return (
     <section id="riding-styles" className="scroll-mt-32 border-y-2 border-foreground/80 py-8 md:py-10">
       <header className="grid gap-4 border-b border-border pb-6 md:grid-cols-[minmax(0,1fr)_minmax(240px,0.55fr)] md:items-end">
@@ -132,31 +158,86 @@ export function SnowboardRidingStyles() {
         图示用于快速理解地形与线路，不是动作教学；本站没有把观察提纲冒充成已完成的实测。
       </p>
 
-      <div className="grid gap-4 pt-5 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid items-stretch gap-4 pt-5 md:grid-cols-2 xl:grid-cols-3">
         {styles.map((style) => (
           <article id={style.id} key={style.id} className="scroll-mt-32 min-w-0 border border-border bg-background">
             <div className="aspect-[2/1] overflow-hidden border-b border-border">
               <SnowboardStyleIllustration id={style.id} />
             </div>
             <div className="p-4 md:p-5">
-              <p className="mono-label text-primary">风格 {style.index} · {style.label}</p>
-              <h3 className="mt-2 text-lg font-medium tracking-tight">{style.name}</h3>
-              <p className="mt-2 line-clamp-3 text-[13px] leading-6 text-muted-foreground">{style.summary}</p>
-              <details className="group mt-4 border-t border-border pt-3">
-                <summary className="cursor-pointer list-none text-xs font-medium marker:hidden hover:text-primary">
-                  展开入门与装备建议
-                  <span className="float-right text-muted-foreground transition-transform group-open:rotate-180" aria-hidden="true">⌄</span>
-                </summary>
-                <dl className="mt-4 space-y-3 text-xs leading-5">
-                  <div><dt className="mono-label text-primary">怎么开始</dt><dd className="mt-1 text-muted-foreground">{style.entry}</dd></div>
-                  <div><dt className="mono-label text-primary">装备关注</dt><dd className="mt-1 text-muted-foreground">{style.gear}</dd></div>
-                  <div><dt className="mono-label text-primary">实测记录点</dt><dd className="mt-1 text-muted-foreground">{style.fieldFocus}</dd></div>
-                </dl>
-              </details>
+              <p className="mono-label min-h-8 text-primary">风格 {style.index} · {style.label}</p>
+              <h3 className="mt-2 min-h-14 text-lg font-medium tracking-tight">{style.name}</h3>
+              <p className="mt-2 line-clamp-3 min-h-[4.5rem] text-[13px] leading-6 text-muted-foreground">{style.summary}</p>
+              <button
+                type="button"
+                onClick={(event) => {
+                  triggerRef.current = event.currentTarget;
+                  setActiveStyle(style);
+                }}
+                className="mt-4 flex w-full items-center justify-between border-t border-border pt-3 text-left text-xs font-medium transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+                aria-haspopup="dialog"
+              >
+                <span>查看入门与装备建议</span>
+                <span className="text-base text-muted-foreground" aria-hidden="true">↗</span>
+              </button>
             </div>
           </article>
         ))}
       </div>
+
+      {activeStyle && (
+        <div
+          className="fixed inset-0 z-[100] bg-foreground/30 backdrop-blur-[2px] animate-riding-drawer-backdrop"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setActiveStyle(null);
+          }}
+        >
+          <aside
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="riding-style-drawer-title"
+            className="absolute inset-y-0 right-0 flex w-full max-w-xl flex-col overflow-y-auto border-l border-border bg-background shadow-2xl animate-riding-drawer-in"
+          >
+            <header className="sticky top-0 z-10 flex items-start justify-between gap-6 border-b border-border bg-background/95 px-5 py-5 backdrop-blur md:px-8">
+              <div>
+                <p className="mono-label text-primary">风格 {activeStyle.index} · 入门与装备建议</p>
+                <h3 id="riding-style-drawer-title" className="mt-2 text-xl font-medium tracking-tight md:text-2xl">{activeStyle.name}</h3>
+                <p className="mt-1 text-xs leading-5 text-muted-foreground">{activeStyle.label}</p>
+              </div>
+              <button
+                ref={closeRef}
+                type="button"
+                onClick={() => setActiveStyle(null)}
+                className="flex size-10 shrink-0 items-center justify-center border border-border text-xl transition-colors hover:border-foreground hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                aria-label="关闭入门与装备建议"
+              >
+                ×
+              </button>
+            </header>
+            <dl className="flex-1 space-y-0 px-5 md:px-8">
+              <div className="border-b border-border py-6">
+                <dt className="mono-label text-primary">风格介绍</dt>
+                <dd className="mt-2 text-sm leading-7 text-muted-foreground">{activeStyle.summary}</dd>
+              </div>
+              <div className="border-b border-border py-6">
+                <dt className="mono-label text-primary">怎么开始</dt>
+                <dd className="mt-2 text-sm leading-7 text-muted-foreground">{activeStyle.entry}</dd>
+              </div>
+              <div className="border-b border-border py-6">
+                <dt className="mono-label text-primary">装备关注</dt>
+                <dd className="mt-2 text-sm leading-7 text-muted-foreground">{activeStyle.gear}</dd>
+              </div>
+              <div className="border-b border-border py-6">
+                <dt className="mono-label text-primary">实测记录点</dt>
+                <dd className="mt-2 text-sm leading-7 text-muted-foreground">{activeStyle.fieldFocus}</dd>
+              </div>
+            </dl>
+            <p className="border-t border-border px-5 py-4 text-xs leading-5 text-muted-foreground md:px-8">
+              建议结合自己的水平、体重、常滑雪况和雪场规则判断；风格可以交叉，不必急着给自己贴单一标签。
+            </p>
+          </aside>
+        </div>
+      )}
 
       <section id="field-reports" className="scroll-mt-32 border-t-2 border-foreground/80 pt-7 md:pt-8">
         <header className="grid gap-3 md:grid-cols-[minmax(0,1fr)_minmax(240px,0.55fr)] md:items-end">

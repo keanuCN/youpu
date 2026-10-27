@@ -38,10 +38,10 @@ specs:
   exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
   priceStatus: 官方美国站挂牌 USD 865，按 ECB 2026-10-14 参考汇率折算约 CNY 5,789.20；是基础定制价的地区参考，不是中国售价或最终成交价。定制参数、运费、税费及进口费用另计；官网要求订购前与工程人员确认参数。
 images:
-  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/20d3a4a7d5118c62f7f45ccce1cb2c453a02fcf41968d8b098433f0029b6e8ae.webp"
+  - url: "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ad8e740967a90bb450af5d2e9bcbfc05091018e8373588baf4360916e41756ac.webp"
     kind: face
-    alt: Donek Knapton Twin 定制实物样图；板面图案、长度与板宽因订单定制而异
-    source: Donek 官方列出的韩国经销商 XgameSnow 商品页（图片授权待核）
+    alt: Donek Knapton Twin 黑底蓝标实物正面图；官网 155 cm 样例，定制板面与尺寸因订单而异
+    source: Donek 官方 155 Knapton 商品页 https://donek.com/product/155-knapton/（展示授权待核；2026-10-27 核对）
     sort_order: 0
 data_source:
   kind: official

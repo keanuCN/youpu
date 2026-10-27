@@ -36,9 +36,9 @@ export interface CatalogSnapshotMeta {
 }
 
 export const CATALOG_SNAPSHOT_META: CatalogSnapshotMeta = {
-  "source": "repository seed YAML: snowboard,snowboard-binding,snowboard-boot,skis,skiing-apparel (cover URLs only; catalog facts and community statistics retained)",
-  "generatedAt": "2026-10-19T07:06:14.607Z",
-  "total": 402,
+  "source": "repository seed YAML: snowboard-binding (cover URLs only; catalog facts and community statistics retained)",
+  "generatedAt": "2026-10-27T03:46:07.822Z",
+  "total": 407,
   "pageSize": 48,
   "categorySlugs": [
     "action-cam",
@@ -13418,7 +13418,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "priceMin": 5789,
     "priceMax": 5789,
     "priceCurrency": "CNY",
-    "coverUrl": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/20d3a4a7d5118c62f7f45ccce1cb2c453a02fcf41968d8b098433f0029b6e8ae.webp",
+    "coverUrl": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/ad8e740967a90bb450af5d2e9bcbfc05091018e8373588baf4360916e41756ac.webp",
     "ratingOverall": null,
     "ratingCount": 0,
     "favoriteCount": 0,
@@ -16376,7 +16376,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Storm Wolf Snowboard | Jones 2027",
     "model": "Storm Wolf",
     "year": 2027,
-    "oneLiner": "以燕尾、长板头浮力和冲浪式转弯为特征的自由骑板，偏爱深雪、快速弧线与方向性滑行，公园和频繁倒滑不是它的主场。",
+    "oneLiner": "以燕尾、长板头浮力和冲浪式转弯为特征的野雪板，偏爱深雪、快速弧线与方向性滑行，公园和频繁倒滑不是它的主场。",
     "priceMin": 4680,
     "priceMax": 4680,
     "priceCurrency": "CNY",
@@ -18993,7 +18993,7 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "title": "Men's Valhalla Snowboard | Never Summer 2027",
     "model": "Valhalla",
     "year": 2027,
-    "oneLiner": "面向自由骑和大山线路的方向性板，Triple Camber Hybrid 试图在边刃支撑、混合雪况适应和粉雪通过性之间取得平衡，偏向有经验的主动滑手。",
+    "oneLiner": "面向野雪和大山线路的方向性板，Triple Camber Hybrid 试图在边刃支撑、混合雪况适应和粉雪通过性之间取得平衡，偏向有经验的主动滑手。",
     "priceMin": 4613,
     "priceMax": 4613,
     "priceCurrency": "CNY",
@@ -20541,11 +20541,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 67,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 7.3,
+      "comfort": 6.8,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "burton",
@@ -20554,50 +20554,60 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "terrain": [
+        "all-mountain"
+      ],
+      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-105391；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
       "entrySystem": "strap",
       "flexFeel": "medium",
       "mountingSystem": "Re:Flex；兼容主要雪板安装系统。Burton 3D 系统需另购 3D Hinge Disc（不含）",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "S：男靴 US 6–8 / EU 38–41；M：US 8–11 / EU 41–44；L：US 10+ / EU 43+",
+      "sizeChartScope": "官方推荐范围重叠：男靴 US 8 同属 S/M，US 10–11 同属 M/L；女靴 US 9 同属 S/M、US 11 同属 M/L。此表不是唯一尺码映射，须用实际雪鞋试装。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6–8",
+          "usWomen": "5–9",
+          "eu": "38–41",
+          "uk": "5–7",
+          "mondo": "24–26"
+        },
+        {
+          "size": "M",
+          "usMen": "8–11",
+          "usWomen": "9–11",
+          "eu": "41–44",
+          "uk": "7–10",
+          "mondo": "26–29"
+        },
+        {
+          "size": "L",
+          "usMen": "10+",
+          "usWomen": "11+",
+          "eu": "43+",
+          "uk": "9+",
+          "mondo": "28+"
+        }
+      ],
+      "sizeChartCheckedAt": "2026-10-14",
+      "sizeChartSource": "https://www.burton.com/en-au/products/mens-burton-cartel-re-flex-snowboard-bindings-105391",
       "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
       "ankleStrap": "Hammockstrap 2.0",
       "toeStrap": "Supergrip Capstrap",
       "buckles": "Smooth Glide",
-      "bindingSizeGuide": "S：男靴 US 6–8 / EU 38–41；M：US 8–11 / EU 41–44；L：US 10+ / EU 43+",
       "highback": "单一组件结构",
       "highbackAdjustment": "DialFLAD 前倾角调节",
       "cushioning": "Re:Flex FullBED 全掌缓震",
-      "terrain": [
-        "all-mountain"
-      ],
       "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
       "selectionNotes": "按本型号官方表核对雪鞋 US 或 EU 码；男靴 US 8 与 10–11、女靴 US 9 与 11 分别落入相邻两档。重叠码不能仅按鞋码唯一选定，应以实际雪鞋试装并检查鞋底居中、绑带余量和后跟贴合。安装孔位按随附 Re:Flex 圆盘核对；Burton 3D 系统需另购适配圆盘。",
       "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-cartel-re-flex-snowboard-bindings-105391",
-      "sizeChartScope": "官方推荐范围重叠：男靴 US 8 同属 S/M，US 10–11 同属 M/L；女靴 US 9 同属 S/M、US 11 同属 M/L。此表不是唯一尺码映射，须用实际雪鞋试装。",
-      "sizeChartCheckedAt": "2026-10-14",
-      "sizeChartSource": "https://www.burton.com/en-au/products/mens-burton-cartel-re-flex-snowboard-bindings-105391",
-      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-105391；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
-      "priceMarket": "Burton 日本官方商店；型号 ID 105391、色款标识 27WIN-105391",
       "priceCheckedAt": "2026-10-14",
+      "priceMarket": "Burton 日本官方商店；型号 ID 105391、色款标识 27WIN-105391",
       "priceSource": "https://jp.burton.com/en-jp/products/mens-burton-cartel-re-flex-snowboard-bindings-105391",
       "priceStatus": "Burton 日本官方商品页对应 2027 款型号 ID 105391 / 色款标识 27WIN-105391，标价 JPY 46,200；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 1,951.37。页面列出 S/M/L，S 码当时显示售罄。税费口径以结账为准；此为日本官方店折算参考，不是中国售价，跨境配送及进口费用未计，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5f23-72c2-a616-b1df14e2f6f3",
@@ -20615,11 +20625,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 70,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 8.5,
+      "comfort": 6.8,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "burton",
@@ -20628,50 +20638,60 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "stiff",
-      "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "baseplateMaterial": "45% 短切玻纤/尼龙复合材料",
-      "ankleStrap": "Hammockstrap 2.0",
-      "toeStrap": "Supergrip Capstrap 2.0",
-      "buckles": "Smooth Glide 卡扣",
-      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
-      "highback": "Heel Hammock",
-      "highbackAdjustment": "DialFLAD 前倾角调节",
-      "cushioning": "Re:Flex FullBED 全掌缓震",
       "terrain": [
         "all-mountain",
         "freestyle",
         "freeride"
       ],
+      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-222301；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
+      "entrySystem": "strap",
+      "flexFeel": "stiff",
+      "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
+      "sizeChartScope": "官方推荐范围重叠：男靴 US 8 同属 S/M，US 10–11 同属 M/L；女靴 US 9 同属 S/M、US 11 同属 M/L。此表不是唯一尺码映射，须用实际雪鞋试装。",
+      "baseplateMaterial": "45% 短切玻纤/尼龙复合材料",
+      "ankleStrap": "Hammockstrap 2.0",
+      "toeStrap": "Supergrip Capstrap 2.0",
+      "buckles": "Smooth Glide 卡扣",
+      "highback": "Heel Hammock",
+      "highbackAdjustment": "DialFLAD 前倾角调节",
+      "cushioning": "Re:Flex FullBED 全掌缓震",
       "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
       "selectionNotes": "按官方表核对雪鞋 US/EU 码；男靴 US 8 与 10–11、女靴 US 9 与 11 落入相邻两档，重叠码须用实际雪鞋试装，检查底盘承托、鞋头/后跟居中及绑带余量。雪板安装孔位按随附 Re:Flex 圆盘核对。",
       "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-cartel-x-re-flex-snowboard-bindings-222301",
-      "sizeChartScope": "官方推荐范围重叠：男靴 US 8 同属 S/M，US 10–11 同属 M/L；女靴 US 9 同属 S/M、US 11 同属 M/L。此表不是唯一尺码映射，须用实际雪鞋试装。",
-      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-222301；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
-      "priceMarket": "Burton 日本官方商店；型号 ID 222301、色款标识 27WIN-222301",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "usWomen": "5-9",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8-11",
+          "usWomen": "9-11",
+          "eu": "41-44",
+          "uk": "7-10",
+          "mondo": "26-29"
+        },
+        {
+          "size": "L",
+          "usMen": "10+",
+          "usWomen": "11+",
+          "eu": "43+",
+          "uk": "9+",
+          "mondo": "28+"
+        }
+      ],
       "priceCheckedAt": "2026-10-14",
+      "priceMarket": "Burton 日本官方商店；型号 ID 222301、色款标识 27WIN-222301",
       "priceSource": "https://jp.burton.com/en-jp/products/mens-burton-cartel-x-re-flex-snowboard-bindings-222301",
       "priceStatus": "Burton 日本官方商品页对应 2027 款型号 ID 222301 / 色款标识 27WIN-222301，标价 JPY 52,800；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 2,230.14。页面列出 S/M/L，S 码当时显示售罄。税费口径以结账为准；此为日本官方店折算参考，不是中国售价，跨境配送及进口费用未计，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5f31-775c-b590-6d1a1ae002b9",
@@ -20689,11 +20709,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 67,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 7.3,
+      "comfort": 6.8,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "burton",
@@ -20702,49 +20722,59 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "medium",
-      "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "baseplateMaterial": "Bomb-Proof 聚碳酸酯",
-      "ankleStrap": "Reactstrap",
-      "toeStrap": "Supergrip Capstrap",
-      "buckles": "Smooth Glide 卡扣",
-      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
-      "highbackAdjustment": "MicroFLAD 前倾角调节",
-      "cushioning": "Re:Flex FullBED 全掌缓震",
       "terrain": [
         "all-mountain",
         "freestyle",
         "freeride"
       ],
+      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-105441；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
+      "entrySystem": "strap",
+      "flexFeel": "medium",
+      "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
+      "sizeChartScope": "官方推荐范围重叠：男靴 US 8 同属 S/M，US 10–11 同属 M/L；女靴 US 9 同属 S/M、US 11 同属 M/L。此表不是唯一尺码映射，须用实际雪鞋试装。",
+      "baseplateMaterial": "Bomb-Proof 聚碳酸酯",
+      "ankleStrap": "Reactstrap",
+      "toeStrap": "Supergrip Capstrap",
+      "buckles": "Smooth Glide 卡扣",
+      "highbackAdjustment": "MicroFLAD 前倾角调节",
+      "cushioning": "Re:Flex FullBED 全掌缓震",
       "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
       "selectionNotes": "按官方表核对雪鞋 US/EU 码；男靴 US 8 与 10–11、女靴 US 9 与 11 落入相邻两档，重叠码须用实际雪鞋试装，检查底盘承托、鞋头/后跟居中及绑带余量。雪板安装孔位按随附 Re:Flex 圆盘核对。",
       "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-freestyle-re-flex-snowboard-bindings-105441",
-      "sizeChartScope": "官方推荐范围重叠：男靴 US 8 同属 S/M，US 10–11 同属 M/L；女靴 US 9 同属 S/M、US 11 同属 M/L。此表不是唯一尺码映射，须用实际雪鞋试装。",
-      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-105441；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
-      "priceMarket": "Burton 日本官方商店；型号 ID 105441、色款标识 27WIN-105441",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "usWomen": "5-9",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8-11",
+          "usWomen": "9-11",
+          "eu": "41-44",
+          "uk": "7-10",
+          "mondo": "26-29"
+        },
+        {
+          "size": "L",
+          "usMen": "10+",
+          "usWomen": "11+",
+          "eu": "43+",
+          "uk": "9+",
+          "mondo": "28+"
+        }
+      ],
       "priceCheckedAt": "2026-10-14",
+      "priceMarket": "Burton 日本官方商店；型号 ID 105441、色款标识 27WIN-105441",
       "priceSource": "https://jp.burton.com/ja-jp/products/mens-burton-freestyle-re-flex-snowboard-bindings-105441",
       "priceStatus": "Burton 日本官方商品页对应 2027 款型号 ID 105441 / 色款标识 27WIN-105441，标价 JPY 24,200；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 1,022.15。页面列出 S/M/L 尺码；具体库存以购买时选中的尺码为准。税费口径以结账为准；此为日本官方店折算参考，不是中国售价，跨境配送及进口费用未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5f40-7182-ac48-6161f27eb0ba",
@@ -20762,11 +20792,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 68.2,
     "editorialScores": {
-      "value": 5,
-      "comfort": 7.4,
       "response": 7.3,
+      "comfort": 7.4,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "burton",
@@ -20775,48 +20805,58 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "terrain": [
+        "all-mountain"
+      ],
+      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-105471；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
       "entrySystem": "strap",
       "flexFeel": "medium",
       "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
+      "sizeChartScope": "官方推荐范围重叠：男靴 US 8 同属 S/M，US 10–11 同属 M/L；女靴 US 9 同属 S/M、US 11 同属 M/L。此表不是唯一尺码映射，须用实际雪鞋试装。",
       "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
       "ankleStrap": "Hammockstrap",
       "toeStrap": "Supergrip Capstrap 2.0",
       "buckles": "Double Take 卡扣",
-      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
       "highback": "Kickback Hammock",
       "highbackAdjustment": "MicroFLAD 前倾角调节",
       "cushioning": "Re:Flex FullBED 全掌缓震；B3 凝胶缓震",
-      "terrain": [
-        "all-mountain"
-      ],
       "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
       "selectionNotes": "按官方表核对雪鞋 US/EU 码；男靴 US 8 与 10–11、女靴 US 9 与 11 落入相邻两档，重叠码须用实际雪鞋试装，检查底盘承托、鞋头/后跟居中及绑带余量。雪板安装孔位按随附 Re:Flex 圆盘核对。",
       "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-genesis-re-flex-snowboard-bindings-105471",
-      "sizeChartScope": "官方推荐范围重叠：男靴 US 8 同属 S/M，US 10–11 同属 M/L；女靴 US 9 同属 S/M、US 11 同属 M/L。此表不是唯一尺码映射，须用实际雪鞋试装。",
-      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-105471；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
-      "priceMarket": "Burton 日本官方商店；型号 ID 105471、色款标识 27WIN-105471",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "usWomen": "5-9",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8-11",
+          "usWomen": "9-11",
+          "eu": "41-44",
+          "uk": "7-10",
+          "mondo": "26-29"
+        },
+        {
+          "size": "L",
+          "usMen": "10+",
+          "usWomen": "11+",
+          "eu": "43+",
+          "uk": "9+",
+          "mondo": "28+"
+        }
+      ],
       "priceCheckedAt": "2026-10-14",
+      "priceMarket": "Burton 日本官方商店；型号 ID 105471、色款标识 27WIN-105471",
       "priceSource": "https://jp.burton.com/ja-jp/products/mens-burton-genesis-re-flex-snowboard-bindings-105471",
       "priceStatus": "Burton 日本官方商品页对应 2027 款型号 ID 105471 / 色款标识 27WIN-105471，标价 JPY 66,000；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 2,787.67。页面列出 S/M/L，S 码当时显示售罄。税费口径以结账为准；此为日本官方店折算参考，不是中国售价，跨境配送及进口费用未计，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5f4d-7ba1-80e7-f5d56c0bec25",
@@ -20834,11 +20874,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 68.4,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 8.5,
+      "comfort": 6.8,
+      "versatility": 6.8,
       "convenience": 6.2,
-      "versatility": 6.8
+      "value": 5
     },
     "brand": {
       "slug": "burton",
@@ -20847,50 +20887,59 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "stiff",
-      "mountingSystem": "EST：仅适用于 Burton The Channel 雪板；底部无硬件，支持更灵活的站姿调节",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
-      "ankleStrap": "非对称 Hammockstrap",
-      "toeStrap": "Supergrip Capstrap 2.0",
-      "buckles": "Double Take 卡扣",
-      "bindingSizeGuide": "Burton 女款官方尺码：S US 女靴 4–6 / EU 34–36.5；M 6–8 / EU 36.5–40；L 8+ / EU 40+",
-      "highback": "Heel Hammock",
-      "highbackAdjustment": "DialFLAD 前倾角调节，可调至零前倾",
-      "cushioning": "FullBED 全掌缓震",
       "terrain": [
         "freeride",
         "carving"
       ],
+      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-222331；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
+      "entrySystem": "strap",
+      "flexFeel": "stiff",
+      "mountingSystem": "EST：仅适用于 Burton The Channel 雪板；底部无硬件，支持更灵活的站姿调节",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Burton 女款官方尺码：S US 女靴 4–6 / EU 34–36.5；M 6–8 / EU 36.5–40；L 8+ / EU 40+",
+      "sizeChartScope": "官方推荐范围在边界码重叠：女靴 US 6 同属 S/M、US 8 同属 M/L；男靴 US 7 同属 M/L。不得把推荐区间当作唯一映射；用实际雪鞋试装并核对 EST 与板面 The Channel 兼容。",
+      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
+      "ankleStrap": "非对称 Hammockstrap",
+      "toeStrap": "Supergrip Capstrap 2.0",
+      "buckles": "Double Take 卡扣",
+      "highback": "Heel Hammock",
+      "highbackAdjustment": "DialFLAD 前倾角调节，可调至零前倾",
+      "cushioning": "FullBED 全掌缓震",
       "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
       "selectionNotes": "按女靴尺码查官方表；US 6 同属 S/M、US 8 同属 M/L，男靴 US 7 也同时落在 M/L。重叠码须用实际雪鞋试装，确认底盘承托、居中和绑带位置。此 EST 版本仅适用于 Burton The Channel，不适用于普通四孔雪板。",
       "compatibilitySources": "https://www.burton.com/en-us/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
-      "sizeChartScope": "官方推荐范围在边界码重叠：女靴 US 6 同属 S/M、US 8 同属 M/L；男靴 US 7 同属 M/L。不得把推荐区间当作唯一映射；用实际雪鞋试装并核对 EST 与板面 The Channel 兼容。",
-      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-222331；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usWomen": "4-6",
+          "eu": "34-36.5",
+          "uk": "2.5-4",
+          "mondo": "21-23"
+        },
+        {
+          "size": "M",
+          "usWomen": "6-8",
+          "usMen": "6-7",
+          "eu": "36.5-40",
+          "uk": "4-6",
+          "mondo": "23-25"
+        },
+        {
+          "size": "L",
+          "usWomen": "8+",
+          "usMen": "7-10",
+          "eu": "40+",
+          "uk": "6+",
+          "mondo": "25+"
+        }
+      ],
+      "priceCheckedAt": "2026-10-14",
       "officialPrice": "USD 349.95",
       "priceMarket": "Burton 日本官方商店；型号 ID 222331、色款标识 27WIN-222331",
-      "priceCheckedAt": "2026-10-14",
       "priceSource": "https://jp.burton.com/en-jp/products/womens-burton-lexa-x-est-snowboard-bindings-222331",
       "priceStatus": "Burton 日本官方商品页对应 2027 款型号 ID 222331 / 色款标识 27WIN-222331，标价 JPY 52,800；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 2,230.14。页面列出 S/M/L，S、L 码当时显示售罄。EST 版本仅适用于 Burton The Channel 安装系统。税费口径以结账为准；此为日本官方店折算参考，不是中国售价，跨境配送及进口费用未计，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "野雪 / freeride · 刻滑"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5f5a-775f-a6a3-0b9449a5e3ba",
@@ -20908,11 +20957,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 67,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 7.3,
+      "comfort": 6.8,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "burton",
@@ -20921,47 +20970,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "terrain": [
+        "all-mountain"
+      ],
+      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-105461；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
       "entrySystem": "strap",
       "flexFeel": "medium",
       "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
+      "sizeChartScope": "官方推荐范围重叠：男靴 US 8 同属 S/M，US 10–11 同属 M/L；女靴 US 9 同属 S/M、US 11 同属 M/L。此表不是唯一尺码映射，须用实际雪鞋试装。",
       "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
       "ankleStrap": "Reactstrap",
       "toeStrap": "Supergrip Capstrap",
       "buckles": "Smooth Glide 卡扣",
-      "bindingSizeGuide": "Burton 男款官方尺码：S US 男靴 6–8 / EU 38–41；M 8–11 / EU 41–44；L 10+ / EU 43+",
       "highbackAdjustment": "DialFLAD 前倾角调节；高背可独立调节前倾与旋转",
       "cushioning": "Re:Flex FullBED 全掌缓震",
-      "terrain": [
-        "all-mountain"
-      ],
       "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
       "selectionNotes": "按官方表核对雪鞋 US/EU 码；男靴 US 8 与 10–11、女靴 US 9 与 11 落入相邻两档，重叠码须用实际雪鞋试装，检查底盘承托、鞋头/后跟居中及绑带余量。雪板安装孔位按随附 Re:Flex 圆盘核对。",
       "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-mission-re-flex-snowboard-bindings-105461",
-      "sizeChartScope": "官方推荐范围重叠：男靴 US 8 同属 S/M，US 10–11 同属 M/L；女靴 US 9 同属 S/M、US 11 同属 M/L。此表不是唯一尺码映射，须用实际雪鞋试装。",
-      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-105461；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
-      "priceMarket": "Burton 日本官方商店；型号 ID 105461、色款标识 27WIN-105461",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "usWomen": "5-9",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8-11",
+          "usWomen": "9-11",
+          "eu": "41-44",
+          "uk": "7-10",
+          "mondo": "26-29"
+        },
+        {
+          "size": "L",
+          "usMen": "10+",
+          "usWomen": "11+",
+          "eu": "43+",
+          "uk": "9+",
+          "mondo": "28+"
+        }
+      ],
       "priceCheckedAt": "2026-10-14",
+      "priceMarket": "Burton 日本官方商店；型号 ID 105461、色款标识 27WIN-105461",
       "priceSource": "https://jp.burton.com/ja-jp/products/mens-burton-mission-re-flex-snowboard-bindings-105461",
       "priceStatus": "Burton 日本官方商品页对应 2027 款型号 ID 105461 / 色款标识 27WIN-105461，标价 JPY 38,500；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 1,626.14。页面列出 S/M/L，M、L 码当时显示售罄。税费口径以结账为准；此为日本官方店折算参考，不是中国售价，跨境配送及进口费用未计，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5f67-7d31-bf08-97978bae36bf",
@@ -20979,11 +21038,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 70,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.5,
       "response": 7.3,
+      "comfort": 6.5,
+      "versatility": 6.8,
       "convenience": 8.8,
-      "versatility": 6.8
+      "value": 5
     },
     "brand": {
       "slug": "burton",
@@ -20992,45 +21051,59 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "terrain": [
+        "all-mountain"
+      ],
+      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-229601；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
       "entrySystem": "step-in",
       "flexFeel": "medium",
       "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
       "bootCompatibility": "仅配认证 Step On 专用雪鞋；男/女/儿童系列及固定器尺码必须匹配，不能使用普通绑带雪鞋。",
-      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
       "bindingSizeGuide": "Burton 男款 Step On 官方靴码：S US 6–8 / EU 38–41；M 8.5–10.5 / EU 41.5–43.5；L 11–13 / EU 44–46；XL 14–15 / EU 47–48。仅配对应男款 Step On 雪鞋",
+      "sizeChartScope": "男款 Step On 推荐范围按半码衔接、无重叠：US 6–8、8.5–10.5、11–13、14–15。必须匹配男款 Step On 雪鞋尺码；不得套用普通 Re:Flex 固定器尺码表。",
+      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
       "highback": "Kickback Hammock",
       "highbackAdjustment": "DialFLAD 前倾角调节",
       "cushioning": "Re:Flex FullBED 全掌缓震",
-      "terrain": [
-        "all-mountain"
-      ],
       "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
       "selectionNotes": "只配 Burton 男款 Step On 雪鞋，并按 Step On 专用表逐半码对应；US 男 8 对 S、8.5 对 M，尺码档之间不重叠。试装确认前掌和后跟连接点正确扣合；不能使用普通绑带雪鞋。安装孔位按 Re:Flex 圆盘核对，旧款 Burton 3D 板需另购适配圆盘。",
       "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-step-on-genesis-re-flex-snowboard-bindings-229601；https://www.burton.com/en-us/pages/size-charts",
-      "sizeChartScope": "男款 Step On 推荐范围按半码衔接、无重叠：US 6–8、8.5–10.5、11–13、14–15。必须匹配男款 Step On 雪鞋尺码；不得套用普通 Re:Flex 固定器尺码表。",
-      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-229601；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
-      "priceMarket": "Burton 日本官方商店；型号 ID 229601、色款标识 27WIN-229601",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8.5-10.5",
+          "eu": "41.5-43.5",
+          "uk": "7.5-9.5",
+          "mondo": "26.5-28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "11-13",
+          "eu": "44-46",
+          "uk": "10-12",
+          "mondo": "29-31"
+        },
+        {
+          "size": "XL",
+          "usMen": "14-15",
+          "eu": "47-48",
+          "uk": "13-14",
+          "mondo": "32-33"
+        }
+      ],
       "priceCheckedAt": "2026-10-14",
+      "priceMarket": "Burton 日本官方商店；型号 ID 229601、色款标识 27WIN-229601",
       "priceSource": "https://jp.burton.com/en-jp/products/mens-burton-step-on-genesis-re-flex-snowboard-bindings-229601",
       "priceStatus": "Burton 日本官方商品页对应 2027 款型号 ID 229601 / 色款标识 27WIN-229601，标价 JPY 66,000；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 2,787.67。页面列出 S/M/L/XL，XL 码当时显示售罄。仅兼容 Step On 雪鞋；税费口径以结账为准。此为日本官方店折算参考，不是中国售价，跨境配送及进口费用未计，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "踩入式"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5f73-746f-80f8-c2d81dd8f025",
@@ -21048,11 +21121,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 70,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.5,
       "response": 7.3,
+      "comfort": 6.5,
+      "versatility": 6.8,
       "convenience": 8.8,
-      "versatility": 6.8
+      "value": 5
     },
     "brand": {
       "slug": "burton",
@@ -21061,44 +21134,58 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "terrain": [
+        "all-mountain"
+      ],
+      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-172831；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
       "entrySystem": "step-in",
       "flexFeel": "medium",
       "mountingSystem": "Re:Flex：兼容主流雪板安装系统；旧款 Burton 3D 板需另购 3D Hinge Disc",
       "bootCompatibility": "仅配认证 Step On 专用雪鞋；男/女/儿童系列及固定器尺码必须匹配，不能使用普通绑带雪鞋。",
-      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
       "bindingSizeGuide": "Burton 男款 Step On 官方靴码：S US 6–8 / EU 38–41；M 8.5–10.5 / EU 41.5–43.5；L 11–13 / EU 44–46；XL 14–15 / EU 47–48。仅配对应男款 Step On 雪鞋",
+      "sizeChartScope": "男款 Step On 推荐范围按半码衔接、无重叠：US 6–8、8.5–10.5、11–13、14–15。必须匹配男款 Step On 雪鞋尺码；不得套用普通 Re:Flex 固定器尺码表。",
+      "baseplateMaterial": "30% 短切玻纤/尼龙复合材料",
       "highbackAdjustment": "Step On FLAD 前倾角调节",
       "cushioning": "Re:Flex FullBED 全掌缓震",
-      "terrain": [
-        "all-mountain"
-      ],
       "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
       "selectionNotes": "只配 Burton 男款 Step On 雪鞋，并按 Step On 专用表逐半码对应；US 男 8 对 S、8.5 对 M，尺码档之间不重叠。试装确认前掌和后跟连接点正确扣合；不能使用普通绑带雪鞋。安装孔位按 Re:Flex 圆盘核对，旧款 Burton 3D 板需另购适配圆盘。",
       "compatibilitySources": "https://www.burton.com/en-us/products/mens-burton-step-on-re-flex-snowboard-bindings-172831；https://www.burton.com/en-us/pages/size-charts",
-      "sizeChartScope": "男款 Step On 推荐范围按半码衔接、无重叠：US 6–8、8.5–10.5、11–13、14–15。必须匹配男款 Step On 雪鞋尺码；不得套用普通 Re:Flex 固定器尺码表。",
-      "seasonEvidence": "Burton 日本官方商品页标题标注 2027，色款代码为 27WIN-172831；据此归档为 2026/27（2027 款）。页面未直接写完整雪季日期；代码不代表首次上市时间或实时库存。",
-      "priceMarket": "Burton 日本官方商店；型号 ID 172831、色款标识 27WIN-172831",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6-8",
+          "eu": "38-41",
+          "uk": "5-7",
+          "mondo": "24-26"
+        },
+        {
+          "size": "M",
+          "usMen": "8.5-10.5",
+          "eu": "41.5-43.5",
+          "uk": "7.5-9.5",
+          "mondo": "26.5-28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "11-13",
+          "eu": "44-46",
+          "uk": "10-12",
+          "mondo": "29-31"
+        },
+        {
+          "size": "XL",
+          "usMen": "14-15",
+          "eu": "47-48",
+          "uk": "13-14",
+          "mondo": "32-33"
+        }
+      ],
       "priceCheckedAt": "2026-10-14",
+      "priceMarket": "Burton 日本官方商店；型号 ID 172831、色款标识 27WIN-172831",
       "priceSource": "https://jp.burton.com/ja-jp/products/mens-burton-step-on-re-flex-snowboard-bindings-172831",
       "priceStatus": "Burton 日本官方商品页对应 2027 款型号 ID 172831 / 色款标识 27WIN-172831，标价 JPY 42,900；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 1,811.99。页面列出 S/M/L/XL，XL 码当时显示售罄。仅兼容 Step On 雪鞋；税费口径以结账为准。此为日本官方店折算参考，不是中国售价，跨境配送及进口费用未计，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "踩入式"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a13d55-1a90-760d-9cc7-8a52ab032375",
@@ -21116,11 +21203,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 76.5,
     "editorialScores": {
-      "value": 6.5,
-      "comfort": 8,
       "response": 7.5,
+      "comfort": 8,
+      "versatility": 6.5,
       "convenience": 9.5,
-      "versatility": 6.5
+      "value": 6.5
     },
     "brand": {
       "slug": "burton",
@@ -21129,44 +21216,51 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "terrain": [
+        "all-mountain"
+      ],
+      "seasonEvidence": "Burton 美国与日本官方商品页均标注 2027；日本官方变体代码为 27WIN-172841，归档为 2026/27（2027 款）。",
       "entrySystem": "step-in",
       "flexFeel": "medium",
       "mountingSystem": "Re:Flex：兼容当前主流雪板安装系统；2014 年前 Burton 3D 板需另购 3D Hinge Disc",
       "bootCompatibility": "仅兼容女款 Burton Step On 雪鞋；Burton 明确警示勿与男款 Step On 产品混搭。",
-      "baseplateMaterial": "18% 短切玻纤/尼龙复合材料",
       "bindingSizeGuide": "Burton 女款 Step On 官方靴码：S 女靴 US 5–6 / EU 35–36.5；M 6.5–8.5 / EU 37–40.5；L 9–11 / EU 41–42。另有多个 CN 标注列，详见来源审计，不合并成单一换算。仅配对应女款 Step On 雪鞋。",
+      "sizeChartScope": "女款 Step On 推荐 US 靴码按半码衔接、无重叠：5–6、6.5–8.5、9–11。必须匹配女款 Step On 雪鞋；Burton 原厂另列的 CN 标记列口径不同，不作为单一换算。",
+      "baseplateMaterial": "18% 短切玻纤/尼龙复合材料",
       "highbackAdjustment": "Step On FLAD 前倾角调节",
       "cushioning": "Re:Flex FullBED 全掌缓震",
-      "terrain": [
-        "all-mountain"
-      ],
       "warranty": "底盘终身保修；绑带和高背自购买日起 1 年保修",
       "selectionNotes": "只配女款 Burton Step On 雪鞋，按专用表逐半码对应并试装确认前掌/后跟连接点扣合；尺码范围不与相邻档重叠。不得与男款或普通绑带产品混搭。Re:Flex 安装盘适配当前主流安装系统，2014 年前 Burton 3D 板需单独购买 3D Hinge Disc。",
       "compatibilitySources": "https://www.burton.com/en-us/products/womens-burton-step-on-re-flex-snowboard-bindings-172841；https://www.burton.com/en-us/pages/size-charts",
-      "sizeChartScope": "女款 Step On 推荐 US 靴码按半码衔接、无重叠：5–6、6.5–8.5、9–11。必须匹配女款 Step On 雪鞋；Burton 原厂另列的 CN 标记列口径不同，不作为单一换算。",
-      "seasonEvidence": "Burton 美国与日本官方商品页均标注 2027；日本官方变体代码为 27WIN-172841，归档为 2026/27（2027 款）。",
-      "priceMarket": "Burton 日本官方商店；型号 ID 172841、色款标识 27WIN-172841",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usWomen": "5–6",
+          "eu": "35–36.5",
+          "uk": "3–4",
+          "mondo": "22–23"
+        },
+        {
+          "size": "M",
+          "usWomen": "6.5–8.5",
+          "eu": "37–40.5",
+          "uk": "4.5–6.5",
+          "mondo": "23.5–25.5"
+        },
+        {
+          "size": "L",
+          "usWomen": "9–11",
+          "eu": "41–42",
+          "uk": "7–8",
+          "mondo": "26–27"
+        }
+      ],
       "priceCheckedAt": "2026-10-14",
+      "priceMarket": "Burton 日本官方商店；型号 ID 172841、色款标识 27WIN-172841",
       "priceSource": "https://jp.burton.com/ja-jp/products/womens-burton-step-on-re-flex-snowboard-bindings-172841",
       "priceStatus": "Burton 日本官方商品页对应 2026/27 款型号 ID 172841 / 色款标识 27WIN-172841，标价 JPY 42,900；按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算为 CNY 1,811.99。Murasaki Sports 日本零售预售页对 26-27 款 Black/S 列价 JPY 42,900，并显示 2026 年 11 月至 12 月下旬到货；该“在库あり”为可预订状态，不等于现货即时发货。虎窝淘聚合页列 CNY 2,598，标题匹配 26/27 与 172841，并称来源店为天猫 BURTON 官方旗舰店；其购买入口连续进入淘宝 s.click JavaScript 跳转包装页，未到达可读天猫详情，因此只记为国内价格候选。京东索引另出现同季、同型号 SKU 1728416FBJRG 的 S/M 选中变体，但未返回可读人民币价格或库存；不能据此确认候选价。主参考仍是日本地区价格，非中国售价；跨境配送、税费和进口费用另计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "踩入式"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5f80-7b2c-8a42-b42fe45d9cfc",
@@ -21184,11 +21278,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 65.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.3,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "decathlon",
@@ -21199,24 +21293,28 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "specs": {
       "entrySystem": "strap",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "加拿大官方页列出 S–M 与 L–XL 的 US 男女范围；法国官方页列出 S–M 对应 EU 36–42、L–XL 对应 EU 43–47。地区页面的变体标签与范围有差异，不跨地区换算，需按实物标签和雪鞋试装。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。法国官方页列 S–M 对应 EU 36–42、L–XL 对应 EU 43–47；商品变体选择器显示 M/L，需按实物标签和试装确认，不自行映射二者。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654",
+      "bindingSizeGuide": "加拿大官方页列出 S–M 与 L–XL 的 US 男女范围；法国官方页列出 S–M 对应 EU 36–42、L–XL 对应 EU 43–47。地区页面的变体标签与范围有差异，不跨地区换算，需按实物标签和雪鞋试装。",
+      "sizeChart": [
+        {
+          "size": "S–M",
+          "eu": "36–42"
+        },
+        {
+          "size": "L–XL",
+          "eu": "43–47"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.decathlon.fr/p/fixations-snowboard-all-mountain-freestyle-adulte-snb-500-noir/336603/c1m8882775",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "CAD 170.00",
       "priceMarket": "Decathlon 加拿大官网当前 SNB 500 标价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.decathlon.ca/en/p/snowboard-bindings-snb-500/336603/c227m8668654",
       "priceStatus": "加拿大官网同商品 ID 8668654 当前标价 CAD 170；页面未标雪季，人民币仅为加拿大市场折算参考，不证明 2026 雪季，也不是中国售价。税费、运费和汇兑成本未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-43da-7064-ab11-4be44c744af3",
@@ -21234,11 +21332,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 68.4,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 6.9,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 8,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "flow",
@@ -21247,39 +21345,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "mid-soft",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
       "terrain": [
         "all-mountain"
       ],
+      "flexFeel": "mid-soft",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.nidecker.com/products/flow-fenix",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 269.95",
       "priceMarket": "美国 Nidecker 官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.nidecker.com/products/flow-fenix",
       "priceStatus": "页面变体 SKU N.27.BNU.FEF.400.2S.1 确认 2027 款；人民币为美国官网折算参考，不是中国售价，未计税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏软"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-43e7-7b5f-a9c3-47f376e2251b",
@@ -21297,11 +21412,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 70.6,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.8,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 8,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "flow",
@@ -21310,41 +21425,39 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "mid-stiff",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nidecker/Flow 2026 商品页标示 EU：M 37–41；L 41.5–44.5；XL 45–49.5。该商品页未将 EU 范围对应到 US 或 MP 尺码，暂不换算。",
       "terrain": [
         "all-mountain"
       ],
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.nidecker.com/products/flow-fuse-2026",
+      "flexFeel": "mid-stiff",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 2026 商品页标示 EU：M 37–41；L 41.5–44.5；XL 45–49.5。该商品页未将 EU 范围对应到 US 或 MP 尺码，暂不换算。",
+      "sizeChart": [
+        {
+          "size": "M",
+          "eu": "37–41"
+        },
+        {
+          "size": "L",
+          "eu": "41.5–44.5"
+        },
+        {
+          "size": "XL",
+          "eu": "45–49.5"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://eu.nidecker.com/en-int/products/flow-fuse-2026",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nidecker.com/products/flow-fuse-2026",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 319.95",
       "priceMarket": "美国 Nidecker 官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.nidecker.com/products/flow-fuse-2026",
       "priceStatus": "2026 官方商品页与 N.26 变体 SKU 对应本档案雪季；人民币为美国官网折算参考，不是中国售价，未计税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-43f3-791c-b03b-daa31700888a",
@@ -21362,11 +21475,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 70.6,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.8,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 8,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "flow",
@@ -21375,42 +21488,40 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "mid-stiff",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nidecker/Flow 2026 商品页标示 EU：M 37–41；L 41.5–44.5；XL 45–49.5。该商品页未将 EU 范围对应到 US 或 MP 尺码，暂不换算。",
       "terrain": [
         "all-mountain",
         "freeride"
       ],
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.nidecker.com/products/flow-fuse-hybrid-2026",
+      "flexFeel": "mid-stiff",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 2026 商品页标示 EU：M 37–41；L 41.5–44.5；XL 45–49.5。该商品页未将 EU 范围对应到 US 或 MP 尺码，暂不换算。",
+      "sizeChart": [
+        {
+          "size": "M",
+          "eu": "37–41"
+        },
+        {
+          "size": "L",
+          "eu": "41.5–44.5"
+        },
+        {
+          "size": "XL",
+          "eu": "45–49.5"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://eu.nidecker.com/en-int/products/flow-fuse-hybrid-2026",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nidecker.com/products/flow-fuse-hybrid-2026",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 319.95",
       "priceMarket": "美国 Nidecker 官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.nidecker.com/products/flow-fuse-hybrid-2026",
       "priceStatus": "2026 官方商品页显示 USD 319.95；页面包含 N.26 变体货号，人民币为美国官网折算参考，不是中国售价，未计税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-43fe-78a3-9da7-a3ab5ec27d56",
@@ -21428,11 +21539,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 67.1,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 6.4,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 8,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "flow",
@@ -21441,39 +21552,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "soft",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
       "terrain": [
         "all-mountain"
       ],
+      "flexFeel": "soft",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：S US 男/Youth 2–4.5 / EU 35–36；M 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.nidecker.com/products/flow-nexus",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 219.95",
       "priceMarket": "美国 Nidecker 官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.nidecker.com/products/flow-nexus",
       "priceStatus": "页面变体 SKU N.27.BNU.NEF.001.2S.1 确认 2027 款；人民币为美国官网折算参考，不是中国售价，未计税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "柔软"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-440a-7598-9812-321aa9dbb1c7",
@@ -21491,11 +21619,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 73.6,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 9,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 8,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "flow",
@@ -21504,40 +21632,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "pro-stiff",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
       "terrain": [
         "all-mountain",
         "freeride"
       ],
+      "flexFeel": "pro-stiff",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.nidecker.com/products/flow-nx2-carbon",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "EUR 359.99（促销价；原价 EUR 449.99）",
       "priceMarket": "Montaz 欧洲零售商 2026/27 在售商品；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.montaz.com/en/nidecker-flow-nx2-carbon-black-p249996.html",
       "priceStatus": "Montaz 页面列商品参考号 249996、季节 2026-2027，原价 EUR 449.99、促销价 EUR 359.99，核对时可加入购物车。Ski West 加拿大页也明确列 2027 款、标价 $549.99（页面未显式注明货币代码），作为地区交叉参考，不用于换算。人民币采用 Montaz 页面促销价折算，不是中国售价；运费及跨境费用未计。Nidecker 品牌官网当前页货号为 N.25，未用其价格映射到此档案。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "专业硬朗"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-4415-749c-8b40-783f032a7e65",
@@ -21555,11 +21700,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 72.4,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 8.5,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 8,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "flow",
@@ -21568,40 +21713,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "rear-entry",
-      "flexFeel": "stiff",
-      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
       "terrain": [
         "all-mountain",
         "freeride"
       ],
+      "flexFeel": "stiff",
+      "entrySystem": "rear-entry",
+      "mountingSystem": "Flow/Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker/Flow 官方尺码：M US 男/Youth 5–8 / EU 37–41；L 8.5–11 / EU 41.5–44.5；XL 11.5–15 / EU 45–49.5。",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.nidecker.com/products/flow-nx2-hybrid",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 379.95",
       "priceMarket": "Nidecker 美国官网当前 Flow NX2 Hybrid N.27 商品价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.nidecker.com/products/flow-nx2-hybrid?variant=47005505454255",
       "priceStatus": "美国官网商品页标价 USD 379.95，商品 SKU 为 N.27.BNU.N2H.001.3M.1，与 2027 档案货号前缀一致；按 ECB 汇率折算为美国市场参考，不是中国售价。税费与跨境成本未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5f9d-7124-9cf2-bc89fc9e1476",
@@ -21619,11 +21781,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 68.4,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.5,
       "response": 8.1,
+      "comfort": 6.5,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "flux",
@@ -21641,35 +21803,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "ankleStrap": "Waffle Strap 双层缓冲结构；UU Fit 环绕固定",
       "toeStrap": "F.T.M. Ver. 5.0；L-Guide 收纳带尾",
       "buckles": "Beer Buckle 棘轮扣，带开瓶器",
-      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
       "highback": "Buffalo Highback；Super Tough Nylon 中等硬度材料",
       "highbackAdjustment": "Slide Highback Rotation、Toolless Lever、Micro Adjuster；每格约 2.5° 前倾",
       "cushioning": "Boost FootOn 比标准脚床高 4 mm；Heel Up；可调 toe/heel cushion",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://flux-bindings.com/products/2627-cv；https://flux-bindings.com/pages/size-chart_binding",
+      "sizeChart": [
+        {
+          "size": "XS",
+          "mondo": "21 - 23.5",
+          "usMen": "3 - 5.5",
+          "usWomen": "4 - 6.5",
+          "eu": "34 - 37.5",
+          "uk": "2 - 4.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "S",
+          "mondo": "22.5 - 25.5",
+          "usMen": "4.5 - 7.5",
+          "usWomen": "5.5 - 8.5",
+          "eu": "36 - 40.5",
+          "uk": "3.5 - 6.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "M",
+          "mondo": "25 - 27.5",
+          "usMen": "7 - 9.5",
+          "usWomen": "8 - 10.5",
+          "eu": "40 - 42.5",
+          "uk": "6 - 8.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "L",
+          "mondo": "27+",
+          "usMen": "9+",
+          "eu": "42+",
+          "uk": "8+",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        }
+      ],
+      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "JPY 55,000（税込）",
       "priceMarket": "FLUX 日本官方店 2026/27 商品价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://flux-bindings.com/products/2627-cv",
       "priceStatus": "官方 26-27 CV 商品页列日元含税标价 JPY 55,000；按 ECB 汇率折算为日本市场参考，不是中国售价。跨境费用未计，核对时官网显示售罄。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5fa9-7114-8f42-944956ce3820",
@@ -21687,11 +21870,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 64.6,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.5,
       "response": 6.6,
+      "comfort": 6.5,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "flux",
@@ -21709,36 +21892,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "ankleStrap": "Cloud Strap 泡棉缓冲脚踝绑带",
       "toeStrap": "F.T.M. Duo 一体成型脚趾绑带，贴合靴头",
       "buckles": "Beer Buckle 棘轮扣，带开瓶器",
-      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
       "highback": "Resistor Highback；Super Tough Nylon 中等硬度材料",
       "highbackAdjustment": "Toolless Lever、五孔旋转调节、Micro Adjuster；每格约 2.5° 前倾",
       "cushioning": "FootOn 脚床、Cushion Stabilizer、可分别调整的 toe/heel cushion",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://flux-bindings.com/products/2627-ds；https://flux-bindings.com/pages/size-chart_binding",
-      "seasonEvidence": "FLUX 官方商品页明确标注 26-27 Model（2026-10-14 复核）。",
+      "sizeChart": [
+        {
+          "size": "XS",
+          "mondo": "21 - 23.5",
+          "usMen": "3 - 5.5",
+          "usWomen": "4 - 6.5",
+          "eu": "34 - 37.5",
+          "uk": "2 - 4.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "S",
+          "mondo": "22.5 - 25.5",
+          "usMen": "4.5 - 7.5",
+          "usWomen": "5.5 - 8.5",
+          "eu": "36 - 40.5",
+          "uk": "3.5 - 6.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "M",
+          "mondo": "25 - 27.5",
+          "usMen": "7 - 9.5",
+          "usWomen": "8 - 10.5",
+          "eu": "40 - 42.5",
+          "uk": "6 - 8.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "L",
+          "mondo": "27+",
+          "usMen": "9+",
+          "eu": "42+",
+          "uk": "8+",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        }
+      ],
+      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "CNY 2562",
       "priceMarket": "FLUX 官方商品页归档结构化 Offer（CNY）；当前同页日本店展示 JPY",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://flux-bindings.com/en/products/2627-ds",
+      "seasonEvidence": "FLUX 官方商品页明确标注 26-27 Model（2026-10-14 复核）。",
       "priceStatus": "2026-10-12 归档的 FLUX 官方结构化变体 Offer 明确标为 CNY 2,562；归档变体均为可售。2026-10-14 同一官方商品页的人类可读价格显示 JPY 49,500，页面注明 26-27 Model 并显示售罄。归档 CNY 值的市场/货币切换原因尚未由官网说明，作为带日期的官方人民币报价保留，不代表中国现价；勿与当前日本挂牌价混为一谈。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "4"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏软"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5fb5-760b-9f41-1aa6bf8024e0",
@@ -21756,11 +21960,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 63.4,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.5,
       "response": 6.1,
+      "comfort": 6.5,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "flux",
@@ -21778,36 +21982,40 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "ankleStrap": "Honeycomb Strap Ver 2.0 蜂窝轻量缓冲脚踝带",
       "toeStrap": "FTM Versa 双向脚背/脚趾绑带，适配不同靴型",
       "buckles": "Trigger Ratchet Buckle 加大扳机式棘轮扣",
-      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；SM: US 男 6 - 8.5 / US 女 7 - 9.5 / EU 38 - 41.5。边界和备注见逐码表。",
       "highback": "Women's Resister Highback，Super Tough Nylon",
       "highbackAdjustment": "Micro Adjuster 每格约 2.5° 前倾",
       "cushioning": "FootOn 脚床、可调 toe/heel cushion 与可拆换 Custom Stabilizers",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://flux-bindings.com/products/2526gs；https://flux-bindings.com/pages/size-chart_binding",
-      "seasonEvidence": "FLUX 官方商品页明确标注 25-26 Model（2026-10-14 复核）。",
+      "sizeChart": [
+        {
+          "size": "XS",
+          "mondo": "21 - 23.5",
+          "usMen": "3 - 5.5",
+          "usWomen": "4 - 6.5",
+          "eu": "34 - 37.5",
+          "uk": "2 - 4.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "SM",
+          "mondo": "24 - 26.5",
+          "usMen": "6 - 8.5",
+          "usWomen": "7 - 9.5",
+          "eu": "38 - 41.5",
+          "uk": "5 - 7.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        }
+      ],
+      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；SM: US 男 6 - 8.5 / US 女 7 - 9.5 / EU 38 - 41.5。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "CNY 1731–2163",
       "priceMarket": "原币 CNY；来源商店 flux-bindings.com",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://flux-bindings.com/en/products/2526gs",
+      "seasonEvidence": "FLUX 官方商品页明确标注 25-26 Model（2026-10-14 复核）。",
       "priceStatus": "2026-10-12 归档的 FLUX 官方结构化变体 Offer 为 CNY 1,731–2,163，含不同颜色/尺码变体；归档时有可售与售罄变体。2026-10-14 同一官方商品页标注 25-26 Model，日本商店页面显示 JPY 41,800、促销 JPY 33,440，且售罄。归档 CNY 值的市场/货币切换原因尚未由官网说明，作为带日期的官方人民币报价保留，不代表中国现价；勿与当前日本挂牌价混为一谈。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "3"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "柔软"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5fc1-7150-838c-b893dfbfc873",
@@ -21825,11 +22033,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 68.4,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.5,
       "response": 8.1,
+      "comfort": 6.5,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "flux",
@@ -21847,36 +22055,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "ankleStrap": "Waffle Strap 双层缓冲结构，搭配 UU Fit 环绕固定",
       "toeStrap": "F.T.M. Ver 5.0 可翻转脚背/脚趾绑带，L-Guide 收纳带尾",
       "buckles": "Beer Buckle 棘轮扣",
-      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
       "highback": "RETRO-Mod 非对称内侧结构高背，Super Tough Nylon 中等弯曲材料",
       "highbackAdjustment": "Redux Lean Adjuster 与 Micro Adjuster；每格约 2.5° 前倾",
       "cushioning": "Boost FootOn+ 加高脚床、XF 专用响应稳定器与可调 toe/heel cushion",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://flux-bindings.com/products/2526xf；https://flux-bindings.com/pages/size-chart_binding",
-      "seasonEvidence": "FLUX 官方商品页明确标注 25-26 Model（2026-10-14 复核）。",
+      "sizeChart": [
+        {
+          "size": "XS",
+          "mondo": "21 - 23.5",
+          "usMen": "3 - 5.5",
+          "usWomen": "4 - 6.5",
+          "eu": "34 - 37.5",
+          "uk": "2 - 4.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "S",
+          "mondo": "22.5 - 25.5",
+          "usMen": "4.5 - 7.5",
+          "usWomen": "5.5 - 8.5",
+          "eu": "36 - 40.5",
+          "uk": "3.5 - 6.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "M",
+          "mondo": "25 - 27.5",
+          "usMen": "7 - 9.5",
+          "usWomen": "8 - 10.5",
+          "eu": "40 - 42.5",
+          "uk": "6 - 8.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "L",
+          "mondo": "27+",
+          "usMen": "9+",
+          "eu": "42+",
+          "uk": "8+",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        }
+      ],
+      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "CNY 2177–2562",
       "priceMarket": "原币 CNY；来源商店 flux-bindings.com",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://flux-bindings.com/en/products/2526xf",
+      "seasonEvidence": "FLUX 官方商品页明确标注 25-26 Model（2026-10-14 复核）。",
       "priceStatus": "2026-10-12 归档的 FLUX 官方结构化变体 Offer 为 CNY 2,177–2,562，含不同颜色/尺码变体；归档时有可售与售罄变体。2026-10-14 同一官方商品页标注 25-26 Model，日本商店页面显示 JPY 49,500、促销 JPY 42,075，且售罄。归档 CNY 值的市场/货币切换原因尚未由官网说明，作为带日期的官方人民币报价保留，不代表中国现价；勿与当前日本挂牌价混为一谈。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5fce-7f75-aa1c-e1aec90f182a",
@@ -21894,11 +22123,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 69,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.5,
       "response": 9,
+      "comfort": 6.5,
+      "versatility": 6.8,
       "convenience": 6.2,
-      "versatility": 6.8
+      "value": 5
     },
     "brand": {
       "slug": "flux",
@@ -21916,36 +22145,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "ankleStrap": "Waffle Strap 双层缓冲绑带与 UU Fit 环绕式固定",
       "toeStrap": "F.T.M. Ver 5.0 Transfer 专用绑带；L-Guide 收纳带尾",
       "buckles": "Beer Buckle 棘轮扣，带快速收紧结构",
-      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
       "highback": "W-Props Carbon Reinforced 高背，含碳纤维增强与滑动衬片",
       "highbackAdjustment": "Redux Lean Adjuster 单动作调节；Micro Adjuster 每格约 2.5° 前倾",
       "cushioning": "Boost FootOn+ 脚床；可调 toe/heel cushion 与响应稳定器",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://flux-bindings.com/products/2526xv；https://flux-bindings.com/pages/size-chart_binding",
-      "seasonEvidence": "FLUX 官方商品页明确标注 25-26 Model（2026-10-14 复核）。",
+      "sizeChart": [
+        {
+          "size": "XS",
+          "mondo": "21 - 23.5",
+          "usMen": "3 - 5.5",
+          "usWomen": "4 - 6.5",
+          "eu": "34 - 37.5",
+          "uk": "2 - 4.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "S",
+          "mondo": "22.5 - 25.5",
+          "usMen": "4.5 - 7.5",
+          "usWomen": "5.5 - 8.5",
+          "eu": "36 - 40.5",
+          "uk": "3.5 - 6.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "M",
+          "mondo": "25 - 27.5",
+          "usMen": "7 - 9.5",
+          "usWomen": "8 - 10.5",
+          "eu": "40 - 42.5",
+          "uk": "6 - 8.5",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        },
+        {
+          "size": "L",
+          "mondo": "27+",
+          "usMen": "9+",
+          "eu": "42+",
+          "uk": "8+",
+          "notes": "FLUX 通用参考表；鞋品牌/型号会影响试装。"
+        }
+      ],
+      "bindingSizeGuide": "XS: US 男 3 - 5.5 / US 女 4 - 6.5 / EU 34 - 37.5；S: US 男 4.5 - 7.5 / US 女 5.5 - 8.5 / EU 36 - 40.5；M: US 男 7 - 9.5 / US 女 8 - 10.5 / EU 40 - 42.5；L: US 男 9+ / EU 42+。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "CNY 3330–3700",
       "priceMarket": "原币 CNY；来源商店 flux-bindings.com",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://flux-bindings.com/en/products/2526xv",
+      "seasonEvidence": "FLUX 官方商品页明确标注 25-26 Model（2026-10-14 复核）。",
       "priceStatus": "2026-10-12 归档的 FLUX 官方结构化变体 Offer 为 CNY 3,330–3,700，含不同尺码变体；归档时 1 个变体可售、3 个售罄。2026-10-14 同一官方商品页标注 25-26 Model，日本商店页面显示 JPY 71,500、促销 JPY 64,350，且售罄。归档 CNY 值的市场/货币切换原因尚未由官网说明，作为带日期的官方人民币报价保留，不代表中国现价；勿与当前日本挂牌价混为一谈。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "9"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "专业硬朗"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5fda-7c1f-8787-50c6add89137",
@@ -21963,11 +22213,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 66.2,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 8.1,
+      "comfort": 6.2,
+      "versatility": 6.8,
       "convenience": 6.2,
-      "versatility": 6.8
+      "value": 5
     },
     "brand": {
       "slug": "jones",
@@ -21976,31 +22226,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "sizeChart": [
+        {
+          "size": "S",
+          "gender": "US 男款口径",
+          "usMen": "5–7",
+          "eu": "36.5–39.5",
+          "mondo": "23.5–25"
+        },
+        {
+          "size": "M",
+          "gender": "US 男款口径",
+          "usMen": "7.5–10",
+          "eu": "40–43",
+          "mondo": "25.5–28"
+        },
+        {
+          "size": "L",
+          "gender": "US 男款口径",
+          "usMen": "10.5+",
+          "eu": "43.5+",
+          "mondo": "28.5+"
+        },
+        {
+          "size": "S",
+          "gender": "US 女款口径",
+          "usWomen": "5–8.5",
+          "eu": "35–39.5",
+          "mondo": "22–25"
+        },
+        {
+          "size": "M",
+          "gender": "US 女款口径",
+          "usWomen": "9–11.5",
+          "eu": "40–42.5",
+          "mondo": "25.5–27.5"
+        }
+      ],
+      "sizeChartCheckedAt": "2026-10-14",
+      "sizeChartSource": "https://www.jonessnowboards.com/products/mens-mercury-snowboard-binding-2026",
       "entrySystem": "strap",
       "flex": 7,
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "按 Jones Mercury 2026 官方尺码表分别核对男款或女款口径；EU 区间边界需结合对应口径与实物雪鞋试装，并检查后跟、绑带和鞋底居中。不要把 Mercury FASE 的表当成本型号规格。",
       "compatibilitySources": "https://www.jonessnowboards.com/en-int/products/mens-mercury-snowboard-binding-2026",
-      "sizeChartCheckedAt": "2026-10-14",
-      "sizeChartSource": "https://www.jonessnowboards.com/products/mens-mercury-snowboard-binding-2026",
+      "priceCheckedAt": "2026-10-14",
       "officialPrice": "JPY 58,000（含日本消费税 JPY 63,800）",
       "priceMarket": "日本 Jones 官方代理商 Hasco 2025/26 建议零售价；使用 ECB 参考汇率折算成人民币",
-      "priceCheckedAt": "2026-10-14",
       "priceSource": "https://www.hasco.co.jp/pdf/2526Jones-Overview.pdf",
       "priceStatus": "Hasco 2025/26 代理商产品总览列 Men's Mercury、Eclipse Black、S/M/L，未税 JPY 58,000、含税 JPY 63,800；按 2026-10-13 ECB EUR/JPY 176.91、EUR/CNY 7.4890 折算含税参考价 CNY 2,700.80。此为日本建议零售价折算，不是实时成交价或中国售价；未含跨境运输与进口费用。ECB 汇率仅供参考。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5fe5-7696-b28e-dc26aa04e9ea",
@@ -22018,11 +22294,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 70.2,
     "editorialScores": {
-      "value": 5,
-      "comfort": 7.1,
       "response": 7.3,
+      "comfort": 7.1,
+      "versatility": 6.8,
       "convenience": 8.3,
-      "versatility": 6.8
+      "value": 5
     },
     "brand": {
       "slug": "jones",
@@ -22035,35 +22311,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "medium",
       "mountingSystem": "Jones Universal Mounting Disk；兼容 4x4、2x4 与 Burton Channel/EST",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "官方尺码：S 男 US 5–8 / 女 6.5–9.5；M 男 8.5–10.5 / 女 10–12；L 男 11–14 / 女 12.5–15.5",
       "baseplateMaterial": "Fusion XR 玻纤尼龙复合底盘；三层 TPU/EVA Fusion Pad 缓震层",
       "ankleStrap": "DualFlex 脚踝带，硬质 TPU 中芯搭配柔软 TPU 边缘",
       "toeStrap": "Adaptive Fit 脚趾带，柔性外缘贴合鞋头，中心支撑脊与纹理内面锁定雪鞋",
       "buckles": "高等级铝合金卡扣；脚趾卡扣为 LSR 2.1 Auto-Lock",
-      "bindingSizeGuide": "官方尺码：S 男 US 5–8 / 女 6.5–9.5；M 男 8.5–10.5 / 女 10–12；L 男 11–14 / 女 12.5–15.5",
       "highback": "AsymFlex 非对称高背，中偏硬脚感；内侧柔韧、外侧脊柱强化响应",
       "highbackAdjustment": "免工具双档前倾角调节；高背可折叠前翻",
       "cushioning": "Fusion Pad 三层 TPU/EVA 吸震；低接触面积底盘保留侧向板面弯曲",
       "warranty": "FASE 系统终身保修；Jones 其他部件保修按官网保修政策",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.jonessnowboards.com/en-int/products/mercury-fase-snowboard-binding-2026",
+      "sizeChart": [
+        {
+          "size": "Small",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37.5 - 41",
+          "uk": "4 - 7",
+          "mondo": "23.0 - 26.0"
+        },
+        {
+          "size": "Medium",
+          "usMen": "8.5 - 10.5",
+          "usWomen": "10 - 12",
+          "eu": "41.5 - 44",
+          "uk": "7.5 - 9.5",
+          "mondo": "26.5 - 28.5"
+        },
+        {
+          "size": "Large",
+          "usMen": "11 - 14",
+          "usWomen": "12.5 - 15.5",
+          "eu": "44.5 - 48",
+          "uk": "10 - 13",
+          "mondo": "29.0 - 31.0"
+        }
+      ],
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 379.95",
       "priceMarket": "美国官网美元挂牌价；按 ECB 2026-10-14 参考汇率折算成人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.jonessnowboards.com/en-int/products/mercury-fase-snowboard-binding-2026",
       "priceStatus": "2026 官方商品页及 J.26 SKU 对应本档案雪季；人民币为汇率折算参考，不是中国售价，未计美国税费、汇兑和跨境成本。旧 CHF 359.95 来源 SKU 为 J.27，属 2027 款，已排除。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "快速穿脱"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5ff1-7601-b8b9-0550df4fec6f",
@@ -22081,11 +22372,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 66.6,
     "editorialScores": {
-      "value": 5,
-      "comfort": 7.1,
       "response": 6.9,
+      "comfort": 7.1,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "jones",
@@ -22098,35 +22389,61 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "mid-soft",
       "mountingSystem": "Jones Universal Mounting Disk；兼容 4x4、2x4 与 Burton Channel/EST",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "男款：S US 5–7 / M 7.5–10 / L 10.5+；女款：S US 5–8.5 / M 9–11.5",
+      "sizeChart": [
+        {
+          "size": "S",
+          "gender": "US 男款口径",
+          "usMen": "5–7",
+          "eu": "36.5–39.5",
+          "mondo": "23.5–25"
+        },
+        {
+          "size": "M",
+          "gender": "US 男款口径",
+          "usMen": "7.5–10",
+          "eu": "40–43",
+          "mondo": "25.5–28"
+        },
+        {
+          "size": "L",
+          "gender": "US 男款口径",
+          "usMen": "10.5+",
+          "eu": "43.5+",
+          "mondo": "28.5+"
+        },
+        {
+          "size": "S",
+          "gender": "US 女款口径",
+          "usWomen": "5–8.5",
+          "eu": "35–39.5",
+          "mondo": "22–25"
+        },
+        {
+          "size": "M",
+          "gender": "US 女款口径",
+          "usWomen": "9–11.5",
+          "eu": "40–42.5",
+          "mondo": "25.5–27.5"
+        }
+      ],
+      "sizeChartCheckedAt": "2026-10-14",
+      "sizeChartSource": "https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
       "baseplateMaterial": "SkateTech Hanger、Kingpin、Post 与可换硬软衬套构成杠杆传力系统",
       "ankleStrap": "Comfort Flex 3D 脚踝绑带，均匀分压；Flip-It 可切换 Surf/Freeride 模式",
       "buckles": "ZyTech 纤维复合材料卡扣，搭配不锈钢弹簧与转轴",
-      "bindingSizeGuide": "男款：S US 5–7 / M 7.5–10 / L 10.5+；女款：S US 5–8.5 / M 9–11.5",
       "highback": "Progressive Flex 非对称高背，中部支撑较硬、顶部更柔韧",
       "highbackAdjustment": "免工具前倾角调节",
       "cushioning": "全长 EVA Comfort Foam foot pillow；SkateTech 橡胶衬套吸收振动，硬/软衬套可调响应",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
-      "sizeChartCheckedAt": "2026-10-14",
-      "sizeChartSource": "https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 319.95",
       "priceMarket": "美国官网挂牌价；按 ECB 2026-10-14 参考汇率折算成人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.jonessnowboards.com/products/mens-orion-snowboard-binding-2026",
       "priceStatus": "2026 官方商品页及 J.26 SKU 对应本档案雪季；加拿大地区另显示 CAD 379.99，非同币种价差。人民币为美国官网价折算参考，不是中国售价，未计税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏软"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-5ffd-7c2e-afba-b6e54197c154",
@@ -22144,11 +22461,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 67.6,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.5,
       "response": 7.8,
+      "comfort": 6.5,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "nidecker",
@@ -22161,34 +22478,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "mid-stiff",
       "mountingSystem": "Offset Multi-Disk；兼容四孔安装与 Burton Channel",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "官方 EU 靴码：S 35–36 / M 37–41 / L 41.5–44.5 / XL 45–49.5",
       "baseplateMaterial": "Nylon+ Axis Kush Unibase（30% 玻纤/70% 尼龙），带固定后跟杯与摇臂边角",
       "ankleStrap": "Exo-Kush 双层脚踝带：EVA 缓冲层与支撑骨架组合",
       "toeStrap": "Hexo Toecap 2.0 AuxTech 3D 包角脚趾带，可左右脚互换",
       "buckles": "Aluminium Axion 铣削铝合金棘轮",
-      "bindingSizeGuide": "官方 EU 靴码：S 35–36 / M 37–41 / L 41.5–44.5 / XL 45–49.5",
       "highback": "Nylon Meson Pro 非对称尼龙高背，强化脚跟侧支撑与能量传递",
       "cushioning": "BankBeds 2.5° 倾斜接触面；底盘摇臂边角帮助保留板面自然弯曲",
       "warranty": "Nidecker 官方 2+1 年保修",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://eu.nidecker.com/products/kaon-plus",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "CHF 279.95",
       "priceMarket": "Nidecker 欧盟官网 CHF 挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://eu.nidecker.com/products/kaon-plus",
       "priceStatus": "欧盟官方页货号 N.26.BNU.KAP.BK.2S.1 确认 2026 款；人民币为欧盟官网折算参考，不是中国售价，未计税费及跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6009-7275-8cdd-b25b4c71cbfe",
@@ -22206,11 +22545,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 71.4,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.5,
       "response": 8.5,
+      "comfort": 6.5,
+      "versatility": 6.8,
       "convenience": 8,
-      "versatility": 6.8
+      "value": 5
     },
     "brand": {
       "slug": "nidecker",
@@ -22223,35 +22562,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "stiff",
       "mountingSystem": "Nidecker Offset Multi-Disk；兼容四孔安装与 Burton Channel",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "官方男款 US 码：M 5.5–8 / L 8.5–10.5 / XL 11–13",
       "baseplateMaterial": "Nylon+ Auto 玻纤增强尼龙底盘（30% 玻纤/70% 尼龙）",
       "ankleStrap": "Exo-Frame S Hybrid 单件 TPU 低轮廓脚踝带，轻量并便于鞋靴滑入",
       "toeStrap": "Hexo Toecap 2.0 3D 包角脚趾带，可左右脚互换微调贴合",
       "buckles": "LSR 2.0 Auto-Lock 双向自动锁止棘轮",
-      "bindingSizeGuide": "官方男款 US 码：M 5.5–8 / L 8.5–10.5 / XL 11–13",
       "highback": "Nylon+ S Ultraback 玻纤增强尼龙高背（30% 玻纤/70% 尼龙），增加侧向支撑并内置快穿导向筋",
       "highbackAdjustment": "后仰高背触发 Drop IN 踩入机构与 Active Strap，前倾角调节",
       "cushioning": "BankBeds 2.5° 倾斜接触面；Slip-N-Grip 降低鞋底滑入摩擦",
       "warranty": "Nidecker 官方 2+1 年保修",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.nidecker.com/products/lt-supermatic-2026",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "4 - 5.5",
+          "usWomen": "5.5 - 7",
+          "eu": "35.5 - 37.5",
+          "uk": "3 - 4.5",
+          "mondo": "22 - 23.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5.5 - 8",
+          "usWomen": "7 - 9.5",
+          "eu": "37.5 - 41",
+          "uk": "4.5 - 7",
+          "mondo": "23.5 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 10.5",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44",
+          "uk": "7.5 - 9.5",
+          "mondo": "26.5 - 28.5"
+        },
+        {
+          "size": "XL",
+          "usMen": "11 - 13",
+          "eu": "44.5 - 47",
+          "uk": "10 - 12",
+          "mondo": "29 - 31"
+        }
+      ],
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 479.95",
       "priceMarket": "美国 Nidecker 官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.nidecker.com/products/lt-supermatic-2026",
       "priceStatus": "2026 官方页面和 N.26 SKU 确认雪季；人民币为美国官网价折算参考，不是中国售价，未计美国税费及跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6015-76fd-b68a-9278077e1a2a",
@@ -22269,11 +22630,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 69.6,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.5,
       "response": 7.8,
+      "comfort": 6.5,
+      "versatility": 6.8,
       "convenience": 8,
-      "versatility": 6.8
+      "value": 5
     },
     "brand": {
       "slug": "nidecker",
@@ -22286,35 +22647,57 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "mid-stiff",
       "mountingSystem": "Nidecker Offset Multi-Disk；兼容四孔安装与 Burton Channel",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "官方 EU 码：S 35.5–37.5 / M 37.5–41 / L 41.5–44 / XL 44.5–47",
       "baseplateMaterial": "Nylon+ Auto 玻纤增强尼龙底盘（30% 玻纤/70% 尼龙），带摇臂边角",
       "ankleStrap": "Exo-Frame Hybrid AuxTech 框架与 ExoSpines 结构，均匀分散压力",
       "toeStrap": "Hexo Toecap AuxTech 3D 伸展式脚趾带",
       "buckles": "LSR 2.0 Auto-Lock 双向自动锁止棘轮",
-      "bindingSizeGuide": "官方 EU 码：S 35.5–37.5 / M 37.5–41 / L 41.5–44 / XL 44.5–47",
       "highback": "Nylon+ Ultraback，玻纤增强尼龙（30% 玻纤/70% 尼龙）",
       "highbackAdjustment": "一体式前倾角调节；后仰高背可触发 Drop IN 踩入机构与 Active Strap",
       "cushioning": "BankBeds 2.5° 倾斜接触面；Slip-N-Grip 降低鞋底滑入摩擦",
       "warranty": "Nidecker 官方 2+1 年保修",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://eu.nidecker.com/en-int/products/og-supermatic-2026",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "4 - 5.5",
+          "usWomen": "5.5 - 7",
+          "eu": "35.5 - 37.5",
+          "uk": "3 - 4.5",
+          "mondo": "22 - 23.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5.5 - 8",
+          "usWomen": "7 - 9.5",
+          "eu": "37.5 - 41",
+          "uk": "4.5 - 7",
+          "mondo": "23.5 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 10.5",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44",
+          "uk": "7.5 - 9.5",
+          "mondo": "26.5 - 28.5"
+        },
+        {
+          "size": "XL",
+          "usMen": "11 - 13",
+          "eu": "44.5 - 47",
+          "uk": "10 - 12",
+          "mondo": "29 - 31"
+        }
+      ],
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 429.95",
       "priceMarket": "美国 Nidecker 官方店挂牌价；欧盟官网另列 EUR 399.95；目录人民币参考按美国价折算",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.nidecker.com/products/og-supermatic-2026",
       "priceStatus": "2026 官方页面和 N.26 SKU 确认雪季；人民币为美国官网价折算参考，不是中国售价，未计美国税费及跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "后入式快穿"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-602e-7029-8275-b850ccb8cd4d",
@@ -22332,11 +22715,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 67,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.8,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "nidecker",
@@ -22345,43 +22728,60 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "mid-stiff",
-      "mountingSystem": "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nidecker 美国官方商品页男款/Youth 尺码：M US 5–8；L 8.5–11；XL 11.5–15。",
       "terrain": [
         "all-mountain"
       ],
-      "brandFlexScore": 3,
-      "brandResortScore": 4,
+      "flexFeel": "mid-stiff",
+      "entrySystem": "strap",
       "brandPowScore": 3,
+      "brandFlexScore": 3,
       "brandParkScore": 5,
+      "mountingSystem": "Nidecker 标准圆盘；孔位与 Channel 适配请按具体圆盘核对",
+      "bindingSizeGuide": "Nidecker 美国官方商品页男款/Youth 尺码：M US 5–8；L 8.5–11；XL 11.5–15。",
+      "brandResortScore": 4,
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.nidecker.com/products/orbit",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "2 - 4.5",
+          "usWomen": "5.5 - 6",
+          "eu": "35 - 36",
+          "uk": "1 - 3.5",
+          "mondo": "20.5 - 22.5"
+        },
+        {
+          "size": "M",
+          "usMen": "5 - 8",
+          "usWomen": "6.5 - 9.5",
+          "eu": "37 - 41",
+          "uk": "4 - 7",
+          "mondo": "23 - 26"
+        },
+        {
+          "size": "L",
+          "usMen": "8.5 - 11",
+          "usWomen": "10 - 11",
+          "eu": "41.5 - 44.5",
+          "uk": "7.5 - 10",
+          "mondo": "26.5 - 29"
+        },
+        {
+          "size": "XL",
+          "usMen": "11.5 - 15",
+          "eu": "45 - 49.5",
+          "uk": "10.5 - 14",
+          "mondo": "29.5 - 32.5"
+        }
+      ],
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 279.95",
       "priceMarket": "Nidecker 美国官网当前 Orbit N.27 商品价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.nidecker.com/en-int/products/orbit",
       "priceStatus": "美国官网商品页标价 USD 279.95，商品 SKU 为 N.27.BNU.OBS.744.3M.1，与 2027 档案货号前缀一致；按 ECB 汇率折算为美国市场参考，不是中国售价。税费与跨境成本未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-603c-78d5-835d-819652f0dff2",
@@ -22399,11 +22799,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 65.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.3,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "nitro",
@@ -22412,39 +22812,42 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nitro 女款官方尺码：S US 女 4–7.5 / MP 21–24.5 / EU 33.5–38；S/M US 女 6–11 / MP 23–28 / EU 36–43。区间有重叠，试穿确认。",
+      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Fate 女款固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
-      "brandComfortScore": 9,
-      "brandResponseScore": 7,
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/fate-womens-bindings-1",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro 女款官方尺码：S US 女 4–7.5 / MP 21–24.5 / EU 33.5–38；S/M US 女 6–11 / MP 23–28 / EU 36–43。区间有重叠，试穿确认。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usWomen": "4–7.5",
+          "mondo": "21–24.5",
+          "eu": "33.5–38"
+        },
+        {
+          "size": "S/M",
+          "usWomen": "6–11",
+          "mondo": "23–28",
+          "eu": "36–43"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/fate-womens-bindings-1",
-      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Fate 女款固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
+      "brandComfortScore": 9,
+      "brandResponseScore": 7,
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/fate-womens-bindings-1",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "EUR 299.9",
       "priceMarket": "Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://www.nitrosnowboards.com/products/fate-womens-bindings-1",
       "priceStatus": "2026-10-12 官方结构化变体报价 EUR 299.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 2,245.95；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6048-7673-9456-face38088741",
@@ -22462,11 +22865,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 65.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.3,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "nitro",
@@ -22475,39 +22878,42 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nitro One 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 One 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
-      "brandComfortScore": 8,
-      "brandResponseScore": 6,
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/one-bindings-1",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro One 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "sizeChart": [
+        {
+          "size": "M",
+          "usMen": "7–10.5",
+          "mondo": "25–28.5",
+          "eu": "38.5–43.5"
+        },
+        {
+          "size": "L",
+          "usMen": "11–14",
+          "mondo": "29–32",
+          "eu": "44–48"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/one-bindings-1",
-      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 One 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
+      "brandComfortScore": 8,
+      "brandResponseScore": 6,
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/one-bindings-1",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "EUR 299.9",
       "priceMarket": "Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://www.nitrosnowboards.com/products/one-bindings-1",
       "priceStatus": "2026-10-12 官方结构化变体报价 EUR 299.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 2,245.95；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6053-7135-ba58-bf34d01d8c17",
@@ -22525,11 +22931,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 65.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.3,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "nitro",
@@ -22538,39 +22944,42 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nitro Phantom 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Phantom 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
       "terrain": [
         "all-mountain",
         "freeride"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro Phantom 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "sizeChart": [
+        {
+          "size": "M",
+          "usMen": "7–10.5",
+          "mondo": "25–28.5",
+          "eu": "38.5–43.5"
+        },
+        {
+          "size": "L",
+          "usMen": "11–14",
+          "mondo": "29–32",
+          "eu": "44–48"
+        }
+      ],
+      "sizeChartCheckedAt": "2026-10-14",
+      "sizeChartSource": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/phantom-bindings-2",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "brandComfortScore": 10,
       "brandResponseScore": 8,
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/phantom-bindings-2",
-      "sizeChartCheckedAt": "2026-10-14",
-      "sizeChartSource": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/phantom-bindings-2",
-      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Phantom 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "EUR 399.9",
       "priceMarket": "Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://www.nitrosnowboards.com/products/phantom-bindings-2",
       "priceStatus": "2026-10-12 官方结构化变体报价 EUR 399.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 2,994.85；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-605e-7183-ab7b-298767507e08",
@@ -22588,11 +22997,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 69,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.5,
       "response": 9,
+      "comfort": 6.5,
+      "versatility": 6.8,
       "convenience": 6.2,
-      "versatility": 6.8
+      "value": 5
     },
     "brand": {
       "slug": "nitro",
@@ -22601,50 +23010,48 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Phantom+ 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
       "entrySystem": "strap",
       "flexFeel": "pro-stiff",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Burton Channel",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "ankleStrap": "Premium Locked Down 脚踝绑带：45° 密度泡棉、纤维增强 3D 支撑骨架",
-      "toeStrap": "Übergrip PRO Integral 3D 脚趾绑带，防滑贴合不同鞋头",
-      "buckles": "Speed Wheel 3.0 卡扣/棘轮；Cable Reinforced Connectors 内置不锈钢线缆加固",
-      "bindingSizeGuide": "Nitro 男款：M US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 11–14 / MP 29–32 / EU 44–48",
-      "cushioning": "Air Plus Dampening、HYPER Foam、3° 倾斜脚床及 4 mm 后跟抬高",
+      "brandResponseScore": 9,
+      "brandComfortScore": 10,
       "terrain": [
         "freeride",
         "carving",
         "all-mountain"
       ],
-      "brandComfortScore": 10,
-      "brandResponseScore": 9,
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.nitrosnowboards.com/cs/collections/all-mens-bindings-26-27/products/phantom-bindings-3?variant=57278273716555",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Nitro 男款：M US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 11–14 / MP 29–32 / EU 44–48",
+      "sizeChart": [
+        {
+          "size": "M",
+          "usMen": "7–10.5",
+          "mondo": "25–28.5",
+          "eu": "38.5–43.5"
+        },
+        {
+          "size": "L",
+          "usMen": "11–14",
+          "mondo": "29–32",
+          "eu": "44–48"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.nitrosnowboards.com/cs/collections/all-mens-bindings-26-27/products/phantom-bindings-3?variant=57278273716555",
-      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Phantom+ 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
+      "ankleStrap": "Premium Locked Down 脚踝绑带：45° 密度泡棉、纤维增强 3D 支撑骨架",
+      "toeStrap": "Übergrip PRO Integral 3D 脚趾绑带，防滑贴合不同鞋头",
+      "buckles": "Speed Wheel 3.0 卡扣/棘轮；Cable Reinforced Connectors 内置不锈钢线缆加固",
+      "cushioning": "Air Plus Dampening、HYPER Foam、3° 倾斜脚床及 4 mm 后跟抬高",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/cs/collections/all-mens-bindings-26-27/products/phantom-bindings-3?variant=57278273716555",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "EUR 439.9",
       "priceMarket": "Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://www.nitrosnowboards.com/products/phantom-bindings-3",
       "priceStatus": "2026-10-12 官方结构化变体报价 EUR 439.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 3,294.41；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "专业硬朗"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "野雪 / freeride · 刻滑 · 全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6069-7d11-8e0d-3a242a74399d",
@@ -22662,11 +23069,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 65.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.3,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "nitro",
@@ -22675,39 +23082,36 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nitro Poison 女款官方尺码：S/M 单一尺码，适配 US 女码 6–11 / MP 23–28 / EU 36–43。",
+      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Poison 女款固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
-      "brandComfortScore": 10,
-      "brandResponseScore": 8,
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/poison-womens-bindings-1",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro Poison 女款官方尺码：S/M 单一尺码，适配 US 女码 6–11 / MP 23–28 / EU 36–43。",
+      "sizeChart": [
+        {
+          "size": "S/M",
+          "usWomen": "6–11",
+          "mondo": "23–28",
+          "eu": "36–43"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/poison-womens-bindings-1",
-      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Poison 女款固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
+      "brandComfortScore": 10,
+      "brandResponseScore": 8,
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/poison-womens-bindings-1",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "EUR 349.9",
       "priceMarket": "Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://www.nitrosnowboards.com/products/poison-womens-bindings-1",
       "priceStatus": "2026-10-12 官方结构化变体报价 EUR 349.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 2,620.40；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6075-7a99-b8dd-f1e67ec76bd1",
@@ -22725,11 +23129,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 65.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.3,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "nitro",
@@ -22738,38 +23142,41 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nitro Rambler 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Rambler 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
       "terrain": [
         "all-mountain"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro Rambler 官方尺码：M US 男 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 男 11–14 / MP 29–32 / EU 44–48。",
+      "sizeChart": [
+        {
+          "size": "M",
+          "usMen": "7–10.5",
+          "mondo": "25–28.5",
+          "eu": "38.5–43.5"
+        },
+        {
+          "size": "L",
+          "usMen": "11–14",
+          "mondo": "29–32",
+          "eu": "44–48"
+        }
+      ],
+      "sizeChartCheckedAt": "2026-10-14",
+      "sizeChartSource": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/rambler-bindings-1",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "brandComfortScore": 7,
       "brandResponseScore": 5,
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/rambler-bindings-1",
-      "sizeChartCheckedAt": "2026-10-14",
-      "sizeChartSource": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/rambler-bindings-1",
-      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Rambler 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "EUR 239.9",
       "priceMarket": "Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://www.nitrosnowboards.com/products/rambler-bindings-1",
       "priceStatus": "2026-10-12 官方结构化变体报价 EUR 239.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 1,796.61；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a13d55-1a9b-7485-a0a3-a068163eb3bc",
@@ -22787,11 +23194,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 79,
     "editorialScores": {
-      "value": 7,
-      "comfort": 9,
       "response": 7,
+      "comfort": 9,
+      "versatility": 7,
       "convenience": 9.5,
-      "versatility": 7
+      "value": 7
     },
     "brand": {
       "slug": "nitro",
@@ -22800,41 +23207,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "seasonEvidence": "Nitro 官方商品页标题标注 2027，官方男款 26/27 集合页列出此型号；据此归档为 2026/27（2027 款），不据此推断首次上市时间或当前库存。",
       "entrySystem": "step-in",
-      "mountingSystem": "Re:Flex；官方列出 2x4、4x4、3D 与 Burton Channel 安装孔位兼容",
-      "bootCompatibility": "Nitro 官方 Step On 指南称其固定器兼容所有 Step On 雪鞋，但系统按性别和尺码区分：男款靴须配男款固定器；US 男 6–8 / 8.5–10.5 / 11–13 / 14–15 分别配 S/M/L/XL。跨品牌也须确认靴卡完全扣合。普通绑带雪鞋不兼容。",
-      "bindingSizeGuide": "男款 S：US 6–8 / MP 24–26 / EU 38–41；M：US 8.5–10.5 / MP 26.5–28.5 / EU 41.5–43.5；L：US 11–13 / MP 29–31 / EU 44–46；XL：US 14–15 / MP 32–33 / EU 47–48。",
-      "highback": "Step On 非对称高背；集成导入槽辅助雪鞋进入固定器，系统以三点连接并使用 Hook 2 弹簧脚趾钩",
-      "cushioning": "Nitro HYPER Foam 脚床缓震",
+      "brandResponseScore": 7,
+      "brandComfortScore": 9,
       "terrain": [
         "all-mountain"
       ],
-      "brandComfortScore": 9,
-      "brandResponseScore": 7,
+      "mountingSystem": "Re:Flex；官方列出 2x4、4x4、3D 与 Burton Channel 安装孔位兼容",
+      "bootCompatibility": "Nitro 官方 Step On 指南称其固定器兼容所有 Step On 雪鞋，但系统按性别和尺码区分：男款靴须配男款固定器；US 男 6–8 / 8.5–10.5 / 11–13 / 14–15 分别配 S/M/L/XL。跨品牌也须确认靴卡完全扣合。普通绑带雪鞋不兼容。",
+      "bindingSizeGuide": "男款 S：US 6–8 / MP 24–26 / EU 38–41；M：US 8.5–10.5 / MP 26.5–28.5 / EU 41.5–43.5；L：US 11–13 / MP 29–31 / EU 44–46；XL：US 14–15 / MP 32–33 / EU 47–48。",
+      "sizeChartScope": "Nitro 官方 2027 男款 Step On 固定器尺码表；US 男 6–8、8.5–10.5、11–13、14–15 分档，无重叠。为 Step On 连接系统的推荐尺码，仍需与对应 Step On 雪鞋按尺码表匹配并实际检查扣合；页面尺码选项不代表实时库存。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "6–8",
+          "mondo": "24–26",
+          "eu": "38–41"
+        },
+        {
+          "size": "M",
+          "usMen": "8.5–10.5",
+          "mondo": "26.5–28.5",
+          "eu": "41.5–43.5"
+        },
+        {
+          "size": "L",
+          "usMen": "11–13",
+          "mondo": "29–31",
+          "eu": "44–46"
+        },
+        {
+          "size": "XL",
+          "usMen": "14–15",
+          "mondo": "32–33",
+          "eu": "47–48"
+        }
+      ],
+      "highback": "Step On 非对称高背；集成导入槽辅助雪鞋进入固定器，系统以三点连接并使用 Hook 2 弹簧脚趾钩",
+      "cushioning": "Nitro HYPER Foam 脚床缓震",
       "selectionNotes": "先选择合脚的男款 Step On 雪鞋，再按 US/MP 尺码选 S/M/L/XL 固定器，逐一确认后跟卡扣及两侧前掌卡齿完全锁定；Nitro 官方要求男鞋配男款固定器，勿跨男女系列混搭。安装前核对雪板 2x4、4x4、3D 或 Channel 孔位。",
       "compatibilitySources": "https://www.nitrosnowboards.com/products/step-on-mens-bindings-1；https://www.nitrosnowboards.com/pages/step-on",
-      "sizeChartScope": "Nitro 官方 2027 男款 Step On 固定器尺码表；US 男 6–8、8.5–10.5、11–13、14–15 分档，无重叠。为 Step On 连接系统的推荐尺码，仍需与对应 Step On 雪鞋按尺码表匹配并实际检查扣合；页面尺码选项不代表实时库存。",
       "sizeChartCheckedAt": "2026-10-15",
       "sizeChartSource": "https://www.nitrosnowboards.com/products/step-on-mens-bindings-1",
-      "seasonEvidence": "Nitro 官方商品页标题标注 2027，官方男款 26/27 集合页列出此型号；据此归档为 2026/27（2027 款），不据此推断首次上市时间或当前库存。",
       "officialPrice": "EUR 330.90",
-      "priceMarket": "Nitro 欧洲官方男款固定器集合页（EUR 标价）",
       "priceCheckedAt": "2026-10-15",
+      "priceMarket": "Nitro 欧洲官方男款固定器集合页（EUR 标价）",
       "priceSource": "https://www.nitrosnowboards.com/collections/all-mens-bindings-26-27",
       "priceStatus": "Nitro 欧洲官方男款集合页标价 EUR 330.90；按 ECB 2026-10-14 EUR/CNY 7.4925 折合 CNY 2,479.27。此为欧洲官方地区挂牌折算参考，不是中国售价；页面税费口径、跨境运费及进口费用以结账为准，尺码库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "踩入式"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a13d55-1aa1-73cf-806b-dc6553bad038",
@@ -22852,11 +23274,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 80,
     "editorialScores": {
-      "value": 7,
-      "comfort": 9,
       "response": 7,
+      "comfort": 9,
+      "versatility": 7.5,
       "convenience": 9.5,
-      "versatility": 7.5
+      "value": 7
     },
     "brand": {
       "slug": "nitro",
@@ -22865,42 +23287,51 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "seasonEvidence": "Nitro 官方页面标题标注 2027，官方女款 26/27 集合页列出此型号；据此归档为 2026/27（2027 款），不据此推断首次上市时间或当前库存。",
       "entrySystem": "step-in",
-      "mountingSystem": "Re:Flex；官方列出 2x4、4x4、3D 与 Burton Channel 安装孔位兼容",
-      "bootCompatibility": "Nitro 官方 Step On 指南称其固定器兼容所有 Step On 雪鞋，但系统按性别和尺码区分：女款靴须配女款固定器；US 女 5–6 / 6.5–8.5 / 9–11 分别配 S/M/L。跨品牌也须确认靴卡完全扣合。普通绑带雪鞋不兼容。",
-      "bindingSizeGuide": "女款 S：US 5–6 / MP 22–23 / EU 35–36.5；M：US 6.5–8.5 / MP 23.5–25.5 / EU 37–40.5；L：US 9–11 / MP 26–28 / EU 41–43。",
-      "highback": "Step On 非对称高背；集成导入槽辅助雪鞋进入固定器，系统以三点连接并使用 Hook 2 弹簧脚趾钩",
-      "cushioning": "Nitro HYPER Foam 脚床缓震",
+      "brandResponseScore": 7,
+      "brandComfortScore": 9,
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
-      "brandComfortScore": 9,
-      "brandResponseScore": 7,
+      "mountingSystem": "Re:Flex；官方列出 2x4、4x4、3D 与 Burton Channel 安装孔位兼容",
+      "bootCompatibility": "Nitro 官方 Step On 指南称其固定器兼容所有 Step On 雪鞋，但系统按性别和尺码区分：女款靴须配女款固定器；US 女 5–6 / 6.5–8.5 / 9–11 分别配 S/M/L。跨品牌也须确认靴卡完全扣合。普通绑带雪鞋不兼容。",
+      "bindingSizeGuide": "女款 S：US 5–6 / MP 22–23 / EU 35–36.5；M：US 6.5–8.5 / MP 23.5–25.5 / EU 37–40.5；L：US 9–11 / MP 26–28 / EU 41–43。",
+      "sizeChartScope": "Nitro 官方 2027 女款 Step On 固定器尺码表；US 女 5–6、6.5–8.5、9–11 分档，无重叠。为 Step On 连接系统的推荐尺码，仍需与对应 Step On 雪鞋按尺码表匹配并实际检查扣合；页面尺码选项不代表实时库存。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usWomen": "5–6",
+          "mondo": "22–23",
+          "eu": "35–36.5"
+        },
+        {
+          "size": "M",
+          "usWomen": "6.5–8.5",
+          "mondo": "23.5–25.5",
+          "eu": "37–40.5"
+        },
+        {
+          "size": "L",
+          "usWomen": "9–11",
+          "mondo": "26–28",
+          "eu": "41–43"
+        }
+      ],
+      "highback": "Step On 非对称高背；集成导入槽辅助雪鞋进入固定器，系统以三点连接并使用 Hook 2 弹簧脚趾钩",
+      "cushioning": "Nitro HYPER Foam 脚床缓震",
       "selectionNotes": "先选择合脚的女款 Step On 雪鞋，再按 US/MP 尺码选 S/M/L 固定器，逐一确认后跟卡扣及两侧前掌卡齿完全锁定；Nitro 官方要求女鞋配女款固定器，勿跨男女系列混搭。安装前核对雪板 2x4、4x4、3D 或 Channel 孔位。",
       "compatibilitySources": "https://www.nitrosnowboards.com/collections/all-26-27/products/step-on-womens-bindings；https://www.nitrosnowboards.com/pages/step-on",
-      "sizeChartScope": "Nitro 官方 2027 女款 Step On 固定器尺码表；US 女 5–6、6.5–8.5、9–11 分档，无重叠。为 Step On 连接系统的推荐尺码，仍需与对应 Step On 雪鞋按尺码表匹配并实际检查扣合；页面尺码选项不代表实时库存。",
       "sizeChartCheckedAt": "2026-10-15",
       "sizeChartSource": "https://www.nitrosnowboards.com/collections/all-26-27/products/step-on-womens-bindings",
-      "seasonEvidence": "Nitro 官方页面标题标注 2027，官方女款 26/27 集合页列出此型号；据此归档为 2026/27（2027 款），不据此推断首次上市时间或当前库存。",
       "officialPrice": "EUR 329.90",
-      "priceMarket": "Nitro 欧洲官方女款固定器集合页（EUR 标价）",
       "priceCheckedAt": "2026-10-15",
+      "priceMarket": "Nitro 欧洲官方女款固定器集合页（EUR 标价）",
       "priceSource": "https://www.nitrosnowboards.com/cs/collections/all-womens-bindings-26-27",
       "priceStatus": "Nitro 欧洲官方女款集合页标价 EUR 329.90；按 ECB 2026-10-14 EUR/CNY 7.4925 折合 CNY 2,471.78。此为欧洲官方地区挂牌折算参考，不是中国售价；页面税费口径、跨境运费及进口费用以结账为准，尺码库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "踩入式"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6082-7c64-9e6f-8f2c95d7876a",
@@ -22918,11 +23349,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 65.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.3,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "nitro",
@@ -22931,39 +23362,51 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Nitro Talent 官方尺码：S US 男 3–6.5、女 3.5–7 / MP 21–24.5 / EU 33.5–38；M 男 7–10.5、女 7.5–11 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14、女 11.5–14.5 / MP 29–32 / EU 44–48。",
+      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Talent Unisex 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
-      "brandComfortScore": 7,
-      "brandResponseScore": 4,
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/talent-unisex-bindings-1",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Channel",
+      "bindingSizeGuide": "Nitro Talent 官方尺码：S US 男 3–6.5、女 3.5–7 / MP 21–24.5 / EU 33.5–38；M 男 7–10.5、女 7.5–11 / MP 25–28.5 / EU 38.5–43.5；L 男 11–14、女 11.5–14.5 / MP 29–32 / EU 44–48。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "3–6.5",
+          "usWomen": "3.5–7",
+          "mondo": "21–24.5",
+          "eu": "33.5–38"
+        },
+        {
+          "size": "M",
+          "usMen": "7–10.5",
+          "mondo": "25–28.5",
+          "eu": "38.5–43.5",
+          "usWomen": "7.5–11"
+        },
+        {
+          "size": "L",
+          "usMen": "11–14",
+          "mondo": "29–32",
+          "eu": "44–48",
+          "usWomen": "11.5–14.5"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/talent-unisex-bindings-1",
-      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Talent Unisex 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
+      "brandComfortScore": 7,
+      "brandResponseScore": 4,
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/collections/bindings-26-27/products/talent-unisex-bindings-1",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "EUR 179.9",
       "priceMarket": "Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://www.nitrosnowboards.com/products/talent-unisex-bindings-1",
       "priceStatus": "2026-10-12 官方结构化变体报价 EUR 179.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 1,347.27；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-608d-72bd-8d77-37dbf205fe5e",
@@ -22981,11 +23424,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 67,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 7.3,
+      "comfort": 6.8,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "nitro",
@@ -22994,51 +23437,49 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Team 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
       "entrySystem": "strap",
       "flexFeel": "medium",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Burton Channel，较小盘面有助于保留板面自然弯曲",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "ankleStrap": "3D OptiFrame Locked Down 聚氨酯脚踝绑带，强调支撑与响应",
-      "toeStrap": "Übergrip PRO 3D 注塑脚趾绑带，内侧防滑垫，适配不同鞋头",
-      "buckles": "Speed Wheel 3.0 卡扣/棘轮；Cable Reinforced Connectors 内置不锈钢线缆加固梯带",
-      "bindingSizeGuide": "Nitro 男款：M US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 11–14 / MP 29–32 / EU 44–48",
-      "cushioning": "Air Dampening 后跟缓震；3° 倾斜脚床",
+      "brandResponseScore": 7,
+      "brandComfortScore": 9,
       "terrain": [
         "all-mountain",
         "carving",
         "freestyle",
         "freeride"
       ],
-      "brandComfortScore": 9,
-      "brandResponseScore": 7,
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.nitrosnowboards.com/products/team-bindings-1",
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Burton Channel，较小盘面有助于保留板面自然弯曲",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Nitro 男款：M US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L US 11–14 / MP 29–32 / EU 44–48",
+      "sizeChart": [
+        {
+          "size": "M",
+          "usMen": "7–10.5",
+          "mondo": "25–28.5",
+          "eu": "38.5–43.5"
+        },
+        {
+          "size": "L",
+          "usMen": "11–14",
+          "mondo": "29–32",
+          "eu": "44–48"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.nitrosnowboards.com/products/team-bindings-1",
-      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Team 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
+      "ankleStrap": "3D OptiFrame Locked Down 聚氨酯脚踝绑带，强调支撑与响应",
+      "toeStrap": "Übergrip PRO 3D 注塑脚趾绑带，内侧防滑垫，适配不同鞋头",
+      "buckles": "Speed Wheel 3.0 卡扣/棘轮；Cable Reinforced Connectors 内置不锈钢线缆加固梯带",
+      "cushioning": "Air Dampening 后跟缓震；3° 倾斜脚床",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.nitrosnowboards.com/products/team-bindings-1",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "EUR 319.9",
       "priceMarket": "Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://www.nitrosnowboards.com/products/team-bindings-1",
       "priceStatus": "2026-10-12 官方结构化变体报价 EUR 319.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 2,395.73；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 刻滑 · 自由式 / 公园 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6099-7f8f-a48a-a6fcdc3a33f7",
@@ -23056,11 +23497,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 69.2,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 8.5,
+      "comfort": 6.8,
+      "versatility": 7.2,
       "convenience": 6.2,
-      "versatility": 7.2
+      "value": 5
     },
     "brand": {
       "slug": "nitro",
@@ -23069,51 +23510,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
+      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Team Pro 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
       "entrySystem": "strap",
       "flexFeel": "stiff",
-      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Burton Channel",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "ankleStrap": "3D OptiPro 双组分聚氨酯脚踝绑带，兼顾响应、舒适与支撑",
-      "toeStrap": "Übergrip PRO 3D 注塑脚趾绑带，防滑贴合不同鞋头",
-      "buckles": "Speed Wheel 3.0 卡扣/棘轮；梯带与棘轮带内置不锈钢线缆加固",
-      "bindingSizeGuide": "Nitro：S/M 男靴 US 5–10 / 女靴 5.5–10.5 / MP 23–28 / EU 36–43；M 男 US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L 男 US 11–14 / MP 29–32 / EU 44–48",
-      "cushioning": "Air Dampening 后跟缓震、HYPER Foam 脚床与 3° 倾斜脚床",
+      "brandResponseScore": 8,
+      "brandComfortScore": 9,
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
-      "brandComfortScore": 9,
-      "brandResponseScore": 8,
+      "mountingSystem": "Universal Mini Disc；兼容 2x4 与 Burton Channel",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Nitro：S/M 男靴 US 5–10 / 女靴 5.5–10.5 / MP 23–28 / EU 36–43；M 男 US 7–10.5 / MP 25–28.5 / EU 38.5–43.5；L 男 US 11–14 / MP 29–32 / EU 44–48",
+      "sizeChartScope": "2027 官方页尺码选择器列 S/M、M、L；厂商推荐鞋码区间存在重叠：US 男 7–10 同时落入 S/M 与 M。区间是推荐范围，不是唯一映射、实装保证或实时库存。",
+      "bootFitEvidence": "Nitro 官方 2027 Team Pro 页面分别列出三档固定器尺码的 US/MP/EU 鞋码范围；S/M 与 M 在 US 男 7–10 区间重叠。应结合雪鞋外形实装检查底盘承托、鞋头/后跟居中、脚踝绑带位置及梯带余量，边界或重叠尺码需试装。",
+      "sizeChart": [
+        {
+          "size": "S/M",
+          "usMen": "5–10",
+          "usWomen": "5.5–10.5",
+          "mondo": "23–28",
+          "eu": "36–43"
+        },
+        {
+          "size": "M",
+          "usMen": "7–10.5",
+          "mondo": "25–28.5",
+          "eu": "38.5–43.5"
+        },
+        {
+          "size": "L",
+          "usMen": "11–14",
+          "mondo": "29–32",
+          "eu": "44–48"
+        }
+      ],
+      "sizeChartCheckedAt": "2026-10-15",
+      "sizeChartSource": "https://www.nitrosnowboards.com/collections/all-26-27/products/team-pro-bindings-1?variant=57277687005515",
+      "ankleStrap": "3D OptiPro 双组分聚氨酯脚踝绑带，兼顾响应、舒适与支撑",
+      "toeStrap": "Übergrip PRO 3D 注塑脚趾绑带，防滑贴合不同鞋头",
+      "buckles": "Speed Wheel 3.0 卡扣/棘轮；梯带与棘轮带内置不锈钢线缆加固",
+      "cushioning": "Air Dampening 后跟缓震、HYPER Foam 脚床与 3° 倾斜脚床",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://www.nitrosnowboards.com/collections/all-26-27/products/team-pro-bindings-1?variant=57277687005515",
-      "sizeChartScope": "2027 官方页尺码选择器列 S/M、M、L；厂商推荐鞋码区间存在重叠：US 男 7–10 同时落入 S/M 与 M。区间是推荐范围，不是唯一映射、实装保证或实时库存。",
-      "sizeChartCheckedAt": "2026-10-15",
-      "bootFitEvidence": "Nitro 官方 2027 Team Pro 页面分别列出三档固定器尺码的 US/MP/EU 鞋码范围；S/M 与 M 在 US 男 7–10 区间重叠。应结合雪鞋外形实装检查底盘承托、鞋头/后跟居中、脚踝绑带位置及梯带余量，边界或重叠尺码需试装。",
-      "sizeChartSource": "https://www.nitrosnowboards.com/collections/all-26-27/products/team-pro-bindings-1?variant=57277687005515",
-      "seasonEvidence": "Nitro 官方 26/27 固定器集合页列出 Team Pro 固定器；据官方当季目录归档为 2026/27（2027），不据此推断首次上市年份或当前库存。来源：https://www.nitrosnowboards.com/collections/bindings-26-27",
+      "priceCheckedAt": "2026-10-12",
       "officialPrice": "EUR 359.9",
       "priceMarket": "Nitro 欧洲官方商店；归档结构化变体报价（EUR）折算 CNY",
-      "priceCheckedAt": "2026-10-12",
       "priceSource": "https://www.nitrosnowboards.com/products/team-pro-bindings-1",
       "priceStatus": "2026-10-12 官方结构化变体报价 EUR 359.90，按 ECB 2026-10-13 EUR/CNY 7.4890 折算 CNY 2,695.29；2026-10-14 重查商品页未显示价格，归档尺码变体均售罄。仅为欧洲价格的人民币折算参考，不是中国售价；价格可能已变化，跨境费用未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-4523-7af2-966c-d6eb48cd11b9",
@@ -23131,11 +23577,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 66.5,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.6,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "rome",
@@ -23144,40 +23590,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
       "flex": 6,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 349.95",
       "priceMarket": "Rome 美国官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://romesnowboards.com/products/rome-390-boss-aw-2627-men-bindings",
       "priceStatus": "Rome 2026/27 官方商品页标价；人民币为美国官网价折算参考，不是中国售价，未计美国税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "6"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-452e-7e96-a69f-69407360b0c4",
@@ -23195,11 +23651,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 67.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 8.1,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "rome",
@@ -23208,40 +23664,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
       "flex": 7,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://us.romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 369.95",
       "priceMarket": "Rome 美国官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://romesnowboards.com/products/rome-390-boss-fw-2627-mens-snowboard-bindings",
       "priceStatus": "Rome 2026/27 官方商品页标价；人民币为美国官网价折算参考，不是中国售价，未计美国税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-4539-764f-8991-82af1c595fa7",
@@ -23259,11 +23725,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 66.5,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.6,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "rome",
@@ -23272,40 +23738,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
       "flex": 6,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://romesnowboards.com/products/rome-brass-aw-2627-womens-snowboard-binding",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 349.95",
       "priceMarket": "Rome 美国官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://romesnowboards.com/products/rome-brass-aw-2627-womens-snowboard-binding",
       "priceStatus": "Rome 2026/27 官方商品页标价；人民币为美国官网价折算参考，不是中国售价，未计美国税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "6"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-4545-754d-b87b-13a5bb686e50",
@@ -23323,11 +23799,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 68.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 8.5,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "rome",
@@ -23336,40 +23812,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
       "flex": 8,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
       "terrain": [
         "all-mountain",
         "freeride"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 399.95",
       "priceMarket": "Rome 美国官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://romesnowboards.com/products/rome-katana-aw-2627-mens-snowboard-bindings",
       "priceStatus": "Rome 2026/27 官方商品页标价；人民币为美国官网价折算参考，不是中国售价，未计美国税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "8"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-4551-723c-bcc3-4466505d8d62",
@@ -23387,11 +23873,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 73,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 8.5,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 8.3,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "rome",
@@ -23400,40 +23886,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "fast-entry",
       "flex": 8,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
       "terrain": [
         "all-mountain",
         "freeride"
       ],
+      "entrySystem": "fast-entry",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://romesnowboards.com/products/katana-asymwrap-fase-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 429.95",
       "priceMarket": "Rome 美国官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://romesnowboards.com/products/rome-katana-aw-fase-2627-mens-snowboard-bindings",
       "priceStatus": "Rome 2026/27 官方商品页标价 USD 429.95；人民币为美国官网价折算参考，不是中国售价，未计美国税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "快速穿脱"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "8"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-455e-7d5c-9547-402cbb2cb4bb",
@@ -23451,11 +23947,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 74.2,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 9,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 8.3,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "rome",
@@ -23464,40 +23960,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "fast-entry",
       "flex": 9,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
       "terrain": [
         "all-mountain",
         "freeride"
       ],
+      "entrySystem": "fast-entry",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://romesnowboards.com/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 449.95",
       "priceMarket": "Rome 美国官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://romesnowboards.com/products/rome-katana-aw-pro-fase-2627-mens-snowboard-bindings",
       "priceStatus": "Rome 2026/27 官方商品页标价；人民币为美国官网价折算参考，不是中国售价，未计美国税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "快速穿脱"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "9"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-456a-717f-be5a-3f26afe96a1d",
@@ -23515,11 +24021,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 70,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 9,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "rome",
@@ -23528,40 +24034,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
       "flex": 9,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
       "terrain": [
         "all-mountain",
         "freeride"
       ],
+      "entrySystem": "strap",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://romesnowboards.com/products/rome-katana-fw-pro-2627-mens-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5 - 7",
+          "usWomen": "6.5 - 8.5",
+          "eu": "36.5 - 39",
+          "mondo": "23 - 25",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7.5 / 8 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M/L",
+          "usMen": "7.5 - 10",
+          "usWomen": "9 - 11.5",
+          "eu": "40 - 43",
+          "mondo": "25.5 - 28",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 10.5 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L/XL",
+          "usMen": "10.5 - 12.5",
+          "usWomen": "12 - 14",
+          "eu": "44 - 46",
+          "mondo": "28.5 - 30.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 13 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5 - 7 / US 女 6.5 - 8.5 / EU 36.5 - 39；M/L: US 男 7.5 - 10 / US 女 9 - 11.5 / EU 40 - 43；L/XL: US 男 10.5 - 12.5 / US 女 12 - 14 / EU 44 - 46。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 469.95",
       "priceMarket": "Rome 美国官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://romesnowboards.com/products/rome-katana-fw-pro-2627-mens-snowboard-bindings",
       "priceStatus": "Rome 2026/27 官方商品页标价；人民币为美国官网价折算参考，不是中国售价，未计美国税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "9"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e8a-4576-748e-ada0-0f38bf4e4fca",
@@ -23579,11 +24095,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 69.5,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.1,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 8.3,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "rome",
@@ -23592,40 +24108,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "fast-entry",
       "flex": 5,
-      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "S: US 男 5.5 - 8 / US 女 7 - 9.5 / EU 37 - 40.5；M: US 男 7.5 - 10.5 / US 女 9 - 12 / EU 40 - 44；L: US 男 10.5 - 13 / US 女 12 - 14.5 / EU 44 - 47。边界和备注见逐码表。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
+      "entrySystem": "fast-entry",
+      "mountingSystem": "Rome 标准圆盘；具体孔位兼容以随附圆盘说明为准",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "5.5 - 8",
+          "usWomen": "7 - 9.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 26",
+          "notes": "官网实色范围；淡入/星号边界 US 男 5 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "M",
+          "usMen": "7.5 - 10.5",
+          "usWomen": "9 - 12",
+          "eu": "40 - 44",
+          "mondo": "25.5 - 28.5",
+          "notes": "官网实色范围；淡入/星号边界 US 男 7 / 11 需按官方提示试装，星号处优先考虑大一码。"
+        },
+        {
+          "size": "L",
+          "usMen": "10.5 - 13",
+          "usWomen": "12 - 14.5",
+          "eu": "44 - 47",
+          "mondo": "28.5 - 31",
+          "notes": "官网实色范围；淡入/星号边界 US 男 10 / 14 需按官方提示试装，星号处优先考虑大一码。"
+        }
+      ],
+      "bindingSizeGuide": "S: US 男 5.5 - 8 / US 女 7 - 9.5 / EU 37 - 40.5；M: US 男 7.5 - 10.5 / US 女 9 - 12 / EU 40 - 44；L: US 男 10.5 - 13 / US 女 12 - 14.5 / EU 44 - 47。边界和备注见逐码表。",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 329.95",
       "priceMarket": "Rome 美国官方店挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://romesnowboards.com/products/rome-mens-volt-fase-2627-snowboard-bindings",
       "priceStatus": "Rome 2026/27 官方商品页标价；人民币为美国官网价折算参考，不是中国售价，未计美国税费与跨境成本。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "快速穿脱"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "5"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-60b8-7d8d-96b6-c0f33920fcb7",
@@ -23643,11 +24169,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 65.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.3,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "salomon",
@@ -23656,42 +24182,52 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "medium",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.salomon.com/en-us/product/district-li1289",
+      "flexFeel": "medium",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "3–8",
+          "usWomen": "3–9",
+          "eu": "34.5–40.5",
+          "uk": "2–7",
+          "mondo": "21.5–26"
+        },
+        {
+          "size": "M",
+          "usMen": "7.5–10.5",
+          "usWomen": "8.5–11.5",
+          "eu": "40–43.5",
+          "uk": "7–9.5",
+          "mondo": "25.5–28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "10–13.5",
+          "usWomen": "11–14.5",
+          "eu": "43–47",
+          "uk": "9–12.5",
+          "mondo": "28–31.5"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/district-li1289",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 299.95",
       "priceMarket": "Salomon 美国官网 USD 挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.salomon.com/en-us/product/district-li1289",
       "priceStatus": "官方当前商品页列 USD 299.95；页面未直接标年款，价格仅作为同型号美国市场参考，不用于证明 2026 雪季，也不是中国售价。税费及跨境成本未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-60c4-7daf-ba51-21c0ea7c1d0d",
@@ -23709,11 +24245,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 68.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 8.5,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "salomon",
@@ -23722,42 +24258,52 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "stiff",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
       "terrain": [
         "all-mountain",
         "freeride"
       ],
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.salomon.com/en-us/product/district-pro-li1290",
+      "flexFeel": "stiff",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "3–8",
+          "usWomen": "3–9",
+          "eu": "34.5–40.5",
+          "uk": "2–7",
+          "mondo": "21.5–26"
+        },
+        {
+          "size": "M",
+          "usMen": "7.5–10.5",
+          "usWomen": "8.5–11.5",
+          "eu": "40–43.5",
+          "uk": "7–9.5",
+          "mondo": "25.5–28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "10–13.5",
+          "usWomen": "11–14.5",
+          "eu": "43–47",
+          "uk": "9–12.5",
+          "mondo": "28–31.5"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/district-pro-li1290",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 319.95",
       "priceMarket": "Salomon 美国官网 USD 挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.salomon.com/en-us/product/district-pro-li1290",
       "priceStatus": "官方当前商品页列 USD 319.95；页面未直接标年款，价格仅作为同型号美国市场参考，不用于证明 2026 雪季，也不是中国售价。税费及跨境成本未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-60d1-7870-b378-42f033c56a70",
@@ -23775,11 +24321,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 65.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.3,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "salomon",
@@ -23788,35 +24334,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
       "terrain": [
         "all-mountain"
       ],
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.salomon.com/en-us/c/men/winter-equipment/snowboard/bindings",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "3–8",
+          "usWomen": "3–9",
+          "eu": "34.5–40.5",
+          "uk": "2–7",
+          "mondo": "21.5–26"
+        },
+        {
+          "size": "M",
+          "usMen": "7.5–10.5",
+          "usWomen": "8.5–11.5",
+          "eu": "40–43.5",
+          "uk": "7–9.5",
+          "mondo": "25.5–28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "10–13.5",
+          "usWomen": "11–14.5",
+          "eu": "43–47",
+          "uk": "9–12.5",
+          "mondo": "28–31.5"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/c/men/winter-equipment/snowboard/bindings",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 249.95",
       "priceMarket": "Salomon 美国官网当前型号挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.salomon.com/en-us/product/edb-li6675/L49304400",
       "priceStatus": "官方当前商品页列 USD 249.95，货号 L49304400；页面未直接标年款，价格仅作为同型号美国市场参考，不用于证明 2026 雪季，也不是中国售价。税费及跨境成本未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-60dc-70ed-8576-1cc925af459e",
@@ -23834,11 +24395,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 68.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 8.5,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "salomon",
@@ -23847,41 +24408,51 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "stiff",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
       "terrain": [
         "all-mountain"
       ],
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.salomon.com/en-us/product/edb-prime-li8710",
+      "flexFeel": "stiff",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "3–8",
+          "usWomen": "3–9",
+          "eu": "34.5–40.5",
+          "uk": "2–7",
+          "mondo": "21.5–26"
+        },
+        {
+          "size": "M",
+          "usMen": "7.5–10.5",
+          "usWomen": "8.5–11.5",
+          "eu": "40–43.5",
+          "uk": "7–9.5",
+          "mondo": "25.5–28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "10–13.5",
+          "usWomen": "11–14.5",
+          "eu": "43–47",
+          "uk": "9–12.5",
+          "mondo": "28–31.5"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/edb-prime-li8710",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 279.95",
       "priceMarket": "Salomon 美国官网 USD 挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.salomon.com/en-us/product/edb-prime-li8710",
       "priceStatus": "官方当前商品页列 USD 279.95；页面未直接标年款，价格仅作为同型号美国市场参考，不用于证明 2026 雪季，也不是中国售价。税费及跨境成本未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-60e8-7bf5-ac7e-f0647a48c0d3",
@@ -23899,11 +24470,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 68.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 8.5,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "salomon",
@@ -23912,42 +24483,52 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "stiff",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
       "terrain": [
         "all-mountain",
         "freeride"
       ],
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.salomon.com/en-us/product/highlander-li8702",
+      "flexFeel": "stiff",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "3–8",
+          "usWomen": "3–9",
+          "eu": "34.5–40.5",
+          "uk": "2–7",
+          "mondo": "21.5–26"
+        },
+        {
+          "size": "M",
+          "usMen": "7.5–10.5",
+          "usWomen": "8.5–11.5",
+          "eu": "40–43.5",
+          "uk": "7–9.5",
+          "mondo": "25.5–28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "10–13.5",
+          "usWomen": "11–14.5",
+          "eu": "43–47",
+          "uk": "9–12.5",
+          "mondo": "28–31.5"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/highlander-li8702",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 379.95",
       "priceMarket": "Salomon 美国官网 USD 挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.salomon.com/en-us/product/highlander-li8702",
       "priceStatus": "官方当前商品页列 USD 379.95；页面未直接标年款，价格仅作为同型号美国市场参考，不用于证明 2026 雪季，也不是中国售价。税费及跨境成本未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 野雪 / freeride"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-60f3-7b40-8b7c-6f4d25c6a30c",
@@ -23965,11 +24546,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 65.8,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 7.3,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "salomon",
@@ -23978,42 +24559,52 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "medium",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.salomon.com/en-us/product/hologram-li5326",
+      "flexFeel": "medium",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "3–8",
+          "usWomen": "3–9",
+          "eu": "34.5–40.5",
+          "uk": "2–7",
+          "mondo": "21.5–26"
+        },
+        {
+          "size": "M",
+          "usMen": "7.5–10.5",
+          "usWomen": "8.5–11.5",
+          "eu": "40–43.5",
+          "uk": "7–9.5",
+          "mondo": "25.5–28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "10–13.5",
+          "usWomen": "11–14.5",
+          "eu": "43–47",
+          "uk": "9–12.5",
+          "mondo": "28–31.5"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/hologram-li5326",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 359.95",
       "priceMarket": "Salomon 美国官网 USD 挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.salomon.com/en-us/product/hologram-li5326",
       "priceStatus": "官方当前商品页列 USD 359.95；页面未直接标年款，价格仅作为同型号美国市场参考，不用于证明 2026 雪季，也不是中国售价。税费及跨境成本未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6100-7b06-90fa-d416a7e4b559",
@@ -24031,11 +24622,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 63.5,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 6.4,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "salomon",
@@ -24044,42 +24635,52 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "soft",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.salomon.com/en-us/product/pact-li6862",
+      "flexFeel": "soft",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "3–8",
+          "usWomen": "3–9",
+          "eu": "34.5–40.5",
+          "uk": "2–7",
+          "mondo": "21.5–26"
+        },
+        {
+          "size": "M",
+          "usMen": "7.5–10.5",
+          "usWomen": "8.5–11.5",
+          "eu": "40–43.5",
+          "uk": "7–9.5",
+          "mondo": "25.5–28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "10–13.5",
+          "usWomen": "11–14.5",
+          "eu": "43–47",
+          "uk": "9–12.5",
+          "mondo": "28–31.5"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/pact-li6862",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 159.95",
       "priceMarket": "Salomon 美国官网 USD 挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.salomon.com/en-us/product/pact-li6862",
       "priceStatus": "官方当前商品页列 USD 159.95；页面未直接标年款，价格仅作为同型号美国市场参考，不用于证明 2026 雪季，也不是中国售价。税费及跨境成本未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "柔软"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-610c-74bc-98e9-5ab4ac7b90f2",
@@ -24097,11 +24698,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 63.5,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.2,
       "response": 6.4,
+      "comfort": 6.2,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "salomon",
@@ -24110,42 +24711,366 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     },
     "categorySlug": "snowboard-binding",
     "specs": {
-      "entrySystem": "strap",
-      "flexFeel": "soft",
-      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
-      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
-      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
       "terrain": [
         "all-mountain",
         "freestyle"
       ],
-      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
-      "compatibilitySources": "https://www.salomon.com/en-us/product/rhythm-li3345",
+      "flexFeel": "soft",
+      "entrySystem": "strap",
+      "mountingSystem": "Universal Disc；兼容主要雪板安装系统",
+      "bindingSizeGuide": "Salomon 官方尺码页（2026-10-14 核对）：S EU 34.5–40.5 / US 男 3–8 / 女 3–9；M EU 40–43.5 / 男 7.5–10.5 / 女 8.5–11.5；L EU 43–47 / 男 10–13.5 / 女 11–14.5。尺码范围有重叠，具体试装以商品型号和雪鞋为准。",
+      "sizeChart": [
+        {
+          "size": "S",
+          "usMen": "3–8",
+          "usWomen": "3–9",
+          "eu": "34.5–40.5",
+          "uk": "2–7",
+          "mondo": "21.5–26"
+        },
+        {
+          "size": "M",
+          "usMen": "7.5–10.5",
+          "usWomen": "8.5–11.5",
+          "eu": "40–43.5",
+          "uk": "7–9.5",
+          "mondo": "25.5–28.5"
+        },
+        {
+          "size": "L",
+          "usMen": "10–13.5",
+          "usWomen": "11–14.5",
+          "eu": "43–47",
+          "uk": "9–12.5",
+          "mondo": "28–31.5"
+        }
+      ],
       "sizeChartCheckedAt": "2026-10-14",
       "sizeChartSource": "https://www.salomon.com/es-es/sizingchart?category=snowboard-bindings&gender=men",
+      "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
+      "compatibilitySources": "https://www.salomon.com/en-us/product/rhythm-li3345",
+      "priceCheckedAt": "2026-10-15",
       "officialPrice": "USD 189.95",
       "priceMarket": "Salomon 美国官网 USD 挂牌价；按 ECB 2026-10-14 汇率折算人民币",
-      "priceCheckedAt": "2026-10-15",
       "priceSource": "https://www.salomon.com/en-us/product/rhythm-li3345",
       "priceStatus": "官方当前商品页列 USD 189.95；页面未直接标年款，价格仅作为同型号美国市场参考，不用于证明 2026 雪季，也不是中国售价。税费及跨境成本未计。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "柔软"
-      },
-      {
-        "key": "terrain",
-        "label": "适用场景",
-        "value": "全山地 · 自由式 / 公园"
-      }
-    ]
+    "highlights": []
+  },
+  {
+    "id": "sp-base-2026",
+    "slug": "sp-base-2026",
+    "title": "SP Bindings BASE 2025/26",
+    "model": "BASE",
+    "year": 2026,
+    "oneLiner": "SP 固定器基础款，配置与定位简洁，采用常规绑带穿脱；品牌当前目录提供多种尺码。",
+    "priceMin": 1161,
+    "priceMax": 1161,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/092839a5ab0b638e82984a72ac5a69f3f47d9e9fd0a96c1c86d09c5543d55dc8.webp",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "editorialScores": null,
+    "brand": {
+      "slug": "sp-bindings",
+      "name": "SP Bindings",
+      "nameCn": "SP 固定器"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "terrain": [
+        "all-mountain"
+      ],
+      "entrySystem": "strap",
+      "mountingSystem": "官方称兼容常见雪板安装系统；具体圆盘兼容性按随附圆盘确认。",
+      "bootCompatibility": "官方称兼容常规单板雪鞋；尺码仅作参考，鞋型会影响实际贴合，需试装检查绑带覆盖与雪鞋居中。",
+      "bindingSizeGuide": "SP 官方 FT4（BASE/BASE+）尺码参考：S 22–25 cm、M 25–27.5 cm、L 27.5–29.5 cm、XL 29.5–32 cm；尺码区间有重叠，按雪鞋实物试装。",
+      "baseplateMaterial": "FT4 塑料底盘（官方尺码页型号说明）。",
+      "selectionNotes": "官方将 BASE 描述为简洁、可靠的基础型号。品牌说明 BASE 不支持 FASTEC 快速入口，应按传统绑带方式穿脱。尺码范围仅作参考；应以雪鞋实物试装和雪板圆盘核对为准。",
+      "compatibilitySources": "https://sp-bindings.jp/pages/sp-bindings-size-chart；https://sp-bindings.jp/pages/technology",
+      "sizeChart": [
+        {
+          "size": "S",
+          "mondo": "22–25"
+        },
+        {
+          "size": "M",
+          "mondo": "25–27.5"
+        },
+        {
+          "size": "L",
+          "mondo": "27.5–29.5"
+        },
+        {
+          "size": "XL",
+          "mondo": "29.5–32"
+        }
+      ],
+      "sizeChartCheckedAt": "2026-10-21",
+      "sizeChartSource": "https://sp-bindings.jp/pages/sp-bindings-size-chart",
+      "priceCheckedAt": "2026-10-21",
+      "officialPrice": "JPY 27,500（日本官网含税挂牌价）",
+      "priceMarket": "SP Bindings 日本官方商店 25/26 商品页；按 ECB 2026-10-20 EUR/JPY 与 EUR/CNY 汇率折算人民币",
+      "priceSource": "https://sp-bindings.jp/products/base",
+      "priceStatus": "日本官网 25/26 商品页含税标价 JPY 27,500；按 ECB 2026-10-20 EUR/JPY 177.34、EUR/CNY 7.4894 折算约 CNY 1,161.38。仅作日本地区价格参考，不是中国售价或成交价，未计跨境运输及进口费用。"
+    },
+    "highlights": []
+  },
+  {
+    "id": "sp-base-plus-2026",
+    "slug": "sp-base-plus-2026",
+    "title": "SP Bindings BASE+ 2025/26",
+    "model": "BASE+",
+    "year": 2026,
+    "oneLiner": "入门至进阶的轻量快穿固定器，柔和脚感和缓震脚床侧重易上手与舒适度。",
+    "priceMin": 1347,
+    "priceMax": 1347,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/4a9a4a7943998114c546e3f720b0d87e9d918bb90cfaae56ad05b696c2298b8e.webp",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "editorialScores": null,
+    "brand": {
+      "slug": "sp-bindings",
+      "name": "SP Bindings",
+      "nameCn": "SP 固定器"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "flexFeel": "soft",
+      "entrySystem": "fast-entry",
+      "mountingSystem": "官方称兼容常见雪板安装系统；具体圆盘兼容性按随附圆盘确认。",
+      "bootCompatibility": "官方称兼容常规单板雪鞋；尺码仅作参考，鞋型会影响实际贴合，需试装检查绑带覆盖与雪鞋居中。",
+      "bindingSizeGuide": "SP 官方 FT4（BASE/BASE+）尺码参考：S 22–25 cm、M 25–27.5 cm、L 27.5–29.5 cm、XL 29.5–32 cm；尺码区间有重叠，按雪鞋实物试装。",
+      "baseplateMaterial": "FT4 塑料底盘（官方尺码页型号说明）。",
+      "cushioning": "EVA 脚床；官方称用于提升舒适性。",
+      "selectionNotes": "官方将 BASE+ 定位为入门及进阶过渡款，采用较柔和脚感、轻量结构和双入口系统。尺码范围仅作参考；应以雪鞋实物试装和雪板圆盘核对为准。",
+      "compatibilitySources": "https://sp-bindings.jp/pages/sp-bindings-size-chart；https://sp-bindings.jp/products/base-plus",
+      "sizeChart": [
+        {
+          "size": "S",
+          "mondo": "22–25"
+        },
+        {
+          "size": "M",
+          "mondo": "25–27.5"
+        },
+        {
+          "size": "L",
+          "mondo": "27.5–29.5"
+        },
+        {
+          "size": "XL",
+          "mondo": "29.5–32"
+        }
+      ],
+      "sizeChartCheckedAt": "2026-10-21",
+      "sizeChartSource": "https://sp-bindings.jp/pages/sp-bindings-size-chart",
+      "priceCheckedAt": "2026-10-21",
+      "officialPrice": "JPY 31,900（日本官网含税挂牌价）",
+      "priceMarket": "SP Bindings 日本官方商店 25/26 商品页；按 ECB 2026-10-20 EUR/JPY 与 EUR/CNY 汇率折算人民币",
+      "priceSource": "https://sp-bindings.jp/products/base-plus",
+      "priceStatus": "日本官网 25/26 商品页含税标价 JPY 31,900；按 ECB 2026-10-20 EUR/JPY 177.34、EUR/CNY 7.4894 折算约 CNY 1,347.20。仅作日本地区价格参考，不是中国售价或成交价，未计跨境运输及进口费用。"
+    },
+    "highlights": []
+  },
+  {
+    "id": "sp-core-2026",
+    "slug": "sp-core-2026",
+    "title": "SP Bindings CORE 2025/26",
+    "model": "CORE",
+    "year": 2026,
+    "oneLiner": "SP 中级至进阶取向固定器，柔和脚感覆盖公园与全山地，FASTEC 快穿与传统绑带两种方式均可使用。",
+    "priceMin": 1951,
+    "priceMax": 1951,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/a80ef53282d9d82a8399421f4020e7c8ef01b37415b8cc5b3dd982a7e569f0fe.webp",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "editorialScores": null,
+    "brand": {
+      "slug": "sp-bindings",
+      "name": "SP Bindings",
+      "nameCn": "SP 固定器"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "terrain": [
+        "all-mountain",
+        "freestyle"
+      ],
+      "flexFeel": "soft",
+      "entrySystem": "fast-entry",
+      "mountingSystem": "附带树脂圆盘；官方说明该圆盘不兼容 Burton Channel，需另购铝合金圆盘。其他孔位请按随附圆盘核对。",
+      "bootCompatibility": "官方称适配常规单板雪鞋；尺码仅作参考，鞋型会影响实际贴合，需试装检查绑带覆盖与雪鞋居中。",
+      "bindingSizeGuide": "SP 官方 sLAB（CORE/TEAM/PEAK）尺码参考：S 22–25 cm、M 25–28 cm、L 28–30 cm、XL 30–32 cm；尺码区间有重叠，按雪鞋实物试装。",
+      "baseplateMaterial": "sLAB 铝合金底盘（型号说明）；具体合金牌号未在产品页核实。",
+      "selectionNotes": "官方定位覆盖公园至全山地，柔和、灵活的脚感面向中级至进阶滑手。快穿可从后方入脚，也可使用传统棘轮逐步收紧。购买前核对实际雪鞋与尺码、圆盘和雪板孔位。",
+      "compatibilitySources": "https://sp-bindings.jp/pages/sp-bindings-size-chart；https://sp-bindings.jp/pages/technology",
+      "sizeChart": [
+        {
+          "size": "S",
+          "mondo": "22–25"
+        },
+        {
+          "size": "M",
+          "mondo": "25–28"
+        },
+        {
+          "size": "L",
+          "mondo": "28–30"
+        },
+        {
+          "size": "XL",
+          "mondo": "30–32"
+        }
+      ],
+      "sizeChartCheckedAt": "2026-10-21",
+      "sizeChartSource": "https://sp-bindings.jp/pages/sp-bindings-size-chart",
+      "priceCheckedAt": "2026-10-21",
+      "officialPrice": "JPY 46,200（日本官网含税挂牌价）",
+      "priceMarket": "SP Bindings 日本官方商店 25/26 商品页；按 ECB 2026-10-20 EUR/JPY 与 EUR/CNY 汇率折算人民币",
+      "priceSource": "https://sp-bindings.jp/products/core",
+      "priceStatus": "日本官网 25/26 商品页含税标价 JPY 46,200；按 ECB 2026-10-20 EUR/JPY 177.34、EUR/CNY 7.4894 折算约 CNY 1,951.11。仅作日本地区价格参考，不是中国售价或成交价，未计跨境运输及进口费用。"
+    },
+    "highlights": []
+  },
+  {
+    "id": "sp-peak-2026",
+    "slug": "sp-peak-2026",
+    "title": "SP Bindings PEAK 2025/26",
+    "model": "PEAK",
+    "year": 2026,
+    "oneLiner": "面向大山、野雪与刻滑的响应型固定器，强调边刃抓地、高速稳定和双入口穿脱。",
+    "priceMin": 2648,
+    "priceMax": 2648,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/42c7d38ef9f288ca55f32f81363d29e796e0f28d9aebefe8c7827e55314b5926.webp",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "editorialScores": null,
+    "brand": {
+      "slug": "sp-bindings",
+      "name": "SP Bindings",
+      "nameCn": "SP 固定器"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "terrain": [
+        "freeride",
+        "carving"
+      ],
+      "entrySystem": "fast-entry",
+      "mountingSystem": "官方称兼容常见雪板安装系统；具体圆盘兼容性按随附圆盘确认。",
+      "bootCompatibility": "官方称兼容常规单板雪鞋；尺码仅作参考，鞋型会影响实际贴合，需试装检查绑带覆盖与雪鞋居中。",
+      "bindingSizeGuide": "SP 官方 sLAB（CORE/TEAM/PEAK）尺码参考：S 22–25 cm、M 25–28 cm、L 28–30 cm、XL 30–32 cm；尺码区间有重叠，按雪鞋实物试装。",
+      "baseplateMaterial": "sLAB 铝合金底盘；官方产品页未标注合金牌号。",
+      "selectionNotes": "官方定位包括深弯刻滑、粉雪、树间滑行与野雪，强调响应、边刃抓地和高速稳定；支持 FASTEC 快速穿脱与传统棘轮方式。尺码和雪板圆盘兼容性需按实物核对。",
+      "compatibilitySources": "https://sp-bindings.jp/pages/sp-bindings-size-chart；https://sp-bindings.jp/pages/technology",
+      "sizeChart": [
+        {
+          "size": "S",
+          "mondo": "22–25"
+        },
+        {
+          "size": "M",
+          "mondo": "25–28"
+        },
+        {
+          "size": "L",
+          "mondo": "28–30"
+        },
+        {
+          "size": "XL",
+          "mondo": "30–32"
+        }
+      ],
+      "sizeChartCheckedAt": "2026-10-21",
+      "sizeChartSource": "https://sp-bindings.jp/pages/sp-bindings-size-chart",
+      "priceCheckedAt": "2026-10-21",
+      "officialPrice": "JPY 62,700（日本官网含税挂牌价）",
+      "priceMarket": "SP Bindings 日本官方商店 25/26 商品页；按 ECB 2026-10-20 EUR/JPY 与 EUR/CNY 汇率折算人民币",
+      "priceSource": "https://sp-bindings.jp/products/peak",
+      "priceStatus": "日本官网 25/26 商品页含税标价 JPY 62,700；按 ECB 2026-10-20 EUR/JPY 177.34、EUR/CNY 7.4894 折算约 CNY 2,647.94。仅作日本地区价格参考，不是中国售价或成交价，未计跨境运输及进口费用。"
+    },
+    "highlights": []
+  },
+  {
+    "id": "sp-team-2026",
+    "slug": "sp-team-2026",
+    "title": "SP Bindings TEAM 2025/26",
+    "model": "TEAM",
+    "year": 2026,
+    "oneLiner": "面向公园、街道与雪场全域的快穿固定器，采用铝合金底盘、偏硬高背和缓震脚床。",
+    "priceMin": 2509,
+    "priceMax": 2509,
+    "priceCurrency": "CNY",
+    "coverUrl": "https://youpu.tos-cn-beijing.volces.com/product-images/mirror/1c9bae4c297aa3b543a74f22c353cd8fb6ccb0eb0a766447e7b11d6b48496d8e.webp",
+    "ratingOverall": null,
+    "ratingCount": 0,
+    "favoriteCount": 0,
+    "composite": null,
+    "editorialScores": null,
+    "brand": {
+      "slug": "sp-bindings",
+      "name": "SP Bindings",
+      "nameCn": "SP 固定器"
+    },
+    "categorySlug": "snowboard-binding",
+    "specs": {
+      "terrain": [
+        "freestyle",
+        "all-mountain"
+      ],
+      "entrySystem": "fast-entry",
+      "mountingSystem": "官方称兼容常见雪板安装系统；具体圆盘兼容性按随附圆盘确认。",
+      "bootCompatibility": "官方称兼容常规单板雪鞋；尺码仅作参考，鞋型会影响实际贴合，需试装检查绑带覆盖与雪鞋居中。",
+      "bindingSizeGuide": "SP 官方 sLAB（CORE/TEAM/PEAK）尺码参考：S 22–25 cm、M 25–28 cm、L 28–30 cm、XL 30–32 cm；尺码区间有重叠，按雪鞋实物试装。",
+      "baseplateMaterial": "轻量铝合金底盘；官方产品页未标注合金牌号。",
+      "highback": "官方介绍为直线弯曲取向高背，强调快速控制；具体材料未核实。",
+      "cushioning": "倾斜缓震脚床；具体材料与角度未核实。",
+      "selectionNotes": "官方描述覆盖公园、街道及雪场全域，偏向有响应的操控与跳台落地缓冲。可用 FASTEC 快速穿脱或传统棘轮方式；请按雪鞋实际试装选码。",
+      "compatibilitySources": "https://sp-bindings.jp/pages/sp-bindings-size-chart；https://sp-bindings.jp/pages/technology",
+      "sizeChart": [
+        {
+          "size": "S",
+          "mondo": "22–25"
+        },
+        {
+          "size": "M",
+          "mondo": "25–28"
+        },
+        {
+          "size": "L",
+          "mondo": "28–30"
+        },
+        {
+          "size": "XL",
+          "mondo": "30–32"
+        }
+      ],
+      "sizeChartCheckedAt": "2026-10-21",
+      "sizeChartSource": "https://sp-bindings.jp/pages/sp-bindings-size-chart",
+      "priceCheckedAt": "2026-10-21",
+      "officialPrice": "JPY 59,400（日本官网含税挂牌价）",
+      "priceMarket": "SP Bindings 日本官方商店 25/26 商品页；按 ECB 2026-10-20 EUR/JPY 与 EUR/CNY 汇率折算人民币",
+      "priceSource": "https://sp-bindings.jp/products/team",
+      "priceStatus": "日本官网 25/26 商品页含税标价 JPY 59,400；按 ECB 2026-10-20 EUR/JPY 177.34、EUR/CNY 7.4894 折算约 CNY 2,508.57。仅作日本地区价格参考，不是中国售价或成交价，未计跨境运输及进口费用。"
+    },
+    "highlights": []
   },
   {
     "id": "01a12e89-611b-74f4-84a8-f399338c4365",
@@ -24163,11 +25088,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 70,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 8.5,
+      "comfort": 6.8,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "union",
@@ -24181,40 +25106,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "stiff",
       "mountingSystem": "Camber Disk + Washer；兼容 4x4、4x2 与 Burton Channel",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Union 官方表：男靴 S US 5.5–7.5 / M 8–10 / L 10.5–13；女靴 S 4.5–6.5 / M 7–9；具体按官方尺码表核对",
       "baseplateMaterial": "S7 Duraflex CB 碳纤维注入尼龙底盘；Vaporlite HD 2.0 防水减震衬套；3D 挤压铝后跟杯",
       "ankleStrap": "Exoframe 5.0 三轴渐进弯曲脚踝绑带",
       "toeStrap": "TS 6.0 Dual-Layer UltraGrip 双层防滑脚趾绑带",
       "buckles": "Magnesium S1 镁合金棘轮扣，钢制底座",
-      "bindingSizeGuide": "Union 官方表：男靴 S US 5.5–7.5 / M 8–10 / L 10.5–13；女靴 S 4.5–6.5 / M 7–9；具体按官方尺码表核对",
       "highback": "S22 Duraflex CB 高背",
       "highbackAdjustment": "Cam-Lock FLAD 前倾调节；Pins + Quick-Lock 免工具绑带调节",
       "cushioning": "Non-Stick HP EVA 防积雪脚床；Vaporlite HD 2.0 衬套；3° Canting",
       "warranty": "底盘与后跟杯终身保修；其他部件 1 年保修",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "10.5 - 13",
+          "uk": "9.5 - 12",
+          "eu": "43.5 - 46",
+          "mondo": "28.5 - 31"
+        },
+        {
+          "size": "X-LARGE",
+          "usMen": "13 - 15",
+          "uk": "12 - 14",
+          "eu": "46 - 48",
+          "mondo": "31 - 33"
+        }
+      ],
+      "priceCheckedAt": "2026-10-14",
       "officialPrice": "USD 399.95",
       "priceMarket": "Union Binding Company 日本官方商店；2027 款商品页",
-      "priceCheckedAt": "2026-10-14",
       "priceSource": "https://unionbindingcompany.com/products/union-atlas-mens-snowboard-binding-2027",
       "priceStatus": "Union 日本官方商店 2027 款 Atlas 页面标价 JPY 53,900（含税），按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 2,276.60。页面尺码为 S/M/L，商品当时显示售罄；运费结账计算。日本官方店折算参考，不是中国售价或成交价，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "8"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6127-771c-b59e-e7edac25b6b0",
@@ -24232,11 +25173,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 71.2,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 9,
+      "comfort": 6.8,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "union",
@@ -24249,35 +25190,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "pro-stiff",
       "mountingSystem": "Camber Disk + Washer；兼容 4x4、4x2 与 Burton Channel",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Union 官方尺码表：男靴 S US 6–8 / M 8.5–10.5 / L 11–13；女靴 S 5–6 / M 6.5–8.5 / L 9–11",
       "baseplateMaterial": "S7 Duraflex CB 碳纤维注入尼龙底盘；Vaporlite HD 2.0 防水减震衬套",
       "ankleStrap": "Hybrid 2.0 TPE Core，V 型结构随鞋靴弯曲并兼顾支撑舒适",
       "toeStrap": "TS 6.0 Dual-Layer UltraGrip 双层防滑脚趾绑带",
       "buckles": "Magnesium S1 镁合金卡扣，铝合金底座",
-      "bindingSizeGuide": "Union 官方尺码表：男靴 S US 6–8 / M 8.5–10.5 / L 11–13；女靴 S 5–6 / M 6.5–8.5 / L 9–11",
       "highback": "S14 Duraflex CB 碳纤维注入尼龙高背",
       "highbackAdjustment": "Integrated Dial 一体式前倾角调节",
       "cushioning": "Vaporlite HD 2.0 衬套、Forged Carbon 锻造碳踏板与 Non-Stick EVA；3° Canting",
       "warranty": "底盘与后跟杯终身保修；其余部件 2 年保修",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "10.5 - 13",
+          "uk": "9.5 - 12",
+          "eu": "43.5 - 46",
+          "mondo": "28.5 - 31"
+        },
+        {
+          "size": "X-LARGE",
+          "usMen": "13 - 15",
+          "uk": "12 - 14",
+          "eu": "46 - 48",
+          "mondo": "31 - 33"
+        }
+      ],
+      "priceCheckedAt": "2026-10-14",
       "officialPrice": "USD 499.95",
       "priceMarket": "Union Binding Company 日本官方商店；2027 款商品页",
-      "priceCheckedAt": "2026-10-14",
       "priceSource": "https://unionbindingcompany.com/products/union-atlas-pro-unisex-snowboard-binding-2027",
       "priceStatus": "Union 日本官方商店 2027 款 Atlas Pro 页面标价 JPY 69,300（含税），按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 2,927.05。页面尺码为 S/M/L，商品当时显示售罄；运费结账计算。日本官方店折算参考，不是中国售价或成交价，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "专业硬朗"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6133-774d-8141-0d165637e6f6",
@@ -24295,11 +25257,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 68.9,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 8.1,
+      "comfort": 6.8,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "union",
@@ -24313,40 +25275,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "stiff",
       "mountingSystem": "Camber Disk；兼容 4x4、4x2 与 Burton Channel",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Union 官方男靴尺码：S US 5.5–7.5 / M 8–10 / L 10.5–13 / XL 13–15",
       "baseplateMaterial": "S9 Duraflex ST 底盘；Molecular Bushing Suspension System 缓震衬套；3D 挤压铝后跟杯",
       "ankleStrap": "Exoframe 6.0 PU 芯脚踝绑带，兼顾贴合与缓冲",
       "toeStrap": "TS 5.0 UltraGrip 多位置防滑脚趾绑带",
       "buckles": "Magnesium S2 镁合金棘轮扣，钢制底座",
-      "bindingSizeGuide": "Union 官方男靴尺码：S US 5.5–7.5 / M 8–10 / L 10.5–13 / XL 13–15",
       "highback": "S19 Duraflex ST 分层结构高背",
       "highbackAdjustment": "Cam-Lock FLAD 前倾调节；EXO Quick-Lock 免工具绑带调节",
       "cushioning": "Non-Stick HP EVA 防积雪脚床；Molecular Bushing Suspension System；3° Canting",
       "warranty": "底盘与后跟杯终身保修；其他部件 1 年保修",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "10.5 - 13",
+          "uk": "9.5 - 12",
+          "eu": "43.5 - 46",
+          "mondo": "28.5 - 31"
+        },
+        {
+          "size": "X-LARGE",
+          "usMen": "13 - 15",
+          "uk": "12 - 14",
+          "eu": "46 - 48",
+          "mondo": "31 - 33"
+        }
+      ],
+      "priceCheckedAt": "2026-10-14",
       "officialPrice": "USD 349.95",
       "priceMarket": "Union Binding Company 日本官方商店；2027 款商品页",
-      "priceCheckedAt": "2026-10-14",
       "priceSource": "https://unionbindingcompany.com/products/union-force-mens-snowboard-binding-2027",
       "priceStatus": "Union 日本官方商店 2027 款 Force 页面标价 JPY 46,200（含税），按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 1,951.37。页面尺码为 S/M/L/XL，商品当时显示售罄；运费结账计算。日本官方店折算参考，不是中国售价或成交价，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "7"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "偏硬"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6141-7d30-904e-e1ca00b0fa83",
@@ -24364,11 +25342,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 66.7,
     "editorialScores": {
-      "value": 5,
-      "comfort": 7.1,
       "response": 7.6,
+      "comfort": 7.1,
+      "versatility": 6.8,
       "convenience": 6.2,
-      "versatility": 6.8
+      "value": 5
     },
     "brand": {
       "slug": "union",
@@ -24382,40 +25360,56 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "medium",
       "mountingSystem": "Camber Disk；兼容 4x4、4x2 与 Burton Channel",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "Union 官方男靴尺码：S US 5.5–7.5 / M 8–10 / L 10.5–13；官方页面当前列出 S、M、L",
       "baseplateMaterial": "S4 Duraflex ST 底盘；Multi-Density Thermoformed EVA 缓震衬套；3D 挤压铝后跟杯",
       "ankleStrap": "Exoframe 4.0 轻量脚踝绑带",
       "toeStrap": "TS 2.1 UltraGrip 多位置防滑脚趾绑带，适配不同品牌雪鞋",
       "buckles": "Aluminum S2 铝合金棘轮扣，钢制底座",
-      "bindingSizeGuide": "Union 官方男靴尺码：S US 5.5–7.5 / M 8–10 / L 10.5–13；官方页面当前列出 S、M、L",
       "highback": "S1 Duraflex ST 高背",
       "highbackAdjustment": "Cam-Lock FLAD 前倾调节；EXO Quick-Lock 免工具绑带调节",
       "cushioning": "Multi-Density Thermoformed EVA 缓震；3° Canting",
       "warranty": "底盘与后跟杯终身保修；其他部件 1 年保修",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "10.5 - 13",
+          "uk": "9.5 - 12",
+          "eu": "43.5 - 46",
+          "mondo": "28.5 - 31"
+        },
+        {
+          "size": "X-LARGE",
+          "usMen": "13 - 15",
+          "uk": "12 - 14",
+          "eu": "46 - 48",
+          "mondo": "31 - 33"
+        }
+      ],
+      "priceCheckedAt": "2026-10-14",
       "officialPrice": "JPY 41800",
       "priceMarket": "Union Binding Company 日本官方商店；2027 款官方商品页",
-      "priceCheckedAt": "2026-10-14",
       "priceSource": "https://unionbindingcompany.com/products/union-force-classic-mens-snowboard-binding-2027",
       "priceStatus": "Union 日本官方商店 2027 款 Force Classic 页面标价 JPY 41,800（含日本消费税），按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 1,765.53。页面列出 S/M/L 并显示售罄；运费结账计算。日本官方店折算参考，不是中国售价或成交价，跨境运输及进口费用未计，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flex",
-        "label": "硬度",
-        "value": "6"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-614e-7879-9479-fc3a2b8c5a36",
@@ -24433,11 +25427,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 63.9,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 6.4,
+      "comfort": 6.8,
+      "versatility": 7.2,
       "convenience": 6.2,
-      "versatility": 7.2
+      "value": 5
     },
     "brand": {
       "slug": "union",
@@ -24450,35 +25444,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "soft",
       "mountingSystem": "Union Mini Disk；兼容 4x2 与 Burton Channel；不兼容 4x4 圆盘安装",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表",
       "baseplateMaterial": "S6 Duraflex ST；中等偏软自由式底盘，提供较自然的板面弯曲",
       "ankleStrap": "Forma Hybrid Memory Core，外侧响应、内侧带缓冲舒适衬垫",
       "toeStrap": "TS 2.1 UltraGrip，多位置安装，可适配不同品牌雪鞋",
       "buckles": "Aluminum S2 铝合金卡扣，钢制底座",
-      "bindingSizeGuide": "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表",
       "highback": "S10 Duraflex ST",
       "highbackAdjustment": "Classic 前倾调节，需使用 3 号螺丝刀",
       "cushioning": "OTE Fused Vaporlite 2.0 缓震衬套；Mini Disk 结构保留板面自然弯曲",
       "warranty": "底盘与后跟杯终身保修；其余部件 1 年保修",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 Mini Disk 支持 2x4 与 Channel，不支持 4x4 或旧 3D；不能套用 Universal Disk V2 的兼容范围。",
       "compatibilitySources": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "* - 5.5",
+          "usWomen": "4 - 6.5",
+          "uk": "2 - 4.5",
+          "eu": "34 - 37",
+          "mondo": "21 - 23.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        }
+      ],
+      "priceCheckedAt": "2026-10-14",
       "officialPrice": "JPY 42900",
       "priceMarket": "Union Binding Company 日本官方商店；2027 款官方商品页",
-      "priceCheckedAt": "2026-10-14",
       "priceSource": "https://unionbindingcompany.com/en-ca/products/union-legacy-womens-snowboard-binding-2027",
       "priceStatus": "Union 日本官方商店 2027 款 Legacy 页面标价 JPY 42,900（含日本消费税），按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 1,811.99。页面列出 S/M/L 并显示售罄；运费结账计算。日本官方店折算参考，不是中国售价或成交价，跨境运输及进口费用未计，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "柔软"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-615c-7a51-9be6-c0043e202294",
@@ -24496,11 +25505,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 68.2,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 7.8,
+      "comfort": 6.8,
+      "versatility": 7.6,
       "convenience": 6.2,
-      "versatility": 7.6
+      "value": 5
     },
     "brand": {
       "slug": "union",
@@ -24513,35 +25522,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "mid-stiff",
       "mountingSystem": "Camber Disk；兼容 4x4、4x2 与 Burton Channel",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表",
       "baseplateMaterial": "S9 Duraflex ST 高强度底盘；Molecular Bushing Suspension System",
       "ankleStrap": "Exoframe 6.0 PU Core，缓冲舒适与快速响应结合",
       "toeStrap": "TS 5.0 UltraGrip，多位置安装、防滑热塑材料",
       "buckles": "Magnesium S2 镁合金卡扣，钢制底座",
-      "bindingSizeGuide": "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表",
       "highback": "S19 Duraflex ST 分层高背，兼顾边刃响应与扭转柔韧",
       "highbackAdjustment": "Cam-Lock 前倾角调节",
       "cushioning": "Molecular Bushing 悬挂衬套用于减震与吸收冲击",
       "warranty": "底盘与后跟杯终身保修；其余部件 2 年保修",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。",
       "compatibilitySources": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "* - 5.5",
+          "usWomen": "4 - 6.5",
+          "uk": "2 - 4.5",
+          "eu": "34 - 37",
+          "mondo": "21 - 23.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        }
+      ],
+      "priceCheckedAt": "2026-10-14",
       "officialPrice": "JPY 46200",
       "priceMarket": "Union Binding Company 日本官方商店；2027 款官方商品页",
-      "priceCheckedAt": "2026-10-14",
       "priceSource": "https://jp.unionbindingcompany.com/products/union-trilogy-womens-snowboard-binding-2027",
       "priceStatus": "Union 日本官方商店 2027 款 Trilogy 页面标价 JPY 46,200（含日本消费税），按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 1,951.37。页面列出 S/M/L 并显示售罄；运费结账计算。日本官方店折算参考，不是中国售价或成交价，跨境运输及进口费用未计，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中偏硬"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6169-7ed8-ae1d-392f8e2bf91a",
@@ -24559,11 +25583,11 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
     "favoriteCount": 0,
     "composite": 66.2,
     "editorialScores": {
-      "value": 5,
-      "comfort": 6.8,
       "response": 7.3,
+      "comfort": 6.8,
+      "versatility": 7.2,
       "convenience": 6.2,
-      "versatility": 7.2
+      "value": 5
     },
     "brand": {
       "slug": "union",
@@ -24576,35 +25600,50 @@ export const CATALOG_SNAPSHOT: readonly CatalogSnapshotItem[] = [
       "flexFeel": "medium",
       "mountingSystem": "非对称 Mini Disk；兼容 4x2 与 Burton Channel",
       "bootCompatibility": "常规单板雪鞋需按本固定器尺码表试装；绑带、鞋底外形和前后脚突出量均须核对，不保证任意品牌任意鞋款匹配。",
+      "bindingSizeGuide": "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表",
       "baseplateMaterial": "S11 Duraflex ST 非对称 Mini Disk 底盘；Moleculer 衬套与 TPE 外底",
       "ankleStrap": "Hybrid 1.0 PU Core，Exoframe 外层搭配柔软舒适内衬",
       "toeStrap": "TS 5.0 UltraGrip，多位置调节、防滑热塑材料",
       "buckles": "Magnesium S1 镁合金卡扣，钢制底座",
-      "bindingSizeGuide": "女款官方参考：S US 女靴 4–6.5 / M 6.5–8.5 / L 9–11；另有跨性别尺码表",
       "highback": "S25 Ultra Duraflex ST，预压 6° 前倾",
       "highbackAdjustment": "Integrated 2-Stage 前倾角微调，使用 3 号螺丝刀",
       "cushioning": "Moleculer 衬套与 TPE 外底提供缓震和回弹；Union 标注固定器硬度 6/10",
       "warranty": "底盘与后跟杯终身保修；其余部件 2 年保修",
       "selectionNotes": "先按雪鞋品牌和实际尺码选固定器，再检查后跟贴合、绑带有效长度、鞋头/鞋跟居中；区间重叠或边界码要试装。雪板安装孔位另按随附圆盘核对。 Mini Disk 支持 2x4 与 Channel，不支持 4x4 或旧 3D；不能套用 Universal Disk V2 的兼容范围。",
       "compatibilitySources": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027；https://eu.unionbindingcompany.com/pages/disk-guide",
+      "sizeChart": [
+        {
+          "size": "SMALL",
+          "usMen": "* - 5.5",
+          "usWomen": "4 - 6.5",
+          "uk": "2 - 4.5",
+          "eu": "34 - 37",
+          "mondo": "21 - 23.5"
+        },
+        {
+          "size": "MEDIUM",
+          "usMen": "5.5 - 7.5",
+          "usWomen": "6.5 - 8.5",
+          "uk": "4.5 - 6.5",
+          "eu": "37 - 40.5",
+          "mondo": "23.5 - 25.5"
+        },
+        {
+          "size": "LARGE",
+          "usMen": "8 - 10",
+          "usWomen": "9 - 11",
+          "uk": "7 - 9",
+          "eu": "41 - 43",
+          "mondo": "26 - 28"
+        }
+      ],
+      "priceCheckedAt": "2026-10-14",
       "officialPrice": "USD 329.95",
       "priceMarket": "Union Binding Company 日本官方商店；女款 2027 款商品页",
-      "priceCheckedAt": "2026-10-14",
       "priceSource": "https://unionbindingcompany.com/products/union-ultra-womens-snowboard-binding-2027",
       "priceStatus": "Union 日本官方商店女款 2027 Ultra 页面标价 JPY 47,300（含税），按 ECB 2026-10-14 EUR/JPY 177.39、EUR/CNY 7.4925 折算 CNY 1,997.83。页面尺码为 S/M/L，商品当时显示售罄；运费结账计算。日本官方店折算参考，不是中国售价或成交价，库存会变化。"
     },
-    "highlights": [
-      {
-        "key": "entrySystem",
-        "label": "穿脱系统",
-        "value": "传统绑带"
-      },
-      {
-        "key": "flexFeel",
-        "label": "硬度手感",
-        "value": "中等"
-      }
-    ]
+    "highlights": []
   },
   {
     "id": "01a12e89-6178-7698-944d-dd7b5771c793",

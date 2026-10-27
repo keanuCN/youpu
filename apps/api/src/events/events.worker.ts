@@ -8,6 +8,8 @@ import { EVENTS_STREAM } from './events.service';
 
 const GROUP = 'ingest';
 const BATCH_SIZE = 200;
+const EVENT_RETENTION_DAYS = 180;
+const PRUNE_INTERVAL_MS = 24 * 60 * 60 * 1000;
 
 type StreamEntries = Array<[string, Array<[string, string[]]>]>;
 
@@ -18,6 +20,7 @@ export class EventsIngestWorker implements OnModuleInit, OnModuleDestroy {
   private readonly consumer = `api-${process.pid}`;
   private stopping = false;
   private loopPromise: Promise<void> | null = null;
+  private nextPruneAt = 0;
 
   constructor(
     @Inject(REDIS) private readonly redis: Redis,
@@ -37,6 +40,10 @@ export class EventsIngestWorker implements OnModuleInit, OnModuleDestroy {
     await this.ensureGroup();
     while (!this.stopping) {
       try {
+        if (Date.now() >= this.nextPruneAt) {
+          await this.pruneExpiredEvents();
+          this.nextPruneAt = Date.now() + PRUNE_INTERVAL_MS;
+        }
         const got = (await this.redis.xreadgroup(
           'GROUP',
           GROUP,
@@ -59,6 +66,19 @@ export class EventsIngestWorker implements OnModuleInit, OnModuleDestroy {
     }
   }
 
+  private async pruneExpiredEvents(): Promise<void> {
+    const cutoff = new Date(Date.now() - EVENT_RETENTION_DAYS * 24 * 60 * 60 * 1000);
+    try {
+      const deleted = await this.prisma.$executeRaw`
+        DELETE FROM event WHERE created_at < ${cutoff}
+      `;
+      if (deleted > 0) this.logger.log(`已清理 ${deleted} 条超过 ${EVENT_RETENTION_DAYS} 天的埋点事件`);
+    } catch (err) {
+      this.logger.warn(`埋点保留期清理失败：${(err as Error).message}`);
+      this.nextPruneAt = Date.now() + 60 * 60 * 1000;
+    }
+  }
+
   private async ensureGroup(): Promise<void> {
     try {
       await this.redis.xgroup('CREATE', EVENTS_STREAM, GROUP, '$', 'MKSTREAM');
@@ -76,6 +96,7 @@ export class EventsIngestWorker implements OnModuleInit, OnModuleDestroy {
       anonId: string;
       accountId: string | null;
       name: string;
+      region: string;
       path: string | null;
       props: Prisma.InputJsonValue;
       createdAt: Date;
@@ -94,11 +115,13 @@ export class EventsIngestWorker implements OnModuleInit, OnModuleDestroy {
           path?: string;
           props: Record<string, unknown>;
           ts: number;
+          region?: string;
         };
         rows.push({
           anonId: parsed.anonId,
           accountId: parsed.accountId ?? null,
           name: parsed.name,
+          region: parsed.region ?? '未知',
           path: parsed.path ?? null,
           props: toJsonInput(parsed.props),
           // 客户端时间可能不可信，created_at 由服务端接收时间生成（ts 留 props 备查）

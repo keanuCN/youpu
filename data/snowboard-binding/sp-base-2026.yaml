@@ -1,0 +1,45 @@
+slug: sp-base-2026
+category: snowboard-binding
+brand: sp-bindings
+model: BASE
+year: 2026
+title: SP Bindings BASE 2025/26
+one_liner: SP 固定器基础款，配置与定位简洁，采用常规绑带穿脱；品牌当前目录提供多种尺码。
+price:
+  min: 1161.38
+  max: 1161.38
+  currency: CNY
+specs:
+  terrain:
+    - all-mountain
+  entrySystem: strap
+  mountingSystem: 官方称兼容常见雪板安装系统；具体圆盘兼容性按随附圆盘确认。
+  bootCompatibility: 官方称兼容常规单板雪鞋；尺码仅作参考，鞋型会影响实际贴合，需试装检查绑带覆盖与雪鞋居中。
+  bindingSizeGuide: SP 官方 FT4（BASE/BASE+）尺码参考：S 22–25 cm、M 25–27.5 cm、L 27.5–29.5 cm、XL 29.5–32 cm；尺码区间有重叠，按雪鞋实物试装。
+  baseplateMaterial: FT4 塑料底盘（官方尺码页型号说明）。
+  selectionNotes: 官方将 BASE 描述为简洁、可靠的基础型号。品牌说明 BASE 不支持 FASTEC 快速入口，应按传统绑带方式穿脱。尺码范围仅作参考；应以雪鞋实物试装和雪板圆盘核对为准。
+  compatibilitySources: https://sp-bindings.jp/pages/sp-bindings-size-chart；https://sp-bindings.jp/pages/technology
+  sizeChart:
+    - { size: S, mondo: 22–25 }
+    - { size: M, mondo: 25–27.5 }
+    - { size: L, mondo: 27.5–29.5 }
+    - { size: XL, mondo: 29.5–32 }
+  sizeChartCheckedAt: 2026-10-21
+  sizeChartSource: https://sp-bindings.jp/pages/sp-bindings-size-chart
+  priceCheckedAt: 2026-10-21
+  officialPrice: JPY 27,500（日本官网含税挂牌价）
+  priceMarket: SP Bindings 日本官方商店 25/26 商品页；按 ECB 2026-10-20 EUR/JPY 与 EUR/CNY 汇率折算人民币
+  priceSource: https://sp-bindings.jp/products/base
+  priceStatus: 日本官网 25/26 商品页含税标价 JPY 27,500；按 ECB 2026-10-20 EUR/JPY 177.34、EUR/CNY 7.4894 折算约 CNY 1,161.38。仅作日本地区价格参考，不是中国售价或成交价，未计跨境运输及进口费用。
+  exchangeRate: EUR/JPY 177.34；EUR/CNY 7.4894（ECB 2026-10-20）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+images:
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/092839a5ab0b638e82984a72ac5a69f3f47d9e9fd0a96c1c86d09c5543d55dc8.webp
+    kind: face
+    alt: SP Bindings BASE 固定器官方商品图
+    source: SP Bindings 日本官方商品页公开图片；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://sp-bindings.jp/products/base
+status: published

@@ -34,6 +34,19 @@ export default function GuidesPage() {
           </div>
           <span className="mono-label shrink-0 text-foreground group-hover:text-primary">浏览单板科普 →</span>
         </Link>
+        <Link
+          href="/guides/alpine-ski"
+          className="group mt-3 flex flex-col gap-4 border border-border p-5 transition-colors hover:border-foreground sm:flex-row sm:items-center sm:justify-between sm:p-6"
+        >
+          <div>
+            <p className="mono-label text-primary">双板 · ALPINE SKI</p>
+            <h3 className="mt-2 text-xl font-medium tracking-tight">双板类型、参数与选购科普</h3>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              认识道内卡宾、全山、自由式与野雪板，读懂板腰、转弯半径、拱形和摇臂，并检查雪鞋与固定器兼容。
+            </p>
+          </div>
+          <span className="mono-label shrink-0 text-foreground group-hover:text-primary">浏览双板科普 →</span>
+        </Link>
       </section>
     </main>
   );

@@ -429,6 +429,7 @@ const HIDDEN_CATEGORY_GROUPS = new Set([
   "running",
   "fitness",
   "diving",
+  "motorcycle",
   "digital-accessories",
 ]);
 

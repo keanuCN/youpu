@@ -40,7 +40,7 @@ function GuideQuickNav() {
             <li><a href="#style-park" className="transition-colors hover:text-primary">公园</a></li>
             <li><a href="#style-jumps" className="transition-colors hover:text-primary">跳台 / Big Air</a></li>
             <li><a href="#style-halfpipe" className="transition-colors hover:text-primary">半管</a></li>
-            <li><a href="#style-freeride" className="transition-colors hover:text-primary">自由骑与粉雪</a></li>
+            <li><a href="#style-freeride" className="transition-colors hover:text-primary">野雪与粉雪</a></li>
             <li><a href="#field-reports" className="transition-colors hover:text-primary">公开实测样本</a></li>
           </ul>
         </li>

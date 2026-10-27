@@ -107,4 +107,12 @@ IP 与域名前台分别构建到 `.next-20261020-36b06a3-ip` 和 `.next-2026102
 
 原 Next 配置备份：`/opt/youpu/apps/web/next.config.mjs.before-domain-20261012`；HTTP nginx 备份：`/etc/nginx/conf.d/youpu.asia.conf.before-tls`。原有 IP 入口的配置和构建未被替换。
 
+## 2026-10-23 备案完成后公网复测
+
+- 火山引擎备案控制台“互联网信息服务”列表显示网站 `youpu.asia`、服务备案号 `津ICP备2026009482号-3`、接入 IP `115.190.156.88`、状态“正常”；已结束订单显示备案完成，更新时间为 2026-10-23 16:00（北京时间）。
+- 公共 DNS 的 A 记录及 `www` 均指向 `115.190.156.88`。从外部网络请求根域名，HTTP 仍返回 `Server: Suzaku` 和 302 到 `https://webblock.volcengine.com`；HTTPS 在 TLS 握手阶段被重置。
+- 服务器侧只读核验：Nginx 配置检查通过，`nginx`、`youpu-domain-web`、`youpu-api` 均 active；本机带正式 Host/SNI 请求 HTTPS 首页返回 200，IP 内测入口 `/youpu/` 返回 200。证书包含根域名与 `www`，有效期至 2027-01-10。
+- 结论：应用、源站 Nginx、证书和 DNS 均正常，失败发生在公网边缘层，尚未解除拦截；本次未改服务器配置、应用或生产数据。火山引擎官方[备案完成 FAQ](https://docs.volcengine.com/docs/6428/141467)说明备案信息跨系统同步可能延迟；官方[接入备案 FAQ](https://docs.volcengine.com/docs/Record/AccessFilingFAQ?lang=zh)说明接入完成并通过审核后会尽快解除阻断。
+- 后续：等待同步后复测 HTTP/HTTPS；若仍被拦截，向火山引擎备案支持提交域名、服务备案号、完成时间、HTTP 响应头和 TLS 重置结果，请其核查边缘拦截状态。本记录不含个人实名资料。
+
 仓库旧域名部署日志、历史数据抓取 `snapshot_url` 保留作为来源记录；它们不是当前正式站配置。

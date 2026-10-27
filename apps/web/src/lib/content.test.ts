@@ -4,6 +4,7 @@ import test from "node:test";
 import type { ProductDetail, ProductListItem } from "@youpu/schema";
 
 import { GEAR, gearOfCategory } from "../data/boards";
+import { productRefForGear } from "./api";
 import {
   getCategoryProducts,
   getCompareProducts,
@@ -47,6 +48,14 @@ const apiDetail: ProductDetail = {
 const failingFetcher: typeof fetch = async () => {
   throw new Error("API offline");
 };
+
+test("uses the catalog slug for interactions when model text differs from the URL", () => {
+  const gear = mapProductListItem({ ...apiItem, slug: "gray-sonicalmach-2027", model: "SONICAL MACH", brand: { slug: "gray", name: "GRAY" }, year: 2027 });
+  assert.equal(productRefForGear(gear), "gray-sonicalmach-2027");
+  const offline = GEAR.find(item => item.productSlug === "gray-sonicalmach-2027");
+  assert.ok(offline);
+  assert.equal(productRefForGear(offline), "gray-sonicalmach-2027");
+});
 
 test("defaults to the local content pack", () => {
   assert.equal(resolveContentSource({}), "pack");

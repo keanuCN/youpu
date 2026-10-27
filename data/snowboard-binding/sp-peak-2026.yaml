@@ -1,0 +1,46 @@
+slug: sp-peak-2026
+category: snowboard-binding
+brand: sp-bindings
+model: PEAK
+year: 2026
+title: SP Bindings PEAK 2025/26
+one_liner: 面向大山、野雪与刻滑的响应型固定器，强调边刃抓地、高速稳定和双入口穿脱。
+price:
+  min: 2647.94
+  max: 2647.94
+  currency: CNY
+specs:
+  terrain:
+    - freeride
+    - carving
+  entrySystem: fast-entry
+  mountingSystem: 官方称兼容常见雪板安装系统；具体圆盘兼容性按随附圆盘确认。
+  bootCompatibility: 官方称兼容常规单板雪鞋；尺码仅作参考，鞋型会影响实际贴合，需试装检查绑带覆盖与雪鞋居中。
+  bindingSizeGuide: SP 官方 sLAB（CORE/TEAM/PEAK）尺码参考：S 22–25 cm、M 25–28 cm、L 28–30 cm、XL 30–32 cm；尺码区间有重叠，按雪鞋实物试装。
+  baseplateMaterial: sLAB 铝合金底盘；官方产品页未标注合金牌号。
+  selectionNotes: 官方定位包括深弯刻滑、粉雪、树间滑行与野雪，强调响应、边刃抓地和高速稳定；支持 FASTEC 快速穿脱与传统棘轮方式。尺码和雪板圆盘兼容性需按实物核对。
+  compatibilitySources: https://sp-bindings.jp/pages/sp-bindings-size-chart；https://sp-bindings.jp/pages/technology
+  sizeChart:
+    - { size: S, mondo: 22–25 }
+    - { size: M, mondo: 25–28 }
+    - { size: L, mondo: 28–30 }
+    - { size: XL, mondo: 30–32 }
+  sizeChartCheckedAt: 2026-10-21
+  sizeChartSource: https://sp-bindings.jp/pages/sp-bindings-size-chart
+  priceCheckedAt: 2026-10-21
+  officialPrice: JPY 62,700（日本官网含税挂牌价）
+  priceMarket: SP Bindings 日本官方商店 25/26 商品页；按 ECB 2026-10-20 EUR/JPY 与 EUR/CNY 汇率折算人民币
+  priceSource: https://sp-bindings.jp/products/peak
+  priceStatus: 日本官网 25/26 商品页含税标价 JPY 62,700；按 ECB 2026-10-20 EUR/JPY 177.34、EUR/CNY 7.4894 折算约 CNY 2,647.94。仅作日本地区价格参考，不是中国售价或成交价，未计跨境运输及进口费用。
+  exchangeRate: EUR/JPY 177.34；EUR/CNY 7.4894（ECB 2026-10-20）
+  exchangeRateSource: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+images:
+  - url: https://youpu.tos-cn-beijing.volces.com/product-images/mirror/42c7d38ef9f288ca55f32f81363d29e796e0f28d9aebefe8c7827e55314b5926.webp
+    kind: face
+    alt: SP Bindings PEAK 固定器官方商品图
+    source: SP Bindings 日本官方商品页公开图片；展示授权状态待核
+    sort_order: 0
+data_source:
+  kind: official
+  origin_url: https://sp-bindings.jp/products/peak
+status: published

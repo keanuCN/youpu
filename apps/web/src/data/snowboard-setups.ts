@@ -32,7 +32,7 @@ export const SNOWBOARD_SETUPS = [
     checks: 'Cafe Racer 为持续款，2026 是本站档案年份，不代表官方每年换代。按体重与鞋底外形选尺寸，较深倾角时再核对鞋头、鞋跟突出量。Ion BOA 是普通绑带靴，不能与 Ion Step On 混淆。',
   },
   {
-    id: 'freeride', title: '软雪与自由滑行：定向玩法',
+    id: 'freeride', title: '软雪与野雪：定向玩法',
     audience: '在有管理的雪场地形中探索软雪、树林与侧坡，具备速度控制能力的骑手。',
     products: ['jones-mind-expander-2-0-2027', 'nitro-team-pro-binding-2027', 'salomon-echo-dual-boa-2027'],
     reason: 'Mind Expander 2.0 的定向软雪思路与 Team Pro、Echo 组成供比较的候选方案，重点检查浮力需求与脚部支撑。',

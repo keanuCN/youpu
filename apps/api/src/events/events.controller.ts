@@ -4,6 +4,7 @@ import { OptionalAuthGuard } from '../auth/auth.guard';
 import type { AuthRequest } from '../auth/auth.types';
 import { ZodValidationPipe } from '../common/zod-validation.pipe';
 import { EventsService } from './events.service';
+import { resolveVisitorRegion } from './visitor-region';
 
 @Controller('events')
 export class EventsController {
@@ -13,7 +14,7 @@ export class EventsController {
   @HttpCode(202)
   @UseGuards(OptionalAuthGuard)
   async ingest(@Body(new ZodValidationPipe(eventBatchSchema)) batch: EventBatch, @Req() request: AuthRequest) {
-    const accepted = await this.events.ingest(batch, request.account?.id);
+    const accepted = await this.events.ingest(batch, request.account?.id, resolveVisitorRegion(request.ip));
     return { accepted };
   }
 }
