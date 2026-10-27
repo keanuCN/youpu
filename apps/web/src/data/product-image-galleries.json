@@ -1176,6 +1176,22 @@
       "source": "DPS 官方 Pagoda Tour CFL 105 商品页；页面未明确雪季，档案 2026/27 年款仍待目录交叉确认；图片使用授权待核"
     }
   ],
+  "fischer-rc4-worldcup-noize-sl-men-m-plate-2027": [
+    {
+      "url": "https://www.fischersports.com/media/3072x4096/7c/79/0e/1789999293/a04026_rc4_noize_sl_01.png",
+      "kind": "face",
+      "alt": "Fischer RC4 Worldcup Noize SL Men M-Plate 2026/27 雪板商品图",
+      "source": "Fischer 美国官方商品页图片；HTTP 200，图片展示授权待核"
+    }
+  ],
+  "fischer-rc4-worldcup-noize-sl-women-m-plate-2027": [
+    {
+      "url": "https://www.fischersports.com/media/3072x4096/4b/82/e7/1789999296/a04626_rc4_noize_sl_01.png",
+      "kind": "face",
+      "alt": "Fischer RC4 Worldcup Noize SL Women M-Plate 2026/27 雪板商品图",
+      "source": "Fischer 美国官方商品页图片；HTTP 200，图片展示授权待核"
+    }
+  ],
   "fischer-the-curv-power-2027": [
     {
       "url": "https://www.fischersports.jp/alpine/the-curv/assets/img/curv/p08826v_the_curv_power.png",

@@ -36,10 +36,12 @@ if [[ "$phase" = prepare ]]; then
   readlink apps/admin/current-ip > "$release/admin-ip-before.txt"
   readlink apps/admin/current-domain > "$release/admin-domain-before.txt"
   tar -xzf "$archive" -C /opt/youpu
+  chown youpu:youpu apps/web apps/admin apps/api packages/schema
   chown -R youpu:youpu apps/web/src apps/web/scripts apps/web/public apps/admin/src apps/api/src apps/api/prisma packages/schema/src data
   chown youpu:youpu package.json pnpm-lock.yaml apps/web/package.json apps/api/package.json apps/admin/package.json
   echo '正在安装依赖并构建共享契约与 API'
-  runuser -u youpu -- pnpm install --frozen-lockfile > "$release/install.log" 2>&1
+  # 服务器既有依赖使用 root 的 pnpm store；沿用同一缓存，避免删除运行中的依赖目录。
+  (umask 022; CI=true pnpm install --frozen-lockfile) > "$release/install.log" 2>&1
   runuser -u youpu -- pnpm --filter @youpu/schema build > "$release/build-schema.log" 2>&1
   mkdir -p "$api_stage"
   chown youpu:youpu "$api_stage"
