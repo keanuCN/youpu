@@ -49,7 +49,7 @@ function savedRating(id: string, riderProfile: Record<string, unknown>, helpfulC
   };
 }
 
-test('upsertRating applies the rating limit and persists moderation metadata while published', async () => {
+test('upsertRating submits new and edited reviews for moderation without premature notifications', async () => {
   const calls: {
     limit: string[];
     events: Array<{ data: Record<string, unknown> }>;
@@ -60,7 +60,7 @@ test('upsertRating applies the rating limit and persists moderation metadata whi
     rating: {
       upsert: async (input: { create: Record<string, unknown>; update: Record<string, unknown> }) => {
         calls.upsert = input;
-        return savedRating('rating-1', account.riderProfile);
+        return { ...savedRating('rating-1', account.riderProfile), status: 'pending' };
       },
     },
     outboxEvent: { create: async (input: { data: Record<string, unknown> }) => { calls.events.push(input); return {}; } },
@@ -79,7 +79,7 @@ test('upsertRating applies the rating limit and persists moderation metadata whi
   const rateLimit = { assertAllowed: async (accountId: string, scope: string) => calls.limit.push(`${accountId}:${scope}`) };
   const service = new CommunityService(prisma as never, rateLimit as never);
 
-  await service.upsertRating('burton-custom', account, {
+  const result = await service.upsertRating('burton-custom', account, {
     overall: 5,
     sub: {},
     content: '加微信返现购买',
@@ -90,30 +90,15 @@ test('upsertRating applies the rating limit and persists moderation metadata whi
   assert.equal(calls.upsert?.create.moderationRisk, 'watch');
   assert.deepEqual(calls.upsert?.create.moderationReasons, ['promotion']);
   assert.ok(calls.upsert?.create.moderationCheckedAt instanceof Date);
-  assert.equal(calls.upsert?.create.status, 'published');
+  assert.equal(result.status, 'pending');
+  assert.equal(calls.upsert?.create.status, 'pending');
+  assert.equal(calls.upsert?.update.status, 'pending');
   assert.equal(calls.upsert?.update.moderationRisk, 'watch');
   assert.deepEqual(calls.upsert?.update.moderationReasons, ['promotion']);
   assert.ok(calls.upsert?.update.moderationCheckedAt instanceof Date);
-  assert.deepEqual(calls.favoriteQuery, {
-    where: { productId: 'product-1', accountId: { not: account.id } },
-    select: { accountId: true },
-  });
+  assert.equal(calls.favoriteQuery, undefined);
   const notifications = calls.events.filter((event) => event.data.type === 'notification.created');
-  assert.equal(notifications.length, 1);
-  assert.deepEqual(notifications[0]?.data.payload, {
-    accountId: 'follower-1',
-    actorId: account.id,
-    type: 'new_review',
-    targetType: 'product',
-    targetId: 'product-1',
-    payload: {
-      productSlug: 'burton-custom',
-      productTitle: 'Burton Custom',
-      path: '/gear/burton-custom#reviews',
-      anchor: 'rating-1',
-      actorName: account.nickname,
-    },
-  });
+  assert.equal(notifications.length, 0);
 });
 
 test('createReply applies the reply limit and marks duplicate content for review', async () => {

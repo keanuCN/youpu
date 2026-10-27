@@ -464,8 +464,6 @@ function ReplyForm({ gear, parentId, cloudParent, onDone }: { gear: GearItem; pa
 function ReviewForm({ gear }: { gear: GearItem }) {
   const copy = reviewCopyForCategory(gear.categorySlug);
   const { requireAuth } = useAuthGate();
-  const me = useCurrentUser();
-  const profile = me.profile;
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
   const [content, setContent] = useState("");
@@ -478,34 +476,22 @@ function ReviewForm({ gear }: { gear: GearItem }) {
       toast.error("实测内容至少 10 个字，请写下产品体验");
       return;
     }
-    if (hasCloudSession()) {
-      try {
-        await cloudCreateRating(productRefForGear(gear), {
-          overall: rating,
-          content: content.trim(),
-          riderProfile: {},
-        });
-      } catch (error) {
-        toast.error(error instanceof Error ? error.message : "评论发布失败");
-        return;
-      }
+    if (!hasCloudSession()) {
+      toast.error("请先登录账号后提交实测");
+      return;
     }
-    addReview({
-      gearId: gear.id,
-      rating,
-      content: content.trim(),
-      images: [],
-      authorName: profile?.username ?? "匿名档案员",
-      authorMeta: {
-        years: profile?.years,
-        heightCm: copy.showHeight ? profile?.heightCm : undefined,
-        weightKg: copy.showWeight ? profile?.weightKg : undefined,
-        level: profile?.level,
-        resort: profile?.resort,
-      },
-    });
+    try {
+      await cloudCreateRating(productRefForGear(gear), {
+        overall: rating,
+        content: content.trim(),
+        riderProfile: {},
+      });
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : "评论提交失败");
+      return;
+    }
     track("rating_submit", { product_id: gear.id });
-    toast.success("实测评论已发布");
+    toast.success("实测已提交，审核通过后展示");
     setRating(0);
     setContent("");
   };
@@ -558,7 +544,7 @@ function ReviewForm({ gear }: { gear: GearItem }) {
             onClick={() => requireAuth(() => void submit(), "发布评论需要先登录")}
             className="h-9 rounded-none bg-foreground px-6 text-[12.5px] tracking-wide hover:bg-primary"
           >
-            发布实测
+            提交审核
           </Button>
         </div>
       </div>

@@ -293,7 +293,7 @@ export interface AdminModerationRating {
   overall: number;
   content: string | null;
   helpfulCount: number;
-  status: 'published' | 'hidden' | 'rejected';
+  status: 'pending' | 'published' | 'hidden' | 'rejected';
   moderationRisk: 'clear' | 'watch';
   moderationReasons: string[];
   riderProfile: Record<string, unknown>;

@@ -5,6 +5,8 @@ import type { ProductDetail, ProductListItem } from "@youpu/schema";
 
 import { GEAR, gearOfCategory } from "../data/boards";
 import { productRefForGear } from "./api";
+import { compactBrowseItem } from "./browse-payload";
+import { mediaUrl } from "./gear-state";
 import {
   getCategoryProducts,
   getCompareProducts,
@@ -13,6 +15,16 @@ import {
 } from "./content";
 
 const localGear = GEAR[0]!;
+test("compact list data preserves filters, image and product reference", () => {
+  const original = { ...localGear, hero: "", gallery: [{ url: "https://example.com/board.webp", label: "正面" }] };
+  const compact = compactBrowseItem(original);
+  assert.equal(mediaUrl(compact), mediaUrl(original));
+  assert.equal(productRefForGear(compact), productRefForGear(original));
+  assert.deepEqual(compact.specs, original.specs);
+  assert.deepEqual(compact.scenes, original.scenes);
+  assert.equal(compact.sizeSpecs, undefined);
+  assert.equal(compact.analysis.verdict, "");
+});
 const apiItem: ProductListItem = {
   id: "api-product-1",
   slug: "burton-custom-camber-2026",

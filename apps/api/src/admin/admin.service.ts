@@ -688,7 +688,7 @@ export class AdminService {
   }
 
   async listRatings(status?: string) {
-    const where = status && ['published', 'hidden', 'rejected'].includes(status) ? { status } : {};
+    const where = status && ['pending', 'published', 'hidden', 'rejected'].includes(status) ? { status } : {};
     const rows = await this.prisma.rating.findMany({
       where,
       orderBy: { createdAt: 'desc' },

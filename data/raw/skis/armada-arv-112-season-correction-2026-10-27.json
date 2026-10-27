@@ -1,0 +1,20 @@
+{
+  "slug": "armada-arv-112-2020",
+  "checkedAt": "2026-10-27",
+  "correction": "2020 是 185 cm 规格的单只重量（克），不是型号年份。保留旧 slug 以兼容已有链接，产品年份修正为 2027（2026/27 雪季）。",
+  "sources": [
+    {
+      "url": "https://www.armadasnow.com/en-us/products/arv-112-ra0651-202600",
+      "evidence": "美国官方商品页：货号 RA0000756+，185 cm 单只 2020 g、半径 21 m，挂牌 USD 950 不含税。"
+    },
+    {
+      "url": "https://gigaplus.makeshop.jp/nagoyashop/pdf/26-27%20ARMADA-Alpine.pdf",
+      "evidence": "Armada 2026/27 产品目录：ARV 112 货号 RA0000756+，尺寸和几何数据。"
+    },
+    {
+      "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+      "evidence": "2026-10-26 参考汇率 EUR/USD 1.1188、EUR/CNY 7.4603；USD 950 换算 CNY 6334.72。"
+    }
+  ],
+  "priceCaveat": "美国挂牌价的人民币折算，不代表中国售价或实际成交价；不含税费与运费。"
+}

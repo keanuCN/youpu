@@ -151,7 +151,7 @@ export class CommunityService {
           moderationRisk: moderation.risk,
           moderationReasons: toJsonInput(moderation.reasons),
           moderationCheckedAt,
-          status: 'published',
+          status: 'pending',
         },
         update: {
           overall: body.overall,
@@ -161,7 +161,7 @@ export class CommunityService {
           moderationRisk: moderation.risk,
           moderationReasons: toJsonInput(moderation.reasons),
           moderationCheckedAt,
-          status: 'published',
+          status: 'pending',
         },
         include: {
           account: { select: { id: true, nickname: true, avatarUrl: true, riderProfile: true } },
@@ -180,32 +180,6 @@ export class CommunityService {
           payload: toJsonInput({ reason: existing ? 'rating.update' : 'rating.create', ratingId: saved.id }),
         },
       });
-      if (!existing) {
-        const followers = await tx.favorite.findMany({ where: { productId: product.id, accountId: { not: account.id } }, select: { accountId: true } });
-        for (const follower of followers) {
-          await tx.outboxEvent.create({
-            data: {
-              aggregate: 'product',
-              aggregateId: product.id,
-              type: 'notification.created',
-              payload: toJsonInput({
-                accountId: follower.accountId,
-                actorId: account.id,
-                type: 'new_review',
-                targetType: 'product',
-                targetId: product.id,
-                payload: {
-                  productSlug: product.slug,
-                  productTitle: product.title,
-                  path: `/gear/${product.slug}#reviews`,
-                  anchor: saved.id,
-                  actorName: account.nickname,
-                },
-              }),
-            },
-          });
-        }
-      }
       return saved as RatingWithRelations;
     });
     return this.serializeRating(rating, false);

@@ -348,6 +348,7 @@ export function rankRows(
   rankKey: string,
   categorySlug = "snowboard",
   sourcePool: GearItem[] = GEAR,
+  options: { includeVotes?: boolean } = {},
 ): RankRow[] {
   const category = getCategory(categorySlug) ?? SNOWBOARD;
   const cat = category.rankCategories.find((c) => c.key === rankKey) ?? category.rankCategories[0];
@@ -368,13 +369,13 @@ export function rankRows(
     return {
       gear: g,
       dataScore: Math.round((ratingPart + heatPart + hardPart + userPart) * 10) / 10,
-      votes: voteCount(s, rankKey, g.id, categorySlug, g),
+      votes: options.includeVotes === false ? 0 : voteCount(s, rankKey, g.id, categorySlug, g),
     };
   });
   const maxVotes = Math.max(1, ...withData.map((d) => d.votes));
   const scored = withData.map((d) => ({
     ...d,
-    final: Math.round((d.dataScore * 0.7 + (d.votes / maxVotes) * 100 * 0.3) * 10) / 10,
+    final: options.includeVotes === false ? d.dataScore : Math.round((d.dataScore * 0.7 + (d.votes / maxVotes) * 100 * 0.3) * 10) / 10,
   }));
   if (categorySlug === "snowboard" && rankKey === "overall") {
     // 单板综合榜的编辑推荐顺序优先展示重点刻滑板和热门 Jones 型号；其余产品继续按榜单分排序。

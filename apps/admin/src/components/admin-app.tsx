@@ -584,6 +584,7 @@ function hasSpecValue(value: unknown): boolean {
 function statusText(status: string): string {
   const labels: Record<string, string> = {
     published: '已发布',
+    pending: '待审核',
     draft: '草稿',
     active: '启用',
     inactive: '停用',

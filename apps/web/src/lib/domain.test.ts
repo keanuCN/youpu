@@ -6,6 +6,17 @@ import { getCategory } from "../data/categories";
 import { guestState } from "./persisted";
 import { applyFilters, buildCompareMatrix, compareConclusion, DEFAULT_FILTERS, rankRows } from "./domain";
 
+test("ranking can exclude browser-local and simulated votes", () => {
+  const gear = GEAR.find((item) => item.categorySlug === "snowboard");
+  assert.ok(gear);
+  const state = guestState();
+  state.votes = { visitor: [{ categorySlug: "snowboard", rankKey: "overall", season: "2026-2027", gearId: gear.id, changed: false }] };
+  const [row] = rankRows(state, "overall", "snowboard", [gear], { includeVotes: false });
+  assert.ok(row);
+  assert.equal(row.votes, 0);
+  assert.equal(row.final, row.dataScore);
+});
+
 test("explicit flex filters exclude products whose flex is unknown", () => {
   const source = GEAR[0];
   assert.ok(source);
@@ -97,7 +108,9 @@ test("rank rows use the selected category pool and category rank definitions", (
     composite: 82,
     hardcore: 0,
     price: 1200,
+    priceCurrency: "CNY",
     priceBand: { min: 1100, max: 1300 },
+    specs: { ...base.specs, priceCheckedAt: null },
   };
   const second = {
     ...source,
