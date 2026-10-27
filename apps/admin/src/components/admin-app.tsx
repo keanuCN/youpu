@@ -37,6 +37,7 @@ import {
   type AdminProductImportReview,
   type AdminReport,
   type AdminModerationRating,
+  type AdminModerationReply,
 } from '../lib/api';
 import { visibleAdminSections, type AdminSection } from '../lib/admin-navigation';
 import {
@@ -618,6 +619,7 @@ export function AdminApp() {
   const [analyticsBusy, setAnalyticsBusy] = useState(false);
   const [reports, setReports] = useState<AdminReport[]>([]);
   const [moderationRatings, setModerationRatings] = useState<AdminModerationRating[]>([]);
+  const [moderationReplies, setModerationReplies] = useState<AdminModerationReply[]>([]);
   const [moderationBusy, setModerationBusy] = useState(false);
   const [auditLogs, setAuditLogs] = useState<AdminAuditLogResponse | null>(null);
   const [auditFilters, setAuditFilters] = useState<AuditFilters>({ entity: '', action: '' });
@@ -866,12 +868,14 @@ export function AdminApp() {
     if (!token) return;
     setModerationBusy(true);
     try {
-      const [nextReports, nextRatings] = await Promise.all([
+      const [nextReports, nextRatings, nextReplies] = await Promise.all([
         callAdmin<AdminReport[]>('/moderation/reports'),
         callAdmin<AdminModerationRating[]>('/moderation/ratings'),
+        callAdmin<AdminModerationReply[]>('/moderation/replies'),
       ]);
       setReports(nextReports);
       setModerationRatings(nextRatings);
+      setModerationReplies(nextReplies);
     } catch (error) {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
@@ -1023,6 +1027,20 @@ export function AdminApp() {
       await callAdmin(`/moderation/ratings/${id}`, { method: 'PATCH', body: { status } });
       await refreshModeration();
       setNotice({ kind: 'success', text: '评论状态已更新，产品聚合会异步重算' });
+    } catch (error) {
+      setNotice({ kind: 'error', text: getErrorText(error) });
+    } finally {
+      setBusyAction(null);
+    }
+  }
+
+  async function updateReplyStatus(id: string, status: 'published' | 'hidden' | 'rejected') {
+    if (!token) return;
+    setBusyAction(`reply-${id}`);
+    try {
+      await callAdmin(`/moderation/replies/${id}`, { method: 'PATCH', body: { status } });
+      await refreshModeration();
+      setNotice({ kind: 'success', text: '回复状态已更新' });
     } catch (error) {
       setNotice({ kind: 'error', text: getErrorText(error) });
     } finally {
@@ -1860,6 +1878,10 @@ export function AdminApp() {
             {moderationRatings.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>产品</th><th>作者</th><th>评分 / 内容</th><th>风险与状态</th><th /></tr></thead><tbody>{moderationRatings.map((rating) => <tr key={rating.id}><td><strong>{rating.product.title}</strong><small className="table-sub">{rating.product.slug}</small></td><td>{rating.account.nickname}<small className="table-sub">{rating.account.email || rating.account.id}</small><small className="table-sub">画像：{formatRiderProfile(rating.riderProfile)}</small></td><td><strong>{rating.overall.toFixed(1)} 分</strong><small className="table-sub">{rating.content || '无文字内容'} · {rating.helpfulCount} 有帮助</small></td><td><StatusBadge status={rating.status} /><small className="table-sub">风险：{formatModerationRisk(rating.moderationRisk)}</small><small className="table-sub">原因：{rating.moderationReasons.length ? formatModerationReasons(rating.moderationReasons).join('、') : '无'}</small></td><td><div className="inline-actions">{rating.status !== 'published' && <button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'published')}>发布</button>}{rating.status === 'published' && <button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'hidden')}>隐藏</button>}<button className="text-button" disabled={busyAction === `rating-${rating.id}`} onClick={() => void updateRatingStatus(rating.id, 'rejected')}>拒绝</button></div></td></tr>)}</tbody></table></div> : <EmptyState title="暂无评论" detail="用户发布实测后会出现在这里。" />}
           </section>
         </div>
+        <section className="data-panel table-panel">
+          <PanelHeader eyebrow="回复队列" title="回复审核" meta={`${moderationReplies.length} 条已加载`} />
+          {moderationReplies.length ? <div className="table-wrap"><table className="data-table"><thead><tr><th>产品</th><th>作者</th><th>回复</th><th>风险与状态</th><th /></tr></thead><tbody>{moderationReplies.map((reply) => <tr key={reply.id}><td>{reply.product.title}</td><td>{reply.account.nickname}</td><td>{reply.content}</td><td><StatusBadge status={reply.status} /><small className="table-sub">风险：{formatModerationRisk(reply.moderationRisk)}</small><small className="table-sub">{formatModerationReasons(reply.moderationReasons).join('、')}</small></td><td><div className="inline-actions">{reply.status !== 'published' && <button className="text-button" disabled={busyAction === `reply-${reply.id}`} onClick={() => void updateReplyStatus(reply.id, 'published')}>发布</button>}{reply.status === 'published' && <button className="text-button" disabled={busyAction === `reply-${reply.id}`} onClick={() => void updateReplyStatus(reply.id, 'hidden')}>隐藏</button>}<button className="text-button" disabled={busyAction === `reply-${reply.id}`} onClick={() => void updateReplyStatus(reply.id, 'rejected')}>拒绝</button></div></td></tr>)}</tbody></table></div> : <EmptyState title="暂无回复" detail="用户提交的回复会出现在这里。" />}
+        </section>
       </>
     );
   }

@@ -245,9 +245,9 @@ export class CommunityService {
     const body = replyInputSchema.parse(input);
     const rating = await this.prisma.rating.findUnique({
       where: { id: ratingId },
-      select: { id: true, accountId: true, product: { select: { slug: true } } },
+      select: { id: true, accountId: true, status: true, product: { select: { slug: true } } },
     });
-    if (!rating) throw new NotFoundException('评论不存在');
+    if (!rating || rating.status !== 'published') throw new NotFoundException('评论不存在');
     if (body.replyTo) {
       const target = await this.prisma.account.findUnique({ where: { id: body.replyTo }, select: { id: true } });
       if (!target) throw new BadRequestException('回复对象不存在');
@@ -270,33 +270,10 @@ export class CommunityService {
           moderationRisk: moderation.risk,
           moderationReasons: toJsonInput(moderation.reasons),
           moderationCheckedAt,
-          status: 'published',
+          status: 'pending',
         },
         include: { account: { select: { id: true, nickname: true, avatarUrl: true } } },
       });
-      if (rating.accountId !== account.id) {
-        await tx.outboxEvent.create({
-          data: {
-            aggregate: 'rating',
-            aggregateId: ratingId,
-            type: 'notification.created',
-              payload: toJsonInput({
-                accountId: rating.accountId,
-                actorId: account.id,
-                type: 'reply',
-                targetType: 'rating',
-                targetId: ratingId,
-                payload: {
-                  productSlug: rating.product.slug,
-                  path: `/gear/${rating.product.slug}#reviews`,
-                  anchor: ratingId,
-                  actorName: account.nickname,
-                  replyId: created.id,
-                },
-              }),
-          },
-        });
-      }
       return created;
     });
     return this.serializeReply(reply);

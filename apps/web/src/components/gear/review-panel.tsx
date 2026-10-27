@@ -21,7 +21,7 @@ import {
 } from "@/lib/api";
 import { helpfulOf, iHelpful, repliesOf, topLevelReviews } from "@/lib/domain";
 import { timeAgo } from "@/lib/format";
-import { addReview, deleteReview, pushNotification, toggleHelpful, useCurrentUser, usePersisted, type Persisted } from "@/lib/store";
+import { deleteReview, pushNotification, toggleHelpful, useCurrentUser, usePersisted, type Persisted } from "@/lib/store";
 import { track } from "@/lib/track";
 import { hasUserRating } from "@/lib/gear-state";
 import { isCuratedBaselineEnabled } from "@/lib/curated-content";
@@ -409,34 +409,23 @@ function ReviewerMetaLine({ meta, copy }: { meta: ReviewerMeta; copy: ReviewCopy
 
 function ReplyForm({ gear, parentId, cloudParent, onDone }: { gear: GearItem; parentId: string; cloudParent: boolean; onDone: () => void }) {
   const [text, setText] = useState("");
-  const me = useCurrentUser();
-  const profile = me.profile;
   const submit = async () => {
     if (text.trim().length < 2) {
       toast.error("回复内容太短");
       return;
     }
-    if (cloudParent && hasCloudSession()) {
-      try {
-        await cloudCreateReply(parentId, text.trim());
-      } catch (error) {
-        toast.error(error instanceof Error ? error.message : "回复发布失败");
-        return;
-      }
+    if (!cloudParent || !hasCloudSession()) {
+      toast.error("请登录后回复已发布的实测");
+      return;
     }
-    addReview({
-      gearId: gear.id,
-      rating: 5,
-      content: text.trim(),
-      images: [],
-      authorName: profile?.username ?? "匿名",
-      authorMeta: profile
-        ? { years: profile.years, heightCm: profile.heightCm, weightKg: profile.weightKg, level: profile.level, resort: profile.resort }
-        : {},
-      parentId,
-    });
+    try {
+      await cloudCreateReply(parentId, text.trim());
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : "回复提交失败");
+      return;
+    }
     track("reply_submit", { rating_id: parentId });
-    toast.success("回复已发布");
+    toast.success("回复已提交，审核通过后展示");
     setText("");
     onDone();
   };
@@ -454,7 +443,7 @@ function ReplyForm({ gear, parentId, cloudParent, onDone }: { gear: GearItem; pa
           取消
         </Button>
         <Button size="sm" onClick={submit} className="h-7 rounded-none bg-foreground text-[12px] hover:bg-primary">
-          发布回复
+          提交审核
         </Button>
       </div>
     </div>

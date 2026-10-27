@@ -741,6 +741,31 @@ export class AdminService {
     return result;
   }
 
+  async listReplies() {
+    const rows = await this.prisma.ratingReply.findMany({
+      orderBy: { createdAt: 'desc' }, take: 100,
+      include: { account: { select: { id: true, nickname: true } }, rating: { select: { product: { select: { title: true, slug: true } } } } },
+    });
+    return rows.map((row) => ({
+      id: row.id, content: row.content, status: row.status,
+      moderationRisk: row.moderationRisk,
+      moderationReasons: Array.isArray(row.moderationReasons) ? row.moderationReasons.filter((reason): reason is string => typeof reason === 'string') : [],
+      createdAt: row.createdAt.toISOString(), account: row.account, product: row.rating.product,
+    }));
+  }
+
+  async updateReplyStatus(id: string, input: AdminRatingModerationPatch, actorId?: string) {
+    const body = adminRatingModerationPatchSchema.parse(input);
+    const resolvedActorId = selectAuditActor(actorId, actorId ?? await this.getAuditActorId());
+    return this.prisma.$transaction(async (tx) => {
+      const existing = await tx.ratingReply.findUnique({ where: { id }, select: { status: true } });
+      if (!existing) throw new NotFoundException(`回复不存在：${id}`);
+      const reply = await tx.ratingReply.update({ where: { id }, data: { ...(body.status === undefined ? {} : { status: body.status }) } });
+      await this.recordAuditInTransaction(tx, { actorId: resolvedActorId, action: 'moderate', entity: 'rating_reply', entityId: id, before: { status: existing.status }, after: { status: reply.status } });
+      return { id: reply.id, status: reply.status };
+    });
+  }
+
   private async checkDatabase(): Promise<boolean> {
     try {
       await this.prisma.$queryRaw`SELECT 1`;

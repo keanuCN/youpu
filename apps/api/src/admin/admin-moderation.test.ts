@@ -253,6 +253,15 @@ test('direct rating moderation writes its audit in the same transaction as the r
   assert.equal(calls.rootAuditCreates.length, 0);
 });
 
+test('direct reply moderation updates the reply and audit in one transaction', async () => {
+  const { service, calls } = makeService({ targetType: 'reply' });
+  const result = await service.updateReplyStatus('reply-id', { status: 'hidden' }, 'admin-id');
+  assert.equal(result.status, 'hidden');
+  assert.deepEqual(calls.replyUpdate?.data, { status: 'hidden' });
+  assert.deepEqual(calls.auditCreates[0]?.data.before, { status: 'published' });
+  assert.deepEqual(calls.auditCreates[0]?.data.after, { status: 'hidden' });
+});
+
 test('report action can reject a reply through its owning rating product', async () => {
   const { service, calls } = makeService({ targetType: 'reply' });
 

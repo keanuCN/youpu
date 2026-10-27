@@ -302,6 +302,17 @@ export interface AdminModerationRating {
   product: { id: string; slug: string; title: string };
 }
 
+export interface AdminModerationReply {
+  id: string;
+  content: string;
+  status: 'pending' | 'published' | 'hidden' | 'rejected';
+  moderationRisk: 'clear' | 'watch';
+  moderationReasons: string[];
+  createdAt: string;
+  account: { id: string; nickname: string };
+  product: { title: string; slug: string };
+}
+
 export type AdminProductFormInput = AdminProductInput;
 export type AdminProductFormPatch = AdminProductPatch;
 export type AdminBrandFormInput = AdminBrandInput;

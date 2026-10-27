@@ -125,7 +125,7 @@ test('createReply applies the reply limit and marks duplicate content for review
     outboxEvent: { create: async (input: { data: Record<string, unknown> }) => { calls.events.push(input); return {}; } },
   };
   const prisma = {
-    rating: { findUnique: async () => ({ id: 'rating-1', accountId: 'owner-1', product: { slug: 'burton-custom' } }) },
+    rating: { findUnique: async () => ({ id: 'rating-1', accountId: 'owner-1', status: 'published', product: { slug: 'burton-custom' } }) },
     account: { findUnique: async () => ({ id: 'owner-1' }) },
     ratingReply: {
       findFirst: async (input: unknown) => {
@@ -148,21 +148,8 @@ test('createReply applies the reply limit and marks duplicate content for review
   assert.equal(calls.create?.data.moderationRisk, 'watch');
   assert.deepEqual(calls.create?.data.moderationReasons, ['promotion', 'duplicate-content']);
   assert.ok(calls.create?.data.moderationCheckedAt instanceof Date);
-  assert.equal(calls.create?.data.status, 'published');
-  assert.deepEqual(calls.events[0]?.data.payload, {
-    accountId: 'owner-1',
-    actorId: account.id,
-    type: 'reply',
-    targetType: 'rating',
-    targetId: 'rating-1',
-    payload: {
-      productSlug: 'burton-custom',
-      path: '/gear/burton-custom#reviews',
-      anchor: 'rating-1',
-      actorName: account.nickname,
-      replyId: 'reply-1',
-    },
-  });
+  assert.equal(calls.create?.data.status, 'pending');
+  assert.equal(calls.events.length, 0);
 });
 
 test('createReport and toggleHelpful apply their operation limits', async () => {

@@ -147,6 +147,22 @@ export class AdminController {
     return this.admin.updateRatingStatus(id, body, request.admin?.accountId ?? undefined);
   }
 
+  @Get('moderation/replies')
+  @AdminRoles('admin')
+  moderationReplies() {
+    return this.admin.listReplies();
+  }
+
+  @Patch('moderation/replies/:id')
+  @AdminRoles('admin')
+  updateReplyStatus(
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body(new ZodValidationPipe(adminRatingModerationPatchSchema)) body: AdminRatingModerationPatch,
+    @Req() request: AdminRequest,
+  ) {
+    return this.admin.updateReplyStatus(id, body, request.admin?.accountId ?? undefined);
+  }
+
   @Get('products')
   products(
     @Query('search') search?: string,
