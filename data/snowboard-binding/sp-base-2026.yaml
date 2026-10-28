@@ -4,7 +4,7 @@ brand: sp-bindings
 model: BASE
 year: 2026
 title: SP Bindings BASE 2025/26
-one_liner: SP 固定器基础款，配置与定位简洁，采用常规绑带穿脱；品牌当前目录提供多种尺码。
+one_liner: SP 固定器基础款，柔和脚感与快速入脚设计面向入门滑手；品牌当前目录提供多种尺码。
 price:
   min: 1161.38
   max: 1161.38
@@ -12,13 +12,14 @@ price:
 specs:
   terrain:
     - all-mountain
-  entrySystem: strap
+  flexFeel: soft
+  entrySystem: fast-entry
   mountingSystem: 官方称兼容常见雪板安装系统；具体圆盘兼容性按随附圆盘确认。
   bootCompatibility: 官方称兼容常规单板雪鞋；尺码仅作参考，鞋型会影响实际贴合，需试装检查绑带覆盖与雪鞋居中。
   bindingSizeGuide: SP 官方 FT4（BASE/BASE+）尺码参考：S 22–25 cm、M 25–27.5 cm、L 27.5–29.5 cm、XL 29.5–32 cm；尺码区间有重叠，按雪鞋实物试装。
   baseplateMaterial: FT4 塑料底盘（官方尺码页型号说明）。
-  selectionNotes: 官方将 BASE 描述为简洁、可靠的基础型号。品牌说明 BASE 不支持 FASTEC 快速入口，应按传统绑带方式穿脱。尺码范围仅作参考；应以雪鞋实物试装和雪板圆盘核对为准。
-  compatibilitySources: https://sp-bindings.jp/pages/sp-bindings-size-chart；https://sp-bindings.jp/pages/technology
+  selectionNotes: 官方商品页描述 BASE 为柔和脚感、快速入脚的入门型号。品牌技术页将 BASE 列为不支持常规绑带穿脱的例外，购买前请核对具体操作方式。尺码范围仅作参考，应以雪鞋实物试装和雪板圆盘核对为准。
+  compatibilitySources: https://sp-bindings.jp/products/base；https://sp-bindings.jp/pages/sp-bindings-size-chart；https://sp-bindings.jp/pages/technology
   sizeChart:
     - { size: S, mondo: 22–25 }
     - { size: M, mondo: 25–27.5 }
