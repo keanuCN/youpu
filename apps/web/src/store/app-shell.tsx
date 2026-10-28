@@ -6,7 +6,6 @@ import { LoginDialog } from "@/components/auth/login-dialog";
 import { CompareDock } from "@/components/compare/compare-dock";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { SideAdSlots } from "@/components/layout/side-ad-slots";
 import { syncCloudSession } from "@/lib/cloud-sync";
 import { useCurrentUser } from "@/lib/store";
 
@@ -67,7 +66,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
-        <SideAdSlots />
+        {/* 广告位暂时隐藏；需要恢复时引入并渲染 SideAdSlots。 */}
         <CompareDock />
         <LoginDialog open={open} onOpenChange={setOpen} onAuthed={onAuthed} reason={reason} />
         <Toaster
