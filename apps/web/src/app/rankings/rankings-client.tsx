@@ -11,7 +11,7 @@ import { SafeImage } from "@/components/gear/safe-image";
 import { PageHead } from "@/components/layout/section-head";
 import { Button } from "@/components/ui/button";
 import { GEAR } from "@/data/boards";
-import { PRODUCT_PERSONALITY_TAGS } from "@/data/product-personality-tags";
+import { personalityTagsFor } from "@/data/product-personality-tags";
 import { CATEGORIES, SEASON, SNOWBOARD, getCategory } from "@/data/categories";
 import { getCategoryProducts, resolveContentSource } from "@/lib/content";
 import { hasEditorialScores, hasMedia, mediaUrl } from "@/lib/gear-state";
@@ -211,11 +211,9 @@ export default function RankingsPage() {
               </div>
               <p className="mono-label mt-3">{r.gear.brand}</p>
               <h3 className="mt-1 text-[17px] leading-snug font-medium">{r.gear.model}</h3>
-              {PRODUCT_PERSONALITY_TAGS[r.gear.id] ? (
-                <span className="mt-2 inline-block border border-primary/40 bg-primary/5 px-2 py-1 text-xs font-medium text-primary">
-                  {PRODUCT_PERSONALITY_TAGS[r.gear.id]}
-                </span>
-              ) : null}
+              {personalityTagsFor(r.gear.id).length ? <div className="mt-2 flex flex-wrap gap-1">{personalityTagsFor(r.gear.id).map((tag) => (
+                <span key={tag} className="border border-primary/40 bg-primary/5 px-2 py-1 text-xs font-medium text-primary">{tag}</span>
+              ))}</div> : null}
             </Link>
 
             <dl className="mono-data mt-4 space-y-1 border-t border-border pt-3 text-[12px] tnum">

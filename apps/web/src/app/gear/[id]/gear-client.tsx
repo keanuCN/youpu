@@ -19,7 +19,7 @@ import { EquipmentBuyingGuide } from "@/components/gear/equipment-buying-guide";
 import { SectionHead } from "@/components/layout/section-head";
 import { reviewCount, userRating } from "@/data/boards";
 import { EXTERNAL_REVIEW_SNAPSHOTS } from "@/data/external-review-snapshots";
-import { PRODUCT_PERSONALITY_TAGS } from "@/data/product-personality-tags";
+import { personalityTagsFor } from "@/data/product-personality-tags";
 import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
 import { cloudAddFavorite, cloudRemoveFavorite, hasCloudSession, productRefForGear, type CloudRatingsResponse } from "@/lib/api";
 import { formatSpecValue, gearById, pricePosition, sameScenePeers } from "@/lib/domain";
@@ -215,9 +215,9 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
             {gear.brand} · {gear.year} 款
           </p>
           <h1 className="mt-2 text-[32px] leading-[1.12] font-medium tracking-tight sm:text-[40px]">{gear.model}</h1>
-          {PRODUCT_PERSONALITY_TAGS[gear.id] ? (
+          {personalityTagsFor(gear.id).length ? (
             <div className="mt-3 flex flex-wrap items-center gap-2">
-              <span className="border border-primary/40 bg-primary/5 px-2 py-1 text-xs font-medium text-primary">{PRODUCT_PERSONALITY_TAGS[gear.id]}</span>
+              {personalityTagsFor(gear.id).map((tag) => <span key={tag} className="border border-primary/40 bg-primary/5 px-2 py-1 text-xs font-medium text-primary">{tag}</span>)}
             </div>
           ) : null}
         </div>

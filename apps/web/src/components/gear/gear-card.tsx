@@ -6,7 +6,7 @@ import { Heart, Scale } from "lucide-react";
 import { toast } from "sonner";
 import { MediaPlaceholder, PendingValue } from "@/components/gear/data-state";
 import { GEAR, reviewCount, userRating } from "@/data/boards";
-import { PRODUCT_PERSONALITY_TAGS } from "@/data/product-personality-tags";
+import { personalityTagsFor } from "@/data/product-personality-tags";
 import { getCategory, mtbTypeLabel, roadBikeTypeLabel } from "@/data/categories";
 import { sceneLabel } from "@/lib/domain";
 import { fmtCompact, fmtOfficialPriceCny, fmtPrice } from "@/lib/format";
@@ -249,11 +249,9 @@ export function GearCard({
           </div>
 
           <div className="flex flex-wrap gap-1">
-            {PRODUCT_PERSONALITY_TAGS[gear.id] ? (
-              <span className="border border-primary/40 bg-primary/5 px-1.5 py-[2px] text-[11px] font-medium text-primary">
-                {PRODUCT_PERSONALITY_TAGS[gear.id]}
-              </span>
-            ) : null}
+            {personalityTagsFor(gear.id).map((tag) => (
+              <span key={tag} className="border border-primary/40 bg-primary/5 px-1.5 py-[2px] text-[11px] font-medium text-primary">{tag}</span>
+            ))}
             {from === "search" ? (
               <span className="mono-label border border-primary/40 px-1.5 py-[2px] text-primary">
                 {getCategory(gear.categorySlug)?.name ?? gear.categorySlug}
@@ -366,11 +364,9 @@ export function GearRow({
       <div className="min-w-0 flex-1">
         <p className="mono-label truncate">{gear.brand}</p>
         <p className="truncate text-[14px] font-medium">{gear.model}</p>
-        {PRODUCT_PERSONALITY_TAGS[gear.id] ? (
-          <span className="mt-1 inline-block border border-primary/40 bg-primary/5 px-1.5 py-[2px] text-[11px] font-medium text-primary">
-            {PRODUCT_PERSONALITY_TAGS[gear.id]}
-          </span>
-        ) : null}
+        {personalityTagsFor(gear.id).length ? <div className="mt-1 flex flex-wrap gap-1">{personalityTagsFor(gear.id).map((tag) => (
+          <span key={tag} className="border border-primary/40 bg-primary/5 px-1.5 py-[2px] text-[11px] font-medium text-primary">{tag}</span>
+        ))}</div> : null}
         <p className="mono-label mt-1 truncate">
           {note ?? `${gear.year} · ${hasPrice(gear) ? fmtPrice(gear.price, gear.priceCurrency) : "价格待补"} · ${gear.scenes.length ? gear.scenes.map(sceneLabel).join(" / ") : "场景待补"}`}
         </p>
