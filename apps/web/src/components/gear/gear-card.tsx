@@ -366,6 +366,11 @@ export function GearRow({
       <div className="min-w-0 flex-1">
         <p className="mono-label truncate">{gear.brand}</p>
         <p className="truncate text-[14px] font-medium">{gear.model}</p>
+        {PRODUCT_PERSONALITY_TAGS[gear.id] ? (
+          <span title="有谱编辑个性标签" className="mt-1 inline-block border border-primary/40 bg-primary/5 px-1.5 py-[2px] text-[11px] font-medium text-primary">
+            {PRODUCT_PERSONALITY_TAGS[gear.id]}
+          </span>
+        ) : null}
         <p className="mono-label mt-1 truncate">
           {note ?? `${gear.year} · ${hasPrice(gear) ? fmtPrice(gear.price, gear.priceCurrency) : "价格待补"} · ${gear.scenes.length ? gear.scenes.map(sceneLabel).join(" / ") : "场景待补"}`}
         </p>
