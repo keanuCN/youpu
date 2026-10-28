@@ -7,6 +7,7 @@ import { Avatar } from "@/components/layout/site-header";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { reviewCount, userRating } from "@/data/boards";
+import { EXTERNAL_DISCUSSIONS } from "@/data/external-discussions";
 import {
   cloudCreateRating,
   cloudCreateReply,
@@ -131,6 +132,7 @@ export function ReviewPanel({
   onSummaryChange?: (summary: CloudRatingsResponse["summary"] | null) => void;
 }) {
   const copy = reviewCopyForCategory(gear.categorySlug);
+  const externalDiscussions = EXTERNAL_DISCUSSIONS[gear.id] ?? [];
   const persisted = usePersisted();
   const [mode, setMode] = useState<"helpful" | "latest">("helpful");
   const [remoteRatings, setRemoteRatings] = useState<CloudRating[]>([]);
@@ -239,6 +241,20 @@ export function ReviewPanel({
           </p>
         )}
       </div>
+      {externalDiscussions.length ? (
+        <aside className="border border-border p-5">
+          <p className="text-sm font-medium">站外讨论参考</p>
+          <p className="mt-2 text-xs leading-5 text-muted-foreground">以下为相关型号的抖音帖子链接，具体雪季及内容请以原帖为准，不计入站内评分和实测条数。</p>
+          <ul className="mt-3 divide-y divide-border">
+            {externalDiscussions.map((discussion) => (
+              <li key={discussion.url} className="py-3">
+                <a href={discussion.url} target="_blank" rel="noopener noreferrer" className="text-sm font-medium underline underline-offset-4 hover:text-primary">{discussion.label} ↗</a>
+                <p className="mt-1 text-xs leading-5 text-muted-foreground">抖音 · {discussion.scope}</p>
+              </li>
+            ))}
+          </ul>
+        </aside>
+      ) : null}
     </section>
   );
 }
