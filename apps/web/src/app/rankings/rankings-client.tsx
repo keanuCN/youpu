@@ -202,7 +202,7 @@ export default function RankingsPage() {
                     loading="lazy"
                     fallbackLabel={`${r.gear.brand} ${r.gear.model}`}
                     fallbackClassName="p-8"
-                    className="plate h-full w-full object-contain p-3"
+                    className="h-full w-full object-contain p-3"
                   />
                 ) : (
                   <MediaPlaceholder label="图片待补" className="h-full min-h-0 p-8" />
