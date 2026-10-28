@@ -212,7 +212,7 @@ export default function RankingsPage() {
               <p className="mono-label mt-3">{r.gear.brand}</p>
               <h3 className="mt-1 text-[17px] leading-snug font-medium">{r.gear.model}</h3>
               {PRODUCT_PERSONALITY_TAGS[r.gear.id] ? (
-                <span title="有谱编辑个性标签" className="mt-2 inline-block border border-primary/40 bg-primary/5 px-2 py-1 text-xs font-medium text-primary">
+                <span className="mt-2 inline-block border border-primary/40 bg-primary/5 px-2 py-1 text-xs font-medium text-primary">
                   {PRODUCT_PERSONALITY_TAGS[r.gear.id]}
                 </span>
               ) : null}

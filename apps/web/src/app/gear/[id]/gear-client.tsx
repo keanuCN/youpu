@@ -218,7 +218,6 @@ function InfoCard({ gear, ratingSummary }: { gear: GearItem; ratingSummary: Clou
           {PRODUCT_PERSONALITY_TAGS[gear.id] ? (
             <div className="mt-3 flex flex-wrap items-center gap-2">
               <span className="border border-primary/40 bg-primary/5 px-2 py-1 text-xs font-medium text-primary">{PRODUCT_PERSONALITY_TAGS[gear.id]}</span>
-              <span className="text-[11px] text-muted-foreground">编辑个性标签</span>
             </div>
           ) : null}
         </div>
